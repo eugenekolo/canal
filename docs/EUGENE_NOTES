@@ -34,6 +34,7 @@ POSIX specifies that if a process has appropriate priv- ileges , setuid(newuid) 
 # What we promised Egele
 
 - Apple sauce malloc occuring before dropping privileges.
+    Dangerous because of Malloc logging bug.
 - Signal handling before dropping.
 - Exec* before dropping.
 - Not checking setuid return.
@@ -89,4 +90,22 @@ On the other hand, C# and Java have been eas ier, since we analyze the bytecode 
 At the most basic level, errors found with little analysis are often better than errors found with deeper tricks. A good error is probable, a 
 true error, easy to diagnose; best is difficult to misdiagnose. As the number of analysis steps increases, so, too, does the chance of analysis
 mistake, user confusion, or the perceived improbability of event sequence.
+------------------------------------------------------------------------------------------------
+|
+|
+------------------------------------------------------------------------------------------------
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.229.3952&rep=rep1&type=pdf - Good paper that covers a lot in the field of static code anal
+
+http://www.dwheeler.com/flawfinder/#how_work - smart grep based
+http://sourceforge.net/projects/cppcheck/  - tries a lot to be sound, does cfgs. *Seems more relevant*
+    In addition, there are also a few extra checks in the Cppcheck repository that can be downloaded; rules , addons.
+    Cppcheck can be extended. You can:
+        look for simple patterns, see chapter about rules in the manual (pdf, html)
+        define rules for functions with .cfg files, see chapter about library files in the manual (pdf, html)
+        extend cppcheck with scripts, see chapter about addons in the manual (pdf, html)
+
+
+https://security.web.cern.ch/security/recommendations/en/codetools/rats.shtml
+
+There's actually not that much static analysis tools for C/C++.
 ------------------------------------------------------------------------------------------------
