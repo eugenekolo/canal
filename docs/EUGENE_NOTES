@@ -44,12 +44,23 @@ three user IDs to newuid ; otherwise, it sets only the effective user ID to newu
 
 - Apple sauce malloc occuring before dropping privileges.
     Because: Dangerous because of Malloc logging bug.
+    Difficulty: Doable.
 - Signal handling before dropping.
+    Because: Often misunderstood, can have format strings, and other things.
+    Note: Potentially lot of false pos.
+    Difficulty: Doable.
 - Exec* before dropping.
-    Because: Exec as privileged user
+    Because: Exec as privileged user.
+    Difficulty: Doable.
 - Not checking setuid return.
+    Because: Dropping privilege might've failed.
+    Difficulty: Doable.
 - Assuming privileges are dropped in all shells code.
+    Because: Different behaviour in different OSes. 
+    Difficulty: Hard.
 - Unsafe function use near seteuid. 
+    Because: Buffer overflow? Seems the issue is not seteuid though, but a general misuse of a bad func.
+    Difficulty: Doable-ish.
 ------------------------------------------------------------------------------------------------
 |
 |
