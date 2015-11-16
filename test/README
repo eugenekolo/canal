@@ -1,3 +1,11 @@
+Evaluated some C/C++ source code static analysis tools.
+Did some testing and recorded them here. 
+
+As resources I used `/test/curl-83.40.2` as a set of C files. Downloaded from Apple. 
+I also used `/test/cppcheck-1.71` as a set of CPP files.
+
+Read more below.
+
 ------------------------------------------------------------------------------------------------
 # Cppcheck
 http://sourceforge.net/projects/cppcheck/  - tries a lot to be sound, does cfgs. *Seems more relevant*
@@ -54,3 +62,117 @@ Gets stupid results like:
     printf is not actually being used here, it's just a string in a preprocessor or comment or something.
 ------------------------------------------------------------------------------------------------
 
+
+------------------------------------------------------------------------------------------------
+# Cflow
+`sudo apt-get install cflow` gets it pretty much.
+
+`cflow <options> <files>`
+        -D, --define=name[=defn]           Predefine name as a macro.
+        -I, --include-dir=dir              Add the directory dir to the list of directories to be searched for
+                                           header files.
+        --level-indent=string              Use string when indenting to each new level.
+        -n, --number                       Print line numbers.
+        -T, --tree                         Draw ASCII art tree.
+        -cpp, --preprocess                 Preprocess the c code. -D implies it too.
+
+`cflow -DWIN32 --preprocess -I./curl-83.40.2/curl/lib ./curl-83.40.2/curl/src/tool_getpass.c`
+    Should error on a non-Windows machine. 
+
+`cflow --preprocess -I./curl-83.40.2/curl/lib ./curl-83.40.2/curl/src/tool_getpass.c`
+    Should give a bunch of redefine warnings and then, a short piece because every preprocess has nothing defined.
+
+    ...
+    getpass_r() <char *getpass_r (const char *prompt, char *password, size_t buflen) at 
+    ./curl-83.40.2/curl/src/tool_getpass.c:224>:
+        open()
+        ttyecho() <bool ttyecho (bool enable, int fd) at ./curl-83.40.2/curl/src/tool_getpass.c:184>:
+        fputs()
+        read()
+        close()
+    ...
+
+`cflow ./curl-83.40.2/curl/src/tool_getpass.c`
+    Will print a lot more, because things don't have to be defined. I guess it goes down all routes.
+
+    ...
+    getpass_r() <char *getpass_r (const char *prompt, char *password, size_t buflen) at 
+    ./curl-83.40.2/curl/src/tool_getpass.c:224>:
+        DESCRIPTOR()
+        assign()
+        qiow()
+        strlen()
+        dassgn()
+        fputs()
+        getch()
+        getpassword()
+        printf()
+        RingTheBell()
+        putchar()
+        open()
+        ttyecho() <bool ttyecho (bool enable, int fd) at ./curl-83.40.2/curl/src/tool_getpass.c:184>:
+            tcgetattr()
+            tcsetattr()
+            ioctl()
+        read()
+        close()
+    ...
+
+
+https://www.gnu.org/software/cflow/manual/html_node/Makefiles.html
+"If you wish to use cflow to analyze your project sources, Makefile or Makefile.am is the right place to do so. 
+In this chapter we will describe a generic rule for Makefile.am. If you do not use automake, you can deduce the 
+rule for plain Makefile from this one."
+
+I believe to get good coverage, and the entire project we have to set up Makefiles to build with cflow.
+
+We might be able to get okay coverage if we do something similar to "# gcc -fdump-tree-cfg".
+We can run make, record what .cpps got included, and run cflow on each file individually.
+
+We will not have good interprocedural, but we might have okay context-sensitive and flow-sensitive. 
+
+The next step to enhance it would be to add symbols, and make our own connected graph of each file. But, that's really hard 
+I think for this project. At least I don't feel like doing it.
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+# gcc -fdump-tree-cfg
+Easyish to add to everything. Can record make gcc calls, append -fdump-tree-cfg to every command and rerun make. 
+Using /test/cppcheck-1.71 as test repo.
+
+Sample make.log > /test/make.log 
+    ...
+    g++ -Ilib -Iexternals/tinyxml   -std=c++0x -O2 -include lib/cxx11emu.h -DNDEBUG -Wall -Wno-sign-compare -std=c++0x  -c -o lib/checknonreentrantfunctions.o lib/checknonreentrantfunctions.cpp
+    g++ -Ilib -Iexternals/tinyxml   -std=c++0x -O2 -include lib/cxx11emu.h -DNDEBUG -Wall -Wno-sign-compare -std=c++0x  -c -o lib/checknullpointer.o lib/checknullpointer.cpp
+    g++ -Ilib -Iexternals/tinyxml   -std=c++0x -O2 -include lib/cxx11emu.h -DNDEBUG -Wall -Wno-sign-compare -std=c++0x  -c -o lib/checkobsolescentfunctions.o lib/checkobsolescentfunctions.cpp
+    ...
+
+Sample .cfg output > /test/timer.cpp.cfg
+    ...
+    ;; Function TimerResultsIntf::~TimerResultsIntf() (_ZN16TimerResultsIntfD2Ev, funcdef_no=1310, decl_uid=25835, cgraph_uid=306)
+    
+    Merging blocks 2 and 3
+    TimerResultsIntf::~TimerResultsIntf() (struct TimerResultsIntf * const this)
+    {
+      int D.74215;
+    
+      <bb 2>:
+      this->_vptr.TimerResultsIntf = &MEM[(void *)&_ZTV16TimerResultsIntf + 16B];
+      D.74215 = 0;
+      if (D.74215 != 0)
+        goto <bb 3>;
+      else
+        goto <bb 4>;
+    
+      <bb 3>:
+      operator delete (this);
+    
+      <bb 4>:
+      return;
+    
+    }
+    ...
+
+The flag breaks each function down to basic blocks and symbols.
+------------------------------------------------------------------------------------------------

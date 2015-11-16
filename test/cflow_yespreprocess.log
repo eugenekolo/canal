@@ -1,0 +1,6 @@
+getpass_r() <char *getpass_r (const char *prompt, char *password, size_t buflen) at ./curl-83.40.2/curl/src/tool_getpass.c:224>:
+    open()
+    ttyecho() <bool ttyecho (bool enable, int fd) at ./curl-83.40.2/curl/src/tool_getpass.c:184>:
+    fputs()
+    read()
+    close()
