@@ -1,0 +1,56 @@
+------------------------------------------------------------------------------------------------
+# Cppcheck
+http://sourceforge.net/projects/cppcheck/  - tries a lot to be sound, does cfgs. *Seems more relevant*
+    In addition, there are also a few extra checks in the Cppcheck repository that can be downloaded; rules , addons.
+    Cppcheck can be extended. You can:
+        look for simple patterns, see chapter about rules in the manual (pdf, html)
+        define rules for functions with .cfg files, see chapter about library files in the manual (pdf, html)
+        extend cppcheck with scripts, see chapter about addons in the manual (pdf, html)
+
+The .deb found on http://sourceforge.net/projects/cppcheck/ is very old. 
+You should install latest from https://github.com/danmar/cppcheck/.
+
+Interesting options to run:
+`cppcheck <options> <dir>` 
+    --dump               Gives the AST, flow, and tokens
+    --errorlist          Print a list of all the error messages in XML format.
+    -f, --force          Force checking of all configurations in files. If used
+                         together with '--max-configs=', the last option is the
+                         one that is effective.
+    --enable=all         Enable all.
+    --inconclusive       Enable inconclusive tests
+
+`cppcheck . 2> cppcheck.txt` - Bugs get printed in stderr. I removed syntax error ones.
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+# Flawfinder
+Looks for specific functions in the code. Smart grep.
+
+`sudo apt-get install flawfinder` - gets you 1.27. 
+Latest is 1.31, not much changed
+Source: http://www.dwheeler.com/flawfinder/flawfinder
+
+`flawfinder --quiet -c ./curl-83.40.2 > flawfinder.txt`
+`flawfinder --quiet -c --html ./curl-83.40.2 > flawfinder.html`
+    Hits = 1753
+    Lines analyzed = 176920 in 8.34 seconds (22559 lines/second)
+    Physical Source Lines of Code (SLOC) = 114203 
+    Hits@level = [0] 0 [1] 713 [2] 795 [3] 42 [4] 203 [5] 0 
+
+`flawfinder --quiet -c -m 2 --html ./curl-83.40.2 > flawfinder_m2.html`
+    Hits = 1040
+    Lines analyzed = 176920 in 6.20 seconds (31016 lines/second)
+    Physical Source Lines of Code (SLOC) = 114203 
+
+Very fast run time. Results look very boring. 
+
+Gets stupid results like: 
+    ./curl-83.40.2/curl/include/curl/mprintf.h:48: [4] (format) printf: If format strings can be influenced by an attacker, they can be exploited. Use a constant for the format specification.
+    
+    # undef printf
+
+    printf is not actually being used here, it's just a string in a preprocessor or comment or something.
+------------------------------------------------------------------------------------------------
+
