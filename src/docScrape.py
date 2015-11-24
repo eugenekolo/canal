@@ -2,7 +2,7 @@ from BeautifulSoup import BeautifulSoup
 import requests
 import os
 
-# point to output directory
+# point to output directory  --> Must be changed to local path
 outpath = '/home/ah/Desktop/EC521/Project/Apple_OpenSrc'
 url = 'http://www.opensource.apple.com'
 mbyte=1024*1024
