@@ -52,3 +52,5 @@ for project_path in $CFLOW_INPUT_PROJECT_DIRECTORY/*; do
 
 	cd $prev_dir
 done
+
+cd $main_dir
