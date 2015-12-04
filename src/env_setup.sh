@@ -35,8 +35,10 @@ export PATH_TO_PYPARSER_FAKELIBC="/home/sahin/GoogleDrive/Courses/EC521/Project/
 # CFLOW OPTIONS #
 #################
 
-export CFLOW_OUTPUT_DIRECTORY="$HOME/GoogleDrive/Courses/EC521/Project/Cflow_Results"
-export CFLOW_INPUT_PROJECT_DIRECTORY="$HOME/GoogleDrive/Courses/EC521/Project/EC521/test/test_programs"
+export PROJECT_PATH="/GoogleDrive/Courses/EC521/Project/EC521/"
+
+export CFLOW_OUTPUT_DIRECTORY="$HOME$PROJECT_PATH/""/test/cflow_files"
+export CFLOW_INPUT_PROJECT_DIRECTORY="$HOME/$PROJECT_PATH""/test/test_programs"
 
 export CFLOW_GENERATION_ENABLED=1
 
@@ -49,7 +51,7 @@ export VULNERABILITY_ANALYSIS_ENABLED=1
 export VULNERABILITY_ANALYSIS_TYPE2_ENABLED=1	# Checking of function call returns
 export VULNERABILITY_ANALYSIS_TYPE3_ENABLED=1 	# Checking of exec* or system calls with known vulnerable binaries
 
-export VULNERABILITY_LOGS_DIRECTORY="$HOME/GoogleDrive/Courses/EC521/Project/logs/"
+export VULNERABILITY_LOGS_DIRECTORY="$HOME$PROJECT_PATH""/test/logs/"
 
 ###############################
 # Graph Visualization Options #
@@ -58,6 +60,6 @@ export VULNERABILITY_LOGS_DIRECTORY="$HOME/GoogleDrive/Courses/EC521/Project/log
 # Enable flow visualization?
 export VISUALIZATION_ENABLED=1
 # Where to store .png images for call graphs
-export OUTPUT_PNG_PATH="$HOME/GoogleDrive/Courses/EC521/Project/Cflow_Images"
+export OUTPUT_PNG_PATH="$HOME$PROJECT_PATH""/test/cflow_images"
 # Keep (or remove) .dot (graph) files?
 export KEEP_DOT_FILES=0
