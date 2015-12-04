@@ -26,16 +26,16 @@ if [ $1 == "0" ]; then
 fi
 
 echo "[EnvSetup]: Setting the environment variables."
-#####################
-# SUBMODULE OPTIONS #
-#####################
-export PATH_TO_PYPARSER_FAKELIBC="/home/sahin/GoogleDrive/Courses/EC521/Project/pycparser-master/utils/fake_libc_include"
+
+# YOU JUST NEED TO CHENGE THE FOLLOWIUNG TWO
+export PATH_TO_PYPARSER="/home/sahin/GoogleDrive/Courses/EC521/Project/"
+export PROJECT_PATH="/GoogleDrive/Courses/EC521/Project/EC521/"
+
+export PATH_TO_PYPARSER_FAKELIBC="$PATH_TO_PYPARSER""/pycparser-master/utils/fake_libc_include"
 
 #################
 # CFLOW OPTIONS #
 #################
-
-export PROJECT_PATH="/GoogleDrive/Courses/EC521/Project/EC521/"
 
 export CFLOW_OUTPUT_DIRECTORY="$HOME$PROJECT_PATH/""/test/cflow_files"
 export CFLOW_INPUT_PROJECT_DIRECTORY="$HOME/$PROJECT_PATH""/test/test_programs"
