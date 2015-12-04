@@ -1,21 +1,13 @@
 #! /usr/bin/python3
 
-
-#----------------------------------------------------------------------------------------#
-#import libraries needed
 import sys
 from pycparser import c_parser, c_ast, parse_file
-#----------------------------------------------------------------------------------------#
 
-
-#----------------------------------------------------------------------------------------#
 #set up some global variables
 returnCounter = 0
 programLine = ""
-#----------------------------------------------------------------------------------------#
 
 
-#----------------------------------------------------------------------------------------#
 #functions to let me use pycparser
 class FuncCallVisitor(c_ast.NodeVisitor):
 	def __init__(self, funcname):
@@ -36,10 +28,8 @@ def show_func_calls(filename, funcname):
 	ast = parse_file(filename, use_cpp=True, cpp_path='gcc', cpp_args=['-E', r'-I/home/sahin/GoogleDrive/Courses/EC521/Project/pycparser-master/utils/fake_libc_include'])
 	v = FuncCallVisitor(funcname)
 	v.visit(ast)
-#----------------------------------------------------------------------------------------#
 
 
-#----------------------------------------------------------------------------------------#
 #chekcing to see if there are errors in the c file
 def errorCheck(filename):
 	global returnCounter
@@ -94,10 +84,8 @@ def errorCheck(filename):
 		print (filename,": This file is not checking the return of a set*id() family function")
 	else:
 		print ("No errors found in file", filename)
-#----------------------------------------------------------------------------------------#
 
 
-#----------------------------------------------------------------------------------------#
 #main will call errorCheck() for each file passed to it
 if __name__ == "__main__":
 	if len(sys.argv) > 1:
@@ -107,4 +95,3 @@ if __name__ == "__main__":
 			errorCheck(sys.argv[i])
 	else:
 		print ("Please input C files to be examined")
-#----------------------------------------------------------------------------------------#
