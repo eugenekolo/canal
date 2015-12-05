@@ -1,0 +1,62 @@
+In file included from ./poc/proofOfConceptTest.c:148:0:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/varargs.h:4:2: error: #error "GCC no longer implements <varargs.h>."
+ #error "GCC no longer implements <varargs.h>."
+  ^
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/varargs.h:5:2: error: #error "Revise your code to use <stdarg.h>."
+ #error "Revise your code to use <stdarg.h>."
+  ^
+In file included from ./poc/proofOfConceptTest.c:157:0:
+/usr/include/x86_64-linux-gnu/sys/ipc.h:24:3: warning: #warning "Files using this header must be compiled with _SVID_SOURCE or _XOPEN_SOURCE" [-Wcpp]
+ # warning "Files using this header must be compiled with _SVID_SOURCE or _XOPEN_SOURCE"
+   ^
+Traceback (most recent call last):
+  File "returnCheckerSubmodule.py", line 96, in <module>
+    errorCheck(sys.argv[i])
+  File "returnCheckerSubmodule.py", line 43, in errorCheck
+    show_func_calls(filename, element)
+  File "returnCheckerSubmodule.py", line 29, in show_func_calls
+    ast = parse_file(filename, use_cpp=True, cpp_path='gcc', cpp_args=['-E', r'-I'+os.environ['PATH_TO_PYPARSER_FAKELIBC']])
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/__init__.py", line 93, in parse_file
+    return parser.parse(text, filename)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/c_parser.py", line 138, in parse
+    debug=debuglevel)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/ply/yacc.py", line 265, in parse
+    return self.parseopt_notrack(input,lexer,debug,tracking,tokenfunc)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/ply/yacc.py", line 1047, in parseopt_notrack
+    tok = self.errorfunc(errtoken)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/c_parser.py", line 1613, in p_error
+    column=self.clex.find_tok_column(p)))
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/plyparser.py", line 54, in _parse_error
+    raise ParseError("%s: %s" % (coord, msg))
+pycparser.plyparser.ParseError: /usr/include/x86_64-linux-gnu/sys/file.h:50:46: before: __THROW
+In file included from ./poc/proofOfConceptTest.c:148:0:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/varargs.h:4:2: error: #error "GCC no longer implements <varargs.h>."
+ #error "GCC no longer implements <varargs.h>."
+  ^
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/varargs.h:5:2: error: #error "Revise your code to use <stdarg.h>."
+ #error "Revise your code to use <stdarg.h>."
+  ^
+In file included from ./poc/proofOfConceptTest.c:157:0:
+/usr/include/x86_64-linux-gnu/sys/ipc.h:24:3: warning: #warning "Files using this header must be compiled with _SVID_SOURCE or _XOPEN_SOURCE" [-Wcpp]
+ # warning "Files using this header must be compiled with _SVID_SOURCE or _XOPEN_SOURCE"
+   ^
+Traceback (most recent call last):
+  File "syschecker.py", line 99, in <module>
+    errorCheck(sys.argv[i])
+  File "syschecker.py", line 63, in errorCheck
+    show_func_calls(filename, element)
+  File "syschecker.py", line 28, in show_func_calls
+    ast = parse_file(filename, use_cpp=True, cpp_path='gcc', cpp_args=['-E', r'-I'+os.environ['PATH_TO_PYPARSER_FAKELIBC']])
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/__init__.py", line 93, in parse_file
+    return parser.parse(text, filename)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/c_parser.py", line 138, in parse
+    debug=debuglevel)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/ply/yacc.py", line 265, in parse
+    return self.parseopt_notrack(input,lexer,debug,tracking,tokenfunc)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/ply/yacc.py", line 1047, in parseopt_notrack
+    tok = self.errorfunc(errtoken)
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/c_parser.py", line 1613, in p_error
+    column=self.clex.find_tok_column(p)))
+  File "/home/sahin/Software_Installations/anaconda/lib/python2.7/site-packages/pycparser/plyparser.py", line 54, in _parse_error
+    raise ParseError("%s: %s" % (coord, msg))
+pycparser.plyparser.ParseError: /usr/include/x86_64-linux-gnu/sys/file.h:50:46: before: __THROW

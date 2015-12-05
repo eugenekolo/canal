@@ -59,13 +59,38 @@ a_before_b_wrapper(){
 }
 
 execve_wrapper(){
+	scripts_dir=`pwd`
+        cd $CFLOW_INPUT_PROJECT_DIRECTORY
 
-	echo "TODO-3: Call execve checker submodule with every c file"
-	echo "Discuss with Josh about how to handle/log output"
+        # Get a copy of the submodule code
+        cp $scripts_dir/syschecker.py .
+
+        #  Get a list of all the c programs
+        LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
+        #echo $LIST_OF_C_PROGRAMS
+
+        # Remove any previously existing log file
+	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>/dev/null
+
+        # Feed every c program to vulnerability checker submodule
+        for program in $LIST_OF_C_PROGRAMS; do
+                python syschecker.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+        done
+
+        rm syschecker.py
+        cd $scripts_dir
 }
 
 # TODO: Call each wrapper depending on the options
 
+if [ $VULNERABILITY_ANALYSIS_TYPE1_ENABLED == 1 ]; then
+	a_before_b_wrapper
+fi
+
 if [ $VULNERABILITY_ANALYSIS_TYPE2_ENABLED == 1 ]; then
 	return_check_wrapper
+fi
+
+if [ $VULNERABILITY_ANALYSIS_TYPE3_ENABLED == 1 ]; then
+        execve_wrapper
 fi

@@ -1,6 +1,7 @@
 
 #import libraries needed
 import sys
+import os
 from pycparser import c_parser, c_ast, parse_file
 
 #set up some global variables
@@ -24,7 +25,7 @@ class FuncCallVisitor(c_ast.NodeVisitor):
 
 #need to change the cpp_args in ast to match your directory (-I/your/path/to/utils/fake_libc_include)
 def show_func_calls(filename, funcname):    
-	ast = parse_file(filename, use_cpp=True, cpp_path='gcc', cpp_args=['-E', r'-I/Users/joshjoseph/Downloads/pycparser-master/utils/fake_libc_include'])
+	ast = parse_file(filename, use_cpp=True, cpp_path='gcc', cpp_args=['-E', r'-I'+os.environ['PATH_TO_PYPARSER_FAKELIBC']])
 	v = FuncCallVisitor(funcname)
 	v.visit(ast)
 
