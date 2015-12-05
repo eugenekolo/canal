@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 ################################################################################
-# Finds badwords in a file and checks if their return value is checked/used 
+# Finds badwords in a file, particularly in exec* family of function calls
 #
+# calls to system() have high risk include the following: 
+# When passing an unsanitized or improperly sanitized command string originating from a tainted source
+# If a command is specified without a path name and the command processor path name resolution mechanism is accessible to an attacker
+# If a relative path to an executable is specified and control over the current working directory is accessible to an attacker
+# If the specified executable program can be spoofed by an attacker
 #
-# TODO(eugenek): This parsing is really flakey and misses a lot of cases
-# assumes rets are ints
-# assumes rets are on the same line
-# assumes rets will only be used at higher line numbers in the src file
-# [FIXED] only returns 1 error per file
 ################################################################################
+
 import sys
 import os
 from pycparser import c_parser, c_ast, parse_file
 
-## Globals
-badwords = ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']
+badwords = ['execve', 'execl', 'execlp', 'execle', 'execv', 'execvp', 'execvpe', 'system']
 
 ## Visits function calls in an AST
 ## Based off https://github.com/eliben/pycparser/examples/func_calls.py
@@ -34,9 +34,8 @@ def visit_func_calls(fileName, funcname):
 	visitor.visit(ast) 
 	return visitor.badlineNums
 
-##
-# Finds badwords in a file and checks if their return value is checked/used
-#
+
+#chekcing to see if there are errors in the c file
 def main(fileName):
 	program_errors = [] # e.g. [{"error":"seteuid", "line":52, "comment":"You should..."}, 
 						  # 	  {"error":"setregid", "line":19, "comment":""}, ...]
@@ -44,41 +43,10 @@ def main(fileName):
 	for badword in badwords:
 		badlineNums = visit_func_calls(fileName, badword)
 
-		## Check each assumed bad line, and see if it's actually a return error
 		for badlineNum in badlineNums:
-			is_error = True
-
-			## Check each line in the file for a bad line
-			f = open(fileName, 'r')
-			for lineNum, line in enumerate(f):
-				if (lineNum != badlineNum - 1): # No point checking if it's not a badline
-					continue
-	
-				if "if" in line: # No error here boys
-					is_error = False
-					break
-	
-				## Check the variable is assigned and used again later in the file
-				# Extract the variable name
-				varName = ""
-				if "=" in line:
-					varName = line.rsplit("=", 1)[0]
-					if "int" in varName:
-						varName = varName.rsplit("int", 1)[1]
-						while "," in varName:
-							varName = varName.rsplit(",", 1)[1]
-					varName = varName.strip()
-	
-					with open(fileName, "r") as fo:
-						for i in range(lineNum + 1): # Skip to 
-							fo.readline()
-						for line in fo:
-							if varName in line:
-								is_error = False
-								continue
-
+			is_error = True			
 			if (is_error): 
-				program_errors.append({'error': badword, 'line': badlineNum, 'comment': "Not checking return!"})
+				program_errors.append({'error': badword, 'line': badlineNum, 'comment': "Dangerous exec* call!"})
 
 	## Report results!
 	print("== Errors in: " + fileName)
