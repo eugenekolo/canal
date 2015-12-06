@@ -31,6 +31,9 @@ error_checklist(){
         fi
 }
 
+##################
+# RETURN WRAPPER #
+##################
 check_return_wrapper(){
 	scripts_dir=`pwd`
 	cd $CFLOW_INPUT_PROJECT_DIRECTORY
@@ -53,6 +56,9 @@ check_return_wrapper(){
 	cd $scripts_dir
 }
 
+######################
+# A BEFORE B WRAPPER #
+######################
 check_a_before_b_wrapper(){
 
   # Remove any previously existing log file
@@ -64,6 +70,9 @@ check_a_before_b_wrapper(){
 	done
 }
 
+################
+# EXEC WRAPPER #
+################
 check_exec_wrapper(){
 	scripts_dir=`pwd`
   cd $CFLOW_INPUT_PROJECT_DIRECTORY
@@ -87,21 +96,43 @@ check_exec_wrapper(){
   cd $scripts_dir
 }
 
+#####################
+# BAD WORDS WRAPPER #
+#####################
 check_bad_words_wrapper(){
-	echo "TODO(Onur): check bad words wrapper."
+	scripts_dir=`pwd`
+  cd $CFLOW_INPUT_PROJECT_DIRECTORY
+
+  # Get a copy of the submodule code
+  cp $scripts_dir/check_bad_words.py .
+
+  #  Get a list of all the c programs
+  LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
+
+  # Remove any previously existing log file
+	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>/dev/null
+
+  # Feed every c program to vulnerability checker submodule
+  for program in $LIST_OF_C_PROGRAMS; do
+          python check_bad_words.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+  done
+
+  rm check_bad_words.py
+  cd $scripts_dir
 }
 
 ####################
 # MAIN STARTS HERE #
 ####################
 
+rm $VULNERABILITY_LOGS_DIRECTORY/ERRORS.log 2>/dev/null
+
 if [ $VULNERABILITY_ANALYSIS_TYPE1_ENABLED == 1 ]; then
-	echo "asd"
 	check_a_before_b_wrapper
 fi
 
 if [ $VULNERABILITY_ANALYSIS_TYPE2_ENABLED == 1 ]; then
-	return_check_wrapper
+	check_return_wrapper
 fi
 
 if [ $VULNERABILITY_ANALYSIS_TYPE3_ENABLED == 1 ]; then
