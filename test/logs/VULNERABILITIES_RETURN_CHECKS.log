@@ -1,0 +1,16 @@
+[CHECK_RETURN]./chal_mega/chal_mega.c
+	error = setgid, line = 30, comment = [ERROR] Not checking return!
+	error = setgid, line = 31, comment = [ERROR] Not checking return!
+[CHECK_RETURN]./chal2/test_chal2.c
+	error = setgid, line = 13, comment = [ERROR] Not checking return!
+[CHECK_RETURN]./chal1/test_chal1.c
+	error = setgid, line = 9, comment = [ERROR] Not checking return!
+[CHECK_RETURN]./poc/proofOfConceptTest.c
+	error = setgid, line = 83, comment = [ERROR] Not checking return!
+	error = setgid, line = 88, comment = [ERROR] Not checking return!
+	error = setgid, line = 89, comment = [ERROR] Not checking return!
+	error = setgid, line = 466, comment = [ERROR] Not checking return!
+	error = setgid, line = 474, comment = [ERROR] Not checking return!
+	error = setgid, line = 610, comment = [ERROR] Not checking return!
+	error = setgid, line = 611, comment = [ERROR] Not checking return!
+	error = setgid, line = 669, comment = [ERROR] Not checking return!
