@@ -15,15 +15,16 @@
 int main(int argc, char **argv) {
 
   char* foo;
-  foo = (char*)malloc(200); // Should trigger "a before b" later
+  foo = (char*)malloc(200); // Should trigger "a before b" error later
 
+  system("echo hi"); // Should ERROR from "a before b"
+  
   gid_t gid = getgid(); 
   uid_t uid = getuid();
 
   seteuid(uid); // Should give WARNING from "check set*"
   setregid(gid, gid); // Should give ERROR from "no return checker"
   system(argv[1]); // Should give WARNING from "syschecker"
-                   // Should give ERROR from "a before b"
 
   char cmdbuf[128] = "export IFS=' \t\n'; /usr/bin/file ";
   system(cmdbuf); // Should be tracked down to "export IFS=' \t\n'; /usr/bin/file "

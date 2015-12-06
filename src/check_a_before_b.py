@@ -1,24 +1,42 @@
 #!/usr/bin/python3
 ################################################################################
+# Takes in a cflow file. That must be generated.
 # An error is raised if a function call to "a" happens before "b"
-# e.g. if `seteuid` happens before `system`, or `execve`
-#      if `malloc` happens before `seteuid`
+# e.g. if `system` happens before `seteuid`, or `setegid`
+#      if `malloc` happens before `seteuid` ...
 #
 ################################################################################
 
 import sys
 import os
 
-badtuples = [("seteuid", ['execve', 'execl', 'execlp', 'execle', 'execv', 'execvp', 'execvpe', 'system']),
-          ("malloc", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid'])
-         ]
+badtuples = [("system", ['seteuid', 'setegid']),
+             ("malloc", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid'])
+            ]
 
 def main(fileName):
     program_errors = [] # e.g. [{"error":"seteuid", "line":52, "comment":"You should..."}, 
                         #       {"error":"setregid", "line":19, "comment":""}, ...]
     
+
     for badtuple in badtuples:
-        pass
+        f = open(fileName, 'r')
+        for lineNum, line in enumerate(f):
+            is_error = False
+
+            ## "a" happened, check the rest of the file for "b"
+            if badtuple[0] in line:
+                print(badtuple[0])
+                with open(fileName, 'r') as fo:
+                    for i in range(lineNum + 1): # Skip ahead
+                        fo.readline()
+                    for bLineNum, bLine in enumerate(fo):
+                        # Check if any "b" in the line
+                        for b in badtuple[1]:
+                            if b in bLine:
+                                program_errors.append({'error': badtuple[0], 'line': lineNum, 
+                                    'comment': "[ERROR] {0} happens before {1} on {2}!".format(badtuple[0], b, bLineNum)})
+        f.close()
 
     ## Report results!
     print("== Errors in: " + fileName)

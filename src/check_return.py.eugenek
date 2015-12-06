@@ -70,7 +70,7 @@ def main(fileName):
                     varName = varName.strip()
     
                     with open(fileName, "r") as fo:
-                        for i in range(lineNum + 1): # Skip to 
+                        for i in range(lineNum + 1): # Skip ahead
                             fo.readline()
                         for line in fo:
                             if varName in line:
