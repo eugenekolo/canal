@@ -16,8 +16,8 @@ error_checklist(){
 	fi
 
 	if [ ! -d "$CFLOW_OUTPUT_DIRECTORY" ]; then
-                echo "[Cflow Visualize]: Invalid cflow directory."
-                exit
+   	echo "[Cflow Visualize]: Invalid cflow directory."
+   	exit
 	fi
 }
 
@@ -40,9 +40,7 @@ for SOURCE_FILE_PATH in $CFLOW_OUTPUT_DIRECTORY/*; do
 
 	dot -Tpng $SOURCE_FILE_PATH".dot" > "$OUTPUT_PNG_PATH/""$OUTPUT_IMAGE_NAME"".png"
 
-	if [ "$KEEP_DOT_FILES" == 0 ]; then
-		rm $SOURCE_FILE_PATH".dot"
-	fi
+	rm $SOURCE_FILE_PATH".dot"
 
 done
 
