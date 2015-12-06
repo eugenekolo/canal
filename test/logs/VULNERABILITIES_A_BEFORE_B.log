@@ -1,0 +1,8 @@
+[CHECK_A_BEFORE_B] Errors in: /home/sahin/GoogleDrive/Courses/EC521/Project/EC521//test/cflow_files/chal1.cflow
+[CHECK_A_BEFORE_B] Errors in: /home/sahin/GoogleDrive/Courses/EC521/Project/EC521//test/cflow_files/chal2.cflow
+[CHECK_A_BEFORE_B] Errors in: /home/sahin/GoogleDrive/Courses/EC521/Project/EC521//test/cflow_files/chal_mega.cflow
+	error = malloc, line = 1, comment = [ERROR] malloc happens before seteuid on 4!
+	error = malloc, line = 1, comment = [ERROR] malloc happens before setregid on 5!
+	error = system, line = 2, comment = [ERROR] system happens before seteuid on 4!
+	error = system, line = 2, comment = [ERROR] system happens before setregid on 5!
+[CHECK_A_BEFORE_B] Errors in: /home/sahin/GoogleDrive/Courses/EC521/Project/EC521//test/cflow_files/poc.cflow
