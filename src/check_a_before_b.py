@@ -10,8 +10,15 @@
 import sys
 import os
 
-badtuples = [("system", ['seteuid', 'setegid']),
-             ("malloc", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid'])
+badtuples = [("malloc", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("system", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("execve", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("execl", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("execlp", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("execle", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("execv", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("execvp", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
+             ("execvpe", ['setuid', 'seteuid', 'setegid', 'setfsuid', 'setreuid', 'setregid', 'setresuid', 'setresgid', 'setgid']),
             ]
 
 def main(fileName):
@@ -39,9 +46,9 @@ def main(fileName):
         f.close()
 
     ## Report results!
-    print("== Errors in: " + fileName)
+    print("[CHECK_A_BEFORE_B] Errors in: " + fileName)
     for error in program_errors:
-        print("error = {0}, line = {1}, comment = {2}".format(error['error'], str(error['line']), error['comment']))
+        print("\terror = {0}, line = {1}, comment = {2}".format(error['error'], str(error['line']), error['comment']))
 
 ###############################################################################
 # Main ~!
