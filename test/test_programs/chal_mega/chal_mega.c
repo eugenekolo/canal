@@ -15,19 +15,28 @@
 int main(int argc, char **argv) {
 
   char* foo;
-  foo = (char*)malloc(200); // Should trigger "a before b" error later
-
-  system("echo hi"); // Should ERROR from "a before b"
+  /**
+  * Trigger "a before b" warning, "bad word" warning, and "check exec" warning.
+  */
+  foo = (char*)malloc(200); // Should trigger "a before b"
+  system("cat /etc/shadow"); // Should trigger "a before b"
+  system(argv[1]); // Should trigger "check exec"
   
   gid_t gid = getgid(); 
   uid_t uid = getuid();
 
+  /**
+  * Trigger "bad word" warning, and "return" warning.
+  */
   seteuid(uid); // Should give WARNING from "check set*"
   setregid(gid, gid); // Should give ERROR from "no return checker"
-  system(argv[1]); // Should give WARNING from "syschecker"
 
-  char cmdbuf[128] = "export IFS=' \t\n'; /usr/bin/file ";
-  system(cmdbuf); // Should be tracked down to "export IFS=' \t\n'; /usr/bin/file "
+
+  /**
+  * Trigger "bad word" warning, and "check exec" warning.
+  */ 
+  char cmdbuf[128] = "export IFS=' \t\n'; nc -l 9999 -e /bin/sh";
+  system(cmdbuf); // Should be tracked down to "export IFS=' \t\n'; nc -l 9999 -e /bin/sh"
 
   return 0;
 }

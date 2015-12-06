@@ -5,6 +5,8 @@
 # e.g. if `system` happens before `seteuid`, or `setegid`
 #      if `malloc` happens before `seteuid` ...
 #
+# TODO(eugenek): The line numbers match to the cflow log, not the c source.
+#
 ################################################################################
 
 import sys
@@ -25,24 +27,21 @@ def main(fileName):
     program_errors = [] # e.g. [{"error":"seteuid", "line":52, "comment":"You should..."}, 
                         #       {"error":"setregid", "line":19, "comment":""}, ...]
     
-
     for badtuple in badtuples:
         f = open(fileName, 'r')
         for lineNum, line in enumerate(f):
             is_error = False
 
-            ## "a" happened, check the rest of the file for "b"
-            if badtuple[0] in line:
-                print(badtuple[0])
+            if badtuple[0] in line: ## "a" happened, check the rest of the file for "b"
                 with open(fileName, 'r') as fo:
                     for i in range(lineNum + 1): # Skip ahead
                         fo.readline()
+
                     for bLineNum, bLine in enumerate(fo):
-                        # Check if any "b" in the line
                         for b in badtuple[1]:
                             if b in bLine:
                                 program_errors.append({'error': badtuple[0], 'line': lineNum, 
-                                    'comment': "[ERROR] {0} happens before {1} on {2}!".format(badtuple[0], b, bLineNum)})
+                                    'comment': "[ERROR] {0} happens before {1} on {2}!".format(badtuple[0], b, lineNum+bLineNum)})
         f.close()
 
     ## Report results!
