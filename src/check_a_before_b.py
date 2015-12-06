@@ -32,16 +32,18 @@ def main(fileName):
         for lineNum, line in enumerate(f):
             is_error = False
 
-            if badtuple[0] in line: ## "a" happened, check the rest of the file for "b"
-                with open(fileName, 'r') as fo:
-                    for i in range(lineNum + 1): # Skip ahead
-                        fo.readline()
+            ## "a" happened, check the rest of the file for "b"
+            if badtuple[0] in line: 
+                fo = open(fileName, 'r')
+                for i in range(lineNum + 1): # Skip ahead
+                    fo.readline()
 
-                    for bLineNum, bLine in enumerate(fo):
-                        for b in badtuple[1]:
-                            if b in bLine:
-                                program_errors.append({'error': badtuple[0], 'line': lineNum, 
-                                    'comment': "[ERROR] {0} happens before {1} on {2}!".format(badtuple[0], b, lineNum+bLineNum)})
+                for bLineNum, bLine in enumerate(fo):
+                    for b in badtuple[1]:
+                        if b in bLine:
+                            program_errors.append({'error': badtuple[0], 'line': lineNum, 
+                                'comment': "[ERROR] {0} happens before {1} on {2}!".format(badtuple[0], b, lineNum+bLineNum)})
+                fo.close()
         f.close()
 
     ## Report results!

@@ -39,7 +39,7 @@ def visit_func_calls(fileName, funcname):
 #chekcing to see if there are errors in the c file
 def main(fileName):
     program_errors = [] # e.g. [{"error":"seteuid", "line":52, "comment":"You should..."}, 
-                          #       {"error":"setregid", "line":19, "comment":""}, ...]
+                        #       {"error":"setregid", "line":19, "comment":""}, ...]
 
     for badword in badwords:
         badlineNums = visit_func_calls(fileName, badword)
