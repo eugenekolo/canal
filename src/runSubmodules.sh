@@ -15,6 +15,7 @@
 : ${VULNERABILITY_ANALYSIS_TYPE1_ENABLED=0} # A before B
 : ${VULNERABILITY_ANALYSIS_TYPE2_ENABLED=0} # return check
 : ${VULNERABILITY_ANALYSIS_TYPE3_ENABLED=0} # execve checker
+: ${VULNERABILITY_ANALYSIS_TYPE4_ENABLED=0} # bad words
 
 # Input and Environment Check/Validation
 error_checklist(){
@@ -30,61 +31,73 @@ error_checklist(){
         fi
 }
 
-return_check_wrapper(){
+check_return_wrapper(){
 	scripts_dir=`pwd`
 	cd $CFLOW_INPUT_PROJECT_DIRECTORY
 
 	# Get a copy of the submodule code
-	cp $scripts_dir/returnCheckerSubmodule.py .
+	cp $scripts_dir/check_return.py .
 
 	#  Get a list of all the c programs
 	LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
-	#echo $LIST_OF_C_PROGRAMS
 
 	# Remove any previously existing log file
 	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS.log 2>/dev/null
 
 	# Feed every c program to vulnerability checker submodule
 	for program in $LIST_OF_C_PROGRAMS; do
-		python returnCheckerSubmodule.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+		python check_return.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
 	done
 
-	rm returnCheckerSubmodule.py
+	rm check_return.py
 	cd $scripts_dir
 }
 
-a_before_b_wrapper(){
-	echo "TODO-1: Call A before B submodule with every .cflow file"
-	echo "Discuss with Eugene about how to handle/log output"
+check_a_before_b_wrapper(){
+
+  # Remove any previously existing log file
+	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>/dev/null
+
+	# Iterate through each cflow file
+	for cflow_output in $CFLOW_OUTPUT_DIRECTORY/*; do
+		python check_a_before_b.py $cflow_output 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+	done
 }
 
-execve_wrapper(){
+check_exec_wrapper(){
 	scripts_dir=`pwd`
-        cd $CFLOW_INPUT_PROJECT_DIRECTORY
+  cd $CFLOW_INPUT_PROJECT_DIRECTORY
 
-        # Get a copy of the submodule code
-        cp $scripts_dir/syschecker.py .
+  # Get a copy of the submodule code
+  cp $scripts_dir/check_exec.py .
 
-        #  Get a list of all the c programs
-        LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
-        #echo $LIST_OF_C_PROGRAMS
+  #  Get a list of all the c programs
+  LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
+  #echo $LIST_OF_C_PROGRAMS
 
-        # Remove any previously existing log file
+  # Remove any previously existing log file
 	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>/dev/null
 
-        # Feed every c program to vulnerability checker submodule
-        for program in $LIST_OF_C_PROGRAMS; do
-                python syschecker.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
-        done
+  # Feed every c program to vulnerability checker submodule
+  for program in $LIST_OF_C_PROGRAMS; do
+          python check_exec.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+  done
 
-        rm syschecker.py
-        cd $scripts_dir
+  rm check_exec.py
+  cd $scripts_dir
 }
 
-# TODO: Call each wrapper depending on the options
+check_bad_words_wrapper(){
+	echo "TODO(Onur): check bad words wrapper."
+}
+
+####################
+# MAIN STARTS HERE #
+####################
 
 if [ $VULNERABILITY_ANALYSIS_TYPE1_ENABLED == 1 ]; then
-	a_before_b_wrapper
+	echo "asd"
+	check_a_before_b_wrapper
 fi
 
 if [ $VULNERABILITY_ANALYSIS_TYPE2_ENABLED == 1 ]; then
@@ -92,5 +105,11 @@ if [ $VULNERABILITY_ANALYSIS_TYPE2_ENABLED == 1 ]; then
 fi
 
 if [ $VULNERABILITY_ANALYSIS_TYPE3_ENABLED == 1 ]; then
-        execve_wrapper
+ 	check_exec_wrapper
 fi
+
+if [ $VULNERABILITY_ANALYSIS_TYPE4_ENABLED == 1 ]; then
+ 	check_bad_words_wrapper
+fi
+
+

@@ -12,30 +12,41 @@
 #################################################################
 
 ############################
-# Initializing Environment #
+# Environment Init and 		 #
+# Input Argument Checks 	 #
 ############################
+print_usage(){
+	echo "[MAIN]: main.sh -d [PATH TO SOURCE DIRECTORY]"
+	exit
+}
 
-# We don't do anything by default
-: ${CFLOW_GENERATION_ENABLED=0}
-: ${VULNERABILITY_ANALYSIS_ENABLED=0}
-: ${VISUALIZATION_ENABLED=0}
+if [[ "$#" -ne 2 ]]; then
+	echo "a"
+	print_usage
+fi
+if [ "$1" != "-d" ]; then
+	echo "b"
+	print_usage
+fi
+if [ ! -d "$2" ]; then
+	echo "[MAIN]: Invalid Project Source Directory."
+	exit
+fi
+
+source env_setup.sh 0;
+source env_setup.sh $2; # Setting up the env variables
 
 ################
 # Main Routine #
 ################
-if [ $CFLOW_GENERATION_ENABLED == 1 ]; then
-	echo "[VulnAnalysis]: Runing cflow."
-	./cflowGenerate.sh
-fi
+echo "[MAIN]: Runing cflow."
+./cflowGenerate.sh
 
-if [ $VISUALIZATION_ENABLED == 1 ]; then
-	echo "[VulnAnalysis]: Plotting call graphs."
-	./cflowVisualize.sh
-fi
+echo "[MAIN]: Plotting call graphs."
+./cflowVisualize.sh
 
-if [ $VULNERABILITY_ANALYSIS_ENABLED == 1 ]; then
-	echo "[VulnAnaysis]: Running security checkers."
-	./runSubmodules.sh
-fi
+echo "[MAIN]: Running security checkers."
+./runSubmodules.sh
 
-echo "[VulnAnalysis]: DONE!"
+echo "[MAIN]: DONE!"
+
