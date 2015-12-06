@@ -48,7 +48,7 @@ for project_path in $CFLOW_INPUT_PROJECT_DIRECTORY/*; do
 
 	# Run cflow on the C programs
 	#echo $LIST_OF_C_PROGRAMS
-	cflow --format=posix --omit-arguments --level-indent='0=\t' --level-indent='1=\t' --level-indent=start='\t' $LIST_OF_C_PROGRAMS > "$CFLOW_OUTPUT_DIRECTORY/""$PROJECT_NAME"".cflow"
+	cflow --format=posix --omit-arguments --level-indent='0=\t' --level-indent='1=\t' --level-indent=start='\t' $LIST_OF_C_PROGRAMS > "$CFLOW_OUTPUT_DIRECTORY/""$PROJECT_NAME"".cflow" 2>/dev/null
 
 	cd $prev_dir
 done

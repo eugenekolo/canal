@@ -5,6 +5,8 @@
 	error = setgid, line = 13, comment = [ERROR] Not checking return!
 [CHECK_RETURN]./chal1/test_chal1.c
 	error = setgid, line = 9, comment = [ERROR] Not checking return!
+[CHECK_RETURN]./poc2/poc2.c
+	error = setgid, line = 304, comment = [ERROR] Not checking return!
 [CHECK_RETURN]./poc/proofOfConceptTest.c
 	error = setgid, line = 83, comment = [ERROR] Not checking return!
 	error = setgid, line = 88, comment = [ERROR] Not checking return!

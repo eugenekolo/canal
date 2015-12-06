@@ -5,4 +5,6 @@
 	error = malloc, line = 1, comment = [ERROR] malloc happens before setregid on 5!
 	error = system, line = 2, comment = [ERROR] system happens before seteuid on 4!
 	error = system, line = 2, comment = [ERROR] system happens before setregid on 5!
+[CHECK_A_BEFORE_B] Errors in: /home/sahin/GoogleDrive/Courses/EC521/Project/EC521//test/cflow_files/poc2.cflow
+	error = execv, line = 7, comment = [ERROR] execv happens before setuid on 24!
 [CHECK_A_BEFORE_B] Errors in: /home/sahin/GoogleDrive/Courses/EC521/Project/EC521//test/cflow_files/poc.cflow

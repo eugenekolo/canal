@@ -11,6 +11,14 @@
 [CHECK_BAD_WORDS] Errors in: ./chal1/test_chal1.c
 	error = setregid, line = 9, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
 	error = system, line = 10, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./poc2/poc2.c
+	error = execv, line = 199, comment = [ERROR] Dangerous exec* call!
+	error = gets, line = 234, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 243, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 272, comment = [ERROR] Dangerous boundless call used!
+	error = setuid, line = 304, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = strcpy, line = 482, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 483, comment = [ERROR] Dangerous boundless call used!
 [CHECK_BAD_WORDS] Errors in: ./poc/proofOfConceptTest.c
 	error = seteuid, line = 83, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
 	error = seteuid, line = 88, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
