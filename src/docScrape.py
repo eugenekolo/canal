@@ -1,57 +1,62 @@
+#!/usr/bin/python
+
 from BeautifulSoup import BeautifulSoup
 import requests
 import os
 
-# point to output directory  --> Must be changed to local path
-outpath = '/home/ah/Desktop/EC521/Project/Apple_OpenSrc'
-url = 'http://www.opensource.apple.com'
-mbyte=1024*1024
+## CONFIG - Must change these!
+OUTPATH = '/home/eugenek/testdir'
+URL = 'http://www.opensource.apple.com'
+MBYTE=1024*1024
 
-html0 = requests.get(url).text
+## Globals
+html0 = requests.get(URL).text
 soup0 = BeautifulSoup(html0)
 
-# scrape base page for OSversions
-for name0 in soup0.findAll('a', href=True):
+##  
+# Apple's open source home page lists links for versions of OSX
+# This downloads every tar file from each of those versions.
+#
+def main():
+	link_names = [link['href'] for link in soup0.findAll('a', href=True)]
+	version_links = [x for x in link_names if x.startswith('/release/mac')]
 	
-	link0 = name0['href']
-	if( link0.startswith('/release/mac') ):
-
-		html = requests.get(url + link0).text
+	for version_link in version_links:
+		version = version_link.split('/')[-2] # Version # in the URL
+		html = requests.get(URL+version_link).text
 		soup = BeautifulSoup(html)
+	
+		if not os.path.exists(OUTPATH + '/' + version):
+			os.makedirs(OUTPATH + '/' + version)
 
-		version = link0.split('/')[-2]
+		## Filter out the tar links from the version page
+		link_names = [link['href'] for link in soup.findAll('a', href=True)] # Extract out link names
+		tar_links = [x for x in link_names if x.endswith('tar.gz')] # Filter out tar links from link names
+		tar_links = [x if x.startswith('http') else URL+x for x in tar_links] # Correct redirects by appending URL
+		
+		## Attempt downloading every tar
+		for tar_link in tar_links:
+			file_name = tar_link.split('/')[-1]
+			out_name = OUTPATH + '/' + version + '/' + file_name
+			r = requests.get(tar_link, stream=True)
+	
+			if (os.path.isfile(out_name) == True): 
+				continue #  TODO(eugenek): This should create another unique dir instead of skipping
 
-		print(version)
+			if(r.status_code != requests.codes.ok):
+				continue
 
-		# create folder for OSversion
-		if not os.path.exists('Apple_OpenSrc' + '/' + version):
-			os.makedirs('Apple_OpenSrc' + '/' + version)
+			fsize = int(r.headers['content-length'])
+			print 'Downloading %s (%sMb)' % ( file_name, fsize/MBYTE )
+			with open(out_name, 'wb') as fd:
+				for chunk in r.iter_content(chunk_size=1024): # chuck size can be larger
+					if chunk: # ignore keep-alive requests
+						fd.write(chunk)
+	
+			pass
 
-		# scrape OSver page for .tar files
-		for name in soup.findAll('a', href=True):
-			thislink = name['href']
-
-			# skip all links except tar file downloads links
-			if( thislink.endswith('tar.gz') ):
-
-				# some links are redirects to other websites...
-				if ( thislink.startswith('http') ):
-					zipurl = thislink
-				else:
-					zipurl = url + thislink
-
-				fileName = zipurl.split('/')[-1]
-				outfname = outpath + '/' + version + '/' + fileName
-
-				# skip package if file already exists
-				if (os.path.isfile(outfname) == False):
-					r = requests.get(zipurl, stream=True)
-			#				print(r.status_code)
-					if( r.status_code == requests.codes.ok ) :
-						fsize = int(r.headers['content-length'])
-						print 'Downloading %s (%sMb)' % ( fileName, fsize/mbyte )
-						with open(outfname, 'wb') as fd:
-							for chunk in r.iter_content(chunk_size=1024): # chuck size can be larger
-								if chunk: # ignore keep-alive requests
-									fd.write(chunk)
-							fd.close()
+###############################################################################
+# Main ~!
+###############################################################################
+if __name__ ==  "__main__":
+	main()
