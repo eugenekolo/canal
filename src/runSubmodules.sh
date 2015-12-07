@@ -63,13 +63,13 @@ check_return_wrapper(){
 check_a_before_b_wrapper(){
 
   # Remove any previously existing log file
-	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>/dev/null
+  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>/dev/null
 
-	# Iterate through each cflow file
-	for cflow_output in $CFLOW_OUTPUT_DIRECTORY/*; do
-		echo "[Run Submodules]: Checking $program ..."
-		python check_a_before_b.py $cflow_output 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
-	done
+  # Iterate through each cflow file
+  for cflow_output in $CFLOW_OUTPUT_DIRECTORY/*; do
+	echo "[Run Submodules]: Checking $program ..."
+	python check_a_before_b.py $cflow_output 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+  done
 }
 
 ################
@@ -87,7 +87,7 @@ check_exec_wrapper(){
   #echo $LIST_OF_C_PROGRAMS
 
   # Remove any previously existing log file
-	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>/dev/null
+  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>/dev/null
 
   # Feed every c program to vulnerability checker submodule
   for program in $LIST_OF_C_PROGRAMS; do
@@ -113,7 +113,7 @@ check_bad_words_wrapper(){
   LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
 
   # Remove any previously existing log file
-	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>/dev/null
+  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>/dev/null
 
   # Feed every c program to vulnerability checker submodule
   for program in $LIST_OF_C_PROGRAMS; do
@@ -150,5 +150,4 @@ if [ $VULNERABILITY_ANALYSIS_TYPE4_ENABLED == 1 ]; then
 	echo "[Run Submodules]: Checking for bad words."
  	check_bad_words_wrapper
 fi
-
 
