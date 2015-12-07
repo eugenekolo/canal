@@ -14,6 +14,7 @@ import sys, re
 #import os
 
 badwords = ['execve', 'execl', 'execlp', 'execle', 'execv', 'execvp', 'execvpe', 'system']
+no_bound_calls = ['gets', 'scanf', 'strcat', 'strcpy']
 
 
 #chekcing to see if there are errors in the c file
@@ -58,29 +59,25 @@ def main(fileName):
 
             badArguments = targetline.split(", ")
 
-            print("Line", item, "calls", targetword, "with", badArguments)
+            print("Line", item, "calls", targetword, "with ", end = "")
+            print(*badArguments, sep=', ')
             # ok, now we have the arguments for the badword function in targetline
             # simple vulnerability check - are we calling from argv
             if "argv" in targetline:
-                print("\tF---! We called argv! That never ends well!")
+                print("\targv called in vulnerable function!")
             if "cat " in targetline:
-                print("\tReally, you call 'cat' in this function? Why even bother?")
+                print("\tcat called in vulnerable function")
 
-            # hard part - finding user-vulnerable strings
+            # hard part - finding user-vulnerable strings that are passed to the function
+            # start by hunting for variables that are declared previously as char * or char ____ [___]
             for argument in badArguments:
-                q = open(fileName, 'r')
-                for lineNum, line in enumerate(q):
-                    if((argument in line) and (lineNum < item)):
-                        print("\t\t", lineNum, line)
-
-                #if('(' in argument): # avoid function calls within function calls for now
-                #    continue
-               # else:
-                    #print("\t\t",argument)
-               #     for lineNum, line in enumerate(f):
-               #         print(lineNum, line)
-                        #if argument in line:
-                         #   print(lineNum, line)
+                if(('(' in argument) or ("cat " in argument) or ("argv" in argument)) : # avoid function calls within function calls for now
+                   continue
+                else:
+                    q = open(fileName, 'r')
+                    for lineNum, line in enumerate(q):
+                        if((argument in line) and (lineNum < item)):
+                            print("\t\t", lineNum, line)
 
 
     # ## Report results!
