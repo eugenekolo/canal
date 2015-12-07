@@ -1,0 +1,1704 @@
+    1 	FUN: public void () (), <./src/history.c 600>
+    2 		Strlen: <>
+    3 		ch_enlargebufs: protected int (), <./src/chared.c 498>
+    4 			el_realloc: <>
+    5 			memset: <>
+    6 			hist_enlargebuf: protected int (), <./src/hist.c 195>
+    7 				el_realloc: <>
+    8 				memset: <>
+    9 		c_insert: protected void (), <./src/chared.c 96>
+   10 			ch_enlargebufs: 3
+   11 		va_start: <>
+   12 		va_arg: <>
+   13 		prompt_set: protected int (), <./src/prompt.c 149>
+   14 			prompt_default: private Char * (), <./src/prompt.c 58>
+   15 			prompt_default_r: private Char * (), <./src/prompt.c 71>
+   16 		ch_resizefun: protected int (), <./src/chared.c 735>
+   17 		terminal_set: protected int (), <./src/terminal.c 858>
+   18 			sigemptyset: <>
+   19 			sigaddset: <>
+   20 			sigprocmask: <>
+   21 			getenv: <>
+   22 			strcmp: <>
+   23 			memset: <>
+   24 			tgetent: <>
+   25 			fprintf: <>
+   26 			Val: <>
+   27 			terminal_alloc: private void (), <./src/terminal.c 328>
+   28 				memset: <>
+   29 				strlen: <>
+   30 				strcpy: <>
+   31 				memcpy: <>
+   32 				fprintf: <>
+   33 			tgetflag: <>
+   34 			tgetnum: <>
+   35 			tgetstr: <>
+   36 			strchr: <>
+   37 			terminal_setflags: private void (), <./src/terminal.c 224>
+   38 				Val: <>
+   39 				GoodStr: <>
+   40 				strcmp: <>
+   41 				Str: <>
+   42 				fprintf: <>
+   43 			terminal_get_size: protected int (), <./src/terminal.c 947>
+   44 				Val: <>
+   45 				ioctl: <>
+   46 			terminal_change_size: protected int (), <./src/terminal.c 983>
+   47 				Val: <>
+   48 				terminal_rebuffer_display: private int (), <./src/terminal.c 394>
+   49 					terminal_free_display: private void (), <./src/terminal.c 456>
+   50 						el_free: <>
+   51 					Val: <>
+   52 					terminal_alloc_display: private int (), <./src/terminal.c 413>
+   53 						el_malloc: <>
+   54 						el_free: <>
+   55 				re_clear_display: protected void (), <./src/refresh.c 1150>
+   56 			terminal_bind_arrow: protected void (), <./src/terminal.c 1153>
+   57 				terminal_reset_arrow: private void (), <./src/terminal.c 1048>
+   58 					keymacro_add: protected void (), <./src/keymacro.c 191>
+   59 						fprintf: <>
+   60 						node__get: private keymacro_node_t * (), <./src/keymacro.c 461>
+   61 							el_malloc: <>
+   62 						node__try: private int (), <./src/keymacro.c 318>
+   63 							node__get: 60
+   64 							node__put: private void (), <./src/keymacro.c 429>
+   65 								node__put: 64
+   66 								el_free: <>
+   67 								EL_ABORT: <>
+   68 							el_free: <>
+   69 							EL_ABORT: <>
+   70 							Strdup: <>
+   71 							node__try: 62
+   72 				keymacro_clear: protected void (), <./src/keymacro.c 219>
+   73 					keymacro_delete: protected int (), <./src/keymacro.c 239>
+   74 						fprintf: <>
+   75 						node__delete: private int (), <./src/keymacro.c 381>
+   76 							node__put: 64
+   77 							node__delete: 75
+   78 				keymacro_add: 58
+   79 		map_set_editor: protected int (), <./src/map.c 1082>
+   80 			Strcmp: <>
+   81 			STR: <>
+   82 			map_init_emacs: protected void (), <./src/map.c 1048>
+   83 				keymacro_reset: protected void (), <./src/keymacro.c 159>
+   84 					node__put: 64
+   85 				map_init_meta: private void (), <./src/map.c 977>
+   86 					keymacro_add: 58
+   87 					keymacro_map_cmd: protected keymacro_value_t * (), <./src/keymacro.c 133>
+   88 				map_init_nls: private void (), <./src/map.c 961>
+   89 					Isprint: <>
+   90 				CONTROL: <>
+   91 				keymacro_add: 58
+   92 				keymacro_map_cmd: 87
+   93 				tty_bind_char: protected void (), <./src/tty.c 934>
+   94 					keymacro_clear: 72
+   95 					UC: <>
+   96 				terminal_bind_arrow: 56
+   97 			map_init_vi: protected void (), <./src/map.c 1018>
+   98 				keymacro_reset: 83
+   99 				map_init_meta: 85
+  100 				map_init_nls: 88
+  101 				tty_bind_char: 93
+  102 				terminal_bind_arrow: 56
+  103 		STR: <>
+  104 		map_bind: protected int (), <./src/map.c 1244>
+  105 			map_init_vi: 97
+  106 			map_init_emacs: 82
+  107 			fprintf: <>
+  108 			map_print_all_keys: private void (), <./src/map.c 1209>
+  109 				fprintf: <>
+  110 				map_print_some_keys: private void (), <./src/map.c 1145>
+  111 					keymacro__decode_str: protected size_t (), <./src/keymacro.c 637>
+  112 						ADDC: <>
+  113 						ct_visual_char: protected ssize_t (), <./src/chartype.c 290>
+  114 							ct_chr_class: protected int (), <./src/chartype.c 345>
+  115 								IsASCII: <>
+  116 								Iscntrl: <>
+  117 								Isprint: <>
+  118 							ct_visual_width: protected int (), <./src/chartype.c 259>
+  119 								ct_chr_class: 114
+  120 								wcwidth: <>
+  121 							tohexdigit: <>
+  122 							tooctaldigit: <>
+  123 						ct_encode_char: protected ssize_t (), <./src/chartype.c 192>
+  124 							ct_enc_width: protected size_t (), <./src/chartype.c 176>
+  125 							ct_wctomb: <>
+  126 					fprintf: <>
+  127 					EL_ABORT: <>
+  128 				keymacro_print: protected void (), <./src/keymacro.c 260>
+  129 					node_lookup: private int (), <./src/keymacro.c 491>
+  130 						node_enum: private int (), <./src/keymacro.c 543>
+  131 							fprintf: <>
+  132 							ct_visual_char: 113
+  133 							keymacro_kprint: protected void (), <./src/keymacro.c 586>
+  134 								keymacro__decode_str: 111
+  135 								fprintf: <>
+  136 								ct_encode_string: public char * (), <./src/chartype.c 78>
+  137 									ct_conv_buff_resize: protected void (), <./src/chartype.c 50>
+  138 										el_realloc: <>
+  139 										el_free: <>
+  140 									ct_encode_char: 123
+  141 									abort: <>
+  142 								ct_wcstombs: <>
+  143 								EL_ABORT: <>
+  144 							node_enum: 130
+  145 						ct_visual_char: 113
+  146 						node_lookup: 129
+  147 						keymacro_kprint: 133
+  148 					fprintf: <>
+  149 				STR: <>
+  150 				terminal_print_arrow: protected void (), <./src/terminal.c 1136>
+  151 					Strcmp: <>
+  152 					keymacro_kprint: 133
+  153 			parse__string: protected Char * (), <./src/parse.c 239>
+  154 				parse__escape: protected int (), <./src/parse.c 139>
+  155 					STR: <>
+  156 					Strchr: <>
+  157 			terminal_clear_arrow: protected int (), <./src/terminal.c 1118>
+  158 				Strcmp: <>
+  159 			keymacro_delete: 73
+  160 			terminal_print_arrow: 150
+  161 			map_print_key: private void (), <./src/map.c 1122>
+  162 				keymacro__decode_str: 111
+  163 				fprintf: <>
+  164 				keymacro_print: 128
+  165 			bindkeymacro_usage: <>
+  166 			terminal_set_arrow: protected int (), <./src/terminal.c 1098>
+  167 				Strcmp: <>
+  168 			keymacro_map_str: protected keymacro_value_t * (), <./src/keymacro.c 145>
+  169 			keymacro_add: 58
+  170 			parse_cmd: protected int (), <./src/parse.c 277>
+  171 				Strcmp: <>
+  172 			keymacro_map_cmd: 87
+  173 			keymacro_clear: 72
+  174 			EL_ABORT: <>
+  175 		terminal_telltc: protected int (), <./src/terminal.c 1286>
+  176 			fprintf: <>
+  177 			Val: <>
+  178 			ct_encode_string: 136
+  179 			ct_visual_string: protected const Char * (), <./src/chartype.c 208>
+  180 				el_malloc: <>
+  181 				ct_visual_char: 113
+  182 				el_realloc: <>
+  183 				el_free: <>
+  184 			ct_decode_string: public Char * (), <./src/chartype.c 112>
+  185 				ct_conv_buff_resize: 137
+  186 				ct_mbstowcs: <>
+  187 			fputc: <>
+  188 		terminal_settc: protected int (), <./src/terminal.c 1328>
+  189 			strncpy: <>
+  190 			ct_encode_string: 136
+  191 			strcmp: <>
+  192 			terminal_alloc: 27
+  193 			terminal_setflags: 37
+  194 			fprintf: <>
+  195 			terminal_change_size: 46
+  196 			Val: <>
+  197 			strtol: <>
+  198 		terminal_echotc: protected int (), <./src/terminal.c 1461>
+  199 			Strcmp: <>
+  200 			STR: <>
+  201 			fprintf: <>
+  202 			Val: <>
+  203 			strcmp: <>
+  204 			ct_encode_string: 136
+  205 			tgetstr: <>
+  206 			terminal_tputs: private void (), <./src/terminal.c 1226>
+  207 				pthread_mutex_lock: <>
+  208 				tputs: <>
+  209 				terminal_putc: private int (), <./src/terminal.c 1218>
+  210 					fputc: <>
+  211 				pthread_mutex_unlock: <>
+  212 			Strtol: <>
+  213 			tgoto: <>
+  214 		tty_stty: protected int (), <./src/tty.c 1224>
+  215 			strncpy: <>
+  216 			ct_encode_string: 136
+  217 			fprintf: <>
+  218 			strlen: <>
+  219 			Strchr: <>
+  220 			strncmp: <>
+  221 			strcmp: <>
+  222 			ffs: <>
+  223 			parse__escape: 154
+  224 			assert: <>
+  225 			tty__getcharindex: private int (), <./src/tty.c 662>
+  226 			tty_setty: private int (), <./src/tty.c 482>
+  227 				tcsetattr: <>
+  228 			strerror: <>
+  229 		EL_ABORT: <>
+  230 		map_addfunc: protected int (), <./src/map.c 1396>
+  231 			el_realloc: <>
+  232 		hist_set: protected int (), <./src/hist.c 84>
+  233 		el_read_setfn: protected int (), <./src/read.c 80>
+  234 			read_char: private int (), <./src/read.c 313>
+  235 				read: <>
+  236 				FUN: 1
+  237 				sig_set: protected void (), <./src/sig.c 158>
+  238 					sig_handler: private void (), <./src/sig.c 69>
+  239 						sigemptyset: <>
+  240 						sigaddset: <>
+  241 						sigprocmask: <>
+  242 						tty_rawmode: protected int (), <./src/tty.c 980>
+  243 							tty_getty: private int (), <./src/tty.c 470>
+  244 								tcgetattr: <>
+  245 							fprintf: <>
+  246 							strerror: <>
+  247 							tty__geteightbit: <>
+  248 							tty__getspeed: private speed_t (), <./src/tty.c 649>
+  249 								cfgetispeed: <>
+  250 								cfgetospeed: <>
+  251 							cfsetispeed: <>
+  252 							cfsetospeed: <>
+  253 							tty__cooked_mode: <>
+  254 							tty__gettabs: <>
+  255 							tty__getchar: private void (), <./src/tty.c 770>
+  256 							C_SH: <>
+  257 							tty_bind_char: 93
+  258 							tty__setchar: private void (), <./src/tty.c 852>
+  259 							tty_setty: 226
+  260 						ed_redisplay: protected el_action_t (), <./src/common.c 599>
+  261 						re_refresh: protected void (), <./src/refresh.c 200>
+  262 							ELRE_DEBUG: <>
+  263 							prompt_print: protected void (), <./src/prompt.c 83>
+  264 								ct_decode_string: 184
+  265 								terminal__putc: protected int (), <./src/terminal.c 1242>
+  266 									ct_encode_char: 123
+  267 									fputs: <>
+  268 								re_putc: protected void (), <./src/refresh.c 164>
+  269 									Width: <>
+  270 									ELRE_DEBUG: <>
+  271 									re_putc: 268
+  272 									re_nextline: private void (), <./src/refresh.c 96>
+  273 										ELRE_ASSERT: <>
+  274 										abort: <>
+  275 							Width: <>
+  276 							re_addc: private void (), <./src/refresh.c 128>
+  277 								ct_chr_class: 114
+  278 								re_putc: 268
+  279 								re_nextline: 272
+  280 								ct_visual_char: 113
+  281 							re_putc: 268
+  282 							ct_encode_string: 136
+  283 							re_update_line: private void (), <./src/refresh.c 501>
+  284 								ELRE_DEBUG: <>
+  285 								re_printstr: private void (), <./src/refresh.c 79>
+  286 									ELRE_DEBUG: <>
+  287 								terminal_move_to_line: protected void (), <./src/terminal.c 483>
+  288 									fprintf: <>
+  289 									terminal_move_to_char: protected void (), <./src/terminal.c 549>
+  290 										fprintf: <>
+  291 										terminal__putc: 265
+  292 										GoodStr: <>
+  293 										terminal_tputs: 206
+  294 										tgoto: <>
+  295 										Str: <>
+  296 										terminal_overwrite: protected void (), <./src/terminal.c 647>
+  297 											fprintf: <>
+  298 											terminal__putc: 265
+  299 											terminal_overwrite: 296
+  300 									terminal_overwrite: 296
+  301 									GoodStr: <>
+  302 									terminal_tputs: 206
+  303 									tgoto: <>
+  304 									Str: <>
+  305 									terminal__putc: 265
+  306 								terminal_move_to_char: 289
+  307 								terminal_insertwrite: protected void (), <./src/terminal.c 739>
+  308 									fprintf: <>
+  309 									GoodStr: <>
+  310 									terminal_tputs: 206
+  311 									tgoto: <>
+  312 									Str: <>
+  313 									terminal_overwrite: 296
+  314 									terminal__putc: 265
+  315 								re_insert: private void (), <./src/refresh.c 360>
+  316 									ELRE_DEBUG: <>
+  317 									ct_encode_string: 136
+  318 								terminal_overwrite: 296
+  319 								re__strncopy: private void (), <./src/refresh.c 442>
+  320 								terminal_deletechars: protected void (), <./src/terminal.c 697>
+  321 									fprintf: <>
+  322 									GoodStr: <>
+  323 									terminal_tputs: 206
+  324 									tgoto: <>
+  325 									Str: <>
+  326 								re_delete: private void (), <./src/refresh.c 409>
+  327 									ELRE_DEBUG: <>
+  328 									ct_encode_string: 136
+  329 								re_clear_eol: private void (), <./src/refresh.c 457>
+  330 									ELRE_DEBUG: <>
+  331 									terminal_clear_EOL: protected void (), <./src/terminal.c 798>
+  332 										GoodStr: <>
+  333 										terminal_tputs: 206
+  334 										Str: <>
+  335 										terminal__putc: 265
+  336 							re__copy_and_pad: private void (), <./src/refresh.c 971>
+  337 							terminal_move_to_line: 287
+  338 							terminal_move_to_char: 289
+  339 							terminal_clear_EOL: 331
+  340 							Strlen: <>
+  341 							terminal_overwrite: 296
+  342 						terminal__flush: protected void (), <./src/terminal.c 1259>
+  343 							fflush: <>
+  344 						el_resize: public void (), <./src/el.c 569>
+  345 							sigemptyset: <>
+  346 							sigaddset: <>
+  347 							sigprocmask: <>
+  348 							terminal_get_size: 43
+  349 							terminal_change_size: 46
+  350 						tty_cookedmode: protected int (), <./src/tty.c 1135>
+  351 							tty_setty: 226
+  352 							fprintf: <>
+  353 							strerror: <>
+  354 						sigaction: <>
+  355 						kill: <>
+  356 					sigemptyset: <>
+  357 					sigprocmask: <>
+  358 					sig_set: 237
+  359 					sigaction: <>
+  360 				read__fixio: private int (), <./src/read.c 127>
+  361 					fcntl: <>
+  362 					ioctl: <>
+  363 				utf8_islead: private int (), <./src/read.c 302>
+  364 				ct_mbtowc: <>
+  365 				isascii: <>
+  366 		read_prepare: protected void (), <./src/read.c 447>
+  367 			sig_set: 237
+  368 			tty_rawmode: 242
+  369 			el_resize: 344
+  370 			re_clear_display: 55
+  371 			ch_reset: protected void (), <./src/chared.c 458>
+  372 				ch__clearmacro: private void (), <./src/chared.c 486>
+  373 					el_free: <>
+  374 			re_refresh: 261
+  375 			terminal__flush: 342
+  376 		read_finish: protected void (), <./src/read.c 468>
+  377 			tty_cookedmode: 350
+  378 			sig_clr: protected void (), <./src/sig.c 186>
+  379 				sigprocmask: <>
+  380 				sig_set: 237
+  381 				sigaction: <>
+  382 		tty_rawmode: 242
+  383 		tty_cookedmode: 350
+  384 		fileno: <>
+  385 		re_clear_display: 55
+  386 		re_refresh: 261
+  387 		terminal__flush: 342
+  388 		va_end: <>
+  389 		prompt_get: protected int (), <./src/prompt.c 181>
+  390 		map_get_editor: protected int (), <./src/map.c 1101>
+  391 			STR: <>
+  392 		terminal_get: protected void (), <./src/terminal.c 848>
+  393 		terminal_gettc: protected int (), <./src/terminal.c 1407>
+  394 			strcmp: <>
+  395 		el_read_getfn: protected el_rfunc_t (), <./src/read.c 92>
+  396 			read_char: 234
+  397 		tok_free: <>
+  398 		Strchr: <>
+  399 		FUN: 1
+  400 		tok_realloc: <>
+  401 		memset: <>
+  402 		el_malloc: <>
+  403 		Strncpy: <>
+  404 		el_match: protected int (), <./src/search.c 111>
+  405 			Strstr: <>
+  406 			regcomp: <>
+  407 			ct_encode_string: 136
+  408 			regexec: <>
+  409 			regfree: <>
+  410 			el_free: <>
+  411 			re_comp: <>
+  412 			re_exec: <>
+  413 		el_free: <>
+  414 		Strcmp: <>
+  415 		Strdup: <>
+  416 		terminal_beep: protected void (), <./src/terminal.c 837>
+  417 			GoodStr: <>
+  418 			terminal_tputs: 206
+  419 			Str: <>
+  420 			terminal__putc: 265
+  421 		read_preread: private int (), <./src/read.c 188>
+  422 			ioctl: <>
+  423 			read: <>
+  424 			MIN: <>
+  425 			el_push: public void (), <./src/eln.c 67>
+  426 				el_wpush: <>
+  427 				ct_decode_string: 184
+  428 		read_pop: private void (), <./src/read.c 379>
+  429 			el_free: <>
+  430 		fprintf: <>
+  431 		read_char: 234
+  432 		ioctl: <>
+  433 		read_debug: private void (), <./src/read.c 105>
+  434 			fprintf: <>
+  435 		read_getcmd: private int (), <./src/read.c 240>
+  436 			FUN: 1
+  437 			getc: <>
+  438 			keymacro_get: protected int (), <./src/keymacro.c 177>
+  439 				node_trav: private int (), <./src/keymacro.c 281>
+  440 					FUN: 1
+  441 					getc: <>
+  442 					node_trav: 439
+  443 			RunCommand: <>
+  444 			EL_ABORT: <>
+  445 		Isprint: <>
+  446 		re_refresh_cursor: protected void (), <./src/refresh.c 992>
+  447 			ct_chr_class: 114
+  448 			Width: <>
+  449 			ct_visual_width: 118
+  450 			terminal_move_to_line: 287
+  451 			terminal_move_to_char: 289
+  452 			terminal__flush: 342
+  453 		re_clear_lines: protected void (), <./src/refresh.c 1166>
+  454 			terminal_move_to_line: 287
+  455 			terminal_move_to_char: 289
+  456 			terminal_clear_EOL: 331
+  457 			terminal__putc: 265
+  458 		CONTROL: <>
+  459 		ch_reset: 371
+  460 	FUNW: int () (), <./src/history.c 975>
+  461 		va_start: <>
+  462 		he_seterrev: <>
+  463 		history_getsize: private int (), <./src/history.c 636>
+  464 			history_def_next: private int (), <./src/history.c 253>
+  465 				he_seterrev: <>
+  466 			he_seterrev: <>
+  467 			history_def_getsize: <>
+  468 		history_setsize: private int (), <./src/history.c 616>
+  469 			history_def_next: 464
+  470 			he_seterrev: <>
+  471 			history_def_setsize: <>
+  472 		va_arg: <>
+  473 		history_getunique: private int (), <./src/history.c 671>
+  474 			history_def_next: 464
+  475 			he_seterrev: <>
+  476 			history_def_getunique: <>
+  477 		history_setunique: private int (), <./src/history.c 655>
+  478 			history_def_next: 464
+  479 			he_seterrev: <>
+  480 			history_def_setunique: <>
+  481 		HADD: <>
+  482 		HDEL: <>
+  483 		HENTER: <>
+  484 		HSET: <>
+  485 		HFIRST: <>
+  486 		HNEXT: <>
+  487 		HLAST: <>
+  488 		HPREV: <>
+  489 		HCURR: <>
+  490 		HCLEAR: <>
+  491 		history_load: private int (), <./src/history.c 776>
+  492 			fopen: <>
+  493 			fgetln: <>
+  494 			strncmp: <>
+  495 			h_malloc: <>
+  496 			h_realloc: <>
+  497 			HENTER: <>
+  498 			ct_decode_string: 184
+  499 			h_free: <>
+  500 			fclose: <>
+  501 		history_save: private int (), <./src/history.c 832>
+  502 			fopen: <>
+  503 			fchmod: <>
+  504 			fileno: <>
+  505 			fputs: <>
+  506 			h_malloc: <>
+  507 			HLAST: <>
+  508 			HPREV: <>
+  509 			ct_encode_string: 136
+  510 			strlen: <>
+  511 			h_realloc: <>
+  512 			strvis: int (), <./src/vis.c 531>
+  513 				istrnvis: int (), <./src/vis.c 511>
+  514 					MAKEEXTRALIST: <>
+  515 					istrsnvis: int (), <./src/vis.c 354>
+  516 						MAKEEXTRALIST: <>
+  517 						getvisfun: visfun_t (), <./src/vis.c 284>
+  518 							do_hvis: char * (), <./src/vis.c 117>
+  519 								isascii: <>
+  520 								isalnum: <>
+  521 								do_svis: char * (), <./src/vis.c 179>
+  522 									strchr: <>
+  523 									isascii: <>
+  524 									isgraph: <>
+  525 									iswhite: <>
+  526 									issafe: <>
+  527 									HAVE: <>
+  528 									isoctal: <>
+  529 									iscntrl: <>
+  530 								xtoa: <>
+  531 							do_mvis: char * (), <./src/vis.c 146>
+  532 								isspace: <>
+  533 								strchr: <>
+  534 								XTOA: <>
+  535 								do_svis: 521
+  536 							do_svis: 521
+  537 						free: <>
+  538 					free: <>
+  539 			fprintf: <>
+  540 			h_free: <>
+  541 			fclose: <>
+  542 		history_prev_event: private int (), <./src/history.c 884>
+  543 			HCURR: <>
+  544 			HPREV: <>
+  545 			he_seterrev: <>
+  546 		history_next_event: private int (), <./src/history.c 922>
+  547 			HCURR: <>
+  548 			HNEXT: <>
+  549 			he_seterrev: <>
+  550 		history_prev_string: private int (), <./src/history.c 939>
+  551 			Strlen: <>
+  552 			HCURR: <>
+  553 			HNEXT: <>
+  554 			Strncmp: <>
+  555 			he_seterrev: <>
+  556 		history_next_string: private int (), <./src/history.c 957>
+  557 			Strlen: <>
+  558 			HCURR: <>
+  559 			HPREV: <>
+  560 			Strncmp: <>
+  561 			he_seterrev: <>
+  562 		history_set_fun: private int (), <./src/history.c 686>
+  563 			history_def_next: 464
+  564 			history_def_init: <>
+  565 			history_def_first: private int (), <./src/history.c 213>
+  566 				he_seterrev: <>
+  567 			history_def_last: private int (), <./src/history.c 233>
+  568 				he_seterrev: <>
+  569 			history_def_prev: private int (), <./src/history.c 278>
+  570 				he_seterrev: <>
+  571 			history_def_curr: private int (), <./src/history.c 304>
+  572 				he_seterrev: <>
+  573 			history_def_set: private int (), <./src/history.c 325>
+  574 				he_seterrev: <>
+  575 			history_def_clear: private void (), <./src/history.c 549>
+  576 			history_def_enter: private int (), <./src/history.c 497>
+  577 				Strcmp: <>
+  578 				history_def_insert: private int (), <./src/history.c 465>
+  579 				history_def_delete: <>
+  580 			history_def_add: private int (), <./src/history.c 376>
+  581 				history_def_enter: 576
+  582 				Strlen: <>
+  583 				h_malloc: <>
+  584 				he_seterrev: <>
+  585 				Strncpy: <>
+  586 				Strncat: <>
+  587 				h_free: <>
+  588 		FUN: 1
+  589 		history_next_evdata: private int (), <./src/history.c 898>
+  590 			HCURR: <>
+  591 			HPREV: <>
+  592 			he_seterrev: <>
+  593 		history_deldata_nth: private int (), <./src/history.c 402>
+  594 			history_set_nth: private int (), <./src/history.c 352>
+  595 				he_seterrev: <>
+  596 			Strdup: <>
+  597 			history_def_delete: <>
+  598 		Strdup: <>
+  599 		va_end: <>
+  600 	add_history: int (), <./src/readline.c 1401>
+  601 		rl_initialize: int (), <./src/readline.c 278>
+  602 			el_end: public void (), <./src/el.c 126>
+  603 				el_reset: public void (), <./src/el.c 159>
+  604 					tty_cookedmode: 350
+  605 					ch_reset: 371
+  606 				terminal_end: protected void (), <./src/terminal.c 306>
+  607 					el_free: <>
+  608 					terminal_free_display: 49
+  609 				keymacro_end: protected void (), <./src/keymacro.c 120>
+  610 					el_free: <>
+  611 					node__free: private void (), <./src/keymacro.c 477>
+  612 						node__free: 611
+  613 						el_free: <>
+  614 				map_end: protected void (), <./src/map.c 940>
+  615 					el_free: <>
+  616 				tty_end: protected void (), <./src/tty.c 631>
+  617 					tty_setty: 226
+  618 					fprintf: <>
+  619 					strerror: <>
+  620 				ch_end: protected void (), <./src/chared.c 587>
+  621 					el_free: <>
+  622 					ch_reset: 371
+  623 				search_end: protected void (), <./src/search.c 87>
+  624 					el_free: <>
+  625 				hist_end: protected void (), <./src/hist.c 72>
+  626 					el_free: <>
+  627 				prompt_end: protected void (), <./src/prompt.c 140>
+  628 				sig_end: protected void (), <./src/sig.c 146>
+  629 					el_free: <>
+  630 				el_free: <>
+  631 			history_end: <>
+  632 			tcgetattr: <>
+  633 			fileno: <>
+  634 			el_init: public EditLine * (), <./src/el.c 65>
+  635 				el_malloc: <>
+  636 				memset: <>
+  637 				fileno: <>
+  638 				Strdup: <>
+  639 				ct_decode_string: 184
+  640 				el_free: <>
+  641 				setlocale: <>
+  642 				strcmp: <>
+  643 				nl_langinfo: <>
+  644 				terminal_init: protected int (), <./src/terminal.c 269>
+  645 					el_malloc: <>
+  646 					memset: <>
+  647 					terminal_set: 17
+  648 					terminal_init_arrow: private void (), <./src/terminal.c 1003>
+  649 						STR: <>
+  650 				keymacro_init: protected int (), <./src/keymacro.c 104>
+  651 					el_malloc: <>
+  652 					keymacro_reset: 83
+  653 				map_init: protected int (), <./src/map.c 891>
+  654 					EL_ABORT: <>
+  655 					el_malloc: <>
+  656 					memcpy: <>
+  657 					help__get: protected const el_bindings_t * (), <./local/help.c 212>
+  658 					func__get: protected const el_func_t * (), <./local/fcns.c 58>
+  659 					map_init_vi: 97
+  660 					map_init_emacs: 82
+  661 				tty_init: protected int (), <./src/tty.c 615>
+  662 					memcpy: <>
+  663 					tty_setup: private int (), <./src/tty.c 494>
+  664 						isatty: <>
+  665 						fprintf: <>
+  666 						strerror: <>
+  667 						ioctl: <>
+  668 						getpgrp: <>
+  669 						tty_getty: 243
+  670 						tty__getspeed: 248
+  671 						tty__gettabs: <>
+  672 						tty__geteightbit: <>
+  673 						tty__cooked_mode: <>
+  674 						tty__getchar: 255
+  675 						tty__setchar: 258
+  676 						tty_setty: 226
+  677 						tty_bind_char: 93
+  678 				ch_init: protected int (), <./src/chared.c 393>
+  679 					el_malloc: <>
+  680 					memset: <>
+  681 				search_init: protected int (), <./src/search.c 67>
+  682 					el_malloc: <>
+  683 				hist_init: protected int (), <./src/hist.c 54>
+  684 					el_malloc: <>
+  685 				prompt_init: protected int (), <./src/prompt.c 120>
+  686 					prompt_default: 14
+  687 					prompt_default_r: 15
+  688 				sig_init: protected int (), <./src/sig.c 114>
+  689 					el_malloc: <>
+  690 					sig_set: 237
+  691 					sigemptyset: <>
+  692 					ALLSIGS: <>
+  693 					sigprocmask: <>
+  694 				read_init: protected int (), <./src/read.c 67>
+  695 					read_char: 234
+  696 			el_set: public int (), <./src/eln.c 112>
+  697 				va_start: <>
+  698 				va_arg: <>
+  699 				prompt_set: 13
+  700 				ch_resizefun: 16
+  701 				el_wset: <>
+  702 				ct_decode_string: 184
+  703 				ct_decode_argv: protected Char ** (), <./src/chartype.c 136>
+  704 					strlen: <>
+  705 					ct_conv_buff_resize: 137
+  706 					el_malloc: <>
+  707 					mbstowcs: <>
+  708 					el_free: <>
+  709 				STR: <>
+  710 				map_bind: 104
+  711 				terminal_telltc: 175
+  712 				terminal_settc: 188
+  713 				terminal_echotc: 198
+  714 				tty_stty: 214
+  715 				ct_free_argv: <>
+  716 				map_addfunc: 230
+  717 				Strdup: <>
+  718 				hist_set: 232
+  719 				va_end: <>
+  720 			history_init: <>
+  721 			history: <>
+  722 			rl_set_prompt: int (), <./src/readline.c 254>
+  723 				strcmp: <>
+  724 				el_free: <>
+  725 				strdup: <>
+  726 				strchr: <>
+  727 			el_get: public int (), <./src/eln.c 267>
+  728 				va_start: <>
+  729 				va_arg: <>
+  730 				prompt_get: 389
+  731 				el_wget: <>
+  732 				ct_encode_string: 136
+  733 				terminal_gettc: 393
+  734 				va_end: <>
+  735 			el_source: public int (), <./src/el.c 501>
+  736 				issetugid: <>
+  737 				getenv: <>
+  738 				strlen: <>
+  739 				el_malloc: <>
+  740 				snprintf: <>
+  741 				fopen: <>
+  742 				el_free: <>
+  743 				fgetln: <>
+  744 				ct_decode_string: 184
+  745 				Isspace: <>
+  746 				parse_line: protected int (), <./src/parse.c 79>
+  747 					TYPE: struct (), <./src/tokenizer.c 74>
+  748 					FUN: 1
+  749 				fclose: <>
+  750 		history: <>
+  751 	c_delafter: protected void (), <./src/chared.c 118>
+  752 		cv_undo: protected void (), <./src/chared.c 59>
+  753 			memcpy: <>
+  754 		cv_yank: protected void (), <./src/chared.c 83>
+  755 			memcpy: <>
+  756 	c_delafter1: protected void (), <./src/chared.c 144>
+  757 	c_delbefore: protected void (), <./src/chared.c 159>
+  758 		cv_undo: 752
+  759 		cv_yank: 754
+  760 	c_delbefore1: protected void (), <./src/chared.c 187>
+  761 	c_gets: protected int (), <./src/chared.c 651>
+  762 		Strlen: <>
+  763 		memcpy: <>
+  764 		re_refresh: 261
+  765 		FUN: 1
+  766 		getc: <>
+  767 		ed_end_of_file: protected el_action_t (), <./src/common.c 55>
+  768 			re_goto_bottom: protected void (), <./src/refresh.c 344>
+  769 				terminal_move_to_line: 287
+  770 				terminal__putc: 265
+  771 				re_clear_display: 55
+  772 				terminal__flush: 342
+  773 		terminal_beep: 416
+  774 	c_hmatch: protected int (), <./src/search.c 160>
+  775 		fprintf: <>
+  776 		el_match: 404
+  777 	c_hpos: protected int (), <./src/chared.c 716>
+  778 	c_insert: 9
+  779 	c_setpat: protected void (), <./src/search.c 175>
+  780 		EL_CURSOR: <>
+  781 		Strncpy: <>
+  782 		Strlen: <>
+  783 		fprintf: <>
+  784 	ce__isword: protected int (), <./src/chared.c 202>
+  785 		Isalnum: <>
+  786 		Strchr: <>
+  787 		STR: <>
+  788 	ce_inc_search: protected el_action_t (), <./src/search.c 207>
+  789 		re_refresh: 261
+  790 		FUN: 1
+  791 		getc: <>
+  792 		ed_end_of_file: 767
+  793 		terminal_beep: 416
+  794 		c__next_word: protected Char * (), <./src/chared.c 260>
+  795 		ce__isword: 784
+  796 		isglob: <>
+  797 		hist_get: protected el_action_t (), <./src/hist.c 98>
+  798 			Strncpy: <>
+  799 			HIST_FIRST: <>
+  800 			HIST_NEXT: <>
+  801 			Strlen: <>
+  802 		ce_search_line: protected el_action_t (), <./src/search.c 529>
+  803 			el_match: 404
+  804 		ed_search_prev_history: protected el_action_t (), <./src/common.c 706>
+  805 			fprintf: <>
+  806 			Strncpy: <>
+  807 			HIST_FIRST: <>
+  808 			c_setpat: 779
+  809 			HIST_NEXT: <>
+  810 			Strncmp: <>
+  811 			c_hmatch: 774
+  812 			hist_get: 797
+  813 		ed_search_next_history: protected el_action_t (), <./src/common.c 774>
+  814 			HIST_FIRST: <>
+  815 			c_setpat: 779
+  816 			fprintf: <>
+  817 			Strncmp: <>
+  818 			c_hmatch: 774
+  819 			HIST_NEXT: <>
+  820 			hist_get: 797
+  821 		ce_inc_search: 788
+  822 	ce_search_line: 802
+  823 	ch__clearmacro: 372
+  824 	ch_end: 620
+  825 	ch_enlargebufs: 3
+  826 	ch_init: 678
+  827 	ch_reset: 371
+  828 	ch_resizefun: 16
+  829 	clear_history: void (), <./src/readline.c 1497>
+  830 		history: <>
+  831 	completion_matches: char ** (), <./src/filecomplete.c 282>
+  832 		el_realloc: <>
+  833 		el_free: <>
+  834 		strlen: <>
+  835 		el_malloc: <>
+  836 		strncpy: <>
+  837 	ct_chr_class: 114
+  838 	ct_conv_buff_resize: 137
+  839 	ct_decode_argv: 703
+  840 	ct_decode_string: 184
+  841 	ct_encode_char: 123
+  842 	ct_encode_string: 136
+  843 	ct_visual_char: 113
+  844 	ct_visual_string: 179
+  845 	ct_visual_width: 118
+  846 	current_history: HIST_ENTRY * (), <./src/readline.c 1532>
+  847 	cv__endword: protected Char * (), <./src/chared.c 371>
+  848 		Isspace: <>
+  849 	cv__isWord: protected int (), <./src/chared.c 226>
+  850 		Isspace: <>
+  851 	cv__isword: protected int (), <./src/chared.c 212>
+  852 		Isalnum: <>
+  853 		Isgraph: <>
+  854 	cv_action: private el_action_t (), <./src/vi.c 61>
+  855 		cv_undo: 752
+  856 		cv_yank: 754
+  857 	cv_csearch: protected el_action_t (), <./src/search.c 597>
+  858 		FUN: 1
+  859 		getc: <>
+  860 		ed_end_of_file: 767
+  861 		cv_delfini: protected void (), <./src/chared.c 333>
+  862 			cv_yank: 754
+  863 			c_delafter: 751
+  864 			re_refresh_cursor: 446
+  865 			c_delbefore: 757
+  866 	cv_delfini: 861
+  867 	cv_next_word: protected Char * (), <./src/chared.c 278>
+  868 		Isspace: <>
+  869 	cv_paste: private el_action_t (), <./src/vi.c 93>
+  870 		fprintf: <>
+  871 		cv_undo: 752
+  872 		c_insert: 9
+  873 		memcpy: <>
+  874 	cv_prev_word: protected Char * (), <./src/chared.c 307>
+  875 		Isspace: <>
+  876 	cv_repeat_srch: protected el_action_t (), <./src/search.c 571>
+  877 		fprintf: <>
+  878 		ct_encode_string: 136
+  879 		ed_search_next_history: 813
+  880 		ed_search_prev_history: 804
+  881 	cv_search: protected el_action_t (), <./src/search.c 455>
+  882 		c_gets: 761
+  883 		STR: <>
+  884 		re_refresh: 261
+  885 		Strncpy: <>
+  886 		ed_search_prev_history: 804
+  887 		ed_search_next_history: 813
+  888 		ed_newline: protected el_action_t (), <./src/common.c 548>
+  889 			re_goto_bottom: 768
+  890 	cv_undo: 752
+  891 	cv_yank: 754
+  892 	ed_argument_digit: protected el_action_t (), <./src/common.c 407>
+  893 		Isdigit: <>
+  894 	ed_clear_screen: protected el_action_t (), <./src/common.c 584>
+  895 		terminal_clear_screen: protected void (), <./src/terminal.c 816>
+  896 			GoodStr: <>
+  897 			terminal_tputs: 206
+  898 			Str: <>
+  899 			Val: <>
+  900 			terminal__putc: 265
+  901 		re_clear_display: 55
+  902 	ed_command: protected el_action_t (), <./src/common.c 905>
+  903 		c_gets: 761
+  904 		STR: <>
+  905 		terminal__putc: 265
+  906 		parse_line: 746
+  907 		terminal_beep: 416
+  908 		re_clear_display: 55
+  909 	ed_delete_next_char: protected el_action_t (), <./src/common.c 140>
+  910 		fprintf: <>
+  911 		terminal_writec: protected void (), <./src/terminal.c 1269>
+  912 			ct_visual_char: 113
+  913 			terminal_overwrite: 296
+  914 			terminal__flush: 342
+  915 		c_delafter: 751
+  916 	ed_delete_prev_char: protected el_action_t (), <./src/common.c 564>
+  917 		c_delbefore: 757
+  918 	ed_delete_prev_word: protected el_action_t (), <./src/common.c 112>
+  919 		c__prev_word: protected Char * (), <./src/chared.c 236>
+  920 		ce__isword: 784
+  921 		c_delbefore: 757
+  922 	ed_digit: protected el_action_t (), <./src/common.c 379>
+  923 		Isdigit: <>
+  924 		ed_insert: protected el_action_t (), <./src/common.c 69>
+  925 			ch_enlargebufs: 3
+  926 			c_insert: 9
+  927 			re_fastaddc: protected void (), <./src/refresh.c 1108>
+  928 				re_refresh: 261
+  929 				ct_chr_class: 114
+  930 				re_fastputc: private void (), <./src/refresh.c 1055>
+  931 					Width: <>
+  932 					re_fastputc: 930
+  933 					terminal__putc: 265
+  934 					re__copy_and_pad: 336
+  935 					STR: <>
+  936 				ct_visual_char: 113
+  937 				terminal__flush: 342
+  938 			re_refresh: 261
+  939 			vi_command_mode: protected el_action_t (), <./src/vi.c 543>
+  940 	ed_end_of_file: 767
+  941 	ed_insert: 924
+  942 	ed_kill_line: protected el_action_t (), <./src/common.c 187>
+  943 	ed_move_to_beg: protected el_action_t (), <./src/common.c 231>
+  944 		Isspace: <>
+  945 		cv_delfini: 861
+  946 	ed_move_to_end: protected el_action_t (), <./src/common.c 208>
+  947 		cv_delfini: 861
+  948 	ed_newline: 888
+  949 	ed_next_char: protected el_action_t (), <./src/common.c 280>
+  950 		cv_delfini: 861
+  951 	ed_next_history: protected el_action_t (), <./src/common.c 679>
+  952 		hist_get: 797
+  953 	ed_next_line: protected el_action_t (), <./src/common.c 871>
+  954 		c_hpos: 777
+  955 	ed_prev_char: protected el_action_t (), <./src/common.c 335>
+  956 		cv_delfini: 861
+  957 	ed_prev_history: protected el_action_t (), <./src/common.c 641>
+  958 		Strncpy: <>
+  959 		hist_get: 797
+  960 	ed_prev_line: protected el_action_t (), <./src/common.c 828>
+  961 		c_hpos: 777
+  962 	ed_prev_word: protected el_action_t (), <./src/common.c 309>
+  963 		c__prev_word: protected Char * (), <./src/chared.c 236>
+  964 		ce__isword: 784
+  965 		cv_delfini: 861
+  966 	ed_quoted_insert: protected el_action_t (), <./src/common.c 359>
+  967 		tty_quotemode: protected int (), <./src/tty.c 1160>
+  968 			tty_setty: 226
+  969 			fprintf: <>
+  970 			strerror: <>
+  971 		FUN: 1
+  972 		getc: <>
+  973 		tty_noquotemode: protected int (), <./src/tty.c 1198>
+  974 			tty_setty: 226
+  975 			fprintf: <>
+  976 			strerror: <>
+  977 		ed_insert: 924
+  978 		ed_end_of_file: 767
+  979 	ed_redisplay: 260
+  980 	ed_search_next_history: 813
+  981 	ed_search_prev_history: 804
+  982 	ed_sequence_lead_in: protected el_action_t (), <./src/common.c 627>
+  983 	ed_start_over: protected el_action_t (), <./src/common.c 613>
+  984 		ch_reset: 371
+  985 	ed_transpose_chars: protected el_action_t (), <./src/common.c 254>
+  986 	ed_tty_dsusp: protected el_action_t (), <./src/common.c 464>
+  987 	ed_tty_flush_output: protected el_action_t (), <./src/common.c 478>
+  988 	ed_tty_sigint: protected el_action_t (), <./src/common.c 450>
+  989 	ed_tty_sigquit: protected el_action_t (), <./src/common.c 492>
+  990 	ed_tty_sigtstp: protected el_action_t (), <./src/common.c 506>
+  991 	ed_tty_start_output: protected el_action_t (), <./src/common.c 534>
+  992 	ed_tty_stop_output: protected el_action_t (), <./src/common.c 520>
+  993 	ed_unassigned: protected el_action_t (), <./src/common.c 432>
+  994 	el_beep: public void (), <./src/el.c 590>
+  995 		terminal_beep: 416
+  996 	el_deletestr: public void (), <./src/chared.c 633>
+  997 		c_delbefore: 757
+  998 	el_editmode: protected int (), <./src/el.c 602>
+  999 		Strcmp: <>
+ 1000 		STR: <>
+ 1001 		tty_rawmode: 242
+ 1002 		tty_cookedmode: 350
+ 1003 		fprintf: <>
+ 1004 	el_end: 602
+ 1005 	el_get: 727
+ 1006 	el_getc: public int (), <./src/eln.c 49>
+ 1007 		el_wgetc: <>
+ 1008 	el_gets: public const char * (), <./src/eln.c 76>
+ 1009 		el_wgets: <>
+ 1010 		ct_encode_string: 136
+ 1011 		strlen: <>
+ 1012 	el_init: 634
+ 1013 	el_insertstr: int (), <./src/eln.c 379>
+ 1014 		el_winsertstr: <>
+ 1015 		ct_decode_string: 184
+ 1016 	el_line: const LineInfo * (), <./src/eln.c 355>
+ 1017 		el_wline: <>
+ 1018 		ct_encode_string: 136
+ 1019 		ct_enc_width: protected size_t (), <./src/chartype.c 176>
+ 1020 	el_match: 404
+ 1021 	el_parse: public int (), <./src/eln.c 95>
+ 1022 		ct_decode_argv: 703
+ 1023 		el_wparse: <>
+ 1024 		ct_free_argv: <>
+ 1025 	el_push: 425
+ 1026 	el_read_getfn: 395
+ 1027 	el_read_setfn: 233
+ 1028 	el_reset: 603
+ 1029 	el_resize: 344
+ 1030 	el_set: 696
+ 1031 	el_source: 735
+ 1032 	em_capitol_case: protected el_action_t (), <./src/emacs.c 309>
+ 1033 		c__next_word: protected Char * (), <./src/chared.c 260>
+ 1034 		ce__isword: 784
+ 1035 		Isalpha: <>
+ 1036 		Islower: <>
+ 1037 		Toupper: <>
+ 1038 		Isupper: <>
+ 1039 		Tolower: <>
+ 1040 	em_copy_prev_word: protected el_action_t (), <./src/emacs.c 440>
+ 1041 		c__prev_word: protected Char * (), <./src/chared.c 236>
+ 1042 		ce__isword: 784
+ 1043 		c_insert: 9
+ 1044 	em_copy_region: protected el_action_t (), <./src/emacs.c 211>
+ 1045 	em_delete_next_word: protected el_action_t (), <./src/emacs.c 91>
+ 1046 		c__next_word: protected Char * (), <./src/chared.c 260>
+ 1047 		ce__isword: 784
+ 1048 		c_delafter: 751
+ 1049 	em_delete_or_list: protected el_action_t (), <./src/emacs.c 55>
+ 1050 		terminal_writec: 911
+ 1051 		terminal_beep: 416
+ 1052 		c_delafter: 751
+ 1053 		c_delafter1: 756
+ 1054 	em_delete_prev_char: protected el_action_t (), <./src/emacs.c 494>
+ 1055 		c_delbefore: 757
+ 1056 		c_delbefore1: 760
+ 1057 	em_exchange_mark: protected el_action_t (), <./src/emacs.c 379>
+ 1058 	em_gosmacs_transpose: protected el_action_t (), <./src/emacs.c 240>
+ 1059 	em_inc_search_next: protected el_action_t (), <./src/emacs.c 467>
+ 1060 		ce_inc_search: 788
+ 1061 	em_inc_search_prev: protected el_action_t (), <./src/emacs.c 480>
+ 1062 		ce_inc_search: 788
+ 1063 	em_kill_line: protected el_action_t (), <./src/emacs.c 156>
+ 1064 	em_kill_region: protected el_action_t (), <./src/emacs.c 178>
+ 1065 		c_delafter: 751
+ 1066 		c_delbefore: 757
+ 1067 	em_lower_case: protected el_action_t (), <./src/emacs.c 341>
+ 1068 		c__next_word: protected Char * (), <./src/chared.c 260>
+ 1069 		ce__isword: 784
+ 1070 		Isupper: <>
+ 1071 		Tolower: <>
+ 1072 	em_meta_next: protected el_action_t (), <./src/emacs.c 413>
+ 1073 	em_next_word: protected el_action_t (), <./src/emacs.c 260>
+ 1074 		c__next_word: protected Char * (), <./src/chared.c 260>
+ 1075 		ce__isword: 784
+ 1076 		cv_delfini: 861
+ 1077 	em_set_mark: protected el_action_t (), <./src/emacs.c 365>
+ 1078 	em_toggle_overwrite: protected el_action_t (), <./src/emacs.c 426>
+ 1079 	em_universal_argument: protected el_action_t (), <./src/emacs.c 396>
+ 1080 	em_upper_case: protected el_action_t (), <./src/emacs.c 285>
+ 1081 		c__next_word: protected Char * (), <./src/chared.c 260>
+ 1082 		ce__isword: 784
+ 1083 		Islower: <>
+ 1084 		Toupper: <>
+ 1085 	em_yank: protected el_action_t (), <./src/emacs.c 120>
+ 1086 		c_insert: 9
+ 1087 	filename_completion_function: char * (), <./src/readline.c 1700>
+ 1088 		fn_filename_completion_function: char * (), <./src/filecomplete.c 145>
+ 1089 			strrchr: <>
+ 1090 			el_realloc: <>
+ 1091 			strlen: <>
+ 1092 			el_free: <>
+ 1093 			strcpy: <>
+ 1094 			strncpy: <>
+ 1095 			strdup: <>
+ 1096 			closedir: <>
+ 1097 			fn_tilde_expand: char * (), <./src/filecomplete.c 72>
+ 1098 				strdup: <>
+ 1099 				strchr: <>
+ 1100 				el_malloc: <>
+ 1101 				strncpy: <>
+ 1102 				getpwuid_r: <>
+ 1103 				getuid: <>
+ 1104 				getpwuid: <>
+ 1105 				getpwnam_r: <>
+ 1106 				getpwnam: <>
+ 1107 				el_free: <>
+ 1108 				strlen: <>
+ 1109 				snprintf: <>
+ 1110 			opendir: <>
+ 1111 			readdir: <>
+ 1112 			strncmp: <>
+ 1113 			el_malloc: <>
+ 1114 			snprintf: <>
+ 1115 	fn_complete: int (), <./src/filecomplete.c 415>
+ 1116 		fn_filename_completion_function: 1088
+ 1117 		append_char_function: const char * (), <./src/filecomplete.c 261>
+ 1118 			fn_tilde_expand: 1097
+ 1119 			stat: <>
+ 1120 			S_ISDIR: <>
+ 1121 			el_free: <>
+ 1122 		FUN: 1
+ 1123 		Strchr: <>
+ 1124 		el_line: 1016
+ 1125 		ct_enc_width: protected size_t (), <./src/chartype.c 176>
+ 1126 		el_malloc: <>
+ 1127 		strncpy: <>
+ 1128 		completion_matches: 831
+ 1129 		el_deletestr: 996
+ 1130 		ct_decode_string: 184
+ 1131 		strcmp: <>
+ 1132 		strlen: <>
+ 1133 		fprintf: <>
+ 1134 		fflush: <>
+ 1135 		getc: <>
+ 1136 		fn_display_match_list: void (), <./src/filecomplete.c 358>
+ 1137 			qsort: <>
+ 1138 			fprintf: <>
+ 1139 		el_beep: 994
+ 1140 		el_free: <>
+ 1141 	fn_display_match_list: 1136
+ 1142 	fn_filename_completion_function: 1088
+ 1143 	fn_tilde_expand: 1097
+ 1144 	func__get: 658
+ 1145 	get_history_event: const char * (), <./src/readline.c 506>
+ 1146 		history: <>
+ 1147 		history_get: HIST_ENTRY * (), <./src/readline.c 1363>
+ 1148 			rl_initialize: 601
+ 1149 			history: <>
+ 1150 		el_malloc: <>
+ 1151 		strncpy: <>
+ 1152 		el_free: <>
+ 1153 		history_search: int (), <./src/readline.c 1619>
+ 1154 			history: <>
+ 1155 			strstr: <>
+ 1156 		history_search_prefix: int (), <./src/readline.c 1644>
+ 1157 			history: <>
+ 1158 		fprintf: <>
+ 1159 	help__get: 657
+ 1160 	hist_command: protected int (), <./src/hist.c 157>
+ 1161 		TYPE: struct (), <./src/tokenizer.c 74>
+ 1162 		Strcmp: <>
+ 1163 		STR: <>
+ 1164 		HIST_LAST: <>
+ 1165 		HIST_PREV: <>
+ 1166 		fprintf: <>
+ 1167 		ct_encode_string: 136
+ 1168 		Strtol: <>
+ 1169 		FUNW: 460
+ 1170 		history: <>
+ 1171 	hist_convert: protected wchar_t * (), <./src/hist.c 215>
+ 1172 		ct_decode_string: 184
+ 1173 	hist_end: 625
+ 1174 	hist_enlargebuf: 6
+ 1175 	hist_get: 797
+ 1176 	hist_init: 683
+ 1177 	hist_set: 232
+ 1178 	history_arg_extract: char * (), <./src/readline.c 1016>
+ 1179 		history_tokenize: char ** (), <./src/readline.c 1072>
+ 1180 			isspace: <>
+ 1181 			strchr: <>
+ 1182 			el_realloc: <>
+ 1183 			el_free: <>
+ 1184 			el_malloc: <>
+ 1185 			strncpy: <>
+ 1186 		strlen: <>
+ 1187 		el_malloc: <>
+ 1188 		strcpy: <>
+ 1189 		el_free: <>
+ 1190 	history_def_add: 580
+ 1191 	history_def_curr: 571
+ 1192 	history_def_enter: 576
+ 1193 	history_def_first: 565
+ 1194 	history_def_last: 567
+ 1195 	history_def_next: 464
+ 1196 	history_def_prev: 569
+ 1197 	history_def_set: 573
+ 1198 	history_deldata_nth: 593
+ 1199 	history_expand: int (), <./src/readline.c 883>
+ 1200 		rl_initialize: 601
+ 1201 		strdup: <>
+ 1202 		el_malloc: <>
+ 1203 		strlen: <>
+ 1204 		strcpy: <>
+ 1205 		isspace: <>
+ 1206 		strchr: <>
+ 1207 		ADD_STRING: <>
+ 1208 		el_free: <>
+ 1209 		add_history: 600
+ 1210 	history_get: 1147
+ 1211 	history_get_history_state: HISTORY_STATE * (), <./src/readline.c 2235>
+ 1212 		el_malloc: <>
+ 1213 	history_getsize: 463
+ 1214 	history_getunique: 473
+ 1215 	history_is_stifled: int (), <./src/readline.c 1160>
+ 1216 	history_load: 491
+ 1217 	history_next_evdata: 589
+ 1218 	history_next_event: 546
+ 1219 	history_next_string: 556
+ 1220 	history_prev_event: 542
+ 1221 	history_prev_string: 550
+ 1222 	history_save: 501
+ 1223 	history_search: 1153
+ 1224 	history_search_pos: int (), <./src/readline.c 1659>
+ 1225 		history: <>
+ 1226 		history_set_pos: int (), <./src/readline.c 1570>
+ 1227 			history: <>
+ 1228 		strstr: <>
+ 1229 	history_search_prefix: 1156
+ 1230 	history_set_fun: 562
+ 1231 	history_set_nth: 594
+ 1232 	history_set_pos: 1226
+ 1233 	history_setsize: 468
+ 1234 	history_setunique: 477
+ 1235 	history_tokenize: 1179
+ 1236 	history_total_bytes: int (), <./src/readline.c 1543>
+ 1237 		history: <>
+ 1238 		strlen: <>
+ 1239 	history_truncate_file: int (), <./src/readline.c 1170>
+ 1240 		fopen: <>
+ 1241 		strcpy: <>
+ 1242 		mkstemp: <>
+ 1243 		fdopen: <>
+ 1244 		close: <>
+ 1245 		fread: <>
+ 1246 		ferror: <>
+ 1247 		fseeko: <>
+ 1248 		fwrite: <>
+ 1249 		fflush: <>
+ 1250 		fgets: <>
+ 1251 		fputs: <>
+ 1252 		ftello: <>
+ 1253 		ftruncate: <>
+ 1254 		fileno: <>
+ 1255 		fclose: <>
+ 1256 		unlink: <>
+ 1257 	keymacro__decode_str: 111
+ 1258 	keymacro_add: 58
+ 1259 	keymacro_clear: 72
+ 1260 	keymacro_delete: 73
+ 1261 	keymacro_end: 609
+ 1262 	keymacro_get: 438
+ 1263 	keymacro_init: 650
+ 1264 	keymacro_kprint: 133
+ 1265 	keymacro_map_cmd: 87
+ 1266 	keymacro_map_str: 168
+ 1267 	keymacro_print: 128
+ 1268 	keymacro_reset: 83
+ 1269 	map_addfunc: 230
+ 1270 	map_bind: 104
+ 1271 	map_end: 614
+ 1272 	map_get_editor: 390
+ 1273 	map_init: 653
+ 1274 	map_init_emacs: 82
+ 1275 	map_init_meta: 85
+ 1276 	map_init_nls: 88
+ 1277 	map_init_vi: 97
+ 1278 	map_print_all_keys: 108
+ 1279 	map_print_key: 161
+ 1280 	map_print_some_keys: 110
+ 1281 	map_set_editor: 79
+ 1282 	next_history: HIST_ENTRY * (), <./src/readline.c 1608>
+ 1283 	node__delete: 75
+ 1284 	node__free: 611
+ 1285 	node__get: 60
+ 1286 	node__put: 64
+ 1287 	node__try: 62
+ 1288 	node_enum: 130
+ 1289 	node_lookup: 129
+ 1290 	node_trav: 439
+ 1291 	nvis: char * (), <./src/vis.c 494>
+ 1292 		invis: char * (), <./src/vis.c 459>
+ 1293 			MAKEEXTRALIST: <>
+ 1294 			getvisfun: 517
+ 1295 			free: <>
+ 1296 	parse__escape: 154
+ 1297 	parse__string: 153
+ 1298 	parse_cmd: 170
+ 1299 	parse_line: 746
+ 1300 	previous_history: HIST_ENTRY * (), <./src/readline.c 1597>
+ 1301 	prompt_default: 14
+ 1302 	prompt_default_r: 15
+ 1303 	prompt_get: 389
+ 1304 	prompt_init: 685
+ 1305 	prompt_print: 263
+ 1306 	prompt_set: 13
+ 1307 	re__copy_and_pad: 336
+ 1308 	re_addc: 276
+ 1309 	re_clear_display: 55
+ 1310 	re_clear_eol: 329
+ 1311 	re_clear_lines: 453
+ 1312 	re_delete: 326
+ 1313 	re_fastaddc: 927
+ 1314 	re_fastputc: 930
+ 1315 	re_goto_bottom: 768
+ 1316 	re_insert: 315
+ 1317 	re_nextline: 272
+ 1318 	re_printstr: 285
+ 1319 	re_putc: 268
+ 1320 	re_refresh: 261
+ 1321 	re_refresh_cursor: 446
+ 1322 	re_update_line: 283
+ 1323 	read__fixio: 360
+ 1324 	read_char: 234
+ 1325 	read_debug: 433
+ 1326 	read_finish: 376
+ 1327 	read_getcmd: 435
+ 1328 	read_history: int (), <./src/readline.c 1323>
+ 1329 		rl_initialize: 601
+ 1330 		history: <>
+ 1331 	read_init: 694
+ 1332 	read_pop: 428
+ 1333 	read_prepare: 366
+ 1334 	read_preread: 421
+ 1335 	readline: char * (), <./src/readline.c 382>
+ 1336 		rl_initialize: 601
+ 1337 		setjmp: <>
+ 1338 		rl_set_prompt: 722
+ 1339 		el_set: 696
+ 1340 		el_gets: 1008
+ 1341 		strdup: <>
+ 1342 		history: <>
+ 1343 	remove_history: HIST_ENTRY * (), <./src/readline.c 1423>
+ 1344 		rl_initialize: 601
+ 1345 		el_malloc: <>
+ 1346 		history: <>
+ 1347 		el_free: <>
+ 1348 	replace_history_entry: HIST_ENTRY * (), <./src/readline.c 1451>
+ 1349 		rl_initialize: 601
+ 1350 		history: <>
+ 1351 		el_malloc: <>
+ 1352 		strdup: <>
+ 1353 		el_free: <>
+ 1354 	rl_add_defun: int (), <./src/readline.c 1944>
+ 1355 		el_set: 696
+ 1356 		rl_bind_wrapper: unsigned char (), <./src/readline.c 1927>
+ 1357 		vis: char * (), <./src/vis.c 488>
+ 1358 			invis: 1292
+ 1359 	rl_bind_key: int (), <./src/readline.c 1833>
+ 1360 		rl_initialize: 601
+ 1361 		rl_insert: int (), <./src/readline.c 1883>
+ 1362 			rl_initialize: 601
+ 1363 			el_push: 425
+ 1364 	rl_callback_handler_install: void (), <./src/readline.c 1986>
+ 1365 		rl_initialize: 601
+ 1366 		rl_set_prompt: 722
+ 1367 		el_set: 696
+ 1368 	rl_callback_handler_remove: void (), <./src/readline.c 1997>
+ 1369 		el_set: 696
+ 1370 	rl_callback_read_char: void (), <./src/readline.c 1957>
+ 1371 		el_gets: 1008
+ 1372 		el_set: 696
+ 1373 		strdup: <>
+ 1374 	rl_complete: int (), <./src/readline.c 1780>
+ 1375 		rl_initialize: 601
+ 1376 		el_insertstr: 1013
+ 1377 		fn_complete: 1115
+ 1378 		ct_decode_string: 184
+ 1379 	rl_completion_matches: char ** (), <./src/readline.c 2154>
+ 1380 		el_malloc: <>
+ 1381 		el_realloc: <>
+ 1382 		strdup: <>
+ 1383 		qsort: <>
+ 1384 		memcpy: <>
+ 1385 		el_free: <>
+ 1386 	rl_deprep_terminal: void (), <./src/readline.c 2031>
+ 1387 		el_set: 696
+ 1388 	rl_display_match_list: void (), <./src/readline.c 1757>
+ 1389 		fn_display_match_list: 1136
+ 1390 	rl_filename_completion_function: char * (), <./src/readline.c 2209>
+ 1391 		fn_filename_completion_function: 1088
+ 1392 	rl_forced_update_display: void (), <./src/readline.c 2215>
+ 1393 		el_set: 696
+ 1394 	rl_get_keymap: Keymap (), <./src/readline.c 2260>
+ 1395 	rl_get_previous_history: int (), <./src/readline.c 2013>
+ 1396 		el_push: 425
+ 1397 	rl_get_screen_size: void (), <./src/readline.c 2129>
+ 1398 		el_get: 727
+ 1399 	rl_initialize: 601
+ 1400 	rl_insert: 1361
+ 1401 	rl_insert_text: int (), <./src/readline.c 1901>
+ 1402 		rl_initialize: 601
+ 1403 		el_insertstr: 1013
+ 1404 		strlen: <>
+ 1405 	rl_make_bare_keymap: Keymap (), <./src/readline.c 2254>
+ 1406 	rl_newline: int (), <./src/readline.c 1916>
+ 1407 		rl_insert: 1361
+ 1408 	rl_parse_and_bind: int (), <./src/readline.c 2043>
+ 1409 		tok_init: <>
+ 1410 		tok_str: <>
+ 1411 		el_parse: 1021
+ 1412 		tok_end: <>
+ 1413 	rl_prep_terminal: void (), <./src/readline.c 2025>
+ 1414 		el_set: 696
+ 1415 	rl_read_init_file: int (), <./src/readline.c 2037>
+ 1416 		el_source: 735
+ 1417 	rl_read_key: int (), <./src/readline.c 1854>
+ 1418 		rl_initialize: 601
+ 1419 		el_getc: 1006
+ 1420 	rl_redisplay: void (), <./src/readline.c 2004>
+ 1421 		el_push: 425
+ 1422 	rl_reset_terminal: void (), <./src/readline.c 1870>
+ 1423 		rl_initialize: 601
+ 1424 		el_reset: 603
+ 1425 	rl_set_prompt: 722
+ 1426 	rl_set_screen_size: void (), <./src/readline.c 2138>
+ 1427 		snprintf: <>
+ 1428 		el_set: 696
+ 1429 	rl_stuff_char: void (), <./src/readline.c 2067>
+ 1430 		el_insertstr: 1013
+ 1431 	rl_variable_bind: int (), <./src/readline.c 2057>
+ 1432 		el_set: 696
+ 1433 	search_end: 623
+ 1434 	search_init: 681
+ 1435 	sig_clr: 378
+ 1436 	sig_end: 628
+ 1437 	sig_handler: 238
+ 1438 	sig_init: 688
+ 1439 	sig_set: 237
+ 1440 	snvis: char * (), <./src/vis.c 332>
+ 1441 		isnvis: char * (), <./src/vis.c 298>
+ 1442 			MAKEEXTRALIST: <>
+ 1443 			getvisfun: 517
+ 1444 			free: <>
+ 1445 	stifle_history: void (), <./src/readline.c 1131>
+ 1446 		rl_initialize: 601
+ 1447 		history: <>
+ 1448 	strnunvis: int (), <./src/unvis.c 550>
+ 1449 		strnunvisx: int (), <./src/unvis.c 489>
+ 1450 			unvis: int (), <./src/unvis.c 194>
+ 1451 				GS: <>
+ 1452 				SS: <>
+ 1453 				isoctal: <>
+ 1454 				isxdigit: <>
+ 1455 				xtod: <>
+ 1456 				isdigit: <>
+ 1457 				isupper: <>
+ 1458 				XTOD: <>
+ 1459 				GI: <>
+ 1460 			CHECKSPACE: <>
+ 1461 	strnunvisx: 1449
+ 1462 	strnvis: int (), <./src/vis.c 537>
+ 1463 		istrnvis: 513
+ 1464 	strnvisx: int (), <./src/vis.c 569>
+ 1465 		istrnvisx: int (), <./src/vis.c 543>
+ 1466 			MAKEEXTRALIST: <>
+ 1467 			istrsnvisx: int (), <./src/vis.c 400>
+ 1468 				MAKEEXTRALIST: <>
+ 1469 				getvisfun: 517
+ 1470 				free: <>
+ 1471 			free: <>
+ 1472 	strsnvis: int (), <./src/vis.c 394>
+ 1473 		istrsnvis: 515
+ 1474 	strsnvisx: int (), <./src/vis.c 447>
+ 1475 		istrsnvisx: 1467
+ 1476 	strsvis: int (), <./src/vis.c 388>
+ 1477 		istrsnvis: 515
+ 1478 	strsvisx: int (), <./src/vis.c 441>
+ 1479 		istrsnvisx: 1467
+ 1480 	strunvis: int (), <./src/unvis.c 544>
+ 1481 		strnunvisx: 1449
+ 1482 	strunvisx: int (), <./src/unvis.c 538>
+ 1483 		strnunvisx: 1449
+ 1484 	strvis: 512
+ 1485 	strvisx: int (), <./src/vis.c 563>
+ 1486 		istrnvisx: 1465
+ 1487 	svis: char * (), <./src/vis.c 326>
+ 1488 		isnvis: 1441
+ 1489 	terminal__flush: 342
+ 1490 	terminal__putc: 265
+ 1491 	terminal_alloc: 27
+ 1492 	terminal_alloc_display: 52
+ 1493 	terminal_beep: 416
+ 1494 	terminal_bind_arrow: 56
+ 1495 	terminal_change_size: 46
+ 1496 	terminal_clear_EOL: 331
+ 1497 	terminal_clear_arrow: 157
+ 1498 	terminal_clear_screen: 895
+ 1499 	terminal_deletechars: 320
+ 1500 	terminal_echotc: 198
+ 1501 	terminal_end: 606
+ 1502 	terminal_free_display: 49
+ 1503 	terminal_get: 392
+ 1504 	terminal_get_size: 43
+ 1505 	terminal_gettc: 393
+ 1506 	terminal_init: 644
+ 1507 	terminal_init_arrow: 648
+ 1508 	terminal_insertwrite: 307
+ 1509 	terminal_move_to_char: 289
+ 1510 	terminal_move_to_line: 287
+ 1511 	terminal_overwrite: 296
+ 1512 	terminal_print_arrow: 150
+ 1513 	terminal_putc: 209
+ 1514 	terminal_rebuffer_display: 48
+ 1515 	terminal_reset_arrow: 57
+ 1516 	terminal_set: 17
+ 1517 	terminal_set_arrow: 166
+ 1518 	terminal_setflags: 37
+ 1519 	terminal_settc: 188
+ 1520 	terminal_telltc: 175
+ 1521 	terminal_tputs: 206
+ 1522 	terminal_writec: 911
+ 1523 	tilde_expand: char * (), <./src/readline.c 1694>
+ 1524 		fn_tilde_expand: 1097
+ 1525 	tty__getchar: 255
+ 1526 	tty__getcharindex: 225
+ 1527 	tty__getspeed: 248
+ 1528 	tty__setchar: 258
+ 1529 	tty_bind_char: 93
+ 1530 	tty_cookedmode: 350
+ 1531 	tty_end: 616
+ 1532 	tty_getty: 243
+ 1533 	tty_init: 661
+ 1534 	tty_noquotemode: 973
+ 1535 	tty_printchar: private void (), <./src/tty.c 1387>
+ 1536 		C_SH: <>
+ 1537 		fprintf: <>
+ 1538 	tty_quotemode: 967
+ 1539 	tty_rawmode: 242
+ 1540 	tty_setty: 226
+ 1541 	tty_setup: 663
+ 1542 	tty_stty: 214
+ 1543 	unstifle_history: int (), <./src/readline.c 1147>
+ 1544 		history: <>
+ 1545 	unvis: 1450
+ 1546 	username_completion_function: char * (), <./src/readline.c 1713>
+ 1547 		setpwent: <>
+ 1548 		getpwent: <>
+ 1549 		strcmp: <>
+ 1550 		endpwent: <>
+ 1551 		strdup: <>
+ 1552 	using_history: void (), <./src/readline.c 447>
+ 1553 		rl_initialize: 601
+ 1554 	vi_add: protected el_action_t (), <./src/vi.c 414>
+ 1555 		cv_undo: 752
+ 1556 	vi_add_at_eol: protected el_action_t (), <./src/vi.c 439>
+ 1557 		cv_undo: 752
+ 1558 	vi_change_case: protected el_action_t (), <./src/vi.c 248>
+ 1559 		cv_undo: 752
+ 1560 		Isupper: <>
+ 1561 		Tolower: <>
+ 1562 		Islower: <>
+ 1563 		Toupper: <>
+ 1564 		re_fastaddc: 927
+ 1565 	vi_change_meta: protected el_action_t (), <./src/vi.c 280>
+ 1566 		cv_action: 854
+ 1567 	vi_change_to_eol: protected el_action_t (), <./src/vi.c 381>
+ 1568 		cv_undo: 752
+ 1569 		cv_yank: 754
+ 1570 		ed_kill_line: 942
+ 1571 	vi_command_mode: 939
+ 1572 	vi_comment_out: protected el_action_t (), <./src/vi.c 905>
+ 1573 		c_insert: 9
+ 1574 		re_refresh: 261
+ 1575 		ed_newline: 888
+ 1576 	vi_delete_meta: protected el_action_t (), <./src/vi.c 455>
+ 1577 		cv_action: 854
+ 1578 	vi_delete_prev_char: protected el_action_t (), <./src/vi.c 588>
+ 1579 		c_delbefore1: 760
+ 1580 	vi_end_big_word: protected el_action_t (), <./src/vi.c 468>
+ 1581 		cv__endword: 847
+ 1582 		cv__isWord: 849
+ 1583 		cv_delfini: 861
+ 1584 	vi_end_word: protected el_action_t (), <./src/vi.c 492>
+ 1585 		cv__endword: 847
+ 1586 		cv__isword: 851
+ 1587 		cv_delfini: 861
+ 1588 	vi_histedit: protected el_action_t (), <./src/vi.c 1002>
+ 1589 		vi_to_history_line: protected el_action_t (), <./src/vi.c 957>
+ 1590 			Strncpy: <>
+ 1591 			hist_get: 797
+ 1592 		mkstemp: <>
+ 1593 		el_malloc: <>
+ 1594 		Strncpy: <>
+ 1595 		ct_wcstombs: <>
+ 1596 		strlen: <>
+ 1597 		write: <>
+ 1598 		fork: <>
+ 1599 		close: <>
+ 1600 		execlp: <>
+ 1601 		exit: <>
+ 1602 		waitpid: <>
+ 1603 		lseek: <>
+ 1604 		read: <>
+ 1605 		ct_mbstowcs: <>
+ 1606 		el_free: <>
+ 1607 		unlink: <>
+ 1608 		ed_newline: 888
+ 1609 	vi_history_word: protected el_action_t (), <./src/vi.c 1086>
+ 1610 		HIST_FIRST: <>
+ 1611 		Isspace: <>
+ 1612 		cv_undo: 752
+ 1613 		c_insert: 9
+ 1614 	vi_insert: protected el_action_t (), <./src/vi.c 399>
+ 1615 		cv_undo: 752
+ 1616 	vi_insert_at_bol: protected el_action_t (), <./src/vi.c 297>
+ 1617 		cv_undo: 752
+ 1618 	vi_kill_line_prev: protected el_action_t (), <./src/vi.c 643>
+ 1619 		c_delbefore: 757
+ 1620 	vi_list_or_eof: protected el_action_t (), <./src/vi.c 606>
+ 1621 		terminal_writec: 911
+ 1622 		terminal_beep: 416
+ 1623 		re_goto_bottom: 768
+ 1624 	vi_match: protected el_action_t (), <./src/vi.c 804>
+ 1625 		STR: <>
+ 1626 		Strcspn: <>
+ 1627 		Strchr: <>
+ 1628 		cv_delfini: 861
+ 1629 	vi_next_big_word: protected el_action_t (), <./src/vi.c 201>
+ 1630 		cv_next_word: 867
+ 1631 		cv__isWord: 849
+ 1632 		cv_delfini: 861
+ 1633 	vi_next_char: protected el_action_t (), <./src/vi.c 724>
+ 1634 		cv_csearch: 857
+ 1635 	vi_next_word: protected el_action_t (), <./src/vi.c 225>
+ 1636 		cv_next_word: 867
+ 1637 		cv__isword: 851
+ 1638 		cv_delfini: 861
+ 1639 	vi_paste_next: protected el_action_t (), <./src/vi.c 125>
+ 1640 		cv_paste: 869
+ 1641 	vi_paste_prev: protected el_action_t (), <./src/vi.c 138>
+ 1642 		cv_paste: 869
+ 1643 	vi_prev_big_word: protected el_action_t (), <./src/vi.c 151>
+ 1644 		cv_prev_word: 874
+ 1645 		cv__isWord: 849
+ 1646 		cv_delfini: 861
+ 1647 	vi_prev_char: protected el_action_t (), <./src/vi.c 736>
+ 1648 		cv_csearch: 857
+ 1649 	vi_prev_word: protected el_action_t (), <./src/vi.c 176>
+ 1650 		cv_prev_word: 874
+ 1651 		cv__isword: 851
+ 1652 		cv_delfini: 861
+ 1653 	vi_redo: protected el_action_t (), <./src/vi.c 1136>
+ 1654 		FUN: 1
+ 1655 	vi_repeat_next_char: protected el_action_t (), <./src/vi.c 772>
+ 1656 		cv_csearch: 857
+ 1657 	vi_repeat_prev_char: protected el_action_t (), <./src/vi.c 786>
+ 1658 		cv_csearch: 857
+ 1659 	vi_repeat_search_next: protected el_action_t (), <./src/vi.c 690>
+ 1660 		cv_repeat_srch: 876
+ 1661 	vi_repeat_search_prev: protected el_action_t (), <./src/vi.c 706>
+ 1662 		cv_repeat_srch: 876
+ 1663 	vi_replace_char: protected el_action_t (), <./src/vi.c 313>
+ 1664 		cv_undo: 752
+ 1665 	vi_replace_mode: protected el_action_t (), <./src/vi.c 332>
+ 1666 		cv_undo: 752
+ 1667 	vi_search_next: protected el_action_t (), <./src/vi.c 677>
+ 1668 		cv_search: 881
+ 1669 	vi_search_prev: protected el_action_t (), <./src/vi.c 664>
+ 1670 		cv_search: 881
+ 1671 	vi_substitute_char: protected el_action_t (), <./src/vi.c 348>
+ 1672 		c_delafter: 751
+ 1673 	vi_substitute_line: protected el_action_t (), <./src/vi.c 363>
+ 1674 		cv_undo: 752
+ 1675 		cv_yank: 754
+ 1676 		em_kill_line: 1063
+ 1677 	vi_to_column: protected el_action_t (), <./src/vi.c 865>
+ 1678 		ed_next_char: 949
+ 1679 	vi_to_history_line: 1589
+ 1680 	vi_to_next_char: protected el_action_t (), <./src/vi.c 748>
+ 1681 		cv_csearch: 857
+ 1682 	vi_to_prev_char: protected el_action_t (), <./src/vi.c 760>
+ 1683 		cv_csearch: 857
+ 1684 	vi_undo: protected el_action_t (), <./src/vi.c 516>
+ 1685 	vi_undo_line: protected el_action_t (), <./src/vi.c 851>
+ 1686 		cv_undo: 752
+ 1687 		hist_get: 797
+ 1688 	vi_yank: protected el_action_t (), <./src/vi.c 893>
+ 1689 		cv_action: 854
+ 1690 	vi_yank_end: protected el_action_t (), <./src/vi.c 879>
+ 1691 		cv_yank: 754
+ 1692 	vi_zero: protected el_action_t (), <./src/vi.c 567>
+ 1693 		ed_argument_digit: 892
+ 1694 		cv_delfini: 861
+ 1695 	vis: 1357
+ 1696 	wcsdup: wchar_t * (), <./src/wcsdup.c 27>
+ 1697 		wcslen: <>
+ 1698 		malloc: <>
+ 1699 		wmemcpy: <>
+ 1700 	where_history: int (), <./src/readline.c 1510>
+ 1701 		history: <>
+ 1702 	write_history: int (), <./src/readline.c 1344>
+ 1703 		rl_initialize: 601
+ 1704 		history: <>

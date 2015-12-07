@@ -1,0 +1,642 @@
+    1 	main: int (), <./file/tests/test.c 68>
+    2 		COMPAT_MODE: <>
+    3 		setlocale: <>
+    4 		strrchr: <>
+    5 		getenv: <>
+    6 		getopt_long: int (), <./file/src/getopt_long.c 356>
+    7 		help: private void (), <./file/src/file.c 502>
+    8 			COMPAT_MODE: <>
+    9 			fputs: <>
+   10 			exit: <>
+   11 		strcmp: <>
+   12 		usage: private void (), <./file/src/file.c 494>
+   13 			fprintf: <>
+   14 			COMPAT_MODE: <>
+   15 			fputs: <>
+   16 			exit: <>
+   17 		load: magic_set * (), <./file/src/file.c 372>
+   18 			magic_open: magic_set * (), <./file/src/magic.c 110>
+   19 				CAST: <>
+   20 				calloc: <>
+   21 				magic_setflags: public int (), <./file/src/magic.c 399>
+   22 				free: <>
+   23 				malloc: <>
+   24 			fprintf: <>
+   25 			strerror: <>
+   26 			magic_load: public int (), <./file/src/magic.c 196>
+   27 				file_apprentice: mlist * (), <./file/src/apprentice.c 350>
+   28 					magic_getpath: public const char * (), <./file/src/magic.c 97>
+   29 						getenv: <>
+   30 						get_default_magic: private const char * (), <./file/src/magic.c 91>
+   31 					init_file_tables: private void (), <./file/src/apprentice.c 241>
+   32 						assert: <>
+   33 					strdup: <>
+   34 					file_oomem: protected void (), <./file/src/funcs.c 139>
+   35 						file_error: protected void (), <./file/src/funcs.c 117>
+   36 							va_start: <>
+   37 							file_error_core: private void (), <./file/src/funcs.c 97>
+   38 								free: <>
+   39 								file_printf: protected int (), <./file/src/funcs.c 81>
+   40 								file_vprintf: <>
+   41 								strerror: <>
+   42 							va_end: <>
+   43 					strlen: <>
+   44 					CAST: <>
+   45 					malloc: <>
+   46 					free: <>
+   47 					strchr: <>
+   48 					apprentice_1: private int (), <./file/src/apprentice.c 261>
+   49 						file_error: 35
+   50 						apprentice_load: private int (), <./file/src/apprentice.c 704>
+   51 							CAST: <>
+   52 							calloc: <>
+   53 							file_oomem: 34
+   54 							fprintf: <>
+   55 							stat: <>
+   56 							S_ISDIR: <>
+   57 							opendir: <>
+   58 							readdir: <>
+   59 							snprintf: <>
+   60 							S_ISREG: <>
+   61 							strdup: <>
+   62 							strlen: <>
+   63 							realloc: <>
+   64 							closedir: <>
+   65 							qsort: <>
+   66 							cmpstrp: private int (), <./file/src/apprentice.c 698>
+   67 								strcmp: <>
+   68 							load_1: private void (), <./file/src/apprentice.c 626>
+   69 								fopen: <>
+   70 								file_error: 35
+   71 								fgets: <>
+   72 								CAST: <>
+   73 								strlen: <>
+   74 								memcmp: <>
+   75 								parse: private int (), <./file/src/apprentice.c 1082>
+   76 									file_check_mem: protected int (), <./file/src/funcs.c 409>
+   77 										CAST: <>
+   78 										malloc: <>
+   79 										realloc: <>
+   80 										file_oomem: 34
+   81 									file_error: 35
+   82 									CAST: <>
+   83 									realloc: <>
+   84 									file_oomem: 34
+   85 									memset: <>
+   86 									malloc: <>
+   87 									file_magwarn: protected void (), <./file/src/print.c 184>
+   88 										fflush: <>
+   89 										fprintf: <>
+   90 										va_start: <>
+   91 										vfprintf: <>
+   92 										va_end: <>
+   93 										fputc: <>
+   94 									strtoul: <>
+   95 									get_op: private int (), <./file/src/apprentice.c 983>
+   96 									isdigit: <>
+   97 									strtol: <>
+   98 									get_cond: private int (), <./file/src/apprentice.c 1009>
+   99 										strncmp: <>
+  100 										isspace: <>
+  101 									check_cond: private int (), <./file/src/apprentice.c 1035>
+  102 										file_magwarn: 87
+  103 									isalpha: <>
+  104 									get_type: private int (), <./file/src/apprentice.c 226>
+  105 										strncmp: <>
+  106 									IS_STRING: <>
+  107 									strtoull: <>
+  108 									file_signextend: protected uint64_t (), <./file/src/apprentice.c 862>
+  109 										file_magwarn: 87
+  110 									eatsize: private void (), <./file/src/apprentice.c 2125>
+  111 										LOWCASE: <>
+  112 									isspace: <>
+  113 									string_modifier_check: private int (), <./file/src/apprentice.c 930>
+  114 										file_magwarn: 87
+  115 									isascii: <>
+  116 									getvalue: private int (), <./file/src/apprentice.c 1834>
+  117 										getstr: private const char * (), <./file/src/apprentice.c 1892>
+  118 											isspace: <>
+  119 											file_error: 35
+  120 											file_magwarn: 87
+  121 											isprint: <>
+  122 											strchr: <>
+  123 											hextoint: private int (), <./file/src/apprentice.c 2047>
+  124 												isascii: <>
+  125 												isdigit: <>
+  126 											CAST: <>
+  127 										file_magwarn: 87
+  128 										strtof: <>
+  129 										strtod: <>
+  130 										file_signextend: 108
+  131 										strtoull: <>
+  132 										eatsize: 110
+  133 									check_format: private int (), <./file/src/apprentice.c 1779>
+  134 										assert: <>
+  135 										file_magwarn: 87
+  136 										check_format_type: private int (), <./file/src/apprentice.c 1651>
+  137 											isdigit: <>
+  138 											abort: <>
+  139 									file_mdump: <>
+  140 								fclose: <>
+  141 							free: <>
+  142 							set_test_type: private void (), <./file/src/apprentice.c 552>
+  143 								file_looks_utf8: protected int (), <./file/src/encoding.c 291>
+  144 							strstr: <>
+  145 							isspace: <>
+  146 							apprentice_sort: private int (), <./file/src/apprentice.c 537>
+  147 								CAST: <>
+  148 								apprentice_magic_strength: private size_t (), <./file/src/apprentice.c 399>
+  149 									abort: <>
+  150 									MAX: <>
+  151 									fprintf: <>
+  152 							file_magwarn: 87
+  153 							malloc: <>
+  154 							memcpy: <>
+  155 						apprentice_compile: private int (), <./file/src/apprentice.c 2252>
+  156 							mkdbname: private char * (), <./file/src/apprentice.c 2298>
+  157 								strrchr: <>
+  158 								asprintf: int (), <./file/src/asprintf.c 37>
+  159 									va_start: <>
+  160 									vasprintf: int (), <./file/src/vasprintf.c 616>
+  161 										va_copy: <>
+  162 										memcpy: <>
+  163 										core: int (), <./file/src/vasprintf.c 545>
+  164 											realloc_buff: int (), <./file/src/vasprintf.c 152>
+  165 												realloc: <>
+  166 											dispatch: int (), <./file/src/vasprintf.c 295>
+  167 												usual_char: int (), <./file/src/vasprintf.c 178>
+  168 													strcspn: <>
+  169 													realloc_buff: 164
+  170 													memcpy: <>
+  171 												realloc_buff: 164
+  172 												INCOHERENT_TEST: <>
+  173 												va_arg: <>
+  174 												isdigit: <>
+  175 												getint: int (), <./file/src/vasprintf.c 268>
+  176 													isdigit: <>
+  177 												INCOHERENT: <>
+  178 												strchr: <>
+  179 												sprintf: <>
+  180 												strlen: <>
+  181 												print_it: int (), <./file/src/vasprintf.c 202>
+  182 													realloc_buff: 164
+  183 													va_start: <>
+  184 													vsprintf: <>
+  185 													va_end: <>
+  186 													assert: <>
+  187 													strlen: <>
+  188 												type_s: int (), <./file/src/vasprintf.c 241>
+  189 													print_it: 181
+  190 											realloc: <>
+  191 											free: <>
+  192 										va_end: <>
+  193 									va_end: <>
+  194 								access: <>
+  195 								free: <>
+  196 								strstr: <>
+  197 							open: <>
+  198 							file_error: 35
+  199 							write: <>
+  200 							lseek: <>
+  201 							close: <>
+  202 							free: <>
+  203 						free: <>
+  204 						apprentice_map: private int (), <./file/src/apprentice.c 2151>
+  205 							mkdbname: 156
+  206 							open: <>
+  207 							fstat: <>
+  208 							file_error: 35
+  209 							mmap: <>
+  210 							CAST: <>
+  211 							malloc: <>
+  212 							file_oomem: 34
+  213 							read: <>
+  214 							file_badread: protected void (), <./file/src/funcs.c 151>
+  215 								file_error: 35
+  216 							close: <>
+  217 							swap4: private uint32_t (), <./file/src/apprentice.c 2367>
+  218 							byteswap: private void (), <./file/src/apprentice.c 2342>
+  219 								bs1: private void (), <./file/src/apprentice.c 2414>
+  220 									swap2: private uint16_t (), <./file/src/apprentice.c 2353>
+  221 									swap4: 217
+  222 									IS_STRING: <>
+  223 									swap8: private uint64_t (), <./file/src/apprentice.c 2383>
+  224 							free: <>
+  225 							munmap: <>
+  226 						file_magwarn: 87
+  227 						file_delmagic: protected void (), <./file/src/apprentice.c 322>
+  228 							munmap: <>
+  229 							abort: <>
+  230 							free: <>
+  231 						CAST: <>
+  232 						malloc: <>
+  233 						file_oomem: 34
+  234 					MAX: <>
+  235 					file_error: 35
+  236 				free_mlist: private void (), <./file/src/magic.c 142>
+  237 					file_delmagic: 227
+  238 					free: <>
+  239 			magic_error: public const char * (), <./file/src/magic.c 387>
+  240 			magic_close: public void (), <./file/src/magic.c 183>
+  241 				free_mlist: 236
+  242 				free: <>
+  243 		unwrap: private int (), <./file/src/file.c 392>
+  244 			strcmp: <>
+  245 			fopen: <>
+  246 			fprintf: <>
+  247 			strerror: <>
+  248 			fgets: <>
+  249 			strcspn: <>
+  250 			file_mbswidth: size_t (), <./file/src/file.c 460>
+  251 				memset: <>
+  252 				strlen: <>
+  253 				mbrtowc: <>
+  254 				wcwidth: <>
+  255 			rewind: <>
+  256 			process: private int (), <./file/src/file.c 434>
+  257 				strcmp: <>
+  258 				printf: <>
+  259 				putc: <>
+  260 				file_mbswidth: 250
+  261 				magic_file: public const char * (), <./file/src/magic.c 271>
+  262 					file_or_fd: private const char * (), <./file/src/magic.c 277>
+  263 						CAST: <>
+  264 						malloc: <>
+  265 						file_reset: protected int (), <./file/src/funcs.c 303>
+  266 							file_error: 35
+  267 							free: <>
+  268 						file_fsmagic: protected int (), <./file/src/fsmagic.c 103>
+  269 							lstat: <>
+  270 							stat: <>
+  271 							file_error: 35
+  272 							file_printf: protected int (), <./file/src/funcs.c 81>
+  273 							strerror: <>
+  274 							handle_mime: private int (), <./file/src/fsmagic.c 88>
+  275 							major: <>
+  276 							dv_unit: <>
+  277 							dv_subunit: <>
+  278 							minor: <>
+  279 							readlink: <>
+  280 							bad_link: <>
+  281 							strrchr: <>
+  282 							strlcpy: size_t (), <./file/src/strlcpy.c 31>
+  283 							strlcat: size_t (), <./file/src/strlcat.c 33>
+  284 								strlen: <>
+  285 							magic_file: 261
+  286 						fstat: <>
+  287 						S_ISFIFO: <>
+  288 						stat: <>
+  289 						open: <>
+  290 						unreadable_info: private int (), <./file/src/magic.c 160>
+  291 							COMPAT_MODE: <>
+  292 							file_printf: protected int (), <./file/src/funcs.c 81>
+  293 							strerror: <>
+  294 							access: <>
+  295 							S_ISREG: <>
+  296 						fcntl: <>
+  297 						sread: protected ssize_t (), <./file/src/compress.c 170>
+  298 							ioctl: <>
+  299 							FD_ZERO: <>
+  300 							FD_SET: <>
+  301 							select: <>
+  302 							read: <>
+  303 						read: <>
+  304 						file_error: 35
+  305 						memset: <>
+  306 						file_buffer: protected int (), <./file/src/funcs.c 158>
+  307 							CAST: <>
+  308 							file_printf: protected int (), <./file/src/funcs.c 81>
+  309 							file_encoding: protected int (), <./file/src/encoding.c 68>
+  310 								CAST: <>
+  311 								calloc: <>
+  312 								file_oomem: 34
+  313 								looks_ascii: private int (), <./file/src/encoding.c 221>
+  314 								DPRINTF: <>
+  315 								looks_utf8_with_BOM: private int (), <./file/src/encoding.c 362>
+  316 									file_looks_utf8: 143
+  317 								file_looks_utf8: 143
+  318 								looks_ucs16: private int (), <./file/src/encoding.c 372>
+  319 								looks_latin1: private int (), <./file/src/encoding.c 241>
+  320 								looks_extended: private int (), <./file/src/encoding.c 260>
+  321 								from_ebcdic: private void (), <./file/src/encoding.c 493>
+  322 								free: <>
+  323 							file_os2_apptype: protected int (), <./file/src/apptype.c 45>
+  324 								strdup: <>
+  325 								tempnam: <>
+  326 								file_error: 35
+  327 								sprintf: <>
+  328 								fopen: <>
+  329 								fwrite: <>
+  330 								fclose: <>
+  331 								DosQueryAppType: <>
+  332 								unlink: <>
+  333 								free: <>
+  334 								printf: <>
+  335 								file_printf: protected int (), <./file/src/funcs.c 81>
+  336 								stricmp: <>
+  337 								strncmp: <>
+  338 							file_zmagic: protected int (), <./file/src/compress.c 96>
+  339 								memcmp: <>
+  340 								uncompressbuf: private size_t (), <./file/src/compress.c 372>
+  341 									uncompressgzipped: private size_t (), <./file/src/compress.c 306>
+  342 										CAST: <>
+  343 										malloc: <>
+  344 										strchr: <>
+  345 										inflateInit2: <>
+  346 										file_error: 35
+  347 										inflate: <>
+  348 										inflateEnd: <>
+  349 									fflush: <>
+  350 									pipe: <>
+  351 									file_error: 35
+  352 									fork: <>
+  353 									close: <>
+  354 									dup: <>
+  355 									lseek: <>
+  356 									execvp: <>
+  357 									fprintf: <>
+  358 									strerror: <>
+  359 									exit: <>
+  360 									swrite: private ssize_t (), <./file/src/compress.c 145>
+  361 										write: <>
+  362 										CAST: <>
+  363 									malloc: <>
+  364 									err: int, <./file/src/fsmagic.c 64>
+  365 									sread: 297
+  366 									free: <>
+  367 									waitpid: <>
+  368 									wait: <>
+  369 								file_buffer: 306
+  370 								file_printf: protected int (), <./file/src/funcs.c 81>
+  371 								free: <>
+  372 							fprintf: <>
+  373 							file_is_tar: protected int (), <./file/src/is_tar.c 63>
+  374 								is_tar: private int (), <./file/src/is_tar.c 93>
+  375 									from_oct: private int (), <./file/src/is_tar.c 138>
+  376 										isspace: <>
+  377 										isodigit: <>
+  378 									strcmp: <>
+  379 								file_printf: protected int (), <./file/src/funcs.c 81>
+  380 							file_trycdf: protected int (), <./file/src/readcdf.c 198>
+  381 								cdf_read_header: int (), <./file/src/cdf.c 277>
+  382 									memcpy: <>
+  383 									cdf_read: ssize_t (), <./file/src/cdf.c 250>
+  384 										memcpy: <>
+  385 										lseek: <>
+  386 										read: <>
+  387 									cdf_unpack_header: void (), <./file/src/cdf.c 163>
+  388 										CDF_UNPACK: <>
+  389 										CDF_UNPACKA: <>
+  390 									cdf_swap_header: void (), <./file/src/cdf.c 134>
+  391 										CDF_TOLE8: <>
+  392 										CDF_TOLE2: <>
+  393 										CDF_TOLE4: <>
+  394 									DPRINTF: <>
+  395 								cdf_dump_header: void (), <./file/src/cdf.c 985>
+  396 									DUMP: <>
+  397 									DUMP2: <>
+  398 									fprintf: <>
+  399 								cdf_read_sat: int (), <./file/src/cdf.c 331>
+  400 									CDF_SEC_SIZE: <>
+  401 									DPRINTF: <>
+  402 									CAST: <>
+  403 									calloc: <>
+  404 									cdf_read_sector: ssize_t (), <./file/src/cdf.c 309>
+  405 										assert: <>
+  406 										CDF_SEC_SIZE: <>
+  407 										cdf_read: 383
+  408 										CDF_SEC_POS: <>
+  409 									CDF_TOLE4: <>
+  410 									free: <>
+  411 								cdf_dump_sat: void (), <./file/src/cdf.c 1013>
+  412 									fprintf: <>
+  413 									CDF_TOLE4: <>
+  414 								CDF_SEC_SIZE: <>
+  415 								cdf_read_ssat: int (), <./file/src/cdf.c 592>
+  416 									CDF_SEC_SIZE: <>
+  417 									cdf_count_chain: size_t (), <./file/src/cdf.c 414>
+  418 										DPRINTF: <>
+  419 										CDF_TOLE4: <>
+  420 									CAST: <>
+  421 									calloc: <>
+  422 									DPRINTF: <>
+  423 									cdf_read_sector: 404
+  424 									CDF_TOLE4: <>
+  425 									free: <>
+  426 								CDF_SHORT_SEC_SIZE: <>
+  427 								cdf_read_dir: int (), <./file/src/cdf.c 538>
+  428 									CDF_SEC_SIZE: <>
+  429 									cdf_count_chain: 417
+  430 									CAST: <>
+  431 									calloc: <>
+  432 									malloc: <>
+  433 									free: <>
+  434 									DPRINTF: <>
+  435 									cdf_read_sector: 404
+  436 									cdf_unpack_dir: void (), <./file/src/cdf.c 213>
+  437 										CDF_UNPACKA: <>
+  438 										CDF_UNPACK: <>
+  439 									CDF_TOLE4: <>
+  440 									cdf_swap_dir: void (), <./file/src/cdf.c 189>
+  441 										CDF_TOLE2: <>
+  442 										CDF_TOLE4: <>
+  443 										CDF_TOLE8: <>
+  444 								cdf_read_short_stream: int (), <./file/src/cdf.c 633>
+  445 									cdf_read_long_sector_chain: int (), <./file/src/cdf.c 439>
+  446 										CDF_SEC_SIZE: <>
+  447 										cdf_count_chain: 417
+  448 										calloc: <>
+  449 										DPRINTF: <>
+  450 										cdf_read_sector: 404
+  451 										CDF_TOLE4: <>
+  452 										free: <>
+  453 								cdf_dump_dir: void (), <./file/src/cdf.c 1058>
+  454 									CDF_TOLE2: <>
+  455 									fprintf: <>
+  456 									cdf_timestamp_to_timespec: int (), <./file/src/cdf_time.c 105>
+  457 										cdf_getdays: int (), <./file/src/cdf_time.c 58>
+  458 											isleap: <>
+  459 										cdf_getday: int (), <./file/src/cdf_time.c 73>
+  460 											isleap: <>
+  461 										cdf_getmonth: int (), <./file/src/cdf_time.c 90>
+  462 											isleap: <>
+  463 										mktime: <>
+  464 									ctime: <>
+  465 									cdf_read_sector_chain: int (), <./file/src/cdf.c 525>
+  466 										cdf_read_short_sector_chain: int (), <./file/src/cdf.c 484>
+  467 											CDF_SHORT_SEC_SIZE: <>
+  468 											cdf_count_chain: 417
+  469 											CDF_SEC_SIZE: <>
+  470 											calloc: <>
+  471 											DPRINTF: <>
+  472 											cdf_read_short_sector: ssize_t (), <./file/src/cdf.c 318>
+  473 												assert: <>
+  474 												CDF_SHORT_SEC_SIZE: <>
+  475 												memcpy: <>
+  476 												CDF_SHORT_SEC_POS: <>
+  477 											CDF_TOLE4: <>
+  478 											free: <>
+  479 										cdf_read_long_sector_chain: 445
+  480 									warn: <>
+  481 									cdf_dump_stream: void (), <./file/src/cdf.c 1050>
+  482 										CDF_SHORT_SEC_SIZE: <>
+  483 										CDF_SEC_SIZE: <>
+  484 										cdf_dump: void (), <./file/src/cdf.c 1031>
+  485 											fprintf: <>
+  486 											isprint: <>
+  487 									free: <>
+  488 								cdf_read_summary_info: int (), <./file/src/cdf.c 671>
+  489 									cdf_namecmp: int (), <./file/src/cdf.c 662>
+  490 										CDF_TOLE2: <>
+  491 									DPRINTF: <>
+  492 									cdf_read_sector_chain: 465
+  493 								cdf_dump_summary_info: void (), <./file/src/cdf.c 1176>
+  494 									cdf_unpack_summary_info: int (), <./file/src/cdf.c 863>
+  495 										CAST: <>
+  496 										cdf_check_stream_offset: int (), <./file/src/cdf.c 234>
+  497 											DPRINTF: <>
+  498 										CDF_TOLE2: <>
+  499 										cdf_swap_class: void (), <./file/src/cdf.c 205>
+  500 											CDF_TOLE4: <>
+  501 											CDF_TOLE2: <>
+  502 										CDF_TOLE4: <>
+  503 										DPRINTF: <>
+  504 										cdf_read_property_info: int (), <./file/src/cdf.c 696>
+  505 											CAST: <>
+  506 											cdf_check_stream_offset: 496
+  507 											CDF_TOLE4: <>
+  508 											DPRINTF: <>
+  509 											realloc: <>
+  510 											malloc: <>
+  511 											memcpy: <>
+  512 											CDF_TOLE2: <>
+  513 											CDF_TOLE8: <>
+  514 											CDF_ROUND: <>
+  515 											free: <>
+  516 									fprintf: <>
+  517 									cdf_print_classid: int (), <./file/src/cdf.c 901>
+  518 										snprintf: <>
+  519 									cdf_dump_property_info: void (), <./file/src/cdf.c 1115>
+  520 										cdf_print_property_name: int (), <./file/src/cdf.c 937>
+  521 											snprintf: <>
+  522 										fprintf: <>
+  523 										fputc: <>
+  524 										cdf_print_elapsed_time: int (), <./file/src/cdf.c 948>
+  525 											snprintf: <>
+  526 										cdf_timestamp_to_timespec: 456
+  527 										ctime: <>
+  528 										DPRINTF: <>
+  529 									free: <>
+  530 								cdf_file_summary_info: private int (), <./file/src/readcdf.c 152>
+  531 								free: <>
+  532 								file_printf: protected int (), <./file/src/funcs.c 81>
+  533 							file_softmagic: protected int (), <./file/src/softmagic.c 69>
+  534 							file_tryelf: protected int (), <./file/src/readelf.c 1128>
+  535 								lseek: <>
+  536 								file_pipe2file: protected int (), <./file/src/compress.c 234>
+  537 									strlcpy: 282
+  538 									mktemp: <>
+  539 									open: <>
+  540 									unlink: <>
+  541 									mkstemp: <>
+  542 									file_error: 35
+  543 									swrite: 360
+  544 									sread: 297
+  545 									dup2: <>
+  546 									close: <>
+  547 									lseek: <>
+  548 									file_badseek: protected void (), <./file/src/funcs.c 145>
+  549 										file_error: 35
+  550 								fstat: <>
+  551 								file_badread: 214
+  552 								file_printf: protected int (), <./file/src/funcs.c 81>
+  553 							file_trymacho: protected int (), <./file/src/readmacho.c 62>
+  554 							file_ascmagic: protected int (), <./file/src/ascmagic.c 74>
+  555 								trim_nuls: private size_t (), <./file/src/ascmagic.c 65>
+  556 								file_encoding: 309
+  557 								file_ascmagic_with_encoding: protected int (), <./file/src/ascmagic.c 107>
+  558 									trim_nuls: private size_t (), <./file/src/ascmagic.c 65>
+  559 									CAST: <>
+  560 									malloc: <>
+  561 									file_oomem: 34
+  562 									encode_utf8: private unsigned char * (), <./file/src/ascmagic.c 339>
+  563 									file_softmagic: 533
+  564 									ISSPC: <>
+  565 									ascmatch: private int (), <./file/src/ascmagic.c 319>
+  566 									strcmp: <>
+  567 									file_printf: protected int (), <./file/src/funcs.c 81>
+  568 									free: <>
+  569 								free: <>
+  570 							file_ascmagic_with_encoding: 557
+  571 							free: <>
+  572 						free: <>
+  573 						close_and_restore: private void (), <./file/src/magic.c 224>
+  574 							close: <>
+  575 							memset: <>
+  576 							utimes: <>
+  577 							utime: <>
+  578 						file_getbuffer: protected const char * (), <./file/src/funcs.c 331>
+  579 							strlen: <>
+  580 							file_oomem: 34
+  581 							CAST: <>
+  582 							realloc: <>
+  583 							memset: <>
+  584 							mbrtowc: <>
+  585 							iswprint: <>
+  586 							memcpy: <>
+  587 							OCTALIFY: <>
+  588 							isprint: <>
+  589 				magic_error: 239
+  590 			fflush: <>
+  591 			fclose: <>
+  592 		magic_getpath: 28
+  593 		malloc: <>
+  594 		strlen: <>
+  595 		strcpy: <>
+  596 		strcat: <>
+  597 		fprintf: <>
+  598 		magic_open: 18
+  599 		strerror: <>
+  600 		magic_check: public int (), <./file/src/magic.c 216>
+  601 			file_apprentice: 27
+  602 			free_mlist: 236
+  603 		magic_compile: public int (), <./file/src/magic.c 208>
+  604 			file_apprentice: 27
+  605 			free_mlist: 236
+  606 		magic_error: 239
+  607 		file_mbswidth: 250
+  608 		process: 256
+  609 		magic_close: 240
+  610 		cdf_timestamp_to_timespec: 456
+  611 		ctime: <>
+  612 		strchr: <>
+  613 		errx: <>
+  614 		getprogname: <>
+  615 		open: <>
+  616 		err: int, <./file/src/fsmagic.c 64>
+  617 		cdf_read_header: 381
+  618 		cdf_dump_header: 395
+  619 		cdf_read_sat: 399
+  620 		cdf_dump_sat: 411
+  621 		CDF_SEC_SIZE: <>
+  622 		cdf_read_ssat: 415
+  623 		CDF_SHORT_SEC_SIZE: <>
+  624 		cdf_read_dir: 427
+  625 		cdf_read_short_stream: 444
+  626 		cdf_dump_stream: 481
+  627 		cdf_dump_dir: 453
+  628 		cdf_read_summary_info: 488
+  629 		cdf_dump_summary_info: 493
+  630 		close: <>
+  631 		magic_load: 26
+  632 		magic_file: 261
+  633 		fopen: <>
+  634 		perror: <>
+  635 		slurp: char * (), <./file/tests/test.c 45>
+  636 			xrealloc: void * (), <./file/tests/test.c 34>
+  637 				realloc: <>
+  638 				fprintf: <>
+  639 				exit: <>
+  640 			getc: <>
+  641 		fclose: <>
+  642 		printf: <>

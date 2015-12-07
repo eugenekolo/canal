@@ -1,0 +1,445 @@
+    1 	main: int (), <./fsck_msdos.tproj/main.c 91>
+    2 		strcmp: <>
+    3 		usage: void (), <./mount_msdos.tproj/mount_msdos.c 388>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		snprintf: <>
+    7 		exit: <>
+    8 		stat: <>
+    9 		fprintf: <>
+   10 		strerror: <>
+   11 		fs_probe: int (), <./msdos_util.tproj/dosutil.c 383>
+   12 			safe_open: int (), <./msdos_util.tproj/dosutil.c 1014>
+   13 				open: <>
+   14 				fprintf: <>
+   15 				strerror: <>
+   16 				exit: <>
+   17 			valid_boot_sector: int (), <./msdos_util.tproj/dosutil.c 289>
+   18 				ioctl: <>
+   19 				fprintf: <>
+   20 				strerror: <>
+   21 				safe_read: void (), <./msdos_util.tproj/dosutil.c 1073>
+   22 					lseek: <>
+   23 					fprintf: <>
+   24 					strerror: <>
+   25 					exit: <>
+   26 					read: <>
+   27 				getuint16: <>
+   28 				getuint32: <>
+   29 			getuint16: <>
+   30 			safe_read: 21
+   31 			strncpy: <>
+   32 			malloc: <>
+   33 			getuint32: <>
+   34 			free: <>
+   35 			fs_set_label_file: void (), <./msdos_util.tproj/dosutil.c 927>
+   36 				strncpy: <>
+   37 				oklabel: int (), <./msdos_util.tproj/dosutil.c 987>
+   38 					strchr: <>
+   39 				GetDefaultDOSEncoding: CFStringEncoding (), <./msdos_util.tproj/dosutil.c 845>
+   40 					getpwuid: <>
+   41 					getuid: <>
+   42 					strlcpy: <>
+   43 					strlcat: <>
+   44 					open: <>
+   45 					read: <>
+   46 					close: <>
+   47 					strtol: <>
+   48 				CFStringCreateWithCString: <>
+   49 				CFStringCreateMutableCopy: <>
+   50 				CFStringNormalize: <>
+   51 				CFStringGetCString: <>
+   52 				CFRelease: <>
+   53 				write: <>
+   54 				strlen: <>
+   55 			safe_close: void (), <./msdos_util.tproj/dosutil.c 1028>
+   56 				close: <>
+   57 				fprintf: <>
+   58 				strerror: <>
+   59 				exit: <>
+   60 		printf: <>
+   61 		fs_mount: int (), <./msdos_util.tproj/dosutil.c 529>
+   62 			checkLoadable: int (), <./msdos_util.tproj/dosutil.c 1105>
+   63 				getvfsbyname: <>
+   64 			safe_execv: void (), <./msdos_util.tproj/dosutil.c 1038>
+   65 				fork: <>
+   66 				execv: <>
+   67 				fprintf: <>
+   68 				strerror: <>
+   69 				exit: <>
+   70 				wait4: <>
+   71 				WIFEXITED: <>
+   72 				WTERMSIG: <>
+   73 				WEXITSTATUS: <>
+   74 		fs_unmount: int (), <./msdos_util.tproj/dosutil.c 551>
+   75 			safe_execv: 64
+   76 		fs_get_uuid: int (), <./msdos_util.tproj/dosutil.c 738>
+   77 			get_mount_point: int (), <./msdos_util.tproj/dosutil.c 575>
+   78 				getmntinfo: <>
+   79 				strcmp: <>
+   80 			fs_get_uuid_attr: int (), <./msdos_util.tproj/dosutil.c 644>
+   81 				getattrlist: <>
+   82 				warn: <>
+   83 				memcpy: <>
+   84 			fs_get_uuid_raw: int (), <./msdos_util.tproj/dosutil.c 681>
+   85 				safe_open: 12
+   86 				valid_boot_sector: 17
+   87 				getuint16: <>
+   88 				getuint32: <>
+   89 				msdosfs_generate_volume_uuid: void (), <./msdos_util.tproj/dosutil.c 615>
+   90 					UUID_DEFINE: <>
+   91 					putuint32: <>
+   92 					CC_MD5_Init: <>
+   93 					CC_MD5_Update: <>
+   94 					CC_MD5_Final: <>
+   95 				safe_close: 55
+   96 			uuid_unparse: <>
+   97 			write: <>
+   98 			strlen: <>
+   99 		fs_label: int (), <./msdos_util.tproj/dosutil.c 764>
+  100 			errx: <>
+  101 			CFStringCreateWithCString: <>
+  102 			CFStringGetCString: <>
+  103 			CFRelease: <>
+  104 			oklabel: 37
+  105 			mklabel: void (), <./msdos_util.tproj/dosutil.c 1003>
+  106 				toupper: <>
+  107 			safe_open: 12
+  108 			safe_read: 21
+  109 			getuint16: <>
+  110 			strncpy: <>
+  111 			safe_write: void (), <./msdos_util.tproj/dosutil.c 1089>
+  112 				lseek: <>
+  113 				fprintf: <>
+  114 				strerror: <>
+  115 				exit: <>
+  116 				write: <>
+  117 			safe_close: 55
+  118 		memset: <>
+  119 		getopt: <>
+  120 		rmslashes: void (), <./mount_msdos.tproj/mount_msdos.c 133>
+  121 		strncmp: <>
+  122 		disk_default_async: int (), <./mount_msdos.tproj/mount_msdos.c 155>
+  123 			err: <>
+  124 			IOServiceGetMatchingServices: <>
+  125 			IOBSDNameMatching: <>
+  126 			IOIteratorNext: <>
+  127 			IORegistryEntrySearchCFProperty: <>
+  128 			CFSTR: <>
+  129 			CFDictionaryGetTypeID: <>
+  130 			CFGetTypeID: <>
+  131 			CFDictionaryGetValue: <>
+  132 			CFStringGetTypeID: <>
+  133 			CFEqual: <>
+  134 			CFRelease: <>
+  135 			CFBooleanGetTypeID: <>
+  136 			CFBooleanGetValue: <>
+  137 			IOObjectRelease: <>
+  138 		a_uid: uid_t (), <./mount_msdos.tproj/mount_msdos.c 349>
+  139 			getpwnam: <>
+  140 			isdigit: <>
+  141 			atoi: <>
+  142 			errx: <>
+  143 		a_gid: gid_t (), <./mount_msdos.tproj/mount_msdos.c 329>
+  144 			getgrnam: <>
+  145 			isdigit: <>
+  146 			atoi: <>
+  147 			errx: <>
+  148 		a_mask: mode_t (), <./mount_msdos.tproj/mount_msdos.c 369>
+  149 			strtol: <>
+  150 			errx: <>
+  151 		getmntopts: <>
+  152 		err: <>
+  153 		freemntopts: <>
+  154 		checkpath: void (), <./mount_msdos.tproj/mount_msdos.c 120>
+  155 			realpath: <>
+  156 			stat: <>
+  157 			S_ISDIR: <>
+  158 			errx: <>
+  159 			strerror: <>
+  160 		gettimeofday: <>
+  161 		FindVolumeName: void (), <./mount_msdos.tproj/mount_msdos.c 573>
+  162 			bzero: <>
+  163 			open: <>
+  164 			err: <>
+  165 			pread: <>
+  166 			errx: <>
+  167 			bcopy: <>
+  168 			malloc: <>
+  169 			free: <>
+  170 			close: <>
+  171 			oklabel: int (), <./mount_msdos.tproj/mount_msdos.c 452>
+  172 				strchr: <>
+  173 			CFStringCreateWithCString: <>
+  174 			GetDefaultDOSEncoding: CFStringEncoding (), <./mount_msdos.tproj/mount_msdos.c 464>
+  175 				getpwuid: <>
+  176 				getuid: <>
+  177 				strlcpy: <>
+  178 				strlcat: <>
+  179 				open: <>
+  180 				read: <>
+  181 				close: <>
+  182 				strtol: <>
+  183 			CFStringCreateMutableCopy: <>
+  184 			CFStringNormalize: <>
+  185 			CFStringGetCString: <>
+  186 			CFRelease: <>
+  187 		checkLoadable: int (), <./mount_msdos.tproj/mount_msdos.c 400>
+  188 			getvfsbyname: <>
+  189 		load_kmod: int (), <./mount_msdos.tproj/mount_msdos.c 415>
+  190 			fork: <>
+  191 			execl: <>
+  192 			wait4: <>
+  193 			WIFEXITED: <>
+  194 		errx: <>
+  195 		mount: <>
+  196 		atoi: <>
+  197 		argto4: <>
+  198 		strlen: <>
+  199 		argto2: <>
+  200 		argtox: <>
+  201 		argto1: <>
+  202 		oklabel: int (), <./newfs_msdos.tproj/newfs_msdos.c 1299>
+  203 			strchr: <>
+  204 		strchr: <>
+  205 		strdup: <>
+  206 		open: <>
+  207 		fstat: <>
+  208 		check_mounted: void (), <./newfs_msdos.tproj/newfs_msdos.c 991>
+  209 			getmntinfo: <>
+  210 			err: <>
+  211 			strlen: <>
+  212 			strncmp: <>
+  213 			S_ISCHR: <>
+  214 			strcmp: <>
+  215 			errx: <>
+  216 		S_ISCHR: <>
+  217 		warnx: <>
+  218 		getstdfmt: void (), <./newfs_msdos.tproj/newfs_msdos.c 1019>
+  219 			strcmp: <>
+  220 			errx: <>
+  221 		getdiskinfo: void (), <./newfs_msdos.tproj/newfs_msdos.c 1034>
+  222 			ioctl: <>
+  223 			err: <>
+  224 		powerof2: <>
+  225 		ioctl: <>
+  226 		S_ISREG: <>
+  227 		sd_card_set_defaults: void (), <./newfs_msdos.tproj/newfs_msdos.c 1200>
+  228 			sd_card_type_for_path: enum SDCardType (), <./newfs_msdos.tproj/newfs_msdos.c 1126>
+  229 			warnx: <>
+  230 		howmany: <>
+  231 		MAX: <>
+  232 		MIN: <>
+  233 		maxcls: <>
+  234 		mincls: <>
+  235 		print_bpb: void (), <./newfs_msdos.tproj/newfs_msdos.c 1255>
+  236 			printf: <>
+  237 		localtime: <>
+  238 		malloc: <>
+  239 		wipefs_alloc: <>
+  240 		errc: <>
+  241 		wipefs_except_blocks: <>
+  242 		wipefs_wipe: <>
+  243 		wipefs_free: <>
+  244 		lseek: <>
+  245 		read: <>
+  246 		mk2: <>
+  247 		mk1: <>
+  248 		mk4: <>
+  249 		mklabel: void (), <./newfs_msdos.tproj/newfs_msdos.c 1315>
+  250 			toupper: <>
+  251 		setstr: void (), <./newfs_msdos.tproj/newfs_msdos.c 1329>
+  252 		memcpy: <>
+  253 		bzero: <>
+  254 		write: <>
+  255 		sscanf: <>
+  256 		pfatal: <>
+  257 		usage: void (), <./fsck_msdos.tproj/main.c 85>
+  258 			errexit: , <./fsck_msdos.tproj/fsutil.c 91>
+  259 				va_start: <>
+  260 				va_arg: <>
+  261 				vfprintf: <>
+  262 				va_end: <>
+  263 				exit: <>
+  264 		setcdevname: void (), <./fsck_msdos.tproj/fsutil.c 83>
+  265 		checkfilesys: int (), <./fsck_msdos.tproj/check.c 69>
+  266 			strncmp: <>
+  267 			snprintf: <>
+  268 			access: <>
+  269 			strtol: <>
+  270 			pfatal: <>
+  271 			fstat: <>
+  272 			perr: <>
+  273 			printf: <>
+  274 			open: <>
+  275 			pwarn: , <./fsck_msdos.tproj/fsutil.c 161>
+  276 				va_start: <>
+  277 				va_arg: <>
+  278 				vmsg: void (), <./fsck_msdos.tproj/fsutil.c 113>
+  279 				va_end: <>
+  280 			readboot: int (), <./fsck_msdos.tproj/boot.c 69>
+  281 				read: <>
+  282 				perr: <>
+  283 				pfatal: <>
+  284 				memset: <>
+  285 				FAT32: <>
+  286 				lseek: <>
+  287 				memcmp: <>
+  288 				pwarn: 275
+  289 				ask: <>
+  290 					printf: <>
+  291 					va_start: <>
+  292 					vsnprintf: <>
+  293 					fflush: <>
+  294 					getchar: <>
+  295 					feof: <>
+  296 				memcpy: <>
+  297 				write: <>
+  298 			close: <>
+  299 			isdirty: int (), <./fsck_msdos.tproj/fat.c 769>
+  300 				malloc: <>
+  301 				perr: <>
+  302 				lseek: <>
+  303 				deblock_read: ssize_t (), <./fsck_msdos.tproj/fat.c 861>
+  304 					read: <>
+  305 				free: <>
+  306 			fat_init: int (), <./fsck_msdos.tproj/fat.c 121>
+  307 				fat_uninit: void (), <./fsck_msdos.tproj/fat.c 413>
+  308 					free: <>
+  309 					freeUseMap: void (), <./fsck_msdos.tproj/fat.c 937>
+  310 						free: <>
+  311 				fat_get: <>
+  312 				fat12_get: cl_t (), <./fsck_msdos.tproj/fat.c 491>
+  313 					fprintf: <>
+  314 					fat_cache_find: struct fat_cache_block (), <./fsck_msdos.tproj/fat.c 317>
+  315 				fat_set: int () (), <./fsck_msdos.tproj/fat.c 92>
+  316 				fat12_set: int (), <./fsck_msdos.tproj/fat.c 602>
+  317 					fprintf: <>
+  318 					fat_cache_find: struct fat_cache_block (), <./fsck_msdos.tproj/fat.c 317>
+  319 					markFree: int (), <./fsck_msdos.tproj/fat.c 963>
+  320 					markUsed: int (), <./fsck_msdos.tproj/fat.c 949>
+  321 				fat16_get: cl_t (), <./fsck_msdos.tproj/fat.c 462>
+  322 					fprintf: <>
+  323 					fat_cache_find: struct fat_cache_block (), <./fsck_msdos.tproj/fat.c 317>
+  324 				fat16_set: int (), <./fsck_msdos.tproj/fat.c 568>
+  325 					fprintf: <>
+  326 					fat_cache_find: struct fat_cache_block (), <./fsck_msdos.tproj/fat.c 317>
+  327 					markFree: 319
+  328 					markUsed: 320
+  329 				fat32_get: cl_t (), <./fsck_msdos.tproj/fat.c 433>
+  330 					fprintf: <>
+  331 					fat_cache_find: struct fat_cache_block (), <./fsck_msdos.tproj/fat.c 317>
+  332 				fat32_set: int (), <./fsck_msdos.tproj/fat.c 531>
+  333 					fprintf: <>
+  334 					fat_cache_find: struct fat_cache_block (), <./fsck_msdos.tproj/fat.c 317>
+  335 					markFree: 319
+  336 					markUsed: 320
+  337 				pfatal: <>
+  338 				initUseMap: int (), <./fsck_msdos.tproj/fat.c 916>
+  339 					free: <>
+  340 					pfatal: <>
+  341 					calloc: <>
+  342 				calloc: <>
+  343 				freeUseMap: 309
+  344 				perr: <>
+  345 				free: <>
+  346 				pwarn: 275
+  347 				ask: 289
+  348 			resetDosDirSection: int (), <./fsck_msdos.tproj/dir.c 338>
+  349 				malloc: <>
+  350 				newDosDirEntry: struct dosDirEntry (), <./fsck_msdos.tproj/dir.c 133>
+  351 				perr: <>
+  352 				memset: <>
+  353 				FAT32: <>
+  354 				pfatal: <>
+  355 				fat_get: <>
+  356 				pwarn: 275
+  357 				rsrvdcltype: char * (), <./fsck_msdos.tproj/fat.c 848>
+  358 				ask: 289
+  359 				fat_set: int () (), <./fsck_msdos.tproj/fat.c 92>
+  360 				markFree: 319
+  361 				markDosDirChain: int (), <./fsck_msdos.tproj/dir.c 256>
+  362 					isUsed: int (), <./fsck_msdos.tproj/fat.c 944>
+  363 					fat_get: <>
+  364 					markUsed: 320
+  365 					pwarn: 275
+  366 					fullpath: char * (), <./fsck_msdos.tproj/dir.c 188>
+  367 						strlen: <>
+  368 						memcpy: <>
+  369 					rsrvdcltype: 357
+  370 					ask: 289
+  371 					fat_set: int () (), <./fsck_msdos.tproj/fat.c 92>
+  372 			handleDirTree: int (), <./fsck_msdos.tproj/dir.c 1181>
+  373 				readDosDirSection: int (), <./fsck_msdos.tproj/dir.c 675>
+  374 					fprintf: <>
+  375 					FAT32: <>
+  376 					lseek: <>
+  377 					read: <>
+  378 					perr: <>
+  379 					pwarn: 275
+  380 					fullpath: 366
+  381 					ask: 289
+  382 					delete: int (), <./fsck_msdos.tproj/dir.c 441>
+  383 						lseek: <>
+  384 						read: <>
+  385 						perr: <>
+  386 						write: <>
+  387 						fat_get: <>
+  388 					memset: <>
+  389 					msdosfs_removede: int (), <./fsck_msdos.tproj/dir.c 482>
+  390 						pwarn: 275
+  391 						ask: 289
+  392 						delete: 382
+  393 					calcShortSum: u_char (), <./fsck_msdos.tproj/dir.c 228>
+  394 					strlcpy: <>
+  395 					strcmp: <>
+  396 					isUsed: 362
+  397 					fat_get: <>
+  398 					rsrvdcltype: 357
+  399 					markDosDirChain: 361
+  400 					err: <>
+  401 					isSubdirectory: errno_t (), <./fsck_msdos.tproj/dir.c 631>
+  402 						err: <>
+  403 						malloc: <>
+  404 						perr: <>
+  405 						pread: <>
+  406 						pfatal: <>
+  407 						memcmp: <>
+  408 						free: <>
+  409 					newDosDirEntry: struct dosDirEntry (), <./fsck_msdos.tproj/dir.c 133>
+  410 					memcpy: <>
+  411 					newDirTodo: struct dirTodoNode (), <./fsck_msdos.tproj/dir.c 159>
+  412 					checksize: int (), <./fsck_msdos.tproj/dir.c 529>
+  413 						pwarn: 275
+  414 						fullpath: 366
+  415 						ask: 289
+  416 						fat_get: <>
+  417 						fat_set: int () (), <./fsck_msdos.tproj/fat.c 92>
+  418 					write: <>
+  419 				freeDirTodo: void (), <./fsck_msdos.tproj/dir.c 172>
+  420 			fat_free_unused: int (), <./fsck_msdos.tproj/fat.c 686>
+  421 				fat_get: <>
+  422 				isUsed: 362
+  423 				pwarn: 275
+  424 				ask: 289
+  425 				fat_set: int () (), <./fsck_msdos.tproj/fat.c 92>
+  426 				writefsinfo: int (), <./fsck_msdos.tproj/boot.c 309>
+  427 					lseek: <>
+  428 					read: <>
+  429 					perr: <>
+  430 					write: <>
+  431 			ask: 289
+  432 			fat_mark_clean: int (), <./fsck_msdos.tproj/fat.c 822>
+  433 				fat_get: <>
+  434 				fat_set: int () (), <./fsck_msdos.tproj/fat.c 92>
+  435 			fat_flush: int (), <./fsck_msdos.tproj/fat.c 644>
+  436 				lseek: <>
+  437 				perr: <>
+  438 				deblock_write: ssize_t (), <./fsck_msdos.tproj/fat.c 882>
+  439 					write: <>
+  440 			finishDosDirSection: void (), <./fsck_msdos.tproj/dir.c 401>
+  441 				freeDirTodo: 419
+  442 				freeDosDirEntry: void (), <./fsck_msdos.tproj/dir.c 146>
+  443 				free: <>
+  444 			fat_uninit: 307
+  445 			freeUseMap: 309

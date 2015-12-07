@@ -1,0 +1,90 @@
+    1 	main: int (), <./cracklib27/util/testnum.c 12>
+    2 		fprintf: <>
+    3 		PWOpen: PWDICT * (), <./cracklib27/cracklib/packlib.c 58>
+    4 			fprintf: <>
+    5 			memset: <>
+    6 			snprintf: <>
+    7 			fopen: <>
+    8 			perror: <>
+    9 			fclose: <>
+   10 			PWDictHeaderToNetworkOrder: void (), <./cracklib27/cracklib/packlib.c 24>
+   11 				htonl: <>
+   12 				htons: <>
+   13 			fwrite: <>
+   14 			PWDictHeaderToHostOrder: void (), <./cracklib27/cracklib/packlib.c 15>
+   15 				ntohl: <>
+   16 				ntohs: <>
+   17 			fread: <>
+   18 			PWHwmsToHostOrder: void (), <./cracklib27/cracklib/packlib.c 33>
+   19 				ntohl: <>
+   20 		perror: <>
+   21 		PW_WORDS: <>
+   22 		GetPW: char * (), <./cracklib27/cracklib/packlib.c 290>
+   23 			fseek: <>
+   24 			perror: <>
+   25 			fread: <>
+   26 			ntohl: <>
+   27 			strlcpy: <>
+   28 		printf: <>
+   29 		fgets: <>
+   30 		Chop: <>
+   31 		PutPW: int (), <./cracklib27/cracklib/packlib.c 229>
+   32 			strlcpy: <>
+   33 			htonl: <>
+   34 			ftell: <>
+   35 			fwrite: <>
+   36 			fputs: <>
+   37 			putc: <>
+   38 			memset: <>
+   39 		PWClose: int (), <./cracklib27/cracklib/packlib.c 168>
+   40 			fprintf: <>
+   41 			PutPW: 31
+   42 			fseek: <>
+   43 			PWDictHeaderToNetworkOrder: 10
+   44 			fwrite: <>
+   45 			PWDictHeaderToHostOrder: 14
+   46 			printf: <>
+   47 			PWHwmnToNetworkOrder: void (), <./cracklib27/cracklib/packlib.c 44>
+   48 				htonl: <>
+   49 			PWHwmsToHostOrder: 18
+   50 			fclose: <>
+   51 		FascistCheck: char * (), <./cracklib27/cracklib/fascist.c 753>
+   52 			strlcpy: <>
+   53 			strncmp: <>
+   54 			PWClose: 39
+   55 			PWOpen: 3
+   56 			perror: <>
+   57 			exit: <>
+   58 			FascistLook: char * (), <./cracklib27/cracklib/fascist.c 622>
+   59 				PW_WORDS: <>
+   60 				strlcpy: <>
+   61 				strlen: <>
+   62 				strchr: if (), <./cracklib27/cracklib/rules.c 167>
+   63 				Lowercase: <>
+   64 				Trim: <>
+   65 				isspace: <>
+   66 				PMatch: <>
+   67 				FascistGecos: char * (), <./cracklib27/cracklib/fascist.c 488>
+   68 					getpwuid: <>
+   69 					strlcpy: <>
+   70 					GTry: int (), <./cracklib27/cracklib/fascist.c 428>
+   71 						strlen: <>
+   72 						Mangle: char * (), <./cracklib27/cracklib/rules.c 426>
+   73 						printf: <>
+   74 						strncmp: <>
+   75 						Reverse: <>
+   76 					Lowercase: <>
+   77 					ISSKIP: <>
+   78 					printf: <>
+   79 					strlcat: <>
+   80 				getuid: <>
+   81 				Mangle: char * (), <./cracklib27/cracklib/rules.c 426>
+   82 				printf: <>
+   83 				FindPW: int32 (), <./cracklib27/cracklib/packlib.c 360>
+   84 					PW_WORDS: <>
+   85 					printf: <>
+   86 					GetPW: 22
+   87 					strcmp: <>
+   88 				Reverse: <>
+   89 		FindPW: 83
+   90 		sscanf: <>

@@ -1,0 +1,1737 @@
+    1 	main:  (), <./Helpers/pppdump/pppdump.c 54>
+    2 		reopen_log: void (), <./Helpers/pppd/main.c 1272>
+    3 			openlog: <>
+    4 			setlogmask: <>
+    5 			LOG_UPTO: <>
+    6 		pthread_self: <>
+    7 		new_phase: void (), <./Helpers/pppd/main.c 1588>
+    8 			notify: <>
+    9 		gethostname: <>
+   10 		option_error: <>
+   11 		exit: <>
+   12 		umask: <>
+   13 		getuid: <>
+   14 		sys_check_controller: int (), <./Helpers/pppd/sys-MacOSX.c 482>
+   15 			ne_is_controller: bool (), <./Helpers/pppd/sys-MacOSX.c 287>
+   16 				dispatch_once: <>
+   17 				getenv: <>
+   18 			sys_log: void (), <./Helpers/pppd/sys-MacOSX.c 4918>
+   19 				ne_is_controller: 15
+   20 				nelog_is_logging_at_level: <>
+   21 				va_start: <>
+   22 				nelogv: void (), <./Helpers/pppd/sys-MacOSX.c 188>
+   23 				va_end: <>
+   24 				vsyslog: <>
+   25 			bootstrap_look_up: <>
+   26 			pppcontroller_iscontrolled: <>
+   27 			audit_token_to_au32: <>
+   28 		slprintf: <>
+   29 		script_setenv: void (), <./Helpers/pppd/main.c 2548>
+   30 		getgroups: <>
+   31 		magic_init: void (), <./Helpers/pppd/magic.c 102>
+   32 			gettimeofday: <>
+   33 			get_host_seed: int (), <./Helpers/pppd/sys-MacOSX.c 3304>
+   34 				gethostid: <>
+   35 			getpid: <>
+   36 			srand48: <>
+   37 		tty_init: void (), <./Helpers/pppd/tty.c 479>
+   38 		sys_install_options: void (), <./Helpers/pppd/sys-MacOSX.c 475>
+   39 			add_options: <>
+   40 		options_from_file: int (), <./Helpers/pppd/options.c 479>
+   41 			seteuid: <>
+   42 			getuid: <>
+   43 			fopen: <>
+   44 			warning: <>
+   45 			option_error: <>
+   46 			strdup: <>
+   47 			getword: int (), <./Helpers/pppd/options.c 1268>
+   48 				getc: <>
+   49 				isspace: <>
+   50 				isoctal: <>
+   51 				isxdigit: <>
+   52 				toupper: <>
+   53 				ungetc: <>
+   54 				ferror: <>
+   55 				option_error: <>
+   56 				die: void (), <./Helpers/pppd/main.c 1601>
+   57 					print_link_stats: void (), <./Helpers/pppd/main.c 1642>
+   58 						info: , <./Helpers/pppd/lcp.c 2498>
+   59 					cleanup: void (), <./Helpers/pppd/main.c 1618>
+   60 						sys_cleanup: void (), <./Helpers/pppd/sys-MacOSX.c 880>
+   61 							CFRunLoopRemoveSource: <>
+   62 							CFRunLoopGetCurrent: <>
+   63 							CFRunLoopSourceInvalidate: <>
+   64 							CFRelease: <>
+   65 							cifroute: int (), <./Helpers/pppd/sys-MacOSX.c 2151>
+   66 								route_interface: int (), <./Helpers/pppd/sys-MacOSX.c 3820>
+   67 									socket: <>
+   68 									error: <>
+   69 									addr2ascii: <>
+   70 									memset: <>
+   71 									MIN: <>
+   72 									strlen: <>
+   73 									strncpy: <>
+   74 									write: <>
+   75 									sys_log: 18
+   76 									strerror: <>
+   77 									close: <>
+   78 							strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+   79 							ioctl: <>
+   80 							cifaddr: int (), <./Helpers/pppd/sys-MacOSX.c 2292>
+   81 								cifroute: 65
+   82 								strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+   83 								SET_SA_FAMILY: <>
+   84 								ALIGNED_CAST: <>
+   85 								BZERO: <>
+   86 								ioctl: <>
+   87 								warning: <>
+   88 								error: <>
+   89 								unpublish_dict: int (), <./Helpers/pppd/sys-MacOSX.c 3628>
+   90 									SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+   91 									SCDynamicStoreKeyCreate: <>
+   92 									CFSTR: <>
+   93 									SCDynamicStoreRemoveValue: <>
+   94 									CFRelease: <>
+   95 									CFDictionaryRemoveValue: <>
+   96 							cifdefaultroute: int (), <./Helpers/pppd/sys-MacOSX.c 2687>
+   97 								ppp_create_ipv6_dummy_primary: void (), <./Helpers/pppd/sys-MacOSX.c 2622>
+   98 									SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+   99 									unpublish_dict: 89
+  100 									CFDictionaryCreateMutable: <>
+  101 									CFArrayCreateMutable: <>
+  102 									CFArrayAppendValue: <>
+  103 									CFSTR: <>
+  104 									CFDictionarySetValue: <>
+  105 									CFRelease: <>
+  106 									CFNumberCreate: <>
+  107 									CFStringCreateWithFormat: <>
+  108 									update_publish_dict: int (), <./Helpers/pppd/sys-MacOSX.c 718>
+  109 										SCDynamicStoreSetValue: <>
+  110 										CFDictionarySetValue: <>
+  111 								unpublish_dictentry: int (), <./Helpers/pppd/sys-MacOSX.c 3650>
+  112 									SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+  113 									unpublish_keyentry: int (), <./Helpers/pppd/sys-MacOSX.c 3604>
+  114 										SCDynamicStoreCopyValue: <>
+  115 										CFDictionaryCreateMutableCopy: <>
+  116 										CFDictionaryRemoveValue: <>
+  117 										SCDynamicStoreSetValue: <>
+  118 										CFRelease: <>
+  119 										CFDictionaryContainsKey: <>
+  120 										CFDictionaryGetValue: <>
+  121 										update_publish_dict: 108
+  122 										warning: <>
+  123 										SCErrorString: <>
+  124 										SCError: <>
+  125 									CFRelease: <>
+  126 							cifproxyarp: int (), <./Helpers/pppd/sys-MacOSX.c 3118>
+  127 								socket: <>
+  128 								error: <>
+  129 								write: <>
+  130 								close: <>
+  131 						unlink: <>
+  132 						warning: <>
+  133 						cleanup_db: void (), <./Helpers/pppd/main.c 2737>
+  134 					notify: <>
+  135 					sys_log: 18
+  136 					exit: <>
+  137 			find_option: <>
+  138 			n_arguments: <>
+  139 			process_option: <>
+  140 			fclose: <>
+  141 			free: <>
+  142 		options_from_user: int (), <./Helpers/pppd/options.c 566>
+  143 			getpwuid: <>
+  144 			getuid: <>
+  145 			strlen: <>
+  146 			malloc: <>
+  147 			novm: void (), <./Helpers/pppd/main.c 2537>
+  148 			slprintf: <>
+  149 			options_from_file: 40
+  150 			free: <>
+  151 		parse_args: int (), <./Helpers/pppd/options.c 441>
+  152 			find_option: <>
+  153 			option_error: <>
+  154 			usage: void (), <./Helpers/chat/chat.c 530>
+  155 				fprintf: <>
+  156 				exit: <>
+  157 			n_arguments: <>
+  158 			process_option: <>
+  159 		options_from_controller: int (), <./Helpers/pppd/options.c 1827>
+  160 			getword: 47
+  161 			strcmp: <>
+  162 			find_option: <>
+  163 			option_error: <>
+  164 			bzero: <>
+  165 			n_arguments: <>
+  166 			int_option: int (), <./Helpers/pppd/options.c 1534>
+  167 				number_option: int (), <./Helpers/pppd/options.c 1511>
+  168 					strtoul: <>
+  169 					option_error: <>
+  170 			malloc: <>
+  171 			fread: <>
+  172 			process_option: <>
+  173 			free: <>
+  174 		setlogmask: <>
+  175 		LOG_UPTO: <>
+  176 		geteuid: <>
+  177 		ppp_available: int (), <./Helpers/vpnd/sys_MacOSX.c 121>
+  178 			socket: <>
+  179 			load_kext: u_long (), <./Helpers/vpnd/sys_MacOSX.c 93>
+  180 				fork: <>
+  181 				closeall: void (), <./Helpers/vpnd/sys_MacOSX.c 80>
+  182 					getdtablesize: <>
+  183 					close: <>
+  184 					open: <>
+  185 					dup: <>
+  186 				execle: <>
+  187 				exit: <>
+  188 				waitpid: <>
+  189 				closeall: void (), <./Drivers/PPPoE/PPPoE-vpn/main.c 230>
+  190 					getdtablesize: <>
+  191 					close: <>
+  192 					open: <>
+  193 					dup: <>
+  194 				closeall: void (), <./Drivers/L2TP/L2TP-vpn/main.c 495>
+  195 					getdtablesize: <>
+  196 					close: <>
+  197 					open: <>
+  198 					dup: <>
+  199 				closeall: void (), <./Drivers/PPTP/PPTP-vpn/main.c 197>
+  200 					getdtablesize: <>
+  201 					close: <>
+  202 					open: <>
+  203 					dup: <>
+  204 			close: <>
+  205 		check_options: void (), <./Helpers/pppd/options.c 1005>
+  206 		sys_check_options: int (), <./Helpers/pppd/sys-MacOSX.c 1087>
+  207 			warning: <>
+  208 		auth_check_options: void (), <./Helpers/pppd/auth.c 1384>
+  209 			strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+  210 			have_route_to: int (), <./Helpers/pppd/sys-MacOSX.c 3296>
+  211 			have_pap_secret: int (), <./Helpers/pppd/auth.c 2010>
+  212 				fopen: <>
+  213 				scan_authfile: int (), <./Helpers/pppd/auth.c 2558>
+  214 					getword: 47
+  215 					strcmp: <>
+  216 					ISWILD: <>
+  217 					strchr: <>
+  218 					strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+  219 					fopen: <>
+  220 					warning: <>
+  221 					check_access: void (), <./Helpers/pppd/auth.c 2528>
+  222 						fstat: <>
+  223 						fileno: <>
+  224 						warning: <>
+  225 					fclose: <>
+  226 					strlen: <>
+  227 					malloc: <>
+  228 					novm: void (), <./Helpers/pppd/main.c 2537>
+  229 					free_wordlist: void (), <./Helpers/pppd/auth.c 2736>
+  230 						free: <>
+  231 					free: <>
+  232 				fclose: <>
+  233 				some_ip_ok: int (), <./Helpers/pppd/auth.c 2484>
+  234 				free_wordlist: 229
+  235 			have_chap_secret: int (), <./Helpers/pppd/auth.c 2052>
+  236 				fopen: <>
+  237 				scan_authfile: 213
+  238 				fclose: <>
+  239 				some_ip_ok: int (), <./Helpers/pppd/auth.c 2484>
+  240 				free_wordlist: 229
+  241 			have_srp_secret: int (), <./Helpers/pppd/auth.c 2101>
+  242 				fopen: <>
+  243 				scan_authfile: 213
+  244 				fclose: <>
+  245 				some_ip_ok: int (), <./Helpers/pppd/auth.c 2484>
+  246 				free_wordlist: 229
+  247 			option_error: <>
+  248 			exit: <>
+  249 			auth_number: int (), <./Helpers/pppd/auth.c 2501>
+  250 				strlen: <>
+  251 				strncasecmp: <>
+  252 			warning: <>
+  253 		mp_check_options: void (), <./Helpers/pppd/multilink.c 96>
+  254 			get_default_epdisc: <>
+  255 		init_pr_log: void (), <./Helpers/pppd/utils.c 600>
+  256 			strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+  257 			strlen: <>
+  258 		print_options: void (), <./Helpers/pppd/options.c 1149>
+  259 		end_pr_log: void (), <./Helpers/pppd/utils.c 613>
+  260 			log_write: void (), <./Helpers/pppd/utils.c 739>
+  261 		die: 56
+  262 		sys_init: void (), <./Helpers/pppd/sys-MacOSX.c 739>
+  263 			openlog: <>
+  264 			setlogmask: <>
+  265 			LOG_UPTO: <>
+  266 			setsid: <>
+  267 			connect_pfppp: int (), <./Helpers/pppd/sys-MacOSX.c 1189>
+  268 				socket: <>
+  269 				error: <>
+  270 				connect: <>
+  271 				close: <>
+  272 			fatal: <>
+  273 			fcntl: <>
+  274 			warning: <>
+  275 			socket: <>
+  276 			CFUUIDCreate: <>
+  277 			CFUUIDCreateString: <>
+  278 			CFStringGetCString: <>
+  279 			strdup: <>
+  280 			CFRelease: <>
+  281 			CFStringCreateWithFormat: <>
+  282 			CFSTR: <>
+  283 			ne_is_controller: 15
+  284 			ne_copy_controller_data: void (), <./Helpers/pppd/sys-MacOSX.c 343>
+  285 				ne_get_session: ne_session_t (), <./Helpers/pppd/sys-MacOSX.c 298>
+  286 					dispatch_once: <>
+  287 					getenv: <>
+  288 					uuid_parse: <>
+  289 					ne_session_create: <>
+  290 				dispatch_semaphore_create: <>
+  291 				ne_session_get_info: <>
+  292 				dispatch_get_global_queue: <>
+  293 				xpc_retain: <>
+  294 				dispatch_semaphore_signal: <>
+  295 				dispatch_semaphore_wait: <>
+  296 				dispatch_release: <>
+  297 				xpc_get_type: <>
+  298 				xpc_dictionary_get_value: <>
+  299 				xpc_release: <>
+  300 			CopyControllerData: void (), <./Helpers/pppd/sys-MacOSX.c 545>
+  301 				bootstrap_look_up: <>
+  302 				pppcontroller_copyprivoptions: <>
+  303 				error: <>
+  304 				audit_token_to_au32: <>
+  305 				Unserialize: CFPropertyListRef (), <./Helpers/pppd/sys-MacOSX.c 528>
+  306 					CFDataCreate: <>
+  307 					CFPropertyListCreateFromXMLData: <>
+  308 					CFRelease: <>
+  309 			SCDynamicStoreCreate: <>
+  310 			SCErrorString: <>
+  311 			SCError: <>
+  312 			publish_dictnumentry: int (), <./Helpers/pppd/sys-MacOSX.c 3527>
+  313 				SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+  314 				CFNumberCreate: <>
+  315 				publish_keyentry: int (), <./Helpers/pppd/sys-MacOSX.c 3498>
+  316 					SCDynamicStoreCopyValue: <>
+  317 					CFDictionaryCreateMutableCopy: <>
+  318 					CFRelease: <>
+  319 					CFDictionaryCreateMutable: <>
+  320 					CFDictionarySetValue: <>
+  321 					SCDynamicStoreSetValue: <>
+  322 					CFDictionaryContainsKey: <>
+  323 					CFDictionaryGetValue: <>
+  324 					update_publish_dict: 108
+  325 					warning: <>
+  326 					SCErrorString: <>
+  327 					SCError: <>
+  328 				CFRelease: <>
+  329 			getpid: <>
+  330 			CopyServerData: void (), <./Helpers/pppd/sys-MacOSX.c 616>
+  331 				SCPreferencesCreate: <>
+  332 				CFSTR: <>
+  333 				fatal: <>
+  334 				SCPreferencesGetValue: <>
+  335 				CFRelease: <>
+  336 				CFDictionaryGetValue: <>
+  337 				CFGetTypeID: <>
+  338 				CFDictionaryGetTypeID: <>
+  339 				CFRetain: <>
+  340 			publish_dictstrentry: int (), <./Helpers/pppd/sys-MacOSX.c 3549>
+  341 				SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+  342 				CFStringCreateWithCString: <>
+  343 				publish_keyentry: 315
+  344 				CFRelease: <>
+  345 			CFDictionaryCreateMutable: <>
+  346 			SCDynamicStoreCreateRunLoopSource: <>
+  347 			notice: <>
+  348 			CFRunLoopAddSource: <>
+  349 			CFRunLoopGetCurrent: <>
+  350 			SCDynamicStoreSetDisconnectCallBack: <>
+  351 			republish_dict: void (), <./Helpers/pppd/sys-MacOSX.c 3573>
+  352 				dbglog: <>
+  353 				CFDictionaryGetCount: <>
+  354 				CFRelease: <>
+  355 				SCDynamicStoreCreate: <>
+  356 				CFSTR: <>
+  357 				fatal: <>
+  358 				SCErrorString: <>
+  359 				SCError: <>
+  360 				SCDynamicStoreSetMultiple: <>
+  361 				commit_publish_dict: int (), <./Helpers/pppd/sys-MacOSX.c 673>
+  362 					ne_is_controller: 15
+  363 					sys_eventnotify: void (), <./Helpers/pppd/sys-MacOSX.c 1065>
+  364 						sys_notify: void (), <./Helpers/pppd/sys-MacOSX.c 1023>
+  365 							strlen: <>
+  366 							malloc: <>
+  367 							warning: <>
+  368 							bzero: <>
+  369 							ALIGNED_CAST: <>
+  370 							bcopy: <>
+  371 							write: <>
+  372 							free: <>
+  373 					notice: <>
+  374 					SCDynamicStoreSetMultiple: <>
+  375 				warning: <>
+  376 			add_notifier: <>
+  377 			sys_phasechange: void (), <./Helpers/pppd/sys-MacOSX.c 3683>
+  378 				publish_dictnumentry: 312
+  379 				mach_absolute_time: <>
+  380 				unpublish_dictentry: 111
+  381 				sys_eventnotify: 363
+  382 				CFSTR: <>
+  383 				sys_notify: 364
+  384 			sys_exitnotify: void (), <./Helpers/pppd/sys-MacOSX.c 3791>
+  385 				unpublish_dict: 89
+  386 				sys_eventnotify: 363
+  387 				CFRelease: <>
+  388 			sys_eventnotify: 363
+  389 			sys_timeremaining: void (), <./Helpers/pppd/sys-MacOSX.c 3740>
+  390 				mach_absolute_time: <>
+  391 				MIN: <>
+  392 				publish_dictnumentry: 312
+  393 				unpublish_dictentry: 111
+  394 			sys_authpeersuccessnotify: void (), <./Helpers/pppd/sys-MacOSX.c 3731>
+  395 				publish_dictstrentry: 340
+  396 				CFSTR: <>
+  397 			sys_protocolsreadynotify: void (), <./Helpers/pppd/sys-MacOSX.c 650>
+  398 				dbglog: <>
+  399 				commit_publish_dict: 361
+  400 			sys_acspdhcpreadynotify: void (), <./Helpers/pppd/sys-MacOSX.c 659>
+  401 				dbglog: <>
+  402 				commit_publish_dict: 361
+  403 			mach_timebase_info: <>
+  404 			FD_ZERO: <>
+  405 		notify: <>
+  406 		open: <>
+  407 		fatal: <>
+  408 		dup: <>
+  409 		tdb_open: TDB_CONTEXT * (), <./Helpers/pppd/tdb.c 1134>
+  410 			memset: <>
+  411 			open: <>
+  412 			fcntl: <>
+  413 			tdb_brlock: int (), <./Helpers/pppd/tdb.c 103>
+  414 				fcntl: <>
+  415 				printf: <>
+  416 				strerror: <>
+  417 			ftruncate: <>
+  418 			read: <>
+  419 			strcmp: <>
+  420 			tdb_new_database: int (), <./Helpers/pppd/tdb.c 510>
+  421 				memset: <>
+  422 				memcpy: <>
+  423 				strlen: <>
+  424 				lseek: <>
+  425 				ftruncate: <>
+  426 				write: <>
+  427 				calloc: <>
+  428 				printf: <>
+  429 			lseek: <>
+  430 			fstat: <>
+  431 			strdup: <>
+  432 			calloc: <>
+  433 			mmap: <>
+  434 			malloc: <>
+  435 			printf: <>
+  436 			free: <>
+  437 			close: <>
+  438 			munmap: <>
+  439 		getpid: <>
+  440 		update_db_entry: void (), <./Helpers/pppd/main.c 2672>
+  441 		warning: <>
+  442 		detach: void (), <./Helpers/pppd/main.c 1223>
+  443 			pipe: <>
+  444 			fork: <>
+  445 			error: <>
+  446 			die: 56
+  447 			notify: <>
+  448 			create_pidfile: void (), <./Helpers/pppd/main.c 1286>
+  449 				slprintf: <>
+  450 				fopen: <>
+  451 				fprintf: <>
+  452 				fclose: <>
+  453 				error: <>
+  454 			create_linkpidfile: void (), <./Helpers/pppd/main.c 1303>
+  455 				script_setenv: void (), <./Helpers/pppd/main.c 2548>
+  456 				slprintf: <>
+  457 				fopen: <>
+  458 				fprintf: <>
+  459 				fclose: <>
+  460 				error: <>
+  461 			exit: <>
+  462 			setsid: <>
+  463 			chdir: <>
+  464 			dup2: <>
+  465 			slprintf: <>
+  466 			getpid: <>
+  467 			script_setenv: void (), <./Helpers/pppd/main.c 2548>
+  468 			close: <>
+  469 			complete_read: ssize_t (), <./Helpers/pppd/utils.c 934>
+  470 				read: <>
+  471 			sys_reinit: void (), <./Helpers/pppd/sys-MacOSX.c 3778>
+  472 				SCDynamicStoreCreate: <>
+  473 				CFSTR: <>
+  474 				fatal: <>
+  475 				SCErrorString: <>
+  476 				SCError: <>
+  477 				publish_dictnumentry: 312
+  478 				getpid: <>
+  479 		getlogin: <>
+  480 		getpwuid: <>
+  481 		sys_log: 18
+  482 		add_fd: void (), <./Helpers/pppd/sys-MacOSX.c 1671>
+  483 			FD_SET: <>
+  484 		setup_signals: void (), <./Helpers/pppd/main.c 1112>
+  485 			sigemptyset: <>
+  486 			sigaddset: <>
+  487 			SIGNAL: <>
+  488 			hup: void (), <./Helpers/pppd/main.c 1845>
+  489 			chld: void (), <./Helpers/pppd/main.c 1917>
+  490 			stop: void (), <./Helpers/pppd/main.c 1940>
+  491 				ppp_stop_all: <>
+  492 				CFRunLoopSourceSignal: <>
+  493 				CFRunLoopWakeUp: <>
+  494 			cont: void (), <./Helpers/pppd/main.c 1975>
+  495 			toggle_debug: void (), <./Helpers/vpnd/main.c 699>
+  496 				vpnlog: void (), <./Helpers/vpnd/main.c 481>
+  497 					LOG_PRI: <>
+  498 					time: , <./Helpers/pppd/lcp.c 2496>
+  499 					localtime: <>
+  500 					snprintf: <>
+  501 					va_start: <>
+  502 					fputs: <>
+  503 					vfprintf: <>
+  504 					fflush: <>
+  505 					va_end: <>
+  506 					vsyslog: <>
+  507 				dump_params: void (), <./Helpers/vpnd/main.c 530>
+  508 					vpnlog: 496
+  509 					inet_ntop: <>
+  510 					ntohs: <>
+  511 			open_ccp: void (), <./Helpers/pppd/main.c 2024>
+  512 			bad_signal: void (), <./Helpers/pppd/main.c 2044>
+  513 			signal: <>
+  514 		tdb_writelock: int (), <./Helpers/pppd/tdb.c 1263>
+  515 			printf: <>
+  516 			tdb_lock: int (), <./Helpers/pppd/tdb.c 136>
+  517 				printf: <>
+  518 				tdb_brlock: 413
+  519 		open_ppp_loopback: int (), <./Helpers/pppd/sys-MacOSX.c 1588>
+  520 			make_ppp_unit: int (), <./Helpers/pppd/sys-MacOSX.c 1162>
+  521 				ioctl: <>
+  522 				warning: <>
+  523 				error: <>
+  524 				slprintf: <>
+  525 				publish_dictstrentry: 340
+  526 			die: 56
+  527 			set_flags: void (), <./Helpers/pppd/sys-MacOSX.c 1011>
+  528 				SYSDEBUG: <>
+  529 				ioctl: <>
+  530 				ok_error: <>
+  531 				fatal: <>
+  532 			set_kdebugflag: int (), <./Helpers/pppd/sys-MacOSX.c 1145>
+  533 				ioctl: <>
+  534 				ok_error: <>
+  535 				error: <>
+  536 				SYSDEBUG: <>
+  537 		set_ifunit: void (), <./Helpers/pppd/main.c 1207>
+  538 			info: , <./Helpers/pppd/lcp.c 2498>
+  539 			slprintf: <>
+  540 			script_setenv: void (), <./Helpers/pppd/main.c 2548>
+  541 			create_pidfile: 448
+  542 			getpid: <>
+  543 			create_linkpidfile: 454
+  544 		tdb_writeunlock: int (), <./Helpers/pppd/tdb.c 1276>
+  545 			printf: <>
+  546 			tdb_unlock: int (), <./Helpers/pppd/tdb.c 155>
+  547 				printf: <>
+  548 				tdb_brlock: 413
+  549 		demand_conf: void (), <./Helpers/pppd/demand.c 110>
+  550 			malloc: <>
+  551 			novm: void (), <./Helpers/pppd/main.c 2537>
+  552 			netif_set_mtu: void (), <./Helpers/pppd/sys-MacOSX.c 1790>
+  553 				strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+  554 				ioctl: <>
+  555 				error: <>
+  556 				publish_dictnumentry: 312
+  557 			MIN: <>
+  558 			ppp_send_config: int (), <./Helpers/pppd/main.c 1549>
+  559 			ppp_recv_config: int (), <./Helpers/pppd/main.c 1570>
+  560 			fatal: <>
+  561 			set_filters: int (), <./Helpers/pppd/sys-MacOSX.c 1995>
+  562 				ioctl: <>
+  563 				error: <>
+  564 			die: 56
+  565 		create_linkpidfile: 454
+  566 		demand_unblock: void (), <./Helpers/pppd/demand.c 194>
+  567 			sifnpmode: int (), <./Helpers/pppd/sys-MacOSX.c 2064>
+  568 				ioctl: <>
+  569 				error: <>
+  570 		handle_events: void (), <./Helpers/pppd/main.c 1035>
+  571 			sigsetjmp: <>
+  572 			sigprocmask: <>
+  573 			wait_input: void (), <./Helpers/pppd/sys-MacOSX.c 1626>
+  574 				select: <>
+  575 				fatal: <>
+  576 				FD_ZERO: <>
+  577 			timeleft: <>
+  578 			is_ready_fd: bool (), <./Helpers/pppd/sys-MacOSX.c 1689>
+  579 				FD_ISSET: <>
+  580 			ppp_control: void (), <./Helpers/pppd/main.c 936>
+  581 				fcntl: <>
+  582 				warning: <>
+  583 				getc: <>
+  584 				ungetc: <>
+  585 				feof: <>
+  586 				die: 56
+  587 				clearerr: <>
+  588 				getword: 47
+  589 				strcmp: <>
+  590 				options_from_controller: 159
+  591 				init_pr_log: 255
+  592 				print_options: void (), <./Helpers/pppd/options.c 1149>
+  593 				end_pr_log: 259
+  594 				error: <>
+  595 				hup: void (), <./Helpers/pppd/main.c 1845>
+  596 				sys_install: void (), <./Helpers/pppd/sys-MacOSX.c 442>
+  597 					ne_is_controller: 15
+  598 					notice: <>
+  599 					SCDynamicStoreSetMultiple: <>
+  600 				sys_uninstall: void (), <./Helpers/pppd/sys-MacOSX.c 450>
+  601 					ne_is_controller: 15
+  602 					notice: <>
+  603 					CFDictionaryGetCount: <>
+  604 					CFAllocatorAllocate: <>
+  605 					CFDictionaryGetKeysAndValues: <>
+  606 					CFArrayCreate: <>
+  607 					SCDynamicStoreSetMultiple: <>
+  608 					CFRelease: <>
+  609 					CFAllocatorDeallocate: <>
+  610 			calltimeout: void (), <./Helpers/pppd/main.c 1766>
+  611 			info: , <./Helpers/pppd/lcp.c 2498>
+  612 			reap_kids: int (), <./Helpers/pppd/main.c 2396>
+  613 		get_loop_output: int (), <./Helpers/pppd/sys-MacOSX.c 1728>
+  614 			read_packet: int (), <./Helpers/pppd/sys-MacOSX.c 1697>
+  615 				read: <>
+  616 				error: <>
+  617 			loop_frame: <>
+  618 		remove_fd: void (), <./Helpers/pppd/sys-MacOSX.c 1681>
+  619 			FD_CLR: <>
+  620 		demand_block: void (), <./Helpers/pppd/demand.c 151>
+  621 			sifnpmode: 567
+  622 			get_loop_output: 613
+  623 		info: , <./Helpers/pppd/lcp.c 2498>
+  624 		sys_publish_remoteaddress: void (), <./Helpers/pppd/sys-MacOSX.c 3768>
+  625 			publish_dictstrentry: 340
+  626 		sleep: <>
+  627 		kill_my_pg: void (), <./Helpers/pppd/main.c 1824>
+  628 		notice: <>
+  629 		gettimeofday: <>
+  630 		script_unsetenv: void (), <./Helpers/pppd/main.c 2635>
+  631 		lcp_lowerup: void (), <./Helpers/pppd/lcp.c 489>
+  632 		lcp_open: void (), <./Helpers/pppd/lcp.c 424>
+  633 		get_input: void (), <./Helpers/pppd/main.c 1424>
+  634 			read_packet: 614
+  635 			notice: <>
+  636 			lcp_lowerdown: void (), <./Helpers/pppd/lcp.c 522>
+  637 			link_terminated: void (), <./Helpers/pppd/auth.c 662>
+  638 				pap_logout_hook: void (), <./Helpers/pppd/auth.c 208>
+  639 				plogout: void (), <./Helpers/pppd/auth.c 1873>
+  640 					pam_close_session: <>
+  641 					pam_end: <>
+  642 					reopen_log: 2
+  643 					strncmp: <>
+  644 					bzero: <>
+  645 					strncpy: <>
+  646 					pututxline: <>
+  647 					logwtmp: <>
+  648 				new_phase: 7
+  649 				notice: <>
+  650 			dbglog: <>
+  651 			dump_packet: void (), <./Helpers/pppd/utils.c 901>
+  652 				dbglog: <>
+  653 			snoop_recv_hook: void (), <./Helpers/pppd/main.c 169>
+  654 			GETSHORT: <>
+  655 			unexpected_network_packet: int (), <./Helpers/pppd/auth.c 804>
+  656 				EapLostSuccess: void (), <./Helpers/pppd/eap.c 288>
+  657 					PUTCHAR: <>
+  658 					PUTSHORT: <>
+  659 					EapReceiveSuccess: void (), <./Helpers/pppd/eap.c 833>
+  660 						EAPClientProcess: int (), <./Helpers/pppd/eap.c 870>
+  661 							process: <>
+  662 							error: <>
+  663 							EAPClientAction: void (), <./Helpers/pppd/eap.c 1023>
+  664 								error: <>
+  665 								MAKEHEADER: <>
+  666 								BCOPY: <>
+  667 								free: <>
+  668 								output: void (), <./Helpers/pppd/sys-MacOSX.c 1603>
+  669 									dump_packet: 651
+  670 									write: <>
+  671 									error: <>
+  672 								EAPClientInvokeUI: int (), <./Helpers/pppd/eap.c 999>
+  673 									pipe: <>
+  674 									error: <>
+  675 									pthread_create: <>
+  676 									EAPClientUIThread: void * (), <./Helpers/pppd/eap.c 974>
+  677 										pthread_detach: <>
+  678 										pthread_self: <>
+  679 										interactive_ui: <>
+  680 										write: <>
+  681 									close: <>
+  682 									EAPInput_fd: void (), <./Helpers/pppd/eap.c 943>
+  683 										is_ready_fd: 578
+  684 										read: <>
+  685 										remove_fd: 618
+  686 										close: <>
+  687 										error: <>
+  688 										EAPClientProcess: 660
+  689 									add_fd: 482
+  690 								EAPClientGetAttributes: void (), <./Helpers/pppd/eap.c 902>
+  691 									attribute: <>
+  692 									bcopy: <>
+  693 									MIN: <>
+  694 									dbglog: <>
+  695 								auth_withpeer_success: void (), <./Helpers/pppd/auth.c 1109>
+  696 									notify: <>
+  697 									BZERO: <>
+  698 									warning: <>
+  699 									network_phase: void (), <./Helpers/pppd/auth.c 826>
+  700 										notice: <>
+  701 										notify: <>
+  702 										auth_script: void (), <./Helpers/pppd/auth.c 2778>
+  703 											getpwuid: <>
+  704 											getuid: <>
+  705 											slprintf: <>
+  706 											run_program: pid_t (), <./Helpers/pppd/main.c 2280>
+  707 											auth_script_done: void (), <./Helpers/pppd/auth.c 2753>
+  708 												auth_script: 702
+  709 										new_phase: 7
+  710 										options_from_list: int (), <./Helpers/pppd/options.c 627>
+  711 											find_option: <>
+  712 											option_error: <>
+  713 											n_arguments: <>
+  714 											process_option: <>
+  715 										free_wordlist: 229
+  716 										start_networks: void (), <./Helpers/pppd/auth.c 880>
+  717 											new_phase: 7
+  718 											mp_join_bundle: int (), <./Helpers/pppd/multilink.c 123>
+  719 												notice: <>
+  720 												cfg_bundle: <>
+  721 												netif_set_mtu: 552
+  722 												make_new_bundle: <>
+  723 												set_ifunit: 537
+  724 												strlen: <>
+  725 												malloc: <>
+  726 												novm: void (), <./Helpers/pppd/main.c 2537>
+  727 												slprintf: <>
+  728 												epdisc_to_str: char * (), <./Helpers/pppd/multilink.c 322>
+  729 													GETLONG: <>
+  730 													slprintf: <>
+  731 													htonl: <>
+  732 												MIN: <>
+  733 												script_setenv: void (), <./Helpers/pppd/main.c 2548>
+  734 												tdb_writelock: 514
+  735 												tdb_fetch: TDB_DATA (), <./Helpers/pppd/tdb.c 685>
+  736 													printf: <>
+  737 													tdb_hash: unsigned (), <./Helpers/pppd/tdb.c 183>
+  738 													tdb_lock: 516
+  739 													BUCKET: <>
+  740 													tdb_find: tdb_off (), <./Helpers/pppd/tdb.c 570>
+  741 														tdb_hash_top: tdb_off (), <./Helpers/pppd/tdb.c 200>
+  742 															BUCKET: <>
+  743 														ofs_read: int (), <./Helpers/pppd/tdb.c 317>
+  744 															tdb_read: int (), <./Helpers/pppd/tdb.c 264>
+  745 																tdb_oob: int (), <./Helpers/pppd/tdb.c 212>
+  746 																	fstat: <>
+  747 																	munmap: <>
+  748 																	mmap: <>
+  749 																memcpy: <>
+  750 																lseek: <>
+  751 																read: <>
+  752 														rec_read: int (), <./Helpers/pppd/tdb.c 323>
+  753 															tdb_read: 744
+  754 															printf: <>
+  755 															tdb_oob: 745
+  756 														tdb_alloc_read: char * (), <./Helpers/pppd/tdb.c 285>
+  757 															malloc: <>
+  758 															tdb_read: 744
+  759 															free: <>
+  760 														memcmp: <>
+  761 														free: <>
+  762 													tdb_alloc_read: 756
+  763 													tdb_unlock: 546
+  764 												parse_num: int (), <./Helpers/pppd/multilink.c 236>
+  765 												process_exists: <>
+  766 												owns_unit: <>
+  767 												free: <>
+  768 												bundle_attach: <>
+  769 												tdb_writeunlock: 544
+  770 												info: , <./Helpers/pppd/lcp.c 2498>
+  771 											detach: 442
+  772 											set_filters: 561
+  773 											continue_networks: void (), <./Helpers/pppd/auth.c 919>
+  774 												lcp_close: void (), <./Helpers/pppd/lcp.c 443>
+  775 								auth_withpeer_fail: void (), <./Helpers/pppd/auth.c 1068>
+  776 									notify: <>
+  777 									BZERO: <>
+  778 									lcp_close: void (), <./Helpers/pppd/lcp.c 443>
+  779 								auth_withpeer_cancelled: void (), <./Helpers/pppd/auth.c 1093>
+  780 									BZERO: <>
+  781 									lcp_close: void (), <./Helpers/pppd/lcp.c 443>
+  782 			MAINDEBUG: <>
+  783 			protocol_name: const char * (), <./Helpers/pppd/main.c 1409>
+  784 			warning: <>
+  785 			lcp_sprotrej: void (), <./Helpers/pppd/lcp.c 684>
+  786 		ppp_hold: void (), <./Helpers/pppd/sys-MacOSX.c 1821>
+  787 			ioctl: <>
+  788 			warning: <>
+  789 		auth_hold: void (), <./Helpers/pppd/auth.c 1353>
+  790 			UNTIMEOUT: <>
+  791 			check_idle: void (), <./Helpers/pppd/auth.c 1306>
+  792 				get_idle_time: int (), <./Helpers/pppd/sys-MacOSX.c 1965>
+  793 					ioctl: <>
+  794 				idle_time_hook: int (), <./Helpers/pppd/auth.c 197>
+  795 				MIN: <>
+  796 				notice: <>
+  797 				lcp_close: void (), <./Helpers/pppd/lcp.c 443>
+  798 				TIMEOUT: <>
+  799 				check_idle: 791
+  800 			connect_time_expired: void (), <./Helpers/pppd/auth.c 1341>
+  801 				info: , <./Helpers/pppd/lcp.c 2498>
+  802 				lcp_close: void (), <./Helpers/pppd/lcp.c 443>
+  803 		ppp_cont: void (), <./Helpers/pppd/sys-MacOSX.c 1837>
+  804 			ioctl: <>
+  805 			warning: <>
+  806 		auth_cont: void (), <./Helpers/pppd/auth.c 1362>
+  807 			idle_time_hook: int (), <./Helpers/pppd/auth.c 197>
+  808 			TIMEOUT: <>
+  809 			check_idle: 791
+  810 			connect_time_expired: 800
+  811 		lcp_lowerdown: void (), <./Helpers/pppd/lcp.c 522>
+  812 		link_terminated: 637
+  813 		lcp_close: void (), <./Helpers/pppd/lcp.c 443>
+  814 		sys_runloop: void (), <./Helpers/pppd/sys-MacOSX.c 914>
+  815 			CFRunLoopStop: <>
+  816 			CFRunLoopGetCurrent: <>
+  817 			CFRunLoopRunInMode: <>
+  818 		print_link_stats: 57
+  819 		unlink: <>
+  820 		clean_check: void (), <./Helpers/pppd/sys-MacOSX.c 1389>
+  821 			still_ppp: int (), <./Helpers/pppd/sys-MacOSX.c 1136>
+  822 			ioctl: <>
+  823 			warning: <>
+  824 		sys_statusnotify: void (), <./Helpers/pppd/sys-MacOSX.c 1077>
+  825 			sys_notify: 364
+  826 		demand_discard: void (), <./Helpers/pppd/demand.c 167>
+  827 			sifnpmode: 567
+  828 			get_loop_output: 613
+  829 			free: <>
+  830 		TIMEOUT: <>
+  831 		holdoff_end: void (), <./Helpers/pppd/main.c 1328>
+  832 			new_phase: 7
+  833 		dbglog: <>
+  834 		reap_kids: int (), <./Helpers/pppd/main.c 2396>
+  835 		tzset: <>
+  836 		switch_option: char (), <./Helpers/chat/chat.c 185>
+  837 		OPTARG: <>
+  838 		copy_of: void * (), <./Helpers/chat/chat.c 312>
+  839 			dup_mem: void * (), <./Helpers/chat/chat.c 300>
+  840 				malloc: <>
+  841 				fatal: <>
+  842 				memcpy: <>
+  843 			strlen: <>
+  844 		usage: 154
+  845 		atoi: <>
+  846 		fclose: <>
+  847 		fopen: <>
+  848 		fprintf: <>
+  849 		openlog: <>
+  850 		init: void (), <./Helpers/chat/chat.c 638>
+  851 			signal: <>
+  852 			sigint: SIGTYPE (), <./Helpers/chat/chat.c 620>
+  853 				fatal: <>
+  854 			sigterm: SIGTYPE (), <./Helpers/chat/chat.c 626>
+  855 				fatal: <>
+  856 			sighup: SIGTYPE (), <./Helpers/chat/chat.c 632>
+  857 				fatal: <>
+  858 			set_tty_parameters: void (), <./Helpers/chat/chat.c 650>
+  859 				get_term_param: <>
+  860 				fatal: <>
+  861 				set_term_param: <>
+  862 			sigalrm: SIGTYPE (), <./Helpers/chat/chat.c 590>
+  863 				alarm: <>
+  864 				signal: <>
+  865 				sigalrm: 862
+  866 				fcntl: <>
+  867 				fatal: <>
+  868 			alarm: <>
+  869 		ARG: <>
+  870 		do_file: void (), <./Helpers/chat/chat.c 461>
+  871 			fopen: <>
+  872 			fatal: <>
+  873 			fgets: <>
+  874 			strchr: <>
+  875 			chat_send: <>
+  876 			chat_expect: void (), <./Helpers/chat/chat.c 957>
+  877 			fclose: <>
+  878 		chat_expect: void (), <./Helpers/chat/chat.c 957>
+  879 		chat_send: <>
+  880 		terminate: void (), <./Helpers/chat/chat.c 681>
+  881 			exit: <>
+  882 			echo_stderr: void (), <./Helpers/chat/chat.c 1383>
+  883 			strlen: <>
+  884 			alarm: <>
+  885 			get_char: int (), <./Helpers/chat/chat.c 1257>
+  886 			iscntrl: <>
+  887 			fprintf: <>
+  888 			fclose: <>
+  889 			set_term_param: <>
+  890 			fatal: <>
+  891 		strrchr: <>
+  892 		getopt: <>
+  893 		usage: void (), <./Helpers/pppstats/pppstats.c 141>
+  894 			fprintf: <>
+  895 			exit: <>
+  896 		sscanf: <>
+  897 		socket: <>
+  898 		perror: <>
+  899 		strncpy: <>
+  900 		ioctl: <>
+  901 		strioctl: int (), <./Helpers/pppstats/pppstats.c 243>
+  902 			ioctl: <>
+  903 			fprintf: <>
+  904 		intpr: void (), <./Helpers/pppstats/pppstats.c 311>
+  905 			memset: <>
+  906 			get_ppp_stats: void (), <./Helpers/pppstats/pppstats.c 262>
+  907 				memset: <>
+  908 				strncpy: <>
+  909 				ioctl: <>
+  910 				fprintf: <>
+  911 				perror: <>
+  912 				exit: <>
+  913 				strioctl: 901
+  914 			get_ppp_cstats: void (), <./Helpers/pppstats/pppstats.c 276>
+  915 				memset: <>
+  916 				strncpy: <>
+  917 				ioctl: <>
+  918 				fprintf: <>
+  919 				exit: <>
+  920 				perror: <>
+  921 				strioctl: 901
+  922 			signal: <>
+  923 			catchalarm: void (), <./Helpers/pppstats/pppstats.c 153>
+  924 			alarm: <>
+  925 			printf: <>
+  926 			putchar: <>
+  927 			KBPS: <>
+  928 			W: <>
+  929 			V: <>
+  930 			CRATE: <>
+  931 			fflush: <>
+  932 			sigemptyset: <>
+  933 			sigaddset: <>
+  934 			sigprocmask: <>
+  935 			sigsuspend: <>
+  936 		sandbox_init: <>
+  937 		syslog: <>
+  938 		sandbox_free_error: <>
+  939 		init_xpc_service: bool (), <./Helpers/snhelper/snhelper.c 73>
+  940 			xpc_track_activity: <>
+  941 			xpc_connection_create_mach_service: <>
+  942 			isa_xpc_connection: <>
+  943 			xpc_connection_set_event_handler: <>
+  944 			has_entitlement: bool (), <./Helpers/snhelper/snhelper.c 20>
+  945 				xpc_connection_copy_entitlement_value: <>
+  946 				isa_xpc_bool: <>
+  947 				xpc_bool_get_value: <>
+  948 				xpc_release: <>
+  949 			xpc_connection_cancel: <>
+  950 			syslog: <>
+  951 			xpc_retain: <>
+  952 			isa_xpc_dictionary: <>
+  953 			handle_message: void (), <./Helpers/snhelper/snhelper.c 32>
+  954 				dispatch_once: <>
+  955 				dispatch_queue_create: <>
+  956 				xpc_retain: <>
+  957 				dispatch_async: <>
+  958 				xpc_dictionary_get_uint64: <>
+  959 				handle_flow_divert_uuid_add: void (), <./Helpers/snhelper/flow_divert.c 19>
+  960 					xpc_dictionary_get_uuid: <>
+  961 					VPNAppLayerUUIDPolicyAdd: <>
+  962 					send_reply: void (), <./Helpers/snhelper/snhelper.c 122>
+  963 						xpc_dictionary_create_reply: <>
+  964 						xpc_dictionary_set_int64: <>
+  965 						xpc_dictionary_set_value: <>
+  966 						xpc_connection_send_message: <>
+  967 						xpc_release: <>
+  968 				handle_flow_divert_uuid_remove: void (), <./Helpers/snhelper/flow_divert.c 34>
+  969 					xpc_dictionary_get_uuid: <>
+  970 					VPNAppLayerUUIDPolicyRemove: <>
+  971 					send_reply: 962
+  972 				handle_flow_divert_uuid_clear: void (), <./Helpers/snhelper/flow_divert.c 49>
+  973 					send_reply: 962
+  974 					VPNAppLayerUUIDPolicyClear: <>
+  975 				handle_get_uuid_for_app: <>
+  976 				send_reply: 962
+  977 				xpc_release: <>
+  978 			isa_xpc_error: <>
+  979 			xpc_release: <>
+  980 			xpc_transaction_end: <>
+  981 			xpc_connection_resume: <>
+  982 			xpc_transaction_begin: <>
+  983 			exit: <>
+  984 		dispatch_main: <>
+  985 		malloc: <>
+  986 		bzero: <>
+  987 		close_file_descriptors: void (), <./Helpers/vpnd/main.c 307>
+  988 			getrlimit: <>
+  989 			vpnlog: 496
+  990 			close: <>
+  991 		close: <>
+  992 		process_options: int (), <./Helpers/vpnd/vpnoptions.c 74>
+  993 			getopt: <>
+  994 			usage: 154
+  995 			exit: <>
+  996 			set_terminate: void (), <./Helpers/vpnd/main.c 594>
+  997 			ppp_process_options: void (), <./Helpers/vpnd/pppoptions.c 71>
+  998 			ipsec_process_options: void (), <./Helpers/vpnd/ipsecoptions.c 82>
+  999 		vpnlog: 496
+ 1000 		redirect_std_file: void (), <./Helpers/vpnd/main.c 327>
+ 1001 			open: <>
+ 1002 			dup2: <>
+ 1003 			close: <>
+ 1004 		spawn: int (), <./Helpers/vpnd/main.c 238>
+ 1005 			get_active_servers: CFArrayRef (), <./Helpers/vpnd/vpnoptions.c 135>
+ 1006 				SCPreferencesCreate: <>
+ 1007 				CFSTR: <>
+ 1008 				CFStringGetCString: <>
+ 1009 				vpnlog: 496
+ 1010 				SCPreferencesGetValue: <>
+ 1011 				isArray: Boolean (), <./Helpers/vpnd/cf_utils.c 60>
+ 1012 					CFGetTypeID: <>
+ 1013 					CFArrayGetTypeID: <>
+ 1014 				CFArrayGetCount: <>
+ 1015 				CFArrayCreateCopy: <>
+ 1016 				CFRelease: <>
+ 1017 			CFArrayGetCount: <>
+ 1018 			CFArrayGetValueAtIndex: <>
+ 1019 			isString: Boolean (), <./Helpers/vpnd/cf_utils.c 65>
+ 1020 				CFGetTypeID: <>
+ 1021 				CFStringGetTypeID: <>
+ 1022 			CFStringGetCString: <>
+ 1023 			fork: <>
+ 1024 			execve: <>
+ 1025 			vpnlog: 496
+ 1026 			CFRelease: <>
+ 1027 		open_dynamic_store: void (), <./Helpers/vpnd/vpnoptions.c 410>
+ 1028 			SCDynamicStoreCreate: <>
+ 1029 			CFSTR: <>
+ 1030 		init_address_lists: void (), <./Helpers/vpnd/vpnplugins.c 136>
+ 1031 			TAILQ_INIT: <>
+ 1032 		process_prefs: int (), <./Helpers/vpnd/vpnoptions.c 161>
+ 1033 			SCPreferencesCreate: <>
+ 1034 			CFSTR: <>
+ 1035 			CFStringGetCString: <>
+ 1036 			snprintf: <>
+ 1037 			SCPreferencesGetValue: <>
+ 1038 			CFStringCreateWithCString: <>
+ 1039 			CFDictionaryGetValue: <>
+ 1040 			isDictionary: Boolean (), <./Helpers/vpnd/cf_utils.c 55>
+ 1041 				CFGetTypeID: <>
+ 1042 				CFDictionaryGetTypeID: <>
+ 1043 			CFRetain: <>
+ 1044 			CFRelease: <>
+ 1045 			process_server_prefs: int (), <./Helpers/vpnd/vpnoptions.c 242>
+ 1046 				get_int_option: void (), <./Helpers/vpnd/cf_utils.c 160>
+ 1047 					getNumberFromEntity: int (), <./Controller/ppp_utils.c 256>
+ 1048 						copyEntity: CFDictionaryRef (), <./Controller/ppp_utils.c 173>
+ 1049 							SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+ 1050 							SCDynamicStoreKeyCreateNetworkGlobalEntity: <>
+ 1051 							SCDynamicStoreCopyValue: <>
+ 1052 							CFRelease: <>
+ 1053 						getNumber: int (), <./Controller/ppp_utils.c 242>
+ 1054 							CFDictionaryGetValue: <>
+ 1055 							CFGetTypeID: <>
+ 1056 							CFNumberGetTypeID: <>
+ 1057 							CFNumberGetValue: <>
+ 1058 						CFRelease: <>
+ 1059 					CFDictionaryGetValue: <>
+ 1060 					CFGetTypeID: <>
+ 1061 					CFDictionaryGetTypeID: <>
+ 1062 					getNumber: 1053
+ 1063 					isDictionary: 1040
+ 1064 					isNumber: Boolean (), <./Helpers/vpnd/cf_utils.c 70>
+ 1065 						CFGetTypeID: <>
+ 1066 						CFNumberGetTypeID: <>
+ 1067 					CFNumberGetValue: <>
+ 1068 				get_str_option: void (), <./Helpers/vpnd/cf_utils.c 118>
+ 1069 					getStringFromEntity: int (), <./Controller/ppp_utils.c 271>
+ 1070 						copyEntity: 1048
+ 1071 						getString: int (), <./Controller/ppp_utils.c 208>
+ 1072 							CFDictionaryGetValue: <>
+ 1073 							CFGetTypeID: <>
+ 1074 							CFStringGetTypeID: <>
+ 1075 							CFStringGetCString: <>
+ 1076 							CFDataGetTypeID: <>
+ 1077 							CFDataGetLength: <>
+ 1078 							CFDataGetBytePtr: <>
+ 1079 							CFStringCreateWithBytes: <>
+ 1080 							CFRelease: <>
+ 1081 						CFRelease: <>
+ 1082 					strlen: <>
+ 1083 					CFDictionaryGetValue: <>
+ 1084 					CFGetTypeID: <>
+ 1085 					CFDictionaryGetTypeID: <>
+ 1086 					getString: 1071
+ 1087 					strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1088 					isDictionary: 1040
+ 1089 					isString: 1019
+ 1090 					CFStringGetCString: <>
+ 1091 				memcpy: <>
+ 1092 				htons: <>
+ 1093 				getipnodebyname: <>
+ 1094 				vpnlog: 496
+ 1095 				freehostent: <>
+ 1096 				bzero: <>
+ 1097 				get_route_interface: int (), <./Helpers/vpnd/sys_MacOSX.c 289>
+ 1098 					get_interface: int (), <./Helpers/vpnd/sys_MacOSX.c 209>
+ 1099 						getifaddrs: <>
+ 1100 						strncpy: <>
+ 1101 						strncmp: <>
+ 1102 						bcopy: <>
+ 1103 						freeifaddrs: <>
+ 1104 					get_src_address: int (), <./Helpers/vpnd/ipsec_utils.c 2403>
+ 1105 						getpid: <>
+ 1106 						aligned: <>
+ 1107 						socket: <>
+ 1108 						bzero: <>
+ 1109 						if_nametoindex: <>
+ 1110 						bcopy: <>
+ 1111 						write: <>
+ 1112 						close: <>
+ 1113 						read: <>
+ 1114 						get_rtaddrs: void (), <./Helpers/vpnd/ipsec_utils.c 2329>
+ 1115 							NEXT_SA: <>
+ 1116 						sockaddr_to_string: void (), <./Helpers/vpnd/ipsec_utils.c 2349>
+ 1117 							bzero: <>
+ 1118 							inet_ntop: <>
+ 1119 							strlen: <>
+ 1120 							if_indextoname: <>
+ 1121 							bcopy: <>
+ 1122 							snprintf: <>
+ 1123 						printf: <>
+ 1124 						ALIGNED_CAST: <>
+ 1125 						IN6_IS_ADDR_LINKLOCAL: <>
+ 1126 						ntohs: <>
+ 1127 						strncpy: <>
+ 1128 			process_interface_prefs: int (), <./Helpers/vpnd/vpnoptions.c 318>
+ 1129 				CFDictionaryGetValue: <>
+ 1130 				isDictionary: 1040
+ 1131 				vpnlog: 496
+ 1132 				isString: 1019
+ 1133 				CFStringCompare: <>
+ 1134 			ppp_process_prefs: int (), <./Helpers/vpnd/pppoptions.c 82>
+ 1135 				addparam: void (), <./Helpers/vpnd/vpnoptions.c 553>
+ 1136 					strlen: <>
+ 1137 					malloc: <>
+ 1138 					strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1139 				addstrparam: void (), <./Helpers/vpnd/vpnoptions.c 578>
+ 1140 					addparam: 1135
+ 1141 				process_interface_prefs: int (), <./Helpers/vpnd/pppoptions.c 135>
+ 1142 					CFDictionaryGetValue: <>
+ 1143 					isString: 1019
+ 1144 					vpnlog: 496
+ 1145 					CFStringGetLength: <>
+ 1146 					malloc: <>
+ 1147 					CFStringGetCString: <>
+ 1148 					strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1149 					plugin_exists: int (), <./Helpers/vpnd/vpnoptions.c 504>
+ 1150 						strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1151 						strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1152 						stat: <>
+ 1153 					free: <>
+ 1154 					addstrparam: 1139
+ 1155 					CFStringCompare: <>
+ 1156 					CFRetain: <>
+ 1157 				process_ipv4_prefs: int (), <./Helpers/vpnd/pppoptions.c 185>
+ 1158 					CFDictionaryGetValue: <>
+ 1159 					isDictionary: 1040
+ 1160 					get_array_option: int (), <./Helpers/vpnd/cf_utils.c 86>
+ 1161 						CFDictionaryGetValue: <>
+ 1162 						isDictionary: 1040
+ 1163 						isArray: 1011
+ 1164 						CFArrayGetCount: <>
+ 1165 						CFArrayGetValueAtIndex: <>
+ 1166 						isString: 1019
+ 1167 						CFStringGetCString: <>
+ 1168 						strlen: <>
+ 1169 						strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1170 					CopyDefaultIPAddress: CFStringRef (), <./Helpers/vpnd/sys_MacOSX.c 151>
+ 1171 						SCDynamicStoreCreate: <>
+ 1172 						CFSTR: <>
+ 1173 						SCDynamicStoreKeyCreateNetworkGlobalEntity: <>
+ 1174 						SCDynamicStoreCopyValue: <>
+ 1175 						CFRelease: <>
+ 1176 						isDictionary: 1040
+ 1177 						error: <>
+ 1178 						CFDictionaryGetValue: <>
+ 1179 						isString: 1019
+ 1180 						SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+ 1181 						isArray: 1011
+ 1182 						CFArrayGetValueAtIndex: <>
+ 1183 						CFRetain: <>
+ 1184 					CFStringGetCString: <>
+ 1185 					CFRelease: <>
+ 1186 					strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1187 					addparam: 1135
+ 1188 					isArray: 1011
+ 1189 					CFArrayGetCount: <>
+ 1190 					CFArrayGetValueAtIndex: <>
+ 1191 					isString: 1019
+ 1192 					validate_ip_string: char * (), <./Helpers/vpnd/vpnoptions.c 526>
+ 1193 						getipnodebyname: <>
+ 1194 						inet_ntop: <>
+ 1195 						freehostent: <>
+ 1196 					add_address: int (), <./Helpers/vpnd/vpnplugins.c 150>
+ 1197 						strlen: <>
+ 1198 						malloc: <>
+ 1199 						memcpy: <>
+ 1200 						TAILQ_INSERT_TAIL: <>
+ 1201 					vpnlog: 496
+ 1202 					add_address_range: int (), <./Helpers/vpnd/vpnplugins.c 175>
+ 1203 						add_address: 1196
+ 1204 						inet_pton: <>
+ 1205 						ntohl: <>
+ 1206 						htonl: <>
+ 1207 						inet_ntop: <>
+ 1208 					address_avail: int (), <./Helpers/vpnd/vpnplugins.c 291>
+ 1209 						TAILQ_FIRST: <>
+ 1210 				process_ipv6_prefs: int (), <./Helpers/vpnd/pppoptions.c 280>
+ 1211 					CFDictionaryGetValue: <>
+ 1212 					isDictionary: 1040
+ 1213 					addparam: 1135
+ 1214 				process_dns_prefs: int (), <./Helpers/vpnd/pppoptions.c 295>
+ 1215 					isDictionary: 1040
+ 1216 					CFDictionaryGetValue: <>
+ 1217 					isArray: 1011
+ 1218 					CFArrayGetCount: <>
+ 1219 					SCDynamicStoreKeyCreateNetworkGlobalEntity: <>
+ 1220 					SCDynamicStoreCopyValue: <>
+ 1221 					CFRelease: <>
+ 1222 					CFArrayGetValueAtIndex: <>
+ 1223 					isString: 1019
+ 1224 					CFStringGetCString: <>
+ 1225 					addstrparam: 1139
+ 1226 				process_ppp_prefs: int (), <./Helpers/vpnd/pppoptions.c 349>
+ 1227 					get_int_option: 1046
+ 1228 					addparam: 1135
+ 1229 					get_str_option: 1068
+ 1230 					snprintf: <>
+ 1231 					addstrparam: 1139
+ 1232 					addintparam: void (), <./Helpers/vpnd/vpnoptions.c 566>
+ 1233 						addparam: 1135
+ 1234 						snprintf: <>
+ 1235 					strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1236 					strlen: <>
+ 1237 					CFDictionaryGetValue: <>
+ 1238 					isDictionary: 1040
+ 1239 					isArray: 1011
+ 1240 					CFArrayGetCount: <>
+ 1241 					CFArrayGetValueAtIndex: <>
+ 1242 					CFStringCompare: <>
+ 1243 					vpnlog: 496
+ 1244 					isString: 1019
+ 1245 					get_array_option: 1160
+ 1246 					plugin_exists: 1149
+ 1247 				get_str_option: 1068
+ 1248 				CFRelease: <>
+ 1249 			ipsec_process_prefs: int (), <./Helpers/vpnd/ipsecoptions.c 126>
+ 1250 				CFRelease: <>
+ 1251 				CFDictionaryGetValue: <>
+ 1252 				vpnlog: 496
+ 1253 				CFDictionaryCreateMutableCopy: <>
+ 1254 				isString: 1019
+ 1255 				CFStringGetCString: <>
+ 1256 				inet_aton: <>
+ 1257 				pipe: <>
+ 1258 				pthread_create: <>
+ 1259 				ipsec_resolver_thread: void * (), <./Helpers/vpnd/ipsecoptions.c 89>
+ 1260 					pthread_detach: <>
+ 1261 					pthread_self: <>
+ 1262 					gethostbyname: <>
+ 1263 					open: <>
+ 1264 					read: <>
+ 1265 					close: <>
+ 1266 					bzero: <>
+ 1267 					write: <>
+ 1268 				close: <>
+ 1269 				read: <>
+ 1270 				got_terminate: int (), <./Helpers/vpnd/main.c 602>
+ 1271 				pthread_cancel: <>
+ 1272 				CFStringCreateWithCString: <>
+ 1273 				addr2ascii: <>
+ 1274 				CFDictionarySetValue: <>
+ 1275 				IPSecValidateConfiguration: int (), <./Helpers/vpnd/ipsec_utils.c 1194>
+ 1276 					racoon_configure: int (), <./Helpers/vpnd/ipsec_utils.c 1216>
+ 1277 						isDictionary: 1040
+ 1278 						FAIL: <>
+ 1279 						GetIntFromDict: Boolean (), <./Helpers/vpnd/cf_utils.c 181>
+ 1280 							CFDictionaryGetValue: <>
+ 1281 							isNumber: 1064
+ 1282 							CFNumberGetValue: <>
+ 1283 						CFSTR: <>
+ 1284 						GetStrAddrFromDict: Boolean (), <./Helpers/vpnd/cf_utils.c 212>
+ 1285 							CFDictionaryGetValue: <>
+ 1286 							isString: 1019
+ 1287 							CFStringGetCString: <>
+ 1288 							inet_addr: <>
+ 1289 						inet_addr: <>
+ 1290 						snprintf: <>
+ 1291 						remove: <>
+ 1292 						stat: <>
+ 1293 						makepath: int (), <./Helpers/vpnd/ipsec_utils.c 110>
+ 1294 							umask: <>
+ 1295 							strlen: <>
+ 1296 							malloc: <>
+ 1297 							strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1298 							mkdir: <>
+ 1299 							stat: <>
+ 1300 							free: <>
+ 1301 						umask: <>
+ 1302 						fopen: <>
+ 1303 						WRITE: <>
+ 1304 						CFDictionaryGetValue: <>
+ 1305 						configure_remote: int (), <./Helpers/vpnd/ipsec_utils.c 497>
+ 1306 							WRITE: <>
+ 1307 							CFDictionaryGetValue: <>
+ 1308 							strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1309 							isArray: 1011
+ 1310 							CFArrayGetCount: <>
+ 1311 							CFArrayGetValueAtIndex: <>
+ 1312 							isString: 1019
+ 1313 							strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1314 							CFEqual: <>
+ 1315 							FAIL: <>
+ 1316 							GetStrFromDict: int (), <./Helpers/vpnd/cf_utils.c 197>
+ 1317 								CFDictionaryGetValue: <>
+ 1318 								isString: 1019
+ 1319 								CFStringGetCString: <>
+ 1320 								strncpy: <>
+ 1321 								strlen: <>
+ 1322 							isDictionary: 1040
+ 1323 							CFSTR: <>
+ 1324 							strcmp: <>
+ 1325 							racoon_validate_cfg_str: int (), <./Helpers/vpnd/ipsec_utils.c 3435>
+ 1326 								CFStringCreateWithCString: <>
+ 1327 								CFStringGetLength: <>
+ 1328 								find_injection: int (), <./Helpers/vpnd/ipsec_utils.c 3418>
+ 1329 									CFStringFind: <>
+ 1330 									CFStringFindWithOptions: <>
+ 1331 									CFSTR: <>
+ 1332 								CFSTR: <>
+ 1333 								CFRelease: <>
+ 1334 							snprintf: <>
+ 1335 							GetStrAddrFromDict: 1284
+ 1336 							isData: Boolean (), <./Helpers/vpnd/cf_utils.c 75>
+ 1337 								CFGetTypeID: <>
+ 1338 								CFDataGetTypeID: <>
+ 1339 							fwrite: <>
+ 1340 							EncodeDataUsingBase64: int (), <./Helpers/vpnd/ipsec_utils.c 173>
+ 1341 								CFDataGetBytePtr: <>
+ 1342 								CFDataGetLength: <>
+ 1343 							TWRITE: <>
+ 1344 							CFDictionaryContainsKey: <>
+ 1345 							GetIntFromDict: 1279
+ 1346 							configure_proposal: int (), <./Helpers/vpnd/ipsec_utils.c 339>
+ 1347 								CFDictionaryGetValue: <>
+ 1348 								GetIntFromDict: 1279
+ 1349 								strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1350 								isString: 1019
+ 1351 								CFEqual: <>
+ 1352 								FAIL: <>
+ 1353 								snprintf: <>
+ 1354 								WRITE: <>
+ 1355 						isArray: 1011
+ 1356 						CFArrayGetCount: <>
+ 1357 						CFArrayGetValueAtIndex: <>
+ 1358 						isString: 1019
+ 1359 						CFEqual: <>
+ 1360 						GetStrNetFromDict: Boolean (), <./Helpers/vpnd/cf_utils.c 230>
+ 1361 							CFDictionaryGetValue: <>
+ 1362 							isString: 1019
+ 1363 							CFStringGetCString: <>
+ 1364 							inet_network: <>
+ 1365 						configure_sainfo: int (), <./Helpers/vpnd/ipsec_utils.c 995>
+ 1366 							strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1367 							CFDictionaryGetValue: <>
+ 1368 							isArray: 1011
+ 1369 							CFArrayGetCount: <>
+ 1370 							CFArrayGetValueAtIndex: <>
+ 1371 							isString: 1019
+ 1372 							strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1373 							CFEqual: <>
+ 1374 							FAIL: <>
+ 1375 							WRITE: <>
+ 1376 							GetIntFromDict: 1279
+ 1377 							snprintf: <>
+ 1378 						fclose: <>
+ 1379 						racoon_restart: int (), <./Helpers/vpnd/ipsec_utils.c 298>
+ 1380 							racoon_pid: int (), <./Helpers/vpnd/ipsec_utils.c 242>
+ 1381 								fopen: <>
+ 1382 								fscanf: <>
+ 1383 								fclose: <>
+ 1384 								bzero: <>
+ 1385 								sysctl: <>
+ 1386 								strcmp: <>
+ 1387 							kill: <>
+ 1388 			vpnlog: 496
+ 1389 		check_conflicts: int (), <./Helpers/vpnd/vpnoptions.c 430>
+ 1390 			ppp_check_conflicts: int (), <./Helpers/vpnd/pppoptions.c 690>
+ 1391 				CFStringCreateWithFormat: <>
+ 1392 				CFSTR: <>
+ 1393 				SCDynamicStoreCopyKeyList: <>
+ 1394 				CFArrayGetCount: <>
+ 1395 				CFArrayGetValueAtIndex: <>
+ 1396 				SCDynamicStoreCopyValue: <>
+ 1397 				isDictionary: 1040
+ 1398 				CFDictionaryGetValue: <>
+ 1399 				isString: 1019
+ 1400 				CFStringCompare: <>
+ 1401 				CFStringGetCString: <>
+ 1402 				vpnlog: 496
+ 1403 				CFRelease: <>
+ 1404 		kill_orphans: int (), <./Helpers/vpnd/vpnoptions.c 450>
+ 1405 			ppp_kill_orphans: int (), <./Helpers/vpnd/pppoptions.c 737>
+ 1406 				CFStringCreateWithFormat: <>
+ 1407 				CFSTR: <>
+ 1408 				SCDynamicStoreCopyKeyList: <>
+ 1409 				CFArrayGetCount: <>
+ 1410 				CFArrayGetValueAtIndex: <>
+ 1411 				SCDynamicStoreCopyValue: <>
+ 1412 				isDictionary: 1040
+ 1413 				CFDictionaryGetValue: <>
+ 1414 				isString: 1019
+ 1415 				CFStringCompare: <>
+ 1416 				CFStringCreateMutableCopy: <>
+ 1417 				CFStringFindAndReplace: <>
+ 1418 				CFRangeMake: <>
+ 1419 				CFStringGetLength: <>
+ 1420 				isNumber: 1064
+ 1421 				CFNumberGetValue: <>
+ 1422 				kill: <>
+ 1423 				CFRelease: <>
+ 1424 		create_log_file: void (), <./Helpers/vpnd/main.c 422>
+ 1425 			umask: <>
+ 1426 			fopen: <>
+ 1427 			dirname: <>
+ 1428 			vpnlog: 496
+ 1429 			makepath: 1293
+ 1430 			fcntl: <>
+ 1431 			fileno: <>
+ 1432 			fprintf: <>
+ 1433 			log_time_string: char * (), <./Helpers/vpnd/main.c 403>
+ 1434 				localtime: <>
+ 1435 				snprintf: <>
+ 1436 			time: , <./Helpers/pppd/lcp.c 2496>
+ 1437 			fflush: <>
+ 1438 		init_plugin: int (), <./Helpers/vpnd/vpnplugins.c 299>
+ 1439 			bzero: <>
+ 1440 			add_builtin_plugin: int (), <./Helpers/vpnd/vpnoptions.c 470>
+ 1441 				ipsec_add_builtin_plugin: int (), <./Helpers/vpnd/ipsecoptions.c 232>
+ 1442 					bzero: <>
+ 1443 					plugin_get_args: int (), <./Helpers/vpnd/ipsecoptions.c 247>
+ 1444 					plugin_listen: int (), <./Helpers/vpnd/ipsecoptions.c 256>
+ 1445 						IPSecApplyConfiguration: int (), <./Helpers/vpnd/ipsec_utils.c 1186>
+ 1446 							racoon_configure: 1276
+ 1447 						vpnlog: 496
+ 1448 						IPSecInstallPolicies: int (), <./Helpers/vpnd/ipsec_utils.c 1590>
+ 1449 							pfkey_open: int (), <./Drivers/L2TP/L2TP-plugin/pfkey.c 1588>
+ 1450 								socket: <>
+ 1451 								strerror: <>
+ 1452 								setsockopt: <>
+ 1453 							FAIL: <>
+ 1454 							GetStrAddrFromDict: 1284
+ 1455 							CFDictionaryGetValue: <>
+ 1456 							isArray: 1011
+ 1457 							CFArrayGetCount: <>
+ 1458 							CFArrayGetValueAtIndex: <>
+ 1459 							isDictionary: 1040
+ 1460 							isString: 1019
+ 1461 							CFEqual: <>
+ 1462 							snprintf: <>
+ 1463 							ipsec_set_policy: <>
+ 1464 							strlen: <>
+ 1465 							ALIGNED_CAST: <>
+ 1466 							GetStrNetFromDict: 1360
+ 1467 							htons: <>
+ 1468 							inet_aton: <>
+ 1469 							GetIntFromDict: 1279
+ 1470 							pfkey_send_spdadd: int (), <./Drivers/L2TP/L2TP-plugin/pfkey.c 887>
+ 1471 								pfkey_send_x4: int (), <./Drivers/L2TP/L2TP-plugin/pfkey.c 1438>
+ 1472 									PFKEY_ALIGN8: <>
+ 1473 									CALLOC: <>
+ 1474 									strerror: <>
+ 1475 									pfkey_setsadbmsg: <>
+ 1476 									getpid: <>
+ 1477 									free: <>
+ 1478 									pfkey_setsadbaddr: <>
+ 1479 									pfkey_setsadblifetime: <>
+ 1480 									memcpy: <>
+ 1481 									pfkey_send: int (), <./Drivers/L2TP/L2TP-plugin/pfkey.c 1693>
+ 1482 							getsockopt: <>
+ 1483 							pfkey_recv: struct sadb_msg (), <./Drivers/L2TP/L2TP-plugin/pfkey.c 1635>
+ 1484 							free: <>
+ 1485 							SCLog: <>
+ 1486 							CFSTR: <>
+ 1487 							pfkey_close: void (), <./Drivers/L2TP/L2TP-plugin/pfkey.c 1616>
+ 1488 								close: <>
+ 1489 						IPSecRemoveConfiguration: int (), <./Helpers/vpnd/ipsec_utils.c 1465>
+ 1490 							isDictionary: 1040
+ 1491 							FAIL: <>
+ 1492 							GetStrAddrFromDict: 1284
+ 1493 							inet_addr: <>
+ 1494 							snprintf: <>
+ 1495 							remove: <>
+ 1496 							racoon_restart: 1379
+ 1497 						IPSecSetSecurityAssociationsPreference: int (), <./Helpers/vpnd/ipsec_utils.c 2643>
+ 1498 							sysctlbyname: <>
+ 1499 					plugin_close: void (), <./Helpers/vpnd/ipsecoptions.c 288>
+ 1500 						IPSecRemoveConfiguration: 1489
+ 1501 						vpnlog: 496
+ 1502 						IPSecRemovePolicies: int (), <./Helpers/vpnd/ipsec_utils.c 2109>
+ 1503 							pfkey_open: 1449
+ 1504 							FAIL: <>
+ 1505 							GetStrAddrFromDict: 1284
+ 1506 							CFDictionaryGetValue: <>
+ 1507 							isArray: 1011
+ 1508 							CFArrayGetCount: <>
+ 1509 							CFArrayGetValueAtIndex: <>
+ 1510 							isDictionary: 1040
+ 1511 							isString: 1019
+ 1512 							CFEqual: <>
+ 1513 							snprintf: <>
+ 1514 							ipsec_set_policy: <>
+ 1515 							strlen: <>
+ 1516 							ALIGNED_CAST: <>
+ 1517 							GetStrNetFromDict: 1360
+ 1518 							htons: <>
+ 1519 							inet_aton: <>
+ 1520 							GetIntFromDict: 1279
+ 1521 							pfkey_send_spddelete: int (), <./Drivers/L2TP/L2TP-plugin/pfkey.c 995>
+ 1522 								pfkey_send_x4: 1471
+ 1523 							free: <>
+ 1524 							pfkey_close: 1487
+ 1525 						IPSecSetSecurityAssociationsPreference: 1497
+ 1526 			vpnlog: 496
+ 1527 			strlen: <>
+ 1528 			strcmp: <>
+ 1529 			strlcpy: size_t (), <./Helpers/pppd/utils.c 122>
+ 1530 			strncpy: <>
+ 1531 			strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1532 			CFURLCreateFromFileSystemRepresentation: <>
+ 1533 			CFBundleCreate: <>
+ 1534 			CFBundleCopyBuiltInPlugInsURL: <>
+ 1535 			CFURLGetFileSystemRepresentation: <>
+ 1536 			CFRelease: <>
+ 1537 			CFBundleLoadExecutable: <>
+ 1538 			CFBundleGetFunctionPointerForName: <>
+ 1539 			CFSTR: <>
+ 1540 		get_plugin_args: int (), <./Helpers/vpnd/vpnplugins.c 399>
+ 1541 			vpnlog: 496
+ 1542 		dump_params: 507
+ 1543 		setuid: <>
+ 1544 		close_dynamic_store: void (), <./Helpers/vpnd/vpnoptions.c 418>
+ 1545 			CFRelease: <>
+ 1546 		setsid: <>
+ 1547 		setup_signal_handlers: void (), <./Helpers/vpnd/main.c 670>
+ 1548 			sigemptyset: <>
+ 1549 			sig_term: void (), <./Helpers/vpnd/main.c 653>
+ 1550 				vpnlog: 496
+ 1551 			sigaction: <>
+ 1552 			sig_hup: void (), <./Helpers/vpnd/main.c 659>
+ 1553 			sig_usr1: void (), <./Helpers/vpnd/main.c 664>
+ 1554 			sig_chld: void (), <./Helpers/vpnd/main.c 648>
+ 1555 		write_pid_file: void (), <./Helpers/vpnd/main.c 373>
+ 1556 			CFStringGetCString: <>
+ 1557 			strlcat: size_t (), <./Helpers/pppd/utils.c 145>
+ 1558 			fopen: <>
+ 1559 			fprintf: <>
+ 1560 			getpid: <>
+ 1561 			fclose: <>
+ 1562 			vpnlog: 496
+ 1563 		publish_state: int (), <./Helpers/vpnd/vpnoptions.c 351>
+ 1564 			SCDynamicStoreKeyCreate: <>
+ 1565 			CFSTR: <>
+ 1566 			CFDictionaryCreateMutable: <>
+ 1567 			CFDictionarySetValue: <>
+ 1568 			SCDynamicStoreAddTemporaryValue: <>
+ 1569 			CFRelease: <>
+ 1570 			getpid: <>
+ 1571 			CFNumberCreate: <>
+ 1572 		set_forwarding: int (), <./Helpers/vpnd/main.c 294>
+ 1573 			sysctlbyname: <>
+ 1574 		accept_connections: void (), <./Helpers/vpnd/vpnplugins.c 710>
+ 1575 			FD_ZERO: <>
+ 1576 			vpnlog: 496
+ 1577 			FD_SET: <>
+ 1578 			start_load_balancing: int (), <./Helpers/vpnd/vpnplugins.c 541>
+ 1579 				vpnlog: 496
+ 1580 				socket: <>
+ 1581 				FD_SET: <>
+ 1582 				ioctl: <>
+ 1583 				bzero: <>
+ 1584 				htonl: <>
+ 1585 				bind: <>
+ 1586 				configure_failover: int (), <./Helpers/vpnd/vpnplugins.c 458>
+ 1587 					call_ipconfig: int (), <./Helpers/vpnd/vpnplugins.c 419>
+ 1588 						fork: <>
+ 1589 						getdtablesize: <>
+ 1590 						close: <>
+ 1591 						open: <>
+ 1592 						dup: <>
+ 1593 						inet_ntop: <>
+ 1594 						snprintf: <>
+ 1595 						execle: <>
+ 1596 						exit: <>
+ 1597 						waitpid: <>
+ 1598 						WIFEXITED: <>
+ 1599 						WEXITSTATUS: <>
+ 1600 						vpnlog: 496
+ 1601 					vpnlog: 496
+ 1602 				find_address: int (), <./Helpers/vpnd/sys_MacOSX.c 257>
+ 1603 					getifaddrs: <>
+ 1604 					strncmp: <>
+ 1605 					freeifaddrs: <>
+ 1606 				close: <>
+ 1607 			getabsolutetime: int (), <./Helpers/vpnd/vpnplugins.c 1131>
+ 1608 				mach_absolute_time: <>
+ 1609 				mach_timebase_info: <>
+ 1610 			got_terminate: 1270
+ 1611 			select: <>
+ 1612 			FD_ISSET: <>
+ 1613 			recv: <>
+ 1614 			TAILQ_FIRST: <>
+ 1615 			TAILQ_REMOVE: <>
+ 1616 			free: <>
+ 1617 			recvfrom: <>
+ 1618 			ntohs: <>
+ 1619 			TAILQ_FOREACH: <>
+ 1620 			malloc: <>
+ 1621 			ntohl: <>
+ 1622 			bcopy: <>
+ 1623 			TAILQ_INSERT_TAIL: <>
+ 1624 			determine_next_slave: void (), <./Helpers/vpnd/vpnplugins.c 659>
+ 1625 				TAILQ_FIRST: <>
+ 1626 				TAILQ_FOREACH: <>
+ 1627 				ntohl: <>
+ 1628 				vpnlog: 496
+ 1629 			health_check: int (), <./Helpers/vpnd/vpnplugins.c 486>
+ 1630 				FD_CLR: <>
+ 1631 				FD_SET: <>
+ 1632 				vpnlog: 496
+ 1633 				start_load_balancing: 1578
+ 1634 				stop_load_balancing: int (), <./Helpers/vpnd/vpnplugins.c 628>
+ 1635 					FD_CLR: <>
+ 1636 					close: <>
+ 1637 					unconfigure_failover: int (), <./Helpers/vpnd/vpnplugins.c 472>
+ 1638 						call_ipconfig: 1587
+ 1639 						vpnlog: 496
+ 1640 					vpnlog: 496
+ 1641 			strerror: <>
+ 1642 			fork_child: pid_t (), <./Helpers/vpnd/vpnplugins.c 1032>
+ 1643 				fork: <>
+ 1644 				syslog: <>
+ 1645 				close: <>
+ 1646 				getdtablesize: <>
+ 1647 				dup2: <>
+ 1648 				open: <>
+ 1649 			snprintf: <>
+ 1650 			execve: <>
+ 1651 			exit: <>
+ 1652 			bzero: <>
+ 1653 			htons: <>
+ 1654 			sendto: <>
+ 1655 			configure_failover: 1586
+ 1656 			got_sig_chld: int (), <./Helpers/vpnd/main.c 610>
+ 1657 			reap_children: int (), <./Helpers/vpnd/vpnplugins.c 1065>
+ 1658 				TAILQ_FIRST: <>
+ 1659 				waitpid: <>
+ 1660 				TAILQ_FOREACH: <>
+ 1661 				vpnlog: 496
+ 1662 				TAILQ_REMOVE: <>
+ 1663 				free: <>
+ 1664 				TAILQ_INSERT_TAIL: <>
+ 1665 				WIFSIGNALED: if (), <./Helpers/pppd/main.c 2413>
+ 1666 				WTERMSIG: <>
+ 1667 			got_sig_usr1: int (), <./Helpers/vpnd/main.c 634>
+ 1668 			toggle_debug: 495
+ 1669 			got_sig_hup: int (), <./Helpers/vpnd/main.c 622>
+ 1670 			stop_load_balancing: 1634
+ 1671 			update_prefs: int (), <./Helpers/vpnd/main.c 714>
+ 1672 				malloc: <>
+ 1673 				vpnlog: 496
+ 1674 				bzero: <>
+ 1675 				begin_address_update: void (), <./Helpers/vpnd/vpnplugins.c 212>
+ 1676 					TAILQ_FIRST: <>
+ 1677 					TAILQ_REMOVE: <>
+ 1678 					TAILQ_INSERT_TAIL: <>
+ 1679 				process_prefs: 1032
+ 1680 				get_plugin_args: 1540
+ 1681 				CFRelease: <>
+ 1682 				free: <>
+ 1683 				apply_address_update: void (), <./Helpers/vpnd/vpnplugins.c 248>
+ 1684 					TAILQ_FIRST: <>
+ 1685 					TAILQ_REMOVE: <>
+ 1686 					free: <>
+ 1687 					TAILQ_FOREACH: <>
+ 1688 					strcmp: <>
+ 1689 					kill: <>
+ 1690 					vpnlog: 496
+ 1691 					strerror: <>
+ 1692 					reap_children: 1657
+ 1693 				dump_params: 507
+ 1694 				cancel_address_update: void (), <./Helpers/vpnd/vpnplugins.c 227>
+ 1695 					TAILQ_FIRST: <>
+ 1696 					TAILQ_REMOVE: <>
+ 1697 					free: <>
+ 1698 					TAILQ_INSERT_TAIL: <>
+ 1699 			terminate_children: int (), <./Helpers/vpnd/vpnplugins.c 1108>
+ 1700 				TAILQ_FIRST: <>
+ 1701 				kill: <>
+ 1702 				vpnlog: 496
+ 1703 				strerror: <>
+ 1704 				TAILQ_REMOVE: <>
+ 1705 				TAILQ_INSERT_TAIL: <>
+ 1706 		close_log_file: void (), <./Helpers/vpnd/main.c 467>
+ 1707 			fprintf: <>
+ 1708 			log_time_string: 1433
+ 1709 			time: , <./Helpers/pppd/lcp.c 2496>
+ 1710 			fclose: <>
+ 1711 		delete_pid_file: void (), <./Helpers/vpnd/main.c 395>
+ 1712 			remove: <>
+ 1713 		decompress: int, <./Helpers/pppdump/pppdump.c 44>
+ 1714 		dumplog:  (), <./Helpers/pppdump/pppdump.c 106>
+ 1715 			getc: <>
+ 1716 			printf: <>
+ 1717 			exit: <>
+ 1718 			putchar: <>
+ 1719 			show_time:  (), <./Helpers/pppdump/pppdump.c 486>
+ 1720 				getc: <>
+ 1721 				printf: <>
+ 1722 				ctime: <>
+ 1723 				localtime: <>
+ 1724 		dumpppp:  (), <./Helpers/pppdump/pppdump.c 245>
+ 1725 			getc: <>
+ 1726 			printf: <>
+ 1727 			exit: <>
+ 1728 			PPP_FCS: <>
+ 1729 			decompress: int, <./Helpers/pppdump/pppdump.c 44>
+ 1730 			handle_ccp:  (), <./Helpers/pppdump/pppdump.c 430>
+ 1731 				CCP_LENGTH: <>
+ 1732 				CCP_CODE: <>
+ 1733 				CCP_OPT_LENGTH: <>
+ 1734 				decomp_alloc: <>
+ 1735 			incomp: <>
+ 1736 			putchar: <>
+ 1737 			show_time: 1719

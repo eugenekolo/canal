@@ -1,0 +1,363 @@
+    1 	main: int (), <./API/tests/minidom.c 40>
+    2 		SetErrorMode: <>
+    3 		testObjectiveCAPI: <>
+    4 		JSGlobalContextCreateInGroup: <>
+    5 		testInitializeFinalize: void (), <./API/tests/testapi.c 963>
+    6 			JSObjectMake: <>
+    7 			Derived_class: JSClassRef (), <./API/tests/testapi.c 817>
+    8 				Base_class: JSClassRef (), <./API/tests/testapi.c 738>
+    9 					UNUSED_PARAM: <>
+   10 					Base_initialize: void (), <./API/tests/testapi.c 718>
+   11 						UNUSED_PARAM: <>
+   12 						ASSERT: <>
+   13 						JSObjectGetPrivate: <>
+   14 						JSObjectSetPrivate: <>
+   15 					Base_finalize: void (), <./API/tests/testapi.c 729>
+   16 						UNUSED_PARAM: <>
+   17 						ASSERT: <>
+   18 						JSObjectGetPrivate: <>
+   19 					JSClassCreate: <>
+   20 				Derived_initialize: void (), <./API/tests/testapi.c 799>
+   21 					UNUSED_PARAM: <>
+   22 					ASSERT: <>
+   23 					JSObjectGetPrivate: <>
+   24 					JSObjectSetPrivate: <>
+   25 				Derived_finalize: void (), <./API/tests/testapi.c 809>
+   26 					ASSERT: <>
+   27 					JSObjectGetPrivate: <>
+   28 					JSObjectSetPrivate: <>
+   29 				JSClassCreate: <>
+   30 			UNUSED_PARAM: <>
+   31 			ASSERT: <>
+   32 			JSObjectGetPrivate: <>
+   33 		JSGlobalContextRelease: <>
+   34 		ASSERT: <>
+   35 		globalObject_initialize: void (), <./API/tests/testapi.c 891>
+   36 			UNUSED_PARAM: <>
+   37 			ASSERT: <>
+   38 			JSContextGetGlobalObject: <>
+   39 			JSStringCreateWithUTF8CString: <>
+   40 			JSValueToObject: <>
+   41 			JSObjectGetProperty: <>
+   42 			JSStringRelease: <>
+   43 		JSClassCreate: <>
+   44 		JSContextGetGroup: <>
+   45 		JSGlobalContextRetain: <>
+   46 		JSContextGetGlobalContext: <>
+   47 		JSReportExtraMemoryCost: <>
+   48 		JSContextGetGlobalObject: <>
+   49 		JSValueIsObject: <>
+   50 		JSValueMakeUndefined: <>
+   51 		JSValueMakeNull: <>
+   52 		JSValueMakeBoolean: <>
+   53 		JSValueMakeNumber: <>
+   54 		JSObjectMake: <>
+   55 		JSObjectSetPrototype: <>
+   56 		JSObjectSetPrivate: <>
+   57 		JSObjectGetPrivate: <>
+   58 		printf: <>
+   59 		JSStringCreateWithUTF8CString: <>
+   60 		JSValueMakeString: <>
+   61 		CFStringCreateMutableWithExternalCharactersNoCopy: <>
+   62 		JSStringCreateWithCFString: <>
+   63 		CFStringCreateWithCString: <>
+   64 		CFStringGetLength: <>
+   65 		malloc: <>
+   66 		CFStringGetCharacters: <>
+   67 		CFRangeMake: <>
+   68 		JSStringCreateWithCharacters: <>
+   69 		free: <>
+   70 		JSStringCreateWithCharactersNoCopy: <>
+   71 		JSStringGetCharactersPtr: <>
+   72 		JSStringRelease: <>
+   73 		JSValueGetType: <>
+   74 		JSValueIsBoolean: <>
+   75 		JSValueIsString: <>
+   76 		JSValueIsNumber: <>
+   77 		JSValueIsUndefined: <>
+   78 		JSValueIsNull: <>
+   79 		JSObjectCallAsFunction: <>
+   80 		JSObjectCallAsConstructor: <>
+   81 		JSObjectIsConstructor: <>
+   82 		JSObjectIsFunction: <>
+   83 		CFSTR: <>
+   84 		JSStringGetLength: <>
+   85 		PropertyCatchalls_class: JSClassRef (), <./API/tests/testapi.c 536>
+   86 			UNUSED_PARAM: <>
+   87 			JSClassCreate: <>
+   88 		JSObjectSetProperty: <>
+   89 		MyObject_class: JSClassRef (), <./API/tests/testapi.c 421>
+   90 			UNUSED_PARAM: <>
+   91 			JSClassCreate: <>
+   92 		EvilExceptionObject_class: JSClassRef (), <./API/tests/testapi.c 616>
+   93 			UNUSED_PARAM: <>
+   94 			JSClassCreate: <>
+   95 		EmptyObject_class: JSClassRef (), <./API/tests/testapi.c 650>
+   96 			UNUSED_PARAM: <>
+   97 			JSClassCreate: <>
+   98 		JSObjectMakeArray: <>
+   99 		JSObjectSetPrivateProperty: <>
+  100 		JSObjectGetPrivateProperty: <>
+  101 		JSObjectGetProperty: <>
+  102 		JSGarbageCollect: <>
+  103 		JSValueToObject: <>
+  104 		JSValueToNumber: <>
+  105 		JSValueMakeFromJSONString: <>
+  106 		assertEqualsAsBoolean: void (), <./API/tests/testapi.c 59>
+  107 			JSValueToBoolean: <>
+  108 			fprintf: <>
+  109 		JSValueCreateJSONString: <>
+  110 		JSStringIsEqualToUTF8CString: <>
+  111 		JSEvaluateScript: <>
+  112 		isnan: <>
+  113 		JSValueToStringCopy: <>
+  114 		JSValueToBoolean: <>
+  115 		JSValueIsEqual: <>
+  116 		JSObjectGetPropertyAtIndex: <>
+  117 		assertEqualsAsNumber: void (), <./API/tests/testapi.c 67>
+  118 			JSValueToNumber: <>
+  119 			isnan: <>
+  120 			fprintf: <>
+  121 		nan: <>
+  122 		assertEqualsAsCharactersPtr: void (), <./API/tests/testapi.c 105>
+  123 			JSValueToStringCopy: <>
+  124 			JSStringGetLength: <>
+  125 			JSStringGetCharactersPtr: <>
+  126 			CFStringCreateWithCString: <>
+  127 			CFStringGetLength: <>
+  128 			malloc: <>
+  129 			CFStringGetCharacters: <>
+  130 			CFRangeMake: <>
+  131 			CFRelease: <>
+  132 			memcmp: <>
+  133 			fprintf: <>
+  134 			free: <>
+  135 			JSStringRelease: <>
+  136 		assertEqualsAsUTF8String: void (), <./API/tests/testapi.c 80>
+  137 			JSValueToStringCopy: <>
+  138 			JSStringGetMaximumUTF8CStringSize: <>
+  139 			malloc: <>
+  140 			JSStringGetUTF8CString: <>
+  141 			fprintf: <>
+  142 			strlen: <>
+  143 			free: <>
+  144 			JSStringRelease: <>
+  145 		checkConstnessInJSObjectNames: void (), <./API/tests/testapi.c 1103>
+  146 		JSValueIsStrictEqual: <>
+  147 		JSStringCopyCFString: <>
+  148 		CFEqual: <>
+  149 		CFRelease: <>
+  150 		makeGlobalNumberValue: void (), <./API/tests/testapi.c 974>
+  151 			JSValueMakeNumber: <>
+  152 			JSValueProtect: <>
+  153 		JSValueProtect: <>
+  154 		JSValueUnprotect: <>
+  155 		JSCheckScriptSyntax: <>
+  156 		JSScriptCreateFromString: <>
+  157 		JSScriptCreateReferencingImmortalASCIIText: <>
+  158 		strlen: <>
+  159 		JSValueIsInstanceOfConstructor: <>
+  160 		JSObjectSetPropertyAtIndex: <>
+  161 		JSObjectMakeFunction: <>
+  162 		print: JSValueRef (), <./API/tests/minidom.c 83>
+  163 			UNUSED_PARAM: <>
+  164 			JSValueToStringCopy: <>
+  165 			JSStringGetMaximumUTF8CStringSize: <>
+  166 			JSStringGetUTF8CString: <>
+  167 			printf: <>
+  168 			JSValueMakeUndefined: <>
+  169 		JSObjectMakeFunctionWithCallback: <>
+  170 		print_callAsFunction: JSValueRef (), <./API/tests/testapi.c 843>
+  171 			UNUSED_PARAM: <>
+  172 			ASSERT: <>
+  173 			JSContextGetGlobalContext: <>
+  174 			JSValueToStringCopy: <>
+  175 			JSStringGetMaximumUTF8CStringSize: <>
+  176 			malloc: <>
+  177 			JSStringGetUTF8CString: <>
+  178 			printf: <>
+  179 			free: <>
+  180 			JSStringRelease: <>
+  181 			JSValueMakeUndefined: <>
+  182 		JSObjectMakeConstructor: <>
+  183 		myConstructor_callAsConstructor: JSObjectRef (), <./API/tests/testapi.c 864>
+  184 			UNUSED_PARAM: <>
+  185 			JSObjectMake: <>
+  186 			JSStringCreateWithUTF8CString: <>
+  187 			JSObjectSetProperty: <>
+  188 			JSStringRelease: <>
+  189 		myBadConstructor_callAsConstructor: JSObjectRef (), <./API/tests/testapi.c 879>
+  190 			UNUSED_PARAM: <>
+  191 		Base_class: 8
+  192 		Derived_class: 7
+  193 		Derived2_class: JSClassRef (), <./API/tests/testapi.c 832>
+  194 			Derived_class: 7
+  195 			JSClassCreate: <>
+  196 		JSObjectCopyPropertyNames: <>
+  197 		JSPropertyNameArrayGetCount: <>
+  198 		JSPropertyNameArrayGetNameAtIndex: <>
+  199 		JSPropertyNameArrayRelease: <>
+  200 		JSObjectMakeDate: <>
+  201 		timeZoneIsPST: bool (), <./API/tests/testapi.c 134>
+  202 			memset: <>
+  203 			strftime: <>
+  204 			strcmp: <>
+  205 		JSObjectMakeError: <>
+  206 		JSObjectMakeRegExp: <>
+  207 		JSClassRelease: <>
+  208 		JSScriptEvaluate: <>
+  209 		JSScriptRelease: <>
+  210 		createStringWithContentsOfFile: char * (), <./API/tests/testapi.c 2103>
+  211 			malloc: <>
+  212 			fopen: <>
+  213 			fprintf: <>
+  214 			free: <>
+  215 			feof: <>
+  216 			ferror: <>
+  217 			fread: <>
+  218 			realloc: <>
+  219 			ASSERT: <>
+  220 			fclose: <>
+  221 		CFShow: <>
+  222 		currentCPUTime_callAsFunction: JSValueRef (), <./API/tests/testapi.c 1128>
+  223 			UNUSED_PARAM: <>
+  224 			ASSERT: <>
+  225 			JSContextGetGlobalContext: <>
+  226 			JSValueMakeNumber: <>
+  227 			currentCPUTime: double (), <./API/tests/testapi.c 1112>
+  228 				mach_thread_self: <>
+  229 				thread_info: <>
+  230 				mach_port_deallocate: <>
+  231 				mach_task_self: <>
+  232 		JSContextGroupSetExecutionTimeLimit: <>
+  233 		shouldTerminateCallback: bool (), <./API/tests/testapi.c 1141>
+  234 			UNUSED_PARAM: <>
+  235 		currentCPUTime: 227
+  236 		cancelTerminateCallback: bool (), <./API/tests/testapi.c 1150>
+  237 			UNUSED_PARAM: <>
+  238 		extendTerminateCallback: bool (), <./API/tests/testapi.c 1159>
+  239 			UNUSED_PARAM: <>
+  240 			JSContextGetGroup: <>
+  241 			JSContextGroupSetExecutionTimeLimit: <>
+  242 			extendTerminateCallback: 238
+  243 		JSObjectHasProperty: <>
+  244 		checkForCycleInPrototypeChain: bool (), <./API/tests/testapi.c 993>
+  245 			JSGlobalContextCreate: <>
+  246 			JSObjectMake: <>
+  247 			JSObjectSetPrototype: <>
+  248 			JSValueMakeNull: <>
+  249 			ASSERT: <>
+  250 			JSValueIsNull: <>
+  251 			JSObjectGetPrototype: <>
+  252 			assertTrue: bool (), <./API/tests/testapi.c 981>
+  253 				fprintf: <>
+  254 			JSValueIsStrictEqual: <>
+  255 			JSStringCreateWithUTF8CString: <>
+  256 			JSEvaluateScript: <>
+  257 			JSStringRelease: <>
+  258 			JSGlobalContextRelease: <>
+  259 		valueToObjectExceptionTest: bool (), <./API/tests/testapi.c 1045>
+  260 			globalObject_initialize: 35
+  261 			JSClassCreate: <>
+  262 			JSGlobalContextCreateInGroup: <>
+  263 			JSContextGetGlobalObject: <>
+  264 			JSStringCreateWithUTF8CString: <>
+  265 			JSObjectMakeFunctionWithCallback: <>
+  266 			valueToObjectExceptionCallAsFunction: JSValueRef (), <./API/tests/testapi.c 1034>
+  267 				UNUSED_PARAM: <>
+  268 				JSValueMakeUndefined: <>
+  269 				JSContextGetGlobalContext: <>
+  270 				JSValueToObject: <>
+  271 			JSObjectSetProperty: <>
+  272 			JSStringRelease: <>
+  273 			JSEvaluateScript: <>
+  274 			JSClassRelease: <>
+  275 			JSGlobalContextRelease: <>
+  276 		globalContextNameTest: bool (), <./API/tests/testapi.c 1072>
+  277 			JSGlobalContextCreate: <>
+  278 			JSGlobalContextCopyName: <>
+  279 			assertTrue: 252
+  280 			JSStringCreateWithUTF8CString: <>
+  281 			JSGlobalContextSetName: <>
+  282 			JSStringIsEqual: <>
+  283 			JSStringRelease: <>
+  284 		customGlobalObjectClassTest: void (), <./API/tests/CustomGlobalObjectClassTest.c 66>
+  285 			jsClassRef: JSClassRef (), <./API/tests/CustomGlobalObjectClassTest.c 55>
+  286 				JSClassCreate: <>
+  287 			JSGlobalContextCreate: <>
+  288 			JSContextGetGlobalObject: <>
+  289 			JSObjectCopyPropertyNames: <>
+  290 			JSPropertyNameArrayGetCount: <>
+  291 			assertTrue: 252
+  292 			JSPropertyNameArrayGetNameAtIndex: <>
+  293 			JSStringGetLength: <>
+  294 			malloc: <>
+  295 			JSStringGetUTF8CString: <>
+  296 			strncmp: <>
+  297 			free: <>
+  298 			JSObjectHasProperty: <>
+  299 			JSObjectGetProperty: <>
+  300 			JSValueIsUndefined: <>
+  301 			JSValueIsObjectOfClass: <>
+  302 			JSStringCreateWithUTF8CString: <>
+  303 			JSEvaluateScript: <>
+  304 			JSStringRelease: <>
+  305 		globalObjectSetPrototypeTest: void (), <./API/tests/CustomGlobalObjectClassTest.c 103>
+  306 			JSClassCreate: <>
+  307 			JSGlobalContextCreate: <>
+  308 			JSContextGetGlobalObject: <>
+  309 			JSObjectMake: <>
+  310 			JSStringCreateWithUTF8CString: <>
+  311 			JSValueMakeString: <>
+  312 			JSObjectSetProperty: <>
+  313 			JSObjectSetPrototype: <>
+  314 			JSEvaluateScript: <>
+  315 			assertTrue: 252
+  316 			JSValueToBoolean: <>
+  317 			JSStringRelease: <>
+  318 		globalObjectPrivatePropertyTest: void (), <./API/tests/CustomGlobalObjectClassTest.c 126>
+  319 			JSClassCreate: <>
+  320 			JSGlobalContextCreate: <>
+  321 			JSContextGetGlobalObject: <>
+  322 			JSStringCreateWithUTF8CString: <>
+  323 			JSValueMakeString: <>
+  324 			assertTrue: 252
+  325 			JSObjectSetPrivateProperty: <>
+  326 			JSObjectGetPrivateProperty: <>
+  327 			JSValueIsStrictEqual: <>
+  328 			JSObjectDeletePrivateProperty: <>
+  329 			JSValueIsNull: <>
+  330 			JSStringRelease: <>
+  331 		JSNode_class: JSClassRef (), <./API/tests/JSNode.c 167>
+  332 			UNUSED_PARAM: <>
+  333 			JSNode_initialize: void (), <./API/tests/JSNode.c 149>
+  334 				UNUSED_PARAM: <>
+  335 				JSObjectGetPrivate: <>
+  336 				ASSERT: <>
+  337 				Node_ref: void (), <./API/tests/Node.c 76>
+  338 			JSNode_finalize: void (), <./API/tests/JSNode.c 159>
+  339 				JSObjectGetPrivate: <>
+  340 				ASSERT: <>
+  341 				Node_deref: void (), <./API/tests/Node.c 81>
+  342 					free: <>
+  343 			JSClassCreate: <>
+  344 		JSNode_construct: JSObjectRef (), <./API/tests/JSNode.c 189>
+  345 			UNUSED_PARAM: <>
+  346 			JSNode_new: JSObjectRef (), <./API/tests/JSNode.c 184>
+  347 				JSObjectMake: <>
+  348 				JSNode_class: 331
+  349 			Node_new: Node * (), <./API/tests/Node.c 30>
+  350 				malloc: <>
+  351 		createStringWithContentsOfFile: char * (), <./API/tests/minidom.c 99>
+  352 			malloc: <>
+  353 			fopen: <>
+  354 			fprintf: <>
+  355 			free: <>
+  356 			feof: <>
+  357 			ferror: <>
+  358 			fread: <>
+  359 			realloc: <>
+  360 			ASSERT: <>
+  361 			fclose: <>
+  362 		JSStringGetMaximumUTF8CStringSize: <>
+  363 		JSStringGetUTF8CString: <>

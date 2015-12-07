@@ -1,0 +1,80 @@
+    1 	main: int (), <./TestTools/SCSITargetProber/Tool/SCSITargetProberUnixTool.c 122>
+    2 		getopt_long: <>
+    3 		strtoull: <>
+    4 		PRINT: <>
+    5 		PrintUsage: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 1055>
+    6 			printf: <>
+    7 			fflush: <>
+    8 		exit: <>
+    9 		ReportInventory: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 761>
+   10 			GetController: io_object_t (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 742>
+   11 				IOServiceGetMatchingService: <>
+   12 				IOServiceMatching: <>
+   13 			PrintController: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 882>
+   14 				printf: <>
+   15 				IORegistryEntrySearchCFProperty: <>
+   16 				CFSTR: <>
+   17 				CFDictionaryGetValue: <>
+   18 				CFNumberGetValue: <>
+   19 				CFRelease: <>
+   20 			IORegistryEntryCreateIterator: <>
+   21 			IOIteratorNext: <>
+   22 			IOObjectConformsTo: <>
+   23 			PrintTarget: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 918>
+   24 				printf: <>
+   25 				IORegistryEntrySearchCFProperty: <>
+   26 				CFSTR: <>
+   27 				CFDictionaryGetValue: <>
+   28 				CFNumberGetValue: <>
+   29 				CFRelease: <>
+   30 			PrintLogicalUnit: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 953>
+   31 				IORegistryEntrySearchCFProperty: <>
+   32 				CFSTR: <>
+   33 				CFDictionaryGetValue: <>
+   34 				CFDataGetBytePtr: <>
+   35 				printf: <>
+   36 				CFNumberGetValue: <>
+   37 				CFRelease: <>
+   38 				CFStringGetCStringPtr: <>
+   39 			IOObjectRelease: <>
+   40 			printf: <>
+   41 		CreateTargetLUN: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 499>
+   42 			PRINT: <>
+   43 			GetController: 10
+   44 			IOServiceOpen: <>
+   45 			mach_task_self: <>
+   46 			bzero: <>
+   47 			snprintf: <>
+   48 			bcopy: <>
+   49 			open: <>
+   50 			exit: <>
+   51 			read: <>
+   52 			close: <>
+   53 			IOConnectCallStructMethod: <>
+   54 			IOServiceClose: <>
+   55 			IOObjectRelease: <>
+   56 		DestroyTarget: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 689>
+   57 			PRINT: <>
+   58 			GetController: 10
+   59 			IOServiceOpen: <>
+   60 			mach_task_self: <>
+   61 			IOConnectCallScalarMethod: <>
+   62 			IOServiceClose: <>
+   63 			IOObjectRelease: <>
+   64 		DestroyTargetLUN: void (), <./TestTools/AppleSCSIHBAEmulator/emulator.c 634>
+   65 			PRINT: <>
+   66 			GetController: 10
+   67 			IOServiceOpen: <>
+   68 			mach_task_self: <>
+   69 			IOConnectCallScalarMethod: <>
+   70 			IOServiceClose: <>
+   71 			IOObjectRelease: <>
+   72 		ParseArguments: IOReturn (), <./TestTools/SCSITargetProber/Tool/SCSITargetProberUnixTool.c 154>
+   73 			getopt: <>
+   74 			strtoull: <>
+   75 		require_action: <>
+   76 		PrintUsage: void (), <./TestTools/SCSITargetProber/Tool/SCSITargetProberUnixTool.c 193>
+   77 			printf: <>
+   78 		printf: <>
+   79 		ReprobeDomainTarget: <>
+   80 		mach_error_string: <>

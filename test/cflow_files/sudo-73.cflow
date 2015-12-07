@@ -1,0 +1,1006 @@
+    1 	main: int (), <./src/sudo.c 175>
+    2 		printf: <>
+    3 		exit: <>
+    4 		getopt: <>
+    5 		usage: void (), <./src/parse_args.c 329>
+    6 			fprintf: <>
+    7 			getprogname: const char * (), <./src/getprogname.c 31>
+    8 				strrchr: <>
+    9 			exit: <>
+   10 		setgrfile: <>
+   11 		setpwfile: <>
+   12 		sudo_setpwent: void (), <./src/pwutil.c 417>
+   13 		sudo_setgrent: void (), <./src/pwutil.c 670>
+   14 		sudo_getpwnam: <>
+   15 		errorx: , <./src/error.c 56>
+   16 		strrchr: <>
+   17 		gethostname: <>
+   18 		error: int, <./src/redblack.c 294>
+   19 		strchr: <>
+   20 		estrdup: <>
+   21 		strlen: <>
+   22 		emalloc: void * (), <./src/alloc.c 74>
+   23 			errorx: , <./src/error.c 56>
+   24 			malloc: <>
+   25 		strlcpy: size_t (), <./src/strlcpy.c 31>
+   26 		init_defaults: void (), <./src/defaults.c 363>
+   27 			efree: void (), <./src/alloc.c 273>
+   28 			list_op: void (), <./src/defaults.c 849>
+   29 				efree: void (), <./src/alloc.c 273>
+   30 				strncmp: <>
+   31 				ecalloc: void * (), <./src/alloc.c 115>
+   32 					errorx: , <./src/error.c 56>
+   33 					malloc: <>
+   34 					memset: <>
+   35 				emalloc: 22
+   36 				memcpy: <>
+   37 			zero_bytes: <>
+   38 			estrdup: <>
+   39 			store_syslogfac: int (), <./src/defaults.c 754>
+   40 				strcmp: if (), <./src/ldap.c 840>
+   41 					DPRINTF: <>
+   42 			store_syslogpri: int (), <./src/defaults.c 796>
+   43 				strcmp: 40
+   44 			store_tuple: int (), <./src/defaults.c 674>
+   45 				strcmp: 40
+   46 			init_envtables: void (), <./src/visudo.c 636>
+   47 		load_interfaces: void (), <./src/interfaces.c 185>
+   48 			getifaddrs: <>
+   49 			ISSET: if (), <./src/sudo.c 920>
+   50 				ISSET: 49
+   51 				sudo_setenv: <>
+   52 			emalloc2: void * (), <./src/alloc.c 92>
+   53 				errorx: , <./src/error.c 56>
+   54 				malloc: <>
+   55 			memcpy: <>
+   56 			freeifaddrs: <>
+   57 			efree: void (), <./src/alloc.c 273>
+   58 			socket: <>
+   59 			error: int, <./src/redblack.c 294>
+   60 			erealloc: void * (), <./src/alloc.c 140>
+   61 				errorx: , <./src/error.c 56>
+   62 				realloc: <>
+   63 				malloc: <>
+   64 			STRSET: <>
+   65 			ioctl: <>
+   66 			close: <>
+   67 			strncmp: <>
+   68 			zero_bytes: <>
+   69 			strncpy: <>
+   70 			IN_CLASSC: <>
+   71 			htonl: <>
+   72 			IN_CLASSB: <>
+   73 			erealloc3: void * (), <./src/alloc.c 161>
+   74 				errorx: , <./src/error.c 56>
+   75 				realloc: <>
+   76 				malloc: <>
+   77 			puts: <>
+   78 			printf: <>
+   79 			inet_ntoa: <>
+   80 			inet_ntop: <>
+   81 		init_parser: <>
+   82 		yyparse: <>
+   83 		fputs: <>
+   84 		update_defaults: int (), <./src/defaults.c 513>
+   85 			tq_foreach_fwd:  (), <./src/sudo_nss.c 322>
+   86 				strcmp: 40
+   87 			ISSET: 49
+   88 			set_default: int (), <./src/defaults.c 218>
+   89 				strcmp: 40
+   90 				warningx: , <./src/error.c 97>
+   91 				store_syslogfac: 39
+   92 				store_syslogpri: 42
+   93 				ISSET: 49
+   94 				store_str: int (), <./src/defaults.c 706>
+   95 					efree: void (), <./src/alloc.c 273>
+   96 					estrdup: <>
+   97 				store_int: int (), <./src/defaults.c 605>
+   98 					strtol: <>
+   99 				store_uint: int (), <./src/defaults.c 628>
+  100 					strtol: <>
+  101 				store_float: int (), <./src/defaults.c 651>
+  102 					strtod: <>
+  103 				store_mode: int (), <./src/defaults.c 827>
+  104 					strtol: <>
+  105 				store_list: int (), <./src/defaults.c 723>
+  106 					list_op: 28
+  107 					isblank: int (), <./src/isblank.c 25>
+  108 				store_tuple: 44
+  109 			userlist_matches: int (), <./src/match.c 155>
+  110 			runaslist_matches: int (), <./src/match.c 255>
+  111 			hostlist_matches: int (), <./src/match.c 309>
+  112 			cmndlist_matches: int (), <./src/match.c 336>
+  113 		puts: <>
+  114 		set_runasgr: void (), <./src/testsudoers.c 314>
+  115 			sudo_getgrgid: <>
+  116 			atoi: <>
+  117 			sudo_fakegrnam: <>
+  118 			sudo_getgrnam: <>
+  119 			errorx: , <./src/error.c 56>
+  120 		set_runaspw: void (), <./src/testsudoers.c 301>
+  121 			sudo_getpwuid: <>
+  122 			atoi: <>
+  123 			sudo_fakepwnam: <>
+  124 			sudo_getpwnam: <>
+  125 			errorx: , <./src/error.c 56>
+  126 		putchar: <>
+  127 		dump_sudoers: void (), <./src/testsudoers.c 556>
+  128 			print_defaults: void (), <./src/testsudoers.c 403>
+  129 				tq_foreach_fwd: 85
+  130 				fputs: <>
+  131 				putchar: <>
+  132 				tq_first: <>
+  133 				print_member: void (), <./src/testsudoers.c 384>
+  134 					putchar: <>
+  135 					fputs: <>
+  136 					printf: <>
+  137 				printf: <>
+  138 			putchar: <>
+  139 			alias_apply: void (), <./src/alias.c 139>
+  140 			print_alias: int (), <./src/testsudoers.c 438>
+  141 				printf: <>
+  142 				tq_foreach_fwd: 85
+  143 				tq_first: <>
+  144 				fputs: <>
+  145 				putchar: <>
+  146 			print_userspecs: void (), <./src/testsudoers.c 538>
+  147 				tq_foreach_fwd: 85
+  148 				tq_first: <>
+  149 				fputs: <>
+  150 				print_member: 133
+  151 				putchar: <>
+  152 				print_privilege: void (), <./src/testsudoers.c 477>
+  153 					fputs: <>
+  154 					tq_foreach_fwd: 85
+  155 					tq_first: <>
+  156 					print_member: 133
+  157 					tq_empty: while (), <./src/exec.c 664>
+  158 					printf: <>
+  159 					memcpy: <>
+  160 		tq_foreach_rev: <>
+  161 		userlist_matches: 109
+  162 		print_privilege: 152
+  163 		hostlist_matches: 111
+  164 		runaslist_matches: 110
+  165 		cmnd_matches: int (), <./src/match.c 348>
+  166 			alias_find: struct alias * (), <./src/alias.c 81>
+  167 			command_matches: if (), <./src/ldap.c 863>
+  168 				strcmp: 40
+  169 				command_args_match: int (), <./src/match.c 377>
+  170 					strcmp: 40
+  171 					fnmatch: <>
+  172 				efree: void (), <./src/alloc.c 273>
+  173 				estrdup: <>
+  174 				has_meta: <>
+  175 				command_matches_fnmatch: int (), <./src/match.c 445>
+  176 					fnmatch: <>
+  177 					command_args_match: 169
+  178 					free: <>
+  179 					estrdup: <>
+  180 				command_matches_glob: int (), <./src/match.c 468>
+  181 					strlen: <>
+  182 					strrchr: <>
+  183 					has_meta: <>
+  184 					strcmp: 40
+  185 					glob: <>
+  186 					globfree: <>
+  187 					command_matches_dir: int (), <./src/match.c 584>
+  188 						opendir: <>
+  189 						strlcpy: size_t (), <./src/strlcpy.c 31>
+  190 						closedir: <>
+  191 						readdir: <>
+  192 						strlcat: size_t (), <./src/strlcat.c 34>
+  193 						strcmp: 40
+  194 						stat: sizeof (), <./src/secure_path.c 65>
+  195 						efree: void (), <./src/alloc.c 273>
+  196 						estrdup: <>
+  197 					stat: sizeof (), <./src/secure_path.c 65>
+  198 					efree: void (), <./src/alloc.c 273>
+  199 					estrdup: <>
+  200 					command_args_match: 169
+  201 				command_matches_normal: int (), <./src/match.c 540>
+  202 					strlen: <>
+  203 					command_matches_dir: 187
+  204 					strrchr: <>
+  205 					strcmp: 40
+  206 					stat: sizeof (), <./src/secure_path.c 65>
+  207 					command_args_match: 169
+  208 					efree: void (), <./src/alloc.c 273>
+  209 					estrdup: <>
+  210 		getprogname: 7
+  211 		help: void (), <./src/parse_args.c 378>
+  212 		sudo_getpwuid: <>
+  213 		getuid: <>
+  214 		get_hostname: void (), <./src/visudo.c 1014>
+  215 		check_syntax: int (), <./src/visudo.c 758>
+  216 			strcmp: 40
+  217 			fopen: <>
+  218 			warning: , <./src/error.c 78>
+  219 			exit: <>
+  220 			init_parser: <>
+  221 			yyparse: <>
+  222 			warningx: , <./src/error.c 97>
+  223 			check_defaults: int (), <./src/defaults.c 560>
+  224 				tq_foreach_fwd: 85
+  225 				ISSET: 49
+  226 				strcmp: 40
+  227 				warningx: , <./src/error.c 97>
+  228 			check_aliases: int (), <./src/visudo.c 1101>
+  229 				rbcreate: struct rbtree (), <./src/redblack.c 89>
+  230 				tq_foreach_fwd: 85
+  231 				check_alias: int (), <./src/visudo.c 1057>
+  232 					alias_find: struct alias * (), <./src/alias.c 81>
+  233 					tq_foreach_fwd: 85
+  234 					check_alias: 231
+  235 					warningx: , <./src/error.c 97>
+  236 				alias_remove_recursive: int (), <./src/visudo.c 1035>
+  237 					alias_remove: struct alias (), <./src/alias.c 185>
+  238 					tq_foreach_fwd: 85
+  239 					alias_remove_recursive: 236
+  240 					rbinsert: if (), <./src/alias.c 127>
+  241 				rbdestroy: <>
+  242 				alias_free: void (), <./src/alias.c 159>
+  243 					efree: void (), <./src/alloc.c 273>
+  244 				no_aliases: int (), <./src/alias.c 150>
+  245 				alias_apply: void (), <./src/alias.c 139>
+  246 				print_unused: int (), <./src/visudo.c 1214>
+  247 					warningx: , <./src/error.c 97>
+  248 			printf: <>
+  249 			tq_foreach_fwd: 85
+  250 			fstat: <>
+  251 			fileno: <>
+  252 			stat: sizeof (), <./src/secure_path.c 65>
+  253 			fprintf: <>
+  254 		open_sudoers: <>
+  255 		get_editor: char * (), <./src/visudo.c 890>
+  256 		setup_signals: void (), <./src/visudo.c 705>
+  257 			zero_bytes: <>
+  258 			sigemptyset: <>
+  259 			quit: RETSIGTYPE (), <./src/visudo.c 1251>
+  260 				cleanup: void (), <./src/visudo.c 1232>
+  261 					sudo_endpwent: void (), <./src/pwutil.c 440>
+  262 						endpwent: void (), <./src/tsgetgrpw.c 89>
+  263 							fclose: <>
+  264 						sudo_freepwcache: void (), <./src/pwutil.c 427>
+  265 							rbdestroy: <>
+  266 							pw_delref_item: void (), <./src/pwutil.c 230>
+  267 					sudo_endgrent: void (), <./src/pwutil.c 693>
+  268 						endgrent: void (), <./src/tsgetgrpw.c 212>
+  269 							fclose: <>
+  270 						sudo_freegrcache: void (), <./src/pwutil.c 680>
+  271 							rbdestroy: <>
+  272 							gr_delref_item: void (), <./src/pwutil.c 533>
+  273 					tq_foreach_fwd: 85
+  274 					unlink: <>
+  275 				ignore_result: <>
+  276 				write: <>
+  277 				getprogname: 7
+  278 				strlen: <>
+  279 			sigaction: int (), <./src/sigaction.c 31>
+  280 		tq_foreach_fwd: 85
+  281 		tq_first: <>
+  282 		getchar: <>
+  283 		edit_sudoers: int (), <./src/visudo.c 275>
+  284 			fstat: <>
+  285 			stat: sizeof (), <./src/secure_path.c 65>
+  286 			error: int, <./src/redblack.c 294>
+  287 			mtim_get: <>
+  288 			easprintf: <>
+  289 			open: <>
+  290 			lseek: <>
+  291 			read: <>
+  292 			write: <>
+  293 			close: <>
+  294 			touch: int (), <./src/fileops.c 60>
+  295 				futimes: int (), <./src/utimes.c 59>
+  296 				utimes: <>
+  297 			strrchr: <>
+  298 			strlen: <>
+  299 			strcmp: 40
+  300 			isblank: int (), <./src/isblank.c 25>
+  301 			emalloc2: 52
+  302 			snprintf: <>
+  303 			strtok: <>
+  304 			gettime: int (), <./src/gettime.c 34>
+  305 				gettimeofday: <>
+  306 			run_command: int (), <./src/visudo.c 723>
+  307 				fork: <>
+  308 				error: int, <./src/redblack.c 294>
+  309 				sudo_endpwent: 261
+  310 				sudo_endgrent: 267
+  311 				closefrom: void (), <./src/closefrom.c 104>
+  312 					fcntl: <>
+  313 					closefrom_fallback: void (), <./src/closefrom.c 63>
+  314 						sysconf: <>
+  315 						getdtablesize: <>
+  316 						fcntl: <>
+  317 						close: <>
+  318 					opendir: <>
+  319 					readdir: <>
+  320 					strtol: <>
+  321 					dirfd: <>
+  322 					close: <>
+  323 					closedir: <>
+  324 				execv: <>
+  325 				warning: , <./src/error.c 78>
+  326 				sudo_waitpid: <>
+  327 				wait: <>
+  328 				WIFEXITED: <>
+  329 				WEXITSTATUS: <>
+  330 			warningx: , <./src/error.c 97>
+  331 			timevalcmp: <>
+  332 			timevalsub: <>
+  333 			timevalisset: <>
+  334 		reparse_sudoers: int (), <./src/visudo.c 446>
+  335 			tq_empty: while (), <./src/exec.c 664>
+  336 			tq_first: <>
+  337 			tq_last: <>
+  338 			fopen: <>
+  339 			errorx: , <./src/error.c 56>
+  340 			init_defaults: 26
+  341 			init_parser: <>
+  342 			yyrestart: <>
+  343 			yyparse: <>
+  344 			warningx: , <./src/error.c 97>
+  345 			fclose: <>
+  346 			check_defaults: 223
+  347 			check_aliases: 228
+  348 			whatnow: char (), <./src/visudo.c 674>
+  349 			cleanup: 260
+  350 			exit: <>
+  351 			tq_foreach_fwd: 85
+  352 			strcmp: 40
+  353 			edit_sudoers: 283
+  354 			printf: <>
+  355 			getchar: <>
+  356 		install_sudoers: int (), <./src/visudo.c 531>
+  357 			unlink: <>
+  358 			fstat: <>
+  359 			ignore_result: <>
+  360 			chown: <>
+  361 			chmod: <>
+  362 			stat: sizeof (), <./src/secure_path.c 65>
+  363 			error: int, <./src/redblack.c 294>
+  364 			warning: , <./src/error.c 78>
+  365 			rename: <>
+  366 			efree: void (), <./src/alloc.c 273>
+  367 			warningx: , <./src/error.c 97>
+  368 			strrchr: <>
+  369 			run_command: 306
+  370 		errx: <>
+  371 		strdup: <>
+  372 		execv: <>
+  373 		warn: <>
+  374 		setlocale: <>
+  375 		localeconv: <>
+  376 		strtok: <>
+  377 		strcmp: 40
+  378 		SET: <>
+  379 		strtod: <>
+  380 		list_sessions: int (), <./src/sudoreplay.c 1036>
+  381 		VALID_ID: <>
+  382 		snprintf: <>
+  383 		strerror: char * (), <./src/strerror.c 34>
+  384 		ISSET: 49
+  385 		open_io_fd: int (), <./src/sudoreplay.c 513>
+  386 		strlcat: size_t (), <./src/strlcat.c 34>
+  387 		parse_logfile: struct log_info (), <./src/sudoreplay.c 790>
+  388 		get_ttysize: void (), <./src/ttysize.c 74>
+  389 			get_ttysize_ioctl: int (), <./src/ttysize.c 65>
+  390 				ioctl: <>
+  391 			getenv: <>
+  392 			atoi: <>
+  393 		free_log_info: <>
+  394 		fflush: <>
+  395 		memset: <>
+  396 		sigemptyset: <>
+  397 		cleanup: 260
+  398 		sigaction: int (), <./src/sigaction.c 31>
+  399 		isatty: <>
+  400 		fcntl: <>
+  401 		term_raw: int (), <./src/term.c 218>
+  402 			tcgetattr: <>
+  403 			memcpy: <>
+  404 			CLR: <>
+  405 			SET: <>
+  406 			tcsetattr: <>
+  407 			ioctl: <>
+  408 		ecalloc: 31
+  409 		gzgets: <>
+  410 		fgets: <>
+  411 		parse_timing: <>
+  412 		check_input: void (), <./src/sudoreplay.c 1067>
+  413 		delay: void (), <./src/sudoreplay.c 487>
+  414 		gzread: <>
+  415 		fread: <>
+  416 		memchr: <>
+  417 		erealloc3: 73
+  418 		atomic_writev: size_t (), <./src/sudoreplay.c 536>
+  419 		term_restore: int (), <./src/term.c 108>
+  420 			tcsetattr: <>
+  421 		memcpy: <>
+  422 		nanosleep: <>
+  423 		gzopen: <>
+  424 		fopen: <>
+  425 		writev: <>
+  426 		FD_ZERO: <>
+  427 		FD_SET: <>
+  428 		select: <>
+  429 		strncmp: <>
+  430 		parse_expr: <>
+  431 		regcomp: <>
+  432 		get_date: <>
+  433 		match_expr: <>
+  434 		regexec: <>
+  435 		regerror: <>
+  436 		strstr: <>
+  437 		warning: , <./src/error.c 78>
+  438 		getline: ssize_t (), <./src/getline.c 71>
+  439 			fgetln: <>
+  440 			erealloc: 60
+  441 			memcpy: <>
+  442 			fgets: <>
+  443 			strlen: <>
+  444 			feof: <>
+  445 		strcspn: <>
+  446 		atoi: <>
+  447 		estrndup: <>
+  448 		fclose: <>
+  449 		efree: void (), <./src/alloc.c 273>
+  450 		IS_IDLOG: <>
+  451 		get_timestr: char * (), <./src/timestr.c 40>
+  452 			localtime: <>
+  453 			strftime: <>
+  454 			ctime: <>
+  455 		opendir: <>
+  456 		emalloc2: 52
+  457 		readdir: <>
+  458 		closedir: <>
+  459 		qsort: <>
+  460 		lstat: <>
+  461 		S_ISREG: <>
+  462 		list_session: int (), <./src/sudoreplay.c 893>
+  463 		S_ISDIR: if (), <./src/ttyname.c 250>
+  464 		find_sessions: <>
+  465 		howmany: <>
+  466 		read: <>
+  467 		free: <>
+  468 		strtoul: <>
+  469 		isspace: while (), <./src/env.c 1047>
+  470 		strtol: <>
+  471 		isdigit: <>
+  472 		fprintf: <>
+  473 		usage: void (), <./src/sudoreplay.c 1174>
+  474 		kill: <>
+  475 		getpid: <>
+  476 		yylex: <>
+  477 		set_auth_parameters: <>
+  478 		initprivs: <>
+  479 		sudo_check_suid: <>
+  480 		save_signals: void (), <./src/exec.c 218>
+  481 			sigaction: int (), <./src/sigaction.c 31>
+  482 		zero_bytes: <>
+  483 		env_init: void (), <./src/env.c 241>
+  484 			emalloc2: 52
+  485 			memset: <>
+  486 			memcpy: <>
+  487 		initial_setup: void (), <./src/sudo.c 1112>
+  488 		parse_args: int (), <./src/parse_args.c 79>
+  489 			strcmp: 40
+  490 			getprogname: 7
+  491 			getopt: <>
+  492 			SET: <>
+  493 			atoi: <>
+  494 			warningx: , <./src/error.c 97>
+  495 			usage: 5
+  496 			usage_excl: void (), <./src/parse_args.c 370>
+  497 			sudo_getpwnam: <>
+  498 			errorx: , <./src/error.c 56>
+  499 			emalloc: 22
+  500 			ISSET: 49
+  501 			CLR: <>
+  502 		show_version: void (), <./src/sudo.c 1344>
+  503 		list_options: void (), <./src/defaults.c 185>
+  504 			puts: <>
+  505 			printf: <>
+  506 			strrchr: <>
+  507 		init_vars: void (), <./src/sudo.c 601>
+  508 			strlen: <>
+  509 			audit_failure: <>
+  510 			errorx: , <./src/error.c 56>
+  511 			tzset: <>
+  512 			strlcpy: size_t (), <./src/strlcpy.c 31>
+  513 			gethostname: <>
+  514 			estrdup: <>
+  515 			strchr: <>
+  516 			get_process_ttyname: char * (), <./src/ttyname.c 456>
+  517 				snprintf: <>
+  518 				getppid: <>
+  519 				getpid: <>
+  520 				open: <>
+  521 				read: <>
+  522 				close: <>
+  523 				sudo_ttyname_dev: char * (), <./src/ttyname.c 148>
+  524 					strlen: <>
+  525 					emalloc: 22
+  526 					strlcpy: size_t (), <./src/strlcpy.c 31>
+  527 					strlcat: size_t (), <./src/strlcat.c 34>
+  528 					estrdup: <>
+  529 				fopen: <>
+  530 				getline: 438
+  531 				fclose: <>
+  532 				atoi: <>
+  533 				efree: void (), <./src/alloc.c 273>
+  534 				estrdup: <>
+  535 			strncmp: <>
+  536 			sudo_getpwuid: <>
+  537 			getuid: <>
+  538 			getgid: <>
+  539 			sudo_fakepwuid: <>
+  540 			log_fatal: , <./src/logging.c 487>
+  541 			mbr_uid_to_uuid: <>
+  542 			getsid: <>
+  543 			getgroups: <>
+  544 			emalloc2: 52
+  545 			set_perms: int (), <./src/set_perms.c 428>
+  546 				ISSET: 49
+  547 				CLR: <>
+  548 				setresuid: <>
+  549 				setresgid: <>
+  550 				restore_groups: void (), <./src/set_perms.c 548>
+  551 					setgroups: <>
+  552 					log_fatal: , <./src/logging.c 487>
+  553 				setgid: <>
+  554 				runas_setgroups: void (), <./src/set_perms.c 542>
+  555 					aix_setauthdb: void (), <./src/aix.c 140>
+  556 						setuserdb: <>
+  557 						error: int, <./src/redblack.c 294>
+  558 						getuserattr: <>
+  559 						setauthdb: <>
+  560 						enduserdb: <>
+  561 					initgroups: <>
+  562 					log_fatal: , <./src/logging.c 487>
+  563 					efree: void (), <./src/alloc.c 273>
+  564 					getgroups: <>
+  565 					emalloc2: 52
+  566 					aix_restoreauthdb: void (), <./src/aix.c 161>
+  567 						setauthdb: <>
+  568 						error: int, <./src/redblack.c 294>
+  569 					setgroups: <>
+  570 				runas_setup: void (), <./src/set_perms.c 619>
+  571 					set_project: void (), <./src/set_perms.c 557>
+  572 						setprojent: <>
+  573 						getdefaultproj: <>
+  574 						setproject: <>
+  575 						warningx: , <./src/error.c 97>
+  576 						warning: , <./src/error.c 78>
+  577 						endprojent: <>
+  578 					aix_prep_user: void (), <./src/aix.c 169>
+  579 						easprintf: <>
+  580 						usrinfo: <>
+  581 						efree: void (), <./src/alloc.c 273>
+  582 						aix_setauthdb: 555
+  583 						aix_setlimits: void (), <./src/aix.c 83>
+  584 							setuserdb: <>
+  585 							error: int, <./src/redblack.c 294>
+  586 							aix_getlimit: int (), <./src/aix.c 69>
+  587 								getuserattr: <>
+  588 							setrlimit64: <>
+  589 							enduserdb: <>
+  590 					pam_begin_session: int (), <./src/auth/pam.c 208>
+  591 						pam_init: int (), <./src/auth/pam.c 84>
+  592 							sudo_conv: int (), <./src/auth/pam.c 306>
+  593 							ISSET: 49
+  594 							pam_start: <>
+  595 							log_error: <>
+  596 							pam_set_item: <>
+  597 						pam_end: <>
+  598 						pam_set_item: <>
+  599 						pam_setcred: <>
+  600 						pam_getenvlist: <>
+  601 						env_merge: void (), <./src/env.c 528>
+  602 						efree: void (), <./src/alloc.c 273>
+  603 						pam_open_session: <>
+  604 					setusercontext: <>
+  605 					error: int, <./src/redblack.c 294>
+  606 					warning: , <./src/error.c 78>
+  607 					runas_setgroups: 554
+  608 					setegid: <>
+  609 					setgid: <>
+  610 				warningx: , <./src/error.c 97>
+  611 				strerror: 383
+  612 				exit: <>
+  613 				setreuid: <>
+  614 				setuid: <>
+  615 				setregid: <>
+  616 				seteuid: <>
+  617 				setegid: <>
+  618 			getcwd: char * (), <./src/getcwd.c 81>
+  619 				malloc: <>
+  620 				stat: sizeof (), <./src/secure_path.c 65>
+  621 				lstat: <>
+  622 				bcopy: <>
+  623 				free: <>
+  624 				realloc: <>
+  625 				opendir: <>
+  626 				fstat: <>
+  627 				dirfd: <>
+  628 				readdir: <>
+  629 				ISDOT: <>
+  630 				NAMLEN: <>
+  631 				closedir: <>
+  632 			warningx: , <./src/error.c 97>
+  633 			ISSET: 49
+  634 		sudo_nonunix_groupcheck_init: void (), <./src/vasgroups.c 195>
+  635 			free: <>
+  636 			dlopen: <>
+  637 			set_err_msg: void (), <./src/vasgroups.c 173>
+  638 				free: <>
+  639 				va_start: <>
+  640 				vasprintf: int (), <./src/snprintf.c 741>
+  641 				va_end: <>
+  642 			dlerror: <>
+  643 			resolve_vas_funcs: int (), <./src/vasgroups.c 303>
+  644 				RESOLVE_OR_ERR: <>
+  645 				v_ctx_alloc: <>
+  646 				v_ctx_free: void () (), <./src/vasgroups.c 68>
+  647 				v_id_alloc: <>
+  648 				v_id_free: void () (), <./src/vasgroups.c 70>
+  649 				v_id_establish_cred_keytab: <>
+  650 				v_user_init: <>
+  651 				v_user_free: void () (), <./src/vasgroups.c 73>
+  652 				v_group_init: <>
+  653 				v_group_free: void () (), <./src/vasgroups.c 75>
+  654 				v_user_is_member: <>
+  655 				v_err_get_string: const char *() (), <./src/vasgroups.c 77>
+  656 			v_ctx_alloc: <>
+  657 			v_id_alloc: <>
+  658 			v_id_establish_cred_keytab: <>
+  659 			v_err_get_string: const char *() (), <./src/vasgroups.c 77>
+  660 			v_id_free: void () (), <./src/vasgroups.c 70>
+  661 			v_ctx_free: void () (), <./src/vasgroups.c 68>
+  662 		sudo_read_nss: struct sudo_nss_list (), <./src/sudo_nss.c 195>
+  663 		log_error: <>
+  664 		log_fatal: , <./src/logging.c 487>
+  665 		set_fqdn: void (), <./src/sudo.c 1221>
+  666 			zero_bytes: <>
+  667 			getaddrinfo: <>
+  668 			gethostbyname: <>
+  669 			log_error: <>
+  670 			efree: void (), <./src/alloc.c 273>
+  671 			estrdup: <>
+  672 			freeaddrinfo: <>
+  673 			strchr: <>
+  674 			pw_delref: <>
+  675 			sudo_getpwuid: <>
+  676 			atoi: <>
+  677 			sudo_fakepwnam: <>
+  678 			sudo_getpwnam: <>
+  679 			audit_failure: <>
+  680 			log_fatal: , <./src/logging.c 487>
+  681 			gr_delref: <>
+  682 			sudo_getgrgid: <>
+  683 			sudo_fakegrnam: <>
+  684 			sudo_getgrnam: <>
+  685 			tq_foreach_fwd: 85
+  686 			sudo_nonunix_groupcheck_cleanup: void (), <./src/vasgroups.c 263>
+  687 				free: <>
+  688 				v_id_free: void () (), <./src/vasgroups.c 70>
+  689 				v_ctx_free: void () (), <./src/vasgroups.c 68>
+  690 				dlclose: <>
+  691 				warningx: , <./src/error.c 97>
+  692 				dlerror: <>
+  693 			sudo_endpwent: 261
+  694 			sudo_endgrent: 267
+  695 			io_log_close: void (), <./src/iolog.c 305>
+  696 				gzclose: int ZEXPORT (), <./src/zlib/gzclose.c 11>
+  697 					gzclose_r: <>
+  698 					gzclose_w: <>
+  699 				fclose: <>
+  700 			cleanup_pty: void (), <./src/exec_pty.c 1181>
+  701 			selinux_restore_tty: int (), <./src/selinux.c 70>
+  702 				fgetfilecon: <>
+  703 				warning: , <./src/error.c 78>
+  704 				strcmp: 40
+  705 				warningx: , <./src/error.c 97>
+  706 				fsetfilecon: <>
+  707 				close: <>
+  708 				freecon: <>
+  709 			printf: <>
+  710 			getuid: <>
+  711 			putchar: <>
+  712 			dump_auth_methods: void (), <./src/auth/sudo_auth.c 276>
+  713 				fputs: <>
+  714 				printf: <>
+  715 				putchar: <>
+  716 			dump_defaults: void (), <./src/defaults.c 116>
+  717 				puts: <>
+  718 				printf: <>
+  719 				putchar: <>
+  720 				logfac2str: const char * (), <./src/defaults.c 781>
+  721 				logpri2str: const char * (), <./src/defaults.c 816>
+  722 			dump_interfaces: <>
+  723 			exit: <>
+  724 			user_in_group: int (), <./src/pwutil.c 700>
+  725 			snprintf: <>
+  726 			set_perms: 545
+  727 			stat: sizeof (), <./src/secure_path.c 65>
+  728 			open: <>
+  729 			close: <>
+  730 		set_loginclass: void (), <./src/sudo.c 1207>
+  731 			strcmp: 40
+  732 			errorx: , <./src/error.c 56>
+  733 			login_getclass: <>
+  734 			log_fatal: , <./src/logging.c 487>
+  735 			log_error: <>
+  736 		remove_timestamp: void (), <./src/check.c 674>
+  737 			build_timestamp: int (), <./src/check.c 417>
+  738 				easprintf: <>
+  739 				strrchr: <>
+  740 				log_fatal: , <./src/logging.c 487>
+  741 			timestamp_status: int (), <./src/check.c 466>
+  742 				set_perms: 545
+  743 				lstat: <>
+  744 				S_ISDIR: if (), <./src/ttyname.c 250>
+  745 				log_error: <>
+  746 				chmod: <>
+  747 				ISSET: 49
+  748 				mkdir: <>
+  749 				S_ISREG: <>
+  750 				unlink: <>
+  751 				open: <>
+  752 				read: <>
+  753 				memcmp: <>
+  754 				close: <>
+  755 				mtim_get: <>
+  756 				timevalisset: <>
+  757 				ctime: <>
+  758 				rmdir: <>
+  759 				get_boottime: int (), <./src/boottime.c 146>
+  760 					fopen: <>
+  761 					getline: 438
+  762 					strncmp: <>
+  763 					atoi: <>
+  764 					fclose: <>
+  765 					free: <>
+  766 					sysctl: <>
+  767 					memset: <>
+  768 					getutxid: <>
+  769 					endutxent: <>
+  770 					getutid: <>
+  771 					endutent: <>
+  772 				timevalcmp: <>
+  773 			unlink: <>
+  774 			rmdir: <>
+  775 			log_error: <>
+  776 			strerror: 383
+  777 			timevalclear: <>
+  778 			touch: 294
+  779 			error: int, <./src/redblack.c 294>
+  780 			efree: void (), <./src/alloc.c 273>
+  781 		warningx: , <./src/error.c 97>
+  782 		set_cmnd: int (), <./src/sudo.c 790>
+  783 			ecalloc: 31
+  784 			stat: sizeof (), <./src/secure_path.c 65>
+  785 			ISSET: 49
+  786 			user_is_exempt: int (), <./src/check.c 406>
+  787 				user_in_group: int (), <./src/pwutil.c 700>
+  788 			set_perms: 545
+  789 			find_path: int (), <./src/find_path.c 56>
+  790 				strlen: <>
+  791 				errorx: , <./src/error.c 56>
+  792 				strchr: <>
+  793 				strlcpy: size_t (), <./src/strlcpy.c 31>
+  794 				sudo_goodpath: <>
+  795 				estrdup: <>
+  796 				snprintf: <>
+  797 				efree: void (), <./src/alloc.c 273>
+  798 			strlen: <>
+  799 			emalloc: 22
+  800 			isspace: while (), <./src/env.c 1047>
+  801 			strlcpy: size_t (), <./src/strlcpy.c 31>
+  802 			errorx: , <./src/error.c 56>
+  803 			strrchr: <>
+  804 			update_defaults: 84
+  805 			log_error: <>
+  806 		pw_delref: <>
+  807 		open: <>
+  808 		audit_failure: <>
+  809 		close: <>
+  810 		rebuild_env: void (), <./src/env.c 676>
+  811 		check_user: int (), <./src/check.c 102>
+  812 			get_authpw: struct passwd * (), <./src/check.c 751>
+  813 			sudo_auth_init: int (), <./src/auth/sudo_auth.c 90>
+  814 				SET: <>
+  815 				IS_CONFIGURED: <>
+  816 				NEEDS_USER: <>
+  817 				set_perms: 545
+  818 				CLR: <>
+  819 			user_is_exempt: 786
+  820 			user_in_group: int (), <./src/pwutil.c 700>
+  821 			ISSET: 49
+  822 			SET: <>
+  823 			stat: sizeof (), <./src/secure_path.c 65>
+  824 			tty_is_devpts: <>
+  825 			ctim_get: <>
+  826 			build_timestamp: 737
+  827 			timestamp_status: 741
+  828 			log_auth_failure: void (), <./src/logging.c 345>
+  829 				audit_failure: <>
+  830 				ISSET: 49
+  831 				should_mail: int (), <./src/logging.c 725>
+  832 					ISSET: 49
+  833 				log_error: <>
+  834 			log_fatal: , <./src/logging.c 487>
+  835 			tty_present: int (), <./src/tgetpass.c 304>
+  836 				open: <>
+  837 				close: <>
+  838 			lecture: void (), <./src/check.c 209>
+  839 				fopen: <>
+  840 				fread: <>
+  841 				ignore_result: <>
+  842 				fwrite: <>
+  843 				fclose: <>
+  844 				fputs: <>
+  845 			expand_prompt: char * (), <./src/check.c 277>
+  846 				strlen: <>
+  847 				emalloc: 22
+  848 				strlcpy: size_t (), <./src/strlcpy.c 31>
+  849 				errorx: , <./src/error.c 56>
+  850 			verify_user: int (), <./src/auth/sudo_auth.c 158>
+  851 				sigemptyset: <>
+  852 				sigaction: int (), <./src/sigaction.c 31>
+  853 				audit_failure: <>
+  854 				log_error: <>
+  855 				IS_CONFIGURED: <>
+  856 				NEEDS_USER: <>
+  857 				set_perms: 545
+  858 				CLR: <>
+  859 				tgetpass: <>
+  860 				zero_bytes: <>
+  861 				strlen: <>
+  862 				ISSET: 49
+  863 				pass_warn: void (), <./src/auth/sudo_auth.c 263>
+  864 					fprintf: <>
+  865 				log_auth_failure: 828
+  866 			update_timestamp: void (), <./src/check.c 239>
+  867 				set_perms: 545
+  868 				open: <>
+  869 				log_error: <>
+  870 				lock_file: int (), <./src/fileops.c 130>
+  871 					lockf: <>
+  872 					flock: <>
+  873 					getpid: <>
+  874 					fcntl: <>
+  875 				write: <>
+  876 				close: <>
+  877 				touch: 294
+  878 				mkdir: <>
+  879 			efree: void (), <./src/alloc.c 273>
+  880 			sudo_auth_cleanup: int (), <./src/auth/sudo_auth.c 129>
+  881 				IS_CONFIGURED: <>
+  882 				NEEDS_USER: <>
+  883 				set_perms: 545
+  884 			pw_delref: <>
+  885 		log_denial: void (), <./src/logging.c 252>
+  886 			ISSET: 49
+  887 			audit_failure: <>
+  888 			new_logline: <>
+  889 			should_mail: 831
+  890 			send_mail: , <./src/logging.c 518>
+  891 			fprintf: <>
+  892 			do_syslog: void (), <./src/logging.c 135>
+  893 				estrdup: <>
+  894 				setlocale: <>
+  895 				strlen: <>
+  896 				memrchr: <>
+  897 				mysyslog: , <./src/logging.c 86>
+  898 				efree: void (), <./src/alloc.c 273>
+  899 			do_logfile: void (), <./src/logging.c 191>
+  900 				umask: <>
+  901 				fopen: <>
+  902 				send_mail: , <./src/logging.c 518>
+  903 				strerror: 383
+  904 				lock_file: 870
+  905 				fileno: <>
+  906 				estrdup: <>
+  907 				setlocale: <>
+  908 				fprintf: <>
+  909 				get_timestr: 451
+  910 				easprintf: <>
+  911 				writeln_wrap: void (), <./src/logwrap.c 39>
+  912 					strchr: <>
+  913 					fprintf: <>
+  914 				efree: void (), <./src/alloc.c 273>
+  915 				fflush: <>
+  916 				fclose: <>
+  917 			efree: void (), <./src/alloc.c 273>
+  918 		mbr_uid_to_uuid: <>
+  919 		log_failure: void (), <./src/logging.c 314>
+  920 			ISSET: 49
+  921 			log_denial: 885
+  922 			warningx: , <./src/error.c 97>
+  923 		create_admin_success_flag: void (), <./src/sudo.c 1367>
+  924 		validate_env_vars: <>
+  925 		io_nextid: void (), <./src/iolog.c 88>
+  926 			stat: sizeof (), <./src/secure_path.c 65>
+  927 			mkdir: <>
+  928 			log_fatal: , <./src/logging.c 487>
+  929 			chown: <>
+  930 			S_ISDIR: if (), <./src/ttyname.c 250>
+  931 			snprintf: <>
+  932 			open: <>
+  933 			lock_file: 870
+  934 			read: <>
+  935 			strtoul: <>
+  936 			memcpy: <>
+  937 			lseek: <>
+  938 			write: <>
+  939 			close: <>
+  940 		log_allowed: void (), <./src/logging.c 387>
+  941 			new_logline: <>
+  942 			should_mail: 831
+  943 			send_mail: , <./src/logging.c 518>
+  944 			do_syslog: 892
+  945 			do_logfile: 899
+  946 			efree: void (), <./src/alloc.c 273>
+  947 		display_cmnd: <>
+  948 		display_privs: <>
+  949 		sudo_nonunix_groupcheck_cleanup: 686
+  950 		audit_success: <>
+  951 		read_env_file: <>
+  952 		login_getclass: <>
+  953 		setusercontext: <>
+  954 		login_close: <>
+  955 		insert_env_vars: <>
+  956 		sudo_edit: int (), <./src/sudo_edit.c 390>
+  957 			find_editor: char * (), <./src/sudo_edit.c 346>
+  958 				getenv: <>
+  959 				resolve_editor: char * (), <./src/sudo_edit.c 295>
+  960 					estrdup: <>
+  961 					isblank: int (), <./src/isblank.c 25>
+  962 					strtok: <>
+  963 					find_path: 789
+  964 					getenv: <>
+  965 					efree: void (), <./src/alloc.c 273>
+  966 					emalloc2: 52
+  967 				estrdup: <>
+  968 				strtok: <>
+  969 				efree: void (), <./src/alloc.c 273>
+  970 				audit_failure: <>
+  971 				warningx: , <./src/error.c 97>
+  972 			stat: sizeof (), <./src/secure_path.c 65>
+  973 			S_ISDIR: if (), <./src/ttyname.c 250>
+  974 			strlen: <>
+  975 			emalloc2: 52
+  976 			zero_bytes: <>
+  977 			set_perms: 545
+  978 			open: <>
+  979 			fstat: <>
+  980 			S_ISREG: <>
+  981 			warning: , <./src/error.c 78>
+  982 			warningx: , <./src/error.c 97>
+  983 			close: <>
+  984 			mtim_get: <>
+  985 			strrchr: <>
+  986 			easprintf: <>
+  987 			mkstemps: int (), <./src/mkstemps.c 52>
+  988 				get_random: unsigned int (), <./src/mkstemps.c 123>
+  989 					seed_random: void (), <./src/mkstemps.c 108>
+  990 						gettime: 304
+  991 						getpid: <>
+  992 						SRAND: <>
+  993 					RAND: <>
+  994 				open: <>
+  995 			cleanup: 260
+  996 			read: <>
+  997 			write: <>
+  998 			touch: 294
+  999 			gettime: 304
+ 1000 			run_command: <>
+ 1001 			timevalcmp: <>
+ 1002 			timevalsub: <>
+ 1003 			timevalisset: <>
+ 1004 			unlink: <>
+ 1005 		run_command: <>
+ 1006 		env_get: char ** (), <./src/env.c 273>

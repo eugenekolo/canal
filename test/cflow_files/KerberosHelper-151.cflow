@@ -1,0 +1,862 @@
+    1 	main: int (), <./Tests/KRBCreateSession.c 31>
+    2 		asl_log: <>
+    3 		xpc_set_event_stream_handler: <>
+    4 		dispatch_get_main_queue: <>
+    5 		callback: void (), <./Source/DiskUnmountWatcher.c 60>
+    6 			CFStringRef: <>
+    7 			asl_log: <>
+    8 			xpc_dictionary_get_value: <>
+    9 			CFDictionaryGetValue: <>
+   10 			CFURLCopyFileSystemPath: <>
+   11 			cf2cstring: char * (), <./Source/DiskUnmountWatcher.c 38>
+   12 				CFStringGetCStringPtr: <>
+   13 				strdup: <>
+   14 				CFStringGetMaximumSizeForEncoding: <>
+   15 				CFStringGetLength: <>
+   16 				malloc: <>
+   17 				CFStringGetCString: <>
+   18 				free: <>
+   19 			CFRelease: <>
+   20 			strlen: <>
+   21 			asprintf: <>
+   22 			free: <>
+   23 			CFStringCreateWithCString: <>
+   24 			NAHFindByLabelAndRelease: void (), <./Source/na.c 2240>
+   25 				nalog: void (), <./Source/na.c 198>
+   26 					SecCertificateCopyData: <>
+   27 					CFRelease: <>
+   28 					CC_SHA1_Init: <>
+   29 					CC_SHA1_Update: <>
+   30 					CFDataGetBytePtr: <>
+   31 					CFDataGetLength: <>
+   32 					CC_SHA1_Final: <>
+   33 					snprintf: <>
+   34 					CFStringCreateWithCString: <>
+   35 					CFStringRef: <>
+   36 					va_start: <>
+   37 					CFStringCreateWithFormatAndArguments: <>
+   38 					va_end: <>
+   39 					asl_log: <>
+   40 				CFSTR: <>
+   41 				NAHCreateRefLabelFromIdentifier: char * (), <./Source/na.c 2165>
+   42 					CFStringRef: <>
+   43 					CFStringCreateWithFormat: <>
+   44 					CFSTR: <>
+   45 					CFRelease: <>
+   46 				gss_iter_creds: <>
+   47 				gss_cred_label_get: <>
+   48 				gss_release_cred: <>
+   49 				gss_release_buffer: <>
+   50 				gss_cred_label_set: <>
+   51 				gss_cred_unhold: <>
+   52 		dispatch_main: <>
+   53 		system: <>
+   54 		lkdc_classic: void (), <./Source/test-na.c 32>
+   55 			CFShow: <>
+   56 			CFSTR: <>
+   57 			NAHCreate: NAHRef (), <./Source/na.c 1242>
+   58 				NAAlloc: NAHRef (), <./Source/na.c 455>
+   59 					NAGetTypeID: CFTypeID (), <./Source/na.c 427>
+   60 						dispatch_once: <>
+   61 						nahrelease: void (), <./Source/na.c 401>
+   62 							CFRELEASE: <>
+   63 							dispatch_release: <>
+   64 							krb5_free_context: <>
+   65 							hx509_context_free: <>
+   66 					dispatch_queue_create: <>
+   67 					dispatch_get_global_queue: <>
+   68 				CFStringRef: <>
+   69 				dispatch_once: <>
+   70 				CFPreferencesGetAppBooleanValue: <>
+   71 				CFSTR: <>
+   72 				nalog: 25
+   73 				CFStringCreateWithCString: <>
+   74 				free: <>
+   75 				CFRetain: <>
+   76 				CFStringCreateMutableCopy: <>
+   77 				CFRelease: <>
+   78 				CFRELEASE: <>
+   79 				CFStringTrim: <>
+   80 				findUsername: bool (), <./Source/na.c 593>
+   81 					CFDictionaryGetValue: <>
+   82 					CFRetain: <>
+   83 					CFStringFindWithOptions: <>
+   84 					CFSTR: <>
+   85 					CFRangeMake: <>
+   86 					CFStringGetLength: <>
+   87 					CFStringCreateWithSubstring: <>
+   88 					nalog: 25
+   89 					getlogin: <>
+   90 					CFStringCreateWithCString: <>
+   91 				CFDictionaryGetValue: <>
+   92 				CFArrayCreateMutable: <>
+   93 				addSecItem: void (), <./Source/na.c 1206>
+   94 					CFGetTypeID: <>
+   95 					CFArrayGetTypeID: <>
+   96 					CFArrayGetCount: <>
+   97 					CFArrayGetValueAtIndex: <>
+   98 					addSecItem: 93
+   99 					SecCertificateGetTypeID: <>
+  100 					SecIdentityCreateWithCertificate: <>
+  101 					CFArrayAppendValue: <>
+  102 					CFRelease: <>
+  103 					SecIdentityGetTypeID: <>
+  104 					CFStringRef: <>
+  105 					CFCopyDescription: <>
+  106 					nalog: 25
+  107 					CFSTR: <>
+  108 					CFRELEASE: <>
+  109 				CFArrayGetCount: <>
+  110 				add_user_selections: void (), <./Source/na.c 2305>
+  111 					CFPreferencesCopyAppValue: <>
+  112 					CFSTR: <>
+  113 					CFGetTypeID: <>
+  114 					CFArrayGetTypeID: <>
+  115 					CFRELEASE: <>
+  116 					CFArrayGetCount: <>
+  117 					CFArrayGetValueAtIndex: <>
+  118 					CFStringRef: <>
+  119 					CFDictionaryGetTypeID: <>
+  120 					CFDictionaryGetValue: <>
+  121 					CFStringGetTypeID: <>
+  122 					CFStringCompare: <>
+  123 					name2mech: enum NAHMechType (), <./Source/na.c 303>
+  124 					CFStringCreateWithFormat: <>
+  125 					addSelection: NAHSelectionRef (), <./Source/na.c 524>
+  126 						CFStringHasPrefix: <>
+  127 						nalog: 25
+  128 						CFSTR: <>
+  129 						mech2name: CFStringRef (), <./Source/na.c 333>
+  130 						CFArrayGetCount: <>
+  131 						CFArrayGetValueAtIndex: <>
+  132 						CFStringCompare: <>
+  133 						NAHSelectionAlloc: NAHSelectionRef (), <./Source/na.c 381>
+  134 							NAHSelectionGetTypeID: CFTypeID (), <./Source/na.c 357>
+  135 								dispatch_once: <>
+  136 								naselrelease: void (), <./Source/na.c 219>
+  137 									CFRELEASE: <>
+  138 									krb5_cc_close: <>
+  139 								naselformatting: CFStringRef (), <./Source/na.c 253>
+  140 									naseldebug: CFStringRef (), <./Source/na.c 238>
+  141 										CFStringRef: <>
+  142 										NAHSelectionGetInfoForKey: CFTypeRef (), <./Source/na.c 1939>
+  143 											CFStringCompare: <>
+  144 											mech2name: 129
+  145 										CFStringCreateWithFormat: <>
+  146 										CFSTR: <>
+  147 								CFStringRef: <>
+  148 								naseldebug: 140
+  149 						CFRetain: <>
+  150 						CFArrayAppendValue: <>
+  151 						CFRelease: <>
+  152 					CFRelease: <>
+  153 				guess_kerberos: void (), <./Source/na.c 997>
+  154 					haveMech: bool (), <./Source/na.c 476>
+  155 						CFDictionaryGetValue: <>
+  156 					CFStringCompare: <>
+  157 					nalog: 25
+  158 					CFSTR: <>
+  159 					krb5_init_context: <>
+  160 					hx509_context_init: <>
+  161 					use_existing_principals: void (), <./Source/na.c 804>
+  162 						CFStringRef: <>
+  163 						krb5_cccol_cursor_new: <>
+  164 						krb5_cccol_cursor_next: <>
+  165 						krb5_cc_get_principal: <>
+  166 						krb5_cc_close: <>
+  167 						krb5_cc_get_lifetime: <>
+  168 						krb5_principal_is_lkdc: <>
+  169 						krb5_free_principal: <>
+  170 						krb5_unparse_name: <>
+  171 						CFStringCreateWithCString: <>
+  172 						free: <>
+  173 						krb5_cc_get_config: <>
+  174 						CFStringCreateWithBytes: <>
+  175 						krb5_data_free: <>
+  176 						CFStringCompare: <>
+  177 						CFStringCreateWithFormat: <>
+  178 						CFSTR: <>
+  179 						nalog: 25
+  180 						krb5_principal_get_realm: <>
+  181 						addSelection: 125
+  182 						CFRELEASE: <>
+  183 						krb5_cccol_cursor_free: <>
+  184 					wellknown_lkdc: void (), <./Source/na.c 915>
+  185 						CFStringRef: <>
+  186 						CFStringCreateWithFormat: <>
+  187 						CFSTR: <>
+  188 						CFRELEASE: <>
+  189 						addSelection: 125
+  190 						CFArrayGetCount: <>
+  191 						CFArrayGetValueAtIndex: <>
+  192 						SecIdentityCopyCertificate: <>
+  193 						CFRelease: <>
+  194 						hx509_cert_init_SecFramework: <>
+  195 						hx509_cert_get_appleid: <>
+  196 						hx509_cert_free: <>
+  197 						krb5_xfree: <>
+  198 						CFRetain: <>
+  199 					use_classic_kerberos: void (), <./Source/na.c 699>
+  200 						have_lkdcish_hostname: bool (), <./Source/na.c 642>
+  201 							CFStringRef: <>
+  202 							CFStringCreateMutableCopy: <>
+  203 							CFRELEASE: <>
+  204 							CFStringTrim: <>
+  205 							CFSTR: <>
+  206 							nalog: 25
+  207 							CFStringLowercase: <>
+  208 							CFLocaleGetSystem: <>
+  209 							CFStringHasSuffix: <>
+  210 						CFStringFindWithOptions: <>
+  211 						CFSTR: <>
+  212 						CFRangeMake: <>
+  213 						CFStringGetLength: <>
+  214 						CFStringRef: <>
+  215 						CFStringCreateWithSubstring: <>
+  216 						CFStringCreateMutableCopy: <>
+  217 						CFStringUppercase: <>
+  218 						CFStringCreateWithFormat: <>
+  219 						addSelection: 125
+  220 						CFRELEASE: <>
+  221 						krb5_get_host_realm: <>
+  222 						add_realms: void (), <./Source/na.c 680>
+  223 							CFStringRef: <>
+  224 							CFStringCreateWithFormat: <>
+  225 							CFSTR: <>
+  226 							addSelection: 125
+  227 							CFRELEASE: <>
+  228 						krb5_free_host_realm: <>
+  229 						krb5_get_default_realms: <>
+  230 				is_smb: bool (), <./Source/na.c 988>
+  231 					CFStringCompare: <>
+  232 				guess_ntlm: void (), <./Source/na.c 1095>
+  233 					CFStringRef: <>
+  234 					haveMech: 154
+  235 					CFDictionaryGetValue: <>
+  236 					CFDataGetLength: <>
+  237 					memcmp: <>
+  238 					CFDataGetBytePtr: <>
+  239 					CFStringCreateWithFormat: <>
+  240 					CFSTR: <>
+  241 					CFStringFindWithOptions: <>
+  242 					CFRangeMake: <>
+  243 					CFStringGetLength: <>
+  244 					CFRetain: <>
+  245 					CFStringCreateWithSubstring: <>
+  246 					CFRELEASE: <>
+  247 					addSelection: 125
+  248 					dispatch_semaphore_create: <>
+  249 					gss_iter_creds: <>
+  250 					dispatch_semaphore_signal: <>
+  251 					gss_inquire_cred: <>
+  252 					gss_display_name: <>
+  253 					gss_release_name: <>
+  254 					gss_release_buffer: <>
+  255 					dispatch_semaphore_wait: <>
+  256 					dispatch_release: <>
+  257 			errx: <>
+  258 			NAHGetSelections: CFArrayRef (), <./Source/na.c 1358>
+  259 			CFArrayGetCount: <>
+  260 			CFArrayGetValueAtIndex: <>
+  261 			CFRelease: <>
+  262 		lkdc_wellknown: void (), <./Source/test-na.c 64>
+  263 			CFShow: <>
+  264 			CFSTR: <>
+  265 			CFDataCreateWithBytesNoCopy: <>
+  266 			KRBDecodeNegTokenInit: CFDictionaryRef (), <./Source/KerberosHelper.c 1667>
+  267 				CFDataGetBytePtr: <>
+  268 				CFDataGetLength: <>
+  269 				gss_decapsulate_token: <>
+  270 				memset: <>
+  271 				decode_NegotiationToken: <>
+  272 				decode_NegotiationTokenWin: <>
+  273 				CFDictionaryCreateMutable: <>
+  274 				CFDictionaryAddValue: <>
+  275 				CFRelease: <>
+  276 				CFDataCreateWithBytesNoCopy: <>
+  277 				der_print_heim_oid: <>
+  278 				CFStringRef: <>
+  279 				CFStringCreateWithCString: <>
+  280 				free: <>
+  281 				CFDictionaryGetValue: <>
+  282 				CFSTR: <>
+  283 				gss_release_buffer: <>
+  284 				free_NegotiationTokenWin: <>
+  285 				free_NegotiationToken: <>
+  286 			CFRelease: <>
+  287 			CFDictionaryCreateMutable: <>
+  288 			CFDictionaryAddValue: <>
+  289 			NAHCreate: 57
+  290 			errx: <>
+  291 			NAHGetSelections: CFArrayRef (), <./Source/na.c 1358>
+  292 			CFArrayGetCount: <>
+  293 			CFArrayGetValueAtIndex: <>
+  294 		test_ntlm: void (), <./Source/test-na.c 106>
+  295 			CFShow: <>
+  296 			CFSTR: <>
+  297 			KRBCreateNegTokenLegacyNTLM: CFDictionaryRef (), <./Source/KerberosHelper.c 1835>
+  298 				CFDataCreateWithBytesNoCopy: <>
+  299 				CreateNegTokenLegacyMech: CFDictionaryRef (), <./Source/KerberosHelper.c 1781>
+  300 					CFDictionaryCreateMutable: <>
+  301 					CFRelease: <>
+  302 					CFDictionaryAddValue: <>
+  303 					CFSTR: <>
+  304 				CFRelease: <>
+  305 			errx: <>
+  306 			CFDictionaryCreateMutable: <>
+  307 			CFDictionaryAddValue: <>
+  308 			CFRelease: <>
+  309 			NAHCreate: 57
+  310 			NAHGetSelections: CFArrayRef (), <./Source/na.c 1358>
+  311 			CFArrayGetCount: <>
+  312 			CFArrayGetValueAtIndex: <>
+  313 			CFBooleanGetValue: <>
+  314 			NAHSelectionGetInfoForKey: 142
+  315 		kerberos_classic: void (), <./Source/test-na.c 148>
+  316 			CFShow: <>
+  317 			CFSTR: <>
+  318 			KRBCreateNegTokenLegacyKerberos: CFDictionaryRef (), <./Source/KerberosHelper.c 1815>
+  319 				CFDataCreateWithBytesNoCopy: <>
+  320 				CreateNegTokenLegacyMech: 299
+  321 				CFRelease: <>
+  322 			errx: <>
+  323 			CFDictionaryCreateMutable: <>
+  324 			CFDictionaryAddValue: <>
+  325 			CFRelease: <>
+  326 			NAHCreate: 57
+  327 			NAHGetSelections: CFArrayRef (), <./Source/na.c 1358>
+  328 			CFArrayGetCount: <>
+  329 			CFArrayGetValueAtIndex: <>
+  330 			NAHSelectionAcquireCredential: Boolean (), <./Source/na.c 1696>
+  331 				CFRetain: <>
+  332 				nalog: 25
+  333 				CFSTR: <>
+  334 				KRBCredChangeReferenceCount: OSStatus (), <./Source/KerberosHelper.c 1535>
+  335 					KHLog: <>
+  336 					k5_ok: <>
+  337 					krb5_init_context: <>
+  338 					findCred: OSStatus (), <./Source/KerberosHelper.c 1512>
+  339 						k5_ok: <>
+  340 						krb5_parse_name: <>
+  341 						free: <>
+  342 						krb5_cc_cache_match: <>
+  343 						krb5_free_principal: <>
+  344 					krb5_cc_get_config: <>
+  345 					krb5_data_free: <>
+  346 					krb5_cc_hold: <>
+  347 					krb5_cc_unhold: <>
+  348 					krb5_cc_close: <>
+  349 					krb5_free_context: <>
+  350 				CFRelease: <>
+  351 				acquire_kerberos: int (), <./Source/na.c 1420>
+  352 					memset: <>
+  353 					nalog: 25
+  354 					CFSTR: <>
+  355 					strchr: <>
+  356 					krb5_parse_name_flags: <>
+  357 					krb5_unparse_name: <>
+  358 					free: <>
+  359 					krb5_get_init_creds_opt_alloc: <>
+  360 					krb5_get_init_creds_opt_set_pkinit: <>
+  361 					krb5_get_init_creds_opt_set_canonicalize: <>
+  362 					krb5_get_init_creds_opt_set_win2k: <>
+  363 					krb5_init_creds_init: <>
+  364 					krb5_principal_is_lkdc: <>
+  365 					asprintf: <>
+  366 					krb5_init_creds_set_kdc_hostname: <>
+  367 					hx509_cert_init_SecFramework: <>
+  368 					krb5_init_creds_set_pkinit_client_cert: <>
+  369 					hx509_cert_free: <>
+  370 					krb5_init_creds_set_password: <>
+  371 					abort: <>
+  372 					krb5_init_creds_get: <>
+  373 					krb5_init_creds_get_creds: <>
+  374 					krb5_cc_cache_match: <>
+  375 					krb5_cc_new_unique: <>
+  376 					krb5_cc_initialize: <>
+  377 					krb5_cc_store_cred: <>
+  378 					krb5_init_creds_store_config: <>
+  379 					CFStringRef: <>
+  380 					krb5_principal_get_realm: <>
+  381 					krb5_realm_is_lkdc: <>
+  382 					CFStringCreateWithCString: <>
+  383 					CFStringCompare: <>
+  384 					CFRELEASE: <>
+  385 					CFStringCreateWithFormat: <>
+  386 					setFriendlyName: void (), <./Source/na.c 1384>
+  387 						CFStringRef: <>
+  388 						copyInferedNameFromIdentity: CFStringRef (), <./Source/na.c 1364>
+  389 							CFStringRef: <>
+  390 							SecIdentityCopyCertificate: <>
+  391 							SecCertificateInferLabel: <>
+  392 							CFRELEASE: <>
+  393 						CFRetain: <>
+  394 						strlen: <>
+  395 						krb5_cc_set_config: <>
+  396 						free: <>
+  397 					krb5_cc_set_config: <>
+  398 					krb5_get_error_message: <>
+  399 					updateError: bool (), <./Source/na.c 261>
+  400 						va_start: <>
+  401 						CFStringCreateWithFormatAndArguments: <>
+  402 						va_end: <>
+  403 						nalog: 25
+  404 						CFSTR: <>
+  405 						CFErrorCreateWithUserInfoKeysAndValues: <>
+  406 						CFRelease: <>
+  407 					krb5_free_error_message: <>
+  408 					krb5_get_init_creds_opt_free: <>
+  409 					krb5_init_creds_free: <>
+  410 					krb5_cc_destroy: <>
+  411 					krb5_cc_close: <>
+  412 					krb5_free_cred_contents: <>
+  413 					krb5_free_principal: <>
+  414 				strlen: <>
+  415 				gss_import_name: <>
+  416 				dispatch_semaphore_create: <>
+  417 				strchr: <>
+  418 				gss_acquire_cred_ex: <>
+  419 				gss_cred_label_set: <>
+  420 				updateError: 399
+  421 				dispatch_semaphore_signal: <>
+  422 				gss_release_name: <>
+  423 				dispatch_semaphore_wait: <>
+  424 				dispatch_release: <>
+  425 				copyInferedNameFromIdentity: 388
+  426 				CFStringCreateMutableCopy: <>
+  427 				CFStringFind: <>
+  428 				CFStringPad: <>
+  429 				CFDictionaryCreateMutable: <>
+  430 				CFDictionaryAddValue: <>
+  431 				gss_aapl_initial_cred: <>
+  432 				setGSSLabel: void (), <./Source/na.c 1678>
+  433 					cf2cstring: char * (), <./Source/na.c 172>
+  434 						CFStringGetCStringPtr: <>
+  435 						strdup: <>
+  436 						CFStringGetMaximumSizeForEncoding: <>
+  437 						CFStringGetLength: <>
+  438 						malloc: <>
+  439 						CFStringGetCString: <>
+  440 						free: <>
+  441 					strlen: <>
+  442 					gss_cred_label_set: <>
+  443 					free: <>
+  444 				gss_inquire_cred_by_oid: <>
+  445 				gss_release_buffer_set: <>
+  446 				CFStringRef: <>
+  447 				CFStringCreateWithBytes: <>
+  448 				CFRELEASE: <>
+  449 				gss_release_cred: <>
+  450 			printf: <>
+  451 			NAHSelectionCopyAuthInfo: CFDictionaryRef (), <./Source/na.c 1974>
+  452 				CFStringRef: <>
+  453 				CFDictionaryCreateMutable: <>
+  454 				CFDictionaryAddValue: <>
+  455 				NAHSelectionGetInfoForKey: 142
+  456 				CFStringCompare: <>
+  457 				CFNumberCreate: <>
+  458 				CFRelease: <>
+  459 			CFStringRef: <>
+  460 			NAHCopyReferenceKey: CFStringRef (), <./Source/na.c 2210>
+  461 				CFStringRef: <>
+  462 				CFSTR: <>
+  463 				CFStringCompare: <>
+  464 				CFStringCreateWithFormat: <>
+  465 			NAHAddReferenceAndLabel: Boolean (), <./Source/na.c 2183>
+  466 				CFStringRef: <>
+  467 				NAHCopyReferenceKey: 460
+  468 				nalog: 25
+  469 				CFSTR: <>
+  470 				NAHCreateRefLabelFromIdentifier: 41
+  471 				CFRelease: <>
+  472 				CredChange: Boolean (), <./Source/na.c 2060>
+  473 					nalog: 25
+  474 					CFSTR: <>
+  475 					CFStringHasPrefix: <>
+  476 					CFStringRef: <>
+  477 					CFStringCreateWithSubstring: <>
+  478 					CFRangeMake: <>
+  479 					CFStringGetLength: <>
+  480 					CFRelease: <>
+  481 					strlen: <>
+  482 					gss_import_name: <>
+  483 					free: <>
+  484 					gss_acquire_cred: <>
+  485 					gss_release_name: <>
+  486 					gss_cred_label_get: <>
+  487 					gss_release_cred: <>
+  488 					gss_release_buffer: <>
+  489 					gss_cred_hold: <>
+  490 					gss_cred_unhold: <>
+  491 					gss_cred_label_set: <>
+  492 			NAHCredRemoveReference: Boolean (), <./Source/na.c 2288>
+  493 				CredChange: 472
+  494 			NAHCredAddReference: Boolean (), <./Source/na.c 2282>
+  495 				CredChange: 472
+  496 			NAHFindByLabelAndRelease: 24
+  497 		CFSTR: <>
+  498 		verify_result: void (), <./Source/test-na.c 244>
+  499 			CFDataCreate: <>
+  500 			CFDictionaryCreateMutable: <>
+  501 			KRBDecodeNegTokenInit: 266
+  502 			CFRelease: <>
+  503 			errx: <>
+  504 			CFShow: <>
+  505 			CFDictionaryAddValue: <>
+  506 			NAHCreate: 57
+  507 			NAHGetSelections: CFArrayRef (), <./Source/na.c 1358>
+  508 			CFArrayGetCount: <>
+  509 			CFArrayGetValueAtIndex: <>
+  510 			CFStringRef: <>
+  511 			NAHSelectionGetInfoForKey: 142
+  512 			CFStringCompare: <>
+  513 			CFSTR: <>
+  514 			CFStringFind: <>
+  515 			check_valid: void (), <./Source/test-na.c 235>
+  516 				errx: <>
+  517 		CFShow: <>
+  518 		printf: <>
+  519 		setprogname: <>
+  520 		getopt: <>
+  521 		usage: void (), <./Source/lkdc_acl.c 417>
+  522 			printf: <>
+  523 			getprogname: <>
+  524 			exit: <>
+  525 		fprintf: <>
+  526 		SecKeychainSetUserInteractionAllowed: <>
+  527 		findKeychainItem: SecKeychainItemRef (), <./Source/lkdc_acl.c 57>
+  528 			strlen: <>
+  529 			SecKeychainSearchCreateFromAttributes: <>
+  530 			errx: <>
+  531 			SecKeychainSearchCopyNext: <>
+  532 			CFRelease: <>
+  533 		testSign: void (), <./Source/lkdc_acl.c 93>
+  534 			SecKeyGetCSSMKey: <>
+  535 			abort: <>
+  536 			SecKeyGetCSPHandle: <>
+  537 			SecKeyGetCredentials: <>
+  538 			CSSM_CSP_CreateSignatureContext: <>
+  539 			strlen: <>
+  540 			CSSM_SignData: <>
+  541 			errx: <>
+  542 			CSSM_DeleteContext: <>
+  543 			printf: <>
+  544 		deleteAllACL: void (), <./Source/lkdc_acl.c 274>
+  545 			SecKeychainItemCopyAccess: <>
+  546 			errx: <>
+  547 			SecAccessCopyACLList: <>
+  548 			CFArrayGetCount: <>
+  549 			CFArrayGetValueAtIndex: <>
+  550 			SecACLGetAuthorizations: <>
+  551 			SecACLRemove: <>
+  552 			SecKeychainItemSetAccess: <>
+  553 			CFRelease: <>
+  554 		addTrustedApplication: void (), <./Source/lkdc_acl.c 212>
+  555 			checkOnACLAlreadyAndRemoveAny: int (), <./Source/lkdc_acl.c 136>
+  556 				SecKeychainItemCopyAccess: <>
+  557 				errx: <>
+  558 				SecAccessCopyACLList: <>
+  559 				CFArrayGetCount: <>
+  560 				CFStringRef: <>
+  561 				CFArrayGetValueAtIndex: <>
+  562 				SecACLCopySimpleContents: <>
+  563 				CFRelease: <>
+  564 				SecACLRemove: <>
+  565 				printf: <>
+  566 				SecTrustedApplicationCopyData: <>
+  567 				strcmp: <>
+  568 				CFDataGetBytePtr: <>
+  569 				SecKeychainItemSetAccess: <>
+  570 			printf: <>
+  571 			SecKeychainItemCopyAccess: <>
+  572 			errx: <>
+  573 			getTrustedApps: <>
+  574 			SecACLCreateFromSimpleContents: <>
+  575 			CFSTR: <>
+  576 			SecACLSetAuthorizations: <>
+  577 			SecKeychainItemSetAccess: <>
+  578 			CFRelease: <>
+  579 		listACL: void (), <./Source/lkdc_acl.c 322>
+  580 			SecKeychainItemCopyAccess: <>
+  581 			errx: <>
+  582 			SecAccessCopyACLList: <>
+  583 			CFArrayGetCount: <>
+  584 			CFStringRef: <>
+  585 			CFArrayGetValueAtIndex: <>
+  586 			printf: <>
+  587 			SecACLCopySimpleContents: <>
+  588 			CFStringGetMaximumSizeForEncoding: <>
+  589 			CFStringGetLength: <>
+  590 			malloc: <>
+  591 			CFStringGetCString: <>
+  592 			free: <>
+  593 			CFRelease: <>
+  594 			SecACLGetAuthorizations: <>
+  595 			SecTrustedApplicationCopyData: <>
+  596 			CFDataGetBytePtr: <>
+  597 		gss_accept_sec_context: <>
+  598 		errx: <>
+  599 		CFDataCreateWithBytesNoCopy: <>
+  600 		KRBDecodeNegTokenInit: 266
+  601 		CFRelease: <>
+  602 		gss_release_buffer: <>
+  603 		gss_delete_sec_context: <>
+  604 		asprintf: <>
+  605 		strlen: <>
+  606 		DNSServiceCreateConnection: <>
+  607 		DNSServiceRegisterRecord: <>
+  608 		TXTRegisterCallback: void (), <./Tests/dns-register.c 34>
+  609 		DNSServiceRefSockFD: <>
+  610 		FD_ZERO: <>
+  611 		FD_SET: <>
+  612 		select: <>
+  613 		err: <>
+  614 		FD_ISSET: <>
+  615 		DNSServiceProcessResult: <>
+  616 		CFStringRef: <>
+  617 		gethostname: <>
+  618 		strchr: <>
+  619 		CFStringCreateWithCString: <>
+  620 		KRBCreateSession: OSStatus (), <./Source/KerberosHelper.c 325>
+  621 			CFDictionaryCreateMutable: <>
+  622 			CFDictionarySetValue: <>
+  623 			KRBCreateSessionInfo: OSStatus (), <./Source/KerberosHelper.c 353>
+  624 				CFStringRef: <>
+  625 				err: <>
+  626 				CFDictionaryGetValue: <>
+  627 				KHLog: <>
+  628 				calloc: <>
+  629 				k5_ok: <>
+  630 				krb5_init_context: <>
+  631 				hx509_context_init: <>
+  632 				krb5_get_default_realm: <>
+  633 				strdup: <>
+  634 				krb5_xfree: <>
+  635 				DSCopyLocalKDC: OSStatus (), <./Source/lookupDSLocalKDC.c 94>
+  636 					err: <>
+  637 					ODNodeCreateWithNodeType: <>
+  638 					ODNodeCopyRecord: <>
+  639 					CFSTR: <>
+  640 					ODRecordCopyValues: <>
+  641 					CFArrayGetCount: <>
+  642 					CFArrayGetValueAtIndex: <>
+  643 					CFStringGetTypeID: <>
+  644 					CFGetTypeID: <>
+  645 					CFRetain: <>
+  646 					CFRelease: <>
+  647 					stat: <>
+  648 					malloc: <>
+  649 					open: <>
+  650 					read: <>
+  651 					close: <>
+  652 					strchr: <>
+  653 					CFStringCreateWithCString: <>
+  654 					free: <>
+  655 				CFRetain: <>
+  656 				parse_principal_name: int (), <./Source/KerberosHelper.c 177>
+  657 					KHLog: <>
+  658 					krb5_parse_name: <>
+  659 					krb5_principal_get_num_comp: <>
+  660 					strdup: <>
+  661 					krb5_principal_get_comp_string: <>
+  662 					krb5_principal_get_realm: <>
+  663 					krb5_free_principal: <>
+  664 				strlen: <>
+  665 				CFStringCreateWithCString: <>
+  666 				lookup_by_kdc: int (), <./Source/KerberosHelper.c 206>
+  667 					memset: <>
+  668 					krb5_build_principal: <>
+  669 					krb5_cccol_cursor_new: <>
+  670 					krb5_cccol_cursor_next: <>
+  671 					krb5_cc_get_principal: <>
+  672 					krb5_unparse_name: <>
+  673 					krb5_free_principal: <>
+  674 					KHLog: <>
+  675 					krb5_principal_set_realm: <>
+  676 					free: <>
+  677 					krb5_get_credentials: <>
+  678 					krb5_get_error_message: <>
+  679 					krb5_free_error_message: <>
+  680 					strdup: <>
+  681 					krb5_free_creds: <>
+  682 					krb5_cc_close: <>
+  683 					krb5_cccol_cursor_free: <>
+  684 				add_mapping: void (), <./Source/KerberosHelper.c 131>
+  685 					realloc: <>
+  686 					strdup: <>
+  687 					free: <>
+  688 				free: <>
+  689 				strchr: <>
+  690 				asprintf: <>
+  691 				find_mapping: void (), <./Source/KerberosHelper.c 154>
+  692 					strcasecmp: <>
+  693 					krb5_get_host_realm: <>
+  694 					add_mapping: 684
+  695 					KHLog: <>
+  696 					krb5_free_host_realm: <>
+  697 				memset: <>
+  698 				getaddrinfo: <>
+  699 				gai_strerror: <>
+  700 				strcmp: <>
+  701 				getnameinfo: <>
+  702 				snprintf: <>
+  703 				is_local_hostname: int (), <./Source/KerberosHelper.c 292>
+  704 					dispatch_once: <>
+  705 					CFStringRef: <>
+  706 					CFRelease: <>
+  707 					strlen: <>
+  708 					strcmp_trailer: int (), <./Source/KerberosHelper.c 279>
+  709 						strlen: <>
+  710 						strcasecmp: <>
+  711 					strchr: <>
+  712 				strcasecmp: <>
+  713 				CFRelease: <>
+  714 				krb5_free_context: <>
+  715 				hx509_context_free: <>
+  716 				freeaddrinfo: <>
+  717 			CFRelease: <>
+  718 		KRBCopyRealm: OSStatus (), <./Source/KerberosHelper.c 698>
+  719 			err: <>
+  720 			KHLog: <>
+  721 			CFRetain: <>
+  722 		KRBCloseSession: OSStatus (), <./Source/KerberosHelper.c 1478>
+  723 			err: <>
+  724 			KHLog: <>
+  725 			free: <>
+  726 			CFRelease: <>
+  727 			krb5_free_context: <>
+  728 			hx509_context_free: <>
+  729 			freeaddrinfo: <>
+  730 		KRBCopyKeychainLookupInfo: OSStatus (), <./Source/KerberosHelper.c 736>
+  731 			err: <>
+  732 			CFStringRef: <>
+  733 			CFDictionaryCreateMutable: <>
+  734 			KHLog: <>
+  735 			CFDictionarySetValue: <>
+  736 			CFPreferencesCopyAppValue: <>
+  737 			CFSTR: <>
+  738 			CFGetTypeID: <>
+  739 			CFBooleanGetTypeID: <>
+  740 			CFBooleanGetValue: <>
+  741 			CFRelease: <>
+  742 		getlogin: <>
+  743 		KRBCopyServicePrincipal: OSStatus (), <./Source/KerberosHelper.c 793>
+  744 			CFStringRef: <>
+  745 			err: <>
+  746 			KHLog: <>
+  747 			KRBCopyServicePrincipalInfo: OSStatus (), <./Source/KerberosHelper.c 824>
+  748 				CFStringRef: <>
+  749 				err: <>
+  750 				KHLog: <>
+  751 				CFStringCreateWithFormat: <>
+  752 				CFSTR: <>
+  753 				CFDictionaryCreateMutable: <>
+  754 				CFDictionarySetValue: <>
+  755 				CFRelease: <>
+  756 			CFDictionaryGetValue: <>
+  757 			CFRetain: <>
+  758 			CFRelease: <>
+  759 		KRBCopyClientPrincipalInfo: OSStatus (), <./Source/KerberosHelper.c 909>
+  760 			err: <>
+  761 			CFStringRef: <>
+  762 			KHLog: <>
+  763 			CFDictionaryGetCount: <>
+  764 			CFDictionaryCreateMutableCopy: <>
+  765 			CFDictionaryGetValueIfPresent: <>
+  766 			CFDictionaryCreateMutable: <>
+  767 			SecCertificateGetTypeID: <>
+  768 			CFGetTypeID: <>
+  769 			CFSTR: <>
+  770 			NAHCopyMMeUserNameFromCertificate: <>
+  771 			CFRetain: <>
+  772 			CFArrayCreate: <>
+  773 			SecCertificateCopyValues: <>
+  774 			CFRelease: <>
+  775 			CFDictionaryGetValue: <>
+  776 			search_array: CFTypeRef (), <./Source/KerberosHelper.c 873>
+  777 				CFArrayGetCount: <>
+  778 				CFArrayGetValueAtIndex: <>
+  779 				CFGetTypeID: <>
+  780 				CFDictionaryGetTypeID: <>
+  781 				CFDictionaryGetValue: <>
+  782 				CFEqual: <>
+  783 			CFStringCompare: <>
+  784 			CFStringCreateWithFormat: <>
+  785 			SecCertificateInferLabel: <>
+  786 			getlogin: <>
+  787 			CFStringCreateWithCString: <>
+  788 			strlen: <>
+  789 			strcmp: <>
+  790 			principal_realm: const char * (), <./Source/KerberosHelper.c 115>
+  791 				strlen: <>
+  792 			krb5_cccol_cursor_new: <>
+  793 			krb5_cccol_cursor_next: <>
+  794 			k5_ok: <>
+  795 			krb5_cc_get_principal: <>
+  796 			krb5_unparse_name: <>
+  797 			has_common_subrealm: int (), <./Source/KerberosHelper.c 97>
+  798 				strlen: <>
+  799 			free: <>
+  800 			strdup: <>
+  801 			krb5_xfree: <>
+  802 			krb5_cc_close: <>
+  803 			krb5_free_principal: <>
+  804 			krb5_cccol_cursor_free: <>
+  805 			strrchr: <>
+  806 			CFDictionarySetValue: <>
+  807 		CFDictionaryGetValue: <>
+  808 		CFDictionaryCreateMutable: <>
+  809 		CFDictionarySetValue: <>
+  810 		KRBTestForExistingTicket: OSStatus (), <./Source/KerberosHelper.c 1228>
+  811 			err: <>
+  812 			CFStringRef: <>
+  813 			KHLog: <>
+  814 			CFDictionaryGetValueIfPresent: <>
+  815 			krb5_parse_name: <>
+  816 			krb5_cc_cache_match: <>
+  817 			krb5_cc_get_lifetime: <>
+  818 			krb5_cc_get_name: <>
+  819 			krb5_cc_close: <>
+  820 			krb5_free_principal: <>
+  821 		KRBAcquireTicket: OSStatus (), <./Source/KerberosHelper.c 1280>
+  822 			err: <>
+  823 			CFStringRef: <>
+  824 			memset: <>
+  825 			KHLog: <>
+  826 			CFDictionaryGetValue: <>
+  827 			krb5_parse_name: <>
+  828 			CFDictionaryGetValueIfPresent: <>
+  829 			k5_ok: <>
+  830 			krb5_get_init_creds_opt_alloc: <>
+  831 			krb5_get_init_creds_opt_set_pkinit: <>
+  832 			krb5_init_creds_init: <>
+  833 			is_lkdc_realm: int (), <./Source/KerberosHelper.c 85>
+  834 				strncmp: <>
+  835 			krb5_principal_get_realm: <>
+  836 			krb5_init_creds_set_kdc_hostname: <>
+  837 			free: <>
+  838 			hx509_cert_init_SecFramework: <>
+  839 			krb5_init_creds_set_pkinit_client_cert: <>
+  840 			CFStringCreateWithFormat: <>
+  841 			CFSTR: <>
+  842 			krb5_init_creds_set_password: <>
+  843 			krb5_init_creds_get: <>
+  844 			krb5_get_init_creds_opt_free: <>
+  845 			krb5_init_creds_get_creds: <>
+  846 			krb5_cc_cache_match: <>
+  847 			krb5_cc_new_unique: <>
+  848 			krb5_cc_initialize: <>
+  849 			krb5_cc_store_cred: <>
+  850 			krb5_init_creds_store_config: <>
+  851 			KRBCredAddReference: OSStatus (), <./Source/KerberosHelper.c 1580>
+  852 				KRBCredChangeReferenceCount: 334
+  853 			strlen: <>
+  854 			krb5_cc_set_config: <>
+  855 			krb5_init_creds_free: <>
+  856 			krb5_cc_close: <>
+  857 			krb5_free_cred_contents: <>
+  858 			CFRelease: <>
+  859 			krb5_free_principal: <>
+  860 		getpid: <>
+  861 		KRBCopyServicePrincipalInfo: 747
+  862 		sleep: <>

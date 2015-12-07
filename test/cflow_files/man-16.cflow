@@ -1,0 +1,671 @@
+    1 	main: int (), <./man/gencat/gencat.c 88>
+    2 		optParseOptions: <>
+    3 		just_filename: char * (), <./man/misc/man-preformat.c 247>
+    4 			strrchr: <>
+    5 		fprintf: <>
+    6 		strrchr: <>
+    7 		sprintf: <>
+    8 		install_it: void (), <./man/misc/man-preformat.c 198>
+    9 			unlink: <>
+   10 			compute_mkdir_command:  -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- void (), <./man/misc/man-preformat.c 52>
+   11 			extract_dot_so_stmt: void (), <./man/misc/man-preformat.c 91>
+   12 				fopen: <>
+   13 				fgets: <>
+   14 				fclose: <>
+   15 				strncmp: <>
+   16 				snprintf: <>
+   17 			create_symlink: void (), <./man/misc/man-preformat.c 145>
+   18 				strrchr: <>
+   19 				fprintf: <>
+   20 				strncpy: <>
+   21 				strlen: <>
+   22 				strcat: <>
+   23 				sprintf: <>
+   24 				printf: <>
+   25 				system: <>
+   26 			format_page: void (), <./man/misc/man-preformat.c 112>
+   27 				snprintf: <>
+   28 				printf: <>
+   29 				system: <>
+   30 				fprintf: <>
+   31 				chmod: <>
+   32 		CHECK: <>
+   33 		setlocale: <>
+   34 		setlang: void (), <./man/src/man.c 1198>
+   35 			getenv: <>
+   36 			strncmp: <>
+   37 		getenv: <>
+   38 		mkprogname: const char * (), <./man/src/util.c 35>
+   39 			strrchr: <>
+   40 			my_strdup: char * (), <./man/src/util.c 229>
+   41 				my_malloc: char * (), <./man/src/util.c 221>
+   42 					malloc: <>
+   43 					fatal: void (), <./man/src/gripes.c 120>
+   44 						fprintf: <>
+   45 						va_start: <>
+   46 						vfprintf: <>
+   47 						getmsg: char * (), <./man/src/gripes.c 88>
+   48 							fprintf: <>
+   49 							exit: <>
+   50 							catinit: void (), <./man/src/gripes.c 37>
+   51 								my_catopen: nl_catd (), <./man/catopen/catopen.c 24>
+   52 									catopen: <>
+   53 									index: <>
+   54 									open: <>
+   55 									getenv: <>
+   56 									my_catopenpath: nl_catd (), <./man/catopen/catopen.c 93>
+   57 										strlen: <>
+   58 										getenv: <>
+   59 										index: <>
+   60 										my_malloc: 41
+   61 										strncpy: <>
+   62 										open: <>
+   63 										close: <>
+   64 										catopen: <>
+   65 										free: <>
+   66 								fprintf: <>
+   67 							catgets: <>
+   68 							is_suspect: int (), <./man/src/gripes.c 74>
+   69 						va_end: <>
+   70 						exit: <>
+   71 				strlen: <>
+   72 				strcpy: <>
+   73 		get_permissions: void (), <./man/src/util.c 83>
+   74 			getuid: <>
+   75 			geteuid: <>
+   76 			getgid: <>
+   77 			getegid: <>
+   78 		get_line_length: void (), <./man/src/man.c 108>
+   79 			getenv: <>
+   80 			atoi: <>
+   81 			isatty: <>
+   82 			ioctl: <>
+   83 			perror: <>
+   84 		man_getopt: <>
+   85 		strcmp: <>
+   86 		init_manpath: void (), <./man/src/manpath.c 415>
+   87 			getenv: <>
+   88 			split: void (), <./man/src/manpath.c 55>
+   89 				my_strdup: 40
+   90 				index: <>
+   91 				free: <>
+   92 			to_mandirlist: void (), <./man/src/manpath.c 401>
+   93 				add_to_mandirlist: void (), <./man/src/manpath.c 287>
+   94 					add_to_list: void (), <./man/src/manpath.c 182>
+   95 						getcwd: <>
+   96 						strlen: <>
+   97 						strncmp: <>
+   98 						rindex: <>
+   99 						strcat: <>
+  100 						strcpy: <>
+  101 						strcmp: <>
+  102 						strstr: <>
+  103 						is_directory: int (), <./man/src/manpath.c 101>
+  104 							stat: if (), <./man/gencat/gencat.c 195>
+  105 						gripe: void (), <./man/src/gripes.c 110>
+  106 							va_start: <>
+  107 							vfprintf: <>
+  108 							getmsg: 47
+  109 							va_end: <>
+  110 							fflush: <>
+  111 						my_malloc: 41
+  112 						free: <>
+  113 						my_strdup: 40
+  114 					getenv: <>
+  115 					split2: void (), <./man/src/manpath.c 76>
+  116 						my_strdup: 40
+  117 						index: <>
+  118 						free: <>
+  119 					add_to_mandirlist_x: void (), <./man/src/manpath.c 268>
+  120 						add_to_list: 94
+  121 						strlen: <>
+  122 						strncpy: <>
+  123 				getenv: <>
+  124 				split: 88
+  125 				get_manpath_from_pathdir: void (), <./man/src/manpath.c 322>
+  126 					gripe: 105
+  127 					strcmp: <>
+  128 					add_to_mandirlist: 93
+  129 					find_man_subdir: char * (), <./man/src/manpath.c 115>
+  130 						strlen: <>
+  131 						my_malloc: 41
+  132 						memcpy: <>
+  133 						strcpy: <>
+  134 						is_directory: 103
+  135 						rindex: <>
+  136 						free: <>
+  137 					free: <>
+  138 				add_default_manpath: void (), <./man/src/manpath.c 370>
+  139 					gripe: 105
+  140 					add_to_mandirlist: 93
+  141 					xcselect_get_manpaths: <>
+  142 					xcselect_manpaths_get_num_paths: <>
+  143 					xcselect_manpaths_get_path: <>
+  144 					xcselect_manpaths_free: <>
+  145 		prmanpath: void (), <./man/src/manpath.c 430>
+  146 			printf: <>
+  147 		exit: <>
+  148 		gripe: 105
+  149 		get_section_list: char ** (), <./man/src/man.c 1104>
+  150 			getenv: <>
+  151 			getval: const char * (), <./man/src/man-config.c 64>
+  152 				strcmp: <>
+  153 				gripe: 105
+  154 			my_strdup: 40
+  155 			strchr: <>
+  156 			SIZE: <>
+  157 		is_section: char * (), <./man/src/man.c 179>
+  158 			isdigit: <>
+  159 			strlen: <>
+  160 			my_strdup: 40
+  161 			strcmp: <>
+  162 		do_global_apropos: int (), <./man/src/man.c 1133>
+  163 			init_manpath: 86
+  164 			gripe: 105
+  165 			my_xsprintf: char * (), <./man/src/util.c 260>
+  166 				strlen: <>
+  167 				my_strdup: 40
+  168 				va_start: <>
+  169 				va_arg: <>
+  170 				is_shell_safe: int (), <./man/src/util.c 244>
+  171 					strchr: <>
+  172 				nothing: void (), <./man/src/util.c 257>
+  173 				fprintf: <>
+  174 				exit: <>
+  175 				va_end: <>
+  176 				my_malloc: 41
+  177 				vsprintf: <>
+  178 			glob_filename: char ** (), <./man/src/glob.c 518>
+  179 				glob: <>
+  180 				malloc: <>
+  181 				strdup: <>
+  182 				globfree: <>
+  183 				rindex: <>
+  184 				alloca: <>
+  185 				bcopy: int (), <./man/gencat/genlib.c 57>
+  186 					memcpy: <>
+  187 				glob_pattern_p: int (), <./man/src/glob.c 143>
+  188 				glob_filename: 178
+  189 				free: <>
+  190 				glob_vector: char ** (), <./man/src/glob.c 343>
+  191 					opendir: <>
+  192 					closedir: <>
+  193 					readdir: <>
+  194 					REAL_DIR_ENTRY: <>
+  195 					glob_match: int (), <./man/src/glob.c 195>
+  196 						glob_match_after_star: int (), <./man/src/glob.c 297>
+  197 							glob_match: 195
+  198 					malloc: <>
+  199 					alloca: <>
+  200 					D_NAMLEN: <>
+  201 					bcopy: 185
+  202 					free: <>
+  203 				glob_dir_to_array: char ** (), <./man/src/glob.c 468>
+  204 					strlen: <>
+  205 					malloc: <>
+  206 					strcpy: <>
+  207 					free: <>
+  208 				realloc: <>
+  209 				throw_to_top_level: <>
+  210 			free: <>
+  211 			get_expander: const char * (), <./man/src/man-config.c 188>
+  212 				strlen: <>
+  213 				rindex: <>
+  214 				strncmp: <>
+  215 				strcmp: <>
+  216 				getval: 151
+  217 			do_system_command: int (), <./man/src/util.c 203>
+  218 				strncmp: <>
+  219 				strlen: <>
+  220 				gripe: 105
+  221 				my_system: int (), <./man/src/util.c 135>
+  222 					system1: int (), <./man/src/util.c 117>
+  223 						signal: <>
+  224 						catch_int: void (), <./man/src/util.c 112>
+  225 						system: <>
+  226 						WIFSIGNALED: <>
+  227 						WTERMSIG: <>
+  228 						exit: <>
+  229 					setuid: <>
+  230 					setgid: <>
+  231 					WIFEXITED: <>
+  232 					WEXITSTATUS: <>
+  233 					fflush: <>
+  234 					fork: <>
+  235 					perror: <>
+  236 					fatal: 43
+  237 					exit: <>
+  238 					wait: <>
+  239 			printf: <>
+  240 			fflush: <>
+  241 			getchar: <>
+  242 			index: <>
+  243 			exit: <>
+  244 			strcpy: <>
+  245 			rindex: <>
+  246 			format_and_display: int (), <./man/src/man.c 928>
+  247 				access: <>
+  248 				mandir_of: const char * (), <./man/src/to_cat.c 35>
+  249 					my_strdup: 40
+  250 					mantail_of: char * (), <./man/src/to_cat.c 17>
+  251 					free: <>
+  252 				ultimate_source: const char * (), <./man/src/man.c 320>
+  253 					strlen: <>
+  254 					strcpy: <>
+  255 					get_expander: 211
+  256 					my_xsprintf: 165
+  257 					my_popen: FILE * (), <./man/src/util.c 178>
+  258 						popen: <>
+  259 						setuid: <>
+  260 						setgid: <>
+  261 						no_privileges: void (), <./man/src/util.c 92>
+  262 							setreuid: <>
+  263 							setregid: <>
+  264 					perror: <>
+  265 					gripe: 105
+  266 					fgets: <>
+  267 					pclose: <>
+  268 					fopen: <>
+  269 					rindex: <>
+  270 					strcat: <>
+  271 					fclose: <>
+  272 					isascii: <>
+  273 					strncmp: <>
+  274 					my_strdup: 40
+  275 					strcmp: <>
+  276 					index: <>
+  277 				make_roff_command: char * (), <./man/src/man.c 554>
+  278 					setll: int (), <./man/src/man.c 139>
+  279 					setpl: char * (), <./man/src/man.c 151>
+  280 						getenv: <>
+  281 						isatty: <>
+  282 					gripe: 105
+  283 					get_expander: 211
+  284 					get_converter: const char * (), <./man/src/man-iconv.c 160>
+  285 						find_iconv: char * (), <./man/src/man-iconv.c 39>
+  286 							getenv: <>
+  287 							access: <>
+  288 							my_strdup: 40
+  289 						get_man_charset: char * (), <./man/src/man-iconv.c 81>
+  290 							getenv: <>
+  291 							fprintf: <>
+  292 							my_strdup: 40
+  293 							strrchr: <>
+  294 							strcmp: <>
+  295 							my_xsprintf: 165
+  296 							fopen: <>
+  297 							free: <>
+  298 							fgets: <>
+  299 							fclose: <>
+  300 							strchr: <>
+  301 						get_locale_charset: char * (), <./man/src/man-iconv.c 69>
+  302 							getenv: <>
+  303 							setlocale: <>
+  304 							nl_langinfo: <>
+  305 						fprintf: <>
+  306 						is_conversion_supported: int (), <./man/src/man-iconv.c 129>
+  307 							strcmp: <>
+  308 							iconv_open: <>
+  309 							iconv_close: <>
+  310 						my_xsprintf: 165
+  311 						iconv_extra_flags: char * (), <./man/src/man-iconv.c 55>
+  312 							getenv: <>
+  313 							my_strdup: 40
+  314 					strcat: <>
+  315 					sprintf: <>
+  316 					eos: char * (), <./man/src/man.c 545>
+  317 					strcmp: <>
+  318 					my_xsprintf: 165
+  319 					getval: 151
+  320 					strlen: <>
+  321 					exit: <>
+  322 					strcpy: <>
+  323 					parse_roff_directive: int (), <./man/src/man.c 473>
+  324 						strstr: <>
+  325 						is_lang_page: int (), <./man/src/man.c 457>
+  326 							snprintf: <>
+  327 							strstr: <>
+  328 							strlen: <>
+  329 						gripe: 105
+  330 						add_directive: void (), <./man/src/man.c 437>
+  331 							getval: 151
+  332 							strlen: <>
+  333 							strcpy: <>
+  334 							strcat: <>
+  335 							my_xsprintf: 165
+  336 							free: <>
+  337 						getval: 151
+  338 					my_popen: 257
+  339 					perror: <>
+  340 					fgets: <>
+  341 					pclose: <>
+  342 					fopen: <>
+  343 					fclose: <>
+  344 					getenv: <>
+  345 				my_xsprintf: 165
+  346 				do_system_command: 217
+  347 				make_and_display_cat_file: int (), <./man/src/man.c 853>
+  348 					getval: 151
+  349 					convert_to_cat: const char * (), <./man/src/to_cat.c 61>
+  350 						my_strdup: 40
+  351 						rindex: <>
+  352 						get_expander: 211
+  353 						mantail_of: char * (), <./man/src/to_cat.c 17>
+  354 						strncmp: <>
+  355 						strlen: <>
+  356 						strcmp: <>
+  357 						my_malloc: 41
+  358 						strcpy: <>
+  359 						strcat: <>
+  360 						free: <>
+  361 					gripe: 105
+  362 					is_newer: int (), <./man/src/util.c 59>
+  363 						stat: if (), <./man/gencat/gencat.c 195>
+  364 					access: <>
+  365 					printf: <>
+  366 					make_cat_file: int (), <./man/src/man.c 722>
+  367 						stat: if (), <./man/gencat/gencat.c 195>
+  368 						S_ISREG: <>
+  369 						gripe: 105
+  370 						fopen: <>
+  371 						unlink: <>
+  372 						my_xsprintf: 165
+  373 						do_system_command: 217
+  374 						fclose: <>
+  375 						chmod: <>
+  376 						make_roff_command: 277
+  377 						getval: 151
+  378 						signal: <>
+  379 					remove_other_catfiles: void (), <./man/src/man.c 209>
+  380 						my_strdup: 40
+  381 						rindex: <>
+  382 						strcmp: <>
+  383 						getval: 151
+  384 						strcpy: <>
+  385 						glob_filename: 178
+  386 						strlen: <>
+  387 						remove_file: void (), <./man/src/man.c 195>
+  388 							unlink: <>
+  389 							perror: <>
+  390 							gripe: 105
+  391 						get_expander: 211
+  392 					display_cat_file: int (), <./man/src/man.c 249>
+  393 						access: <>
+  394 						different_cat_file: int (), <./man/src/different.c 39>
+  395 							is_different: int (), <./man/src/different.c 16>
+  396 								getval: 151
+  397 								my_xsprintf: 165
+  398 								do_system_command: 217
+  399 								gripe: 105
+  400 								my_malloc: 41
+  401 								my_strdup: 40
+  402 						get_expander: 211
+  403 						isatty: <>
+  404 						my_xsprintf: 165
+  405 						getval: 151
+  406 						do_system_command: 217
+  407 				printf: <>
+  408 				display_man_file: int (), <./man/src/man.c 831>
+  409 					different_man_file: int (), <./man/src/different.c 44>
+  410 						is_different: 395
+  411 					make_roff_command: 277
+  412 					my_xsprintf: 165
+  413 					do_system_command: 217
+  414 		do_apropos: int (), <./man/src/man.c 1216>
+  415 			my_xsprintf: 165
+  416 			getval: 151
+  417 			do_system_command: 217
+  418 		do_whatis: int (), <./man/src/man.c 1227>
+  419 			my_xsprintf: 165
+  420 			getval: 151
+  421 			do_system_command: 217
+  422 		man: int (), <./man/src/man.c 986>
+  423 			index: <>
+  424 			fopen: <>
+  425 			perror: <>
+  426 			fclose: <>
+  427 			getcwd: <>
+  428 			strlen: <>
+  429 			strcat: <>
+  430 			strcpy: <>
+  431 			fprintf: <>
+  432 			rindex: <>
+  433 			ultimate_source: 252
+  434 			printf: <>
+  435 			display_man_file: 408
+  436 			fflush: <>
+  437 			init_manpath: 86
+  438 			isatty: <>
+  439 			setll: 278
+  440 			getval: 151
+  441 			manfile: struct manpage (), <./man/src/manfile.c 301>
+  442 			convert_to_cat: 349
+  443 			format_and_display: 246
+  444 			display_cat_file: 392
+  445 			display_html_file: int (), <./man/src/man.c 283>
+  446 				access: <>
+  447 				different_cat_file: 394
+  448 				isatty: <>
+  449 				my_xsprintf: 165
+  450 				do_system_command: 217
+  451 		glob_filename: 178
+  452 		puts: <>
+  453 		perror: <>
+  454 		usage: void (), <./man/src/makemsg.c 33>
+  455 			fprintf: <>
+  456 			exit: <>
+  457 		fopen: <>
+  458 		rindex: <>
+  459 		fputs: <>
+  460 		fgets: <>
+  461 		whitespace: <>
+  462 		index: <>
+  463 		fclose: <>
+  464 		printf: <>
+  465 		getopt: <>
+  466 		goto_dir: void (), <./man/man2html/man2html.c 3043>
+  467 			xstrdup: char * (), <./man/man2html/man2html.c 3009>
+  468 				strdup: <>
+  469 				error_page: void (), <./man/man2html/man2html.c 2996>
+  470 					printf: <>
+  471 					va_start: <>
+  472 					vfprintf: <>
+  473 					va_end: <>
+  474 					exit: <>
+  475 			strrchr: <>
+  476 			chdir: <>
+  477 			error_page: 469
+  478 		error_page: 469
+  479 		set_cgibase: void (), <./man/man2html/cgibase.c 53>
+  480 			strlen: <>
+  481 			xmalloc: void * (), <./man/man2html/man2html.c 3018>
+  482 				malloc: <>
+  483 				error_page: 469
+  484 			sprintf: <>
+  485 		set_lynxcgibase: void (), <./man/man2html/cgibase.c 44>
+  486 			strlen: <>
+  487 			xmalloc: 481
+  488 			sprintf: <>
+  489 		set_man2htmlpath: void (), <./man/man2html/cgibase.c 62>
+  490 			xstrdup: 467
+  491 		set_separator: void (), <./man/man2html/cgibase.c 39>
+  492 		set_relative_html_links: void (), <./man/man2html/cgibase.c 67>
+  493 		usage: void (), <./man/man2html/man2html.c 3036>
+  494 			error_page: 469
+  495 		clearerr: <>
+  496 		feof: <>
+  497 		xrealloc: void * (), <./man/man2html/man2html.c 3027>
+  498 			realloc: <>
+  499 			error_page: 469
+  500 		fread: <>
+  501 		fstat: <>
+  502 		fileno: <>
+  503 		xmalloc: 481
+  504 		stdinit: void (), <./man/man2html/strdefs.c 139>
+  505 			xstrdup: 467
+  506 		scan_troff: char * (), <./man/man2html/man2html.c 2787>
+  507 			strlen: <>
+  508 			xmalloc: 481
+  509 			scan_escape: char * (), <./man/man2html/man2html.c 510>
+  510 				scan_escape: 509
+  511 				expand_char: char * (), <./man/man2html/man2html.c 59>
+  512 					V: <>
+  513 					printf: <>
+  514 					exit: <>
+  515 				expand_string: char * (), <./man/man2html/man2html.c 85>
+  516 				change_to_font: char * (), <./man/man2html/man2html.c 448>
+  517 					V: <>
+  518 				isdigit: <>
+  519 				change_to_size: char * (), <./man/man2html/man2html.c 472>
+  520 					strcat: <>
+  521 					change_to_font: 516
+  522 					strlen: <>
+  523 				V: <>
+  524 				out_html: void (), <./man/man2html/man2html.c 302>
+  525 					xrealloc: 497
+  526 					add_links: void (), <./man/man2html/man2html.c 108>
+  527 						strlen: <>
+  528 						strstr: <>
+  529 						strchr: <>
+  530 						printf: <>
+  531 						include_file_html: void (), <./man/man2html/cgibase.c 99>
+  532 							printf: <>
+  533 						isalnum: <>
+  534 						isdigit: <>
+  535 						isalpha: <>
+  536 						man_page_html: void (), <./man/man2html/cgibase.c 104>
+  537 							printf: <>
+  538 						ftp_html: void (), <./man/man2html/cgibase.c 126>
+  539 							printf: <>
+  540 						www_html: void (), <./man/man2html/cgibase.c 131>
+  541 							printf: <>
+  542 						mailto_html: void (), <./man/man2html/cgibase.c 136>
+  543 							printf: <>
+  544 						islower: <>
+  545 						isspace: <>
+  546 						url_html: void (), <./man/man2html/cgibase.c 141>
+  547 							printf: <>
+  548 			scan_request: char * (), <./man/man2html/man2html.c 1512>
+  549 				skip_till_newline: char * (), <./man/man2html/man2html.c 1490>
+  550 				scan_escape: 509
+  551 				V: <>
+  552 				printf: <>
+  553 				fprintf: <>
+  554 				exit: <>
+  555 				strncmp: <>
+  556 				xmalloc: 481
+  557 				free: <>
+  558 				scan_troff: 506
+  559 				isspace: <>
+  560 				out_html: 524
+  561 				change_to_font: 516
+  562 				change_to_size: 519
+  563 				scan_expression: char * (), <./man/man2html/man2html.c 1119>
+  564 					scan_expression: 563
+  565 					strncmp: <>
+  566 					scan_troff: 506
+  567 					strcmp: <>
+  568 					free: <>
+  569 					isspace: <>
+  570 					isdigit: <>
+  571 					isalpha: <>
+  572 					scan_escape: 509
+  573 					fprintf: <>
+  574 				stat: if (), <./man/gencat/gencat.c 195>
+  575 				strrchr: <>
+  576 				fopen: <>
+  577 				fread: <>
+  578 				fclose: <>
+  579 				SIZE: <>
+  580 				dl_down: inline void (), <./man/man2html/man2html.c 391>
+  581 					dl_endlevel: inline void (), <./man/man2html/man2html.c 382>
+  582 						dl_end: inline void (), <./man/man2html/man2html.c 363>
+  583 							SIZE: <>
+  584 							out_html: 524
+  585 						out_html: 524
+  586 					dl_end: 582
+  587 				trans_char: void (), <./man/man2html/man2html.c 1257>
+  588 				fill_words: char * (), <./man/man2html/man2html.c 1284>
+  589 				dl_begin: inline void (), <./man/man2html/man2html.c 354>
+  590 					SIZE: <>
+  591 					out_html: 524
+  592 				dl_end: 582
+  593 				dl_newlevel: inline void (), <./man/man2html/man2html.c 374>
+  594 					SIZE: <>
+  595 					out_html: 524
+  596 				dl_endlevel: 581
+  597 				add_to_index: void (), <./man/man2html/man2html.c 1460>
+  598 					manidx_need: void (), <./man/man2html/man2html.c 1452>
+  599 						xrealloc: 497
+  600 					strcpy: <>
+  601 					scan_troff: 506
+  602 					strlen: <>
+  603 					sprintf: <>
+  604 					free: <>
+  605 				scan_troff_mandoc: char * (), <./man/man2html/man2html.c 2967>
+  606 					ispunct: <>
+  607 					isspace: <>
+  608 					scan_troff: 506
+  609 				scan_table: char * (), <./man/man2html/man2html.c 846>
+  610 					out_html: 524
+  611 					change_to_font: 516
+  612 					change_to_size: 519
+  613 					isspace: <>
+  614 					strncmp: <>
+  615 					isdigit: <>
+  616 					scan_format: char * (), <./man/man2html/man2html.c 721>
+  617 						clear_table: void (), <./man/man2html/man2html.c 698>
+  618 							free: <>
+  619 						xmalloc: 481
+  620 						toupper: <>
+  621 						isspace: <>
+  622 						isdigit: <>
+  623 						scan_expression: 563
+  624 					next_row: TABLEROW * (), <./man/man2html/man2html.c 816>
+  625 						next_row: 624
+  626 						xmalloc: 481
+  627 					xmalloc: 481
+  628 					strstr: <>
+  629 					scan_troff: 506
+  630 					free: <>
+  631 					clear_table: 617
+  632 					sprintf: <>
+  633 				section_name: char * (), <./man/man2html/man2html.c 1435>
+  634 					strcmp: <>
+  635 				man_page_html: 536
+  636 				lookup_abbrev: char * (), <./man/man2html/abbrev.c 53>
+  637 					strcmp: <>
+  638 				strlen: <>
+  639 				strchr: <>
+  640 				strstr: <>
+  641 				dl_newlevel_type: inline void (), <./man/man2html/man2html.c 403>
+  642 					SIZE: <>
+  643 					out_html: 524
+  644 				dl_endlevel_type: inline void (), <./man/man2html/man2html.c 412>
+  645 					SIZE: <>
+  646 					out_html: 524
+  647 				dl_type: inline int (), <./man/man2html/man2html.c 398>
+  648 					SIZE: <>
+  649 				isalnum: <>
+  650 				isdigit: <>
+  651 				isupper: <>
+  652 				islower: <>
+  653 				xstrdup: 467
+  654 				strncpy: <>
+  655 			isupper: <>
+  656 			islower: <>
+  657 			isspace: <>
+  658 			isalnum: <>
+  659 			out_html: 524
+  660 			SIZE: <>
+  661 		dl_down: 580
+  662 		out_html: 524
+  663 		change_to_font: 516
+  664 		change_to_size: 519
+  665 		print_sig: void (), <./man/man2html/cgibase.c 81>
+  666 			sprintf: <>
+  667 			time: <>
+  668 			gmtime: <>
+  669 			strftime: <>
+  670 			printf: <>
+  671 		free: <>

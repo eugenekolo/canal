@@ -1,0 +1,1195 @@
+    1 	b64_ntop: int (), <./base64.c 141>
+    2 		Assert: <>
+    3 	b64_pton: int (), <./base64.c 207>
+    4 		isspace: <>
+    5 		strchr: <>
+    6 		abort: <>
+    7 	dn_comp: int (), <./res_comp.c 116>
+    8 		ns_name_compress: int (), <./ns_name.c 603>
+    9 			ns_name_pton: int (), <./ns_name.c 203>
+   10 				strchr: <>
+   11 				encode_bitsring: int (), <./ns_name.c 825>
+   12 					isxdigit: <>
+   13 					strtol: <>
+   14 					isdigit: if (), <./res_debug.c 884>
+   15 			ns_name_pack: int (), <./ns_name.c 475>
+   16 				labellen: int (), <./ns_name.c 930>
+   17 				dn_find: int (), <./ns_name.c 734>
+   18 					labellen: 16
+   19 					mklower: int (), <./ns_name.c 718>
+   20 				memcpy: <>
+   21 	dn_expand: int (), <./res_comp.c 100>
+   22 		ns_name_uncompress: int (), <./ns_name.c 575>
+   23 			ns_name_unpack: int (), <./ns_name.c 384>
+   24 				labellen: 16
+   25 				memcpy: <>
+   26 			ns_name_ntop: int (), <./ns_name.c 100>
+   27 				labellen: 16
+   28 				decode_bitstring: int (), <./ns_name.c 793>
+   29 					SPRINTF: <>
+   30 				special: int (), <./ns_name.c 684>
+   31 				printable: int (), <./ns_name.c 709>
+   32 	dn_skipname: int (), <./res_comp.c 128>
+   33 		ns_name_skip: int (), <./ns_name.c 637>
+   34 			labellen: 16
+   35 	dns_all_server_addrs: void (), <./dns_util.c 2049>
+   36 		dns_search_list_count: uint32_t (), <./dns.c 1284>
+   37 		get_nsaddr: struct sockaddr (), <./res_send.c 847>
+   38 		memcmp: <>
+   39 		calloc: <>
+   40 		reallocf: <>
+   41 		memset: <>
+   42 		memcpy: <>
+   43 	dns_async_cancel: void (), <./dns_async.c 162>
+   44 		si_async_cancel: <>
+   45 	dns_async_handle_reply: int32_t (), <./dns_async.c 181>
+   46 		si_async_handle_reply: <>
+   47 	dns_async_send: int32_t (), <./dns_async.c 168>
+   48 		dns_async_start: int32_t (), <./dns_async.c 119>
+   49 			si_module_with_name: <>
+   50 			calloc: <>
+   51 			si_module_release: <>
+   52 			si_async_call: <>
+   53 			free: <>
+   54 	dns_async_start: 48
+   55 	dns_build_reply: char * (), <./dns_util.c 1163>
+   56 		malloc: <>
+   57 		memset: <>
+   58 		htons: <>
+   59 	dns_class_number: int32_t (), <./dns_util.c 1545>
+   60 		strcasecmp: <>
+   61 	dns_class_string: const char * (), <./dns_util.c 1528>
+   62 	dns_free: void (), <./dns.c 1181>
+   63 		free: <>
+   64 	dns_free_question: void (), <./dns_util.c 1212>
+   65 		free: <>
+   66 	dns_free_reply: void (), <./dns_util.c 1038>
+   67 		free: <>
+   68 		dns_free_resource_record: void (), <./dns_util.c 883>
+   69 			free: <>
+   70 	dns_free_resource_record: 68
+   71 	dns_get_buffer_size: uint32_t (), <./dns_util.c 1241>
+   72 	dns_lookup: dns_reply_t * (), <./dns_util.c 1303>
+   73 		dns_lookup_soa_min: dns_reply_t * (), <./dns_util.c 1251>
+   74 			malloc: <>
+   75 			calloc: <>
+   76 			free: <>
+   77 			dns_parse_packet: dns_reply_t * (), <./dns_util.c 791>
+   78 				calloc: <>
+   79 				dns_free_reply: 66
+   80 	dns_lookup_soa_min: 73
+   81 	dns_open: dns_handle_t (), <./dns.c 1076>
+   82 		calloc: <>
+   83 		pthread_mutex_lock: <>
+   84 		notify_register_check: <>
+   85 		pthread_mutex_unlock: <>
+   86 		notify_check: <>
+   87 		notify_get_state: <>
+   88 		strcmp: <>
+   89 		free: <>
+   90 		memset: <>
+   91 		stat: <>
+   92 		dns_set_debug: void (), <./dns.c 1262>
+   93 	dns_parse_packet: 77
+   94 	dns_parse_question: dns_question_t * (), <./dns_util.c 779>
+   95 	dns_parse_resource_record: dns_resource_record_t * (), <./dns_util.c 735>
+   96 	dns_print_handle: void (), <./dns_util.c 2021>
+   97 		fprintf: <>
+   98 	dns_print_question: void (), <./dns_util.c 1568>
+   99 	dns_print_reply: void (), <./dns_util.c 1733>
+  100 		fprintf: <>
+  101 		inet_ntop: <>
+  102 		memcpy: <>
+  103 		if_indextoname: <>
+  104 	dns_print_resource_record: void (), <./dns_util.c 1727>
+  105 	dns_query: int (), <./dns.c 1675>
+  106 	dns_res_once: int (), <./dns_util.c 2117>
+  107 		res_state_new: res_state (), <./res_data.c 85>
+  108 			calloc: <>
+  109 			free: <>
+  110 		res_randomid: u_int (), <./res_init.c 1366>
+  111 			arc4random: <>
+  112 			gettimeofday: <>
+  113 			getpid: <>
+  114 		strcpy: <>
+  115 		memcpy: <>
+  116 		res_nmkquery: int (), <./res_mkquery.c 102>
+  117 			UNUSED: <>
+  118 			printf: <>
+  119 			p_class: const char * (), <./res_debug.c 589>
+  120 				sym_ntos: const char * (), <./res_debug.c 515>
+  121 					sprintf: <>
+  122 				sprintf: <>
+  123 			p_type: const char * (), <./res_debug.c 553>
+  124 				sym_ntos: 120
+  125 				sprintf: <>
+  126 			memset: <>
+  127 			res_randomid: 110
+  128 			htons: <>
+  129 			dn_comp: 7
+  130 			putshort: void (), <./res_comp.c 256>
+  131 				ns_put16: void (), <./ns_netint.c 55>
+  132 					NS_PUT16: <>
+  133 			putlong: void (), <./res_comp.c 255>
+  134 				ns_put32: void (), <./ns_netint.c 60>
+  135 					NS_PUT32: <>
+  136 			memcpy: <>
+  137 		dns_res_send: int (), <./res_send.c 505>
+  138 			DprintQ: <>
+  139 			EXT: <>
+  140 			sock_eq: int (), <./res_send.c 1540>
+  141 				IN6_ARE_ADDR_EQUAL: <>
+  142 			getsockname: <>
+  143 			get_nsaddr: struct sockaddr (), <./res_send.c 847>
+  144 			res_nclose: void (), <./res_init.c 1385>
+  145 				close: <>
+  146 			asprintf: <>
+  147 			pthread_self: <>
+  148 			notify_register_plain: <>
+  149 			free: <>
+  150 			get_salen: int (), <./res_send.c 831>
+  151 			notify_cancel: <>
+  152 			notify_get_state: <>
+  153 			Dprint: <>
+  154 			getnameinfo: <>
+  155 			send_vc: int (), <./res_send.c 870>
+  156 				get_nsaddr: struct sockaddr (), <./res_send.c 847>
+  157 				get_salen: 150
+  158 				notify_get_state: <>
+  159 				Dprint: <>
+  160 				getpeername: <>
+  161 				sock_eq: 140
+  162 				res_nclose: 144
+  163 				socket: <>
+  164 				Perror: void (), <./res_send.c 1531>
+  165 					fprintf: <>
+  166 					strerror: <>
+  167 				connect: <>
+  168 				Aerror: void (), <./res_send.c 1508>
+  169 					getnameinfo: <>
+  170 					strncpy: <>
+  171 					fprintf: <>
+  172 					strerror: <>
+  173 				putshort: 130
+  174 				evConsIovec: struct iovec (), <./res_send.c 269>
+  175 				DE_CONST: <>
+  176 				writev: <>
+  177 				read: <>
+  178 				ns_get16: u_int (), <./ns_netint.c 39>
+  179 					NS_GET16: <>
+  180 				DprintQ: <>
+  181 				memcpy: <>
+  182 			send_dg: int (), <./res_send.c 1154>
+  183 				get_nsaddr: struct sockaddr (), <./res_send.c 847>
+  184 				get_salen: 150
+  185 				EXT: <>
+  186 				socket: <>
+  187 				res_nclose: 144
+  188 				Perror: 164
+  189 				bind_random: int (), <./res_send.c 166>
+  190 					res_randomid: 110
+  191 					memset: <>
+  192 					htons: <>
+  193 					bind: <>
+  194 				connect: <>
+  195 				Aerror: 168
+  196 				Dprint: <>
+  197 				setsockopt: <>
+  198 				IN_MULTICAST: <>
+  199 				ntohl: <>
+  200 				IN6_IS_ADDR_MULTICAST: <>
+  201 				getifaddrs: <>
+  202 				if_nametoindex: <>
+  203 				sendto: <>
+  204 				freeifaddrs: <>
+  205 				send: <>
+  206 				evNowTime: struct timespec (), <./res_send.c 300>
+  207 				evAddTime: struct timespec (), <./res_send.c 322>
+  208 				pthread_getspecific: <>
+  209 				evConsTime: struct timespec (), <./res_send.c 280>
+  210 				notify_get_state: <>
+  211 				FD_ZERO: <>
+  212 				FD_SET: <>
+  213 				MAX: <>
+  214 				evCmpTime: int (), <./res_send.c 357>
+  215 				evSubTime: struct timespec (), <./res_send.c 338>
+  216 				dns_pselect: int (), <./res_send.c 1568>
+  217 					evTimeVal: struct timeval (), <./res_send.c 310>
+  218 					sigprocmask: <>
+  219 					select: <>
+  220 					evTimeSpec: struct timespec (), <./res_send.c 290>
+  221 				pselect: <>
+  222 				FD_ISSET: <>
+  223 				internal_recvfrom: ssize_t (), <./res_send.c 1099>
+  224 					memset: <>
+  225 					recvmsg: <>
+  226 					CMSG_FIRSTHDR: <>
+  227 					CMSG_NXTHDR: <>
+  228 					CMSG_DATA: <>
+  229 					memcpy: <>
+  230 					if_nametoindex: <>
+  231 				memcpy: <>
+  232 				DprintQ: <>
+  233 				res_ourserver_p: int (), <./res_send.c 379>
+  234 					get_nsaddr: struct sockaddr (), <./res_send.c 847>
+  235 					EXT: <>
+  236 					IN6_IS_ADDR_UNSPECIFIED: <>
+  237 					IN6_ARE_ADDR_EQUAL: <>
+  238 				res_queriesmatch: int (), <./res_send.c 467>
+  239 					ntohs: <>
+  240 					dn_expand: 21
+  241 					ns_get16: 178
+  242 					res_nameinquery: int (), <./res_send.c 431>
+  243 						ntohs: <>
+  244 						dn_expand: 21
+  245 						ns_get16: 178
+  246 						ns_samename: int (), <./ns_samedomain.c 202>
+  247 							ns_makecanon: int (), <./ns_samedomain.c 172>
+  248 								strlen: <>
+  249 								strcpy: <>
+  250 							strcasecmp: <>
+  251 		res_client_close: void (), <./res_data.c 76>
+  252 			free: <>
+  253 	dns_res_send: 137
+  254 	dns_search: int (), <./dns.c 1702>
+  255 	dns_search_list_count: 36
+  256 	dns_search_list_domain: char * (), <./dns.c 1313>
+  257 	dns_server_list_count: uint32_t (), <./dns.c 1732>
+  258 	dns_set_buffer_size: void (), <./dns_util.c 1220>
+  259 		free: <>
+  260 		malloc: <>
+  261 	dns_set_debug: 92
+  262 	dns_type_number: int32_t (), <./dns_util.c 1469>
+  263 		strcasecmp: <>
+  264 	dns_type_string: const char * (), <./dns_util.c 1409>
+  265 	dst_buffer_to_key: DST_KEY * (), <./dst_api.c 778>
+  266 		dst_check_algorithm: int (), <./dst_api.c 153>
+  267 		EREPORT: <>
+  268 		dst_s_get_key_struct: DST_KEY * (), <./dst_api.c 173>
+  269 			dst_check_algorithm: 266
+  270 			malloc: <>
+  271 			memset: <>
+  272 			strdup: <>
+  273 		from_dns_key: <>
+  274 		dst_free_key: DST_KEY * (), <./dst_api.c 1028>
+  275 			destroy: <>
+  276 			EREPORT: <>
+  277 			free: <>
+  278 			SAFE_FREE: <>
+  279 		dst_key_to_dnskey: int (), <./dst_api.c 723>
+  280 			dst_check_algorithm: 266
+  281 			EREPORT: <>
+  282 			memset: <>
+  283 			dst_s_put_int16: void (), <./dst_support.c 209>
+  284 			to_dns_key: <>
+  285 		dst_s_dns_key_id: u_int16_t (), <./dst_support.c 138>
+  286 			dst_s_get_int16: u_int16_t (), <./dst_support.c 167>
+  287 			dst_s_id_calc: u_int16_t (), <./dst_support.c 109>
+  288 	dst_compare_keys: int (), <./dst_api.c 206>
+  289 		compare: <>
+  290 	dst_dnskey_to_key: DST_KEY * (), <./dst_api.c 662>
+  291 		dst_check_algorithm: 266
+  292 		EREPORT: <>
+  293 		dst_s_get_key_struct: 268
+  294 		dst_s_dns_key_id: 285
+  295 		dst_s_get_int16: 286
+  296 		from_dns_key: <>
+  297 		SAFE_FREE: <>
+  298 	dst_free_key: 274
+  299 	dst_generate_key: DST_KEY * (), <./dst_api.c 977>
+  300 		dst_check_algorithm: 266
+  301 		EREPORT: <>
+  302 		dst_s_get_key_struct: 268
+  303 		generate: <>
+  304 		dst_free_key: 274
+  305 		dst_key_to_dnskey: 279
+  306 		dst_s_dns_key_id: 285
+  307 	dst_hmac_md5_init: int (), <./dst_hmac_link.c 471>
+  308 		malloc: <>
+  309 		memset: <>
+  310 		sign: <>
+  311 		dst_hmac_md5_sign: int (), <./dst_hmac_link.c 88>
+  312 			malloc: <>
+  313 			MD5Init: <>
+  314 			MD5Update: <>
+  315 			MD5Final: <>
+  316 			SAFE_FREE: <>
+  317 		verify: <>
+  318 		dst_hmac_md5_verify: int (), <./dst_hmac_link.c 156>
+  319 			malloc: <>
+  320 			MD5Init: <>
+  321 			MD5Update: <>
+  322 			MD5Final: <>
+  323 			SAFE_FREE: <>
+  324 			memcmp: <>
+  325 		compare: <>
+  326 		dst_hmac_md5_compare_keys: int (), <./dst_hmac_link.c 407>
+  327 			memcmp: <>
+  328 		generate: <>
+  329 		dst_hmac_md5_generate_key: int (), <./dst_hmac_link.c 436>
+  330 		destroy: <>
+  331 		dst_hmac_md5_free_key_structure: void * (), <./dst_hmac_link.c 420>
+  332 			SAFE_FREE: <>
+  333 		to_dns_key: <>
+  334 		dst_hmac_md5_to_dns_key: int (), <./dst_hmac_link.c 381>
+  335 		from_dns_key: <>
+  336 		dst_buffer_to_hmac_md5: int (), <./dst_hmac_link.c 219>
+  337 			malloc: <>
+  338 			memset: <>
+  339 			MD5Init: <>
+  340 			MD5Update: <>
+  341 			MD5Final: <>
+  342 			memcpy: <>
+  343 		to_file_fmt: <>
+  344 		dst_hmac_md5_key_to_file_format: int (), <./dst_hmac_link.c 274>
+  345 			strlen: <>
+  346 			memset: <>
+  347 			sprintf: <>
+  348 			strchr: <>
+  349 			strcat: <>
+  350 			b64_ntop: 1
+  351 		from_file_fmt: <>
+  352 		dst_hmac_md5_key_from_file_format: int (), <./dst_hmac_link.c 332>
+  353 			memset: <>
+  354 			dst_s_verify_str: int (), <./dst_support.c 58>
+  355 				strlen: <>
+  356 				strncmp: <>
+  357 			strchr: <>
+  358 			malloc: <>
+  359 			memcpy: <>
+  360 			b64_pton: 3
+  361 			SAFE_FREE2: <>
+  362 			dst_buffer_to_hmac_md5: 336
+  363 	dst_init: void (), <./dst_api.c 100>
+  364 		getenv: <>
+  365 		strlen: <>
+  366 		EREPORT: <>
+  367 		stat: <>
+  368 		S_ISDIR: <>
+  369 		malloc: <>
+  370 		memcpy: <>
+  371 		memset: <>
+  372 		dst_hmac_md5_init: 307
+  373 	dst_key_to_buffer: int (), <./dst_api.c 815>
+  374 		to_dns_key: <>
+  375 	dst_read_key: DST_KEY * (), <./dst_api.c 336>
+  376 		dst_check_algorithm: 266
+  377 		EREPORT: <>
+  378 		strcpy: <>
+  379 		dst_s_read_public_key: DST_KEY * (), <./dst_api.c 478>
+  380 			EREPORT: <>
+  381 			dst_s_build_filename: int (), <./dst_support.c 285>
+  382 				memset: <>
+  383 				strlen: <>
+  384 				sprintf: <>
+  385 				strrchr: <>
+  386 			dst_s_fopen: FILE * (), <./dst_support.c 323>
+  387 				strcpy: <>
+  388 				strlen: <>
+  389 				strncpy: <>
+  390 				fopen: <>
+  391 				chmod: <>
+  392 			getc: <>
+  393 			isspace: <>
+  394 			isdigit: if (), <./res_debug.c 884>
+  395 			ungetc: <>
+  396 			fscanf: <>
+  397 			fgets: <>
+  398 			feof: <>
+  399 			fclose: <>
+  400 			strlen: <>
+  401 			b64_pton: 3
+  402 			dst_buffer_to_key: 265
+  403 		dst_s_get_key_struct: 268
+  404 		dst_s_read_private_key_file: int (), <./dst_api.c 846>
+  405 			EREPORT: <>
+  406 			dst_s_build_filename: 381
+  407 			dst_s_fopen: 386
+  408 			getcwd: <>
+  409 			fread: <>
+  410 			fclose: <>
+  411 			memcmp: <>
+  412 			dst_s_verify_str: 354
+  413 			sscanf: <>
+  414 			strcmp: <>
+  415 			SAFE_FREE2: <>
+  416 			strlen: <>
+  417 			strdup: <>
+  418 			from_file_fmt: <>
+  419 			dst_key_to_dnskey: 279
+  420 			dst_s_dns_key_id: 285
+  421 			memset: <>
+  422 		dst_free_key: 274
+  423 	dst_s_build_filename: 381
+  424 	dst_s_calculate_bits: int (), <./dst_support.c 87>
+  425 	dst_s_dns_key_id: 285
+  426 	dst_s_dump: void (), <./dst_support.c 349>
+  427 		UNUSED: <>
+  428 		b64_ntop: 1
+  429 		printf: <>
+  430 	dst_s_filename_length: size_t (), <./dst_support.c 249>
+  431 		strrchr: <>
+  432 		strlen: <>
+  433 	dst_s_fopen: 386
+  434 	dst_s_get_int16: 286
+  435 	dst_s_get_int32: u_int32_t (), <./dst_support.c 188>
+  436 	dst_s_put_int16: 283
+  437 	dst_s_put_int32: void (), <./dst_support.c 228>
+  438 	dst_s_verify_str: 354
+  439 	dst_sig_size: int (), <./dst_api.c 1061>
+  440 		EREPORT: <>
+  441 	dst_sign_data: int (), <./dst_api.c 253>
+  442 		DUMP: <>
+  443 		sign: <>
+  444 	dst_verify_data: int (), <./dst_api.c 297>
+  445 		DUMP: <>
+  446 		verify: <>
+  447 	dst_write_key: int (), <./dst_api.c 378>
+  448 		dst_check_algorithm: 266
+  449 		EREPORT: <>
+  450 		dst_s_write_public_key: int (), <./dst_api.c 602>
+  451 			memset: <>
+  452 			EREPORT: <>
+  453 			dst_key_to_dnskey: 279
+  454 			dst_s_build_filename: 381
+  455 			dst_s_fopen: 386
+  456 			b64_ntop: 1
+  457 			fprintf: <>
+  458 			fclose: <>
+  459 		dst_s_write_private_key: int (), <./dst_api.c 419>
+  460 			to_file_fmt: <>
+  461 			EREPORT: <>
+  462 			dst_s_build_filename: 381
+  463 			dst_s_fopen: 386
+  464 			fwrite: <>
+  465 			fclose: <>
+  466 			memset: <>
+  467 	fp_nquery: void (), <./res_data.c 170>
+  468 		res_init: int (), <./res_data.c 109>
+  469 			res_randomid: 110
+  470 			memset: <>
+  471 			calloc: <>
+  472 		res_pquery: void (), <./res_debug.c 234>
+  473 			ns_initparse: int (), <./ns_parse.c 102>
+  474 				memset: <>
+  475 				RETERR: <>
+  476 				NS_GET16: <>
+  477 				ns_skiprr: int (), <./ns_parse.c 78>
+  478 					dn_skipname: 32
+  479 					RETERR: <>
+  480 					NS_GET16: <>
+  481 				setsection: void (), <./ns_parse.c 199>
+  482 			fprintf: <>
+  483 			strerror: <>
+  484 			ns_msg_getflag: int (), <./ns_parse.c 73>
+  485 			ns_msg_id: <>
+  486 			ns_msg_count: <>
+  487 			p_rcode: const char * (), <./res_debug.c 663>
+  488 				sym_ntos: 120
+  489 			putc: <>
+  490 			p_section: const char * (), <./res_debug.c 571>
+  491 				sym_ntos: 120
+  492 			do_section: void (), <./res_debug.c 151>
+  493 				malloc: <>
+  494 				fprintf: <>
+  495 				ns_msg_getflag: 484
+  496 				ns_parserr: int (), <./ns_parse.c 139>
+  497 					RETERR: <>
+  498 					setsection: 481
+  499 					ns_skiprr: 477
+  500 					dn_expand: 21
+  501 					NS_GET16: <>
+  502 					NS_GET32: <>
+  503 				strerror: <>
+  504 				putc: <>
+  505 				p_section: 490
+  506 				ns_rr_name: <>
+  507 				p_type: 123
+  508 				ns_rr_type: <>
+  509 				p_class: 119
+  510 				ns_rr_class: <>
+  511 				ns_rr_ttl: <>
+  512 				ns_sprintrr: int (), <./ns_print.c 92>
+  513 					ns_sprintrrf: int (), <./ns_print.c 114>
+  514 						ns_samename: 246
+  515 						T: <>
+  516 						addstr: int (), <./ns_print.c 884>
+  517 							memcpy: <>
+  518 							addlen: void (), <./ns_print.c 873>
+  519 								INSIST: <>
+  520 						prune_origin: size_t (), <./ns_print.c 761>
+  521 							ns_samename: 246
+  522 						addtab: int (), <./ns_print.c 896>
+  523 							T: <>
+  524 							addstr: 516
+  525 						ns_format_ttl: int (), <./ns_ttl.c 58>
+  526 							T: <>
+  527 							fmt1: int (), <./ns_ttl.c 154>
+  528 								SPRINTF: <>
+  529 								strcpy: <>
+  530 							isascii: <>
+  531 							isupper: <>
+  532 							tolower: <>
+  533 						addlen: 518
+  534 						SPRINTF: <>
+  535 						p_class: 119
+  536 						p_type: 123
+  537 						inet_ntop: <>
+  538 						strlen: <>
+  539 						addname: int (), <./ns_print.c 829>
+  540 							dn_expand: 21
+  541 							prune_origin: 520
+  542 							addlen: 518
+  543 						charstr: int (), <./ns_print.c 795>
+  544 							addstr: 516
+  545 							strchr: <>
+  546 						ns_get32: u_long (), <./ns_netint.c 47>
+  547 							NS_GET32: <>
+  548 						ns_get16: 178
+  549 						inet_nsap_ntoa: <>
+  550 						loc_ntoa: <>
+  551 						dst_s_dns_key_id: 285
+  552 						b64_ntop: 1
+  553 						MIN: <>
+  554 						dn_count_labels: int (), <./res_debug.c 1053>
+  555 						p_secstodate: char * (), <./res_debug.c 1082>
+  556 							gmtime_r: <>
+  557 							gmtime: <>
+  558 							sprintf: <>
+  559 						NS_NXT_BIT_ISSET: <>
+  560 						sprintf: <>
+  561 						memset: <>
+  562 						memcpy: <>
+  563 						isascii: <>
+  564 						isprint: <>
+  565 					ns_msg_base: <>
+  566 					ns_msg_size: <>
+  567 					ns_rr_name: <>
+  568 					ns_rr_class: <>
+  569 					ns_rr_type: <>
+  570 					ns_rr_ttl: <>
+  571 					ns_rr_rdata: <>
+  572 					ns_rr_rdlen: <>
+  573 				free: <>
+  574 				fputs: <>
+  575 				fputc: <>
+  576 	fp_query: void (), <./res_data.c 184>
+  577 		fp_nquery: 467
+  578 	fp_resstat: void (), <./res_debug.c 140>
+  579 		fprintf: <>
+  580 		p_option: const char * (), <./res_debug.c 607>
+  581 			sprintf: <>
+  582 		putc: <>
+  583 	hostalias: const char * (), <./res_data.c 196>
+  584 		res_hostalias: const char * (), <./res_query.c 1043>
+  585 			getenv: <>
+  586 			fopen: <>
+  587 			setbuf: <>
+  588 			fgets: <>
+  589 			isspace: <>
+  590 			ns_samename: 246
+  591 			strncpy: <>
+  592 			fclose: <>
+  593 	ns_datetosecs: u_int32_t (), <./ns_date.c 59>
+  594 		strlen: <>
+  595 		memset: <>
+  596 		datepart: int (), <./ns_date.c 120>
+  597 			isdigit: if (), <./res_debug.c 884>
+  598 		isleap: <>
+  599 	ns_find_tsig: u_char * (), <./ns_verify.c 67>
+  600 		ns_skiprr: 477
+  601 		ntohs: <>
+  602 		dn_skipname: 32
+  603 		NS_GET16: <>
+  604 	ns_format_ttl: 525
+  605 	ns_get16: 178
+  606 	ns_get32: 546
+  607 	ns_initparse: 473
+  608 	ns_makecanon: 247
+  609 	ns_msg_getflag: 484
+  610 	ns_name_compress: 8
+  611 	ns_name_ntol: int (), <./ns_name.c 338>
+  612 		labellen: 16
+  613 		isupper: <>
+  614 		tolower: <>
+  615 	ns_name_ntop: 26
+  616 	ns_name_pack: 15
+  617 	ns_name_pton: 9
+  618 	ns_name_rollback: void (), <./ns_name.c 618>
+  619 	ns_name_skip: 33
+  620 	ns_name_uncompress: 22
+  621 	ns_name_unpack: 23
+  622 	ns_parse_ttl: int (), <./ns_ttl.c 103>
+  623 		isascii: <>
+  624 		isprint: <>
+  625 		isdigit: if (), <./res_debug.c 884>
+  626 		islower: <>
+  627 		toupper: <>
+  628 	ns_parserr: 496
+  629 	ns_put16: 131
+  630 	ns_put32: 134
+  631 	ns_samedomain: int (), <./ns_samedomain.c 56>
+  632 		strlen: <>
+  633 		strncasecmp: <>
+  634 	ns_samename: 246
+  635 	ns_sign: int (), <./ns_sign.c 83>
+  636 		ns_sign2: int (), <./ns_sign.c 93>
+  637 			dst_init: 363
+  638 			dn_comp: 7
+  639 			BOUNDS_CHECK: <>
+  640 			NS_PUT16: <>
+  641 			NS_PUT32: <>
+  642 			time: <>
+  643 			dst_sign_data: 441
+  644 			htons: <>
+  645 			ns_name_ntol: 611
+  646 			memcpy: <>
+  647 			ntohs: <>
+  648 	ns_sign2: 636
+  649 	ns_sign_tcp: int (), <./ns_sign.c 262>
+  650 		ns_sign_tcp2: int (), <./ns_sign.c 270>
+  651 			ns_sign2: 636
+  652 			htons: <>
+  653 			dst_sign_data: 441
+  654 			dn_comp: 7
+  655 			BOUNDS_CHECK: <>
+  656 			NS_PUT16: <>
+  657 			NS_PUT32: <>
+  658 			time: <>
+  659 			memcpy: <>
+  660 			ntohs: <>
+  661 	ns_sign_tcp2: 650
+  662 	ns_sign_tcp_init: int (), <./ns_sign.c 244>
+  663 		dst_init: 363
+  664 		memcpy: <>
+  665 	ns_skiprr: 477
+  666 	ns_sprintrr: 512
+  667 	ns_sprintrrf: 513
+  668 	ns_subdomain: int (), <./ns_samedomain.c 155>
+  669 		ns_samename: 246
+  670 		ns_samedomain: 631
+  671 	ns_verify: int (), <./ns_verify.c 142>
+  672 		dst_init: 363
+  673 		ns_find_tsig: 599
+  674 		dn_expand: 21
+  675 		BOUNDS_CHECK: <>
+  676 		NS_GET16: <>
+  677 		ns_samename: 246
+  678 		NS_GET32: <>
+  679 		htons: <>
+  680 		ntohs: <>
+  681 		dst_verify_data: 444
+  682 		ns_name_pton: 9
+  683 		ns_name_ntol: 611
+  684 		dn_skipname: 32
+  685 		memcpy: <>
+  686 		abs: <>
+  687 		time: <>
+  688 	ns_verify_tcp: int (), <./ns_verify.c 348>
+  689 		ns_verify: 671
+  690 		htons: <>
+  691 		dst_verify_data: 444
+  692 		ns_find_tsig: 599
+  693 		ntohs: <>
+  694 		dn_expand: 21
+  695 		BOUNDS_CHECK: <>
+  696 		NS_GET16: <>
+  697 		ns_samename: 246
+  698 		NS_GET32: <>
+  699 		NS_PUT16: <>
+  700 		NS_PUT32: <>
+  701 		memcpy: <>
+  702 		abs: <>
+  703 		time: <>
+  704 	ns_verify_tcp_init: int (), <./ns_verify.c 330>
+  705 		dst_init: 363
+  706 		memcpy: <>
+  707 	p_cdname: const u_char * (), <./res_debug.c 320>
+  708 		p_cdnname: const u_char * (), <./res_debug.c 306>
+  709 			dn_expand: 21
+  710 			putc: <>
+  711 			fputs: <>
+  712 	p_cdnname: 708
+  713 	p_class: 119
+  714 	p_option: 580
+  715 	p_query: void (), <./res_data.c 190>
+  716 		fp_query: 576
+  717 	p_rcode: 487
+  718 	p_secstodate: 555
+  719 	p_section: 490
+  720 	p_time: const char * (), <./res_debug.c 651>
+  721 		ns_format_ttl: 525
+  722 		sprintf: <>
+  723 	p_type: 123
+  724 	putlong: 133
+  725 	putshort: 130
+  726 	res_build: int (), <./res_init.c 260>
+  727 		strcmp: <>
+  728 		strncpy: <>
+  729 		strlen: <>
+  730 		memset: <>
+  731 		memcpy: <>
+  732 		atoi: <>
+  733 		inet_pton: <>
+  734 		htons: <>
+  735 		strchr: <>
+  736 		inet_aton: <>
+  737 		ntohl: <>
+  738 		IN_CLASSA: <>
+  739 		htonl: <>
+  740 		IN_CLASSB: <>
+  741 		res_build_sortlist: int (), <./res_init.c 211>
+  742 		strcpy: <>
+  743 	res_build_finish: int (), <./res_init.c 176>
+  744 		inet_makeaddr: <>
+  745 		htons: <>
+  746 	res_build_sortlist: 741
+  747 	res_build_start: res_state (), <./res_init.c 134>
+  748 		res_state_new: 107
+  749 		res_ndestroy: void (), <./res_init.c 1410>
+  750 			res_nclose: 144
+  751 			free: <>
+  752 		calloc: <>
+  753 		res_randomid: 110
+  754 		strcpy: <>
+  755 	res_buildprotolist: void (), <./res_mkupdate.c 957>
+  756 		setprotoent: <>
+  757 		getprotoent: <>
+  758 		malloc: <>
+  759 		strdup: <>
+  760 		free: <>
+  761 		endprotoent: <>
+  762 	res_client_close: 251
+  763 	res_close: void (), <./res_data.c 210>
+  764 		res_nclose: 144
+  765 	res_delete_interrupt_token: void (), <./res_send.c 189>
+  766 		close: <>
+  767 		pthread_setspecific: <>
+  768 		free: <>
+  769 	res_destroyprotolist: void (), <./res_mkupdate.c 986>
+  770 		free: <>
+  771 	res_destroyservicelist: void (), <./res_mkupdate.c 944>
+  772 		free: <>
+  773 	res_dnok: int (), <./res_comp.c 231>
+  774 		domainchar: <>
+  775 	res_findzonecut: int (), <./res_findzonecut.c 162>
+  776 		calloc: <>
+  777 		res_findzonecut2: int (), <./res_findzonecut.c 186>
+  778 			DPRINTF: <>
+  779 			p_class: 119
+  780 			INIT_LIST: <>
+  781 			get_soa: int (), <./res_findzonecut.c 276>
+  782 				ns_makecanon: 247
+  783 				do_query: int (), <./res_findzonecut.c 652>
+  784 					res_nmkquery: 116
+  785 					DPRINTF: <>
+  786 					res_nsend: int (), <./res_send.c 818>
+  787 						res_nsend_2: int (), <./res_send.c 807>
+  788 							dns_res_send: 137
+  789 					ns_initparse: 473
+  790 					ns_msg_count: <>
+  791 					ns_parserr: 496
+  792 					ns_rr_class: <>
+  793 					ns_rr_type: <>
+  794 				DPRINTF: <>
+  795 				p_class: 119
+  796 				ns_msg_getflag: 484
+  797 				ns_msg_count: <>
+  798 				ns_parserr: 496
+  799 				p_section: 490
+  800 				ns_rr_type: <>
+  801 				ns_rr_class: <>
+  802 				ns_rr_name: <>
+  803 				ns_samedomain: 631
+  804 				ns_samename: 246
+  805 				abort: <>
+  806 				strlen: <>
+  807 				strcpy: <>
+  808 				ns_rr_rdata: <>
+  809 				ns_rr_rdlen: <>
+  810 				ns_name_uncompress: 22
+  811 				ns_msg_end: <>
+  812 				save_ns: int (), <./res_findzonecut.c 494>
+  813 					ns_msg_count: <>
+  814 					ns_parserr: 496
+  815 					DPRINTF: <>
+  816 					p_section: 490
+  817 					ns_rr_type: <>
+  818 					ns_rr_class: <>
+  819 					ns_samename: 246
+  820 					ns_rr_name: <>
+  821 					find_ns: rr_ns * (), <./res_findzonecut.c 642>
+  822 						HEAD: <>
+  823 						NEXT: <>
+  824 						ns_samename: 246
+  825 					malloc: <>
+  826 					ns_rr_rdata: <>
+  827 					ns_rr_rdlen: <>
+  828 					ns_name_uncompress: 22
+  829 					ns_msg_base: <>
+  830 					ns_msg_end: <>
+  831 					free: <>
+  832 					strdup: <>
+  833 					INIT_LINK: <>
+  834 					INIT_LIST: <>
+  835 					APPEND: <>
+  836 					save_a: int (), <./res_findzonecut.c 555>
+  837 						ns_msg_count: <>
+  838 						ns_parserr: 496
+  839 						DPRINTF: <>
+  840 						p_section: 490
+  841 						ns_rr_type: <>
+  842 						ns_rr_class: <>
+  843 						ns_samename: 246
+  844 						ns_rr_name: <>
+  845 						ns_rr_rdlen: <>
+  846 						malloc: <>
+  847 						INIT_LINK: <>
+  848 						memset: <>
+  849 						memcpy: <>
+  850 						ns_rr_rdata: <>
+  851 						htons: <>
+  852 						abort: <>
+  853 						APPEND: <>
+  854 					p_class: 119
+  855 			satisfy: int (), <./res_findzonecut.c 230>
+  856 				find_ns: 821
+  857 				add_addrs: int (), <./res_findzonecut.c 258>
+  858 					HEAD: <>
+  859 					NEXT: <>
+  860 					DPRINTF: <>
+  861 				HEAD: <>
+  862 				NEXT: <>
+  863 				ns_samename: 246
+  864 				DPRINTF: <>
+  865 			get_ns: int (), <./res_findzonecut.c 404>
+  866 				do_query: 783
+  867 				DPRINTF: <>
+  868 				p_class: 119
+  869 				save_ns: 812
+  870 			get_glue: int (), <./res_findzonecut.c 430>
+  871 				HEAD: <>
+  872 				NEXT: <>
+  873 				do_query: 783
+  874 				DPRINTF: <>
+  875 				p_class: 119
+  876 				save_a: 836
+  877 				EMPTY: <>
+  878 				free_nsrr: void (), <./res_findzonecut.c 623>
+  879 					HEAD: <>
+  880 					UNLINK: <>
+  881 					free: <>
+  882 					DE_CONST: <>
+  883 			strerror: <>
+  884 			free_nsrrset: void (), <./res_findzonecut.c 615>
+  885 				HEAD: <>
+  886 				free_nsrr: 878
+  887 		free: <>
+  888 	res_findzonecut2: 777
+  889 	res_freeupdrec: void (), <./res_mkupdate.c 895>
+  890 		free: <>
+  891 	res_get_bitstringsuffix: const char * (), <./res_init.c 1443>
+  892 	res_get_nibblesuffix: const char * (), <./res_init.c 1429>
+  893 	res_get_nibblesuffix2: const char * (), <./res_init.c 1436>
+  894 	res_getservers: int (), <./res_init.c 1499>
+  895 		memcpy: <>
+  896 	res_hnok: int (), <./res_comp.c 160>
+  897 		periodchar: <>
+  898 		borderchar: <>
+  899 		middlechar: <>
+  900 	res_hostalias: 584
+  901 	res_init: 468
+  902 	res_init_interrupt_token: void * (), <./res_send.c 213>
+  903 		malloc: <>
+  904 		pipe: <>
+  905 		fcntl: <>
+  906 		pthread_setspecific: <>
+  907 	res_interrupt_request: void (), <./res_send.c 252>
+  908 		close: <>
+  909 	res_interrupt_requests_disable: void (), <./res_send.c 245>
+  910 		pthread_key_delete: <>
+  911 	res_interrupt_requests_enable: void (), <./res_send.c 238>
+  912 		pthread_key_create: <>
+  913 	res_isourserver: int (), <./res_data.c 222>
+  914 		res_ourserver_p: 233
+  915 	res_mailok: int (), <./res_comp.c 203>
+  916 		domainchar: <>
+  917 		periodchar: <>
+  918 		bslashchar: <>
+  919 		res_hnok: 896
+  920 	res_mkquery: int (), <./res_data.c 240>
+  921 		res_init: 468
+  922 		RES_SET_H_ERRNO: <>
+  923 		res_nmkquery: 116
+  924 	res_mkupdrec: ns_updrec * (), <./res_mkupdate.c 873>
+  925 		calloc: <>
+  926 		strdup: <>
+  927 		free: <>
+  928 		INIT_LINK: <>
+  929 	res_nameinquery: 242
+  930 	res_nametoclass: u_int16_t (), <./res_debug.c 1102>
+  931 		sym_ston: int (), <./res_debug.c 501>
+  932 			strcasecmp: <>
+  933 		strncasecmp: <>
+  934 		isdigit: if (), <./res_debug.c 884>
+  935 		strtoul: <>
+  936 	res_nametotype: u_int16_t (), <./res_debug.c 1124>
+  937 		sym_ston: 931
+  938 		strncasecmp: <>
+  939 		isdigit: if (), <./res_debug.c 884>
+  940 		strtoul: <>
+  941 	res_nclose: 144
+  942 	res_ndestroy: 749
+  943 	res_next_word: char * (), <./res_init.c 229>
+  944 	res_ninit: int (), <./res_init.c 1342>
+  945 		memset: <>
+  946 	res_nisourserver: int (), <./res_data.c 234>
+  947 		res_ourserver_p: 233
+  948 	res_nmkquery: 116
+  949 	res_nmkupdate: int (), <./res_mkupdate.c 92>
+  950 		memset: <>
+  951 		res_randomid: 110
+  952 		htons: <>
+  953 		NEXT: <>
+  954 		fprintf: <>
+  955 		fflush: <>
+  956 		dn_comp: 7
+  957 		ShrinkBuffer: <>
+  958 		NS_PUT16: <>
+  959 		NS_PUT32: <>
+  960 		getword_str: int (), <./res_mkupdate.c 677>
+  961 			isspace: <>
+  962 		inet_aton: <>
+  963 		ntohl: <>
+  964 		isspace: <>
+  965 		getnum_str: int (), <./res_mkupdate.c 832>
+  966 			isspace: <>
+  967 			isdigit: if (), <./res_debug.c 884>
+  968 		res_protocolnumber: int (), <./res_mkupdate.c 1039>
+  969 			res_buildprotolist: 755
+  970 			findservice: int (), <./res_mkupdate.c 998>
+  971 				strcasecmp: <>
+  972 				sscanf: <>
+  973 		res_servicenumber: int (), <./res_mkupdate.c 1026>
+  974 			res_buildservicelist: void (), <./res_mkupdate.c 912>
+  975 				setservent: <>
+  976 				getservent: <>
+  977 				malloc: <>
+  978 				strdup: <>
+  979 				free: <>
+  980 				ntohs: <>
+  981 				endservent: <>
+  982 			findservice: 970
+  983 		memcpy: <>
+  984 		getstr_str: int (), <./res_mkupdate.c 707>
+  985 			isspace: <>
+  986 			strchr: <>
+  987 		inet_nsap_addr: <>
+  988 		loc_aton: <>
+  989 		sym_ston: 931
+  990 		ns_datetosecs: 593
+  991 		strtoul: <>
+  992 		b64_pton: 3
+  993 		gethexnum_str: int (), <./res_mkupdate.c 784>
+  994 			strncasecmp: <>
+  995 			getnum_str: 965
+  996 			isspace: <>
+  997 			isxdigit: <>
+  998 			isdigit: if (), <./res_debug.c 884>
+  999 			tolower: <>
+ 1000 		ns_t_rr_p: <>
+ 1001 		NS_NXT_BIT_SET: <>
+ 1002 		inet_pton: <>
+ 1003 	res_nopt: int (), <./res_mkquery.c 223>
+ 1004 		printf: <>
+ 1005 		putshort: 130
+ 1006 		htons: <>
+ 1007 		ntohs: <>
+ 1008 	res_nquery: int (), <./res_query.c 688>
+ 1009 		res_nquery_2: int (), <./res_query.c 680>
+ 1010 			res_nquery_soa_min: __private_extern__ int (), <./res_query.c 588>
+ 1011 				printf: <>
+ 1012 				res_nmkquery: 116
+ 1013 				res_nopt: 1003
+ 1014 				res_nsend_2: 787
+ 1015 				ntohs: <>
+ 1016 				res_soa_minimum: int (), <./res_query.c 521>
+ 1017 					NS_GET16: <>
+ 1018 					ns_skiprr: 477
+ 1019 					memcpy: <>
+ 1020 					ntohl: <>
+ 1021 	res_nquery_2: 1009
+ 1022 	res_nquery_soa_min: 1010
+ 1023 	res_nquerydomain: int (), <./res_query.c 753>
+ 1024 		res_nquerydomain_2: int (), <./res_query.c 703>
+ 1025 			printf: <>
+ 1026 			strlen: <>
+ 1027 			strncpy: <>
+ 1028 			sprintf: <>
+ 1029 			res_nquery_2: 1009
+ 1030 	res_nquerydomain_2: 1024
+ 1031 	res_nsearch: int (), <./res_query.c 1032>
+ 1032 		res_nsearch_2: int (), <./res_query.c 770>
+ 1033 			res_hostalias: 584
+ 1034 			res_nquery: 1008
+ 1035 			res_nquerydomain_2: 1024
+ 1036 	res_nsearch_2: 1032
+ 1037 	res_nsend: 786
+ 1038 	res_nsend_2: 787
+ 1039 	res_nsendsigned: int (), <./res_sendsigned.c 36>
+ 1040 		dst_init: 363
+ 1041 		malloc: <>
+ 1042 		memcpy: <>
+ 1043 		ns_samename: 246
+ 1044 		dst_buffer_to_key: 265
+ 1045 		free: <>
+ 1046 		ns_sign: 635
+ 1047 		dst_free_key: 274
+ 1048 		res_nsend: 786
+ 1049 		ns_verify: 671
+ 1050 		Dprint: <>
+ 1051 		p_rcode: 487
+ 1052 	res_nupdate: int (), <./res_update.c 99>
+ 1053 		LIST: <>
+ 1054 		INIT_LIST: <>
+ 1055 		memset: <>
+ 1056 		LINKED: <>
+ 1057 		NEXT: <>
+ 1058 		res_findzonecut2: 777
+ 1059 		DPRINTF: <>
+ 1060 		HEAD: <>
+ 1061 		ns_samename: 246
+ 1062 		malloc: <>
+ 1063 		INIT_LINK: <>
+ 1064 		APPEND: <>
+ 1065 		res_mkupdrec: 924
+ 1066 		PREPEND: <>
+ 1067 		res_nmkupdate: 949
+ 1068 		res_getservers: 894
+ 1069 		res_setservers: void (), <./res_init.c 1450>
+ 1070 			res_nclose: 144
+ 1071 			memcpy: <>
+ 1072 		res_nsendsigned: 1039
+ 1073 		res_nsend: 786
+ 1074 		strerror: <>
+ 1075 		EMPTY: <>
+ 1076 		res_freeupdrec: 889
+ 1077 		UNLINK: <>
+ 1078 		free: <>
+ 1079 	res_ourserver_p: 233
+ 1080 	res_ownok: int (), <./res_comp.c 188>
+ 1081 		asterchar: <>
+ 1082 		periodchar: <>
+ 1083 		res_hnok: 896
+ 1084 	res_pquery: 472
+ 1085 	res_protocolname: const char * (), <./res_mkupdate.c 1097>
+ 1086 		res_buildprotolist: 755
+ 1087 		cgetprotobynumber: struct protoent (), <./res_mkupdate.c 1074>
+ 1088 		sprintf: <>
+ 1089 	res_queriesmatch: 238
+ 1090 	res_query: int (), <./res_data.c 153>
+ 1091 		res_init: 468
+ 1092 		RES_SET_H_ERRNO: <>
+ 1093 		res_nquery: 1008
+ 1094 	res_query_mDNSResponder: int (), <./res_query.c 298>
+ 1095 		memset: <>
+ 1096 		res_nmkquery: 116
+ 1097 		htons: <>
+ 1098 		strdup: <>
+ 1099 		printf: <>
+ 1100 		DNSServiceQueryRecord: <>
+ 1101 		res_query_callback: void (), <./res_query.c 152>
+ 1102 			printf: <>
+ 1103 			dn_comp: 7
+ 1104 			putshort: 130
+ 1105 			putlong: 133
+ 1106 			memcpy: <>
+ 1107 			htons: <>
+ 1108 			ntohs: <>
+ 1109 			memset: <>
+ 1110 			IN6_IS_ADDR_LINKLOCAL: <>
+ 1111 		free: <>
+ 1112 		kqueue: <>
+ 1113 		gettimeofday: <>
+ 1114 		EV_SET: <>
+ 1115 		DNSServiceRefSockFD: <>
+ 1116 		kevent: <>
+ 1117 		pthread_getspecific: <>
+ 1118 		asprintf: <>
+ 1119 		pthread_self: <>
+ 1120 		notify_register_plain: <>
+ 1121 		notify_get_state: <>
+ 1122 		DNSServiceProcessResult: <>
+ 1123 		h_errno_for_dnssd_err: void (), <./res_query.c 241>
+ 1124 		notify_cancel: <>
+ 1125 		DNSServiceRefDeallocate: <>
+ 1126 		close: <>
+ 1127 	res_querydomain: int (), <./res_data.c 258>
+ 1128 		res_init: 468
+ 1129 		RES_SET_H_ERRNO: <>
+ 1130 		res_nquerydomain: 1023
+ 1131 	res_randomid: 110
+ 1132 	res_search: int (), <./res_data.c 276>
+ 1133 		res_init: 468
+ 1134 		RES_SET_H_ERRNO: <>
+ 1135 		res_nsearch: 1031
+ 1136 	res_send: int (), <./res_data.c 294>
+ 1137 		res_init: 468
+ 1138 		res_nsend: 786
+ 1139 	res_sendsigned: int (), <./res_data.c 312>
+ 1140 		res_init: 468
+ 1141 		res_nsendsigned: 1039
+ 1142 	res_servicename: const char * (), <./res_mkupdate.c 1112>
+ 1143 		res_buildservicelist: 974
+ 1144 		cgetservbyport: struct servent (), <./res_mkupdate.c 1046>
+ 1145 		htons: <>
+ 1146 		sprintf: <>
+ 1147 	res_setservers: 1069
+ 1148 	res_state_new: 107
+ 1149 	res_vinit_from_file: int (), <./res_init.c 523>
+ 1150 		res_randomid: 110
+ 1151 		res_ndestroy: 749
+ 1152 		strcmp: <>
+ 1153 		inet_makeaddr: <>
+ 1154 		htons: <>
+ 1155 		calloc: <>
+ 1156 		memset: <>
+ 1157 		strcpy: <>
+ 1158 		getenv: <>
+ 1159 		strncpy: <>
+ 1160 		fopen: <>
+ 1161 		fgets: <>
+ 1162 		MATCH: <>
+ 1163 		atoi: <>
+ 1164 		fclose: <>
+ 1165 		strpbrk: <>
+ 1166 		strchr: <>
+ 1167 		strcspn: <>
+ 1168 		sprintf: <>
+ 1169 		inet_pton: <>
+ 1170 		memcpy: <>
+ 1171 		getaddrinfo: <>
+ 1172 		freeaddrinfo: <>
+ 1173 		ISSORTMASK: <>
+ 1174 		isascii: <>
+ 1175 		isspace: <>
+ 1176 		inet_aton: <>
+ 1177 		net_mask: u_int32_t (), <./res_init.c 1352>
+ 1178 			ntohl: <>
+ 1179 			IN_CLASSA: <>
+ 1180 			htonl: <>
+ 1181 			IN_CLASSB: <>
+ 1182 		res_setoptions: void (), <./res_init.c 1028>
+ 1183 			printf: <>
+ 1184 			strncmp: <>
+ 1185 			atoi: <>
+ 1186 			MIN: <>
+ 1187 			strcspn: <>
+ 1188 			strncpy: <>
+ 1189 		get_nameservers: <>
+ 1190 		gethostname: <>
+ 1191 		printf: <>
+ 1192 	sym_ntop: const char * (), <./res_debug.c 533>
+ 1193 		sprintf: <>
+ 1194 	sym_ntos: 120
+ 1195 	sym_ston: 931

@@ -1,0 +1,656 @@
+    1 	main: int (), <./efax/efaxtest.c 18>
+    2 		setlocale: <>
+    3 		nextopt: int (), <./efax/efaxmsg.c 188>
+    4 			strchr: <>
+    5 			msg: int (), <./efax/efaxmsg.c 110>
+    6 				va_start: <>
+    7 				setvbuf: <>
+    8 				cname: char * (), <./efax/efaxmsg.c 55>
+    9 					sprintf: <>
+   10 					strlen: <>
+   11 				isdigit: <>
+   12 				isupper: <>
+   13 				strchr: <>
+   14 				tolower: <>
+   15 				setCopyright: const char * (), <./efax/efaxmsg.c 85>
+   16 					free: <>
+   17 					strdup: <>
+   18 				fputs: <>
+   19 				fprintf: <>
+   20 				tstamp: time_t (), <./efax/efaxmsg.c 38>
+   21 					time: <>
+   22 					strftime: <>
+   23 					localtime: <>
+   24 					fputs: <>
+   25 				vfprintf: <>
+   26 				strerror: char * (), <./efax/efaxmsg.c 29>
+   27 				fflush: <>
+   28 				va_end: <>
+   29 		lookup: int (), <./efax/efix.c 95>
+   30 			strcmp: <>
+   31 			atoi: <>
+   32 		msg: 5
+   33 		sscanf: <>
+   34 		readfont: int (), <./efax/efaxlib.c 2015>
+   35 			newIFILE: int (), <./efax/efaxlib.c 1242>
+   36 				pbm_first: int (), <./efax/efaxlib.c 1005>
+   37 					fseek: <>
+   38 					pbmdim: int (), <./efax/efaxlib.c 319>
+   39 						isdigit: <>
+   40 						fgetc: <>
+   41 					msg: 5
+   42 					ftell: <>
+   43 				text_first: int (), <./efax/efaxlib.c 980>
+   44 					readfont: 34
+   45 					text_next: int (), <./efax/efaxlib.c 957>
+   46 						ftell: <>
+   47 						fgets: <>
+   48 						feof: <>
+   49 						ferror: <>
+   50 				tiff_first: int (), <./efax/efaxlib.c 937>
+   51 					fread: <>
+   52 					fread2: int (), <./efax/efaxlib.c 767>
+   53 						fread: <>
+   54 					fread4: int (), <./efax/efaxlib.c 781>
+   55 						fread: <>
+   56 					msg: 5
+   57 					fseek: <>
+   58 					tiff_next: int (), <./efax/efaxlib.c 800>
+   59 						msg: 5
+   60 						ftell: <>
+   61 						fread2: 52
+   62 						fread4: 54
+   63 						fseek: <>
+   64 						tagname: char * (), <./efax/efaxlib.c 734>
+   65 				pcx_first: int (), <./efax/efaxlib.c 1044>
+   66 					ftell: <>
+   67 					fseek: <>
+   68 					fgeti: int (), <./efax/efaxlib.c 1039>
+   69 						fgetc: <>
+   70 					fgetc: <>
+   71 					msg: 5
+   72 				dcx_first: int (), <./efax/efaxlib.c 1107>
+   73 					dcx_next: int (), <./efax/efaxlib.c 1084>
+   74 						fseek: <>
+   75 						fread4: 54
+   76 						msg: 5
+   77 						pcx_first: 65
+   78 				text_next: 45
+   79 				tiff_next: 58
+   80 				dcx_next: 73
+   81 				fopen: <>
+   82 				msg: 5
+   83 				fread: <>
+   84 				ferror: <>
+   85 				getformat: int (), <./efax/efaxlib.c 641>
+   86 					msg: 5
+   87 					strncmp: <>
+   88 					strchr: <>
+   89 					isspace: <>
+   90 					isprint: <>
+   91 				fseek: <>
+   92 				page_init: void (), <./efax/efaxlib.c 701>
+   93 				page_report: void (), <./efax/efaxlib.c 714>
+   94 					msg: 5
+   95 				fclose: <>
+   96 				initbittab: void (), <./efax/efaxlib.c 2091>
+   97 			nextipage: int (), <./efax/efaxlib.c 1167>
+   98 				fax_reset: int (), <./efax/efaxlib.c 1136>
+   99 					newDECODER: void (), <./efax/efaxlib.c 2163>
+  100 						addcode: void (), <./efax/efaxlib.c 2130>
+  101 						init1dtab: void (), <./efax/efaxlib.c 2146>
+  102 							addcode: void (), <./efax/efaxlib.c 2130>
+  103 					readruns: int (), <./efax/efaxlib.c 455>
+  104 						fgetc: <>
+  105 						msg: 5
+  106 						ferror: <>
+  107 					msg: 5
+  108 				text_reset: int (), <./efax/efaxlib.c 1125>
+  109 				fclose: <>
+  110 				fopen: <>
+  111 				msg: 5
+  112 				fseek: <>
+  113 			msg: 5
+  114 			readline: int (), <./efax/efaxlib.c 569>
+  115 				fgets: <>
+  116 				strchr: <>
+  117 				texttorun: int (), <./efax/efaxlib.c 387>
+  118 					copybits: void (), <./efax/efaxlib.c 348>
+  119 						putbits: <>
+  120 					bittorun: int (), <./efax/efaxlib.c 221>
+  121 					xscale: int (), <./efax/efaxlib.c 158>
+  122 					xshift: int (), <./efax/efaxlib.c 135>
+  123 				fread: <>
+  124 				bittorun: 120
+  125 				readruns: 103
+  126 				readpcx: int (), <./efax/efaxlib.c 530>
+  127 					fgetc: <>
+  128 					msg: 5
+  129 					memset: <>
+  130 				xinvert: int (), <./efax/efaxlib.c 172>
+  131 			runtobit: int (), <./efax/efaxlib.c 1685>
+  132 				memset: <>
+  133 			fclose: <>
+  134 		getxy: int (), <./efax/efix.c 107>
+  135 			msg: 5
+  136 			sscanf: <>
+  137 			isspace: <>
+  138 			lookup: 29
+  139 		base64encode: int (), <./efax/efix.c 160>
+  140 			fgetc: <>
+  141 			putc: <>
+  142 		fprintf: <>
+  143 		newIFILE: 35
+  144 		newOFILE: void (), <./efax/efaxlib.c 1996>
+  145 			newENCODER: void (), <./efax/efaxlib.c 52>
+  146 		nextipage: 97
+  147 		nextopage: int (), <./efax/efaxlib.c 1786>
+  148 			putcode: uchar * (), <./efax/efaxlib.c 65>
+  149 			fwrite: <>
+  150 			tiffinit: int (), <./efax/efaxlib.c 1613>
+  151 				fseek: <>
+  152 				fwrite2: int (), <./efax/efaxlib.c 1571>
+  153 					fwrite: <>
+  154 				fwrite4: int (), <./efax/efaxlib.c 1577>
+  155 					fwrite: <>
+  156 				msg: 5
+  157 				wtag: int (), <./efax/efaxlib.c 1586>
+  158 					fwrite2: 152
+  159 					fwrite4: 154
+  160 					msg: 5
+  161 			fprintf: <>
+  162 			fseek: <>
+  163 			pcxinit: void (), <./efax/efaxlib.c 1729>
+  164 				fwrite: <>
+  165 				fputi: int (), <./efax/efaxlib.c 1722>
+  166 					putc: <>
+  167 				memset: <>
+  168 				putc: <>
+  169 			ferror: <>
+  170 			msg: 5
+  171 			snprintf: <>
+  172 			fopen: <>
+  173 			freopen: <>
+  174 			strcpy: <>
+  175 			psinit: void (), <./efax/efaxlib.c 1465>
+  176 				msg: 5
+  177 				fprintf: <>
+  178 		writeline: void (), <./efax/efaxlib.c 1922>
+  179 			runtobit: 131
+  180 			fwrite: <>
+  181 			pgmwrite: void (), <./efax/efaxlib.c 1357>
+  182 				fwrite: <>
+  183 				memset: <>
+  184 			runtocode: uchar * (), <./efax/efaxlib.c 84>
+  185 				PUTCODE: <>
+  186 			putcode: uchar * (), <./efax/efaxlib.c 65>
+  187 			pclwrite: void (), <./efax/efaxlib.c 1342>
+  188 				fprintf: <>
+  189 				fwrite: <>
+  190 			pswrite: void (), <./efax/efaxlib.c 1515>
+  191 				msg: 5
+  192 				hexputc: <>
+  193 				hexputs: void (), <./efax/efaxlib.c 1500>
+  194 					hexputc: <>
+  195 				memcpy: <>
+  196 			pcxwrite: void (), <./efax/efaxlib.c 1751>
+  197 				putc: <>
+  198 		readline: 114
+  199 		runor: int (), <./efax/efaxlib.c 256>
+  200 		xscale: int (), <./efax/efaxlib.c 158>
+  201 		xshift: int (), <./efax/efaxlib.c 135>
+  202 		xpad: int (), <./efax/efaxlib.c 118>
+  203 		ferror: <>
+  204 		setbuf: <>
+  205 		setCopyright: 15
+  206 		efaxbasename: char * (), <./efax/efaxos.c 824>
+  207 			strrchr: <>
+  208 		str2cap: int (), <./efax/efax.c 400>
+  209 			sscanf: <>
+  210 			msg: 5
+  211 			checkcap: int (), <./efax/efax.c 372>
+  212 				msg: 5
+  213 		strlen: <>
+  214 		strspn: <>
+  215 		snprintf: <>
+  216 		time: <>
+  217 		strftime: <>
+  218 		localtime: <>
+  219 		sysEventMonitorStart: void (), <./efax/efaxos.c 836>
+  220 			pipe: <>
+  221 			fcntl: <>
+  222 			pthread_mutex_init: <>
+  223 			pthread_cond_init: <>
+  224 			pthread_create: <>
+  225 			sysEventThreadEntry: void * (), <./efax/efaxos.c 982>
+  226 				bzero: <>
+  227 				IORegisterForSystemPower: <>
+  228 				sysEventPowerNotifier: void (), <./efax/efaxos.c 1118>
+  229 					IOAllowPowerChange: <>
+  230 					write: <>
+  231 				IONotificationPortGetRunLoopSource: <>
+  232 				CFRunLoopAddSource: <>
+  233 				CFRunLoopGetCurrent: <>
+  234 				IOMasterPort: <>
+  235 				IOServiceMatching: <>
+  236 				CFDictionarySetValue: <>
+  237 				CFSTR: <>
+  238 				CFRetain: <>
+  239 				IONotificationPortCreate: <>
+  240 				IOServiceAddMatchingNotification: <>
+  241 				deviceNotifier: void (), <./efax/efaxos.c 1252>
+  242 					IOIteratorNext: <>
+  243 					IORegistryEntryCreateCFProperty: <>
+  244 					CFSTR: <>
+  245 					CFStringGetCString: <>
+  246 					CFRelease: <>
+  247 					strcmp: <>
+  248 					IOObjectRelease: <>
+  249 					write: <>
+  250 				mach_port_deallocate: <>
+  251 				mach_task_self: <>
+  252 				pthread_mutex_lock: <>
+  253 				pthread_cond_signal: <>
+  254 				pthread_mutex_unlock: <>
+  255 				CFRunLoopRun: <>
+  256 				IOObjectRelease: <>
+  257 				IONotificationPortDestroy: <>
+  258 				CFRunLoopRemoveSource: <>
+  259 				CFRunLoopSourceInvalidate: <>
+  260 				IODeregisterForSystemPower: <>
+  261 				pthread_exit: <>
+  262 		begin_session: int (), <./efax/efaxio.c 417>
+  263 			lockall: int (), <./efax/efaxos.c 779>
+  264 				msg: 5
+  265 				ioctl: <>
+  266 				ttlock: int (), <./efax/efaxos.c 696>
+  267 					getpid: <>
+  268 					ttlocked: int (), <./efax/efaxos.c 645>
+  269 						fopen: <>
+  270 						fread: <>
+  271 						sscanf: <>
+  272 						msg: 5
+  273 						cname: 8
+  274 						kill: <>
+  275 						remove: <>
+  276 						getpid: <>
+  277 						fclose: <>
+  278 					strrchr: <>
+  279 					strlen: <>
+  280 					snprintf: <>
+  281 					fopen: <>
+  282 					msg: 5
+  283 					fwrite: <>
+  284 					fprintf: <>
+  285 					rename: <>
+  286 					chmod: <>
+  287 					fclose: <>
+  288 					remove: <>
+  289 			ttyopen: int (), <./efax/efaxos.c 497>
+  290 				open: <>
+  291 				msg: 5
+  292 				tdata: int (), <./efax/efaxos.c 203>
+  293 					FD_ZERO: <>
+  294 					FD_SET: <>
+  295 					select: <>
+  296 					msg: 5
+  297 					FD_ISSET: <>
+  298 					sysEventMonitorUpdate: int (), <./efax/efaxos.c 910>
+  299 						read: <>
+  300 						IOAllowPowerChange: <>
+  301 						msg: 5
+  302 						IOCancelPowerChange: <>
+  303 						cleanup: int (), <./efax/efax.c 2474>
+  304 							sysEventMonitorStop: void (), <./efax/efaxos.c 863>
+  305 								pthread_mutex_lock: <>
+  306 								pthread_cond_wait: <>
+  307 								pthread_mutex_unlock: <>
+  308 								CFRunLoopStop: <>
+  309 								pthread_join: <>
+  310 								pthread_mutex_destroy: <>
+  311 								pthread_cond_destroy: <>
+  312 								close: <>
+  313 							logifnames: void (), <./efax/efaxlib.c 437>
+  314 								msg: 5
+  315 							ttymode: int (), <./efax/efaxos.c 412>
+  316 								tcgetattr: <>
+  317 								msg: 5
+  318 								cfsetospeed: <>
+  319 								cfsetispeed: <>
+  320 								tcsetattr: <>
+  321 								checktermio: int (), <./efax/efaxos.c 385>
+  322 									tcgetattr: <>
+  323 									msg: 5
+  324 									ckfld: int (), <./efax/efaxos.c 379>
+  325 										msg: 5
+  326 								tcflow: <>
+  327 							end_session: int (), <./efax/efaxio.c 396>
+  328 								modemsync: int (), <./efax/efaxio.c 322>
+  329 									msg: 5
+  330 									ttymode: 315
+  331 									msleep: void (), <./efax/efaxos.c 181>
+  332 										select: <>
+  333 										msg: 5
+  334 									tput: int (), <./efax/efaxos.c 358>
+  335 										write: <>
+  336 										msg: 5
+  337 									cmd: int (), <./efax/efaxio.c 225>
+  338 										tgets: char * (), <./efax/efaxio.c 67>
+  339 											tgetc: <>
+  340 											msg: 5
+  341 											time_ms: int (), <./efax/efaxos.c 154>
+  342 												gettimeofday: <>
+  343 											cname: 8
+  344 											iscntrl: <>
+  345 										msg: 5
+  346 										strlen: <>
+  347 										snprintf: <>
+  348 										tput: 334
+  349 										strcpy: <>
+  350 										strtabmatch: char * (), <./efax/efaxio.c 207>
+  351 											strncmp: <>
+  352 											strlen: <>
+  353 										strcmp: <>
+  354 										CFNumberCreate: <>
+  355 										notify: void (), <./efax/efaxos.c 117>
+  356 											getpid: <>
+  357 											CFNumberCreate: <>
+  358 											CFDictionaryCreateMutable: <>
+  359 											CFDictionaryAddValue: <>
+  360 											CFSTR: <>
+  361 											CFNotificationCenterPostNotificationWithOptions: <>
+  362 											CFNotificationCenterGetDistributedCenter: <>
+  363 											CFRelease: <>
+  364 										CFSTR: <>
+  365 										CFRelease: <>
+  366 										msleep: 331
+  367 								setup: int (), <./efax/efaxio.c 371>
+  368 									isdigit: <>
+  369 									cmd: 337
+  370 									msg: 5
+  371 								ttymode: 315
+  372 								unlockall: int (), <./efax/efaxos.c 804>
+  373 									ttunlock: int (), <./efax/efaxos.c 750>
+  374 										ttlocked: 268
+  375 										msg: 5
+  376 										remove: <>
+  377 									msg: 5
+  378 									ioctl: <>
+  379 							CFNumberCreate: <>
+  380 							notify: 355
+  381 							CFSTR: <>
+  382 							CFRelease: <>
+  383 							ttyclose: int (), <./efax/efaxos.c 619>
+  384 								unlink: <>
+  385 								close: <>
+  386 							msg: 5
+  387 						exit: <>
+  388 					clientEventUpdate: int (), <./efax/efaxos.c 1165>
+  389 						accept: <>
+  390 						msg: 5
+  391 						strerror: 26
+  392 						FD_ZERO: <>
+  393 						FD_SET: <>
+  394 						select: <>
+  395 						recv: <>
+  396 						unlink: <>
+  397 						close: <>
+  398 						notify: 355
+  399 						CFSTR: <>
+  400 						exit: <>
+  401 						cleanup: 303
+  402 				fcntl: <>
+  403 				ioctl: <>
+  404 				close: <>
+  405 				socket: <>
+  406 				strerror: 26
+  407 				bzero: <>
+  408 				strlcpy: <>
+  409 				unlink: <>
+  410 				umask: <>
+  411 				bind: <>
+  412 				SUN_LEN: <>
+  413 				listen: <>
+  414 				tinit: void (), <./efax/efaxos.c 483>
+  415 					initbittab: 96
+  416 			msg: 5
+  417 			tdata: 292
+  418 			ttymode: 315
+  419 			rd_init: void (), <./efax/efaxio.c 47>
+  420 			signal: <>
+  421 			modemsync: 328
+  422 		signal_handler: void (), <./efax/efax.c 2507>
+  423 		setup: 367
+  424 		modem_init: int (), <./efax/efax.c 2334>
+  425 			msg: 5
+  426 			notify: 355
+  427 			CFSTR: <>
+  428 			cmd: 337
+  429 			getresp: int (), <./efax/efaxio.c 182>
+  430 				strinresp: char * (), <./efax/efaxio.c 165>
+  431 					strlen: <>
+  432 					strncmp: <>
+  433 					strstr: <>
+  434 				strchr: <>
+  435 				strlen: <>
+  436 				isspace: <>
+  437 				strncat: <>
+  438 			strcat: <>
+  439 			strinresp: 430
+  440 			strstr: <>
+  441 			ckcmd: int (), <./efax/efaxio.c 301>
+  442 				cmd: 337
+  443 				msg: 5
+  444 			str2cap: 208
+  445 			snprintf: <>
+  446 		dial: int (), <./efax/efax.c 2056>
+  447 			snprintf: <>
+  448 			msg: 5
+  449 			CFStringCreateWithCString: <>
+  450 			notify: 355
+  451 			CFSTR: <>
+  452 			CFRelease: <>
+  453 			cmd: 337
+  454 			sresponse: char * (), <./efax/efaxio.c 136>
+  455 				strlen: <>
+  456 				strncmp: <>
+  457 				strspn: <>
+  458 				sscanf: <>
+  459 				msg: 5
+  460 			gethsc: int (), <./efax/efax.c 1734>
+  461 				sresponse: 454
+  462 				msg: 5
+  463 		answer: int (), <./efax/efax.c 2169>
+  464 			ttymode: 315
+  465 			unlockall: 372
+  466 			msg: 5
+  467 			notify: 355
+  468 			CFSTR: <>
+  469 			tdata: 292
+  470 			msleep: 331
+  471 			lockall: 263
+  472 			cmd: 337
+  473 			ansmode: enum connectmode (), <./efax/efax.c 2123>
+  474 			ckfmt: int (), <./efax/efaxlib.c 36>
+  475 			snprintf: <>
+  476 			execl: <>
+  477 		strncat: <>
+  478 		c1sndrcv: int (), <./efax/efax.c 1294>
+  479 			notify: 355
+  480 			CFSTR: <>
+  481 			getfr: int (), <./efax/efax.c 1187>
+  482 				time: <>
+  483 				cmd: 337
+  484 				tput: 334
+  485 				ckcmd: 441
+  486 				msg: 5
+  487 				receive_frame_data: int (), <./efax/efax.c 1125>
+  488 					tgetd: int (), <./efax/efaxos.c 333>
+  489 						tgetc: <>
+  490 						msg: 5
+  491 						cname: 8
+  492 					msg: 5
+  493 					cmd: 337
+  494 				logfr: void (), <./efax/efax.c 1028>
+  495 					msg: 5
+  496 				frname: char * (), <./efax/efax.c 328>
+  497 				fixframe: int (), <./efax/efax.c 1099>
+  498 					msg: 5
+  499 				revcpy: void (), <./efax/efax.c 1087>
+  500 				CFStringCreateWithFormat: <>
+  501 				CFSTR: <>
+  502 				CFStringCreateMutableCopy: <>
+  503 				CFStringGetLength: <>
+  504 				CFRelease: <>
+  505 				CFStringTrimWhitespace: <>
+  506 				notify: 355
+  507 			msg: 5
+  508 			dislen: int (), <./efax/efax.c 444>
+  509 			mkcap: int (), <./efax/efax.c 455>
+  510 				dislen: 508
+  511 				msg: 5
+  512 			rdpage: int (), <./efax/efax.c 526>
+  513 				nextipage: 97
+  514 				msg: 5
+  515 				lastpage: int (), <./efax/efaxlib.c 1221>
+  516 			mincap: int (), <./efax/efax.c 486>
+  517 				printcap: void (), <./efax/efax.c 387>
+  518 					msg: 5
+  519 					checkcap: 211
+  520 				msg: 5
+  521 			revcpy: 499
+  522 			putframe: int (), <./efax/efax.c 1054>
+  523 				ckcmd: 441
+  524 				msg: 5
+  525 				sendbuf: int (), <./efax/efaxio.c 93>
+  526 					proc_ms: long (), <./efax/efaxos.c 165>
+  527 						gettimeofday: <>
+  528 					msleep: 331
+  529 					tput: 334
+  530 					msg: 5
+  531 				tput: 334
+  532 				logfr: 494
+  533 				frname: 496
+  534 			mkdis: void (), <./efax/efax.c 419>
+  535 				checkcap: 211
+  536 				msg: 5
+  537 			cmd: 337
+  538 			msleep: 331
+  539 			puttrain: int (), <./efax/efax.c 918>
+  540 				ckcmd: 441
+  541 				ttymode: 315
+  542 				sendbuf: 525
+  543 				newENCODER: void (), <./efax/efaxlib.c 52>
+  544 				putcode: uchar * (), <./efax/efaxlib.c 65>
+  545 				tput: 334
+  546 				msg: 5
+  547 			ckcmd: 441
+  548 			send_data: int (), <./efax/efax.c 597>
+  549 				newENCODER: void (), <./efax/efaxlib.c 52>
+  550 				msg: 5
+  551 				ckfmt: int (), <./efax/efaxlib.c 36>
+  552 				snprintf: <>
+  553 				ttymode: 315
+  554 				time: <>
+  555 				proc_ms: 526
+  556 				putcode: uchar * (), <./efax/efaxlib.c 65>
+  557 				readline: 114
+  558 				texttorun: 117
+  559 				runor: 199
+  560 				memcpy: <>
+  561 				xpad: int (), <./efax/efaxlib.c 118>
+  562 				runtocode: 184
+  563 				sendbuf: 525
+  564 				tdata: 292
+  565 				CFNumberCreate: <>
+  566 				notify: 355
+  567 				CFSTR: <>
+  568 				CFRelease: <>
+  569 			end_data: int (), <./efax/efax.c 735>
+  570 				msg: 5
+  571 				tput: 334
+  572 				time: <>
+  573 				ckcmd: 441
+  574 				ttymode: 315
+  575 			lastpage: int (), <./efax/efaxlib.c 1221>
+  576 			CFNumberCreate: <>
+  577 			CFRelease: <>
+  578 			nextipage: 97
+  579 			wrpage: int (), <./efax/efax.c 571>
+  580 				nextopage: 147
+  581 				remove: <>
+  582 				msg: 5
+  583 			printcap: 517
+  584 			gettrain: int (), <./efax/efax.c 970>
+  585 				cmd: 337
+  586 				tgetd: 488
+  587 				msg: 5
+  588 				ckcmd: 441
+  589 				tput: 334
+  590 			receive_data: int (), <./efax/efax.c 864>
+  591 				msg: 5
+  592 				newDECODER: 99
+  593 				readfaxruns: int (), <./efax/efax.c 782>
+  594 					tgetd: 488
+  595 					msg: 5
+  596 				xpad: int (), <./efax/efaxlib.c 118>
+  597 				writeline: 178
+  598 				ferror: <>
+  599 				tput: 334
+  600 				tgetd: 488
+  601 		c2sndrcv: int (), <./efax/efax.c 1833>
+  602 			sresponse: 454
+  603 			msg: 5
+  604 			rdpage: 512
+  605 			snprintf: <>
+  606 			ckcmd: 441
+  607 			gethsc: 460
+  608 			getc2dcs: void (), <./efax/efax.c 1759>
+  609 				sresponse: 454
+  610 				msg: 5
+  611 				CFStringCreateWithCString: <>
+  612 				CFStringCreateMutableCopy: <>
+  613 				CFStringGetLength: <>
+  614 				CFRelease: <>
+  615 				CFStringTrimWhitespace: <>
+  616 				CFStringTrim: <>
+  617 				CFSTR: <>
+  618 				notify: 355
+  619 				str2cap: 208
+  620 				printcap: 517
+  621 			getstartc: void (), <./efax/efax.c 1797>
+  622 				tgetc: <>
+  623 				msg: 5
+  624 				cname: 8
+  625 			send_data: 548
+  626 			end_data: 569
+  627 			CFNumberCreate: <>
+  628 			notify: 355
+  629 			CFSTR: <>
+  630 			CFRelease: <>
+  631 			nextipage: 97
+  632 			lastpage: int (), <./efax/efaxlib.c 1221>
+  633 			wrpage: 579
+  634 			cmd: 337
+  635 			tput: 334
+  636 			receive_data: 590
+  637 		notify: 355
+  638 		CFSTR: <>
+  639 		end_session: 327
+  640 		ttyclose: 383
+  641 		IOAllowPowerChange: <>
+  642 		tdata: 292
+  643 		cleanup: 303
+  644 		getopt: <>
+  645 		usage: void (), <./efax/efaxtest.c 55>
+  646 			fputs: <>
+  647 			exit: <>
+  648 		bzero: <>
+  649 		strlcpy: <>
+  650 		socket: <>
+  651 		connect: <>
+  652 		SUN_LEN: <>
+  653 		perror: <>
+  654 		exit: <>
+  655 		write: <>
+  656 		close: <>

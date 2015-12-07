@@ -1,0 +1,500 @@
+    1 	main: int (), <./od_user_homes/od_user_homes.c 165>
+    2 		fprintf: <>
+    3 		od_search: int (), <./dumpammap/dumpammap.c 196>
+    4 			ODNodeCreateWithNodeType: <>
+    5 			od_get_error_string: char * (), <./dumpammap/dumpammap.c 81>
+    6 				CFErrorCopyDescription: <>
+    7 				od_CFStringtoCString: char * (), <./dumpammap/dumpammap.c 61>
+    8 					CFStringGetMaximumSizeForEncoding: <>
+    9 					CFStringGetLength: <>
+   10 					malloc: <>
+   11 					CFStringGetCString: <>
+   12 					free: <>
+   13 				CFRelease: <>
+   14 				strdup: <>
+   15 			pr_msg: void (), <./dumpammap/dumpammap.c 313>
+   16 				fprintf: <>
+   17 				va_start: <>
+   18 				vfprintf: <>
+   19 				putc: <>
+   20 				va_end: <>
+   21 			free: <>
+   22 			CFStringCreateWithCString: <>
+   23 			CFRelease: <>
+   24 			CFArrayCreate: <>
+   25 			ODQueryCreateWithNode: <>
+   26 			ODQueryCopyResults: <>
+   27 			CFArrayGetCount: <>
+   28 			CFArrayGetValueAtIndex: <>
+   29 			od_print_record: callback_ret_t (), <./dumpammap/dumpammap.c 100>
+   30 				ODRecordCopyValues: <>
+   31 				od_get_error_string: 5
+   32 				pr_msg: 15
+   33 				free: <>
+   34 				CFArrayGetCount: <>
+   35 				CFRelease: <>
+   36 				CFArrayGetValueAtIndex: <>
+   37 				od_CFStringtoCString: 7
+   38 				printf: <>
+   39 		asprintf: <>
+   40 		pr_msg: 15
+   41 		free: <>
+   42 		setfsent: <>
+   43 		getfsent: <>
+   44 		printf: <>
+   45 		memset: <>
+   46 		getattrlist: <>
+   47 		strerror: <>
+   48 		getopt: <>
+   49 		getmntopts: <>
+   50 		freemntopts: <>
+   51 		usage: void (), <./mount_url/mount_url.c 235>
+   52 			fprintf: <>
+   53 			exit: <>
+   54 		CFURLCreateWithBytes: <>
+   55 		strlen: <>
+   56 		exit: <>
+   57 		CFStringCreateWithCString: <>
+   58 		CFDictionaryCreateMutable: <>
+   59 		CFDictionaryAddValue: <>
+   60 		CFNumberCreate: <>
+   61 		NAConnectToServerSync: <>
+   62 		do_mount_direct: int (), <./mount_url/mount_url.c 242>
+   63 			netfs_CreateSessionRef: <>
+   64 			netfs_OpenSession: <>
+   65 			netfs_CloseSession: <>
+   66 			netfs_Mount: <>
+   67 		CFRelease: <>
+   68 		syslog: <>
+   69 		setlinebuf: <>
+   70 		strrchr: <>
+   71 		strlcat: <>
+   72 		defopen: int (), <./automountlib/deflt.c 113>
+   73 			fclose: <>
+   74 			fopen: <>
+   75 		defread: char * (), <./automountlib/deflt.c 155>
+   76 			TSTBITS: <>
+   77 			strncmp: <>
+   78 			strncasecmp: <>
+   79 			strlen: <>
+   80 			rewind: <>
+   81 			fgets: <>
+   82 			strip_quotes: void (), <./automountlib/deflt.c 253>
+   83 		strncasecmp: <>
+   84 		strtol: <>
+   85 		putenv: <>
+   86 		strdup: <>
+   87 		defcntl: int (), <./automountlib/deflt.c 219>
+   88 		TURNON: <>
+   89 		usage: void (), <./automountd/autod_main.c 404>
+   90 			fprintf: <>
+   91 			exit: <>
+   92 		openlog: <>
+   93 		setlocale: <>
+   94 		trace_prt: void (), <./automountlib/auto_subr.c 828>
+   95 			dispatch_once: <>
+   96 			asl_new: <>
+   97 			asl_set: <>
+   98 			asl_send: <>
+   99 			asl_free: <>
+  100 			va_start: <>
+  101 			vsyslog: <>
+  102 			va_end: <>
+  103 		getenv: <>
+  104 		sigemptyset: <>
+  105 		sigaddset: <>
+  106 		pthread_sigmask: <>
+  107 		pthread_attr_init: <>
+  108 		pthread_attr_setdetachstate: <>
+  109 		pthread_mutex_init: <>
+  110 		pthread_cond_init: <>
+  111 		pthread_rwlock_init: <>
+  112 		ns_setup: void (), <./automountlib/ns_generic.c 79>
+  113 		open: <>
+  114 		bootstrap_check_in: <>
+  115 		bootstrap_strerror: <>
+  116 		pthread_create: <>
+  117 		shutdown_thread: void * (), <./automountd/autod_main.c 498>
+  118 			pthread_setname_np: <>
+  119 			sigwait: <>
+  120 			syslog: <>
+  121 			sigismember: <>
+  122 			pthread_mutex_lock: <>
+  123 			pthread_cond_broadcast: <>
+  124 			pthread_mutex_unlock: <>
+  125 		timeout_thread: void * (), <./automountd/autod_main.c 547>
+  126 			pthread_setname_np: <>
+  127 			pthread_mutex_lock: <>
+  128 			compute_new_timeout: void (), <./automountd/autod_main.c 537>
+  129 				gettimeofday: <>
+  130 			pthread_cond_timedwait: <>
+  131 			pthread_mutex_unlock: <>
+  132 		cache_cleanup: void * (), <./automountd/autod_readdir.c 757>
+  133 			pthread_setname_np: <>
+  134 			pthread_mutex_init: <>
+  135 			pthread_cond_init: <>
+  136 			pthread_mutex_lock: <>
+  137 			time: <>
+  138 			pthread_cond_timedwait: <>
+  139 			trace_prt: 94
+  140 			pthread_mutex_unlock: <>
+  141 			pthread_rwlock_wrlock: <>
+  142 			assert: <>
+  143 			rddir_cache_delete: int (), <./automountd/autod_readdir.c 614>
+  144 				assert: <>
+  145 				RW_LOCK_HELD: <>
+  146 				rddir_cache_entry_free: void (), <./automountd/autod_readdir.c 594>
+  147 					assert: <>
+  148 					RW_LOCK_HELD: <>
+  149 					free: <>
+  150 					free_offset_tbl: void (), <./automountd/autod_readdir.c 565>
+  151 						free: <>
+  152 					free_dir_list: void (), <./automountd/autod_readdir.c 579>
+  153 						free: <>
+  154 						assert: <>
+  155 				syslog: <>
+  156 			pthread_rwlock_unlock: <>
+  157 			clean_fstab_cache: void (), <./automountlib/ns_fstab.c 1181>
+  158 				time: <>
+  159 				pthread_rwlock_wrlock: <>
+  160 				clean_hashtables: void (), <./automountlib/ns_fstab.c 279>
+  161 					free: <>
+  162 					freefst_list: void (), <./automountlib/ns_fstab.c 210>
+  163 						freefst_ent: void (), <./automountlib/ns_fstab.c 195>
+  164 							free: <>
+  165 				pthread_rwlock_unlock: <>
+  166 			pthread_cond_broadcast: <>
+  167 		wait_for_flush_indication_thread: void * (), <./automountd/autod_main.c 582>
+  168 			pthread_setname_np: <>
+  169 			pthread_mutex_lock: <>
+  170 			pthread_mutex_unlock: <>
+  171 			ioctl: <>
+  172 			syslog: <>
+  173 			strerror: <>
+  174 			flush_caches: void (), <./automountd/autod_nfs.c 1641>
+  175 				pthread_mutex_lock: <>
+  176 				pthread_cond_signal: <>
+  177 				pthread_cond_wait: <>
+  178 				pthread_mutex_unlock: <>
+  179 				cache_flush: void (), <./automountd/autod_nfs.c 1632>
+  180 				flush_host_name_cache: void (), <./automountlib/host_is_us.c 405>
+  181 					pthread_rwlock_wrlock: <>
+  182 					pr_msg: void (), <./automount/automount.c 1090>
+  183 						gettext: <>
+  184 						va_start: <>
+  185 						vsyslog: <>
+  186 						va_end: <>
+  187 						isatty: <>
+  188 						fileno: <>
+  189 						strlcpy: <>
+  190 						strlen: <>
+  191 						strerror: <>
+  192 						vfprintf: <>
+  193 					strerror: <>
+  194 					free_hostinfo_list: void (), <./automountlib/host_is_us.c 393>
+  195 						freehostent: <>
+  196 						free: <>
+  197 					free: <>
+  198 					pthread_rwlock_unlock: <>
+  199 		new_worker_thread: void (), <./automountd/autod_main.c 443>
+  200 			pthread_mutex_lock: <>
+  201 			pthread_cond_wait: <>
+  202 			pthread_create: <>
+  203 			automount_thread: void * (), <./automountd/autod_main.c 419>
+  204 				pthread_setname_np: <>
+  205 				mach_msg_server_once: <>
+  206 				MACH_RCV_TRAILER_ELEMENTS: <>
+  207 				MACH_RCV_TRAILER_TYPE: <>
+  208 				syslog: <>
+  209 				mach_error_string: <>
+  210 			syslog: <>
+  211 			strerror: <>
+  212 			vproc_transaction_begin: <>
+  213 			pthread_mutex_unlock: <>
+  214 		pthread_join: <>
+  215 		pthread_attr_destroy: <>
+  216 		ioctl: <>
+  217 		pr_msg: 182
+  218 		umask: <>
+  219 		ODTriggerCreateForSearch: <>
+  220 		dispatch_get_main_queue: <>
+  221 		run_automount: void (), <./autofsd/autofsd.c 201>
+  222 			strcmp: <>
+  223 			gettimeofday: <>
+  224 			posix_spawn: <>
+  225 			syslog: <>
+  226 			strerror: <>
+  227 			waitpid: <>
+  228 			WIFSIGNALED: <>
+  229 			strsignal: <>
+  230 			WTERMSIG: <>
+  231 			WCOREDUMP: <>
+  232 		CFArrayCreate: <>
+  233 		ODTriggerCreateForRecords: <>
+  234 		notify_register_dispatch: <>
+  235 		signal: <>
+  236 		dispatch_source_create: <>
+  237 		dispatch_source_set_event_handler: <>
+  238 		dispatch_resume: <>
+  239 		dispatch_main: <>
+  240 		usage: void (), <./automount/automount.c 784>
+  241 		strchr: else if (), <./automountlib/ns_files.c 185>
+  242 		atoi: <>
+  243 		getmntinfo: <>
+  244 		fts_open: <>
+  245 		fts_read: <>
+  246 		rmdir: <>
+  247 		fts_close: <>
+  248 		load_autofs: int (), <./automount/automount.c 1127>
+  249 			fork: <>
+  250 			execl: <>
+  251 			wait4: <>
+  252 			WIFEXITED: <>
+  253 			WEXITSTATUS: <>
+  254 		loadmaster_map: int (), <./automountlib/ns_generic.c 117>
+  255 		realpath: <>
+  256 		strcmp: <>
+  257 		paths_match: int (), <./automount/automount.c 915>
+  258 			strcmp: <>
+  259 		have_ad: int (), <./automount/automount.c 1026>
+  260 			ODNodeCreateWithNodeType: <>
+  261 			od_get_error_string: char * (), <./automountlib/ns_od.c 141>
+  262 				CFErrorCopyDescription: <>
+  263 				od_CFStringtoCString: char * (), <./automountlib/ns_od.c 123>
+  264 					od_cfstrlen: inline CFIndex (), <./automountlib/ns_od.c 101>
+  265 						CFStringGetMaximumSizeForEncoding: <>
+  266 						CFStringGetLength: <>
+  267 					malloc: <>
+  268 					od_cfstrlcpy: inline Boolean (), <./automountlib/ns_od.c 111>
+  269 						CFStringGetCString: <>
+  270 					free: <>
+  271 				CFRelease: <>
+  272 				strdup: <>
+  273 			pr_msg: 182
+  274 			free: <>
+  275 			ODNodeCopySubnodeNames: <>
+  276 			CFArrayGetCount: <>
+  277 			CFArrayGetValueAtIndex: <>
+  278 			CFStringHasPrefix: <>
+  279 			CFSTR: <>
+  280 			CFRelease: <>
+  281 		havefstabkeys: int (), <./automountlib/ns_fstab.c 967>
+  282 			we_are_a_server: int (), <./automountlib/we_are_a_server.c 36>
+  283 				SIIsOSXServerVolumeConfigured: <>
+  284 			pthread_rwlock_rdlock: <>
+  285 			trace_prt: 94
+  286 			readfstab: int (), <./automountlib/ns_fstab.c 369>
+  287 				trace_prt: 94
+  288 				pthread_rwlock_unlock: <>
+  289 				pthread_rwlock_wrlock: <>
+  290 				pr_msg: 182
+  291 				time: <>
+  292 				clean_hashtables: 160
+  293 				setfsent: <>
+  294 				getfsent: <>
+  295 				strcmp: <>
+  296 				isalnum: <>
+  297 				getmntopts: <>
+  298 				freemntopts: <>
+  299 				strchr: else if (), <./automountlib/ns_files.c 185>
+  300 				strdup: <>
+  301 				free: <>
+  302 				process_fstab_mntopts: int (), <./automountlib/ns_fstab.c 78>
+  303 					strlen: <>
+  304 					malloc: <>
+  305 					strcpy: <>
+  306 					strdup: <>
+  307 					free: <>
+  308 					strsep: <>
+  309 					strcmp: <>
+  310 					strncmp: <>
+  311 					CHECK_STRCAT: if (), <./automountd/autod_parse.c 1003>
+  312 				calloc: <>
+  313 				find_host_entry: struct fstabhost (), <./automountlib/ns_fstab.c 223>
+  314 				malloc: <>
+  315 				strlen: <>
+  316 				find_staticmap_entry: struct staticmap (), <./automountlib/ns_fstab.c 250>
+  317 				endfsent: <>
+  318 				sort_fstab_entries: void (), <./automountlib/ns_fstab.c 313>
+  319 					strlen: <>
+  320 					strcmp: <>
+  321 					freefst_ent: 163
+  322 			pthread_rwlock_unlock: <>
+  323 		endfsent: <>
+  324 		parse_mntopts: int (), <./automount/automount.c 810>
+  325 			getmntopts: <>
+  326 			pr_msg: 182
+  327 			freemntopts: <>
+  328 		get_staticmap_entry: struct staticmap (), <./automountlib/ns_fstab.c 1117>
+  329 		host_is_us: if (), <./automountd/autod_parse.c 2830>
+  330 			strncasecmp: <>
+  331 			gethostname: <>
+  332 			hosts_match: int (), <./automountlib/host_is_us.c 192>
+  333 				strlen: <>
+  334 				strncasecmp: <>
+  335 				strchr: else if (), <./automountlib/ns_files.c 185>
+  336 			get_local_host_name: int (), <./automountlib/host_is_us.c 218>
+  337 				SCDynamicStoreCreate: <>
+  338 				CFSTR: <>
+  339 				SCDynamicStoreCopyLocalHostName: <>
+  340 				CFRelease: <>
+  341 				CFStringGetCString: <>
+  342 				strlcat: <>
+  343 			strlen: <>
+  344 			pthread_rwlock_rdlock: <>
+  345 			pr_msg: 182
+  346 			strerror: <>
+  347 			convert_to_write_lock: int (), <./automountlib/host_is_us.c 250>
+  348 				pthread_rwlock_unlock: <>
+  349 				pthread_rwlock_wrlock: <>
+  350 				pr_msg: 182
+  351 				strerror: <>
+  352 			get_my_host_names: void (), <./automountlib/host_is_us.c 265>
+  353 				getifaddrs: <>
+  354 				pr_msg: 182
+  355 				strerror: <>
+  356 				malloc: <>
+  357 				freeifaddrs: <>
+  358 				getipnodebyaddr: <>
+  359 				free_hostinfo_list: 194
+  360 			pthread_rwlock_unlock: <>
+  361 		self_check: if (), <./automountd/autod_parse.c 2384>
+  362 			getifaddrs: <>
+  363 			syslog: <>
+  364 			strerror: <>
+  365 			self_check_af: int (), <./automountlib/selfcheck.c 94>
+  366 				getipnodebyname: <>
+  367 				syslog: <>
+  368 				memcmp: <>
+  369 				freehostent: <>
+  370 			freeifaddrs: <>
+  371 		make_symlink: void (), <./automount/automount.c 631>
+  372 			lstat: <>
+  373 			readlink: <>
+  374 			pr_msg: 182
+  375 			strcmp: <>
+  376 			unlink: <>
+  377 			find_mount: <>
+  378 			ioctl: <>
+  379 			rmdir: <>
+  380 			symlink: <>
+  381 			stat: <>
+  382 		release_staticmap_entry: void (), <./automountlib/ns_fstab.c 1171>
+  383 			pthread_rwlock_unlock: <>
+  384 		find_mount: <>
+  385 		lstat: <>
+  386 		strncmp: <>
+  387 		mkdir_r: int (), <./automount/automount.c 935>
+  388 			mkdir: <>
+  389 			strrchr: <>
+  390 			mkdir_r: 387
+  391 		chflags: <>
+  392 		mount: <>
+  393 		do_unmounts: void (), <./automount/automount.c 834>
+  394 			strcmp: <>
+  395 			strncmp: <>
+  396 			ioctl: <>
+  397 			pr_msg: 182
+  398 			rmdir_r: void (), <./automount/automount.c 985>
+  399 				strrchr: <>
+  400 				rmdir: <>
+  401 		close: <>
+  402 		getprogname: <>
+  403 		errx: <>
+  404 		err: *, <./automountd/autod_parse.c 3018>
+  405 		perror: <>
+  406 		LoadAutoFS: int (), <./mount_autofs/mount_autofs.c 87>
+  407 			fork: <>
+  408 			execl: <>
+  409 			wait4: <>
+  410 			WIFEXITED: <>
+  411 			WEXITSTATUS: <>
+  412 			syslog: <>
+  413 		read: <>
+  414 		malloc: <>
+  415 		fork: <>
+  416 		SMBRemountServer: int (), <./triggers_kext/triggers.c 944>
+  417 			auto_get_automountd_port: int (), <./triggers_kext/triggers.c 1025>
+  418 				host_get_automountd_port: <>
+  419 				host_priv_self: <>
+  420 				IOLog: <>
+  421 				IPC_PORT_VALID: <>
+  422 			round_page: <>
+  423 			vm_allocate: <>
+  424 			IOLog: <>
+  425 			auto_release_port: void (), <./triggers_kext/triggers.c 1044>
+  426 				ipc_port_release_send: <>
+  427 			vm_map_wire: <>
+  428 			vm_map_trunc_page: <>
+  429 			vm_map_page_mask: <>
+  430 			vm_map_round_page: <>
+  431 			vm_deallocate: <>
+  432 			bcopy: <>
+  433 			vm_map_unwire: <>
+  434 			vm_map_copyin: <>
+  435 			autofs_smb_remount_server: kern_return_t (), <./automountd/autod_main.c 1073>
+  436 				new_worker_thread: 199
+  437 				pthread_setname_np: <>
+  438 				end_worker_thread: void (), <./automountd/autod_main.c 474>
+  439 					pthread_mutex_lock: <>
+  440 					vproc_transaction_end: <>
+  441 					pthread_cond_signal: <>
+  442 					pthread_mutex_unlock: <>
+  443 				trace_prt: 94
+  444 				pipe: <>
+  445 				syslog: <>
+  446 				fork: <>
+  447 				close: <>
+  448 				join_session: int (), <./automountd/autod_mount.c 715>
+  449 					audit_session_port: <>
+  450 					syslog: <>
+  451 					audit_session_join: <>
+  452 					mach_port_deallocate: <>
+  453 					current_task: <>
+  454 				dup2: <>
+  455 				execl: <>
+  456 				write: <>
+  457 				waitpid: <>
+  458 				WIFSIGNALED: <>
+  459 				strsignal: <>
+  460 				WTERMSIG: <>
+  461 				WIFSTOPPED: <>
+  462 				WSTOPSIG: <>
+  463 				WIFEXITED: <>
+  464 			vm_map_copy_discard: <>
+  465 		CFStringCreateWithCStringNoCopy: <>
+  466 		ODNodeCreateWithNodeType: <>
+  467 		od_get_error_string: char * (), <./od_user_homes/od_user_homes.c 71>
+  468 			CFErrorCopyDescription: <>
+  469 			od_CFStringtoCString: char * (), <./od_user_homes/od_user_homes.c 54>
+  470 				od_cfstrlen: inline CFIndex (), <./od_user_homes/od_user_homes.c 32>
+  471 					CFStringGetMaximumSizeForEncoding: <>
+  472 					CFStringGetLength: <>
+  473 				malloc: <>
+  474 				od_cfstrlcpy: inline Boolean (), <./od_user_homes/od_user_homes.c 42>
+  475 					CFStringGetCString: <>
+  476 				free: <>
+  477 			CFRelease: <>
+  478 			strdup: <>
+  479 		ODQueryCreateWithNodeType: <>
+  480 		ODQueryCopyResults: <>
+  481 		CFArrayGetCount: <>
+  482 		CFArrayGetValueAtIndex: <>
+  483 		ODRecordCopyValues: <>
+  484 		CFGetTypeID: <>
+  485 		CFStringGetTypeID: <>
+  486 		get_home_dir_url: CFMutableStringRef (), <./od_user_homes/od_user_homes.c 97>
+  487 			CFRangeMake: <>
+  488 			CFStringGetLength: <>
+  489 			CFStringFindWithOptions: <>
+  490 			CFSTR: <>
+  491 			CFStringCreateWithSubstring: <>
+  492 			fprintf: <>
+  493 			CFStringCompare: <>
+  494 			CFRelease: <>
+  495 			CFStringCreateMutableCopy: <>
+  496 		CFStringFindAndReplace: <>
+  497 		CFSTR: <>
+  498 		CFRangeMake: <>
+  499 		CFStringGetLength: <>
+  500 		od_CFStringtoCString: 469

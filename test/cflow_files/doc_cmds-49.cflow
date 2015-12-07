@@ -1,0 +1,219 @@
+    1 	main: int (), <./checknr/checknr.c 195>
+    2 		setlocale: <>
+    3 		getopt: <>
+    4 		usage: void (), <./colcrt/colcrt.c 207>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		freopen: <>
+    8 		fflush: <>
+    9 		err: <>
+   10 		getwc: <>
+   11 		pflush: void (), <./colcrt/colcrt.c 221>
+   12 			move: void (), <./colcrt/colcrt.c 263>
+   13 			wcwidth: <>
+   14 			putwchar: <>
+   15 			wmemcpy: <>
+   16 			wmemset: <>
+   17 		wcwidth: <>
+   18 		plus: int (), <./colcrt/colcrt.c 214>
+   19 		ferror: <>
+   20 		exit: <>
+   21 		atoi: <>
+   22 		getenv: <>
+   23 		strchr: <>
+   24 		isupper: <>
+   25 		asprintf: <>
+   26 		fprintf: <>
+   27 		signal: <>
+   28 		trap_signal: void (), <./makewhatis/makewhatis.c 322>
+   29 			unlink: <>
+   30 			exit: <>
+   31 		SLIST_INIT: <>
+   32 		new_sbuf: struct sbuf (), <./makewhatis/makewhatis.c 211>
+   33 		open_output: FILE * (), <./makewhatis/makewhatis.c 333>
+   34 			sl_init: <>
+   35 			fopen: <>
+   36 			warn: <>
+   37 			fgets: <>
+   38 			strlen: <>
+   39 			sl_add: <>
+   40 			strdup: <>
+   41 			snprintf: <>
+   42 		process_argument: void (), <./makewhatis/makewhatis.c 950>
+   43 			strdup: <>
+   44 			err: <>
+   45 			strsep: <>
+   46 			asprintf: <>
+   47 			process_mandir: void (), <./makewhatis/makewhatis.c 908>
+   48 				already_visited: int (), <./makewhatis/makewhatis.c 419>
+   49 					stat: <>
+   50 					warn: <>
+   51 					SLIST_FOREACH: <>
+   52 					warnx: <>
+   53 					malloc: <>
+   54 					SLIST_INSERT_HEAD: <>
+   55 				fprintf: <>
+   56 				scandir: <>
+   57 				select_sections: int (), <./makewhatis/makewhatis.c 890>
+   58 					strncmp: <>
+   59 					isalnum: <>
+   60 				warn: <>
+   61 				open_whatis: FILE * (), <./makewhatis/makewhatis.c 398>
+   62 					snprintf: <>
+   63 					open_output: 33
+   64 				snprintf: <>
+   65 				process_section: void (), <./makewhatis/makewhatis.c 836>
+   66 					fprintf: <>
+   67 					scandir: <>
+   68 					warn: <>
+   69 					calloc: <>
+   70 					new_page_info: struct page_info (), <./makewhatis/makewhatis.c 152>
+   71 					free: <>
+   72 					qsort: <>
+   73 					pagesort: int (), <./makewhatis/makewhatis.c 823>
+   74 						strcmp: <>
+   75 					process_page: void (), <./makewhatis/makewhatis.c 704>
+   76 						sbuf_clear: void (), <./makewhatis/makewhatis.c 202>
+   77 						gzopen: <>
+   78 						warn: <>
+   79 						gzgets: <>
+   80 						strncmp: <>
+   81 						name_section_line: int (), <./makewhatis/makewhatis.c 489>
+   82 							strncmp: <>
+   83 							skip_spaces: char * (), <./makewhatis/makewhatis.c 461>
+   84 								isspace: <>
+   85 							trim_rhs: char * (), <./makewhatis/makewhatis.c 448>
+   86 								strlen: <>
+   87 								isspace: <>
+   88 							strcmp: <>
+   89 						trim_rhs: 85
+   90 						strcmp: <>
+   91 						skip_spaces: 83
+   92 						process_man_line: void (), <./makewhatis/makewhatis.c 586>
+   93 							isalpha: <>
+   94 							skip_spaces: 83
+   95 							only_digits: int (), <./makewhatis/makewhatis.c 472>
+   96 								isdigit: <>
+   97 							add_nroff: void (), <./makewhatis/makewhatis.c 562>
+   98 								sbuf_append_edited: void (), <./makewhatis/makewhatis.c 270>
+   99 									strlen: <>
+  100 									sbuf_need: void (), <./makewhatis/makewhatis.c 224>
+  101 										malloc: <>
+  102 										memcpy: <>
+  103 										free: <>
+  104 								de_nroff_copy: char * (), <./makewhatis/makewhatis.c 517>
+  105 									strncmp: <>
+  106 									isdigit: <>
+  107 							sbuf_append: void (), <./makewhatis/makewhatis.c 248>
+  108 								sbuf_need: 100
+  109 								memcpy: <>
+  110 						process_mdoc_line: void (), <./makewhatis/makewhatis.c 611>
+  111 							strlen: <>
+  112 							sbuf_length: <>
+  113 							isupper: <>
+  114 							islower: <>
+  115 							add_nroff: 97
+  116 							skip_spaces: 83
+  117 							sbuf_append: 107
+  118 							strncmp: <>
+  119 							strchr: <>
+  120 							memmove: <>
+  121 							strpbrk: <>
+  122 							strcmp: <>
+  123 							strstr: <>
+  124 						sbuf_append: 107
+  125 						gzclose: <>
+  126 						sbuf_strip: void (), <./makewhatis/makewhatis.c 283>
+  127 							strchr: <>
+  128 						sbuf_content: char * (), <./makewhatis/makewhatis.c 293>
+  129 						strstr: <>
+  130 						strchr: <>
+  131 						fprintf: <>
+  132 						sl_init: <>
+  133 						collect_names: void (), <./makewhatis/makewhatis.c 680>
+  134 							strchr: <>
+  135 							sl_add: <>
+  136 						sl_find: <>
+  137 						no_page_exists: int (), <./makewhatis/makewhatis.c 304>
+  138 							snprintf: <>
+  139 							access: <>
+  140 							strlen: <>
+  141 						add_whatis_name: void (), <./makewhatis/makewhatis.c 571>
+  142 							sbuf_append_str: void (), <./makewhatis/makewhatis.c 261>
+  143 								sbuf_append: 107
+  144 								strlen: <>
+  145 							sbuf_append: 107
+  146 						sl_free: <>
+  147 						sbuf_retract: <>
+  148 						sbuf_length: <>
+  149 						sbuf_append_str: 142
+  150 						sl_add: <>
+  151 						strdup: <>
+  152 					free_page_info: void (), <./makewhatis/makewhatis.c 138>
+  153 						free: <>
+  154 				stat: <>
+  155 				S_ISDIR: <>
+  156 				free: <>
+  157 				finish_whatis: void (), <./makewhatis/makewhatis.c 407>
+  158 					snprintf: <>
+  159 					finish_output: void (), <./makewhatis/makewhatis.c 375>
+  160 						qsort: <>
+  161 						linesort: int (), <./makewhatis/makewhatis.c 366>
+  162 							strcmp: <>
+  163 						strcmp: <>
+  164 						fputs: <>
+  165 						putc: <>
+  166 						fclose: <>
+  167 						sl_free: <>
+  168 						rename: <>
+  169 						unlink: <>
+  170 			free: <>
+  171 		finish_output: 159
+  172 		strlen: <>
+  173 		usage: void (), <./checknr/checknr.c 275>
+  174 			fprintf: <>
+  175 			exit: <>
+  176 		strncpy: <>
+  177 		malloc: <>
+  178 		addmac: void (), <./checknr/checknr.c 552>
+  179 			binsrch: int (), <./checknr/checknr.c 583>
+  180 			printf: <>
+  181 			strcpy: <>
+  182 			malloc: <>
+  183 		fopen: <>
+  184 		warn: <>
+  185 		process: void (), <./checknr/checknr.c 283>
+  186 			fgets: <>
+  187 			strncpy: <>
+  188 			isspace: <>
+  189 			pe: void (), <./checknr/checknr.c 495>
+  190 				printf: <>
+  191 			printf: <>
+  192 			checkknown: void (), <./checknr/checknr.c 503>
+  193 				eq: int (), <./checknr/checknr.c 488>
+  194 					strcmp: <>
+  195 				binsrch: 179
+  196 				pe: 189
+  197 				printf: <>
+  198 			eq: 193
+  199 			addcmd: void (), <./checknr/checknr.c 521>
+  200 				isspace: <>
+  201 				pe: 189
+  202 				printf: <>
+  203 				exit: <>
+  204 				addmac: 178
+  205 			chkcmd: void (), <./checknr/checknr.c 407>
+  206 				eq: 193
+  207 				nomatch: void (), <./checknr/checknr.c 443>
+  208 					eq: 193
+  209 					pe: 189
+  210 					prop: void (), <./checknr/checknr.c 389>
+  211 						printf: <>
+  212 					printf: <>
+  213 					complain: void (), <./checknr/checknr.c 380>
+  214 						pe: 189
+  215 						printf: <>
+  216 						prop: 210
+  217 			isdigit: <>
+  218 			complain: 213
+  219 		fclose: <>

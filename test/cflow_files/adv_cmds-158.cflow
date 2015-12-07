@@ -1,0 +1,711 @@
+    1 	main: int (), <./whois/whois.c 104>
+    2 		strrchr: <>
+    3 		getopt: <>
+    4 		atol: <>
+    5 		exit: <>
+    6 		hostconv: <>
+    7 		addarg: void (), <./last/last.c 299>
+    8 		ttyconv: <>
+    9 		warnx: <>
+   10 		fprintf: <>
+   11 		setlinebuf: <>
+   12 		wtmp: void (), <./last/last.c 147>
+   13 			time: <>
+   14 			signal: <>
+   15 			onintr: void (), <./last/last.c 409>
+   16 			setutxent_wtmp: <>
+   17 			getutxent_wtmp: <>
+   18 			want: int (), <./last/last.c 249>
+   19 				strncasecmp: <>
+   20 				strncmp: <>
+   21 			ctime: <>
+   22 			printf: <>
+   23 			addtty: <>
+   24 			memcmp: <>
+   25 			puts: <>
+   26 			asctime: <>
+   27 			gmtime: <>
+   28 			endutxent_wtmp: <>
+   29 		getuid: <>
+   30 		geteuid: <>
+   31 		getpwnam: <>
+   32 		setgid: <>
+   33 		setuid: <>
+   34 		setlocale: <>
+   35 		getenv: <>
+   36 		option: int (), <./finger/finger.c 106>
+   37 			getopt: <>
+   38 			usage: void (), <./finger/finger.c 162>
+   39 				fprintf: <>
+   40 				exit: <>
+   41 		time: <>
+   42 		setpassent: <>
+   43 		loginlist: void (), <./finger/finger.c 240>
+   44 			errx: <>
+   45 			setutxent: <>
+   46 			getutxent: <>
+   47 			find_person: PERSON * (), <./finger/util.c 198>
+   48 				getpwnam: <>
+   49 				hide: int (), <./finger/util.c 405>
+   50 					snprintf: <>
+   51 					stat: <>
+   52 				memmove: <>
+   53 			bcopy: <>
+   54 			getpwnam: <>
+   55 			hide: 49
+   56 			enter_person: PERSON * (), <./finger/util.c 163>
+   57 				dbopen: <>
+   58 				err: <>
+   59 				strlen: <>
+   60 				memmove: <>
+   61 				palloc: PERSON * (), <./finger/util.c 227>
+   62 					malloc: <>
+   63 					err: <>
+   64 				userinfo: void (), <./finger/util.c 338>
+   65 					strdup: <>
+   66 					err: <>
+   67 					strncpy: <>
+   68 					strsep: <>
+   69 					islower: <>
+   70 					toupper: <>
+   71 					snprintf: <>
+   72 					stat: <>
+   73 					warn: <>
+   74 			enter_where: void (), <./finger/util.c 148>
+   75 				walloc: WHERE * (), <./finger/util.c 237>
+   76 					malloc: <>
+   77 					err: <>
+   78 				bcopy: <>
+   79 				find_idle_and_ttywrite: void (), <./finger/util.c 303>
+   80 					snprintf: <>
+   81 					stat: <>
+   82 					warn: <>
+   83 			endutxent: <>
+   84 			err: <>
+   85 			memmove: <>
+   86 			enter_lastlog: void (), <./finger/util.c 109>
+   87 				getlastlogxbyname: <>
+   88 				bzero: <>
+   89 				strncmp: <>
+   90 				walloc: 75
+   91 				bcopy: <>
+   92 		printf: <>
+   93 		userlist: void (), <./finger/finger.c 283>
+   94 			malloc: <>
+   95 			calloc: <>
+   96 			err: <>
+   97 			index: <>
+   98 			warnx: <>
+   99 			fopen: <>
+  100 			fgets: <>
+  101 			strlen: <>
+  102 			strchr: <>
+  103 			strcmp: <>
+  104 			strdup: <>
+  105 			fclose: <>
+  106 			show_text: int (), <./finger/lprint.c 297>
+  107 				snprintf: <>
+  108 				open: <>
+  109 				fstat: <>
+  110 				strlen: <>
+  111 				read: <>
+  112 				close: <>
+  113 				printf: <>
+  114 				vputc: void (), <./finger/lprint.c 350>
+  115 					isprint: <>
+  116 					isascii: <>
+  117 					putchar: <>
+  118 					toascii: <>
+  119 				putchar: <>
+  120 				lseek: <>
+  121 				fdopen: <>
+  122 				getc: <>
+  123 				fclose: <>
+  124 			getpwnam: <>
+  125 			hide: 49
+  126 			enter_person: 56
+  127 			getpwent: <>
+  128 			match: int (), <./finger/util.c 69>
+  129 				strcasecmp: <>
+  130 				strncpy: <>
+  131 				strtok: <>
+  132 			netfinger: void (), <./finger/net.c 66>
+  133 				strrchr: <>
+  134 				signal: <>
+  135 				alarm: <>
+  136 				getaddrinfo: <>
+  137 				warnx: <>
+  138 				gai_strerror: <>
+  139 				printf: <>
+  140 				trying: void (), <./finger/net.c 232>
+  141 				do_protocol: int (), <./finger/net.c 111>
+  142 					socket: <>
+  143 					warn: <>
+  144 					strdup: <>
+  145 					strlen: <>
+  146 					connect: <>
+  147 					close: <>
+  148 					sendmsg: <>
+  149 					fdopen: <>
+  150 					getc: <>
+  151 					printf: <>
+  152 					isprint: <>
+  153 					isspace: <>
+  154 					putchar: <>
+  155 					ferror: <>
+  156 					fclose: <>
+  157 					getnameinfo: <>
+  158 					write: <>
+  159 					exit: <>
+  160 				freeaddrinfo: <>
+  161 			printf: <>
+  162 			setutxent: <>
+  163 			getutxent: <>
+  164 			find_person: 47
+  165 			enter_where: 74
+  166 			endutxent: <>
+  167 			memmove: <>
+  168 			enter_lastlog: 86
+  169 		lflag_print: void (), <./finger/lprint.c 72>
+  170 			err: <>
+  171 			memmove: <>
+  172 			putchar: <>
+  173 			lprint: void (), <./finger/lprint.c 103>
+  174 				nl_langinfo: <>
+  175 				printf: <>
+  176 				strlen: <>
+  177 				snprintf: <>
+  178 				prphone: char * (), <./finger/util.c 254>
+  179 					isdigit: <>
+  180 				demi_print: int (), <./finger/lprint.c 259>
+  181 					strlen: <>
+  182 					putchar: <>
+  183 					printf: <>
+  184 				putchar: <>
+  185 				localtime: <>
+  186 				strftime: <>
+  187 				gmtime: <>
+  188 			show_text: 106
+  189 			printf: <>
+  190 		sflag_print: void (), <./finger/sprint.c 61>
+  191 			nl_langinfo: <>
+  192 			printf: <>
+  193 			err: <>
+  194 			memmove: <>
+  195 			putchar: <>
+  196 			strncmp: <>
+  197 			stimeprint: void (), <./finger/sprint.c 166>
+  198 				printf: <>
+  199 				gmtime: <>
+  200 			localtime: <>
+  201 			strftime: <>
+  202 			prphone: 178
+  203 		COMPAT_MODE: <>
+  204 		atoi: <>
+  205 		ioctl: <>
+  206 		kludge_oldps_options: char * (), <./ps/ps.c 1258>
+  207 		init_list: void (), <./ps/ps.c 1070>
+  208 		addelem_gid: int (), <./ps/ps.c 782>
+  209 			strlen: <>
+  210 			warnx: <>
+  211 			strtoul: <>
+  212 			getgrgid: <>
+  213 			getgrnam: <>
+  214 			expand_list: void * (), <./ps/ps.c 1040>
+  215 		addelem_pid: int (), <./ps/ps.c 830>
+  216 			warnx: <>
+  217 			strtol: <>
+  218 			expand_list: void * (), <./ps/ps.c 1040>
+  219 		addelem_uid: int (), <./ps/ps.c 935>
+  220 		addelem_tty: int (), <./ps/ps.c 869>
+  221 			strcmp: <>
+  222 			strlcpy: <>
+  223 			strlcat: <>
+  224 			strncmp: <>
+  225 			strlen: <>
+  226 			stat: <>
+  227 			S_ISCHR: <>
+  228 			access: <>
+  229 			warn: <>
+  230 			warnx: <>
+  231 			expand_list: void * (), <./ps/ps.c 1040>
+  232 			getpwnam: <>
+  233 			strtoul: <>
+  234 			getpwuid: <>
+  235 			strchr: <>
+  236 			realloc: <>
+  237 			free: <>
+  238 			errx: <>
+  239 			find_varentry: <>
+  240 			STAILQ_FOREACH: <>
+  241 			fmt_argv: const char * (), <./ps/fmt.c 108>
+  242 				shquote: char * (), <./ps/fmt.c 58>
+  243 					sysconf: <>
+  244 					errx: <>
+  245 					malloc: <>
+  246 					strvisx: <>
+  247 					strlen: <>
+  248 				strlen: <>
+  249 				malloc: <>
+  250 				errx: <>
+  251 				sprintf: <>
+  252 				strncmp: <>
+  253 				cmdpart: char * (), <./ps/fmt.c 100>
+  254 					strrchr: <>
+  255 				strcpy: <>
+  256 			UREADOK: <>
+  257 			kvm_uread: <>
+  258 			KI_PROC: <>
+  259 			fmt: const char * (), <./ps/ps.c 1150>
+  260 			kvm_getargv: <>
+  261 			malloc: <>
+  262 			sprintf: <>
+  263 			strcpy: <>
+  264 			getpcpu: int (), <./ps/print.c 916>
+  265 				donlist: int (), <./ps/nlist.c 59>
+  266 					sysctl: <>
+  267 					sysctlbyname: <>
+  268 				KI_PROC: <>
+  269 				fxtofl: <>
+  270 				exp: <>
+  271 				log: <>
+  272 			VSIZE: <>
+  273 			KI_EPROC: <>
+  274 			isdigitch: <>
+  275 			memcpy: <>
+  276 			statfs: <>
+  277 			fprintf: <>
+  278 			exit: <>
+  279 		getgid: <>
+  280 		parsefmt: void (), <./ps/keyword.c 228>
+  281 			strdup: <>
+  282 			strcspn: <>
+  283 			strsep: <>
+  284 			findvar: VAR * (), <./ps/keyword.c 291>
+  285 				strchr: <>
+  286 				bsearch: <>
+  287 				vcmp: int (), <./ps/keyword.c 337>
+  288 					strcmp: <>
+  289 				parsefmt: 280
+  290 				strlen: <>
+  291 				malloc: <>
+  292 				snprintf: <>
+  293 				warnx: <>
+  294 			find_varentry: <>
+  295 			malloc: <>
+  296 			errx: <>
+  297 			memcpy: <>
+  298 			STAILQ_INSERT_TAIL: <>
+  299 			free: <>
+  300 			STAILQ_EMPTY: <>
+  301 			warnx: <>
+  302 			showkey: void (), <./ps/keyword.c 207>
+  303 				strlen: <>
+  304 				printf: <>
+  305 			exit: <>
+  306 		findvar: 284
+  307 		add_list: void (), <./ps/ps.c 980>
+  308 		showkey: 302
+  309 		ttyname: <>
+  310 		errx: <>
+  311 		usage: void (), <./ps/ps.c 1363>
+  312 		isatty: <>
+  313 		check_procfs: int (), <./ps/ps.c 1350>
+  314 		isdigitch: <>
+  315 		getprogname: <>
+  316 		kvm_openfiles: <>
+  317 		malloc: <>
+  318 		scanvars: void (), <./ps/ps.c 1094>
+  319 		kvm_getprocs: <>
+  320 		kvm_geterr: <>
+  321 		sysctl: <>
+  322 		perror: <>
+  323 		sleep: <>
+  324 		get_task_info: int (), <./ps/tasks.c 88>
+  325 			error: void (), <./gencat/genlib.c 68>
+  326 				warning: void (), <./gencat/genlib.c 57>
+  327 					warnx: <>
+  328 					putc: <>
+  329 					fprintf: <>
+  330 				exit: <>
+  331 			KI_PROC: <>
+  332 			task_for_pid: <>
+  333 			mach_task_self: <>
+  334 			task_info: <>
+  335 			mach_error: <>
+  336 			vm_region_64: <>
+  337 			task_threads: <>
+  338 			mach_port_deallocate: <>
+  339 			malloc: <>
+  340 			thread_info: <>
+  341 			thread_schedinfo: int (), <./ps/tasks.c 50>
+  342 				thread_info: <>
+  343 			mach_state_order: int (), <./ps/tasks.c 31>
+  344 			vm_deallocate: <>
+  345 		getpcpu: 264
+  346 		saveuser: void (), <./ps/ps.c 1163>
+  347 		dynsizevars: void (), <./ps/ps.c 1113>
+  348 		sizevars: void (), <./ps/ps.c 1132>
+  349 		printheader: void (), <./ps/print.c 75>
+  350 			STAILQ_FOREACH: <>
+  351 			STAILQ_NEXT: <>
+  352 			printf: <>
+  353 			putchar: <>
+  354 		qsort: <>
+  355 		pscomp: int (), <./ps/ps.c 1225>
+  356 		STAILQ_FOREACH: <>
+  357 		STAILQ_NEXT: <>
+  358 		putchar: <>
+  359 		free: <>
+  360 		free_list: void (), <./ps/ps.c 1058>
+  361 		usage: void (), <./tty/tty.c 79>
+  362 			fprintf: <>
+  363 			exit: <>
+  364 		puts: <>
+  365 		strspn: <>
+  366 		strlen: <>
+  367 		open: <>
+  368 		err: <>
+  369 		args: void (), <./ps/print.c 393>
+  370 			p_command_and_or_args: void (), <./ps/print.c 346>
+  371 				get_command_and_or_args: char * (), <./ps/print.c 295>
+  372 					getproclline: void (), <./ps/print.c 111>
+  373 						sysctl: <>
+  374 						malloc: <>
+  375 						KI_PROC: <>
+  376 						memcpy: <>
+  377 						getuid: <>
+  378 						KI_EPROC: <>
+  379 						asprintf: <>
+  380 						free: <>
+  381 					malloc: <>
+  382 					strlen: <>
+  383 					err: <>
+  384 					strvis: <>
+  385 					free: <>
+  386 					strdup: <>
+  387 				STAILQ_NEXT: <>
+  388 				fputs: <>
+  389 				putchar: <>
+  390 				printf: <>
+  391 				free: <>
+  392 		tcgetattr: <>
+  393 		warn: <>
+  394 		checkredirect: void (), <./stty/util.c 60>
+  395 			isatty: <>
+  396 			fstat: <>
+  397 			warnx: <>
+  398 		print: void (), <./stty/print.c 58>
+  399 			printf: <>
+  400 			cfgetispeed: <>
+  401 			cfgetospeed: <>
+  402 			binit: void (), <./stty/print.c 235>
+  403 				printf: <>
+  404 			put: <>
+  405 			bput: void (), <./stty/print.c 246>
+  406 				printf: <>
+  407 				strlen: <>
+  408 			on: <>
+  409 			snprintf: <>
+  410 			ccval: const char * (), <./stty/print.c 262>
+  411 				snprintf: <>
+  412 		gprint: , <./stty/gfmt.c 64>
+  413 			printf: <>
+  414 			cfgetispeed: <>
+  415 			cfgetospeed: <>
+  416 		ksearch: int (), <./stty/key.c 110>
+  417 			bsearch: <>
+  418 			c_key: int (), <./stty/key.c 103>
+  419 				strcmp: <>
+  420 			warnx: <>
+  421 			usage: void (), <./cap_mkdb/cap_mkdb.c 223>
+  422 				fprintf: <>
+  423 				exit: <>
+  424 		csearch: int (), <./stty/cchar.c 102>
+  425 			bsearch: <>
+  426 			c_cchar: int (), <./stty/cchar.c 95>
+  427 				strcmp: <>
+  428 			warnx: <>
+  429 			usage: 421
+  430 			CHK: <>
+  431 			strtol: <>
+  432 		msearch: int (), <./stty/modes.c 263>
+  433 			CHK: <>
+  434 			COMPAT_MODE: <>
+  435 		isdigit: <>
+  436 		cfsetospeed: <>
+  437 		cfsetispeed: <>
+  438 		strncmp: <>
+  439 		gread: void (), <./stty/gfmt.c 81>
+  440 			strchr: <>
+  441 			gerr: void (), <./stty/gfmt.c 54>
+  442 				errx: <>
+  443 			strsep: <>
+  444 			sscanf: <>
+  445 			CHK: <>
+  446 		usage: 421
+  447 		tcsetattr: <>
+  448 		strcmp: <>
+  449 		writeIfChanged: void (), <./gencat/gencat.c 138>
+  450 			stat: <>
+  451 			open: <>
+  452 			errx: <>
+  453 			MCWriteConst: void (), <./gencat/genlib.c 533>
+  454 				printS: void (), <./gencat/genlib.c 472>
+  455 					write: <>
+  456 					strlen: <>
+  457 				genconst: void (), <./gencat/genlib.c 495>
+  458 					printS: 454
+  459 					printLX: void (), <./gencat/genlib.c 487>
+  460 						sprintf: <>
+  461 						write: <>
+  462 						strlen: <>
+  463 					printL: void (), <./gencat/genlib.c 479>
+  464 						sprintf: <>
+  465 						write: <>
+  466 						strlen: <>
+  467 					error: 325
+  468 				MCMakeId: <>
+  469 				free: <>
+  470 			close: <>
+  471 			mkstemp: <>
+  472 			err: <>
+  473 			unlink: <>
+  474 			lseek: <>
+  475 			read: <>
+  476 			write: <>
+  477 			warnx: <>
+  478 		usage: void (), <./gencat/gencat.c 63>
+  479 			fprintf: <>
+  480 			exit: <>
+  481 		MCReadCat: void (), <./gencat/genlib.c 395>
+  482 			malloc: <>
+  483 			nomem: void (), <./gencat/genlib.c 80>
+  484 				error: 325
+  485 			bzero: <>
+  486 			read: <>
+  487 			corrupt: void (), <./gencat/genlib.c 75>
+  488 				error: 325
+  489 			strncmp: <>
+  490 			ntohl: <>
+  491 			error: 325
+  492 			lseek: <>
+  493 			ntohll: <>
+  494 			dupstr: char * (), <./gencat/genlib.c 248>
+  495 				strdup: <>
+  496 				error: 325
+  497 			free: <>
+  498 		close: <>
+  499 		MCParse: void (), <./gencat/genlib.c 298>
+  500 			malloc: <>
+  501 			nomem: 483
+  502 			bzero: <>
+  503 			gencat_getline: char * (), <./gencat/genlib.c 85>
+  504 				malloc: <>
+  505 				nomem: 483
+  506 				read: <>
+  507 				realloc: <>
+  508 			strncmp: <>
+  509 			wskip: char * (), <./gencat/genlib.c 141>
+  510 				isspace: <>
+  511 				warning: 326
+  512 			atoi: <>
+  513 			cskip: char * (), <./gencat/genlib.c 152>
+  514 				isspace: <>
+  515 				warning: 326
+  516 			MCAddSet: void (), <./gencat/genlib.c 650>
+  517 				error: 325
+  518 				free: <>
+  519 				malloc: <>
+  520 				nomem: 483
+  521 				bzero: <>
+  522 				dupstr: 494
+  523 			token: char * (), <./gencat/genlib.c 129>
+  524 				isspace: <>
+  525 			MCDelSet: void (), <./gencat/genlib.c 756>
+  526 				free: <>
+  527 				warning: 326
+  528 			isspace: <>
+  529 			strcpy: <>
+  530 			warning: 326
+  531 			isdigit: <>
+  532 			MCAddMsg: void (), <./gencat/genlib.c 701>
+  533 				error: 325
+  534 				free: <>
+  535 				malloc: <>
+  536 				nomem: 483
+  537 				bzero: <>
+  538 				dupstr: 494
+  539 			MCDelMsg: void (), <./gencat/genlib.c 784>
+  540 				error: 325
+  541 				free: <>
+  542 				warning: 326
+  543 			getmsg: char * (), <./gencat/genlib.c 163>
+  544 				strlen: <>
+  545 				realloc: <>
+  546 				malloc: <>
+  547 				nomem: 483
+  548 				isspace: <>
+  549 				wskip: 509
+  550 				warning: 326
+  551 				gencat_getline: 503
+  552 				error: 325
+  553 				CASEOF: <>
+  554 				isdigit: <>
+  555 		MCWriteCat: void (), <./gencat/genlib.c 570>
+  556 			bcopy: <>
+  557 			htonl: <>
+  558 			error: 325
+  559 			lseek: <>
+  560 			write: <>
+  561 			htonll: <>
+  562 			bzero: <>
+  563 			ntohll: <>
+  564 			strlen: <>
+  565 		openlog: <>
+  566 		logerr: void (), <./fingerd/fingerd.c 213>
+  567 			va_start: <>
+  568 			vsyslog: <>
+  569 			va_end: <>
+  570 			exit: <>
+  571 		setsockopt: <>
+  572 		fgets: <>
+  573 		getpeername: <>
+  574 		strerror: <>
+  575 		realhostname_sa: <>
+  576 		setenv: <>
+  577 		memchr: <>
+  578 		memcpy: <>
+  579 		strdup: <>
+  580 		syslog: <>
+  581 		strtok: <>
+  582 		strchr: <>
+  583 		pipe: <>
+  584 		vfork: <>
+  585 		dup2: <>
+  586 		execv: <>
+  587 		write: <>
+  588 		fdopen: <>
+  589 		getc: <>
+  590 		strtol: <>
+  591 		strncasecmp: <>
+  592 		strcasecmp: <>
+  593 		makelist: void (), <./pkill/pkill.c 941>
+  594 		takepid: int (), <./pkill/pkill.c 1065>
+  595 		getpid: <>
+  596 		copy_process_info: sysmon_table_t (), <./pkill/pkill.c 160>
+  597 			dispatch_semaphore_create: <>
+  598 			sysmon_request_create: <>
+  599 			sysmon_retain: <>
+  600 			dispatch_semaphore_signal: <>
+  601 			sysmon_request_add_attribute: <>
+  602 			sysmon_request_execute: <>
+  603 			dispatch_semaphore_wait: <>
+  604 			dispatch_release: <>
+  605 			sysmon_release: <>
+  606 		sysmon_table_get_count: <>
+  607 		memset: <>
+  608 		regcomp: <>
+  609 		regerror: <>
+  610 		sysmon_table_get_row: <>
+  611 		PSKIP: <>
+  612 		xpc_uint64_get_value: <>
+  613 		sysmon_row_get_value: <>
+  614 		xpc_string_get_string_ptr: <>
+  615 		os_assert: <>
+  616 		xpc_array_apply: <>
+  617 		index: <>
+  618 		snprintf: <>
+  619 		xpc_array_get_count: <>
+  620 		kvm_getargv: <>
+  621 		xpc_array_get_string: <>
+  622 		regexec: <>
+  623 		regfree: <>
+  624 		SLIST_FOREACH: <>
+  625 		SLIST_FIRST: <>
+  626 		getppid: <>
+  627 		xpc_date_get_value: <>
+  628 		timercmp: <>
+  629 		assert: <>
+  630 		show_process: <>
+  631 		fflush: <>
+  632 		getchar: <>
+  633 		kill: <>
+  634 		strsep: <>
+  635 		usage: void (), <./pkill/pkill.c 801>
+  636 		SLIST_INSERT_HEAD: <>
+  637 		getpgrp: <>
+  638 		getsid: <>
+  639 		stat: <>
+  640 		getgrnam: <>
+  641 		fopen: <>
+  642 		flock: <>
+  643 		fileno: <>
+  644 		fclose: <>
+  645 		feof: <>
+  646 		isspace: <>
+  647 		dbopen: <>
+  648 		atexit: <>
+  649 		dounlink: void (), <./cap_mkdb/cap_mkdb.c 100>
+  650 			unlink: <>
+  651 		db_build: void (), <./cap_mkdb/cap_mkdb.c 119>
+  652 			cgetnext: <>
+  653 			strlen: <>
+  654 			MAX: <>
+  655 			realloc: <>
+  656 			err: <>
+  657 			strchr: <>
+  658 			warnx: <>
+  659 			MIN: <>
+  660 			memmove: <>
+  661 			errx: <>
+  662 			printf: <>
+  663 		NELEMS: <>
+  664 		gettabs: void (), <./tabs/tabs.c 201>
+  665 			strtok: <>
+  666 			errx: <>
+  667 			strtol: <>
+  668 		setupterm: <>
+  669 		tgetstr: <>
+  670 		ttywidth: int (), <./tabs/tabs.c 227>
+  671 			ioctl: <>
+  672 			tgetnum: <>
+  673 			warnx: <>
+  674 		putp: <>
+  675 		fputs: <>
+  676 		getvfsbyname: <>
+  677 		fmt_flags: const char * (), <./lsvfs/lsvfs.c 81>
+  678 			strcat: <>
+  679 		SOCKSinit: <>
+  680 		s_asprintf: void (), <./whois/whois.c 263>
+  681 			va_start: <>
+  682 			vasprintf: <>
+  683 			va_end: <>
+  684 			err: <>
+  685 		whois: void (), <./whois/whois.c 276>
+  686 			gethostinfo: struct addrinfo (), <./whois/whois.c 240>
+  687 			socket: <>
+  688 			connect: <>
+  689 			close: <>
+  690 			freeaddrinfo: <>
+  691 			err: <>
+  692 			fdopen: <>
+  693 			strcmp: <>
+  694 			fprintf: <>
+  695 			fflush: <>
+  696 			fgetln: <>
+  697 			isspace: <>
+  698 			printf: <>
+  699 			strnstr: <>
+  700 			ishost: <>
+  701 			s_asprintf: 680
+  702 			tolower: <>
+  703 			whois: 685
+  704 			free: <>
+  705 		choose_server: char * (), <./whois/whois.c 214>
+  706 			strchr: <>
+  707 			errx: <>
+  708 			strlen: <>
+  709 			strcasecmp: <>
+  710 			s_asprintf: 680
+  711 			isdigit: <>

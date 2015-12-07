@@ -1,0 +1,234 @@
+    1 	main: int (), <./openpam/bin/su/su.c 67>
+    2 		getopt: <>
+    3 		usage: void (), <./openpam/bin/su/su.c 59>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		openpam_ttyconv: int (), <./openpam/lib/openpam_ttyconv.c 168>
+    7 			ENTER: <>
+    8 			RETURNC: <>
+    9 			calloc: <>
+   10 			prompt_echo_off: char * (), <./openpam/lib/openpam_ttyconv.c 135>
+   11 				fileno: <>
+   12 				tcgetattr: <>
+   13 				openpam_log: void (), <./openpam/lib/openpam_log.c 64>
+   14 					va_start: <>
+   15 					vsyslog: <>
+   16 					va_end: <>
+   17 				tcsetattr: <>
+   18 				prompt: char * (), <./openpam/lib/openpam_ttyconv.c 64>
+   19 					sigemptyset: <>
+   20 					sigaddset: <>
+   21 					sigprocmask: <>
+   22 					timeout: void (), <./openpam/lib/openpam_ttyconv.c 57>
+   23 					sigaction: <>
+   24 					fputs: <>
+   25 					fflush: <>
+   26 					fpurge: <>
+   27 					fileno: <>
+   28 					alarm: <>
+   29 					read: <>
+   30 					memset: <>
+   31 					strlen: <>
+   32 					strdup: <>
+   33 				fputs: <>
+   34 			prompt: 18
+   35 			fputs: <>
+   36 			strlen: <>
+   37 			fputc: <>
+   38 			memset: <>
+   39 			FREE: <>
+   40 		pam_start: int (), <./compat/pam_shim.c 140>
+   41 			ENTER: <>
+   42 			calloc: <>
+   43 			RETURNC: <>
+   44 			pam_set_item: int (), <./compat/pam_shim.c 250>
+   45 				ENTERI: <>
+   46 				RETURNC: <>
+   47 				strlen: <>
+   48 				memset: <>
+   49 				FREE: <>
+   50 				malloc: <>
+   51 				memcpy: <>
+   52 				xlate_pam_shim_item_type: int (), <./compat/pam_shim.c 118>
+   53 				dlopen: <>
+   54 				dlfailure: void (), <./compat/pam_shim.c 130>
+   55 					syslog: <>
+   56 					dlerror: <>
+   57 					abort: <>
+   58 				dlsym: <>
+   59 				xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+   60 			openpam_configure: int (), <./openpam/lib/openpam_configure.c 322>
+   61 				openpam_load_chain: int (), <./openpam/lib/openpam_configure.c 279>
+   62 					strchr: <>
+   63 					openpam_log: 13
+   64 					strlen: <>
+   65 					asprintf: <>
+   66 					openpam_read_chain: int (), <./openpam/lib/openpam_configure.c 129>
+   67 						fopen: <>
+   68 						openpam_log: 13
+   69 						openpam_readline: char * (), <./openpam/lib/openpam_readline.c 54>
+   70 							malloc: <>
+   71 							fgetc: <>
+   72 							isspace: <>
+   73 							line_putch: <>
+   74 							FREE: <>
+   75 						match_word: int (), <./openpam/lib/openpam_configure.c 70>
+   76 							tolower: <>
+   77 						FREE: <>
+   78 						next_word: const char * (), <./openpam/lib/openpam_configure.c 82>
+   79 						wordlen: int (), <./openpam/lib/openpam_configure.c 114>
+   80 						dup_word: char * (), <./openpam/lib/openpam_configure.c 98>
+   81 							asprintf: <>
+   82 						openpam_load_chain: 61
+   83 						calloc: <>
+   84 						openpam_load_module: pam_module_t * (), <./openpam/lib/openpam_load.c 69>
+   85 							openpam_dynamic: pam_module_t * (), <./openpam/lib/openpam_dynamic.c 58>
+   86 								calloc: <>
+   87 								asprintf: <>
+   88 								dlopen: <>
+   89 								openpam_log: 13
+   90 								dlerror: <>
+   91 								strrchr: <>
+   92 								FREE: <>
+   93 								strdup: <>
+   94 								dlsym: <>
+   95 								dlclose: <>
+   96 							openpam_log: 13
+   97 							strchr: <>
+   98 							openpam_static: pam_module_t * (), <./openpam/lib/openpam_static.c 55>
+   99 								SET_FOREACH: <>
+  100 								strcmp: <>
+  101 						feof: <>
+  102 						fclose: <>
+  103 					FREE: <>
+  104 				openpam_clear_chains: void (), <./openpam/lib/openpam_load.c 141>
+  105 					openpam_destroy_chain: void (), <./openpam/lib/openpam_load.c 119>
+  106 						openpam_destroy_chain: 105
+  107 						FREE: <>
+  108 						openpam_release_module: void (), <./openpam/lib/openpam_load.c 99>
+  109 							dlclose: <>
+  110 							openpam_log: 13
+  111 							FREE: <>
+  112 			openpam_log: 13
+  113 			pam_end: int (), <./compat/pam_shim.c 153>
+  114 				ENTER: <>
+  115 				RETURNC: <>
+  116 				FREE: <>
+  117 				openpam_clear_chains: 104
+  118 				pam_set_item: 44
+  119 				dlopen: <>
+  120 				dlfailure: 54
+  121 				dlsym: <>
+  122 				xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  123 			dlopen: <>
+  124 			dlfailure: 54
+  125 			dlsym: <>
+  126 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  127 		gethostname: <>
+  128 		pam_set_item: 44
+  129 		getlogin: <>
+  130 		ttyname: <>
+  131 		pam_authenticate: int (), <./compat/pam_shim.c 166>
+  132 			ENTER: <>
+  133 			RETURNC: <>
+  134 			openpam_dispatch: int (), <./openpam/lib/openpam_dispatch.c 57>
+  135 				ENTER: <>
+  136 				RETURNC: <>
+  137 				openpam_log: 13
+  138 				openpam_get_option: const char * (), <./openpam/lib/openpam_get_option.c 54>
+  139 					ENTERS: <>
+  140 					RETURNS: <>
+  141 					strlen: <>
+  142 					strncmp: <>
+  143 				pam_strerror: const char * (), <./compat/pam_shim.c 291>
+  144 					snprintf: <>
+  145 					dlopen: <>
+  146 					dlfailure: 54
+  147 					dlsym: <>
+  148 			pam_set_item: 44
+  149 			xlate_pam_shim_authenticate_flags: int (), <./compat/pam_shim.c 18>
+  150 			dlopen: <>
+  151 			dlfailure: 54
+  152 			dlsym: <>
+  153 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  154 		pam_acct_mgmt: int (), <./compat/pam_shim.c 194>
+  155 			ENTER: <>
+  156 			openpam_dispatch: 134
+  157 			RETURNC: <>
+  158 			xlate_pam_shim_authenticate_flags: int (), <./compat/pam_shim.c 18>
+  159 			dlopen: <>
+  160 			dlfailure: 54
+  161 			dlsym: <>
+  162 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  163 		pam_chauthtok: int (), <./compat/pam_shim.c 208>
+  164 			ENTER: <>
+  165 			RETURNC: <>
+  166 			openpam_dispatch: 134
+  167 			pam_set_item: 44
+  168 			xlate_pam_shim_chauthtok_flags: int (), <./compat/pam_shim.c 38>
+  169 			dlopen: <>
+  170 			dlfailure: 54
+  171 			dlsym: <>
+  172 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  173 		pam_setcred: int (), <./compat/pam_shim.c 180>
+  174 			ENTER: <>
+  175 			RETURNC: <>
+  176 			openpam_dispatch: 134
+  177 			xlate_pam_shim_authenticate_flags: int (), <./compat/pam_shim.c 18>
+  178 			dlopen: <>
+  179 			dlfailure: 54
+  180 			dlsym: <>
+  181 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  182 		pam_open_session: int (), <./compat/pam_shim.c 222>
+  183 			ENTER: <>
+  184 			RETURNC: <>
+  185 			openpam_dispatch: 134
+  186 			xlate_pam_shim_session_flags: int (), <./compat/pam_shim.c 58>
+  187 			dlopen: <>
+  188 			dlfailure: 54
+  189 			dlsym: <>
+  190 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  191 		pam_get_item: int (), <./compat/pam_shim.c 264>
+  192 			ENTERI: <>
+  193 			RETURNC: <>
+  194 			xlate_pam_shim_item_type: int (), <./compat/pam_shim.c 118>
+  195 			dlopen: <>
+  196 			dlfailure: 54
+  197 			dlsym: <>
+  198 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  199 		getpwnam: <>
+  200 		pam_getenvlist: char ** (), <./compat/pam_shim.c 330>
+  201 			ENTER: <>
+  202 			RETURNP: <>
+  203 			malloc: <>
+  204 			openpam_log: 13
+  205 			pam_strerror: 143
+  206 			strdup: <>
+  207 			FREE: <>
+  208 			dlopen: <>
+  209 			dlfailure: 54
+  210 			dlsym: <>
+  211 		putenv: <>
+  212 		free: <>
+  213 		calloc: <>
+  214 		warn: <>
+  215 		memcpy: <>
+  216 		fork: <>
+  217 		initgroups: <>
+  218 		setgid: <>
+  219 		setuid: <>
+  220 		execve: <>
+  221 		waitpid: <>
+  222 		pam_close_session: int (), <./compat/pam_shim.c 236>
+  223 			ENTER: <>
+  224 			RETURNC: <>
+  225 			openpam_dispatch: 134
+  226 			xlate_pam_shim_session_flags: int (), <./compat/pam_shim.c 58>
+  227 			dlopen: <>
+  228 			dlfailure: 54
+  229 			dlsym: <>
+  230 			xlate_pam_shim_retval: int (), <./compat/pam_shim.c 98>
+  231 		pam_end: 113
+  232 		exit: <>
+  233 		WEXITSTATUS: <>
+  234 		fprintf: <>

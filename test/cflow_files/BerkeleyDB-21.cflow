@@ -1,0 +1,862 @@
+    1 	main: int (), <./db/examples_c/ex_env.c 38>
+    2 		u_int32_t: (), <./db/examples_c/ex_tpcb.c 370>
+    3 			Tcl_ResetResult: <>
+    4 			Tcl_AppendToObj: <>
+    5 			Tcl_GetObjResult: <>
+    6 		version_check: int (), <./db/db_verify/db_verify.c 254>
+    7 			db_version: char * (), <./db/env/env_open.c 30>
+    8 			fprintf: , <./db/clib/printf.c 70>
+    9 		getopt: int (), <./db/clib/getopt.c 65>
+   10 		strdup: <>
+   11 		memset: <>
+   12 		strlen: <>
+   13 		fprintf: , <./db/clib/printf.c 70>
+   14 		strerror: char * (), <./db/clib/strerror.c 85>
+   15 			ERRSTR: <>
+   16 		printf: , <./db/clib/printf.c 23>
+   17 		db_version: 7
+   18 		usage: int (), <./db/examples_c/ex_sequence.c 129>
+   19 			fprintf: , <./db/clib/printf.c 70>
+   20 			exit: <>
+   21 		db_env_create: int (), <./db/env/env_method.c 62>
+   22 			LF_ISSET: if (), <./db/rpc_client/client.c 131>
+   23 			F_SET: <>
+   24 			F_ISSET: if (), <./db/qam/qam_method.c 342>
+   25 				F_CLR: <>
+   26 				F_SET: <>
+   27 				EPRINT: <>
+   28 		db_strerror: char * (), <./db/common/db_err.c 225>
+   29 		time: time_t (), <./db/clib/time.c 21>
+   30 		free: , <./db/db/db_meta.c 894>
+   31 		ZERO_LSN: <>
+   32 		lsn_arg: int (), <./db/db_printlog/db_printlog.c 558>
+   33 			strchr: char * (), <./db/clib/strchr.c 45>
+   34 		db_printlog_print_app_record: int (), <./db/build_vxworks/db_printlog/db_printlog.c 495>
+   35 			u_int32_t: 2
+   36 			DB_ASSERT: <>
+   37 			COMPQUIET: <>
+   38 			memcpy: <>
+   39 			printf: , <./db/clib/printf.c 23>
+   40 			isprint: int (), <./db/clib/isprint.c 21>
+   41 		open_rep_db: int (), <./db/db_printlog/db_printlog.c 518>
+   42 			db_create: int (), <./db/db/db_method.c 74>
+   43 				TAILQ_FIRST: <>
+   44 				DB_GLOBAL: <>
+   45 				ENV_ENTER: <>
+   46 				ENV_LEAVE: <>
+   47 		IS_ZERO_LSN: while (), <./db/txn/txn_recover.c 299>
+   48 		env_init_print: int (), <./db/db_printlog/db_printlog.c 317>
+   49 			env_init_print_45: int (), <./db/db_printlog/db_printlog.c 423>
+   50 			env_init_print_43: int (), <./db/db_printlog/db_printlog.c 399>
+   51 			env_init_print_42: int (), <./db/db_printlog/db_printlog.c 362>
+   52 			errx: <>
+   53 		LOG_COMPARE: <>
+   54 		fflush: <>
+   55 		atoi: <>
+   56 		memcmp: <>
+   57 		strchr: 33
+   58 		srand: void (), <./db/clib/rand.c 22>
+   59 			DB_GLOBAL: <>
+   60 		getpid: <>
+   61 		tm_env_init: int (), <./db/mutex/test_mutex.c 645>
+   62 			u_int32_t: 2
+   63 			db_env_create: 21
+   64 			fprintf: , <./db/clib/printf.c 70>
+   65 			db_strerror: char * (), <./db/common/db_err.c 225>
+   66 		exit: <>
+   67 		data_on: void (), <./db/mutex/test_mutex.c 832>
+   68 			size_t: (), <./db/common/os_method.c 243>
+   69 			exit: <>
+   70 			fprintf: , <./db/clib/printf.c 70>
+   71 			printf: , <./db/clib/printf.c 23>
+   72 			db_strerror: char * (), <./db/common/db_err.c 225>
+   73 		locker_start: int (), <./db/mutex/test_mutex.c 353>
+   74 			calloc: <>
+   75 			fprintf: , <./db/clib/printf.c 70>
+   76 			strerror: 14
+   77 			os_thread_create: <>
+   78 			run_lthread: void * (), <./db/mutex/test_mutex.c 404>
+   79 				os_thread_self: <>
+   80 				printf: , <./db/clib/printf.c 23>
+   81 				getpid: <>
+   82 				rand: int (), <./db/clib/rand.c 16>
+   83 					DB_GLOBAL: <>
+   84 				fprintf: , <./db/clib/printf.c 70>
+   85 				db_strerror: char * (), <./db/common/db_err.c 225>
+   86 			db_strerror: char * (), <./db/common/db_err.c 225>
+   87 		wakeup_start: int (), <./db/mutex/test_mutex.c 530>
+   88 			os_thread_create: <>
+   89 			run_wthread: void * (), <./db/mutex/test_mutex.c 575>
+   90 				os_thread_self: <>
+   91 				printf: , <./db/clib/printf.c 23>
+   92 				getpid: <>
+   93 				fflush: <>
+   94 				fprintf: , <./db/clib/printf.c 70>
+   95 				db_strerror: char * (), <./db/common/db_err.c 225>
+   96 				rand: 82
+   97 			fprintf: , <./db/clib/printf.c 70>
+   98 			db_strerror: char * (), <./db/common/db_err.c 225>
+   99 		locker_wait: int (), <./db/mutex/test_mutex.c 383>
+  100 			os_thread_join: <>
+  101 			fprintf: , <./db/clib/printf.c 70>
+  102 			free: , <./db/db/db_meta.c 894>
+  103 		wakeup_wait: int (), <./db/mutex/test_mutex.c 552>
+  104 			os_thread_join: <>
+  105 			fprintf: , <./db/clib/printf.c 70>
+  106 		data_off: void (), <./db/mutex/test_mutex.c 902>
+  107 			exit: <>
+  108 		tm_env_close: void (), <./db/mutex/test_mutex.c 691>
+  109 		snprintf: , <./db/clib/snprintf.c 29>
+  110 		system: <>
+  111 		tm_mutex_init: void (), <./db/mutex/test_mutex.c 701>
+  112 			printf: , <./db/clib/printf.c 23>
+  113 			fprintf: , <./db/clib/printf.c 70>
+  114 			db_strerror: char * (), <./db/common/db_err.c 225>
+  115 			exit: <>
+  116 		calloc: <>
+  117 		spawn_proc: os_pid_t (), <./db/mutex/test_mutex.c 977>
+  118 			snprintf: , <./db/clib/snprintf.c 29>
+  119 			os_spawn: <>
+  120 		os_wait: int (), <./db/mutex/test_mutex.c 934>
+  121 			WaitForMultipleObjects: <>
+  122 			GetExitCodeProcess: <>
+  123 			wait: db_timeout_t, <./db/repmgr/repmgr_posix.c 174>
+  124 			WIFEXITED: <>
+  125 			WEXITSTATUS: <>
+  126 			kill: <>
+  127 		tm_mutex_stats: void (), <./db/mutex/test_mutex.c 810>
+  128 			u_int32_t: 2
+  129 			printf: , <./db/clib/printf.c 23>
+  130 		tm_mutex_destroy: void (), <./db/mutex/test_mutex.c 765>
+  131 			printf: , <./db/clib/printf.c 23>
+  132 			fprintf: , <./db/clib/printf.c 70>
+  133 			db_strerror: char * (), <./db/common/db_err.c 225>
+  134 			exit: <>
+  135 		TAILQ_INIT: <>
+  136 		strcasecmp: <>
+  137 		freopen: <>
+  138 		parse_input: int (), <./db/db_codegen/code_parse.c 19>
+  139 			fgets: char * (), <./db/os_brew/fgets.c 21>
+  140 				fgetc: int (), <./db/os_brew/fgetc.c 21>
+  141 					IFILE_Read: <>
+  142 			strchr: 33
+  143 			strlen: <>
+  144 			fprintf: , <./db/clib/printf.c 70>
+  145 			isspace: int (), <./db/clib/isspace.c 21>
+  146 			parse_line: int (), <./db/db_codegen/code_parse.c 67>
+  147 				strcasecmp: <>
+  148 				strcmp: <>
+  149 				TAILQ_INIT: <>
+  150 				TAILQ_INSERT_TAIL: <>
+  151 				CONFIG_GET_UINT32: <>
+  152 				fprintf: , <./db/clib/printf.c 70>
+  153 				db_strerror: char * (), <./db/common/db_err.c 225>
+  154 			fclose: int (), <./db/os_brew/fclose.c 21>
+  155 				IFILE_Release: <>
+  156 		parse_dump: int (), <./db/db_codegen/code_parse.c 280>
+  157 			TAILQ_FOREACH:  (), <./db/hash/hash.c 1930>
+  158 				DB_ASSERT: <>
+  159 				IS_VALID_EID: if (), <./db/repmgr/repmgr_net.c 643>
+  160 					FD_SET: <>
+  161 				SITE_FROM_EID: <>
+  162 				MVCC_SKIP_CURADJ: <>
+  163 				F_ISSET: 24
+  164 				F_CLR: <>
+  165 				F_SET: <>
+  166 			printf: , <./db/clib/printf.c 23>
+  167 		TAILQ_FIRST: <>
+  168 		api_c: int (), <./db/db_codegen/code_capi.c 24>
+  169 			fopen: <>
+  170 			fprintf: , <./db/clib/printf.c 70>
+  171 			strerror: 14
+  172 			api_c_header: void (), <./db/db_codegen/code_capi.c 76>
+  173 				fprintf: , <./db/clib/printf.c 70>
+  174 			api_c_public_data: void (), <./db/db_codegen/code_capi.c 97>
+  175 				fprintf: , <./db/clib/printf.c 70>
+  176 				TAILQ_FOREACH: 157
+  177 			TAILQ_FOREACH: 157
+  178 			api_c_callback: void (), <./db/db_codegen/code_capi.c 516>
+  179 				fprintf: , <./db/clib/printf.c 70>
+  180 			api_c_compare: void (), <./db/db_codegen/code_capi.c 542>
+  181 				TAILQ_FOREACH: 157
+  182 				strcasecmp: <>
+  183 				fprintf: , <./db/clib/printf.c 70>
+  184 			api_c_data: void (), <./db/db_codegen/code_capi.c 135>
+  185 				fprintf: , <./db/clib/printf.c 70>
+  186 				TAILQ_FOREACH: 157
+  187 			api_c_public_func: void (), <./db/db_codegen/code_capi.c 229>
+  188 				fprintf: , <./db/clib/printf.c 70>
+  189 			api_c_env: void (), <./db/db_codegen/code_capi.c 301>
+  190 				fprintf: , <./db/clib/printf.c 70>
+  191 			api_c_db: void (), <./db/db_codegen/code_capi.c 385>
+  192 				fprintf: , <./db/clib/printf.c 70>
+  193 			api_c_shutdown: void (), <./db/db_codegen/code_capi.c 582>
+  194 				fprintf: , <./db/clib/printf.c 70>
+  195 		size_t: (), <./db/common/os_method.c 243>
+  196 		strcmp: 148
+  197 		env_create: int (), <./db/db_load/db_load.c 564>
+  198 			db_env_create: 21
+  199 			fprintf: , <./db/clib/printf.c 70>
+  200 			db_strerror: char * (), <./db/common/db_err.c 225>
+  201 			db_init: DB_ENV * (), <./db/examples_c/bench_001.c 62>
+  202 				u_int32_t: 2
+  203 				LF_CLR: <>
+  204 				LF_SET: <>
+  205 				db_env_create: 21
+  206 		load: int (), <./db/db_load/db_load.c 261>
+  207 			u_int32_t: 2
+  208 			LF_ISSET: 22
+  209 			G: <>
+  210 			memset: <>
+  211 			db_create: 42
+  212 			rheader: int (), <./db/db_load/db_load.c 758>
+  213 				size_t: (), <./db/common/os_method.c 243>
+  214 				G: <>
+  215 				malloc: <>
+  216 				getchar: <>
+  217 				ferror: <>
+  218 				realloc: <>
+  219 				strlen: <>
+  220 				free: , <./db/db/db_meta.c 894>
+  221 				strdup: <>
+  222 				strchr: 33
+  223 				strcmp: 148
+  224 				convprintable: int (), <./db/db_load/db_load.c 1012>
+  225 					malloc: <>
+  226 					strlen: <>
+  227 					DIGITIZE: <>
+  228 				atoi: <>
+  229 				badnum: void (), <./db/db_load/db_load.c 1253>
+  230 			configure: int (), <./db/db_load/db_load.c 699>
+  231 				strchr: 33
+  232 				strcmp: 148
+  233 				free: , <./db/db/db_meta.c 894>
+  234 				strdup: <>
+  235 				badnum: void (), <./db/db_load/db_load.c 1253>
+  236 				G: <>
+  237 			TXN_ON: <>
+  238 			env_create: 197
+  239 			malloc: <>
+  240 			dbt_rprint: int (), <./db/db_load/db_load.c 1050>
+  241 				u_int32_t: 2
+  242 				G: <>
+  243 				getchar: <>
+  244 				badend: int (), <./db/db_load/db_load.c 1265>
+  245 				fgets: 139
+  246 				strcmp: 148
+  247 				DIGITIZE: <>
+  248 				realloc: <>
+  249 			dbt_rdump: int (), <./db/db_load/db_load.c 1120>
+  250 				u_int32_t: 2
+  251 				G: <>
+  252 				getchar: <>
+  253 				badend: int (), <./db/db_load/db_load.c 1265>
+  254 				fgets: 139
+  255 				strcmp: 148
+  256 				realloc: <>
+  257 				DIGITIZE: <>
+  258 			dbt_to_recno: int (), <./db/db_load/db_load.c 1235>
+  259 				memcpy: <>
+  260 				G: <>
+  261 			dbt_rrecno: int (), <./db/db_load/db_load.c 1179>
+  262 				G: <>
+  263 				fgets: 139
+  264 				strcmp: 148
+  265 				badend: int (), <./db/db_load/db_load.c 1265>
+  266 			free: , <./db/db/db_meta.c 894>
+  267 		dbopen: <>
+  268 		db_hash: void (), <./db/db_dump185/db_dump185.c 254>
+  269 			printf: , <./db/clib/printf.c 23>
+  270 		db_btree: void (), <./db/db_dump185/db_dump185.c 286>
+  271 			printf: , <./db/clib/printf.c 23>
+  272 		dbt_print: void (), <./db/db_dump185/db_dump185.c 332>
+  273 			size_t: (), <./db/common/os_method.c 243>
+  274 			isprint: int (), <./db/clib/isprint.c 21>
+  275 			printf: , <./db/clib/printf.c 23>
+  276 		dbt_dump: void (), <./db/db_dump185/db_dump185.c 315>
+  277 			size_t: (), <./db/common/os_method.c 243>
+  278 			printf: , <./db/clib/printf.c 23>
+  279 		bdb_brew_begin: <>
+  280 		chdir: <>
+  281 		b_util_dir_teardown: <>
+  282 		run: int (), <./db/test_micro/source/test_micro.c 107>
+  283 			b_uname: int (), <./db/build_vxworks/test_micro/b_uname.c 12>
+  284 				fopen: <>
+  285 				write_info: int (), <./db/test_micro/source/b_uname.c 124>
+  286 					GetComputerName: <>
+  287 					fprintf: , <./db/clib/printf.c 70>
+  288 					GetSystemInfo: <>
+  289 					memset: <>
+  290 					GetVersionEx: <>
+  291 					uname: <>
+  292 					strerror: 14
+  293 				fclose: 154
+  294 				fprintf: , <./db/clib/printf.c 70>
+  295 				strerror: 14
+  296 				b_uname_write_info: int (), <./db/build_vxworks/test_micro/b_uname.c 124>
+  297 					GetComputerName: <>
+  298 					fprintf: , <./db/clib/printf.c 70>
+  299 					GetSystemInfo: <>
+  300 					memset: <>
+  301 					GetVersionEx: <>
+  302 					uname: <>
+  303 					strerror: 14
+  304 			fopen: <>
+  305 			fprintf: , <./db/clib/printf.c 70>
+  306 			strerror: 14
+  307 			fgets: 139
+  308 			strchr: 33
+  309 			strcmp: 148
+  310 			snprintf: , <./db/clib/snprintf.c 29>
+  311 			freopen: <>
+  312 			b_util_dir_setup: int (), <./db/build_vxworks/test_micro/b_util.c 40>
+  313 				mkdir: <>
+  314 				fprintf: , <./db/clib/printf.c 70>
+  315 				db_strerror: char * (), <./db/common/db_err.c 225>
+  316 				OS_EXISTS: <>
+  317 				b_util_unlink: <>
+  318 				testdir_remove: int (), <./db/test_micro/source/b_util.c 87>
+  319 				snprintf: , <./db/clib/snprintf.c 29>
+  320 				rmdir: <>
+  321 				b_util_testdir_remove: int (), <./db/build_vxworks/test_micro/b_util.c 87>
+  322 			f: <>
+  323 			b_util_dir_teardown: <>
+  324 			fflush: <>
+  325 		bdb_brew_end: <>
+  326 		clnt_create: <>
+  327 		clnt_destroy: <>
+  328 		LIST_INIT: <>
+  329 		add_home: int (), <./db/rpc_server/c/db_server_util.c 688>
+  330 		add_passwd: int (), <./db/rpc_server/c/db_server_util.c 736>
+  331 		signal: <>
+  332 		env_recover: int (), <./db/rpc_server/c/db_server_util.c 776>
+  333 		E: <>
+  334 		db_env_set_func_dirfree: int (), <./db/common/os_method.c 28>
+  335 		dirfree: void (), <./db/test/scr028/t.c 29>
+  336 		db_env_set_func_dirlist: int (), <./db/common/os_method.c 40>
+  337 		dirlist: int (), <./db/test/scr028/t.c 32>
+  338 		db_env_set_func_exists: int (), <./db/common/os_method.c 51>
+  339 		exists: int (), <./db/test/scr028/t.c 35>
+  340 		F: <>
+  341 		db_env_set_func_file_map: int (), <./db/common/os_method.c 121>
+  342 		file_map: int (), <./db/test/scr028/t.c 42>
+  343 		unmap: int (), <./db/test/scr028/t.c 54>
+  344 		db_env_set_func_free: int (), <./db/common/os_method.c 62>
+  345 		db_env_set_func_fsync: int (), <./db/common/os_method.c 73>
+  346 		fsync: <>
+  347 		db_env_set_func_ftruncate: int (), <./db/common/os_method.c 84>
+  348 		ftruncate: <>
+  349 		db_env_set_func_ioinfo: int (), <./db/common/os_method.c 96>
+  350 		ioinfo: int (), <./db/test/scr028/t.c 38>
+  351 		db_env_set_func_malloc: int (), <./db/common/os_method.c 108>
+  352 		malloc: <>
+  353 		db_env_set_func_open: int (), <./db/common/os_method.c 173>
+  354 		pread: <>
+  355 		pwrite: <>
+  356 		read: <>
+  357 		db_env_set_func_realloc: int (), <./db/common/os_method.c 195>
+  358 		realloc: <>
+  359 		db_env_set_func_region_map: int (), <./db/common/os_method.c 136>
+  360 		region_map: int (), <./db/test/scr028/t.c 45>
+  361 		db_env_set_func_rename: int (), <./db/common/os_method.c 207>
+  362 		db_env_set_func_seek: int (), <./db/common/os_method.c 219>
+  363 		seek: int (), <./db/test/scr028/t.c 48>
+  364 		db_env_set_func_unlink: int (), <./db/common/os_method.c 230>
+  365 		unlink: <>
+  366 		write: <>
+  367 		db_env_set_func_yield: int (), <./db/common/os_method.c 253>
+  368 		local_sleep: int (), <./db/test/scr028/t.c 51>
+  369 		assert: <>
+  370 		tpinit: <>
+  371 		tpalloc: <>
+  372 		TPINITNEED: <>
+  373 		db_create: 42
+  374 		Fneeded: <>
+  375 		GetTime: void (), <./db/test/scr031/src/htimestampxa.c 7>
+  376 			gettimeofday: int (), <./db/examples_c/ex_tpcb.c 26>
+  377 		Fchg: <>
+  378 		tpbegin: <>
+  379 		rand: 82
+  380 		tpcall: <>
+  381 		tpcommit: <>
+  382 		tpabort: <>
+  383 		check_data: int (), <./db/test/scr031/src/client.c 242>
+  384 			db_create: 42
+  385 			fprintf: , <./db/clib/printf.c 70>
+  386 			db_strerror: char * (), <./db/common/db_err.c 225>
+  387 			printf: , <./db/clib/printf.c 23>
+  388 			memset: <>
+  389 			db_buf: char * (), <./db/test/scr031/src/client.c 319>
+  390 				size_t: (), <./db/common/os_method.c 243>
+  391 				isprint: int (), <./db/clib/isprint.c 21>
+  392 				sprintf: <>
+  393 			memcmp: <>
+  394 		tpstrerror: <>
+  395 		Fstrerror: <>
+  396 		tpfree: <>
+  397 		tpterm: <>
+  398 		ops: struct { ... }[], <./db/test/scr023/q.c 696>
+  399 		f_init: <>
+  400 		f_verify: <>
+  401 		putchar: <>
+  402 		sh_t_verify_TAILQ_LAST: <>
+  403 		f_remove_head: <>
+  404 		f_remove_tail: <>
+  405 		f_remove_item: <>
+  406 		f_insert_head: <>
+  407 		f_insert_tail: <>
+  408 		f_insert_before: <>
+  409 		f_insert_after: <>
+  410 		f_as_string: <>
+  411 		f_discard: <>
+  412 		chk: void (), <./db/test/scr021/t.c 10>
+  413 			freopen: <>
+  414 			fprintf: , <./db/clib/printf.c 70>
+  415 			strerror: 14
+  416 			exit: <>
+  417 			getchar: <>
+  418 			isblank: <>
+  419 			printf: , <./db/clib/printf.c 23>
+  420 			isalpha: int (), <./db/clib/isalpha.c 21>
+  421 			isdigit: int (), <./db/clib/isdigit.c 21>
+  422 			putchar: <>
+  423 		LF_SET: <>
+  424 		db_init: 201
+  425 		setbuf: <>
+  426 		env_init: int (), <./db/db_hotbackup/db_hotbackup.c 374>
+  427 			db_env_create: 21
+  428 			fprintf: , <./db/clib/printf.c 70>
+  429 			db_strerror: char * (), <./db/common/db_err.c 225>
+  430 			setbuf: <>
+  431 		backup_dir_clean: int (), <./db/db_hotbackup/db_hotbackup.c 472>
+  432 			size_t: (), <./db/common/os_method.c 243>
+  433 			snprintf: , <./db/clib/snprintf.c 29>
+  434 			strncmp: <>
+  435 			atoi: <>
+  436 			printf: , <./db/clib/printf.c 23>
+  437 		read_data_dir: int (), <./db/db_hotbackup/db_hotbackup.c 541>
+  438 			size_t: (), <./db/common/os_method.c 243>
+  439 			snprintf: , <./db/clib/snprintf.c 29>
+  440 			strncmp: <>
+  441 			data_copy: int (), <./db/db_hotbackup/db_hotbackup.c 756>
+  442 				size_t: (), <./db/common/os_method.c 243>
+  443 				printf: , <./db/clib/printf.c 23>
+  444 				malloc: <>
+  445 				snprintf: , <./db/clib/snprintf.c 29>
+  446 				free: , <./db/db/db_meta.c 894>
+  447 		read_log_dir: int (), <./db/db_hotbackup/db_hotbackup.c 624>
+  448 			u_int32_t: 2
+  449 			size_t: (), <./db/common/os_method.c 243>
+  450 			snprintf: , <./db/clib/snprintf.c 29>
+  451 			strdup: <>
+  452 			atoi: <>
+  453 			printf: , <./db/clib/printf.c 23>
+  454 			data_copy: 441
+  455 			free: , <./db/db/db_meta.c 894>
+  456 		show_subs: int (), <./db/db_dump/db_dump.c 400>
+  457 			memset: <>
+  458 			prdbt: <>
+  459 		dump_sub: int (), <./db/db_dump/db_dump.c 331>
+  460 			memset: <>
+  461 			malloc: <>
+  462 			memcpy: <>
+  463 			db_create: 42
+  464 			free: , <./db/db/db_meta.c 894>
+  465 		read_timestamp: int (), <./db/db_recover/db_recover.c 222>
+  466 			time: 29
+  467 			localtime: <>
+  468 			fprintf: , <./db/clib/printf.c 70>
+  469 			strerror: 14
+  470 			strchr: 33
+  471 			strlen: <>
+  472 			ATOI2: <>
+  473 			mktime: <>
+  474 		db_recover_feedback: void (), <./db/db_recover/db_recover.c 174>
+  475 			COMPQUIET: <>
+  476 			printf: , <./db/clib/printf.c 23>
+  477 			fflush: <>
+  478 		strrchr: char * (), <./db/clib/strrchr.c 45>
+  479 		parse: int (), <./db/dist/api_flags.c 98>
+  480 			fgets: 139
+  481 			strchr: 33
+  482 			fprintf: , <./db/clib/printf.c 70>
+  483 			isspace: int (), <./db/clib/isspace.c 21>
+  484 			strtok: <>
+  485 			add_entry: int (), <./db/dist/api_flags.c 155>
+  486 				strcmp: 148
+  487 				realloc: <>
+  488 				memset: <>
+  489 				calloc: <>
+  490 				strdup: <>
+  491 				strncmp: <>
+  492 				strtoul: <>
+  493 				fprintf: , <./db/clib/printf.c 70>
+  494 			free: , <./db/db/db_meta.c 894>
+  495 			strdup: <>
+  496 		generate_flags: int (), <./db/dist/api_flags.c 300>
+  497 			qsort: void (), <./db/clib/qsort.c 102>
+  498 				SWAPINIT: <>
+  499 				swap: <>
+  500 				med3: , <./db/clib/qsort.c 86>
+  501 				vecswap: <>
+  502 				qsort: 497
+  503 			flag_cmp_api_cnt: int (), <./db/dist/api_flags.c 275>
+  504 			fprintf: , <./db/clib/printf.c 70>
+  505 			ffs: <>
+  506 		print_api_mask: void (), <./db/dist/api_flags.c 354>
+  507 			snprintf: , <./db/clib/snprintf.c 29>
+  508 			islower: <>
+  509 			toupper: <>
+  510 			isalpha: int (), <./db/clib/isalpha.c 21>
+  511 			define_print: void (), <./db/dist/api_flags.c 402>
+  512 				strlen: <>
+  513 				printf: , <./db/clib/printf.c 23>
+  514 		print_api_remainder: void (), <./db/dist/api_flags.c 373>
+  515 			printf: , <./db/clib/printf.c 23>
+  516 		print_flag_value: void (), <./db/dist/api_flags.c 388>
+  517 			qsort: 497
+  518 			flag_cmp_alpha: int (), <./db/dist/api_flags.c 333>
+  519 				strcmp: 148
+  520 			define_print: 511
+  521 		dump_api: void (), <./db/dist/api_flags.c 245>
+  522 			printf: , <./db/clib/printf.c 23>
+  523 		dump_flags: void (), <./db/dist/api_flags.c 255>
+  524 			printf: , <./db/clib/printf.c 23>
+  525 		TXN_ON: 237
+  526 		run_mpool: int (), <./db/examples_c/ex_mpool.c 86>
+  527 		create_env: <>
+  528 		event_callback: void (), <./db/examples_c/ex_rep/mgr/rep_mgr.c 170>
+  529 			printf: , <./db/clib/printf.c 23>
+  530 		strtok: <>
+  531 		doloop: int (), <./db/examples_c/ex_rep/common/rep_common.c 84>
+  532 			u_int32_t: 2
+  533 			memset: <>
+  534 			printf: , <./db/clib/printf.c 23>
+  535 			fflush: <>
+  536 			fgets: 139
+  537 			strtok: <>
+  538 			strncmp: <>
+  539 			db_create: 42
+  540 			print_stocks: int (), <./db/examples_c/ex_rep/common/rep_common.c 30>
+  541 				u_int32_t: 2
+  542 				memset: <>
+  543 				printf: , <./db/clib/printf.c 23>
+  544 				memcpy: <>
+  545 				fflush: <>
+  546 			strlen: <>
+  547 		event_callback: void (), <./db/examples_c/ex_rep/base/rep_base.c 271>
+  548 		WSAStartup: <>
+  549 		MAKEWORD: <>
+  550 		sigaction: <>
+  551 		machtab_init: int (), <./db/examples_c/ex_rep/base/rep_net.c 97>
+  552 			malloc: <>
+  553 			fprintf: , <./db/clib/printf.c 70>
+  554 			LIST_INIT: <>
+  555 			mutex_init: <>
+  556 		thread_create: <>
+  557 		connect_thread: void * (), <./db/examples_c/ex_rep/base/rep_msg.c 241>
+  558 			listen_socket_init: <>
+  559 			listen_socket_accept: <>
+  560 			calloc: <>
+  561 			thread_create: <>
+  562 			hm_loop: void * (), <./db/examples_c/ex_rep/base/rep_msg.c 44>
+  563 				u_int32_t: 2
+  564 				free: , <./db/db/db_meta.c 894>
+  565 				memset: <>
+  566 				get_next_message: <>
+  567 				closesocket: <>
+  568 				machtab_rem: int (), <./db/examples_c/ex_rep/base/rep_net.c 229>
+  569 					fprintf: , <./db/clib/printf.c 70>
+  570 					LIST_FIRST: <>
+  571 					LIST_NEXT: <>
+  572 					LIST_REMOVE: <>
+  573 					closesocket: <>
+  574 					free: , <./db/db/db_meta.c 894>
+  575 					printf: , <./db/clib/printf.c 23>
+  576 					machtab_print: void (), <./db/examples_c/ex_rep/base/rep_net.c 283>
+  577 						fprintf: , <./db/clib/printf.c 70>
+  578 						LIST_FIRST: <>
+  579 						LIST_NEXT: <>
+  580 						printf: , <./db/clib/printf.c 23>
+  581 				machtab_parm: void (), <./db/examples_c/ex_rep/base/rep_net.c 269>
+  582 				strncmp: <>
+  583 				strtok: <>
+  584 				atoi: <>
+  585 				realloc: <>
+  586 				connect_site: int (), <./db/examples_c/ex_rep/base/rep_msg.c 389>
+  587 				memcpy: <>
+  588 				thread_join: <>
+  589 				calloc: <>
+  590 				thread_create: <>
+  591 				elect_thread: void * (), <./db/examples_c/ex_rep/base/rep_msg.c 438>
+  592 			thread_join: <>
+  593 		connect_all: void * (), <./db/examples_c/ex_rep/base/rep_msg.c 313>
+  594 			calloc: <>
+  595 			connect_site: int (), <./db/examples_c/ex_rep/base/rep_msg.c 389>
+  596 			sleep: <>
+  597 			free: , <./db/db/db_meta.c 894>
+  598 		sleep: <>
+  599 		thread_join: <>
+  600 		WSACleanup: <>
+  601 		desc_load: int (), <./db/examples_c/csv/code.c 115>
+  602 			fgets: 139
+  603 			strchr: 33
+  604 			fprintf: , <./db/clib/printf.c 70>
+  605 			isspace: int (), <./db/clib/isspace.c 21>
+  606 			strncasecmp: <>
+  607 			realloc: <>
+  608 			strerror: 14
+  609 			strdup: <>
+  610 			strcasecmp: <>
+  611 			islower: <>
+  612 			toupper: <>
+  613 			ferror: <>
+  614 		desc_dump: int (), <./db/examples_c/csv/code.c 227>
+  615 			fprintf: , <./db/clib/printf.c 70>
+  616 		fopen: <>
+  617 		code_header: int (), <./db/examples_c/csv/code.c 260>
+  618 			fprintf: , <./db/clib/printf.c 70>
+  619 		code_source: int (), <./db/examples_c/csv/code.c 319>
+  620 			fprintf: , <./db/clib/printf.c 70>
+  621 			type_to_string: char * (), <./db/examples_c/csv/code.c 380>
+  622 		csv_env_open: int (), <./db/examples_c/csv/db.c 20>
+  623 			db_env_create: 21
+  624 			fprintf: , <./db/clib/printf.c 70>
+  625 			db_strerror: char * (), <./db/common/db_err.c 225>
+  626 			db_create: 42
+  627 			compare_uint32: int (), <./db/examples_c/csv/db.c 235>
+  628 				u_int32_t: 2
+  629 				memcpy: <>
+  630 			csv_secondary_open: int (), <./db/examples_c/csv/db.c 137>
+  631 				f: <>
+  632 				db_create: 42
+  633 				compare_double: int (), <./db/examples_c/csv/util.c 159>
+  634 					memcpy: <>
+  635 				compare_ulong: int (), <./db/examples_c/csv/util.c 175>
+  636 					memcpy: <>
+  637 				secondary_callback: int (), <./db/examples_c/csv/util.c 107>
+  638 					f: <>
+  639 					DbRecord_init: int (), <./db/examples_c/csv/DbRecord.c 114>
+  640 						f: <>
+  641 						u_int32_t: 2
+  642 						memcpy: <>
+  643 						DbRecord_field: int (), <./db/examples_c/csv/DbRecord.c 149>
+  644 							size_t: (), <./db/common/os_method.c 243>
+  645 							OFFSET_LEN: <>
+  646 							memcpy: <>
+  647 							strtod_err: int (), <./db/examples_c/csv/util.c 52>
+  648 								strtod: <>
+  649 								isspace: int (), <./db/clib/isspace.c 21>
+  650 							strtoul_err: int (), <./db/examples_c/csv/util.c 82>
+  651 								strtoul: <>
+  652 								isspace: int (), <./db/clib/isspace.c 21>
+  653 					strlen: <>
+  654 					malloc: <>
+  655 					memcpy: <>
+  656 		query_interactive: int (), <./db/examples_c/csv/query.c 51>
+  657 			printf: , <./db/clib/printf.c 23>
+  658 			fflush: <>
+  659 			fgets: 139
+  660 			ferror: <>
+  661 			strchr: 33
+  662 			query: int (), <./db/examples_c/csv/query.c 86>
+  663 				strncasecmp: <>
+  664 				strlen: <>
+  665 				query_by_field: int (), <./db/examples_c/csv/query.c 115>
+  666 					size_t: (), <./db/common/os_method.c 243>
+  667 					isspace: int (), <./db/clib/isspace.c 21>
+  668 					strcspn: <>
+  669 					query_usage: int (), <./db/examples_c/csv/query.c 237>
+  670 						fprintf: , <./db/clib/printf.c 70>
+  671 						query_help: int (), <./db/examples_c/csv/query.c 220>
+  672 							printf: , <./db/clib/printf.c 23>
+  673 					DbRecord_search_field_name: int (), <./db/examples_c/csv/DbRecord.c 209>
+  674 						f: <>
+  675 						strcasecmp: <>
+  676 						DbRecord_search_field: int (), <./db/examples_c/csv/DbRecord.c 318>
+  677 							u_int32_t: 2
+  678 							memset: <>
+  679 							regcomp: <>
+  680 							field_cmp_re: int (), <./db/examples_c/csv/util.c 220>
+  681 								regexec: <>
+  682 							strtod_err: 647
+  683 							field_cmp_double: int (), <./db/examples_c/csv/util.c 191>
+  684 							field_cmp_string: int (), <./db/examples_c/csv/util.c 255>
+  685 								strcasecmp: <>
+  686 							strlen: <>
+  687 							strtoul_err: 650
+  688 							field_cmp_ulong: int (), <./db/examples_c/csv/util.c 287>
+  689 							DbRecord_init: 639
+  690 							DbRecord_print: void (), <./db/examples_c/csv/DbRecord.c 22>
+  691 								f: <>
+  692 								fprintf: , <./db/clib/printf.c 70>
+  693 							regfree: <>
+  694 						DbRecord_search_recno: int (), <./db/examples_c/csv/DbRecord.c 247>
+  695 							u_int32_t: 2
+  696 							strtoul_err: 650
+  697 							memset: <>
+  698 							DbRecord_init: 639
+  699 							field_cmp_ulong: 688
+  700 							DbRecord_print: 690
+  701 		query: 662
+  702 		csv_env_close: int (), <./db/examples_c/csv/db.c 107>
+  703 			csv_secondary_close: int (), <./db/examples_c/csv/db.c 216>
+  704 				f: <>
+  705 			fprintf: , <./db/clib/printf.c 70>
+  706 			db_strerror: char * (), <./db/common/db_err.c 225>
+  707 		strtoul_err: 650
+  708 		getenv: <>
+  709 		mkdir: <>
+  710 		input_load: int (), <./db/examples_c/csv/load.c 30>
+  711 			u_int32_t: 2
+  712 			size_t: (), <./db/common/os_method.c 243>
+  713 			memset: <>
+  714 			memcpy: <>
+  715 			input_getline: getline_status (), <./db/examples_c/csv/load.c 156>
+  716 				size_t: (), <./db/common/os_method.c 243>
+  717 				getchar: <>
+  718 				realloc: <>
+  719 				isprint: int (), <./db/clib/isprint.c 21>
+  720 			input_field_count: int (), <./db/examples_c/csv/load.c 225>
+  721 				u_int32_t: 2
+  722 			input_put_alloc: int (), <./db/examples_c/csv/load.c 265>
+  723 				size_t: (), <./db/common/os_method.c 243>
+  724 				u_int32_t: 2
+  725 				realloc: <>
+  726 			input_set_offset: int (), <./db/examples_c/csv/load.c 286>
+  727 				u_int32_t: 2
+  728 				OFFSET_LEN: <>
+  729 				memcpy: <>
+  730 			entry_print: int (), <./db/examples_c/csv/util.c 18>
+  731 				u_int32_t: 2
+  732 				memcpy: <>
+  733 				printf: , <./db/clib/printf.c 23>
+  734 				OFFSET_LEN: <>
+  735 		open_env: <>
+  736 		sprintf: <>
+  737 		ex_apprec_mkdir_log: int (), <./db/examples_c/ex_apprec/ex_apprec_auto.c 57>
+  738 		verify_presence: <>
+  739 		verify_absence: <>
+  740 		rmdir: <>
+  741 		ex_btrec: int (), <./db/examples_c/ex_btrec.c 31>
+  742 			size_t: (), <./db/common/os_method.c 243>
+  743 			fopen: <>
+  744 			fprintf: , <./db/clib/printf.c 70>
+  745 			db_strerror: char * (), <./db/common/db_err.c 225>
+  746 			db_create: 42
+  747 			memset: <>
+  748 			sprintf: <>
+  749 			fgets: 139
+  750 			strlen: <>
+  751 			u_int32_t: 2
+  752 			fclose: 154
+  753 			printf: , <./db/clib/printf.c 23>
+  754 			free: , <./db/db/db_meta.c 894>
+  755 			fflush: <>
+  756 			atoi: <>
+  757 			show: <>
+  758 		invarg: <>
+  759 		tp_populate: <>
+  760 		tp_run: <>
+  761 		ex_dbclient_run: <>
+  762 		fgets: 139
+  763 		strtol: <>
+  764 		onint: void (), <./db/examples_c/ex_thread.c 621>
+  765 		word: void (), <./db/examples_c/ex_thread.c 559>
+  766 		fatal: <>
+  767 		pthread_create: <>
+  768 		tstart: void * (), <./db/examples_c/ex_thread.c 468>
+  769 		trickle: void * (), <./db/examples_c/ex_thread.c 526>
+  770 		deadlock: void * (), <./db/examples_c/ex_thread.c 497>
+  771 		pthread_join: <>
+  772 		compare_int: int (), <./db/examples_c/bench_001.c 405>
+  773 		gettimeofday: 376
+  774 		fill: int (), <./db/examples_c/bench_001.c 176>
+  775 			memset: <>
+  776 			malloc: <>
+  777 			memcpy: <>
+  778 			printf: , <./db/clib/printf.c 23>
+  779 		initialize_stockdbs: void (), <./db/examples_c/getting_started/gettingstarted_common.c 170>
+  780 		set_db_filenames: void (), <./db/examples_c/getting_started/gettingstarted_common.c 183>
+  781 			size_t: (), <./db/common/os_method.c 243>
+  782 			strlen: <>
+  783 			malloc: <>
+  784 			snprintf: , <./db/clib/snprintf.c 29>
+  785 		databases_setup: int (), <./db/examples_c/getting_started/gettingstarted_common.c 108>
+  786 			open_database: int (), <./db/examples_c/getting_started/gettingstarted_common.c 52>
+  787 				u_int32_t: 2
+  788 				db_create: 42
+  789 				fprintf: , <./db/clib/printf.c 70>
+  790 				db_strerror: char * (), <./db/common/db_err.c 225>
+  791 			get_item_name: int (), <./db/examples_c/getting_started/gettingstarted_common.c 17>
+  792 				memset: <>
+  793 				u_int32_t: 2
+  794 				strlen: <>
+  795 			printf: , <./db/clib/printf.c 23>
+  796 		databases_close: int (), <./db/examples_c/getting_started/gettingstarted_common.c 209>
+  797 			fprintf: , <./db/clib/printf.c 70>
+  798 			db_strerror: char * (), <./db/common/db_err.c 225>
+  799 			printf: , <./db/clib/printf.c 23>
+  800 		load_vendors_database: int (), <./db/examples_c/getting_started/example_database_load.c 110>
+  801 			fopen: <>
+  802 			fprintf: , <./db/clib/printf.c 70>
+  803 			fgets: 139
+  804 			memset: <>
+  805 			sscanf: <>
+  806 			u_int32_t: 2
+  807 			strlen: <>
+  808 			fclose: 154
+  809 		load_inventory_database: int (), <./db/examples_c/getting_started/example_database_load.c 197>
+  810 			size_t: (), <./db/common/os_method.c 243>
+  811 			fopen: <>
+  812 			fprintf: , <./db/clib/printf.c 70>
+  813 			fgets: 139
+  814 			sscanf: <>
+  815 			memset: <>
+  816 			memcpy: <>
+  817 			pack_string: size_t (), <./db/examples_c/getting_started/example_database_load.c 178>
+  818 				size_t: (), <./db/common/os_method.c 243>
+  819 				strlen: <>
+  820 				memcpy: <>
+  821 			u_int32_t: 2
+  822 			strlen: <>
+  823 			fclose: 154
+  824 		show_all_records: int (), <./db/examples_c/getting_started/example_database_read.c 85>
+  825 			memset: <>
+  826 			show_inventory_item: char * (), <./db/examples_c/getting_started/example_database_read.c 192>
+  827 				size_t: (), <./db/common/os_method.c 243>
+  828 				strlen: <>
+  829 				printf: , <./db/clib/printf.c 23>
+  830 			show_vendor_record: int (), <./db/examples_c/getting_started/example_database_read.c 234>
+  831 				memset: <>
+  832 				u_int32_t: 2
+  833 				strlen: <>
+  834 				printf: , <./db/clib/printf.c 23>
+  835 		show_records: int (), <./db/examples_c/getting_started/example_database_read.c 127>
+  836 			memset: <>
+  837 			u_int32_t: 2
+  838 			strlen: <>
+  839 			show_inventory_item: 826
+  840 			show_vendor_record: 830
+  841 			printf: , <./db/clib/printf.c 23>
+  842 		open_db: int (), <./db/examples_c/txn_guide/txn_guide.c 416>
+  843 			u_int32_t: 2
+  844 			db_create: 42
+  845 			fprintf: , <./db/clib/printf.c 70>
+  846 			db_strerror: char * (), <./db/common/db_err.c 225>
+  847 		mutex_init: <>
+  848 		writer_thread: void * (), <./db/examples_c/txn_guide/txn_guide.c 199>
+  849 			srand: 58
+  850 			memset: <>
+  851 			u_int32_t: 2
+  852 			strlen: <>
+  853 			rand: 82
+  854 			printf: , <./db/clib/printf.c 23>
+  855 			count_records: int (), <./db/examples_c/txn_guide/txn_guide.c 365>
+  856 				memset: <>
+  857 		db_sequence_create: int (), <./db/sequence/sequence.c 908>
+  858 			DB_ILLEGAL_BEFORE_OPEN: <>
+  859 			RPC_ON: if (), <./db/rpc_client/client.c 58>
+  860 			COMPQUIET: <>
+  861 		db_setup: <>
+  862 		db_teardown: <>

@@ -1,0 +1,341 @@
+    1 	main: int (), <./hidd/hidd.c 27>
+    2 		getReportCallback: IOReturn (), <./tools/IOHIDUserDeviceTest.c 570>
+    3 			usleep: <>
+    4 			bcopy: <>
+    5 		CFDictionaryCreateMutable: <>
+    6 		strcmp: <>
+    7 		free: <>
+    8 		malloc: <>
+    9 		getKeyboardCharThread: void * (), <./tools/IOHIDUserDeviceTest.c 463>
+   10 			printf: <>
+   11 			dispatchKeyboardEvent: void (), <./tools/IOHIDUserDeviceTest.c 429>
+   12 				bzero: <>
+   13 				printf: <>
+   14 				pthread_mutex_lock: <>
+   15 				CFAbsoluteTimeGetCurrent: <>
+   16 				usleep: <>
+   17 				printReport: void (), <./tools/IOHIDUserDeviceTest.c 417>
+   18 					printf: <>
+   19 				IOHIDUserDeviceHandleReport: <>
+   20 				pthread_mutex_unlock: <>
+   21 			getchar: <>
+   22 		getReportCharThread: void * (), <./tools/IOHIDUserDeviceTest.c 583>
+   23 			printf: <>
+   24 			bzero: <>
+   25 			fgets: <>
+   26 			CFStringCreateWithBytesNoCopy: <>
+   27 			CFStringCreateArrayBySeparatingStrings: <>
+   28 			CFSTR: <>
+   29 			CFArrayGetCount: <>
+   30 			CFArrayGetValueAtIndex: <>
+   31 			CFStringGetCStringPtr: <>
+   32 			strtoul: <>
+   33 			pthread_mutex_lock: <>
+   34 			printReport: 17
+   35 			IOHIDUserDeviceHandleReport: <>
+   36 			pthread_mutex_unlock: <>
+   37 			CFRelease: <>
+   38 		setReportCallback: IOReturn (), <./tools/IOHIDUserDeviceTest.c 643>
+   39 			printReport: 17
+   40 		bcopy: <>
+   41 		getUnicodeCharThread: void * (), <./tools/IOHIDUserDeviceTest.c 504>
+   42 			printf: <>
+   43 			dispatchUnicodeEvent: void (), <./tools/IOHIDUserDeviceTest.c 473>
+   44 				bzero: <>
+   45 				printf: <>
+   46 				pthread_mutex_lock: <>
+   47 				CFAbsoluteTimeGetCurrent: <>
+   48 				usleep: <>
+   49 				OSSwapHostToLittleInt16: <>
+   50 				printReport: 17
+   51 				IOHIDUserDeviceHandleReport: <>
+   52 				pthread_mutex_unlock: <>
+   53 			getchar: <>
+   54 		getDigitizerUnicodeCharThread: void * (), <./tools/IOHIDUserDeviceTest.c 557>
+   55 			printf: <>
+   56 			dispatchDigitizerUnicodeEvent: void (), <./tools/IOHIDUserDeviceTest.c 514>
+   57 				printf: <>
+   58 				bzero: <>
+   59 				pthread_mutex_lock: <>
+   60 				CFAbsoluteTimeGetCurrent: <>
+   61 				usleep: <>
+   62 				printReport: 17
+   63 				IOHIDUserDeviceHandleReport: <>
+   64 				pthread_mutex_unlock: <>
+   65 			getchar: <>
+   66 		bzero: <>
+   67 		strtol: <>
+   68 		CFNumberCreate: <>
+   69 		CFDictionarySetValue: <>
+   70 		CFSTR: <>
+   71 		CFRelease: <>
+   72 		CFStringCreateWithCString: <>
+   73 		CFStringGetSystemEncoding: <>
+   74 		strtoul: <>
+   75 		printf: <>
+   76 		strlen: <>
+   77 		PrintHIDDescriptor: void (), <./tools/IOHIDReportDescriptorParser.c 122>
+   78 			printf: <>
+   79 			PrintBytesAtIndentLevel: void (), <./tools/IOHIDReportDescriptorParser.c 104>
+   80 				PrintAtIndentLevel: void (), <./tools/IOHIDReportDescriptorParser.c 91>
+   81 					fputs: <>
+   82 					va_start: <>
+   83 					vprintf: <>
+   84 					va_end: <>
+   85 				printf: <>
+   86 			UnpackReportSize: <>
+   87 			UnpackReportType: <>
+   88 			UnpackReportTag: <>
+   89 			sprintf: <>
+   90 			strcat: <>
+   91 			strlen: <>
+   92 			strcmp: <>
+   93 		startDevice: void (), <./tools/IOHIDUserDeviceTest.c 652>
+   94 			CFDataCreate: <>
+   95 			require: <>
+   96 			CFNumberCreate: <>
+   97 			CFDictionarySetValue: <>
+   98 			CFSTR: <>
+   99 			IOHIDUserDeviceCreate: <>
+  100 			IOHIDUserDeviceScheduleWithRunLoop: <>
+  101 			CFRunLoopGetCurrent: <>
+  102 			IOHIDUserDeviceRegisterSetReportCallback: <>
+  103 			IOHIDUserDeviceRegisterGetReportCallback: <>
+  104 			assert: <>
+  105 			pthread_attr_init: <>
+  106 			pthread_attr_setdetachstate: <>
+  107 			pthread_create: <>
+  108 			pthread_attr_destroy: <>
+  109 			CFRunLoopRun: <>
+  110 			CFRelease: <>
+  111 		printHelp: void (), <./tools/IOHIDUserDeviceTest.c 710>
+  112 			printf: <>
+  113 		IOHIDManagerCreate: <>
+  114 		atof: <>
+  115 		atol: <>
+  116 		printHelp: void (), <./tools/IOHIDReportTest.c 192>
+  117 			printf: <>
+  118 		IOHIDManagerRegisterDeviceMatchingCallback: <>
+  119 		IOHIDManagerRegisterDeviceRemovalCallback: <>
+  120 		IOHIDManagerRegisterInputReportCallback: <>
+  121 		IOHIDManagerRegisterInputValueCallback: <>
+  122 		IOHIDManagerScheduleWithRunLoop: <>
+  123 		CFRunLoopGetCurrent: <>
+  124 		IOHIDManagerSetDeviceMatching: <>
+  125 		IOHIDManagerOpen: <>
+  126 		CFRunLoopRun: <>
+  127 		mach_timebase_info: <>
+  128 		signal: <>
+  129 		signalHandler: void (), <./tools/IOHIDEventSystemMonitor.c 784>
+  130 			printStatistics: void (), <./tools/IOHIDEventSystemMonitor.c 712>
+  131 				CFAbsoluteTimeGetCurrent: <>
+  132 				printf: <>
+  133 				CFArrayGetCount: <>
+  134 				CFArrayGetValueAtIndex: <>
+  135 				CFNumberGetValue: <>
+  136 				sqrt: <>
+  137 				IOHIDEventGetTypeString: <>
+  138 			exit: <>
+  139 		listAllClients: void (), <./tools/IOHIDEventSystemMonitor.c 583>
+  140 			IOHIDEventSystemClientCreateWithType: <>
+  141 			require: <>
+  142 			exit: <>
+  143 			listAllClientsWithSystem: void (), <./tools/IOHIDEventSystemMonitor.c 534>
+  144 				require: <>
+  145 				exit: <>
+  146 				printBorder: void (), <./tools/IOHIDEventSystemMonitor.c 377>
+  147 					printIndentation: void (), <./tools/IOHIDEventSystemMonitor.c 370>
+  148 						printf: <>
+  149 					printf: <>
+  150 				CFArrayGetCount: <>
+  151 				CFArrayGetValueAtIndex: <>
+  152 				CFDictionaryGetValue: <>
+  153 				CFSTR: <>
+  154 				CFNumberGetValue: <>
+  155 				printf: <>
+  156 				IOHIDEventSystemClientGetTypeString: <>
+  157 				printNumberValue: void (), <./tools/IOHIDEventSystemMonitor.c 408>
+  158 					printIndentation: 147
+  159 					CFNumberGetValue: <>
+  160 					CFEqual: <>
+  161 					CFSTR: <>
+  162 					printf: <>
+  163 					CFStringGetCStringPtr: <>
+  164 					CFStringGetSystemEncoding: <>
+  165 				printBooleanValue: void (), <./tools/IOHIDEventSystemMonitor.c 397>
+  166 					printIndentation: 147
+  167 					printf: <>
+  168 					CFStringGetCStringPtr: <>
+  169 					CFStringGetSystemEncoding: <>
+  170 				printStringValue: void (), <./tools/IOHIDEventSystemMonitor.c 387>
+  171 					printIndentation: 147
+  172 					printf: <>
+  173 					CFStringGetCStringPtr: <>
+  174 					CFStringGetSystemEncoding: <>
+  175 				printDictionaryValue: void (), <./tools/IOHIDEventSystemMonitor.c 429>
+  176 					CFDictionaryGetCount: <>
+  177 					printf: <>
+  178 					CFStringGetCStringPtr: <>
+  179 					CFStringGetSystemEncoding: <>
+  180 					bzero: <>
+  181 					CFDictionaryGetKeysAndValues: <>
+  182 					CFGetTypeID: <>
+  183 					CFStringGetTypeID: <>
+  184 					printStringValue: 170
+  185 					CFNumberGetTypeID: <>
+  186 					printNumberValue: 157
+  187 					CFBooleanGetTypeID: <>
+  188 					printBooleanValue: 165
+  189 				listServices: void (), <./tools/IOHIDEventSystemMonitor.c 470>
+  190 					CFSTR: <>
+  191 					CFArrayGetCount: <>
+  192 					printf: <>
+  193 					CFArrayGetValueAtIndex: <>
+  194 					CFDictionaryGetValue: <>
+  195 					CFGetTypeID: <>
+  196 					CFStringGetTypeID: <>
+  197 					printStringValue: 170
+  198 					CFNumberGetTypeID: <>
+  199 					printNumberValue: 157
+  200 					CFBooleanGetTypeID: <>
+  201 					printBooleanValue: 165
+  202 				CFRelease: <>
+  203 			CFRelease: <>
+  204 		exit: <>
+  205 		listAllServices: void (), <./tools/IOHIDEventSystemMonitor.c 521>
+  206 			IOHIDEventSystemClientCreateWithType: <>
+  207 			require: <>
+  208 			exit: <>
+  209 			listAllServicesWithSystem: void (), <./tools/IOHIDEventSystemMonitor.c 504>
+  210 				require: <>
+  211 				exit: <>
+  212 				listServices: 189
+  213 				CFRelease: <>
+  214 			CFRelease: <>
+  215 		strtoull: <>
+  216 		printHelp: void (), <./tools/IOHIDEventSystemMonitor.c 792>
+  217 			printf: <>
+  218 			CFStringGetCStringPtr: <>
+  219 			IOHIDEventTypeGetName: <>
+  220 		CFRunLoopTimerCreate: <>
+  221 		CFAbsoluteTimeGetCurrent: <>
+  222 		exitTimerCallback: void (), <./tools/IOHIDEventSystemMonitor.c 778>
+  223 			printStatistics: 130
+  224 			exit: <>
+  225 		CFRunLoopAddTimer: <>
+  226 		IOHIDEventSystemClientGetTypeString: <>
+  227 		runClient: void (), <./tools/IOHIDEventSystemMonitor.c 606>
+  228 			IOHIDEventSystemClientCreateWithType: <>
+  229 			require_action: <>
+  230 			exit: <>
+  231 			printf: <>
+  232 			IOHIDEventSystemClientScheduleWithRunLoop: <>
+  233 			CFRunLoopGetCurrent: <>
+  234 			serviceRecordsChangedCallback: void (), <./tools/IOHIDEventSystemMonitor.c 596>
+  235 				listAllServicesWithSystem: 209
+  236 			clientRecordsChangedCallback: void (), <./tools/IOHIDEventSystemMonitor.c 601>
+  237 				listAllClientsWithSystem: 143
+  238 			dispatchClientEvents: void (), <./tools/IOHIDEventSystemMonitor.c 214>
+  239 				IOHIDEventCreate: <>
+  240 				mach_absolute_time: <>
+  241 				IOHIDEventSetSenderID: <>
+  242 				printf: <>
+  243 				IOHIDEventGetTypeString: <>
+  244 				IOHIDEventSystemClientDispatchEvent: <>
+  245 				CFRelease: <>
+  246 				getchar: <>
+  247 			assert: <>
+  248 			pthread_attr_init: <>
+  249 			pthread_attr_setschedpolicy: <>
+  250 			pthread_attr_getschedparam: <>
+  251 			pthread_attr_setschedparam: <>
+  252 			pthread_attr_setdetachstate: <>
+  253 			pthread_create: <>
+  254 			dispatchClientThread: void * (), <./tools/IOHIDEventSystemMonitor.c 247>
+  255 				dispatchClientEvents: 238
+  256 			pthread_attr_destroy: <>
+  257 			IOHIDEventSystemClientRegisterEventFilterBlock: <>
+  258 			eventFilterBlock: IOHIDEventFilterBlock, <./tools/IOHIDEventSystemMonitor.c 107>
+  259 			IOHIDEventSystemClientRegisterEventBlock: <>
+  260 			CFArrayCreateMutable: <>
+  261 			require: <>
+  262 			CFDictionaryCreateMutable: <>
+  263 			CFNumberCreate: <>
+  264 			CFDictionaryAddValue: <>
+  265 			CFSTR: <>
+  266 			CFRelease: <>
+  267 			CFArrayAppendValue: <>
+  268 			IOHIDEventSystemClientSetMatchingMultiple: <>
+  269 			IOHIDEventSystemClientRegisterDeviceMatchingBlock: <>
+  270 			serviceClientBlock: IOHIDServiceClientBlock, <./tools/IOHIDEventSystemMonitor.c 119>
+  271 			IOHIDEventSystemClientCopyServices: <>
+  272 			CFArrayGetCount: <>
+  273 			CFArrayGetValueAtIndex: <>
+  274 			CFRunLoopRun: <>
+  275 		runServer: void (), <./tools/IOHIDEventSystemMonitor.c 314>
+  276 			boolean_t: <>
+  277 			VirtualOpen: boolean_t (), <./tools/IOHIDEventSystemMonitor.c 256>
+  278 				printf: <>
+  279 			VirtualClose: void (), <./tools/IOHIDEventSystemMonitor.c 262>
+  280 				printf: <>
+  281 			VirtualCopyProperty: CFTypeRef (), <./tools/IOHIDEventSystemMonitor.c 267>
+  282 				printf: <>
+  283 				CFEqual: <>
+  284 				CFSTR: <>
+  285 				CFRetain: <>
+  286 			VirtualSetProperty: boolean_t (), <./tools/IOHIDEventSystemMonitor.c 280>
+  287 				printf: <>
+  288 			VirtualSetEventCallback: void (), <./tools/IOHIDEventSystemMonitor.c 286>
+  289 				printf: <>
+  290 			VirtualScheduleWithDispatchQueue: void (), <./tools/IOHIDEventSystemMonitor.c 291>
+  291 				printf: <>
+  292 			VirtualUnscheduleFromDispatchQueue: void (), <./tools/IOHIDEventSystemMonitor.c 296>
+  293 				printf: <>
+  294 			VirtualCopyEvent: IOHIDEventRef (), <./tools/IOHIDEventSystemMonitor.c 301>
+  295 				printf: <>
+  296 			VirtualSetOutputEvent: IOReturn (), <./tools/IOHIDEventSystemMonitor.c 307>
+  297 				printf: <>
+  298 			IOHIDEventSystemCreate: <>
+  299 			require: <>
+  300 			exit: <>
+  301 			IOHIDEventSystemOpen: <>
+  302 			filterEventCallback: boolean_t (), <./tools/IOHIDEventSystemMonitor.c 114>
+  303 				eventFilterBlock: IOHIDEventFilterBlock, <./tools/IOHIDEventSystemMonitor.c 107>
+  304 			printf: <>
+  305 			CFDictionaryCreateMutable: <>
+  306 			IOHIDEventSystemRegisterConnectionAdditionCallback: <>
+  307 			connectionAddedCallback: void (), <./tools/IOHIDEventSystemMonitor.c 187>
+  308 				printf: <>
+  309 				CFCopyDescription: <>
+  310 				CFStringGetCStringPtr: <>
+  311 				CFRelease: <>
+  312 			IOHIDEventSystemRegisterConnectionRemovalCallback: <>
+  313 			connectionRemovedCallback: void (), <./tools/IOHIDEventSystemMonitor.c 200>
+  314 				printf: <>
+  315 				CFCopyDescription: <>
+  316 				CFStringGetCStringPtr: <>
+  317 				CFRelease: <>
+  318 			IOHIDEventSystemRegisterServicesCallback: <>
+  319 			servicesAddedCallback: void (), <./tools/IOHIDEventSystemMonitor.c 163>
+  320 				CFArrayGetCount: <>
+  321 				CFArrayGetValueAtIndex: <>
+  322 				IOHIDServiceCreateRemovalNotification: <>
+  323 				serviceRemovalCallback: void (), <./tools/IOHIDEventSystemMonitor.c 148>
+  324 					CFDictionaryRemoveValue: <>
+  325 					printf: <>
+  326 					CFCopyDescription: <>
+  327 					CFStringGetCStringPtr: <>
+  328 					CFRelease: <>
+  329 				CFDictionaryAddValue: <>
+  330 				CFRelease: <>
+  331 				printf: <>
+  332 				CFCopyDescription: <>
+  333 				CFStringGetCStringPtr: <>
+  334 			IOHIDEventSystemCopyServices: <>
+  335 			CFRelease: <>
+  336 			CFRunLoopRun: <>
+  337 		IOHIDEventSystemCreate: <>
+  338 		IOHIDEventSystemOpen: <>
+  339 		memset: <>
+  340 		task_policy_set: <>
+  341 		mach_task_self: <>

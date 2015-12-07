@@ -1,0 +1,3537 @@
+    1 	main: int (), <./BuildConfig/junk.c 35>
+    2 		DO_NOT_CLOBBER: <>
+    3 		getopt: , <./dcerpc/demos/echo_number/getopt.c 43>
+    4 		rpc__dbg_set_switches: PUBLIC void (), <./dcerpc/ncklib/rpcdbg.c 154>
+    5 			isdigit: <>
+    6 		fprintf: <>
+    7 		error_text: char * (), <./dcerpc/perf/util.c 241>
+    8 			dce_error_inq_text: void (), <./dcerpc/ncklib/dce_error.c 328>
+    9 				strlcpy: size_t (), <./dcerpc/dcelib/strlcpy.c 32>
+   10 				dce_get_msg: void (), <./dcerpc/ncklib/dce_error.c 183>
+   11 					strlcpy: 9
+   12 					sprintf: <>
+   13 					catopen: <>
+   14 					catgets: <>
+   15 					strcmp: <>
+   16 					catclose: <>
+   17 				strlcat: size_t (), <./dcerpc/dcelib/strlcat.c 35>
+   18 					strlen: <>
+   19 		usage: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 279>
+   20 			fprintf: <>
+   21 			exit: <>
+   22 			usage: 19
+   23 		strtok: <>
+   24 		strcmp: <>
+   25 		lookup_name: int (), <./dcerpc/perf/util.c 272>
+   26 			isdigit: <>
+   27 			atoi: <>
+   28 			strcmp: <>
+   29 			usage: 19
+   30 		VRprintf: <>
+   31 		rpc_server_register_auth_info: PUBLIC void (), <./dcerpc/ncklib/comauth.c 1072>
+   32 			CODING_ERROR: <>
+   33 			RPC_VERIFY_INIT: <>
+   34 			typeof: <>
+   35 			RPC_AUTHN_CHECK_SUPPORTED: <>
+   36 		exit: <>
+   37 		rpc_mgmt_inq_server_princ_name: PUBLIC void (), <./dcerpc/ncklib/mgmt.c 1340>
+   38 			RPC_VERIFY_INIT: <>
+   39 			RPC_AUTHN_CHECK_SUPPORTED: <>
+   40 			RPC_MEM_ALLOC: <>
+   41 			rpc__auth_inq_my_princ_name: PRIVATE void (), <./dcerpc/ncklib/comauth.c 701>
+   42 				rpc__auth_cvt_id_wire_to_api: PRIVATE rpc_authn_protocol_id_t (), <./dcerpc/ncklib/comauth.c 297>
+   43 			remote_binding_validate: INTERNAL void (), <./dcerpc/ncklib/mgmt.c 2039>
+   44 				assert: <>
+   45 				RPC_BINDING_VALIDATE_CLIENT: <>
+   46 				UUID_IS_NIL: <>
+   47 			RPC_MEM_FREE: <>
+   48 			dcethread_interrupt_throw: <>
+   49 			dcethread_self: <>
+   50 		atoi: <>
+   51 		setup_thread_pools: int (), <./dcerpc/perf/server.c 237>
+   52 			rpc_server_create_thread_pool: PUBLIC void (), <./dcerpc/ncklib/comcthd.c 1808>
+   53 				CODING_ERROR: <>
+   54 				RPC_VERIFY_INIT: <>
+   55 				RPC_MUTEX_LOCK: <>
+   56 				cthread_pool_alloc: INTERNAL cthread_pool_elt_p_t (), <./dcerpc/ncklib/comcthd.c 815>
+   57 					CODING_ERROR: <>
+   58 					RPC_MUTEX_LOCK_ASSERT: <>
+   59 					RPC_MEM_ALLOC: <>
+   60 					RPC_LIST_INIT: <>
+   61 					RPC_MEM_FREE: <>
+   62 				RPC_LIST_ADD_TAIL: <>
+   63 				cthread_pool_start: INTERNAL void (), <./dcerpc/ncklib/comcthd.c 1083>
+   64 					CODING_ERROR: <>
+   65 					RPC_MUTEX_LOCK_ASSERT: <>
+   66 					RPC_DBG_GPRINTF: <>
+   67 					RPC_MEM_ALLOC: <>
+   68 					RPC_COND_INIT: <>
+   69 					cthread_create: INTERNAL void (), <./dcerpc/ncklib/comcthd.c 451>
+   70 						RPC_MUTEX_LOCK_ASSERT: <>
+   71 						CODING_ERROR: <>
+   72 						DCETHREAD_TRY: <>
+   73 						dcethread_create_throw: <>
+   74 						cthread_call_executor: INTERNAL void (), <./dcerpc/ncklib/comcthd.c 522>
+   75 							dcethread_enableinterrupt_throw: <>
+   76 							RPC_MUTEX_LOCK: <>
+   77 							CTHREAD_POOL_IS_QUEUE_EMPTY: <>
+   78 							CTHREAD_POOL_IDLE_THREAD: <>
+   79 							RPC_COND_WAIT: <>
+   80 							assert: <>
+   81 							RPC_DBG_PRINTF: <>
+   82 							RPC_MUTEX_UNLOCK: <>
+   83 							RPC_CALL_LOCK: <>
+   84 							cthread_pool_dequeue_first: INTERNAL rpc_call_rep_p_t (), <./dcerpc/ncklib/comcthd.c 1573>
+   85 								RPC_MUTEX_LOCK_ASSERT: <>
+   86 								CTHREAD_POOL_IS_QUEUE_EMPTY: <>
+   87 								RPC_LIST_FIRST: <>
+   88 								assert: <>
+   89 								cthread_call_dequeue: INTERNAL boolean32 (), <./dcerpc/ncklib/comcthd.c 1655>
+   90 									RPC_MUTEX_LOCK_ASSERT: <>
+   91 									RPC_LIST_REMOVE: <>
+   92 									assert: <>
+   93 									RPC_LIST_ADD_HEAD: <>
+   94 									RPC_DBG_PRINTF: <>
+   95 							RPC_COND_BROADCAST: <>
+   96 						dcethread_detach_throw: <>
+   97 						DCETHREAD_CATCH_ALL: <>
+   98 						fprintf: <>
+   99 					RPC_LIST_INIT: <>
+  100 					RPC_LIST_ADD_TAIL: <>
+  101 					RPC_DBG_PRINTF: <>
+  102 					cthread_pool_stop: INTERNAL void (), <./dcerpc/ncklib/comcthd.c 1247>
+  103 						CODING_ERROR: <>
+  104 						RPC_MUTEX_LOCK_ASSERT: <>
+  105 						RPC_DBG_PRINTF: <>
+  106 						RPC_COND_SIGNAL: <>
+  107 						dcethread_enableinterrupt_throw: <>
+  108 						RPC_COND_WAIT: <>
+  109 						RPC_COND_DELETE: <>
+  110 						RPC_MEM_FREE: <>
+  111 						RPC_LIST_EMPTY: <>
+  112 						RPC_LIST_REMOVE_TAIL: <>
+  113 					RPC_LIST_EMPTY: <>
+  114 					RPC_LIST_REMOVE_TAIL: <>
+  115 					RPC_MEM_FREE: <>
+  116 				RPC_MUTEX_UNLOCK: <>
+  117 			fprintf: <>
+  118 			error_text: 7
+  119 			rpc_server_set_thread_pool_fn: PUBLIC void (), <./dcerpc/ncklib/comcthd.c 1973>
+  120 				CODING_ERROR: <>
+  121 				RPC_VERIFY_INIT: <>
+  122 				RPC_MUTEX_LOCK: <>
+  123 				RPC_MUTEX_UNLOCK: <>
+  124 			thread_pool_fn: void (), <./dcerpc/perf/server.c 195>
+  125 				VRprintf: <>
+  126 				fprintf: <>
+  127 				if_id_is_equal: idl_boolean (), <./dcerpc/perf/server.c 176>
+  128 					uuid_equal: <>
+  129 				uuid_is_nil: if (), <./dcerpc/rpcd/rpcdepdb.c 1763>
+  130 			rpc_if_inq_id: PUBLIC void (), <./dcerpc/ncklib/comif.c 1438>
+  131 				CODING_ERROR: <>
+  132 				RPC_VERIFY_INIT: <>
+  133 				RPC_IF_VERS_MAJOR: <>
+  134 				RPC_IF_VERS_MINOR: <>
+  135 		dump_stg_info: void (), <./dcerpc/perf/util.c 256>
+  136 			printf: <>
+  137 		rpc__cn_set_sock_buffsize: PRIVATE void (), <./dcerpc/ncklib/cnnet.c 2213>
+  138 		rpc__cn_inq_sock_buffsize: PRIVATE void (), <./dcerpc/ncklib/cnnet.c 2167>
+  139 		rpc_mgmt_set_authorization_fn: PUBLIC void (), <./dcerpc/ncklib/mgmt.c 1439>
+  140 			RPC_VERIFY_INIT: <>
+  141 		mgmt_auth_fn: , <./dcerpc/perf/server.c 152>
+  142 			VRprintf: <>
+  143 		get_sockets: void (), <./dcerpc/perf/server.c 402>
+  144 			strcmp: <>
+  145 			rpc_server_use_all_protseqs: PUBLIC void (), <./dcerpc/ncklib/comnet.c 797>
+  146 				CODING_ERROR: <>
+  147 				RPC_VERIFY_INIT: <>
+  148 				rpc_network_inq_protseqs: PUBLIC void (), <./dcerpc/ncklib/comnet.c 1181>
+  149 					CODING_ERROR: <>
+  150 					RPC_VERIFY_INIT: <>
+  151 					RPC_MEM_ALLOC: <>
+  152 					memmove: <>
+  153 					strlcpy: 9
+  154 					strlen: <>
+  155 				RPC_DBG_PRINTF: <>
+  156 				rpc_server_use_protseq: PUBLIC void (), <./dcerpc/ncklib/comnet.c 888>
+  157 					CODING_ERROR: <>
+  158 					RPC_VERIFY_INIT: <>
+  159 					rpc_server_use_protseq_ep: PUBLIC void (), <./dcerpc/ncklib/comnet.c 2634>
+  160 						CODING_ERROR: <>
+  161 						RPC_VERIFY_INIT: <>
+  162 						RPC_DBG_PRINTF: <>
+  163 						rpc__network_pseq_id_from_pseq: PRIVATE rpc_protocol_id_t (), <./dcerpc/ncklib/comnet.c 2291>
+  164 							CODING_ERROR: <>
+  165 							strcmp: <>
+  166 							RPC_PROTSEQ_INQ_SUPPORTED: <>
+  167 							RPC_PROTSEQ_INQ_PROTSEQ: <>
+  168 						strlen: <>
+  169 						RPC_MEM_ALLOC: <>
+  170 						memset: <>
+  171 						RPC_PROTSEQ_INQ_NAF_ID: <>
+  172 						RPC_NAF_INQ_EPV: <>
+  173 						rpc_string_free: PUBLIC void (), <./dcerpc/ncklib/comutil.c 218>
+  174 							CODING_ERROR: <>
+  175 							RPC_MEM_FREE: <>
+  176 						RPC_PROTSEQ_INQ_PROT_ID: <>
+  177 						RPC_PROTOCOL_INQ_NETWORK_EPV: <>
+  178 				rpc_protseq_vector_free: PUBLIC void (), <./dcerpc/ncklib/comnet.c 1348>
+  179 					CODING_ERROR: <>
+  180 					RPC_VERIFY_INIT: <>
+  181 					RPC_MEM_FREE: <>
+  182 			rpc_server_use_all_protseqs_if: PUBLIC void (), <./dcerpc/ncklib/comnet.c 1016>
+  183 				CODING_ERROR: <>
+  184 				RPC_VERIFY_INIT: <>
+  185 				rpc_network_inq_protseqs: 148
+  186 				rpc__network_pseq_id_from_pseq: 163
+  187 				rpc__if_inq_endpoint: PRIVATE void (), <./dcerpc/ncklib/comif.c 1749>
+  188 					CODING_ERROR: <>
+  189 					rpc__network_pseq_id_from_pseq: 163
+  190 					strlen: <>
+  191 					RPC_MEM_ALLOC: <>
+  192 					snprintf: <>
+  193 					rpc_string_binding_parse: PUBLIC void (), <./dcerpc/ncklib/combind.c 1521>
+  194 						CODING_ERROR: <>
+  195 						RPC_VERIFY_INIT: <>
+  196 						rpc__strcspn: PRIVATE unsigned32 (), <./dcerpc/ncklib/comutil.c 393>
+  197 						RPC_MEM_ALLOC: <>
+  198 						rpc__strncpy: PRIVATE void (), <./dcerpc/ncklib/comutil.c 505>
+  199 							strncpy: <>
+  200 						strlen: <>
+  201 						strncmp: <>
+  202 						rpc__get_token: PRIVATE size_t (), <./dcerpc/ncklib/comutil.c 254>
+  203 							CODING_ERROR: <>
+  204 							memset: <>
+  205 							RPC_MEM_ALLOC: <>
+  206 							RPC_MEM_FREE: <>
+  207 						rpc__strsqz: PRIVATE unsigned32 (), <./dcerpc/ncklib/comutil.c 566>
+  208 						rpc__string_netaddr_unescape: PRIVATE void (), <./dcerpc/ncklib/combind.c 1386>
+  209 							CODING_ERROR: <>
+  210 							strlen: <>
+  211 							RPC_MEM_ALLOC: <>
+  212 							memset: <>
+  213 						rpc_string_free: 173
+  214 					RPC_MEM_FREE: <>
+  215 				rpc_server_use_protseq_ep: 159
+  216 				rpc_string_free: 173
+  217 				rpc_protseq_vector_free: 178
+  218 			rpc_server_use_protseq: 156
+  219 			rpc_server_use_protseq_ep: 159
+  220 			rpc_server_use_protseq_if: PUBLIC void (), <./dcerpc/ncklib/comnet.c 942>
+  221 				CODING_ERROR: <>
+  222 				RPC_VERIFY_INIT: <>
+  223 				rpc__network_pseq_id_from_pseq: 163
+  224 				rpc__if_inq_endpoint: 187
+  225 				rpc_server_use_protseq_ep: 159
+  226 				rpc_string_free: 173
+  227 			fprintf: <>
+  228 			error_text: 7
+  229 			exit: <>
+  230 			rpc_server_inq_bindings: PUBLIC void (), <./dcerpc/ncklib/comnet.c 203>
+  231 				CODING_ERROR: <>
+  232 				RPC_VERIFY_INIT: <>
+  233 				bv_alloc: INTERNAL void (), <./dcerpc/ncklib/comnet.c 2938>
+  234 					CODING_ERROR: <>
+  235 					RPC_MEM_ALLOC: <>
+  236 					RPC_MEM_FREE: <>
+  237 				rpc__naf_desc_inq_addr: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 784>
+  238 					RPC_PROTSEQ_INQ_NAF_ID: <>
+  239 				rpc__binding_alloc: PRIVATE rpc_binding_rep_t * (), <./dcerpc/ncklib/combind.c 2264>
+  240 					CODING_ERROR: <>
+  241 					strlen: <>
+  242 					rpc_string_free: 173
+  243 				rpc__naf_addr_vector_free: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 272>
+  244 					RPC_MEM_FREE: <>
+  245 				rpc_binding_free: PUBLIC void (), <./dcerpc/ncklib/combind.c 291>
+  246 					assert: <>
+  247 					CODING_ERROR: <>
+  248 					RPC_VERIFY_INIT: <>
+  249 					RPC_BINDING_VALIDATE_CLIENT: <>
+  250 					RPC_LOCK: <>
+  251 					RPC_BINDING_RELEASE: <>
+  252 					RPC_UNLOCK: <>
+  253 				RPC_MEM_FREE: <>
+  254 			rpc_binding_to_string_binding: PUBLIC void (), <./dcerpc/ncklib/combind.c 921>
+  255 				assert: <>
+  256 				CODING_ERROR: <>
+  257 				RPC_VERIFY_INIT: <>
+  258 				RPC_BINDING_VALIDATE: <>
+  259 				uuid_is_nil: if (), <./dcerpc/rpcd/rpcdepdb.c 1763>
+  260 				uuid_to_string: <>
+  261 				rpc_string_binding_compose: PUBLIC void (), <./dcerpc/ncklib/combind.c 2031>
+  262 					CODING_ERROR: <>
+  263 					RPC_VERIFY_INIT: <>
+  264 					strlen: <>
+  265 					rpc__string_netaddr_escape: PRIVATE void (), <./dcerpc/ncklib/combind.c 1282>
+  266 						CODING_ERROR: <>
+  267 						RPC_MEM_ALLOC: <>
+  268 						memset: <>
+  269 					RPC_MEM_ALLOC: <>
+  270 					rpc_string_free: 173
+  271 				rpc_string_free: 173
+  272 			VRprintf: <>
+  273 			rpc_string_free: 173
+  274 		register_ifs: void (), <./dcerpc/perf/server.c 311>
+  275 			rpc_server_register_if: PUBLIC void (), <./dcerpc/ncklib/comif.c 287>
+  276 				CODING_ERROR: <>
+  277 				RPC_VERIFY_INIT: <>
+  278 				rpc__server_register_if_int: PRIVATE void (), <./dcerpc/ncklib/comif.c 361>
+  279 					CODING_ERROR: <>
+  280 					RPC_IF_VALIDATE: <>
+  281 					RPC_MEM_ALLOC: <>
+  282 					uuid_hash: <>
+  283 					RPC_MEM_FREE: <>
+  284 					RPC_MUTEX_LOCK: <>
+  285 					RPC_LIST_FIRST: <>
+  286 					UUID_EQ: <>
+  287 					RPC_LIST_NEXT: <>
+  288 					RPC_LIST_INIT: <>
+  289 					RPC_LIST_ADD_TAIL: <>
+  290 					uuid_is_nil: if (), <./dcerpc/rpcd/rpcdepdb.c 1763>
+  291 					assert: <>
+  292 					RPC_MUTEX_UNLOCK: <>
+  293 					RPC_LIST_REMOVE: <>
+  294 			fprintf: <>
+  295 			error_text: 7
+  296 			exit: <>
+  297 		register_objs: void (), <./dcerpc/perf/server.c 350>
+  298 			rpc_object_set_type: PUBLIC void (), <./dcerpc/ncklib/comobj.c 283>
+  299 				CODING_ERROR: <>
+  300 				RPC_VERIFY_INIT: <>
+  301 				UUID_IS_NIL: <>
+  302 				uuid_hash: <>
+  303 				RPC_MUTEX_LOCK: <>
+  304 				RPC_LIST_FIRST: <>
+  305 				uuid_equal: <>
+  306 				RPC_LIST_NEXT: <>
+  307 				RPC_LIST_REMOVE: <>
+  308 				RPC_MEM_FREE: <>
+  309 				RPC_MEM_ALLOC: <>
+  310 				RPC_LIST_ADD_TAIL: <>
+  311 				RPC_MUTEX_UNLOCK: <>
+  312 			fprintf: <>
+  313 			error_text: 7
+  314 			exit: <>
+  315 		rpc_ep_register: PUBLIC void (), <./dcerpc/ncklib/comep.c 219>
+  316 			ep_register: INTERNAL void (), <./dcerpc/ncklib/comep.c 334>
+  317 				CODING_ERROR: <>
+  318 				RPC_VERIFY_INIT: <>
+  319 				rpc_binding_from_string_binding: PUBLIC void (), <./dcerpc/ncklib/combind.c 1119>
+  320 					CODING_ERROR: <>
+  321 					RPC_VERIFY_INIT: <>
+  322 					rpc_string_binding_parse: 193
+  323 					rpc__network_pseq_id_from_pseq: 163
+  324 					uuid_from_string: <>
+  325 					uuid_create_nil: <>
+  326 					rpc__network_inq_local_addr: PRIVATE void (), <./dcerpc/ncklib/comnet.c 2471>
+  327 						CODING_ERROR: <>
+  328 						rpc__socket_open: rpc_socket_error_t (), <./dcerpc/ncklib/comsoc.c 155>
+  329 							malloc: <>
+  330 							error: void (), <./dcerpc/idl_compiler/errors.c 903>
+  331 								message_print: void () (), <./dcerpc/idl_compiler/message.c 276>
+  332 									VA_START: <>
+  333 									vmessage_print: void (), <./dcerpc/idl_compiler/message.c 242>
+  334 										strlcpy: 9
+  335 										strlcat: 17
+  336 										catgets: <>
+  337 										def_message: <>
+  338 										snprintf: <>
+  339 										NL_VFPRINTF: <>
+  340 									va_end: <>
+  341 								va_start: <>
+  342 								vmessage_print: 333
+  343 								va_end: <>
+  344 								sysdep_cleanup_temp: void (), <./dcerpc/idl_compiler/sysdep.c 127>
+  345 									free: <>
+  346 									unlink: <>
+  347 								nidl_terminate: void (), <./dcerpc/idl_compiler/driver.c 131>
+  348 									message_print: 331
+  349 									longjmp: <>
+  350 							free: <>
+  351 						RPC_SOCKET_IS_ERR: <>
+  352 						RPC_DBG_GPRINTF: <>
+  353 						RPC_SOCKET_ETOI: <>
+  354 						rpc__naf_addr_alloc: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 159>
+  355 						RPC_PROTSEQ_INQ_NAF_ID: <>
+  356 						rpc__socket_bind: rpc_socket_error_t (), <./dcerpc/ncklib/comsoc.c 213>
+  357 							socket_bind: <>
+  358 						rpc__naf_desc_inq_addr: 237
+  359 						rpc__naf_addr_overcopy: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 393>
+  360 							assert: <>
+  361 							memmove: <>
+  362 						rpc__naf_addr_set_endpoint: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 462>
+  363 						RPC_SOCKET_CLOSE: <>
+  364 						rpc__naf_addr_vector_free: 243
+  365 						rpc__naf_addr_free: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 217>
+  366 					rpc__binding_alloc: 239
+  367 					rpc_string_free: 173
+  368 				rpc_mgmt_is_server_listening: PUBLIC boolean32 (), <./dcerpc/ncklib/mgmt.c 640>
+  369 					RPC_VERIFY_INIT: <>
+  370 					rpc__server_is_listening: PRIVATE boolean32 (), <./dcerpc/ncklib/comnet.c 638>
+  371 					remote_binding_validate: 43
+  372 					dcethread_interrupt_throw: <>
+  373 					dcethread_self: <>
+  374 				rpc_binding_free: 245
+  375 				get_ep_binding: INTERNAL void (), <./dcerpc/ncklib/comep.c 1517>
+  376 					rpc_network_inq_protseqs: 148
+  377 					strlen: <>
+  378 					rpc__strncpy: 198
+  379 					rpc_binding_from_string_binding: 319
+  380 					rpc_protseq_vector_free: 178
+  381 					RPC_BINDING_VALIDATE_CLIENT: <>
+  382 					rpc_binding_copy: PUBLIC void (), <./dcerpc/ncklib/combind.c 694>
+  383 						CODING_ERROR: <>
+  384 						RPC_VERIFY_INIT: <>
+  385 						RPC_BINDING_VALIDATE_CLIENT: <>
+  386 						rpc__binding_alloc: 239
+  387 						rpc__auth_info_reference: PRIVATE void (), <./dcerpc/ncklib/comauth.c 404>
+  388 							RPC_DBG_PRINTF: <>
+  389 						rpc__transport_info_retain: void (), <./dcerpc/ncklib/comsoc.c 498>
+  390 						rpc__binding_prot_version_alloc: PRIVATE void (), <./dcerpc/ncklib/combind.c 2957>
+  391 							RPC_MEM_ALLOC: <>
+  392 						rpc__naf_addr_free: 365
+  393 					rpc_binding_reset: PUBLIC void (), <./dcerpc/ncklib/combind.c 591>
+  394 						assert: <>
+  395 						CODING_ERROR: <>
+  396 						RPC_VERIFY_INIT: <>
+  397 						RPC_BINDING_VALIDATE_CLIENT: <>
+  398 						RPC_LOCK: <>
+  399 						RPC_UNLOCK: <>
+  400 					rpc_binding_free: 245
+  401 					rpc_mgmt_set_com_timeout: PUBLIC void (), <./dcerpc/ncklib/mgmt.c 1025>
+  402 						assert: <>
+  403 						CODING_ERROR: <>
+  404 						RPC_VERIFY_INIT: <>
+  405 						RPC_BINDING_VALIDATE_CLIENT: <>
+  406 						...:  % p call executor running, <./dcerpc/ncklib/cncthd.c 153>
+  407 					rpc_binding_set_auth_info: PUBLIC void (), <./dcerpc/ncklib/comauth.c 767>
+  408 						CODING_ERROR: <>
+  409 						RPC_VERIFY_INIT: <>
+  410 						assert: <>
+  411 						RPC_BINDING_VALIDATE_CLIENT: <>
+  412 						rpc__auth_info_binding_release: PRIVATE void (), <./dcerpc/ncklib/comauth.c 455>
+  413 							rpc__auth_info_release: PRIVATE void (), <./dcerpc/ncklib/comauth.c 496>
+  414 								RPC_DBG_PRINTF: <>
+  415 								assert: <>
+  416 								rpc__auth_info_cache_remove: INTERNAL void (), <./dcerpc/ncklib/comauth.c 1620>
+  417 									assert: <>
+  418 									RPC_MUTEX_LOCK: <>
+  419 									RPC_LIST_REMOVE: <>
+  420 									RPC_DBG_PRINTF: <>
+  421 									RPC_MUTEX_UNLOCK: <>
+  422 						RPC_AUTHN_CHECK_SUPPORTED_RPC_PROT: <>
+  423 						rpc_mgmt_inq_dflt_authn_level: PUBLIC void (), <./dcerpc/ncklib/comauth.c 1371>
+  424 							rpc_mgmt_inq_dflt_protect_level: PUBLIC void (), <./dcerpc/ncklib/comauth.c 1343>
+  425 								CODING_ERROR: <>
+  426 								RPC_VERIFY_INIT: <>
+  427 								RPC_AUTHN_CHECK_SUPPORTED: <>
+  428 						rpc_mgmt_inq_server_princ_name: 37
+  429 						rpc__auth_info_cache_lkup: INTERNAL rpc_auth_info_t * (), <./dcerpc/ncklib/comauth.c 1471>
+  430 							RPC_MUTEX_LOCK: <>
+  431 							RPC_LIST_FIRST: <>
+  432 							strcmp: <>
+  433 							rpc__auth_info_reference: 387
+  434 							RPC_LIST_NEXT: <>
+  435 							RPC_MUTEX_UNLOCK: <>
+  436 						RPC_MEM_FREE: <>
+  437 						rpc__auth_info_cache_add: INTERNAL void (), <./dcerpc/ncklib/comauth.c 1567>
+  438 							assert: <>
+  439 							RPC_MUTEX_LOCK: <>
+  440 							RPC_LIST_ADD_HEAD: <>
+  441 							rpc__auth_info_reference: 387
+  442 							RPC_MUTEX_UNLOCK: <>
+  443 				RPC_MEM_ALLOC: <>
+  444 				rpc__strncpy: 198
+  445 				rpc__tower_ref_vec_from_binding: PRIVATE void (), <./dcerpc/ncklib/comtwrref.c 1143>
+  446 					CODING_ERROR: <>
+  447 					RPC_MEM_ALLOC: <>
+  448 					rpc__naf_tower_flrs_from_addr: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 1664>
+  449 					RPC_MEM_FREE: <>
+  450 					memcpy: <>
+  451 					RPC_RESOLVE_ENDIAN_INT16: <>
+  452 					rpc__tower_ref_alloc: PRIVATE void (), <./dcerpc/ncklib/comtwrref.c 222>
+  453 						CODING_ERROR: <>
+  454 						RPC_MEM_ALLOC: <>
+  455 						memcpy: <>
+  456 						RPC_RESOLVE_ENDIAN_INT16: <>
+  457 					rpc_if_inq_id: 130
+  458 					rpc__tower_flr_from_if_id: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 273>
+  459 						CODING_ERROR: <>
+  460 						rpc__tower_flr_from_uuid: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 506>
+  461 							CODING_ERROR: <>
+  462 							rpc__tower_flr_id_from_uuid: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 658>
+  463 								CODING_ERROR: <>
+  464 								RPC_MEM_ALLOC: <>
+  465 								memcpy: <>
+  466 								RPC_RESOLVE_ENDIAN_UUID: <>
+  467 								RPC_RESOLVE_ENDIAN_INT16: <>
+  468 							RPC_MEM_ALLOC: <>
+  469 							RPC_RESOLVE_ENDIAN_INT16: <>
+  470 							memcpy: <>
+  471 							RPC_PROT_ID_COUNT: <>
+  472 							RPC_PROT_ID_START: <>
+  473 							RPC_MEM_FREE: <>
+  474 							RPC_ADDRESS_COUNT: <>
+  475 							RPC_ADDRESS_START: <>
+  476 					rpc__tower_ref_add_floor: PRIVATE void (), <./dcerpc/ncklib/comtwrref.c 142>
+  477 						CODING_ERROR: <>
+  478 						rpc__tower_flr_free: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 141>
+  479 							CODING_ERROR: <>
+  480 							RPC_MEM_FREE: <>
+  481 					rpc__tower_flr_from_drep: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 209>
+  482 						CODING_ERROR: <>
+  483 						rpc__tower_flr_from_uuid: 460
+  484 					rpc__tower_flr_from_rpc_prot_id: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 343>
+  485 						CODING_ERROR: <>
+  486 						RPC_MEM_ALLOC: <>
+  487 						RPC_RESOLVE_ENDIAN_INT16: <>
+  488 						memcpy: <>
+  489 						RPC_PROT_ID_COUNT: <>
+  490 						rpc__network_inq_prot_version: PRIVATE void (), <./dcerpc/ncklib/comnet.c 2221>
+  491 							CODING_ERROR: <>
+  492 							RPC_PROTSEQ_INQ_SUPPORTED: <>
+  493 							RPC_PROTSEQ_INQ_PROT_ID: <>
+  494 							RPC_PROTOCOL_INQ_NETWORK_EPV: <>
+  495 						RPC_MEM_FREE: <>
+  496 						RPC_PROT_ID_START: <>
+  497 						RPC_ADDRESS_COUNT: <>
+  498 						RPC_ADDRESS_START: <>
+  499 					rpc__tower_ref_copy: PRIVATE void (), <./dcerpc/ncklib/comtwrref.c 380>
+  500 						CODING_ERROR: <>
+  501 						RPC_MEM_ALLOC: <>
+  502 						memcpy: <>
+  503 					rpc__tower_ref_vec_free: PRIVATE void (), <./dcerpc/ncklib/comtwrref.c 1055>
+  504 						CODING_ERROR: <>
+  505 						rpc__tower_free: PRIVATE void (), <./dcerpc/ncklib/comtwr.c 141>
+  506 							CODING_ERROR: <>
+  507 							RPC_MEM_FREE: <>
+  508 						rpc__tower_ref_free: PRIVATE void (), <./dcerpc/ncklib/comtwrref.c 476>
+  509 							CODING_ERROR: <>
+  510 							rpc__tower_flr_free: 478
+  511 							RPC_MEM_FREE: <>
+  512 						RPC_MEM_FREE: <>
+  513 				rpc__tower_from_tower_ref: PRIVATE void (), <./dcerpc/ncklib/comtwr.c 200>
+  514 					RPC_MEM_ALLOC: <>
+  515 					RPC_RESOLVE_ENDIAN_INT16: <>
+  516 					memcpy: <>
+  517 				dcethread_interrupt_throw: <>
+  518 				dcethread_self: <>
+  519 				rpc__tower_free: 505
+  520 				rpc__tower_ref_vec_free: 503
+  521 				RPC_MEM_FREE: <>
+  522 				rpc_ep_unregister: PUBLIC void (), <./dcerpc/ncklib/comep.c 680>
+  523 					CODING_ERROR: <>
+  524 					RPC_VERIFY_INIT: <>
+  525 					rpc_binding_from_string_binding: 319
+  526 					rpc_mgmt_is_server_listening: 368
+  527 					rpc_binding_free: 245
+  528 					get_ep_binding: 375
+  529 					RPC_MEM_ALLOC: <>
+  530 					rpc__tower_ref_vec_from_binding: 445
+  531 					rpc__tower_from_tower_ref: 513
+  532 					dcethread_interrupt_throw: <>
+  533 					dcethread_self: <>
+  534 					rpc__tower_free: 505
+  535 					rpc__tower_ref_vec_free: 503
+  536 					RPC_MEM_FREE: <>
+  537 				assert: <>
+  538 		perf_register_b: void (), <./dcerpc/perf/perf.c 335>
+  539 			print_binding_info: void (), <./dcerpc/perf/server.c 515>
+  540 				rpc_binding_to_string_binding: 254
+  541 				fprintf: <>
+  542 				error_text: 7
+  543 				exit: <>
+  544 				VRprintf: <>
+  545 				rpc_string_free: 173
+  546 				rpc_binding_inq_auth_client: PUBLIC void (), <./dcerpc/ncklib/comauth.c 1151>
+  547 					assert: <>
+  548 					CODING_ERROR: <>
+  549 					RPC_VERIFY_INIT: <>
+  550 					RPC_BINDING_VALIDATE_SERVER: <>
+  551 					ASSIGN: <>
+  552 					rpc_stralloc: PUBLIC unsigned_char_p_t (), <./dcerpc/ncklib/comutil.c 657>
+  553 						strlen: <>
+  554 						RPC_MEM_ALLOC: <>
+  555 						strlcpy: 9
+  556 				printf: <>
+  557 			rpc_binding_to_string_binding: 254
+  558 			rpc_string_binding_parse: 193
+  559 			rpc_server_use_protseq: 156
+  560 			fprintf: <>
+  561 			error_text: 7
+  562 			rpc_string_free: 173
+  563 			rpc_server_inq_bindings: 230
+  564 			rpc_binding_free: 245
+  565 			rpc_binding_copy: 382
+  566 			printf: <>
+  567 			rpc_server_register_if: 275
+  568 			rpc_ep_register: 315
+  569 			rpc_server_unregister_if: PUBLIC void (), <./dcerpc/ncklib/comif.c 868>
+  570 				CODING_ERROR: <>
+  571 				RPC_VERIFY_INIT: <>
+  572 				rpc__server_unregister_if_int: PRIVATE void (), <./dcerpc/ncklib/comif.c 662>
+  573 					CODING_ERROR: <>
+  574 					RPC_MUTEX_LOCK: <>
+  575 					RPC_LIST_FIRST: <>
+  576 					unregister_if_entry: INTERNAL void (), <./dcerpc/ncklib/comif.c 888>
+  577 						RPC_MEM_FREE: <>
+  578 						RPC_LIST_FIRST: <>
+  579 						RPC_LIST_REMOVE: <>
+  580 						uuid_is_nil: if (), <./dcerpc/rpcd/rpcdepdb.c 1763>
+  581 						UUID_EQ: <>
+  582 						RPC_LIST_NEXT: <>
+  583 					RPC_MUTEX_UNLOCK: <>
+  584 					RPC_LIST_NEXT: <>
+  585 					RPC_LIST_EMPTY: <>
+  586 					RPC_LIST_REMOVE: <>
+  587 					RPC_MEM_FREE: <>
+  588 					uuid_hash: <>
+  589 					UUID_EQ: <>
+  590 		rpc_server_listen: PUBLIC void (), <./dcerpc/ncklib/comnet.c 385>
+  591 			CODING_ERROR: <>
+  592 			RPC_VERIFY_INIT: <>
+  593 			RPC_MUTEX_LOCK: <>
+  594 			RPC_MUTEX_UNLOCK: <>
+  595 			rpc__nlsn_activate_desc: <>
+  596 			rpc__cthread_start_all: PRIVATE void (), <./dcerpc/ncklib/comcthd.c 2173>
+  597 				CODING_ERROR: <>
+  598 				RPC_MUTEX_LOCK: <>
+  599 				cthread_pool_alloc: 56
+  600 				cthread_pool_set_threadcnt: INTERNAL void (), <./dcerpc/ncklib/comcthd.c 930>
+  601 					CODING_ERROR: <>
+  602 					RPC_MUTEX_LOCK_ASSERT: <>
+  603 				cthread_pool_start: 63
+  604 				RPC_LIST_FIRST: <>
+  605 				RPC_LIST_NEXT: <>
+  606 				RPC_MUTEX_UNLOCK: <>
+  607 			RPC_DBG_PRINTF: <>
+  608 			DCETHREAD_TRY: <>
+  609 			rpc__server_inq_idle_timeout: PRIVATE unsigned32 (), <./dcerpc/ncklib/comnet.c 748>
+  610 				RPC_VERIFY_INIT: <>
+  611 			time: <>
+  612 			RPC_COND_TIMED_WAIT: <>
+  613 			RPC_COND_WAIT: <>
+  614 			RPC_DBG_GPRINTF: <>
+  615 			rpc__nlsn_deactivate_desc: <>
+  616 			rpc__cthread_stop_all: PRIVATE void (), <./dcerpc/ncklib/comcthd.c 2265>
+  617 				CODING_ERROR: <>
+  618 				RPC_MUTEX_LOCK: <>
+  619 				cthread_pool_stop: 102
+  620 				RPC_LIST_FIRST: <>
+  621 				RPC_LIST_NEXT: <>
+  622 				RPC_MUTEX_UNLOCK: <>
+  623 		teardown_thread_pools: int (), <./dcerpc/perf/server.c 276>
+  624 			rpc_server_set_thread_pool_fn: 119
+  625 			fprintf: <>
+  626 			error_text: 7
+  627 			rpc_server_free_thread_pool: PUBLIC void (), <./dcerpc/ncklib/comcthd.c 1884>
+  628 				CODING_ERROR: <>
+  629 				RPC_VERIFY_INIT: <>
+  630 				RPC_MUTEX_LOCK: <>
+  631 				RPC_LIST_REMOVE: <>
+  632 				cthread_pool_stop: 102
+  633 				cthread_pool_free: INTERNAL void (), <./dcerpc/ncklib/comcthd.c 997>
+  634 					CODING_ERROR: <>
+  635 					RPC_MUTEX_LOCK_ASSERT: <>
+  636 					RPC_COND_DELETE: <>
+  637 					RPC_MEM_FREE: <>
+  638 					RPC_LIST_EMPTY: <>
+  639 					RPC_LIST_REMOVE_TAIL: <>
+  640 				RPC_LIST_EMPTY: <>
+  641 				rpc__timer_set: PRIVATE void (), <./dcerpc/ncklib/rpctimer.c 321>
+  642 					RPC_TIMER_LOCK: <>
+  643 					rpc__timer_set_int: INTERNAL void (), <./dcerpc/ncklib/rpctimer.c 344>
+  644 						rpc__timer_prod: INTERNAL void (), <./dcerpc/ncklib/rpctimer.c 187>
+  645 							RPC_DBG_PRINTF: <>
+  646 							RPC_COND_SIGNAL: <>
+  647 						assert: <>
+  648 					RPC_TIMER_UNLOCK: <>
+  649 				cthread_reaper: INTERNAL void (), <./dcerpc/ncklib/comcthd.c 705>
+  650 					RPC_MUTEX_LOCK: <>
+  651 					RPC_LIST_FIRST: <>
+  652 					RPC_LIST_NEXT: <>
+  653 					RPC_DBG_PRINTF: <>
+  654 					RPC_LIST_REMOVE: <>
+  655 					cthread_pool_free: 633
+  656 					RPC_LIST_EMPTY: <>
+  657 					rpc__timer_clear: PRIVATE void (), <./dcerpc/ncklib/rpctimer.c 474>
+  658 						RPC_TIMER_LOCK: <>
+  659 						RPC_TIMER_UNLOCK: <>
+  660 					RPC_MUTEX_UNLOCK: <>
+  661 				RPC_LIST_ADD_TAIL: <>
+  662 				RPC_MUTEX_UNLOCK: <>
+  663 		SLEEP: <>
+  664 		rpc_ep_unregister: 522
+  665 		getpid: <>
+  666 		sysconf: <>
+  667 		parse_auth_option: void (), <./dcerpc/perf/client.c 2525>
+  668 			malloc: <>
+  669 			strlen: <>
+  670 			fprintf: <>
+  671 			exit: <>
+  672 			strlcpy: 9
+  673 			strtok: <>
+  674 			usage: 19
+  675 			strcmp: <>
+  676 			lookup_name: 25
+  677 		rpc_mgmt_set_cancel_timeout: PUBLIC void (), <./dcerpc/ncklib/mgmt.c 874>
+  678 			CODING_ERROR: <>
+  679 			RPC_VERIFY_INIT: <>
+  680 			RPC_SET_CANCEL_TIMEOUT: <>
+  681 		malloc: <>
+  682 		strlen: <>
+  683 		strlcpy: 9
+  684 		printf: <>
+  685 		check_wait_point: void (), <./dcerpc/perf/client.c 335>
+  686 			printf: <>
+  687 			SLEEP: <>
+  688 		pthread_mutex_init: <>
+  689 		multi_test: void (), <./dcerpc/perf/client.c 2450>
+  690 			DO_NOT_CLOBBER: <>
+  691 			fprintf: <>
+  692 			exit: <>
+  693 			setbuf: <>
+  694 			printf: <>
+  695 			malloc: <>
+  696 			pthread_create: <>
+  697 			multi_task: , <./dcerpc/perf/client.c 2405>
+  698 				rpc_mgmt_set_cancel_timeout: 677
+  699 				fprintf: <>
+  700 				error_text: 7
+  701 				start_test: void (), <./dcerpc/perf/client.c 2324>
+  702 					rpc__cn_set_sock_buffsize: 137
+  703 					fprintf: <>
+  704 					exit: <>
+  705 					rpc__cn_inq_sock_buffsize: 138
+  706 					CATCH:  (), <./dcerpc/perf/client.c 1720>
+  707 						printf: <>
+  708 						fprintf: <>
+  709 						cancel_was_pending: boolean32 (), <./dcerpc/perf/client.c 1502>
+  710 							pthread_testcancel: <>
+  711 							CATCH: 706
+  712 							printf: <>
+  713 							fflush: <>
+  714 							exc_report: <>
+  715 							fprintf: <>
+  716 					exc_report: <>
+  717 					check_wait_point: 685
+  718 				exc_report: <>
+  719 			exc_report: <>
+  720 			pthread_join: <>
+  721 			pthread_cancel: <>
+  722 			do_stats: void (), <./dcerpc/perf/client.c 899>
+  723 				binding_from_string_binding: <>
+  724 				rpc_mgmt_inq_stats: PUBLIC void (), <./dcerpc/ncklib/mgmt.c 480>
+  725 					RPC_VERIFY_INIT: <>
+  726 					RPC_MEM_ALLOC: <>
+  727 					memset: <>
+  728 					RPC_PROTOCOL_INQ_SUPPORTED: <>
+  729 					remote_binding_validate: 43
+  730 					dcethread_interrupt_throw: <>
+  731 					dcethread_self: <>
+  732 				fprintf: <>
+  733 				error_text: 7
+  734 				exit: <>
+  735 				binding_to_string_binding: <>
+  736 				printf: <>
+  737 				rpc_string_free: 173
+  738 				rpc_mgmt_stats_vector_free: PUBLIC void (), <./dcerpc/ncklib/mgmt.c 589>
+  739 					RPC_MEM_FREE: <>
+  740 		start_test: 701
+  741 		do_stats: 722
+  742 		waitpid: <>
+  743 		fork: <>
+  744 		epstatus_usage: void (), <./dcerpc/tools/epstatus.c 120>
+  745 			fprintf: <>
+  746 		rpc_network_inq_protseqs: 148
+  747 		status_message: void (), <./dcerpc/tools/epstatus.c 95>
+  748 			dce_error_inq_text: 8
+  749 			snprintf: <>
+  750 			va_start: <>
+  751 			vfprintf: <>
+  752 			fprintf: <>
+  753 			va_end: <>
+  754 		ep_binding_from_protseq: rpc_binding_handle_t (), <./dcerpc/tools/epstatus.c 127>
+  755 			rpc_string_binding_compose: 261
+  756 			status_message: 747
+  757 			printf: <>
+  758 			rpc_binding_from_string_binding: 319
+  759 			rpc_string_free: 173
+  760 			rpc_mgmt_set_com_timeout: 401
+  761 		ep_status_display: error_status_t (), <./dcerpc/tools/epstatus.c 251>
+  762 			printf: <>
+  763 			rpc_mgmt_ep_elt_inq_begin: PUBLIC void (), <./dcerpc/ncklib/comep.c 926>
+  764 				CODING_ERROR: <>
+  765 				RPC_VERIFY_INIT: <>
+  766 				get_ep_binding: 375
+  767 				RPC_MEM_ALLOC: <>
+  768 				uuid_create_nil: <>
+  769 				rpc_binding_free: 245
+  770 				RPC_MEM_FREE: <>
+  771 			memset: <>
+  772 			rpc_mgmt_ep_elt_inq_next: PUBLIC void (), <./dcerpc/ncklib/comep.c 1079>
+  773 				CODING_ERROR: <>
+  774 				RPC_VERIFY_INIT: <>
+  775 				rpc_ss_swap_client_alloc_free: void (), <./dcerpc/idl_lib/alfrsupp.c 507>
+  776 					rpc_ss_swap_client_alloc_free_ex: void (), <./dcerpc/idl_lib/alfrsupp.c 530>
+  777 						rpc_ss_client_get_thread_ctx: void (), <./dcerpc/idl_lib/alfrsupp.c 345>
+  778 							rpc_ss_init_allocate_once: void (), <./dcerpc/idl_lib/alfrsupp.c 293>
+  779 								RPC_SS_THREADS_ONCE: <>
+  780 								rpc_ss_init_allocate: void (), <./dcerpc/idl_lib/alfrsupp.c 284>
+  781 									RPC_SS_THREADS_KEY_CREATE: <>
+  782 									rpc_ss_thread_ctx_destructor: void (), <./dcerpc/idl_lib/alfrsupp.c 274>
+  783 										rpc_ss_destroy_thread_ctx: void (), <./dcerpc/idl_lib/alfrsupp.c 230>
+  784 											rpc_ss_mem_free: <>
+  785 											free: <>
+  786 											RPC_SS_THREADS_MUTEX_DELETE: <>
+  787 											RPC_SS_THREADS_KEY_SET_CONTEXT: <>
+  788 							rpc_ss_get_thread_handle: rpc_ss_thread_handle_t (), <./dcerpc/idl_lib/alfrsupp.c 422>
+  789 								RPC_SS_THREADS_KEY_GET_CONTEXT: <>
+  790 							malloc: <>
+  791 							DCETHREAD_RAISE: <>
+  792 							calloc: <>
+  793 							RPC_SS_THREADS_MUTEX_CREATE: <>
+  794 							rpc_ss_client_default_malloc: void * (), <./dcerpc/idl_lib/alfrsupp.c 309>
+  795 								malloc: <>
+  796 							rpc_ss_client_default_free: void (), <./dcerpc/idl_lib/alfrsupp.c 329>
+  797 								free: <>
+  798 							RPC_SS_THREADS_KEY_SET_CONTEXT: <>
+  799 					assert: <>
+  800 				rpc__ep_mem_alloc: INTERNAL idl_void_p_t (), <./dcerpc/ncklib/comep.c 2481>
+  801 					RPC_MEM_ALLOC: <>
+  802 				rpc__ep_mem_free: INTERNAL void (), <./dcerpc/ncklib/comep.c 2530>
+  803 					RPC_MEM_FREE: <>
+  804 				dcethread_interrupt_throw: <>
+  805 				dcethread_self: <>
+  806 				rpc_tower_to_binding: PUBLIC void (), <./dcerpc/ncklib/comtwr.c 395>
+  807 					CODING_ERROR: <>
+  808 					RPC_VERIFY_INIT: <>
+  809 					rpc__naf_tower_flrs_to_addr: PRIVATE void (), <./dcerpc/ncklib/comnaf.c 1718>
+  810 						CODING_ERROR: <>
+  811 						memcpy: <>
+  812 						SWAB_INPLACE_16: <>
+  813 						rpc__tower_ref_alloc: 452
+  814 						rpc__tower_ref_inq_protseq_id: PRIVATE void (), <./dcerpc/ncklib/comtwrref.c 552>
+  815 							CODING_ERROR: <>
+  816 							rpc__tower_flr_to_rpc_prot_id: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 1003>
+  817 								CODING_ERROR: <>
+  818 								RPC_PROTSEQ_INQ_PROTSEQ_ID: <>
+  819 								rpc__network_inq_prot_version: 490
+  820 								RPC_PROT_ID_START: <>
+  821 								RPC_PROTSEQ_INQ_PROT_ID: <>
+  822 								memcpy: <>
+  823 								RPC_ADDRESS_START: <>
+  824 								RPC_RESOLVE_ENDIAN_INT16: <>
+  825 							RPC_MEM_ALLOC: <>
+  826 							memcpy: <>
+  827 							RPC_PROT_ID_START: <>
+  828 							RPC_RESOLVE_ENDIAN_UUID: <>
+  829 							uuid_equal: <>
+  830 							RPC_MEM_FREE: <>
+  831 						rpc__tower_ref_free: 508
+  832 						RPC_PROTSEQ_INQ_SUPPORTED: <>
+  833 						RPC_PROTSEQ_INQ_NAF_ID: <>
+  834 					RPC_PROTSEQ_INQ_PROT_ID: <>
+  835 					rpc__binding_alloc: 239
+  836 				tower_to_if_id: PRIVATE void (), <./dcerpc/rpcd/rpcdutil.c 189>
+  837 					rpc__tower_to_tower_ref: PRIVATE void (), <./dcerpc/ncklib/comtwr.c 320>
+  838 						CODING_ERROR: <>
+  839 						memcpy: <>
+  840 						RPC_RESOLVE_ENDIAN_INT16: <>
+  841 						rpc__tower_ref_alloc: 452
+  842 					rpc__tower_flr_to_if_id: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 930>
+  843 						CODING_ERROR: <>
+  844 						rpc__tower_flr_to_uuid: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 1153>
+  845 							CODING_ERROR: <>
+  846 							rpc__tower_flr_id_to_uuid: PRIVATE void (), <./dcerpc/ncklib/comtwrflr.c 765>
+  847 								CODING_ERROR: <>
+  848 								memcpy: <>
+  849 								RPC_RESOLVE_ENDIAN_UUID: <>
+  850 								RPC_RESOLVE_ENDIAN_INT16: <>
+  851 							RPC_PROT_ID_START: <>
+  852 							memcpy: <>
+  853 							RPC_ADDRESS_START: <>
+  854 							RPC_RESOLVE_ENDIAN_INT16: <>
+  855 					rpc__tower_ref_free: 508
+  856 					STATUS_OK: if (), <./dcerpc/rpcd/rpcdepdb.c 1786>
+  857 					assert: <>
+  858 					SET_STATUS: <>
+  859 					CHECK_TOWER_STATUS: <>
+  860 				strlen: <>
+  861 				RPC_MEM_ALLOC: <>
+  862 				rpc__strncpy: 198
+  863 			ep_table_entry_display: void (), <./dcerpc/tools/epstatus.c 193>
+  864 				printf: <>
+  865 				uuid_to_string: <>
+  866 				rpc_string_free: 173
+  867 				status_message: 747
+  868 				rpc_binding_to_string_binding: 254
+  869 			ep_table_entry_free: void (), <./dcerpc/tools/epstatus.c 171>
+  870 				rpc_binding_free: 245
+  871 				rpc_string_free: 173
+  872 			status_message: 747
+  873 			rpc_mgmt_ep_elt_inq_done: PUBLIC void (), <./dcerpc/ncklib/comep.c 1298>
+  874 				CODING_ERROR: <>
+  875 				RPC_VERIFY_INIT: <>
+  876 				dcethread_interrupt_throw: <>
+  877 				dcethread_self: <>
+  878 				rpc_binding_free: 245
+  879 				rpc__ep_mem_free: 802
+  880 				RPC_MEM_FREE: <>
+  881 		rpc_binding_free: 245
+  882 		rpc_protseq_vector_free: 178
+  883 		strncmp: <>
+  884 		sscanf: <>
+  885 		dce_error_inq_text: 8
+  886 		setlocale: <>
+  887 		process_args: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 329>
+  888 		getuid: <>
+  889 		rpcd_configure_signals: void (), <./dcerpc/rpcd/rpcd.c 1055>
+  890 			rpcd_handle_sigint: void (), <./dcerpc/rpcd/rpcd.c 1046>
+  891 				raise: <>
+  892 			sigaction: <>
+  893 			printf: <>
+  894 			exit: <>
+  895 			sigemptyset: <>
+  896 			sigaddset: <>
+  897 			pthread_sigmask: <>
+  898 			strerror: <>
+  899 		start_as_daemon: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 904>
+  900 			dcethread_fork: <>
+  901 			exit: <>
+  902 			setsid: <>
+  903 			signal: <>
+  904 			fork: <>
+  905 			close: <>
+  906 			open: <>
+  907 			atexit: <>
+  908 			delete_pid_file: void (), <./dcerpc/rpcd/rpcd.c 812>
+  909 				pid_from_pid_file: INTERNAL pid_t (), <./dcerpc/rpcd/rpcd.c 759>
+  910 					open: <>
+  911 					error: 330
+  912 					dcethread_read: <>
+  913 					unlink: <>
+  914 					atoi: <>
+  915 					kill: <>
+  916 					MatchProgramToPID: INTERNAL int (), <./dcerpc/rpcd/rpcd.c 712>
+  917 						sprintf: <>
+  918 						popen: <>
+  919 						error: 330
+  920 						fgets: <>
+  921 						feof: <>
+  922 						StripWhitespace: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 703>
+  923 							StripLeadingWhitespace: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 663>
+  924 								isspace: <>
+  925 							StripTrailingWhitespace: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 683>
+  926 								isspace: <>
+  927 						fclose: <>
+  928 					close: <>
+  929 				getpid: <>
+  930 				unlink: <>
+  931 			create_pid_file: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 822>
+  932 				pid_from_pid_file: 909
+  933 				fprintf: <>
+  934 				error: 330
+  935 				open: <>
+  936 				strerror: <>
+  937 				getpid: <>
+  938 				snprintf: <>
+  939 				strlen: <>
+  940 				dcethread_write: <>
+  941 				close: <>
+  942 				exit: <>
+  943 			attach_log_file: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 868>
+  944 				malloc: <>
+  945 				strlen: <>
+  946 				sprintf: <>
+  947 				open: <>
+  948 				dup2: <>
+  949 				close: <>
+  950 				strrchr: <>
+  951 				chdir: <>
+  952 				free: <>
+  953 		rpc_network_is_protseq_valid: PUBLIC boolean32 (), <./dcerpc/ncklib/comnet.c 1283>
+  954 			CODING_ERROR: <>
+  955 			RPC_VERIFY_INIT: <>
+  956 			rpc__network_pseq_id_from_pseq: 163
+  957 		init: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 495>
+  958 			uuid_create_nil: <>
+  959 			check_st_bad: PRIVATE boolean32 (), <./dcerpc/rpcd/rpcd.c 256>
+  960 				STATUS_OK: if (), <./dcerpc/rpcd/rpcdepdb.c 1786>
+  961 				show_st: PRIVATE void (), <./dcerpc/rpcd/rpcd.c 267>
+  962 					dce_error_inq_text: 8
+  963 					fprintf: <>
+  964 					syslog: <>
+  965 			printf: <>
+  966 			malloc: <>
+  967 			strlen: <>
+  968 			sprintf: <>
+  969 			stat: <>
+  970 			epdb_init: <>
+  971 			free: <>
+  972 			lbdb_init: <>
+  973 			epdb_inq_object: <>
+  974 			rpc_object_set_type: 298
+  975 			uuid_to_string: <>
+  976 			rpc_string_free: 173
+  977 		STATUS_OK: if (), <./dcerpc/rpcd/rpcdepdb.c 1786>
+  978 		register_ifs: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 399>
+  979 			rpc_server_register_if: 275
+  980 			check_st_bad: 959
+  981 		rpcd_verify_sockets_directory: void (), <./dcerpc/rpcd/rpcd.c 1162>
+  982 			chmod: <>
+  983 			mkdir: <>
+  984 			printf: <>
+  985 			exit: <>
+  986 		rpc_server_use_protseq_if: 220
+  987 		rpc__server_register_fwd_map: PRIVATE void (), <./dcerpc/ncklib/comnet.c 1130>
+  988 			CODING_ERROR: <>
+  989 		fwd_map: INTERNAL void (), <./dcerpc/rpcd/rpcd.c 601>
+  990 			epdb_inq_handle: PRIVATE epdb_handle_t (), <./dcerpc/rpcd/rpcdepdb.c 348>
+  991 			epdb_fwd: <>
+  992 			lbdb_inq_handle: <>
+  993 			lbdb_fwd: <>
+  994 			assert: <>
+  995 		check_st_bad: 959
+  996 		dcethread_create_throw: <>
+  997 		rpcd_listen_thread: void * (), <./dcerpc/rpcd/rpcd.c 970>
+  998 			rpc_server_listen: 590
+  999 		rpc_mgmt_is_server_listening: 368
+ 1000 		getenv: <>
+ 1001 		dcethread_write: <>
+ 1002 		strerror: <>
+ 1003 		close: <>
+ 1004 		rpcd_network_thread: void * (), <./dcerpc/rpcd/rpcd.c 984>
+ 1005 			strcmp: <>
+ 1006 			rpc_server_use_protseq_if: 220
+ 1007 			STATUS_OK: if (), <./dcerpc/rpcd/rpcdepdb.c 1786>
+ 1008 			printf: <>
+ 1009 			dcethread_delay: <>
+ 1010 		rpcd_wait_signals: void (), <./dcerpc/rpcd/rpcd.c 1104>
+ 1011 			sigemptyset: <>
+ 1012 			error: 330
+ 1013 			sigaddset: <>
+ 1014 			sigwait: <>
+ 1015 			printf: <>
+ 1016 			cleanup: boolean (), <./dcerpc/idl_compiler/driver.c 477>
+ 1017 				message_close: void (), <./dcerpc/idl_compiler/message.c 218>
+ 1018 					catclose: <>
+ 1019 		rpc_mgmt_stop_server_listening: PUBLIC void (), <./dcerpc/ncklib/mgmt.c 1266>
+ 1020 			RPC_VERIFY_INIT: <>
+ 1021 			rpc__server_stop_listening: PRIVATE void (), <./dcerpc/ncklib/comnet.c 586>
+ 1022 				CODING_ERROR: <>
+ 1023 				RPC_MUTEX_LOCK: <>
+ 1024 				RPC_MUTEX_UNLOCK: <>
+ 1025 				RPC_COND_SIGNAL: <>
+ 1026 			remote_binding_validate: 43
+ 1027 			dcethread_interrupt_throw: <>
+ 1028 			dcethread_self: <>
+ 1029 		dcethread_join_throw: <>
+ 1030 		dcethread_interrupt_throw: <>
+ 1031 		KEYWORDS_init: void (), <./dcerpc/idl_compiler/keywds.c 241>
+ 1032 			HASH: <>
+ 1033 		DRIVER_main: boolean (), <./dcerpc/idl_compiler/driver.c 492>
+ 1034 			signal: <>
+ 1035 			attempt_to_print_errors: long (), <./dcerpc/idl_compiler/driver.c 157>
+ 1036 				signal: <>
+ 1037 				print_errors: boolean (), <./dcerpc/idl_compiler/errors.c 842>
+ 1038 					STRTAB_str_to_string: void (), <./dcerpc/idl_compiler/nametbl.c 948>
+ 1039 						NAMETABLE_id_to_string: void (), <./dcerpc/idl_compiler/nametbl.c 593>
+ 1040 							nameTable: <>
+ 1041 					fopen: <>
+ 1042 					print_error_messages: void (), <./dcerpc/idl_compiler/errors.c 813>
+ 1043 						print_error_messages: 1042
+ 1044 						print_errors_for_line: void (), <./dcerpc/idl_compiler/errors.c 745>
+ 1045 							seek_for_line: void (), <./dcerpc/idl_compiler/errors.c 702>
+ 1046 								fgets: <>
+ 1047 								strlen: <>
+ 1048 							message_print: 331
+ 1049 					free_log_rec: void (), <./dcerpc/idl_compiler/errors.c 341>
+ 1050 						free_log_rec: 1049
+ 1051 						FREE: <>
+ 1052 			setjmp: <>
+ 1053 			CALL: <>
+ 1054 			init: boolean (), <./dcerpc/idl_compiler/driver.c 461>
+ 1055 				message_open: void (), <./dcerpc/idl_compiler/message.c 176>
+ 1056 					strlcpy: 9
+ 1057 					setlocale: <>
+ 1058 					catopen: <>
+ 1059 					catgets: <>
+ 1060 					atoi: <>
+ 1061 					fprintf: <>
+ 1062 					def_message: <>
+ 1063 			CMD_parse_args: boolean (), <./dcerpc/idl_compiler/command.c 647>
+ 1064 				CMD_explain_args: void (), <./dcerpc/idl_compiler/command.c 268>
+ 1065 					message_print: 331
+ 1066 					printflags: void (), <./dcerpc/idl_compiler/getflags.c 487>
+ 1067 						strlen: <>
+ 1068 						message_print: 331
+ 1069 						fprintf: <>
+ 1070 						exit: <>
+ 1071 						yes_no: <>
+ 1072 						no_yes: <>
+ 1073 				exit: <>
+ 1074 				getflags: void (), <./dcerpc/idl_compiler/getflags.c 207>
+ 1075 					strlen: <>
+ 1076 					strcmp: <>
+ 1077 					INTERNAL_ERROR: <>
+ 1078 					is_number: boolean (), <./dcerpc/idl_compiler/getflags.c 189>
+ 1079 						isdigit: <>
+ 1080 					GETINT: <>
+ 1081 					GETSTR: <>
+ 1082 					GETCH: <>
+ 1083 					GETFLT: <>
+ 1084 					GETLONG: <>
+ 1085 					strncmp: <>
+ 1086 					message_print: 331
+ 1087 					CMD_explain_args: 1064
+ 1088 					exit: <>
+ 1089 				message_print: 331
+ 1090 				flags_option_count: int (), <./dcerpc/idl_compiler/getflags.c 114>
+ 1091 					strcmp: <>
+ 1092 				check_str_list: int (), <./dcerpc/idl_compiler/command.c 292>
+ 1093 					strcmp: <>
+ 1094 					message_print: 331
+ 1095 					fprintf: <>
+ 1096 					exit: <>
+ 1097 				check_str_int_list: int (), <./dcerpc/idl_compiler/command.c 329>
+ 1098 					strcmp: <>
+ 1099 					message_print: 331
+ 1100 					fprintf: <>
+ 1101 					exit: <>
+ 1102 				getenv: <>
+ 1103 				flags_incr_count: void (), <./dcerpc/idl_compiler/getflags.c 135>
+ 1104 					strlen: <>
+ 1105 					strcmp: <>
+ 1106 				get_src_filespec: boolean (), <./dcerpc/idl_compiler/command.c 561>
+ 1107 					flags_other_count: int (), <./dcerpc/idl_compiler/getflags.c 162>
+ 1108 					CMD_explain_args: 1064
+ 1109 					message_print: 331
+ 1110 					fprintf: <>
+ 1111 					flags_other: char * (), <./dcerpc/idl_compiler/getflags.c 173>
+ 1112 					strlcpy: 9
+ 1113 					exit: <>
+ 1114 					dump_cmd_data: void (), <./dcerpc/idl_compiler/command.c 425>
+ 1115 						printf: <>
+ 1116 						flags_option_count: 1090
+ 1117 				FILE_parse: boolean (), <./dcerpc/idl_compiler/files.c 351>
+ 1118 					strchr: <>
+ 1119 					FILE_kind: boolean (), <./dcerpc/idl_compiler/files.c 571>
+ 1120 						stat: <>
+ 1121 					strlcpy: 9
+ 1122 					strlen: <>
+ 1123 					strncpy: <>
+ 1124 					error: 330
+ 1125 				error: 330
+ 1126 				STRTAB_add_string: STRTAB_str_t (), <./dcerpc/idl_compiler/nametbl.c 925>
+ 1127 					NAMETABLE_add_id: NAMETABLE_id_t (), <./dcerpc/idl_compiler/nametbl.c 438>
+ 1128 						strcmp: <>
+ 1129 						MALLOC: <>
+ 1130 						strlen: <>
+ 1131 						strlcpy: 9
+ 1132 						assert: <>
+ 1133 						NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1134 						NAMETABLE_balance_tree: void (), <./dcerpc/idl_compiler/nametbl.c 205>
+ 1135 							FIND_FIRST_SET: <>
+ 1136 				FILE_kind: 1119
+ 1137 				sprintf: <>
+ 1138 				FILE_form_filespec: boolean (), <./dcerpc/idl_compiler/files.c 237>
+ 1139 					FILE_parse: 1117
+ 1140 					strlcat: 17
+ 1141 					error: 330
+ 1142 				alloc_and_copy: char * (), <./dcerpc/idl_compiler/command.c 492>
+ 1143 					NEW_VEC: <>
+ 1144 					strlen: <>
+ 1145 					strlcpy: 9
+ 1146 				dump_cmd_data: 1114
+ 1147 				printflags: 1066
+ 1148 			open_fe_files: boolean (), <./dcerpc/idl_compiler/driver.c 184>
+ 1149 			FE_main: boolean (), <./dcerpc/idl_compiler/frontend.c 858>
+ 1150 				FE_init: void (), <./dcerpc/idl_compiler/frontend.c 170>
+ 1151 					KEYWORDS_init: 1031
+ 1152 					NAMETABLE_init: void (), <./dcerpc/idl_compiler/nametbl.c 972>
+ 1153 					AST_init: void (), <./dcerpc/idl_compiler/astp_sim.c 1061>
+ 1154 						AST_integer_constant: AST_constant_n_t * (), <./dcerpc/idl_compiler/astp_sim.c 1099>
+ 1155 							AST_constant_node: AST_constant_n_t * (), <./dcerpc/idl_compiler/astp_sim.c 250>
+ 1156 								NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1157 								ASTP_set_fe_info: void (), <./dcerpc/idl_compiler/astp_com.c 2465>
+ 1158 									BE_ctx_malloc: heap_mem * (), <./dcerpc/idl_compiler/mtsbacke.c 244>
+ 1159 										MALLOC: <>
+ 1160 										memset: <>
+ 1161 						NAMETABLE_add_id: 1127
+ 1162 						AST_type_node: AST_type_n_t * (), <./dcerpc/idl_compiler/astp_sim.c 1778>
+ 1163 							NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1164 							ASTP_set_fe_info: 1157
+ 1165 				parse_idl: boolean (), <./dcerpc/idl_compiler/frontend.c 774>
+ 1166 					STRTAB_str_to_string: 1038
+ 1167 					FILE_parse: 1117
+ 1168 					strlcat: 17
+ 1169 					strcmp: <>
+ 1170 					message_print: 331
+ 1171 					FILE_lookup: boolean (), <./dcerpc/idl_compiler/files.c 170>
+ 1172 						stat: <>
+ 1173 						strlcpy: 9
+ 1174 						FILE_form_filespec: 1138
+ 1175 						FILE_has_dir_info: boolean (), <./dcerpc/idl_compiler/files.c 493>
+ 1176 							FILE_parse: 1117
+ 1177 						sprintf: <>
+ 1178 						error: 330
+ 1179 					NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1180 					STRTAB_add_string: 1126
+ 1181 					parse: boolean (), <./dcerpc/idl_compiler/frontend.c 430>
+ 1182 						STRTAB_str_to_string: 1038
+ 1183 						FILE_lookup: 1171
+ 1184 						error: 330
+ 1185 						message_print: 331
+ 1186 						add_def_string: boolean (), <./dcerpc/idl_compiler/command.c 516>
+ 1187 							strcmp: <>
+ 1188 							strlen: <>
+ 1189 							alloc_and_copy: 1142
+ 1190 						cpp: void (), <./dcerpc/idl_compiler/frontend.c 190>
+ 1191 							assert: <>
+ 1192 							strlcpy: 9
+ 1193 							strlcat: 17
+ 1194 							strcmp: <>
+ 1195 							message_print: 331
+ 1196 							printf: <>
+ 1197 							popen: <>
+ 1198 							error: 330
+ 1199 						FILE_open: boolean (), <./dcerpc/idl_compiler/files.c 115>
+ 1200 							fopen: <>
+ 1201 							strerror: <>
+ 1202 							error_list: void (), <./dcerpc/idl_compiler/errors.c 939>
+ 1203 								message_print: 331
+ 1204 								sysdep_cleanup_temp: 344
+ 1205 								nidl_terminate: 347
+ 1206 						set_name_for_errors: void (), <./dcerpc/idl_compiler/errors.c 1020>
+ 1207 							STRTAB_add_string: 1126
+ 1208 							STRTAB_str_to_string: 1038
+ 1209 						nidl_parser_alloc: <>
+ 1210 						nidl_parser_input: <>
+ 1211 						nidl_yyparse: <>
+ 1212 						log_error: void (), <./dcerpc/idl_compiler/errors.c 624>
+ 1213 							va_start: <>
+ 1214 							vlog_error: void (), <./dcerpc/idl_compiler/errors.c 614>
+ 1215 								log_source_va: void (), <./dcerpc/idl_compiler/errors.c 470>
+ 1216 									va_arg: <>
+ 1217 									alloc_log_rec: error_log_rec_t * (), <./dcerpc/idl_compiler/errors.c 287>
+ 1218 										NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1219 									add_error_log_rec: void (), <./dcerpc/idl_compiler/errors.c 415>
+ 1220 										add_error_log_rec: 1219
+ 1221 										alloc_log_rec: 1217
+ 1222 										queue_error: void (), <./dcerpc/idl_compiler/errors.c 382>
+ 1223 											alloc_log_rec: 1217
+ 1224 							va_end: <>
+ 1225 						nidl_yylineno: <>
+ 1226 						nidl_parser_destroy: <>
+ 1227 						PCLOSE: <>
+ 1228 						fclose: <>
+ 1229 						STRTAB_add_string: 1126
+ 1230 						FILE_parse: 1117
+ 1231 						FILE_form_filespec: 1138
+ 1232 						strcmp: <>
+ 1233 						strlcat: 17
+ 1234 						FILE_is_cwd: boolean (), <./dcerpc/idl_compiler/files.c 512>
+ 1235 							getcwd: <>
+ 1236 							chdir: <>
+ 1237 							free: <>
+ 1238 							strcmp: <>
+ 1239 						parse_acf: boolean (), <./dcerpc/idl_compiler/frontend.c 269>
+ 1240 							message_print: 331
+ 1241 							acf_parser_alloc: <>
+ 1242 							cpp: 1190
+ 1243 							FILE_open: 1199
+ 1244 							acf_parser_input: <>
+ 1245 							acf_yyparse: <>
+ 1246 							acf_errcount: <>
+ 1247 							log_error: 1212
+ 1248 							acf_yylineno: <>
+ 1249 							PCLOSE: <>
+ 1250 							fclose: <>
+ 1251 							acf_parser_destroy: <>
+ 1252 				NAMETABLE_dump_tab: void (), <./dcerpc/idl_compiler/namdump.c 290>
+ 1253 					NAMETABLE_dump_nodes: void (), <./dcerpc/idl_compiler/namdump.c 231>
+ 1254 						NAMETABLE_dump_nodes: 1253
+ 1255 						NAMETABLE_dump_node: void (), <./dcerpc/idl_compiler/namdump.c 162>
+ 1256 							printf: <>
+ 1257 							NAMETABLE_dump_bindings_4_node: void (), <./dcerpc/idl_compiler/namdump.c 126>
+ 1258 								printf: <>
+ 1259 					NAMETABLE_dump_temp_node_list: void (), <./dcerpc/idl_compiler/namdump.c 259>
+ 1260 						printf: <>
+ 1261 				AST_dump_interface: void (), <./dcerpc/idl_compiler/astp_dmp.c 266>
+ 1262 					getenv: <>
+ 1263 					printf: <>
+ 1264 					dump_node_address: void (), <./dcerpc/idl_compiler/astp_dmp.c 209>
+ 1265 						indent: void (), <./dcerpc/idl_compiler/astp_dmp.c 198>
+ 1266 							printf: <>
+ 1267 						printf: <>
+ 1268 					dump_nametable_id: <>
+ 1269 					AST_LOCAL_SET: <>
+ 1270 					indent: 1265
+ 1271 					AST_dump_ports_list: void (), <./dcerpc/idl_compiler/astp_dmp.c 538>
+ 1272 						STRTAB_str_to_string: 1038
+ 1273 						printf: <>
+ 1274 					AST_EXTERN_SET: <>
+ 1275 					AST_IN_LINE_SET: <>
+ 1276 					AST_OUT_OF_LINE_SET: <>
+ 1277 					AST_CODE_SET: <>
+ 1278 					AST_NO_CODE_SET: <>
+ 1279 					AST_DECODE_SET: <>
+ 1280 					AST_ENCODE_SET: <>
+ 1281 					AST_AUTO_HANDLE_SET: <>
+ 1282 					AST_EXPLICIT_HANDLE_SET: <>
+ 1283 					AST_NO_CANCEL_SET: <>
+ 1284 					AST_dump_type: void (), <./dcerpc/idl_compiler/astp_dmp.c 817>
+ 1285 						printf: <>
+ 1286 						indent: 1265
+ 1287 						print_type_name: void (), <./dcerpc/idl_compiler/astp_dmp.c 688>
+ 1288 							indent: 1265
+ 1289 							printf: <>
+ 1290 						dump_node_address: 1264
+ 1291 						dump_nametable_id: <>
+ 1292 						AST_UNALIGN_SET: <>
+ 1293 						AST_HEAP_SET: <>
+ 1294 						AST_IN_LINE_SET: <>
+ 1295 						AST_DEF_AS_TAG_SET: <>
+ 1296 						AST_OUT_OF_LINE_SET: <>
+ 1297 						AST_STRING_SET: <>
+ 1298 						AST_VARYING_SET: <>
+ 1299 						AST_STRING0_SET: <>
+ 1300 						AST_UNIQUE_SET: <>
+ 1301 						AST_REF_SET: <>
+ 1302 						AST_PTR_SET: <>
+ 1303 						AST_IGNORE_SET: <>
+ 1304 						AST_SMALL_SET: <>
+ 1305 						AST_HANDLE_SET: <>
+ 1306 						AST_CONTEXT_RD_SET: <>
+ 1307 						AST_IN_SET: <>
+ 1308 						AST_IN_VARYING_SET: <>
+ 1309 						AST_IN_FIXED_SET: <>
+ 1310 						AST_OUT_SET: <>
+ 1311 						AST_OUT_VARYING_SET: <>
+ 1312 						AST_OUT_FIXED_SET: <>
+ 1313 						AST_OUT_PA_REF_SET: <>
+ 1314 						AST_SELF_POINTER_SET: <>
+ 1315 						AST_CONFORMANT_SET: <>
+ 1316 						AST_V1_ENUM_SET: <>
+ 1317 						AST_dump_operation: void (), <./dcerpc/idl_compiler/astp_dmp.c 1254>
+ 1318 							printf: <>
+ 1319 							indent: 1265
+ 1320 							dump_node_address: 1264
+ 1321 							dump_nametable_id: <>
+ 1322 							AST_BROADCAST_SET: <>
+ 1323 							AST_MAYBE_SET: <>
+ 1324 							AST_CODE_SET: <>
+ 1325 							AST_NO_CODE_SET: <>
+ 1326 							AST_DECODE_SET: <>
+ 1327 							AST_ENCODE_SET: <>
+ 1328 							AST_ENABLE_ALLOCATE_SET: <>
+ 1329 							AST_EXPLICIT_HANDLE_SET: <>
+ 1330 							AST_NO_CANCEL_SET: <>
+ 1331 							AST_IDEMPOTENT_SET: <>
+ 1332 							AST_REFLECT_DELETIONS_SET: <>
+ 1333 							AST_HAS_INS_SET: <>
+ 1334 							AST_HAS_IN_CTX_SET: <>
+ 1335 							AST_HAS_IN_OOLS_SET: <>
+ 1336 							AST_HAS_IN_PIPES_SET: <>
+ 1337 							AST_HAS_IN_PTRS_SET: <>
+ 1338 							AST_HAS_FULL_PTRS_SET: <>
+ 1339 							AST_HAS_OUTS_SET: <>
+ 1340 							AST_HAS_OUT_CTX_SET: <>
+ 1341 							AST_HAS_OUT_OOLS_SET: <>
+ 1342 							AST_HAS_OUT_PIPES_SET: <>
+ 1343 							AST_HAS_OUT_PTRS_SET: <>
+ 1344 							AST_HAS_XMIT_AS_SET: <>
+ 1345 							AST_dump_parameter: void (), <./dcerpc/idl_compiler/astp_dmp.c 1417>
+ 1346 								printf: <>
+ 1347 								indent: 1265
+ 1348 								dump_node_address: 1264
+ 1349 								dump_nametable_id: <>
+ 1350 								AST_HEAP_SET: <>
+ 1351 								AST_IN_LINE_SET: <>
+ 1352 								AST_OUT_OF_LINE_SET: <>
+ 1353 								AST_CS_STAG_SET: <>
+ 1354 								AST_CS_DRTAG_SET: <>
+ 1355 								AST_CS_RTAG_SET: <>
+ 1356 								AST_HIDDEN_SET: <>
+ 1357 								AST_STRING_SET: <>
+ 1358 								AST_STRING0_SET: <>
+ 1359 								AST_IGNORE_SET: <>
+ 1360 								AST_SMALL_SET: <>
+ 1361 								AST_CONTEXT_SET: <>
+ 1362 								AST_VARYING_SET: <>
+ 1363 								AST_IN_SET: <>
+ 1364 								AST_IN_SHAPE_SET: <>
+ 1365 								AST_OUT_SET: <>
+ 1366 								AST_OUT_SHAPE_SET: <>
+ 1367 								AST_COMM_STATUS_SET: <>
+ 1368 								AST_ADD_COMM_STATUS_SET: <>
+ 1369 								AST_FAULT_STATUS_SET: <>
+ 1370 								AST_ADD_FAULT_STATUS_SET: <>
+ 1371 								AST_REF_SET: <>
+ 1372 								AST_PTR_SET: <>
+ 1373 								AST_UNIQUE_SET: <>
+ 1374 								AST_dump_field_attrs: void (), <./dcerpc/idl_compiler/astp_dmp.c 1557>
+ 1375 									dump_node_address: 1264
+ 1376 									ASTP_chase_ptr_to_kind: AST_type_n_t * (), <./dcerpc/idl_compiler/astp_com.c 283>
+ 1377 									indent: 1265
+ 1378 									printf: <>
+ 1379 									AST_dump_field_ref: void (), <./dcerpc/idl_compiler/astp_dmp.c 1663>
+ 1380 										indent: 1265
+ 1381 										printf: <>
+ 1382 										dump_nametable_id: <>
+ 1383 										AST_dump_type: 1284
+ 1384 								AST_dump_type: 1284
+ 1385 						AST_dump_array: void (), <./dcerpc/idl_compiler/astp_dmp.c 773>
+ 1386 							dump_node_address: 1264
+ 1387 							AST_dump_type: 1284
+ 1388 							AST_dump_indices: void (), <./dcerpc/idl_compiler/astp_dmp.c 786>
+ 1389 								indent: 1265
+ 1390 								printf: <>
+ 1391 								AST_FIXED_LOWER_SET: <>
+ 1392 								AST_dump_constant: void (), <./dcerpc/idl_compiler/astp_dmp.c 616>
+ 1393 									printf: <>
+ 1394 									STRTAB_str_to_string: 1038
+ 1395 									indent: 1265
+ 1396 									dump_nametable_id: <>
+ 1397 									dump_node_address: 1264
+ 1398 								AST_FIXED_UPPER_SET: <>
+ 1399 						AST_dump_structure: void (), <./dcerpc/idl_compiler/astp_dmp.c 1080>
+ 1400 							dump_node_address: 1264
+ 1401 							indent: 1265
+ 1402 							dump_nametable_id: <>
+ 1403 							printf: <>
+ 1404 							AST_IN_LINE_SET: <>
+ 1405 							AST_OUT_OF_LINE_SET: <>
+ 1406 							AST_STRING_SET: <>
+ 1407 							AST_STRING0_SET: <>
+ 1408 							AST_IGNORE_SET: <>
+ 1409 							AST_SMALL_SET: <>
+ 1410 							AST_CONTEXT_SET: <>
+ 1411 							AST_VARYING_SET: <>
+ 1412 							AST_PTR_SET: <>
+ 1413 							AST_REF_SET: <>
+ 1414 							AST_UNIQUE_SET: <>
+ 1415 							AST_dump_field_attrs: 1374
+ 1416 							AST_dump_type: 1284
+ 1417 						AST_dump_disc_union: void (), <./dcerpc/idl_compiler/astp_dmp.c 1163>
+ 1418 							indent: 1265
+ 1419 							dump_nametable_id: <>
+ 1420 							dump_node_address: 1264
+ 1421 							AST_dump_type: 1284
+ 1422 							AST_dump_arm: void (), <./dcerpc/idl_compiler/astp_dmp.c 1187>
+ 1423 								indent: 1265
+ 1424 								printf: <>
+ 1425 								AST_dump_constant: 1392
+ 1426 								dump_nametable_id: <>
+ 1427 								dump_node_address: 1264
+ 1428 								AST_STRING_SET: <>
+ 1429 								AST_STRING0_SET: <>
+ 1430 								AST_SMALL_SET: <>
+ 1431 								AST_REF_SET: <>
+ 1432 								AST_PTR_SET: <>
+ 1433 								AST_UNIQUE_SET: <>
+ 1434 								AST_dump_type: 1284
+ 1435 						AST_dump_type: 1284
+ 1436 						AST_dump_enumerators: void (), <./dcerpc/idl_compiler/astp_dmp.c 1064>
+ 1437 							dump_node_address: 1264
+ 1438 							indent: 1265
+ 1439 							dump_nametable_id: <>
+ 1440 							AST_dump_constant: 1392
+ 1441 						pipe: <>
+ 1442 					AST_dump_include_list: void (), <./dcerpc/idl_compiler/astp_dmp.c 447>
+ 1443 						STRTAB_str_to_string: 1038
+ 1444 						printf: <>
+ 1445 					AST_dump_import_list: void (), <./dcerpc/idl_compiler/astp_dmp.c 464>
+ 1446 						STRTAB_str_to_string: 1038
+ 1447 						printf: <>
+ 1448 					AST_dump_export_list: void (), <./dcerpc/idl_compiler/astp_dmp.c 481>
+ 1449 						AST_dump_exported_item: void (), <./dcerpc/idl_compiler/astp_dmp.c 492>
+ 1450 							printf: <>
+ 1451 							dump_node_address: 1264
+ 1452 							dump_nametable_id: <>
+ 1453 							indent: 1265
+ 1454 							AST_dump_constant: 1392
+ 1455 							AST_DEF_AS_TAG_SET: <>
+ 1456 							AST_dump_type: 1284
+ 1457 							AST_dump_operation: 1317
+ 1458 					AST_dump_simple_types_list: void (), <./dcerpc/idl_compiler/astp_dmp.c 579>
+ 1459 						indent: 1265
+ 1460 						AST_IN_PA_STUB_SET: <>
+ 1461 						printf: <>
+ 1462 						AST_OUT_PA_STUB_SET: <>
+ 1463 						AST_DEF_AS_TAG_SET: <>
+ 1464 						dump_nametable_id: <>
+ 1465 						print_type_name: 1287
+ 1466 						dump_node_address: 1264
+ 1467 					fflush: <>
+ 1468 				PROP_main: boolean (), <./dcerpc/idl_compiler/propagat.c 4018>
+ 1469 					assert: <>
+ 1470 					interface_prop: void (), <./dcerpc/idl_compiler/propagat.c 3480>
+ 1471 						AST_CODE_SET: <>
+ 1472 						AST_NO_CODE_SET: <>
+ 1473 						AST_SET_CODE: <>
+ 1474 						AST_IN_LINE_SET: <>
+ 1475 						AST_OUT_OF_LINE_SET: <>
+ 1476 						AST_SET_OUT_OF_LINE: <>
+ 1477 						AST_SET_IN_LINE: <>
+ 1478 						interface_prop: 1470
+ 1479 						export_prop: void (), <./dcerpc/idl_compiler/propagat.c 3447>
+ 1480 							operation_prop: void (), <./dcerpc/idl_compiler/propagat.c 3318>
+ 1481 								AST_CODE_SET: <>
+ 1482 								AST_NO_CODE_SET: <>
+ 1483 								AST_SET_CODE: <>
+ 1484 								AST_SET_NO_CODE: <>
+ 1485 								AST_ENCODE_SET: <>
+ 1486 								AST_SET_ENCODE: <>
+ 1487 								AST_DECODE_SET: <>
+ 1488 								AST_SET_DECODE: <>
+ 1489 								AST_SET_HAS_ENCODE_OPS: <>
+ 1490 								AST_EXPLICIT_HANDLE_SET: <>
+ 1491 								type_is_handle: <>
+ 1492 								AST_SET_EXPLICIT_HANDLE: <>
+ 1493 								param_is_handle: <>
+ 1494 								AST_CLR_EXPLICIT_HANDLE: <>
+ 1495 								op_add_binding_handle_param: void (), <./dcerpc/idl_compiler/propagat.c 3216>
+ 1496 									NAMETABLE_add_id: 1127
+ 1497 									AST_parameter_node: AST_parameter_n_t * (), <./dcerpc/idl_compiler/astp_sim.c 1542>
+ 1498 										NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1499 										ASTP_set_fe_info: 1157
+ 1500 									AST_SET_IN: <>
+ 1501 								AST_NO_CANCEL_SET: <>
+ 1502 								AST_SET_NO_CANCEL: <>
+ 1503 								AST_CS_STAG_SET: <>
+ 1504 								AST_CS_DRTAG_SET: <>
+ 1505 								AST_CS_RTAG_SET: <>
+ 1506 								NAMETABLE_add_binding: boolean (), <./dcerpc/idl_compiler/nametbl.c 632>
+ 1507 									NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1508 								AST_name_node: AST_name_n_t * (), <./dcerpc/idl_compiler/astp_sim.c 1039>
+ 1509 									NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1510 								AST_concat_element: ASTP_node_t * (), <./dcerpc/idl_compiler/astp_com.c 431>
+ 1511 								param_prop: void (), <./dcerpc/idl_compiler/propagat.c 2939>
+ 1512 									param_follow_ref_ptr: AST_type_n_t * (), <./dcerpc/idl_compiler/checker.c 394>
+ 1513 										AST_REF_SET: <>
+ 1514 										instance_has_array_attr: <>
+ 1515 										AST_STRING_SET: <>
+ 1516 										type_is_string: boolean (), <./dcerpc/idl_compiler/checker.c 169>
+ 1517 											CHK_struct_is_all_byte_fields: boolean (), <./dcerpc/idl_compiler/checker.c 139>
+ 1518 									AST_CS_STAG_SET: <>
+ 1519 									AST_CS_DRTAG_SET: <>
+ 1520 									AST_CS_RTAG_SET: <>
+ 1521 									AST_SET_HIDDEN: <>
+ 1522 									AST_REF_SET: <>
+ 1523 									AST_OUT_SET: <>
+ 1524 									AST_IN_SET: <>
+ 1525 									PROP_set_type_usage_attr: void (), <./dcerpc/idl_compiler/propagat.c 568>
+ 1526 										PROP_set_type_attr: void (), <./dcerpc/idl_compiler/propagat.c 532>
+ 1527 									AST_LOCAL_SET: <>
+ 1528 									PROP_type_info: void (), <./dcerpc/idl_compiler/propagat.c 1507>
+ 1529 										type_visited: boolean (), <./dcerpc/idl_compiler/propagat.c 309>
+ 1530 										type_visit: void (), <./dcerpc/idl_compiler/propagat.c 249>
+ 1531 											NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1532 										AST_PTR_SET: <>
+ 1533 										FE_SET: <>
+ 1534 										AST_STRING0_SET: <>
+ 1535 										AST_SMALL_SET: <>
+ 1536 										AST_CONFORMANT_SET: <>
+ 1537 										AST_V1_ENUM_SET: <>
+ 1538 										AST_UNALIGN_SET: <>
+ 1539 										AST_STRING_SET: <>
+ 1540 										type_is_anonymous: <>
+ 1541 										PROP_set_nf_cs_char_param: void (), <./dcerpc/idl_compiler/propagat.c 366>
+ 1542 											AST_IN_SET: <>
+ 1543 											DDBE_ALLOCATE: <>
+ 1544 											FE_SET: <>
+ 1545 											AST_OUT_SET: <>
+ 1546 											AST_ADD_COMM_STATUS_SET: <>
+ 1547 											AST_ADD_FAULT_STATUS_SET: <>
+ 1548 										PROP_set_used_as_reg_fld_attr: void (), <./dcerpc/idl_compiler/propagat.c 473>
+ 1549 											FE_SET: <>
+ 1550 										FE_TEST: <>
+ 1551 										AST_VARYING_SET: <>
+ 1552 										AST_UNIQUE_SET: <>
+ 1553 										AST_IN_SET: <>
+ 1554 										AST_OUT_SET: <>
+ 1555 										AST_SELF_POINTER_SET: <>
+ 1556 										AST_OUT_OF_LINE_SET: <>
+ 1557 										PROP_type_info: 1528
+ 1558 										PROP_type_struct: void (), <./dcerpc/idl_compiler/propagat.c 1434>
+ 1559 											AST_REF_SET: <>
+ 1560 											AST_VARYING_SET: <>
+ 1561 											PROP_type_info: 1528
+ 1562 											AST_CONFORMANT_SET: <>
+ 1563 											PROP_type_info_OR: void (), <./dcerpc/idl_compiler/propagat.c 1344>
+ 1564 											AST_UNALIGN_SET: <>
+ 1565 											COPY_IF_LARGER: <>
+ 1566 										COPY_IF_LARGER: <>
+ 1567 										PROP_process_pa_type: void (), <./dcerpc/idl_compiler/propagat.c 601>
+ 1568 											AST_SELF_POINTER_SET: <>
+ 1569 											AST_CONTEXT_RD_SET: <>
+ 1570 											AST_IN_SET: <>
+ 1571 											PROP_set_type_usage_attr: 1525
+ 1572 											AST_OUT_SET: <>
+ 1573 											FE_TEST: <>
+ 1574 											AST_DEF_AS_TAG_SET: <>
+ 1575 											FE_SET: <>
+ 1576 											type_is_scalar: <>
+ 1577 											AST_type_ptr_node: AST_type_p_n_t * (), <./dcerpc/idl_compiler/astp_sim.c 1860>
+ 1578 												NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 1579 												ASTP_set_fe_info: 1157
+ 1580 											AST_concat_element: 1510
+ 1581 										PROP_type_union: void (), <./dcerpc/idl_compiler/propagat.c 1379>
+ 1582 											COPY_IF_LARGER: <>
+ 1583 											AST_REF_SET: <>
+ 1584 											PROP_type_info: 1528
+ 1585 											PROP_type_info_OR: void (), <./dcerpc/idl_compiler/propagat.c 1344>
+ 1586 										AST_REF_SET: <>
+ 1587 										pipe: <>
+ 1588 										NAMETABLE_id_to_string: 1039
+ 1589 										strcmp: <>
+ 1590 										type_is_float: <>
+ 1591 										type_is_multibyte_integer: <>
+ 1592 										type_is_enum: <>
+ 1593 										type_unvisit: void (), <./dcerpc/idl_compiler/propagat.c 272>
+ 1594 											FREE: <>
+ 1595 										type_contains_conformant: boolean (), <./dcerpc/idl_compiler/propagat.c 971>
+ 1596 											type_visited: 1529
+ 1597 											type_visit: 1530
+ 1598 											AST_CONFORMANT_SET: <>
+ 1599 											type_contains_conformant: 1595
+ 1600 											PROP_set_type_attr: 1526
+ 1601 										PROP_set_type_attr: 1526
+ 1602 									type_visit_free: void (), <./dcerpc/idl_compiler/propagat.c 331>
+ 1603 										FREE: <>
+ 1604 									FE_SET: <>
+ 1605 									AST_HEAP_SET: <>
+ 1606 									AST_SET_HEAP: <>
+ 1607 									AST_STRING_SET: <>
+ 1608 									AST_SET_STRING: <>
+ 1609 									AST_SET_VARYING: <>
+ 1610 									AST_CONTEXT_RD_SET: <>
+ 1611 									AST_SET_CONTEXT: <>
+ 1612 									AST_CONTEXT_SET: <>
+ 1613 									type_has_context: boolean (), <./dcerpc/idl_compiler/propagat.c 2646>
+ 1614 										type_contains_context: boolean (), <./dcerpc/idl_compiler/propagat.c 735>
+ 1615 											AST_CONTEXT_RD_SET: <>
+ 1616 											type_can_contain_context: <>
+ 1617 											type_visited: 1529
+ 1618 											type_visit: 1530
+ 1619 											type_contains_context: 1614
+ 1620 											AST_CONTEXT_SET: <>
+ 1621 										type_visit_free: 1602
+ 1622 									AST_SET_HAS_IN_CTX: <>
+ 1623 									type_has_ool: boolean (), <./dcerpc/idl_compiler/propagat.c 2673>
+ 1624 										type_contains_ool: boolean (), <./dcerpc/idl_compiler/propagat.c 851>
+ 1625 											AST_OUT_OF_LINE_SET: <>
+ 1626 											type_contains_ool: 1624
+ 1627 											type_visited: 1529
+ 1628 											type_visit: 1530
+ 1629 											pipe: <>
+ 1630 										type_visit_free: 1602
+ 1631 									AST_SET_HAS_IN_OOLS: <>
+ 1632 									AST_PTR_SET: <>
+ 1633 									AST_UNIQUE_SET: <>
+ 1634 									type_has_pointer: boolean (), <./dcerpc/idl_compiler/propagat.c 2558>
+ 1635 										type_contains_pointer: boolean (), <./dcerpc/idl_compiler/propagat.c 2367>
+ 1636 											type_can_contain_pointer: <>
+ 1637 											type_visited: 1529
+ 1638 											type_visit: 1530
+ 1639 											type_contains_pointer: 1635
+ 1640 										type_visit_free: 1602
+ 1641 									AST_SET_HAS_IN_PTRS: <>
+ 1642 									AST_VARYING_SET: <>
+ 1643 									AST_SET_HAS_OUT_CTX: <>
+ 1644 									AST_SET_HAS_IN_OUT_CTX: <>
+ 1645 									AST_SET_HAS_OUT_OOLS: <>
+ 1646 									AST_SET_HAS_OUT_PTRS: <>
+ 1647 									type_prop_up_to_param: void (), <./dcerpc/idl_compiler/propagat.c 2493>
+ 1648 										param_follow_ref_ptr: 1512
+ 1649 										AST_REF_SET: <>
+ 1650 										type_prop_param: void (), <./dcerpc/idl_compiler/propagat.c 1035>
+ 1651 											type_visited: 1529
+ 1652 											type_visit: 1530
+ 1653 											AST_PTR_SET: <>
+ 1654 											AST_STRING_SET: <>
+ 1655 											FE_SET: <>
+ 1656 											type_prop_param: 1650
+ 1657 											AST_REF_SET: <>
+ 1658 											AST_CONFORMANT_SET: <>
+ 1659 										AST_STRING_SET: <>
+ 1660 										type_visit_free: 1602
+ 1661 									type_prop_in_out_attrs: void (), <./dcerpc/idl_compiler/propagat.c 2613>
+ 1662 										AST_OUT_PA_REF_SET: <>
+ 1663 										type_process_in_out_attrs: void (), <./dcerpc/idl_compiler/propagat.c 2096>
+ 1664 											type_visited: 1529
+ 1665 											type_visit: 1530
+ 1666 											PROP_set_type_usage_attr: 1525
+ 1667 											type_process_in_out_attrs: 1663
+ 1668 											AST_STRING_SET: <>
+ 1669 											AST_VARYING_SET: <>
+ 1670 											pipe: <>
+ 1671 										type_visit_free: 1602
+ 1672 									AST_SET_ENABLE_ALLOCATE: <>
+ 1673 									AST_SET_HAS_XMIT_AS: <>
+ 1674 									type_is_anonymous: <>
+ 1675 									type_prop_conformant: void (), <./dcerpc/idl_compiler/propagat.c 2468>
+ 1676 										type_contains_conformant: 1595
+ 1677 										type_visit_free: 1602
+ 1678 									type_prop_ptr_attrs: void (), <./dcerpc/idl_compiler/propagat.c 2583>
+ 1679 										prop_pointer_types: void (), <./dcerpc/idl_compiler/propagat.c 1206>
+ 1680 											FE_TEST: <>
+ 1681 											type_can_contain_pointer: <>
+ 1682 											type_visited: 1529
+ 1683 											type_visit: 1530
+ 1684 											FE_SET: <>
+ 1685 											AST_REF_SET: <>
+ 1686 											AST_UNIQUE_SET: <>
+ 1687 											AST_PTR_SET: <>
+ 1688 											C_PTR_TEST: <>
+ 1689 											PROP_process_up_type: void (), <./dcerpc/idl_compiler/propagat.c 706>
+ 1690 												AST_type_ptr_node: 1577
+ 1691 												AST_concat_element: 1510
+ 1692 										type_visit_free: 1602
+ 1693 									FE_TEST: <>
+ 1694 									AST_SET_HAS_FULL_PTRS: <>
+ 1695 									type_get_tag_name_addr: NAMETABLE_id_t * (), <./dcerpc/idl_compiler/propagat.c 2698>
+ 1696 										type_get_tag_name_addr: 1695
+ 1697 									AST_generate_name: NAMETABLE_id_t (), <./dcerpc/idl_compiler/astp_com.c 2876>
+ 1698 										NAMETABLE_id_to_string: 1039
+ 1699 										sprintf: <>
+ 1700 										strlen: <>
+ 1701 										message_print: 331
+ 1702 										nidl_yylineno: <>
+ 1703 										NAMETABLE_add_id: 1127
+ 1704 								PROP_auto_heap: void (), <./dcerpc/idl_compiler/propagat.c 3255>
+ 1705 									AST_PTR_SET: <>
+ 1706 									AST_SET_HEAP: <>
+ 1707 									AST_HEAP_SET: <>
+ 1708 							type_prop: void (), <./dcerpc/idl_compiler/propagat.c 2783>
+ 1709 								AST_IN_LINE_SET: <>
+ 1710 								AST_OUT_OF_LINE_SET: <>
+ 1711 								type_is_scalar: <>
+ 1712 								PROP_set_type_usage_attr: 1525
+ 1713 								FE_TEST: <>
+ 1714 								AST_type_ptr_node: 1577
+ 1715 								FE_SET: <>
+ 1716 								AST_concat_element: 1510
+ 1717 								type_prop_to_instance: void (), <./dcerpc/idl_compiler/propagat.c 2724>
+ 1718 									AST_STRING_SET: <>
+ 1719 									AST_SET_STRING: <>
+ 1720 									AST_SET_VARYING: <>
+ 1721 								type_prop_conformant: 1675
+ 1722 								type_prop_ptr_attrs: 1678
+ 1723 								type_is_anonymous: <>
+ 1724 								type_get_tag_name_addr: 1695
+ 1725 								AST_generate_name: 1697
+ 1726 								AST_LOCAL_SET: <>
+ 1727 								PROP_type_info: 1528
+ 1728 								type_visit_free: 1602
+ 1729 							error: 330
+ 1730 					PROP_contained_pa_to_sp_list: void (), <./dcerpc/idl_compiler/propagat.c 3946>
+ 1731 						type_find_pa_types: void (), <./dcerpc/idl_compiler/propagat.c 3824>
+ 1732 							type_visited: 1529
+ 1733 							type_visit: 1530
+ 1734 							type_find_pa_types: 1731
+ 1735 							FE_TEST: <>
+ 1736 							type_add_type_to_sp_list: void (), <./dcerpc/idl_compiler/propagat.c 3752>
+ 1737 								FE_TEST: <>
+ 1738 								AST_DEF_AS_TAG_SET: <>
+ 1739 								FE_SET: <>
+ 1740 								type_is_scalar: <>
+ 1741 								AST_type_ptr_node: 1577
+ 1742 								AST_concat_element: 1510
+ 1743 							AST_VARYING_SET: <>
+ 1744 							AST_SET_IN_VARYING: <>
+ 1745 							AST_SET_OUT_VARYING: <>
+ 1746 						type_visit_free: 1602
+ 1747 						AST_concat_element: 1510
+ 1748 					PROP_post_filter_types_list: void (), <./dcerpc/idl_compiler/propagat.c 3618>
+ 1749 						AST_DEF_AS_TAG_SET: <>
+ 1750 						PROP_remove_type_p: AST_type_p_n_t * (), <./dcerpc/idl_compiler/propagat.c 3558>
+ 1751 							FREE: <>
+ 1752 							error: 330
+ 1753 							PROP_remove_type_p: 1750
+ 1754 					types_list_prop: void (), <./dcerpc/idl_compiler/propagat.c 3977>
+ 1755 						type_is_anonymous: <>
+ 1756 						type_get_tag_name_addr: 1695
+ 1757 						AST_generate_name: 1697
+ 1758 				CHECKER_main: boolean (), <./dcerpc/idl_compiler/checker.c 5867>
+ 1759 					interface_check: void (), <./dcerpc/idl_compiler/checker.c 5788>
+ 1760 						int_name_len: void (), <./dcerpc/idl_compiler/checker.c 5608>
+ 1761 							NAMETABLE_id_to_string: 1039
+ 1762 							strlen: <>
+ 1763 							CHECKER_error: void (), <./dcerpc/idl_compiler/checker.c 5904>
+ 1764 								va_start: <>
+ 1765 								vlog_source_error: void (), <./dcerpc/idl_compiler/errors.c 517>
+ 1766 									log_source_va: 1215
+ 1767 								va_end: <>
+ 1768 						int_in_line: void (), <./dcerpc/idl_compiler/checker.c 5633>
+ 1769 							AST_IN_LINE_SET: <>
+ 1770 							AST_OUT_OF_LINE_SET: <>
+ 1771 							CHECKER_acf_error: void (), <./dcerpc/idl_compiler/checker.c 5958>
+ 1772 								va_start: <>
+ 1773 								vlog_source_error: 1765
+ 1774 								va_end: <>
+ 1775 						int_code: void (), <./dcerpc/idl_compiler/checker.c 5651>
+ 1776 							AST_CODE_SET: <>
+ 1777 							AST_NO_CODE_SET: <>
+ 1778 							CHECKER_acf_error: 1771
+ 1779 							CHECKER_acf_warning: void (), <./dcerpc/idl_compiler/checker.c 5994>
+ 1780 								va_start: <>
+ 1781 								vlog_source_warning: void (), <./dcerpc/idl_compiler/errors.c 562>
+ 1782 									log_source_va: 1215
+ 1783 								va_end: <>
+ 1784 						int_handle: void (), <./dcerpc/idl_compiler/checker.c 5699>
+ 1785 							AST_AUTO_HANDLE_SET: <>
+ 1786 							CHECKER_acf_error: 1771
+ 1787 							type_is_handle: <>
+ 1788 						int_local: void (), <./dcerpc/idl_compiler/checker.c 5726>
+ 1789 							uuid_is_null: <>
+ 1790 							AST_LOCAL_SET: <>
+ 1791 							AST_OBJECT_SET: <>
+ 1792 							CHECKER_error: 1763
+ 1793 							AST_SET_LOCAL: <>
+ 1794 						int_inherit: void (), <./dcerpc/idl_compiler/checker.c 5767>
+ 1795 							NAMETABLE_lookup_local: const void * (), <./dcerpc/idl_compiler/nametbl.c 833>
+ 1796 								nameTable: <>
+ 1797 							NAMETABLE_id_to_string: 1039
+ 1798 						interface_check: 1759
+ 1799 						export_check: void (), <./dcerpc/idl_compiler/checker.c 5570>
+ 1800 							constant_check: void (), <./dcerpc/idl_compiler/checker.c 5557>
+ 1801 							operation_check: void (), <./dcerpc/idl_compiler/checker.c 3114>
+ 1802 								op_handle: void (), <./dcerpc/idl_compiler/checker.c 2826>
+ 1803 									AST_AUTO_HANDLE_SET: <>
+ 1804 									AST_LOCAL_SET: <>
+ 1805 									AST_OBJECT_SET: <>
+ 1806 									default_to_auto_handle: void (), <./dcerpc/idl_compiler/checker.c 452>
+ 1807 										NAMETABLE_id_to_string: 1039
+ 1808 										message_print: 331
+ 1809 								op_comm_status: void (), <./dcerpc/idl_compiler/checker.c 2848>
+ 1810 									AST_COMM_STATUS_SET: <>
+ 1811 									AST_FAULT_STATUS_SET: <>
+ 1812 									AST_ADD_COMM_STATUS_SET: <>
+ 1813 									AST_ADD_FAULT_STATUS_SET: <>
+ 1814 									CHECKER_acf_error: 1771
+ 1815 									acf_keyword_lookup: <>
+ 1816 								op_broadcast: void (), <./dcerpc/idl_compiler/checker.c 2892>
+ 1817 									AST_BROADCAST_SET: <>
+ 1818 									AST_HAS_IN_PIPES_SET: <>
+ 1819 									AST_HAS_OUT_PIPES_SET: <>
+ 1820 									CHECKER_error: 1763
+ 1821 								op_maybe: void (), <./dcerpc/idl_compiler/checker.c 2910>
+ 1822 									AST_MAYBE_SET: <>
+ 1823 									AST_HAS_OUTS_SET: <>
+ 1824 									AST_HAS_OUT_PIPES_SET: <>
+ 1825 									CHECKER_error: 1763
+ 1826 								op_code: void (), <./dcerpc/idl_compiler/checker.c 2928>
+ 1827 									AST_CODE_SET: <>
+ 1828 									AST_NO_CODE_SET: <>
+ 1829 									CHECKER_acf_error: 1771
+ 1830 									CHECKER_acf_warning: 1779
+ 1831 								op_idempotent: void (), <./dcerpc/idl_compiler/checker.c 2953>
+ 1832 									AST_IDEMPOTENT_SET: <>
+ 1833 									AST_BROADCAST_SET: <>
+ 1834 									AST_HAS_IN_PIPES_SET: <>
+ 1835 									AST_HAS_OUT_PIPES_SET: <>
+ 1836 									CHECKER_error: 1763
+ 1837 								op_encode: void (), <./dcerpc/idl_compiler/checker.c 2972>
+ 1838 									AST_NO_CODE_SET: <>
+ 1839 									AST_ENCODE_SET: <>
+ 1840 									AST_DECODE_SET: <>
+ 1841 									AST_IN_SET: <>
+ 1842 									AST_OUT_SET: <>
+ 1843 									AST_ADD_COMM_STATUS_SET: <>
+ 1844 									AST_ADD_FAULT_STATUS_SET: <>
+ 1845 									NAMETABLE_id_to_string: 1039
+ 1846 									CHECKER_warning: void (), <./dcerpc/idl_compiler/checker.c 5931>
+ 1847 										va_start: <>
+ 1848 										vlog_source_warning: 1781
+ 1849 										va_end: <>
+ 1850 									AST_FAULT_STATUS_SET: <>
+ 1851 									CHECKER_acf_warning: 1779
+ 1852 									CHECKER_error: 1763
+ 1853 									AST_HAS_IN_PIPES_SET: <>
+ 1854 									AST_HAS_OUT_PIPES_SET: <>
+ 1855 								CHK_op_cs: void (), <./dcerpc/idl_compiler/chkichar.c 271>
+ 1856 									AST_CS_STAG_SET: <>
+ 1857 									AST_CS_DRTAG_SET: <>
+ 1858 									AST_CS_RTAG_SET: <>
+ 1859 									CHECKER_acf_warning: 1779
+ 1860 									CHECKER_acf_error: 1771
+ 1861 								FE_TEST: <>
+ 1862 								NAMETABLE_id_to_string: 1039
+ 1863 								CHECKER_warning: 1846
+ 1864 								AST_REFLECT_DELETIONS_SET: <>
+ 1865 								KEYWORDS_lookup_text: const char * (), <./dcerpc/idl_compiler/keywds.c 325>
+ 1866 								AST_attribute_to_token: long (), <./dcerpc/idl_compiler/astp_com.c 2818>
+ 1867 								param_check_first: void (), <./dcerpc/idl_compiler/checker.c 2716>
+ 1868 									param_first_handle: void (), <./dcerpc/idl_compiler/checker.c 2609>
+ 1869 										param_follow_ref_ptr: 1512
+ 1870 										AST_OBJECT_SET: <>
+ 1871 										AST_AUTO_HANDLE_SET: <>
+ 1872 										AST_LOCAL_SET: <>
+ 1873 										type_is_handle: <>
+ 1874 										AST_HAS_IN_CTX_SET: <>
+ 1875 										default_to_auto_handle: 1806
+ 1876 										AST_HAS_IN_OUT_CTX_SET: <>
+ 1877 										AST_IN_SET: <>
+ 1878 										AST_OUT_SET: <>
+ 1879 										CHECKER_error: 1763
+ 1880 										AST_HANDLE_SET: <>
+ 1881 										AST_PTR_SET: <>
+ 1882 										AST_UNIQUE_SET: <>
+ 1883 										FE_TEST: <>
+ 1884 										KEYWORDS_lookup_text: 1865
+ 1885 										AST_attribute_to_token: 1866
+ 1886 								param_check: void (), <./dcerpc/idl_compiler/checker.c 2762>
+ 1887 									param_follow_ref_ptr: 1512
+ 1888 									param_type: void (), <./dcerpc/idl_compiler/checker.c 1740>
+ 1889 										ASTP_chase_ptr_to_kind: 1376
+ 1890 										CHECKER_error: 1763
+ 1891 										type_is_anonymous: <>
+ 1892 										type_check: void (), <./dcerpc/idl_compiler/checker.c 5449>
+ 1893 											type_xmit_type: AST_type_n_t * (), <./dcerpc/idl_compiler/checker.c 248>
+ 1894 											AST_LOCAL_SET: <>
+ 1895 											type_name_len: void (), <./dcerpc/idl_compiler/checker.c 4816>
+ 1896 												AST_LOCAL_SET: <>
+ 1897 												NAMETABLE_id_to_string: 1039
+ 1898 												strlen: <>
+ 1899 												CHECKER_error: 1763
+ 1900 												AST_HANDLE_SET: <>
+ 1901 												AST_CONTEXT_RD_SET: <>
+ 1902 												AST_IN_VARYING_SET: <>
+ 1903 												AST_OUT_VARYING_SET: <>
+ 1904 												FE_TEST: <>
+ 1905 												STRTAB_str_to_string: 1038
+ 1906 												CHECKER_warning: 1846
+ 1907 												AST_OUT_OF_LINE_SET: <>
+ 1908 											type_in_line: void (), <./dcerpc/idl_compiler/checker.c 4942>
+ 1909 												AST_IN_LINE_SET: <>
+ 1910 												AST_OUT_OF_LINE_SET: <>
+ 1911 												CHECKER_acf_error: 1771
+ 1912 												type_is_scalar: <>
+ 1913 												STRTAB_str_to_string: 1038
+ 1914 												NAMETABLE_id_to_string: 1039
+ 1915 												CHECKER_acf_warning: 1779
+ 1916 											type_string: void (), <./dcerpc/idl_compiler/checker.c 4976>
+ 1917 												AST_STRING0_SET: <>
+ 1918 												type_is_v1_string: boolean (), <./dcerpc/idl_compiler/checker.c 212>
+ 1919 													AST_CONFORMANT_SET: <>
+ 1920 												CHECKER_error: 1763
+ 1921 												AST_STRING_SET: <>
+ 1922 												AST_SMALL_SET: <>
+ 1923 												type_is_string: 1516
+ 1924 												KEYWORDS_lookup_text: 1865
+ 1925 												AST_attribute_to_token: 1866
+ 1926 											type_pointer: void (), <./dcerpc/idl_compiler/checker.c 5018>
+ 1927 												AST_REF_SET: <>
+ 1928 												CHECKER_error: 1763
+ 1929 												AST_UNIQUE_SET: <>
+ 1930 												AST_PTR_SET: <>
+ 1931 												CHECKER_warning: 1846
+ 1932 												FE_TEST: <>
+ 1933 												ASTP_chase_ptr_to_kind: 1376
+ 1934 											type_small: void (), <./dcerpc/idl_compiler/checker.c 5083>
+ 1935 												AST_SMALL_SET: <>
+ 1936 												CHECKER_error: 1763
+ 1937 												type_is_array_np: <>
+ 1938 												AST_CONFORMANT_SET: <>
+ 1939 												array_is_conformant_upper: boolean (), <./dcerpc/idl_compiler/checker.c 272>
+ 1940 													AST_FIXED_LOWER_SET: <>
+ 1941 													AST_FIXED_UPPER_SET: <>
+ 1942 												array_is_large: boolean (), <./dcerpc/idl_compiler/checker.c 300>
+ 1943 													AST_FIXED_LOWER_SET: <>
+ 1944 													AST_FIXED_UPPER_SET: <>
+ 1945 												array_has_open_lb: boolean (), <./dcerpc/idl_compiler/checker.c 353>
+ 1946 													AST_FIXED_LOWER_SET: <>
+ 1947 											type_context: void (), <./dcerpc/idl_compiler/checker.c 5132>
+ 1948 												AST_CONTEXT_RD_SET: <>
+ 1949 												AST_DEF_AS_TAG_SET: <>
+ 1950 												CHECKER_error: 1763
+ 1951 												AST_UNIQUE_SET: <>
+ 1952 												AST_PTR_SET: <>
+ 1953 												AST_HANDLE_SET: <>
+ 1954 												KEYWORDS_lookup_text: 1865
+ 1955 												AST_attribute_to_token: 1866
+ 1956 											type_conformant: void (), <./dcerpc/idl_compiler/checker.c 5200>
+ 1957 												type_is_array_np: <>
+ 1958 												AST_LOCAL_SET: <>
+ 1959 												AST_CONFORMANT_SET: <>
+ 1960 												array_is_conformant_upper: 1939
+ 1961 												CHECKER_warning: 1846
+ 1962 											type_ignore: void (), <./dcerpc/idl_compiler/checker.c 5230>
+ 1963 												AST_IGNORE_SET: <>
+ 1964 												CHECKER_error: 1763
+ 1965 											type_switch_type: void (), <./dcerpc/idl_compiler/checker.c 5248>
+ 1966 												CHECKER_error: 1763
+ 1967 											type_transmit_as: void (), <./dcerpc/idl_compiler/checker.c 5267>
+ 1968 												AST_CONFORMANT_SET: <>
+ 1969 												AST_STRING_SET: <>
+ 1970 												type_is_array: <>
+ 1971 												CHECKER_error: 1763
+ 1972 												FE_TEST: <>
+ 1973 												KEYWORDS_lookup_text: 1865
+ 1974 												AST_attribute_to_token: 1866
+ 1975 												AST_STRING0_SET: <>
+ 1976 												AST_UNIQUE_SET: <>
+ 1977 												AST_REF_SET: <>
+ 1978 												AST_IGNORE_SET: <>
+ 1979 												AST_SMALL_SET: <>
+ 1980 												AST_CONTEXT_RD_SET: <>
+ 1981 												AST_PTR_SET: <>
+ 1982 											type_represent_as: void (), <./dcerpc/idl_compiler/checker.c 5364>
+ 1983 												AST_CONFORMANT_SET: <>
+ 1984 												CHECKER_error: 1763
+ 1985 												FE_TEST: <>
+ 1986 												KEYWORDS_lookup_text: 1865
+ 1987 												AST_attribute_to_token: 1866
+ 1988 												ASTP_lookup_binding: ASTP_node_t * (), <./dcerpc/idl_compiler/astp_com.c 502>
+ 1989 													NAMETABLE_lookup_binding: const void * (), <./dcerpc/idl_compiler/nametbl.c 701>
+ 1990 														nameTable: <>
+ 1991 													NAMETABLE_id_to_string: 1039
+ 1992 													log_error: 1212
+ 1993 													AST_OBJECT_SET: <>
+ 1994 													STRTAB_str_to_string: 1038
+ 1995 												NAMETABLE_id_to_string: 1039
+ 1996 												CHECKER_acf_warning: 1779
+ 1997 												CHECKER_acf_error: 1771
+ 1998 											CHK_type_cs: void (), <./dcerpc/idl_compiler/chkichar.c 379>
+ 1999 												FE_TEST: <>
+ 2000 												CHECKER_acf_error: 1771
+ 2001 												CHECKER_error: 1763
+ 2002 												KEYWORDS_lookup_text: 1865
+ 2003 												AST_attribute_to_token: 1866
+ 2004 												CHK_struct_is_all_byte_fields: 1517
+ 2005 												ASTP_lookup_binding: 1988
+ 2006 												NAMETABLE_id_to_string: 1039
+ 2007 												CHECKER_acf_warning: 1779
+ 2008 												strlen: <>
+ 2009 											FE_TEST: <>
+ 2010 											CHECKER_warning: 1846
+ 2011 											enum_check: void (), <./dcerpc/idl_compiler/checker.c 4183>
+ 2012 												type_is_anonymous: <>
+ 2013 												CHECKER_warning: 1846
+ 2014 											array_check: void (), <./dcerpc/idl_compiler/checker.c 1680>
+ 2015 												AST_CONFORMANT_SET: <>
+ 2016 												CHECKER_error: 1763
+ 2017 												array_element_type: void (), <./dcerpc/idl_compiler/checker.c 1593>
+ 2018 													type_is_anonymous: <>
+ 2019 													type_check: 1892
+ 2020 													type_xmit_type: 1893
+ 2021 													AST_CONFORMANT_SET: <>
+ 2022 													AST_STRING_SET: <>
+ 2023 													CHECKER_error: 1763
+ 2024 													AST_CONTEXT_RD_SET: <>
+ 2025 													AST_LOCAL_SET: <>
+ 2026 													type_is_function: <>
+ 2027 													AST_IGNORE_SET: <>
+ 2028 												NAMETABLE_id_to_string: 1039
+ 2029 												index_check: void (), <./dcerpc/idl_compiler/checker.c 1578>
+ 2030 													index_const_type: void (), <./dcerpc/idl_compiler/checker.c 1530>
+ 2031 														AST_FIXED_LOWER_SET: <>
+ 2032 														const_is_integer: <>
+ 2033 														AST_FIXED_UPPER_SET: <>
+ 2034 														CHECKER_error: 1763
+ 2035 													index_bounds: void (), <./dcerpc/idl_compiler/checker.c 1551>
+ 2036 														AST_FIXED_LOWER_SET: <>
+ 2037 														AST_FIXED_UPPER_SET: <>
+ 2038 														CHECKER_error: 1763
+ 2039 														CHECKER_warning: 1846
+ 2040 											struct_check: void (), <./dcerpc/idl_compiler/checker.c 3840>
+ 2041 												field_check: void (), <./dcerpc/idl_compiler/checker.c 3805>
+ 2042 													field_type: void (), <./dcerpc/idl_compiler/checker.c 3193>
+ 2043 														type_is_anonymous: <>
+ 2044 														type_check: 1892
+ 2045 														AST_STRING_SET: <>
+ 2046 														AST_STRING0_SET: <>
+ 2047 														AST_UNIQUE_SET: <>
+ 2048 														AST_REF_SET: <>
+ 2049 														AST_IGNORE_SET: <>
+ 2050 														AST_SMALL_SET: <>
+ 2051 														AST_CONTEXT_SET: <>
+ 2052 														AST_PTR_SET: <>
+ 2053 														CHECKER_error: 1763
+ 2054 														AST_CONFORMANT_SET: <>
+ 2055 														type_xmit_type: 1893
+ 2056 														AST_LOCAL_SET: <>
+ 2057 														NAMETABLE_id_to_string: 1039
+ 2058 														AST_CONTEXT_RD_SET: <>
+ 2059 														type_is_function: <>
+ 2060 														FE_TEST: <>
+ 2061 														CHECKER_warning: 1846
+ 2062 													field_size: void (), <./dcerpc/idl_compiler/checker.c 3304>
+ 2063 														AST_LOCAL_SET: <>
+ 2064 														AST_CONFORMANT_SET: <>
+ 2065 														AST_VARYING_SET: <>
+ 2066 														AST_STRING_SET: <>
+ 2067 														NAMETABLE_id_to_string: 1039
+ 2068 														CHECKER_error: 1763
+ 2069 														ASTP_chase_ptr_to_type: AST_type_n_t * (), <./dcerpc/idl_compiler/astp_com.c 334>
+ 2070 													field_in_line: void (), <./dcerpc/idl_compiler/checker.c 3435>
+ 2071 														AST_IN_LINE_SET: <>
+ 2072 														AST_OUT_OF_LINE_SET: <>
+ 2073 														CHECKER_acf_error: 1771
+ 2074 														type_is_scalar: <>
+ 2075 														STRTAB_str_to_string: 1038
+ 2076 														NAMETABLE_id_to_string: 1039
+ 2077 														CHECKER_acf_warning: 1779
+ 2078 													field_string: void (), <./dcerpc/idl_compiler/checker.c 3473>
+ 2079 														AST_STRING0_SET: <>
+ 2080 														type_is_v1_string: 1918
+ 2081 														CHECKER_error: 1763
+ 2082 														AST_SMALL_SET: <>
+ 2083 														AST_STRING_SET: <>
+ 2084 														KEYWORDS_lookup_text: 1865
+ 2085 														AST_attribute_to_token: 1866
+ 2086 														ASTP_chase_ptr_to_type: 2069
+ 2087 														AST_CONFORMANT_SET: <>
+ 2088 														type_is_string: 1516
+ 2089 													field_pointer: void (), <./dcerpc/idl_compiler/checker.c 3545>
+ 2090 														AST_REF_SET: <>
+ 2091 														CHECKER_error: 1763
+ 2092 														AST_UNIQUE_SET: <>
+ 2093 														AST_PTR_SET: <>
+ 2094 														CHECKER_warning: 1846
+ 2095 														instance_has_array_attr: <>
+ 2096 														AST_STRING_SET: <>
+ 2097 														array_check: 2014
+ 2098 													field_small: void (), <./dcerpc/idl_compiler/checker.c 3622>
+ 2099 														AST_SMALL_SET: <>
+ 2100 														CHECKER_error: 1763
+ 2101 														type_is_array_np: <>
+ 2102 														AST_CONFORMANT_SET: <>
+ 2103 														array_is_conformant_upper: 1939
+ 2104 														AST_VARYING_SET: <>
+ 2105 														instance_is_varying_upper: boolean (), <./dcerpc/idl_compiler/checker.c 480>
+ 2106 														array_is_large: 1942
+ 2107 													field_context: void (), <./dcerpc/idl_compiler/checker.c 3687>
+ 2108 														AST_CONTEXT_SET: <>
+ 2109 														CHECKER_error: 1763
+ 2110 														AST_UNIQUE_SET: <>
+ 2111 														AST_CONTEXT_RD_SET: <>
+ 2112 														AST_PTR_SET: <>
+ 2113 													field_varying: void (), <./dcerpc/idl_compiler/checker.c 3726>
+ 2114 														AST_LOCAL_SET: <>
+ 2115 														AST_VARYING_SET: <>
+ 2116 														instance_is_varying_upper: 2105
+ 2117 														CHECKER_warning: 1846
+ 2118 													field_ignore: void (), <./dcerpc/idl_compiler/checker.c 3762>
+ 2119 														AST_IGNORE_SET: <>
+ 2120 														CHECKER_error: 1763
+ 2121 													field_switch_is: void (), <./dcerpc/idl_compiler/checker.c 3777>
+ 2122 														ASTP_chase_ptr_to_kind: 1376
+ 2123 														CHECKER_error: 1763
+ 2124 													CHK_field_cs: void (), <./dcerpc/idl_compiler/chkichar.c 318>
+ 2125 														FE_TEST: <>
+ 2126 														CHECKER_error: 1763
+ 2127 														AST_STRING_SET: <>
+ 2128 													fattr_check: void (), <./dcerpc/idl_compiler/checker.c 1482>
+ 2129 														CHECKER_warning: 1846
+ 2130 														fattr_switch_is: void (), <./dcerpc/idl_compiler/checker.c 533>
+ 2131 															ASTP_chase_ptr_to_kind: 1376
+ 2132 															error: 330
+ 2133 															AST_REF_SET: <>
+ 2134 															ASTP_chase_ptr_to_type: 2069
+ 2135 															NAMETABLE_id_to_string: 1039
+ 2136 															CHECKER_error: 1763
+ 2137 														fattr_check_size: void (), <./dcerpc/idl_compiler/checker.c 621>
+ 2138 															AST_STRING_SET: <>
+ 2139 															CHECKER_error: 1763
+ 2140 															ASTP_chase_ptr_to_type: 2069
+ 2141 															type_is_rangeable: <>
+ 2142 															AST_LOCAL_SET: <>
+ 2143 															AST_FIXED_UPPER_SET: <>
+ 2144 															AST_FIXED_LOWER_SET: <>
+ 2145 														fattr_first_is: void (), <./dcerpc/idl_compiler/checker.c 754>
+ 2146 															AST_REF_SET: <>
+ 2147 															ASTP_chase_ptr_to_type: 2069
+ 2148 															assert: <>
+ 2149 															type_is_index: <>
+ 2150 															CHECKER_error: 1763
+ 2151 															NAMETABLE_id_to_string: 1039
+ 2152 														fattr_last_is: void (), <./dcerpc/idl_compiler/checker.c 832>
+ 2153 															AST_REF_SET: <>
+ 2154 															ASTP_chase_ptr_to_type: 2069
+ 2155 															assert: <>
+ 2156 															type_is_index: <>
+ 2157 															CHECKER_error: 1763
+ 2158 															NAMETABLE_id_to_string: 1039
+ 2159 														fattr_length_is: void (), <./dcerpc/idl_compiler/checker.c 910>
+ 2160 															AST_REF_SET: <>
+ 2161 															ASTP_chase_ptr_to_type: 2069
+ 2162 															assert: <>
+ 2163 															type_is_index: <>
+ 2164 															CHECKER_error: 1763
+ 2165 															NAMETABLE_id_to_string: 1039
+ 2166 														fattr_min_is: void (), <./dcerpc/idl_compiler/checker.c 988>
+ 2167 															AST_REF_SET: <>
+ 2168 															ASTP_chase_ptr_to_type: 2069
+ 2169 															CHECKER_warning: 1846
+ 2170 															type_is_array: <>
+ 2171 															AST_FIXED_LOWER_SET: <>
+ 2172 															CHECKER_error: 1763
+ 2173 															assert: <>
+ 2174 															type_is_index: <>
+ 2175 															NAMETABLE_id_to_string: 1039
+ 2176 														fattr_max_is: void (), <./dcerpc/idl_compiler/checker.c 1114>
+ 2177 															AST_REF_SET: <>
+ 2178 															ASTP_chase_ptr_to_type: 2069
+ 2179 															type_is_array: <>
+ 2180 															AST_FIXED_UPPER_SET: <>
+ 2181 															CHECKER_error: 1763
+ 2182 															assert: <>
+ 2183 															type_is_index: <>
+ 2184 															NAMETABLE_id_to_string: 1039
+ 2185 														fattr_size_is: void (), <./dcerpc/idl_compiler/checker.c 1228>
+ 2186 															AST_REF_SET: <>
+ 2187 															ASTP_chase_ptr_to_type: 2069
+ 2188 															type_is_array: <>
+ 2189 															AST_FIXED_UPPER_SET: <>
+ 2190 															CHECKER_error: 1763
+ 2191 															assert: <>
+ 2192 															type_is_index: <>
+ 2193 															NAMETABLE_id_to_string: 1039
+ 2194 											pipe_check: void (), <./dcerpc/idl_compiler/checker.c 4157>
+ 2195 												CHECKER_error: 1763
+ 2196 												pipe_base_type: void (), <./dcerpc/idl_compiler/checker.c 4076>
+ 2197 													type_is_anonymous: <>
+ 2198 													type_check: 1892
+ 2199 													CHECKER_error: 1763
+ 2200 													AST_CONTEXT_RD_SET: <>
+ 2201 													AST_CONFORMANT_SET: <>
+ 2202 													type_is_function: <>
+ 2203 													FE_TEST: <>
+ 2204 													AST_LOCAL_SET: <>
+ 2205 													CHK_pipe_base_type_cs: void (), <./dcerpc/idl_compiler/chkichar.c 358>
+ 2206 														FE_TEST: <>
+ 2207 														CHECKER_error: 1763
+ 2208 											pipe: <>
+ 2209 											ptr_check: void (), <./dcerpc/idl_compiler/checker.c 4059>
+ 2210 												ptr_pointee_type: void (), <./dcerpc/idl_compiler/checker.c 3982>
+ 2211 													CHECKER_error: 1763
+ 2212 													AST_CONTEXT_RD_SET: <>
+ 2213 													AST_DEF_AS_TAG_SET: <>
+ 2214 													AST_LOCAL_SET: <>
+ 2215 													AST_CONTEXT_SET: <>
+ 2216 													function_ptr_check: void (), <./dcerpc/idl_compiler/checker.c 3945>
+ 2217 														AST_LOCAL_SET: <>
+ 2218 														CHECKER_error: 1763
+ 2219 														fp_param_check: void (), <./dcerpc/idl_compiler/checker.c 3896>
+ 2220 															param_follow_ref_ptr: 1512
+ 2221 															param_type: 1888
+ 2222 															fattr_check: 2128
+ 2223 															param_size: void (), <./dcerpc/idl_compiler/checker.c 1831>
+ 2224 																AST_LOCAL_SET: <>
+ 2225 																type_is_array: <>
+ 2226 																AST_CONFORMANT_SET: <>
+ 2227 																AST_VARYING_SET: <>
+ 2228 																AST_STRING_SET: <>
+ 2229 																NAMETABLE_id_to_string: 1039
+ 2230 																CHECKER_error: 1763
+ 2231 																AST_PTR_SET: <>
+ 2232 																AST_UNIQUE_SET: <>
+ 2233 																AST_IN_SET: <>
+ 2234 																ASTP_chase_ptr_to_type: 2069
+ 2235 																FE_TEST: <>
+ 2236 															param_struct: void (), <./dcerpc/idl_compiler/checker.c 1993>
+ 2237 																type_xmit_type: 1893
+ 2238 																AST_OUT_SET: <>
+ 2239 																AST_CONFORMANT_SET: <>
+ 2240 																CHECKER_error: 1763
+ 2241 															param_pipe: void (), <./dcerpc/idl_compiler/checker.c 2021>
+ 2242 																type_xmit_type: 1893
+ 2243 																AST_PTR_SET: <>
+ 2244 																CHECKER_error: 1763
+ 2245 															param_string: void (), <./dcerpc/idl_compiler/checker.c 2084>
+ 2246 																AST_STRING0_SET: <>
+ 2247 																type_is_v1_string: 1918
+ 2248 																CHECKER_error: 1763
+ 2249 																AST_SMALL_SET: <>
+ 2250 																AST_STRING_SET: <>
+ 2251 																KEYWORDS_lookup_text: 1865
+ 2252 																AST_attribute_to_token: 1866
+ 2253 																ASTP_chase_ptr_to_type: 2069
+ 2254 																AST_CONFORMANT_SET: <>
+ 2255 																type_is_string: 1516
+ 2256 															param_pointer: void (), <./dcerpc/idl_compiler/checker.c 2153>
+ 2257 																AST_OUT_SET: <>
+ 2258 																AST_IN_SET: <>
+ 2259 																AST_PTR_SET: <>
+ 2260 																CHECKER_error: 1763
+ 2261 																AST_UNIQUE_SET: <>
+ 2262 																AST_REF_SET: <>
+ 2263 																CHECKER_warning: 1846
+ 2264 																instance_has_array_attr: <>
+ 2265 																AST_STRING_SET: <>
+ 2266 																array_check: 2014
+ 2267 															param_small: void (), <./dcerpc/idl_compiler/checker.c 2272>
+ 2268 																AST_SMALL_SET: <>
+ 2269 																CHECKER_error: 1763
+ 2270 																type_is_array_np: <>
+ 2271 																AST_CONFORMANT_SET: <>
+ 2272 																array_is_conformant_upper: 1939
+ 2273 																AST_VARYING_SET: <>
+ 2274 																instance_is_varying_upper: 2105
+ 2275 																array_is_large: 1942
+ 2276 															param_context: void (), <./dcerpc/idl_compiler/checker.c 2337>
+ 2277 																param_follow_ref_ptr: 1512
+ 2278 																AST_CONTEXT_SET: <>
+ 2279 																AST_CONTEXT_RD_SET: <>
+ 2280 																CHECKER_error: 1763
+ 2281 																AST_UNIQUE_SET: <>
+ 2282 																AST_PTR_SET: <>
+ 2283 															param_varying: void (), <./dcerpc/idl_compiler/checker.c 2391>
+ 2284 																AST_LOCAL_SET: <>
+ 2285 																AST_VARYING_SET: <>
+ 2286 																instance_is_varying_upper: 2105
+ 2287 																CHECKER_warning: 1846
+ 2288 															fp_param_handle: void (), <./dcerpc/idl_compiler/checker.c 3865>
+ 2289 																type_xmit_type: 1893
+ 2290 																AST_LOCAL_SET: <>
+ 2291 																CHECKER_error: 1763
+ 2292 																AST_HANDLE_SET: <>
+ 2293 																CHECKER_warning: 1846
+ 2294 											CHECKER_error: 1763
+ 2295 											union_check: void (), <./dcerpc/idl_compiler/checker.c 4783>
+ 2296 												union_discrim_type: void (), <./dcerpc/idl_compiler/checker.c 4656>
+ 2297 													type_is_index: <>
+ 2298 													type_is_enum: <>
+ 2299 													CHECKER_error: 1763
+ 2300 												union_case_labels: void (), <./dcerpc/idl_compiler/checker.c 4681>
+ 2301 													dup: <>
+ 2302 													error: 330
+ 2303 													CHECKER_error: 1763
+ 2304 												CHECKER_warning: 1846
+ 2305 												arm_check: void (), <./dcerpc/idl_compiler/checker.c 4623>
+ 2306 													arm_type: void (), <./dcerpc/idl_compiler/checker.c 4296>
+ 2307 														type_is_anonymous: <>
+ 2308 														type_check: 1892
+ 2309 														AST_STRING_SET: <>
+ 2310 														AST_STRING0_SET: <>
+ 2311 														AST_UNIQUE_SET: <>
+ 2312 														AST_REF_SET: <>
+ 2313 														AST_SMALL_SET: <>
+ 2314 														AST_CONTEXT_SET: <>
+ 2315 														AST_PTR_SET: <>
+ 2316 														CHECKER_error: 1763
+ 2317 														type_xmit_type: 1893
+ 2318 														AST_CONFORMANT_SET: <>
+ 2319 														NAMETABLE_id_to_string: 1039
+ 2320 														AST_CONTEXT_RD_SET: <>
+ 2321 														AST_LOCAL_SET: <>
+ 2322 														type_is_function: <>
+ 2323 														FE_TEST: <>
+ 2324 														CHECKER_warning: 1846
+ 2325 													arm_string: void (), <./dcerpc/idl_compiler/checker.c 4405>
+ 2326 														AST_STRING0_SET: <>
+ 2327 														type_is_v1_string: 1918
+ 2328 														CHECKER_error: 1763
+ 2329 														AST_SMALL_SET: <>
+ 2330 														AST_STRING_SET: <>
+ 2331 														type_is_string: 1516
+ 2332 														KEYWORDS_lookup_text: 1865
+ 2333 														AST_attribute_to_token: 1866
+ 2334 													arm_pointer: void (), <./dcerpc/idl_compiler/checker.c 4464>
+ 2335 														type_xmit_type: 1893
+ 2336 														FE_TEST: <>
+ 2337 														AST_REF_SET: <>
+ 2338 														CHECKER_error: 1763
+ 2339 														AST_UNIQUE_SET: <>
+ 2340 														AST_PTR_SET: <>
+ 2341 														CHECKER_warning: 1846
+ 2342 													arm_small: void (), <./dcerpc/idl_compiler/checker.c 4551>
+ 2343 														type_is_array_np: <>
+ 2344 														AST_SMALL_SET: <>
+ 2345 														array_is_large: 1942
+ 2346 														CHECKER_error: 1763
+ 2347 													arm_context: void (), <./dcerpc/idl_compiler/checker.c 4582>
+ 2348 														AST_CONTEXT_SET: <>
+ 2349 														CHECKER_error: 1763
+ 2350 														AST_UNIQUE_SET: <>
+ 2351 														AST_CONTEXT_RD_SET: <>
+ 2352 														AST_PTR_SET: <>
+ 2353 													clabel_check: void (), <./dcerpc/idl_compiler/checker.c 4281>
+ 2354 														clabel_value: void (), <./dcerpc/idl_compiler/checker.c 4200>
+ 2355 															const_is_integer: <>
+ 2356 															const_is_enum: <>
+ 2357 															CHECKER_error: 1763
+ 2358 															type_is_integer: <>
+ 2359 															type_is_enum: <>
+ 2360 															NAMETABLE_id_to_string: 1039
+ 2361 															strcmp: <>
+ 2362 											NAMETABLE_id_to_string: 1039
+ 2363 											error: 330
+ 2364 										type_xmit_type: 1893
+ 2365 										AST_LOCAL_SET: <>
+ 2366 										AST_CONTEXT_RD_SET: <>
+ 2367 										AST_CONTEXT_SET: <>
+ 2368 										AST_STRING_SET: <>
+ 2369 										AST_STRING0_SET: <>
+ 2370 										AST_UNIQUE_SET: <>
+ 2371 										AST_SMALL_SET: <>
+ 2372 										FE_TEST: <>
+ 2373 										CHECKER_warning: 1846
+ 2374 									fattr_check: 2128
+ 2375 									fattr_param_check: void (), <./dcerpc/idl_compiler/checker.c 1444>
+ 2376 										fattr_param_conformant: void (), <./dcerpc/idl_compiler/checker.c 1344>
+ 2377 											AST_LOCAL_SET: <>
+ 2378 											AST_IN_SET: <>
+ 2379 											CHECKER_error: 1763
+ 2380 										fattr_param_varying: void (), <./dcerpc/idl_compiler/checker.c 1394>
+ 2381 											AST_LOCAL_SET: <>
+ 2382 											AST_IN_SET: <>
+ 2383 											CHECKER_error: 1763
+ 2384 									NAMETABLE_id_to_string: 1039
+ 2385 									CHECKER_error: 1763
+ 2386 									param_size: 2223
+ 2387 									param_struct: 2236
+ 2388 									param_pipe: 2241
+ 2389 									param_in_line: void (), <./dcerpc/idl_compiler/checker.c 2049>
+ 2390 										AST_IN_LINE_SET: <>
+ 2391 										AST_OUT_OF_LINE_SET: <>
+ 2392 										CHECKER_acf_error: 1771
+ 2393 										type_is_scalar: <>
+ 2394 										STRTAB_str_to_string: 1038
+ 2395 										NAMETABLE_id_to_string: 1039
+ 2396 										CHECKER_acf_warning: 1779
+ 2397 									param_string: 2245
+ 2398 									param_pointer: 2256
+ 2399 									param_small: 2267
+ 2400 									param_context: 2276
+ 2401 									param_varying: 2283
+ 2402 									param_direction: void (), <./dcerpc/idl_compiler/checker.c 2424>
+ 2403 										type_xmit_type: 1893
+ 2404 										AST_LOCAL_SET: <>
+ 2405 										AST_IN_SET: <>
+ 2406 										AST_OUT_SET: <>
+ 2407 										CHECKER_error: 1763
+ 2408 										AST_IN_SHAPE_SET: <>
+ 2409 										AST_OUT_SHAPE_SET: <>
+ 2410 										ASTP_chase_ptr_to_kind: 1376
+ 2411 									param_comm_status: void (), <./dcerpc/idl_compiler/checker.c 2521>
+ 2412 										AST_COMM_STATUS_SET: <>
+ 2413 										AST_OUT_SET: <>
+ 2414 										CHECKER_error: 1763
+ 2415 										acf_keyword_lookup: <>
+ 2416 										AST_FAULT_STATUS_SET: <>
+ 2417 										NAMETABLE_id_to_string: 1039
+ 2418 										strcmp: <>
+ 2419 									param_switch_is: void (), <./dcerpc/idl_compiler/checker.c 2583>
+ 2420 										ASTP_chase_ptr_to_kind: 1376
+ 2421 										CHECKER_error: 1763
+ 2422 									CHK_param_cs: void (), <./dcerpc/idl_compiler/chkichar.c 112>
+ 2423 										AST_IN_SET: <>
+ 2424 										FE_TEST: <>
+ 2425 										AST_CS_STAG_SET: <>
+ 2426 										CHECKER_acf_error: 1771
+ 2427 										AST_OUT_SET: <>
+ 2428 										AST_CS_RTAG_SET: <>
+ 2429 										CHECKER_error: 1763
+ 2430 										KEYWORDS_lookup_text: 1865
+ 2431 										AST_attribute_to_token: 1866
+ 2432 										AST_CS_DRTAG_SET: <>
+ 2433 										AST_PTR_SET: <>
+ 2434 										AST_UNIQUE_SET: <>
+ 2435 										AST_HANDLE_SET: <>
+ 2436 										AST_STRING_SET: <>
+ 2437 										CHECKER_acf_warning: 1779
+ 2438 								param_check_non_handle: void (), <./dcerpc/idl_compiler/checker.c 2732>
+ 2439 									param_follow_ref_ptr: 1512
+ 2440 									AST_LOCAL_SET: <>
+ 2441 									CHECKER_error: 1763
+ 2442 							type_check: 1892
+ 2443 							error: 330
+ 2444 						AST_V1_ENUM_SET: <>
+ 2445 						CHECKER_error: 1763
+ 2446 						CHECKER_warning: 1846
+ 2447 						AST_OBJECT_SET: <>
+ 2448 						ASTP_IF_AF_SET: <>
+ 2449 					AST_SET_AUTO_HANDLE: <>
+ 2450 				message_print: 331
+ 2451 				set_name_for_errors: 1206
+ 2452 			print_errors: 1037
+ 2453 			open_be_files: boolean (), <./dcerpc/idl_compiler/driver.c 219>
+ 2454 				message_print: 331
+ 2455 				CALL: <>
+ 2456 				FILE_create: boolean (), <./dcerpc/idl_compiler/files.c 140>
+ 2457 					fopen: <>
+ 2458 					strerror: <>
+ 2459 					error_list: 1202
+ 2460 				fprintf: <>
+ 2461 				AST_LOCAL_SET: <>
+ 2462 				AST_ENCODE_SET: <>
+ 2463 				AST_DECODE_SET: <>
+ 2464 				getenv: <>
+ 2465 			FILE_parse: 1117
+ 2466 			strlcat: 17
+ 2467 			BE_main: boolean (), <./dcerpc/idl_compiler/mtsbacke.c 331>
+ 2468 				be_init: void (), <./dcerpc/idl_compiler/mtsbacke.c 125>
+ 2469 					getenv: <>
+ 2470 					BE_get_type_node: AST_type_n_t * (), <./dcerpc/idl_compiler/mtsbacke.c 426>
+ 2471 						BE_ctx_malloc: 1158
+ 2472 				IR_gen_irep: boolean (), <./dcerpc/idl_compiler/irepgen.c 2595>
+ 2473 					IR_gen_param_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2536>
+ 2474 						IR_init_scope: IR_scope_ctx_t * (), <./dcerpc/idl_compiler/irepscp.c 223>
+ 2475 							NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2476 							NEW_VEC: <>
+ 2477 						IR_INIT_NODE: <>
+ 2478 						FE_TEST: <>
+ 2479 						IR_gen_irep_tup: IR_tup_n_t * (), <./dcerpc/idl_compiler/irepgen.c 193>
+ 2480 							NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2481 							IR_insert_irep_tup: void (), <./dcerpc/idl_compiler/irepgen.c 174>
+ 2482 						IR_gen_type_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2398>
+ 2483 							IR_in_rep_as: <>
+ 2484 							IR_gen_repr_as_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2100>
+ 2485 								IR_gen_irep_tup: 2479
+ 2486 								IR_INIT_NODE: <>
+ 2487 								IR_process_tup: void (), <./dcerpc/idl_compiler/irepscp.c 268>
+ 2488 									IR_push_scope: void (), <./dcerpc/idl_compiler/irepscp.c 117>
+ 2489 										NEW_VEC: <>
+ 2490 										FREE: <>
+ 2491 									IR_pop_scope: void (), <./dcerpc/idl_compiler/irepscp.c 156>
+ 2492 									IR_push_type: void (), <./dcerpc/idl_compiler/irepscp.c 169>
+ 2493 										NEW_VEC: <>
+ 2494 										FREE: <>
+ 2495 									IR_in_struct: <>
+ 2496 									IR_pop_type: void (), <./dcerpc/idl_compiler/irepscp.c 202>
+ 2497 								IR_gen_repr_as_type_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2050>
+ 2498 									IR_gen_irep_tup: 2479
+ 2499 									IR_process_tup: 2487
+ 2500 									IR_gen_type_rep: 2482
+ 2501 							IR_gen_xmit_as_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2001>
+ 2502 								IR_gen_irep_tup: 2479
+ 2503 								IR_INIT_NODE: <>
+ 2504 								IR_process_tup: 2487
+ 2505 								IR_gen_xmit_as_type_rep: void (), <./dcerpc/idl_compiler/irepgen.c 1950>
+ 2506 									IR_gen_irep_tup: 2479
+ 2507 									IR_process_tup: 2487
+ 2508 									IR_gen_type_rep: 2482
+ 2509 							IR_in_cs_char: <>
+ 2510 							IR_gen_cs_char_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2194>
+ 2511 								IR_gen_irep_tup: 2479
+ 2512 								IR_INIT_NODE: <>
+ 2513 								IR_process_tup: 2487
+ 2514 								IR_gen_cs_char_type_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2154>
+ 2515 									IR_gen_irep_tup: 2479
+ 2516 									IR_process_tup: 2487
+ 2517 									IR_gen_type_rep: 2482
+ 2518 							IR_gen_scalar_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2352>
+ 2519 								IR_gen_irep_tup: 2479
+ 2520 								FE_TEST: <>
+ 2521 							AST_STRING0_SET: <>
+ 2522 							IR_gen_multid_aos: void (), <./dcerpc/idl_compiler/irepgen.c 1755>
+ 2523 								AST_type_node: 1162
+ 2524 								AST_array_node: AST_array_n_t * (), <./dcerpc/idl_compiler/astp_cpx.c 286>
+ 2525 									NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2526 									ASTP_set_fe_info: 1157
+ 2527 								AST_array_index_node: AST_array_index_n_t * (), <./dcerpc/idl_compiler/astp_cpx.c 253>
+ 2528 									NEW_VEC: <>
+ 2529 									ASTP_set_fe_info: 1157
+ 2530 								AST_CLR_STRING0: <>
+ 2531 								AST_SET_STRING0: <>
+ 2532 								IR_gen_type_rep: 2482
+ 2533 							IR_STRING_ARRAY: <>
+ 2534 							IR_gen_array_rep: void (), <./dcerpc/idl_compiler/irepgen.c 1627>
+ 2535 								IR_cur_scope: <>
+ 2536 								IR_gen_ptr_tup: IR_tup_n_t * (), <./dcerpc/idl_compiler/irepgen.c 900>
+ 2537 									AST_UNIQUE_SET: <>
+ 2538 									IR_gen_irep_tup: 2479
+ 2539 									AST_PTR_SET: <>
+ 2540 									IR_cur_scope: <>
+ 2541 									AST_IN_SET: <>
+ 2542 									IR_under_pointer: <>
+ 2543 									IR_STRING_ARRAY: <>
+ 2544 									IR_STRINGIFIED: <>
+ 2545 									IR_ARRAYIFIED: <>
+ 2546 								IR_process_tup: 2487
+ 2547 								IR_gen_irep_tup: 2479
+ 2548 								IR_gen_array_tup: IR_tup_n_t * (), <./dcerpc/idl_compiler/irepgen.c 974>
+ 2549 									AST_CONFORMANT_SET: <>
+ 2550 									AST_VARYING_SET: <>
+ 2551 									IR_gen_irep_tup: 2479
+ 2552 								IR_gen_bound_tups: IR_tup_n_t * (), <./dcerpc/idl_compiler/irepgen.c 1047>
+ 2553 									IR_gen_irep_tup: 2479
+ 2554 									IR_under_struct: <>
+ 2555 									IR_field_num: unsigned long (), <./dcerpc/idl_compiler/irepgen.c 341>
+ 2556 										IR_INIT_INFO: <>
+ 2557 									IR_param_num: unsigned long (), <./dcerpc/idl_compiler/irepgen.c 307>
+ 2558 										INTERNAL_ERROR: <>
+ 2559 									IR_bound_early: boolean (), <./dcerpc/idl_compiler/irepgen.c 1019>
+ 2560 										IR_under_struct: <>
+ 2561 										IR_field_num: 2555
+ 2562 										IR_param_num: 2557
+ 2563 									AST_CONFORMANT_SET: <>
+ 2564 									IR_parent_scope: <>
+ 2565 									INTERNAL_ERROR: <>
+ 2566 								AST_VARYING_SET: <>
+ 2567 								IR_gen_limit_tups: IR_tup_n_t * (), <./dcerpc/idl_compiler/irepgen.c 1243>
+ 2568 									printf: <>
+ 2569 									IR_gen_irep_tup: 2479
+ 2570 									IR_under_struct: <>
+ 2571 									IR_field_num: 2555
+ 2572 									IR_param_num: 2557
+ 2573 									IR_bound_early: 2559
+ 2574 									assert: <>
+ 2575 								IR_gen_type_rep: 2482
+ 2576 								IR_gen_flat_array_rep: void (), <./dcerpc/idl_compiler/irepgen.c 1521>
+ 2577 									AST_STRING_SET: <>
+ 2578 									AST_STRING0_SET: <>
+ 2579 									IR_gen_array_tup: 2548
+ 2580 									IR_process_tup: 2487
+ 2581 									IR_gen_irep_tup: 2479
+ 2582 									IR_gen_bound_tups: 2552
+ 2583 									AST_VARYING_SET: <>
+ 2584 									IR_gen_limit_tups: 2567
+ 2585 									IR_gen_type_rep: 2482
+ 2586 							IR_gen_struct_rep: void (), <./dcerpc/idl_compiler/irepgen.c 552>
+ 2587 								AST_SELF_POINTER_SET: <>
+ 2588 								AST_DEF_AS_TAG_SET: <>
+ 2589 								IR_gen_irep_tup: 2479
+ 2590 								IR_INIT_NODE: <>
+ 2591 								IR_process_tup: 2487
+ 2592 								IR_gen_struct_type_rep: void (), <./dcerpc/idl_compiler/irepgen.c 383>
+ 2593 									IR_gen_irep_tup: 2479
+ 2594 									IR_process_tup: 2487
+ 2595 									AST_CONFORMANT_SET: <>
+ 2596 									IR_in_struct: <>
+ 2597 									FE_TEST: <>
+ 2598 									AST_UNALIGN_SET: <>
+ 2599 									IR_gen_alignment: IR_tup_n_t * (), <./dcerpc/idl_compiler/irepgen.c 283>
+ 2600 										IR_gen_irep_tup: 2479
+ 2601 									IR_INIT_INFO: <>
+ 2602 									IR_cur_tup_p: IR_tup_n_t * (), <./dcerpc/idl_compiler/irepgen.c 150>
+ 2603 									IR_gen_type_rep: 2482
+ 2604 									IR_gen_struct_type_rep: 2592
+ 2605 									assert: <>
+ 2606 									IR_free_irep_tup: void (), <./dcerpc/idl_compiler/irepgen.c 230>
+ 2607 										INTERNAL_ERROR: <>
+ 2608 										FREE: <>
+ 2609 								AST_IN_SET: <>
+ 2610 								IR_under_pointer: <>
+ 2611 							IR_gen_pipe_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2284>
+ 2612 								IR_gen_irep_tup: 2479
+ 2613 								IR_INIT_NODE: <>
+ 2614 								IR_process_tup: 2487
+ 2615 								IR_gen_pipe_type_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2244>
+ 2616 									pipe: <>
+ 2617 									IR_gen_irep_tup: 2479
+ 2618 									IR_process_tup: 2487
+ 2619 									IR_gen_type_rep: 2482
+ 2620 							AST_CONTEXT_SET: <>
+ 2621 							INTERNAL_ERROR: <>
+ 2622 							IR_gen_context_rep: void (), <./dcerpc/idl_compiler/irepgen.c 2329>
+ 2623 								IR_gen_irep_tup: 2479
+ 2624 							AST_CONTEXT_RD_SET: <>
+ 2625 							IR_gen_interface_rep: void (), <./dcerpc/idl_compiler/irepgen.c 880>
+ 2626 								IR_gen_irep_tup: 2479
+ 2627 							IR_gen_pointer_rep: void (), <./dcerpc/idl_compiler/irepgen.c 1829>
+ 2628 								IR_gen_ptr_tup: 2536
+ 2629 								IR_process_tup: 2487
+ 2630 								FE_TEST: <>
+ 2631 								FE_SET: <>
+ 2632 								IR_gen_type_rep: 2482
+ 2633 								AST_CONTEXT_RD_SET: <>
+ 2634 								IR_parent_scope: <>
+ 2635 								IR_gen_irep_tup: 2479
+ 2636 							IR_gen_disc_union_rep: void (), <./dcerpc/idl_compiler/irepgen.c 805>
+ 2637 								AST_SELF_POINTER_SET: <>
+ 2638 								AST_DEF_AS_TAG_SET: <>
+ 2639 								IR_gen_irep_tup: 2479
+ 2640 								IR_under_struct: <>
+ 2641 								IR_field_num: 2555
+ 2642 								IR_param_num: 2557
+ 2643 								IR_INIT_NODE: <>
+ 2644 								IR_process_tup: 2487
+ 2645 								IR_gen_union_type_rep: void (), <./dcerpc/idl_compiler/irepgen.c 643>
+ 2646 									IR_gen_irep_tup: 2479
+ 2647 									IR_process_tup: 2487
+ 2648 									NEW_VEC: <>
+ 2649 									INTERNAL_ERROR: <>
+ 2650 									qsort: <>
+ 2651 									IR_case_info_compare: int (), <./dcerpc/idl_compiler/irepgen.c 624>
+ 2652 									IR_gen_type_rep: 2482
+ 2653 									FREE: <>
+ 2654 						IR_finish_scope: void (), <./dcerpc/idl_compiler/irepscp.c 253>
+ 2655 							FREE: <>
+ 2656 				print_errors: 1037
+ 2657 				IR_dump_irep: <>
+ 2658 				DDBE_main: boolean (), <./dcerpc/idl_compiler/ddbe.c 4476>
+ 2659 					DDBE_init_vectors: void (), <./dcerpc/idl_compiler/ddbe.c 981>
+ 2660 						NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2661 						DDBE_VEC_SENTINEL: <>
+ 2662 						DDBE_VEC_INIT: <>
+ 2663 					DDBE_init_tags: void (), <./dcerpc/idl_compiler/ddbe.c 1015>
+ 2664 						NAMETABLE_add_id: 1127
+ 2665 					DDBE_gen_vector_reps: void (), <./dcerpc/idl_compiler/ddbe.c 4055>
+ 2666 						DDBE_operation_info: void (), <./dcerpc/idl_compiler/ddbe.c 1226>
+ 2667 							NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2668 						DDBE_oper_in_out_opt: boolean (), <./dcerpc/idl_compiler/ddbe.c 3891>
+ 2669 							AST_HAS_IN_PIPES_SET: <>
+ 2670 							AST_HAS_OUT_PIPES_SET: <>
+ 2671 							DDBE_ALLOCATE: <>
+ 2672 							AST_IN_SET: <>
+ 2673 							AST_OUT_SET: <>
+ 2674 							DDBE_XMIT_REP: <>
+ 2675 							FE_TEST: <>
+ 2676 							IR_NO_IREP: <>
+ 2677 						IR_init_scope: 2474
+ 2678 						DDBE_gen_param_reps: DDBE_vec_rep_t * (), <./dcerpc/idl_compiler/ddbe.c 3351>
+ 2679 							IR_NO_IREP: <>
+ 2680 							AST_ADD_COMM_STATUS_SET: <>
+ 2681 							AST_ADD_FAULT_STATUS_SET: <>
+ 2682 							DDBE_VEC_INIT: <>
+ 2683 							NAMETABLE_id_to_string: 1039
+ 2684 							sprintf: <>
+ 2685 							DDBE_comment_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 511>
+ 2686 								DDBE_NEW_ENTRY: <>
+ 2687 							DDBE_long_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 490>
+ 2688 								DDBE_NEW_ENTRY: <>
+ 2689 							DDBE_type_indirect_end: void (), <./dcerpc/idl_compiler/ddbe.c 1344>
+ 2690 								INTERNAL_ERROR: <>
+ 2691 								FREE: <>
+ 2692 								DDBE_pop_indirection_scope: void (), <./dcerpc/idl_compiler/ddbe.c 1173>
+ 2693 									INTERNAL_ERROR: <>
+ 2694 									FREE: <>
+ 2695 							DDBE_tag_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 433>
+ 2696 								DDBE_NEW_ENTRY: <>
+ 2697 							INTERNAL_ERROR: <>
+ 2698 							DDBE_op_array_bounds: void (), <./dcerpc/idl_compiler/ddbe.c 2087>
+ 2699 								NAMETABLE_id_to_string: 1039
+ 2700 								sprintf: <>
+ 2701 								DDBE_comment_vec_entry: 2685
+ 2702 								DDBE_byte_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 451>
+ 2703 									DDBE_NEW_ENTRY: <>
+ 2704 							DDBE_op_array_end: void (), <./dcerpc/idl_compiler/ddbe.c 2434>
+ 2705 								IR_process_tup: 2487
+ 2706 								DDBE_pop_indirection_scope: 2692
+ 2707 							DDBE_op_bound: void (), <./dcerpc/idl_compiler/ddbe.c 2158>
+ 2708 								DDBE_tag_vec_entry: 2695
+ 2709 								DDBE_long_vec_entry: 2687
+ 2710 								DDBE_func_code_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 2122>
+ 2711 									STRTAB_add_string: 1126
+ 2712 									DDBE_expr_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 528>
+ 2713 										DDBE_NEW_ENTRY: <>
+ 2714 								NAMETABLE_id_to_string: 1039
+ 2715 								sprintf: <>
+ 2716 								STRTAB_add_string: 1126
+ 2717 								DDBE_expr_vec_entry: 2712
+ 2718 								DDBE_byte_vec_entry: 2702
+ 2719 								INTERNAL_ERROR: <>
+ 2720 								IR_under_struct: <>
+ 2721 								ASTP_chase_ptr_to_type: 2069
+ 2722 								DDBE_scalar_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 648>
+ 2723 									NAMETABLE_id_to_string: 1039
+ 2724 									strlcat: 17
+ 2725 									DDBE_NEW_ENTRY: <>
+ 2726 							DDBE_pad_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 611>
+ 2727 								DDBE_NEW_ENTRY: <>
+ 2728 							IR_cur_scope: <>
+ 2729 							DDBE_op_array: void (), <./dcerpc/idl_compiler/ddbe.c 1995>
+ 2730 								IR_cur_scope: <>
+ 2731 								NAMETABLE_id_to_string: 1039
+ 2732 								sprintf: <>
+ 2733 								DDBE_expr_vec_entry: 2712
+ 2734 								IR_field_expr: STRTAB_str_t (), <./dcerpc/idl_compiler/irepscp.c 497>
+ 2735 									NAMETABLE_id_to_string: 1039
+ 2736 									IR_in_scope: int (), <./dcerpc/idl_compiler/irepscp.c 369>
+ 2737 									IR_in_scope_parent: int (), <./dcerpc/idl_compiler/irepscp.c 390>
+ 2738 									INTERNAL_ERROR: <>
+ 2739 									STRTAB_add_string: 1126
+ 2740 									strlcat: 17
+ 2741 								IR_process_tup: 2487
+ 2742 								DDBE_push_indirection_scope: void (), <./dcerpc/idl_compiler/ddbe.c 1141>
+ 2743 									INTERNAL_ERROR: <>
+ 2744 									NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2745 								DDBE_noop_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 630>
+ 2746 									DDBE_NEW_ENTRY: <>
+ 2747 								DDBE_properties_byte: void (), <./dcerpc/idl_compiler/ddbe.c 1378>
+ 2748 									strlcpy: 9
+ 2749 									FE_TEST: <>
+ 2750 									strlcat: 17
+ 2751 									STRTAB_add_string: 1126
+ 2752 									DDBE_expr_vec_entry: 2712
+ 2753 								DDBE_reference_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 693>
+ 2754 									DDBE_NEW_ENTRY: <>
+ 2755 								IR_in_array: <>
+ 2756 								IR_parent_scope: <>
+ 2757 							DDBE_op_conformant_info: void (), <./dcerpc/idl_compiler/ddbe.c 2472>
+ 2758 								IR_process_tup: 2487
+ 2759 								DDBE_push_indirection_scope: 2742
+ 2760 								DDBE_noop_vec_entry: 2745
+ 2761 								DDBE_reference_vec_entry: 2753
+ 2762 								INTERNAL_ERROR: <>
+ 2763 							AST_OUT_SET: <>
+ 2764 							AST_IN_SET: <>
+ 2765 							DDBE_op_cs_char: void (), <./dcerpc/idl_compiler/ddbe.c 3035>
+ 2766 								NAMETABLE_id_to_string: 1039
+ 2767 								IR_process_tup: 2487
+ 2768 								sprintf: <>
+ 2769 								DDBE_comment_vec_entry: 2685
+ 2770 								STRTAB_add_string: 1126
+ 2771 								DDBE_expr_vec_entry: 2712
+ 2772 								IR_parent_scope: <>
+ 2773 								IR_cur_inst: <>
+ 2774 								IR_field_expr: 2734
+ 2775 								DDBE_noop_vec_entry: 2745
+ 2776 								DDBE_tag_vec_entry: 2695
+ 2777 								DDBE_reference_vec_entry: 2753
+ 2778 								DDBE_properties_byte: 2747
+ 2779 								DDBE_indirect_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 718>
+ 2780 									DDBE_NEW_ENTRY: <>
+ 2781 								DDBE_pad_vec_entry: 2726
+ 2782 								DDBE_skip_to_tup: void (), <./dcerpc/idl_compiler/ddbe.c 1101>
+ 2783 								DDBE_name_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 568>
+ 2784 									DDBE_NEW_ENTRY: <>
+ 2785 								NAMETABLE_add_id: 1127
+ 2786 							IR_process_tup: 2487
+ 2787 							DDBE_op_disc_union_begin: void (), <./dcerpc/idl_compiler/ddbe.c 1684>
+ 2788 								NAMETABLE_id_to_string: 1039
+ 2789 								IR_under_type: int (), <./dcerpc/idl_compiler/irepscp.c 474>
+ 2790 								INTERNAL_ERROR: <>
+ 2791 								sprintf: <>
+ 2792 								DDBE_comment_vec_entry: 2685
+ 2793 								DDBE_type_info_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 548>
+ 2794 									DDBE_NEW_ENTRY: <>
+ 2795 								STRTAB_add_string: 1126
+ 2796 								DDBE_expr_vec_entry: 2712
+ 2797 								DDBE_indirect_vec_entry: 2779
+ 2798 								DDBE_scalar_vec_entry: 2722
+ 2799 								ASTP_chase_ptr_to_type: 2069
+ 2800 								DDBE_long_vec_entry: 2687
+ 2801 								DDBE_tag_vec_entry: 2695
+ 2802 								DDBE_reference_vec_entry: 2753
+ 2803 								DDBE_properties_byte: 2747
+ 2804 								IR_cur_scope: <>
+ 2805 								DDBE_pad_vec_entry: 2726
+ 2806 								DDBE_skip_to_tup: 2782
+ 2807 								IR_process_tup: 2487
+ 2808 								IR_parent_scope: <>
+ 2809 								IR_cur_inst: <>
+ 2810 								IR_field_expr: 2734
+ 2811 							DDBE_op_disc_union_end: void (), <./dcerpc/idl_compiler/ddbe.c 1871>
+ 2812 								IR_process_tup: 2487
+ 2813 							DDBE_op_pointer: void (), <./dcerpc/idl_compiler/ddbe.c 2536>
+ 2814 								IR_cur_scope: <>
+ 2815 								NAMETABLE_id_to_string: 1039
+ 2816 								sprintf: <>
+ 2817 								DDBE_expr_vec_entry: 2712
+ 2818 								IR_field_expr: 2734
+ 2819 								AST_IGNORE_SET: <>
+ 2820 								DDBE_tag_vec_entry: 2695
+ 2821 								DDBE_skip_to_tup: 2782
+ 2822 								IR_process_tup: 2487
+ 2823 								IR_parent_scope: <>
+ 2824 								DDBE_push_indirection_scope: 2742
+ 2825 								DDBE_noop_vec_entry: 2745
+ 2826 								DDBE_properties_byte: 2747
+ 2827 								DDBE_reference_vec_entry: 2753
+ 2828 								DDBE_pad_vec_entry: 2726
+ 2829 							DDBE_op_interface: void (), <./dcerpc/idl_compiler/ddbe.c 3212>
+ 2830 								NAMETABLE_id_to_string: 1039
+ 2831 								DDBE_type_info: void (), <./dcerpc/idl_compiler/ddbe.c 1245>
+ 2832 									NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2833 									sprintf: <>
+ 2834 									NAMETABLE_add_id: 1127
+ 2835 								DDBE_push_indirection_scope: 2742
+ 2836 								sprintf: <>
+ 2837 								DDBE_comment_vec_entry: 2685
+ 2838 								DDBE_long_vec_entry: 2687
+ 2839 								DDBE_short_vec_entry: void (), <./dcerpc/idl_compiler/ddbe.c 470>
+ 2840 									DDBE_NEW_ENTRY: <>
+ 2841 								DDBE_byte_vec_entry: 2702
+ 2842 								DDBE_name_vec_entry: 2783
+ 2843 								NAMETABLE_add_id: 1127
+ 2844 								DDBE_reference_vec_entry: 2753
+ 2845 								DDBE_pop_indirection_scope: 2692
+ 2846 								IR_cur_scope: <>
+ 2847 								DDBE_expr_vec_entry: 2712
+ 2848 								IR_field_expr: 2734
+ 2849 								DDBE_tag_vec_entry: 2695
+ 2850 								DDBE_properties_byte: 2747
+ 2851 							DDBE_op_limit: void (), <./dcerpc/idl_compiler/ddbe.c 2290>
+ 2852 								DDBE_tag_vec_entry: 2695
+ 2853 								DDBE_long_vec_entry: 2687
+ 2854 								NAMETABLE_id_to_string: 1039
+ 2855 								sprintf: <>
+ 2856 								STRTAB_add_string: 1126
+ 2857 								DDBE_expr_vec_entry: 2712
+ 2858 								DDBE_byte_vec_entry: 2702
+ 2859 								DDBE_func_code_vec_entry: 2710
+ 2860 								INTERNAL_ERROR: <>
+ 2861 								IR_under_struct: <>
+ 2862 								ASTP_chase_ptr_to_type: 2069
+ 2863 								DDBE_scalar_vec_entry: 2722
+ 2864 							DDBE_op_marshall: void (), <./dcerpc/idl_compiler/ddbe.c 1416>
+ 2865 								IR_cur_scope: <>
+ 2866 								NAMETABLE_id_to_string: 1039
+ 2867 								sprintf: <>
+ 2868 								DDBE_expr_vec_entry: 2712
+ 2869 								IR_field_expr: 2734
+ 2870 								DDBE_tag_vec_entry: 2695
+ 2871 								DDBE_scalar_vec_entry: 2722
+ 2872 								DDBE_pad_vec_entry: 2726
+ 2873 							AST_SMALL_SET: <>
+ 2874 							DDBE_op_pipe_begin: void (), <./dcerpc/idl_compiler/ddbe.c 1899>
+ 2875 								NAMETABLE_id_to_string: 1039
+ 2876 								IR_process_tup: 2487
+ 2877 								sprintf: <>
+ 2878 								DDBE_comment_vec_entry: 2685
+ 2879 								DDBE_tag_vec_entry: 2695
+ 2880 								DDBE_properties_byte: 2747
+ 2881 								DDBE_indirect_vec_entry: 2779
+ 2882 								DDBE_skip_to_tup: 2782
+ 2883 							DDBE_op_pipe_end: void (), <./dcerpc/idl_compiler/ddbe.c 1968>
+ 2884 								IR_process_tup: 2487
+ 2885 							DDBE_op_pointee_end: void (), <./dcerpc/idl_compiler/ddbe.c 2626>
+ 2886 								IR_process_tup: 2487
+ 2887 								IR_cur_scope: <>
+ 2888 								DDBE_pop_indirection_scope: 2692
+ 2889 							DDBE_op_represent_as: void (), <./dcerpc/idl_compiler/ddbe.c 2841>
+ 2890 								NAMETABLE_id_to_string: 1039
+ 2891 								DDBE_tag_vec_entry: 2695
+ 2892 								DDBE_reference_vec_entry: 2753
+ 2893 								DDBE_skip_to_tup: 2782
+ 2894 								IR_process_tup: 2487
+ 2895 								sprintf: <>
+ 2896 								DDBE_comment_vec_entry: 2685
+ 2897 								STRTAB_add_string: 1126
+ 2898 								DDBE_expr_vec_entry: 2712
+ 2899 								IR_parent_scope: <>
+ 2900 								IR_cur_inst: <>
+ 2901 								IR_field_expr: 2734
+ 2902 								DDBE_noop_vec_entry: 2745
+ 2903 								DDBE_properties_byte: 2747
+ 2904 								DDBE_indirect_vec_entry: 2779
+ 2905 								DDBE_pad_vec_entry: 2726
+ 2906 								DDBE_name_vec_entry: 2783
+ 2907 								NAMETABLE_add_id: 1127
+ 2908 							DDBE_op_struct_begin: void (), <./dcerpc/idl_compiler/ddbe.c 1474>
+ 2909 								NAMETABLE_id_to_string: 1039
+ 2910 								IR_cur_scope: <>
+ 2911 								IR_under_type: 2789
+ 2912 								sprintf: <>
+ 2913 								DDBE_comment_vec_entry: 2685
+ 2914 								DDBE_type_info_vec_entry: 2793
+ 2915 								DDBE_indirect_vec_entry: 2779
+ 2916 								DDBE_tag_vec_entry: 2695
+ 2917 								AST_UNALIGN_SET: <>
+ 2918 								DDBE_reference_vec_entry: 2753
+ 2919 								DDBE_properties_byte: 2747
+ 2920 								DDBE_pad_vec_entry: 2726
+ 2921 								DDBE_skip_to_tup: 2782
+ 2922 								IR_process_tup: 2487
+ 2923 							DDBE_op_struct_end: void (), <./dcerpc/idl_compiler/ddbe.c 1626>
+ 2924 								IR_process_tup: 2487
+ 2925 								IR_cur_scope: <>
+ 2926 								IR_under_type: 2789
+ 2927 								DDBE_tag_vec_entry: 2695
+ 2928 								DDBE_type_info_vec_entry: 2793
+ 2929 							DDBE_op_transmit_as: void (), <./dcerpc/idl_compiler/ddbe.c 2650>
+ 2930 								NAMETABLE_id_to_string: 1039
+ 2931 								DDBE_tag_vec_entry: 2695
+ 2932 								DDBE_reference_vec_entry: 2753
+ 2933 								DDBE_skip_to_tup: 2782
+ 2934 								IR_process_tup: 2487
+ 2935 								sprintf: <>
+ 2936 								DDBE_comment_vec_entry: 2685
+ 2937 								DDBE_type_info_vec_entry: 2793
+ 2938 								IR_parent_scope: <>
+ 2939 								IR_cur_inst: <>
+ 2940 								DDBE_expr_vec_entry: 2712
+ 2941 								IR_field_expr: 2734
+ 2942 								DDBE_noop_vec_entry: 2745
+ 2943 								DDBE_properties_byte: 2747
+ 2944 								DDBE_indirect_vec_entry: 2779
+ 2945 								DDBE_pad_vec_entry: 2726
+ 2946 								DDBE_name_vec_entry: 2783
+ 2947 								NAMETABLE_add_id: 1127
+ 2948 							DDBE_op_type_indirect: void (), <./dcerpc/idl_compiler/ddbe.c 1282>
+ 2949 								DDBE_type_info: 2831
+ 2950 								DDBE_push_indirection_scope: 2742
+ 2951 								IR_process_tup: 2487
+ 2952 								NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 2953 							AST_STRING0_SET: <>
+ 2954 							DDBE_op_range: void (), <./dcerpc/idl_compiler/ddbe.c 3321>
+ 2955 								sprintf: <>
+ 2956 								DDBE_comment_vec_entry: 2685
+ 2957 								DDBE_tag_vec_entry: 2695
+ 2958 								DDBE_long_vec_entry: 2687
+ 2959 						AST_IN_SET: <>
+ 2960 						AST_OUT_SET: <>
+ 2961 						IR_finish_scope: 2654
+ 2962 						DDBE_PIPE: <>
+ 2963 						DDBE_ALLOCATE: <>
+ 2964 						AST_HAS_IN_PIPES_SET: <>
+ 2965 						AST_HAS_OUT_PIPES_SET: <>
+ 2966 						DDBE_XMIT_REP: <>
+ 2967 						AST_REFLECT_DELETIONS_SET: <>
+ 2968 						DDBE_long_vec_entry: 2687
+ 2969 						DDBE_tag_vec_entry: 2695
+ 2970 						DDBE_compute_vec_offsets: unsigned long (), <./dcerpc/idl_compiler/ddbe.c 742>
+ 2971 							DDBE_pad_vec_entry: 2726
+ 2972 							INTERNAL_ERROR: <>
+ 2973 						DDBE_pad_vec_entry: 2726
+ 2974 						DDBE_patch_vec_refs: void (), <./dcerpc/idl_compiler/ddbe.c 885>
+ 2975 							assert: <>
+ 2976 						DDBE_patch_oper_info: void (), <./dcerpc/idl_compiler/ddbe.c 930>
+ 2977 					getenv: <>
+ 2978 					printf: <>
+ 2979 					DDBE_spell_offset_instances: void (), <./dcerpc/idl_compiler/ddspell.c 497>
+ 2980 						fprintf: <>
+ 2981 						CSPELL_typed_name: void (), <./dcerpc/idl_compiler/cspell.c 806>
+ 2982 							CSPELL_type_exp: void (), <./dcerpc/idl_compiler/cspell.c 504>
+ 2983 								CSPELL_type_exp: 2982
+ 2984 								fprintf: <>
+ 2985 								spell_name: void (), <./dcerpc/idl_compiler/cspell.c 224>
+ 2986 									NAMETABLE_id_to_string: 1039
+ 2987 									fprintf: <>
+ 2988 								AST_DEF_AS_TAG_SET: <>
+ 2989 								spell_idl_scalar_type_name: void (), <./dcerpc/idl_compiler/cspell.c 323>
+ 2990 									fprintf: <>
+ 2991 									CSPELL_scalar_type_suffix: boolean (), <./dcerpc/idl_compiler/cspell.c 249>
+ 2992 										fprintf: <>
+ 2993 									INTERNAL_ERROR: <>
+ 2994 								CSPELL_typed_name: 2981
+ 2995 								CSPELL_labels: void (), <./dcerpc/idl_compiler/cspeldcl.c 162>
+ 2996 									fprintf: <>
+ 2997 									CSPELL_constant_val: void (), <./dcerpc/idl_compiler/cspeldcl.c 145>
+ 2998 										CSPELL_constant_val_to_string: void (), <./dcerpc/idl_compiler/cspeldcl.c 106>
+ 2999 											sprintf: <>
+ 3000 											STRTAB_str_to_string: 1038
+ 3001 											mapchar: const char * (), <./dcerpc/idl_compiler/hdgen.c 120>
+ 3002 												sprintf: <>
+ 3003 											INTERNAL_ERROR: <>
+ 3004 										fprintf: <>
+ 3005 								CSPELL_pipe_def: void (), <./dcerpc/idl_compiler/cspell.c 480>
+ 3006 									fprintf: <>
+ 3007 									spell_name: 2985
+ 3008 									CSPELL_pipe_struct_routine_decl: void (), <./dcerpc/idl_compiler/cspell.c 432>
+ 3009 										fprintf: <>
+ 3010 										CSPELL_type_exp: 2982
+ 3011 										pipe: <>
+ 3012 										CSPELL_type_tail: void (), <./dcerpc/idl_compiler/cspell.c 187>
+ 3013 											fprintf: <>
+ 3014 											CSPELL_array_bounds: void (), <./dcerpc/idl_compiler/cspell.c 389>
+ 3015 												DDBE_array_is_C_like: boolean (), <./dcerpc/idl_compiler/cspell.c 361>
+ 3016 													AST_FIXED_LOWER_SET: <>
+ 3017 													AST_FIXED_UPPER_SET: <>
+ 3018 												fprintf: <>
+ 3019 												AST_FIXED_LOWER_SET: <>
+ 3020 												AST_FIXED_UPPER_SET: <>
+ 3021 											CSPELL_function_sig: void (), <./dcerpc/idl_compiler/cspell.c 343>
+ 3022 												fprintf: <>
+ 3023 												CSPELL_parameter_list: void (), <./dcerpc/idl_compiler/cspeldcl.c 189>
+ 3024 													AST_HIDDEN_SET: <>
+ 3025 													fprintf: <>
+ 3026 													spell_name: 2985
+ 3027 													AST_IN_SET: <>
+ 3028 													AST_OUT_SET: <>
+ 3029 													CSPELL_typed_name: 2981
+ 3030 											INTERNAL_ERROR: <>
+ 3031 								CSPELL_add_array_to_tail: void (), <./dcerpc/idl_compiler/cspell.c 141>
+ 3032 									INTERNAL_ERROR: <>
+ 3033 								CSPELL_add_paren_to_tail: void (), <./dcerpc/idl_compiler/cspell.c 129>
+ 3034 									INTERNAL_ERROR: <>
+ 3035 								CSPELL_add_func_to_tail: void (), <./dcerpc/idl_compiler/cspell.c 158>
+ 3036 									INTERNAL_ERROR: <>
+ 3037 								INTERNAL_ERROR: <>
+ 3038 							spell_name: 2985
+ 3039 							CSPELL_type_tail: 3012
+ 3040 						fflush: <>
+ 3041 					DDBE_spell_offset_vec_use_inst: void (), <./dcerpc/idl_compiler/ddspell.c 695>
+ 3042 						fprintf: <>
+ 3043 						DDBE_SPELL_TEXT: <>
+ 3044 						DDBE_SPELL_COMMENT: <>
+ 3045 						STRTAB_str_to_string: 1038
+ 3046 						DDBE_SPELL_INDEX: <>
+ 3047 						DDBE_sizeof_expr_use_inst: void (), <./dcerpc/idl_compiler/ddspell.c 412>
+ 3048 							NAMETABLE_id_to_string: 1039
+ 3049 							AST_CONFORMANT_SET: <>
+ 3050 							INTERNAL_ERROR: <>
+ 3051 							DDBE_last_field: void (), <./dcerpc/idl_compiler/ddspell.c 316>
+ 3052 								NAMETABLE_id_to_string: 1039
+ 3053 								strlcat: 17
+ 3054 								STRTAB_add_string: 1126
+ 3055 							STRTAB_str_to_string: 1038
+ 3056 							fprintf: <>
+ 3057 							DDBE_SPELL_COMMENT: <>
+ 3058 						NAMETABLE_id_to_string: 1039
+ 3059 						INTERNAL_ERROR: <>
+ 3060 					DDBE_init_offset_vec: void (), <./dcerpc/idl_compiler/ddspell.c 799>
+ 3061 						fprintf: <>
+ 3062 						DDBE_spell_long_nf: char * (), <./dcerpc/idl_compiler/ddspell.c 178>
+ 3063 							sprintf: <>
+ 3064 						DDBE_spell_long: char * (), <./dcerpc/idl_compiler/ddspell.c 165>
+ 3065 							sprintf: <>
+ 3066 						DDBE_SPELL_TEXT: <>
+ 3067 						DDBE_SPELL_COMMENT: <>
+ 3068 						STRTAB_str_to_string: 1038
+ 3069 						DDBE_sizeof_expr_use_inst: 3047
+ 3070 						NAMETABLE_id_to_string: 1039
+ 3071 						INTERNAL_ERROR: <>
+ 3072 					DDBE_spell_rtn_vec: void (), <./dcerpc/idl_compiler/ddspell.c 916>
+ 3073 						fprintf: <>
+ 3074 						DDBE_SPELL_TEXT: <>
+ 3075 						DDBE_SPELL_COMMENT: <>
+ 3076 						NAMETABLE_id_to_string: 1039
+ 3077 						DDBE_SPELL_INDEX: <>
+ 3078 					DDBE_spell_type_vec: void (), <./dcerpc/idl_compiler/ddspell.c 1347>
+ 3079 						fprintf: <>
+ 3080 						DDBE_spell_type_vec_preamble: void (), <./dcerpc/idl_compiler/ddspell.c 968>
+ 3081 							NAMETABLE_id_to_string: 1039
+ 3082 							getenv: <>
+ 3083 							DDBE_SPELL_INDEX: <>
+ 3084 							fprintf: <>
+ 3085 							DDBE_SPELL_TEXT: <>
+ 3086 							DDBE_spell_short_bytes: void (), <./dcerpc/idl_compiler/ddspell.c 229>
+ 3087 								fprintf: <>
+ 3088 							DDBE_SPELL_TEXT_1ARG: <>
+ 3089 							DDBE_SPELL_TEXT_2ARG: <>
+ 3090 							DDBE_spell_long_bytes: void (), <./dcerpc/idl_compiler/ddspell.c 251>
+ 3091 								fprintf: <>
+ 3092 							DDBE_spell_long_nf: 3062
+ 3093 							ASSERTION: <>
+ 3094 							AST_BROADCAST_SET: <>
+ 3095 							AST_IDEMPOTENT_SET: <>
+ 3096 							AST_MAYBE_SET: <>
+ 3097 						DDBE_SPELL_INDEX: <>
+ 3098 						DDBE_SPELL_COMMENT: <>
+ 3099 						STRTAB_str_to_string: 1038
+ 3100 						DDBE_spell_long_val: void (), <./dcerpc/idl_compiler/ddspell.c 197>
+ 3101 							fprintf: <>
+ 3102 							STRTAB_str_to_string: 1038
+ 3103 							DDBE_spell_long_nf: 3062
+ 3104 						DDBE_spell_long_bool_val: void (), <./dcerpc/idl_compiler/ddspell.c 274>
+ 3105 							fprintf: <>
+ 3106 							STRTAB_str_to_string: 1038
+ 3107 							DDBE_spell_long_nf: 3062
+ 3108 						DDBE_SPELL_TEXT: <>
+ 3109 						DDBE_spell_short_bytes: 3086
+ 3110 						NAMETABLE_id_to_string: 1039
+ 3111 						DDBE_spell_type_kind: void (), <./dcerpc/idl_compiler/ddbe.c 326>
+ 3112 							INTERNAL_ERROR: <>
+ 3113 							NAMETABLE_id_to_string: 1039
+ 3114 							strcmp: <>
+ 3115 							AST_V1_ENUM_SET: <>
+ 3116 							fprintf: <>
+ 3117 							STRTAB_str_to_string: 1038
+ 3118 						INTERNAL_ERROR: <>
+ 3119 						DDBE_spell_type_vec_addenda: void (), <./dcerpc/idl_compiler/ddspell.c 1223>
+ 3120 							DDBE_SPELL_INDEX: <>
+ 3121 							fprintf: <>
+ 3122 							DDBE_SPELL_TEXT: <>
+ 3123 							getenv: <>
+ 3124 							DDBE_SPELL_TEXT_1ARG: <>
+ 3125 							DDBE_spell_long_nf: 3062
+ 3126 							DDBE_spell_long_bytes: 3090
+ 3127 							DDBE_spell_long: 3064
+ 3128 					DDBE_test_marsh_spellers: void (), <./dcerpc/idl_compiler/ddbe.c 4550>
+ 3129 						printf: <>
+ 3130 						NAMETABLE_id_to_string: 1039
+ 3131 						DDBE_spell_param_vec_def: void (), <./dcerpc/idl_compiler/ddspell.c 1467>
+ 3132 							fprintf: <>
+ 3133 							NAMETABLE_id_to_string: 1039
+ 3134 						DDBE_spell_param_vec_init: void (), <./dcerpc/idl_compiler/ddspell.c 1511>
+ 3135 							fprintf: <>
+ 3136 							AST_REF_SET: <>
+ 3137 							DDBE_cfmt_arr_local_rep: boolean (), <./dcerpc/idl_compiler/ddspell.c 458>
+ 3138 								AST_CONFORMANT_SET: <>
+ 3139 								AST_REF_SET: <>
+ 3140 								DDBE_ARRAYIFIED: <>
+ 3141 							NAMETABLE_id_to_string: 1039
+ 3142 							AST_HEAP_SET: <>
+ 3143 							AST_PTR_SET: <>
+ 3144 							AST_UNIQUE_SET: <>
+ 3145 							CSPELL_cast_exp: void (), <./dcerpc/idl_compiler/cspell.c 879>
+ 3146 								fprintf: <>
+ 3147 								CSPELL_typed_name: 2981
+ 3148 							INTERNAL_ERROR: <>
+ 3149 						DDBE_spell_marsh_or_unmar: void (), <./dcerpc/idl_compiler/ddspell.c 1601>
+ 3150 							fprintf: <>
+ 3151 							DDBE_SPELL_TEXT_1ARG: <>
+ 3152 							DDBE_spell_long_nf: 3062
+ 3153 				BE_gen_c_header: void (), <./dcerpc/idl_compiler/hdgen.c 726>
+ 3154 					NAMETABLE_id_to_string: 1039
+ 3155 					sprintf: <>
+ 3156 					fprintf: <>
+ 3157 					AST_DOUBLE_USED_SET: <>
+ 3158 					AST_LOCAL_SET: <>
+ 3159 					AST_HAS_ENCODE_OPS_SET: <>
+ 3160 					STRTAB_str_to_string: 1038
+ 3161 					AST_OBJECT_SET: <>
+ 3162 					FILE_form_filespec: 1138
+ 3163 					BE_get_name: char const * (), <./dcerpc/idl_compiler/mtsbacke.c 410>
+ 3164 						NAMETABLE_id_to_string: 1039
+ 3165 					BE_spell_extern_user_excs: void (), <./dcerpc/idl_compiler/hdgen.c 613>
+ 3166 						fprintf: <>
+ 3167 						spell_name: 2985
+ 3168 					CPPQUOTES_exports: void (), <./dcerpc/idl_compiler/hdgen.c 278>
+ 3169 						STRTAB_str_to_string: 1038
+ 3170 						unescape_string: const char * (), <./dcerpc/idl_compiler/hdgen.c 252>
+ 3171 							strlen: <>
+ 3172 							malloc: <>
+ 3173 						fprintf: <>
+ 3174 						free: <>
+ 3175 					CSPELL_exports: void (), <./dcerpc/idl_compiler/hdgen.c 293>
+ 3176 						STRTAB_str_to_string: 1038
+ 3177 						unescape_string: 3170
+ 3178 						fprintf: <>
+ 3179 						free: <>
+ 3180 						CSPELL_constant_def: void (), <./dcerpc/idl_compiler/hdgen.c 150>
+ 3181 							fprintf: <>
+ 3182 							spell_name: 2985
+ 3183 							mapchar: 3001
+ 3184 							STRTAB_str_to_string: 1038
+ 3185 						AST_OBJECT_SET: <>
+ 3186 						CSPELL_operation_def: void (), <./dcerpc/idl_compiler/hdgen.c 206>
+ 3187 							fprintf: <>
+ 3188 							CSPELL_typed_name: 2981
+ 3189 							AST_ENCODE_SET: <>
+ 3190 							AST_DECODE_SET: <>
+ 3191 						CSPELL_type_def: void (), <./dcerpc/idl_compiler/hdgen.c 223>
+ 3192 							fprintf: <>
+ 3193 							CSPELL_typed_name: 2981
+ 3194 							AST_HANDLE_SET: <>
+ 3195 							spell_name: 2985
+ 3196 						INTERNAL_ERROR: <>
+ 3197 					BE_gen_pipe_routine_decls: void (), <./dcerpc/idl_compiler/mtsbacke.c 451>
+ 3198 					CSPELL_user_prototypes: void (), <./dcerpc/idl_compiler/hdgen.c 482>
+ 3199 						AST_CONTEXT_RD_SET: <>
+ 3200 						fprintf: <>
+ 3201 						spell_name: 2985
+ 3202 						CSPELL_type_exp_simple: void (), <./dcerpc/idl_compiler/cspell.c 851>
+ 3203 							CSPELL_typed_name: 2981
+ 3204 						NAMETABLE_id_to_string: 1039
+ 3205 						strncmp: <>
+ 3206 					BE_spell_ichar_prototypes: void (), <./dcerpc/idl_compiler/hdgen.c 647>
+ 3207 						fprintf: <>
+ 3208 						spell_name: 2985
+ 3209 					AST_IMPLICIT_HANDLE_G_SET: <>
+ 3210 					spell_name: 2985
+ 3211 					BE_gen_orpc_defs: void (), <./dcerpc/idl_compiler/hdgen.c 365>
+ 3212 						NAMETABLE_id_to_string: 1039
+ 3213 						fprintf: <>
+ 3214 						BE_is_handle_param: int (), <./dcerpc/idl_compiler/hdgen.c 350>
+ 3215 						CSPELL_typed_name: 2981
+ 3216 					CSPELL_epv_type_and_var: void (), <./dcerpc/idl_compiler/hdgen.c 429>
+ 3217 						fprintf: <>
+ 3218 						spell_name: 2985
+ 3219 						CSPELL_epv_field: void (), <./dcerpc/idl_compiler/hdgen.c 326>
+ 3220 							fprintf: <>
+ 3221 							CSPELL_typed_name: 2981
+ 3222 							AST_ENCODE_SET: <>
+ 3223 							AST_DECODE_SET: <>
+ 3224 					CSPELL_if_spec_refs: void (), <./dcerpc/idl_compiler/hdgen.c 466>
+ 3225 						fprintf: <>
+ 3226 						spell_name: 2985
+ 3227 				DDBE_gen_cstub: void (), <./dcerpc/idl_compiler/cstubmts.c 651>
+ 3228 					NAMETABLE_id_to_string: 1039
+ 3229 					CSPELL_suppress_stub_warnings: void (), <./dcerpc/idl_compiler/cspell.c 996>
+ 3230 						fprintf: <>
+ 3231 					CSPELL_mts_includes: void (), <./dcerpc/idl_compiler/mtsbacke.c 393>
+ 3232 						fprintf: <>
+ 3233 					CSPELL_midl_compatibility_allocators: void (), <./dcerpc/idl_compiler/cspell.c 969>
+ 3234 						fprintf: <>
+ 3235 					CSPELL_interface_def: void (), <./dcerpc/idl_compiler/ifspemts.c 160>
+ 3236 						fprintf: <>
+ 3237 						STRTAB_str_to_string: 1038
+ 3238 						BE_ifspec_name: char * (), <./dcerpc/idl_compiler/ifspemts.c 109>
+ 3239 							sprintf: <>
+ 3240 							BE_get_name: 3163
+ 3241 					AST_AUTO_HANDLE_SET: <>
+ 3242 					AST_OBJECT_SET: <>
+ 3243 					CSPELL_auto_handle_statics: void (), <./dcerpc/idl_compiler/clihamts.c 509>
+ 3244 						fprintf: <>
+ 3245 					BE_gen_orpc_defs: 3211
+ 3246 					fprintf: <>
+ 3247 					AST_IMPLICIT_HANDLE_G_SET: <>
+ 3248 					spell_name: 2985
+ 3249 					DDBE_user_exceptions: void (), <./dcerpc/idl_compiler/user_exc.c 200>
+ 3250 						DDBE_list_exceptions: void (), <./dcerpc/idl_compiler/user_exc.c 105>
+ 3251 							AST_EXTERN_SET: <>
+ 3252 							fprintf: <>
+ 3253 							spell_name: 2985
+ 3254 						DDBE_init_exceptions: void (), <./dcerpc/idl_compiler/user_exc.c 140>
+ 3255 							fprintf: <>
+ 3256 							AST_EXTERN_SET: <>
+ 3257 							spell_name: 2985
+ 3258 						DDBE_ref_exception_array: void (), <./dcerpc/idl_compiler/user_exc.c 171>
+ 3259 							fprintf: <>
+ 3260 							spell_name: 2985
+ 3261 					DDBE_spell_offset_vec: void (), <./dcerpc/idl_compiler/ddspell.c 551>
+ 3262 						fprintf: <>
+ 3263 						DDBE_SPELL_TEXT: <>
+ 3264 						DDBE_SPELL_COMMENT: <>
+ 3265 						STRTAB_str_to_string: 1038
+ 3266 						DDBE_SPELL_INDEX: <>
+ 3267 						DDBE_sizeof_expr: void (), <./dcerpc/idl_compiler/ddspell.c 362>
+ 3268 							AST_CONFORMANT_SET: <>
+ 3269 							INTERNAL_ERROR: <>
+ 3270 							DDBE_last_field: 3051
+ 3271 							STRTAB_str_to_string: 1038
+ 3272 							fprintf: <>
+ 3273 							CSPELL_typed_name: 2981
+ 3274 							CSPELL_cast_exp: 3145
+ 3275 							DDBE_SPELL_COMMENT: <>
+ 3276 						assert: <>
+ 3277 						CSPELL_typed_name: 2981
+ 3278 						INTERNAL_ERROR: <>
+ 3279 					DDBE_spell_rtn_vec: 3072
+ 3280 					DDBE_spell_type_vec: 3078
+ 3281 					BE_push_malloc_ctx: void (), <./dcerpc/idl_compiler/mtsbacke.c 279>
+ 3282 						NEW: , <./dcerpc/ncklib/cncasgsm.c 114>
+ 3283 					NAMETABLE_set_temp_name_mode: void (), <./dcerpc/idl_compiler/nametbl.c 1041>
+ 3284 						INTERNAL_ERROR: <>
+ 3285 					AST_NO_CODE_SET: <>
+ 3286 					AST_ENCODE_SET: <>
+ 3287 					AST_DECODE_SET: <>
+ 3288 					DDBE_spell_pickling_stub: void (), <./dcerpc/idl_compiler/cstubmts.c 495>
+ 3289 						BE_get_comm_stat_info: void (), <./dcerpc/idl_compiler/comstmts.c 108>
+ 3290 							AST_COMM_STATUS_SET: <>
+ 3291 							AST_ADD_COMM_STATUS_SET: <>
+ 3292 						BE_get_fault_stat_info: void (), <./dcerpc/idl_compiler/comstmts.c 146>
+ 3293 							AST_FAULT_STATUS_SET: <>
+ 3294 							AST_ADD_FAULT_STATUS_SET: <>
+ 3295 						BE_setup_client_handle: void (), <./dcerpc/idl_compiler/clihamts.c 141>
+ 3296 							AST_HANDLE_SET: <>
+ 3297 							CSPELL_decl_assoc_handle_vars: void (), <./dcerpc/idl_compiler/clihamts.c 112>
+ 3298 								fprintf: <>
+ 3299 							NAMETABLE_id_to_string: 1039
+ 3300 							AST_HAS_IN_CTX_SET: <>
+ 3301 							AST_IMPLICIT_HANDLE_G_SET: <>
+ 3302 							AST_IDEMPOTENT_SET: <>
+ 3303 							fprintf: <>
+ 3304 						AST_ENCODE_SET: <>
+ 3305 						AST_DECODE_SET: <>
+ 3306 						CSPELL_csr_header: void (), <./dcerpc/idl_compiler/cstubmts.c 159>
+ 3307 							sprintf: <>
+ 3308 							NAMETABLE_add_id: 1127
+ 3309 							fprintf: <>
+ 3310 							AST_OBJECT_SET: <>
+ 3311 							BE_get_name: 3163
+ 3312 							BE_is_handle_param: 3214
+ 3313 							CSPELL_function_def_header: void (), <./dcerpc/idl_compiler/cspell.c 828>
+ 3314 								CSPELL_type_exp: 2982
+ 3315 								spell_name: 2985
+ 3316 								CSPELL_type_tail: 3012
+ 3317 								AST_ENCODE_SET: <>
+ 3318 								AST_DECODE_SET: <>
+ 3319 							CSPELL_finish_synopsis: void (), <./dcerpc/idl_compiler/cspeldcl.c 252>
+ 3320 						fprintf: <>
+ 3321 						DDBE_spell_param_vec_def: 3131
+ 3322 						CSPELL_typed_name: 2981
+ 3323 						NAMETABLE_add_id: 1127
+ 3324 						BE_cs_analyze_and_spell_vars: void (), <./dcerpc/idl_compiler/icharsup.c 110>
+ 3325 							AST_CS_STAG_SET: <>
+ 3326 							AST_CS_DRTAG_SET: <>
+ 3327 							AST_CS_RTAG_SET: <>
+ 3328 							fprintf: <>
+ 3329 							NAMETABLE_add_id: 1127
+ 3330 							spell_name: 2985
+ 3331 						DDBE_spell_param_vec_init: 3134
+ 3332 						AST_HAS_FULL_PTRS_SET: <>
+ 3333 						AST_HAS_IN_PTRS_SET: <>
+ 3334 						AST_HAS_OUT_PTRS_SET: <>
+ 3335 						BE_spell_cs_state: void (), <./dcerpc/idl_compiler/icharsup.c 244>
+ 3336 							fprintf: <>
+ 3337 							BE_get_name: 3163
+ 3338 						BE_spell_cs_tag_rtn_call: void (), <./dcerpc/idl_compiler/icharsup.c 297>
+ 3339 							spell_name: 2985
+ 3340 							fprintf: <>
+ 3341 							BE_get_name: 3163
+ 3342 						DDBE_spell_marsh_or_unmar: 3149
+ 3343 						CSPELL_return_status: void (), <./dcerpc/idl_compiler/comstmts.c 184>
+ 3344 							NAMETABLE_id_to_string: 1039
+ 3345 							sprintf: <>
+ 3346 							ASSERTION: <>
+ 3347 							strlen: <>
+ 3348 							fprintf: <>
+ 3349 					CSPELL_client_stub_routine: void (), <./dcerpc/idl_compiler/cstubmts.c 206>
+ 3350 						BE_get_comm_stat_info: 3289
+ 3351 						BE_get_fault_stat_info: 3292
+ 3352 						CSPELL_csr_header: 3306
+ 3353 						fprintf: <>
+ 3354 						AST_OBJECT_SET: <>
+ 3355 						BE_is_handle_param: 3214
+ 3356 						CSPELL_var_decl: void (), <./dcerpc/idl_compiler/cspell.c 865>
+ 3357 							CSPELL_typed_name: 2981
+ 3358 							fprintf: <>
+ 3359 						BE_setup_client_handle: 3295
+ 3360 						BE_cs_analyze_and_spell_vars: 3324
+ 3361 						DDBE_spell_param_vec_def: 3131
+ 3362 						CSPELL_typed_name: 2981
+ 3363 						NAMETABLE_add_id: 1127
+ 3364 						DDBE_spell_param_vec_init: 3134
+ 3365 						AST_HAS_FULL_PTRS_SET: <>
+ 3366 						AST_HAS_IN_PTRS_SET: <>
+ 3367 						AST_HAS_OUT_PTRS_SET: <>
+ 3368 						BE_spell_cs_state: 3335
+ 3369 						BE_spell_cs_tag_rtn_call: 3338
+ 3370 						CSPELL_call_start: void (), <./dcerpc/idl_compiler/clihamts.c 355>
+ 3371 							CSPELL_dup_implicit_handle_t: void (), <./dcerpc/idl_compiler/clihamts.c 272>
+ 3372 								fprintf: <>
+ 3373 								spell_name: 2985
+ 3374 								CSPELL_test_status: void (), <./dcerpc/idl_compiler/cstubmts.c 123>
+ 3375 									fprintf: <>
+ 3376 							CSPELL_bind_generic_handle: void (), <./dcerpc/idl_compiler/clihamts.c 290>
+ 3377 								fprintf: <>
+ 3378 							fprintf: <>
+ 3379 							AST_CONTEXT_SET: <>
+ 3380 							AST_IN_SET: <>
+ 3381 							AST_OUT_SET: <>
+ 3382 							NAMETABLE_id_to_string: 1039
+ 3383 							CSPELL_test_status: 3374
+ 3384 							CSPELL_bind_auto_handle: void (), <./dcerpc/idl_compiler/clihamts.c 308>
+ 3385 								fprintf: <>
+ 3386 							BE_get_name: 3163
+ 3387 							spell_name: 2985
+ 3388 							AST_BROADCAST_SET: <>
+ 3389 							AST_MAYBE_SET: <>
+ 3390 							AST_IDEMPOTENT_SET: <>
+ 3391 						AST_HAS_IN_CTX_SET: <>
+ 3392 						AST_HAS_OUT_CTX_SET: <>
+ 3393 						DDBE_spell_marsh_or_unmar: 3149
+ 3394 						AST_MAYBE_SET: <>
+ 3395 						CSPELL_test_transceive_status: void (), <./dcerpc/idl_compiler/cstubmts.c 137>
+ 3396 							fprintf: <>
+ 3397 						DDBE_spell_restart_logic: void (), <./dcerpc/idl_compiler/clihamts.c 538>
+ 3398 							fprintf: <>
+ 3399 						CSPELL_binding_free_if_needed: void (), <./dcerpc/idl_compiler/clihamts.c 581>
+ 3400 							fprintf: <>
+ 3401 						BE_get_name: 3163
+ 3402 						CSPELL_return_status: 3343
+ 3403 					NAMETABLE_clear_temp_name_mode: void (), <./dcerpc/idl_compiler/nametbl.c 1069>
+ 3404 						INTERNAL_ERROR: <>
+ 3405 						NAMETABLE_delete_node: void (), <./dcerpc/idl_compiler/nametbl.c 317>
+ 3406 							INTERNAL_ERROR: <>
+ 3407 							FREE: <>
+ 3408 						FREE: <>
+ 3409 						NAMETABLE_balance_tree: 1134
+ 3410 					BE_pop_malloc_ctx: void (), <./dcerpc/idl_compiler/mtsbacke.c 301>
+ 3411 						error: 330
+ 3412 						free: <>
+ 3413 					CSPELL_restore_stub_warnings: void (), <./dcerpc/idl_compiler/cspell.c 1007>
+ 3414 				BE_gen_sstub: void (), <./dcerpc/idl_compiler/sstubmts.c 912>
+ 3415 					CSPELL_suppress_stub_warnings: 3229
+ 3416 					CSPELL_mts_includes: 3231
+ 3417 					DDBE_spell_offset_vec: 3261
+ 3418 					DDBE_spell_rtn_vec: 3072
+ 3419 					DDBE_spell_type_vec: 3078
+ 3420 					DDBE_user_exceptions: 3249
+ 3421 					CSPELL_manager_epv: void (), <./dcerpc/idl_compiler/ifspemts.c 129>
+ 3422 						fprintf: <>
+ 3423 						BE_get_name: 3163
+ 3424 						spell_name: 2985
+ 3425 					AST_ENCODE_SET: <>
+ 3426 					AST_DECODE_SET: <>
+ 3427 					BE_push_malloc_ctx: 3281
+ 3428 					NAMETABLE_set_temp_name_mode: 3283
+ 3429 					CSPELL_server_stub_routine: void (), <./dcerpc/idl_compiler/sstubmts.c 614>
+ 3430 						BE_server_binding_analyze: void (), <./dcerpc/idl_compiler/sstubmts.c 131>
+ 3431 							NAMETABLE_add_id: 1127
+ 3432 							AST_HANDLE_SET: <>
+ 3433 							AST_HAS_IN_CTX_SET: <>
+ 3434 							AST_EXPLICIT_HANDLE_SET: <>
+ 3435 						NAMETABLE_id_to_string: 1039
+ 3436 						fprintf: <>
+ 3437 						AST_HAS_IN_PIPES_SET: <>
+ 3438 						AST_HAS_OUT_PIPES_SET: <>
+ 3439 						DDBE_spell_param_vec_def: 3131
+ 3440 						DDBE_spell_stack_surrogates: void (), <./dcerpc/idl_compiler/sstubmts.c 265>
+ 3441 							AST_REF_SET: <>
+ 3442 							AST_CONFORMANT_SET: <>
+ 3443 							DDBE_ARRAYIFIED: <>
+ 3444 							AST_HEAP_SET: <>
+ 3445 							AST_PTR_SET: <>
+ 3446 							AST_UNIQUE_SET: <>
+ 3447 							AST_CONTEXT_SET: <>
+ 3448 							fprintf: <>
+ 3449 							BE_get_name: 3163
+ 3450 							CSPELL_typed_name: 2981
+ 3451 							CSPELL_zero_initializer: void (), <./dcerpc/idl_compiler/sstubmts.c 215>
+ 3452 								fprintf: <>
+ 3453 						BE_cs_analyze_and_spell_vars: 3324
+ 3454 						AST_HAS_IN_PTRS_SET: <>
+ 3455 						AST_HAS_OUT_PTRS_SET: <>
+ 3456 						AST_ENABLE_ALLOCATE_SET: <>
+ 3457 						AST_CONTEXT_SET: <>
+ 3458 						CSPELL_typed_name: 2981
+ 3459 						NAMETABLE_add_id: 1127
+ 3460 						BE_get_name: 3163
+ 3461 						AST_HAS_IN_CTX_SET: <>
+ 3462 						AST_HAS_OUT_CTX_SET: <>
+ 3463 						DDBE_spell_param_vec_init: 3134
+ 3464 						BE_spell_cs_state: 3335
+ 3465 						CSPELL_test_status: 3374
+ 3466 						AST_HAS_FULL_PTRS_SET: <>
+ 3467 						AST_REFLECT_DELETIONS_SET: <>
+ 3468 						DDBE_init_server_pipes: void (), <./dcerpc/idl_compiler/mtspipes.c 165>
+ 3469 							AST_IN_SET: <>
+ 3470 							AST_OUT_SET: <>
+ 3471 							BE_get_pipe_type_name: void (), <./dcerpc/idl_compiler/mtspipes.c 143>
+ 3472 								NAMETABLE_id_to_string: 1039
+ 3473 							fprintf: <>
+ 3474 							BE_get_name: 3163
+ 3475 							CSPELL_pipe_struct_routine_decl: 3008
+ 3476 							BE_get_next_pipe_index: void (), <./dcerpc/idl_compiler/mtspipes.c 110>
+ 3477 						DDBE_spell_marsh_or_unmar: 3149
+ 3478 						BE_spell_cs_tag_rtn_call: 3338
+ 3479 						CSPELL_manager_call: void (), <./dcerpc/idl_compiler/sstubmts.c 382>
+ 3480 							fprintf: <>
+ 3481 							BE_get_name: 3163
+ 3482 							AST_NO_CANCEL_SET: <>
+ 3483 							AST_CONTEXT_SET: <>
+ 3484 							spell_name: 2985
+ 3485 							AST_HIDDEN_SET: <>
+ 3486 							AST_HEAP_SET: <>
+ 3487 							AST_CONFORMANT_SET: <>
+ 3488 							AST_UNIQUE_SET: <>
+ 3489 							AST_PTR_SET: <>
+ 3490 							AST_REF_SET: <>
+ 3491 							BE_Is_Arrayified: <>
+ 3492 							DDBE_spell_manager_param_cast: void (), <./dcerpc/idl_compiler/cspell.c 922>
+ 3493 								fprintf: <>
+ 3494 								DDBE_array_is_C_like: 3015
+ 3495 								CSPELL_type_exp: 2982
+ 3496 								CSPELL_type_tail: 3012
+ 3497 							CSPELL_ptr_cast_exp: void (), <./dcerpc/idl_compiler/cspell.c 893>
+ 3498 								memset: <>
+ 3499 								CSPELL_cast_exp: 3145
+ 3500 							CSPELL_cast_exp: 3145
+ 3501 						DDBE_convert_out_contexts: void (), <./dcerpc/idl_compiler/sstubmts.c 559>
+ 3502 							AST_CONTEXT_SET: <>
+ 3503 							fprintf: <>
+ 3504 							BE_get_name: 3163
+ 3505 							AST_CONTEXT_RD_SET: <>
+ 3506 							spell_name: 2985
+ 3507 							CSPELL_test_status: 3374
+ 3508 							AST_OUT_SET: <>
+ 3509 							AST_IN_SET: <>
+ 3510 					NAMETABLE_clear_temp_name_mode: 3403
+ 3511 					BE_pop_malloc_ctx: 3410
+ 3512 					fprintf: <>
+ 3513 					CSPELL_interface_def: 3235
+ 3514 					CSPELL_restore_stub_warnings: void (), <./dcerpc/idl_compiler/cspell.c 1007>
+ 3515 			close_files: void (), <./dcerpc/idl_compiler/driver.c 436>
+ 3516 				fclose: <>
+ 3517 			strcmp: <>
+ 3518 			sprintf: <>
+ 3519 			stub_compile: int (), <./dcerpc/idl_compiler/driver.c 378>
+ 3520 				message_print: 331
+ 3521 				FILE_parse: 1117
+ 3522 				FILE_is_cwd: 1234
+ 3523 				strcmp: <>
+ 3524 				FILE_form_filespec: 1138
+ 3525 				sprintf: <>
+ 3526 				FILE_execute_cmd: int (), <./dcerpc/idl_compiler/files.c 631>
+ 3527 					strlen: <>
+ 3528 					NEW_VEC: <>
+ 3529 					strlcat: 17
+ 3530 					message_print: 331
+ 3531 					system: <>
+ 3532 					FREE: <>
+ 3533 			ERROR_STATUS: <>
+ 3534 			message_print: 331
+ 3535 			FILE_delete: void (), <./dcerpc/idl_compiler/files.c 673>
+ 3536 				unlink: <>
+ 3537 			cleanup: 1016

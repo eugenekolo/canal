@@ -1,0 +1,564 @@
+    1 	main: int (), <./patch/ansi2knr.c 207>
+    2 		fgets: while (), <./patch/maketime.c 491>
+    3 		sscanf: <>
+    4 		dir_name: char * (), <./patch/dirname.c 53>
+    5 			dir_len: size_t (), <./patch/dirname.c 33>
+    6 				FILESYSTEM_PREFIX_LEN: <>
+    7 				base_name: char * (), <./patch/basename.c 36>
+    8 					FILESYSTEM_PREFIX_LEN: <>
+    9 					ISSLASH: <>
+   10 				ISSLASH: <>
+   11 			FILESYSTEM_PREFIX_LEN: <>
+   12 			xmalloc: void * (), <./patch/xmalloc.c 80>
+   13 				malloc: <>
+   14 				xalloc_die: void (), <./patch/xmalloc.c 66>
+   15 					error: <>
+   16 						fflush: <>
+   17 						fprintf: <>
+   18 						VA_START: <>
+   19 						error_tail: void (), <./patch/error.c 172>
+   20 							strlen: <>
+   21 							alloca: <>
+   22 							realloc: <>
+   23 							fputws_unlocked: <>
+   24 							memset: <>
+   25 							mbsrtowcs: <>
+   26 							vfprintf: <>
+   27 							va_end: <>
+   28 							print_errno_message: void (), <./patch/error.c 136>
+   29 								strerror: <>
+   30 								fprintf: <>
+   31 							putwc: <>
+   32 							putc: <>
+   33 							fflush: <>
+   34 							exit: <>
+   35 						print_errno_message: 28
+   36 						putc: <>
+   37 						exit: <>
+   38 					exit: <>
+   39 			memcpy: <>
+   40 		strcmp: <>
+   41 		printf: <>
+   42 		init_time: void (), <./patch/util.c 918>
+   43 			time: <>
+   44 		setbuf: <>
+   45 		memory_fatal: void (), <./patch/util.c 511>
+   46 			fatal: void (), <./patch/util.c 498>
+   47 				fprintf: <>
+   48 				va_start: <>
+   49 				vfprintf: int (), <./patch/util.c 479>
+   50 					ferror: <>
+   51 					fprintf: <>
+   52 				va_end: <>
+   53 				putc: <>
+   54 				fflush: <>
+   55 				fatal_exit: void (), <./patch/patch.c 1343>
+   56 					cleanup: void (), <./patch/patch.c 1364>
+   57 						remove_if_needed: void (), <./patch/patch.c 1354>
+   58 							unlink: <>
+   59 					exit_with_signal: void (), <./patch/util.c 800>
+   60 						signal: <>
+   61 						sigemptyset: <>
+   62 						sigaddset: <>
+   63 						sigprocmask: <>
+   64 						raise: <>
+   65 						exit: <>
+   66 					exit: <>
+   67 		xmalloc: 12
+   68 		getenv: <>
+   69 		argmatch: int (), <./patch/argmatch.c 139>
+   70 		set_quoting_style: void (), <./patch/quotearg.c 172>
+   71 		numeric_string: int (), <./patch/patch.c 810>
+   72 			fatal: 46
+   73 			quotearg: char * (), <./patch/quotearg.c 609>
+   74 				quotearg_n: char * (), <./patch/quotearg.c 603>
+   75 					quotearg_n_options: char * (), <./patch/quotearg.c 548>
+   76 						abort: <>
+   77 						xalloc_die: 14
+   78 						xmalloc: 12
+   79 						xrealloc: void * (), <./patch/xmalloc.c 94>
+   80 							realloc: <>
+   81 							xalloc_die: 14
+   82 						memset: <>
+   83 						quotearg_buffer: size_t (), <./patch/quotearg.c 531>
+   84 							quotearg_buffer_restyled: size_t (), <./patch/quotearg.c 218>
+   85 								STORE: <>
+   86 								gettext_quote: char const * (), <./patch/quotearg.c 196>
+   87 								N_: <>
+   88 								strlen: <>
+   89 								memcmp: <>
+   90 								ISPRINT: <>
+   91 								memset: <>
+   92 								mbrtowc: <>
+   93 								iswprint: <>
+   94 								mbsinit: <>
+   95 								quotearg_buffer_restyled: 84
+   96 		make_temp: char const * (), <./patch/patch.c 1312>
+   97 			getenv: <>
+   98 			xmalloc: 12
+   99 			strlen: <>
+  100 			sprintf: <>
+  101 			mktemp: <>
+  102 			pfatal: void (), <./patch/util.c 531>
+  103 				fprintf: <>
+  104 				va_start: <>
+  105 				vfprintf: 49
+  106 				va_end: <>
+  107 				fflush: <>
+  108 				perror: <>
+  109 				fatal_exit: 55
+  110 			tmpnam: <>
+  111 		get_some_switches: void (), <./patch/patch.c 623>
+  112 			free: <>
+  113 			getopt_long: int (), <./patch/getopt1.c 66>
+  114 			strcmp: <>
+  115 			say: void (), <./patch/util.c 549>
+  116 				va_start: <>
+  117 				vfprintf: 49
+  118 				va_end: <>
+  119 				fflush: <>
+  120 			fatal: 46
+  121 			savestr: char * (), <./patch/util.c 439>
+  122 				savebuf: char * (), <./patch/util.c 420>
+  123 					assert: <>
+  124 					malloc: <>
+  125 					memory_fatal: 45
+  126 					memcpy: <>
+  127 				strlen: <>
+  128 			chdir: <>
+  129 			pfatal: 102
+  130 			quotearg: 73
+  131 			numeric_string: 71
+  132 			version: void (), <./patch/version.c 26>
+  133 				printf: <>
+  134 			exit: <>
+  135 			usage: void (), <./patch/patch.c 600>
+  136 				fprintf: <>
+  137 				exit: <>
+  138 			argmatch: 69
+  139 			invalid_arg: <>
+  140 			set_quoting_style: 70
+  141 			fprintf: <>
+  142 		get_version: enum backup_type (), <./patch/backupfile.c 255>
+  143 		init_output: void (), <./patch/patch.c 1165>
+  144 			create_output_file: FILE * (), <./patch/patch.c 1152>
+  145 				create_file: int (), <./patch/util.c 193>
+  146 					close: <>
+  147 					creat: <>
+  148 					open: <>
+  149 					pfatal: 102
+  150 					quotearg: 73
+  151 				fdopen: <>
+  152 				pfatal: 102
+  153 				quotearg: 73
+  154 		set_signals: void (), <./patch/util.c 734>
+  155 			fatal_exit: 55
+  156 			sigemptyset: <>
+  157 			signal: <>
+  158 			sigaction: <>
+  159 			sigaddset: <>
+  160 			setup_handler: <>
+  161 			sigprocmask: <>
+  162 			sigismember: <>
+  163 		open_patch_file: void (), <./patch/pch.c 103>
+  164 			strEQ: <>
+  165 			isatty: <>
+  166 			fatal: 46
+  167 			setmode: <>
+  168 			fstat: <>
+  169 			pfatal: 102
+  170 			S_ISREG: <>
+  171 			file_tell: <>
+  172 			fdopen: <>
+  173 			create_file: 145
+  174 			quotearg: 73
+  175 			fread: <>
+  176 			fwrite: <>
+  177 			write_fatal: void (), <./patch/util.c 523>
+  178 				pfatal: 102
+  179 			ferror: <>
+  180 			fclose: <>
+  181 			read_fatal: void (), <./patch/util.c 517>
+  182 				pfatal: 102
+  183 			fflush: <>
+  184 			file_seek: <>
+  185 			fopen: <>
+  186 			fileno: <>
+  187 			next_intuit_at: void (), <./patch/pch.c 748>
+  188 			set_hunkmax: void (), <./patch/pch.c 166>
+  189 				malloc: <>
+  190 		there_is_another_patch: bool (), <./patch/pch.c 199>
+  191 			say: 115
+  192 			intuit_diff_type: enum diff (), <./patch/pch.c 290>
+  193 			fatal: 46
+  194 			Fseek: void (), <./patch/util.c 1005>
+  195 				file_seek: <>
+  196 				pfatal: 102
+  197 			format_linenum: char * (), <./patch/util.c 453>
+  198 			skip_to: void (), <./patch/pch.c 757>
+  199 				assert: <>
+  200 				Fseek: 194
+  201 				say: 115
+  202 				file_tell: <>
+  203 				putc: <>
+  204 				getc: <>
+  205 				read_fatal: 181
+  206 			ask: void (), <./patch/util.c 561>
+  207 				va_start: <>
+  208 				vfprintf: 49
+  209 				va_end: <>
+  210 				fflush: <>
+  211 				isatty: <>
+  212 				open: <>
+  213 				printf: <>
+  214 				read: <>
+  215 				realloc: <>
+  216 				memory_fatal: 45
+  217 				perror: <>
+  218 				close: <>
+  219 			fetchname: char * (), <./patch/util.c 926>
+  220 				ISSPACE: <>
+  221 				say: 115
+  222 				ISSLASH: <>
+  223 				strchr: <>
+  224 				str2time: time_t (), <./patch/maketime.c 468>
+  225 				strcmp: <>
+  226 				savestr: 121
+  227 			stat: <>
+  228 			perror: <>
+  229 			fflush: <>
+  230 			free: <>
+  231 		reinitialize_almost_everything: void (), <./patch/patch.c 460>
+  232 			re_patch: void (), <./patch/pch.c 88>
+  233 			re_input: <>
+  234 			free: <>
+  235 		get_input_file: void (), <./patch/inp.c 142>
+  236 			strcmp: <>
+  237 			stat: <>
+  238 			geteuid: <>
+  239 			version_controller: char const * (), <./patch/util.c 260>
+  240 				base_name: 7
+  241 				strlen: <>
+  242 				quote_system_arg: size_t (), <./patch/quotesys.c 33>
+  243 				xmalloc: 12
+  244 				strcpy: <>
+  245 				try2: <>
+  246 				try1: <>
+  247 				sprintf: <>
+  248 				S_ISDIR: <>
+  249 				getenv: <>
+  250 				free: <>
+  251 			fatal: 46
+  252 			quotearg: 73
+  253 			say: 115
+  254 			systemic: int (), <./patch/util.c 812>
+  255 				say: 115
+  256 				fflush: <>
+  257 				system: <>
+  258 			version_get: int (), <./patch/util.c 386>
+  259 				ask: 206
+  260 				quotearg: 73
+  261 				fatal: 46
+  262 				say: 115
+  263 				systemic: 254
+  264 				stat: <>
+  265 				pfatal: 102
+  266 			free: <>
+  267 			pch_says_nonexistent: bool (), <./patch/pch.c 1763>
+  268 			pfatal: 102
+  269 			S_ISREG: <>
+  270 		do_ed_script: void (), <./patch/pch.c 1879>
+  271 			assert: <>
+  272 			copy_file: void (), <./patch/util.c 209>
+  273 				open: <>
+  274 				pfatal: 102
+  275 				quotearg: 73
+  276 				create_file: 145
+  277 				read: <>
+  278 				read_fatal: 181
+  279 				write: <>
+  280 				write_fatal: 177
+  281 				close: <>
+  282 			sprintf: <>
+  283 			fflush: <>
+  284 			popen: <>
+  285 			pfatal: 102
+  286 			quotearg: 73
+  287 			file_tell: <>
+  288 			get_line: size_t (), <./patch/pch.c 1531>
+  289 				pget_line: size_t (), <./patch/pch.c 1547>
+  290 					getc: <>
+  291 					ferror: <>
+  292 					read_fatal: 181
+  293 					realloc: <>
+  294 					memory_fatal: 45
+  295 					say: 115
+  296 			next_intuit_at: 187
+  297 			ISDIGIT: if (), <./patch/partime.c 588>
+  298 			fwrite: <>
+  299 			write_fatal: 177
+  300 			strEQ: <>
+  301 			pclose: <>
+  302 			fatal: 46
+  303 			fopen: <>
+  304 			getc: <>
+  305 			putc: <>
+  306 			ferror: <>
+  307 			fclose: <>
+  308 			read_fatal: 181
+  309 		stat: <>
+  310 		pfatal: 102
+  311 		init_reject: void (), <./patch/patch.c 1175>
+  312 			create_output_file: 144
+  313 		scan_input: void (), <./patch/inp.c 85>
+  314 			plan_a: bool (), <./patch/inp.c 219>
+  315 				malloc: <>
+  316 				open: <>
+  317 				pfatal: 102
+  318 				quotearg: 73
+  319 				read: <>
+  320 				close: <>
+  321 				free: <>
+  322 				read_fatal: 181
+  323 				memchr: <>
+  324 				too_many_lines: void (), <./patch/inp.c 135>
+  325 					free: <>
+  326 					close: <>
+  327 					fatal: 46
+  328 					quotearg: 73
+  329 				strlen: <>
+  330 				memcmp: <>
+  331 				ISSPACE: <>
+  332 				report_revision: void (), <./patch/inp.c 106>
+  333 					quotearg: 73
+  334 					say: 115
+  335 					fatal: 46
+  336 					ask: 206
+  337 			plan_b: void (), <./patch/inp.c 324>
+  338 				fopen: <>
+  339 				pfatal: 102
+  340 				quotearg: 73
+  341 				create_file: 145
+  342 				strlen: <>
+  343 				getc: <>
+  344 				too_many_lines: 324
+  345 				ISSPACE: <>
+  346 				report_revision: 332
+  347 				Fseek: 194
+  348 				xmalloc: 12
+  349 				write: <>
+  350 				write_fatal: 177
+  351 				ferror: <>
+  352 				fclose: <>
+  353 				read_fatal: 181
+  354 			quotearg: 73
+  355 			say: 115
+  356 		another_hunk: int (), <./patch/pch.c 830>
+  357 			free: <>
+  358 			assert: <>
+  359 			file_tell: <>
+  360 			get_line: 288
+  361 			strncmp: if (), <./patch/ansi2knr.c 637>
+  362 			next_intuit_at: 187
+  363 			strcpy: <>
+  364 			fatal: 46
+  365 			format_linenum: 197
+  366 			pch_hunk_beg: LINENUM (), <./patch/pch.c 1871>
+  367 			strnEQ: <>
+  368 			strlen: <>
+  369 			savestr: 121
+  370 			ISDIGIT: if (), <./patch/partime.c 588>
+  371 			remove_prefix: void (), <./patch/util.c 445>
+  372 			scan_linenum: char * (), <./patch/pch.c 800>
+  373 				ISDIGIT: if (), <./patch/partime.c 588>
+  374 				fatal: 46
+  375 				format_linenum: 197
+  376 			grow_hunkmax: bool (), <./patch/pch.c 179>
+  377 				assert: <>
+  378 				realloc: <>
+  379 				memory_fatal: 45
+  380 			malformed: void (), <./patch/pch.c 789>
+  381 				fatal: 46
+  382 				format_linenum: 197
+  383 			incomplete_line: bool (), <./patch/pch.c 1638>
+  384 				file_tell: <>
+  385 				getc: <>
+  386 				Fseek: 194
+  387 			savebuf: 122
+  388 			Fseek: 194
+  389 			say: 115
+  390 			printf: <>
+  391 			sprintf: <>
+  392 			pch_swap: bool (), <./patch/pch.c 1661>
+  393 				set_hunkmax: 188
+  394 				free: <>
+  395 				assert: <>
+  396 			fprintf: <>
+  397 			pch_write_line: bool (), <./patch/pch.c 1860>
+  398 				fwrite: <>
+  399 				write_fatal: 177
+  400 			fflush: <>
+  401 		pch_prefix_context: LINENUM (), <./patch/pch.c 1820>
+  402 		pch_suffix_context: LINENUM (), <./patch/pch.c 1828>
+  403 		locate_hunk: LINENUM (), <./patch/patch.c 846>
+  404 			pch_first: LINENUM (), <./patch/pch.c 1780>
+  405 			pch_ptrn_lines: LINENUM (), <./patch/pch.c 1788>
+  406 			pch_prefix_context: 401
+  407 			pch_suffix_context: 402
+  408 			patch_match: bool (), <./patch/patch.c 1244>
+  409 				pch_ptrn_lines: 405
+  410 				ifetch: char const * (), <./patch/inp.c 430>
+  411 					lseek: <>
+  412 					read: <>
+  413 					read_fatal: 181
+  414 				similar: bool (), <./patch/patch.c 1271>
+  415 				pfetch: char * (), <./patch/pch.c 1852>
+  416 				pch_line_len: size_t (), <./patch/pch.c 1836>
+  417 				memcmp: <>
+  418 			say: 115
+  419 			format_linenum: 197
+  420 		pch_swap: 392
+  421 		say: 115
+  422 		ok_to_reverse: int (), <./patch/util.c 621>
+  423 			va_start: <>
+  424 			vfprintf: 49
+  425 			va_end: <>
+  426 			printf: <>
+  427 			say: 115
+  428 			ask: 206
+  429 		fatal: 46
+  430 		fclose: <>
+  431 		pch_newfirst: LINENUM (), <./patch/pch.c 1796>
+  432 		abort_hunk: void (), <./patch/patch.c 934>
+  433 			pch_end: LINENUM (), <./patch/pch.c 1812>
+  434 			pch_first: 404
+  435 			pch_newfirst: 431
+  436 			pch_ptrn_lines: 405
+  437 			pch_repl_lines: LINENUM (), <./patch/pch.c 1804>
+  438 			fprintf: <>
+  439 			pch_char: char (), <./patch/pch.c 1844>
+  440 			format_linenum: 197
+  441 			pch_write_line: 397
+  442 			fatal: 46
+  443 			ferror: <>
+  444 			write_fatal: 177
+  445 		format_linenum: 197
+  446 		pch_says_nonexistent: 267
+  447 		quotearg: 73
+  448 		apply_hunk: bool (), <./patch/patch.c 992>
+  449 			pch_ptrn_lines: 405
+  450 			pch_end: 433
+  451 			pch_char: 439
+  452 			assert: <>
+  453 			copy_till: bool (), <./patch/patch.c 1185>
+  454 				say: 115
+  455 				ifetch: 410
+  456 				putc: <>
+  457 				fwrite: <>
+  458 				write_fatal: 177
+  459 			fprintf: <>
+  460 			ferror: <>
+  461 			write_fatal: 177
+  462 			pch_write_line: 397
+  463 			say: 115
+  464 			fatal: 46
+  465 			format_linenum: 197
+  466 			pch_hunk_beg: 366
+  467 			putc: <>
+  468 		assert: <>
+  469 		spew_output: bool (), <./patch/patch.c 1216>
+  470 			say: 115
+  471 			format_linenum: 197
+  472 			copy_till: 453
+  473 			fclose: <>
+  474 			write_fatal: 177
+  475 		ignore_signals: void (), <./patch/util.c 787>
+  476 			sigprocmask: <>
+  477 			sigismember: <>
+  478 			signal: <>
+  479 		move_file: void (), <./patch/util.c 61>
+  480 			stat: <>
+  481 			base_name: 7
+  482 			strlen: <>
+  483 			xmalloc: 12
+  484 			memcpy: <>
+  485 			FILESYSTEM_PREFIX_LEN: <>
+  486 			ISSLASH: <>
+  487 			find_backup_file_name: char * (), <./patch/backupfile.c 126>
+  488 				strlen: <>
+  489 				INT_STRLEN_BOUND: <>
+  490 				malloc: <>
+  491 				dir_len: 5
+  492 				memcpy: <>
+  493 				FILESYSTEM_PREFIX_LEN: <>
+  494 				max_backup_version: int (), <./patch/backupfile.c 177>
+  495 					opendir: <>
+  496 					base_len: size_t (), <./patch/basename.c 71>
+  497 						strlen: <>
+  498 						ISSLASH: <>
+  499 					readdir: <>
+  500 					REAL_DIR_ENTRY: <>
+  501 					NLENGTH: <>
+  502 					version_number: int (), <./patch/backupfile.c 211>
+  503 						strncmp: if (), <./patch/ansi2knr.c 637>
+  504 						ISDIGIT: if (), <./patch/partime.c 588>
+  505 					CLOSEDIR: <>
+  506 				base_name: 7
+  507 				sprintf: <>
+  508 				strcpy: <>
+  509 				addext: void (), <./patch/addext.c 62>
+  510 					base_name: 7
+  511 					base_len: 496
+  512 					strlen: <>
+  513 					pathconf: <>
+  514 					ISSLASH: <>
+  515 					strchr: <>
+  516 					strcpy: <>
+  517 			memory_fatal: 45
+  518 			say: 115
+  519 			quotearg: 73
+  520 			unlink: <>
+  521 			creat: <>
+  522 			pfatal: 102
+  523 			makedirs: void (), <./patch/util.c 866>
+  524 				replace_slashes: char * (), <./patch/util.c 824>
+  525 					FILESYSTEM_PREFIX_LEN: <>
+  526 					ISSLASH: <>
+  527 				mkdir: <>
+  528 			close: <>
+  529 			quotearg_n: 74
+  530 			rename: <>
+  531 			free: <>
+  532 			copy_file: 272
+  533 		removedirs: void (), <./patch/util.c 894>
+  534 			strlen: <>
+  535 			ISSLASH: <>
+  536 			rmdir: int (), <./patch/rmdir.c 44>
+  537 				stat: <>
+  538 				S_ISDIR: <>
+  539 				fork: <>
+  540 				execl: <>
+  541 				wait: <>
+  542 			say: 115
+  543 			quotearg: 73
+  544 		pch_timestamp: time_t (), <./patch/pch.c 1772>
+  545 		utime: <>
+  546 		chmod: <>
+  547 		write_fatal: 177
+  548 		strlen: <>
+  549 		strcpy: <>
+  550 		addext: 509
+  551 		free: <>
+  552 		ferror: <>
+  553 		cleanup: 56
+  554 		exit: <>
+  555 		fprintf: <>
+  556 		XARGCASEMATCH: <>
+  557 		ARGMATCH_TO_ARGUMENT: <>
+  558 		fopen: <>
+  559 		malloc: <>
+  560 		test1: int (), <./patch/ansi2knr.c 413>
+  561 		convert1: int (), <./patch/ansi2knr.c 495>
+  562 		skipspace: <>
+  563 		fputs: <>
+  564 		fflush: <>

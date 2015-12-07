@@ -1,0 +1,1009 @@
+    1 	main: int (), <./httpd/server/main.c 438>
+    2 		apr_app_initialize: <>
+    3 		atexit: <>
+    4 		terminate: void (), <./httpd/support/htpasswd.c 151>
+    5 			apr_terminate: <>
+    6 			pressanykey: <>
+    7 		apr_pool_create: <>
+    8 		apr_pool_abort_set: <>
+    9 		abort_on_oom: int (), <./httpd/support/passwd_common.c 53>
+   10 			strlen: <>
+   11 			write: <>
+   12 			abort: <>
+   13 		apr_file_open_stderr: <>
+   14 		apr_xlate_open: <>
+   15 		apr_file_printf: <>
+   16 		exit: <>
+   17 		apr_SHA1InitEBCDIC: <>
+   18 		apr_MD5InitEBCDIC: <>
+   19 		check_args: void (), <./httpd/support/htpasswd.c 159>
+   20 			apr_getopt_init: <>
+   21 			exit: <>
+   22 			apr_getopt: <>
+   23 			parse_common_options: int (), <./httpd/support/passwd_common.c 281>
+   24 				apr_file_printf: <>
+   25 				strtol: <>
+   26 				abort: <>
+   27 			apr_file_printf: <>
+   28 			usage: void (), <./httpd/support/htpasswd.c 93>
+   29 				apr_file_printf: <>
+   30 				exit: <>
+   31 			strlen: <>
+   32 			apr_pstrdup: <>
+   33 			strchr: <>
+   34 		exists: int (), <./httpd/support/htpasswd.c 142>
+   35 			apr_stat: <>
+   36 		accessible: int (), <./httpd/support/htpasswd.c 128>
+   37 			apr_file_open: <>
+   38 			apr_file_close: <>
+   39 		mkrecord: int (), <./httpd/support/htpasswd.c 74>
+   40 			mkhash: int (), <./httpd/support/passwd_common.c 179>
+   41 				apr_file_printf: <>
+   42 				get_password: int (), <./httpd/support/passwd_common.c 120>
+   43 					apr_file_open_stdin: <>
+   44 					apr_file_read_full: <>
+   45 					apr_file_close: <>
+   46 					apr_pstrdup: <>
+   47 					apr_password_get: <>
+   48 					strcmp: <>
+   49 					memset: <>
+   50 					strlen: <>
+   51 					apr_psprintf: <>
+   52 				apr_sha1_base64: <>
+   53 				strlen: <>
+   54 				generate_salt: int (), <./httpd/support/passwd_common.c 71>
+   55 					apr_file_printf: <>
+   56 					abort: <>
+   57 					apr_generate_random_bytes: <>
+   58 					apr_psprintf: <>
+   59 				apr_md5_encode: <>
+   60 				apr_psprintf: <>
+   61 				apr_cpystrn: <>
+   62 				crypt: <>
+   63 				APR_FROM_OS_ERROR: <>
+   64 				apr_pstrdup: <>
+   65 				strcmp: <>
+   66 				memset: <>
+   67 				apr_generate_random_bytes: <>
+   68 				apr_bcrypt_encode: <>
+   69 				abort: <>
+   70 			apr_pstrcat: <>
+   71 			strlen: <>
+   72 		printf: <>
+   73 		apr_temp_dir_get: <>
+   74 		apr_psprintf: <>
+   75 		apr_file_mktemp: <>
+   76 		apr_file_open: <>
+   77 		apr_file_gets: <>
+   78 		strcpy: <>
+   79 		apr_isspace: <>
+   80 		putline: void (), <./httpd/support/passwd_common.c 107>
+   81 			apr_file_puts: <>
+   82 			apr_file_printf: <>
+   83 			apr_file_close: <>
+   84 			exit: <>
+   85 		strchr: <>
+   86 		apr_file_close: <>
+   87 		strcmp: <>
+   88 		strcspn: <>
+   89 		verify: int (), <./httpd/support/htpasswd.c 251>
+   90 			get_password: 42
+   91 			apr_password_validate: <>
+   92 			APR_STATUS_IS_EMISMATCH: <>
+   93 			apr_psprintf: <>
+   94 		apr_file_copy: <>
+   95 		command: apr_status_t (), <./httpd/modules/filters/sed1.c 691>
+   96 			eval_errf: void (), <./httpd/modules/filters/sed1.c 77>
+   97 				va_start: <>
+   98 				apr_pvsprintf: <>
+   99 				va_end: <>
+  100 			wline: apr_status_t (), <./httpd/modules/filters/sed1.c 1010>
+  101 			copy_to_linebuf: void (), <./httpd/modules/filters/sed1.c 183>
+  102 				append_to_linebuf: void (), <./httpd/modules/filters/sed1.c 172>
+  103 					strlen: <>
+  104 					appendmem_to_linebuf: void (), <./httpd/modules/filters/sed1.c 159>
+  105 						grow_line_buffer: void (), <./httpd/modules/filters/sed1.c 127>
+  106 							grow_buffer: void (), <./httpd/modules/filters/sed1.c 94>
+  107 								apr_pcalloc: <>
+  108 								memcpy: <>
+  109 						memcpy: <>
+  110 			apr_snprintf: <>
+  111 			append_to_linebuf: 102
+  112 			copy_to_holdbuf: void (), <./httpd/modules/filters/sed1.c 207>
+  113 				append_to_holdbuf: void (), <./httpd/modules/filters/sed1.c 192>
+  114 					strlen: <>
+  115 					grow_hold_buffer: void (), <./httpd/modules/filters/sed1.c 136>
+  116 						grow_buffer: 106
+  117 					strcpy: <>
+  118 			append_to_holdbuf: 113
+  119 			strlen: <>
+  120 			isprint: <>
+  121 			arout: apr_status_t (), <./httpd/modules/filters/sed1.c 969>
+  122 				command: 95
+  123 				wline: 100
+  124 				apr_file_open: <>
+  125 				apr_file_read: <>
+  126 				apr_file_close: <>
+  127 			substitute: int (), <./httpd/modules/filters/sed1.c 603>
+  128 				match: int (), <./httpd/modules/filters/sed1.c 582>
+  129 					sed_step: int (), <./httpd/modules/filters/regexp.c 358>
+  130 				dosub: apr_status_t (), <./httpd/modules/filters/sed1.c 626>
+  131 					place: char * (), <./httpd/modules/filters/sed1.c 675>
+  132 						grow_gen_buffer: void (), <./httpd/modules/filters/sed1.c 145>
+  133 							grow_buffer: 106
+  134 						memcpy: <>
+  135 					grow_gen_buffer: 132
+  136 					append_to_genbuf: void (), <./httpd/modules/filters/sed1.c 216>
+  137 						strlen: <>
+  138 						grow_gen_buffer: 132
+  139 						strcpy: <>
+  140 					copy_to_linebuf: 101
+  141 			apr_file_printf: <>
+  142 			copy_to_genbuf: void (), <./httpd/modules/filters/sed1.c 231>
+  143 				strlen: <>
+  144 				grow_gen_buffer: 132
+  145 		apr_terminate: <>
+  146 		apr_getopt_init: <>
+  147 		apr_getopt: <>
+  148 		APR_STATUS_IS_EOF: <>
+  149 		usage: void (), <./httpd/support/fcgistarter.c 37>
+  150 			fprintf: <>
+  151 			exit: <>
+  152 		atoi: <>
+  153 		apr_sockaddr_info_get: <>
+  154 		exit_error: void (), <./httpd/support/fcgistarter.c 44>
+  155 			fprintf: <>
+  156 			apr_strerror: <>
+  157 			exit: <>
+  158 		apr_socket_create: <>
+  159 		apr_socket_opt_set: <>
+  160 		apr_socket_bind: <>
+  161 		apr_socket_listen: <>
+  162 		apr_proc_detach: <>
+  163 		apr_proc_fork: <>
+  164 		apr_os_file_put: <>
+  165 		apr_os_sock_get: <>
+  166 		apr_file_dup2: <>
+  167 		execl: <>
+  168 		apr_socket_close: <>
+  169 		terminate: void (), <./httpd/support/htdigest.c 178>
+  170 			apr_terminate: <>
+  171 			pressanykey: <>
+  172 		apr_signal: <>
+  173 		interrupted: void (), <./httpd/support/htdigest.c 172>
+  174 			apr_file_printf: <>
+  175 			cleanup_tempfile_and_exit: void (), <./httpd/support/htdigest.c 70>
+  176 				apr_file_close: <>
+  177 				exit: <>
+  178 		usage: void (), <./httpd/support/htdigest.c 165>
+  179 			apr_file_printf: <>
+  180 			exit: <>
+  181 		apr_cpystrn: <>
+  182 		add_password: void (), <./httpd/support/htdigest.c 125>
+  183 			apr_password_get: <>
+  184 			apr_file_printf: <>
+  185 			cleanup_tempfile_and_exit: 175
+  186 			strcmp: <>
+  187 			apr_snprintf: <>
+  188 			apr_md5_init: <>
+  189 			apr_md5_set_xlate: <>
+  190 			apr_md5_update: <>
+  191 			strlen: <>
+  192 			apr_md5_final: <>
+  193 		cleanup_tempfile_and_exit: 175
+  194 		get_line: int (), <./httpd/support/htdigest.c 93>
+  195 			apr_file_getc: <>
+  196 		putline: void (), <./httpd/support/htdigest.c 116>
+  197 			apr_file_putc: <>
+  198 		getword: void (), <./httpd/support/htdigest.c 78>
+  199 		apr_filepath_name_get: <>
+  200 		usage: void (), <./httpd/support/logresolve.c 116>
+  201 			apr_file_printf: <>
+  202 			exit: <>
+  203 		apr_pstrdup: <>
+  204 		apr_file_open_stdout: <>
+  205 		apr_file_open_stdin: <>
+  206 		apr_palloc: <>
+  207 		apr_file_buffer_set: <>
+  208 		apr_hash_make: <>
+  209 		apr_isxdigit: <>
+  210 		apr_file_puts: <>
+  211 		apr_hash_get: <>
+  212 		apr_getnameinfo: <>
+  213 		apr_hash_set: <>
+  214 		apr_hash_pool_get: <>
+  215 		memcmp: <>
+  216 		apr_pool_clear: <>
+  217 		apr_file_flush: <>
+  218 		print_statistics: void (), <./httpd/support/logresolve.c 92>
+  219 			apr_file_printf: <>
+  220 		SSLv23_client_method: <>
+  221 		abort_on_oom: int (), <./httpd/support/ab.c 429>
+  222 			fprintf: <>
+  223 			exit: <>
+  224 		fprintf: <>
+  225 		apr_base64init_ebcdic: <>
+  226 		err: void (), <./httpd/support/ab.c 373>
+  227 			fprintf: <>
+  228 			printf: <>
+  229 			exit: <>
+  230 		xstrdup: char * (), <./httpd/support/ab.c 417>
+  231 			strdup: <>
+  232 			fprintf: <>
+  233 			strlen: <>
+  234 			exit: <>
+  235 		apr_time_from_sec: <>
+  236 		open_postfile: apr_status_t (), <./httpd/support/ab.c 2049>
+  237 			apr_file_open: <>
+  238 			fprintf: <>
+  239 			apr_strerror: <>
+  240 			apr_file_info_get: <>
+  241 			xmalloc: void * (), <./httpd/support/ab.c 395>
+  242 				malloc: <>
+  243 				fprintf: <>
+  244 				exit: <>
+  245 			apr_file_read_full: <>
+  246 			apr_file_close: <>
+  247 		apr_pstrcat: <>
+  248 		apr_base64_encode_len: <>
+  249 		strlen: <>
+  250 		apr_base64_encode: <>
+  251 		strncasecmp: <>
+  252 		usage: void (), <./httpd/support/ab.c 1906>
+  253 			fprintf: <>
+  254 			exit: <>
+  255 		copyright: void (), <./httpd/support/ab.c 1888>
+  256 			printf: <>
+  257 		strdup: <>
+  258 		SSLv2_client_method: <>
+  259 		SSLv3_client_method: <>
+  260 		TLSv1_1_client_method: <>
+  261 		TLSv1_2_client_method: <>
+  262 		TLSv1_client_method: <>
+  263 		parse_url: int (), <./httpd/support/ab.c 1979>
+  264 			apr_pstrdup: <>
+  265 			strlen: <>
+  266 			strncmp: <>
+  267 			fprintf: <>
+  268 			exit: <>
+  269 			strchr: <>
+  270 			apr_pstrmemdup: <>
+  271 			apr_parse_addr_port: <>
+  272 			apr_psprintf: <>
+  273 		R_malloc_init: <>
+  274 		CRYPTO_malloc_init: <>
+  275 		SSL_load_error_strings: <>
+  276 		SSL_library_init: <>
+  277 		BIO_new_fp: <>
+  278 		SSL_CTX_new: <>
+  279 		BIO_printf: <>
+  280 		ERR_print_errors: <>
+  281 		SSL_CTX_set_options: <>
+  282 		SSL_CTX_set_mode: <>
+  283 		SSL_CTX_set_cipher_list: <>
+  284 		ERR_print_errors_fp: <>
+  285 		SSL_CTX_set_info_callback: <>
+  286 		ssl_state_cb: void (), <./httpd/support/ab.c 503>
+  287 			BIO_printf: <>
+  288 			SSL_alert_type_string_long: <>
+  289 			SSL_alert_desc_string_long: <>
+  290 			SSL_in_connect_init: <>
+  291 			SSL_state_string_long: <>
+  292 		test: void (), <./httpd/support/ab.c 1623>
+  293 			apr_pstrdup: <>
+  294 			printf: <>
+  295 			fflush: <>
+  296 			xcalloc: void * (), <./httpd/support/ab.c 406>
+  297 				calloc: <>
+  298 				fprintf: <>
+  299 				exit: <>
+  300 			apr_pollset_create: <>
+  301 			apr_err: void (), <./httpd/support/ab.c 383>
+  302 				fprintf: <>
+  303 				apr_strerror: <>
+  304 				printf: <>
+  305 				exit: <>
+  306 			apr_pstrcat: <>
+  307 			apr_snprintf: <>
+  308 			err: 226
+  309 			strlen: <>
+  310 			xmalloc: 241
+  311 			strcpy: <>
+  312 			memcpy: <>
+  313 			apr_xlate_conv_buffer: <>
+  314 			fprintf: <>
+  315 			exit: <>
+  316 			apr_sockaddr_info_get: <>
+  317 			apr_time_now: <>
+  318 			apr_time_from_sec: <>
+  319 			apr_signal: <>
+  320 			output_results: void (), <./httpd/support/ab.c 807>
+  321 				apr_time_now: <>
+  322 				printf: <>
+  323 				ap_min: <>
+  324 				ap_max: <>
+  325 				sqrt: <>
+  326 				qsort: <>
+  327 				compradre: int (), <./httpd/support/ab.c 769>
+  328 				compri: int (), <./httpd/support/ab.c 787>
+  329 				time: <>
+  330 				compwait: int (), <./httpd/support/ab.c 798>
+  331 				comprando: int (), <./httpd/support/ab.c 778>
+  332 				ap_round_ms: <>
+  333 				ap_double_ms: <>
+  334 				SANE: <>
+  335 				fopen: <>
+  336 				perror: <>
+  337 				exit: <>
+  338 				fprintf: <>
+  339 				fclose: <>
+  340 				apr_ctime: <>
+  341 				apr_time_sec: <>
+  342 			start_connect: void (), <./httpd/support/ab.c 1220>
+  343 				apr_pool_clear: <>
+  344 				apr_pool_create: <>
+  345 				apr_socket_create: <>
+  346 				apr_err: 301
+  347 				apr_socket_bind: <>
+  348 				apr_socket_opt_set: <>
+  349 				apr_time_now: <>
+  350 				SSL_new: <>
+  351 				BIO_printf: <>
+  352 				ERR_print_errors: <>
+  353 				exit: <>
+  354 				ssl_rand_seed: void (), <./httpd/support/ab.c 539>
+  355 					time: <>
+  356 					RAND_seed: <>
+  357 					getpid: <>
+  358 					ssl_rand_choosenum: int (), <./httpd/support/ab.c 525>
+  359 						srand: <>
+  360 						time: <>
+  361 						apr_snprintf: <>
+  362 						rand: <>
+  363 						atoi: <>
+  364 				apr_os_sock_get: <>
+  365 				BIO_new_socket: <>
+  366 				SSL_set_bio: <>
+  367 				SSL_set_connect_state: <>
+  368 				BIO_set_callback: <>
+  369 				ssl_print_cb: long (), <./httpd/support/ab.c 482>
+  370 					BIO_get_callback_arg: <>
+  371 					BIO_printf: <>
+  372 					BIO_dump: <>
+  373 				BIO_set_callback_arg: <>
+  374 				apr_socket_connect: <>
+  375 				APR_STATUS_IS_EINPROGRESS: <>
+  376 				set_conn_state: void (), <./httpd/support/ab.c 459>
+  377 					set_polled_events: void (), <./httpd/support/ab.c 437>
+  378 						apr_pollset_remove: <>
+  379 						apr_err: 301
+  380 						apr_pollset_add: <>
+  381 				apr_socket_close: <>
+  382 				fprintf: <>
+  383 				start_connect: 342
+  384 				ssl_proceed_handshake: void (), <./httpd/support/ab.c 643>
+  385 					SSL_do_handshake: <>
+  386 					SSL_get_error: <>
+  387 					ssl_print_info: void (), <./httpd/support/ab.c 616>
+  388 						BIO_printf: <>
+  389 						SSL_get_peer_cert_chain: <>
+  390 						SK_NUM: <>
+  391 						SK_VALUE: <>
+  392 						ssl_print_cert_info: void (), <./httpd/support/ab.c 584>
+  393 							BIO_printf: <>
+  394 							X509_get_version: <>
+  395 							ASN1_UTCTIME_print: <>
+  396 							X509_get_notBefore: <>
+  397 							X509_get_notAfter: <>
+  398 							X509_get_pubkey: <>
+  399 							EVP_PKEY_bits: <>
+  400 							EVP_PKEY_free: <>
+  401 							X509_get_issuer_name: <>
+  402 							X509_NAME_oneline: <>
+  403 							X509_get_subject_name: <>
+  404 							X509_get_ext_count: <>
+  405 						SSL_get_peer_certificate: <>
+  406 						X509_free: <>
+  407 						ssl_print_connection_info: int (), <./httpd/support/ab.c 567>
+  408 							BIO_printf: <>
+  409 							SSL_get_version: <>
+  410 							SSL_get_current_cipher: <>
+  411 							SSL_CIPHER_get_version: <>
+  412 							SSL_CIPHER_get_name: <>
+  413 							SSL_CIPHER_get_bits: <>
+  414 						SSL_SESSION_print: <>
+  415 						SSL_get_session: <>
+  416 					SSL_get_current_cipher: <>
+  417 					SSL_CIPHER_get_bits: <>
+  418 					SSL_get_peer_certificate: <>
+  419 					EVP_PKEY_bits: <>
+  420 					X509_get_pubkey: <>
+  421 					xmalloc: 241
+  422 					apr_snprintf: <>
+  423 					SSL_get_version: <>
+  424 					SSL_CIPHER_get_name: <>
+  425 					write_request: void (), <./httpd/support/ab.c 702>
+  426 						apr_time_now: <>
+  427 						apr_socket_timeout_set: <>
+  428 						printf: <>
+  429 						close_connection: void (), <./httpd/support/ab.c 1333>
+  430 							apr_time_now: <>
+  431 							ap_max: <>
+  432 							fprintf: <>
+  433 							fflush: <>
+  434 							set_conn_state: 376
+  435 							SSL_shutdown: <>
+  436 							SSL_free: <>
+  437 							apr_socket_close: <>
+  438 							start_connect: 342
+  439 						SSL_write: <>
+  440 						BIO_printf: <>
+  441 						ERR_print_errors: <>
+  442 						apr_socket_send: <>
+  443 						APR_STATUS_IS_EAGAIN: <>
+  444 						set_conn_state: 376
+  445 					set_polled_events: 377
+  446 					BIO_printf: <>
+  447 					ERR_print_errors: <>
+  448 					close_connection: 429
+  449 				write_request: 425
+  450 			apr_pollset_poll: <>
+  451 			APR_STATUS_IS_EINTR: <>
+  452 			SSL_in_init: <>
+  453 			ssl_proceed_handshake: 384
+  454 			read_connection: void (), <./httpd/support/ab.c 1385>
+  455 				SSL_read: <>
+  456 				SSL_get_error: <>
+  457 				close_connection: 429
+  458 				BIO_printf: <>
+  459 				ERR_print_errors: <>
+  460 				apr_socket_recv: <>
+  461 				APR_STATUS_IS_EAGAIN: <>
+  462 				APR_STATUS_IS_EOF: <>
+  463 				fprintf: <>
+  464 				apr_strerror: <>
+  465 				apr_err: 301
+  466 				apr_time_now: <>
+  467 				apr_xlate_conv_buffer: <>
+  468 				exit: <>
+  469 				memcpy: <>
+  470 				printf: <>
+  471 				strstr: <>
+  472 				set_conn_state: 376
+  473 				apr_socket_close: <>
+  474 				err: 226
+  475 				start_connect: 342
+  476 				strlen: <>
+  477 				strncpy: <>
+  478 				strcpy: <>
+  479 				atoi: <>
+  480 				ap_max: <>
+  481 				fflush: <>
+  482 				write_request: 425
+  483 			apr_socket_connect: <>
+  484 			set_conn_state: 376
+  485 			apr_socket_close: <>
+  486 			write_request: 425
+  487 			output_html_results: void (), <./httpd/support/ab.c 1085>
+  488 				printf: <>
+  489 				ap_min: <>
+  490 				ap_max: <>
+  491 				ap_round_ms: <>
+  492 		apr_pool_destroy: <>
+  493 		oom: int (), <./httpd/support/htcacheclean.c 164>
+  494 			exit: <>
+  495 		setterm: void (), <./httpd/support/htcacheclean.c 153>
+  496 			apr_file_printf: <>
+  497 		usage: void (), <./httpd/support/htcacheclean.c 1270>
+  498 			apr_file_printf: <>
+  499 			exit: <>
+  500 		usage_repeated_arg: void (), <./httpd/support/htcacheclean.c 1345>
+  501 			usage: 497
+  502 			apr_psprintf: <>
+  503 		apr_atoi64: <>
+  504 		apr_strtoff: <>
+  505 		apr_filepath_set: <>
+  506 		delete_url: apr_status_t (), <./httpd/support/htcacheclean.c 1230>
+  507 			apr_md5_init: <>
+  508 			apr_md5_update: <>
+  509 			strlen: <>
+  510 			apr_md5_final: <>
+  511 			find_directory: apr_status_t (), <./httpd/support/htcacheclean.c 1136>
+  512 				apr_pstrcat: <>
+  513 				apr_dir_open: <>
+  514 				apr_file_printf: <>
+  515 				apr_dir_read: <>
+  516 				strlen: <>
+  517 				strncmp: <>
+  518 				find_directory: 511
+  519 				strcmp: <>
+  520 				apr_dir_close: <>
+  521 				remove: <>
+  522 				apr_file_remove: <>
+  523 				APR_STATUS_IS_ENOENT: <>
+  524 				remove_directory: apr_status_t (), <./httpd/support/htcacheclean.c 1079>
+  525 					apr_dir_open: <>
+  526 					APR_STATUS_IS_ENOENT: <>
+  527 					apr_file_printf: <>
+  528 					apr_dir_read: <>
+  529 					strcmp: <>
+  530 					remove_directory: 524
+  531 					apr_pstrcat: <>
+  532 					apr_file_remove: <>
+  533 					apr_dir_close: <>
+  534 					apr_dir_remove: <>
+  535 				apr_dir_remove: <>
+  536 		apr_filepath_get: <>
+  537 		log_pid: void (), <./httpd/support/htcacheclean.c 1351>
+  538 			getpid: <>
+  539 			apr_file_open: <>
+  540 			apr_file_printf: <>
+  541 			exit: <>
+  542 		list_urls: int (), <./httpd/support/htcacheclean.c 406>
+  543 			apr_pool_create: <>
+  544 			apr_dir_open: <>
+  545 			apr_dir_read: <>
+  546 			strcmp: <>
+  547 			list_urls: 542
+  548 			apr_pstrcat: <>
+  549 			strchr: <>
+  550 			strcasecmp: if (), <./httpd/modules/proxy/mod_proxy_http.c 1062>
+  551 			apr_file_open: <>
+  552 			apr_file_read_full: <>
+  553 			apr_file_seek: <>
+  554 			apr_palloc: <>
+  555 			apr_file_info_get: <>
+  556 			apr_stat: <>
+  557 			apr_pstrndup: <>
+  558 			apr_file_printf: <>
+  559 			round_up: apr_size_t (), <./httpd/support/htcacheclean.c 256>
+  560 			apr_file_close: <>
+  561 			apr_dir_close: <>
+  562 			apr_pool_destroy: <>
+  563 			apr_sleep: <>
+  564 		apr_time_now: <>
+  565 		APR_RING_INIT: <>
+  566 		apr_sleep: <>
+  567 		apr_stat: <>
+  568 		process_dir: int (), <./httpd/support/htcacheclean.c 595>
+  569 			APR_RING_ENTRY: <>
+  570 			APR_RING_INIT: <>
+  571 			apr_pool_create: <>
+  572 			apr_hash_make: <>
+  573 			apr_dir_open: <>
+  574 			apr_dir_read: <>
+  575 			strcmp: <>
+  576 			apr_pcalloc: <>
+  577 			apr_pstrcat: <>
+  578 			APR_RING_INSERT_TAIL: <>
+  579 			apr_dir_close: <>
+  580 			APR_RING_FIRST: <>
+  581 			APR_RING_SENTINEL: <>
+  582 			APR_RING_NEXT: <>
+  583 			strrchr: <>
+  584 			strchr: <>
+  585 			strncasecmp: <>
+  586 			strlen: <>
+  587 			apr_sleep: <>
+  588 			apr_stat: <>
+  589 			process_dir: 568
+  590 			apr_hash_set: <>
+  591 			strcasecmp: if (), <./httpd/modules/proxy/mod_proxy_http.c 1062>
+  592 			apr_hash_get: <>
+  593 			apr_hash_first: <>
+  594 			apr_hash_next: <>
+  595 			apr_hash_this: <>
+  596 			apr_file_open: <>
+  597 			apr_file_read_full: <>
+  598 			apr_file_seek: <>
+  599 			apr_file_close: <>
+  600 			apr_palloc: <>
+  601 			apr_pstrdup: <>
+  602 			delete_file: void (), <./httpd/support/htcacheclean.c 322>
+  603 				apr_pool_create: <>
+  604 				apr_pstrcat: <>
+  605 				apr_stat: <>
+  606 				apr_file_remove: <>
+  607 				apr_pool_destroy: <>
+  608 				apr_sleep: <>
+  609 				delete_parent: void (), <./httpd/support/htcacheclean.c 266>
+  610 					apr_pool_create: <>
+  611 					apr_pstrdup: <>
+  612 					strrchr: <>
+  613 					apr_pstrcat: <>
+  614 					apr_dir_remove: <>
+  615 					strstr: <>
+  616 					apr_pstrndup: <>
+  617 					apr_file_remove: <>
+  618 					apr_pool_destroy: <>
+  619 					apr_sleep: <>
+  620 			delete_entry: void (), <./httpd/support/htcacheclean.c 358>
+  621 				apr_pool_create: <>
+  622 				apr_pstrcat: <>
+  623 				apr_stat: <>
+  624 				apr_file_remove: <>
+  625 				apr_pool_destroy: <>
+  626 				apr_sleep: <>
+  627 				delete_parent: 609
+  628 			apr_time_now: <>
+  629 			apr_pool_destroy: <>
+  630 		purge: void (), <./httpd/support/htcacheclean.c 964>
+  631 			APR_RING_FIRST: <>
+  632 			APR_RING_SENTINEL: <>
+  633 			APR_RING_NEXT: <>
+  634 			round_up: 559
+  635 			printstats: void (), <./httpd/support/htcacheclean.c 179>
+  636 				apr_file_printf: <>
+  637 			delete_entry: 620
+  638 			APR_RING_REMOVE: <>
+  639 			APR_RING_EMPTY: <>
+  640 		terminate: void (), <./httpd/support/htdbm.c 81>
+  641 			apr_terminate: <>
+  642 			pressanykey: <>
+  643 		htdbm_init: apr_status_t (), <./httpd/support/htdbm.c 105>
+  644 			apr_pool_create: <>
+  645 			apr_pool_abort_set: <>
+  646 			abort_on_oom: 9
+  647 			apr_file_open_stderr: <>
+  648 			apr_signal: <>
+  649 			htdbm_interrupted: void (), <./httpd/support/htdbm.c 98>
+  650 				htdbm_terminate: void (), <./httpd/support/htdbm.c 89>
+  651 					apr_dbm_close: <>
+  652 				fprintf: <>
+  653 				exit: <>
+  654 			apr_pcalloc: <>
+  655 			apr_xlate_open: <>
+  656 			fprintf: <>
+  657 			apr_SHA1InitEBCDIC: <>
+  658 			apr_MD5InitEBCDIC: <>
+  659 		apr_strerror: <>
+  660 		parse_common_options: 23
+  661 		htdbm_usage: void (), <./httpd/support/htdbm.c 276>
+  662 			fprintf: <>
+  663 			exit: <>
+  664 		htdbm_open: apr_status_t (), <./httpd/support/htdbm.c 144>
+  665 			apr_dbm_open_ex: <>
+  666 		htdbm_valid_username: apr_status_t (), <./httpd/support/htdbm.c 263>
+  667 			strlen: <>
+  668 			fprintf: <>
+  669 			strchr: <>
+  670 		get_password: 42
+  671 		htdbm_verify: apr_status_t (), <./httpd/support/htdbm.c 190>
+  672 			strlen: <>
+  673 			apr_dbm_exists: <>
+  674 			apr_dbm_fetch: <>
+  675 			apr_pstrndup: <>
+  676 			strchr: <>
+  677 			apr_pstrdup: <>
+  678 			apr_password_validate: <>
+  679 		APR_STATUS_IS_ENOENT: <>
+  680 		htdbm_del: apr_status_t (), <./httpd/support/htdbm.c 178>
+  681 			strlen: <>
+  682 			apr_dbm_exists: <>
+  683 			apr_dbm_delete: <>
+  684 		htdbm_list: apr_status_t (), <./httpd/support/htdbm.c 211>
+  685 			apr_dbm_firstkey: <>
+  686 			fprintf: <>
+  687 			apr_dbm_fetch: <>
+  688 			memchr: <>
+  689 			apr_dbm_nextkey: <>
+  690 		htdbm_make: int (), <./httpd/support/htdbm.c 247>
+  691 			mkhash: 40
+  692 			fprintf: <>
+  693 			apr_pstrdup: <>
+  694 		htdbm_save: apr_status_t (), <./httpd/support/htdbm.c 155>
+  695 			strlen: <>
+  696 			apr_dbm_exists: <>
+  697 			apr_pstrcat: <>
+  698 			apr_dbm_store: <>
+  699 		htdbm_terminate: 650
+  700 		getgrnam: <>
+  701 		setgid: <>
+  702 		perror: <>
+  703 		tolower: <>
+  704 		GetCurrentProcess: <>
+  705 		GetProcessWindowStation: <>
+  706 		printerr: void (), <./httpd/support/win32/wintty.c 64>
+  707 			va_start: <>
+  708 			wvsprintf: <>
+  709 			OutputDebugString: <>
+  710 		GetLastError: <>
+  711 		GetUserObjectInformation: <>
+  712 		strnicmp: <>
+  713 		SetLastError: <>
+  714 		GetStdHandle: <>
+  715 		DuplicateHandle: <>
+  716 		CloseHandle: <>
+  717 		FreeConsole: <>
+  718 		GetThreadDesktop: <>
+  719 		GetCurrentThreadId: <>
+  720 		CloseWindowStation: <>
+  721 		OpenWindowStation: <>
+  722 		SetProcessWindowStation: <>
+  723 		OpenDesktop: <>
+  724 		SetThreadDesktop: <>
+  725 		GetCommandLine: <>
+  726 		GetModuleFileName: <>
+  727 		memset: <>
+  728 		CreateProcess: <>
+  729 		ResumeThread: <>
+  730 		WaitForSingleObject: <>
+  731 		GetExitCodeProcess: <>
+  732 		AllocConsole: <>
+  733 		SetConsoleTitle: <>
+  734 		CreateFile: <>
+  735 		GetConsoleMode: <>
+  736 		SetConsoleMode: <>
+  737 		CreateThread: <>
+  738 		feedback: DWORD WINAPI (), <./httpd/support/win32/wintty.c 361>
+  739 			ReadFile: <>
+  740 			WriteFile: <>
+  741 			printerr: 706
+  742 			GetLastError: <>
+  743 		ReadFile: <>
+  744 		WriteFile: <>
+  745 		GetConsoleTitle: <>
+  746 		strcat: <>
+  747 		CloseDesktop: <>
+  748 		usage: void (), <./httpd/support/httxt2dbm.c 54>
+  749 			apr_file_printf: <>
+  750 		apr_dbm_open_ex: <>
+  751 		APR_STATUS_IS_ENOTIMPL: <>
+  752 		to_dbm: apr_status_t (), <./httpd/support/httxt2dbm.c 109>
+  753 			apr_pool_create: <>
+  754 			apr_file_gets: <>
+  755 			apr_isspace: <>
+  756 			apr_pstrmemdup: <>
+  757 			apr_pool_clear: <>
+  758 			apr_file_printf: <>
+  759 			apr_dbm_store: <>
+  760 		apr_dbm_close: <>
+  761 		usage: void (), <./httpd/support/rotatelogs.c 100>
+  762 			fprintf: <>
+  763 			exit: <>
+  764 		get_time_or_size: const char * (), <./httpd/support/rotatelogs.c 474>
+  765 			strchr: <>
+  766 			atoi: <>
+  767 		dumpConfig: void (), <./httpd/support/rotatelogs.c 189>
+  768 			fprintf: <>
+  769 		doRotate: void (), <./httpd/support/rotatelogs.c 361>
+  770 			get_now: int (), <./httpd/support/rotatelogs.c 158>
+  771 				apr_time_now: <>
+  772 				apr_time_exp_lt: <>
+  773 				apr_time_sec: <>
+  774 			apr_time_from_sec: <>
+  775 			apr_time_exp_gmt: <>
+  776 			apr_strftime: <>
+  777 			apr_snprintf: <>
+  778 			apr_pool_create: <>
+  779 			fprintf: <>
+  780 			apr_file_open: <>
+  781 			post_rotate: void (), <./httpd/support/rotatelogs.c 257>
+  782 				apr_file_remove: <>
+  783 				fprintf: <>
+  784 				apr_file_link: <>
+  785 				apr_strerror: <>
+  786 				exit: <>
+  787 				apr_proc_wait_all_procs: <>
+  788 				apr_procattr_create: <>
+  789 				apr_procattr_error_check_set: <>
+  790 				apr_procattr_cmdtype_set: <>
+  791 				apr_proc_create: <>
+  792 			close_logfile: void (), <./httpd/support/rotatelogs.c 177>
+  793 				fprintf: <>
+  794 				apr_file_close: <>
+  795 				apr_pool_destroy: <>
+  796 			apr_strerror: <>
+  797 			exit: <>
+  798 			apr_pool_destroy: <>
+  799 			truncate_and_write_error: void (), <./httpd/support/rotatelogs.c 335>
+  800 				strlen: <>
+  801 				apr_file_trunc: <>
+  802 				fprintf: <>
+  803 				exit: <>
+  804 				apr_file_write_full: <>
+  805 		get_now: 770
+  806 		apr_poll: <>
+  807 		apr_file_read: <>
+  808 		checkRotate: void (), <./httpd/support/rotatelogs.c 217>
+  809 			apr_file_info_get: <>
+  810 			get_now: 770
+  811 			fprintf: <>
+  812 			exit: <>
+  813 		apr_file_write_full: <>
+  814 		apr_file_seek: <>
+  815 		apr_snprintf: <>
+  816 		truncate_and_write_error: 799
+  817 		getopt: <>
+  818 		usage: void (), <./httpd/test/test_limits.c 72>
+  819 			fprintf: <>
+  820 			exit: <>
+  821 		gethostbyname: <>
+  822 		memcpy: <>
+  823 		htons: <>
+  824 		socket: <>
+  825 		connect: <>
+  826 		fdopen: <>
+  827 		ferror: <>
+  828 		fflush: <>
+  829 		read: <>
+  830 		write: <>
+  831 		fclose: <>
+  832 		opendir: <>
+  833 		readdir: <>
+  834 		sprintf: <>
+  835 		fopen: <>
+  836 		fgets: <>
+  837 		checkmask: int (), <./httpd/test/cls.c 33>
+  838 			isupper: <>
+  839 			islower: <>
+  840 			isdigit: <>
+  841 			isxdigit: <>
+  842 		hex2sec: int (), <./httpd/test/cls.c 69>
+  843 			isdigit: <>
+  844 			isupper: <>
+  845 		strncmp: <>
+  846 		gmtime: <>
+  847 		strftime: <>
+  848 		closedir: <>
+  849 		get_shared_mem: void * (), <./httpd/test/time-sem.c 441>
+  850 			mmap: <>
+  851 			perror: <>
+  852 			exit: <>
+  853 			shmget: <>
+  854 			sbrk: <>
+  855 			shmat: <>
+  856 			shmctl: <>
+  857 		accept_mutex_init: void (), <./httpd/test/time-sem.c 369>
+  858 			printf: <>
+  859 			open: <>
+  860 			perror: <>
+  861 			fprintf: <>
+  862 			exit: <>
+  863 			unlink: <>
+  864 			semget: <>
+  865 			semctl: <>
+  866 			sigfillset: <>
+  867 			sigdelset: <>
+  868 			mmap: <>
+  869 			close: <>
+  870 			pthread_mutexattr_init: <>
+  871 			pthread_mutexattr_setpshared: <>
+  872 			pthread_mutex_init: <>
+  873 			usconfig: <>
+  874 			usinit: <>
+  875 			usnewlock: <>
+  876 		accept_mutex_on: void (), <./httpd/test/time-sem.c 395>
+  877 			fcntl: <>
+  878 			perror: <>
+  879 			exit: <>
+  880 			flock: <>
+  881 			sigprocmask: <>
+  882 			semop: <>
+  883 			pthread_mutex_lock: <>
+  884 			ussetlock: <>
+  885 			fprintf: <>
+  886 		fork: <>
+  887 		accept_mutex_child_init: void (), <./httpd/test/time-sem.c 158>
+  888 			open: <>
+  889 			perror: <>
+  890 			exit: <>
+  891 		accept_mutex_off: void (), <./httpd/test/time-sem.c 409>
+  892 			fcntl: <>
+  893 			perror: <>
+  894 			exit: <>
+  895 			flock: <>
+  896 			semop: <>
+  897 			sigprocmask: <>
+  898 			pthread_mutex_unlock: <>
+  899 			usunsetlock: <>
+  900 		puts: <>
+  901 		gettimeofday: <>
+  902 		wait: <>
+  903 		accept_mutex_cleanup: void (), <./httpd/test/time-sem.c 167>
+  904 			unlink: <>
+  905 		apr_pool_alloc_init: <>
+  906 		gets: <>
+  907 		ap_find_list_item: <>
+  908 		select: <>
+  909 		ap_get_list_item: <>
+  910 		inet_addr: <>
+  911 		setsockopt: <>
+  912 		writev: <>
+  913 		apr_isalnum: <>
+  914 		apr_iscntrl: <>
+  915 		apr_isprint: <>
+  916 		APR_OPTIONAL_FN_TYPE: <>
+  917 		ap_signal_server: int (), <./httpd/server/mpm_unix.c 768>
+  918 			ap_read_pid: <>
+  919 			APR_STATUS_IS_ENOENT: <>
+  920 			ap_log_error: <>
+  921 			APLOGNO: <>
+  922 			kill: <>
+  923 			apr_psprintf: <>
+  924 			strcmp: <>
+  925 			printf: <>
+  926 			send_signal: int (), <./httpd/server/mpm_unix.c 758>
+  927 				kill: <>
+  928 				ap_log_error: <>
+  929 				APLOGNO: <>
+  930 		signal_server: <>
+  931 		AP_MONCONTROL: <>
+  932 		init_process: process_rec * (), <./httpd/server/main.c 276>
+  933 			stat: <>
+  934 			apr_app_initialize: <>
+  935 			apr_pool_create: <>
+  936 			apr_ctime: <>
+  937 			apr_time_now: <>
+  938 			fprintf: <>
+  939 			apr_terminate: <>
+  940 			exit: <>
+  941 			apr_pool_abort_set: <>
+  942 			abort_on_oom: int (), <./httpd/server/main.c 270>
+  943 				ap_abort_on_oom: <>
+  944 			apr_pool_tag: <>
+  945 			ap_open_stderr_log: <>
+  946 			apr_palloc: <>
+  947 			apr_filepath_name_get: <>
+  948 		ap_init_rng: <>
+  949 		abort_on_oom: 942
+  950 		apr_pool_parent_get: <>
+  951 		ap_init_ebcdic: apr_status_t (), <./httpd/server/util_ebcdic.c 31>
+  952 			apr_xlate_open: <>
+  953 			ap_log_error: <>
+  954 			APLOGNO: <>
+  955 			apr_MD5InitEBCDIC: <>
+  956 			apr_base64init_ebcdic: <>
+  957 			apr_SHA1InitEBCDIC: <>
+  958 		destroy_and_exit_process: void (), <./httpd/server/main.c 252>
+  959 			apr_sleep: <>
+  960 			apr_pool_destroy: <>
+  961 			apr_terminate: <>
+  962 			exit: <>
+  963 		apr_pool_tag: <>
+  964 		apr_array_make: <>
+  965 		ap_setup_prelinked_modules: <>
+  966 		ap_log_error: <>
+  967 		APLOGNO: <>
+  968 		ap_run_rewrite_args: <>
+  969 		apr_array_push: <>
+  970 		ap_parse_log_level: <>
+  971 		usage: void (), <./httpd/server/main.c 328>
+  972 			strlen: <>
+  973 			ap_log_error: <>
+  974 			destroy_and_exit_process: 958
+  975 		ap_get_server_description: <>
+  976 		ap_get_server_built: <>
+  977 		ap_show_modules: <>
+  978 		ap_show_mpm: <>
+  979 		show_compile_settings: void (), <./httpd/server/main.c 94>
+  980 			printf: <>
+  981 			ap_get_server_description: <>
+  982 			ap_get_server_built: <>
+  983 			apr_version_string: <>
+  984 			apu_version_string: <>
+  985 			show_mpm_settings: void (), <./httpd/server/main.c 54>
+  986 				printf: <>
+  987 				ap_show_mpm: <>
+  988 				ap_mpm_query: <>
+  989 		ap_replace_stderr_log: <>
+  990 		ap_read_config: <>
+  991 		apr_pool_cleanup_register: <>
+  992 		ap_pool_cleanup_set_null: <>
+  993 		apr_hook_sort_all: <>
+  994 		ap_run_pre_config: <>
+  995 		ap_process_config_tree: <>
+  996 		ap_fixup_virtual_hosts: <>
+  997 		ap_fini_vhost_config: <>
+  998 		ap_run_check_config: <>
+  999 		ap_show_directives: <>
+ 1000 		ap_run_test_config: <>
+ 1001 		APR_RETRIEVE_OPTIONAL_FN: <>
+ 1002 		ap_run_open_logs: <>
+ 1003 		ap_run_post_config: <>
+ 1004 		apr_hook_deregister_all: <>
+ 1005 		ap_clear_auth_internal: <>
+ 1006 		ap_register_hooks: <>
+ 1007 		apr_pool_lock: <>
+ 1008 		ap_run_optional_fn_retrieve: <>
+ 1009 		ap_run_mpm: <>

@@ -1,0 +1,3363 @@
+    1 	main: int (), <./mount_hfs/mount_hfs.c 445>
+    2 		strrchr: <>
+    3 		getopt: <>
+    4 		a_gid: gid_t (), <./mount_hfs/mount_hfs.c 696>
+    5 			isdigit: <>
+    6 			atoi: <>
+    7 			getgrnam: <>
+    8 			errx: <>
+    9 		isdigit: <>
+   10 		get_num: UInt64 (), <./newfs_hfs/newfs_hfs.c 149>
+   11 			strtoull: <>
+   12 			tolower: <>
+   13 		printf: <>
+   14 		a_mask: mode_t (), <./newfs_hfs/newfs_hfs.c 598>
+   15 			strtol: <>
+   16 			errx: <>
+   17 		a_uid: uid_t (), <./newfs_hfs/newfs_hfs.c 579>
+   18 			getpwnam: <>
+   19 			isdigit: <>
+   20 			atoi: <>
+   21 			errx: <>
+   22 		getstartopts: void (), <./newfs_hfs/newfs_hfs.c 502>
+   23 			strtoul: <>
+   24 			err: <>
+   25 			errx: <>
+   26 			strsep: <>
+   27 			strchr: <>
+   28 			usage: void (), <./mount_hfs/mount_hfs.c 892>
+   29 				fprintf: <>
+   30 				exit: <>
+   31 			atoi: <>
+   32 		getextsopts: void (), <./newfs_hfs/newfs_hfs.c 468>
+   33 			strsep: <>
+   34 			strchr: <>
+   35 			usage: 28
+   36 			atoi: <>
+   37 		fatal: <>
+   38 			va_start: <>
+   39 			fcntl: <>
+   40 			openlog: <>
+   41 			vsyslog: <>
+   42 			closelog: <>
+   43 			vwarnx: <>
+   44 			va_end: <>
+   45 			exit: <>
+   46 		getclumpopts: void (), <./newfs_hfs/newfs_hfs.c 425>
+   47 			strsep: <>
+   48 			strchr: <>
+   49 			usage: 28
+   50 			atoi: <>
+   51 		atoi: <>
+   52 		getnodeopts: void (), <./newfs_hfs/newfs_hfs.c 383>
+   53 			strsep: <>
+   54 			strchr: <>
+   55 			usage: 28
+   56 			atoi: <>
+   57 			fatal: 37
+   58 		strdup: <>
+   59 		usage: 28
+   60 		rawdevice: const char * (), <./mount_hfs/mount_hfs.c 195>
+   61 			strncmp: <>
+   62 			strlen: <>
+   63 			snprintf: <>
+   64 		snprintf: <>
+   65 		getmntinfo: <>
+   66 		strerror: <>
+   67 		strcmp: <>
+   68 		hfs_newfs: int (), <./newfs_hfs/newfs_hfs.c 793>
+   69 			open: <>
+   70 			fcntl: <>
+   71 			fatal: 37
+   72 			strerror: <>
+   73 			fstat: <>
+   74 			ioctl: <>
+   75 			MIN: <>
+   76 			time: <>
+   77 			bad_disk_size: int (), <./newfs_hfs/newfs_hfs.c 622>
+   78 				get_high_bit: int (), <./newfs_hfs/newfs_hfs.c 705>
+   79 			validate_hfsplus_block_size: void (), <./newfs_hfs/newfs_hfs.c 722>
+   80 				get_high_bit: 78
+   81 				fatal: 37
+   82 				warnx: <>
+   83 			hfsplus_params: void (), <./newfs_hfs/newfs_hfs.c 943>
+   84 				geteuid: <>
+   85 				getegid: <>
+   86 				printf: <>
+   87 				ROUNDUP: <>
+   88 				clumpsizecalc: UInt32 (), <./newfs_hfs/newfs_hfs.c 1245>
+   89 					fatal: 37
+   90 				CalcHFSPlusBTreeClumpSize: UInt32 (), <./newfs_hfs/newfs_hfs.c 1317>
+   91 					MAX: <>
+   92 				fatal: 37
+   93 				warnx: <>
+   94 			make_hfsplus: int (), <./newfs_hfs/makehfs.c 327>
+   95 				dowipefs: int (), <./newfs_hfs/makehfs.c 305>
+   96 					wipefs_alloc: <>
+   97 					wipefs_wipe: <>
+   98 					wipefs_free: <>
+   99 				malloc: <>
+  100 				err: <>
+  101 				getencodinghint: int (), <./newfs_hfs/makehfs.c 2063>
+  102 					getvfsbyname: <>
+  103 					sysctl: <>
+  104 					strlen: <>
+  105 					GetDefaultEncoding: UInt32 (), <./newfs_hfs/makehfs.c 1976>
+  106 						getpwuid: <>
+  107 						strlcpy: <>
+  108 						strlcat: <>
+  109 						open: <>
+  110 						read: <>
+  111 						close: <>
+  112 						strtol: <>
+  113 				InitVH: void (), <./newfs_hfs/makehfs.c 609>
+  114 					bzero: <>
+  115 					printf: <>
+  116 					UTCToLocal: UInt32 (), <./newfs_hfs/makehfs.c 1953>
+  117 						gettimeofday: <>
+  118 					ENCODING_TO_BIT: <>
+  119 					createExtents: void (), <./newfs_hfs/makehfs.c 195>
+  120 						ROUNDUP: <>
+  121 						MIN: <>
+  122 						memset: <>
+  123 						SWAP_BE16: <>
+  124 						SWAP_BE32: <>
+  125 						realloc: <>
+  126 					errx: <>
+  127 					GenerateVolumeUUID: void (), <./hfs_util/hfsutil_main.c 2504>
+  128 						SHA1_Init: <>
+  129 						clock: <>
+  130 						SHA1_Update: <>
+  131 						sysctl: <>
+  132 						getloadavg: <>
+  133 						time: <>
+  134 						strncpy: <>
+  135 						asctime: <>
+  136 						gmtime: <>
+  137 						SHA1_Final: <>
+  138 						memcpy: <>
+  139 					OSSwapHostToBigInt32: <>
+  140 				WriteBuffer: void (), <./newfs_hfs/makehfs.c 1830>
+  141 					exit: <>
+  142 					MIN: <>
+  143 					valloc: <>
+  144 					pread: <>
+  145 					memcpy: <>
+  146 					bzero: <>
+  147 					pwrite: <>
+  148 					warn: <>
+  149 					free: <>
+  150 					err: <>
+  151 				MFU: <>
+  152 				Largest: UInt32 (), <./newfs_hfs/makehfs.c 1934>
+  153 				valloc: <>
+  154 				bzero: <>
+  155 				MarkExtentUsed: int (), <./newfs_hfs/makehfs.c 932>
+  156 					memset: <>
+  157 					MIN: <>
+  158 					pread: <>
+  159 					err: <>
+  160 					AllocateExtent: int (), <./newfs_hfs/makehfs.c 844>
+  161 						fprintf: <>
+  162 						memset: <>
+  163 					warnx: <>
+  164 					pwrite: <>
+  165 				errx: <>
+  166 				WriteExtentsFile: void (), <./newfs_hfs/makehfs.c 1017>
+  167 					bzero: <>
+  168 					SWAP_BE16: <>
+  169 					SETOFFSET: <>
+  170 					SWAP_BE32: <>
+  171 					qsort_b: <>
+  172 					memcpy: <>
+  173 					WriteBuffer: 140
+  174 				WriteMapNodes: void (), <./newfs_hfs/makehfs.c 1784>
+  175 					bzero: <>
+  176 					SWAP_BE16: <>
+  177 					SETOFFSET: <>
+  178 					SWAP_BE32: <>
+  179 					WriteBuffer: 140
+  180 				WriteAttributesFile: void (), <./newfs_hfs/makehfs.c 1162>
+  181 					bzero: <>
+  182 					SWAP_BE16: <>
+  183 					SETOFFSET: <>
+  184 					SWAP_BE32: <>
+  185 					CFStringCreateWithCString: <>
+  186 					ConvertUTF8toUnicode: int (), <./newfs_hfs/makehfs.c 2001>
+  187 						SWAP_BE16: <>
+  188 					OSSwapHostToLittleInt16: <>
+  189 					memcpy: <>
+  190 					CFRelease: <>
+  191 					WriteBuffer: 140
+  192 				WriteCatalogFile: void (), <./newfs_hfs/makehfs.c 1470>
+  193 					bzero: <>
+  194 					SWAP_BE16: <>
+  195 					SETOFFSET: <>
+  196 					SWAP_BE32: <>
+  197 					InitCatalogRoot_HFSPlus: void (), <./newfs_hfs/makehfs.c 1570>
+  198 						bzero: <>
+  199 						SWAP_BE16: <>
+  200 						SETOFFSET: <>
+  201 						CFStringCreateWithCString: <>
+  202 						ConvertUTF8toUnicode: 186
+  203 						warnx: <>
+  204 						CFRelease: <>
+  205 						SWAP_BE32: <>
+  206 						bcopy: <>
+  207 						SWAP_BE64: <>
+  208 					WriteBuffer: 140
+  209 				WriteJournalInfo: int (), <./newfs_hfs/makehfs.c 1386>
+  210 					memset: <>
+  211 					get_dev_uuid: int (), <./newfs_hfs/makehfs.c 1339>
+  212 						strncmp: <>
+  213 						strlen: <>
+  214 						IOServiceGetMatchingService: <>
+  215 						IOBSDNameMatching: <>
+  216 						IORegistryEntryCreateCFProperty: <>
+  217 						CFSTR: <>
+  218 						CFStringGetFileSystemRepresentation: <>
+  219 						CFRelease: <>
+  220 						IOObjectRelease: <>
+  221 					strlcpy: <>
+  222 					clear_journal_dev: int (), <./newfs_hfs/makehfs.c 1367>
+  223 						open: <>
+  224 						printf: <>
+  225 						strerror: <>
+  226 						dowipefs: 95
+  227 						close: <>
+  228 					printf: <>
+  229 					SWAP_BE32: <>
+  230 					SWAP_BE64: <>
+  231 					WriteBuffer: 140
+  232 				WriteVH: void (), <./newfs_hfs/makehfs.c 594>
+  233 					SWAP_HFSPLUSVH: <>
+  234 					WriteBuffer: 140
+  235 				free: <>
+  236 			printf: <>
+  237 			close: <>
+  238 		err: <>
+  239 		exit: <>
+  240 		plog: void (), <./fsck_hfs/utilities.c 908>
+  241 			va_start: <>
+  242 			vplog: void (), <./fsck_hfs/utilities.c 949>
+  243 				va_copy: <>
+  244 				setup_logging: void (), <./fsck_hfs/utilities.c 573>
+  245 					setlinebuf: <>
+  246 					fopen: <>
+  247 					time: <>
+  248 					fprintf: <>
+  249 					ctime: <>
+  250 					fflush: <>
+  251 					malloc: <>
+  252 					print_to_mem: void (), <./fsck_hfs/utilities.c 664>
+  253 						va_copy: <>
+  254 						pthread_mutex_lock: <>
+  255 						vsnprintf: <>
+  256 						snprintf: <>
+  257 						realloc: <>
+  258 						pthread_cond_signal: <>
+  259 						pthread_mutex_unlock: <>
+  260 						va_end: <>
+  261 					pthread_cond_init: <>
+  262 					signal: <>
+  263 					my_sighandler: void (), <./fsck_hfs/utilities.c 564>
+  264 						cleanup_fs_fd: void (), <./fsck_hfs/fsck_hfs.c 321>
+  265 							fcntl: <>
+  266 							close: <>
+  267 						exit: <>
+  268 					pthread_create: <>
+  269 					fsck_printing_thread: void * (), <./fsck_hfs/utilities.c 374>
+  270 						pthread_mutex_lock: <>
+  271 						pthread_cond_wait: <>
+  272 						fprintf: <>
+  273 						pthread_mutex_unlock: <>
+  274 						memcpy: <>
+  275 						memmove: <>
+  276 						printf: <>
+  277 						fflush: <>
+  278 					fsck_logging_thread: void * (), <./fsck_hfs/utilities.c 307>
+  279 						pthread_mutex_lock: <>
+  280 						pthread_cond_wait: <>
+  281 						fprintf: <>
+  282 						pthread_mutex_unlock: <>
+  283 						memcpy: <>
+  284 						memmove: <>
+  285 						fflush: <>
+  286 					atexit: <>
+  287 					shutdown_logging: void (), <./fsck_hfs/utilities.c 440>
+  288 						time: <>
+  289 						print_to_mem: 252
+  290 						ctime: <>
+  291 						fprintf: <>
+  292 						fflush: <>
+  293 						fclose: <>
+  294 						pthread_mutex_lock: <>
+  295 						pthread_cond_broadcast: <>
+  296 						pthread_mutex_unlock: <>
+  297 						pthread_join: <>
+  298 						free: <>
+  299 						getuid: <>
+  300 						fork: <>
+  301 						getpwuid: <>
+  302 						snprintf: <>
+  303 						fopen: <>
+  304 						fwrite: <>
+  305 						sleep: <>
+  306 				VOUT: <>
+  307 				VLOG_INTERNAL: <>
+  308 			va_end: <>
+  309 		fprintf: <>
+  310 		getblocklist: int (), <./fsck_hfs/fsck_hfs.c 1016>
+  311 			malloc: <>
+  312 			pfatal: <>
+  313 				setup_logging: 244
+  314 				va_start: <>
+  315 				vfprintf: <>
+  316 				VLOG: <>
+  317 				va_end: <>
+  318 				fprintf: <>
+  319 				FLOG: <>
+  320 				exit: <>
+  321 			fopen: <>
+  322 			fscanf: <>
+  323 			AddBlockToList: void (), <./fsck_hfs/fsck_hfs.c 870>
+  324 				realloc: <>
+  325 				pfatal: 312
+  326 			fclose: <>
+  327 			printf: <>
+  328 		strtoull: <>
+  329 		tolower: <>
+  330 		strtoul: <>
+  331 		fplog: void (), <./fsck_hfs/utilities.c 969>
+  332 			va_start: <>
+  333 			va_copy: <>
+  334 			setup_logging: 244
+  335 			VOUT: <>
+  336 			VLOG: <>
+  337 			va_end: <>
+  338 		strcasecmp: <>
+  339 		strtol: <>
+  340 		signal: <>
+  341 		catch: void (), <./fsck_hfs/utilities.c 248>
+  342 			ckfini: void (), <./fsck_hfs/utilities.c 110>
+  343 				CacheDestroy: int (), <./fsck_hfs/cache.c 300>
+  344 					CacheFlush: int (), <./fsck_hfs/cache.c 859>
+  345 						CacheRawWrite: int (), <./fsck_hfs/cache.c 1341>
+  346 							lseek: <>
+  347 							write: <>
+  348 						printf: <>
+  349 					printf: <>
+  350 					LRUDestroy: int (), <./fsck_hfs/cache.c 1394>
+  351 				close: <>
+  352 				flush: <>
+  353 				reply: int (), <./fsck_hfs/utilities.c 77>
+  354 					pfatal: 312
+  355 					strcmp: <>
+  356 					plog: 240
+  357 					fflush: <>
+  358 					getc: <>
+  359 					feof: <>
+  360 				sbdirty: <>
+  361 				free: <>
+  362 				errx: <>
+  363 				plog: 240
+  364 			exit: <>
+  365 		checkfilesys: int (), <./fsck_hfs/fsck_hfs.c 362>
+  366 			plog: 240
+  367 			fsckCreate: fsck_ctx_t (), <./fsck_hfs/fsck_messages.c 272>
+  368 				calloc: <>
+  369 				fsckAddMessages: int (), <./fsck_hfs/fsck_messages.c 649>
+  370 					realloc: <>
+  371 					qsort: <>
+  372 					msgCompar: int (), <./fsck_hfs/fsck_messages.c 627>
+  373 				fsckDestroy: void (), <./fsck_hfs/fsck_messages.c 597>
+  374 					free: <>
+  375 					fclose: <>
+  376 					Block_release: <>
+  377 				fsckSetWriter: int (), <./fsck_hfs/fsck_messages.c 357>
+  378 				stdprint: void (), <./fsck_hfs/fsck_messages.c 147>
+  379 					fputs: <>
+  380 					fflush: <>
+  381 			mountpoint: char * (), <./fsck_hfs/fsck_hfs.c 331>
+  382 				strdup: <>
+  383 				unrawname: char * (), <./fstyp_hfs/fstyp_hfs.c 121>
+  384 					strrchr: <>
+  385 					stat: <>
+  386 					memmove: <>
+  387 					strlen: <>
+  388 					strcpy: <>
+  389 				getmntinfo: <>
+  390 				strcmp: <>
+  391 				free: <>
+  392 			free: <>
+  393 			strdup: <>
+  394 			stat: <>
+  395 			fstat: <>
+  396 			fileno: <>
+  397 			statfs: <>
+  398 			open: <>
+  399 			fcntl: <>
+  400 			strerror: <>
+  401 			pwarn: <>
+  402 			setup: int (), <./fsck_hfs/fsck_hfs.c 634>
+  403 				stat: <>
+  404 				plog: 240
+  405 				strerror: <>
+  406 				pfatal: 312
+  407 				reply: 353
+  408 				strncmp: <>
+  409 				snprintf: <>
+  410 				journal_replay: int (), <./fsck_hfs/dfalib/SVerify1.c 4481>
+  411 					open: <>
+  412 					fplog: 331
+  413 					strerror: <>
+  414 					getvfsbyname: <>
+  415 					sysctl: <>
+  416 					close: <>
+  417 				getWriteAccess: void (), <./fsck_hfs/fsck_hfs.c 771>
+  418 					malloc: <>
+  419 					strlen: <>
+  420 					strcpy: <>
+  421 					strrchr: <>
+  422 					memmove: <>
+  423 					open: <>
+  424 					getfsstat: <>
+  425 					statfs: <>
+  426 					strcmp: <>
+  427 					free: <>
+  428 					close: <>
+  429 				open: <>
+  430 				dup: <>
+  431 				close: <>
+  432 				ioctl: <>
+  433 				sysctlbyname: <>
+  434 				fplog: 331
+  435 				CalculateCacheSizes: void (), <./fsck_hfs/cache.c 149>
+  436 					printf: <>
+  437 				CacheInit: int (), <./fsck_hfs/cache.c 196>
+  438 					memset: <>
+  439 					calloc: <>
+  440 					mmap: <>
+  441 					printf: <>
+  442 					CalculateCacheSizes: 435
+  443 					getpagesize: <>
+  444 					malloc: <>
+  445 					LRUInit: int (), <./fsck_hfs/cache.c 1374>
+  446 			pfatal: 312
+  447 			fsckSetVerbosity: int (), <./fsck_hfs/fsck_messages.c 432>
+  448 			fsckSetOutput: int (), <./fsck_hfs/fsck_messages.c 387>
+  449 			fsckSetWriter: 377
+  450 			outstring: void (), <./fsck_hfs/utilities.c 901>
+  451 				olog: void (), <./fsck_hfs/utilities.c 918>
+  452 					va_start: <>
+  453 					setup_logging: 244
+  454 					VOUT: <>
+  455 					va_end: <>
+  456 			fsckSetLogger: int (), <./fsck_hfs/fsck_messages.c 370>
+  457 			logstring: void (), <./fsck_hfs/utilities.c 892>
+  458 				llog: void (), <./fsck_hfs/utilities.c 935>
+  459 					va_start: <>
+  460 					setup_logging: 244
+  461 					VLOG: <>
+  462 					va_end: <>
+  463 			fsckSetOutputStyle: int (), <./fsck_hfs/fsck_messages.c 464>
+  464 			ScanDisk: void (), <./fsck_hfs/fsck_hfs.c 895>
+  465 				signal: <>
+  466 				siginfo: void (), <./fsck_hfs/fsck_hfs.c 889>
+  467 				ioctl: <>
+  468 				malloc: <>
+  469 				pfatal: 312
+  470 				pread: <>
+  471 				fprintf: <>
+  472 				AddBlockToList: 323
+  473 				strerror: <>
+  474 				pwarn: <>
+  475 				exit: <>
+  476 				free: <>
+  477 			CheckHFS: int (), <./fsck_hfs/dfalib/SControl.c 216>
+  478 				err: <>
+  479 				malloc: <>
+  480 				fsckAddMessages: 369
+  481 				strstr: <>
+  482 				strdup: <>
+  483 				strlen: <>
+  484 				fsckPrint: int (), <./fsck_hfs/fsck_messages.c 950>
+  485 					va_start: <>
+  486 					findmessage: fsck_message_t * (), <./fsck_hfs/fsck_messages.c 701>
+  487 						bsearch: <>
+  488 						bCompar: int (), <./fsck_hfs/fsck_messages.c 686>
+  489 					assert: <>
+  490 					fsckPrintString: int (), <./fsck_hfs/fsck_messages.c 765>
+  491 						fsckPrintToString: char * (), <./fsck_hfs/fsck_messages.c 728>
+  492 							vasprintf: <>
+  493 							asprintf: <>
+  494 							free: <>
+  495 						printargs: void (), <./fsck_hfs/fsck_messages.c 132>
+  496 							va_start: <>
+  497 							printv: void (), <./fsck_hfs/fsck_messages.c 80>
+  498 								vsnprintf: <>
+  499 								malloc: <>
+  500 								strcpy: <>
+  501 								free: <>
+  502 						free: <>
+  503 					fsckPrintGUI: int (), <./fsck_hfs/fsck_messages.c 876>
+  504 						convertfmt: char * (), <./fsck_hfs/fsck_messages.c 219>
+  505 							strchr: <>
+  506 							calloc: <>
+  507 							strlen: <>
+  508 							sprintf: <>
+  509 						printargs: 495
+  510 						va_arg: <>
+  511 						free: <>
+  512 					fsckPrintXML: int (), <./fsck_hfs/fsck_messages.c 786>
+  513 						convertfmt: 504
+  514 						printargs: 495
+  515 						typestring: const char * (), <./fsck_hfs/fsck_messages.c 163>
+  516 						verbosity_string: const char * (), <./fsck_hfs/fsck_messages.c 196>
+  517 						va_arg: <>
+  518 						free: <>
+  519 					fsckPrintNothing: int (), <./fsck_hfs/fsck_messages.c 934>
+  520 					va_copy: <>
+  521 				free: <>
+  522 				setjmp: <>
+  523 				fsckSetBlock: void (), <./fsck_hfs/fsck_messages.c 296>
+  524 					Block_release: <>
+  525 					Block_copy: <>
+  526 				abs: <>
+  527 				isMinorError: int (), <./fsck_hfs/dfalib/SControl.c 110>
+  528 					abs: <>
+  529 				longjmp: <>
+  530 				ClearMemory: void (), <./fsck_hfs/dfalib/SUtils.c 520>
+  531 					DebugStr: void (), <./fsck_hfs/dfalib/SStubs.c 90>
+  532 						plog: 240
+  533 				memset: <>
+  534 				strlcpy: <>
+  535 				cancelProc: int (), <./fsck_hfs/dfalib/SControl.c 77>
+  536 					fsckPrint: 484
+  537 					draw_progress: void (), <./fsck_hfs/utilities.c 1004>
+  538 						sysctlbyname: <>
+  539 						warn: <>
+  540 				ScavCtrl: void (), <./fsck_hfs/dfalib/SControl.c 567>
+  541 					stat: <>
+  542 					ScavSetUp: int (), <./fsck_hfs/dfalib/SControl.c 1151>
+  543 						err: <>
+  544 						TickCount: UInt32 (), <./fsck_hfs/dfalib/SStubs.c 97>
+  545 						AllocateClearMemory: <>
+  546 						fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+  547 						plog: 240
+  548 						SetDFAStage: void (), <./fsck_hfs/dfalib/SUtils.c 181>
+  549 						SetFCBSPtr: void (), <./fsck_hfs/dfalib/SUtils.c 2204>
+  550 						FindDrive: <>
+  551 						IsBlueBoxSharedDrive: Boolean (), <./fsck_hfs/dfalib/SControl.c 1505>
+  552 							GetDCtlEntry: <>
+  553 							HLock: <>
+  554 							IdenticalString: <>
+  555 							PBControlSync: <>
+  556 						GetVolumeFeatures: OSErr (), <./fsck_hfs/dfalib/SStubs.c 103>
+  557 							err: <>
+  558 							GetVCBDriveNum: <>
+  559 							ReturnIfError: <>
+  560 							PBHGetVolParms: <>
+  561 							Gestalt: <>
+  562 						FlushVol: OSErr (), <./fsck_hfs/dfalib/SStubs.c 77>
+  563 							sync: <>
+  564 						InitBlockCache: void (), <./fsck_hfs/dfalib/BlockCache.c 42>
+  565 						GetFileBlock: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 144>
+  566 							MapFileBlockC: OSErr (), <./fsck_hfs/dfalib/SExtents.c 421>
+  567 								err: <>
+  568 								MapFileBlockFromFCB: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1597>
+  569 								SearchExtentFile: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1337>
+  570 									err: <>
+  571 									GetFCBExtentRecord: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1542>
+  572 										CopyMemory: <>
+  573 										ExtDataRecToExtents: void (), <./fsck_hfs/dfalib/SExtents.c 1491>
+  574 									SearchExtentRecord: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1236>
+  575 										err: <>
+  576 									FindExtentRecord: OSErr (), <./fsck_hfs/dfalib/SExtents.c 219>
+  577 										err: <>
+  578 										SearchBTreeRecord: OSErr (), <./fsck_hfs/dfalib/SBTree.c 56>
+  579 											CheckBTreeKey: OSErr (), <./fsck_hfs/dfalib/SBTree.c 430>
+  580 												DebugStr: 531
+  581 											ExitOnError: <>
+  582 											CopyMemory: <>
+  583 											CalcKeySize: <>
+  584 											BTSearchRecord: OSStatus (), <./fsck_hfs/dfalib/BTree.c 662>
+  585 												err: <>
+  586 												CheckKey: <>
+  587 												M_ExitOnError: <>
+  588 												IsItAHint: OSStatus (), <./fsck_hfs/dfalib/BTreeMiscOps.c 565>
+  589 												GetNode: OSStatus (), <./fsck_hfs/dfalib/BTreeNodeOps.c 114>
+  590 													err: <>
+  591 													getNodeProc: <>
+  592 													Panic: <>
+  593 													fprintf: <>
+  594 													hfs_swap_BTNode: int (), <./fsck_hfs/dfalib/hfs_endian.c 189>
+  595 														plog: 240
+  596 														exit: <>
+  597 														SWAP_BE32: <>
+  598 														SWAP_BE16: <>
+  599 														WriteError: void (), <./fsck_hfs/dfalib/SStubs.c 194>
+  600 															fsckPrint: 484
+  601 															fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+  602 															fsckGetOutputStyle: enum fsck_output_type (), <./fsck_hfs/fsck_messages.c 481>
+  603 															plog: 240
+  604 														hfs_swap_HFSPlusBTInternalNode: int (), <./fsck_hfs/dfalib/hfs_endian.c 432>
+  605 															plog: 240
+  606 															WriteError: 599
+  607 															SWAP_BE16: <>
+  608 															SWAP_BE32: <>
+  609 															offsetof: <>
+  610 															HexDump: void (), <./fsck_hfs/fsck_debug.c 71>
+  611 																plog: 240
+  612 															hfs_swap_HFSPlusForkData: void (), <./fsck_hfs/dfalib/hfs_endian.c 62>
+  613 																SWAP_BE64: <>
+  614 																SWAP_BE32: <>
+  615 															exit: <>
+  616 														hfs_swap_HFSBTInternalNode: int (), <./fsck_hfs/dfalib/hfs_endian.c 871>
+  617 															plog: 240
+  618 															WriteError: 599
+  619 															SWAP_BE32: <>
+  620 															SWAP_BE16: <>
+  621 															exit: <>
+  622 														HexDump: 610
+  623 													TrashNode: OSStatus (), <./fsck_hfs/dfalib/BTreeNodeOps.c 293>
+  624 														err: <>
+  625 														releaseNodeProc: <>
+  626 														PanicIf: <>
+  627 												SearchNode: Boolean (), <./fsck_hfs/dfalib/BTreeNodeOps.c 628>
+  628 													compareProc: <>
+  629 													GetRecordAddress: UInt8 * (), <./fsck_hfs/dfalib/BTreeNodeOps.c 818>
+  630 														GetRecordOffset: UInt16 (), <./fsck_hfs/dfalib/BTreeNodeOps.c 789>
+  631 													CompareKeys: SInt32 (), <./fsck_hfs/dfalib/SUtils.c 723>
+  632 														compareProc: <>
+  633 												ReleaseNode: OSStatus (), <./fsck_hfs/dfalib/BTreeNodeOps.c 240>
+  634 													err: <>
+  635 													releaseNodeProc: <>
+  636 													hfs_swap_BTNode: 594
+  637 													PanicIf: <>
+  638 												BTInvalidateHint: OSStatus (), <./fsck_hfs/dfalib/BTree.c 1797>
+  639 												SearchTree: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 186>
+  640 													err: <>
+  641 													fprintf: <>
+  642 													GetNode: 589
+  643 													HexDump: 610
+  644 													SearchNode: 627
+  645 													GetRecordByIndex: OSStatus (), <./fsck_hfs/dfalib/BTreeNodeOps.c 690>
+  646 														GetRecordOffset: 630
+  647 														CalcKeySize: <>
+  648 														M_IsOdd: <>
+  649 													TrashNode: 623
+  650 													ReleaseNode: 633
+  651 												GetRecordByIndex: 645
+  652 												PanicIf: <>
+  653 												CopyMemory: <>
+  654 												CopyKey: void (), <./fsck_hfs/dfalib/BTree.c 58>
+  655 													CalcKeySize: <>
+  656 													MaxKeySize: <>
+  657 													CopyMemory: <>
+  658 											ValidHFSRecord: Boolean (), <./fsck_hfs/dfalib/SBTree.c 450>
+  659 											DebugStr: 531
+  660 										GetBTreeRecord: OSErr (), <./fsck_hfs/dfalib/SBTree.c 131>
+  661 											BTIterateRecord: OSStatus (), <./fsck_hfs/dfalib/BTree.c 875>
+  662 												err: <>
+  663 												GetNode: 589
+  664 												M_ExitOnError: <>
+  665 												ReleaseNode: 633
+  666 												fprintf: <>
+  667 												FindIteratorPosition: OSStatus (), <./fsck_hfs/dfalib/BTreeMiscOps.c 217>
+  668 													err: <>
+  669 													CheckKey: <>
+  670 													M_ExitOnError: <>
+  671 													IsItAHint: 588
+  672 													GetNode: 589
+  673 													SearchNode: 627
+  674 													GetLeftSiblingNode: <>
+  675 													PanicIf: <>
+  676 													GetRightSiblingNode: <>
+  677 													ReleaseNode: 633
+  678 													SearchTree: 639
+  679 												GetRecordByIndex: 645
+  680 												PanicIf: <>
+  681 												CopyMemory: <>
+  682 												CopyKey: 654
+  683 											ExitOnError: <>
+  684 											CheckBTreeKey: 579
+  685 											CopyMemory: <>
+  686 											CalcKeySize: <>
+  687 											ValidHFSRecord: 658
+  688 											DebugStr: 531
+  689 										CopyMemory: <>
+  690 							ReadFragmentedBlock: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 243>
+  691 								AllocateMemory: <>
+  692 								AllocateClearMemory: <>
+  693 								MapFileBlockC: 566
+  694 								CacheRead: int (), <./fsck_hfs/cache.c 330>
+  695 									printf: <>
+  696 									CacheLookup: int (), <./fsck_hfs/cache.c 1222>
+  697 										calloc: <>
+  698 										CacheAllocBlock: void * (), <./fsck_hfs/cache.c 800>
+  699 										LRUEvict: int (), <./fsck_hfs/cache.c 1452>
+  700 											printf: <>
+  701 											CacheRemove: int (), <./fsck_hfs/cache.c 731>
+  702 												printf: <>
+  703 												CacheFreeBlock: int (), <./fsck_hfs/cache.c 822>
+  704 													CacheRawWrite: 345
+  705 													printf: <>
+  706 												memset: <>
+  707 												free: <>
+  708 										printf: <>
+  709 										CacheRawRead: int (), <./fsck_hfs/cache.c 1307>
+  710 											lseek: <>
+  711 											printf: <>
+  712 											read: <>
+  713 										fprintf: <>
+  714 									LRUHit: int (), <./fsck_hfs/cache.c 1408>
+  715 									malloc: <>
+  716 									memcpy: <>
+  717 									free: <>
+  718 									fprintf: <>
+  719 									exit: <>
+  720 								plog: 240
+  721 								CopyMemory: <>
+  722 								CacheRelease: int (), <./fsck_hfs/cache.c 645>
+  723 									CacheLookup: 696
+  724 									printf: <>
+  725 									LRUHit: 714
+  726 									free: <>
+  727 									memset: <>
+  728 								DisposeMemory: <>
+  729 							CacheRead: 694
+  730 						ReleaseFileBlock: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 191>
+  731 							WriteFragmentedBlock: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 323>
+  732 								plog: 240
+  733 								CopyMemory: <>
+  734 								CacheWrite: int (), <./fsck_hfs/cache.c 505>
+  735 									CacheLookup: 696
+  736 									CacheRawWrite: 345
+  737 									LRUHit: 714
+  738 									memcpy: <>
+  739 									free: <>
+  740 									memset: <>
+  741 								DisposeMemory: <>
+  742 							CacheWrite: 734
+  743 							ReleaseFragmentedBlock: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 374>
+  744 								plog: 240
+  745 								CacheRelease: 722
+  746 								DisposeMemory: <>
+  747 							CacheRelease: 722
+  748 						SetEndOfForkProc: OSStatus (), <./fsck_hfs/dfalib/SBTree.c 322>
+  749 							DebugStr: 531
+  750 							ExtendFileC: OSErr (), <./fsck_hfs/dfalib/SExtents.c 748>
+  751 								err: <>
+  752 								DivideAndRoundUp: UInt32 (), <./fsck_hfs/dfalib/SAllocate.c 341>
+  753 								SearchExtentFile: 569
+  754 								BlockAllocate: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 183>
+  755 									err: <>
+  756 									BlockAllocateContig: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 446>
+  757 										err: <>
+  758 										BlockFindContiguous: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 1086>
+  759 											err: <>
+  760 											ReadBitmapBlock: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 372>
+  761 												err: <>
+  762 												GetVolumeBlock: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 55>
+  763 													CacheRead: 694
+  764 													SWAP_BE16: <>
+  765 													SWAP_HFSPLUSVH: <>
+  766 													SWAP_HFSMDB: <>
+  767 												GetFileBlock: 565
+  768 											SWAP_BE32: <>
+  769 											ReleaseBitmapBlock: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 404>
+  770 												err: <>
+  771 												ReleaseVolumeBlock: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 106>
+  772 													SWAP_HFSPLUSVH: <>
+  773 													SWAP_HFSMDB: <>
+  774 													CacheWrite: 734
+  775 													CacheRelease: 722
+  776 												ReleaseFileBlock: 730
+  777 										BlockMarkAllocated: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 685>
+  778 											err: <>
+  779 											ReadBitmapBlock: 760
+  780 											SWAP_BE32: <>
+  781 											DebugStr: 531
+  782 											ReleaseBitmapBlock: 769
+  783 											CaptureBitmapBits: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 374>
+  784 												err: <>
+  785 												GetSegmentBitmap: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 230>
+  786 													bit_test: <>
+  787 													bit_clear: <>
+  788 													BMS_Insert: BMS_Node * (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1356>
+  789 														BMS_GrowNodePool: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1446>
+  790 															malloc: <>
+  791 															bzero: <>
+  792 														bcopy: <>
+  793 														bzero: <>
+  794 														BMS_InsertTree: BMS_Node * (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1319>
+  795 													BMS_Lookup: BMS_Node * (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1302>
+  796 													plog: 240
+  797 													bcmp: <>
+  798 													exit: <>
+  799 												SWAP_BE32: <>
+  800 												TestSegmentBitmap: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 309>
+  801 													bit_test: <>
+  802 													BMS_Lookup: 795
+  803 													plog: 240
+  804 													bcmp: <>
+  805 													BMS_Delete: BMS_Node * (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1385>
+  806 														bzero: <>
+  807 													bit_set: <>
+  808 									BlockAllocateAny: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 512>
+  809 										err: <>
+  810 										ReadBitmapBlock: 760
+  811 										SWAP_BE32: <>
+  812 										ReleaseBitmapBlock: 769
+  813 										CaptureBitmapBits: 783
+  814 									MarkVCBDirty: <>
+  815 								UpdateExtentRecord: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1434>
+  816 									err: <>
+  817 									SetFCBExtentRecord: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1556>
+  818 										DebugStr: 531
+  819 										CopyMemory: <>
+  820 										ExtentsToExtDataRec: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1515>
+  821 											err: <>
+  822 											DebugStr: 531
+  823 									SearchBTreeRecord: 578
+  824 									ExtentsToExtDataRec: 820
+  825 									ReplaceBTreeRecord: OSErr (), <./fsck_hfs/dfalib/SBTree.c 285>
+  826 										CheckBTreeKey: 579
+  827 										ExitOnError: <>
+  828 										CopyMemory: <>
+  829 										CalcKeySize: <>
+  830 										ValidHFSRecord: 658
+  831 										DebugStr: 531
+  832 										BTReplaceRecord: OSStatus (), <./fsck_hfs/dfalib/BTree.c 1495>
+  833 											err: <>
+  834 											CheckInsertParams: OSStatus (), <./fsck_hfs/dfalib/BTreeMiscOps.c 422>
+  835 												err: <>
+  836 												CheckKey: <>
+  837 												CalcKeyRecordSize: UInt16 (), <./fsck_hfs/dfalib/BTreeMiscOps.c 54>
+  838 													M_IsOdd: <>
+  839 												CalcKeySize: <>
+  840 											IsItAHint: 588
+  841 											M_ExitOnError: <>
+  842 											GetNode: 589
+  843 											TrySimpleReplace: OSStatus (), <./fsck_hfs/dfalib/BTreeMiscOps.c 486>
+  844 												SearchNode: 627
+  845 												CalcKeySize: <>
+  846 												CalcKeyRecordSize: 837
+  847 												GetRecordSize: UInt16 (), <./fsck_hfs/dfalib/BTreeNodeOps.c 847>
+  848 												GetRecordAddress: 629
+  849 												M_IsOdd: <>
+  850 												CopyMemory: <>
+  851 												GetNodeFreeSize: UInt16 (), <./fsck_hfs/dfalib/BTreeNodeOps.c 764>
+  852 													GetRecordOffset: 630
+  853 												DeleteRecord: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 581>
+  854 													GetRecordOffset: 630
+  855 													MoveRecordsLeft: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 999>
+  856 													DeleteOffset: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 963>
+  857 														GetOffsetAddress: UInt16 * (), <./fsck_hfs/dfalib/BTreeNodeOps.c 872>
+  858 												InsertKeyRecord: Boolean (), <./fsck_hfs/dfalib/BTreeNodeOps.c 477>
+  859 													M_IsOdd: <>
+  860 													GetNodeFreeSize: 851
+  861 													GetRecordOffset: 630
+  862 													MoveRecordsRight: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 1024>
+  863 													InsertOffset: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 929>
+  864 														GetOffsetAddress: 857
+  865 													MoveRecordsLeft: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 999>
+  866 													ClearMemory: 530
+  867 												KeyLength: <>
+  868 												PanicIf: <>
+  869 											UpdateNode: OSStatus (), <./fsck_hfs/dfalib/BTreeNodeOps.c 332>
+  870 												err: <>
+  871 												releaseNodeProc: <>
+  872 												hfs_swap_BTNode: 594
+  873 												M_ExitOnError: <>
+  874 											BTInvalidateHint: 638
+  875 											ReleaseNode: 633
+  876 											SearchTree: 639
+  877 											CalcMapBits: UInt32 (), <./fsck_hfs/dfalib/BTreeAllocate.c 533>
+  878 												M_HeaderMapRecordSize: <>
+  879 												M_MapRecordSize: <>
+  880 											ExtendBTree: OSStatus (), <./fsck_hfs/dfalib/BTreeAllocate.c 251>
+  881 												err: <>
+  882 												GetMapNode: OSStatus (), <./fsck_hfs/dfalib/BTreeAllocate.c 467>
+  883 													err: <>
+  884 													ReleaseNode: 633
+  885 													M_ExitOnError: <>
+  886 													GetNode: 589
+  887 													GetRecordAddress: 629
+  888 													GetRecordSize: 847
+  889 												M_ExitOnError: <>
+  890 												CalcMapBits: 877
+  891 												Panic: <>
+  892 												ReleaseNode: 633
+  893 												GetNewNode: OSStatus (), <./fsck_hfs/dfalib/BTreeNodeOps.c 185>
+  894 													err: <>
+  895 													getNodeProc: <>
+  896 													Panic: <>
+  897 													ClearNode: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 386>
+  898 														ClearMemory: 530
+  899 												UpdateNode: 869
+  900 												GetNode: 589
+  901 												GetRecordAddress: 629
+  902 												GetRecordSize: 847
+  903 												M_MapRecordSize: <>
+  904 												M_SWAP_BE16_SetBitNum: <>
+  905 											DeleteRecord: 853
+  906 											InsertTree: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 350>
+  907 												err: <>
+  908 												GetKeyLength: UInt16 (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1327>
+  909 													KeyLength: <>
+  910 												InsertLevel: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 381>
+  911 													err: <>
+  912 													PanicIf: <>
+  913 													InsertNode: OSErr (), <./fsck_hfs/dfalib/BTreeTreeOps.c 559>
+  914 														err: <>
+  915 														PanicIf: <>
+  916 														InsertKeyRecord: 858
+  917 														DoKeyCheck: int (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1776>
+  918 															GetRecordByIndex: 645
+  919 															CompareKeys: 631
+  920 														plog: 240
+  921 														PrintNodeDescriptor: void (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1825>
+  922 															plog: 240
+  923 														GetNode: 589
+  924 														M_ExitOnError: <>
+  925 														RotateLeft: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 931>
+  926 															err: <>
+  927 															GetKeyLength: 908
+  928 															M_IsOdd: <>
+  929 															GetNodeFreeSize: 851
+  930 															GetRecordSize: 847
+  931 															InsertKeyRecord: 858
+  932 															Panic: <>
+  933 															RotateRecordLeft: Boolean (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1222>
+  934 																GetRecordSize: 847
+  935 																GetRecordAddress: 629
+  936 																InsertRecord: Boolean (), <./fsck_hfs/dfalib/BTreeNodeOps.c 408>
+  937 																	GetNodeFreeSize: 851
+  938 																	GetRecordOffset: 630
+  939 																	MoveRecordsRight: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 1024>
+  940 																	InsertOffset: 863
+  941 																	MoveRecordsLeft: void (), <./fsck_hfs/dfalib/BTreeNodeOps.c 999>
+  942 																DeleteRecord: 853
+  943 															DoKeyCheck: 917
+  944 															plog: 240
+  945 															PrintNodeDescriptor: 921
+  946 														ReleaseNode: 633
+  947 														SplitRight: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1343>
+  948 															err: <>
+  949 															GetNode: 589
+  950 															M_ExitOnError: <>
+  951 															PanicIf: <>
+  952 															AllocateNode: OSStatus (), <./fsck_hfs/dfalib/BTreeAllocate.c 72>
+  953 																err: <>
+  954 																GetMapNode: 882
+  955 																M_ExitOnError: <>
+  956 																SWAP_BE16: <>
+  957 																UpdateNode: 869
+  958 																ReleaseNode: 633
+  959 															UpdateNode: 869
+  960 															GetNewNode: 893
+  961 															M_BTreeHeaderDirty: <>
+  962 															RotateRight: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1483>
+  963 																err: <>
+  964 																GetKeyLength: 908
+  965 																M_IsOdd: <>
+  966 																GetNodeFreeSize: 851
+  967 																GetRecordSize: 847
+  968 																InsertKeyRecord: 858
+  969 																plog: 240
+  970 																RotateRecordRight: Boolean (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1706>
+  971 																	GetRecordSize: 847
+  972 																	GetRecordAddress: 629
+  973 																	InsertRecord: 936
+  974 																	DeleteRecord: 853
+  975 																DoKeyCheck: 917
+  976 																PrintNodeDescriptor: 921
+  977 																DoKeyCheckAcrossNodes: int (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1730>
+  978 																	GetRecordByIndex: 645
+  979 																	plog: 240
+  980 																	PrintKey: void (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1832>
+  981 																		plog: 240
+  982 																	CompareKeys: 631
+  983 															ReleaseNode: 633
+  984 														AddNewRootNode: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 1246>
+  985 															err: <>
+  986 															PanicIf: <>
+  987 															AllocateNode: 952
+  988 															M_ExitOnError: <>
+  989 															GetNewNode: 893
+  990 															GetRecordAddress: 629
+  991 															GetKeyLength: 908
+  992 															InsertKeyRecord: 858
+  993 															DoKeyCheck: 917
+  994 															plog: 240
+  995 															PrintNodeDescriptor: 921
+  996 															UpdateNode: 869
+  997 													M_ExitOnError: <>
+  998 													DebugStr: 531
+  999 													GetNode: 589
+ 1000 													GetRecordByIndex: 645
+ 1001 													DeleteRecord: 853
+ 1002 													GetRecordAddress: 629
+ 1003 													GetKeyLength: 908
+ 1004 													InsertLevel: 910
+ 1005 													UpdateNode: 869
+ 1006 													ReleaseNode: 633
+ 1007 													Panic: <>
+ 1008 									CopyMemory: <>
+ 1009 								BlockDeallocate: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 296>
+ 1010 									err: <>
+ 1011 									BlockMarkFree: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 853>
+ 1012 										err: <>
+ 1013 										ReadBitmapBlock: 760
+ 1014 										SWAP_BE32: <>
+ 1015 										DebugStr: 531
+ 1016 										ReleaseBitmapBlock: 769
+ 1017 										ReleaseBitmapBits: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 528>
+ 1018 											err: <>
+ 1019 											GetSegmentBitmap: 785
+ 1020 											SWAP_BE32: <>
+ 1021 											TestSegmentBitmap: 800
+ 1022 									MarkVCBDirty: <>
+ 1023 								CreateExtentRecord: OSErr (), <./fsck_hfs/dfalib/SExtents.c 331>
+ 1024 									err: <>
+ 1025 									ExtentsToExtDataRec: 820
+ 1026 									InsertBTreeRecord: OSErr (), <./fsck_hfs/dfalib/SBTree.c 223>
+ 1027 										CheckBTreeKey: 579
+ 1028 										ExitOnError: <>
+ 1029 										CopyMemory: <>
+ 1030 										CalcKeySize: <>
+ 1031 										ValidHFSRecord: 658
+ 1032 										DebugStr: 531
+ 1033 										BTInsertRecord: OSStatus (), <./fsck_hfs/dfalib/BTree.c 1147>
+ 1034 											err: <>
+ 1035 											CheckInsertParams: 834
+ 1036 											SearchTree: 639
+ 1037 											ExtendBTree: 880
+ 1038 											M_ExitOnError: <>
+ 1039 											AllocateNode: 952
+ 1040 											GetNewNode: 893
+ 1041 											InsertKeyRecord: 858
+ 1042 											KeyLength: <>
+ 1043 											UpdateNode: 869
+ 1044 											M_BTreeHeaderDirty: <>
+ 1045 											CalcMapBits: 877
+ 1046 											InsertTree: 906
+ 1047 											ReleaseNode: 633
+ 1048 										InvalidateBTreeIterator: void (), <./fsck_hfs/dfalib/SBTree.c 420>
+ 1049 											BTInvalidateHint: 638
+ 1050 								FlushExtentFile: OSErr (), <./fsck_hfs/dfalib/SExtents.c 643>
+ 1051 									err: <>
+ 1052 									BTFlushPath: OSStatus (), <./fsck_hfs/dfalib/BTree.c 1759>
+ 1053 										err: <>
+ 1054 										M_ReturnErrorIf: <>
+ 1055 										UpdateHeader: OSStatus (), <./fsck_hfs/dfalib/BTreeMiscOps.c 152>
+ 1056 											err: <>
+ 1057 											GetNode: 589
+ 1058 											UpdateNode: 869
+ 1059 									MarkVCBDirty: <>
+ 1060 									FlushVolumeControlBlock: OSErr (), <./fsck_hfs/dfalib/SUtils.c 2225>
+ 1061 										err: <>
+ 1062 										IsVCBDirty: <>
+ 1063 										GetVolumeObjectPrimaryBlock: OSErr (), <./fsck_hfs/dfalib/SUtils.c 917>
+ 1064 											err: <>
+ 1065 											GetVolumeObjectPtr: VolumeObjectPtr (), <./fsck_hfs/dfalib/SUtils.c 1848>
+ 1066 												bzero: <>
+ 1067 											GetVolumeObjectPrimaryBlockNum: void (), <./fsck_hfs/dfalib/SUtils.c 1136>
+ 1068 												GetVolumeObjectPtr: 1065
+ 1069 											GetVolumeObjectBlock: OSErr (), <./fsck_hfs/dfalib/SUtils.c 1042>
+ 1070 												err: <>
+ 1071 												GetVolumeObjectPtr: 1065
+ 1072 												GetVolumeBlock: 762
+ 1073 											ValidVolumeHeader: OSErr (), <./fsck_hfs/dfalib/SUtils.c 1979>
+ 1074 												err: <>
+ 1075 										ReleaseVolumeBlock: 771
+ 1076 										VolumeObjectFixPrimaryBlock: OSErr (), <./fsck_hfs/dfalib/SUtils.c 772>
+ 1077 											err: <>
+ 1078 											GetVolumeObjectPtr: 1065
+ 1079 											GetVolumeObjectPrimaryBlockNum: 1067
+ 1080 											GetVolumeObjectPrimaryBlock: 1063
+ 1081 											GetVolumeObjectAlternateBlock: OSErr (), <./fsck_hfs/dfalib/SUtils.c 877>
+ 1082 												err: <>
+ 1083 												GetVolumeObjectPtr: 1065
+ 1084 												GetVolumeObjectAlternateBlockNum: void (), <./fsck_hfs/dfalib/SUtils.c 1107>
+ 1085 													GetVolumeObjectPtr: 1065
+ 1086 												GetVolumeObjectBlock: 1069
+ 1087 												ValidVolumeHeader: 1073
+ 1088 											VolumeObjectIsHFS: Boolean (), <./fsck_hfs/dfalib/SUtils.c 1783>
+ 1089 												GetVolumeObjectPtr: 1065
+ 1090 											CopyMemory: <>
+ 1091 											ReleaseVolumeBlock: 771
+ 1092 										ReturnIfError: <>
+ 1093 										GetVolumeObjectPrimaryMDB: OSErr (), <./fsck_hfs/dfalib/SUtils.c 1014>
+ 1094 											err: <>
+ 1095 											GetVolumeObjectPtr: 1065
+ 1096 											GetVolumeObjectBlock: 1069
+ 1097 										CopyMemory: <>
+ 1098 										MarkVCBClean: <>
+ 1099 							ReturnIfError: <>
+ 1100 							Panic: <>
+ 1101 							MarkVCBDirty: <>
+ 1102 							FlushAlternateVolumeControlBlock: OSErr (), <./fsck_hfs/dfalib/SUtils.c 2379>
+ 1103 								err: <>
+ 1104 								GetVolumeObjectPtr: 1065
+ 1105 								FlushVolumeControlBlock: 1060
+ 1106 								GetVolumeObjectPrimaryBlock: 1063
+ 1107 								VolumeObjectIsHFS: 1088
+ 1108 								GetVolumeObjectAlternateBlockNum: 1084
+ 1109 								GetVolumeObjectAlternateBlock: 1081
+ 1110 								CopyMemory: <>
+ 1111 								ReleaseVolumeBlock: 771
+ 1112 							ZeroFileBlocks: OSErr (), <./fsck_hfs/dfalib/SExtents.c 1695>
+ 1113 								err: <>
+ 1114 								AllocateMemory: <>
+ 1115 								ClearMemory: 530
+ 1116 								ResolveFileRefNum: pascal short (), <./fsck_hfs/dfalib/SUtils.c 2195>
+ 1117 									GetFCBSPtr: Ptr (), <./fsck_hfs/dfalib/SUtils.c 2209>
+ 1118 								CacheWriteInPlace: OSErr (), <./fsck_hfs/dfalib/SUtils.c 2447>
+ 1119 									err: <>
+ 1120 									MapFileBlockC: 566
+ 1121 									ResolveFCB: SFCB * (), <./fsck_hfs/dfalib/SUtils.c 2158>
+ 1122 										GetFCBSPtr: 1117
+ 1123 									DeviceWrite: OSErr (), <./fsck_hfs/dfalib/SDevice.c 238>
+ 1124 										lseek: <>
+ 1125 										plog: 240
+ 1126 										write: <>
+ 1127 										err: <>
+ 1128 										PBWriteSync: <>
+ 1129 								DisposeMemory: <>
+ 1130 						InitializeVolumeObject: void (), <./fsck_hfs/dfalib/SUtils.c 1174>
+ 1131 							err: <>
+ 1132 							GetVolumeObjectPtr: 1065
+ 1133 							GetDeviceSize: OSErr (), <./fsck_hfs/dfalib/SDevice.c 43>
+ 1134 								ioctl: <>
+ 1135 								plog: 240
+ 1136 								strerror: <>
+ 1137 								PBStatusSync: <>
+ 1138 								DriveStatus: <>
+ 1139 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1140 							plog: 240
+ 1141 							GetVolumeObjectBlock: 1069
+ 1142 							ValidVolumeHeader: 1073
+ 1143 							bcopy: <>
+ 1144 							ReleaseVolumeBlock: 771
+ 1145 							CompareVolHeaderBTreeSizes: void (), <./fsck_hfs/dfalib/SUtils.c 1514>
+ 1146 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1147 								plog: 240
+ 1148 							GetEmbeddedVolumeHeaders: void (), <./fsck_hfs/dfalib/SUtils.c 1380>
+ 1149 								err: <>
+ 1150 								GetVolumeObjectPtr: 1065
+ 1151 								GetVolumeObjectBlock: 1069
+ 1152 								ValidVolumeHeader: 1073
+ 1153 								bcopy: <>
+ 1154 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1155 								plog: 240
+ 1156 								ReleaseVolumeBlock: 771
+ 1157 								CompareVolHeaderBTreeSizes: 1145
+ 1158 						VolumeObjectIsValid: Boolean (), <./fsck_hfs/dfalib/SUtils.c 1669>
+ 1159 							GetVolumeObjectPtr: 1065
+ 1160 							pwarn: <>
+ 1161 							VolumeObjectIsHFSPlus: Boolean (), <./fsck_hfs/dfalib/SUtils.c 1724>
+ 1162 								GetVolumeObjectPtr: 1065
+ 1163 							VolumeObjectIsHFS: 1088
+ 1164 							err: <>
+ 1165 							GetVolumeObjectBlockNum: void (), <./fsck_hfs/dfalib/SUtils.c 1070>
+ 1166 								GetVolumeObjectPtr: 1065
+ 1167 							GetVolumeBlock: 762
+ 1168 							fprintf: <>
+ 1169 							DumpData: void (), <./CopyHFSMeta/dump.c 15>
+ 1170 								MIN: <>
+ 1171 								fprintf: <>
+ 1172 								isalnum: <>
+ 1173 								printf: <>
+ 1174 							ReleaseVolumeBlock: 771
+ 1175 						NewHandle: Handle (), <./fsck_hfs/dfalib/SStubs.c 116>
+ 1176 							malloc: <>
+ 1177 							calloc: <>
+ 1178 							free: <>
+ 1179 						utf_decodestr: <>
+ 1180 						strlen: <>
+ 1181 					IsBlueBoxSharedDrive: 551
+ 1182 					CheckForStop: short (), <./fsck_hfs/dfalib/SControl.c 1072>
+ 1183 						err: <>
+ 1184 						TickCount: UInt32 (), <./fsck_hfs/dfalib/SStubs.c 97>
+ 1185 						GetDFAStage: UInt32 (), <./fsck_hfs/dfalib/SUtils.c 176>
+ 1186 						CallUserCancelProc: <>
+ 1187 					CheckForClean: int (), <./fsck_hfs/dfalib/SVerify1.c 453>
+ 1188 						GetVolumeObjectBlockNum: 1165
+ 1189 						fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1190 						plog: 240
+ 1191 						GetVolumeObjectPrimaryBlock: 1063
+ 1192 						VolumeObjectIsHFSPlus: 1161
+ 1193 						RcdError: void (), <./fsck_hfs/dfalib/SUtils.c 199>
+ 1194 							WriteError: 599
+ 1195 						VolumeObjectIsHFS: 1088
+ 1196 						ReleaseVolumeBlock: 771
+ 1197 					CheckIfJournaled: int (), <./fsck_hfs/dfalib/SVerify1.c 98>
+ 1198 						err: <>
+ 1199 						GetVolumeBlock: 762
+ 1200 						ReleaseVolumeBlock: 771
+ 1201 						ValidVolumeHeader: 1073
+ 1202 					fsckPrint: 484
+ 1203 					IsJournalEmpty: int (), <./fsck_hfs/dfalib/SVerify1.c 331>
+ 1204 						err: <>
+ 1205 						GetJournalInfoBlock: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 184>
+ 1206 							err: <>
+ 1207 							GetVolumeBlock: 762
+ 1208 							plog: 240
+ 1209 							ReleaseVolumeBlock: 771
+ 1210 							ValidVolumeHeader: 1073
+ 1211 							SW32: <>
+ 1212 							pread: <>
+ 1213 							memcpy: <>
+ 1214 						SW32: <>
+ 1215 						SW64: <>
+ 1216 						dup: <>
+ 1217 						strdup: <>
+ 1218 						plog: 240
+ 1219 						OpenDeviceByUUID: int (), <./fsck_hfs/dfalib/uuid.c 25>
+ 1220 							memcpy: <>
+ 1221 							CFStringCreateWithCString: <>
+ 1222 							IOServiceMatching: <>
+ 1223 							CFDictionarySetValue: <>
+ 1224 							CFSTR: <>
+ 1225 							IOServiceGetMatchingService: <>
+ 1226 							IORegistryEntryCreateCFProperty: <>
+ 1227 							CFStringGetCString: <>
+ 1228 							plog: 240
+ 1229 							opendev: <>
+ 1230 							strdup: <>
+ 1231 							CFRelease: <>
+ 1232 							IOObjectRelease: <>
+ 1233 						pread: <>
+ 1234 						strerror: <>
+ 1235 						close: <>
+ 1236 						calc_checksum: int (), <./fsck_hfs/dfalib/SVerify1.c 280>
+ 1237 					GetDeviceSize: 1133
+ 1238 					printf: <>
+ 1239 					dumpCache: void (), <./fsck_hfs/cache.c 1498>
+ 1240 						printf: <>
+ 1241 					journal_open: int (), <./fsck_hfs/dfalib/fsck_journal.c 376>
+ 1242 						ioctl: <>
+ 1243 						fplog: 331
+ 1244 						loadJournalHeader: int (), <./fsck_hfs/dfalib/fsck_journal.c 333>
+ 1245 							pread: <>
+ 1246 							warn: <>
+ 1247 						OSSwapInt32: <>
+ 1248 						calc_checksum: uint32_t (), <./fsck_hfs/dfalib/fsck_journal.c 85>
+ 1249 						plog: 240
+ 1250 						getJournalTransaction: block_list_header * (), <./fsck_hfs/dfalib/fsck_journal.c 175>
+ 1251 							memset: <>
+ 1252 							journalRead: ssize_t (), <./fsck_hfs/dfalib/fsck_journal.c 116>
+ 1253 								fplog: 331
+ 1254 								MIN: <>
+ 1255 								pread: <>
+ 1256 								warn: <>
+ 1257 							plog: 240
+ 1258 							fplog: 331
+ 1259 							calc_checksum: 1248
+ 1260 							malloc: <>
+ 1261 							memcpy: <>
+ 1262 							free: <>
+ 1263 						replayTransaction: int (), <./fsck_hfs/dfalib/fsck_journal.c 269>
+ 1264 							plog: 240
+ 1265 						free: <>
+ 1266 					CacheRead: 694
+ 1267 					abort: <>
+ 1268 					memcpy: <>
+ 1269 					CacheWrite: 734
+ 1270 					plog: 240
+ 1271 					close: <>
+ 1272 					free: <>
+ 1273 					IVChk: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 600>
+ 1274 						err: <>
+ 1275 						GetVolumeObjectPtr: 1065
+ 1276 						fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1277 						plog: 240
+ 1278 						GetVolumeObjectBlockNum: 1165
+ 1279 						GetVolumeObjectVHBorMDB: OSErr (), <./fsck_hfs/dfalib/SUtils.c 837>
+ 1280 							err: <>
+ 1281 							GetVolumeObjectPtr: 1065
+ 1282 							GetVolumeObjectBlockNum: 1165
+ 1283 							GetVolumeObjectBlock: 1069
+ 1284 							ValidVolumeHeader: 1073
+ 1285 						VolumeObjectIsHFS: 1088
+ 1286 						ScavengeVolumeType: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 828>
+ 1287 							err: <>
+ 1288 							GetVolumeObjectPtr: 1065
+ 1289 							GetVolumeBlock: 762
+ 1290 							ValidVolumeHeader: 1073
+ 1291 							ReleaseVolumeBlock: 771
+ 1292 							SeekVolumeHeader: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 954>
+ 1293 								err: <>
+ 1294 								GetVolumeBlock: 762
+ 1295 								ValidVolumeHeader: 1073
+ 1296 								ReleaseVolumeBlock: 771
+ 1297 						RcdMDBEmbededVolDescriptionErr: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 2955>
+ 1298 							RcdError: 1193
+ 1299 							AllocMinorRepairOrder: RepairOrderPtr (), <./fsck_hfs/dfalib/SUtils.c 432>
+ 1300 								AllocateClearMemory: <>
+ 1301 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1302 								plog: 240
+ 1303 						VolumeObjectIsEmbeddedHFSPlus: Boolean (), <./fsck_hfs/dfalib/SUtils.c 1805>
+ 1304 							GetVolumeObjectPtr: 1065
+ 1305 						ReleaseVolumeBlock: 771
+ 1306 						GetVolumeObjectVHB: OSErr (), <./fsck_hfs/dfalib/SUtils.c 961>
+ 1307 							err: <>
+ 1308 							GetVolumeObjectPtr: 1065
+ 1309 							GetVolumeObjectBlock: 1069
+ 1310 							ValidVolumeHeader: 1073
+ 1311 						WriteError: 599
+ 1312 						VolumeObjectIsHFSPlus: 1161
+ 1313 						fsckPrint: 484
+ 1314 						RcdError: 1193
+ 1315 					gettimeofday: <>
+ 1316 					BitMapCheckBegin: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 118>
+ 1317 						VolumeObjectIsHFSPlus: 1161
+ 1318 						malloc: <>
+ 1319 						memset: <>
+ 1320 						bit_alloc: <>
+ 1321 						bit_nclear: <>
+ 1322 						BMS_InitTree: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1277>
+ 1323 							BMS_GrowNodePool: 789
+ 1324 						CaptureBitmapBits: 783
+ 1325 					timersub: <>
+ 1326 					CreateExtentsBTreeControlBlock: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 1008>
+ 1327 						err: <>
+ 1328 						VolumeObjectIsHFSPlus: 1161
+ 1329 						GetVolumeObjectVHBorMDB: 1279
+ 1330 						exit: <>
+ 1331 						CopyMemory: <>
+ 1332 						CheckFileExtents: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 3765>
+ 1333 							err: <>
+ 1334 							assert: <>
+ 1335 							VolumeObjectIsHFSPlus: 1161
+ 1336 							ChkExtRec: OSErr (), <./fsck_hfs/dfalib/SVerify2.c 64>
+ 1337 								VolumeObjectIsHFSPlus: 1161
+ 1338 								RcdError: 1193
+ 1339 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1340 								plog: 240
+ 1341 							DPRINTF: void (), <./fsck_hfs/fsck_debug.c 59>
+ 1342 								plog: 240
+ 1343 								va_start: <>
+ 1344 								vplog: 242
+ 1345 								va_end: <>
+ 1346 							plog: 240
+ 1347 							HexDump: 610
+ 1348 							RecordBadExtent: int (), <./fsck_hfs/dfalib/SVerify1.c 3547>
+ 1349 								VolumeObjectIsHFSPlus: 1161
+ 1350 								AllocMinorRepairOrder: 1299
+ 1351 							CheckPhysicalMatch: void (), <./fsck_hfs/dfalib/SVerify1.c 3625>
+ 1352 								realloc: <>
+ 1353 								fprintf: <>
+ 1354 							CaptureBitmapBits: 783
+ 1355 							AddExtentToOverlapList: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 3954>
+ 1356 								ClearMemory: 530
+ 1357 								assert: <>
+ 1358 								strlen: <>
+ 1359 								malloc: <>
+ 1360 								strlcpy: <>
+ 1361 								NewHandleClear: Handle (), <./fsck_hfs/dfalib/SStubs.c 111>
+ 1362 									NewHandle: 1175
+ 1363 								ExtentInfoExists: Boolean (), <./fsck_hfs/dfalib/SVerify1.c 4010>
+ 1364 									strcmp: <>
+ 1365 								GetHandleSize: Size (), <./fsck_hfs/dfalib/SStubs.c 148>
+ 1366 								SetHandleSize: void (), <./fsck_hfs/dfalib/SStubs.c 153>
+ 1367 									realloc: <>
+ 1368 								CopyMemory: <>
+ 1369 							BuildExtentKey: void (), <./fsck_hfs/dfalib/SVerify1.c 3926>
+ 1370 							SearchBTreeRecord: 578
+ 1371 							IntError: int (), <./fsck_hfs/dfalib/SUtils.c 220>
+ 1372 							GetBTreeRecord: 660
+ 1373 						RcdError: 1193
+ 1374 						plog: 240
+ 1375 						GetBTreeHeader: OSErr (), <./fsck_hfs/dfalib/SUtils.c 285>
+ 1376 							err: <>
+ 1377 							SetFileBlockSize: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 227>
+ 1378 							GetFileBlock: 565
+ 1379 							ReturnIfError: <>
+ 1380 							hfs_swap_BTNode: 594
+ 1381 							ReleaseFileBlock: 730
+ 1382 							CopyMemory: <>
+ 1383 							RcdError: 1193
+ 1384 						CompareExtentKeysPlus: SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 395>
+ 1385 							DebugStr: 531
+ 1386 						CheckNodesFirstOffset: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 1189>
+ 1387 							err: <>
+ 1388 							SetFileBlockSize: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 227>
+ 1389 							GetNode: 589
+ 1390 							GetRecordOffset: 630
+ 1391 							fprintf: <>
+ 1392 							RcdError: 1193
+ 1393 							ReleaseNode: 633
+ 1394 						CompareExtentKeys: SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 332>
+ 1395 							DebugStr: 531
+ 1396 						AllocateClearMemory: <>
+ 1397 						ReleaseVolumeBlock: 771
+ 1398 					CreateCatalogBTreeControlBlock: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 1356>
+ 1399 						err: <>
+ 1400 						VolumeObjectIsHFSPlus: 1161
+ 1401 						GetVolumeObjectVHBorMDB: 1279
+ 1402 						CopyMemory: <>
+ 1403 						CheckFileExtents: 1332
+ 1404 						exit: <>
+ 1405 						RcdError: 1193
+ 1406 						GetBTreeHeader: 1375
+ 1407 						CaseSensitiveCatalogKeyCompare: SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 277>
+ 1408 						fsckPrint: 484
+ 1409 						CompareExtendedCatalogKeys: SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 236>
+ 1410 							FastUnicodeCompare: SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 153>
+ 1411 						CheckNodesFirstOffset: 1386
+ 1412 						CompareCatalogKeys: SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 206>
+ 1413 							FastRelString: SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 44>
+ 1414 						plog: 240
+ 1415 						AllocateClearMemory: <>
+ 1416 						BuildCatalogKey: void (), <./fsck_hfs/dfalib/SUtils.c 693>
+ 1417 							CopyCatalogName: void (), <./fsck_hfs/dfalib/SUtils.c 639>
+ 1418 								CopyMemory: <>
+ 1419 							UpdateCatalogName: void (), <./fsck_hfs/dfalib/SUtils.c 732>
+ 1420 								CopyMemory: <>
+ 1421 						SearchBTreeRecord: 578
+ 1422 						utf_encodestr: <>
+ 1423 						bcopy: <>
+ 1424 						ReleaseVolumeBlock: 771
+ 1425 					CreateAttributesBTreeControlBlock: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 2051>
+ 1426 						err: <>
+ 1427 						VolumeObjectIsHFSPlus: 1161
+ 1428 						GetVolumeObjectVHB: 1306
+ 1429 						exit: <>
+ 1430 						CopyMemory: <>
+ 1431 						CheckFileExtents: 1332
+ 1432 						RcdError: 1193
+ 1433 						GetBTreeHeader: 1375
+ 1434 						CompareAttributeKeys: __private_extern__ SInt32 (), <./fsck_hfs/dfalib/SKeyCompare.c 458>
+ 1435 						CheckNodesFirstOffset: 1386
+ 1436 						AllocateClearMemory: <>
+ 1437 						ReleaseVolumeBlock: 771
+ 1438 					CreateExtendedAllocationsFCB: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 1581>
+ 1439 						err: <>
+ 1440 						VolumeObjectIsHFSPlus: 1161
+ 1441 						GetVolumeObjectBlockNum: 1165
+ 1442 						GetVolumeObjectVHB: 1306
+ 1443 						exit: <>
+ 1444 						CopyMemory: <>
+ 1445 						CheckFileExtents: 1332
+ 1446 						SetFileBlockSize: OSStatus (), <./fsck_hfs/dfalib/BlockCache.c 227>
+ 1447 						RcdError: 1193
+ 1448 						ReleaseVolumeBlock: 771
+ 1449 					CalculateItemCount: void (), <./fsck_hfs/dfalib/SUtils.c 2106>
+ 1450 						GetVolumeObjectPtr: 1065
+ 1451 					VLockedChk: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 3412>
+ 1452 						GetVolumeObjectPtr: 1065
+ 1453 						VolumeObjectIsHFSPlus: 1161
+ 1454 						GetBTreeRecord: 660
+ 1455 						RcdError: 1193
+ 1456 						CopyMemory: <>
+ 1457 						GetVolumeObjectPrimaryMDB: 1093
+ 1458 						GetVolumeObjectAlternateMDB: OSErr (), <./fsck_hfs/dfalib/SUtils.c 986>
+ 1459 							err: <>
+ 1460 							GetVolumeObjectPtr: 1065
+ 1461 							GetVolumeObjectBlock: 1069
+ 1462 						ReleaseVolumeBlock: 771
+ 1463 						ReturnIfError: <>
+ 1464 						CopyCatalogName: 1417
+ 1465 						RcdNameLockedErr: int (), <./fsck_hfs/dfalib/SVerify1.c 3503>
+ 1466 							VolumeObjectIsHFSPlus: 1161
+ 1467 							RcdError: 1193
+ 1468 							CatalogNameSize: UInt32 (), <./fsck_hfs/dfalib/SUtils.c 672>
+ 1469 								CatalogNameLength: UInt32 (), <./fsck_hfs/dfalib/SUtils.c 663>
+ 1470 							AllocMinorRepairOrder: 1299
+ 1471 							CopyCatalogName: 1417
+ 1472 					ExtBTChk: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 1234>
+ 1473 						err: <>
+ 1474 						GetVolumeObjectBlockNum: 1165
+ 1475 						BTCheck: int (), <./fsck_hfs/dfalib/SVerify2.c 212>
+ 1476 							GetBTreeControlBlock: <>
+ 1477 							exit: <>
+ 1478 							GetNode: 589
+ 1479 							RcdError: 1193
+ 1480 							AllocBTN: int (), <./fsck_hfs/dfalib/SUtils.c 259>
+ 1481 								GetBTreeControlBlock: <>
+ 1482 								RcdError: 1193
+ 1483 							GetRecordSize: 847
+ 1484 							plog: 240
+ 1485 							CheckIfJournaled: 1197
+ 1486 							fsckPrint: 484
+ 1487 							BuildExtentKey: 1369
+ 1488 							BTIterateRecord: 661
+ 1489 							memset: <>
+ 1490 							ReleaseNode: 633
+ 1491 							BTKeyChk: int (), <./fsck_hfs/dfalib/SVerify2.c 1248>
+ 1492 								RcdError: 1193
+ 1493 								GetRecordByIndex: 645
+ 1494 								CompareKeys: 631
+ 1495 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1496 								plog: 240
+ 1497 								HexDump: 610
+ 1498 							printf: <>
+ 1499 							HexDump: 610
+ 1500 							GetRecordByIndex: 645
+ 1501 							CompareKeys: 631
+ 1502 							CalcKeySize: <>
+ 1503 							CheckForStop: 1182
+ 1504 							CopyMemory: <>
+ 1505 						ReturnIfError: <>
+ 1506 						BTMapChk: int (), <./fsck_hfs/dfalib/SVerify2.c 794>
+ 1507 							GetBTreeControlBlock: <>
+ 1508 							ReleaseNode: 633
+ 1509 							GetNode: 589
+ 1510 							RcdError: 1193
+ 1511 							AllocBTN: 1480
+ 1512 							exit: <>
+ 1513 							plog: 240
+ 1514 							GetRecordSize: 847
+ 1515 						BTCheckUnusedNodes: int (), <./fsck_hfs/dfalib/SVerify2.c 905>
+ 1516 							GetBTreeControlBlock: <>
+ 1517 							err: <>
+ 1518 							plog: 240
+ 1519 							fsckPrint: 484
+ 1520 						CmpBTH: OSErr (), <./fsck_hfs/dfalib/SVerify2.c 995>
+ 1521 							err: <>
+ 1522 							GetBTreeControlBlock: <>
+ 1523 							GetBTreeHeader: 1375
+ 1524 							ReturnIfError: <>
+ 1525 							fsckPrint: 484
+ 1526 							sprintf: <>
+ 1527 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1528 							plog: 240
+ 1529 						CmpBTM: int (), <./fsck_hfs/dfalib/SVerify2.c 1137>
+ 1530 							GetBTreeControlBlock: <>
+ 1531 							ReleaseNode: 633
+ 1532 							GetNode: 589
+ 1533 							exit: <>
+ 1534 							GetRecordSize: 847
+ 1535 							GetRecordAddress: 629
+ 1536 							CmpBlock: OSErr (), <./fsck_hfs/dfalib/SVerify2.c 1108>
+ 1537 							RcdError: 1193
+ 1538 					BadBlockFileExtentCheck: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 1304>
+ 1539 						VolumeObjectIsHFSPlus: 1161
+ 1540 						GetVolumeObjectVHBorMDB: 1279
+ 1541 						ClearMemory: 530
+ 1542 						CheckFileExtents: 1332
+ 1543 						ReleaseVolumeBlock: 771
+ 1544 					CheckCatalogBTree: OSErr (), <./fsck_hfs/dfalib/CatalogCheck.c 515>
+ 1545 						err: <>
+ 1546 						VolumeObjectIsHFSPlus: 1161
+ 1547 						ClearMemory: 530
+ 1548 						HardLinkCheckBegin: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 252>
+ 1549 							GetPrivateDir: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1050>
+ 1550 								VolumeObjectIsHFSPlus: 1161
+ 1551 								ClearMemory: 530
+ 1552 								CopyMemory: <>
+ 1553 								BTSearchRecord: 584
+ 1554 							malloc: <>
+ 1555 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1556 							plog: 240
+ 1557 							GetRootDir: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1085>
+ 1558 								VolumeObjectIsHFSPlus: 1161
+ 1559 								GetCatalogRecordByID: OSErr (), <./fsck_hfs/dfalib/dirhardlink.c 36>
+ 1560 									bzero: <>
+ 1561 									BuildCatalogKey: 1416
+ 1562 									BTSearchRecord: 584
+ 1563 									bcopy: <>
+ 1564 									CalcKeySize: <>
+ 1565 									RcdError: 1193
+ 1566 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1567 									plog: 240
+ 1568 							calloc: <>
+ 1569 						dirhardlink_init: int (), <./fsck_hfs/dfalib/dirhardlink.c 386>
+ 1570 							VolumeObjectIsHFSPlus: 1161
+ 1571 							priv_dir_lookup: int (), <./fsck_hfs/dfalib/dirhardlink.c 363>
+ 1572 								strlen: <>
+ 1573 								BuildCatalogKey: 1416
+ 1574 								SearchBTreeRecord: 578
+ 1575 						CheckIfJournaled: 1197
+ 1576 						strlen: <>
+ 1577 						BuildCatalogKey: 1416
+ 1578 						SearchBTreeRecord: 578
+ 1579 						GetVolumeObjectBlockNum: 1165
+ 1580 						BTCheck: 1475
+ 1581 						CheckCatalogRecord: int (), <./fsck_hfs/dfalib/CatalogCheck.c 659>
+ 1582 							VolumeObjectIsHFSPlus: 1161
+ 1583 							CheckCatalogRecord_HFS: int (), <./fsck_hfs/dfalib/CatalogCheck.c 741>
+ 1584 								RcdError: 1193
+ 1585 								CaptureMissingThread: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1815>
+ 1586 									VolumeObjectIsHFSPlus: 1161
+ 1587 									fsckPrint: 484
+ 1588 									AllocateClearMemory: <>
+ 1589 									CopyMemory: <>
+ 1590 								CheckDirectory_HFS: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1127>
+ 1591 									RcdError: 1193
+ 1592 									CheckCatalogName_HFS: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1470>
+ 1593 										fsckPrint: 484
+ 1594 										fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1595 										plog: 240
+ 1596 										PrintName: void (), <./fsck_hfs/dfalib/SUtils.c 2468>
+ 1597 											plog: 240
+ 1598 										UniqueDotName: OSErr (), <./fsck_hfs/dfalib/CatalogCheck.c 1543>
+ 1599 											strlen: <>
+ 1600 											memcpy: <>
+ 1601 											BuildCatalogKey: 1416
+ 1602 											SearchBTreeRecord: 578
+ 1603 										AllocMinorRepairOrder: 1299
+ 1604 										CopyMemory: <>
+ 1605 								CheckFile_HFS: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1162>
+ 1606 									RcdError: 1193
+ 1607 									CheckFileExtents: 1332
+ 1608 									snprintf: <>
+ 1609 									fsckPrint: 484
+ 1610 									PtrAndHand: OSErr (), <./fsck_hfs/dfalib/SStubs.c 168>
+ 1611 										realloc: <>
+ 1612 										memcpy: <>
+ 1613 									CheckCatalogName_HFS: 1592
+ 1614 								CheckThread_HFS: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1237>
+ 1615 									RcdError: 1193
+ 1616 									CheckCatalogName_HFS: 1592
+ 1617 							RcdError: 1193
+ 1618 							CaptureMissingThread: 1585
+ 1619 							CheckDirectory: int (), <./fsck_hfs/dfalib/CatalogCheck.c 818>
+ 1620 								RcdError: 1193
+ 1621 								RecordXAttrBits: void (), <./fsck_hfs/dfalib/SVerify1.c 2622>
+ 1622 									add_prime_bucket_uint32: void (), <./fsck_hfs/dfalib/SUtils.c 2495>
+ 1623 								plog: 240
+ 1624 								MapEncodingToIndex: <>
+ 1625 								CheckBSDInfo: void (), <./fsck_hfs/dfalib/CatalogCheck.c 1292>
+ 1626 									RcdError: 1193
+ 1627 									CatalogNameSize: 1468
+ 1628 									AllocMinorRepairOrder: 1299
+ 1629 									CopyCatalogName: 1417
+ 1630 								CheckCatalogName: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1353>
+ 1631 									fsckPrint: 484
+ 1632 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1633 									plog: 240
+ 1634 									PrintName: 1596
+ 1635 									UniqueDotName: 1598
+ 1636 									AllocMinorRepairOrder: 1299
+ 1637 									CopyMemory: <>
+ 1638 									FixDecomps: Boolean (), <./fsck_hfs/dfalib/CatalogCheck.c 1908>
+ 1639 							CheckFile: int (), <./fsck_hfs/dfalib/CatalogCheck.c 866>
+ 1640 								utf_encodestr: <>
+ 1641 								RecordXAttrBits: 1621
+ 1642 								plog: 240
+ 1643 								RcdError: 1193
+ 1644 								MapEncodingToIndex: <>
+ 1645 								CheckBSDInfo: 1625
+ 1646 								CheckFileExtents: 1332
+ 1647 								RecordBadAllocation: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1644>
+ 1648 									VolumeObjectIsHFSPlus: 1161
+ 1649 									malloc: <>
+ 1650 									GetFileNamePathByID: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5200>
+ 1651 										err: <>
+ 1652 										VolumeObjectIsHFSPlus: 1161
+ 1653 										malloc: <>
+ 1654 										plog: 240
+ 1655 										BuildCatalogKey: 1416
+ 1656 										SearchBTreeRecord: 578
+ 1657 										utf_encodestr: <>
+ 1658 										memcpy: <>
+ 1659 										free: <>
+ 1660 									sprintf: <>
+ 1661 									fsckPrint: 484
+ 1662 									free: <>
+ 1663 									strlen: <>
+ 1664 									AllocMinorRepairOrder: 1299
+ 1665 									CopyMemory: <>
+ 1666 								RecordTruncation: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1741>
+ 1667 									VolumeObjectIsHFSPlus: 1161
+ 1668 									malloc: <>
+ 1669 									GetFileNamePathByID: 1650
+ 1670 									sprintf: <>
+ 1671 									fsckPrint: 484
+ 1672 									free: <>
+ 1673 									strlen: <>
+ 1674 									AllocMinorRepairOrder: 1299
+ 1675 									CopyMemory: <>
+ 1676 								CaptureHardLink: void (), <./fsck_hfs/dfalib/HardLinkCheck.c 476>
+ 1677 									filelink_hash_link: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 394>
+ 1678 										calloc: <>
+ 1679 										filelink_hash_search: struct filelink_hash (), <./fsck_hfs/dfalib/HardLinkCheck.c 347>
+ 1680 										filelink_hash_insert: struct filelink_hash (), <./fsck_hfs/dfalib/HardLinkCheck.c 371>
+ 1681 									hardlink_add_bucket: void (), <./fsck_hfs/dfalib/dirhardlink.c 554>
+ 1682 										add_prime_bucket_uint64: void (), <./fsck_hfs/dfalib/SUtils.c 2547>
+ 1683 									record_link_badchain: void (), <./fsck_hfs/dfalib/dirhardlink.c 244>
+ 1684 										fsckPrint: 484
+ 1685 									plog: 240
+ 1686 									AllocMinorRepairOrder: 1299
+ 1687 									fsckPrint: 484
+ 1688 									snprintf: <>
+ 1689 								CheckCatalogName: 1630
+ 1690 								fsckPrint: 484
+ 1691 								AllocMinorRepairOrder: 1299
+ 1692 								snprintf: <>
+ 1693 								printSymLinkName: void (), <./fsck_hfs/dfalib/CatalogCheck.c 98>
+ 1694 									GetFileNamePathByID: 1650
+ 1695 									fsckPrint: 484
+ 1696 								malloc: <>
+ 1697 								CacheRead: 694
+ 1698 								abort: <>
+ 1699 								memcpy: <>
+ 1700 								CacheRelease: 722
+ 1701 								strnlen: <>
+ 1702 								free: <>
+ 1703 							CheckThread: int (), <./fsck_hfs/dfalib/CatalogCheck.c 1083>
+ 1704 								RcdError: 1193
+ 1705 								CheckCatalogName: 1630
+ 1706 						exit: <>
+ 1707 						RcdError: 1193
+ 1708 						fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1709 						plog: 240
+ 1710 						BTMapChk: 1506
+ 1711 						BTCheckUnusedNodes: 1515
+ 1712 						CmpBTH: 1520
+ 1713 						CmpBTM: 1529
+ 1714 						CheckHardLinks: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 889>
+ 1715 							fsckPrint: 484
+ 1716 							calloc: <>
+ 1717 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1718 							plog: 240
+ 1719 							exit: <>
+ 1720 							strlen: <>
+ 1721 							ClearMemory: 530
+ 1722 							BuildCatalogKey: 1416
+ 1723 							BTSearchRecord: 584
+ 1724 							BTIterateRecord: 661
+ 1725 							utf_encodestr: <>
+ 1726 							strstr: <>
+ 1727 							RecordOrphanOpenUnlink: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1158>
+ 1728 								fsckPrint: 484
+ 1729 							inode_check: int (), <./fsck_hfs/dfalib/dirhardlink.c 582>
+ 1730 								utf_encodestr: <>
+ 1731 								strtoul: <>
+ 1732 								strlen: <>
+ 1733 								record_inode_badparent: int (), <./fsck_hfs/dfalib/dirhardlink.c 212>
+ 1734 									fsckPrint: 484
+ 1735 									snprintf: <>
+ 1736 								snprintf: <>
+ 1737 								strncmp: <>
+ 1738 								record_inode_badname: int (), <./fsck_hfs/dfalib/dirhardlink.c 230>
+ 1739 									fsckPrint: 484
+ 1740 								record_link_badchain: 1683
+ 1741 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1742 								plog: 240
+ 1743 								record_inode_badflags: int (), <./fsck_hfs/dfalib/dirhardlink.c 178>
+ 1744 									AllocMinorRepairOrder: 1299
+ 1745 									IsDuplicateRepairOrder: int (), <./fsck_hfs/dfalib/SUtils.c 355>
+ 1746 									DeleteRepairOrder: void (), <./fsck_hfs/dfalib/SUtils.c 394>
+ 1747 										DisposeMemory: <>
+ 1748 									fsckPrint: 484
+ 1749 									snprintf: <>
+ 1750 								filelink_hash_inode: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 424>
+ 1751 									calloc: <>
+ 1752 									filelink_hash_search: struct filelink_hash (), <./fsck_hfs/dfalib/HardLinkCheck.c 347>
+ 1753 									filelink_hash_insert: struct filelink_hash (), <./fsck_hfs/dfalib/HardLinkCheck.c 371>
+ 1754 								get_first_link_id: int (), <./fsck_hfs/dfalib/dirhardlink.c 433>
+ 1755 									bzero: <>
+ 1756 									utf_decodestr: <>
+ 1757 									strlen: <>
+ 1758 									BTSearchRecord: 584
+ 1759 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1760 									plog: 240
+ 1761 									isdigit: <>
+ 1762 									strtoul: <>
+ 1763 									GetCatalogRecordByID: 1559
+ 1764 								GetCatalogRecordByID: 1559
+ 1765 								record_link_badfinderinfo: int (), <./fsck_hfs/dfalib/dirhardlink.c 293>
+ 1766 									AllocMinorRepairOrder: 1299
+ 1767 									IsDuplicateRepairOrder: 1745
+ 1768 									DeleteRepairOrder: 1746
+ 1769 									fsckPrint: 484
+ 1770 								hardlink_add_bucket: 1681
+ 1771 								malloc: <>
+ 1772 								free: <>
+ 1773 							compare_prime_buckets: int (), <./fsck_hfs/dfalib/SUtils.c 2589>
+ 1774 							record_link_badchain: 1683
+ 1775 							filelink_hash_destroy: void (), <./fsck_hfs/dfalib/HardLinkCheck.c 452>
+ 1776 								free: <>
+ 1777 							free: <>
+ 1778 						HardLinkCheckEnd: void (), <./fsck_hfs/dfalib/HardLinkCheck.c 309>
+ 1779 							free: <>
+ 1780 							DisposeMemory: <>
+ 1781 					CatHChk: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 1672>
+ 1782 						VolumeObjectIsHFSPlus: 1161
+ 1783 						BuildCatalogKey: 1416
+ 1784 						SearchBTreeRecord: 578
+ 1785 						RcdError: 1193
+ 1786 						GetBTreeRecord: 660
+ 1787 						IntError: 1371
+ 1788 						CheckForStop: 1182
+ 1789 						ReturnIfError: <>
+ 1790 						CopyCatalogName: 1417
+ 1791 						realloc: <>
+ 1792 						fsckPrint: 484
+ 1793 						ClearMemory: 530
+ 1794 						M_DebugStr: <>
+ 1795 						RcdValErr: int (), <./fsck_hfs/dfalib/SVerify1.c 2828>
+ 1796 							VolumeObjectIsHFSPlus: 1161
+ 1797 							fsckPrint: 484
+ 1798 							sprintf: <>
+ 1799 							CatalogNameSize: 1468
+ 1800 							AllocMinorRepairOrder: 1299
+ 1801 							CopyCatalogName: 1417
+ 1802 					VolumeObjectIsHFSX: Boolean (), <./fsck_hfs/dfalib/SUtils.c 1749>
+ 1803 						err: <>
+ 1804 						GetVolumeBlock: 762
+ 1805 						ReleaseVolumeBlock: 771
+ 1806 					CheckFolderCount: OSErr (), <./fsck_hfs/dfalib/CatalogCheck.c 324>
+ 1807 						err: <>
+ 1808 						ClearMemory: 530
+ 1809 						VolumeObjectIsHFSX: 1802
+ 1810 						LCALLOC: <>
+ 1811 						BuildCatalogKey: 1416
+ 1812 						BTIterateRecord: 661
+ 1813 						RcdHsFldCntErr: int (), <./fsck_hfs/dfalib/SVerify1.c 2880>
+ 1814 							fsckPrint: 484
+ 1815 							sprintf: <>
+ 1816 							AllocMinorRepairOrder: 1299
+ 1817 						folderCountAdd: int (), <./fsck_hfs/dfalib/CatalogCheck.c 260>
+ 1818 							findFolderEntry: struct folderCountInfo (), <./fsck_hfs/dfalib/CatalogCheck.c 200>
+ 1819 							addFolderEntry: struct folderCountInfo (), <./fsck_hfs/dfalib/CatalogCheck.c 222>
+ 1820 						releaseFolderCountInfo: void (), <./fsck_hfs/dfalib/CatalogCheck.c 182>
+ 1821 							free: <>
+ 1822 						CountFolderRecords: OSErr (), <./fsck_hfs/dfalib/CatalogCheck.c 122>
+ 1823 							err: <>
+ 1824 							ClearMemory: 530
+ 1825 							BuildCatalogKey: 1416
+ 1826 							BTSearchRecord: 584
+ 1827 							BTIterateRecord: 661
+ 1828 							RcdFCntErr: int (), <./fsck_hfs/dfalib/SVerify1.c 2917>
+ 1829 								fsckPrint: 484
+ 1830 								sprintf: <>
+ 1831 								AllocMinorRepairOrder: 1299
+ 1832 						RcdFCntErr: 1828
+ 1833 					AttrBTChk: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 2742>
+ 1834 						err: <>
+ 1835 						fsckPrint: 484
+ 1836 						GetVolumeObjectBlockNum: 1165
+ 1837 						BTCheck: 1475
+ 1838 						CheckAttributeRecord: int (), <./fsck_hfs/dfalib/SVerify1.c 2396>
+ 1839 							GetDFAStage: 1185
+ 1840 							assert: <>
+ 1841 							VolumeObjectIsHFSPlus: 1161
+ 1842 							utf_encodestr: <>
+ 1843 							strcmp: <>
+ 1844 							CheckLastAttrAllocation: int (), <./fsck_hfs/dfalib/SVerify1.c 2287>
+ 1845 								RecordBadAllocation: 1647
+ 1846 								RecordTruncation: 1666
+ 1847 							RecordLastAttrBits: void (), <./fsck_hfs/dfalib/SVerify1.c 2219>
+ 1848 								RecordXAttrBits: 1621
+ 1849 							RcdError: 1193
+ 1850 							CheckFileExtents: 1332
+ 1851 							setLastAttrAllocInfo: void (), <./fsck_hfs/dfalib/SVerify1.c 2264>
+ 1852 							DeleteBTreeRecord: OSErr (), <./fsck_hfs/dfalib/SBTree.c 259>
+ 1853 								CheckBTreeKey: 579
+ 1854 								ExitOnError: <>
+ 1855 								CopyMemory: <>
+ 1856 								CalcKeySize: <>
+ 1857 								BTDeleteRecord: OSStatus (), <./fsck_hfs/dfalib/BTree.c 1638>
+ 1858 									err: <>
+ 1859 									M_ReturnErrorIf: <>
+ 1860 									CheckKey: <>
+ 1861 									M_ExitOnError: <>
+ 1862 									SearchTree: 639
+ 1863 									DeleteTree: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 701>
+ 1864 										err: <>
+ 1865 										PanicIf: <>
+ 1866 										DeleteRecord: 853
+ 1867 										GetNode: 589
+ 1868 										M_ExitOnError: <>
+ 1869 										UpdateNode: 869
+ 1870 										ClearNode: 897
+ 1871 										FreeNode: OSStatus (), <./fsck_hfs/dfalib/BTreeAllocate.c 182>
+ 1872 											err: <>
+ 1873 											GetMapNode: 882
+ 1874 											M_ExitOnError: <>
+ 1875 											M_SWAP_BE16_ClearBitNum: <>
+ 1876 											UpdateNode: 869
+ 1877 											ReleaseNode: 633
+ 1878 										CollapseTree: OSStatus (), <./fsck_hfs/dfalib/BTreeTreeOps.c 853>
+ 1879 											err: <>
+ 1880 											GetChildNodeNum: UInt32 (), <./fsck_hfs/dfalib/BTreeNodeOps.c 900>
+ 1881 												GetRecordAddress: 629
+ 1882 												CalcKeySize: <>
+ 1883 											ClearNode: 897
+ 1884 											UpdateNode: 869
+ 1885 											M_ExitOnError: <>
+ 1886 											FreeNode: 1871
+ 1887 											GetNode: 589
+ 1888 											M_BTreeHeaderDirty: <>
+ 1889 											ReleaseNode: 633
+ 1890 										GetRecordByIndex: 645
+ 1891 										GetRecordAddress: 629
+ 1892 										InsertTree: 906
+ 1893 										DeleteTree: 1863
+ 1894 										ReleaseNode: 633
+ 1895 									M_BTreeHeaderDirty: <>
+ 1896 									ReleaseNode: 633
+ 1897 								InvalidateBTreeIterator: 1048
+ 1898 							DPRINTF: 1341
+ 1899 							strlcpy: <>
+ 1900 						ReturnIfError: <>
+ 1901 						CheckLastAttrAllocation: 1844
+ 1902 						RecordLastAttrBits: 1847
+ 1903 						CompareXattrPrimeBuckets: int (), <./fsck_hfs/dfalib/SVerify1.c 2684>
+ 1904 							plog: 240
+ 1905 							compare_prime_buckets: 1773
+ 1906 							fsckPrint: 484
+ 1907 							sprintf: <>
+ 1908 						BTMapChk: 1506
+ 1909 						BTCheckUnusedNodes: 1515
+ 1910 						CmpBTH: 1520
+ 1911 						CmpBTM: 1529
+ 1912 					FindOrigOverlapFiles: int (), <./fsck_hfs/dfalib/SVerify1.c 4189>
+ 1913 						err: <>
+ 1914 						VolumeObjectIsHFSPlus: 1161
+ 1915 						CheckHFSPlusExtentRecords: void (), <./fsck_hfs/dfalib/SVerify1.c 4123>
+ 1916 							DoesOverlap: Boolean (), <./fsck_hfs/dfalib/SVerify1.c 4076>
+ 1917 								AddExtentToOverlapList: 1355
+ 1918 						CheckHFSExtentRecords: void (), <./fsck_hfs/dfalib/SVerify1.c 4152>
+ 1919 							DoesOverlap: 1916
+ 1920 						GetBTreeRecord: 660
+ 1921 						utf_encodestr: <>
+ 1922 					PrintOverlapFiles: void (), <./fsck_hfs/dfalib/SVerify1.c 4377>
+ 1923 						err: <>
+ 1924 						VolumeObjectIsHFSPlus: 1161
+ 1925 						qsort: <>
+ 1926 						CompareExtentFileID: int (), <./fsck_hfs/dfalib/SVerify1.c 4464>
+ 1927 						malloc: <>
+ 1928 						GetFileNamePathByID: 1650
+ 1929 						GetSystemFileName: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5098>
+ 1930 							err: <>
+ 1931 							strncpy: <>
+ 1932 							strlen: <>
+ 1933 						fsckPrint: 484
+ 1934 						fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1935 						plog: 240
+ 1936 						free: <>
+ 1937 					dirhardlink_check: int (), <./fsck_hfs/dfalib/dirhardlink.c 1383>
+ 1938 						VolumeObjectIsHFSPlus: 1161
+ 1939 						fsckPrint: 484
+ 1940 						fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1941 						plog: 240
+ 1942 						calloc: <>
+ 1943 						GetBTreeRecord: 660
+ 1944 						dirlink_priv_dir_check: void (), <./fsck_hfs/dfalib/dirhardlink.c 414>
+ 1945 							record_privdir_bad_perm: int (), <./fsck_hfs/dfalib/dirhardlink.c 127>
+ 1946 								RcdError: 1193
+ 1947 								AllocMinorRepairOrder: 1299
+ 1948 						inode_check: 1729
+ 1949 						dirlink_check: void (), <./fsck_hfs/dfalib/dirhardlink.c 891>
+ 1950 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1951 							plog: 240
+ 1952 							hardlink_add_bucket: 1681
+ 1953 							record_dirlink_badownerflags: int (), <./fsck_hfs/dfalib/dirhardlink.c 260>
+ 1954 								AllocMinorRepairOrder: 1299
+ 1955 								IsDuplicateRepairOrder: 1745
+ 1956 								DeleteRepairOrder: 1746
+ 1957 								fsckPrint: 484
+ 1958 								snprintf: <>
+ 1959 							record_link_badfinderinfo: 1765
+ 1960 							check_dirlink_ancestors: void (), <./fsck_hfs/dfalib/dirhardlink.c 839>
+ 1961 								GetCatalogRecordByID: 1559
+ 1962 								record_parent_badflags: int (), <./fsck_hfs/dfalib/dirhardlink.c 325>
+ 1963 									AllocMinorRepairOrder: 1299
+ 1964 									IsDuplicateRepairOrder: 1745
+ 1965 									DeleteRepairOrder: 1746
+ 1966 									fsckPrint: 484
+ 1967 									snprintf: <>
+ 1968 								fsckPrint: 484
+ 1969 						compare_prime_buckets: 1773
+ 1970 						record_link_badchain: 1683
+ 1971 						check_hierarchy_loops: int (), <./fsck_hfs/dfalib/dirhardlink.c 1234>
+ 1972 							malloc: <>
+ 1973 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 1974 							plog: 240
+ 1975 							DFS_PUSH: <>
+ 1976 							DFS_POP: <>
+ 1977 							DFS_PEEK: <>
+ 1978 							find_next_child_dir: int (), <./fsck_hfs/dfalib/dirhardlink.c 943>
+ 1979 								bzero: <>
+ 1980 								BuildCatalogKey: 1416
+ 1981 								BTSearchRecord: 584
+ 1982 								BTIterateRecord: 661
+ 1983 							check_loops: int (), <./fsck_hfs/dfalib/dirhardlink.c 1128>
+ 1984 							fsckPrint: 484
+ 1985 							print_dfs: void (), <./fsck_hfs/dfalib/dirhardlink.c 1143>
+ 1986 								plog: 240
+ 1987 							is_dirinode_visited: int (), <./fsck_hfs/dfalib/dirhardlink.c 1182>
+ 1988 							mark_dirinode_visited: void (), <./fsck_hfs/dfalib/dirhardlink.c 1167>
+ 1989 							free: <>
+ 1990 						free: <>
+ 1991 					CheckVolumeBitMap: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 671>
+ 1992 						VolumeObjectIsHFSPlus: 1161
+ 1993 						MarkVCBDirty: <>
+ 1994 						GetSegmentBitmap: 785
+ 1995 						ReleaseFileBlock: 730
+ 1996 						ReturnIfError: <>
+ 1997 						GetFileBlock: 565
+ 1998 						ReleaseVolumeBlock: 771
+ 1999 						GetVolumeBlock: 762
+ 2000 						memcmp: <>
+ 2001 						bcopy: <>
+ 2002 						plog: 240
+ 2003 						fsckPrint: 484
+ 2004 					VInfoChk: OSErr (), <./fsck_hfs/dfalib/SVerify1.c 3071>
+ 2005 						VolumeObjectIsHFSPlus: 1161
+ 2006 						GetVolumeObjectPtr: 1065
+ 2007 						GetBTreeRecord: 660
+ 2008 						IntError: 1371
+ 2009 						GetVolumeObjectAlternateBlockNum: 1084
+ 2010 						GetVolumeObjectAlternateBlock: 1081
+ 2011 						VolumeObjectIsHFS: 1088
+ 2012 						WriteError: 599
+ 2013 						fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2014 						plog: 240
+ 2015 						exit: <>
+ 2016 						GetVolumeObjectPrimaryBlockNum: 1067
+ 2017 						GetVolumeObjectPrimaryBlock: 1063
+ 2018 						VolumeObjectIsEmbeddedHFSPlus: 1303
+ 2019 						ChkCName: OSErr (), <./fsck_hfs/dfalib/SVerify2.c 1368>
+ 2020 							err: <>
+ 2021 							CatalogNameLength: 1469
+ 2022 						CopyMemory: <>
+ 2023 						CompareVolumeHeader: OSErr (), <./fsck_hfs/dfalib/SVerify2.c 1578>
+ 2024 							fsckPrint: 484
+ 2025 							sprintf: <>
+ 2026 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2027 							plog: 240
+ 2028 							CmpBlock: 1536
+ 2029 							WriteError: 599
+ 2030 						CheckEmbeddedVolInfoInMDBs: void (), <./fsck_hfs/dfalib/SUtils.c 1871>
+ 2031 							err: <>
+ 2032 							GetVolumeObjectPtr: 1065
+ 2033 							VolumeObjectIsEmbeddedHFSPlus: 1303
+ 2034 							GetVolumeObjectPrimaryMDB: 1093
+ 2035 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2036 							plog: 240
+ 2037 							GetVolumeObjectAlternateMDB: 1458
+ 2038 							WriteError: 599
+ 2039 							ReleaseVolumeBlock: 771
+ 2040 						CmpBlock: 1536
+ 2041 						CmpMDB: int (), <./fsck_hfs/dfalib/SVerify2.c 1404>
+ 2042 							fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2043 							plog: 240
+ 2044 							CmpBlock: 1536
+ 2045 							WriteError: 599
+ 2046 						ReleaseVolumeBlock: 771
+ 2047 					RepairVolume: OSErr (), <./fsck_hfs/dfalib/SRepair.c 124>
+ 2048 						err: <>
+ 2049 						SetDFAStage: 548
+ 2050 						CheckForStop: 1182
+ 2051 						ReturnIfError: <>
+ 2052 						MRepair: int (), <./fsck_hfs/dfalib/SRepair.c 149>
+ 2053 							err: <>
+ 2054 							VolumeObjectIsHFSPlus: 1161
+ 2055 							fsckPrint: 484
+ 2056 							RebuildBTree: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 127>
+ 2057 								plog: 240
+ 2058 								abort: <>
+ 2059 								BTScanInitialize: int (), <./fsck_hfs/dfalib/BTreeScanner.c 317>
+ 2060 									AllocateMemory: <>
+ 2061 								GetVolumeObjectVHBorMDB: 1279
+ 2062 								CopyMemory: <>
+ 2063 								ReleaseVolumeBlock: 771
+ 2064 								CreateNewBTree: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 469>
+ 2065 									ClearMemory: 530
+ 2066 									abort: <>
+ 2067 									GetFileBlock: 565
+ 2068 									ReleaseFileBlock: 730
+ 2069 									SetEndOfForkProc: 748
+ 2070 									BlockFindAll: OSErr (), <./fsck_hfs/dfalib/SAllocate.c 1395>
+ 2071 										err: <>
+ 2072 										plog: 240
+ 2073 										memset: <>
+ 2074 										ReadBitmapBlock: 760
+ 2075 										SWAP_BE32: <>
+ 2076 										nextblock: <>
+ 2077 										FindMinExt: int (), <./fsck_hfs/dfalib/SAllocate.c 1349>
+ 2078 										ReleaseBitmapBlock: 769
+ 2079 										PruneExtents: void (), <./fsck_hfs/dfalib/SAllocate.c 1369>
+ 2080 										BlockMarkAllocated: 777
+ 2081 										MarkVCBDirty: <>
+ 2082 									ReturnIfError: <>
+ 2083 									ZeroFileBlocks: 1112
+ 2084 									InitializeBTree: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 590>
+ 2085 										GetNewNode: 893
+ 2086 										ReturnIfError: <>
+ 2087 										SETOFFSET: <>
+ 2088 										UpdateNode: 869
+ 2089 										M_ExitOnError: <>
+ 2090 										ReleaseNode: 633
+ 2091 									GetBTreeHeader: 1375
+ 2092 									WriteMapNodes: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 712>
+ 2093 										GetNewNode: 893
+ 2094 										M_ExitOnError: <>
+ 2095 										SETOFFSET: <>
+ 2096 										UpdateNode: 869
+ 2097 										ReleaseNode: 633
+ 2098 								fsckPrint: 484
+ 2099 								gettimeofday: <>
+ 2100 								printf: <>
+ 2101 								BTScanNextRecord: int (), <./fsck_hfs/dfalib/BTreeScanner.c 60>
+ 2102 									FindNextLeafNode: int (), <./fsck_hfs/dfalib/BTreeScanner.c 135>
+ 2103 										ReadMultipleNodes: int (), <./fsck_hfs/dfalib/BTreeScanner.c 205>
+ 2104 											MapFileBlockC: 566
+ 2105 											CacheRead: 694
+ 2106 											abort: <>
+ 2107 											memcpy: <>
+ 2108 											CacheRelease: 722
+ 2109 											malloc: <>
+ 2110 											CacheRawRead: 709
+ 2111 											memcmp: <>
+ 2112 											fprintf: <>
+ 2113 											dumpCache: 1239
+ 2114 											free: <>
+ 2115 										hfs_swap_BTNode: 594
+ 2116 									GetRecordByIndex: 645
+ 2117 								ValidateCatalogRecordLength: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 1014>
+ 2118 								ValidateAttributeRecordLength: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 959>
+ 2119 									plog: 240
+ 2120 								ValidateExtentRecordLength: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 938>
+ 2121 								InsertBTreeRecord: 1026
+ 2122 								PrintBTreeKey: void (), <./fsck_hfs/dfalib/SRebuildBTree.c 1130>
+ 2123 									CalcKeySize: <>
+ 2124 									plog: 240
+ 2125 								PrintBTreeData: void (), <./fsck_hfs/dfalib/SRebuildBTree.c 1166>
+ 2126 									plog: 240
+ 2127 								timersub: <>
+ 2128 								BTFlushPath: 1052
+ 2129 								CacheFlush: 344
+ 2130 								MarkVCBDirty: <>
+ 2131 								FlushAlternateVolumeControlBlock: 1102
+ 2132 								DeleteBTree: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 777>
+ 2133 									BlockDeallocate: 1009
+ 2134 									ReleaseExtentsInExtentsBTree: OSErr (), <./fsck_hfs/dfalib/SRebuildBTree.c 845>
+ 2135 										ClearMemory: 530
+ 2136 										BuildExtentKey: 1369
+ 2137 										BTIterateRecord: 661
+ 2138 										BlockDeallocate: 1009
+ 2139 										DeleteBTreeRecord: 1852
+ 2140 									FlushExtentFile: 1050
+ 2141 									MarkVCBDirty: <>
+ 2142 									FlushAlternateVolumeControlBlock: 1102
+ 2143 								FlushExtentFile: 1050
+ 2144 								BTScanTerminate: int (), <./fsck_hfs/dfalib/BTreeScanner.c 372>
+ 2145 									DisposeMemory: <>
+ 2146 							ZeroFillUnusedNodes: int (), <./fsck_hfs/dfalib/SRepair.c 6500>
+ 2147 								GetBTreeControlBlock: <>
+ 2148 								err: <>
+ 2149 								plog: 240
+ 2150 								bzero: <>
+ 2151 							ReturnIfError: <>
+ 2152 							MarkVCBDirty: <>
+ 2153 							RepairHardLinkChains: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 542>
+ 2154 								strlen: <>
+ 2155 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2156 								plog: 240
+ 2157 								GetPrivateDir: 1549
+ 2158 								calloc: <>
+ 2159 								ClearMemory: 530
+ 2160 								BuildCatalogKey: 1416
+ 2161 								BTIterateRecord: 661
+ 2162 								record_link_badflags: int (), <./fsck_hfs/dfalib/dirhardlink.c 145>
+ 2163 									fsckPrint: 484
+ 2164 									snprintf: <>
+ 2165 									AllocMinorRepairOrder: 1299
+ 2166 								record_dirlink_badownerflags: 1953
+ 2167 								record_link_badfinderinfo: 1765
+ 2168 								hash_search: struct IndirectLinkInfo (), <./fsck_hfs/dfalib/HardLinkCheck.c 1300>
+ 2169 								hash_insert: void (), <./fsck_hfs/dfalib/HardLinkCheck.c 1268>
+ 2170 									plog: 240
+ 2171 									exit: <>
+ 2172 								realloc: <>
+ 2173 								free: <>
+ 2174 								memset: <>
+ 2175 								BTSearchRecord: 584
+ 2176 								utf_encodestr: <>
+ 2177 								strstr: <>
+ 2178 								atol: <>
+ 2179 								record_inode_badflags: 1743
+ 2180 								get_first_link_id: 1754
+ 2181 								CheckHardLinkList: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 184>
+ 2182 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2183 									plog: 240
+ 2184 									tsort: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 114>
+ 2185 										calloc: <>
+ 2186 										qsort: <>
+ 2187 										chain_compare: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 95>
+ 2188 										find_id: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 103>
+ 2189 										memcpy: <>
+ 2190 										free: <>
+ 2191 									RecordBadHardLinkPrev: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1195>
+ 2192 										fsckPrint: 484
+ 2193 										sprintf: <>
+ 2194 										AllocMinorRepairOrder: 1299
+ 2195 									RecordBadHardLinkChainFirst: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1167>
+ 2196 										fsckPrint: 484
+ 2197 										sprintf: <>
+ 2198 										AllocMinorRepairOrder: 1299
+ 2199 									RecordBadHardLinkNext: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1219>
+ 2200 										fsckPrint: 484
+ 2201 										sprintf: <>
+ 2202 										AllocMinorRepairOrder: 1299
+ 2203 									fplog: 331
+ 2204 								RecordBadLinkCount: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1244>
+ 2205 									fsckPrint: 484
+ 2206 									sprintf: <>
+ 2207 									AllocMinorRepairOrder: 1299
+ 2208 								RecordOrphanInode: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1133>
+ 2209 									fsckPrint: 484
+ 2210 									AllocMinorRepairOrder: 1299
+ 2211 								RecordOrphanLink: int (), <./fsck_hfs/dfalib/HardLinkCheck.c 1108>
+ 2212 									fsckPrint: 484
+ 2213 									AllocMinorRepairOrder: 1299
+ 2214 							CheckForStop: 1182
+ 2215 							DoMinorOrders: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1401>
+ 2216 								err: <>
+ 2217 								UpdFolderCount: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1230>
+ 2218 									BuildCatalogKey: 1416
+ 2219 									SearchBTreeRecord: 578
+ 2220 									DPRINT: <>
+ 2221 									IntError: 1371
+ 2222 									ReplaceBTreeRecord: 825
+ 2223 								UpdHasFolderCount: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1325>
+ 2224 									BuildCatalogKey: 1416
+ 2225 									SearchBTreeRecord: 578
+ 2226 									IntError: 1371
+ 2227 									ReplaceBTreeRecord: 825
+ 2228 								UpdVal: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1772>
+ 2229 									VolumeObjectIsHFSPlus: 1161
+ 2230 									IntError: 1371
+ 2231 									BuildCatalogKey: 1416
+ 2232 									SearchBTreeRecord: 578
+ 2233 									ReplaceBTreeRecord: 825
+ 2234 								FixFinderFlags: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1859>
+ 2235 									VolumeObjectIsHFSPlus: 1161
+ 2236 									BuildCatalogKey: 1416
+ 2237 									SearchBTreeRecord: 578
+ 2238 									IntError: 1371
+ 2239 									ReplaceBTreeRecord: 825
+ 2240 								DeleteUnlinkedFile: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2338>
+ 2241 									VolumeObjectIsHFSPlus: 1161
+ 2242 									utf_decodestr: <>
+ 2243 									BuildCatalogKey: 1416
+ 2244 									SearchBTreeRecord: 578
+ 2245 									DeleteCatalogNode: OSErr (), <./fsck_hfs/dfalib/SCatalog.c 156>
+ 2246 										ClearMemory: 530
+ 2247 										BuildCatalogKey: 1416
+ 2248 										LocateCatalogNode: OSErr (), <./fsck_hfs/dfalib/SCatalog.c 44>
+ 2249 											BTSearchRecord: 584
+ 2250 											ReturnIfError: <>
+ 2251 											BTInvalidateHint: 638
+ 2252 											BuildCatalogKey: 1416
+ 2253 										ReturnIfError: <>
+ 2254 										BTDeleteRecord: 1857
+ 2255 										BTInvalidateHint: 638
+ 2256 										UpdateFolderCount: OSErr (), <./fsck_hfs/dfalib/SCatalog.c 93>
+ 2257 											ClearMemory: 530
+ 2258 											BuildCatalogKey: 1416
+ 2259 											LocateCatalogNode: 2248
+ 2260 											ReturnIfError: <>
+ 2261 											GetTimeUTC: UInt32 (), <./fsck_hfs/dfalib/SStubs.c 47>
+ 2262 												gettimeofday: <>
+ 2263 											GetTimeLocal: UInt32 (), <./fsck_hfs/dfalib/SStubs.c 61>
+ 2264 												gettimeofday: <>
+ 2265 											BTReplaceRecord: 832
+ 2266 											MarkVCBDirty: <>
+ 2267 										FlushCatalogFile: OSErr (), <./fsck_hfs/dfalib/SCatalog.c 27>
+ 2268 											err: <>
+ 2269 											BTFlushPath: 1052
+ 2270 											MarkVCBDirty: <>
+ 2271 											FlushVolumeControlBlock: 1060
+ 2272 										DeallocateFile: OSErr (), <./fsck_hfs/dfalib/SExtents.c 671>
+ 2273 											ClearMemory: 530
+ 2274 											DeallocateFork: OSErr (), <./fsck_hfs/dfalib/SExtents.c 615>
+ 2275 												err: <>
+ 2276 												ReleaseExtents: OSErr (), <./fsck_hfs/dfalib/SExtents.c 513>
+ 2277 													err: <>
+ 2278 													ReleaseBitmapBits: 1017
+ 2279 												TruncateExtents: OSErr (), <./fsck_hfs/dfalib/SExtents.c 574>
+ 2280 													err: <>
+ 2281 													FindExtentRecord: 576
+ 2282 													ReleaseExtents: 2276
+ 2283 													DeleteExtentRecord: OSErr (), <./fsck_hfs/dfalib/SExtents.c 362>
+ 2284 														err: <>
+ 2285 														DeleteBTreeRecord: 1852
+ 2286 											FlushExtentFile: 1050
+ 2287 											MarkVCBDirty: <>
+ 2288 									DeleteAllAttrsByID: int (), <./fsck_hfs/dfalib/SRepair.c 6400>
+ 2289 										ClearMemory: 530
+ 2290 										BTSearchRecord: 584
+ 2291 										BTIterateRecord: 661
+ 2292 										delete_attr_record: int (), <./fsck_hfs/dfalib/SRepair.c 6461>
+ 2293 											DeleteBTreeRecord: 1852
+ 2294 											ReleaseExtents: 2276
+ 2295 								FixLinkCount: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2105>
+ 2296 									VolumeObjectIsHFSPlus: 1161
+ 2297 									GetCatalogRecordByID: 1559
+ 2298 									ReplaceBTreeRecord: 825
+ 2299 									IntError: 1371
+ 2300 								FixLinkChainPrev: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1975>
+ 2301 									VolumeObjectIsHFSPlus: 1161
+ 2302 									BuildCatalogKey: 1416
+ 2303 									SearchBTreeRecord: 578
+ 2304 									IntError: 1371
+ 2305 									ReplaceBTreeRecord: 825
+ 2306 								FixLinkChainNext: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2040>
+ 2307 									VolumeObjectIsHFSPlus: 1161
+ 2308 									BuildCatalogKey: 1416
+ 2309 									SearchBTreeRecord: 578
+ 2310 									IntError: 1371
+ 2311 									ReplaceBTreeRecord: 825
+ 2312 								FixHardLinkFinderInfo: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1925>
+ 2313 									GetCatalogRecordByID: 1559
+ 2314 									IntError: 1371
+ 2315 									ReplaceBTreeRecord: 825
+ 2316 								FixBSDInfo: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2277>
+ 2317 									VolumeObjectIsHFSPlus: 1161
+ 2318 									ClearMemory: 530
+ 2319 									BuildCatalogKey: 1416
+ 2320 									BTSearchRecord: 584
+ 2321 									IntError: 1371
+ 2322 									utf_encodestr: <>
+ 2323 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2324 									plog: 240
+ 2325 									BTReplaceRecord: 832
+ 2326 								DelFThd: int (), <./fsck_hfs/dfalib/SRepair.c 1604>
+ 2327 									VolumeObjectIsHFSPlus: 1161
+ 2328 									BuildCatalogKey: 1416
+ 2329 									SearchBTreeRecord: 578
+ 2330 									IntError: 1371
+ 2331 									ClearMemory: 530
+ 2332 									ReplaceBTreeRecord: 825
+ 2333 									DeleteBTreeRecord: 1852
+ 2334 								FixDirThread: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1659>
+ 2335 									GetBTreeControlBlock: <>
+ 2336 									VolumeObjectIsHFSPlus: 1161
+ 2337 									BuildCatalogKey: 1416
+ 2338 									SearchBTreeRecord: 578
+ 2339 									IntError: 1371
+ 2340 									GetNode: 589
+ 2341 									GetRecordByIndex: 645
+ 2342 									CopyCatalogName: 1417
+ 2343 									ReleaseNode: 633
+ 2344 									ReplaceBTreeRecord: 825
+ 2345 								FixEmbededVolDescription: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2514>
+ 2346 									err: <>
+ 2347 									GetVolumeObjectAlternateMDB: 1458
+ 2348 									ReleaseVolumeBlock: 771
+ 2349 									GetVolumeObjectPrimaryMDB: 1093
+ 2350 								FixWrapperExtents: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2582>
+ 2351 									err: <>
+ 2352 									GetVolumeObjectAlternateMDB: 1458
+ 2353 									ReleaseVolumeBlock: 771
+ 2354 									GetVolumeObjectPrimaryMDB: 1093
+ 2355 								FixIllegalNames: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2167>
+ 2356 									VolumeObjectIsHFSPlus: 1161
+ 2357 									BuildCatalogKey: 1416
+ 2358 									SearchBTreeRecord: 578
+ 2359 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2360 									plog: 240
+ 2361 									PrintName: 1596
+ 2362 									DeleteBTreeRecord: 1852
+ 2363 									InsertBTreeRecord: 1026
+ 2364 									GetObjectID: HFSCatalogNodeID (), <./fsck_hfs/dfalib/SRepair.c 5631>
+ 2365 									BuildThreadRec: int (), <./fsck_hfs/dfalib/SRepair.c 6110>
+ 2366 										bcopy: <>
+ 2367 										bzero: <>
+ 2368 								FixFileSize: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2402>
+ 2369 									VolumeObjectIsHFSPlus: 1161
+ 2370 									ClearMemory: 530
+ 2371 									utf_decodestr: <>
+ 2372 									BTSearchRecord: 584
+ 2373 									IntError: 1371
+ 2374 									BTReplaceRecord: 832
+ 2375 								FixAttrSize: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2762>
+ 2376 									ClearMemory: 530
+ 2377 									BuildAttributeKey: void (), <./fsck_hfs/dfalib/SRepair.c 6225>
+ 2378 										assert: <>
+ 2379 										VolumeObjectIsHFSPlus: 1161
+ 2380 										utf_decodestr: <>
+ 2381 									BTSearchRecord: 584
+ 2382 									DPRINTF: 1341
+ 2383 									BTReplaceRecord: 832
+ 2384 								FixBadExtent: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2865>
+ 2385 									err: <>
+ 2386 									VolumeObjectIsHFSPlus: 1161
+ 2387 									assert: <>
+ 2388 									GetCatalogRecord: OSErr (), <./fsck_hfs/dfalib/SRepair.c 3590>
+ 2389 										err: <>
+ 2390 										BuildCatalogKey: 1416
+ 2391 										SearchBTreeRecord: 578
+ 2392 										plog: 240
+ 2393 										CopyCatalogName: 1417
+ 2394 										HexDump: 610
+ 2395 										CalcKeySize: <>
+ 2396 										RcdError: 1193
+ 2397 										fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2398 									plog: 240
+ 2399 									ReplaceBTreeRecord: 825
+ 2400 									BuildExtentKey: 1369
+ 2401 									SearchBTreeRecord: 578
+ 2402 									GetBTreeRecord: 660
+ 2403 									DeleteBTreeRecord: 1852
+ 2404 									DPRINTF: 1341
+ 2405 									UpdateBTreeHeader: OSErr (), <./fsck_hfs/dfalib/SRepair.c 663>
+ 2406 										err: <>
+ 2407 										M_BTreeHeaderDirty: <>
+ 2408 										BTFlushPath: 1052
+ 2409 									CreateCorruptFileSymlink: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4402>
+ 2410 										err: <>
+ 2411 										VolumeObjectIsHFSPlus: 1161
+ 2412 										CreateDirByName: UInt32 (), <./fsck_hfs/dfalib/SRepair.c 5912>
+ 2413 											VolumeObjectIsHFSPlus: 1161
+ 2414 											strlen: <>
+ 2415 											memcpy: <>
+ 2416 											BuildCatalogKey: 1416
+ 2417 											SearchBTreeRecord: 578
+ 2418 											BuildThreadRec: 2365
+ 2419 											InsertBTreeRecord: 1026
+ 2420 											MarkVCBDirty: <>
+ 2421 											BuildFolderRec: int (), <./fsck_hfs/dfalib/SRepair.c 6063>
+ 2422 												ClearMemory: 530
+ 2423 												CountFolderItems: void (), <./fsck_hfs/dfalib/SRepair.c 6009>
+ 2424 													err: <>
+ 2425 													ClearMemory: 530
+ 2426 													BuildCatalogKey: 1416
+ 2427 													BTSearchRecord: 584
+ 2428 													BTIterateRecord: 661
+ 2429 												GetTimeUTC: 2261
+ 2430 												getuid: <>
+ 2431 												getgid: <>
+ 2432 												VolumeObjectIsHFSX: 1802
+ 2433 												GetTimeLocal: 2263
+ 2434 											UpdateFolderCount: 2256
+ 2435 											UpdateBTreeHeader: 2405
+ 2436 										malloc: <>
+ 2437 										sprintf: <>
+ 2438 										GetFileNamePathByID: 1650
+ 2439 										plog: 240
+ 2440 										GetSystemFileName: 1929
+ 2441 										CreateFileByName: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5680>
+ 2442 											err: <>
+ 2443 											VolumeObjectIsHFSPlus: 1161
+ 2444 											utf_decodestr: <>
+ 2445 											malloc: <>
+ 2446 											memcpy: <>
+ 2447 											free: <>
+ 2448 											BuildCatalogKey: 1416
+ 2449 											SearchBTreeRecord: 578
+ 2450 											plog: 240
+ 2451 											AllocateContigBitmapBits: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1071>
+ 2452 												FindContigClearedBitmapBits: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 930>
+ 2453 													GetSegmentBitmap: 785
+ 2454 													SWAP_BE32: <>
+ 2455 												CaptureBitmapBits: 783
+ 2456 											WriteBufferToDisk: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5441>
+ 2457 												err: <>
+ 2458 												CacheWriteBufferToDisk: int (), <./fsck_hfs/cache.c 1109>
+ 2459 													CacheFlushRange: int (), <./fsck_hfs/cache.c 922>
+ 2460 														RangeIntersect: int (), <./fsck_hfs/cache.c 903>
+ 2461 														CacheRawWrite: 345
+ 2462 														printf: <>
+ 2463 														CacheRemove: 701
+ 2464 													malloc: <>
+ 2465 													printf: <>
+ 2466 													memcpy: <>
+ 2467 													memset: <>
+ 2468 													CacheRawWrite: 345
+ 2469 													free: <>
+ 2470 											BuildThreadRec: 2365
+ 2471 											InsertBTreeRecord: 1026
+ 2472 											MarkVCBDirty: <>
+ 2473 											BuildFileRec: int (), <./fsck_hfs/dfalib/SRepair.c 6168>
+ 2474 												ClearMemory: 530
+ 2475 												GetTimeUTC: 2261
+ 2476 												getuid: <>
+ 2477 												getgid: <>
+ 2478 												GetTimeLocal: 2263
+ 2479 											DeleteBTreeRecord: 1852
+ 2480 											UpdateBTreeHeader: 2405
+ 2481 											UpdateFolderCount: 2256
+ 2482 											ReleaseBitmapBits: 1017
+ 2483 										fsckPrint: 484
+ 2484 										free: <>
+ 2485 								FixBadFlags: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1169>
+ 2486 									GetCatalogRecordByID: 1559
+ 2487 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2488 									fplog: 331
+ 2489 									ReplaceBTreeRecord: 825
+ 2490 								FixPrivDirBadPerms: OSErr (), <./fsck_hfs/dfalib/SRepair.c 996>
+ 2491 									GetCatalogRecordByID: 1559
+ 2492 									IntError: 1371
+ 2493 									ReplaceBTreeRecord: 825
+ 2494 								FixBadLinkChainFirst: OSErr (), <./fsck_hfs/dfalib/SRepair.c 835>
+ 2495 									ClearMemory: 530
+ 2496 									GetCatalogRecordByID: 1559
+ 2497 									utf_decodestr: <>
+ 2498 									strlen: <>
+ 2499 									snprintf: <>
+ 2500 									offsetof: <>
+ 2501 									BTInsertRecord: 1033
+ 2502 									BTReplaceRecord: 832
+ 2503 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2504 									plog: 240
+ 2505 									IntError: 1371
+ 2506 								FixOrphanLink: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1045>
+ 2507 									DeleteCatalogRecordByID: int (), <./fsck_hfs/dfalib/SRepair.c 6249>
+ 2508 										VolumeObjectIsHFSPlus: 1161
+ 2509 										GetCatalogRecordByID: 1559
+ 2510 										DeleteCatalogNode: 2245
+ 2511 										DeleteAllAttrsByID: 2288
+ 2512 								FixOrphanInode: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1076>
+ 2513 									CreateDirByName: 2412
+ 2514 									MoveCatalogRecordByID: int (), <./fsck_hfs/dfalib/SRepair.c 6299>
+ 2515 										assert: <>
+ 2516 										VolumeObjectIsHFSPlus: 1161
+ 2517 										GetCatalogRecordByID: 1559
+ 2518 										DeleteCatalogRecordByID: 2507
+ 2519 										InsertBTreeRecord: 1026
+ 2520 										BuildThreadRec: 2365
+ 2521 										BuildCatalogKey: 1416
+ 2522 										ClearMemory: 530
+ 2523 										ReplaceBTreeRecord: 825
+ 2524 									fsckPrint: 484
+ 2525 								FixDirLinkOwnerFlags: OSErr (), <./fsck_hfs/dfalib/SRepair.c 1126>
+ 2526 									GetCatalogRecordByID: 1559
+ 2527 									ReplaceBTreeRecord: 825
+ 2528 								FixHardLinkBadDate: OSErr (), <./fsck_hfs/dfalib/SRepair.c 930>
+ 2529 									GetCatalogRecordByID: 1559
+ 2530 									IntError: 1371
+ 2531 									ReplaceBTreeRecord: 825
+ 2532 								FixFileHardLinkFlag: OSErr (), <./fsck_hfs/dfalib/SRepair.c 964>
+ 2533 									GetCatalogRecordByID: 1559
+ 2534 									IntError: 1371
+ 2535 									ReplaceBTreeRecord: 825
+ 2536 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2537 								plog: 240
+ 2538 								IntError: 1371
+ 2539 								DisposeMemory: <>
+ 2540 							FixMissingThreadRecords: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5501>
+ 2541 								CreateDirByName: 2412
+ 2542 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2543 								plog: 240
+ 2544 								fsckPrint: 484
+ 2545 								FixMissingDirectory: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5564>
+ 2546 									VolumeObjectIsHFSPlus: 1161
+ 2547 									sprintf: <>
+ 2548 									strlen: <>
+ 2549 									memcpy: <>
+ 2550 									BuildCatalogKey: 1416
+ 2551 									SearchBTreeRecord: 578
+ 2552 									BuildThreadRec: 2365
+ 2553 									InsertBTreeRecord: 1026
+ 2554 									BuildFolderRec: 2421
+ 2555 									UpdateFolderCount: 2256
+ 2556 									UpdateBTreeHeader: 2405
+ 2557 								BuildCatalogKey: 1416
+ 2558 								BTInsertRecord: 1033
+ 2559 								IntError: 1371
+ 2560 							FixBloatedThreadRecords: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5462>
+ 2561 								err: <>
+ 2562 								GetBTreeRecord: 660
+ 2563 								ReturnIfError: <>
+ 2564 								CheckForStop: 1182
+ 2565 								ReplaceBTreeRecord: 825
+ 2566 							FixOverlappingExtents: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4083>
+ 2567 								err: <>
+ 2568 								VolumeObjectIsHFSPlus: 1161
+ 2569 								qsort: <>
+ 2570 								CompareExtentBlockCount: int (), <./fsck_hfs/dfalib/SRepair.c 4231>
+ 2571 								plog: 240
+ 2572 								AllocateContigBitmapBits: 2451
+ 2573 								MoveExtent: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4263>
+ 2574 									err: <>
+ 2575 									VolumeObjectIsHFSPlus: 1161
+ 2576 									assert: <>
+ 2577 									SearchExtentInAttributeBT: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4553>
+ 2578 										assert: <>
+ 2579 										malloc: <>
+ 2580 										ClearMemory: 530
+ 2581 										strlen: <>
+ 2582 										BuildAttributeKey: 2377
+ 2583 										BTSearchRecord: 584
+ 2584 										DPRINTF: 1341
+ 2585 										FindExtentInExtentRec: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5046>
+ 2586 											err: <>
+ 2587 										BTIterateRecord: 661
+ 2588 										utf_encodestr: <>
+ 2589 										strcmp: <>
+ 2590 										CopyMemory: <>
+ 2591 										free: <>
+ 2592 									SearchExtentInVH: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4719>
+ 2593 										err: <>
+ 2594 										VolumeObjectIsHFSPlus: 1161
+ 2595 										FindExtentInExtentRec: 2585
+ 2596 									SearchExtentInCatalogBT: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4843>
+ 2597 										err: <>
+ 2598 										VolumeObjectIsHFSPlus: 1161
+ 2599 										GetCatalogRecord: 2388
+ 2600 										plog: 240
+ 2601 										FindExtentInExtentRec: 2585
+ 2602 									SearchExtentInExtentBT: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4963>
+ 2603 										err: <>
+ 2604 										VolumeObjectIsHFSPlus: 1161
+ 2605 										BuildExtentKey: 1369
+ 2606 										SearchBTreeRecord: 578
+ 2607 										plog: 240
+ 2608 										GetBTreeRecord: 660
+ 2609 										FindExtentInExtentRec: 2585
+ 2610 									DPRINTF: 1341
+ 2611 									CopyDiskBlocks: OSErr (), <./fsck_hfs/dfalib/SRepair.c 5405>
+ 2612 										err: <>
+ 2613 										CacheCopyDiskBlocks: int (), <./fsck_hfs/cache.c 1000>
+ 2614 											CacheFlushRange: 2459
+ 2615 											malloc: <>
+ 2616 											printf: <>
+ 2617 											CacheRawRead: 709
+ 2618 											CacheRawWrite: 345
+ 2619 											free: <>
+ 2620 									UpdateExtentInCatalogBT: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4912>
+ 2621 										err: <>
+ 2622 										VolumeObjectIsHFSPlus: 1161
+ 2623 										ReplaceBTreeRecord: 825
+ 2624 										plog: 240
+ 2625 									UpdateExtentInVH: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4781>
+ 2626 										err: <>
+ 2627 										VolumeObjectIsHFSPlus: 1161
+ 2628 										MarkVCBDirty: <>
+ 2629 									UpdateExtentRecord: 815
+ 2630 									UpdateExtentInAttributeBT: OSErr (), <./fsck_hfs/dfalib/SRepair.c 4675>
+ 2631 										err: <>
+ 2632 										assert: <>
+ 2633 										ReplaceBTreeRecord: 825
+ 2634 								CreateCorruptFileSymlink: 2409
+ 2635 								ReleaseBitmapBits: 1017
+ 2636 								CaptureBitmapBits: 783
+ 2637 								UpdateFreeBlockCount: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 848>
+ 2638 									GetSegmentBitmap: 785
+ 2639 									SWAP_BE32: <>
+ 2640 									MarkVCBDirty: <>
+ 2641 								fsckPrint: 484
+ 2642 							InvalidateCalculatedVolumeBitMap: void (), <./fsck_hfs/dfalib/SUtils.c 456>
+ 2643 							FixOrphanedFiles: OSErr (), <./fsck_hfs/dfalib/SRepair.c 3078>
+ 2644 								err: <>
+ 2645 								GetBTreeControlBlock: <>
+ 2646 								VolumeObjectIsHFSPlus: 1161
+ 2647 								CopyMemory: <>
+ 2648 								GetBTreeRecord: 660
+ 2649 								CheckForStop: 1182
+ 2650 								BuildCatalogKey: 1416
+ 2651 								SearchBTreeRecord: 578
+ 2652 								fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2653 								plog: 240
+ 2654 								bcmp: <>
+ 2655 								HexDump: 610
+ 2656 								DeleteBTreeRecord: 1852
+ 2657 								BuildThreadRec: 2365
+ 2658 								InsertBTreeRecord: 1026
+ 2659 							FixOrphanedExtent: OSErr (), <./fsck_hfs/dfalib/SRepair.c 2632>
+ 2660 								err: <>
+ 2661 								VolumeObjectIsHFSPlus: 1161
+ 2662 								BTScanInitialize: 2059
+ 2663 								ClearMemory: 530
+ 2664 								GetHandleSize: 1365
+ 2665 								qsort: <>
+ 2666 								cmpLongs: int (), <./fsck_hfs/dfalib/SRepair.c 4035>
+ 2667 								BTScanNextRecord: 2101
+ 2668 								LocateCatalogThread: <>
+ 2669 								LocateCatalogNode: 2248
+ 2670 								SearchBTreeRecord: 578
+ 2671 								ReplaceBTreeRecord: 825
+ 2672 								DeleteBTreeRecord: 1852
+ 2673 								bsearch: <>
+ 2674 							UpdateBTreeHeader: 2405
+ 2675 							FixBTreeHeaderReservedFields: OSErr (), <./fsck_hfs/dfalib/SRepair.c 688>
+ 2676 								err: <>
+ 2677 								GetBTreeHeader: 1375
+ 2678 								ResolveFCB: 1121
+ 2679 								ReturnIfError: <>
+ 2680 								ClearMemory: 530
+ 2681 							UpdBTM: OSErr (), <./fsck_hfs/dfalib/SRepair.c 730>
+ 2682 								err: <>
+ 2683 								GetBTreeControlBlock: <>
+ 2684 								GetNode: 589
+ 2685 								ReturnIfError: <>
+ 2686 								GetRecordSize: 847
+ 2687 								GetRecordAddress: 629
+ 2688 								CopyMemory: <>
+ 2689 								UpdateNode: 869
+ 2690 								RcdError: 1193
+ 2691 								ReleaseNode: 633
+ 2692 							RepairReservedBTreeFields: OSErr (), <./fsck_hfs/dfalib/SRepair.c 3411>
+ 2693 								err: <>
+ 2694 								GetBTreeRecord: 660
+ 2695 								ReplaceBTreeRecord: 825
+ 2696 							FixOrphanAttrRecord: OSErr (), <./fsck_hfs/dfalib/SRepair.c 3524>
+ 2697 								err: <>
+ 2698 								bzero: <>
+ 2699 								GetBTreeRecord: 660
+ 2700 								CheckAttributeRecord: 1838
+ 2701 							RepairAttributes: OSErr (), <./fsck_hfs/dfalib/SRepair.c 3994>
+ 2702 								err: <>
+ 2703 								VolumeObjectIsHFSPlus: 1161
+ 2704 								RepairAttributesCheckABT: OSErr (), <./fsck_hfs/dfalib/SRepair.c 3679>
+ 2705 									err: <>
+ 2706 									GetBTreeRecord: 660
+ 2707 									utf_encodestr: <>
+ 2708 									plog: 240
+ 2709 									ReplaceBTreeRecord: 825
+ 2710 									fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2711 									GetCatalogRecord: 2388
+ 2712 									delete_attr_record: 2292
+ 2713 									bcmp: <>
+ 2714 								RepairAttributesCheckCBT: OSErr (), <./fsck_hfs/dfalib/SRepair.c 3862>
+ 2715 									err: <>
+ 2716 									GetBTreeRecord: 660
+ 2717 									ClearMemory: 530
+ 2718 									BTSearchRecord: 584
+ 2719 									plog: 240
+ 2720 									BTIterateRecord: 661
+ 2721 									bcmp: <>
+ 2722 									ReplaceBTreeRecord: 825
+ 2723 							UpdateVolumeBitMap: OSErr (), <./fsck_hfs/dfalib/SRepair.c 817>
+ 2724 								CheckVolumeBitMap: 1991
+ 2725 							VolumeObjectFixVHBorMDB: OSErr (), <./fsck_hfs/dfalib/SRepair.c 505>
+ 2726 								err: <>
+ 2727 								GetVolumeObjectPtr: 1065
+ 2728 								VolumeObjectIsHFS: 1088
+ 2729 								GetVolumeObjectPrimaryBlock: 1063
+ 2730 								GetVolumeObjectAlternateBlock: 1081
+ 2731 								CopyMemory: <>
+ 2732 								ReleaseVolumeBlock: 771
+ 2733 							MarkVCBClean: <>
+ 2734 							VolumeObjectRestoreWrapper: OSErr (), <./fsck_hfs/dfalib/SRepair.c 601>
+ 2735 								err: <>
+ 2736 								GetVolumeObjectPtr: 1065
+ 2737 								GetVolumeObjectPrimaryMDB: 1093
+ 2738 								GetVolumeObjectAlternateMDB: 1458
+ 2739 								CopyMemory: <>
+ 2740 								ReleaseVolumeBlock: 771
+ 2741 							IsVCBDirty: <>
+ 2742 							FlushAlternateVolumeControlBlock: 1102
+ 2743 					ScavTerm: int (), <./fsck_hfs/dfalib/SControl.c 1392>
+ 2744 						err: <>
+ 2745 						BitMapCheckEnd: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 177>
+ 2746 							BMS_MaxDepth: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1469>
+ 2747 								BMS_MaxDepth: 2746
+ 2748 							plog: 240
+ 2749 							free: <>
+ 2750 							bit_dealloc: <>
+ 2751 							BMS_DisposeTree: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1291>
+ 2752 								free: <>
+ 2753 						DisposeMemory: <>
+ 2754 						MemError: OSErr (), <./fsck_hfs/dfalib/SStubs.c 85>
+ 2755 						DisposeHandle: void (), <./fsck_hfs/dfalib/SStubs.c 138>
+ 2756 							free: <>
+ 2757 						free: <>
+ 2758 				CheckIfJournaled: 1197
+ 2759 				fsckGetOutputStyle: enum fsck_output_type (), <./fsck_hfs/fsck_messages.c 481>
+ 2760 				plog: 240
+ 2761 				start_progress: void (), <./fsck_hfs/utilities.c 991>
+ 2762 					sysctlbyname: <>
+ 2763 					warn: <>
+ 2764 				fsckGetVerbosity: int (), <./fsck_hfs/fsck_messages.c 448>
+ 2765 				printVerifyStatus: void (), <./fsck_hfs/dfalib/SControl.c 1587>
+ 2766 					stat: <>
+ 2767 					plog: 240
+ 2768 				IsTrimSupported: int (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1251>
+ 2769 					ioctl: <>
+ 2770 				TrimFreeBlocks: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1141>
+ 2771 					TrimInit: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1087>
+ 2772 						bzero: <>
+ 2773 					assert: <>
+ 2774 					GetSegmentBitmap: 785
+ 2775 					TrimExtent: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1111>
+ 2776 						DPRINTF: 1341
+ 2777 						VolumeObjectIsHFSPlus: 1161
+ 2778 						TrimFlush: void (), <./fsck_hfs/dfalib/VolumeBitmapCheck.c 1093>
+ 2779 							DPRINTF: 1341
+ 2780 							ioctl: <>
+ 2781 					SWAP_BE32: <>
+ 2782 					TrimFlush: 2778
+ 2783 					DPRINTF: 1341
+ 2784 				AllocateMemory: <>
+ 2785 				GetHandleSize: 1365
+ 2786 				CopyMemory: <>
+ 2787 				DisposeMemory: <>
+ 2788 				dumpblocklist: void (), <./fsck_hfs/dfalib/SVerify1.c 3683>
+ 2789 					qsort: <>
+ 2790 					compare_found_blocks: int (), <./fsck_hfs/dfalib/SVerify1.c 3663>
+ 2791 					printf: <>
+ 2792 					printpath: void (), <./fsck_hfs/dfalib/SVerify1.c 3590>
+ 2793 				PrintVolumeObject: __private_extern__ void (), <./CopyHFSMeta/misc.c 121>
+ 2794 					GetVolumeObjectPtr: 1065
+ 2795 					plog: 240
+ 2796 					printf: <>
+ 2797 				CacheRead: 694
+ 2798 				fprintf: <>
+ 2799 				DumpData: 1169
+ 2800 				CacheRelease: 722
+ 2801 				fflush: <>
+ 2802 				CheckForClean: 1187
+ 2803 				draw_progress: 537
+ 2804 				end_progress: void (), <./fsck_hfs/utilities.c 1016>
+ 2805 					sysctlbyname: <>
+ 2806 					warn: <>
+ 2807 			ckfini: 342
+ 2808 			fsckPrint: 484
+ 2809 			bzero: <>
+ 2810 			fprintf: <>
+ 2811 			mount: <>
+ 2812 			sync: <>
+ 2813 			close: <>
+ 2814 			fsckDestroy: 373
+ 2815 		blockcheck: char * (), <./fstyp_hfs/fstyp_hfs.c 147>
+ 2816 			stat: <>
+ 2817 			perror: <>
+ 2818 			plog: 240
+ 2819 			rawname: char * (), <./fstyp_hfs/fstyp_hfs.c 103>
+ 2820 				strrchr: <>
+ 2821 				strlcpy: <>
+ 2822 				strlcat: <>
+ 2823 				strcpy: <>
+ 2824 				strcat: <>
+ 2825 			unrawname: 383
+ 2826 			fprintf: <>
+ 2827 		convertfmt: 504
+ 2828 		free: <>
+ 2829 		fsckCreate: 367
+ 2830 		fsckSetStyle: <>
+ 2831 		fsckSetDefaultResponse: int (), <./fsck_hfs/fsck_messages.c 495>
+ 2832 		fsckSetOutput: 448
+ 2833 		fsckPrint: 484
+ 2834 		fsckAskPrompt: int (), <./fsck_hfs/fsck_messages.c 517>
+ 2835 			va_start: <>
+ 2836 			printv: 497
+ 2837 			fgetln: <>
+ 2838 			printargs: 495
+ 2839 		fsckDestroy: 373
+ 2840 		openlog: <>
+ 2841 		ParseArgs: int (), <./hfs_util/hfsutil_main.c 1109>
+ 2842 			DoDisplayUsage: void (), <./hfs_util/hfsutil_main.c 1286>
+ 2843 				printf: <>
+ 2844 			isdigit: <>
+ 2845 			strtoul: <>
+ 2846 			get_multiplier: int (), <./hfs_util/hfsutil_main.c 1056>
+ 2847 				tolower: <>
+ 2848 			strlen: <>
+ 2849 			strcmp: <>
+ 2850 			printf: <>
+ 2851 		DoProbe: int (), <./hfs_util/hfsutil_main.c 739>
+ 2852 			GetHFSMountPoint: int (), <./hfs_util/hfsutil_main.c 1338>
+ 2853 				getmntinfo: <>
+ 2854 				strcmp: <>
+ 2855 			PrintVolumeNameAttr: int (), <./hfs_util/hfsutil_main.c 697>
+ 2856 				getattrlist: <>
+ 2857 				printf: <>
+ 2858 			malloc: <>
+ 2859 			open: <>
+ 2860 			readAt: ssize_t (), <./hfs_util/hfsutil_main.c 2273>
+ 2861 				ioctl: <>
+ 2862 				fprintf: <>
+ 2863 				malloc: <>
+ 2864 				lseek: <>
+ 2865 				read: <>
+ 2866 				bcopy: <>
+ 2867 				free: <>
+ 2868 			OSSwapBigToHostInt16: <>
+ 2869 			strcpy: <>
+ 2870 			strlen: <>
+ 2871 			GET_HFS_TEXT_ENCODING: <>
+ 2872 			OSSwapBigToHostInt32: <>
+ 2873 			GetEncodingBias: int (), <./hfs_util/hfsutil_main.c 2408>
+ 2874 				getvfsbyname: <>
+ 2875 				sysctl: <>
+ 2876 			CFStringCreateWithPascalString: <>
+ 2877 			CFRelease: <>
+ 2878 			load_encoding: int (), <./hfs_util/hfsutil_main.c 327>
+ 2879 				syslog: <>
+ 2880 				snprintf: <>
+ 2881 				stat: <>
+ 2882 				strerror: <>
+ 2883 				fork: <>
+ 2884 				execl: <>
+ 2885 				exit: <>
+ 2886 				waitpid: <>
+ 2887 				WIFEXITED: <>
+ 2888 				WEXITSTATUS: <>
+ 2889 			GetEmbeddedHFSPlusVol: int (), <./hfs_util/hfsutil_main.c 1766>
+ 2890 				OSSwapBigToHostInt16: <>
+ 2891 				OSSwapBigToHostInt32: <>
+ 2892 			GetNameFromHFSPlusVolumeStartingAt: int (), <./hfs_util/hfsutil_main.c 1807>
+ 2893 				malloc: <>
+ 2894 				readAt: 2860
+ 2895 				fprintf: <>
+ 2896 				OSSwapBigToHostInt16: <>
+ 2897 				OSSwapBigToHostInt32: <>
+ 2898 				bcopy: <>
+ 2899 				GetCatalogOverflowExtents: int (), <./hfs_util/hfsutil_main.c 2042>
+ 2900 					OSSwapBigToHostInt32: <>
+ 2901 					GetBTreeNodeInfo: int (), <./hfs_util/hfsutil_main.c 1989>
+ 2902 						malloc: <>
+ 2903 						ReadFile: int (), <./hfs_util/hfsutil_main.c 2238>
+ 2904 							LogicalToPhysical: int (), <./hfs_util/hfsutil_main.c 2167>
+ 2905 								OSSwapBigToHostInt32: <>
+ 2906 							readAt: 2860
+ 2907 						fprintf: <>
+ 2908 						free: <>
+ 2909 						OSSwapBigToHostInt16: <>
+ 2910 						OSSwapBigToHostInt32: <>
+ 2911 					malloc: <>
+ 2912 					ReadFile: 2903
+ 2913 					fprintf: <>
+ 2914 					OSSwapBigToHostInt16: <>
+ 2915 					realloc: <>
+ 2916 					bcopy: <>
+ 2917 					free: <>
+ 2918 				GetBTreeNodeInfo: 2901
+ 2919 				ReadFile: 2903
+ 2920 				CFStringCreateWithCharacters: <>
+ 2921 				CFStringGetCString: <>
+ 2922 				CFRelease: <>
+ 2923 				free: <>
+ 2924 			write: <>
+ 2925 			free: <>
+ 2926 			close: <>
+ 2927 		DoMount: int (), <./hfs_util/hfsutil_main.c 515>
+ 2928 			GetVolumeUUID: int (), <./hfs_util/hfsutil_main.c 1674>
+ 2929 				GetHFSMountPoint: 2852
+ 2930 				GetVolumeUUIDAttr: int (), <./hfs_util/hfsutil_main.c 1573>
+ 2931 					getattrlist: <>
+ 2932 					OSSwapBigToHostInt32: <>
+ 2933 				GetVolumeUUIDRaw: int (), <./hfs_util/hfsutil_main.c 1440>
+ 2934 					malloc: <>
+ 2935 					open: <>
+ 2936 					fprintf: <>
+ 2937 					ReadHeaderBlock: int (), <./hfs_util/hfsutil_main.c 1380>
+ 2938 						readAt: 2860
+ 2939 						OSSwapBigToHostInt16: <>
+ 2940 						GetEmbeddedHFSPlusVol: 2889
+ 2941 					OSSwapBigToHostInt32: <>
+ 2942 					close: <>
+ 2943 					free: <>
+ 2944 				GenerateVolumeUUID: 127
+ 2945 				SetVolumeUUIDAttr: int (), <./hfs_util/hfsutil_main.c 1616>
+ 2946 					getattrlist: <>
+ 2947 					OSSwapHostToBigInt32: <>
+ 2948 					setattrlist: <>
+ 2949 				SetVolumeUUIDRaw: int (), <./hfs_util/hfsutil_main.c 1512>
+ 2950 					malloc: <>
+ 2951 					open: <>
+ 2952 					fprintf: <>
+ 2953 					ReadHeaderBlock: 2937
+ 2954 					OSSwapHostToBigInt32: <>
+ 2955 					writeAt: ssize_t (), <./hfs_util/hfsutil_main.c 2333>
+ 2956 						ioctl: <>
+ 2957 						fprintf: <>
+ 2958 						malloc: <>
+ 2959 						lseek: <>
+ 2960 						read: <>
+ 2961 						bcopy: <>
+ 2962 						write: <>
+ 2963 						free: <>
+ 2964 					close: <>
+ 2965 					free: <>
+ 2966 			fprintf: <>
+ 2967 			DoAdopt: int (), <./hfs_util/hfsutil_main.c 972>
+ 2968 				GetVolumeUUID: 2928
+ 2969 				OpenVolumeStatusDB: int (), <./hfs_util/hfsutil_main.c 2624>
+ 2970 					malloc: <>
+ 2971 					open: <>
+ 2972 				GetVolumeStatusDBEntry: int (), <./hfs_util/hfsutil_main.c 2655>
+ 2973 					LockDB: int (), <./hfs_util/hfsutil_main.c 2831>
+ 2974 						fprintf: <>
+ 2975 						flock: <>
+ 2976 					FindVolumeRecordByUUID: int (), <./hfs_util/hfsutil_main.c 2849>
+ 2977 						FormatDBKey: void (), <./hfs_util/hfsutil_main.c 2990>
+ 2978 							FormatUUID: void (), <./hfs_util/hfsutil_main.c 2982>
+ 2979 								FormatULong: void (), <./hfs_util/hfsutil_main.c 2964>
+ 2980 						lseek: <>
+ 2981 						GetVSDBEntry: int (), <./hfs_util/hfsutil_main.c 2911>
+ 2982 							lseek: <>
+ 2983 							fprintf: <>
+ 2984 							read: <>
+ 2985 							strncpy: <>
+ 2986 							memcpy: <>
+ 2987 						CompareVSDBKeys: int (), <./hfs_util/hfsutil_main.c 2941>
+ 2988 							strncpy: <>
+ 2989 							fprintf: <>
+ 2990 							memcmp: <>
+ 2991 						fprintf: <>
+ 2992 						memcpy: <>
+ 2993 					ConvertHexStringToULong: unsigned long (), <./hfs_util/hfsutil_main.c 3016>
+ 2994 					UnlockDB: int (), <./hfs_util/hfsutil_main.c 2840>
+ 2995 						fprintf: <>
+ 2996 						flock: <>
+ 2997 				SetVolumeStatusDBEntry: int (), <./hfs_util/hfsutil_main.c 2678>
+ 2998 					LockDB: 2973
+ 2999 					FormatDBEntry: void (), <./hfs_util/hfsutil_main.c 3002>
+ 3000 						FormatDBKey: 2977
+ 3001 						FormatDBRecord: void (), <./hfs_util/hfsutil_main.c 2996>
+ 3002 							FormatULong: 2979
+ 3003 						fprintf: <>
+ 3004 					FindVolumeRecordByUUID: 2976
+ 3005 					fprintf: <>
+ 3006 					UpdateVolumeRecord: int (), <./hfs_util/hfsutil_main.c 2892>
+ 3007 						strncpy: <>
+ 3008 						fprintf: <>
+ 3009 						lseek: <>
+ 3010 						write: <>
+ 3011 					AddVolumeRecord: int (), <./hfs_util/hfsutil_main.c 2875>
+ 3012 						strncpy: <>
+ 3013 						fprintf: <>
+ 3014 						lseek: <>
+ 3015 						write: <>
+ 3016 					fsync: <>
+ 3017 					UnlockDB: 2994
+ 3018 				CloseVolumeStatusDB: int (), <./hfs_util/hfsutil_main.c 2808>
+ 3019 					close: <>
+ 3020 					free: <>
+ 3021 				fprintf: <>
+ 3022 			OpenVolumeStatusDB: 2969
+ 3023 			GetVolumeStatusDBEntry: 2972
+ 3024 			CloseVolumeStatusDB: 3018
+ 3025 			fork: <>
+ 3026 			CFStringGetSystemEncoding: <>
+ 3027 			snprintf: <>
+ 3028 			execl: <>
+ 3029 			wait4: <>
+ 3030 			WIFEXITED: <>
+ 3031 		DoUnmount: int (), <./hfs_util/hfsutil_main.c 649>
+ 3032 			fork: <>
+ 3033 			fprintf: <>
+ 3034 			execl: <>
+ 3035 			wait4: <>
+ 3036 			WIFEXITED: <>
+ 3037 		DoGetUUIDKey: int (), <./hfs_util/hfsutil_main.c 918>
+ 3038 			GetVolumeUUID: 2928
+ 3039 			OSSwapHostToBigInt32: <>
+ 3040 			uuid_create_md5_from_name: void (), <./hfs_util/hfsutil_main.c 895>
+ 3041 				MD5_Init: <>
+ 3042 				MD5_Update: <>
+ 3043 				MD5_Final: <>
+ 3044 			uuid_unparse: <>
+ 3045 			write: <>
+ 3046 			strlen: <>
+ 3047 		DoChangeUUIDKey: int (), <./hfs_util/hfsutil_main.c 951>
+ 3048 			GenerateVolumeUUID: 127
+ 3049 			SetVolumeUUID: int (), <./hfs_util/hfsutil_main.c 1729>
+ 3050 				GetHFSMountPoint: 2852
+ 3051 				SetVolumeUUIDAttr: 2945
+ 3052 				SetVolumeUUIDRaw: 2949
+ 3053 		DoAdopt: 2967
+ 3054 		DoDisown: int (), <./hfs_util/hfsutil_main.c 1016>
+ 3055 			GetVolumeUUID: 2928
+ 3056 			OpenVolumeStatusDB: 2969
+ 3057 			GetVolumeStatusDBEntry: 2972
+ 3058 			SetVolumeStatusDBEntry: 2997
+ 3059 			CloseVolumeStatusDB: 3018
+ 3060 			fprintf: <>
+ 3061 		DoMakeJournaled: int (), <./hfs_util/hfsutil_jnl.c 347>
+ 3062 			statfs: <>
+ 3063 			fprintf: <>
+ 3064 			strerror: <>
+ 3065 			strcmp: <>
+ 3066 			snprintf: <>
+ 3067 			symlink: <>
+ 3068 			unlink: <>
+ 3069 			chdir: <>
+ 3070 			get_embedded_offset: off_t (), <./hfs_util/hfsutil_jnl.c 214>
+ 3071 				stat: <>
+ 3072 				fprintf: <>
+ 3073 				strerror: <>
+ 3074 				S_ISCHR: <>
+ 3075 				statfs: <>
+ 3076 				snprintf: <>
+ 3077 				open: <>
+ 3078 				ioctl: <>
+ 3079 				fstat: <>
+ 3080 				malloc: <>
+ 3081 				pread: <>
+ 3082 				HFS_PRI_SECTOR: <>
+ 3083 				HFS_PRI_OFFSET: <>
+ 3084 				SWAP_BE16: <>
+ 3085 				printf: <>
+ 3086 				SWAP_BE32: <>
+ 3087 				free: <>
+ 3088 				close: <>
+ 3089 			open_dprotected_np: <>
+ 3090 			open: <>
+ 3091 			fcntl: <>
+ 3092 			fchmod: <>
+ 3093 			close: <>
+ 3094 			memset: <>
+ 3095 			ftruncate: <>
+ 3096 			printf: <>
+ 3097 			calloc: <>
+ 3098 			write: <>
+ 3099 			fsync: <>
+ 3100 			hide_file: int (), <./hfs_util/hfsutil_jnl.c 111>
+ 3101 				getattrlist: <>
+ 3102 				printf: <>
+ 3103 				setattrlist: <>
+ 3104 			get_start_block: off_t (), <./hfs_util/hfsutil_jnl.c 138>
+ 3105 				open: <>
+ 3106 				fstat: <>
+ 3107 				fprintf: <>
+ 3108 				strerror: <>
+ 3109 				close: <>
+ 3110 				memset: <>
+ 3111 				lseek: <>
+ 3112 				fcntl: <>
+ 3113 			OSSwapBigToHostInt32: <>
+ 3114 			OSSwapBigToHostInt64: <>
+ 3115 			memcpy: <>
+ 3116 			sysctl: <>
+ 3117 		DoUnJournal: int (), <./hfs_util/hfsutil_jnl.c 601>
+ 3118 			statfs: <>
+ 3119 			fprintf: <>
+ 3120 			strerror: <>
+ 3121 			strcmp: <>
+ 3122 			chdir: <>
+ 3123 			memset: <>
+ 3124 			sysctl: <>
+ 3125 			snprintf: <>
+ 3126 			unlink: <>
+ 3127 			printf: <>
+ 3128 		RawDisableJournaling: int (), <./hfs_util/hfsutil_jnl.c 915>
+ 3129 			strlcpy: <>
+ 3130 			stat: <>
+ 3131 			fprintf: <>
+ 3132 			strerror: <>
+ 3133 			S_ISCHR: <>
+ 3134 			S_ISBLK: <>
+ 3135 			snprintf: <>
+ 3136 			DoUnJournal: 3117
+ 3137 			getmntinfo: <>
+ 3138 			strcmp: <>
+ 3139 			open: <>
+ 3140 			ioctl: <>
+ 3141 			fstat: <>
+ 3142 			malloc: <>
+ 3143 			HFS_PRI_SECTOR: <>
+ 3144 			pread: <>
+ 3145 			HFS_PRI_OFFSET: <>
+ 3146 			SWAP_BE16: <>
+ 3147 			printf: <>
+ 3148 			SWAP_BE32: <>
+ 3149 			pwrite: <>
+ 3150 			free: <>
+ 3151 			close: <>
+ 3152 		SetJournalInFSState: int (), <./hfs_util/hfsutil_jnl.c 1116>
+ 3153 			open: <>
+ 3154 			printf: <>
+ 3155 			strerror: <>
+ 3156 			ioctl: <>
+ 3157 			fstat: <>
+ 3158 			malloc: <>
+ 3159 			pread: <>
+ 3160 			HFS_PRI_SECTOR: <>
+ 3161 			HFS_PRI_OFFSET: <>
+ 3162 			SWAP_BE16: <>
+ 3163 			SWAP_BE32: <>
+ 3164 			pwrite: <>
+ 3165 			free: <>
+ 3166 			close: <>
+ 3167 		DoGetJournalInfo: int (), <./hfs_util/hfsutil_jnl.c 842>
+ 3168 			strncmp: <>
+ 3169 			snprintf: <>
+ 3170 			get_journal_info: int (), <./hfs_util/hfsutil_jnl.c 661>
+ 3171 				open: <>
+ 3172 				printf: <>
+ 3173 				strerror: <>
+ 3174 				ioctl: <>
+ 3175 				fstat: <>
+ 3176 				malloc: <>
+ 3177 				pread: <>
+ 3178 				HFS_PRI_SECTOR: <>
+ 3179 				HFS_PRI_OFFSET: <>
+ 3180 				SWAP_BE16: <>
+ 3181 				SWAP_BE32: <>
+ 3182 				SWAP_BE64: <>
+ 3183 				memcpy: <>
+ 3184 				free: <>
+ 3185 				close: <>
+ 3186 			printf: <>
+ 3187 			statfs: <>
+ 3188 			fprintf: <>
+ 3189 			fsctl: <>
+ 3190 			strerror: <>
+ 3191 			DoGetJournalInfo: 3167
+ 3192 		DoDisplayUsage: 2842
+ 3193 		usage: void (), <./CopyHFSMeta/main.c 55>
+ 3194 			errx: <>
+ 3195 		OpenDevice: __private_extern__ DeviceInfo_t * (), <./CopyHFSMeta/util.c 24>
+ 3196 			stat: <>
+ 3197 			err: <>
+ 3198 			getvfsbyname: <>
+ 3199 			strncmp: <>
+ 3200 			snprintf: <>
+ 3201 			open: <>
+ 3202 			warn: <>
+ 3203 			fprintf: <>
+ 3204 			sysctl: <>
+ 3205 			fcntl: <>
+ 3206 			close: <>
+ 3207 			strdup: <>
+ 3208 			errx: <>
+ 3209 			ioctl: <>
+ 3210 			malloc: <>
+ 3211 		errx: <>
+ 3212 		VolumeInfo: __private_extern__ VolumeDescriptor_t * (), <./CopyHFSMeta/util.c 123>
+ 3213 			GetBlock: __private_extern__ ssize_t (), <./CopyHFSMeta/misc.c 23>
+ 3214 				pread: <>
+ 3215 				warn: <>
+ 3216 				memmove: <>
+ 3217 			err: <>
+ 3218 			malloc: <>
+ 3219 		InitVolumeObject: __private_extern__ VolumeObjects_t * (), <./CopyHFSMeta/misc.c 46>
+ 3220 			malloc: <>
+ 3221 		AddHeaders: __private_extern__ int (), <./CopyHFSMeta/util.c 191>
+ 3222 			IsValidSigWord: int (), <./CopyHFSMeta/util.c 179>
+ 3223 			S16: <>
+ 3224 			warnx: <>
+ 3225 			AddExtent: __private_extern__ int (), <./CopyHFSMeta/misc.c 74>
+ 3226 				AddExtentForFile: __private_extern__ int (), <./CopyHFSMeta/misc.c 81>
+ 3227 					printf: <>
+ 3228 					malloc: <>
+ 3229 					err: <>
+ 3230 		AddJournal: __private_extern__ void (), <./CopyHFSMeta/util.c 234>
+ 3231 			S32: <>
+ 3232 			GetBlock: 3213
+ 3233 			err: <>
+ 3234 			AddExtent: 3225
+ 3235 			S64: <>
+ 3236 		AddFileExtents: __private_extern__ void (), <./CopyHFSMeta/util.c 281>
+ 3237 			ADDEXTS: <>
+ 3238 			ScanExtents: __private_extern__ int (), <./CopyHFSMeta/ScanExtents.c 184>
+ 3239 				S32: <>
+ 3240 				GetBlock: 3213
+ 3241 				warnx: <>
+ 3242 				S16: <>
+ 3243 				malloc: <>
+ 3244 				warn: <>
+ 3245 				printf: <>
+ 3246 				GetNode: int (), <./CopyHFSMeta/ScanExtents.c 52>
+ 3247 					MAX: <>
+ 3248 					S32: <>
+ 3249 					FindBlock: unsigned int (), <./CopyHFSMeta/ScanExtents.c 27>
+ 3250 						S32: <>
+ 3251 					warnx: <>
+ 3252 					GetBlock: 3213
+ 3253 					memmove: <>
+ 3254 				ScanNode: unsigned int (), <./CopyHFSMeta/ScanExtents.c 130>
+ 3255 					S16: <>
+ 3256 					S32: <>
+ 3257 					printf: <>
+ 3258 					AddExtentForFile: 3226
+ 3259 				free: <>
+ 3260 		FindOtherMetadata: __private_extern__ int (), <./CopyHFSMeta/util.c 441>
+ 3261 			calloc: <>
+ 3262 			warn: <>
+ 3263 			S32: <>
+ 3264 			GetBlock: 3213
+ 3265 			warnx: <>
+ 3266 			S16: <>
+ 3267 			fprintf: <>
+ 3268 			MIN: <>
+ 3269 			UnalignedRead: __private_extern__ ssize_t (), <./CopyHFSMeta/util.c 567>
+ 3270 				pread: <>
+ 3271 				malloc: <>
+ 3272 				memcpy: <>
+ 3273 				free: <>
+ 3274 			ScanCatalogNode: int (), <./CopyHFSMeta/util.c 320>
+ 3275 				S32: <>
+ 3276 				fprintf: <>
+ 3277 				S16: <>
+ 3278 			ScanAttrNode: int (), <./CopyHFSMeta/util.c 374>
+ 3279 				S32: <>
+ 3280 				S16: <>
+ 3281 			free: <>
+ 3282 		AddExtentForFile: 3226
+ 3283 		PrintVolumeObject: 2793
+ 3284 		WriteGatheredData: void (), <./CopyHFSMeta/Gather.c 68>
+ 3285 			S32: <>
+ 3286 			S64: <>
+ 3287 			malloc: <>
+ 3288 			warn: <>
+ 3289 			open: <>
+ 3290 			gzdopen: <>
+ 3291 			close: <>
+ 3292 			gzwrite: <>
+ 3293 			fprintf: <>
+ 3294 			WriteExtent: ssize_t (), <./CopyHFSMeta/Gather.c 36>
+ 3295 				MIN: <>
+ 3296 				pread: <>
+ 3297 				warn: <>
+ 3298 				warnx: <>
+ 3299 				gzwrite: <>
+ 3300 			gzclose: <>
+ 3301 			free: <>
+ 3302 		InitSparseBundle: struct IOWrapper (), <./CopyHFSMeta/SparseBundle.c 398>
+ 3303 		statfs: <>
+ 3304 		CheckVolumeHeaders: int (), <./CopyHFSMeta/main.c 40>
+ 3305 		warnx: <>
+ 3306 		CopyObjectsToDest: __private_extern__ int (), <./CopyHFSMeta/misc.c 154>
+ 3307 			MIN: <>
+ 3308 			printf: <>
+ 3309 			fflush: <>
+ 3310 			warnx: <>
+ 3311 		access: <>
+ 3312 		getenv: <>
+ 3313 		malloc: <>
+ 3314 		strlen: <>
+ 3315 		sprintf: <>
+ 3316 		execl: <>
+ 3317 		open: <>
+ 3318 		pread: <>
+ 3319 		checkVolHdr: int (), <./fstyp_hfs/fstyp_hfs.c 189>
+ 3320 			strncmp: <>
+ 3321 		close: <>
+ 3322 		memset: <>
+ 3323 		a_uid: uid_t (), <./mount_hfs/mount_hfs.c 718>
+ 3324 			isdigit: <>
+ 3325 			atoi: <>
+ 3326 			getpwnam: <>
+ 3327 			errx: <>
+ 3328 		a_mask: mode_t (), <./mount_hfs/mount_hfs.c 740>
+ 3329 			strtol: <>
+ 3330 			errx: <>
+ 3331 		a_encoding: struct hfs_mnt_encoding (), <./mount_hfs/mount_hfs.c 758>
+ 3332 		getmntopts: <>
+ 3333 		realpath: <>
+ 3334 		gettimeofday: <>
+ 3335 		load_encoding: int (), <./mount_hfs/mount_hfs.c 406>
+ 3336 			snprintf: <>
+ 3337 			stat: <>
+ 3338 			fprintf: <>
+ 3339 			fork: <>
+ 3340 			execl: <>
+ 3341 			exit: <>
+ 3342 			waitpid: <>
+ 3343 			WIFEXITED: <>
+ 3344 		get_encoding_pref: int (), <./mount_hfs/mount_hfs.c 802>
+ 3345 		stat: <>
+ 3346 		getVolumeCreateDate: u_int32_t (), <./mount_hfs/mount_hfs.c 318>
+ 3347 			GetMasterBlock: void * (), <./mount_hfs/mount_hfs.c 240>
+ 3348 				rawdevice: 60
+ 3349 				open: <>
+ 3350 				fprintf: <>
+ 3351 				ioctl: <>
+ 3352 				malloc: <>
+ 3353 				pread: <>
+ 3354 				close: <>
+ 3355 				free: <>
+ 3356 			exit: <>
+ 3357 			SWAP_BE16: <>
+ 3358 			SWAP_BE32: <>
+ 3359 		mount: <>
+ 3360 		syncCreateDate: void (), <./mount_hfs/mount_hfs.c 349>
+ 3361 			snprintf: <>
+ 3362 			getattrlist: <>
+ 3363 			setattrlist: <>

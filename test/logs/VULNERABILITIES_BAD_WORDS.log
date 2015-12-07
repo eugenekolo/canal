@@ -1,0 +1,6 @@
+[CHECK_BAD_WORDS] Errors in: ./chal_mega_testOutput/chal_mega.c
+	error = system, line = 21, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 22, comment = [ERROR] Dangerous exec* call!
+	error = seteuid, line = 30, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setregid, line = 31, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = system, line = 38, comment = [ERROR] Dangerous exec* call!

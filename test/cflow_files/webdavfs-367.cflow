@@ -1,0 +1,1639 @@
+    1 	main: int (), <./mount.tproj/mount_webdav.c 60>
+    2 		getuid: <>
+    3 		memset: <>
+    4 		getopt: <>
+    5 		atoi: <>
+    6 		readCredentialsFromFile: boolean_t (), <./mount.tproj/webdav_agent.c 527>
+    7 			syslog: <>
+    8 			lseek: <>
+    9 			read: <>
+   10 			ntohl: <>
+   11 			fstat: <>
+   12 			write: <>
+   13 			fsync: <>
+   14 			close: <>
+   15 		syslog: <>
+   16 		readpassphrase: <>
+   17 		getmntopts: <>
+   18 		freemntopts: <>
+   19 		strlen: <>
+   20 		strlcpy: <>
+   21 		require_noerr_action_quiet: <>
+   22 		usage: void (), <./mount.tproj/webdav_agent.c 147>
+   23 			fprintf: <>
+   24 		require_action: <>
+   25 		realpath: <>
+   26 		strrchr: <>
+   27 		GetMountURI: char * (), <./mount.tproj/webdav_agent.c 158>
+   28 			strlen: <>
+   29 			strncasecmp: <>
+   30 			malloc: <>
+   31 			require: <>
+   32 			strlcpy: <>
+   33 			strlcat: <>
+   34 		require_action_quiet: <>
+   35 		getmntinfo: <>
+   36 		strcmp: <>
+   37 		strncasecmp: <>
+   38 		strerror: <>
+   39 		getenv: <>
+   40 		setsid: <>
+   41 		debug_string: <>
+   42 		chdir: <>
+   43 		open: <>
+   44 		dup2: <>
+   45 		close: <>
+   46 		getrlimit: <>
+   47 		require_noerr_action: <>
+   48 		closelog: <>
+   49 		openlog: <>
+   50 		CFRunLoopGetCurrent: <>
+   51 		setCacheMaximumSize: void (), <./mount.tproj/webdav_agent.c 487>
+   52 			sysctl: <>
+   53 		setrlimit: <>
+   54 		signal: <>
+   55 		getvfsbyname: <>
+   56 		KextManagerLoadKextWithIdentifier: <>
+   57 		CFSTR: <>
+   58 		nodecache_init: int (), <./mount.tproj/webdav_cache.c 584>
+   59 			calloc: <>
+   60 			require_action: <>
+   61 			malloc: <>
+   62 			LIST_INIT: <>
+   63 			memcpy: <>
+   64 			CFStringCreateWithCStringNoCopy: <>
+   65 			time: <>
+   66 			AssignOpaqueID: int (), <./mount.tproj/OpaqueIDs.c 163>
+   67 				require_action: <>
+   68 				pthread_mutex_lock: <>
+   69 				require_noerr: <>
+   70 				MIN: <>
+   71 				realloc: <>
+   72 				AddToFreeList: void (), <./mount.tproj/OpaqueIDs.c 104>
+   73 				RemoveFromFreeList: u_int32_t (), <./mount.tproj/OpaqueIDs.c 136>
+   74 				pthread_mutex_unlock: <>
+   75 				CreateOpaqueID: <>
+   76 				GetOpaqueIDCounterPart: <>
+   77 			require_noerr: <>
+   78 			init_node_cache_lock: int (), <./mount.tproj/webdav_cache.c 1482>
+   79 				pthread_mutexattr_init: <>
+   80 				require_noerr: <>
+   81 				pthread_mutex_init: <>
+   82 		get_keychain_credentials: int (), <./mount.tproj/webdav_agent.c 258>
+   83 			CFURLCreateWithBytes: <>
+   84 			strlen: <>
+   85 			CFURLCopyScheme: <>
+   86 			getSecurityProtocol: SecProtocolType (), <./mount.tproj/webdav_agent.c 246>
+   87 				CFStringCompare: <>
+   88 				CFSTR: <>
+   89 			CFURLCopyHostName: <>
+   90 			createUTF8CStringFromCFString: char * (), <./mount.tproj/webdav_utils.c 102>
+   91 				CFStringGetMaximumSizeForEncoding: <>
+   92 				CFStringGetLength: <>
+   93 				calloc: <>
+   94 				CFStringGetCString: <>
+   95 				free: <>
+   96 			CFURLCopyPath: <>
+   97 			SecKeychainFindInternetPassword: <>
+   98 			KeychainItemCopyAccountPassword: OSStatus (), <./mount.tproj/webdav_agent.c 207>
+   99 				SecKeychainItemCopyContent: <>
+  100 				syslog: <>
+  101 				strlcpy: <>
+  102 				SecKeychainItemFreeContent: <>
+  103 			CFReleaseNull: <>
+  104 			free: <>
+  105 		authcache_init: int (), <./mount.tproj/webdav_authcache.c 974>
+  106 			pthread_mutexattr_init: <>
+  107 			require_noerr: <>
+  108 			pthread_mutex_init: <>
+  109 			LIST_INIT: <>
+  110 			CFStringCreateWithCString: <>
+  111 			require_action: <>
+  112 		cookies_init: void (), <./mount.tproj/webdav_cookie.c 1589>
+  113 			pthread_mutexattr_init: <>
+  114 			pthread_mutex_init: <>
+  115 		bzero: <>
+  116 		network_init: int (), <./mount.tproj/webdav_network.c 734>
+  117 			pthread_mutexattr_init: <>
+  118 			require_noerr: <>
+  119 			pthread_mutex_init: <>
+  120 			SCDynamicStoreCreate: <>
+  121 			CFSTR: <>
+  122 			require_action: <>
+  123 			SCDynamicStoreNotifyFileDescriptor: <>
+  124 			SCDynamicStoreKeyCreateProxies: <>
+  125 			CFArrayCreate: <>
+  126 			CFRelease: <>
+  127 			SCDynamicStoreSetNotificationKeys: <>
+  128 			network_update_proxy: int (), <./mount.tproj/webdav_network.c 458>
+  129 				pthread_mutex_lock: <>
+  130 				require_noerr_action: <>
+  131 				webdav_kill: void (), <./mount.tproj/webdav_agent.c 353>
+  132 					verify: <>
+  133 					write: <>
+  134 					exit: <>
+  135 				CFRelease: <>
+  136 				SCDynamicStoreCopyProxies: <>
+  137 				CFDictionaryGetValue: <>
+  138 				CFNumberGetValue: <>
+  139 				CFStringGetCString: <>
+  140 				pthread_mutex_unlock: <>
+  141 				authcache_proxy_invalidate: int (), <./mount.tproj/webdav_authcache.c 948>
+  142 					pthread_mutex_lock: <>
+  143 					require_noerr_action: <>
+  144 					webdav_kill: 131
+  145 					RemoveAuthentication: void (), <./mount.tproj/webdav_authcache.c 85>
+  146 						LIST_REMOVE: <>
+  147 						CFRelease: <>
+  148 						ReleaseCredentials: void (), <./mount.tproj/webdav_authcache.c 116>
+  149 							CFRelease: <>
+  150 						free: <>
+  151 					pthread_mutex_unlock: <>
+  152 			require_noerr_quiet: <>
+  153 			CFURLCreateAbsoluteURLWithBytes: <>
+  154 			require_action_string: <>
+  155 			CFURLGetByteRangeForComponent: <>
+  156 			CFURLCopyPath: <>
+  157 			CFStringGetCString: <>
+  158 			get_first_read_len: void (), <./mount.tproj/webdav_network.c 709>
+  159 				sysctl: <>
+  160 			InitUserAgentHeaderValue: int (), <./mount.tproj/webdav_network.c 591>
+  161 				sysctl: <>
+  162 				CFURLCreateWithFileSystemPath: <>
+  163 				CFSTR: <>
+  164 				CFBundleCreate: <>
+  165 				CFBundleGetVersionNumber: <>
+  166 				CFBundleGetInfoDictionary: <>
+  167 				CFDictionaryGetValue: <>
+  168 				CFStringGetLength: <>
+  169 				malloc: <>
+  170 				CFStringGetCString: <>
+  171 				free: <>
+  172 				CFRelease: <>
+  173 				snprintf: <>
+  174 				CFStringCreateWithCString: <>
+  175 				require_action: <>
+  176 			exit: <>
+  177 			CFStringCreateWithFormat: <>
+  178 		free: <>
+  179 		filesystem_init: int (), <./mount.tproj/webdav_file.c 209>
+  180 			bzero: <>
+  181 			pthread_mutexattr_init: <>
+  182 			require_noerr: <>
+  183 			pthread_mutex_init: <>
+  184 		requestqueue_init: int (), <./mount.tproj/webdav_requestqueue.c 713>
+  185 			pthread_mutexattr_init: <>
+  186 			require_noerr: <>
+  187 			pthread_mutex_init: <>
+  188 			bzero: <>
+  189 			pthread_cond_init: <>
+  190 			pthread_attr_init: <>
+  191 			pthread_attr_setdetachstate: <>
+  192 			pthread_create: <>
+  193 			pulse_thread: void (), <./mount.tproj/webdav_requestqueue.c 510>
+  194 				pthread_mutex_lock: <>
+  195 				require_noerr: <>
+  196 				LogMessage: void (), <./mount.tproj/LogMessage.c 42>
+  197 					malloc: <>
+  198 					bzero: <>
+  199 					va_start: <>
+  200 					va_arg: <>
+  201 					snprintf: <>
+  202 					syslog: <>
+  203 					va_end: <>
+  204 					free: <>
+  205 				nodecache_get_next_file_cache_node: struct node_entry (), <./mount.tproj/webdav_cache.c 419>
+  206 				NODE_FILE_IS_OPEN: <>
+  207 				NODE_IS_DELETED: <>
+  208 				filesystem_lock: int (), <./mount.tproj/webdav_file.c 1458>
+  209 					require_action: <>
+  210 					network_lock: int (), <./mount.tproj/webdav_network.c 5088>
+  211 						CFSTR: <>
+  212 						lock_node_cache: void (), <./mount.tproj/webdav_cache.c 1520>
+  213 							pthread_mutex_lock: <>
+  214 							require_noerr_action: <>
+  215 							webdav_kill: 131
+  216 						unlock_node_cache: void (), <./mount.tproj/webdav_cache.c 1534>
+  217 							pthread_mutex_unlock: <>
+  218 							require_noerr_action: <>
+  219 							webdav_kill: 131
+  220 						create_cfurl_from_node: CFURLRef (), <./mount.tproj/webdav_network.c 839>
+  221 							nodecache_get_path_from_node: int (), <./mount.tproj/webdav_cache.c 1203>
+  222 								lock_node_cache: 212
+  223 								internal_get_path_from_node: int (), <./mount.tproj/webdav_cache.c 1102>
+  224 									require_action: <>
+  225 									NODE_IS_DELETED: <>
+  226 									malloc: <>
+  227 									memcpy: <>
+  228 									strlen: <>
+  229 									memmove: <>
+  230 									free: <>
+  231 								unlock_node_cache: 216
+  232 							require_noerr_quiet: <>
+  233 							strncat: <>
+  234 							CFStringCreateWithCString: <>
+  235 							require_string: <>
+  236 							CFURLCreateStringByAddingPercentEscapes: <>
+  237 							CFSTR: <>
+  238 							require: <>
+  239 							CFURLCreateWithString: <>
+  240 							logDebugCFString: void (), <./mount.tproj/LogMessage.c 147>
+  241 								createUTF8CStringFromCFString: 90
+  242 								syslog: <>
+  243 								free: <>
+  244 							nodecache_get_baseURL: CFURLRef (), <./mount.tproj/webdav_cache.c 1508>
+  245 								lock_node_cache: 212
+  246 								CFRetain: <>
+  247 								unlock_node_cache: 216
+  248 							CFRelease: <>
+  249 							CFURLCopyAbsoluteURL: <>
+  250 							free: <>
+  251 						require_action_quiet: <>
+  252 						CFStringCreateWithFormat: <>
+  253 						require_action: <>
+  254 						CFDataCreateWithBytesNoCopy: <>
+  255 						strlen: <>
+  256 						send_transaction: int (), <./mount.tproj/webdav_network.c 2050>
+  257 							CFRelease: <>
+  258 							CFHTTPMessageCreateRequest: <>
+  259 							require_action: <>
+  260 							CFHTTPMessageSetBody: <>
+  261 							CFHTTPMessageSetHeaderFieldValue: <>
+  262 							CFSTR: <>
+  263 							add_cookie_headers: void (), <./mount.tproj/webdav_cookie.c 310>
+  264 								cookiePathFromURL: CFStringRef (), <./mount.tproj/webdav_cookie.c 1408>
+  265 									CFURLCopyPath: <>
+  266 									CFStringGetLength: <>
+  267 									CFStringHasPrefix: <>
+  268 									CFSTR: <>
+  269 									CFStringFindWithOptions: <>
+  270 									CFStringCreateWithSubstring: <>
+  271 									CFRelease: <>
+  272 									CFStringCreateCopy: <>
+  273 								syslog: <>
+  274 								createUTF8CStringFromCFString: 90
+  275 								lock_cookies: int (), <./mount.tproj/webdav_cookie.c 1665>
+  276 									pthread_mutex_lock: <>
+  277 								path2InPath1: boolean_t (), <./mount.tproj/webdav_cookie.c 1612>
+  278 									strlen: <>
+  279 								CFStringCreateMutable: <>
+  280 								unlock_cookies: int (), <./mount.tproj/webdav_cookie.c 1676>
+  281 									pthread_mutex_unlock: <>
+  282 								CFStringAppend: <>
+  283 								CFSTR: <>
+  284 								CFHTTPMessageSetHeaderFieldValue: <>
+  285 								CFRelease: <>
+  286 								free: <>
+  287 							authcache_apply: int (), <./mount.tproj/webdav_authcache.c 827>
+  288 								pthread_mutex_lock: <>
+  289 								require_noerr_action: <>
+  290 								webdav_kill: 131
+  291 								DoServerAuthentication: int (), <./mount.tproj/webdav_authcache.c 700>
+  292 									FindAuthenticationForRequest: struct authcache_entry (), <./mount.tproj/webdav_authcache.c 579>
+  293 									CFHTTPAuthenticationIsValid: <>
+  294 									CFRelease: <>
+  295 									CFHTTPAuthenticationCreateFromResponse: <>
+  296 									AddServerCredentials: int (), <./mount.tproj/webdav_authcache.c 315>
+  297 										CFHTTPAuthenticationRequiresUserNameAndPassword: <>
+  298 										CopyMountCredentials: int (), <./mount.tproj/webdav_authcache.c 174>
+  299 											CFHTTPAuthenticationCopyMethod: <>
+  300 											CFEqual: <>
+  301 											CFSTR: <>
+  302 											CFRelease: <>
+  303 											syslog: <>
+  304 											CFRetain: <>
+  305 										ReleaseCredentials: 148
+  306 										SetCredentials: void (), <./mount.tproj/webdav_authcache.c 139>
+  307 										syslog: <>
+  308 										CFHTTPMessageCopyRequestURL: <>
+  309 										CFURLGetString: <>
+  310 										CopyCFStringToCString: char * (), <./mount.tproj/webdav_authcache.c 153>
+  311 											CFRangeMake: <>
+  312 											CFStringGetLength: <>
+  313 											CFStringGetBytes: <>
+  314 											malloc: <>
+  315 										CFRelease: <>
+  316 										free: <>
+  317 									RemoveAuthentication: 145
+  318 									CreateAuthenticationFromResponse: struct authcache_entry (), <./mount.tproj/webdav_authcache.c 521>
+  319 								AddProxyAuthentication: int (), <./mount.tproj/webdav_authcache.c 765>
+  320 									CFHTTPAuthenticationIsValid: <>
+  321 									CFRelease: <>
+  322 									CFHTTPAuthenticationCreateFromResponse: <>
+  323 									AddProxyCredentials: int (), <./mount.tproj/webdav_authcache.c 396>
+  324 										CFHTTPAuthenticationRequiresUserNameAndPassword: <>
+  325 										CopyMountProxyCredentials: int (), <./mount.tproj/webdav_authcache.c 244>
+  326 											syslog: <>
+  327 											CFHTTPAuthenticationCopyMethod: <>
+  328 											CFEqual: <>
+  329 											CFSTR: <>
+  330 											CFRelease: <>
+  331 											CFRetain: <>
+  332 										ReleaseCredentials: 148
+  333 										SetCredentials: void (), <./mount.tproj/webdav_authcache.c 139>
+  334 										syslog: <>
+  335 										CFHTTPMessageCopyRequestURL: <>
+  336 										CFURLGetString: <>
+  337 										CopyCFStringToCString: 310
+  338 										CFRelease: <>
+  339 										free: <>
+  340 									RemoveAuthentication: 145
+  341 									CreateProxyAuthenticationFromResponse: struct authcache_entry (), <./mount.tproj/webdav_authcache.c 475>
+  342 								AddExistingAuthentications: int (), <./mount.tproj/webdav_authcache.c 644>
+  343 									FindAuthenticationForRequest: struct authcache_entry (), <./mount.tproj/webdav_authcache.c 579>
+  344 									CFHTTPAuthenticationIsValid: <>
+  345 									ApplyCredentialsToRequest: int (), <./mount.tproj/webdav_authcache.c 605>
+  346 										CFDictionaryCreateMutable: <>
+  347 										require_action: <>
+  348 										CFDictionaryAddValue: <>
+  349 										CFHTTPMessageApplyCredentialDictionary: <>
+  350 										CFRelease: <>
+  351 										CFHTTPMessageApplyCredentials: <>
+  352 									RemoveAuthentication: 145
+  353 								pthread_mutex_unlock: <>
+  354 							free: <>
+  355 							stream_transaction: int (), <./mount.tproj/webdav_network.c 1866>
+  356 								require_quiet: <>
+  357 								get_connectionstate: int (), <./mount.tproj/webdav_requestqueue.c 119>
+  358 									pthread_mutex_lock: <>
+  359 									require_noerr: <>
+  360 									pthread_mutex_unlock: <>
+  361 								open_stream_for_transaction: int (), <./mount.tproj/webdav_network.c 1288>
+  362 									CFReadStreamCreateForStreamedHTTPRequest: <>
+  363 									require: <>
+  364 									CFReadStreamCreateForHTTPRequest: <>
+  365 									CFReadStreamSetProperty: <>
+  366 									require_quiet: <>
+  367 									set_global_stream_properties: int (), <./mount.tproj/webdav_network.c 395>
+  368 										pthread_mutex_lock: <>
+  369 										require_noerr_action: <>
+  370 										webdav_kill: 131
+  371 										CFReadStreamSetProperty: <>
+  372 										pthread_mutex_unlock: <>
+  373 									ApplySSLProperties: int (), <./mount.tproj/webdav_network.c 1029>
+  374 										CFReadStreamSetProperty: <>
+  375 									get_ReadStreamRec: struct ReadStreamRec (), <./mount.tproj/webdav_network.c 1049>
+  376 									CFSTR: <>
+  377 									CFReadStreamOpen: <>
+  378 									HandleSSLErrors: int (), <./mount.tproj/webdav_network.c 1133>
+  379 										CFReadStreamGetError: <>
+  380 										CFDictionaryCreateMutable: <>
+  381 										require: <>
+  382 										CFDictionaryGetValue: <>
+  383 										CFDictionarySetValue: <>
+  384 									CFReadStreamGetError: <>
+  385 									syslog: <>
+  386 									get_connectionstate: 357
+  387 									set_connectionstate: void (), <./mount.tproj/webdav_requestqueue.c 188>
+  388 										pthread_mutex_lock: <>
+  389 										require_noerr: <>
+  390 										syslog: <>
+  391 										requestqueue_enqueue_server_ping: int (), <./mount.tproj/webdav_requestqueue.c 902>
+  392 											pthread_mutex_lock: <>
+  393 											require_noerr_action: <>
+  394 											webdav_kill: 131
+  395 											malloc: <>
+  396 											require_action: <>
+  397 											pthread_cond_signal: <>
+  398 											require_noerr: <>
+  399 											pthread_create: <>
+  400 											handle_request_thread: int (), <./mount.tproj/webdav_requestqueue.c 579>
+  401 												pthread_mutex_lock: <>
+  402 												require_noerr: <>
+  403 												pthread_mutex_unlock: <>
+  404 												handle_filesystem_request: void (), <./mount.tproj/webdav_requestqueue.c 317>
+  405 													get_request: int (), <./mount.tproj/webdav_requestqueue.c 231>
+  406 														memset: <>
+  407 														recvmsg: <>
+  408 														LogMessage: 196
+  409 													LogMessage: 196
+  410 													bzero: <>
+  411 													get_connectionstate: 357
+  412 													send_reply: void (), <./mount.tproj/webdav_requestqueue.c 275>
+  413 														get_connectionstate: 357
+  414 														memset: <>
+  415 														sendmsg: <>
+  416 														LogMessage: 196
+  417 													filesystem_lookup: int (), <./mount.tproj/webdav_file.c 445>
+  418 														CFStringCreateWithBytes: <>
+  419 														require_action: <>
+  420 														CFRelease: <>
+  421 														RetrieveDataFromOpaqueID: int (), <./mount.tproj/OpaqueIDs.c 273>
+  422 															pthread_mutex_lock: <>
+  423 															require_noerr: <>
+  424 															GetOpaqueIDIndexPart: <>
+  425 															pthread_mutex_unlock: <>
+  426 														require_noerr_action_quiet: <>
+  427 														nodecache_get_node: int (), <./mount.tproj/webdav_cache.c 777>
+  428 															lock_node_cache: 212
+  429 															internal_get_node: int (), <./mount.tproj/webdav_cache.c 657>
+  430 																CFStringCreateWithBytes: <>
+  431 																require_action: <>
+  432 																LIST_FOREACH: <>
+  433 																CFStringCompare: <>
+  434 																CFRelease: <>
+  435 																calloc: <>
+  436 																webdav_kill: 131
+  437 																malloc: <>
+  438 																LIST_INIT: <>
+  439 																memcpy: <>
+  440 																CFStringCreateWithCStringNoCopy: <>
+  441 																time: <>
+  442 																AssignOpaqueID: 66
+  443 																require_noerr_action: <>
+  444 																LIST_INSERT_HEAD: <>
+  445 															unlock_node_cache: 216
+  446 														node_attributes_valid: int (), <./mount.tproj/webdav_cache.c 254>
+  447 															lock_node_cache: 212
+  448 															time: <>
+  449 															unlock_node_cache: 216
+  450 														network_lookup: int (), <./mount.tproj/webdav_network.c 2610>
+  451 															create_cfurl_from_node: 220
+  452 															require_action_quiet: <>
+  453 															network_stat: int (), <./mount.tproj/webdav_network.c 2475>
+  454 																CFSTR: <>
+  455 																CFDataCreateWithBytesNoCopy: <>
+  456 																strlen: <>
+  457 																require_action: <>
+  458 																send_transaction: 256
+  459 																parse_stat: int (), <./mount.tproj/webdav_parse.c 1860>
+  460 																	memset: <>
+  461 																	parser_stat_create: void (), <./mount.tproj/webdav_parse.c 678>
+  462 																		CFStringCreateWithCString: <>
+  463 																		CFStringCompare: <>
+  464 																		CFSTR: <>
+  465 																		CFRelease: <>
+  466 																	parse_stat_end: void (), <./mount.tproj/webdav_parse.c 285>
+  467 																	parser_stat_add: void (), <./mount.tproj/webdav_parse.c 1108>
+  468 																		malloc: <>
+  469 																		bzero: <>
+  470 																		memcpy: <>
+  471 																		strtoq: <>
+  472 																		DateBytesToTime: time_t (), <./mount.tproj/webdav_utils.c 36>
+  473 																			CFGregorianDateCreateWithBytes: const UInt8 * (), <./mount.tproj/webdav_utils.c 130>
+  474 																				memmove: <>
+  475 																				memset: <>
+  476 																				isspace: <>
+  477 																				isdigit: <>
+  478 																				memcmp: <>
+  479 																				strlen: <>
+  480 																				CFTimeZoneCreateWithTimeIntervalFromGMT: <>
+  481 																				strncmp: <>
+  482 																				isalpha: <>
+  483 																				DateIsValid: Boolean (), <./mount.tproj/webdav_utils.c 443>
+  484 																					IsLeapYear: Boolean (), <./mount.tproj/webdav_utils.c 432>
+  485 																				CFRelease: <>
+  486 																			require_action: <>
+  487 																			memset: <>
+  488 																			timegm: <>
+  489 																		ISO8601ToTime: time_t (), <./mount.tproj/webdav_network.c 130>
+  490 																			memset: <>
+  491 																			isspace: <>
+  492 																			sscanf: <>
+  493 																			timegm: <>
+  494 																		free: <>
+  495 																	bzero: <>
+  496 																	xmlSAXUserParseMemory: <>
+  497 																	S_ISDIR: <>
+  498 																free: <>
+  499 																CFRelease: <>
+  500 															CFRelease: <>
+  501 															syslog: <>
+  502 														S_ISREG: <>
+  503 														nodecache_add_attributes: int (), <./mount.tproj/webdav_cache.c 166>
+  504 															lock_node_cache: 212
+  505 															internal_add_attributes: int (), <./mount.tproj/webdav_cache.c 128>
+  506 																internal_remove_attributes: int (), <./mount.tproj/webdav_cache.c 186>
+  507 																	memset: <>
+  508 																	free: <>
+  509 																time: <>
+  510 																require_action: <>
+  511 																malloc: <>
+  512 																memcpy: <>
+  513 															unlock_node_cache: 216
+  514 														nodecache_delete_node: int (), <./mount.tproj/webdav_cache.c 983>
+  515 															lock_node_cache: 212
+  516 															delete_node_tree: int (), <./mount.tproj/webdav_cache.c 937>
+  517 																delete_node_tree: 516
+  518 																require_noerr: <>
+  519 																require_action: <>
+  520 																internal_move_node: int (), <./mount.tproj/webdav_cache.c 862>
+  521 																	CFStringCreateWithBytes: <>
+  522 																	CFStringCompare: <>
+  523 																	CFRelease: <>
+  524 																	malloc: <>
+  525 																	require_action: <>
+  526 																	webdav_kill: 131
+  527 																	free: <>
+  528 																	memcpy: <>
+  529 																	CFStringCreateWithCStringNoCopy: <>
+  530 																	LIST_REMOVE: <>
+  531 																	LIST_INSERT_HEAD: <>
+  532 															unlock_node_cache: 216
+  533 													filesystem_create: int (), <./mount.tproj/webdav_file.c 699>
+  534 														RetrieveDataFromOpaqueID: 421
+  535 														require_noerr_action_quiet: <>
+  536 														require_action_quiet: <>
+  537 														NODE_IS_DELETED: <>
+  538 														network_create: int (), <./mount.tproj/webdav_network.c 3625>
+  539 															CFSTR: <>
+  540 															create_cfurl_from_node: 220
+  541 															require_action_quiet: <>
+  542 															send_transaction: 256
+  543 															CFHTTPMessageCopyHeaderFieldValue: <>
+  544 															DateStringToTime: time_t (), <./mount.tproj/webdav_utils.c 72>
+  545 																CFGregorianDateCreateWithString: CFIndex (), <./mount.tproj/webdav_utils.c 411>
+  546 																	CFStringGetLength: <>
+  547 																	CFStringGetBytes: <>
+  548 																	CFRangeMake: <>
+  549 																	CFGregorianDateCreateWithBytes: 473
+  550 																	memset: <>
+  551 																require_action: <>
+  552 																memset: <>
+  553 																timegm: <>
+  554 															CFRelease: <>
+  555 														node_attributes_valid: 446
+  556 														time: <>
+  557 														nodecache_remove_attributes: int (), <./mount.tproj/webdav_cache.c 205>
+  558 															lock_node_cache: 212
+  559 															internal_remove_attributes: 506
+  560 															unlock_node_cache: 216
+  561 														nodecache_get_node: 427
+  562 														bzero: <>
+  563 														nodecache_add_attributes: 503
+  564 														get_cachefile: int (), <./mount.tproj/webdav_file.c 75>
+  565 															pthread_mutex_lock: <>
+  566 															require_noerr_action: <>
+  567 															webdav_kill: 131
+  568 															snprintf: <>
+  569 															getpid: <>
+  570 															require_action: <>
+  571 															mkdtemp: <>
+  572 															mkstemp: <>
+  573 															verify_noerr: <>
+  574 															unlink: <>
+  575 															debug_string: <>
+  576 															pthread_mutex_unlock: <>
+  577 														nodecache_add_file_cache: int (), <./mount.tproj/webdav_cache.c 512>
+  578 															lock_node_cache: 212
+  579 															internal_add_file_cache: int (), <./mount.tproj/webdav_cache.c 451>
+  580 																require_quiet: <>
+  581 																NODE_FILE_IS_CACHED: <>
+  582 																LIST_FOREACH: <>
+  583 																NODE_FILE_IS_OPEN: <>
+  584 																require_action: <>
+  585 																internal_remove_file_cache: void (), <./mount.tproj/webdav_cache.c 529>
+  586 																	NODE_FILE_IS_CACHED: <>
+  587 																	debug_string: <>
+  588 																	close: <>
+  589 																	LIST_REMOVE: <>
+  590 																	free: <>
+  591 																free: <>
+  592 																LIST_INSERT_HEAD: <>
+  593 															unlock_node_cache: 216
+  594 													filesystem_open: int (), <./mount.tproj/webdav_file.c 237>
+  595 														RetrieveDataFromOpaqueID: 421
+  596 														require_noerr_action_quiet: <>
+  597 														require_action_quiet: <>
+  598 														NODE_IS_DELETED: <>
+  599 														get_cachefile: 564
+  600 														require_noerr_quiet: <>
+  601 														NODE_FILE_IS_CACHED: <>
+  602 														save_cachefile: void (), <./mount.tproj/webdav_file.c 158>
+  603 															pthread_mutex_lock: <>
+  604 															require_noerr_action: <>
+  605 															webdav_kill: 131
+  606 															close: <>
+  607 															pthread_mutex_unlock: <>
+  608 														nodecache_add_file_cache: 577
+  609 														network_lock: 210
+  610 														nodecache_delete_node: 514
+  611 														require_noerr_action: <>
+  612 														fchflags: <>
+  613 														ftruncate: <>
+  614 														network_open: int (), <./mount.tproj/webdav_network.c 3278>
+  615 															NODE_FILE_INVALID: <>
+  616 															get_from_attributes_cache: int (), <./mount.tproj/webdav_network.c 2418>
+  617 																node_appledoubleheader_valid: int (), <./mount.tproj/webdav_cache.c 237>
+  618 																	lock_node_cache: 212
+  619 																	internal_node_appledoubleheader_valid: int (), <./mount.tproj/webdav_cache.c 221>
+  620 																		time: <>
+  621 																	unlock_node_cache: 216
+  622 																require: <>
+  623 																fchflags: <>
+  624 																lseek: <>
+  625 																ftruncate: <>
+  626 																write: <>
+  627 																debug_string: <>
+  628 																free: <>
+  629 															NODE_FILE_RECENTLY_CREATED: <>
+  630 															create_cfurl_from_node: 220
+  631 															require_action_quiet: <>
+  632 															CFRelease: <>
+  633 															CFHTTPMessageCreateRequest: <>
+  634 															CFSTR: <>
+  635 															require_action: <>
+  636 															CFHTTPMessageSetHeaderFieldValue: <>
+  637 															add_cookie_headers: 263
+  638 															CFStringCreateRFC2616DateStringWithTimeT: CFStringRef (), <./mount.tproj/webdav_network.c 226>
+  639 																require_action_quiet: <>
+  640 																gmtime: <>
+  641 															lseek: <>
+  642 															CFStringCreateWithFormat: <>
+  643 															authcache_apply: 287
+  644 															stream_get_transaction: int (), <./mount.tproj/webdav_network.c 1430>
+  645 																require_quiet: <>
+  646 																get_connectionstate: 357
+  647 																open_stream_for_transaction: 361
+  648 																require_noerr_quiet: <>
+  649 																malloc: <>
+  650 																require: <>
+  651 																CFReadStreamRead: <>
+  652 																CFReadStreamGetStatus: <>
+  653 																CFReadStreamGetError: <>
+  654 																syslog: <>
+  655 																set_connectionstate: 387
+  656 																stream_error_to_errno: int (), <./mount.tproj/webdav_network.c 1220>
+  657 																	syslog: <>
+  658 																CFReadStreamCopyProperty: <>
+  659 																CFHTTPMessageGetResponseStatusCode: <>
+  660 																fchflags: <>
+  661 																require_action: <>
+  662 																ftruncate: <>
+  663 																lseek: <>
+  664 																write: <>
+  665 																fcntl: <>
+  666 																free: <>
+  667 																CFHTTPMessageCopyHeaderFieldValue: <>
+  668 																CFSTR: <>
+  669 																CFStringCompare: <>
+  670 																CFRelease: <>
+  671 																handle_cookies: void (), <./mount.tproj/webdav_cookie.c 105>
+  672 																	CFStringGetLength: <>
+  673 																	nextCookieFromHeader: WEBDAV_COOKIE * (), <./mount.tproj/webdav_cookie.c 661>
+  674 																		malloc: <>
+  675 																		bzero: <>
+  676 																		nextToken: CFStringRef (), <./mount.tproj/webdav_cookie.c 889>
+  677 																			skipWhiteSpace: void (), <./mount.tproj/webdav_cookie.c 1469>
+  678 																				CFStringGetCharacterAtIndex: <>
+  679 																			findNextSeparator: boolean_t (), <./mount.tproj/webdav_cookie.c 1505>
+  680 																				CFStringGetCharacterAtIndex: <>
+  681 																			skipWhiteSpaceReverse: void (), <./mount.tproj/webdav_cookie.c 1487>
+  682 																				CFStringGetCharacterAtIndex: <>
+  683 																			CFStringCreateWithSubstring: <>
+  684 																			CFStringGetCharacterAtIndex: <>
+  685 																			findCharacter: boolean_t (), <./mount.tproj/webdav_cookie.c 1538>
+  686 																				CFStringGetCharacterAtIndex: <>
+  687 																			isWeekday: boolean_t (), <./mount.tproj/webdav_cookie.c 1344>
+  688 																				CFStringCreateWithSubstring: <>
+  689 																				CFStringHasPrefix: <>
+  690 																				CFSTR: <>
+  691 																				CFRelease: <>
+  692 																			CFStringFindWithOptions: <>
+  693 																			CFSTR: <>
+  694 																		createUTF8CStringFromCFString: 90
+  695 																		CFRelease: <>
+  696 																		CFStringCompare: <>
+  697 																		CFSTR: <>
+  698 																		CFStringGetLength: <>
+  699 																		CFStringHasSuffix: <>
+  700 																		CFStringCreateWithSubstring: <>
+  701 																		cleanDomainName: CFStringRef (), <./mount.tproj/webdav_cookie.c 1145>
+  702 																			CFStringCreateMutable: <>
+  703 																			CFStringGetLength: <>
+  704 																			nextDomainComponent: CFStringRef (), <./mount.tproj/webdav_cookie.c 1195>
+  705 																				CFStringGetCharacterAtIndex: <>
+  706 																				isLetterDigitHyphen: boolean_t (), <./mount.tproj/webdav_cookie.c 1254>
+  707 																				CFStringCreateWithSubstring: <>
+  708 																			CFStringAppend: <>
+  709 																			CFSTR: <>
+  710 																			CFRelease: <>
+  711 																			CFStringLowercase: <>
+  712 																			CFLocaleGetSystem: <>
+  713 																		DateStringToTime: 544
+  714 																		time: <>
+  715 																		strtol: <>
+  716 																		free: <>
+  717 																		is_ip_address_str: boolean_t (), <./mount.tproj/webdav_cookie.c 1295>
+  718 																			createUTF8CStringFromCFString: 90
+  719 																			is_ip_address: boolean_t (), <./mount.tproj/webdav_cookie.c 1317>
+  720 																				inet_pton: <>
+  721 																		CFStringCreateMutable: <>
+  722 																		CFStringAppend: <>
+  723 																		free_cookie_fields: void (), <./mount.tproj/webdav_cookie.c 1562>
+  724 																			CFRelease: <>
+  725 																			free: <>
+  726 																	checkCookieExpired: boolean_t (), <./mount.tproj/webdav_cookie.c 636>
+  727 																		time: <>
+  728 																	syslog: <>
+  729 																	lock_cookies: 275
+  730 																	removeMatchingCookie: boolean_t (), <./mount.tproj/webdav_cookie.c 423>
+  731 																		find_cookie: WEBDAV_COOKIE * (), <./mount.tproj/webdav_cookie.c 538>
+  732 																			cookies_match: boolean_t (), <./mount.tproj/webdav_cookie.c 558>
+  733 																				strlen: <>
+  734 																				strncmp: <>
+  735 																		list_remove_cookie: void (), <./mount.tproj/webdav_cookie.c 445>
+  736 																		free_cookie_fields: 723
+  737 																		free: <>
+  738 																	unlock_cookies: 280
+  739 																	free_cookie_fields: 723
+  740 																	free: <>
+  741 																	CFHTTPMessageCopyRequestURL: <>
+  742 																	CFURLCopyHostName: <>
+  743 																	CFRelease: <>
+  744 																	cleanDomainName: 701
+  745 																	is_ip_address_str: 717
+  746 																	createUTF8CStringFromCFString: 90
+  747 																	doesDomainMatch: boolean_t (), <./mount.tproj/webdav_cookie.c 1270>
+  748 																		CFStringCompare: <>
+  749 																		CFStringHasSuffix: <>
+  750 																	cookiePathFromURL: 264
+  751 																	path2InPath1: 277
+  752 																	add_cookie: void (), <./mount.tproj/webdav_cookie.c 414>
+  753 																		lock_cookies: 275
+  754 																		removeMatchingCookie: 730
+  755 																		list_insert_cookie: void (), <./mount.tproj/webdav_cookie.c 473>
+  756 																			dequeueCookie: WEBDAV_COOKIE * (), <./mount.tproj/webdav_cookie.c 509>
+  757 																			free_cookie_fields: 723
+  758 																			free: <>
+  759 																		unlock_cookies: 280
+  760 																requestqueue_enqueue_download: int (), <./mount.tproj/webdav_requestqueue.c 842>
+  761 																	pthread_mutex_lock: <>
+  762 																	require_noerr_action: <>
+  763 																	webdav_kill: 131
+  764 																	malloc: <>
+  765 																	require_action: <>
+  766 																	pthread_cond_signal: <>
+  767 																	require_noerr: <>
+  768 																	pthread_create: <>
+  769 																	handle_request_thread: 400
+  770 																	pthread_mutex_unlock: <>
+  771 																CFReadStreamClose: <>
+  772 																release_ReadStreamRec: void (), <./mount.tproj/webdav_network.c 1105>
+  773 																	pthread_mutex_lock: <>
+  774 																	require_noerr_action: <>
+  775 																	webdav_kill: 131
+  776 																	pthread_mutex_unlock: <>
+  777 															CFHTTPMessageGetResponseStatusCode: <>
+  778 															translate_status_to_error: int (), <./mount.tproj/webdav_network.c 935>
+  779 																syslog: <>
+  780 															authcache_valid: int (), <./mount.tproj/webdav_authcache.c 902>
+  781 																require_quiet: <>
+  782 																pthread_mutex_lock: <>
+  783 																require_noerr_action: <>
+  784 																webdav_kill: 131
+  785 																FindAuthenticationForRequest: struct authcache_entry (), <./mount.tproj/webdav_authcache.c 579>
+  786 																pthread_mutex_unlock: <>
+  787 															time: <>
+  788 															CFHTTPMessageCopyHeaderFieldValue: <>
+  789 															DateStringToTime: 544
+  790 															CFStringGetCStringPtr: <>
+  791 															CFStringGetCString: <>
+  792 															strlen: <>
+  793 															malloc: <>
+  794 															strlcpy: <>
+  795 															free: <>
+  796 														associate_cachefile: int (), <./mount.tproj/webdav_file.c 188>
+  797 															require_noerr_action: <>
+  798 															sysctl: <>
+  799 														getpid: <>
+  800 														network_unlock: int (), <./mount.tproj/webdav_network.c 5298>
+  801 															lock_node_cache: 212
+  802 															network_unlock_with_nodecache_locked: int (), <./mount.tproj/webdav_network.c 5312>
+  803 																CFSTR: <>
+  804 																unlock_node_cache: 216
+  805 																create_cfurl_from_node: 220
+  806 																require_action_quiet: <>
+  807 																CFStringCreateWithFormat: <>
+  808 																send_transaction: 256
+  809 																CFRelease: <>
+  810 																free: <>
+  811 																lock_node_cache: 212
+  812 															unlock_node_cache: 216
+  813 														nodecache_remove_file_cache: void (), <./mount.tproj/webdav_cache.c 572>
+  814 															lock_node_cache: 212
+  815 															internal_remove_file_cache: 585
+  816 															unlock_node_cache: 216
+  817 													filesystem_close: int (), <./mount.tproj/webdav_file.c 371>
+  818 														RetrieveDataFromOpaqueID: 421
+  819 														require_noerr_action_quiet: <>
+  820 														require_action: <>
+  821 														NODE_FILE_IS_CACHED: <>
+  822 														usleep: <>
+  823 														time: <>
+  824 														cleanup_seq_write: int (), <./mount.tproj/webdav_network.c 3189>
+  825 															syslog: <>
+  826 															malloc: <>
+  827 															bzero: <>
+  828 															time: <>
+  829 															pthread_mutex_lock: <>
+  830 															queue_writemgr_request_locked: int (), <./mount.tproj/webdav_network.c 4318>
+  831 																syslog: <>
+  832 																CFMessagePortSendRequest: <>
+  833 															pthread_cond_timedwait: <>
+  834 															release_writemgr_request_locked: void (), <./mount.tproj/webdav_network.c 4389>
+  835 																free: <>
+  836 															pthread_mutex_unlock: <>
+  837 															CFRelease: <>
+  838 															CFReadStreamClose: <>
+  839 															CFMessagePortInvalidate: <>
+  840 														free: <>
+  841 														lock_node_cache: 212
+  842 														NODE_IS_DELETED: <>
+  843 														network_unlock_with_nodecache_locked: 802
+  844 														unlock_node_cache: 216
+  845 														nodecache_delete_node: 514
+  846 														nodecache_remove_file_cache: 813
+  847 													filesystem_getattr: int (), <./mount.tproj/webdav_file.c 550>
+  848 														RetrieveDataFromOpaqueID: 421
+  849 														require_noerr_action_quiet: <>
+  850 														require_action_quiet: <>
+  851 														NODE_IS_DELETED: <>
+  852 														node_attributes_valid: 446
+  853 														network_getattr: int (), <./mount.tproj/webdav_network.c 2650>
+  854 															create_cfurl_from_node: 220
+  855 															require_action_quiet: <>
+  856 															network_stat: 453
+  857 															CFRelease: <>
+  858 														nodecache_add_attributes: 503
+  859 													filesystem_read: int (), <./mount.tproj/webdav_file.c 892>
+  860 														RetrieveDataFromOpaqueID: 421
+  861 														require_noerr_action_quiet: <>
+  862 														require_action_quiet: <>
+  863 														NODE_IS_DELETED: <>
+  864 														network_read: int (), <./mount.tproj/webdav_network.c 5521>
+  865 															CFSTR: <>
+  866 															create_cfurl_from_node: 220
+  867 															require_action_quiet: <>
+  868 															CFStringCreateWithFormat: <>
+  869 															require_action: <>
+  870 															send_transaction: 256
+  871 															CFRelease: <>
+  872 													free: <>
+  873 													filesystem_fsync: int (), <./mount.tproj/webdav_file.c 1135>
+  874 														RetrieveDataFromOpaqueID: 421
+  875 														require_noerr_action_quiet: <>
+  876 														require_action_quiet: <>
+  877 														NODE_IS_DELETED: <>
+  878 														require_action: <>
+  879 														NODE_FILE_IS_CACHED: <>
+  880 														network_fsync: int (), <./mount.tproj/webdav_network.c 4412>
+  881 															create_cfurl_from_node: 220
+  882 															require_action_quiet: <>
+  883 															lseek: <>
+  884 															fcntl: <>
+  885 															create_http_request_message: void (), <./mount.tproj/webdav_network.c 3681>
+  886 																CFRelease: <>
+  887 																CFHTTPMessageCreateRequest: <>
+  888 																CFSTR: <>
+  889 																CFHTTPMessageSetHeaderFieldValue: <>
+  890 																add_cookie_headers: 263
+  891 																CFStringCreateWithFormat: <>
+  892 															require_action: <>
+  893 															CFHTTPMessageCreateRequest: <>
+  894 															CFStringCreateWithFormat: <>
+  895 															CFSTR: <>
+  896 															CFHTTPMessageSetHeaderFieldValue: <>
+  897 															CFRelease: <>
+  898 															authcache_apply: 287
+  899 															stream_transaction_from_file: int (), <./mount.tproj/webdav_network.c 1690>
+  900 																require_quiet: <>
+  901 																get_connectionstate: 357
+  902 																lseek: <>
+  903 																require: <>
+  904 																CFStringCreateWithFormat: <>
+  905 																CFSTR: <>
+  906 																CFHTTPMessageSetHeaderFieldValue: <>
+  907 																CFRelease: <>
+  908 																verify: <>
+  909 																CFStreamCreatePairWithSocket: <>
+  910 																open_stream_for_transaction: 361
+  911 																require_noerr_quiet: <>
+  912 																malloc: <>
+  913 																CFReadStreamRead: <>
+  914 																CFReadStreamGetError: <>
+  915 																syslog: <>
+  916 																set_connectionstate: 387
+  917 																stream_error_to_errno: 656
+  918 																free: <>
+  919 																CFReadStreamCopyProperty: <>
+  920 																CFHTTPMessageCopyHeaderFieldValue: <>
+  921 																CFStringCompare: <>
+  922 																CFReadStreamClose: <>
+  923 																handle_cookies: 671
+  924 																release_ReadStreamRec: 772
+  925 															CFHTTPMessageGetResponseStatusCode: <>
+  926 															translate_status_to_error: 778
+  927 															authcache_valid: 780
+  928 															add_last_mod_etag: void (), <./mount.tproj/webdav_network.c 3728>
+  929 																CFHTTPMessageCopyHeaderFieldValue: <>
+  930 																CFSTR: <>
+  931 																DateStringToTime: 544
+  932 																CFRelease: <>
+  933 																CFStringGetCStringPtr: <>
+  934 																CFStringGetCString: <>
+  935 																strlen: <>
+  936 																malloc: <>
+  937 																strlcpy: <>
+  938 															CFDataCreateWithBytesNoCopy: <>
+  939 															strlen: <>
+  940 															send_transaction: 256
+  941 															parse_cachevalidators: int (), <./mount.tproj/webdav_parse.c 2033>
+  942 																memset: <>
+  943 																parser_cachevalidators_create: void (), <./mount.tproj/webdav_parse.c 816>
+  944 																	CFStringCreateWithCString: <>
+  945 																	CFStringCompare: <>
+  946 																	CFSTR: <>
+  947 																	CFRelease: <>
+  948 																parser_cachevalidators_add: void (), <./mount.tproj/webdav_parse.c 1266>
+  949 																	DateBytesToTime: 472
+  950 																	calloc: <>
+  951 																	strlcpy: <>
+  952 																parser_cachevalidators_end: void (), <./mount.tproj/webdav_parse.c 338>
+  953 																xmlSAXUserParseMemory: <>
+  954 																time: <>
+  955 															free: <>
+  956 														nodecache_remove_attributes: 557
+  957 														bzero: <>
+  958 														nodecache_add_attributes: 503
+  959 													filesystem_remove: int (), <./mount.tproj/webdav_file.c 1026>
+  960 														RetrieveDataFromOpaqueID: 421
+  961 														require_noerr_action_quiet: <>
+  962 														require_action_quiet: <>
+  963 														NODE_IS_DELETED: <>
+  964 														network_remove: int (), <./mount.tproj/webdav_network.c 4868>
+  965 															create_cfurl_from_node: 220
+  966 															require_action_quiet: <>
+  967 															network_delete: int (), <./mount.tproj/webdav_network.c 4729>
+  968 																CFSTR: <>
+  969 																CFStringCreateWithFormat: <>
+  970 																send_transaction: 256
+  971 																CFHTTPMessageGetResponseStatusCode: <>
+  972 																network_handle_multistatus_reply: int (), <./mount.tproj/webdav_network.c 4627>
+  973 																	parse_multi_status: webdav_parse_multistatus_list_t * (), <./mount.tproj/webdav_parse.c 1805>
+  974 																		malloc: <>
+  975 																		require: <>
+  976 																		memset: <>
+  977 																		parser_multistatus_create: void (), <./mount.tproj/webdav_parse.c 850>
+  978 																			CFStringCreateWithCString: <>
+  979 																			CFStringCompare: <>
+  980 																			CFSTR: <>
+  981 																			create_multistatus_element: webdav_parse_multistatus_element_t * (), <./mount.tproj/webdav_parse.c 634>
+  982 																				malloc: <>
+  983 																				bzero: <>
+  984 																			require_action: <>
+  985 																			syslog: <>
+  986 																			CFRelease: <>
+  987 																		parser_multistatus_add: void (), <./mount.tproj/webdav_parse.c 1317>
+  988 																			malloc: <>
+  989 																			bzero: <>
+  990 																			memcpy: <>
+  991 																			bcopy: <>
+  992 																			debug_string: <>
+  993 																			strtoul: <>
+  994 																			free: <>
+  995 																		parser_multistatus_end: void (), <./mount.tproj/webdav_parse.c 349>
+  996 																		xmlSAXUserParseMemory: <>
+  997 																	CFURLGetString: <>
+  998 																	CFRetain: <>
+  999 																	CopyCFStringToCString: 310
+ 1000 																	strstr: <>
+ 1001 																	strlen: <>
+ 1002 																	strnstr: <>
+ 1003 																	free: <>
+ 1004 																	CFRelease: <>
+ 1005 																CFURLGetString: <>
+ 1006 																CFRetain: <>
+ 1007 																CopyCFStringToCString: 310
+ 1008 																syslog: <>
+ 1009 																free: <>
+ 1010 																CFRelease: <>
+ 1011 																CFHTTPMessageCopyHeaderFieldValue: <>
+ 1012 																DateStringToTime: 544
+ 1013 															CFRelease: <>
+ 1014 														node_attributes_valid: 446
+ 1015 														time: <>
+ 1016 														nodecache_remove_attributes: 557
+ 1017 														nodecache_delete_node: 514
+ 1018 														debug_string: <>
+ 1019 													filesystem_rename: int (), <./mount.tproj/webdav_file.c 914>
+ 1020 														RetrieveDataFromOpaqueID: 421
+ 1021 														require_noerr_action_quiet: <>
+ 1022 														require_action_quiet: <>
+ 1023 														NODE_IS_DELETED: <>
+ 1024 														network_rename: int (), <./mount.tproj/webdav_network.c 4927>
+ 1025 															nodecache_get_locktokens: CFArrayRef (), <./mount.tproj/webdav_cache.c 1468>
+ 1026 																lock_node_cache: 212
+ 1027 																internal_get_locktokens: CFArrayRef (), <./mount.tproj/webdav_cache.c 1413>
+ 1028 																	CFArrayCreateMutable: <>
+ 1029 																	require: <>
+ 1030 																	CFStringCreateWithFormat: <>
+ 1031 																	CFSTR: <>
+ 1032 																	CFArrayAppendValue: <>
+ 1033 																	CFRelease: <>
+ 1034 																	LIST_FOREACH: <>
+ 1035 																	CFArrayGetCount: <>
+ 1036 																unlock_node_cache: 216
+ 1037 															CFArrayGetCount: <>
+ 1038 															malloc: <>
+ 1039 															require_action_quiet: <>
+ 1040 															exit: <>
+ 1041 															CFSTR: <>
+ 1042 															CFArrayGetValueAtIndex: <>
+ 1043 															create_cfurl_from_node: 220
+ 1044 															CFEqual: <>
+ 1045 															network_dir_is_empty: int (), <./mount.tproj/webdav_network.c 2537>
+ 1046 																CFSTR: <>
+ 1047 																CFDataCreateWithBytesNoCopy: <>
+ 1048 																strlen: <>
+ 1049 																require_action: <>
+ 1050 																send_transaction: 256
+ 1051 																parse_file_count: int (), <./mount.tproj/webdav_parse.c 1841>
+ 1052 																	memset: <>
+ 1053 																	parser_file_count_create: void (), <./mount.tproj/webdav_parse.c 653>
+ 1054 																		CFStringCreateWithCString: <>
+ 1055 																		CFStringCompare: <>
+ 1056 																		CFSTR: <>
+ 1057 																		CFRelease: <>
+ 1058 																	parser_file_count_end: void (), <./mount.tproj/webdav_parse.c 296>
+ 1059 																	xmlSAXUserParseMemory: <>
+ 1060 																free: <>
+ 1061 																CFRelease: <>
+ 1062 															require_noerr_quiet: <>
+ 1063 															CFURLGetString: <>
+ 1064 															require_action: <>
+ 1065 															send_transaction: 256
+ 1066 															CFHTTPMessageCopyHeaderFieldValue: <>
+ 1067 															DateStringToTime: 544
+ 1068 															CFRelease: <>
+ 1069 															free: <>
+ 1070 														node_attributes_valid: 446
+ 1071 														time: <>
+ 1072 														nodecache_remove_attributes: 557
+ 1073 														nodecache_delete_node: 514
+ 1074 														debug_string: <>
+ 1075 														nodecache_move_node: int (), <./mount.tproj/webdav_cache.c 917>
+ 1076 															lock_node_cache: 212
+ 1077 															internal_move_node: 520
+ 1078 															unlock_node_cache: 216
+ 1079 													filesystem_mkdir: int (), <./mount.tproj/webdav_file.c 808>
+ 1080 														RetrieveDataFromOpaqueID: 421
+ 1081 														require_noerr_action_quiet: <>
+ 1082 														require_action_quiet: <>
+ 1083 														NODE_IS_DELETED: <>
+ 1084 														network_mkdir: int (), <./mount.tproj/webdav_network.c 5466>
+ 1085 															CFSTR: <>
+ 1086 															create_cfurl_from_node: 220
+ 1087 															require_action_quiet: <>
+ 1088 															send_transaction: 256
+ 1089 															CFHTTPMessageCopyHeaderFieldValue: <>
+ 1090 															DateStringToTime: 544
+ 1091 															CFRelease: <>
+ 1092 														node_attributes_valid: 446
+ 1093 														time: <>
+ 1094 														nodecache_remove_attributes: 557
+ 1095 														nodecache_get_node: 427
+ 1096 														bzero: <>
+ 1097 														nodecache_add_attributes: 503
+ 1098 													filesystem_rmdir: int (), <./mount.tproj/webdav_file.c 1081>
+ 1099 														RetrieveDataFromOpaqueID: 421
+ 1100 														require_noerr_action_quiet: <>
+ 1101 														require_action_quiet: <>
+ 1102 														NODE_IS_DELETED: <>
+ 1103 														network_rmdir: int (), <./mount.tproj/webdav_network.c 4894>
+ 1104 															create_cfurl_from_node: 220
+ 1105 															require_action_quiet: <>
+ 1106 															network_dir_is_empty: 1045
+ 1107 															network_delete: 967
+ 1108 															CFRelease: <>
+ 1109 														node_attributes_valid: 446
+ 1110 														time: <>
+ 1111 														nodecache_remove_attributes: 557
+ 1112 														nodecache_delete_node: 514
+ 1113 														debug_string: <>
+ 1114 													filesystem_readdir: int (), <./mount.tproj/webdav_file.c 1438>
+ 1115 														RetrieveDataFromOpaqueID: 421
+ 1116 														require_noerr_action_quiet: <>
+ 1117 														require_action_quiet: <>
+ 1118 														NODE_IS_DELETED: <>
+ 1119 														network_readdir: int (), <./mount.tproj/webdav_network.c 5375>
+ 1120 															CFSTR: <>
+ 1121 															CFDataCreateWithBytesNoCopy: <>
+ 1122 															strlen: <>
+ 1123 															require_action: <>
+ 1124 															create_cfurl_from_node: 220
+ 1125 															send_transaction: 256
+ 1126 															parse_opendir: int (), <./mount.tproj/webdav_parse.c 1540>
+ 1127 																memset: <>
+ 1128 																parser_opendir_create: void (), <./mount.tproj/webdav_parse.c 378>
+ 1129 																	CFStringCreateWithCString: <>
+ 1130 																	CFStringCompare: <>
+ 1131 																	CFSTR: <>
+ 1132 																	create_opendir_element: webdav_parse_opendir_element_t * (), <./mount.tproj/webdav_parse.c 359>
+ 1133 																		malloc: <>
+ 1134 																		bzero: <>
+ 1135 																	require_action: <>
+ 1136 																	syslog: <>
+ 1137 																parser_opendir_add: void (), <./mount.tproj/webdav_parse.c 960>
+ 1138 																	malloc: <>
+ 1139 																	bzero: <>
+ 1140 																	memcpy: <>
+ 1141 																	strstr: <>
+ 1142 																	strchr: <>
+ 1143 																	memset: <>
+ 1144 																	free: <>
+ 1145 																	bcopy: <>
+ 1146 																	debug_string: <>
+ 1147 																	strtoq: <>
+ 1148 																	DateBytesToTime: 472
+ 1149 																	strlen: <>
+ 1150 																	ISO8601ToTime: 489
+ 1151 																	from_base64: int (), <./mount.tproj/webdav_parse.c 130>
+ 1152 																		strchr: <>
+ 1153 																		strlen: <>
+ 1154 																parser_opendir_end: void (), <./mount.tproj/webdav_parse.c 327>
+ 1155 																require: <>
+ 1156 																ftruncate: <>
+ 1157 																lseek: <>
+ 1158 																xmlSAXUserParseMemory: <>
+ 1159 																NODE_IS_DELETED: <>
+ 1160 																bzero: <>
+ 1161 																write: <>
+ 1162 																GetNormalizedPathLength: CFIndex (), <./mount.tproj/webdav_parse.c 1416>
+ 1163 																	CFURLCopyAbsoluteURL: <>
+ 1164 																	require: <>
+ 1165 																	CFURLCopyPath: <>
+ 1166 																	CFURLCreateStringByReplacingPercentEscapes: <>
+ 1167 																	CFSTR: <>
+ 1168 																	require_string: <>
+ 1169 																	CFStringGetLength: <>
+ 1170 																	CFRelease: <>
+ 1171 																nodecache_invalidate_directory_node_time: int (), <./mount.tproj/webdav_cache.c 1022>
+ 1172 																	lock_node_cache: 212
+ 1173 																	internal_invalidate_directory_node_time: int (), <./mount.tproj/webdav_cache.c 1001>
+ 1174 																		require_action: <>
+ 1175 																		LIST_FOREACH: <>
+ 1176 																	unlock_node_cache: 216
+ 1177 																GetComponentName: Boolean (), <./mount.tproj/webdav_parse.c 1464>
+ 1178 																	CFStringCreateWithCString: <>
+ 1179 																	require: <>
+ 1180 																	CFURLCreateWithString: <>
+ 1181 																	CFRelease: <>
+ 1182 																	CFURLCreateStringByReplacingPercentEscapesUsingEncoding: <>
+ 1183 																	CFURLCreateStringByAddingPercentEscapes: <>
+ 1184 																	GetNormalizedPathLength: 1162
+ 1185 																	CFURLCopyLastPathComponent: <>
+ 1186 																	require_string: <>
+ 1187 																	CFStringGetCString: <>
+ 1188 																	debug_string: <>
+ 1189 																strlen: <>
+ 1190 																nodecache_get_node: 427
+ 1191 																debug_string: <>
+ 1192 																bcopy: <>
+ 1193 																nodecache_add_attributes: 503
+ 1194 																nodecache_delete_invalid_directory_nodes: int (), <./mount.tproj/webdav_cache.c 1071>
+ 1195 																	lock_node_cache: 212
+ 1196 																	internal_delete_invalid_directory_nodes: int (), <./mount.tproj/webdav_cache.c 1039>
+ 1197 																		require_action: <>
+ 1198 																		delete_node_tree: 516
+ 1199 																		require_noerr: <>
+ 1200 																	unlock_node_cache: 216
+ 1201 																free: <>
+ 1202 															free: <>
+ 1203 															CFRelease: <>
+ 1204 													filesystem_statfs: int (), <./mount.tproj/webdav_file.c 618>
+ 1205 														RetrieveDataFromOpaqueID: 421
+ 1206 														require_noerr_action_quiet: <>
+ 1207 														time: <>
+ 1208 														network_statfs: int (), <./mount.tproj/webdav_network.c 3544>
+ 1209 															CFSTR: <>
+ 1210 															CFDataCreateWithBytesNoCopy: <>
+ 1211 															strlen: <>
+ 1212 															require_action: <>
+ 1213 															create_cfurl_from_node: 220
+ 1214 															send_transaction: 256
+ 1215 															CFRelease: <>
+ 1216 															parse_statfs: int (), <./mount.tproj/webdav_parse.c 1924>
+ 1217 																memset: <>
+ 1218 																parser_statfs_create: void (), <./mount.tproj/webdav_parse.c 728>
+ 1219 																	CFStringCreateWithCString: <>
+ 1220 																	CFStringCompare: <>
+ 1221 																	CFSTR: <>
+ 1222 																	CFRelease: <>
+ 1223 																parser_statfs_add: void (), <./mount.tproj/webdav_parse.c 1190>
+ 1224 																	malloc: <>
+ 1225 																	bzero: <>
+ 1226 																	memcpy: <>
+ 1227 																	strtouq: <>
+ 1228 																	free: <>
+ 1229 																parser_statfs_end: void (), <./mount.tproj/webdav_parse.c 305>
+ 1230 																bzero: <>
+ 1231 																statfs: <>
+ 1232 																xmlSAXUserParseMemory: <>
+ 1233 															free: <>
+ 1234 													webdav_kill: 131
+ 1235 													filesystem_invalidate_caches: int (), <./mount.tproj/webdav_file.c 1480>
+ 1236 														require_action: <>
+ 1237 														nodecache_invalidate_caches: void (), <./mount.tproj/webdav_cache.c 326>
+ 1238 															lock_node_cache: 212
+ 1239 															invalidate_level: void (), <./mount.tproj/webdav_cache.c 310>
+ 1240 																LIST_FOREACH: <>
+ 1241 																invalidate_level: 1239
+ 1242 															unlock_node_cache: 216
+ 1243 													filesystem_write_seq: int (), <./mount.tproj/webdav_file.c 1208>
+ 1244 														RetrieveDataFromOpaqueID: 421
+ 1245 														require_noerr_action_quiet: <>
+ 1246 														require_action_quiet: <>
+ 1247 														NODE_IS_DELETED: <>
+ 1248 														require_action: <>
+ 1249 														NODE_FILE_IS_CACHED: <>
+ 1250 														setup_seq_write: int (), <./mount.tproj/webdav_network.c 3809>
+ 1251 															malloc: <>
+ 1252 															syslog: <>
+ 1253 															memset: <>
+ 1254 															pthread_mutexattr_init: <>
+ 1255 															pthread_mutex_init: <>
+ 1256 															pthread_cond_init: <>
+ 1257 															create_cfurl_from_node: 220
+ 1258 															create_http_request_message: 885
+ 1259 															CFStringCreateWithFormat: <>
+ 1260 															CFSTR: <>
+ 1261 															CFHTTPMessageSetHeaderFieldValue: <>
+ 1262 															CFRelease: <>
+ 1263 															authcache_apply: 287
+ 1264 															create_bound_streams: bool (), <./mount.tproj/webdav_network.c 3774>
+ 1265 																socketpair: <>
+ 1266 																syslog: <>
+ 1267 																CFStreamCreatePairWithSocket: <>
+ 1268 																close_socket_pair: void (), <./mount.tproj/webdav_network.c 3766>
+ 1269 																	close: <>
+ 1270 																CFReadStreamSetProperty: <>
+ 1271 																CFWriteStreamSetProperty: <>
+ 1272 															CFReadStreamCreateForStreamedHTTPRequest: <>
+ 1273 															set_global_stream_properties: 367
+ 1274 															ApplySSLProperties: 373
+ 1275 															requestqueue_enqueue_seqwrite_manager: int (), <./mount.tproj/webdav_requestqueue.c 962>
+ 1276 																pthread_mutex_lock: <>
+ 1277 																require_noerr_action: <>
+ 1278 																webdav_kill: 131
+ 1279 																malloc: <>
+ 1280 																require_action: <>
+ 1281 																pthread_cond_signal: <>
+ 1282 																require_noerr: <>
+ 1283 																pthread_create: <>
+ 1284 																handle_request_thread: 400
+ 1285 																pthread_mutex_unlock: <>
+ 1286 															time: <>
+ 1287 															pthread_mutex_lock: <>
+ 1288 															pthread_cond_timedwait: <>
+ 1289 															pthread_mutex_unlock: <>
+ 1290 														fcntl: <>
+ 1291 														syslog: <>
+ 1292 														pthread_mutex_lock: <>
+ 1293 														malloc: <>
+ 1294 														pthread_mutex_unlock: <>
+ 1295 														bzero: <>
+ 1296 														pthread_mutexattr_init: <>
+ 1297 														pthread_mutex_init: <>
+ 1298 														pthread_cond_init: <>
+ 1299 														lseek: <>
+ 1300 														MIN: <>
+ 1301 														read: <>
+ 1302 														queue_writemgr_request_locked: 830
+ 1303 														time: <>
+ 1304 														pthread_cond_timedwait: <>
+ 1305 														release_writemgr_request: void (), <./mount.tproj/webdav_network.c 4403>
+ 1306 															pthread_mutex_lock: <>
+ 1307 															release_writemgr_request_locked: 834
+ 1308 															pthread_mutex_unlock: <>
+ 1309 													dump_cookies: void (), <./mount.tproj/webdav_cookie.c 1687>
+ 1310 														syslog: <>
+ 1311 														lock_cookies: 275
+ 1312 														printCookie: void (), <./mount.tproj/webdav_cookie.c 1735>
+ 1313 															time: <>
+ 1314 															syslog: <>
+ 1315 														unlock_cookies: 280
+ 1316 													reset_cookies: void (), <./mount.tproj/webdav_cookie.c 1707>
+ 1317 														syslog: <>
+ 1318 														lock_cookies: 275
+ 1319 														list_remove_cookie: 735
+ 1320 														free_cookie_fields: 723
+ 1321 														free: <>
+ 1322 														unlock_cookies: 280
+ 1323 													close: <>
+ 1324 												network_finish_download: int (), <./mount.tproj/webdav_network.c 2803>
+ 1325 													malloc: <>
+ 1326 													require: <>
+ 1327 													CFReadStreamRead: <>
+ 1328 													write: <>
+ 1329 													CFReadStreamGetError: <>
+ 1330 													syslog: <>
+ 1331 													free: <>
+ 1332 													CFReadStreamClose: <>
+ 1333 													CFRelease: <>
+ 1334 													release_ReadStreamRec: 772
+ 1335 												verify_noerr: <>
+ 1336 												fchflags: <>
+ 1337 												network_server_ping: int (), <./mount.tproj/webdav_network.c 2901>
+ 1338 													nodecache_get_baseURL: 244
+ 1339 													CFSTR: <>
+ 1340 													sleep: <>
+ 1341 													send_transaction: 256
+ 1342 													CFRelease: <>
+ 1343 													set_connectionstate: 387
+ 1344 													syslog: <>
+ 1345 													requestqueue_enqueue_server_ping: 391
+ 1346 												network_seqwrite_manager: void (), <./mount.tproj/webdav_network.c 3971>
+ 1347 													pthread_mutex_lock: <>
+ 1348 													CFRunLoopGetCurrent: <>
+ 1349 													CFRetain: <>
+ 1350 													pthread_mutex_unlock: <>
+ 1351 													snprintf: <>
+ 1352 													getpid: <>
+ 1353 													CFStringCreateWithBytes: <>
+ 1354 													strlen: <>
+ 1355 													syslog: <>
+ 1356 													pthread_cond_signal: <>
+ 1357 													CFMessagePortCreateLocal: <>
+ 1358 													managerMessagePortCallback: CFDataRef (), <./mount.tproj/webdav_network.c 3178>
+ 1359 													CFMessagePortCreateRunLoopSource: <>
+ 1360 													CFRunLoopAddSource: <>
+ 1361 													CFMessagePortCreateRemote: <>
+ 1362 													CFRelease: <>
+ 1363 													CFWriteStreamSetClient: <>
+ 1364 													writeseqWriteCallback: void (), <./mount.tproj/webdav_network.c 3108>
+ 1365 														pthread_mutex_lock: <>
+ 1366 														pthread_mutex_unlock: <>
+ 1367 														CFWriteStreamGetError: <>
+ 1368 														syslog: <>
+ 1369 														get_connectionstate: 357
+ 1370 														set_connectionstate: 387
+ 1371 													CFWriteStreamScheduleWithRunLoop: <>
+ 1372 													CFWriteStreamOpen: <>
+ 1373 													CFReadStreamSetClient: <>
+ 1374 													writeseqReadResponseCallback: void (), <./mount.tproj/webdav_network.c 2959>
+ 1375 														CFReadStreamRead: <>
+ 1376 														CFReadStreamGetError: <>
+ 1377 														syslog: <>
+ 1378 														pthread_mutex_lock: <>
+ 1379 														pthread_mutex_unlock: <>
+ 1380 														get_connectionstate: 357
+ 1381 														set_connectionstate: 387
+ 1382 														stream_error_to_errno: 656
+ 1383 														HandleSSLErrors: 378
+ 1384 														CFReadStreamCopyProperty: <>
+ 1385 														CFHTTPMessageGetResponseStatusCode: <>
+ 1386 														translate_status_to_error: 778
+ 1387 														CFHTTPMessageCopyHeaderFieldValue: <>
+ 1388 														CFSTR: <>
+ 1389 														handle_cookies: 671
+ 1390 														CFRelease: <>
+ 1391 													CFReadStreamScheduleWithRunLoop: <>
+ 1392 													CFReadStreamOpen: <>
+ 1393 													HandleSSLErrors: 378
+ 1394 													CFReadStreamUnscheduleFromRunLoop: <>
+ 1395 													CFReadStreamGetError: <>
+ 1396 													set_connectionstate: 387
+ 1397 													stream_error_to_errno: 656
+ 1398 													dequeue_writemgr_request_locked: struct seqwrite_mgr_req (), <./mount.tproj/webdav_network.c 4367>
+ 1399 													release_writemgr_request_locked: 834
+ 1400 													CFWriteStreamClose: <>
+ 1401 													release_writemgr_request: 1305
+ 1402 													CFWriteStreamWrite: <>
+ 1403 													CFWriteStreamGetError: <>
+ 1404 													get_connectionstate: 357
+ 1405 													CFRunLoopRunInMode: <>
+ 1406 													CFMessagePortInvalidate: <>
+ 1407 												free: <>
+ 1408 												pthread_exit: <>
+ 1409 												time: <>
+ 1410 												pthread_cond_timedwait: <>
+ 1411 												require: <>
+ 1412 												webdav_kill: 131
+ 1413 											pthread_mutex_unlock: <>
+ 1414 										notify_reconnected: void (), <./mount.tproj/webdav_requestqueue.c 138>
+ 1415 											getmntinfo: <>
+ 1416 											syslog: <>
+ 1417 											strlen: <>
+ 1418 											strcmp: <>
+ 1419 											strncasecmp: <>
+ 1420 											sysctl: <>
+ 1421 										pthread_mutex_unlock: <>
+ 1422 									stream_error_to_errno: 656
+ 1423 									CFReadStreamClose: <>
+ 1424 									CFRelease: <>
+ 1425 									CFReadStreamCopyProperty: <>
+ 1426 									CFDataGetBytes: <>
+ 1427 									setsockopt: <>
+ 1428 									release_ReadStreamRec: 772
+ 1429 								require_noerr_quiet: <>
+ 1430 								malloc: <>
+ 1431 								require: <>
+ 1432 								CFReadStreamRead: <>
+ 1433 								realloc: <>
+ 1434 								HandleSSLErrors: 378
+ 1435 								CFReadStreamGetError: <>
+ 1436 								syslog: <>
+ 1437 								set_connectionstate: 387
+ 1438 								stream_error_to_errno: 656
+ 1439 								CFReadStreamCopyProperty: <>
+ 1440 								CFHTTPMessageCopyHeaderFieldValue: <>
+ 1441 								CFSTR: <>
+ 1442 								CFStringCompare: <>
+ 1443 								CFReadStreamClose: <>
+ 1444 								CFRelease: <>
+ 1445 								handle_cookies: 671
+ 1446 								release_ReadStreamRec: 772
+ 1447 								free: <>
+ 1448 							CFHTTPMessageGetResponseStatusCode: <>
+ 1449 							nodecache_redirect_node: int (), <./mount.tproj/webdav_cache.c 1221>
+ 1450 								syslog: <>
+ 1451 								CFStringCreateMutable: <>
+ 1452 								CFHTTPMessageCopyHeaderFieldValue: <>
+ 1453 								CFSTR: <>
+ 1454 								CFStringAppend: <>
+ 1455 								CFURLCopyPath: <>
+ 1456 								CFRelease: <>
+ 1457 								CFStringHasSuffix: <>
+ 1458 								CFStringDelete: <>
+ 1459 								CFRangeMake: <>
+ 1460 								CFStringGetLength: <>
+ 1461 								malloc: <>
+ 1462 								CFStringGetCString: <>
+ 1463 								free: <>
+ 1464 								strlen: <>
+ 1465 								CFStringHasPrefix: <>
+ 1466 								lock_node_cache: 212
+ 1467 								CFURLCreateAbsoluteURLWithBytes: <>
+ 1468 								unlock_node_cache: 216
+ 1469 							translate_status_to_error: 778
+ 1470 							authcache_valid: 780
+ 1471 						CFHTTPMessageGetResponseStatusCode: <>
+ 1472 						CFRelease: <>
+ 1473 						network_handle_multistatus_reply: 972
+ 1474 						CFURLGetString: <>
+ 1475 						CFRetain: <>
+ 1476 						CopyCFStringToCString: 310
+ 1477 						syslog: <>
+ 1478 						free: <>
+ 1479 						parse_lock: int (), <./mount.tproj/webdav_parse.c 2005>
+ 1480 							memset: <>
+ 1481 							parser_lock_create: void (), <./mount.tproj/webdav_parse.c 775>
+ 1482 								CFStringCreateWithCString: <>
+ 1483 								CFStringCompare: <>
+ 1484 								CFSTR: <>
+ 1485 								CFRelease: <>
+ 1486 							parser_lock_add: void (), <./mount.tproj/webdav_parse.c 1076>
+ 1487 								malloc: <>
+ 1488 								bzero: <>
+ 1489 								memcpy: <>
+ 1490 								isspace: <>
+ 1491 							parser_lock_end: void (), <./mount.tproj/webdav_parse.c 316>
+ 1492 							xmlSAXUserParseMemory: <>
+ 1493 							debug_string: <>
+ 1494 				NODE_FILE_CACHE_INVALID: <>
+ 1495 				nodecache_remove_file_cache: 813
+ 1496 				nodecache_free_nodes: void (), <./mount.tproj/webdav_cache.c 851>
+ 1497 					lock_node_cache: 212
+ 1498 					internal_free_nodes: void (), <./mount.tproj/webdav_cache.c 803>
+ 1499 						NODE_FILE_IS_CACHED: <>
+ 1500 						LIST_REMOVE: <>
+ 1501 						DeleteOpaqueID: int (), <./mount.tproj/OpaqueIDs.c 237>
+ 1502 							pthread_mutex_lock: <>
+ 1503 							require_noerr: <>
+ 1504 							GetOpaqueIDIndexPart: <>
+ 1505 							CreateOpaqueID: <>
+ 1506 							GetOpaqueIDCounterPart: <>
+ 1507 							AddToFreeList: 72
+ 1508 							pthread_mutex_unlock: <>
+ 1509 						free: <>
+ 1510 						CFRelease: <>
+ 1511 						internal_remove_attributes: 506
+ 1512 					unlock_node_cache: 216
+ 1513 				time: <>
+ 1514 				pthread_cond_timedwait: <>
+ 1515 				require: <>
+ 1516 				pthread_mutex_unlock: <>
+ 1517 				purge_expired_cookies: void (), <./mount.tproj/webdav_cookie.c 384>
+ 1518 					lock_cookies: 275
+ 1519 					unlock_cookies: 280
+ 1520 					time: <>
+ 1521 					list_remove_cookie: 735
+ 1522 					free_cookie_fields: 723
+ 1523 					free: <>
+ 1524 				webdav_kill: 131
+ 1525 		filesystem_mount: int (), <./mount.tproj/webdav_file.c 688>
+ 1526 			network_mount: int (), <./mount.tproj/webdav_network.c 2701>
+ 1527 				nodecache_get_baseURL: 244
+ 1528 				network_getDAVLevel: int (), <./mount.tproj/webdav_network.c 2383>
+ 1529 					CFSTR: <>
+ 1530 					send_transaction: 256
+ 1531 					ParseDAVLevel: void (), <./mount.tproj/webdav_network.c 2266>
+ 1532 						CFHTTPMessageCopyHeaderFieldValue: <>
+ 1533 						CFSTR: <>
+ 1534 						CFStringGetCStringPtr: <>
+ 1535 						CFStringGetCString: <>
+ 1536 						CFRelease: <>
+ 1537 						SkipLWS: const char * (), <./mount.tproj/webdav_network.c 357>
+ 1538 						SkipCodedURL: const char * (), <./mount.tproj/webdav_network.c 266>
+ 1539 						SkipToken: const char * (), <./mount.tproj/webdav_network.c 294>
+ 1540 					identifyServerType: void (), <./mount.tproj/webdav_network.c 2371>
+ 1541 						CFHTTPMessageCopyHeaderFieldValue: <>
+ 1542 						CFSTR: <>
+ 1543 						CFStringHasPrefix: <>
+ 1544 						CFRelease: <>
+ 1545 					CFRelease: <>
+ 1546 				CFRelease: <>
+ 1547 				debug_string: <>
+ 1548 				network_stat: 453
+ 1549 				syslog: <>
+ 1550 				S_ISDIR: <>
+ 1551 			getuid: <>
+ 1552 		require_noerr_quiet: <>
+ 1553 		socket: <>
+ 1554 		mktemp: <>
+ 1555 		umask: <>
+ 1556 		bind: <>
+ 1557 		chflags: <>
+ 1558 		listen: <>
+ 1559 		pipe: <>
+ 1560 		webdav_kill: 131
+ 1561 		geteuid: <>
+ 1562 		getegid: <>
+ 1563 		filesystem_statfs: 1204
+ 1564 		statfs: <>
+ 1565 		mount: <>
+ 1566 		kill: <>
+ 1567 		getppid: <>
+ 1568 		htonl: <>
+ 1569 		SCNetworkReachabilityCreateWithAddress: <>
+ 1570 		SCNetworkReachabilityScheduleWithRunLoop: <>
+ 1571 		notify_register_file_descriptor: <>
+ 1572 		xmlInitParser: <>
+ 1573 		sandbox_init: <>
+ 1574 		asl_log: <>
+ 1575 		sandbox_free_error: <>
+ 1576 		exit: <>
+ 1577 		FD_ZERO: <>
+ 1578 		FD_SET: <>
+ 1579 		MAX: <>
+ 1580 		select: <>
+ 1581 		require: <>
+ 1582 		FD_ISSET: <>
+ 1583 		read: <>
+ 1584 		create_unmount_thread: void (), <./mount.tproj/webdav_agent.c 431>
+ 1585 			pthread_attr_init: <>
+ 1586 			require_noerr: <>
+ 1587 			pthread_attr_setdetachstate: <>
+ 1588 			pthread_create: <>
+ 1589 			webdav_force_unmount: void (), <./mount.tproj/webdav_agent.c 382>
+ 1590 				fork: <>
+ 1591 				snprintf: <>
+ 1592 				getuid: <>
+ 1593 				execle: <>
+ 1594 				require: <>
+ 1595 				wait4: <>
+ 1596 				check_noerr_string: <>
+ 1597 				strerror: <>
+ 1598 			exit: <>
+ 1599 		accept: <>
+ 1600 		requestqueue_enqueue_request: int (), <./mount.tproj/webdav_requestqueue.c 786>
+ 1601 			pthread_mutex_lock: <>
+ 1602 			require_noerr: <>
+ 1603 			malloc: <>
+ 1604 			require_action: <>
+ 1605 			pthread_cond_signal: <>
+ 1606 			pthread_create: <>
+ 1607 			handle_request_thread: 400
+ 1608 			pthread_mutex_unlock: <>
+ 1609 			require_noerr_action: <>
+ 1610 		create_change_thread: void (), <./mount.tproj/webdav_agent.c 459>
+ 1611 			pthread_attr_init: <>
+ 1612 			require_noerr: <>
+ 1613 			pthread_attr_setdetachstate: <>
+ 1614 			pthread_create: <>
+ 1615 			network_update_proxy: 128
+ 1616 			exit: <>
+ 1617 		requestqueue_purge_cache_files: int (), <./mount.tproj/webdav_requestqueue.c 1020>
+ 1618 			pthread_mutex_lock: <>
+ 1619 			require_noerr: <>
+ 1620 			pthread_cond_signal: <>
+ 1621 			pthread_mutex_unlock: <>
+ 1622 		rmdir: <>
+ 1623 		unlink: <>
+ 1624 		xmlCleanupParser: <>
+ 1625 		usage: void (), <./mount.tproj/mount_webdav.c 41>
+ 1626 			fprintf: <>
+ 1627 		alloca: <>
+ 1628 		bcopy: <>
+ 1629 		sigemptyset: <>
+ 1630 		sigaddset: <>
+ 1631 		sigprocmask: <>
+ 1632 		parentexit: void (), <./mount.tproj/mount_webdav.c 52>
+ 1633 			exit: <>
+ 1634 		fork: <>
+ 1635 		snprintf: <>
+ 1636 		execve: <>
+ 1637 		wait4: <>
+ 1638 		WIFEXITED: <>
+ 1639 		WEXITSTATUS: <>

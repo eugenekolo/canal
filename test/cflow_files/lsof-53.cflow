@@ -1,0 +1,1035 @@
+    1 	main: int (), <./lsof/main.c 64>
+    2 		strrchr: <>
+    3 		getpid: <>
+    4 		printf: <>
+    5 		fflush: <>
+    6 		PrtMsg: void (), <./lsof/tests/LTlib.c 756>
+    7 			strlen: , <./lsof/lib/snpf.c 679>
+    8 				snpf: int (), <./lsof/lib/snpf.c 233>
+    9 					va_start: <>
+   10 					va_arg: <>
+   11 					vsnpf: int (), <./lsof/lib/snpf.c 259>
+   12 						dopr: void (), <./lsof/lib/snpf.c 281>
+   13 							dostr: void (), <./lsof/lib/snpf.c 702>
+   14 							va_arg: <>
+   15 							fmtllnum: void (), <./lsof/lib/snpf.c 520>
+   16 							strncpy: <>
+   17 							fmtnum: void (), <./lsof/lib/snpf.c 592>
+   18 							fmtstr: void (), <./lsof/lib/snpf.c 663>
+   19 							dopr_outch: void (), <./lsof/lib/snpf.c 728>
+   20 					va_end: <>
+   21 			malloc: <>
+   22 			printf: <>
+   23 			exit: <>
+   24 		ScanArg: int (), <./lsof/tests/LTlib.c 969>
+   25 			free: <>
+   26 			GetOpt: int (), <./lsof/tests/LTlib.c 583>
+   27 				strcmp: <>
+   28 				snprintf: <>
+   29 				MkStrCpy: char * (), <./lsof/tests/LTlib.c 729>
+   30 					fprintf: <>
+   31 					exit: <>
+   32 					strlen: 7
+   33 					malloc: <>
+   34 					strcpy: <>
+   35 				strchr: <>
+   36 			PrtMsg: 6
+   37 			snprintf: <>
+   38 		PrtMsgX: void (), <./lsof/tests/LTlib.c 807>
+   39 			PrtMsg: 6
+   40 			LTlibClean: void (), <./lsof/tests/LTlib.c 718>
+   41 				StopLsof: void (), <./lsof/tests/LTlib.c 1034>
+   42 					wait3: <>
+   43 					kill: <>
+   44 					sleep: <>
+   45 					closepipe: void (), <./lsof/tests/LTlib.c 310>
+   46 						fclose: <>
+   47 						close: <>
+   48 			exit: <>
+   49 		cleanup: void (), <./lsof/tests/LTunix.c 198>
+   50 			close: <>
+   51 			unlink: <>
+   52 			free: <>
+   53 		IsLsofExec: char * (), <./lsof/tests/LTlib.c 698>
+   54 			getlsofpath: void (), <./lsof/tests/LTlib.c 555>
+   55 				getenv: <>
+   56 				MkStrCpy: 29
+   57 			access: <>
+   58 			snprintf: <>
+   59 			strerror: <>
+   60 			MkStrCpy: 29
+   61 		CanRdKmem: char * (), <./lsof/tests/LTlib.c 248>
+   62 			getlsofpath: 54
+   63 			strcmp: <>
+   64 			stat: <>
+   65 			snprintf: <>
+   66 			strerror: <>
+   67 			MkStrCpy: 29
+   68 			open: <>
+   69 			close: <>
+   70 		getcwd: <>
+   71 		getwd: <>
+   72 		strlen: 7
+   73 		strncpy: <>
+   74 		snprintf: <>
+   75 		MkStrCpy: 29
+   76 		unlink: <>
+   77 		socket: <>
+   78 		strerror: <>
+   79 		memset: <>
+   80 		bind: <>
+   81 		FindUsocks: char * (), <./lsof/tests/LTunix.c 221>
+   82 			snprintf: <>
+   83 			MkStrCpy: 29
+   84 			ExecLsof: char * (), <./lsof/tests/LTlib.c 406>
+   85 				getlsofpath: 54
+   86 				IsLsofExec: 53
+   87 				pipe: <>
+   88 				snprintf: <>
+   89 				strerror: <>
+   90 				MkStrCpy: 29
+   91 				malloc: <>
+   92 				realloc: <>
+   93 				fork: <>
+   94 				getdtablesize: <>
+   95 				close: <>
+   96 				dup2: <>
+   97 				execv: <>
+   98 				fdopen: <>
+   99 				sleep: <>
+  100 			RdFrLsof: LTfldo_t * (), <./lsof/tests/LTlib.c 827>
+  101 				free: <>
+  102 				fgets: <>
+  103 				realloc: <>
+  104 				malloc: <>
+  105 				snprintf: <>
+  106 				MkStrCpy: 29
+  107 				memcpy: <>
+  108 			PrtMsg: 6
+  109 			atoi: <>
+  110 			strcasecmp: <>
+  111 			strlen: 7
+  112 			strchr: <>
+  113 			strncmp: <>
+  114 			StopLsof: 41
+  115 		CleanupSrvr: void (), <./lsof/tests/LTsock.c 550>
+  116 			shutdown: <>
+  117 			close: <>
+  118 			wait3: <>
+  119 			kill: <>
+  120 		gethostname: <>
+  121 		gethostbyname: <>
+  122 		memcpy: <>
+  123 		inet_ntoa: <>
+  124 		getsockname: <>
+  125 		listen: <>
+  126 		fork: <>
+  127 		StartClnt: void (), <./lsof/tests/LTsock.c 830>
+  128 			close: <>
+  129 			memcpy: <>
+  130 			bind: <>
+  131 			snprintf: <>
+  132 			strerror: <>
+  133 			PrtMsgX: 38
+  134 			CleanupClnt: void (), <./lsof/tests/LTsock.c 533>
+  135 				shutdown: <>
+  136 				close: <>
+  137 			signal: <>
+  138 			HandleClntAlarm: SIGHANDLER_T (), <./lsof/tests/LTsock.c 804>
+  139 				PrtMsgX: 38
+  140 				CleanupClnt: 134
+  141 			alarm: <>
+  142 			connect: <>
+  143 			sleep: <>
+  144 			read: <>
+  145 			exit: <>
+  146 		close: <>
+  147 		alarm: <>
+  148 		signal: <>
+  149 		HandleSrvrAlarm: SIGHANDLER_T (), <./lsof/tests/LTsock.c 817>
+  150 			PrtMsgX: 38
+  151 			CleanupSrvr: 115
+  152 		accept: <>
+  153 		free: <>
+  154 		ntohs: <>
+  155 		gethostbyaddr: <>
+  156 		FindSock: char * (), <./lsof/tests/LTsock.c 584>
+  157 			snprintf: <>
+  158 			MkStrCpy: 29
+  159 			ExecLsof: 84
+  160 			RdFrLsof: 100
+  161 			PrtMsg: 6
+  162 			atoi: <>
+  163 			strcmp: <>
+  164 			strcasecmp: <>
+  165 			strncasecmp: <>
+  166 			strncmp: <>
+  167 			strchr: <>
+  168 			StopLsof: 41
+  169 		cleanup: void (), <./lsof/tests/LTlock.c 414>
+  170 			close: <>
+  171 			unlink: <>
+  172 		open: <>
+  173 		fprintf: <>
+  174 		write: <>
+  175 		fsync: <>
+  176 		tstwlsof: char * (), <./lsof/tests/LTlock.c 522>
+  177 			PrtMsgX: 38
+  178 			cleanup: 169
+  179 			stat: <>
+  180 			snprintf: <>
+  181 			strerror: <>
+  182 			ConvStatDev: char * (), <./lsof/tests/LTlib.c 378>
+  183 				major_S: <>
+  184 				minor_S: <>
+  185 				unit_S: <>
+  186 			ExecLsof: 84
+  187 			RdFrLsof: 100
+  188 			PrtMsg: 6
+  189 			atoi: <>
+  190 			strcasecmp: <>
+  191 			ConvLsofDev: char * (), <./lsof/tests/LTlib.c 334>
+  192 				strncmp: <>
+  193 				strlen: 7
+  194 				major_X: <>
+  195 				minor_X: <>
+  196 				unit_X: <>
+  197 			strcmp: <>
+  198 			MkStrCpy: 29
+  199 			StopLsof: 41
+  200 		lkfile: char * (), <./lsof/tests/LTlock.c 432>
+  201 			memset: <>
+  202 			snprintf: <>
+  203 			MkStrCpy: 29
+  204 			fcntl: <>
+  205 			strerror: <>
+  206 			flock: <>
+  207 		unlkfile: char * (), <./lsof/tests/LTlock.c 706>
+  208 			memset: <>
+  209 			snprintf: <>
+  210 			MkStrCpy: 29
+  211 			fcntl: <>
+  212 			strerror: <>
+  213 			flock: <>
+  214 		cleanup: void (), <./lsof/tests/LTdnlc.c 269>
+  215 		stat: <>
+  216 		ConvStatDev: 182
+  217 		system: <>
+  218 		FindLsofCwd: char * (), <./lsof/tests/LTdnlc.c 279>
+  219 			PrtMsgX: 38
+  220 			cleanup: void (), <./lsof/tests/LTdnlc.c 269>
+  221 			ExecLsof: 84
+  222 			RdFrLsof: 100
+  223 			PrtMsg: 6
+  224 			atoi: <>
+  225 			strcasecmp: <>
+  226 			ConvLsofDev: 191
+  227 			strcmp: <>
+  228 			strchr: <>
+  229 			StopLsof: 41
+  230 		exit: <>
+  231 		cleanup: void (), <./lsof/tests/LTbigf.c 522>
+  232 			unlink: <>
+  233 			close: <>
+  234 		ck_Linux_offset_support: int (), <./lsof/tests/LTbigf.c 480>
+  235 			IsLsofExec: 53
+  236 			snprintf: <>
+  237 			getpid: <>
+  238 			ExecLsof: 84
+  239 			fgets: <>
+  240 			strstr: <>
+  241 			StopLsof: 41
+  242 		OPENF: <>
+  243 		SEEKF: <>
+  244 		tstwlsof: int (), <./lsof/tests/LTbigf.c 547>
+  245 			snprintf: <>
+  246 			PrtMsgX: 38
+  247 			cleanup: 231
+  248 			STATF: <>
+  249 			strerror: <>
+  250 			ConvStatDev: 182
+  251 			PrtMsg: 6
+  252 			ExecLsof: 84
+  253 			RdFrLsof: 100
+  254 			atoi: <>
+  255 			strcasecmp: <>
+  256 			ConvLsofDev: 191
+  257 			strcmp: <>
+  258 			StopLsof: 41
+  259 		cleanup: void (), <./lsof/tests/LTnfs.c 276>
+  260 			close: <>
+  261 			unlink: <>
+  262 		FindNFSfile: char * (), <./lsof/tests/LTnfs.c 295>
+  263 			PrtMsgX: 38
+  264 			cleanup: 259
+  265 			stat: <>
+  266 			snprintf: <>
+  267 			strerror: <>
+  268 			ConvStatDev: 182
+  269 			ExecLsof: 84
+  270 			RdFrLsof: 100
+  271 			PrtMsg: 6
+  272 			atoi: <>
+  273 			strcasecmp: <>
+  274 			ConvLsofDev: 191
+  275 			strcmp: <>
+  276 			MkStrCpy: 29
+  277 			StopLsof: 41
+  278 		cleanup: void (), <./lsof/tests/LTnlink.c 333>
+  279 			close: <>
+  280 			unlink: <>
+  281 		FindFile: char * (), <./lsof/tests/LTnlink.c 349>
+  282 			PrtMsgX: 38
+  283 			cleanup: 278
+  284 			strcmp: <>
+  285 			ExecLsof: 84
+  286 			RdFrLsof: 100
+  287 			PrtMsg: 6
+  288 			atoi: <>
+  289 			strcasecmp: <>
+  290 			ConvLsofDev: 191
+  291 			snprintf: <>
+  292 			MkStrCpy: 29
+  293 			StopLsof: 41
+  294 		sleep: <>
+  295 		cleanup: void (), <./lsof/tests/LTbasic.c 147>
+  296 		tstlsof: char * (), <./lsof/tests/LTbasic.c 157>
+  297 			stat: <>
+  298 			snprintf: <>
+  299 			strerror: <>
+  300 			MkStrCpy: 29
+  301 			PrtMsg: 6
+  302 			ConvStatDev: 182
+  303 			ExecLsof: 84
+  304 			RdFrLsof: 100
+  305 			atoi: <>
+  306 			isdigit: <>
+  307 			strcasecmp: <>
+  308 			ConvLsofDev: 191
+  309 			strcmp: <>
+  310 			StopLsof: 41
+  311 		strcmp: <>
+  312 		cleanup: void (), <./lsof/tests/LTszoff.c 278>
+  313 			close: <>
+  314 			unlink: <>
+  315 		ck_Linux_offset_support: int (), <./lsof/tests/LTszoff.c 236>
+  316 			IsLsofExec: 53
+  317 			snprintf: <>
+  318 			getpid: <>
+  319 			ExecLsof: 84
+  320 			fgets: <>
+  321 			strstr: <>
+  322 			StopLsof: 41
+  323 		testlsof: char * (), <./lsof/tests/LTszoff.c 296>
+  324 			snprintf: <>
+  325 			PrtMsgX: 38
+  326 			cleanup: 312
+  327 			stat: <>
+  328 			strerror: <>
+  329 			ConvStatDev: 182
+  330 			ExecLsof: 84
+  331 			RdFrLsof: 100
+  332 			PrtMsg: 6
+  333 			atoi: <>
+  334 			strcasecmp: <>
+  335 			ConvLsofDev: 191
+  336 			strcmp: <>
+  337 			MkStrCpy: 29
+  338 			StopLsof: 41
+  339 		is_selinux_enabled: <>
+  340 		GET_MAX_FD: <>
+  341 		Exit: void (), <./lsof/misc.c 745>
+  342 			childx: void (), <./lsof/misc.c 139>
+  343 				closePipes: void (), <./lsof/misc.c 204>
+  344 					close: <>
+  345 				setjmp: <>
+  346 				alarm: <>
+  347 				signal: <>
+  348 				fprintf: <>
+  349 				kill: <>
+  350 				handleint: int void (), <./lsof/misc.c 803>
+  351 					longjmp: <>
+  352 				wait: <>
+  353 			fprintf: <>
+  354 			exit: <>
+  355 		umask: <>
+  356 		setlocale: <>
+  357 		getgid: <>
+  358 		getegid: <>
+  359 		geteuid: <>
+  360 		getuid: <>
+  361 		malloc: <>
+  362 		snpf: 8
+  363 		GetOpt: int (), <./lsof/main.c 1630>
+  364 			strcmp: <>
+  365 			fprintf: <>
+  366 			strchr: <>
+  367 		isdigit: <>
+  368 		atoi: <>
+  369 		enter_cmd_rx: int (), <./lsof/arg.c 580>
+  370 			fprintf: <>
+  371 			safestrprt: void (), <./lsof/misc.c 1404>
+  372 			malloc: <>
+  373 			Exit: 341
+  374 			strncpy: <>
+  375 			realloc: <>
+  376 			regcomp: <>
+  377 			regerror:  (), <./lsof/lib/regex.c 6255>
+  378 			free: <>
+  379 		enter_str_lst: int (), <./lsof/arg.c 2170>
+  380 			fprintf: <>
+  381 			mkstrcpy: char * (), <./lsof/misc.c 902>
+  382 			safestrprt: void (), <./lsof/misc.c 1404>
+  383 			malloc: <>
+  384 			free: <>
+  385 		safestrprt: void (), <./lsof/misc.c 1404>
+  386 		enter_efsys: int (), <./lsof/arg.c 738>
+  387 			fprintf: <>
+  388 			mkstrcpy: char * (), <./lsof/misc.c 902>
+  389 			safestrprt: void (), <./lsof/misc.c 1404>
+  390 			Exit: 341
+  391 			Readlink: char * (), <./lsof/misc.c 1027>
+  392 			strlen: 7
+  393 			strcmp: <>
+  394 			malloc: <>
+  395 		enter_dir: int (), <./lsof/arg.c 974>
+  396 			fprintf: <>
+  397 			Readlink: char * (), <./lsof/misc.c 1027>
+  398 			statsafely: int (), <./lsof/misc.c 1538>
+  399 			safestrprt: void (), <./lsof/misc.c 1404>
+  400 			strerror: <>
+  401 			free: <>
+  402 			HASSPECDEVD: void (), <./lsof/dialects/darwin/libproc/ddev.c 94>
+  403 				readdev: void (), <./lsof/dialects/darwin/libproc/ddev.c 186>
+  404 					read_dcache: int (), <./lsof/lib/dvch.c 775>
+  405 						open_dcache: int (), <./lsof/lib/dvch.c 641>
+  406 							dcpath: int (), <./lsof/lib/dvch.c 289>
+  407 								free: <>
+  408 								getenv: <>
+  409 								strlen: 7
+  410 								mkstrcpy: char * (), <./lsof/misc.c 902>
+  411 								fprintf: <>
+  412 								safestrprt: void (), <./lsof/misc.c 1404>
+  413 								getpwuid: <>
+  414 								strcpy: <>
+  415 								gethostname: <>
+  416 								strerror: <>
+  417 								strchr: <>
+  418 								snpf: 8
+  419 								Exit: 341
+  420 							is_readable: int (), <./lsof/misc.c 988>
+  421 							fprintf: <>
+  422 							strerror: <>
+  423 							open: <>
+  424 							stat: <>
+  425 							close: <>
+  426 							snpf: 8
+  427 							unlink: <>
+  428 							chown: <>
+  429 							getgid: <>
+  430 							fchown: <>
+  431 							Exit: 341
+  432 						stat: <>
+  433 						fprintf: <>
+  434 						strerror: <>
+  435 						fdopen: <>
+  436 						close: <>
+  437 						fgets: <>
+  438 						fclose: <>
+  439 						clr_devtab: void (), <./lsof/lib/dvch.c 172>
+  440 							free: <>
+  441 						DCACHE_CLR: <>
+  442 						crcbld: void (), <./lsof/lib/dvch.c 264>
+  443 						crc: void (), <./lsof/lib/dvch.c 239>
+  444 						strlen: 7
+  445 						snpf: 8
+  446 						strncmp: <>
+  447 						safestrprt: void (), <./lsof/misc.c 1404>
+  448 						strcmp: <>
+  449 						atoi: <>
+  450 						alloc_dcache: void (), <./lsof/lib/dvch.c 149>
+  451 							calloc: <>
+  452 							fprintf: <>
+  453 							Exit: 341
+  454 							malloc: <>
+  455 						x2dev: X2DEV_T (), <./lsof/tests/LTlib.c 1060>
+  456 							strncasecmp: <>
+  457 							strlen: 7
+  458 							snprintf: <>
+  459 							MkStrCpy: 29
+  460 							isdigit: <>
+  461 							tolower: <>
+  462 						mkstrcpy: char * (), <./lsof/misc.c 902>
+  463 						Exit: 341
+  464 						alloc_bdcache: void (), <./lsof/lib/dvch.c 125>
+  465 							calloc: <>
+  466 							fprintf: <>
+  467 							Exit: 341
+  468 							malloc: <>
+  469 						DCACHE_CLONE: <>
+  470 						DCACHE_PSEUDO: <>
+  471 						expdev: <>
+  472 					stkdir: void (), <./lsof/misc.c 1559>
+  473 					OpenDir: <>
+  474 					fprintf: <>
+  475 					safestrprt: void (), <./lsof/misc.c 1404>
+  476 					free: <>
+  477 					mkstrcat: char * (), <./lsof/misc.c 934>
+  478 					Exit: 341
+  479 					ReadDir: <>
+  480 					strlen: 7
+  481 					safestrprtn: void (), <./lsof/misc.c 1482>
+  482 					RDEV_STATFN: <>
+  483 					strerror: <>
+  484 					malloc: <>
+  485 					realloc: <>
+  486 					RDEV_EXPDEV: <>
+  487 					mkstrcpy: char * (), <./lsof/misc.c 902>
+  488 					GET_MAJ_DEV: <>
+  489 					CloseDir: <>
+  490 					qsort: <>
+  491 					compdev: int (), <./lsof/misc.c 222>
+  492 						strcmp: <>
+  493 					rmdupdev: int (), <./lsof/lib/rdev.c 440>
+  494 						free: <>
+  495 						realloc: <>
+  496 						fprintf: <>
+  497 						Exit: 341
+  498 					write_dcache: void (), <./lsof/lib/dvch.c 1271>
+  499 						open_dcache: 405
+  500 						snpf: 8
+  501 						crcbld: void (), <./lsof/lib/dvch.c 264>
+  502 						wr2DCfd: int (), <./lsof/lib/dvch.c 1386>
+  503 						DCACHE_CLONE: <>
+  504 						DCACHE_PSEUDO: <>
+  505 						close: <>
+  506 						fprintf: <>
+  507 						strerror: <>
+  508 						unlink: <>
+  509 					STATFN: <>
+  510 					strcmp: <>
+  511 					saveADev: void (), <./lsof/dialects/darwin/kmem/ddev.c 437>
+  512 						realloc: <>
+  513 						malloc: <>
+  514 						fprintf: <>
+  515 						Exit: 341
+  516 					rmdupdev: int (), <./lsof/dialects/darwin/kmem/ddev.c 401>
+  517 						realloc: <>
+  518 						fprintf: <>
+  519 						Exit: 341
+  520 					saveADev: void (), <./lsof/dialects/darwin/libproc/ddev.c 507>
+  521 						realloc: <>
+  522 						malloc: <>
+  523 						fprintf: <>
+  524 						Exit: 341
+  525 					rmdupdev: int (), <./lsof/dialects/darwin/libproc/ddev.c 471>
+  526 						realloc: <>
+  527 						fprintf: <>
+  528 						Exit: 341
+  529 			stkdir: void (), <./lsof/misc.c 1559>
+  530 			mkstrcpy: char * (), <./lsof/misc.c 902>
+  531 			ck_file_arg: int (), <./lsof/arg.c 121>
+  532 				Readlink: char * (), <./lsof/misc.c 1027>
+  533 				strlen: 7
+  534 				malloc: <>
+  535 				fprintf: <>
+  536 				Exit: 341
+  537 				strncpy: <>
+  538 				readmnt: struct mounts (), <./lsof/dialects/darwin/libproc/dmnt.c 59>
+  539 				strcmp: <>
+  540 				realloc: <>
+  541 				safestrprt: void (), <./lsof/misc.c 1404>
+  542 				statsafely: int (), <./lsof/misc.c 1538>
+  543 				strerror: <>
+  544 				free: <>
+  545 				HASSPECDEVD: 402
+  546 				expdev: <>
+  547 				getchan: <>
+  548 				mkstrcpy: char * (), <./lsof/misc.c 902>
+  549 				strncmp: <>
+  550 				isdigit: <>
+  551 				atoi: <>
+  552 			OpenDir: <>
+  553 			strlen: 7
+  554 			malloc: <>
+  555 			realloc: <>
+  556 			Exit: 341
+  557 			snpf: 8
+  558 			ReadDir: <>
+  559 			putc: <>
+  560 			safestrprtn: void (), <./lsof/misc.c 1482>
+  561 			strncpy: <>
+  562 			lstatsafely: int (), <./lsof/misc.c 1006>
+  563 			CloseDir: <>
+  564 		enter_fd: int (), <./lsof/arg.c 799>
+  565 			strlen: 7
+  566 			fprintf: <>
+  567 			mkstrcpy: char * (), <./lsof/misc.c 902>
+  568 			safestrprt: void (), <./lsof/misc.c 1404>
+  569 			Exit: 341
+  570 			ckfd_range: int (), <./lsof/arg.c 72>
+  571 				fprintf: <>
+  572 				safestrprt: void (), <./lsof/misc.c 1404>
+  573 				isdigit: <>
+  574 			enter_fd_lst: int (), <./lsof/arg.c 866>
+  575 				snpf: 8
+  576 				fprintf: <>
+  577 				malloc: <>
+  578 				Exit: 341
+  579 				isdigit: <>
+  580 				mkstrcpy: char * (), <./lsof/misc.c 902>
+  581 				strcmp: <>
+  582 				free: <>
+  583 			free: <>
+  584 		ctrl_dcache: int (), <./lsof/arg.c 487>
+  585 			fprintf: <>
+  586 			safestrprt: void (), <./lsof/misc.c 1404>
+  587 			strlen: 7
+  588 			mkstrcpy: char * (), <./lsof/misc.c 902>
+  589 			Exit: 341
+  590 		enter_id: int (), <./lsof/arg.c 1257>
+  591 			fprintf: <>
+  592 			safestrprt: void (), <./lsof/misc.c 1404>
+  593 			Exit: 341
+  594 			isdigit: <>
+  595 			isascii: <>
+  596 			malloc: <>
+  597 			realloc: <>
+  598 		enter_network_address: int (), <./lsof/arg.c 1397>
+  599 			fprintf: <>
+  600 			zeromem: <>
+  601 			safestrprt: void (), <./lsof/misc.c 1404>
+  602 			mkstrcat: char * (), <./lsof/misc.c 934>
+  603 			free: <>
+  604 			strcasecmp: <>
+  605 			isIPv4addr: char * (), <./lsof/arg.c 2368>
+  606 			strrchr: <>
+  607 			inet_pton: <>
+  608 			IN6_IS_ADDR_V4MAPPED: <>
+  609 			lkup_hostnm: struct hostent * (), <./lsof/arg.c 2444>
+  610 			realloc: <>
+  611 			malloc: <>
+  612 			strncpy: <>
+  613 			getservbyname: <>
+  614 			ntohs: <>
+  615 			enter_nwad: int (), <./lsof/arg.c 1828>
+  616 				strlen: 7
+  617 				mkstrcpy: char * (), <./lsof/misc.c 902>
+  618 				fprintf: <>
+  619 				safestrprt: void (), <./lsof/misc.c 1404>
+  620 				Exit: 341
+  621 				malloc: <>
+  622 		util_strftime: int (), <./lsof/util.c 56>
+  623 			time: <>
+  624 			localtime: <>
+  625 			strftime: <>
+  626 		enter_state_spec: int (), <./lsof/arg.c 1949>
+  627 			strncasecmp: <>
+  628 			fprintf: <>
+  629 			build_IPstates: void (), <./lsof/lib/ptti.c 54>
+  630 			calloc: <>
+  631 			Exit: 341
+  632 			free: <>
+  633 			mkstrcpy: char * (), <./lsof/misc.c 902>
+  634 			strcasecmp: <>
+  635 		enter_uid: int (), <./lsof/arg.c 2225>
+  636 			fprintf: <>
+  637 			safestrprtn: void (), <./lsof/misc.c 1482>
+  638 			isdigit: <>
+  639 			isascii: <>
+  640 			getpwnam: <>
+  641 			safestrprt: void (), <./lsof/misc.c 1404>
+  642 			malloc: <>
+  643 			realloc: <>
+  644 			Exit: 341
+  645 			mkstrcpy: char * (), <./lsof/misc.c 902>
+  646 		enter_zone_arg: <>
+  647 		enter_cntx_arg: <>
+  648 		strchr: <>
+  649 		readmnt: struct mounts (), <./lsof/dialects/darwin/libproc/dmnt.c 59>
+  650 		usage: void (), <./lsof/usage.c 333>
+  651 			fprintf: <>
+  652 			Exit: 341
+  653 			print_in_col: int (), <./lsof/usage.c 80>
+  654 				fprintf: <>
+  655 			snpf: 8
+  656 			putc: <>
+  657 			get_nlist_path: <>
+  658 			report_SECURITY: void (), <./lsof/usage.c 279>
+  659 				fprintf: <>
+  660 			report_WARNDEVACCESS: void (), <./lsof/usage.c 308>
+  661 				fprintf: <>
+  662 			report_HASKERNIDCK: void (), <./lsof/usage.c 255>
+  663 				fprintf: <>
+  664 			report_HASDCACHE: void (), <./lsof/usage.c 107>
+  665 				fprintf: <>
+  666 				dcpath: 406
+  667 				getenv: <>
+  668 			isnullstr: char * (), <./lsof/usage.c 61>
+  669 		realloc: <>
+  670 		ck_file_arg: 531
+  671 		initialize: void (), <./lsof/dialects/darwin/libproc/dproc.c 456>
+  672 			get_kernel_access: void (), <./lsof/dialects/darwin/kmem/dproc.c 411>
+  673 				ckkv: void (), <./lsof/lib/ckkv.c 52>
+  674 					uname: <>
+  675 					fprintf: <>
+  676 					strerror: <>
+  677 					Exit: 341
+  678 					strcmp: <>
+  679 				dropgid: void (), <./lsof/misc.c 456>
+  680 					setgid: <>
+  681 					fprintf: <>
+  682 					strerror: <>
+  683 					Exit: 341
+  684 				is_readable: int (), <./lsof/misc.c 988>
+  685 				Exit: 341
+  686 				open: <>
+  687 				fprintf: <>
+  688 				strerror: <>
+  689 				build_Nl: void (), <./lsof/misc.c 104>
+  690 					fprintf: <>
+  691 					Exit: 341
+  692 					calloc: <>
+  693 				nlist: <>
+  694 		hashSfile: * / void (), <./lsof/lib/isfn.c 137>
+  695 		dropgid: 679
+  696 		readdev: 403
+  697 		sv_fmt_str: char * (), <./lsof/main.c 1751>
+  698 			strlen: 7
+  699 			malloc: <>
+  700 			fprintf: <>
+  701 			Exit: 341
+  702 			snpf: 8
+  703 		gather_proc_info: void (), <./lsof/dialects/darwin/libproc/dproc.c 172>
+  704 			read_procs: int (), <./lsof/dialects/darwin/kmem/dproc.c 612>
+  705 				get_Nl_value: int (), <./lsof/misc.c 766>
+  706 					strcmp: <>
+  707 				fprintf: <>
+  708 				Exit: 341
+  709 				kread: if (), <./lsof/misc.c 1243>
+  710 					lseek: <>
+  711 					read: <>
+  712 				print_kptr: char * (), <./lsof/node.c 47>
+  713 					snpf: 8
+  714 				malloc: <>
+  715 				realloc: <>
+  716 				calloc: <>
+  717 				free: <>
+  718 				PHASH: <>
+  719 			fprintf: <>
+  720 			Exit: 341
+  721 			kread: 709
+  722 			get_parent_pid: pid_t (), <./lsof/dialects/darwin/kmem/dproc.c 473>
+  723 				PHASH: <>
+  724 			strcmp: <>
+  725 			getcmdnm: char * (), <./lsof/dialects/darwin/kmem/dproc.c 331>
+  726 				sysctl: <>
+  727 				fprintf: <>
+  728 				Exit: 341
+  729 				malloc: <>
+  730 			is_proc_excl: <>
+  731 			is_cmd_excl: int (), <./lsof/proc.c 575>
+  732 			alloc_lproc: void (), <./lsof/proc.c 271>
+  733 				malloc: <>
+  734 				fprintf: <>
+  735 				Exit: 341
+  736 				realloc: <>
+  737 				mkstrcpy: char * (), <./lsof/misc.c 902>
+  738 				safestrprt: void (), <./lsof/misc.c 1404>
+  739 			alloc_lfile: void (), <./lsof/proc.c 125>
+  740 				free: <>
+  741 				CLRLFILEADD: <>
+  742 				malloc: <>
+  743 				fprintf: <>
+  744 				Exit: 341
+  745 				strncpy: <>
+  746 				snpf: 8
+  747 				ck_fd_status: int (), <./lsof/proc.c 353>
+  748 					strcmp: <>
+  749 			process_node: void (), <./lsof/dialects/darwin/kmem/dnode.c 329>
+  750 				enter_nm: void (), <./lsof/misc.c 721>
+  751 					mkstrcpy: char * (), <./lsof/misc.c 902>
+  752 					fprintf: <>
+  753 					safestrprt: void (), <./lsof/misc.c 1404>
+  754 					Exit: 341
+  755 					free: <>
+  756 				readvnode: int (), <./lsof/node.c 247>
+  757 					kread: 709
+  758 					snpf: 8
+  759 					print_kptr: 712
+  760 				readvfs: <>
+  761 				strcasecmp: <>
+  762 				kread: 709
+  763 				snpf: 8
+  764 				print_kptr: 712
+  765 				read_iso_node: int (), <./lsof/dialects/darwin/kmem/dnode1.c 84>
+  766 				lkup_dev_tty: int (), <./lsof/dialects/darwin/kmem/dnode.c 303>
+  767 					readdev: 403
+  768 					strcmp: <>
+  769 				getvpath: char * (), <./lsof/dialects/darwin/kmem/dnode.c 63>
+  770 					malloc: <>
+  771 					fprintf: <>
+  772 					Exit: 341
+  773 					kread: 709
+  774 					readvnode: 756
+  775 					readvname: int (), <./lsof/dialects/darwin/kmem/dnode.c 1015>
+  776 						kread: 709
+  777 						strlen: 7
+  778 					memmove: <>
+  779 					getcwd: <>
+  780 					strlen: 7
+  781 					strncmp: <>
+  782 				statsafely: int (), <./lsof/misc.c 1538>
+  783 				free: <>
+  784 				strerror: <>
+  785 				strcmp: <>
+  786 				find_bl_ino: void (), <./lsof/lib/fino.c 65>
+  787 					readdev: 403
+  788 					vfy_dev: int (), <./lsof/lib/rdev.c 505>
+  789 						RDEV_STATFN: <>
+  790 						RDEV_EXPDEV: <>
+  791 						rereaddev: void (), <./lsof/lib/rdev.c 421>
+  792 							clr_devtab: 439
+  793 							DCACHE_CLR: <>
+  794 							readdev: 403
+  795 				find_ch_ino: void (), <./lsof/lib/fino.c 111>
+  796 					readdev: 403
+  797 					vfy_dev: 788
+  798 				is_file_named: int (), <./lsof/lib/isfn.c 278>
+  799 					hashbyname: int (), <./lsof/misc.c 815>
+  800 					strcmp: <>
+  801 					SFHASHDEVINO: <>
+  802 					GET_MAJ_DEV: <>
+  803 					GET_MIN_DEV: <>
+  804 					SFHASHRDEVI: <>
+  805 					snpf: 8
+  806 					endnm: char * (), <./lsof/print.c 106>
+  807 					strcpy: <>
+  808 			link_lfile: void (), <./lsof/proc.c 881>
+  809 			process_map: void (), <./lsof/dialects/darwin/kmem/dproc.c 531>
+  810 				task_for_pid: <>
+  811 				mach_task_self: <>
+  812 				vm_region: <>
+  813 				kread: 709
+  814 				enter_vn_text: void (), <./lsof/dialects/darwin/kmem/dproc.c 104>
+  815 					alloc_lfile: 739
+  816 					process_node: 749
+  817 					link_lfile: void (), <./lsof/proc.c 881>
+  818 					malloc: <>
+  819 					realloc: <>
+  820 					fprintf: <>
+  821 					Exit: 341
+  822 			malloc: <>
+  823 			realloc: <>
+  824 			zeromem: <>
+  825 			process_file: void (), <./lsof/dialects/darwin/kmem/dfile.c 251>
+  826 				kread: 709
+  827 				snpf: 8
+  828 				print_kptr: 712
+  829 				enter_nm: 750
+  830 				HASPIPEFN: <>
+  831 				process_node: 749
+  832 				process_socket: void (), <./lsof/dialects/darwin/libproc/dsock.c 395>
+  833 					snpf: 8
+  834 					enter_nm: 750
+  835 					kread: 709
+  836 					print_kptr: 712
+  837 					printiproto: void (), <./lsof/print.c 1348>
+  838 						snpf: 8
+  839 					enter_dev_ch: void (), <./lsof/misc.c 475>
+  840 						mkstrcpy: char * (), <./lsof/misc.c 902>
+  841 						fprintf: <>
+  842 						safestrprt: void (), <./lsof/misc.c 1404>
+  843 						Exit: 341
+  844 						free: <>
+  845 					ntohs: <>
+  846 					IN6_IS_ADDR_UNSPECIFIED: <>
+  847 					IN6_IS_ADDR_V4MAPPED: <>
+  848 					IPv6_2_IPv4: <>
+  849 					ent_inaddr: <>
+  850 					socket: <>
+  851 					bzero: <>
+  852 					offsetof: <>
+  853 					is_file_named: 798
+  854 					printunkaf: void (), <./lsof/print.c 2433>
+  855 						snpf: 8
+  856 					proc_pidfdinfo: <>
+  857 					err2nm: void (), <./lsof/dialects/darwin/libproc/dfile.c 221>
+  858 						strerror: <>
+  859 						snpf: 8
+  860 						enter_nm: 750
+  861 					fprintf: <>
+  862 					Exit: 341
+  863 					process_socket_common: void (), <./lsof/dialects/darwin/libproc/dsock.c 60>
+  864 						snpf: 8
+  865 						enter_file_info: void (), <./lsof/dialects/darwin/libproc/dfile.c 51>
+  866 						printiproto: 837
+  867 						enter_dev_ch: 839
+  868 						print_kptr: 712
+  869 						ntohs: <>
+  870 						IN6_IS_ADDR_UNSPECIFIED: <>
+  871 						IPv6_2_IPv4: <>
+  872 						ent_inaddr: <>
+  873 						offsetof: <>
+  874 						is_file_named: 798
+  875 						printunkaf: 854
+  876 						enter_nm: 750
+  877 				process_kqueue: void (), <./lsof/dialects/darwin/libproc/dfile.c 366>
+  878 					snpf: 8
+  879 					enter_dev_ch: 839
+  880 					print_kptr: 712
+  881 					kread: 709
+  882 					enter_nm: 750
+  883 					proc_pidfdinfo: <>
+  884 					err2nm: 857
+  885 					fprintf: <>
+  886 					Exit: 341
+  887 					enter_file_info: 865
+  888 				process_psxsem: void (), <./lsof/dialects/darwin/kmem/dfile.c 174>
+  889 					snpf: 8
+  890 					enter_dev_ch: 839
+  891 					print_kptr: 712
+  892 					kread: 709
+  893 					enter_nm: 750
+  894 				process_psxshm: void (), <./lsof/dialects/darwin/kmem/dfile.c 203>
+  895 					snpf: 8
+  896 					enter_dev_ch: 839
+  897 					print_kptr: 712
+  898 					kread: 709
+  899 					enter_nm: 750
+  900 				HASPRIVFILETYPE: <>
+  901 			examine_lproc: int (), <./lsof/proc.c 487>
+  902 			proc_listpids: <>
+  903 			strerror: <>
+  904 			proc_pidinfo: <>
+  905 			snpf: 8
+  906 			enter_nm: 750
+  907 			enter_vnode_info: void (), <./lsof/dialects/darwin/libproc/dfile.c 93>
+  908 				snpf: 8
+  909 				mkstrcpy: char * (), <./lsof/misc.c 902>
+  910 				readmnt: struct mounts (), <./lsof/dialects/darwin/libproc/dmnt.c 59>
+  911 				is_file_named: 798
+  912 				enter_nm: 750
+  913 			process_threads: *fd name * / void (), <./lsof/dialects/darwin/libproc/dproc.c 750>
+  914 			process_text: void (), <./lsof/dialects/darwin/libproc/dproc.c 694>
+  915 				proc_pidinfo: <>
+  916 				alloc_lfile: 739
+  917 				snpf: 8
+  918 				strerror: <>
+  919 				enter_nm: 750
+  920 				link_lfile: void (), <./lsof/proc.c 881>
+  921 				fprintf: <>
+  922 				Exit: 341
+  923 				enter_vn_text: void (), <./lsof/dialects/darwin/libproc/dproc.c 114>
+  924 					alloc_lfile: 739
+  925 					enter_vnode_info: 907
+  926 					link_lfile: void (), <./lsof/proc.c 881>
+  927 					malloc: <>
+  928 					realloc: <>
+  929 					fprintf: <>
+  930 					Exit: 341
+  931 			process_fileports: void (), <./lsof/dialects/darwin/libproc/dproc.c 580>
+  932 				proc_pidinfo: <>
+  933 				alloc_lfile: 739
+  934 				snpf: 8
+  935 				strerror: <>
+  936 				enter_nm: 750
+  937 				link_lfile: void (), <./lsof/proc.c 881>
+  938 				fprintf: <>
+  939 				Exit: 341
+  940 				malloc: <>
+  941 				realloc: <>
+  942 				process_fileport_pipe: void (), <./lsof/dialects/darwin/libproc/dfile.c 481>
+  943 					proc_pidfileportinfo: <>
+  944 					err2nm: 857
+  945 					fprintf: <>
+  946 					Exit: 341
+  947 					process_pipe_common: void (), <./lsof/dialects/darwin/libproc/dfile.c 409>
+  948 						snpf: 8
+  949 						print_kptr: 712
+  950 						enter_dev_ch: 839
+  951 						enter_nm: 750
+  952 						endnm: 806
+  953 				process_fileport_socket: void (), <./lsof/dialects/darwin/libproc/dsock.c 424>
+  954 					proc_pidfileportinfo: <>
+  955 					err2nm: 857
+  956 					fprintf: <>
+  957 					Exit: 341
+  958 					process_socket_common: 863
+  959 				process_fileport_pshm: void (), <./lsof/dialects/darwin/libproc/dfile.c 626>
+  960 					proc_pidfileportinfo: <>
+  961 					err2nm: 857
+  962 					fprintf: <>
+  963 					Exit: 341
+  964 					process_pshm_common: void (), <./lsof/dialects/darwin/libproc/dfile.c 563>
+  965 						snpf: 8
+  966 						enter_file_info: 865
+  967 						enter_nm: 750
+  968 						print_kptr: 712
+  969 				process_fileport_vnode: void (), <./lsof/dialects/darwin/libproc/dfile.c 708>
+  970 					proc_pidfileportinfo: <>
+  971 					enter_nm: 750
+  972 					err2nm: 857
+  973 					fprintf: <>
+  974 					Exit: 341
+  975 					process_vnode_common: void (), <./lsof/dialects/darwin/libproc/dfile.c 659>
+  976 						enter_file_info: 865
+  977 						enter_vnode_info: 907
+  978 			process_fds: void (), <./lsof/dialects/darwin/libproc/dproc.c 466>
+  979 				malloc: <>
+  980 				realloc: <>
+  981 				fprintf: <>
+  982 				Exit: 341
+  983 				proc_pidinfo: <>
+  984 				alloc_lfile: 739
+  985 				snpf: 8
+  986 				strerror: <>
+  987 				enter_nm: 750
+  988 				link_lfile: void (), <./lsof/proc.c 881>
+  989 				process_atalk: void (), <./lsof/dialects/darwin/libproc/dfile.c 339>
+  990 					snpf: 8
+  991 				process_fsevents: void (), <./lsof/dialects/darwin/libproc/dfile.c 353>
+  992 					snpf: 8
+  993 				process_kqueue: 877
+  994 				process_pipe: void (), <./lsof/dialects/darwin/libproc/dfile.c 452>
+  995 					snpf: 8
+  996 					enter_dev_ch: 839
+  997 					print_kptr: 712
+  998 					proc_pidfdinfo: <>
+  999 					err2nm: 857
+ 1000 					fprintf: <>
+ 1001 					Exit: 341
+ 1002 					process_pipe_common: 947
+ 1003 				process_psem: void (), <./lsof/dialects/darwin/libproc/dfile.c 514>
+ 1004 					snpf: 8
+ 1005 					proc_pidfdinfo: <>
+ 1006 					err2nm: 857
+ 1007 					fprintf: <>
+ 1008 					Exit: 341
+ 1009 					enter_file_info: 865
+ 1010 					enter_nm: 750
+ 1011 				process_socket: 832
+ 1012 				process_pshm: void (), <./lsof/dialects/darwin/libproc/dfile.c 597>
+ 1013 					proc_pidfdinfo: <>
+ 1014 					err2nm: 857
+ 1015 					fprintf: <>
+ 1016 					Exit: 341
+ 1017 					process_pshm_common: 964
+ 1018 				process_vnode: void (), <./lsof/dialects/darwin/libproc/dfile.c 671>
+ 1019 					proc_pidfdinfo: <>
+ 1020 					enter_nm: 750
+ 1021 					err2nm: 857
+ 1022 					fprintf: <>
+ 1023 					Exit: 341
+ 1024 					process_vnode_common: 975
+ 1025 		qsort: <>
+ 1026 		comppid: int (), <./lsof/proc.c 403>
+ 1027 		print_init: void (), <./lsof/print.c 1274>
+ 1028 			strlen: 7
+ 1029 		print_proc: int (), <./lsof/proc.c 980>
+ 1030 		free_lproc: void (), <./lsof/proc.c 536>
+ 1031 			free: <>
+ 1032 			CLRLFILEADD: <>
+ 1033 		putchar: <>
+ 1034 		puts: <>
+ 1035 		childx: 342

@@ -1,0 +1,2833 @@
+    1 	main: int (), <./kcgen_main.c 75>
+    2 		usage: void (), <./kcgen_main.c 1313>
+    3 			fprintf: <>
+    4 			exit: <>
+    5 		OSKextSetLogFilter: <>
+    6 		stat: if (), <./update_boot.c 3069>
+    7 		err: <>
+    8 		CFURLCreateFromFileSystemRepresentation: <>
+    9 		strlen: <>
+   10 		strcasecmp: <>
+   11 		update: int (), <./brtest.c 49>
+   12 			BRUpdateBootFiles: OSStatus (), <./update_boot.c 1228>
+   13 				checkUpdateCachesAndBoots: int (), <./update_boot.c 1049>
+   14 					initContext: int (), <./update_boot.c 803>
+   15 						bzero: <>
+   16 						CFURLGetFileSystemRepresentation: <>
+   17 						OSKextLogStringError: <>
+   18 						takeVolumeForPath: int (), <./update_boot.c 3317>
+   19 							geteuid: <>
+   20 							OSKextLog: <>
+   21 							bootstrap_look_up: <>
+   22 							upstat: int (), <./update_boot.c 3273>
+   23 								strlcpy: <>
+   24 								stat: if (), <./update_boot.c 3069>
+   25 								dirname: <>
+   26 								statfs: <>
+   27 								OSKextLog: <>
+   28 							copyVolumeInfo: int (), <./bootcaches.c 2873>
+   29 								getattrlist: <>
+   30 								statfs: <>
+   31 								strncmp: <>
+   32 								strlen: <>
+   33 								memcpy: <>
+   34 								IOBSDNameMatching: <>
+   35 								IOServiceGetMatchingService: <>
+   36 								IORegistryEntryCreateCFProperty: <>
+   37 								CFSTR: <>
+   38 								CFGetTypeID: <>
+   39 								CFStringGetTypeID: <>
+   40 								CFRetain: <>
+   41 								strlcpy: <>
+   42 								OSKextLog: <>
+   43 								strerror: <>
+   44 								CFRelease: <>
+   45 								IOObjectRelease: <>
+   46 							mach_task_self: <>
+   47 							mach_port_allocate: <>
+   48 							kextmanager_lock_volume: <>
+   49 							sleep: <>
+   50 							stat: if (), <./update_boot.c 3069>
+   51 							mach_port_mod_refs: <>
+   52 							safe_mach_error_string: const char * (), <./kext_tools_util.c 1419>
+   53 								mach_error_string: <>
+   54 							strerror: <>
+   55 						readBootCaches: struct bootCaches (), <./bootcaches.c 896>
+   56 						DASessionCreate: <>
+   57 						DASessionScheduleWithRunLoop: <>
+   58 						CFRunLoopGetCurrent: <>
+   59 						OSKextLog: <>
+   60 						CFArrayCreate: <>
+   61 					BRCopyActiveBootPartitions: CFArrayRef (), <./bootcaches.c 2684>
+   62 						CFURLGetFileSystemRepresentation: <>
+   63 						statfs: <>
+   64 						strlen: <>
+   65 						BLCreateBooterInformationDictionary: <>
+   66 						CFDictionaryGetValue: <>
+   67 						CFArrayGetCount: <>
+   68 						CFRetain: <>
+   69 						CFRelease: <>
+   70 					OSKextLog: <>
+   71 					CFRelease: <>
+   72 					checkRebuildAllCaches: int (), <./update_boot.c 642>
+   73 						fstat: <>
+   74 						OSKextLog: <>
+   75 						setenv: <>
+   76 						check_kext_boot_cache_file: Boolean (), <./bootcaches.c 1758>
+   77 							pathcpy: <>
+   78 							removeTrailingSlashes: void (), <./bootcaches.c 2737>
+   79 								strlen: <>
+   80 							pathcat: <>
+   81 							stat: if (), <./update_boot.c 3069>
+   82 							OSKextLogCFString: <>
+   83 							CFSTR: <>
+   84 							OSKextLog: <>
+   85 							strerror: <>
+   86 							strlen: <>
+   87 						rebuild_kext_boot_cache_file: int (), <./bootcaches.c 1482>
+   88 							malloc: <>
+   89 							CFDictionaryGetValue: <>
+   90 							CFGetTypeID: <>
+   91 							CFDictionaryGetTypeID: <>
+   92 							CFArrayGetCount: <>
+   93 							calloc: <>
+   94 							CFArrayGetValueAtIndex: <>
+   95 							CFStringGetTypeID: <>
+   96 							CFStringGetMaximumSizeOfFileSystemRepresentation: <>
+   97 							CFStringGetFileSystemRepresentation: <>
+   98 							pathcpy: <>
+   99 							removeTrailingSlashes: 78
+  100 							pathcat: <>
+  101 							stat: if (), <./update_boot.c 3069>
+  102 							strcmp: <>
+  103 							strlen: <>
+  104 							rindex: <>
+  105 							sdeepmkdir: int (), <./safecalls.c 472>
+  106 								strlen: <>
+  107 								stat: if (), <./update_boot.c 3069>
+  108 								PATHCPY: <>
+  109 								dirname: <>
+  110 								sdeepmkdir: 105
+  111 								smkdir: int (), <./safecalls.c 283>
+  112 									schdirparent: int (), <./safecalls.c 176>
+  113 										PATHCPY: <>
+  114 										dirname: <>
+  115 										open: <>
+  116 										spolicy: int (), <./safecalls.c 126>
+  117 											fstat: <>
+  118 											findmnt: int (), <./safecalls.c 94>
+  119 												getfsstat: <>
+  120 												statfs: <>
+  121 												malloc: <>
+  122 												strlcpy: <>
+  123 												free: <>
+  124 											fcntl: <>
+  125 											OSKextLog: <>
+  126 											strerror: <>
+  127 										OSKextLog: <>
+  128 										fchdir: <>
+  129 										basename: <>
+  130 										close: <>
+  131 									mkdir: <>
+  132 									RESTOREDIR: <>
+  133 							OSKextLog: <>
+  134 							fork_program: int (), <./fork_program.c 25>
+  135 								getiopolicy_np: <>
+  136 								OSKextLog: <>
+  137 								strlen: <>
+  138 								malloc: <>
+  139 								strcat: <>
+  140 								free: <>
+  141 								setiopolicy_np: <>
+  142 								posix_spawn: <>
+  143 								waitpid: <>
+  144 								WIFEXITED: <>
+  145 								WEXITSTATUS: <>
+  146 								WIFSIGNALED: <>
+  147 								WTERMSIG: <>
+  148 							free: <>
+  149 						malloc: <>
+  150 						SAFE_FREE_NULL: <>
+  151 						getPathExtension: char * (), <./kext_tools_util.c 942>
+  152 							CFURLCreateFromFileSystemRepresentation: <>
+  153 							strlen: <>
+  154 							CFURLCopyPathExtension: <>
+  155 							createUTF8CStringForCFString: char * (), <./kext_tools_util.c 46>
+  156 								CFStringGetMaximumSizeForEncoding: <>
+  157 								CFStringGetLength: <>
+  158 								malloc: <>
+  159 								CFStringGetCString: <>
+  160 								SAFE_FREE_NULL: <>
+  161 							SAFE_RELEASE: <>
+  162 						strlcpy: <>
+  163 						strlcat: <>
+  164 						check_csfde: Boolean (), <./bootcaches.c 1968>
+  165 							copyCSFDEInfo: int (), <./bootcaches.c 1898>
+  166 								CoreStorageCopyFamilyProperties: <>
+  167 								CFDictionaryGetValue: <>
+  168 								CFSTR: <>
+  169 								CFGetTypeID: <>
+  170 								CFDictionaryGetTypeID: <>
+  171 								CFArrayGetCount: <>
+  172 								CFRetain: <>
+  173 								CFNumberGetTypeID: <>
+  174 								CFNumberGetValue: <>
+  175 								CFRelease: <>
+  176 								OSKextLogCFString: <>
+  177 								strerror: <>
+  178 							pathcpy: <>
+  179 							pathcat: <>
+  180 							stat: if (), <./update_boot.c 3069>
+  181 						rebuild_csfde_cache: int (), <./bootcaches.c 2223>
+  182 							ensureCacheDirs: int (), <./bootcaches.c 770>
+  183 								statfs: <>
+  184 								pathcpy: <>
+  185 								pathcat: <>
+  186 								stat: if (), <./update_boot.c 3069>
+  187 								sdeepunlink: int (), <./safecalls.c 395>
+  188 									fts_open: <>
+  189 									fts_read: <>
+  190 									sunlink: int (), <./safecalls.c 312>
+  191 										schdirparent: 112
+  192 										unlink: <>
+  193 										RESTOREDIR: <>
+  194 									srmdir: int (), <./safecalls.c 297>
+  195 										schdirparent: 112
+  196 										rmdir: <>
+  197 										RESTOREDIR: <>
+  198 									fts_close: <>
+  199 									OSKextLog: <>
+  200 									strerror: <>
+  201 								sdeepmkdir: 105
+  202 								dirname: <>
+  203 								LOGERRxlate: <>
+  204 							copyCSFDEInfo: 165
+  205 							pathcpy: <>
+  206 							pathcat: <>
+  207 							sunlink: 190
+  208 							LOGERRxlate: <>
+  209 						check_loccache: Boolean (), <./bootcaches.c 2338>
+  210 							pathcpy: <>
+  211 							pathcat: <>
+  212 							stat: if (), <./update_boot.c 3069>
+  213 							get_locres_info: int (), <./bootcaches.c 2278>
+  214 								LOGERRxlate: <>
+  215 								pathcpy: <>
+  216 								pathcat: <>
+  217 								stat: if (), <./update_boot.c 3069>
+  218 						rebuild_loccache: int (), <./bootcaches.c 2513>
+  219 							bzero: <>
+  220 							get_locres_info: 213
+  221 							sdeepunlink: 187
+  222 							LOGERRxlate: <>
+  223 							sdeepmkdir: 105
+  224 							OSKextLog: <>
+  225 							stat: if (), <./update_boot.c 3069>
+  226 							TIMESPEC_TO_TIMEVAL: <>
+  227 							close: <>
+  228 						SAFE_FREE: <>
+  229 					hasBootRootBoots: Boolean (), <./bootcaches.c 2577>
+  230 						BLCreateBooterInformationDictionary: <>
+  231 						CFDictionaryGetValue: <>
+  232 						CFArrayGetCount: <>
+  233 						CFArrayGetValueAtIndex: <>
+  234 						CFStringGetFileSystemRepresentation: <>
+  235 						snprintf: <>
+  236 						BLGetParentDeviceAndPartitionType: <>
+  237 						CFGetTypeID: <>
+  238 						CFDictionaryGetTypeID: <>
+  239 						CFRetain: <>
+  240 						CFRelease: <>
+  241 					needUpdates: Boolean (), <./bootcaches.c 1172>
+  242 						notBRDefault: Boolean (), <./bootcaches.c 1157>
+  243 							MAKETAINTPATH: <>
+  244 							stat: if (), <./update_boot.c 3069>
+  245 						needsUpdate: Boolean (), <./bootcaches.c 1061>
+  246 							pathcpy: <>
+  247 							pathcat: <>
+  248 							stat: if (), <./update_boot.c 3069>
+  249 							OSKextLog: <>
+  250 							strerror: <>
+  251 							TIMESPEC_TO_TIMEVAL: <>
+  252 							bzero: <>
+  253 						OSKextLog: <>
+  254 					needUpdatesNoUUID: int (), <./update_boot.c 1003>
+  255 						CFURLGetFileSystemRepresentation: <>
+  256 						OSKextLogStringError: <>
+  257 						readBootCaches: struct bootCaches (), <./bootcaches.c 896>
+  258 						needUpdates: 241
+  259 						destroyCaches: void (), <./bootcaches.c 108>
+  260 							close: <>
+  261 							CFRelease: <>
+  262 							free: <>
+  263 					open: <>
+  264 					stat: if (), <./update_boot.c 3069>
+  265 					write: <>
+  266 					sleep: <>
+  267 					addHostVolInfo: int (), <./update_boot.c 1246>
+  268 						CFURLGetFileSystemRepresentation: <>
+  269 						pathcat: <>
+  270 						copyVolumeInfo: 28
+  271 						uuid_unparse_upper: <>
+  272 						CFRetain: <>
+  273 						copyCSFDEInfo: 165
+  274 						CFStringGetFileSystemRepresentation: <>
+  275 						CFRelease: <>
+  276 					strlcpy: <>
+  277 					copyCSFDEInfo: 165
+  278 					updateBootHelpers: int (), <./update_boot.c 496>
+  279 						close: <>
+  280 						fstat: <>
+  281 						OSKextLog: <>
+  282 						strerror: <>
+  283 						CFArrayGetCount: <>
+  284 						mountBoot: int (), <./update_boot.c 1998>
+  285 							OSKextLog: <>
+  286 							CFArrayGetValueAtIndex: <>
+  287 							CFGetTypeID: <>
+  288 							CFStringGetTypeID: <>
+  289 							CFStringGetFileSystemRepresentation: <>
+  290 							open: <>
+  291 							LOGERRxlate: <>
+  292 							fstat: <>
+  293 							fstatfs: <>
+  294 							updateMount: int (), <./bootcaches.c 2759>
+  295 								CFSTR: <>
+  296 								DASessionCreate: <>
+  297 								DASessionScheduleWithRunLoop: <>
+  298 								CFRunLoopGetCurrent: <>
+  299 								CFURLCreateFromFileSystemRepresentation: <>
+  300 								strlen: <>
+  301 								DADiskCreateFromVolumePath: <>
+  302 								DADiskMountWithArguments: <>
+  303 								CFRunLoopRunInMode: <>
+  304 								DADissenterGetStatus: <>
+  305 								CFRelease: <>
+  306 								OSKextLog: <>
+  307 							pathcpy: <>
+  308 							pathcat: <>
+  309 							stat: if (), <./update_boot.c 3069>
+  310 							S_ISDIR: <>
+  311 							unmountBoot: void (), <./update_boot.c 2088>
+  312 								close: <>
+  313 								OSKextLog: <>
+  314 								DADiskUnmount: <>
+  315 								CFRunLoopRun: <>
+  316 								CFRelease: <>
+  317 								unmount: <>
+  318 								strerror: <>
+  319 						sanitizeBoot: int (), <./update_boot.c 313>
+  320 							OSKextLog: <>
+  321 							fstatfs: <>
+  322 							fstat: <>
+  323 							fchown: <>
+  324 							makebootpath: <>
+  325 							stat: if (), <./update_boot.c 3069>
+  326 							sdeepunlink: 187
+  327 							sopen: int (), <./safecalls.c 226>
+  328 								schdirparent: 112
+  329 								open: <>
+  330 								spolicy: 116
+  331 								close: <>
+  332 								RESTOREDIR: <>
+  333 							close: <>
+  334 							sdeepmkdir: 105
+  335 							strerror: <>
+  336 						strlcpy: <>
+  337 						strlcat: <>
+  338 						stat: if (), <./update_boot.c 3069>
+  339 						sdeepunlink: 187
+  340 						checkBootContents: void (), <./update_boot.c 418>
+  341 							OSKextLog: <>
+  342 							notBRDefault: 242
+  343 							pathcpy: <>
+  344 							pathcat: <>
+  345 							makebootpath: <>
+  346 							stat: if (), <./update_boot.c 3069>
+  347 						markNotBRDefault: int (), <./bootcaches.c 1373>
+  348 							MAKETAINTPATH: <>
+  349 							sunlink: 190
+  350 							sopen: 327
+  351 							OSKextLog: <>
+  352 							strerror: <>
+  353 							close: <>
+  354 						ucopyRPS: int (), <./update_boot.c 2365>
+  355 							COMPILE_TIME_ASSERT: <>
+  356 							OSKextLog: <>
+  357 							FindRPSDir: int (), <./update_boot.c 1482>
+  358 								pathcpy: <>
+  359 								pathcat: <>
+  360 								stat: if (), <./update_boot.c 3069>
+  361 								OSKextLog: <>
+  362 								eraseRPS: int (), <./update_boot.c 2199>
+  363 									stat: if (), <./update_boot.c 3069>
+  364 									pathcpy: <>
+  365 									pathcat: <>
+  366 									szerofile: int (), <./safecalls.c 350>
+  367 										sopen: 327
+  368 										fstat: <>
+  369 										MIN: <>
+  370 										calloc: <>
+  371 										write: <>
+  372 										ftruncate: <>
+  373 										close: <>
+  374 										free: <>
+  375 									sdeepunlink: 187
+  376 									OSKextLog: <>
+  377 									strerror: <>
+  378 								strlcpy: <>
+  379 							pathcpy: <>
+  380 							pathcat: <>
+  381 							eraseRPS: 362
+  382 							sdeepmkdir: 105
+  383 							LOGERRxlate: <>
+  384 							copy_kcsuffix: CFStringRef (), <./update_boot.c 3474>
+  385 								IORegistryEntryFromPath: <>
+  386 								IORegistryEntryCreateCFProperty: <>
+  387 								CFSTR: <>
+  388 								CFGetTypeID: <>
+  389 								CFStringGetTypeID: <>
+  390 								CFStringCreateArrayBySeparatingStrings: <>
+  391 								CFArrayGetCount: <>
+  392 								CFArrayGetValueAtIndex: <>
+  393 								CFStringFind: <>
+  394 								CFStringGetLength: <>
+  395 								CFRetain: <>
+  396 								CFStringCreateWithSubstring: <>
+  397 								CFStringCreateWithFormat: <>
+  398 								CFRelease: <>
+  399 								IOObjectRelease: <>
+  400 								SAFE_RELEASE: <>
+  401 							CFStringCreateWithCString: <>
+  402 							CFStringHasSuffix: <>
+  403 							SAFE_RELEASE_NULL: <>
+  404 							scopyitem: int (), <./safecalls.c 588>
+  405 								sopen: 327
+  406 								fstat: <>
+  407 								PATHCPY: <>
+  408 								dirname: <>
+  409 								sdeepmkdir: 105
+  410 								close: <>
+  411 							strerror: <>
+  412 							basename: <>
+  413 							strstr: <>
+  414 							strncpy: <>
+  415 							strlen: <>
+  416 							writeBootPrefs: int (), <./update_boot.c 2151>
+  417 								createBootPrefData: CFDataRef (), <./update_boot.c 902>
+  418 									OSKextLog: <>
+  419 									PATHCPYcont: <>
+  420 									PATHCATcont: <>
+  421 									sopen: 327
+  422 									fstat: <>
+  423 									malloc: <>
+  424 									read: <>
+  425 									CFDataCreate: <>
+  426 									CFPropertyListCreateWithData: <>
+  427 									CFGetTypeID: <>
+  428 									CFDictionaryGetTypeID: <>
+  429 									CFRelease: <>
+  430 									CFDictionaryCreateMutable: <>
+  431 									CFStringCreateWithCString: <>
+  432 									CFDictionarySetValue: <>
+  433 									CFSTR: <>
+  434 									CFEqual: <>
+  435 									CFDictionaryGetValue: <>
+  436 									pathcat: <>
+  437 									basename: <>
+  438 									CFStringCreateWithFileSystemRepresentation: <>
+  439 									CFDictionaryApplyFunction: <>
+  440 									addDictOverride: void (), <./update_boot.c 890>
+  441 										CFDictionaryContainsKey: <>
+  442 										CFDictionaryRemoveValue: <>
+  443 										CFDictionaryAddValue: <>
+  444 									CFPropertyListCreateData: <>
+  445 									free: <>
+  446 									close: <>
+  447 								strlcpy: <>
+  448 								dirname: <>
+  449 								sdeepmkdir: 105
+  450 								sunlink: 190
+  451 								sopen: 327
+  452 								CFDataGetLength: <>
+  453 								write: <>
+  454 								CFDataGetBytePtr: <>
+  455 								LOGERRxlate: <>
+  456 								close: <>
+  457 								CFRelease: <>
+  458 							SAFE_RELEASE: <>
+  459 						ucopyMisc: int (), <./update_boot.c 2573>
+  460 							OSKextLog: <>
+  461 							pathcpy: <>
+  462 							pathcat: <>
+  463 							makebootpath: <>
+  464 							stat: if (), <./update_boot.c 3069>
+  465 							scopyitem: 404
+  466 							strerror: <>
+  467 							LOGERRxlate: <>
+  468 						moveLabels: int (), <./update_boot.c 2626>
+  469 							OSKextLog: <>
+  470 							makebootpath: <>
+  471 							stat: if (), <./update_boot.c 3069>
+  472 							pathcpy: <>
+  473 							pathcat: <>
+  474 							srename: int (), <./safecalls.c 330>
+  475 								PATHCPY: <>
+  476 								basename: <>
+  477 								schdirparent: 112
+  478 								rename: <>
+  479 								RESTOREDIR: <>
+  480 							sopen: 327
+  481 							fsetxattr: <>
+  482 							close: <>
+  483 							strerror: <>
+  484 						nukeBRLabels: int (), <./update_boot.c 2676>
+  485 							OSKextLog: <>
+  486 							makebootpath: <>
+  487 							stat: if (), <./update_boot.c 3069>
+  488 							sunlink: 190
+  489 							RECERR: <>
+  490 							pathcpy: <>
+  491 							pathcat: <>
+  492 							dirname: <>
+  493 						ucopyBooters: int (), <./update_boot.c 2751>
+  494 							OSKextLog: <>
+  495 							pathcpy: <>
+  496 							pathcat: <>
+  497 							makebootpath: <>
+  498 							sunlink: 190
+  499 							srename: 474
+  500 							scopyitem: 404
+  501 							strerror: <>
+  502 						activateBooters: int (), <./update_boot.c 2837>
+  503 							BRBLLogFunc: int32_t (), <./kext_tools_util.c 1253>
+  504 								OSKextLog: <>
+  505 							OSKextLog: <>
+  506 							fcntl: <>
+  507 							sopen: 327
+  508 							fsetxattr: <>
+  509 							CLOSE: <>
+  510 							pathcpy: <>
+  511 							dirname: <>
+  512 							fstat: <>
+  513 							sBLSetBootFinderInfo: int (), <./update_boot.c 1565>
+  514 								schdir: int (), <./safecalls.c 257>
+  515 									PATHCPY: <>
+  516 									PATHCAT: <>
+  517 									schdirparent: 112
+  518 								BLGetVolumeFinderInfo: <>
+  519 								BLSetVolumeFinderInfo: <>
+  520 								restoredir: int (), <./safecalls.c 271>
+  521 									fchdir: <>
+  522 									close: <>
+  523 							BLSetEFIBootDevice: <>
+  524 							BLSetEFIBootDeviceOnce: <>
+  525 							BLSetEFIBootFileOnce: <>
+  526 							close: <>
+  527 						activateRPS: int (), <./update_boot.c 2961>
+  528 							OSKextLog: <>
+  529 							FindRPSDir: 357
+  530 							strncmp: <>
+  531 							srename: 474
+  532 							fcntl: <>
+  533 						activateMisc: int (), <./update_boot.c 3032>
+  534 							OSKextLog: <>
+  535 							MAKEBOOTPATHcont: <>
+  536 							strlcpy: <>
+  537 							strlcat: <>
+  538 							stat: if (), <./update_boot.c 3069>
+  539 							srename: 474
+  540 							makebootpath: <>
+  541 							pathcpy: <>
+  542 							pathcat: <>
+  543 						revertState: int (), <./update_boot.c 1742>
+  544 							OSKextLog: <>
+  545 							pathcat: <>
+  546 							activateBooters: 502
+  547 							makebootpath: <>
+  548 							pathcpy: <>
+  549 							stat: if (), <./update_boot.c 3069>
+  550 							sunlink: 190
+  551 							srename: 474
+  552 							activateMisc: 533
+  553 						nukeFallbacks: int (), <./update_boot.c 3094>
+  554 						unmountBoot: 311
+  555 					updateStamps: int (), <./bootcaches.c 1297>
+  556 						statfs: <>
+  557 						OSKextLog: <>
+  558 						ensureCacheDirs: 182
+  559 						updateStamp: int (), <./bootcaches.c 1273>
+  560 							pathcpy: <>
+  561 							pathcat: <>
+  562 							sunlink: 190
+  563 						stat: if (), <./update_boot.c 3069>
+  564 						fcntl: <>
+  565 						markNotBRDefault: 347
+  566 					getExitValueFor: int (), <./update_boot.c 273>
+  567 					releaseContext: void (), <./update_boot.c 864>
+  568 						CFRelease: <>
+  569 						close: <>
+  570 						DASessionUnscheduleFromRunLoop: <>
+  571 						CFRunLoopGetCurrent: <>
+  572 						destroyCaches: 259
+  573 						putVolumeForPath: int (), <./update_boot.c 3437>
+  574 							kextmanager_unlock_volume: <>
+  575 							mach_port_mod_refs: <>
+  576 							mach_task_self: <>
+  577 							OSKextLog: <>
+  578 							safe_mach_error_string: 52
+  579 		listboots: int (), <./brtest.c 66>
+  580 			BRCopyActiveBootPartitions: 61
+  581 			printf: <>
+  582 			CFArrayGetCount: <>
+  583 			CFShow: <>
+  584 			CFArrayGetValueAtIndex: <>
+  585 			CFRelease: <>
+  586 		copyfiles: int (), <./brtest.c 95>
+  587 			strcmp: <>
+  588 			CFStringCreateWithFileSystemRepresentation: <>
+  589 			CFRetain: <>
+  590 			CFURLGetFileSystemRepresentation: <>
+  591 			strlcpy: <>
+  592 			strlcat: <>
+  593 			stat: if (), <./update_boot.c 3069>
+  594 			err: <>
+  595 			CFURLCreateFromFileSystemRepresentation: <>
+  596 			strlen: <>
+  597 			usage: 2
+  598 			CFURLGetString: <>
+  599 			CFStringCreateWithFormat: <>
+  600 			CFSTR: <>
+  601 			CFDictionaryCreateMutable: <>
+  602 			CFDictionarySetValue: <>
+  603 			strchr: <>
+  604 			MIN: <>
+  605 			CFStringCreateWithBytes: <>
+  606 			BRCopyActiveBootPartitions: 61
+  607 			CFArrayGetCount: <>
+  608 			CFArrayContainsValue: <>
+  609 			fprintf: <>
+  610 			CFRelease: <>
+  611 			strcasestr: <>
+  612 			strcasecmp: <>
+  613 			CFURLCopyLastPathComponent: <>
+  614 			CFShow: <>
+  615 			BRCopyBootFilesToDir: OSStatus (), <./update_boot.c 1344>
+  616 				initContext: 14
+  617 				CFEqual: <>
+  618 				BRCopyActiveBootPartitions: 61
+  619 				CFArrayGetCount: <>
+  620 				CFArrayGetValueAtIndex: <>
+  621 				CFRelease: <>
+  622 				checkRebuildAllCaches: 72
+  623 				needUpdates: 241
+  624 				addHostVolInfo: 267
+  625 				updateBootHelpers: 278
+  626 				pathcpy: <>
+  627 				pathcat: <>
+  628 				sdeepunlink: 187
+  629 				updateStamps: 555
+  630 				taintDefaultStamps: int (), <./bootcaches.c 1406>
+  631 					getfsstat: <>
+  632 					statfs: <>
+  633 					malloc: <>
+  634 					strcmp: <>
+  635 					CFURLCreateFromFileSystemRepresentation: <>
+  636 					strlen: <>
+  637 					BRCopyActiveBootPartitions: 61
+  638 					CFArrayGetCount: <>
+  639 					CFArrayGetValueAtIndex: <>
+  640 					CFEqual: <>
+  641 					readBootCaches: struct bootCaches (), <./bootcaches.c 896>
+  642 					CFRelease: <>
+  643 					markNotBRDefault: 347
+  644 					destroyCaches: 259
+  645 					OSKextLog: <>
+  646 					free: <>
+  647 				releaseContext: 567
+  648 			BRCopyBootFiles: OSStatus (), <./update_boot.c 1466>
+  649 				BRCopyBootFilesToDir: 615
+  650 		erasefiles: int (), <./brtest.c 276>
+  651 			strstr: <>
+  652 			usage: 2
+  653 			CFStringCreateWithFileSystemRepresentation: <>
+  654 			BRCopyActiveBootPartitions: 61
+  655 			CFArrayGetCount: <>
+  656 			CFArrayContainsValue: <>
+  657 			fprintf: <>
+  658 			BREraseBootFiles: OSStatus (), <./update_boot.c 1640>
+  659 				initContext: 14
+  660 				mountBoot: 284
+  661 				blessRecovery: int (), <./update_boot.c 1586>
+  662 					makebootpath: <>
+  663 					stat: if (), <./update_boot.c 3069>
+  664 					pathcat: <>
+  665 					basename: <>
+  666 					sBLSetBootFinderInfo: 513
+  667 					OSKextLog: <>
+  668 				sBLSetBootFinderInfo: 513
+  669 				OSKextLog: <>
+  670 				nukeBRLabels: 484
+  671 				RECERR: <>
+  672 				pathcpy: <>
+  673 				pathcat: <>
+  674 				sunlink: 190
+  675 				FindRPSDir: 357
+  676 				eraseRPS: 362
+  677 				strlcpy: <>
+  678 				strlcat: <>
+  679 				sdeepunlink: 187
+  680 				stat: if (), <./update_boot.c 3069>
+  681 				unmountBoot: 311
+  682 				releaseContext: 567
+  683 			CFRelease: <>
+  684 		fprintf: <>
+  685 		printf: <>
+  686 		strerror: <>
+  687 		CFRelease: <>
+  688 		OSKextSetLogOutputFunction: <>
+  689 		tool_log: void (), <./kext_tools_util.c 1166>
+  690 			snprintf: <>
+  691 			asl_set: <>
+  692 			va_start: <>
+  693 			asl_vlog: <>
+  694 			va_end: <>
+  695 			vfprintf: <>
+  696 			fprintf: <>
+  697 			fflush: <>
+  698 		readArgs: ExitStatus (), <./kcgen_main.c 211>
+  699 			bzero: <>
+  700 			createCFMutableArray: Boolean (), <./kext_tools_util.c 77>
+  701 				CFArrayCreateMutable: <>
+  702 			getopt_long_only: <>
+  703 			SAFE_RELEASE_NULL: <>
+  704 			usage: 2
+  705 			CFStringCreateWithCString: <>
+  706 			OSKextLogMemError: <>
+  707 			CFArrayAppendValue: <>
+  708 			OSKextLog: <>
+  709 			OSKextSetLogFilter: <>
+  710 			stat: if (), <./update_boot.c 3069>
+  711 			beQuiet: void (), <./kext_tools_util.c 1096>
+  712 				fclose: <>
+  713 				close: <>
+  714 				OSKextSetLogFilter: <>
+  715 			setLogFilterForOpt: ExitStatus (), <./kext_tools_util.c 1008>
+  716 				strncmp: <>
+  717 				OSKextLog: <>
+  718 				strtoul: <>
+  719 				OSKextSetLogFilter: <>
+  720 			SAFE_RELEASE: <>
+  721 			addToArrayIfAbsent: void (), <./kext_tools_util.c 123>
+  722 				CFArrayGetFirstIndexOfValue: <>
+  723 				RANGE_ALL: <>
+  724 				CFArrayAppendValue: <>
+  725 			CFURLCreateFromFileSystemRepresentation: <>
+  726 			strlen: <>
+  727 			exit: <>
+  728 			OSKextLogStringError: <>
+  729 			checkSearchItem: Boolean (), <./kextfind_main.c 630>
+  730 				stat: if (), <./update_boot.c 3069>
+  731 				OSKextLog: <>
+  732 				strerror: <>
+  733 			OSKextGetSystemExtensionsFolderURLs: <>
+  734 			CFArrayAppendArray: <>
+  735 			RANGE_ALL: <>
+  736 			NXGetArchInfoFromName: <>
+  737 			CFArrayGetCount: <>
+  738 			createCFMutableSet: Boolean (), <./kext_tools_util.c 108>
+  739 				CFSetCreateMutable: <>
+  740 			addArchForName: const NXArchInfo * (), <./kcgen_main.c 669>
+  741 				NXGetArchInfoFromName: <>
+  742 				addArch: void (), <./kcgen_main.c 654>
+  743 					CFArrayContainsValue: <>
+  744 					RANGE_ALL: <>
+  745 					CFArrayAppendValue: <>
+  746 			CFSetAddValue: <>
+  747 			readPrelinkedKernelArgs: ExitStatus (), <./kcgen_main.c 585>
+  748 				setPrelinkedKernelArgs: ExitStatus (), <./kcgen_main.c 609>
+  749 					OSKextLog: <>
+  750 					malloc: <>
+  751 					OSKextLogMemError: <>
+  752 					setDefaultPrelinkedKernel: Boolean (), <./kextcache_main.c 1076>
+  753 						strlcpy: <>
+  754 						OSKextLog: <>
+  755 					setSystemExtensionsFolders: void (), <./kextcache_main.c 1104>
+  756 						OSKextGetSystemExtensionsFolderURLs: <>
+  757 						CFArrayAppendArray: <>
+  758 						RANGE_ALL: <>
+  759 					strlcpy: <>
+  760 			malloc: <>
+  761 			strlcpy: <>
+  762 			strerror: <>
+  763 			CFRetain: <>
+  764 			setSystemExtensionsFolders: 755
+  765 			setPrelinkedKernelArgs: 748
+  766 			CFURLCopyPathExtension: <>
+  767 			CFEqual: <>
+  768 			CFSTR: <>
+  769 			CFRelease: <>
+  770 			createCFMutableDictionary: Boolean (), <./kext_tools_util.c 93>
+  771 				CFDictionaryCreateMutable: <>
+  772 			checkPath: ExitStatus (), <./kext_tools_util.c 455>
+  773 				OSKextLog: <>
+  774 				strlen: <>
+  775 				strncmp: <>
+  776 				stat: if (), <./update_boot.c 3069>
+  777 				strerror: <>
+  778 				access: <>
+  779 			index: <>
+  780 			strtoull: <>
+  781 			CFNumberCreate: <>
+  782 			CFDictionaryGetValue: <>
+  783 			CFDictionarySetValue: <>
+  784 			CFArrayCreateMutable: <>
+  785 			addRepository: ExitStatus (), <./kextlibs_main.c 446>
+  786 				checkPath: 772
+  787 				CFURLCreateFromFileSystemRepresentation: <>
+  788 				strlen: <>
+  789 				OSKextLog: <>
+  790 				addToArrayIfAbsent: 721
+  791 				SAFE_RELEASE: <>
+  792 			fprintf: <>
+  793 			strcasecmp: <>
+  794 			supportsFastLibCompression: Boolean (), <./kernelcache.c 1095>
+  795 			atol: <>
+  796 		OSKextGetRunningKernelArchitecture: <>
+  797 		OSKextCopyLoadedKextInfo: <>
+  798 		OSKextLog: <>
+  799 		CFDictionaryGetCount: <>
+  800 		malloc: <>
+  801 		OSKextLogMemError: <>
+  802 		CFDictionaryGetKeysAndValues: <>
+  803 		qsort: <>
+  804 		compareKextInfo: int (), <./kextstat_main.c 421>
+  805 			CFDictionaryGetValue: <>
+  806 			CFSTR: <>
+  807 			getNumValue: Boolean (), <./kextstat_main.c 411>
+  808 				CFNumberGetTypeID: <>
+  809 				CFGetTypeID: <>
+  810 				CFNumberGetValue: <>
+  811 		printKextInfo: void (), <./kclist_main.c 395>
+  812 			CFDictionaryGetValue: <>
+  813 			CFSTR: <>
+  814 			CFBooleanGetValue: <>
+  815 			CFArrayGetFirstIndexOfValue: <>
+  816 			RANGE_ALL: <>
+  817 			getNumValue: 807
+  818 			createUTF8CStringForCFString: 155
+  819 			fprintf: <>
+  820 			NXGetArchInfoFromCpuType: <>
+  821 			CFArrayGetCount: <>
+  822 			CFArrayCreateMutableCopy: <>
+  823 			OSKextLogMemError: <>
+  824 			CFArraySortValues: <>
+  825 			compareNumbers: CFComparisonResult (), <./kextstat_main.c 452>
+  826 				CFNumberCompare: <>
+  827 			CFArrayGetValueAtIndex: <>
+  828 			SAFE_RELEASE: <>
+  829 			SAFE_FREE: <>
+  830 			CFArrayGetTypeID: <>
+  831 			CFGetTypeID: <>
+  832 			CFDictionaryGetTypeID: <>
+  833 			OSKextLog: <>
+  834 			CFEqual: <>
+  835 			getKextAddressAndSize: Boolean (), <./kctool_main.c 400>
+  836 				CFDictionaryGetValue: <>
+  837 				CFSTR: <>
+  838 				OSKextLog: <>
+  839 				CFNumberGetValue: <>
+  840 			ISMACHO64: <>
+  841 			MAGIC32: <>
+  842 			macho_get_section_by_name_64: <>
+  843 			macho_get_section_by_name: <>
+  844 			getSectionByName: struct section (), <./kctool_main.c 260>
+  845 			OSKextLogCFString: <>
+  846 			printf: <>
+  847 			CFStringGetCString: <>
+  848 			CFNumberGetValue: <>
+  849 			uuid_unparse: <>
+  850 		exit: <>
+  851 		SAFE_FREE: <>
+  852 		rindex: <>
+  853 		tool_openlog: void (), <./kext_tools_util.c 1114>
+  854 			asl_open: <>
+  855 			asl_new: <>
+  856 		setenv: <>
+  857 		snprintf: <>
+  858 		OSKextGetLogFilter: <>
+  859 		OSKextGetSystemExtensionsFolderURLs: <>
+  860 		OSKextGetActualSafeBoot: <>
+  861 		OSKextSetSimulatedSafeBoot: <>
+  862 		OSKextSetUsesCaches: <>
+  863 		OSKextSetRecordsDiagnostics: <>
+  864 		readExtensions: void (), <./kextd_main.c 929>
+  865 			getLatestTimesFromCFURLArray: ExitStatus (), <./kext_tools_util.c 675>
+  866 				bzero: <>
+  867 				CFArrayGetCount: <>
+  868 				CFArrayGetValueAtIndex: <>
+  869 				OSKextLog: <>
+  870 				statURL: ExitStatus (), <./kext_tools_util.c 866>
+  871 					CFURLGetFileSystemRepresentation: <>
+  872 					OSKextLogStringError: <>
+  873 					statPath: ExitStatus (), <./kext_tools_util.c 891>
+  874 						stat: if (), <./update_boot.c 3069>
+  875 						OSKextLog: <>
+  876 						strerror: <>
+  877 				TIMESPEC_TO_TIMEVAL: <>
+  878 				timercmp: <>
+  879 			OSKextLog: <>
+  880 			strerror: <>
+  881 			releaseExtensions: void (), <./kextd_main.c 1002>
+  882 				OSKextLog: <>
+  883 				SAFE_RELEASE_NULL: <>
+  884 			timercmp: <>
+  885 			OSKextCreateKextsFromURLs: <>
+  886 			scheduleReleaseExtensions: void (), <./kextd_main.c 976>
+  887 				OSKextLog: <>
+  888 				CFRunLoopTimerInvalidate: <>
+  889 				SAFE_RELEASE_NULL: <>
+  890 				CFRunLoopTimerCreate: <>
+  891 				CFAbsoluteTimeGetCurrent: <>
+  892 				releaseExtensions: 881
+  893 				OSKextLogMemError: <>
+  894 				CFRunLoopAddTimer: <>
+  895 				CFRunLoopGetCurrent: <>
+  896 		setUpServer: ExitStatus (), <./kextd_main.c 463>
+  897 			bootstrap_check_in: <>
+  898 			OSKextLog: <>
+  899 			bootstrap_strerror: <>
+  900 			exit: <>
+  901 			CFRunLoopGetCurrent: <>
+  902 			CFMachPortCreateWithPort: <>
+  903 			kextd_mach_port_callback: void (), <./kextd_mig_server.c 127>
+  904 				CFAllocatorAllocate: <>
+  905 				kextd_demux: boolean_t (), <./kextd_mig_server.c 53>
+  906 					round_msg: <>
+  907 					OSKextLog: <>
+  908 					kextmanager_server: <>
+  909 					kextd_kernel_request_server: <>
+  910 				CFAllocatorDeallocate: <>
+  911 				mach_msg_destroy: <>
+  912 				MACH_MSGH_BITS_REMOTE: <>
+  913 				mach_msg: <>
+  914 			CFMachPortCreateRunLoopSource: <>
+  915 			CFRunLoopAddSource: <>
+  916 			kextd_watch_volumes: int (), <./kextd_watchvol.c 246>
+  917 				CFDictionaryCreateMutable: <>
+  918 				CFRunLoopGetCurrent: <>
+  919 				CFMachPortCreate: <>
+  920 				fsys_changed: void (), <./kextd_watchvol.c 1258>
+  921 					notify_get_state: <>
+  922 					OSKextLogCFString: <>
+  923 					CFSTR: <>
+  924 					checkScheduleUpdate: void (), <./kextd_watchvol.c 1297>
+  925 						CFDictionaryGetCountOfValue: <>
+  926 						OSKextLog: <>
+  927 						strlcpy: <>
+  928 						strlcat: <>
+  929 						fopen: <>
+  930 						fscanf: <>
+  931 						fclose: <>
+  932 						kill: <>
+  933 						stat: if (), <./update_boot.c 3069>
+  934 						OSKextLogCFString: <>
+  935 						CFSTR: <>
+  936 						strerror: <>
+  937 						createDiskForMount: DADiskRef (), <./bootcaches.c 1864>
+  938 							DASessionCreate: <>
+  939 							CFURLCreateFromFileSystemRepresentation: <>
+  940 							strlen: <>
+  941 							DADiskCreateFromVolumePath: <>
+  942 							CFRelease: <>
+  943 						vol_disappeared: void (), <./kextd_watchvol.c 1093>
+  944 							OSKextLogCFString: <>
+  945 							CFSTR: <>
+  946 							DADiskCopyDescription: <>
+  947 							CFDictionaryGetValue: <>
+  948 							strcmp: <>
+  949 							OSKextLog: <>
+  950 							CFDictionaryRemoveValue: <>
+  951 							CFRunLoopTimerInvalidate: <>
+  952 							CFArrayGetCount: <>
+  953 							CFArrayGetValueAtIndex: <>
+  954 							signalWaiter: int (), <./kextd_watchvol.c 527>
+  955 								CFDictionaryGetValue: <>
+  956 								CFDictionaryRemoveValue: <>
+  957 								lock_reboot_reply: <>
+  958 								lock_volume_reply: <>
+  959 								OSKextLog: <>
+  960 								safe_mach_error_string: 52
+  961 							cleanupPort: int (), <./kextd_watchvol.c 512>
+  962 								CFDictionaryRemoveValue: <>
+  963 								CFMachPortSetInvalidationCallBack: <>
+  964 								CFMachPortGetPort: <>
+  965 								CFRelease: <>
+  966 								mach_port_deallocate: <>
+  967 								mach_task_self: <>
+  968 							CFRelease: <>
+  969 							destroy_watchedVol: void (), <./kextd_watchvol.c 426>
+  970 								CFArrayGetCount: <>
+  971 								CFArrayGetValueAtIndex: <>
+  972 								notify_cancel: <>
+  973 								OSKextLog: <>
+  974 								CFRelease: <>
+  975 								destroyCaches: 259
+  976 								free: <>
+  977 						vol_appeared: void (), <./kextd_watchvol.c 771>
+  978 							OSKextLogCFString: <>
+  979 							CFSTR: <>
+  980 							DADiskCopyDescription: <>
+  981 							CFDictionaryGetValue: <>
+  982 							CFGetTypeID: <>
+  983 							CFUUIDGetTypeID: <>
+  984 							strcmp: <>
+  985 							OSKextLog: <>
+  986 							vol_disappeared: 943
+  987 							CFURLGetFileSystemRepresentation: <>
+  988 							statfs: <>
+  989 							CFBooleanGetTypeID: <>
+  990 							CFEqual: <>
+  991 							create_watchedVol: struct watchedVol (), <./kextd_watchvol.c 452>
+  992 							CFMachPortGetPort: <>
+  993 							WATCH: <>
+  994 							strlen: <>
+  995 							watch_kernels: void (), <./kextd_watchvol.c 668>
+  996 								strlcpy: <>
+  997 								strlcat: <>
+  998 								CFURLCreateFromFileSystemRepresentation: <>
+  999 								strlen: <>
+ 1000 								CFURLCreateCopyDeletingLastPathComponent: <>
+ 1001 								CFURLGetFileSystemRepresentation: <>
+ 1002 								watch_path: int (), <./kextd_watchvol.c 618>
+ 1003 									strlcpy: <>
+ 1004 									strlcat: <>
+ 1005 									notify_register_mach_port: <>
+ 1006 									notify_set_state: <>
+ 1007 									notify_monitor_file: <>
+ 1008 									CFArrayAppendValue: <>
+ 1009 									notify_cancel: <>
+ 1010 									OSKextLog: <>
+ 1011 								CFURLEnumeratorCreateForDirectoryURL: <>
+ 1012 								CFURLEnumeratorGetNextURL: <>
+ 1013 								SAFE_RELEASE_NULL: <>
+ 1014 								CFURLCopyLastPathComponent: <>
+ 1015 								CFStringHasPrefix: <>
+ 1016 								CFSTR: <>
+ 1017 								CFStringCreateArrayWithFindResults: <>
+ 1018 								CFRangeMake: <>
+ 1019 								CFStringGetLength: <>
+ 1020 								CFArrayGetCount: <>
+ 1021 								SAFE_RELEASE: <>
+ 1022 							CFDictionarySetValue: <>
+ 1023 							check_rebuild: Boolean (), <./kextd_watchvol.c 1434>
+ 1024 								CFRunLoopTimerInvalidate: <>
+ 1025 								OSKextLog: <>
+ 1026 								check_kext_boot_cache_file: 76
+ 1027 								malloc: <>
+ 1028 								SAFE_FREE_NULL: <>
+ 1029 								getPathExtension: 151
+ 1030 								strlcpy: <>
+ 1031 								strlcat: <>
+ 1032 								check_boots_set_nvram: void (), <./kextd_watchvol.c 955>
+ 1033 									BRBLLogFunc: 503
+ 1034 									hasBootRootBoots: 229
+ 1035 									CFArrayGetCount: <>
+ 1036 									OSKextLog: <>
+ 1037 									check_rebuild: 1023
+ 1038 									strcmp: <>
+ 1039 									CFArrayGetValueAtIndex: <>
+ 1040 									CFStringGetFileSystemRepresentation: <>
+ 1041 									BLSetEFIBootDevice: <>
+ 1042 									updateStamps: 555
+ 1043 									CFRelease: <>
+ 1044 								check_csfde: 164
+ 1045 								needUpdates: 241
+ 1046 								launch_rebuild_all: pid_t (), <./bootcaches.c 2825>
+ 1047 									malloc: <>
+ 1048 									fork_program: 134
+ 1049 									free: <>
+ 1050 									OSKextLog: <>
+ 1051 								strcmp: <>
+ 1052 								plistCachesNeedRebuild: Boolean (), <./bootcaches.c 1701>
+ 1053 									OSKextGetSystemExtensionsFolderURLs: <>
+ 1054 									CFArrayGetCount: <>
+ 1055 									CFArrayGetValueAtIndex: <>
+ 1056 									CFSTR: <>
+ 1057 									CFStringCreateWithFormat: <>
+ 1058 									OSKextLogMemError: <>
+ 1059 									SAFE_RELEASE: <>
+ 1060 								handleSignal: void (), <./kextd_main.c 844>
+ 1061 									MACH_MSGH_BITS: <>
+ 1062 									mach_msg: <>
+ 1063 								SAFE_FREE: <>
+ 1064 							CFRelease: <>
+ 1065 							destroy_watchedVol: 969
+ 1066 						CFRelease: <>
+ 1067 						CFAbsoluteTimeGetCurrent: <>
+ 1068 						CFRunLoopTimerInvalidate: <>
+ 1069 						CFRunLoopTimerCreate: <>
+ 1070 						check_now: void (), <./kextd_watchvol.c 1407>
+ 1071 							CFDictionaryGetCountOfValue: <>
+ 1072 							check_rebuild: 1023
+ 1073 							OSKextLog: <>
+ 1074 						CFRunLoopAddTimer: <>
+ 1075 						CFRunLoopGetCurrent: <>
+ 1076 				CFMachPortCreateRunLoopSource: <>
+ 1077 				CFRunLoopAddSource: <>
+ 1078 				DAApprovalSessionCreate: <>
+ 1079 				DARegisterDiskUnmountApprovalCallback: <>
+ 1080 				DAApprovalSessionScheduleWithRunLoop: <>
+ 1081 				DASessionCreate: <>
+ 1082 				DARegisterDiskAppearedCallback: <>
+ 1083 				vol_appeared: 977
+ 1084 				CFArrayCreate: <>
+ 1085 				DARegisterDiskDescriptionChangedCallback: <>
+ 1086 				vol_changed: void (), <./kextd_watchvol.c 1030>
+ 1087 					CFArrayGetCount: <>
+ 1088 					OSKextLogCFString: <>
+ 1089 					CFSTR: <>
+ 1090 					CFArrayGetValueAtIndex: <>
+ 1091 					DADiskCopyDescription: <>
+ 1092 					CFDictionaryGetValue: <>
+ 1093 					CFEqual: <>
+ 1094 					vol_disappeared: 943
+ 1095 					vol_appeared: 977
+ 1096 					check_boots_set_nvram: 1032
+ 1097 					CFRelease: <>
+ 1098 				DARegisterDiskDisappearedCallback: <>
+ 1099 				vol_disappeared: 943
+ 1100 				DASessionScheduleWithRunLoop: <>
+ 1101 				CFRunLoopTimerCreate: <>
+ 1102 				CFAbsoluteTimeGetCurrent: <>
+ 1103 				checkAutoUpdate: void (), <./kextd_watchvol.c 361>
+ 1104 					checkAllWatched: Boolean (), <./kextd_watchvol.c 1592>
+ 1105 						CFDictionaryApplyFunction: <>
+ 1106 						check_locked: void (), <./kextd_watchvol.c 1548>
+ 1107 							check_vol_busy: Boolean (), <./kextd_watchvol.c 1231>
+ 1108 							strlcpy: <>
+ 1109 				CFRunLoopAddTimer: <>
+ 1110 				CFRelease: <>
+ 1111 				OSKextLog: <>
+ 1112 				kextd_stop_volwatch: void (), <./kextd_watchvol.c 385>
+ 1113 					CFRunLoopGetCurrent: <>
+ 1114 					DASessionUnscheduleFromRunLoop: <>
+ 1115 					DAApprovalSessionUnscheduleFromRunLoop: <>
+ 1116 					DAUnregisterCallback: <>
+ 1117 					vol_disappeared: 943
+ 1118 					vol_changed: 1086
+ 1119 					vol_appeared: 977
+ 1120 					CFRELEASE: <>
+ 1121 					DAUnregisterApprovalCallback: <>
+ 1122 					CFRunLoopRemoveSource: <>
+ 1123 					CFDictionaryApplyFunction: <>
+ 1124 					free_dict_item: void (), <./kextd_watchvol.c 379>
+ 1125 						destroy_watchedVol: 969
+ 1126 			CFMachPortCreate: <>
+ 1127 			handleSignalInRunloop: void (), <./kextd_main.c 870>
+ 1128 				rescanExtensions: void (), <./kextd_main.c 1020>
+ 1129 					OSKextLog: <>
+ 1130 					resetUserNotifications: void (), <./kextd_usernotification.c 326>
+ 1131 						OSKextLog: <>
+ 1132 						CFUserNotificationCancel: <>
+ 1133 						CFRelease: <>
+ 1134 						CFRunLoopRemoveSource: <>
+ 1135 						CFRunLoopGetCurrent: <>
+ 1136 						CFArrayRemoveAllValues: <>
+ 1137 						CFDictionaryRemoveAllValues: <>
+ 1138 					releaseExtensions: 881
+ 1139 					readExtensions: 864
+ 1140 					sendSystemKextPersonalitiesToKernel: OSReturn (), <./kextd_personalities.c 47>
+ 1141 						sendCachedPersonalitiesToKernel: OSReturn (), <./kextd_personalities.c 121>
+ 1142 							CFSTR: <>
+ 1143 							OSKextLogCFString: <>
+ 1144 							IOCatalogueSendData: <>
+ 1145 							CFDataGetBytePtr: <>
+ 1146 							CFDataGetLength: <>
+ 1147 							OSKextLog: <>
+ 1148 							SAFE_RELEASE: <>
+ 1149 						createCFMutableArray: 700
+ 1150 						OSKextLogMemError: <>
+ 1151 						recordNonsecureKexts: Boolean (), <./kextd_usernotification.c 768>
+ 1152 							CFArrayGetCount: <>
+ 1153 							CFArrayGetValueAtIndex: <>
+ 1154 							SAFE_RELEASE_NULL: <>
+ 1155 							OSKextIsAuthentic: <>
+ 1156 							copyKextPath: CFStringRef (), <./kext_tools_util.c 649>
+ 1157 								OSKextGetURL: <>
+ 1158 								CFURLCopyAbsoluteURL: <>
+ 1159 								CFURLCopyFileSystemPath: <>
+ 1160 								SAFE_RELEASE: <>
+ 1161 							OSKextLogMemError: <>
+ 1162 							CFDictionaryGetValue: <>
+ 1163 							CFArrayAppendValue: <>
+ 1164 							CFDictionarySetValue: <>
+ 1165 							SAFE_RELEASE: <>
+ 1166 							CFRunLoopSourceSignal: <>
+ 1167 							CFRunLoopWakeUp: <>
+ 1168 							CFRunLoopGetCurrent: <>
+ 1169 						CFArrayGetCount: <>
+ 1170 						CFArrayGetValueAtIndex: <>
+ 1171 						OSKextIsAuthentic: <>
+ 1172 						CFArrayAppendValue: <>
+ 1173 						OSKextSendPersonalitiesOfKextsToKernel: <>
+ 1174 						OSKextCopyPersonalitiesOfKexts: <>
+ 1175 						OSKextGetSystemExtensionsFolderURLs: <>
+ 1176 						CFSTR: <>
+ 1177 						OSKextLog: <>
+ 1178 						SAFE_RELEASE: <>
+ 1179 					readSystemKextPropertyValues: Boolean (), <./kext_tools_util.c 1592>
+ 1180 						OSKextGetSystemExtensionsFolderURLs: <>
+ 1181 						CFStringCreateWithFormat: <>
+ 1182 						CFSTR: <>
+ 1183 						OSKextLogMemError: <>
+ 1184 						OSKextGetUsesCaches: <>
+ 1185 						CFGetTypeID: <>
+ 1186 						CFArrayGetTypeID: <>
+ 1187 						CFArrayCreateMutable: <>
+ 1188 						OSKextCreateKextsFromURLs: <>
+ 1189 						CFArrayGetCount: <>
+ 1190 						CFArrayGetValueAtIndex: <>
+ 1191 						SAFE_RELEASE_NULL: <>
+ 1192 						OSKextGetSimulatedSafeBoot: <>
+ 1193 						OSKextGetActualSafeBoot: <>
+ 1194 						OSKextIsLoadableInSafeBoot: <>
+ 1195 						OSKextGetValueForInfoDictionaryKey: <>
+ 1196 						CFDictionaryCreateMutable: <>
+ 1197 						CFDictionarySetValue: <>
+ 1198 						OSKextGetIdentifier: <>
+ 1199 						copyKextPath: 1156
+ 1200 						CFArrayAppendValue: <>
+ 1201 						CFRetain: <>
+ 1202 						SAFE_RELEASE: <>
+ 1203 					CFSTR: <>
+ 1204 				CFRunLoopStop: <>
+ 1205 				CFRunLoopGetCurrent: <>
+ 1206 				waitpid: <>
+ 1207 				OSKextLog: <>
+ 1208 				strerror: <>
+ 1209 				WEXITSTATUS: <>
+ 1210 			CFMachPortGetPort: <>
+ 1211 			mach_port_set_attributes: <>
+ 1212 			mach_task_self: <>
+ 1213 			CFNotificationCenterAddObserver: <>
+ 1214 			CFNotificationCenterGetLocalCenter: <>
+ 1215 			updateRAIDSet: void (), <./kextd_watchvol.c 2276>
+ 1216 				CFSTR: <>
+ 1217 				updateVolForMedia: void (), <./kextd_watchvol.c 2178>
+ 1218 					CFDictionaryCreate: <>
+ 1219 					CFDictionaryCreateMutable: <>
+ 1220 					CFDictionarySetValue: <>
+ 1221 					CFSTR: <>
+ 1222 					IOServiceGetMatchingService: <>
+ 1223 					DADiskCreateFromIOMedia: <>
+ 1224 					DADiskCopyDescription: <>
+ 1225 					CFDictionaryGetValue: <>
+ 1226 					strlcpy: <>
+ 1227 					strlcat: <>
+ 1228 					sdeepunlink: 187
+ 1229 					checkScheduleUpdate: 924
+ 1230 					OSKextLog: <>
+ 1231 					CFRelease: <>
+ 1232 					IOObjectRelease: <>
+ 1233 			CFSTR: <>
+ 1234 			AppleRAIDEnableNotifications: <>
+ 1235 			updateCoreStorageVolume: void (), <./kextd_watchvol.c 2299>
+ 1236 				CFSTR: <>
+ 1237 				CFEqual: <>
+ 1238 				OSKextLog: <>
+ 1239 				updateVolForMedia: 1217
+ 1240 			CoreStorageEnableNotifications: <>
+ 1241 			CFNotificationCenterGetDistributedCenter: <>
+ 1242 			NoLoadSigFailureKextCallback: void (), <./kextd_main.c 674>
+ 1243 				CFRetain: <>
+ 1244 				dispatch_async: <>
+ 1245 				dispatch_get_main_queue: <>
+ 1246 				writeKextAlertPlist: void (), <./kextd_usernotification.c 1513>
+ 1247 					CFDictionaryGetValue: <>
+ 1248 					CFSTR: <>
+ 1249 					CFArrayGetCount: <>
+ 1250 					createPathFromAlertType: CFStringRef (), <./kextd_usernotification.c 2185>
+ 1251 						CFStringCreateWithFormat: <>
+ 1252 						CFSTR: <>
+ 1253 						CFStringCreateWithCString: <>
+ 1254 						CFURLCreateWithFileSystemPath: <>
+ 1255 						CFURLResourceIsReachable: <>
+ 1256 						CFReadStreamCreateWithFile: <>
+ 1257 						CFReadStreamOpen: <>
+ 1258 						CFPropertyListCreateWithStream: <>
+ 1259 						CFReadStreamClose: <>
+ 1260 						SAFE_RELEASE: <>
+ 1261 					OSKextLogMemError: <>
+ 1262 					CFURLCreateWithFileSystemPath: <>
+ 1263 					CFURLResourceIsReachable: <>
+ 1264 					CFReadStreamCreateWithFile: <>
+ 1265 					CFReadStreamOpen: <>
+ 1266 					CFPropertyListCreateWithStream: <>
+ 1267 					sendKextAlertNotifications: Boolean (), <./kextd_usernotification.c 1739>
+ 1268 						CFArrayGetCount: <>
+ 1269 						CFArrayGetValueAtIndex: <>
+ 1270 						CFDictionaryGetValue: <>
+ 1271 						createBundleMappingKey: CFStringRef (), <./kextd_usernotification.c 2050>
+ 1272 							CFDictionaryGetValue: <>
+ 1273 							CFSTR: <>
+ 1274 							CFStringCreateMutableCopy: <>
+ 1275 							CFStringFind: <>
+ 1276 							CFStringGetLength: <>
+ 1277 							CFStringDelete: <>
+ 1278 							SAFE_RELEASE_NULL: <>
+ 1279 						isInAlertsSentArray: Boolean (), <./kextd_usernotification.c 2106>
+ 1280 							CFArrayContainsValue: <>
+ 1281 							RANGE_ALL: <>
+ 1282 							CFArrayGetCount: <>
+ 1283 							CFArrayGetValueAtIndex: <>
+ 1284 							CFGetTypeID: <>
+ 1285 							CFDictionaryGetTypeID: <>
+ 1286 							CFDictionaryGetValue: <>
+ 1287 							CFStringGetTypeID: <>
+ 1288 							CFStringFind: <>
+ 1289 						SAFE_RELEASE_NULL: <>
+ 1290 						CFArrayAppendValue: <>
+ 1291 						getKextAlertMessage: CFStringRef (), <./kextd_usernotification.c 1815>
+ 1292 							CFDictionaryGetValue: <>
+ 1293 							CFSTR: <>
+ 1294 						recordInvalidSignedKextPath: Boolean (), <./kextd_usernotification.c 864>
+ 1295 							CFArrayAppendValue: <>
+ 1296 						recordNoLoadKextPath: Boolean (), <./kextd_usernotification.c 813>
+ 1297 							CFArrayAppendValue: <>
+ 1298 						recordExcludedKextPath: Boolean (), <./kextd_usernotification.c 920>
+ 1299 							CFArrayAppendValue: <>
+ 1300 						recordUnsignedKextPath: Boolean (), <./kextd_usernotification.c 892>
+ 1301 							CFArrayAppendValue: <>
+ 1302 						sendInvalidSignedKextNotification: void (), <./kextd_usernotification.c 880>
+ 1303 							CFArrayGetCount: <>
+ 1304 							CFRunLoopSourceSignal: <>
+ 1305 							CFRunLoopWakeUp: <>
+ 1306 							CFRunLoopGetCurrent: <>
+ 1307 						sendNoLoadKextNotification: void (), <./kextd_usernotification.c 829>
+ 1308 							CFArrayGetCount: <>
+ 1309 							CFRunLoopSourceSignal: <>
+ 1310 							CFRunLoopWakeUp: <>
+ 1311 							CFRunLoopGetCurrent: <>
+ 1312 						sendExcludedKextNotification: void (), <./kextd_usernotification.c 936>
+ 1313 							CFArrayGetCount: <>
+ 1314 							CFRunLoopSourceSignal: <>
+ 1315 							CFRunLoopWakeUp: <>
+ 1316 							CFRunLoopGetCurrent: <>
+ 1317 						sendUnsignedKextNotification: void (), <./kextd_usernotification.c 908>
+ 1318 							CFArrayGetCount: <>
+ 1319 							CFRunLoopSourceSignal: <>
+ 1320 							CFRunLoopWakeUp: <>
+ 1321 							CFRunLoopGetCurrent: <>
+ 1322 					CFWriteStreamCreateWithFile: <>
+ 1323 					CFWriteStreamOpen: <>
+ 1324 					CFPropertyListWrite: <>
+ 1325 					CFDictionaryCreateMutable: <>
+ 1326 					CFDictionarySetValue: <>
+ 1327 					CFPropertyListCreateDeepCopy: <>
+ 1328 					OSKextLogCFString: <>
+ 1329 					CFReadStreamClose: <>
+ 1330 					CFWriteStreamClose: <>
+ 1331 					SAFE_RELEASE: <>
+ 1332 			InvalidSignedKextCallback: void (), <./kextd_main.c 739>
+ 1333 				CFRetain: <>
+ 1334 				dispatch_async: <>
+ 1335 				dispatch_get_main_queue: <>
+ 1336 				writeKextAlertPlist: 1246
+ 1337 			ExcludedKextCallback: void (), <./kextd_main.c 760>
+ 1338 				CFRetain: <>
+ 1339 				dispatch_async: <>
+ 1340 				dispatch_get_main_queue: <>
+ 1341 				writeKextAlertPlist: 1246
+ 1342 			RevokedCertKextCallback: void (), <./kextd_main.c 695>
+ 1343 				CFRetain: <>
+ 1344 				dispatch_async: <>
+ 1345 				dispatch_get_main_queue: <>
+ 1346 				sendRevokedCertAlert: void (), <./kextd_usernotification.c 1688>
+ 1347 					CFDictionaryGetValue: <>
+ 1348 					CFSTR: <>
+ 1349 					CFGetTypeID: <>
+ 1350 					CFArrayGetTypeID: <>
+ 1351 					CFArrayGetCount: <>
+ 1352 					CFArrayGetValueAtIndex: <>
+ 1353 					CFDictionaryGetTypeID: <>
+ 1354 					recordRevokedCertKextPath: void (), <./kextd_usernotification.c 840>
+ 1355 						CFArrayAppendValue: <>
+ 1356 					sendRevokedCertKextPath: void (), <./kextd_usernotification.c 853>
+ 1357 						CFArrayGetCount: <>
+ 1358 						CFRunLoopSourceSignal: <>
+ 1359 						CFRunLoopWakeUp: <>
+ 1360 						CFRunLoopGetCurrent: <>
+ 1361 					SAFE_RELEASE: <>
+ 1362 			UnsignedKextCallback: void (), <./kextd_main.c 717>
+ 1363 				CFRetain: <>
+ 1364 				dispatch_async: <>
+ 1365 				dispatch_get_main_queue: <>
+ 1366 				writeKextAlertPlist: 1246
+ 1367 			LoadedKextCallback: void (), <./kextd_main.c 781>
+ 1368 				CFDictionaryGetValue: <>
+ 1369 				CFSTR: <>
+ 1370 				CFGetTypeID: <>
+ 1371 				CFArrayGetTypeID: <>
+ 1372 				CFRetain: <>
+ 1373 				dispatch_async: <>
+ 1374 				dispatch_get_main_queue: <>
+ 1375 				writeKextLoadPlist: void (), <./kextd_usernotification.c 1886>
+ 1376 					CFArrayGetCount: <>
+ 1377 					CFURLCreateFromFileSystemRepresentation: <>
+ 1378 					strlen: <>
+ 1379 					OSKextLogMemError: <>
+ 1380 					CFURLResourceIsReachable: <>
+ 1381 					CFReadStreamCreateWithFile: <>
+ 1382 					CFReadStreamOpen: <>
+ 1383 					CFPropertyListCreateWithStream: <>
+ 1384 					CFDictionaryGetValue: <>
+ 1385 					CFSTR: <>
+ 1386 					CFArrayGetValueAtIndex: <>
+ 1387 					CFArrayContainsValue: <>
+ 1388 					RANGE_ALL: <>
+ 1389 					CFArrayAppendValue: <>
+ 1390 					CFWriteStreamCreateWithFile: <>
+ 1391 					CFWriteStreamOpen: <>
+ 1392 					CFPropertyListWrite: <>
+ 1393 					CFDictionaryCreateMutable: <>
+ 1394 					CFDictionarySetValue: <>
+ 1395 					CFPropertyListCreateDeepCopy: <>
+ 1396 					CFReadStreamClose: <>
+ 1397 					CFWriteStreamClose: <>
+ 1398 					SAFE_RELEASE: <>
+ 1399 			startMonitoringConsoleUser: ExitStatus (), <./kextd_usernotification.c 137>
+ 1400 				SCDynamicStoreCreate: <>
+ 1401 				CFSTR: <>
+ 1402 				OSKextLogMemError: <>
+ 1403 				SCDynamicStoreCopyConsoleUser: <>
+ 1404 				OSKextLog: <>
+ 1405 				SCDynamicStoreKeyCreateConsoleUser: <>
+ 1406 				CFArrayCreateMutable: <>
+ 1407 				CFArrayAppendValue: <>
+ 1408 				SCDynamicStoreSetNotificationKeys: <>
+ 1409 				SCDynamicStoreCreateRunLoopSource: <>
+ 1410 				CFRunLoopAddSource: <>
+ 1411 				CFRunLoopGetCurrent: <>
+ 1412 				bzero: <>
+ 1413 				CFRunLoopSourceCreate: <>
+ 1414 				createCFMutableArray: 700
+ 1415 				createCFMutableDictionary: 770
+ 1416 				SAFE_RELEASE: <>
+ 1417 			signal: <>
+ 1418 			handleSignal: 1060
+ 1419 			SAFE_RELEASE: <>
+ 1420 		sendActiveToKernel: void (), <./kextd_main.c 423>
+ 1421 			IOCatalogueSendData: <>
+ 1422 			OSKextLog: <>
+ 1423 			safe_mach_error_string: 52
+ 1424 		sendSystemKextPersonalitiesToKernel: 1140
+ 1425 		sendFinishedToKernel: void (), <./kextd_main.c 445>
+ 1426 			IOCatalogueSendData: <>
+ 1427 			OSKextLog: <>
+ 1428 			safe_mach_error_string: 52
+ 1429 		CFRunLoopRun: <>
+ 1430 		stopMonitoringConsoleUser: void (), <./kextd_usernotification.c 263>
+ 1431 			SAFE_RELEASE: <>
+ 1432 		kextd_stop_volwatch: 1112
+ 1433 		checkArgs: ExitStatus (), <./kcgen_main.c 688>
+ 1434 			geteuid: <>
+ 1435 			OSKextLog: <>
+ 1436 			CFArrayGetCount: <>
+ 1437 			usage: 2
+ 1438 			setDefaultArchesIfNeeded: void (), <./kextcache_main.c 1350>
+ 1439 				CFArrayRemoveAllValues: <>
+ 1440 				addArch: 742
+ 1441 				OSKextGetRunningKernelArchitecture: <>
+ 1442 			getLatestTimesFromCFURLArray: 865
+ 1443 			setDefaultKernel: Boolean (), <./kextcache_main.c 995>
+ 1444 				malloc: <>
+ 1445 				OSKextLogMemError: <>
+ 1446 				getKernelPathForURL: Boolean (), <./kext_tools_util.c 1282>
+ 1447 					copyBootCachesDictForURL: CFDictionaryRef (), <./kext_tools_util.c 1341>
+ 1448 						CFURLCopyFileSystemPath: <>
+ 1449 						CFStringCreateWithFormat: <>
+ 1450 						CFSTR: <>
+ 1451 						CFStringCreateWithCString: <>
+ 1452 						CFURLCreateWithFileSystemPath: <>
+ 1453 						CFURLResourceIsReachable: <>
+ 1454 						statURL: 870
+ 1455 						CFReadStreamCreateWithFile: <>
+ 1456 						CFReadStreamOpen: <>
+ 1457 						CFPropertyListCreateWithStream: <>
+ 1458 						CFReadStreamClose: <>
+ 1459 						SAFE_RELEASE: <>
+ 1460 					CFDictionaryGetValue: <>
+ 1461 					CFGetTypeID: <>
+ 1462 					CFDictionaryGetTypeID: <>
+ 1463 					CFStringGetTypeID: <>
+ 1464 					CFStringGetFileSystemRepresentation: <>
+ 1465 					statPath: 873
+ 1466 					SAFE_RELEASE: <>
+ 1467 				strlcpy: <>
+ 1468 				useDevelopmentKernel: Boolean (), <./kext_tools_util.c 1129>
+ 1469 					statPath: 873
+ 1470 					malloc: <>
+ 1471 					strlcpy: <>
+ 1472 					strlcat: <>
+ 1473 					free: <>
+ 1474 				strlen: <>
+ 1475 				strlcat: <>
+ 1476 				statPath: 873
+ 1477 				OSKextLog: <>
+ 1478 				TIMESPEC_TO_TIMEVAL: <>
+ 1479 			statPath: 873
+ 1480 			TIMESPEC_TO_TIMEVAL: <>
+ 1481 			CFSetGetCount: <>
+ 1482 			CFEqual: <>
+ 1483 			OSKextGetSystemExtensionsFolderURLs: <>
+ 1484 			OSKextGetRunningKernelArchitecture: <>
+ 1485 			OSKextGetLogFilter: <>
+ 1486 			CFDictionaryGetCount: <>
+ 1487 			OSKextGetArchitecture: <>
+ 1488 			OSKextSetArchitecture: <>
+ 1489 			OSKextSetSimulatedSafeBoot: <>
+ 1490 			OSKextGetActualSafeBoot: <>
+ 1491 			CFArrayAppendArray: <>
+ 1492 			RANGE_ALL: <>
+ 1493 			getKernelPathForURL: 1446
+ 1494 			strlcpy: <>
+ 1495 			useDevelopmentKernel: 1468
+ 1496 			strlen: <>
+ 1497 			strlcat: <>
+ 1498 			CFURLCreateFromFileSystemRepresentation: <>
+ 1499 			OSKextLogStringError: <>
+ 1500 			CFURLGetFileSystemRepresentation: <>
+ 1501 			createCFDataFromFile: Boolean (), <./kext_tools_util.c 136>
+ 1502 				open: <>
+ 1503 				fstat: <>
+ 1504 				CFAllocatorAllocate: <>
+ 1505 				read: <>
+ 1506 				CFDataCreateWithBytesNoCopy: <>
+ 1507 				CFAllocatorDeallocate: <>
+ 1508 				close: <>
+ 1509 				OSKextLog: <>
+ 1510 			adjustLogFilterForInteractive: void (), <./kextutil_main.c 872>
+ 1511 				OSKextSetLogFilter: <>
+ 1512 		createKextsIfNecessary: ExitStatus (), <./kextunload_main.c 280>
+ 1513 			CFArrayGetCount: <>
+ 1514 			createCFMutableArray: 700
+ 1515 			CFArrayGetValueAtIndex: <>
+ 1516 			CFURLGetFileSystemRepresentation: <>
+ 1517 			SAFE_RELEASE_NULL: <>
+ 1518 			OSKextCreate: <>
+ 1519 			OSKextLog: <>
+ 1520 			addToArrayIfAbsent: 721
+ 1521 			SAFE_RELEASE: <>
+ 1522 		terminateKextClasses: ExitStatus (), <./kextunload_main.c 326>
+ 1523 			CFArrayGetCount: <>
+ 1524 			CFArrayGetValueAtIndex: <>
+ 1525 			IOCatalogueTerminate: <>
+ 1526 			OSKextLog: <>
+ 1527 			safe_mach_error_string: 52
+ 1528 		unloadKextsByIdentifier: ExitStatus (), <./kextunload_main.c 376>
+ 1529 			CFArrayGetCount: <>
+ 1530 			SAFE_RELEASE_NULL: <>
+ 1531 			CFArrayGetValueAtIndex: <>
+ 1532 			CFStringCreateWithCString: <>
+ 1533 			unloadKextWithIdentifier: ExitStatus (), <./kextunload_main.c 489>
+ 1534 				createUTF8CStringForCFString: 155
+ 1535 				OSKextLogMemError: <>
+ 1536 				IOCatalogueTerminate: <>
+ 1537 				OSKextUnloadKextWithIdentifier: <>
+ 1538 				OSKextLog: <>
+ 1539 				safe_mach_error_string: 52
+ 1540 				SAFE_FREE: <>
+ 1541 			SAFE_RELEASE: <>
+ 1542 			OSKextLog: <>
+ 1543 		unloadKextsByURL: ExitStatus (), <./kextunload_main.c 425>
+ 1544 			CFArrayGetCount: <>
+ 1545 			CFArrayGetValueAtIndex: <>
+ 1546 			OSKextGetURL: <>
+ 1547 			OSKextGetIdentifier: <>
+ 1548 			CFURLGetFileSystemRepresentation: <>
+ 1549 			memcpy: <>
+ 1550 			unloadKextWithIdentifier: 1533
+ 1551 			OSKextLog: <>
+ 1552 		SAFE_RELEASE: <>
+ 1553 		checkAccess: ExitStatus (), <./kextload_main.c 319>
+ 1554 			bootstrap_look_up: <>
+ 1555 			geteuid: <>
+ 1556 			OSKextLog: <>
+ 1557 			mach_port_deallocate: <>
+ 1558 			mach_task_self: <>
+ 1559 		CFArrayAppendArray: <>
+ 1560 		RANGE_ALL: <>
+ 1561 		loadKextsViaKextd: ExitStatus (), <./kextload_main.c 373>
+ 1562 			index: <>
+ 1563 			CFArrayGetCount: <>
+ 1564 			CFArrayGetValueAtIndex: <>
+ 1565 			CFStringGetCString: <>
+ 1566 			strlcpy: <>
+ 1567 			OSKextLog: <>
+ 1568 			KextManagerLoadKextWithIdentifier: <>
+ 1569 			safe_mach_error_string: 52
+ 1570 			exitStatusForOSReturn: ExitStatus (), <./kextload_main.c 697>
+ 1571 			CFURLGetFileSystemRepresentation: <>
+ 1572 			KextManagerLoadKextWithURL: <>
+ 1573 		loadKextsIntoKernel: ExitStatus (), <./kextload_main.c 456>
+ 1574 			index: <>
+ 1575 			OSKextLog: <>
+ 1576 			OSKextCreateKextsFromURLs: <>
+ 1577 			isKextdRunning: Boolean (), <./security.c 1739>
+ 1578 				bootstrap_look_up: <>
+ 1579 			callSecKeychainMDSInstall: int (), <./security.c 1713>
+ 1580 				isKextdRunning: 1577
+ 1581 				err: <>
+ 1582 				SecKeychainMDSInstall: <>
+ 1583 				OSKextLog: <>
+ 1584 			statfs: <>
+ 1585 			CFArrayGetCount: <>
+ 1586 			CFArrayGetValueAtIndex: <>
+ 1587 			CFStringGetCString: <>
+ 1588 			strlcpy: <>
+ 1589 			OSKextGetKextWithIdentifier: <>
+ 1590 			CFStringCompare: <>
+ 1591 			CFSTR: <>
+ 1592 			OSKextLogCFString: <>
+ 1593 			checkKextSignature: OSStatus (), <./security.c 1209>
+ 1594 				CFURLCopyAbsoluteURL: <>
+ 1595 				OSKextGetURL: <>
+ 1596 				OSKextLogMemError: <>
+ 1597 				SecStaticCodeCreateWithPath: <>
+ 1598 				OSKextGetIdentifier: <>
+ 1599 				CFStringHasPrefix: <>
+ 1600 				CFSTR: <>
+ 1601 				SecRequirementCreateWithString: <>
+ 1602 				SecStaticCodeCheckValidity: <>
+ 1603 				isInExceptionList: Boolean (), <./security.c 1310>
+ 1604 					SAFE_RELEASE_NULL: <>
+ 1605 					CFStringCreateWithCString: <>
+ 1606 					OSKextLogStringError: <>
+ 1607 					OSKextCreateWithIdentifier: <>
+ 1608 					isDevMode: Boolean (), <./security.c 1623>
+ 1609 						sysctlbyname: <>
+ 1610 						strnstr: <>
+ 1611 						strtoul: <>
+ 1612 						strlen: <>
+ 1613 					checkKextSignature: 1593
+ 1614 					CFURLGetFileSystemRepresentation: <>
+ 1615 					OSKextGetURL: <>
+ 1616 					strlcpy: <>
+ 1617 					OSKextLog: <>
+ 1618 					OSKextGetValueForInfoDictionaryKey: <>
+ 1619 					CFSTR: <>
+ 1620 					CFDictionaryGetCount: <>
+ 1621 					CFDictionaryCreateCopy: <>
+ 1622 					OSKextLogMemError: <>
+ 1623 					CFURLCopyAbsoluteURL: <>
+ 1624 					hashIsInExceptionList: Boolean (), <./security.c 1573>
+ 1625 						getAdhocSignatureHash: void (), <./security.c 203>
+ 1626 							SecStaticCodeCreateWithPath: <>
+ 1627 							OSKextLogMemError: <>
+ 1628 							CFDataCreateMutable: <>
+ 1629 							CFDictionaryCreateMutable: <>
+ 1630 							CFDictionarySetValue: <>
+ 1631 							CFNumberCreate: <>
+ 1632 							CFSTR: <>
+ 1633 							SecCodeSignerCreate: <>
+ 1634 							OSKextLog: <>
+ 1635 							SecCodeSignerAddSignature: <>
+ 1636 							SecCodeSetDetachedSignature: <>
+ 1637 							SecCodeCopySigningInformation: <>
+ 1638 							CFRetain: <>
+ 1639 							CFDictionaryGetValue: <>
+ 1640 							CFDataGetBytePtr: <>
+ 1641 							CFDataGetLength: <>
+ 1642 							malloc: <>
+ 1643 							OSKextLogCFString: <>
+ 1644 							bzero: <>
+ 1645 							sprintf: <>
+ 1646 							SAFE_RELEASE: <>
+ 1647 						CFStringCreateWithCString: <>
+ 1648 						OSKextLogMemError: <>
+ 1649 						CFDictionaryGetValue: <>
+ 1650 						CFGetTypeID: <>
+ 1651 						CFStringGetTypeID: <>
+ 1652 						OSKextLogCFString: <>
+ 1653 						CFSTR: <>
+ 1654 						SAFE_RELEASE: <>
+ 1655 						SAFE_FREE: <>
+ 1656 					bundleIdIsInExceptionList: Boolean (), <./security.c 1495>
+ 1657 						OSKextGetIdentifier: <>
+ 1658 						OSKextLog: <>
+ 1659 						OSKextGetVersion: <>
+ 1660 						CFDictionaryGetValue: <>
+ 1661 						GET_CSTRING_PTR: <>
+ 1662 						strlen: <>
+ 1663 						OSKextParseVersionString: <>
+ 1664 						OSKextLogCFString: <>
+ 1665 						CFSTR: <>
+ 1666 					SAFE_RELEASE: <>
+ 1667 				SAFE_RELEASE: <>
+ 1668 			isInvalidSignatureAllowed: Boolean (), <./security.c 1696>
+ 1669 				isDevMode: 1608
+ 1670 			OSKextLoadWithOptions: <>
+ 1671 			safe_mach_error_string: 52
+ 1672 			exitStatusForOSReturn: 1570
+ 1673 			CFURLGetFileSystemRepresentation: <>
+ 1674 			OSKextGetKextWithURL: <>
+ 1675 			OSKextGetIdentifier: <>
+ 1676 		bzero: <>
+ 1677 		OSKextSetArchitecture: <>
+ 1678 		QEQueryCreate: QEQueryRef (), <./QEQuery.c 138>
+ 1679 			malloc: <>
+ 1680 			bzero: <>
+ 1681 			CFArrayCreateMutable: <>
+ 1682 			CFDictionaryCreateMutable: <>
+ 1683 			CFArrayAppendValue: <>
+ 1684 			QEQuerySetOperators: void (), <./QEQuery.c 243>
+ 1685 				CFDictionarySetValue: <>
+ 1686 				CFSTR: <>
+ 1687 			QEQueryFree: void (), <./QEQuery.c 214>
+ 1688 				CFRelease: <>
+ 1689 				free: <>
+ 1690 		QEQuerySetParseCallbackForPredicate: void (), <./QEQuery.c 267>
+ 1691 			CFDataCreate: <>
+ 1692 			CFDictionarySetValue: <>
+ 1693 			CFDictionaryRemoveValue: <>
+ 1694 			CFRelease: <>
+ 1695 		QEQuerySetSynonymForPredicate: void (), <./QEQuery.c 321>
+ 1696 			CFDictionarySetValue: <>
+ 1697 			CFDictionaryRemoveValue: <>
+ 1698 		QEQuerySetEvaluationCallbackForPredicate: void (), <./QEQuery.c 294>
+ 1699 			CFDataCreate: <>
+ 1700 			CFDictionarySetValue: <>
+ 1701 			CFDictionaryRemoveValue: <>
+ 1702 			CFRelease: <>
+ 1703 		CFSTR: <>
+ 1704 		strcmp: <>
+ 1705 		QEQueryAppendElementFromArgs: Boolean (), <./QEQuery.c 497>
+ 1706 			index: <>
+ 1707 			CFEqual: <>
+ 1708 			CFDictionaryGetValue: <>
+ 1709 			CFSTR: <>
+ 1710 			CFRelease: <>
+ 1711 			QEQueryAppendAndOperator: Boolean (), <./QEQuery.c 702>
+ 1712 			QEQueryAppendOrOperator: Boolean (), <./QEQuery.c 732>
+ 1713 			QEQueryEndGroup: Boolean (), <./QEQuery.c 800>
+ 1714 				QEQueryIsComplete: Boolean (), <./QEQuery.c 338>
+ 1715 			parseCallback: <>
+ 1716 			QEQueryCreateElement: CFMutableDictionaryRef (), <./QEQuery.c 625>
+ 1717 				CFDictionaryCreateMutable: <>
+ 1718 				CFDictionaryGetValue: <>
+ 1719 				QEQueryElementSetPredicate: void (), <./QEQuery.c 921>
+ 1720 					CFDictionarySetValue: <>
+ 1721 				QEQueryElementSetArgumentsArray: void (), <./QEQuery.c 933>
+ 1722 					CFDictionarySetValue: <>
+ 1723 				CFDictionarySetValue: <>
+ 1724 			QEQueryAppendElement: Boolean (), <./QEQuery.c 670>
+ 1725 				QEQueryAppendAndOperator: 1711
+ 1726 				CFDictionaryGetValue: <>
+ 1727 				CFArrayAppendValue: <>
+ 1728 		QEQueryLastError: QEQueryError (), <./QEQuery.c 353>
+ 1729 		QEQueryIsComplete: 1714
+ 1730 		QEQuerySetShortCircuits: void (), <./QEQuery.c 364>
+ 1731 		OSKextCreateKextsFromURLs: <>
+ 1732 		CFArrayGetCount: <>
+ 1733 		OSKextReadLoadedKextInfo: <>
+ 1734 		CFArrayGetValueAtIndex: <>
+ 1735 		QEQueryEvaluate: Boolean (), <./QEQuery.c 478>
+ 1736 			QEQueryIsComplete: 1714
+ 1737 		printKext: void (), <./kextfind_commands.c 141>
+ 1738 			copyPathForKext: CFStringRef (), <./kextfind_commands.c 37>
+ 1739 				CFSTR: <>
+ 1740 				OSKextGetURL: <>
+ 1741 				OSKextLog: <>
+ 1742 				CFURLCopyLastPathComponent: <>
+ 1743 				CFURLCopyAbsoluteURL: <>
+ 1744 				OSKextLogMemError: <>
+ 1745 				CFURLCopyFileSystemPath: <>
+ 1746 				OSKextCopyContainerForPluginKext: <>
+ 1747 				CFURLCreateCopyDeletingLastPathComponent: <>
+ 1748 				CFRangeMake: <>
+ 1749 				CFStringGetLength: <>
+ 1750 				CFStringCreateWithSubstring: <>
+ 1751 				SAFE_RELEASE: <>
+ 1752 			OSKextLogMemError: <>
+ 1753 			createUTF8CStringForCFString: 155
+ 1754 			OSKextGetIdentifier: <>
+ 1755 			OSKextGetValueForInfoDictionaryKey: <>
+ 1756 			fprintf: <>
+ 1757 			SAFE_RELEASE: <>
+ 1758 			SAFE_FREE: <>
+ 1759 		QEQueryFree: 1687
+ 1760 		open: <>
+ 1761 		mapAndSwapFatHeaderPage: void * (), <./kernelcache.c 179>
+ 1762 			mmap: <>
+ 1763 			OSKextLog: <>
+ 1764 			swap_fat_header: <>
+ 1765 			NXHostByteOrder: <>
+ 1766 			swap_fat_arch: <>
+ 1767 			unmapFatHeaderPage: void (), <./kernelcache.c 222>
+ 1768 				munmap: <>
+ 1769 		getFirstFatArch: struct fat_arch (), <./kernelcache.c 231>
+ 1770 		NXGetArchInfoFromCpuType: <>
+ 1771 		readMachOSliceForArch: CFDataRef (), <./kernelcache.c 544>
+ 1772 			open: <>
+ 1773 			mapAndSwapFatHeaderPage: 1761
+ 1774 			NXFindBestFatArch: <>
+ 1775 			OSKextLog: <>
+ 1776 			fstat: <>
+ 1777 			readMachOSlice: CFDataRef (), <./kernelcache.c 630>
+ 1778 				malloc: <>
+ 1779 				OSKextLogMemError: <>
+ 1780 				lseek: <>
+ 1781 				OSKextLog: <>
+ 1782 				read: <>
+ 1783 				CFDataCreateWithBytesNoCopy: <>
+ 1784 				SAFE_FREE: <>
+ 1785 			verifyMachOIsArch: int (), <./kernelcache.c 692>
+ 1786 				OSSwapInt32: <>
+ 1787 				OSKextLog: <>
+ 1788 			CFDataGetBytePtr: <>
+ 1789 			CFRetain: <>
+ 1790 			SAFE_RELEASE: <>
+ 1791 			close: <>
+ 1792 			unmapFatHeaderPage: 1767
+ 1793 		MAGIC32: <>
+ 1794 		CFDataGetBytePtr: <>
+ 1795 		OSSwapHostToBigInt32: <>
+ 1796 		uncompressPrelinkedSlice: CFDataRef (), <./kernelcache.c 750>
+ 1797 			adler32: __private_extern__ u_int32_t (), <./mkext.c 34>
+ 1798 			CFDataGetBytePtr: <>
+ 1799 			OSSwapHostToBigInt32: <>
+ 1800 			OSKextLog: <>
+ 1801 			OSSwapBigToHostInt32: <>
+ 1802 			CFDataCreateMutable: <>
+ 1803 			CFDataSetLength: <>
+ 1804 			CFDataGetMutableBytePtr: <>
+ 1805 			OSKextLogMemError: <>
+ 1806 			decompress_lzss: __private_extern__ int (), <./mkext.c 96>
+ 1807 			CFDataGetLength: <>
+ 1808 			lzvn_decode: size_t (), <./kernelcache.c 1076>
+ 1809 			local_adler32: u_int32_t (), <./compression.c 28>
+ 1810 			CFRetain: <>
+ 1811 			SAFE_RELEASE: <>
+ 1812 		CFRetain: <>
+ 1813 		ISMACHO64: <>
+ 1814 		macho_get_section_by_name_64: <>
+ 1815 		macho_get_section_by_name: <>
+ 1816 		IOCFUnserialize: <>
+ 1817 		unmapFatHeaderPage: 1767
+ 1818 		close: <>
+ 1819 		getenv: <>
+ 1820 		isDebugSetInBootargs: Boolean (), <./kext_tools_util.c 414>
+ 1821 			IORegistryEntryFromPath: <>
+ 1822 			IORegistryEntryCreateCFProperty: <>
+ 1823 			CFSTR: <>
+ 1824 			CFGetTypeID: <>
+ 1825 			CFStringGetTypeID: <>
+ 1826 			CFStringFind: <>
+ 1827 			IOObjectRelease: <>
+ 1828 			SAFE_RELEASE: <>
+ 1829 		strlcat: <>
+ 1830 		free: <>
+ 1831 		checkKextdSpawnedFilter: void (), <./kextcache_main.c 1402>
+ 1832 			getenv: <>
+ 1833 			OSKextGetLogFilter: <>
+ 1834 			strtoul: <>
+ 1835 			MAX: <>
+ 1836 			OSKextSetLogFilter: <>
+ 1837 			snprintf: <>
+ 1838 			setenv: <>
+ 1839 		setpriority: <>
+ 1840 		getpid: <>
+ 1841 		setiopolicy_np: <>
+ 1842 		waitForGreatSystemLoad: void (), <./kextcache_main.c 1157>
+ 1843 			bzero: <>
+ 1844 			OSKextLog: <>
+ 1845 			notify_register_file_descriptor: <>
+ 1846 			notify_get_state: <>
+ 1847 			gettimeofday: <>
+ 1848 			timeval_difference: void (), <./kextcache_main.c 1331>
+ 1849 				usecs_from_timeval: u_int (), <./kextcache_main.c 1301>
+ 1850 				timeval_from_usecs: void (), <./kextcache_main.c 1315>
+ 1851 					bzero: <>
+ 1852 			usecs_from_timeval: 1849
+ 1853 			FD_ZERO: <>
+ 1854 			FD_SET: <>
+ 1855 			FD_COPY: <>
+ 1856 			select: <>
+ 1857 			FD_ISSET: <>
+ 1858 			read: <>
+ 1859 			ntohl: <>
+ 1860 			sleep: <>
+ 1861 			notify_cancel: <>
+ 1862 		doUpdateVolume: ExitStatus (), <./kextcache_main.c 953>
+ 1863 			IOPMAssertionCreateWithName: <>
+ 1864 			CFSTR: <>
+ 1865 			OSKextLog: <>
+ 1866 			checkUpdateCachesAndBoots: 13
+ 1867 			IOPMAssertionRelease: <>
+ 1868 		CFURLGetFileSystemRepresentation: <>
+ 1869 		utimes: <>
+ 1870 		compressPrelinkedKernel: ExitStatus (), <./kcgen_main.c 1210>
+ 1871 			readMachOSlices: ExitStatus (), <./kernelcache.c 445>
+ 1872 				createCFMutableArray: 700
+ 1873 				OSKextLogMemError: <>
+ 1874 				open: <>
+ 1875 				fstat: <>
+ 1876 				mapAndSwapFatHeaderPage: 1761
+ 1877 				getFirstFatArch: struct fat_arch (), <./kernelcache.c 231>
+ 1878 				readMachOSlice: 1777
+ 1879 				CFArrayAppendValue: <>
+ 1880 				getNextFatArch: struct fat_arch (), <./kernelcache.c 251>
+ 1881 				CFRelease: <>
+ 1882 				readFatFileArchsWithHeader: ExitStatus (), <./kernelcache.c 393>
+ 1883 					archInfoEqualityCallback: Boolean (), <./kernelcache.c 382>
+ 1884 					createCFMutableArray: 700
+ 1885 					OSKextLogMemError: <>
+ 1886 					getFirstFatArch: struct fat_arch (), <./kernelcache.c 231>
+ 1887 					NXGetArchInfoFromCpuType: <>
+ 1888 					CFArrayAppendValue: <>
+ 1889 					getNextFatArch: struct fat_arch (), <./kernelcache.c 251>
+ 1890 					getThinHeaderPageArch: const NXArchInfo * (), <./kernelcache.c 305>
+ 1891 						swap_mach_header: <>
+ 1892 						NXHostByteOrder: <>
+ 1893 						swap_mach_header_64: <>
+ 1894 						NXGetArchInfoFromCpuType: <>
+ 1895 					CFRetain: <>
+ 1896 					SAFE_RELEASE: <>
+ 1897 				CFRetain: <>
+ 1898 				TIMESPEC_TO_TIMEVAL: <>
+ 1899 				SAFE_RELEASE: <>
+ 1900 				SAFE_FREE: <>
+ 1901 				close: <>
+ 1902 				unmapFatHeaderPage: 1767
+ 1903 			CFArrayGetCount: <>
+ 1904 			SAFE_RELEASE_NULL: <>
+ 1905 			CFArrayGetValueAtIndex: <>
+ 1906 			CFDataGetBytePtr: <>
+ 1907 			wantsFastLibCompressionForTargetVolume: Boolean (), <./kextcache_main.c 2409>
+ 1908 				copyBootCachesDictForURL: 1447
+ 1909 				CFDictionaryGetValue: <>
+ 1910 				CFGetTypeID: <>
+ 1911 				CFDictionaryGetTypeID: <>
+ 1912 				CFStringGetTypeID: <>
+ 1913 				CFStringCompare: <>
+ 1914 				CFSTR: <>
+ 1915 				SAFE_RELEASE: <>
+ 1916 				supportsFastLibCompression: 794
+ 1917 			compressPrelinkedSlice: CFDataRef (), <./kernelcache.c 844>
+ 1918 				adler32: 1797
+ 1919 				CFDataGetBytePtr: <>
+ 1920 				OSSwapHostToBigInt: <>
+ 1921 				OSKextLog: <>
+ 1922 				CFDataGetLength: <>
+ 1923 				CFDataCreateMutable: <>
+ 1924 				CFDataSetLength: <>
+ 1925 				CFDataGetMutableBytePtr: <>
+ 1926 				OSKextLogMemError: <>
+ 1927 				bzero: <>
+ 1928 				OSSwapHostToBigInt32: <>
+ 1929 				local_adler32: 1809
+ 1930 				malloc: <>
+ 1931 				lzvn_encode_work_size: size_t (), <./kernelcache.c 1088>
+ 1932 				lzvn_encode: size_t (), <./kernelcache.c 1062>
+ 1933 				free: <>
+ 1934 				compress_lzss: __private_extern__ u_int8_t * (), <./mkext.c 255>
+ 1935 					malloc: <>
+ 1936 					init_state: void (), <./compression.c 146>
+ 1937 						bzero: <>
+ 1938 					insert_node: void (), <./compression.c 168>
+ 1939 					delete_node: void (), <./compression.c 219>
+ 1940 					free: <>
+ 1941 					init_state: void (), <./mkext.c 149>
+ 1942 						bzero: <>
+ 1943 					insert_node: void (), <./mkext.c 171>
+ 1944 					delete_node: void (), <./mkext.c 222>
+ 1945 				CFRetain: <>
+ 1946 				SAFE_RELEASE: <>
+ 1947 			OSSwapHostToBigInt32: <>
+ 1948 			uncompressPrelinkedSlice: 1796
+ 1949 			CFArraySetValueAtIndex: <>
+ 1950 			createCFMutableArray: 700
+ 1951 			OSKextLogMemError: <>
+ 1952 			getThinHeaderPageArch: 1890
+ 1953 			CFArrayAppendValue: <>
+ 1954 			OSKextLog: <>
+ 1955 			writeFatFile: ExitStatus (), <./kernelcache.c 39>
+ 1956 				strlcpy: <>
+ 1957 				strlcat: <>
+ 1958 				OSKextLogStringError: <>
+ 1959 				mkstemp: <>
+ 1960 				OSKextLog: <>
+ 1961 				strerror: <>
+ 1962 				umask: <>
+ 1963 				fchmod: <>
+ 1964 				CFArrayGetCount: <>
+ 1965 				OSSwapHostToBigInt32: <>
+ 1966 				writeToFile: ExitStatus (), <./kext_tools_util.c 191>
+ 1967 					write: <>
+ 1968 					OSKextLog: <>
+ 1969 					strerror: <>
+ 1970 				CFArrayGetValueAtIndex: <>
+ 1971 				CFDataGetLength: <>
+ 1972 				CFDataGetBytePtr: <>
+ 1973 				rename: <>
+ 1974 				utimes: <>
+ 1975 				close: <>
+ 1976 				unlink: <>
+ 1977 			SAFE_RELEASE: <>
+ 1978 		getLoadedKextInfo: ExitStatus (), <./kextcache_main.c 1626>
+ 1979 			waitForIOKitQuiescence: void (), <./kextcache_main.c 1121>
+ 1980 				isKextdRunning: 1577
+ 1981 				OSKextLog: <>
+ 1982 				IOKitWaitQuiet: <>
+ 1983 				safe_mach_error_string: 52
+ 1984 			OSKextCopyAllRequestedIdentifiers: <>
+ 1985 			OSKextCopyKextsWithIdentifiers: <>
+ 1986 			SAFE_RELEASE: <>
+ 1987 		updateSystemPlistCaches: ExitStatus (), <./kextcache_main.c 1663>
+ 1988 			OSKextGetArchitecture: <>
+ 1989 			OSKextGetSystemExtensionsFolderURLs: <>
+ 1990 			OSKextLogMemError: <>
+ 1991 			OSKextCreateKextsFromURLs: <>
+ 1992 			CFArrayGetCount: <>
+ 1993 			CFArrayGetValueAtIndex: <>
+ 1994 			SAFE_RELEASE_NULL: <>
+ 1995 			OSKextSetArchitecture: <>
+ 1996 			OSKextCopyPersonalitiesOfKexts: <>
+ 1997 			CFSTR: <>
+ 1998 			readSystemKextPropertyValues: 1179
+ 1999 			CFURLGetFileSystemRepresentation: <>
+ 2000 			OSKextLogStringError: <>
+ 2001 			updateDirectoryCaches: ExitStatus (), <./kextcache_main.c 1764>
+ 2002 				OSKextCreateKextsFromURL: <>
+ 2003 				SAFE_RELEASE: <>
+ 2004 			OSKextLog: <>
+ 2005 			SAFE_RELEASE: <>
+ 2006 		createMkext: ExitStatus (), <./kextcache_main.c 1801>
+ 2007 			getenv: <>
+ 2008 			takeVolumeForPath: 18
+ 2009 			createCFMutableArray: 700
+ 2010 			OSKextLogMemError: <>
+ 2011 			CFArrayGetCount: <>
+ 2012 			CFArrayGetValueAtIndex: <>
+ 2013 			SAFE_RELEASE_NULL: <>
+ 2014 			OSKextSetArchitecture: <>
+ 2015 			OSKextLog: <>
+ 2016 			filterKextsForCache: ExitStatus (), <./kcgen_main.c 843>
+ 2017 				createCFMutableArray: 700
+ 2018 				OSKextLogMemError: <>
+ 2019 				isValidKextSigningTargetVolume: Boolean (), <./kextcache_main.c 2383>
+ 2020 					copyBootCachesDictForURL: 1447
+ 2021 					CFDictionaryGetValue: <>
+ 2022 					CFGetTypeID: <>
+ 2023 					CFDictionaryGetTypeID: <>
+ 2024 					CFDictionaryContainsKey: <>
+ 2025 					SAFE_RELEASE: <>
+ 2026 				CFSetGetCount: <>
+ 2027 				CFSetApplyFunction: <>
+ 2028 				filterKextID: void (), <./kcgen_main.c 740>
+ 2029 					OSKextGetKextWithIdentifier: <>
+ 2030 					CFStringGetCString: <>
+ 2031 					OSKextLog: <>
+ 2032 					kextMatchesFilter: Boolean (), <./kextcache_main.c 2457>
+ 2033 						OSKextGetArchitecture: <>
+ 2034 						OSKextGetRunningKernelArchitecture: <>
+ 2035 						OSKextMatchesRequiredFlags: <>
+ 2036 						CFArrayContainsValue: <>
+ 2037 						RANGE_ALL: <>
+ 2038 					CFArrayContainsValue: <>
+ 2039 					RANGE_ALL: <>
+ 2040 					CFArrayAppendValue: <>
+ 2041 					checkKextForProblems: ExitStatus (), <./kcgen_main.c 788>
+ 2042 						CFURLGetFileSystemRepresentation: <>
+ 2043 						OSKextGetURL: <>
+ 2044 						strlcpy: <>
+ 2045 						OSKextSupportsArchitecture: <>
+ 2046 						OSKextLog: <>
+ 2047 						OSKextIsValid: <>
+ 2048 						OSKextLogDiagnostics: <>
+ 2049 						OSKextResolveDependencies: <>
+ 2050 				CFArrayGetCount: <>
+ 2051 				CFArrayGetValueAtIndex: <>
+ 2052 				kextMatchesFilter: 2032
+ 2053 				CFURLGetFileSystemRepresentation: <>
+ 2054 				OSKextGetURL: <>
+ 2055 				strlcpy: <>
+ 2056 				OSKextLog: <>
+ 2057 				CFArrayContainsValue: <>
+ 2058 				RANGE_ALL: <>
+ 2059 				CFArrayRemoveAllValues: <>
+ 2060 				callSecKeychainMDSInstall: 1579
+ 2061 				isKextdRunning: 1577
+ 2062 				OSKextIsInExcludeList: <>
+ 2063 				isInExceptionList: 1603
+ 2064 				OSKextSupportsArchitecture: <>
+ 2065 				OSKextIsValid: <>
+ 2066 				OSKextLogDiagnostics: <>
+ 2067 				OSKextIsAuthentic: <>
+ 2068 				addKextToAlertDict: void (), <./kext_tools_util.c 287>
+ 2069 					CFDictionaryCreateMutable: <>
+ 2070 					OSKextGetIdentifier: <>
+ 2071 					CFStringHasPrefix: <>
+ 2072 					OSKextGetValueForInfoDictionaryKey: <>
+ 2073 					CFURLCopyAbsoluteURL: <>
+ 2074 					OSKextGetURL: <>
+ 2075 					CFURLCopyFileSystemPath: <>
+ 2076 					CFDictionaryGetValue: <>
+ 2077 					CFSTR: <>
+ 2078 					CFArrayCreateMutable: <>
+ 2079 					CFDictionarySetValue: <>
+ 2080 					CFArrayGetCount: <>
+ 2081 					CFArrayGetValueAtIndex: <>
+ 2082 					CFDictionaryContainsValue: <>
+ 2083 					CFDictionaryAddValue: <>
+ 2084 					CFArrayAppendValue: <>
+ 2085 					SAFE_RELEASE: <>
+ 2086 				messageTraceExcludedKext: void (), <./security.c 66>
+ 2087 					CFURLCopyAbsoluteURL: <>
+ 2088 					OSKextGetURL: <>
+ 2089 					OSKextLogMemError: <>
+ 2090 					OSKextGetValueForInfoDictionaryKey: <>
+ 2091 					createUTF8CStringForCFString: 155
+ 2092 					CFURLCopyLastPathComponent: <>
+ 2093 					SAFE_RELEASE: <>
+ 2094 					asl_new: <>
+ 2095 					asl_set: <>
+ 2096 					asl_log: <>
+ 2097 					SAFE_FREE: <>
+ 2098 					asl_free: <>
+ 2099 				OSKextResolveDependencies: <>
+ 2100 				checkKextSignature: 1593
+ 2101 				isInvalidSignatureAllowed: 1668
+ 2102 				OSKextLogCFString: <>
+ 2103 				CFSTR: <>
+ 2104 				CFArrayAppendValue: <>
+ 2105 				recordKextLoadListForMT: void (), <./security.c 1161>
+ 2106 					CFArrayGetCount: <>
+ 2107 					CFArrayCreateMutable: <>
+ 2108 					CFArrayGetValueAtIndex: <>
+ 2109 					filterKextLoadForMT: void (), <./security.c 896>
+ 2110 						isDebugSetInBootargs: 1820
+ 2111 						CFURLCopyAbsoluteURL: <>
+ 2112 						OSKextGetURL: <>
+ 2113 						OSKextLogMemError: <>
+ 2114 						CFURLCopyFileSystemPath: <>
+ 2115 						OSKextGetValueForInfoDictionaryKey: <>
+ 2116 						CFURLCopyLastPathComponent: <>
+ 2117 						createArchitectureList: CFStringRef (), <./security.c 420>
+ 2118 							OSKextCopyArchitectures: <>
+ 2119 							CFArrayCreateMutable: <>
+ 2120 							CFStringCreateWithCString: <>
+ 2121 							CFArrayAppendValue: <>
+ 2122 							SAFE_RELEASE_NULL: <>
+ 2123 							CFStringCreateByCombiningStrings: <>
+ 2124 							CFSTR: <>
+ 2125 							SAFE_RELEASE: <>
+ 2126 							SAFE_FREE: <>
+ 2127 						SecStaticCodeCreateWithPath: <>
+ 2128 						SecCodeCopySigningInformation: <>
+ 2129 						CFDictionaryContainsKey: <>
+ 2130 						CFSTR: <>
+ 2131 						getAdhocSignatureHash: 1625
+ 2132 						CFStringCreateWithCString: <>
+ 2133 						OSKextGetIdentifier: <>
+ 2134 						checkKextSignature: 1593
+ 2135 						CFStringHasPrefix: <>
+ 2136 						copySigningInfo: void (), <./security.c 745>
+ 2137 							SecStaticCodeCreateWithPath: <>
+ 2138 							OSKextLogMemError: <>
+ 2139 							copyCDHash: CFStringRef (), <./security.c 689>
+ 2140 								SecCodeCopySigningInformation: <>
+ 2141 								CFDictionaryGetValue: <>
+ 2142 								CFGetTypeID: <>
+ 2143 								CFDataGetTypeID: <>
+ 2144 								CFDataGetBytePtr: <>
+ 2145 								CFDataGetLength: <>
+ 2146 								malloc: <>
+ 2147 								OSKextLogMemError: <>
+ 2148 								bzero: <>
+ 2149 								sprintf: <>
+ 2150 								CFStringCreateWithCString: <>
+ 2151 								SAFE_FREE: <>
+ 2152 								SAFE_RELEASE: <>
+ 2153 							SecCodeCopySigningInformation: <>
+ 2154 							CFDictionaryGetValue: <>
+ 2155 							CFGetTypeID: <>
+ 2156 							CFArrayGetTypeID: <>
+ 2157 							CFArrayGetCount: <>
+ 2158 							CFArrayGetValueAtIndex: <>
+ 2159 							SecCertificateCopyCommonName: <>
+ 2160 							copyTeamID: CFStringRef (), <./security.c 482>
+ 2161 								CFGetTypeID: <>
+ 2162 								SecCertificateGetTypeID: <>
+ 2163 								CFArrayCreateMutable: <>
+ 2164 								CFArrayAppendValue: <>
+ 2165 								SecCertificateCopyValues: <>
+ 2166 								CFDictionaryGetTypeID: <>
+ 2167 								CFDictionaryGetValue: <>
+ 2168 								CFArrayGetTypeID: <>
+ 2169 								index: <>
+ 2170 								CFArrayGetValueAtIndex: <>
+ 2171 								CFStringCompare: <>
+ 2172 								CFSTR: <>
+ 2173 								CFStringGetTypeID: <>
+ 2174 								CFRetain: <>
+ 2175 								CFShow: <>
+ 2176 								SAFE_RELEASE: <>
+ 2177 							copyIssuerCN: CFStringRef (), <./security.c 602>
+ 2178 								CFGetTypeID: <>
+ 2179 								SecCertificateGetTypeID: <>
+ 2180 								CFArrayCreateMutable: <>
+ 2181 								CFArrayAppendValue: <>
+ 2182 								SecCertificateCopyValues: <>
+ 2183 								CFDictionaryGetTypeID: <>
+ 2184 								CFDictionaryGetValue: <>
+ 2185 								CFArrayGetTypeID: <>
+ 2186 								index: <>
+ 2187 								CFArrayGetValueAtIndex: <>
+ 2188 								CFStringCompare: <>
+ 2189 								CFSTR: <>
+ 2190 								CFStringGetTypeID: <>
+ 2191 								CFRetain: <>
+ 2192 								SAFE_RELEASE: <>
+ 2193 							SAFE_RELEASE: <>
+ 2194 						copySubjectCNArray: CFArrayRef (), <./security.c 824>
+ 2195 							CFArrayCreateMutable: <>
+ 2196 							SecStaticCodeCreateWithPath: <>
+ 2197 							OSKextLogMemError: <>
+ 2198 							SecCodeCopySigningInformation: <>
+ 2199 							CFDictionaryGetValue: <>
+ 2200 							CFGetTypeID: <>
+ 2201 							CFArrayGetTypeID: <>
+ 2202 							CFArrayGetCount: <>
+ 2203 							CFArrayGetValueAtIndex: <>
+ 2204 							SecCertificateCopyCommonName: <>
+ 2205 							CFArrayAppendValue: <>
+ 2206 							SAFE_RELEASE: <>
+ 2207 						CFStringCreateByCombiningStrings: <>
+ 2208 						SAFE_RELEASE: <>
+ 2209 						checkRootCertificateIsApple: OSStatus (), <./security.c 135>
+ 2210 							CFURLCopyAbsoluteURL: <>
+ 2211 							OSKextGetURL: <>
+ 2212 							OSKextLogMemError: <>
+ 2213 							SecStaticCodeCreateWithPath: <>
+ 2214 							OSKextGetIdentifier: <>
+ 2215 							CFStringHasPrefix: <>
+ 2216 							CFSTR: <>
+ 2217 							SecRequirementCreateWithString: <>
+ 2218 							SecStaticCodeCheckValidity: <>
+ 2219 							OSKextLogCFString: <>
+ 2220 							SAFE_RELEASE: <>
+ 2221 						CFDictionaryCreateMutable: <>
+ 2222 						CFDictionaryAddValue: <>
+ 2223 						CFArrayAppendValue: <>
+ 2224 						SAFE_FREE: <>
+ 2225 					postNoteAboutKextLoadsMT: void (), <./kext_tools_util.c 251>
+ 2226 						CFNotificationCenterGetDistributedCenter: <>
+ 2227 						CFDictionaryCreateMutable: <>
+ 2228 						CFDictionaryAddValue: <>
+ 2229 						CFSTR: <>
+ 2230 						CFNotificationCenterPostNotificationWithOptions: <>
+ 2231 						SAFE_RELEASE: <>
+ 2232 					CFSTR: <>
+ 2233 					SAFE_RELEASE: <>
+ 2234 				checkKextForProblems: 2041
+ 2235 			OSKextCreateMkext: <>
+ 2236 			createMkext1ForArch: CFDataRef (), <./mkext1_file.c 73>
+ 2237 				CFDataCreateMutable: <>
+ 2238 				createCFMutableDictionary: 770
+ 2239 				OSKextLogMemError: <>
+ 2240 				CFArrayGetCount: <>
+ 2241 				CFArrayGetValueAtIndex: <>
+ 2242 				OSKextGetIdentifier: <>
+ 2243 				CFDictionaryGetValue: <>
+ 2244 				OSKextSupportsArchitecture: <>
+ 2245 				CFDictionarySetValue: <>
+ 2246 				OSKextGetVersion: <>
+ 2247 				CFDataSetLength: <>
+ 2248 				CFDictionaryGetCount: <>
+ 2249 				CFDataGetLength: <>
+ 2250 				CFDictionaryApplyFunction: <>
+ 2251 				addToMkext1: void (), <./mkext1_file.c 162>
+ 2252 					CFURLGetFileSystemRepresentation: <>
+ 2253 					OSKextGetURL: <>
+ 2254 					strlcpy: <>
+ 2255 					OSKextLog: <>
+ 2256 					CFBundleCreate: <>
+ 2257 					OSKextLogStringError: <>
+ 2258 					createCFDataFromFile: 1501
+ 2259 					addDataToMkext: Boolean (), <./mkext1_file.c 271>
+ 2260 						CFDataGetLength: <>
+ 2261 						CFDataSetLength: <>
+ 2262 						OSKextLog: <>
+ 2263 						CFDataGetBytePtr: <>
+ 2264 						compress_lzss: 1934
+ 2265 						memcpy: <>
+ 2266 						malloc: <>
+ 2267 						OSKextLogMemError: <>
+ 2268 						decompress_lzss: 1806
+ 2269 						memcmp: <>
+ 2270 						OSSwapHostToBigInt32: <>
+ 2271 						SAFE_FREE: <>
+ 2272 					OSKextCopyExecutableForArchitecture: <>
+ 2273 					OSKextDeclaresExecutable: <>
+ 2274 					SAFE_RELEASE: <>
+ 2275 				SAFE_RELEASE_NULL: <>
+ 2276 				CFDataGetBytePtr: <>
+ 2277 				OSSwapHostToBigInt32: <>
+ 2278 				local_adler32: 1809
+ 2279 				OSKextLog: <>
+ 2280 				SAFE_RELEASE: <>
+ 2281 			NXGetArchInfoFromName: <>
+ 2282 			CFDataGetLength: <>
+ 2283 			CFArrayAppendValue: <>
+ 2284 			getLatestTimesFromCFURLArray: 865
+ 2285 			timercmp: <>
+ 2286 			writeFatFile: 1955
+ 2287 			SAFE_RELEASE: <>
+ 2288 			putVolumeForPath: 573
+ 2289 		createPrelinkedKernel: ExitStatus (), <./kcgen_main.c 967>
+ 2290 			bzero: <>
+ 2291 			getenv: <>
+ 2292 			takeVolumeForPath: 18
+ 2293 			createPrelinkedKernelArchs: ExitStatus (), <./kcgen_main.c 916>
+ 2294 				readFatFileArchsWithPath: ExitStatus (), <./kernelcache.c 350>
+ 2295 					open: <>
+ 2296 					mapAndSwapFatHeaderPage: 1761
+ 2297 					readFatFileArchsWithHeader: 1882
+ 2298 					close: <>
+ 2299 					unmapFatHeaderPage: 1767
+ 2300 				CFArrayCreateMutableCopy: <>
+ 2301 				OSKextLogMemError: <>
+ 2302 				CFArrayGetCount: <>
+ 2303 				CFArrayGetValueAtIndex: <>
+ 2304 				CFArrayContainsValue: <>
+ 2305 				RANGE_ALL: <>
+ 2306 				OSKextLog: <>
+ 2307 				CFArrayRemoveValueAtIndex: <>
+ 2308 				CFRetain: <>
+ 2309 				SAFE_RELEASE: <>
+ 2310 			CFArrayGetCount: <>
+ 2311 			createExistingPrelinkedSlices: ExitStatus (), <./kextcache_main.c 2536>
+ 2312 				bzero: <>
+ 2313 				getFilePathTimes: ExitStatus (), <./kext_tools_util.c 842>
+ 2314 					statPath: 873
+ 2315 					TIMESPEC_TO_TIMEVAL: <>
+ 2316 				getExpectedPrelinkedKernelModTime: ExitStatus (), <./kextcache_main.c 3037>
+ 2317 					getLatestTimesFromCFURLArray: 865
+ 2318 					getFilePathModTimePlusOne: ExitStatus (), <./kextcache_main.c 1975>
+ 2319 						getFilePathTimes: 2313
+ 2320 						timercmp: <>
+ 2321 						OSKextLog: <>
+ 2322 					OSKextLogCFString: <>
+ 2323 					CFSTR: <>
+ 2324 					timercmp: <>
+ 2325 				timevalcmp: <>
+ 2326 				readMachOSlices: 1871
+ 2327 			SAFE_RELEASE_NULL: <>
+ 2328 			CFArrayCreateMutable: <>
+ 2329 			OSKextLogMemError: <>
+ 2330 			CFArrayGetValueAtIndex: <>
+ 2331 			OSKextGetRunningKernelArchitecture: <>
+ 2332 			CFArrayGetFirstIndexOfValue: <>
+ 2333 			RANGE_ALL: <>
+ 2334 			CFArrayAppendValue: <>
+ 2335 			OSKextLog: <>
+ 2336 			createPrelinkedKernelForArch: ExitStatus (), <./kcgen_main.c 1098>
+ 2337 				readMachOSliceForArch: 1771
+ 2338 				OSKextLog: <>
+ 2339 				OSKextSetArchitecture: <>
+ 2340 				CFArrayCreateMutable: <>
+ 2341 				OSKextLogMemError: <>
+ 2342 				filterKextsForCache: 2016
+ 2343 				CFArrayGetCount: <>
+ 2344 				CFDataGetBytePtr: <>
+ 2345 				CFDataGetLength: <>
+ 2346 				macho_find_dysymtab: <>
+ 2347 				OSKextCreatePrelinkedKernel: <>
+ 2348 				wantsFastLibCompressionForTargetVolume: 1907
+ 2349 				compressPrelinkedSlice: 1917
+ 2350 				CFRetain: <>
+ 2351 				SAFE_RELEASE: <>
+ 2352 				logUsedKexts: void (), <./kcgen_main.c 527>
+ 2353 					getenv: <>
+ 2354 					open: <>
+ 2355 					snprintf: <>
+ 2356 					strlen: <>
+ 2357 					write: <>
+ 2358 					close: <>
+ 2359 					CFArrayGetCount: <>
+ 2360 					CFArrayGetValueAtIndex: <>
+ 2361 					OSKextGetIdentifier: <>
+ 2362 					CFStringGetCString: <>
+ 2363 			getExpectedPrelinkedKernelModTime: 2316
+ 2364 			OSKextLogCFString: <>
+ 2365 			CFSTR: <>
+ 2366 			writeFatFile: 1955
+ 2367 			needsPrelinkedKernelCopy: Boolean (), <./kextcache_main.c 3350>
+ 2368 				wantsPrelinkedKernelCopy: Boolean (), <./kextcache_main.c 3437>
+ 2369 					wantsFastLibCompressionForTargetVolume: 1907
+ 2370 				CFURLGetFileSystemRepresentation: <>
+ 2371 				strlen: <>
+ 2372 				strlcpy: <>
+ 2373 				strlcat: <>
+ 2374 				strnstr: <>
+ 2375 				statPath: 873
+ 2376 				open: <>
+ 2377 				smkdir: 111
+ 2378 				close: <>
+ 2379 			CFStringCreateWithFileSystemRepresentation: <>
+ 2380 			CFStringCreateMutableCopy: <>
+ 2381 			CFStringFindAndReplace: <>
+ 2382 			CFRangeMake: <>
+ 2383 			CFStringGetLength: <>
+ 2384 			CFStringGetFileSystemRepresentation: <>
+ 2385 			SAFE_RELEASE: <>
+ 2386 			writePrelinkedSymbols: ExitStatus (), <./kernelcache.c 955>
+ 2387 				CFArrayGetCount: <>
+ 2388 				CFArrayGetValueAtIndex: <>
+ 2389 				SAFE_RELEASE_NULL: <>
+ 2390 				CFRetain: <>
+ 2391 				CFURLCreateFromFileSystemRepresentationRelativeToBase: <>
+ 2392 				strlen: <>
+ 2393 				makeDirectoryWithURL: ExitStatus (), <./kernelcache.c 1014>
+ 2394 					CFURLHasDirectoryPath: <>
+ 2395 					CFURLGetFileSystemRepresentation: <>
+ 2396 					stat: if (), <./update_boot.c 3069>
+ 2397 					mkdir: <>
+ 2398 				CFDictionaryApplyFunction: <>
+ 2399 				saveFile: void (), <./kext_tools_util.c 552>
+ 2400 					CFURLCreateCopyAppendingPathComponent: <>
+ 2401 					CFURLGetFileSystemRepresentation: <>
+ 2402 					CFURLResourceIsReachable: <>
+ 2403 					user_approve: int (), <./kext_tools_util.c 1436>
+ 2404 						va_start: <>
+ 2405 						vsnprintf: <>
+ 2406 						va_end: <>
+ 2407 						malloc: <>
+ 2408 						fprintf: <>
+ 2409 						fflush: <>
+ 2410 						fgetc: <>
+ 2411 						tolower: <>
+ 2412 						free: <>
+ 2413 					fprintf: <>
+ 2414 					OSKextLog: <>
+ 2415 					CFDataGetLength: <>
+ 2416 					stat: if (), <./update_boot.c 3069>
+ 2417 					open: <>
+ 2418 					writeToFile: 1966
+ 2419 					CFDataGetBytePtr: <>
+ 2420 					fsync: <>
+ 2421 					close: <>
+ 2422 					SAFE_RELEASE: <>
+ 2423 				SAFE_RELEASE: <>
+ 2424 			setVolumeRootInAlertDict: void (), <./kextcache_main.c 2892>
+ 2425 				CFDictionaryGetValue: <>
+ 2426 				CFSTR: <>
+ 2427 				CFURLCopyFileSystemPath: <>
+ 2428 				CFDictionarySetValue: <>
+ 2429 				SAFE_RELEASE: <>
+ 2430 			postNoteAboutKexts: void (), <./kext_tools_util.c 221>
+ 2431 				CFNotificationCenterGetDistributedCenter: <>
+ 2432 				CFRetain: <>
+ 2433 				CFNotificationCenterPostNotificationWithOptions: <>
+ 2434 				SAFE_RELEASE: <>
+ 2435 			putVolumeForPath: 573
+ 2436 			CFDataGetLength: <>
+ 2437 		listPrelinkedKexts: void (), <./kclist_main.c 343>
+ 2438 			CFSetGetCount: <>
+ 2439 			CFArrayGetTypeID: <>
+ 2440 			CFGetTypeID: <>
+ 2441 			CFDictionaryGetTypeID: <>
+ 2442 			CFDictionaryGetValue: <>
+ 2443 			CFSTR: <>
+ 2444 			OSKextLog: <>
+ 2445 			CFArrayGetCount: <>
+ 2446 			CFArrayGetValueAtIndex: <>
+ 2447 			CFSetContainsValue: <>
+ 2448 			CFNumberGetTypeID: <>
+ 2449 			CFNumberGetValue: <>
+ 2450 			printKextInfo: 811
+ 2451 		createKextsToProcess: ExitStatus (), <./kextutil_main.c 883>
+ 2452 			createCFMutableArray: 700
+ 2453 			CFArrayGetCount: <>
+ 2454 			CFArrayGetValueAtIndex: <>
+ 2455 			CFURLGetFileSystemRepresentation: <>
+ 2456 			OSKextLogStringError: <>
+ 2457 			OSKextLog: <>
+ 2458 			OSKextGetKextWithURL: <>
+ 2459 			addToArrayIfAbsent: 721
+ 2460 			OSKextSetLoggingEnabled: <>
+ 2461 			CFDictionaryGetCount: <>
+ 2462 			malloc: <>
+ 2463 			OSKextLogMemError: <>
+ 2464 			CFDictionaryGetKeysAndValues: <>
+ 2465 			CFArrayGetFirstIndexOfValue: <>
+ 2466 			RANGE_ALL: <>
+ 2467 			CFArrayAppendValue: <>
+ 2468 			SAFE_FREE_NULL: <>
+ 2469 			createUTF8CStringForCFString: 155
+ 2470 			OSKextGetIdentifier: <>
+ 2471 			CFEqual: <>
+ 2472 			OSKextGetKextWithIdentifier: <>
+ 2473 			OSKextGetURL: <>
+ 2474 			SAFE_FREE: <>
+ 2475 			SAFE_RELEASE_NULL: <>
+ 2476 			SAFE_RELEASE: <>
+ 2477 		serializeLoad: Boolean (), <./kextutil_main.c 2271>
+ 2478 			bootstrap_look_up: <>
+ 2479 			OSKextLog: <>
+ 2480 			bootstrap_strerror: <>
+ 2481 			mach_port_allocate: <>
+ 2482 			mach_task_self: <>
+ 2483 			kextmanager_lock_kextload: <>
+ 2484 			sleep: <>
+ 2485 		processKexts: ExitStatus (), <./kextutil_main.c 1125>
+ 2486 			OSKextReadLoadedKextInfo: <>
+ 2487 			OSKextLog: <>
+ 2488 			safe_mach_error_string: 52
+ 2489 			CFDictionaryApplyFunction: <>
+ 2490 			setKextLoadAddress: void (), <./kextutil_main.c 1077>
+ 2491 				CFNumberGetValue: <>
+ 2492 				OSKextCopyKextsWithIdentifier: <>
+ 2493 				CFArrayGetCount: <>
+ 2494 				CFArrayGetValueAtIndex: <>
+ 2495 				OSKextSetLoadAddress: <>
+ 2496 				SAFE_RELEASE: <>
+ 2497 			CFArrayGetCount: <>
+ 2498 			CFArrayGetValueAtIndex: <>
+ 2499 			processKext: ExitStatus (), <./kextutil_main.c 1181>
+ 2500 				CFURLGetFileSystemRepresentation: <>
+ 2501 				OSKextGetURL: <>
+ 2502 				OSKextLogMemError: <>
+ 2503 				runTestsOnKext: ExitStatus (), <./kextutil_main.c 1299>
+ 2504 					OSKextGetLogFilter: <>
+ 2505 					OSKextIsLoadableInSafeBoot: <>
+ 2506 					OSKextLog: <>
+ 2507 					OSKextHasLogOrDebugFlags: <>
+ 2508 					OSKextValidate: <>
+ 2509 					OSKextAuthenticate: <>
+ 2510 					OSKextResolveDependencies: <>
+ 2511 					OSKextValidateDependencies: <>
+ 2512 					OSKextAuthenticateDependencies: <>
+ 2513 					OSKextDependenciesAreLoadableInSafeBoot: <>
+ 2514 					checkKextSignature: 1593
+ 2515 					OSKextLogDiagnostics: <>
+ 2516 					OSKextGetArchitecture: <>
+ 2517 					OSKextGetRunningKernelArchitecture: <>
+ 2518 					generateKextSymbols: ExitStatus (), <./kextutil_main.c 1552>
+ 2519 						OSKextIsKernelComponent: <>
+ 2520 						OSKextLog: <>
+ 2521 						OSKextIsInterface: <>
+ 2522 						OSKextGetArchitecture: <>
+ 2523 						OSKextSupportsArchitecture: <>
+ 2524 						NXGetLocalArchInfo: <>
+ 2525 						OSKextNeedsLoadAddressForDebugSymbols: <>
+ 2526 						OSKextCopyLoadList: <>
+ 2527 						fprintf: <>
+ 2528 						CFArrayGetCount: <>
+ 2529 						CFArrayGetValueAtIndex: <>
+ 2530 						requestLoadAddress: int (), <./kextutil_main.c 1709>
+ 2531 							createUTF8CStringForCFString: 155
+ 2532 							OSKextGetIdentifier: <>
+ 2533 							OSKextNeedsLoadAddressForDebugSymbols: <>
+ 2534 							SAFE_FREE: <>
+ 2535 							user_input: const char * (), <./kext_tools_util.c 1519>
+ 2536 								index: <>
+ 2537 								malloc: <>
+ 2538 								va_start: <>
+ 2539 								vsnprintf: <>
+ 2540 								va_end: <>
+ 2541 								free: <>
+ 2542 								fprintf: <>
+ 2543 								fflush: <>
+ 2544 								fgetc: <>
+ 2545 							strtoull: <>
+ 2546 							fprintf: <>
+ 2547 							OSKextSetLoadAddress: <>
+ 2548 						user_approve: 2403
+ 2549 						OSKextGenerateDebugSymbols: <>
+ 2550 						CFDictionaryApplyFunction: <>
+ 2551 						saveFile: 2399
+ 2552 						SAFE_RELEASE: <>
+ 2553 					OSKextLogDependencyGraph: <>
+ 2554 				checkKextSignature: 1593
+ 2555 				isInvalidSignatureAllowed: 1668
+ 2556 				OSKextLogCFString: <>
+ 2557 				CFSTR: <>
+ 2558 				OSKextGetIdentifier: <>
+ 2559 				loadKext: ExitStatus (), <./kextutil_main.c 1449>
+ 2560 					OSKextIsInExcludeList: <>
+ 2561 					addKextToAlertDict: 2068
+ 2562 					postNoteAboutKexts: 2430
+ 2563 					CFSTR: <>
+ 2564 					SAFE_RELEASE: <>
+ 2565 					messageTraceExcludedKext: 2086
+ 2566 					OSKextLog: <>
+ 2567 					user_approve: 2403
+ 2568 					fprintf: <>
+ 2569 					OSKextLoadWithOptions: <>
+ 2570 					safe_mach_error_string: 52
+ 2571 				recordKextLoadForMT: void (), <./security.c 1189>
+ 2572 					CFArrayCreateMutable: <>
+ 2573 					CFArrayAppendValue: <>
+ 2574 					recordKextLoadListForMT: 2105
+ 2575 					SAFE_RELEASE: <>
+ 2576 				OSKextReadLoadedKextInfo: <>
+ 2577 				OSKextLog: <>
+ 2578 				safe_mach_error_string: 52
+ 2579 				generateKextSymbols: 2518
+ 2580 				startKextsAndSendPersonalities: ExitStatus (), <./kextutil_main.c 1786>
+ 2581 					CFURLGetFileSystemRepresentation: <>
+ 2582 					OSKextGetURL: <>
+ 2583 					strlcpy: <>
+ 2584 					createUTF8CStringForCFString: 155
+ 2585 					OSKextGetIdentifier: <>
+ 2586 					OSKextLogMemError: <>
+ 2587 					OSKextCopyLoadList: <>
+ 2588 					OSKextLog: <>
+ 2589 					CFArrayGetCount: <>
+ 2590 					CFArrayCreateMutable: <>
+ 2591 					CFGetAllocator: <>
+ 2592 					fprintf: <>
+ 2593 					CFArrayGetValueAtIndex: <>
+ 2594 					SAFE_FREE_NULL: <>
+ 2595 					OSKextIsInterface: <>
+ 2596 					OSKextDeclaresExecutable: <>
+ 2597 					OSKextIsStarted: <>
+ 2598 					CFArrayAppendValue: <>
+ 2599 					startKext: ExitStatus (), <./kextutil_main.c 2026>
+ 2600 						OSKextIsLoaded: <>
+ 2601 						OSKextLog: <>
+ 2602 						user_approve: 2403
+ 2603 						fprintf: <>
+ 2604 						OSKextStart: <>
+ 2605 						safe_mach_error_string: 52
+ 2606 					sendPersonalities: ExitStatus (), <./kextutil_main.c 2110>
+ 2607 						OSKextGetValueForInfoDictionaryKey: <>
+ 2608 						CFSTR: <>
+ 2609 						CFDictionaryGetCount: <>
+ 2610 						OSKextLog: <>
+ 2611 						user_approve: 2403
+ 2612 						fprintf: <>
+ 2613 						CFArrayCreateMutable: <>
+ 2614 						OSKextLogMemError: <>
+ 2615 						malloc: <>
+ 2616 						CFDictionaryGetKeysAndValues: <>
+ 2617 						SAFE_FREE_NULL: <>
+ 2618 						createUTF8CStringForCFString: 155
+ 2619 						CFArrayGetCount: <>
+ 2620 						CFArrayGetFirstIndexOfValue: <>
+ 2621 						RANGE_ALL: <>
+ 2622 						CFArrayAppendValue: <>
+ 2623 						OSKextSendKextPersonalitiesToKernel: <>
+ 2624 						safe_mach_error_string: 52
+ 2625 						SAFE_RELEASE: <>
+ 2626 						SAFE_FREE: <>
+ 2627 					OSKextReadLoadedKextInfo: <>
+ 2628 					safe_mach_error_string: 52
+ 2629 					OSKextUnload: <>
+ 2630 					SAFE_RELEASE: <>
+ 2631 					SAFE_FREE: <>
+ 2632 		kextmanager_unlock_kextload: <>
+ 2633 		mach_port_deallocate: <>
+ 2634 		mach_task_self: <>
+ 2635 		mach_port_mod_refs: <>
+ 2636 		getopt: <>
+ 2637 		NXGetArchInfoFromName: <>
+ 2638 		access: <>
+ 2639 		mmap: <>
+ 2640 		getMkextDataForArch: Boolean (), <./mkextunpack_main.c 318>
+ 2641 			MAGIC32: <>
+ 2642 			ISFAT: <>
+ 2643 			NXGetLocalArchInfo: <>
+ 2644 			fat_iterator_for_data: <>
+ 2645 			OSKextLog: <>
+ 2646 			fat_iterator_find_arch: <>
+ 2647 			MKEXT_GET_MAGIC: <>
+ 2648 			MKEXT_GET_SIGNATURE: <>
+ 2649 			MKEXT_GET_LENGTH: <>
+ 2650 			MKEXT_GET_CPUTYPE: <>
+ 2651 			local_adler32: 1809
+ 2652 			MKEXT_GET_CHECKSUM: <>
+ 2653 			MKEXT_GET_VERSION: <>
+ 2654 			fat_iterator_close: <>
+ 2655 		copyKextsFromMkext2: CFArrayRef (), <./mkextunpack_main.c 420>
+ 2656 			NXGetLocalArchInfo: <>
+ 2657 			OSKextSetArchitecture: <>
+ 2658 			CFDataCreateWithBytesNoCopy: <>
+ 2659 			OSKextLogMemError: <>
+ 2660 			OSKextCreateKextsFromMkextData: <>
+ 2661 			OSKextLog: <>
+ 2662 			CFArrayGetCount: <>
+ 2663 			fprintf: <>
+ 2664 			CFArrayGetValueAtIndex: <>
+ 2665 			SAFE_FREE: <>
+ 2666 			CFURLGetFileSystemRepresentation: <>
+ 2667 			OSKextGetURL: <>
+ 2668 			OSKextLogStringError: <>
+ 2669 			createUTF8CStringForCFString: 155
+ 2670 			OSKextGetIdentifier: <>
+ 2671 			OSKextVersionGetString: <>
+ 2672 			OSKextGetVersion: <>
+ 2673 			SAFE_RELEASE_NULL: <>
+ 2674 			SAFE_RELEASE: <>
+ 2675 		writeMkext2EntriesToDirectory: Boolean (), <./mkextunpack_main.c 487>
+ 2676 			createCFMutableSet: 738
+ 2677 			OSKextLogMemError: <>
+ 2678 			CFArrayGetCount: <>
+ 2679 			CFArrayGetValueAtIndex: <>
+ 2680 			writeMkext2ToDirectory: Boolean (), <./mkextunpack_main.c 514>
+ 2681 				OSKextCopyInfoDictionary: <>
+ 2682 				OSKextCopyExecutableForArchitecture: <>
+ 2683 				OSKextLogMemError: <>
+ 2684 				OSKextGetURL: <>
+ 2685 				CFURLGetFileSystemRepresentation: <>
+ 2686 				OSKextLogStringError: <>
+ 2687 				strlen: <>
+ 2688 				rindex: <>
+ 2689 				SAFE_RELEASE_NULL: <>
+ 2690 				CFStringCreateWithCString: <>
+ 2691 				CFSetContainsValue: <>
+ 2692 				strstr: <>
+ 2693 				OSKextLog: <>
+ 2694 				CFStringCreateWithFormat: <>
+ 2695 				CFSTR: <>
+ 2696 				CFSetAddValue: <>
+ 2697 				createUTF8CStringForCFString: 155
+ 2698 				CFPropertyListCreateData: <>
+ 2699 				CFDataGetBytePtr: <>
+ 2700 				snprintf: <>
+ 2701 				writeFileInDirectory: Boolean (), <./mkextunpack_main.c 1228>
+ 2702 					strlcpy: <>
+ 2703 					OSKextLog: <>
+ 2704 					index: <>
+ 2705 					strlcat: <>
+ 2706 					mkdir: <>
+ 2707 					strerror: <>
+ 2708 					open: <>
+ 2709 					write: <>
+ 2710 					close: <>
+ 2711 				CFDataGetLength: <>
+ 2712 				CFDictionaryGetValue: <>
+ 2713 				SAFE_RELEASE: <>
+ 2714 				SAFE_FREE: <>
+ 2715 		extractEntriesFromMkext1: CFDictionaryRef (), <./mkextunpack_main.c 705>
+ 2716 			CaseInsensitiveEqual: Boolean (), <./mkextunpack_main.c 685>
+ 2717 				CFStringCompare: <>
+ 2718 			CaseInsensitiveHash: CFHashCode (), <./mkextunpack_main.c 698>
+ 2719 				CFStringGetLength: <>
+ 2720 			CFDictionaryCreateMutable: <>
+ 2721 			fprintf: <>
+ 2722 			MKEXT_GET_COUNT: <>
+ 2723 			CFRelease: <>
+ 2724 			uncompressMkext1Entry: Boolean (), <./mkextunpack_main.c 903>
+ 2725 				OSSwapBigToHostInt32: <>
+ 2726 				malloc: <>
+ 2727 				fprintf: <>
+ 2728 				decompress_lzss: 1806
+ 2729 				bcopy: <>
+ 2730 				CFDataCreate: <>
+ 2731 				free: <>
+ 2732 			CFPropertyListCreateWithData: <>
+ 2733 			CFErrorCopyDescription: <>
+ 2734 			CFStringGetMaximumSizeForEncoding: <>
+ 2735 			CFStringGetLength: <>
+ 2736 			malloc: <>
+ 2737 			CFStringGetCString: <>
+ 2738 			free: <>
+ 2739 			createKextNameFromPlist: CFStringRef (), <./mkextunpack_main.c 1096>
+ 2740 				CFDictionaryGetValue: <>
+ 2741 				CFSTR: <>
+ 2742 				CFStringCreateArrayBySeparatingStrings: <>
+ 2743 				CFArrayGetCount: <>
+ 2744 				CFArrayGetValueAtIndex: <>
+ 2745 				CFStringGetLength: <>
+ 2746 				CFStringCreateWithFormat: <>
+ 2747 				CFRelease: <>
+ 2748 				CFRetain: <>
+ 2749 			CFDictionarySetValue: <>
+ 2750 			CFSTR: <>
+ 2751 			getBundleIDAndVersion: int (), <./mkextunpack_main.c 1165>
+ 2752 				CFDictionaryGetValue: <>
+ 2753 				CFSTR: <>
+ 2754 				fprintf: <>
+ 2755 				CFGetTypeID: <>
+ 2756 				CFStringGetTypeID: <>
+ 2757 				CFStringGetCString: <>
+ 2758 			OSSwapBigToHostInt32: <>
+ 2759 		writeMkext1EntriesToDirectory: Boolean (), <./mkextunpack_main.c 969>
+ 2760 			CFDictionaryGetCount: <>
+ 2761 			malloc: <>
+ 2762 			fprintf: <>
+ 2763 			CFDictionaryGetKeysAndValues: <>
+ 2764 			SAFE_FREE_NULL: <>
+ 2765 			createUTF8CStringForCFString: 155
+ 2766 			OSKextLogMemError: <>
+ 2767 			CFDictionaryGetValue: <>
+ 2768 			CFSTR: <>
+ 2769 			OSKextLog: <>
+ 2770 			CFDataGetBytePtr: <>
+ 2771 			snprintf: <>
+ 2772 			writeFileInDirectory: 2701
+ 2773 			CFDataGetLength: <>
+ 2774 			free: <>
+ 2775 		CFArrayGetFirstIndexOfValue: <>
+ 2776 		CFArrayInsertValueAtIndex: <>
+ 2777 		OSKextLogStringError: <>
+ 2778 		OSKextCreate: <>
+ 2779 		OSKextDeclaresExecutable: <>
+ 2780 		OSKextIsLibrary: <>
+ 2781 		OSKextGetValueForInfoDictionaryKey: <>
+ 2782 		CFDictionaryGetTypeID: <>
+ 2783 		CFGetTypeID: <>
+ 2784 		OSKextCopyArchitectures: <>
+ 2785 		OSKextFindLinkDependencies: <>
+ 2786 		CFEqual: <>
+ 2787 		printLibs: ExitStatus (), <./kextlibs_main.c 479>
+ 2788 			NXGetArchInfoFromCpuType: <>
+ 2789 			OSKextLog: <>
+ 2790 			CFArrayGetCount: <>
+ 2791 			fprintf: <>
+ 2792 			CFArrayGetValueAtIndex: <>
+ 2793 			SAFE_FREE_NULL: <>
+ 2794 			createUTF8CStringForCFString: 155
+ 2795 			OSKextGetIdentifier: <>
+ 2796 			OSKextGetCompatibleVersion: <>
+ 2797 			OSKextGetVersion: <>
+ 2798 			OSKextVersionGetString: <>
+ 2799 			SAFE_FREE: <>
+ 2800 		printProblems: ExitStatus (), <./kextlibs_main.c 574>
+ 2801 			CFDictionaryGetCount: <>
+ 2802 			fprintf: <>
+ 2803 			CFDictionaryApplyFunction: <>
+ 2804 			printOnedefSymbol: void (), <./kextlibs_main.c 677>
+ 2805 				createUTF8CStringForCFString: 155
+ 2806 				OSKextLogStringError: <>
+ 2807 				OSKextGetURL: <>
+ 2808 				CFURLGetFileSystemRepresentation: <>
+ 2809 				OSKextGetValueForInfoDictionaryKey: <>
+ 2810 				CFSTR: <>
+ 2811 				fprintf: <>
+ 2812 				SAFE_FREE: <>
+ 2813 			printUndefSymbol: void (), <./kextlibs_main.c 661>
+ 2814 				createUTF8CStringForCFString: 155
+ 2815 				fprintf: <>
+ 2816 				SAFE_FREE: <>
+ 2817 			printMultdefSymbol: void (), <./kextlibs_main.c 728>
+ 2818 				createUTF8CStringForCFString: 155
+ 2819 				fprintf: <>
+ 2820 				CFArrayGetCount: <>
+ 2821 				CFArrayGetValueAtIndex: <>
+ 2822 				SAFE_FREE_NULL: <>
+ 2823 				OSKextGetURL: <>
+ 2824 				CFURLGetFileSystemRepresentation: <>
+ 2825 				OSKextGetValueForInfoDictionaryKey: <>
+ 2826 				CFSTR: <>
+ 2827 				SAFE_FREE: <>
+ 2828 			CFArrayGetCount: <>
+ 2829 			CFArrayGetValueAtIndex: <>
+ 2830 			createUTF8CStringForCFString: 155
+ 2831 			OSKextGetIdentifier: <>
+ 2832 			SAFE_FREE: <>
+ 2833 		SAFE_RELEASE_NULL: <>

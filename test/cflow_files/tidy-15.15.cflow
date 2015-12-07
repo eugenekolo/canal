@@ -1,0 +1,1797 @@
+    1 	main: int (), <./tidy/console/tidy.c 899>
+    2 		strcmp: <>
+    3 		HelpText: void (), <./tidy/console/tab2space.c 248>
+    4 			fprintf: <>
+    5 		strncmp: <>
+    6 		sscanf: <>
+    7 		fopen: <>
+    8 		ReadFile: Stream * (), <./tidy/console/tab2space.c 206>
+    9 			NewStream: Stream * (), <./tidy/console/tab2space.c 76>
+   10 				MemAlloc: void * (), <./tidy/console/tab2space.c 40>
+   11 					g_malloc: TidyMalloc, <./tidy/src/alloc.c 16>
+   12 					malloc: <>
+   13 					FatalError: void (), <./tidy/src/alloc.c 42>
+   14 						g_panic: TidyPanic, <./tidy/src/alloc.c 19>
+   15 						fprintf: <>
+   16 						exit: <>
+   17 					fprintf: <>
+   18 					exit: <>
+   19 				memset: <>
+   20 			ReadChar: int (), <./tidy/console/tab2space.c 123>
+   21 				getc: <>
+   22 				ungetc: <>
+   23 			AddByte: void (), <./tidy/console/tab2space.c 95>
+   24 				MemRealloc: void * (), <./tidy/console/tab2space.c 55>
+   25 					MemAlloc: 10
+   26 					g_realloc: TidyRealloc, <./tidy/src/alloc.c 17>
+   27 					realloc: <>
+   28 					FatalError: 13
+   29 					fprintf: <>
+   30 		fclose: <>
+   31 		WriteFile: void (), <./tidy/console/tab2space.c 217>
+   32 			putc: <>
+   33 		fprintf: <>
+   34 		FreeStream: void (), <./tidy/console/tab2space.c 87>
+   35 			MemFree: void (), <./tidy/console/tab2space.c 70>
+   36 				g_free: TidyFree, <./tidy/src/alloc.c 18>
+   37 				free: <>
+   38 		tidyCreate: TidyDoc TIDY_CALL (), <./tidy/src/tidylib.c 92>
+   39 			tidyDocCreate: TidyDocImpl * (), <./tidy/src/tidylib.c 104>
+   40 				MemAlloc: 10
+   41 				ClearMemory: void (), <./tidy/src/alloc.c 85>
+   42 					memset: <>
+   43 				TY_: void () (), <./tidy/src/localize.c 1819>
+   44 					assert: <>
+   45 					sscanf: <>
+   46 					lookup: const entity * (), <./tidy/src/entities.c 314>
+   47 						TY_: 43
+   48 					cfg: <>
+   49 					cfgBool: <>
+   50 					MAP: <>
+   51 					TY_: 43
+   52 					MemAlloc: 10
+   53 					ClearMemory: 41
+   54 					FreeNode: <>
+   55 					MemFree: 35
+   56 					fprintf: <>
+   57 					AddByte: void (), <./tidy/src/lexer.c 699>
+   58 						MemRealloc: 24
+   59 						ClearMemory: 41
+   60 					NewNode: <>
+   61 					tmbstrdup: <>
+   62 					attrIsID: <>
+   63 					attrIsNAME: <>
+   64 					FreeAttrs: <>
+   65 					AddCharToLexer: <>
+   66 					AddStringToLexer: void (), <./tidy/src/lexer.c 757>
+   67 						TY_: 43
+   68 						AddCharToLexer: <>
+   69 					nodeIsHTML: <>
+   70 					nodeIsHEAD: <>
+   71 					nodeIsTITLE: <>
+   72 					nodeIsBODY: <>
+   73 					nodeIsFRAMESET: <>
+   74 					nodeIsNOFRAMES: <>
+   75 					tidyReleaseDate: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 168>
+   76 						TY_: 43
+   77 					nodeIsMETA: <>
+   78 					AttrGetById: <>
+   79 					AttrValueIs: <>
+   80 					AttrHasValue: <>
+   81 					tmbstrncasecmp: <>
+   82 					InferredTag: <>
+   83 					GetNameFromVers: ctmbstr (), <./tidy/src/lexer.c 161>
+   84 					GetSIFromVers: ctmbstr (), <./tidy/src/lexer.c 150>
+   85 					GetAttrByName: <>
+   86 					cfgStr: <>
+   87 					NewDocTypeNode: Node * (), <./tidy/src/lexer.c 1518>
+   88 						TY_: 43
+   89 						NewNode: <>
+   90 					GetFPIFromVers: ctmbstr (), <./tidy/src/lexer.c 139>
+   91 					version: void (), <./tidy/console/tidy.c 884>
+   92 						printf: <>
+   93 						tidyReleaseDate: 75
+   94 					GetCDATA: Node * (), <./tidy/src/lexer.c 1796>
+   95 						TY_: 43
+   96 						AttrGetById: <>
+   97 						SetLexerLocus: void (), <./tidy/src/lexer.c 770>
+   98 						ReadChar: 20
+   99 						AddCharToLexer: <>
+  100 						nodeIsSCRIPT: <>
+  101 						tmbstrncasecmp: <>
+  102 						tmbstrlen: <>
+  103 						TextToken: <>
+  104 					GetTokenFromStream: Node * (), <./tidy/src/lexer.c 2046>
+  105 						SetLexerLocus: 97
+  106 						TY_: 43
+  107 						ReadChar: 20
+  108 						AddCharToLexer: <>
+  109 						ChangeChar: void (), <./tidy/src/lexer.c 726>
+  110 						ParseEntity: void (), <./tidy/src/lexer.c 803>
+  111 							cfgBool: <>
+  112 							TY_: 43
+  113 							ReadChar: 20
+  114 							cfg: <>
+  115 							AddCharToLexer: <>
+  116 							SetLexerLocus: 97
+  117 							AddStringToLexer: 66
+  118 						TextToken: <>
+  119 						StoreOriginalTextInToken: void (), <./tidy/src/lexer.c 1147>
+  120 							MemAlloc: 10
+  121 							MemFree: 35
+  122 						CondReturnTextNode: <>
+  123 						ParseTagName: tmbchar (), <./tidy/src/lexer.c 982>
+  124 							cfgBool: <>
+  125 							TY_: 43
+  126 							ToLower: <>
+  127 							ReadChar: 20
+  128 							AddCharToLexer: <>
+  129 						TagToken: Node * (), <./tidy/src/lexer.c 1221>
+  130 							TY_: 43
+  131 							NewNode: <>
+  132 							tmbstrndup: <>
+  133 						FreeNode: <>
+  134 						ParseAttrs: AttVal * (), <./tidy/src/lexer.c 3566>
+  135 							EndOfInput: Bool (), <./tidy/src/lexer.c 664>
+  136 								assert: <>
+  137 								TY_: 43
+  138 							ParseAttribute: tmbstr (), <./tidy/src/lexer.c 2981>
+  139 								TY_: 43
+  140 								ReadChar: 20
+  141 								ParseAsp: Node * (), <./tidy/src/lexer.c 2897>
+  142 									TY_: 43
+  143 									ReadChar: 20
+  144 									AddCharToLexer: <>
+  145 									AspToken: <>
+  146 								ParsePhp: Node * (), <./tidy/src/lexer.c 2941>
+  147 									TY_: 43
+  148 									ReadChar: 20
+  149 									AddCharToLexer: <>
+  150 									PhpToken: <>
+  151 								cfgBool: <>
+  152 								ToLower: <>
+  153 								AddCharToLexer: <>
+  154 								tmbstrndup: <>
+  155 							TY_: 43
+  156 							AddAttrToList: void (), <./tidy/src/lexer.c 3540>
+  157 							ParseValue: tmbstr (), <./tidy/src/lexer.c 3208>
+  158 								cfgBool: <>
+  159 								TY_: 43
+  160 								ReadChar: 20
+  161 								AddCharToLexer: <>
+  162 								ParseServerInstruction: int (), <./tidy/src/lexer.c 3114>
+  163 									TY_: 43
+  164 									ReadChar: 20
+  165 									AddCharToLexer: <>
+  166 								tmbstrndup: <>
+  167 								ParseEntity: 110
+  168 								ChangeChar: void (), <./tidy/src/lexer.c 726>
+  169 								ToLower: <>
+  170 							IsValidAttrName: Bool (), <./tidy/src/lexer.c 3498>
+  171 								TY_: 43
+  172 								tmbstrlen: <>
+  173 							cfgBool: <>
+  174 							IsValidXMLAttrName: <>
+  175 							LastChar: tmbchar (), <./tidy/src/lexer.c 626>
+  176 								TY_: 43
+  177 								tmbstrlen: <>
+  178 						ExpectsContent: Bool (), <./tidy/src/lexer.c 1768>
+  179 						nodeIsBR: <>
+  180 						nodeIsHR: <>
+  181 						cfgBool: <>
+  182 						nodeIsNOBR: <>
+  183 						nodeIsWBR: <>
+  184 						nodeIsLAYER: <>
+  185 						nodeIsSPACER: <>
+  186 						CommentToken: <>
+  187 						ParseDocTypeDecl: Node * (), <./tidy/src/lexer.c 3648>
+  188 							TY_: 43
+  189 							NewNode: <>
+  190 							ReadChar: 20
+  191 							AddCharToLexer: <>
+  192 							ToUpper: <>
+  193 							GetAttrByName: <>
+  194 							IsValidXMLElemName: <>
+  195 							FreeNode: <>
+  196 							StoreOriginalTextInToken: 119
+  197 							tmbstrndup: <>
+  198 							MemFree: 35
+  199 							TextToken: <>
+  200 						FindGivenVersion: uint (), <./tidy/src/lexer.c 1439>
+  201 							TY_: 43
+  202 							GetAttrByName: <>
+  203 							GetVersFromFPI: uint (), <./tidy/src/lexer.c 172>
+  204 								TY_: 43
+  205 							MemFree: 35
+  206 							tmbstrdup: <>
+  207 							GetFPIFromVers: 90
+  208 						PIToken: <>
+  209 						tmbstrndup: <>
+  210 						AspToken: <>
+  211 						JsteToken: <>
+  212 						PhpToken: <>
+  213 						ParseAttribute: 138
+  214 						XmlDeclToken: <>
+  215 						ParseValue: 157
+  216 						AddAttrToList: 156
+  217 						SectionToken: <>
+  218 						cfg: <>
+  219 						AddStringToLexer: 66
+  220 						CDATAToken: <>
+  221 					MapStr: void (), <./tidy/src/lexer.c 2861>
+  222 					AddAttrToList: 156
+  223 					lookup: const Dict * (), <./tidy/src/tags.c 336>
+  224 						hash: uint (), <./tidy/src/tags.c 266>
+  225 						TY_: 43
+  226 						install: const Dict * (), <./tidy/src/tags.c 276>
+  227 							MemAlloc: 10
+  228 							hash: 224
+  229 					declare: void (), <./tidy/src/tags.c 379>
+  230 						lookup: 223
+  231 						MemAlloc: 10
+  232 						ClearMemory: 41
+  233 						TY_: 43
+  234 						tmbstrdup: <>
+  235 					removeFromHash: void (), <./tidy/src/tags.c 294>
+  236 						hash: 224
+  237 						TY_: 43
+  238 						MemFree: 35
+  239 					emptyHash: void (), <./tidy/src/tags.c 314>
+  240 						MemFree: 35
+  241 					TagId: <>
+  242 					IsNodePushable: Bool (), <./tidy/src/istack.c 39>
+  243 					nodeIsFONT: <>
+  244 					MemRealloc: 24
+  245 					nodeIsA: <>
+  246 					PopIStackUntil: void (), <./tidy/src/istack.c 120>
+  247 						PopIStack: void (), <./tidy/src/istack.c 102>
+  248 							TY_: 43
+  249 							MemFree: 35
+  250 					PopIStack: 247
+  251 					CoInitialize: <>
+  252 					CreateMLangObject: <>
+  253 					IMLangConvertCharset_Initialize: <>
+  254 					IMLangConvertCharset_Release: <>
+  255 					CoUninitialize: <>
+  256 					IMLangConvertCharset_DoConversionToUnicode: <>
+  257 					IsHighSurrogate: <>
+  258 					IsLowSurrogate: <>
+  259 					CombineSurrogatePair: <>
+  260 					filesrc_getByte: int TIDY_CALL (), <./tidy/src/fileio.c 30>
+  261 						tidyBufPopByte: int TIDY_CALL (), <./tidy/src/buffio.c 160>
+  262 							assert: <>
+  263 						fgetc: <>
+  264 					filesrc_eof: Bool TIDY_CALL (), <./tidy/src/fileio.c 41>
+  265 						feof: <>
+  266 					filesrc_ungetByte: void TIDY_CALL (), <./tidy/src/fileio.c 50>
+  267 						tidyBufPutByte: void TIDY_CALL (), <./tidy/src/buffio.c 152>
+  268 							assert: <>
+  269 							tidyBufCheckAlloc: void TIDY_CALL (), <./tidy/src/buffio.c 97>
+  270 								assert: <>
+  271 								MemRealloc: 24
+  272 								ClearMemory: 41
+  273 					fclose: <>
+  274 					tidyBufFree: void TIDY_CALL (), <./tidy/src/buffio.c 74>
+  275 						assert: <>
+  276 						MemFree: 35
+  277 						tidyBufInit: void TIDY_CALL (), <./tidy/src/buffio.c 62>
+  278 							assert: <>
+  279 							ClearMemory: 41
+  280 					fputc: <>
+  281 					InitIndent: void (), <./tidy/src/pprint.c 285>
+  282 					CheckWrapLine: Bool (), <./tidy/src/pprint.c 605>
+  283 						GetSpaces: uint (), <./tidy/src/pprint.c 325>
+  284 						cfg: <>
+  285 						WrapLine: void (), <./tidy/src/pprint.c 576>
+  286 							WantIndent: Bool (), <./tidy/src/pprint.c 387>
+  287 								GetSpaces: 283
+  288 								cfgBool: <>
+  289 								IsWrapInAttrVal: Bool (), <./tidy/src/pprint.c 379>
+  290 								IsWrapInString: Bool (), <./tidy/src/pprint.c 347>
+  291 							GetSpaces: 283
+  292 							TY_: 43
+  293 							IsWrapInString: 290
+  294 							ResetLineAfterWrap: void (), <./tidy/src/pprint.c 545>
+  295 								IsWrapInAttrVal: 289
+  296 								ResetLine: void (), <./tidy/src/pprint.c 515>
+  297 									InitIndent: void (), <./tidy/src/pprint.c 285>
+  298 					WantIndent: 286
+  299 					GetSpaces: 283
+  300 					IsInString: Bool (), <./tidy/src/pprint.c 341>
+  301 					ResetLine: 296
+  302 					PPrintText: void (), <./tidy/src/pprint.c 960>
+  303 						TextEndsWithNewline: int (), <./tidy/src/pprint.c 1728>
+  304 							TY_: 43
+  305 						TextStartsWithWhitespace: int (), <./tidy/src/pprint.c 1744>
+  306 							assert: <>
+  307 							TY_: 43
+  308 						IncrWS: uint (), <./tidy/src/pprint.c 945>
+  309 							MIN: <>
+  310 						CheckWrapIndent: Bool (), <./tidy/src/pprint.c 616>
+  311 							GetSpaces: 283
+  312 							cfg: <>
+  313 							WrapLine: 285
+  314 						TY_: 43
+  315 						PPrintChar: void (), <./tidy/src/pprint.c 713>
+  316 							cfg: <>
+  317 							cfgBool: <>
+  318 							AddString: uint (), <./tidy/src/pprint.c 445>
+  319 								AddAsciiString: uint (), <./tidy/src/pprint.c 434>
+  320 									TY_: 43
+  321 									tmbstrlen: <>
+  322 									expand: void (), <./tidy/src/pprint.c 305>
+  323 										MemRealloc: 24
+  324 										ClearMemory: 41
+  325 							AddChar: uint (), <./tidy/src/pprint.c 428>
+  326 								AddC: void (), <./tidy/src/pprint.c 421>
+  327 									expand: 322
+  328 							CharacterWrapPoint: WrapPoint (), <./tidy/src/pprint.c 255>
+  329 							Big5WrapPoint: WrapPoint (), <./tidy/src/pprint.c 271>
+  330 							TY_: 43
+  331 					PPrintComment: void (), <./tidy/src/pprint.c 1433>
+  332 						SetWrap: Bool (), <./tidy/src/pprint.c 454>
+  333 							cfg: <>
+  334 						AddString: 318
+  335 						PPrintText: 302
+  336 						AddChar: 325
+  337 						TY_: 43
+  338 					PPrintDocType: void (), <./tidy/src/pprint.c 1457>
+  339 						cfg: <>
+  340 						TY_: 43
+  341 						GetAttrByName: <>
+  342 						SetWrap: 332
+  343 						PCondFlushLine: void (), <./tidy/src/pprint.c 684>
+  344 							CheckWrapLine: 282
+  345 							WantIndent: 286
+  346 							GetSpaces: 283
+  347 							TY_: 43
+  348 							IsInString: 300
+  349 							ResetLine: 296
+  350 						AddString: 318
+  351 						AddChar: 325
+  352 						tmbstrlen: <>
+  353 						PPrintText: 302
+  354 					PPrintPI: void (), <./tidy/src/pprint.c 1520>
+  355 						SetWrap: 332
+  356 						AddString: 318
+  357 						TY_: 43
+  358 						AddChar: 325
+  359 						PPrintText: 302
+  360 						cfgBool: <>
+  361 						PCondFlushLine: 343
+  362 					PPrintXmlDecl: void (), <./tidy/src/pprint.c 1551>
+  363 						SetWrap: 332
+  364 						WrapOff: uint (), <./tidy/src/pprint.c 401>
+  365 							cfg: <>
+  366 							TY_: 43
+  367 						cfgBool: <>
+  368 						TY_: 43
+  369 						AddString: 318
+  370 						AttrGetById: <>
+  371 						PPrintAttribute: void (), <./tidy/src/pprint.c 1144>
+  372 							cfgBool: <>
+  373 							AttrIndent: uint (), <./tidy/src/pprint.c 1118>
+  374 								cfg: <>
+  375 								TY_: 43
+  376 								ShouldIndent: Bool (), <./tidy/src/pprint.c 1880>
+  377 									cfgAutoBool: <>
+  378 									nodeIsTEXTAREA: <>
+  379 									TY_: 43
+  380 									nodeIsHTML: <>
+  381 									nodeIsP: <>
+  382 									nodeIsTITLE: <>
+  383 									nodeIsMAP: <>
+  384 								tmbstrlen: <>
+  385 							AttrNoIndentFirst: Bool (), <./tidy/src/pprint.c 1134>
+  386 							TY_: 43
+  387 							PCondFlushLine: 343
+  388 							CheckWrapIndent: 310
+  389 							attrIsCONTENT: <>
+  390 							attrIsVALUE: <>
+  391 							attrIsALT: <>
+  392 							SetWrap: 332
+  393 							AddChar: 325
+  394 							ToUpper: <>
+  395 							PPrintAttrValue: void (), <./tidy/src/pprint.c 1010>
+  396 								cfgBool: <>
+  397 								TY_: 43
+  398 								AddChar: 325
+  399 								SetWrap: 332
+  400 								CheckWrapIndent: 310
+  401 								cfg: <>
+  402 								SetInAttrVal: int (), <./tidy/src/pprint.c 374>
+  403 								ClearInString: int (), <./tidy/src/pprint.c 330>
+  404 								SetWrapAttr: Bool (), <./tidy/src/pprint.c 483>
+  405 									cfg: <>
+  406 									CarryOver: void (), <./tidy/src/pprint.c 473>
+  407 								GetSpaces: 283
+  408 								WrapAttrVal: void (), <./tidy/src/pprint.c 629>
+  409 									WantIndent: 286
+  410 									GetSpaces: 283
+  411 									TY_: 43
+  412 									IsWrapInString: 290
+  413 									ResetLineAfterWrap: 294
+  414 								AddString: 318
+  415 								ToggleInString: int (), <./tidy/src/pprint.c 335>
+  416 								PPrintChar: 315
+  417 								ClearInAttrVal: void (), <./tidy/src/pprint.c 369>
+  418 						GetAttrByName: <>
+  419 						AddChar: 325
+  420 						WrapOn: void (), <./tidy/src/pprint.c 408>
+  421 							TY_: 43
+  422 					PPrintCDATA: void (), <./tidy/src/pprint.c 1639>
+  423 						cfgBool: <>
+  424 						PCondFlushLine: 343
+  425 						WrapOff: 364
+  426 						AddString: 318
+  427 						PPrintText: 302
+  428 						WrapOn: 420
+  429 					PPrintSection: void (), <./tidy/src/pprint.c 1658>
+  430 						cfgBool: <>
+  431 						WrapOffCond: uint (), <./tidy/src/pprint.c 413>
+  432 							WrapOff: 364
+  433 							cfg: <>
+  434 						SetWrap: 332
+  435 						AddString: 318
+  436 						PPrintText: 302
+  437 						WrapOn: 420
+  438 					PPrintAsp: void (), <./tidy/src/pprint.c 1586>
+  439 						cfgBool: <>
+  440 						WrapOffCond: 431
+  441 						SetWrap: 332
+  442 						AddString: 318
+  443 						PPrintText: 302
+  444 						WrapOn: 420
+  445 					PPrintJste: void (), <./tidy/src/pprint.c 1605>
+  446 						cfgBool: <>
+  447 						WrapOffCond: 431
+  448 						AddString: 318
+  449 						PPrintText: 302
+  450 						WrapOn: 420
+  451 					PPrintPhp: void (), <./tidy/src/pprint.c 1621>
+  452 						cfgBool: <>
+  453 						WrapOffCond: 431
+  454 						SetWrap: 332
+  455 						AddString: 318
+  456 						PPrintText: 302
+  457 						WrapOn: 420
+  458 					PCondFlushLine: 343
+  459 					nodeIsBR: <>
+  460 					nodeIsHR: <>
+  461 					PPrintTag: void (), <./tidy/src/pprint.c 1323>
+  462 						cfgBool: <>
+  463 						AddChar: 325
+  464 						TY_: 43
+  465 						ToUpper: <>
+  466 						PPrintAttrs: void (), <./tidy/src/pprint.c 1237>
+  467 							cfgBool: <>
+  468 							TY_: 43
+  469 							GetAttrByName: <>
+  470 							PPrintAttribute: 371
+  471 							AddChar: 325
+  472 							PPrintAsp: 438
+  473 							PPrintPhp: 451
+  474 						cfg: <>
+  475 						CheckWrapIndent: 310
+  476 						nodeIsBR: <>
+  477 						AfterSpace: Bool (), <./tidy/src/pprint.c 1318>
+  478 							AfterSpaceImp: Bool (), <./tidy/src/pprint.c 1283>
+  479 								TY_: 43
+  480 								nodeIsBR: <>
+  481 								AfterSpaceImp: 478
+  482 							TY_: 43
+  483 						PCondFlushLine: 343
+  484 					nodeIsPARAM: <>
+  485 					nodeIsAREA: <>
+  486 					nodeIsTEXTAREA: <>
+  487 					PPrintEndTag: void (), <./tidy/src/pprint.c 1393>
+  488 						cfgBool: <>
+  489 						SetWrap: 332
+  490 						AddString: 318
+  491 						TY_: 43
+  492 						ToUpper: <>
+  493 						AddChar: 325
+  494 					cfgAutoBool: <>
+  495 					nodeIsSTYLE: <>
+  496 					nodeIsSCRIPT: <>
+  497 					PPrintScriptStyle: void (), <./tidy/src/pprint.c 1777>
+  498 						cfgBool: <>
+  499 						InsideHead: Bool (), <./tidy/src/pprint.c 1711>
+  500 							nodeIsHEAD: <>
+  501 							InsideHead: 499
+  502 						TY_: 43
+  503 						PPrintTag: 461
+  504 						attrGetTYPE: <>
+  505 						AttrValueIs: <>
+  506 						HasCDATA: Bool (), <./tidy/src/pprint.c 1761>
+  507 							TY_: 43
+  508 						WrapOff: 364
+  509 						AddString: 318
+  510 						PCondFlushLine: 343
+  511 						WrapOn: 420
+  512 						TextEndsWithNewline: 303
+  513 						PPrintEndTag: 487
+  514 						cfgAutoBool: <>
+  515 					nodeIsNOBR: <>
+  516 					ShouldIndent: 376
+  517 					nodeIsLI: <>
+  518 					HasMixedContent: Bool (), <./tidy/src/pprint.c 355>
+  519 						TY_: 43
+  520 					fileno: <>
+  521 					fstat: <>
+  522 					mmap: <>
+  523 					mapped_getByte: int TIDY_CALL (), <./tidy/src/mappedio.c 133>
+  524 						mapped_openView: int (), <./tidy/src/mappedio.c 110>
+  525 							UnmapViewOfFile: <>
+  526 							MapViewOfFile: <>
+  527 					mapped_eof: Bool TIDY_CALL (), <./tidy/src/mappedio.c 148>
+  528 					mapped_ungetByte: void TIDY_CALL (), <./tidy/src/mappedio.c 154>
+  529 						assert: <>
+  530 						mapped_openView: 524
+  531 					munmap: <>
+  532 					CreateFileA: <>
+  533 					GetFileTime: <>
+  534 					TY_I64: <>
+  535 					MappedFileInput: StreamIn * (), <./tidy/src/mappedio.c 251>
+  536 						TY_: 43
+  537 						initMappedFileSource: int (), <./tidy/src/mappedio.c 174>
+  538 							mapped_getByte: 523
+  539 							mapped_eof: Bool TIDY_CALL (), <./tidy/src/mappedio.c 148>
+  540 							mapped_ungetByte: 528
+  541 							MemAlloc: 10
+  542 							GetFileSize: <>
+  543 							GetLastError: <>
+  544 							MemFree: 35
+  545 							GetFileSizeEx: <>
+  546 							CreateFileMapping: <>
+  547 							GetSystemInfo: <>
+  548 							mapped_openView: 524
+  549 							CloseHandle: <>
+  550 					CloseHandle: <>
+  551 					tidyDocParseStream: int (), <./tidy/src/tidylib.c 1113>
+  552 						cfgBool: <>
+  553 						assert: <>
+  554 						TY_: 43
+  555 						FreeNode: <>
+  556 						ClearMemory: 41
+  557 						MemFree: 35
+  558 						FatalError: 13
+  559 						tidyDocStatus: int (), <./tidy/src/tidylib.c 1075>
+  560 					freeMappedFileSource: void (), <./tidy/src/mappedio.c 237>
+  561 						UnmapViewOfFile: <>
+  562 						CloseHandle: <>
+  563 						MemFree: 35
+  564 					GetOptionDefault: void (), <./tidy/src/config.c 398>
+  565 					CopyOptionValue: void (), <./tidy/src/config.c 345>
+  566 						assert: <>
+  567 						FreeOptionValue: void (), <./tidy/src/config.c 337>
+  568 							MemFree: 35
+  569 						TY_: 43
+  570 						tmbstrdup: <>
+  571 					AdjustConfig: void (), <./tidy/src/config.c 936>
+  572 						cfgBool: <>
+  573 						TY_: 43
+  574 						cfgAutoBool: <>
+  575 						cfg: <>
+  576 					ReparseTagDecls: void (), <./tidy/src/config.c 439>
+  577 						TY_: 43
+  578 						cfg: <>
+  579 						ReparseTagType: void (), <./tidy/src/config.c 430>
+  580 							cfgStr: <>
+  581 							TY_: 43
+  582 							tmbstrdup: <>
+  583 							MemFree: 35
+  584 					ParseAutoBool: Bool (), <./tidy/src/config.c 1089>
+  585 						ParseTriState: Bool (), <./tidy/src/config.c 1029>
+  586 							cfg: <>
+  587 							SkipWhite: tchar (), <./tidy/src/config.c 585>
+  588 								TY_: 43
+  589 								GetC: tchar (), <./tidy/src/config.c 565>
+  590 									TY_: 43
+  591 									ReadChar: 20
+  592 							TY_: 43
+  593 						TY_: 43
+  594 					ExpandTilde: ctmbstr (), <./tidy/src/config.c 637>
+  595 						getenv: <>
+  596 						MemAlloc: 10
+  597 						memcpy: <>
+  598 						getpwnam: <>
+  599 						MemFree: 35
+  600 						TY_: 43
+  601 						tmbstrlen: <>
+  602 					fopen: <>
+  603 					FirstChar: tchar (), <./tidy/src/config.c 572>
+  604 						GetC: 589
+  605 					SkipWhite: 587
+  606 					NextProperty: uint (), <./tidy/src/config.c 609>
+  607 						GetC: 589
+  608 						TY_: 43
+  609 					AdvanceChar: tchar (), <./tidy/src/config.c 578>
+  610 						GetC: 589
+  611 					tidyBufAttach: void TIDY_CALL (), <./tidy/src/buffio.c 122>
+  612 						assert: <>
+  613 					tmbstrlen: <>
+  614 					GetC: 589
+  615 					tidyBufDetach: void TIDY_CALL (), <./tidy/src/buffio.c 131>
+  616 						tidyBufInit: 277
+  617 					memcmp: <>
+  618 					OptionValueEqDefault: Bool (), <./tidy/src/config.c 407>
+  619 					SaveConfigToStream: int (), <./tidy/src/config.c 1564>
+  620 						OptionValueEqDefault: 618
+  621 						cfg: <>
+  622 						MemAlloc: 10
+  623 						TY_: 43
+  624 						tmbstrlen: <>
+  625 						WriteOptionString: int (), <./tidy/src/config.c 1505>
+  626 							TY_: 43
+  627 						MemFree: 35
+  628 						WriteOptionPick: int (), <./tidy/src/config.c 1533>
+  629 							WriteOptionString: 625
+  630 						WriteOptionInt: int (), <./tidy/src/config.c 1520>
+  631 							TY_: 43
+  632 							WriteOptionString: 625
+  633 						WriteOptionBool: int (), <./tidy/src/config.c 1527>
+  634 							WriteOptionString: 625
+  635 					FindStyle: ctmbstr (), <./tidy/src/clean.c 300>
+  636 						TY_: 43
+  637 						MemAlloc: 10
+  638 						tmbstrdup: <>
+  639 						GensymClass: tmbstr (), <./tidy/src/clean.c 289>
+  640 							cfgStr: <>
+  641 							TY_: 43
+  642 							tmbstrdup: <>
+  643 					AddClass: void (), <./tidy/src/clean.c 324>
+  644 						TY_: 43
+  645 						AttrGetById: <>
+  646 					MergeProperties: tmbstr (), <./tidy/src/clean.c 650>
+  647 						CreateProps: StyleProp * (), <./tidy/src/clean.c 145>
+  648 							TY_: 43
+  649 							tmbstrdup: <>
+  650 							InsertProperty: StyleProp * (), <./tidy/src/clean.c 86>
+  651 								TY_: 43
+  652 								MemAlloc: 10
+  653 								tmbstrdup: <>
+  654 							MemFree: 35
+  655 						CreatePropString: tmbstr (), <./tidy/src/clean.c 211>
+  656 							TY_: 43
+  657 							tmbstrlen: <>
+  658 							MemAlloc: 10
+  659 						FreeStyleProps: void (), <./tidy/src/clean.c 72>
+  660 							MemFree: 35
+  661 					CleanTree: Node * (), <./tidy/src/clean.c 1427>
+  662 						CleanTree: 661
+  663 						CleanNode: Node * (), <./tidy/src/clean.c 1382>
+  664 							cfgAutoBool: <>
+  665 							TY_: 43
+  666 							Dir2Div: Bool (), <./tidy/src/clean.c 956>
+  667 								nodeIsDIR: <>
+  668 								nodeIsUL: <>
+  669 								nodeIsOL: <>
+  670 								nodeIsLI: <>
+  671 								TY_: 43
+  672 								MemFree: 35
+  673 								tmbstrdup: <>
+  674 								StripOnlyChild: void (), <./tidy/src/clean.c 586>
+  675 									TY_: 43
+  676 									FreeNode: <>
+  677 							NestedList: Bool (), <./tidy/src/clean.c 1120>
+  678 								nodeIsUL: <>
+  679 								nodeIsOL: <>
+  680 								TY_: 43
+  681 								FreeNode: <>
+  682 								CleanNode: 663
+  683 							Center2Div: Bool (), <./tidy/src/clean.c 995>
+  684 								nodeIsCENTER: <>
+  685 								cfgBool: <>
+  686 								DiscardContainer: void (), <./tidy/src/clean.c 604>
+  687 									TY_: 43
+  688 									FreeNode: <>
+  689 								TY_: 43
+  690 								InferredTag: <>
+  691 								RenameElem: void (), <./tidy/src/clean.c 64>
+  692 									TY_: 43
+  693 									MemFree: 35
+  694 									tmbstrdup: <>
+  695 							MergeNestedElements: Bool (), <./tidy/src/clean.c 1089>
+  696 								TagIsId: <>
+  697 								CopyAttrs: Bool (), <./tidy/src/clean.c 1040>
+  698 									TY_: 43
+  699 									AttrGetById: <>
+  700 									attrIsSTYLE: <>
+  701 									attrIsCLASS: <>
+  702 									AttrId: <>
+  703 								MergeStyles: void (), <./tidy/src/clean.c 737>
+  704 									MergeClasses: void (), <./tidy/src/clean.c 692>
+  705 										attrIsCLASS: <>
+  706 										TY_: 43
+  707 										tmbstrlen: <>
+  708 										MemAlloc: 10
+  709 										MemFree: 35
+  710 									attrIsSTYLE: <>
+  711 									MergeProperties: 646
+  712 									MemFree: 35
+  713 									TY_: 43
+  714 								StripOnlyChild: 674
+  715 							BlockStyle: Bool (), <./tidy/src/clean.c 1235>
+  716 								CanApplyBlockStyle: Bool (), <./tidy/src/clean.c 1202>
+  717 									nodeIsTABLE: <>
+  718 									nodeIsTR: <>
+  719 									nodeIsLI: <>
+  720 								nodeIsCAPTION: <>
+  721 								TextAlign: void (), <./tidy/src/clean.c 920>
+  722 									attrIsALIGN: <>
+  723 									AddAlign: void (), <./tidy/src/clean.c 880>
+  724 										TY_: 43
+  725 										ToLower: <>
+  726 									TY_: 43
+  727 								nodeIsB: <>
+  728 								MergeStyles: 703
+  729 								TY_: 43
+  730 								StripOnlyChild: 674
+  731 								nodeIsI: <>
+  732 								nodeIsFONT: <>
+  733 								AddFontStyles: void (), <./tidy/src/clean.c 899>
+  734 									AttrHasValue: <>
+  735 									attrIsFACE: <>
+  736 									AddFontFace: void (), <./tidy/src/clean.c 833>
+  737 										TY_: 43
+  738 									attrIsSIZE: <>
+  739 									AddFontSize: void (), <./tidy/src/clean.c 840>
+  740 										nodeIsP: <>
+  741 										TY_: 43
+  742 										MemFree: 35
+  743 										tmbstrdup: <>
+  744 										FontSize2Name: ctmbstr (), <./tidy/src/clean.c 783>
+  745 									attrIsCOLOR: <>
+  746 									AddFontColor: void (), <./tidy/src/clean.c 872>
+  747 										TY_: 43
+  748 							InlineStyle: Bool (), <./tidy/src/clean.c 1282>
+  749 								nodeIsFONT: <>
+  750 								TY_: 43
+  751 								nodeIsB: <>
+  752 								cfgBool: <>
+  753 								MergeStyles: 703
+  754 								StripOnlyChild: 674
+  755 								nodeIsI: <>
+  756 								AddFontStyles: 733
+  757 							Font2Span: Bool (), <./tidy/src/clean.c 1331>
+  758 								nodeIsFONT: <>
+  759 								cfgBool: <>
+  760 								DiscardContainer: 686
+  761 								CanApplyBlockStyle: 716
+  762 								AddFontStyles: 733
+  763 								attrIsSTYLE: <>
+  764 								TY_: 43
+  765 								RenameElem: 691
+  766 					DefineStyleRules: void (), <./tidy/src/clean.c 1443>
+  767 						DefineStyleRules: 766
+  768 						Style2Rule: void (), <./tidy/src/clean.c 354>
+  769 							TY_: 43
+  770 							AttrGetById: <>
+  771 							FindStyle: 635
+  772 							MemFree: 35
+  773 							tmbstrdup: <>
+  774 					CreateStyleElement: void (), <./tidy/src/clean.c 510>
+  775 						NiceBody: Bool (), <./tidy/src/clean.c 489>
+  776 							TY_: 43
+  777 							AttrGetById: <>
+  778 						TY_: 43
+  779 						NewNode: <>
+  780 						tmbstrdup: <>
+  781 						CleanBodyAttrs: void (), <./tidy/src/clean.c 413>
+  782 							TY_: 43
+  783 							AttrGetById: <>
+  784 							AddStringLiteral: <>
+  785 							MemFree: 35
+  786 							AddColorRule: void (), <./tidy/src/clean.c 392>
+  787 								TY_: 43
+  788 								AddStringLiteral: <>
+  789 						AddCharToLexer: <>
+  790 						AddStringLiteral: <>
+  791 						TextToken: <>
+  792 					nodeIsB: <>
+  793 					nodeIsI: <>
+  794 					DiscardContainer: 686
+  795 					RenameElem: 691
+  796 					HasOneChild: Bool (), <./tidy/src/clean.c 1517>
+  797 					StripOnlyChild: 674
+  798 					nodeIsBLOCKQUOTE: <>
+  799 					PruneSection: Node * (), <./tidy/src/clean.c 1603>
+  800 						TY_: 43
+  801 						FindEnclosingCell: Node * (), <./tidy/src/clean.c 1590>
+  802 							nodeIsTD: <>
+  803 						assert: <>
+  804 						PruneSection: 799
+  805 					nodeIsP: <>
+  806 					NoMargins: Bool (), <./tidy/src/clean.c 1791>
+  807 						TY_: 43
+  808 						AttrGetById: <>
+  809 						AttrHasValue: <>
+  810 						tmbsubstr: <>
+  811 					PurgeWord2000Attributes: void (), <./tidy/src/clean.c 1675>
+  812 						attrIsCLASS: <>
+  813 						AttrValueIs: <>
+  814 						TY_: 43
+  815 						attrIsSTYLE: <>
+  816 						attrIsLANG: <>
+  817 						attrIsHEIGHT: <>
+  818 						attrIsWIDTH: <>
+  819 						nodeIsTD: <>
+  820 						nodeIsTR: <>
+  821 						nodeIsTH: <>
+  822 					RemoveNode: <>
+  823 					StripSpan: Node * (), <./tidy/src/clean.c 1715>
+  824 						TY_: 43
+  825 						RemoveNode: <>
+  826 					SingleSpace: Bool (), <./tidy/src/clean.c 1810>
+  827 						TY_: 43
+  828 					nodeIsSPAN: <>
+  829 					nodeIsLINK: <>
+  830 					AttrContains: <>
+  831 					nodeIsOBJECT: <>
+  832 					isspace: <>
+  833 					CreatePropString: 655
+  834 					FreeStyleProps: 659
+  835 					nodeIsWBR: <>
+  836 					tidyInitInputBuffer: void TIDY_CALL (), <./tidy/src/buffio.c 41>
+  837 						insrc_getByte: int TIDY_CALL (), <./tidy/src/buffio.c 25>
+  838 							tidyBufGetByte: int TIDY_CALL (), <./tidy/src/buffio.c 173>
+  839 								tidyBufEndOfInput: Bool TIDY_CALL (), <./tidy/src/buffio.c 181>
+  840 						insrc_eof: Bool TIDY_CALL (), <./tidy/src/buffio.c 30>
+  841 							tidyBufEndOfInput: Bool TIDY_CALL (), <./tidy/src/buffio.c 181>
+  842 						insrc_ungetByte: void TIDY_CALL (), <./tidy/src/buffio.c 35>
+  843 							tidyBufUngetByte: void TIDY_CALL (), <./tidy/src/buffio.c 186>
+  844 								assert: <>
+  845 					memcpy: <>
+  846 					ReadByte: uint (), <./tidy/src/streamio.c 1060>
+  847 						tidyGetByte: uint TIDY_CALL (), <./tidy/src/streamio.c 1042>
+  848 					UngetByte: void (), <./tidy/src/streamio.c 1068>
+  849 						tidyUngetByte: void TIDY_CALL (), <./tidy/src/streamio.c 1051>
+  850 					AddByteToOriginalText: <>
+  851 					PopChar: uint (), <./tidy/src/streamio.c 496>
+  852 						assert: <>
+  853 					ReadCharFromStream: uint (), <./tidy/src/streamio.c 1126>
+  854 						TY_: 43
+  855 						ReadByte: 846
+  856 						assert: <>
+  857 					AddCharToOriginalText: <>
+  858 					DecodeIbm850: uint (), <./tidy/src/streamio.c 866>
+  859 					DecodeLatin0: uint (), <./tidy/src/streamio.c 895>
+  860 					initStreamOut: StreamOut * (), <./tidy/src/streamio.c 544>
+  861 						MemAlloc: 10
+  862 						ClearMemory: 41
+  863 					tidyInitOutputBuffer: void TIDY_CALL (), <./tidy/src/buffio.c 55>
+  864 						outsink_putByte: void TIDY_CALL (), <./tidy/src/buffio.c 49>
+  865 							tidyBufPutByte: 267
+  866 					EncodeMacRoman: void (), <./tidy/src/streamio.c 823>
+  867 						PutByte: void (), <./tidy/src/streamio.c 1072>
+  868 							tidyPutByte: void TIDY_CALL (), <./tidy/src/streamio.c 1055>
+  869 					EncodeWin1252: void (), <./tidy/src/streamio.c 760>
+  870 						PutByte: 867
+  871 					EncodeIbm858: void (), <./tidy/src/streamio.c 875>
+  872 						PutByte: 867
+  873 					EncodeLatin0: void (), <./tidy/src/streamio.c 915>
+  874 						PutByte: 867
+  875 					PutByte: 867
+  876 					SplitSurrogatePair: <>
+  877 					tidyIsEOF: Bool TIDY_CALL (), <./tidy/src/streamio.c 1047>
+  878 					ToLower: <>
+  879 					ToUpper: <>
+  880 					vsnprintf: <>
+  881 					vsprintf: <>
+  882 					va_start: <>
+  883 					va_end: <>
+  884 					InitAccessibilityChecks: void (), <./tidy/src/access.c 3047>
+  885 						ClearMemory: 41
+  886 					CheckScriptKeyboardAccessible: void (), <./tidy/src/access.c 2660>
+  887 						Level2_Enabled: Bool (), <./tidy/src/access.c 460>
+  888 						attrIsOnMOUSEDOWN: <>
+  889 						attrIsOnMOUSEUP: <>
+  890 						attrIsOnCLICK: <>
+  891 						attrIsOnMOUSEOUT: <>
+  892 						attrIsOnMOUSEOVER: <>
+  893 						attrIsOnMOUSEMOVE: <>
+  894 						attrIsOnKEYDOWN: <>
+  895 						attrIsOnKEYUP: <>
+  896 						attrIsOnKEYPRESS: <>
+  897 						attrIsOnBLUR: <>
+  898 						TY_: 43
+  899 						CheckScriptKeyboardAccessible: 886
+  900 					CheckForStyleAttribute: void (), <./tidy/src/access.c 2939>
+  901 						Level1_Enabled: Bool (), <./tidy/src/access.c 454>
+  902 						attrGetSTYLE: <>
+  903 						hasValue: Bool (), <./tidy/src/access.c 296>
+  904 							IsWhitespace: Bool (), <./tidy/src/access.c 284>
+  905 								TY_: 43
+  906 						TY_: 43
+  907 						CheckForStyleAttribute: 900
+  908 					CheckDocType: void (), <./tidy/src/access.c 2855>
+  909 						Level2_Enabled: 887
+  910 						TY_: 43
+  911 						textFromOneNode: ctmbstr (), <./tidy/src/access.c 368>
+  912 						strstr: <>
+  913 					Level2_Enabled: 887
+  914 					CheckMissingStyleSheets: Bool (), <./tidy/src/access.c 1048>
+  915 						nodeIsLINK: <>
+  916 						nodeIsSTYLE: <>
+  917 						nodeIsFONT: <>
+  918 						nodeIsBASEFONT: <>
+  919 						attrIsSTYLE: <>
+  920 						attrIsTEXT: <>
+  921 						attrIsVLINK: <>
+  922 						attrIsALINK: <>
+  923 						attrIsLINK: <>
+  924 						attrIsREL: <>
+  925 						AttrValueIs: <>
+  926 						CheckMissingStyleSheets: 914
+  927 					CheckForListElements: void (), <./tidy/src/access.c 2965>
+  928 						nodeIsLI: <>
+  929 						nodeIsOL: <>
+  930 						nodeIsUL: <>
+  931 						CheckForListElements: 927
+  932 					AccessibilityCheckNode: void (), <./tidy/src/access.c 3088>
+  933 						nodeIsBODY: <>
+  934 						CheckColorContrast: void (), <./tidy/src/access.c 514>
+  935 							Level3_Enabled: Bool (), <./tidy/src/access.c 465>
+  936 							attrIsBGCOLOR: <>
+  937 							hasValue: 903
+  938 							GetRgb: Bool (), <./tidy/src/access.c 604>
+  939 								strstr: <>
+  940 								TY_: 43
+  941 								tmbstrlen: <>
+  942 								ctox: int (), <./tidy/src/access.c 648>
+  943 							attrIsTEXT: <>
+  944 							attrIsLINK: <>
+  945 							attrIsALINK: <>
+  946 							attrIsVLINK: <>
+  947 							CompareColors: Bool (), <./tidy/src/access.c 578>
+  948 								brightness: int (), <./tidy/src/access.c 573>
+  949 								minmax: int (), <./tidy/src/access.c 569>
+  950 									MAX: <>
+  951 									MIN: <>
+  952 							TY_: 43
+  953 						nodeIsHEAD: <>
+  954 						CheckMetaData: Bool (), <./tidy/src/access.c 2746>
+  955 							Level2_Enabled: 887
+  956 							nodeIsMETA: <>
+  957 							attrIsHTTP_EQUIV: <>
+  958 							hasValue: 903
+  959 							AttrValueIs: <>
+  960 							TY_: 43
+  961 							attrIsCONTENT: <>
+  962 							nodeIsADDRESS: <>
+  963 							nodeIsA: <>
+  964 							nodeIsTITLE: <>
+  965 							textFromOneNode: 911
+  966 							IsWhitespace: 904
+  967 							nodeIsLINK: <>
+  968 							attrGetREL: <>
+  969 							AttrContains: <>
+  970 							CheckMetaData: 954
+  971 						MetaDataPresent: void (), <./tidy/src/access.c 2839>
+  972 							Level2_Enabled: 887
+  973 							TY_: 43
+  974 						nodeIsA: <>
+  975 						CheckAnchorAccess: void (), <./tidy/src/access.c 1193>
+  976 							Level1_Enabled: 901
+  977 							attrIsHREF: <>
+  978 							hasValue: 903
+  979 							GetFileExtension: void (), <./tidy/src/access.c 165>
+  980 								TY_: 43
+  981 								tmbstrlen: <>
+  982 							IsValidMediaExtension: Bool (), <./tidy/src/access.c 262>
+  983 								GetFileExtension: 979
+  984 								TY_: 43
+  985 							TY_: 43
+  986 							tmbstrlen: <>
+  987 							IsSoundFile: int (), <./tidy/src/access.c 215>
+  988 								GetFileExtension: 979
+  989 								TY_: 43
+  990 							textFromOneNode: 911
+  991 							IsWhitespace: 904
+  992 							Level2_Enabled: 887
+  993 							attrIsTARGET: <>
+  994 							AttrValueIs: <>
+  995 						nodeIsIMG: <>
+  996 						CheckFlicker: void (), <./tidy/src/access.c 2579>
+  997 							Level1_Enabled: 901
+  998 							nodeIsSCRIPT: <>
+  999 							nodeIsOBJECT: <>
+ 1000 							nodeIsEMBED: <>
+ 1001 							nodeIsAPPLET: <>
+ 1002 							nodeIsIMG: <>
+ 1003 							attrGetSRC: <>
+ 1004 							hasValue: 903
+ 1005 							GetFileExtension: 979
+ 1006 							TY_: 43
+ 1007 						CheckColorAvailable: void (), <./tidy/src/access.c 477>
+ 1008 							Level1_Enabled: 901
+ 1009 							nodeIsIMG: <>
+ 1010 							TY_: 43
+ 1011 							nodeIsAPPLET: <>
+ 1012 							nodeIsOBJECT: <>
+ 1013 							nodeIsSCRIPT: <>
+ 1014 							nodeIsINPUT: <>
+ 1015 						CheckImage: void (), <./tidy/src/access.c 675>
+ 1016 							Level1_Enabled: 901
+ 1017 							attrIsALT: <>
+ 1018 							TY_: 43
+ 1019 							tmbstrlen: <>
+ 1020 							IsPlaceholderAlt: Bool (), <./tidy/src/access.c 310>
+ 1021 								strstr: <>
+ 1022 							IsPlaceHolderObject: Bool (), <./tidy/src/access.c 341>
+ 1023 								strstr: <>
+ 1024 							EndsWithBytes: Bool (), <./tidy/src/access.c 354>
+ 1025 								TY_: 43
+ 1026 								tmbstrlen: <>
+ 1027 							IsImage: Bool (), <./tidy/src/access.c 189>
+ 1028 								GetFileExtension: 979
+ 1029 								TY_: 43
+ 1030 							attrIsWIDTH: <>
+ 1031 							hasValue: 903
+ 1032 							atoi: <>
+ 1033 							attrIsHEIGHT: <>
+ 1034 							attrIsLONGDESC: <>
+ 1035 							attrIsUSEMAP: <>
+ 1036 							attrIsISMAP: <>
+ 1037 							nodeIsA: <>
+ 1038 							textFromOneNode: 911
+ 1039 						nodeIsMAP: <>
+ 1040 						CheckMapLinks: void (), <./tidy/src/access.c 2908>
+ 1041 							Level3_Enabled: 935
+ 1042 							nodeIsAREA: <>
+ 1043 							attrGetHREF: <>
+ 1044 							hasValue: 903
+ 1045 							FindLinkA: Bool (), <./tidy/src/access.c 2892>
+ 1046 								nodeIsA: <>
+ 1047 								attrGetHREF: <>
+ 1048 								hasValue: 903
+ 1049 								urlMatch: Bool (), <./tidy/src/access.c 2884>
+ 1050 									TY_: 43
+ 1051 								FindLinkA: 1045
+ 1052 							TY_: 43
+ 1053 						nodeIsAREA: <>
+ 1054 						CheckArea: void (), <./tidy/src/access.c 1324>
+ 1055 							Level1_Enabled: 901
+ 1056 							attrIsALT: <>
+ 1057 							Level2_Enabled: 887
+ 1058 							attrIsTARGET: <>
+ 1059 							AttrValueIs: <>
+ 1060 							TY_: 43
+ 1061 						nodeIsAPPLET: <>
+ 1062 						CheckDeprecated: void (), <./tidy/src/access.c 2620>
+ 1063 							Level2_Enabled: 887
+ 1064 							nodeIsAPPLET: <>
+ 1065 							nodeIsBASEFONT: <>
+ 1066 							nodeIsCENTER: <>
+ 1067 							nodeIsDIR: <>
+ 1068 							nodeIsFONT: <>
+ 1069 							nodeIsISINDEX: <>
+ 1070 							nodeIsMENU: <>
+ 1071 							nodeIsS: <>
+ 1072 							nodeIsSTRIKE: <>
+ 1073 							nodeIsU: <>
+ 1074 							TY_: 43
+ 1075 						ProgrammaticObjects: void (), <./tidy/src/access.c 2483>
+ 1076 							Level1_Enabled: 901
+ 1077 							nodeIsSCRIPT: <>
+ 1078 							nodeIsOBJECT: <>
+ 1079 							nodeIsEMBED: <>
+ 1080 							nodeIsAPPLET: <>
+ 1081 							TY_: 43
+ 1082 						DynamicContent: void (), <./tidy/src/access.c 2458>
+ 1083 							Level1_Enabled: 901
+ 1084 							nodeIsAPPLET: <>
+ 1085 							nodeIsSCRIPT: <>
+ 1086 							nodeIsOBJECT: <>
+ 1087 							TY_: 43
+ 1088 						AccessibleCompatible: void (), <./tidy/src/access.c 2509>
+ 1089 							Level1_Enabled: 901
+ 1090 							nodeIsSCRIPT: <>
+ 1091 							nodeIsOBJECT: <>
+ 1092 							nodeIsEMBED: <>
+ 1093 							nodeIsAPPLET: <>
+ 1094 							TY_: 43
+ 1095 						CheckApplet: void (), <./tidy/src/access.c 926>
+ 1096 							Level1_Enabled: 901
+ 1097 							attrIsALT: <>
+ 1098 							textFromOneNode: 911
+ 1099 							IsWhitespace: 904
+ 1100 							TY_: 43
+ 1101 						nodeIsOBJECT: <>
+ 1102 						CheckObject: void (), <./tidy/src/access.c 991>
+ 1103 							Level1_Enabled: 901
+ 1104 							attrIsALT: <>
+ 1105 							TY_: 43
+ 1106 							textFromOneNode: 911
+ 1107 							IsWhitespace: 904
+ 1108 						nodeIsFRAME: <>
+ 1109 						CheckFrame: void (), <./tidy/src/access.c 1093>
+ 1110 							Level1_Enabled: 901
+ 1111 							attrIsLONGDESC: <>
+ 1112 							hasValue: 903
+ 1113 							TY_: 43
+ 1114 							tmbstrlen: <>
+ 1115 							attrIsSRC: <>
+ 1116 							IsValidSrcExtension: Bool (), <./tidy/src/access.c 240>
+ 1117 								GetFileExtension: 979
+ 1118 								TY_: 43
+ 1119 							attrIsTITLE: <>
+ 1120 							IsWhitespace: 904
+ 1121 						nodeIsIFRAME: <>
+ 1122 						CheckIFrame: void (), <./tidy/src/access.c 1169>
+ 1123 							Level1_Enabled: 901
+ 1124 							attrGetSRC: <>
+ 1125 							hasValue: 903
+ 1126 							IsValidSrcExtension: 1116
+ 1127 							TY_: 43
+ 1128 						nodeIsSCRIPT: <>
+ 1129 						CheckScriptAcc: void (), <./tidy/src/access.c 1384>
+ 1130 							Level1_Enabled: 901
+ 1131 							nodeIsNOSCRIPT: <>
+ 1132 							TY_: 43
+ 1133 						nodeIsTABLE: <>
+ 1134 						CheckTable: void (), <./tidy/src/access.c 1672>
+ 1135 							Level3_Enabled: 935
+ 1136 							attrIsSUMMARY: <>
+ 1137 							hasValue: 903
+ 1138 							AttrContains: <>
+ 1139 							TY_: 43
+ 1140 							tmbstrlen: <>
+ 1141 							IsWhitespace: 904
+ 1142 							Level1_Enabled: 901
+ 1143 							CheckMultiHeaders: void (), <./tidy/src/access.c 1569>
+ 1144 								Level1_Enabled: 901
+ 1145 								nodeIsTR: <>
+ 1146 								nodeIsTH: <>
+ 1147 								attrIsROWSPAN: <>
+ 1148 								atoi: <>
+ 1149 								attrIsCOLSPAN: <>
+ 1150 								TY_: 43
+ 1151 							Level2_Enabled: 887
+ 1152 							nodeIsCAPTION: <>
+ 1153 							getTextNodeClear: tmbstr (), <./tidy/src/access.c 438>
+ 1154 								ClearMemory: 41
+ 1155 								getTextNode: void (), <./tidy/src/access.c 400>
+ 1156 									TY_: 43
+ 1157 									getTextNode: 1155
+ 1158 							nodeIsTR: <>
+ 1159 							CheckColumns: void (), <./tidy/src/access.c 1460>
+ 1160 								nodeIsTH: <>
+ 1161 								TY_: 43
+ 1162 								textFromOneNode: 911
+ 1163 								IsWhitespace: 904
+ 1164 							CheckRows: void (), <./tidy/src/access.c 1404>
+ 1165 								nodeIsTH: <>
+ 1166 								TY_: 43
+ 1167 								textFromOneNode: 911
+ 1168 								IsWhitespace: 904
+ 1169 						nodeIsPRE: <>
+ 1170 						nodeIsXMP: <>
+ 1171 						CheckASCII: void (), <./tidy/src/access.c 1857>
+ 1172 							Level1_Enabled: 901
+ 1173 							attrIsHREF: <>
+ 1174 							hasValue: 903
+ 1175 							Level2_Enabled: 887
+ 1176 							nodeIsA: <>
+ 1177 							attrIsNAME: <>
+ 1178 							strstr: <>
+ 1179 							TY_: 43
+ 1180 							Level3_Enabled: 935
+ 1181 						nodeIsLABEL: <>
+ 1182 						CheckLabel: void (), <./tidy/src/access.c 2017>
+ 1183 							Level2_Enabled: 887
+ 1184 							attrGetFOR: <>
+ 1185 							hasValue: 903
+ 1186 							CheckFormControls: void (), <./tidy/src/access.c 1989>
+ 1187 								TY_: 43
+ 1188 						nodeIsINPUT: <>
+ 1189 						CheckInputLabel: void (), <./tidy/src/access.c 2044>
+ 1190 							Level2_Enabled: 887
+ 1191 							attrIsID: <>
+ 1192 							hasValue: 903
+ 1193 							CheckFormControls: 1186
+ 1194 						CheckInputAttributes: void (), <./tidy/src/access.c 2074>
+ 1195 							attrIsTYPE: <>
+ 1196 							hasValue: 903
+ 1197 							Level1_Enabled: 901
+ 1198 							AttrValueIs: <>
+ 1199 							attrIsALT: <>
+ 1200 							TY_: 43
+ 1201 						nodeIsFRAMESET: <>
+ 1202 						CheckFrameSet: void (), <./tidy/src/access.c 2118>
+ 1203 							Level1_Enabled: 901
+ 1204 							nodeIsA: <>
+ 1205 							TY_: 43
+ 1206 							nodeIsNOFRAMES: <>
+ 1207 							nodeIsP: <>
+ 1208 							textFromOneNode: 911
+ 1209 							strstr: <>
+ 1210 							IsWhitespace: 904
+ 1211 						TY_: 43
+ 1212 						CheckHeaderNesting: void (), <./tidy/src/access.c 2184>
+ 1213 							Level2_Enabled: 887
+ 1214 							textFromOneNode: 911
+ 1215 							TY_: 43
+ 1216 							tmbstrlen: <>
+ 1217 						nodeIsP: <>
+ 1218 						CheckParagraphHeader: void (), <./tidy/src/access.c 2253>
+ 1219 							Level2_Enabled: 887
+ 1220 							nodeIsSTRONG: <>
+ 1221 							TY_: 43
+ 1222 							nodeIsU: <>
+ 1223 							nodeIsEM: <>
+ 1224 						nodeIsHTML: <>
+ 1225 						CheckHTMLAccess: void (), <./tidy/src/access.c 2328>
+ 1226 							Level3_Enabled: 935
+ 1227 							attrGetLANG: <>
+ 1228 							hasValue: 903
+ 1229 							TY_: 43
+ 1230 						nodeIsBLINK: <>
+ 1231 						CheckBlink: void (), <./tidy/src/access.c 2354>
+ 1232 							Level2_Enabled: 887
+ 1233 							TY_: 43
+ 1234 							textFromOneNode: 911
+ 1235 							IsWhitespace: 904
+ 1236 						nodeIsMARQUEE: <>
+ 1237 						CheckMarquee: void (), <./tidy/src/access.c 2380>
+ 1238 							Level2_Enabled: 887
+ 1239 							TY_: 43
+ 1240 							textFromOneNode: 911
+ 1241 							IsWhitespace: 904
+ 1242 						nodeIsLINK: <>
+ 1243 						CheckLink: void (), <./tidy/src/access.c 2405>
+ 1244 							Level1_Enabled: 901
+ 1245 							attrIsREL: <>
+ 1246 							hasValue: 903
+ 1247 							AttrContains: <>
+ 1248 							attrIsTYPE: <>
+ 1249 							TY_: 43
+ 1250 						nodeIsSTYLE: <>
+ 1251 						CheckStyle: void (), <./tidy/src/access.c 2441>
+ 1252 							Level1_Enabled: 901
+ 1253 							TY_: 43
+ 1254 						nodeIsEMBED: <>
+ 1255 						CheckEmbed: void (), <./tidy/src/access.c 2308>
+ 1256 							Level1_Enabled: 901
+ 1257 							attrGetSRC: <>
+ 1258 							hasValue: 903
+ 1259 							IsValidMediaExtension: 982
+ 1260 							TY_: 43
+ 1261 						nodeIsBASEFONT: <>
+ 1262 						nodeIsCENTER: <>
+ 1263 						nodeIsISINDEX: <>
+ 1264 						nodeIsU: <>
+ 1265 						nodeIsFONT: <>
+ 1266 						nodeIsDIR: <>
+ 1267 						nodeIsS: <>
+ 1268 						nodeIsSTRIKE: <>
+ 1269 						nodeIsMENU: <>
+ 1270 						nodeIsTH: <>
+ 1271 						CheckTH: void (), <./tidy/src/access.c 1507>
+ 1272 							Level3_Enabled: 935
+ 1273 							attrIsABBR: <>
+ 1274 							IsWhitespace: 904
+ 1275 							TY_: 43
+ 1276 							tmbstrlen: <>
+ 1277 							textFromOneNode: 911
+ 1278 						nodeIsLI: <>
+ 1279 						nodeIsOL: <>
+ 1280 						nodeIsUL: <>
+ 1281 						CheckListUsage: void (), <./tidy/src/access.c 2991>
+ 1282 							Level2_Enabled: 887
+ 1283 							nodeIsOL: <>
+ 1284 							nodeIsUL: <>
+ 1285 							nodeIsLI: <>
+ 1286 							TY_: 43
+ 1287 						AccessibilityCheckNode: 932
+ 1288 					FreeAccessibilityChecks: void (), <./tidy/src/access.c 3060>
+ 1289 					AttrIsId: <>
+ 1290 					lookup: const Attribute * (), <./tidy/src/attrs.c 635>
+ 1291 						hash: uint (), <./tidy/src/attrs.c 566>
+ 1292 						TY_: 43
+ 1293 						install: const Attribute * (), <./tidy/src/attrs.c 576>
+ 1294 							MemAlloc: 10
+ 1295 							hash: 1291
+ 1296 						cfgBool: <>
+ 1297 						tmbstrncasecmp: <>
+ 1298 					CheckAttrType: Bool (), <./tidy/src/attrs.c 753>
+ 1299 						lookup: 1290
+ 1300 					isdigit: <>
+ 1301 					isalpha: <>
+ 1302 					FreeAnchor: void (), <./tidy/src/attrs.c 843>
+ 1303 						MemFree: 35
+ 1304 					emptyHash: void (), <./tidy/src/attrs.c 614>
+ 1305 						MemFree: 35
+ 1306 					FreeDeclaredAttributes: void (), <./tidy/src/attrs.c 954>
+ 1307 						removeFromHash: void (), <./tidy/src/attrs.c 594>
+ 1308 							hash: 1291
+ 1309 							TY_: 43
+ 1310 							MemFree: 35
+ 1311 						MemFree: 35
+ 1312 					AttrsHaveSameId: <>
+ 1313 					attrIsCLASS: <>
+ 1314 					attrIsSTYLE: <>
+ 1315 					AppendToStyleAttr: void (), <./tidy/src/attrs.c 996>
+ 1316 						TY_: 43
+ 1317 						tmbstrlen: <>
+ 1318 						MemRealloc: 24
+ 1319 					AttributeVersions: uint (), <./tidy/src/attrs.c 313>
+ 1320 					AttributeIsMarkedForRemoval: Bool (), <./tidy/src/attrs.c 307>
+ 1321 					AttributeIsProprietary: Bool (), <./tidy/src/attrs.c 351>
+ 1322 						AttributeVersions: 1319
+ 1323 					AttrId: <>
+ 1324 					sprintf: <>
+ 1325 					MarkAttributeForRemoval: void (), <./tidy/src/attrs.c 302>
+ 1326 					strchr: <>
+ 1327 					CanPrune: Bool (), <./tidy/src/parser.c 241>
+ 1328 						TY_: 43
+ 1329 						nodeIsA: <>
+ 1330 						nodeIsP: <>
+ 1331 						cfgBool: <>
+ 1332 						nodeIsAPPLET: <>
+ 1333 						nodeIsOBJECT: <>
+ 1334 						nodeIsSCRIPT: <>
+ 1335 						attrGetSRC: <>
+ 1336 						nodeIsTITLE: <>
+ 1337 						nodeIsIFRAME: <>
+ 1338 						nodeIsTEXTAREA: <>
+ 1339 						attrGetID: <>
+ 1340 						attrGetNAME: <>
+ 1341 						attrGetDATAFLD: <>
+ 1342 						nodeIsBODY: <>
+ 1343 						nodeIsCOLGROUP: <>
+ 1344 					nodeIsFORM: <>
+ 1345 					DescendantOf: Bool (), <./tidy/src/parser.c 658>
+ 1346 						TagIsId: <>
+ 1347 					TrimSpaces: void (), <./tidy/src/parser.c 642>
+ 1348 						nodeIsPRE: <>
+ 1349 						IsPreDescendant: Bool (), <./tidy/src/parser.c 498>
+ 1350 							TY_: 43
+ 1351 						TY_: 43
+ 1352 						TrimInitialSpace: void (), <./tidy/src/parser.c 462>
+ 1353 							TY_: 43
+ 1354 							NewNode: <>
+ 1355 						TrimTrailingSpace: void (), <./tidy/src/parser.c 366>
+ 1356 							TY_: 43
+ 1357 					nodeIsMAP: <>
+ 1358 					nodeIsNOSCRIPT: <>
+ 1359 					InsertMisc: Bool (), <./tidy/src/parser.c 671>
+ 1360 						TY_: 43
+ 1361 						TagId: <>
+ 1362 					BadForm: void (), <./tidy/src/parser.c 350>
+ 1363 					nodeIsFRAME: <>
+ 1364 					nodeIsOPTGROUP: <>
+ 1365 					nodeIsOPTION: <>
+ 1366 					nodeIsTD: <>
+ 1367 					nodeIsTH: <>
+ 1368 					MoveToHead: void (), <./tidy/src/parser.c 775>
+ 1369 						TY_: 43
+ 1370 						RemoveNode: <>
+ 1371 						assert: <>
+ 1372 						ParseTag: void (), <./tidy/src/parser.c 725>
+ 1373 						FreeNode: <>
+ 1374 					AddClassNoIndent: void (), <./tidy/src/parser.c 811>
+ 1375 						cfgBool: <>
+ 1376 						TY_: 43
+ 1377 					nodeIsDL: <>
+ 1378 					ParseTag: 1372
+ 1379 					nodeIsDT: <>
+ 1380 					nodeIsBIG: <>
+ 1381 					nodeIsSMALL: <>
+ 1382 					nodeIsSUB: <>
+ 1383 					nodeIsSUP: <>
+ 1384 					nodeIsQ: <>
+ 1385 					nodeIsADDRESS: <>
+ 1386 					nodeIsCENTER: <>
+ 1387 					nodeIsDIV: <>
+ 1388 					InsertNodeAsParent: void (), <./tidy/src/parser.c 174>
+ 1389 					nodeIsDD: <>
+ 1390 					FixEmptyRow: void (), <./tidy/src/parser.c 2111>
+ 1391 						TY_: 43
+ 1392 						InferredTag: <>
+ 1393 					nodeIsTABLE: <>
+ 1394 					MoveBeforeTable: void (), <./tidy/src/parser.c 2088>
+ 1395 						nodeIsTABLE: <>
+ 1396 						TY_: 43
+ 1397 					nodeIsTR: <>
+ 1398 					nodeIsCOL: <>
+ 1399 					PreContent: Bool (), <./tidy/src/parser.c 2622>
+ 1400 						nodeIsP: <>
+ 1401 						TY_: 43
+ 1402 						nodeIsPARAM: <>
+ 1403 					TrimInitialSpace: 1352
+ 1404 					attrIsLANGUAGE: <>
+ 1405 					attrIsTYPE: <>
+ 1406 					InsertDocType: void (), <./tidy/src/parser.c 754>
+ 1407 						TY_: 43
+ 1408 						FreeNode: <>
+ 1409 						nodeIsHTML: <>
+ 1410 					nodeIsBASE: <>
+ 1411 					strstr: <>
+ 1412 					tmbstrndup: <>
+ 1413 					nodeIsINPUT: <>
+ 1414 					nodeIsIMG: <>
+ 1415 					MoveNodeToBody: void (), <./tidy/src/parser.c 801>
+ 1416 						TY_: 43
+ 1417 						RemoveNode: <>
+ 1418 					SanitizeNodesAgainstXSS: void (), <./tidy/src/parser.c 4016>
+ 1419 						cfgBool: <>
+ 1420 						TY_: 43
+ 1421 						nodeIsFRAMESET: <>
+ 1422 						nodeIsSCRIPT: <>
+ 1423 						nodeIsIFRAME: <>
+ 1424 						nodeIsOBJECT: <>
+ 1425 						nodeIsFRAME: <>
+ 1426 						nodeIsEMBED: <>
+ 1427 						nodeIsSTYLE: <>
+ 1428 						nodeIsLINK: <>
+ 1429 						nodeIsMETA: <>
+ 1430 						nodeIsAPPLET: <>
+ 1431 						RemoveNode: <>
+ 1432 						FreeNode: <>
+ 1433 						SanitizeNodesAgainstXSS: 1418
+ 1434 					AttributeChecks: void (), <./tidy/src/parser.c 3989>
+ 1435 						TY_: 43
+ 1436 						chkattrs: <>
+ 1437 						AttributeChecks: 1434
+ 1438 					ReplaceObsoleteElements: void (), <./tidy/src/parser.c 3967>
+ 1439 						nodeIsDIR: <>
+ 1440 						nodeIsMENU: <>
+ 1441 						TY_: 43
+ 1442 						nodeIsXMP: <>
+ 1443 						nodeIsLISTING: <>
+ 1444 						ReplaceObsoleteElements: 1438
+ 1445 					CleanSpaces: void (), <./tidy/src/parser.c 598>
+ 1446 						TY_: 43
+ 1447 						CleanLeadingWhitespace: Bool (), <./tidy/src/parser.c 564>
+ 1448 							TY_: 43
+ 1449 							IsPreDescendant: 1349
+ 1450 							nodeIsBR: <>
+ 1451 						CleanTrailingWhitespace: Bool (), <./tidy/src/parser.c 513>
+ 1452 							TY_: 43
+ 1453 							IsPreDescendant: 1349
+ 1454 							nodeIsBR: <>
+ 1455 						RemoveNode: <>
+ 1456 						FreeNode: <>
+ 1457 						CleanSpaces: 1445
+ 1458 					EncloseBodyText: void (), <./tidy/src/parser.c 3890>
+ 1459 						TY_: 43
+ 1460 						nodeCMIsOnlyInline: Bool (), <./tidy/src/parser.c 3885>
+ 1461 							TY_: 43
+ 1462 						InferredTag: <>
+ 1463 						RemoveNode: <>
+ 1464 						TrimSpaces: 1347
+ 1465 					EncloseBlockText: void (), <./tidy/src/parser.c 3924>
+ 1466 						EncloseBlockText: 1465
+ 1467 						nodeIsFORM: <>
+ 1468 						nodeIsNOSCRIPT: <>
+ 1469 						nodeIsBLOCKQUOTE: <>
+ 1470 						TY_: 43
+ 1471 						nodeCMIsOnlyInline: 1460
+ 1472 						InferredTag: <>
+ 1473 						RemoveNode: <>
+ 1474 						TrimSpaces: 1347
+ 1475 					attrIsXML_SPACE: <>
+ 1476 					nodeIsPRE: <>
+ 1477 					ParseXMLElement: void (), <./tidy/src/parser.c 4246>
+ 1478 						TY_: 43
+ 1479 						FreeNode: <>
+ 1480 						ParseXMLElement: 1477
+ 1481 					message: void (), <./tidy/src/localize.c 976>
+ 1482 					messageLexer: void (), <./tidy/src/localize.c 1027>
+ 1483 						va_start: <>
+ 1484 						messagePos: void (), <./tidy/src/localize.c 937>
+ 1485 							UpdateCount: Bool (), <./tidy/src/localize.c 873>
+ 1486 								cfg: <>
+ 1487 								cfgBool: <>
+ 1488 							TY_: 43
+ 1489 							tidyImplToDoc: TidyDoc (), <./tidy/src/tidylib.c 49>
+ 1490 							ReportPosition: char * (), <./tidy/src/localize.c 907>
+ 1491 								cfgBool: <>
+ 1492 								cfgStr: <>
+ 1493 								TY_: 43
+ 1494 								tmbstrlen: <>
+ 1495 							LevelPrefix: char * (), <./tidy/src/localize.c 839>
+ 1496 								TY_: 43
+ 1497 								tmbstrlen: <>
+ 1498 						va_end: <>
+ 1499 					GetFormatFromCode: ctmbstr (), <./tidy/src/localize.c 298>
+ 1500 					NtoS: void (), <./tidy/src/localize.c 1126>
+ 1501 					TagToString: char * (), <./tidy/src/localize.c 1090>
+ 1502 						TY_: 43
+ 1503 						tmbstrlen: <>
+ 1504 					messageNode: void (), <./tidy/src/localize.c 1038>
+ 1505 						va_start: <>
+ 1506 						messagePos: 1484
+ 1507 						va_end: <>
+ 1508 					tidy_out: void (), <./tidy/src/localize.c 1052>
+ 1509 						va_start: <>
+ 1510 						messagePos: 1484
+ 1511 						va_end: <>
+ 1512 						cfgBool: <>
+ 1513 						TY_: 43
+ 1514 			tidyImplToDoc: 1489
+ 1515 		tidyFileExists: Bool TIDY_CALL (), <./tidy/src/config.c 692>
+ 1516 			ExpandTilde: 594
+ 1517 			access: <>
+ 1518 			fopen: <>
+ 1519 			fclose: <>
+ 1520 			MemFree: 35
+ 1521 		tidyLoadConfig: int TIDY_CALL (), <./tidy/src/tidylib.c 188>
+ 1522 			tidyDocToImpl: TidyDocImpl * (), <./tidy/src/tidylib.c 45>
+ 1523 			TY_: 43
+ 1524 		getenv: <>
+ 1525 		strcasecmp: <>
+ 1526 		tidyOptSetBool: Bool TIDY_CALL (), <./tidy/src/tidylib.c 414>
+ 1527 			tidyDocToImpl: 1522
+ 1528 			TY_: 43
+ 1529 		tidyOptSetInt: Bool TIDY_CALL (), <./tidy/src/tidylib.c 391>
+ 1530 			tidyDocToImpl: 1522
+ 1531 			TY_: 43
+ 1532 		tidyOptGetInt: ulong TIDY_CALL (), <./tidy/src/tidylib.c 382>
+ 1533 			tidyDocToImpl: 1522
+ 1534 			cfg: <>
+ 1535 		tidyOptResetToDefault: Bool TIDY_CALL (), <./tidy/src/tidylib.c 555>
+ 1536 			tidyDocToImpl: 1522
+ 1537 			TY_: 43
+ 1538 		tidySetCharEncoding: int TIDY_CALL (), <./tidy/src/tidylib.c 204>
+ 1539 			tidyDocToImpl: 1522
+ 1540 			TY_: 43
+ 1541 		help: void (), <./tidy/console/tidy.c 402>
+ 1542 			printf: <>
+ 1543 			tidyReleaseDate: 75
+ 1544 			print_help_option: void (), <./tidy/console/tidy.c 342>
+ 1545 				strlen: <>
+ 1546 				printf: <>
+ 1547 				get_option_names: tmbstr (), <./tidy/console/tidy.c 272>
+ 1548 					strlen: <>
+ 1549 					malloc: <>
+ 1550 					strcpy: <>
+ 1551 					strcat: <>
+ 1552 				print2Columns: void (), <./tidy/console/tidy.c 63>
+ 1553 					malloc: <>
+ 1554 					cutToWhiteSpace: const char * (), <./tidy/console/tidy.c 30>
+ 1555 						strlen: <>
+ 1556 						strcpy: <>
+ 1557 						strncpy: <>
+ 1558 					printf: <>
+ 1559 					free: <>
+ 1560 				free: <>
+ 1561 		tidyRelease: void TIDY_CALL (), <./tidy/src/tidylib.c 98>
+ 1562 			tidyDocToImpl: 1522
+ 1563 			tidyDocRelease: void (), <./tidy/src/tidylib.c 125>
+ 1564 				assert: <>
+ 1565 				TY_: 43
+ 1566 				FreeNode: <>
+ 1567 				ClearMemory: 41
+ 1568 				MemFree: 35
+ 1569 		xml_help: void (), <./tidy/console/tidy.c 394>
+ 1570 			printf: <>
+ 1571 			tidyReleaseDate: 75
+ 1572 			print_xml_help_option: void (), <./tidy/console/tidy.c 375>
+ 1573 				printf: <>
+ 1574 				print_xml_help_option_element: void (), <./tidy/console/tidy.c 365>
+ 1575 					printf: <>
+ 1576 					get_escaped_name: tmbstr (), <./tidy/console/tidy.c 296>
+ 1577 						malloc: <>
+ 1578 						strcat: <>
+ 1579 					free: <>
+ 1580 		optionhelp: void (), <./tidy/console/tidy.c 810>
+ 1581 			printf: <>
+ 1582 			ForEachSortedOption: void (), <./tidy/console/tidy.c 617>
+ 1583 				getSortedOption: void (), <./tidy/console/tidy.c 597>
+ 1584 					tidyGetOptionList: TidyIterator TIDY_CALL (), <./tidy/src/tidylib.c 254>
+ 1585 						tidyDocToImpl: 1522
+ 1586 						TY_: 43
+ 1587 					tidyGetNextOption: TidyOption TIDY_CALL (), <./tidy/src/tidylib.c 262>
+ 1588 						tidyDocToImpl: 1522
+ 1589 						TY_: 43
+ 1590 						tidyImplToOption: TidyOption (), <./tidy/src/tidylib.c 76>
+ 1591 					qsort: <>
+ 1592 					cmpOpt: int (), <./tidy/console/tidy.c 589>
+ 1593 						strcmp: <>
+ 1594 						tidyOptGetName: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 292>
+ 1595 							tidyOptionToImpl: const TidyOptionImpl * (), <./tidy/src/tidylib.c 72>
+ 1596 				GetOption: void (), <./tidy/console/tidy.c 484>
+ 1597 					tidyOptGetId: TidyOptionId TIDY_CALL (), <./tidy/src/tidylib.c 285>
+ 1598 						tidyOptionToImpl: 1595
+ 1599 					tidyOptGetType: TidyOptionType TIDY_CALL (), <./tidy/src/tidylib.c 299>
+ 1600 						tidyOptionToImpl: 1595
+ 1601 					tidyOptGetName: 1594
+ 1602 					ConfigCategoryName: ctmbstr (), <./tidy/console/tidy.c 448>
+ 1603 						fprintf: <>
+ 1604 						assert: <>
+ 1605 						abort: <>
+ 1606 					tidyOptGetCategory: TidyConfigCategory TIDY_CALL (), <./tidy/src/tidylib.c 306>
+ 1607 						tidyOptionToImpl: 1595
+ 1608 					tidyOptGetCurrPick: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 428>
+ 1609 						TY_: 43
+ 1610 						tidyOptGetInt: 1532
+ 1611 					tidyOptGetValue: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 359>
+ 1612 						tidyDocToImpl: 1522
+ 1613 						cfgStr: <>
+ 1614 					tidyOptGetEncName: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 422>
+ 1615 						tidyOptGetInt: 1532
+ 1616 						TY_: 43
+ 1617 					isAutoBool: Bool (), <./tidy/console/tidy.c 429>
+ 1618 						tidyOptGetType: 1599
+ 1619 						tidyOptGetPickList: TidyIterator TIDY_CALL (), <./tidy/src/tidylib.c 343>
+ 1620 							tidyOptionToImpl: 1595
+ 1621 							TY_: 43
+ 1622 						tidyOptGetNextPick: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 350>
+ 1623 							tidyOptionToImpl: 1595
+ 1624 							TY_: 43
+ 1625 						strcmp: <>
+ 1626 					tidyOptGetInt: 1532
+ 1627 					sprintf: <>
+ 1628 			printOption: void (), <./tidy/console/tidy.c 785>
+ 1629 				tidyOptIsReadOnly: Bool TIDY_CALL (), <./tidy/src/tidylib.c 334>
+ 1630 					tidyOptionToImpl: 1595
+ 1631 				GetAllowedValues: tmbstr (), <./tidy/console/tidy.c 772>
+ 1632 					malloc: <>
+ 1633 					strlen: <>
+ 1634 					strcpy: <>
+ 1635 					GetAllowedValuesFromPick: tmbstr (), <./tidy/console/tidy.c 736>
+ 1636 						tidyOptGetPickList: 1619
+ 1637 						tidyOptGetNextPick: 1622
+ 1638 						strlen: <>
+ 1639 						malloc: <>
+ 1640 						strcat: <>
+ 1641 				print3Columns: void (), <./tidy/console/tidy.c 82>
+ 1642 					malloc: <>
+ 1643 					cutToWhiteSpace: 1554
+ 1644 					printf: <>
+ 1645 					free: <>
+ 1646 				free: <>
+ 1647 		XMLoptionhelp: void (), <./tidy/console/tidy.c 727>
+ 1648 			printf: <>
+ 1649 			tidyReleaseDate: 75
+ 1650 			ForEachOption: void (), <./tidy/console/tidy.c 632>
+ 1651 				tidyGetOptionList: 1584
+ 1652 				tidyGetNextOption: 1587
+ 1653 				GetOption: 1596
+ 1654 			printXMLOption: void (), <./tidy/console/tidy.c 700>
+ 1655 				tidyOptIsReadOnly: 1629
+ 1656 				printf: <>
+ 1657 				PrintAllowedValues: void (), <./tidy/console/tidy.c 664>
+ 1658 					printf: <>
+ 1659 					PrintAllowedValuesFromPick: void (), <./tidy/console/tidy.c 647>
+ 1660 						tidyOptGetPickList: 1619
+ 1661 						printf: <>
+ 1662 						tidyOptGetNextPick: 1622
+ 1663 				printXMLDescription: void (), <./tidy/console/tidy.c 673>
+ 1664 					tidyOptGetDoc: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 475>
+ 1665 						tidyOptGetId: 1597
+ 1666 						TY_: 43
+ 1667 					printf: <>
+ 1668 					fprintf: <>
+ 1669 					tidyOptGetName: 1594
+ 1670 				printXMLCrossRef: void (), <./tidy/console/tidy.c 688>
+ 1671 					tidyOptGetDocLinksList: TidyIterator TIDY_CALL (), <./tidy/src/tidylib.c 482>
+ 1672 						tidyOptGetId: 1597
+ 1673 						TY_: 43
+ 1674 					tidyOptGetNextDocLinks: TidyOption TIDY_CALL (), <./tidy/src/tidylib.c 491>
+ 1675 						tidyGetOption: TidyOption TIDY_CALL (), <./tidy/src/tidylib.c 274>
+ 1676 							TY_: 43
+ 1677 							tidyImplToOption: 1590
+ 1678 					printf: <>
+ 1679 					tidyOptGetName: 1594
+ 1680 		optionvalues: void (), <./tidy/console/tidy.c 872>
+ 1681 			printf: <>
+ 1682 			ForEachSortedOption: 1582
+ 1683 			printOptionValues: void (), <./tidy/console/tidy.c 826>
+ 1684 				tidyOptGetId: 1597
+ 1685 				tidyOptIsReadOnly: 1629
+ 1686 				tidyOptGetDeclTagList: TidyIterator TIDY_CALL (), <./tidy/src/tidylib.c 444>
+ 1687 					tidyDocToImpl: 1522
+ 1688 					TY_: 43
+ 1689 				tidyOptGetNextDeclTag: ctmbstr TIDY_CALL (), <./tidy/src/tidylib.c 453>
+ 1690 					tidyDocToImpl: 1522
+ 1691 					TY_: 43
+ 1692 				printf: <>
+ 1693 				tidyOptGetCurrPick: 1608
+ 1694 		tidyOptGetValue: 1611
+ 1695 		samefile: Bool (), <./tidy/console/tidy.c 21>
+ 1696 			strcmp: <>
+ 1697 			strcasecmp: <>
+ 1698 		tidySetErrorFile: FILE *TIDY_CALL (), <./tidy/src/tidylib.c 655>
+ 1699 			tidyDocToImpl: 1522
+ 1700 			fopen: <>
+ 1701 			cfg: <>
+ 1702 			TY_: 43
+ 1703 		tidyOptSetValue: Bool TIDY_CALL (), <./tidy/src/tidylib.c 367>
+ 1704 			tidyDocToImpl: 1522
+ 1705 			TY_: 43
+ 1706 		version: 91
+ 1707 		tidyOptParseValue: Bool TIDY_CALL (), <./tidy/src/tidylib.c 374>
+ 1708 			tidyDocToImpl: 1522
+ 1709 			TY_: 43
+ 1710 		unknownOption: void (), <./tidy/console/tidy.c 894>
+ 1711 			fprintf: <>
+ 1712 		tidyOptGetBool: Bool TIDY_CALL (), <./tidy/src/tidylib.c 399>
+ 1713 			tidyDocToImpl: 1522
+ 1714 			TY_: 43
+ 1715 			cfgBool: <>
+ 1716 		tidyParseFile: int TIDY_CALL (), <./tidy/src/tidylib.c 789>
+ 1717 			tidyDocToImpl: 1522
+ 1718 			tidyDocParseFile: int (), <./tidy/src/tidylib.c 816>
+ 1719 				TY_: 43
+ 1720 				fopen: <>
+ 1721 				ClearMemory: 41
+ 1722 				cfgBool: <>
+ 1723 				fstat: <>
+ 1724 				fileno: <>
+ 1725 				cfg: <>
+ 1726 				fclose: <>
+ 1727 				tidyDocParseStream: 551
+ 1728 		tidyParseStdin: int TIDY_CALL (), <./tidy/src/tidylib.c 794>
+ 1729 			tidyDocToImpl: 1522
+ 1730 			tidyDocParseStdin: int (), <./tidy/src/tidylib.c 854>
+ 1731 				TY_: 43
+ 1732 				cfg: <>
+ 1733 				tidyDocParseStream: 551
+ 1734 		tidyCleanAndRepair: int TIDY_CALL (), <./tidy/src/tidylib.c 1086>
+ 1735 			tidyDocToImpl: 1522
+ 1736 			tidyDocCleanAndRepair: int (), <./tidy/src/tidylib.c 1194>
+ 1737 				cfgBool: <>
+ 1738 				tidyDocStatus: int (), <./tidy/src/tidylib.c 1075>
+ 1739 				TY_: 43
+ 1740 				FixBrakes: void (), <./tidy/src/clean.c 2114>
+ 1741 					FixBrakes: 1740
+ 1742 					nodeCMIsBlock: <>
+ 1743 					nodeIsBR: <>
+ 1744 					TY_: 43
+ 1745 					RemoveNode: <>
+ 1746 				cfg: <>
+ 1747 				FatalError: 13
+ 1748 				GetAttrByName: <>
+ 1749 				AttrHasValue: <>
+ 1750 				MemFree: 35
+ 1751 				tmbstrdup: <>
+ 1752 				RemoveNode: <>
+ 1753 		tidyRunDiagnostics: int TIDY_CALL (), <./tidy/src/tidylib.c 1094>
+ 1754 			tidyDocToImpl: 1522
+ 1755 			tidyDocRunDiagnostics: int (), <./tidy/src/tidylib.c 1176>
+ 1756 				cfgBool: <>
+ 1757 				TY_: 43
+ 1758 				tidyDocStatus: int (), <./tidy/src/tidylib.c 1075>
+ 1759 		tidySaveFile: int TIDY_CALL (), <./tidy/src/tidylib.c 903>
+ 1760 			tidyDocToImpl: 1522
+ 1761 			tidyDocSaveFile: int (), <./tidy/src/tidylib.c 929>
+ 1762 				cfgBool: <>
+ 1763 				tidyDocStatus: int (), <./tidy/src/tidylib.c 1075>
+ 1764 				fopen: <>
+ 1765 				cfg: <>
+ 1766 				TY_: 43
+ 1767 				tidyDocSaveStream: int (), <./tidy/src/tidylib.c 1305>
+ 1768 					cfgBool: <>
+ 1769 					cfgAutoBool: <>
+ 1770 					TY_: 43
+ 1771 					tidyDocStatus: int (), <./tidy/src/tidylib.c 1075>
+ 1772 				fclose: <>
+ 1773 				MemFree: 35
+ 1774 				utime: <>
+ 1775 				ClearMemory: 41
+ 1776 		tidySaveStdout: int TIDY_CALL (), <./tidy/src/tidylib.c 908>
+ 1777 			tidyDocToImpl: 1522
+ 1778 			tidyDocSaveStdout: int (), <./tidy/src/tidylib.c 986>
+ 1779 				cfg: <>
+ 1780 				TY_: 43
+ 1781 				setmode: <>
+ 1782 				fileno: <>
+ 1783 				tidyDocSaveStream: 1767
+ 1784 				fflush: <>
+ 1785 				MemFree: 35
+ 1786 		tidyErrorCount: uint TIDY_CALL (), <./tidy/src/tidylib.c 729>
+ 1787 			tidyDocToImpl: 1522
+ 1788 		tidyWarningCount: uint TIDY_CALL (), <./tidy/src/tidylib.c 737>
+ 1789 			tidyDocToImpl: 1522
+ 1790 		tidyAccessWarningCount: uint TIDY_CALL (), <./tidy/src/tidylib.c 745>
+ 1791 			tidyDocToImpl: 1522
+ 1792 		tidyErrorSummary: void TIDY_CALL (), <./tidy/src/tidylib.c 765>
+ 1793 			tidyDocToImpl: 1522
+ 1794 			TY_: 43
+ 1795 		tidyGeneralInfo: void TIDY_CALL (), <./tidy/src/tidylib.c 771>
+ 1796 			tidyDocToImpl: 1522
+ 1797 			TY_: 43

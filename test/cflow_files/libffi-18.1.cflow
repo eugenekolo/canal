@@ -1,0 +1,368 @@
+    1 	main: int (), <./tests/testsuite/libffi.call/cls_ushort.c 20>
+    2 		allocate_mmap: <>
+    3 		CHECK: <>
+    4 		ffi_prep_cif: ffi_status (), <./ffi.c 131>
+    5 			initialize_aggregate: ffi_status (), <./ffi.c 37>
+    6 				initialize_aggregate: 5
+    7 				FFI_ASSERT_VALID_TYPE: <>
+    8 				ALIGN: <>
+    9 			FFI_ASSERT_VALID_TYPE: <>
+   10 			struct_on_stack: inline bool (), <./ffi.c 107>
+   11 			STACK_ARG_SIZE: <>
+   12 			ALIGN: <>
+   13 			ffi_prep_cif_machdep: ffi_status (), <./powerpc/ppc-ffi_darwin.c 322>
+   14 				examine_argument: int (), <./x86/x86-ffi64.c 250>
+   15 					classify_argument: int (), <./x86/x86-ffi64.c 139>
+   16 						ALIGN: <>
+   17 						classify_argument: 15
+   18 						merge_classes: enum x86_64_reg_class (), <./x86/x86-ffi64.c 87>
+   19 						FFI_ASSERT: <>
+   20 					abort: <>
+   21 				SSE_CLASS_P: <>
+   22 				ALIGN: <>
+   23 				ffi64_stret_needs_ptr: bool (), <./powerpc/ppc-ffi_darwin.c 1599>
+   24 					FFI_TYPE_1_BYTE: <>
+   25 					ffi64_stret_needs_ptr: 23
+   26 					FFI_ASSERT: <>
+   27 				ffi64_struct_contains_fp: bool (), <./powerpc/ppc-ffi_darwin.c 299>
+   28 					ffi64_struct_contains_fp: 27
+   29 				MODE_CHOICE: <>
+   30 				SF_ROUND: <>
+   31 		ffi_call: void (), <./powerpc/ppc-ffi_darwin.c 572>
+   32 			alloca: <>
+   33 			ffi_call_SYSV: <>
+   34 			ffi_prep_args: void (), <./powerpc/ppc-ffi_darwin.c 82>
+   35 				ALIGN: <>
+   36 				FFI_ASSERT: <>
+   37 				memcpy: <>
+   38 				SF_ROUND: <>
+   39 				MODE_CHOICE: <>
+   40 				ffi64_struct_to_reg_form: void (), <./powerpc/ppc-ffi_darwin.c 1285>
+   41 					ALIGN: <>
+   42 					FFI_TYPE_1_BYTE: <>
+   43 					FFI_TYPE_2_BYTE: <>
+   44 					FFI_TYPE_4_BYTE: <>
+   45 					memcpy: <>
+   46 					ffi64_struct_to_reg_form: 40
+   47 					FFI_ASSERT: <>
+   48 			ffi_call_STDCALL: <>
+   49 			FFI_ASSERT: <>
+   50 			examine_argument: 14
+   51 			ALIGN: <>
+   52 			memcpy: <>
+   53 			abort: <>
+   54 			ffi_call_unix64: <>
+   55 			ffi_call_AIX: <>
+   56 			ffi_call_DARWIN: <>
+   57 		FFI_FN: <>
+   58 		cls_struct_9byte_fn: cls_struct_9byte (), <./tests/testsuite/libffi.call/cls_9byte2.c 18>
+   59 			printf: <>
+   60 		printf: <>
+   61 		ffi_prep_closure: ffi_status (), <./powerpc/ppc-ffi_darwin.c 705>
+   62 			FFI_INIT_TRAMPOLINE: <>
+   63 			FFI_ASSERT: <>
+   64 			sys_icache_invalidate: <>
+   65 			flush_range: void (), <./powerpc/ppc-ffi_darwin.c 690>
+   66 				flush_icache: void (), <./powerpc/ppc-ffi_darwin.c 675>
+   67 		cls_struct_9byte_gn: void (), <./tests/testsuite/libffi.call/cls_9byte1.c 32>
+   68 			cls_struct_9byte: <>
+   69 			cls_struct_9byte_fn: 58
+   70 		cls_struct_9byte: <>
+   71 		exit: <>
+   72 		malloc: <>
+   73 		struct2: test_structure_2 (), <./tests/testsuite/libffi.call/struct2.c 16>
+   74 		free: <>
+   75 		test_func_fn: unsigned char (), <./tests/testsuite/libffi.call/cls_multi_uchar.c 10>
+   76 			printf: <>
+   77 		test_func_gn: void (), <./tests/testsuite/libffi.call/cls_multi_sshort.c 22>
+   78 			test_func_fn: 75
+   79 		cls_struct_align_fn: cls_struct_align (), <./tests/testsuite/libffi.call/cls_align_sint64.c 16>
+   80 			printf: <>
+   81 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_double.c 31>
+   82 			cls_struct_align: <>
+   83 			cls_struct_align_fn: 79
+   84 		cls_struct_align: <>
+   85 		struct3: test_structure_3 (), <./tests/testsuite/libffi.call/struct3.c 15>
+   86 		cls_struct_20byte_fn: cls_struct_20byte (), <./tests/testsuite/libffi.call/cls_20byte.c 17>
+   87 			printf: <>
+   88 		cls_struct_20byte_gn: void (), <./tests/testsuite/libffi.call/cls_20byte1.c 32>
+   89 			cls_struct_20byte: <>
+   90 			cls_struct_20byte_fn: 86
+   91 		cls_struct_20byte: <>
+   92 		return_sc: signed char (), <./tests/testsuite/libffi.call/return_sc.c 10>
+   93 		struct9: test_structure_9 (), <./tests/testsuite/libffi.call/struct9.c 16>
+   94 		closure_test_fn0: void (), <./tests/testsuite/libffi.call/closure_fn0.c 13>
+   95 			printf: <>
+   96 		cls_struct_116byte_fn: struct_116byte (), <./tests/testsuite/libffi.call/stret_large2.c 33>
+   97 			printf: <>
+   98 		cls_struct_116byte_gn: void (), <./tests/testsuite/libffi.call/stret_large2.c 65>
+   99 			cls_struct_116byte_fn: 96
+  100 		return_ul: unsigned long (), <./tests/testsuite/libffi.call/return_ul.c 9>
+  101 		cls_double_va_fn: void (), <./tests/testsuite/libffi.call/cls_double_va.c 11>
+  102 			printf: <>
+  103 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_uint64.c 31>
+  104 			cls_struct_align: <>
+  105 			cls_struct_align_fn: 79
+  106 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_float.c 31>
+  107 			cls_struct_align: <>
+  108 			cls_struct_align_fn: 79
+  109 		test_func_gn: void (), <./tests/testsuite/libffi.call/cls_multi_schar.c 22>
+  110 			test_func_fn: 75
+  111 		cls_ret_sshort_fn: void (), <./tests/testsuite/libffi.call/cls_sshort.c 10>
+  112 			printf: <>
+  113 		cls_struct_72byte_fn: struct_72byte (), <./tests/testsuite/libffi.call/stret_medium2.c 24>
+  114 			printf: <>
+  115 		cls_struct_72byte_gn: void (), <./tests/testsuite/libffi.call/stret_medium.c 49>
+  116 			cls_struct_72byte_fn: 113
+  117 		struct5: test_structure_5 (), <./tests/testsuite/libffi.call/struct5.c 15>
+  118 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_sint32.c 31>
+  119 			cls_struct_align: <>
+  120 			cls_struct_align_fn: 79
+  121 		cls_pointer_fn: void * (), <./tests/testsuite/libffi.call/cls_pointer.c 10>
+  122 			printf: <>
+  123 		cls_pointer_gn: void (), <./tests/testsuite/libffi.call/cls_pointer.c 20>
+  124 			cls_pointer_fn: 121
+  125 		abort: <>
+  126 		doit: int (), <./tests/testsuite/libffi.call/pyobjc-tc.c 25>
+  127 			printf: <>
+  128 		cls_struct_6byte_fn: cls_struct_6byte (), <./tests/testsuite/libffi.call/cls_6byte.c 18>
+  129 			printf: <>
+  130 		cls_struct_6byte_gn: void (), <./tests/testsuite/libffi.call/cls_6byte.c 36>
+  131 			cls_struct_6byte: <>
+  132 			cls_struct_6byte_fn: 128
+  133 		cls_struct_6byte: <>
+  134 		B_fn: B (), <./tests/testsuite/libffi.call/nested_struct3.c 22>
+  135 			printf: <>
+  136 		B_gn: void (), <./tests/testsuite/libffi.call/nested_struct2.c 47>
+  137 			B: <>
+  138 			B_fn: 134
+  139 		B: <>
+  140 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_uint32.c 31>
+  141 			cls_struct_align: <>
+  142 			cls_struct_align_fn: 79
+  143 		cls_struct_24byte_fn: cls_struct_24byte (), <./tests/testsuite/libffi.call/cls_24byte.c 18>
+  144 			printf: <>
+  145 		cls_struct_24byte_gn: void (), <./tests/testsuite/libffi.call/cls_24byte.c 41>
+  146 			cls_struct_24byte: <>
+  147 			cls_struct_24byte_fn: 143
+  148 		cls_struct_24byte: <>
+  149 		my_strlen: size_t (), <./tests/testsuite/libffi.call/strlen.c 10>
+  150 			strlen: <>
+  151 		cls_struct_64byte_fn: cls_struct_64byte (), <./tests/testsuite/libffi.call/cls_64byte.c 23>
+  152 			printf: <>
+  153 		cls_struct_64byte_gn: void (), <./tests/testsuite/libffi.call/cls_64byte.c 46>
+  154 			cls_struct_64byte: <>
+  155 			cls_struct_64byte_fn: 151
+  156 		cls_struct_64byte: <>
+  157 		struct7: test_structure_7 (), <./tests/testsuite/libffi.call/struct7.c 16>
+  158 		many: float (), <./tests/testsuite/libffi.call/many.c 12>
+  159 			printf: <>
+  160 		cls_ret_uint_fn: void (), <./tests/testsuite/libffi.call/cls_uint.c 10>
+  161 			printf: <>
+  162 		cls_ret_uchar_fn: void (), <./tests/testsuite/libffi.call/cls_uchar.c 10>
+  163 			printf: <>
+  164 		floating: int (), <./tests/testsuite/libffi.call/float.c 12>
+  165 			printf: <>
+  166 		cls_struct_72byte_gn: void (), <./tests/testsuite/libffi.call/stret_medium2.c 49>
+  167 			cls_struct_72byte_fn: 113
+  168 		cls_struct_3_1byte_fn: cls_struct_3_1byte (), <./tests/testsuite/libffi.call/cls_3_1byte.c 18>
+  169 			printf: <>
+  170 		cls_struct_3_1byte_gn: void (), <./tests/testsuite/libffi.call/cls_3_1byte.c 35>
+  171 			cls_struct_3_1byte: <>
+  172 			cls_struct_3_1byte_fn: 168
+  173 		cls_struct_3_1byte: <>
+  174 		closure_test_fn5: void (), <./tests/testsuite/libffi.call/closure_fn5.c 14>
+  175 			printf: <>
+  176 		test_func_gn: void (), <./tests/testsuite/libffi.call/cls_multi_ushortchar.c 23>
+  177 			test_func_fn: 75
+  178 		ldblit: long double (), <./tests/testsuite/libffi.call/float2.c 13>
+  179 		puts: <>
+  180 		closure_test_fn1: void (), <./tests/testsuite/libffi.call/closure_fn1.c 13>
+  181 			printf: <>
+  182 		cls_pointer_fn1: void * (), <./tests/testsuite/libffi.call/cls_pointer_stack.c 42>
+  183 			dummy_func: long (), <./tests/testsuite/libffi.call/cls_pointer_stack.c 12>
+  184 			printf: <>
+  185 			cls_pointer_fn2: void * (), <./tests/testsuite/libffi.call/cls_pointer_stack.c 21>
+  186 				dummy_func: long (), <./tests/testsuite/libffi.call/cls_pointer_stack.c 12>
+  187 				printf: <>
+  188 		cls_pointer_gn: void (), <./tests/testsuite/libffi.call/cls_pointer_stack.c 66>
+  189 			dummy_func: long (), <./tests/testsuite/libffi.call/cls_pointer_stack.c 12>
+  190 			cls_pointer_fn1: 182
+  191 		struct1: test_structure_1 (), <./tests/testsuite/libffi.call/struct1.c 17>
+  192 		cls_struct_1_1byte_fn: cls_struct_1_1byte (), <./tests/testsuite/libffi.call/cls_1_1byte.c 16>
+  193 			printf: <>
+  194 		cls_struct_1_1byte_gn: void (), <./tests/testsuite/libffi.call/cls_1_1byte.c 29>
+  195 			cls_struct_1_1byte: <>
+  196 			cls_struct_1_1byte_fn: 192
+  197 		cls_struct_1_1byte: <>
+  198 		cls_ldouble_fn: long double (), <./tests/testsuite/libffi.call/cls_longdouble.c 12>
+  199 			printf: <>
+  200 		cls_ldouble_gn: void (), <./tests/testsuite/libffi.call/cls_longdouble.c 31>
+  201 			cls_ldouble_fn: 198
+  202 		closure_test_fn3: void (), <./tests/testsuite/libffi.call/closure_fn3.c 12>
+  203 			printf: <>
+  204 		cls_ret_schar_fn: void (), <./tests/testsuite/libffi.call/cls_schar.c 10>
+  205 			printf: <>
+  206 		cls_struct_8byte_fn: cls_struct_8byte (), <./tests/testsuite/libffi.call/cls_8byte.c 16>
+  207 			printf: <>
+  208 		cls_struct_8byte_gn: void (), <./tests/testsuite/libffi.call/cls_8byte.c 30>
+  209 			cls_struct_8byte: <>
+  210 			cls_struct_8byte_fn: 206
+  211 		cls_struct_8byte: <>
+  212 		cls_struct_4_1byte_fn: cls_struct_4_1byte (), <./tests/testsuite/libffi.call/cls_4_1byte.c 19>
+  213 			printf: <>
+  214 		cls_struct_4_1byte_gn: void (), <./tests/testsuite/libffi.call/cls_4_1byte.c 37>
+  215 			cls_struct_4_1byte: <>
+  216 			cls_struct_4_1byte_fn: 212
+  217 		cls_struct_4_1byte: <>
+  218 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_sint16.c 31>
+  219 			cls_struct_align: <>
+  220 			cls_struct_align_fn: 79
+  221 		B_gn: void (), <./tests/testsuite/libffi.call/nested_struct3.c 38>
+  222 			B: <>
+  223 			B_fn: 134
+  224 		dblit: double (), <./tests/testsuite/libffi.call/float1.c 11>
+  225 		promotion: int (), <./tests/testsuite/libffi.call/promotion.c 9>
+  226 		dummy_fn: void (), <./tests/testsuite/libffi.call/err_bad_abi.c 11>
+  227 		test_large_fn: BigStruct (), <./tests/testsuite/libffi.call/huge_struct.c 69>
+  228 			printf: <>
+  229 		cls_large_fn: void (), <./tests/testsuite/libffi.call/huge_struct.c 157>
+  230 			test_large_fn: 227
+  231 		cls_struct_combined_fn: cls_struct_combined (), <./tests/testsuite/libffi.call/nested_struct1.c 28>
+  232 			printf: <>
+  233 		cls_struct_combined_gn: void (), <./tests/testsuite/libffi.call/nested_struct.c 53>
+  234 			cls_struct_combined: <>
+  235 			cls_struct_combined_fn: 231
+  236 		cls_struct_combined: <>
+  237 		cls_ret_float_fn: void (), <./tests/testsuite/libffi.call/cls_float.c 10>
+  238 			printf: <>
+  239 		test_func_gn: void (), <./tests/testsuite/libffi.call/cls_multi_ushort.c 22>
+  240 			test_func_fn: 75
+  241 		cls_struct_16byte_fn: cls_struct_16byte (), <./tests/testsuite/libffi.call/cls_16byte.c 17>
+  242 			printf: <>
+  243 		cls_struct_16byte_gn: void (), <./tests/testsuite/libffi.call/cls_16byte.c 32>
+  244 			cls_struct_16byte: <>
+  245 			cls_struct_16byte_fn: 241
+  246 		cls_struct_16byte: <>
+  247 		struct4: test_structure_4 (), <./tests/testsuite/libffi.call/struct4.c 17>
+  248 		cls_struct_3byte_fn: cls_struct_3byte (), <./tests/testsuite/libffi.call/cls_3byte1.c 17>
+  249 			printf: <>
+  250 		cls_struct_3byte_gn: void (), <./tests/testsuite/libffi.call/cls_3byte1.c 31>
+  251 			cls_struct_3byte: <>
+  252 			cls_struct_3byte_fn: 248
+  253 		cls_struct_3byte: <>
+  254 		closure_test_fn0: void (), <./tests/testsuite/libffi.call/closure_fn4.c 14>
+  255 			printf: <>
+  256 		cls_struct_2byte_fn: cls_struct_2byte (), <./tests/testsuite/libffi.call/cls_2byte.c 17>
+  257 			printf: <>
+  258 		cls_struct_2byte_gn: void (), <./tests/testsuite/libffi.call/cls_2byte.c 31>
+  259 			cls_struct_2byte: <>
+  260 			cls_struct_2byte_fn: 256
+  261 		cls_struct_2byte: <>
+  262 		struct6: test_structure_6 (), <./tests/testsuite/libffi.call/struct6.c 15>
+  263 		test_func_gn: void (), <./tests/testsuite/libffi.call/cls_multi_sshortchar.c 23>
+  264 			test_func_fn: 75
+  265 		cls_ret_ulonglong_fn: void (), <./tests/testsuite/libffi.call/cls_ulonglong.c 10>
+  266 			printf: <>
+  267 		cls_struct_18byte_fn: cls_struct_18byte (), <./tests/testsuite/libffi.call/cls_18byte.c 18>
+  268 			printf: <>
+  269 		cls_struct_18byte_gn: void (), <./tests/testsuite/libffi.call/cls_18byte.c 36>
+  270 			cls_struct_18byte: <>
+  271 			cls_struct_18byte_fn: 267
+  272 		cls_struct_18byte: <>
+  273 		cls_longdouble_va_fn: void (), <./tests/testsuite/libffi.call/cls_longdouble_va.c 11>
+  274 			printf: <>
+  275 		closure_test_gn: void (), <./tests/testsuite/libffi.call/cls_dbls_struct.c 23>
+  276 			closure_test_fn: void (), <./tests/testsuite/libffi.call/cls_dbls_struct.c 17>
+  277 				printf: <>
+  278 		closure_test_fn: 276
+  279 		cls_struct_12byte_fn: cls_struct_12byte (), <./tests/testsuite/libffi.call/cls_12byte.c 16>
+  280 			printf: <>
+  281 		cls_struct_12byte_gn: void (), <./tests/testsuite/libffi.call/cls_12byte.c 31>
+  282 			cls_struct_12byte: <>
+  283 			cls_struct_12byte_fn: 279
+  284 		cls_struct_12byte: <>
+  285 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_pointer.c 31>
+  286 			cls_struct_align: <>
+  287 			cls_struct_align_fn: 79
+  288 		struct8: test_structure_8 (), <./tests/testsuite/libffi.call/struct8.c 17>
+  289 		cls_struct_4byte_fn: cls_struct_4byte (), <./tests/testsuite/libffi.call/cls_4byte.c 17>
+  290 			printf: <>
+  291 		cls_struct_4byte_gn: void (), <./tests/testsuite/libffi.call/cls_4byte.c 31>
+  292 			cls_struct_4byte: <>
+  293 			cls_struct_4byte_fn: 289
+  294 		cls_struct_4byte: <>
+  295 		return_ll: long long (), <./tests/testsuite/libffi.call/return_ll.c 9>
+  296 		cls_struct_7byte_fn: cls_struct_7byte (), <./tests/testsuite/libffi.call/cls_7byte.c 18>
+  297 			printf: <>
+  298 		cls_struct_7byte_gn: void (), <./tests/testsuite/libffi.call/cls_7byte.c 36>
+  299 			cls_struct_7byte: <>
+  300 			cls_struct_7byte_fn: 296
+  301 		cls_struct_7byte: <>
+  302 		return_uc: unsigned char (), <./tests/testsuite/libffi.call/return_uc.c 10>
+  303 		cls_struct_combined_gn: void (), <./tests/testsuite/libffi.call/nested_struct1.c 55>
+  304 			cls_struct_combined: <>
+  305 			cls_struct_combined_fn: 231
+  306 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_longdouble.c 33>
+  307 			cls_struct_align: <>
+  308 			cls_struct_align_fn: 79
+  309 		cls_struct_108byte_fn: struct_108byte (), <./tests/testsuite/libffi.call/stret_large.c 32>
+  310 			printf: <>
+  311 		cls_struct_108byte_gn: void (), <./tests/testsuite/libffi.call/stret_large.c 63>
+  312 			cls_struct_108byte_fn: 309
+  313 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_uint16.c 31>
+  314 			cls_struct_align: <>
+  315 			cls_struct_align_fn: 79
+  316 		s8_fn: int64_t (), <./tests/testsuite/libffi.call/extension.c 11>
+  317 		s16_fn: int64_t (), <./tests/testsuite/libffi.call/extension.c 15>
+  318 		s32_fn: int64_t (), <./tests/testsuite/libffi.call/extension.c 19>
+  319 		s64_fn: int64_t (), <./tests/testsuite/libffi.call/extension.c 23>
+  320 		cls_struct_5byte_fn: cls_struct_5byte (), <./tests/testsuite/libffi.call/cls_5byte.c 17>
+  321 			printf: <>
+  322 		cls_struct_5byte_gn: void (), <./tests/testsuite/libffi.call/cls_5byte.c 34>
+  323 			cls_struct_5byte: <>
+  324 			cls_struct_5byte_fn: 320
+  325 		cls_struct_5byte: <>
+  326 		callee: my_ffi_struct (), <./tests/testsuite/libffi.call/problem1.c 16>
+  327 			printf: <>
+  328 		stub: void (), <./tests/testsuite/libffi.call/problem1.c 30>
+  329 			my_ffi_struct: <>
+  330 			callee: 326
+  331 		my_ffi_struct: <>
+  332 		cls_ret_double_fn: void (), <./tests/testsuite/libffi.call/cls_double.c 10>
+  333 			printf: <>
+  334 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_longdouble_split.c 67>
+  335 			cls_struct_align: <>
+  336 			cls_struct_align_fn: 79
+  337 		cls_struct_9byte_gn: void (), <./tests/testsuite/libffi.call/cls_9byte2.c 32>
+  338 			cls_struct_9byte: <>
+  339 			cls_struct_9byte_fn: 58
+  340 		closure_test_fn2: void (), <./tests/testsuite/libffi.call/closure_fn2.c 12>
+  341 			printf: <>
+  342 		cls_ret_sint_fn: void (), <./tests/testsuite/libffi.call/cls_sint.c 10>
+  343 			printf: <>
+  344 		test_func_gn: void (), <./tests/testsuite/libffi.call/cls_multi_uchar.c 23>
+  345 			test_func_fn: 75
+  346 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_longdouble_split2.c 47>
+  347 			cls_struct_align: <>
+  348 			cls_struct_align_fn: 79
+  349 		cls_struct_20byte_gn: void (), <./tests/testsuite/libffi.call/cls_20byte.c 32>
+  350 			cls_struct_20byte: <>
+  351 			cls_struct_20byte_fn: 86
+  352 		cls_struct_align_gn: void (), <./tests/testsuite/libffi.call/cls_align_sint64.c 31>
+  353 			cls_struct_align: <>
+  354 			cls_struct_align_fn: 79
+  355 		cls_struct_3byte_fn1: cls_struct_3byte_1 (), <./tests/testsuite/libffi.call/cls_3byte2.c 17>
+  356 			printf: <>
+  357 		cls_struct_3byte_gn1: void (), <./tests/testsuite/libffi.call/cls_3byte2.c 31>
+  358 			cls_struct_3byte_1: <>
+  359 			cls_struct_3byte_fn1: 355
+  360 		cls_struct_3byte_1: <>
+  361 		cls_struct_19byte_fn: cls_struct_19byte (), <./tests/testsuite/libffi.call/cls_19byte.c 19>
+  362 			printf: <>
+  363 		cls_struct_19byte_gn: void (), <./tests/testsuite/libffi.call/cls_19byte.c 39>
+  364 			cls_struct_19byte: <>
+  365 			cls_struct_19byte_fn: 361
+  366 		cls_struct_19byte: <>
+  367 		cls_ret_ushort_fn: void (), <./tests/testsuite/libffi.call/cls_ushort.c 10>
+  368 			printf: <>

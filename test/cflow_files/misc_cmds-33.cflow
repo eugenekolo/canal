@@ -1,0 +1,361 @@
+    1 	main: int (), <./tsort/tsort.c 119>
+    2 		setlocale: <>
+    3 		warn: <>
+    4 		strcmp: <>
+    5 		strstr: <>
+    6 		ndaysj: int (), <./ncal/calendar.c 104>
+    7 			date2idt: date * (), <./ncal/calendar.c 296>
+    8 			ndaysji: int (), <./ncal/calendar.c 119>
+    9 		strrchr: <>
+   10 		getopt: <>
+   11 		usage: void (), <./ncal/ncal.c 351>
+   12 			fputs: <>
+   13 			exit: <>
+   14 		printcc: void (), <./ncal/ncal.c 364>
+   15 			printf: <>
+   16 			FSTRARG: <>
+   17 		errx: <>
+   18 		atoi: <>
+   19 		time: <>
+   20 		localtime: <>
+   21 		parsemonth: int (), <./ncal/ncal.c 932>
+   22 			strtol: <>
+   23 			strptime: <>
+   24 		printeaster: void (), <./ncal/ncal.c 385>
+   25 			nl_langinfo: <>
+   26 			easteroj: date * (), <./ncal/easter.c 65>
+   27 				jdate: date * (), <./ncal/calendar.c 67>
+   28 					ndaysji: 8
+   29 					idt2date: date * (), <./ncal/calendar.c 315>
+   30 				easterodn: int (), <./ncal/easter.c 73>
+   31 					ndaysj: 6
+   32 					weekday: int (), <./ncal/calendar.c 273>
+   33 						ndaysgi: int (), <./ncal/calendar.c 197>
+   34 							ndaysji: 8
+   35 			easterog: date * (), <./ncal/easter.c 57>
+   36 				gdate: date * (), <./ncal/calendar.c 131>
+   37 					ndaysgi: 33
+   38 					idt2date: 29
+   39 				easterodn: 30
+   40 			easterg: date * (), <./ncal/easter.c 38>
+   41 			memset: <>
+   42 			strftime: <>
+   43 			printf: <>
+   44 		printyearb: void (), <./ncal/ncal.c 525>
+   45 			mkmonthb: void (), <./ncal/ncal.c 683>
+   46 				memset: <>
+   47 				strftime: <>
+   48 				mbstowcs: <>
+   49 				towupper: <>
+   50 				wcstombs: <>
+   51 				sndaysb: int (), <./ncal/ncal.c 857>
+   52 					ndaysj: 6
+   53 					ndaysg: int (), <./ncal/calendar.c 183>
+   54 						date2idt: 7
+   55 						ndaysgi: 33
+   56 				weekday: 32
+   57 				sdateb: struct date (), <./ncal/ncal.c 879>
+   58 				memcpy: <>
+   59 			mkweekdays: void (), <./ncal/ncal.c 778>
+   60 				memset: <>
+   61 				strftime: <>
+   62 				mbstowcs: <>
+   63 				calloc: <>
+   64 				wcswidth: <>
+   65 				wcstombs: <>
+   66 				free: <>
+   67 				strcat: <>
+   68 			sprintf: <>
+   69 			printf: <>
+   70 			center: char * (), <./ncal/ncal.c 905>
+   71 				memset: <>
+   72 				displaywidth: int (), <./ncal/ncal.c 890>
+   73 					mbstowcs: <>
+   74 					calloc: <>
+   75 					wcswidth: <>
+   76 					free: <>
+   77 				sprintf: <>
+   78 			free: <>
+   79 		printyear: void (), <./ncal/ncal.c 465>
+   80 			mkmonth: void (), <./ncal/ncal.c 592>
+   81 				memset: <>
+   82 				strftime: <>
+   83 				mbstowcs: <>
+   84 				calloc: <>
+   85 				towupper: <>
+   86 				wcstombs: <>
+   87 				free: <>
+   88 				firstday: int (), <./ncal/ncal.c 816>
+   89 					sndays: int (), <./ncal/ncal.c 840>
+   90 						ndaysj: 6
+   91 						ndaysg: 53
+   92 					sdate: struct date (), <./ncal/ncal.c 868>
+   93 				weekday: 32
+   94 				sdate: struct date (), <./ncal/ncal.c 868>
+   95 				memcpy: <>
+   96 				week: int (), <./ncal/calendar.c 236>
+   97 					gdate: 36
+   98 					firstweek: int (), <./ncal/calendar.c 249>
+   99 						ndaysgi: 33
+  100 						weekday: 32
+  101 			mkweekdays: 59
+  102 			sprintf: <>
+  103 			printf: <>
+  104 			center: 70
+  105 			leftjustify: char * (), <./ncal/ncal.c 919>
+  106 				memset: <>
+  107 				displaywidth: 72
+  108 				sprintf: <>
+  109 			free: <>
+  110 		printmonthb: void (), <./ncal/ncal.c 433>
+  111 			mkmonthb: 45
+  112 			mkweekdays: 59
+  113 			sprintf: <>
+  114 			printf: <>
+  115 			center: 70
+  116 			free: <>
+  117 		printmonth: void (), <./ncal/ncal.c 415>
+  118 			mkmonth: 80
+  119 			mkweekdays: 59
+  120 			printf: <>
+  121 			free: <>
+  122 		write: <>
+  123 		fgets: <>
+  124 		exit: <>
+  125 		usage: void (), <./leave/leave.c 192>
+  126 			fprintf: <>
+  127 			exit: <>
+  128 		isdigit: <>
+  129 		doalarm: void (), <./leave/leave.c 140>
+  130 			fork: <>
+  131 			time: <>
+  132 			strftime: <>
+  133 			localtime: <>
+  134 			printf: <>
+  135 			exit: <>
+  136 			sleep: <>
+  137 			write: <>
+  138 		fprintf: <>
+  139 		usage: void (), <./tsort/tsort.c 439>
+  140 			fprintf: <>
+  141 			exit: <>
+  142 		readunits: void (), <./units/units.c 110>
+  143 			fopen: <>
+  144 			errx: <>
+  145 			getenv: <>
+  146 			strtok: <>
+  147 			snprintf: <>
+  148 			feof: <>
+  149 			fgets: <>
+  150 			strspn: <>
+  151 			strcspn: <>
+  152 			strlen: <>
+  153 			warnx: <>
+  154 			dupstr: char * (), <./units/units.c 97>
+  155 				malloc: <>
+  156 				strlen: <>
+  157 				errx: <>
+  158 				strcpy: <>
+  159 			strcmp: <>
+  160 			fclose: <>
+  161 		strlcpy: <>
+  162 		initializeunit: void (), <./units/units.c 210>
+  163 		addunit: int (), <./units/units.c 299>
+  164 			strlen: <>
+  165 			dupstr: 154
+  166 			tolower: <>
+  167 			strchr: <>
+  168 			strtok: <>
+  169 			atof: <>
+  170 			zeroerror: void (), <./units/units.c 285>
+  171 				warnx: <>
+  172 			addsubunit: int (), <./units/units.c 220>
+  173 				warnx: <>
+  174 				dupstr: 154
+  175 			free: <>
+  176 		completereduce: int (), <./units/units.c 625>
+  177 			reduceunit: int (), <./units/units.c 578>
+  178 				reduceproduct: int (), <./units/units.c 535>
+  179 					strlen: <>
+  180 					lookupunit: char * (), <./units/units.c 463>
+  181 						strcmp: <>
+  182 						strlen: <>
+  183 						dupstr: 154
+  184 						strlcpy: <>
+  185 						free: <>
+  186 						strncmp: <>
+  187 						lookupunit: 180
+  188 						snprintf: <>
+  189 					printf: <>
+  190 					strchr: <>
+  191 					free: <>
+  192 					addunit: 163
+  193 			sortunit: void (), <./units/units.c 414>
+  194 				qsort: <>
+  195 				compare: int (), <./units/units.c 407>
+  196 					strcmp: <>
+  197 			cancelunit: void (), <./units/units.c 427>
+  198 				strcmp: <>
+  199 		showanswer: void (), <./units/units.c 636>
+  200 			compareunits: int (), <./units/units.c 616>
+  201 				compareproducts: int (), <./units/units.c 593>
+  202 					strcmp: <>
+  203 			printf: <>
+  204 			showunit: void (), <./units/units.c 237>
+  205 				printf: <>
+  206 				strcmp: <>
+  207 		printf: <>
+  208 		putchar: <>
+  209 		getuid: <>
+  210 		err: <>
+  211 		Mktime: time_t (), <./calendar/day.c 184>
+  212 			time: <>
+  213 			localtime: <>
+  214 			sscanf: <>
+  215 			fprintf: <>
+  216 			mktime: <>
+  217 			asctime: <>
+  218 		settime: void (), <./calendar/day.c 141>
+  219 			localtime: <>
+  220 			isleap: <>
+  221 			setlocale: <>
+  222 			strdup: <>
+  223 			errx: <>
+  224 			strftime: <>
+  225 			free: <>
+  226 			setnnames: void (), <./calendar/day.c 79>
+  227 				strftime: <>
+  228 				strlen: <>
+  229 				isspace: <>
+  230 				free: <>
+  231 				strdup: <>
+  232 				errx: <>
+  233 		getpwent: <>
+  234 		setegid: <>
+  235 		initgroups: <>
+  236 		seteuid: <>
+  237 		chdir: <>
+  238 		cal: void (), <./calendar/io.c 88>
+  239 			opencal: FILE * (), <./calendar/io.c 330>
+  240 				freopen: <>
+  241 				chdir: <>
+  242 				stat: <>
+  243 				getenv: <>
+  244 				errx: <>
+  245 				strerror: <>
+  246 				pipe: <>
+  247 				fork: <>
+  248 				close: <>
+  249 				dup2: <>
+  250 				geteuid: <>
+  251 				setuid: <>
+  252 				getuid: <>
+  253 				warnx: <>
+  254 				setgid: <>
+  255 				getegid: <>
+  256 				execl: <>
+  257 				warn: <>
+  258 				snprintf: <>
+  259 				mkstemp: <>
+  260 				fdopen: <>
+  261 			fgets: <>
+  262 			strchr: <>
+  263 			getchar: <>
+  264 			strlen: <>
+  265 			isspace: <>
+  266 			strncmp: <>
+  267 			setlocale: <>
+  268 			nl_langinfo: <>
+  269 			setnnames: 226
+  270 			strncasecmp: <>
+  271 			free: <>
+  272 			strdup: <>
+  273 			errx: <>
+  274 			isnow: int (), <./calendar/day.c 229>
+  275 				getfield: int (), <./calendar/io.c 262>
+  276 					isdigit: <>
+  277 					isalpha: <>
+  278 					strtol: <>
+  279 					getmonth: int (), <./calendar/day.c 417>
+  280 						strncasecmp: <>
+  281 					getday: int (), <./calendar/day.c 436>
+  282 						strncasecmp: <>
+  283 					getdayvar: int (), <./calendar/day.c 459>
+  284 						strlen: <>
+  285 						atoi: <>
+  286 						strcasecmp: <>
+  287 					printf: <>
+  288 					geteaster: int (), <./calendar/ostern.c 76>
+  289 						strncasecmp: <>
+  290 						printf: <>
+  291 						atoi: <>
+  292 						easter: int (), <./calendar/ostern.c 47>
+  293 					getpaskha: int (), <./calendar/paskha.c 63>
+  294 						strncasecmp: <>
+  295 						atoi: <>
+  296 						paskha: int (), <./calendar/paskha.c 46>
+  297 				fprintf: <>
+  298 			fprintf: <>
+  299 			strftime: <>
+  300 			event_add: struct event (), <./calendar/io.c 181>
+  301 			event_continue: void (), <./calendar/io.c 203>
+  302 				strdup: <>
+  303 				errx: <>
+  304 				free: <>
+  305 				malloc: <>
+  306 				strlen: <>
+  307 				strcpy: <>
+  308 				strcat: <>
+  309 			event_print_all: void (), <./calendar/io.c 224>
+  310 				fprintf: <>
+  311 			closecal: void (), <./calendar/io.c 413>
+  312 				rewind: <>
+  313 				fstat: <>
+  314 				fileno: <>
+  315 				pipe: <>
+  316 				fork: <>
+  317 				close: <>
+  318 				dup2: <>
+  319 				geteuid: <>
+  320 				setuid: <>
+  321 				getuid: <>
+  322 				warnx: <>
+  323 				setgid: <>
+  324 				getegid: <>
+  325 				execl: <>
+  326 				warn: <>
+  327 				strlen: <>
+  328 				writev: <>
+  329 				read: <>
+  330 				write: <>
+  331 				fclose: <>
+  332 				unlink: <>
+  333 				wait: <>
+  334 		fopen: <>
+  335 		grow_buf: void * (), <./tsort/tsort.c 197>
+  336 			realloc: <>
+  337 			err: <>
+  338 		getc: <>
+  339 		isspace: <>
+  340 		add_arc: void (), <./tsort/tsort.c 211>
+  341 			get_node: NODE * (), <./tsort/tsort.c 247>
+  342 				dbopen: <>
+  343 				err: <>
+  344 				strlen: <>
+  345 				memmove: <>
+  346 				malloc: <>
+  347 			strcmp: <>
+  348 			grow_buf: 335
+  349 		fclose: <>
+  350 		tsort: void (), <./tsort/tsort.c 310>
+  351 			remove_node: void (), <./tsort/tsort.c 373>
+  352 				printf: <>
+  353 			malloc: <>
+  354 			err: <>
+  355 			find_cycle: int (), <./tsort/tsort.c 391>
+  356 				memcpy: <>
+  357 				find_cycle: 355
+  358 				printf: <>
+  359 			warnx: <>
+  360 			clear_cycle: void (), <./tsort/tsort.c 300>
+  361 			errx: <>

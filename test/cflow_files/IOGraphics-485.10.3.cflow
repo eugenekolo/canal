@@ -1,0 +1,244 @@
+    1 	main: int (), <./tools/range.c 12>
+    2 		mach_timebase_info: <>
+    3 		abort: <>
+    4 		CGGetOnlineDisplayList: <>
+    5 		exit: <>
+    6 		CGDisplayBaseAddress: <>
+    7 		CGDisplayBytesPerRow: <>
+    8 		printf: <>
+    9 		CGDisplayPixelsWide: <>
+   10 		CGDisplayPixelsHigh: <>
+   11 		malloc: <>
+   12 		mach_absolute_time: <>
+   13 		bcopy: <>
+   14 		CompressData: <>
+   15 		DEBG: <>
+   16 		bzero: <>
+   17 		strtol: <>
+   18 		strstr: <>
+   19 		CGDisplayIOServicePort: <>
+   20 		IORegistryEntryCreateCFProperty: <>
+   21 		CFSTR: <>
+   22 		CFNumberGetValue: <>
+   23 		IOServiceRequestProbe: <>
+   24 		GenTiming: void (), <./tools/gtf.c 59>
+   25 			roundf: <>
+   26 			IODisplayGetCVTSyncWidth: int (), <./tools/gtf.c 25>
+   27 				ratioOver: __private_extern__ float (), <./tools/gtf.c 16>
+   28 			printf: <>
+   29 			truncf: <>
+   30 		fprintf: <>
+   31 		IOPMFindPowerManagement: <>
+   32 		IOPMSetAggressiveness: <>
+   33 		IOServiceClose: <>
+   34 		CGMainDisplayID: <>
+   35 		IORegistryEntryGetPath: <>
+   36 		assert: <>
+   37 		IOFBGetI2CInterfaceCount: <>
+   38 		IOFBCopyI2CInterfaceForBus: <>
+   39 		IOI2CInterfaceOpen: <>
+   40 		IOObjectRelease: <>
+   41 		EDIDTest: void (), <./tools/itvview.c 13>
+   42 			bzero: <>
+   43 			IOI2CSendRequest: <>
+   44 			assert: <>
+   45 			printf: <>
+   46 		iTVTest: void (), <./tools/itvview.c 52>
+   47 			bzero: <>
+   48 			IOI2CSendRequest: <>
+   49 			assert: <>
+   50 			printf: <>
+   51 		IOI2CInterfaceClose: <>
+   52 		CGDisplayBounds: <>
+   53 		CGSGetDisplayRowBytes: <>
+   54 		IOServiceOpen: <>
+   55 		mach_task_self: <>
+   56 		IOConnectMapMemory64: <>
+   57 		currentTime: double (), <./tools/timefb.c 15>
+   58 			gettimeofday: <>
+   59 		CGBlt_fillBytes: <>
+   60 		random: <>
+   61 		IOConnectUnmapMemory: <>
+   62 		IORegistryEntryFromPath: <>
+   63 		IOConnectMethodScalarIScalarO: <>
+   64 		CGGetActiveDisplayList: <>
+   65 		CGDisplayCaptureWithOptions: <>
+   66 		CGDisplayHideCursor: <>
+   67 		getchar: <>
+   68 		CGDisplayRelease: <>
+   69 		CGDisplayShowCursor: <>
+   70 		CFStringCreateWithCString: <>
+   71 		IODisplayForFramebuffer: <>
+   72 		IODisplayGetIntegerRangeParameter: <>
+   73 		IODisplayGetFloatParameter: <>
+   74 		strchr: <>
+   75 		sscanf: <>
+   76 		IODisplaySetFloatParameter: <>
+   77 		IODisplaySetIntegerParameter: <>
+   78 		CGSPaletteCreateDefaultColorPalette: <>
+   79 		CGSPaletteSetColorAtIndex: <>
+   80 		CGSSetDisplayPalette: <>
+   81 		CGSMainDisplayID: <>
+   82 		IOServiceGetMatchingServices: <>
+   83 		IOServiceMatching: <>
+   84 		IOIteratorNext: <>
+   85 		CFRelease: <>
+   86 		IOConnectMapMemory: <>
+   87 		OSSwapHostToLittleInt16: <>
+   88 		snprintf: <>
+   89 		fopen: <>
+   90 		fwrite: <>
+   91 		fclose: <>
+   92 		sleep: <>
+   93 		sysctlbyname: <>
+   94 		CFURLCreateWithFileSystemPath: <>
+   95 		CFBundleCreate: <>
+   96 		ModeList: kern_return_t (), <./tools/modelist.c 361>
+   97 			CFDictionaryCreateMutable: <>
+   98 			IORegistryEntryCreateCFProperty: <>
+   99 			CFSTR: <>
+  100 			CFDictionaryGetValue: <>
+  101 			CFRetain: <>
+  102 			CFArrayGetCount: <>
+  103 			calloc: <>
+  104 			CFArrayGetValueAtIndex: <>
+  105 			CFNumberGetValue: <>
+  106 			CFDictionarySetValue: <>
+  107 			CFDataGetBytePtr: <>
+  108 			printf: <>
+  109 			qsort_r: <>
+  110 			qsort_cmp: int (), <./tools/modelist.c 150>
+  111 				CompareModes: int (), <./tools/modelist.c 74>
+  112 			CompareModes: 111
+  113 			roundf: <>
+  114 			CFArrayCreateMutable: <>
+  115 			TimingName: CFStringRef (), <./tools/modelist.c 199>
+  116 				CFSTR: <>
+  117 				CFBundleCopyLocalizedString: <>
+  118 				CFStringCreateWithFormat: <>
+  119 				CFRelease: <>
+  120 				CFArrayGetCount: <>
+  121 				CFEqual: <>
+  122 				CFArrayGetValueAtIndex: <>
+  123 				CFArrayAppendValue: <>
+  124 			CFStringGetCStringPtr: <>
+  125 			CFRelease: <>
+  126 			CFShow: <>
+  127 		IOAccelFindAccelerator: <>
+  128 		IORegistryEntryGetParentEntry: <>
+  129 		IOObjectConformsTo: <>
+  130 		spit: void (), <./tools/img.c 10>
+  131 			snprintf: <>
+  132 			CFStringCreateWithCString: <>
+  133 			CFURLCreateWithFileSystemPath: <>
+  134 			CGImageSourceCreateWithURL: <>
+  135 			CGImageSourceCreateImageAtIndex: <>
+  136 			CFRelease: <>
+  137 			CGImageGetWidth: <>
+  138 			CGImageGetHeight: <>
+  139 			CGColorSpaceCreateDeviceGray: <>
+  140 			calloc: <>
+  141 			fprintf: <>
+  142 			CGBitmapContextCreate: <>
+  143 			free: <>
+  144 			CGColorSpaceRelease: <>
+  145 			CGRectMake: <>
+  146 			CGContextSetGrayFillColor: <>
+  147 			CGContextFillRect: <>
+  148 			CGContextDrawImage: <>
+  149 			assert: <>
+  150 			printf: <>
+  151 		EDIDRead: void (), <./tools/i2cexample.c 45>
+  152 			bzero: <>
+  153 			IOI2CSendRequest: <>
+  154 			assert: <>
+  155 			fprintf: <>
+  156 			EDIDDump: void (), <./tools/i2cexample.c 31>
+  157 				fprintf: <>
+  158 			EDIDSum: SInt32 (), <./tools/i2cexample.c 15>
+  159 			write: <>
+  160 		CFRetain: <>
+  161 		CFNumberCreate: <>
+  162 		IORegistryEntrySetCFProperty: <>
+  163 		open: <>
+  164 		mmap: <>
+  165 		process_image: void (), <./tools/hibparse.c 191>
+  166 			bcopy: <>
+  167 			offsetof: <>
+  168 			ptoa_32: <>
+  169 			pal_hib_map: <>
+  170 			atop_64: <>
+  171 			hibernate_page_list_grab: ppnum_t (), <./tools/hibparse.c 163>
+  172 				hibernate_page_bitmap_pin: hibernate_bitmap_t * (), <./tools/hibparse.c 67>
+  173 				hibernate_page_bitmap_count: uint32_t (), <./tools/hibparse.c 124>
+  174 				exit: <>
+  175 			ptoa_64: <>
+  176 			printf: <>
+  177 			store_one_page: uint32_t (), <./tools/hibparse.c 31>
+  178 		CFDictionaryGetValue: <>
+  179 		CFArrayGetCount: <>
+  180 		CFArrayGetValueAtIndex: <>
+  181 		CFDataGetBytePtr: <>
+  182 		CFDataGetLength: <>
+  183 		typeof: <>
+  184 		IOFBDecompressGamma: void (), <./tools/fitline.c 589>
+  185 			typeof: <>
+  186 		free: <>
+  187 		readPlist: __private_extern__ CFMutableDictionaryRef (), <./tools/modesuck.c 64>
+  188 			readFile: __private_extern__ IOReturn (), <./tools/modesuck.c 21>
+  189 				open: <>
+  190 				fstat: <>
+  191 				map_fd: <>
+  192 				close: <>
+  193 			CFDataCreateWithBytesNoCopy: <>
+  194 			CFPropertyListCreateFromXMLData: <>
+  195 			CFRelease: <>
+  196 			vm_deallocate: <>
+  197 			mach_task_self: <>
+  198 		CFDataCreate: <>
+  199 		CFDictionarySetValue: <>
+  200 		CFDictionaryCreateMutable: <>
+  201 		sprintf: <>
+  202 		CFDictionaryCreate: <>
+  203 		CFPropertyListCreateXMLData: <>
+  204 		IOAccelReadFramebuffer: IOReturn (), <./tools/readfb.c 14>
+  205 			IOAccelFindAccelerator: <>
+  206 			IOAccelCreateSurface: <>
+  207 			IOObjectRelease: <>
+  208 			calloc: <>
+  209 			vm_allocate: <>
+  210 			mach_task_self: <>
+  211 			VM_MAKE_TAG: <>
+  212 			IOAccelSetSurfaceFramebufferShapeWithBackingAndLength: <>
+  213 			IOCreatePlugInInterfaceForService: <>
+  214 			GetBlitter: <>
+  215 			AllocateSurface: <>
+  216 			SetDestination: <>
+  217 			Flush: <>
+  218 			IOAccelWriteLockSurfaceWithOptions: <>
+  219 			IOAccelWriteUnlockSurfaceWithOptions: <>
+  220 			FreeSurface: <>
+  221 			IOAccelDestroySurface: <>
+  222 			free: <>
+  223 			IODestroyPlugInInterface: <>
+  224 		write: <>
+  225 		vm_deallocate: <>
+  226 		memset: <>
+  227 		IOFBCompressGamma: bool (), <./tools/fitline.c 553>
+  228 			typeof: <>
+  229 			malloc: <>
+  230 			memset: <>
+  231 			IOFBSegInit: void (), <./tools/fitline.c 490>
+  232 				IOFBSegDist: void (), <./tools/fitline.c 466>
+  233 			IOFBSimplifySegs: void (), <./tools/fitline.c 499>
+  234 				bcopy: <>
+  235 				assert: <>
+  236 				IOFBSegInit: 231
+  237 				IOFBSegDist: 232
+  238 				typeof: <>
+  239 			free: <>
+  240 		CFArrayCreateMutable: <>
+  241 		arrayCount: <>
+  242 		CEAVideoFormatDataToDetailedTiming: IOReturn (), <./tools/ceamodes.c 203>
+  243 			bzero: <>
+  244 		CFArrayAppendValue: <>

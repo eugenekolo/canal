@@ -1,0 +1,1386 @@
+    1 	main: int (), <./test/test-gss-server.c 332>
+    2 		check_cc_store: int (), <./mittestcc/test_ccapi_v2.c 1062>
+    3 			BEGIN_TEST: <>
+    4 			cc_initialize: cc_int32 (), <./ccache.c 1289>
+    5 				LOG_ENTRY: <>
+    6 				update_time: void (), <./ccache.c 48>
+    7 					time: <>
+    8 				calloc: <>
+    9 			destroy_all_ccaches_v2: cc_result (), <./mittestcc/test_ccapi_v2.c 13>
+   10 				cc_get_NC_info: <>
+   11 				cc_open: <>
+   12 				cc_destroy: <>
+   13 				cc_free_NC_info: <>
+   14 				log_error: <>
+   15 				translate_ccapi_error: const char * (), <./mittestcc/test_ccapi_globals.c 71>
+   16 			cc_create: <>
+   17 			new_v5_creds_union_compat: cc_result (), <./mittestcc/test_ccapi_v2.c 72>
+   18 				malloc: <>
+   19 				asprintf: <>
+   20 				time: <>
+   21 			check_once_cc_store: cc_result (), <./mittestcc/test_ccapi_v2.c 1153>
+   22 				BEGIN_CHECK_ONCE: <>
+   23 				cc_store: <>
+   24 				check_err: <>
+   25 				cc_seq_fetch_creds_begin: <>
+   26 				cc_seq_fetch_creds_next: <>
+   27 				compare_v5_creds_unions_compat: int (), <./mittestcc/test_ccapi_v2.c 40>
+   28 					strcmp: <>
+   29 				cc_free_creds: <>
+   30 				check_if: <>
+   31 				cc_seq_fetch_creds_end: <>
+   32 			release_v5_creds_union_compat: void (), <./mittestcc/test_ccapi_v2.c 140>
+   33 				free: <>
+   34 			free: <>
+   35 			cc_get_name: <>
+   36 			cc_open: <>
+   37 			cc_free_name: <>
+   38 			cc_destroy: <>
+   39 			cc_close: <>
+   40 			cc_shutdown: <>
+   41 		check_cc_ccache_iterator_next: int (), <./mittestcc/test_ccapi_iterators.c 8>
+   42 			BEGIN_TEST: <>
+   43 			cc_initialize: 4
+   44 			destroy_all_ccaches: cc_int32 (), <./mittestcc/test_ccapi_util.c 12>
+   45 				cc_context_open_default_ccache: <>
+   46 				cc_ccache_destroy: <>
+   47 				log_error: <>
+   48 				translate_ccapi_error: 15
+   49 			cc_context_new_ccache_iterator: <>
+   50 			check_once_cc_ccache_iterator_next: cc_int32 (), <./mittestcc/test_ccapi_iterators.c 84>
+   51 				cc_ccache_iterator_next: <>
+   52 				cc_ccache_release: <>
+   53 				check_err: <>
+   54 				check_if: <>
+   55 			cc_ccache_iterator_release: <>
+   56 			cc_context_create_new_ccache: <>
+   57 			cc_ccache_release: <>
+   58 			fprintf: <>
+   59 			cc_context_release: <>
+   60 		check_cc_set_principal: int (), <./mittestcc/test_ccapi_v2.c 945>
+   61 			BEGIN_TEST: <>
+   62 			cc_initialize: 4
+   63 			destroy_all_ccaches_v2: 9
+   64 			cc_create: <>
+   65 			check_once_cc_set_principal: cc_int32 (), <./mittestcc/test_ccapi_v2.c 1023>
+   66 				BEGIN_CHECK_ONCE: <>
+   67 				cc_set_principal: <>
+   68 				check_err: <>
+   69 				cc_get_principal: <>
+   70 				check_if: <>
+   71 				strcmp: <>
+   72 				cc_free_principal: <>
+   73 			log_error: <>
+   74 			cc_destroy: <>
+   75 			cc_shutdown: <>
+   76 		cc_initialize: 4
+   77 		cc_context_lock: <>
+   78 		log_error: <>
+   79 		pthread_create: <>
+   80 		other_thread: void * (), <./mittestcc/simple_lock_test.c 25>
+   81 			cc_initialize: 4
+   82 			log_error: <>
+   83 			cc_context_lock: <>
+   84 			cc_context_unlock: <>
+   85 			cc_context_release: <>
+   86 		exit: <>
+   87 		pthread_join: <>
+   88 		cc_context_unlock: <>
+   89 		cc_context_release: <>
+   90 		UNREFERENCED_PARAMETER: <>
+   91 		check_cc_ccache_move: int (), <./mittestcc/test_ccapi_ccache.c 1519>
+   92 			BEGIN_TEST: <>
+   93 			log_error: <>
+   94 			cc_initialize: 4
+   95 			destroy_all_ccaches: 44
+   96 			cc_context_create_new_ccache: <>
+   97 			new_v5_creds_union: cc_int32 (), <./mittestcc/test_ccapi_util.c 35>
+   98 				malloc: <>
+   99 				asprintf: <>
+  100 				time: <>
+  101 			cc_ccache_store_credentials: <>
+  102 			check_once_cc_ccache_move: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1589>
+  103 				BEGIN_CHECK_ONCE: <>
+  104 				cc_ccache_new_credentials_iterator: <>
+  105 				cc_credentials_iterator_next: <>
+  106 				cc_credentials_iterator_release: <>
+  107 				cc_ccache_get_principal: <>
+  108 				cc_ccache_move: <>
+  109 				check_err: <>
+  110 				cc_ccache_remove_credentials: <>
+  111 				check_if: <>
+  112 				cc_credentials_release: <>
+  113 				strcmp: <>
+  114 				cc_string_release: <>
+  115 			cc_ccache_release: <>
+  116 			cc_context_release: <>
+  117 		check_cc_context_new_ccache_iterator: int (), <./mittestcc/test_ccapi_context.c 858>
+  118 			BEGIN_TEST: <>
+  119 			log_error: <>
+  120 			cc_initialize: 4
+  121 			destroy_all_ccaches: 44
+  122 			check_once_cc_context_new_ccache_iterator: cc_int32 (), <./mittestcc/test_ccapi_context.c 900>
+  123 				BEGIN_CHECK_ONCE: <>
+  124 				cc_context_new_ccache_iterator: <>
+  125 				check_err: <>
+  126 			cc_context_create_default_ccache: <>
+  127 			cc_string_release: <>
+  128 			cc_ccache_destroy: <>
+  129 			cc_context_release: <>
+  130 		check_cc_seq_fetch_creds_begin: int (), <./mittestcc/test_ccapi_v2.c 1627>
+  131 			BEGIN_TEST: <>
+  132 			cc_initialize: 4
+  133 			destroy_all_ccaches_v2: 9
+  134 			cc_create: <>
+  135 			check_once_cc_seq_fetch_creds_begin: cc_result (), <./mittestcc/test_ccapi_v2.c 1694>
+  136 				BEGIN_CHECK_ONCE: <>
+  137 				cc_seq_fetch_creds_begin: <>
+  138 				check_err: <>
+  139 			cc_seq_fetch_creds_end: <>
+  140 			cc_get_name: <>
+  141 			cc_open: <>
+  142 			cc_free_name: <>
+  143 			cc_destroy: <>
+  144 			cc_close: <>
+  145 			cc_shutdown: <>
+  146 		check_cc_ccache_set_principal: int (), <./mittestcc/test_ccapi_ccache.c 632>
+  147 			BEGIN_TEST: <>
+  148 			log_error: <>
+  149 			cc_initialize: 4
+  150 			destroy_all_ccaches: 44
+  151 			cc_context_create_new_ccache: <>
+  152 			check_once_cc_ccache_set_principal: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 758>
+  153 				BEGIN_CHECK_ONCE: <>
+  154 				cc_ccache_set_principal: <>
+  155 				check_err: <>
+  156 				cc_ccache_get_principal: <>
+  157 				check_if: <>
+  158 				strcmp: <>
+  159 				cc_string_release: <>
+  160 			cc_ccache_destroy: <>
+  161 			cc_context_release: <>
+  162 		check_cc_shutdown: int (), <./mittestcc/test_ccapi_v2.c 158>
+  163 			BEGIN_TEST: <>
+  164 			check_once_cc_shutdown: cc_result (), <./mittestcc/test_ccapi_v2.c 175>
+  165 				BEGIN_CHECK_ONCE: <>
+  166 				cc_initialize: 4
+  167 				log_error: <>
+  168 				cc_shutdown: <>
+  169 				check_err: <>
+  170 			cc_shutdown: <>
+  171 		check_cc_seq_fetch_NCs_next: int (), <./mittestcc/test_ccapi_v2.c 1403>
+  172 			BEGIN_TEST: <>
+  173 			cc_initialize: 4
+  174 			destroy_all_ccaches_v2: 9
+  175 			cc_seq_fetch_NCs_begin: <>
+  176 			check_once_cc_seq_fetch_NCs_next: cc_result (), <./mittestcc/test_ccapi_v2.c 1485>
+  177 				BEGIN_CHECK_ONCE: <>
+  178 				cc_seq_fetch_NCs_next: <>
+  179 				cc_close: <>
+  180 				check_err: <>
+  181 				check_if: <>
+  182 			cc_seq_fetch_creds_end: <>
+  183 			cc_create: <>
+  184 			cc_close: <>
+  185 			fprintf: <>
+  186 			asprintf: <>
+  187 			free: <>
+  188 			cc_shutdown: <>
+  189 		check_cc_ccache_set_default: int (), <./mittestcc/test_ccapi_ccache.c 162>
+  190 			BEGIN_TEST: <>
+  191 			log_error: <>
+  192 			cc_initialize: 4
+  193 			destroy_all_ccaches: 44
+  194 			cc_context_create_new_ccache: <>
+  195 			check_once_cc_ccache_set_default: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 226>
+  196 				BEGIN_CHECK_ONCE: <>
+  197 				cc_ccache_set_default: <>
+  198 				check_err: <>
+  199 				cc_ccache_get_name: <>
+  200 				cc_context_open_default_ccache: <>
+  201 				check_if: <>
+  202 				strcmp: <>
+  203 				cc_ccache_release: <>
+  204 				cc_string_release: <>
+  205 			cc_ccache_release: <>
+  206 			cc_context_open_default_ccache: <>
+  207 			cc_context_release: <>
+  208 		check_cc_context_open_ccache: int (), <./mittestcc/test_ccapi_context.c 351>
+  209 			BEGIN_TEST: <>
+  210 			log_error: <>
+  211 			cc_initialize: 4
+  212 			cc_context_open_default_ccache: <>
+  213 			cc_context_create_default_ccache: <>
+  214 			cc_ccache_release: <>
+  215 			cc_context_get_default_ccache_name: <>
+  216 			check_once_cc_context_open_ccache: cc_int32 (), <./mittestcc/test_ccapi_context.c 406>
+  217 				BEGIN_CHECK_ONCE: <>
+  218 				cc_context_open_ccache: <>
+  219 				check_err: <>
+  220 				check_if: <>
+  221 				cc_ccache_get_name: <>
+  222 				strcmp: <>
+  223 				cc_string_release: <>
+  224 				cc_ccache_release: <>
+  225 			cc_context_create_new_ccache: <>
+  226 			cc_ccache_get_name: <>
+  227 			cc_ccache_destroy: <>
+  228 			cc_context_release: <>
+  229 		check_cc_ccache_release: int (), <./mittestcc/test_ccapi_ccache.c 14>
+  230 			BEGIN_TEST: <>
+  231 			log_error: <>
+  232 			cc_initialize: 4
+  233 			cc_context_create_new_ccache: <>
+  234 			check_once_cc_ccache_release: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 46>
+  235 				cc_ccache_get_name: <>
+  236 				cc_ccache_release: <>
+  237 				BEGIN_CHECK_ONCE: <>
+  238 				check_err: <>
+  239 				cc_context_open_ccache: <>
+  240 				check_if: <>
+  241 				cc_ccache_destroy: <>
+  242 				cc_string_release: <>
+  243 			cc_context_release: <>
+  244 		check_cc_ccache_new_credentials_iterator: int (), <./mittestcc/test_ccapi_ccache.c 1114>
+  245 			BEGIN_TEST: <>
+  246 			log_error: <>
+  247 			cc_initialize: 4
+  248 			destroy_all_ccaches: 44
+  249 			cc_context_create_new_ccache: <>
+  250 			check_once_cc_ccache_new_credentials_iterator: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1187>
+  251 				BEGIN_CHECK_ONCE: <>
+  252 				cc_ccache_new_credentials_iterator: <>
+  253 				check_err: <>
+  254 			cc_credentials_iterator_release: <>
+  255 			cc_ccache_get_name: <>
+  256 			cc_context_open_ccache: <>
+  257 			cc_string_release: <>
+  258 			cc_ccache_destroy: <>
+  259 			cc_ccache_release: <>
+  260 			cc_context_release: <>
+  261 		check_cc_get_cred_version: int (), <./mittestcc/test_ccapi_v2.c 657>
+  262 			BEGIN_TEST: <>
+  263 			cc_initialize: 4
+  264 			cc_create: <>
+  265 			check_once_cc_get_cred_version: cc_result (), <./mittestcc/test_ccapi_v2.c 709>
+  266 				BEGIN_CHECK_ONCE: <>
+  267 				cc_get_cred_version: <>
+  268 				check_err: <>
+  269 				check_if: <>
+  270 			log_error: <>
+  271 			cc_destroy: <>
+  272 			cc_shutdown: <>
+  273 		check_cc_context_release: int (), <./mittestcc/test_ccapi_context.c 66>
+  274 			BEGIN_TEST: <>
+  275 			log_error: <>
+  276 			check_once_cc_context_release: cc_int32 (), <./mittestcc/test_ccapi_context.c 92>
+  277 				BEGIN_CHECK_ONCE: <>
+  278 				cc_initialize: 4
+  279 				log_error: <>
+  280 				cc_context_release: <>
+  281 				check_err: <>
+  282 			cc_context_release: <>
+  283 		check_cc_ccache_get_principal: int (), <./mittestcc/test_ccapi_ccache.c 559>
+  284 			BEGIN_TEST: <>
+  285 			log_error: <>
+  286 			cc_initialize: 4
+  287 			destroy_all_ccaches: 44
+  288 			cc_context_create_new_ccache: <>
+  289 			check_once_cc_ccache_get_principal: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 511>
+  290 				BEGIN_CHECK_ONCE: <>
+  291 				cc_ccache_get_principal: <>
+  292 				check_err: <>
+  293 				check_if: <>
+  294 				strcmp: <>
+  295 				cc_string_release: <>
+  296 			cc_ccache_release: <>
+  297 			cc_context_release: <>
+  298 		check_cc_seq_fetch_creds_next: int (), <./mittestcc/test_ccapi_v2.c 1720>
+  299 			BEGIN_TEST: <>
+  300 			cc_initialize: 4
+  301 			destroy_all_ccaches_v2: 9
+  302 			cc_create: <>
+  303 			cc_seq_fetch_creds_begin: <>
+  304 			check_once_cc_seq_fetch_creds_next: cc_result (), <./mittestcc/test_ccapi_v2.c 1804>
+  305 				BEGIN_CHECK_ONCE: <>
+  306 				cc_seq_fetch_creds_next: <>
+  307 				cc_free_creds: <>
+  308 				check_err: <>
+  309 				check_if: <>
+  310 			cc_seq_fetch_creds_end: <>
+  311 			cc_close: <>
+  312 			new_v5_creds_union_compat: 17
+  313 			cc_store: <>
+  314 			release_v5_creds_union_compat: 32
+  315 			fprintf: <>
+  316 			cc_shutdown: <>
+  317 		check_cc_remove_cred: int (), <./mittestcc/test_ccapi_v2.c 1204>
+  318 			BEGIN_TEST: <>
+  319 			cc_initialize: 4
+  320 			destroy_all_ccaches_v2: 9
+  321 			cc_create: <>
+  322 			new_v5_creds_union_compat: 17
+  323 			cc_store: <>
+  324 			log_error: <>
+  325 			release_v5_creds_union_compat: 32
+  326 			cc_seq_fetch_creds_begin: <>
+  327 			cc_seq_fetch_creds_next: <>
+  328 			check_once_cc_remove_cred: cc_result (), <./mittestcc/test_ccapi_v2.c 1290>
+  329 				BEGIN_CHECK_ONCE: <>
+  330 				cc_remove_cred: <>
+  331 				check_err: <>
+  332 				cc_seq_fetch_creds_begin: <>
+  333 				cc_seq_fetch_creds_next: <>
+  334 				compare_v5_creds_unions_compat: 27
+  335 				cc_free_creds: <>
+  336 				check_if: <>
+  337 				cc_seq_fetch_creds_end: <>
+  338 			cc_get_name: <>
+  339 			cc_open: <>
+  340 			cc_destroy: <>
+  341 			cc_free_name: <>
+  342 			cc_free_creds: <>
+  343 			cc_seq_fetch_creds_end: <>
+  344 			cc_close: <>
+  345 			cc_shutdown: <>
+  346 		check_cc_get_principal: int (), <./mittestcc/test_ccapi_v2.c 840>
+  347 			BEGIN_TEST: <>
+  348 			cc_initialize: 4
+  349 			destroy_all_ccaches_v2: 9
+  350 			cc_create: <>
+  351 			check_once_cc_get_principal: cc_result (), <./mittestcc/test_ccapi_v2.c 903>
+  352 				BEGIN_CHECK_ONCE: <>
+  353 				cc_get_principal: <>
+  354 				check_err: <>
+  355 				check_if: <>
+  356 				strcmp: <>
+  357 				cc_free_principal: <>
+  358 			log_error: <>
+  359 			cc_close: <>
+  360 			cc_shutdown: <>
+  361 		check_cc_get_NC_info: int (), <./mittestcc/test_ccapi_v2.c 1526>
+  362 			BEGIN_TEST: <>
+  363 			cc_initialize: 4
+  364 			destroy_all_ccaches_v2: 9
+  365 			check_once_cc_get_NC_info: cc_result (), <./mittestcc/test_ccapi_v2.c 1584>
+  366 				BEGIN_CHECK_ONCE: <>
+  367 				cc_get_NC_info: <>
+  368 				check_if: <>
+  369 				strncmp: <>
+  370 				strlen: <>
+  371 				strcmp: <>
+  372 				check_err: <>
+  373 				cc_free_NC_info: <>
+  374 			cc_create: <>
+  375 			cc_close: <>
+  376 			fprintf: <>
+  377 			asprintf: <>
+  378 			free: <>
+  379 			cc_shutdown: <>
+  380 		check_cc_seq_fetch_NCs_begin: int (), <./mittestcc/test_ccapi_v2.c 1342>
+  381 			BEGIN_TEST: <>
+  382 			cc_initialize: 4
+  383 			destroy_all_ccaches_v2: 9
+  384 			check_once_cc_seq_fetch_NCs_begin: cc_result (), <./mittestcc/test_ccapi_v2.c 1377>
+  385 				BEGIN_CHECK_ONCE: <>
+  386 				cc_seq_fetch_NCs_begin: <>
+  387 				check_err: <>
+  388 			cc_create: <>
+  389 			cc_close: <>
+  390 			cc_shutdown: <>
+  391 		check_cc_context_compare: int (), <./mittestcc/test_ccapi_context.c 931>
+  392 			BEGIN_TEST: <>
+  393 			log_error: <>
+  394 			cc_initialize: 4
+  395 			check_once_cc_context_compare: cc_int32 (), <./mittestcc/test_ccapi_context.c 962>
+  396 				BEGIN_CHECK_ONCE: <>
+  397 				cc_context_compare: <>
+  398 				check_err: <>
+  399 			cc_context_release: <>
+  400 		check_cc_create: int (), <./mittestcc/test_ccapi_v2.c 433>
+  401 			BEGIN_TEST: <>
+  402 			cc_initialize: 4
+  403 			cc_open: <>
+  404 			cc_destroy: <>
+  405 			check_once_cc_create: cc_result (), <./mittestcc/test_ccapi_v2.c 476>
+  406 				BEGIN_CHECK_ONCE: <>
+  407 				cc_create: <>
+  408 				check_err: <>
+  409 				check_if: <>
+  410 				cc_get_name: <>
+  411 				strcmp: <>
+  412 				cc_free_name: <>
+  413 				cc_get_cred_version: <>
+  414 				cc_get_principal: <>
+  415 				cc_free_principal: <>
+  416 				cc_destroy: <>
+  417 			cc_shutdown: <>
+  418 		check_cc_ccache_get_change_time: int (), <./mittestcc/test_ccapi_ccache.c 1259>
+  419 			BEGIN_TEST: <>
+  420 			log_error: <>
+  421 			cc_initialize: 4
+  422 			destroy_all_ccaches: 44
+  423 			cc_context_create_new_ccache: <>
+  424 			cc_ccache_release: <>
+  425 			check_once_cc_ccache_get_change_time: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1219>
+  426 				BEGIN_CHECK_ONCE: <>
+  427 				cc_ccache_get_change_time: <>
+  428 				check_err: <>
+  429 				check_if: <>
+  430 			cc_ccache_set_default: <>
+  431 			new_v5_creds_union: 97
+  432 			cc_ccache_store_credentials: <>
+  433 			release_v5_creds_union: void (), <./mittestcc/test_ccapi_util.c 104>
+  434 				free: <>
+  435 			cc_ccache_set_principal: <>
+  436 			translate_ccapi_error: 15
+  437 			check_once_cc_context_get_change_time: cc_int32 (), <./mittestcc/test_ccapi_context.c 237>
+  438 				BEGIN_CHECK_ONCE: <>
+  439 				cc_context_get_change_time: <>
+  440 				check_err: <>
+  441 				check_if: <>
+  442 			cc_ccache_new_credentials_iterator: <>
+  443 			cc_credentials_iterator_next: <>
+  444 			cc_ccache_remove_credentials: <>
+  445 			cc_context_release: <>
+  446 		check_cc_close: int (), <./mittestcc/test_ccapi_v2.c 528>
+  447 			BEGIN_TEST: <>
+  448 			cc_initialize: 4
+  449 			cc_create: <>
+  450 			check_once_cc_close: cc_result (), <./mittestcc/test_ccapi_v2.c 554>
+  451 				cc_get_name: <>
+  452 				cc_close: <>
+  453 				BEGIN_CHECK_ONCE: <>
+  454 				check_err: <>
+  455 				cc_open: <>
+  456 				check_if: <>
+  457 				cc_destroy: <>
+  458 				cc_free_name: <>
+  459 			cc_shutdown: <>
+  460 		check_cc_ccache_set_kdc_time_offset: int (), <./mittestcc/test_ccapi_ccache.c 1892>
+  461 			BEGIN_TEST: <>
+  462 			log_error: <>
+  463 			cc_initialize: 4
+  464 			destroy_all_ccaches: 44
+  465 			cc_context_create_new_ccache: <>
+  466 			check_once_cc_ccache_set_kdc_time_offset: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1932>
+  467 				BEGIN_CHECK_ONCE: <>
+  468 				cc_ccache_set_kdc_time_offset: <>
+  469 				check_err: <>
+  470 				cc_ccache_get_kdc_time_offset: <>
+  471 				check_if: <>
+  472 			cc_ccache_release: <>
+  473 			cc_context_release: <>
+  474 		check_cc_ccache_store_credentials: int (), <./mittestcc/test_ccapi_ccache.c 804>
+  475 			BEGIN_TEST: <>
+  476 			log_error: <>
+  477 			cc_initialize: 4
+  478 			destroy_all_ccaches: 44
+  479 			cc_context_create_new_ccache: <>
+  480 			new_v5_creds_union: 97
+  481 			check_once_cc_ccache_store_credentials: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 903>
+  482 				BEGIN_CHECK_ONCE: <>
+  483 				cc_ccache_store_credentials: <>
+  484 				check_err: <>
+  485 				cc_ccache_new_credentials_iterator: <>
+  486 				cc_credentials_iterator_next: <>
+  487 				compare_v5_creds_unions: int (), <./mittestcc/test_ccapi_util.c 126>
+  488 					strcmp: <>
+  489 				cc_credentials_release: <>
+  490 				check_if: <>
+  491 			release_v5_creds_union: 433
+  492 			free: <>
+  493 			cc_ccache_get_name: <>
+  494 			cc_context_open_ccache: <>
+  495 			cc_string_release: <>
+  496 			cc_ccache_destroy: <>
+  497 			cc_ccache_release: <>
+  498 			cc_context_release: <>
+  499 		check_cc_destroy: int (), <./mittestcc/test_ccapi_v2.c 591>
+  500 			BEGIN_TEST: <>
+  501 			cc_initialize: 4
+  502 			cc_create: <>
+  503 			check_once_cc_destroy: cc_result (), <./mittestcc/test_ccapi_v2.c 617>
+  504 				BEGIN_CHECK_ONCE: <>
+  505 				cc_get_name: <>
+  506 				cc_destroy: <>
+  507 				check_err: <>
+  508 				cc_open: <>
+  509 				check_if: <>
+  510 				cc_free_name: <>
+  511 			cc_shutdown: <>
+  512 		check_cc_context_get_default_ccache_name: int (), <./mittestcc/test_ccapi_context.c 275>
+  513 			BEGIN_TEST: <>
+  514 			log_error: <>
+  515 			cc_initialize: 4
+  516 			check_once_cc_context_get_default_ccache_name: cc_int32 (), <./mittestcc/test_ccapi_context.c 315>
+  517 				BEGIN_CHECK_ONCE: <>
+  518 				cc_context_get_default_ccache_name: <>
+  519 				check_err: <>
+  520 				cc_string_release: <>
+  521 			destroy_all_ccaches: 44
+  522 			cc_context_open_default_ccache: <>
+  523 			cc_context_create_default_ccache: <>
+  524 			cc_ccache_release: <>
+  525 			cc_context_release: <>
+  526 		check_cc_context_open_default_ccache: int (), <./mittestcc/test_ccapi_context.c 459>
+  527 			BEGIN_TEST: <>
+  528 			log_error: <>
+  529 			cc_initialize: 4
+  530 			cc_context_create_default_ccache: <>
+  531 			cc_ccache_release: <>
+  532 			check_once_cc_context_open_default_ccache: cc_int32 (), <./mittestcc/test_ccapi_context.c 498>
+  533 				BEGIN_CHECK_ONCE: <>
+  534 				cc_context_open_default_ccache: <>
+  535 				check_err: <>
+  536 				check_if: <>
+  537 				cc_ccache_get_name: <>
+  538 				cc_context_get_default_ccache_name: <>
+  539 				strcmp: <>
+  540 				cc_string_release: <>
+  541 				cc_ccache_release: <>
+  542 			destroy_all_ccaches: 44
+  543 			cc_context_release: <>
+  544 		check_cc_ccache_get_name: int (), <./mittestcc/test_ccapi_ccache.c 402>
+  545 			BEGIN_TEST: <>
+  546 			log_error: <>
+  547 			cc_initialize: 4
+  548 			destroy_all_ccaches: 44
+  549 			cc_context_create_ccache: <>
+  550 			check_once_cc_ccache_get_name: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 467>
+  551 				BEGIN_CHECK_ONCE: <>
+  552 				cc_ccache_get_name: <>
+  553 				check_err: <>
+  554 				check_if: <>
+  555 				strcmp: <>
+  556 				cc_string_release: <>
+  557 			cc_ccache_release: <>
+  558 			cc_context_release: <>
+  559 		check_cc_open: int (), <./mittestcc/test_ccapi_v2.c 340>
+  560 			BEGIN_TEST: <>
+  561 			cc_initialize: 4
+  562 			cc_create: <>
+  563 			log_error: <>
+  564 			translate_ccapi_error: 15
+  565 			cc_close: <>
+  566 			check_once_cc_open: cc_result (), <./mittestcc/test_ccapi_v2.c 383>
+  567 				BEGIN_CHECK_ONCE: <>
+  568 				cc_open: <>
+  569 				check_err: <>
+  570 				check_if: <>
+  571 				cc_get_name: <>
+  572 				strcmp: <>
+  573 				cc_free_name: <>
+  574 				cc_ccache_release: <>
+  575 			cc_shutdown: <>
+  576 		check_cc_context_create_ccache: int (), <./mittestcc/test_ccapi_context.c 551>
+  577 			BEGIN_TEST: <>
+  578 			log_error: <>
+  579 			cc_initialize: 4
+  580 			cc_context_create_default_ccache: <>
+  581 			cc_ccache_get_name: <>
+  582 			cc_ccache_release: <>
+  583 			check_once_cc_context_create_ccache: cc_int32 (), <./mittestcc/test_ccapi_context.c 600>
+  584 				BEGIN_CHECK_ONCE: <>
+  585 				cc_context_create_ccache: <>
+  586 				check_err: <>
+  587 				check_if: <>
+  588 				cc_ccache_get_name: <>
+  589 				strcmp: <>
+  590 				cc_string_release: <>
+  591 				cc_ccache_get_credentials_version: <>
+  592 				cc_ccache_get_principal: <>
+  593 				cc_ccache_destroy: <>
+  594 			cc_ccache_destroy: <>
+  595 			cc_string_release: <>
+  596 			cc_context_release: <>
+  597 		check_cc_credentials_iterator_next: int (), <./mittestcc/test_ccapi_iterators.c 127>
+  598 			BEGIN_TEST: <>
+  599 			cc_initialize: 4
+  600 			destroy_all_ccaches: 44
+  601 			cc_context_create_new_ccache: <>
+  602 			cc_ccache_new_credentials_iterator: <>
+  603 			check_once_cc_credentials_iterator_next: cc_int32 (), <./mittestcc/test_ccapi_iterators.c 209>
+  604 				BEGIN_CHECK_ONCE: <>
+  605 				cc_credentials_iterator_next: <>
+  606 				cc_credentials_release: <>
+  607 				check_err: <>
+  608 				check_if: <>
+  609 			cc_ccache_iterator_release: <>
+  610 			cc_ccache_release: <>
+  611 			new_v5_creds_union: 97
+  612 			cc_ccache_store_credentials: <>
+  613 			release_v5_creds_union: 433
+  614 			cc_credentials_iterator_release: <>
+  615 			fprintf: <>
+  616 			cc_context_release: <>
+  617 		check_cc_ccache_compare: int (), <./mittestcc/test_ccapi_ccache.c 1691>
+  618 			BEGIN_TEST: <>
+  619 			log_error: <>
+  620 			cc_initialize: 4
+  621 			destroy_all_ccaches: 44
+  622 			cc_context_create_new_ccache: <>
+  623 			cc_context_open_default_ccache: <>
+  624 			check_once_cc_ccache_compare: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1747>
+  625 				BEGIN_CHECK_ONCE: <>
+  626 				cc_ccache_compare: <>
+  627 				check_if: <>
+  628 				check_err: <>
+  629 			cc_ccache_release: <>
+  630 			cc_context_release: <>
+  631 		check_cc_ccache_destroy: int (), <./mittestcc/test_ccapi_ccache.c 88>
+  632 			BEGIN_TEST: <>
+  633 			log_error: <>
+  634 			cc_initialize: 4
+  635 			cc_context_create_new_ccache: <>
+  636 			check_once_cc_ccache_destroy: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 120>
+  637 				BEGIN_CHECK_ONCE: <>
+  638 				cc_ccache_get_name: <>
+  639 				cc_ccache_destroy: <>
+  640 				check_err: <>
+  641 				cc_context_open_ccache: <>
+  642 				check_if: <>
+  643 				cc_string_release: <>
+  644 			cc_context_release: <>
+  645 		check_cc_context_get_change_time: int (), <./mittestcc/test_ccapi_context.c 133>
+  646 			BEGIN_TEST: <>
+  647 			log_error: <>
+  648 			cc_initialize: 4
+  649 			check_once_cc_context_get_change_time: 437
+  650 			cc_context_open_default_ccache: <>
+  651 			cc_context_create_default_ccache: <>
+  652 			cc_ccache_release: <>
+  653 			cc_context_create_new_ccache: <>
+  654 			new_v5_creds_union: 97
+  655 			cc_ccache_store_credentials: <>
+  656 			release_v5_creds_union: 433
+  657 			cc_ccache_set_principal: <>
+  658 			translate_ccapi_error: 15
+  659 			cc_ccache_new_credentials_iterator: <>
+  660 			cc_credentials_iterator_next: <>
+  661 			cc_ccache_remove_credentials: <>
+  662 			cc_ccache_set_default: <>
+  663 			cc_ccache_destroy: <>
+  664 			cc_context_release: <>
+  665 		check_cc_context_create_default_ccache: int (), <./mittestcc/test_ccapi_context.c 656>
+  666 			BEGIN_TEST: <>
+  667 			log_error: <>
+  668 			cc_initialize: 4
+  669 			destroy_all_ccaches: 44
+  670 			check_once_cc_context_create_default_ccache: cc_int32 (), <./mittestcc/test_ccapi_context.c 698>
+  671 				BEGIN_CHECK_ONCE: <>
+  672 				cc_context_create_default_ccache: <>
+  673 				check_err: <>
+  674 				check_if: <>
+  675 				cc_ccache_get_credentials_version: <>
+  676 				cc_ccache_get_principal: <>
+  677 				strcmp: <>
+  678 				cc_string_release: <>
+  679 				cc_ccache_release: <>
+  680 			cc_ccache_release: <>
+  681 			cc_string_release: <>
+  682 			cc_ccache_destroy: <>
+  683 			cc_context_release: <>
+  684 		check_cc_ccache_get_last_default_time: int (), <./mittestcc/test_ccapi_ccache.c 1427>
+  685 			BEGIN_TEST: <>
+  686 			log_error: <>
+  687 			cc_initialize: 4
+  688 			destroy_all_ccaches: 44
+  689 			cc_context_create_new_ccache: <>
+  690 			cc_ccache_get_change_time: <>
+  691 			check_once_cc_ccache_get_last_default_time: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1386>
+  692 				BEGIN_CHECK_ONCE: <>
+  693 				cc_ccache_get_last_default_time: <>
+  694 				check_err: <>
+  695 				check_if: <>
+  696 			cc_ccache_set_default: <>
+  697 			cc_ccache_release: <>
+  698 			cc_ccache_get_name: <>
+  699 			cc_context_open_ccache: <>
+  700 			cc_ccache_destroy: <>
+  701 			cc_context_release: <>
+  702 		check_cc_context_create_new_ccache: int (), <./mittestcc/test_ccapi_context.c 747>
+  703 			BEGIN_TEST: <>
+  704 			log_error: <>
+  705 			cc_initialize: 4
+  706 			destroy_all_ccaches: 44
+  707 			check_once_cc_context_create_new_ccache: cc_int32 (), <./mittestcc/test_ccapi_context.c 790>
+  708 				BEGIN_CHECK_ONCE: <>
+  709 				cc_context_create_new_ccache: <>
+  710 				check_err: <>
+  711 				check_if: <>
+  712 				cc_context_get_default_ccache_name: <>
+  713 				cc_ccache_get_name: <>
+  714 				strcmp: <>
+  715 				cc_string_release: <>
+  716 				cc_ccache_get_credentials_version: <>
+  717 				cc_ccache_get_principal: <>
+  718 				cc_ccache_release: <>
+  719 			cc_ccache_release: <>
+  720 			cc_string_release: <>
+  721 			cc_ccache_destroy: <>
+  722 			cc_context_release: <>
+  723 		check_cc_ccache_get_credentials_version: int (), <./mittestcc/test_ccapi_ccache.c 281>
+  724 			BEGIN_TEST: <>
+  725 			log_error: <>
+  726 			cc_initialize: 4
+  727 			cc_context_create_new_ccache: <>
+  728 			check_once_cc_ccache_get_credentials_version: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 364>
+  729 				BEGIN_CHECK_ONCE: <>
+  730 				cc_ccache_get_credentials_version: <>
+  731 				check_err: <>
+  732 				check_if: <>
+  733 			cc_ccache_set_principal: <>
+  734 			cc_ccache_destroy: <>
+  735 			cc_context_release: <>
+  736 		check_cc_ccache_clear_kdc_time_offset: int (), <./mittestcc/test_ccapi_ccache.c 1972>
+  737 			BEGIN_TEST: <>
+  738 			log_error: <>
+  739 			cc_initialize: 4
+  740 			destroy_all_ccaches: 44
+  741 			cc_context_create_new_ccache: <>
+  742 			check_once_cc_ccache_clear_kdc_time_offset: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 2022>
+  743 				BEGIN_CHECK_ONCE: <>
+  744 				cc_ccache_clear_kdc_time_offset: <>
+  745 				check_err: <>
+  746 				cc_ccache_get_kdc_time_offset: <>
+  747 				check_if: <>
+  748 			cc_ccache_set_kdc_time_offset: <>
+  749 			cc_ccache_release: <>
+  750 			cc_context_release: <>
+  751 		TlsAlloc: <>
+  752 		cci_os_ipc_thread_init: <>
+  753 		cci_stream_new: <>
+  754 		cci_stream_write: <>
+  755 		strlen: <>
+  756 		cci_os_ipc_msg: <>
+  757 		Sleep: <>
+  758 		cci_debug_printf: <>
+  759 		check_cc_get_change_time: int (), <./mittestcc/test_ccapi_v2.c 216>
+  760 			BEGIN_TEST: <>
+  761 			cc_initialize: 4
+  762 			check_once_cc_get_change_time: cc_int32 (), <./mittestcc/test_ccapi_v2.c 304>
+  763 				BEGIN_CHECK_ONCE: <>
+  764 				cc_get_change_time: <>
+  765 				check_err: <>
+  766 				check_if: <>
+  767 			cc_create: <>
+  768 			log_error: <>
+  769 			translate_ccapi_error: 15
+  770 			cc_set_principal: <>
+  771 			new_v5_creds_union_compat: 17
+  772 			cc_store: <>
+  773 			cc_remove_cred: <>
+  774 			release_v5_creds_union_compat: 32
+  775 			cc_destroy: <>
+  776 			cc_shutdown: <>
+  777 		fprintf: <>
+  778 		check_cc_get_name: int (), <./mittestcc/test_ccapi_v2.c 740>
+  779 			BEGIN_TEST: <>
+  780 			cc_initialize: 4
+  781 			destroy_all_ccaches_v2: 9
+  782 			cc_create: <>
+  783 			check_once_cc_get_name: cc_int32 (), <./mittestcc/test_ccapi_v2.c 800>
+  784 				BEGIN_CHECK_ONCE: <>
+  785 				cc_get_name: <>
+  786 				check_err: <>
+  787 				check_if: <>
+  788 				strcmp: <>
+  789 				cc_free_name: <>
+  790 			log_error: <>
+  791 			cc_close: <>
+  792 			cc_context_create_ccache: <>
+  793 			cc_shutdown: <>
+  794 		check_constants: int (), <./mittestcc/test_ccapi_constants.c 5>
+  795 			BEGIN_TEST: <>
+  796 			check_int: <>
+  797 		check_cc_initialize: int (), <./mittestcc/test_ccapi_context.c 7>
+  798 			BEGIN_TEST: <>
+  799 			check_once_cc_initialize: cc_int32 (), <./mittestcc/test_ccapi_context.c 29>
+  800 				BEGIN_CHECK_ONCE: <>
+  801 				cc_initialize: 4
+  802 				check_err: <>
+  803 				check_if: <>
+  804 				cc_context_release: <>
+  805 		check_cc_ccache_remove_credentials: int (), <./mittestcc/test_ccapi_ccache.c 960>
+  806 			BEGIN_TEST: <>
+  807 			log_error: <>
+  808 			cc_initialize: 4
+  809 			destroy_all_ccaches: 44
+  810 			cc_context_create_new_ccache: <>
+  811 			new_v5_creds_union: 97
+  812 			cc_ccache_store_credentials: <>
+  813 			release_v5_creds_union: 433
+  814 			cc_ccache_new_credentials_iterator: <>
+  815 			cc_credentials_iterator_next: <>
+  816 			check_once_cc_ccache_remove_credentials: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1055>
+  817 				BEGIN_CHECK_ONCE: <>
+  818 				cc_ccache_remove_credentials: <>
+  819 				check_err: <>
+  820 				cc_ccache_new_credentials_iterator: <>
+  821 				cc_credentials_iterator_next: <>
+  822 				compare_v5_creds_unions: 487
+  823 				cc_credentials_release: <>
+  824 				check_if: <>
+  825 			cc_ccache_get_name: <>
+  826 			cc_context_open_ccache: <>
+  827 			cc_string_release: <>
+  828 			cc_ccache_destroy: <>
+  829 			cc_credentials_release: <>
+  830 			cc_ccache_release: <>
+  831 			cc_context_release: <>
+  832 		check_cc_ccache_get_kdc_time_offset: int (), <./mittestcc/test_ccapi_ccache.c 1790>
+  833 			BEGIN_TEST: <>
+  834 			log_error: <>
+  835 			cc_initialize: 4
+  836 			destroy_all_ccaches: 44
+  837 			cc_context_create_new_ccache: <>
+  838 			check_once_cc_ccache_get_kdc_time_offset: cc_int32 (), <./mittestcc/test_ccapi_ccache.c 1851>
+  839 				BEGIN_CHECK_ONCE: <>
+  840 				cc_ccache_get_kdc_time_offset: <>
+  841 				check_err: <>
+  842 				check_if: <>
+  843 			cc_ccache_set_kdc_time_offset: <>
+  844 			cc_ccache_release: <>
+  845 			cc_context_release: <>
+  846 		VERIFY_DEPRECATED_I: <>
+  847 		KClientGetVersion: OSStatus (), <./Krb4DeprecatedAPIs.c 831>
+  848 		KPPreferencesFileIsWritable: OSErr (), <./Krb4DeprecatedAPIs.c 155>
+  849 		put_svc_key: int (), <./Krb4DeprecatedAPIs.c 342>
+  850 		krb_get_cred: int (), <./Krb4DeprecatedAPIs.c 419>
+  851 		VERIFY_DEPRECATED_S: <>
+  852 		krb_get_err_text: const char * (), <./Krb4DeprecatedAPIs.c 189>
+  853 		krb_get_lrealm: int (), <./Krb4DeprecatedAPIs.c 465>
+  854 		krb_get_tf_fullname: int (), <./Krb4DeprecatedAPIs.c 413>
+  855 		krb_mk_req: int (), <./Krb4DeprecatedAPIs.c 315>
+  856 		krb_realmofhost: char * (), <./Krb4DeprecatedAPIs.c 480>
+  857 		com_err: <>
+  858 		tkt_string: const char * (), <./Krb4DeprecatedAPIs.c 424>
+  859 		printf: <>
+  860 		errx: <>
+  861 		AcquireTGT: KLStatus (), <./test/test-KLAcquireInitialTickets.c 15>
+  862 			KLCreatePrincipalFromString: KLStatus (), <./kll.c 927>
+  863 				LOG_ENTRY: <>
+  864 				CHECK_VERSION: <>
+  865 				LOG_FAILURE: <>
+  866 				heim_krb5_parse_name: <>
+  867 			KLAcquireInitialTickets: KLStatus (), <./kll.c 242>
+  868 				LOG_ENTRY: <>
+  869 				KLCacheHasValidTickets: KLStatus (), <./kll.c 624>
+  870 					LOG_ENTRY: <>
+  871 					CHECK_VERSION: <>
+  872 					LOG_FAILURE: <>
+  873 					fetch_creds: krb5_error_code (), <./kll.c 575>
+  874 						mshim_ctx: krb5_context (), <./misc.c 150>
+  875 							dispatch_once: <>
+  876 							pthread_key_create: <>
+  877 							destroy_ctx: void (), <./misc.c 144>
+  878 								heim_krb5_free_context: <>
+  879 							abort: <>
+  880 							pthread_getspecific: <>
+  881 							heim_krb5_init_context: <>
+  882 							heim_krb5_init_context_flags: <>
+  883 							syslog: <>
+  884 							pthread_setspecific: <>
+  885 						LOG_ENTRY: <>
+  886 						memset: <>
+  887 						heim_krb5_cc_cache_match: <>
+  888 						heim_krb5_cc_default: <>
+  889 						heim_krb5_cc_get_principal: <>
+  890 						heim_krb5_principal_get_realm: <>
+  891 						heim_krb5_make_principal: <>
+  892 						heim_krb5_get_credentials: <>
+  893 						heim_krb5_free_principal: <>
+  894 						strdup: <>
+  895 						heim_krb5_cc_get_name: <>
+  896 						heim_krb5_cc_close: <>
+  897 						LOG_FAILURE: <>
+  898 					time: <>
+  899 					heim_krb5_copy_principal: <>
+  900 					heim_krb5_free_creds: <>
+  901 				acquireticket_ui: OSStatus (), <./kll.c 141>
+  902 					LOG_ENTRY: <>
+  903 					heim_krb5_unparse_name: <>
+  904 					AuthorizationCreate: <>
+  905 					free: <>
+  906 					strlen: <>
+  907 					CFDictionaryCreateMutable: <>
+  908 					CFStringCreateWithFormat: <>
+  909 					CFSTR: <>
+  910 					CFDictionarySetValue: <>
+  911 					CFRelease: <>
+  912 					CFPropertyListCreateData: <>
+  913 					CFDataGetLength: <>
+  914 					CFDataGetBytePtr: <>
+  915 					AuthorizationCopyRights: <>
+  916 					AuthorizationCopyInfo: <>
+  917 					strcmp: <>
+  918 					asprintf: <>
+  919 					heim_krb5_parse_name: <>
+  920 					AuthorizationFreeItemSet: <>
+  921 					AuthorizationFree: <>
+  922 			KLSetSystemDefaultCache: KLStatus (), <./kll.c 712>
+  923 				mshim_ctx: 874
+  924 				LOG_ENTRY: <>
+  925 				heim_krb5_cc_cache_match: <>
+  926 				LOG_FAILURE: <>
+  927 				heim_krb5_cc_switch: <>
+  928 				heim_krb5_cc_close: <>
+  929 			KLDisposePrincipal: KLStatus (), <./kll.c 1037>
+  930 				LOG_ENTRY: <>
+  931 				heim_krb5_free_principal: <>
+  932 			KLDisposeString: KLStatus (), <./kll.c 1148>
+  933 				free: <>
+  934 		KClientDecrypt: OSStatus (), <./Krb4DeprecatedAPIs.c 981>
+  935 		KClientDisposePrincipal: OSStatus (), <./Krb4DeprecatedAPIs.c 1037>
+  936 		KClientEncrypt: OSStatus (), <./Krb4DeprecatedAPIs.c 974>
+  937 		KClientGetLocalAddress: OSStatus (), <./Krb4DeprecatedAPIs.c 871>
+  938 		KClientGetRemoteAddress: OSStatus (), <./Krb4DeprecatedAPIs.c 881>
+  939 		KClientGetTicketForService: OSStatus (), <./Krb4DeprecatedAPIs.c 936>
+  940 		KClientNewClientSession: OSStatus (), <./Krb4DeprecatedAPIs.c 836>
+  941 		KClientProtectIntegrity: OSStatus (), <./Krb4DeprecatedAPIs.c 988>
+  942 		KClientSetLocalAddress: OSStatus (), <./Krb4DeprecatedAPIs.c 876>
+  943 		KClientSetRemoteAddress: OSStatus (), <./Krb4DeprecatedAPIs.c 886>
+  944 		KClientSetServerPrincipal: OSStatus (), <./Krb4DeprecatedAPIs.c 866>
+  945 		KClientV4StringToPrincipal: OSStatus (), <./Krb4DeprecatedAPIs.c 1021>
+  946 		KClientVerifyIntegrity: OSStatus (), <./Krb4DeprecatedAPIs.c 995>
+  947 		KClientVerifyProtectedServiceReply: OSStatus (), <./Krb4DeprecatedAPIs.c 954>
+  948 		KLCacheHasValidTickets: 869
+  949 		KLGetTripletFromPrincipal: KLStatus (), <./kll.c 961>
+  950 			LOG_ENTRY: <>
+  951 			strdup: <>
+  952 		KLDisposePrincipal: 929
+  953 		KLDisposeString: 932
+  954 		tests_init_and_start: test_collection_t * (), <./test/test_collection.c 131>
+  955 			test_collection_init: test_collection_t * (), <./test/test_collection.c 49>
+  956 				malloc: <>
+  957 				assert: <>
+  958 				bzero: <>
+  959 				tests_set_name: char * (), <./test/test_collection.c 110>
+  960 					assert: <>
+  961 					strnlen: <>
+  962 					calloc: <>
+  963 					strlcpy: <>
+  964 			assert: <>
+  965 			tests_start_timer: time_t (), <./test/test_collection.c 156>
+  966 				assert: <>
+  967 				time: <>
+  968 		tests_set_flags: uint32_t (), <./test/test_collection.c 96>
+  969 			assert: <>
+  970 		tests_set_total_count_hint: size_t (), <./test/test_collection.c 75>
+  971 			assert: <>
+  972 		krb5_get_init_creds_opt_init: void KRB5_CALLCONV (), <./gic.c 41>
+  973 			LOG_ENTRY: <>
+  974 			memset: <>
+  975 		krb5_init_context: mit_krb5_error_code (), <./misc.c 460>
+  976 			LOG_ENTRY: <>
+  977 			heim_krb5_init_context: <>
+  978 		test_evaluate: int (), <./test/test_collection.c 229>
+  979 			assert: <>
+  980 			test_passed: void (), <./test/test_collection.c 260>
+  981 				assert: <>
+  982 				fprintf: <>
+  983 			test_failed: void (), <./test/test_collection.c 269>
+  984 				assert: <>
+  985 				va_start: <>
+  986 				vtest_failed: void (), <./test/test_collection.c 280>
+  987 					assert: <>
+  988 					fprintf: <>
+  989 					vfprintf: <>
+  990 					tests_stop_and_free: int (), <./test/test_collection.c 143>
+  991 						assert: <>
+  992 						tests_stop_timer: time_t (), <./test/test_collection.c 193>
+  993 							assert: <>
+  994 							time: <>
+  995 							fprintf: <>
+  996 							tests_duration: double (), <./test/test_collection.c 215>
+  997 								assert: <>
+  998 								difftime: <>
+  999 						tests_return_value: int (), <./test/test_collection.c 222>
+ 1000 							assert: <>
+ 1001 						test_collection_free: void (), <./test/test_collection.c 64>
+ 1002 							free: <>
+ 1003 					exit: <>
+ 1004 				va_end: <>
+ 1005 		krb5_free_context: void (), <./misc.c 474>
+ 1006 			LOG_ENTRY: <>
+ 1007 			heim_krb5_free_context: <>
+ 1008 			HC: <>
+ 1009 		krb5_init_secure_context: mit_krb5_error_code (), <./misc.c 467>
+ 1010 			LOG_ENTRY: <>
+ 1011 			heim_krb5_init_context: <>
+ 1012 		krb5_parse_name: mit_krb5_error_code KRB5_CALLCONV (), <./principal.c 69>
+ 1013 			krb5_parse_name_flags: mit_krb5_error_code KRB5_CALLCONV (), <./principal.c 75>
+ 1014 				LOG_ENTRY: <>
+ 1015 				calloc: <>
+ 1016 				heim_krb5_parse_name_flags: <>
+ 1017 				free: <>
+ 1018 				map_mit_principal: void (), <./principal.c 40>
+ 1019 					strlen: <>
+ 1020 					calloc: <>
+ 1021 		krb5_unparse_name: mit_krb5_error_code KRB5_CALLCONV (), <./principal.c 139>
+ 1022 			LOG_ENTRY: <>
+ 1023 			heim_krb5_unparse_name: <>
+ 1024 		krb5_cc_default_name: <>
+ 1025 		krb5_build_principal: mit_krb5_error_code KRB5_CALLCONV_C (), <./principal.c 117>
+ 1026 			LOG_ENTRY: <>
+ 1027 			va_start: <>
+ 1028 			calloc: <>
+ 1029 			heim_krb5_build_principal_va: <>
+ 1030 			va_end: <>
+ 1031 			free: <>
+ 1032 			map_mit_principal: 1018
+ 1033 		krb5_cc_resolve: mit_krb5_error_code KRB5_CALLCONV (), <./cache.c 48>
+ 1034 			LOG_ENTRY: <>
+ 1035 			heim_krb5_cc_resolve: <>
+ 1036 			HC: <>
+ 1037 		krb5_cc_close: mit_krb5_error_code KRB5_CALLCONV (), <./cache.c 101>
+ 1038 			heim_krb5_cc_close: <>
+ 1039 			HC: <>
+ 1040 		krb5_cc_initialize: mit_krb5_error_code KRB5_CALLCONV (), <./cache.c 55>
+ 1041 			LOG_ENTRY: <>
+ 1042 			heim_krb5_cc_initialize: <>
+ 1043 			HC: <>
+ 1044 		krb5_cc_get_name: const char *KRB5_CALLCONV (), <./cache.c 108>
+ 1045 			heim_krb5_cc_get_name: <>
+ 1046 			HC: <>
+ 1047 		krb5_cc_get_principal: mit_krb5_error_code KRB5_CALLCONV (), <./cache.c 79>
+ 1048 			LOG_ENTRY: <>
+ 1049 			heim_krb5_cc_get_principal: <>
+ 1050 			HC: <>
+ 1051 			mshim_hprinc2mprinc: mit_krb5_principal (), <./principal.c 59>
+ 1052 				calloc: <>
+ 1053 				heim_krb5_copy_principal: <>
+ 1054 				map_mit_principal: 1018
+ 1055 			heim_krb5_free_principal: <>
+ 1056 			krb5_set_error_message: <>
+ 1057 		krb5_cc_start_seq_get: <>
+ 1058 		krb5_cc_next_cred: mit_krb5_error_code KRB5_CALLCONV (), <./cache.c 211>
+ 1059 			LOG_ENTRY: <>
+ 1060 			heim_krb5_cc_next_cred: <>
+ 1061 			HC: <>
+ 1062 			mshim_hcred2mcred: void (), <./misc.c 314>
+ 1063 				memset: <>
+ 1064 				mshim_hprinc2mprinc: 1051
+ 1065 				mshim_hkeyblock2mkeyblock: void (), <./misc.c 213>
+ 1066 					mshim_malloc: void * (), <./misc.c 181>
+ 1067 						malloc: <>
+ 1068 						syslog: <>
+ 1069 						abort: <>
+ 1070 						memset: <>
+ 1071 					memcpy: <>
+ 1072 				mshim_hdata2mdata: krb5_error_code (), <./misc.c 193>
+ 1073 					mshim_malloc: 1066
+ 1074 					memcpy: <>
+ 1075 			heim_krb5_free_cred_contents: <>
+ 1076 		krb5_cc_store_cred: mit_krb5_error_code KRB5_CALLCONV (), <./cache.c 65>
+ 1077 			LOG_ENTRY: <>
+ 1078 			mshim_mcred2hcred: void (), <./misc.c 259>
+ 1079 				memset: <>
+ 1080 				heim_krb5_copy_principal: <>
+ 1081 				heim_krb5_data_copy: <>
+ 1082 			HC: <>
+ 1083 			heim_krb5_cc_store_cred: <>
+ 1084 			heim_krb5_free_cred_contents: <>
+ 1085 		krb5_free_cred_contents: void KRB5_CALLCONV (), <./misc.c 554>
+ 1086 			LOG_ENTRY: <>
+ 1087 			krb5_free_principal: void KRB5_CALLCONV (), <./principal.c 165>
+ 1088 				LOG_ENTRY: <>
+ 1089 				heim_krb5_free_principal: <>
+ 1090 				HC: <>
+ 1091 				free: <>
+ 1092 			krb5_free_keyblock_contents: void KRB5_CALLCONV (), <./misc.c 516>
+ 1093 				LOG_ENTRY: <>
+ 1094 				memset: <>
+ 1095 				free: <>
+ 1096 			krb5_free_data_contents: void KRB5_CALLCONV (), <./misc.c 533>
+ 1097 				LOG_ENTRY: <>
+ 1098 				free: <>
+ 1099 				memset: <>
+ 1100 			memset: <>
+ 1101 		krb5_cc_end_seq_get: mit_krb5_error_code KRB5_CALLCONV (), <./cache.c 232>
+ 1102 			LOG_ENTRY: <>
+ 1103 			heim_krb5_cc_end_seq_get: <>
+ 1104 			HC: <>
+ 1105 		krb5_cc_destroy: <>
+ 1106 		malloc: <>
+ 1107 		krb5_free_addresses: void KRB5_CALLCONV (), <./misc.c 678>
+ 1108 			free: <>
+ 1109 			memset: <>
+ 1110 		calloc: <>
+ 1111 		krb5_free_authdata: void KRB5_CALLCONV (), <./misc.c 607>
+ 1112 			free: <>
+ 1113 		krb5_free_principal: 1087
+ 1114 		strcmp: <>
+ 1115 		error_message: const char * (), <./misc.c 481>
+ 1116 			dispatch_once: <>
+ 1117 			initialize_asn1_error_table_r: <>
+ 1118 			initialize_gk5_error_table_r: <>
+ 1119 			initialize_wind_error_table_r: <>
+ 1120 			initialize_krb5_error_table_r: <>
+ 1121 			initialize_krb_error_table_r: <>
+ 1122 			initialize_k524_error_table_r: <>
+ 1123 			initialize_heim_error_table_r: <>
+ 1124 			initialize_hx_error_table_r: <>
+ 1125 			heim_com_right_r: <>
+ 1126 			snprintf: <>
+ 1127 		tests_stop_and_free: 990
+ 1128 		krb5_realm_compare: mit_krb5_boolean KRB5_CALLCONV (), <./principal.c 217>
+ 1129 			heim_krb5_realm_compare: <>
+ 1130 			HC: <>
+ 1131 		krb5_principal_compare: mit_krb5_boolean KRB5_CALLCONV (), <./principal.c 206>
+ 1132 			heim_krb5_principal_compare: <>
+ 1133 			HC: <>
+ 1134 		krb5_kt_default: <>
+ 1135 		krb5_kt_start_seq_get: mit_krb5_error_code KRB5_CALLCONV (), <./keytab.c 39>
+ 1136 			LOG_ENTRY: <>
+ 1137 			calloc: <>
+ 1138 			heim_krb5_kt_start_seq_get: <>
+ 1139 			HC: <>
+ 1140 			free: <>
+ 1141 		krb5_kt_next_entry: mit_krb5_error_code KRB5_CALLCONV (), <./keytab.c 57>
+ 1142 			LOG_ENTRY: <>
+ 1143 			heim_krb5_kt_next_entry: <>
+ 1144 			HC: <>
+ 1145 			mshim_hprinc2mprinc: 1051
+ 1146 			mshim_hkeyblock2mkeyblock: 1065
+ 1147 			heim_krb5_kt_free_entry: <>
+ 1148 		krb5_princ_name: <>
+ 1149 		strncmp: <>
+ 1150 		krb5_free_keytab_entry_contents: mit_krb5_error_code KRB5_CALLCONV (), <./keytab.c 82>
+ 1151 			LOG_ENTRY: <>
+ 1152 			krb5_free_principal: 1087
+ 1153 			memset: <>
+ 1154 			free: <>
+ 1155 		krb5_kt_end_seq_get: mit_krb5_error_code KRB5_CALLCONV (), <./keytab.c 99>
+ 1156 			LOG_ENTRY: <>
+ 1157 			heim_krb5_kt_end_seq_get: <>
+ 1158 			HC: <>
+ 1159 			free: <>
+ 1160 		krb5_kt_close: <>
+ 1161 		strdup: <>
+ 1162 		KLCreatePrincipalFromString: 862
+ 1163 		KLAcquireNewInitialTicketsWithPassword: KLStatus (), <./kll.c 326>
+ 1164 			mshim_ctx: 874
+ 1165 			LOG_ENTRY: <>
+ 1166 			heim_krb5_get_init_creds_password: <>
+ 1167 			heim_krb5_cc_cache_match: <>
+ 1168 			heim_krb5_cc_new_unique: <>
+ 1169 			heim_krb5_cc_initialize: <>
+ 1170 			heim_krb5_cc_store_cred: <>
+ 1171 			strdup: <>
+ 1172 			heim_krb5_cc_get_name: <>
+ 1173 			krb5_cc_destroy: <>
+ 1174 			heim_krb5_cc_close: <>
+ 1175 			heim_krb5_free_cred_contents: <>
+ 1176 		KLAcquireNewInitialTickets: KLStatus (), <./kll.c 265>
+ 1177 			LOG_ENTRY: <>
+ 1178 			acquireticket_ui: 901
+ 1179 		KLDestroyTickets: KLStatus (), <./kll.c 277>
+ 1180 			mshim_ctx: 874
+ 1181 			heim_krb5_cc_cache_match: <>
+ 1182 			krb5_cc_destroy: <>
+ 1183 		KLCreateLoginOptions: KLStatus (), <./kll.c 1050>
+ 1184 			LOG_ENTRY: <>
+ 1185 			calloc: <>
+ 1186 			heim_krb5_get_init_creds_opt_alloc: <>
+ 1187 			free: <>
+ 1188 		KLLoginOptionsSetRenewableLifetime: KLStatus (), <./kll.c 1098>
+ 1189 			LOG_ENTRY: <>
+ 1190 			heim_krb5_get_init_creds_opt_set_renew_life: <>
+ 1191 		KLDisposeLoginOptions: KLStatus (), <./kll.c 1137>
+ 1192 			LOG_ENTRY: <>
+ 1193 			heim_krb5_get_init_creds_opt_free: <>
+ 1194 			free: <>
+ 1195 		KLRenewInitialTickets: KLStatus (), <./kll.c 437>
+ 1196 			mshim_ctx: 874
+ 1197 			memset: <>
+ 1198 			LOG_ENTRY: <>
+ 1199 			heim_krb5_get_default_principal: <>
+ 1200 			heim_krb5_cc_cache_match: <>
+ 1201 			heim_krb5_free_principal: <>
+ 1202 			heim_krb5_principal_get_realm: <>
+ 1203 			heim_krb5_make_principal: <>
+ 1204 			heim_krb5_cc_close: <>
+ 1205 			heim_krb5_get_credentials: <>
+ 1206 			heim_krb5_free_creds: <>
+ 1207 			heim_krb5_get_kdc_cred: <>
+ 1208 			heim_krb5_cc_initialize: <>
+ 1209 			heim_krb5_cc_store_cred: <>
+ 1210 		KLGetDisplayStringFromPrincipal: KLStatus (), <./kll.c 1010>
+ 1211 			LOG_ENTRY: <>
+ 1212 			CHECK_VERSION: <>
+ 1213 			LOG_FAILURE: <>
+ 1214 			heim_krb5_unparse_name: <>
+ 1215 		free: <>
+ 1216 		KLGetStringFromPrincipal: KLStatus (), <./kll.c 996>
+ 1217 			LOG_ENTRY: <>
+ 1218 			CHECK_VERSION: <>
+ 1219 			LOG_FAILURE: <>
+ 1220 			heim_krb5_unparse_name: <>
+ 1221 		KLCancelAllDialogs: KLStatus (), <./kll.c 758>
+ 1222 		memset: <>
+ 1223 		krb5_get_init_creds_password: mit_krb5_error_code KRB5_CALLCONV (), <./gic.c 173>
+ 1224 			LOG_ENTRY: <>
+ 1225 			mshim_gic_opt: krb5_get_init_creds_opt * (), <./gic.c 152>
+ 1226 				heim_krb5_get_init_creds_opt_alloc: <>
+ 1227 				heim_krb5_get_init_creds_opt_set_forwardable: <>
+ 1228 				heim_krb5_get_init_creds_opt_set_proxiable: <>
+ 1229 				heim_krb5_get_init_creds_opt_set_canonicalize: <>
+ 1230 				HC: <>
+ 1231 				heim_krb5_get_init_creds_opt_set_tkt_life: <>
+ 1232 				heim_krb5_get_init_creds_opt_set_renew_life: <>
+ 1233 			HC: <>
+ 1234 			memset: <>
+ 1235 			krb5_prompter_posix: mit_krb5_error_code KRB5_CALLCONV (), <./misc.c 744>
+ 1236 			heim_krb5_get_init_creds_opt_free: <>
+ 1237 			heim_krb5_get_init_creds_password: <>
+ 1238 			mshim_hcred2mcred: 1062
+ 1239 			heim_krb5_free_cred_contents: <>
+ 1240 		krb5_prompter_posix: 1235
+ 1241 		krb5_set_password: mit_krb5_error_code KRB5_CALLCONV (), <./password.c 89>
+ 1242 			LOG_ENTRY: <>
+ 1243 			memset: <>
+ 1244 			mshim_mcred2hcred: 1078
+ 1245 			HC: <>
+ 1246 			heim_krb5_set_password: <>
+ 1247 			heim_krb5_free_cred_contents: <>
+ 1248 			LOG_FAILURE: <>
+ 1249 			mshim_hdata2mdata: 1072
+ 1250 			heim_krb5_data_free: <>
+ 1251 		KLAcquireInitialTickets: 867
+ 1252 		KLGetIdleCallback: KLStatus (), <./kll.c 787>
+ 1253 		KLSetIdleCallback: KLStatus (), <./kll.c 780>
+ 1254 		gss_oid_to_str: <>
+ 1255 		strtol: <>
+ 1256 		Connect: int (), <./test/test-gss-client.c 37>
+ 1257 			gethostbyname: <>
+ 1258 			memcpy: <>
+ 1259 			htons: <>
+ 1260 			socket: <>
+ 1261 			connect: <>
+ 1262 			printf: <>
+ 1263 			printError: void (), <./test/test-gss-common.c 314>
+ 1264 				fprintf: <>
+ 1265 				error_message: 1115
+ 1266 			close: <>
+ 1267 		Authenticate: int (), <./test/test-gss-client.c 78>
+ 1268 			malloc: <>
+ 1269 			gss_indicate_mechs: <>
+ 1270 			printGSSErrors: void (), <./test/test-gss-common.c 322>
+ 1271 				fprintf: <>
+ 1272 				gss_display_status: <>
+ 1273 				gss_release_buffer: <>
+ 1274 			gss_release_oid_set: <>
+ 1275 			gss_krb5_ccache_name: <>
+ 1276 			strlen: <>
+ 1277 			gss_import_name: OM_uint32 (), <./gss-glue.c 125>
+ 1278 				LOG_ENTRY: <>
+ 1279 				gss_oid_equal: <>
+ 1280 				heim_gss_import_name: <>
+ 1281 			gss_acquire_cred: <>
+ 1282 			gss_inquire_cred: <>
+ 1283 			printf: <>
+ 1284 			gss_init_sec_context: <>
+ 1285 			WriteToken: int (), <./test/test-gss-common.c 163>
+ 1286 				htonl: <>
+ 1287 				WriteBuffer: int (), <./test/test-gss-common.c 94>
+ 1288 					write: <>
+ 1289 					printError: 1263
+ 1290 				printf: <>
+ 1291 				PrintBuffer: void (), <./test/test-gss-common.c 36>
+ 1292 					printf: <>
+ 1293 				printError: 1263
+ 1294 			gss_release_buffer: <>
+ 1295 			free: <>
+ 1296 			ReadToken: int (), <./test/test-gss-common.c 123>
+ 1297 				ReadBuffer: int (), <./test/test-gss-common.c 63>
+ 1298 					read: <>
+ 1299 					printError: 1263
+ 1300 				ntohl: <>
+ 1301 				malloc: <>
+ 1302 				memset: <>
+ 1303 				printf: <>
+ 1304 				PrintBuffer: 1291
+ 1305 				printError: 1263
+ 1306 				free: <>
+ 1307 			exit: <>
+ 1308 			gss_compare_name: <>
+ 1309 			printError: 1263
+ 1310 			gss_release_name: <>
+ 1311 		ReadEncryptedToken: int (), <./test/test-gss-common.c 192>
+ 1312 			ReadToken: 1296
+ 1313 			gss_unwrap: <>
+ 1314 			printGSSErrors: 1270
+ 1315 			fprintf: <>
+ 1316 			gss_verify_mic: <>
+ 1317 			malloc: <>
+ 1318 			memcpy: <>
+ 1319 			printf: <>
+ 1320 			PrintBuffer: 1291
+ 1321 			printError: 1263
+ 1322 			free: <>
+ 1323 			gss_release_buffer: <>
+ 1324 		Usage: void (), <./test/test-gss-client.c 299>
+ 1325 			fprintf: <>
+ 1326 			exit: <>
+ 1327 		printError: 1263
+ 1328 		gss_export_sec_context: <>
+ 1329 		gss_import_sec_context: <>
+ 1330 		gss_release_cred: <>
+ 1331 		close: <>
+ 1332 		SetupListeningSocket: int (), <./test/test-gss-server.c 37>
+ 1333 			socket: <>
+ 1334 			htons: <>
+ 1335 			bind: <>
+ 1336 			listen: <>
+ 1337 			printf: <>
+ 1338 			printError: 1263
+ 1339 			close: <>
+ 1340 		accept: <>
+ 1341 		Authenticate: int (), <./test/test-gss-server.c 80>
+ 1342 			free: <>
+ 1343 			ReadToken: 1296
+ 1344 			printf: <>
+ 1345 			gss_accept_sec_context: <>
+ 1346 			WriteToken: 1285
+ 1347 			gss_release_buffer: <>
+ 1348 			printGSSErrors: 1270
+ 1349 			printError: 1263
+ 1350 		Authorize: int (), <./test/test-gss-server.c 242>
+ 1351 			gss_inquire_context: <>
+ 1352 			gss_display_name: <>
+ 1353 			malloc: <>
+ 1354 			memcpy: <>
+ 1355 			gss_release_buffer: <>
+ 1356 			ServicePrincipalIsValidForService: int (), <./test/test-gss-server.c 171>
+ 1357 				krb5_init_context: 975
+ 1358 				krb5_parse_name: 1012
+ 1359 				strcmp: <>
+ 1360 				krb5_princ_name: <>
+ 1361 				krb5_free_principal: 1087
+ 1362 				krb5_free_context: 1005
+ 1363 			ClientPrincipalIsAuthorizedForService: int (), <./test/test-gss-server.c 207>
+ 1364 				krb5_init_context: 975
+ 1365 				krb5_parse_name: 1012
+ 1366 				krb5_free_principal: 1087
+ 1367 				krb5_free_context: 1005
+ 1368 			printf: <>
+ 1369 			free: <>
+ 1370 		snprintf: <>
+ 1371 		WriteEncryptedToken: int (), <./test/test-gss-common.c 262>
+ 1372 			gss_wrap_size_limit: <>
+ 1373 			gss_wrap: <>
+ 1374 			printGSSErrors: 1270
+ 1375 			fprintf: <>
+ 1376 			printf: <>
+ 1377 			PrintBuffer: 1291
+ 1378 			gss_get_mic: <>
+ 1379 			WriteToken: 1285
+ 1380 			printError: 1263
+ 1381 			gss_release_buffer: <>
+ 1382 		Usage: void (), <./test/test-gss-server.c 324>
+ 1383 			fprintf: <>
+ 1384 			exit: <>
+ 1385 		gss_delete_sec_context: <>
+ 1386 		gss_release_buffer: <>

@@ -1,0 +1,1938 @@
+    1 	LI_get_thread_item: si_item_t * (), <./lookup.subproj/thread_data.c 166>
+    2 		LI_get_thread_info: li_thread_data_t * (), <./lookup.subproj/thread_data.c 116>
+    3 			malloc: <>
+    4 			reallocf: <>
+    5 			free: <>
+    6 			calloc: <>
+    7 	LI_get_thread_list: si_list_t * (), <./lookup.subproj/thread_data.c 177>
+    8 		LI_get_thread_info: 2
+    9 	LI_ils_create: void * (), <./lookup.subproj/ils.c 87>
+   10 		va_start: <>
+   11 		padsize: uint32_t (), <./lookup.subproj/ils.c 48>
+   12 		va_arg: <>
+   13 		strlen: <>
+   14 		va_end: <>
+   15 		malloc: <>
+   16 		memcpy: <>
+   17 		memset: <>
+   18 	LI_set_thread_item: void (), <./lookup.subproj/thread_data.c 188>
+   19 		LI_get_thread_info: 2
+   20 		si_item_release: void (), <./lookup.subproj/si_data.c 174>
+   21 			OSAtomicDecrement32Barrier: <>
+   22 			assert: <>
+   23 			free: <>
+   24 	LI_set_thread_list: void (), <./lookup.subproj/thread_data.c 200>
+   25 		LI_get_thread_info: 2
+   26 		si_list_release: void (), <./lookup.subproj/si_data.c 139>
+   27 			OSAtomicDecrement32Barrier: <>
+   28 			assert: <>
+   29 			si_item_release: 20
+   30 			free: <>
+   31 		si_list_reset: void (), <./lookup.subproj/si_data.c 120>
+   32 	alias_endent: void (), <./lookup.subproj/libinfo.c 922>
+   33 		fprintf: <>
+   34 		LI_set_thread_list: 24
+   35 	alias_getbyname_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 859>
+   36 		fprintf: <>
+   37 		calloc: <>
+   38 		si_async_call: mach_port_t (), <./lookup.subproj/si_module.c 1086>
+   39 			sim_async_call: <>
+   40 			si_async_workunit_create: si_async_workunit_t * (), <./lookup.subproj/si_module.c 888>
+   41 				si_call_str1_is_buffer: <>
+   42 				calloc: <>
+   43 				memcpy: <>
+   44 				strdup: <>
+   45 				free: <>
+   46 				mach_port_allocate: <>
+   47 				mach_task_self: <>
+   48 				mach_port_extract_right: <>
+   49 				mach_port_mod_refs: <>
+   50 				si_call_returns_list: <>
+   51 				si_async_worklist_add_unit: void (), <./lookup.subproj/si_module.c 849>
+   52 					pthread_mutex_lock: <>
+   53 					pthread_mutex_unlock: <>
+   54 			fprintf: <>
+   55 			dispatch_async: <>
+   56 			dispatch_get_global_queue: <>
+   57 			si_async_launchpad: void (), <./lookup.subproj/si_module.c 1015>
+   58 				fprintf: <>
+   59 				si_async_workunit_release: void (), <./lookup.subproj/si_module.c 986>
+   60 					OSAtomicDecrement32Barrier: <>
+   61 					fprintf: <>
+   62 					si_async_worklist_remove_unit: void (), <./lookup.subproj/si_module.c 858>
+   63 						pthread_mutex_lock: <>
+   64 						pthread_mutex_unlock: <>
+   65 					si_item_release: 20
+   66 					si_list_release: 26
+   67 					free: <>
+   68 					mach_port_deallocate: <>
+   69 					mach_task_self: <>
+   70 					mach_port_mod_refs: <>
+   71 				si_list_call: si_list_t * (), <./lookup.subproj/si_module.c 825>
+   72 					si_user_all: si_list_t * (), <./lookup.subproj/si_module.c 533>
+   73 						sim_user_all: <>
+   74 					si_group_all: si_list_t * (), <./lookup.subproj/si_module.c 565>
+   75 						sim_group_all: <>
+   76 					si_alias_all: si_list_t * (), <./lookup.subproj/si_module.c 605>
+   77 						sim_alias_all: <>
+   78 					si_host_all: si_list_t * (), <./lookup.subproj/si_module.c 629>
+   79 						sim_host_all: <>
+   80 					si_network_all: si_list_t * (), <./lookup.subproj/si_module.c 677>
+   81 						sim_network_all: <>
+   82 					si_service_all: si_list_t * (), <./lookup.subproj/si_module.c 701>
+   83 						sim_service_all: <>
+   84 					si_protocol_all: si_list_t * (), <./lookup.subproj/si_module.c 725>
+   85 						sim_protocol_all: <>
+   86 					si_rpc_all: si_list_t * (), <./lookup.subproj/si_module.c 749>
+   87 						sim_rpc_all: <>
+   88 					si_fs_all: si_list_t * (), <./lookup.subproj/si_module.c 773>
+   89 						sim_fs_all: <>
+   90 					si_mac_all: si_list_t * (), <./lookup.subproj/si_module.c 653>
+   91 						sim_mac_all: <>
+   92 					si_addrinfo: si_list_t * (), <./lookup.subproj/si_getaddrinfo.c 1011>
+   93 						memset: <>
+   94 						strcmp: if (), <./nis.subproj/ypmatch_cache.c 129>
+   95 						si_addrinfo_list: si_list_t * (), <./lookup.subproj/si_getaddrinfo.c 519>
+   96 							si_addrinfo_v6: si_item_t * (), <./lookup.subproj/si_getaddrinfo.c 484>
+   97 								memset: <>
+   98 								htons: uint16_t (), <./util.subproj/hton.c 43>
+   99 									OSSwapHostToBigInt16: <>
+  100 								memcpy: <>
+  101 								IN6_IS_ADDR_LINKLOCAL: <>
+  102 								ntohs: uint16_t (), <./util.subproj/hton.c 38>
+  103 									OSSwapBigToHostInt16: <>
+  104 								LI_ils_create: 9
+  105 							si_list_add: si_list_t * (), <./lookup.subproj/si_data.c 32>
+  106 								calloc: <>
+  107 								reallocf: <>
+  108 								si_item_retain: si_item_t * (), <./lookup.subproj/si_data.c 161>
+  109 									OSAtomicIncrement32Barrier: <>
+  110 									assert: <>
+  111 								free: <>
+  112 							si_item_release: 20
+  113 							si_addrinfo_v4: si_item_t * (), <./lookup.subproj/si_getaddrinfo.c 433>
+  114 								memset: <>
+  115 								htons: 98
+  116 								memcpy: <>
+  117 								memmove: <>
+  118 								LI_ils_create: 9
+  119 							si_addrinfo_v4_mapped: si_item_t * (), <./lookup.subproj/si_getaddrinfo.c 458>
+  120 								memset: <>
+  121 								htons: 98
+  122 								memcpy: <>
+  123 								LI_ils_create: 9
+  124 							si_list_concat: si_list_t * (), <./lookup.subproj/si_data.c 66>
+  125 								calloc: <>
+  126 								reallocf: <>
+  127 								si_item_retain: 108
+  128 							si_list_release: 26
+  129 						si_wants_addrinfo: int (), <./lookup.subproj/si_getaddrinfo.c 920>
+  130 							sim_addrinfo: <>
+  131 							sim_wants_addrinfo: <>
+  132 						sim_addrinfo: <>
+  133 				si_item_call: si_item_t * (), <./lookup.subproj/si_module.c 781>
+  134 					si_user_byname: si_item_t * (), <./lookup.subproj/si_module.c 509>
+  135 						sim_user_byname: <>
+  136 					si_user_byuid: si_item_t * (), <./lookup.subproj/si_module.c 517>
+  137 						sim_user_byuid: <>
+  138 					si_group_byname: si_item_t * (), <./lookup.subproj/si_module.c 541>
+  139 						sim_group_byname: <>
+  140 					si_group_bygid: si_item_t * (), <./lookup.subproj/si_module.c 549>
+  141 						sim_group_bygid: <>
+  142 					si_grouplist: si_item_t * (), <./lookup.subproj/si_module.c 573>
+  143 						sim_grouplist: <>
+  144 					si_alias_byname: si_item_t * (), <./lookup.subproj/si_module.c 597>
+  145 						sim_alias_byname: <>
+  146 					si_host_byname: si_item_t * (), <./lookup.subproj/si_module.c 613>
+  147 						sim_host_byname: <>
+  148 					si_host_byaddr: si_item_t * (), <./lookup.subproj/si_module.c 621>
+  149 						sim_host_byaddr: <>
+  150 					si_network_byname: si_item_t * (), <./lookup.subproj/si_module.c 661>
+  151 						sim_network_byname: <>
+  152 					si_network_byaddr: si_item_t * (), <./lookup.subproj/si_module.c 669>
+  153 						sim_network_byaddr: <>
+  154 					si_service_byname: si_item_t * (), <./lookup.subproj/si_module.c 685>
+  155 						sim_service_byname: <>
+  156 					si_service_byport: si_item_t * (), <./lookup.subproj/si_module.c 693>
+  157 						sim_service_byport: <>
+  158 					si_protocol_byname: si_item_t * (), <./lookup.subproj/si_module.c 709>
+  159 						sim_protocol_byname: <>
+  160 					si_protocol_bynumber: si_item_t * (), <./lookup.subproj/si_module.c 717>
+  161 						sim_protocol_bynumber: <>
+  162 					si_rpc_bynumber: si_item_t * (), <./lookup.subproj/si_module.c 741>
+  163 						sim_rpc_bynumber: <>
+  164 					si_fs_byspec: si_item_t * (), <./lookup.subproj/si_module.c 757>
+  165 						sim_fs_byspec: <>
+  166 					si_fs_byfile: si_item_t * (), <./lookup.subproj/si_module.c 765>
+  167 						sim_fs_byfile: <>
+  168 					si_nameinfo: si_item_t * (), <./lookup.subproj/si_getaddrinfo.c 187>
+  169 						memcpy: <>
+  170 						IN6_IS_ADDR_LINKLOCAL: <>
+  171 						IN6_IS_ADDR_MC_NODELOCAL: <>
+  172 						IN6_IS_ADDR_MC_LINKLOCAL: <>
+  173 						ntohs: 102
+  174 						htons: 98
+  175 						IN6_IS_ADDR_V4MAPPED: if (), <./util.subproj/rcmd.c 767>
+  176 						IN6_IS_ADDR_V4COMPAT: <>
+  177 						memset: <>
+  178 						si_host_byaddr: 148
+  179 						strdup: <>
+  180 						si_item_release: 20
+  181 						si_service_byport: 156
+  182 						free: <>
+  183 						inet_ntop: <>
+  184 						if_indextoname: char * (), <./gen.subproj/if_indextoname.c 59>
+  185 							getifaddrs: int (), <./gen.subproj/getifaddrs.c 90>
+  186 								index: <>
+  187 								sysctl: <>
+  188 								malloc: <>
+  189 								free: <>
+  190 								SA_RLEN: <>
+  191 								abort: if (, <./nis.subproj/yp_bind.c 173>
+  192 								SA_LEN: <>
+  193 								socket: (), <./rpc.subproj/pmap_rmt.c 132>
+  194 								ioctl: <>
+  195 								close: <>
+  196 								memset: <>
+  197 								memcpy: <>
+  198 								ALIGN: <>
+  199 								strncpy: <>
+  200 								IN6_IS_ADDR_LINKLOCAL: <>
+  201 								IN6_IS_ADDR_SITELOCAL: <>
+  202 								ntohs: 102
+  203 							strncpy: <>
+  204 							freeifaddrs: void (), <./gen.subproj/getifaddrs.c 428>
+  205 								free: <>
+  206 						asprintf: <>
+  207 						LI_ils_create: 9
+  208 					si_ipnode_byname: si_item_t * (), <./lookup.subproj/si_getaddrinfo.c 1426>
+  209 						memset: <>
+  210 						inet_aton: <>
+  211 						make_hostent: si_item_t * (), <./lookup.subproj/si_getaddrinfo.c 1283>
+  212 							LI_ils_create: 9
+  213 						inet_pton: <>
+  214 						make_hostent6: si_item_t * (), <./lookup.subproj/si_getaddrinfo.c 1301>
+  215 							LI_ils_create: 9
+  216 						htonl: uint32_t (), <./util.subproj/hton.c 33>
+  217 							OSSwapHostToBigInt32: <>
+  218 						memmove: <>
+  219 						si_inet_config: __private_extern__ int (), <./lookup.subproj/si_getaddrinfo.c 75>
+  220 							pthread_mutex_lock: <>
+  221 							notify_register_check: <>
+  222 							notify_check: <>
+  223 							getifaddrs: 185
+  224 							freeifaddrs: 204
+  225 							pthread_mutex_unlock: <>
+  226 						si_host_byname: 146
+  227 						si_item_release: 20
+  228 						calloc: <>
+  229 						lower_case: char * (), <./lookup.subproj/si_getaddrinfo.c 1319>
+  230 							malloc: <>
+  231 							strlen: <>
+  232 						merge_alias: int (), <./lookup.subproj/si_getaddrinfo.c 1340>
+  233 							string_equal: <>
+  234 							calloc: <>
+  235 							reallocf: <>
+  236 							lower_case: 229
+  237 						append_addr: int (), <./lookup.subproj/si_getaddrinfo.c 1371>
+  238 							calloc: <>
+  239 							reallocf: <>
+  240 							malloc: <>
+  241 							memcpy: <>
+  242 						LI_ils_create: 9
+  243 						free_build_hostent: void (), <./lookup.subproj/si_getaddrinfo.c 1396>
+  244 							free: <>
+  245 					si_mac_byname: si_item_t * (), <./lookup.subproj/si_module.c 637>
+  246 						sim_mac_byname: <>
+  247 					si_mac_bymac: si_item_t * (), <./lookup.subproj/si_module.c 645>
+  248 						sim_mac_bymac: <>
+  249 					sim_item_call: <>
+  250 				OSAtomicTestAndSetBarrier: <>
+  251 				memset: <>
+  252 				MACH_MSGH_BITS: <>
+  253 				mach_msg: <>
+  254 				mach_msg_destroy: <>
+  255 		si_search: si_mod_t * (), <./lookup.subproj/libinfo.c 79>
+  256 			si_module_with_name: si_mod_t * (), <./lookup.subproj/si_module.c 170>
+  257 				si_module_static_search: si_mod_t * (), <./lookup.subproj/search_module.c 865>
+  258 					sim_close: <>
+  259 					search_close: void (), <./lookup.subproj/search_module.c 144>
+  260 						free: <>
+  261 					sim_is_valid: <>
+  262 					search_is_valid: int (), <./lookup.subproj/search_module.c 848>
+  263 						string_not_equal: <>
+  264 					sim_user_byname: <>
+  265 					search_user_byname: si_item_t * (), <./lookup.subproj/search_module.c 303>
+  266 						search_item_byname: si_item_t * (), <./lookup.subproj/search_module.c 169>
+  267 							search_get_module: si_mod_t * (), <./lookup.subproj/search_module.c 68>
+  268 							si_cache_add_item: void (), <./lookup.subproj/cache_module.c 497>
+  269 								string_equal: <>
+  270 								pthread_mutex_lock: <>
+  271 								si_item_release: 20
+  272 								si_item_retain: 108
+  273 								pthread_mutex_unlock: <>
+  274 							search_cat_cache: si_mod_t * (), <./lookup.subproj/search_module.c 125>
+  275 						si_user_byname: 134
+  276 					sim_user_byuid: <>
+  277 					search_user_byuid: si_item_t * (), <./lookup.subproj/search_module.c 309>
+  278 						search_item_bynumber: si_item_t * (), <./lookup.subproj/search_module.c 198>
+  279 							search_get_module: 267
+  280 							si_cache_add_item: 268
+  281 							search_cat_cache: 274
+  282 						si_user_byuid: 136
+  283 					sim_user_byuuid: <>
+  284 					search_user_byuuid: si_item_t * (), <./lookup.subproj/search_module.c 315>
+  285 						search_item_byuuid: si_item_t * (), <./lookup.subproj/search_module.c 227>
+  286 							search_get_module: 267
+  287 						si_user_byuuid: si_item_t * (), <./lookup.subproj/si_module.c 525>
+  288 							sim_user_byuuid: <>
+  289 					sim_user_all: <>
+  290 					search_user_all: si_list_t * (), <./lookup.subproj/search_module.c 321>
+  291 						search_list: si_list_t * (), <./lookup.subproj/search_module.c 258>
+  292 							search_cat_cache: 274
+  293 							search_get_module: 267
+  294 							si_list_concat: 124
+  295 							si_list_release: 26
+  296 							si_cache_add_list: void (), <./lookup.subproj/cache_module.c 532>
+  297 								string_equal: <>
+  298 								pthread_mutex_lock: <>
+  299 								si_list_release: 26
+  300 								si_list_retain: si_list_t * (), <./lookup.subproj/si_data.c 126>
+  301 									OSAtomicIncrement32Barrier: <>
+  302 									assert: <>
+  303 								pthread_mutex_unlock: <>
+  304 						si_user_all: 72
+  305 					sim_group_byname: <>
+  306 					search_group_byname: si_item_t * (), <./lookup.subproj/search_module.c 327>
+  307 						search_item_byname: 266
+  308 						si_group_byname: 138
+  309 					sim_group_bygid: <>
+  310 					search_group_bygid: si_item_t * (), <./lookup.subproj/search_module.c 333>
+  311 						search_item_bynumber: 278
+  312 						si_group_bygid: 140
+  313 					sim_group_byuuid: <>
+  314 					search_group_byuuid: si_item_t * (), <./lookup.subproj/search_module.c 339>
+  315 						search_item_byuuid: 285
+  316 						si_group_byuuid: si_item_t * (), <./lookup.subproj/si_module.c 557>
+  317 							sim_group_byuuid: <>
+  318 					sim_group_all: <>
+  319 					search_group_all: si_list_t * (), <./lookup.subproj/search_module.c 345>
+  320 						search_list: 291
+  321 						si_group_all: 74
+  322 					sim_grouplist: <>
+  323 					search_groupist: si_item_t * (), <./lookup.subproj/search_module.c 351>
+  324 						search_get_module: 267
+  325 						sim_grouplist: <>
+  326 					sim_netgroup_byname: <>
+  327 					search_netgroup_byname: si_list_t * (), <./lookup.subproj/search_module.c 378>
+  328 						search_cat_cache: 274
+  329 						si_netgroup_byname: si_list_t * (), <./lookup.subproj/si_module.c 581>
+  330 							sim_netgroup_byname: <>
+  331 						search_get_module: 267
+  332 						si_list_concat: 124
+  333 						si_list_release: 26
+  334 						si_cache_add_list: 296
+  335 					sim_in_netgroup: <>
+  336 					search_in_netgroup: int (), <./lookup.subproj/search_module.c 423>
+  337 						search_get_module: 267
+  338 						si_in_netgroup: int (), <./lookup.subproj/si_module.c 589>
+  339 							sim_in_netgroup: <>
+  340 					sim_alias_byname: <>
+  341 					search_alias_byname: si_item_t * (), <./lookup.subproj/search_module.c 447>
+  342 						search_item_byname: 266
+  343 						si_alias_byname: 144
+  344 					sim_alias_all: <>
+  345 					search_alias_all: si_list_t * (), <./lookup.subproj/search_module.c 453>
+  346 						search_list: 291
+  347 						si_alias_all: 76
+  348 					sim_host_byname: <>
+  349 					search_host_byname: si_item_t * (), <./lookup.subproj/search_module.c 459>
+  350 						search_get_module: 267
+  351 						si_host_byname: 146
+  352 						si_cache_add_item: 268
+  353 						search_cat_cache: 274
+  354 					sim_host_byaddr: <>
+  355 					search_host_byaddr: si_item_t * (), <./lookup.subproj/search_module.c 501>
+  356 						search_get_module: 267
+  357 						si_host_byaddr: 148
+  358 						si_cache_add_item: 268
+  359 						search_cat_cache: 274
+  360 					sim_host_all: <>
+  361 					search_host_all: si_list_t * (), <./lookup.subproj/search_module.c 543>
+  362 						search_list: 291
+  363 						si_host_all: 78
+  364 					sim_network_byname: <>
+  365 					search_network_byname: si_item_t * (), <./lookup.subproj/search_module.c 549>
+  366 						search_item_byname: 266
+  367 						si_network_byname: 150
+  368 					sim_network_byaddr: <>
+  369 					search_network_byaddr: si_item_t * (), <./lookup.subproj/search_module.c 555>
+  370 						search_item_bynumber: 278
+  371 						si_network_byaddr: 152
+  372 					sim_network_all: <>
+  373 					search_network_all: si_list_t * (), <./lookup.subproj/search_module.c 561>
+  374 						search_list: 291
+  375 						si_network_all: 80
+  376 					sim_service_byname: <>
+  377 					search_service_byname: si_item_t * (), <./lookup.subproj/search_module.c 567>
+  378 						search_get_module: 267
+  379 						si_service_byname: 154
+  380 						si_cache_add_item: 268
+  381 						search_cat_cache: 274
+  382 					sim_service_byport: <>
+  383 					search_service_byport: si_item_t * (), <./lookup.subproj/search_module.c 597>
+  384 						search_get_module: 267
+  385 						si_service_byport: 156
+  386 						si_cache_add_item: 268
+  387 						search_cat_cache: 274
+  388 					sim_service_all: <>
+  389 					search_service_all: si_list_t * (), <./lookup.subproj/search_module.c 626>
+  390 						search_list: 291
+  391 						si_service_all: 82
+  392 					sim_protocol_byname: <>
+  393 					search_protocol_byname: si_item_t * (), <./lookup.subproj/search_module.c 632>
+  394 						search_item_byname: 266
+  395 						si_protocol_byname: 158
+  396 					sim_protocol_bynumber: <>
+  397 					search_protocol_bynumber: si_item_t * (), <./lookup.subproj/search_module.c 638>
+  398 						search_item_bynumber: 278
+  399 						si_protocol_bynumber: 160
+  400 					sim_protocol_all: <>
+  401 					search_protocol_all: si_list_t * (), <./lookup.subproj/search_module.c 644>
+  402 						search_list: 291
+  403 						si_protocol_all: 84
+  404 					sim_rpc_byname: <>
+  405 					search_rpc_byname: si_item_t * (), <./lookup.subproj/search_module.c 650>
+  406 						search_item_byname: 266
+  407 						si_rpc_byname: si_item_t * (), <./lookup.subproj/si_module.c 733>
+  408 							sim_rpc_byname: <>
+  409 					sim_rpc_bynumber: <>
+  410 					search_rpc_bynumber: si_item_t * (), <./lookup.subproj/search_module.c 656>
+  411 						search_get_module: 267
+  412 						si_rpc_bynumber: 162
+  413 						si_cache_add_item: 268
+  414 						search_cat_cache: 274
+  415 					sim_rpc_all: <>
+  416 					search_rpc_all: si_list_t * (), <./lookup.subproj/search_module.c 685>
+  417 						search_list: 291
+  418 						si_rpc_all: 86
+  419 					sim_fs_byspec: <>
+  420 					search_fs_byspec: si_item_t * (), <./lookup.subproj/search_module.c 691>
+  421 						search_item_byname: 266
+  422 						si_fs_byspec: 164
+  423 					sim_fs_byfile: <>
+  424 					search_fs_byfile: si_item_t * (), <./lookup.subproj/search_module.c 697>
+  425 						search_item_byname: 266
+  426 						si_fs_byfile: 166
+  427 					sim_fs_all: <>
+  428 					search_fs_all: si_list_t * (), <./lookup.subproj/search_module.c 703>
+  429 						search_list: 291
+  430 						si_fs_all: 88
+  431 					sim_mac_byname: <>
+  432 					search_mac_byname: si_item_t * (), <./lookup.subproj/search_module.c 709>
+  433 						search_item_byname: 266
+  434 						si_mac_byname: 245
+  435 					sim_mac_bymac: <>
+  436 					search_mac_bymac: si_item_t * (), <./lookup.subproj/search_module.c 715>
+  437 						search_item_byname: 266
+  438 						si_mac_bymac: 247
+  439 					sim_mac_all: <>
+  440 					search_mac_all: si_list_t * (), <./lookup.subproj/search_module.c 721>
+  441 						search_list: 291
+  442 						si_mac_all: 90
+  443 					sim_addrinfo: <>
+  444 					search_addrinfo: si_list_t * (), <./lookup.subproj/search_module.c 782>
+  445 						search_get_module: 267
+  446 						sim_addrinfo: <>
+  447 					sim_wants_addrinfo: <>
+  448 					search_wants_addrinfo: int (), <./lookup.subproj/search_module.c 758>
+  449 						search_get_module: 267
+  450 						sim_addrinfo: <>
+  451 					search_nameinfo: si_item_t * (), <./lookup.subproj/search_module.c 815>
+  452 						search_get_module: 267
+  453 						si_nameinfo: 168
+  454 						si_cache_add_item: 268
+  455 						search_cat_cache: 274
+  456 					sim_srv_byname: <>
+  457 					search_srv_byname: si_list_t * (), <./lookup.subproj/search_module.c 727>
+  458 						search_get_module: 267
+  459 						sim_srv_byname: <>
+  460 					dispatch_once: <>
+  461 					strdup: <>
+  462 					calloc: <>
+  463 					si_module_config_modules_for_category: void (), <./lookup.subproj/search_module.c 1027>
+  464 						calloc: <>
+  465 						free: <>
+  466 						si_module_with_name: 256
+  467 						string_equal: <>
+  468 					getenv: <>
+  469 					strcmp: if (), <./nis.subproj/ypmatch_cache.c 129>
+  470 					fopen: <>
+  471 					si_module_config_parse_line: void (), <./lookup.subproj/search_module.c 991>
+  472 						string_equal: <>
+  473 						si_module_config_modules_for_category: 463
+  474 						free: <>
+  475 					free: <>
+  476 					fclose: <>
+  477 				si_module_static_cache: si_mod_t * (), <./lookup.subproj/cache_module.c 406>
+  478 					sim_close: <>
+  479 					cache_close: void (), <./lookup.subproj/cache_module.c 379>
+  480 						si_list_release: 26
+  481 						si_item_release: 20
+  482 						pthread_mutex_destroy: <>
+  483 						free: <>
+  484 					sim_user_byname: <>
+  485 					cache_user_byname: si_item_t * (), <./lookup.subproj/cache_module.c 158>
+  486 						cache_fetch_item: si_item_t * (), <./lookup.subproj/cache_module.c 105>
+  487 							pthread_mutex_lock: <>
+  488 							cache_validate_item: void * (), <./lookup.subproj/cache_module.c 57>
+  489 								si_item_is_valid: int (), <./lookup.subproj/si_module.c 494>
+  490 									sim_is_valid: <>
+  491 								si_item_retain: 108
+  492 								si_item_release: 20
+  493 							si_item_match: int (), <./lookup.subproj/si_module.c 322>
+  494 								string_equal: <>
+  495 								memcmp: <>
+  496 								string_not_equal: <>
+  497 							si_item_release: 20
+  498 							pthread_mutex_unlock: <>
+  499 					sim_user_byuid: <>
+  500 					cache_user_byuid: si_item_t * (), <./lookup.subproj/cache_module.c 164>
+  501 						cache_fetch_item: 486
+  502 					sim_user_byuuid: <>
+  503 					sim_user_all: <>
+  504 					cache_user_all: si_list_t * (), <./lookup.subproj/cache_module.c 170>
+  505 						cache_fetch_list: si_list_t * (), <./lookup.subproj/cache_module.c 139>
+  506 							pthread_mutex_lock: <>
+  507 							cache_validate_list: void * (), <./lookup.subproj/cache_module.c 73>
+  508 								si_item_is_valid: 489
+  509 								si_list_retain: 300
+  510 								si_list_release: 26
+  511 							pthread_mutex_unlock: <>
+  512 					sim_group_byname: <>
+  513 					cache_group_byname: si_item_t * (), <./lookup.subproj/cache_module.c 176>
+  514 						cache_fetch_item: 486
+  515 					sim_group_bygid: <>
+  516 					cache_group_bygid: si_item_t * (), <./lookup.subproj/cache_module.c 182>
+  517 						cache_fetch_item: 486
+  518 					sim_group_byuuid: <>
+  519 					sim_group_all: <>
+  520 					cache_group_all: si_list_t * (), <./lookup.subproj/cache_module.c 188>
+  521 						cache_fetch_list: 505
+  522 					sim_grouplist: <>
+  523 					cache_grouplist: si_item_t * (), <./lookup.subproj/cache_module.c 194>
+  524 						cache_fetch_item: 486
+  525 					sim_netgroup_byname: <>
+  526 					sim_in_netgroup: <>
+  527 					sim_alias_byname: <>
+  528 					cache_alias_byname: si_item_t * (), <./lookup.subproj/cache_module.c 200>
+  529 						cache_fetch_item: 486
+  530 					sim_alias_all: <>
+  531 					cache_alias_all: si_list_t * (), <./lookup.subproj/cache_module.c 206>
+  532 						cache_fetch_list: 505
+  533 					sim_host_byname: <>
+  534 					cache_host_byname: si_item_t * (), <./lookup.subproj/cache_module.c 212>
+  535 						cache_fetch_item: 486
+  536 					sim_host_byaddr: <>
+  537 					cache_host_byaddr: si_item_t * (), <./lookup.subproj/cache_module.c 228>
+  538 						cache_fetch_item: 486
+  539 					sim_host_all: <>
+  540 					cache_host_all: si_list_t * (), <./lookup.subproj/cache_module.c 244>
+  541 						cache_fetch_list: 505
+  542 					sim_network_byname: <>
+  543 					cache_network_byname: si_item_t * (), <./lookup.subproj/cache_module.c 250>
+  544 						cache_fetch_item: 486
+  545 					sim_network_byaddr: <>
+  546 					cache_network_byaddr: si_item_t * (), <./lookup.subproj/cache_module.c 256>
+  547 						cache_fetch_item: 486
+  548 					sim_network_all: <>
+  549 					cache_network_all: si_list_t * (), <./lookup.subproj/cache_module.c 262>
+  550 						cache_fetch_list: 505
+  551 					sim_service_byname: <>
+  552 					cache_service_byname: si_item_t * (), <./lookup.subproj/cache_module.c 268>
+  553 						cache_fetch_item: 486
+  554 						string_equal: <>
+  555 					sim_service_byport: <>
+  556 					cache_service_byport: si_item_t * (), <./lookup.subproj/cache_module.c 282>
+  557 						cache_fetch_item: 486
+  558 					sim_service_all: <>
+  559 					cache_service_all: si_list_t * (), <./lookup.subproj/cache_module.c 288>
+  560 						cache_fetch_list: 505
+  561 					sim_protocol_byname: <>
+  562 					cache_protocol_byname: si_item_t * (), <./lookup.subproj/cache_module.c 294>
+  563 						cache_fetch_item: 486
+  564 					sim_protocol_bynumber: <>
+  565 					cache_protocol_bynumber: si_item_t * (), <./lookup.subproj/cache_module.c 300>
+  566 						cache_fetch_item: 486
+  567 					sim_protocol_all: <>
+  568 					cache_protocol_all: si_list_t * (), <./lookup.subproj/cache_module.c 306>
+  569 						cache_fetch_list: 505
+  570 					sim_rpc_byname: <>
+  571 					cache_rpc_byname: si_item_t * (), <./lookup.subproj/cache_module.c 312>
+  572 						cache_fetch_item: 486
+  573 					sim_rpc_bynumber: <>
+  574 					cache_rpc_bynumber: si_item_t * (), <./lookup.subproj/cache_module.c 318>
+  575 						cache_fetch_item: 486
+  576 					sim_rpc_all: <>
+  577 					cache_rpc_all: si_list_t * (), <./lookup.subproj/cache_module.c 324>
+  578 						cache_fetch_list: 505
+  579 					sim_fs_byspec: <>
+  580 					cache_fs_byspec: si_item_t * (), <./lookup.subproj/cache_module.c 330>
+  581 						cache_fetch_item: 486
+  582 					sim_fs_byfile: <>
+  583 					cache_fs_byfile: si_item_t * (), <./lookup.subproj/cache_module.c 336>
+  584 						cache_fetch_item: 486
+  585 					sim_fs_all: <>
+  586 					cache_fs_all: si_list_t * (), <./lookup.subproj/cache_module.c 342>
+  587 						cache_fetch_list: 505
+  588 					sim_mac_byname: <>
+  589 					cache_mac_byname: si_item_t * (), <./lookup.subproj/cache_module.c 348>
+  590 						cache_fetch_item: 486
+  591 					sim_mac_bymac: <>
+  592 					cache_mac_bymac: si_item_t * (), <./lookup.subproj/cache_module.c 354>
+  593 						cache_fetch_item: 486
+  594 					sim_mac_all: <>
+  595 					cache_mac_all: si_list_t * (), <./lookup.subproj/cache_module.c 360>
+  596 						cache_fetch_list: 505
+  597 					sim_wants_addrinfo: <>
+  598 					sim_addrinfo: <>
+  599 					cache_nameinfo: si_item_t * (), <./lookup.subproj/cache_module.c 366>
+  600 					dispatch_once: <>
+  601 					calloc: <>
+  602 					strdup: <>
+  603 					pthread_mutex_init: <>
+  604 				si_module_static_file: si_mod_t * (), <./lookup.subproj/file_module.c 2283>
+  605 					sim_is_valid: <>
+  606 					file_is_valid: int (), <./lookup.subproj/file_module.c 1969>
+  607 						string_not_equal: <>
+  608 					sim_user_byname: <>
+  609 					file_user_byname: si_item_t * (), <./lookup.subproj/file_module.c 1989>
+  610 					sim_user_byuid: <>
+  611 					file_user_byuid: si_item_t * (), <./lookup.subproj/file_module.c 1995>
+  612 					sim_user_byuuid: <>
+  613 					sim_user_all: <>
+  614 					file_user_all: si_list_t * (), <./lookup.subproj/file_module.c 2001>
+  615 					sim_group_byname: <>
+  616 					file_group_byname: si_item_t * (), <./lookup.subproj/file_module.c 2007>
+  617 					sim_group_bygid: <>
+  618 					file_group_bygid: si_item_t * (), <./lookup.subproj/file_module.c 2013>
+  619 					sim_group_byuuid: <>
+  620 					sim_group_all: <>
+  621 					file_group_all: si_list_t * (), <./lookup.subproj/file_module.c 2019>
+  622 					sim_grouplist: <>
+  623 					file_grouplist: si_item_t * (), <./lookup.subproj/file_module.c 2025>
+  624 					sim_netgroup_byname: <>
+  625 					file_netgroup_byname: si_list_t * (), <./lookup.subproj/file_module.c 2031>
+  626 						pthread_mutex_lock: <>
+  627 						LI_ils_create: 9
+  628 						si_list_add: 105
+  629 						pthread_mutex_unlock: <>
+  630 					sim_in_netgroup: <>
+  631 					file_in_netgroup: int (), <./lookup.subproj/file_module.c 2066>
+  632 						pthread_mutex_lock: <>
+  633 						pthread_mutex_unlock: <>
+  634 						strcmp: if (), <./nis.subproj/ypmatch_cache.c 129>
+  635 					sim_alias_byname: <>
+  636 					file_alias_byname: si_item_t * (), <./lookup.subproj/file_module.c 2246>
+  637 					sim_alias_all: <>
+  638 					file_alias_all: si_list_t * (), <./lookup.subproj/file_module.c 2252>
+  639 					sim_host_byname: <>
+  640 					file_host_byname: si_item_t * (), <./lookup.subproj/file_module.c 2121>
+  641 					sim_host_byaddr: <>
+  642 					file_host_byaddr: si_item_t * (), <./lookup.subproj/file_module.c 2134>
+  643 					sim_host_all: <>
+  644 					file_host_all: si_list_t * (), <./lookup.subproj/file_module.c 2147>
+  645 					sim_network_byname: <>
+  646 					file_network_byname: si_item_t * (), <./lookup.subproj/file_module.c 2153>
+  647 					sim_network_byaddr: <>
+  648 					file_network_byaddr: si_item_t * (), <./lookup.subproj/file_module.c 2160>
+  649 					sim_network_all: <>
+  650 					file_network_all: si_list_t * (), <./lookup.subproj/file_module.c 2166>
+  651 					sim_service_byname: <>
+  652 					file_service_byname: si_item_t * (), <./lookup.subproj/file_module.c 2172>
+  653 					sim_service_byport: <>
+  654 					file_service_byport: si_item_t * (), <./lookup.subproj/file_module.c 2178>
+  655 					sim_service_all: <>
+  656 					file_service_all: si_list_t * (), <./lookup.subproj/file_module.c 2184>
+  657 					sim_protocol_byname: <>
+  658 					file_protocol_byname: si_item_t * (), <./lookup.subproj/file_module.c 2190>
+  659 					sim_protocol_bynumber: <>
+  660 					file_protocol_bynumber: si_item_t * (), <./lookup.subproj/file_module.c 2197>
+  661 					sim_protocol_all: <>
+  662 					file_protocol_all: si_list_t * (), <./lookup.subproj/file_module.c 2203>
+  663 					sim_rpc_byname: <>
+  664 					file_rpc_byname: si_item_t * (), <./lookup.subproj/file_module.c 2209>
+  665 					sim_rpc_bynumber: <>
+  666 					file_rpc_bynumber: si_item_t * (), <./lookup.subproj/file_module.c 2216>
+  667 					sim_rpc_all: <>
+  668 					file_rpc_all: si_list_t * (), <./lookup.subproj/file_module.c 2222>
+  669 					sim_fs_byspec: <>
+  670 					file_fs_byspec: si_item_t * (), <./lookup.subproj/file_module.c 2228>
+  671 					sim_fs_byfile: <>
+  672 					file_fs_byfile: si_item_t * (), <./lookup.subproj/file_module.c 2234>
+  673 					sim_fs_all: <>
+  674 					file_fs_all: si_list_t * (), <./lookup.subproj/file_module.c 2240>
+  675 					sim_mac_byname: <>
+  676 					file_mac_byname: si_item_t * (), <./lookup.subproj/file_module.c 2258>
+  677 					sim_mac_bymac: <>
+  678 					file_mac_bymac: si_item_t * (), <./lookup.subproj/file_module.c 2264>
+  679 					sim_mac_all: <>
+  680 					file_mac_all: si_list_t * (), <./lookup.subproj/file_module.c 2270>
+  681 					sim_wants_addrinfo: <>
+  682 					sim_addrinfo: <>
+  683 					file_addrinfo: si_list_t * (), <./lookup.subproj/file_module.c 2276>
+  684 					dispatch_once: <>
+  685 					strdup: <>
+  686 					calloc: <>
+  687 				si_module_static_ds: si_mod_t * (), <./lookup.subproj/ds_module.c 2163>
+  688 					sim_is_valid: <>
+  689 					sim_user_byname: <>
+  690 					ds_user_byname: si_item_t * (), <./lookup.subproj/ds_module.c 1645>
+  691 						xpc_release: <>
+  692 					sim_user_byuid: <>
+  693 					ds_user_byuid: si_item_t * (), <./lookup.subproj/ds_module.c 1662>
+  694 						xpc_release: <>
+  695 					sim_user_byuuid: <>
+  696 					ds_user_byuuid: si_item_t * (), <./lookup.subproj/ds_module.c 1679>
+  697 						xpc_release: <>
+  698 					sim_user_all: <>
+  699 					ds_user_all: si_list_t * (), <./lookup.subproj/ds_module.c 1696>
+  700 					sim_group_byname: <>
+  701 					ds_group_byname: si_item_t * (), <./lookup.subproj/ds_module.c 1702>
+  702 						xpc_release: <>
+  703 					sim_group_bygid: <>
+  704 					ds_group_bygid: si_item_t * (), <./lookup.subproj/ds_module.c 1719>
+  705 						xpc_release: <>
+  706 					sim_group_byuuid: <>
+  707 					ds_group_byuuid: si_item_t * (), <./lookup.subproj/ds_module.c 1736>
+  708 						xpc_release: <>
+  709 					sim_group_all: <>
+  710 					ds_group_all: si_list_t * (), <./lookup.subproj/ds_module.c 1753>
+  711 					sim_grouplist: <>
+  712 					ds_grouplist: si_item_t * (), <./lookup.subproj/ds_module.c 1760>
+  713 						xpc_dictionary_create: <>
+  714 						xpc_dictionary_set_string: <>
+  715 						xpc_dictionary_set_int64: <>
+  716 						xpc_dictionary_get_data: <>
+  717 						LI_ils_create: 9
+  718 						xpc_release: <>
+  719 					sim_netgroup_byname: <>
+  720 					ds_netgroup_byname: si_list_t * (), <./lookup.subproj/ds_module.c 1802>
+  721 						si_list_add: 105
+  722 						si_item_release: 20
+  723 						xpc_release: <>
+  724 					sim_in_netgroup: <>
+  725 					ds_in_netgroup: int (), <./lookup.subproj/ds_module.c 1825>
+  726 						xpc_dictionary_create: <>
+  727 						xpc_dictionary_set_string: <>
+  728 						xpc_dictionary_get_bool: <>
+  729 						xpc_release: <>
+  730 					sim_alias_byname: <>
+  731 					ds_alias_byname: si_item_t * (), <./lookup.subproj/ds_module.c 1854>
+  732 						xpc_release: <>
+  733 					sim_alias_all: <>
+  734 					ds_alias_all: si_list_t * (), <./lookup.subproj/ds_module.c 1871>
+  735 					sim_host_byname: <>
+  736 					sim_host_byaddr: <>
+  737 					sim_host_all: <>
+  738 					sim_network_byname: <>
+  739 					ds_network_byname: si_item_t * (), <./lookup.subproj/ds_module.c 1878>
+  740 						xpc_release: <>
+  741 					sim_network_byaddr: <>
+  742 					ds_network_byaddr: si_item_t * (), <./lookup.subproj/ds_module.c 1895>
+  743 						snprintf: <>
+  744 						xpc_release: <>
+  745 					sim_network_all: <>
+  746 					ds_network_all: si_list_t * (), <./lookup.subproj/ds_module.c 1924>
+  747 					sim_service_byname: <>
+  748 					ds_service_byname: si_item_t * (), <./lookup.subproj/ds_module.c 1931>
+  749 						pthread_getspecific: <>
+  750 						string_equal: <>
+  751 						si_item_retain: 108
+  752 						xpc_dictionary_create: <>
+  753 						xpc_dictionary_set_string: <>
+  754 						xpc_release: <>
+  755 					sim_service_byport: <>
+  756 					ds_service_byport: si_item_t * (), <./lookup.subproj/ds_module.c 1963>
+  757 						xpc_dictionary_create: <>
+  758 						xpc_dictionary_set_int64: <>
+  759 						ntohs: 102
+  760 						xpc_dictionary_set_string: <>
+  761 						xpc_release: <>
+  762 					sim_service_all: <>
+  763 					ds_service_all: si_list_t * (), <./lookup.subproj/ds_module.c 1985>
+  764 					sim_protocol_byname: <>
+  765 					ds_protocol_byname: si_item_t * (), <./lookup.subproj/ds_module.c 1992>
+  766 						xpc_release: <>
+  767 					sim_protocol_bynumber: <>
+  768 					ds_protocol_bynumber: si_item_t * (), <./lookup.subproj/ds_module.c 2009>
+  769 						xpc_release: <>
+  770 					sim_protocol_all: <>
+  771 					ds_protocol_all: si_list_t * (), <./lookup.subproj/ds_module.c 2026>
+  772 					sim_rpc_byname: <>
+  773 					ds_rpc_byname: si_item_t * (), <./lookup.subproj/ds_module.c 2032>
+  774 						xpc_release: <>
+  775 					sim_rpc_bynumber: <>
+  776 					ds_rpc_bynumber: si_item_t * (), <./lookup.subproj/ds_module.c 2049>
+  777 						xpc_release: <>
+  778 					sim_rpc_all: <>
+  779 					ds_rpc_all: si_list_t * (), <./lookup.subproj/ds_module.c 2066>
+  780 					sim_fs_byspec: <>
+  781 					ds_fs_byspec: si_item_t * (), <./lookup.subproj/ds_module.c 2072>
+  782 						xpc_release: <>
+  783 					sim_fs_byfile: <>
+  784 					ds_fs_byfile: si_item_t * (), <./lookup.subproj/ds_module.c 2095>
+  785 						ds_fs_all: si_list_t * (), <./lookup.subproj/ds_module.c 2089>
+  786 						string_equal: <>
+  787 						si_item_retain: 108
+  788 						si_list_release: 26
+  789 					sim_fs_all: <>
+  790 					ds_fs_all: 785
+  791 					sim_mac_byname: <>
+  792 					ds_mac_byname: si_item_t * (), <./lookup.subproj/ds_module.c 2120>
+  793 						xpc_release: <>
+  794 					sim_mac_bymac: <>
+  795 					ds_mac_bymac: si_item_t * (), <./lookup.subproj/ds_module.c 2137>
+  796 						si_standardize_mac_address: char * (), <./lookup.subproj/si_module.c 1195>
+  797 							pthread_mutex_lock: <>
+  798 							ether_aton: struct ether_addr (), <./gen.subproj/ether_addr.c 91>
+  799 							pthread_mutex_unlock: <>
+  800 							sprintf: <>
+  801 							asprintf: <>
+  802 						xpc_dictionary_create: <>
+  803 						free: <>
+  804 						xpc_release: <>
+  805 					sim_mac_all: <>
+  806 					sim_wants_addrinfo: <>
+  807 					sim_addrinfo: <>
+  808 					dispatch_once: <>
+  809 					pthread_key_create: <>
+  810 					strdup: <>
+  811 					calloc: <>
+  812 					notify_register_check: <>
+  813 				si_module_static_mdns: si_mod_t * (), <./lookup.subproj/mdns_module.c 868>
+  814 					sim_close: <>
+  815 					mdns_close: void (), <./lookup.subproj/mdns_module.c 814>
+  816 					sim_is_valid: <>
+  817 					mdns_is_valid: int (), <./lookup.subproj/mdns_module.c 808>
+  818 					sim_host_byname: <>
+  819 					mdns_hostbyname: si_item_t * (), <./lookup.subproj/mdns_module.c 428>
+  820 						memset: <>
+  821 						time: <>
+  822 						LI_ils_create: 9
+  823 					sim_host_byaddr: <>
+  824 					mdns_hostbyaddr: si_item_t * (), <./lookup.subproj/mdns_module.c 498>
+  825 						memset: <>
+  826 						free: <>
+  827 						time: <>
+  828 						LI_ils_create: 9
+  829 					sim_item_call: <>
+  830 					mdns_item_call: si_item_t * (), <./lookup.subproj/mdns_module.c 746>
+  831 						memset: <>
+  832 						htons: 98
+  833 						LI_ils_create: 9
+  834 					sim_addrinfo: <>
+  835 					mdns_addrinfo: si_list_t * (), <./lookup.subproj/mdns_module.c 570>
+  836 						bool: <>
+  837 						memset: <>
+  838 						memcpy: <>
+  839 						si_addrinfo_list: 95
+  840 						si_addrinfo_list_from_hostent: si_list_t * (), <./lookup.subproj/si_getaddrinfo.c 714>
+  841 							memcpy: <>
+  842 							si_addrinfo_list: 95
+  843 							si_list_concat: 124
+  844 							si_list_release: 26
+  845 					sim_srv_byname: <>
+  846 					mdns_srv_byname: si_list_t * (), <./lookup.subproj/mdns_module.c 704>
+  847 						memset: <>
+  848 						LI_ils_create: 9
+  849 						si_list_add: 105
+  850 						si_item_release: 20
+  851 					dispatch_once: <>
+  852 					strdup: <>
+  853 				string_equal: <>
+  854 				init: <>
+  855 				pthread_mutex_lock: <>
+  856 				asprintf: <>
+  857 				pthread_mutex_unlock: <>
+  858 				si_module_with_path: si_mod_t * (), <./lookup.subproj/si_module.c 105>
+  859 					dlopen: <>
+  860 					si_mod_dlsym: void * (), <./lookup.subproj/si_module.c 88>
+  861 						asprintf: <>
+  862 						dlsym: <>
+  863 						free: <>
+  864 					dlclose: <>
+  865 					calloc: <>
+  866 					strdup: <>
+  867 					free: <>
+  868 				free: <>
+  869 				reallocf: <>
+  870 		si_libinfo_general_callback: void (), <./lookup.subproj/libinfo.c 95>
+  871 			free: <>
+  872 			si_item_release: 20
+  873 			LI_set_thread_item: 18
+  874 	alias_getbyname_async_handle_reply: void (), <./lookup.subproj/libinfo.c 879>
+  875 		fprintf: <>
+  876 		si_async_handle_reply: void (), <./lookup.subproj/si_module.c 1151>
+  877 			si_async_worklist_find_unit: si_async_workunit_t * (), <./lookup.subproj/si_module.c 876>
+  878 				pthread_mutex_lock: <>
+  879 				pthread_mutex_unlock: <>
+  880 			fprintf: <>
+  881 			si_async_workunit_release: 59
+  882 	alias_setent: void (), <./lookup.subproj/libinfo.c 889>
+  883 		fprintf: <>
+  884 		LI_set_thread_list: 24
+  885 	authnone_create: AUTH * (), <./rpc.subproj/auth_none.c 101>
+  886 		calloc: <>
+  887 		xdrmem_create: void (), <./rpc.subproj/xdr_mem.c 129>
+  888 		xdr_opaque_auth: if (), <./rpc.subproj/auth_unix.c 280>
+  889 		XDR_GETPOS: <>
+  890 		XDR_DESTROY: <>
+  891 	authunix_create_default: AUTH * (), <./rpc.subproj/auth_unix.c 221>
+  892 		gethostname: <>
+  893 		abort: if (, <./nis.subproj/yp_bind.c 173>
+  894 		geteuid: <>
+  895 		getegid: <>
+  896 		getgroups: <>
+  897 		authunix_create: AUTH * (), <./rpc.subproj/auth_unix.c 127>
+  898 	bindresvport: if (), <./rpc.subproj/svc_udp.c 148>
+  899 		bindresvport_sa: int (), <./rpc.subproj/bindresvport.c 77>
+  900 			getsockname: <>
+  901 			memset: <>
+  902 			getsockopt: <>
+  903 			setsockopt: <>
+  904 			bind: <>
+  905 	bindresvport_sa: 899
+  906 	bootp_getbyether: int (), <./lookup.subproj/libinfo.c 3319>
+  907 		fprintf: <>
+  908 	bootp_getbyip: int (), <./lookup.subproj/libinfo.c 3328>
+  909 		fprintf: <>
+  910 	bootparams_endent: void (), <./lookup.subproj/libinfo.c 3311>
+  911 		fprintf: <>
+  912 	bootparams_setent: void (), <./lookup.subproj/libinfo.c 3303>
+  913 		fprintf: <>
+  914 	callrpc: int (), <./rpc.subproj/clnt_simple.c 82>
+  915 		calloc: <>
+  916 		malloc: <>
+  917 		strcmp: if (), <./nis.subproj/ypmatch_cache.c 129>
+  918 		close: <>
+  919 		clnt_destroy: <>
+  920 		gethostbyname: struct hostent (), <./lookup.subproj/libinfo.c 970>
+  921 		bzero: <>
+  922 		bcopy: <>
+  923 		clntudp_create: <>
+  924 		strcpy: <>
+  925 		clnt_call: <>
+  926 	clnt_pcreateerror: void (), <./rpc.subproj/clnt_perror.c 291>
+  927 		fprintf: <>
+  928 		clnt_spcreateerror: char * (), <./rpc.subproj/clnt_perror.c 258>
+  929 			sprintf: <>
+  930 			strcat: <>
+  931 			clnt_sperrno: char * (), <./rpc.subproj/clnt_perror.c 236>
+  932 			strerror: <>
+  933 			strlen: <>
+  934 	clnt_perrno: void (), <./rpc.subproj/clnt_perror.c 250>
+  935 		fprintf: <>
+  936 		clnt_sperrno: 931
+  937 	clnt_perror: void (), <./rpc.subproj/clnt_perror.c 179>
+  938 		fprintf: <>
+  939 		clnt_sperror: char * (), <./rpc.subproj/clnt_perror.c 90>
+  940 			CLNT_GETERR: <>
+  941 			sprintf: <>
+  942 			strlen: <>
+  943 			strcpy: <>
+  944 			clnt_sperrno: 931
+  945 			strerror: <>
+  946 			auth_errmsg: char * (), <./rpc.subproj/clnt_perror.c 322>
+  947 	clnt_spcreateerror: 928
+  948 	clnt_sperrno: 931
+  949 	clnt_sperror: 939
+  950 	clnttcp_create_timeout: CLIENT * (), <./rpc.subproj/clnt_tcp.c 144>
+  951 		mem_alloc: <>
+  952 		pmap_getport_timeout: u_short (), <./rpc.subproj/pmap_getport.c 81>
+  953 			htons: 98
+  954 			clntudp_bufcreate: <>
+  955 			CLNT_CALL: <>
+  956 			xdr_pmap: bool_t (), <./rpc.subproj/pmap_prot.c 72>
+  957 				xdr_u_long: <>
+  958 			clnt_geterr: <>
+  959 			CLNT_DESTROY: <>
+  960 			close: <>
+  961 		mem_free: <>
+  962 		htons: 98
+  963 		socket: (), <./rpc.subproj/pmap_rmt.c 132>
+  964 		bindresvport: 898
+  965 		connect: <>
+  966 		close: <>
+  967 		open: <>
+  968 		read: <>
+  969 		gettimeofday: <>
+  970 		getpid: <>
+  971 		xdrmem_create: 887
+  972 		xdr_callhdr: if (), <./rpc.subproj/clnt_raw.c 139>
+  973 		XDR_GETPOS: <>
+  974 		XDR_DESTROY: <>
+  975 		xdrrec_create: , <./rpc.subproj/xdr_rec.c 193>
+  976 			mem_alloc: <>
+  977 			warnx: <>
+  978 			fix_buf_size: <>
+  979 			mem_free: <>
+  980 		authnone_create: 885
+  981 	clntudp_bufcreate_timeout: CLIENT * (), <./rpc.subproj/clnt_udp.c 139>
+  982 		mem_alloc: <>
+  983 		pmap_getport_timeout: 952
+  984 		htons: 98
+  985 		open: <>
+  986 		read: <>
+  987 		gettimeofday: <>
+  988 		getpid: <>
+  989 		close: <>
+  990 		xdrmem_create: 887
+  991 		xdr_callhdr: if (), <./rpc.subproj/clnt_raw.c 139>
+  992 		XDR_GETPOS: <>
+  993 		socket: (), <./rpc.subproj/pmap_rmt.c 132>
+  994 		bindresvport: 898
+  995 		ioctl: <>
+  996 		getsockopt: <>
+  997 		setsockopt: <>
+  998 		authnone_create: 885
+  999 		mem_free: <>
+ 1000 	configuration_profile_copy_property_list: xpc_object_t (), <./gen.subproj/configuration_profile.c 56>
+ 1001 		snprintf: <>
+ 1002 		strchr: <>
+ 1003 		open: <>
+ 1004 		memset: <>
+ 1005 		fstat: <>
+ 1006 		close: <>
+ 1007 		mmap: <>
+ 1008 		xpc_create_from_plist: <>
+ 1009 		munmap: <>
+ 1010 	configuration_profile_create_notification_key: char * (), <./gen.subproj/configuration_profile.c 35>
+ 1011 		asprintf: <>
+ 1012 		strchr: <>
+ 1013 	dn_expand: int (), <./dns.subproj/res_comp.c 78>
+ 1014 		isascii: <>
+ 1015 		isspace: <>
+ 1016 	endfsent: void (), <./lookup.subproj/libinfo.c 2286>
+ 1017 		fprintf: <>
+ 1018 		LI_set_thread_list: 24
+ 1019 	endgrent: void (), <./lookup.subproj/libinfo.c 501>
+ 1020 		fprintf: <>
+ 1021 		LI_set_thread_list: 24
+ 1022 	endhostent: void (), <./lookup.subproj/libinfo.c 1517>
+ 1023 		fprintf: <>
+ 1024 		LI_set_thread_list: 24
+ 1025 	endnetent: void (), <./lookup.subproj/libinfo.c 1720>
+ 1026 		fprintf: <>
+ 1027 		LI_set_thread_list: 24
+ 1028 	endnetgrent: void (), <./lookup.subproj/libinfo.c 590>
+ 1029 		fprintf: <>
+ 1030 		LI_set_thread_list: 24
+ 1031 	endprotoent: void (), <./lookup.subproj/libinfo.c 1994>
+ 1032 		fprintf: <>
+ 1033 		LI_set_thread_list: 24
+ 1034 	endpwent: void (), <./lookup.subproj/libinfo.c 330>
+ 1035 		fprintf: <>
+ 1036 		LI_set_thread_list: 24
+ 1037 	endrpcent: void (), <./lookup.subproj/libinfo.c 2138>
+ 1038 		fprintf: <>
+ 1039 		LI_set_thread_list: 24
+ 1040 	endservent: void (), <./lookup.subproj/libinfo.c 1857>
+ 1041 		fprintf: <>
+ 1042 		LI_set_thread_list: 24
+ 1043 	ether_hostton: int (), <./lookup.subproj/libinfo.c 1529>
+ 1044 		fprintf: <>
+ 1045 		si_mac_byname: 245
+ 1046 		si_search: 255
+ 1047 		LI_set_thread_item: 18
+ 1048 		sscanf: <>
+ 1049 	ether_line: int (), <./gen.subproj/ether_addr.c 55>
+ 1050 		sscanf: <>
+ 1051 	ether_ntoa: char * (), <./gen.subproj/ether_addr.c 72>
+ 1052 		malloc: <>
+ 1053 		sprintf: <>
+ 1054 		EI: <>
+ 1055 	ether_ntohost: int (), <./lookup.subproj/libinfo.c 1559>
+ 1056 		snprintf: <>
+ 1057 		fprintf: <>
+ 1058 		si_mac_bymac: 247
+ 1059 		si_search: 255
+ 1060 		LI_set_thread_item: 18
+ 1061 		memcpy: <>
+ 1062 		strlen: <>
+ 1063 	freeaddrinfo: void (), <./lookup.subproj/si_getaddrinfo.c 137>
+ 1064 		free: <>
+ 1065 	freehostent: void (), <./lookup.subproj/libinfo.c 934>
+ 1066 		si_item_release: 20
+ 1067 	freeifaddrs: 204
+ 1068 	freeifmaddrs: void (), <./gen.subproj/getifmaddrs.c 207>
+ 1069 		free: <>
+ 1070 	gai_strerror: const char * (), <./lookup.subproj/si_getaddrinfo.c 152>
+ 1071 	get_myaddress: int (), <./rpc.subproj/get_myaddress.c 81>
+ 1072 		bzero: <>
+ 1073 		socket: (), <./rpc.subproj/pmap_rmt.c 132>
+ 1074 		htonl: 216
+ 1075 		ioctl: <>
+ 1076 		close: <>
+ 1077 	getaddrinfo: int (), <./lookup.subproj/libinfo.c 2355>
+ 1078 	getaddrinfo_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 2614>
+ 1079 	getaddrinfo_async_cancel: void (), <./lookup.subproj/libinfo.c 2644>
+ 1080 		fprintf: <>
+ 1081 		si_async_cancel: void (), <./lookup.subproj/si_module.c 1112>
+ 1082 			si_async_worklist_find_unit: 877
+ 1083 			fprintf: <>
+ 1084 			OSAtomicTestAndSetBarrier: <>
+ 1085 			si_async_workunit_release: 59
+ 1086 	getaddrinfo_async_handle_reply: int32_t (), <./lookup.subproj/libinfo.c 2654>
+ 1087 		fprintf: <>
+ 1088 		si_async_handle_reply: 876
+ 1089 	getaddrinfo_async_receive: int32_t (), <./lookup.subproj/libinfo.c 2637>
+ 1090 	getaddrinfo_async_send: int32_t (), <./lookup.subproj/libinfo.c 2631>
+ 1091 		getaddrinfo_async_start: int32_t (), <./lookup.subproj/libinfo.c 2620>
+ 1092 			getaddrinfo_async_call: 1078
+ 1093 	getaddrinfo_async_start: 1091
+ 1094 	getdomainname: int (), <./nis.subproj/getdomainname.c 32>
+ 1095 		sysctl: <>
+ 1096 	getfsfile_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 2222>
+ 1097 		fprintf: <>
+ 1098 		calloc: <>
+ 1099 		si_async_call: 38
+ 1100 		si_search: 255
+ 1101 		si_libinfo_general_callback: 870
+ 1102 	getfsfile_async_handle_reply: void (), <./lookup.subproj/libinfo.c 2242>
+ 1103 		fprintf: <>
+ 1104 		si_async_handle_reply: 876
+ 1105 	getfsspec_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 2176>
+ 1106 		fprintf: <>
+ 1107 		calloc: <>
+ 1108 		si_async_call: 38
+ 1109 		si_search: 255
+ 1110 		si_libinfo_general_callback: 870
+ 1111 	getfsspec_async_handle_reply: void (), <./lookup.subproj/libinfo.c 2196>
+ 1112 		fprintf: <>
+ 1113 		si_async_handle_reply: 876
+ 1114 	getgrgid_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 420>
+ 1115 		fprintf: <>
+ 1116 		calloc: <>
+ 1117 		si_async_call: 38
+ 1118 		si_search: 255
+ 1119 		si_libinfo_general_callback: 870
+ 1120 	getgrgid_r: int (), <./lookup.subproj/libinfo.c 3068>
+ 1121 		fprintf: <>
+ 1122 		si_group_bygid: 140
+ 1123 		si_search: 255
+ 1124 		copy_group_r: int (), <./lookup.subproj/libinfo.c 2959>
+ 1125 			strlen: <>
+ 1126 			memmove: <>
+ 1127 			memset: <>
+ 1128 		si_item_release: 20
+ 1129 	getgrnam_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 374>
+ 1130 		fprintf: <>
+ 1131 		calloc: <>
+ 1132 		si_async_call: 38
+ 1133 		si_search: 255
+ 1134 		si_libinfo_general_callback: 870
+ 1135 	getgrnam_async_handle_reply: void (), <./lookup.subproj/libinfo.c 394>
+ 1136 		fprintf: <>
+ 1137 		si_async_handle_reply: 876
+ 1138 	getgrnam_r: int (), <./lookup.subproj/libinfo.c 3039>
+ 1139 		fprintf: <>
+ 1140 		si_group_byname: 138
+ 1141 		si_search: 255
+ 1142 		copy_group_r: 1124
+ 1143 		si_item_release: 20
+ 1144 	getgroupcount: int32_t (), <./lookup.subproj/libinfo.c 772>
+ 1145 		fprintf: <>
+ 1146 		free: <>
+ 1147 	getgrouplist: int (), <./lookup.subproj/libinfo.c 691>
+ 1148 		getgrouplist_internal: int (), <./lookup.subproj/libinfo.c 634>
+ 1149 			fprintf: <>
+ 1150 			si_grouplist: 142
+ 1151 			si_search: 255
+ 1152 			LI_set_thread_item: 18
+ 1153 	getgrouplist_2: int32_t (), <./lookup.subproj/libinfo.c 749>
+ 1154 		fprintf: <>
+ 1155 	getgruid_async_handle_reply: void (), <./lookup.subproj/libinfo.c 440>
+ 1156 		fprintf: <>
+ 1157 		si_async_handle_reply: 876
+ 1158 	getgruuid_r: int (), <./lookup.subproj/libinfo.c 3097>
+ 1159 		uuid_unparse_upper: <>
+ 1160 		fprintf: <>
+ 1161 		si_group_byuuid: 316
+ 1162 		si_search: 255
+ 1163 		copy_group_r: 1124
+ 1164 		si_item_release: 20
+ 1165 	gethostbyaddr_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1159>
+ 1166 		fprintf: <>
+ 1167 		inet_ntoa: <>
+ 1168 		calloc: <>
+ 1169 		si_async_call: 38
+ 1170 		si_search: 255
+ 1171 		si_libinfo_general_callback: 870
+ 1172 	gethostbyaddr_async_cancel: void (), <./lookup.subproj/libinfo.c 1190>
+ 1173 		fprintf: <>
+ 1174 		si_async_cancel: 1081
+ 1175 	gethostbyaddr_async_handleReply: void (), <./lookup.subproj/libinfo.c 1216>
+ 1176 		fprintf: <>
+ 1177 		si_async_handle_reply: 876
+ 1178 	gethostbyaddr_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1201>
+ 1179 		fprintf: <>
+ 1180 		si_async_handle_reply: 876
+ 1181 	gethostbyaddr_async_start: mach_port_t (), <./lookup.subproj/libinfo.c 1182>
+ 1182 		gethostbyaddr_async_call: 1165
+ 1183 	gethostbyname2_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1097>
+ 1184 		fprintf: <>
+ 1185 		calloc: <>
+ 1186 		si_async_call: 38
+ 1187 		si_search: 255
+ 1188 		si_libinfo_general_callback: 870
+ 1189 	gethostbyname2_async_cancel: void (), <./lookup.subproj/libinfo.c 1117>
+ 1190 		fprintf: <>
+ 1191 		si_async_cancel: 1081
+ 1192 	gethostbyname2_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1127>
+ 1193 		fprintf: <>
+ 1194 		si_async_handle_reply: 876
+ 1195 	gethostbyname_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 997>
+ 1196 		fprintf: <>
+ 1197 		calloc: <>
+ 1198 		si_async_call: 38
+ 1199 		si_search: 255
+ 1200 		si_libinfo_general_callback: 870
+ 1201 	gethostbyname_async_cancel: void (), <./lookup.subproj/libinfo.c 1023>
+ 1202 		fprintf: <>
+ 1203 		si_async_cancel: 1081
+ 1204 	gethostbyname_async_handleReply: void (), <./lookup.subproj/libinfo.c 1048>
+ 1205 		fprintf: <>
+ 1206 		si_async_handle_reply: 876
+ 1207 	gethostbyname_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1034>
+ 1208 		fprintf: <>
+ 1209 		si_async_handle_reply: 876
+ 1210 	gethostbyname_async_start: mach_port_t (), <./lookup.subproj/libinfo.c 1017>
+ 1211 		gethostbyname_async_call: 1195
+ 1212 	getifaddrs: 185
+ 1213 	getifmaddrs: int (), <./gen.subproj/getifmaddrs.c 66>
+ 1214 		sysctl: <>
+ 1215 		malloc: <>
+ 1216 		free: <>
+ 1217 		SA_RLEN: <>
+ 1218 		memset: <>
+ 1219 		memcpy: <>
+ 1220 	getipnodebyaddr_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1415>
+ 1221 		fprintf: <>
+ 1222 		inet_ntoa: <>
+ 1223 		is_a4_mapped: int (), <./lookup.subproj/libinfo.c 1308>
+ 1224 		is_a4_compat: int (), <./lookup.subproj/libinfo.c 1331>
+ 1225 		calloc: <>
+ 1226 		si_async_call: 38
+ 1227 		si_search: 255
+ 1228 		si_libinfo_ipnode_callback: void (), <./lookup.subproj/libinfo.c 1384>
+ 1229 			free: <>
+ 1230 			si_item_release: 20
+ 1231 	getipnodebyaddr_async_cancel: void (), <./lookup.subproj/libinfo.c 1453>
+ 1232 		fprintf: <>
+ 1233 		si_async_cancel: 1081
+ 1234 	getipnodebyaddr_async_handleReply: void (), <./lookup.subproj/libinfo.c 1473>
+ 1235 		fprintf: <>
+ 1236 		si_async_handle_reply: 876
+ 1237 	getipnodebyaddr_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1463>
+ 1238 		fprintf: <>
+ 1239 		si_async_handle_reply: 876
+ 1240 	getipnodebyaddr_async_start: mach_port_t (), <./lookup.subproj/libinfo.c 1445>
+ 1241 		getipnodebyaddr_async_call: 1220
+ 1242 	getipnodebyname_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1251>
+ 1243 		fprintf: <>
+ 1244 		calloc: <>
+ 1245 		si_async_call: 38
+ 1246 		si_search: 255
+ 1247 		si_libinfo_general_callback: 870
+ 1248 	getipnodebyname_async_cancel: void (), <./lookup.subproj/libinfo.c 1277>
+ 1249 		fprintf: <>
+ 1250 		si_async_cancel: 1081
+ 1251 	getipnodebyname_async_handleReply: void (), <./lookup.subproj/libinfo.c 1297>
+ 1252 		fprintf: <>
+ 1253 		si_async_handle_reply: 876
+ 1254 	getipnodebyname_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1287>
+ 1255 		fprintf: <>
+ 1256 		si_async_handle_reply: 876
+ 1257 	getipnodebyname_async_start: mach_port_t (), <./lookup.subproj/libinfo.c 1271>
+ 1258 		getipnodebyname_async_call: 1242
+ 1259 	getnameinfo: int (), <./lookup.subproj/libinfo.c 2741>
+ 1260 		getnameinfo_link: __private_extern__ int (), <./lookup.subproj/getnameinfo_link.c 66>
+ 1261 			snprintf: <>
+ 1262 			hexname: int (), <./lookup.subproj/getnameinfo_link.c 38>
+ 1263 				snprintf: <>
+ 1264 			LLADDR: <>
+ 1265 	getnameinfo_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 2819>
+ 1266 	getnameinfo_async_cancel: void (), <./lookup.subproj/libinfo.c 2841>
+ 1267 		fprintf: <>
+ 1268 		si_async_cancel: 1081
+ 1269 	getnameinfo_async_handle_reply: int32_t (), <./lookup.subproj/libinfo.c 2851>
+ 1270 		fprintf: <>
+ 1271 		si_async_handle_reply: 876
+ 1272 	getnameinfo_async_send: int32_t (), <./lookup.subproj/libinfo.c 2835>
+ 1273 		getnameinfo_async_start: int32_t (), <./lookup.subproj/libinfo.c 2825>
+ 1274 			getnameinfo_async_call: 1265
+ 1275 	getnameinfo_async_start: 1273
+ 1276 	getnameinfo_link: 1260
+ 1277 	getnetbyaddr_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1655>
+ 1278 		fprintf: <>
+ 1279 		calloc: <>
+ 1280 		si_async_call: 38
+ 1281 		si_search: 255
+ 1282 		si_libinfo_general_callback: 870
+ 1283 	getnetbyaddr_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1677>
+ 1284 		fprintf: <>
+ 1285 		si_async_handle_reply: 876
+ 1286 	getnetbyname_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1607>
+ 1287 		fprintf: <>
+ 1288 		calloc: <>
+ 1289 		si_async_call: 38
+ 1290 		si_search: 255
+ 1291 		si_libinfo_general_callback: 870
+ 1292 	getnetbyname_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1627>
+ 1293 		fprintf: <>
+ 1294 		si_async_handle_reply: 876
+ 1295 	getnetgrent: int (), <./lookup.subproj/libinfo.c 566>
+ 1296 		fprintf: <>
+ 1297 		LI_get_thread_list: 7
+ 1298 		si_list_next: si_item_t * (), <./lookup.subproj/si_data.c 111>
+ 1299 	getprotobyname_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1885>
+ 1300 		fprintf: <>
+ 1301 		calloc: <>
+ 1302 		si_async_call: 38
+ 1303 		si_search: 255
+ 1304 		si_libinfo_general_callback: 870
+ 1305 	getprotobyname_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1905>
+ 1306 		fprintf: <>
+ 1307 		si_async_handle_reply: 876
+ 1308 	getprotobynumber_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1931>
+ 1309 		fprintf: <>
+ 1310 		calloc: <>
+ 1311 		si_async_call: 38
+ 1312 		si_search: 255
+ 1313 		si_libinfo_general_callback: 870
+ 1314 	getprotobynumber_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1951>
+ 1315 		fprintf: <>
+ 1316 		si_async_handle_reply: 876
+ 1317 	getpwnam_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 203>
+ 1318 		fprintf: <>
+ 1319 		calloc: <>
+ 1320 		si_async_call: 38
+ 1321 		si_search: 255
+ 1322 		si_libinfo_general_callback: 870
+ 1323 	getpwnam_async_handle_reply: void (), <./lookup.subproj/libinfo.c 223>
+ 1324 		fprintf: <>
+ 1325 		si_async_handle_reply: 876
+ 1326 	getpwnam_r: int (), <./lookup.subproj/libinfo.c 3128>
+ 1327 		fprintf: <>
+ 1328 		si_user_byname: 134
+ 1329 		si_search: 255
+ 1330 		copy_user_r: int (), <./lookup.subproj/libinfo.c 2868>
+ 1331 			strlen: <>
+ 1332 			memmove: <>
+ 1333 		si_item_release: 20
+ 1334 	getpwuid_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 249>
+ 1335 		fprintf: <>
+ 1336 		calloc: <>
+ 1337 		si_async_call: 38
+ 1338 		si_search: 255
+ 1339 		si_libinfo_general_callback: 870
+ 1340 	getpwuid_async_handle_reply: void (), <./lookup.subproj/libinfo.c 269>
+ 1341 		fprintf: <>
+ 1342 		si_async_handle_reply: 876
+ 1343 	getpwuid_r: int (), <./lookup.subproj/libinfo.c 3157>
+ 1344 		fprintf: <>
+ 1345 		si_user_byuid: 136
+ 1346 		si_search: 255
+ 1347 		copy_user_r: 1330
+ 1348 		si_item_release: 20
+ 1349 	getpwuuid_r: int (), <./lookup.subproj/libinfo.c 3186>
+ 1350 		uuid_unparse_upper: <>
+ 1351 		fprintf: <>
+ 1352 		si_user_byuuid: 287
+ 1353 		si_search: 255
+ 1354 		copy_user_r: 1330
+ 1355 		si_item_release: 20
+ 1356 	getrpcbyname_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 2022>
+ 1357 		fprintf: <>
+ 1358 		calloc: <>
+ 1359 		si_async_call: 38
+ 1360 		si_search: 255
+ 1361 		si_libinfo_general_callback: 870
+ 1362 	getrpcbyname_async_handle_reply: void (), <./lookup.subproj/libinfo.c 2042>
+ 1363 		fprintf: <>
+ 1364 		si_async_handle_reply: 876
+ 1365 	getrpcbynumber_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 2075>
+ 1366 		fprintf: <>
+ 1367 		calloc: <>
+ 1368 		si_async_call: 38
+ 1369 		si_search: 255
+ 1370 		si_libinfo_general_callback: 870
+ 1371 	getrpcbynumber_async_handle_reply: void (), <./lookup.subproj/libinfo.c 2095>
+ 1372 		fprintf: <>
+ 1373 		si_async_handle_reply: 876
+ 1374 	getrpcport: int (), <./rpc.subproj/getrpcport.c 71>
+ 1375 		gethostbyname: struct hostent (), <./lookup.subproj/libinfo.c 970>
+ 1376 		bzero: <>
+ 1377 		bcopy: <>
+ 1378 		pmap_getport: <>
+ 1379 	getservbyname_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1748>
+ 1380 		fprintf: <>
+ 1381 		calloc: <>
+ 1382 		si_async_call: 38
+ 1383 		si_search: 255
+ 1384 		si_libinfo_general_callback: 870
+ 1385 	getservbyname_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1768>
+ 1386 		fprintf: <>
+ 1387 		si_async_handle_reply: 876
+ 1388 	getservbyport_async_call: mach_port_t (), <./lookup.subproj/libinfo.c 1794>
+ 1389 		fprintf: <>
+ 1390 		calloc: <>
+ 1391 		si_async_call: 38
+ 1392 		si_search: 255
+ 1393 		si_libinfo_general_callback: 870
+ 1394 	getservbyport_async_handle_reply: void (), <./lookup.subproj/libinfo.c 1814>
+ 1395 		fprintf: <>
+ 1396 		si_async_handle_reply: 876
+ 1397 	group_from_gid: char * (), <./lookup.subproj/libinfo.c 3234>
+ 1398 		getgrgid: struct group (), <./lookup.subproj/libinfo.c 404>
+ 1399 		snprintf: <>
+ 1400 	herror: void (), <./dns.subproj/herror.c 83>
+ 1401 		strlen: <>
+ 1402 		hstrerror: const char * (), <./dns.subproj/herror.c 105>
+ 1403 		writev: <>
+ 1404 	hstrerror: 1402
+ 1405 	htonl: 216
+ 1406 	htons: 98
+ 1407 	if_freenameindex: void (), <./gen.subproj/if_nameindex.c 142>
+ 1408 		free: <>
+ 1409 	if_indextoname: 184
+ 1410 	if_nametoindex: unsigned int (), <./gen.subproj/if_nametoindex.c 57>
+ 1411 		getifaddrs: 185
+ 1412 		strcmp: if (), <./nis.subproj/ypmatch_cache.c 129>
+ 1413 		freeifaddrs: 204
+ 1414 	inet6_opt_append: int (), <./gen.subproj/ip6opt.c 403>
+ 1415 		memset: <>
+ 1416 	inet6_opt_find: int (), <./gen.subproj/ip6opt.c 548>
+ 1417 		ip6optlen: int (), <./gen.subproj/ip6opt.c 346>
+ 1418 	inet6_opt_finish: int (), <./gen.subproj/ip6opt.c 468>
+ 1419 		memset: <>
+ 1420 	inet6_opt_get_val: int (), <./gen.subproj/ip6opt.c 589>
+ 1421 		memcpy: <>
+ 1422 	inet6_opt_init: int (), <./gen.subproj/ip6opt.c 387>
+ 1423 	inet6_opt_next: int (), <./gen.subproj/ip6opt.c 500>
+ 1424 		ip6optlen: 1417
+ 1425 	inet6_opt_set_val: int (), <./gen.subproj/ip6opt.c 493>
+ 1426 		memcpy: <>
+ 1427 	inet6_option_alloc: u_int8_t * (), <./gen.subproj/ip6opt.c 174>
+ 1428 		CMSG_DATA: <>
+ 1429 		inet6_insert_padopt: void (), <./gen.subproj/ip6opt.c 365>
+ 1430 			memset: <>
+ 1431 	inet6_option_append: int (), <./gen.subproj/ip6opt.c 104>
+ 1432 		CMSG_DATA: <>
+ 1433 		inet6_insert_padopt: 1429
+ 1434 		memcpy: <>
+ 1435 	inet6_option_find: int (), <./gen.subproj/ip6opt.c 293>
+ 1436 		CMSG_SPACE: <>
+ 1437 		CMSG_DATA: <>
+ 1438 		ip6optlen: 1417
+ 1439 	inet6_option_init: int (), <./gen.subproj/ip6opt.c 77>
+ 1440 		CMSG_LEN: <>
+ 1441 	inet6_option_next: int (), <./gen.subproj/ip6opt.c 237>
+ 1442 		CMSG_SPACE: <>
+ 1443 		CMSG_DATA: <>
+ 1444 		ip6optlen: 1417
+ 1445 	inet6_option_space: int (), <./gen.subproj/ip6opt.c 65>
+ 1446 		CMSG_SPACE: <>
+ 1447 	inet6_rth_add: int (), <./gen.subproj/rthdr.c 340>
+ 1448 	inet6_rth_init: void * (), <./gen.subproj/rthdr.c 311>
+ 1449 		inet6_rth_space: socklen_t (), <./gen.subproj/rthdr.c 298>
+ 1450 		memset: <>
+ 1451 	inet6_rth_reverse: int (), <./gen.subproj/rthdr.c 364>
+ 1452 		memmove: <>
+ 1453 	inet6_rth_segments: int (), <./gen.subproj/rthdr.c 406>
+ 1454 	inet6_rthdr_space: size_t (), <./gen.subproj/rthdr.c 57>
+ 1455 		CMSG_SPACE: <>
+ 1456 	initgroups: int (), <./lookup.subproj/libinfo.c 795>
+ 1457 		fprintf: <>
+ 1458 		si_user_byname: 134
+ 1459 		si_search: 255
+ 1460 		si_item_release: 20
+ 1461 		getgrouplist_internal: 1148
+ 1462 	innetgr: int (), <./lookup.subproj/libinfo.c 528>
+ 1463 		fprintf: <>
+ 1464 		si_in_netgroup: 338
+ 1465 		si_search: 255
+ 1466 	kvarray_free: void (), <./lookup.subproj/kvbuf.c 939>
+ 1467 		free: <>
+ 1468 		kvbuf_free: void (), <./lookup.subproj/kvbuf.c 489>
+ 1469 			free: <>
+ 1470 			memset: <>
+ 1471 	kvbuf_add_dict: void (), <./lookup.subproj/kvbuf.c 321>
+ 1472 		kvbuf_grow: void (), <./lookup.subproj/kvbuf.c 275>
+ 1473 			malloc_zone_from_ptr: <>
+ 1474 			malloc_zone_calloc: <>
+ 1475 			memset: <>
+ 1476 			malloc_zone_realloc: <>
+ 1477 			free: <>
+ 1478 		memcpy: <>
+ 1479 		ntohl: uint32_t (), <./util.subproj/hton.c 28>
+ 1480 			OSSwapBigToHostInt32: <>
+ 1481 		htonl: 216
+ 1482 	kvbuf_add_key: void (), <./lookup.subproj/kvbuf.c 352>
+ 1483 		strlen: <>
+ 1484 		kvbuf_grow: 1472
+ 1485 		memcpy: <>
+ 1486 		ntohl: 1479
+ 1487 		htonl: 216
+ 1488 	kvbuf_add_val: void (), <./lookup.subproj/kvbuf.c 457>
+ 1489 		kvbuf_add_val_len: void (), <./lookup.subproj/kvbuf.c 401>
+ 1490 			kvbuf_grow: 1472
+ 1491 			memcpy: <>
+ 1492 			ntohl: 1479
+ 1493 			htonl: 216
+ 1494 		strlen: <>
+ 1495 	kvbuf_add_val_len: 1489
+ 1496 	kvbuf_append_kvbuf: void (), <./lookup.subproj/kvbuf.c 500>
+ 1497 		memcpy: <>
+ 1498 		ntohl: 1479
+ 1499 		htonl: 216
+ 1500 		kvbuf_grow: 1472
+ 1501 	kvbuf_decode: kvarray_t * (), <./lookup.subproj/kvbuf.c 778>
+ 1502 		memcpy: <>
+ 1503 		ntohl: 1479
+ 1504 		calloc: <>
+ 1505 		free: <>
+ 1506 		kvarray_free: 1466
+ 1507 	kvbuf_free: 1468
+ 1508 	kvbuf_get_len: uint32_t (), <./lookup.subproj/kvbuf.c 447>
+ 1509 		memcpy: <>
+ 1510 		ntohl: 1479
+ 1511 	kvbuf_init: kvbuf_t * (), <./lookup.subproj/kvbuf.c 269>
+ 1512 		kvbuf_init_zone: kvbuf_t * (), <./lookup.subproj/kvbuf.c 240>
+ 1513 			malloc_zone_calloc: <>
+ 1514 			free: <>
+ 1515 			memcpy: <>
+ 1516 		malloc_default_zone: <>
+ 1517 	kvbuf_init_zone: 1512
+ 1518 	kvbuf_make_nonpurgeable: int (), <./lookup.subproj/kvbuf.c 474>
+ 1519 		malloc_make_nonpurgeable: <>
+ 1520 	kvbuf_make_purgeable: void (), <./lookup.subproj/kvbuf.c 466>
+ 1521 		malloc_make_purgeable: <>
+ 1522 	kvbuf_new: kvbuf_t * (), <./lookup.subproj/kvbuf.c 234>
+ 1523 		kvbuf_new_zone: kvbuf_t * (), <./lookup.subproj/kvbuf.c 210>
+ 1524 			malloc_zone_calloc: <>
+ 1525 			free: <>
+ 1526 		malloc_default_zone: <>
+ 1527 	kvbuf_new_zone: 1523
+ 1528 	kvbuf_next_dict: uint32_t (), <./lookup.subproj/kvbuf.c 557>
+ 1529 		memcpy: <>
+ 1530 		ntohl: 1479
+ 1531 	kvbuf_next_key: char * (), <./lookup.subproj/kvbuf.c 633>
+ 1532 		memcpy: <>
+ 1533 		ntohl: 1479
+ 1534 	kvbuf_next_val: char * (), <./lookup.subproj/kvbuf.c 719>
+ 1535 		kvbuf_next_val_len: char * (), <./lookup.subproj/kvbuf.c 725>
+ 1536 			memcpy: <>
+ 1537 			ntohl: 1479
+ 1538 	kvbuf_next_val_len: 1535
+ 1539 	kvbuf_query: kvbuf_t * (), <./lookup.subproj/kvbuf.c 73>
+ 1540 		kvbuf_new: 1522
+ 1541 		kvbuf_add_dict: 1471
+ 1542 		va_start: <>
+ 1543 		va_arg: <>
+ 1544 		kvbuf_add_key: 1482
+ 1545 		kvbuf_add_val: 1488
+ 1546 		snprintf: <>
+ 1547 		va_end: <>
+ 1548 	kvbuf_query_key_int: kvbuf_t * (), <./lookup.subproj/kvbuf.c 192>
+ 1549 		snprintf: <>
+ 1550 		kvbuf_query_key_val: kvbuf_t * (), <./lookup.subproj/kvbuf.c 120>
+ 1551 			strlen: <>
+ 1552 			calloc: <>
+ 1553 			free: <>
+ 1554 			htonl: 216
+ 1555 			memcpy: <>
+ 1556 	kvbuf_query_key_uint: kvbuf_t * (), <./lookup.subproj/kvbuf.c 201>
+ 1557 		snprintf: <>
+ 1558 		kvbuf_query_key_val: 1550
+ 1559 	kvbuf_query_key_val: 1550
+ 1560 	kvbuf_reset: uint32_t (), <./lookup.subproj/kvbuf.c 536>
+ 1561 		memcpy: <>
+ 1562 		ntohl: 1479
+ 1563 	mbr_check_membership: int (), <./membership.subproj/membership.c 406>
+ 1564 		mbr_check_membership_ext: int (), <./membership.subproj/membership.c 418>
+ 1565 			xpc_dictionary_create: <>
+ 1566 			xpc_dictionary_set_int64: <>
+ 1567 			xpc_dictionary_set_data: <>
+ 1568 			strlen: <>
+ 1569 			xpc_dictionary_get_int64: <>
+ 1570 			xpc_dictionary_get_bool: <>
+ 1571 			xpc_release: <>
+ 1572 	mbr_check_membership_by_id: int (), <./membership.subproj/membership.c 474>
+ 1573 		mbr_check_membership_ext: 1564
+ 1574 	mbr_check_membership_ext: 1564
+ 1575 	mbr_check_membership_refresh: int (), <./membership.subproj/membership.c 412>
+ 1576 		mbr_check_membership_ext: 1564
+ 1577 	mbr_check_service_membership: int (), <./membership.subproj/membership.c 503>
+ 1578 		xpc_dictionary_create: <>
+ 1579 		xpc_dictionary_set_data: <>
+ 1580 		xpc_dictionary_set_int64: <>
+ 1581 		xpc_dictionary_set_string: <>
+ 1582 		xpc_dictionary_get_int64: <>
+ 1583 		xpc_dictionary_get_bool: <>
+ 1584 		xpc_release: <>
+ 1585 	mbr_gid_to_uuid: int (), <./membership.subproj/membership.c 292>
+ 1586 		mbr_identifier_to_uuid: int (), <./membership.subproj/membership.c 338>
+ 1587 			mbr_identifier_translate: int (), <./membership.subproj/membership.c 143>
+ 1588 				strlen: <>
+ 1589 				memcmp: <>
+ 1590 				malloc: <>
+ 1591 				memcpy: <>
+ 1592 				ntohl: 1479
+ 1593 				uuid_copy: <>
+ 1594 				htonl: 216
+ 1595 				xpc_dictionary_create: <>
+ 1596 				xpc_dictionary_set_int64: <>
+ 1597 				xpc_dictionary_set_data: <>
+ 1598 				xpc_dictionary_get_int64: <>
+ 1599 				xpc_dictionary_get_data: <>
+ 1600 				xpc_release: <>
+ 1601 			uuid_copy: <>
+ 1602 			free: <>
+ 1603 	mbr_group_name_to_uuid: int (), <./membership.subproj/membership.c 497>
+ 1604 		mbr_identifier_to_uuid: 1586
+ 1605 	mbr_identifier_to_uuid: 1586
+ 1606 	mbr_identifier_translate: 1587
+ 1607 	mbr_reset_cache: int (), <./membership.subproj/membership.c 480>
+ 1608 	mbr_set_identifier_ttl: int (), <./membership.subproj/membership.c 653>
+ 1609 		xpc_dictionary_create: <>
+ 1610 		xpc_dictionary_set_int64: <>
+ 1611 		xpc_dictionary_set_data: <>
+ 1612 		xpc_dictionary_get_int64: <>
+ 1613 		xpc_release: <>
+ 1614 	mbr_sid_to_string: int (), <./membership.subproj/membership.c 560>
+ 1615 		strcpy: <>
+ 1616 		ConvertBytesToDecimal: char * (), <./membership.subproj/membership.c 538>
+ 1617 		strlen: <>
+ 1618 	mbr_sid_to_uuid: int (), <./membership.subproj/membership.c 328>
+ 1619 		mbr_identifier_to_uuid: 1586
+ 1620 	mbr_string_to_sid: int (), <./membership.subproj/membership.c 597>
+ 1621 		memset: <>
+ 1622 		strtol: <>
+ 1623 		strtoll: <>
+ 1624 		OSSwapHostToBigInt64: <>
+ 1625 		memcpy: <>
+ 1626 	mbr_string_to_uuid: int (), <./membership.subproj/membership.c 647>
+ 1627 		uuid_parse: <>
+ 1628 	mbr_uid_to_uuid: int (), <./membership.subproj/membership.c 286>
+ 1629 		mbr_identifier_to_uuid: 1586
+ 1630 	mbr_user_name_to_uuid: int (), <./membership.subproj/membership.c 491>
+ 1631 		mbr_identifier_to_uuid: 1586
+ 1632 	mbr_uuid_to_id: int (), <./membership.subproj/membership.c 298>
+ 1633 		mbr_identifier_translate: 1587
+ 1634 		free: <>
+ 1635 	mbr_uuid_to_sid: int (), <./membership.subproj/membership.c 389>
+ 1636 		mbr_uuid_to_sid_type: int (), <./membership.subproj/membership.c 353>
+ 1637 			mbr_identifier_translate: 1587
+ 1638 			memcpy: <>
+ 1639 			free: <>
+ 1640 	mbr_uuid_to_sid_type: 1636
+ 1641 	mbr_uuid_to_string: int (), <./membership.subproj/membership.c 639>
+ 1642 		uuid_unparse_upper: <>
+ 1643 	ntohl: 1479
+ 1644 	ntohs: 102
+ 1645 	pmap_getport_timeout: 952
+ 1646 	pmap_wakeup: int (), <./rpc.subproj/pmap_wakeup.c 9>
+ 1647 		memset: <>
+ 1648 		strcpy: <>
+ 1649 		socket: (), <./rpc.subproj/pmap_rmt.c 132>
+ 1650 		connect: <>
+ 1651 		close: <>
+ 1652 		read: <>
+ 1653 	prdb_end: void (), <./lookup.subproj/libinfo.c 3277>
+ 1654 		fprintf: <>
+ 1655 	prdb_get: const prdb_ent * (), <./lookup.subproj/libinfo.c 3260>
+ 1656 		fprintf: <>
+ 1657 	prdb_getbyname: const prdb_ent * (), <./lookup.subproj/libinfo.c 3251>
+ 1658 		fprintf: <>
+ 1659 	prdb_set: void (), <./lookup.subproj/libinfo.c 3269>
+ 1660 		fprintf: <>
+ 1661 	registerrpc: int (), <./rpc.subproj/svc_simple.c 86>
+ 1662 		fprintf: <>
+ 1663 		svcudp_create: SVCXPRT * (), <./rpc.subproj/svc_udp.c 186>
+ 1664 		pmap_unset: <>
+ 1665 		svc_register: <>
+ 1666 		universal: void (), <./rpc.subproj/svc_simple.c 142>
+ 1667 			svc_sendreply: <>
+ 1668 			xdr_void: bool_t (), <./rpc.subproj/xdr.c 125>
+ 1669 			fprintf: <>
+ 1670 			exit: <>
+ 1671 			bzero: <>
+ 1672 			svc_getargs: <>
+ 1673 			svcerr_decode: <>
+ 1674 			svc_freeargs: <>
+ 1675 		malloc: <>
+ 1676 	res_query: int (), <./dns.subproj/res_query.c 121>
+ 1677 	res_search: int (), <./dns.subproj/res_query.c 127>
+ 1678 	search_set_flags: __private_extern__ void (), <./lookup.subproj/search_module.c 101>
+ 1679 		string_equal: <>
+ 1680 	set_rpc_maxgrouplist: void (), <./rpc.subproj/auth_unix.c 209>
+ 1681 	setdomainname: int (), <./nis.subproj/setdomainname.c 32>
+ 1682 		sysctl: <>
+ 1683 	setfsent: int (), <./lookup.subproj/libinfo.c 2252>
+ 1684 		fprintf: <>
+ 1685 		LI_set_thread_list: 24
+ 1686 	setgrent: void (), <./lookup.subproj/libinfo.c 468>
+ 1687 		fprintf: <>
+ 1688 		LI_set_thread_list: 24
+ 1689 	setgroupent: int (), <./lookup.subproj/libinfo.c 511>
+ 1690 		fprintf: <>
+ 1691 		LI_get_thread_list: 7
+ 1692 		si_list_reset: 31
+ 1693 	sethostent: void (), <./lookup.subproj/libinfo.c 1484>
+ 1694 		fprintf: <>
+ 1695 		LI_set_thread_list: 24
+ 1696 	setnetent: void (), <./lookup.subproj/libinfo.c 1687>
+ 1697 		fprintf: <>
+ 1698 		LI_set_thread_list: 24
+ 1699 	setnetgrent: void (), <./lookup.subproj/libinfo.c 551>
+ 1700 		fprintf: <>
+ 1701 		si_netgroup_byname: 329
+ 1702 		si_search: 255
+ 1703 		LI_set_thread_list: 24
+ 1704 	setpassent: int (), <./lookup.subproj/libinfo.c 340>
+ 1705 		fprintf: <>
+ 1706 		LI_get_thread_list: 7
+ 1707 		si_list_reset: 31
+ 1708 	setprotoent: void (), <./lookup.subproj/libinfo.c 1961>
+ 1709 		fprintf: <>
+ 1710 		LI_set_thread_list: 24
+ 1711 	setpwent: void (), <./lookup.subproj/libinfo.c 297>
+ 1712 		fprintf: <>
+ 1713 		LI_set_thread_list: 24
+ 1714 	setrpcent: void (), <./lookup.subproj/libinfo.c 2105>
+ 1715 		fprintf: <>
+ 1716 		LI_set_thread_list: 24
+ 1717 	setservent: void (), <./lookup.subproj/libinfo.c 1824>
+ 1718 		fprintf: <>
+ 1719 		LI_set_thread_list: 24
+ 1720 	si_addrinfo: 92
+ 1721 	si_addrinfo_list: 95
+ 1722 	si_addrinfo_list_from_hostent: 840
+ 1723 	si_addrinfo_v4: 113
+ 1724 	si_addrinfo_v4_mapped: 119
+ 1725 	si_addrinfo_v6: 96
+ 1726 	si_alias_all: 76
+ 1727 	si_alias_byname: 144
+ 1728 	si_async_call: 38
+ 1729 	si_async_cancel: 1081
+ 1730 	si_async_handle_reply: 876
+ 1731 	si_cache_add_item: 268
+ 1732 	si_cache_add_list: 296
+ 1733 	si_fs_all: 88
+ 1734 	si_fs_byfile: 166
+ 1735 	si_fs_byspec: 164
+ 1736 	si_group_all: 74
+ 1737 	si_group_bygid: 140
+ 1738 	si_group_byname: 138
+ 1739 	si_group_byuuid: 316
+ 1740 	si_grouplist: 142
+ 1741 	si_host_all: 78
+ 1742 	si_host_byaddr: 148
+ 1743 	si_host_byname: 146
+ 1744 	si_in_netgroup: 338
+ 1745 	si_inet_config: 219
+ 1746 	si_ipnode_byname: 208
+ 1747 	si_item_call: 133
+ 1748 	si_item_is_valid: 489
+ 1749 	si_item_match: 493
+ 1750 	si_item_release: 20
+ 1751 	si_item_retain: 108
+ 1752 	si_list_add: 105
+ 1753 	si_list_call: 71
+ 1754 	si_list_concat: 124
+ 1755 	si_list_next: 1298
+ 1756 	si_list_release: 26
+ 1757 	si_list_reset: 31
+ 1758 	si_list_retain: 300
+ 1759 	si_mac_all: 90
+ 1760 	si_mac_bymac: 247
+ 1761 	si_mac_byname: 245
+ 1762 	si_module_name: const char * (), <./lookup.subproj/si_module.c 306>
+ 1763 	si_module_release: void (), <./lookup.subproj/si_module.c 264>
+ 1764 		OSAtomicDecrement32Barrier: <>
+ 1765 		pthread_mutex_lock: <>
+ 1766 		pthread_mutex_unlock: <>
+ 1767 		free: <>
+ 1768 		reallocf: <>
+ 1769 		sim_close: <>
+ 1770 		dlclose: <>
+ 1771 	si_module_retain: si_mod_t * (), <./lookup.subproj/si_module.c 253>
+ 1772 		OSAtomicIncrement32Barrier: <>
+ 1773 	si_module_static_cache: 477
+ 1774 	si_module_static_ds: 687
+ 1775 	si_module_static_file: 604
+ 1776 	si_module_static_mdns: 813
+ 1777 	si_module_static_search: 257
+ 1778 	si_module_vers: int (), <./lookup.subproj/si_module.c 314>
+ 1779 	si_module_with_name: 256
+ 1780 	si_module_with_path: 858
+ 1781 	si_nameinfo: 168
+ 1782 	si_netgroup_byname: 329
+ 1783 	si_network_all: 80
+ 1784 	si_network_byaddr: 152
+ 1785 	si_network_byname: 150
+ 1786 	si_protocol_all: 84
+ 1787 	si_protocol_byname: 158
+ 1788 	si_protocol_bynumber: 160
+ 1789 	si_rpc_all: 86
+ 1790 	si_rpc_byname: 407
+ 1791 	si_rpc_bynumber: 162
+ 1792 	si_search: 255
+ 1793 	si_search_module_set_flags: void (), <./lookup.subproj/libinfo.c 89>
+ 1794 		search_set_flags: 1678
+ 1795 		si_search: 255
+ 1796 	si_service_all: 82
+ 1797 	si_service_byname: 154
+ 1798 	si_service_byport: 156
+ 1799 	si_srv_byname: si_list_t * (), <./lookup.subproj/si_getaddrinfo.c 911>
+ 1800 		sim_srv_byname: <>
+ 1801 	si_standardize_mac_address: 796
+ 1802 	si_user_all: 72
+ 1803 	si_user_byname: 134
+ 1804 	si_user_byuid: 136
+ 1805 	si_user_byuuid: 287
+ 1806 	si_wants_addrinfo: 129
+ 1807 	svc_run: void (), <./rpc.subproj/svc_run.c 71>
+ 1808 		select: switch (), <./rpc.subproj/pmap_rmt.c 392>
+ 1809 		perror: <>
+ 1810 		svc_getreqset: <>
+ 1811 	svcraw_create: SVCXPRT * (), <./rpc.subproj/svc_raw.c 99>
+ 1812 		calloc: <>
+ 1813 		xdrmem_create: 887
+ 1814 	user_from_uid: char * (), <./lookup.subproj/libinfo.c 3219>
+ 1815 		getpwuid: struct passwd (), <./lookup.subproj/libinfo.c 233>
+ 1816 		snprintf: <>
+ 1817 	xdr_array: bool_t (), <./rpc.subproj/xdr_array.c 88>
+ 1818 		bool_t: <>
+ 1819 		xdr_u_int: if (), <./rpc.subproj/xdr.c 724>
+ 1820 			XDR_PUTLONG: <>
+ 1821 			XDR_GETLONG: if (), <./rpc.subproj/xdr.c 480>
+ 1822 		mem_alloc: <>
+ 1823 		warnx: <>
+ 1824 		memset: <>
+ 1825 		mem_free: <>
+ 1826 	xdr_domainname: bool_t (), <./nis.subproj/xdr_domainname.c 72>
+ 1827 		xdr_string: <>
+ 1828 	xdr_double: bool_t (), <./rpc.subproj/xdr_float.c 224>
+ 1829 		bool_t: <>
+ 1830 		XDR_PUTINT32: <>
+ 1831 		MASK: <>
+ 1832 		XDR_GETINT32: <>
+ 1833 	xdr_float: bool_t (), <./rpc.subproj/xdr_float.c 122>
+ 1834 		XDR_PUTINT32: <>
+ 1835 		XDR_GETINT32: <>
+ 1836 	xdr_free: void (), <./rpc.subproj/xdr.c 111>
+ 1837 	xdr_int: if (), <./rpc.subproj/xdr.c 438>
+ 1838 		XDR_PUTLONG: <>
+ 1839 		XDR_GETLONG: if (), <./rpc.subproj/xdr.c 480>
+ 1840 	xdr_keydat: bool_t (), <./nis.subproj/xdr_keydat.c 72>
+ 1841 		xdr_bytes: <>
+ 1842 	xdr_mapname: bool_t (), <./nis.subproj/xdr_mapname.c 72>
+ 1843 		xdr_string: <>
+ 1844 	xdr_peername: bool_t (), <./nis.subproj/xdr_peername.c 72>
+ 1845 		xdr_string: <>
+ 1846 	xdr_pmap: 956
+ 1847 	xdr_pointer: bool_t (), <./rpc.subproj/xdr_reference.c 148>
+ 1848 		bool_t: <>
+ 1849 		xdr_bool: <>
+ 1850 		xdr_reference: bool_t (), <./rpc.subproj/xdr_reference.c 91>
+ 1851 			bool_t: <>
+ 1852 			mem_alloc: <>
+ 1853 			warnx: <>
+ 1854 			memset: <>
+ 1855 			mem_free: <>
+ 1856 	xdr_reference: 1850
+ 1857 	xdr_sizeof: unsigned int unsigned long (), <./rpc.subproj/xdr_sizeof.c 170>
+ 1858 		bool_t: <>
+ 1859 		x_destroy: void (), <./rpc.subproj/xdr_sizeof.c 153>
+ 1860 			free: <>
+ 1861 		harmless: int (), <./rpc.subproj/xdr_sizeof.c 146>
+ 1862 		free: <>
+ 1863 	xdr_u_int: 1819
+ 1864 	xdr_valdat: bool_t (), <./nis.subproj/xdr_valdat.c 72>
+ 1865 		xdr_bytes: <>
+ 1866 	xdr_vector: bool_t (), <./rpc.subproj/xdr_array.c 166>
+ 1867 	xdr_void: 1668
+ 1868 	xdr_x_passwd: bool_t (), <./nis.subproj/yppasswdd_xdr.c 65>
+ 1869 		xdr_string: <>
+ 1870 		xdr_int: 1837
+ 1871 	xdr_ypbind_binding: bool_t (), <./nis.subproj/xdr_ypbind_binding.c 72>
+ 1872 		xdr_opaque: <>
+ 1873 	xdr_ypbind_resp: bool_t (), <./nis.subproj/xdr_ypbind_resp.c 72>
+ 1874 		xdr_ypbind_resptype: bool_t (), <./nis.subproj/xdr_ypbind_resptype.c 72>
+ 1875 			xdr_enum: if (), <./rpc.subproj/xdr.c 663>
+ 1876 		xdr_u_int: 1819
+ 1877 		xdr_ypbind_binding: 1871
+ 1878 	xdr_ypbind_resptype: 1874
+ 1879 	xdr_ypbind_setdom: bool_t (), <./nis.subproj/xdr_ypbind_setdom.c 72>
+ 1880 		xdr_domainname: 1826
+ 1881 		xdr_ypbind_binding: 1871
+ 1882 		xdr_u_int: 1819
+ 1883 	xdr_ypmaplist: bool_t (), <./nis.subproj/xdr_ypmaplist.c 72>
+ 1884 		xdr_mapname: 1842
+ 1885 		xdr_pointer: 1847
+ 1886 		xdr_ypmaplist: 1883
+ 1887 	xdr_yppasswd: bool_t (), <./nis.subproj/yppasswdd_xdr.c 94>
+ 1888 		xdr_string: <>
+ 1889 		xdr_x_passwd: 1868
+ 1890 	xdr_ypreq_key: bool_t (), <./nis.subproj/xdr_ypreq_key.c 72>
+ 1891 		xdr_domainname: 1826
+ 1892 		xdr_mapname: 1842
+ 1893 		xdr_keydat: 1840
+ 1894 	xdr_ypreq_nokey: bool_t (), <./nis.subproj/xdr_ypreq_nokey.c 72>
+ 1895 		xdr_domainname: 1826
+ 1896 		xdr_mapname: 1842
+ 1897 	xdr_ypresp_all: bool_t (), <./nis.subproj/xdr_ypresp_all.c 72>
+ 1898 		xdr_bool: <>
+ 1899 		xdr_ypresp_key_val: bool_t (), <./nis.subproj/xdr_ypresp_key_val.c 72>
+ 1900 			xdr_ypstat: bool_t (), <./nis.subproj/xdr_ypstat.c 72>
+ 1901 				xdr_enum: if (), <./rpc.subproj/xdr.c 663>
+ 1902 			xdr_valdat: 1864
+ 1903 			xdr_keydat: 1840
+ 1904 	xdr_ypresp_all_seq: bool_t (), <./nis.subproj/yp_all.c 79>
+ 1905 		memset: <>
+ 1906 		xdr_ypresp_all: 1897
+ 1907 		xdr_free: 1836
+ 1908 		malloc: <>
+ 1909 		memcpy: <>
+ 1910 		free: <>
+ 1911 	xdr_ypresp_key_val: 1899
+ 1912 	xdr_ypresp_maplist: bool_t (), <./nis.subproj/xdr_ypresp_maplist.c 72>
+ 1913 		xdr_ypstat: 1900
+ 1914 		xdr_pointer: 1847
+ 1915 		xdr_ypmaplist: 1883
+ 1916 	xdr_ypresp_master: bool_t (), <./nis.subproj/xdr_ypresp_master.c 72>
+ 1917 		xdr_ypstat: 1900
+ 1918 		xdr_peername: 1844
+ 1919 	xdr_ypresp_order: bool_t (), <./nis.subproj/xdr_ypresp_order.c 72>
+ 1920 		xdr_ypstat: 1900
+ 1921 		xdr_u_int: 1819
+ 1922 	xdr_ypresp_val: bool_t (), <./nis.subproj/xdr_ypresp_val.c 72>
+ 1923 		xdr_ypstat: 1900
+ 1924 		xdr_valdat: 1864
+ 1925 	xdr_ypstat: 1900
+ 1926 	xdrmem_create: 887
+ 1927 	xdrrec_create: 975
+ 1928 	xdrstdio_create: void (), <./rpc.subproj/xdr_stdio.c 112>
+ 1929 	xprt_register: void (), <./rpc.subproj/svc.c 112>
+ 1930 		mem_alloc: <>
+ 1931 		FD_SET: <>
+ 1932 		max: <>
+ 1933 	xprt_unregister: void (), <./rpc.subproj/svc.c 132>
+ 1934 		FD_CLR: <>
+ 1935 	yp_get_default_domain: int (), <./nis.subproj/yp_get_default_domain.c 76>
+ 1936 		getdomainname: 1094
+ 1937 	yperr_string: char * (), <./nis.subproj/yperr_string.c 75>
+ 1938 		snprintf: <>

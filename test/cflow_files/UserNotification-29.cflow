@@ -1,0 +1,60 @@
+    1 	UNCDisplayAlert: int (), <./Libunc/UNCUserNotification.c 401>
+    2 		UNCUserNotificationCreate: UNCUserNotificationRef (), <./Libunc/UNCUserNotification.c 265>
+    3 			getpid: <>
+    4 			UNCSessionIDForContents: const char * (), <./Libunc/UNCUserNotification.c 209>
+    5 				strcmp: <>
+    6 			mach_port_allocate: <>
+    7 			mach_task_self: <>
+    8 			UNCSendRequest: int (), <./Libunc/UNCUserNotification.c 221>
+    9 				strcpy: <>
+   10 				strcat: <>
+   11 				strncat: <>
+   12 				task_get_bootstrap_port: <>
+   13 				mach_task_self: <>
+   14 				bootstrap_look_up: <>
+   15 				UNCPackContents: unsigned long (), <./Libunc/UNCUserNotification.c 84>
+   16 					snprintf: <>
+   17 					APPEND: <>
+   18 					strlen: <>
+   19 					APPENDN: <>
+   20 				malloc: <>
+   21 				bzero: <>
+   22 				MACH_MSGH_BITS: <>
+   23 				mach_msg: <>
+   24 				free: <>
+   25 				unix_err: <>
+   26 			malloc: <>
+   27 			bzero: <>
+   28 			strlen: <>
+   29 			strncpy: <>
+   30 			unix_err: <>
+   31 			mach_port_destroy: <>
+   32 		UNCUserNotificationReceiveResponse: int (), <./Libunc/UNCUserNotification.c 304>
+   33 			malloc: <>
+   34 			bzero: <>
+   35 			mach_msg: <>
+   36 			UNCUnpackContents: unsigned long (), <./Libunc/UNCUserNotification.c 157>
+   37 				strstr: <>
+   38 				strlen: <>
+   39 				convertEscapes: void (), <./Libunc/UNCUserNotification.c 139>
+   40 			mach_port_destroy: <>
+   41 			mach_task_self: <>
+   42 			free: <>
+   43 			unix_err: <>
+   44 		UNCUserNotificationFree: void (), <./Libunc/UNCUserNotification.c 374>
+   45 			mach_port_destroy: <>
+   46 			mach_task_self: <>
+   47 			free: <>
+   48 	UNCDisplayNotice: int (), <./Libunc/UNCUserNotification.c 384>
+   49 		UNCUserNotificationCreate: 2
+   50 		UNCUserNotificationFree: 44
+   51 	UNCUserNotificationCancel: int (), <./Libunc/UNCUserNotification.c 366>
+   52 		UNCSendRequest: 8
+   53 	UNCUserNotificationCreate: 2
+   54 	UNCUserNotificationFree: 44
+   55 	UNCUserNotificationGetResponseContents: const char ** (), <./Libunc/UNCUserNotification.c 354>
+   56 	UNCUserNotificationGetResponseValue: const char * (), <./Libunc/UNCUserNotification.c 342>
+   57 		strcmp: <>
+   58 	UNCUserNotificationReceiveResponse: 32
+   59 	UNCUserNotificationUpdate: int (), <./Libunc/UNCUserNotification.c 358>
+   60 		UNCSendRequest: 8

@@ -1,0 +1,2075 @@
+    1 	main: int (), <./nfs4mapid/nfs4mapid.c 65>
+    2 		getopt: <>
+    3 		atoi: <>
+    4 		strcmp: <>
+    5 		printf: <>
+    6 		usage: void (), <./showmount/showmount.c 352>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 			errx: <>
+   10 		do_mountinfo: void (), <./nfsstat/nfsstat.c 1408>
+   11 			strlen: <>
+   12 			getmntinfo: <>
+   13 			strcmp: <>
+   14 			read_mountinfo: int (), <./nfsstat/nfsstat.c 446>
+   15 				malloc: <>
+   16 				warnx: <>
+   17 				bzero: <>
+   18 				getvfsbyname: <>
+   19 				htonl: <>
+   20 				sysctl: <>
+   21 				warn: <>
+   22 				free: <>
+   23 				ntohl: <>
+   24 			warnx: <>
+   25 			print_mountinfo: void (), <./nfsstat/nfsstat.c 1303>
+   26 				NFS_BITMAP_ZERO: <>
+   27 				bzero: <>
+   28 				xb_init_buffer: <>
+   29 				xb_get_32: <>
+   30 				printf: <>
+   31 				xb_get_bitmap: <>
+   32 				NFS_BITMAP_ISSET: <>
+   33 				parse_mountargs: int (), <./nfsstat/nfsstat.c 840>
+   34 					xb_get_32: <>
+   35 					xb_get_bitmap: <>
+   36 					NFS_BITMAP_ISSET: <>
+   37 					xb_get_bytes: <>
+   38 					calloc: <>
+   39 					xb_skip: <>
+   40 					mountargs_cleanup: void (), <./nfsstat/nfsstat.c 770>
+   41 						free: <>
+   42 				print_mountargs: void (), <./nfsstat/nfsstat.c 1131>
+   43 					printf: <>
+   44 					NFS_BITMAP_ISSET: <>
+   45 					socket_type: const char * (), <./nfsstat/nfsstat.c 1107>
+   46 						strcmp: <>
+   47 					sec_flavor_name: const char * (), <./nfsstat/nfsstat.c 1094>
+   48 				mountargs_cleanup: 40
+   49 			free: <>
+   50 		do_exports_interval: void (), <./nfsstat/nfsstat.c 1500>
+   51 			signal: <>
+   52 			catchalarm: void (), <./nfsstat/nfsstat.c 2093>
+   53 			alarm: <>
+   54 			printf: <>
+   55 			fflush: <>
+   56 			read_export_stats: int (), <./nfsstat/nfsstat.c 267>
+   57 				malloc: <>
+   58 				warnx: <>
+   59 				bzero: <>
+   60 				getvfsbyname: <>
+   61 				free: <>
+   62 				sysctl: <>
+   63 				errx: <>
+   64 			display_export_diffs: void (), <./nfsstat/nfsstat.c 1548>
+   65 				printf: <>
+   66 				findExport: struct nfs_export_stat_rec (), <./nfsstat/nfsstat.c 1590>
+   67 			sigemptyset: <>
+   68 			sigaddset: <>
+   69 			sigprocmask: <>
+   70 			sigsuspend: <>
+   71 		do_exports_normal: void (), <./nfsstat/nfsstat.c 1454>
+   72 			read_export_stats: 56
+   73 			printf: <>
+   74 			free: <>
+   75 		do_active_users_interval: void (), <./nfsstat/nfsstat.c 1689>
+   76 			signal: <>
+   77 			catchalarm: 52
+   78 			alarm: <>
+   79 			printf: <>
+   80 			fflush: <>
+   81 			read_active_user_stats: int (), <./nfsstat/nfsstat.c 356>
+   82 				malloc: <>
+   83 				warnx: <>
+   84 				bzero: <>
+   85 				getvfsbyname: <>
+   86 				free: <>
+   87 				sysctl: <>
+   88 				errx: <>
+   89 			display_active_user_diffs: void (), <./nfsstat/nfsstat.c 1739>
+   90 				printf: <>
+   91 				get_sorted_active_user_list: struct nfs_export_node_head (), <./nfsstat/nfsstat.c 1966>
+   92 				LIST_FOREACH: <>
+   93 				findActiveUser: struct nfs_user_stat_user_rec (), <./nfsstat/nfsstat.c 1799>
+   94 				serialdiff_64: uint64_t (), <./nfsstat/nfsstat.c 2070>
+   95 				bcopy: <>
+   96 				displayActiveUserRec: void (), <./nfsstat/nfsstat.c 1863>
+   97 					gettimeofday: <>
+   98 					gethostbyaddr: <>
+   99 					inet_ntop: <>
+  100 					getpwuid: <>
+  101 					printf: <>
+  102 				free_nfs_export_list: void (), <./nfsstat/nfsstat.c 2054>
+  103 					LIST_FIRST: <>
+  104 					LIST_REMOVE: <>
+  105 					free: <>
+  106 				free: <>
+  107 			sigemptyset: <>
+  108 			sigaddset: <>
+  109 			sigprocmask: <>
+  110 			sigsuspend: <>
+  111 		do_active_users_normal: void (), <./nfsstat/nfsstat.c 1632>
+  112 			read_active_user_stats: 81
+  113 			printf: <>
+  114 			free: <>
+  115 			get_sorted_active_user_list: struct nfs_export_node_head (), <./nfsstat/nfsstat.c 1966>
+  116 			LIST_FOREACH: <>
+  117 			displayActiveUserRec: 96
+  118 			free_nfs_export_list: 102
+  119 		sidewaysintpr: void (), <./nfsstat/nfsstat.c 669>
+  120 			signal: <>
+  121 			catchalarm: 52
+  122 			alarm: <>
+  123 			bzero: <>
+  124 			printhdr: void (), <./nfsstat/nfsstat.c 2080>
+  125 				printf: <>
+  126 				fflush: <>
+  127 			readstats: void (), <./nfsstat/nfsstat.c 233>
+  128 				getvfsbyname: <>
+  129 				sysctl: <>
+  130 			printf: <>
+  131 			fflush: <>
+  132 			sigemptyset: <>
+  133 			sigaddset: <>
+  134 			sigprocmask: <>
+  135 			sigsuspend: <>
+  136 		intpr: void (), <./nfsstat/nfsstat.c 526>
+  137 			readstats: 127
+  138 			printf: <>
+  139 		exit: <>
+  140 		realpath: <>
+  141 		statfs: <>
+  142 		warn: <>
+  143 		nfs_cred_destroy: int (), <./ncdestroy/ncdestroy.c 36>
+  144 			fsctl: <>
+  145 		getmntinfo: <>
+  146 		config_read: int (), <./rpc.statd/statd.c 563>
+  147 			fopen: <>
+  148 			log: <>
+  149 			fparseln: <>
+  150 			free: <>
+  151 			isspace: <>
+  152 			strchr: <>
+  153 			strncmp: <>
+  154 			DEBUG: <>
+  155 			strtol: <>
+  156 			strcmp: <>
+  157 			fclose: <>
+  158 		list_hosts: int (), <./rpc.statd/file.c 870>
+  159 			init_file: int (), <./rpc.statd/file.c 444>
+  160 				get_statd_pid: pid_t (), <./rpc.statd/statd.c 428>
+  161 					open: <>
+  162 					DEBUG: <>
+  163 					strerror: <>
+  164 					read: <>
+  165 					strtol: <>
+  166 					fcntl: <>
+  167 					close: <>
+  168 				open: <>
+  169 				log: <>
+  170 				strerror: <>
+  171 				exit: <>
+  172 				fcntl: <>
+  173 				read: <>
+  174 				ntohl: <>
+  175 				close: <>
+  176 				convert_version0_file: int (), <./rpc.statd/file.c 291>
+  177 					log: <>
+  178 					open: <>
+  179 					strerror: <>
+  180 					fstat: <>
+  181 					read: <>
+  182 					ntohl: <>
+  183 					OSSwapInt32: <>
+  184 					malloc: <>
+  185 					strlen: <>
+  186 					strlcpy: <>
+  187 					strlcat: <>
+  188 					htonl: <>
+  189 					write: <>
+  190 					htons: <>
+  191 					RNDUP_NAMELEN: <>
+  192 					bzero: <>
+  193 					pwrite: <>
+  194 					fsync: <>
+  195 					free: <>
+  196 					close: <>
+  197 					rename: <>
+  198 					unlink: <>
+  199 				htonl: <>
+  200 				pwrite: <>
+  201 				fsync: <>
+  202 				DEBUG: <>
+  203 				malloc: <>
+  204 				pread: <>
+  205 				ntohs: <>
+  206 				RNDUP_NAMELEN: <>
+  207 				htons: <>
+  208 				ftruncate: <>
+  209 				bzero: <>
+  210 				lseek: <>
+  211 				map_file: void (), <./rpc.statd/file.c 94>
+  212 					sync_file: void (), <./rpc.statd/file.c 123>
+  213 						msync: <>
+  214 						log: <>
+  215 						strerror: <>
+  216 					munmap: <>
+  217 					mmap: <>
+  218 					log: <>
+  219 					exit: <>
+  220 				sync_file: 212
+  221 				free: <>
+  222 			TAILQ_INIT: <>
+  223 			printf: <>
+  224 			ntohl: <>
+  225 			lseek: <>
+  226 			map_file: 211
+  227 			ntohs: <>
+  228 			HOSTINFO: <>
+  229 			TAILQ_FOREACH: <>
+  230 			strcmp: <>
+  231 			calloc: <>
+  232 			strncpy: <>
+  233 			TAILQ_INSERT_TAIL: <>
+  234 			TAILQ_FOREACH_SAFE: <>
+  235 			TAILQ_REMOVE: <>
+  236 			free: <>
+  237 			sleep: <>
+  238 		getuid: <>
+  239 		log: <>
+  240 		do_unnotify_host: int (), <./rpc.statd/file.c 822>
+  241 			init_file: 159
+  242 			ntohs: <>
+  243 			HOSTINFO: <>
+  244 			strncmp: <>
+  245 			sync_file: 212
+  246 		signal: <>
+  247 		cleanup: void (), <./rpc.statd/statd.c 544>
+  248 			htonl: <>
+  249 			ntohl: <>
+  250 			sync_file: 212
+  251 			alarm: <>
+  252 			rpcb_unset: <>
+  253 			pidfile_remove: <>
+  254 			exit: <>
+  255 		openlog: <>
+  256 		setlogmask: <>
+  257 		LOG_UPTO: <>
+  258 		notify_hosts: int (), <./rpc.statd/file.c 728>
+  259 			pidfile_open: <>
+  260 			log: <>
+  261 			strerror: <>
+  262 			pidfile_write: <>
+  263 			init_file: 159
+  264 			pidfile_remove: <>
+  265 			lseek: <>
+  266 			map_file: 211
+  267 			ntohl: <>
+  268 			HOSTINFO: <>
+  269 			notify_one_host: int (), <./rpc.statd/file.c 656>
+  270 				gethostname: <>
+  271 				ntohl: <>
+  272 				DEBUG: <>
+  273 				getaddresslist: int (), <./showmount/showmount.c 167>
+  274 					strlen: <>
+  275 					strlcpy: <>
+  276 					bzero: <>
+  277 					getaddrinfo: <>
+  278 					addrinfo_cmp: int (), <./rpc.statd/statd.c 757>
+  279 						bcmp: <>
+  280 					freeaddrinfo: <>
+  281 					warnx: <>
+  282 					addrinfo_cmp: int (), <./mount_nfs/mount_nfs.c 1855>
+  283 						bcmp: <>
+  284 					inet_ntop: <>
+  285 					printf: <>
+  286 					addrinfo_cmp: int (), <./showmount/showmount.c 154>
+  287 						bcmp: <>
+  288 				log: <>
+  289 				clnttcp_create_sa: <>
+  290 				clntudp_create_sa: <>
+  291 				clnt_spcreateerror: <>
+  292 				clnt_call: <>
+  293 				xdr_stat_chge: bool_t (), <./rpc.lockd/sm_inter_xdr.c 82>
+  294 					xdr_string: <>
+  295 					xdr_int: <>
+  296 				clnt_destroy: <>
+  297 				freeaddrinfo: <>
+  298 			sync_file: 212
+  299 			ntohs: <>
+  300 			sleep: <>
+  301 		pidfile_open: <>
+  302 		strerror: <>
+  303 		pidfile_write: <>
+  304 		init_file: 159
+  305 		get_statd_notify_pid: pid_t (), <./rpc.statd/statd.c 472>
+  306 			open: <>
+  307 			DEBUG: <>
+  308 			strerror: <>
+  309 			read: <>
+  310 			strtol: <>
+  311 			fcntl: <>
+  312 			close: <>
+  313 		statd_notify_is_loaded: int (), <./rpc.statd/statd.c 680>
+  314 			launch_data_alloc: <>
+  315 			launch_data_dict_insert: <>
+  316 			launch_data_new_string: <>
+  317 			launch_msg: <>
+  318 			launch_data_get_type: <>
+  319 			launch_data_free: <>
+  320 			log: <>
+  321 		statd_notify_start: int (), <./rpc.statd/statd.c 704>
+  322 			launch_data_alloc: <>
+  323 			launch_data_dict_insert: <>
+  324 			launch_data_new_string: <>
+  325 			launch_msg: <>
+  326 			launch_data_get_type: <>
+  327 			launch_data_get_errno: <>
+  328 			launch_data_free: <>
+  329 		statd_notify_load: int (), <./rpc.statd/statd.c 668>
+  330 			safe_exec: int (), <./rpc.statd/statd.c 629>
+  331 				posix_spawn_file_actions_init: <>
+  332 				log: <>
+  333 				strerror: <>
+  334 				posix_spawn_file_actions_addopen: <>
+  335 				posix_spawn: <>
+  336 				posix_spawn_file_actions_destroy: <>
+  337 				waitpid: <>
+  338 				usleep: <>
+  339 				WIFSIGNALED: <>
+  340 				WTERMSIG: <>
+  341 				WIFSTOPPED: <>
+  342 				WSTOPSIG: <>
+  343 				WEXITSTATUS: <>
+  344 		rpcb_unset: <>
+  345 		socket: <>
+  346 		htons: <>
+  347 		bindresvport_sa: <>
+  348 		sleep: <>
+  349 		close: <>
+  350 		getsockname: <>
+  351 		ntohs: <>
+  352 		svcudp_create: <>
+  353 		svc_register: <>
+  354 		sm_prog_1: void (), <./rpc.statd/sm_inter_svc.c 67>
+  355 			svc_sendreply: <>
+  356 			xdr_sm_name: bool_t (), <./rpc.lockd/sm_inter_xdr.c 36>
+  357 				xdr_string: <>
+  358 			xdr_sm_stat_res: bool_t (), <./rpc.lockd/sm_inter_xdr.c 111>
+  359 				xdr_sm_res: bool_t (), <./rpc.lockd/sm_inter_xdr.c 102>
+  360 					xdr_enum: <>
+  361 				xdr_int: <>
+  362 			sm_stat_1_svc: struct sm_stat_res (), <./rpc.statd/procs.c 132>
+  363 			xdr_mon: bool_t (), <./rpc.lockd/sm_inter_xdr.c 71>
+  364 				xdr_mon_id: bool_t (), <./rpc.lockd/sm_inter_xdr.c 60>
+  365 					xdr_string: <>
+  366 					xdr_my_id: bool_t (), <./rpc.lockd/sm_inter_xdr.c 45>
+  367 						xdr_string: <>
+  368 						xdr_int: <>
+  369 				xdr_opaque: <>
+  370 			sm_mon_1_svc: struct sm_stat_res (), <./rpc.statd/procs.c 167>
+  371 			xdr_mon_id: 364
+  372 			xdr_sm_stat: bool_t (), <./rpc.lockd/sm_inter_xdr.c 93>
+  373 				xdr_int: <>
+  374 			sm_unmon_1_svc: struct sm_stat (), <./rpc.statd/procs.c 274>
+  375 			xdr_my_id: 366
+  376 			sm_unmon_all_1_svc: struct sm_stat (), <./rpc.statd/procs.c 311>
+  377 			sm_simu_crash_1_svc: void * (), <./rpc.statd/procs.c 357>
+  378 				svc_getcaller_sa: <>
+  379 				getnameinfo: <>
+  380 				strlcpy: <>
+  381 				log: <>
+  382 				ntohl: <>
+  383 				HOSTINFO: <>
+  384 				htons: <>
+  385 				ntohs: <>
+  386 				htonl: <>
+  387 				get_statd_notify_pid: 305
+  388 				statd_notify_is_loaded: 313
+  389 				statd_notify_start: 321
+  390 				statd_notify_load: 329
+  391 			xdr_stat_chge: 293
+  392 			sm_notify_1_svc: void * (), <./rpc.statd/procs.c 425>
+  393 				DEBUG: <>
+  394 				find_host: struct host (), <./nfsd/mountd.c 3968>
+  395 					strlen: <>
+  396 					RNDUP_NAMELEN: <>
+  397 					bzero: <>
+  398 					tfind: <>
+  399 					mhcmp: int (), <./rpc.statd/file.c 138>
+  400 						HOSTINFO: <>
+  401 						strcmp: <>
+  402 					malloc: <>
+  403 					ntohl: <>
+  404 					HOSTINFO: <>
+  405 					ntohs: <>
+  406 					strncasecmp: <>
+  407 					pwrite: <>
+  408 					free: <>
+  409 					log: <>
+  410 					htons: <>
+  411 					fsync: <>
+  412 					strerror: <>
+  413 					map_file: 211
+  414 					htonl: <>
+  415 					strlcpy: <>
+  416 					tsearch: <>
+  417 					sync_file: 212
+  418 				svc_getcaller_sa: <>
+  419 				gethostbyaddr: <>
+  420 				strlen: <>
+  421 				addrstr: char * (), <./rpc.statd/procs.c 80>
+  422 					getnameinfo: <>
+  423 					strlcpy: <>
+  424 				HOSTINFO: <>
+  425 				fork: <>
+  426 				log: <>
+  427 				strerror: <>
+  428 				memcpy: <>
+  429 				getaddresslist: 273
+  430 				clnttcp_create_sa: <>
+  431 				clntudp_create_sa: <>
+  432 				clnt_spcreateerror: <>
+  433 				clnt_call: <>
+  434 				xdr_sm_status: bool_t (), <./rpc.lockd/sm_inter_xdr.c 122>
+  435 					xdr_string: <>
+  436 					xdr_int: <>
+  437 					xdr_opaque: <>
+  438 				clnt_destroy: <>
+  439 				freeaddrinfo: <>
+  440 				exit: <>
+  441 			svcerr_noproc: <>
+  442 			memset: <>
+  443 			svc_getargs: <>
+  444 			svcerr_decode: <>
+  445 			svcerr_systemerr: <>
+  446 			svc_freeargs: <>
+  447 			log: <>
+  448 			exit: <>
+  449 		svc_destroy: <>
+  450 		setsockopt: <>
+  451 		svctcp_create: <>
+  452 		handle_sigchld: void (), <./rpc.statd/statd.c 525>
+  453 			wait4: <>
+  454 			log: <>
+  455 			DEBUG: <>
+  456 			WEXITSTATUS: <>
+  457 		sigemptyset: <>
+  458 		sigaddset: <>
+  459 		sigaction: <>
+  460 		svc_run: <>
+  461 		clnt_create: <>
+  462 		clnt_pcreateerror: <>
+  463 		sm_stat_1: struct sm_stat_res (), <./rpc.statd/test.c 56>
+  464 		bzero: <>
+  465 		sm_mon_1: struct sm_stat_res (), <./rpc.statd/test.c 71>
+  466 		sm_unmon_1: struct sm_stat (), <./rpc.statd/test.c 86>
+  467 		sm_unmon_all_1: struct sm_stat (), <./rpc.statd/test.c 101>
+  468 		sm_simu_crash_1: void * (), <./rpc.statd/test.c 116>
+  469 			bzero: <>
+  470 			clnt_call: <>
+  471 			clnt_perror: <>
+  472 		sm_notify_1: void * (), <./rpc.statd/test.c 130>
+  473 			bzero: <>
+  474 			clnt_call: <>
+  475 			xdr_stat_chge: 293
+  476 			clnt_perror: <>
+  477 		config_read: int (), <./rpc.lockd/lockd.c 765>
+  478 			fopen: <>
+  479 			syslog: <>
+  480 			fparseln: <>
+  481 			free: <>
+  482 			isspace: <>
+  483 			strchr: <>
+  484 			strncmp: <>
+  485 			strtol: <>
+  486 			strcmp: <>
+  487 			fclose: <>
+  488 		geteuid: <>
+  489 		fprintf: <>
+  490 		handle_sig_cleanup: void (), <./rpc.lockd/lockd.c 673>
+  491 			kill: <>
+  492 			wait4: <>
+  493 			alarm: <>
+  494 			rpcb_unset: <>
+  495 			pidfile_remove: <>
+  496 			exit: <>
+  497 		syslog: <>
+  498 		statd_start: int (), <./rpc.lockd/lockd.c 983>
+  499 			statd_is_running: int (), <./rpc.lockd/lockd.c 894>
+  500 				get_statd_pid: pid_t (), <./rpc.lockd/lockd.c 846>
+  501 					open: <>
+  502 					syslog: <>
+  503 					strerror: <>
+  504 					read: <>
+  505 					strtol: <>
+  506 					fcntl: <>
+  507 					close: <>
+  508 			statd_is_loaded: int (), <./rpc.lockd/lockd.c 900>
+  509 				launch_data_alloc: <>
+  510 				launch_data_dict_insert: <>
+  511 				launch_data_new_string: <>
+  512 				launch_msg: <>
+  513 				launch_data_get_type: <>
+  514 				launch_data_free: <>
+  515 				syslog: <>
+  516 			statd_service_start: int (), <./rpc.lockd/lockd.c 959>
+  517 				launch_data_alloc: <>
+  518 				launch_data_dict_insert: <>
+  519 				launch_data_new_string: <>
+  520 				launch_msg: <>
+  521 				launch_data_get_type: <>
+  522 				launch_data_get_errno: <>
+  523 				launch_data_free: <>
+  524 			statd_load: int (), <./rpc.lockd/lockd.c 924>
+  525 				launch_data_alloc: <>
+  526 				launch_data_free: <>
+  527 				launch_data_array_set_index: <>
+  528 				launch_data_new_string: <>
+  529 				launch_data_dict_insert: <>
+  530 				launch_data_new_bool: <>
+  531 				launch_msg: <>
+  532 				launch_data_get_type: <>
+  533 				launch_data_get_errno: <>
+  534 			nanosleep: <>
+  535 		handle_sigchld: void (), <./rpc.lockd/lockd.c 701>
+  536 			wait4: <>
+  537 			syslog: <>
+  538 			WEXITSTATUS: <>
+  539 			handle_sig_cleanup: 490
+  540 		sigprocmask: <>
+  541 		fork: <>
+  542 		sigwait: <>
+  543 		client_mach_request: void (), <./rpc.lockd/kern.c 358>
+  544 			bootstrap_check_in: <>
+  545 			syslog: <>
+  546 			bootstrap_strerror: <>
+  547 			time: <>
+  548 			getpid: <>
+  549 			shutdown_timer: void (), <./rpc.lockd/kern.c 167>
+  550 				get_client_and_server_state: int (), <./rpc.lockd/kern.c 145>
+  551 					sysctlbyname: <>
+  552 				syslog: <>
+  553 				statd_stop: int (), <./rpc.lockd/lockd.c 1005>
+  554 					launch_data_alloc: <>
+  555 					launch_data_dict_insert: <>
+  556 					launch_data_new_string: <>
+  557 					launch_msg: <>
+  558 					launch_data_get_type: <>
+  559 					launch_data_get_errno: <>
+  560 					launch_data_free: <>
+  561 				handle_sig_cleanup: 490
+  562 			sigemptyset: <>
+  563 			sigaction: <>
+  564 			strerror: <>
+  565 			gettimeofday: <>
+  566 			get_client_and_server_state: 550
+  567 			MAX: <>
+  568 			alarm: <>
+  569 			pthread_attr_init: <>
+  570 			pthread_attr_setdetachstate: <>
+  571 			pthread_create: <>
+  572 			client_request_thread: void * (), <./rpc.lockd/kern.c 346>
+  573 				mach_msg_server: <>
+  574 				MACH_RCV_TRAILER_ELEMENTS: <>
+  575 				MACH_RCV_TRAILER_TYPE: <>
+  576 		nlm_prog_0: void (), <./rpc.lockd/nlm_prot_svc.c 73>
+  577 			svc_sendreply: <>
+  578 			xdr_nlm_sm_status: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 454>
+  579 				xdr_string: <>
+  580 				xdr_int: <>
+  581 				xdr_opaque: <>
+  582 			nlm_sm_notify_0_svc: void * (), <./rpc.lockd/lock_proc.c 1670>
+  583 				notify: void (), <./rpc.lockd/lockd_lock.c 2705>
+  584 					debuglog: void (), <./rpc.lockd/lockd_lock.c 274>
+  585 						sleep: <>
+  586 						va_start: <>
+  587 						vsyslog: <>
+  588 						va_end: <>
+  589 					siglock: void (), <./rpc.lockd/lockd_lock.c 3157>
+  590 						sigemptyset: <>
+  591 						sigaddset: <>
+  592 						sigprocmask: <>
+  593 						syslog: <>
+  594 						strerror: <>
+  595 					do_clear: void (), <./rpc.lockd/lockd_lock.c 2096>
+  596 						clear_partialfilelock: void (), <./rpc.lockd/lockd_lock.c 1812>
+  597 							TAILQ_FOREACH: <>
+  598 							strncmp: <>
+  599 							debuglog: 584
+  600 							clear_blockingfilelock: void (), <./rpc.lockd/lockd_lock.c 1337>
+  601 								LIST_FIRST: <>
+  602 								LIST_NEXT: <>
+  603 								strncmp: <>
+  604 								remove_blockingfilelock: void (), <./rpc.lockd/lockd_lock.c 1326>
+  605 									debuglog: 584
+  606 									LIST_REMOVE: <>
+  607 								deallocate_file_lock: void (), <./rpc.lockd/lockd_lock.c 504>
+  608 									free: <>
+  609 							LIST_FIRST: <>
+  610 							LIST_NEXT: <>
+  611 							unlock_partialfilelock: enum partialfilelock_status (), <./rpc.lockd/lockd_lock.c 1648>
+  612 							syslog: <>
+  613 					do_notify_mounts: void (), <./rpc.lockd/lockd_lock.c 2108>
+  614 						debuglog: 584
+  615 						bzero: <>
+  616 						getaddrinfo: <>
+  617 						malloc: <>
+  618 						inet_ntop: <>
+  619 						bcopy: <>
+  620 						MIN: <>
+  621 						nfsclnt: <>
+  622 						freeaddrinfo: <>
+  623 					sigunlock: void (), <./rpc.lockd/lockd_lock.c 3170>
+  624 						sigemptyset: <>
+  625 						sigaddset: <>
+  626 						sigprocmask: <>
+  627 						syslog: <>
+  628 						strerror: <>
+  629 			svcerr_noproc: <>
+  630 			memset: <>
+  631 			svc_getargs: <>
+  632 			svcerr_decode: <>
+  633 			svcerr_systemerr: <>
+  634 			svc_freeargs: <>
+  635 			syslog: <>
+  636 			exit: <>
+  637 		nlm_prog_1: void (), <./rpc.lockd/nlm_prot_svc.c 121>
+  638 			svc_sendreply: <>
+  639 			xdr_nlm_testargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 164>
+  640 				xdr_netobj: <>
+  641 				xdr_bool: <>
+  642 				xdr_nlm_lock: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 111>
+  643 					xdr_string: <>
+  644 					xdr_netobj: <>
+  645 					xdr_int: <>
+  646 					xdr_u_int: <>
+  647 			xdr_nlm_testres: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 100>
+  648 				xdr_netobj: <>
+  649 				xdr_nlm_testrply: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 63>
+  650 					xdr_nlm_stats: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 37>
+  651 						xdr_enum: <>
+  652 					xdr_nlm_holder: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 46>
+  653 						xdr_bool: <>
+  654 						xdr_int: <>
+  655 						xdr_netobj: <>
+  656 						xdr_u_int: <>
+  657 			nlm_test_1_svc: nlm_testres * (), <./rpc.lockd/lock_proc.c 573>
+  658 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  659 				log_from_addr: <>
+  660 				testlock: struct nlm4_holder (), <./rpc.lockd/lockd_lock.c 2178>
+  661 				stat: <>
+  662 				memcpy: <>
+  663 			xdr_nlm_lockargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 130>
+  664 				xdr_netobj: <>
+  665 				xdr_bool: <>
+  666 				xdr_nlm_lock: 642
+  667 				xdr_int: <>
+  668 			xdr_nlm_res: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 89>
+  669 				xdr_netobj: <>
+  670 				xdr_nlm_stat: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 80>
+  671 					xdr_nlm_stats: 650
+  672 			nlm_lock_1_svc: nlm_res * (), <./rpc.lockd/lock_proc.c 661>
+  673 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  674 				log_from_addr: <>
+  675 				stat: <>
+  676 				getlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2218>
+  677 			xdr_nlm_cancargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 149>
+  678 				xdr_netobj: <>
+  679 				xdr_bool: <>
+  680 				xdr_nlm_lock: 642
+  681 			nlm_cancel_1_svc: nlm_res * (), <./rpc.lockd/lock_proc.c 728>
+  682 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  683 				log_from_addr: <>
+  684 				stat: <>
+  685 				cancellock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2319>
+  686 			xdr_nlm_unlockargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 177>
+  687 				xdr_netobj: <>
+  688 				xdr_nlm_lock: 642
+  689 			nlm_unlock_1_svc: nlm_res * (), <./rpc.lockd/lock_proc.c 783>
+  690 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  691 				log_from_addr: <>
+  692 				stat: <>
+  693 				unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2287>
+  694 			nlm_granted_1_svc: nlm_res * (), <./rpc.lockd/lock_proc.c 842>
+  695 				log_from_addr: <>
+  696 				lock_answer: int (), <./rpc.lockd/kern.c 714>
+  697 					syslog: <>
+  698 					memcpy: <>
+  699 					nfslockdans: <>
+  700 				stat: <>
+  701 			nlm_test_msg_1_svc: void * (), <./rpc.lockd/lock_proc.c 607>
+  702 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  703 				log_from_addr: <>
+  704 				testlock: struct nlm4_holder (), <./rpc.lockd/lockd_lock.c 2178>
+  705 				stat: <>
+  706 				memcpy: <>
+  707 				get_client: CLIENT * (), <./rpc.lockd/lock_proc.c 231>
+  708 					gettimeofday: <>
+  709 					addrcmp: int (), <./rpc.lockd/lock_proc.c 204>
+  710 						memcmp: <>
+  711 					syslog: <>
+  712 					TAILQ_FIRST: <>
+  713 					TAILQ_NEXT: <>
+  714 					TAILQ_REMOVE: <>
+  715 					free: <>
+  716 					clnt_destroy: <>
+  717 					clnttcp_create_sa: <>
+  718 					clntudp_create_sa: <>
+  719 					malloc: <>
+  720 					memcpy: <>
+  721 					TAILQ_INSERT_TAIL: <>
+  722 					getnameinfo: <>
+  723 					clnt_spcreateerror: <>
+  724 					clnt_control: <>
+  725 				svc_getcaller_sa: <>
+  726 				clnt_call: <>
+  727 				xdr_nlm_testres: 647
+  728 				syslog: <>
+  729 			nlm_lock_msg_1_svc: void * (), <./rpc.lockd/lock_proc.c 685>
+  730 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  731 				log_from_addr: <>
+  732 				stat: <>
+  733 				getlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2218>
+  734 				transmit_result: int (), <./rpc.lockd/lock_proc.c 463>
+  735 					get_client: 707
+  736 					clnt_call: <>
+  737 					xdr_nlm_res: 668
+  738 					syslog: <>
+  739 					clnt_sperrno: <>
+  740 				svc_getcaller_sa: <>
+  741 				unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2287>
+  742 				cancellock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2319>
+  743 			nlm_cancel_msg_1_svc: void * (), <./rpc.lockd/lock_proc.c 751>
+  744 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  745 				log_from_addr: <>
+  746 				stat: <>
+  747 				cancellock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2319>
+  748 				transmit_result: 734
+  749 				svc_getcaller_sa: <>
+  750 			nlm_unlock_msg_1_svc: void * (), <./rpc.lockd/lock_proc.c 802>
+  751 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  752 				log_from_addr: <>
+  753 				stat: <>
+  754 				unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2287>
+  755 				transmit_result: 734
+  756 				svc_getcaller_sa: <>
+  757 			nlm_granted_msg_1_svc: void * (), <./rpc.lockd/lock_proc.c 874>
+  758 				log_from_addr: <>
+  759 				lock_answer: 696
+  760 				stat: <>
+  761 				transmit_result: 734
+  762 				svc_getcaller_sa: <>
+  763 			nlm_test_res_1_svc: void * (), <./rpc.lockd/lock_proc.c 913>
+  764 				log_from_addr: <>
+  765 				stat: <>
+  766 				lock_answer: 696
+  767 			nlm_lock_res_1_svc: void * (), <./rpc.lockd/lock_proc.c 943>
+  768 				log_from_addr: <>
+  769 				lock_answer: 696
+  770 				stat: <>
+  771 			nlm_cancel_res_1_svc: void * (), <./rpc.lockd/lock_proc.c 961>
+  772 				log_from_addr: <>
+  773 				lock_answer: 696
+  774 				stat: <>
+  775 			nlm_unlock_res_1_svc: void * (), <./rpc.lockd/lock_proc.c 979>
+  776 				log_from_addr: <>
+  777 				lock_answer: 696
+  778 				stat: <>
+  779 			nlm_granted_res_1_svc: void * (), <./rpc.lockd/lock_proc.c 997>
+  780 				log_from_addr: <>
+  781 				stat: <>
+  782 				granted_failed: void (), <./rpc.lockd/lockd_lock.c 2810>
+  783 					debuglog: 584
+  784 					stat: <>
+  785 					bcopy: <>
+  786 					LIST_FOREACH: <>
+  787 					dump_filelock: void (), <./rpc.lockd/lockd_lock.c 372>
+  788 						debuglog: 584
+  789 						dump_static_object: <>
+  790 						dump_netobj: void (), <./rpc.lockd/lockd_lock.c 348>
+  791 					do_unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2044>
+  792 			svcerr_noproc: <>
+  793 			memset: <>
+  794 			svc_getargs: <>
+  795 			svcerr_decode: <>
+  796 			svcerr_systemerr: <>
+  797 			retry_blockingfilelocklist: void (), <./rpc.lockd/lockd_lock.c 1365>
+  798 				debuglog: 584
+  799 				LIST_FIRST: <>
+  800 				LIST_NEXT: <>
+  801 				same_netobj: int (), <./rpc.lockd/lockd_lock.c 715>
+  802 				LIST_REMOVE: <>
+  803 				lock_partialfilelock: enum partialfilelock_status (), <./rpc.lockd/lockd_lock.c 1510>
+  804 				send_granted: int (), <./rpc.lockd/lockd_lock.c 2718>
+  805 					debuglog: 584
+  806 					get_client: 707
+  807 					syslog: <>
+  808 					clnt_call: <>
+  809 					xdr_nlm4_testargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 359>
+  810 						xdr_netobj: <>
+  811 						xdr_bool: <>
+  812 						xdr_nlm4_lock: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 295>
+  813 							xdr_string: <>
+  814 							xdr_netobj: <>
+  815 							xdr_u_int32_t: <>
+  816 							xdr_u_int64_t: <>
+  817 					xdr_nlm4_res: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 372>
+  818 						xdr_netobj: <>
+  819 						xdr_nlm4_stat: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 269>
+  820 							xdr_nlm4_stats: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 260>
+  821 								xdr_enum: <>
+  822 					xdr_nlm_testargs: 639
+  823 					xdr_nlm_res: 668
+  824 					clnt_sperrno: <>
+  825 				do_unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2044>
+  826 				deallocate_file_lock: 607
+  827 				LIST_INSERT_AFTER: <>
+  828 				LIST_INSERT_HEAD: <>
+  829 			svc_freeargs: <>
+  830 			syslog: <>
+  831 			exit: <>
+  832 		nlm_prog_3: void (), <./rpc.lockd/nlm_prot_svc.c 277>
+  833 			svc_sendreply: <>
+  834 			xdr_nlm_testargs: 639
+  835 			xdr_nlm_testres: 647
+  836 			nlm_test_1_svc: 657
+  837 			xdr_nlm_lockargs: 663
+  838 			xdr_nlm_res: 668
+  839 			nlm_lock_1_svc: 672
+  840 			xdr_nlm_cancargs: 677
+  841 			nlm_cancel_1_svc: 681
+  842 			xdr_nlm_unlockargs: 686
+  843 			nlm_unlock_1_svc: 689
+  844 			nlm_granted_1_svc: 694
+  845 			nlm_test_msg_1_svc: 701
+  846 			nlm_lock_msg_1_svc: 729
+  847 			nlm_cancel_msg_1_svc: 743
+  848 			nlm_unlock_msg_1_svc: 750
+  849 			nlm_granted_msg_1_svc: 757
+  850 			nlm_test_res_1_svc: 763
+  851 			nlm_lock_res_1_svc: 767
+  852 			nlm_cancel_res_1_svc: 771
+  853 			nlm_unlock_res_1_svc: 775
+  854 			nlm_granted_res_1_svc: 779
+  855 			xdr_nlm_shareargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 223>
+  856 				xdr_netobj: <>
+  857 				xdr_nlm_share: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 206>
+  858 					xdr_string: <>
+  859 					xdr_netobj: <>
+  860 					xdr_fsh_mode: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 188>
+  861 						xdr_enum: <>
+  862 					xdr_fsh_access: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 197>
+  863 						xdr_enum: <>
+  864 				xdr_bool: <>
+  865 			xdr_nlm_shareres: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 236>
+  866 				xdr_netobj: <>
+  867 				xdr_nlm_stats: 650
+  868 				xdr_int: <>
+  869 			nlm_share_3_svc: nlm_shareres * (), <./rpc.lockd/lock_proc.c 1029>
+  870 				log_from_addr: <>
+  871 				getshare: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2852>
+  872 			nlm_unshare_3_svc: nlm_shareres * (), <./rpc.lockd/lock_proc.c 1053>
+  873 				log_from_addr: <>
+  874 				unshare: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2992>
+  875 			nlm_nm_lock_3_svc: nlm_res * (), <./rpc.lockd/lock_proc.c 1080>
+  876 				nlmtonlm4: void (), <./rpc.lockd/lock_proc.c 528>
+  877 				log_from_addr: <>
+  878 				stat: <>
+  879 				getlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2218>
+  880 			xdr_nlm_notify: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 249>
+  881 				xdr_string: <>
+  882 				xdr_int32_t: <>
+  883 			nlm_free_all_3_svc: void * (), <./rpc.lockd/lock_proc.c 1114>
+  884 				log_from_addr: <>
+  885 				do_free_all: void (), <./rpc.lockd/lockd_lock.c 3062>
+  886 					LIST_FIRST: <>
+  887 					LIST_NEXT: <>
+  888 					strncmp: <>
+  889 					remove_blockingfilelock: 604
+  890 					deallocate_file_lock: 607
+  891 					unlock_partialfilelock: enum partialfilelock_status (), <./rpc.lockd/lockd_lock.c 1648>
+  892 					syslog: <>
+  893 					LIST_REMOVE: <>
+  894 					free: <>
+  895 					close: <>
+  896 			svcerr_noproc: <>
+  897 			memset: <>
+  898 			svc_getargs: <>
+  899 			svcerr_decode: <>
+  900 			svcerr_systemerr: <>
+  901 			retry_blockingfilelocklist: 797
+  902 			svc_freeargs: <>
+  903 			syslog: <>
+  904 			exit: <>
+  905 		nlm_prog_4: void (), <./rpc.lockd/nlm_prot_svc.c 461>
+  906 			svc_sendreply: <>
+  907 			xdr_nlm4_testargs: 809
+  908 			xdr_nlm4_testres: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 348>
+  909 				xdr_netobj: <>
+  910 				xdr_nlm4_testrply: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 331>
+  911 					xdr_nlm4_stats: 820
+  912 					xdr_nlm4_holder: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 278>
+  913 						xdr_bool: <>
+  914 						xdr_u_int32_t: <>
+  915 						xdr_netobj: <>
+  916 						xdr_u_int64_t: <>
+  917 			nlm4_test_4_svc: nlm4_testres * (), <./rpc.lockd/lock_proc.c 1137>
+  918 				log_from_addr: <>
+  919 				syslog: <>
+  920 				log_netobj: <>
+  921 				testlock: struct nlm4_holder (), <./rpc.lockd/lockd_lock.c 2178>
+  922 				stat: <>
+  923 				memcpy: <>
+  924 			xdr_nlm4_lockargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 383>
+  925 				xdr_netobj: <>
+  926 				xdr_bool: <>
+  927 				xdr_nlm4_lock: 812
+  928 				xdr_int: <>
+  929 			xdr_nlm4_res: 817
+  930 			nlm4_lock_4_svc: nlm4_res * (), <./rpc.lockd/lock_proc.c 1234>
+  931 				log_from_addr: <>
+  932 				syslog: <>
+  933 				log_netobj: <>
+  934 				stat: <>
+  935 				getlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2218>
+  936 			xdr_nlm4_cancargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 402>
+  937 				xdr_netobj: <>
+  938 				xdr_bool: <>
+  939 				xdr_nlm4_lock: 812
+  940 			nlm4_cancel_4_svc: nlm4_res * (), <./rpc.lockd/lock_proc.c 1305>
+  941 				log_from_addr: <>
+  942 				stat: <>
+  943 				cancellock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2319>
+  944 			xdr_nlm4_unlockargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 417>
+  945 				xdr_netobj: <>
+  946 				xdr_nlm4_lock: 812
+  947 			nlm4_unlock_4_svc: nlm4_res * (), <./rpc.lockd/lock_proc.c 1348>
+  948 				log_from_addr: <>
+  949 				stat: <>
+  950 				unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2287>
+  951 			nlm4_granted_4_svc: nlm4_res * (), <./rpc.lockd/lock_proc.c 1401>
+  952 				log_from_addr: <>
+  953 				lock_answer: 696
+  954 				stat: <>
+  955 			nlm4_test_msg_4_svc: void * (), <./rpc.lockd/lock_proc.c 1185>
+  956 				log_from_addr: <>
+  957 				testlock: struct nlm4_holder (), <./rpc.lockd/lockd_lock.c 2178>
+  958 				stat: <>
+  959 				memcpy: <>
+  960 				get_client: 707
+  961 				svc_getcaller_sa: <>
+  962 				clnt_call: <>
+  963 				xdr_nlm4_testres: 908
+  964 				syslog: <>
+  965 			nlm4_lock_msg_4_svc: void * (), <./rpc.lockd/lock_proc.c 1270>
+  966 				log_from_addr: <>
+  967 				stat: <>
+  968 				getlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2218>
+  969 				transmit4_result: int (), <./rpc.lockd/lock_proc.c 497>
+  970 					get_client: 707
+  971 					clnt_call: <>
+  972 					xdr_nlm4_res: 817
+  973 					syslog: <>
+  974 					clnt_sperrno: <>
+  975 				svc_getcaller_sa: <>
+  976 				unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2287>
+  977 				cancellock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2319>
+  978 			nlm4_cancel_msg_4_svc: void * (), <./rpc.lockd/lock_proc.c 1322>
+  979 				log_from_addr: <>
+  980 				stat: <>
+  981 				cancellock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2319>
+  982 				transmit4_result: 969
+  983 				svc_getcaller_sa: <>
+  984 			nlm4_unlock_msg_4_svc: void * (), <./rpc.lockd/lock_proc.c 1364>
+  985 				log_from_addr: <>
+  986 				stat: <>
+  987 				unlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2287>
+  988 				transmit4_result: 969
+  989 				svc_getcaller_sa: <>
+  990 			nlm4_granted_msg_4_svc: void * (), <./rpc.lockd/lock_proc.c 1427>
+  991 				log_from_addr: <>
+  992 				lock_answer: 696
+  993 				stat: <>
+  994 				transmit4_result: 969
+  995 				svc_getcaller_sa: <>
+  996 			nlm4_test_res_4_svc: void * (), <./rpc.lockd/lock_proc.c 1460>
+  997 				log_from_addr: <>
+  998 				stat: <>
+  999 				lock_answer: 696
+ 1000 			nlm4_lock_res_4_svc: void * (), <./rpc.lockd/lock_proc.c 1490>
+ 1001 				log_from_addr: <>
+ 1002 				lock_answer: 696
+ 1003 				stat: <>
+ 1004 			nlm4_cancel_res_4_svc: void * (), <./rpc.lockd/lock_proc.c 1508>
+ 1005 				log_from_addr: <>
+ 1006 				lock_answer: 696
+ 1007 				stat: <>
+ 1008 			nlm4_unlock_res_4_svc: void * (), <./rpc.lockd/lock_proc.c 1526>
+ 1009 				log_from_addr: <>
+ 1010 				lock_answer: 696
+ 1011 				stat: <>
+ 1012 			nlm4_granted_res_4_svc: void * (), <./rpc.lockd/lock_proc.c 1544>
+ 1013 				log_from_addr: <>
+ 1014 				stat: <>
+ 1015 				granted_failed: 782
+ 1016 			xdr_nlm4_shareargs: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 428>
+ 1017 				xdr_netobj: <>
+ 1018 				xdr_nlm4_share: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 314>
+ 1019 					xdr_string: <>
+ 1020 					xdr_netobj: <>
+ 1021 					xdr_fsh_mode: 860
+ 1022 					xdr_fsh_access: 862
+ 1023 				xdr_bool: <>
+ 1024 			xdr_nlm4_shareres: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 441>
+ 1025 				xdr_netobj: <>
+ 1026 				xdr_nlm4_stats: 820
+ 1027 				xdr_int: <>
+ 1028 			nlm4_share_4_svc: nlm4_shareres * (), <./rpc.lockd/lock_proc.c 1572>
+ 1029 				log_from_addr: <>
+ 1030 				getshare: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2852>
+ 1031 			nlm4_unshare_4_svc: nlm4_shareres * (), <./rpc.lockd/lock_proc.c 1595>
+ 1032 				log_from_addr: <>
+ 1033 				unshare: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2992>
+ 1034 			nlm4_nm_lock_4_svc: nlm4_res * (), <./rpc.lockd/lock_proc.c 1622>
+ 1035 				log_from_addr: <>
+ 1036 				stat: <>
+ 1037 				getlock: enum nlm4_stats (), <./rpc.lockd/lockd_lock.c 2218>
+ 1038 			xdr_nlm4_notify: bool_t (), <./rpc.lockd/nlm_prot_xdr.c 467>
+ 1039 				xdr_string: <>
+ 1040 				xdr_int32_t: <>
+ 1041 			nlm4_free_all_4_svc: void * (), <./rpc.lockd/lock_proc.c 1649>
+ 1042 				log_from_addr: <>
+ 1043 				do_free_all: 885
+ 1044 			svcerr_noproc: <>
+ 1045 			memset: <>
+ 1046 			svc_getargs: <>
+ 1047 			svcerr_decode: <>
+ 1048 			svcerr_systemerr: <>
+ 1049 			retry_blockingfilelocklist: 797
+ 1050 			svc_freeargs: <>
+ 1051 			syslog: <>
+ 1052 			exit: <>
+ 1053 		init_nsm: void (), <./rpc.lockd/lockd.c 623>
+ 1054 			callrpc: <>
+ 1055 			xdr_my_id: 366
+ 1056 			xdr_sm_stat: 372
+ 1057 			syslog: <>
+ 1058 			clnt_sperrno: <>
+ 1059 			statd_start: 498
+ 1060 			sleep: <>
+ 1061 			exit: <>
+ 1062 		getrlimit: <>
+ 1063 		MIN: <>
+ 1064 		setrlimit: <>
+ 1065 		sigalarm_grace_period_handler: void (), <./rpc.lockd/lockd.c 606>
+ 1066 		alarm: <>
+ 1067 		kill: <>
+ 1068 		getppid: <>
+ 1069 		my_svc_run: void (), <./rpc.lockd/lockd.c 720>
+ 1070 			bcopy: <>
+ 1071 			select: <>
+ 1072 			perror: <>
+ 1073 			gettimeofday: <>
+ 1074 			svc_getreqset: <>
+ 1075 			fprintf: <>
+ 1076 			expire_lock_hosts: int (), <./rpc.lockd/lockd_lock.c 2669>
+ 1077 				TAILQ_LAST: <>
+ 1078 				debuglog: 584
+ 1079 				destroy_lock_host: void (), <./rpc.lockd/lockd_lock.c 2625>
+ 1080 					debuglog: 584
+ 1081 					bzero: <>
+ 1082 					callrpc: <>
+ 1083 					xdr_mon_id: 364
+ 1084 					xdr_sm_stat: 372
+ 1085 					clnt_sperrno: <>
+ 1086 					TAILQ_REMOVE: <>
+ 1087 					free: <>
+ 1088 		errx: <>
+ 1089 		clnt_control: <>
+ 1090 		stat: <>
+ 1091 		nlm_lock_res_1: void * (), <./rpc.lockd/test.c 211>
+ 1092 			bzero: <>
+ 1093 			clnt_call: <>
+ 1094 			xdr_nlm_res: 668
+ 1095 		nlm_lock_msg_1: void * (), <./rpc.lockd/test.c 135>
+ 1096 			bzero: <>
+ 1097 			clnt_call: <>
+ 1098 			xdr_nlm_lockargs: 663
+ 1099 			clnt_perror: <>
+ 1100 		config_read: int (), <./mount_nfs/mount_nfs.c 1471>
+ 1101 			fopen: <>
+ 1102 			syslog: <>
+ 1103 			fparseln: <>
+ 1104 			free: <>
+ 1105 			isspace: <>
+ 1106 			strchr: <>
+ 1107 			strncmp: <>
+ 1108 			DEBUG: <>
+ 1109 			strtol: <>
+ 1110 			strcmp: <>
+ 1111 			fclose: <>
+ 1112 			warn: <>
+ 1113 			printf: <>
+ 1114 			handle_mntopts: void (), <./mount_nfs/mount_nfs.c 977>
+ 1115 				getmntopts: <>
+ 1116 				errx: <>
+ 1117 				getmntoptstr: <>
+ 1118 				getmntoptnum: <>
+ 1119 				warnx: <>
+ 1120 				NFS_BITMAP_SET: <>
+ 1121 				strtol: <>
+ 1122 				strcasecmp: <>
+ 1123 				get_sec_flavors: int (), <./mount_nfs/mount_nfs.c 881>
+ 1124 					strdup: <>
+ 1125 					bzero: <>
+ 1126 					strsep: <>
+ 1127 					strcmp: <>
+ 1128 					warnx: <>
+ 1129 					free: <>
+ 1130 				setNFSVersion: void (), <./mount_nfs/mount_nfs.c 867>
+ 1131 					NFS_BITMAP_ISSET: <>
+ 1132 					errx: <>
+ 1133 					NFS_BITMAP_SET: <>
+ 1134 				strdup: <>
+ 1135 				err: <>
+ 1136 				asprintf: <>
+ 1137 				freemntopts: <>
+ 1138 				printf: <>
+ 1139 				SETFLAG: <>
+ 1140 				NFS_BITMAP_CLR: <>
+ 1141 				warn_badoptions: void (), <./mount_nfs/mount_nfs.c 1430>
+ 1142 					strdup: <>
+ 1143 					strtok: <>
+ 1144 					strncmp: <>
+ 1145 					strchr: <>
+ 1146 					strcasecmp: <>
+ 1147 					warnx: <>
+ 1148 					free: <>
+ 1149 		sigmux: void (), <./rpc.rquotad/rquotad.c 126>
+ 1150 		rquota_service: void (), <./rpc.rquotad/rquotad.c 419>
+ 1151 			svc_sendreply: <>
+ 1152 			sendquota: void (), <./rpc.rquotad/rquotad.c 471>
+ 1153 				memset: <>
+ 1154 				svc_getargs: <>
+ 1155 				xdr_getquota_args: bool_t (), <./rpc.rquotad/rquota_xdr.c 37>
+ 1156 					xdr_string: <>
+ 1157 					xdr_int: <>
+ 1158 				svcerr_decode: <>
+ 1159 				xdr_ext_getquota_args: bool_t (), <./rpc.rquotad/rquota_xdr.c 50>
+ 1160 					xdr_string: <>
+ 1161 					xdr_int: <>
+ 1162 				ismember: int (), <./rpc.rquotad/rquotad.c 457>
+ 1163 				getfsquota: int (), <./rpc.rquotad/rquotad.c 562>
+ 1164 					QCMD: <>
+ 1165 					lock_fsq: void (), <./rpc.rquotad/rquotad.c 670>
+ 1166 						pthread_mutex_lock: <>
+ 1167 						syslog: <>
+ 1168 						strerror: <>
+ 1169 					quotactl: <>
+ 1170 					stat: <>
+ 1171 					TAILQ_FOREACH: <>
+ 1172 					open: <>
+ 1173 					syslog: <>
+ 1174 					lseek: <>
+ 1175 					close: <>
+ 1176 					read: <>
+ 1177 					memset: <>
+ 1178 					unlock_fsq: void (), <./rpc.rquotad/rquotad.c 677>
+ 1179 						pthread_mutex_unlock: <>
+ 1180 						syslog: <>
+ 1181 						strerror: <>
+ 1182 				gettimeofday: <>
+ 1183 				CLAMP_MAX_32: <>
+ 1184 				svc_sendreply: <>
+ 1185 				xdr_getquota_rslt: bool_t (), <./rpc.rquotad/rquota_xdr.c 178>
+ 1186 					xdr_gqr_status: bool_t (), <./rpc.rquotad/rquota_xdr.c 167>
+ 1187 						xdr_enum: <>
+ 1188 					xdr_rquota: bool_t (), <./rpc.rquotad/rquota_xdr.c 65>
+ 1189 						XDR_INLINE: <>
+ 1190 						xdr_int: <>
+ 1191 						xdr_bool: <>
+ 1192 						xdr_u_int: <>
+ 1193 						IXDR_PUT_LONG: <>
+ 1194 						IXDR_PUT_BOOL: <>
+ 1195 						IXDR_PUT_U_LONG: <>
+ 1196 						IXDR_GET_LONG: <>
+ 1197 						IXDR_GET_BOOL: <>
+ 1198 						IXDR_GET_U_LONG: <>
+ 1199 				svcerr_systemerr: <>
+ 1200 				svc_freeargs: <>
+ 1201 				syslog: <>
+ 1202 				exit: <>
+ 1203 			svcerr_noproc: <>
+ 1204 		ext_rquota_service: void (), <./rpc.rquotad/rquotad.c 438>
+ 1205 			svc_sendreply: <>
+ 1206 			sendquota: 1152
+ 1207 			svcerr_noproc: <>
+ 1208 		pthread_mutex_init: <>
+ 1209 		TAILQ_INIT: <>
+ 1210 		check_mounts: void (), <./rpc.rquotad/rquotad.c 808>
+ 1211 			lock_fsq: 1165
+ 1212 			get_mounts: void (), <./rpc.rquotad/rquotad.c 793>
+ 1213 				getfsstat: <>
+ 1214 				statfs: <>
+ 1215 				free: <>
+ 1216 				malloc: <>
+ 1217 				err: <>
+ 1218 				qsort: <>
+ 1219 				sfscmp: int (), <./rpc.rquotad/rquotad.c 785>
+ 1220 					statfs: <>
+ 1221 					strcmp: <>
+ 1222 			sfscmp: 1219
+ 1223 			DEBUG: <>
+ 1224 			fsdel: void (), <./rpc.rquotad/rquotad.c 753>
+ 1225 				TAILQ_FOREACH: <>
+ 1226 				strcmp: <>
+ 1227 				TAILQ_REMOVE: <>
+ 1228 				free: <>
+ 1229 			fsadd: void (), <./rpc.rquotad/rquotad.c 686>
+ 1230 				strcmp: <>
+ 1231 				hasquota: int (), <./rpc.rquotad/rquotad.c 641>
+ 1232 					snprintf: <>
+ 1233 					stat: <>
+ 1234 				malloc: <>
+ 1235 				syslog: <>
+ 1236 				bzero: <>
+ 1237 				strdup: <>
+ 1238 				stat: <>
+ 1239 				TAILQ_FOREACH: <>
+ 1240 				TAILQ_INSERT_BEFORE: <>
+ 1241 				TAILQ_INSERT_TAIL: <>
+ 1242 				free: <>
+ 1243 			unlock_fsq: 1178
+ 1244 		pthread_attr_init: <>
+ 1245 		pthread_attr_setdetachstate: <>
+ 1246 		pthread_create: <>
+ 1247 		rquotad_thread: void * (), <./rpc.rquotad/rquotad.c 397>
+ 1248 			sigemptyset: <>
+ 1249 			sigaddset: <>
+ 1250 			pthread_sigmask: <>
+ 1251 			svc_run: <>
+ 1252 			syslog: <>
+ 1253 			exit: <>
+ 1254 		kqueue: <>
+ 1255 		EV_SET: <>
+ 1256 		kevent: <>
+ 1257 		pidfile_remove: <>
+ 1258 		warnx: <>
+ 1259 		sysctlbyname: <>
+ 1260 		err: <>
+ 1261 		malloc: <>
+ 1262 		bcopy: <>
+ 1263 		setNFSVersion: 1130
+ 1264 		strtol: <>
+ 1265 		NFS_BITMAP_SET: <>
+ 1266 		SETFLAG: <>
+ 1267 		open: <>
+ 1268 		read: <>
+ 1269 		isspace: <>
+ 1270 		handle_mntopts: 1114
+ 1271 		strdup: <>
+ 1272 		set_krb5_sec_flavor_for_principal: void (), <./mount_nfs/mount_nfs.c 952>
+ 1273 			NFS_BITMAP_SET: <>
+ 1274 			warnx: <>
+ 1275 		NFS_BITMAP_ISSET: <>
+ 1276 		config_sysctl: void (), <./mount_nfs/mount_nfs.c 1645>
+ 1277 			sysctl_set: int (), <./nfsd/main.c 794>
+ 1278 				sysctlbyname: <>
+ 1279 				DEBUG: <>
+ 1280 			mobile_client: int (), <./mount_nfs/mount_nfs.c 1629>
+ 1281 				machineHasInternalBattery: bool (), <./mount_nfs/mount_nfs.c 1580>
+ 1282 					IOPSCopyPowerSourcesInfo: <>
+ 1283 					IOPSCopyPowerSourcesList: <>
+ 1284 					CFRelease: <>
+ 1285 					CFArrayGetCount: <>
+ 1286 					CFArrayGetValueAtIndex: <>
+ 1287 					IOPSGetPowerSourceDescription: <>
+ 1288 					CFDictionaryGetValue: <>
+ 1289 					CFSTR: <>
+ 1290 					CFGetTypeID: <>
+ 1291 					CFBooleanGetTypeID: <>
+ 1292 					CFBooleanGetValue: <>
+ 1293 					CFStringGetTypeID: <>
+ 1294 					CFStringCompare: <>
+ 1295 				sysctlbyname: <>
+ 1296 				strnstr: <>
+ 1297 		parse_fs_locations: int (), <./mount_nfs/mount_nfs.c 1701>
+ 1298 			strdup: <>
+ 1299 			malloc: <>
+ 1300 			bzero: <>
+ 1301 			isxdigit: <>
+ 1302 			inet_pton: <>
+ 1303 			free: <>
+ 1304 		daemon: <>
+ 1305 		errc: <>
+ 1306 		getaddresslists: void (), <./mount_nfs/mount_nfs.c 1974>
+ 1307 			getaddresslist: 273
+ 1308 		dump_mount_options: void (), <./mount_nfs/mount_nfs.c 2065>
+ 1309 			printf: <>
+ 1310 			NFS_BITMAP_ISSET: <>
+ 1311 			inet_ntop: <>
+ 1312 			sec_flavor_name: const char * (), <./mount_nfs/mount_nfs.c 2052>
+ 1313 		assemble_mount_args: int (), <./mount_nfs/mount_nfs.c 677>
+ 1314 			NFS_BITMAP_SET: <>
+ 1315 			xb_init_buffer: <>
+ 1316 			xb_add_32: <>
+ 1317 			xb_offset: <>
+ 1318 			xb_add_bitmap: <>
+ 1319 			NFS_BITMAP_ISSET: <>
+ 1320 			xb_add_word_array: <>
+ 1321 			get_socket_type_mount_arg: char * (), <./mount_nfs/mount_nfs.c 649>
+ 1322 				sprintf: <>
+ 1323 			xb_add_string: <>
+ 1324 			strlen: <>
+ 1325 			xb_add_fh: <>
+ 1326 			inet_ntop: <>
+ 1327 			warn: <>
+ 1328 			xb_build_done: <>
+ 1329 			xb_seek: <>
+ 1330 			xb_buffer_base: <>
+ 1331 			xb_cleanup: <>
+ 1332 		mount: <>
+ 1333 		freeaddresslists: void (), <./mount_nfs/mount_nfs.c 1997>
+ 1334 			freeaddrinfo: <>
+ 1335 		xb_free: <>
+ 1336 		browse: int (), <./showmount/mshow.c 187>
+ 1337 			err: <>
+ 1338 			DNSServiceBrowse: <>
+ 1339 			browser_callback: void (), <./showmount/mshow.c 135>
+ 1340 				err: <>
+ 1341 				printf: <>
+ 1342 				malloc: <>
+ 1343 				DNSServiceResolve: <>
+ 1344 				resolve_callback: void (), <./showmount/mshow.c 87>
+ 1345 					printf: <>
+ 1346 					malloc: <>
+ 1347 					strncpy: <>
+ 1348 					free: <>
+ 1349 					do_print: int (), <./showmount/showmount.c 397>
+ 1350 						getaddresslist: 273
+ 1351 						warnx: <>
+ 1352 						clnttcp_create_sa: <>
+ 1353 						clntudp_create_sa: <>
+ 1354 						free: <>
+ 1355 						strdup: <>
+ 1356 						clnt_spcreateerror: <>
+ 1357 						authunix_create_default: <>
+ 1358 						clnt_call: <>
+ 1359 						xdr_mntdump: int (), <./showmount/showmount.c 236>
+ 1360 							xdr_bool: <>
+ 1361 							malloc: <>
+ 1362 							xdr_string: <>
+ 1363 							strcmp: <>
+ 1364 							free: <>
+ 1365 						snprintf: <>
+ 1366 						clnt_sperror: <>
+ 1367 						xdr_exports: int (), <./showmount/showmount.c 313>
+ 1368 							TAILQ_INIT: <>
+ 1369 							xdr_bool: <>
+ 1370 							malloc: <>
+ 1371 							xdr_string: <>
+ 1372 							TAILQ_INSERT_TAIL: <>
+ 1373 						auth_destroy: <>
+ 1374 						clnt_destroy: <>
+ 1375 						strlen: <>
+ 1376 						printf: <>
+ 1377 						print_dump: void (), <./showmount/showmount.c 362>
+ 1378 							print_dump: 1377
+ 1379 							printf: <>
+ 1380 						free_dump: void (), <./showmount/showmount.c 387>
+ 1381 							free_dump: 1380
+ 1382 							free: <>
+ 1383 						TAILQ_FOREACH_SAFE: <>
+ 1384 						TAILQ_EMPTY: <>
+ 1385 					CFRunLoopRemoveSource: <>
+ 1386 					CFRunLoopGetCurrent: <>
+ 1387 					CFRelease: <>
+ 1388 					CFSocketInvalidate: <>
+ 1389 					DNSServiceRefDeallocate: <>
+ 1390 				free: <>
+ 1391 				CFSocketCreateWithNative: <>
+ 1392 				DNSServiceRefSockFD: <>
+ 1393 				socket_callback: void (), <./showmount/mshow.c 50>
+ 1394 					err: <>
+ 1395 					printf: <>
+ 1396 					DNSServiceProcessResult: <>
+ 1397 					exit: <>
+ 1398 					CFRunLoopRemoveSource: <>
+ 1399 					CFRunLoopGetCurrent: <>
+ 1400 					CFRelease: <>
+ 1401 					CFSocketInvalidate: <>
+ 1402 					DNSServiceRefDeallocate: <>
+ 1403 					free: <>
+ 1404 				DNSServiceRefDeallocate: <>
+ 1405 				CFSocketCreateRunLoopSource: <>
+ 1406 				CFRunLoopAddSource: <>
+ 1407 				CFRunLoopGetCurrent: <>
+ 1408 			CFSocketCreateWithNative: <>
+ 1409 			DNSServiceRefSockFD: <>
+ 1410 			socket_callback: 1393
+ 1411 			CFSocketCreateRunLoopSource: <>
+ 1412 			CFRunLoopAddSource: <>
+ 1413 			CFRunLoopGetCurrent: <>
+ 1414 			CFRunLoopRun: <>
+ 1415 			CFRelease: <>
+ 1416 			CFSocketInvalidate: <>
+ 1417 			DNSServiceRefDeallocate: <>
+ 1418 		do_print: 1349
+ 1419 		strlcpy: <>
+ 1420 		usage: void (), <./nfsd/main.c 178>
+ 1421 			fprintf: <>
+ 1422 			exit: <>
+ 1423 		signal_nfsd: void (), <./nfsd/main.c 1123>
+ 1424 			get_nfsd_pid: pid_t (), <./nfsd/main.c 1114>
+ 1425 				get_pid: pid_t (), <./nfsd/main.c 1068>
+ 1426 					open: <>
+ 1427 					DEBUG: <>
+ 1428 					strerror: <>
+ 1429 					read: <>
+ 1430 					strtol: <>
+ 1431 					fcntl: <>
+ 1432 					close: <>
+ 1433 			errx: <>
+ 1434 			kill: <>
+ 1435 			err: <>
+ 1436 		nfsd_is_enabled: int (), <./nfsd/main.c 1167>
+ 1437 			service_is_enabled: int (), <./nfsd/main.c 1146>
+ 1438 				SMJobIsEnabled: <>
+ 1439 			CFSTR: <>
+ 1440 		nfsd_is_loaded: int (), <./nfsd/main.c 1176>
+ 1441 			service_is_loaded: int (), <./nfsd/main.c 1157>
+ 1442 				SMJobIsEnabled: <>
+ 1443 			CFSTR: <>
+ 1444 		get_nfsd_pid: 1424
+ 1445 		sysctl_get: int (), <./nfsd/main.c 783>
+ 1446 			sysctlbyname: <>
+ 1447 		service_is_enabled: 1437
+ 1448 		CFSTR: <>
+ 1449 		service_is_loaded: 1441
+ 1450 		get_pid: 1425
+ 1451 		mountd_init: void (), <./nfsd/mountd.c 438>
+ 1452 			TAILQ_INIT: <>
+ 1453 			LIST_INIT: <>
+ 1454 			pthread_mutex_init: <>
+ 1455 			log: <>
+ 1456 			strerror: <>
+ 1457 			exit: <>
+ 1458 			uuidlist_restore: void (), <./nfsd/mountd.c 1605>
+ 1459 				fopen: <>
+ 1460 				log: <>
+ 1461 				strerror: <>
+ 1462 				DEBUG: <>
+ 1463 				fgets: <>
+ 1464 				strlen: <>
+ 1465 				strncmp: <>
+ 1466 				malloc: <>
+ 1467 				exit: <>
+ 1468 				sscanf: <>
+ 1469 				free: <>
+ 1470 				strlcpy: <>
+ 1471 				LIST_INSERT_HEAD: <>
+ 1472 				bzero: <>
+ 1473 				LIST_INIT: <>
+ 1474 				isxdigit: <>
+ 1475 				HEXSTRTOI: <>
+ 1476 				strncpy: <>
+ 1477 				check_dirpath: int (), <./nfsd/mountd.c 5064>
+ 1478 					lstat: <>
+ 1479 					S_ISDIR: <>
+ 1480 				statfs: <>
+ 1481 				strcmp: <>
+ 1482 				TAILQ_INSERT_TAIL: <>
+ 1483 				get_uuid_from_diskarb: int (), <./nfsd/mountd.c 1230>
+ 1484 					DASessionCreate: <>
+ 1485 					log: <>
+ 1486 					DADiskCreateFromBSDName: <>
+ 1487 					DEBUG: <>
+ 1488 					DADiskCopyDescription: <>
+ 1489 					CFDictionaryGetValueIfPresent: <>
+ 1490 					CFUUIDGetUUIDBytes: <>
+ 1491 					bcopy: <>
+ 1492 					CFRelease: <>
+ 1493 				bcmp: <>
+ 1494 				uuidstring: char * (), <./nfsd/mountd.c 1542>
+ 1495 					snprintf: <>
+ 1496 				fclose: <>
+ 1497 		get_exportlist: int (), <./nfsd/mountd.c 1985>
+ 1498 			lock_exports: void (), <./nfsd/mountd.c 784>
+ 1499 				pthread_mutex_lock: <>
+ 1500 				log: <>
+ 1501 				strerror: <>
+ 1502 			TAILQ_FOREACH: <>
+ 1503 			uuidlist_clearexport: void (), <./nfsd/mountd.c 1526>
+ 1504 				TAILQ_FOREACH: <>
+ 1505 			free_dirlist: void (), <./nfsd/mountd.c 3421>
+ 1506 				free: <>
+ 1507 			TAILQ_INIT: <>
+ 1508 			fopen: <>
+ 1509 			log: <>
+ 1510 			get_export_entry: int (), <./nfsd/mountd.c 4731>
+ 1511 				fgetln: <>
+ 1512 				realloc: <>
+ 1513 				log: <>
+ 1514 				memcpy: <>
+ 1515 			DEBUG: <>
+ 1516 			bzero: <>
+ 1517 			nextfield: void (), <./nfsd/mountd.c 4673>
+ 1518 			export_error: void (), <./nfsd/mountd.c 3229>
+ 1519 				va_start: <>
+ 1520 				vasprintf: <>
+ 1521 				va_end: <>
+ 1522 				LIST_FOREACH: <>
+ 1523 				strcmp: <>
+ 1524 				log: <>
+ 1525 				malloc: <>
+ 1526 				free: <>
+ 1527 				LIST_INSERT_AFTER: <>
+ 1528 				LIST_INSERT_HEAD: <>
+ 1529 			export_error_cleanup: void (), <./nfsd/mountd.c 3310>
+ 1530 				free_expfs: void (), <./nfsd/mountd.c 4258>
+ 1531 					TAILQ_FIRST: <>
+ 1532 					TAILQ_REMOVE: <>
+ 1533 					free_expdir: void (), <./nfsd/mountd.c 4240>
+ 1534 						free_hosts: void (), <./nfsd/mountd.c 4286>
+ 1535 							TAILQ_FOREACH_SAFE: <>
+ 1536 							TAILQ_REMOVE: <>
+ 1537 							free_host: void (), <./nfsd/mountd.c 4275>
+ 1538 								free_grp: void (), <./nfsd/mountd.c 3131>
+ 1539 									DEBUG: <>
+ 1540 									grp_name: char * (), <./nfsd/mountd.c 2923>
+ 1541 									grp_addr: const char * (), <./nfsd/mountd.c 2939>
+ 1542 										inet_ntop: <>
+ 1543 									freeaddrinfo: <>
+ 1544 									free: <>
+ 1545 								free: <>
+ 1546 						TAILQ_FIRST: <>
+ 1547 						TAILQ_REMOVE: <>
+ 1548 						free_expdir: 1533
+ 1549 						free: <>
+ 1550 					free: <>
+ 1551 			do_opt: int (), <./nfsd/mountd.c 4027>
+ 1552 				strchr: <>
+ 1553 				nextfield: 1517
+ 1554 				strcmp: <>
+ 1555 				parsecred: int (), <./nfsd/mountd.c 4786>
+ 1556 					strdup: <>
+ 1557 					strsep: <>
+ 1558 					isdigit: <>
+ 1559 					getpwuid: <>
+ 1560 					atoi: <>
+ 1561 					getpwnam: <>
+ 1562 					log: <>
+ 1563 					free: <>
+ 1564 					getgrouplist: <>
+ 1565 					getgrnam: <>
+ 1566 					snprintf_cred: void (), <./nfsd/mountd.c 5083>
+ 1567 						snprintf: <>
+ 1568 						strlcat: <>
+ 1569 					DEBUG: <>
+ 1570 				log: <>
+ 1571 				get_net: int (), <./nfsd/mountd.c 4478>
+ 1572 					getnetbyname: <>
+ 1573 					inet_makeaddr: <>
+ 1574 					inet_pton: <>
+ 1575 					isdigit: <>
+ 1576 					inet_network: <>
+ 1577 					setnetent: <>
+ 1578 					getnetent: <>
+ 1579 					endnetent: <>
+ 1580 					log: <>
+ 1581 					inet_ntop: <>
+ 1582 					inet_ntoa: <>
+ 1583 					strdup: <>
+ 1584 					DEBUG: <>
+ 1585 				get_sec_flavors: int (), <./nfsd/mountd.c 4564>
+ 1586 					strdup: <>
+ 1587 					bzero: <>
+ 1588 					strsep: <>
+ 1589 					strcmp: <>
+ 1590 					log: <>
+ 1591 					free: <>
+ 1592 				strlcpy: <>
+ 1593 				isxdigit: <>
+ 1594 				HEXSTRTOI: <>
+ 1595 			clean_pathname: char * (), <./nfsd/mountd.c 1180>
+ 1596 				strlen: <>
+ 1597 				malloc: <>
+ 1598 			free: <>
+ 1599 			strlen: <>
+ 1600 			strdup: <>
+ 1601 			add_dir: int (), <./nfsd/mountd.c 3341>
+ 1602 				strlen: <>
+ 1603 				strncmp: <>
+ 1604 				DEBUG: <>
+ 1605 				subdir_check: int (), <./nfsd/mountd.c 1957>
+ 1606 					strlen: <>
+ 1607 					strncmp: <>
+ 1608 					DEBUG: <>
+ 1609 				malloc: <>
+ 1610 				log: <>
+ 1611 			add_name: int (), <./nfsd/mountd.c 3440>
+ 1612 				TAILQ_FOREACH: <>
+ 1613 				strcmp: <>
+ 1614 				malloc: <>
+ 1615 				strdup: <>
+ 1616 				free: <>
+ 1617 				TAILQ_INSERT_TAIL: <>
+ 1618 			TAILQ_FIRST: <>
+ 1619 			TAILQ_REMOVE: <>
+ 1620 			setnetgrent: <>
+ 1621 			getnetgrent: <>
+ 1622 			endnetgrent: <>
+ 1623 			get_grp: struct grouplist (), <./nfsd/mountd.c 3047>
+ 1624 			add_grp: int (), <./nfsd/mountd.c 3171>
+ 1625 				grpcmp: int (), <./nfsd/mountd.c 2981>
+ 1626 					strcmp: <>
+ 1627 					bcmp: <>
+ 1628 					addrinfo_cmp: int (), <./nfsd/mountd.c 2968>
+ 1629 						bcmp: <>
+ 1630 			free_grp: 1538
+ 1631 			get_host_addresses: int (), <./nfsd/mountd.c 4213>
+ 1632 				bzero: <>
+ 1633 				getaddrinfo: <>
+ 1634 				log: <>
+ 1635 				strdup: <>
+ 1636 			check_options: int (), <./nfsd/mountd.c 5046>
+ 1637 				log: <>
+ 1638 			grp_name: 1540
+ 1639 			find_exported_fs_by_path_and_uuid: struct uuidlist (), <./nfsd/mountd.c 1862>
+ 1640 			find_exported_fs_by_dirlist: struct uuidlist (), <./nfsd/mountd.c 1894>
+ 1641 			check_dirpath: 1477
+ 1642 			subdir_check: 1605
+ 1643 			statfs: <>
+ 1644 			strerror: <>
+ 1645 			strcmp: <>
+ 1646 			get_uuid: struct uuidlist (), <./nfsd/mountd.c 1377>
+ 1647 			bcmp: <>
+ 1648 			uuidstring: 1494
+ 1649 			bcopy: <>
+ 1650 			ex_search: struct expfs (), <./nfsd/mountd.c 3320>
+ 1651 			get_expfs: struct expfs (), <./nfsd/mountd.c 2889>
+ 1652 			strncmp: <>
+ 1653 			get_export_id: struct expidlist (), <./nfsd/mountd.c 1819>
+ 1654 			get_expdir: struct expdir (), <./nfsd/mountd.c 2905>
+ 1655 			free_expdir: 1533
+ 1656 			hang_options_setup: int (), <./nfsd/mountd.c 3578>
+ 1657 				OP_EXOPTS: <>
+ 1658 				crcmp: int (), <./nfsd/mountd.c 3555>
+ 1659 				cmp_secflavs: int (), <./nfsd/mountd.c 4633>
+ 1660 				log: <>
+ 1661 				bcopy: <>
+ 1662 				DEBUG: <>
+ 1663 				find_group_match_in_host_list: struct host (), <./nfsd/mountd.c 3479>
+ 1664 				grp_name: 1540
+ 1665 				find_group_address_match_in_host_list: struct host (), <./nfsd/mountd.c 3493>
+ 1666 				get_host: struct host (), <./nfsd/mountd.c 4300>
+ 1667 				grp_addr: 1541
+ 1668 				add_host: int (), <./nfsd/mountd.c 3204>
+ 1669 					TAILQ_FOREACH: <>
+ 1670 					grpcmp: 1625
+ 1671 					TAILQ_INSERT_BEFORE: <>
+ 1672 					TAILQ_INSERT_TAIL: <>
+ 1673 				free_host: 1537
+ 1674 			hang_options_cleanup: void (), <./nfsd/mountd.c 3720>
+ 1675 				bcopy: <>
+ 1676 				TAILQ_FOREACH_SAFE: <>
+ 1677 				TAILQ_REMOVE: <>
+ 1678 				free_host: 1537
+ 1679 			do_export: int (), <./nfsd/mountd.c 4315>
+ 1680 				malloc: <>
+ 1681 				log: <>
+ 1682 				INIT_NETARG: <>
+ 1683 				bcopy: <>
+ 1684 				ntohl: <>
+ 1685 				IN_CLASSA: <>
+ 1686 				inet_addr: <>
+ 1687 				IN_CLASSB: <>
+ 1688 				free: <>
+ 1689 				nfssvc: <>
+ 1690 				strerror: <>
+ 1691 			hang_options_mountdir: int (), <./nfsd/mountd.c 3751>
+ 1692 				TAILQ_FOREACH: <>
+ 1693 				strcmp: <>
+ 1694 				get_expdir: struct expdir (), <./nfsd/mountd.c 2905>
+ 1695 				strdup: <>
+ 1696 				free_expdir: 1533
+ 1697 				log: <>
+ 1698 				TAILQ_INSERT_AFTER: <>
+ 1699 				TAILQ_INSERT_HEAD: <>
+ 1700 				OP_EXOPTS: <>
+ 1701 				cmp_secflavs: 1659
+ 1702 				bcopy: <>
+ 1703 				DEBUG: <>
+ 1704 				find_group_match_in_host_list: struct host (), <./nfsd/mountd.c 3479>
+ 1705 				grp_name: 1540
+ 1706 				find_group_address_match_in_host_list: struct host (), <./nfsd/mountd.c 3493>
+ 1707 				get_host: struct host (), <./nfsd/mountd.c 4300>
+ 1708 				grp_addr: 1541
+ 1709 				add_host: 1668
+ 1710 				free_host: 1537
+ 1711 			hang_options_finalize: void (), <./nfsd/mountd.c 3688>
+ 1712 				merge_secflavs: void (), <./nfsd/mountd.c 4649>
+ 1713 				bcopy: <>
+ 1714 				TAILQ_FOREACH: <>
+ 1715 				hang_options_finalize: 1711
+ 1716 			TAILQ_INSERT_AFTER: <>
+ 1717 			TAILQ_INSERT_HEAD: <>
+ 1718 			clear_export_errors: int (), <./nfsd/mountd.c 3284>
+ 1719 				LIST_FOREACH_SAFE: <>
+ 1720 				LIST_REMOVE: <>
+ 1721 				free: <>
+ 1722 			TAILQ_EMPTY: <>
+ 1723 			free_namelist: void (), <./nfsd/mountd.c 3463>
+ 1724 				TAILQ_FOREACH_SAFE: <>
+ 1725 				TAILQ_REMOVE: <>
+ 1726 				free: <>
+ 1727 			fclose: <>
+ 1728 			dump_exports: void (), <./nfsd/mountd.c 5220>
+ 1729 				TAILQ_FOREACH: <>
+ 1730 				DEBUG: <>
+ 1731 				uuidstring: 1494
+ 1732 				UUID2FSID: <>
+ 1733 				dump_expdir: void (), <./nfsd/mountd.c 5132>
+ 1734 					snprintf_flags: void (), <./nfsd/mountd.c 5100>
+ 1735 						snprintf_cred: 1566
+ 1736 						snprintf: <>
+ 1737 					DEBUG: <>
+ 1738 					TAILQ_FOREACH: <>
+ 1739 					inet_ntop: <>
+ 1740 					snprintf: <>
+ 1741 					grp_name: 1540
+ 1742 					strlcat: <>
+ 1743 					dump_expdir: 1733
+ 1744 			TAILQ_FOREACH_SAFE: <>
+ 1745 			free_host: 1537
+ 1746 			TAILQ_INSERT_TAIL: <>
+ 1747 			find_group_address_match_in_host_list: struct host (), <./nfsd/mountd.c 3493>
+ 1748 			addrinfo_cmp: 1628
+ 1749 			freeaddrinfo: <>
+ 1750 			grp_addr: 1541
+ 1751 			TAILQ_NEXT: <>
+ 1752 			free_expfs: 1530
+ 1753 			uuidlist_save: void (), <./nfsd/mountd.c 1570>
+ 1754 				fopen: <>
+ 1755 				log: <>
+ 1756 				strerror: <>
+ 1757 				TAILQ_FOREACH: <>
+ 1758 				uuidstring: 1494
+ 1759 				strlcpy: <>
+ 1760 				fprintf: <>
+ 1761 				LIST_FOREACH: <>
+ 1762 				fclose: <>
+ 1763 			time: <>
+ 1764 			unlock_exports: void (), <./nfsd/mountd.c 796>
+ 1765 				pthread_mutex_unlock: <>
+ 1766 				log: <>
+ 1767 				strerror: <>
+ 1768 		nfsd_unload: int (), <./nfsd/main.c 1215>
+ 1769 			safe_exec: int (), <./nfsd/main.c 1254>
+ 1770 				posix_spawn_file_actions_init: <>
+ 1771 				log: <>
+ 1772 				strerror: <>
+ 1773 				posix_spawn_file_actions_addopen: <>
+ 1774 				posix_spawn: <>
+ 1775 				posix_spawn_file_actions_destroy: <>
+ 1776 				waitpid: <>
+ 1777 				usleep: <>
+ 1778 				WIFSIGNALED: <>
+ 1779 				WTERMSIG: <>
+ 1780 				WIFSTOPPED: <>
+ 1781 				WSTOPSIG: <>
+ 1782 				WEXITSTATUS: <>
+ 1783 		nfsd_enable: int (), <./nfsd/main.c 1185>
+ 1784 			safe_exec: 1769
+ 1785 		nfsd_is_running: int (), <./nfsd/main.c 1245>
+ 1786 			get_nfsd_pid: 1424
+ 1787 		nfsd_start: int (), <./nfsd/main.c 1225>
+ 1788 			safe_exec: 1769
+ 1789 		nfsd_load: int (), <./nfsd/main.c 1205>
+ 1790 			safe_exec: 1769
+ 1791 		nfsd_disable: int (), <./nfsd/main.c 1195>
+ 1792 			safe_exec: 1769
+ 1793 		nfsd_stop: int (), <./nfsd/main.c 1235>
+ 1794 			safe_exec: 1769
+ 1795 		usleep: <>
+ 1796 		config_sanity_check: void (), <./nfsd/main.c 629>
+ 1797 			log: <>
+ 1798 		config_sysctl_changed: void (), <./nfsd/main.c 757>
+ 1799 			sysctl_set: 1277
+ 1800 		mountd: void (), <./nfsd/mountd.c 459>
+ 1801 			mountd_init: 1451
+ 1802 			check_for_mount_changes: int (), <./nfsd/mountd.c 5285>
+ 1803 				get_mounts: void (), <./nfsd/mountd.c 5254>
+ 1804 					getfsstat: <>
+ 1805 					statfs: <>
+ 1806 					free: <>
+ 1807 					malloc: <>
+ 1808 					err: <>
+ 1809 					qsort: <>
+ 1810 					sfscmp: int (), <./nfsd/mountd.c 5246>
+ 1811 						statfs: <>
+ 1812 						strcmp: <>
+ 1813 				DEBUG: <>
+ 1814 				sfscmp: 1810
+ 1815 				check_xpaths: int (), <./nfsd/mountd.c 5269>
+ 1816 					subdir_check: 1605
+ 1817 					DEBUG: <>
+ 1818 			unlink: <>
+ 1819 			bzero: <>
+ 1820 			nfssvc: <>
+ 1821 			log: <>
+ 1822 			strerror: <>
+ 1823 			time: <>
+ 1824 			DEBUG: <>
+ 1825 			get_exportlist: 1497
+ 1826 			sleep: <>
+ 1827 			get_mountlist: void (), <./nfsd/mountd.c 4888>
+ 1828 				fopen: <>
+ 1829 				log: <>
+ 1830 				strerror: <>
+ 1831 				DEBUG: <>
+ 1832 				fgets: <>
+ 1833 				strsep: <>
+ 1834 				strlen: <>
+ 1835 				malloc: <>
+ 1836 				free: <>
+ 1837 				strncpy: <>
+ 1838 				fclose: <>
+ 1839 			socket: <>
+ 1840 			htons: <>
+ 1841 			bindresvport_sa: <>
+ 1842 			close: <>
+ 1843 			getsockname: <>
+ 1844 			ntohs: <>
+ 1845 			svcudp_create: <>
+ 1846 			svc_register: <>
+ 1847 			mntsrv: void (), <./nfsd/mountd.c 812>
+ 1848 				svc_getcaller_sa: <>
+ 1849 				ntohs: <>
+ 1850 				strlcpy: <>
+ 1851 				svc_sendreply: <>
+ 1852 				log: <>
+ 1853 				svcerr_weakauth: <>
+ 1854 				svc_getargs: <>
+ 1855 				xdr_dir: int (), <./nfsd/mountd.c 985>
+ 1856 					xdr_string: <>
+ 1857 				svcerr_decode: <>
+ 1858 				lock_exports: 1498
+ 1859 				realpath: <>
+ 1860 				stat: <>
+ 1861 				S_ISDIR: <>
+ 1862 				S_ISREG: <>
+ 1863 				statfs: <>
+ 1864 				unlock_exports: 1764
+ 1865 				chdir: <>
+ 1866 				DEBUG: <>
+ 1867 				xdr_long: <>
+ 1868 				getnameinfo: <>
+ 1869 				get_uuid_from_list: struct uuidlist (), <./nfsd/mountd.c 1281>
+ 1870 				ex_search: struct expfs (), <./nfsd/mountd.c 3320>
+ 1871 				expdir_search: int (), <./nfsd/mountd.c 3890>
+ 1872 					TAILQ_FOREACH: <>
+ 1873 					subdir_check: 1605
+ 1874 					DEBUG: <>
+ 1875 					find_host: 394
+ 1876 					bcopy: <>
+ 1877 				bcopy: <>
+ 1878 				memset: <>
+ 1879 				getfh: <>
+ 1880 				strerror: <>
+ 1881 				xdr_fhs: int (), <./nfsd/mountd.c 994>
+ 1882 					xdr_long: <>
+ 1883 					xdr_opaque: <>
+ 1884 				add_mlist: void (), <./nfsd/mountd.c 4989>
+ 1885 					strcmp: <>
+ 1886 					strlen: <>
+ 1887 					malloc: <>
+ 1888 					free: <>
+ 1889 					log: <>
+ 1890 					strncpy: <>
+ 1891 					fopen: <>
+ 1892 					strerror: <>
+ 1893 					fprintf: <>
+ 1894 					fclose: <>
+ 1895 				xdr_mlist: int (), <./nfsd/mountd.c 1034>
+ 1896 					xdr_bool: <>
+ 1897 					xdr_string: <>
+ 1898 				del_mlist: void (), <./nfsd/mountd.c 4950>
+ 1899 					strcmp: <>
+ 1900 					free: <>
+ 1901 					fopen: <>
+ 1902 					log: <>
+ 1903 					strerror: <>
+ 1904 					fprintf: <>
+ 1905 					fclose: <>
+ 1906 				xdr_explist: int (), <./nfsd/mountd.c 1059>
+ 1907 					TAILQ_FOREACH: <>
+ 1908 					put_exlist: int (), <./nfsd/mountd.c 1083>
+ 1909 						xdr_bool: <>
+ 1910 						xdr_string: <>
+ 1911 						strlcpy: <>
+ 1912 						strlcat: <>
+ 1913 						TAILQ_FOREACH: <>
+ 1914 						grp_name: 1540
+ 1915 						put_exlist: 1908
+ 1916 					xdr_bool: <>
+ 1917 				svcerr_noproc: <>
+ 1918 			svc_destroy: <>
+ 1919 			setsockopt: <>
+ 1920 			listen: <>
+ 1921 			svctcp_create: <>
+ 1922 			exit: <>
+ 1923 			pthread_create: <>
+ 1924 			mountd_thread: void * (), <./nfsd/mountd.c 429>
+ 1925 				set_thread_sigmask: void (), <./nfsd/main.c 805>
+ 1926 					sigemptyset: <>
+ 1927 					sigaddset: <>
+ 1928 					pthread_sigmask: <>
+ 1929 				svc_run: <>
+ 1930 				log: <>
+ 1931 				exit: <>
+ 1932 		nfsd: void (), <./nfsd/nfsd.c 231>
+ 1933 			socket: <>
+ 1934 			log: <>
+ 1935 			htons: <>
+ 1936 			bind: <>
+ 1937 			sleep: <>
+ 1938 			close: <>
+ 1939 			nfssvc: <>
+ 1940 			setsockopt: <>
+ 1941 			strerror: <>
+ 1942 			listen: <>
+ 1943 			exit: <>
+ 1944 			sysctl_set: 1277
+ 1945 			nfsd_start_server_threads: void (), <./nfsd/nfsd.c 196>
+ 1946 				pthread_create: <>
+ 1947 				nfsd_server_thread: void * (), <./nfsd/nfsd.c 96>
+ 1948 					set_thread_sigmask: 1925
+ 1949 					nfssvc: <>
+ 1950 					log: <>
+ 1951 					strerror: <>
+ 1952 					DEBUG: <>
+ 1953 				log: <>
+ 1954 				strerror: <>
+ 1955 				DEBUG: <>
+ 1956 			pthread_create: <>
+ 1957 			nfsd_accept_thread: void * (), <./nfsd/nfsd.c 106>
+ 1958 				set_thread_sigmask: 1925
+ 1959 				FD_ZERO: <>
+ 1960 				FD_SET: <>
+ 1961 				MAX: <>
+ 1962 				select: <>
+ 1963 				log: <>
+ 1964 				strerror: <>
+ 1965 				FD_ISSET: <>
+ 1966 				accept: <>
+ 1967 				getnameinfo: <>
+ 1968 				DEBUG: <>
+ 1969 				memset: <>
+ 1970 				setsockopt: <>
+ 1971 				nfssvc: <>
+ 1972 				close: <>
+ 1973 		do_lockd_ping: void (), <./nfsd/main.c 872>
+ 1974 			host_get_lockd_port: <>
+ 1975 			mach_host_self: <>
+ 1976 			MACH_PORT_VALID: <>
+ 1977 			log: <>
+ 1978 			lockd_ping: <>
+ 1979 			mach_port_destroy: <>
+ 1980 			mach_task_self: <>
+ 1981 		rquotad_start: int (), <./nfsd/main.c 1378>
+ 1982 			get_pid: 1425
+ 1983 			rquotad_is_loaded: int (), <./nfsd/main.c 1296>
+ 1984 				launch_data_alloc: <>
+ 1985 				launch_data_dict_insert: <>
+ 1986 				launch_data_new_string: <>
+ 1987 				launch_msg: <>
+ 1988 				launch_data_get_type: <>
+ 1989 				launch_data_free: <>
+ 1990 				syslog: <>
+ 1991 			rquotad_service_start: int (), <./nfsd/main.c 1354>
+ 1992 				launch_data_alloc: <>
+ 1993 				launch_data_dict_insert: <>
+ 1994 				launch_data_new_string: <>
+ 1995 				launch_msg: <>
+ 1996 				launch_data_get_type: <>
+ 1997 				launch_data_get_errno: <>
+ 1998 				launch_data_free: <>
+ 1999 			rquotad_load: int (), <./nfsd/main.c 1320>
+ 2000 				launch_data_alloc: <>
+ 2001 				launch_data_free: <>
+ 2002 				launch_data_array_set_index: <>
+ 2003 				launch_data_new_string: <>
+ 2004 				launch_data_dict_insert: <>
+ 2005 				launch_data_new_bool: <>
+ 2006 				launch_msg: <>
+ 2007 				launch_data_get_type: <>
+ 2008 				launch_data_get_errno: <>
+ 2009 		register_services: void (), <./nfsd/main.c 918>
+ 2010 			rpcb_unset: <>
+ 2011 			htons: <>
+ 2012 			rpcb_set: <>
+ 2013 			log: <>
+ 2014 			DNSServiceRefDeallocate: <>
+ 2015 			DNSServiceRegister: <>
+ 2016 		config_loop: void (), <./nfsd/main.c 654>
+ 2017 			kqueue: <>
+ 2018 			log: <>
+ 2019 			strerror: <>
+ 2020 			exit: <>
+ 2021 			EV_SET: <>
+ 2022 			kevent: <>
+ 2023 			stat: <>
+ 2024 			DEBUG: <>
+ 2025 			check_for_mount_changes: 1802
+ 2026 			config_read: int (), <./nfsd/main.c 528>
+ 2027 				fopen: <>
+ 2028 				log: <>
+ 2029 				fparseln: <>
+ 2030 				free: <>
+ 2031 				isspace: <>
+ 2032 				strchr: <>
+ 2033 				strncmp: <>
+ 2034 				DEBUG: <>
+ 2035 				strtol: <>
+ 2036 				strcmp: <>
+ 2037 				fclose: <>
+ 2038 			config_sanity_check: 1796
+ 2039 			config_sysctl_changed: 1798
+ 2040 			sysctl_set: 1277
+ 2041 			nfsd_start_server_threads: 1945
+ 2042 			do_lockd_ping: 1973
+ 2043 			rquotad_start: 1981
+ 2044 			register_services: 2009
+ 2045 			clear_export_errors: 1718
+ 2046 			get_exportlist: 1497
+ 2047 		sysctl_set: 1277
+ 2048 		do_lockd_shutdown: void (), <./nfsd/main.c 895>
+ 2049 			host_get_lockd_port: <>
+ 2050 			mach_host_self: <>
+ 2051 			MACH_PORT_VALID: <>
+ 2052 			log: <>
+ 2053 			lockd_shutdown: <>
+ 2054 			mach_port_destroy: <>
+ 2055 			mach_task_self: <>
+ 2056 		rquotad_stop: int (), <./nfsd/main.c 1388>
+ 2057 			launch_data_alloc: <>
+ 2058 			launch_data_dict_insert: <>
+ 2059 			launch_data_new_string: <>
+ 2060 			launch_msg: <>
+ 2061 			launch_data_get_type: <>
+ 2062 			launch_data_get_errno: <>
+ 2063 			launch_data_free: <>
+ 2064 		DNSServiceRefDeallocate: <>
+ 2065 		memset: <>
+ 2066 		strtoul: <>
+ 2067 		Usage: void (), <./nfs4mapid/nfs4mapid.c 41>
+ 2068 			errx: <>
+ 2069 			getprogname: <>
+ 2070 		memcpy: <>
+ 2071 		strlen: <>
+ 2072 		nfsclnt: <>
+ 2073 		print_map: void (), <./nfs4mapid/nfs4mapid.c 47>
+ 2074 			printf: <>
+ 2075 			uuid_unparse: <>

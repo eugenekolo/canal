@@ -1,0 +1,32 @@
+    1 	firewire_attach_inet6: int (), <./KernelSource/BSD/firewire_inet6_pr_module.c 203>
+    2 		htons: <>
+    3 		bzero: <>
+    4 		inet6_firewire_input: int (), <./KernelSource/BSD/firewire_inet6_pr_module.c 97>
+    5 			ifnet_flags: <>
+    6 			mbuf_freem: <>
+    7 			ifnet_touch_lastchange: <>
+    8 			bcmp: <>
+    9 			mbuf_setflags: <>
+   10 			mbuf_flags: <>
+   11 			proto_input: <>
+   12 		inet6_firewire_pre_output: int (), <./KernelSource/BSD/firewire_inet6_pr_module.c 133>
+   13 			mbuf_setflags: <>
+   14 			mbuf_flags: <>
+   15 			nd6_lookup_ipv6: <>
+   16 			htons: <>
+   17 			bcopy: <>
+   18 			LLADDR: <>
+   19 		firewire_inet6_prmod_ioctl: errno_t (), <./KernelSource/BSD/firewire_inet6_pr_module.c 193>
+   20 		firewire_inet6_resolve_multi: int (), <./KernelSource/BSD/firewire_inet6_pr_module.c 160>
+   21 			offsetof: <>
+   22 			bzero: <>
+   23 			ifnet_index: <>
+   24 			FIREWIRE_MAP_IPV6_MULTICAST: <>
+   25 			LLADDR: <>
+   26 		ifnet_attach_protocol: <>
+   27 		printf: <>
+   28 		ifnet_name: <>
+   29 		ifnet_unit: <>
+   30 	firewire_inet6_prmod_ioctl: 19
+   31 	inet6_firewire_input: 4
+   32 	inet6_firewire_pre_output: 12

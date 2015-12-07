@@ -1,0 +1,67 @@
+    1 	WKCollectionRelease: void (), <./platform/ios/wak/WKUtilities.c 51>
+    2 		UNUSED_PARAM: <>
+    3 		WKRelease: void (), <./platform/ios/wak/WKUtilities.c 57>
+    4 			WKError: <>
+    5 	WKCollectionRetain: const void * (), <./platform/ios/wak/WKUtilities.c 36>
+    6 		UNUSED_PARAM: <>
+    7 		WKRetain: const void * (), <./platform/ios/wak/WKUtilities.c 42>
+    8 	WKCreateObjectWithSize: const void * (), <./platform/ios/wak/WKUtilities.c 85>
+    9 		calloc: <>
+   10 		WKRetain: 7
+   11 	WKRelease: 3
+   12 	WKRetain: 7
+   13 	gdk_pixbuf_get_from_surface: GdkPixbuf * (), <./platform/gtk/GtkVersioning.c 162>
+   14 		g_return_val_if_fail: <>
+   15 		cairo_surface_get_content: <>
+   16 		gdk_pixbuf_new: <>
+   17 		gdk_cairo_surface_coerce_to_image: cairo_surface_t * (), <./platform/gtk/GtkVersioning.c 58>
+   18 			cairo_surface_get_type: <>
+   19 			cairo_surface_get_content: <>
+   20 			cairo_image_surface_get_width: <>
+   21 			cairo_image_surface_get_height: <>
+   22 			cairo_surface_reference: <>
+   23 			cairo_image_surface_create: <>
+   24 			gdk_cairo_format_for_content: cairo_format_t (), <./platform/gtk/GtkVersioning.c 44>
+   25 			cairo_create: <>
+   26 			cairo_set_operator: <>
+   27 			cairo_set_source_surface: <>
+   28 			cairo_paint: <>
+   29 			cairo_destroy: <>
+   30 		cairo_surface_flush: <>
+   31 		cairo_surface_status: <>
+   32 		cairo_surface_destroy: <>
+   33 		gdk_pixbuf_get_has_alpha: <>
+   34 		convert_alpha: void (), <./platform/gtk/GtkVersioning.c 86>
+   35 			UNUSED_PARAM: <>
+   36 		gdk_pixbuf_get_pixels: <>
+   37 		gdk_pixbuf_get_rowstride: <>
+   38 		cairo_image_surface_get_data: <>
+   39 		cairo_image_surface_get_stride: <>
+   40 		convert_no_alpha: void (), <./platform/gtk/GtkVersioning.c 120>
+   41 	gdk_screen_get_monitor_workarea: void (), <./platform/gtk/GtkVersioning.c 265>
+   42 		gdk_screen_get_monitor_geometry: <>
+   43 		getScreenWorkArea: void (), <./platform/gtk/GtkVersioning.c 230>
+   44 			GDK_DISPLAY_XDISPLAY: <>
+   45 			gdk_screen_get_display: <>
+   46 			XInternAtom: <>
+   47 			gdk_screen_get_width: <>
+   48 			gdk_screen_get_height: <>
+   49 			XRootWindow: <>
+   50 			GDK_SCREEN_XNUMBER: <>
+   51 			XGetWindowProperty: <>
+   52 			getScreenCurrentDesktop: int (), <./platform/gtk/GtkVersioning.c 207>
+   53 				GDK_DISPLAY_XDISPLAY: <>
+   54 				gdk_screen_get_display: <>
+   55 				XRootWindow: <>
+   56 				GDK_SCREEN_XNUMBER: <>
+   57 				XInternAtom: <>
+   58 				XGetWindowProperty: <>
+   59 				XFree: <>
+   60 			XFree: <>
+   61 		gdk_rectangle_intersect: <>
+   62 	getDefaultGDKPointerDevice: GdkDevice * (), <./platform/gtk/GtkVersioning.c 31>
+   63 		gdk_display_get_device_manager: <>
+   64 		gdk_window_get_display: <>
+   65 		gdk_device_manager_get_client_pointer: <>
+   66 		UNUSED_PARAM: <>
+   67 		gdk_device_get_core_pointer: <>

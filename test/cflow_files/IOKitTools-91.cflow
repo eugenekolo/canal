@@ -1,0 +1,326 @@
+    1 	main: int (), <./ioclasscount.tproj/ioclasscount.c 127>
+    2 		IORegistryGetRootEntry: <>
+    3 		fprintf: <>
+    4 		IORegistryEntryCreateCFProperties: <>
+    5 		CFDictionaryGetTypeID: <>
+    6 		CFGetTypeID: <>
+    7 		CFDictionaryGetValue: <>
+    8 		CFSTR: <>
+    9 		printNumber: Boolean (), <./ioalloccount.tproj/ioalloccount.c 35>
+   10 			CFDictionaryGetValue: <>
+   11 			CFStringGetMaximumSizeForEncoding: <>
+   12 			CFStringGetLength: <>
+   13 			malloc: <>
+   14 			malloc_size: <>
+   15 			realloc: <>
+   16 			CFStringGetCString: <>
+   17 			fprintf: <>
+   18 			printf: <>
+   19 			CFNumberGetTypeID: <>
+   20 			CFGetTypeID: <>
+   21 			CFNumberGetValue: <>
+   22 			free: <>
+   23 		free: <>
+   24 		CFRelease: <>
+   25 		IOObjectRelease: <>
+   26 		isatty: <>
+   27 		fileno: <>
+   28 		ioctl: <>
+   29 		getopt: <>
+   30 		atoi: <>
+   31 		usage: void (), <./ioreg.tproj/ioreg.c 1038>
+   32 			fprintf: <>
+   33 			exit: <>
+   34 		cfshowinit: void (), <./ioreg.tproj/ioreg.c 1175>
+   35 		printinit: void (), <./ioreg.tproj/ioreg.c 1111>
+   36 			malloc: <>
+   37 			assertion: <>
+   38 		boldinit: void (), <./ioreg.tproj/ioreg.c 1071>
+   39 			getenv: <>
+   40 			tgetent: <>
+   41 			tgetstr: <>
+   42 			assertion: <>
+   43 		assertion: <>
+   44 		archive_search: CFMutableArrayRef (), <./ioreg.tproj/ioreg.c 513>
+   45 			compare: Boolean (), <./ioreg.tproj/ioreg.c 624>
+   46 				IOObjectConformsTo: <>
+   47 				CFStringCreateWithCString: <>
+   48 				assertion: <>
+   49 				IORegistryEntryCreateCFProperty: <>
+   50 				CFRelease: <>
+   51 				IORegistryEntryGetNameInPlane: <>
+   52 				strchr: <>
+   53 				strlcat: <>
+   54 				IORegistryEntryGetLocationInPlane: <>
+   55 				strcmp: <>
+   56 			archive_scan: CFMutableDictionaryRef (), <./ioreg.tproj/ioreg.c 452>
+   57 				IORegistryEntryGetChildIterator: <>
+   58 				IOIteratorNext: <>
+   59 				archive: CFMutableDictionaryRef (), <./ioreg.tproj/ioreg.c 331>
+   60 					compare: 45
+   61 					IORegistryEntryCreateCFProperties: <>
+   62 					assertion: <>
+   63 					CFDictionaryCreateMutable: <>
+   64 					IORegistryEntryGetNameInPlane: <>
+   65 					CFStringCreateWithCString: <>
+   66 					CFDictionarySetValue: <>
+   67 					CFSTR: <>
+   68 					CFRelease: <>
+   69 					IORegistryEntryGetLocationInPlane: <>
+   70 					IORegistryEntryGetRegistryEntryID: <>
+   71 					CFNumberCreate: <>
+   72 					IOObjectGetClass: <>
+   73 					IOObjectGetKernelRetainCount: <>
+   74 					IOObjectConformsTo: <>
+   75 					IOServiceGetBusyStateAndTime: <>
+   76 				CFArrayCreateMutable: <>
+   77 				assertion: <>
+   78 				archive_scan: 56
+   79 				CFArrayAppendValue: <>
+   80 				CFRelease: <>
+   81 				IOObjectRelease: <>
+   82 				CFDictionarySetValue: <>
+   83 				CFSTR: <>
+   84 			archive: 59
+   85 			assertion: <>
+   86 			CFDictionarySetValue: <>
+   87 			CFSTR: <>
+   88 			CFRelease: <>
+   89 			CFArrayCreateMutable: <>
+   90 			CFArrayAppendValue: <>
+   91 			IORegistryEntryGetChildIterator: <>
+   92 			IOIteratorNext: <>
+   93 			archive_search: 44
+   94 			CFArrayAppendArray: <>
+   95 			CFRangeMake: <>
+   96 			CFArrayGetCount: <>
+   97 			IOObjectRelease: <>
+   98 		archive_scan: 56
+   99 		CFURLCreateWithFileSystemPath: <>
+  100 		CFWriteStreamCreateWithFile: <>
+  101 		CFWriteStreamOpen: <>
+  102 		CFPropertyListWrite: <>
+  103 		CFWriteStreamClose: <>
+  104 		search: void (), <./ioreg.tproj/ioreg.c 768>
+  105 			compare: 45
+  106 			show: void (), <./ioreg.tproj/ioreg.c 855>
+  107 				IORegistryEntryGetNameInPlane: <>
+  108 				assertion: <>
+  109 				indent: void (), <./ioreg.tproj/ioreg.c 1014>
+  110 					print: void (), <./ioreg.tproj/ioreg.c 1148>
+  111 						va_start: <>
+  112 						printva: void (), <./ioreg.tproj/ioreg.c 1123>
+  113 							vsnprintf: <>
+  114 							strchr: <>
+  115 							printf: <>
+  116 							vprintf: <>
+  117 						va_end: <>
+  118 				boldon: void (), <./ioreg.tproj/ioreg.c 1094>
+  119 					tputs: <>
+  120 					termcapstr_outc: int (), <./ioreg.tproj/ioreg.c 1066>
+  121 						putchar: <>
+  122 				print: 110
+  123 				boldoff: void (), <./ioreg.tproj/ioreg.c 1099>
+  124 					tputs: <>
+  125 					termcapstr_outc: 120
+  126 				IORegistryEntryGetLocationInPlane: <>
+  127 				IOObjectCopyClass: <>
+  128 				createInheritanceStringForIORegistryClassName: CFStringRef (), <./ioreg.tproj/ioreg.c 1399>
+  129 					CFStringCreateMutable: <>
+  130 					CFStringInsert: <>
+  131 					CFStringCreateCopy: <>
+  132 					IOObjectCopySuperclassForClass: <>
+  133 					CFRelease: <>
+  134 					CFEqual: <>
+  135 					CFSTR: <>
+  136 				CFStringGetCStringPtr: <>
+  137 				CFRelease: <>
+  138 				IOObjectGetClass: <>
+  139 				IORegistryEntryGetRegistryEntryID: <>
+  140 				IOObjectConformsTo: <>
+  141 				IOServiceGetBusyStateAndTime: <>
+  142 				IOObjectGetKernelRetainCount: <>
+  143 				println: void (), <./ioreg.tproj/ioreg.c 1156>
+  144 					va_start: <>
+  145 					printva: 112
+  146 					va_end: <>
+  147 					printf: <>
+  148 				compare: 45
+  149 				IORegistryEntryCreateCFProperties: <>
+  150 				CFDictionaryApplyFunction: <>
+  151 				showitem: void (), <./ioreg.tproj/ioreg.c 990>
+  152 					indent: 109
+  153 					print: 110
+  154 					cfshow: void (), <./ioreg.tproj/ioreg.c 1180>
+  155 						CFGetTypeID: <>
+  156 						CFArrayGetTypeID: <>
+  157 						cfarrayshow: void (), <./ioreg.tproj/ioreg.c 1206>
+  158 							CFArrayGetCount: <>
+  159 							print: 110
+  160 							CFArrayApplyFunction: <>
+  161 							cfarrayshowapplier: void (), <./ioreg.tproj/ioreg.c 1194>
+  162 								print: 110
+  163 								cfshow: 154
+  164 						CFBooleanGetTypeID: <>
+  165 						cfbooleanshow: void (), <./ioreg.tproj/ioreg.c 1216>
+  166 							print: 110
+  167 							CFBooleanGetValue: <>
+  168 						CFDataGetTypeID: <>
+  169 						cfdatashow: void (), <./ioreg.tproj/ioreg.c 1221>
+  170 							print: 110
+  171 							CFDataGetLength: <>
+  172 							CFDataGetBytePtr: <>
+  173 							isprint: <>
+  174 						CFDictionaryGetTypeID: <>
+  175 						cfdictionaryshow: void (), <./ioreg.tproj/ioreg.c 1330>
+  176 							print: 110
+  177 							CFDictionaryApplyFunction: <>
+  178 							cfdictionaryshowapplier: void (), <./ioreg.tproj/ioreg.c 1314>
+  179 								print: 110
+  180 								cfshow: 154
+  181 						CFNumberGetTypeID: <>
+  182 						cfnumbershow: void (), <./ioreg.tproj/ioreg.c 1339>
+  183 							CFNumberGetValue: <>
+  184 							print: 110
+  185 						CFSetGetTypeID: <>
+  186 						cfsetshow: void (), <./ioreg.tproj/ioreg.c 1364>
+  187 							print: 110
+  188 							CFSetApplyFunction: <>
+  189 							cfsetshowapplier: void (), <./ioreg.tproj/ioreg.c 1352>
+  190 								print: 110
+  191 								cfshow: 154
+  192 						CFStringGetTypeID: <>
+  193 						cfstringshow: void (), <./ioreg.tproj/ioreg.c 1372>
+  194 							CFStringGetCStringPtr: <>
+  195 							print: 110
+  196 							CFStringGetLength: <>
+  197 							malloc: <>
+  198 							CFStringGetCString: <>
+  199 							free: <>
+  200 						print: 110
+  201 					printProp: void (), <./ioreg.tproj/ioreg.c 1435>
+  202 						CFStringCompare: <>
+  203 						CFSTR: <>
+  204 						IORegistryEntryGetParentEntry: <>
+  205 						IORegistryEntryGetNameInPlane: <>
+  206 						assertion: <>
+  207 						IOObjectRelease: <>
+  208 						strncmp: <>
+  209 						printPhysAddr: void (), <./ioreg.tproj/ioreg.c 1588>
+  210 							assertion: <>
+  211 							CFGetTypeID: <>
+  212 							CFDataGetTypeID: <>
+  213 							CFDataGetLength: <>
+  214 							println: 143
+  215 							CFDataGetBytePtr: <>
+  216 							indent: 109
+  217 						printSlotNames: void (), <./ioreg.tproj/ioreg.c 1675>
+  218 							assertion: <>
+  219 							CFGetTypeID: <>
+  220 							CFDataGetTypeID: <>
+  221 							CFDataGetLength: <>
+  222 							println: 143
+  223 							CFDataGetBytePtr: <>
+  224 							indent: 109
+  225 							strlen: <>
+  226 						printPCIRanges: void (), <./ioreg.tproj/ioreg.c 1722>
+  227 							assertion: <>
+  228 							CFGetTypeID: <>
+  229 							CFDataGetTypeID: <>
+  230 							CFDataGetLength: <>
+  231 							println: 143
+  232 							CFDataGetBytePtr: <>
+  233 							IORegistryEntryGetParentEntry: <>
+  234 							getRecursivePropValue: SInt32 (), <./ioreg.tproj/ioreg.c 1570>
+  235 								IORegistryEntrySearchCFProperty: <>
+  236 								assertion: <>
+  237 								CFDataGetBytePtr: <>
+  238 								CFRelease: <>
+  239 							CFSTR: <>
+  240 							IOObjectRelease: <>
+  241 							indent: 109
+  242 							print: 110
+  243 						printInterruptMap: void (), <./ioreg.tproj/ioreg.c 1851>
+  244 							getRecursivePropValue: 234
+  245 							CFSTR: <>
+  246 							CFDataGetBytePtr: <>
+  247 							CFDataGetLength: <>
+  248 							println: 143
+  249 							indent: 109
+  250 							print: 110
+  251 							assertion: <>
+  252 							lookupPHandle: Boolean (), <./ioreg.tproj/ioreg.c 1813>
+  253 								CFSTR: <>
+  254 								CFDataCreate: <>
+  255 								CFDictionaryCreate: <>
+  256 								IOServiceGetMatchingService: <>
+  257 								CFRelease: <>
+  258 							makepath: void (), <./ioreg.tproj/ioreg.c 1803>
+  259 								IORegistryEntryGetPath: <>
+  260 								assertion: <>
+  261 								memmove: <>
+  262 								strchr: <>
+  263 								strlen: <>
+  264 							IOObjectRelease: <>
+  265 						printInterrupts: void (), <./ioreg.tproj/ioreg.c 1910>
+  266 							CFDataGetBytePtr: <>
+  267 							CFDataGetLength: <>
+  268 							println: 143
+  269 							indent: 109
+  270 							print: 110
+  271 						printInterruptParent: void (), <./ioreg.tproj/ioreg.c 1957>
+  272 							CFDataGetBytePtr: <>
+  273 							lookupPHandle: 252
+  274 							makepath: 258
+  275 							print: 110
+  276 							println: 143
+  277 							IOObjectRelease: <>
+  278 						CFGetTypeID: <>
+  279 						CFDataGetTypeID: <>
+  280 						printData: void (), <./ioreg.tproj/ioreg.c 1987>
+  281 							CFDataGetLength: <>
+  282 							CFDataGetBytePtr: <>
+  283 							isprint: <>
+  284 							print: 110
+  285 							println: 143
+  286 							ToAscii: char (), <./ioreg.tproj/ioreg.c 1977>
+  287 							indent: 109
+  288 						cfshow: 154
+  289 						println: 143
+  290 					println: 143
+  291 			scan: void (), <./ioreg.tproj/ioreg.c 704>
+  292 				IORegistryEntryGetChildIterator: <>
+  293 				IOIteratorNext: <>
+  294 				show: 106
+  295 				scan: 291
+  296 				IOObjectRelease: <>
+  297 			println: 143
+  298 			IORegistryEntryGetChildIterator: <>
+  299 			IOIteratorNext: <>
+  300 			search: 104
+  301 			IOObjectRelease: <>
+  302 		scan: 291
+  303 		exit: <>
+  304 		CFDictionaryGetCount: <>
+  305 		calloc: <>
+  306 		CFDictionaryGetKeysAndValues: <>
+  307 		qsort: <>
+  308 		compareClassNames: int (), <./ioclasscount.tproj/ioclasscount.c 35>
+  309 			CFStringCompare: <>
+  310 			fprintf: <>
+  311 			exit: <>
+  312 		printInstanceCount: Boolean (), <./ioclasscount.tproj/ioclasscount.c 58>
+  313 			CFStringGetMaximumSizeForEncoding: <>
+  314 			CFStringGetLength: <>
+  315 			malloc: <>
+  316 			malloc_size: <>
+  317 			realloc: <>
+  318 			CFStringGetCString: <>
+  319 			fprintf: <>
+  320 			printf: <>
+  321 			CFDictionaryGetValue: <>
+  322 			CFNumberGetTypeID: <>
+  323 			CFGetTypeID: <>
+  324 			CFNumberGetValue: <>
+  325 			free: <>
+  326 		CFStringCreateWithCString: <>

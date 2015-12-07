@@ -1,0 +1,496 @@
+    1 	main: int (), <./iodbc/iodbcadm/gtk/main.c 164>
+    2 		setlocale: <>
+    3 		printf: <>
+    4 		fprintf: <>
+    5 		exit: <>
+    6 		ODBC_Connect: int (), <./iodbc/samples/iodbctest.c 184>
+    7 			SQLAllocEnv: SQLRETURN SQL_API (), <./iodbc/iodbc/henv.c 180>
+    8 				GENV: <>
+    9 				Init_iODBC: void (), <./iodbc/iodbc/henv.c 275>
+   10 					SPINLOCK_INIT: <>
+   11 					SPINLOCK_LOCK: <>
+   12 					SPINLOCK_UNLOCK: <>
+   13 				ODBC_LOCK: <>
+   14 				SQLAllocEnv_Internal: SQLRETURN (), <./iodbc/iodbc/henv.c 137>
+   15 					GENV: <>
+   16 					MEM_ALLOC: <>
+   17 				TRACE: <>
+   18 				trace_SQLAllocEnv: void (), <./iodbc/iodbc/trace/AllocEnv.c 81>
+   19 				ODBC_UNLOCK: <>
+   20 			SQLAllocConnect: SQLRETURN SQL_API (), <./iodbc/iodbc/hdbc.c 238>
+   21 				GENV: <>
+   22 				ODBC_LOCK: <>
+   23 				IS_VALID_HENV: <>
+   24 				ODBC_UNLOCK: <>
+   25 				CLEAR_ERRORS: <>
+   26 				TRACE: <>
+   27 				trace_SQLAllocConnect: void (), <./iodbc/iodbc/trace/AllocConnect.c 81>
+   28 				SQLAllocConnect_Internal: SQLRETURN (), <./iodbc/iodbc/hdbc.c 160>
+   29 					GENV: <>
+   30 					CONN: <>
+   31 					PUSHSQLERR: <>
+   32 					MEM_ALLOC: <>
+   33 			SQLAllocHandle: RETCODE SQL_API (), <./iodbc/iodbc/odbc3.c 239>
+   34 				Init_iODBC: 9
+   35 				ODBC_LOCK: <>
+   36 				SQLAllocEnv_Internal: 14
+   37 				TRACE: <>
+   38 				trace_SQLAllocHandle: void (), <./iodbc/iodbc/trace/AllocHandle.c 82>
+   39 				ODBC_UNLOCK: <>
+   40 				SQLAllocHandle_Internal: RETCODE SQL_API (), <./iodbc/iodbc/odbc3.c 118>
+   41 					SQLAllocEnv_Internal: 14
+   42 					GENV: <>
+   43 					IS_VALID_HENV: <>
+   44 					CLEAR_ERRORS: <>
+   45 					PUSHSQLERR: <>
+   46 					SQLAllocConnect_Internal: 28
+   47 					CONN: <>
+   48 					IS_VALID_HDBC: <>
+   49 					SQLAllocStmt_Internal: SQLRETURN (), <./iodbc/iodbc/hstmt.c 110>
+   50 						CONN: <>
+   51 						STMT: <>
+   52 						PUSHSQLERR: <>
+   53 						MEM_ALLOC: <>
+   54 						memset: <>
+   55 						MEM_FREE: <>
+   56 						CALL_DRIVER: <>
+   57 						SQL_SUCCEEDED: <>
+   58 					MEM_ALLOC: <>
+   59 					memset: <>
+   60 					CALL_DRIVER: <>
+   61 					SQL_SUCCEEDED: <>
+   62 					MEM_FREE: <>
+   63 			SQLSetEnvAttr: RETCODE SQL_API (), <./iodbc/iodbc/odbc3.c 597>
+   64 				ODBC_LOCK: <>
+   65 				TRACE: <>
+   66 				trace_SQLSetEnvAttr: void (), <./iodbc/iodbc/trace/SetEnvAttr.c 82>
+   67 				SQLSetEnvAttr_Internal: RETCODE (), <./iodbc/iodbc/odbc3.c 516>
+   68 					GENV: <>
+   69 					PUSHSQLERR: <>
+   70 				ODBC_UNLOCK: <>
+   71 				ENTER_HENV: <>
+   72 				LEAVE_HENV: <>
+   73 			SQLSetConnectOption: SQLRETURN SQL_API (), <./iodbc/iodbc/hdbc.c 702>
+   74 				ENTER_HDBC: <>
+   75 				trace_SQLSetConnectOption: void (), <./iodbc/iodbc/trace/SetConnectOption.c 81>
+   76 				LEAVE_HDBC: <>
+   77 			TEXT: <>
+   78 			SQLGetInfo: SQLRETURN SQL_API (), <./iodbc/iodbc/info.c 1101>
+   79 				ENTER_HDBC: <>
+   80 				trace_SQLGetInfo: void (), <./iodbc/iodbc/trace/Info.c 1782>
+   81 				SQLGetInfo_Internal: SQLRETURN SQL_API (), <./iodbc/iodbc/info.c 713>
+   82 					CONN: <>
+   83 					ENVR: <>
+   84 					STMT: <>
+   85 					PUSHSQLERR: <>
+   86 					sprintf: <>
+   87 					dm_SQL_U8toW: SQLWCHAR * (), <./iodbc/iodbcinst/unicode.c 830>
+   88 						strdup_U8toW: SQLWCHAR * (), <./iodbc/iodbcinst/unicode.c 783>
+   89 							utf8_len: size_t (), <./iodbc/iodbcinst/unicode.c 464>
+   90 							malloc: <>
+   91 							utf8towcs: size_t (), <./iodbc/iodbcinst/unicode.c 686>
+   92 								UTF8_COMPUTE: <>
+   93 						utf8_len: 89
+   94 						calloc: <>
+   95 						utf8ntowcs: int (), <./iodbc/iodbcinst/unicode.c 729>
+   96 							UTF8_COMPUTE: <>
+   97 					WCSNCPY: <>
+   98 					free: <>
+   99 					STRLEN: <>
+  100 					WCSLEN: <>
+  101 					STRNCPY: <>
+  102 					malloc: <>
+  103 					CALL_UDRIVER: <>
+  104 					STRCPY: <>
+  105 					dm_StrCopyOut2_A2W: int (), <./iodbc/iodbcinst/unicode.c 309>
+  106 						strlen: <>
+  107 						OPL_A2W: <>
+  108 					SQL_SUCCEEDED: <>
+  109 					dm_StrCopyOut2_W2A: int (), <./iodbc/iodbcinst/unicode.c 345>
+  110 						wcslen: size_t (), <./iodbc/iodbcinst/unicode.c 97>
+  111 						OPL_W2A: <>
+  112 					MEM_FREE: <>
+  113 				LEAVE_HDBC: <>
+  114 			printf: <>
+  115 			strcpy: <>
+  116 			fgets: <>
+  117 			strlen: <>
+  118 			strcmp: <>
+  119 			fprintf: <>
+  120 			SQLDataSources: SQLRETURN SQL_API (), <./iodbc/iodbc/info.c 291>
+  121 				ENTER_HENV: <>
+  122 				trace_SQLDataSources: void (), <./iodbc/iodbc/trace/DataSources.c 100>
+  123 				SQLDataSources_Internal: SQLRETURN SQL_API (), <./iodbc/iodbc/info.c 138>
+  124 					GENV: <>
+  125 					PUSHSQLERR: <>
+  126 					free: <>
+  127 					calloc: <>
+  128 					SQLSetConfigMode: BOOL INSTAPI (), <./iodbc/iodbcinst/SQLSetConfigMode.c 85>
+  129 						CLEAR_ERROR: <>
+  130 						PUSH_ERROR: <>
+  131 					SQLGetPrivateProfileString: int INSTAPI (), <./iodbc/iodbcinst/SQLGetPrivateProfileString.c 162>
+  132 						CLEAR_ERROR: <>
+  133 						PUSH_ERROR: <>
+  134 						GetPrivateProfileString: int (), <./iodbc/iodbcinst/SQLGetPrivateProfileString.c 86>
+  135 							STRNCPY: <>
+  136 							PUSH_ERROR: <>
+  137 							STRLEN: <>
+  138 					STRLEN: <>
+  139 					STREQ: <>
+  140 					STRDUP: <>
+  141 					qsort: <>
+  142 					SectSorter: int (), <./iodbc/iodbc/info.c 128>
+  143 						stricmp: int (), <./iodbc/iodbc/info.c 112>
+  144 							toupper: <>
+  145 					STRNCPY: <>
+  146 				LEAVE_HENV: <>
+  147 			NUMTCHAR: <>
+  148 			strcpy_A2W: SQLWCHAR * (), <./iodbc/samples/iodbctest.c 140>
+  149 				strlen: <>
+  150 				OPL_A2W: <>
+  151 			SQLDriverConnectW: SQLRETURN SQL_API (), <./iodbc/iodbc/connect.c 3025>
+  152 				ENTER_HDBC: <>
+  153 				trace_SQLDriverConnectW: void (), <./iodbc/iodbc/trace/DriverConnect.c 280>
+  154 				SQLDriverConnect_Internal: SQLRETURN SQL_API (), <./iodbc/iodbc/connect.c 2266>
+  155 					CONN: <>
+  156 					ENVR: <>
+  157 					GENV: <>
+  158 					dialproc: <>
+  159 					PUSHSQLERR: <>
+  160 					RETURN: <>
+  161 					SQLGetConfigMode: BOOL INSTAPI (), <./iodbc/iodbcinst/SQLGetConfigMode.c 86>
+  162 						CLEAR_ERROR: <>
+  163 						PUSH_ERROR: <>
+  164 					assert: <>
+  165 					strdup: <>
+  166 					dm_SQL_WtoU8: SQLCHAR * (), <./iodbc/iodbcinst/unicode.c 803>
+  167 						strdup_WtoU8: SQLCHAR * (), <./iodbc/iodbcinst/unicode.c 635>
+  168 							calc_len_for_utf8: size_t (), <./iodbc/iodbcinst/unicode.c 413>
+  169 							malloc: <>
+  170 							wcstoutf8: size_t (), <./iodbc/iodbcinst/unicode.c 494>
+  171 						calc_len_for_utf8: 168
+  172 						malloc: <>
+  173 						wcsntoutf8: int (), <./iodbc/iodbcinst/unicode.c 562>
+  174 					SQL_SUCCEEDED: <>
+  175 					WCSNCPY: <>
+  176 					WCSLEN: <>
+  177 					strlen: <>
+  178 					MEM_FREE: <>
+  179 					strcasecmp: int (), <./iodbc/iodbcinst/inifile.c 108>
+  180 						toupper: <>
+  181 					STRLEN: <>
+  182 					wcsncpy: wchar_t * (), <./iodbc/iodbcinst/unicode.c 125>
+  183 					ODBC_UNLOCK: <>
+  184 					CFBundleGetBundleWithIdentifier: <>
+  185 					CFSTR: <>
+  186 					CFBundleCopyResourceURL: <>
+  187 					CFURLCopyFileSystemPath: <>
+  188 					CFStringGetCString: <>
+  189 					CFRelease: <>
+  190 					ODBC_LOCK: <>
+  191 					SQLSetConfigMode: 128
+  192 					SQLGetPrivateProfileString: 131
+  193 					STRCASEEQ: <>
+  194 					malloc: <>
+  195 					dm_SQL_A2W: SQLWCHAR * (), <./iodbc/iodbcinst/unicode.c 281>
+  196 						strlen: <>
+  197 						calloc: <>
+  198 						OPL_A2W: <>
+  199 					dm_SQL_W2A: SQLCHAR * (), <./iodbc/iodbcinst/unicode.c 253>
+  200 						wcslen: 110
+  201 						malloc: <>
+  202 						OPL_W2A: <>
+  203 					CALL_UDRIVER: <>
+  204 					dm_StrCopyOut2_W2A: 109
+  205 					dm_StrCopyOut2_A2W: 105
+  206 					dm_SQL_U8toW: 87
+  207 					WCSNCAT: <>
+  208 				LEAVE_HDBC: <>
+  209 			ODBC_Errors: int (), <./iodbc/samples/iodbctest.c 486>
+  210 				SQLError: SQLRETURN SQL_API (), <./iodbc/iodbc/herr.c 596>
+  211 					ODBC_LOCK: <>
+  212 					TRACE: <>
+  213 					trace_SQLError: void (), <./iodbc/iodbc/trace/Error.c 81>
+  214 					ODBC_UNLOCK: <>
+  215 				NUMTCHAR: <>
+  216 				SQL_SUCCEEDED: <>
+  217 				fprintf: <>
+  218 				TXTCMP: <>
+  219 				TEXT: <>
+  220 				SQLGetDiagRec: RETCODE SQL_API (), <./iodbc/iodbc/herr.c 1067>
+  221 					ODBC_LOCK: <>
+  222 					TRACE: <>
+  223 					trace_SQLGetDiagRec: void (), <./iodbc/iodbc/trace/GetDiagRec.c 82>
+  224 					SQLGetDiagRec_Internal: RETCODE SQL_API (), <./iodbc/iodbc/herr.c 755>
+  225 						IS_VALID_HENV: <>
+  226 						IS_VALID_HDBC: <>
+  227 						IS_VALID_HSTMT: <>
+  228 						IS_VALID_HDESC: <>
+  229 						error_rec_count: int (), <./iodbc/iodbc/herr.c 734>
+  230 						get_nth_error: sqlerr_t * (), <./iodbc/iodbc/herr.c 745>
+  231 						STRLEN: <>
+  232 						STRNCPY: <>
+  233 						dm_StrCopyOut2_A2W: 105
+  234 						snprintf: <>
+  235 						sprintf: <>
+  236 						malloc: <>
+  237 						CALL_DRIVER: <>
+  238 						MEM_FREE: <>
+  239 						SQL_SUCCEEDED: <>
+  240 						dm_StrCopyOut2_W2A: 109
+  241 					ODBC_UNLOCK: <>
+  242 				exit: <>
+  243 			SQLDriverConnect: SQLRETURN SQL_API (), <./iodbc/iodbc/connect.c 2953>
+  244 				ENTER_HDBC: <>
+  245 				trace_SQLDriverConnect: void (), <./iodbc/iodbc/trace/DriverConnect.c 252>
+  246 				SQLDriverConnect_Internal: 154
+  247 				LEAVE_HDBC: <>
+  248 			SQLGetFunctions: SQLRETURN SQL_API (), <./iodbc/iodbc/info.c 1379>
+  249 				ENTER_HDBC: <>
+  250 				trace_SQLGetFunctions: void (), <./iodbc/iodbc/trace/GetFunctions.c 225>
+  251 				SQLGetFunctions_Internal: SQLRETURN (), <./iodbc/iodbc/info.c 1204>
+  252 					CONN: <>
+  253 					PUSHSQLERR: <>
+  254 					CALL_DRIVER: <>
+  255 					memset: <>
+  256 					memcpy: <>
+  257 					SQL_FUNC_EXISTS: <>
+  258 				LEAVE_HDBC: <>
+  259 			SQLAllocStmt: SQLRETURN SQL_API (), <./iodbc/iodbc/hstmt.c 419>
+  260 				ENTER_HDBC: <>
+  261 				trace_SQLAllocStmt: void (), <./iodbc/iodbc/trace/AllocStmt.c 81>
+  262 				SQLAllocStmt_Internal: 49
+  263 				LEAVE_HDBC: <>
+  264 		ODBC_Errors: 209
+  265 		ODBC_Test: int (), <./iodbc/samples/iodbctest.c 671>
+  266 			printf: <>
+  267 			fgets: <>
+  268 			strcpy: <>
+  269 			strcpy_A2W: 148
+  270 			TXTLEN: <>
+  271 			TEXTC: <>
+  272 			TXTCMP: <>
+  273 			TEXT: <>
+  274 			SQLTables: SQLRETURN SQL_API (), <./iodbc/iodbc/catalog.c 913>
+  275 				ENTER_STMT: <>
+  276 				trace_SQLTables: void (), <./iodbc/iodbc/trace/Tables.c 81>
+  277 				SQLTables_Internal: SQLRETURN SQL_API (), <./iodbc/iodbc/catalog.c 803>
+  278 					STMT: <>
+  279 					CONN: <>
+  280 					ENVR: <>
+  281 					CALL_UDRIVER: <>
+  282 					PUSHSQLERR: <>
+  283 				LEAVE_STMT: <>
+  284 			ODBC_Errors: 209
+  285 			SQLGetTypeInfo: SQLRETURN SQL_API (), <./iodbc/iodbc/catalog.c 261>
+  286 				ENTER_STMT: <>
+  287 				trace_SQLGetTypeInfo: void (), <./iodbc/iodbc/trace/GetTypeInfo.c 133>
+  288 				SQLGetTypeInfo_Internal: SQLRETURN SQL_API (), <./iodbc/iodbc/catalog.c 194>
+  289 					STMT: <>
+  290 					CONN: <>
+  291 					ENVR: <>
+  292 					CALL_UDRIVER: <>
+  293 					PUSHSQLERR: <>
+  294 				LEAVE_STMT: <>
+  295 			ODBC_Reconnect: int (), <./iodbc/samples/iodbctest.c 428>
+  296 				SQLFreeStmt: SQLRETURN SQL_API (), <./iodbc/iodbc/hstmt.c 627>
+  297 					ENTER_STMT: <>
+  298 					trace_SQLFreeStmt: void (), <./iodbc/iodbc/trace/FreeStmt.c 98>
+  299 					SQLFreeStmt_Internal: SQLRETURN (), <./iodbc/iodbc/hstmt.c 502>
+  300 						STMT: <>
+  301 						CONN: <>
+  302 						PUSHSQLERR: <>
+  303 						CALL_DRIVER: <>
+  304 						SQL_SUCCEEDED: <>
+  305 					LEAVE_STMT: <>
+  306 				SQLFreeHandle: RETCODE SQL_API (), <./iodbc/iodbc/odbc3.c 465>
+  307 					ENTER_DESC: <>
+  308 					trace_SQLFreeHandle: void (), <./iodbc/iodbc/trace/FreeHandle.c 82>
+  309 					LEAVE_DESC: <>
+  310 					MEM_FREE: <>
+  311 					IS_VALID_HDBC: <>
+  312 					CONN: <>
+  313 					PUSHSQLERR: <>
+  314 					IS_VALID_HENV: <>
+  315 					GENV: <>
+  316 				SQLDisconnect: SQLRETURN SQL_API (), <./iodbc/iodbc/connect.c 3432>
+  317 					ENTER_HDBC: <>
+  318 					trace_SQLDisconnect: void (), <./iodbc/iodbc/trace/Disconnect.c 81>
+  319 					SQLDisconnect_Internal: SQLRETURN (), <./iodbc/iodbc/connect.c 3379>
+  320 						CONN: <>
+  321 						GENV: <>
+  322 						STMT: <>
+  323 						PUSHSQLERR: <>
+  324 					LEAVE_HDBC: <>
+  325 				SQLDriverConnect: 243
+  326 				SQL_SUCCEEDED: <>
+  327 				SQLAllocStmt: 259
+  328 				SQLAllocHandle: 33
+  329 				ODBC_Errors: 209
+  330 			fprintf: <>
+  331 			SQLPrepare: SQLRETURN SQL_API (), <./iodbc/iodbc/prepare.c 244>
+  332 				ENTER_STMT: <>
+  333 				trace_SQLPrepare: void (), <./iodbc/iodbc/trace/Prepare.c 81>
+  334 				SQLPrepare_Internal: SQLRETURN SQL_API (), <./iodbc/iodbc/prepare.c 97>
+  335 					STMT: <>
+  336 					CONN: <>
+  337 					ENVR: <>
+  338 					PUSHSQLERR: <>
+  339 					CALL_UDRIVER: <>
+  340 				LEAVE_STMT: <>
+  341 			SQLExecute: SQLRETURN SQL_API (), <./iodbc/iodbc/execute.c 276>
+  342 				ENTER_STMT: <>
+  343 				trace_SQLExecute: void (), <./iodbc/iodbc/trace/Execute.c 81>
+  344 				SQLExecute_Internal: SQLRETURN (), <./iodbc/iodbc/execute.c 123>
+  345 					STMT: <>
+  346 					PUSHSQLERR: <>
+  347 					CALL_DRIVER: <>
+  348 				LEAVE_STMT: <>
+  349 			SQLNumResultCols: SQLRETURN SQL_API (), <./iodbc/iodbc/result.c 555>
+  350 				ENTER_STMT: <>
+  351 				trace_SQLNumResultCols: void (), <./iodbc/iodbc/trace/NumResultCols.c 81>
+  352 				LEAVE_STMT: <>
+  353 			SQLRowCount: SQLRETURN SQL_API (), <./iodbc/iodbc/result.c 459>
+  354 				ENTER_STMT: <>
+  355 				trace_SQLRowCount: void (), <./iodbc/iodbc/trace/RowCount.c 81>
+  356 				SQLRowCount_Internal: SQLRETURN (), <./iodbc/iodbc/result.c 423>
+  357 					STMT: <>
+  358 					PUSHSQLERR: <>
+  359 					CALL_DRIVER: <>
+  360 				LEAVE_STMT: <>
+  361 			putchar: <>
+  362 			SQLDescribeCol: SQLRETURN SQL_API (), <./iodbc/iodbc/result.c 786>
+  363 				ENTER_STMT: <>
+  364 				trace_SQLDescribeCol: void (), <./iodbc/iodbc/trace/DescribeCol.c 109>
+  365 				SQLDescribeCol_Internal: SQLRETURN SQL_API (), <./iodbc/iodbc/result.c 614>
+  366 					STMT: <>
+  367 					CONN: <>
+  368 					ENVR: <>
+  369 					GENV: <>
+  370 					PUSHSQLERR: <>
+  371 					CALL_UDRIVER: <>
+  372 					SQL_SUCCEEDED: <>
+  373 					dm_StrCopyOut2_W2A: 109
+  374 					dm_StrCopyOut2_A2W: 105
+  375 				LEAVE_STMT: <>
+  376 			NUMTCHAR: <>
+  377 			SQLFetch: SQLRETURN SQL_API (), <./iodbc/iodbc/fetch.c 225>
+  378 				ENTER_STMT: <>
+  379 				trace_SQLFetch: void (), <./iodbc/iodbc/trace/Fetch.c 81>
+  380 				SQLFetch_Internal: SQLRETURN (), <./iodbc/iodbc/fetch.c 96>
+  381 					STMT: <>
+  382 					PUSHSQLERR: <>
+  383 					CALL_DRIVER: <>
+  384 				SQL_SUCCEEDED: <>
+  385 				LEAVE_STMT: <>
+  386 			SQLFetchScroll: RETCODE SQL_API (), <./iodbc/iodbc/odbc3.c 3516>
+  387 				ENTER_STMT: <>
+  388 				trace_SQLFetchScroll: void (), <./iodbc/iodbc/trace/FetchScroll.c 82>
+  389 				SQLFetchScroll_Internal: RETCODE (), <./iodbc/iodbc/odbc3.c 3372>
+  390 					STMT: <>
+  391 					CONN: <>
+  392 					PUSHSQLERR: <>
+  393 					CALL_DRIVER: <>
+  394 				SQL_SUCCEEDED: <>
+  395 				LEAVE_STMT: <>
+  396 			SQLGetData: SQLRETURN SQL_API (), <./iodbc/iodbc/fetch.c 576>
+  397 				ENTER_STMT: <>
+  398 				trace_SQLGetData: void (), <./iodbc/iodbc/trace/GetData.c 444>
+  399 				SQLGetData_Internal: SQLRETURN (), <./iodbc/iodbc/fetch.c 381>
+  400 					STMT: <>
+  401 					CONN: <>
+  402 					ENVR: <>
+  403 					PUSHSQLERR: <>
+  404 					CALL_DRIVER: <>
+  405 					dm_SQL_A2W: 195
+  406 					WCSCPY: <>
+  407 					MEM_FREE: <>
+  408 				LEAVE_STMT: <>
+  409 			SQLMoreResults: SQLRETURN SQL_API (), <./iodbc/iodbc/fetch.c 742>
+  410 				ENTER_STMT: <>
+  411 				trace_SQLMoreResults: void (), <./iodbc/iodbc/trace/MoreResults.c 81>
+  412 				SQLMoreResults_Internal: SQLRETURN (), <./iodbc/iodbc/fetch.c 607>
+  413 					STMT: <>
+  414 					PUSHSQLERR: <>
+  415 					CALL_DRIVER: <>
+  416 				LEAVE_STMT: <>
+  417 			SQLFreeStmt: 296
+  418 			SQLCloseCursor: SQLRETURN SQL_API (), <./iodbc/iodbc/odbc3.c 3642>
+  419 				ENTER_STMT: <>
+  420 				trace_SQLCloseCursor: void (), <./iodbc/iodbc/trace/CloseCursor.c 82>
+  421 				SQLCloseCursor_Internal: SQLRETURN (), <./iodbc/iodbc/odbc3.c 3559>
+  422 					STMT: <>
+  423 					CONN: <>
+  424 					PUSHSQLERR: <>
+  425 					CALL_DRIVER: <>
+  426 				LEAVE_STMT: <>
+  427 		ODBC_Disconnect: int (), <./iodbc/samples/iodbctest.c 388>
+  428 			SQLFreeStmt: 296
+  429 			SQLDisconnect: 316
+  430 			SQLFreeConnect: SQLRETURN SQL_API (), <./iodbc/iodbc/hdbc.c 308>
+  431 				ENTER_HDBC: <>
+  432 				trace_SQLFreeConnect: void (), <./iodbc/iodbc/trace/FreeConnect.c 81>
+  433 				SQLFreeConnect_Internal: SQLRETURN (), <./iodbc/iodbc/hdbc.c 264>
+  434 					CONN: <>
+  435 					GENV: <>
+  436 					PUSHSQLERR: <>
+  437 				LEAVE_HDBC: <>
+  438 				MEM_FREE: <>
+  439 			SQLFreeEnv: SQLRETURN SQL_API (), <./iodbc/iodbc/henv.c 243>
+  440 				GENV: <>
+  441 				ODBC_LOCK: <>
+  442 				TRACE: <>
+  443 				trace_SQLFreeEnv: void (), <./iodbc/iodbc/trace/FreeEnv.c 81>
+  444 				SQLFreeEnv_Internal: SQLRETURN (), <./iodbc/iodbc/henv.c 210>
+  445 					GENV: <>
+  446 					IS_VALID_HENV: <>
+  447 					CLEAR_ERRORS: <>
+  448 					PUSHSQLERR: <>
+  449 				MEM_FREE: <>
+  450 				trace_stop: void (), <./iodbc/iodbc/trace/trace.c 432>
+  451 					trace_strftime_now: void (), <./iodbc/iodbc/trace/trace.c 158>
+  452 						tzset: <>
+  453 						time: <>
+  454 						localtime_r: <>
+  455 						localtime: <>
+  456 						strftime: <>
+  457 					trace_emit: void (), <./iodbc/iodbc/trace/trace.c 474>
+  458 						va_start: <>
+  459 						vfprintf: <>
+  460 						va_end: <>
+  461 					fclose: <>
+  462 				ODBC_UNLOCK: <>
+  463 			SQLCloseCursor: 418
+  464 			SQLFreeHandle: 306
+  465 		strcasecmp: 179
+  466 		display_help: void (), <./iodbc/iodbcadm/gtk/main.c 108>
+  467 			printf: <>
+  468 		setenv: int (), <./iodbc/iodbcadm/gtk/main.c 129>
+  469 			malloc: <>
+  470 			strlen: <>
+  471 			strcpy: <>
+  472 			strcat: <>
+  473 			getenv: <>
+  474 			free: <>
+  475 			putenv: <>
+  476 		getenv: <>
+  477 		STRCPY: <>
+  478 		STRCAT: <>
+  479 		close: <>
+  480 		kde_gui: int (), <./iodbc/iodbcadm/gtk/main.c 101>
+  481 		gtk_gui: int (), <./iodbc/iodbcadm/gtk/main.c 88>
+  482 			gtk_set_locale: <>
+  483 			gtk_init: <>
+  484 			gtk_window_new: <>
+  485 			SQLManageDataSources: BOOL INSTAPI (), <./iodbc/iodbcinst/SQLManageDataSource.c 145>
+  486 				CLEAR_ERROR: <>
+  487 				PUSH_ERROR: <>
+  488 				ManageDataSources: BOOL (), <./iodbc/iodbcinst/SQLManageDataSource.c 101>
+  489 					CFBundleGetBundleWithIdentifier: <>
+  490 					CFSTR: <>
+  491 					CFBundleCopyResourceURL: <>
+  492 					CFURLCopyFileSystemPath: <>
+  493 					CFStringGetCString: <>
+  494 					STRCAT: <>
+  495 					CALL_ADMIN_DIALBOX: <>
+  496 					CFRelease: <>

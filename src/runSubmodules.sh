@@ -31,6 +31,7 @@ error_checklist(){
         fi
 }
 
+UNIQUE_NAME=`echo $CFLOW_INPUT_PROJECT_DIRECTORY | sed -e 's/\//_/g'`
 ##################
 # RETURN WRAPPER #
 ##################
@@ -45,12 +46,12 @@ check_return_wrapper(){
 	LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
 
 	# Remove any previously existing log file
-	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS.log 2>/dev/null
+	rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS_$UNIQUE_NAME.log 2>/dev/null
 
 	# Feed every c program to vulnerability checker submodule
 	for program in $LIST_OF_C_PROGRAMS; do
 		echo "[Run Submodules]: Checking $program ..."
-		python check_return.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+		python check_return.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS_$UNIQUE_NAME.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
 	done
 
 	rm check_return.py
@@ -63,12 +64,12 @@ check_return_wrapper(){
 check_a_before_b_wrapper(){
 
   # Remove any previously existing log file
-  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>/dev/null
+  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B_$UNIQUE_NAME.log 2>/dev/null
 
   # Iterate through each cflow file
   for cflow_output in $CFLOW_OUTPUT_DIRECTORY/*; do
-	echo "[Run Submodules]: Checking $program ..."
-	python check_a_before_b.py $cflow_output 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+	echo "[Run Submodules]: Checking $cflow_output ..."
+	python check_a_before_b.py $cflow_output 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B_$UNIQUE_NAME.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
   done
 }
 
@@ -87,12 +88,12 @@ check_exec_wrapper(){
   #echo $LIST_OF_C_PROGRAMS
 
   # Remove any previously existing log file
-  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>/dev/null
+  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS_$UNIQUE_NAME.log 2>/dev/null
 
   # Feed every c program to vulnerability checker submodule
   for program in $LIST_OF_C_PROGRAMS; do
 	echo "[Run Submodules]: Checking $program ..."
-	python check_exec.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+	python check_exec.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS_$UNIQUE_NAME.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
   done
 
   rm check_exec.py
@@ -113,12 +114,12 @@ check_bad_words_wrapper(){
   LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
 
   # Remove any previously existing log file
-  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>/dev/null
+  rm $VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS_$UNIQUE_NAME.log 2>/dev/null
 
   # Feed every c program to vulnerability checker submodule
   for program in $LIST_OF_C_PROGRAMS; do
 	echo "[Run Submodules]: Checking $program ..."
-     	python check_bad_words.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+     	python check_bad_words.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS_$UNIQUE_NAME.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
   done
 
   rm check_bad_words.py

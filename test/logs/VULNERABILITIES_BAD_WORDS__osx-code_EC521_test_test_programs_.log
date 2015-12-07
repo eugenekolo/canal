@@ -1,0 +1,43 @@
+[CHECK_BAD_WORDS] Errors in: ./poc/proofOfConceptTest.c
+	error = seteuid, line = 83, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = seteuid, line = 88, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 89, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = system, line = 255, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 268, comment = [ERROR] Dangerous exec* call!
+	error = scanf, line = 395, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 402, comment = [ERROR] Dangerous boundless call used!
+	error = seteuid, line = 465, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 466, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = execv, line = 467, comment = [ERROR] Dangerous exec* call!
+	error = setuid, line = 474, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 476, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = gets, line = 511, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 521, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 573, comment = [ERROR] Dangerous boundless call used!
+	error = seteuid, line = 610, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 611, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = seteuid, line = 669, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = strcpy, line = 850, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 851, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 860, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./poc2/poc2.c
+	error = execv, line = 199, comment = [ERROR] Dangerous exec* call!
+	error = gets, line = 234, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 243, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 272, comment = [ERROR] Dangerous boundless call used!
+	error = setuid, line = 304, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = strcpy, line = 482, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 483, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./chal2/test_chal2.c
+	error = setregid, line = 13, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = gets, line = 17, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 32, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./chal_mega/chal_mega_testOutput/chal_mega.c
+	error = system, line = 21, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 22, comment = [ERROR] Dangerous exec* call!
+	error = seteuid, line = 30, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setregid, line = 31, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = system, line = 38, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./chal1/test_chal1.c
+	error = setregid, line = 9, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = system, line = 10, comment = [ERROR] Dangerous exec* call!

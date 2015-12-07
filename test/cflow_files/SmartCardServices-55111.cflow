@@ -1,0 +1,1064 @@
+    1 	main: int (), <lex.bp.c 1604>
+    2 		printf: <>
+    3 		opendir: <>
+    4 		CHECK_ERR: <>
+    5 		readdir: <>
+    6 		strstr: <>
+    7 		scanf: <>
+    8 		closedir: <>
+    9 		snprintf: <>
+   10 		SCardEstablishContext: LONG (), <./src/PCSC/winscard.c 174>
+   11 			SCardLockThread: inline LONG (), <./src/PCSC/winscard_clnt.c 3243>
+   12 				SYS_MutexLock: int (), <./src/PCSC/thread_macosx.c 53>
+   13 					pthread_mutex_lock: <>
+   14 			SCardEstablishContextTH: LONG (), <./src/PCSC/winscard_clnt.c 243>
+   15 				SCardCheckDaemonAvailability: LONG (), <./src/PCSC/winscard_clnt.c 3265>
+   16 					SYS_Stat: INTERNAL int (), <./src/PCSC/sys_unix.c 350>
+   17 						stat: <>
+   18 					Log1: <>
+   19 				SCardInitializeOnce: int (), <./src/PCSC/winscard_clnt.c 3311>
+   20 					SYS_Initialize: INTERNAL int (), <./src/PCSC/sys_unix.c 73>
+   21 					SYS_OpenFile: INTERNAL int (), <./src/PCSC/sys_unix.c 154>
+   22 						open: <>
+   23 					Log2: <>
+   24 					SYS_GetPageSize: INTERNAL int (), <./src/PCSC/sys_unix.c 232>
+   25 						getpagesize: <>
+   26 					SYS_PublicMemoryMap: INTERNAL void * (), <./src/PCSC/sys_unix.c 275>
+   27 						mmap: <>
+   28 						Log2: <>
+   29 						strerror: <>
+   30 					Log1: <>
+   31 					SYS_CloseFile: INTERNAL int (), <./src/PCSC/sys_unix.c 168>
+   32 						close: <>
+   33 				SHMClientSetupSession: <>
+   34 				SYS_CloseFile: 31
+   35 				htonlVersionStruct: <>
+   36 				WrapSHMWrite: <>
+   37 				SHMClientCommunicationTimeout: int (), <./src/PCSC/winscard_clnt.c 3393>
+   38 				SHMClientReadMessage: <>
+   39 				Log1: <>
+   40 				ntohlVersionStruct: <>
+   41 				Log3: <>
+   42 				htonlEstablishStruct: <>
+   43 				memcpy: <>
+   44 				ntohlEstablishStruct: <>
+   45 				SCardAddContext: LONG (), <./src/PCSC/winscard_clnt.c 3043>
+   46 					malloc: <>
+   47 					SYS_MutexInit: int (), <./src/PCSC/thread_macosx.c 39>
+   48 						pthread_mutex_init: <>
+   49 			SCardUnlockThread: inline LONG (), <./src/PCSC/winscard_clnt.c 3253>
+   50 				SYS_MutexUnLock: int (), <./src/PCSC/thread_macosx.c 60>
+   51 					pthread_mutex_unlock: <>
+   52 			SYS_Random: int (), <./src/PCSC/sys_unix.c 361>
+   53 				srand: <>
+   54 				rand: <>
+   55 			SYS_GetSeed: INTERNAL int (), <./src/PCSC/sys_unix.c 377>
+   56 				gettimeofday: <>
+   57 				time: <>
+   58 			Log3: <>
+   59 		SCardListReaders: LONG (), <./src/PCSC/winscard.c 1356>
+   60 			SCardCheckDaemonAvailability: 15
+   61 			SCardGetContextIndice: LONG (), <./src/PCSC/winscard_clnt.c 3075>
+   62 				SCardLockThread: 11
+   63 				SCardGetContextIndiceTH: LONG (), <./src/PCSC/winscard_clnt.c 3098>
+   64 				SCardUnlockThread: 49
+   65 			SYS_MutexLock: 12
+   66 			SharedReaderState_ReaderID: <>
+   67 			strlen: <>
+   68 			SharedReaderState_ReaderName: <>
+   69 			SYS_MutexUnLock: 50
+   70 			strcpy: <>
+   71 		malloc: <>
+   72 		SCardGetStatusChange: LONG (), <./src/PCSC/winscard.c 1003>
+   73 			SCardCheckDaemonAvailability: 15
+   74 			SCardGetContextIndice: 61
+   75 			SYS_MutexLock: 12
+   76 			SYS_MutexUnLock: 50
+   77 			SharedReaderState_ReaderID: <>
+   78 			SYS_USleep: INTERNAL int (), <./src/PCSC/sys_unix.c 129>
+   79 				nanosleep: <>
+   80 				usleep: <>
+   81 			Log1: <>
+   82 			SharedReaderState_ReaderNameIsEqual: <>
+   83 			SharedReaderState_State: <>
+   84 			SharedReaderState_CardAtrLength: <>
+   85 			memcpy: <>
+   86 			SharedReaderState_CardAtr: <>
+   87 			SharedReaderState_Sharing: <>
+   88 		sprintf: <>
+   89 		fopen: <>
+   90 		stat: <>
+   91 		strlen: <>
+   92 		fgets: <>
+   93 		ftell: <>
+   94 		rewind: <>
+   95 		fwrite: <>
+   96 		fclose: <>
+   97 		strcmp: <>
+   98 		DebugLogSetLogType: void (), <./src/PCSC/debug.c 160>
+   99 			Log2: <>
+  100 			isatty: <>
+  101 			fileno: <>
+  102 			getenv: <>
+  103 			strcmp: <>
+  104 		getopt_long: <>
+  105 		getopt: <>
+  106 		abs: <>
+  107 		atoi: <>
+  108 		Log2: <>
+  109 		Log1: <>
+  110 		DebugLogSetLevel: void (), <./src/PCSC/debug.c 156>
+  111 			Log1: <>
+  112 			Log2: <>
+  113 		print_usage: <>
+  114 		print_version: <>
+  115 		DebugLogSetCategory: int (), <./src/PCSC/debug.c 146>
+  116 			strlcat: <>
+  117 			Log2: <>
+  118 		ProcessHotplugRequest: int (), <./src/PCSC/pcscdaemon.c 151>
+  119 			GetDaemonPid: pid_t (), <./src/PCSC/pcscdaemon.c 100>
+  120 				fopen: <>
+  121 				fgets: <>
+  122 				fclose: <>
+  123 				atoi: <>
+  124 				Log2: <>
+  125 				strerror: <>
+  126 			SendHotplugSignal: int (), <./src/PCSC/pcscdaemon.c 129>
+  127 				GetDaemonPid: 119
+  128 				Log2: <>
+  129 				kill: <>
+  130 				Log3: <>
+  131 				strerror: <>
+  132 			Log1: <>
+  133 			SYS_Stat: 16
+  134 		SYS_Stat: 16
+  135 		GetDaemonPid: 119
+  136 		kill: <>
+  137 		clean_temp_files: <>
+  138 		SYS_Daemon: INTERNAL int (), <./src/PCSC/sys_unix.c 338>
+  139 			daemon: <>
+  140 		strerror: <>
+  141 		signal: <>
+  142 		fprintf: <>
+  143 		getpid: <>
+  144 		SYS_Mkdir: INTERNAL int (), <./src/PCSC/sys_unix.c 91>
+  145 			mkdir: <>
+  146 		atexit: <>
+  147 		at_exit: <>
+  148 		RFAllocateReaderSpace: LONG (), <./src/PCSC/readerfactory.c 110>
+  149 			malloc: <>
+  150 			SYS_MutexInit: 47
+  151 			calloc: <>
+  152 			EHInitializeEventStructures: LONG (), <./src/PCSC/eventhandler.c 59>
+  153 				SYS_RemoveFile: INTERNAL int (), <./src/PCSC/sys_unix.c 182>
+  154 					remove: <>
+  155 				SYS_OpenFile: 21
+  156 				DebugLogA: <>
+  157 				exit: <>
+  158 				SYS_Chmod: INTERNAL int (), <./src/PCSC/sys_unix.c 187>
+  159 					chmod: <>
+  160 				SYS_GetPageSize: 24
+  161 				SYS_SeekFile: INTERNAL int (), <./src/PCSC/sys_unix.c 207>
+  162 					lseek: <>
+  163 				SYS_WriteFile: INTERNAL int (), <./src/PCSC/sys_unix.c 219>
+  164 					write: <>
+  165 				SYS_MemoryMap: INTERNAL void * (), <./src/PCSC/sys_unix.c 247>
+  166 					mmap: <>
+  167 				memset: <>
+  168 		RFStartSerialReaders: int (), <./src/PCSC/readerfactory.c 1073>
+  169 			DBUpdateReaders: <>
+  170 		Log3: <>
+  171 		SVCServiceRunLoop: void (), <./src/PCSC/pcscdaemon.c 191>
+  172 			SHMInitializeCommonSegment: INTERNAL int (), <./src/PCSC/winscard_msg_srv.c 110>
+  173 				socket: <>
+  174 				Log2: <>
+  175 				strerror: <>
+  176 				strncpy: <>
+  177 				SYS_Unlink: INTERNAL int (), <./src/PCSC/sys_unix.c 400>
+  178 					unlink: <>
+  179 				bind: <>
+  180 				strlen: <>
+  181 				SHMCleanupSharedSegment: <>
+  182 				listen: <>
+  183 				SYS_Chmod: 158
+  184 			Log1: <>
+  185 			exit: <>
+  186 			ContextsInitialize: LONG (), <./src/PCSC/winscard_svc.c 99>
+  187 				memset: <>
+  188 			signal: <>
+  189 			SYS_MutexInit: 47
+  190 			HPSearchHotPluggables: LONG (), <./src/PCSC/hotplug_macosx.c 789>
+  191 				HPDriversGetFromDirectory: HPDriverVector (), <./src/PCSC/hotplug_macosx.c 151>
+  192 					CFStringCreateWithCString: <>
+  193 					CFURLCreateWithFileSystemPath: <>
+  194 					CFRelease: <>
+  195 					DebugLogA: <>
+  196 					CFBundleCreateBundlesFromDirectory: <>
+  197 					CFArrayGetCount: <>
+  198 					calloc: <>
+  199 					CFArrayGetValueAtIndex: <>
+  200 					CFBundleGetInfoDictionary: <>
+  201 					CFBundleCopyBundleURL: <>
+  202 					CFURLCopyPath: <>
+  203 					strdup: <>
+  204 					CFStringGetCStringPtr: <>
+  205 					CFStringGetSystemEncoding: <>
+  206 					CFDictionaryGetValue: <>
+  207 					CFSTR: <>
+  208 					strtoul: <>
+  209 					DebugLogB: <>
+  210 					free: <>
+  211 				HPDriversMatchUSBDevices: int (), <./src/PCSC/hotplug_macosx.c 460>
+  212 					IOServiceMatching: <>
+  213 					DebugLogA: <>
+  214 					IOServiceGetMatchingServices: <>
+  215 					IOIteratorNext: <>
+  216 					IOCreatePlugInInterfaceForService: <>
+  217 					IOObjectRelease: <>
+  218 					QueryInterface: <>
+  219 					CFUUIDGetUUIDBytes: <>
+  220 					IODestroyPlugInInterface: <>
+  221 					GetDeviceVendor: <>
+  222 					GetDeviceProduct: <>
+  223 					GetLocationID: <>
+  224 					HPDeviceListInsert: HPDeviceList (), <./src/PCSC/hotplug_macosx.c 399>
+  225 						calloc: <>
+  226 						DebugLogA: <>
+  227 						HPDriverCopy: HPDriver * (), <./src/PCSC/hotplug_macosx.c 322>
+  228 							calloc: <>
+  229 							strdup: <>
+  230 							free: <>
+  231 					CreateInterfaceIterator: <>
+  232 					Release: <>
+  233 				HPDriversMatchPCCardDevices: int (), <./src/PCSC/hotplug_macosx.c 609>
+  234 					IOServiceMatching: <>
+  235 					DebugLogA: <>
+  236 					IOServiceGetMatchingServices: <>
+  237 					IOIteratorNext: <>
+  238 					IORegistryEntryCreateCFProperty: <>
+  239 					CFSTR: <>
+  240 					CFNumberGetValue: <>
+  241 					CFRelease: <>
+  242 					HPDeviceListInsert: 224
+  243 					IOObjectRelease: <>
+  244 				HPDeviceEquals: int (), <./src/PCSC/hotplug_macosx.c 430>
+  245 				RFAddReader: LONG (), <./src/PCSC/readerfactory.c 129>
+  246 					strlen: <>
+  247 					Log3: <>
+  248 					ReaderContextCheckDuplicateReader: int (), <./src/PCSC/readerfactory.c 1356>
+  249 						SYS_MutexLock: 12
+  250 						ReaderNameMatchForIndex: BOOL (), <./src/PCSC/readerfactory.c 1420>
+  251 							strncpy: <>
+  252 							strlen: <>
+  253 							strcmp: <>
+  254 						Log1: <>
+  255 						SYS_MutexUnLock: 50
+  256 					ReaderContextInsert: int (), <./src/PCSC/readerfactory.c 1300>
+  257 						SYS_MutexLock: 12
+  258 						free: <>
+  259 						SYS_MutexUnLock: 50
+  260 					calloc: <>
+  261 					ReaderContextConstructor: int (), <./src/PCSC/readerfactory.c 1189>
+  262 						strlcpy: <>
+  263 						malloc: <>
+  264 						SYS_MutexInit: 47
+  265 					ReaderCheckForClone: int (), <./src/PCSC/readerfactory.c 1217>
+  266 						RFSetReaderName: LONG (), <./src/PCSC/readerfactory.c 284>
+  267 							strcmp: <>
+  268 							IFDGetCapabilities: LONG (), <./src/PCSC/ifdwrapper.c 289>
+  269 								RESPONSECODE: <>
+  270 								SYS_MutexLock: 12
+  271 								IFD_Get_Capabilities: <>
+  272 								IFDHGetCapabilities: <>
+  273 								SYS_MutexUnLock: 50
+  274 							Log2: <>
+  275 							strtol: <>
+  276 							strlen: <>
+  277 							Log3: <>
+  278 							sprintf: <>
+  279 						SYS_MutexLock: 12
+  280 						SYS_MutexUnLock: 50
+  281 						ReaderDriverIsThreadSafe: BOOL (), <./src/PCSC/readerfactory.c 1401>
+  282 							IFDGetCapabilities: 268
+  283 							Log1: <>
+  284 					RFInitializeReader: LONG (), <./src/PCSC/readerfactory.c 764>
+  285 						Log3: <>
+  286 						RFLoadReader: LONG (), <./src/PCSC/readerfactory.c 473>
+  287 							Log1: <>
+  288 							DYN_LoadLibrary: int (), <./src/PCSC/dyn_macosx.c 45>
+  289 								CFStringCreateWithCString: <>
+  290 								CFURLCreateWithFileSystemPath: <>
+  291 								CFRelease: <>
+  292 								CFBundleCreate: <>
+  293 								Log1: <>
+  294 								CFBundleLoadExecutable: <>
+  295 						Log2: <>
+  296 						RFBindFunctions: LONG (), <./src/PCSC/readerfactory.c 487>
+  297 							Log1: <>
+  298 							DYN_GetAddress: int (), <./src/PCSC/dyn_macosx.c 106>
+  299 								CFStringCreateWithCString: <>
+  300 								CFBundleGetFunctionPointerForName: <>
+  301 								CFRelease: <>
+  302 							exit: <>
+  303 							GET_ADDRESSv1: <>
+  304 							GET_ADDRESS_OPTIONALv1: <>
+  305 							GET_ADDRESSv2: <>
+  306 							GET_ADDRESS_OPTIONALv2: <>
+  307 							GET_ADDRESSv3: <>
+  308 						RFUnloadReader: LONG (), <./src/PCSC/readerfactory.c 672>
+  309 							Log1: <>
+  310 							DYN_CloseLibrary: int (), <./src/PCSC/dyn_macosx.c 89>
+  311 								CFBundleIsExecutableLoaded: <>
+  312 								CFBundleUnloadExecutable: <>
+  313 								CFRelease: <>
+  314 								Log1: <>
+  315 						IFDOpenIFD: LONG (), <./src/PCSC/ifdwrapper.c 140>
+  316 							RESPONSECODE: <>
+  317 							SYS_MutexLock: 12
+  318 							IO_Create_Channel: <>
+  319 							IFDHCreateChannel: <>
+  320 							IFDHCreateChannelByName: <>
+  321 							SYS_MutexUnLock: 50
+  322 						RFUnBindFunctions: LONG (), <./src/PCSC/readerfactory.c 660>
+  323 							Log1: <>
+  324 							memset: <>
+  325 					EHSpawnEventHandler: LONG (), <./src/PCSC/eventhandler.c 174>
+  326 						IFDStatusICC: LONG (), <./src/PCSC/ifdwrapper.c 426>
+  327 							RESPONSECODE: <>
+  328 							SYS_MutexLock: 12
+  329 							IFDSetCapabilities: LONG (), <./src/PCSC/ifdwrapper.c 247>
+  330 								RESPONSECODE: <>
+  331 								IFD_Set_Capabilities: <>
+  332 								IFDHSetCapabilities: <>
+  333 							IFD_Is_ICC_Present: <>
+  334 							IFDHICCPresence: <>
+  335 							SYS_MutexUnLock: 50
+  336 							Log2: <>
+  337 							IFD_Get_Capabilities: <>
+  338 							ATRDecodeAtr: short (), <./src/PCSC/atrhandler.c 64>
+  339 								LogXxd: <>
+  340 								memset: <>
+  341 								Log4: <>
+  342 								Log9: <>
+  343 								Log2: <>
+  344 								memcpy: <>
+  345 								Log3: <>
+  346 						DebugLogB: <>
+  347 						strcpy: <>
+  348 						memcpy: <>
+  349 						htonl: <>
+  350 						SYS_ThreadCreate: int (), <./src/PCSC/thread_macosx.c 67>
+  351 							pthread_attr_init: <>
+  352 							pthread_attr_setdetachstate: <>
+  353 							pthread_attr_destroy: <>
+  354 							pthread_create: <>
+  355 						EHStatusHandlerThread: void (), <./src/PCSC/eventhandler.c 247>
+  356 							SYS_GetPageSize: 24
+  357 							IFDStatusICC: 326
+  358 							secdebug: <>
+  359 							IFDPowerICC: LONG (), <./src/PCSC/ifdwrapper.c 332>
+  360 								RESPONSECODE: <>
+  361 								IFDStatusICC: 326
+  362 								SYS_MutexLock: 12
+  363 								IFDSetCapabilities: 329
+  364 								ATRDecodeAtr: 338
+  365 								IFD_Power_ICC: <>
+  366 								IFDHPowerICC: <>
+  367 								SYS_MutexUnLock: 50
+  368 							PHGetDefaultProtocol: UCHAR (), <./src/PCSC/prothandler.c 64>
+  369 								memset: <>
+  370 								ATRDecodeAtr: 338
+  371 							htonl: <>
+  372 							memcpy: <>
+  373 							SYS_MMapSynchronize: INTERNAL int (), <./src/PCSC/sys_unix.c 313>
+  374 								msync: <>
+  375 							DebugLogB: <>
+  376 							RFSetReaderEventState: LONG (), <./src/PCSC/readerfactory.c 966>
+  377 							SYS_USleep: 78
+  378 							DebugXxd: <>
+  379 							DebugLogA: <>
+  380 							SYS_ThreadDetach: int (), <./src/PCSC/thread_macosx.c 105>
+  381 								pthread_detach: <>
+  382 							SYS_ThreadExit: int (), <./src/PCSC/thread_macosx.c 129>
+  383 								pthread_exit: <>
+  384 						secdebug: <>
+  385 					ReaderSlotCount: int (), <./src/PCSC/readerfactory.c 1381>
+  386 						IFDGetCapabilities: 268
+  387 					ReaderDriverIsThreadSafe: 281
+  388 					RFRemoveReader: LONG (), <./src/PCSC/readerfactory.c 260>
+  389 						secdebug: <>
+  390 						RFReaderInfoNamePort: LONG (), <./src/PCSC/readerfactory.c 425>
+  391 							SYS_MutexLock: 12
+  392 							ReaderNameMatchForIndex: 250
+  393 							SYS_MutexUnLock: 50
+  394 						EHDestroyEventHandler: LONG (), <./src/PCSC/eventhandler.c 117>
+  395 							DebugLogA: <>
+  396 							SYS_USleep: 78
+  397 							memset: <>
+  398 							SYS_MMapSynchronize: 373
+  399 							SYS_GetPageSize: 24
+  400 						RFUnInitializeReader: LONG (), <./src/PCSC/readerfactory.c 820>
+  401 							Log2: <>
+  402 							IFDCloseIFD: LONG (), <./src/PCSC/ifdwrapper.c 209>
+  403 								RESPONSECODE: <>
+  404 								SYS_MutexLock: 12
+  405 								IO_Close_Channel: <>
+  406 								IFDHCloseChannel: <>
+  407 								SYS_MutexUnLock: 50
+  408 							RFUnBindFunctions: 322
+  409 							RFUnloadReader: 308
+  410 						ReaderContextRemove: int (), <./src/PCSC/readerfactory.c 1328>
+  411 							SYS_MutexLock: 12
+  412 							ReaderNameMatchForIndex: 250
+  413 							SYS_MutexUnLock: 50
+  414 							ReaderContextDestructor: void (), <./src/PCSC/readerfactory.c 1251>
+  415 								ReaderContextFree: void (), <./src/PCSC/readerfactory.c 1256>
+  416 									SYS_MutexDestroy: int (), <./src/PCSC/thread_macosx.c 46>
+  417 										pthread_mutex_destroy: <>
+  418 									free: <>
+  419 									ReaderContextClear: void (), <./src/PCSC/readerfactory.c 1293>
+  420 										memset: <>
+  421 							free: <>
+  422 					ReaderContextDestructor: 414
+  423 					free: <>
+  424 					ReaderContextDuplicateSlot: void (), <./src/PCSC/readerfactory.c 1436>
+  425 						strlcpy: <>
+  426 						sprintf: <>
+  427 						strlen: <>
+  428 						malloc: <>
+  429 						SYS_MutexInit: 47
+  430 					Log2: <>
+  431 				RFRemoveReader: 388
+  432 				HPDeviceListRelease: void (), <./src/PCSC/hotplug_macosx.c 417>
+  433 					HPDriverRelease: void (), <./src/PCSC/hotplug_macosx.c 369>
+  434 						free: <>
+  435 				HPDriverVectorRelease: void (), <./src/PCSC/hotplug_macosx.c 382>
+  436 					HPDriverRelease: 433
+  437 					free: <>
+  438 			HPRegisterForHotplugEvents: LONG (), <./src/PCSC/hotplug_macosx.c 861>
+  439 				SYS_ThreadCreate: 350
+  440 				HPDeviceNotificationThread: void (), <./src/PCSC/hotplug_macosx.c 777>
+  441 					HPEstablishUSBNotification: void (), <./src/PCSC/hotplug_macosx.c 685>
+  442 						IONotificationPortCreate: <>
+  443 						CFRunLoopAddSource: <>
+  444 						CFRunLoopGetCurrent: <>
+  445 						IONotificationPortGetRunLoopSource: <>
+  446 						IOServiceMatching: <>
+  447 						DebugLogB: <>
+  448 						CFRetain: <>
+  449 						IOServiceAddMatchingNotification: <>
+  450 						HPDeviceAppeared: void (), <./src/PCSC/hotplug_macosx.c 113>
+  451 							IOIteratorNext: <>
+  452 							IOObjectRelease: <>
+  453 							HPSearchHotPluggables: 190
+  454 						HPDeviceDisappeared: void (), <./src/PCSC/hotplug_macosx.c 130>
+  455 							IOIteratorNext: <>
+  456 							IOObjectRelease: <>
+  457 							HPSearchHotPluggables: 190
+  458 					HPEstablishPCCardNotification: void (), <./src/PCSC/hotplug_macosx.c 730>
+  459 						IONotificationPortCreate: <>
+  460 						CFRunLoopAddSource: <>
+  461 						CFRunLoopGetCurrent: <>
+  462 						IONotificationPortGetRunLoopSource: <>
+  463 						IOServiceMatching: <>
+  464 						DebugLogB: <>
+  465 						CFRetain: <>
+  466 						IOServiceAddMatchingNotification: <>
+  467 						HPDeviceAppeared: 450
+  468 						HPDeviceDisappeared: 454
+  469 					CFRunLoopRun: <>
+  470 			SHMProcessEventsServer: INTERNAL int32_t (), <./src/PCSC/winscard_msg_srv.c 171>
+  471 				FD_ZERO: <>
+  472 				FD_SET: <>
+  473 				select: <>
+  474 				Log2: <>
+  475 				strerror: <>
+  476 				FD_ISSET: <>
+  477 				Log1: <>
+  478 				SHMProcessCommonChannelRequest: int (), <./src/PCSC/winscard_msg_srv.c 64>
+  479 					accept: <>
+  480 					Log2: <>
+  481 					strerror: <>
+  482 					ioctl: <>
+  483 					SYS_CloseFile: 31
+  484 			Log2: <>
+  485 			CreateContextThread: LONG (), <./src/PCSC/winscard_svc.c 115>
+  486 				SYS_CloseFile: 31
+  487 				Log2: <>
+  488 				SYS_ThreadCreate: 350
+  489 				PCSCLITE_THREAD_FUNCTION: <>
+  490 				ContextThread: void (), <./src/PCSC/winscard_svc.c 172>
+  491 					Log2: <>
+  492 					systemAwakeAndReadyCheck: <>
+  493 					SHMProcessEventsContext: INTERNAL int32_t (), <./src/PCSC/winscard_msg_srv.c 239>
+  494 						FD_ZERO: <>
+  495 						FD_SET: <>
+  496 						select: <>
+  497 						Log2: <>
+  498 						strerror: <>
+  499 						FD_ISSET: <>
+  500 						SHMClientReadMessage: <>
+  501 						SHMCommunicationTimeout: INTERNAL int (), <./src/PCSC/winscard_msg_srv.c 300>
+  502 						SYS_CloseFile: 31
+  503 					MSGCleanupClient: LONG (), <./src/PCSC/winscard_svc.c 881>
+  504 						SCardReleaseContext: LONG (), <./src/PCSC/winscard.c 204>
+  505 							SCardCheckDaemonAvailability: 15
+  506 							SCardGetContextIndice: 61
+  507 							SYS_MutexLock: 12
+  508 							htonlReleaseStruct: <>
+  509 							WrapSHMWrite: <>
+  510 							SYS_MutexUnLock: 50
+  511 							SHMClientReadMessage: <>
+  512 							SHMClientCommunicationTimeout: 37
+  513 							memcpy: <>
+  514 							ntohlReleaseStruct: <>
+  515 							SCardLockThread: 11
+  516 							SCardRemoveContext: LONG (), <./src/PCSC/winscard_clnt.c 3124>
+  517 								SCardGetContextIndiceTH: 63
+  518 								SHMClientCloseSession: <>
+  519 								free: <>
+  520 							SCardUnlockThread: 49
+  521 							Log2: <>
+  522 						MSGRemoveContext: LONG (), <./src/PCSC/winscard_svc.c 747>
+  523 							RFReaderInfoById: LONG (), <./src/PCSC/readerfactory.c 447>
+  524 								SYS_MutexLock: 12
+  525 								SYS_MutexUnLock: 50
+  526 							SCardStatus: LONG (), <./src/PCSC/winscard.c 922>
+  527 								SCardCheckDaemonAvailability: 15
+  528 								SCardGetIndicesFromHandle: LONG (), <./src/PCSC/winscard_clnt.c 3197>
+  529 									SCardLockThread: 11
+  530 									SCardGetIndicesFromHandleTH: LONG (), <./src/PCSC/winscard_clnt.c 3211>
+  531 									SCardUnlockThread: 49
+  532 								SYS_MutexLock: 12
+  533 								SharedReaderState_ReaderNameIsEqual: <>
+  534 								SYS_MutexUnLock: 50
+  535 								memset: <>
+  536 								htonlStatusStruct: <>
+  537 								WrapSHMWrite: <>
+  538 								SHMClientCommunicationTimeout: 37
+  539 								SHMClientReadMessage: <>
+  540 								memcpy: <>
+  541 								ntohlStatusStruct: <>
+  542 								strlen: <>
+  543 								SharedReaderState_CardAtrLength: <>
+  544 								SharedReaderState_State: <>
+  545 								SharedReaderState_Protocol: <>
+  546 								strncpy: <>
+  547 								SharedReaderState_CardAtr: <>
+  548 								min: <>
+  549 								RFReaderInfoById: 523
+  550 								RFCheckReaderEventState: LONG (), <./src/PCSC/readerfactory.c 982>
+  551 								RFCheckReaderStatus: LONG (), <./src/PCSC/readerfactory.c 1027>
+  552 									SharedReaderState_State: <>
+  553 							SCardDisconnect: LONG (), <./src/PCSC/winscard.c 680>
+  554 								SCardCheckDaemonAvailability: 15
+  555 								SCardGetIndicesFromHandle: 528
+  556 								SYS_MutexLock: 12
+  557 								htonlDisconnectStruct: <>
+  558 								WrapSHMWrite: <>
+  559 								SHMClientCommunicationTimeout: 37
+  560 								SYS_MutexUnLock: 50
+  561 								SHMClientReadMessage: <>
+  562 								memcpy: <>
+  563 								ntohlDisconnectStruct: <>
+  564 								SCardRemoveHandle: LONG (), <./src/PCSC/winscard_clnt.c 3179>
+  565 									SCardGetIndicesFromHandle: 528
+  566 									free: <>
+  567 								RFReaderInfoById: 523
+  568 								RFFindReaderHandle: LONG (), <./src/PCSC/readerfactory.c 891>
+  569 									SYS_MutexLock: 12
+  570 									SYS_MutexUnLock: 50
+  571 								Log1: <>
+  572 								SYS_USleep: 78
+  573 								RFUnlockSharing: LONG (), <./src/PCSC/readerfactory.c 726>
+  574 									RFReaderInfoById: 523
+  575 									RFCheckSharing: LONG (), <./src/PCSC/readerfactory.c 690>
+  576 										RFReaderInfoById: 523
+  577 										secdebug: <>
+  578 									EHSetSharingEvent: void (), <./src/PCSC/eventhandler.c 545>
+  579 										htonl: <>
+  580 								Log2: <>
+  581 								NotifyOfCardReset: LONG (), <./src/PCSC/winscard.c 1373>
+  582 									SharedReaderState_CardAtrLength: <>
+  583 									IFDPowerICC: 359
+  584 									SharedReaderState_CardAtr: <>
+  585 									SharedReaderState_SetCardAtrLength: <>
+  586 									SharedReaderState_SetProtocol: <>
+  587 									RFCheckReaderEventState: 550
+  588 									Log1: <>
+  589 									RFSetReaderEventState: 376
+  590 									SharedReaderState_State: <>
+  591 									SharedReaderState_SetState: <>
+  592 									LogXxd: <>
+  593 									IFDStatusICC: 326
+  594 									Log2: <>
+  595 								EjectCard: LONG (), <./src/PCSC/winscard.c 1490>
+  596 									IFDControl_v2: LONG (), <./src/PCSC/ifdwrapper.c 571>
+  597 										RESPONSECODE: <>
+  598 										SYS_MutexLock: 12
+  599 										IFDHControl_v2: <>
+  600 										SYS_MutexUnLock: 50
+  601 										Log2: <>
+  602 										LogXxd: <>
+  603 									Log1: <>
+  604 									Log3: <>
+  605 								RFRemoveReaderHandle: LONG (), <./src/PCSC/readerfactory.c 945>
+  606 								RFDestroyReaderHandle: LONG (), <./src/PCSC/readerfactory.c 919>
+  607 					SYS_ThreadExit: 382
+  608 					MSGFunctionDemarshall: LONG (), <./src/PCSC/winscard_svc.c 312>
+  609 						ntohlEstablishStruct: <>
+  610 						SCardEstablishContext: 10
+  611 						MSGAddContext: LONG (), <./src/PCSC/winscard_svc.c 741>
+  612 						htonlEstablishStruct: <>
+  613 						ntohlReleaseStruct: <>
+  614 						SCardReleaseContext: 504
+  615 						MSGRemoveContext: 522
+  616 						htonlReleaseStruct: <>
+  617 						ntohlConnectStruct: <>
+  618 						Log3: <>
+  619 						SCardConnect: LONG (), <./src/PCSC/winscard.c 225>
+  620 							strlen: <>
+  621 							SCardCheckDaemonAvailability: 15
+  622 							SCardGetContextIndice: 61
+  623 							SYS_MutexLock: 12
+  624 							strncpy: <>
+  625 							htonlConnectStruct: <>
+  626 							WrapSHMWrite: <>
+  627 							SHMClientCommunicationTimeout: 37
+  628 							SYS_MutexUnLock: 50
+  629 							SHMClientReadMessage: <>
+  630 							memcpy: <>
+  631 							ntohlConnectStruct: <>
+  632 							SCardAddHandle: LONG (), <./src/PCSC/winscard_clnt.c 3161>
+  633 								strdup: <>
+  634 							Log3: <>
+  635 							RFReaderInfo: LONG (), <./src/PCSC/readerfactory.c 399>
+  636 								SYS_MutexLock: 12
+  637 								strcmp: <>
+  638 								SYS_MutexUnLock: 50
+  639 							Log2: <>
+  640 							RFCheckReaderStatus: 551
+  641 							Log1: <>
+  642 							SYS_USleep: 78
+  643 							SharedReaderState_State: <>
+  644 							SharedReaderState_SetProtocol: <>
+  645 							SharedReaderState_Protocol: <>
+  646 							PHGetDefaultProtocol: 368
+  647 							SharedReaderState_CardAtr: <>
+  648 							SharedReaderState_CardAtrLength: <>
+  649 							PHGetAvailableProtocols: UCHAR (), <./src/PCSC/prothandler.c 85>
+  650 								memset: <>
+  651 								ATRDecodeAtr: 338
+  652 							PHSetProtocol: DWORD (), <./src/PCSC/prothandler.c 110>
+  653 								Log2: <>
+  654 								IFDSetPTS: LONG (), <./src/PCSC/ifdwrapper.c 64>
+  655 									RESPONSECODE: <>
+  656 									IFDSetCapabilities: 329
+  657 									IFD_Set_Protocol_Parameters: <>
+  658 									IFDHSetProtocolParameters: <>
+  659 								Log3: <>
+  660 							RFCreateReaderHandle: SCARDHANDLE (), <./src/PCSC/readerfactory.c 842>
+  661 								SYS_Random: 52
+  662 								SYS_GetSeed: 55
+  663 								SYS_MutexLock: 12
+  664 								SYS_MutexUnLock: 50
+  665 							RFLockSharing: LONG (), <./src/PCSC/readerfactory.c 709>
+  666 								RFReaderInfoById: 523
+  667 								RFCheckSharing: 575
+  668 								EHSetSharingEvent: 578
+  669 							RFDestroyReaderHandle: 606
+  670 							RFAddReaderHandle: LONG (), <./src/PCSC/readerfactory.c 924>
+  671 						MSGAddHandle: LONG (), <./src/PCSC/winscard_svc.c 813>
+  672 						htonlConnectStruct: <>
+  673 						ntohlReconnectStruct: <>
+  674 						MSGCheckHandleAssociation: LONG (), <./src/PCSC/winscard_svc.c 862>
+  675 							Log2: <>
+  676 							SYS_Sleep: INTERNAL int (), <./src/PCSC/sys_unix.c 111>
+  677 								nanosleep: <>
+  678 								sleep: <>
+  679 						SCardReconnect: LONG (), <./src/PCSC/winscard.c 469>
+  680 							SCardCheckDaemonAvailability: 15
+  681 							SCardGetIndicesFromHandle: 528
+  682 							SYS_MutexLock: 12
+  683 							SharedReaderState_ReaderNameIsEqual: <>
+  684 							SYS_MutexUnLock: 50
+  685 							htonlReconnectStruct: <>
+  686 							WrapSHMWrite: <>
+  687 							SHMClientCommunicationTimeout: 37
+  688 							SHMClientReadMessage: <>
+  689 							memcpy: <>
+  690 							ntohlReconnectStruct: <>
+  691 							Log1: <>
+  692 							RFReaderInfoById: 523
+  693 							RFCheckReaderStatus: 551
+  694 							RFFindReaderHandle: 568
+  695 							RFCheckSharing: 575
+  696 							NotifyOfCardReset: 581
+  697 							SharedReaderState_SetProtocol: <>
+  698 							SharedReaderState_Protocol: <>
+  699 							PHGetDefaultProtocol: 368
+  700 							SharedReaderState_CardAtr: <>
+  701 							SharedReaderState_CardAtrLength: <>
+  702 							PHGetAvailableProtocols: 649
+  703 							PHSetProtocol: 652
+  704 							RFLockSharing: 665
+  705 							RFUnlockSharing: 573
+  706 							RFClearReaderEventState: LONG (), <./src/PCSC/readerfactory.c 1010>
+  707 							SYS_USleep: 78
+  708 						htonlReconnectStruct: <>
+  709 						ntohlDisconnectStruct: <>
+  710 						SCardDisconnect: 553
+  711 						MSGRemoveHandle: LONG (), <./src/PCSC/winscard_svc.c 845>
+  712 						htonlDisconnectStruct: <>
+  713 						ntohlBeginStruct: <>
+  714 						SCardBeginTransaction: LONG (), <./src/PCSC/winscard.c 770>
+  715 							secdebug: <>
+  716 							SCardCheckDaemonAvailability: 15
+  717 							SCardGetIndicesFromHandle: 528
+  718 							SYS_MutexLock: 12
+  719 							SharedReaderState_ReaderNameIsEqual: <>
+  720 							SYS_MutexUnLock: 50
+  721 							htonlBeginStruct: <>
+  722 							WrapSHMWrite: <>
+  723 							SHMClientCommunicationTimeout: 37
+  724 							SHMClientReadMessage: <>
+  725 							memcpy: <>
+  726 							ntohlBeginStruct: <>
+  727 							RFReaderInfoById: 523
+  728 							Log3: <>
+  729 							RFCheckReaderStatus: 551
+  730 							RFFindReaderHandle: 568
+  731 							RFCheckReaderEventState: 550
+  732 							RFLockSharing: 665
+  733 							SYS_USleep: 78
+  734 							Log2: <>
+  735 						htonlBeginStruct: <>
+  736 						ntohlEndStruct: <>
+  737 						SCardEndTransaction: LONG (), <./src/PCSC/winscard.c 827>
+  738 							secdebug: <>
+  739 							SCardCheckDaemonAvailability: 15
+  740 							SCardGetIndicesFromHandle: 528
+  741 							SYS_MutexLock: 12
+  742 							SharedReaderState_ReaderNameIsEqual: <>
+  743 							SYS_MutexUnLock: 50
+  744 							htonlEndStruct: <>
+  745 							WrapSHMWrite: <>
+  746 							SHMClientCommunicationTimeout: 37
+  747 							SHMClientReadMessage: <>
+  748 							memcpy: <>
+  749 							ntohlEndStruct: <>
+  750 							SYS_Random: 52
+  751 							SYS_USleep: 78
+  752 							RFReaderInfoById: 523
+  753 							RFFindReaderHandle: 568
+  754 							RFCheckReaderEventState: 550
+  755 							NotifyOfCardReset: 581
+  756 							EjectCard: 595
+  757 							RFUnlockSharing: 573
+  758 							Log2: <>
+  759 						htonlEndStruct: <>
+  760 						ntohlCancelStruct: <>
+  761 						SCardCancelTransaction: LONG (), <./src/PCSC/winscard.c 886>
+  762 							SCardCheckDaemonAvailability: 15
+  763 							SCardGetIndicesFromHandle: 528
+  764 							SYS_MutexLock: 12
+  765 							SharedReaderState_ReaderNameIsEqual: <>
+  766 							SYS_MutexUnLock: 50
+  767 							htonlCancelStruct: <>
+  768 							WrapSHMWrite: <>
+  769 							SHMClientCommunicationTimeout: 37
+  770 							SHMClientReadMessage: <>
+  771 							memcpy: <>
+  772 							ntohlCancelStruct: <>
+  773 							RFReaderInfoById: 523
+  774 							RFFindReaderHandle: 568
+  775 							RFCheckReaderEventState: 550
+  776 							RFUnlockSharing: 573
+  777 							Log2: <>
+  778 						htonlCancelStruct: <>
+  779 						ntohlStatusStruct: <>
+  780 						SCardStatus: 526
+  781 						htonlStatusStruct: <>
+  782 						ntohlTransmitStruct: <>
+  783 						Log2: <>
+  784 						SCardTransmit: LONG (), <./src/PCSC/winscard.c 1184>
+  785 							SCardCheckDaemonAvailability: 15
+  786 							SCardGetIndicesFromHandle: 528
+  787 							SYS_MutexLock: 12
+  788 							SharedReaderState_ReaderNameIsEqual: <>
+  789 							SYS_MutexUnLock: 50
+  790 							memcpy: <>
+  791 							secdebug: <>
+  792 							LogXxd: <>
+  793 							htonlTransmitStructExtended: <>
+  794 							WrapSHMWrite: <>
+  795 							SHMClientCommunicationTimeout: 37
+  796 							SHMClientReadMessage: <>
+  797 							ntohlTransmitStructExtended: <>
+  798 							SHMMessageReceive: <>
+  799 							memset: <>
+  800 							htonlTransmitStruct: <>
+  801 							ntohlTransmitStruct: <>
+  802 							RFCheckSharing: 575
+  803 							RFReaderInfoById: 523
+  804 							RFCheckReaderStatus: 551
+  805 							RFFindReaderHandle: 568
+  806 							RFCheckReaderEventState: 550
+  807 							SharedReaderState_State: <>
+  808 							SharedReaderState_Protocol: <>
+  809 							Log2: <>
+  810 							IFDControl_v2: 596
+  811 							IFDTransmit: LONG (), <./src/PCSC/ifdwrapper.c 676>
+  812 								RESPONSECODE: <>
+  813 								DebugLogCategory: void (), <./src/PCSC/debug.c 151>
+  814 									log_xxd: void (), <./src/PCSC/debug.c 120>
+  815 										strlcpy: <>
+  816 										strlen: <>
+  817 										sprintf: <>
+  818 										syslog: <>
+  819 										fprintf: <>
+  820 								SYS_MutexLock: 12
+  821 								IFDSetCapabilities: 329
+  822 								IFD_Transmit_to_ICC: <>
+  823 								IFDHTransmitToICC: <>
+  824 								SYS_MutexUnLock: 50
+  825 								Log2: <>
+  826 							Log3: <>
+  827 						htonlTransmitStruct: <>
+  828 						ntohlControlStruct: <>
+  829 						SCardControl: LONG (), <./src/PCSC/winscard.c 1014>
+  830 							SCardTransmit: 784
+  831 							SCardControl132: int32_t (), <./src/PCSC/winscard.c 1029>
+  832 								SCardCheckDaemonAvailability: 15
+  833 								SCardGetIndicesFromHandle: 528
+  834 								SYS_MutexLock: 12
+  835 								SharedReaderState_ReaderNameIsEqual: <>
+  836 								SYS_MutexUnLock: 50
+  837 								memcpy: <>
+  838 								htonlControlStructExtended: <>
+  839 								WrapSHMWrite: <>
+  840 								SHMClientCommunicationTimeout: 37
+  841 								SHMClientReadMessage: <>
+  842 								ntohlControlStructExtended: <>
+  843 								SHMMessageReceive: <>
+  844 								memset: <>
+  845 								htonlControlStruct: <>
+  846 								ntohlControlStruct: <>
+  847 								RFCheckSharing: 575
+  848 								RFReaderInfoById: 523
+  849 								RFCheckReaderStatus: 551
+  850 								RFFindReaderHandle: 568
+  851 								RFCheckReaderEventState: 550
+  852 								IFDControl_v2: 596
+  853 								IFDControl: LONG (), <./src/PCSC/ifdwrapper.c 622>
+  854 									RESPONSECODE: <>
+  855 									SYS_MutexLock: 12
+  856 									IFDHControl: <>
+  857 									SYS_MutexUnLock: 50
+  858 									Log2: <>
+  859 									Log3: <>
+  860 									LogXxd: <>
+  861 						htonlControlStruct: <>
+  862 						ntohlGetSetStruct: <>
+  863 						SCardGetAttrib: LONG (), <./src/PCSC/winscard.c 1088>
+  864 							SCardGetSetAttrib: LONG (), <./src/PCSC/winscard_clnt.c 2369>
+  865 								SCardCheckDaemonAvailability: 15
+  866 								SCardGetIndicesFromHandle: 528
+  867 								SYS_MutexLock: 12
+  868 								SharedReaderState_ReaderNameIsEqual: <>
+  869 								SYS_MutexUnLock: 50
+  870 								memcpy: <>
+  871 								ntohlGetSetStruct: <>
+  872 								WrapSHMWrite: <>
+  873 								SHMClientCommunicationTimeout: 37
+  874 								SHMClientReadMessage: <>
+  875 								memset: <>
+  876 							RFCheckSharing: 575
+  877 							RFReaderInfoById: 523
+  878 							RFCheckReaderStatus: 551
+  879 							RFFindReaderHandle: 568
+  880 							RFCheckReaderEventState: 550
+  881 							IFDGetCapabilities: 268
+  882 						htonlGetSetStruct: <>
+  883 						SCardSetAttrib: LONG (), <./src/PCSC/winscard.c 1134>
+  884 							SCardGetSetAttrib: 864
+  885 							RFCheckSharing: 575
+  886 							RFReaderInfoById: 523
+  887 							RFCheckReaderStatus: 551
+  888 							RFFindReaderHandle: 568
+  889 							RFCheckReaderEventState: 550
+  890 							IFDSetCapabilities: 329
+  891 						ntohlTransmitStructExtended: <>
+  892 						memcpy: <>
+  893 						SHMMessageReceive: <>
+  894 						SHMCommunicationTimeout: 501
+  895 						Log1: <>
+  896 						SHSharedSegmentMsgToNetworkOrder: <>
+  897 						htonlTransmitStructExtended: <>
+  898 						SHMMessageSend: <>
+  899 						WrapSHMWrite: <>
+  900 						SHSharedSegmentMsgToHostOrder: <>
+  901 						ntohlControlStructExtended: <>
+  902 						htonlControlStructExtended: <>
+  903 						SHMCalculateMessageSize: <>
+  904 					memcpy: <>
+  905 					SHSharedSegmentMsgToNetworkOrder: <>
+  906 					SHMMessageSend: <>
+  907 					SHMCommunicationTimeout: 501
+  908 					ntohlVersionStruct: <>
+  909 					Log3: <>
+  910 					htonlVersionStruct: <>
+  911 					SHMCalculateMessageSize: <>
+  912 					Log1: <>
+  913 				Log1: <>
+  914 			HPStopHotPluggables: <>
+  915 			SYS_Sleep: 676
+  916 			RFCleanupReaders: void (), <./src/PCSC/readerfactory.c 1035>
+  917 				Log1: <>
+  918 				Log2: <>
+  919 				strncpy: <>
+  920 				strlen: <>
+  921 				RFRemoveReader: 388
+  922 				secdebug: <>
+  923 				exit: <>
+  924 		SYS_Exit: INTERNAL void (), <./src/PCSC/sys_unix.c 395>
+  925 		SYS_Unlink: 177
+  926 		HPReCheckSerialReaders: <>
+  927 		yylex: <>
+  928 		pcsc_stringify_error: PCSC_API char * (), <./src/PCSC/error.c 46>
+  929 			strcpy: <>
+  930 			strlcpy: <>
+  931 			snprintf: <>
+  932 		SCardReleaseContext: 504
+  933 		fgetln: <>
+  934 		SCardConnect: 619
+  935 		SCardStatus: 526
+  936 		SCardDisconnect: 553
+  937 		MSCLong32: <>
+  938 		MSCListTokens: MSC_RV (), <./src/PCSC/musclecard.c 89>
+  939 			MSCLong32: <>
+  940 			mscLockThread: void (), <./src/PCSC/musclecard.c 73>
+  941 				SYS_MutexLock: 12
+  942 			SCardEstablishContext: 10
+  943 			pcscToMSC: MSC_RV (), <./src/PCSC/musclecard.c 1977>
+  944 			mscUnLockThread: void (), <./src/PCSC/musclecard.c 80>
+  945 				SYS_MutexUnLock: 50
+  946 			SCardListReaders: 59
+  947 			malloc: <>
+  948 			SCardGetStatusChange: 72
+  949 			free: <>
+  950 			TPSearchBundlesForAtr: MSCLong32 (), <./src/PCSC/tokenfactory.c 135>
+  951 				MSCLong32: <>
+  952 				atrToString: int (), <./src/PCSC/tokenfactory.c 55>
+  953 				opendir: <>
+  954 				sprintf: <>
+  955 				FindFirstFile: <>
+  956 				DebugLogA: <>
+  957 				readdir: <>
+  958 				strstr: <>
+  959 				DebugLogB: <>
+  960 				LTPBundleFindValueWithKey: int (), <tokenparser.l 85>
+  961 					fopen: <>
+  962 					DebugLogB: <>
+  963 					yylex: <>
+  964 					feof: <>
+  965 					fclose: <>
+  966 					strcpy: <>
+  967 				strcmp: <>
+  968 				closedir: <>
+  969 				strcpy: <>
+  970 				stringToBytes: int (), <./src/PCSC/tokenfactory.c 92>
+  971 					strlen: <>
+  972 				FindNextFile: <>
+  973 				TPSvcDropdir: <>
+  974 				getenv: <>
+  975 				TPLoadToken: <>
+  976 				TPSearchBundlesForAtr: 950
+  977 				log_xxd: 814
+  978 				DYN_LoadLibrary: 288
+  979 				TPBindFunctions: <>
+  980 				TPUnloadToken: <>
+  981 				DYN_CloseLibrary: 310
+  982 				TPUnbindFunctions: <>
+  983 				DYN_GetAddress: 298
+  984 			strncpy: <>
+  985 			memcpy: <>
+  986 			memset: <>
+  987 		msc_error: char * (), <./src/PCSC/musclecard.c 2018>
+  988 			strncpy: <>
+  989 			sprintf: <>
+  990 		MSCWaitForTokenEvent: MSC_RV (), <./src/PCSC/musclecard.c 628>
+  991 			MSCLong32: <>
+  992 			mscLockThread: 940
+  993 			SCardEstablishContext: 10
+  994 			pcscToMSC: 943
+  995 			mscUnLockThread: 944
+  996 			malloc: <>
+  997 			strlen: <>
+  998 			free: <>
+  999 			SCardGetStatusChange: 72
+ 1000 			memset: <>
+ 1001 			strncpy: <>
+ 1002 			memcpy: <>
+ 1003 			TPSearchBundlesForAtr: 950
+ 1004 		MSCEstablishConnection: MSC_RV (), <./src/PCSC/musclecard.c 289>
+ 1005 			MSCLong32: <>
+ 1006 			strcmp: <>
+ 1007 			mscLockThread: 940
+ 1008 			SCardEstablishContext: 10
+ 1009 			DebugLogB: <>
+ 1010 			pcsc_stringify_error: 928
+ 1011 			pcscToMSC: 943
+ 1012 			mscUnLockThread: 944
+ 1013 			SCardConnect: 619
+ 1014 			SCardStatus: 526
+ 1015 			SCardDisconnect: 553
+ 1016 			memcmp: <>
+ 1017 			DebugLogA: <>
+ 1018 			memcpy: <>
+ 1019 			strncpy: <>
+ 1020 			TPLoadToken: <>
+ 1021 			TPUnloadToken: <>
+ 1022 			msc_error: 987
+ 1023 		MSCBeginTransaction: MSC_RV (), <./src/PCSC/musclecard.c 915>
+ 1024 			MSCLong32: <>
+ 1025 			SCardBeginTransaction: 714
+ 1026 			pcscToMSC: 943
+ 1027 			MSCReEstablishConnection: MSC_RV (), <./src/PCSC/musclecard.c 2118>
+ 1028 				MSC_RV: <>
+ 1029 				MSCLong32: <>
+ 1030 				DebugLogB: <>
+ 1031 				SCardReconnect: 679
+ 1032 				pcscToMSC: 943
+ 1033 		MSCGetStatus: MSC_RV (), <./src/PCSC/musclecard.c 1020>
+ 1034 			MSCLong32: <>
+ 1035 		MSCVerifyPIN: MSC_RV (), <./src/PCSC/musclecard.c 1348>
+ 1036 			MSCLong32: <>
+ 1037 		MSCCreateObject: MSC_RV (), <./src/PCSC/musclecard.c 1467>
+ 1038 			MSCLong32: <>
+ 1039 		MSCWriteObject: MSC_RV (), <./src/PCSC/musclecard.c 1525>
+ 1040 			MSC_RV: <>
+ 1041 			MSCLong32: <>
+ 1042 		MSCReadObject: MSC_RV (), <./src/PCSC/musclecard.c 1608>
+ 1043 			MSC_RV: <>
+ 1044 			MSCLong32: <>
+ 1045 		MSCListObjects: MSC_RV (), <./src/PCSC/musclecard.c 1694>
+ 1046 			MSCLong32: <>
+ 1047 		MSCDeleteObject: MSC_RV (), <./src/PCSC/musclecard.c 1496>
+ 1048 			MSCLong32: <>
+ 1049 		MSCGetChallenge: MSC_RV (), <./src/PCSC/musclecard.c 1750>
+ 1050 			MSCLong32: <>
+ 1051 		MSCLogoutAll: MSC_RV (), <./src/PCSC/musclecard.c 1723>
+ 1052 			MSCLong32: <>
+ 1053 		MSCEndTransaction: MSC_RV (), <./src/PCSC/musclecard.c 950>
+ 1054 			MSCLong32: <>
+ 1055 			SCardEndTransaction: 737
+ 1056 			pcscToMSC: 943
+ 1057 			MSCReEstablishConnection: 1027
+ 1058 		MSCReleaseConnection: MSC_RV (), <./src/PCSC/musclecard.c 561>
+ 1059 			MSCLong32: <>
+ 1060 			DebugLogB: <>
+ 1061 			SCardDisconnect: 553
+ 1062 			pcscToMSC: 943
+ 1063 			TPUnloadToken: <>
+ 1064 		yylex: <>

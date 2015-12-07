@@ -1,0 +1,5 @@
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/chal_mega_testOutput.cflow
+	error = malloc, line = 1, comment = [ERROR] malloc happens before seteuid on 4!
+	error = malloc, line = 1, comment = [ERROR] malloc happens before setregid on 5!
+	error = system, line = 2, comment = [ERROR] system happens before seteuid on 4!
+	error = system, line = 2, comment = [ERROR] system happens before setregid on 5!

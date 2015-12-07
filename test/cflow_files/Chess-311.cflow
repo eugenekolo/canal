@@ -1,0 +1,687 @@
+    1 	main: int (), <./sjeng/sjeng.c 135>
+    2 		read_rcfile: void (), <./sjeng/rcfile.c 50>
+    3 			fopen: <>
+    4 			printf: <>
+    5 			sprintf: <>
+    6 			initialize_eval: void (), <./sjeng/eval.c 330>
+    7 				max: <>
+    8 				abs: <>
+    9 				rank: const int[144], <./sjeng/eval.c 56>
+   10 				file: const int[144], <./sjeng/eval.c 40>
+   11 			alloc_hash: void (), <./sjeng/ttable.c 359>
+   12 				malloc: <>
+   13 				printf: <>
+   14 				exit: <>
+   15 			alloc_ecache: void (), <./sjeng/ecache.c 77>
+   16 				malloc: <>
+   17 				printf: <>
+   18 				exit: <>
+   19 			fgets: <>
+   20 			sscanf: <>
+   21 			feof: <>
+   22 		initialize_zobrist: void (), <./sjeng/ttable.c 79>
+   23 			seedMT: void (), <./sjeng/utils.c 1308>
+   24 			randomMT: uint32_t (), <./sjeng/utils.c 1340>
+   25 				reloadMT: uint32_t (), <./sjeng/utils.c 1317>
+   26 					seedMT: 23
+   27 					mixBits: <>
+   28 					loBit: <>
+   29 		memcpy: <>
+   30 		init_book: int (), <./sjeng/book.c 41>
+   31 			memset: <>
+   32 			srand: <>
+   33 			time: <>
+   34 			fopen: <>
+   35 			getc: <>
+   36 			fclose: <>
+   37 		printf: <>
+   38 		learn_open: FILE * (), <./sjeng/sjeng.c 106>
+   39 			sprintf: <>
+   40 			fopen: <>
+   41 			printf: <>
+   42 			fclose: <>
+   43 		start_up: void (), <./sjeng/utils.c 846>
+   44 			printf: <>
+   45 		init_game: void (), <./sjeng/utils.c 403>
+   46 			memcpy: <>
+   47 			memset: <>
+   48 			reset_piece_square: void (), <./sjeng/utils.c 746>
+   49 				memset: <>
+   50 				AddMaterial: <>
+   51 		initialize_hash: void (), <./sjeng/ttable.c 97>
+   52 		clear_tt: void (), <./sjeng/ttable.c 67>
+   53 			memset: <>
+   54 		reset_ecache: void (), <./sjeng/ecache.c 71>
+   55 			memset: <>
+   56 		init_segtb: int (), <./sjeng/segtb.c 708>
+   57 			malloc: <>
+   58 			load_2piece: int (), <./sjeng/segtb.c 944>
+   59 				fopen: <>
+   60 				fgetc: <>
+   61 				fclose: <>
+   62 			printf: <>
+   63 		memset: <>
+   64 		setbuf: <>
+   65 		clock: <>
+   66 		think: move_s (), <./sjeng/search.c 1437>
+   67 			interrupt: int (), <./sjeng/utils.c 982>
+   68 				FD_ZERO: <>
+   69 				FD_SET: <>
+   70 				select: <>
+   71 				FD_ISSET: <>
+   72 				getc: <>
+   73 				post_stat_thinking: void (), <./sjeng/utils.c 631>
+   74 					rdifftime: int32_t (), <./sjeng/utils.c 679>
+   75 						difftime: <>
+   76 					rtime: rtime_t (), <./sjeng/utils.c 814>
+   77 						ftime: <>
+   78 						gettimeofday: <>
+   79 						time: <>
+   80 					printf: <>
+   81 				ungetc: <>
+   82 				GetStdHandle: <>
+   83 				GetConsoleMode: <>
+   84 				SetConsoleMode: <>
+   85 				FlushConsoleInputBuffer: <>
+   86 				PeekNamedPipe: <>
+   87 				GetNumberOfConsoleInputEvents: <>
+   88 			rtime: 76
+   89 			gen: void (), <./sjeng/moves.c 453>
+   90 				rank: const int[144], <./sjeng/eval.c 56>
+   91 				push_pawn: void (), <./sjeng/moves.c 1823>
+   92 					add_capture: void (), <./sjeng/moves.c 1719>
+   93 					rank: const int[144], <./sjeng/eval.c 56>
+   94 				push_pawn_simple: void (), <./sjeng/moves.c 1879>
+   95 					add_move: void (), <./sjeng/moves.c 1705>
+   96 				push_knight: <>
+   97 				push_slide: <>
+   98 				push_king: void (), <./sjeng/moves.c 1769>
+   99 					add_move: 95
+  100 					add_capture: 92
+  101 				push_king_castle: void (), <./sjeng/moves.c 1756>
+  102 				try_drop: void (), <./sjeng/moves.c 1743>
+  103 			in_check: bool (), <./sjeng/moves.c 793>
+  104 				is_attacked: bool (), <./sjeng/attacks.c 346>
+  105 					abs: <>
+  106 					file: const int[144], <./sjeng/eval.c 40>
+  107 					rank: const int[144], <./sjeng/eval.c 56>
+  108 			make: void (), <./sjeng/moves.c 1292>
+  109 				assert: <>
+  110 				DropremoveHolding: void (), <./sjeng/crazy.c 299>
+  111 					assert: <>
+  112 					HHash: <>
+  113 				AddMaterial: <>
+  114 				Hash: <>
+  115 				addHolding: void (), <./sjeng/crazy.c 228>
+  116 					HHash: <>
+  117 				SwitchPromoted: int (), <./sjeng/crazy.c 219>
+  118 					assert: <>
+  119 				SwitchColor: int (), <./sjeng/crazy.c 210>
+  120 					assert: <>
+  121 				RemoveMaterial: <>
+  122 			check_legal: bool (), <./sjeng/moves.c 39>
+  123 				is_attacked: 104
+  124 				file: const int[144], <./sjeng/eval.c 40>
+  125 				rank: const int[144], <./sjeng/eval.c 56>
+  126 			unmake: void (), <./sjeng/moves.c 1929>
+  127 				assert: <>
+  128 				DropaddHolding: void (), <./sjeng/crazy.c 281>
+  129 					HHash: <>
+  130 				RemoveMaterial: <>
+  131 				Hash: <>
+  132 				removeHolding: void (), <./sjeng/crazy.c 253>
+  133 					assert: <>
+  134 					HHash: <>
+  135 				SwitchPromoted: 117
+  136 				SwitchColor: 119
+  137 				AddMaterial: <>
+  138 			choose_book_move: move_s (), <./sjeng/book.c 170>
+  139 				srand: <>
+  140 				time: <>
+  141 				gen: 89
+  142 				strncmp: <>
+  143 				strncpy: <>
+  144 				comp_to_coord: void (), <./sjeng/utils.c 309>
+  145 					rank: const int[144], <./sjeng/eval.c 56>
+  146 					file: const int[144], <./sjeng/eval.c 40>
+  147 					sprintf: <>
+  148 				strcmp: <>
+  149 				in_check: 103
+  150 				make: 108
+  151 				check_legal: 122
+  152 				unmake: 126
+  153 				printf: <>
+  154 				rand: <>
+  155 			choose_binary_book_move: move_s (), <./sjeng/newbook.c 441>
+  156 				srand: <>
+  157 				time: <>
+  158 				dbm_open: <>
+  159 				printf: <>
+  160 				gen: 89
+  161 				make: 108
+  162 				check_legal: 122
+  163 				is_draw: bool (), <./sjeng/draw.c 30>
+  164 				unmake: 126
+  165 				dbm_close: <>
+  166 				htonl: <>
+  167 				dbm_fetch: <>
+  168 				comp_to_coord: 144
+  169 				ntohl: <>
+  170 				rand: <>
+  171 			comp_to_san: void (), <./sjeng/utils.c 145>
+  172 				rank: const int[144], <./sjeng/eval.c 56>
+  173 				file: const int[144], <./sjeng/eval.c 40>
+  174 				sprintf: <>
+  175 				gen: 89
+  176 				in_check: 103
+  177 				make: 108
+  178 				check_legal: 122
+  179 				unmake: 126
+  180 				strcpy: <>
+  181 				strcat: <>
+  182 			printf: <>
+  183 			clock: <>
+  184 			check_phase: void (), <./sjeng/neval.c 756>
+  185 			allocate_time: int32_t (), <./sjeng/utils.c 59>
+  186 			LoadLearn: void (), <./sjeng/learn.c 95>
+  187 				fseek: <>
+  188 				fread: <>
+  189 				LearnStoreTT: void (), <./sjeng/ttable.c 220>
+  190 					Hash: <>
+  191 			clear_dp_tt: void (), <./sjeng/ttable.c 74>
+  192 				memset: <>
+  193 			memset: <>
+  194 			proofnumberscan: void (), <./sjeng/proof.c 1016>
+  195 				rtime: 76
+  196 				calloc: <>
+  197 				gen: 89
+  198 				memset: <>
+  199 				in_check: 103
+  200 				make: 108
+  201 				check_legal: 122
+  202 				unmake: 126
+  203 				Xfree: void (), <./sjeng/proof.c 93>
+  204 				free: <>
+  205 				pn_eval: void (), <./sjeng/proof.c 123>
+  206 					suicide_pn_eval: void (), <./sjeng/proof.c 202>
+  207 						egtb: int (), <./sjeng/segtb.c 743>
+  208 							TWO_PIECE_HASH: <>
+  209 							TABLE_KEY: <>
+  210 							THREE_PIECE_HASH: <>
+  211 							load_3piece: int (), <./sjeng/segtb.c 964>
+  212 								strcpy: <>
+  213 								fopen: <>
+  214 								fread: <>
+  215 								printf: <>
+  216 								fclose: <>
+  217 					losers_pn_eval: void (), <./sjeng/proof.c 311>
+  218 						is_attacked: 104
+  219 						gen: 89
+  220 						make: 108
+  221 						check_legal: 122
+  222 						unmake: 126
+  223 					std_pn_eval: void (), <./sjeng/proof.c 139>
+  224 						is_attacked: 104
+  225 						gen: 89
+  226 						make: 108
+  227 						check_legal: 122
+  228 						unmake: 126
+  229 				set_proof_and_disproof_numbers: void (), <./sjeng/proof.c 502>
+  230 					StoreTT: void (), <./sjeng/ttable.c 138>
+  231 						Hash: <>
+  232 					is_draw: 163
+  233 					gen: 89
+  234 					in_check: 103
+  235 					make: 108
+  236 					check_legal: 122
+  237 					unmake: 126
+  238 					floorf: <>
+  239 				rdifftime: 74
+  240 				interrupt: 67
+  241 				select_most_proving: node_t * (), <./sjeng/proof.c 459>
+  242 					make: 108
+  243 				develop_node: void (), <./sjeng/proof.c 767>
+  244 					pn2_eval: void (), <./sjeng/proof.c 979>
+  245 						pn_eval: 205
+  246 						set_proof_and_disproof_numbers: 229
+  247 						select_most_proving: 241
+  248 						develop_node: 243
+  249 						update_ancestors: void (), <./sjeng/proof.c 948>
+  250 							set_proof_and_disproof_numbers: 229
+  251 							unmake: 126
+  252 							make: 108
+  253 					in_check: 103
+  254 					gen: 89
+  255 					make: 108
+  256 					check_legal: 122
+  257 					unmake: 126
+  258 					Xmalloc: void * (), <./sjeng/proof.c 84>
+  259 					malloc: <>
+  260 					pn_eval: 205
+  261 					set_proof_and_disproof_numbers: 229
+  262 					Xfree: 203
+  263 				update_ancestors: 249
+  264 				printf: <>
+  265 				comp_to_san: 171
+  266 				Learn: void (), <./sjeng/learn.c 40>
+  267 					printf: <>
+  268 					fseek: <>
+  269 					fread: <>
+  270 					fwrite: <>
+  271 					fflush: <>
+  272 			rdifftime: 74
+  273 			search_root: move_s (), <./sjeng/search.c 1062>
+  274 				is_draw: 163
+  275 				in_check: 103
+  276 				gen: 89
+  277 				make: 108
+  278 				check_legal: 122
+  279 				unmake: 126
+  280 				order_moves: void (), <./sjeng/search.c 62>
+  281 					see: int (), <./sjeng/see.c 201>
+  282 						setup_attackers: void (), <./sjeng/see.c 36>
+  283 						abs: <>
+  284 						findlowest: void (), <./sjeng/see.c 175>
+  285 							abs: <>
+  286 				remove_one: bool (), <./sjeng/search.c 448>
+  287 				comp_to_san: 171
+  288 				f_in_check: bool (), <./sjeng/moves.c 814>
+  289 					file: const int[144], <./sjeng/eval.c 40>
+  290 					rank: const int[144], <./sjeng/eval.c 56>
+  291 					is_attacked: 104
+  292 				search: int32_t (), <./sjeng/search.c 475>
+  293 					interrupt: 67
+  294 					rdifftime: 74
+  295 					rtime: 76
+  296 					max: <>
+  297 					allocate_time: 185
+  298 					printf: <>
+  299 					is_draw: 163
+  300 					egtb: 207
+  301 					qsearch: int32_t (), <./sjeng/search.c 266>
+  302 						interrupt: 67
+  303 						rdifftime: 74
+  304 						rtime: 76
+  305 						max: <>
+  306 						allocate_time: 185
+  307 						printf: <>
+  308 						eval: int32_t (), <./sjeng/eval.c 371>
+  309 							std_eval: int32_t (), <./sjeng/neval.c 793>
+  310 								opn_eval: int32_t (), <./sjeng/neval.c 1378>
+  311 									checkECache: void (), <./sjeng/ecache.c 52>
+  312 									memset: <>
+  313 									file: const int[144], <./sjeng/eval.c 40>
+  314 									rank: const int[144], <./sjeng/eval.c 56>
+  315 									assert: <>
+  316 									max: <>
+  317 									abs: <>
+  318 									bishop_mobility: int (), <./sjeng/neval.c 152>
+  319 									storeECache: void (), <./sjeng/ecache.c 41>
+  320 								end_eval: int32_t (), <./sjeng/neval.c 169>
+  321 									checkECache: 311
+  322 									memset: <>
+  323 									assert: <>
+  324 									file: const int[144], <./sjeng/eval.c 40>
+  325 									rank: const int[144], <./sjeng/eval.c 56>
+  326 									max: <>
+  327 									abs: <>
+  328 									bishop_mobility: 318
+  329 									storeECache: 319
+  330 								mid_eval: int32_t (), <./sjeng/neval.c 810>
+  331 									checkECache: 311
+  332 									memset: <>
+  333 									assert: <>
+  334 									file: const int[144], <./sjeng/eval.c 40>
+  335 									rank: const int[144], <./sjeng/eval.c 56>
+  336 									max: <>
+  337 									abs: <>
+  338 									bishop_mobility: 318
+  339 									storeECache: 319
+  340 							suicide_eval: int32_t (), <./sjeng/seval.c 287>
+  341 								suicide_mid_eval: int32_t (), <./sjeng/seval.c 293>
+  342 									checkECache: 311
+  343 									memset: <>
+  344 									assert: <>
+  345 									file: const int[144], <./sjeng/eval.c 40>
+  346 									rank: const int[144], <./sjeng/eval.c 56>
+  347 									s_pawn_mobility: int (), <./sjeng/seval.c 93>
+  348 									black_saccers: int (), <./sjeng/seval.c 122>
+  349 										rank: const int[144], <./sjeng/eval.c 56>
+  350 										is_attacked: 104
+  351 										calc_attackers: int (), <./sjeng/attacks.c 27>
+  352 									white_saccers: int (), <./sjeng/seval.c 203>
+  353 										rank: const int[144], <./sjeng/eval.c 56>
+  354 										is_attacked: 104
+  355 										calc_attackers: 351
+  356 									s_rook_mobility: int (), <./sjeng/seval.c 63>
+  357 									s_bishop_mobility: int (), <./sjeng/seval.c 46>
+  358 									s_knight_mobility: int (), <./sjeng/seval.c 80>
+  359 									s_king_mobility: int (), <./sjeng/seval.c 109>
+  360 									storeECache: 319
+  361 							losers_eval: int32_t (), <./sjeng/leval.c 120>
+  362 								checkECache: 311
+  363 								memset: <>
+  364 								assert: <>
+  365 								file: const int[144], <./sjeng/eval.c 40>
+  366 								rank: const int[144], <./sjeng/eval.c 56>
+  367 								l_pawn_mobility: int (), <./sjeng/leval.c 90>
+  368 								l_rook_mobility: int (), <./sjeng/leval.c 59>
+  369 								l_bishop_mobility: int (), <./sjeng/leval.c 42>
+  370 								l_knight_mobility: int (), <./sjeng/leval.c 77>
+  371 								l_king_mobility: int (), <./sjeng/leval.c 106>
+  372 								abs: <>
+  373 								storeECache: 319
+  374 							checkECache: 311
+  375 							Fis_attacked: <>
+  376 							Gis_attacked: <>
+  377 							storeECache: 319
+  378 						QProbeTT: int (), <./sjeng/ttable.c 332>
+  379 							Hash: <>
+  380 						QStoreTT: void (), <./sjeng/ttable.c 114>
+  381 							Hash: <>
+  382 						gen: 89
+  383 						order_moves: 280
+  384 						remove_one: 286
+  385 						make: 108
+  386 						qsearch: 301
+  387 						unmake: 126
+  388 					suicide_eval: 340
+  389 					losers_eval: 361
+  390 					abs: <>
+  391 					ProbeTT: int (), <./sjeng/ttable.c 246>
+  392 						Hash: <>
+  393 					gen: 89
+  394 					make: 108
+  395 					check_legal: 122
+  396 					unmake: 126
+  397 					search: 292
+  398 					StoreTT: 230
+  399 					order_moves: 280
+  400 					remove_one: 286
+  401 					f_in_check: 288
+  402 					rank: const int[144], <./sjeng/eval.c 56>
+  403 					calc_attackers: 351
+  404 					in_check: 103
+  405 				post_fh_thinking: void (), <./sjeng/utils.c 615>
+  406 					comp_to_coord: 144
+  407 					printf: <>
+  408 				post_fl_thinking: void (), <./sjeng/utils.c 627>
+  409 				post_thinking: void (), <./sjeng/utils.c 588>
+  410 					comp_to_coord: 144
+  411 					printf: <>
+  412 				post_fail_thinking: void (), <./sjeng/utils.c 603>
+  413 					comp_to_coord: 144
+  414 					printf: <>
+  415 			stringize_pv: void (), <./sjeng/utils.c 564>
+  416 				memset: <>
+  417 				comp_to_san: 171
+  418 				make: 108
+  419 				strcat: <>
+  420 				hash_extract_pv: void (), <./sjeng/utils.c 532>
+  421 					ProbeTT: 391
+  422 					gen: 89
+  423 					comp_to_san: 171
+  424 					make: 108
+  425 					check_legal: 122
+  426 					strcat: <>
+  427 					hash_extract_pv: 420
+  428 					unmake: 126
+  429 				unmake: 126
+  430 			post_thinking: 409
+  431 			proofnumbercheck: move_s (), <./sjeng/proof.c 1554>
+  432 				make: 108
+  433 				rtime: 76
+  434 				calloc: <>
+  435 				pn_eval: 205
+  436 				set_proof_and_disproof_numbers: 229
+  437 				select_most_proving: 241
+  438 				develop_node: 243
+  439 				update_ancestors: 249
+  440 				rdifftime: 74
+  441 				printf: <>
+  442 				unmake: 126
+  443 				Xfree: 203
+  444 				free: <>
+  445 			Learn: 266
+  446 			ProcessHoldings: void (), <./sjeng/crazy.c 46>
+  447 				memset: <>
+  448 				reset_ecache: 54
+  449 				HHash: <>
+  450 				strncpy: <>
+  451 		comp_to_coord: 144
+  452 		make: 108
+  453 		is_draw: 163
+  454 		reset_piece_square: 48
+  455 		strcpy: <>
+  456 		strcat: <>
+  457 		eval: 308
+  458 		CheckBadFlow: void (), <./sjeng/partner.c 493>
+  459 			in_check: 103
+  460 			DropaddHolding: 128
+  461 			gen: 89
+  462 			make: 108
+  463 			check_legal: 122
+  464 			unmake: 126
+  465 			DropremoveHolding: 110
+  466 			printf: <>
+  467 		display_board: void (), <./sjeng/utils.c 364>
+  468 			fprintf: <>
+  469 		rinput: void (), <./sjeng/utils.c 793>
+  470 			getc: <>
+  471 		is_move: bool (), <./sjeng/utils.c 458>
+  472 			isalpha: <>
+  473 			isdigit: <>
+  474 		verify_coord: bool (), <./sjeng/utils.c 914>
+  475 			gen: 89
+  476 			make: 108
+  477 			check_legal: 122
+  478 			unmake: 126
+  479 			comp_to_coord: 144
+  480 			strcasecmp: <>
+  481 		strstr: <>
+  482 		tolower: <>
+  483 		strcmp: <>
+  484 		feof: <>
+  485 		safe_fclose: void (), <./sjeng/sjeng.c 98>
+  486 			fclose: <>
+  487 		free_hash: void (), <./sjeng/ttable.c 378>
+  488 			free: <>
+  489 		free_ecache: void (), <./sjeng/ecache.c 92>
+  490 			free: <>
+  491 		exit: <>
+  492 		toggle_bool: void (), <./sjeng/utils.c 857>
+  493 		strncmp: <>
+  494 		sscanf: <>
+  495 		rtime: 76
+  496 		perft: void (), <./sjeng/search.c 226>
+  497 			gen: 89
+  498 			in_check: 103
+  499 			make: 108
+  500 			check_legal: 122
+  501 			perft: 496
+  502 			unmake: 126
+  503 		rdifftime: 74
+  504 		ResetHandValue: void (), <./sjeng/partner.c 36>
+  505 			memcpy: <>
+  506 		signal: <>
+  507 		BegForPartner: void (), <./sjeng/partner.c 41>
+  508 		check_phase: 184
+  509 		ProcessHoldings: 446
+  510 		unmake: 126
+  511 		reset_board: void (), <./sjeng/utils.c 1177>
+  512 			memcpy: <>
+  513 			memset: <>
+  514 			reset_piece_square: 48
+  515 		isalpha: <>
+  516 		isdigit: <>
+  517 		PutPiece: void (), <./sjeng/utils.c 1108>
+  518 		HandlePartner: void (), <./sjeng/partner.c 58>
+  519 			sscanf: <>
+  520 			GreetPartner: void (), <./sjeng/partner.c 50>
+  521 				printf: <>
+  522 			printf: <>
+  523 			memset: <>
+  524 			BegForPartner: 507
+  525 		HandlePtell: void (), <./sjeng/partner.c 81>
+  526 			strncmp: <>
+  527 			printf: <>
+  528 			strstr: <>
+  529 			strcpy: <>
+  530 			ResetHandValue: 504
+  531 		run_epd_testsuite: void (), <./sjeng/epd.c 219>
+  532 			printf: <>
+  533 			rinput: 469
+  534 			atoi: <>
+  535 			fopen: <>
+  536 			fgets: <>
+  537 			setup_epd_line: void (), <./sjeng/epd.c 28>
+  538 				memset: <>
+  539 				isdigit: <>
+  540 				atoi: <>
+  541 				isalpha: <>
+  542 				reset_piece_square: 48
+  543 				initialize_hash: 51
+  544 			clear_tt: 52
+  545 			initialize_hash: 51
+  546 			display_board: 467
+  547 			interrupt: 67
+  548 			clock: <>
+  549 			think: 66
+  550 			eval: 308
+  551 			check_solution: int (), <./sjeng/epd.c 191>
+  552 				comp_to_san: 171
+  553 				strstr: <>
+  554 				printf: <>
+  555 		build_book: void (), <./sjeng/newbook.c 365>
+  556 			printf: <>
+  557 			rinput: 469
+  558 			fopen: <>
+  559 			exit: <>
+  560 			dbm_open: <>
+  561 			atoi: <>
+  562 			free_hash: 487
+  563 			free_ecache: 489
+  564 			calloc: <>
+  565 			feof: <>
+  566 			get_header: void (), <./sjeng/newbook.c 60>
+  567 				memset: <>
+  568 				getc: <>
+  569 				strncmp: <>
+  570 				strstr: <>
+  571 				ungetc: <>
+  572 			replay_game: void (), <./sjeng/newbook.c 157>
+  573 				init_game: 45
+  574 				initialize_hash: 51
+  575 				putchar: <>
+  576 				getc: <>
+  577 				feof: <>
+  578 				ungetc: <>
+  579 				isdigit: <>
+  580 				isalpha: <>
+  581 				gen: 89
+  582 				in_check: 103
+  583 				comp_to_san: 171
+  584 				strcmp: <>
+  585 				make: 108
+  586 				check_legal: 122
+  587 				printf: <>
+  588 				add_current: void (), <./sjeng/newbook.c 113>
+  589 					htonl: <>
+  590 					dbm_store: <>
+  591 					printf: <>
+  592 					dbm_fetch: <>
+  593 					ntohl: <>
+  594 			free: <>
+  595 			weed_book: void (), <./sjeng/newbook.c 325>
+  596 				dbm_firstkey: <>
+  597 				dbm_fetch: <>
+  598 				ntohl: <>
+  599 				dbm_delete: <>
+  600 				dbm_nextkey: <>
+  601 				printf: <>
+  602 			fclose: <>
+  603 			dbm_close: <>
+  604 			alloc_hash: 11
+  605 			alloc_ecache: 15
+  606 		speed_test: void (), <./sjeng/utils.c 1222>
+  607 			setup_epd_line: 537
+  608 			clock: <>
+  609 			gen: 89
+  610 			printf: <>
+  611 			make: 108
+  612 			unmake: 126
+  613 			in_check: 103
+  614 			check_legal: 122
+  615 			reset_ecache: 54
+  616 			eval: 308
+  617 			initialize_hash: 51
+  618 		book_learning: void (), <./sjeng/newbook.c 582>
+  619 			dbm_open: <>
+  620 			printf: <>
+  621 			htonl: <>
+  622 			dbm_fetch: <>
+  623 			fabs: <>
+  624 			ntohl: <>
+  625 			abs: <>
+  626 			dbm_store: <>
+  627 			dbm_close: <>
+  628 		atoi: <>
+  629 		proofnumbersearch: void (), <./sjeng/proof.c 1307>
+  630 			rtime: 76
+  631 			calloc: <>
+  632 			pn_eval: 205
+  633 			Xfree: 203
+  634 			free: <>
+  635 			set_proof_and_disproof_numbers: 229
+  636 			select_most_proving: 241
+  637 			develop_node: 243
+  638 			update_ancestors: 249
+  639 			printf: <>
+  640 			memset: <>
+  641 			comp_to_coord: 144
+  642 			strcat: <>
+  643 			make: 108
+  644 			unmake: 126
+  645 			rdifftime: 74
+  646 			interrupt: 67
+  647 		setup_epd_line: 537
+  648 		gen_all_tables: void (), <./sjeng/segtb.c 536>
+  649 			printf: <>
+  650 			gen_2piece: void (), <./sjeng/segtb.c 269>
+  651 				reset_board: 511
+  652 				memset: <>
+  653 				valid_2piece: int (), <./sjeng/segtb.c 121>
+  654 				TWO_PIECE_HASH: <>
+  655 				gen: 89
+  656 				make: 108
+  657 				check_result: int (), <./sjeng/segtb.c 176>
+  658 					gen: 89
+  659 					egtb: 207
+  660 					printf: <>
+  661 				unmake: 126
+  662 				printf: <>
+  663 			save_2piece: int (), <./sjeng/segtb.c 481>
+  664 				fopen: <>
+  665 				fputc: <>
+  666 				fclose: <>
+  667 			malloc: <>
+  668 			TABLE_KEY: <>
+  669 			gen_3piece: void (), <./sjeng/segtb.c 370>
+  670 				reset_board: 511
+  671 				memset: <>
+  672 				valid_3piece: int (), <./sjeng/segtb.c 144>
+  673 				THREE_PIECE_HASH: <>
+  674 				gen: 89
+  675 				make: 108
+  676 				check_result: 657
+  677 				unmake: 126
+  678 				printf: <>
+  679 			save_3piece: int (), <./sjeng/segtb.c 503>
+  680 				strcpy: <>
+  681 				fopen: <>
+  682 				fwrite: <>
+  683 				printf: <>
+  684 				fclose: <>
+  685 			free: <>
+  686 			reset_board: 511
+  687 		egtb: 207

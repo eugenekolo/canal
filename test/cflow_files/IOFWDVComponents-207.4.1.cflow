@@ -1,0 +1,251 @@
+    1 	main: int (), <./tests/testcomp.c 537>
+    2 		findMe: CFBundleRef (), <./tests/AVCTest.c 81>
+    3 			CFURLCreateWithFileSystemPath: <>
+    4 			CFSTR: <>
+    5 			printf: <>
+    6 			CFBundleCreate: <>
+    7 			CFBundleLoadExecutable: <>
+    8 			CFBundleGetFunctionPointerForName: <>
+    9 			CFRelease: <>
+   10 		printf: <>
+   11 		myNotifyProc: OSStatus (), <./tests/AVCTest.c 246>
+   12 			printf: <>
+   13 		usleep: <>
+   14 		doStatusTest: OSErr (), <./tests/AVCTest.c 187>
+   15 			printf: <>
+   16 		doStatusTest6: OSErr (), <./tests/AVCTest.c 214>
+   17 			printf: <>
+   18 		CFBundleUnloadExecutable: <>
+   19 		CFRelease: <>
+   20 		GetComponentListModSeed: <>
+   21 		strcmp: <>
+   22 		strtoq: <>
+   23 		CountComponents: <>
+   24 		NewHandleClear: <>
+   25 		FindNextComponent: <>
+   26 		GetComponentInfo: <>
+   27 		GetHandleSize: <>
+   28 		printP: void (), <./tests/writetest.c 62>
+   29 			printf: <>
+   30 		print4: void (), <./tests/writetest.c 69>
+   31 			printf: <>
+   32 		OpenDV: void (), <./tests/writetest.c 234>
+   33 			OpenDefaultComponent: <>
+   34 			printf: <>
+   35 			CallComponentVersion: <>
+   36 			IDHGetDeviceList: <>
+   37 			QTCountChildrenOfType: <>
+   38 			sleep: <>
+   39 			QTLockContainer: <>
+   40 			QTFindChildByIndex: <>
+   41 			QTCopyAtomDataToPtr: <>
+   42 			print4: 30
+   43 			strcmp: <>
+   44 			IDHSetDeviceConfiguration: <>
+   45 			IDHSetFormat: <>
+   46 			doWriteTest: OSErr (), <./tests/writetest.c 114>
+   47 				pthread_mutex_init: <>
+   48 				pthread_cond_init: <>
+   49 				open: <>
+   50 				printf: <>
+   51 				NewPtr: <>
+   52 				read: <>
+   53 				DVIsochComponentWriteCallback: OSStatus (), <./tests/writetest.c 75>
+   54 					read: <>
+   55 					pthread_mutex_lock: <>
+   56 					pthread_mutex_unlock: <>
+   57 					pthread_cond_broadcast: <>
+   58 					printf: <>
+   59 					DVIsochComponentWriteCallback: 53
+   60 					IDHWrite: <>
+   61 				IDHOpenDevice: <>
+   62 				IDHWrite: <>
+   63 				IDHGetDeviceTime: <>
+   64 				gettimeofday: <>
+   65 				pthread_mutex_lock: <>
+   66 				pthread_cond_wait: <>
+   67 				pthread_mutex_unlock: <>
+   68 				IDHCloseDevice: <>
+   69 				close: <>
+   70 			QTUnlockContainer: <>
+   71 			QTDisposeAtomContainer: <>
+   72 			CloseComponent: <>
+   73 		exit: <>
+   74 		findMe: CFBundleRef (), <./tests/DVTest.c 89>
+   75 			CFURLCreateWithFileSystemPath: <>
+   76 			CFSTR: <>
+   77 			CFBundleCreate: <>
+   78 			printf: <>
+   79 			CFBundleLoadExecutable: <>
+   80 			CFBundleGetFunctionPointerForName: <>
+   81 			CFRelease: <>
+   82 		myNotifyProc: OSStatus (), <./tests/DVTest.c 340>
+   83 			printf: <>
+   84 		sleep: <>
+   85 		open: <>
+   86 		destructoWrite: void (), <./tests/DVTest.c 292>
+   87 			sleep: <>
+   88 			usleep: <>
+   89 			read: <>
+   90 			lseek: <>
+   91 			printf: <>
+   92 		writeFrames: void (), <./tests/DVTest.c 254>
+   93 			usleep: <>
+   94 			read: <>
+   95 			lseek: <>
+   96 			printf: <>
+   97 		doControlTest: OSErr (), <./tests/DVTest.c 180>
+   98 			printf: <>
+   99 		destructoRead: void (), <./tests/DVTest.c 231>
+  100 		readFrames: void (), <./tests/DVTest.c 207>
+  101 			usleep: <>
+  102 			write: <>
+  103 		printP: void (), <./tests/devicetest.c 42>
+  104 			printf: <>
+  105 		print4: void (), <./tests/devicetest.c 49>
+  106 			printf: <>
+  107 		OpenDefaultComponent: <>
+  108 		CloseComponent: <>
+  109 		OpenDV: void (), <./tests/devicetest.c 193>
+  110 			OpenDefaultComponent: <>
+  111 			printf: <>
+  112 			CallComponentVersion: <>
+  113 			IDHNewNotification: <>
+  114 			notificationProc: OSStatus (), <./tests/devicetest.c 54>
+  115 				printf: <>
+  116 				IDHNotifyMeWhen: <>
+  117 			IDHNotifyMeWhen: <>
+  118 			IDHGetDeviceList: <>
+  119 			QTCountChildrenOfType: <>
+  120 			sleep: <>
+  121 			QTLockContainer: <>
+  122 			QTFindChildByIndex: <>
+  123 			QTCopyAtomDataToPtr: <>
+  124 			print4: 105
+  125 			IDHSetDeviceConfiguration: <>
+  126 			doControlTest: void (), <./tests/devicetest.c 67>
+  127 				IDHGetDeviceControl: <>
+  128 				IDHGetDeviceStatus: <>
+  129 				DeviceControlDoAVCTransaction: <>
+  130 				printf: <>
+  131 				sleep: <>
+  132 			IDHGetDeviceTime: <>
+  133 			QTUnlockContainer: <>
+  134 			QTDisposeAtomContainer: <>
+  135 			CloseComponent: <>
+  136 		printP: void (), <./tests/readtest.c 56>
+  137 			printf: <>
+  138 		print4: void (), <./tests/readtest.c 63>
+  139 			printf: <>
+  140 		OpenDV: void (), <./tests/readtest.c 437>
+  141 			OpenDefaultComponent: <>
+  142 			printf: <>
+  143 			CallComponentVersion: <>
+  144 			IDHNewNotification: <>
+  145 			notificationProc: OSStatus (), <./tests/readtest.c 68>
+  146 				printf: <>
+  147 				IDHNotifyMeWhen: <>
+  148 			IDHNotifyMeWhen: <>
+  149 			IDHGetDeviceList: <>
+  150 			QTCountChildrenOfType: <>
+  151 			sleep: <>
+  152 			QTLockContainer: <>
+  153 			QTFindChildByIndex: <>
+  154 			QTCopyAtomDataToPtr: <>
+  155 			print4: 138
+  156 			IDHSetDeviceConfiguration: <>
+  157 			IDHGetFormat: <>
+  158 			startReadTest: OSStatus (), <./tests/readtest.c 318>
+  159 				IDHOpenDevice: <>
+  160 				printf: <>
+  161 				doControlTest: void (), <./tests/readtest.c 209>
+  162 					IDHGetDeviceControl: <>
+  163 					IDHGetDeviceStatus: <>
+  164 					printf: <>
+  165 					IOAVCAddress: <>
+  166 					DeviceControlDoAVCTransaction: <>
+  167 					sleep: <>
+  168 				IDHGetDeviceTime: <>
+  169 				open: <>
+  170 				fcntl: <>
+  171 				IDHRead: <>
+  172 				write: <>
+  173 				IDHReleaseBuffer: <>
+  174 				DVIsochComponentReadCallback: OSStatus (), <./tests/readtest.c 145>
+  175 					IDHGetDeviceTime: <>
+  176 					printf: <>
+  177 					CFAbsoluteTimeGetCurrent: <>
+  178 					bufferedWrite: void (), <./tests/readtest.c 91>
+  179 						bcopy: <>
+  180 						write: <>
+  181 					write: <>
+  182 					IDHReleaseBuffer: <>
+  183 					DVIsochComponentReadCallback: 174
+  184 					IDHRead: <>
+  185 				sleep: <>
+  186 			IDHDisposeNotification: <>
+  187 			stopReadTest: OSStatus (), <./tests/readtest.c 400>
+  188 				IDHGetDeviceTime: <>
+  189 				printf: <>
+  190 				doControlTest: 161
+  191 				IDHCloseDevice: <>
+  192 				flushDiskBuffer: void (), <./tests/readtest.c 136>
+  193 					write: <>
+  194 				close: <>
+  195 			QTUnlockContainer: <>
+  196 			QTDisposeAtomContainer: <>
+  197 		printP: void (), <./tests/testcomp.c 48>
+  198 			printf: <>
+  199 		print4: void (), <./tests/testcomp.c 55>
+  200 			printf: <>
+  201 		OpenDV: void (), <./tests/testcomp.c 359>
+  202 			OpenDefaultComponent: <>
+  203 			printf: <>
+  204 			CallComponentVersion: <>
+  205 			IDHGetDeviceList: <>
+  206 			QTCountChildrenOfType: <>
+  207 			sleep: <>
+  208 			QTLockContainer: <>
+  209 			QTFindChildByIndex: <>
+  210 			QTCopyAtomDataToPtr: <>
+  211 			print4: 199
+  212 			QTUnlockContainer: <>
+  213 			IDHSetDeviceConfiguration: <>
+  214 			doReadTest: OSErr (), <./tests/testcomp.c 192>
+  215 				IDHOpenDevice: <>
+  216 				printf: <>
+  217 				doControlTest: void (), <./tests/testcomp.c 125>
+  218 					IDHGetDeviceControl: <>
+  219 					IDHGetDeviceStatus: <>
+  220 					DeviceControlDoAVCTransaction: <>
+  221 					printf: <>
+  222 					sleep: <>
+  223 					CallComponentClose: <>
+  224 				open: <>
+  225 				IDHRead: <>
+  226 				write: <>
+  227 				IDHReleaseBuffer: <>
+  228 				DVIsochComponentReadCallback: OSStatus (), <./tests/testcomp.c 61>
+  229 					write: <>
+  230 					IDHReleaseBuffer: <>
+  231 					DVIsochComponentReadCallback: 228
+  232 					IDHRead: <>
+  233 					printf: <>
+  234 				sleep: <>
+  235 				IDHCloseDevice: <>
+  236 			doWriteTest: OSErr (), <./tests/testcomp.c 277>
+  237 				IDHOpenDevice: <>
+  238 				printf: <>
+  239 				NewPtrClear: <>
+  240 				open: <>
+  241 				read: <>
+  242 				IDHWrite: <>
+  243 				close: <>
+  244 				DVIsochComponentWriteCallback: OSStatus (), <./tests/testcomp.c 91>
+  245 					read: <>
+  246 					DVIsochComponentWriteCallback: 244
+  247 					IDHWrite: <>
+  248 					printf: <>
+  249 				sleep: <>
+  250 				IDHCloseDevice: <>
+  251 			CallComponentClose: <>

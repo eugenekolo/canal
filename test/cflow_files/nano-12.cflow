@@ -1,0 +1,2165 @@
+    1 	main: int (), <./src/nano.c 1650>
+    2 		setlocale: <>
+    3 		strcasestr: <>
+    4 		SLutf8_enable: <>
+    5 		utf8_init: void (), <./src/chars.c 47>
+    6 		bindtextdomain: <>
+    7 		textdomain: <>
+    8 		geteuid: <>
+    9 		SET: <>
+   10 		getopt_long: <>
+   11 		getopt: <>
+   12 		mallocstrcpy: char * (), <./src/utils.c 403>
+   13 			mallocstrncpy: char * (), <./src/utils.c 387>
+   14 				free: <>
+   15 				charalloc: <>
+   16 				strncpy: <>
+   17 			strlen: <>
+   18 		parse_num: bool (), <./src/utils.c 68>
+   19 			assert: <>
+   20 			strtol: <>
+   21 		fprintf: <>
+   22 		exit: <>
+   23 		version: void (), <./src/nano.c 840>
+   24 			printf: <>
+   25 		usage: void (), <./src/nano.c 726>
+   26 			printf: <>
+   27 			print_opt: <>
+   28 			N_: <>
+   29 			exit: <>
+   30 		tail: const char * (), <./src/files.c 2421>
+   31 			strrchr: <>
+   32 		ISSET: <>
+   33 		UNSET: <>
+   34 		do_rcfile: void (), <./src/rcfile.c 859>
+   35 			mallocstrcpy: 12
+   36 			stat: <>
+   37 			S_ISDIR: <>
+   38 			S_ISCHR: <>
+   39 			S_ISBLK: <>
+   40 			rcfile_error: void (), <./src/rcfile.c 113>
+   41 				fprintf: <>
+   42 				va_start: <>
+   43 				vfprintf: <>
+   44 				va_end: <>
+   45 			fopen: <>
+   46 			parse_rcfile: void (), <./src/rcfile.c 607>
+   47 				getline: <>
+   48 				isblank: <>
+   49 				parse_next_word: char * (), <./src/rcfile.c 133>
+   50 					isblank: <>
+   51 				strcasecmp: <>
+   52 				rcfile_error: 40
+   53 				N_: <>
+   54 				parse_include: void (), <./src/rcfile.c 351>
+   55 					parse_argument: char * (), <./src/rcfile.c 154>
+   56 						assert: <>
+   57 						parse_next_word: 49
+   58 						rcfile_error: 40
+   59 						N_: <>
+   60 						isblank: <>
+   61 					get_full_path: char * (), <./src/files.c 935>
+   62 						charalloc: <>
+   63 						getcwd: <>
+   64 						chdir: <>
+   65 						align: void (), <./src/utils.c 120>
+   66 							assert: <>
+   67 							charealloc: <>
+   68 							strlen: <>
+   69 						strcmp: <>
+   70 						charealloc: <>
+   71 						strlen: <>
+   72 						strcat: <>
+   73 						mallocstrcpy: 12
+   74 						real_dir_from_tilde: char * (), <./src/files.c 1990>
+   75 							assert: <>
+   76 							get_homedir: void (), <./src/utils.c 50>
+   77 								getenv: <>
+   78 								getpwuid: <>
+   79 								geteuid: <>
+   80 								mallocstrcpy: 12
+   81 							mallocstrcpy: 12
+   82 							mallocstrncpy: 13
+   83 							getpwent: <>
+   84 							strcmp: <>
+   85 							endpwent: <>
+   86 							charalloc: <>
+   87 							strlen: <>
+   88 							sprintf: <>
+   89 							free: <>
+   90 						stat: <>
+   91 						S_ISDIR: <>
+   92 						strrchr: <>
+   93 						assert: <>
+   94 						null_at: void (), <./src/utils.c 129>
+   95 							assert: <>
+   96 							charealloc: <>
+   97 						free: <>
+   98 					mallocstrcpy: 12
+   99 					stat: <>
+  100 					S_ISDIR: <>
+  101 					S_ISCHR: <>
+  102 					S_ISBLK: <>
+  103 					rcfile_error: 40
+  104 					fopen: <>
+  105 					strerror: <>
+  106 					parse_rcfile: 46
+  107 					free: <>
+  108 				parse_syntax: void (), <./src/rcfile.c 238>
+  109 					assert: <>
+  110 					rcfile_error: 40
+  111 					N_: <>
+  112 					parse_next_regex: char * (), <./src/rcfile.c 188>
+  113 						assert: <>
+  114 						isblank: <>
+  115 						rcfile_error: 40
+  116 						N_: <>
+  117 					strcmp: <>
+  118 					free: <>
+  119 					nmalloc: void * (), <./src/utils.c 362>
+  120 						malloc: <>
+  121 						die: void (), <./src/nano.c 555>
+  122 							endwin: <>
+  123 							tcsetattr: <>
+  124 							va_start: <>
+  125 							vfprintf: <>
+  126 							va_end: <>
+  127 							unpartition_filestruct: void (), <./src/nano.c 226>
+  128 								assert: <>
+  129 								mallocstrcpy: 12
+  130 								charealloc: <>
+  131 								strlen: <>
+  132 								strcpy: <>
+  133 								free: <>
+  134 								strcat: <>
+  135 							die_save_file: void (), <./src/nano.c 598>
+  136 								ISSET: <>
+  137 								get_next_filename: char * (), <./src/files.c 643>
+  138 									assert: <>
+  139 									digits: int (), <./src/utils.c 34>
+  140 									strlen: <>
+  141 									charalloc: <>
+  142 									sprintf: <>
+  143 									stat: <>
+  144 									null_at: 94
+  145 								write_file: bool (), <./src/files.c 1278>
+  146 									assert: <>
+  147 									titlebar: void (), <./src/winio.c 2076>
+  148 										strlenpt: size_t (), <./src/utils.c 494>
+  149 											strnlenpt: size_t (), <./src/utils.c 468>
+  150 												assert: <>
+  151 												parse_mbchar: int (), <./src/chars.c 377>
+  152 													assert: <>
+  153 													mblen: <>
+  154 													is_cntrl_mbchar: bool (), <./src/chars.c 150>
+  155 														assert: <>
+  156 														mbtowc: <>
+  157 														is_cntrl_wchar: bool (), <./src/chars.c 141>
+  158 														is_cntrl_char: bool (), <./src/chars.c 131>
+  159 													charalloc: <>
+  160 													control_mbrep: char * (), <./src/chars.c 237>
+  161 														assert: <>
+  162 														mbtowc: <>
+  163 														strncpy: <>
+  164 														wctomb: <>
+  165 														control_wrep: wchar_t (), <./src/chars.c 219>
+  166 															assert: <>
+  167 															is_cntrl_wchar: bool (), <./src/chars.c 141>
+  168 														control_rep: char (), <./src/chars.c 203>
+  169 															assert: <>
+  170 															is_cntrl_char: bool (), <./src/chars.c 131>
+  171 													mbwidth: int (), <./src/chars.c 304>
+  172 														assert: <>
+  173 														mbtowc: <>
+  174 														wcwidth: <>
+  175 													free: <>
+  176 													is_cntrl_char: bool (), <./src/chars.c 131>
+  177 										assert: <>
+  178 										wattron: <>
+  179 										blank_titlebar: void (), <./src/winio.c 1825>
+  180 											blank_line: void (), <./src/winio.c 1816>
+  181 												wmove: <>
+  182 												waddch: <>
+  183 										mvwaddnstr: <>
+  184 										actual_x: size_t (), <./src/utils.c 443>
+  185 											assert: <>
+  186 											parse_mbchar: 151
+  187 										ISSET: <>
+  188 										strnlenpt: 149
+  189 										display_string: char * (), <./src/winio.c 1888>
+  190 											strlenpt: 148
+  191 											mallocstrcpy: 12
+  192 											charalloc: <>
+  193 											mb_cur_max: int (), <./src/chars.c 332>
+  194 											actual_x: 184
+  195 											strnlenpt: 149
+  196 											assert: <>
+  197 											parse_mbchar: 151
+  198 											is_cntrl_mbchar: 154
+  199 											control_mbrep: 160
+  200 											mbwidth: 171
+  201 											free: <>
+  202 											using_utf8: bool (), <./src/chars.c 53>
+  203 											charealloc: <>
+  204 											ISSET: <>
+  205 											mbrep: char * (), <./src/chars.c 271>
+  206 												assert: <>
+  207 												mbtowc: <>
+  208 												is_valid_unicode: bool (), <./src/chars.c 1007>
+  209 												strncpy: <>
+  210 												wctomb: <>
+  211 											null_at: 94
+  212 										waddch: <>
+  213 										waddnstr: <>
+  214 										waddstr: <>
+  215 										free: <>
+  216 										wattroff: <>
+  217 										wnoutrefresh: <>
+  218 										reset_cursor: void (), <./src/winio.c 2401>
+  219 											wmove: <>
+  220 											xplustabs: size_t (), <./src/utils.c 435>
+  221 												strnlenpt: 149
+  222 											get_page_start: size_t (), <./src/utils.c 422>
+  223 									real_dir_from_tilde: 74
+  224 									check_operating_dir: bool (), <./src/files.c 1161>
+  225 										assert: <>
+  226 										get_full_path: 61
+  227 										strstr: <>
+  228 										free: <>
+  229 									statusbar: void (), <./src/winio.c 2254>
+  230 										va_start: <>
+  231 										isendwin: <>
+  232 										vfprintf: <>
+  233 										va_end: <>
+  234 										blank_statusbar: void (), <./src/winio.c 1849>
+  235 											blank_line: 180
+  236 										ISSET: <>
+  237 										UNSET: <>
+  238 										charalloc: <>
+  239 										mb_cur_max: 193
+  240 										vsnprintf: <>
+  241 										display_string: 189
+  242 										SET: <>
+  243 										free: <>
+  244 										strlenpt: 148
+  245 										wmove: <>
+  246 										wattron: <>
+  247 										waddstr: <>
+  248 										wattroff: <>
+  249 										wnoutrefresh: <>
+  250 										reset_cursor: 218
+  251 									lstat: <>
+  252 									ISSET: <>
+  253 									S_ISLNK: <>
+  254 									stat: <>
+  255 									fopen: <>
+  256 									strerror: <>
+  257 									beep: <>
+  258 									get_full_path: 61
+  259 									mallocstrcpy: 12
+  260 									tail: 30
+  261 									charalloc: <>
+  262 									strlen: <>
+  263 									sprintf: <>
+  264 									free: <>
+  265 									get_next_filename: 137
+  266 									chmod: <>
+  267 									fclose: <>
+  268 									fprintf: <>
+  269 									copy_file: int (), <./src/files.c 1235>
+  270 										assert: <>
+  271 										fread: <>
+  272 										ferror: <>
+  273 										fwrite: <>
+  274 										fclose: <>
+  275 									chown: <>
+  276 									utime: <>
+  277 									unlink: <>
+  278 									umask: <>
+  279 									safe_tempfile: char * (), <./src/files.c 1091>
+  280 										assert: <>
+  281 										getenv: <>
+  282 										check_writable_directory: char * (), <./src/files.c 1067>
+  283 											get_full_path: 61
+  284 											access: <>
+  285 											strlen: <>
+  286 											free: <>
+  287 										mallocstrcpy: 12
+  288 										charealloc: <>
+  289 										strlen: <>
+  290 										strcat: <>
+  291 										umask: <>
+  292 										mkstemp: <>
+  293 										fdopen: <>
+  294 										free: <>
+  295 									open: <>
+  296 									fdopen: <>
+  297 									close: <>
+  298 									sunder: void (), <./src/utils.c 151>
+  299 										assert: <>
+  300 									fwrite: <>
+  301 									unsunder: void (), <./src/utils.c 139>
+  302 										assert: <>
+  303 									putc: <>
+  304 									color_update: void (), <./src/color.c 106>
+  305 										assert: <>
+  306 										strcmp: <>
+  307 										nmalloc: 119
+  308 										regcomp: <>
+  309 										regexec: <>
+  310 										regfree: <>
+  311 										free: <>
+  312 									color_init: void (), <./src/color.c 62>
+  313 										assert: <>
+  314 										has_colors: <>
+  315 										start_color: <>
+  316 										use_default_colors: <>
+  317 										init_pair: <>
+  318 										fprintf: <>
+  319 									edit_refresh: void (), <./src/winio.c 3046>
+  320 										edit_update: void (), <./src/winio.c 3086>
+  321 										ISSET: <>
+  322 										fprintf: <>
+  323 										update_line: void (), <./src/winio.c 2766>
+  324 											assert: <>
+  325 											blank_line: 180
+  326 											strnlenpt: 149
+  327 											get_page_start: 222
+  328 											display_string: 189
+  329 											edit_draw: void (), <./src/winio.c 2427>
+  330 												actual_x: 184
+  331 												assert: <>
+  332 												strlenpt: 148
+  333 												mvwaddstr: <>
+  334 												ISSET: <>
+  335 												memset: <>
+  336 												wattron: <>
+  337 												COLOR_PAIR: <>
+  338 												regexec: <>
+  339 												strnlenpt: 149
+  340 												mvwaddnstr: <>
+  341 												wattroff: <>
+  342 												mark_order: void (), <./src/utils.c 533>
+  343 													assert: <>
+  344 												strlen: <>
+  345 											free: <>
+  346 											mvwaddch: <>
+  347 											strlenpt: 148
+  348 										blank_line: 180
+  349 										reset_cursor: 218
+  350 										wnoutrefresh: <>
+  351 									nmalloc: 119
+  352 									P_: <>
+  353 								fprintf: <>
+  354 								strerror: <>
+  355 								free: <>
+  356 							exit: <>
+  357 					fprintf: <>
+  358 					mallocstrcpy: 12
+  359 					nregcomp: bool (), <./src/rcfile.c 217>
+  360 						regcomp: <>
+  361 						regerror: <>
+  362 						charalloc: <>
+  363 						rcfile_error: 40
+  364 						N_: <>
+  365 						free: <>
+  366 						regfree: <>
+  367 				parse_colors: void (), <./src/rcfile.c 449>
+  368 					assert: <>
+  369 					rcfile_error: 40
+  370 					N_: <>
+  371 					parse_next_word: 49
+  372 					strchr: <>
+  373 					strtok: <>
+  374 					strncasecmp: <>
+  375 					color_to_short: short (), <./src/rcfile.c 409>
+  376 						assert: <>
+  377 						strncasecmp: <>
+  378 						strcasecmp: <>
+  379 						rcfile_error: 40
+  380 						N_: <>
+  381 					parse_next_regex: 112
+  382 					nmalloc: 119
+  383 					nregcomp: 359
+  384 					mallocstrcpy: 12
+  385 					fprintf: <>
+  386 					free: <>
+  387 				fprintf: <>
+  388 				SET: <>
+  389 				parse_argument: 55
+  390 				mallocstrcpy: 12
+  391 				is_valid_mbstring: bool (), <./src/chars.c 1018>
+  392 					assert: <>
+  393 					mbstowcs: <>
+  394 				parse_num: 18
+  395 				free: <>
+  396 				has_blank_mbchars: bool (), <./src/chars.c 976>
+  397 					assert: <>
+  398 					charalloc: <>
+  399 					parse_mbchar: 151
+  400 					is_blank_mbchar: bool (), <./src/chars.c 103>
+  401 						assert: <>
+  402 						mbtowc: <>
+  403 						iswblank: <>
+  404 						isblank: <>
+  405 					free: <>
+  406 					has_blank_chars: bool (), <./src/chars.c 962>
+  407 						assert: <>
+  408 						isblank: <>
+  409 				mbstrlen: size_t (), <./src/chars.c 793>
+  410 					mbstrnlen: size_t (), <./src/chars.c 814>
+  411 						assert: <>
+  412 						parse_mbchar: 151
+  413 						strnlen: <>
+  414 				strlenpt: 148
+  415 				parse_mbchar: 151
+  416 				assert: <>
+  417 				UNSET: <>
+  418 				fclose: <>
+  419 				getchar: <>
+  420 			geteuid: <>
+  421 			SET: <>
+  422 			get_homedir: 76
+  423 			N_: <>
+  424 			charealloc: <>
+  425 			strlen: <>
+  426 			sprintf: <>
+  427 			strerror: <>
+  428 			free: <>
+  429 			set_colorpairs: void (), <./src/color.c 33>
+  430 		free: <>
+  431 		history_init: void (), <./src/search.c 1256>
+  432 			make_new_node: filestruct * (), <./src/nano.c 54>
+  433 				nmalloc: 119
+  434 			mallocstrcpy: 12
+  435 		load_history: void (), <./src/files.c 2453>
+  436 			histfilename: char * (), <./src/files.c 2437>
+  437 				strlen: <>
+  438 				charalloc: <>
+  439 				strcpy: <>
+  440 			fopen: <>
+  441 			UNSET: <>
+  442 			rcfile_error: 40
+  443 			N_: <>
+  444 			strerror: <>
+  445 			fprintf: <>
+  446 			getchar: <>
+  447 			read: <>
+  448 			getline: <>
+  449 			unsunder: 301
+  450 			update_history: void (), <./src/search.c 1296>
+  451 				assert: <>
+  452 				find_history: filestruct * (), <./src/search.c 1281>
+  453 					strncmp: <>
+  454 				unlink_node: void (), <./src/nano.c 97>
+  455 					assert: <>
+  456 				delete_node: void (), <./src/nano.c 108>
+  457 					assert: <>
+  458 					free: <>
+  459 				renumber: void (), <./src/nano.c 157>
+  460 					assert: <>
+  461 				mallocstrcpy: 12
+  462 				splice_node: void (), <./src/nano.c 84>
+  463 					assert: <>
+  464 				make_new_node: 432
+  465 			fclose: <>
+  466 			free: <>
+  467 		init_backup_dir: void (), <./src/files.c 1209>
+  468 			get_full_path: 61
+  469 			strlen: <>
+  470 			free: <>
+  471 		init_operating_dir: void (), <./src/files.c 1138>
+  472 			assert: <>
+  473 			get_full_path: 61
+  474 			chdir: <>
+  475 			free: <>
+  476 		regcomp: <>
+  477 		regerror: <>
+  478 		charalloc: <>
+  479 		strlen: <>
+  480 		getenv: <>
+  481 		tcgetattr: <>
+  482 		initscr: <>
+  483 		terminal_init: void (), <./src/nano.c 1266>
+  484 			cbreak: <>
+  485 			nonl: <>
+  486 			noecho: <>
+  487 			disable_extended_io: void (), <./src/nano.c 1202>
+  488 				tcgetattr: <>
+  489 				tcsetattr: <>
+  490 			disable_signals: void (), <./src/nano.c 1214>
+  491 				tcgetattr: <>
+  492 				tcsetattr: <>
+  493 			ISSET: <>
+  494 			disable_flow_control: void (), <./src/nano.c 1238>
+  495 				tcgetattr: <>
+  496 				tcsetattr: <>
+  497 			tcgetattr: <>
+  498 			tcsetattr: <>
+  499 		curs_set: <>
+  500 		window_init: void (), <./src/nano.c 631>
+  501 			no_more_space: int (), <./src/nano.c 908>
+  502 				ISSET: <>
+  503 			no_help: int (), <./src/nano.c 916>
+  504 				ISSET: <>
+  505 			die: 121
+  506 			delwin: <>
+  507 			newwin: <>
+  508 			ISSET: <>
+  509 			keypad: <>
+  510 		signal_init: void (), <./src/nano.c 968>
+  511 			memset: <>
+  512 			sigaction: <>
+  513 			handle_hupterm: RETSIGTYPE (), <./src/nano.c 1007>
+  514 				die: 121
+  515 			handle_sigwinch: RETSIGTYPE (), <./src/nano.c 1073>
+  516 				ttyname: <>
+  517 				open: <>
+  518 				ioctl: <>
+  519 				close: <>
+  520 				unpartition_filestruct: 127
+  521 				SLsmg_reset_smg: <>
+  522 				SLsmg_init_smg: <>
+  523 				endwin: <>
+  524 				doupdate: <>
+  525 				terminal_init: 483
+  526 				curs_set: <>
+  527 				window_init: 500
+  528 				blank_statusbar: 234
+  529 				wnoutrefresh: <>
+  530 				total_refresh: void (), <./src/winio.c 3130>
+  531 					total_redraw: void (), <./src/winio.c 3116>
+  532 						SLsmg_touch_screen: <>
+  533 						SLsmg_refresh: <>
+  534 						wrefresh: <>
+  535 					titlebar: 147
+  536 					edit_refresh: 319
+  537 					bottombars: void (), <./src/winio.c 2319>
+  538 						ISSET: <>
+  539 						assert: <>
+  540 						length_of_list: size_t (), <./src/global.c 216>
+  541 						blank_bottombars: void (), <./src/winio.c 1856>
+  542 							ISSET: <>
+  543 							blank_line: 180
+  544 						strcpy: <>
+  545 						sprintf: <>
+  546 						toupper: <>
+  547 						wmove: <>
+  548 						onekey: void (), <./src/winio.c 2378>
+  549 							strlenpt: 148
+  550 							assert: <>
+  551 							wattron: <>
+  552 							waddnstr: <>
+  553 							actual_x: 184
+  554 							wattroff: <>
+  555 							waddch: <>
+  556 						wnoutrefresh: <>
+  557 						reset_cursor: 218
+  558 				siglongjmp: <>
+  559 			allow_pending_sigwinch: void (), <./src/nano.c 1139>
+  560 				sigemptyset: <>
+  561 				sigaddset: <>
+  562 				sigprocmask: <>
+  563 			ISSET: <>
+  564 			sigfillset: <>
+  565 			do_suspend: RETSIGTYPE (), <./src/nano.c 1013>
+  566 				disable_mouse_support: void (), <./src/nano.c 670>
+  567 					mousemask: <>
+  568 				erase: <>
+  569 				move: <>
+  570 				refresh: <>
+  571 				printf: <>
+  572 				fflush: <>
+  573 				tcsetattr: <>
+  574 				handle_hupterm: 513
+  575 				sigaction: <>
+  576 				kill: <>
+  577 			do_continue: RETSIGTYPE (), <./src/nano.c 1044>
+  578 				ISSET: <>
+  579 				enable_mouse_support: void (), <./src/nano.c 676>
+  580 					mousemask: <>
+  581 					mouseinterval: <>
+  582 				handle_sigwinch: 515
+  583 				terminal_init: 483
+  584 				curs_set: <>
+  585 				blank_statusbar: 234
+  586 				wnoutrefresh: <>
+  587 				total_refresh: 530
+  588 		shortcut_init: void (), <./src/global.c 261>
+  589 			N_: <>
+  590 			free_shortcutage: void (), <./src/global.c 1227>
+  591 				assert: <>
+  592 				free: <>
+  593 			sc_init_one: void (), <./src/global.c 226>
+  594 				nmalloc: 119
+  595 			IFSCHELP: <>
+  596 			do_help_void: void (), <./src/help.c 202>
+  597 				do_help: void (), <./src/help.c 37>
+  598 					ISSET: <>
+  599 					curs_set: <>
+  600 					blank_edit: void (), <./src/winio.c 1840>
+  601 						blank_line: 180
+  602 					wattroff: <>
+  603 					blank_statusbar: 234
+  604 					help_init: void (), <./src/help.c 217>
+  605 						ISSET: <>
+  606 						UNSET: <>
+  607 						N_: <>
+  608 						strlen: <>
+  609 						mb_cur_max: 193
+  610 						free: <>
+  611 						charalloc: <>
+  612 						strcpy: <>
+  613 						strcat: <>
+  614 						display_string: 189
+  615 						mbstrlen: 409
+  616 						sprintf: <>
+  617 						toupper: <>
+  618 						SET: <>
+  619 						assert: <>
+  620 					assert: <>
+  621 					UNSET: <>
+  622 					window_init: 500
+  623 					bottombars: 537
+  624 					wnoutrefresh: <>
+  625 					help_line_len: size_t (), <./src/help.c 598>
+  626 						break_line: ssize_t (), <./src/text.c 761>
+  627 							assert: <>
+  628 							parse_mbchar: 151
+  629 							is_blank_mbchar: 400
+  630 						move_mbright: size_t (), <./src/chars.c 486>
+  631 							parse_mbchar: 151
+  632 						strnlenpt: 149
+  633 					mvwaddnstr: <>
+  634 					get_kbinput: int (), <./src/winio.c 307>
+  635 						parse_kbinput: int (), <./src/winio.c 327>
+  636 							get_input: int * (), <./src/winio.c 247>
+  637 								allow_pending_sigwinch: 559
+  638 								get_key_buffer: void (), <./src/winio.c 106>
+  639 									allow_pending_sigwinch: 559
+  640 									doupdate: <>
+  641 									wgetch: <>
+  642 									handle_hupterm: 513
+  643 									nmalloc: 119
+  644 									nodelay: <>
+  645 									nrealloc: void * (), <./src/utils.c 374>
+  646 										realloc: <>
+  647 										die: 121
+  648 									fprintf: <>
+  649 								nmalloc: 119
+  650 								memcpy: <>
+  651 								free: <>
+  652 								memmove: <>
+  653 								nrealloc: 645
+  654 							get_key_buffer_len: size_t (), <./src/winio.c 185>
+  655 							tolower: <>
+  656 							parse_escape_seq_kbinput: int (), <./src/winio.c 1269>
+  657 								unget_input: void (), <./src/winio.c 191>
+  658 									allow_pending_sigwinch: 559
+  659 									nrealloc: 645
+  660 									memmove: <>
+  661 									memcpy: <>
+  662 								get_key_buffer_len: 654
+  663 								get_input: 636
+  664 								get_escape_seq_kbinput: int (), <./src/winio.c 688>
+  665 									get_escape_seq_abcd: int (), <./src/winio.c 1250>
+  666 										tolower: <>
+  667 									KEY_F: <>
+  668 									fprintf: <>
+  669 								free: <>
+  670 								statusbar: 229
+  671 								beep: <>
+  672 								fprintf: <>
+  673 							get_byte_kbinput: int (), <./src/winio.c 1301>
+  674 								fprintf: <>
+  675 							make_mbchar: char * (), <./src/chars.c 346>
+  676 								assert: <>
+  677 								charalloc: <>
+  678 								wctomb: <>
+  679 								is_valid_unicode: bool (), <./src/chars.c 1007>
+  680 								mallocstrncpy: 13
+  681 							nmalloc: 119
+  682 							unget_input: 657
+  683 							free: <>
+  684 							get_control_kbinput: int (), <./src/winio.c 1477>
+  685 								fprintf: <>
+  686 							ISSET: <>
+  687 							is_byte: bool (), <./src/chars.c 77>
+  688 							fprintf: <>
+  689 						check_statusblank: void (), <./src/winio.c 1867>
+  690 							ISSET: <>
+  691 							blank_statusbar: 234
+  692 							wnoutrefresh: <>
+  693 							reset_cursor: 218
+  694 					parse_help_input: void (), <./src/help.c 574>
+  695 						get_shortcut: const shortcut * (), <./src/winio.c 1739>
+  696 							length_of_list: 540
+  697 							fprintf: <>
+  698 					get_mouseinput: bool (), <./src/winio.c 1635>
+  699 						getmouse: <>
+  700 						ISSET: <>
+  701 						wenclose: <>
+  702 						length_of_list: 540
+  703 						no_more_space: 501
+  704 						unget_kbinput: void (), <./src/winio.c 229>
+  705 							unget_input: 657
+  706 					total_redraw: 531
+  707 					blank_bottombars: 541
+  708 					SET: <>
+  709 					free: <>
+  710 				edit_refresh: 319
+  711 			nano_disabled_msg: void (), <./src/nano.c 922>
+  712 				statusbar: 229
+  713 			do_exit: void (), <./src/nano.c 932>
+  714 				ISSET: <>
+  715 				do_yesno_prompt: int (), <./src/prompt.c 1265>
+  716 					assert: <>
+  717 					ISSET: <>
+  718 					blank_bottombars: 541
+  719 					sprintf: <>
+  720 					wmove: <>
+  721 					onekey: 548
+  722 					wattron: <>
+  723 					blank_statusbar: 234
+  724 					mvwaddnstr: <>
+  725 					actual_x: 184
+  726 					wattroff: <>
+  727 					wnoutrefresh: <>
+  728 					get_kbinput: 634
+  729 					get_mouseinput: 698
+  730 					wenclose: <>
+  731 					no_more_space: 501
+  732 					total_redraw: 531
+  733 					strchr: <>
+  734 				dump_filestruct: void (), <./src/utils.c 590>
+  735 					fprintf: <>
+  736 				do_writeout: bool (), <./src/files.c 1760>
+  737 					ISSET: <>
+  738 					write_file: 145
+  739 					mallocstrcpy: 12
+  740 					do_prompt: int (), <./src/prompt.c 1170>
+  741 						free: <>
+  742 						charalloc: <>
+  743 						mb_cur_max: 193
+  744 						bottombars: 537
+  745 						va_start: <>
+  746 						vsnprintf: <>
+  747 						va_end: <>
+  748 						null_at: 94
+  749 						actual_x: 184
+  750 						get_prompt_string: int (), <./src/prompt.c 935>
+  751 							mallocstrcpy: 12
+  752 							strlen: <>
+  753 							statusbar_xplustabs: size_t (), <./src/prompt.c 851>
+  754 								strnlenpt: 149
+  755 							update_statusbar_line: void (), <./src/prompt.c 883>
+  756 								assert: <>
+  757 								strlen: <>
+  758 								strlenpt: 148
+  759 								strnlenpt: 149
+  760 								get_statusbar_page_start: size_t (), <./src/prompt.c 861>
+  761 								wattron: <>
+  762 								blank_statusbar: 234
+  763 								mvwaddnstr: <>
+  764 								actual_x: 184
+  765 								waddch: <>
+  766 								display_string: 189
+  767 								waddstr: <>
+  768 								free: <>
+  769 								reset_statusbar_cursor: void (), <./src/prompt.c 871>
+  770 									strlenpt: 148
+  771 									statusbar_xplustabs: 753
+  772 									wmove: <>
+  773 									get_statusbar_page_start: 760
+  774 								wattroff: <>
+  775 								wnoutrefresh: <>
+  776 							wnoutrefresh: <>
+  777 							do_statusbar_input: int (), <./src/prompt.c 54>
+  778 								get_kbinput: 634
+  779 								do_statusbar_mouse: bool (), <./src/prompt.c 276>
+  780 									get_mouseinput: 698
+  781 									wenclose: <>
+  782 									assert: <>
+  783 									strlenpt: 148
+  784 									no_more_space: 501
+  785 									actual_x: 184
+  786 									get_statusbar_page_start: 760
+  787 									statusbar_xplustabs: 753
+  788 									need_statusbar_horizontal_update: bool (), <./src/prompt.c 917>
+  789 										strlenpt: 148
+  790 										get_statusbar_page_start: 760
+  791 									update_statusbar_line: 755
+  792 								get_shortcut: 695
+  793 								is_ascii_cntrl_char: bool (), <./src/chars.c 124>
+  794 								beep: <>
+  795 								ISSET: <>
+  796 								nrealloc: 645
+  797 								get_key_buffer_len: 654
+  798 								charalloc: <>
+  799 								do_statusbar_output: void (), <./src/prompt.c 318>
+  800 									charalloc: <>
+  801 									mb_cur_max: 193
+  802 									assert: <>
+  803 									strlen: <>
+  804 									unparse_kbinput: void (), <./src/winio.c 1511>
+  805 										nmalloc: 119
+  806 										unget_input: 657
+  807 										free: <>
+  808 									parse_mbchar: 151
+  809 									is_ascii_cntrl_char: bool (), <./src/chars.c 124>
+  810 									charealloc: <>
+  811 									charmove: <>
+  812 									strncpy: <>
+  813 									free: <>
+  814 									statusbar_xplustabs: 753
+  815 									update_statusbar_line: 755
+  816 								free: <>
+  817 								total_statusbar_refresh: void (), <./src/prompt.c 927>
+  818 									total_redraw: 531
+  819 								do_statusbar_cut_text: void (), <./src/prompt.c 484>
+  820 									assert: <>
+  821 									ISSET: <>
+  822 									null_at: 94
+  823 									statusbar_xplustabs: 753
+  824 									update_statusbar_line: 755
+  825 								do_statusbar_right: void (), <./src/prompt.c 439>
+  826 									strlen: <>
+  827 									move_mbright: 630
+  828 									statusbar_xplustabs: 753
+  829 									need_statusbar_horizontal_update: 788
+  830 									update_statusbar_line: 755
+  831 								do_statusbar_left: void (), <./src/prompt.c 425>
+  832 									move_mbleft: size_t (), <./src/chars.c 464>
+  833 										assert: <>
+  834 										strlen: <>
+  835 										parse_mbchar: 151
+  836 									statusbar_xplustabs: 753
+  837 									need_statusbar_horizontal_update: 788
+  838 									update_statusbar_line: 755
+  839 								do_statusbar_next_word: bool (), <./src/prompt.c 507>
+  840 									assert: <>
+  841 									charalloc: <>
+  842 									mb_cur_max: 193
+  843 									parse_mbchar: 151
+  844 									is_word_mbchar: bool (), <./src/chars.c 193>
+  845 										assert: <>
+  846 										is_alnum_mbchar: bool (), <./src/chars.c 83>
+  847 											assert: <>
+  848 											mbtowc: <>
+  849 											iswalnum: <>
+  850 											isalnum: <>
+  851 										is_punct_mbchar: bool (), <./src/chars.c 170>
+  852 											assert: <>
+  853 											mbtowc: <>
+  854 											iswpunct: <>
+  855 											ispunct: <>
+  856 									free: <>
+  857 									statusbar_xplustabs: 753
+  858 									need_statusbar_horizontal_update: 788
+  859 									update_statusbar_line: 755
+  860 								do_statusbar_prev_word: bool (), <./src/prompt.c 572>
+  861 									assert: <>
+  862 									charalloc: <>
+  863 									mb_cur_max: 193
+  864 									parse_mbchar: 151
+  865 									is_word_mbchar: 844
+  866 									move_mbleft: 832
+  867 									free: <>
+  868 									statusbar_xplustabs: 753
+  869 									need_statusbar_horizontal_update: 788
+  870 									update_statusbar_line: 755
+  871 								do_statusbar_home: void (), <./src/prompt.c 385>
+  872 									ISSET: <>
+  873 									indent_length: size_t (), <./src/text.c 857>
+  874 										assert: <>
+  875 										charalloc: <>
+  876 										mb_cur_max: 193
+  877 										parse_mbchar: 151
+  878 										is_blank_mbchar: 400
+  879 										free: <>
+  880 									strlen: <>
+  881 									statusbar_xplustabs: 753
+  882 									need_statusbar_horizontal_update: 788
+  883 									update_statusbar_line: 755
+  884 								do_statusbar_end: void (), <./src/prompt.c 413>
+  885 									strlen: <>
+  886 									statusbar_xplustabs: 753
+  887 									need_statusbar_horizontal_update: 788
+  888 									update_statusbar_line: 755
+  889 								do_statusbar_find_bracket: void (), <./src/prompt.c 737>
+  890 									assert: <>
+  891 									mbstrlen: 409
+  892 									mbstrchr: char * (), <./src/chars.c 842>
+  893 										assert: <>
+  894 										charalloc: <>
+  895 										mbtowc: <>
+  896 										parse_mbchar: 151
+  897 										free: <>
+  898 										strchr: <>
+  899 									parse_mbchar: 151
+  900 									move_mbleft: 832
+  901 									move_mbright: 630
+  902 									charalloc: <>
+  903 									mb_cur_max: 193
+  904 									strncpy: <>
+  905 									null_at: 94
+  906 									find_statusbar_bracket_match: bool (), <./src/prompt.c 696>
+  907 										assert: <>
+  908 										mbstrlen: 409
+  909 										mbrevstrpbrk: char * (), <./src/chars.c 930>
+  910 											assert: <>
+  911 											mbstrchr: 892
+  912 											move_mbleft: 832
+  913 											revstrpbrk: char * (), <./src/chars.c 911>
+  914 												assert: <>
+  915 												strchr: <>
+  916 										mbstrpbrk: char * (), <./src/chars.c 890>
+  917 											assert: <>
+  918 											mbstrchr: 892
+  919 											move_mbright: 630
+  920 											strpbrk: <>
+  921 										statusbar_xplustabs: 753
+  922 									strncmp: <>
+  923 									need_statusbar_horizontal_update: 788
+  924 									update_statusbar_line: 755
+  925 									free: <>
+  926 								do_statusbar_verbatim_input: void (), <./src/prompt.c 667>
+  927 									get_verbatim_kbinput: int * (), <./src/winio.c 1531>
+  928 										ISSET: <>
+  929 										disable_flow_control: 494
+  930 										keypad: <>
+  931 										parse_verbatim_kbinput: int * (), <./src/winio.c 1560>
+  932 											get_input: 636
+  933 											using_utf8: 202
+  934 											get_unicode_kbinput: long (), <./src/winio.c 1394>
+  935 												add_unicode_digit: long (), <./src/winio.c 1375>
+  936 													tolower: <>
+  937 												fprintf: <>
+  938 											unget_input: 657
+  939 											statusbar: 229
+  940 											make_mbchar: 675
+  941 											nmalloc: 119
+  942 											free: <>
+  943 											get_key_buffer_len: 654
+  944 										enable_flow_control: void (), <./src/nano.c 1249>
+  945 											tcgetattr: <>
+  946 											tcsetattr: <>
+  947 									charalloc: <>
+  948 									do_statusbar_output: 799
+  949 									free: <>
+  950 								get_input: 636
+  951 								do_statusbar_delete: void (), <./src/prompt.c 462>
+  952 									statusbar_xplustabs: 753
+  953 									parse_mbchar: 151
+  954 									strlen: <>
+  955 									assert: <>
+  956 									charmove: <>
+  957 									null_at: 94
+  958 									update_statusbar_line: 755
+  959 								do_statusbar_backspace: void (), <./src/prompt.c 453>
+  960 									do_statusbar_left: 831
+  961 									do_statusbar_delete: 951
+  962 							assert: <>
+  963 							get_history_completion: char * (), <./src/search.c 1392>
+  964 								assert: <>
+  965 								find_history: 452
+  966 								strcmp: <>
+  967 							input_tab: char * (), <./src/files.c 2246>
+  968 								assert: <>
+  969 								strlen: <>
+  970 								strchr: <>
+  971 								username_tab_completion: char ** (), <./src/files.c 2108>
+  972 									assert: <>
+  973 									getpwent: <>
+  974 									strncmp: <>
+  975 									check_operating_dir: 224
+  976 									nrealloc: 645
+  977 									charalloc: <>
+  978 									strlen: <>
+  979 									sprintf: <>
+  980 									endpwent: <>
+  981 								cwd_tab_completion: char ** (), <./src/files.c 2145>
+  982 									mallocstrcpy: 12
+  983 									assert: <>
+  984 									null_at: 94
+  985 									strrchr: <>
+  986 									real_dir_from_tilde: 74
+  987 									free: <>
+  988 									strlen: <>
+  989 									opendir: <>
+  990 									beep: <>
+  991 									readdir: <>
+  992 									fprintf: <>
+  993 									strncmp: <>
+  994 									strcmp: <>
+  995 									charalloc: <>
+  996 									sprintf: <>
+  997 									check_operating_dir: 224
+  998 									is_dir: bool (), <./src/files.c 2070>
+  999 										assert: <>
+ 1000 										real_dir_from_tilde: 74
+ 1001 										stat: <>
+ 1002 										S_ISDIR: <>
+ 1003 										free: <>
+ 1004 									nrealloc: 645
+ 1005 									closedir: <>
+ 1006 								beep: <>
+ 1007 								revstrstr: const char * (), <./src/chars.c 682>
+ 1008 									assert: <>
+ 1009 								charalloc: <>
+ 1010 								mb_cur_max: 193
+ 1011 								parse_mbchar: 151
+ 1012 								strcmp: <>
+ 1013 								free: <>
+ 1014 								strncpy: <>
+ 1015 								is_dir: 998
+ 1016 								charealloc: <>
+ 1017 								charmove: <>
+ 1018 								qsort: <>
+ 1019 								diralphasort: int (), <./src/files.c 2036>
+ 1020 									stat: <>
+ 1021 									S_ISDIR: <>
+ 1022 									mbstrcasecmp: int (), <./src/chars.c 500>
+ 1023 										mbstrncasecmp: int (), <./src/chars.c 522>
+ 1024 											assert: <>
+ 1025 											charalloc: <>
+ 1026 											parse_mbchar: 151
+ 1027 											mbtowc: <>
+ 1028 											towlower: <>
+ 1029 											free: <>
+ 1030 											strncasecmp: <>
+ 1031 								strnlenpt: 149
+ 1032 								blank_edit: 600
+ 1033 								wmove: <>
+ 1034 								curs_set: <>
+ 1035 								waddstr: <>
+ 1036 								display_string: 189
+ 1037 								wnoutrefresh: <>
+ 1038 								free_chararray: void (), <./src/files.c 2058>
+ 1039 									assert: <>
+ 1040 									free: <>
+ 1041 							get_history_older: char * (), <./src/search.c 1361>
+ 1042 								assert: <>
+ 1043 							get_history_newer: char * (), <./src/search.c 1375>
+ 1044 								assert: <>
+ 1045 							reset_statusbar_cursor: 769
+ 1046 							history_reset: void (), <./src/search.c 1270>
+ 1047 							free: <>
+ 1048 						blank_statusbar: 234
+ 1049 						wnoutrefresh: <>
+ 1050 						fprintf: <>
+ 1051 					edit_refresh: 319
+ 1052 					statusbar: 229
+ 1053 					do_browse_from: char * (), <./src/browser.c 393>
+ 1054 						assert: <>
+ 1055 						real_dir_from_tilde: 74
+ 1056 						stat: <>
+ 1057 						S_ISDIR: <>
+ 1058 						mallocstrassn: char * (), <./src/utils.c 412>
+ 1059 							free: <>
+ 1060 						striponedir: char * (), <./src/browser.c 1071>
+ 1061 							assert: <>
+ 1062 							mallocstrcpy: 12
+ 1063 							strrchr: <>
+ 1064 							null_at: 94
+ 1065 						free: <>
+ 1066 						charalloc: <>
+ 1067 						getcwd: <>
+ 1068 						align: 65
+ 1069 						check_operating_dir: 224
+ 1070 						mallocstrcpy: 12
+ 1071 						opendir: <>
+ 1072 						beep: <>
+ 1073 						do_browser: char * (), <./src/browser.c 49>
+ 1074 							ISSET: <>
+ 1075 							curs_set: <>
+ 1076 							blank_statusbar: 234
+ 1077 							bottombars: 537
+ 1078 							wnoutrefresh: <>
+ 1079 							UNSET: <>
+ 1080 							mallocstrcpy: 12
+ 1081 							mallocstrassn: 1058
+ 1082 							get_full_path: 61
+ 1083 							assert: <>
+ 1084 							strlen: <>
+ 1085 							browser_init: void (), <./src/browser.c 452>
+ 1086 								strlen: <>
+ 1087 								assert: <>
+ 1088 								readdir: <>
+ 1089 								strcmp: <>
+ 1090 								strlenpt: 148
+ 1091 								rewinddir: <>
+ 1092 								free_chararray: 1038
+ 1093 								nmalloc: 119
+ 1094 								charalloc: <>
+ 1095 								sprintf: <>
+ 1096 								closedir: <>
+ 1097 							qsort: <>
+ 1098 							diralphasort: 1019
+ 1099 							browser_select_filename: bool (), <./src/browser.c 747>
+ 1100 								strcmp: <>
+ 1101 							free: <>
+ 1102 							titlebar: 147
+ 1103 							browser_refresh: void (), <./src/browser.c 599>
+ 1104 								digits: int (), <./src/utils.c 34>
+ 1105 								blank_edit: 600
+ 1106 								wmove: <>
+ 1107 								tail: 30
+ 1108 								strlenpt: 148
+ 1109 								display_string: 189
+ 1110 								wattron: <>
+ 1111 								blank_line: 180
+ 1112 								mvwaddstr: <>
+ 1113 								free: <>
+ 1114 								lstat: <>
+ 1115 								S_ISLNK: <>
+ 1116 								stat: <>
+ 1117 								S_ISDIR: <>
+ 1118 								mallocstrcpy: 12
+ 1119 								strcmp: <>
+ 1120 								charalloc: <>
+ 1121 								sprintf: <>
+ 1122 								null_at: 94
+ 1123 								actual_x: 184
+ 1124 								wattroff: <>
+ 1125 								wnoutrefresh: <>
+ 1126 							get_kbinput: 634
+ 1127 							parse_browser_input: void (), <./src/browser.c 559>
+ 1128 								get_shortcut: 695
+ 1129 							get_mouseinput: 698
+ 1130 							wenclose: <>
+ 1131 							no_more_space: 501
+ 1132 							unget_kbinput: 704
+ 1133 							total_redraw: 531
+ 1134 							do_browser_help: void (), <./src/help.c 209>
+ 1135 								do_help: 597
+ 1136 								browser_refresh: 1103
+ 1137 							nano_disabled_msg: 711
+ 1138 							do_filesearch: void (), <./src/browser.c 972>
+ 1139 								filesearch_init: int (), <./src/browser.c 770>
+ 1140 									mallocstrcpy: 12
+ 1141 									search_init_globals: void (), <./src/search.c 118>
+ 1142 										mallocstrcpy: 12
+ 1143 									display_string: 189
+ 1144 									charalloc: <>
+ 1145 									strlen: <>
+ 1146 									sprintf: <>
+ 1147 									strlenpt: 148
+ 1148 									free: <>
+ 1149 									do_prompt: 740
+ 1150 									browser_refresh: 1103
+ 1151 									ISSET: <>
+ 1152 									statusbar: 229
+ 1153 									regexp_init: bool (), <./src/search.c 44>
+ 1154 										assert: <>
+ 1155 										regcomp: <>
+ 1156 										ISSET: <>
+ 1157 										regerror: <>
+ 1158 										charalloc: <>
+ 1159 										statusbar: 229
+ 1160 										free: <>
+ 1161 									TOGGLE: <>
+ 1162 								filesearch_abort: void (), <./src/browser.c 962>
+ 1163 									bottombars: 537
+ 1164 									regexp_cleanup: void (), <./src/search.c 74>
+ 1165 										regfree: <>
+ 1166 								do_filesearch: 1138
+ 1167 								mallocstrcpy: 12
+ 1168 								update_history: 450
+ 1169 								findnextfile_wrap_reset: void (), <./src/browser.c 953>
+ 1170 								findnextfile: bool (), <./src/browser.c 880>
+ 1171 									tail: 30
+ 1172 									ISSET: <>
+ 1173 									strlen: <>
+ 1174 									strstrwrapper: const char * (), <./src/utils.c 290>
+ 1175 										assert: <>
+ 1176 										ISSET: <>
+ 1177 										regexec: <>
+ 1178 										revstrstr: 1007
+ 1179 										strstr: <>
+ 1180 										mbrevstrcasestr: const char * (), <./src/chars.c 725>
+ 1181 											assert: <>
+ 1182 											charalloc: <>
+ 1183 											parse_mbchar: 151
+ 1184 											mbtowc: <>
+ 1185 											towlower: <>
+ 1186 											move_mbleft: 832
+ 1187 											free: <>
+ 1188 											revstrcasestr: const char * (), <./src/chars.c 704>
+ 1189 												assert: <>
+ 1190 												tolower: <>
+ 1191 										mbstrcasestr: const char * (), <./src/chars.c 618>
+ 1192 											assert: <>
+ 1193 											charalloc: <>
+ 1194 											parse_mbchar: 151
+ 1195 											mbtowc: <>
+ 1196 											towlower: <>
+ 1197 											move_mbright: 630
+ 1198 											free: <>
+ 1199 											strcasestr: <>
+ 1200 									not_found_msg: void (), <./src/search.c 85>
+ 1201 										assert: <>
+ 1202 										display_string: 189
+ 1203 										actual_x: 184
+ 1204 										mbstrnlen: 410
+ 1205 										statusbar: 229
+ 1206 										free: <>
+ 1207 									statusbar: 229
+ 1208 								statusbar: 229
+ 1209 							do_fileresearch: void (), <./src/browser.c 1022>
+ 1210 								search_init_globals: 1141
+ 1211 								ISSET: <>
+ 1212 								regexp_init: 1153
+ 1213 								findnextfile_wrap_reset: 1169
+ 1214 								findnextfile: 1170
+ 1215 								statusbar: 229
+ 1216 								filesearch_abort: 1162
+ 1217 							do_prompt: 740
+ 1218 							statusbar: 229
+ 1219 							sunder: 298
+ 1220 							align: 65
+ 1221 							real_dir_from_tilde: 74
+ 1222 							charealloc: <>
+ 1223 							sprintf: <>
+ 1224 							check_operating_dir: 224
+ 1225 							opendir: <>
+ 1226 							strerror: <>
+ 1227 							beep: <>
+ 1228 							strcmp: <>
+ 1229 							stat: <>
+ 1230 							S_ISDIR: <>
+ 1231 							tail: 30
+ 1232 							striponedir: 1060
+ 1233 							edit_refresh: 319
+ 1234 							SET: <>
+ 1235 							free_chararray: 1038
+ 1236 					free: <>
+ 1237 					TOGGLE: <>
+ 1238 					fprintf: <>
+ 1239 					strcasecmp: <>
+ 1240 					do_credits: void (), <./src/winio.c 3240>
+ 1241 						ISSET: <>
+ 1242 						N_: <>
+ 1243 						using_utf8: 202
+ 1244 						SET: <>
+ 1245 						window_init: 500
+ 1246 						curs_set: <>
+ 1247 						nodelay: <>
+ 1248 						blank_titlebar: 179
+ 1249 						blank_topbar: void (), <./src/winio.c 1832>
+ 1250 							ISSET: <>
+ 1251 							blank_line: 180
+ 1252 						blank_edit: 600
+ 1253 						blank_statusbar: 234
+ 1254 						blank_bottombars: 541
+ 1255 						wrefresh: <>
+ 1256 						napms: <>
+ 1257 						wgetch: <>
+ 1258 						assert: <>
+ 1259 						strlenpt: 148
+ 1260 						mvwaddstr: <>
+ 1261 						scrollok: <>
+ 1262 						wscrl: <>
+ 1263 						ungetch: <>
+ 1264 						UNSET: <>
+ 1265 						total_refresh: 530
+ 1266 					strlen: <>
+ 1267 					sunder: 298
+ 1268 					get_full_path: 61
+ 1269 					stat: <>
+ 1270 					strcmp: <>
+ 1271 					unsunder: 301
+ 1272 					do_yesno_prompt: 715
+ 1273 					align: 65
+ 1274 					write_marked_file: bool (), <./src/files.c 1711>
+ 1275 						assert: <>
+ 1276 						mark_order: 342
+ 1277 						partition_filestruct: partition * (), <./src/nano.c 173>
+ 1278 							assert: <>
+ 1279 							nmalloc: 119
+ 1280 							mallocstrncpy: 13
+ 1281 							mallocstrcpy: 12
+ 1282 							null_at: 94
+ 1283 							charmove: <>
+ 1284 							strlen: <>
+ 1285 							align: 65
+ 1286 						ISSET: <>
+ 1287 						new_magicline: void (), <./src/utils.c 500>
+ 1288 							nmalloc: 119
+ 1289 							mallocstrcpy: 12
+ 1290 						write_file: 145
+ 1291 						remove_magicline: void (), <./src/utils.c 515>
+ 1292 							assert: <>
+ 1293 							free_filestruct: void (), <./src/nano.c 144>
+ 1294 								assert: <>
+ 1295 								delete_node: 456
+ 1296 						unpartition_filestruct: 127
+ 1297 						set_modified: void (), <./src/winio.c 2243>
+ 1298 							titlebar: 147
+ 1299 				close_buffer: bool (), <./src/files.c 268>
+ 1300 					assert: <>
+ 1301 					switch_to_next_buffer_void: void (), <./src/files.c 260>
+ 1302 						switch_to_prevnext_buffer: void (), <./src/files.c 221>
+ 1303 							assert: <>
+ 1304 							statusbar: 229
+ 1305 							fprintf: <>
+ 1306 							display_buffer: void (), <./src/files.c 203>
+ 1307 								titlebar: 147
+ 1308 								color_init: 312
+ 1309 								edit_refresh: 319
+ 1310 							dump_filestruct: 734
+ 1311 					unlink_opennode: void (), <./src/nano.c 479>
+ 1312 						assert: <>
+ 1313 						delete_opennode: void (), <./src/nano.c 490>
+ 1314 							assert: <>
+ 1315 							free: <>
+ 1316 							free_filestruct: 1293
+ 1317 					display_main_list: void (), <./src/winio.c 3140>
+ 1318 						bottombars: 537
+ 1319 				finish: void (), <./src/nano.c 527>
+ 1320 					ISSET: <>
+ 1321 					blank_bottombars: 541
+ 1322 					blank_statusbar: 234
+ 1323 					wrefresh: <>
+ 1324 					endwin: <>
+ 1325 					tcsetattr: <>
+ 1326 					save_history: void (), <./src/files.c 2523>
+ 1327 						history_has_changed: bool (), <./src/search.c 1249>
+ 1328 						histfilename: 436
+ 1329 						fopen: <>
+ 1330 						rcfile_error: 40
+ 1331 						N_: <>
+ 1332 						strerror: <>
+ 1333 						chmod: <>
+ 1334 						writehist: bool (), <./src/files.c 2503>
+ 1335 							strlen: <>
+ 1336 							sunder: 298
+ 1337 							fwrite: <>
+ 1338 							putc: <>
+ 1339 						fclose: <>
+ 1340 						free: <>
+ 1341 					thanks_for_all_the_fish: void (), <./src/global.c 1384>
+ 1342 						delwin: <>
+ 1343 						free: <>
+ 1344 						regfree: <>
+ 1345 						free_filestruct: 1293
+ 1346 						free_shortcutage: 590
+ 1347 						free_openfilestruct: void (), <./src/nano.c 507>
+ 1348 							assert: <>
+ 1349 							delete_opennode: 1313
+ 1350 					exit: <>
+ 1351 				statusbar: 229
+ 1352 				display_main_list: 1317
+ 1353 			do_writeout_void: void (), <./src/files.c 1982>
+ 1354 				do_writeout: 736
+ 1355 				display_main_list: 1317
+ 1356 			do_justify_void: void (), <./src/text.c 1750>
+ 1357 				do_justify: void (), <./src/text.c 1341>
+ 1358 					find_paragraph: bool (), <./src/text.c 1257>
+ 1359 						statusbar: 229
+ 1360 						assert: <>
+ 1361 						strlen: <>
+ 1362 						inpar: bool (), <./src/text.c 1151>
+ 1363 							quote_length: size_t (), <./src/text.c 1044>
+ 1364 								regexec: <>
+ 1365 								strncmp: <>
+ 1366 							indent_length: 873
+ 1367 						do_para_end: void (), <./src/move.c 163>
+ 1368 							inpar: 1362
+ 1369 							begpar: bool (), <./src/text.c 1113>
+ 1370 								quote_length: 1363
+ 1371 								indent_length: 873
+ 1372 								quotes_match: bool (), <./src/text.c 1068>
+ 1373 									assert: <>
+ 1374 									quote_length: 1363
+ 1375 									strncmp: <>
+ 1376 								ISSET: <>
+ 1377 								indents_match: bool (), <./src/text.c 1080>
+ 1378 									assert: <>
+ 1379 									indent_length: 873
+ 1380 									strncmp: <>
+ 1381 							strlen: <>
+ 1382 							xplustabs: 220
+ 1383 							edit_redraw: void (), <./src/winio.c 2936>
+ 1384 								need_vertical_update: bool (), <./src/winio.c 2820>
+ 1385 									get_page_start: 222
+ 1386 								update_line: 323
+ 1387 								edit_update: 320
+ 1388 								ISSET: <>
+ 1389 								edit_scroll: void (), <./src/winio.c 2836>
+ 1390 									need_vertical_update: 1384
+ 1391 									edit_refresh: 319
+ 1392 									scrollok: <>
+ 1393 									wscrl: <>
+ 1394 									update_line: 323
+ 1395 						begpar: 1369
+ 1396 						do_para_begin: void (), <./src/move.c 131>
+ 1397 							begpar: 1369
+ 1398 							edit_redraw: 1383
+ 1399 						quote_length: 1363
+ 1400 					edit_refresh: 319
+ 1401 					backup_lines: void (), <./src/text.c 1168>
+ 1402 						assert: <>
+ 1403 						move_to_filestruct: void (), <./src/nano.c 273>
+ 1404 							assert: <>
+ 1405 							partition_filestruct: 1277
+ 1406 							get_totsize: size_t (), <./src/utils.c 560>
+ 1407 								mbstrlen: 409
+ 1408 							renumber: 459
+ 1409 							charealloc: <>
+ 1410 							strlen: <>
+ 1411 							strcat: <>
+ 1412 							nmalloc: 119
+ 1413 							mallocstrcpy: 12
+ 1414 							unpartition_filestruct: 127
+ 1415 							edit_update: 320
+ 1416 							ISSET: <>
+ 1417 							new_magicline: 1287
+ 1418 						strlen: <>
+ 1419 						copy_from_filestruct: void (), <./src/nano.c 391>
+ 1420 							assert: <>
+ 1421 							partition_filestruct: 1277
+ 1422 							copy_filestruct: filestruct * (), <./src/nano.c 119>
+ 1423 								assert: <>
+ 1424 								copy_node: filestruct * (), <./src/nano.c 67>
+ 1425 									assert: <>
+ 1426 									nmalloc: 119
+ 1427 									mallocstrcpy: 12
+ 1428 							strlen: <>
+ 1429 							get_totsize: 1406
+ 1430 							unpartition_filestruct: 127
+ 1431 							renumber: 459
+ 1432 							ISSET: <>
+ 1433 							new_magicline: 1287
+ 1434 						set_modified: 1297
+ 1435 					mallocstrcpy: 12
+ 1436 					indent_length: 873
+ 1437 					strlen: <>
+ 1438 					mallocstrncpy: 13
+ 1439 					charealloc: <>
+ 1440 					strcat: <>
+ 1441 					unlink_node: 454
+ 1442 					delete_node: 456
+ 1443 					justify_format: void (), <./src/text.c 894>
+ 1444 						assert: <>
+ 1445 						strlen: <>
+ 1446 						is_blank_mbchar: 400
+ 1447 						charalloc: <>
+ 1448 						strncpy: <>
+ 1449 						parse_mbchar: 151
+ 1450 						mbstrchr: 892
+ 1451 						null_at: 94
+ 1452 						free: <>
+ 1453 					strlenpt: 148
+ 1454 					break_line: 626
+ 1455 					strnlenpt: 149
+ 1456 					assert: <>
+ 1457 					splice_node: 462
+ 1458 					make_new_node: 432
+ 1459 					ISSET: <>
+ 1460 					charalloc: <>
+ 1461 					strncpy: <>
+ 1462 					strcpy: <>
+ 1463 					null_at: 94
+ 1464 					free: <>
+ 1465 					renumber: 459
+ 1466 					sigsetjmp: <>
+ 1467 					statusbar: 229
+ 1468 					do_cursorpos: void (), <./src/winio.c 3151>
+ 1469 						xplustabs: 220
+ 1470 						strlenpt: 148
+ 1471 						assert: <>
+ 1472 						get_totsize: 1406
+ 1473 						statusbar: 229
+ 1474 					shortcut_init: 588
+ 1475 					display_main_list: 1317
+ 1476 					do_input: int (), <./src/nano.c 1305>
+ 1477 						get_kbinput: 634
+ 1478 						do_mouse: bool (), <./src/nano.c 1493>
+ 1479 							get_mouseinput: 698
+ 1480 							wenclose: <>
+ 1481 							no_more_space: 501
+ 1482 							actual_x: 184
+ 1483 							get_page_start: 222
+ 1484 							xplustabs: 220
+ 1485 							do_mark: void (), <./src/text.c 50>
+ 1486 								statusbar: 229
+ 1487 								edit_refresh: 319
+ 1488 							edit_redraw: 1383
+ 1489 						get_shortcut: 695
+ 1490 						get_toggle: const toggle * (), <./src/winio.c 1794>
+ 1491 							fprintf: <>
+ 1492 						is_ascii_cntrl_char: bool (), <./src/chars.c 124>
+ 1493 						statusbar: 229
+ 1494 						beep: <>
+ 1495 						ISSET: <>
+ 1496 						print_view_warning: void (), <./src/nano.c 521>
+ 1497 							statusbar: 229
+ 1498 						nrealloc: 645
+ 1499 						get_key_buffer_len: 654
+ 1500 						do_verbatim_input: void (), <./src/text.c 2425>
+ 1501 							statusbar: 229
+ 1502 							get_verbatim_kbinput: 927
+ 1503 							ISSET: <>
+ 1504 							do_cursorpos: 1468
+ 1505 							blank_statusbar: 234
+ 1506 							wnoutrefresh: <>
+ 1507 							charalloc: <>
+ 1508 							free: <>
+ 1509 							do_output: void (), <./src/nano.c 1546>
+ 1510 								charalloc: <>
+ 1511 								mb_cur_max: 193
+ 1512 								assert: <>
+ 1513 								strlen: <>
+ 1514 								do_enter: void (), <./src/text.c 365>
+ 1515 									make_new_node: 432
+ 1516 									assert: <>
+ 1517 									ISSET: <>
+ 1518 									indent_length: 873
+ 1519 									charalloc: <>
+ 1520 									strlen: <>
+ 1521 									strcpy: <>
+ 1522 									strncpy: <>
+ 1523 									mbstrlen: 409
+ 1524 									null_at: 94
+ 1525 									splice_node: 462
+ 1526 									renumber: 459
+ 1527 									set_modified: 1297
+ 1528 									xplustabs: 220
+ 1529 									edit_refresh: 319
+ 1530 								parse_mbchar: 151
+ 1531 								is_ascii_cntrl_char: bool (), <./src/chars.c 124>
+ 1532 								ISSET: <>
+ 1533 								new_magicline: 1287
+ 1534 								charealloc: <>
+ 1535 								charmove: <>
+ 1536 								strncpy: <>
+ 1537 								set_modified: 1297
+ 1538 								do_wrap: bool (), <./src/text.c 525>
+ 1539 									assert: <>
+ 1540 									strlen: <>
+ 1541 									break_line: 626
+ 1542 									move_mbright: 630
+ 1543 									ISSET: <>
+ 1544 									indent_length: 873
+ 1545 									move_mbleft: 832
+ 1546 									is_blank_mbchar: 400
+ 1547 									charealloc: <>
+ 1548 									mbstrnlen: 410
+ 1549 									charalloc: <>
+ 1550 									strncpy: <>
+ 1551 									strcat: <>
+ 1552 									null_at: 94
+ 1553 									free: <>
+ 1554 									new_magicline: 1287
+ 1555 									splice_node: 462
+ 1556 									make_new_node: 432
+ 1557 									renumber: 459
+ 1558 									xplustabs: 220
+ 1559 								free: <>
+ 1560 								xplustabs: 220
+ 1561 								edit_refresh: 319
+ 1562 								update_line: 323
+ 1563 						wrap_reset: void (), <./src/text.c 517>
+ 1564 						charalloc: <>
+ 1565 						do_output: 1509
+ 1566 						free: <>
+ 1567 						do_suspend: 565
+ 1568 						do_cut_text_void: void (), <./src/cut.c 222>
+ 1569 							do_cut_text: void (), <./src/cut.c 115>
+ 1570 								ISSET: <>
+ 1571 								assert: <>
+ 1572 								free_filestruct: 1293
+ 1573 								fprintf: <>
+ 1574 								strlen: <>
+ 1575 								SET: <>
+ 1576 								cut_to_eof: void (), <./src/cut.c 103>
+ 1577 									move_to_filestruct: 1403
+ 1578 									strlen: <>
+ 1579 								cut_marked: void (), <./src/cut.c 60>
+ 1580 									mark_order: 342
+ 1581 									move_to_filestruct: 1403
+ 1582 									xplustabs: 220
+ 1583 								cut_to_eol: void (), <./src/cut.c 78>
+ 1584 									strlen: <>
+ 1585 									assert: <>
+ 1586 									move_to_filestruct: 1403
+ 1587 									xplustabs: 220
+ 1588 								cut_line: void (), <./src/cut.c 46>
+ 1589 									move_to_filestruct: 1403
+ 1590 									strlen: <>
+ 1591 								copy_from_filestruct: 1419
+ 1592 								xplustabs: 220
+ 1593 								UNSET: <>
+ 1594 								set_modified: 1297
+ 1595 								edit_refresh: 319
+ 1596 								dump_filestruct: 734
+ 1597 						do_copy_text: void (), <./src/cut.c 234>
+ 1598 							do_cut_text: 1569
+ 1599 						do_cut_till_end: void (), <./src/cut.c 240>
+ 1600 							do_cut_text: 1569
+ 1601 						do_toggle: void (), <./src/nano.c 1150>
+ 1602 							TOGGLE: <>
+ 1603 							mouse_init: void (), <./src/nano.c 684>
+ 1604 								ISSET: <>
+ 1605 								enable_mouse_support: 579
+ 1606 								disable_mouse_support: 566
+ 1607 							window_init: 500
+ 1608 							total_refresh: 530
+ 1609 							signal_init: 510
+ 1610 							titlebar: 147
+ 1611 							edit_refresh: 319
+ 1612 							ISSET: <>
+ 1613 							statusbar: 229
+ 1614 						cutbuffer_reset: void (), <./src/cut.c 36>
+ 1615 					partition_filestruct: 1277
+ 1616 					free_filestruct: 1293
+ 1617 					unpartition_filestruct: 127
+ 1618 					titlebar: 147
+ 1619 					unget_kbinput: 704
+ 1620 					blank_statusbar: 234
+ 1621 			ISSET: <>
+ 1622 			do_insertfile_void: void (), <./src/files.c 913>
+ 1623 				ISSET: <>
+ 1624 				statusbar: 229
+ 1625 				do_insertfile: void (), <./src/files.c 683>
+ 1626 					mallocstrcpy: 12
+ 1627 					ISSET: <>
+ 1628 					do_prompt: 740
+ 1629 					edit_refresh: 319
+ 1630 					strcmp: <>
+ 1631 					statusbar: 229
+ 1632 					TOGGLE: <>
+ 1633 					do_browse_from: 1053
+ 1634 					free: <>
+ 1635 					partition_filestruct: 1277
+ 1636 					sunder: 298
+ 1637 					align: 65
+ 1638 					open_buffer: void (), <./src/files.c 102>
+ 1639 						ISSET: <>
+ 1640 						assert: <>
+ 1641 						check_operating_dir: 224
+ 1642 						statusbar: 229
+ 1643 						open_file: int (), <./src/files.c 585>
+ 1644 							assert: <>
+ 1645 							get_full_path: 61
+ 1646 							mallocstrcpy: 12
+ 1647 							stat: <>
+ 1648 							statusbar: 229
+ 1649 							beep: <>
+ 1650 							S_ISDIR: <>
+ 1651 							S_ISCHR: <>
+ 1652 							S_ISBLK: <>
+ 1653 							open: <>
+ 1654 							strerror: <>
+ 1655 							fdopen: <>
+ 1656 							close: <>
+ 1657 							free: <>
+ 1658 						make_new_buffer: void (), <./src/files.c 37>
+ 1659 							make_new_opennode: openfilestruct * (), <./src/nano.c 450>
+ 1660 								nmalloc: 119
+ 1661 							splice_opennode: void (), <./src/nano.c 465>
+ 1662 								assert: <>
+ 1663 							initialize_buffer: void (), <./src/files.c 56>
+ 1664 								assert: <>
+ 1665 								mallocstrcpy: 12
+ 1666 								initialize_buffer_text: void (), <./src/files.c 86>
+ 1667 									assert: <>
+ 1668 									make_new_node: 432
+ 1669 									mallocstrcpy: 12
+ 1670 						mallocstrcpy: 12
+ 1671 						read_file: void (), <./src/files.c 341>
+ 1672 							assert: <>
+ 1673 							charalloc: <>
+ 1674 							getc: <>
+ 1675 							ISSET: <>
+ 1676 							read_line: filestruct * (), <./src/files.c 292>
+ 1677 								nmalloc: 119
+ 1678 								unsunder: 301
+ 1679 								assert: <>
+ 1680 								strlen: <>
+ 1681 								mallocstrcpy: 12
+ 1682 								ISSET: <>
+ 1683 							charealloc: <>
+ 1684 							ferror: <>
+ 1685 							nperror: void (), <./src/utils.c 352>
+ 1686 								endwin: <>
+ 1687 								perror: <>
+ 1688 								doupdate: <>
+ 1689 							fclose: <>
+ 1690 							free: <>
+ 1691 							open_buffer: 1638
+ 1692 							strlen: <>
+ 1693 							charmove: <>
+ 1694 							strncpy: <>
+ 1695 							renumber: 459
+ 1696 							get_totsize: 1406
+ 1697 							new_magicline: 1287
+ 1698 							xplustabs: 220
+ 1699 							statusbar: 229
+ 1700 							P_: <>
+ 1701 						stat: <>
+ 1702 						nmalloc: 119
+ 1703 						color_update: 304
+ 1704 					execute_command: bool (), <./src/text.c 430>
+ 1705 						pipe: <>
+ 1706 						statusbar: 229
+ 1707 						getenv: <>
+ 1708 						fork: <>
+ 1709 						close: <>
+ 1710 						dup2: <>
+ 1711 						fileno: <>
+ 1712 						execl: <>
+ 1713 						tail: 30
+ 1714 						exit: <>
+ 1715 						enable_signals: void (), <./src/nano.c 1226>
+ 1716 							tcgetattr: <>
+ 1717 							tcsetattr: <>
+ 1718 						sigaction: <>
+ 1719 						nperror: 1685
+ 1720 						cancel_command: RETSIGTYPE (), <./src/text.c 423>
+ 1721 							kill: <>
+ 1722 							nperror: 1685
+ 1723 						fdopen: <>
+ 1724 						read_file: 1671
+ 1725 						wait: <>
+ 1726 						disable_signals: 490
+ 1727 					mallocstrassn: 1058
+ 1728 					real_dir_from_tilde: 74
+ 1729 					display_buffer: 1306
+ 1730 					strlen: <>
+ 1731 					unpartition_filestruct: 127
+ 1732 					renumber: 459
+ 1733 					set_modified: 1297
+ 1734 				display_main_list: 1317
+ 1735 			do_search: void (), <./src/search.c 420>
+ 1736 				search_init: int (), <./src/search.c 135>
+ 1737 					mallocstrcpy: 12
+ 1738 					search_init_globals: 1141
+ 1739 					display_string: 189
+ 1740 					charalloc: <>
+ 1741 					strlen: <>
+ 1742 					sprintf: <>
+ 1743 					strlenpt: 148
+ 1744 					free: <>
+ 1745 					do_prompt: 740
+ 1746 					edit_refresh: 319
+ 1747 					ISSET: <>
+ 1748 					statusbar: 229
+ 1749 					regexp_init: 1153
+ 1750 					TOGGLE: <>
+ 1751 					do_gotolinecolumn: void (), <./src/search.c 974>
+ 1752 						mallocstrcpy: 12
+ 1753 						do_prompt: 740
+ 1754 						edit_refresh: 319
+ 1755 						free: <>
+ 1756 						statusbar: 229
+ 1757 						display_main_list: 1317
+ 1758 						search_init: 1736
+ 1759 						do_search: 1735
+ 1760 						parse_line_column: bool (), <./src/utils.c 89>
+ 1761 							assert: <>
+ 1762 							strchr: <>
+ 1763 							parse_num: 18
+ 1764 							mallocstrncpy: 13
+ 1765 							free: <>
+ 1766 						actual_x: 184
+ 1767 						edit_update: 320
+ 1768 				search_replace_abort: void (), <./src/search.c 105>
+ 1769 					display_main_list: 1317
+ 1770 					edit_refresh: 319
+ 1771 					regexp_cleanup: 1164
+ 1772 				do_replace: void (), <./src/search.c 872>
+ 1773 					ISSET: <>
+ 1774 					print_view_warning: 1496
+ 1775 					search_replace_abort: 1768
+ 1776 					search_init: 1736
+ 1777 					do_search: 1735
+ 1778 					do_replace: 1772
+ 1779 					update_history: 450
+ 1780 					mallocstrcpy: 12
+ 1781 					do_prompt: 740
+ 1782 					edit_refresh: 319
+ 1783 					statusbar: 229
+ 1784 					do_replace_loop: ssize_t (), <./src/search.c 663>
+ 1785 						mark_order: 342
+ 1786 						partition_filestruct: 1277
+ 1787 						edit_refresh: 319
+ 1788 						findnextstr_wrap_reset: void (), <./src/search.c 414>
+ 1789 						findnextstr: bool (), <./src/search.c 265>
+ 1790 							ISSET: <>
+ 1791 							strstrwrapper: 1174
+ 1792 							strlen: <>
+ 1793 							mallocstrncpy: 13
+ 1794 							is_whole_word: bool (), <./src/utils.c 259>
+ 1795 								charalloc: <>
+ 1796 								mb_cur_max: 193
+ 1797 								strlen: <>
+ 1798 								assert: <>
+ 1799 								parse_mbchar: 151
+ 1800 								move_mbleft: 832
+ 1801 								is_word_mbchar: 844
+ 1802 								free: <>
+ 1803 							free: <>
+ 1804 							not_found_msg: 1200
+ 1805 							statusbar: 229
+ 1806 							xplustabs: 220
+ 1807 						xplustabs: 220
+ 1808 						display_string: 189
+ 1809 						strnlenpt: 149
+ 1810 						curs_set: <>
+ 1811 						do_replace_highlight: void (), <./src/winio.c 3203>
+ 1812 							xplustabs: 220
+ 1813 							strlenpt: 148
+ 1814 							get_page_start: 222
+ 1815 							assert: <>
+ 1816 							reset_cursor: 218
+ 1817 							wattron: <>
+ 1818 							waddch: <>
+ 1819 							waddnstr: <>
+ 1820 							actual_x: 184
+ 1821 							wattroff: <>
+ 1822 						do_yesno_prompt: 715
+ 1823 						free: <>
+ 1824 						ISSET: <>
+ 1825 						regexp_bol_or_eol: bool (), <./src/utils.c 249>
+ 1826 							regexec: <>
+ 1827 						replace_line: char * (), <./src/search.c 613>
+ 1828 							ISSET: <>
+ 1829 							replace_regexp: int (), <./src/search.c 564>
+ 1830 								strlen: <>
+ 1831 								strncpy: <>
+ 1832 							strlen: <>
+ 1833 							charalloc: <>
+ 1834 							strncpy: <>
+ 1835 							strcpy: <>
+ 1836 							assert: <>
+ 1837 							strcat: <>
+ 1838 						strlen: <>
+ 1839 						update_line: 323
+ 1840 						set_modified: 1297
+ 1841 						unpartition_filestruct: 127
+ 1842 						new_magicline: 1287
+ 1843 					P_: <>
+ 1844 				do_search: 1735
+ 1845 				mallocstrcpy: 12
+ 1846 				update_history: 450
+ 1847 				findnextstr_wrap_reset: 1788
+ 1848 				findnextstr: 1789
+ 1849 				ISSET: <>
+ 1850 				regexp_bol_or_eol: 1825
+ 1851 				statusbar: 229
+ 1852 				xplustabs: 220
+ 1853 				edit_redraw: 1383
+ 1854 			do_page_up: void (), <./src/move.c 57>
+ 1855 				do_first_line: void (), <./src/move.c 30>
+ 1856 					edit_redraw: 1383
+ 1857 				ISSET: <>
+ 1858 				actual_x: 184
+ 1859 				edit_scroll: 1389
+ 1860 			do_page_down: void (), <./src/move.c 92>
+ 1861 				do_last_line: void (), <./src/move.c 43>
+ 1862 					strlen: <>
+ 1863 					xplustabs: 220
+ 1864 					edit_redraw: 1383
+ 1865 				ISSET: <>
+ 1866 				actual_x: 184
+ 1867 				edit_scroll: 1389
+ 1868 			do_cut_text_void: 1568
+ 1869 			do_uncut_text: void (), <./src/cut.c 247>
+ 1870 				assert: <>
+ 1871 				copy_from_filestruct: 1419
+ 1872 				xplustabs: 220
+ 1873 				set_modified: 1297
+ 1874 				edit_refresh: 319
+ 1875 				dump_filestruct_reverse: void (), <./src/utils.c 606>
+ 1876 					fprintf: <>
+ 1877 			do_cursorpos_void: void (), <./src/winio.c 3196>
+ 1878 				do_cursorpos: 1468
+ 1879 			do_spell: void (), <./src/text.c 2309>
+ 1880 				safe_tempfile: 279
+ 1881 				statusbar: 229
+ 1882 				strerror: <>
+ 1883 				write_marked_file: 1274
+ 1884 				write_file: 145
+ 1885 				free: <>
+ 1886 				do_alt_speller: const char * (), <./src/text.c 2116>
+ 1887 					endwin: <>
+ 1888 					nmalloc: 119
+ 1889 					strtok: <>
+ 1890 					nrealloc: 645
+ 1891 					fork: <>
+ 1892 					execvp: <>
+ 1893 					exit: <>
+ 1894 					allow_pending_sigwinch: 559
+ 1895 					wait: <>
+ 1896 					doupdate: <>
+ 1897 					terminal_init: 483
+ 1898 					curs_set: <>
+ 1899 					window_init: 500
+ 1900 					WIFEXITED: <>
+ 1901 					WEXITSTATUS: <>
+ 1902 					charalloc: <>
+ 1903 					strlen: <>
+ 1904 					sprintf: <>
+ 1905 					mark_order: 342
+ 1906 					partition_filestruct: 1277
+ 1907 					ISSET: <>
+ 1908 					get_totsize: 1406
+ 1909 					replace_buffer: void (), <./src/files.c 174>
+ 1910 						assert: <>
+ 1911 						open_file: 1643
+ 1912 						free_filestruct: 1293
+ 1913 						initialize_buffer_text: 1666
+ 1914 						read_file: 1671
+ 1915 					remove_magicline: 1291
+ 1916 					unpartition_filestruct: 127
+ 1917 					renumber: 459
+ 1918 					do_gotopos: void (), <./src/search.c 1056>
+ 1919 						do_gotolinecolumn: 1751
+ 1920 						update_line: 323
+ 1921 					set_modified: 1297
+ 1922 				do_int_speller: const char * (), <./src/text.c 1935>
+ 1923 					pipe: <>
+ 1924 					statusbar: 229
+ 1925 					fork: <>
+ 1926 					close: <>
+ 1927 					open: <>
+ 1928 					dup2: <>
+ 1929 					execlp: <>
+ 1930 					exit: <>
+ 1931 					fpathconf: <>
+ 1932 					charalloc: <>
+ 1933 					read: <>
+ 1934 					charealloc: <>
+ 1935 					do_int_spell_fix: bool (), <./src/text.c 1765>
+ 1936 						ISSET: <>
+ 1937 						SET: <>
+ 1938 						UNSET: <>
+ 1939 						search_init_globals: 1141
+ 1940 						mallocstrcpy: 12
+ 1941 						mark_order: 342
+ 1942 						partition_filestruct: 1277
+ 1943 						findnextstr_wrap_reset: 1788
+ 1944 						findnextstr: 1789
+ 1945 						is_whole_word: 1794
+ 1946 						xplustabs: 220
+ 1947 						display_string: 189
+ 1948 						strnlenpt: 149
+ 1949 						edit_refresh: 319
+ 1950 						do_replace_highlight: 1811
+ 1951 						do_prompt: 740
+ 1952 						free: <>
+ 1953 						strcmp: <>
+ 1954 						do_replace_loop: 1784
+ 1955 						remove_magicline: 1291
+ 1956 						unpartition_filestruct: 127
+ 1957 					free: <>
+ 1958 					search_replace_abort: 1768
+ 1959 					edit_refresh: 319
+ 1960 					waitpid: <>
+ 1961 					WIFEXITED: <>
+ 1962 					WEXITSTATUS: <>
+ 1963 				unlink: <>
+ 1964 				total_refresh: 530
+ 1965 			do_gotolinecolumn_void: void (), <./src/search.c 1046>
+ 1966 				do_gotolinecolumn: 1751
+ 1967 			do_replace: 1772
+ 1968 			do_mark: 1485
+ 1969 			do_research: void (), <./src/search.c 502>
+ 1970 				search_init_globals: 1141
+ 1971 				ISSET: <>
+ 1972 				regexp_init: 1153
+ 1973 				findnextstr_wrap_reset: 1788
+ 1974 				findnextstr: 1789
+ 1975 				regexp_bol_or_eol: 1825
+ 1976 				statusbar: 229
+ 1977 				xplustabs: 220
+ 1978 				edit_redraw: 1383
+ 1979 				search_replace_abort: 1768
+ 1980 			do_copy_text: 1597
+ 1981 			do_indent_void: void (), <./src/text.c 351>
+ 1982 				do_indent: void (), <./src/text.c 199>
+ 1983 					assert: <>
+ 1984 					mark_order: 342
+ 1985 					charalloc: <>
+ 1986 					ISSET: <>
+ 1987 					charset: <>
+ 1988 					strlen: <>
+ 1989 					indent_length: 873
+ 1990 					charealloc: <>
+ 1991 					charmove: <>
+ 1992 					strncpy: <>
+ 1993 					new_magicline: 1287
+ 1994 					strnlenpt: 149
+ 1995 					actual_x: 184
+ 1996 					null_at: 94
+ 1997 					free: <>
+ 1998 					set_modified: 1297
+ 1999 					edit_refresh: 319
+ 2000 			do_unindent: void (), <./src/text.c 358>
+ 2001 				do_indent: 1982
+ 2002 			do_right: void (), <./src/move.c 629>
+ 2003 				assert: <>
+ 2004 				strlen: <>
+ 2005 				move_mbright: 630
+ 2006 				do_down_void: void (), <./src/move.c 592>
+ 2007 					do_down: void (), <./src/move.c 545>
+ 2008 						assert: <>
+ 2009 						actual_x: 184
+ 2010 						edit_scroll: 1389
+ 2011 						ISSET: <>
+ 2012 						need_vertical_update: 1384
+ 2013 						update_line: 323
+ 2014 				xplustabs: 220
+ 2015 				need_horizontal_update: bool (), <./src/winio.c 2807>
+ 2016 					get_page_start: 222
+ 2017 				update_line: 323
+ 2018 			do_left: void (), <./src/move.c 610>
+ 2019 				move_mbleft: 832
+ 2020 				do_up_void: void (), <./src/move.c 526>
+ 2021 					do_up: void (), <./src/move.c 474>
+ 2022 						assert: <>
+ 2023 						actual_x: 184
+ 2024 						edit_scroll: 1389
+ 2025 						ISSET: <>
+ 2026 						need_vertical_update: 1384
+ 2027 						update_line: 323
+ 2028 				strlen: <>
+ 2029 				xplustabs: 220
+ 2030 				need_horizontal_update: 2015
+ 2031 				update_line: 323
+ 2032 			do_next_word_void: void (), <./src/move.c 292>
+ 2033 				do_next_word: bool (), <./src/move.c 206>
+ 2034 					assert: <>
+ 2035 					charalloc: <>
+ 2036 					mb_cur_max: 193
+ 2037 					parse_mbchar: 151
+ 2038 					is_word_mbchar: 844
+ 2039 					free: <>
+ 2040 					xplustabs: 220
+ 2041 					edit_redraw: 1383
+ 2042 				ISSET: <>
+ 2043 			do_prev_word_void: void (), <./src/move.c 423>
+ 2044 				do_prev_word: bool (), <./src/move.c 301>
+ 2045 					assert: <>
+ 2046 					charalloc: <>
+ 2047 					mb_cur_max: 193
+ 2048 					parse_mbchar: 151
+ 2049 					is_word_mbchar: 844
+ 2050 					move_mbleft: 832
+ 2051 					strlen: <>
+ 2052 					free: <>
+ 2053 					xplustabs: 220
+ 2054 					edit_redraw: 1383
+ 2055 				ISSET: <>
+ 2056 			do_up_void: 2020
+ 2057 			do_down_void: 2006
+ 2058 			do_home: void (), <./src/move.c 433>
+ 2059 				ISSET: <>
+ 2060 				indent_length: 873
+ 2061 				xplustabs: 220
+ 2062 				need_horizontal_update: 2015
+ 2063 				update_line: 323
+ 2064 			do_end: void (), <./src/move.c 461>
+ 2065 				strlen: <>
+ 2066 				xplustabs: 220
+ 2067 				need_horizontal_update: 2015
+ 2068 				update_line: 323
+ 2069 			do_para_begin_void: void (), <./src/move.c 152>
+ 2070 				do_para_begin: 1396
+ 2071 			do_para_end_void: void (), <./src/move.c 195>
+ 2072 				do_para_end: 1367
+ 2073 			do_first_line: 1855
+ 2074 			do_last_line: 1861
+ 2075 			do_find_bracket: void (), <./src/search.c 1131>
+ 2076 				assert: <>
+ 2077 				mbstrlen: 409
+ 2078 				mbstrchr: 892
+ 2079 				statusbar: 229
+ 2080 				parse_mbchar: 151
+ 2081 				move_mbleft: 832
+ 2082 				move_mbright: 630
+ 2083 				charalloc: <>
+ 2084 				mb_cur_max: 193
+ 2085 				strncpy: <>
+ 2086 				null_at: 94
+ 2087 				find_bracket_match: bool (), <./src/search.c 1075>
+ 2088 					assert: <>
+ 2089 					mbstrlen: 409
+ 2090 					mbrevstrpbrk: 909
+ 2091 					mbstrpbrk: 916
+ 2092 					strlen: <>
+ 2093 					xplustabs: 220
+ 2094 				strncmp: <>
+ 2095 				edit_redraw: 1383
+ 2096 				free: <>
+ 2097 			do_scroll_up: void (), <./src/move.c 537>
+ 2098 				do_up: 2021
+ 2099 			do_scroll_down: void (), <./src/move.c 603>
+ 2100 				do_down: 2007
+ 2101 			switch_to_prev_buffer_void: void (), <./src/files.c 254>
+ 2102 				switch_to_prevnext_buffer: 1302
+ 2103 			switch_to_next_buffer_void: 1301
+ 2104 			do_verbatim_input: 1500
+ 2105 			do_tab: void (), <./src/text.c 165>
+ 2106 				ISSET: <>
+ 2107 				xplustabs: 220
+ 2108 				charalloc: <>
+ 2109 				charset: <>
+ 2110 				do_output: 1509
+ 2111 				free: <>
+ 2112 			do_enter: 1514
+ 2113 			do_delete: void (), <./src/text.c 67>
+ 2114 				assert: <>
+ 2115 				strlen: <>
+ 2116 				xplustabs: 220
+ 2117 				parse_mbchar: 151
+ 2118 				charmove: <>
+ 2119 				null_at: 94
+ 2120 				charealloc: <>
+ 2121 				strcpy: <>
+ 2122 				unlink_node: 454
+ 2123 				delete_node: 456
+ 2124 				renumber: 459
+ 2125 				ISSET: <>
+ 2126 				new_magicline: 1287
+ 2127 				set_modified: 1297
+ 2128 				edit_refresh: 319
+ 2129 				update_line: 323
+ 2130 			do_backspace: void (), <./src/text.c 154>
+ 2131 				do_left: 2018
+ 2132 				do_delete: 2113
+ 2133 			do_cut_till_end: 1599
+ 2134 			do_full_justify: void (), <./src/text.c 1756>
+ 2135 				do_justify: 1357
+ 2136 			do_wordlinechar_count: void (), <./src/text.c 2360>
+ 2137 				mark_order: 342
+ 2138 				partition_filestruct: 1277
+ 2139 				do_next_word: 2033
+ 2140 				get_totsize: 1406
+ 2141 				unpartition_filestruct: 127
+ 2142 				statusbar: 229
+ 2143 			total_refresh: 530
+ 2144 			do_browser_help: 1134
+ 2145 			do_first_file: void (), <./src/browser.c 1057>
+ 2146 			do_last_file: void (), <./src/browser.c 1063>
+ 2147 			toggle_init: void (), <./src/global.c 1268>
+ 2148 				toggle_init_one: void (), <./src/global.c 1240>
+ 2149 					nmalloc: 119
+ 2150 				IFTHELP: <>
+ 2151 				N_: <>
+ 2152 				ISSET: <>
+ 2153 		mouse_init: 1603
+ 2154 		parse_line_column: 1760
+ 2155 		open_buffer: 1638
+ 2156 		do_gotolinecolumn: 1751
+ 2157 		display_main_list: 1317
+ 2158 		display_buffer: 1306
+ 2159 		reset_cursor: 218
+ 2160 		sigsetjmp: <>
+ 2161 		do_prompt_abort: void (), <./src/prompt.c 1253>
+ 2162 		get_key_buffer_len: 654
+ 2163 		do_cursorpos: 1468
+ 2164 		do_input: 1476
+ 2165 		assert: <>

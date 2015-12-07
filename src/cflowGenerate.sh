@@ -29,6 +29,11 @@ error_checklist(){
 # Error checking, input validation
 error_checklist
 
+####################
+# MAIN STARTS HERE #
+####################
+rm  $CFLOW_OUTPUT_DIRECTORY/*
+
 main_dir=`pwd`
 cd $CFLOW_INPUT_PROJECT_DIRECTORY
 

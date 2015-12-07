@@ -1,0 +1,297 @@
+    1 	main: int (), <./bzip2/dlltest.c 69>
+    2 		configError: void (), <./bzip2/bzip2.c 888>
+    3 			fprintf: <>
+    4 			setExit: void (), <./bzip2/bzip2.c 655>
+    5 			exit: <>
+    6 		signal: <>
+    7 		mySIGSEGVorSIGBUScatcher: void (), <./bzip2/bzip2.c 820>
+    8 			fprintf: <>
+    9 			showFileNames: void (), <./bzip2/bzip2.c 678>
+   10 				fprintf: <>
+   11 			cleanUpAndFail: void (), <./bzip2/bzip2.c 691>
+   12 				MY_STAT: <>
+   13 				fprintf: <>
+   14 				fclose: <>
+   15 				remove: <>
+   16 				setExit: 4
+   17 				exit: <>
+   18 			cadvise: void (), <./bzip2/bzip2.c 663>
+   19 				fprintf: <>
+   20 		copyFileName: void (), <./bzip2/bzip2.c 923>
+   21 			strlen: <>
+   22 			fprintf: <>
+   23 			setExit: 4
+   24 			exit: <>
+   25 			strncpy: <>
+   26 		addFlagsFromEnvVar: void (), <./bzip2/bzip2.c 1778>
+   27 			getenv: <>
+   28 			isspace: <>
+   29 			APPEND_FLAG: <>
+   30 		APPEND_FILESPEC: <>
+   31 		ISFLAG: <>
+   32 		strlen: <>
+   33 		strstr: <>
+   34 		license: void (), <./bzip2/bzip2.c 1631>
+   35 			fprintf: <>
+   36 			BZ2_bzlibVersion: <>
+   37 		usage: void (), <./bzip2/bzip2.c 1656>
+   38 			fprintf: <>
+   39 			BZ2_bzlibVersion: <>
+   40 		exit: <>
+   41 		fprintf: <>
+   42 		redundant: void (), <./bzip2/bzip2.c 1700>
+   43 			fprintf: <>
+   44 		strncmp: <>
+   45 		mySignalCatcher: void (), <./bzip2/bzip2.c 809>
+   46 			fprintf: <>
+   47 			cleanUpAndFail: 11
+   48 		compress: void (), <./bzip2/bzip2.c 1163>
+   49 			panic: void (), <./bzip2/bzip2.c 750>
+   50 				fprintf: <>
+   51 				showFileNames: 9
+   52 				cleanUpAndFail: 11
+   53 			copyFileName: 20
+   54 			strlcat: <>
+   55 			containsDubiousChars: Bool (), <./bzip2/bzip2.c 1112>
+   56 			fprintf: <>
+   57 			setExit: 4
+   58 			fileExists: Bool (), <./bzip2/bzip2.c 944>
+   59 				fopen: <>
+   60 				fclose: <>
+   61 			strerror: <>
+   62 			hasSuffix: Bool (), <./bzip2/bzip2.c 1139>
+   63 				strlen: <>
+   64 				strcmp: <>
+   65 			MY_STAT: <>
+   66 			MY_S_ISDIR: <>
+   67 			notAStandardFile: Bool (), <./bzip2/bzip2.c 985>
+   68 				MY_LSTAT: <>
+   69 				MY_S_ISREG: <>
+   70 			remove: <>
+   71 			countHardLinks: Int32 (), <./bzip2/bzip2.c 1002>
+   72 				MY_LSTAT: <>
+   73 			saveInputFileMetaInfo: void (), <./bzip2/bzip2.c 1042>
+   74 				MY_STAT: <>
+   75 				ERROR_IF_NOT_ZERO: <>
+   76 			isatty: <>
+   77 			fileno: <>
+   78 			fopen: <>
+   79 			fclose: <>
+   80 			fopen_output_safely: FILE * (), <./bzip2/bzip2.c 964>
+   81 				open: <>
+   82 				fdopen: <>
+   83 				close: <>
+   84 				fopen: <>
+   85 			pad: void (), <./bzip2/bzip2.c 912>
+   86 				strlen: <>
+   87 				fprintf: <>
+   88 			fflush: <>
+   89 			compressStream: void (), <./bzip2/bzip2.c 333>
+   90 				SET_BINARY_MODE: <>
+   91 				ferror: <>
+   92 				BZ2_bzWriteOpen: <>
+   93 				fprintf: <>
+   94 				myfeof: Bool (), <./bzip2/bzip2.c 322>
+   95 					fgetc: <>
+   96 					ungetc: <>
+   97 				fread: <>
+   98 				BZ2_bzWrite: <>
+   99 				BZ2_bzWriteClose64: <>
+  100 				fflush: <>
+  101 				fileno: <>
+  102 				applySavedFileAttrToOutputFile: void (), <./bzip2/bzip2.c 1090>
+  103 					fchmod: <>
+  104 					ERROR_IF_NOT_ZERO: <>
+  105 					fchown: <>
+  106 					copyfile: <>
+  107 					clear_type_and_creator: void (), <./bzip2/bzip2.c 1070>
+  108 						memset: <>
+  109 						getattrlist: <>
+  110 						setattrlist: <>
+  111 				fclose: <>
+  112 				uInt64_from_UInt32s: void (), <./bzip2/bzip2.c 242>
+  113 				uInt64_to_double: double (), <./bzip2/bzip2.c 256>
+  114 				uInt64_toAscii: void (), <./bzip2/bzip2.c 299>
+  115 					uInt64_qrm10: Int32 (), <./bzip2/bzip2.c 281>
+  116 					uInt64_isZero: Bool (), <./bzip2/bzip2.c 270>
+  117 				configError: 2
+  118 				outOfMemory: void (), <./bzip2/bzip2.c 876>
+  119 					fprintf: <>
+  120 					showFileNames: 9
+  121 					cleanUpAndFail: 11
+  122 				ioError: void (), <./bzip2/bzip2.c 795>
+  123 					fprintf: <>
+  124 					perror: <>
+  125 					showFileNames: 9
+  126 					cleanUpAndFail: 11
+  127 				panic: 49
+  128 			applySavedTimeInfoToOutputFile: void (), <./bzip2/bzip2.c 1054>
+  129 				utime: <>
+  130 				ERROR_IF_NOT_ZERO: <>
+  131 			ERROR_IF_NOT_ZERO: <>
+  132 		uncompress: void (), <./bzip2/bzip2.c 1344>
+  133 			panic: 49
+  134 			copyFileName: 20
+  135 			mapSuffix: Bool (), <./bzip2/bzip2.c 1149>
+  136 				hasSuffix: 62
+  137 				strlen: <>
+  138 				strlcat: <>
+  139 			strlcat: <>
+  140 			containsDubiousChars: 55
+  141 			fprintf: <>
+  142 			setExit: 4
+  143 			fileExists: 58
+  144 			strerror: <>
+  145 			MY_STAT: <>
+  146 			MY_S_ISDIR: <>
+  147 			notAStandardFile: 67
+  148 			remove: <>
+  149 			countHardLinks: 71
+  150 			saveInputFileMetaInfo: 73
+  151 			isatty: <>
+  152 			fileno: <>
+  153 			fopen: <>
+  154 			fclose: <>
+  155 			fopen_output_safely: 80
+  156 			pad: 85
+  157 			fflush: <>
+  158 			uncompressStream: Bool (), <./bzip2/bzip2.c 437>
+  159 				SET_BINARY_MODE: <>
+  160 				ferror: <>
+  161 				BZ2_bzReadOpen: <>
+  162 				BZ2_bzRead: <>
+  163 				fwrite: <>
+  164 				BZ2_bzReadGetUnused: <>
+  165 				panic: 49
+  166 				BZ2_bzReadClose: <>
+  167 				myfeof: 94
+  168 				fileno: <>
+  169 				applySavedFileAttrToOutputFile: 102
+  170 				fclose: <>
+  171 				fflush: <>
+  172 				fprintf: <>
+  173 				rewind: <>
+  174 				fread: <>
+  175 				configError: 2
+  176 				ioError: 122
+  177 				crcError: void (), <./bzip2/bzip2.c 765>
+  178 					fprintf: <>
+  179 					showFileNames: 9
+  180 					cadvise: 18
+  181 					cleanUpAndFail: 11
+  182 				outOfMemory: 118
+  183 				compressedStreamEOF: void (), <./bzip2/bzip2.c 778>
+  184 					fprintf: <>
+  185 					perror: <>
+  186 					showFileNames: 9
+  187 					cadvise: 18
+  188 					cleanUpAndFail: 11
+  189 			applySavedTimeInfoToOutputFile: 128
+  190 			ERROR_IF_NOT_ZERO: <>
+  191 		setExit: 4
+  192 		testf: void (), <./bzip2/bzip2.c 1542>
+  193 			panic: 49
+  194 			copyFileName: 20
+  195 			containsDubiousChars: 55
+  196 			fprintf: <>
+  197 			setExit: 4
+  198 			fileExists: 58
+  199 			strerror: <>
+  200 			MY_STAT: <>
+  201 			MY_S_ISDIR: <>
+  202 			isatty: <>
+  203 			fileno: <>
+  204 			fopen: <>
+  205 			pad: 85
+  206 			fflush: <>
+  207 			testStream: Bool (), <./bzip2/bzip2.c 558>
+  208 				SET_BINARY_MODE: <>
+  209 				ferror: <>
+  210 				BZ2_bzReadOpen: <>
+  211 				BZ2_bzRead: <>
+  212 				BZ2_bzReadGetUnused: <>
+  213 				panic: 49
+  214 				BZ2_bzReadClose: <>
+  215 				myfeof: 94
+  216 				fclose: <>
+  217 				fprintf: <>
+  218 				configError: 2
+  219 				ioError: 122
+  220 				outOfMemory: 118
+  221 		free: <>
+  222 		putchar: <>
+  223 		strlcpy: <>
+  224 		fopen: <>
+  225 		bsOpenReadStream: BitStream * (), <./bzip2/bzip2recover.c 154>
+  226 			malloc: <>
+  227 			mallocFail: void (), <./bzip2/bzip2recover.c 111>
+  228 				fprintf: <>
+  229 				exit: <>
+  230 		bsGetBit: Int32 (), <./bzip2/bzip2recover.c 199>
+  231 			getc: <>
+  232 			readError: void (), <./bzip2/bzip2recover.c 85>
+  233 				fprintf: <>
+  234 				perror: <>
+  235 				exit: <>
+  236 		tooManyBlocks: void (), <./bzip2/bzip2recover.c 123>
+  237 			fprintf: <>
+  238 			exit: <>
+  239 		bsClose: void (), <./bzip2/bzip2recover.c 218>
+  240 			putc: <>
+  241 			writeError: void (), <./bzip2/bzip2recover.c 98>
+  242 				fprintf: <>
+  243 				perror: <>
+  244 				exit: <>
+  245 			fflush: <>
+  246 			fclose: <>
+  247 			readError: 232
+  248 			free: <>
+  249 		bsPutBit: void (), <./bzip2/bzip2recover.c 180>
+  250 			putc: <>
+  251 			writeError: 241
+  252 		bsPutUChar: void (), <./bzip2/bzip2recover.c 242>
+  253 			bsPutBit: 249
+  254 		bsPutUInt32: void (), <./bzip2/bzip2recover.c 251>
+  255 			bsPutBit: 249
+  256 		strrchr: <>
+  257 		sprintf: <>
+  258 		strlcat: <>
+  259 		endsInBz2: Bool (), <./bzip2/bzip2recover.c 261>
+  260 			strlen: <>
+  261 		bsOpenWriteStream: BitStream * (), <./bzip2/bzip2recover.c 167>
+  262 			malloc: <>
+  263 			mallocFail: 227
+  264 		fread: <>
+  265 		BZ2_bzBuffToBuffCompress: <>
+  266 		assert: <>
+  267 		flip_bit: void (), <./bzip2/unzcrash.c 64>
+  268 		BZ2_bzBuffToBuffDecompress: <>
+  269 		srandom: <>
+  270 		setbuffer: <>
+  271 		random: <>
+  272 		printf: <>
+  273 		fflush: <>
+  274 		BZ2DLLLoadLibrary: int (), <./bzip2/dlltest.c 26>
+  275 			LoadLibrary: <>
+  276 			fprintf: <>
+  277 			BZ2_bzlibVersion: <>
+  278 			GetProcAddress: <>
+  279 			BZ2_bzopen: <>
+  280 			BZ2_bzdopen: <>
+  281 			BZ2_bzread: <>
+  282 			BZ2_bzwrite: <>
+  283 			BZ2_bzclose: <>
+  284 		BZ2_bzlibVersion: <>
+  285 		usage: void (), <./bzip2/dlltest.c 64>
+  286 			puts: <>
+  287 		perror: <>
+  288 		BZ2_bzdopen: <>
+  289 		fileno: <>
+  290 		BZ2_bzopen: <>
+  291 		BZ2_bzread: <>
+  292 		fwrite: <>
+  293 		BZ2_bzclose: <>
+  294 		fclose: <>
+  295 		BZ2_bzwrite: <>
+  296 		BZ2DLLFreeLibrary: int (), <./bzip2/dlltest.c 56>
+  297 			FreeLibrary: <>
