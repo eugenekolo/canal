@@ -1,0 +1,33 @@
+    1 	main: int (), <./daemon.c 54>
+    2 		getopt: <>
+    3 		usage: void (), <./daemon.c 270>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		pidfile_open: <>
+    7 		errx: <>
+    8 		err: <>
+    9 		pidfile_remove: <>
+   10 		daemon: <>
+   11 		warn: <>
+   12 		exit: <>
+   13 		pidfile_write: <>
+   14 		signal: <>
+   15 		dummy_sighandler: void (), <./daemon.c 219>
+   16 		sigemptyset: <>
+   17 		sigaddset: <>
+   18 		sigprocmask: <>
+   19 		madvise: <>
+   20 		fork: <>
+   21 		restrict_process: void (), <./daemon.c 225>
+   22 			getpwnam: <>
+   23 			errx: <>
+   24 			setusercontext: <>
+   25 		execvp: <>
+   26 		setproctitle: <>
+   27 		wait_child: int (), <./daemon.c 238>
+   28 			sigwait: <>
+   29 			warn: <>
+   30 			waitpid: <>
+   31 			kill: <>
+   32 			warnx: <>
+   33 		sleep: <>

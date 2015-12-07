@@ -1,0 +1,90 @@
+    1 	main: int (), <./pmcannotate.c 670>
+    2 		getopt: <>
+    3 		atof: <>
+    4 		usage: void (), <./pmcannotate.c 660>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		access: <>
+    8 		FATAL: <>
+    9 		bzero: <>
+   10 		mkstemp: <>
+   11 		snprintf: <>
+   12 		system: <>
+   13 		fopen: <>
+   14 		fgets: <>
+   15 		isspace: <>
+   16 		sscanf: <>
+   17 		general_findent: struct entry (), <./pmcannotate.c 488>
+   18 		entry_acqref: void (), <./pmcannotate.c 262>
+   19 		entry_create: struct entry (), <./pmcannotate.c 272>
+   20 		general_insertent: void (), <./pmcannotate.c 502>
+   21 			TAILQ_INSERT_TAIL: <>
+   22 		fclose: <>
+   23 		remove: <>
+   24 		fqueue_insertgen: int (), <./pmcannotate.c 460>
+   25 			TAILQ_FOREACH: <>
+   26 			fqueue_insertent: int (), <./pmcannotate.c 344>
+   27 				TAILQ_FOREACH: <>
+   28 				strcmp: <>
+   29 				TAILQ_REMOVE: <>
+   30 				TAILQ_INSERT_BEFORE: <>
+   31 				TAILQ_INSERT_TAIL: <>
+   32 				agg_create: struct aggent (), <./pmcannotate.c 152>
+   33 				TAILQ_EMPTY: <>
+   34 				TAILQ_INSERT_HEAD: <>
+   35 		fqueue_compact: void (), <./pmcannotate.c 308>
+   36 			TAILQ_FOREACH_SAFE: <>
+   37 			TAILQ_REMOVE: <>
+   38 		fqueue_getall: int (), <./pmcannotate.c 421>
+   39 			mkstemp: <>
+   40 			TAILQ_FOREACH: <>
+   41 			bzero: <>
+   42 			snprintf: <>
+   43 			system: <>
+   44 		asmparse: void (), <./pmcannotate.c 190>
+   45 			fgets: <>
+   46 			isspace: <>
+   47 			sscanf: <>
+   48 			fqueue_findent_by_name: struct aggent (), <./pmcannotate.c 407>
+   49 			ftell: <>
+   50 			TAILQ_FOREACH: <>
+   51 			fseek: <>
+   52 			printf: <>
+   53 			PERCSAMP: <>
+   54 			general_printasm: void (), <./pmcannotate.c 516>
+   55 				fgets: <>
+   56 				newfunction: inline int (), <./pmcannotate.c 134>
+   57 					isspace: <>
+   58 					sscanf: <>
+   59 				fseek: <>
+   60 				isasminline: inline int (), <./pmcannotate.c 117>
+   61 					sscanf: <>
+   62 					isspace: <>
+   63 				sscanf: <>
+   64 				general_findent: struct entry (), <./pmcannotate.c 488>
+   65 				printf: <>
+   66 		cparse: int (), <./pmcannotate.c 229>
+   67 			fgets: <>
+   68 			isspace: <>
+   69 			sscanf: <>
+   70 			fqueue_findent_by_name: struct aggent (), <./pmcannotate.c 407>
+   71 			ftell: <>
+   72 			TAILQ_FOREACH: <>
+   73 			fseek: <>
+   74 			printf: <>
+   75 			PERCSAMP: <>
+   76 			general_printc: int (), <./pmcannotate.c 551>
+   77 				fgets: <>
+   78 				fseek: <>
+   79 				strlen: <>
+   80 				newfunction: 56
+   81 				printblock: int (), <./pmcannotate.c 574>
+   82 					ftell: <>
+   83 					fgets: <>
+   84 					isasminline: 60
+   85 					newfunction: 56
+   86 					fseek: <>
+   87 					sscanf: <>
+   88 					general_findent: struct entry (), <./pmcannotate.c 488>
+   89 					printf: <>
+   90 					strlen: <>

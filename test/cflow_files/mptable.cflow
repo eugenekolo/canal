@@ -1,0 +1,64 @@
+    1 	main: int (), <./mptable.c 169>
+    2 		puts: <>
+    3 		printf: <>
+    4 		getopt: <>
+    5 		strcmp: <>
+    6 		usage: void (), <./mptable.c 159>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		open: <>
+   10 		err: <>
+   11 		apic_probe: void (), <./mptable.c 257>
+   12 			printf: <>
+   13 			seekEntry: void (), <./mptable.c 713>
+   14 				lseek: <>
+   15 				err: <>
+   16 			readEntry: void (), <./mptable.c 724>
+   17 				read: <>
+   18 				err: <>
+   19 			NEXT: <>
+   20 		fprintf: <>
+   21 		MPFloatingPointer: void (), <./mptable.c 401>
+   22 			mapEntry: void * (), <./mptable.c 731>
+   23 				mmap: <>
+   24 				err: <>
+   25 			printf: <>
+   26 			exit: <>
+   27 			pnstr: void (), <./mptable.c 925>
+   28 				strncpy: <>
+   29 				printf: <>
+   30 		MPConfigDefault: void (), <./mptable.c 470>
+   31 			printf: <>
+   32 		MPConfigTableHeader: void (), <./mptable.c 527>
+   33 			printf: <>
+   34 			exit: <>
+   35 			mapEntry: 22
+   36 			pnstr: 27
+   37 			puts: <>
+   38 			nitems: <>
+   39 			processorEntry: void (), <./mptable.c 742>
+   40 				printf: <>
+   41 			busEntry: void (), <./mptable.c 781>
+   42 				printf: <>
+   43 				pnstr: 27
+   44 				lookupBusType: int (), <./mptable.c 768>
+   45 					strcmp: <>
+   46 			ioApicEntry: void (), <./mptable.c 804>
+   47 				printf: <>
+   48 			intEntry: void (), <./mptable.c 832>
+   49 				printf: <>
+   50 			sasEntry: void (), <./mptable.c 857>
+   51 				printf: <>
+   52 			bhdEntry: void (), <./mptable.c 884>
+   53 				printf: <>
+   54 			cbasmEntry: void (), <./mptable.c 895>
+   55 				printf: <>
+   56 			fflush: <>
+   57 			open: <>
+   58 			write: <>
+   59 			close: <>
+   60 		doDmesg: void (), <./mptable.c 911>
+   61 			puts: <>
+   62 			printf: <>
+   63 			fflush: <>
+   64 			system: <>

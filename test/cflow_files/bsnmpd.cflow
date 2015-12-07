@@ -1,0 +1,742 @@
+    1 	main: int (), <./tools/bsnmptools/bsnmpget.c 1132>
+    2 		strrchr: <>
+    3 		fprintf: <>
+    4 		exit: <>
+    5 		strcmp: <>
+    6 		snmptool_init: int (), <./tools/libbsnmptools/bsnmptools.c 124>
+    7 			memset: <>
+    8 			SLIST_INIT: <>
+    9 			snmp_client_init: <>
+   10 			SET_MAXREP: <>
+   11 			add_filename: int32_t (), <./tools/libbsnmptools/bsnmptools.c 239>
+   12 				SLIST_FOREACH: <>
+   13 				strncmp: <>
+   14 				strlen: <>
+   15 				malloc: <>
+   16 				warnx: <>
+   17 				strerror: <>
+   18 				free: <>
+   19 				memset: <>
+   20 				asn_append_oid: <>
+   21 				strlcpy: <>
+   22 				SLIST_INSERT_HEAD: <>
+   23 			warnx: <>
+   24 			getenv: <>
+   25 			strlen: <>
+   26 			strcasecmp: <>
+   27 			strlcpy: <>
+   28 			malloc: <>
+   29 			strerror: <>
+   30 		snmptool_parse_options: int32_t (), <./tools/bsnmptools/bsnmpget.c 146>
+   31 			getopt: <>
+   32 			parse_authentication: int32_t (), <./tools/libbsnmptools/bsnmptools.c 486>
+   33 				assert: <>
+   34 				getsubopt1: int (), <./tools/libbsnmptools/bsnmptools.c 318>
+   35 					strchr: <>
+   36 					strcmp: <>
+   37 				warnx: <>
+   38 				strlen: <>
+   39 				strncasecmp: <>
+   40 				parse_ascii: int32_t (), <./tools/libbsnmptools/bsnmptools.c 447>
+   41 					strlen: <>
+   42 					strtoul: <>
+   43 					warnx: <>
+   44 			parse_skip_access: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1002>
+   45 				SET_ERRIGNORE: <>
+   46 			parse_buflen: int32_t (), <./tools/libbsnmptools/bsnmptools.c 910>
+   47 				assert: <>
+   48 				strtoul: <>
+   49 				warnx: <>
+   50 				strerror: <>
+   51 			parse_discovery: int32_t (), <./tools/libbsnmptools/bsnmptools.c 946>
+   52 				SET_EDISCOVER: <>
+   53 			parse_debug: int32_t (), <./tools/libbsnmptools/bsnmptools.c 939>
+   54 			parse_errors: int32_t (), <./tools/libbsnmptools/bsnmptools.c 995>
+   55 				SET_RETRY: <>
+   56 			usage: void (), <./tools/bsnmptools/bsnmpget.c 66>
+   57 				fprintf: <>
+   58 			parse_context: int32_t (), <./tools/libbsnmptools/bsnmptools.c 594>
+   59 				assert: <>
+   60 				getsubopt1: 34
+   61 				warnx: <>
+   62 				strlcpy: <>
+   63 				parse_ascii: 40
+   64 			parse_include: int32_t (), <./tools/libbsnmptools/bsnmptools.c 721>
+   65 				assert: <>
+   66 				memset: <>
+   67 				getsubopt1: 34
+   68 				warnx: <>
+   69 				snmp_parse_numoid: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1281>
+   70 					warnx: <>
+   71 					strtoul: <>
+   72 				parse_path: int32_t (), <./tools/libbsnmptools/bsnmptools.c 362>
+   73 					isvalid_fchar: char (), <./tools/libbsnmptools/bsnmptools.c 294>
+   74 						isalpha: <>
+   75 						isdigit: <>
+   76 						isascii: <>
+   77 						isprint: <>
+   78 						warnx: <>
+   79 					warnx: <>
+   80 				strlcpy: <>
+   81 				parse_flist: int32_t (), <./tools/libbsnmptools/bsnmptools.c 387>
+   82 					memset: <>
+   83 					isalpha: <>
+   84 					strlcpy: <>
+   85 					strlen: <>
+   86 					isvalid_fchar: 73
+   87 					isascii: <>
+   88 					isprint: <>
+   89 					warnx: <>
+   90 					add_filename: 11
+   91 			parse_file: int32_t (), <./tools/libbsnmptools/bsnmptools.c 710>
+   92 				assert: <>
+   93 				parse_flist: 81
+   94 			parse_local_key: int32_t (), <./tools/libbsnmptools/bsnmptools.c 954>
+   95 				SET_LOCALKEY: <>
+   96 			parse_local_path: int32_t (), <./tools/libbsnmptools/bsnmptools.c 896>
+   97 				assert: <>
+   98 				warnx: <>
+   99 				strlcpy: <>
+  100 			parse_max_repetitions: int32_t (), <./tools/bsnmptools/bsnmpget.c 89>
+  101 				assert: <>
+  102 				strtoul: <>
+  103 				warnx: <>
+  104 				SET_MAXREP: <>
+  105 			parse_non_repeaters: int32_t (), <./tools/bsnmptools/bsnmpget.c 108>
+  106 				assert: <>
+  107 				strtoul: <>
+  108 				warnx: <>
+  109 				SET_NONREP: <>
+  110 			parse_num_oids: int32_t (), <./tools/libbsnmptools/bsnmptools.c 962>
+  111 				SET_NUMERIC: <>
+  112 			parse_output: int32_t (), <./tools/libbsnmptools/bsnmptools.c 969>
+  113 				assert: <>
+  114 				strlen: <>
+  115 				warnx: <>
+  116 				strncasecmp: <>
+  117 				SET_OUTPUT: <>
+  118 			parse_privacy: int32_t (), <./tools/libbsnmptools/bsnmptools.c 541>
+  119 				assert: <>
+  120 				getsubopt1: 34
+  121 				warnx: <>
+  122 				strlen: <>
+  123 				strncasecmp: <>
+  124 				parse_ascii: 40
+  125 			parse_pdu_type: int32_t (), <./tools/bsnmptools/bsnmpget.c 127>
+  126 				assert: <>
+  127 				strcasecmp: <>
+  128 				SET_PDUTYPE: <>
+  129 				warnx: <>
+  130 			parse_retry: int32_t (), <./tools/libbsnmptools/bsnmptools.c 835>
+  131 				assert: <>
+  132 				strtoul: <>
+  133 				warnx: <>
+  134 				strerror: <>
+  135 			parse_server: int32_t (), <./tools/libbsnmptools/bsnmptools.c 793>
+  136 				assert: <>
+  137 				snmp_parse_server: <>
+  138 				malloc: <>
+  139 				strlen: <>
+  140 				syslog: <>
+  141 				strerror: <>
+  142 				strcpy: <>
+  143 			parse_timeout: int32_t (), <./tools/libbsnmptools/bsnmptools.c 813>
+  144 				assert: <>
+  145 				strtol: <>
+  146 				warnx: <>
+  147 				strerror: <>
+  148 			parse_user_security: int32_t (), <./tools/libbsnmptools/bsnmptools.c 636>
+  149 				assert: <>
+  150 				getsubopt1: 34
+  151 				warnx: <>
+  152 				parse_ascii: 40
+  153 				strtoul: <>
+  154 				strerror: <>
+  155 				strlcpy: <>
+  156 			parse_version: int32_t (), <./tools/libbsnmptools/bsnmptools.c 858>
+  157 				assert: <>
+  158 				strtoul: <>
+  159 				warnx: <>
+  160 				strerror: <>
+  161 		snmp_tool_freeall: void (), <./tools/libbsnmptools/bsnmptools.c 1435>
+  162 			free: <>
+  163 			snmp_mapping_free: int (), <./tools/libbsnmptools/bsnmpmap.c 178>
+  164 				snmp_mapping_listfree: void (), <./tools/libbsnmptools/bsnmpmap.c 113>
+  165 					SLIST_FIRST: <>
+  166 					SLIST_REMOVE_HEAD: <>
+  167 					free: <>
+  168 					enum_pairs_free: void (), <./tools/libbsnmptools/bsnmpmap.c 82>
+  169 						STAILQ_FIRST: <>
+  170 						STAILQ_REMOVE_HEAD: <>
+  171 						free: <>
+  172 					SLIST_INIT: <>
+  173 				snmp_mapping_table_listfree: void (), <./tools/libbsnmptools/bsnmpmap.c 147>
+  174 					SLIST_FIRST: <>
+  175 					SLIST_REMOVE_HEAD: <>
+  176 					free: <>
+  177 					snmp_index_listfree: void (), <./tools/libbsnmptools/bsnmpmap.c 132>
+  178 						STAILQ_FIRST: <>
+  179 						STAILQ_REMOVE_HEAD: <>
+  180 						enum_pairs_free: 168
+  181 						free: <>
+  182 						STAILQ_INIT: <>
+  183 				snmp_enumtc_listfree: void (), <./tools/libbsnmptools/bsnmpmap.c 163>
+  184 					SLIST_FIRST: <>
+  185 					SLIST_REMOVE_HEAD: <>
+  186 					free: <>
+  187 					enum_pairs_free: 168
+  188 				free: <>
+  189 			free_filelist: void (), <./tools/libbsnmptools/bsnmptools.c 278>
+  190 				SLIST_FIRST: <>
+  191 				SLIST_REMOVE_HEAD: <>
+  192 				free: <>
+  193 			snmp_object_freeall: void (), <./tools/libbsnmptools/bsnmptools.c 1419>
+  194 				SLIST_FIRST: <>
+  195 				SLIST_REMOVE_HEAD: <>
+  196 				free: <>
+  197 		ISSET_EDISCOVER: <>
+  198 		ISSET_LOCALKEY: <>
+  199 		usage: 56
+  200 		snmp_object_add: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1356>
+  201 			warnx: <>
+  202 			malloc: <>
+  203 			syslog: <>
+  204 			strerror: <>
+  205 			memset: <>
+  206 			free: <>
+  207 			SLIST_INSERT_HEAD: <>
+  208 		snmpwalk_add_default: int32_t (), <./tools/bsnmptools/bsnmpget.c 440>
+  209 			asn_append_oid: <>
+  210 		snmp_import_all: int32_t (), <./tools/libbsnmptools/bsnmptools.c 196>
+  211 			ISSET_NUMERIC: <>
+  212 			snmp_mapping_init: struct snmp_mappings (), <./tools/libbsnmptools/bsnmpmap.c 55>
+  213 			SLIST_EMPTY: <>
+  214 			warnx: <>
+  215 			SLIST_FOREACH: <>
+  216 			snmp_import_file: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 959>
+  217 				snmp_import_init: void (), <./tools/libbsnmptools/bsnmpimport.c 319>
+  218 					memset: <>
+  219 					asn_append_oid: <>
+  220 				input_fopen: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 203>
+  221 					tryopen: FILE * (), <./tools/libbsnmptools/bsnmpimport.c 186>
+  222 						savestr: char * (), <./tools/libbsnmptools/bsnmpimport.c 123>
+  223 							strcpy: <>
+  224 							xalloc: void * (), <./tools/libbsnmptools/bsnmpimport.c 112>
+  225 								malloc: <>
+  226 								err: <>
+  227 							strlen: <>
+  228 						xalloc: 224
+  229 						strlen: <>
+  230 						sprintf: <>
+  231 						fopen: <>
+  232 						free: <>
+  233 					input_new: void (), <./tools/libbsnmptools/bsnmpimport.c 156>
+  234 						xalloc: 224
+  235 						savestr: 222
+  236 						LIST_INSERT_HEAD: <>
+  237 					warnx: <>
+  238 				snmp_import: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 939>
+  239 					gettoken: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 334>
+  240 						tgetc: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 228>
+  241 							getc: <>
+  242 							input_close: void (), <./tools/libbsnmptools/bsnmpimport.c 171>
+  243 								fclose: <>
+  244 								free: <>
+  245 								LIST_REMOVE: <>
+  246 								LIST_FIRST: <>
+  247 						isspace: <>
+  248 						isascii: <>
+  249 						warnx: <>
+  250 						strchr: <>
+  251 						isdigit: <>
+  252 						tungetc: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 250>
+  253 						sscanf: <>
+  254 						isalpha: <>
+  255 						isalnum: <>
+  256 						strcmp: <>
+  257 						snmp_enumtc_lookup: struct enum_type (), <./tools/libbsnmptools/bsnmpmap.c 597>
+  258 						isprint: <>
+  259 					snmp_import_top: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 885>
+  260 						snmp_import_tree: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 859>
+  261 							snmp_import_object: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 756>
+  262 								snmp_import_head: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 610>
+  263 									gettoken: 239
+  264 									warnx: <>
+  265 								malloc: <>
+  266 								syslog: <>
+  267 								strerror: <>
+  268 								strlen: <>
+  269 								free: <>
+  270 								memset: <>
+  271 								strlcpy: <>
+  272 								asn_append_oid: <>
+  273 								snmp_suboid_append: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1317>
+  274 									warnx: <>
+  275 								gettoken: 239
+  276 								snmp_enum_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 434>
+  277 									snmp_mapping_insert: int (), <./tools/libbsnmptools/bsnmpmap.c 299>
+  278 										SLIST_FIRST: <>
+  279 										asn_compare_oid: <>
+  280 										SLIST_INSERT_HEAD: <>
+  281 										SLIST_FOREACH: <>
+  282 										strncmp: <>
+  283 										syslog: <>
+  284 										SLIST_INSERT_AFTER: <>
+  285 								snmp_node_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 353>
+  286 									snmp_mapping_insert: 277
+  287 								snmp_import_object: 261
+  288 								snmp_import_table: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 631>
+  289 									malloc: <>
+  290 									syslog: <>
+  291 									strerror: <>
+  292 									memset: <>
+  293 									STAILQ_INIT: <>
+  294 									gettoken: 239
+  295 									parse_type: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 550>
+  296 										enum_pairs_init: struct enum_pairs (), <./tools/libbsnmptools/bsnmpmap.c 250>
+  297 										gettoken: 239
+  298 										warnx: <>
+  299 										free: <>
+  300 										parse_enum: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 516>
+  301 											gettoken: 239
+  302 											enum_pair_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 268>
+  303 												malloc: <>
+  304 												syslog: <>
+  305 												strerror: <>
+  306 												memset: <>
+  307 												strlen: <>
+  308 												free: <>
+  309 												strlcpy: <>
+  310 												STAILQ_INSERT_TAIL: <>
+  311 											warnx: <>
+  312 										enum_pairs_free: 168
+  313 										snmp_enumtc_lookup: struct enum_type (), <./tools/libbsnmptools/bsnmpmap.c 597>
+  314 										parse_subtype: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 535>
+  315 											gettoken: 239
+  316 											warnx: <>
+  317 											snmp_get_tc: enum snmp_tc (), <./tools/libbsnmptools/bsnmptc.c 143>
+  318 									enum_pairs_free: 168
+  319 									snmp_index_listfree: 177
+  320 									free: <>
+  321 									snmp_syntax_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 480>
+  322 										malloc: <>
+  323 										syslog: <>
+  324 										strerror: <>
+  325 										memset: <>
+  326 										snmp_index_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 470>
+  327 											STAILQ_INSERT_TAIL: <>
+  328 										free: <>
+  329 									warnx: <>
+  330 									asn_append_oid: <>
+  331 									snmp_table_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 505>
+  332 										SLIST_FIRST: <>
+  333 										asn_compare_oid: <>
+  334 										SLIST_INSERT_HEAD: <>
+  335 										SLIST_FOREACH: <>
+  336 										strncmp: <>
+  337 										syslog: <>
+  338 										SLIST_INSERT_AFTER: <>
+  339 									snmp_import_update_table: struct snmp_index_entry (), <./tools/libbsnmptools/bsnmpimport.c 481>
+  340 								snmp_import_leaf: int32_t (), <./tools/libbsnmptools/bsnmpimport.c 707>
+  341 									parse_type: 295
+  342 									gettoken: 239
+  343 									warnx: <>
+  344 									snmp_import_update_table: struct snmp_index_entry (), <./tools/libbsnmptools/bsnmpimport.c 481>
+  345 									snmp_leaf_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 443>
+  346 										snmp_int_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 362>
+  347 											snmp_mapping_insert: 277
+  348 										snmp_oct_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 371>
+  349 											snmp_mapping_insert: 277
+  350 										snmp_oid_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 380>
+  351 											snmp_mapping_insert: 277
+  352 										snmp_ip_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 389>
+  353 											snmp_mapping_insert: 277
+  354 										snmp_cnt_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 407>
+  355 											snmp_mapping_insert: 277
+  356 										snmp_gauge_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 416>
+  357 											snmp_mapping_insert: 277
+  358 										snmp_tick_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 398>
+  359 											snmp_mapping_insert: 277
+  360 										snmp_cnt64_insert: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 425>
+  361 											snmp_mapping_insert: 277
+  362 									free: <>
+  363 								warnx: <>
+  364 								snmp_mapping_entryfree: void (), <./tools/libbsnmptools/bsnmpmap.c 101>
+  365 									free: <>
+  366 									enum_pairs_free: 168
+  367 							snmp_suboid_pop: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1334>
+  368 							snmp_import_update_table: struct snmp_index_entry (), <./tools/libbsnmptools/bsnmpimport.c 481>
+  369 							gettoken: 239
+  370 						gettoken: 239
+  371 						warnx: <>
+  372 						snmp_enumtc_init: struct enum_type (), <./tools/libbsnmptools/bsnmpmap.c 557>
+  373 						parse_type: 295
+  374 						snmp_enumtc_insert: void (), <./tools/libbsnmptools/bsnmpmap.c 588>
+  375 							SLIST_INSERT_HEAD: <>
+  376 						add_filename: 11
+  377 						input_fopen: 220
+  378 				warnx: <>
+  379 				input_close: 242
+  380 			snmp_mapping_dump: void (), <./tools/libbsnmptools/bsnmpmap.c 649>
+  381 				fprintf: <>
+  382 				snmp_mapping_dumplist: void (), <./tools/libbsnmptools/bsnmpmap.c 612>
+  383 					SLIST_FOREACH: <>
+  384 					memset: <>
+  385 					asn_oid2str_r: <>
+  386 					fprintf: <>
+  387 				snmp_mapping_dumptable: void (), <./tools/libbsnmptools/bsnmpmap.c 631>
+  388 					SLIST_FOREACH: <>
+  389 					memset: <>
+  390 					asn_oid2str_r: <>
+  391 					fprintf: <>
+  392 					snmp_dump_indexlist: void (), <./tools/libbsnmptools/bsnmpmap.c 233>
+  393 						STAILQ_FOREACH: <>
+  394 						fprintf: <>
+  395 						snmp_dump_enumpairs: void (), <./tools/libbsnmptools/bsnmpmap.c 201>
+  396 							fprintf: <>
+  397 							STAILQ_FOREACH: <>
+  398 		GET_PDUTYPE: <>
+  399 		snmpset_parse_oid: int32_t (), <./tools/bsnmptools/bsnmpget.c 926>
+  400 			ISSET_NUMERIC: <>
+  401 			parse_pair_numoid_val: int32_t (), <./tools/bsnmptools/bsnmpget.c 785>
+  402 				warnx: <>
+  403 				strlcpy: <>
+  404 				parse_syntax: enum snmp_syntax (), <./tools/libbsnmptools/bsnmptools.c 1168>
+  405 				snmp_parse_numoid: 69
+  406 				parse_syntax_val: int32_t (), <./tools/bsnmptools/bsnmpget.c 752>
+  407 					parse_int: int32_t (), <./tools/bsnmptools/bsnmpget.c 626>
+  408 						strtol: <>
+  409 						warnx: <>
+  410 						strerror: <>
+  411 					parse_ip: int32_t (), <./tools/bsnmptools/bsnmpget.c 604>
+  412 						strtoul: <>
+  413 					parse_counter: int32_t (), <./tools/bsnmptools/bsnmpget.c 717>
+  414 						parse_uint: int32_t (), <./tools/bsnmptools/bsnmpget.c 673>
+  415 							strtoul: <>
+  416 							warnx: <>
+  417 							strerror: <>
+  418 					parse_gauge: int32_t (), <./tools/bsnmptools/bsnmpget.c 707>
+  419 						parse_uint: 414
+  420 					parse_ticks: int32_t (), <./tools/bsnmptools/bsnmpget.c 697>
+  421 						parse_uint: 414
+  422 					parse_uint64: int32_t (), <./tools/bsnmptools/bsnmpget.c 727>
+  423 						strtoull: <>
+  424 						warnx: <>
+  425 						strerror: <>
+  426 					snmp_tc2oct: int32_t (), <./tools/libbsnmptools/bsnmptc.c 193>
+  427 						tc2oct: <>
+  428 					parse_oid_numeric: int32_t (), <./tools/bsnmptools/bsnmpget.c 546>
+  429 						strtoul: <>
+  430 						warnx: <>
+  431 						strerror: <>
+  432 						snmp_suboid_append: 273
+  433 			parse_pair_stroid_val: int32_t (), <./tools/bsnmptools/bsnmpget.c 905>
+  434 				snmptools_parse_stroid: char * (), <./tools/bsnmptools/bsnmpget.c 257>
+  435 					isalpha: <>
+  436 					isdigit: <>
+  437 					memset: <>
+  438 					snmp_parse_suboid: char * (), <./tools/libbsnmptools/bsnmptools.c 1009>
+  439 						strtoul: <>
+  440 						warnx: <>
+  441 						snmp_suboid_append: 273
+  442 					warnx: <>
+  443 					strlcpy: <>
+  444 					snmp_lookup_oidall: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 936>
+  445 						snmp_lookup_oidlist: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 880>
+  446 							SLIST_FOREACH: <>
+  447 							strlen: <>
+  448 							strncmp: <>
+  449 							asn_append_oid: <>
+  450 						snmp_lookup_tablelist: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 904>
+  451 							SLIST_FOREACH: <>
+  452 							strlen: <>
+  453 							strncmp: <>
+  454 							asn_append_oid: <>
+  455 							snmp_lookup_leaf: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 749>
+  456 								SLIST_FOREACH: <>
+  457 								asn_compare_oid: <>
+  458 								asn_is_suboid: <>
+  459 					asn_append_oid: <>
+  460 					snmp_parse_index: char * (), <./tools/libbsnmptools/bsnmptools.c 1247>
+  461 						STAILQ_FOREACH: <>
+  462 						OBJECT_IDX_LIST: <>
+  463 						snmp_parse_subindex: char * (), <./tools/libbsnmptools/bsnmptools.c 1182>
+  464 							GET_OUTPUT: <>
+  465 							warnx: <>
+  466 							parse_syntax: enum snmp_syntax (), <./tools/libbsnmptools/bsnmptools.c 1168>
+  467 							ISSET_ERRIGNORE: <>
+  468 							snmp_int2asn_oid: char * (), <./tools/libbsnmptools/bsnmptools.c 1035>
+  469 								strtol: <>
+  470 								warnx: <>
+  471 								strerror: <>
+  472 								snmp_suboid_append: 273
+  473 							snmp_oid2asn_oid: char * (), <./tools/libbsnmptools/bsnmptools.c 1060>
+  474 								isalpha: <>
+  475 								memset: <>
+  476 								snmp_parse_suboid: 438
+  477 								snmp_suboid_append: 273
+  478 								strlcpy: <>
+  479 								snmp_lookup_enumoid: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 968>
+  480 									snmp_lookup_oidlist: 445
+  481 								warnx: <>
+  482 								free: <>
+  483 								asn_append_oid: <>
+  484 							snmp_ip2asn_oid: char * (), <./tools/libbsnmptools/bsnmptools.c 1093>
+  485 								strtoul: <>
+  486 								strchr: <>
+  487 								snmp_suboid_append: 273
+  488 							snmp_uint2asn_oid: char * (), <./tools/libbsnmptools/bsnmptools.c 1116>
+  489 								strtoul: <>
+  490 								warnx: <>
+  491 								strerror: <>
+  492 								snmp_suboid_append: 273
+  493 							snmp_cnt64_2asn_oid: char * (), <./tools/libbsnmptools/bsnmptools.c 1140>
+  494 								strtoull: <>
+  495 								warnx: <>
+  496 								strerror: <>
+  497 								snmp_suboid_append: 273
+  498 							snmp_tc2oid: char * (), <./tools/libbsnmptools/bsnmptc.c 184>
+  499 								tc2oid: <>
+  500 						warnx: <>
+  501 					GET_PDUTYPE: <>
+  502 					snmp_suboid_append: 273
+  503 				warnx: <>
+  504 				parse_syntax_strval: int32_t (), <./tools/bsnmptools/bsnmpget.c 845>
+  505 					GET_OUTPUT: <>
+  506 					warnx: <>
+  507 					parse_syntax: enum snmp_syntax (), <./tools/libbsnmptools/bsnmptools.c 1168>
+  508 					ISSET_ERRIGNORE: <>
+  509 					parse_int_string: int32_t (), <./tools/bsnmptools/bsnmpget.c 650>
+  510 						isdigit: <>
+  511 						parse_int: 407
+  512 						warnx: <>
+  513 						enum_number_lookup: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 715>
+  514 							STAILQ_FOREACH: <>
+  515 							strncmp: <>
+  516 							strlen: <>
+  517 					parse_ip: 411
+  518 					parse_counter: 413
+  519 					parse_gauge: 418
+  520 					parse_ticks: 420
+  521 					parse_uint64: 422
+  522 					snmp_tc2oct: 426
+  523 					parse_oid_string: int32_t (), <./tools/bsnmptools/bsnmpget.c 585>
+  524 						isdigit: <>
+  525 						parse_oid_numeric: 428
+  526 						memset: <>
+  527 						snmp_lookup_enumoid: 479
+  528 						warnx: <>
+  529 						asn_append_oid: <>
+  530 		snmptools_parse_oid: int32_t (), <./tools/bsnmptools/bsnmpget.c 305>
+  531 			ISSET_NUMERIC: <>
+  532 			snmp_parse_numoid: 69
+  533 			snmptools_parse_stroid: 434
+  534 		snmp_open: <>
+  535 		warnx: <>
+  536 		strerror: <>
+  537 		SET_EDISCOVER: <>
+  538 		snmp_discover_engine: <>
+  539 		GET_OUTPUT: <>
+  540 		snmp_output_engine: void (), <./tools/libbsnmptools/bsnmptools.c 2078>
+  541 			sprintf: <>
+  542 			fprintf: <>
+  543 		snmp_passwd_to_keys: <>
+  544 		snmp_get_local_keys: <>
+  545 		snmp_output_keys: void (), <./tools/libbsnmptools/bsnmptools.c 2095>
+  546 			fprintf: <>
+  547 			sprintf: <>
+  548 		snmptool_get: int (), <./tools/bsnmptools/bsnmpget.c 383>
+  549 			snmp_pdu_create: <>
+  550 			GET_PDUTYPE: <>
+  551 			snmp_pdu_add_bindings: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1465>
+  552 				SLIST_EMPTY: <>
+  553 				warnx: <>
+  554 				SLIST_FOREACH: <>
+  555 			snmpget_verify_vbind: int32_t (), <./tools/bsnmptools/bsnmpget.c 339>
+  556 				warnx: <>
+  557 				ISSET_NUMERIC: <>
+  558 			snmptool_add_vbind: int32_t (), <./tools/bsnmptools/bsnmpget.c 324>
+  559 				asn_append_oid: <>
+  560 			snmpget_fix_getbulk: void (), <./tools/bsnmptools/bsnmpget.c 367>
+  561 				assert: <>
+  562 			GET_MAXREP: <>
+  563 			GET_NONREP: <>
+  564 			snmp_dialog: <>
+  565 			warnx: <>
+  566 			strerror: <>
+  567 			snmp_parse_resp: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1612>
+  568 				warnx: <>
+  569 				snmp_parse_get_resp: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1533>
+  570 					asn_compare_oid: <>
+  571 					warnx: <>
+  572 				snmp_parse_getbulk_resp: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1554>
+  573 					warnx: <>
+  574 					asn_is_suboid: <>
+  575 				snmp_parse_getnext_resp: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1591>
+  576 					asn_is_suboid: <>
+  577 			snmp_output_resp: int32_t (), <./tools/libbsnmptools/bsnmptools.c 2043>
+  578 				asn_is_suboid: <>
+  579 				GET_OUTPUT: <>
+  580 				ISSET_NUMERIC: <>
+  581 				snmp_fill_object: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1868>
+  582 					snmp_suboid_pop: 367
+  583 					memset: <>
+  584 					asn_append_oid: <>
+  585 					snmp_lookup_leafstring: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 768>
+  586 						snmp_lookup_leaf: 455
+  587 						snmp_lookup_allstring: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 835>
+  588 							snmp_lookup_leaf: 455
+  589 							snmp_lookuplist_string: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 730>
+  590 								SLIST_FOREACH: <>
+  591 								asn_compare_oid: <>
+  592 						warnx: <>
+  593 					snmp_lookup_nonleaf_string: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 865>
+  594 						snmp_lookuplist_string: 589
+  595 					snmp_suboid_append: 273
+  596 				snmp_output_object: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1972>
+  597 					ISSET_NUMERIC: <>
+  598 					fprintf: <>
+  599 					memset: <>
+  600 					asn_slice_oid: <>
+  601 					STAILQ_FOREACH: <>
+  602 					OBJECT_IDX_LIST: <>
+  603 					snmp_output_index: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1896>
+  604 						memset: <>
+  605 						asn_append_oid: <>
+  606 						snmp_output_int: void (), <./tools/libbsnmptools/bsnmptools.c 1722>
+  607 							GET_OUTPUT: <>
+  608 							fprintf: <>
+  609 							enum_string_lookup: char * (), <./tools/libbsnmptools/bsnmpmap.c 699>
+  610 								STAILQ_FOREACH: <>
+  611 						snmp_output_octetindex: void (), <./tools/libbsnmptools/bsnmptools.c 1672>
+  612 							malloc: <>
+  613 							syslog: <>
+  614 							strerror: <>
+  615 							snmp_output_octetstring: void (), <./tools/libbsnmptools/bsnmptools.c 1653>
+  616 								GET_OUTPUT: <>
+  617 								fprintf: <>
+  618 								snmp_oct2tc: char * (), <./tools/libbsnmptools/bsnmptc.c 156>
+  619 									malloc: <>
+  620 									syslog: <>
+  621 									strerror: <>
+  622 									memset: <>
+  623 									oct2tc: <>
+  624 									free: <>
+  625 								free: <>
+  626 							free: <>
+  627 						asn_slice_oid: <>
+  628 						snmp_output_oid_value: void (), <./tools/libbsnmptools/bsnmptools.c 1693>
+  629 							GET_OUTPUT: <>
+  630 							fprintf: <>
+  631 							ISSET_NUMERIC: <>
+  632 							memset: <>
+  633 							asn_append_oid: <>
+  634 							snmp_lookup_enumstring: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 808>
+  635 								snmp_lookuplist_string: 589
+  636 							snmp_lookup_oidstring: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 817>
+  637 								snmp_lookuplist_string: 589
+  638 							snmp_lookup_nodestring: int32_t (), <./tools/libbsnmptools/bsnmpmap.c 826>
+  639 								snmp_lookuplist_string: 589
+  640 							asn_oid2str_r: <>
+  641 						snmp_output_ipaddress: void (), <./tools/libbsnmptools/bsnmptools.c 1739>
+  642 							GET_OUTPUT: <>
+  643 							fprintf: <>
+  644 						snmp_output_counter: void (), <./tools/libbsnmptools/bsnmptools.c 1749>
+  645 							GET_OUTPUT: <>
+  646 							fprintf: <>
+  647 						snmp_output_gauge: void (), <./tools/libbsnmptools/bsnmptools.c 1759>
+  648 							GET_OUTPUT: <>
+  649 							fprintf: <>
+  650 						snmp_output_ticks: void (), <./tools/libbsnmptools/bsnmptools.c 1768>
+  651 							GET_OUTPUT: <>
+  652 							fprintf: <>
+  653 						memcpy: <>
+  654 						snmp_output_counter64: void (), <./tools/libbsnmptools/bsnmptools.c 1778>
+  655 							GET_OUTPUT: <>
+  656 							fprintf: <>
+  657 				asn_oid2str_r: <>
+  658 				fprintf: <>
+  659 				snmp_output_numval: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1788>
+  660 					GET_OUTPUT: <>
+  661 					fprintf: <>
+  662 					snmp_output_int: 606
+  663 					snmp_output_octetstring: 615
+  664 					snmp_output_oid_value: 628
+  665 					snmp_output_ipaddress: 641
+  666 					snmp_output_counter: 644
+  667 					snmp_output_gauge: 647
+  668 					snmp_output_ticks: 650
+  669 					snmp_output_counter64: 654
+  670 			snmp_output_err_resp: void (), <./tools/libbsnmptools/bsnmptools.c 2013>
+  671 				fprintf: <>
+  672 				ISSET_NUMERIC: <>
+  673 				snmp_fill_object: 581
+  674 				snmp_output_object: 596
+  675 				asn_oid2str_r: <>
+  676 			ISSET_RETRY: <>
+  677 			snmp_object_seterror: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1509>
+  678 				SLIST_EMPTY: <>
+  679 				SLIST_FOREACH: <>
+  680 				asn_compare_oid: <>
+  681 			fprintf: <>
+  682 			snmp_pdu_free: <>
+  683 		snmptool_walk: int (), <./tools/bsnmptools/bsnmpget.c 459>
+  684 			GET_PDUTYPE: <>
+  685 			snmp_pdu_create: <>
+  686 			snmp_pdu_add_bindings: 551
+  687 			snmptool_add_vbind: 558
+  688 			memset: <>
+  689 			asn_append_oid: <>
+  690 			snmpget_fix_getbulk: 560
+  691 			GET_MAXREP: <>
+  692 			GET_NONREP: <>
+  693 			snmp_dialog: <>
+  694 			snmp_parse_resp: 567
+  695 			snmp_output_err_resp: 670
+  696 			snmp_pdu_free: <>
+  697 			snmp_output_resp: 577
+  698 			snmpwalk_nextpdu_create: void (), <./tools/bsnmptools/bsnmpget.c 451>
+  699 				snmp_pdu_create: <>
+  700 				asn_append_oid: <>
+  701 			warnx: <>
+  702 			strerror: <>
+  703 			snmp_object_remove: int32_t (), <./tools/libbsnmptools/bsnmptools.c 1390>
+  704 				SLIST_EMPTY: <>
+  705 				warnx: <>
+  706 				SLIST_FOREACH: <>
+  707 				asn_compare_oid: <>
+  708 				SLIST_REMOVE: <>
+  709 				free: <>
+  710 		snmptool_set: int (), <./tools/bsnmptools/bsnmpget.c 1078>
+  711 			snmp_pdu_create: <>
+  712 			snmp_pdu_add_bindings: 551
+  713 			snmpset_verify_vbind: int32_t (), <./tools/bsnmptools/bsnmpget.c 1035>
+  714 				warnx: <>
+  715 				ISSET_NUMERIC: <>
+  716 				ISSET_ERRIGNORE: <>
+  717 			snmpset_add_vbind: int32_t (), <./tools/bsnmptools/bsnmpget.c 1057>
+  718 				warnx: <>
+  719 				snmpset_add_value: int32_t (), <./tools/bsnmptools/bsnmpget.c 991>
+  720 					add_ip_syntax: int32_t (), <./tools/bsnmptools/bsnmpget.c 944>
+  721 					add_octstring_syntax: int32_t (), <./tools/bsnmptools/bsnmpget.c 956>
+  722 						warnx: <>
+  723 						malloc: <>
+  724 						syslog: <>
+  725 						strerror: <>
+  726 						memcpy: <>
+  727 					add_oid_syntax: int32_t (), <./tools/bsnmptools/bsnmpget.c 978>
+  728 						asn_append_oid: <>
+  729 					warnx: <>
+  730 				asn_append_oid: <>
+  731 			snmp_dialog: <>
+  732 			warnx: <>
+  733 			strerror: <>
+  734 			snmp_pdu_check: <>
+  735 			GET_OUTPUT: <>
+  736 			snmp_output_resp: 577
+  737 			snmp_output_err_resp: 670
+  738 			ISSET_RETRY: <>
+  739 			snmp_object_seterror: 677
+  740 			fprintf: <>
+  741 			snmp_pdu_free: <>
+  742 		snmp_close: <>

@@ -1,0 +1,327 @@
+    1 	main: int (), <./crontab/crontab.c 87>
+    2 		setlinebuf: <>
+    3 		parse_args: void (), <./cron/cron.c 508>
+    4 		signal: <>
+    5 		sigchld_handler: void (), <./cron/cron.c 470>
+    6 		sighup_handler: void (), <./cron/cron.c 501>
+    7 		open_pidfile: void (), <./cron/cron.c 75>
+    8 			snprintf: <>
+    9 			pidfile_open: <>
+   10 			strerror: char * (), <./lib/compat.c 69>
+   11 				sprintf: <>
+   12 			log_it: void (), <./lib/misc.c 388>
+   13 				time: <>
+   14 				localtime: <>
+   15 				malloc: <>
+   16 				strlen: <>
+   17 				warnx: <>
+   18 				open: <>
+   19 				warn: <>
+   20 				fcntl: <>
+   21 				sprintf: <>
+   22 				write: <>
+   23 				free: <>
+   24 				openlog: <>
+   25 				syslog: <>
+   26 				fprintf: <>
+   27 			getpid: <>
+   28 			errx: <>
+   29 		set_cron_uid: void (), <./lib/misc.c 176>
+   30 			seteuid: <>
+   31 			err: <>
+   32 			setuid: <>
+   33 		set_cron_cwd: void (), <./lib/misc.c 189>
+   34 			stat: <>
+   35 			warn: <>
+   36 			mkdir: <>
+   37 			warnx: <>
+   38 			err: <>
+   39 			chdir: <>
+   40 		setenv: int (), <./lib/compat.c 220>
+   41 			getenv: <>
+   42 			malloc: <>
+   43 			strlen: <>
+   44 			sprintf: <>
+   45 			putenv: <>
+   46 		fprintf: <>
+   47 		getpid: <>
+   48 		daemon: <>
+   49 		pidfile_remove: <>
+   50 		log_it: 12
+   51 		exit: <>
+   52 		madvise: <>
+   53 		pidfile_write: <>
+   54 		load_database: void (), <./cron/database.c 42>
+   55 			Debug: <>
+   56 			getpid: <>
+   57 			stat: <>
+   58 			log_it: 12
+   59 			exit: <>
+   60 			TMAX: <>
+   61 			process_crontab: void (), <./cron/database.c 196>
+   62 				strcmp: <>
+   63 				getpwnam: <>
+   64 				log_it: 12
+   65 				getpid: <>
+   66 				open: <>
+   67 				fstat: <>
+   68 				Debug: <>
+   69 				find_user: user * (), <./cron/database.c 181>
+   70 					strcmp: <>
+   71 				unlink_user: void (), <./cron/database.c 164>
+   72 				link_user: void (), <./cron/database.c 149>
+   73 				free_user: void (), <./cron/user.c 32>
+   74 					free: <>
+   75 					free_entry: void (), <./lib/entry.c 69>
+   76 						free: <>
+   77 						env_free: void (), <./lib/env.c 39>
+   78 							free: <>
+   79 				load_user: user * (), <./cron/user.c 53>
+   80 					fdopen: <>
+   81 					warn: <>
+   82 					Debug: <>
+   83 					malloc: <>
+   84 					strdup: char * (), <./lib/compat.c 52>
+   85 						malloc: <>
+   86 						strlen: <>
+   87 						strcpy: <>
+   88 					free: <>
+   89 					env_init: char ** (), <./lib/env.c 28>
+   90 						malloc: <>
+   91 					load_env: int (), <./lib/env.c 141>
+   92 					free_user: 73
+   93 					load_entry: , <./lib/entry.c 88>
+   94 						Debug: <>
+   95 						skip_comments: void (), <./lib/misc.c 285>
+   96 							get_char: int (), <./lib/misc.c 228>
+   97 								getc: <>
+   98 								Set_LineNum: <>
+   99 							unget_char: void (), <./lib/misc.c 243>
+  100 								ungetc: <>
+  101 								Set_LineNum: <>
+  102 						get_char: 96
+  103 						calloc: <>
+  104 						warn: <>
+  105 						get_string: int (), <./lib/misc.c 260>
+  106 							get_char: 96
+  107 							strchr: <>
+  108 						strcmp: <>
+  109 						bit_set: <>
+  110 						bit_nset: <>
+  111 						Skip_Blanks: <>
+  112 						get_list: char (), <./lib/entry.c 463>
+  113 							Debug: <>
+  114 							bit_nclear: <>
+  115 							get_range: char (), <./lib/entry.c 510>
+  116 								Debug: <>
+  117 								get_char: 96
+  118 								get_number: char (), <./lib/entry.c 597>
+  119 									isalnum: <>
+  120 									isdigit: <>
+  121 									get_char: 96
+  122 									Debug: <>
+  123 									strcasecmp: int (), <./lib/compat.c 88>
+  124 										MkLower: <>
+  125 									atoi: <>
+  126 								set_element: int (), <./lib/entry.c 654>
+  127 									Debug: <>
+  128 									bit_set: <>
+  129 							get_char: 96
+  130 							Skip_Nonblanks: <>
+  131 							Skip_Blanks: <>
+  132 						bit_test: <>
+  133 						unget_char: 99
+  134 						strrchr: <>
+  135 						strdup: 84
+  136 						login_getclass: <>
+  137 						login_close: <>
+  138 						getgrnam: <>
+  139 						getpwnam: <>
+  140 						time: <>
+  141 						env_copy: <>
+  142 						env_get: <>
+  143 						sprintf: <>
+  144 						env_set: char ** (), <./lib/env.c 79>
+  145 						env_free: 77
+  146 						free_entry: 75
+  147 					log_error: void (), <./cron/user.c 46>
+  148 						log_it: 12
+  149 						getpid: <>
+  150 					env_set: char ** (), <./lib/env.c 79>
+  151 					env_free: 77
+  152 					fclose: <>
+  153 				close: <>
+  154 			opendir: <>
+  155 			readdir: <>
+  156 			strncpy: <>
+  157 			snprintf: <>
+  158 			CRON_TAB: <>
+  159 			closedir: <>
+  160 			endpwent: <>
+  161 			unlink_user: 71
+  162 			free_user: 73
+  163 		run_at_secres: int (), <./cron/cron.c 549>
+  164 		run_reboot_jobs: <>
+  165 		cron_sync: void (), <./cron/cron.c 367>
+  166 		cron_sleep: void (), <./cron/cron.c 393>
+  167 		localtime: <>
+  168 		cron_tick: void (), <./cron/cron.c 219>
+  169 		job_add: <>
+  170 		job_runqueue: int (), <./cron/job.c 63>
+  171 		Debug: <>
+  172 		gmtime_r: <>
+  173 		env_get: <>
+  174 		bit_test: <>
+  175 		time: <>
+  176 		clock_gettime: <>
+  177 		timespec_subtract: void (), <./cron/cron.c 380>
+  178 		cron_clean: <>
+  179 		nanosleep: <>
+  180 		waitpid: <>
+  181 		wait3: <>
+  182 		WEXITSTATUS: <>
+  183 		log_close: void (), <./lib/misc.c 478>
+  184 			close: <>
+  185 		getopt: <>
+  186 		strtoul: <>
+  187 		errx: <>
+  188 		set_debug_flags: int (), <./lib/misc.c 109>
+  189 			printf: <>
+  190 			strcmp_until: int (), <./lib/misc.c 54>
+  191 			fprintf: <>
+  192 		usage: void (), <./cron/cron.c 55>
+  193 			fprintf: <>
+  194 			exit: <>
+  195 		setlocale: <>
+  196 		parse_args: void (), <./crontab/crontab.c 129>
+  197 			getpwuid: <>
+  198 			getuid: <>
+  199 			errx: <>
+  200 			bzero: <>
+  201 			strlen: <>
+  202 			strncpy: <>
+  203 			strcpy: <>
+  204 			getopt: <>
+  205 			set_debug_flags: 188
+  206 			usage: void (), <./crontab/crontab.c 76>
+  207 				fprintf: <>
+  208 				exit: <>
+  209 			getpwnam: <>
+  210 			endpwent: <>
+  211 			swap_uids: int (), <./lib/misc.c 598>
+  212 				geteuid: <>
+  213 				seteuid: <>
+  214 				getuid: <>
+  215 				setreuid: <>
+  216 			err: <>
+  217 			strcmp: <>
+  218 			realpath: <>
+  219 			fopen: <>
+  220 			swap_uids_back: int (), <./lib/misc.c 599>
+  221 				seteuid: <>
+  222 				swap_uids: 211
+  223 			Debug: <>
+  224 		allowed: int (), <./lib/misc.c 349>
+  225 			fopen: <>
+  226 			Debug: <>
+  227 			in_file: int (), <./lib/misc.c 327>
+  228 				rewind: <>
+  229 				fgets: <>
+  230 				strlen: <>
+  231 				strcmp: <>
+  232 			strcmp: <>
+  233 			fclose: <>
+  234 		warnx: <>
+  235 		list_cmd: void (), <./crontab/crontab.c 259>
+  236 			log_it: 12
+  237 			snprintf: <>
+  238 			CRON_TAB: <>
+  239 			fopen: <>
+  240 			errx: <>
+  241 			err: <>
+  242 			copy_file: void (), <./crontab/crontab.c 230>
+  243 				Set_LineNum: <>
+  244 				get_char: 96
+  245 				putc: <>
+  246 			fclose: <>
+  247 		delete_cmd: void (), <./crontab/crontab.c 280>
+  248 			isatty: <>
+  249 			fprintf: <>
+  250 			getchar: <>
+  251 			log_it: 12
+  252 			snprintf: <>
+  253 			CRON_TAB: <>
+  254 			unlink: <>
+  255 			errx: <>
+  256 			err: <>
+  257 			poke_daemon: void (), <./crontab/crontab.c 627>
+  258 		edit_cmd: void (), <./crontab/crontab.c 315>
+  259 			log_it: 12
+  260 			snprintf: <>
+  261 			CRON_TAB: <>
+  262 			fopen: <>
+  263 			err: <>
+  264 			warnx: <>
+  265 			umask: <>
+  266 			mkstemp: <>
+  267 			warn: <>
+  268 			fchown: <>
+  269 			getuid: <>
+  270 			getgid: <>
+  271 			chown: <>
+  272 			fdopen: <>
+  273 			copy_file: 242
+  274 			fclose: <>
+  275 			fflush: <>
+  276 			fstat: <>
+  277 			swap_uids: 211
+  278 			stat: <>
+  279 			unlink: <>
+  280 			exit: <>
+  281 			swap_uids_back: 220
+  282 			errx: <>
+  283 			MD5File: <>
+  284 			getenv: <>
+  285 			fork: <>
+  286 			setuid: <>
+  287 			chdir: <>
+  288 			strlen: <>
+  289 			execlp: <>
+  290 			wait: <>
+  291 			WIFEXITED: <>
+  292 			WEXITSTATUS: <>
+  293 			WIFSIGNALED: <>
+  294 			WTERMSIG: <>
+  295 			WCOREDUMP: <>
+  296 			strcmp: <>
+  297 			replace_cmd: int (), <./crontab/crontab.c 500>
+  298 			printf: <>
+  299 			fgets: <>
+  300 			islower: <>
+  301 			tolower: <>
+  302 			fprintf: <>
+  303 			time: <>
+  304 			env_init: 89
+  305 			ctime: <>
+  306 			rewind: <>
+  307 			Set_LineNum: <>
+  308 			get_char: 96
+  309 			putc: <>
+  310 			ftruncate: <>
+  311 			fileno: <>
+  312 			ftell: <>
+  313 			ferror: <>
+  314 			load_env: int (), <./lib/env.c 141>
+  315 			load_entry: 93
+  316 			check_error: void (), <./crontab/crontab.c 306>
+  317 				fprintf: <>
+  318 			free: <>
+  319 			fchmod: <>
+  320 			chmod: <>
+  321 			rename: <>
+  322 			sleep: <>
+  323 			poke_daemon: void (), <./crontab/crontab.c 627>
+  324 			gettimeofday: <>
+  325 			utimes: <>
+  326 			utime: <>
+  327 		replace_cmd: int (), <./crontab/crontab.c 500>

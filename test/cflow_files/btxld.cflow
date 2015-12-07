@@ -1,0 +1,81 @@
+    1 	main: int (), <./btxld.c 136>
+    2 		getopt: <>
+    3 		optaddr: uint32_t (), <./btxld.c 519>
+    4 			strtoul: <>
+    5 			errx: <>
+    6 		optfmt: unsigned int (), <./btxld.c 505>
+    7 			strcmp: <>
+    8 			errx: <>
+    9 		optpage: int (), <./btxld.c 535>
+   10 			strtol: <>
+   11 			errx: <>
+   12 		usage: void (), <./btxld.c 569>
+   13 			fprintf: <>
+   14 			exit: <>
+   15 		atexit: <>
+   16 		cleanup: void (), <./btxld.c 189>
+   17 			remove: <>
+   18 		btxld: void (), <./btxld.c 199>
+   19 			open: <>
+   20 			err: <>
+   21 			gethdr: void (), <./btxld.c 324>
+   22 				memset: <>
+   23 				fstat: <>
+   24 				err: <>
+   25 				errx: <>
+   26 				mmap: <>
+   27 				N_BADMAG: <>
+   28 				N_GETMAGIC: <>
+   29 				Warn: void (), <./btxld.c 551>
+   30 					asprintf: <>
+   31 					va_start: <>
+   32 					vwarnx: <>
+   33 					va_end: <>
+   34 					free: <>
+   35 				le32toh: <>
+   36 				IS_ELF: <>
+   37 				le16toh: <>
+   38 				munmap: <>
+   39 			Warn: 29
+   40 			getbtx: void (), <./btxld.c 308>
+   41 				readx: size_t (), <./btxld.c 466>
+   42 					lseek: <>
+   43 					err: <>
+   44 					read: <>
+   45 				errx: <>
+   46 				le16toh: <>
+   47 				le32toh: <>
+   48 			memset: <>
+   49 			howmany: <>
+   50 			snprintf: <>
+   51 			errx: <>
+   52 			strdup: <>
+   53 			puthdr: void (), <./btxld.c 402>
+   54 				memset: <>
+   55 				N_SETMAGIC: <>
+   56 				N_ALIGN: <>
+   57 				htole32: <>
+   58 				writex: void (), <./btxld.c 481>
+   59 					write: <>
+   60 					err: <>
+   61 					errx: <>
+   62 				seekx: void (), <./btxld.c 495>
+   63 					lseek: <>
+   64 					err: <>
+   65 				le32toh: <>
+   66 				align: <>
+   67 			copy: void (), <./btxld.c 446>
+   68 				readx: 41
+   69 				errx: <>
+   70 				writex: 58
+   71 			seekx: 62
+   72 			htole16: <>
+   73 			htole32: <>
+   74 			writex: 58
+   75 			ftruncate: <>
+   76 			close: <>
+   77 			rename: <>
+   78 			printf: <>
+   79 			BTX_ORIGIN: <>
+   80 			BTX_ENTRY: <>
+   81 			BTX_MAPPED: <>

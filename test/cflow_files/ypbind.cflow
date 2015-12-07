@@ -1,0 +1,130 @@
+    1 	main: int (), <./ypbind.c 384>
+    2 		open: <>
+    3 		err: <>
+    4 		flock: <>
+    5 		errx: <>
+    6 		yp_get_default_domain: <>
+    7 		strcmp: <>
+    8 		yp_restricted_mode: void (), <./ypbind.c 985>
+    9 			strsep: <>
+   10 			gethostbyname: <>
+   11 			bcopy: <>
+   12 		opendir: <>
+   13 		readdir: <>
+   14 		sprintf: <>
+   15 		unlink: <>
+   16 		closedir: <>
+   17 		daemon: <>
+   18 		pmap_unset: <>
+   19 		svcudp_create: <>
+   20 		svc_register: <>
+   21 		ypbindprog_2: void (), <./ypbind.c 290>
+   22 			bool_t: <>
+   23 			ypbindproc_null_2_yp: void * (), <./ypbind.c 160>
+   24 				bzero: <>
+   25 			ypbindproc_domain_2_yp: struct ypbind_resp (), <./ypbind.c 169>
+   26 			svcerr_auth: <>
+   27 			ypbindproc_setdom_2_yp: void * (), <./ypbind.c 239>
+   28 				strchr: <>
+   29 				syslog: <>
+   30 				svc_getcaller: <>
+   31 				htonl: <>
+   32 				svcerr_noprog: <>
+   33 				ntohs: <>
+   34 				bzero: <>
+   35 				memcpy: <>
+   36 				rpc_received: void (), <./ypbind.c 820>
+   37 					strcmp: <>
+   38 					kill: <>
+   39 					close: <>
+   40 					FD_CLR: <>
+   41 					ntohs: <>
+   42 					syslog: <>
+   43 					inet_ntoa: <>
+   44 					sprintf: <>
+   45 					unlink: <>
+   46 					free: <>
+   47 					broadcast: void (), <./ypbind.c 654>
+   48 						bool_t: <>
+   49 						pipe: <>
+   50 						syslog: <>
+   51 						inet_ntoa: <>
+   52 						flock: <>
+   53 						fork: <>
+   54 						close: <>
+   55 						signal: <>
+   56 						FD_SET: <>
+   57 						bzero: <>
+   58 						tell_parent: int (), <./ypbind.c 589>
+   59 							sprintf: <>
+   60 							write: <>
+   61 							FD_ZERO: <>
+   62 							FD_SET: <>
+   63 							select: <>
+   64 							FD_ISSET: <>
+   65 							close: <>
+   66 						bcopy: <>
+   67 						clnt_broadcast: <>
+   68 						broadcast_result: bool_t (), <./ypbind.c 623>
+   69 							bzero: <>
+   70 							tell_parent: 58
+   71 							syslog: <>
+   72 							verify: int (), <./ypbind.c 969>
+   73 								bcmp: <>
+   74 							inet_ntoa: <>
+   75 					malloc: <>
+   76 					bzero: <>
+   77 					strncpy: <>
+   78 					bcopy: <>
+   79 					open: <>
+   80 					mkdir: <>
+   81 					flock: <>
+   82 					memcpy: <>
+   83 					writev: <>
+   84 			svcerr_noproc: <>
+   85 			bzero: <>
+   86 			svc_getargs: <>
+   87 			svcerr_decode: <>
+   88 			svc_sendreply: <>
+   89 			svcerr_systemerr: <>
+   90 		svctcp_create: <>
+   91 		malloc: <>
+   92 		bzero: <>
+   93 		strncpy: <>
+   94 		signal: <>
+   95 		reaper: void (), <./ypbind.c 352>
+   96 			wait3: <>
+   97 		terminate: void (), <./ypbind.c 361>
+   98 			getpid: <>
+   99 			exit: <>
+  100 			close: <>
+  101 			kill: <>
+  102 			sprintf: <>
+  103 			unlink: <>
+  104 			pmap_unset: <>
+  105 		getpid: <>
+  106 		openlog: <>
+  107 		madvise: <>
+  108 		syslog: <>
+  109 		broadcast: 47
+  110 		select: <>
+  111 		checkwork: void (), <./ypbind.c 512>
+  112 			ping: int (), <./ypbind.c 772>
+  113 				bool_t: <>
+  114 				clntudp_bufcreate: <>
+  115 				broadcast: 47
+  116 				clnt_call: <>
+  117 				clnt_destroy: <>
+  118 		FD_ISSET: <>
+  119 		handle_children: void (), <./ypbind.c 533>
+  120 			read: <>
+  121 			syslog: <>
+  122 			close: <>
+  123 			FD_CLR: <>
+  124 			rpc_received: 36
+  125 			sprintf: <>
+  126 			unlink: <>
+  127 			free: <>
+  128 			broadcast: 47
+  129 		svc_getreqset: <>
+  130 		exit: <>

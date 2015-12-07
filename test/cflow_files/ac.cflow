@@ -1,0 +1,72 @@
+    1 	main: int (), <./ac.c 205>
+    2 		setlocale: <>
+    3 		getopt: <>
+    4 		usage: void (), <./ac.c 512>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		add_tty: void (), <./ac.c 101>
+    8 			malloc: <>
+    9 			errx: <>
+   10 			strlcpy: <>
+   11 			strchr: <>
+   12 			strlen: <>
+   13 			SLIST_INSERT_HEAD: <>
+   14 		update_user: void (), <./ac.c 171>
+   15 			SLIST_FOREACH: <>
+   16 			strcmp: <>
+   17 			timeradd: <>
+   18 			malloc: <>
+   19 			errx: <>
+   20 			SLIST_INSERT_HEAD: <>
+   21 			SLIST_INSERT_AFTER: <>
+   22 			strlcpy: <>
+   23 		ac: void (), <./ac.c 403>
+   24 			timerclear: <>
+   25 			setutxdb: <>
+   26 			err: <>
+   27 			getutxent: <>
+   28 			timercmp: <>
+   29 			timerisset: <>
+   30 			localtime: <>
+   31 			show_today: void (), <./ac.c 280>
+   32 				nl_langinfo: <>
+   33 				timersub: <>
+   34 				strftime: <>
+   35 				localtime: <>
+   36 				SLIST_FOREACH: <>
+   37 				update_user: 14
+   38 				timeradd: <>
+   39 				timerclear: <>
+   40 				timerisset: <>
+   41 				printf: <>
+   42 			timersub: <>
+   43 			SLIST_FOREACH: <>
+   44 			log_out: void (), <./ac.c 316>
+   45 				SLIST_FIRST: <>
+   46 				memcmp: <>
+   47 				timersub: <>
+   48 				update_user: 14
+   49 				SLIST_NEXT: <>
+   50 				SLIST_REMOVE_HEAD: <>
+   51 				SLIST_REMOVE_AFTER: <>
+   52 				free: <>
+   53 			strncmp: <>
+   54 			log_in: void (), <./ac.c 347>
+   55 				on_console: int (), <./ac.c 154>
+   56 					SLIST_FOREACH: <>
+   57 					strcmp: <>
+   58 				strlcpy: <>
+   59 				do_tty: int (), <./ac.c 130>
+   60 					SLIST_FOREACH: <>
+   61 					strncmp: <>
+   62 				malloc: <>
+   63 				errx: <>
+   64 				SLIST_INSERT_HEAD: <>
+   65 				memcpy: <>
+   66 			endutxent: <>
+   67 			gettimeofday: <>
+   68 			show_users: void (), <./ac.c 268>
+   69 				SLIST_FOREACH: <>
+   70 				show: void (), <./ac.c 260>
+   71 					printf: <>
+   72 			show: 70

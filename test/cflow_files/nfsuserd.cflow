@@ -1,0 +1,76 @@
+    1 	main: int (), <./nfsuserd.c 99>
+    2 		modfind: <>
+    3 		kldload: <>
+    4 		errx: <>
+    5 		gethostname: <>
+    6 		strchr: <>
+    7 		memset: <>
+    8 		getaddrinfo: <>
+    9 		freeaddrinfo: <>
+   10 		strcmp: <>
+   11 		usage: void (), <./nfsuserd.c 720>
+   12 			errx: <>
+   13 		strncpy: <>
+   14 		atoi: <>
+   15 		fprintf: <>
+   16 		warnx: <>
+   17 		strlen: <>
+   18 		isascii: <>
+   19 		isupper: <>
+   20 		tolower: <>
+   21 		nfssvc: <>
+   22 		socket: <>
+   23 		err: <>
+   24 		setsockopt: <>
+   25 		svcudp_create: <>
+   26 		svc_register: <>
+   27 		nfsuserdsrv: void (), <./nfsuserd.c 453>
+   28 			ntohs: <>
+   29 			ntohl: <>
+   30 			syslog: <>
+   31 			svcerr_weakauth: <>
+   32 			svc_sendreply: <>
+   33 			svc_getargs: <>
+   34 			xdr_getid: bool_t (), <./nfsuserd.c 641>
+   35 				xdr_long: <>
+   36 			svcerr_decode: <>
+   37 			getpwuid: <>
+   38 			getgrouplist: <>
+   39 			strlen: <>
+   40 			nfssvc: <>
+   41 			xdr_retval: bool_t (), <./nfsuserd.c 671>
+   42 				xdr_long: <>
+   43 			getgrgid: <>
+   44 			xdr_getname: bool_t (), <./nfsuserd.c 652>
+   45 				xdr_long: <>
+   46 				xdr_opaque: <>
+   47 			getpwnam: <>
+   48 			getgrnam: <>
+   49 			svcerr_noproc: <>
+   50 		htons: <>
+   51 		printf: <>
+   52 		exit: <>
+   53 		getpwnam: <>
+   54 		getgrnam: <>
+   55 		setgrent: <>
+   56 		getgrent: <>
+   57 		setpwent: <>
+   58 		getpwent: <>
+   59 		getgrouplist: <>
+   60 		syslog: <>
+   61 		sigemptyset: <>
+   62 		sigaddset: <>
+   63 		sigprocmask: <>
+   64 		daemon: <>
+   65 		signal: <>
+   66 		cleanup_term: void (), <./nfsuserd.c 684>
+   67 			exit: <>
+   68 			kill: <>
+   69 			wait3: <>
+   70 			nfssvc: <>
+   71 			syslog: <>
+   72 		openlog: <>
+   73 		fork: <>
+   74 		setproctitle: <>
+   75 		svc_run: <>
+   76 		sigsuspend: <>

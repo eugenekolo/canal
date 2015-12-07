@@ -1,0 +1,76 @@
+    1 	main: int (), <./watch.c 284>
+    2 		setlocale: <>
+    3 		isatty: <>
+    4 		getopt: <>
+    5 		usage: void (), <./watch.c 183>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		tcgetattr: <>
+    9 		modfind: <>
+   10 		kldload: <>
+   11 		warn: <>
+   12 		signal: <>
+   13 		cleanup: void (), <./watch.c 172>
+   14 			timestamp: void (), <./watch.c 93>
+   15 				clear: void (), <./watch.c 84>
+   16 					tputs: <>
+   17 					fflush: <>
+   18 				printf: <>
+   19 				time: <>
+   20 				strftime: <>
+   21 				localtime: <>
+   22 				fflush: <>
+   23 			close: <>
+   24 			unset_tty: void (), <./watch.c 134>
+   25 				tcsetattr: <>
+   26 			exit: <>
+   27 		open_snp: int (), <./watch.c 152>
+   28 			open: <>
+   29 			fatal: void (), <./watch.c 141>
+   30 				unset_tty: 24
+   31 				errx: <>
+   32 				exit: <>
+   33 		setup_scr: void (), <./watch.c 191>
+   34 			getenv: <>
+   35 			tgetent: <>
+   36 			tgetstr: <>
+   37 			set_tty: void (), <./watch.c 109>
+   38 				tcsetattr: <>
+   39 			clear: 15
+   40 		ask_dev: void (), <./watch.c 256>
+   41 			clear: 15
+   42 			unset_tty: 24
+   43 			printf: <>
+   44 			fgets: <>
+   45 			strlen: <>
+   46 			strcpy: <>
+   47 			set_tty: 37
+   48 		fatal: 29
+   49 		strlcpy: <>
+   50 		set_dev: void (), <./watch.c 230>
+   51 			strlen: <>
+   52 			strncmp: <>
+   53 			snprintf: <>
+   54 			sprintf: <>
+   55 			stat: <>
+   56 			fatal: 29
+   57 			strlcpy: <>
+   58 			attach_snp: void (), <./watch.c 215>
+   59 				open: <>
+   60 				fatal: 29
+   61 				ioctl: <>
+   62 				close: <>
+   63 				timestamp: 14
+   64 		malloc: <>
+   65 		FD_ZERO: <>
+   66 		FD_SET: <>
+   67 		select: <>
+   68 		FD_ISSET: <>
+   69 		ioctl: <>
+   70 		read: <>
+   71 		clear: 15
+   72 		detach_snp: void (), <./watch.c 206>
+   73 			ioctl: <>
+   74 		write: <>
+   75 		attach_snp: 58
+   76 		free: <>

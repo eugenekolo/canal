@@ -1,0 +1,111 @@
+    1 	main: int (), <./edquota.c 116>
+    2 		usage: void (), <./edquota.c 317>
+    3 			fprintf: <>
+    4 			exit: <>
+    5 		getuid: <>
+    6 		errx: <>
+    7 		getopt: <>
+    8 		warnx: <>
+    9 		calloc: <>
+   10 		strsep: <>
+   11 		isdigit: <>
+   12 		strlcpy: <>
+   13 		strtoll: <>
+   14 		cvtblkval: uint64_t (), <./edquota.c 831>
+   15 			btodb: <>
+   16 			errx: <>
+   17 		cvtinoval: uint64_t (), <./edquota.c 883>
+   18 			errx: <>
+   19 		getentry: int (), <./edquota.c 337>
+   20 			alldigits: int (), <./edquota.c 949>
+   21 				isdigit: <>
+   22 			atoi: <>
+   23 			getpwnam: <>
+   24 			warnx: <>
+   25 			sleep: <>
+   26 			getgrnam: <>
+   27 		exit: <>
+   28 		getprivs: struct quotause (), <./edquota.c 370>
+   29 		strspn: <>
+   30 		strlen: <>
+   31 		strchr: <>
+   32 		atoi: <>
+   33 		snprintf: <>
+   34 		putprivs: void (), <./edquota.c 417>
+   35 			quota_write_limits: <>
+   36 			warn: <>
+   37 		freeprivs: void (), <./edquota.c 934>
+   38 			quota_close: <>
+   39 			free: <>
+   40 		mkostemp: <>
+   41 		fchown: <>
+   42 		getgid: <>
+   43 		writetimes: int (), <./edquota.c 688>
+   44 			ftruncate: <>
+   45 			lseek: <>
+   46 			fdopen: <>
+   47 			dup: <>
+   48 			err: <>
+   49 			fprintf: <>
+   50 			cvtstoa: char * (), <./edquota.c 782>
+   51 				sprintf: <>
+   52 			fclose: <>
+   53 		editit: int (), <./edquota.c 430>
+   54 			sigblock: <>
+   55 			sigmask: <>
+   56 			fork: <>
+   57 			warnx: <>
+   58 			sleep: <>
+   59 			warn: <>
+   60 			sigsetmask: <>
+   61 			setgid: <>
+   62 			getgid: <>
+   63 			err: <>
+   64 			setuid: <>
+   65 			getuid: <>
+   66 			getenv: <>
+   67 			execlp: <>
+   68 			waitpid: <>
+   69 			WIFEXITED: <>
+   70 			WEXITSTATUS: <>
+   71 		readtimes: int (), <./edquota.c 714>
+   72 			fopen: <>
+   73 			warnx: <>
+   74 			fgets: <>
+   75 			strtok: <>
+   76 			strlen: <>
+   77 			sscanf: <>
+   78 			cvtatos: int (), <./edquota.c 808>
+   79 				bcmp: <>
+   80 				warnx: <>
+   81 			strcmp: <>
+   82 			fclose: <>
+   83 		close: <>
+   84 		unlink: <>
+   85 		writeprivs: int (), <./edquota.c 474>
+   86 			ftruncate: <>
+   87 			lseek: <>
+   88 			fdopen: <>
+   89 			dup: <>
+   90 			err: <>
+   91 			fprintf: <>
+   92 			fmthumanvalblks: char * (), <./edquota.c 503>
+   93 				humanize_number: <>
+   94 				dbtob: <>
+   95 				snprintf: <>
+   96 				dbtokb: <>
+   97 			fmthumanvalinos: char * (), <./edquota.c 517>
+   98 				humanize_number: <>
+   99 				snprintf: <>
+  100 			fclose: <>
+  101 		readprivs: int (), <./edquota.c 534>
+  102 			fopen: <>
+  103 			warnx: <>
+  104 			fgets: <>
+  105 			strtok: <>
+  106 			strlen: <>
+  107 			sscanf: <>
+  108 			cvtblkval: 14
+  109 			cvtinoval: 17
+  110 			strcmp: <>
+  111 			fclose: <>

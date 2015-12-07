@@ -1,0 +1,94 @@
+    1 	main: int (), <./rwhod.c 176>
+    2 		getuid: <>
+    3 		errx: <>
+    4 		run_as: void (), <./rwhod.c 304>
+    5 			getpwnam: <>
+    6 			syslog: <>
+    7 			exit: <>
+    8 			getgrnam: <>
+    9 		strcmp: <>
+   10 		isdigit: <>
+   11 		atoi: <>
+   12 		usage: void (), <./rwhod.c 296>
+   13 			fprintf: <>
+   14 			exit: <>
+   15 		daemon: <>
+   16 		signal: <>
+   17 		getboottime: void (), <./rwhod.c 542>
+   18 			sysctl: <>
+   19 			syslog: <>
+   20 			exit: <>
+   21 			htonl: <>
+   22 		openlog: <>
+   23 		getservbyname: <>
+   24 		syslog: <>
+   25 		exit: <>
+   26 		chdir: <>
+   27 		gethostname: <>
+   28 		strchr: <>
+   29 		strlcpy: <>
+   30 		socket: <>
+   31 		setsockopt: <>
+   32 		memset: <>
+   33 		bind: <>
+   34 		setgid: <>
+   35 		setgroups: <>
+   36 		setuid: <>
+   37 		configure: int (), <./rwhod.c 587>
+   38 			htonl: <>
+   39 			setsockopt: <>
+   40 			syslog: <>
+   41 			sysctl: <>
+   42 			quit: void (), <./rwhod.c 559>
+   43 				syslog: <>
+   44 				exit: <>
+   45 			malloc: <>
+   46 			rt_xaddrs: void (), <./rwhod.c 567>
+   47 				memset: <>
+   48 				SA_SIZE: <>
+   49 			PORT_SA: <>
+   50 			memcmp: <>
+   51 			IPADDR_SA: <>
+   52 			memset: <>
+   53 			memcpy: <>
+   54 			free: <>
+   55 		pdfork: <>
+   56 		receiver_process: void (), <./rwhod.c 349>
+   57 			open: <>
+   58 			syslog: <>
+   59 			exit: <>
+   60 			cap_rights_init: <>
+   61 			cap_rights_limit: <>
+   62 			cap_enter: <>
+   63 			recvfrom: <>
+   64 			ntohs: <>
+   65 			inet_ntoa: <>
+   66 			verify: int (), <./rwhod.c 330>
+   67 				isascii: <>
+   68 				isalnum: <>
+   69 				ispunct: <>
+   70 			snprintf: <>
+   71 			openat: <>
+   72 			ntohl: <>
+   73 			time: <>
+   74 			write: <>
+   75 			fstat: <>
+   76 			ftruncate: <>
+   77 			close: <>
+   78 		sender_process: void (), <./rwhod.c 450>
+   79 			time: <>
+   80 			getboottime: 17
+   81 			setutxent: <>
+   82 			getutxent: <>
+   83 			strncpy: <>
+   84 			htonl: <>
+   85 			endutxent: <>
+   86 			chdir: <>
+   87 			syslog: <>
+   88 			exit: <>
+   89 			stat: <>
+   90 			getloadavg: <>
+   91 			sendto: <>
+   92 			setsockopt: <>
+   93 			waitpid: <>
+   94 			sleep: <>

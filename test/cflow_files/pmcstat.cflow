@@ -1,0 +1,381 @@
+    1 	main: int (), <./pmcstat.c 552>
+    2 		STAILQ_INIT: <>
+    3 		SLIST_INIT: <>
+    4 		bzero: <>
+    5 		CPU_ZERO: <>
+    6 		sysctlbyname: <>
+    7 		err: <>
+    8 		malloc: <>
+    9 		cpuset_getaffinity: <>
+   10 		CPU_COPY: <>
+   11 		getopt: <>
+   12 		pmcstat_get_cpumask: void (), <./pmcstat.c 145>
+   13 			CPU_ZERO: <>
+   14 			strtol: <>
+   15 			errx: <>
+   16 			CPU_SET: <>
+   17 			strspn: <>
+   18 			assert: <>
+   19 			CPU_EMPTY: <>
+   20 		stat: <>
+   21 		S_ISDIR: <>
+   22 		errx: <>
+   23 		pmcstat_pluginconfigure_log: void (), <./pmcstat_log.c 2091>
+   24 			strncmp: <>
+   25 			atof: <>
+   26 			pl_configure: <>
+   27 			err: <>
+   28 		free: <>
+   29 		strdup: <>
+   30 		strtod: <>
+   31 		CPU_FFS: <>
+   32 		strcspn: <>
+   33 		strncpy: <>
+   34 		STAILQ_INSERT_TAIL: <>
+   35 		CPU_CLR: <>
+   36 		pmcstat_clone_event_descriptor: void (), <./pmcstat.c 117>
+   37 			CPU_ISSET: <>
+   38 			malloc: <>
+   39 			errx: <>
+   40 			memset: <>
+   41 			strdup: <>
+   42 			STAILQ_INSERT_TAIL: <>
+   43 		CPU_SET: <>
+   44 		strtol: <>
+   45 		fclose: <>
+   46 		fopen: <>
+   47 		pmcstat_find_targets: void (), <./pmcstat.c 284>
+   48 			strtol: <>
+   49 			malloc: <>
+   50 			SLIST_INSERT_HEAD: <>
+   51 			kvm_openfiles: <>
+   52 			err: <>
+   53 			kvm_getprocs: <>
+   54 			kvm_geterr: <>
+   55 			regcomp: <>
+   56 			regerror: <>
+   57 			regexec: <>
+   58 			errx: <>
+   59 			regfree: <>
+   60 		pmcstat_show_usage: void (), <./pmcstat.c 485>
+   61 			errx: <>
+   62 		CPU_FILL: <>
+   63 		STAILQ_EMPTY: <>
+   64 		snprintf: <>
+   65 		S_ISREG: <>
+   66 		dirname: <>
+   67 		strcmp: <>
+   68 		pmc_init: <>
+   69 		pmc_npmc: <>
+   70 		kqueue: <>
+   71 		pmcstat_initialize_logging: void (), <./pmcstat_log.c 2110>
+   72 			setenv: <>
+   73 			err: <>
+   74 			pmcstat_string_initialize: void (), <./pmcstat_log.c 384>
+   75 				LIST_INIT: <>
+   76 			LIST_INIT: <>
+   77 			pmcstat_process_lookup: struct pmcstat_process (), <./pmcstat_log.c 1249>
+   78 			pl_init: <>
+   79 		pmcstat_open_log: int (), <./pmcstat_log.c 1783>
+   80 			strchr: <>
+   81 			strrchr: <>
+   82 			strerror: <>
+   83 			assert: <>
+   84 			strncpy: <>
+   85 			memset: <>
+   86 			getaddrinfo: <>
+   87 			gai_strerror: <>
+   88 			socket: <>
+   89 			bind: <>
+   90 			close: <>
+   91 			listen: <>
+   92 			accept: <>
+   93 			connect: <>
+   94 			freeaddrinfo: <>
+   95 			open: <>
+   96 			errx: <>
+   97 		pmclog_open: <>
+   98 		fcntl: <>
+   99 		EV_SET: <>
+  100 		kevent: <>
+  101 		pipe: <>
+  102 		pmc_configure_logfile: <>
+  103 		STAILQ_FOREACH: <>
+  104 		pmc_allocate: <>
+  105 		PMC_IS_SYSTEM_MODE: <>
+  106 		PMC_IS_SAMPLING_MODE: <>
+  107 		pmc_set: <>
+  108 		pmc_width: <>
+  109 		strlen: <>
+  110 		floor: <>
+  111 		isatty: <>
+  112 		fileno: <>
+  113 		ioctl: <>
+  114 		pmcstat_create_process: void (), <./pmcstat.c 225>
+  115 			socketpair: <>
+  116 			err: <>
+  117 			fork: <>
+  118 			close: <>
+  119 			write: <>
+  120 			read: <>
+  121 			execvp: <>
+  122 			kill: <>
+  123 			getppid: <>
+  124 			EV_SET: <>
+  125 			kevent: <>
+  126 			malloc: <>
+  127 			errx: <>
+  128 			SLIST_INSERT_HEAD: <>
+  129 		pmc_get_driver_stats: <>
+  130 		SLIST_EMPTY: <>
+  131 		pmcstat_attach_pmcs: void (), <./pmcstat.c 167>
+  132 			STAILQ_FOREACH: <>
+  133 			PMC_IS_SYSTEM_MODE: <>
+  134 			SLIST_FOREACH: <>
+  135 			pmc_attach: <>
+  136 			err: <>
+  137 			errx: <>
+  138 		kvm_close: <>
+  139 		pmcstat_start_pmcs: void (), <./pmcstat.c 363>
+  140 			STAILQ_FOREACH: <>
+  141 			assert: <>
+  142 			pmc_start: <>
+  143 			warn: <>
+  144 			pmcstat_cleanup: void (), <./pmcstat.c 193>
+  145 				STAILQ_FOREACH_SAFE: <>
+  146 				pmc_stop: <>
+  147 				err: <>
+  148 				pmc_release: <>
+  149 				free: <>
+  150 				STAILQ_REMOVE: <>
+  151 				pmc_configure_logfile: <>
+  152 				pmclog_close: <>
+  153 				pmcstat_shutdown_logging: void (), <./pmcstat_log.c 2155>
+  154 					strcmp: <>
+  155 					fopen: <>
+  156 					fprintf: <>
+  157 					pl_shutdown: <>
+  158 					LIST_FOREACH_SAFE: <>
+  159 					pl_shutdownimage: <>
+  160 					free: <>
+  161 					pclose: <>
+  162 					LIST_REMOVE: <>
+  163 					TAILQ_FOREACH_SAFE: <>
+  164 					TAILQ_REMOVE: <>
+  165 					pmcstat_string_shutdown: void (), <./pmcstat_log.c 397>
+  166 						LIST_FOREACH_SAFE: <>
+  167 						LIST_REMOVE: <>
+  168 						free: <>
+  169 					PRINT: <>
+  170 					fclose: <>
+  171 			exit: <>
+  172 		pmcstat_start_process: void (), <./pmcstat.c 475>
+  173 			write: <>
+  174 			err: <>
+  175 			close: <>
+  176 		sigemptyset: <>
+  177 		sigaction: <>
+  178 		initscr: <>
+  179 		has_colors: <>
+  180 		start_color: <>
+  181 		use_default_colors: <>
+  182 		pair_content: <>
+  183 		init_pair: <>
+  184 		cbreak: <>
+  185 		noecho: <>
+  186 		nonl: <>
+  187 		nodelay: <>
+  188 		intrflush: <>
+  189 		keypad: <>
+  190 		clear: <>
+  191 		getmaxyx: <>
+  192 		atexit: <>
+  193 		pmcstat_topexit: void (), <./pmcstat.c 534>
+  194 			clrtoeol: <>
+  195 			refresh: <>
+  196 			endwin: <>
+  197 		errc: <>
+  198 		pmcstat_close_log: int (), <./pmcstat_log.c 1758>
+  199 			pmc_close_logfile: <>
+  200 			err: <>
+  201 		pmcstat_keypress_log: int (), <./pmcstat_log.c 1981>
+  202 			newwin: <>
+  203 			wgetch: <>
+  204 			wprintw: <>
+  205 			pl_shutdown: <>
+  206 			pmcstat_stats_reset: void (), <./pmcstat_log.c 287>
+  207 				LIST_FOREACH: <>
+  208 				bzero: <>
+  209 			pl_init: <>
+  210 			pmcstat_changefilter: void (), <./pmcstat_log.c 1952>
+  211 				pmcstat_pmcindex_to_pmcr: struct pmcstat_pmcrecord (), <./pmcstat_log.c 1126>
+  212 			pl_topdisplay: <>
+  213 			pmcstat_pmcindex_to_name: const char * (), <./pmcstat_log.c 1110>
+  214 				LIST_FOREACH: <>
+  215 				pmcstat_string_unintern: const char * (), <./pmcstat_log.c 346>
+  216 			pl_topkeypress: <>
+  217 			wrefresh: <>
+  218 			delwin: <>
+  219 		pmcstat_process_log: int (), <./pmcstat_log.c 1883>
+  220 			pmcstat_print_log: int (), <./pmcstat_log.c 1622>
+  221 				pmclog_read: <>
+  222 				assert: <>
+  223 				PMCSTAT_PRINT_ENTRY: <>
+  224 				PMC_CALLCHAIN_CPUFLAGS_TO_CPU: <>
+  225 				PMC_CALLCHAIN_CPUFLAGS_TO_USERMODE: <>
+  226 				pmc_name_of_cputype: <>
+  227 				warnx: <>
+  228 				fprintf: <>
+  229 				errx: <>
+  230 			pmcstat_analyze_log: int (), <./pmcstat_log.c 1360>
+  231 				assert: <>
+  232 				elf_version: <>
+  233 				err: <>
+  234 				pmclog_read: <>
+  235 				warnx: <>
+  236 				pmcstat_process_lookup: struct pmcstat_process (), <./pmcstat_log.c 1249>
+  237 				pmcstat_string_intern: pmcstat_interned_string (), <./pmcstat_log.c 324>
+  238 					pmcstat_string_lookup: pmcstat_interned_string (), <./pmcstat_log.c 355>
+  239 						pmcstat_string_compute_hash: int (), <./pmcstat_log.c 308>
+  240 						strlen: <>
+  241 						LIST_FOREACH: <>
+  242 						strcmp: <>
+  243 					pmcstat_string_compute_hash: 239
+  244 					strlen: <>
+  245 					malloc: <>
+  246 					err: <>
+  247 					strdup: <>
+  248 					LIST_INSERT_HEAD: <>
+  249 				pmcstat_image_from_path: struct pmcstat_image (), <./pmcstat_log.c 808>
+  250 				pmcstat_image_determine_type: void (), <./pmcstat_log.c 779>
+  251 					assert: <>
+  252 					pmcstat_image_get_elf_params: void (), <./pmcstat_log.c 618>
+  253 						assert: <>
+  254 						pmcstat_string_unintern: 215
+  255 						snprintf: <>
+  256 						open: <>
+  257 						elf_begin: <>
+  258 						elf_kind: <>
+  259 						warnx: <>
+  260 						gelf_getehdr: <>
+  261 						elf_errmsg: <>
+  262 						elf_getphnum: <>
+  263 						gelf_getphdr: <>
+  264 						elf_rawfile: <>
+  265 						pmcstat_string_intern: 237
+  266 						elf_getshnum: <>
+  267 						elf_getscn: <>
+  268 						gelf_getshdr: <>
+  269 						min: <>
+  270 						max: <>
+  271 						pmcstat_image_add_symbols: void (), <./pmcstat_log.c 505>
+  272 							elf_getdata: <>
+  273 							gelf_getsym: <>
+  274 							GELF_ST_TYPE: <>
+  275 							realloc: <>
+  276 							pmcstat_symbol_search: struct pmcstat_symbol (), <./pmcstat_log.c 484>
+  277 							elf_strptr: <>
+  278 							pmcstat_string_intern: 237
+  279 							assert: <>
+  280 							qsort: <>
+  281 							pmcstat_symbol_compare: int (), <./pmcstat_log.c 465>
+  282 						elf_end: <>
+  283 						close: <>
+  284 					pmcstat_image_get_aout_params: void (), <./pmcstat_log.c 418>
+  285 						pmcstat_string_unintern: 215
+  286 						assert: <>
+  287 						errx: <>
+  288 						snprintf: <>
+  289 						open: <>
+  290 						read: <>
+  291 						warn: <>
+  292 						close: <>
+  293 						N_BADMAG: <>
+  294 				pmcstat_image_link: void (), <./pmcstat_log.c 859>
+  295 					assert: <>
+  296 					malloc: <>
+  297 					err: <>
+  298 					TAILQ_FOREACH: <>
+  299 					TAILQ_INSERT_TAIL: <>
+  300 					TAILQ_INSERT_BEFORE: <>
+  301 				pmcstat_image_unmap: void (), <./pmcstat_log.c 900>
+  302 					assert: <>
+  303 					TAILQ_FOREACH_SAFE: <>
+  304 					TAILQ_REMOVE: <>
+  305 					free: <>
+  306 					malloc: <>
+  307 					err: <>
+  308 					TAILQ_INSERT_AFTER: <>
+  309 				pmcstat_lookup_pmcid: struct pmcstat_pmcrecord (), <./pmcstat_log.c 1142>
+  310 				pl_process: <>
+  311 				pmcstat_process_find_map: struct pmcstat_pcmap (), <./pmcstat_log.c 1340>
+  312 				PMC_CALLCHAIN_CPUFLAGS_TO_CPU: <>
+  313 				CPU_ISSET: <>
+  314 				PMC_CALLCHAIN_CPUFLAGS_TO_USERMODE: <>
+  315 				pmcstat_pmcid_add: void (), <./pmcstat_log.c 1054>
+  316 					LIST_FOREACH: <>
+  317 					malloc: <>
+  318 					err: <>
+  319 					LIST_INSERT_HEAD: <>
+  320 					pl_newpmc: <>
+  321 				TAILQ_FOREACH_SAFE: <>
+  322 				TAILQ_REMOVE: <>
+  323 				free: <>
+  324 				pmcstat_process_exec: void (), <./pmcstat_log.c 1296>
+  325 					pmcstat_image_from_path: struct pmcstat_image (), <./pmcstat_log.c 808>
+  326 					pmcstat_image_determine_type: 250
+  327 					assert: <>
+  328 					pmcstat_process_elf_exec: void (), <./pmcstat_log.c 1176>
+  329 						assert: <>
+  330 						pmcstat_image_link: 294
+  331 						pmcstat_image_from_path: struct pmcstat_image (), <./pmcstat_log.c 808>
+  332 						warnx: <>
+  333 						pmcstat_string_unintern: 215
+  334 						pmcstat_image_get_elf_params: 252
+  335 					pmcstat_process_aout_exec: void (), <./pmcstat_log.c 1162>
+  336 					err: <>
+  337 					pmcstat_string_unintern: 215
+  338 				TAILQ_FOREACH: <>
+  339 		wait: <>
+  340 		pmcstat_kill_process: void (), <./pmcstat.c 345>
+  341 			assert: <>
+  342 			SLIST_FIRST: <>
+  343 			kill: <>
+  344 			err: <>
+  345 		assert: <>
+  346 		pmc_flush_logfile: <>
+  347 		pmcstat_print_pmcs: void (), <./pmcstat.c 448>
+  348 			fprintf: <>
+  349 			pmcstat_print_headers: void (), <./pmcstat.c 382>
+  350 				fprintf: <>
+  351 				STAILQ_FOREACH: <>
+  352 				PMC_IS_SAMPLING_MODE: <>
+  353 				PMC_IS_SYSTEM_MODE: <>
+  354 				fflush: <>
+  355 			pmcstat_print_counters: void (), <./pmcstat.c 412>
+  356 				STAILQ_FOREACH: <>
+  357 				PMC_IS_SAMPLING_MODE: <>
+  358 				pmc_read: <>
+  359 				err: <>
+  360 				fprintf: <>
+  361 				fflush: <>
+  362 		fprintf: <>
+  363 		pmcstat_display_log: void (), <./pmcstat_log.c 2070>
+  364 			pmcstat_refresh_top: void (), <./pmcstat_log.c 1901>
+  365 				pmcstat_pmcindex_to_pmcr: struct pmcstat_pmcrecord (), <./pmcstat_log.c 1126>
+  366 				snprintf: <>
+  367 				pmcstat_string_unintern: 215
+  368 				PMCSTAT_ATTRPERCENT: <>
+  369 				PMCSTAT_PRINTBEGIN: <>
+  370 				PMCSTAT_PRINTW: <>
+  371 				PMCSTAT_ATTRON: <>
+  372 				PMCSTAT_ATTROFF: <>
+  373 				pl_topdisplay: <>
+  374 				PMCSTAT_PRINTEND: <>
+  375 			pl_shutdown: <>
+  376 			pmcstat_stats_reset: 206
+  377 			pl_init: <>
+  378 		pmc_close_logfile: <>
+  379 		pmcstat_cleanup: 144
+  380 		warnx: <>
+  381 		exit: <>

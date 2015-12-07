@@ -1,0 +1,438 @@
+    1 	main: int (), <./rpcbind.c 128>
+    2 		parseargs: void (), <./rpcbind.c 782>
+    3 			getopt: <>
+    4 			realloc: <>
+    5 			errx: <>
+    6 			strdup: <>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		update_bound_sa: void (), <./rpcbind.c 675>
+   10 			malloc: <>
+   11 			memset: <>
+   12 			getaddrinfo: <>
+   13 			memcpy: <>
+   14 		open: <>
+   15 		err: <>
+   16 		flock: <>
+   17 		errx: <>
+   18 		getrlimit: <>
+   19 		setrlimit: <>
+   20 		openlog: <>
+   21 		geteuid: <>
+   22 		fprintf: <>
+   23 		exit: <>
+   24 		setnetconfig: <>
+   25 		syslog: <>
+   26 		getnetconfigent: <>
+   27 		rpc_control: <>
+   28 		init_transport: int (), <./rpcbind.c 249>
+   29 			fprintf: <>
+   30 			strcmp: <>
+   31 			syslog: <>
+   32 			memset: <>
+   33 			unlink: <>
+   34 			strcpy: <>
+   35 			SUN_LEN: <>
+   36 			realloc: <>
+   37 			inet_pton: <>
+   38 			close: <>
+   39 			setsockopt: <>
+   40 			getaddrinfo: <>
+   41 			gai_strerror: <>
+   42 			umask: <>
+   43 			bind: <>
+   44 			freeaddrinfo: <>
+   45 			malloc: <>
+   46 			memcpy: <>
+   47 			taddr2uaddr: <>
+   48 			free: <>
+   49 			listen: <>
+   50 			svc_tli_create: <>
+   51 			svc_register: <>
+   52 			pmap_service: void (), <./pmap_svc.c 71>
+   53 				rpcbs_procinfo: void (), <./rpcb_stat.c 62>
+   54 				fprintf: <>
+   55 				check_access: int (), <./security.c 62>
+   56 					svc_getrpccaller: <>
+   57 					is_loopback: int (), <./security.c 128>
+   58 						htonl: <>
+   59 						ntohs: <>
+   60 						IN6_IS_ADDR_LOOPBACK: <>
+   61 					logit: void (), <./security.c 163>
+   62 						fork: <>
+   63 						setproctitle: <>
+   64 						getrpcbynumber: <>
+   65 						snprintf: <>
+   66 						strcpy: <>
+   67 						getnameinfo: <>
+   68 						syslog: <>
+   69 					request_init: <>
+   70 					sock_methods: <>
+   71 					hosts_access: <>
+   72 				svc_sendreply: <>
+   73 				rpcbind_abort: void (), <./rpcbind.c 772>
+   74 					write_warmstart: void (), <./warmstart.c 144>
+   75 						write_struct: bool_t (), <./warmstart.c 69>
+   76 							umask: <>
+   77 							fopen: <>
+   78 							close: <>
+   79 							syslog: <>
+   80 							xdrstdio_create: <>
+   81 							fclose: <>
+   82 							XDR_DESTROY: <>
+   83 					abort: <>
+   84 				pmapproc_change: bool_t (), <./pmap_svc.c 169>
+   85 					fprintf: <>
+   86 					svc_getargs: <>
+   87 					svcerr_decode: <>
+   88 					check_access: 55
+   89 					svcerr_weakauth: <>
+   90 					svc_getcaller: <>
+   91 					snprintf: <>
+   92 					map_set: bool_t (), <./rpcb_svc_com.c 148>
+   93 						find_service: rpcblist_ptr (), <./rpcb_svc_com.c 1357>
+   94 							strcasecmp: <>
+   95 						strcmp: <>
+   96 						malloc: <>
+   97 						strdup: <>
+   98 						free: <>
+   99 						add_pmaplist: int (), <./rpcb_svc_com.c 1398>
+  100 							strcmp: <>
+  101 							sscanf: <>
+  102 							malloc: <>
+  103 							syslog: <>
+  104 					map_unset: bool_t (), <./rpcb_svc_com.c 236>
+  105 						strcasecmp: <>
+  106 						strcmp: <>
+  107 						free: <>
+  108 						del_pmaplist: int (), <./rpcb_svc_com.c 1448>
+  109 							strcmp: <>
+  110 							free: <>
+  111 					svc_sendreply: <>
+  112 					rpcbind_abort: 73
+  113 					rpcbs_set: void (), <./rpcb_stat.c 86>
+  114 					rpcbs_unset: void (), <./rpcb_stat.c 95>
+  115 				pmapproc_getport: bool_t (), <./pmap_svc.c 263>
+  116 					svc_getargs: <>
+  117 					svcerr_decode: <>
+  118 					check_access: 55
+  119 					svcerr_weakauth: <>
+  120 					taddr2uaddr: <>
+  121 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  122 					svc_getrpccaller: <>
+  123 					fprintf: <>
+  124 					free: <>
+  125 					find_service_pmap: struct pmaplist (), <./pmap_svc.c 152>
+  126 					sscanf: <>
+  127 					snprintf: <>
+  128 					is_bound: bool_t (), <./check_bound.c 141>
+  129 						strcmp: <>
+  130 						check_bound: bool_t (), <./check_bound.c 81>
+  131 							uaddr2taddr: <>
+  132 							free: <>
+  133 							bind: <>
+  134 							close: <>
+  135 					delete_prog: void (), <./rpcb_svc_com.c 287>
+  136 						is_bound: 128
+  137 						strdup: <>
+  138 						map_unset: 104
+  139 						free: <>
+  140 					svc_sendreply: <>
+  141 					rpcbind_abort: 73
+  142 					rpcbs_getaddr: void (), <./rpcb_stat.c 104>
+  143 						strcmp: <>
+  144 						rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  145 						malloc: <>
+  146 				pmapproc_dump: bool_t (), <./pmap_svc.c 344>
+  147 					svc_getargs: <>
+  148 					svcerr_decode: <>
+  149 					check_access: 55
+  150 					svcerr_weakauth: <>
+  151 					svc_sendreply: <>
+  152 					fprintf: <>
+  153 					rpcbind_abort: 73
+  154 				rpcbproc_callit_com: void (), <./rpcb_svc_com.c 598>
+  155 					svcerr_systemerr: <>
+  156 					alloca: <>
+  157 					malloc: <>
+  158 					fprintf: <>
+  159 					svc_getargs: <>
+  160 					xdr_rmtcall_args: bool_t (), <./rpcb_svc_com.c 429>
+  161 						xdr_u_int32_t: <>
+  162 						xdr_encap_parms: bool_t (), <./rpcb_svc_com.c 419>
+  163 							xdr_bytes: <>
+  164 					svcerr_decode: <>
+  165 					check_callit: int (), <./security.c 231>
+  166 						svc_getrpccaller: <>
+  167 						logit: 61
+  168 					svcerr_weakauth: <>
+  169 					svc_getrpccaller: <>
+  170 					taddr2uaddr: <>
+  171 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  172 					free: <>
+  173 					find_service: 93
+  174 					rpcbs_rmtcall: void (), <./rpcb_stat.c 148>
+  175 						strcmp: <>
+  176 						rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  177 						malloc: <>
+  178 					svcerr_noprog: <>
+  179 					find_versions: void (), <./rpcb_svc_com.c 1320>
+  180 						strcasecmp: <>
+  181 					svcerr_progvers: <>
+  182 					mergeaddr: char * (), <./check_bound.c 159>
+  183 						strcmp: <>
+  184 						check_bound: 130
+  185 						taddr2uaddr: <>
+  186 						svc_getrpccaller: <>
+  187 						syslog: <>
+  188 						fprintf: <>
+  189 						addrmerge: char * (), <./util.c 89>
+  190 							fprintf: <>
+  191 							rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  192 							taddr2uaddr: <>
+  193 							uaddr2taddr: <>
+  194 							strncmp: <>
+  195 							strdup: <>
+  196 							getifaddrs: <>
+  197 							listen_addr: int (), <./rpcbind.c 700>
+  198 								memcmp: <>
+  199 								SA2SINADDR: <>
+  200 								SA2SIN6ADDR: <>
+  201 							bitmaskcmp: int (), <./util.c 67>
+  202 							SA2SINADDR: <>
+  203 							IN6_IS_ADDR_LINKLOCAL: <>
+  204 							SA2SIN6ADDR: <>
+  205 							SA2SIN6: <>
+  206 							memcpy: <>
+  207 							SA2SIN: <>
+  208 							free: <>
+  209 							freeifaddrs: <>
+  210 						free: <>
+  211 					local_sa: struct sockaddr (), <./util.c 340>
+  212 					addrmerge: 189
+  213 					find_rmtcallfd_by_netid: int (), <./rpcb_svc_com.c 533>
+  214 						strcmp: <>
+  215 					forward_register: int (), <./rpcb_svc_com.c 929>
+  216 						time: <>
+  217 						netbufcmp: int (), <./rpcb_svc_com.c 1046>
+  218 							memcmp: <>
+  219 						free_slot_by_index: int (), <./rpcb_svc_com.c 1027>
+  220 							netbuffree: void (), <./rpcb_svc_com.c 1085>
+  221 								free: <>
+  222 							free: <>
+  223 						netbufdup: struct netbuf (), <./rpcb_svc_com.c 1071>
+  224 					xdrmem_create: <>
+  225 					xdr_callhdr: <>
+  226 					xdr_u_int32_t: <>
+  227 					authnone_create: <>
+  228 					authunix_create: <>
+  229 					AUTH_MARSHALL: <>
+  230 					AUTH_DESTROY: <>
+  231 					xdr_opaque_parms: bool_t (), <./rpcb_svc_com.c 479>
+  232 						xdr_opaque: <>
+  233 					XDR_GETPOS: <>
+  234 					uaddr2taddr: <>
+  235 					sendto: <>
+  236 					free_slot_by_xid: int (), <./rpcb_svc_com.c 1018>
+  237 						free_slot_by_index: 219
+  238 				svcerr_noproc: <>
+  239 			exit: <>
+  240 			strdup: <>
+  241 			rbllist_add: void (), <./rpcbind.c 736>
+  242 				malloc: <>
+  243 				syslog: <>
+  244 				exit: <>
+  245 				strdup: <>
+  246 				taddr2uaddr: <>
+  247 			svc_reg: <>
+  248 			rpcb_service_3: void (), <./rpcb_svc.c 65>
+  249 				rpcbs_procinfo: 53
+  250 				fprintf: <>
+  251 				check_access: 55
+  252 				svc_sendreply: <>
+  253 				rpcbproc_set_com: void * (), <./rpcb_svc_com.c 124>
+  254 					fprintf: <>
+  255 					map_set: 92
+  256 					getowner: char * (), <./rpcb_svc_com.c 1379>
+  257 						strlcpy: <>
+  258 						snprintf: <>
+  259 					rpcbs_set: 113
+  260 				rpcbproc_unset_com: void * (), <./rpcb_svc_com.c 212>
+  261 					fprintf: <>
+  262 					map_unset: 104
+  263 					getowner: 256
+  264 					rpcbs_unset: 114
+  265 				xdr_wrapstring: <>
+  266 				rpcbproc_getaddr_3_local: void * (), <./rpcb_svc.c 206>
+  267 					taddr2uaddr: <>
+  268 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  269 					svc_getrpccaller: <>
+  270 					fprintf: <>
+  271 					free: <>
+  272 					rpcbproc_getaddr_com: void * (), <./rpcb_svc_com.c 306>
+  273 						free: <>
+  274 						find_service: 93
+  275 						mergeaddr: 182
+  276 						strdup: <>
+  277 						delete_prog: 135
+  278 						fprintf: <>
+  279 						rpcbs_getaddr: 142
+  280 				rpcbproc_dump_3_local: void * (), <./rpcb_svc.c 228>
+  281 				rpcbproc_callit_com: 154
+  282 				xdr_u_long: <>
+  283 				rpcbproc_gettime_com: void * (), <./rpcb_svc_com.c 349>
+  284 					time: <>
+  285 				rpcbproc_uaddr2taddr_com: void * (), <./rpcb_svc_com.c 364>
+  286 					free: <>
+  287 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  288 					uaddr2taddr: <>
+  289 					memset: <>
+  290 				rpcbproc_taddr2uaddr_com: void * (), <./rpcb_svc_com.c 391>
+  291 					open: <>
+  292 					strerror: <>
+  293 					free: <>
+  294 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  295 					taddr2uaddr: <>
+  296 				svcerr_noproc: <>
+  297 				memset: <>
+  298 				svc_getargs: <>
+  299 				svcerr_decode: <>
+  300 				svcerr_weakauth: <>
+  301 				svcerr_systemerr: <>
+  302 				rpcbind_abort: 73
+  303 				svc_freeargs: <>
+  304 			rpcb_service_4: void (), <./rpcb_svc_4.c 69>
+  305 				rpcbs_procinfo: 53
+  306 				fprintf: <>
+  307 				check_access: 55
+  308 				svc_sendreply: <>
+  309 				rpcbproc_set_com: 253
+  310 				rpcbproc_unset_com: 260
+  311 				xdr_wrapstring: <>
+  312 				rpcbproc_getaddr_4_local: void * (), <./rpcb_svc_4.c 263>
+  313 					taddr2uaddr: <>
+  314 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  315 					svc_getrpccaller: <>
+  316 					fprintf: <>
+  317 					free: <>
+  318 					rpcbproc_getaddr_com: 272
+  319 				rpcbproc_getversaddr_4_local: void * (), <./rpcb_svc_4.c 293>
+  320 					taddr2uaddr: <>
+  321 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  322 					svc_getrpccaller: <>
+  323 					fprintf: <>
+  324 					free: <>
+  325 					rpcbproc_getaddr_com: 272
+  326 				rpcbproc_dump_4_local: void * (), <./rpcb_svc_4.c 450>
+  327 				rpcbproc_callit_com: 154
+  328 				xdr_u_long: <>
+  329 				rpcbproc_gettime_com: 283
+  330 				rpcbproc_uaddr2taddr_com: 285
+  331 				rpcbproc_taddr2uaddr_com: 290
+  332 				rpcbproc_getaddrlist_4_local: void * (), <./rpcb_svc_4.c 321>
+  333 					free_rpcb_entry_list: void (), <./rpcb_svc_4.c 435>
+  334 						free: <>
+  335 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  336 					fprintf: <>
+  337 					strcmp: <>
+  338 					mergeaddr: 182
+  339 					delete_prog: 135
+  340 					malloc: <>
+  341 					rpcbs_getaddr: 142
+  342 				rpcbproc_getstat: void * (), <./rpcb_stat.c 201>
+  343 				svcerr_noproc: <>
+  344 				memset: <>
+  345 				svc_getargs: <>
+  346 				svcerr_decode: <>
+  347 				svcerr_weakauth: <>
+  348 				svcerr_systemerr: <>
+  349 				rpcbind_abort: 73
+  350 				svc_freeargs: <>
+  351 			add_bndlist: int (), <./check_bound.c 111>
+  352 				getnetconfigent: <>
+  353 				malloc: <>
+  354 				freenetconfigent: <>
+  355 				syslog: <>
+  356 			create_rmtcall_fd: int (), <./rpcb_svc_com.c 488>
+  357 				fprintf: <>
+  358 				svc_tli_create: <>
+  359 				malloc: <>
+  360 				syslog: <>
+  361 				strdup: <>
+  362 				FD_SET: <>
+  363 		getnetconfig: <>
+  364 		strcmp: <>
+  365 		endnetconfig: <>
+  366 		signal: <>
+  367 		reap: void (), <./rpcbind.c 855>
+  368 			wait3: <>
+  369 		terminate: void (), <./rpcbind.c 760>
+  370 			close: <>
+  371 			syslog: <>
+  372 			write_warmstart: 74
+  373 			exit: <>
+  374 		read_warmstart: void (), <./warmstart.c 154>
+  375 			read_struct: bool_t (), <./warmstart.c 104>
+  376 				stat: <>
+  377 				fprintf: <>
+  378 				fopen: <>
+  379 				xdrstdio_create: <>
+  380 				fclose: <>
+  381 				XDR_DESTROY: <>
+  382 			xdr_free: <>
+  383 		printf: <>
+  384 		daemon: <>
+  385 		getpwnam: <>
+  386 		setuid: <>
+  387 		network_init: void (), <./util.c 262>
+  388 			memset: <>
+  389 			getaddrinfo: <>
+  390 			fprintf: <>
+  391 			gai_strerror: <>
+  392 			malloc: <>
+  393 			memcpy: <>
+  394 			getifaddrs: <>
+  395 			inet_pton: <>
+  396 			socket: <>
+  397 			if_nametoindex: <>
+  398 			setsockopt: <>
+  399 			perror: <>
+  400 		my_svc_run: void (), <./rpcb_svc_com.c 1097>
+  401 			FD_ISSET: <>
+  402 			fprintf: <>
+  403 			poll: <>
+  404 			check_rmtcalls: int (), <./rpcb_svc_com.c 1171>
+  405 				find_rmtcallxprt_by_fd: SVCXPRT * (), <./rpcb_svc_com.c 546>
+  406 				fprintf: <>
+  407 				handle_reply: void (), <./rpcb_svc_com.c 1225>
+  408 					malloc: <>
+  409 					recvfrom: <>
+  410 					fprintf: <>
+  411 					xdrmem_create: <>
+  412 					xdr_replymsg: <>
+  413 					forward_find: struct finfo (), <./rpcb_svc_com.c 1005>
+  414 					clnt_sperrno: <>
+  415 					send_svcsyserr: void (), <./rpcb_svc_com.c 1215>
+  416 						xprt_set_caller: void (), <./rpcb_svc_com.c 1202>
+  417 							netbuf_copybuf: bool_t (), <./rpcb_svc_com.c 1052>
+  418 								assert: <>
+  419 								free: <>
+  420 								calloc: <>
+  421 								memcpy: <>
+  422 							svc_getrpccaller: <>
+  423 						svcerr_systemerr: <>
+  424 					XDR_GETPOS: <>
+  425 					xprt_set_caller: 416
+  426 					taddr2uaddr: <>
+  427 					rpcbind_get_conf: struct netconfig (), <./check_bound.c 220>
+  428 					svc_getrpccaller: <>
+  429 					free: <>
+  430 					svc_sendreply: <>
+  431 					xdr_rmtcall_result: bool_t (), <./rpcb_svc_com.c 446>
+  432 						sscanf: <>
+  433 						xdr_u_long: <>
+  434 						xdr_wrapstring: <>
+  435 						xdr_encap_parms: 162
+  436 					free_slot_by_xid: 236
+  437 			svc_getreq_poll: <>
+  438 		rpcbind_abort: 73

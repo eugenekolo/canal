@@ -1,0 +1,35 @@
+    1 	main: int (), <./chown.c 73>
+    2 		strcmp: <>
+    3 		basename: <>
+    4 		getopt: <>
+    5 		usage: void (), <./chown.c 305>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		errx: <>
+    9 		strchr: <>
+   10 		a_gid: void (), <./chown.c 235>
+   11 			getgrnam: <>
+   12 			id: uid_t (), <./chown.c 256>
+   13 				strtoul: <>
+   14 				errx: <>
+   15 		warnx: <>
+   16 		a_uid: void (), <./chown.c 246>
+   17 			getpwnam: <>
+   18 			id: 12
+   19 		fts_open: <>
+   20 		err: <>
+   21 		fts_read: <>
+   22 		fts_set: <>
+   23 		strerror: <>
+   24 		fchownat: <>
+   25 		chownerr: void (), <./chown.c 273>
+   26 			geteuid: <>
+   27 			warn: <>
+   28 			sysconf: <>
+   29 			malloc: <>
+   30 			err: <>
+   31 			getgroups: <>
+   32 			free: <>
+   33 			warnx: <>
+   34 		printf: <>
+   35 		exit: <>

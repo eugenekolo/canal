@@ -1,0 +1,54 @@
+    1 	main: int (), <./pmccontrol.c 344>
+    2 		pmcc_init_debug: void (), <./pmccontrol.c 110>
+    3 			getenv: <>
+    4 			fopen: <>
+    5 		STAILQ_INIT: <>
+    6 		getopt: <>
+    7 		strtoul: <>
+    8 		errx: <>
+    9 		malloc: <>
+   10 		err: <>
+   11 		STAILQ_INSERT_TAIL: <>
+   12 		warnx: <>
+   13 		exit: <>
+   14 		pmc_init: <>
+   15 		pmcc_do_list_state: int (), <./pmccontrol.c 212>
+   16 			pmc_cpuinfo: <>
+   17 			err: <>
+   18 			printf: <>
+   19 			pmc_name_of_cputype: <>
+   20 			sysconf: <>
+   21 			CPU_ZERO: <>
+   22 			sysctlbyname: <>
+   23 			CPU_ISSET: <>
+   24 			pmc_pmcinfo: <>
+   25 			pmc_npmc: <>
+   26 			pmc_name_of_class: <>
+   27 			pmc_name_of_disposition: <>
+   28 			pmc_name_of_event: <>
+   29 			PMC_IS_SAMPLING_MODE: <>
+   30 			free: <>
+   31 		pmcc_do_list_events: int (), <./pmccontrol.c 284>
+   32 			pmc_cpuinfo: <>
+   33 			err: <>
+   34 			printf: <>
+   35 			pmc_name_of_class: <>
+   36 			pmc_event_names_of_class: <>
+   37 			free: <>
+   38 		pmcc_show_statistics: int (), <./pmccontrol.c 314>
+   39 			pmc_get_driver_stats: <>
+   40 			err: <>
+   41 			PRINT: <>
+   42 		STAILQ_EMPTY: <>
+   43 		pmcc_do_enable_disable: int (), <./pmccontrol.c 126>
+   44 			pmc_ncpu: <>
+   45 			err: <>
+   46 			pmc_npmc: <>
+   47 			errx: <>
+   48 			calloc: <>
+   49 			STAILQ_FOREACH: <>
+   50 			SET_PMCS: <>
+   51 			MAP: <>
+   52 			pmc_enable: <>
+   53 			pmc_disable: <>
+   54 		assert: <>

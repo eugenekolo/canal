@@ -1,0 +1,199 @@
+    1 	main: int (), <./vidcontrol.c 1329>
+    2 		is_vt4: int (), <./vidcontrol.c 217>
+    3 			sysctlbyname: <>
+    4 			strcmp: <>
+    5 		init: void (), <./vidcontrol.c 121>
+    6 			ioctl: <>
+    7 			errc: <>
+    8 		ioctl: <>
+    9 		err: <>
+   10 		getopt: <>
+   11 		set_border_color: void (), <./vidcontrol.c 924>
+   12 			get_color_number: int (), <./vidcontrol.c 818>
+   13 				strcmp: <>
+   14 			fprintf: <>
+   15 			usage: void (), <./vidcontrol.c 196>
+   16 				fprintf: <>
+   17 				exit: <>
+   18 		clear_history: void (), <./vidcontrol.c 1309>
+   19 			ioctl: <>
+   20 			revert: void (), <./vidcontrol.c 159>
+   21 				ioctl: <>
+   22 				fprintf: <>
+   23 			errc: <>
+   24 		set_cursor_type: void (), <./vidcontrol.c 626>
+   25 			strcmp: <>
+   26 			revert: 20
+   27 			errx: <>
+   28 			ioctl: <>
+   29 			errc: <>
+   30 		print_scrnmap: void (), <./vidcontrol.c 349>
+   31 			ioctl: <>
+   32 			revert: 20
+   33 			errc: <>
+   34 			fprintf: <>
+   35 		nextarg: char * (), <./vidcontrol.c 233>
+   36 			revert: 20
+   37 			errx: <>
+   38 		load_font: void (), <./vidcontrol.c 472>
+   39 			ioctl: <>
+   40 			revert: 20
+   41 			warn: <>
+   42 			snprintf: <>
+   43 			openguess: FILE * (), <./vidcontrol.c 253>
+   44 				asprintf: <>
+   45 				fopen: <>
+   46 				free: <>
+   47 			errx: <>
+   48 			load_vt4font: int (), <./vidcontrol.c 426>
+   49 				fread: <>
+   50 				perror: <>
+   51 				memcmp: <>
+   52 				fprintf: <>
+   53 				be32toh: <>
+   54 				howmany: <>
+   55 				malloc: <>
+   56 				load_vt4mappingtable: vfnt_map_t * (), <./vidcontrol.c 388>
+   57 					malloc: <>
+   58 					fread: <>
+   59 					perror: <>
+   60 					exit: <>
+   61 					be32toh: <>
+   62 					be16toh: <>
+   63 				ioctl: <>
+   64 			fclose: <>
+   65 			sscanf: <>
+   66 			DATASIZE: <>
+   67 			malloc: <>
+   68 			decode: int (), <./decode.c 38>
+   69 				fgets: <>
+   70 				strncmp: <>
+   71 				sscanf: <>
+   72 				DEC: <>
+   73 				bcopy: <>
+   74 				strcmp: <>
+   75 			fsize: int (), <./vidcontrol.c 377>
+   76 				fstat: <>
+   77 				fileno: <>
+   78 			free: <>
+   79 			rewind: <>
+   80 			fread: <>
+   81 			warnx: <>
+   82 			errc: <>
+   83 		usage: 15
+   84 		load_default_vt4font: void (), <./vidcontrol.c 417>
+   85 			ioctl: <>
+   86 			revert: 20
+   87 			errc: <>
+   88 		sscanf: <>
+   89 		revert: 20
+   90 		warnx: <>
+   91 		set_history: void (), <./vidcontrol.c 1286>
+   92 			atoi: <>
+   93 			revert: 20
+   94 			errx: <>
+   95 			ioctl: <>
+   96 			errc: <>
+   97 		show_info: void (), <./vidcontrol.c 1154>
+   98 			strcmp: <>
+   99 			show_adapter_info: void (), <./vidcontrol.c 1042>
+  100 				ioctl: <>
+  101 				revert: 20
+  102 				errc: <>
+  103 				printf: <>
+  104 				adapter_name: const char * (), <./vidcontrol.c 1012>
+  105 			show_mode_info: void (), <./vidcontrol.c 1075>
+  106 				printf: <>
+  107 				memset: <>
+  108 				ioctl: <>
+  109 				snprintf: <>
+  110 			revert: 20
+  111 			errx: <>
+  112 		load_scrnmap: void (), <./vidcontrol.c 284>
+  113 			openguess: 43
+  114 			revert: 20
+  115 			errx: <>
+  116 			decode: 68
+  117 			rewind: <>
+  118 			fread: <>
+  119 			warnx: <>
+  120 			fclose: <>
+  121 			ioctl: <>
+  122 			errc: <>
+  123 		load_default_scrnmap: void (), <./vidcontrol.c 329>
+  124 			ioctl: <>
+  125 			revert: 20
+  126 			errc: <>
+  127 		set_mouse_char: void (), <./vidcontrol.c 936>
+  128 			strtol: <>
+  129 			revert: 20
+  130 			warnx: <>
+  131 			ioctl: <>
+  132 			errc: <>
+  133 		set_mouse: void (), <./vidcontrol.c 964>
+  134 			strcmp: <>
+  135 			revert: 20
+  136 			errx: <>
+  137 			ioctl: <>
+  138 			errc: <>
+  139 		get_reverse_colors: void (), <./vidcontrol.c 860>
+  140 			get_color_number: 12
+  141 			fprintf: <>
+  142 		set_lockswitch: void (), <./vidcontrol.c 986>
+  143 			strcmp: <>
+  144 			revert: 20
+  145 			errx: <>
+  146 			ioctl: <>
+  147 			errc: <>
+  148 		set_console: void (), <./vidcontrol.c 898>
+  149 			strspn: <>
+  150 			strlen: <>
+  151 			revert: 20
+  152 			errx: <>
+  153 			atoi: <>
+  154 			ioctl: <>
+  155 			errc: <>
+  156 		strcmp: <>
+  157 		set_screensaver_timeout: void (), <./vidcontrol.c 599>
+  158 			strcmp: <>
+  159 			atoi: <>
+  160 			revert: 20
+  161 			errx: <>
+  162 			ioctl: <>
+  163 			errc: <>
+  164 		dump_screen: void (), <./vidcontrol.c 1206>
+  165 			ioctl: <>
+  166 			revert: 20
+  167 			errc: <>
+  168 			alloca: <>
+  169 			errx: <>
+  170 			printf: <>
+  171 			fflush: <>
+  172 			write: <>
+  173 			isprint: <>
+  174 			puts: <>
+  175 		video_mode: int (), <./vidcontrol.c 653>
+  176 			ioctl: <>
+  177 			err: <>
+  178 			strncmp: <>
+  179 			isdigit: <>
+  180 			errx: <>
+  181 			atoi: <>
+  182 			strcmp: <>
+  183 			warn: <>
+  184 			revert: 20
+  185 			errc: <>
+  186 			warnc: <>
+  187 		get_normal_colors: void (), <./vidcontrol.c 835>
+  188 			get_color_number: 12
+  189 			fprintf: <>
+  190 		test_frame: void (), <./vidcontrol.c 1168>
+  191 			ioctl: <>
+  192 			err: <>
+  193 			fprintf: <>
+  194 		set_terminal_mode: void (), <./vidcontrol.c 1318>
+  195 			strcmp: <>
+  196 			fprintf: <>
+  197 		set_colors: void (), <./vidcontrol.c 884>
+  198 			fprintf: <>
+  199 		errx: <>

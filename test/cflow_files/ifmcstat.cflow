@@ -1,0 +1,93 @@
+    1 	main: int (), <./ifmcstat.c 192>
+    2 		getopt: <>
+    3 		if_nametoindex: <>
+    4 		fprintf: <>
+    5 		exit: <>
+    6 		strcmp: <>
+    7 		strdup: <>
+    8 		usage: void (), <./ifmcstat.c 172>
+    9 			fprintf: <>
+   10 			exit: <>
+   11 		ifmcstat_kvm: int (), <./ifmcstat.c 329>
+   12 			kvm_openfiles: <>
+   13 			perror: <>
+   14 			kvm_nlist: <>
+   15 			printf: <>
+   16 			KREAD: <>
+   17 			if_indextoname: <>
+   18 			if_addrlist: void (), <./ifmcstat.c 527>
+   19 				KREAD: <>
+   20 				printf: <>
+   21 				inet_ntoa: <>
+   22 				in_ifinfo: void (), <./ifmcstat.c 282>
+   23 					printf: <>
+   24 					printb: void (), <./printb.c 39>
+   25 						printf: <>
+   26 						putchar: <>
+   27 				TAILQ_FIRST: <>
+   28 				in_multientry: struct in_multi (), <./ifmcstat.c 694>
+   29 				ether_ntoa: <>
+   30 				LLADDR: <>
+   31 				TAILQ_NEXT: <>
+   32 			TAILQ_FIRST: <>
+   33 			if6_addrlist: void (), <./ifmcstat.c 441>
+   34 				KREAD: <>
+   35 				printf: <>
+   36 				inet6_n2a: const char * (), <./ifmcstat.c 767>
+   37 					memset: <>
+   38 					getnameinfo: <>
+   39 				in6_ifinfo: void (), <./ifmcstat.c 740>
+   40 					printf: <>
+   41 					printb: 24
+   42 				TAILQ_FIRST: <>
+   43 				in6_multientry: struct in6_multi (), <./ifmcstat.c 511>
+   44 				ether_ntoa: <>
+   45 				LLADDR: <>
+   46 				TAILQ_NEXT: <>
+   47 			ll_addrlist: void (), <./ifmcstat.c 381>
+   48 				KREAD: <>
+   49 				getnameinfo: <>
+   50 				printf: <>
+   51 				TAILQ_FIRST: <>
+   52 				TAILQ_NEXT: <>
+   53 		ifmcstat_getifmaddrs: int (), <./ifmcstat.c 983>
+   54 			getifaddrs: <>
+   55 			warn: <>
+   56 			getifmaddrs: <>
+   57 			fprintf: <>
+   58 			strlcpy: <>
+   59 			link_ntoa: <>
+   60 			strchr: <>
+   61 			strcmp: <>
+   62 			IN6_IS_ADDR_LINKLOCAL: <>
+   63 			sa_dl_equal: <>
+   64 			sa_equal: <>
+   65 			inet6_n2a: 36
+   66 			getnameinfo: <>
+   67 			perror: <>
+   68 			sysctlnametomib: <>
+   69 			sysctl: <>
+   70 			in_ifinfo: 22
+   71 			in6_ifinfo: 39
+   72 			inm_print_sources_sysctl: void (), <./ifmcstat.c 792>
+   73 				sysctlnametomib: <>
+   74 				perror: <>
+   75 				sysctl: <>
+   76 				malloc: <>
+   77 				free: <>
+   78 				inm_mode: const char * (), <./ifmcstat.c 316>
+   79 				printf: <>
+   80 				fprintf: <>
+   81 				inet_ntoa: <>
+   82 			in6m_print_sources_sysctl: void (), <./ifmcstat.c 890>
+   83 				sysctlnametomib: <>
+   84 				perror: <>
+   85 				sysctl: <>
+   86 				malloc: <>
+   87 				free: <>
+   88 				inm_mode: 78
+   89 				printf: <>
+   90 				inet_ntop: <>
+   91 				fprintf: <>
+   92 			freeifmaddrs: <>
+   93 			freeifaddrs: <>

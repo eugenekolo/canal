@@ -1,0 +1,230 @@
+    1 	main: int (), <./pkg.c 1029>
+    2 		snprintf: <>
+    3 		getenv: <>
+    4 		strcmp: <>
+    5 		access: <>
+    6 		errx: <>
+    7 		config_init: int (), <./config.c 424>
+    8 			getenv: <>
+    9 			malloc: <>
+   10 			STAILQ_INIT: <>
+   11 			strtok: <>
+   12 			strdup: <>
+   13 			STAILQ_INSERT_TAIL: <>
+   14 			snprintf: <>
+   15 			access: <>
+   16 			read_conf_file: int (), <./config.c 351>
+   17 				ucl_parser_new: <>
+   18 				ucl_parser_add_file: <>
+   19 				errx: <>
+   20 				ucl_parser_get_error: <>
+   21 				ucl_parser_free: <>
+   22 				ucl_parser_get_object: <>
+   23 				warnx: <>
+   24 				config_parse: void (), <./config.c 210>
+   25 					sbuf_new_auto: <>
+   26 					calloc: <>
+   27 					ucl_iterate_object: <>
+   28 					ucl_object_key: <>
+   29 					sbuf_clear: <>
+   30 					strlen: <>
+   31 					sbuf_putc: <>
+   32 					sbuf_finish: <>
+   33 					strcasecmp: <>
+   34 					sbuf_cpy: <>
+   35 					ucl_object_toboolean: <>
+   36 					strcmp: <>
+   37 					sbuf_data: <>
+   38 					warnx: <>
+   39 					malloc: <>
+   40 					STAILQ_INIT: <>
+   41 					strdup: <>
+   42 					ucl_object_tostring: <>
+   43 					STAILQ_INSERT_TAIL: <>
+   44 					free: <>
+   45 					sbuf_delete: <>
+   46 				parse_repo_file: void (), <./config.c 330>
+   47 					ucl_iterate_object: <>
+   48 					ucl_object_key: <>
+   49 					config_parse: 24
+   50 				ucl_object_unref: <>
+   51 			asprintf: <>
+   52 			STAILQ_FOREACH: <>
+   53 			load_repositories: int (), <./config.c 385>
+   54 				opendir: <>
+   55 				readdir: <>
+   56 				strlen: <>
+   57 				strcmp: <>
+   58 				snprintf: <>
+   59 				access: <>
+   60 				read_conf_file: 16
+   61 				closedir: <>
+   62 			pkg_get_myabi: int (), <./config.c 146>
+   63 				uname: <>
+   64 				sysctlbyname: <>
+   65 				snprintf: <>
+   66 			errx: <>
+   67 			subst_packagesite: void (), <./config.c 174>
+   68 				strstr: <>
+   69 				sbuf_new_auto: <>
+   70 				sbuf_bcat: <>
+   71 				sbuf_cat: <>
+   72 				strlen: <>
+   73 				sbuf_finish: <>
+   74 				free: <>
+   75 				strdup: <>
+   76 				sbuf_data: <>
+   77 		fprintf: <>
+   78 		exit: <>
+   79 		bootstrap_pkg_local: int (), <./pkg.c 964>
+   80 			open: <>
+   81 			err: <>
+   82 			config_string: int (), <./config.c 501>
+   83 			warnx: <>
+   84 			strcasecmp: <>
+   85 			snprintf: <>
+   86 			fprintf: <>
+   87 			verify_signature: bool (), <./pkg.c 729>
+   88 				config_string: 82
+   89 				warnx: <>
+   90 				snprintf: <>
+   91 				load_fingerprints: struct fingerprint_list (), <./pkg.c 362>
+   92 				fprintf: <>
+   93 				parse_cert: struct sig_cert (), <./pkg.c 618>
+   94 				sha256_buf: void (), <./pkg.c 411>
+   95 					SHA256_Init: <>
+   96 					SHA256_Update: <>
+   97 					SHA256_Final: <>
+   98 					sha256_hash: void (), <./pkg.c 399>
+   99 						sprintf: <>
+  100 				STAILQ_FOREACH: <>
+  101 				strcasecmp: <>
+  102 				strdup: <>
+  103 				printf: <>
+  104 				rsa_verify_cert: bool (), <./pkg.c 514>
+  105 					SSL_load_error_strings: <>
+  106 					lseek: <>
+  107 					warn: <>
+  108 					sha256_fd: int (), <./pkg.c 425>
+  109 						dup: <>
+  110 						warnx: <>
+  111 						fdopen: <>
+  112 						SHA256_Init: <>
+  113 						fread: <>
+  114 						SHA256_Update: <>
+  115 						ferror: <>
+  116 						SHA256_Final: <>
+  117 						sha256_hash: 98
+  118 						fclose: <>
+  119 						close: <>
+  120 						lseek: <>
+  121 					warnx: <>
+  122 					load_public_key_file: EVP_PKEY * (), <./pkg.c 478>
+  123 						BIO_new_file: <>
+  124 						errx: <>
+  125 						PEM_read_bio_PUBKEY: <>
+  126 						warnx: <>
+  127 						ERR_error_string: <>
+  128 						ERR_get_error: <>
+  129 						BIO_free: <>
+  130 					load_public_key_buf: EVP_PKEY * (), <./pkg.c 497>
+  131 						BIO_new_mem_buf: <>
+  132 						PEM_read_bio_PUBKEY: <>
+  133 						warnx: <>
+  134 						ERR_error_string: <>
+  135 						ERR_get_error: <>
+  136 						BIO_free: <>
+  137 					EVP_MD_CTX_create: <>
+  138 					ERR_error_string: <>
+  139 					ERR_get_error: <>
+  140 					EVP_DigestVerifyInit: <>
+  141 					EVP_sha256: <>
+  142 					EVP_DigestVerifyUpdate: <>
+  143 					strlen: <>
+  144 					EVP_DigestVerifyFinal: <>
+  145 					printf: <>
+  146 					EVP_PKEY_free: <>
+  147 					EVP_MD_CTX_destroy: <>
+  148 					ERR_free_strings: <>
+  149 				free_fingerprint_list: void (), <./pkg.c 317>
+  150 					STAILQ_FOREACH_SAFE: <>
+  151 					free: <>
+  152 				free: <>
+  153 			verify_pubsignature: bool (), <./pkg.c 690>
+  154 				config_string: 82
+  155 				warnx: <>
+  156 				read_pubkey: struct pubkey (), <./pkg.c 589>
+  157 				printf: <>
+  158 				rsa_verify_cert: 104
+  159 				fprintf: <>
+  160 				free: <>
+  161 			extract_pkg_static: int (), <./pkg.c 88>
+  162 				archive_read_new: <>
+  163 				warn: <>
+  164 				archive_read_support_filter_all: <>
+  165 				archive_read_support_format_tar: <>
+  166 				lseek: <>
+  167 				archive_read_open_fd: <>
+  168 				warnx: <>
+  169 				archive_error_string: <>
+  170 				archive_read_next_header: <>
+  171 				strrchr: <>
+  172 				archive_entry_pathname: <>
+  173 				strcmp: <>
+  174 				archive_read_extract: <>
+  175 				strlcpy: <>
+  176 				archive_read_free: <>
+  177 			install_pkg_static: int (), <./pkg.c 143>
+  178 				fork: <>
+  179 				execl: <>
+  180 				waitpid: <>
+  181 				WEXITSTATUS: <>
+  182 				WIFSIGNALED: <>
+  183 				WTERMSIG: <>
+  184 			close: <>
+  185 		config_bool: int (), <./config.c 515>
+  186 			boolstr_to_bool: int (), <./config.c 199>
+  187 				strcasecmp: <>
+  188 		isatty: <>
+  189 		fileno: <>
+  190 		printf: <>
+  191 		pkg_query_yes_no: int (), <./pkg.c 946>
+  192 			getchar: <>
+  193 		bootstrap_pkg: int (), <./pkg.c 830>
+  194 			config_string: 82
+  195 			warnx: <>
+  196 			printf: <>
+  197 			strncmp: <>
+  198 			strlen: <>
+  199 			snprintf: <>
+  200 			getenv: <>
+  201 			fetch_to_fd: int (), <./pkg.c 175>
+  202 				config_string: 82
+  203 				warnx: <>
+  204 				mkstemp: <>
+  205 				warn: <>
+  206 				fetchParseURL: <>
+  207 				strcmp: <>
+  208 				strcasecmp: <>
+  209 				snprintf: <>
+  210 				dns_getsrvinfo: struct dns_srvinfo (), <./dns_utils.c 115>
+  211 				strlcpy: <>
+  212 				fetchXGet: <>
+  213 				sleep: <>
+  214 				fread: <>
+  215 				write: <>
+  216 				ferror: <>
+  217 				close: <>
+  218 				unlink: <>
+  219 				fclose: <>
+  220 			strcasecmp: <>
+  221 			fprintf: <>
+  222 			verify_signature: 87
+  223 			verify_pubsignature: 153
+  224 			extract_pkg_static: 161
+  225 			install_pkg_static: 177
+  226 			close: <>
+  227 			unlink: <>
+  228 		config_finish: void (), <./config.c 536>
+  229 			free: <>
+  230 		execv: <>

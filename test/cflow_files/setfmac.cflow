@@ -1,0 +1,69 @@
+    1 	main: int (), <./setfmac.c 81>
+    2 		basename: <>
+    3 		err: <>
+    4 		strcmp: <>
+    5 		new_specs: struct label_specs (), <./setfmac.c 489>
+    6 		getopt: <>
+    7 		add_specs: void (), <./setfmac.c 228>
+    8 			malloc: <>
+    9 			err: <>
+   10 			fopen: <>
+   11 			fgetln: <>
+   12 			chomp_line: int (), <./setfmac.c 193>
+   13 				isspace: <>
+   14 				memmove: <>
+   15 				malloc: <>
+   16 				err: <>
+   17 				strncpy: <>
+   18 			free: <>
+   19 			ferror: <>
+   20 			rewind: <>
+   21 			calloc: <>
+   22 			feof: <>
+   23 			errx: <>
+   24 			add_spec_line: void (), <./setfmac.c 300>
+   25 				strtok: <>
+   26 				errx: <>
+   27 				asprintf: <>
+   28 				err: <>
+   29 				regcomp: <>
+   30 				regerror: <>
+   31 				malloc: <>
+   32 				strdup: <>
+   33 				strcmp: <>
+   34 				strlen: <>
+   35 			fclose: <>
+   36 			warnx: <>
+   37 			STAILQ_INSERT_TAIL: <>
+   38 		usage: void (), <./setfmac.c 182>
+   39 			fprintf: <>
+   40 			exit: <>
+   41 		add_setfmac_specs: void (), <./setfmac.c 282>
+   42 			malloc: <>
+   43 			err: <>
+   44 			calloc: <>
+   45 			STAILQ_INSERT_TAIL: <>
+   46 		specs_empty: int (), <./setfmac.c 384>
+   47 			STAILQ_EMPTY: <>
+   48 		fts_open: <>
+   49 		fts_read: <>
+   50 		fts_set: <>
+   51 		apply_specs: int (), <./setfmac.c 391>
+   52 			STAILQ_FOREACH: <>
+   53 			regexec: <>
+   54 			regerror: <>
+   55 			malloc: <>
+   56 			err: <>
+   57 			errx: <>
+   58 			printf: <>
+   59 			strlen: <>
+   60 			strcat: <>
+   61 			mac_from_text: <>
+   62 			mac_set_link: <>
+   63 			mac_set_file: <>
+   64 			mac_free: <>
+   65 			free: <>
+   66 		errx: <>
+   67 		warnx: <>
+   68 		fts_close: <>
+   69 		exit: <>

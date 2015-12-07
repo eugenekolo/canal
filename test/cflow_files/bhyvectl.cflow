@@ -1,0 +1,106 @@
+    1 	main: int (), <./bhyvectl.c 1602>
+    2 		cpu_vendor_intel: bool (), <./bhyvectl.c 619>
+    3 			do_cpuid: <>
+    4 			strcmp: <>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		setup_options: struct option (), <./bhyvectl.c 1264>
+    8 		basename: <>
+    9 		getopt_long: <>
+   10 		atoi: <>
+   11 		roundup: <>
+   12 		strtoul: <>
+   13 		strtol: <>
+   14 		sscanf: <>
+   15 		usage: void (), <./bhyvectl.c 71>
+   16 			fprintf: <>
+   17 			exit: <>
+   18 		vm_create: <>
+   19 		vm_open: <>
+   20 		printf: <>
+   21 		exit: <>
+   22 		vm_setup_memory: <>
+   23 		vm_set_register: <>
+   24 		vm_set_desc: <>
+   25 		vm_set_x2apic_state: <>
+   26 		vm_unassign_pptdev: <>
+   27 		vm_set_vmcs_field: int (), <./bhyvectl.c 509>
+   28 			vm_set_register: <>
+   29 			VMCS_IDENT: <>
+   30 		vm_set_vmcb_field: int (), <./bhyvectl.c 524>
+   31 			vm_set_register: <>
+   32 			VMCB_ACCESS: <>
+   33 		vm_inject_nmi: <>
+   34 		vm_lapic_local_irq: <>
+   35 		show_memseg: int (), <./bhyvectl.c 1575>
+   36 			printf: <>
+   37 			vm_get_memseg: <>
+   38 			humanize_number: <>
+   39 		show_memmap: int (), <./bhyvectl.c 1526>
+   40 			printf: <>
+   41 			vm_mmap_getnext: <>
+   42 			vm_get_memseg: <>
+   43 			humanize_number: <>
+   44 		get_all_registers: int (), <./bhyvectl.c 641>
+   45 			vm_get_register: <>
+   46 			printf: <>
+   47 		get_all_segments: int (), <./bhyvectl.c 791>
+   48 			vm_get_desc: <>
+   49 			printf: <>
+   50 			vm_get_register: <>
+   51 		get_misc_vmcs: int (), <./bhyvectl.c 938>
+   52 			vm_get_vmcs_field: int (), <./bhyvectl.c 502>
+   53 				vm_get_register: <>
+   54 				VMCS_IDENT: <>
+   55 			printf: <>
+   56 		get_misc_vmcb: int (), <./bhyvectl.c 1172>
+   57 			vm_get_vmcb_field: int (), <./bhyvectl.c 516>
+   58 				vm_get_register: <>
+   59 				VMCB_ACCESS: <>
+   60 			printf: <>
+   61 		vm_get_x2apic_state: <>
+   62 		vm_get_vmcs_field: 52
+   63 		vm_get_vmcb_field: 57
+   64 		dump_msr_bitmap: int (), <./bhyvectl.c 461>
+   65 			open: <>
+   66 			perror: <>
+   67 			mmap: <>
+   68 			dump_intel_msr_pm: void (), <./bhyvectl.c 437>
+   69 				print_msr_pm: inline void (), <./bhyvectl.c 390>
+   70 					printf: <>
+   71 					msr_name: const char * (), <./bhyvectl.c 352>
+   72 						snprintf: <>
+   73 			dump_amd_msr_pm: void (), <./bhyvectl.c 403>
+   74 				print_msr_pm: 69
+   75 			munmap: <>
+   76 			close: <>
+   77 		vm_capability_name2type: <>
+   78 		vm_set_capability: <>
+   79 		vm_get_gpa_pmap: <>
+   80 		vm_rtc_write: <>
+   81 		vm_rtc_read: <>
+   82 		vm_rtc_settime: <>
+   83 		vm_rtc_gettime: <>
+   84 		gmtime_r: <>
+   85 		wday_str: const char * (), <./bhyvectl.c 1499>
+   86 		mon_str: const char * (), <./bhyvectl.c 1512>
+   87 		vm_get_capability: <>
+   88 		vm_capability_type2name: <>
+   89 		vm_active_cpus: <>
+   90 		print_cpus: void (), <./bhyvectl.c 569>
+   91 			printf: <>
+   92 			CPU_EMPTY: <>
+   93 			CPU_ISSET: <>
+   94 		vm_suspended_cpus: <>
+   95 		vm_get_intinfo: <>
+   96 		print_intinfo: void (), <./bhyvectl.c 588>
+   97 			printf: <>
+   98 			VM_INTINFO_VECTOR: <>
+   99 		vm_get_stats: <>
+  100 		vm_get_stat_desc: <>
+  101 		vm_run: <>
+  102 		dump_vm_run_exitcode: void (), <./bhyvectl.c 306>
+  103 			printf: <>
+  104 		vm_suspend: <>
+  105 		vm_destroy: <>
+  106 		free: <>

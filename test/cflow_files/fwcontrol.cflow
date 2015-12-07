@@ -1,0 +1,175 @@
+    1 	main: int (), <./fwcontrol.c 728>
+    2 		snprintf: <>
+    3 		open_dev: int (), <./fwcontrol.c 646>
+    4 			open: <>
+    5 		usage: void (), <./fwcontrol.c 79>
+    6 			fprintf: <>
+    7 			getprogname: <>
+    8 		err: <>
+    9 		list_dev: void (), <./fwcontrol.c 173>
+   10 			malloc: <>
+   11 			err: <>
+   12 			get_dev: void (), <./fwcontrol.c 113>
+   13 				err: <>
+   14 				ioctl: <>
+   15 			printf: <>
+   16 			fweui2eui64: void (), <./fwcontrol.c 106>
+   17 				htonl: <>
+   18 			eui64_ntoa: <>
+   19 			eui64_ntohost: <>
+   20 			free: <>
+   21 		close: <>
+   22 		getopt: <>
+   23 		strtol: <>
+   24 		errx: <>
+   25 		malloc: <>
+   26 		strlen: <>
+   27 		strcpy: <>
+   28 		load_crom: void (), <./fwcontrol.c 498>
+   29 			fopen: <>
+   30 			err: <>
+   31 			fscanf: <>
+   32 			fclose: <>
+   33 		eui64_hostton: <>
+   34 		eui64_aton: <>
+   35 		str2node: int (), <./fwcontrol.c 123>
+   36 			strtol: <>
+   37 			eui64_hostton: <>
+   38 			eui64_aton: <>
+   39 			malloc: <>
+   40 			err: <>
+   41 			get_dev: 12
+   42 			fweui2eui64: 16
+   43 			memcmp: <>
+   44 			free: <>
+   45 		mpegtsrecv: void (), <./fwmpegts.c 152>
+   46 			strcmp: <>
+   47 			open: <>
+   48 			err: <>
+   49 			malloc: <>
+   50 			ioctl: <>
+   51 			read: <>
+   52 			fprintf: <>
+   53 			htonl: <>
+   54 			errx: <>
+   55 			write: <>
+   56 			close: <>
+   57 		dvrecv: void (), <./fwdv.c 95>
+   58 			strcmp: <>
+   59 			open: <>
+   60 			err: <>
+   61 			malloc: <>
+   62 			memset: <>
+   63 			bzero: <>
+   64 			ioctl: <>
+   65 			read: <>
+   66 			fprintf: <>
+   67 			fflush: <>
+   68 			htonl: <>
+   69 			errx: <>
+   70 			ntohs: <>
+   71 			writev: <>
+   72 			close: <>
+   73 		warnc: <>
+   74 		dump_phy_registers: void (), <./fwcontrol.c 587>
+   75 			printf: <>
+   76 			read_phy_registers: void (), <./fwcontrol.c 559>
+   77 				ioctl: <>
+   78 				err: <>
+   79 				printf: <>
+   80 			read_phy_page: void (), <./fwcontrol.c 575>
+   81 				ioctl: <>
+   82 				err: <>
+   83 				read_phy_registers: 76
+   84 		ioctl: <>
+   85 		get_crom: int (), <./fwcontrol.c 390>
+   86 			malloc: <>
+   87 			err: <>
+   88 			get_dev: 12
+   89 			errx: <>
+   90 			free: <>
+   91 			bzero: <>
+   92 			ioctl: <>
+   93 		show_crom: void (), <./fwcontrol.c 422>
+   94 			printf: <>
+   95 			crom_crc: <>
+   96 			parse_bus_info_block: void (), <./fwcontrol.c 368>
+   97 				fweui2eui64: 16
+   98 				eui64_ntoa: <>
+   99 				printf: <>
+  100 			crom_init_context: <>
+  101 			crom_desc: <>
+  102 			crom_get: <>
+  103 			crom_next: <>
+  104 		free: <>
+  105 		dump_crom: void (), <./fwcontrol.c 486>
+  106 			printf: <>
+  107 		set_pri_req: void (), <./fwcontrol.c 330>
+  108 			malloc: <>
+  109 			err: <>
+  110 			get_dev: 12
+  111 			read_write_quad: u_int32_t (), <./fwcontrol.c 204>
+  112 				malloc: <>
+  113 				err: <>
+  114 				htonl: <>
+  115 				ioctl: <>
+  116 				free: <>
+  117 				ntohl: <>
+  118 			fweui2eui64: 16
+  119 			eui64_ntoa: <>
+  120 			printf: <>
+  121 			free: <>
+  122 		send_phy_config: void (), <./fwcontrol.c 260>
+  123 			malloc: <>
+  124 			err: <>
+  125 			printf: <>
+  126 			ioctl: <>
+  127 			free: <>
+  128 		ntohl: <>
+  129 		sysctl_set_int: void (), <./fwcontrol.c 658>
+  130 			sysctlbyname: <>
+  131 			err: <>
+  132 		link_on: void (), <./fwcontrol.c 287>
+  133 			malloc: <>
+  134 			err: <>
+  135 			ioctl: <>
+  136 			free: <>
+  137 		reset_start: void (), <./fwcontrol.c 306>
+  138 			malloc: <>
+  139 			err: <>
+  140 			htonl: <>
+  141 			ioctl: <>
+  142 			free: <>
+  143 		show_topology_map: void (), <./fwcontrol.c 514>
+  144 			malloc: <>
+  145 			err: <>
+  146 			ioctl: <>
+  147 			printf: <>
+  148 			free: <>
+  149 		detect_recv_fn: fwmethod * (), <./fwcontrol.c 665>
+  150 			ioctl: <>
+  151 			err: <>
+  152 			malloc: <>
+  153 			read: <>
+  154 			fprintf: <>
+  155 			dvrecv: 57
+  156 			mpegtsrecv: 45
+  157 			errx: <>
+  158 			free: <>
+  159 		dvsend: void (), <./fwdv.c 256>
+  160 			open: <>
+  161 			err: <>
+  162 			malloc: <>
+  163 			bzero: <>
+  164 			ioctl: <>
+  165 			bcopy: <>
+  166 			gettimeofday: <>
+  167 			fprintf: <>
+  168 			htonl: <>
+  169 			read: <>
+  170 			warn: <>
+  171 			printf: <>
+  172 			fflush: <>
+  173 			htons: <>
+  174 			writev: <>
+  175 			close: <>

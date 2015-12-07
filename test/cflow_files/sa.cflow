@@ -1,0 +1,119 @@
+    1 	main: int (), <./main.c 84>
+    2 		getopt: <>
+    3 		cmp_avgusrsys: int (), <./main.c 416>
+    4 			memcpy: <>
+    5 			cmp_comm: int (), <./main.c 383>
+    6 				strcmp: <>
+    7 		cmp_avgdkio: int (), <./main.c 457>
+    8 			memcpy: <>
+    9 			cmp_comm: 5
+   10 		cmp_dkio: int (), <./main.c 440>
+   11 			memcpy: <>
+   12 			cmp_comm: 5
+   13 		cmp_avgcpumem: int (), <./main.c 495>
+   14 			memcpy: <>
+   15 			cmp_comm: 5
+   16 		cmp_cpumem: int (), <./main.c 478>
+   17 			memcpy: <>
+   18 			cmp_comm: 5
+   19 		cmp_calls: int (), <./main.c 520>
+   20 			memcpy: <>
+   21 			cmp_comm: 5
+   22 		atoi: <>
+   23 		usage: void (), <./main.c 303>
+   24 			fprintf: <>
+   25 			exit: <>
+   26 		errx: <>
+   27 		pacct_init: int (), <./pdb.c 97>
+   28 			db_copy_in: int (), <./db.c 57>
+   29 				dbopen: <>
+   30 				warn: <>
+   31 				db_destroy: void (), <./db.c 203>
+   32 					DB_CLOSE: <>
+   33 					warn: <>
+   34 				DB_GET: <>
+   35 				warnx: <>
+   36 				memcpy: <>
+   37 				DB_SEQ: <>
+   38 				memcmp: <>
+   39 				DB_PUT: <>
+   40 				DB_CLOSE: <>
+   41 			v1_to_v2: int (), <./pdb.c 70>
+   42 				memcpy: <>
+   43 				memset: <>
+   44 		usracct_init: int (), <./usrdb.c 100>
+   45 			bzero: <>
+   46 			uid_compare: int (), <./usrdb.c 226>
+   47 				bcopy: <>
+   48 			db_copy_in: 28
+   49 			v1_to_v2: int (), <./usrdb.c 67>
+   50 				memcpy: <>
+   51 				memset: <>
+   52 		acct_load: FILE * (), <./main.c 311>
+   53 			fopen: <>
+   54 			warn: <>
+   55 			readrec_forward: <>
+   56 			isascii: <>
+   57 			iscntrl: <>
+   58 			pacct_add: int (), <./pdb.c 110>
+   59 				bcopy: <>
+   60 				strlen: <>
+   61 				DB_GET: <>
+   62 				warn: <>
+   63 				bzero: <>
+   64 				add_ci: void (), <./pdb.c 270>
+   65 				DB_PUT: <>
+   66 				warnx: <>
+   67 			usracct_add: int (), <./usrdb.c 118>
+   68 				DB_GET: <>
+   69 				warn: <>
+   70 				bcopy: <>
+   71 				warnx: <>
+   72 				bzero: <>
+   73 				DB_PUT: <>
+   74 			printf: <>
+   75 		sigfillset: <>
+   76 		warn: <>
+   77 		sigprocmask: <>
+   78 		ftruncate: <>
+   79 		fileno: <>
+   80 		pacct_update: int (), <./pdb.c 153>
+   81 			db_copy_out: int (), <./db.c 149>
+   82 				dbopen: <>
+   83 				warn: <>
+   84 				DB_SEQ: <>
+   85 				DB_PUT: <>
+   86 				warnx: <>
+   87 				DB_SYNC: <>
+   88 				DB_CLOSE: <>
+   89 		usracct_update: int (), <./usrdb.c 169>
+   90 			bzero: <>
+   91 			uid_compare: 46
+   92 			db_copy_out: 81
+   93 		fclose: <>
+   94 		pacct_print: void (), <./pdb.c 160>
+   95 			bzero: <>
+   96 			strcpy: <>
+   97 			dbopen: <>
+   98 			warn: <>
+   99 			DB_SEQ: <>
+  100 			bcopy: <>
+  101 			add_ci: void (), <./pdb.c 270>
+  102 			check_junk: int (), <./pdb.c 258>
+  103 				fprintf: <>
+  104 				fgetln: <>
+  105 			DB_PUT: <>
+  106 			print_ci: void (), <./pdb.c 281>
+  107 				printf: <>
+  108 			DB_CLOSE: <>
+  109 		usracct_print: void (), <./usrdb.c 181>
+  110 			DB_SEQ: <>
+  111 			warn: <>
+  112 			memcpy: <>
+  113 			printf: <>
+  114 			user_from_uid: <>
+  115 		pacct_destroy: void (), <./pdb.c 104>
+  116 			db_destroy: 31
+  117 		usracct_destroy: void (), <./usrdb.c 112>
+  118 			db_destroy: 31
+  119 		exit: <>

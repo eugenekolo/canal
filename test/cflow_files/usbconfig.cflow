@@ -1,0 +1,107 @@
+    1 	main: int (), <./usbconfig.c 528>
+    2 		usage: void (), <./usbconfig.c 267>
+    3 			fprintf: <>
+    4 			exit: <>
+    5 		libusb20_be_alloc_default: <>
+    6 		err: <>
+    7 		get_token: uint8_t (), <./usbconfig.c 208>
+    8 			strcasecmp: <>
+    9 		flush_command: void (), <./usbconfig.c 312>
+   10 			err: <>
+   11 			dump_be_quirk_names: void (), <./dump.c 330>
+   12 				memset: <>
+   13 				printf: <>
+   14 				libusb20_be_get_quirk_name: <>
+   15 				strcmp: <>
+   16 			dump_be_dev_quirks: void (), <./dump.c 358>
+   17 				memset: <>
+   18 				printf: <>
+   19 				libusb20_be_get_dev_quirk: <>
+   20 				strcmp: <>
+   21 			be_dev_remove_quirk: void (), <./usbconfig.c 162>
+   22 				memset: <>
+   23 				strlcpy: <>
+   24 				libusb20_be_remove_dev_quirk: <>
+   25 				fprintf: <>
+   26 			be_dev_add_quirk: void (), <./usbconfig.c 185>
+   27 				memset: <>
+   28 				strlcpy: <>
+   29 				libusb20_be_add_dev_quirk: <>
+   30 				fprintf: <>
+   31 			libusb20_be_set_template: <>
+   32 			fprintf: <>
+   33 			libusb20_be_get_template: <>
+   34 			printf: <>
+   35 			libusb20_be_device_foreach: <>
+   36 			libusb20_dev_get_bus_number: <>
+   37 			libusb20_dev_get_address: <>
+   38 			libusb20_dev_get_device_desc: <>
+   39 			libusb20_dev_open: <>
+   40 			dump_string_by_index: void (), <./dump.c 449>
+   41 				malloc: <>
+   42 				err: <>
+   43 				libusb20_dev_req_string_sync: <>
+   44 				printf: <>
+   45 				libusb20_dev_req_string_simple_sync: <>
+   46 				free: <>
+   47 			libusb20_dev_request_sync: <>
+   48 			isprint: <>
+   49 			putchar: <>
+   50 			libusb20_dev_set_config_index: <>
+   51 			libusb20_dev_set_alt_index: <>
+   52 			libusb20_dev_reset: <>
+   53 			libusb20_dev_set_power_mode: <>
+   54 			dump_device_info: void (), <./dump.c 299>
+   55 				libusb20_dev_get_power_usage: <>
+   56 				printf: <>
+   57 				libusb20_dev_get_desc: <>
+   58 				libusb20_dev_get_config_index: <>
+   59 				dump_mode: const char * (), <./dump.c 47>
+   60 				libusb20_dev_get_mode: <>
+   61 				dump_speed: const char * (), <./dump.c 55>
+   62 				libusb20_dev_get_speed: <>
+   63 				dump_power_mode: const char * (), <./dump.c 76>
+   64 				libusb20_dev_get_power_mode: <>
+   65 				libusb20_dev_get_iface_desc: <>
+   66 				libusb20_dev_get_bus_number: <>
+   67 				libusb20_dev_get_address: <>
+   68 			dump_device_desc: void (), <./dump.c 390>
+   69 				libusb20_dev_get_device_desc: <>
+   70 				LIBUSB20_DEVICE_DESC: <>
+   71 			dump_config: void (), <./dump.c 400>
+   72 				libusb20_dev_get_device_desc: <>
+   73 				libusb20_dev_get_config_index: <>
+   74 				libusb20_dev_alloc_config: <>
+   75 				printf: <>
+   76 				LIBUSB20_CONFIG_DESC: <>
+   77 				dump_extra: void (), <./dump.c 241>
+   78 					libusb20_desc_foreach: <>
+   79 					printf: <>
+   80 				dump_iface: void (), <./dump.c 281>
+   81 					LIBUSB20_INTERFACE_DESC: <>
+   82 					dump_extra: 77
+   83 					printf: <>
+   84 					dump_endpoint: void (), <./dump.c 269>
+   85 						LIBUSB20_ENDPOINT_DESC: <>
+   86 						dump_extra: 77
+   87 				free: <>
+   88 			libusb20_dev_close: <>
+   89 			reset_options: void (), <./usbconfig.c 303>
+   90 				free: <>
+   91 				memset: <>
+   92 		num_id: uid_t (), <./usbconfig.c 225>
+   93 			strtoul: <>
+   94 			err: <>
+   95 			errx: <>
+   96 		duplicate_option: void (), <./usbconfig.c 259>
+   97 			fprintf: <>
+   98 			exit: <>
+   99 		sscanf: <>
+  100 		errx: <>
+  101 		get_int: int (), <./usbconfig.c 242>
+  102 			strtoul: <>
+  103 			err: <>
+  104 			errx: <>
+  105 		LIBUSB20_INIT: <>
+  106 		malloc: <>
+  107 		libusb20_be_free: <>

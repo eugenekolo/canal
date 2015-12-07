@@ -40,8 +40,8 @@ source env_setup.sh $2; # Setting up the env variables
 # Main Routine #
 ################
 echo "[MAIN]: Runing cflow."
-./cflowGenerate.sh
-#./cflowGenerate_busybox
+#./cflowGenerate.sh
+./cflowGenerate_busybox
 
 echo "[MAIN]: Plotting call graphs."
 #./cflowVisualize.sh

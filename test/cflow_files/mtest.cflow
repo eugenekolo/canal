@@ -1,0 +1,64 @@
+    1 	main: int (), <./mtest.c 197>
+    2 		socket: <>
+    3 		err: <>
+    4 		errc: <>
+    5 		isatty: <>
+    6 		printf: <>
+    7 		fgets: <>
+    8 		process_cmd: void (), <./mtest.c 376>
+    9 			isblank: <>
+   10 			usage: void (), <./mtest.c 831>
+   11 				printf: <>
+   12 			close: <>
+   13 			exit: <>
+   14 			sscanf: <>
+   15 			printf: <>
+   16 			sleep: <>
+   17 			parse_cmd_args: uint32_t (), <./mtest.c 285>
+   18 				assert: <>
+   19 				if_nametoindex: <>
+   20 				memset: <>
+   21 				getaddrinfo: <>
+   22 				warnx: <>
+   23 				gai_strerror: <>
+   24 				memcpy: <>
+   25 				freeaddrinfo: <>
+   26 			warn: <>
+   27 			warnc: <>
+   28 			setsockopt: <>
+   29 			af2sock: __inline int (), <./mtest.c 346>
+   30 			memset: <>
+   31 			fgets: <>
+   32 			strchr: <>
+   33 			getaddrinfo: <>
+   34 			assert: <>
+   35 			memcpy: <>
+   36 			freeaddrinfo: <>
+   37 			warnx: <>
+   38 			gai_strerror: <>
+   39 			setsourcefilter: <>
+   40 			getsourcefilter: <>
+   41 			MIN: <>
+   42 			fprintf: <>
+   43 			qsort: <>
+   44 			af2socklen: __inline int (), <./mtest.c 361>
+   45 			su_cmp: int (), <./mtest.c 119>
+   46 				assert: <>
+   47 				memcmp: <>
+   48 			getnameinfo: <>
+   49 			ether_aton: <>
+   50 			strlcpy: <>
+   51 			LLADDR: <>
+   52 			ioctl: <>
+   53 		isblank: <>
+   54 		strchr: <>
+   55 		process_file: void (), <./mtest.c 252>
+   56 			fopen: <>
+   57 			warn: <>
+   58 			fgets: <>
+   59 			isblank: <>
+   60 			process_cmd: 8
+   61 			fclose: <>
+   62 		feof: <>
+   63 		close: <>
+   64 		exit: <>

@@ -1,0 +1,92 @@
+    1 	main: int (), <./arp.c 119>
+    2 		getopt: <>
+    3 		SETFUNC: <>
+    4 		usage: void (), <./arp.c 688>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		errx: <>
+    8 		if_nametoindex: <>
+    9 		err: <>
+   10 		search: int (), <./arp.c 508>
+   11 			sysctl: <>
+   12 			err: <>
+   13 			reallocf: <>
+   14 			errx: <>
+   15 			SA_SIZE: <>
+   16 			if_indextoname: <>
+   17 			strcmp: <>
+   18 			free: <>
+   19 		print_entry: void (), <./arp.c 569>
+   20 			if_nameindex: <>
+   21 			err: <>
+   22 			gethostbyaddr: <>
+   23 			printf: <>
+   24 			inet_ntoa: <>
+   25 			ether_ntoa: <>
+   26 			LLADDR: <>
+   27 			link_ntoa: <>
+   28 			clock_gettime: <>
+   29 			SDL_ISO88025: <>
+   30 			ntohs: <>
+   31 			TR_RCF_RIFLEN: <>
+   32 		get: int (), <./arp.c 413>
+   33 			getaddr: struct sockaddr_in (), <./arp.c 255>
+   34 			search: 10
+   35 			print_entry: 19
+   36 			printf: <>
+   37 			inet_ntoa: <>
+   38 		delete: int (), <./arp.c 435>
+   39 			getaddr: struct sockaddr_in (), <./arp.c 255>
+   40 			bzero: <>
+   41 			rtmsg: struct rt_msghdr (), <./arp.c 702>
+   42 			warn: <>
+   43 			SA_SIZE: <>
+   44 			valid_type: int (), <./arp.c 279>
+   45 			fprintf: <>
+   46 			printf: <>
+   47 			inet_ntoa: <>
+   48 		set: int (), <./arp.c 301>
+   49 			bzero: <>
+   50 			getaddr: struct sockaddr_in (), <./arp.c 255>
+   51 			strncmp: <>
+   52 			clock_gettime: <>
+   53 			sysctlbyname: <>
+   54 			err: <>
+   55 			printf: <>
+   56 			LLADDR: <>
+   57 			strcmp: <>
+   58 			get_ether_addr: int (), <./arp.c 794>
+   59 				socket: <>
+   60 				err: <>
+   61 				ioctl: <>
+   62 				warnx: <>
+   63 				NEXTIFR: <>
+   64 				strncpy: <>
+   65 				strcmp: <>
+   66 				memcpy: <>
+   67 				LLADDR: <>
+   68 				printf: <>
+   69 				ether_ntoa: <>
+   70 				close: <>
+   71 			inet_ntoa: <>
+   72 			ether_aton: <>
+   73 			warnx: <>
+   74 			rtmsg: struct rt_msghdr (), <./arp.c 702>
+   75 			warn: <>
+   76 			SA_SIZE: <>
+   77 			valid_type: 44
+   78 		nuke_entry: void (), <./arp.c 675>
+   79 			snprintf: <>
+   80 			inet_ntoa: <>
+   81 			delete: 38
+   82 		file: int (), <./arp.c 215>
+   83 			fopen: <>
+   84 			err: <>
+   85 			fgets: <>
+   86 			strchr: <>
+   87 			isblank: <>
+   88 			sscanf: <>
+   89 			warnx: <>
+   90 			set: 48
+   91 			fclose: <>
+   92 		if_freenameindex: <>

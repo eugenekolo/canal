@@ -1,0 +1,36 @@
+    1 	main: int (), <./bhyveload.c 640>
+    2 		basename: <>
+    3 		getopt: <>
+    4 		altcons_open: int (), <./bhyveload.c 577>
+    5 			strcmp: <>
+    6 			stat: <>
+    7 			S_ISCHR: <>
+    8 			open: <>
+    9 		errx: <>
+   10 		disk_open: int (), <./bhyveload.c 608>
+   11 			open: <>
+   12 		addenv: void (), <./bhyveload.c 520>
+   13 			malloc: <>
+   14 			SLIST_INSERT_HEAD: <>
+   15 		strdup: <>
+   16 		err: <>
+   17 		vm_parse_memsize: <>
+   18 		usage: void (), <./bhyveload.c 628>
+   19 			fprintf: <>
+   20 			strlen: <>
+   21 			exit: <>
+   22 		vm_create: <>
+   23 		perror: <>
+   24 		exit: <>
+   25 		vm_open: <>
+   26 		vm_reinit: <>
+   27 		vm_set_memflags: <>
+   28 		vm_setup_memory: <>
+   29 		dlopen: <>
+   30 		printf: <>
+   31 		dlerror: <>
+   32 		free: <>
+   33 		dlsym: <>
+   34 		tcgetattr: <>
+   35 		cfmakeraw: <>
+   36 		tcsetattr: <>

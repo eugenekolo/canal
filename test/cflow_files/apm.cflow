@@ -1,0 +1,62 @@
+    1 	main: int (), <./apm.c 381>
+    2 		sysctlbyname: <>
+    3 		err: <>
+    4 		getopt: <>
+    5 		is_true: int (), <./apm.c 57>
+    6 			strtoul: <>
+    7 			strcasecmp: <>
+    8 			warnx: <>
+    9 			usage: void (), <./apm.c 44>
+   10 				fprintf: <>
+   11 				exit: <>
+   12 		atoi: <>
+   13 		usage: 9
+   14 		open: <>
+   15 		apm_enable: void (), <./apm.c 137>
+   16 			ioctl: <>
+   17 			err: <>
+   18 		apm_haltcpu: void (), <./apm.c 341>
+   19 			ioctl: <>
+   20 			err: <>
+   21 		apm_set_timer: void (), <./apm.c 353>
+   22 			time: <>
+   23 			localtime: <>
+   24 			gmtime: <>
+   25 			bzero: <>
+   26 			int2bcd: int (), <./apm.c 82>
+   27 			ioctl: <>
+   28 			err: <>
+   29 		apm_suspend: void (), <./apm.c 116>
+   30 			ioctl: <>
+   31 			err: <>
+   32 		apm_standby: void (), <./apm.c 123>
+   33 			ioctl: <>
+   34 			err: <>
+   35 		apm_getinfo: void (), <./apm.c 130>
+   36 			ioctl: <>
+   37 			err: <>
+   38 		print_all_info: void (), <./apm.c 193>
+   39 			printf: <>
+   40 			print_batt_stat: void (), <./apm.c 179>
+   41 				printf: <>
+   42 			print_batt_life: void (), <./apm.c 167>
+   43 				printf: <>
+   44 			print_batt_time: void (), <./apm.c 149>
+   45 				printf: <>
+   46 			bzero: <>
+   47 			ioctl: <>
+   48 			APMERR: <>
+   49 			warnx: <>
+   50 			bcd2int: int (), <./apm.c 99>
+   51 			xh: <>
+   52 			xl: <>
+   53 			mktime: <>
+   54 			timegm: <>
+   55 			localtime: <>
+   56 			strftime: <>
+   57 		printf: <>
+   58 		apm_display: void (), <./apm.c 334>
+   59 			ioctl: <>
+   60 			err: <>
+   61 		close: <>
+   62 		exit: <>

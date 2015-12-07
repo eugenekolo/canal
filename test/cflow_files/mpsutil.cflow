@@ -1,0 +1,85 @@
+    1 	MPS_COMMAND: , <./mpsutil.c 88>
+    2 		strcmp: <>
+    3 		getprogname: <>
+    4 		getopt: <>
+    5 		atoi: <>
+    6 		usage: void (), <./mpsutil.c 54>
+    7 			fprintf: <>
+    8 			getprogname: <>
+    9 			SET_FOREACH: <>
+   10 			MPS_DATASET: <>
+   11 			usage: 6
+   12 			handler: <>
+   13 			strncmp: <>
+   14 			exit: <>
+   15 		SET_FOREACH: <>
+   16 		MPS_DATASET: <>
+   17 		handler: <>
+   18 		warnx: <>
+   19 	hexdump: void (), <./mpsutil.c 151>
+   20 		printf: <>
+   21 	mps_firmware_get: int (), <./mps_cmd.c 468>
+   22 		bzero: <>
+   23 		mps_user_command: int (), <./mps_cmd.c 630>
+   24 			bzero: <>
+   25 			ioctl: <>
+   26 		calloc: <>
+   27 		warn: <>
+   28 		free: <>
+   29 	mps_firmware_send: int (), <./mps_cmd.c 448>
+   30 		bzero: <>
+   31 		mps_user_command: 23
+   32 	mps_get_iocfacts: MPI2_IOC_FACTS_REPLY * (), <./mps_cmd.c 697>
+   33 		malloc: <>
+   34 		bzero: <>
+   35 		mps_pass_command: int (), <./mps_cmd.c 650>
+   36 			ioctl: <>
+   37 		mps_user_command: 23
+   38 		free: <>
+   39 		IOC_STATUS_SUCCESS: <>
+   40 	mps_ioc_status: const char * (), <./mps_cmd.c 250>
+   41 		snprintf: <>
+   42 	mps_map_btdh: int (), <./mps_cmd.c 264>
+   43 		ioctl: <>
+   44 		warn: <>
+   45 	mps_open: int (), <./mps_cmd.c 621>
+   46 		snprintf: <>
+   47 		open: <>
+   48 	mps_pass_command: 35
+   49 	mps_read_config_page: void * (), <./mps_cmd.c 531>
+   50 		bzero: <>
+   51 		mps_read_config_page_header: int (), <./mps_cmd.c 506>
+   52 			bzero: <>
+   53 			mps_pass_command: 35
+   54 			IOC_STATUS_SUCCESS: <>
+   55 			ioctl: <>
+   56 			bcopy: <>
+   57 		malloc: <>
+   58 		mps_pass_command: 35
+   59 		free: <>
+   60 		IOC_STATUS_SUCCESS: <>
+   61 		warnx: <>
+   62 		mps_ioc_status: 40
+   63 		bcopy: <>
+   64 		ioctl: <>
+   65 	mps_read_config_page_header: 51
+   66 	mps_read_ext_config_page_header: int (), <./mps_cmd.c 316>
+   67 		bzero: <>
+   68 		mps_pass_command: 35
+   69 		IOC_STATUS_SUCCESS: <>
+   70 	mps_read_extended_config_page: void * (), <./mps_cmd.c 571>
+   71 		bzero: <>
+   72 		mps_read_ext_config_page_header: 66
+   73 		malloc: <>
+   74 		mps_pass_command: 35
+   75 		free: <>
+   76 		IOC_STATUS_SUCCESS: <>
+   77 		warnx: <>
+   78 		mps_ioc_status: 40
+   79 		ioctl: <>
+   80 		bcopy: <>
+   81 	mps_table_handler: int (), <./mpsutil.c 132>
+   82 		warnx: <>
+   83 		strcmp: <>
+   84 		handler: <>
+   85 	mps_user_command: 23

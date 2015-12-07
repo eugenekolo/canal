@@ -1,0 +1,98 @@
+    1 	main: int (), <./phttpget/phttpget.c 291>
+    2 		usage: void (), <./make_index/make_index.c 79>
+    3 			fprintf: <>
+    4 			exit: <>
+    5 		fopen: <>
+    6 		err: <>
+    7 		malloc: <>
+    8 		fgetln: <>
+    9 		errx: <>
+   10 		realloc: <>
+   11 		portify: PORT * (), <./make_index/make_index.c 134>
+   12 			errx: <>
+   13 			malloc: <>
+   14 			err: <>
+   15 			strdup2: char * (), <./make_index/make_index.c 88>
+   16 				strdup: <>
+   17 				err: <>
+   18 			strsep: <>
+   19 			makelist: DEP * (), <./make_index/make_index.c 100>
+   20 				malloc: <>
+   21 				err: <>
+   22 				strdup2: 15
+   23 				strsep: <>
+   24 				strlen: <>
+   25 		feof: <>
+   26 		fclose: <>
+   27 		heapifyports: void (), <./make_index/make_index.c 209>
+   28 			portcompare: int (), <./make_index/make_index.c 176>
+   29 		translateport: void (), <./make_index/make_index.c 257>
+   30 			findport: PORT * (), <./make_index/make_index.c 235>
+   31 				errx: <>
+   32 				portcompare: 28
+   33 				free: <>
+   34 				findport: 30
+   35 		recurse: void (), <./make_index/make_index.c 306>
+   36 			errx: <>
+   37 			recurse_one: DEP * (), <./make_index/make_index.c 275>
+   38 				recurse: 35
+   39 				realloc: <>
+   40 				err: <>
+   41 		printport: void (), <./make_index/make_index.c 380>
+   42 			sortpkgs: void (), <./make_index/make_index.c 360>
+   43 				heapifypkgs: void (), <./make_index/make_index.c 334>
+   44 					strcmp: <>
+   45 			printf: <>
+   46 		usage: void (), <./phttpget/phttpget.c 57>
+   47 			fprintf: <>
+   48 			exit: <>
+   49 		readenv: void (), <./phttpget/phttpget.c 123>
+   50 			getenv: <>
+   51 			strncmp: <>
+   52 			strchr: <>
+   53 			strncasecmp: <>
+   54 			strsep: <>
+   55 			asprintf: <>
+   56 			err: <>
+   57 			b64enc: char * (), <./phttpget/phttpget.c 69>
+   58 				strlen: <>
+   59 				malloc: <>
+   60 			free: <>
+   61 			strtol: <>
+   62 			warnx: <>
+   63 		memset: <>
+   64 		getaddrinfo: <>
+   65 		gai_strerror: <>
+   66 		socket: <>
+   67 		setsockopt: <>
+   68 		connect: <>
+   69 		close: <>
+   70 		fcntl: <>
+   71 		makerequest: int (), <./phttpget/phttpget.c 199>
+   72 			asprintf: <>
+   73 			err: <>
+   74 		send: <>
+   75 		free: <>
+   76 		readln: int (), <./phttpget/phttpget.c 221>
+   77 			strnstr: <>
+   78 			memmove: <>
+   79 			recv: <>
+   80 		strnstr: <>
+   81 		strchr: <>
+   82 		strncmp: <>
+   83 		isdigit: <>
+   84 		strncasecmp: <>
+   85 		strcasestr: <>
+   86 		strlen: <>
+   87 		strrchr: <>
+   88 		open: <>
+   89 		strstr: <>
+   90 		isxdigit: <>
+   91 		tolower: <>
+   92 		copybytes: int (), <./phttpget/phttpget.c 253>
+   93 			write: <>
+   94 			err: <>
+   95 			recv: <>
+   96 		fprintf: <>
+   97 		shutdown: <>
+   98 		freeaddrinfo: <>

@@ -1,0 +1,135 @@
+    1 	main: int (), <./ancontrol.c 1519>
+    2 		getopt: <>
+    3 		errx: <>
+    4 		atoi: <>
+    5 		usage: void (), <./ancontrol.c 882>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		isdigit: <>
+    9 		exit: <>
+   10 		an_dumpstatus: void (), <./ancontrol.c 246>
+   11 			an_getval: int (), <./ancontrol.c 135>
+   12 				bzero: <>
+   13 				strlcpy: <>
+   14 				socket: <>
+   15 				err: <>
+   16 				ioctl: <>
+   17 				close: <>
+   18 			printf: <>
+   19 			an_printhex: void (), <./ancontrol.c 229>
+   20 				printf: <>
+   21 			an_printstr: void (), <./ancontrol.c 185>
+   22 				printf: <>
+   23 			an_printwords: void (), <./ancontrol.c 198>
+   24 				printf: <>
+   25 		an_dumpcaps: void (), <./ancontrol.c 351>
+   26 			an_getval: 11
+   27 			printf: <>
+   28 			an_printhex: 19
+   29 			an_printwords: 23
+   30 			an_printstr: 21
+   31 			an_printspeeds: void (), <./ancontrol.c 209>
+   32 				printf: <>
+   33 			ntohs: <>
+   34 		an_dumpstats: void (), <./ancontrol.c 436>
+   35 			an_getval: 11
+   36 			printf: <>
+   37 		an_dumpconfig: void (), <./ancontrol.c 650>
+   38 			an_getval: 11
+   39 			printf: <>
+   40 			an_printwords: 23
+   41 			an_printhex: 19
+   42 			an_printspeeds: 31
+   43 			an_printbool: void (), <./ancontrol.c 220>
+   44 				printf: <>
+   45 			an_printstr: 21
+   46 			an_readkeyinfo: void (), <./ancontrol.c 1329>
+   47 				an_getval: 11
+   48 				bzero: <>
+   49 				printf: <>
+   50 		an_dumpssid: void (), <./ancontrol.c 623>
+   51 			an_getval: 11
+   52 			printf: <>
+   53 		an_dumpap: void (), <./ancontrol.c 598>
+   54 			an_getval: 11
+   55 			printf: <>
+   56 			an_printhex: 19
+   57 		an_dumprssimap: void (), <./ancontrol.c 855>
+   58 			an_getval: 11
+   59 			printf: <>
+   60 		an_setssid: void (), <./ancontrol.c 1152>
+   61 			an_getval: 11
+   62 			printf: <>
+   63 			errx: <>
+   64 			exit: <>
+   65 			bzero: <>
+   66 			strlcpy: <>
+   67 			strlen: <>
+   68 			an_setval: void (), <./ancontrol.c 161>
+   69 				bzero: <>
+   70 				strlcpy: <>
+   71 				socket: <>
+   72 				err: <>
+   73 				ioctl: <>
+   74 				close: <>
+   75 		an_setap: void (), <./ancontrol.c 1108>
+   76 			an_getval: 11
+   77 			ether_aton: <>
+   78 			errx: <>
+   79 			bzero: <>
+   80 			bcopy: <>
+   81 			an_setval: 68
+   82 			exit: <>
+   83 		an_setspeed: void (), <./ancontrol.c 1062>
+   84 			an_getval: 11
+   85 			atoi: <>
+   86 			errx: <>
+   87 			an_setval: 68
+   88 			exit: <>
+   89 		an_zerocache: void (), <./ancontrol.c 1191>
+   90 			bzero: <>
+   91 			an_getval: 11
+   92 		an_readcache: void (), <./ancontrol.c 1203>
+   93 			errx: <>
+   94 			bzero: <>
+   95 			an_getval: 11
+   96 			printf: <>
+   97 		an_setkeys: void (), <./ancontrol.c 1285>
+   98 			bzero: <>
+   99 			strlen: <>
+  100 			err: <>
+  101 			an_str2key: void (), <./ancontrol.c 1258>
+  102 				an_hex2int: int (), <./ancontrol.c 1245>
+  103 				errx: <>
+  104 				bcopy: <>
+  105 				strlen: <>
+  106 			an_setval: 68
+  107 		an_enable_tx_key: void (), <./ancontrol.c 1382>
+  108 			bzero: <>
+  109 			an_getval: 11
+  110 			atoi: <>
+  111 			an_setval: 68
+  112 		an_enable_leap_mode: void (), <./ancontrol.c 1424>
+  113 			an_getval: 11
+  114 			fprintf: <>
+  115 			exit: <>
+  116 			bzero: <>
+  117 			strlen: <>
+  118 			printf: <>
+  119 			strncpy: <>
+  120 			getpass: <>
+  121 			MD4Init: <>
+  122 			MD4Update: <>
+  123 			MD4Final: <>
+  124 			an_setval: 68
+  125 			sleep: <>
+  126 		an_setconfig: void (), <./ancontrol.c 922>
+  127 			an_getval: 11
+  128 			atoi: <>
+  129 			errx: <>
+  130 			bzero: <>
+  131 			strncpy: <>
+  132 			ether_aton: <>
+  133 			bcopy: <>
+  134 			an_setval: 68
+  135 			exit: <>

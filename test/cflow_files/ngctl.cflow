@@ -1,0 +1,82 @@
+    1 	main: int (), <./main.c 141>
+    2 		isatty: <>
+    3 		snprintf: <>
+    4 		getpid: <>
+    5 		getopt: <>
+    6 		NgSetDebug: <>
+    7 		strcmp: <>
+    8 		fopen: <>
+    9 		err: <>
+   10 		Usage: void (), <./main.c 658>
+   11 			warnx: <>
+   12 			fprintf: <>
+   13 			exit: <>
+   14 		NgMkSockNode: <>
+   15 		ReadFile: int (), <./main.c 211>
+   16 			fgets: <>
+   17 			DoParseCommand: int (), <./main.c 430>
+   18 				strtok: <>
+   19 				DoCommand: int (), <./main.c 448>
+   20 					FindCommand: const struct ngcmd * (), <./main.c 466>
+   21 					warnx: <>
+   22 			warnx: <>
+   23 		DoInteractive: int (), <./main.c 348>
+   24 			pthread_create: <>
+   25 			Monitor: void * (), <./main.c 241>
+   26 				MAX: <>
+   27 				Unblock: void (), <./main.c 230>
+   28 				sigemptyset: <>
+   29 				sigaction: <>
+   30 				pthread_mutex_lock: <>
+   31 				FD_ZERO: <>
+   32 				FD_SET: <>
+   33 				select: <>
+   34 				pthread_cond_wait: <>
+   35 				err: <>
+   36 				ReadSockets: void (), <./main.c 401>
+   37 					FD_ISSET: <>
+   38 					MsgRead: void (), <./msg.c 126>
+   39 						NgAllocRecvMsg: <>
+   40 						warn: <>
+   41 						NgSendMsg: <>
+   42 						printf: <>
+   43 						DumpAscii: void (), <./main.c 621>
+   44 							snprintf: <>
+   45 							strlen: <>
+   46 							isprint: <>
+   47 							printf: <>
+   48 						free: <>
+   49 					NgAllocRecvData: <>
+   50 					err: <>
+   51 					errx: <>
+   52 					printf: <>
+   53 					DumpAscii: 43
+   54 					free: <>
+   55 			el_init: <>
+   56 			getprogname: <>
+   57 			el_set: <>
+   58 			Prompt: char * (), <./main.c 275>
+   59 			history_init: <>
+   60 			history: <>
+   61 			el_source: <>
+   62 			el_gets: <>
+   63 			printf: <>
+   64 			pthread_kill: <>
+   65 			pthread_mutex_lock: <>
+   66 			DoParseCommand: 17
+   67 			pthread_mutex_unlock: <>
+   68 			pthread_cond_signal: <>
+   69 			history_end: <>
+   70 			el_end: <>
+   71 			pthread_cancel: <>
+   72 			MAX: <>
+   73 			FD_ZERO: <>
+   74 			FD_SET: <>
+   75 			memset: <>
+   76 			select: <>
+   77 			fflush: <>
+   78 			err: <>
+   79 			FD_ISSET: <>
+   80 			ReadSockets: 36
+   81 			fgets: <>
+   82 		DoCommand: 19

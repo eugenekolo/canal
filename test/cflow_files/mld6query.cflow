@@ -1,0 +1,52 @@
+    1 	main: int (), <./mld6.c 92>
+    2 		getopt: <>
+    3 		usage: void (), <./mld6.c 348>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		if_nametoindex: <>
+    7 		inet_pton: <>
+    8 		socket: <>
+    9 		err: <>
+   10 		setsockopt: <>
+   11 		ICMP6_FILTER_SETBLOCKALL: <>
+   12 		ICMP6_FILTER_SETPASS: <>
+   13 		make_msg: void (), <./mld6.c 178>
+   14 			htons: <>
+   15 			IN6_IS_ADDR_UNSPECIFIED: <>
+   16 			inet_pton: <>
+   17 			errx: <>
+   18 			bzero: <>
+   19 			getifaddrs: <>
+   20 			if_nametoindex: <>
+   21 			IN6_IS_ADDR_LINKLOCAL: <>
+   22 			memcpy: <>
+   23 			freeifaddrs: <>
+   24 			inet6_opt_init: <>
+   25 			inet6_opt_append: <>
+   26 			inet6_opt_finish: <>
+   27 			CMSG_SPACE: <>
+   28 			inet6_option_space: <>
+   29 			malloc: <>
+   30 			CMSG_LEN: <>
+   31 			CMSG_DATA: <>
+   32 			CMSG_NXTHDR: <>
+   33 			inet6_opt_set_val: <>
+   34 			inet6_option_init: <>
+   35 			inet6_option_append: <>
+   36 		sendmsg: <>
+   37 		signal: <>
+   38 		quit: void (), <./mld6.c 336>
+   39 			setsockopt: <>
+   40 			err: <>
+   41 			exit: <>
+   42 		setitimer: <>
+   43 		FD_ZERO: <>
+   44 		errx: <>
+   45 		FD_SET: <>
+   46 		select: <>
+   47 		perror: <>
+   48 		dump: void (), <./mld6.c 294>
+   49 			recvfrom: <>
+   50 			printf: <>
+   51 			inet_ntop: <>
+   52 			fflush: <>

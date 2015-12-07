@@ -1,0 +1,83 @@
+    1 	main: int (), <./ip6addrctl.c 76>
+    2 		TAILQ_INIT: <>
+    3 		strcasecmp: <>
+    4 		get_policy: void (), <./ip6addrctl.c 107>
+    5 			sysctl: <>
+    6 			err: <>
+    7 			printf: <>
+    8 			malloc: <>
+    9 			errx: <>
+   10 			TAILQ_INSERT_TAIL: <>
+   11 			free: <>
+   12 		dump_policy: void (), <./ip6addrctl.c 145>
+   13 			TAILQ_FIRST: <>
+   14 			TAILQ_NEXT: <>
+   15 			printf: <>
+   16 			getnameinfo: <>
+   17 			warnx: <>
+   18 			mask2plen: int (), <./ip6addrctl.c 329>
+   19 			strlen: <>
+   20 			snprintf: <>
+   21 		usage: void (), <./ip6addrctl.c 446>
+   22 			fprintf: <>
+   23 			exit: <>
+   24 		add_policy: void (), <./ip6addrctl.c 388>
+   25 			memset: <>
+   26 			parse_prefix: int (), <./ip6addrctl.c 256>
+   27 				strdup: <>
+   28 				errx: <>
+   29 				strchr: <>
+   30 				memset: <>
+   31 				getaddrinfo: <>
+   32 				warnx: <>
+   33 				gai_strerror: <>
+   34 				memcpy: <>
+   35 				freeaddrinfo: <>
+   36 				atoi: <>
+   37 				plen2mask: void (), <./ip6addrctl.c 296>
+   38 					memset: <>
+   39 				free: <>
+   40 			errx: <>
+   41 			atoi: <>
+   42 			socket: <>
+   43 			err: <>
+   44 			ioctl: <>
+   45 			close: <>
+   46 		delete_policy: void (), <./ip6addrctl.c 409>
+   47 			memset: <>
+   48 			parse_prefix: 26
+   49 			errx: <>
+   50 			socket: <>
+   51 			err: <>
+   52 			ioctl: <>
+   53 			close: <>
+   54 		flush_policy: void (), <./ip6addrctl.c 428>
+   55 			socket: <>
+   56 			err: <>
+   57 			TAILQ_FIRST: <>
+   58 			TAILQ_NEXT: <>
+   59 			ioctl: <>
+   60 			warn: <>
+   61 			close: <>
+   62 		make_policy_fromfile: void (), <./ip6addrctl.c 201>
+   63 			fopen: <>
+   64 			err: <>
+   65 			fgets: <>
+   66 			memset: <>
+   67 			SKIP_WHITE: <>
+   68 			parse_prefix: 26
+   69 			SKIP_WORD: <>
+   70 			atoi: <>
+   71 			malloc: <>
+   72 			errx: <>
+   73 			TAILQ_INSERT_TAIL: <>
+   74 			fclose: <>
+   75 		set_policy: void (), <./ip6addrctl.c 311>
+   76 			socket: <>
+   77 			err: <>
+   78 			TAILQ_FIRST: <>
+   79 			TAILQ_NEXT: <>
+   80 			ioctl: <>
+   81 			warn: <>
+   82 			close: <>
+   83 		exit: <>

@@ -1,0 +1,394 @@
+    1 	main:  (), <./misc/cksum.c 36>
+    2 		strrchr: <>
+    3 		getpid: <>
+    4 		getopt: <>
+    5 		fatal: void (), <./route6d.c 259>
+    6 			va_start: <>
+    7 			vsnprintf: <>
+    8 			va_end: <>
+    9 			perror: <>
+   10 			syslog: <>
+   11 			strerror: <>
+   12 			rtdexit: void (), <./route6d.c 555>
+   13 				alarm: <>
+   14 				TAILQ_FOREACH: <>
+   15 				delroute: int (), <./route6d.c 2868>
+   16 					inet_ntop: <>
+   17 					tracet: <>
+   18 						va_start: <>
+   19 						fprintf: <>
+   20 						hms: char * (), <./route6d.c 3413>
+   21 							time: <>
+   22 							localtime: <>
+   23 							fatal: 5
+   24 							snprintf: <>
+   25 						vfprintf: <>
+   26 						va_end: <>
+   27 						vsyslog: <>
+   28 					inet6_n2p: const char * (), <./route6d.c 2981>
+   29 						inet_ntop: <>
+   30 					fprintf: <>
+   31 					hms: 20
+   32 					memset: <>
+   33 					ROUNDUP: <>
+   34 					plen2mask: struct in6_addr (), <./route6d.c 3378>
+   35 					write: <>
+   36 					trace: <>
+   37 						va_start: <>
+   38 						vfprintf: <>
+   39 						va_end: <>
+   40 						vsyslog: <>
+   41 					strerror: <>
+   42 				close: <>
+   43 				syslog: <>
+   44 				closelog: <>
+   45 				exit: <>
+   46 		allocopy: char * (), <./route6d.c 3398>
+   47 			strlen: <>
+   48 			malloc: <>
+   49 			fatal: 5
+   50 			strlcpy: <>
+   51 		strtoul: <>
+   52 		fopen: <>
+   53 		FLAG: <>
+   54 		geteuid: <>
+   55 		fprintf: <>
+   56 		daemon: <>
+   57 		openlog: <>
+   58 		malloc: <>
+   59 		memset: <>
+   60 		init: void (), <./route6d.c 610>
+   61 			TAILQ_INIT: <>
+   62 			snprintf: <>
+   63 			memset: <>
+   64 			getaddrinfo: <>
+   65 			fatal: 5
+   66 			gai_strerror: <>
+   67 			socket: <>
+   68 			setsockopt: <>
+   69 			bind: <>
+   70 			memcpy: <>
+   71 			howmany: <>
+   72 			malloc: <>
+   73 			FD_SET: <>
+   74 		ifconfig: void (), <./route6d.c 1505>
+   75 			socket: <>
+   76 			fatal: 5
+   77 			getifaddrs: <>
+   78 			ifc_find: struct ifc (), <./route6d.c 3567>
+   79 			MALLOC: <>
+   80 			memset: <>
+   81 			strlcpy: <>
+   82 			TAILQ_INIT: <>
+   83 			TAILQ_INSERT_HEAD: <>
+   84 			trace: 36
+   85 			ifflags: const char * (), <./route6d.c 2543>
+   86 				strlcpy: <>
+   87 				IFFLAG: <>
+   88 			strcmp: <>
+   89 			ifconfig1: int (), <./route6d.c 1580>
+   90 				IN6_IS_ADDR_SITELOCAL: <>
+   91 				strncpy: <>
+   92 				ioctl: <>
+   93 				syslog: <>
+   94 				sin6mask2len: int (), <./route6d.c 3308>
+   95 					mask2len: int (), <./route6d.c 3316>
+   96 						MASKLEN: <>
+   97 					offsetof: <>
+   98 				ifa_match: struct ifac (), <./route6d.c 3272>
+   99 				MALLOC: <>
+  100 				fatal: 5
+  101 				memset: <>
+  102 				inet_ntop: <>
+  103 				trace: 36
+  104 				inet6_n2p: 28
+  105 				IN6_IS_ADDR_LINKLOCAL: <>
+  106 				memcpy: <>
+  107 				setindex2ifc: void (), <./route6d.c 3593>
+  108 					malloc: <>
+  109 					fatal: 5
+  110 					memset: <>
+  111 					realloc: <>
+  112 				getifmtu: int (), <./route6d.c 2411>
+  113 					sysctl: <>
+  114 					fatal: 5
+  115 					malloc: <>
+  116 					free: <>
+  117 				TAILQ_INSERT_HEAD: <>
+  118 			setsockopt: <>
+  119 			close: <>
+  120 			freeifaddrs: <>
+  121 		TAILQ_FOREACH: <>
+  122 		exit: <>
+  123 		ifrt: int (), <./route6d.c 2136>
+  124 			ifrt_p2p: void (), <./route6d.c 2247>
+  125 				TAILQ_FOREACH: <>
+  126 				applyplen: void (), <./route6d.c 3358>
+  127 				IN6_IS_ADDR_UNSPECIFIED: <>
+  128 				IN6_ARE_ADDR_EQUAL: <>
+  129 				MALLOC: <>
+  130 				fatal: 5
+  131 				memset: <>
+  132 				IN6_IS_ADDR_LINKLOCAL: <>
+  133 				trace: 36
+  134 				free: <>
+  135 				htons: <>
+  136 				rtsearch: struct riprt (), <./route6d.c 3293>
+  137 				inet6_n2p: 28
+  138 				TAILQ_INSERT_HEAD: <>
+  139 				TAILQ_INSERT_BEFORE: <>
+  140 				TAILQ_REMOVE: <>
+  141 			TAILQ_FOREACH: <>
+  142 			IN6_IS_ADDR_LINKLOCAL: <>
+  143 			trace: 36
+  144 			inet6_n2p: 28
+  145 			IN6_IS_ADDR_UNSPECIFIED: <>
+  146 			IN6_IS_ADDR_LOOPBACK: <>
+  147 			MALLOC: <>
+  148 			fatal: 5
+  149 			memset: <>
+  150 			htons: <>
+  151 			applyplen: 126
+  152 			rtsearch: struct riprt (), <./route6d.c 3293>
+  153 			TAILQ_REMOVE: <>
+  154 			delroute: 15
+  155 			TAILQ_INSERT_HEAD: <>
+  156 			addroute: int (), <./route6d.c 2793>
+  157 				inet_ntop: <>
+  158 				tracet: 17
+  159 				inet6_n2p: 28
+  160 				fprintf: <>
+  161 				hms: 20
+  162 				memset: <>
+  163 				ROUNDUP: <>
+  164 				IN6_IS_ADDR_LINKLOCAL: <>
+  165 				plen2mask: struct in6_addr (), <./route6d.c 3378>
+  166 				write: <>
+  167 				trace: 36
+  168 				strerror: <>
+  169 			sendrequest: void (), <./route6d.c 1446>
+  170 				memset: <>
+  171 				tracet: 17
+  172 				inet6_n2p: 28
+  173 				sendpacket: int (), <./route6d.c 1043>
+  174 					IN6_IS_ADDR_LINKLOCAL: <>
+  175 					IN6_IS_ADDR_MULTICAST: <>
+  176 					memset: <>
+  177 					CMSG_SPACE: <>
+  178 					CMSG_LEN: <>
+  179 					CMSG_DATA: <>
+  180 					sendmsg: <>
+  181 					trace: 36
+  182 					strerror: <>
+  183 				RIPSIZE: <>
+  184 			ripsend: void (), <./route6d.c 806>
+  185 				TAILQ_FOREACH: <>
+  186 				ripflush: void (), <./route6d.c 758>
+  187 					tracet: 17
+  188 					inet6_n2p: 28
+  189 					ntohs: <>
+  190 					IN6_IS_ADDR_UNSPECIFIED: <>
+  191 					trace: 36
+  192 					sendpacket: 173
+  193 					RIPSIZE: <>
+  194 				iff_find: struct iff (), <./route6d.c 3579>
+  195 				memset: <>
+  196 				htons: <>
+  197 				out_filter: int (), <./route6d.c 947>
+  198 					TAILQ_FOREACH: <>
+  199 					applyplen: 126
+  200 					IN6_ARE_ADDR_EQUAL: <>
+  201 					iff_find: struct iff (), <./route6d.c 3579>
+  202 				tobeadv: int (), <./route6d.c 1018>
+  203 				IN6_IS_ADDR_UNSPECIFIED: <>
+  204 				IN6_ARE_ADDR_EQUAL: <>
+  205 			time: <>
+  206 			free: <>
+  207 		filterconfig: void (), <./route6d.c 3141>
+  208 			memset: <>
+  209 			strchr: <>
+  210 			fatal: 5
+  211 			inet_pton: <>
+  212 			strtoul: <>
+  213 			applyplen: 126
+  214 			TAILQ_FOREACH: <>
+  215 			fnmatch: <>
+  216 			malloc: <>
+  217 			memcpy: <>
+  218 			syslog: <>
+  219 			TAILQ_INSERT_HEAD: <>
+  220 			htons: <>
+  221 			getroute: struct in6_addr (), <./route6d.c 2934>
+  222 			delroute: 15
+  223 			inet6_n2p: 28
+  224 			trace: 36
+  225 			addroute: 156
+  226 		krtread: void (), <./route6d.c 2579>
+  227 			sleep: <>
+  228 			free: <>
+  229 			sysctl: <>
+  230 			malloc: <>
+  231 			fatal: 5
+  232 			syslog: <>
+  233 			rt_entry: void (), <./route6d.c 2632>
+  234 				ROUNDUP: <>
+  235 				IN6_IS_ADDR_LINKLOCAL: <>
+  236 				IN6_ARE_ADDR_EQUAL: <>
+  237 				IN6_IS_ADDR_MULTICAST: <>
+  238 				MALLOC: <>
+  239 				fatal: 5
+  240 				memset: <>
+  241 				time: <>
+  242 				sin6mask2len: 94
+  243 				rtsearch: struct riprt (), <./route6d.c 3293>
+  244 				trace: 36
+  245 				inet6_n2p: 28
+  246 				rtflags: const char * (), <./route6d.c 2483>
+  247 					strlcpy: <>
+  248 					RTFLAG: <>
+  249 				free: <>
+  250 				IN6_IS_ADDR_LOOPBACK: <>
+  251 				TAILQ_INSERT_BEFORE: <>
+  252 				TAILQ_REMOVE: <>
+  253 				TAILQ_INSERT_HEAD: <>
+  254 		ifrtdump: void (), <./route6d.c 2989>
+  255 			ifdump: void (), <./route6d.c 2997>
+  256 				fopen: <>
+  257 				fprintf: <>
+  258 				hms: 20
+  259 				TAILQ_FOREACH: <>
+  260 				iff_find: struct iff (), <./route6d.c 3579>
+  261 				ifdump0: void (), <./route6d.c 3036>
+  262 					fprintf: <>
+  263 					ifflags: 85
+  264 					inet6_n2p: 28
+  265 					TAILQ_FOREACH: <>
+  266 					inet_ntop: <>
+  267 					snprintf: <>
+  268 				fclose: <>
+  269 			rtdump: void (), <./route6d.c 3092>
+  270 				fopen: <>
+  271 				time: <>
+  272 				fprintf: <>
+  273 				hms: 20
+  274 				TAILQ_FOREACH: <>
+  275 				inet_ntop: <>
+  276 				inet6_n2p: 28
+  277 				ntohs: <>
+  278 				fclose: <>
+  279 		fclose: <>
+  280 		signal: <>
+  281 		sighandler: void (), <./route6d.c 531>
+  282 		alarm: <>
+  283 		ripinterval: int (), <./route6d.c 3432>
+  284 			rand: <>
+  285 			time: <>
+  286 		iff_find: struct iff (), <./route6d.c 3579>
+  287 		sendrequest: 169
+  288 		syslog: <>
+  289 		sigemptyset: <>
+  290 		sigaddset: <>
+  291 		ripalarm: void (), <./route6d.c 582>
+  292 			time: <>
+  293 			TAILQ_FOREACH_SAFE: <>
+  294 			TAILQ_REMOVE: <>
+  295 			delroute: 15
+  296 			free: <>
+  297 			TAILQ_FOREACH: <>
+  298 			ripsend: 184
+  299 			alarm: <>
+  300 			ripinterval: 283
+  301 		rtdexit: 12
+  302 		poll: <>
+  303 		memcpy: <>
+  304 		select: <>
+  305 		FD_ISSET: <>
+  306 		sigprocmask: <>
+  307 		riprecv: void (), <./route6d.c 1099>
+  308 			recvmsg: <>
+  309 			fatal: 5
+  310 			CMSG_FIRSTHDR: <>
+  311 			CMSG_NXTHDR: <>
+  312 			CMSG_LEN: <>
+  313 			trace: 36
+  314 			CMSG_DATA: <>
+  315 			riprequest: void (), <./route6d.c 1474>
+  316 				IN6_IS_ADDR_UNSPECIFIED: <>
+  317 				trace: 36
+  318 				rtsearch: struct riprt (), <./route6d.c 3293>
+  319 				sendpacket: 173
+  320 				RIPSIZE: <>
+  321 				ripsend: 184
+  322 			IN6_IS_ADDR_LINKLOCAL: <>
+  323 			inet6_n2p: 28
+  324 			ntohs: <>
+  325 			IN6_IS_ADDR_MULTICAST: <>
+  326 			IN6_ARE_ADDR_EQUAL: <>
+  327 			iff_find: struct iff (), <./route6d.c 3579>
+  328 			tracet: 17
+  329 			time: <>
+  330 			IN6_IS_ADDR_UNSPECIFIED: <>
+  331 			IN6_IS_ADDR_LOOPBACK: <>
+  332 			IN6_IS_ADDR_SITELOCAL: <>
+  333 			applyplen: 126
+  334 			TAILQ_FOREACH: <>
+  335 			rtsearch: struct riprt (), <./route6d.c 3293>
+  336 			delroute: 15
+  337 			addroute: 156
+  338 			MALLOC: <>
+  339 			memset: <>
+  340 			TAILQ_INSERT_HEAD: <>
+  341 			ripsend: 184
+  342 		rtrecv: void (), <./route6d.c 1688>
+  343 			read: <>
+  344 			perror: <>
+  345 			exit: <>
+  346 			trace: 36
+  347 			fprintf: <>
+  348 			ifremove: void (), <./route6d.c 1660>
+  349 				TAILQ_FOREACH: <>
+  350 				tracet: 17
+  351 				TAILQ_REMOVE: <>
+  352 				delroute: 15
+  353 				free: <>
+  354 			memset: <>
+  355 			ROUNDUP: <>
+  356 			rttypes: const char * (), <./route6d.c 2448>
+  357 				RTTYPE: <>
+  358 			IN6_IS_ADDR_LINKLOCAL: <>
+  359 			IN6_ARE_ADDR_EQUAL: <>
+  360 			IN6_IS_ADDR_MULTICAST: <>
+  361 			fatal: 5
+  362 			rt_del: int (), <./route6d.c 1937>
+  363 				trace: 36
+  364 				IN6_IS_ADDR_LINKLOCAL: <>
+  365 				IN6_ARE_ADDR_EQUAL: <>
+  366 				IN6_IS_ADDR_MULTICAST: <>
+  367 				inet6_n2p: 28
+  368 				sin6mask2len: 94
+  369 				TAILQ_FOREACH: <>
+  370 				IN6_IS_ADDR_LOOPBACK: <>
+  371 				time: <>
+  372 				memset: <>
+  373 				applyplen: 126
+  374 				rtsearch: struct riprt (), <./route6d.c 3293>
+  375 			rt_deladdr: int (), <./route6d.c 2035>
+  376 				trace: 36
+  377 				sin6mask2len: 94
+  378 				inet6_n2p: 28
+  379 				ifa_match: struct ifac (), <./route6d.c 3272>
+  380 				TAILQ_REMOVE: <>
+  381 				time: <>
+  382 				memset: <>
+  383 				applyplen: 126
+  384 				rtsearch: struct riprt (), <./route6d.c 3293>
+  385 				IN6_ARE_ADDR_EQUAL: <>
+  386 				IN6_IS_ADDR_LOOPBACK: <>
+  387 				free: <>
+  388 			ifconfig: 74
+  389 			TAILQ_FOREACH: <>
+  390 			ifrt: 123
+  391 			ripsend: 184
+  392 			krtread: 226
+  393 		scanf: <>
+  394 		printf: <>

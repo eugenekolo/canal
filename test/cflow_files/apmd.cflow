@@ -1,0 +1,125 @@
+    1 	main: int (), <./contrib/pccardq.c 242>
+    2 		getopt: <>
+    3 		err: <>
+    4 		daemon: <>
+    5 		nice: <>
+    6 		strrchr: <>
+    7 		openlog: <>
+    8 		syslog: <>
+    9 		pipe: <>
+   10 		fcntl: <>
+   11 		open: <>
+   12 		restart: void (), <./apmd.c 421>
+   13 			destroy_config: void (), <./apmd.c 390>
+   14 				write: <>
+   15 				err: <>
+   16 				free_event_cmd_list: void (), <./apmd.c 205>
+   17 					free: <>
+   18 				free: <>
+   19 			read_config: void (), <./apmd.c 325>
+   20 				fopen: <>
+   21 				err: <>
+   22 				yyparse: <>
+   23 				fclose: <>
+   24 				write: <>
+   25 			dump_config: void (), <./apmd.c 354>
+   26 				fprintf: <>
+   27 				dump: <>
+   28 		write_pid: void (), <./apmd.c 433>
+   29 			fopen: <>
+   30 			fprintf: <>
+   31 			getpid: <>
+   32 			fclose: <>
+   33 		event_loop: void (), <./apmd.c 577>
+   34 			FD_ZERO: <>
+   35 			FD_SET: <>
+   36 			memset: <>
+   37 			enque_signal: void (), <./apmd.c 449>
+   38 				write: <>
+   39 				err: <>
+   40 			sigfillset: <>
+   41 			sigaction: <>
+   42 			sigemptyset: <>
+   43 			sigaddset: <>
+   44 			sigprocmask: <>
+   45 			memcpy: <>
+   46 			select: <>
+   47 			err: <>
+   48 			check_battery: void (), <./apmd.c 511>
+   49 				ioctl: <>
+   50 				err: <>
+   51 				fork: <>
+   52 				exec_event_cmd: int (), <./apmd.c 306>
+   53 					exec_run_cmd: int (), <./apmd.c 285>
+   54 						assert: <>
+   55 						act: <>
+   56 						syslog: <>
+   57 					syslog: <>
+   58 					event_cmd_reject_act: int (), <./apmd.c 170>
+   59 						ioctl: <>
+   60 						syslog: <>
+   61 				exit: <>
+   62 				syslog: <>
+   63 				exec_run_cmd: 53
+   64 			FD_ISSET: <>
+   65 			proc_signal: int (), <./apmd.c 464>
+   66 				read: <>
+   67 				syslog: <>
+   68 				restart: 12
+   69 				wait_child: void (), <./apmd.c 456>
+   70 					waitpid: <>
+   71 				warn: <>
+   72 			proc_apmevent: void (), <./apmd.c 491>
+   73 				ioctl: <>
+   74 				syslog: <>
+   75 				fork: <>
+   76 				exec_event_cmd: 52
+   77 				exit: <>
+   78 		exit: <>
+   79 		proc_arg: int (), <./contrib/pccardq.c 29>
+   80 			strrchr: <>
+   81 			getenv: <>
+   82 			getopt: <>
+   83 			atoi: <>
+   84 			warnc: <>
+   85 			usage: void (), <./contrib/pccardq.c 23>
+   86 				fprintf: <>
+   87 		connect_to_pccardd: int (), <./contrib/pccardq.c 72>
+   88 			socket: <>
+   89 			warn: <>
+   90 			err: <>
+   91 			snprintf: <>
+   92 			getpid: <>
+   93 			time: <>
+   94 			offsetof: <>
+   95 			strlen: <>
+   96 			bind: <>
+   97 			strdup: <>
+   98 			warnc: <>
+   99 			strcpy: <>
+  100 			connect: <>
+  101 			close: <>
+  102 		get_slot_number: int (), <./contrib/pccardq.c 117>
+  103 			write: <>
+  104 			warn: <>
+  105 			err: <>
+  106 			warnc: <>
+  107 			read: <>
+  108 			sscanf: <>
+  109 		printf: <>
+  110 		get_slot_info: int (), <./contrib/pccardq.c 153>
+  111 			snprintf: <>
+  112 			warnc: <>
+  113 			err: <>
+  114 			write: <>
+  115 			warn: <>
+  116 			read: <>
+  117 			strsep: <>
+  118 			atoi: <>
+  119 			sscanf: <>
+  120 			strchr: <>
+  121 			strdup: <>
+  122 		strstate: const char * (), <./contrib/pccardq.c 227>
+  123 		free: <>
+  124 		unlink: <>
+  125 		close: <>

@@ -1,0 +1,413 @@
+    1 	main: int (), <./bhyverun.c 762>
+    2 		pthread_create: <>
+    3 		acceptor: void * (), <./mevent_test.c 192>
+    4 			socket: <>
+    5 			perror: <>
+    6 			exit: <>
+    7 			htonl: <>
+    8 			htons: <>
+    9 			bind: <>
+   10 			listen: <>
+   11 			mevent_add: struct mevent (), <./mevent.c 243>
+   12 			acceptor_callback: void (), <./mevent_test.c 184>
+   13 				pthread_mutex_lock: <>
+   14 				pthread_cond_signal: <>
+   15 				pthread_mutex_unlock: <>
+   16 			pthread_mutex_lock: <>
+   17 			pthread_cond_wait: <>
+   18 			accept: <>
+   19 			timer_callback: void (), <./mevent_test.c 95>
+   20 				abort: <>
+   21 				rdtsc: <>
+   22 				mevent_delete: int (), <./mevent.c 375>
+   23 					mevent_delete_event: int (), <./mevent.c 350>
+   24 						mevent_qlock: void (), <./mevent.c 83>
+   25 							pthread_mutex_lock: <>
+   26 						LIST_REMOVE: <>
+   27 						LIST_INSERT_HEAD: <>
+   28 						mevent_notify: void (), <./mevent.c 110>
+   29 							pthread_self: <>
+   30 							write: <>
+   31 						mevent_qunlock: void (), <./mevent.c 89>
+   32 							pthread_mutex_unlock: <>
+   33 				timer_print: void (), <./mevent_test.c 67>
+   34 					sysctlbyname: <>
+   35 					printf: <>
+   36 			printf: <>
+   37 			pthread_create: <>
+   38 			echoer: void * (), <./mevent_test.c 169>
+   39 				pthread_mutex_init: <>
+   40 				pthread_cond_init: <>
+   41 				pthread_mutex_lock: <>
+   42 				mevent_add: struct mevent (), <./mevent.c 243>
+   43 				echoer_callback: void (), <./mevent_test.c 118>
+   44 					pthread_mutex_lock: <>
+   45 					pthread_cond_signal: <>
+   46 					pthread_mutex_unlock: <>
+   47 				printf: <>
+   48 				exit: <>
+   49 				pthread_cond_wait: <>
+   50 				read: <>
+   51 				write: <>
+   52 				mevent_delete_close: int (), <./mevent.c 382>
+   53 					mevent_delete_event: 23
+   54 				pthread_mutex_unlock: <>
+   55 				pthread_mutex_destroy: <>
+   56 				pthread_cond_destroy: <>
+   57 		mevent_dispatch: void (), <./mevent.c 396>
+   58 			pthread_self: <>
+   59 			mevent_set_name: void (), <./mevent.c 389>
+   60 				pthread_set_name_np: <>
+   61 			kqueue: <>
+   62 			assert: <>
+   63 			pipe: <>
+   64 			perror: <>
+   65 			exit: <>
+   66 			mevent_add: struct mevent (), <./mevent.c 243>
+   67 			mevent_pipe_read: void (), <./mevent.c 95>
+   68 				read: <>
+   69 			mevent_build: int (), <./mevent.c 179>
+   70 				mevent_qlock: 24
+   71 				LIST_FOREACH_SAFE: <>
+   72 				close: <>
+   73 				mevent_kq_filter: int (), <./mevent.c 124>
+   74 				mevent_kq_flags: int (), <./mevent.c 146>
+   75 					assert: <>
+   76 				mevent_kq_fflags: int (), <./mevent.c 172>
+   77 				LIST_REMOVE: <>
+   78 				free: <>
+   79 				LIST_INSERT_HEAD: <>
+   80 				assert: <>
+   81 				mevent_qunlock: 31
+   82 			kevent: <>
+   83 			mevent_handle: void (), <./mevent.c 228>
+   84 		basename: <>
+   85 		getopt: <>
+   86 		pincpu_parse: int (), <./bhyverun.c 155>
+   87 			sscanf: <>
+   88 			fprintf: <>
+   89 			malloc: <>
+   90 			perror: <>
+   91 			CPU_ZERO: <>
+   92 			CPU_SET: <>
+   93 		errx: <>
+   94 		atoi: <>
+   95 		lpc_device_parse: int (), <./pci_lpc.c 85>
+   96 			strdup: <>
+   97 			strsep: <>
+   98 			strcasecmp: <>
+   99 			free: <>
+  100 		pci_parse_slot: int (), <./pci_emul.c 167>
+  101 			strdup: <>
+  102 			strchr: <>
+  103 			pci_parse_slot_usage: void (), <./pci_emul.c 160>
+  104 				fprintf: <>
+  105 			sscanf: <>
+  106 			calloc: <>
+  107 			fprintf: <>
+  108 			pci_emul_finddev: struct pci_devemu (), <./pci_emul.c 707>
+  109 			free: <>
+  110 		exit: <>
+  111 		vm_parse_memsize: <>
+  112 		usage: void (), <./bhyverun.c 123>
+  113 			fprintf: <>
+  114 			strlen: <>
+  115 			exit: <>
+  116 		do_open: struct vmctx (), <./bhyverun.c 708>
+  117 		fprintf: <>
+  118 		num_vcpus_allowed: int (), <./bhyverun.c 647>
+  119 			vm_get_capability: <>
+  120 		fbsdrun_set_capabilities: void (), <./bhyverun.c 664>
+  121 			fbsdrun_vmexit_on_hlt: int (), <./bhyverun.c 217>
+  122 			vm_get_capability: <>
+  123 			fprintf: <>
+  124 			exit: <>
+  125 			vm_set_capability: <>
+  126 			vmexit_hlt: int (), <./bhyverun.c 479>
+  127 			fbsdrun_vmexit_on_pause: int (), <./bhyverun.c 210>
+  128 			vmexit_pause: int (), <./bhyverun.c 493>
+  129 			vm_set_x2apic_state: <>
+  130 		vm_set_memflags: <>
+  131 		vm_setup_memory: <>
+  132 		init_msr: int (), <./xmsr.c 208>
+  133 			do_cpuid: <>
+  134 			strcmp: <>
+  135 			fprintf: <>
+  136 		init_mem: void (), <./mem.c 285>
+  137 			RB_INIT: <>
+  138 			pthread_rwlock_init: <>
+  139 		init_inout: void (), <./inout.c 237>
+  140 			register_default_iohandler: void (), <./inout.c 87>
+  141 				VERIFY_IOPORT: <>
+  142 				bzero: <>
+  143 				default_inout: int (), <./inout.c 66>
+  144 				register_inout: int (), <./inout.c 260>
+  145 					VERIFY_IOPORT: <>
+  146 					handler: <>
+  147 			SET_FOREACH: <>
+  148 			assert: <>
+  149 			handler: <>
+  150 		pci_irq_init: void (), <./pci_irq.c 135>
+  151 			nitems: <>
+  152 			pthread_mutex_init: <>
+  153 			IRQ_PERMITTED: <>
+  154 		ioapic_init: void (), <./ioapic.c 50>
+  155 			vm_ioapic_pincount: <>
+  156 		rtc_init: void (), <./rtc.c 74>
+  157 			vm_get_lowmem_size: <>
+  158 			vm_rtc_write: <>
+  159 			assert: <>
+  160 			vm_get_highmem_size: <>
+  161 			vm_rtc_settime: <>
+  162 			rtc_time: time_t (), <./rtc.c 60>
+  163 				time: <>
+  164 				localtime_r: <>
+  165 				timegm: <>
+  166 		sci_init: void (), <./pm.c 303>
+  167 			pci_irq_use: void (), <./pci_irq.c 125>
+  168 				assert: <>
+  169 				nitems: <>
+  170 			vm_isa_set_irq_trigger: <>
+  171 		init_pci: int (), <./pci_emul.c 1071>
+  172 			vm_get_lowmem_limit: <>
+  173 			pci_emul_finddev: struct pci_devemu (), <./pci_emul.c 707>
+  174 			assert: <>
+  175 			pci_emul_init: int (), <./pci_emul.c 722>
+  176 				calloc: <>
+  177 				pthread_mutex_init: <>
+  178 				snprintf: <>
+  179 				pci_set_cfgdata8: <>
+  180 				free: <>
+  181 			roundup2: <>
+  182 			pci_lintr_route: void (), <./pci_emul.c 1496>
+  183 				assert: <>
+  184 				ioapic_pci_alloc_irq: int (), <./ioapic.c 67>
+  185 				pirq_alloc_pin: int (), <./pci_irq.c 196>
+  186 					nitems: <>
+  187 					assert: <>
+  188 					vm_isa_set_irq_trigger: <>
+  189 				pci_set_cfgdata8: <>
+  190 				pirq_irq: int (), <./pci_irq.c 235>
+  191 					assert: <>
+  192 					nitems: <>
+  193 			lpc_pirq_routed: void (), <./pci_lpc.c 429>
+  194 				pci_set_cfgdata8: <>
+  195 				pirq_read: uint8_t (), <./pci_irq.c 89>
+  196 					assert: <>
+  197 					nitems: <>
+  198 			vm_get_lowmem_size: <>
+  199 			bzero: <>
+  200 			pci_emul_fallback_handler: int (), <./pci_emul.c 1029>
+  201 			register_mem_fallback: int (), <./mem.c 248>
+  202 				register_mem_int: int (), <./mem.c 215>
+  203 					malloc: <>
+  204 					pthread_rwlock_wrlock: <>
+  205 					mmio_rb_lookup: int (), <./mem.c 83>
+  206 						RB_FIND: <>
+  207 					mmio_rb_add: int (), <./mem.c 101>
+  208 						RB_INSERT: <>
+  209 						printf: <>
+  210 					pthread_rwlock_unlock: <>
+  211 					free: <>
+  212 			pci_emul_ecfg_handler: int (), <./pci_emul.c 1044>
+  213 				pci_cfgrw: void (), <./pci_emul.c 1736>
+  214 					CFGREAD: __inline uint32_t (), <./pci_emul.c 129>
+  215 						pci_get_cfgdata8: <>
+  216 						pci_get_cfgdata16: <>
+  217 						pci_get_cfgdata32: <>
+  218 					pci_emul_hdrtype_fixup: void (), <./pci_emul.c 1645>
+  219 						pci_emul_is_mfdev: int (), <./pci_emul.c 1622>
+  220 					PCIR_BAR: <>
+  221 					update_bar_address: void (), <./pci_emul.c 537>
+  222 						porten: int (), <./pci_emul.c 510>
+  223 							pci_get_cfgdata16: <>
+  224 						memen: int (), <./pci_emul.c 521>
+  225 							pci_get_cfgdata16: <>
+  226 						unregister_bar: void (), <./pci_emul.c 495>
+  227 							modify_bar_registration: void (), <./pci_emul.c 452>
+  228 								bzero: <>
+  229 								pci_emul_io_handler: int (), <./pci_emul.c 353>
+  230 								register_inout: 144
+  231 								unregister_inout: int (), <./inout.c 288>
+  232 									VERIFY_IOPORT: <>
+  233 									assert: <>
+  234 									register_default_iohandler: 140
+  235 								pci_emul_mem_handler: int (), <./pci_emul.c 379>
+  236 									assert: <>
+  237 								register_mem: int (), <./mem.c 241>
+  238 									register_mem_int: 202
+  239 								unregister_mem: int (), <./mem.c 255>
+  240 									pthread_rwlock_wrlock: <>
+  241 									mmio_rb_lookup: 205
+  242 									assert: <>
+  243 									RB_REMOVE: <>
+  244 									pthread_rwlock_unlock: <>
+  245 									free: <>
+  246 								assert: <>
+  247 						assert: <>
+  248 						register_bar: void (), <./pci_emul.c 502>
+  249 							modify_bar_registration: 227
+  250 					assert: <>
+  251 					pci_set_cfgdata32: <>
+  252 					pci_emul_iscap: int (), <./pci_emul.c 1016>
+  253 						pci_get_cfgdata16: <>
+  254 					pci_emul_capwrite: void (), <./pci_emul.c 962>
+  255 						pci_get_cfgdata8: <>
+  256 						assert: <>
+  257 						msicap_cfgwrite: void (), <./pci_emul.c 887>
+  258 							pci_get_cfgdata16: <>
+  259 							pci_get_cfgdata32: <>
+  260 							pci_lintr_update: void (), <./pci_emul.c 1562>
+  261 								pthread_mutex_lock: <>
+  262 								pci_lintr_permitted: bool (), <./pci_emul.c 1457>
+  263 									pci_get_cfgdata16: <>
+  264 								pci_irq_deassert: void (), <./pci_irq.c 175>
+  265 									assert: <>
+  266 									nitems: <>
+  267 									pthread_mutex_lock: <>
+  268 									pirq_valid_irq: bool (), <./pci_irq.c 80>
+  269 										IRQ_PERMITTED: <>
+  270 									vm_isa_deassert_irq: <>
+  271 									pthread_mutex_unlock: <>
+  272 									vm_ioapic_deassert_irq: <>
+  273 								pci_irq_assert: void (), <./pci_irq.c 154>
+  274 									assert: <>
+  275 									nitems: <>
+  276 									pthread_mutex_lock: <>
+  277 									pirq_valid_irq: 268
+  278 									vm_isa_assert_irq: <>
+  279 									pthread_mutex_unlock: <>
+  280 									vm_ioapic_assert_irq: <>
+  281 								pthread_mutex_unlock: <>
+  282 							CFGWRITE: __inline void (), <./pci_emul.c 117>
+  283 								pci_set_cfgdata8: <>
+  284 								pci_set_cfgdata16: <>
+  285 								pci_set_cfgdata32: <>
+  286 						msixcap_cfgwrite: void (), <./pci_emul.c 862>
+  287 							pci_get_cfgdata16: <>
+  288 							pci_lintr_update: 260
+  289 							CFGWRITE: 282
+  290 						pciecap_cfgwrite: void (), <./pci_emul.c 926>
+  291 							CFGWRITE: 282
+  292 					pci_emul_cmdsts_write: void (), <./pci_emul.c 1670>
+  293 						pci_get_cfgdata16: <>
+  294 						CFGREAD: 214
+  295 						CFGWRITE: 282
+  296 						porten: 222
+  297 						register_bar: 248
+  298 						unregister_bar: 226
+  299 						memen: 224
+  300 						assert: <>
+  301 						pci_lintr_update: 260
+  302 					CFGWRITE: 282
+  303 			register_mem: 237
+  304 		init_dbgport: void (), <./dbgport.c 117>
+  305 			socket: <>
+  306 			perror: <>
+  307 			exit: <>
+  308 			htonl: <>
+  309 			htons: <>
+  310 			setsockopt: <>
+  311 			bind: <>
+  312 			listen: <>
+  313 			register_inout: 144
+  314 		init_bvmcons: void (), <./consport.c 149>
+  315 			register_inout: 144
+  316 		lpc_bootrom: const char * (), <./pci_lpc.c 116>
+  317 		vm_set_capability: <>
+  318 		vcpu_reset: <>
+  319 		assert: <>
+  320 		vm_get_register: <>
+  321 		mptable_build: int (), <./mptbl.c 299>
+  322 			paddr_guest2host: void * (), <./bhyverun.c 203>
+  323 				vm_map_gpa: <>
+  324 			fprintf: <>
+  325 			pci_bus_configured: int (), <./pci_emul.c 1397>
+  326 				assert: <>
+  327 			mpt_build_mpfp: void (), <./mptbl.c 102>
+  328 				memset: <>
+  329 				memcpy: <>
+  330 				mpt_compute_checksum: uint8_t (), <./mptbl.c 89>
+  331 			mpt_build_mpch: void (), <./mptbl.c 114>
+  332 				memset: <>
+  333 				memcpy: <>
+  334 			mpt_build_proc_entries: void (), <./mptbl.c 126>
+  335 				memset: <>
+  336 			mpt_build_bus_entries: void (), <./mptbl.c 169>
+  337 				memset: <>
+  338 				memcpy: <>
+  339 			mpt_build_ioapic_entries: void (), <./mptbl.c 185>
+  340 				memset: <>
+  341 			mpt_count_ioint_entries: int (), <./mptbl.c 197>
+  342 				pci_count_lintr: int (), <./pci_emul.c 1577>
+  343 			mpt_build_ioint_entries: void (), <./mptbl.c 237>
+  344 				memset: <>
+  345 				pci_walk_lintr: void (), <./pci_emul.c 1596>
+  346 				mpt_generate_pci_int: void (), <./mptbl.c 213>
+  347 					memset: <>
+  348 			mpt_build_localint_entries: void (), <./mptbl.c 145>
+  349 				memset: <>
+  350 			memcpy: <>
+  351 			mpt_compute_checksum: 330
+  352 		smbios_build: int (), <./smbiostbl.c 773>
+  353 			vm_get_lowmem_size: <>
+  354 			vm_get_highmem_size: <>
+  355 			paddr_guest2host: 322
+  356 			fprintf: <>
+  357 			smbios_ep_initializer: void (), <./smbiostbl.c 732>
+  358 				memset: <>
+  359 				memcpy: <>
+  360 				assert: <>
+  361 			assert: <>
+  362 			smbios_ep_finalizer: void (), <./smbiostbl.c 749>
+  363 		acpi_build: int (), <./acpi.c 973>
+  364 			vm_get_hpet_capabilities: <>
+  365 			getenv: <>
+  366 			basl_make_templates: int (), <./acpi.c 910>
+  367 				getenv: <>
+  368 				strlen: <>
+  369 				strcpy: <>
+  370 			basl_compile: int (), <./acpi.c 866>
+  371 				basl_start: int (), <./acpi.c 823>
+  372 					basl_open: int (), <./acpi.c 786>
+  373 						strlcpy: <>
+  374 						mkstemps: <>
+  375 						strlen: <>
+  376 						mkstemp: <>
+  377 						fdopen: <>
+  378 						unlink: <>
+  379 						close: <>
+  380 					basl_close: void (), <./acpi.c 814>
+  381 						unlink: <>
+  382 						fclose: <>
+  383 				snprintf: <>
+  384 				system: <>
+  385 				basl_load: int (), <./acpi.c 847>
+  386 					fstat: <>
+  387 					paddr_guest2host: 322
+  388 					read: <>
+  389 				basl_end: void (), <./acpi.c 839>
+  390 					basl_close: 380
+  391 		fwctl_init: void (), <./fwctl.c 542>
+  392 		setproctitle: <>
+  393 		fbsdrun_addcpu: void (), <./bhyverun.c 251>
+  394 			assert: <>
+  395 			vm_activate_cpu: <>
+  396 			err: <>
+  397 			CPU_SET_ATOMIC: <>
+  398 			pthread_create: <>
+  399 			fbsdrun_start_thread: void * (), <./bhyverun.c 231>
+  400 				snprintf: <>
+  401 				pthread_set_name_np: <>
+  402 				vm_loop: void (), <./bhyverun.c 600>
+  403 					pthread_setaffinity_np: <>
+  404 					pthread_self: <>
+  405 					assert: <>
+  406 					vm_active_cpus: <>
+  407 					CPU_ISSET: <>
+  408 					vm_set_register: <>
+  409 					vm_run: <>
+  410 					fprintf: <>
+  411 					exit: <>
+  412 					abort: <>
+  413 				exit: <>

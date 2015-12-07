@@ -1,0 +1,66 @@
+    1 	main: int (), <./rpc.umntall.c 58>
+    2 		getopt: <>
+    3 		atoi: <>
+    4 		usage: void (), <./rpc.umntall.c 262>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		time: <>
+    8 		read_mtab: int (), <./mounttab.c 73>
+    9 			fopen: <>
+   10 			syslog: <>
+   11 			fgets: <>
+   12 			strsep: <>
+   13 			badline: void (), <./mounttab.c 226>
+   14 				syslog: <>
+   15 			strtoul: <>
+   16 			malloc: <>
+   17 			fclose: <>
+   18 			memmove: <>
+   19 		warnx: <>
+   20 		bzero: <>
+   21 		is_mounted: int (), <./rpc.umntall.c 227>
+   22 			strlen: <>
+   23 			snprintf: <>
+   24 			getfsstat: <>
+   25 			malloc: <>
+   26 			err: <>
+   27 			strcmp: <>
+   28 			free: <>
+   29 		do_umount: int (), <./rpc.umntall.c 200>
+   30 			clnt_create_timed: <>
+   31 			warnx: <>
+   32 			clnt_spcreateerror: <>
+   33 			authsys_create_default: <>
+   34 			clnt_call: <>
+   35 			xdr_dir: int (), <./rpc.umntall.c 257>
+   36 				xdr_string: <>
+   37 			clnt_sperror: <>
+   38 			auth_destroy: <>
+   39 			clnt_destroy: <>
+   40 		clean_mtab: void (), <./mounttab.c 186>
+   41 			strdup: <>
+   42 			strcmp: <>
+   43 			warnx: <>
+   44 			bzero: <>
+   45 			free: <>
+   46 		do_umntall: int (), <./rpc.umntall.c 172>
+   47 			clnt_create_timed: <>
+   48 			warnx: <>
+   49 			clnt_spcreateerror: <>
+   50 			authunix_create_default: <>
+   51 			clnt_call: <>
+   52 			clnt_sperror: <>
+   53 			auth_destroy: <>
+   54 			clnt_destroy: <>
+   55 		strlen: <>
+   56 		write_mtab: int (), <./mounttab.c 142>
+   57 			fopen: <>
+   58 			syslog: <>
+   59 			strcmp: <>
+   60 			fprintf: <>
+   61 			warnx: <>
+   62 			fclose: <>
+   63 			unlink: <>
+   64 		free_mtab: void (), <./mounttab.c 212>
+   65 			free: <>
+   66 		exit: <>

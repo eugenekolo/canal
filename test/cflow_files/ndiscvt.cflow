@@ -1,0 +1,145 @@
+    1 	main: int (), <./ndiscvt.c 275>
+    2 		getopt: <>
+    3 		usage: void (), <./ndiscvt.c 156>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		firmcvt: void (), <./ndiscvt.c 219>
+    7 			strdup: <>
+    8 			basename: <>
+    9 			snprintf: <>
+   10 			printf: <>
+   11 			system: <>
+   12 			tolower: <>
+   13 			free: <>
+   14 			exit: <>
+   15 		fopen: <>
+   16 		err: <>
+   17 		fseek: <>
+   18 		ftell: <>
+   19 		rewind: <>
+   20 		calloc: <>
+   21 		fread: <>
+   22 		fclose: <>
+   23 		insert_padding: int (), <./ndiscvt.c 95>
+   24 			malloc: <>
+   25 			bcopy: <>
+   26 			pe_get_optional_header: <>
+   27 			pe_numsections: <>
+   28 			SET_HDRS: <>
+   29 			ROUND_UP: <>
+   30 			realloc: <>
+   31 			free: <>
+   32 			bzero: <>
+   33 		fprintf: <>
+   34 		exit: <>
+   35 		strcmp: <>
+   36 		strlen: <>
+   37 		inf_parse: int (), <./inf.c 76>
+   38 			TAILQ_INIT: <>
+   39 			yyparse: <>
+   40 			dump_deviceids_pci: void (), <./inf.c 282>
+   41 				find_assign: struct assign (), <./inf.c 110>
+   42 				strcasecmp: <>
+   43 				snprintf: <>
+   44 				find_section: struct section (), <./inf.c 165>
+   45 				TAILQ_FOREACH: <>
+   46 				strcasestr: <>
+   47 				fprintf: <>
+   48 				dump_pci_id: void (), <./inf.c 225>
+   49 					strcasestr: <>
+   50 					strcpy: <>
+   51 					strncat: <>
+   52 					fprintf: <>
+   53 				find_next_assign: struct assign (), <./inf.c 136>
+   54 			dump_deviceids_pcmcia: void (), <./inf.c 375>
+   55 				find_assign: struct assign (), <./inf.c 110>
+   56 				strcasecmp: <>
+   57 				snprintf: <>
+   58 				find_section: struct section (), <./inf.c 165>
+   59 				TAILQ_FOREACH: <>
+   60 				strcasestr: <>
+   61 				fprintf: <>
+   62 				dump_pcmcia_id: void (), <./inf.c 177>
+   63 					strchr: <>
+   64 					fprintf: <>
+   65 				find_next_assign: struct assign (), <./inf.c 136>
+   66 			dump_deviceids_usb: void (), <./inf.c 468>
+   67 				find_assign: struct assign (), <./inf.c 110>
+   68 				strcasecmp: <>
+   69 				snprintf: <>
+   70 				find_section: struct section (), <./inf.c 165>
+   71 				TAILQ_FOREACH: <>
+   72 				strcasestr: <>
+   73 				fprintf: <>
+   74 				dump_usb_id: void (), <./inf.c 258>
+   75 					strcasestr: <>
+   76 					strcpy: <>
+   77 					strncat: <>
+   78 					fprintf: <>
+   79 				find_next_assign: struct assign (), <./inf.c 136>
+   80 			fprintf: <>
+   81 			dump_regvals: void (), <./inf.c 732>
+   82 				find_assign: struct assign (), <./inf.c 110>
+   83 				strcasecmp: <>
+   84 				fprintf: <>
+   85 				snprintf: <>
+   86 				find_section: struct section (), <./inf.c 165>
+   87 				TAILQ_FOREACH: <>
+   88 				sprintf: <>
+   89 				dump_addreg: void (), <./inf.c 561>
+   90 					find_section: struct section (), <./inf.c 165>
+   91 					TAILQ_FOREACH: <>
+   92 					fprintf: <>
+   93 					stringcvt: const char * (), <./inf.c 154>
+   94 						find_assign: struct assign (), <./inf.c 110>
+   95 					strncasecmp: <>
+   96 					strlen: <>
+   97 					strcasecmp: <>
+   98 					dump_paramreg: void (), <./inf.c 717>
+   99 						strlen: <>
+  100 						fprintf: <>
+  101 						dump_paramdesc: void (), <./inf.c 676>
+  102 							TAILQ_FOREACH: <>
+  103 							strcasecmp: <>
+  104 							fprintf: <>
+  105 							stringcvt: 93
+  106 						dump_typeinfo: void (), <./inf.c 693>
+  107 							TAILQ_FOREACH: <>
+  108 							strcasecmp: <>
+  109 							dump_dwordreg: void (), <./inf.c 636>
+  110 								TAILQ_FOREACH: <>
+  111 								strcasecmp: <>
+  112 								fprintf: <>
+  113 							dump_enumreg: void (), <./inf.c 596>
+  114 								sprintf: <>
+  115 								TAILQ_FOREACH: <>
+  116 								strcasecmp: <>
+  117 								fprintf: <>
+  118 								stringcvt: 93
+  119 							dump_editreg: void (), <./inf.c 614>
+  120 								TAILQ_FOREACH: <>
+  121 								strcasecmp: <>
+  122 								fprintf: <>
+  123 								strcmp: <>
+  124 						dump_defaultinfo: void (), <./inf.c 656>
+  125 							TAILQ_FOREACH: <>
+  126 							strcasecmp: <>
+  127 							fprintf: <>
+  128 							stringcvt: 93
+  129 				find_next_assign: struct assign (), <./inf.c 136>
+  130 		strdup: <>
+  131 		basename: <>
+  132 		bincvt: void (), <./ndiscvt.c 166>
+  133 			mkstemp: <>
+  134 			fopen: <>
+  135 			err: <>
+  136 			fwrite: <>
+  137 			fclose: <>
+  138 			strdup: <>
+  139 			basename: <>
+  140 			strchr: <>
+  141 			snprintf: <>
+  142 			printf: <>
+  143 			system: <>
+  144 			unlink: <>
+  145 		free: <>

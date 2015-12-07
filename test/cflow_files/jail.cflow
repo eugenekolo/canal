@@ -1,0 +1,405 @@
+    1 	main: int (), <./jail.c 128>
+    2 		getopt: <>
+    3 		add_param: void (), <./config.c 295>
+    4 			TAILQ_LAST: <>
+    5 			add_jail: struct cfjail (), <./config.c 277>
+    6 			TAILQ_INIT: <>
+    7 			TAILQ_FOREACH: <>
+    8 			emalloc: void * (), <./jail.c 524>
+    9 				malloc: <>
+   10 				err: <>
+   11 			estrdup: char * (), <./jail.c 546>
+   12 				strdup: <>
+   13 				err: <>
+   14 			STAILQ_INIT: <>
+   15 			STAILQ_FOREACH: <>
+   16 			strdup: <>
+   17 			STAILQ_INSERT_TAIL: <>
+   18 			TAILQ_INSERT_TAIL: <>
+   19 			strchr: <>
+   20 			alloca: <>
+   21 			strlcpy: <>
+   22 			strlen: <>
+   23 			equalopts: int (), <./config.c 760>
+   24 				strcmp: <>
+   25 				strncmp: <>
+   26 				strchr: <>
+   27 			jail_warnx: void (), <./jail.c 583>
+   28 				va_start: <>
+   29 				va_copy: <>
+   30 				vsnprintf: <>
+   31 				va_end: <>
+   32 				alloca: <>
+   33 				warnx: <>
+   34 			strcmp: <>
+   35 			free: <>
+   36 			TAILQ_EMPTY: <>
+   37 			free_param_strings: void (), <./config.c 835>
+   38 				TAILQ_FIRST: <>
+   39 				free: <>
+   40 				STAILQ_FIRST: <>
+   41 				STAILQ_REMOVE_HEAD: <>
+   42 				TAILQ_REMOVE: <>
+   43 			TAILQ_CONCAT: <>
+   44 		strtol: <>
+   45 		usage: void (), <./jail.c 1006>
+   46 			fprintf: <>
+   47 			exit: <>
+   48 		strchr: <>
+   49 		inet_pton: <>
+   50 		sysctlbyname: <>
+   51 		snprintf: <>
+   52 		strcmp: <>
+   53 		stat: <>
+   54 		load_config: void (), <./config.c 126>
+   55 			strcmp: <>
+   56 			fopen: <>
+   57 			err: <>
+   58 			yyparse: <>
+   59 			exit: <>
+   60 			TAILQ_INIT: <>
+   61 			TAILQ_FOREACH_SAFE: <>
+   62 			wild_jail_name: int (), <./config.c 811>
+   63 				strchr: <>
+   64 			requeue: void (), <./state.c 391>
+   65 				TAILQ_REMOVE: <>
+   66 				TAILQ_INSERT_TAIL: <>
+   67 			TAILQ_FOREACH: <>
+   68 			TAILQ_CONCAT: <>
+   69 			add_param: 3
+   70 			strtol: <>
+   71 			wild_jail_match: int (), <./config.c 791>
+   72 				strchr: <>
+   73 				strncmp: <>
+   74 				strcmp: <>
+   75 			STAILQ_FIRST: <>
+   76 			jail_warnx: 27
+   77 			STAILQ_EMPTY: <>
+   78 			TAILQ_REMOVE: <>
+   79 			TAILQ_INSERT_BEFORE: <>
+   80 			TAILQ_FIRST: <>
+   81 			TAILQ_NEXT: <>
+   82 			STAILQ_NEXT: <>
+   83 			erealloc: void * (), <./jail.c 535>
+   84 				realloc: <>
+   85 				err: <>
+   86 			memmove: <>
+   87 			memcpy: <>
+   88 			emalloc: 8
+   89 			estrdup: 11
+   90 			STAILQ_INIT: <>
+   91 			TAILQ_INSERT_AFTER: <>
+   92 			free: <>
+   93 			STAILQ_REMOVE_HEAD: <>
+   94 			free_param: void (), <./config.c 826>
+   95 				free: <>
+   96 				free_param_strings: 37
+   97 				TAILQ_REMOVE: <>
+   98 		wild_jail_name: 62
+   99 		strncmp: <>
+  100 		dep_setup: void (), <./state.c 54>
+  101 			TAILQ_FIRST: <>
+  102 			TAILQ_FOREACH: <>
+  103 			running_jid: int (), <./state.c 449>
+  104 				strtol: <>
+  105 				strlen: <>
+  106 				alloca: <>
+  107 				strcpy: <>
+  108 				jail_get: <>
+  109 			warnx: <>
+  110 			emalloc: 8
+  111 			qsort: <>
+  112 			cmp_jailptr: int (), <./state.c 420>
+  113 				strcmp: <>
+  114 			find_jail: struct cfjail (), <./state.c 436>
+  115 			dep_add: void (), <./state.c 404>
+  116 				emalloc: 8
+  117 				STAILQ_INSERT_TAIL: <>
+  118 			jail_warnx: 27
+  119 			strrchr: <>
+  120 			erealloc: 83
+  121 			strlcpy: <>
+  122 			start_state: int (), <./state.c 302>
+  123 				strcmp: <>
+  124 				TAILQ_FOREACH_SAFE: <>
+  125 				dep_reset: void (), <./state.c 267>
+  126 					JF_DO_STOP: <>
+  127 					STAILQ_FOREACH: <>
+  128 				requeue: 64
+  129 				wild_jail_name: 62
+  130 				jail_get: <>
+  131 				wild_jail_match: 71
+  132 				add_jail: struct cfjail (), <./config.c 277>
+  133 				estrdup: 11
+  134 				find_jail: struct cfjail (), <./state.c 436>
+  135 				running_jid: 103
+  136 				warnx: <>
+  137 			requeue: 64
+  138 			dep_done: void (), <./state.c 232>
+  139 				JF_DO_STOP: <>
+  140 				STAILQ_FOREACH: <>
+  141 				jail_warnx: 27
+  142 				requeue: 64
+  143 			STAILQ_FOREACH: <>
+  144 			free: <>
+  145 		start_state: 122
+  146 		exit: <>
+  147 		fopen: <>
+  148 		err: <>
+  149 		setlinebuf: <>
+  150 		next_jail: struct cfjail (), <./state.c 282>
+  151 		dep_done: 138
+  152 		check_intparams: int (), <./config.c 444>
+  153 			TAILQ_FOREACH: <>
+  154 			TAILQ_EMPTY: <>
+  155 			TAILQ_LAST: <>
+  156 			strcasecmp: <>
+  157 			strtol: <>
+  158 			jail_warnx: 27
+  159 			bool_param: int (), <./config.c 404>
+  160 				strrchr: <>
+  161 				strncmp: <>
+  162 				TAILQ_EMPTY: <>
+  163 				strcasecmp: <>
+  164 				TAILQ_LAST: <>
+  165 				strtol: <>
+  166 			string_param: const char * (), <./config.c 433>
+  167 				TAILQ_EMPTY: <>
+  168 				TAILQ_LAST: <>
+  169 			feature_present: <>
+  170 			memset: <>
+  171 			getaddrinfo: <>
+  172 			gai_strerror: <>
+  173 			memcpy: <>
+  174 			inet_ntop: <>
+  175 			err: <>
+  176 			add_param: 3
+  177 			freeaddrinfo: <>
+  178 			strchr: <>
+  179 			strcpy: <>
+  180 			inet_pton: <>
+  181 			fopen: <>
+  182 			strerror: <>
+  183 			fgetln: <>
+  184 			memchr: <>
+  185 			alloca: <>
+  186 			strlcpy: <>
+  187 			fclose: <>
+  188 			failed: void (), <./jail.c 512>
+  189 				TAILQ_REMOVE: <>
+  190 				TAILQ_INSERT_HEAD: <>
+  191 		import_params: int (), <./config.c 689>
+  192 			TAILQ_FOREACH: <>
+  193 			emalloc: 8
+  194 			jailparam_init: <>
+  195 			jail_warnx: 27
+  196 			TAILQ_EMPTY: <>
+  197 			TAILQ_NEXT: <>
+  198 			TAILQ_FIRST: <>
+  199 			TAILQ_LAST: <>
+  200 			alloca: <>
+  201 			TAILQ_FOREACH_SAFE: <>
+  202 			memcpy: <>
+  203 			jailparam_import: <>
+  204 			jailparam_free: <>
+  205 			free: <>
+  206 			failed: 188
+  207 		running_jid: void (), <./jail.c 842>
+  208 			string_param: 166
+  209 			strtol: <>
+  210 			strlen: <>
+  211 			alloca: <>
+  212 			strcpy: <>
+  213 			jail_get: <>
+  214 		bool_param: 159
+  215 		finish_command: int (), <./command.c 160>
+  216 			TAILQ_EMPTY: <>
+  217 			requeue: 64
+  218 			TAILQ_FIRST: <>
+  219 			jail_warnx: 27
+  220 			failed: 188
+  221 			jail_note: void (), <./jail.c 560>
+  222 				va_start: <>
+  223 				va_copy: <>
+  224 				vsnprintf: <>
+  225 				va_end: <>
+  226 				alloca: <>
+  227 				printf: <>
+  228 			WIFSIGNALED: <>
+  229 			WTERMSIG: <>
+  230 			free: <>
+  231 		jail_quoted_warnx: void (), <./jail.c 872>
+  232 			string_param: 166
+  233 			warnx: <>
+  234 		failed: 188
+  235 		rdtun_params: int (), <./jail.c 782>
+  236 			JP_RDTUN: <>
+  237 			strcmp: <>
+  238 			alloca: <>
+  239 			jailparam_init: <>
+  240 			jailparam_import_raw: <>
+  241 			jail_warnx: 27
+  242 			exit: <>
+  243 			jailparam_get: <>
+  244 			bool_param: 159
+  245 			memcmp: <>
+  246 			failed: 188
+  247 			jailparam_free: <>
+  248 		dep_reset: 125
+  249 		dep_check: int (), <./state.c 155>
+  250 			JF_DO_STOP: <>
+  251 			STAILQ_FOREACH: <>
+  252 			jail_warnx: 27
+  253 			requeue: 64
+  254 			dep_reset: 125
+  255 		next_command: int (), <./command.c 88>
+  256 			requeue: 64
+  257 			bool_param: 159
+  258 			TAILQ_LAST: <>
+  259 			TAILQ_FIRST: <>
+  260 			TAILQ_PREV: <>
+  261 			TAILQ_NEXT: <>
+  262 			run_command: int (), <./command.c 264>
+  263 				term_procs: int (), <./command.c 827>
+  264 					int_param: int (), <./config.c 421>
+  265 						TAILQ_EMPTY: <>
+  266 						strtol: <>
+  267 						TAILQ_LAST: <>
+  268 					kvm_open: <>
+  269 					kvm_getprocs: <>
+  270 					kill: <>
+  271 					add_proc: int (), <./command.c 741>
+  272 						kqueue: <>
+  273 						err: <>
+  274 						EV_SET: <>
+  275 						kevent: <>
+  276 						emalloc: 8
+  277 						LIST_INSERT_HEAD: <>
+  278 						requeue: 64
+  279 						TAILQ_REMOVE: <>
+  280 						TAILQ_FOREACH: <>
+  281 						TAILQ_INSERT_BEFORE: <>
+  282 						TAILQ_INSERT_TAIL: <>
+  283 					jail_note: 221
+  284 					printf: <>
+  285 					clock_gettime: <>
+  286 				jail_remove: <>
+  287 				jail_warnx: 27
+  288 				strerror: <>
+  289 				jail_note: 221
+  290 				dep_done: 138
+  291 				create_jail: int (), <./jail.c 606>
+  292 					string_param: 166
+  293 					jail_warnx: 27
+  294 					stat: <>
+  295 					strerror: <>
+  296 					S_ISDIR: <>
+  297 					bool_param: 159
+  298 					alloca: <>
+  299 					jailparam_init: <>
+  300 					equalopts: 23
+  301 					jailparam_set_note: int (), <./jail.c 888>
+  302 						jailparam_set: <>
+  303 						jail_note: 221
+  304 						printf: <>
+  305 						putchar: <>
+  306 						jailparam_export: <>
+  307 						err: <>
+  308 						quoted_print: void (), <./jail.c 984>
+  309 							strchr: <>
+  310 							putc: <>
+  311 						free: <>
+  312 						strerror: <>
+  313 					int_param: 264
+  314 					jail_get: <>
+  315 					rdtun_params: 235
+  316 					JP_RDTUN: <>
+  317 					strcmp: <>
+  318 					failed: 188
+  319 					jailparam_free: <>
+  320 				printf: <>
+  321 				alloca: <>
+  322 				strlen: <>
+  323 				strcpy: <>
+  324 				strchr: <>
+  325 				strlcpy: <>
+  326 				string_param: 166
+  327 				strtok: <>
+  328 				check_path: int (), <./command.c 911>
+  329 					jail_warnx: 27
+  330 					string_param: 166
+  331 					strlen: <>
+  332 					strncmp: <>
+  333 					alloca: <>
+  334 					strcpy: <>
+  335 					strchr: <>
+  336 					lstat: <>
+  337 					strerror: <>
+  338 					S_ISLNK: <>
+  339 					stat: <>
+  340 					statfs: <>
+  341 					strcmp: <>
+  342 				sprintf: <>
+  343 				TAILQ_FOREACH: <>
+  344 				strpbrk: <>
+  345 				int_param: 264
+  346 				clock_gettime: <>
+  347 				bool_param: 159
+  348 				open: <>
+  349 				emalloc: 8
+  350 				fork: <>
+  351 				err: <>
+  352 				add_proc: 271
+  353 				free: <>
+  354 				setsid: <>
+  355 				get_user_info: int (), <./command.c 875>
+  356 					getpwnam: <>
+  357 					getpwuid: <>
+  358 					getuid: <>
+  359 					jail_warnx: 27
+  360 					strerror: <>
+  361 					login_getpwclass: <>
+  362 					initgroups: <>
+  363 				exit: <>
+  364 				chdir: <>
+  365 				setfib: <>
+  366 				jail_attach: <>
+  367 				getenv: <>
+  368 				setenv: <>
+  369 				setgid: <>
+  370 				setusercontext: <>
+  371 				login_close: <>
+  372 				endpwent: <>
+  373 				dup2: <>
+  374 				closefrom: <>
+  375 				execvp: <>
+  376 			failed: 188
+  377 		clear_persist: void (), <./jail.c 718>
+  378 			jail_set: <>
+  379 			jail_note: 221
+  380 			strerror: <>
+  381 		print_jail: void (), <./jail.c 923>
+  382 			fprintf: <>
+  383 			print_param: void (), <./jail.c 963>
+  384 				fputs: <>
+  385 				TAILQ_EMPTY: <>
+  386 				putc: <>
+  387 				TAILQ_FOREACH_SAFE: <>
+  388 				quoted_print: 308
+  389 			putc: <>
+  390 			TAILQ_EMPTY: <>
+  391 			TAILQ_FOREACH: <>
+  392 			strcmp: <>
+  393 		update_jail: int (), <./jail.c 745>
+  394 			JP_RDTUN: <>
+  395 			alloca: <>
+  396 			jailparam_init: <>
+  397 			jailparam_import_raw: <>
+  398 			jail_warnx: 27
+  399 			failed: 188
+  400 			jailparam_set_note: 301
+  401 			bool_param: 159
+  402 			jailparam_free: <>
+  403 		jail_note: 221
+  404 		requeue: 64
+  405 		fclose: <>

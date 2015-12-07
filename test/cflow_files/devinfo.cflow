@@ -1,0 +1,31 @@
+    1 	main: int (), <./devinfo.c 198>
+    2 		getopt: <>
+    3 		fprintf: <>
+    4 		exit: <>
+    5 		devinfo_init: <>
+    6 		err: <>
+    7 		devinfo_handle_to_device: <>
+    8 		errx: <>
+    9 		devinfo_foreach_rman: <>
+   10 		print_rman: int (), <./devinfo.c 190>
+   11 			printf: <>
+   12 			devinfo_foreach_rman_resource: <>
+   13 			print_rman_resource: int (), <./devinfo.c 170>
+   14 				printf: <>
+   15 				print_resource: void (), <./devinfo.c 62>
+   16 					devinfo_handle_to_rman: <>
+   17 					printf: <>
+   18 				devinfo_handle_to_device: <>
+   19 		devinfo_foreach_device_child: <>
+   20 		print_device: int (), <./devinfo.c 135>
+   21 			printf: <>
+   22 			devinfo_foreach_rman: <>
+   23 			print_device_rman_resources: int (), <./devinfo.c 105>
+   24 				devinfo_foreach_rman_resource: <>
+   25 				print_device_matching_resource: int (), <./devinfo.c 83>
+   26 					devinfo_handle_to_device: <>
+   27 					printf: <>
+   28 					print_resource: 15
+   29 				printf: <>
+   30 			devinfo_foreach_device_child: <>
+   31 			print_device: 20

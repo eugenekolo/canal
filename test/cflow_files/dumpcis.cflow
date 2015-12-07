@@ -1,0 +1,96 @@
+    1 	main: int (), <./main.c 53>
+    2 		scanfile: void (), <./main.c 34>
+    3 			open: <>
+    4 			readcis: struct tuple_list (), <./readcis.c 111>
+    5 			printf: <>
+    6 			dumpcis: void (), <./printcis.c 63>
+    7 				printf: <>
+    8 				tuple_name: const char * (), <./readcis.c 369>
+    9 					get_tuple_info: struct tuple_info (), <./readcis.c 358>
+   10 				dump_device_desc: void (), <./printcis.c 696>
+   11 					printf: <>
+   12 					print_ext_speed: void (), <./printcis.c 269>
+   13 						printf: <>
+   14 				dump_config_map: void (), <./printcis.c 181>
+   15 					printf: <>
+   16 					parse_num: u_int (), <./readcis.c 141>
+   17 						tpl16: <>
+   18 						tpl24: <>
+   19 						tpl32: <>
+   20 					putchar: <>
+   21 				dump_cis_config: void (), <./printcis.c 502>
+   22 					printf: <>
+   23 					CIS_FEAT_POWER: <>
+   24 					print_pwr_desc: int (), <./printcis.c 219>
+   25 						printf: <>
+   26 					CIS_WAIT_SCALE: <>
+   27 					print_ext_speed: 12
+   28 					CIS_READY_SCALE: <>
+   29 					CIS_RESERVED_SCALE: <>
+   30 					print_io_map: u_char * (), <./printcis.c 322>
+   31 						CIS_IO_ADDR: <>
+   32 						printf: <>
+   33 						putchar: <>
+   34 						CIS_IO_ADSZ: <>
+   35 						CIS_IO_BLKSZ: <>
+   36 						CIS_IO_BLKS: <>
+   37 						print_num: int (), <./printcis.c 291>
+   38 							printf: <>
+   39 							tpl16: <>
+   40 							tpl24: <>
+   41 							tpl32: <>
+   42 							errx: <>
+   43 					putchar: <>
+   44 					print_irq_map: u_char * (), <./printcis.c 386>
+   45 						printf: <>
+   46 						putchar: <>
+   47 						tpl16: <>
+   48 						CIS_IRQ_IRQN: <>
+   49 					CIS_FEAT_MEMORY: <>
+   50 					print_mem_map: u_char * (), <./printcis.c 442>
+   51 						CIS_FEAT_MEMORY: <>
+   52 						printf: <>
+   53 						tpl16: <>
+   54 						CIS_MEM_LENSZ: <>
+   55 						CIS_MEM_ADDRSZ: <>
+   56 						CIS_MEM_WINS: <>
+   57 						print_num: 37
+   58 						putchar: <>
+   59 				dump_longlink_mfc: void (), <./printcis.c 988>
+   60 					printf: <>
+   61 					tpl32: <>
+   62 				dump_bar: void (), <./printcis.c 1092>
+   63 					printf: <>
+   64 					print_size: void (), <./printcis.c 1078>
+   65 						printf: <>
+   66 					tpl32: <>
+   67 				tpl16: <>
+   68 				tpl32: <>
+   69 				dump_info_v1: void (), <./printcis.c 743>
+   70 					printf: <>
+   71 					putchar: <>
+   72 				dump_other_cond: void (), <./printcis.c 677>
+   73 					printf: <>
+   74 				dump_device_geo: void (), <./printcis.c 1010>
+   75 					printf: <>
+   76 				dump_func_id: void (), <./printcis.c 777>
+   77 					printf: <>
+   78 				dump_serial_ext: void (), <./printcis.c 803>
+   79 					printf: <>
+   80 				dump_disk_ext: void (), <./printcis.c 878>
+   81 					printf: <>
+   82 				dump_network_ext: void (), <./printcis.c 929>
+   83 					printf: <>
+   84 					print_speed: void (), <./printcis.c 914>
+   85 						printf: <>
+   86 					tpl32: <>
+   87 					putchar: <>
+   88 				dump_info_v2: void (), <./printcis.c 1026>
+   89 					printf: <>
+   90 					tpl16: <>
+   91 					putchar: <>
+   92 				dump_org: void (), <./printcis.c 1051>
+   93 					printf: <>
+   94 			freecis: void (), <./readcis.c 121>
+   95 				free: <>
+   96 			close: <>

@@ -1,0 +1,94 @@
+    1 	main: int (), <./kgzip.c 64>
+    2 		getenv: <>
+    3 		asprintf: <>
+    4 		errx: <>
+    5 		getopt: <>
+    6 		strcmp: <>
+    7 		usage: void (), <./kgzip.c 171>
+    8 			fprintf: <>
+    9 			exit: <>
+   10 		atexit: <>
+   11 		cleanup: void (), <./kgzip.c 127>
+   12 			unlink: <>
+   13 		mk_fn: void (), <./kgzip.c 137>
+   14 			strrchr: <>
+   15 			memcmp: <>
+   16 			mkstemp: <>
+   17 			err: <>
+   18 			close: <>
+   19 			malloc: <>
+   20 			memcpy: <>
+   21 			strcpy: <>
+   22 		memset: <>
+   23 		kgzcmp: void (), <./kgzcmp.c 59>
+   24 			open: <>
+   25 			err: <>
+   26 			mk_data: void (), <./kgzcmp.c 114>
+   27 				xread: size_t (), <./xio.c 88>
+   28 					lseek: <>
+   29 					err: <>
+   30 					read: <>
+   31 				IS_ELF: <>
+   32 				N_GETMAGIC: <>
+   33 				errx: <>
+   34 				xseek: void (), <./xio.c 117>
+   35 					lseek: <>
+   36 					err: <>
+   37 				pipe: <>
+   38 				err: <>
+   39 				fork: <>
+   40 				close: <>
+   41 				dup2: <>
+   42 				execlp: <>
+   43 				warn: <>
+   44 				ld_elf: int (), <./kgzcmp.c 175>
+   45 					xread: 27
+   46 					xzero: void (), <./xio.c 70>
+   47 						memset: <>
+   48 						xwrite: void (), <./xio.c 103>
+   49 							write: <>
+   50 							err: <>
+   51 							errx: <>
+   52 					xcopy: void (), <./xio.c 49>
+   53 						xread: 27
+   54 						errx: <>
+   55 						xwrite: 48
+   56 				ld_aout: int (), <./kgzcmp.c 220>
+   57 					N_TXTADDR: <>
+   58 					xcopy: 52
+   59 					le32toh: <>
+   60 					N_TXTOFF: <>
+   61 					N_DATADDR: <>
+   62 					N_DATOFF: <>
+   63 				waitpid: <>
+   64 				WIFSIGNALED: <>
+   65 				WEXITSTATUS: <>
+   66 				exit: <>
+   67 				fstat: <>
+   68 			xzero: 46
+   69 			xwrite: 48
+   70 			xseek: 34
+   71 			htole32: <>
+   72 			le32toh: <>
+   73 			xclose: void (), <./xio.c 39>
+   74 				close: <>
+   75 				err: <>
+   76 		kgzld: void (), <./kgzld.c 50>
+   77 			strcmp: <>
+   78 			open: <>
+   79 			err: <>
+   80 			xread: 27
+   81 			IS_ELF: <>
+   82 			N_GETMAGIC: <>
+   83 			errx: <>
+   84 			xclose: 73
+   85 			sprintf: <>
+   86 			align: <>
+   87 			fork: <>
+   88 			execlp: <>
+   89 			warn: <>
+   90 			waitpid: <>
+   91 			WIFSIGNALED: <>
+   92 			WEXITSTATUS: <>
+   93 			exit: <>
+   94 		printf: <>

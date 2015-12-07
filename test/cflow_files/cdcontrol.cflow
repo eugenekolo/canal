@@ -1,0 +1,115 @@
+    1 	main: int (), <./cdcontrol.c 202>
+    2 		getopt: <>
+    3 		usage: void (), <./cdcontrol.c 182>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		strcasecmp: <>
+    7 		getenv: <>
+    8 		use_cdrom_instead: char * (), <./cdcontrol.c 189>
+    9 			getenv: <>
+   10 			warnx: <>
+   11 		strlen: <>
+   12 		strcpy: <>
+   13 		parse: char * (), <./cdcontrol.c 1211>
+   14 			isspace: <>
+   15 			isdigit: <>
+   16 			strcasecmp: <>
+   17 			strncasecmp: <>
+   18 			warnx: <>
+   19 		run: int (), <./cdcontrol.c 291>
+   20 			exit: <>
+   21 			open_cd: int (), <./cdcontrol.c 1276>
+   22 				snprintf: <>
+   23 				open: <>
+   24 				warnx: <>
+   25 				err: <>
+   26 			info: int (), <./cdcontrol.c 960>
+   27 				ioctl: <>
+   28 				printf: <>
+   29 				warn: <>
+   30 				read_toc_entrys: int (), <./cdcontrol.c 1094>
+   31 					ioctl: <>
+   32 				prtrack: void (), <./cdcontrol.c 1015>
+   33 					printf: <>
+   34 					msf2lba: unsigned int (), <./cdcontrol.c 1009>
+   35 					ntohl: <>
+   36 					lba2msf: void (), <./cdcontrol.c 998>
+   37 			cdid: int (), <./cdcontrol.c 945>
+   38 				dbprog_discid: u_int (), <./cdcontrol.c 913>
+   39 					ioctl: <>
+   40 					read_toc_entrys: 30
+   41 					dbprog_sum: int (), <./cdcontrol.c 885>
+   42 						sprintf: <>
+   43 					TC_MM: <>
+   44 					TC_SS: <>
+   45 				printf: <>
+   46 			pstatus: int (), <./cdcontrol.c 802>
+   47 				strtok: <>
+   48 				strncasecmp: <>
+   49 				strlen: <>
+   50 				warnx: <>
+   51 				status: int (), <./cdcontrol.c 1123>
+   52 					bzero: <>
+   53 					ioctl: <>
+   54 					lba2msf: void (), <./cdcontrol.c 998>
+   55 					ntohl: <>
+   56 				printf: <>
+   57 				strstatus: const char * (), <./cdcontrol.c 788>
+   58 				bzero: <>
+   59 				ioctl: <>
+   60 				strvisx: <>
+   61 				putchar: <>
+   62 			isspace: <>
+   63 			next_prev: int (), <./cdcontrol.c 757>
+   64 				ioctl: <>
+   65 				status: 51
+   66 				sscanf: <>
+   67 				warnx: <>
+   68 				play_track: int (), <./cdcontrol.c 1054>
+   69 					ioctl: <>
+   70 			ioctl: <>
+   71 			close: <>
+   72 			strcasecmp: <>
+   73 			warnx: <>
+   74 			play: int (), <./cdcontrol.c 473>
+   75 				ioctl: <>
+   76 				read_toc_entrys: 30
+   77 				play_blocks: int (), <./cdcontrol.c 1067>
+   78 					ioctl: <>
+   79 				msf2lba: unsigned int (), <./cdcontrol.c 1009>
+   80 				ntohl: <>
+   81 				strchr: <>
+   82 				sscanf: <>
+   83 				lba2msf: void (), <./cdcontrol.c 998>
+   84 				printf: <>
+   85 				play_msf: int (), <./cdcontrol.c 1107>
+   86 					ioctl: <>
+   87 				play_track: 68
+   88 				warnx: <>
+   89 			strlen: <>
+   90 			strncasecmp: <>
+   91 			sscanf: <>
+   92 			setvol: int (), <./cdcontrol.c 1078>
+   93 				ioctl: <>
+   94 			strtol: <>
+   95 			help: void (), <./cdcontrol.c 155>
+   96 				printf: <>
+   97 				toupper: <>
+   98 				putchar: <>
+   99 		warn: <>
+  100 		isatty: <>
+  101 		printf: <>
+  102 		input: char * (), <./cdcontrol.c 1161>
+  103 			el_init: <>
+  104 			history_init: <>
+  105 			history: <>
+  106 			el_set: <>
+  107 			cdcontrol_prompt: const char * (), <./cdcontrol.c 1155>
+  108 			el_source: <>
+  109 			el_gets: <>
+  110 			fprintf: <>
+  111 			memcpy: <>
+  112 			fgets: <>
+  113 			parse: 13
+  114 		close: <>
+  115 		fflush: <>

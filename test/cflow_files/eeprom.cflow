@@ -1,0 +1,47 @@
+    1 	main: int (), <./eeprom.c 59>
+    2 		getopt: <>
+    3 		usage: void (), <./eeprom.c 49>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		dump_config: void (), <./eeprom.c 142>
+    7 			ofwo_dump: void (), <./ofw_options.c 243>
+    8 				ofw_open: <>
+    9 				ofw_optnode: <>
+   10 				ofw_firstprop: <>
+   11 				ofw_nextprop: <>
+   12 				ofw_getprop_alloc: <>
+   13 				strcmp: <>
+   14 				ofwo_printprop: __inline void (), <./ofw_options.c 77>
+   15 					printf: <>
+   16 				free: <>
+   17 				ofw_close: <>
+   18 		fgets: <>
+   19 		strrchr: <>
+   20 		action: int (), <./eeprom.c 119>
+   21 			strdup: <>
+   22 			err: <>
+   23 			strrchr: <>
+   24 			ofwo_action: int (), <./ofw_options.c 276>
+   25 				strcmp: <>
+   26 				ofw_open: <>
+   27 				ofw_getprop_alloc: <>
+   28 				ofw_optnode: <>
+   29 				ofwo_setstr: int (), <./ofw_options.c 201>
+   30 					ofw_optnode: <>
+   31 					ofw_setprop: <>
+   32 					strlen: <>
+   33 					ofw_getprop_alloc: <>
+   34 					strncmp: <>
+   35 					malloc: <>
+   36 					err: <>
+   37 					strncpy: <>
+   38 					errx: <>
+   39 					free: <>
+   40 					printf: <>
+   41 				ofwo_printprop: 14
+   42 				free: <>
+   43 				ofw_close: <>
+   44 			warnx: <>
+   45 			free: <>
+   46 		ferror: <>
+   47 		err: <>

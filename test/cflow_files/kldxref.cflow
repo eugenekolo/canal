@@ -1,0 +1,105 @@
+    1 	main: int (), <./kldxref.c 292>
+    2 		getopt: <>
+    3 		usage: void (), <./kldxref.c 272>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		stat: <>
+    7 		err: <>
+    8 		fts_open: <>
+    9 		compare: int (), <./kldxref.c 282>
+   10 			strcmp: <>
+   11 		exit: <>
+   12 		fts_read: <>
+   13 		fclose: <>
+   14 		rename: <>
+   15 		unlink: <>
+   16 		snprintf: <>
+   17 		maketempfile: FILE * (), <./kldxref.c 249>
+   18 			strrchr: <>
+   19 			snprintf: <>
+   20 			mkstemp: <>
+   21 			fchmod: <>
+   22 			fdopen: <>
+   23 		fwrite: <>
+   24 		strcmp: <>
+   25 		read_kld: int (), <./kldxref.c 188>
+   26 			printf: <>
+   27 			ef_open: int (), <./ef.c 527>
+   28 				open: <>
+   29 				malloc: <>
+   30 				close: <>
+   31 				bzero: <>
+   32 				strdup: <>
+   33 				read: <>
+   34 				IS_ELF: <>
+   35 				ef_read_entry: int (), <./ef.c 439>
+   36 					malloc: <>
+   37 					ef_read: int (), <./ef.c 422>
+   38 						lseek: <>
+   39 						read: <>
+   40 					free: <>
+   41 				ef_print_phdr: void (), <./ef.c 115>
+   42 					printf: <>
+   43 				printf: <>
+   44 				warnx: <>
+   45 				ef_parse_dynamic: int (), <./ef.c 264>
+   46 					ef_read: 37
+   47 					ef_get_offset: u_long (), <./ef.c 129>
+   48 					warnx: <>
+   49 					ef_read_entry: 35
+   50 				ef_close: int (), <./ef.c 636>
+   51 					close: <>
+   52 					free: <>
+   53 			ef_obj_open: int (), <./ef_obj.c 329>
+   54 				open: <>
+   55 				calloc: <>
+   56 				close: <>
+   57 				strdup: <>
+   58 				read: <>
+   59 				IS_ELF: <>
+   60 				ef_obj_read_entry: int (), <./ef_obj.c 209>
+   61 					malloc: <>
+   62 					ef_obj_read: int (), <./ef_obj.c 192>
+   63 						lseek: <>
+   64 						read: <>
+   65 					free: <>
+   66 				printf: <>
+   67 				warnx: <>
+   68 				posix_memalign: <>
+   69 				ef_obj_read: 62
+   70 				bzero: <>
+   71 				ef_obj_close: int (), <./ef_obj.c 570>
+   72 					close: <>
+   73 					free: <>
+   74 			warnc: <>
+   75 			EF_GET_TYPE: <>
+   76 			EF_CLOSE: <>
+   77 			strrchr: <>
+   78 			strlen: <>
+   79 			strlcpy: <>
+   80 			check: <>
+   81 			EF_LOOKUP_SET: <>
+   82 			EF_SEG_READ_ENTRY_REL: <>
+   83 			EF_SEG_READ_REL: <>
+   84 			EF_SEG_READ: <>
+   85 			parse_entry: int (), <./kldxref.c 138>
+   86 				record_start: void (), <./kldxref.c 80>
+   87 					memset: <>
+   88 				check: <>
+   89 				EF_SEG_READ: <>
+   90 				printf: <>
+   91 				record_int: int (), <./kldxref.c 111>
+   92 					intalign: void (), <./kldxref.c 74>
+   93 					record_buf: int (), <./kldxref.c 98>
+   94 						errx: <>
+   95 						memcpy: <>
+   96 				record_string: int (), <./kldxref.c 121>
+   97 					strlen: <>
+   98 					errx: <>
+   99 					record_buf: 93
+  100 				warnx: <>
+  101 				record_end: int (), <./kldxref.c 87>
+  102 					intalign: 92
+  103 					fwrite: <>
+  104 			free: <>
+  105 		fts_close: <>

@@ -1,0 +1,222 @@
+    1 	main: int (), <./inetd.c 315>
+    2 		openlog: <>
+    3 		getopt: <>
+    4 		getvalue: <>
+    5 		syslog: <>
+    6 		exit: <>
+    7 		bzero: <>
+    8 		getaddrinfo: <>
+    9 		gai_strerror: <>
+   10 		strerror: <>
+   11 		geteuid: <>
+   12 		getegid: <>
+   13 		umask: <>
+   14 		access: <>
+   15 		pidfile_open: <>
+   16 		getprogname: <>
+   17 		daemon: <>
+   18 		closelog: <>
+   19 		setlogin: <>
+   20 		pidfile_write: <>
+   21 		madvise: <>
+   22 		LIST_INIT: <>
+   23 		getnetconfigent: <>
+   24 		sigemptyset: <>
+   25 		sigaddset: <>
+   26 		flag_retry: void (), <./inetd.c 1238>
+   27 			flag_signal: void (), <./inetd.c 888>
+   28 				write: <>
+   29 				syslog: <>
+   30 		sigaction: <>
+   31 		config: void (), <./inetd.c 975>
+   32 			setconfig: int (), <./inetd.c 1580>
+   33 				fseek: <>
+   34 				fopen: <>
+   35 			syslog: <>
+   36 			getconfigent: struct servtab (), <./inetd.c 1601>
+   37 			getpwnam: <>
+   38 			getgrnam: <>
+   39 			login_getclass: <>
+   40 			login_close: <>
+   41 			strcmp: <>
+   42 			sigblock: <>
+   43 			memcpy: <>
+   44 			SWAP: <>
+   45 			resize_conn: void (), <./inetd.c 2469>
+   46 				free_connlist: void (), <./inetd.c 2497>
+   47 					LIST_FIRST: <>
+   48 					free_proc: void (), <./inetd.c 2548>
+   49 						LIST_REMOVE: <>
+   50 						free: <>
+   51 					free_conn: void (), <./inetd.c 2513>
+   52 						LIST_REMOVE: <>
+   53 						free: <>
+   54 				LIST_FOREACH: <>
+   55 				free_proc: 48
+   56 				realloc: <>
+   57 				syslog: <>
+   58 				exit: <>
+   59 			FD_ISSET: <>
+   60 			disable: void (), <./inetd.c 1543>
+   61 				warnx: <>
+   62 				syslog: <>
+   63 				exit: <>
+   64 				ISMUX: <>
+   65 				FD_ISSET: <>
+   66 				FD_CLR: <>
+   67 			enable: void (), <./inetd.c 1514>
+   68 				warnx: <>
+   69 				syslog: <>
+   70 				exit: <>
+   71 				ISMUX: <>
+   72 				FD_ISSET: <>
+   73 				FD_SET: <>
+   74 			ipsecsetup: void (), <./inetd.c 1383>
+   75 				strncmp: <>
+   76 				syslog: <>
+   77 				ipsec_set_policy: <>
+   78 				strlen: <>
+   79 				setsockopt: <>
+   80 				ipsec_get_policylen: <>
+   81 				warnx: <>
+   82 				free: <>
+   83 			sigsetmask: <>
+   84 			freeconfig: void (), <./inetd.c 1979>
+   85 				free: <>
+   86 				free_connlist: 46
+   87 			print_service: void (), <./inetd.c 2147>
+   88 				fprintf: <>
+   89 			enter: struct servtab (), <./inetd.c 1494>
+   90 			ISMUX: <>
+   91 			getservbyname: <>
+   92 			close_sep: void (), <./inetd.c 1457>
+   93 				FD_ISSET: <>
+   94 				disable: 60
+   95 				close: <>
+   96 			getrpcbyname: <>
+   97 			close: <>
+   98 			unregisterrpc: void (), <./inetd.c 1183>
+   99 				sigblock: <>
+  100 				strcmp: <>
+  101 				print_service: 87
+  102 				rpcb_unset: <>
+  103 				close: <>
+  104 				sigsetmask: <>
+  105 			setup: void (), <./inetd.c 1255>
+  106 				socket: <>
+  107 				warn: <>
+  108 				syslog: <>
+  109 				fcntl: <>
+  110 				close: <>
+  111 				strcmp: <>
+  112 				turnon: <>
+  113 				setsockopt: <>
+  114 				ipsecsetup: 74
+  115 				unlink: <>
+  116 				umask: <>
+  117 				bind: <>
+  118 				alarm: <>
+  119 				chown: <>
+  120 				chmod: <>
+  121 				getsockname: <>
+  122 				memset: <>
+  123 				print_service: 87
+  124 				rpcb_unset: <>
+  125 				rpcb_set: <>
+  126 				listen: <>
+  127 				enable: 67
+  128 				warnx: <>
+  129 			endconfig: void (), <./inetd.c 1592>
+  130 				fclose: <>
+  131 			free: <>
+  132 		flag_config: void (), <./inetd.c 969>
+  133 			flag_signal: 27
+  134 		flag_reapchild: void (), <./inetd.c 925>
+  135 			flag_signal: 27
+  136 		memset: <>
+  137 		setenv: <>
+  138 		pipe: <>
+  139 		fcntl: <>
+  140 		FD_SET: <>
+  141 		select: <>
+  142 		sleep: <>
+  143 		FD_ISSET: <>
+  144 		ioctl: <>
+  145 		read: <>
+  146 		warnx: <>
+  147 		retry: void (), <./inetd.c 1244>
+  148 			ISMUX: <>
+  149 			setup: 105
+  150 		reapchild: void (), <./inetd.c 931>
+  151 			wait3: <>
+  152 			warnx: <>
+  153 			WIFEXITED: <>
+  154 			WEXITSTATUS: <>
+  155 			WTERMSIG: <>
+  156 			enable: 67
+  157 			WIFSIGNALED: <>
+  158 			syslog: <>
+  159 			reapchild_conn: void (), <./inetd.c 2449>
+  160 				search_proc: struct procinfo (), <./inetd.c 2525>
+  161 				free_proc: 48
+  162 				free_conn: 51
+  163 		ISWRAP: <>
+  164 		accept: <>
+  165 		close: <>
+  166 		cpmip: int (), <./inetd.c 2197>
+  167 			getpeername: <>
+  168 			time: <>
+  169 			strcmp: <>
+  170 			IN6_ARE_ADDR_EQUAL: <>
+  171 			free: <>
+  172 			strdup: <>
+  173 			bzero: <>
+  174 			getnameinfo: <>
+  175 			syslog: <>
+  176 		search_conn: struct conninfo (), <./inetd.c 2339>
+  177 		room_conn: int (), <./inetd.c 2413>
+  178 			getnameinfo: <>
+  179 			syslog: <>
+  180 		getpeername: <>
+  181 		recvfrom: <>
+  182 		getnameinfo: <>
+  183 		sigblock: <>
+  184 		clock_gettime: <>
+  185 		close_sep: 92
+  186 		free_conn: 51
+  187 		sigsetmask: <>
+  188 		alarm: <>
+  189 		fork: <>
+  190 		addchild_conn: void (), <./inetd.c 2429>
+  191 			search_proc: struct procinfo (), <./inetd.c 2525>
+  192 			syslog: <>
+  193 			exit: <>
+  194 		addchild: void (), <./inetd.c 904>
+  195 			syslog: <>
+  196 			exit: <>
+  197 			disable: 60
+  198 		pidfile_close: <>
+  199 		tcpmux: struct servtab (), <./builtins.c 771>
+  200 		inetd_setproctitle: void (), <./inetd.c 2088>
+  201 			getpeername: <>
+  202 			getnameinfo: <>
+  203 			sprintf: <>
+  204 			setproctitle: <>
+  205 		request_init: <>
+  206 		fromhost: <>
+  207 		hosts_access: <>
+  208 		eval_client: <>
+  209 		whichaf: sa_family_t (), <./inetd.c 301>
+  210 		recv: <>
+  211 		getpid: <>
+  212 		dup2: <>
+  213 		getpwnam: <>
+  214 		getgrnam: <>
+  215 		login_getclass: <>
+  216 		setsid: <>
+  217 		setusercontext: <>
+  218 		login_close: <>
+  219 		setgid: <>
+  220 		initgroups: <>
+  221 		setuid: <>
+  222 		execv: <>

@@ -1,0 +1,60 @@
+    1 	main: int (), <./yppush_main.c 479>
+    2 		getopt: <>
+    3 		atoi: <>
+    4 		malloc: <>
+    5 		yp_error: <>
+    6 		yppush_exit: void (), <./yppush_main.c 158>
+    7 			yp_error: <>
+    8 			yppush_svc_run: int (), <./yppush_main.c 229>
+    9 				select: <>
+   10 				yp_error: <>
+   11 				strerror: <>
+   12 				svc_getreqset: <>
+   13 			svc_unregister: <>
+   14 			exit: <>
+   15 		strdup: <>
+   16 		usage: void (), <./yppush_main.c 467>
+   17 			fprintf: <>
+   18 			exit: <>
+   19 		yp_get_default_domain: <>
+   20 		gethostname: <>
+   21 		strerror: <>
+   22 		yp_get_record: <>
+   23 		strncasecmp: <>
+   24 		strncpy: <>
+   25 		signal: <>
+   26 		handler: void (), <./yppush_main.c 215>
+   27 			yppush_exit: 6
+   28 		time: <>
+   29 		yppush_foreach: int (), <./yppush_main.c 436>
+   30 			snprintf: <>
+   31 			strcasecmp: <>
+   32 			yppush_svc_run: 8
+   33 			yp_push: int (), <./yppush_main.c 368>
+   34 				malloc: <>
+   35 				yp_error: <>
+   36 				yppush_exit: 6
+   37 				svcudp_create: <>
+   38 				svc_register: <>
+   39 				strdup: <>
+   40 				yppush_send_xfr: int (), <./yppush_main.c 280>
+   41 					yp_get_record: <>
+   42 					yp_error: <>
+   43 					yperr_string: <>
+   44 					strerror: <>
+   45 					atoi: <>
+   46 					clnt_create: <>
+   47 					clnt_spcreateerror: <>
+   48 					clnt_control: <>
+   49 					ypproc_xfr_2: <>
+   50 					clnt_geterr: <>
+   51 					clnt_sperror: <>
+   52 					clnt_destroy: <>
+   53 				yppush_show_status: int (), <./yppush_main.c 110>
+   54 					yp_error: <>
+   55 					yppusherr_string: const char * (), <./yppush_main.c 90>
+   56 					ypxfrerr_string: <>
+   57 					svc_unregister: <>
+   58 		strlen: <>
+   59 		ypxfr_get_map: <>
+   60 		exit: <>

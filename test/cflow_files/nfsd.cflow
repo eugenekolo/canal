@@ -1,0 +1,88 @@
+    1 	main: int (), <./nfsd.c 143>
+    2 		getopt_long: <>
+    3 		set_nfsdcnt: void (), <./nfsd.c 832>
+    4 			warnx: <>
+    5 		atoi: <>
+    6 		realloc: <>
+    7 		errx: <>
+    8 		strdup: <>
+    9 		strcmp: <>
+   10 		usage: void (), <./nfsd.c 849>
+   11 			fprintf: <>
+   12 			exit: <>
+   13 		modfind: <>
+   14 		kldload: <>
+   15 		socket: <>
+   16 		err: <>
+   17 		getnetconfigent: <>
+   18 		close: <>
+   19 		unregistration: void (), <./nfsd.c 875>
+   20 			rpcb_unset: <>
+   21 			syslog: <>
+   22 		exit: <>
+   23 		memset: <>
+   24 		getaddrinfo: <>
+   25 		gai_strerror: <>
+   26 		rpcb_set: <>
+   27 		freeaddrinfo: <>
+   28 		daemon: <>
+   29 		signal: <>
+   30 		nonfs: void (), <./nfsd.c 856>
+   31 			syslog: <>
+   32 		reapchild: void (), <./nfsd.c 862>
+   33 			wait3: <>
+   34 		backup_stable: void (), <./nfsd.c 1080>
+   35 			copy_stable: void (), <./nfsd.c 1052>
+   36 				lseek: <>
+   37 				ftruncate: <>
+   38 				read: <>
+   39 				write: <>
+   40 				fsync: <>
+   41 				syslog: <>
+   42 		openlog: <>
+   43 		open_stable: void (), <./nfsd.c 1000>
+   44 			open: <>
+   45 			fstat: <>
+   46 			close: <>
+   47 			copy_stable: 35
+   48 		syslog: <>
+   49 		nfssvc: <>
+   50 		fork: <>
+   51 		nfsd_exit: void (), <./nfsd.c 912>
+   52 			killchildren: void (), <./nfsd.c 883>
+   53 				kill: <>
+   54 			unregistration: 19
+   55 			exit: <>
+   56 		child_cleanup: void (), <./nfsd.c 906>
+   57 			exit: <>
+   58 		setproctitle: <>
+   59 		start_server: void (), <./nfsd.c 938>
+   60 			gethostname: <>
+   61 			snprintf: <>
+   62 			strchr: <>
+   63 			memset: <>
+   64 			getaddrinfo: <>
+   65 			freeaddrinfo: <>
+   66 			get_tuned_nfsdcount: int (), <./nfsd.c 920>
+   67 				sysctlbyname: <>
+   68 				warnx: <>
+   69 			nfssvc: <>
+   70 			syslog: <>
+   71 			nfsd_exit: 51
+   72 			exit: <>
+   73 		cleanup: void (), <./nfsd.c 897>
+   74 			nfsd_exit: 51
+   75 		FD_ZERO: <>
+   76 		setbindhost: int (), <./nfsd.c 786>
+   77 			strcmp: <>
+   78 			inet_pton: <>
+   79 			getaddrinfo: <>
+   80 			syslog: <>
+   81 			gai_strerror: <>
+   82 		bind: <>
+   83 		setsockopt: <>
+   84 		listen: <>
+   85 		FD_SET: <>
+   86 		select: <>
+   87 		FD_ISSET: <>
+   88 		accept: <>

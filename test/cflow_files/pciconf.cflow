@@ -1,0 +1,189 @@
+    1 	main: int (), <./pciconf.c 100>
+    2 		getopt: <>
+    3 		usage: void (), <./pciconf.c 89>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		list_devs: void (), <./pciconf.c 187>
+    7 			load_vendors: int (), <./pciconf.c 729>
+    8 				TAILQ_INIT: <>
+    9 				getenv: <>
+   10 				fopen: <>
+   11 				fgets: <>
+   12 				strchr: <>
+   13 				isspace: <>
+   14 				sscanf: <>
+   15 				strlen: <>
+   16 				malloc: <>
+   17 				warn: <>
+   18 				strdup: <>
+   19 				free: <>
+   20 				TAILQ_INSERT_TAIL: <>
+   21 				warnx: <>
+   22 				ferror: <>
+   23 				fclose: <>
+   24 			open: <>
+   25 			err: <>
+   26 			bzero: <>
+   27 			getsel: struct pcisel (), <./pciconf.c 936>
+   28 			ioctl: <>
+   29 			warnx: <>
+   30 			close: <>
+   31 			printf: <>
+   32 			list_verbose: void (), <./pciconf.c 521>
+   33 				TAILQ_FOREACH: <>
+   34 				printf: <>
+   35 				guess_class: const char * (), <./pciconf.c 704>
+   36 				guess_subclass: const char * (), <./pciconf.c 716>
+   37 			list_bars: void (), <./pciconf.c 456>
+   38 				print_bar: void (), <./pciconf.c 479>
+   39 					ioctl: <>
+   40 					PCI_BAR_IO: <>
+   41 					printf: <>
+   42 				PCIR_BAR: <>
+   43 			list_bridge: void (), <./pciconf.c 440>
+   44 				print_bus_range: void (), <./pciconf.c 273>
+   45 					read_config: uint32_t (), <./pciconf.c 828>
+   46 						ioctl: <>
+   47 						err: <>
+   48 					printf: <>
+   49 				print_bridge_windows: void (), <./pciconf.c 315>
+   50 					read_config: 45
+   51 					PCI_PPBIOBASE: <>
+   52 					PCI_PPBIOLIMIT: <>
+   53 					print_window: void (), <./pciconf.c 283>
+   54 						printf: <>
+   55 					PCI_PPBMEMBASE: <>
+   56 					PCI_PPBMEMLIMIT: <>
+   57 					print_special_decode: void (), <./pciconf.c 293>
+   58 						printf: <>
+   59 				print_cardbus_windows: void (), <./pciconf.c 424>
+   60 					read_config: 45
+   61 					print_cardbus_mem_window: void (), <./pciconf.c 394>
+   62 						print_window: 53
+   63 						PCI_CBBMEMBASE: <>
+   64 						read_config: 45
+   65 						PCI_CBBMEMLIMIT: <>
+   66 					print_cardbus_io_window: void (), <./pciconf.c 404>
+   67 						read_config: 45
+   68 						PCI_CBBIOBASE: <>
+   69 						print_window: 53
+   70 					print_special_decode: 57
+   71 			list_caps: void (), <./cap.c 536>
+   72 				read_config: 45
+   73 				errx: <>
+   74 				printf: <>
+   75 				cap_power: void (), <./cap.c 52>
+   76 					read_config: 45
+   77 					printf: <>
+   78 				cap_agp: void (), <./cap.c 66>
+   79 					read_config: 45
+   80 					printf: <>
+   81 					AGP_MODE_GET_MODE_3: <>
+   82 					AGP_MODE_GET_RATE: <>
+   83 					AGP_MODE_GET_SBA: <>
+   84 					AGP_MODE_GET_AGP: <>
+   85 				cap_vpd: void (), <./cap.c 120>
+   86 					printf: <>
+   87 				cap_msi: void (), <./cap.c 127>
+   88 					read_config: 45
+   89 					printf: <>
+   90 				cap_pcix: void (), <./cap.c 146>
+   91 					read_config: 45
+   92 					printf: <>
+   93 				cap_ht: void (), <./cap.c 220>
+   94 					read_config: 45
+   95 					printf: <>
+   96 				cap_vendor: void (), <./cap.c 299>
+   97 					read_config: 45
+   98 					printf: <>
+   99 				cap_debug: void (), <./cap.c 359>
+  100 					read_config: 45
+  101 					printf: <>
+  102 					PCIR_BAR: <>
+  103 				cap_subvendor: void (), <./cap.c 369>
+  104 					read_config: 45
+  105 					printf: <>
+  106 				cap_express: void (), <./cap.c 412>
+  107 					read_config: 45
+  108 					printf: <>
+  109 					MAX_PAYLOAD: <>
+  110 					link_speed_string: const char * (), <./cap.c 380>
+  111 					aspm_string: const char * (), <./cap.c 396>
+  112 				cap_msix: void (), <./cap.c 491>
+  113 					read_config: 45
+  114 					PCIR_BAR: <>
+  115 					printf: <>
+  116 				cap_sata: void (), <./cap.c 518>
+  117 					printf: <>
+  118 				cap_pciaf: void (), <./cap.c 525>
+  119 					read_config: 45
+  120 					printf: <>
+  121 				list_ecaps: void (), <./cap.c 784>
+  122 					read_config: 45
+  123 					printf: <>
+  124 					PCI_EXTCAP_ID: <>
+  125 					ecap_aer: void (), <./cap.c 632>
+  126 						printf: <>
+  127 						read_config: 45
+  128 						bitcount32: __inline uint32_t (), <./cap.c 620>
+  129 					PCI_EXTCAP_VER: <>
+  130 					ecap_vc: void (), <./cap.c 648>
+  131 						printf: <>
+  132 						read_config: 45
+  133 					ecap_sernum: void (), <./cap.c 664>
+  134 						printf: <>
+  135 						read_config: 45
+  136 					ecap_vendor: void (), <./cap.c 677>
+  137 						printf: <>
+  138 						read_config: 45
+  139 					ecap_sec_pcie: void (), <./cap.c 689>
+  140 						printf: <>
+  141 						read_config: 45
+  142 					ecap_sriov: void (), <./cap.c 708>
+  143 						printf: <>
+  144 						read_config: 45
+  145 						check_enabled: const char * (), <./cap.c 701>
+  146 						ffs: <>
+  147 						print_bar: 38
+  148 						PCIR_SRIOV_BAR: <>
+  149 					PCI_EXTCAP_NEXTPTR: <>
+  150 			list_errors: void (), <./err.c 140>
+  151 				read_config: 45
+  152 				print_bits: void (), <./err.c 115>
+  153 					printf: <>
+  154 				pci_find_cap: uint8_t (), <./cap.c 835>
+  155 					read_config: 45
+  156 				pcie_find_cap: uint16_t (), <./cap.c 869>
+  157 					read_config: 45
+  158 					PCI_EXTCAP_ID: <>
+  159 					PCI_EXTCAP_NEXTPTR: <>
+  160 			list_vpd: void (), <./pciconf.c 550>
+  161 				ioctl: <>
+  162 				malloc: <>
+  163 				free: <>
+  164 				PVE_NEXT: <>
+  165 				printf: <>
+  166 				memcmp: <>
+  167 				PCIR_BAR: <>
+  168 		chkattached: void (), <./pciconf.c 1008>
+  169 			getsel: struct pcisel (), <./pciconf.c 936>
+  170 			open: <>
+  171 			err: <>
+  172 			ioctl: <>
+  173 			printf: <>
+  174 		readit: void (), <./pciconf.c 957>
+  175 			open: <>
+  176 			err: <>
+  177 			strtol: <>
+  178 			getsel: struct pcisel (), <./pciconf.c 936>
+  179 			readone: void (), <./pciconf.c 950>
+  180 				printf: <>
+  181 				read_config: 45
+  182 			putchar: <>
+  183 			close: <>
+  184 		writeit: void (), <./pciconf.c 989>
+  185 			getsel: struct pcisel (), <./pciconf.c 936>
+  186 			strtoul: <>
+  187 			open: <>
+  188 			err: <>
+  189 			ioctl: <>

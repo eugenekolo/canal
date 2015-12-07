@@ -1,0 +1,67 @@
+    1 	main: int (), <./kgmon.c 88>
+    2 		seteuid: <>
+    3 		getuid: <>
+    4 		err: <>
+    5 		getopt: <>
+    6 		usage: void (), <./kgmon.c 178>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		getbootfile: <>
+   10 		openfiles: int (), <./kgmon.c 188>
+   11 			sysctl: <>
+   12 			errx: <>
+   13 			seteuid: <>
+   14 			getuid: <>
+   15 			kern_readonly: void (), <./kgmon.c 236>
+   16 				fprintf: <>
+   17 			kvm_openfiles: <>
+   18 			kvm_nlist: <>
+   19 		getprof: int (), <./kgmon.c 257>
+   20 			kvm_read: <>
+   21 			sysctl: <>
+   22 			offsetof: <>
+   23 			errx: <>
+   24 			kvm_geterr: <>
+   25 			strerror: <>
+   26 			bzero: <>
+   27 			getprofhz: int (), <./kgmon.c 460>
+   28 				kvm_read: <>
+   29 				warnx: <>
+   30 				kvm_geterr: <>
+   31 				sysctl: <>
+   32 				warn: <>
+   33 		dumpstate: void (), <./kgmon.c 344>
+   34 			setprof: void (), <./kgmon.c 311>
+   35 				sysctl: <>
+   36 				seteuid: <>
+   37 				getuid: <>
+   38 				kvm_write: <>
+   39 				warnx: <>
+   40 			fopen: <>
+   41 			warn: <>
+   42 			bzero: <>
+   43 			fwrite: <>
+   44 			malloc: <>
+   45 			errx: <>
+   46 			kvm_read: <>
+   47 			sysctl: <>
+   48 			kvm_geterr: <>
+   49 			strerror: <>
+   50 			err: <>
+   51 			free: <>
+   52 			warnx: <>
+   53 			fclose: <>
+   54 		reset: void (), <./kgmon.c 486>
+   55 			setprof: 34
+   56 			malloc: <>
+   57 			errx: <>
+   58 			bzero: <>
+   59 			kvm_write: <>
+   60 			kvm_geterr: <>
+   61 			seteuid: <>
+   62 			sysctl: <>
+   63 			err: <>
+   64 			getuid: <>
+   65 			free: <>
+   66 		setprof: 34
+   67 		fprintf: <>

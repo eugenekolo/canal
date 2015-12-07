@@ -1,0 +1,135 @@
+    1 	main: int (), <./kbdmap.c 831>
+    2 		system: <>
+    3 		fprintf: <>
+    4 		sleep: <>
+    5 		check_vt: int (), <./kbdmap.c 154>
+    6 			sysctlbyname: <>
+    7 			strcmp: <>
+    8 		SLIST_INIT: <>
+    9 		get_locale: const char * (), <./kbdmap.c 170>
+   10 			getenv: <>
+   11 			strcmp: <>
+   12 		extract_name: const char * (), <./kbdmap.c 190>
+   13 			strrchr: <>
+   14 		get_font: char * (), <./kbdmap.c 222>
+   15 			fopen: <>
+   16 			fgets: <>
+   17 			sscanf: <>
+   18 			strcmp: <>
+   19 			free: <>
+   20 			malloc: <>
+   21 			strlen: <>
+   22 			strcpy: <>
+   23 			fclose: <>
+   24 			fprintf: <>
+   25 		strcmp: <>
+   26 		parse_args: void (), <./kbdmap.c 792>
+   27 			usage: void (), <./kbdmap.c 782>
+   28 				fprintf: <>
+   29 				exit: <>
+   30 			strcmp: <>
+   31 			vidcontrol: void (), <./kbdmap.c 258>
+   32 				asprintf: <>
+   33 				system: <>
+   34 				free: <>
+   35 				strdup: <>
+   36 				strrchr: <>
+   37 				strstr: <>
+   38 				sscanf: <>
+   39 				fprintf: <>
+   40 			exit: <>
+   41 		menu_read: void (), <./kbdmap.c 575>
+   42 			sl_init: <>
+   43 			sprintf: <>
+   44 			extract_name: 12
+   45 			strlcpy: <>
+   46 			strlen: <>
+   47 			fprintf: <>
+   48 			fopen: <>
+   49 			fgets: <>
+   50 			isspace: <>
+   51 			sscanf: <>
+   52 			strcmp: <>
+   53 			check_file: int (), <./kbdmap.c 548>
+   54 				access: <>
+   55 				asprintf: <>
+   56 				fprintf: <>
+   57 				free: <>
+   58 			strdup: <>
+   59 			sl_find: <>
+   60 			sl_add: <>
+   61 			get_keymap: struct keymap (), <./kbdmap.c 79>
+   62 			find_token: int (), <./kbdmap.c 439>
+   63 				strdup: <>
+   64 				strsep: <>
+   65 				strcmp: <>
+   66 				free: <>
+   67 			add_keymap: void (), <./kbdmap.c 126>
+   68 				SLIST_FOREACH: <>
+   69 				strcmp: <>
+   70 				free: <>
+   71 				strdup: <>
+   72 				malloc: <>
+   73 				SLIST_INSERT_HEAD: <>
+   74 			fclose: <>
+   75 			qsort: <>
+   76 			compare_lang: int (), <./kbdmap.c 482>
+   77 				strcmp: <>
+   78 			printf: <>
+   79 			puts: <>
+   80 			exit: <>
+   81 			remove_keymap: void (), <./kbdmap.c 109>
+   82 				SLIST_FOREACH: <>
+   83 				strcmp: <>
+   84 				SLIST_REMOVE: <>
+   85 				free: <>
+   86 			opendir: <>
+   87 			readdir: <>
+   88 			get_extension: char * (), <./kbdmap.c 205>
+   89 				strrchr: <>
+   90 			free: <>
+   91 			closedir: <>
+   92 			get_num_keymaps: int (), <./kbdmap.c 94>
+   93 				SLIST_FOREACH: <>
+   94 			malloc: <>
+   95 			SLIST_FOREACH: <>
+   96 			kludge_desc: void (), <./kbdmap.c 494>
+   97 				strstr: <>
+   98 				strlen: <>
+   99 				realloc: <>
+  100 			compare_keymap: int (), <./kbdmap.c 468>
+  101 				strcmp: <>
+  102 			unkludge_desc: void (), <./kbdmap.c 526>
+  103 				strstr: <>
+  104 				realloc: <>
+  105 			show_dialog: void (), <./kbdmap.c 349>
+  106 				mkstemp: <>
+  107 				fprintf: <>
+  108 				exit: <>
+  109 				asprintf: <>
+  110 				strcmp: <>
+  111 				vidcontrol: 31
+  112 				strlen: <>
+  113 				malloc: <>
+  114 				strcpy: <>
+  115 				strcat: <>
+  116 				system: <>
+  117 				fopen: <>
+  118 				fgets: <>
+  119 				do_kbdcontrol: void (), <./kbdmap.c 308>
+  120 					asprintf: <>
+  121 					system: <>
+  122 					fprintf: <>
+  123 					free: <>
+  124 				do_vidfont: void (), <./kbdmap.c 324>
+  125 					asprintf: <>
+  126 					vidcontrol: 31
+  127 					free: <>
+  128 					strdup: <>
+  129 					strrchr: <>
+  130 					get_extension: 88
+  131 					printf: <>
+  132 				fclose: <>
+  133 				remove: <>
+  134 				free: <>
+  135 				close: <>

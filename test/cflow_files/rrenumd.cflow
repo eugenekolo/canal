@@ -1,0 +1,83 @@
+    1 	main: int (), <./rrenumd.c 529>
+    2 		memset: <>
+    3 		openlog: <>
+    4 		getopt: <>
+    5 		fopen: <>
+    6 		syslog: <>
+    7 		exit: <>
+    8 		strdup: <>
+    9 		show_usage: void (), <./rrenumd.c 125>
+   10 			fprintf: <>
+   11 			exit: <>
+   12 		setlogmask: <>
+   13 		LOG_UPTO: <>
+   14 		init_globals: void (), <./rrenumd.c 180>
+   15 			init_sin6: void (), <./rrenumd.c 140>
+   16 				memset: <>
+   17 				inet_pton: <>
+   18 			CMSG_SPACE: <>
+   19 			malloc: <>
+   20 			syslog: <>
+   21 			exit: <>
+   22 		config: void (), <./rrenumd.c 222>
+   23 			parse: <>
+   24 			syslog: <>
+   25 			exit: <>
+   26 		sock6_open: void (), <./rrenumd.c 265>
+   27 			socket: <>
+   28 			syslog: <>
+   29 			strerror: <>
+   30 			exit: <>
+   31 			join_multi: void (), <./rrenumd.c 151>
+   32 				inet_pton: <>
+   33 				syslog: <>
+   34 				exit: <>
+   35 				if_nametoindex: <>
+   36 				strerror: <>
+   37 				setsockopt: <>
+   38 			ICMP6_FILTER_SETBLOCKALL: <>
+   39 			ICMP6_FILTER_SETPASS: <>
+   40 			setsockopt: <>
+   41 			ipsec_set_policy: <>
+   42 			strlen: <>
+   43 			errx: <>
+   44 			ipsec_strerror: <>
+   45 			ipsec_get_policylen: <>
+   46 			err: <>
+   47 			free: <>
+   48 		sock4_open: void (), <./rrenumd.c 354>
+   49 			socket: <>
+   50 			syslog: <>
+   51 			strerror: <>
+   52 			exit: <>
+   53 			some_join_function: <>
+   54 			ipsec_set_policy: <>
+   55 			strlen: <>
+   56 			errx: <>
+   57 			ipsec_strerror: <>
+   58 			setsockopt: <>
+   59 			ipsec_get_policylen: <>
+   60 			err: <>
+   61 			free: <>
+   62 		daemon: <>
+   63 		FD_ZERO: <>
+   64 		FD_SET: <>
+   65 		select: <>
+   66 		strerror: <>
+   67 		rrenum_snd_eachdst: void (), <./rrenumd.c 467>
+   68 			rrenum_output: void (), <./rrenumd.c 420>
+   69 				IN6_IS_ADDR_MULTICAST: <>
+   70 				CMSG_FIRSTHDR: <>
+   71 				CMSG_LEN: <>
+   72 				CMSG_DATA: <>
+   73 				memset: <>
+   74 				CMSG_NXTHDR: <>
+   75 				memcpy: <>
+   76 				sendmsg: <>
+   77 				syslog: <>
+   78 				strerror: <>
+   79 		FD_ISSET: <>
+   80 		rrenum_input: void (), <./rrenumd.c 489>
+   81 			recvmsg: <>
+   82 			syslog: <>
+   83 			strerror: <>

@@ -1,0 +1,151 @@
+    1 	main: int (), <./fifolog_create/fifolog_create.c 50>
+    2 		time: <>
+    3 		getopt: <>
+    4 		strtoul: <>
+    5 		get_date: <>
+    6 		errx: <>
+    7 		Usage: void (), <./fifolog_reader/fifolog_reader.c 78>
+    8 			fprintf: <>
+    9 			exit: <>
+   10 		regcomp: <>
+   11 		regerror: <>
+   12 		fprintf: <>
+   13 		exit: <>
+   14 		ctime: <>
+   15 		fifolog_reader_open: struct fifolog_reader (), <./lib/fifolog_reader.c 56>
+   16 		strcmp: <>
+   17 		fopen: <>
+   18 		err: <>
+   19 		fifolog_reader_seek: off_t (), <./lib/fifolog_reader.c 130>
+   20 			CHECK_OBJ_NOTNULL: <>
+   21 			fifolog_reader_findsync: int (), <./lib/fifolog_reader.c 93>
+   22 				assert: <>
+   23 				fifolog_int_read: int (), <./lib/fifolog_int.c 195>
+   24 					fifolog_int_file_assert: void (), <./lib/fifolog_int.c 179>
+   25 						CHECK_OBJ_NOTNULL: <>
+   26 						assert: <>
+   27 					pread: <>
+   28 				err: <>
+   29 				be32dec: <>
+   30 			assert: <>
+   31 			be32dec: <>
+   32 			fifolog_int_findend: const char * (), <./lib/fifolog_int.c 218>
+   33 				fifolog_int_file_assert: 24
+   34 				fifolog_int_read: 23
+   35 				be32dec: <>
+   36 				assert: <>
+   37 			err: <>
+   38 			fifolog_int_read: 23
+   39 			fprintf: <>
+   40 		fifolog_reader_process: void (), <./lib/fifolog_reader.c 247>
+   41 			CHECK_OBJ_NOTNULL: <>
+   42 			fifolog_int_read: 23
+   43 			err: <>
+   44 			be32dec: <>
+   45 			inflateReset: <>
+   46 			assert: <>
+   47 			inflate: <>
+   48 			fprintf: <>
+   49 			exit: <>
+   50 			fifolog_reader_chop: unsigned char * (), <./lib/fifolog_reader.c 207>
+   51 				be32dec: <>
+   52 			memmove: <>
+   53 		Render: void (), <./fifolog_reader/fifolog_reader.c 51>
+   54 			regexec: <>
+   55 			fprintf: <>
+   56 			gmtime_r: <>
+   57 			strftime: <>
+   58 			assert: <>
+   59 		usage: void (), <./fifolog_writer/fifolog_writer.c 43>
+   60 			fprintf: <>
+   61 			exit: <>
+   62 		fifolog_write_new: struct fifolog_writer (), <./lib/fifolog_write_poll.c 79>
+   63 		assert: <>
+   64 		fifolog_write_open: const char * (), <./lib/fifolog_write_poll.c 118>
+   65 			CHECK_OBJ_NOTNULL: <>
+   66 			memset: <>
+   67 			fifolog_int_open: const char * (), <./lib/fifolog_int.c 136>
+   68 				memset: <>
+   69 				fifolog_int_open_i: const char * (), <./lib/fifolog_int.c 56>
+   70 					open: <>
+   71 					ioctl: <>
+   72 					fstat: <>
+   73 					assert: <>
+   74 					S_ISREG: <>
+   75 					malloc: <>
+   76 					pread: <>
+   77 					memcmp: <>
+   78 					strlen: <>
+   79 					be32dec: <>
+   80 					free: <>
+   81 					calloc: <>
+   82 				malloc: <>
+   83 				memcpy: <>
+   84 				fifolog_int_close: void (), <./lib/fifolog_int.c 161>
+   85 					close: <>
+   86 					free: <>
+   87 			fifolog_int_findend: 32
+   88 			fifolog_int_read: 23
+   89 			be32dec: <>
+   90 			random: <>
+   91 			ALLOC: <>
+   92 			deflateInit: <>
+   93 			assert: <>
+   94 			time: <>
+   95 			fifolog_write_assert: void (), <./lib/fifolog_write_poll.c 66>
+   96 				CHECK_OBJ_NOTNULL: <>
+   97 				assert: <>
+   98 		poll: <>
+   99 		fgets: <>
+  100 		strchr: <>
+  101 		isspace: <>
+  102 		fifolog_write_record_poll: int (), <./lib/fifolog_write_poll.c 376>
+  103 			time: <>
+  104 			fifolog_write_assert: 95
+  105 			assert: <>
+  106 			fifolog_write_record: int (), <./lib/fifolog_write_poll.c 316>
+  107 				fifolog_write_assert: 95
+  108 				assert: <>
+  109 				strlen: <>
+  110 				time: <>
+  111 				be32enc: <>
+  112 				memcpy: <>
+  113 			fifolog_write_gzip: int (), <./lib/fifolog_write_poll.c 254>
+  114 				assert: <>
+  115 				deflate: <>
+  116 				fifolog_write_output: int (), <./lib/fifolog_write_poll.c 187>
+  117 					be32enc: <>
+  118 					assert: <>
+  119 					pwrite: <>
+  120 					memset: <>
+  121 				deflateReset: <>
+  122 		fifolog_write_poll: int (), <./lib/fifolog_write_poll.c 302>
+  123 			time: <>
+  124 			fifolog_write_gzip: 113
+  125 		fifolog_write_close: void (), <./lib/fifolog_write_poll.c 102>
+  126 			CHECK_OBJ_NOTNULL: <>
+  127 			fifolog_write_assert: 95
+  128 			time: <>
+  129 			fifolog_write_gzip: 113
+  130 			fifolog_int_close: 84
+  131 			free: <>
+  132 		expand_number: <>
+  133 		usage: void (), <./fifolog_create/fifolog_create.c 42>
+  134 			fprintf: <>
+  135 			exit: <>
+  136 		fifolog_create: const char * (), <./lib/fifolog_create.c 44>
+  137 			open: <>
+  138 			fstat: <>
+  139 			assert: <>
+  140 			S_ISBLK: <>
+  141 			S_ISCHR: <>
+  142 			S_ISREG: <>
+  143 			close: <>
+  144 			ioctl: <>
+  145 			ftruncate: <>
+  146 			calloc: <>
+  147 			strcpy: <>
+  148 			be32enc: <>
+  149 			pwrite: <>
+  150 			free: <>
+  151 			memset: <>

@@ -1,0 +1,960 @@
+    1 	main: int (), <./main.c 302>
+    2 		probe_Init: void (), <./probe.c 68>
+    3 			select_changes_time: int (), <./probe.c 43>
+    4 				select: <>
+    5 			log_Printf: void (), <./log.c 315>
+    6 				log_IsKept: int (), <./log.c 268>
+    7 					MSK: <>
+    8 				va_start: <>
+    9 				snprintf: <>
+   10 				log_Name: const char * (), <./log.c 215>
+   11 				prompt_vPrintf: void (), <./prompt.c 392>
+   12 					strlen: <>
+   13 					strcpy: <>
+   14 					vfprintf: <>
+   15 					fflush: <>
+   16 				MSK: <>
+   17 				va_end: <>
+   18 				vsyslog: <>
+   19 				syslogLevel: int (), <./log.c 196>
+   20 			ipv6_available: int (), <./probe.c 55>
+   21 				ID0socket: int (), <./id.c 117>
+   22 					ID0set0: void (), <./id.c 84>
+   23 						seteuid: <>
+   24 						log_Printf: 5
+   25 						AbortProgram: void (), <./main.c 120>
+   26 							server_Close: int (), <./server.c 387>
+   27 								getsockname: <>
+   28 								unlink: <>
+   29 								close: <>
+   30 								log_DestroyPrompts: void (), <./log.c 142>
+   31 									prompt_Destroy: void (), <./prompt.c 361>
+   32 										fclose: <>
+   33 										close: <>
+   34 										log_Printf: 5
+   35 										prompt_TtyOldMode: void (), <./prompt.c 491>
+   36 											fcntl: <>
+   37 											tcsetattr: <>
+   38 										log_UnRegisterPrompt: void (), <./log.c 125>
+   39 											LogSetMaskLocal: void (), <./log.c 106>
+   40 												MSK: <>
+   41 										free: <>
+   42 							log_Printf: 5
+   43 							ex_desc: const char * (), <./defs.c 358>
+   44 								snprintf: <>
+   45 							bundle_Close: void (), <./bundle.c 386>
+   46 								strcasecmp: <>
+   47 								datalink_DontHangup: void (), <./datalink.c 1060>
+   48 								datalink_StayDown: void (), <./datalink.c 1052>
+   49 								log_Printf: 5
+   50 								bundle_StopSessionTimer: void (), <./bundle.c 1257>
+   51 									timer_Stop: void (), <./timer.c 65>
+   52 										sigemptyset: <>
+   53 										sigaddset: <>
+   54 										sigprocmask: <>
+   55 										StopTimerNoBlock: void (), <./timer.c 136>
+   56 											timer_TermService: void (), <./timer.c 293>
+   57 												setitimer: <>
+   58 												log_Printf: 5
+   59 												strerror: <>
+   60 												sig_signal: sig_type (), <./sig.c 64>
+   61 													log_Printf: 5
+   62 													signal: <>
+   63 													signal_recorder: void (), <./sig.c 50>
+   64 											getitimer: <>
+   65 											RESTVAL: <>
+   66 											timer_InitService: void (), <./timer.c 276>
+   67 												sig_signal: 60
+   68 												TimerService: void (), <./timer.c 190>
+   69 													log_IsKept: 6
+   70 													time: <>
+   71 													timer_Show: void (), <./timer.c 235>
+   72 														getitimer: <>
+   73 														RESTVAL: <>
+   74 														log_Printf: 5
+   75 														prompt_Printf: void (), <./prompt.c 380>
+   76 															va_start: <>
+   77 															prompt_vPrintf: 11
+   78 															va_end: <>
+   79 													timer_InitService: 66
+   80 													timer_TermService: 56
+   81 												setitimer: <>
+   82 												log_Printf: 5
+   83 												strerror: <>
+   84 											log_Printf: 5
+   85 								bundle_StopIdleTimer: void (), <./bundle.c 1210>
+   86 									timer_Stop: 51
+   87 								ncp_LayersUnfinished: int (), <./ncp.c 509>
+   88 								ncp_Close: void (), <./ncp.c 527>
+   89 									fsm_Close: void (), <./fsm.c 346>
+   90 										NewState: void (), <./fsm.c 169>
+   91 											log_Printf: 5
+   92 											State2Nam: const char * (), <./fsm.c 114>
+   93 											timer_Stop: 51
+   94 											StoppedTimeout: void (), <./fsm.c 127>
+   95 												log_Printf: 5
+   96 												timer_Stop: 51
+   97 												fsm2initial: void (), <./fsm.c 1125>
+   98 													timer_Stop: 51
+   99 													fsm_Close: 89
+  100 													fsm_Down: void (), <./fsm.c 314>
+  101 														NewState: 90
+  102 											timer_Start: void (), <./timer.c 77>
+  103 												sigemptyset: <>
+  104 												sigaddset: <>
+  105 												sigprocmask: <>
+  106 												StopTimerNoBlock: 55
+  107 												log_Printf: 5
+  108 												getitimer: <>
+  109 												RESTVAL: <>
+  110 												timer_InitService: 66
+  111 										FsmInitRestartCounter: void (), <./fsm.c 454>
+  112 											timer_Stop: 51
+  113 											FsmTimeout: void (), <./fsm.c 410>
+  114 												FsmSendTerminateReq: void (), <./fsm.c 398>
+  115 													fsm_Output: void (), <./fsm.c 188>
+  116 														log_IsKept: 6
+  117 														log_Printf: 5
+  118 														Code2Nam: const char * (), <./fsm.c 106>
+  119 														State2Nam: 92
+  120 														htons: <>
+  121 														m_get: struct mbuf (), <./mbuf.c 104>
+  122 														memcpy: <>
+  123 														MBUF_CTOP: <>
+  124 														log_DumpBp: void (), <./log.c 363>
+  125 															log_IsKept: 6
+  126 															log_Printf: 5
+  127 															CONST_MBUF_CTOP: <>
+  128 															sprintf: <>
+  129 															isprint: <>
+  130 															memset: <>
+  131 														link_PushPacket: void (), <./link.c 248>
+  132 															LINK_QUEUES: <>
+  133 															link_AddOutOctets: inline void (), <./link.c 85>
+  134 																throughput_addout: void (), <./throughput.c 247>
+  135 															m_length: size_t (), <./mbuf.c 78>
+  136 															log_Printf: 5
+  137 															m_enqueue: void (), <./mbuf.c 367>
+  138 																log_Printf: 5
+  139 															m_pullup: struct mbuf (), <./mbuf.c 381>
+  140 														LINK_QUEUES: <>
+  141 														lcp_SendIdentification: int (), <./lcp.c 500>
+  142 															command_Expand: void (), <./command.c 521>
+  143 																strdup: <>
+  144 																bundle_Uptime: int (), <./bundle.c 2013>
+  145 																	time: <>
+  146 																snprintf: <>
+  147 																subst: char * (), <./command.c 438>
+  148 																	strstrword: char * (), <./command.c 417>
+  149 																		strlen: <>
+  150 																		strstr: <>
+  151 																		isinword: <>
+  152 																		memmove: <>
+  153 																	strlen: <>
+  154 																	bcopy: <>
+  155 																	realloc: <>
+  156 																substip: char * (), <./command.c 470>
+  157 																	subst: 147
+  158 																	inet_ntoa: <>
+  159 																mp_Enddisc: const char * (), <./mp.c 899>
+  160 																	sprintf: <>
+  161 																	snprintf: <>
+  162 																	inet_ntoa: <>
+  163 																	strlen: <>
+  164 																substipv6: char * (), <./command.c 498>
+  165 																	subst: 147
+  166 																	ncpaddr_ntoa: const char * (), <./ncpaddr.c 404>
+  167 																		ncpaddr_ntowa: char * (), <./ncpaddr.c 370>
+  168 																			snprintf: <>
+  169 																			inet_ntoa: <>
+  170 																			memset: <>
+  171 																			adjust_linklocal: void (), <./ncpaddr.c 164>
+  172 																				IN6_IS_ADDR_LINKLOCAL: <>
+  173 																				IN6_IS_ADDR_MC_LINKLOCAL: <>
+  174 																				ntohs: <>
+  175 																			getnameinfo: <>
+  176 																substull: char * (), <./command.c 486>
+  177 																	snprintf: <>
+  178 																	subst: 147
+  179 																bundle_GetLabel: const char * (), <./bundle.c 1352>
+  180 																substipv6prefix: char * (), <./command.c 505>
+  181 																	inet_ntop: <>
+  182 																	snprintf: <>
+  183 																	subst: 147
+  184 																substlong: char * (), <./command.c 476>
+  185 																	snprintf: <>
+  186 																	subst: 147
+  187 															getpid: <>
+  188 															ua_htonl: <>
+  189 															strncpy: <>
+  190 															fsm_Output: 115
+  191 															strlen: <>
+  192 															log_Printf: 5
+  193 															command_Free: void (), <./command.c 611>
+  194 																free: <>
+  195 													timer_Start: 102
+  196 												FsmSendConfigReq: void (), <./fsm.c 383>
+  197 													timer_Start: 102
+  198 													log_Printf: 5
+  199 													lcp_SendIdentification: 141
+  200 													fsm_Close: 89
+  201 												NewState: 90
+  202 												timer_Start: 102
+  203 										FsmSendTerminateReq: 114
+  204 								ncp2initial: void (), <./ncp.c 541>
+  205 									fsm2initial: 97
+  206 								mp_Down: void (), <./mp.c 381>
+  207 									mp_StopAutoloadTimer: void (), <./mp.c 210>
+  208 										throughput_stop: void (), <./throughput.c 232>
+  209 											time: <>
+  210 											timer_Stop: 51
+  211 									mpserver_Close: void (), <./mp.c 1181>
+  212 										bundle_SendDatalink: void (), <./bundle.c 1540>
+  213 											log_Printf: 5
+  214 											physical_LockedDevice: const char * (), <./physical.c 748>
+  215 											alloca: <>
+  216 											strlen: <>
+  217 											strcpy: <>
+  218 											bundle_LinkClosed: void (), <./bundle.c 946>
+  219 												log_SetTtyCommandMode: void (), <./log.c 186>
+  220 													prompt_IsTermMode: <>
+  221 													prompt_TtyCommandMode: void (), <./prompt.c 451>
+  222 														tcgetattr: <>
+  223 														tcsetattr: <>
+  224 														fcntl: <>
+  225 												bundle_DownInterface: void (), <./bundle.c 901>
+  226 													route_IfDelete: void (), <./route.c 379>
+  227 														log_Printf: 5
+  228 														sysctl: <>
+  229 														strerror: <>
+  230 														malloc: <>
+  231 														free: <>
+  232 														route_ParseHdr: void (), <./route.c 309>
+  233 															ROUNDUP: <>
+  234 														log_IsKept: 6
+  235 														ncprange_setsa: void (), <./ncpaddr.c 697>
+  236 															mask42bits: int (), <./ncpaddr.c 100>
+  237 																ntohl: <>
+  238 															IN6_IS_ADDR_UNSPECIFIED: <>
+  239 															mask62bits: int (), <./ncpaddr.c 141>
+  240 														ncpaddr_setsa: void (), <./ncpaddr.c 338>
+  241 															IN6_IS_ADDR_V4MAPPED: <>
+  242 														snprintf: <>
+  243 														ncpaddr_ntoa: 166
+  244 														ncprange_ntoa: const char * (), <./ncpaddr.c 846>
+  245 															ncprange_getaddr: int (), <./ncpaddr.c 788>
+  246 															ncpaddr_ntowa: 167
+  247 															strlen: <>
+  248 															strcmp: <>
+  249 															snprintf: <>
+  250 															ntohl: <>
+  251 														rt_Set: int (), <./route.c 734>
+  252 															ID0socket: 21
+  253 															log_Printf: 5
+  254 															strerror: <>
+  255 															memset: <>
+  256 															getpid: <>
+  257 															ncprange_getsa: void (), <./ncpaddr.c 740>
+  258 																memset: <>
+  259 																bits2mask6: struct in6_addr (), <./ncpaddr.c 119>
+  260 															add_scope: void (), <./route.c 717>
+  261 																IN6_IS_ADDR_LINKLOCAL: <>
+  262 																IN6_IS_ADDR_MC_LINKLOCAL: <>
+  263 																htons: <>
+  264 															memcpy_roundup: size_t (), <./route.c 703>
+  265 																ROUNDUP: <>
+  266 																memcpy: <>
+  267 																memset: <>
+  268 															close: <>
+  269 															ncpaddr_getsa: void (), <./ncpaddr.c 307>
+  270 																memset: <>
+  271 															ncpaddr_isdefault: int (), <./ncpaddr.c 195>
+  272 																IN6_IS_ADDR_UNSPECIFIED: <>
+  273 															ncprange_ishost: int (), <./ncpaddr.c 622>
+  274 															ID0write: int (), <./id.c 156>
+  275 																ID0set0: 22
+  276 																write: <>
+  277 																log_Printf: 5
+  278 																ID0setuser: void (), <./id.c 69>
+  279 																	seteuid: <>
+  280 																	log_Printf: 5
+  281 																	AbortProgram: 25
+  282 															ncprange_ntoa: 244
+  283 															ncpaddr_ntoa: 166
+  284 															log_IsKept: 6
+  285 															snprintf: <>
+  286 													iface_ClearFlags: int (), <./iface.c 699>
+  287 														iface_ChangeFlags: int (), <./iface.c 646>
+  288 															ID0socket: 21
+  289 															log_Printf: 5
+  290 															strerror: <>
+  291 															memset: <>
+  292 															strncpy: <>
+  293 															ID0ioctl: int (), <./id.c 93>
+  294 																ID0set0: 22
+  295 																ioctl: <>
+  296 																log_Printf: 5
+  297 																ID0setuser: 278
+  298 															close: <>
+  299 												ncp2initial: 204
+  300 												mp_Down: 206
+  301 												bundle_NewPhase: void (), <./bundle.c 122>
+  302 													log_Printf: 5
+  303 													log_DisplayPrompts: void (), <./log.c 164>
+  304 														prompt_Required: <>
+  305 													ncp_fsmStart: int (), <./ncp.c 147>
+  306 														Enabled: <>
+  307 														fsm_Up: void (), <./fsm.c 293>
+  308 															log_Printf: 5
+  309 															NewState: 90
+  310 															FsmInitRestartCounter: 111
+  311 															FsmSendConfigReq: 196
+  312 															State2Nam: 92
+  313 														fsm_Open: void (), <./fsm.c 255>
+  314 															NewState: 90
+  315 															log_Printf: 5
+  316 															timer_Stop: 51
+  317 															FsmOpenNow: void (), <./fsm.c 227>
+  318 																timer_Stop: 51
+  319 																FsmInitRestartCounter: 111
+  320 																FsmSendConfigReq: 196
+  321 																NewState: 90
+  322 															timer_Start: 102
+  323 													bundle_Close: 45
+  324 													mp_Down: 206
+  325 												bundle_StopSessionTimer: 50
+  326 												bundle_StopIdleTimer: 85
+  327 											bundle_DatalinkLinkout: struct datalink (), <./bundle.c 1272>
+  328 											strdup: <>
+  329 											datalink2iov: int (), <./datalink.c 1386>
+  330 												timer_Stop: 51
+  331 												cbcp_Down: void (), <./cbcp.c 746>
+  332 													timer_Stop: 51
+  333 													cbcp_NewPhase: void (), <./cbcp.c 161>
+  334 														log_Printf: 5
+  335 														cbcpstate: const char * (), <./cbcp.c 153>
+  336 															HexStr: const char * (), <./defs.c 345>
+  337 																snprintf: <>
+  338 												log_Printf: 5
+  339 												free: <>
+  340 												realloc: <>
+  341 												physical2iov: int (), <./physical.c 676>
+  342 													hdlc_StopTimer: void (), <./hdlc.c 433>
+  343 														timer_Stop: 51
+  344 													lqr_StopTimer: void (), <./lqr.c 330>
+  345 														timer_Stop: 51
+  346 													timer_Stop: 51
+  347 													Enabled: <>
+  348 													tcgetpgrp: <>
+  349 													getpgrp: <>
+  350 													getpid: <>
+  351 													log_Printf: 5
+  352 													free: <>
+  353 													physical_MaxDeviceSize: unsigned (), <./physical.c 660>
+  354 													malloc: <>
+  355 													AbortProgram: 25
+  356 													memcpy: <>
+  357 											socketpair: <>
+  358 											memset: <>
+  359 											CMSG_SPACE: <>
+  360 											CMSG_DATA: <>
+  361 											setsockopt: <>
+  362 											strerror: <>
+  363 											sendmsg: <>
+  364 											read: <>
+  365 											ID0uu_lock_txfr: int (), <./id.c 180>
+  366 												ID0set0: 22
+  367 												uu_lock_txfr: <>
+  368 												log_Printf: 5
+  369 												ID0setuser: 278
+  370 											uu_lockerr: <>
+  371 											writev: <>
+  372 											close: <>
+  373 											Enabled: <>
+  374 											tcgetpgrp: <>
+  375 											getpgrp: <>
+  376 											bundle_setsid: void (), <./bundle.c 1716>
+  377 												bundle_IsDead: int (), <./bundle.c 1266>
+  378 												getpid: <>
+  379 												pipe: <>
+  380 												log_Printf: 5
+  381 												strerror: <>
+  382 												fork: <>
+  383 												close: <>
+  384 												read: <>
+  385 												bundle_LockTun: void (), <./bundle.c 669>
+  386 													snprintf: <>
+  387 													ID0fopen: FILE * (), <./id.c 129>
+  388 														ID0set0: 22
+  389 														fopen: <>
+  390 														log_Printf: 5
+  391 														ID0setuser: 278
+  392 													fprintf: <>
+  393 													getpid: <>
+  394 													fclose: <>
+  395 													log_Printf: 5
+  396 													strerror: <>
+  397 												setsid: <>
+  398 												bundle_ChangedPID: void (), <./bundle.c 2005>
+  399 													ioctl: <>
+  400 												timer_InitService: 66
+  401 												physical_ChangedPid: void (), <./physical.c 757>
+  402 													physical_LockedDevice: 214
+  403 													ID0uu_lock_txfr: 365
+  404 													log_Printf: 5
+  405 													uu_lockerr: <>
+  406 												write: <>
+  407 												timer_TermService: 56
+  408 												signal: <>
+  409 												getdtablesize: <>
+  410 												waitpid: <>
+  411 												SetTitle: void (), <./defs.c 374>
+  412 													setproctitle: <>
+  413 												setuid: <>
+  414 												ID0realuid: uid_t (), <./id.c 78>
+  415 												pause: <>
+  416 											free: <>
+  417 										close: <>
+  418 										ID0unlink: int (), <./id.c 105>
+  419 											ID0set0: 22
+  420 											unlink: <>
+  421 											log_Printf: 5
+  422 											ID0setuser: 278
+  423 										log_Printf: 5
+  424 										strerror: <>
+  425 										memset: <>
+  426 									fsm2initial: 97
+  427 									m_freem: void (), <./mbuf.c 188>
+  428 										m_free: struct mbuf (), <./mbuf.c 165>
+  429 									peerid_Init: void (), <./mp.c 92>
+  430 								datalink_Close: void (), <./datalink.c 1003>
+  431 									peerid_Init: 429
+  432 									fsm2initial: 97
+  433 									datalink_AuthReInit: void (), <./datalink.c 597>
+  434 										auth_StopTimer: void (), <./auth.c 432>
+  435 											timer_Stop: 51
+  436 										chap_ReInit: void (), <./chap.c 687>
+  437 											chap_Cleanup: void (), <./chap.c 342>
+  438 												close: <>
+  439 												kill: <>
+  440 												wait: <>
+  441 												log_Printf: 5
+  442 												strerror: <>
+  443 												WIFSIGNALED: <>
+  444 												WTERMSIG: <>
+  445 												WIFEXITED: <>
+  446 												WEXITSTATUS: <>
+  447 									datalink_DontHangup: 47
+  448 									datalink_StayDown: 48
+  449 									fsm_Close: 89
+  450 									datalink_ComeDown: void (), <./datalink.c 527>
+  451 										datalink_DontHangup: 47
+  452 										datalink_StayDown: 48
+  453 										physical_StopDeviceTimer: void (), <./physical.c 1100>
+  454 										datalink_NewState: void (), <./datalink.c 1279>
+  455 											log_Printf: 5
+  456 											datalink_State: const char * (), <./datalink.c 1271>
+  457 										physical_Offline: void (), <./physical.c 296>
+  458 											log_Printf: 5
+  459 										chat_Setup: int (), <./chat.c 570>
+  460 											strncpy: <>
+  461 											MakeArgs: int (), <./defs.c 302>
+  462 												strspn: <>
+  463 												findblank: char * (), <./defs.c 275>
+  464 													memmove: <>
+  465 													strlen: <>
+  466 													issep: <>
+  467 											VECSIZE: <>
+  468 											timer_Stop: 51
+  469 										log_Printf: 5
+  470 										datalink_HangupDone: void (), <./datalink.c 115>
+  471 											datalink_LoginDone: void (), <./datalink.c 211>
+  472 												chat_Finish: void (), <./chat.c 599>
+  473 													timer_Stop: 51
+  474 													free: <>
+  475 												datalink_NewState: 454
+  476 												physical_Raw: int (), <./physical.c 287>
+  477 												log_Printf: 5
+  478 												chat_Setup: 459
+  479 												physical_StopDeviceTimer: 453
+  480 												physical_Close: void (), <./physical.c 331>
+  481 													log_Printf: 5
+  482 													physical_StopDeviceTimer: 453
+  483 													memset: <>
+  484 													gettimeofday: <>
+  485 													snprintf: <>
+  486 													getpid: <>
+  487 													ID0logout: void (), <./id.c 218>
+  488 														ID0set0: 22
+  489 														pututxline: <>
+  490 														log_Printf: 5
+  491 														ID0setuser: 278
+  492 													tcgetpgrp: <>
+  493 													getpgrp: <>
+  494 													close: <>
+  495 													log_SetTtyCommandMode: 219
+  496 													throughput_stop: 208
+  497 													throughput_log: void (), <./throughput.c 134>
+  498 														throughput_uptime: int (), <./throughput.c 82>
+  499 															time: <>
+  500 														log_Printf: 5
+  501 														ctime: <>
+  502 													ID0kill: int (), <./id.c 254>
+  503 														ID0set0: 22
+  504 														kill: <>
+  505 														log_Printf: 5
+  506 														ID0setuser: 278
+  507 													bundle_setsid: 376
+  508 													ID0unlink: 418
+  509 													strerror: <>
+  510 													physical_Unlock: void (), <./physical.c 322>
+  511 														ID0uu_unlock: int (), <./id.c 193>
+  512 															ID0set0: 22
+  513 															uu_unlock: <>
+  514 															log_Printf: 5
+  515 															ID0setuser: 278
+  516 														log_Printf: 5
+  517 												datalink_HangupDone: 470
+  518 												hdlc_Init: void (), <./hdlc.c 99>
+  519 													memset: <>
+  520 												async_Setup: void (), <./async.c 66>
+  521 												lcp_Setup: void (), <./lcp.c 286>
+  522 													link2physical: <>
+  523 													IsEnabled: <>
+  524 													GenerateMagic: u_int32_t (), <./lcp.c 232>
+  525 														randinit: void (), <./defs.c 61>
+  526 															srandom: <>
+  527 															time: <>
+  528 															getpid: <>
+  529 															random: <>
+  530 														random: <>
+  531 													memcpy: <>
+  532 												ccp_Setup: void (), <./ccp.c 271>
+  533 												fsm_Up: 307
+  534 												fsm_Open: 313
+  535 											chat_Finish: 472
+  536 											physical_Close: 480
+  537 											log_Printf: 5
+  538 											strncpy: <>
+  539 											physical_SetMode: int (), <./physical.c 938>
+  540 												log_Printf: 5
+  541 												mode2Nam: const char * (), <./defs.c 101>
+  542 											bundle_LinksRemoved: void (), <./bundle.c 245>
+  543 												open: <>
+  544 												bundle_LinkAdded: void (), <./bundle.c 225>
+  545 													open: <>
+  546 													bundle_StartSessionTimer: void (), <./bundle.c 1237>
+  547 														timer_Stop: 51
+  548 														open: <>
+  549 														time: <>
+  550 														bundle_SessionTimeout: void (), <./bundle.c 1227>
+  551 															log_Printf: 5
+  552 															bundle_StopSessionTimer: 50
+  553 															bundle_Close: 45
+  554 														timer_Start: 102
+  555 													bundle_StartIdleTimer: void (), <./bundle.c 1171>
+  556 														timer_Stop: 51
+  557 														open: <>
+  558 														time: <>
+  559 														bundle_IdleTimeout: void (), <./bundle.c 1157>
+  560 															log_Printf: 5
+  561 															bundle_StopIdleTimer: 85
+  562 															bundle_Close: 45
+  563 														timer_Start: 102
+  564 												bundle_CalculateBandwidth: void (), <./bundle.c 1881>
+  565 													ccp_MTUOverhead: int (), <./ccp.c 315>
+  566 													physical_GetSpeed: unsigned (), <./physical.c 267>
+  567 													log_Printf: 5
+  568 													tun_configure: void (), <./tun.c 84>
+  569 														socket: <>
+  570 														log_Printf: 5
+  571 														strerror: <>
+  572 														sprintf: <>
+  573 														ioctl: <>
+  574 														close: <>
+  575 														memset: <>
+  576 														ID0ioctl: 293
+  577 													route_UpdateMTU: void (), <./route.c 470>
+  578 														log_Printf: 5
+  579 														sysctl: <>
+  580 														strerror: <>
+  581 														malloc: <>
+  582 														free: <>
+  583 														route_ParseHdr: 232
+  584 														log_IsKept: 6
+  585 														ncprange_setsa: 235
+  586 														Index2Nam: const char * (), <./route.c 199>
+  587 															free: <>
+  588 															sysctl: <>
+  589 															log_Printf: 5
+  590 															strerror: <>
+  591 															NumStr: const char * (), <./defs.c 332>
+  592 																snprintf: <>
+  593 															malloc: <>
+  594 															realloc: <>
+  595 															memset: <>
+  596 															memcpy: <>
+  597 															log_IsKept: 6
+  598 														ncprange_ntoa: 244
+  599 														rt_Update: void (), <./route.c 858>
+  600 															ID0socket: 21
+  601 															log_Printf: 5
+  602 															strerror: <>
+  603 															memset: <>
+  604 															getpid: <>
+  605 															memcpy_roundup: 264
+  606 															ID0write: 274
+  607 															ncprange_setsa: 235
+  608 															ncprange_ntoa: 244
+  609 															close: <>
+  610 												mp_CheckAutoloadTimer: void (), <./mp.c 216>
+  611 													throughput_destroy: void (), <./throughput.c 70>
+  612 														throughput_stop: 208
+  613 														free: <>
+  614 													throughput_init: void (), <./throughput.c 46>
+  615 														calloc: <>
+  616 														time: <>
+  617 														memset: <>
+  618 														throughput_stop: 208
+  619 													throughput_callback: void (), <./throughput.c 298>
+  620 													mp_UpDown: void (), <./mp.c 192>
+  621 														MAX: <>
+  622 														log_Printf: 5
+  623 														bundle_AutoAdjust: void (), <./bundle.c 1940>
+  624 															log_Printf: 5
+  625 															datalink_Up: void (), <./datalink.c 963>
+  626 																Enabled: <>
+  627 																bundle_Phase: <>
+  628 																bundle_NewPhase: 301
+  629 																datalink_NewState: 454
+  630 															mp_CheckAutoloadTimer: 610
+  631 															datalink_Close: 430
+  632 													bundle_WantAutoloadTimer: int (), <./bundle.c 1982>
+  633 													throughput_start: void (), <./throughput.c 196>
+  634 														timer_Stop: 51
+  635 														time: <>
+  636 														throughput_restart: void (), <./throughput.c 213>
+  637 															timer_Stop: 51
+  638 															throughput_sampler: void (), <./throughput.c 160>
+  639 																timer_Stop: 51
+  640 																throughput_uptime: 498
+  641 																time: <>
+  642 																timer_Start: 102
+  643 															timer_Start: 102
+  644 													mp_StopAutoloadTimer: 207
+  645 												bundle_StopSessionTimer: 50
+  646 												bundle_StopIdleTimer: 85
+  647 											datalink_StartDialTimer: int (), <./datalink.c 96>
+  648 												timer_Stop: 51
+  649 												random: <>
+  650 												datalink_OpenTimeout: void (), <./datalink.c 86>
+  651 													timer_Stop: 51
+  652 													log_Printf: 5
+  653 												timer_Start: 102
+  654 												log_Printf: 5
+  655 											cbcp_Down: 331
+  656 											datalink_NewState: 454
+  657 											bundle_Phase: <>
+  658 											bundle_NewPhase: 301
+  659 											bundle_LinkClosed: 218
+  660 											datalink_GetDialTimeout: int (), <./datalink.c 1470>
+  661 											bundle_Notify: void (), <./bundle.c 174>
+  662 												write: <>
+  663 												log_Printf: 5
+  664 												close: <>
+  665 												ex_desc: 43
+  666 							bundle_Destroy: void (), <./bundle.c 908>
+  667 								timer_Stop: 51
+  668 								mp_Down: 206
+  669 								iface_Clear: void (), <./iface.c 469>
+  670 									ncprange_family: <>
+  671 									ID0socket: 21
+  672 									log_Printf: 5
+  673 									strerror: <>
+  674 									iface_addr_Zap: int (), <./iface.c 201>
+  675 										ncprange_getsa: 257
+  676 										ncpaddr_getsa: 269
+  677 										ncprange_family: <>
+  678 										memset: <>
+  679 										strncpy: <>
+  680 										memcpy: <>
+  681 										ncpaddr_family: <>
+  682 										ID0ioctl: 293
+  683 										log_IsKept: 6
+  684 										snprintf: <>
+  685 										ncprange_ntoa: 244
+  686 										log_Printf: 5
+  687 										ncpaddr_ntoa: 166
+  688 										strerror: <>
+  689 									ncp_IfaceAddrDeleted: void (), <./ncp.c 192>
+  690 										ncprange_family: <>
+  691 										ipcp_IfaceAddrDeleted: void (), <./ipcp.c 858>
+  692 											Enabled: <>
+  693 											ipcp_proxyarp: int (), <./ipcp.c 620>
+  694 												ncpaddr_getip4: int (), <./ncpaddr.c 280>
+  695 												log_Printf: 5
+  696 												Enabled: <>
+  697 												ncprange_getip4mask: int (), <./ncpaddr.c 817>
+  698 												numaddresses: int (), <./ipcp.c 602>
+  699 													ntohl: <>
+  700 												ncprange_ntoa: 244
+  701 												htonl: <>
+  702 												ntohl: <>
+  703 											arp_ClearProxy: int (), <./arp.c 204>
+  704 												arp_ProxySub: int (), <./arp.c 100>
+  705 													memset: <>
+  706 													arp_EtherAddr: int (), <./arp.c 228>
+  707 														sysctl: <>
+  708 														log_Printf: 5
+  709 														strerror: <>
+  710 														malloc: <>
+  711 														free: <>
+  712 														log_IsKept: 6
+  713 														iface_ParseHdr: void (), <./iface.c 823>
+  714 															ROUNDUP: <>
+  715 														strncpy: <>
+  716 														inet_ntoa: <>
+  717 														memcpy: <>
+  718 													log_Printf: 5
+  719 													inet_ntoa: <>
+  720 													ID0socket: 21
+  721 													strerror: <>
+  722 													ID0write: 274
+  723 													close: <>
+  724 												memset: <>
+  725 												SET_SA_FAMILY: <>
+  726 												ID0ioctl: 293
+  727 												log_Printf: 5
+  728 												strerror: <>
+  729 									bcopy: <>
+  730 									close: <>
+  731 								bundle_DownInterface: 225
+  732 								radius_Destroy: void (), <./radius.c 795>
+  733 									log_Printf: 5
+  734 									timer_Stop: 51
+  735 									route_DeleteAll: void (), <./route.c 646>
+  736 										free: <>
+  737 									free: <>
+  738 									rad_close: <>
+  739 								datalink_Destroy: struct datalink (), <./datalink.c 936>
+  740 								ncp_Destroy: void (), <./ncp.c 127>
+  741 									ipcp_Destroy: void (), <./ipcp.c 500>
+  742 										throughput_destroy: 611
+  743 										free: <>
+  744 									ipv6cp_Destroy: void (), <./ipv6cp.c 302>
+  745 										throughput_destroy: 611
+  746 									free: <>
+  747 								close: <>
+  748 								bundle_UnlockTun: void (), <./bundle.c 688>
+  749 									snprintf: <>
+  750 									ID0unlink: 418
+  751 								bundle_Notify: 661
+  752 								iface_Destroy: void (), <./iface.c 714>
+  753 									ID0socket: 21
+  754 									log_Printf: 5
+  755 									strerror: <>
+  756 									strlcpy: <>
+  757 									ID0ioctl: 293
+  758 									iface_Free: void (), <./iface.c 705>
+  759 										free: <>
+  760 							log_Close: void (), <./log.c 307>
+  761 								closelog: <>
+  762 							exit: <>
+  763 					socket: <>
+  764 					log_Printf: 5
+  765 					ID0setuser: 278
+  766 				close: <>
+  767 		open: <>
+  768 		fprintf: <>
+  769 		dup: <>
+  770 		strrchr: <>
+  771 		log_Open: void (), <./log.c 294>
+  772 			openlog: <>
+  773 		LibAliasInit: <>
+  774 		ProcessArgs: int (), <./main.c 211>
+  775 			memset: <>
+  776 			Nam2mode: int (), <./defs.c 113>
+  777 				strlen: <>
+  778 				strncasecmp: <>
+  779 			strcmp: <>
+  780 			log_Printf: 5
+  781 			fprintf: <>
+  782 			strncmp: <>
+  783 			Usage: void (), <./main.c 191>
+  784 				fprintf: <>
+  785 				exit: <>
+  786 			atoi: <>
+  787 			exit: <>
+  788 		close: <>
+  789 		prompt_Create: struct prompt (), <./prompt.c 314>
+  790 		ID0init: void (), <./id.c 62>
+  791 			getuid: <>
+  792 			geteuid: <>
+  793 		ID0realuid: 414
+  794 		snprintf: <>
+  795 		stat: <>
+  796 		log_Printf: 5
+  797 		strlen: <>
+  798 		CheckLabel: void (), <./main.c 286>
+  799 			system_IsValid: const char * (), <./systems.c 427>
+  800 				strcmp: <>
+  801 				ID0realuid: 414
+  802 				ReadSystem: int (), <./systems.c 316>
+  803 					snprintf: <>
+  804 					ID0fopen: 387
+  805 					log_Printf: 5
+  806 					xgets: int (), <./systems.c 265>
+  807 						fgets: <>
+  808 						strlen: <>
+  809 					issep: <>
+  810 					strip: char * (), <./systems.c 246>
+  811 						strlen: <>
+  812 						issep: <>
+  813 					DecodeCtrlCommand: int (), <./systems.c 182>
+  814 						strncasecmp: <>
+  815 						issep: <>
+  816 						InterpretArg: const char * (), <./systems.c 69>
+  817 							issep: <>
+  818 							strchr: <>
+  819 							strncpy: <>
+  820 							isalnum: <>
+  821 							getenv: <>
+  822 							strlen: <>
+  823 							getpwuid: <>
+  824 							ID0realuid: 414
+  825 							getpwnam: <>
+  826 							endpwent: <>
+  827 						log_Printf: 5
+  828 					ReadSystem: 802
+  829 					fclose: <>
+  830 					GetLabel: char * (), <./systems.c 293>
+  831 						MakeArgs: 461
+  832 						strcmp: <>
+  833 						strlen: <>
+  834 						log_Printf: 5
+  835 					strcmp: <>
+  836 					strlen: <>
+  837 					command_Expand_Interpret: int (), <./command.c 1138>
+  838 						InterpretArg: 816
+  839 						strncpy: <>
+  840 						command_Interpret: int (), <./command.c 1150>
+  841 							strcspn: <>
+  842 							MakeArgs: 461
+  843 					strcasecmp: <>
+  844 					command_Run: void (), <./command.c 1187>
+  845 						log_IsKept: 6
+  846 						strncpy: <>
+  847 						strcat: <>
+  848 						strlen: <>
+  849 						arghidden: int (), <./command.c 1164>
+  850 							strncasecmp: <>
+  851 						log_Printf: 5
+  852 						FindExec: int (), <./command.c 1087>
+  853 							FindCommand: struct cmdtab (), <./command.c 1036>
+  854 							log_Printf: 5
+  855 							mkPrefix: const char * (), <./command.c 1068>
+  856 								strlen: <>
+  857 								strncpy: <>
+  858 							bundle2datalink: struct datalink (), <./bundle.c 1007>
+  859 			fprintf: <>
+  860 			log_Printf: 5
+  861 			log_Close: 760
+  862 			exit: <>
+  863 		prompt_Printf: 75
+  864 		mode2Nam: 541
+  865 		bundle_Create: struct bundle (), <./bundle.c 697>
+  866 		opt_enable: <>
+  867 		system_Select: int (), <./systems.c 477>
+  868 			ReadSystem: 802
+  869 		sig_signal: 60
+  870 		CloseSession: void (), <./main.c 144>
+  871 			log_Printf: 5
+  872 			Cleanup: void (), <./main.c 113>
+  873 				bundle_Close: 45
+  874 		CloseConnection: void (), <./main.c 134>
+  875 			sig_signal: 60
+  876 			log_Printf: 5
+  877 			bundle_Down: void (), <./bundle.c 442>
+  878 				datalink_Down: void (), <./datalink.c 1029>
+  879 					peerid_Init: 429
+  880 					fsm2initial: 97
+  881 					datalink_ComeDown: 450
+  882 			CloseConnection: 874
+  883 		signal: <>
+  884 		TerminalStop: void (), <./main.c 168>
+  885 			prompt_Suspend: void (), <./prompt.c 568>
+  886 				getpgrp: <>
+  887 				prompt_pgrp: pid_t (), <./prompt.c 506>
+  888 					tcgetpgrp: <>
+  889 				prompt_TtyOldMode: 35
+  890 				log_DeactivatePrompt: void (), <./log.c 116>
+  891 					LogSetMaskLocal: 39
+  892 			signal: <>
+  893 			TerminalCont: void (), <./main.c 161>
+  894 				signal: <>
+  895 				prompt_Continue: void (), <./prompt.c 550>
+  896 					timer_Stop: 51
+  897 					getpgrp: <>
+  898 					prompt_pgrp: 887
+  899 					prompt_TtyCommandMode: 221
+  900 					prompt_Required: <>
+  901 					log_ActivatePrompt: void (), <./log.c 99>
+  902 					prompt_TimedContinue: void (), <./prompt.c 544>
+  903 						prompt_Continue: 895
+  904 					timer_Start: 102
+  905 			raise: <>
+  906 		RestartServer: void (), <./main.c 184>
+  907 			server_Reopen: enum server_stat (), <./server.c 216>
+  908 		BringDownServer: void (), <./main.c 176>
+  909 			server_Close: 26
+  910 			log_Printf: 5
+  911 		bundle_SetLabel: void (), <./bundle.c 1343>
+  912 			strncpy: <>
+  913 		ncprange_family: <>
+  914 		AbortProgram: 25
+  915 		pipe: <>
+  916 		strerror: <>
+  917 		fork: <>
+  918 		KillChild: void (), <./main.c 153>
+  919 			signal: <>
+  920 			log_Printf: 5
+  921 			kill: <>
+  922 		read: <>
+  923 		ex_desc: 43
+  924 		bundle_ChangedPID: 398
+  925 		bundle_LockTun: 385
+  926 		prompt_Destroy: 31
+  927 		setsid: <>
+  928 		prompt_TtyInit: void (), <./prompt.c 418>
+  929 			fcntl: <>
+  930 			tcgetattr: <>
+  931 			tcsetattr: <>
+  932 		prompt_TtyCommandMode: 221
+  933 		prompt_Required: <>
+  934 		DoLoop: void (), <./main.c 540>
+  935 			mkfdset: fd_set * (), <./defs.c 385>
+  936 				malloc: <>
+  937 				howmany: <>
+  938 				getdtablesize: <>
+  939 			log_Printf: 5
+  940 			free: <>
+  941 			bundle_IsDead: 377
+  942 			bundle_CleanDatalinks: void (), <./bundle.c 1303>
+  943 				datalink_Destroy: struct datalink (), <./datalink.c 936>
+  944 				bundle_LinksRemoved: 542
+  945 			zerofdset: void (), <./defs.c 391>
+  946 				memset: <>
+  947 				howmany: <>
+  948 				getdtablesize: <>
+  949 			descriptor_UpdateSet: <>
+  950 			sig_Handle: int (), <./sig.c 95>
+  951 			select: <>
+  952 			strerror: <>
+  953 			log_IsKept: 6
+  954 			FD_ISSET: <>
+  955 			FD_CLR: <>
+  956 			bundle_Exception: int (), <./bundle.c 1846>
+  957 				datalink_Down: 878
+  958 			descriptor_IsSet: <>
+  959 			descriptor_Read: <>
+  960 			descriptor_Write: <>

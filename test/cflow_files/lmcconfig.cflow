@@ -1,0 +1,193 @@
+    1 	main: int (), <./lmcconfig.c 2149>
+    2 		NgMkSockNode: <>
+    3 		socket: <>
+    4 		fprintf: <>
+    5 		strerror: <>
+    6 		exit: <>
+    7 		ioctl_read_config: void (), <./lmcconfig.c 548>
+    8 			call_driver: void (), <./lmcconfig.c 221>
+    9 				strncpy: <>
+   10 				NgSendMsg: <>
+   11 				IOCPARM_LEN: <>
+   12 				NgRecvMsg: <>
+   13 				bcopy: <>
+   14 				fprintf: <>
+   15 				exit: <>
+   16 				ioctl: <>
+   17 				strerror: <>
+   18 				printf: <>
+   19 		ioctl_read_status: void (), <./lmcconfig.c 566>
+   20 			call_driver: 8
+   21 		getopt: <>
+   22 		printf: <>
+   23 		t1_cmd: void (), <./lmcconfig.c 1706>
+   24 			getopt: <>
+   25 			printf: <>
+   26 			write_framer: void (), <./lmcconfig.c 432>
+   27 				call_driver: 8
+   28 			read_framer: unsigned char (), <./lmcconfig.c 417>
+   29 				call_driver: 8
+   30 			strtoul: <>
+   31 			sleep: <>
+   32 			print_cable_len: void (), <./lmcconfig.c 898>
+   33 				printf: <>
+   34 			print_t1_dsu: void (), <./lmcconfig.c 1615>
+   35 				read_mii: u_int16_t (), <./lmcconfig.c 388>
+   36 					call_driver: 8
+   37 				read_framer: 28
+   38 				write_framer: 26
+   39 				print_format: void (), <./lmcconfig.c 781>
+   40 					printf: <>
+   41 				print_time_slots: void (), <./lmcconfig.c 914>
+   42 					printf: <>
+   43 				print_tx_clk_src: void (), <./lmcconfig.c 757>
+   44 					printf: <>
+   45 				print_tx_speed: void (), <./lmcconfig.c 624>
+   46 					printf: <>
+   47 				print_tx_pulse: void (), <./lmcconfig.c 992>
+   48 					printf: <>
+   49 					read_framer: 28
+   50 					print_tx_lbo: void (), <./lmcconfig.c 957>
+   51 						printf: <>
+   52 						read_framer: 28
+   53 				printf: <>
+   54 				vga_dbs: double (), <./lmcconfig.c 934>
+   55 				print_t1_bop: char * (), <./lmcconfig.c 1547>
+   56 				print_t1_snmp: void (), <./lmcconfig.c 1592>
+   57 					printf: <>
+   58 					print_far_report: void (), <./lmcconfig.c 1571>
+   59 						printf: <>
+   60 			print_format: 39
+   61 			print_time_slots: 41
+   62 			print_rx_gain: void (), <./lmcconfig.c 945>
+   63 				printf: <>
+   64 				vga_dbs: double (), <./lmcconfig.c 934>
+   65 				read_framer: 28
+   66 			ioctl_snmp_send: void (), <./lmcconfig.c 510>
+   67 				call_driver: 8
+   68 			print_test_pattern: void (), <./lmcconfig.c 1490>
+   69 				printf: <>
+   70 			print_tx_pulse: 47
+   71 			write_mii: void (), <./lmcconfig.c 403>
+   72 				call_driver: 8
+   73 			read_mii: 35
+   74 			exit: <>
+   75 		t3_cmd: void (), <./lmcconfig.c 1305>
+   76 			getopt: <>
+   77 			write_mii: 71
+   78 			read_mii: 35
+   79 			write_framer: 26
+   80 			read_framer: 28
+   81 			printf: <>
+   82 			strtoul: <>
+   83 			print_cable_len: 32
+   84 			print_t3_dsu: void (), <./lmcconfig.c 1256>
+   85 				read_mii: 35
+   86 				read_framer: 28
+   87 				printf: <>
+   88 				print_tx_speed: 45
+   89 				print_t3_bop: char * (), <./lmcconfig.c 1216>
+   90 				print_t3_snmp: void (), <./lmcconfig.c 1240>
+   91 					printf: <>
+   92 			print_format: 39
+   93 			ioctl_snmp_send: 66
+   94 			print_scrambler: void (), <./lmcconfig.c 920>
+   95 				printf: <>
+   96 			write_dac: void (), <./lmcconfig.c 459>
+   97 				call_driver: 8
+   98 			exit: <>
+   99 		print_tx_clk_src: 43
+  100 		strtoul: <>
+  101 		read_bios_rom: u_int8_t (), <./lmcconfig.c 359>
+  102 			call_driver: 8
+  103 		write_bios_rom: void (), <./lmcconfig.c 374>
+  104 			call_driver: 8
+  105 		print_crc_len: void (), <./lmcconfig.c 701>
+  106 			printf: <>
+  107 		print_dte_dce: void (), <./lmcconfig.c 820>
+  108 			printf: <>
+  109 		synth_freq: void (), <./lmcconfig.c 851>
+  110 			printf: <>
+  111 		write_synth: void (), <./lmcconfig.c 446>
+  112 			bcopy: <>
+  113 			call_driver: 8
+  114 		print_synth_freq: void (), <./lmcconfig.c 838>
+  115 			printf: <>
+  116 		usage: void (), <./lmcconfig.c 104>
+  117 			fprintf: <>
+  118 		print_loop_back: void (), <./lmcconfig.c 715>
+  119 			printf: <>
+  120 		read_mii: 35
+  121 		write_mii: 71
+  122 		read_pci_config: u_int32_t (), <./lmcconfig.c 272>
+  123 			call_driver: 8
+  124 		write_pci_config: void (), <./lmcconfig.c 287>
+  125 			call_driver: 8
+  126 		read_srom: u_int16_t (), <./lmcconfig.c 330>
+  127 			call_driver: 8
+  128 		init_srom: void (), <./lmcconfig.c 2116>
+  129 			read_mii: 35
+  130 			crc8: u_int8_t (), <./lmcconfig.c 2098>
+  131 			crc32: u_int32_t (), <./lmcconfig.c 2082>
+  132 			write_srom: void (), <./lmcconfig.c 345>
+  133 				call_driver: 8
+  134 			printf: <>
+  135 		read_csr: u_int32_t (), <./lmcconfig.c 301>
+  136 			call_driver: 8
+  137 		write_csr: void (), <./lmcconfig.c 316>
+  138 			call_driver: 8
+  139 		ioctl_reset_cntrs: void (), <./lmcconfig.c 536>
+  140 			call_driver: 8
+  141 		reset_xilinx: void (), <./lmcconfig.c 472>
+  142 			call_driver: 8
+  143 		load_xilinx_from_rom: void (), <./lmcconfig.c 484>
+  144 			call_driver: 8
+  145 		load_xilinx: void (), <./lmcconfig.c 2003>
+  146 			printf: <>
+  147 			fopen: <>
+  148 			perror: <>
+  149 			exit: <>
+  150 			malloc: <>
+  151 			bzero: <>
+  152 			fgetc: <>
+  153 			ungetc: <>
+  154 			read_hex: unsigned char (), <./lmcconfig.c 1988>
+  155 				fgetc: <>
+  156 			load_xilinx_from_file: void (), <./lmcconfig.c 496>
+  157 				call_driver: 8
+  158 		print_summary: void (), <./lmcconfig.c 1119>
+  159 			print_card_name: void (), <./lmcconfig.c 575>
+  160 				printf: <>
+  161 			print_card_type: void (), <./lmcconfig.c 581>
+  162 				printf: <>
+  163 			print_debug: void (), <./lmcconfig.c 630>
+  164 				printf: <>
+  165 			print_status: void (), <./lmcconfig.c 608>
+  166 				printf: <>
+  167 			print_tx_speed: 45
+  168 			print_line_prot: void (), <./lmcconfig.c 637>
+  169 				printf: <>
+  170 			print_crc_len: 105
+  171 			print_loop_back: 118
+  172 			print_tx_clk_src: 43
+  173 			print_hssi_sigs: void (), <./lmcconfig.c 1059>
+  174 				printf: <>
+  175 			print_events: void (), <./lmcconfig.c 1075>
+  176 				time: <>
+  177 				printf: <>
+  178 				ctime: <>
+  179 			print_format: 39
+  180 			print_cable_len: 32
+  181 			print_scrambler: 94
+  182 			print_dte_dce: 107
+  183 			print_synth_freq: 114
+  184 			print_cable_type: void (), <./lmcconfig.c 904>
+  185 				printf: <>
+  186 			print_ssi_sigs: void (), <./lmcconfig.c 1040>
+  187 				printf: <>
+  188 			print_time_slots: 41
+  189 			print_tx_pulse: 47
+  190 			print_rx_gain: 62
+  191 			printf: <>
+  192 		ioctl_write_config: void (), <./lmcconfig.c 557>
+  193 			call_driver: 8

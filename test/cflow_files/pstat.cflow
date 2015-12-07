@@ -1,0 +1,81 @@
+    1 	main: int (), <./pstat.c 114>
+    2 		strrchr: <>
+    3 		strcmp: <>
+    4 		getopt: <>
+    5 		setenv: <>
+    6 		usage: void (), <./pstat.c 216>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		strdup: <>
+   10 		kvm_openfiles: <>
+   11 		errx: <>
+   12 		kvm_nlist: <>
+   13 		kvm_geterr: <>
+   14 		warnx: <>
+   15 		exit: <>
+   16 		filemode: void (), <./pstat.c 367>
+   17 			kvm_read: <>
+   18 			errx: <>
+   19 			kvm_geterr: <>
+   20 			sysctlbyname: <>
+   21 			err: <>
+   22 			printf: <>
+   23 			getfiles: int (), <./pstat.c 427>
+   24 				errx: <>
+   25 				sysctl: <>
+   26 				warn: <>
+   27 				malloc: <>
+   28 			free: <>
+   29 		ttymode: void (), <./pstat.c 289>
+   30 			ttymode_kvm: void (), <./pstat.c 234>
+   31 				TAILQ_HEAD: <>
+   32 				printf: <>
+   33 				bzero: <>
+   34 				kvm_read: <>
+   35 				errx: <>
+   36 				kvm_geterr: <>
+   37 				TAILQ_FIRST: <>
+   38 				ttyprt: void (), <./pstat.c 339>
+   39 					errx: <>
+   40 					devname: <>
+   41 					printf: <>
+   42 					MIN: <>
+   43 					putchar: <>
+   44 				TAILQ_NEXT: <>
+   45 			ttymode_sysctl: void (), <./pstat.c 267>
+   46 				printf: <>
+   47 				malloc: <>
+   48 				err: <>
+   49 				sysctlbyname: <>
+   50 				realloc: <>
+   51 				ttyprt: 38
+   52 		swapmode: void (), <./pstat.c 591>
+   53 			swapmode_kvm: void (), <./pstat.c 541>
+   54 				kvm_getswapinfo: <>
+   55 				print_swap_header: void (), <./pstat.c 468>
+   56 					getbsize: <>
+   57 					printf: <>
+   58 				print_swap: void (), <./pstat.c 509>
+   59 					print_swap_line: void (), <./pstat.c 482>
+   60 						getpagesize: <>
+   61 						getbsize: <>
+   62 						printf: <>
+   63 						CONVERT: <>
+   64 						humanize_number: <>
+   65 						CONVERT_BLOCKS: <>
+   66 				print_swap_total: void (), <./pstat.c 522>
+   67 					getpagesize: <>
+   68 					getbsize: <>
+   69 					printf: <>
+   70 					CONVERT: <>
+   71 					print_swap_line: 59
+   72 			swapmode_sysctl: void (), <./pstat.c 556>
+   73 				print_swap_header: 55
+   74 				sysctlnametomib: <>
+   75 				err: <>
+   76 				sysctl: <>
+   77 				errx: <>
+   78 				snprintf: <>
+   79 				devname: <>
+   80 				print_swap: 58
+   81 				print_swap_total: 66

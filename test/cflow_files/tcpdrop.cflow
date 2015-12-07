@@ -1,0 +1,30 @@
+    1 	main: int (), <./tcpdrop.c 67>
+    2 		getopt: <>
+    3 		usage: void (), <./tcpdrop.c 347>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		tcpdropall: bool (), <./tcpdrop.c 205>
+    7 			getxpcblist: struct xinpgen (), <./tcpdrop.c 136>
+    8 			XINP_NEXT: <>
+    9 			tcpdropconn: bool (), <./tcpdrop.c 303>
+   10 				memset: <>
+   11 				memcpy: <>
+   12 				tcpdrop: bool (), <./tcpdrop.c 174>
+   13 					memcpy: <>
+   14 					sockinfo: void (), <./tcpdrop.c 162>
+   15 						getnameinfo: <>
+   16 						err: <>
+   17 					printf: <>
+   18 					sysctlbyname: <>
+   19 					warn: <>
+   20 			free: <>
+   21 		exit: <>
+   22 		findport: char * (), <./tcpdrop.c 118>
+   23 			strrchr: <>
+   24 		tcpdropbyname: bool (), <./tcpdrop.c 248>
+   25 			getaddrinfo: <>
+   26 			errx: <>
+   27 			gai_strerror: <>
+   28 			freeaddrinfo: <>
+   29 			tcpdrop: 12
+   30 			warnx: <>

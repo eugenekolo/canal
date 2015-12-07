@@ -1,0 +1,176 @@
+    1 	main: int (), <./ndp.c 159>
+    2 		getpid: <>
+    3 		gmt2local: <>
+    4 		getopt: <>
+    5 		usage: void (), <./ndp.c 822>
+    6 			printf: <>
+    7 			exit: <>
+    8 		exit: <>
+    9 		file: int (), <./ndp.c 311>
+   10 			fopen: <>
+   11 			err: <>
+   12 			fgets: <>
+   13 			strchr: <>
+   14 			isblank: <>
+   15 			sscanf: <>
+   16 			warnx: <>
+   17 			set: int (), <./ndp.c 382>
+   18 				getsocket: void (), <./ndp.c 346>
+   19 					socket: <>
+   20 					err: <>
+   21 				bzero: <>
+   22 				getaddrinfo: <>
+   23 				fprintf: <>
+   24 				gai_strerror: <>
+   25 				LLADDR: <>
+   26 				ndp_ether_aton: int (), <./ndp.c 806>
+   27 					sscanf: <>
+   28 					fprintf: <>
+   29 				strncmp: <>
+   30 				gettimeofday: <>
+   31 				rtmsg: int (), <./ndp.c 838>
+   32 					bzero: <>
+   33 					fprintf: <>
+   34 					exit: <>
+   35 					NEXTADDR: <>
+   36 					memset: <>
+   37 					write: <>
+   38 					err: <>
+   39 					read: <>
+   40 					strerror: <>
+   41 				errx: <>
+   42 				ALIGN: <>
+   43 				IN6_ARE_ADDR_EQUAL: <>
+   44 				printf: <>
+   45 			fclose: <>
+   46 		atoi: <>
+   47 		dump: void (), <./ndp.c 557>
+   48 			printf: <>
+   49 			sysctl: <>
+   50 			err: <>
+   51 			malloc: <>
+   52 			ALIGN: <>
+   53 			IN6_ARE_ADDR_EQUAL: <>
+   54 			IN6_IS_ADDR_MULTICAST: <>
+   55 			IN6_IS_ADDR_LINKLOCAL: <>
+   56 			IN6_IS_ADDR_MC_LINKLOCAL: <>
+   57 			getnameinfo: <>
+   58 			delete: int (), <./ndp.c 489>
+   59 				getsocket: 18
+   60 				bzero: <>
+   61 				getaddrinfo: <>
+   62 				fprintf: <>
+   63 				gai_strerror: <>
+   64 				rtmsg: 31
+   65 				errx: <>
+   66 				ALIGN: <>
+   67 				IN6_ARE_ADDR_EQUAL: <>
+   68 				delete: 58
+   69 				printf: <>
+   70 				NEXTADDR: <>
+   71 				getnameinfo: <>
+   72 			gettimeofday: <>
+   73 			ts_print: void (), <./ndp.c 1371>
+   74 				printf: <>
+   75 			strlen: <>
+   76 			ether_str: char * (), <./ndp.c 789>
+   77 				strlcpy: <>
+   78 				ether_ntoa: <>
+   79 				LLADDR: <>
+   80 				snprintf: <>
+   81 				link_ntoa: <>
+   82 			if_indextoname: <>
+   83 			getnbrinfo: struct in6_nbrinfo (), <./ndp.c 766>
+   84 			sec2str: char * (), <./ndp.c 1326>
+   85 				snprintf: <>
+   86 			warnx: <>
+   87 			snprintf: <>
+   88 			IN6_IS_ADDR_UNSPECIFIED: <>
+   89 			free: <>
+   90 			fflush: <>
+   91 			sleep: <>
+   92 		delete: 58
+   93 		strcmp: <>
+   94 		if_nametoindex: <>
+   95 		setdefif: void (), <./ndp.c 1273>
+   96 			strcasecmp: <>
+   97 			if_nametoindex: <>
+   98 			err: <>
+   99 			socket: <>
+  100 			strlcpy: <>
+  101 			ioctl: <>
+  102 			close: <>
+  103 		errx: <>
+  104 		getdefif: void (), <./ndp.c 1298>
+  105 			socket: <>
+  106 			err: <>
+  107 			memset: <>
+  108 			strlcpy: <>
+  109 			ioctl: <>
+  110 			printf: <>
+  111 			if_indextoname: <>
+  112 			close: <>
+  113 		plist: void (), <./ndp.c 1115>
+  114 			sysctl: <>
+  115 			err: <>
+  116 			malloc: <>
+  117 			getnameinfo: <>
+  118 			strlcpy: <>
+  119 			printf: <>
+  120 			if_indextoname: <>
+  121 			gettimeofday: <>
+  122 			sec2str: 84
+  123 			getnbrinfo: struct in6_nbrinfo (), <./ndp.c 766>
+  124 			free: <>
+  125 		ifinfo: void (), <./ndp.c 903>
+  126 			socket: <>
+  127 			err: <>
+  128 			bzero: <>
+  129 			strlcpy: <>
+  130 			ioctl: <>
+  131 			SETFLAG: <>
+  132 			SETVALUE: <>
+  133 			errx: <>
+  134 			printf: <>
+  135 			memset: <>
+  136 			memcmp: <>
+  137 			putc: <>
+  138 			close: <>
+  139 		rtrlist: void (), <./ndp.c 1063>
+  140 			sysctl: <>
+  141 			err: <>
+  142 			malloc: <>
+  143 			getnameinfo: <>
+  144 			strlcpy: <>
+  145 			printf: <>
+  146 			if_indextoname: <>
+  147 			gettimeofday: <>
+  148 			sec2str: 84
+  149 			free: <>
+  150 		set: 17
+  151 		harmonize_rtr: void (), <./ndp.c 1257>
+  152 			socket: <>
+  153 			err: <>
+  154 			strlcpy: <>
+  155 			ioctl: <>
+  156 			close: <>
+  157 		pfx_flush: void (), <./ndp.c 1229>
+  158 			socket: <>
+  159 			err: <>
+  160 			strlcpy: <>
+  161 			ioctl: <>
+  162 		rtr_flush: void (), <./ndp.c 1242>
+  163 			socket: <>
+  164 			err: <>
+  165 			strlcpy: <>
+  166 			ioctl: <>
+  167 			close: <>
+  168 		get: void (), <./ndp.c 457>
+  169 			bzero: <>
+  170 			getaddrinfo: <>
+  171 			fprintf: <>
+  172 			gai_strerror: <>
+  173 			dump: 47
+  174 			getnameinfo: <>
+  175 			printf: <>
+  176 			exit: <>

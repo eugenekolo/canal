@@ -1,0 +1,265 @@
+    1 	main: int (), <./acpidump/acpidump.c 55>
+    2 		usage: void (), <./acpidb/acpidb.c 495>
+    3 			printf: <>
+    4 			exit: <>
+    5 		aml_simulation_regload: void (), <./acpidb/acpidb.c 221>
+    6 			fopen: <>
+    7 			fgets: <>
+    8 			strtoq: <>
+    9 			aml_simulate_regcontent_write: int (), <./acpidb/acpidb.c 170>
+   10 				aml_simulation_init: void (), <./acpidb/acpidb.c 125>
+   11 					TAILQ_INIT: <>
+   12 					aml_simulation_regload: 5
+   13 				TAILQ_FOREACH: <>
+   14 				aml_simulate_regcontent_add: int (), <./acpidb/acpidb.c 134>
+   15 					malloc: <>
+   16 					TAILQ_INSERT_TAIL: <>
+   17 			fclose: <>
+   18 		load_dsdt: int (), <./acpidb/acpidb.c 381>
+   19 			open: <>
+   20 			perror: <>
+   21 			fstat: <>
+   22 			close: <>
+   23 			mmap: <>
+   24 			AcpiInitializeSubsystem: <>
+   25 			strncmp: <>
+   26 			strncpy: <>
+   27 			snprintf: <>
+   28 			write: <>
+   29 			AcpiInstallAddressSpaceHandler: <>
+   30 			fprintf: <>
+   31 			AcpiDbGetTableFromFile: <>
+   32 			AcpiInitializeDebugger: <>
+   33 			AcpiDbUserCommands: <>
+   34 			strcmp: <>
+   35 			unlink: <>
+   36 		aml_simulation_regdump: void (), <./acpidb/acpidb.c 263>
+   37 			fopen: <>
+   38 			warn: <>
+   39 			TAILQ_EMPTY: <>
+   40 			TAILQ_FIRST: <>
+   41 			fprintf: <>
+   42 			TAILQ_REMOVE: <>
+   43 			free: <>
+   44 			fclose: <>
+   45 			TAILQ_INIT: <>
+   46 		usage: void (), <./acpiconf/acpiconf.c 197>
+   47 			printf: <>
+   48 			exit: <>
+   49 		acpi_init: void (), <./acpiconf/acpiconf.c 48>
+   50 			open: <>
+   51 			err: <>
+   52 		getopt: <>
+   53 		acpi_battinfo: int (), <./acpiconf/acpiconf.c 85>
+   54 			err: <>
+   55 			ioctl: <>
+   56 			printf: <>
+   57 		atoi: <>
+   58 		acpi_sleep_ack: void (), <./acpiconf/acpiconf.c 71>
+   59 			ioctl: <>
+   60 			err: <>
+   61 		errx: <>
+   62 		acpi_sleep: void (), <./acpiconf/acpiconf.c 59>
+   63 			ioctl: <>
+   64 			err: <>
+   65 		close: <>
+   66 		exit: <>
+   67 		usage: void (), <./acpidump/acpidump.c 44>
+   68 			fprintf: <>
+   69 			exit: <>
+   70 		warnx: <>
+   71 		dsdt_load_file: ACPI_TABLE_HEADER * (), <./acpidump/acpi_user.c 198>
+   72 			open: <>
+   73 			errx: <>
+   74 			LIST_INIT: <>
+   75 			fstat: <>
+   76 			mmap: <>
+   77 			strncmp: <>
+   78 			acpi_checksum: int (), <./acpidump/acpi.c 1286>
+   79 		sdt_load_devmem: ACPI_TABLE_HEADER * (), <./acpidump/acpi.c 1381>
+   80 			acpi_find_rsd_ptr: ACPI_TABLE_RSDP * (), <./acpidump/acpi_user.c 163>
+   81 				acpi_user_init: void (), <./acpidump/acpi_user.c 59>
+   82 					open: <>
+   83 					err: <>
+   84 					LIST_INIT: <>
+   85 				kenv: <>
+   86 				strtoul: <>
+   87 				sysctlbyname: <>
+   88 				acpi_get_rsdp: ACPI_TABLE_RSDP * (), <./acpidump/acpi_user.c 98>
+   89 					pread: <>
+   90 					memcmp: <>
+   91 					acpi_checksum: 78
+   92 					acpi_map_physical: void * (), <./acpidump/acpi_user.c 189>
+   93 						acpi_user_find_mapping: struct acpi_user_mapping (), <./acpidump/acpi_user.c 71>
+   94 				acpi_scan_rsd_ptr: ACPI_TABLE_RSDP * (), <./acpidump/acpi_user.c 130>
+   95 					pread: <>
+   96 					acpi_get_rsdp: 88
+   97 			errx: <>
+   98 			acpi_print_rsd_ptr: void (), <./acpidump/acpi.c 1310>
+   99 				printf: <>
+  100 				acpi_print_string: void (), <./acpidump/acpi.c 152>
+  101 					putchar: <>
+  102 			acpi_map_sdt: ACPI_TABLE_HEADER * (), <./acpidump/acpi.c 1300>
+  103 				acpi_map_physical: 92
+  104 			memcmp: <>
+  105 			acpi_checksum: 78
+  106 		sdt_print_all: void (), <./acpidump/acpi.c 1523>
+  107 			acpi_handle_rsdt: void (), <./acpidump/acpi.c 1329>
+  108 				acpi_print_rsdt: void (), <./acpidump/acpi.c 1078>
+  109 					printf: <>
+  110 					acpi_print_sdt: void (), <./acpidump/acpi.c 1061>
+  111 						printf: <>
+  112 						acpi_print_string: 100
+  113 					le32toh: <>
+  114 					le64toh: <>
+  115 				le32toh: <>
+  116 				le64toh: <>
+  117 				acpi_map_sdt: 102
+  118 				acpi_checksum: 78
+  119 				warnx: <>
+  120 				memcmp: <>
+  121 				acpi_handle_fadt: void (), <./acpidump/acpi.c 234>
+  122 					acpi_print_fadt: void (), <./acpidump/acpi.c 1109>
+  123 						printf: <>
+  124 						acpi_print_sdt: 110
+  125 						PRINTFLAG: <>
+  126 						PRINTFLAG_END: <>
+  127 						acpi_print_gas: void (), <./acpidump/acpi.c 167>
+  128 							printf: <>
+  129 						acpi_get_fadt_revision: int (), <./acpidump/acpi.c 210>
+  130 					acpi_get_fadt_revision: 129
+  131 					acpi_map_sdt: 102
+  132 					memcmp: <>
+  133 					errx: <>
+  134 					acpi_print_facs: void (), <./acpidump/acpi.c 1248>
+  135 						printf: <>
+  136 					acpi_checksum: 78
+  137 					acpi_print_dsdt: void (), <./acpidump/acpi.c 1278>
+  138 						printf: <>
+  139 						acpi_print_sdt: 110
+  140 				acpi_handle_madt: void (), <./acpidump/acpi.c 471>
+  141 					printf: <>
+  142 					acpi_print_sdt: 110
+  143 					acpi_walk_subtables: void (), <./acpidump/acpi.c 263>
+  144 						printf: <>
+  145 					acpi_print_madt: void (), <./acpidump/acpi.c 383>
+  146 						printf: <>
+  147 						acpi_print_cpu: void (), <./acpidump/acpi.c 280>
+  148 							printf: <>
+  149 						acpi_print_local_apic: void (), <./acpidump/acpi.c 301>
+  150 							printf: <>
+  151 						acpi_print_io_apic: void (), <./acpidump/acpi.c 314>
+  152 							printf: <>
+  153 						acpi_print_intr: void (), <./acpidump/acpi.c 359>
+  154 							printf: <>
+  155 							acpi_print_mps_flags: void (), <./acpidump/acpi.c 323>
+  156 								printf: <>
+  157 						acpi_print_local_nmi: void (), <./acpidump/acpi.c 367>
+  158 							printf: <>
+  159 							acpi_print_mps_flags: 155
+  160 						acpi_print_cpu_uid: void (), <./acpidump/acpi.c 291>
+  161 							printf: <>
+  162 				acpi_handle_hpet: void (), <./acpidump/acpi.c 488>
+  163 					printf: <>
+  164 					acpi_print_sdt: 110
+  165 					acpi_print_gas: 127
+  166 				acpi_handle_ecdt: void (), <./acpidump/acpi.c 515>
+  167 					printf: <>
+  168 					acpi_print_sdt: 110
+  169 					acpi_print_gas: 127
+  170 				acpi_handle_mcfg: void (), <./acpidump/acpi.c 533>
+  171 					printf: <>
+  172 					acpi_print_sdt: 110
+  173 				acpi_handle_slit: void (), <./acpidump/acpi.c 556>
+  174 					printf: <>
+  175 					acpi_print_sdt: 110
+  176 				acpi_handle_srat: void (), <./acpidump/acpi.c 1048>
+  177 					printf: <>
+  178 					acpi_print_sdt: 110
+  179 					acpi_walk_subtables: 143
+  180 					acpi_print_srat: void (), <./acpidump/acpi.c 1018>
+  181 						printf: <>
+  182 						acpi_print_srat_cpu: void (), <./acpidump/acpi.c 583>
+  183 							printf: <>
+  184 						acpi_print_srat_memory: void (), <./acpidump/acpi.c 997>
+  185 							printf: <>
+  186 				acpi_handle_tcpa: void (), <./acpidump/acpi.c 682>
+  187 					printf: <>
+  188 					acpi_print_sdt: 110
+  189 					acpi_map_physical: 92
+  190 					isprint: <>
+  191 					acpi_print_tcpa: void (), <./acpidump/acpi.c 665>
+  192 						acpi_tcpa_evname: char * (), <./acpidump/acpi.c 598>
+  193 							asprintf: <>
+  194 							calloc: <>
+  195 							memcpy: <>
+  196 						printf: <>
+  197 						free: <>
+  198 				acpi_handle_dmar: void (), <./acpidump/acpi.c 963>
+  199 					printf: <>
+  200 					acpi_print_sdt: 110
+  201 					PRINTFLAG: <>
+  202 					PRINTFLAG_END: <>
+  203 					acpi_handle_dmar_remapping_structure: int (), <./acpidump/acpi.c 926>
+  204 						acpi_handle_dmar_drhd: void (), <./acpidump/acpi.c 822>
+  205 							printf: <>
+  206 							PRINTFLAG: <>
+  207 							PRINTFLAG_END: <>
+  208 							acpi_handle_dmar_devscope: int (), <./acpidump/acpi.c 785>
+  209 								printf: <>
+  210 								devscope_type2str: const char * (), <./acpidump/acpi.c 765>
+  211 									snprintf: <>
+  212 						acpi_handle_dmar_rmrr: void (), <./acpidump/acpi.c 856>
+  213 							printf: <>
+  214 							acpi_handle_dmar_devscope: 208
+  215 						acpi_handle_dmar_atsr: void (), <./acpidump/acpi.c 882>
+  216 							printf: <>
+  217 							PRINTFLAG: <>
+  218 							PRINTFLAG_END: <>
+  219 							acpi_handle_dmar_devscope: 208
+  220 						acpi_handle_dmar_rhsa: void (), <./acpidump/acpi.c 915>
+  221 							printf: <>
+  222 						printf: <>
+  223 				printf: <>
+  224 				acpi_print_sdt: 110
+  225 		sdt_from_rsdt: ACPI_TABLE_HEADER * (), <./acpidump/acpi.c 1530>
+  226 			le32toh: <>
+  227 			le64toh: <>
+  228 			acpi_map_sdt: 102
+  229 			memcmp: <>
+  230 			strlen: <>
+  231 			acpi_checksum: 78
+  232 			errx: <>
+  233 		dsdt_from_fadt: ACPI_TABLE_HEADER * (), <./acpidump/acpi.c 1565>
+  234 			acpi_get_fadt_revision: 129
+  235 			acpi_map_sdt: 102
+  236 			acpi_checksum: 78
+  237 			errx: <>
+  238 		dsdt_save_file: void (), <./acpidump/acpi.c 1450>
+  239 			assert: <>
+  240 			open: <>
+  241 			perror: <>
+  242 			write_dsdt: int (), <./acpidump/acpi.c 1410>
+  243 				acpi_checksum: 78
+  244 				sdt_from_rsdt: 225
+  245 				write: <>
+  246 			close: <>
+  247 		aml_disassemble: void (), <./acpidump/acpi.c 1467>
+  248 			getenv: <>
+  249 			strncpy: <>
+  250 			realpath: <>
+  251 			perror: <>
+  252 			strncat: <>
+  253 			strlen: <>
+  254 			mkstemp: <>
+  255 			write_dsdt: 242
+  256 			close: <>
+  257 			fork: <>
+  258 			execl: <>
+  259 			err: <>
+  260 			wait: <>
+  261 			unlink: <>
+  262 			fopen: <>
+  263 			fread: <>
+  264 			fwrite: <>
+  265 			fclose: <>

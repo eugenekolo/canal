@@ -1,0 +1,132 @@
+    1 	main: int (), <./yp_main.c 448>
+    2 		memset: <>
+    3 		SLIST_INIT: <>
+    4 		getopt: <>
+    5 		malloc: <>
+    6 		err: <>
+    7 		SLIST_INSERT_HEAD: <>
+    8 		usage: void (), <./yp_main.c 216>
+    9 			fprintf: <>
+   10 			exit: <>
+   11 		SLIST_EMPTY: <>
+   12 		load_securenets: void (), <./yp_access.c 110>
+   13 			free: <>
+   14 			snprintf: <>
+   15 			fopen: <>
+   16 			malloc: <>
+   17 			yp_error: void (), <./yp_error.c 67>
+   18 				va_start: <>
+   19 				va_end: <>
+   20 			strerror: <>
+   21 			exit: <>
+   22 			fgets: <>
+   23 			strspn: <>
+   24 			strlen: <>
+   25 			sscanf: <>
+   26 			inet_aton: <>
+   27 			fclose: <>
+   28 		yp_init_resolver: int (), <./yp_dnslookup.c 129>
+   29 			TAILQ_INIT: <>
+   30 			res_init: <>
+   31 			yp_error: 17
+   32 			socket: <>
+   33 			fcntl: <>
+   34 		yp_init_dbs: void (), <./yp_dblookup.c 91>
+   35 			TAILQ_INIT: <>
+   36 		setnetconfig: <>
+   37 		openlog: <>
+   38 		daemon: <>
+   39 		unregister: void (), <./yp_main.c 181>
+   40 			svc_unreg: <>
+   41 		madvise: <>
+   42 		strerror: <>
+   43 		getnetconfig: <>
+   44 		create_service: int (), <./yp_main.c 253>
+   45 			SLIST_INIT: <>
+   46 			memset: <>
+   47 			SLIST_FOREACH: <>
+   48 			getaddrinfo: <>
+   49 			gai_strerror: <>
+   50 			strerror: <>
+   51 			freeaddrinfo: <>
+   52 			bindresvport_sa: <>
+   53 			bind: <>
+   54 			close: <>
+   55 			listen: <>
+   56 			malloc: <>
+   57 			memcpy: <>
+   58 			SLIST_INSERT_HEAD: <>
+   59 			strncmp: <>
+   60 			getsockname: <>
+   61 			free: <>
+   62 			getnameinfo: <>
+   63 			svc_dg_create: <>
+   64 			svc_vc_create: <>
+   65 			svc_reg: <>
+   66 			svc_destroy: <>
+   67 			SLIST_EMPTY: <>
+   68 			SLIST_REMOVE_HEAD: <>
+   69 			rpcb_set: <>
+   70 		endnetconfig: <>
+   71 		exit: <>
+   72 		SLIST_REMOVE_HEAD: <>
+   73 		signal: <>
+   74 		closedown: void (), <./yp_main.c 223>
+   75 			unregister: 39
+   76 			exit: <>
+   77 			getdtablesize: <>
+   78 			FD_ISSET: <>
+   79 			signal: <>
+   80 			closedown: 74
+   81 			alarm: <>
+   82 		alarm: <>
+   83 		reaper: void (), <./yp_main.c 188>
+   84 			load_securenets: 12
+   85 			yp_flush_all: void (), <./yp_dblookup.c 182>
+   86 				TAILQ_EMPTY: <>
+   87 				TAILQ_FIRST: <>
+   88 				TAILQ_REMOVE: <>
+   89 				yp_free_qent: void (), <./yp_dblookup.c 128>
+   90 					free: <>
+   91 			wait3: <>
+   92 			unregister: 39
+   93 			exit: <>
+   94 		yp_svc_run: void (), <./yp_main.c 130>
+   95 			getpid: <>
+   96 			FD_SET: <>
+   97 			select: <>
+   98 			warn: <>
+   99 			yp_prune_dnsq: void (), <./yp_dnslookup.c 318>
+  100 				TAILQ_FIRST: <>
+  101 				TAILQ_NEXT: <>
+  102 				TAILQ_REMOVE: <>
+  103 				free: <>
+  104 			FD_ISSET: <>
+  105 			yp_run_dnsq: void (), <./yp_dnslookup.c 346>
+  106 				yp_error: 17
+  107 				bzero: <>
+  108 				recvfrom: <>
+  109 				strerror: <>
+  110 				yp_find_dnsqent: struct circleq_dnsentry (), <./yp_dnslookup.c 201>
+  111 				ntohs: <>
+  112 				inet_ntoa: <>
+  113 				yp_send_dns_reply: void (), <./yp_dnslookup.c 222>
+  114 					bzero: <>
+  115 					strlen: <>
+  116 					stat: <>
+  117 					yp_error: 17
+  118 					inet_ntoa: <>
+  119 					svcudp_set_xid: unsigned long (), <./yp_svc_udp.c 60>
+  120 						su_data: <>
+  121 					svc_sendreply: <>
+  122 				parse: char * (), <./yp_dnslookup.c 68>
+  123 					inet_ntop: <>
+  124 					strlen: <>
+  125 					bzero: <>
+  126 					snprintf: <>
+  127 					strcat: <>
+  128 				TAILQ_REMOVE: <>
+  129 				free: <>
+  130 				yp_prune_dnsq: 99
+  131 			FD_CLR: <>
+  132 			svc_getreqset: <>

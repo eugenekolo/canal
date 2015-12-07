@@ -1,0 +1,302 @@
+    1 	main: int (), <./iscsid.c 487>
+    2 		getopt: <>
+    3 		atoi: <>
+    4 		usage: void (), <./iscsid.c 63>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		log_init: void (), <./log.c 51>
+    8 			openlog: <>
+    9 			getprogname: <>
+   10 		pidfile_open: <>
+   11 		log_errx: void (), <./log.c 156>
+   12 			va_start: <>
+   13 			log_common: void (), <./log.c 87>
+   14 				vsnprintf: <>
+   15 				fprintf: <>
+   16 				getprogname: <>
+   17 				syslog: <>
+   18 				exit: <>
+   19 				strnvis: <>
+   20 				strerror: <>
+   21 			va_end: <>
+   22 			exit: <>
+   23 		log_err: void (), <./log.c 144>
+   24 			va_start: <>
+   25 			log_common: 13
+   26 			va_end: <>
+   27 			exit: <>
+   28 		open: <>
+   29 		kldload: <>
+   30 		daemon: <>
+   31 		log_warn: void (), <./log.c 168>
+   32 			va_start: <>
+   33 			log_common: 13
+   34 			va_end: <>
+   35 		pidfile_remove: <>
+   36 		exit: <>
+   37 		pidfile_write: <>
+   38 		register_sigchld: void (), <./iscsid.c 414>
+   39 			bzero: <>
+   40 			sigchld_handler: void (), <./iscsid.c 403>
+   41 			sigfillset: <>
+   42 			sigaction: <>
+   43 			log_err: 23
+   44 		log_debugx: void (), <./log.c 188>
+   45 			va_start: <>
+   46 			log_common: 13
+   47 			va_end: <>
+   48 		memset: <>
+   49 		ioctl: <>
+   50 		wait_for_children: int (), <./iscsid.c 455>
+   51 			wait4: <>
+   52 			WIFSIGNALED: <>
+   53 			log_warnx: void (), <./log.c 178>
+   54 				va_start: <>
+   55 				log_common: 13
+   56 				va_end: <>
+   57 			WTERMSIG: <>
+   58 			WEXITSTATUS: <>
+   59 			log_debugx: 44
+   60 		assert: <>
+   61 		fork: <>
+   62 		pidfile_close: <>
+   63 		handle_request: void (), <./iscsid.c 429>
+   64 			log_set_peer_addr: void (), <./log.c 74>
+   65 				log_errx: 11
+   66 				checked_strdup: char * (), <./iscsid.c 71>
+   67 					strdup: <>
+   68 					log_err: 23
+   69 			log_set_peer_name: void (), <./log.c 59>
+   70 				log_errx: 11
+   71 				checked_strdup: 66
+   72 			setproctitle: <>
+   73 			connection_new: struct connection (), <./iscsid.c 154>
+   74 			set_timeout: void (), <./iscsid.c 369>
+   75 				log_debugx: 44
+   76 				bzero: <>
+   77 				sigalrm_handler: void (), <./iscsid.c 349>
+   78 				sigfillset: <>
+   79 				sigaction: <>
+   80 				log_err: 23
+   81 				setitimer: <>
+   82 			capsicate: void (), <./iscsid.c 309>
+   83 				cap_rights_init: <>
+   84 				cap_rights_limit: <>
+   85 				log_err: 23
+   86 				cap_ioctls_limit: <>
+   87 				cap_enter: <>
+   88 				cap_sandboxed: <>
+   89 				log_debugx: 44
+   90 				log_warnx: 53
+   91 			login: void (), <./login.c 705>
+   92 				log_debugx: 44
+   93 				login_new_request: struct pdu (), <./login.c 272>
+   94 				keys_new: struct keys (), <./keys.c 42>
+   95 				keys_add: void (), <./keys.c 165>
+   96 					log_debugx: 44
+   97 					checked_strdup: 66
+   98 					log_errx: 11
+   99 				keys_save: void (), <./keys.c 106>
+  100 					strlen: <>
+  101 					malloc: <>
+  102 					log_err: 23
+  103 					sprintf: <>
+  104 				keys_delete: void (), <./keys.c 54>
+  105 					free: <>
+  106 				pdu_send: void (), <./pdu.c 243>
+  107 					pdu_send_proxy: void (), <./pdu.c 142>
+  108 						assert: <>
+  109 						pdu_set_data_segment_length: void (), <./pdu.c 69>
+  110 						calloc: <>
+  111 						log_err: 23
+  112 						ioctl: <>
+  113 						free: <>
+  114 					assert: <>
+  115 					pdu_set_data_segment_length: 109
+  116 					pdu_padding: size_t (), <./pdu.c 170>
+  117 					writev: <>
+  118 					timed_out: bool (), <./iscsid.c 342>
+  119 					log_errx: 11
+  120 					log_err: 23
+  121 				pdu_delete: void (), <./pdu.c 291>
+  122 					free: <>
+  123 				login_receive: struct pdu (), <./login.c 217>
+  124 				keys_load: void (), <./keys.c 62>
+  125 					log_errx: 11
+  126 					assert: <>
+  127 					malloc: <>
+  128 					log_err: 23
+  129 					memcpy: <>
+  130 					strlen: <>
+  131 					strsep: <>
+  132 					log_debugx: 44
+  133 				strcmp: <>
+  134 				login_negotiate_key: void (), <./login.c 330>
+  135 					strcmp: <>
+  136 					strlcpy: <>
+  137 					login_list_prefers: int (), <./login.c 308>
+  138 						checked_strdup: 66
+  139 						strsep: <>
+  140 						strcmp: <>
+  141 						free: <>
+  142 					log_debugx: 44
+  143 					log_warnx: 53
+  144 					strtoul: <>
+  145 					log_errx: 11
+  146 				login_nsg: int (), <./login.c 47>
+  147 				log_errx: 11
+  148 				login_negotiate: void (), <./login.c 433>
+  149 					log_debugx: 44
+  150 					login_new_request: struct pdu (), <./login.c 272>
+  151 					keys_new: struct keys (), <./keys.c 42>
+  152 					keys_add: 95
+  153 					keys_add_int: void (), <./keys.c 187>
+  154 						asprintf: <>
+  155 						log_err: 23
+  156 						keys_add: 95
+  157 						free: <>
+  158 					keys_save: 99
+  159 					keys_delete: 104
+  160 					pdu_send: 106
+  161 					pdu_delete: 121
+  162 					login_receive: struct pdu (), <./login.c 217>
+  163 					keys_load: 124
+  164 					login_negotiate_key: 134
+  165 					log_warnx: 53
+  166 					login_nsg: 146
+  167 				keys_find: const char * (), <./keys.c 146>
+  168 					strcmp: <>
+  169 				fail: void (), <./iscsid.c 291>
+  170 					memset: <>
+  171 					strlcpy: <>
+  172 					ioctl: <>
+  173 					log_err: 23
+  174 				login_chap: void (), <./login.c 677>
+  175 					log_debugx: 44
+  176 					login_send_chap_a: void (), <./login.c 534>
+  177 						login_new_request: struct pdu (), <./login.c 272>
+  178 						keys_new: struct keys (), <./keys.c 42>
+  179 						keys_add: 95
+  180 						keys_save: 99
+  181 						keys_delete: 104
+  182 						pdu_send: 106
+  183 						pdu_delete: 121
+  184 					login_receive: struct pdu (), <./login.c 217>
+  185 					login_send_chap_r: void (), <./login.c 549>
+  186 						keys_new: struct keys (), <./keys.c 42>
+  187 						keys_load: 124
+  188 						keys_find: 167
+  189 						log_errx: 11
+  190 						strcmp: <>
+  191 						rchap_new: struct rchap (), <./chap.c 332>
+  192 						rchap_receive: int (), <./chap.c 359>
+  193 							strtoul: <>
+  194 							chap_hex2bin: int (), <./chap.c 133>
+  195 								strncasecmp: <>
+  196 								strlen: <>
+  197 								chap_b642bin: int (), <./chap.c 107>
+  198 									strlen: <>
+  199 									calloc: <>
+  200 									log_err: 23
+  201 									b64_pton: <>
+  202 									log_warnx: 53
+  203 									free: <>
+  204 								log_warnx: 53
+  205 								calloc: <>
+  206 								log_err: 23
+  207 								chap_hex2int: int (), <./chap.c 60>
+  208 								free: <>
+  209 								assert: <>
+  210 							log_debugx: 44
+  211 							rchap_receive_bin: void (), <./chap.c 346>
+  212 								calloc: <>
+  213 								log_err: 23
+  214 								memcpy: <>
+  215 							free: <>
+  216 						rchap_get_response: char * (), <./chap.c 402>
+  217 							rchap_get_response_bin: void (), <./chap.c 383>
+  218 								calloc: <>
+  219 								log_err: 23
+  220 								chap_compute_md5: void (), <./chap.c 44>
+  221 									assert: <>
+  222 									MD5Init: <>
+  223 									MD5Update: <>
+  224 									strlen: <>
+  225 									MD5Final: <>
+  226 							chap_bin2hex: char * (), <./chap.c 208>
+  227 								malloc: <>
+  228 								log_err: 23
+  229 								sprintf: <>
+  230 								b64_ntop: <>
+  231 							free: <>
+  232 						rchap_delete: void (), <./chap.c 416>
+  233 							free: <>
+  234 						keys_delete: 104
+  235 						login_new_request: struct pdu (), <./login.c 272>
+  236 						keys_add: 95
+  237 						free: <>
+  238 						log_debugx: 44
+  239 						assert: <>
+  240 						chap_new: struct chap (), <./chap.c 231>
+  241 						chap_get_id: char * (), <./chap.c 249>
+  242 							asprintf: <>
+  243 							log_err: 23
+  244 						chap_get_challenge: char * (), <./chap.c 262>
+  245 							chap_bin2hex: 226
+  246 						keys_save: 99
+  247 						pdu_send: 106
+  248 						pdu_delete: 121
+  249 					pdu_delete: 121
+  250 					login_verify_mutual: void (), <./login.c 634>
+  251 						keys_new: struct keys (), <./keys.c 42>
+  252 						keys_load: 124
+  253 						keys_find: 167
+  254 						log_errx: 11
+  255 						chap_receive: int (), <./chap.c 288>
+  256 							chap_hex2bin: 194
+  257 							log_debugx: 44
+  258 							chap_receive_bin: int (), <./chap.c 273>
+  259 								log_debugx: 44
+  260 								memcpy: <>
+  261 							free: <>
+  262 						strcmp: <>
+  263 						fail: 169
+  264 						chap_authenticate: int (), <./chap.c 308>
+  265 							chap_compute_md5: 220
+  266 							memcmp: <>
+  267 						keys_delete: 104
+  268 						chap_delete: void (), <./chap.c 325>
+  269 							free: <>
+  270 						log_debugx: 44
+  271 			discovery: void (), <./discovery.c 169>
+  272 				log_debugx: 44
+  273 				text_new_request: struct pdu (), <./discovery.c 75>
+  274 				keys_new: struct keys (), <./keys.c 42>
+  275 				keys_add: 95
+  276 				keys_save: 99
+  277 				keys_delete: 104
+  278 				pdu_send: 106
+  279 				pdu_delete: 121
+  280 				text_receive: struct pdu (), <./discovery.c 44>
+  281 				keys_load: 124
+  282 				strcmp: <>
+  283 				kernel_add: void (), <./discovery.c 140>
+  284 					memset: <>
+  285 					memcpy: <>
+  286 					strlcpy: <>
+  287 					ioctl: <>
+  288 					log_warn: 31
+  289 				kernel_remove: void (), <./discovery.c 156>
+  290 					memset: <>
+  291 					ioctl: <>
+  292 					log_warn: 31
+  293 				logout_new_request: struct pdu (), <./discovery.c 121>
+  294 				logout_receive: struct pdu (), <./discovery.c 96>
+  295 			handoff: void (), <./iscsid.c 263>
+  296 				log_debugx: 44
+  297 				memset: <>
+  298 				strlcpy: <>
+  299 				ioctl: <>
+  300 				log_err: 23
+  301 			log_debugx: 44
+  302 			exit: <>

@@ -1,0 +1,74 @@
+    1 	main: int (), <./services_mkdb.c 81>
+    2 		setprogname: <>
+    3 		getopt: <>
+    4 		usage: void (), <./services_mkdb.c 434>
+    5 			fprintf: <>
+    6 			getprogname: <>
+    7 			exit: <>
+    8 		uniq: void (), <./uniq.c 58>
+    9 			dbopen: <>
+   10 			err: <>
+   11 			fopen: <>
+   12 			fgetln: <>
+   13 			comp: int (), <./uniq.c 108>
+   14 				isspace: <>
+   15 				malloc: <>
+   16 				err: <>
+   17 				memcpy: <>
+   18 				isalnum: <>
+   19 			fprintf: <>
+   20 			abort: <>
+   21 			fflush: <>
+   22 			exit: <>
+   23 		parseservices: StringList *** (), <./services_mkdb.c 220>
+   24 			fopen: <>
+   25 			err: <>
+   26 			calloc: <>
+   27 			fparseln: <>
+   28 			free: <>
+   29 			isspace: <>
+   30 			getstring: char * (), <./services_mkdb.c 332>
+   31 				strsep: <>
+   32 				warnx: <>
+   33 			strchr: <>
+   34 			warnx: <>
+   35 			strtoul: <>
+   36 			getprotoindex: size_t (), <./services_mkdb.c 384>
+   37 				strcmp: <>
+   38 				errx: <>
+   39 				strdup: <>
+   40 				err: <>
+   41 				sl_add: <>
+   42 			sl_init: <>
+   43 			sl_find: <>
+   44 			strdup: <>
+   45 			sl_add: <>
+   46 			strsep: <>
+   47 			fclose: <>
+   48 		sl_init: <>
+   49 		atexit: <>
+   50 		cleanup: void (), <./services_mkdb.c 325>
+   51 			unlink: <>
+   52 		err: <>
+   53 		snprintf: <>
+   54 		dbopen: <>
+   55 		add: void (), <./services_mkdb.c 174>
+   56 			printf: <>
+   57 			snprintf: <>
+   58 			mkaliases: const char * (), <./services_mkdb.c 410>
+   59 				strlcpy: <>
+   60 				warn: <>
+   61 			store: void (), <./services_mkdb.c 357>
+   62 				printf: <>
+   63 				warnx: <>
+   64 				err: <>
+   65 				abort: <>
+   66 			killproto: void (), <./services_mkdb.c 346>
+   67 				strchr: <>
+   68 				abort: <>
+   69 			sl_free: <>
+   70 		getprotostr: const char * (), <./services_mkdb.c 403>
+   71 			assert: <>
+   72 		free: <>
+   73 		sl_free: <>
+   74 		rename: <>

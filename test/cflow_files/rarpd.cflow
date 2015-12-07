@@ -1,0 +1,131 @@
+    1 	main: int (), <./rarpd.c 128>
+    2 		strrchr: <>
+    3 		openlog: <>
+    4 		getopt: <>
+    5 		strncpy: <>
+    6 		usage: void (), <./rarpd.c 371>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		init: void (), <./rarpd.c 318>
+   10 			getifaddrs: <>
+   11 			logmsg: void (), <./rarpd.c 946>
+   12 				va_start: <>
+   13 				expand_syslog_m: int (), <./rarpd.c 973>
+   14 					strdup: <>
+   15 					strstr: <>
+   16 					asprintf: <>
+   17 					strerror: <>
+   18 					free: <>
+   19 				vfprintf: <>
+   20 				free: <>
+   21 				fputs: <>
+   22 				fflush: <>
+   23 				vsyslog: <>
+   24 				va_end: <>
+   25 			pidfile_remove: <>
+   26 			exit: <>
+   27 			init_one: void (), <./rarpd.c 222>
+   28 				strcmp: <>
+   29 				malloc: <>
+   30 				logmsg: 11
+   31 				pidfile_remove: <>
+   32 				exit: <>
+   33 				bzero: <>
+   34 				strlcpy: <>
+   35 				memcpy: <>
+   36 				SATOSIN: <>
+   37 				ipaddrtonetmask: in_addr_t (), <./rarpd.c 889>
+   38 					ntohl: <>
+   39 					IN_CLASSA: <>
+   40 					htonl: <>
+   41 					IN_CLASSB: <>
+   42 					IN_CLASSC: <>
+   43 					logmsg: 11
+   44 				rarp_open: int (), <./rarpd.c 408>
+   45 					BPF_STMT: <>
+   46 					BPF_JUMP: <>
+   47 					bpf_open: int (), <./rarpd.c 381>
+   48 						sprintf: <>
+   49 						open: <>
+   50 						logmsg: 11
+   51 						pidfile_remove: <>
+   52 						exit: <>
+   53 					ioctl: <>
+   54 					logmsg: 11
+   55 					strlcpy: <>
+   56 					pidfile_remove: <>
+   57 					exit: <>
+   58 				bcopy: <>
+   59 				LLADDR: <>
+   60 			freeifaddrs: <>
+   61 			bcmp: <>
+   62 			close: <>
+   63 			free: <>
+   64 			intoa: char * (), <./rarpd.c 907>
+   65 			ntohl: <>
+   66 			eatoa: char * (), <./rarpd.c 936>
+   67 				sprintf: <>
+   68 		snprintf: <>
+   69 		pidfile_open: <>
+   70 		logmsg: 11
+   71 		daemon: <>
+   72 		pidfile_remove: <>
+   73 		exit: <>
+   74 		pidfile_write: <>
+   75 		rarp_loop: void (), <./rarpd.c 511>
+   76 			logmsg: 11
+   77 			ioctl: <>
+   78 			malloc: <>
+   79 			FD_ZERO: <>
+   80 			FD_SET: <>
+   81 			select: <>
+   82 			FD_ISSET: <>
+   83 			read: <>
+   84 			rarp_check: int (), <./rarpd.c 474>
+   85 				logmsg: 11
+   86 				ntohs: <>
+   87 				bcmp: <>
+   88 			rarp_process: void (), <./rarpd.c 647>
+   89 				ether_ntohost: <>
+   90 				logmsg: 11
+   91 				eatoa: 66
+   92 				gethostbyname: <>
+   93 				choose_ipaddr: in_addr_t (), <./rarpd.c 633>
+   94 				intoa: 64
+   95 				ntohl: <>
+   96 				rarp_bootable: int (), <./rarpd.c 591>
+   97 					sprintf: <>
+   98 					ntohl: <>
+   99 					rewinddir: <>
+  100 					chdir: <>
+  101 					logmsg: 11
+  102 					opendir: <>
+  103 					readdir: <>
+  104 					strncmp: <>
+  105 					pidfile_remove: <>
+  106 					exit: <>
+  107 				rarp_reply: void (), <./rarpd.c 848>
+  108 					update_arptab: void (), <./rarpd.c 715>
+  109 						socket: <>
+  110 						logmsg: 11
+  111 						pidfile_remove: <>
+  112 						exit: <>
+  113 						getpid: <>
+  114 						bcopy: <>
+  115 						LLADDR: <>
+  116 						bzero: <>
+  117 						write: <>
+  118 						close: <>
+  119 						read: <>
+  120 						clock_gettime: <>
+  121 					htons: <>
+  122 					bcopy: <>
+  123 					bzero: <>
+  124 					write: <>
+  125 					logmsg: 11
+  126 					eatoa: 66
+  127 					intoa: 64
+  128 					ntohl: <>
+  129 			BPF_WORDALIGN: <>
+  130 			pidfile_remove: <>
+  131 			exit: <>

@@ -1,0 +1,296 @@
+    1 	main: int (), <./mountd.c 288>
+    2 		pidfile_open: <>
+    3 		errx: <>
+    4 		warn: <>
+    5 		socket: <>
+    6 		close: <>
+    7 		getopt: <>
+    8 		strtoul: <>
+    9 		usage: void (), <./mountd.c 912>
+   10 			fprintf: <>
+   11 			exit: <>
+   12 		strdup: <>
+   13 		realloc: <>
+   14 		free: <>
+   15 		out_of_mem: void (), <./mountd.c 2375>
+   16 			syslog: <>
+   17 			exit: <>
+   18 		modfind: <>
+   19 		kldload: <>
+   20 		openlog: <>
+   21 		warnx: <>
+   22 		get_exportlist: void (), <./mountd.c 1643>
+   23 			nfssvc: <>
+   24 			bzero: <>
+   25 			free_exp: void (), <./mountd.c 2328>
+   26 				free_host: void (), <./mountd.c 2347>
+   27 					free: <>
+   28 				free: <>
+   29 				free_dir: void (), <./mountd.c 2089>
+   30 					free_dir: 29
+   31 					free_host: 26
+   32 					free: <>
+   33 			free_grp: void (), <./mountd.c 3002>
+   34 				freeaddrinfo: <>
+   35 				free: <>
+   36 			syslog: <>
+   37 			getmntinfo: <>
+   38 			build_iovec: <>
+   39 			getvfsbyname: <>
+   40 			strlen: <>
+   41 			nmount: <>
+   42 			free: <>
+   43 			warnx: <>
+   44 			fopen: <>
+   45 			get_exportlist_one: void (), <./mountd.c 1330>
+   46 				get_line: int (), <./mountd.c 2770>
+   47 					fgetln: <>
+   48 					realloc: <>
+   49 					out_of_mem: 15
+   50 					memcpy: <>
+   51 				warnx: <>
+   52 				nextfield: void (), <./mountd.c 2748>
+   53 				syslog: <>
+   54 				get_grp: struct grouplist (), <./mountd.c 1820>
+   55 				getexp_err: void (), <./mountd.c 1834>
+   56 					syslog: <>
+   57 					free_exp: 25
+   58 					free_grp: 33
+   59 				do_opt: int (), <./mountd.c 2155>
+   60 					strchr: <>
+   61 					nextfield: void (), <./mountd.c 2748>
+   62 					strcmp: <>
+   63 					parsecred: void (), <./mountd.c 2814>
+   64 						strsep: <>
+   65 						isdigit: <>
+   66 						getpwuid: <>
+   67 						atoi: <>
+   68 						getpwnam: <>
+   69 						syslog: <>
+   70 						getgrouplist: <>
+   71 						getgrnam: <>
+   72 					get_net: int (), <./mountd.c 2618>
+   73 						strchr: <>
+   74 						isxdigit: <>
+   75 						memset: <>
+   76 						getaddrinfo: <>
+   77 						bzero: <>
+   78 						inet_makeaddr: <>
+   79 						inet_network: <>
+   80 						fprintf: <>
+   81 						inet_ntoa: <>
+   82 						getnetbyname: <>
+   83 						checkmask: int (), <./mountd.c 3117>
+   84 							sa_rawaddr: void * (), <./mountd.c 3184>
+   85 						bcopy: <>
+   86 						getnameinfo: <>
+   87 						strdup: <>
+   88 						out_of_mem: 15
+   89 						strtol: <>
+   90 						makemask: int (), <./mountd.c 3094>
+   91 							sa_rawaddr: 84
+   92 						IN_CLASSA: <>
+   93 						IN_CLASSB: <>
+   94 						IN_CLASSC: <>
+   95 						IN_CLASSD: <>
+   96 						freeaddrinfo: <>
+   97 					syslog: <>
+   98 					fprintf: <>
+   99 					strdup: <>
+  100 					parsesec: int (), <./mountd.c 2104>
+  101 						strchr: <>
+  102 						strcmp: <>
+  103 						syslog: <>
+  104 				check_dirpath: int (), <./mountd.c 3068>
+  105 					lstat: <>
+  106 					S_ISDIR: <>
+  107 				statfs: <>
+  108 				strlen: <>
+  109 				strlcpy: <>
+  110 				strcmp: <>
+  111 				get_exp: struct exportlist (), <./mountd.c 1806>
+  112 				ex_search: struct exportlist (), <./mountd.c 1853>
+  113 				malloc: <>
+  114 				strcpy: <>
+  115 				out_of_mem: 15
+  116 				add_expdir: char * (), <./mountd.c 1871>
+  117 					malloc: <>
+  118 					out_of_mem: 15
+  119 					strcpy: <>
+  120 				setnetgrent: <>
+  121 				getnetgrent: <>
+  122 				get_host: int (), <./mountd.c 2268>
+  123 					syslog: <>
+  124 					memset: <>
+  125 					getaddrinfo: <>
+  126 					getnameinfo: <>
+  127 					strlcpy: <>
+  128 					strdup: <>
+  129 					fprintf: <>
+  130 					sacmp: int (), <./mountd.c 3145>
+  131 						sa_rawaddr: 84
+  132 						memcmp: <>
+  133 				endnetgrent: <>
+  134 				check_options: int (), <./mountd.c 3030>
+  135 					syslog: <>
+  136 				do_mount: int (), <./mountd.c 2387>
+  137 					bzero: <>
+  138 					build_iovec: <>
+  139 					syslog: <>
+  140 					nfssvc: <>
+  141 					strlen: <>
+  142 					nmount: <>
+  143 					warnx: <>
+  144 					statfs: <>
+  145 					bcmp: <>
+  146 					getfh: <>
+  147 					free: <>
+  148 				free_exp: 25
+  149 				free_grp: 33
+  150 				hang_dirp: void (), <./mountd.c 1892>
+  151 					free: <>
+  152 					memcpy: <>
+  153 					get_ht: struct hostlist (), <./mountd.c 2359>
+  154 					add_dlist: void (), <./mountd.c 1940>
+  155 						strcmp: <>
+  156 						add_dlist: 154
+  157 						free: <>
+  158 						get_ht: struct hostlist (), <./mountd.c 2359>
+  159 						memcpy: <>
+  160 				free_dir: 29
+  161 			fclose: <>
+  162 			exit: <>
+  163 		get_mountlist: void (), <./mountd.c 2895>
+  164 			fopen: <>
+  165 			syslog: <>
+  166 			fgets: <>
+  167 			strsep: <>
+  168 			malloc: <>
+  169 			out_of_mem: 15
+  170 			strncpy: <>
+  171 			fclose: <>
+  172 		daemon: <>
+  173 		signal: <>
+  174 		huphandler: void (), <./mountd.c 3208>
+  175 		terminate: void (), <./mountd.c 3215>
+  176 			pidfile_remove: <>
+  177 			rpcb_unset: <>
+  178 			exit: <>
+  179 		pidfile_write: <>
+  180 		rpcb_unset: <>
+  181 		rpc_control: <>
+  182 		sysctlbyname: <>
+  183 		syslog: <>
+  184 		exit: <>
+  185 		malloc: <>
+  186 		setnetconfig: <>
+  187 		getnetconfig: <>
+  188 		strcmp: <>
+  189 		create_service: int (), <./mountd.c 587>
+  190 			syslog: <>
+  191 			memset: <>
+  192 			realloc: <>
+  193 			out_of_mem: 15
+  194 			exit: <>
+  195 			inet_pton: <>
+  196 			close: <>
+  197 			setsockopt: <>
+  198 			strcmp: <>
+  199 			malloc: <>
+  200 			htons: <>
+  201 			htonl: <>
+  202 			getaddrinfo: <>
+  203 			gai_strerror: <>
+  204 			bindresvport_sa: <>
+  205 			free: <>
+  206 			freeaddrinfo: <>
+  207 			getnameinfo: <>
+  208 			errx: <>
+  209 		clearout_service: void (), <./mountd.c 899>
+  210 			shutdown: <>
+  211 			close: <>
+  212 		complete_service: void (), <./mountd.c 805>
+  213 			syslog: <>
+  214 			listen: <>
+  215 			svc_dg_create: <>
+  216 			svc_vc_create: <>
+  217 			svc_reg: <>
+  218 			mntsrv: void (), <./mountd.c 924>
+  219 				sigemptyset: <>
+  220 				sigaddset: <>
+  221 				svc_getrpccaller: <>
+  222 				ntohs: <>
+  223 				syslog: <>
+  224 				getnameinfo: <>
+  225 				svc_sendreply: <>
+  226 				svcerr_weakauth: <>
+  227 				svc_getargs: <>
+  228 				xdr_dir: int (), <./mountd.c 1136>
+  229 					xdr_string: <>
+  230 				svcerr_decode: <>
+  231 				realpath: <>
+  232 				stat: <>
+  233 				S_ISDIR: <>
+  234 				S_ISREG: <>
+  235 				statfs: <>
+  236 				chdir: <>
+  237 				warnx: <>
+  238 				sigprocmask: <>
+  239 				ex_search: struct exportlist (), <./mountd.c 1853>
+  240 				chk_host: int (), <./mountd.c 2014>
+  241 					sacmp: 130
+  242 				dirp_search: struct dirlist (), <./mountd.c 1994>
+  243 				scan_tree: int (), <./mountd.c 2070>
+  244 					scan_tree: 243
+  245 					chk_host: 240
+  246 				xdr_long: <>
+  247 				memset: <>
+  248 				getfh: <>
+  249 				xdr_fhs: int (), <./mountd.c 1145>
+  250 					xdr_long: <>
+  251 					xdr_opaque: <>
+  252 					xdr_int: <>
+  253 				add_mlist: void (), <./mountd.c 2968>
+  254 					strcmp: <>
+  255 					malloc: <>
+  256 					out_of_mem: 15
+  257 					strncpy: <>
+  258 					fopen: <>
+  259 					syslog: <>
+  260 					fprintf: <>
+  261 					fclose: <>
+  262 				xdr_mlist: int (), <./mountd.c 1181>
+  263 					xdr_bool: <>
+  264 					xdr_string: <>
+  265 				del_mlist: void (), <./mountd.c 2932>
+  266 					strcmp: <>
+  267 					free: <>
+  268 					fopen: <>
+  269 					syslog: <>
+  270 					fprintf: <>
+  271 					fclose: <>
+  272 				xdr_explist: int (), <./mountd.c 1309>
+  273 					xdr_explist_common: int (), <./mountd.c 1209>
+  274 						sigemptyset: <>
+  275 						sigaddset: <>
+  276 						sigprocmask: <>
+  277 						put_exlist: int (), <./mountd.c 1245>
+  278 							put_exlist: 277
+  279 							xdr_bool: <>
+  280 							xdr_string: <>
+  281 							strcmp: <>
+  282 						xdr_bool: <>
+  283 				xdr_explist_brief: int (), <./mountd.c 1316>
+  284 					xdr_explist_common: 273
+  285 				svcerr_noproc: <>
+  286 			memset: <>
+  287 			getaddrinfo: <>
+  288 			gai_strerror: <>
+  289 			exit: <>
+  290 			malloc: <>
+  291 			memcpy: <>
+  292 			rpcb_set: <>
+  293 			freeaddrinfo: <>
+  294 		endnetconfig: <>
+  295 		select: <>
+  296 		svc_getreqset: <>

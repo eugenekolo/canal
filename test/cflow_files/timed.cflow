@@ -1,0 +1,320 @@
+    1 	main: int (), <./timedc/timedc.c 65>
+    2 		getopt: <>
+    3 		errx: <>
+    4 		addnetname: void (), <./timed/timed.c 703>
+    5 			malloc: <>
+    6 			errx: <>
+    7 			bzero: <>
+    8 		add_good_host: void (), <./timed/timed.c 720>
+    9 			malloc: <>
+   10 			syslog: <>
+   11 			exit: <>
+   12 			bzero: <>
+   13 			strncpy: <>
+   14 			gethostbyname: <>
+   15 			warnx: <>
+   16 		usage: void (), <./timed/timed.c 435>
+   17 			fprintf: <>
+   18 			exit: <>
+   19 		gethostname: <>
+   20 		err: <>
+   21 		getservbyname: <>
+   22 		bzero: <>
+   23 		socket: <>
+   24 		setsockopt: <>
+   25 		bind: <>
+   26 		warnx: <>
+   27 		warn: <>
+   28 		exit: <>
+   29 		gettimeofday: <>
+   30 		srandom: <>
+   31 		random: <>
+   32 		adjtime: <>
+   33 		getnetbyname: <>
+   34 		inet_network: <>
+   35 		getnetbyaddr: <>
+   36 		ioctl: <>
+   37 		size: <>
+   38 		malloc: <>
+   39 		htonl: <>
+   40 		free: <>
+   41 		casual: long (), <./timed/timed.c 685>
+   42 			random: <>
+   43 		daemon: <>
+   44 		traceon: void (), <./timed/master.c 805>
+   45 			fopen: <>
+   46 			fprintf: <>
+   47 			date: char * (), <./timed/timed.c 694>
+   48 				time: <>
+   49 				ctime: <>
+   50 			get_goodgroup: void (), <./timed/timed.c 746>
+   51 				times: <>
+   52 				free: <>
+   53 				innetgr: <>
+   54 				fprintf: <>
+   55 				setnetgrent: <>
+   56 				getnetgrent: <>
+   57 				add_good_host: 8
+   58 				endnetgrent: <>
+   59 				good_host_name: int (), <./timed/timed.c 814>
+   60 					strcasecmp: <>
+   61 			setstatus: void (), <./timed/timed.c 575>
+   62 				fprintf: <>
+   63 				inet_ntoa: <>
+   64 			prthp: void (), <./timed/master.c 500>
+   65 				times: <>
+   66 				fprintf: <>
+   67 				date: 47
+   68 				strlen: <>
+   69 		openlog: <>
+   70 		setjmp: <>
+   71 		setstatus: 61
+   72 		checkignorednets: void (), <./timed/timed.c 643>
+   73 			lookformaster: void (), <./timed/timed.c 476>
+   74 				get_goodgroup: 50
+   75 				strcpy: <>
+   76 				acksend: struct tsp (), <./timed/acksend.c 75>
+   77 				good_host_name: 59
+   78 				suppress: void (), <./timed/timed.c 451>
+   79 					fprintf: <>
+   80 					strcpy: <>
+   81 					readmsg: struct tsp (), <./timed/readmsg.c 72>
+   82 					syslog: <>
+   83 					acksend: struct tsp (), <./timed/acksend.c 75>
+   84 				readmsg: struct tsp (), <./timed/readmsg.c 72>
+   85 				strcmp: <>
+   86 				syslog: <>
+   87 		pickslavenet: void (), <./timed/timed.c 665>
+   88 			makeslave: void (), <./timed/timed.c 628>
+   89 		election: int (), <./timed/candidate.c 47>
+   90 			readmsg: struct tsp (), <./timed/readmsg.c 72>
+   91 			fprintf: <>
+   92 			syslog: <>
+   93 			strcpy: <>
+   94 			bytenetorder: void (), <./timed/byteorder.c 45>
+   95 				htons: <>
+   96 				htonl: <>
+   97 			sendto: <>
+   98 			trace_sendto_err: <>
+   99 			gettimeofday: <>
+  100 			timevalsub: void (), <./timed/measure.c 324>
+  101 			addmach: struct hosttbl (), <./timed/master.c 564>
+  102 			good_host_name: 59
+  103 			suppress: 78
+  104 			rmnetmachs: void (), <./timed/master.c 701>
+  105 				prthp: 64
+  106 				remmach: struct hosttbl (), <./timed/master.c 650>
+  107 			acksend: struct tsp (), <./timed/acksend.c 75>
+  108 			print: void (), <./timed/readmsg.c 444>
+  109 				fprintf: <>
+  110 				inet_ntoa: <>
+  111 				strncpy: <>
+  112 				ctime: <>
+  113 		makeslave: 88
+  114 		close: <>
+  115 		master: int (), <./timed/master.c 66>
+  116 			syslog: <>
+  117 			fprintf: <>
+  118 			masterup: void (), <./timed/master.c 716>
+  119 				xmit: void (), <./timed/acksend.c 45>
+  120 					strcpy: <>
+  121 					bytenetorder: 94
+  122 					sendto: <>
+  123 					trace_sendto_err: <>
+  124 				gettimeofday: <>
+  125 			gettimeofday: <>
+  126 			readmsg: struct tsp (), <./timed/readmsg.c 72>
+  127 			get_goodgroup: 50
+  128 			trace_msg: <>
+  129 			lookformaster: 73
+  130 			setstatus: 61
+  131 			synch: void (), <./timed/master.c 388>
+  132 				fprintf: <>
+  133 				date: 47
+  134 				gettimeofday: <>
+  135 				measure: int (), <./timed/measure.c 64>
+  136 					socket: <>
+  137 					syslog: <>
+  138 					quit: void (), <./timedc/cmds.c 357>
+  139 						exit: <>
+  140 					FD_ZERO: <>
+  141 					FD_SET: <>
+  142 					select: <>
+  143 					recvfrom: <>
+  144 					getpid: <>
+  145 					gettimeofday: <>
+  146 					mstotvround: void (), <./timed/measure.c 293>
+  147 					timevaladd: void (), <./timed/measure.c 309>
+  148 					htonl: <>
+  149 					in_cksum: int (), <./timed/cksum.c 52>
+  150 					sendto: <>
+  151 					timevalsub: void (), <./timed/measure.c 324>
+  152 					ntohl: <>
+  153 					fprintf: <>
+  154 					inet_ntoa: <>
+  155 					warn: <>
+  156 					fflush: <>
+  157 				fflush: <>
+  158 				remmach: struct hosttbl (), <./timed/master.c 650>
+  159 				timevalsub: void (), <./timed/measure.c 324>
+  160 				readmsg: struct tsp (), <./timed/readmsg.c 72>
+  161 				traceon: 44
+  162 				networkdelta: long (), <./timed/networkdelta.c 65>
+  163 					fprintf: <>
+  164 					median: long (), <./timed/networkdelta.c 151>
+  165 						fprintf: <>
+  166 						max: <>
+  167 						min: <>
+  168 						abs: <>
+  169 				correct: void (), <./timed/correct.c 50>
+  170 					mstotvround: void (), <./timed/measure.c 293>
+  171 					gettimeofday: <>
+  172 					timevaladd: void (), <./timed/measure.c 309>
+  173 					strcpy: <>
+  174 					acksend: struct tsp (), <./timed/acksend.c 75>
+  175 					syslog: <>
+  176 					fprintf: <>
+  177 					fflush: <>
+  178 					remmach: struct hosttbl (), <./timed/master.c 650>
+  179 					adjclock: void (), <./timed/correct.c 114>
+  180 						timerisset: <>
+  181 						fprintf: <>
+  182 						adjtime: <>
+  183 						syslog: <>
+  184 						gettimeofday: <>
+  185 						timevaladd: void (), <./timed/measure.c 309>
+  186 						settimeofday: <>
+  187 			strcpy: <>
+  188 			bytenetorder: 94
+  189 			sendto: <>
+  190 			trace_sendto_err: <>
+  191 			newslave: void (), <./timed/master.c 729>
+  192 				addmach: struct hosttbl (), <./timed/master.c 564>
+  193 				prthp: 64
+  194 				gettimeofday: <>
+  195 				strcpy: <>
+  196 				acksend: struct tsp (), <./timed/acksend.c 75>
+  197 				syslog: <>
+  198 			ctime: <>
+  199 			good_host_name: 59
+  200 			spreadtime: void (), <./timed/master.c 461>
+  201 				strcpy: <>
+  202 				gettimeofday: <>
+  203 				acksend: struct tsp (), <./timed/acksend.c 75>
+  204 				syslog: <>
+  205 				fprintf: <>
+  206 				fflush: <>
+  207 				remmach: struct hosttbl (), <./timed/master.c 650>
+  208 			mchgdate: void (), <./timed/master.c 342>
+  209 				strcpy: <>
+  210 				xmit: 119
+  211 				date: 47
+  212 				gettimeofday: <>
+  213 				adj_msg_time: void (), <./timed/correct.c 177>
+  214 				timevalsub: void (), <./timed/measure.c 324>
+  215 				synch: 131
+  216 				tvtomsround: <>
+  217 				pututxline: <>
+  218 				settimeofday: <>
+  219 				spreadtime: 200
+  220 				syslog: <>
+  221 			findhost: struct hosttbl (), <./timed/master.c 538>
+  222 			xmit: 119
+  223 			traceon: 44
+  224 			traceoff: void (), <./timed/master.c 823>
+  225 				get_goodgroup: 50
+  226 				setstatus: 61
+  227 				prthp: 64
+  228 				fprintf: <>
+  229 				date: 47
+  230 				fclose: <>
+  231 				moncontrol: <>
+  232 			addmach: struct hosttbl (), <./timed/master.c 564>
+  233 			acksend: struct tsp (), <./timed/acksend.c 75>
+  234 			doquit: void (), <./timed/master.c 774>
+  235 				good_host_name: 59
+  236 				syslog: <>
+  237 				suppress: 78
+  238 				rmnetmachs: 104
+  239 				longjmp: <>
+  240 			strcmp: <>
+  241 			inet_ntoa: <>
+  242 			remmach: struct hosttbl (), <./timed/master.c 650>
+  243 			print: 108
+  244 		slave: int (), <./timed/slave.c 58>
+  245 			adjtime: <>
+  246 			gettimeofday: <>
+  247 			xmit: 119
+  248 			masterup: 118
+  249 			get_goodgroup: 50
+  250 			fprintf: <>
+  251 			longjmp: <>
+  252 			lookformaster: 73
+  253 			makeslave: 88
+  254 			setstatus: 61
+  255 			strcpy: <>
+  256 			bytenetorder: 94
+  257 			sendto: <>
+  258 			trace_sendto_err: <>
+  259 			min: <>
+  260 			readmsg: struct tsp (), <./timed/readmsg.c 72>
+  261 			print: 108
+  262 			good_host_name: 59
+  263 			syslog: <>
+  264 			suppress: 78
+  265 			setmaster: void (), <./timed/slave.c 613>
+  266 				strcmp: <>
+  267 				strcpy: <>
+  268 				syslog: <>
+  269 				fprintf: <>
+  270 			synch: 131
+  271 			tvtomsround: <>
+  272 			adj_msg_time: 213
+  273 			date: 47
+  274 			ctime: <>
+  275 			timevalsub: void (), <./timed/measure.c 324>
+  276 			pututxline: <>
+  277 			settimeofday: <>
+  278 			spreadtime: 200
+  279 			answerdelay: void (), <./timed/slave.c 680>
+  280 				select: <>
+  281 			schgdate: void (), <./timed/slave.c 642>
+  282 				syslog: <>
+  283 				gettimeofday: <>
+  284 				adj_msg_time: 213
+  285 				strcpy: <>
+  286 				acksend: struct tsp (), <./timed/acksend.c 75>
+  287 				xmit: 119
+  288 			findhost: struct hosttbl (), <./timed/master.c 538>
+  289 			traceon: 44
+  290 			traceoff: 224
+  291 			newslave: 191
+  292 			acksend: struct tsp (), <./timed/acksend.c 75>
+  293 			addmach: struct hosttbl (), <./timed/master.c 564>
+  294 			remmach: struct hosttbl (), <./timed/master.c 650>
+  295 			doquit: 234
+  296 			strcmp: <>
+  297 		rmnetmachs: 104
+  298 		priv_resources: int (), <./timedc/cmds.c 506>
+  299 			socket: <>
+  300 			warn: <>
+  301 			htons: <>
+  302 			bind: <>
+  303 			close: <>
+  304 			warnx: <>
+  305 		setuid: <>
+  306 		getuid: <>
+  307 		getcmd: struct cmd (), <./timedc/timedc.c 141>
+  308 		printf: <>
+  309 		isatty: <>
+  310 		fileno: <>
+  311 		putchar: <>
+  312 		signal: <>
+  313 		intr: void (), <./timedc/timedc.c 132>
+  314 			exit: <>
+  315 			longjmp: <>
+  316 		fflush: <>
+  317 		fgets: <>
+  318 		quit: 138
+  319 		makeargv: void (), <./timedc/timedc.c 174>
+  320 			isspace: <>

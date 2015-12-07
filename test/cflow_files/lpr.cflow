@@ -1,0 +1,975 @@
+    1 	main: int (), <./lpr/lpr.c 132>
+    2 		atoi: <>
+    3 		memset: <>
+    4 		getc: <>
+    5 		getchar: <>
+    6 		fflush: <>
+    7 		kill: <>
+    8 		getpid: <>
+    9 		ungetc: <>
+   10 		putc: <>
+   11 		putchar: <>
+   12 		access: <>
+   13 		freopen: <>
+   14 		printf: <>
+   15 		exit: <>
+   16 		geteuid: <>
+   17 		getuid: <>
+   18 		gethostname: <>
+   19 		err: <>
+   20 		openlog: <>
+   21 		getopt: <>
+   22 		usage: void (), <./lpq/lpq.c 190>
+   23 			fprintf: <>
+   24 			exit: <>
+   25 		getenv: <>
+   26 		isdigit: <>
+   27 		fatal: void (), <./common_source/common.c 742>
+   28 			va_start: <>
+   29 			printf: <>
+   30 			vprintf: <>
+   31 			va_end: <>
+   32 			putchar: <>
+   33 			exit: <>
+   34 		firstprinter: int (), <./common_source/printcap.c 149>
+   35 			init_printer: void (), <./common_source/printcap.c 327>
+   36 			cgetfirst: <>
+   37 			firstnextmap: int (), <./common_source/printcap.c 122>
+   38 			getprintcap_int: int (), <./common_source/printcap.c 217>
+   39 				capdb_canonical_name: char * (), <./common_source/printcap.c 436>
+   40 					strpbrk: <>
+   41 					malloc: <>
+   42 					strncat: <>
+   43 				CHK: <>
+   44 				capdb_getaltstr: int (), <./common_source/printcap.c 376>
+   45 					cgetstr: <>
+   46 					strdup: <>
+   47 					strlen: <>
+   48 				capdb_getaltnum: int (), <./common_source/printcap.c 400>
+   49 					cgetnum: <>
+   50 				capdb_getaltlog: int (), <./common_source/printcap.c 420>
+   51 					cgetcap: <>
+   52 				cgetmatch: <>
+   53 				free: <>
+   54 			free: <>
+   55 		ckqueue: int (), <./lpq/lpq.c 170>
+   56 			opendir: <>
+   57 			readdir: <>
+   58 			closedir: <>
+   59 		displayq: void (), <./common_source/displayq.c 98>
+   60 			checkremote: char * (), <./common_source/net.c 182>
+   61 				gethostname: <>
+   62 				memset: <>
+   63 				getaddrinfo: <>
+   64 				asprintf: <>
+   65 				gai_strerror: <>
+   66 				freeaddrinfo: <>
+   67 				getnameinfo: <>
+   68 				strcmp: <>
+   69 			printf: <>
+   70 			free: <>
+   71 			PRIV_START: <>
+   72 			chdir: <>
+   73 			fatal: 27
+   74 			strerror: <>
+   75 			getq: int (), <./common_source/common.c 118>
+   76 				PRIV_START: <>
+   77 				opendir: <>
+   78 				fstat: <>
+   79 				dirfd: <>
+   80 				malloc: <>
+   81 				readdir: <>
+   82 				stat: <>
+   83 				strlen: <>
+   84 				strcpy: <>
+   85 				realloc: <>
+   86 				closedir: <>
+   87 				qsort: <>
+   88 				compar: int (), <./common_source/common.c 194>
+   89 					strcmp: <>
+   90 			stat: <>
+   91 			open: <>
+   92 			read: <>
+   93 			fwrite: <>
+   94 			close: <>
+   95 			putchar: <>
+   96 			fopen: <>
+   97 			daemonwarn: void (), <./common_source/displayq.c 362>
+   98 				printf: <>
+   99 				puts: <>
+  100 			getc: <>
+  101 			atoi: <>
+  102 			kill: <>
+  103 			fclose: <>
+  104 			header: void (), <./common_source/displayq.c 374>
+  105 				printf: <>
+  106 				strlen: <>
+  107 				blankfill: void (), <./common_source/displayq.c 520>
+  108 					putchar: <>
+  109 			inform: void (), <./common_source/displayq.c 383>
+  110 				PRIV_START: <>
+  111 				fopen: <>
+  112 				strcmp: <>
+  113 				calc_jobnum: int (), <./common_source/common.c 236>
+  114 					isdigitch: <>
+  115 				getline: int (), <./common_source/common.c 88>
+  116 					getc: <>
+  117 				inlist: int (), <./common_source/displayq.c 481>
+  118 					strcmp: <>
+  119 					calc_jobnum: 113
+  120 				fclose: <>
+  121 				printf: <>
+  122 				strlen: <>
+  123 				prank: void (), <./common_source/displayq.c 611>
+  124 					printf: <>
+  125 					snprintf: <>
+  126 					strlen: <>
+  127 				blankfill: 107
+  128 				strlcpy: <>
+  129 				show: void (), <./common_source/displayq.c 506>
+  130 					strcmp: <>
+  131 					ldump: void (), <./common_source/displayq.c 590>
+  132 						putchar: <>
+  133 						printf: <>
+  134 						stat: <>
+  135 					dump: void (), <./common_source/displayq.c 530>
+  136 						strlen: <>
+  137 						printf: <>
+  138 						strncat: <>
+  139 						strrchr: <>
+  140 						blankfill: 107
+  141 						PRIV_START: <>
+  142 						stat: <>
+  143 			puts: <>
+  144 			snprintf: <>
+  145 			strlen: <>
+  146 			sprintf: <>
+  147 			strcpy: <>
+  148 			strcat: <>
+  149 			signal: <>
+  150 			alarmhandler: void (), <./lpd/printjob.c 2016>
+  151 			alarm: <>
+  152 			getport: int (), <./common_source/net.c 89>
+  153 				fatal: 27
+  154 				memset: <>
+  155 				getaddrinfo: <>
+  156 				gai_strerror: <>
+  157 				htons: <>
+  158 				PRIV_START: <>
+  159 				rresvport_af: <>
+  160 				sleep: <>
+  161 				freeaddrinfo: <>
+  162 				connect: <>
+  163 				close: <>
+  164 			write: <>
+  165 			filtered_write: void (), <./common_source/displayq.c 277>
+  166 				fputc: <>
+  167 				isprintch: <>
+  168 				fwrite: <>
+  169 		nextprinter: int (), <./common_source/printcap.c 171>
+  170 			free_printer: void (), <./common_source/printcap.c 338>
+  171 				cfree: <>
+  172 				init_printer: 35
+  173 			cgetnext: <>
+  174 			firstnextmap: int (), <./common_source/printcap.c 122>
+  175 			getprintcap_int: 38
+  176 			free: <>
+  177 		pcaperr: const char * (), <./common_source/printcap.c 304>
+  178 			strerror: <>
+  179 		init_printer: 35
+  180 		getprintcap: int (), <./common_source/printcap.c 97>
+  181 			cgetent: <>
+  182 			getprintcap_int: 38
+  183 			free: <>
+  184 		setbuf: <>
+  185 		getcmd: struct cmd (), <./lpc/lpc.c 234>
+  186 		ingroup: int (), <./lpc/lpc.c 351>
+  187 			getgrnam: <>
+  188 			warnx: <>
+  189 			sysconf: <>
+  190 			malloc: <>
+  191 			err: <>
+  192 			getgroups: <>
+  193 		generic: void (), <./lpc/cmds.c 108>
+  194 			printf: <>
+  195 			strcmp: <>
+  196 			strdup: <>
+  197 			args2line: char * (), <./lpc/cmds.c 260>
+  198 				strdup: <>
+  199 			firstprinter: 34
+  200 			nextprinter: 169
+  201 			fatal: 27
+  202 			pcaperr: 177
+  203 			init_printer: 35
+  204 			getprintcap: 180
+  205 			free_printer: 170
+  206 			free: <>
+  207 		isatty: <>
+  208 		fileno: <>
+  209 		signal: <>
+  210 		intr: void (), <./lpc/lpc.c 131>
+  211 			exit: <>
+  212 		cmdscanner: void (), <./lpc/lpc.c 147>
+  213 			el_init: <>
+  214 			history_init: <>
+  215 			history: <>
+  216 			el_set: <>
+  217 			lpc_prompt: const char * (), <./lpc/lpc.c 138>
+  218 			el_source: <>
+  219 			cgetset: <>
+  220 			el_gets: <>
+  221 			quit: void (), <./lpc/cmds.c 960>
+  222 				exit: <>
+  223 			memcpy: <>
+  224 			fgets: <>
+  225 			makeargv: void (), <./lpc/lpc.c 265>
+  226 				isspace: <>
+  227 			el_parse: <>
+  228 			getcmd: struct cmd (), <./lpc/lpc.c 234>
+  229 			printf: <>
+  230 			getuid: <>
+  231 			ingroup: 186
+  232 			generic: 193
+  233 		fputs: <>
+  234 		getlogin: <>
+  235 		getpwuid: <>
+  236 		strlen: <>
+  237 		strcpy: <>
+  238 		usage: void (), <./lprm/lprm.c 158>
+  239 			fprintf: <>
+  240 			exit: <>
+  241 		rmjob: void (), <./common_source/rmjob.c 77>
+  242 			init_printer: 35
+  243 			getprintcap: 180
+  244 			fatal: 27
+  245 			pcaperr: 177
+  246 			checkremote: 60
+  247 			printf: <>
+  248 			free: <>
+  249 			getuid: <>
+  250 			strcmp: <>
+  251 			PRIV_START: <>
+  252 			chdir: <>
+  253 			scandir: <>
+  254 			iscf: int (), <./common_source/rmjob.c 382>
+  255 			lockchk: int (), <./common_source/rmjob.c 153>
+  256 				PRIV_START: <>
+  257 				fopen: <>
+  258 				fatal: 27
+  259 				strerror: <>
+  260 				getline: 115
+  261 				fclose: <>
+  262 				atoi: <>
+  263 				kill: <>
+  264 				fread: <>
+  265 				sleep: <>
+  266 			chk: int (), <./common_source/rmjob.c 230>
+  267 				strlen: <>
+  268 				calc_jobnum: 113
+  269 				strcmp: <>
+  270 				PRIV_START: <>
+  271 				fopen: <>
+  272 				getline: 115
+  273 				fclose: <>
+  274 				isowner: int (), <./common_source/rmjob.c 286>
+  275 					strcmp: <>
+  276 					printf: <>
+  277 			kill: <>
+  278 			process: void (), <./common_source/rmjob.c 191>
+  279 				chk: 266
+  280 				PRIV_START: <>
+  281 				fopen: <>
+  282 				fatal: 27
+  283 				getline: 115
+  284 				strchr: <>
+  285 				strncmp: <>
+  286 				do_unlink: void (), <./common_source/rmjob.c 214>
+  287 					printf: <>
+  288 					PRIV_START: <>
+  289 					unlink: <>
+  290 				fclose: <>
+  291 			rmremote: void (), <./common_source/rmjob.c 304>
+  292 				fflush: <>
+  293 				malloc: <>
+  294 				fatal: 27
+  295 				asprintf: <>
+  296 				strlen: <>
+  297 				signal: <>
+  298 				alarmhandler: void (), <./lpd/printjob.c 2016>
+  299 				alarm: <>
+  300 				getport: 152
+  301 				printf: <>
+  302 				writev: <>
+  303 				read: <>
+  304 				fwrite: <>
+  305 				close: <>
+  306 				free: <>
+  307 			startdaemon: int (), <./common_source/startdaemon.c 57>
+  308 				socket: <>
+  309 				warn: <>
+  310 				memset: <>
+  311 				strcpy: <>
+  312 				PRIV_START: <>
+  313 				connect: <>
+  314 				SUN_LEN: <>
+  315 				warnx: <>
+  316 				close: <>
+  317 				writel: ssize_t (), <./common_source/net.c 262>
+  318 					va_start: <>
+  319 					va_arg: <>
+  320 					va_end: <>
+  321 					malloc: <>
+  322 					strlen: <>
+  323 					writev: <>
+  324 					free: <>
+  325 				read: <>
+  326 				putchar: <>
+  327 			exit: <>
+  328 		errx: <>
+  329 		syslog: <>
+  330 		usage: void (), <./lpd/lpd.c 934>
+  331 			fprintf: <>
+  332 			exit: <>
+  333 		htons: <>
+  334 		getservbyname: <>
+  335 		fork: <>
+  336 		execl: <>
+  337 		waitpid: <>
+  338 		WIFEXITED: <>
+  339 		WEXITSTATUS: <>
+  340 		daemon: <>
+  341 		umask: <>
+  342 		open: <>
+  343 		fcntl: <>
+  344 		ftruncate: <>
+  345 		sprintf: <>
+  346 		write: <>
+  347 		reapchild: void (), <./lpd/lpd.c 426>
+  348 			wait3: <>
+  349 		startup: void (), <./lpd/lpd.c 586>
+  350 			firstprinter: 34
+  351 			ckqueue: int (), <./lpd/lpd.c 627>
+  352 				opendir: <>
+  353 				readdir: <>
+  354 				closedir: <>
+  355 			syslog: <>
+  356 			fork: <>
+  357 			mcleanup: void (), <./lpd/lpd.c 435>
+  358 				syslog: <>
+  359 				unlink: <>
+  360 				exit: <>
+  361 			lastprinter: void (), <./common_source/printcap.c 193>
+  362 				cgetclose: <>
+  363 			printjob: void (), <./lpd/printjob.c 158>
+  364 				init: void (), <./lpd/printjob.c 1732>
+  365 					sprintf: <>
+  366 					checkremote: 60
+  367 					syslog: <>
+  368 					free: <>
+  369 				write: <>
+  370 				close: <>
+  371 				open: <>
+  372 				syslog: <>
+  373 				setgid: <>
+  374 				getegid: <>
+  375 				err: <>
+  376 				getpid: <>
+  377 				setpgid: <>
+  378 				signal: <>
+  379 				abortpr: void (), <./lpd/printjob.c 1717>
+  380 					unlink: <>
+  381 					kill: <>
+  382 					wait: <>
+  383 					exit: <>
+  384 				chdir: <>
+  385 				exit: <>
+  386 				stat: <>
+  387 				umask: <>
+  388 				fcntl: <>
+  389 				ftruncate: <>
+  390 				sprintf: <>
+  391 				strlen: <>
+  392 				getq: 75
+  393 				fchmod: <>
+  394 				mkstemp: <>
+  395 				openpr: void (), <./lpd/printjob.c 1773>
+  396 					openrem: void (), <./lpd/printjob.c 1921>
+  397 						signal: <>
+  398 						alarmhandler: void (), <./lpd/printjob.c 2016>
+  399 						alarm: <>
+  400 						getport: 152
+  401 						writel: 317
+  402 						strlen: <>
+  403 						response: char (), <./lpd/printjob.c 1435>
+  404 							read: <>
+  405 							syslog: <>
+  406 						close: <>
+  407 						pstatus: void (), <./lpd/printjob.c 1993>
+  408 							va_start: <>
+  409 							umask: <>
+  410 							open: <>
+  411 							syslog: <>
+  412 							exit: <>
+  413 							ftruncate: <>
+  414 							vasprintf: <>
+  415 							va_end: <>
+  416 							writel: 317
+  417 							close: <>
+  418 							free: <>
+  419 						sleep: <>
+  420 					strchr: <>
+  421 					opennet: void (), <./lpd/printjob.c 1840>
+  422 						strtoul: <>
+  423 						syslog: <>
+  424 						exit: <>
+  425 						signal: <>
+  426 						alarmhandler: void (), <./lpd/printjob.c 2016>
+  427 						alarm: <>
+  428 						getport: 152
+  429 						delay: void (), <./common_source/common.c 268>
+  430 							fatal: 27
+  431 							select: <>
+  432 						pstatus: 407
+  433 						sleep: <>
+  434 					opentty: void (), <./lpd/printjob.c 1892>
+  435 						open: <>
+  436 						delay: 429
+  437 						syslog: <>
+  438 						exit: <>
+  439 						pstatus: 407
+  440 						sleep: <>
+  441 						isatty: <>
+  442 						setty: void (), <./lpd/printjob.c 1962>
+  443 							ioctl: <>
+  444 							syslog: <>
+  445 							exit: <>
+  446 							tcgetattr: <>
+  447 							cfsetspeed: <>
+  448 							strdup: <>
+  449 							strsep: <>
+  450 							msearch: int (), <./lpd/modes.c 202>
+  451 								CHK: <>
+  452 							tcsetattr: <>
+  453 					syslog: <>
+  454 					exit: <>
+  455 					pipe: <>
+  456 					strcpy: <>
+  457 					mkstemp: <>
+  458 					dofork: int (), <./lpd/printjob.c 1636>
+  459 						getpwuid: <>
+  460 						syslog: <>
+  461 						strdup: <>
+  462 						fork: <>
+  463 						sleep: <>
+  464 						initgroups: <>
+  465 						setgid: <>
+  466 						setuid: <>
+  467 						exit: <>
+  468 					dup2: <>
+  469 					closelog: <>
+  470 					closeallfds: void (), <./common_source/common.c 762>
+  471 						closefrom: <>
+  472 						getdtablesize: <>
+  473 						close: <>
+  474 					strrchr: <>
+  475 					execl: <>
+  476 					close: <>
+  477 				free: <>
+  478 				lseek: <>
+  479 				snprintf: <>
+  480 				printit: int (), <./lpd/printjob.c 387>
+  481 					fopen: <>
+  482 					syslog: <>
+  483 					strcpy: <>
+  484 					sprintf: <>
+  485 					getline: 115
+  486 					strlcpy: <>
+  487 					getpwnam: <>
+  488 					sendmail: void (), <./lpd/printjob.c 1559>
+  489 						pipe: <>
+  490 						dofork: 458
+  491 						dup2: <>
+  492 						closelog: <>
+  493 						closeallfds: 470
+  494 						strrchr: <>
+  495 						execl: <>
+  496 						printf: <>
+  497 						stat: <>
+  498 						fopen: <>
+  499 						getc: <>
+  500 						putchar: <>
+  501 						fclose: <>
+  502 						fflush: <>
+  503 						close: <>
+  504 						syslog: <>
+  505 						wait: <>
+  506 					gethostname: <>
+  507 					banner: void (), <./lpd/printjob.c 1450>
+  508 						time: <>
+  509 						write: <>
+  510 						strlen: <>
+  511 						ctime: <>
+  512 						scan_out: void (), <./lpd/printjob.c 1503>
+  513 							dropit: int (), <./lpd/printjob.c 1535>
+  514 								TRC: <>
+  515 							TRC: <>
+  516 							scnline: char * (), <./lpd/printjob.c 1489>
+  517 							write: <>
+  518 					print: int (), <./lpd/printjob.c 616>
+  519 						wait4data: void (), <./lpd/printjob.c 1261>
+  520 							strlen: <>
+  521 							strcmp: <>
+  522 							stat: <>
+  523 							pstatus: 407
+  524 							sleep: <>
+  525 							syslog: <>
+  526 							time: <>
+  527 						lstat: <>
+  528 						open: <>
+  529 						syslog: <>
+  530 						fstat: <>
+  531 						write: <>
+  532 						strlen: <>
+  533 						read: <>
+  534 						close: <>
+  535 						pipe: <>
+  536 						dofork: 458
+  537 						dup2: <>
+  538 						closelog: <>
+  539 						closeallfds: 470
+  540 						execl: <>
+  541 						exit: <>
+  542 						unlink: <>
+  543 						creat: <>
+  544 						strrchr: <>
+  545 						wait3: <>
+  546 						WIFSTOPPED: <>
+  547 						WEXITSTATUS: <>
+  548 						WTERMSIG: <>
+  549 						execv: <>
+  550 						wait: <>
+  551 						kill: <>
+  552 						fopen: <>
+  553 						fgets: <>
+  554 						fputs: <>
+  555 						fclose: <>
+  556 						WIFEXITED: <>
+  557 					fclose: <>
+  558 					fseek: <>
+  559 					strchr: <>
+  560 					unlink: <>
+  561 				sendit: int (), <./lpd/printjob.c 895>
+  562 					fopen: <>
+  563 					getline: 115
+  564 					strlcpy: <>
+  565 					getpwnam: <>
+  566 					sendmail: 488
+  567 					strcpy: <>
+  568 					strcmp: <>
+  569 					sendfile: int (), <./lpd/printjob.c 1002>
+  570 						wait4data: 519
+  571 						lstat: <>
+  572 						syslog: <>
+  573 						open: <>
+  574 						fstat: <>
+  575 						close: <>
+  576 						strcpy: <>
+  577 						mkstemp: <>
+  578 						execfilter: int (), <./lpd/printjob.c 1351>
+  579 							dofork: 458
+  580 							wait: <>
+  581 							syslog: <>
+  582 							WEXITSTATUS: <>
+  583 							fopen: <>
+  584 							fgets: <>
+  585 							fputs: <>
+  586 							fclose: <>
+  587 							strrchr: <>
+  588 							dup2: <>
+  589 							open: <>
+  590 							closelog: <>
+  591 							closeallfds: 470
+  592 							execv: <>
+  593 							exit: <>
+  594 						lseek: <>
+  595 						sprintf: <>
+  596 						strlen: <>
+  597 						write: <>
+  598 						response: 403
+  599 						pstatus: 407
+  600 						sleep: <>
+  601 						trstat_init: void (), <./common_source/common.c 523>
+  602 							memset: <>
+  603 							strchr: <>
+  604 							lpd_gettime: void (), <./common_source/common.c 459>
+  605 								memset: <>
+  606 								clock_gettime: <>
+  607 								gettimeofday: <>
+  608 								strftime: <>
+  609 								localtime: <>
+  610 								strrchr: <>
+  611 								strcpy: <>
+  612 								strlen: <>
+  613 								snprintf: <>
+  614 								strcat: <>
+  615 								strlcpy: <>
+  616 						read: <>
+  617 						trstat_write: void (), <./common_source/common.c 558>
+  618 							lpd_gettime: 604
+  619 							DIFFTIME_TS: <>
+  620 							gethostname: <>
+  621 							snprintf: <>
+  622 							UPD_EOSTAT: <>
+  623 							strlen: <>
+  624 							strcmp: <>
+  625 							strcpy: <>
+  626 							open: <>
+  627 							write: <>
+  628 							close: <>
+  629 						unlink: <>
+  630 					fclose: <>
+  631 					fseek: <>
+  632 					strchr: <>
+  633 					unlink: <>
+  634 				fstat: <>
+  635 				kill: <>
+  636 				wait: <>
+  637 				unlink: <>
+  638 				sendmail: 488
+  639 			nextprinter: 169
+  640 		unlink: <>
+  641 		socket: <>
+  642 		sigemptyset: <>
+  643 		sigaddset: <>
+  644 		sigprocmask: <>
+  645 		mcleanup: 357
+  646 		bind: <>
+  647 		SUN_LEN: <>
+  648 		FD_ZERO: <>
+  649 		FD_SET: <>
+  650 		listen: <>
+  651 		socksetup: int * (), <./lpd/lpd.c 858>
+  652 			memset: <>
+  653 			getaddrinfo: <>
+  654 			syslog: <>
+  655 			gai_strerror: <>
+  656 			mcleanup: 357
+  657 			malloc: <>
+  658 			socket: <>
+  659 			setsockopt: <>
+  660 			close: <>
+  661 			bind: <>
+  662 			freeaddrinfo: <>
+  663 			free: <>
+  664 		FD_COPY: <>
+  665 		select: <>
+  666 		FD_ISSET: <>
+  667 		accept: <>
+  668 		close: <>
+  669 		dup2: <>
+  670 		chkhost: void (), <./lpd/lpd.c 653>
+  671 			getnameinfo: <>
+  672 			asprintf: <>
+  673 			fhosterr: void (), <./lpd/lpd.c 820>
+  674 				syslog: <>
+  675 				printf: <>
+  676 				fflush: <>
+  677 				sleep: <>
+  678 				exit: <>
+  679 			strlcpy: <>
+  680 			strdup: <>
+  681 			memset: <>
+  682 			getaddrinfo: <>
+  683 			freeaddrinfo: <>
+  684 			gai_strerror: <>
+  685 			strcmp: <>
+  686 			fopen: <>
+  687 			fclose: <>
+  688 			atoi: <>
+  689 		doit: void (), <./lpd/lpd.c 472>
+  690 			init_printer: 35
+  691 			fatal: 27
+  692 			read: <>
+  693 			syslog: <>
+  694 			startprinting: void (), <./lpd/printjob.c 1747>
+  695 				init_printer: 35
+  696 				getprintcap: 180
+  697 				syslog: <>
+  698 				exit: <>
+  699 				fatal: 27
+  700 				printjob: 363
+  701 			exit: <>
+  702 			recvjob: void (), <./lpd/recvjob.c 91>
+  703 				init_printer: 35
+  704 				getprintcap: 180
+  705 				frecverr: void (), <./lpd/recvjob.c 380>
+  706 					va_start: <>
+  707 					syslog: <>
+  708 					vsyslog: <>
+  709 					va_end: <>
+  710 					rcleanup: void (), <./lpd/recvjob.c 362>
+  711 						strchr: <>
+  712 						unlink: <>
+  713 					sleep: <>
+  714 					putchar: <>
+  715 					exit: <>
+  716 				fatal: 27
+  717 				close: <>
+  718 				open: <>
+  719 				syslog: <>
+  720 				chdir: <>
+  721 				strerror: <>
+  722 				stat: <>
+  723 				putchar: <>
+  724 				exit: <>
+  725 				read_number: int (), <./lpd/recvjob.c 343>
+  726 					fopen: <>
+  727 					fgets: <>
+  728 					fclose: <>
+  729 					atoi: <>
+  730 				signal: <>
+  731 				rcleanup: 710
+  732 				readjob: int (), <./lpd/recvjob.c 146>
+  733 					ack: <>
+  734 					read: <>
+  735 					frecverr: 705
+  736 					rcleanup: 710
+  737 					strlcpy: <>
+  738 					strchr: <>
+  739 					chksize: int (), <./lpd/recvjob.c 326>
+  740 						statfs: <>
+  741 						syslog: <>
+  742 					write: <>
+  743 					readfile: int (), <./lpd/recvjob.c 256>
+  744 						open: <>
+  745 						frecverr: 705
+  746 						strerror: <>
+  747 						ack: <>
+  748 						read: <>
+  749 						write: <>
+  750 						close: <>
+  751 						noresponse: int (), <./lpd/recvjob.c 308>
+  752 							read: <>
+  753 							frecverr: 705
+  754 						strchr: <>
+  755 						unlink: <>
+  756 					ctl_renametf: char * (), <./common_source/ctlinfo.c 428>
+  757 						stat: <>
+  758 						strlcpy: <>
+  759 						link: <>
+  760 						snprintf: <>
+  761 						strerror: <>
+  762 						strdup: <>
+  763 						unlink: <>
+  764 						isalpha: <>
+  765 						ctl_readcf: struct cjobinfo (), <./common_source/ctlinfo.c 270>
+  766 						open: <>
+  767 						fdopen: <>
+  768 						close: <>
+  769 						strcmp: <>
+  770 						fprintf: <>
+  771 						islowerch: <>
+  772 						isdigitch: <>
+  773 						strchr: <>
+  774 						isupperch: <>
+  775 						getpwnam: <>
+  776 						tolowerch: <>
+  777 						ctl_rewindcf: void (), <./common_source/ctlinfo.c 746>
+  778 							syslog: <>
+  779 							rewind: <>
+  780 						ctl_getline: char * (), <./common_source/ctlinfo.c 862>
+  781 							syslog: <>
+  782 							fgets: <>
+  783 							strerror: <>
+  784 							strchr: <>
+  785 							fprintf: <>
+  786 						strncmp: <>
+  787 						ctl_freeinf: __END_DECLS void (), <./common_source/ctlinfo.c 225>
+  788 							syslog: <>
+  789 							FREESTR: <>
+  790 							fclose: <>
+  791 							free: <>
+  792 						fclose: <>
+  793 						strlcat: <>
+  794 						rename: <>
+  795 					trstat_init: 601
+  796 					trstat_write: 617
+  797 				printjob: 363
+  798 			isspace: <>
+  799 			isdigit: <>
+  800 			atoi: <>
+  801 			getprintcap: 180
+  802 			pcaperr: 177
+  803 			displayq: 59
+  804 			rmjob: 241
+  805 		strdup: <>
+  806 		setprintcap: void (), <./common_source/printcap.c 80>
+  807 		usage: void (), <./chkprintcap/chkprintcap.c 314>
+  808 			fprintf: <>
+  809 			exit: <>
+  810 		skim_printcap: struct skiminfo (), <./chkprintcap/skimprintcap.c 74>
+  811 		interpret_error: int (), <./chkprintcap/chkprintcap.c 168>
+  812 			err: <>
+  813 			warnx: <>
+  814 			errx: <>
+  815 		stat: <>
+  816 		make_spool_dir: void (), <./chkprintcap/chkprintcap.c 280>
+  817 			mkdir: <>
+  818 			warn: <>
+  819 			getgrnam: <>
+  820 			errx: <>
+  821 			chown: <>
+  822 			chmod: <>
+  823 			stat: <>
+  824 			err: <>
+  825 			note_spool_dir: void (), <./chkprintcap/chkprintcap.c 220>
+  826 				malloc: <>
+  827 				err: <>
+  828 				strdup: <>
+  829 				strlen: <>
+  830 				LIST_FOREACH: <>
+  831 				link: <>
+  832 				lessp: <>
+  833 				LIST_INSERT_AFTER: <>
+  834 				LIST_INSERT_HEAD: <>
+  835 		warn: <>
+  836 		note_spool_dir: 825
+  837 		check_spool_dirs: void (), <./chkprintcap/chkprintcap.c 251>
+  838 			LIST_FIRST: <>
+  839 			LIST_NEXT: <>
+  840 			link: <>
+  841 			equal: int (), <./chkprintcap/chkprintcap.c 213>
+  842 			strcmp: <>
+  843 			warnx: <>
+  844 		warnx: <>
+  845 		atof: <>
+  846 		usage: void (), <./pac/pac.c 195>
+  847 			fprintf: <>
+  848 			exit: <>
+  849 		enter: struct hent (), <./pac/pac.c 332>
+  850 		chkprinter: int (), <./pac/pac.c 424>
+  851 			init_printer: 35
+  852 			getprintcap: 180
+  853 			printf: <>
+  854 			pcaperr: 177
+  855 			exit: <>
+  856 			fatal: 27
+  857 			errx: <>
+  858 			calloc: <>
+  859 			strlen: <>
+  860 			strcpy: <>
+  861 			strcat: <>
+  862 		fopen: <>
+  863 		perror: <>
+  864 		account: void (), <./pac/pac.c 211>
+  865 			fgets: <>
+  866 			any: int (), <./pac/pac.c 388>
+  867 			atof: <>
+  868 			atoi: <>
+  869 			strchr: <>
+  870 			lookup: struct hent (), <./pac/pac.c 357>
+  871 			enter: struct hent (), <./pac/pac.c 332>
+  872 		fclose: <>
+  873 		rewrite: void (), <./pac/pac.c 292>
+  874 			fopen: <>
+  875 			warn: <>
+  876 			fprintf: <>
+  877 			fflush: <>
+  878 			ferror: <>
+  879 			fclose: <>
+  880 		dumpit: void (), <./pac/pac.c 253>
+  881 			calloc: <>
+  882 			qsort: <>
+  883 			qucmp: int (), <./pac/pac.c 405>
+  884 				strcmp: <>
+  885 			printf: <>
+  886 		cleanup: void (), <./lpr/lpr.c 668>
+  887 			signal: <>
+  888 			PRIV_START: <>
+  889 			unlink: <>
+  890 			exit: <>
+  891 		strtol: <>
+  892 		usage: void (), <./lpr/lpr.c 828>
+  893 			fprintf: <>
+  894 			exit: <>
+  895 		chkprinter: void (), <./lpr/lpr.c 807>
+  896 			init_printer: 35
+  897 			getprintcap: 180
+  898 			errx: <>
+  899 			pcaperr: 177
+  900 			warnx: <>
+  901 		getgrnam: <>
+  902 		getgid: <>
+  903 		strcmp: <>
+  904 		lock_file_name: char * (), <./common_source/common.c 281>
+  905 			strlcpy: <>
+  906 			snprintf: <>
+  907 		mktemps: void (), <./lpr/lpr.c 842>
+  908 			snprintf: <>
+  909 			PRIV_START: <>
+  910 			open: <>
+  911 			printf: <>
+  912 			exit: <>
+  913 			flock: <>
+  914 			read: <>
+  915 			strlen: <>
+  916 			lmktemp: char * (), <./lpr/lpr.c 883>
+  917 				malloc: <>
+  918 				errx: <>
+  919 				snprintf: <>
+  920 			lseek: <>
+  921 			write: <>
+  922 			close: <>
+  923 		nfile: int (), <./lpr/lpr.c 636>
+  924 			umask: <>
+  925 			PRIV_START: <>
+  926 			open: <>
+  927 			printf: <>
+  928 			cleanup: 886
+  929 			fchown: <>
+  930 		PRIV_START: <>
+  931 		fchown: <>
+  932 		card: void (), <./lpr/lpr.c 617>
+  933 			write: <>
+  934 		strrchr: <>
+  935 		itoa: char * (), <./lpr/lpr.c 791>
+  936 		setlocale: <>
+  937 		copy: void (), <./lpr/lpr.c 537>
+  938 			card: 932
+  939 			nfile: 923
+  940 			read: <>
+  941 			write: <>
+  942 			printf: <>
+  943 			close: <>
+  944 		test: int (), <./lpr/lpr.c 702>
+  945 			access: <>
+  946 			printf: <>
+  947 			stat: <>
+  948 			open: <>
+  949 			read: <>
+  950 			N_BADMAG: <>
+  951 			close: <>
+  952 			strrchr: <>
+  953 			checkwriteperm: int (), <./lpr/lpr.c 772>
+  954 				access: <>
+  955 				stat: <>
+  956 			malloc: <>
+  957 			strlcpy: <>
+  958 			free: <>
+  959 		linked: const char * (), <./lpr/lpr.c 579>
+  960 			getcwd: <>
+  961 			strrchr: <>
+  962 			strncat: <>
+  963 			strlen: <>
+  964 			PRIV_START: <>
+  965 			symlink: <>
+  966 		snprintf: <>
+  967 		lstat: <>
+  968 		S_ISLNK: <>
+  969 		link: <>
+  970 		chown: <>
+  971 		getegid: <>
+  972 		chmod: <>
+  973 		read: <>
+  974 		lseek: <>
+  975 		startdaemon: 307

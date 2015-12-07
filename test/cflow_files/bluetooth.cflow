@@ -1,0 +1,945 @@
+    1 	main: int (), <./ath3kfw/ath3kfw.c 70>
+    2 		int32_t: <>
+    3 		memset: <>
+    4 		getopt: <>
+    5 		bt_aton: <>
+    6 		bt_gethostbyname: <>
+    7 		errx: <>
+    8 		hstrerror: <>
+    9 		memcpy: <>
+   10 		strtol: <>
+   11 		usage: void (), <./bthidd/bthidd.c 252>
+   12 			fprintf: <>
+   13 			exit: <>
+   14 		openlog: <>
+   15 		daemon: <>
+   16 		syslog: <>
+   17 		strerror: <>
+   18 		exit: <>
+   19 		sighandler: void (), <./bthidd/bthidd.c 241>
+   20 			syslog: <>
+   21 		sigaction: <>
+   22 		read_config_file: <>
+   23 		read_hids_file: <>
+   24 		server_init: int32_t (), <./sdpd/server.c 66>
+   25 			assert: <>
+   26 			FD_ZERO: <>
+   27 			LIST_INIT: <>
+   28 			open: <>
+   29 			syslog: <>
+   30 			strerror: <>
+   31 			socket: <>
+   32 			close: <>
+   33 			memcpy: <>
+   34 			htole16: <>
+   35 			bind: <>
+   36 			listen: <>
+   37 			FD_SET: <>
+   38 			max: <>
+   39 			int32_t: <>
+   40 			memset: <>
+   41 			unlink: <>
+   42 			log_crit: void (), <./sdpd/log.c 69>
+   43 				va_start: <>
+   44 				vsyslog: <>
+   45 				va_end: <>
+   46 			strlcpy: <>
+   47 			chmod: <>
+   48 			getsockopt: <>
+   49 			calloc: <>
+   50 			free: <>
+   51 			provider_register_sd: int32_t (), <./sdpd/provider.c 50>
+   52 				calloc: <>
+   53 				free: <>
+   54 				TAILQ_INSERT_HEAD: <>
+   55 				TAILQ_INSERT_AFTER: <>
+   56 		write_pid_file: int32_t (), <./bthidd/bthidd.c 180>
+   57 			assert: <>
+   58 			fopen: <>
+   59 			syslog: <>
+   60 			strerror: <>
+   61 			fprintf: <>
+   62 			getpid: <>
+   63 			fclose: <>
+   64 		elapsed: int32_t (), <./bthidd/bthidd.c 221>
+   65 			gettimeofday: <>
+   66 		client_rescan: int32_t (), <./bthidd/client.c 62>
+   67 			assert: <>
+   68 			get_next_hid_device: <>
+   69 			session_by_bdaddr: bthid_session_p (), <./bthidd/session.c 108>
+   70 				assert: <>
+   71 				LIST_FOREACH: <>
+   72 				memcmp: <>
+   73 			syslog: <>
+   74 			bt_ntoa: <>
+   75 			session_open: bthid_session_p (), <./bthidd/session.c 55>
+   76 				assert: <>
+   77 				malloc: <>
+   78 				memcpy: <>
+   79 				open: <>
+   80 				syslog: <>
+   81 				bt_ntoa: <>
+   82 				strerror: <>
+   83 				free: <>
+   84 				bit_alloc: <>
+   85 				kbd_maxkey: int32_t (), <./bthidd/kbd.c 326>
+   86 				LIST_INSERT_HEAD: <>
+   87 			client_socket: int (), <./bthidd/client.c 216>
+   88 				int32_t: <>
+   89 				socket: <>
+   90 				fcntl: <>
+   91 				close: <>
+   92 				memset: <>
+   93 				bind: <>
+   94 				memcpy: <>
+   95 				htole16: <>
+   96 				connect: <>
+   97 			strerror: <>
+   98 			session_close: void (), <./bthidd/session.c 146>
+   99 				assert: <>
+  100 				LIST_REMOVE: <>
+  101 				FD_CLR: <>
+  102 				close: <>
+  103 				free: <>
+  104 				memset: <>
+  105 			FD_SET: <>
+  106 		server_do: int32_t (), <./sdpd/server.c 248>
+  107 			int32_t: <>
+  108 			assert: <>
+  109 			memcpy: <>
+  110 			select: <>
+  111 			syslog: <>
+  112 			strerror: <>
+  113 			FD_ISSET: <>
+  114 			server_accept: int32_t (), <./bthidd/server.c 224>
+  115 				int32_t: <>
+  116 				accept: <>
+  117 				syslog: <>
+  118 				strerror: <>
+  119 				get_hid_device: <>
+  120 				bt_ntoa: <>
+  121 				close: <>
+  122 				session_by_bdaddr: 69
+  123 				write_hids_file: <>
+  124 				session_open: 75
+  125 				assert: <>
+  126 				FD_SET: <>
+  127 			server_process: int32_t (), <./bthidd/server.c 300>
+  128 				session_by_fd: bthid_session_p (), <./bthidd/session.c 127>
+  129 					assert: <>
+  130 					LIST_FOREACH: <>
+  131 				int32_t: <>
+  132 				hid_control: int32_t (), <./bthidd/hid.c 57>
+  133 					assert: <>
+  134 					syslog: <>
+  135 					bt_ntoa: <>
+  136 					session_close: 98
+  137 				hid_interrupt: int32_t (), <./bthidd/hid.c 121>
+  138 					int32_t: <>
+  139 					usage: void (), <./rfcomm_pppd/rfcomm_pppd.c 453>
+  140 						fprintf: <>
+  141 						exit: <>
+  142 					assert: <>
+  143 					syslog: <>
+  144 					bt_ntoa: <>
+  145 					get_hid_device: <>
+  146 					hid_start_parse: <>
+  147 					hid_get_item: <>
+  148 					HID_PAGE: <>
+  149 					hid_get_data: <>
+  150 					HID_USAGE: <>
+  151 					kbd_maxkey: 85
+  152 					bit_set: <>
+  153 					write: <>
+  154 					hid_end_parse: <>
+  155 					kbd_process_keys: int32_t (), <./bthidd/kbd.c 336>
+  156 						bitstr_size: <>
+  157 						int32_t: <>
+  158 						assert: <>
+  159 						bit_ffs: <>
+  160 						kbd_write: void (), <./bthidd/kbd.c 411>
+  161 							int32_t: <>
+  162 							bit_test: <>
+  163 							kbd_xlate: int32_t (), <./bthidd/kbd.c 455>
+  164 								int32_t: <>
+  165 								PUT: <>
+  166 							write: <>
+  167 						memset: <>
+  168 						memcpy: <>
+  169 						bit_test: <>
+  170 						bit_clear: <>
+  171 						bit_set: <>
+  172 					ioctl: <>
+  173 					strerror: <>
+  174 				assert: <>
+  175 				kbd_status_changed: int32_t (), <./bthidd/kbd.c 514>
+  176 					assert: <>
+  177 					memcpy: <>
+  178 					get_hid_device: <>
+  179 					hid_start_parse: <>
+  180 					hid_get_item: <>
+  181 					HID_PAGE: <>
+  182 					syslog: <>
+  183 					bt_ntoa: <>
+  184 					HID_USAGE: <>
+  185 					hid_set_data: <>
+  186 					hid_end_parse: <>
+  187 					write: <>
+  188 				read: <>
+  189 				syslog: <>
+  190 				bt_ntoa: <>
+  191 				strerror: <>
+  192 				session_close: 98
+  193 			client_connect: int32_t (), <./bthidd/client.c 119>
+  194 				int32_t: <>
+  195 				assert: <>
+  196 				session_by_fd: 128
+  197 				get_hid_device: <>
+  198 				getsockopt: <>
+  199 				syslog: <>
+  200 				bt_ntoa: <>
+  201 				strerror: <>
+  202 				session_close: 98
+  203 				client_socket: 87
+  204 				FD_SET: <>
+  205 				write_hids_file: <>
+  206 				FD_CLR: <>
+  207 			log_err: void (), <./sdpd/log.c 79>
+  208 				va_start: <>
+  209 				vsyslog: <>
+  210 				va_end: <>
+  211 			server_accept_client: void (), <./sdpd/server.c 291>
+  212 				int32_t: <>
+  213 				accept: <>
+  214 				log_err: 207
+  215 				strerror: <>
+  216 				assert: <>
+  217 				FD_ISSET: <>
+  218 				getsockname: <>
+  219 				close: <>
+  220 				getsockopt: <>
+  221 				memset: <>
+  222 				getpwuid: <>
+  223 				strcmp: <>
+  224 				log_warning: void (), <./sdpd/log.c 89>
+  225 					va_start: <>
+  226 					vsyslog: <>
+  227 					va_end: <>
+  228 				memcpy: <>
+  229 				calloc: <>
+  230 				log_crit: 42
+  231 				FD_SET: <>
+  232 			server_process_request: int32_t (), <./sdpd/server.c 407>
+  233 				int32_t: <>
+  234 				assert: <>
+  235 				FD_ISSET: <>
+  236 				read: <>
+  237 				log_err: 207
+  238 				strerror: <>
+  239 				log_info: void (), <./sdpd/log.c 109>
+  240 					va_start: <>
+  241 					vsyslog: <>
+  242 					va_end: <>
+  243 				ntohs: <>
+  244 				server_prepare_service_search_response: int32_t (), <./sdpd/ssr.c 52>
+  245 					int32_t: <>
+  246 					SDP_GET8: <>
+  247 					SDP_GET16: <>
+  248 					SDP_GET32: <>
+  249 					memcpy: <>
+  250 					provider_get_first: provider_p (), <./sdpd/provider.c 177>
+  251 						TAILQ_FIRST: <>
+  252 					provider_get_next: provider_p (), <./sdpd/provider.c 183>
+  253 						TAILQ_NEXT: <>
+  254 					provider_match_bdaddr: <>
+  255 					memcmp: <>
+  256 					SDP_PUT32: <>
+  257 				server_prepare_service_attribute_response: int32_t (), <./sdpd/sar.c 143>
+  258 					int32_t: <>
+  259 					SDP_GET32: <>
+  260 					SDP_GET16: <>
+  261 					SDP_GET8: <>
+  262 					provider_by_handle: provider_p (), <./sdpd/provider.c 161>
+  263 						TAILQ_FOREACH: <>
+  264 					server_prepare_attr_list: int32_t (), <./sdpd/sar.c 85>
+  265 						int32_t: <>
+  266 						SDP_GET8: <>
+  267 						SDP_GET16: <>
+  268 						server_prepare_attr_value_pair: int32_t (), <./sdpd/sar.c 55>
+  269 							cf: <>
+  270 							profile_get_attr: profile_attr_create_p (), <./sdpd/profile.c 87>
+  271 							int32_t: <>
+  272 							SDP_PUT8: <>
+  273 							SDP_PUT16: <>
+  274 						SDP_PUT8: <>
+  275 						SDP_PUT16: <>
+  276 				server_prepare_service_search_attribute_response: int32_t (), <./sdpd/ssar.c 52>
+  277 					int32_t: <>
+  278 					SDP_GET8: <>
+  279 					SDP_GET16: <>
+  280 					SDP_GET32: <>
+  281 					memcpy: <>
+  282 					provider_get_first: 250
+  283 					provider_get_next: 252
+  284 					provider_match_bdaddr: <>
+  285 					memcmp: <>
+  286 					server_prepare_attr_list: 264
+  287 					SDP_PUT8: <>
+  288 					SDP_PUT16: <>
+  289 				server_prepare_service_register_response: int32_t (), <./sdpd/srr.c 51>
+  290 					int32_t: <>
+  291 					SDP_GET16: <>
+  292 					profile_get_descriptor: profile_p (), <./sdpd/profile.c 47>
+  293 						int32_t: <>
+  294 					provider_register: provider_p (), <./sdpd/provider.c 88>
+  295 						calloc: <>
+  296 						malloc: <>
+  297 						memcpy: <>
+  298 						TAILQ_INSERT_TAIL: <>
+  299 						free: <>
+  300 					SDP_PUT16: <>
+  301 					SDP_PUT32: <>
+  302 				server_prepare_service_unregister_response: int32_t (), <./sdpd/sur.c 47>
+  303 					SDP_GET32: <>
+  304 					provider_by_handle: 262
+  305 					provider_unregister: void (), <./sdpd/provider.c 129>
+  306 						TAILQ_REMOVE: <>
+  307 						free: <>
+  308 					SDP_PUT16: <>
+  309 				server_prepare_service_change_response: int32_t (), <./sdpd/scr.c 47>
+  310 					SDP_GET32: <>
+  311 					provider_by_handle: 262
+  312 					provider_update: int32_t (), <./sdpd/provider.c 143>
+  313 						realloc: <>
+  314 						memcpy: <>
+  315 					SDP_PUT16: <>
+  316 				server_send_service_search_response: int32_t (), <./sdpd/ssr.c 214>
+  317 					int32_t: <>
+  318 					assert: <>
+  319 					htons: <>
+  320 					writev: <>
+  321 				server_send_service_attribute_response: int32_t (), <./sdpd/sar.c 247>
+  322 					int32_t: <>
+  323 					assert: <>
+  324 					htons: <>
+  325 					writev: <>
+  326 				server_send_service_search_attribute_response: <>
+  327 				server_send_service_register_response: int32_t (), <./sdpd/srr.c 112>
+  328 					int32_t: <>
+  329 					assert: <>
+  330 					htons: <>
+  331 					writev: <>
+  332 				server_send_service_unregister_response: <>
+  333 				server_send_service_change_response: <>
+  334 				server_send_error_response: int32_t (), <./sdpd/server.c 536>
+  335 					int32_t: <>
+  336 					htons: <>
+  337 					write: <>
+  338 			server_close_fd: void (), <./sdpd/server.c 563>
+  339 				assert: <>
+  340 				FD_ISSET: <>
+  341 				close: <>
+  342 				FD_CLR: <>
+  343 				free: <>
+  344 				memset: <>
+  345 				provider_get_first: 250
+  346 				provider_get_next: 252
+  347 				provider_unregister: 305
+  348 		server_shutdown: void (), <./sdpd/server.c 227>
+  349 			assert: <>
+  350 			close: <>
+  351 			LIST_EMPTY: <>
+  352 			session_close: 98
+  353 			LIST_FIRST: <>
+  354 			memset: <>
+  355 			server_close_fd: 338
+  356 			free: <>
+  357 		remove_pid_file: int32_t (), <./bthidd/bthidd.c 203>
+  358 			assert: <>
+  359 			unlink: <>
+  360 			syslog: <>
+  361 			strerror: <>
+  362 		clean_config: <>
+  363 		closelog: <>
+  364 		strtoul: <>
+  365 		tolower: <>
+  366 		usage: 139
+  367 		memcmp: <>
+  368 		rfcomm_channel_lookup: <>
+  369 		errc: <>
+  370 		socket: <>
+  371 		sighandler: void (), <./rfcomm_pppd/rfcomm_pppd.c 446>
+  372 		bind: <>
+  373 		listen: <>
+  374 		sdp_open_local: <>
+  375 		sdp_error: <>
+  376 		sdp_register_service: <>
+  377 		accept: <>
+  378 		fork: <>
+  379 		sdp_close: <>
+  380 		close: <>
+  381 		exec_ppp: void (), <./rfcomm_pppd/rfcomm_pppd.c 405>
+  382 			close: <>
+  383 			dup: <>
+  384 			syslog: <>
+  385 			strerror: <>
+  386 			exit: <>
+  387 			open: <>
+  388 			execv: <>
+  389 		connect: <>
+  390 		usage: void (), <./l2control/l2control.c 209>
+  391 			fprintf: <>
+  392 			exit: <>
+  393 		do_l2cap_command: int (), <./l2control/l2control.c 98>
+  394 			strcasecmp: <>
+  395 			fprintf: <>
+  396 			print_l2cap_command: void (), <./l2control/l2control.c 199>
+  397 				fprintf: <>
+  398 			find_l2cap_command: struct l2cap_command (), <./l2control/l2control.c 178>
+  399 			memcmp: <>
+  400 			usage: 390
+  401 			memset: <>
+  402 			memcpy: <>
+  403 			socket: <>
+  404 			err: <>
+  405 			bind: <>
+  406 			bt_ntoa: <>
+  407 			setsockopt: <>
+  408 			close: <>
+  409 			strerror: <>
+  410 			assert: <>
+  411 		bdaddr_copy: <>
+  412 		bt_devaddr: <>
+  413 		strchr: <>
+  414 		asprintf: <>
+  415 		warnx: <>
+  416 		L2CAP_PSM_INVALID: <>
+  417 		strcasecmp: <>
+  418 		usage: void (), <./btpand/btpand.c 265>
+  419 			getprogname: <>
+  420 			strlen: <>
+  421 			fprintf: <>
+  422 			exit: <>
+  423 		bdaddr_any: <>
+  424 		err: <>
+  425 		signal: <>
+  426 		getprogname: <>
+  427 		channel_init: void (), <./btpand/channel.c 51>
+  428 			LIST_INIT: <>
+  429 		event_init: void (), <./btpand/event.c 69>
+  430 			TAILQ_INIT: <>
+  431 		client_init: void (), <./btpand/client.c 46>
+  432 			bdaddr_any: <>
+  433 			client_query: void (), <./btpand/client.c 166>
+  434 				SDP_ATTR_RANGE: <>
+  435 				sdp_open: <>
+  436 				sdp_error: <>
+  437 				log_err: 207
+  438 				exit: <>
+  439 				log_info: 239
+  440 				bt_ntoa: <>
+  441 				sdp_search: <>
+  442 				strerror: <>
+  443 				sdp_close: <>
+  444 			socket: <>
+  445 			log_err: 207
+  446 			exit: <>
+  447 			memset: <>
+  448 			bdaddr_copy: <>
+  449 			bind: <>
+  450 			setsockopt: <>
+  451 			log_info: 239
+  452 			bt_ntoa: <>
+  453 			htole16: <>
+  454 			connect: <>
+  455 			getsockopt: <>
+  456 			close: <>
+  457 			channel_alloc: channel_t * (), <./btpand/channel.c 58>
+  458 				malloc: <>
+  459 				log_err: 207
+  460 				memset: <>
+  461 				STAILQ_INIT: <>
+  462 				LIST_INSERT_HEAD: <>
+  463 				server_update: void (), <./btpand/server.c 70>
+  464 					log_debug: void (), <./sdpd/log.c 119>
+  465 						va_start: <>
+  466 						vsyslog: <>
+  467 						va_end: <>
+  468 					log_info: 239
+  469 					server_close: void (), <./btpand/server.c 138>
+  470 						event_del: <>
+  471 						close: <>
+  472 						log_info: 239
+  473 					server_open: void (), <./btpand/server.c 92>
+  474 						socket: <>
+  475 						log_err: 207
+  476 						exit: <>
+  477 						memset: <>
+  478 						htole16: <>
+  479 						bdaddr_copy: <>
+  480 						bind: <>
+  481 						setsockopt: <>
+  482 						listen: <>
+  483 						event_set: <>
+  484 						server_read: void (), <./btpand/server.c 152>
+  485 							accept: <>
+  486 							ioctl: <>
+  487 							log_err: 207
+  488 							close: <>
+  489 							getsockopt: <>
+  490 							setsockopt: <>
+  491 							log_info: 239
+  492 							getsockname: <>
+  493 							bt_ntoa: <>
+  494 							channel_alloc: 457
+  495 							bnep_send: bool (), <./btpand/bnep.c 634>
+  496 								memcmp: <>
+  497 								memcpy: <>
+  498 								STAILQ_FOREACH: <>
+  499 								bnep_pfilter: bool (), <./btpand/bnep.c 720>
+  500 									be16dec: <>
+  501 								bnep_mfilter: bool (), <./btpand/bnep.c 742>
+  502 									ETHER_IS_MULTICAST: <>
+  503 									memcmp: <>
+  504 								be16dec: <>
+  505 								memset: <>
+  506 								log_err: 207
+  507 								writev: <>
+  508 							bnep_recv: bool (), <./btpand/bnep.c 86>
+  509 								packet_adj: void (), <./btpand/packet.c 78>
+  510 									assert: <>
+  511 								BNEP_TYPE: <>
+  512 								log_debug: 464
+  513 								bnep_recv_control: size_t (), <./btpand/bnep.c 229>
+  514 									bnep_recv_control_command_not_understood: size_t (), <./btpand/bnep.c 286>
+  515 										log_err: 207
+  516 										channel_close: void (), <./btpand/channel.c 117>
+  517 											assert: <>
+  518 											log_debug: 464
+  519 											event_del: <>
+  520 											close: <>
+  521 											STAILQ_FIRST: <>
+  522 											STAILQ_REMOVE_HEAD: <>
+  523 											pkthdr_free: void (), <./btpand/packet.c 106>
+  524 												packet_free: void (), <./btpand/packet.c 58>
+  525 													STAILQ_FIRST: <>
+  526 													STAILQ_REMOVE_HEAD: <>
+  527 													free: <>
+  528 													channel_free: void (), <./btpand/channel.c 148>
+  529 														assert: <>
+  530 														STAILQ_EMPTY: <>
+  531 														LIST_REMOVE: <>
+  532 														free: <>
+  533 														server_update: 463
+  534 														log_info: 239
+  535 														exit: <>
+  536 												free: <>
+  537 											pidfile_remove: <>
+  538 											channel_free: 528
+  539 									bnep_recv_setup_connection_req: size_t (), <./btpand/bnep.c 303>
+  540 										log_debug: 464
+  541 										memcmp: <>
+  542 										channel_timeout: void (), <./btpand/channel.c 296>
+  543 											evtimer_set: <>
+  544 											channel_watchdog: void (), <./btpand/channel.c 312>
+  545 												LIST_FIRST: <>
+  546 												LIST_NEXT: <>
+  547 												channel_close: 516
+  548 												evtimer_add: <>
+  549 												log_err: 207
+  550 												exit: <>
+  551 										ether_ntoa: <>
+  552 										bnep_send_control: void (), <./btpand/bnep.c 577>
+  553 											assert: <>
+  554 											packet_alloc: packet_t * (), <./btpand/packet.c 37>
+  555 												malloc: <>
+  556 												log_err: 207
+  557 												memset: <>
+  558 												STAILQ_INIT: <>
+  559 											va_start: <>
+  560 											va_arg: <>
+  561 											be16enc: <>
+  562 											log_err: 207
+  563 											va_end: <>
+  564 											channel_put: void (), <./btpand/channel.c 276>
+  565 												pkthdr_alloc: pkthdr_t * (), <./btpand/packet.c 89>
+  566 													malloc: <>
+  567 													log_err: 207
+  568 												STAILQ_INSERT_TAIL: <>
+  569 												channel_start: void (), <./btpand/channel.c 171>
+  570 													STAILQ_FIRST: <>
+  571 													channel_timeout: 542
+  572 													event_add: <>
+  573 													log_err: 207
+  574 													channel_close: 516
+  575 													STAILQ_REMOVE_HEAD: <>
+  576 													pkthdr_free: 523
+  577 											packet_free: 524
+  578 									bnep_recv_setup_connection_rsp: size_t (), <./btpand/bnep.c 377>
+  579 										be16dec: <>
+  580 										log_debug: 464
+  581 										ether_ntoa: <>
+  582 										channel_timeout: 542
+  583 										channel_close: 516
+  584 									bnep_recv_filter_net_type_set: size_t (), <./btpand/bnep.c 405>
+  585 										be16dec: <>
+  586 										log_debug: 464
+  587 										malloc: <>
+  588 										free: <>
+  589 										ether_ntoa: <>
+  590 										bnep_send_control: 552
+  591 									bnep_recv_filter_net_type_rsp: size_t (), <./btpand/bnep.c 466>
+  592 										log_debug: 464
+  593 										be16dec: <>
+  594 										ether_ntoa: <>
+  595 									bnep_recv_filter_multi_addr_set: size_t (), <./btpand/bnep.c 488>
+  596 										be16dec: <>
+  597 										log_debug: 464
+  598 										malloc: <>
+  599 										memcpy: <>
+  600 										memcmp: <>
+  601 										free: <>
+  602 										ether_ntoa: <>
+  603 										bnep_send_control: 552
+  604 									bnep_recv_filter_multi_addr_rsp: size_t (), <./btpand/bnep.c 556>
+  605 										log_debug: 464
+  606 										be16dec: <>
+  607 										ether_ntoa: <>
+  608 									bnep_send_control: 552
+  609 								BNEP_TYPE_EXT: <>
+  610 								bnep_recv_extension: bool (), <./btpand/bnep.c 180>
+  611 									bnep_recv_control: 513
+  612 									log_err: 207
+  613 									malloc: <>
+  614 									STAILQ_INSERT_TAIL: <>
+  615 									packet_adj: 509
+  616 									BNEP_TYPE_EXT: <>
+  617 							b2eaddr: <>
+  618 							channel_timeout: 542
+  619 							channel_open: bool (), <./btpand/channel.c 79>
+  620 								assert: <>
+  621 								malloc: <>
+  622 								log_err: 207
+  623 								ioctl: <>
+  624 								event_set: <>
+  625 								channel_read: void (), <./btpand/channel.c 200>
+  626 									packet_alloc: 554
+  627 									channel_close: 516
+  628 									read: <>
+  629 									log_err: 207
+  630 									packet_free: 524
+  631 									log_debug: 464
+  632 									channel_dispatch: void (), <./btpand/channel.c 234>
+  633 										ETHER_IS_MULTICAST: <>
+  634 										LIST_FOREACH: <>
+  635 										memcmp: <>
+  636 										log_notice: void (), <./sdpd/log.c 99>
+  637 											va_start: <>
+  638 											vsyslog: <>
+  639 											va_end: <>
+  640 										channel_put: 564
+  641 								event_add: <>
+  642 								channel_start: 569
+  643 								log_debug: 464
+  644 							channel_free: 528
+  645 						event_add: <>
+  646 						log_info: 239
+  647 					server_register: void (), <./btpand/server.c 263>
+  648 						sdp_open_local: <>
+  649 						sdp_error: <>
+  650 						log_err: 207
+  651 						memset: <>
+  652 						sdp_change_service: <>
+  653 						sdp_register_service: <>
+  654 						exit: <>
+  655 			bnep_send: 495
+  656 			bnep_recv: 508
+  657 			b2eaddr: <>
+  658 			channel_timeout: 542
+  659 			channel_open: 619
+  660 			bnep_send_control: 552
+  661 		tap_init: void (), <./btpand/tap.c 53>
+  662 			open: <>
+  663 			log_err: 207
+  664 			exit: <>
+  665 			memset: <>
+  666 			ioctl: <>
+  667 			socket: <>
+  668 			b2eaddr: <>
+  669 			close: <>
+  670 			log_info: 239
+  671 			ether_ntoa: <>
+  672 			channel_alloc: 457
+  673 			tap_send: bool (), <./btpand/tap.c 132>
+  674 				writev: <>
+  675 				assert: <>
+  676 			tap_recv: bool (), <./btpand/tap.c 154>
+  677 				packet_adj: 509
+  678 			memcpy: <>
+  679 			channel_open: 619
+  680 			snprintf: <>
+  681 			pidfile_open: <>
+  682 			pidfile_write: <>
+  683 			pidfile_remove: <>
+  684 		main_detach: void (), <./btpand/btpand.c 243>
+  685 			kill: <>
+  686 			getppid: <>
+  687 			log_err: 207
+  688 			setsid: <>
+  689 			open: <>
+  690 			dup2: <>
+  691 			close: <>
+  692 		event_dispatch: int (), <./btpand/event.c 75>
+  693 		main_exit: void (), <./btpand/btpand.c 235>
+  694 		wait: <>
+  695 		WIFEXITED: <>
+  696 		WEXITSTATUS: <>
+  697 		usage: void (), <./sdpcontrol/sdpcontrol.c 208>
+  698 			fprintf: <>
+  699 			exit: <>
+  700 		do_sdp_command: int (), <./sdpcontrol/sdpcontrol.c 103>
+  701 			strcasecmp: <>
+  702 			fprintf: <>
+  703 			print_sdp_command: void (), <./sdpcontrol/sdpcontrol.c 198>
+  704 				fprintf: <>
+  705 			find_sdp_command: struct sdp_command (), <./sdpcontrol/sdpcontrol.c 177>
+  706 			memcmp: <>
+  707 			usage: 697
+  708 			sdp_open: <>
+  709 			sdp_open_local: <>
+  710 			errx: <>
+  711 			sdp_error: <>
+  712 			strerror: <>
+  713 			assert: <>
+  714 			sdp_close: <>
+  715 		atoi: <>
+  716 		usage: void (), <./hcseriald/hcseriald.c 256>
+  717 			fprintf: <>
+  718 			exit: <>
+  719 		open_device: int (), <./hcseriald/hcseriald.c 157>
+  720 			open: <>
+  721 			syslog: <>
+  722 			strerror: <>
+  723 			exit: <>
+  724 			tcflush: <>
+  725 			tcgetattr: <>
+  726 			cfmakeraw: <>
+  727 			tcsetattr: <>
+  728 			cfsetspeed: <>
+  729 			ioctl: <>
+  730 			memset: <>
+  731 			snprintf: <>
+  732 			NgMkSockNode: <>
+  733 			NgSendMsg: <>
+  734 			close: <>
+  735 		snprintf: <>
+  736 		fopen: <>
+  737 		fprintf: <>
+  738 		getpid: <>
+  739 		fclose: <>
+  740 		sighandler: void (), <./hcseriald/hcseriald.c 249>
+  741 		select: <>
+  742 		unlink: <>
+  743 		usage: void (), <./hcsecd/hcsecd.c 436>
+  744 			fprintf: <>
+  745 			exit: <>
+  746 		getuid: <>
+  747 		sigint: void (), <./hcsecd/hcsecd.c 428>
+  748 			syslog: <>
+  749 		sighup: void (), <./hcsecd/hcsecd.c 418>
+  750 			syslog: <>
+  751 			dump_keys_file: <>
+  752 			read_config_file: <>
+  753 			read_keys_file: <>
+  754 		bit_set: <>
+  755 		setsockopt: <>
+  756 		read_keys_file: <>
+  757 		recvfrom: <>
+  758 		process_pin_code_request_event: int (), <./hcsecd/hcsecd.c 211>
+  759 			syslog: <>
+  760 			bt_ntoa: <>
+  761 			get_key: <>
+  762 			send_pin_code_reply: int (), <./hcsecd/hcsecd.c 265>
+  763 				memset: <>
+  764 				htole16: <>
+  765 				NG_HCI_OPCODE: <>
+  766 				memcpy: <>
+  767 				strncpy: <>
+  768 				strlen: <>
+  769 				syslog: <>
+  770 				bt_ntoa: <>
+  771 				sendto: <>
+  772 				strerror: <>
+  773 		process_link_key_request_event: int (), <./hcsecd/hcsecd.c 238>
+  774 			syslog: <>
+  775 			bt_ntoa: <>
+  776 			get_key: <>
+  777 			send_link_key_reply: int (), <./hcsecd/hcsecd.c 324>
+  778 				memset: <>
+  779 				htole16: <>
+  780 				NG_HCI_OPCODE: <>
+  781 				memcpy: <>
+  782 				syslog: <>
+  783 				bt_ntoa: <>
+  784 				sendto: <>
+  785 				strerror: <>
+  786 		process_link_key_notification_event: int (), <./hcsecd/hcsecd.c 382>
+  787 			syslog: <>
+  788 			bt_ntoa: <>
+  789 			get_key: <>
+  790 			malloc: <>
+  791 			exit: <>
+  792 			memcpy: <>
+  793 		remove: <>
+  794 		dump_keys_file: <>
+  795 		bcmfw_usage: void (), <./bcmfw/bcmfw.c 296>
+  796 			fprintf: <>
+  797 			exit: <>
+  798 		bcmfw_check_device: int (), <./bcmfw/bcmfw.c 117>
+  799 			snprintf: <>
+  800 			open: <>
+  801 			syslog: <>
+  802 			strerror: <>
+  803 			ioctl: <>
+  804 			UGETW: <>
+  805 			close: <>
+  806 		bcmfw_load_firmware: int (), <./bcmfw/bcmfw.c 158>
+  807 			snprintf: <>
+  808 			open: <>
+  809 			syslog: <>
+  810 			strerror: <>
+  811 			read: <>
+  812 			write: <>
+  813 			close: <>
+  814 			usleep: <>
+  815 		hid_init: <>
+  816 		usage: void (), <./bthidcontrol/bthidcontrol.c 203>
+  817 			fprintf: <>
+  818 			exit: <>
+  819 		do_bthid_command: int (), <./bthidcontrol/bthidcontrol.c 111>
+  820 			strcasecmp: <>
+  821 			fprintf: <>
+  822 			print_bthid_command: void (), <./bthidcontrol/bthidcontrol.c 193>
+  823 				fprintf: <>
+  824 			find_bthid_command: struct bthid_command (), <./bthidcontrol/bthidcontrol.c 172>
+  825 			strerror: <>
+  826 			assert: <>
+  827 		usage: void (), <./sdpd/main.c 223>
+  828 			fprintf: <>
+  829 			exit: <>
+  830 		log_open: void (), <./sdpd/log.c 37>
+  831 			openlog: <>
+  832 		log_crit: 42
+  833 		sighandler: void (), <./sdpd/main.c 212>
+  834 			log_notice: 636
+  835 		drop_root: int32_t (), <./sdpd/main.c 150>
+  836 			getuid: <>
+  837 			log_notice: 636
+  838 			getgid: <>
+  839 			strtol: <>
+  840 			getpwnam: <>
+  841 			log_err: 207
+  842 			getgrnam: <>
+  843 			setgid: <>
+  844 			strerror: <>
+  845 			setuid: <>
+  846 		log_close: void (), <./sdpd/log.c 43>
+  847 			closelog: <>
+  848 		usage: void (), <./hccontrol/hccontrol.c 325>
+  849 			fprintf: <>
+  850 			exit: <>
+  851 		do_hci_command: int (), <./hccontrol/hccontrol.c 168>
+  852 			strcasecmp: <>
+  853 			fprintf: <>
+  854 			print_hci_command: void (), <./hccontrol/hccontrol.c 315>
+  855 				fprintf: <>
+  856 			find_hci_command: struct hci_command (), <./hccontrol/hccontrol.c 259>
+  857 			socket_open: int (), <./hccontrol/hccontrol.c 99>
+  858 				find_hci_nodes: int (), <./hccontrol/hccontrol.c 280>
+  859 					calloc: <>
+  860 					err: <>
+  861 					socket: <>
+  862 					memset: <>
+  863 					strncpy: <>
+  864 					bind: <>
+  865 					ioctl: <>
+  866 					close: <>
+  867 				errx: <>
+  868 				strdup: <>
+  869 				fprintf: <>
+  870 				free: <>
+  871 				socket: <>
+  872 				err: <>
+  873 				memset: <>
+  874 				strncpy: <>
+  875 				bind: <>
+  876 				connect: <>
+  877 				bit_set: <>
+  878 				setsockopt: <>
+  879 				sysctlnametomib: <>
+  880 				sysctl: <>
+  881 			close: <>
+  882 			strerror: <>
+  883 			assert: <>
+  884 		calloc: <>
+  885 		usage: void (), <./l2ping/l2ping.c 276>
+  886 			fprintf: <>
+  887 			int32_t: <>
+  888 			exit: <>
+  889 		bt_gethostbyaddr: <>
+  890 		bt_ntoa: <>
+  891 		strdup: <>
+  892 		min: <>
+  893 		gettimeofday: <>
+  894 		htonl: <>
+  895 		ioctl: <>
+  896 		tv_sub: void (), <./l2ping/l2ping.c 250>
+  897 		ntohl: <>
+  898 		tv2msec: double (), <./l2ping/l2ping.c 266>
+  899 		free: <>
+  900 		usage: void (), <./bt3cfw/bt3cfw.c 86>
+  901 			syslog: <>
+  902 			exit: <>
+  903 		fgets: <>
+  904 		hexa2int8: int (), <./bt3cfw/bt3cfw.c 65>
+  905 			hexa2int4: int (), <./bt3cfw/bt3cfw.c 48>
+  906 				syslog: <>
+  907 				exit: <>
+  908 		hexa2int32: int (), <./bt3cfw/bt3cfw.c 79>
+  909 			hexa2int16: int (), <./bt3cfw/bt3cfw.c 72>
+  910 				hexa2int8: 904
+  911 		hexa2int16: 909
+  912 		NgMkSockNode: <>
+  913 		NgSendMsg: <>
+  914 		parse_ugen_name: int (), <./ath3kfw/ath3kfw.c 138>
+  915 			strncmp: <>
+  916 			strtoul: <>
+  917 		usage: void (), <./ath3kfw/ath3kfw.c 283>
+  918 			printf: <>
+  919 			exit: <>
+  920 		libusb20_be_alloc_default: <>
+  921 		find_device: int (), <./ath3kfw/ath3kfw.c 161>
+  922 			libusb20_be_device_foreach: <>
+  923 			libusb20_dev_get_bus_number: <>
+  924 			libusb20_dev_get_address: <>
+  925 			libusb20_dev_get_device_desc: <>
+  926 		download_firmware: int (), <./ath3kfw/ath3kfw.c 192>
+  927 			libusb20_dev_open: <>
+  928 			syslog: <>
+  929 			libusb20_tr_get_pointer: <>
+  930 			libusb20_tr_open: <>
+  931 			open: <>
+  932 			strerror: <>
+  933 			read: <>
+  934 			LIBUSB20_INIT: <>
+  935 			libusb20_dev_request_sync: <>
+  936 			libusb20_tr_setup_bulk: <>
+  937 			libusb20_tr_start: <>
+  938 			libusb20_dev_process: <>
+  939 			libusb20_tr_pending: <>
+  940 			libusb20_dev_wait_process: <>
+  941 			libusb20_tr_get_status: <>
+  942 			close: <>
+  943 			libusb20_tr_close: <>
+  944 			libusb20_dev_close: <>
+  945 		libusb20_be_free: <>

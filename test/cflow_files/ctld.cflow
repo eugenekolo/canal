@@ -1,0 +1,640 @@
+    1 	main: int (), <./ctld.c 2495>
+    2 		getopt: <>
+    3 		log_errx: void (), <./log.c 156>
+    4 			va_start: <>
+    5 			log_common: void (), <./log.c 87>
+    6 				vsnprintf: <>
+    7 				fprintf: <>
+    8 				getprogname: <>
+    9 				syslog: <>
+   10 				exit: <>
+   11 				strnvis: <>
+   12 				strerror: <>
+   13 			va_end: <>
+   14 			exit: <>
+   15 		usage: void (), <./ctld.c 65>
+   16 			fprintf: <>
+   17 			exit: <>
+   18 		log_init: void (), <./log.c 51>
+   19 			openlog: <>
+   20 			getprogname: <>
+   21 		kernel_init: void (), <./kernel.c 79>
+   22 			open: <>
+   23 			kldload: <>
+   24 			log_err: void (), <./log.c 144>
+   25 				va_start: <>
+   26 				log_common: 5
+   27 				va_end: <>
+   28 				exit: <>
+   29 		conf_new_from_kernel: struct conf (), <./kernel.c 391>
+   30 		conf_new_from_file: <>
+   31 		conf_apply: int (), <./ctld.c 1805>
+   32 			log_debugx: void (), <./log.c 188>
+   33 				va_start: <>
+   34 				log_common: 5
+   35 				va_end: <>
+   36 			log_init: 18
+   37 			assert: <>
+   38 			strcmp: <>
+   39 			pidfile_remove: <>
+   40 			pidfile_open: <>
+   41 			log_errx: 3
+   42 			log_err: 24
+   43 			TAILQ_FOREACH: <>
+   44 			portal_group_find: struct portal_group (), <./ctld.c 650>
+   45 			isns_deregister: void (), <./ctld.c 976>
+   46 				TAILQ_EMPTY: <>
+   47 				set_timeout: void (), <./ctld.c 2204>
+   48 					log_debugx: 32
+   49 					bzero: <>
+   50 					setitimer: <>
+   51 					log_err: 24
+   52 					sigalrm_handler_fatal: void (), <./ctld.c 2177>
+   53 					sigalrm_handler: void (), <./ctld.c 2197>
+   54 					sigfillset: <>
+   55 					sigaction: <>
+   56 				isns_do_connect: int (), <./ctld.c 778>
+   57 					socket: <>
+   58 					log_warn: void (), <./log.c 168>
+   59 						va_start: <>
+   60 						log_common: 5
+   61 						va_end: <>
+   62 					connect: <>
+   63 					close: <>
+   64 				gethostname: <>
+   65 				isns_do_deregister: int (), <./ctld.c 891>
+   66 					isns_req_create: struct isns_req (), <./isns.c 69>
+   67 					isns_req_add_str: void (), <./isns.c 136>
+   68 						isns_req_add: void (), <./isns.c 111>
+   69 							isns_req_getspace: int (), <./isns.c 92>
+   70 								flsl: <>
+   71 								realloc: <>
+   72 								log_err: 24
+   73 							be32enc: <>
+   74 							memcpy: <>
+   75 							memset: <>
+   76 						strlen: <>
+   77 					TAILQ_FIRST: <>
+   78 					isns_req_add_delim: void (), <./isns.c 129>
+   79 						isns_req_add: 68
+   80 					isns_req_send: int (), <./isns.c 202>
+   81 						be16enc: <>
+   82 						be16dec: <>
+   83 						write: <>
+   84 					log_warn: 58
+   85 					isns_req_receive: int (), <./isns.c 219>
+   86 						isns_req_getspace: 69
+   87 						read: <>
+   88 						be16dec: <>
+   89 					isns_req_get_status: uint32_t (), <./isns.c 246>
+   90 						be32dec: <>
+   91 					log_warnx: void (), <./log.c 178>
+   92 						va_start: <>
+   93 						log_common: 5
+   94 						va_end: <>
+   95 					isns_req_free: void (), <./isns.c 84>
+   96 						free: <>
+   97 				close: <>
+   98 			TAILQ_FOREACH_SAFE: <>
+   99 			port_find: struct port (), <./ctld.c 1269>
+  100 			kernel_port_remove: int (), <./kernel.c 1081>
+  101 				bzero: <>
+  102 				ioctl: <>
+  103 				log_warn: 58
+  104 				strlcpy: <>
+  105 				malloc: <>
+  106 				log_err: 24
+  107 				str_arg: void (), <./kernel.c 646>
+  108 					strlen: <>
+  109 				snprintf: <>
+  110 				free: <>
+  111 				log_warnx: 91
+  112 			log_warnx: 91
+  113 			lun_find: struct lun (), <./ctld.c 1436>
+  114 			kernel_lun_remove: int (), <./kernel.c 826>
+  115 				bzero: <>
+  116 				strlcpy: <>
+  117 				ioctl: <>
+  118 				log_warn: 58
+  119 				log_warnx: 91
+  120 			lun_delete: void (), <./ctld.c 1410>
+  121 				TAILQ_FOREACH: <>
+  122 				TAILQ_REMOVE: <>
+  123 				TAILQ_FOREACH_SAFE: <>
+  124 				option_delete: void (), <./ctld.c 1533>
+  125 					TAILQ_REMOVE: <>
+  126 					free: <>
+  127 				free: <>
+  128 			lun_set_ctl_lun: void (), <./ctld.c 1505>
+  129 			kernel_lun_modify: int (), <./kernel.c 765>
+  130 				bzero: <>
+  131 				strlcpy: <>
+  132 				TAILQ_FOREACH: <>
+  133 				malloc: <>
+  134 				log_warn: 58
+  135 				str_arg: 107
+  136 				assert: <>
+  137 				ioctl: <>
+  138 				free: <>
+  139 				log_warnx: 91
+  140 			kernel_lun_add: int (), <./kernel.c 657>
+  141 				bzero: <>
+  142 				strlcpy: <>
+  143 				strncpy: <>
+  144 				option_find: struct option (), <./ctld.c 1543>
+  145 				option_set: void (), <./ctld.c 1556>
+  146 					free: <>
+  147 					checked_strdup: char * (), <./ctld.c 73>
+  148 						strdup: <>
+  149 						log_err: 24
+  150 				option_new: struct option (), <./ctld.c 1512>
+  151 				assert: <>
+  152 				TAILQ_FOREACH: <>
+  153 				malloc: <>
+  154 				log_warn: 58
+  155 				str_arg: 107
+  156 				ioctl: <>
+  157 				free: <>
+  158 				log_warnx: 91
+  159 				lun_set_ctl_lun: void (), <./ctld.c 1505>
+  160 			kernel_port_add: int (), <./kernel.c 950>
+  161 				bzero: <>
+  162 				strlcpy: <>
+  163 				TAILQ_FOREACH: <>
+  164 				malloc: <>
+  165 				log_err: 24
+  166 				str_arg: 107
+  167 				snprintf: <>
+  168 				ioctl: <>
+  169 				free: <>
+  170 				log_warn: 58
+  171 				log_warnx: 91
+  172 				strncmp: <>
+  173 				strlen: <>
+  174 				strtoull: <>
+  175 			kernel_port_update: int (), <./kernel.c 1051>
+  176 				ioctl: <>
+  177 				log_warn: 58
+  178 			kernel_listen: void (), <./kernel.c 1142>
+  179 				bzero: <>
+  180 				listen: <>
+  181 				ioctl: <>
+  182 				log_err: 24
+  183 				log_errx: 3
+  184 			socket: <>
+  185 			log_warn: 58
+  186 			setsockopt: <>
+  187 			close: <>
+  188 			bind: <>
+  189 			listen: <>
+  190 			isns_register: void (), <./ctld.c 923>
+  191 				TAILQ_EMPTY: <>
+  192 				set_timeout: 47
+  193 				isns_do_connect: 56
+  194 				gethostname: <>
+  195 				isns_do_deregister: 65
+  196 				isns_do_register: int (), <./ctld.c 797>
+  197 					isns_req_create: struct isns_req (), <./isns.c 69>
+  198 					isns_req_add_str: 67
+  199 					TAILQ_FIRST: <>
+  200 					isns_req_add_delim: 78
+  201 					isns_req_add_32: void (), <./isns.c 143>
+  202 						be32enc: <>
+  203 						isns_req_add: 68
+  204 					TAILQ_FOREACH: <>
+  205 					isns_req_add_addr: void (), <./isns.c 152>
+  206 						memset: <>
+  207 						memcpy: <>
+  208 						isns_req_add: 68
+  209 						log_errx: 3
+  210 					isns_req_add_port: void (), <./isns.c 178>
+  211 						be32enc: <>
+  212 						ntohs: <>
+  213 						isns_req_add: 68
+  214 						log_errx: 3
+  215 					isns_req_send: 80
+  216 					log_warn: 58
+  217 					isns_req_receive: 85
+  218 					isns_req_get_status: 89
+  219 					log_warnx: 91
+  220 					isns_req_free: 95
+  221 				close: <>
+  222 			TAILQ_EMPTY: <>
+  223 			set_timeout: 47
+  224 		conf_delete: void (), <./ctld.c 109>
+  225 			assert: <>
+  226 			TAILQ_FOREACH_SAFE: <>
+  227 			lun_delete: 120
+  228 			target_delete: void (), <./ctld.c 1344>
+  229 				TAILQ_FOREACH_SAFE: <>
+  230 				port_delete: void (), <./ctld.c 1295>
+  231 					TAILQ_REMOVE: <>
+  232 					free: <>
+  233 				TAILQ_REMOVE: <>
+  234 				free: <>
+  235 			auth_group_delete: void (), <./ctld.c 505>
+  236 				TAILQ_REMOVE: <>
+  237 				TAILQ_FOREACH_SAFE: <>
+  238 				auth_delete: void (), <./ctld.c 151>
+  239 					TAILQ_REMOVE: <>
+  240 					free: <>
+  241 				auth_name_delete: void (), <./ctld.c 310>
+  242 					TAILQ_REMOVE: <>
+  243 					free: <>
+  244 				auth_portal_delete: void (), <./ctld.c 409>
+  245 					TAILQ_REMOVE: <>
+  246 					free: <>
+  247 				free: <>
+  248 			portal_group_delete: void (), <./ctld.c 629>
+  249 				TAILQ_FOREACH_SAFE: <>
+  250 				port_delete: 230
+  251 				TAILQ_REMOVE: <>
+  252 				portal_delete: void (), <./ctld.c 593>
+  253 					TAILQ_REMOVE: <>
+  254 					freeaddrinfo: <>
+  255 					free: <>
+  256 				option_delete: 124
+  257 				free: <>
+  258 			pport_delete: void (), <./ctld.c 1200>
+  259 				TAILQ_FOREACH_SAFE: <>
+  260 				port_delete: 230
+  261 				TAILQ_REMOVE: <>
+  262 				free: <>
+  263 			isns_delete: void (), <./ctld.c 767>
+  264 				TAILQ_REMOVE: <>
+  265 				free: <>
+  266 				freeaddrinfo: <>
+  267 			TAILQ_EMPTY: <>
+  268 			free: <>
+  269 		register_signals: void (), <./ctld.c 2466>
+  270 			bzero: <>
+  271 			sighup_handler: void (), <./ctld.c 2441>
+  272 			sigfillset: <>
+  273 			sigaction: <>
+  274 			log_err: 24
+  275 			sigterm_handler: void (), <./ctld.c 2448>
+  276 			sigchld_handler: void (), <./ctld.c 2455>
+  277 		log_debugx: 32
+  278 		daemon: <>
+  279 		log_warn: 58
+  280 		pidfile_remove: <>
+  281 		exit: <>
+  282 		TAILQ_EMPTY: <>
+  283 		set_timeout: 47
+  284 		main_loop: void (), <./ctld.c 2355>
+  285 			pidfile_write: <>
+  286 			timed_out: bool (), <./ctld.c 2170>
+  287 			kernel_accept: void (), <./kernel.c 1167>
+  288 				bzero: <>
+  289 				accept: <>
+  290 				ioctl: <>
+  291 				log_err: 24
+  292 				log_errx: 3
+  293 				memcpy: <>
+  294 			assert: <>
+  295 			log_debugx: 32
+  296 			TAILQ_FOREACH: <>
+  297 			log_errx: 3
+  298 			handle_connection: void (), <./ctld.c 2277>
+  299 				log_debugx: 32
+  300 				wait_for_children: int (), <./ctld.c 2245>
+  301 					wait4: <>
+  302 					WIFSIGNALED: <>
+  303 					log_warnx: 91
+  304 					WTERMSIG: <>
+  305 					WEXITSTATUS: <>
+  306 					log_debugx: 32
+  307 				assert: <>
+  308 				fork: <>
+  309 				log_err: 24
+  310 				close: <>
+  311 				pidfile_close: <>
+  312 				getnameinfo: <>
+  313 				log_errx: 3
+  314 				gai_strerror: <>
+  315 				log_set_peer_addr: void (), <./log.c 74>
+  316 					log_errx: 3
+  317 					checked_strdup: 147
+  318 				setproctitle: <>
+  319 				connection_new: struct connection (), <./ctld.c 1564>
+  320 				set_timeout: 47
+  321 				kernel_capsicate: void (), <./kernel.c 1251>
+  322 					cap_rights_init: <>
+  323 					cap_rights_limit: <>
+  324 					log_err: 24
+  325 					cap_ioctls_limit: <>
+  326 					cap_enter: <>
+  327 					cap_sandboxed: <>
+  328 					log_debugx: 32
+  329 					log_warnx: 91
+  330 				login: void (), <./login.c 781>
+  331 					log_debugx: 32
+  332 					login_receive: struct pdu (), <./login.c 89>
+  333 					login_send_error: void (), <./login.c 173>
+  334 						log_debugx: 32
+  335 						login_new_response: struct pdu (), <./login.c 148>
+  336 						pdu_send: void (), <./pdu.c 210>
+  337 							pdu_send_proxy: void (), <./pdu.c 125>
+  338 								assert: <>
+  339 								pdu_set_data_segment_length: void (), <./pdu.c 71>
+  340 								kernel_send: void (), <./kernel.c 1193>
+  341 									bzero: <>
+  342 									ioctl: <>
+  343 									log_err: 24
+  344 									log_errx: 3
+  345 							assert: <>
+  346 							pdu_set_data_segment_length: 339
+  347 							pdu_padding: size_t (), <./pdu.c 137>
+  348 							writev: <>
+  349 							timed_out: 286
+  350 							log_errx: 3
+  351 							log_err: 24
+  352 						pdu_delete: void (), <./pdu.c 258>
+  353 							free: <>
+  354 					log_errx: 3
+  355 					memcpy: <>
+  356 					keys_new: struct keys (), <./keys.c 42>
+  357 					keys_load: void (), <./keys.c 62>
+  358 						log_errx: 3
+  359 						assert: <>
+  360 						malloc: <>
+  361 						log_err: 24
+  362 						memcpy: <>
+  363 						strlen: <>
+  364 						strsep: <>
+  365 						log_debugx: 32
+  366 					assert: <>
+  367 					keys_find: const char * (), <./keys.c 146>
+  368 						strcmp: <>
+  369 					valid_iscsi_name: bool (), <./ctld.c 1095>
+  370 						strlen: <>
+  371 						log_warnx: 91
+  372 						strncasecmp: <>
+  373 						isalnum: <>
+  374 						valid_hex: bool (), <./ctld.c 1063>
+  375 					checked_strdup: 147
+  376 					log_set_peer_name: void (), <./log.c 59>
+  377 						log_errx: 3
+  378 						checked_strdup: 147
+  379 					setproctitle: <>
+  380 					login_portal_redirect: bool (), <./login.c 640>
+  381 						log_debugx: 32
+  382 						login_redirect: void (), <./login.c 618>
+  383 							login_new_response: struct pdu (), <./login.c 148>
+  384 							login_set_csg: void (), <./login.c 74>
+  385 								assert: <>
+  386 							login_csg: int (), <./login.c 64>
+  387 							keys_new: struct keys (), <./keys.c 42>
+  388 							keys_add: void (), <./keys.c 165>
+  389 								log_debugx: 32
+  390 								checked_strdup: 147
+  391 								log_errx: 3
+  392 							keys_save: void (), <./keys.c 106>
+  393 								strlen: <>
+  394 								malloc: <>
+  395 								log_err: 24
+  396 								sprintf: <>
+  397 							pdu_send: 336
+  398 							pdu_delete: 352
+  399 							keys_delete: void (), <./keys.c 54>
+  400 								free: <>
+  401 					exit: <>
+  402 					strcmp: <>
+  403 					port_find_in_pg: struct port (), <./ctld.c 1282>
+  404 					auth_name_check: int (), <./ctld.c 340>
+  405 						auth_name_defined: bool (), <./ctld.c 319>
+  406 							TAILQ_EMPTY: <>
+  407 						auth_name_find: const struct auth_name (), <./ctld.c 327>
+  408 					auth_portal_check: int (), <./ctld.c 465>
+  409 						auth_portal_defined: bool (), <./ctld.c 418>
+  410 							TAILQ_EMPTY: <>
+  411 						auth_portal_find: const struct auth_portal (), <./ctld.c 426>
+  412 					login_csg: 386
+  413 					keys_delete: 399
+  414 					login_negotiate: void (), <./login.c 677>
+  415 						assert: <>
+  416 						kernel_limits: void (), <./kernel.c 917>
+  417 							bzero: <>
+  418 							strlcpy: <>
+  419 							ioctl: <>
+  420 							log_err: 24
+  421 							log_errx: 3
+  422 							log_debugx: 32
+  423 						log_debugx: 32
+  424 						login_receive: struct pdu (), <./login.c 89>
+  425 						login_target_redirect: bool (), <./login.c 656>
+  426 							assert: <>
+  427 							log_debugx: 32
+  428 							login_redirect: 382
+  429 						exit: <>
+  430 						keys_new: struct keys (), <./keys.c 42>
+  431 						keys_load: 357
+  432 						login_new_response: struct pdu (), <./login.c 148>
+  433 						htons: <>
+  434 						login_set_csg: 384
+  435 						login_set_nsg: void (), <./login.c 48>
+  436 							assert: <>
+  437 						keys_add: 388
+  438 						keys_add_int: void (), <./keys.c 187>
+  439 							asprintf: <>
+  440 							log_err: 24
+  441 							keys_add: 388
+  442 							free: <>
+  443 						login_negotiate_key: void (), <./login.c 449>
+  444 							strcmp: <>
+  445 							log_errx: 3
+  446 							free: <>
+  447 							checked_strdup: 147
+  448 							log_debugx: 32
+  449 							keys_add: 388
+  450 							login_list_prefers: int (), <./login.c 207>
+  451 								checked_strdup: 147
+  452 								strsep: <>
+  453 								strcmp: <>
+  454 								free: <>
+  455 							log_warnx: 91
+  456 							strtoul: <>
+  457 							login_send_error: 333
+  458 							keys_add_int: 438
+  459 						keys_save: 392
+  460 						pdu_send: 336
+  461 						pdu_delete: 352
+  462 						keys_delete: 399
+  463 					login_new_response: struct pdu (), <./login.c 148>
+  464 					login_list_contains: int (), <./login.c 190>
+  465 						checked_strdup: 147
+  466 						strsep: <>
+  467 						strcmp: <>
+  468 						free: <>
+  469 					keys_add: 388
+  470 					log_warnx: 91
+  471 					login_set_nsg: 435
+  472 					keys_add_int: 438
+  473 					keys_save: 392
+  474 					pdu_send: 336
+  475 					pdu_delete: 352
+  476 					login_chap: void (), <./login.c 402>
+  477 						log_debugx: 32
+  478 						login_receive_chap_a: struct pdu (), <./login.c 229>
+  479 						chap_new: struct chap (), <./chap.c 231>
+  480 						login_send_chap_c: void (), <./login.c 255>
+  481 							chap_get_challenge: char * (), <./chap.c 262>
+  482 								chap_bin2hex: char * (), <./chap.c 208>
+  483 									malloc: <>
+  484 									log_err: 24
+  485 									sprintf: <>
+  486 									b64_ntop: <>
+  487 							chap_get_id: char * (), <./chap.c 249>
+  488 								asprintf: <>
+  489 								log_err: 24
+  490 							login_new_response: struct pdu (), <./login.c 148>
+  491 							keys_new: struct keys (), <./keys.c 42>
+  492 							keys_add: 388
+  493 							free: <>
+  494 							keys_save: 392
+  495 							pdu_send: 336
+  496 							pdu_delete: 352
+  497 							keys_delete: 399
+  498 						pdu_delete: 352
+  499 						login_receive_chap_r: struct pdu (), <./login.c 278>
+  500 						login_send_chap_success: void (), <./login.c 336>
+  501 							login_new_response: struct pdu (), <./login.c 148>
+  502 							login_set_nsg: 435
+  503 							keys_new: struct keys (), <./keys.c 42>
+  504 							keys_load: 357
+  505 							keys_find: 367
+  506 							login_send_error: 333
+  507 							log_errx: 3
+  508 							log_debugx: 32
+  509 							rchap_new: struct rchap (), <./chap.c 332>
+  510 							rchap_receive: int (), <./chap.c 359>
+  511 								strtoul: <>
+  512 								chap_hex2bin: int (), <./chap.c 133>
+  513 									strncasecmp: <>
+  514 									strlen: <>
+  515 									chap_b642bin: int (), <./chap.c 107>
+  516 										strlen: <>
+  517 										calloc: <>
+  518 										log_err: 24
+  519 										b64_pton: <>
+  520 										log_warnx: 91
+  521 										free: <>
+  522 									log_warnx: 91
+  523 									calloc: <>
+  524 									log_err: 24
+  525 									chap_hex2int: int (), <./chap.c 60>
+  526 									free: <>
+  527 									assert: <>
+  528 								log_debugx: 32
+  529 								rchap_receive_bin: void (), <./chap.c 346>
+  530 									calloc: <>
+  531 									log_err: 24
+  532 									memcpy: <>
+  533 								free: <>
+  534 							rchap_get_response: char * (), <./chap.c 402>
+  535 								rchap_get_response_bin: void (), <./chap.c 383>
+  536 									calloc: <>
+  537 									log_err: 24
+  538 									chap_compute_md5: void (), <./chap.c 44>
+  539 										assert: <>
+  540 										MD5Init: <>
+  541 										MD5Update: <>
+  542 										strlen: <>
+  543 										MD5Final: <>
+  544 								chap_bin2hex: 482
+  545 								free: <>
+  546 							rchap_delete: void (), <./chap.c 416>
+  547 								free: <>
+  548 							keys_add: 388
+  549 							free: <>
+  550 							keys_save: 392
+  551 							keys_delete: 399
+  552 							pdu_send: 336
+  553 							pdu_delete: 352
+  554 					login_wait_transition: void (), <./login.c 757>
+  555 						log_debugx: 32
+  556 						login_receive: struct pdu (), <./login.c 89>
+  557 						login_send_error: 333
+  558 						log_errx: 3
+  559 						pdu_delete: 352
+  560 						login_new_response: struct pdu (), <./login.c 148>
+  561 						login_set_nsg: 435
+  562 						pdu_send: 336
+  563 						login_negotiate: 414
+  564 				kernel_handoff: void (), <./kernel.c 860>
+  565 					bzero: <>
+  566 					strlcpy: <>
+  567 					memcpy: <>
+  568 					ioctl: <>
+  569 					log_err: 24
+  570 					log_errx: 3
+  571 				discovery: void (), <./discovery.c 276>
+  572 					log_debugx: 32
+  573 					text_receive: struct pdu (), <./discovery.c 46>
+  574 					keys_new: struct keys (), <./keys.c 42>
+  575 					keys_load: 357
+  576 					keys_find: 367
+  577 					log_errx: 3
+  578 					text_new_response: struct pdu (), <./discovery.c 84>
+  579 					strcmp: <>
+  580 					TAILQ_FOREACH: <>
+  581 					discovery_target_filtered_out: bool (), <./discovery.c 213>
+  582 						assert: <>
+  583 						auth_portal_check: 408
+  584 						log_debugx: 32
+  585 						auth_name_check: 404
+  586 						auth_find: const struct auth (), <./ctld.c 163>
+  587 						chap_authenticate: int (), <./chap.c 308>
+  588 							chap_compute_md5: 538
+  589 							memcmp: <>
+  590 					discovery_add_target: void (), <./discovery.c 166>
+  591 						keys_add: 388
+  592 						TAILQ_FOREACH: <>
+  593 						getnameinfo: <>
+  594 						log_warnx: 91
+  595 						gai_strerror: <>
+  596 						strcmp: <>
+  597 						asprintf: <>
+  598 						log_err: 24
+  599 						free: <>
+  600 					port_find_in_pg: struct port (), <./ctld.c 1282>
+  601 					keys_save: 392
+  602 					pdu_send: 336
+  603 					pdu_delete: 352
+  604 					keys_delete: 399
+  605 					logout_receive: struct pdu (), <./discovery.c 109>
+  606 					logout_new_response: struct pdu (), <./discovery.c 142>
+  607 				exit: <>
+  608 			FD_ZERO: <>
+  609 			fd_add: int (), <./ctld.c 2339>
+  610 				FD_SET: <>
+  611 			select: <>
+  612 			log_err: 24
+  613 			FD_ISSET: <>
+  614 			accept: <>
+  615 		log_warnx: 91
+  616 		conf_new: struct conf (), <./ctld.c 84>
+  617 		wait_for_children: 300
+  618 		assert: <>
+  619 		timed_out: 286
+  620 		TAILQ_FOREACH: <>
+  621 		isns_check: void (), <./ctld.c 949>
+  622 			TAILQ_EMPTY: <>
+  623 			set_timeout: 47
+  624 			isns_do_connect: 56
+  625 			gethostname: <>
+  626 			isns_do_check: int (), <./ctld.c 858>
+  627 				isns_req_create: struct isns_req (), <./isns.c 69>
+  628 				isns_req_add_str: 67
+  629 				TAILQ_FIRST: <>
+  630 				isns_req_add_delim: 78
+  631 				isns_req_add: 68
+  632 				isns_req_send: 80
+  633 				log_warn: 58
+  634 				isns_req_receive: 85
+  635 				isns_req_get_status: 89
+  636 				log_warnx: 91
+  637 				isns_req_free: 95
+  638 			isns_do_deregister: 65
+  639 			isns_do_register: 196
+  640 			close: <>

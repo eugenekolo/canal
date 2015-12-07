@@ -1,0 +1,242 @@
+    1 	main: int (), <./makefs.c 84>
+    2 		setprogname: <>
+    3 		get_fstype: fstype_t * (), <./makefs.c 350>
+    4 			strcmp: <>
+    5 		errx: <>
+    6 		memset: <>
+    7 		gettimeofday: <>
+    8 		err: <>
+    9 		getopt: <>
+   10 		strcmp: <>
+   11 		warnx: <>
+   12 		usage: void (), <./makefs.c 361>
+   13 			getprogname: <>
+   14 			fprintf: <>
+   15 			exit: <>
+   16 		strlen: <>
+   17 		strsuftoll: <>
+   18 		strtoll: <>
+   19 		setup_getid: <>
+   20 		strsep: <>
+   21 		printf: <>
+   22 		ctime: <>
+   23 		stat: <>
+   24 		TIMER_START: <>
+   25 		walk_dir: fsnode * (), <./walk.c 73>
+   26 			assert: <>
+   27 			snprintf: <>
+   28 			errx: <>
+   29 			printf: <>
+   30 			opendir: <>
+   31 			err: <>
+   32 			strlen: <>
+   33 			readdir: <>
+   34 			lstat: <>
+   35 			S_ISSOCK: <>
+   36 			strcmp: <>
+   37 			S_ISDIR: <>
+   38 			walk_dir: 25
+   39 			inode_type: const char * (), <./walk.c 588>
+   40 				S_ISREG: <>
+   41 				S_ISLNK: <>
+   42 				S_ISDIR: <>
+   43 				S_ISFIFO: <>
+   44 				S_ISSOCK: <>
+   45 				S_ISCHR: <>
+   46 				S_ISBLK: <>
+   47 			create_fsnode: fsnode * (), <./walk.c 218>
+   48 				calloc: <>
+   49 				strdup: <>
+   50 				err: <>
+   51 			link_check: fsinode * (), <./walk.c 620>
+   52 				assert: <>
+   53 				calloc: <>
+   54 				err: <>
+   55 				link_check: 51
+   56 				free: <>
+   57 			free: <>
+   58 			S_ISLNK: <>
+   59 			readlink: <>
+   60 			strdup: <>
+   61 			closedir: <>
+   62 		TIMER_RESULTS: <>
+   63 		read_mtree: fsnode * (), <./mtree.c 1039>
+   64 			assert: <>
+   65 			strcmp: <>
+   66 			fopen: <>
+   67 			err: <>
+   68 			mtree_file_push: int (), <./mtree.c 74>
+   69 				malloc: <>
+   70 				strcmp: <>
+   71 				strdup: <>
+   72 				free: <>
+   73 				SLIST_INSERT_HEAD: <>
+   74 			bzero: <>
+   75 			time: <>
+   76 			setgroupent: <>
+   77 			setpassent: <>
+   78 			SLIST_FIRST: <>
+   79 			skip_over: int (), <./mtree.c 300>
+   80 				getc: <>
+   81 				strchr: <>
+   82 				ungetc: <>
+   83 				ferror: <>
+   84 			getc: <>
+   85 			ferror: <>
+   86 			skip_to: int (), <./mtree.c 315>
+   87 				getc: <>
+   88 				strchr: <>
+   89 				ungetc: <>
+   90 				ferror: <>
+   91 			read_mtree_command: int (), <./mtree.c 818>
+   92 				read_word: int (), <./mtree.c 330>
+   93 					getc: <>
+   94 					ferror: <>
+   95 					mtree_error: void (), <./mtree.c 113>
+   96 						va_start: <>
+   97 						mtree_print: void (), <./mtree.c 99>
+   98 							SLIST_FIRST: <>
+   99 							fprintf: <>
+  100 							vfprintf: <>
+  101 						va_end: <>
+  102 						fputc: <>
+  103 					skip_to: 86
+  104 					ungetc: <>
+  105 					mtree_warning: void (), <./mtree.c 126>
+  106 						va_start: <>
+  107 						mtree_print: 97
+  108 						va_end: <>
+  109 						fputc: <>
+  110 					SLIST_FIRST: <>
+  111 				read_mtree_keywords: int (), <./mtree.c 516>
+  112 					skip_over: 79
+  113 					read_word: 92
+  114 					strchr: <>
+  115 					strcmp: <>
+  116 					strdup: <>
+  117 					strtofflags: <>
+  118 					read_number: int (), <./mtree.c 500>
+  119 						strtoimax: <>
+  120 					gid_from_group: <>
+  121 					uid_from_user: <>
+  122 					mtree_error: 95
+  123 					mtree_warning: 105
+  124 					mtree_file_path: char * (), <./mtree.c 144>
+  125 						strcmp: <>
+  126 						sbuf_new_auto: <>
+  127 						sbuf_cat: <>
+  128 						sbuf_putc: <>
+  129 						sbuf_finish: <>
+  130 						strdup: <>
+  131 						sbuf_data: <>
+  132 						sbuf_delete: <>
+  133 					mtree_resolve: char * (), <./mtree.c 181>
+  134 						strlen: <>
+  135 						strdup: <>
+  136 						sbuf_new_auto: <>
+  137 						strchr: <>
+  138 						sbuf_bcat: <>
+  139 						sbuf_putc: <>
+  140 						calloc: <>
+  141 						memcpy: <>
+  142 						strcmp: <>
+  143 						getcwd: <>
+  144 						getprogname: <>
+  145 						getenv: <>
+  146 						sbuf_cat: <>
+  147 						free: <>
+  148 						sbuf_finish: <>
+  149 						sbuf_data: <>
+  150 						sbuf_delete: <>
+  151 					stat: <>
+  152 					free: <>
+  153 					link_check: 51
+  154 				skip_to: 86
+  155 				getc: <>
+  156 			ungetc: <>
+  157 			read_mtree_spec: int (), <./mtree.c 988>
+  158 				read_word: 92
+  159 				strchr: <>
+  160 				IS_DOTDOT: <>
+  161 				mtree_error: 95
+  162 				IS_DOT: <>
+  163 				read_mtree_spec1: int (), <./mtree.c 836>
+  164 					assert: <>
+  165 					IS_DOTDOT: <>
+  166 					mtree_warning: 105
+  167 					IS_DOT: <>
+  168 					read_mtree_spec1: 163
+  169 					strcmp: <>
+  170 					mtree_error: 95
+  171 					create_node: fsnode * (), <./mtree.c 450>
+  172 						calloc: <>
+  173 						strdup: <>
+  174 						free: <>
+  175 						bcopy: <>
+  176 					read_mtree_keywords: 111
+  177 					destroy_node: void (), <./mtree.c 487>
+  178 						assert: <>
+  179 						free: <>
+  180 				memmove: <>
+  181 				strlen: <>
+  182 				skip_to: 86
+  183 				getc: <>
+  184 			endpwent: <>
+  185 			endgrent: <>
+  186 			warnx: <>
+  187 			exit: <>
+  188 			errc: <>
+  189 			fclose: <>
+  190 			create_node: 171
+  191 		S_ISDIR: <>
+  192 		apply_specfile: void (), <./walk.c 291>
+  193 			assert: <>
+  194 			printf: <>
+  195 			fopen: <>
+  196 			err: <>
+  197 			TIMER_START: <>
+  198 			spec: <>
+  199 			TIMER_RESULTS: <>
+  200 			fclose: <>
+  201 			errx: <>
+  202 			strcmp: <>
+  203 			apply_specdir: void (), <./walk.c 324>
+  204 				assert: <>
+  205 				printf: <>
+  206 				errx: <>
+  207 				apply_specentry: void (), <./walk.c 460>
+  208 					assert: <>
+  209 					nodetoino: <>
+  210 					errx: <>
+  211 					inode_type: 39
+  212 					printf: <>
+  213 					ASEPRINT: <>
+  214 					free: <>
+  215 					strdup: <>
+  216 					err: <>
+  217 				strcmp: <>
+  218 				free_fsnodes: void (), <./walk.c 241>
+  219 					assert: <>
+  220 					free_fsnodes: 218
+  221 					free: <>
+  222 				snprintf: <>
+  223 				lstat: <>
+  224 				NODETEST: <>
+  225 				memset: <>
+  226 				nodetoino: <>
+  227 				create_fsnode: 47
+  228 				strdup: <>
+  229 				err: <>
+  230 				apply_specdir: 203
+  231 		dump_fsnodes: void (), <./walk.c 548>
+  232 			printf: <>
+  233 			snprintf: <>
+  234 			errx: <>
+  235 			inode_type: 39
+  236 			S_ISLNK: <>
+  237 			assert: <>
+  238 			putchar: <>
+  239 			dump_fsnodes: 231
+  240 		putchar: <>
+  241 		free_fsnodes: 218
+  242 		exit: <>

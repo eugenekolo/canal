@@ -1,0 +1,348 @@
+    1 	main: int (), <./rtadvd.c 177>
+    2 		getopt: <>
+    3 		fprintf: <>
+    4 		usage: void (), <./rtadvd.c 168>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		openlog: <>
+    8 		setlogmask: <>
+    9 		LOG_UPTO: <>
+   10 		rtadvd_timer_init: void (), <./timer.c 59>
+   11 			TAILQ_INIT: <>
+   12 		pidfile_open: <>
+   13 		errx: <>
+   14 		getprogname: <>
+   15 		syslog: <>
+   16 		daemon: <>
+   17 		sock_open: void (), <./rtadvd.c 1531>
+   18 			syslog: <>
+   19 			exit: <>
+   20 			CMSG_SPACE: <>
+   21 			malloc: <>
+   22 			socket: <>
+   23 			strerror: <>
+   24 			setsockopt: <>
+   25 			ICMP6_FILTER_SETBLOCKALL: <>
+   26 			ICMP6_FILTER_SETPASS: <>
+   27 		update_ifinfo: struct ifinfo (), <./if.c 406>
+   28 		update_persist_ifinfo: struct ifinfo (), <./if.c 336>
+   29 		csock_open: int (), <./control.c 279>
+   30 			syslog: <>
+   31 			exit: <>
+   32 			socket: <>
+   33 			memset: <>
+   34 			strlcpy: <>
+   35 			unlink: <>
+   36 			close: <>
+   37 			umask: <>
+   38 			bind: <>
+   39 			chmod: <>
+   40 			fcntl: <>
+   41 		strerror: <>
+   42 		exit: <>
+   43 		getpid: <>
+   44 		pidfile_write: <>
+   45 		rtsock_open: void (), <./rtadvd.c 1615>
+   46 			syslog: <>
+   47 			exit: <>
+   48 			socket: <>
+   49 			strerror: <>
+   50 		signal: <>
+   51 		set_do_shutdown: void (), <./control_server.c 65>
+   52 		set_do_reload: void (), <./control_server.c 63>
+   53 		csock_listen: int (), <./control.c 264>
+   54 			syslog: <>
+   55 			listen: <>
+   56 		is_do_shutdown: int (), <./control_server.c 69>
+   57 		rtadvd_shutdown: void (), <./rtadvd.c 366>
+   58 			syslog: <>
+   59 			TAILQ_FOREACH: <>
+   60 			rtadvd_remove_timer: void (), <./timer.c 139>
+   61 				TAILQ_REMOVE: <>
+   62 				free: <>
+   63 			exit: <>
+   64 			sleep: <>
+   65 			ra_timer_update: void (), <./rtadvd.c 1861>
+   66 				arc4random_uniform: <>
+   67 				syslog: <>
+   68 			rtadvd_set_timer: void (), <./timer.c 186>
+   69 				clock_gettime: <>
+   70 				TS_ADD: <>
+   71 				TS_CMP: <>
+   72 			pidfile_remove: <>
+   73 			csock_close: int (), <./control.c 255>
+   74 				close: <>
+   75 				unlink: <>
+   76 				syslog: <>
+   77 		is_do_reload: int (), <./control_server.c 68>
+   78 		loadconfig_ifname: int (), <./config.c 154>
+   79 			syslog: <>
+   80 			update_ifinfo: struct ifinfo (), <./if.c 406>
+   81 			TAILQ_FOREACH: <>
+   82 			strcmp: <>
+   83 			getconfig: struct ifinfo (), <./config.c 333>
+   84 		reload_ifname: char * (), <./control_server.c 70>
+   85 		reset_do_reload: void (), <./control_server.c 66>
+   86 		rtadvd_update_timeout_handler: void (), <./timer.c 69>
+   87 			TAILQ_FOREACH: <>
+   88 			syslog: <>
+   89 			rtadvd_add_timer: struct rtadvd_timer (), <./timer.c 106>
+   90 			ra_timeout: struct rtadvd_timer (), <./rtadvd.c 1846>
+   91 			ra_timer_update: 65
+   92 			rtadvd_set_timer: 68
+   93 			rtadvd_remove_timer: 60
+   94 		rtadvd_check_timer: struct timespec (), <./timer.c 155>
+   95 		poll: <>
+   96 		rtmsg_input: void (), <./rtadvd.c 457>
+   97 			syslog: <>
+   98 			exit: <>
+   99 			read: <>
+  100 			get_next_msg: char * (), <./if.c 161>
+  101 				syslog: <>
+  102 				FILTER_MATCH: <>
+  103 				get_rtaddrs: void (), <./if.c 97>
+  104 					NEXT_SA: <>
+  105 				IN6_IS_ADDR_LINKLOCAL: <>
+  106 				SIN6: <>
+  107 				IN6_IS_ADDR_MULTICAST: <>
+  108 				SDL: <>
+  109 			RTADV_TYPE2BITMASK: <>
+  110 			get_rtm_ifindex: int (), <./if.c 267>
+  111 				get_rtaddrs: 103
+  112 			update_ifinfo: struct ifinfo (), <./if.c 406>
+  113 			loadconfig_index: int (), <./config.c 141>
+  114 				syslog: <>
+  115 				if_indextoname: <>
+  116 				loadconfig_ifname: 78
+  117 			rm_ifinfo_index: int (), <./config.c 194>
+  118 				if_indextoifinfo: struct ifinfo (), <./rtadvd.c 1629>
+  119 				syslog: <>
+  120 				rm_ifinfo: int (), <./config.c 209>
+  121 					syslog: <>
+  122 					rtadvd_remove_timer: 60
+  123 					TAILQ_REMOVE: <>
+  124 					free: <>
+  125 					update_persist_ifinfo: struct ifinfo (), <./if.c 336>
+  126 					rm_rainfo: int (), <./config.c 285>
+  127 						syslog: <>
+  128 						TAILQ_REMOVE: <>
+  129 						free: <>
+  130 						TAILQ_FIRST: <>
+  131 						delete_prefix: void (), <./config.c 1154>
+  132 							TAILQ_REMOVE: <>
+  133 							syslog: <>
+  134 							inet_ntop: <>
+  135 							rtadvd_remove_timer: 60
+  136 							free: <>
+  137 			TAILQ_FOREACH: <>
+  138 			if_indextoname: <>
+  139 			if_indextoifinfo: struct ifinfo (), <./rtadvd.c 1629>
+  140 			get_addr: struct in6_addr (), <./if.c 255>
+  141 			get_prefixlen: int (), <./if.c 279>
+  142 				get_rtaddrs: 103
+  143 				SIN6: <>
+  144 				prefixlen: int (), <./if.c 295>
+  145 			find_prefix: struct prefix (), <./rtadvd.c 1350>
+  146 			update_prefix: void (), <./config.c 1218>
+  147 				syslog: <>
+  148 				exit: <>
+  149 				inet_ntop: <>
+  150 				rtadvd_remove_timer: 60
+  151 			inet_ntop: <>
+  152 			make_prefix: void (), <./config.c 1293>
+  153 				memset: <>
+  154 				if_indextoname: <>
+  155 				syslog: <>
+  156 				strerror: <>
+  157 				exit: <>
+  158 				init_prefix: int (), <./config.c 1248>
+  159 					socket: <>
+  160 					syslog: <>
+  161 					strerror: <>
+  162 					exit: <>
+  163 					ioctl: <>
+  164 					inet_ntop: <>
+  165 					close: <>
+  166 				add_prefix: void (), <./config.c 1121>
+  167 					ELM_MALLOC: <>
+  168 					TAILQ_INSERT_TAIL: <>
+  169 					syslog: <>
+  170 					inet_ntop: <>
+  171 			invalidate_prefix: void (), <./config.c 1175>
+  172 				syslog: <>
+  173 				exit: <>
+  174 				inet_ntop: <>
+  175 				rtadvd_add_timer: struct rtadvd_timer (), <./timer.c 106>
+  176 				prefix_timeout: struct rtadvd_timer (), <./config.c 1209>
+  177 				delete_prefix: 131
+  178 				rtadvd_set_timer: 68
+  179 			rtadvd_remove_timer: 60
+  180 			rtadvd_add_timer: struct rtadvd_timer (), <./timer.c 106>
+  181 			ra_timeout: struct rtadvd_timer (), <./rtadvd.c 1846>
+  182 			ra_timer_update: 65
+  183 			rtadvd_set_timer: 68
+  184 			set_short_delay: void (), <./rtadvd.c 996>
+  185 				arc4random_uniform: <>
+  186 				rtadvd_timer_rest: struct timespec (), <./timer_subr.c 44>
+  187 				TS_CMP: <>
+  188 				syslog: <>
+  189 				clock_gettime: <>
+  190 				TS_SUB: <>
+  191 				TS_ADD: <>
+  192 				rtadvd_set_timer: 68
+  193 		rtadvd_input: void (), <./rtadvd.c 711>
+  194 			syslog: <>
+  195 			exit: <>
+  196 			recvmsg: <>
+  197 			CMSG_FIRSTHDR: <>
+  198 			CMSG_NXTHDR: <>
+  199 			CMSG_LEN: <>
+  200 			CMSG_DATA: <>
+  201 			if_indextoifinfo: struct ifinfo (), <./rtadvd.c 1629>
+  202 			inet_ntop: <>
+  203 			if_indextoname: <>
+  204 			rs_input: void (), <./rtadvd.c 904>
+  205 				syslog: <>
+  206 				inet_ntop: <>
+  207 				if_indextoname: <>
+  208 				memset: <>
+  209 				TAILQ_INIT: <>
+  210 				nd6_options: int (), <./rtadvd.c 1405>
+  211 					syslog: <>
+  212 					malloc: <>
+  213 					TAILQ_INSERT_TAIL: <>
+  214 					free_ndopts: void (), <./rtadvd.c 1520>
+  215 						TAILQ_FIRST: <>
+  216 						TAILQ_REMOVE: <>
+  217 						free: <>
+  218 				IN6_IS_ADDR_UNSPECIFIED: <>
+  219 				if_indextoifinfo: struct ifinfo (), <./rtadvd.c 1629>
+  220 				malloc: <>
+  221 				TAILQ_INSERT_TAIL: <>
+  222 				set_short_delay: 184
+  223 				free_ndopts: 214
+  224 			IN6_IS_ADDR_LINKLOCAL: <>
+  225 			ra_input: void (), <./rtadvd.c 1075>
+  226 				syslog: <>
+  227 				inet_ntop: <>
+  228 				if_indextoname: <>
+  229 				memset: <>
+  230 				TAILQ_INIT: <>
+  231 				nd6_options: 210
+  232 				if_indextoifinfo: struct ifinfo (), <./rtadvd.c 1629>
+  233 				ntohl: <>
+  234 				prefix_check: int (), <./rtadvd.c 1228>
+  235 					IN6_IS_ADDR_LINKLOCAL: <>
+  236 					syslog: <>
+  237 					inet_ntop: <>
+  238 					find_prefix: struct prefix (), <./rtadvd.c 1350>
+  239 					ntohl: <>
+  240 					clock_gettime: <>
+  241 					udiff: uint32_t (), <./rtadvd.c 1221>
+  242 				TAILQ_FOREACH: <>
+  243 				free_ndopts: 214
+  244 			rr_input: void (), <./rrenum.c 436>
+  245 				syslog: <>
+  246 				inet_ntop: <>
+  247 				if_indextoname: <>
+  248 				IN6_IS_ADDR_MULTICAST: <>
+  249 				IN6_ARE_ADDR_EQUAL: <>
+  250 				rr_command_input: void (), <./rrenum.c 411>
+  251 					rr_command_check: int (), <./rrenum.c 355>
+  252 						syslog: <>
+  253 						IN6_IS_ADDR_MULTICAST: <>
+  254 						IN6_IS_ADDR_MC_LINKLOCAL: <>
+  255 						IN6_IS_ADDR_MC_SITELOCAL: <>
+  256 						inet_ntop: <>
+  257 						ntohl: <>
+  258 						RR_ISSET_SEGNUM: <>
+  259 						memset: <>
+  260 					do_rr: int (), <./rrenum.c 312>
+  261 						update_ifinfo: struct ifinfo (), <./if.c 406>
+  262 						syslog: <>
+  263 						do_pco: int (), <./rrenum.c 255>
+  264 							rr_pco_check: int (), <./rrenum.c 82>
+  265 								syslog: <>
+  266 							socket: <>
+  267 							syslog: <>
+  268 							strerror: <>
+  269 							exit: <>
+  270 							memset: <>
+  271 							if_indextoname: <>
+  272 							if_indextoifinfo: struct ifinfo (), <./rtadvd.c 1629>
+  273 							do_use_prefix: void (), <./rrenum.c 141>
+  274 								memset: <>
+  275 								ioctl: <>
+  276 								syslog: <>
+  277 								strerror: <>
+  278 								ntohl: <>
+  279 								IN6_ARE_ADDR_EQUAL: <>
+  280 								if_indextoifinfo: struct ifinfo (), <./rtadvd.c 1629>
+  281 								TAILQ_FOREACH: <>
+  282 								prefix_match: int (), <./rtadvd.c 1379>
+  283 									memcmp: <>
+  284 								clock_gettime: <>
+  285 					RR_SET_SEGNUM: <>
+  286 					syslog: <>
+  287 		csock_accept: int (), <./control.c 225>
+  288 			accept: <>
+  289 			syslog: <>
+  290 			strerror: <>
+  291 			fcntl: <>
+  292 			close: <>
+  293 		cm_handler_server: int (), <./control_server.c 630>
+  294 			syslog: <>
+  295 			memset: <>
+  296 			cm_send: int (), <./control.c 172>
+  297 				syslog: <>
+  298 				writev: <>
+  299 				strerror: <>
+  300 				close: <>
+  301 			cm_recv: int (), <./control.c 60>
+  302 				syslog: <>
+  303 				memset: <>
+  304 				poll: <>
+  305 				strerror: <>
+  306 				read: <>
+  307 				close: <>
+  308 			close: <>
+  309 			cm_bin2pl: struct ctrl_msg_pl (), <./control.c 343>
+  310 			cm_getprop: int (), <./control_server.c 520>
+  311 				syslog: <>
+  312 				strcmp: <>
+  313 				dt_act: <>
+  314 			cm_pl2bin: size_t (), <./control.c 403>
+  315 				strlen: <>
+  316 				syslog: <>
+  317 				memset: <>
+  318 				memcpy: <>
+  319 			free: <>
+  320 			cm_setprop: int (), <./control_server.c 539>
+  321 				syslog: <>
+  322 				strncmp: <>
+  323 				cm_setprop_reload: int (), <./control_server.c 563>
+  324 					syslog: <>
+  325 					set_do_reload_ifname: void (), <./control_server.c 64>
+  326 					set_do_reload: 52
+  327 				set_do_shutdown: 51
+  328 				cm_setprop_enable: int (), <./control_server.c 575>
+  329 					syslog: <>
+  330 					TAILQ_FOREACH: <>
+  331 					strcmp: <>
+  332 					set_do_reload_ifname: 325
+  333 					set_do_reload: 52
+  334 				cm_setprop_disable: int (), <./control_server.c 599>
+  335 					syslog: <>
+  336 					TAILQ_FOREACH: <>
+  337 					strcmp: <>
+  338 					rm_ifinfo: 120
+  339 					sock_mc_leave: int (), <./if.c 674>
+  340 						syslog: <>
+  341 						memset: <>
+  342 						memcpy: <>
+  343 						setsockopt: <>
+  344 						if_indextoname: <>
+  345 						strerror: <>
+  346 					set_do_reload_ifname: 325
+  347 					set_do_reload: 52
+  348 		close: <>

@@ -1,0 +1,95 @@
+    1 	main: int (), <./test.c 90>
+    2 		getopt: <>
+    3 		realloc: <>
+    4 		free: <>
+    5 		out_of_mem: void (), <./statd.c 650>
+    6 			syslog: <>
+    7 			exit: <>
+    8 		strdup: <>
+    9 		strtoul: <>
+   10 		usage: void (), <./statd.c 616>
+   11 			fprintf: <>
+   12 			exit: <>
+   13 		rpcb_unset: <>
+   14 		socket: <>
+   15 		close: <>
+   16 		rpc_control: <>
+   17 		malloc: <>
+   18 		setnetconfig: <>
+   19 		getnetconfig: <>
+   20 		strcmp: <>
+   21 		create_service: int (), <./statd.c 317>
+   22 			syslog: <>
+   23 			memset: <>
+   24 			realloc: <>
+   25 			out_of_mem: 5
+   26 			inet_pton: <>
+   27 			close: <>
+   28 			strcmp: <>
+   29 			malloc: <>
+   30 			htons: <>
+   31 			htonl: <>
+   32 			exit: <>
+   33 			getaddrinfo: <>
+   34 			gai_strerror: <>
+   35 			bindresvport_sa: <>
+   36 			free: <>
+   37 			freeaddrinfo: <>
+   38 			getnameinfo: <>
+   39 			errx: <>
+   40 		clearout_service: void (), <./statd.c 603>
+   41 			shutdown: <>
+   42 			close: <>
+   43 		syslog: <>
+   44 		exit: <>
+   45 		complete_service: void (), <./statd.c 513>
+   46 			syslog: <>
+   47 			listen: <>
+   48 			svc_tli_create: <>
+   49 			svc_register: <>
+   50 			svc_reg: <>
+   51 			memset: <>
+   52 			getaddrinfo: <>
+   53 			gai_strerror: <>
+   54 			exit: <>
+   55 			malloc: <>
+   56 			memcpy: <>
+   57 			rpcb_set: <>
+   58 			freeaddrinfo: <>
+   59 		endnetconfig: <>
+   60 		init_file: void (), <./file.c 170>
+   61 			open: <>
+   62 			errx: <>
+   63 			mmap: <>
+   64 			err: <>
+   65 			lseek: <>
+   66 			warnx: <>
+   67 			memset: <>
+   68 			write: <>
+   69 		daemon: <>
+   70 		openlog: <>
+   71 		handle_sigchld: void (), <./statd.c 633>
+   72 			wait4: <>
+   73 			syslog: <>
+   74 			WEXITSTATUS: <>
+   75 		sigemptyset: <>
+   76 		sigaddset: <>
+   77 		sigaction: <>
+   78 		notify_hosts: void (), <./file.c 294>
+   79 			fork: <>
+   80 			syslog: <>
+   81 			strerror: <>
+   82 			notify_one_host: int (), <./file.c 249>
+   83 				gethostname: <>
+   84 				syslog: <>
+   85 				clnt_create: <>
+   86 				clnt_spcreateerror: <>
+   87 				clnt_call: <>
+   88 				clnt_destroy: <>
+   89 			sync_file: void (), <./file.c 61>
+   90 				msync: <>
+   91 				syslog: <>
+   92 				strerror: <>
+   93 			sleep: <>
+   94 			exit: <>
+   95 		svc_run: <>

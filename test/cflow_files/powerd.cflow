@@ -1,0 +1,70 @@
+    1 	main: int (), <./powerd.c 450>
+    2 		geteuid: <>
+    3 		errx: <>
+    4 		getopt: <>
+    5 		parse_mode: void (), <./powerd.c 418>
+    6 			strcmp: <>
+    7 			errx: <>
+    8 		atoi: <>
+    9 		warnx: <>
+   10 		usage: void (), <./powerd.c 441>
+   11 			fprintf: <>
+   12 			exit: <>
+   13 		sysctlnametomib: <>
+   14 		err: <>
+   15 		read_usage_times: int (), <./powerd.c 137>
+   16 			sysctl: <>
+   17 			malloc: <>
+   18 			free: <>
+   19 			memcpy: <>
+   20 		read_freqs: int (), <./powerd.c 185>
+   21 			sysctl: <>
+   22 			malloc: <>
+   23 			free: <>
+   24 			strchr: <>
+   25 			sscanf: <>
+   26 			realloc: <>
+   27 		pidfile_open: <>
+   28 		warn: <>
+   29 		daemon: <>
+   30 		pidfile_remove: <>
+   31 		exit: <>
+   32 		pidfile_write: <>
+   33 		acline_init: void (), <./powerd.c 285>
+   34 			sysctlnametomib: <>
+   35 			warnx: <>
+   36 			open: <>
+   37 		signal: <>
+   38 		handle_sigs: void (), <./powerd.c 434>
+   39 		get_freq: int (), <./powerd.c 241>
+   40 			sysctl: <>
+   41 			warn: <>
+   42 		get_freq_id: int (), <./powerd.c 268>
+   43 		acline_read: void (), <./powerd.c 313>
+   44 			read: <>
+   45 			warnx: <>
+   46 			devd_close: void (), <./powerd.c 410>
+   47 				close: <>
+   48 			strstr: <>
+   49 			sscanf: <>
+   50 			sysctl: <>
+   51 			ioctl: <>
+   52 			close: <>
+   53 			gettimeofday: <>
+   54 			devd_init: int (), <./powerd.c 377>
+   55 				bzero: <>
+   56 				socket: <>
+   57 				warn: <>
+   58 				strlcpy: <>
+   59 				connect: <>
+   60 				close: <>
+   61 				fcntl: <>
+   62 		sysctl: <>
+   63 		printf: <>
+   64 		set_freq: int (), <./powerd.c 256>
+   65 			sysctl: <>
+   66 		FD_ZERO: <>
+   67 		FD_SET: <>
+   68 		select: <>
+   69 		free: <>
+   70 		devd_close: 46

@@ -1,0 +1,69 @@
+    1 	main: int (), <./ckdist.c 90>
+    2 		getopt: <>
+    3 		disttype: int (), <./ckdist.c 419>
+    4 			strcmp: <>
+    5 		warnx: <>
+    6 		usage: void (), <./ckdist.c 440>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		stat: <>
+   10 		err: <>
+   11 		S_ISDIR: <>
+   12 		errx: <>
+   13 		isstdin: <>
+   14 		ckdist: int (), <./ckdist.c 184>
+   15 			isstdin: <>
+   16 			fopen: <>
+   17 			fail: int (), <./ckdist.c 431>
+   18 				warnx: <>
+   19 			distfile: int (), <./ckdist.c 406>
+   20 				disttype: 3
+   21 				strrchr: <>
+   22 			fgetc: <>
+   23 			ungetc: <>
+   24 			chkmd5: int (), <./ckdist.c 221>
+   25 				fgets: <>
+   26 				sscanf: <>
+   27 				feof: <>
+   28 				strrchr: <>
+   29 				strlen: <>
+   30 				distname: const char * (), <./ckdist.c 354>
+   31 					stripath: const char * (), <./ckdist.c 397>
+   32 						strrchr: <>
+   33 					strlen: <>
+   34 					disttype: 3
+   35 					strrchr: <>
+   36 					memcpy: <>
+   37 				open: <>
+   38 				close: <>
+   39 				err: <>
+   40 				MD5File: <>
+   41 				strcmp: <>
+   42 				report: int (), <./ckdist.c 321>
+   43 					stripath: 31
+   44 					printf: <>
+   45 				isfatal: <>
+   46 			chkinf: int (), <./ckdist.c 266>
+   47 				fgets: <>
+   48 				sscanf: <>
+   49 				feof: <>
+   50 				distname: 30
+   51 				open: <>
+   52 				fstat: <>
+   53 				crc: <>
+   54 				close: <>
+   55 				err: <>
+   56 				report: 42
+   57 				isfatal: <>
+   58 			report: 42
+   59 			ferror: <>
+   60 			warn: <>
+   61 			fclose: <>
+   62 			err: <>
+   63 		fail: 17
+   64 		S_ISREG: <>
+   65 		fts_open: <>
+   66 		fts_read: <>
+   67 		fts_set: <>
+   68 		distfile: 19
+   69 		fts_close: <>

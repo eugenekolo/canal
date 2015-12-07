@@ -1,0 +1,210 @@
+    1 	main: int (), <./mtree.c 63>
+    2 		init_excludes: <>
+    3 		getopt: <>
+    4 		fopen: <>
+    5 		err: <>
+    6 		usage: void (), <./mtree.c 185>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		strsep: <>
+   10 		parsekey: u_int (), <./misc.c 89>
+   11 			bsearch: <>
+   12 			keycompare: int (), <./misc.c 105>
+   13 				strcmp: <>
+   14 			errx: <>
+   15 		strtoul: <>
+   16 		errx: <>
+   17 		read_excludes_file: void (), <./excludes.c 64>
+   18 			fopen: <>
+   19 			err: <>
+   20 			fgetln: <>
+   21 			malloc: <>
+   22 			errx: <>
+   23 			memcpy: <>
+   24 			strchr: <>
+   25 			LIST_INSERT_HEAD: <>
+   26 			fclose: <>
+   27 		chdir: <>
+   28 		getcwd: <>
+   29 		cwalk: void (), <./create.c 81>
+   30 			time: <>
+   31 			gethostname: <>
+   32 			printf: <>
+   33 			getlogin: <>
+   34 			ctime: <>
+   35 			fts_open: <>
+   36 			dsort: int (), <./create.c 402>
+   37 				S_ISDIR: <>
+   38 				strcmp: <>
+   39 			err: <>
+   40 			fts_read: <>
+   41 			check_excludes: int (), <./excludes.c 98>
+   42 				LIST_FOREACH: <>
+   43 				MATCH: <>
+   44 			fts_set: <>
+   45 			statd: int (), <./create.c 283>
+   46 				fts_children: <>
+   47 				err: <>
+   48 				RP: <>
+   49 				bzero: <>
+   50 				S_ISDIR: <>
+   51 				FLAGS2IDX: <>
+   52 				printf: <>
+   53 				getpwuid: <>
+   54 				warnx: <>
+   55 				errx: <>
+   56 				getgrgid: <>
+   57 				flags_to_string: char * (), <./misc.c 111>
+   58 					fflagstostr: <>
+   59 					free: <>
+   60 					strdup: <>
+   61 					err: <>
+   62 				free: <>
+   63 			statf: void (), <./create.c 146>
+   64 				calloc: <>
+   65 				errx: <>
+   66 				strvis: <>
+   67 				S_ISDIR: <>
+   68 				printf: <>
+   69 				free: <>
+   70 				S_ISREG: <>
+   71 				output: void (), <./create.c 415>
+   72 					va_start: <>
+   73 					vsnprintf: <>
+   74 					va_end: <>
+   75 					strlen: <>
+   76 					printf: <>
+   77 				inotype: const char * (), <./compare.c 329>
+   78 				getpwuid: <>
+   79 				warnx: <>
+   80 				getgrgid: <>
+   81 				open: <>
+   82 				crc: <>
+   83 				err: <>
+   84 				close: <>
+   85 				MD5File: <>
+   86 				SHA1_File: <>
+   87 				RIPEMD160_File: <>
+   88 				SHA256_File: <>
+   89 				rlink: char * (), <./compare.c 377>
+   90 					readlink: <>
+   91 					err: <>
+   92 					strvis: <>
+   93 				flags_to_string: 57
+   94 				putchar: <>
+   95 			warnx: <>
+   96 			strerror: <>
+   97 			fts_close: <>
+   98 		exit: <>
+   99 		mtree_specspec: int (), <./specspec.c 244>
+  100 			mtree_readspec: NODE * (), <./spec.c 58>
+  101 				bzero: <>
+  102 				fgets: <>
+  103 				strchr: <>
+  104 				errx: <>
+  105 				isspace: <>
+  106 				fprintf: <>
+  107 				set: void (), <./spec.c 166>
+  108 					strtok: <>
+  109 					parsekey: 10
+  110 					errx: <>
+  111 					strtoul: <>
+  112 					strdup: <>
+  113 					strcmp: <>
+  114 					strtofflags: <>
+  115 					getgrnam: <>
+  116 					setmode: <>
+  117 					getmode: <>
+  118 					free: <>
+  119 					strtoq: <>
+  120 					malloc: <>
+  121 					strlen: <>
+  122 					strunvis: <>
+  123 					getpwnam: <>
+  124 				strtok: <>
+  125 				strcmp: <>
+  126 				unset: void (), <./spec.c 317>
+  127 					strtok: <>
+  128 					parsekey: 10
+  129 				calloc: <>
+  130 				strlen: <>
+  131 				strpbrk: <>
+  132 				strunvis: <>
+  133 			walk_in_the_forest: int (), <./specspec.c 176>
+  134 				strcmp: <>
+  135 				asprintf: <>
+  136 				walk_in_the_forest: 133
+  137 				free: <>
+  138 				compare_nodes: int (), <./specspec.c 115>
+  139 					mismatch: int (), <./specspec.c 93>
+  140 						shownode: void (), <./specspec.c 47>
+  141 							printf: <>
+  142 							ftype: const char * (), <./compare.c 353>
+  143 							getgrgid: <>
+  144 							getpwuid: <>
+  145 							flags_to_string: 57
+  146 						printf: <>
+  147 					FF: <>
+  148 					FS: <>
+  149 					FM: <>
+  150 			compare_nodes: 138
+  151 		mtree_verifyspec: int (), <./verify.c 57>
+  152 			mtree_readspec: 100
+  153 			vwalk: int (), <./verify.c 74>
+  154 				fts_open: <>
+  155 				nsort: int (), <./verify.c 68>
+  156 					strcmp: <>
+  157 				err: <>
+  158 				fts_read: <>
+  159 				check_excludes: 41
+  160 				fts_set: <>
+  161 				warnx: <>
+  162 				RP: <>
+  163 				strerror: <>
+  164 				fnmatch: <>
+  165 				strcmp: <>
+  166 				compare: int (), <./compare.c 75>
+  167 					S_ISBLK: <>
+  168 					S_ISCHR: <>
+  169 					S_ISDIR: <>
+  170 					S_ISFIFO: <>
+  171 					S_ISREG: <>
+  172 					S_ISLNK: <>
+  173 					S_ISSOCK: <>
+  174 					printf: <>
+  175 					ftype: 142
+  176 					inotype: 77
+  177 					chown: <>
+  178 					strerror: <>
+  179 					chmod: <>
+  180 					ctime: <>
+  181 					utimes: <>
+  182 					open: <>
+  183 					crc: <>
+  184 					close: <>
+  185 					flags_to_string: 57
+  186 					free: <>
+  187 					chflags: <>
+  188 					MD5File: <>
+  189 					strcmp: <>
+  190 					SHA1_File: <>
+  191 					RIPEMD160_File: <>
+  192 					SHA256_File: <>
+  193 					rlink: 89
+  194 				printf: <>
+  195 				S_ISDIR: <>
+  196 				putchar: <>
+  197 				fts_close: <>
+  198 			miss: void (), <./verify.c 159>
+  199 				strcpy: <>
+  200 				stat: <>
+  201 				printf: <>
+  202 				putchar: <>
+  203 				symlink: <>
+  204 				strerror: <>
+  205 				lchown: <>
+  206 				mkdir: <>
+  207 				miss: 198
+  208 				chown: <>
+  209 				chmod: <>
+  210 				chflags: <>

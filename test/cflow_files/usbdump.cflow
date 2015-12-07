@@ -1,0 +1,101 @@
+    1 	main: int (), <./usbdump.c 801>
+    2 		getopt: <>
+    3 		init_rfile: void (), <./usbdump.c 710>
+    4 			open: <>
+    5 			err: <>
+    6 			read: <>
+    7 			le32toh: <>
+    8 			errx: <>
+    9 		strtol: <>
+   10 		usage: void (), <./usbdump.c 766>
+   11 			fprintf: <>
+   12 			exit: <>
+   13 		init_wfile: void (), <./usbdump.c 744>
+   14 			open: <>
+   15 			err: <>
+   16 			memset: <>
+   17 			htole32: <>
+   18 			write: <>
+   19 		add_filter: void (), <./usbdump.c 171>
+   20 			malloc: <>
+   21 			errx: <>
+   22 			STAILQ_INSERT_TAIL: <>
+   23 		open: <>
+   24 		err: <>
+   25 		read_file: void (), <./usbdump.c 657>
+   26 			read: <>
+   27 			le32toh: <>
+   28 			malloc: <>
+   29 			errx: <>
+   30 			err: <>
+   31 			fix_packets: void (), <./usbdump.c 566>
+   32 				htole32: <>
+   33 				BPF_WORDALIGN: <>
+   34 				memcpy: <>
+   35 				memset: <>
+   36 				err: <>
+   37 			print_packets: void (), <./usbdump.c 606>
+   38 				le32toh: <>
+   39 				HEADER_ALIGN: <>
+   40 				err: <>
+   41 				print_apacket: void (), <./usbdump.c 451>
+   42 					memcpy: <>
+   43 					le32toh: <>
+   44 					match_filter: int (), <./usbdump.c 264>
+   45 						STAILQ_FIRST: <>
+   46 						STAILQ_FOREACH: <>
+   47 					localtime: <>
+   48 					strftime: <>
+   49 					printf: <>
+   50 					usb_speedstr: const char * (), <./usbdump.c 315>
+   51 					usb_errstr: const char * (), <./usbdump.c 306>
+   52 					USBPF_FRAME_ALIGN: <>
+   53 					write: <>
+   54 					err: <>
+   55 					hexdump: void (), <./usbdump.c 393>
+   56 						hexbyte: void (), <./usbdump.c 370>
+   57 						puts: <>
+   58 					print_flags: void (), <./usbdump.c 324>
+   59 						printf: <>
+   60 						FLAGS: <>
+   61 					print_status: void (), <./usbdump.c 340>
+   62 						printf: <>
+   63 						STATUS: <>
+   64 			free: <>
+   65 		exit: <>
+   66 		check_usb_pf_sysctl: void (), <./usbdump.c 784>
+   67 			sysctlbyname: <>
+   68 			warnx: <>
+   69 		ioctl: <>
+   70 		errx: <>
+   71 		memset: <>
+   72 		socket: <>
+   73 		if_nametoindex: <>
+   74 		strlcpy: <>
+   75 		malloc: <>
+   76 		make_filter: void (), <./usbdump.c 186>
+   77 			STAILQ_FOREACH: <>
+   78 			malloc: <>
+   79 			errx: <>
+   80 			BPF_STORE_STMT: <>
+   81 			BPF_STORE_JUMP: <>
+   82 			htobe32: <>
+   83 		free_filter: void (), <./usbdump.c 280>
+   84 			STAILQ_FIRST: <>
+   85 			STAILQ_REMOVE_HEAD: <>
+   86 			free: <>
+   87 		signal: <>
+   88 		handle_sigint: void (), <./usbdump.c 292>
+   89 		do_loop: void (), <./usbdump.c 682>
+   90 			read: <>
+   91 			fprintf: <>
+   92 			strerror: <>
+   93 			fix_packets: 31
+   94 			write_packets: void (), <./usbdump.c 639>
+   95 				htole32: <>
+   96 				write: <>
+   97 				err: <>
+   98 			print_packets: 37
+   99 		printf: <>
+  100 		warn: <>
+  101 		close: <>

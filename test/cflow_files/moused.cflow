@@ -1,0 +1,171 @@
+    1 	main: int (), <./moused.c 571>
+    2 		getopt: <>
+    3 		atoi: <>
+    4 		warnx: <>
+    5 		usage: void (), <./moused.c 1371>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		sscanf: <>
+    9 		debug: int, <./moused.c 177>
+   10 		strcmp: <>
+   11 		r_installmap: int (), <./moused.c 2442>
+   12 			skipspace: char * (), <./moused.c 2434>
+   13 				isspace: <>
+   14 			isdigit: <>
+   15 			atoi: <>
+   16 			isspace: <>
+   17 		isdigit: <>
+   18 		strncmp: <>
+   19 		setjmp: <>
+   20 		signal: <>
+   21 		hup: void (), <./moused.c 1346>
+   22 			longjmp: <>
+   23 		cleanup: void (), <./moused.c 1352>
+   24 			unlink: <>
+   25 			exit: <>
+   26 		pause_mouse: void (), <./moused.c 1360>
+   27 		open: <>
+   28 		logerr: <>
+   29 		r_identify: int (), <./moused.c 1482>
+   30 			ioctl: <>
+   31 			bcopy: <>
+   32 			logwarnx: <>
+   33 			r_name: const char * (), <./moused.c 1591>
+   34 			pnpgets: int (), <./moused.c 2915>
+   35 				pnpwakeup1: int (), <./moused.c 2795>
+   36 					debug: int, <./moused.c 177>
+   37 					ioctl: <>
+   38 					usleep: <>
+   39 					setmousespeed: void (), <./moused.c 2688>
+   40 						tcgetattr: <>
+   41 						logwarn: <>
+   42 						cfsetispeed: <>
+   43 						cfsetospeed: <>
+   44 						tcsetattr: <>
+   45 						write: <>
+   46 						usleep: <>
+   47 					FD_ZERO: <>
+   48 					FD_SET: <>
+   49 					select: <>
+   50 				pnpwakeup2: int (), <./moused.c 2876>
+   51 					debug: int, <./moused.c 177>
+   52 					ioctl: <>
+   53 					usleep: <>
+   54 					setmousespeed: 39
+   55 					FD_ZERO: <>
+   56 					FD_SET: <>
+   57 					select: <>
+   58 				ioctl: <>
+   59 				usleep: <>
+   60 				read: <>
+   61 				debug: int, <./moused.c 177>
+   62 				FD_ZERO: <>
+   63 				FD_SET: <>
+   64 				select: <>
+   65 				bcopy: <>
+   66 			pnpparse: int (), <./moused.c 2993>
+   67 				strlen: <>
+   68 				debug: int, <./moused.c 177>
+   69 				sprintf: <>
+   70 				strncmp: <>
+   71 				logwarnx: <>
+   72 			debug: int, <./moused.c 177>
+   73 			pnpproto: symtab_t * (), <./moused.c 3136>
+   74 				strncmp: <>
+   75 				gettoken: symtab_t * (), <./moused.c 3176>
+   76 					strncmp: <>
+   77 		logwarnx: <>
+   78 		close: <>
+   79 		printf: <>
+   80 		r_if: const char * (), <./moused.c 1584>
+   81 			gettokenname: const char * (), <./moused.c 3188>
+   82 		r_name: 33
+   83 		r_model: const char * (), <./moused.c 1601>
+   84 			gettokenname: 81
+   85 		exit: <>
+   86 		sigpause: <>
+   87 		r_init: void (), <./moused.c 1608>
+   88 			setmousespeed: 39
+   89 			write: <>
+   90 			usleep: <>
+   91 			ioctl: <>
+   92 			FD_ZERO: <>
+   93 			FD_SET: <>
+   94 			select: <>
+   95 			read: <>
+   96 			debug: int, <./moused.c 177>
+   97 			mremote_serversetup: void (), <./moused.c 3370>
+   98 				unlink: <>
+   99 				socket: <>
+  100 				logerrx: <>
+  101 				umask: <>
+  102 				bzero: <>
+  103 				strcpy: <>
+  104 				bind: <>
+  105 				SUN_LEN: <>
+  106 				listen: <>
+  107 			tcsendbreak: <>
+  108 		moused: void (), <./moused.c 1012>
+  109 			open: <>
+  110 			logerr: <>
+  111 			pidfile_open: <>
+  112 			logerrx: <>
+  113 			logwarn: <>
+  114 			daemon: <>
+  115 			pidfile_remove: <>
+  116 			pidfile_write: <>
+  117 			bzero: <>
+  118 			clock_gettime: <>
+  119 			ioctl: <>
+  120 			FD_ZERO: <>
+  121 			FD_SET: <>
+  122 			select: <>
+  123 			S_DELAYED: <>
+  124 			r_timeout: int (), <./moused.c 2610>
+  125 				clock_gettime: <>
+  126 				tssub: <>
+  127 				tscmp: <>
+  128 			r_statetrans: int (), <./moused.c 2366>
+  129 				debug: int, <./moused.c 177>
+  130 				S_DELAYED: <>
+  131 				clock_gettime: <>
+  132 				r_timestamp: void (), <./moused.c 2544>
+  133 					clock_gettime: <>
+  134 					tssub: <>
+  135 					debug: int, <./moused.c 177>
+  136 					tscmp: <>
+  137 			debug: int, <./moused.c 177>
+  138 			FD_ISSET: <>
+  139 			mremote_clientchg: void (), <./moused.c 3396>
+  140 				accept: <>
+  141 				logwarnx: <>
+  142 				debug: int, <./moused.c 177>
+  143 				close: <>
+  144 			read: <>
+  145 			r_protocol: int (), <./moused.c 1825>
+  146 				debug: int, <./moused.c 177>
+  147 				kidspad: int (), <./moused.c 3228>
+  148 					fprintf: <>
+  149 					clock_gettime: <>
+  150 				gtco_digipad: int (), <./moused.c 3290>
+  151 					fprintf: <>
+  152 				write: <>
+  153 				abs: <>
+  154 				MOUSE_PS2PLUS_CHECKBITS: <>
+  155 				MOUSE_PS2PLUS_PACKET_TYPE: <>
+  156 			r_timestamp: 132
+  157 			A: <>
+  158 			r_click: void (), <./moused.c 2626>
+  159 				debug: int, <./moused.c 177>
+  160 				ioctl: <>
+  161 			r_map: void (), <./moused.c 2478>
+  162 			tssub: <>
+  163 			tscmp: <>
+  164 			abs: <>
+  165 			tsclr: <>
+  166 			expoacc: void (), <./moused.c 985>
+  167 				sqrtf: <>
+  168 				powf: <>
+  169 				lroundf: <>
+  170 			linacc: void (), <./moused.c 959>
+  171 				lround: <>

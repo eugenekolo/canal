@@ -1,0 +1,131 @@
+    1 	main: int (), <./tzsetup.c 910>
+    2 		sysctlbyname: <>
+    3 		strcmp: <>
+    4 		getopt: <>
+    5 		usage: void (), <./tzsetup.c 901>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		strcpy: <>
+    9 		sprintf: <>
+   10 		umask: <>
+   11 		fopen: <>
+   12 		fgets: <>
+   13 		strlen: <>
+   14 		install_zoneinfo: int (), <./tzsetup.c 835>
+   15 			sprintf: <>
+   16 			install_zoneinfo_file: int (), <./tzsetup.c 646>
+   17 				lstat: <>
+   18 				S_ISLNK: <>
+   19 				snprintf: <>
+   20 				dialog_msgbox: <>
+   21 				fprintf: <>
+   22 				unlink: <>
+   23 				strerror: <>
+   24 				open: <>
+   25 				read: <>
+   26 				write: <>
+   27 				close: <>
+   28 				access: <>
+   29 				symlink: <>
+   30 			fopen: <>
+   31 			fprintf: <>
+   32 			fclose: <>
+   33 		exit: <>
+   34 		errx: <>
+   35 		fclose: <>
+   36 		stat: <>
+   37 		read_iso3166_table: void (), <./tzsetup.c 334>
+   38 			fopen: <>
+   39 			err: <>
+   40 			fgetln: <>
+   41 			errx: <>
+   42 			strspn: <>
+   43 			strsep: <>
+   44 			strlen: <>
+   45 			CODE2INT: <>
+   46 			strdup: <>
+   47 			fclose: <>
+   48 		read_zones: void (), <./tzsetup.c 472>
+   49 			fopen: <>
+   50 			err: <>
+   51 			fgetln: <>
+   52 			errx: <>
+   53 			strsep: <>
+   54 			strlen: <>
+   55 			strchr: <>
+   56 			strncat: <>
+   57 			find_continent: struct continent (), <./tzsetup.c 292>
+   58 			add_zone_to_country: void (), <./tzsetup.c 389>
+   59 				errx: <>
+   60 				CODE2INT: <>
+   61 				malloc: <>
+   62 				TAILQ_INIT: <>
+   63 				strdup: <>
+   64 				TAILQ_INSERT_TAIL: <>
+   65 			fclose: <>
+   66 		sort_countries: void (), <./tzsetup.c 465>
+   67 			qsort: <>
+   68 			compare_countries: int (), <./tzsetup.c 446>
+   69 				strcmp: <>
+   70 		make_menus: void (), <./tzsetup.c 519>
+   71 			TAILQ_FOREACH: <>
+   72 			TAILQ_FIRST: <>
+   73 			TAILQ_NEXT: <>
+   74 			memset: <>
+   75 			malloc: <>
+   76 			errx: <>
+   77 			fire: <>
+   78 			continent_country_menu: int (), <./tzsetup.c 257>
+   79 				OCEANP: <>
+   80 				strcmp: <>
+   81 				set_zone_utc: int (), <./tzsetup.c 637>
+   82 					confirm_zone: int (), <./tzsetup.c 856>
+   83 						time: <>
+   84 						setenv: <>
+   85 						tzset: <>
+   86 						localtime: <>
+   87 						snprintf: <>
+   88 						dialog_yesno: <>
+   89 					install_zoneinfo_file: 16
+   90 				fire: <>
+   91 				snprintf: <>
+   92 				xdialog_menu: int (), <./tzsetup.c 116>
+   93 					dlg_save_vars: <>
+   94 					dlg_calloc: <>
+   95 					assert_ptr: <>
+   96 					xdialog_count_rows: int (), <./tzsetup.c 84>
+   97 						strchr: <>
+   98 					strlen: <>
+   99 					MAX: <>
+  100 					xdialog_count_columns: int (), <./tzsetup.c 99>
+  101 						strchr: <>
+  102 						MAX: <>
+  103 						strlen: <>
+  104 					dlg_menu: <>
+  105 					fire: <>
+  106 					dlg_clear: <>
+  107 					free: <>
+  108 					dlg_restore_vars: <>
+  109 			asprintf: <>
+  110 			set_zone_whole_country: int (), <./tzsetup.c 888>
+  111 				confirm_zone: 82
+  112 				install_zoneinfo: 14
+  113 			set_zone_multi: int (), <./tzsetup.c 875>
+  114 				confirm_zone: 82
+  115 				install_zoneinfo: 14
+  116 			set_zone_menu: int (), <./tzsetup.c 618>
+  117 				snprintf: <>
+  118 				xdialog_menu: 92
+  119 		init_dialog: <>
+  120 		snprintf: <>
+  121 		dlg_save_vars: <>
+  122 		dialog_yesno: <>
+  123 		dlg_restore_vars: <>
+  124 		unlink: <>
+  125 		open: <>
+  126 		end_dialog: <>
+  127 		err: <>
+  128 		close: <>
+  129 		dlg_clear: <>
+  130 		install_zoneinfo_file: 16
+  131 		xdialog_menu: 92

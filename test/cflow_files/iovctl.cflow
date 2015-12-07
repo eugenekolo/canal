@@ -1,0 +1,187 @@
+    1 	main: int (), <./iovctl.c 174>
+    2 		getopt: <>
+    3 		warnx: <>
+    4 		usage: void (), <./iovctl.c 156>
+    5 			warnx: <>
+    6 			exit: <>
+    7 		strdup: <>
+    8 		config_action: void (), <./iovctl.c 271>
+    9 			find_device: char * (), <./parse.c 369>
+   10 				ucl_parser_new: <>
+   11 				err: <>
+   12 				ucl_parser_add_file: <>
+   13 				ucl_parser_get_error: <>
+   14 				errx: <>
+   15 				ucl_parser_get_object: <>
+   16 				ucl_iterate_object: <>
+   17 				ucl_object_key: <>
+   18 				strcasecmp: <>
+   19 				find_pf_device: const char * (), <./parse.c 337>
+   20 					ucl_iterate_object: <>
+   21 					ucl_object_key: <>
+   22 					strcasecmp: <>
+   23 					ucl_object_tostring_safe: <>
+   24 					err: <>
+   25 				asprintf: <>
+   26 				ucl_object_unref: <>
+   27 				ucl_parser_free: <>
+   28 			open: <>
+   29 			err: <>
+   30 			get_schema: nvlist_t * (), <./iovctl.c 56>
+   31 				ioctl: <>
+   32 				err: <>
+   33 				malloc: <>
+   34 				nvlist_unpack: <>
+   35 				free: <>
+   36 			parse_config_file: nvlist_t * (), <./parse.c 256>
+   37 				regcomp: <>
+   38 				errx: <>
+   39 				ucl_parser_new: <>
+   40 				err: <>
+   41 				ucl_parser_add_file: <>
+   42 				ucl_parser_get_error: <>
+   43 				nvlist_create: <>
+   44 				nvlist_get_nvlist: <>
+   45 				ucl_parser_get_object: <>
+   46 				ucl_iterate_object: <>
+   47 				ucl_object_key: <>
+   48 				strcasecmp: <>
+   49 				parse_device_config: void (), <./parse.c 202>
+   50 					nvlist_exists: <>
+   51 					errx: <>
+   52 					nvlist_get_nvlist: <>
+   53 					nvlist_create: <>
+   54 					err: <>
+   55 					ucl_iterate_object: <>
+   56 					ucl_object_key: <>
+   57 					nvlist_exists_nvlist: <>
+   58 					add_config: void (), <./parse.c 171>
+   59 						nvlist_get_string: <>
+   60 						strcasecmp: <>
+   61 						add_bool_config: void (), <./parse.c 61>
+   62 							ucl_object_toboolean_safe: <>
+   63 							report_config_error: void (), <./parse.c 49>
+   64 								errx: <>
+   65 								ucl_object_tostring: <>
+   66 							nvlist_add_bool: <>
+   67 						add_string_config: void (), <./parse.c 76>
+   68 							ucl_object_tostring_safe: <>
+   69 							report_config_error: 63
+   70 							nvlist_add_string: <>
+   71 						add_uint_config: void (), <./parse.c 91>
+   72 							ucl_object_toint_safe: <>
+   73 							report_config_error: 63
+   74 							nvlist_add_number: <>
+   75 						add_unicast_mac_config: void (), <./parse.c 116>
+   76 							ucl_object_tostring_safe: <>
+   77 							report_config_error: 63
+   78 							strdup: <>
+   79 							strtok_r: <>
+   80 							strlen: <>
+   81 							strtoul: <>
+   82 							free: <>
+   83 							ETHER_IS_MULTICAST: <>
+   84 							errx: <>
+   85 							ucl_object_tostring: <>
+   86 							nvlist_add_binary: <>
+   87 						errx: <>
+   88 					nvlist_move_nvlist: <>
+   89 				regexec: <>
+   90 				validate_config: void (), <./validate.c 225>
+   91 					find_config: nvlist_t * (), <./validate.c 51>
+   92 						dnvlist_take_nvlist: <>
+   93 						nvlist_create: <>
+   94 						err: <>
+   95 						nvlist_move_nvlist: <>
+   96 					validate_device: void (), <./validate.c 196>
+   97 						validate_subsystem: void (), <./validate.c 167>
+   98 							nvlist_get_nvlist: <>
+   99 							nvlist_next: <>
+  100 							dnvlist_get_bool: <>
+  101 							nvlist_exists: <>
+  102 							errx: <>
+  103 					nvlist_get_nvlist: <>
+  104 					nvlist_move_nvlist: <>
+  105 					get_num_vfs: uint16_t (), <./validate.c 205>
+  106 						nvlist_get_nvlist: <>
+  107 						nvlist_get_number: <>
+  108 					errx: <>
+  109 					dnvlist_take_nvlist: <>
+  110 					snprintf: <>
+  111 					apply_defaults: void (), <./validate.c 155>
+  112 						apply_subsystem_defaults: void (), <./validate.c 100>
+  113 							nvlist_take_nvlist: <>
+  114 							nvlist_get_nvlist: <>
+  115 							nvlist_next: <>
+  116 							nvlist_exists: <>
+  117 							nvlist_add_bool: <>
+  118 							nvlist_get_bool: <>
+  119 							nvlist_add_number: <>
+  120 							nvlist_get_number: <>
+  121 							nvlist_add_string: <>
+  122 							nvlist_get_string: <>
+  123 							nvlist_add_nvlist: <>
+  124 							nvlist_get_binary: <>
+  125 							nvlist_add_binary: <>
+  126 							errx: <>
+  127 							nvlist_move_nvlist: <>
+  128 					nvlist_destroy: <>
+  129 					nvlist_next: <>
+  130 					regexec: <>
+  131 					nitems: <>
+  132 					parse_vf_num: uint16_t (), <./validate.c 79>
+  133 						strtoul: <>
+  134 						errx: <>
+  135 				ucl_object_unref: <>
+  136 				ucl_parser_free: <>
+  137 				regfree: <>
+  138 			errx: <>
+  139 			config_iov: void (), <./iovctl.c 95>
+  140 				nvlist_pack: <>
+  141 				err: <>
+  142 				printf: <>
+  143 				nvlist_fdump: <>
+  144 				ioctl: <>
+  145 				free: <>
+  146 			nvlist_destroy: <>
+  147 			free: <>
+  148 			close: <>
+  149 		find_device: 9
+  150 		delete_action: void (), <./iovctl.c 296>
+  151 			open_device: int (), <./iovctl.c 122>
+  152 				pathconf: <>
+  153 				err: <>
+  154 				malloc: <>
+  155 				strlcpy: <>
+  156 				snprintf: <>
+  157 				errx: <>
+  158 				open: <>
+  159 				free: <>
+  160 			printf: <>
+  161 			ioctl: <>
+  162 			err: <>
+  163 			close: <>
+  164 		free: <>
+  165 		print_schema: void (), <./iovctl.c 376>
+  166 			open_device: 151
+  167 			get_schema: 30
+  168 			nvlist_get_nvlist: <>
+  169 			printf: <>
+  170 			print_subsystem_schema: void (), <./iovctl.c 352>
+  171 				nvlist_next: <>
+  172 				nvlist_get_nvlist: <>
+  173 				nvlist_get_string: <>
+  174 				printf: <>
+  175 				dnvlist_get_bool: <>
+  176 				nvlist_exists: <>
+  177 				print_default_value: void (), <./iovctl.c 315>
+  178 					strcasecmp: <>
+  179 					printf: <>
+  180 					nvlist_get_bool: <>
+  181 					nvlist_get_string: <>
+  182 					nvlist_get_number: <>
+  183 					nvlist_get_binary: <>
+  184 					errx: <>
+  185 			nvlist_destroy: <>
+  186 			close: <>
+  187 		exit: <>

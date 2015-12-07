@@ -1,0 +1,64 @@
+    1 	main: int (), <./boot0cfg.c 117>
+    2 		getopt: <>
+    3 		argtoi: int (), <./boot0cfg.c 583>
+    4 			strtol: <>
+    5 			errx: <>
+    6 		sscanf: <>
+    7 		errx: <>
+    8 		stropt: void (), <./boot0cfg.c 552>
+    9 			strdup: <>
+   10 			err: <>
+   11 			strtok: <>
+   12 			strncmp: <>
+   13 			strcmp: <>
+   14 			errx: <>
+   15 			free: <>
+   16 		strcasecmp: <>
+   17 		usage: void (), <./boot0cfg.c 599>
+   18 			fprintf: <>
+   19 			exit: <>
+   20 		g_device_path: <>
+   21 		read_mbr: int (), <./boot0cfg.c 308>
+   22 			open: <>
+   23 			err: <>
+   24 			read: <>
+   25 			errx: <>
+   26 			cv2: <>
+   27 			boot0bs: int (), <./boot0cfg.c 518>
+   28 				memcmp: <>
+   29 			boot0version: int (), <./boot0cfg.c 490>
+   30 				boot0bs: 27
+   31 			malloc: <>
+   32 			lseek: <>
+   33 			close: <>
+   34 			memcpy: <>
+   35 		write_mbr: void (), <./boot0cfg.c 372>
+   36 			open: <>
+   37 			write: <>
+   38 			close: <>
+   39 			errx: <>
+   40 			err: <>
+   41 			warn: <>
+   42 			g_providername: <>
+   43 			geom_class_available: int (), <./boot0cfg.c 347>
+   44 				geom_gettree: <>
+   45 				errc: <>
+   46 				LIST_FOREACH: <>
+   47 				strcmp: <>
+   48 				geom_deletetree: <>
+   49 			gctl_get_handle: <>
+   50 			gctl_ro_param: <>
+   51 			gctl_issue: <>
+   52 			gctl_free: <>
+   53 			free: <>
+   54 		memcpy: <>
+   55 		mk2: <>
+   56 		set_bell: int (), <./boot0cfg.c 276>
+   57 			printf: <>
+   58 			warn: <>
+   59 		display_mbr: void (), <./boot0cfg.c 441>
+   60 			printf: <>
+   61 			boot0version: 29
+   62 			cv2: <>
+   63 			set_bell: 56
+   64 		free: <>

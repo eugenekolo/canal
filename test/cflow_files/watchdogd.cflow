@@ -1,0 +1,82 @@
+    1 	main: int (), <./watchdogd.c 126>
+    2 		getuid: <>
+    3 		errx: <>
+    4 		parseargs: void (), <./watchdogd.c 686>
+    5 			strlen: <>
+    6 			getopt_long: <>
+    7 			strdup: <>
+    8 			fetchtimeout: long (), <./watchdogd.c 492>
+    9 				strtol: <>
+   10 				errx: <>
+   11 			atoi: <>
+   12 			parse_timeout_to_pow2ns: u_int (), <./watchdogd.c 212>
+   13 				fetchtimeout: 8
+   14 				seconds_to_pow2ns: int (), <./watchdogd.c 659>
+   15 					errx: <>
+   16 					flsll: <>
+   17 					printf: <>
+   18 				pow2ns_to_ts: void (), <./watchdogd.c 196>
+   19 				tstotv: int (), <./watchdogd.c 579>
+   20 				tvtohz: int (), <./watchdogd.c 592>
+   21 					sysctlbyname: <>
+   22 					err: <>
+   23 					printf: <>
+   24 				printf: <>
+   25 				errx: <>
+   26 			printf: <>
+   27 			strcmp: <>
+   28 			timeout_act_str2int: int (), <./watchdogd.c 554>
+   29 				strdup: <>
+   30 				err: <>
+   31 				strsep: <>
+   32 				strcmp: <>
+   33 				timeout_act_error: void (), <./watchdogd.c 529>
+   34 					asprintf: <>
+   35 					err: <>
+   36 					free: <>
+   37 					warnx: <>
+   38 					usage: void (), <./watchdogd.c 476>
+   39 						fprintf: <>
+   40 						exit: <>
+   41 				free: <>
+   42 			usage: 38
+   43 			errx: <>
+   44 			pow2ns_to_ts: 18
+   45 		openlog: <>
+   46 		rtprio: <>
+   47 		err: <>
+   48 		watchdog_init: int (), <./watchdogd.c 263>
+   49 			open: <>
+   50 			warn: <>
+   51 		watchdog_onoff: int (), <./watchdogd.c 412>
+   52 			ioctl: <>
+   53 			warn: <>
+   54 			watchdog_patpat: int (), <./watchdogd.c 398>
+   55 				ioctl: <>
+   56 		pidfile_open: <>
+   57 		getprogname: <>
+   58 		warn: <>
+   59 		daemon: <>
+   60 		pidfile_remove: <>
+   61 		signal: <>
+   62 		sighandler: void (), <./watchdogd.c 252>
+   63 		pidfile_write: <>
+   64 		madvise: <>
+   65 		mlockall: <>
+   66 		watchdog_loop: void (), <./watchdogd.c 347>
+   67 			watchdog_getuptime: int (), <./watchdogd.c 280>
+   68 				clock_gettime: <>
+   69 				warn: <>
+   70 			system: <>
+   71 			stat: <>
+   72 			watchdog_patpat: 54
+   73 			watchdog_check_dogfunction_time: long (), <./watchdogd.c 294>
+   74 				TIMESPEC_TO_TIMEVAL: <>
+   75 				timersub: <>
+   76 				syslog: <>
+   77 				warnx: <>
+   78 				watchdog_getuptime: 67
+   79 			sleep: <>
+   80 			watchdog_onoff: 51
+   81 			warnx: <>
+   82 		watchdog_patpat: 54

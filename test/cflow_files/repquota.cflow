@@ -1,0 +1,39 @@
+    1 	main: int (), <./repquota.c 108>
+    2 		getopt: <>
+    3 		usage: void (), <./repquota.c 189>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		setgrent: <>
+    7 		getgrent: <>
+    8 		addid: struct fileusage (), <./repquota.c 314>
+    9 		endgrent: <>
+   10 		setpwent: <>
+   11 		getpwent: <>
+   12 		endpwent: <>
+   13 		setfsent: <>
+   14 		getfsent: <>
+   15 		strcmp: <>
+   16 		repquota: int (), <./repquota.c 198>
+   17 			quota_open: <>
+   18 			printf: <>
+   19 			fprintf: <>
+   20 			max: <>
+   21 			quota_maxid: <>
+   22 			quota_read: <>
+   23 			lookup: struct fileusage (), <./repquota.c 300>
+   24 			addid: struct fileusage (), <./repquota.c 314>
+   25 			prthumanval: void (), <./repquota.c 263>
+   26 				printf: <>
+   27 				dbtokb: <>
+   28 				humanize_number: <>
+   29 				dbtob: <>
+   30 			timeprt: char * (), <./repquota.c 345>
+   31 				time: <>
+   32 				strlcpy: <>
+   33 				sprintf: <>
+   34 			quota_close: <>
+   35 		oneof: int (), <./repquota.c 284>
+   36 			strcmp: <>
+   37 		endfsent: <>
+   38 		warnx: <>
+   39 		exit: <>

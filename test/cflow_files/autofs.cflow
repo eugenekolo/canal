@@ -1,0 +1,440 @@
+    1 	main: int (), <./common.c 1207>
+    2 		log_errx: void (), <./log.c 156>
+    3 			va_start: <>
+    4 			log_common: void (), <./log.c 87>
+    5 				vsnprintf: <>
+    6 				fprintf: <>
+    7 				getprogname: <>
+    8 				syslog: <>
+    9 				exit: <>
+   10 				strnvis: <>
+   11 				strerror: <>
+   12 			va_end: <>
+   13 			exit: <>
+   14 		basename: <>
+   15 		strcmp: <>
+   16 		main_automount: int (), <./automount.c 320>
+   17 			defined_init: void (), <./defined.c 255>
+   18 				TAILQ_INIT: <>
+   19 				uname: <>
+   20 				log_err: void (), <./log.c 144>
+   21 					va_start: <>
+   22 					log_common: 4
+   23 					va_end: <>
+   24 					exit: <>
+   25 				defined_add: void (), <./defined.c 218>
+   26 					defined_find: <>
+   27 					log_errx: 2
+   28 					log_debugx: void (), <./log.c 188>
+   29 						va_start: <>
+   30 						log_common: 4
+   31 						va_end: <>
+   32 					calloc: <>
+   33 					log_err: 20
+   34 					checked_strdup: char * (), <./common.c 76>
+   35 						assert: <>
+   36 						strdup: <>
+   37 						log_err: 20
+   38 					TAILQ_INSERT_TAIL: <>
+   39 			getopt: <>
+   40 			defined_parse_and_add: void (), <./defined.c 239>
+   41 				strsep: <>
+   42 				log_errx: 2
+   43 				defined_add: 25
+   44 			concat: char * (), <./common.c 92>
+   45 				strlen: <>
+   46 				asprintf: <>
+   47 				log_err: 20
+   48 			usage_automount: void (), <./automount.c 312>
+   49 				fprintf: <>
+   50 				exit: <>
+   51 			log_init: void (), <./log.c 51>
+   52 				openlog: <>
+   53 				getprogname: <>
+   54 			flush_caches: void (), <./automount.c 260>
+   55 				getmntinfo: <>
+   56 				log_err: 20
+   57 				log_debugx: 28
+   58 				strcmp: <>
+   59 				flush_autofs: void (), <./automount.c 232>
+   60 					log_debugx: 28
+   61 					memset: <>
+   62 					build_iovec: <>
+   63 					nmount: <>
+   64 					log_err: 20
+   65 			unmount_automounted: void (), <./automount.c 283>
+   66 				getmntinfo: <>
+   67 				log_err: 20
+   68 				log_debugx: 28
+   69 				strcmp: <>
+   70 				unmount_by_statfs: int (), <./automount.c 64>
+   71 					asprintf: <>
+   72 					log_err: 20
+   73 					log_debugx: 28
+   74 					unmount: <>
+   75 					free: <>
+   76 					log_warn: void (), <./log.c 168>
+   77 						va_start: <>
+   78 						log_common: 4
+   79 						va_end: <>
+   80 			node_new_root: struct node (), <./common.c 164>
+   81 			parse_master: void (), <./common.c 1155>
+   82 				log_debugx: 28
+   83 				fopen: <>
+   84 				err: <>
+   85 				parse_master_yyin: void (), <./common.c 1113>
+   86 					yylex: <>
+   87 					node_new_map: struct node (), <./common.c 212>
+   88 					checked_strdup: 34
+   89 					log_errx: 2
+   90 				fclose: <>
+   91 				node_expand_includes: void (), <./common.c 290>
+   92 					TAILQ_FOREACH_SAFE: <>
+   93 					access: <>
+   94 					log_errx: 2
+   95 					auto_popen: FILE * (), <./popen.c 75>
+   96 						open: <>
+   97 						log_err: 20
+   98 						pipe: <>
+   99 						malloc: <>
+  100 						checked_strdup: 34
+  101 						va_start: <>
+  102 						log_errx: 2
+  103 						va_arg: <>
+  104 						concat: 44
+  105 						va_end: <>
+  106 						fork: <>
+  107 						dup2: <>
+  108 						close: <>
+  109 						SLIST_FOREACH: <>
+  110 						fileno: <>
+  111 						execvp: <>
+  112 						log_debugx: 28
+  113 						fdopen: <>
+  114 						SLIST_INSERT_HEAD: <>
+  115 					assert: <>
+  116 					node_new_root: struct node (), <./common.c 164>
+  117 					parse_master_yyin: 85
+  118 					parse_map_yyin: void (), <./common.c 742>
+  119 						checked_strdup: 34
+  120 						yylex: <>
+  121 						log_errx: 2
+  122 						node_new: struct node (), <./common.c 181>
+  123 						strcmp: <>
+  124 						log_warnx: void (), <./log.c 178>
+  125 							va_start: <>
+  126 							log_common: 4
+  127 							va_end: <>
+  128 						log_debugx: 28
+  129 					auto_pclose: int (), <./popen.c 147>
+  130 						SLIST_FOREACH: <>
+  131 						SLIST_REMOVE_HEAD: <>
+  132 						SLIST_REMOVE_AFTER: <>
+  133 						fclose: <>
+  134 						wait4: <>
+  135 						WIFSIGNALED: <>
+  136 						log_warnx: 124
+  137 						WTERMSIG: <>
+  138 						WEXITSTATUS: <>
+  139 						log_debugx: 28
+  140 						free: <>
+  141 					TAILQ_FOREACH_REVERSE_SAFE: <>
+  142 					node_move_after: void (), <./common.c 281>
+  143 						TAILQ_REMOVE: <>
+  144 						TAILQ_INSERT_AFTER: <>
+  145 					node_delete: void (), <./common.c 261>
+  146 						assert: <>
+  147 						TAILQ_FOREACH_SAFE: <>
+  148 						node_delete: 145
+  149 						TAILQ_REMOVE: <>
+  150 						free: <>
+  151 				node_expand_direct_maps: void (), <./common.c 535>
+  152 					node_expand_maps: void (), <./common.c 503>
+  153 						TAILQ_FOREACH_SAFE: <>
+  154 						node_is_direct_map: bool (), <./common.c 476>
+  155 							assert: <>
+  156 							node_is_direct_key: bool (), <./common.c 464>
+  157 								strcmp: <>
+  158 						log_debugx: 28
+  159 						parse_map: void (), <./common.c 1028>
+  160 							assert: <>
+  161 							log_debugx: 28
+  162 							parse_special_map: void (), <./common.c 957>
+  163 								assert: <>
+  164 								asprintf: <>
+  165 								log_err: 20
+  166 								auto_popen: 95
+  167 								parse_map_keys_yyin: void (), <./common.c 903>
+  168 									getline: <>
+  169 									strndup: <>
+  170 									log_debugx: 28
+  171 									node_new: struct node (), <./common.c 181>
+  172 									free: <>
+  173 								parse_map_yyin: 118
+  174 								auto_pclose: 129
+  175 								log_errx: 2
+  176 								node_expand_includes: 91
+  177 								node_expand_direct_maps: 151
+  178 								free: <>
+  179 							checked_strdup: 34
+  180 							asprintf: <>
+  181 							log_err: 20
+  182 							access: <>
+  183 							parse_included_map: void (), <./common.c 1000>
+  184 								assert: <>
+  185 								access: <>
+  186 								log_errx: 2
+  187 								auto_popen: 95
+  188 								parse_map_yyin: 118
+  189 								auto_pclose: 129
+  190 								node_expand_includes: 91
+  191 								node_expand_direct_maps: 151
+  192 							file_is_executable: bool (), <./common.c 939>
+  193 								stat: <>
+  194 								log_err: 20
+  195 							auto_popen: 95
+  196 							fopen: <>
+  197 							free: <>
+  198 							parse_map_yyin: 118
+  199 							auto_pclose: 129
+  200 							log_errx: 2
+  201 							fclose: <>
+  202 							node_expand_includes: 91
+  203 							node_expand_direct_maps: 151
+  204 			node_expand_indirect_maps: void (), <./common.c 542>
+  205 				node_expand_maps: 152
+  206 			node_expand_ampersand: void (), <./common.c 399>
+  207 				strcmp: <>
+  208 				expand_ampersand: char * (), <./common.c 339>
+  209 					assert: <>
+  210 					checked_strdup: 34
+  211 					asprintf: <>
+  212 					log_err: 20
+  213 					strlen: <>
+  214 				TAILQ_FOREACH: <>
+  215 				node_expand_ampersand: 206
+  216 			node_expand_defined: int (), <./common.c 440>
+  217 				defined_expand: char * (), <./defined.c 83>
+  218 					checked_strdup: 34
+  219 					assert: <>
+  220 					strlen: <>
+  221 					log_warnx: 124
+  222 					isalnum: <>
+  223 					strndup: <>
+  224 					log_err: 20
+  225 					defined_find: <>
+  226 					asprintf: <>
+  227 					free: <>
+  228 				log_warnx: 124
+  229 				node_path: char * (), <./common.c 575>
+  230 					node_path_x: char * (), <./common.c 549>
+  231 						node_is_direct_key: 156
+  232 						assert: <>
+  233 						concat: 44
+  234 						free: <>
+  235 						node_path_x: 230
+  236 					checked_strdup: 34
+  237 					strlen: <>
+  238 				TAILQ_FOREACH: <>
+  239 				node_expand_defined: 216
+  240 			node_print: void (), <./common.c 668>
+  241 				TAILQ_FOREACH: <>
+  242 				node_print_indent: void (), <./common.c 619>
+  243 					node_path: 229
+  244 					node_options: char * (), <./common.c 612>
+  245 						node_options_x: char * (), <./common.c 593>
+  246 							concat: 44
+  247 							free: <>
+  248 							node_options_x: 245
+  249 						checked_strdup: 34
+  250 					concat: 44
+  251 					free: <>
+  252 					TAILQ_FIRST: <>
+  253 					TAILQ_NEXT: <>
+  254 					strcmp: <>
+  255 					assert: <>
+  256 					printf: <>
+  257 					node_is_direct_map: 154
+  258 					TAILQ_FOREACH: <>
+  259 					node_print_indent: 242
+  260 			mount_unmount: void (), <./automount.c 184>
+  261 				getmntinfo: <>
+  262 				log_err: 20
+  263 				log_debugx: 28
+  264 				strcmp: <>
+  265 				node_find: struct node (), <./common.c 716>
+  266 				unmount_by_statfs: 70
+  267 				TAILQ_FOREACH: <>
+  268 				node_is_direct_map: 154
+  269 				mount_if_not_already: void (), <./automount.c 144>
+  270 					asprintf: <>
+  271 					log_err: 20
+  272 					node_path: 229
+  273 					find_statfs: const struct statfs * (), <./automount.c 88>
+  274 					strcmp: <>
+  275 					log_debugx: 28
+  276 					free: <>
+  277 					mount_autofs: void (), <./automount.c 101>
+  278 						create_directory: void (), <./common.c 132>
+  279 							assert: <>
+  280 							checked_strdup: 34
+  281 							strsep: <>
+  282 							concat: 44
+  283 							free: <>
+  284 							mkdir: <>
+  285 							log_warn: 76
+  286 						log_debugx: 28
+  287 						memset: <>
+  288 						build_iovec: <>
+  289 						nmount: <>
+  290 						log_err: 20
+  291 		main_automountd: int (), <./automountd.c 435>
+  292 			defined_init: 17
+  293 			getopt: <>
+  294 			defined_parse_and_add: 40
+  295 			atoi: <>
+  296 			concat: 44
+  297 			usage_automountd: void (), <./automountd.c 426>
+  298 				fprintf: <>
+  299 				exit: <>
+  300 			log_init: 51
+  301 			pidfile_open: <>
+  302 			log_errx: 2
+  303 			log_err: 20
+  304 			open: <>
+  305 			kldload: <>
+  306 			daemon: <>
+  307 			log_warn: 76
+  308 			pidfile_remove: <>
+  309 			exit: <>
+  310 			lesser_daemon: void (), <./common.c 1181>
+  311 				chdir: <>
+  312 				log_warn: 76
+  313 				open: <>
+  314 				dup2: <>
+  315 				close: <>
+  316 			pidfile_write: <>
+  317 			register_sigchld: void (), <./automountd.c 378>
+  318 				bzero: <>
+  319 				sigchld_handler: void (), <./automountd.c 367>
+  320 				sigfillset: <>
+  321 				sigaction: <>
+  322 				log_err: 20
+  323 			log_debugx: 28
+  324 			memset: <>
+  325 			ioctl: <>
+  326 			wait_for_children: int (), <./automountd.c 394>
+  327 				wait4: <>
+  328 				WIFSIGNALED: <>
+  329 				log_warnx: 124
+  330 				WTERMSIG: <>
+  331 				WEXITSTATUS: <>
+  332 				log_debugx: 28
+  333 			assert: <>
+  334 			fork: <>
+  335 			pidfile_close: <>
+  336 			handle_request: void (), <./automountd.c 174>
+  337 				log_debugx: 28
+  338 				atexit: <>
+  339 				exit_callback: void (), <./automountd.c 167>
+  340 					done: void (), <./automountd.c 71>
+  341 						memset: <>
+  342 						log_debugx: 28
+  343 						ioctl: <>
+  344 						log_warn: 76
+  345 				strncmp: <>
+  346 				log_errx: 2
+  347 				node_new_root: struct node (), <./common.c 164>
+  348 				strcmp: <>
+  349 				checked_strdup: 34
+  350 				node_new_map: struct node (), <./common.c 212>
+  351 				parse_map: 159
+  352 				node_has_wildcards: bool (), <./common.c 490>
+  353 					TAILQ_FOREACH: <>
+  354 					strcmp: <>
+  355 				node_expand_wildcard: void (), <./common.c 423>
+  356 					assert: <>
+  357 					strcmp: <>
+  358 					node_duplicate: struct node (), <./common.c 243>
+  359 					checked_strdup: 34
+  360 					node_move_after: 142
+  361 					TAILQ_FOREACH: <>
+  362 					node_expand_wildcard: 355
+  363 				node_find: struct node (), <./common.c 716>
+  364 				node_options: 244
+  365 				concat: 44
+  366 				pick_option: char * (), <./automountd.c 93>
+  367 					calloc: <>
+  368 					strlen: <>
+  369 					log_err: 20
+  370 					strsep: <>
+  371 					strncmp: <>
+  372 					checked_strdup: 34
+  373 					strcat: <>
+  374 					free: <>
+  375 				done: 340
+  376 				quick_exit: <>
+  377 				create_subtree: void (), <./automountd.c 127>
+  378 					strcmp: <>
+  379 					node_path: 229
+  380 					log_debugx: 28
+  381 					create_directory: 278
+  382 					TAILQ_FOREACH: <>
+  383 					free: <>
+  384 					create_subtree: 377
+  385 				node_expand_ampersand: 206
+  386 				node_expand_defined: 216
+  387 				auto_popen: 95
+  388 				assert: <>
+  389 				auto_pclose: 129
+  390 		main_autounmountd: int (), <./autounmountd.c 259>
+  391 			getopt: <>
+  392 			atoi: <>
+  393 			usage_autounmountd: void (), <./autounmountd.c 222>
+  394 				fprintf: <>
+  395 				exit: <>
+  396 			log_errx: 2
+  397 			log_init: 51
+  398 			pidfile_open: <>
+  399 			log_err: 20
+  400 			daemon: <>
+  401 			log_warn: 76
+  402 			pidfile_remove: <>
+  403 			exit: <>
+  404 			pidfile_write: <>
+  405 			TAILQ_INIT: <>
+  406 			kqueue: <>
+  407 			EV_SET: <>
+  408 			kevent: <>
+  409 			refresh_automounted: void (), <./autounmountd.c 102>
+  410 				getmntinfo: <>
+  411 				log_err: 20
+  412 				log_debugx: 28
+  413 				TAILQ_FOREACH: <>
+  414 				strcmp: <>
+  415 				automounted_find: <>
+  416 				automounted_add: struct automounted_fs (), <./autounmountd.c 77>
+  417 				TAILQ_FOREACH_SAFE: <>
+  418 				automounted_remove: void (), <./autounmountd.c 94>
+  419 					TAILQ_REMOVE: <>
+  420 					free: <>
+  421 			expire_automounted: double (), <./autounmountd.c 181>
+  422 				time: <>
+  423 				log_debugx: 28
+  424 				TAILQ_FOREACH_SAFE: <>
+  425 				difftime: <>
+  426 				unmount_by_fsid: int (), <./autounmountd.c 155>
+  427 					asprintf: <>
+  428 					log_err: 20
+  429 					unmount: <>
+  430 					log_debugx: 28
+  431 					strerror: <>
+  432 					log_warn: 76
+  433 					free: <>
+  434 			log_debugx: 28
+  435 			difftime: <>
+  436 			do_wait: void (), <./autounmountd.c 230>
+  437 				assert: <>
+  438 				log_debugx: 28
+  439 				kevent: <>
+  440 				log_err: 20

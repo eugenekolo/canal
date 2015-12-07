@@ -1,0 +1,394 @@
+    1 	main: int (), <./nscd.c 590>
+    2 		TRACE_OFF: <>
+    3 		getopt: <>
+    4 		strcmp: <>
+    5 		strdup: <>
+    6 		usage: void (), <./nscd.c 93>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		LOG_ERR_1: <>
+   10 		fopen: <>
+   11 		errx: <>
+   12 		memset: <>
+   13 		fread: <>
+   14 		fclose: <>
+   15 		ferror: <>
+   16 		sscanf: <>
+   17 		LOG_MSG_1: <>
+   18 		open_nscd_connection__: struct nscd_connection_ (), <./nscdcli.c 181>
+   19 		nscd_transform__: int (), <./nscdcli.c 246>
+   20 			TRACE_IN: <>
+   21 			send_credentials: int (), <./nscdcli.c 131>
+   22 				TRACE_IN: <>
+   23 				send_credentials: 21
+   24 				memset: <>
+   25 				EV_SET: <>
+   26 				kevent: <>
+   27 				sendmsg: <>
+   28 				TRACE_OUT: <>
+   29 			strlen: <>
+   30 			safe_write: int (), <./nscdcli.c 56>
+   31 				kevent: <>
+   32 				write: <>
+   33 			safe_read: int (), <./nscdcli.c 94>
+   34 				kevent: <>
+   35 				read: <>
+   36 			TRACE_OUT: <>
+   37 		geteuid: <>
+   38 		close_nscd_connection__: void (), <./nscdcli.c 232>
+   39 			TRACE_IN: <>
+   40 			assert: <>
+   41 			close: <>
+   42 			free: <>
+   43 			TRACE_OUT: <>
+   44 		free: <>
+   45 		pidfile_open: <>
+   46 		warn: <>
+   47 		TRACE_ON: <>
+   48 		sigblock: <>
+   49 		sigmask: <>
+   50 		daemon: <>
+   51 		strerror: <>
+   52 		pidfile_remove: <>
+   53 		pidfile_write: <>
+   54 		init_agent_table: struct agent_table (), <./agent.c 59>
+   55 		register_agent: void (), <./agent.c 72>
+   56 			TRACE_IN: <>
+   57 			register_agent: 55
+   58 			assert: <>
+   59 			malloc: <>
+   60 			memcpy: <>
+   61 			qsort: <>
+   62 			agent_cmp_func: int (), <./agent.c 39>
+   63 				strcmp: <>
+   64 			free: <>
+   65 			TRACE_OUT: <>
+   66 		init_passwd_agent: struct agent (), <./agents/passwd.c 231>
+   67 		init_passwd_mp_agent: struct agent (), <./agents/passwd.c 250>
+   68 		init_group_agent: struct agent (), <./agents/group.c 223>
+   69 		init_group_mp_agent: struct agent (), <./agents/group.c 242>
+   70 		init_services_agent: struct agent (), <./agents/services.c 244>
+   71 		init_services_mp_agent: struct agent (), <./agents/services.c 263>
+   72 		init_configuration: struct configuration (), <./config.c 516>
+   73 		fill_configuration_defaults: void (), <./config.c 537>
+   74 			TRACE_IN: <>
+   75 			fill_configuration_defaults: 73
+   76 			assert: <>
+   77 			free: <>
+   78 			strlen: <>
+   79 			calloc: <>
+   80 			memcpy: <>
+   81 			destroy_configuration_entry: void (), <./config.c 245>
+   82 				TRACE_IN: <>
+   83 				destroy_configuration_entry: 81
+   84 				assert: <>
+   85 				pthread_mutex_destroy: <>
+   86 				free: <>
+   87 				TRACE_OUT: <>
+   88 			TRACE_OUT: <>
+   89 		parse_config_file: int (), <./parser.c 370>
+   90 			TRACE_IN: <>
+   91 			parse_config_file: 89
+   92 			assert: <>
+   93 			fopen: <>
+   94 			TRACE_OUT: <>
+   95 			memset: <>
+   96 			fgets: <>
+   97 			strbreak: int (), <./parser.c 68>
+   98 				TRACE_IN: <>
+   99 				strbreak: 97
+  100 				strsep: <>
+  101 				TRACE_OUT: <>
+  102 			strcmp: <>
+  103 			check_cachename: int (), <./parser.c 350>
+  104 				assert: <>
+  105 				strlen: <>
+  106 			get_yesno: int (), <./parser.c 303>
+  107 				strcmp: <>
+  108 			enable_cache: void (), <./parser.c 117>
+  109 				TRACE_IN: <>
+  110 				enable_cache: 108
+  111 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  112 				TRACE_OUT: <>
+  113 			get_number: int (), <./parser.c 315>
+  114 				strtol: <>
+  115 			set_positive_time_to_live: void (), <./parser.c 128>
+  116 				TRACE_IN: <>
+  117 				set_positive_time_to_live: 115
+  118 				assert: <>
+  119 				memset: <>
+  120 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  121 				memcpy: <>
+  122 				TRACE_OUT: <>
+  123 			set_positive_confidence_threshold: void (), <./parser.c 171>
+  124 				TRACE_IN: <>
+  125 				assert: <>
+  126 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  127 				TRACE_OUT: <>
+  128 			get_policy: enum cache_policy_t (), <./parser.c 336>
+  129 			set_positive_policy: void (), <./parser.c 227>
+  130 				TRACE_IN: <>
+  131 				set_positive_policy: 129
+  132 				assert: <>
+  133 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  134 				TRACE_OUT: <>
+  135 			set_perform_actual_lookups: void (), <./parser.c 259>
+  136 				TRACE_IN: <>
+  137 				set_perform_actual_lookups: 135
+  138 				assert: <>
+  139 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  140 				TRACE_OUT: <>
+  141 			set_negative_time_to_live: void (), <./parser.c 150>
+  142 				TRACE_IN: <>
+  143 				set_negative_time_to_live: 141
+  144 				assert: <>
+  145 				memset: <>
+  146 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  147 				memcpy: <>
+  148 				TRACE_OUT: <>
+  149 			set_negative_confidence_threshold: void (), <./parser.c 188>
+  150 				TRACE_IN: <>
+  151 				assert: <>
+  152 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  153 				TRACE_OUT: <>
+  154 			set_negative_policy: void (), <./parser.c 243>
+  155 				TRACE_IN: <>
+  156 				set_negative_policy: 154
+  157 				assert: <>
+  158 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  159 				TRACE_OUT: <>
+  160 			set_suggested_size: void (), <./parser.c 275>
+  161 				TRACE_IN: <>
+  162 				set_suggested_size: 160
+  163 				assert: <>
+  164 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  165 				TRACE_OUT: <>
+  166 			set_threads_num: void (), <./parser.c 358>
+  167 				assert: <>
+  168 			set_keep_hot_count: void (), <./parser.c 206>
+  169 				TRACE_IN: <>
+  170 				set_keep_hot_count: 168
+  171 				assert: <>
+  172 				find_create_entry: struct configuration_entry (), <./parser.c 93>
+  173 				TRACE_OUT: <>
+  174 			check_files: void (), <./parser.c 294>
+  175 				TRACE_IN: <>
+  176 				check_files: 174
+  177 				assert: <>
+  178 				TRACE_OUT: <>
+  179 			LOG_ERR_2: <>
+  180 			fclose: <>
+  181 		destroy_configuration: void (), <./config.c 572>
+  182 			TRACE_IN: <>
+  183 			destroy_configuration: 181
+  184 			assert: <>
+  185 			free: <>
+  186 			destroy_configuration_entry: 81
+  187 			pthread_rwlock_destroy: <>
+  188 			TRACE_OUT: <>
+  189 		init_cache_: cache (), <./nscd.c 101>
+  190 			TRACE_IN: <>
+  191 			init_cache_: 189
+  192 			memset: <>
+  193 			get_time_func: void (), <./nscd.c 566>
+  194 				memset: <>
+  195 				clock_gettime: <>
+  196 			init_cache: struct cache_ (), <./cachelib.c 477>
+  197 			configuration_get_entries_size: size_t (), <./config.c 299>
+  198 				TRACE_IN: <>
+  199 				configuration_get_entries_size: 197
+  200 				assert: <>
+  201 				TRACE_OUT: <>
+  202 			configuration_get_entry: struct configuration_entry (), <./config.c 308>
+  203 			register_cache_entry: int (), <./cachelib.c 521>
+  204 				TRACE_IN: <>
+  205 				register_cache_entry: 203
+  206 				assert: <>
+  207 				find_cache_entry: struct cache_entry_ (), <./cachelib.c 672>
+  208 				TRACE_OUT: <>
+  209 				calloc: <>
+  210 				memcpy: <>
+  211 				free: <>
+  212 				strlen: <>
+  213 				strlcpy: <>
+  214 				HASHTABLE_INIT: <>
+  215 				init_cache_fifo_policy: struct cache_policy_ (), <./cacheplcs.c 255>
+  216 				init_cache_lru_policy: struct cache_policy_ (), <./cacheplcs.c 300>
+  217 				init_cache_lfu_policy: struct cache_policy_ (), <./cacheplcs.c 537>
+  218 				get_time_func: 193
+  219 				TAILQ_INIT: <>
+  220 				qsort: <>
+  221 				entries_qsort_cmp_func: int (), <./cachelib.c 168>
+  222 					assert: <>
+  223 					strcmp: <>
+  224 			find_cache_entry: struct cache_entry_ (), <./cachelib.c 672>
+  225 			assert: <>
+  226 			LOG_MSG_2: <>
+  227 			TRACE_OUT: <>
+  228 		init_runtime_env: struct runtime_env (), <./nscd.c 156>
+  229 		destroy_cache_: void (), <./nscd.c 144>
+  230 			TRACE_IN: <>
+  231 			destroy_cache_: 229
+  232 			destroy_cache: void (), <./cachelib.c 502>
+  233 				TRACE_IN: <>
+  234 				destroy_cache: 232
+  235 				assert: <>
+  236 				destroy_cache_entry: void (), <./cachelib.c 217>
+  237 					TRACE_IN: <>
+  238 					destroy_cache_entry: 236
+  239 					assert: <>
+  240 					HASHTABLE_FOREACH: <>
+  241 					HASHTABLE_ENTRY_FOREACH: <>
+  242 					free: <>
+  243 					HASHTABLE_ENTRY_CLEAR: <>
+  244 					HASHTABLE_DESTROY: <>
+  245 					destroy_cache_fifo_policy: void (), <./cacheplcs.c 268>
+  246 						TRACE_IN: <>
+  247 						destroy_cache_fifo_policy: 245
+  248 						destroy_cache_queue_policy: void (), <./cacheplcs.c 224>
+  249 							TRACE_IN: <>
+  250 							destroy_cache_queue_policy: 248
+  251 							TAILQ_EMPTY: <>
+  252 							TAILQ_FIRST: <>
+  253 							TAILQ_REMOVE: <>
+  254 							cache_queue_policy_destroy_item: void (), <./cacheplcs.c 98>
+  255 								TRACE_IN: <>
+  256 								cache_queue_policy_destroy_item: 254
+  257 								assert: <>
+  258 								free: <>
+  259 								TRACE_OUT: <>
+  260 							free: <>
+  261 							TRACE_OUT: <>
+  262 						TRACE_OUT: <>
+  263 					destroy_cache_lru_policy: void (), <./cacheplcs.c 313>
+  264 						TRACE_IN: <>
+  265 						destroy_cache_lru_policy: 263
+  266 						destroy_cache_queue_policy: 248
+  267 						TRACE_OUT: <>
+  268 					destroy_cache_lfu_policy: void (), <./cacheplcs.c 571>
+  269 						TRACE_IN: <>
+  270 						destroy_cache_lfu_policy: 268
+  271 						TAILQ_EMPTY: <>
+  272 						TAILQ_FIRST: <>
+  273 						TAILQ_REMOVE: <>
+  274 						cache_lfu_policy_destroy_item: void (), <./cacheplcs.c 348>
+  275 							TRACE_IN: <>
+  276 							cache_lfu_policy_destroy_item: 274
+  277 							assert: <>
+  278 							free: <>
+  279 							TRACE_OUT: <>
+  280 						free: <>
+  281 						TRACE_OUT: <>
+  282 					TAILQ_EMPTY: <>
+  283 					TAILQ_FIRST: <>
+  284 					TAILQ_REMOVE: <>
+  285 					destroy_cache_mp_write_session: void (), <./cachelib.c 188>
+  286 						TRACE_IN: <>
+  287 						destroy_cache_mp_write_session: 285
+  288 						assert: <>
+  289 						TAILQ_EMPTY: <>
+  290 						TAILQ_FIRST: <>
+  291 						TAILQ_REMOVE: <>
+  292 						free: <>
+  293 						TRACE_OUT: <>
+  294 					destroy_cache_mp_read_session: void (), <./cachelib.c 207>
+  295 						TRACE_IN: <>
+  296 						destroy_cache_mp_read_session: 294
+  297 						assert: <>
+  298 						free: <>
+  299 						TRACE_OUT: <>
+  300 					TRACE_OUT: <>
+  301 				free: <>
+  302 				TRACE_OUT: <>
+  303 			TRACE_OUT: <>
+  304 		calloc: <>
+  305 		malloc: <>
+  306 		pthread_create: <>
+  307 		processing_thread: void * (), <./nscd.c 543>
+  308 			TRACE_MSG: <>
+  309 			sigemptyset: <>
+  310 			sigaddset: <>
+  311 			pthread_sigmask: <>
+  312 			LOG_ERR_1: <>
+  313 			processing_loop: void (), <./nscd.c 481>
+  314 				TRACE_MSG: <>
+  315 				memset: <>
+  316 				kevent: <>
+  317 				accept_connection: void (), <./nscd.c 227>
+  318 					TRACE_IN: <>
+  319 					accept_connection: 317
+  320 					accept: <>
+  321 					LOG_ERR_2: <>
+  322 					TRACE_OUT: <>
+  323 					getpeereid: <>
+  324 					init_query_state: struct query_state (), <./query.c 1224>
+  325 					memset: <>
+  326 					EV_SET: <>
+  327 					kevent: <>
+  328 				EV_SET: <>
+  329 				process_socket_event: void (), <./nscd.c 276>
+  330 					TRACE_IN: <>
+  331 					process_socket_event: 329
+  332 					memset: <>
+  333 					EV_SET: <>
+  334 					kevent: <>
+  335 					TRACE_OUT: <>
+  336 					LOG_ERR_2: <>
+  337 					query_socket_read: ssize_t (), <./query.c 1180>
+  338 						TRACE_IN: <>
+  339 						query_socket_read: 337
+  340 						TRACE_OUT: <>
+  341 						read: <>
+  342 					query_socket_write: ssize_t (), <./query.c 1202>
+  343 						TRACE_IN: <>
+  344 						query_socket_write: 342
+  345 						TRACE_OUT: <>
+  346 						write: <>
+  347 					destroy_query_state: void (), <./query.c 1264>
+  348 						TRACE_IN: <>
+  349 						destroy_query_state: 347
+  350 						free: <>
+  351 						TRACE_OUT: <>
+  352 					close: <>
+  353 					get_time_func: 193
+  354 					free: <>
+  355 					calloc: <>
+  356 					assert: <>
+  357 					query_io_buffer_write: ssize_t (), <./query.c 1142>
+  358 						TRACE_IN: <>
+  359 						query_io_buffer_write: 357
+  360 						assert: <>
+  361 						memcpy: <>
+  362 						query_socket_write: 342
+  363 						query_socket_read: 337
+  364 						TRACE_OUT: <>
+  365 					query_io_buffer_read: ssize_t (), <./query.c 1104>
+  366 						TRACE_IN: <>
+  367 						query_io_buffer_read: 365
+  368 						assert: <>
+  369 						memcpy: <>
+  370 						free: <>
+  371 						query_socket_write: 342
+  372 						query_socket_read: 337
+  373 						TRACE_OUT: <>
+  374 				process_timer_event: void (), <./nscd.c 464>
+  375 					TRACE_IN: <>
+  376 					process_timer_event: 374
+  377 					destroy_query_state: 347
+  378 					close: <>
+  379 					TRACE_OUT: <>
+  380 			free: <>
+  381 		pthread_join: <>
+  382 		processing_loop: 313
+  383 		destroy_runtime_env: void (), <./nscd.c 217>
+  384 			TRACE_IN: <>
+  385 			destroy_runtime_env: 383
+  386 			close: <>
+  387 			free: <>
+  388 			TRACE_OUT: <>
+  389 		destroy_agent_table: void (), <./agent.c 113>
+  390 			TRACE_IN: <>
+  391 			destroy_agent_table: 389
+  392 			assert: <>
+  393 			free: <>
+  394 			TRACE_OUT: <>

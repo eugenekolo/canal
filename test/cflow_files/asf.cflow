@@ -1,0 +1,77 @@
+    1 	main: int (), <./asf.c 277>
+    2 		strlen: <>
+    3 		getopt: <>
+    4 		errx: <>
+    5 		usage: void (), <./asf.c 244>
+    6 			fprintf: <>
+    7 			strlen: <>
+    8 			exit: <>
+    9 		strcmp: <>
+   10 		fopen: <>
+   11 		err: <>
+   12 		warnx: <>
+   13 		asf_kvm: void (), <./asf_kvm.c 55>
+   14 			kvm_openfiles: <>
+   15 			errx: <>
+   16 			strcpy: <>
+   17 			kvm_nlist: <>
+   18 			warnx: <>
+   19 			kvm_geterr: <>
+   20 			kvm_close: <>
+   21 			exit: <>
+   22 			kvm_read: <>
+   23 			bzero: <>
+   24 			strcmp: <>
+   25 			kfile_add: void (), <./asf.c 57>
+   26 				malloc: <>
+   27 				strdup: <>
+   28 				errx: <>
+   29 				STAILQ_INSERT_TAIL: <>
+   30 		asf_kld: void (), <./asf_kld.c 42>
+   31 			kldnext: <>
+   32 			err: <>
+   33 			kldstat: <>
+   34 			strcmp: <>
+   35 			kfile_add: 25
+   36 		asf_prog: void (), <./asf_prog.c 46>
+   37 			kldstat: <>
+   38 			popen: <>
+   39 			err: <>
+   40 			fgets: <>
+   41 			strstr: <>
+   42 			tokenize: int (), <./asf.c 107>
+   43 				isspace: <>
+   44 			strtoumax: <>
+   45 			kfile_add: 25
+   46 		kfile_empty: int (), <./asf.c 94>
+   47 			STAILQ_EMPTY: <>
+   48 		strdup: <>
+   49 		strsep: <>
+   50 		STAILQ_FOREACH: <>
+   51 		strlcpy: <>
+   52 		snprintf: <>
+   53 		stat: <>
+   54 		doobj: void (), <./asf.c 147>
+   55 			snprintf: <>
+   56 			popen: <>
+   57 			err: <>
+   58 			fgets: <>
+   59 			tokenize: 42
+   60 			strcmp: <>
+   61 			strtoumax: <>
+   62 			fprintf: <>
+   63 		findmodules: void (), <./asf.c 189>
+   64 			strlen: <>
+   65 			fts_open: <>
+   66 			err: <>
+   67 			fts_read: <>
+   68 			strcmp: <>
+   69 			strdup: <>
+   70 			errx: <>
+   71 			kfile_find: struct kfile (), <./asf.c 70>
+   72 			free: <>
+   73 			doobj: 54
+   74 			kfile_allseen: int (), <./asf.c 82>
+   75 				STAILQ_FOREACH: <>
+   76 			fts_close: <>
+   77 		free: <>

@@ -1,0 +1,57 @@
+    1 	main: int (), <./ofwdump.c 68>
+    2 		getopt: <>
+    3 		usage: void (), <./ofwdump.c 58>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		ofw_open: int (), <./ofw_util.c 52>
+    7 			open: <>
+    8 			err: <>
+    9 		ofw_dump: void (), <./ofwdump.c 243>
+   10 			ofw_root: phandle_t (), <./ofw_util.c 69>
+   11 				ofw_peer: phandle_t (), <./ofw_util.c 85>
+   12 					OFW_IOCTL: <>
+   13 			ofw_finddevice: phandle_t (), <./ofw_util.c 105>
+   14 				strlen: <>
+   15 				ioctl: <>
+   16 				err: <>
+   17 			ofw_dump_node: void (), <./ofwdump.c 211>
+   18 				ofw_indent: void (), <./ofwdump.c 135>
+   19 					putchar: <>
+   20 				printf: <>
+   21 				ofw_getprop_alloc: int (), <./ofw_util.c 204>
+   22 					ofw_getproplen: int (), <./ofw_util.c 192>
+   23 						strlen: <>
+   24 						OFW_IOCTL: <>
+   25 					free: <>
+   26 					ofw_malloc: void * (), <./ofw_util.c 151>
+   27 						malloc: <>
+   28 						err: <>
+   29 					strlen: <>
+   30 					ioctl: <>
+   31 					err: <>
+   32 				putchar: <>
+   33 				ofw_dump_property: void (), <./ofwdump.c 155>
+   34 					ofw_getprop_alloc: 21
+   35 					write: <>
+   36 					printf: <>
+   37 					ofw_indent: 18
+   38 					strlen: <>
+   39 					free: <>
+   40 					malloc: <>
+   41 					err: <>
+   42 					strvis: <>
+   43 					strlcpy: <>
+   44 				ofw_dump_properties: void (), <./ofwdump.c 144>
+   45 					ofw_firstprop: int (), <./ofw_util.c 125>
+   46 						ofw_nextprop: int (), <./ofw_util.c 132>
+   47 							strlen: <>
+   48 							ioctl: <>
+   49 							err: <>
+   50 					ofw_nextprop: 46
+   51 					ofw_dump_property: 33
+   52 				ofw_child: phandle_t (), <./ofw_util.c 95>
+   53 					OFW_IOCTL: <>
+   54 				ofw_peer: 11
+   55 				ofw_dump_node: 17
+   56 		ofw_close: void (), <./ofw_util.c 62>
+   57 			close: <>

@@ -1,0 +1,171 @@
+    1 	main: int (), <./keyserv.c 110>
+    2 		key_encrypt_pk_2_svc_prog: cryptkeyres * (), <./keyserv.c 376>
+    3 			fprintf: <>
+    4 			pk_encrypt: keystatus (), <./setkey.c 109>
+    5 				pk_crypt: keystatus (), <./setkey.c 162>
+    6 					fetchsecretkey: char * (), <./setkey.c 392>
+    7 					memset: <>
+    8 					getsecretkey: <>
+    9 					memcpy: <>
+   10 					bzero: <>
+   11 					getpublickey: <>
+   12 					readcache: int (), <./setkey.c 526>
+   13 						cachehit: <>
+   14 					mp_xtom: <>
+   15 					mp_itom: <>
+   16 					mp_pow: <>
+   17 					extractdeskey: void (), <./setkey.c 274>
+   18 						mp_itom: <>
+   19 						mp_move: <>
+   20 						mp_sdiv: <>
+   21 						mp_mfree: <>
+   22 						des_setparity: <>
+   23 					writecache: void (), <./setkey.c 504>
+   24 						malloc: <>
+   25 						memcpy: <>
+   26 					mp_mfree: <>
+   27 					ecb_crypt: <>
+   28 					DES_FAILED: <>
+   29 			strstatus: char * (), <./keyserv.c 339>
+   30 			fflush: <>
+   31 		key_decrypt_pk_2_svc_prog: cryptkeyres * (), <./keyserv.c 404>
+   32 			fprintf: <>
+   33 			pk_decrypt: keystatus (), <./setkey.c 123>
+   34 				pk_crypt: 5
+   35 			strstatus: 29
+   36 			fflush: <>
+   37 		key_gen_1_svc_prog: des_block * (), <./keyserv.c 570>
+   38 			gettimeofday: <>
+   39 			ecb_crypt: <>
+   40 			des_setparity: <>
+   41 			fprintf: <>
+   42 			fflush: <>
+   43 		getopt: <>
+   44 		pk_nodefaultkeys: void (), <./setkey.c 75>
+   45 		usage: void (), <./keyserv.c 815>
+   46 			fprintf: <>
+   47 			exit: <>
+   48 		load_des: void (), <./crypt_server.c 177>
+   49 			snprintf: <>
+   50 			dlopen: <>
+   51 			dlsym: <>
+   52 			dlclose: <>
+   53 			printf: <>
+   54 		svc_auth_reg: <>
+   55 		errx: <>
+   56 		umask: <>
+   57 		geteuid: <>
+   58 		setmodulus: void (), <./setkey.c 84>
+   59 			mp_xtom: <>
+   60 		getrootkey: int (), <./keyserv.c 267>
+   61 			open: <>
+   62 			randomize: void (), <./keyserv.c 224>
+   63 				gettimeofday: <>
+   64 				arc4random: <>
+   65 				srandom: <>
+   66 				random: <>
+   67 				sranddev: <>
+   68 				srand: <>
+   69 				rand: <>
+   70 			read: <>
+   71 			warnx: <>
+   72 			close: <>
+   73 			getnetname: <>
+   74 			memcpy: <>
+   75 			memset: <>
+   76 			pk_netput: keystatus (), <./setkey.c 136>
+   77 				store_netname: int (), <./setkey.c 323>
+   78 					malloc: <>
+   79 					free: <>
+   80 					memcpy: <>
+   81 					strdup: <>
+   82 			getpass: <>
+   83 			passwd2des: <>
+   84 			getsecretkey: <>
+   85 			pk_setkey: keystatus (), <./setkey.c 94>
+   86 				storesecretkey: int (), <./setkey.c 409>
+   87 					malloc: <>
+   88 					memset: <>
+   89 					memcpy: <>
+   90 			write: <>
+   91 			strlen: <>
+   92 		rpcb_unset: <>
+   93 		svc_create: <>
+   94 		keyprogram: void (), <./keyserv.c 627>
+   95 			svc_sendreply: <>
+   96 			key_set_1_svc_prog: keystatus * (), <./keyserv.c 357>
+   97 				fprintf: <>
+   98 				pk_setkey: 85
+   99 				strstatus: 29
+  100 				fflush: <>
+  101 			key_encrypt_1_svc_prog: cryptkeyres * (), <./keyserv.c 513>
+  102 				fprintf: <>
+  103 				pk_encrypt: 4
+  104 				strstatus: 29
+  105 				fflush: <>
+  106 			key_decrypt_1_svc_prog: cryptkeyres * (), <./keyserv.c 541>
+  107 				fprintf: <>
+  108 				pk_decrypt: 33
+  109 				strstatus: 29
+  110 				fflush: <>
+  111 			key_gen_1_svc_prog: 37
+  112 			key_getcred_1_svc_prog: getcredres * (), <./keyserv.c 594>
+  113 				netname2user: <>
+  114 				fprintf: <>
+  115 				strstatus: 29
+  116 				fflush: <>
+  117 			key_encrypt_pk_2_svc_prog: 2
+  118 			key_decrypt_pk_2_svc_prog: 31
+  119 			key_net_put_2_svc_prog: keystatus * (), <./keyserv.c 432>
+  120 				fprintf: <>
+  121 				pk_netput: 76
+  122 				strstatus: 29
+  123 				fflush: <>
+  124 			key_net_get_2_svc_prog: key_netstres * (), <./keyserv.c 456>
+  125 				fprintf: <>
+  126 				pk_netget: keystatus (), <./setkey.c 147>
+  127 					fetch_netname: int (), <./setkey.c 364>
+  128 						memcpy: <>
+  129 						strdup: <>
+  130 				fflush: <>
+  131 			key_get_conv_2_svc_prog: cryptkeyres * (), <./keyserv.c 485>
+  132 				fprintf: <>
+  133 				pk_get_conv_key: keystatus (), <./setkey.c 224>
+  134 					fetchsecretkey: 6
+  135 					memset: <>
+  136 					getsecretkey: <>
+  137 					readcache: 12
+  138 					mp_xtom: <>
+  139 					mp_itom: <>
+  140 					mp_pow: <>
+  141 					extractdeskey: 17
+  142 					writecache: 23
+  143 					mp_mfree: <>
+  144 				strstatus: 29
+  145 				fflush: <>
+  146 			svcerr_noproc: <>
+  147 			root_auth: int (), <./keyserv.c 771>
+  148 				svc_getrpccaller: <>
+  149 				fprintf: <>
+  150 			fprintf: <>
+  151 			svcerr_weakauth: <>
+  152 			memset: <>
+  153 			svc_getargs: <>
+  154 			svcerr_decode: <>
+  155 			svcerr_systemerr: <>
+  156 			svc_freeargs: <>
+  157 			exit: <>
+  158 		fprintf: <>
+  159 		exit: <>
+  160 		setnetconfig: <>
+  161 		getnetconfig: <>
+  162 		strcmp: <>
+  163 		nc_sperror: <>
+  164 		unlink: <>
+  165 		svcunix_create: <>
+  166 		svc_reg: <>
+  167 		endnetconfig: <>
+  168 		daemon: <>
+  169 		signal: <>
+  170 		svc_run: <>
+  171 		abort: <>

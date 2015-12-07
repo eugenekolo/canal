@@ -1,0 +1,173 @@
+    1 	main: int (), <./uefisign.c 335>
+    2 		getopt: <>
+    3 		checked_strdup: char * (), <./uefisign.c 61>
+    4 			strdup: <>
+    5 			err: <>
+    6 		usage: void (), <./uefisign.c 52>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		errx: <>
+   10 		OPENSSL_config: <>
+   11 		ERR_load_crypto_strings: <>
+   12 		OpenSSL_add_all_algorithms: <>
+   13 		pipe: <>
+   14 		err: <>
+   15 		fork: <>
+   16 		child: int (), <./child.c 230>
+   17 			checked_fopen: FILE * (), <./uefisign.c 72>
+   18 				assert: <>
+   19 				fopen: <>
+   20 				err: <>
+   21 			cap_enter: <>
+   22 			err: <>
+   23 			calloc: <>
+   24 			load: void (), <./child.c 57>
+   25 				fileno: <>
+   26 				fstat: <>
+   27 				err: <>
+   28 				errx: <>
+   29 				malloc: <>
+   30 				fread: <>
+   31 			parse: void (), <./pe.c 485>
+   32 				range_check: void (), <./pe.c 141>
+   33 					errx: <>
+   34 				errx: <>
+   35 				parse_pe: void (), <./pe.c 466>
+   36 					range_check: 32
+   37 					errx: <>
+   38 					parse_optional: void (), <./pe.c 445>
+   39 						range_check: 32
+   40 						parse_optional_32: void (), <./pe.c 396>
+   41 							range_check: 32
+   42 							errx: <>
+   43 							printf: <>
+   44 							offsetof: <>
+   45 							compute_checksum: uint32_t (), <./pe.c 310>
+   46 								range_check: 32
+   47 								assert: <>
+   48 								memcpy: <>
+   49 							warnx: <>
+   50 							parse_directory: void (), <./pe.c 260>
+   51 								errx: <>
+   52 								range_check: 32
+   53 								printf: <>
+   54 								parse_section_table: void (), <./pe.c 224>
+   55 									range_check: 32
+   56 									errx: <>
+   57 									printf: <>
+   58 						parse_optional_32_plus: void (), <./pe.c 346>
+   59 							range_check: 32
+   60 							errx: <>
+   61 							printf: <>
+   62 							offsetof: <>
+   63 							compute_checksum: 45
+   64 							warnx: <>
+   65 							parse_directory: 50
+   66 						errx: <>
+   67 			signature_size: size_t (), <./pe.c 164>
+   68 				range_check: 32
+   69 				warnx: <>
+   70 			errx: <>
+   71 			printf: <>
+   72 			digest: void (), <./child.c 101>
+   73 				EVP_get_digestbyname: <>
+   74 				ERR_print_errors_fp: <>
+   75 				errx: <>
+   76 				EVP_MD_CTX_create: <>
+   77 				EVP_DigestInit_ex: <>
+   78 				digest_range: void (), <./child.c 87>
+   79 					range_check: 32
+   80 					EVP_DigestUpdate: <>
+   81 					ERR_print_errors_fp: <>
+   82 					errx: <>
+   83 				signature_size: 67
+   84 				EVP_DigestFinal_ex: <>
+   85 				EVP_MD_CTX_destroy: <>
+   86 			show_digest: void (), <./child.c 192>
+   87 				printf: <>
+   88 			show_certificate: void (), <./pe.c 183>
+   89 				range_check: 32
+   90 				signature_size: 67
+   91 				printf: <>
+   92 				errx: <>
+   93 				offsetof: <>
+   94 			send_digest: void (), <./child.c 203>
+   95 				send_chunk: void (), <./uefisign.c 85>
+   96 					write: <>
+   97 					err: <>
+   98 			receive_signature: void (), <./child.c 210>
+   99 				receive_chunk: void (), <./uefisign.c 98>
+  100 					read: <>
+  101 					err: <>
+  102 					calloc: <>
+  103 			update: void (), <./pe.c 517>
+  104 				calloc: <>
+  105 				err: <>
+  106 				memcpy: <>
+  107 				append: off_t (), <./pe.c 499>
+  108 					realloc: <>
+  109 					err: <>
+  110 					memcpy: <>
+  111 				printf: <>
+  112 				free: <>
+  113 				compute_checksum: 45
+  114 				assert: <>
+  115 			save: void (), <./child.c 217>
+  116 				assert: <>
+  117 				fwrite: <>
+  118 				err: <>
+  119 		checked_fopen: 17
+  120 		PEM_read_X509: <>
+  121 		ERR_print_errors_fp: <>
+  122 		PEM_read_PrivateKey: <>
+  123 		sign: void (), <./uefisign.c 242>
+  124 			assert: <>
+  125 			receive_chunk: 99
+  126 			BIO_new_mem_buf: <>
+  127 			ERR_print_errors_fp: <>
+  128 			errx: <>
+  129 			PKCS7_sign: <>
+  130 			EVP_get_digestbyname: <>
+  131 			PKCS7_sign_add_signer: <>
+  132 			PKCS7_add_signed_attribute: <>
+  133 			OBJ_txt2obj: <>
+  134 			magic: void (), <./uefisign.c 152>
+  135 				bin2hex: char * (), <./uefisign.c 121>
+  136 					malloc: <>
+  137 					err: <>
+  138 					sprintf: <>
+  139 				OBJ_create: <>
+  140 				asprintf: <>
+  141 				err: <>
+  142 				BIO_new_mem_buf: <>
+  143 				ERR_print_errors_fp: <>
+  144 				errx: <>
+  145 				NCONF_new: <>
+  146 				NCONF_load_bio: <>
+  147 				NCONF_get_string: <>
+  148 				ASN1_generate_nconf: <>
+  149 				i2d_ASN1_TYPE: <>
+  150 				calloc: <>
+  151 				PKCS7_dataInit: <>
+  152 				BIO_write: <>
+  153 				PKCS7_dataFinal: <>
+  154 				ASN1_TYPE_new: <>
+  155 				ASN1_STRING_new: <>
+  156 				ASN1_STRING_set: <>
+  157 				ASN1_TYPE_set: <>
+  158 				PKCS7_set0_type_other: <>
+  159 				sign: 123
+  160 			BIO_new: <>
+  161 			BIO_s_file: <>
+  162 			BIO_set_fp: <>
+  163 			PKCS7_print_ctx: <>
+  164 			i2d_PKCS7_bio: <>
+  165 			BIO_s_mem: <>
+  166 			BIO_get_mem_data: <>
+  167 			BIO_set_close: <>
+  168 			BIO_free: <>
+  169 			send_chunk: 95
+  170 		wait_for_child: int (), <./uefisign.c 323>
+  171 			waitpid: <>
+  172 			err: <>
+  173 			WEXITSTATUS: <>

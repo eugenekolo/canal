@@ -1,0 +1,55 @@
+    1 	main: int (), <./i2c.c 520>
+    2 		getopt: <>
+    3 		strtoul: <>
+    4 		atoi: <>
+    5 		strcmp: <>
+    6 		usage: <>
+    7 		fprintf: <>
+    8 		exit: <>
+    9 		scan_bus: int (), <./i2c.c 122>
+   10 			open: <>
+   11 			fprintf: <>
+   12 			strerror: <>
+   13 			strlen: <>
+   14 			strstr: <>
+   15 			skip_get_range: struct skip_range (), <./i2c.c 83>
+   16 			malloc: <>
+   17 			skip_get_tokens: int (), <./i2c.c 107>
+   18 				strsep: <>
+   19 				strtoul: <>
+   20 			printf: <>
+   21 			ioctl: <>
+   22 			close: <>
+   23 			free: <>
+   24 		reset_bus: int (), <./i2c.c 212>
+   25 			open: <>
+   26 			fprintf: <>
+   27 			strerror: <>
+   28 			printf: <>
+   29 			ioctl: <>
+   30 			close: <>
+   31 		malloc: <>
+   32 		err: <>
+   33 		i2c_write: int (), <./i2c.c 256>
+   34 			fprintf: <>
+   35 			getchar: <>
+   36 			free: <>
+   37 			err: <>
+   38 			open: <>
+   39 			ioctl: <>
+   40 			prepare_buf: char * (), <./i2c.c 237>
+   41 				malloc: <>
+   42 			realloc: <>
+   43 			memcpy: <>
+   44 			close: <>
+   45 		free: <>
+   46 		i2c_read: int (), <./i2c.c 423>
+   47 			open: <>
+   48 			err: <>
+   49 			bzero: <>
+   50 			ioctl: <>
+   51 			prepare_buf: 40
+   52 			free: <>
+   53 			read: <>
+   54 			close: <>
+   55 			fprintf: <>

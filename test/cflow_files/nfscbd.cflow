@@ -1,0 +1,50 @@
+    1 	main: int (), <./nfscbd.c 98>
+    2 		modfind: <>
+    3 		kldload: <>
+    4 		errx: <>
+    5 		gethostname: <>
+    6 		strchr: <>
+    7 		memset: <>
+    8 		getaddrinfo: <>
+    9 		freeaddrinfo: <>
+   10 		warnx: <>
+   11 		getopt: <>
+   12 		atoi: <>
+   13 		strlen: <>
+   14 		snprintf: <>
+   15 		strlcpy: <>
+   16 		usage: void (), <./nfscbd.c 319>
+   17 			errx: <>
+   18 		daemon: <>
+   19 		signal: <>
+   20 		nonfs: void (), <./nfscbd.c 326>
+   21 			syslog: <>
+   22 		reapchild: void (), <./nfscbd.c 332>
+   23 			wait3: <>
+   24 		openlog: <>
+   25 		fork: <>
+   26 		syslog: <>
+   27 		nfscbd_exit: void (), <./nfscbd.c 369>
+   28 			killchildren: void (), <./nfscbd.c 343>
+   29 				kill: <>
+   30 			exit: <>
+   31 		child_cleanup: void (), <./nfscbd.c 363>
+   32 			exit: <>
+   33 		setproctitle: <>
+   34 		nfssvc: <>
+   35 		exit: <>
+   36 		cleanup: void (), <./nfscbd.c 354>
+   37 			nfscbd_exit: 27
+   38 		socket: <>
+   39 		htons: <>
+   40 		bind: <>
+   41 		getsockname: <>
+   42 		ntohs: <>
+   43 		close: <>
+   44 		FD_ZERO: <>
+   45 		setsockopt: <>
+   46 		listen: <>
+   47 		FD_SET: <>
+   48 		select: <>
+   49 		FD_ISSET: <>
+   50 		accept: <>

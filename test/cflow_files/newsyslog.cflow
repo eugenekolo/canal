@@ -1,0 +1,229 @@
+    1 	main: int (), <./newsyslog.c 296>
+    2 		SLIST_INIT: <>
+    3 		parse_args: void (), <./newsyslog.c 617>
+    4 			ptime_init: struct ptime_data (), <./ptimes.c 323>
+    5 			ptimeset_time: int (), <./ptimes.c 607>
+    6 				localtime: <>
+    7 			time: <>
+    8 			strlcpy: <>
+    9 			ptimeget_ctime: const char * (), <./ptimes.c 472>
+   10 				ctime: <>
+   11 			gethostname: <>
+   12 			strchr: <>
+   13 			getopt: <>
+   14 			strcmp: <>
+   15 			strdup: <>
+   16 			parse_doption: int (), <./newsyslog.c 741>
+   17 				strncmp: <>
+   18 				ptime_init: struct ptime_data (), <./ptimes.c 323>
+   19 				ptime_relparse: int (), <./ptimes.c 382>
+   20 					localtime: <>
+   21 					parseDWM: int (), <./ptimes.c 220>
+   22 						days_pmonth: int (), <./ptimes.c 90>
+   23 						strtol: <>
+   24 						tolower: <>
+   25 						isspace: <>
+   26 					parse8601: int (), <./ptimes.c 129>
+   27 						strtol: <>
+   28 						isspace: <>
+   29 					days_pmonth: 22
+   30 					fprintf: <>
+   31 					mktime: <>
+   32 					ptimeset_nxtime: int (), <./ptimes.c 510>
+   33 						days_pmonth: 22
+   34 						mktime: <>
+   35 						localtime: <>
+   36 						ptime_adjust4dst: int (), <./ptimes.c 343>
+   37 							localtime: <>
+   38 				time: <>
+   39 				warnx: <>
+   40 				strcmp: <>
+   41 			usage: void (), <./newsyslog.c 782>
+   42 				fprintf: <>
+   43 				exit: <>
+   44 			warnx: <>
+   45 			isprintch: <>
+   46 			ptime_free: int (), <./ptimes.c 457>
+   47 				free: <>
+   48 			fprintf: <>
+   49 		getuid: <>
+   50 		geteuid: <>
+   51 		errx: <>
+   52 		get_worklist: struct cflist (), <./newsyslog.c 796>
+   53 		STAILQ_EMPTY: <>
+   54 		STAILQ_FIRST: <>
+   55 		STAILQ_REMOVE_HEAD: <>
+   56 		do_entry: fk_entry (), <./newsyslog.c 483>
+   57 			printf: <>
+   58 			sizefile: int (), <./newsyslog.c 2265>
+   59 				stat: <>
+   60 				kbytes: <>
+   61 			age_old_log: int (), <./newsyslog.c 2328>
+   62 				strlcpy: <>
+   63 				strrchr: <>
+   64 				strlcat: <>
+   65 				mtime_old_timelog: time_t (), <./newsyslog.c 2279>
+   66 					dirname: <>
+   67 					warn: <>
+   68 					basename: <>
+   69 					warnx: <>
+   70 					strdup: <>
+   71 					err: <>
+   72 					opendir: <>
+   73 					dirfd: <>
+   74 					readdir: <>
+   75 					validate_old_timelog: int (), <./newsyslog.c 1439>
+   76 						strlen: <>
+   77 						fstatat: <>
+   78 						S_ISREG: <>
+   79 						strncmp: <>
+   80 						printf: <>
+   81 						memset: <>
+   82 						strptime: <>
+   83 						strcmp: <>
+   84 					fstatat: <>
+   85 					closedir: <>
+   86 				get_logfile_suffix: const char * (), <./newsyslog.c 1687>
+   87 					strlcpy: <>
+   88 					strlcat: <>
+   89 					lstat: <>
+   90 				stat: <>
+   91 				ptimeget_secs: time_t (), <./ptimes.c 494>
+   92 			strlcpy: <>
+   93 			createlog: void (), <./newsyslog.c 2503>
+   94 				strlcpy: <>
+   95 				strrchr: <>
+   96 				stat: <>
+   97 				err: <>
+   98 				createdir: void (), <./newsyslog.c 2458>
+   99 					lstat: <>
+  100 					printf: <>
+  101 					mkdir: <>
+  102 					err: <>
+  103 				S_ISDIR: <>
+  104 				errx: <>
+  105 				strlcat: <>
+  106 				printf: <>
+  107 				mkstemp: <>
+  108 				log_trim: int (), <./newsyslog.c 2239>
+  109 					fopen: <>
+  110 					fprintf: <>
+  111 					getpid: <>
+  112 					fclose: <>
+  113 					err: <>
+  114 				fchown: <>
+  115 				fchflags: <>
+  116 				warn: <>
+  117 				fchmod: <>
+  118 				rename: <>
+  119 				close: <>
+  120 			ptimeget_diff: double (), <./ptimes.c 482>
+  121 				difftime: <>
+  122 			ptime_adjust4dst: 36
+  123 			ptimeget_ctime: 9
+  124 			ptimeset_nxtime: 32
+  125 			snprintf: <>
+  126 			strdup: <>
+  127 			do_rotate: fk_entry (), <./newsyslog.c 1703>
+  128 				strlcpy: <>
+  129 				strrchr: <>
+  130 				strlcat: <>
+  131 				lstat: <>
+  132 				createdir: 98
+  133 				delete_oldest_timelog: void (), <./newsyslog.c 1509>
+  134 					malloc: <>
+  135 					dirname: <>
+  136 					err: <>
+  137 					strdup: <>
+  138 					basename: <>
+  139 					strcmp: <>
+  140 					errx: <>
+  141 					printf: <>
+  142 					opendir: <>
+  143 					dirfd: <>
+  144 					readdir: <>
+  145 					validate_old_timelog: 75
+  146 					timegm: <>
+  147 					realloc: <>
+  148 					qsort: <>
+  149 					oldlog_entry_compare: int (), <./newsyslog.c 1421>
+  150 					unlinkat: <>
+  151 					snprintf: <>
+  152 					perror: <>
+  153 					closedir: <>
+  154 					assert: <>
+  155 					free: <>
+  156 				delete_classiclog: void (), <./newsyslog.c 1634>
+  157 					gen_classiclog_fname: void (), <./newsyslog.c 1619>
+  158 						snprintf: <>
+  159 					snprintf: <>
+  160 					printf: <>
+  161 					unlink: <>
+  162 				time: <>
+  163 				localtime_r: <>
+  164 				bzero: <>
+  165 				strftime: <>
+  166 				snprintf: <>
+  167 				gen_classiclog_fname: 157
+  168 				get_logfile_suffix: 86
+  169 				printf: <>
+  170 				rename: <>
+  171 				change_attrs: void (), <./newsyslog.c 2614>
+  172 					printf: <>
+  173 					chmod: <>
+  174 					err: <>
+  175 					warn: <>
+  176 					chown: <>
+  177 					chflags: <>
+  178 				log_trim: 108
+  179 				savelog: void (), <./newsyslog.c 2429>
+  180 					link: <>
+  181 					fopen: <>
+  182 					err: <>
+  183 					getc: <>
+  184 					putc: <>
+  185 					ferror: <>
+  186 					fclose: <>
+  187 				utimes: <>
+  188 				createlog: 93
+  189 				save_sigwork: struct sigwork_entry (), <./newsyslog.c 2066>
+  190 				save_zipwork: struct zipwork_entry (), <./newsyslog.c 2121>
+  191 		free_entry: void (), <./newsyslog.c 436>
+  192 			printf: <>
+  193 			free: <>
+  194 			ptime_free: 46
+  195 		SLIST_EMPTY: <>
+  196 		printf: <>
+  197 		SLIST_FOREACH: <>
+  198 		do_sigwork: void (), <./newsyslog.c 1874>
+  199 			SLIST_NEXT: <>
+  200 			printf: <>
+  201 			asprintf: <>
+  202 			warn: <>
+  203 			system: <>
+  204 			warnx: <>
+  205 			free: <>
+  206 			kill: <>
+  207 			sleep: <>
+  208 		sleep: <>
+  209 		SLIST_FIRST: <>
+  210 		do_zipwork: void (), <./newsyslog.c 1971>
+  211 			assert: <>
+  212 			strlcpy: <>
+  213 			strlcat: <>
+  214 			warnx: <>
+  215 			strrchr: <>
+  216 			change_attrs: 171
+  217 			printf: <>
+  218 			fork: <>
+  219 			warn: <>
+  220 			errx: <>
+  221 			sleep: <>
+  222 			execl: <>
+  223 			err: <>
+  224 			waitpid: <>
+  225 			WIFEXITED: <>
+  226 			WEXITSTATUS: <>
+  227 		SLIST_REMOVE_HEAD: <>
+  228 		free: <>
+  229 		wait: <>

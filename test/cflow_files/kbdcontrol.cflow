@@ -1,0 +1,121 @@
+    1 	main: int (), <./kbdcontrol.c 1179>
+    2 		getopt: <>
+    3 		mux_keyboard: void (), <./kbdcontrol.c 1104>
+    4 			ioctl: <>
+    5 			warn: <>
+    6 			printf: <>
+    7 			get_kbd_type_name: const char * (), <./kbdcontrol.c 1012>
+    8 			memset: <>
+    9 			strpbrk: <>
+   10 			strtol: <>
+   11 			warnx: <>
+   12 			strncpy: <>
+   13 		set_bell_values: void (), <./kbdcontrol.c 923>
+   14 			strncmp: <>
+   15 			strcmp: <>
+   16 			strtol: <>
+   17 			warnx: <>
+   18 			ioctl: <>
+   19 			fprintf: <>
+   20 		print_keymap: void (), <./kbdcontrol.c 856>
+   21 			ioctl: <>
+   22 			err: <>
+   23 			memset: <>
+   24 			printf: <>
+   25 			print_key_definition_line: void (), <./kbdcontrol.c 527>
+   26 				fprintf: <>
+   27 				print_entry: void (), <./kbdcontrol.c 403>
+   28 					fprintf: <>
+   29 					isascii: <>
+   30 					isprint: <>
+   31 			print_accent_definition_line: void (), <./kbdcontrol.c 563>
+   32 				fprintf: <>
+   33 				isascii: <>
+   34 				isprint: <>
+   35 		load_keymap: void (), <./kbdcontrol.c 794>
+   36 			is_vt4: <>
+   37 			getenv: <>
+   38 			asprintf: <>
+   39 			mkfullname: char * (), <./kbdcontrol.c 168>
+   40 				strlen: <>
+   41 				realloc: <>
+   42 				malloc: <>
+   43 				strcpy: <>
+   44 				strcat: <>
+   45 			fopen: <>
+   46 			warn: <>
+   47 			memset: <>
+   48 			get_definition_line: int (), <./kbdcontrol.c 282>
+   49 				yylex: <>
+   50 				get_key_definition_line: int (), <./kbdcontrol.c 315>
+   51 					get_entry: int (), <./kbdcontrol.c 195>
+   52 						yylex: <>
+   53 						ACC: <>
+   54 						F: <>
+   55 						S: <>
+   56 					yylex: <>
+   57 				errx: <>
+   58 				get_accent_definition_line: int (), <./kbdcontrol.c 342>
+   59 					ACC: <>
+   60 					errx: <>
+   61 					yylex: <>
+   62 					warnx: <>
+   63 			isalpha: <>
+   64 			isdigit: <>
+   65 			printf: <>
+   66 			dump_key_definition: void (), <./kbdcontrol.c 722>
+   67 				printf: <>
+   68 				dump_entry: void (), <./kbdcontrol.c 604>
+   69 					printf: <>
+   70 					isascii: <>
+   71 					isprint: <>
+   72 			dump_accent_definition: void (), <./kbdcontrol.c 750>
+   73 				printf: <>
+   74 				isascii: <>
+   75 				isprint: <>
+   76 			ioctl: <>
+   77 			fclose: <>
+   78 		set_functionkey: void (), <./kbdcontrol.c 897>
+   79 			strcmp: <>
+   80 			load_default_functionkeys: void (), <./kbdcontrol.c 882>
+   81 				strcpy: <>
+   82 				strlen: <>
+   83 				ioctl: <>
+   84 				warn: <>
+   85 			atoi: <>
+   86 			warnx: <>
+   87 			strlen: <>
+   88 			strncpy: <>
+   89 			ioctl: <>
+   90 			warn: <>
+   91 		nextarg: char * (), <./kbdcontrol.c 158>
+   92 			warnx: <>
+   93 			usage: void (), <./kbdcontrol.c 1168>
+   94 				fprintf: <>
+   95 				exit: <>
+   96 		load_default_functionkeys: 80
+   97 		show_kbd_info: void (), <./kbdcontrol.c 1032>
+   98 			ioctl: <>
+   99 			warn: <>
+  100 			printf: <>
+  101 			get_kbd_type_name: 7
+  102 		release_keyboard: void (), <./kbdcontrol.c 1081>
+  103 			ioctl: <>
+  104 			warn: <>
+  105 			printf: <>
+  106 			get_kbd_type_name: 7
+  107 		set_keyboard: void (), <./kbdcontrol.c 1047>
+  108 			open: <>
+  109 			warn: <>
+  110 			ioctl: <>
+  111 			close: <>
+  112 			printf: <>
+  113 			get_kbd_type_name: 7
+  114 		set_keyrates: void (), <./kbdcontrol.c 963>
+  115 			strcmp: <>
+  116 			strtol: <>
+  117 			warnx: <>
+  118 			ioctl: <>
+  119 			warn: <>
+  120 		usage: 93
+  121 		exit: <>

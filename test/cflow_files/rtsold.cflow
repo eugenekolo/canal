@@ -1,0 +1,209 @@
+    1 	main: int (), <./rtsold.c 112>
+    2 		getopt: <>
+    3 		usage: void (), <./rtsold.c 779>
+    4 			fprintf: <>
+    5 		exit: <>
+    6 		strrchr: <>
+    7 		openlog: <>
+    8 		setlogmask: <>
+    9 		LOG_UPTO: <>
+   10 		errx: <>
+   11 		setinet6sysctl: int (), <./if.c 351>
+   12 			sysctl: <>
+   13 			nitems: <>
+   14 		getinet6sysctl: int (), <./if.c 336>
+   15 			sysctl: <>
+   16 			nitems: <>
+   17 		warnx: <>
+   18 		signal: <>
+   19 		rtsold_set_dump_file: void (), <./rtsold.c 772>
+   20 		daemon: <>
+   21 		sockopen: int (), <./rtsol.c 117>
+   22 			CMSG_SPACE: <>
+   23 			malloc: <>
+   24 			warnmsg: void (), <./rtsold.c 795>
+   25 				va_start: <>
+   26 				vfprintf: <>
+   27 				fprintf: <>
+   28 				snprintf: <>
+   29 				vsyslog: <>
+   30 				va_end: <>
+   31 			socket: <>
+   32 			strerror: <>
+   33 			setsockopt: <>
+   34 			exit: <>
+   35 			ICMP6_FILTER_SETBLOCKALL: <>
+   36 			ICMP6_FILTER_SETPASS: <>
+   37 		warnmsg: 24
+   38 		rtsock_open: int (), <./rtsock.c 83>
+   39 			socket: <>
+   40 		ifinit: int (), <./if.c 69>
+   41 		autoifprobe: char ** (), <./rtsold.c 818>
+   42 			free: <>
+   43 			getifaddrs: <>
+   44 			socket: <>
+   45 			warnmsg: 24
+   46 			exit: <>
+   47 			strcmp: <>
+   48 			memset: <>
+   49 			strlcpy: <>
+   50 			ioctl: <>
+   51 			realloc: <>
+   52 			strdup: <>
+   53 			close: <>
+   54 			freeifaddrs: <>
+   55 		ifconfig: int (), <./rtsold.c 342>
+   56 			if_nametosdl: struct sockaddr_dl (), <./if.c 281>
+   57 			warnmsg: 24
+   58 			find_ifinfo: struct ifinfo (), <./rtsold.c 501>
+   59 			free: <>
+   60 			socket: <>
+   61 			memset: <>
+   62 			strlcpy: <>
+   63 			ioctl: <>
+   64 			close: <>
+   65 			malloc: <>
+   66 			TAILQ_INIT: <>
+   67 			make_packet: int (), <./rtsold.c 513>
+   68 				lladdropt_length: int (), <./if.c 246>
+   69 					ROUNDUP8: <>
+   70 				warnmsg: 24
+   71 				malloc: <>
+   72 				lladdropt_fill: void (), <./if.c 258>
+   73 					ROUNDUP8: <>
+   74 					memcpy: <>
+   75 					LLADDR: <>
+   76 					warnmsg: 24
+   77 					exit: <>
+   78 			inet_zoneid: <>
+   79 			interface_status: int (), <./if.c 175>
+   80 				memset: <>
+   81 				strncpy: <>
+   82 				ioctl: <>
+   83 				warnmsg: 24
+   84 				strerror: <>
+   85 			interface_up: int (), <./if.c 77>
+   86 				memset: <>
+   87 				strncpy: <>
+   88 				strlcpy: <>
+   89 				ioctl: <>
+   90 				warnmsg: 24
+   91 				strerror: <>
+   92 				socket: <>
+   93 				close: <>
+   94 				get_llflag: int (), <./if.c 370>
+   95 					socket: <>
+   96 					warnmsg: 24
+   97 					strerror: <>
+   98 					exit: <>
+   99 					getifaddrs: <>
+  100 					strlen: <>
+  101 					strncmp: <>
+  102 					IN6_IS_ADDR_LINKLOCAL: <>
+  103 					memset: <>
+  104 					strncpy: <>
+  105 					memcpy: <>
+  106 					ioctl: <>
+  107 					freeifaddrs: <>
+  108 					close: <>
+  109 			rtsol_timer_update: void (), <./rtsold.c 697>
+  110 				bzero: <>
+  111 				arc4random_uniform: <>
+  112 				warnmsg: 24
+  113 				TS_CMP: <>
+  114 				clock_gettime: <>
+  115 				TS_ADD: <>
+  116 				sec2str: const char * (), <./dump.c 137>
+  117 					clock_gettime: <>
+  118 					snprintf: <>
+  119 			TAILQ_INSERT_TAIL: <>
+  120 		probe_init: int (), <./probe.c 66>
+  121 			CMSG_SPACE: <>
+  122 			malloc: <>
+  123 			warnmsg: 24
+  124 			socket: <>
+  125 			strerror: <>
+  126 		getpid: <>
+  127 		fopen: <>
+  128 		strerror: <>
+  129 		fprintf: <>
+  130 		fclose: <>
+  131 		rtsold_dump_file: void (), <./dump.c 125>
+  132 			fopen: <>
+  133 			warnmsg: 24
+  134 			strerror: <>
+  135 			dump_interface_status: void (), <./dump.c 57>
+  136 				clock_gettime: <>
+  137 				TAILQ_FOREACH: <>
+  138 				fprintf: <>
+  139 				sec2str: 116
+  140 				inet_ntop: <>
+  141 			fclose: <>
+  142 		rtsol_check_timer: struct timespec (), <./rtsold.c 551>
+  143 		TAILQ_FOREACH: <>
+  144 		poll: <>
+  145 		rtsock_input: int (), <./rtsock.c 90>
+  146 			offsetof: <>
+  147 			read: <>
+  148 			warnmsg: 24
+  149 		rtsol_input: void (), <./rtsol.c 238>
+  150 			recvmsg: <>
+  151 			warnmsg: 24
+  152 			strerror: <>
+  153 			CMSG_FIRSTHDR: <>
+  154 			CMSG_NXTHDR: <>
+  155 			CMSG_LEN: <>
+  156 			CMSG_DATA: <>
+  157 			inet_ntop: <>
+  158 			if_indextoname: <>
+  159 			IN6_IS_ADDR_LINKLOCAL: <>
+  160 			find_ifinfo: struct ifinfo (), <./rtsold.c 501>
+  161 			CALL_SCRIPT: <>
+  162 			clock_gettime: <>
+  163 			find_rainfo: struct rainfo (), <./rtsold.c 488>
+  164 			ELM_MALLOC: <>
+  165 			exit: <>
+  166 			TAILQ_INIT: <>
+  167 			memcpy: <>
+  168 			RA_OPT_NEXT_HDR: <>
+  169 			snprintf: <>
+  170 			find_raopt: struct ra_opt (), <./rtsol.c 757>
+  171 			strlen: <>
+  172 			strdup: <>
+  173 			free: <>
+  174 			memset: <>
+  175 			ntohl: <>
+  176 			TS_ADD: <>
+  177 			TAILQ_INSERT_TAIL: <>
+  178 			dname_labeldec: size_t (), <./rtsol.c 924>
+  179 				strchr: <>
+  180 				memset: <>
+  181 				warnmsg: 24
+  182 				memcpy: <>
+  183 			ra_opt_handler: int (), <./rtsol.c 572>
+  184 				TAILQ_HEAD_INITIALIZER: <>
+  185 				strlen: <>
+  186 				clock_gettime: <>
+  187 				TAILQ_FOREACH: <>
+  188 				TS_CMP: <>
+  189 				warnmsg: 24
+  190 				ELM_MALLOC: <>
+  191 				TAILQ_INSERT_TAIL: <>
+  192 				TAILQ_EMPTY: <>
+  193 				free: <>
+  194 				ra_opt_rdnss_dispatch: int (), <./rtsol.c 702>
+  195 					TAILQ_EMPTY: <>
+  196 					ELM_MALLOC: <>
+  197 					TAILQ_INSERT_TAIL: <>
+  198 					TAILQ_CONCAT: <>
+  199 					make_rsid: char * (), <./rtsol.c 682>
+  200 						sprintf: <>
+  201 						IN6_IS_ADDR_LINKLOCAL: <>
+  202 						getnameinfo: <>
+  203 						warnmsg: 24
+  204 					warnmsg: 24
+  205 					CALL_SCRIPT: <>
+  206 					TAILQ_FIRST: <>
+  207 					TAILQ_REMOVE: <>
+  208 					free: <>
+  209 			rtsol_timer_update: 109

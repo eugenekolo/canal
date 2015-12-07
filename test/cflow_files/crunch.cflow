@@ -1,0 +1,180 @@
+    1 	main: int (), <./crunchide/crunchide.c 94>
+    2 		crunched_usage: int (), <./crunchgen/crunched_main.c 108>
+    3 			fprintf: <>
+    4 			strlen: <>
+    5 			exit: <>
+    6 		strrchr: <>
+    7 		strcmp: <>
+    8 		fprintf: <>
+    9 		getenv: <>
+   10 		strdup: <>
+   11 		out_of_memory: void (), <./crunchgen/crunchgen.c 1161>
+   12 			err: <>
+   13 		getopt: <>
+   14 		strlcpy: <>
+   15 		usage: void (), <./crunchide/crunchide.c 131>
+   16 			fprintf: <>
+   17 			exit: <>
+   18 		snprintf: <>
+   19 		parse_conf_file: void (), <./crunchgen/crunchgen.c 264>
+   20 			is_nonempty_file: int (), <./crunchgen/crunchgen.c 1228>
+   21 				stat: <>
+   22 				S_ISREG: <>
+   23 			errx: <>
+   24 			parse_one_file: void (), <./crunchgen/crunchgen.c 278>
+   25 				snprintf: <>
+   26 				status: void (), <./crunchgen/crunchgen.c 1141>
+   27 					strlen: <>
+   28 					fprintf: <>
+   29 					fflush: <>
+   30 				strlcpy: <>
+   31 				fopen: <>
+   32 				warn: <>
+   33 				fgets: <>
+   34 				parse_line: void (), <./crunchgen/crunchgen.c 345>
+   35 					isspace: <>
+   36 				strcmp: <>
+   37 				add_srcdirs: void (), <./crunchgen/crunchgen.c 377>
+   38 					is_dir: int (), <./crunchgen/crunchgen.c 1217>
+   39 						stat: <>
+   40 						S_ISDIR: <>
+   41 					add_string: void (), <./crunchgen/crunchgen.c 1168>
+   42 						strcmp: <>
+   43 						malloc: <>
+   44 						strdup: <>
+   45 						out_of_memory: 11
+   46 					warnx: <>
+   47 				add_progs: void (), <./crunchgen/crunchgen.c 394>
+   48 					add_prog: void (), <./crunchgen/crunchgen.c 404>
+   49 						strcmp: <>
+   50 						malloc: <>
+   51 						memset: <>
+   52 						strdup: <>
+   53 						out_of_memory: 11
+   54 						printf: <>
+   55 				add_link: void (), <./crunchgen/crunchgen.c 446>
+   56 					find_prog: prog_t * (), <./crunchgen/crunchgen.c 576>
+   57 						strcmp: <>
+   58 					warnx: <>
+   59 					printf: <>
+   60 					add_string: 41
+   61 				add_libs: void (), <./crunchgen/crunchgen.c 468>
+   62 					add_string: 41
+   63 					in_list: int (), <./crunchgen/crunchgen.c 1207>
+   64 						strcmp: <>
+   65 					warnx: <>
+   66 				add_libs_so: void (), <./crunchgen/crunchgen.c 483>
+   67 					add_string: 41
+   68 					in_list: 63
+   69 					warnx: <>
+   70 				add_buildopts: void (), <./crunchgen/crunchgen.c 498>
+   71 					add_string: 41
+   72 				add_special: void (), <./crunchgen/crunchgen.c 508>
+   73 					find_prog: 56
+   74 					warnx: <>
+   75 					strcmp: <>
+   76 					strdup: <>
+   77 					out_of_memory: 11
+   78 					add_string: 41
+   79 				warnx: <>
+   80 				ferror: <>
+   81 				fclose: <>
+   82 		exit: <>
+   83 		gen_outputs: void (), <./crunchgen/crunchgen.c 611>
+   84 			fillin_program: void (), <./crunchgen/crunchgen.c 632>
+   85 				snprintf: <>
+   86 				status: 26
+   87 				genident: char * (), <./crunchgen/crunchgen.c 933>
+   88 					strdup: <>
+   89 					isalnum: <>
+   90 				dir_search: char * (), <./crunchgen/crunchgen.c 957>
+   91 					snprintf: <>
+   92 					is_dir: 38
+   93 					strdup: <>
+   94 					out_of_memory: 11
+   95 				popen: <>
+   96 				errx: <>
+   97 				fgets: <>
+   98 				pclose: <>
+   99 				strdup: <>
+  100 				is_dir: 38
+  101 				out_of_memory: 11
+  102 				is_nonempty_file: 20
+  103 				fillin_program_objs: void (), <./crunchgen/crunchgen.c 708>
+  104 					mkstemp: <>
+  105 					perror: <>
+  106 					exit: <>
+  107 					fdopen: <>
+  108 					warn: <>
+  109 					fprintf: <>
+  110 					output_strlst: void (), <./crunchgen/crunchgen.c 1125>
+  111 						strlen: <>
+  112 						fprintf: <>
+  113 					fclose: <>
+  114 					snprintf: <>
+  115 					popen: <>
+  116 					fgets: <>
+  117 					strncmp: <>
+  118 					warnx: <>
+  119 					isspace: <>
+  120 					add_string: 41
+  121 					pclose: <>
+  122 					unlink: <>
+  123 				warnx: <>
+  124 			remove_error_progs: void (), <./crunchgen/crunchgen.c 796>
+  125 				warnx: <>
+  126 			gen_specials_cache: void (), <./crunchgen/crunchgen.c 818>
+  127 				snprintf: <>
+  128 				status: 26
+  129 				fopen: <>
+  130 				warn: <>
+  131 				fprintf: <>
+  132 				output_strlst: 110
+  133 				fclose: <>
+  134 			gen_output_cfile: void (), <./crunchgen/crunchgen.c 890>
+  135 				snprintf: <>
+  136 				status: 26
+  137 				fopen: <>
+  138 				warn: <>
+  139 				fprintf: <>
+  140 				fclose: <>
+  141 			gen_output_makefile: void (), <./crunchgen/crunchgen.c 859>
+  142 				snprintf: <>
+  143 				status: 26
+  144 				fopen: <>
+  145 				warn: <>
+  146 				fprintf: <>
+  147 				top_makefile_rules: void (), <./crunchgen/crunchgen.c 978>
+  148 					fprintf: <>
+  149 					subtract_strlst: int (), <./crunchgen/crunchgen.c 1193>
+  150 						in_list: 63
+  151 						warnx: <>
+  152 						strcat: <>
+  153 					output_strlst: 110
+  154 				prog_makefile_rules: void (), <./crunchgen/crunchgen.c 1039>
+  155 					fprintf: <>
+  156 					output_strlst: 110
+  157 				fclose: <>
+  158 			status: 26
+  159 			fprintf: <>
+  160 		add_to_keep_list: void (), <./crunchide/crunchide.c 147>
+  161 			strcmp: <>
+  162 			malloc: <>
+  163 			strdup: <>
+  164 			fprintf: <>
+  165 			exit: <>
+  166 		add_file_to_keep_list: void (), <./crunchide/crunchide.c 187>
+  167 			fopen: <>
+  168 			perror: <>
+  169 			usage: 15
+  170 			fgets: <>
+  171 			strlen: <>
+  172 			add_to_keep_list: 160
+  173 			fclose: <>
+  174 		hide_syms: int (), <./crunchide/crunchide.c 224>
+  175 			open: <>
+  176 			perror: <>
+  177 			lseek: <>
+  178 			err: <>
+  179 			fprintf: <>
+  180 			close: <>

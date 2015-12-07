@@ -1,0 +1,436 @@
+    1 	main: int (), <./partedit/partedit.c 71>
+    2 		getenv: <>
+    3 		errx: <>
+    4 		strdup: <>
+    5 		isspace: <>
+    6 		calloc: <>
+    7 		free: <>
+    8 		init_dialog: <>
+    9 		dlg_put_backtitle: <>
+   10 		malloc: <>
+   11 		snprintf: <>
+   12 		strsep: <>
+   13 		chdir: <>
+   14 		strerror: <>
+   15 		dialog_msgbox: <>
+   16 		end_dialog: <>
+   17 		fetch_files: int (), <./distfetch/distfetch.c 101>
+   18 			calloc: <>
+   19 			errx: <>
+   20 			strrchr: <>
+   21 			dialog_msgbox: <>
+   22 			fetchStatURL: <>
+   23 			fetchXGetURL: <>
+   24 			snprintf: <>
+   25 			fopen: <>
+   26 			strerror: <>
+   27 			fclose: <>
+   28 			fread: <>
+   29 			fwrite: <>
+   30 			dialog_mixedgauge: <>
+   31 			free: <>
+   32 		strcspn: <>
+   33 		strrchr: <>
+   34 		count_files: int (), <./distextract/distextract.c 191>
+   35 			snprintf: <>
+   36 			fopen: <>
+   37 			rewind: <>
+   38 			fgets: <>
+   39 			strcspn: <>
+   40 			strncmp: <>
+   41 			strtol: <>
+   42 			archive_read_new: <>
+   43 			archive_error_string: <>
+   44 			dialog_msgbox: <>
+   45 			archive_read_support_format_all: <>
+   46 			archive_read_support_filter_all: <>
+   47 			archive_read_open_filename: <>
+   48 			archive_read_next_header: <>
+   49 			archive_read_free: <>
+   50 		sig_int: void (), <./distextract/distextract.c 181>
+   51 		sigaction: <>
+   52 		extract_files: int (), <./distextract/distextract.c 264>
+   53 			archive_read_new: <>
+   54 			snprintf: <>
+   55 			archive_error_string: <>
+   56 			dialog_msgbox: <>
+   57 			archive_read_support_format_all: <>
+   58 			archive_read_support_filter_all: <>
+   59 			archive_read_open_filename: <>
+   60 			archive_read_next_header: <>
+   61 			archive_read_extract: <>
+   62 			archive_read_free: <>
+   63 		dpv: <>
+   64 		dpv_free: <>
+   65 		strcmp: <>
+   66 		basename: <>
+   67 		TAILQ_INIT: <>
+   68 		init_fstab_metadata: void (), <./partedit/partedit.c 519>
+   69 			setfsent: <>
+   70 			getfsent: <>
+   71 			calloc: <>
+   72 			strncmp: <>
+   73 			strdup: <>
+   74 			malloc: <>
+   75 			TAILQ_INSERT_TAIL: <>
+   76 		signal: <>
+   77 		sigint_handler: void (), <./partedit/partedit.c 56>
+   78 			geom_gettree: <>
+   79 			gpart_revert_all: void (), <./partedit/gpart_ops.c 1264>
+   80 				LIST_FOREACH: <>
+   81 				strcmp: <>
+   82 				dialog_msgbox: <>
+   83 				gctl_get_handle: <>
+   84 				gctl_ro_param: <>
+   85 				gctl_issue: <>
+   86 				gctl_free: <>
+   87 			geom_deletetree: <>
+   88 			end_dialog: <>
+   89 			exit: <>
+   90 		part_wizard: int (), <./partedit/part_wizard.c 50>
+   91 			geom_gettree: <>
+   92 			dlg_put_backtitle: <>
+   93 			boot_disk: char * (), <./partedit/part_wizard.c 93>
+   94 				LIST_FOREACH: <>
+   95 				strcmp: <>
+   96 				LIST_EMPTY: <>
+   97 				strncmp: <>
+   98 				realloc: <>
+   99 				humanize_number: <>
+  100 				strcat: <>
+  101 				snprintf: <>
+  102 				strdup: <>
+  103 				dlg_menu: <>
+  104 				free: <>
+  105 			dlg_clear: <>
+  106 			wizard_partition: char * (), <./partedit/part_wizard.c 197>
+  107 				LIST_FOREACH: <>
+  108 				strcmp: <>
+  109 				snprintf: <>
+  110 				dialog_yesno: <>
+  111 				is_scheme_bootable: int (), <./partedit/partedit_sparc64.c 39>
+  112 					strlen: <>
+  113 					sysctlbyname: <>
+  114 					strcmp: <>
+  115 					x86_bootmethod: const char * (), <./partedit/partedit_x86.c 36>
+  116 						strlen: <>
+  117 						sysctlbyname: <>
+  118 				sprintf: <>
+  119 				gpart_destroy: void (), <./partedit/gpart_ops.c 466>
+  120 					LIST_FOREACH: <>
+  121 					gpart_delete: void (), <./partedit/gpart_ops.c 1189>
+  122 						strcmp: <>
+  123 						LIST_FOREACH: <>
+  124 						gpart_destroy: 119
+  125 						gctl_get_handle: <>
+  126 						gctl_ro_param: <>
+  127 						gctl_issue: <>
+  128 						gctl_free: <>
+  129 						dialog_msgbox: <>
+  130 						atoi: <>
+  131 						gpart_show_error: void (), <./partedit/gpart_ops.c 44>
+  132 							strtol: <>
+  133 							sprintf: <>
+  134 							strerror: <>
+  135 							dialog_msgbox: <>
+  136 						delete_part_metadata: void (), <./partedit/partedit.c 243>
+  137 							TAILQ_FOREACH: <>
+  138 							strcmp: <>
+  139 							free: <>
+  140 							TAILQ_REMOVE: <>
+  141 					gctl_get_handle: <>
+  142 					gctl_ro_param: <>
+  143 					gctl_issue: <>
+  144 					gctl_free: <>
+  145 					strtol: <>
+  146 					gpart_show_error: 131
+  147 					delete_part_metadata: 136
+  148 				choose_part_type: const char * (), <./partedit/gpart_ops.c 210>
+  149 					dlg_menu: <>
+  150 					is_scheme_bootable: 111
+  151 					sprintf: <>
+  152 					dialog_yesno: <>
+  153 				default_scheme: const char * (), <./partedit/partedit_sparc64.c 34>
+  154 					strlen: <>
+  155 					sysctlbyname: <>
+  156 					strcmp: <>
+  157 					x86_bootmethod: 115
+  158 				gpart_partition: int (), <./partedit/gpart_ops.c 258>
+  159 					choose_part_type: 148
+  160 					default_scheme: 153
+  161 					is_scheme_bootable: 111
+  162 					sprintf: <>
+  163 					dialog_yesno: <>
+  164 					gctl_get_handle: <>
+  165 					gctl_ro_param: <>
+  166 					gctl_issue: <>
+  167 					gpart_show_error: 131
+  168 					gctl_free: <>
+  169 					bootcode_path: const char * (), <./partedit/partedit_sparc64.c 67>
+  170 						strcmp: <>
+  171 						x86_bootmethod: 115
+  172 					get_part_metadata: struct partition_metadata (), <./partedit/partedit.c 225>
+  173 				geom_gettree: <>
+  174 				gpart_create: void (), <./partedit/gpart_ops.c 865>
+  175 					LIST_FOREACH: <>
+  176 					strcmp: <>
+  177 					gpart_partition: 158
+  178 					dialog_msgbox: <>
+  179 					gpart_max_free: intmax_t (), <./partedit/gpart_ops.c 794>
+  180 						LIST_FOREACH: <>
+  181 						strcmp: <>
+  182 						strtoimax: <>
+  183 						calloc: <>
+  184 						qsort: <>
+  185 						part_compare: int (), <./partedit/gpart_ops.c 766>
+  186 							LIST_FOREACH: <>
+  187 							strcmp: <>
+  188 							strtoimax: <>
+  189 						LIST_FIRST: <>
+  190 					humanize_number: <>
+  191 					scheme_supports_labels: int (), <./partedit/gpart_ops.c 70>
+  192 						strcmp: <>
+  193 					strncpy: <>
+  194 					newfs_command: void (), <./partedit/gpart_ops.c 83>
+  195 						strcmp: <>
+  196 						dlg_checklist: <>
+  197 						strcpy: <>
+  198 						strcat: <>
+  199 						getenv: <>
+  200 						sprintf: <>
+  201 						mkdir: <>
+  202 						dialog_msgbox: <>
+  203 					dlg_form: <>
+  204 					strlen: <>
+  205 					expand_number: <>
+  206 					sprintf: <>
+  207 					strerror: <>
+  208 					MIN: <>
+  209 					strchr: <>
+  210 					dialog_yesno: <>
+  211 					is_scheme_bootable: 111
+  212 					is_fs_bootable: int (), <./partedit/partedit_sparc64.c 46>
+  213 						strcmp: <>
+  214 						x86_bootmethod: 115
+  215 					get_part_metadata: struct partition_metadata (), <./partedit/partedit.c 225>
+  216 					bootpart_type: const char * (), <./partedit/partedit_sparc64.c 62>
+  217 						strlen: <>
+  218 						sysctlbyname: <>
+  219 						strcmp: <>
+  220 						x86_bootmethod: 115
+  221 					bootpart_size: size_t (), <./partedit/partedit_sparc64.c 55>
+  222 						strlen: <>
+  223 						sysctlbyname: <>
+  224 						strcmp: <>
+  225 						x86_bootmethod: 115
+  226 					gctl_get_handle: <>
+  227 					gctl_ro_param: <>
+  228 					snprintf: <>
+  229 					gctl_rw_param: <>
+  230 					gctl_issue: <>
+  231 					gpart_show_error: 131
+  232 					gctl_free: <>
+  233 					strtok: <>
+  234 					set_default_part_metadata: void (), <./partedit/gpart_ops.c 662>
+  235 						get_part_metadata: struct partition_metadata (), <./partedit/partedit.c 225>
+  236 						free: <>
+  237 						malloc: <>
+  238 						strlen: <>
+  239 						strcmp: <>
+  240 						strdup: <>
+  241 						isalnum: <>
+  242 						sprintf: <>
+  243 						bootpart_type: 216
+  244 						strncmp: <>
+  245 					free: <>
+  246 					strdup: <>
+  247 				provider_for_name: struct gprovider (), <./partedit/part_wizard.c 172>
+  248 				geom_deletetree: <>
+  249 				strdup: <>
+  250 			free: <>
+  251 			geom_deletetree: <>
+  252 			wizard_makeparts: int (), <./partedit/part_wizard.c 298>
+  253 				strcmp: <>
+  254 				LIST_FOREACH: <>
+  255 				provider_for_name: struct gprovider (), <./partedit/part_wizard.c 172>
+  256 				gpart_max_free: 179
+  257 				humanize_number: <>
+  258 				sprintf: <>
+  259 				dialog_yesno: <>
+  260 				SWAP_SIZE: <>
+  261 				geom_gettree: <>
+  262 				gpart_create: 174
+  263 				geom_deletetree: <>
+  264 		scripted_editor: int (), <./partedit/scripted.c 191>
+  265 			strlen: <>
+  266 			strcpy: <>
+  267 			strcat: <>
+  268 			strsep: <>
+  269 			parse_disk_config: int (), <./partedit/scripted.c 146>
+  270 				isspace: <>
+  271 				strchr: <>
+  272 				fprintf: <>
+  273 				strsep: <>
+  274 				part_config: int (), <./partedit/scripted.c 66>
+  275 					default_scheme: 153
+  276 					geom_gettree: <>
+  277 					provider_for_name: struct gprovider (), <./partedit/scripted.c 41>
+  278 					fprintf: <>
+  279 					geom_deletetree: <>
+  280 					LIST_FOREACH: <>
+  281 					strcmp: <>
+  282 					gpart_destroy: 119
+  283 					gpart_partition: 158
+  284 					gpart_create: 174
+  285 					strdup: <>
+  286 					wizard_makeparts: 252
+  287 					strsep: <>
+  288 					free: <>
+  289 		dlg_clear: <>
+  290 		geom_gettree: <>
+  291 		read_geom_mesh: struct partedit_item (), <./partedit/partedit.c 434>
+  292 		get_mount_points: void (), <./partedit/partedit.c 548>
+  293 			TAILQ_FOREACH: <>
+  294 			strcmp: <>
+  295 		diskeditor_show: int (), <./partedit/diskeditor.c 62>
+  296 			DLG_KEYS_DATA: <>
+  297 			dlg_strclone: <>
+  298 			dlg_tab_correct_str: <>
+  299 			dlg_button_layout: <>
+  300 			dlg_auto_size: <>
+  301 			dlg_print_size: <>
+  302 			dlg_ctl_size: <>
+  303 			dlg_box_x_ordinate: <>
+  304 			dlg_box_y_ordinate: <>
+  305 			dlg_new_window: <>
+  306 			dlg_register_window: <>
+  307 			dlg_register_buttons: <>
+  308 			dlg_draw_box: <>
+  309 			dlg_draw_bottom_box: <>
+  310 			dlg_draw_title: <>
+  311 			wattrset: <>
+  312 			dlg_sub_window: <>
+  313 			dlg_item_help: <>
+  314 			dlg_draw_buttons: <>
+  315 			dlg_print_autowrap: <>
+  316 			MIN: <>
+  317 			print_partedit_item: void (), <./partedit/diskeditor.c 38>
+  318 				wattrset: <>
+  319 				wmove: <>
+  320 				dlg_print_text: <>
+  321 				humanize_number: <>
+  322 			dlg_draw_arrows: <>
+  323 			wrefresh: <>
+  324 			dlg_mouse_wgetch: <>
+  325 			dlg_char_to_button: <>
+  326 			dlg_next_button: <>
+  327 			dlg_prev_button: <>
+  328 			is_DLGK_MOUSE: <>
+  329 			dlg_del_window: <>
+  330 			dlg_mouse_free_regions: <>
+  331 		gpart_create: 174
+  332 		gpart_delete: 121
+  333 		gpart_edit: void (), <./partedit/gpart_ops.c 508>
+  334 			LIST_FOREACH: <>
+  335 			strcmp: <>
+  336 			gpart_partition: 158
+  337 			gpart_destroy: 119
+  338 			scheme_supports_labels: 191
+  339 			atoi: <>
+  340 			TAILQ_FOREACH: <>
+  341 			humanize_number: <>
+  342 			dlg_form: <>
+  343 			strchr: <>
+  344 			dialog_msgbox: <>
+  345 			gctl_get_handle: <>
+  346 			gctl_ro_param: <>
+  347 			gctl_issue: <>
+  348 			gpart_show_error: 131
+  349 			gctl_free: <>
+  350 			newfs_command: 194
+  351 			set_default_part_metadata: 234
+  352 			free: <>
+  353 		gpart_revert_all: 79
+  354 		TAILQ_FIRST: <>
+  355 		TAILQ_REMOVE: <>
+  356 		dialog_yesno: <>
+  357 		validate_setup: int (), <./partedit/partedit.c 269>
+  358 			TAILQ_FOREACH: <>
+  359 			strcmp: <>
+  360 			dialog_msgbox: <>
+  361 			dialog_yesno: <>
+  362 		apply_changes: int (), <./partedit/partedit.c 310>
+  363 			TAILQ_FOREACH: <>
+  364 			calloc: <>
+  365 			malloc: <>
+  366 			sprintf: <>
+  367 			dialog_mixedgauge: <>
+  368 			gpart_commit: void (), <./partedit/gpart_ops.c 1306>
+  369 				LIST_FOREACH: <>
+  370 				strcmp: <>
+  371 				TAILQ_FOREACH: <>
+  372 				dialog_msgbox: <>
+  373 				get_part_metadata: struct partition_metadata (), <./partedit/partedit.c 225>
+  374 				gpart_bootcode: void (), <./partedit/gpart_ops.c 376>
+  375 					LIST_FOREACH: <>
+  376 					strcmp: <>
+  377 					bootcode_path: 169
+  378 					open: <>
+  379 					dialog_msgbox: <>
+  380 					strerror: <>
+  381 					lseek: <>
+  382 					malloc: <>
+  383 					read: <>
+  384 					close: <>
+  385 					gctl_get_handle: <>
+  386 					gctl_ro_param: <>
+  387 					gctl_issue: <>
+  388 					gpart_show_error: 131
+  389 					gctl_free: <>
+  390 					free: <>
+  391 				gpart_activate: void (), <./partedit/gpart_ops.c 309>
+  392 					LIST_FOREACH: <>
+  393 					strcmp: <>
+  394 					atoi: <>
+  395 					gctl_get_handle: <>
+  396 					gctl_ro_param: <>
+  397 					gctl_issue: <>
+  398 					gpart_show_error: 131
+  399 					gctl_free: <>
+  400 				gpart_partcode: void (), <./partedit/gpart_ops.c 430>
+  401 					LIST_FOREACH: <>
+  402 					strcmp: <>
+  403 					partcode_path: const char * (), <./partedit/partedit_sparc64.c 72>
+  404 						strlen: <>
+  405 						sysctlbyname: <>
+  406 						strcmp: <>
+  407 						x86_bootmethod: 115
+  408 					sprintf: <>
+  409 					system: <>
+  410 					dialog_msgbox: <>
+  411 				gctl_get_handle: <>
+  412 				gctl_ro_param: <>
+  413 				gctl_issue: <>
+  414 				gpart_show_error: 131
+  415 				gctl_free: <>
+  416 			getenv: <>
+  417 			setenv: <>
+  418 			system: <>
+  419 			free: <>
+  420 			fopen: <>
+  421 			strerror: <>
+  422 			dialog_msgbox: <>
+  423 			fprintf: <>
+  424 			fclose: <>
+  425 		apply_workaround: void (), <./partedit/partedit.c 397>
+  426 			LIST_FOREACH: <>
+  427 			strcmp: <>
+  428 			dialog_msgbox: <>
+  429 			getenv: <>
+  430 			gpart_set_root: void (), <./partedit/gpart_ops.c 356>
+  431 				gctl_get_handle: <>
+  432 				gctl_ro_param: <>
+  433 				gctl_issue: <>
+  434 				gpart_show_error: 131
+  435 				gctl_free: <>
+  436 		geom_deletetree: <>

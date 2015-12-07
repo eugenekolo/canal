@@ -1,0 +1,43 @@
+    1 	main: int (), <./diskinfo.c 59>
+    2 		getopt: <>
+    3 		usage: void (), <./diskinfo.c 47>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		open: <>
+    7 		sprintf: <>
+    8 		warn: <>
+    9 		ioctl: <>
+   10 		warnx: <>
+   11 		printf: <>
+   12 		humanize_number: <>
+   13 		commandtime: void (), <./diskinfo.c 355>
+   14 			printf: <>
+   15 			rdsect: void (), <./diskinfo.c 175>
+   16 				lseek: <>
+   17 				read: <>
+   18 				err: <>
+   19 				errx: <>
+   20 			T0: void (), <./diskinfo.c 202>
+   21 				fflush: <>
+   22 				sync: <>
+   23 				sleep: <>
+   24 				gettimeofday: <>
+   25 			rdmega: void (), <./diskinfo.c 188>
+   26 				read: <>
+   27 				err: <>
+   28 				errx: <>
+   29 			gettimeofday: <>
+   30 		speeddisk: void (), <./diskinfo.c 238>
+   31 			flsll: <>
+   32 			printf: <>
+   33 			T0: 20
+   34 			rdsect: 15
+   35 			TN: void (), <./diskinfo.c 214>
+   36 				gettimeofday: <>
+   37 				printf: <>
+   38 			rdmega: 25
+   39 			TR: void (), <./diskinfo.c 226>
+   40 				gettimeofday: <>
+   41 				printf: <>
+   42 		close: <>
+   43 		exit: <>

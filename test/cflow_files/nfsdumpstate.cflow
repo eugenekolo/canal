@@ -1,0 +1,25 @@
+    1 	main: int (), <./nfsdumpstate.c 70>
+    2 		modfind: <>
+    3 		errx: <>
+    4 		getopt: <>
+    5 		usage: void (), <./nfsdumpstate.c 110>
+    6 			errx: <>
+    7 		dump_openstate: void (), <./nfsdumpstate.c 120>
+    8 			nfssvc: <>
+    9 			errx: <>
+   10 			printf: <>
+   11 			client_flags: char * (), <./nfsdumpstate.c 267>
+   12 				strlcat: <>
+   13 			inet_ntoa: <>
+   14 		dump_lockstate: void (), <./nfsdumpstate.c 160>
+   15 			nfssvc: <>
+   16 			errx: <>
+   17 			printf: <>
+   18 			open_flags: char * (), <./nfsdumpstate.c 220>
+   19 				strlcpy: <>
+   20 			deleg_flags: char * (), <./nfsdumpstate.c 245>
+   21 				strlcpy: <>
+   22 			lock_flags: char * (), <./nfsdumpstate.c 256>
+   23 				strlcpy: <>
+   24 			inet_ntoa: <>
+   25 		exit: <>

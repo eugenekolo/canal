@@ -1,0 +1,158 @@
+    1 	main: int (), <./dconschat.c 996>
+    2 		bzero: <>
+    3 		getopt: <>
+    4 		strtoull: <>
+    5 		strtoul: <>
+    6 		eui64_hostton: <>
+    7 		eui64_aton: <>
+    8 		errx: <>
+    9 		ntohl: <>
+   10 		strtol: <>
+   11 		usage: void (), <./dconschat.c 969>
+   12 			fprintf: <>
+   13 			exit: <>
+   14 		warnx: <>
+   15 		signal: <>
+   16 		dconschat_cleanup: void (), <./dconschat.c 250>
+   17 			tcsetattr: <>
+   18 			printf: <>
+   19 			wait: <>
+   20 			exit: <>
+   21 		snprintf: <>
+   22 		open: <>
+   23 		err: <>
+   24 		ioctl: <>
+   25 		kvm_open: <>
+   26 		kvm_nlist: <>
+   27 		kvm_geterr: <>
+   28 		kvm_read: <>
+   29 		printf: <>
+   30 		dconschat_fetch_header: int (), <./dconschat.c 356>
+   31 			dconschat_get_crom: int (), <./dconschat.c 269>
+   32 				dread: int (), <./dconschat.c 131>
+   33 					pread: <>
+   34 					kvm_read: <>
+   35 				warn: <>
+   36 				ntohl: <>
+   37 				printf: <>
+   38 			dconschat_ready: void (), <./dconschat.c 334>
+   39 				printf: <>
+   40 				strncmp: <>
+   41 				strlcpy: <>
+   42 			dread: 32
+   43 			htonl: <>
+   44 			snprintf: <>
+   45 			ntohl: <>
+   46 			printf: <>
+   47 			IS_CONSOLE: <>
+   48 		kqueue: <>
+   49 		dconschat_init_socket: void (), <./dconschat.c 624>
+   50 			tcgetattr: <>
+   51 			cfmakeraw: <>
+   52 			tcsetattr: <>
+   53 			EV_SET: <>
+   54 			kevent: <>
+   55 			memset: <>
+   56 			printf: <>
+   57 			snprintf: <>
+   58 			getaddrinfo: <>
+   59 			errx: <>
+   60 			gai_strerror: <>
+   61 			socket: <>
+   62 			err: <>
+   63 			setsockopt: <>
+   64 			bind: <>
+   65 			listen: <>
+   66 		dconschat_start_session: int (), <./dconschat.c 936>
+   67 			MAX: <>
+   68 			printf: <>
+   69 			fflush: <>
+   70 			dconschat_fetch_header: 30
+   71 			dconschat_proc_dcons: int (), <./dconschat.c 908>
+   72 				dconschat_get_ptr: int (), <./dconschat.c 444>
+   73 					dread: 32
+   74 					dconschat_ready: 38
+   75 					htonl: <>
+   76 					snprintf: <>
+   77 					ntohl: <>
+   78 				dconschat_read_dcons: int (), <./dconschat.c 478>
+   79 					DCONS_NEXT_GEN: <>
+   80 					printf: <>
+   81 					fflush: <>
+   82 					dread: 32
+   83 					dconschat_ready: 38
+   84 					warnx: <>
+   85 				dconschat_write_socket: int (), <./dconschat.c 613>
+   86 					write: <>
+   87 					printf: <>
+   88 				dconschat_cleanup: 16
+   89 			dconschat_proc_socket: int (), <./dconschat.c 888>
+   90 				kevent: <>
+   91 				dconschat_accept_socket: int (), <./dconschat.c 695>
+   92 					accept: <>
+   93 					err: <>
+   94 					printf: <>
+   95 					fcntl: <>
+   96 					IS_CONSOLE: <>
+   97 					write: <>
+   98 					IS_GDB: <>
+   99 					dconschat_read_dcons: 78
+  100 					EV_SET: <>
+  101 					kevent: <>
+  102 				dconschat_read_socket: int (), <./dconschat.c 846>
+  103 					read: <>
+  104 					dconschat_read_filter: int (), <./dconschat.c 744>
+  105 						IS_CONSOLE: <>
+  106 						printf: <>
+  107 						dconschat_cleanup: 16
+  108 						CTRL: <>
+  109 						bcopy: <>
+  110 						dconschat_fork_gdb: void (), <./dconschat.c 209>
+  111 							fork: <>
+  112 							snprintf: <>
+  113 							write: <>
+  114 							strlen: <>
+  115 							tcsetattr: <>
+  116 							execl: <>
+  117 							exit: <>
+  118 							signal: <>
+  119 							dconschat_sigchld: void (), <./dconschat.c 190>
+  120 								snprintf: <>
+  121 								write: <>
+  122 								strlen: <>
+  123 								tcsetattr: <>
+  124 								EV_SET: <>
+  125 								kevent: <>
+  126 							EV_SET: <>
+  127 							kevent: <>
+  128 						write: <>
+  129 						strlen: <>
+  130 						dconschat_suspend: void (), <./dconschat.c 174>
+  131 							tcsetattr: <>
+  132 							printf: <>
+  133 							kill: <>
+  134 							getpid: <>
+  135 						dconschat_reset_target: void (), <./dconschat.c 158>
+  136 							snprintf: <>
+  137 							write: <>
+  138 							strlen: <>
+  139 							bzero: <>
+  140 							dwrite: int (), <./dconschat.c 143>
+  141 								pwrite: <>
+  142 								kvm_write: <>
+  143 						IS_GDB: <>
+  144 					dconschat_write_dcons: int (), <./dconschat.c 556>
+  145 						MIN: <>
+  146 						dwrite: 140
+  147 						dconschat_ready: 38
+  148 						DCONS_NEXT_GEN: <>
+  149 						printf: <>
+  150 						DCONS_MAKE_PTR: <>
+  151 					printf: <>
+  152 					fflush: <>
+  153 					warnx: <>
+  154 					warn: <>
+  155 					EV_SET: <>
+  156 					kevent: <>
+  157 					close: <>
+  158 		freeaddrinfo: <>

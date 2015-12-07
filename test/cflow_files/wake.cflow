@@ -1,0 +1,27 @@
+    1 	main: int (), <./wake.c 184>
+    2 		usage: void (), <./wake.c 66>
+    3 			fprintf: <>
+    4 			exit: <>
+    5 		open: <>
+    6 		err: <>
+    7 		bind_if_to_bpf: int (), <./wake.c 85>
+    8 			strlcpy: <>
+    9 			ioctl: <>
+   10 		find_ether: int (), <./wake.c 107>
+   11 			getifaddrs: <>
+   12 			strlcpy: <>
+   13 			freeifaddrs: <>
+   14 		strlcpy: <>
+   15 		wake: int (), <./wake.c 74>
+   16 			get_ether: int (), <./wake.c 135>
+   17 				ether_aton: <>
+   18 				ether_hostton: <>
+   19 				warnx: <>
+   20 			send_wakeup: int (), <./wake.c 152>
+   21 				memset: <>
+   22 				htons: <>
+   23 				bcopy: <>
+   24 				write: <>
+   25 				warn: <>
+   26 		warn: <>
+   27 		exit: <>

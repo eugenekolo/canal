@@ -1,0 +1,307 @@
+    1 	main: int (), <./main.c 106>
+    2 		SLIST_INIT: <>
+    3 		getopt: <>
+    4 		calloc: <>
+    5 		err: <>
+    6 		SLIST_INSERT_HEAD: <>
+    7 		strlcpy: <>
+    8 		errx: <>
+    9 		printf: <>
+   10 		exit: <>
+   11 		usage: void (), <./main.c 282>
+   12 			fprintf: <>
+   13 			exit: <>
+   14 		kernconfdump: void (), <./main.c 685>
+   15 			open: <>
+   16 			err: <>
+   17 			fstat: <>
+   18 			S_ISDIR: <>
+   19 			errx: <>
+   20 			fdopen: <>
+   21 			calloc: <>
+   22 			asprintf: <>
+   23 			popen: <>
+   24 			free: <>
+   25 			fread: <>
+   26 			pclose: <>
+   27 			sscanf: <>
+   28 			fseek: <>
+   29 			fgetc: <>
+   30 			assert: <>
+   31 			fputc: <>
+   32 			fclose: <>
+   33 		stat: <>
+   34 		S_ISREG: <>
+   35 		freopen: <>
+   36 		strlen: <>
+   37 		get_srcdir: void (), <./main.c 256>
+   38 			realpath: <>
+   39 			err: <>
+   40 			getenv: <>
+   41 			strdup: <>
+   42 			strrchr: <>
+   43 			free: <>
+   44 			stat: <>
+   45 			strlcpy: <>
+   46 		strlcat: <>
+   47 		STAILQ_INIT: <>
+   48 		yyparse: <>
+   49 		SLIST_EMPTY: <>
+   50 		checkversion: void (), <./main.c 759>
+   51 			open_makefile_template: FILE * (), <./mkmakefile.c 107>
+   52 				snprintf: <>
+   53 				fopen: <>
+   54 				err: <>
+   55 			fgets: <>
+   56 			strncmp: <>
+   57 			atoi: <>
+   58 			MAJOR_VERS: <>
+   59 			badversion: void (), <./main.c 743>
+   60 				fprintf: <>
+   61 				exit: <>
+   62 			fclose: <>
+   63 		path: char * (), <./main.c 416>
+   64 			asprintf: <>
+   65 			strdup: <>
+   66 		mkdir: <>
+   67 		S_ISDIR: <>
+   68 		configfile: void (), <./main.c 511>
+   69 			cfgfile_add: <>
+   70 			path: 63
+   71 			fopen: <>
+   72 			err: <>
+   73 			sbuf_new: <>
+   74 			assert: <>
+   75 			sbuf_clear: <>
+   76 			configfile_filebased: void (), <./main.c 481>
+   77 				STAILQ_FOREACH: <>
+   78 				fopen: <>
+   79 				warn: <>
+   80 				getc: <>
+   81 				sbuf_printf: <>
+   82 				sbuf_putc: <>
+   83 				fclose: <>
+   84 			configfile_dynamic: void (), <./main.c 432>
+   85 				asprintf: <>
+   86 				assert: <>
+   87 				sbuf_printf: <>
+   88 				SLIST_FOREACH: <>
+   89 				strncmp: <>
+   90 				sbuf_putc: <>
+   91 				strlen: <>
+   92 				STAILQ_FOREACH: <>
+   93 				free: <>
+   94 			sbuf_finish: <>
+   95 			strstr: <>
+   96 			errx: <>
+   97 			fprintf: <>
+   98 			sbuf_data: <>
+   99 			strlen: <>
+  100 			sbuf_delete: <>
+  101 			fclose: <>
+  102 			moveifchanged: void (), <./main.c 557>
+  103 				open: <>
+  104 				err: <>
+  105 				fstat: <>
+  106 				mmap: <>
+  107 				memcmp: <>
+  108 				munmap: <>
+  109 				rename: <>
+  110 				unlink: <>
+  111 			cfgfile_removeall: <>
+  112 		options: void (), <./mkoptions.c 63>
+  113 			SLIST_FOREACH: <>
+  114 			calloc: <>
+  115 			err: <>
+  116 			ns: <>
+  117 			SLIST_INSERT_HEAD: <>
+  118 			fprintf: <>
+  119 			snprintf: <>
+  120 			read_options: void (), <./mkoptions.c 409>
+  121 				SLIST_INIT: <>
+  122 				read_option_file: int (), <./mkoptions.c 362>
+  123 					fopen: <>
+  124 					get_word: char * (), <./main.c 298>
+  125 						getc: <>
+  126 						isspace: <>
+  127 						ungetc: <>
+  128 					ns: <>
+  129 					fprintf: <>
+  130 					exit: <>
+  131 					snprintf: <>
+  132 					lower: char * (), <./mkoptions.c 425>
+  133 						isupper: <>
+  134 						tolower: <>
+  135 					free: <>
+  136 					insert_option: void (), <./mkoptions.c 327>
+  137 						check_duplicate: void (), <./mkoptions.c 313>
+  138 							SLIST_FOREACH: <>
+  139 							eq: <>
+  140 							fprintf: <>
+  141 							exit: <>
+  142 						calloc: <>
+  143 						err: <>
+  144 						SLIST_INSERT_HEAD: <>
+  145 					update_option: void (), <./mkoptions.c 342>
+  146 						SLIST_FOREACH: <>
+  147 						eq: <>
+  148 						free: <>
+  149 					fclose: <>
+  150 				snprintf: <>
+  151 			strcasecmp: <>
+  152 			eq: <>
+  153 			do_option: void (), <./mkoptions.c 140>
+  154 				tooption: char * (), <./mkoptions.c 291>
+  155 					strlcpy: <>
+  156 					SLIST_FOREACH: <>
+  157 					eq: <>
+  158 					path: 63
+  159 				SLIST_FOREACH: <>
+  160 				eq: <>
+  161 				ns: <>
+  162 				fprintf: <>
+  163 				remember: void (), <./main.c 651>
+  164 					strrchr: <>
+  165 					ns: <>
+  166 					strchr: <>
+  167 					strncmp: <>
+  168 					free: <>
+  169 					eq: <>
+  170 					calloc: <>
+  171 					err: <>
+  172 				fopen: <>
+  173 				err: <>
+  174 				fclose: <>
+  175 				SLIST_INIT: <>
+  176 				get_word: 124
+  177 				calloc: <>
+  178 				SLIST_INSERT_HEAD: <>
+  179 				SLIST_EMPTY: <>
+  180 				SLIST_FIRST: <>
+  181 				SLIST_REMOVE_HEAD: <>
+  182 				free: <>
+  183 			strncmp: <>
+  184 			exit: <>
+  185 		makefile: void (), <./mkmakefile.c 127>
+  186 			read_files: void (), <./mkmakefile.c 521>
+  187 				snprintf: <>
+  188 				read_file: void (), <./mkmakefile.c 303>
+  189 					fopen: <>
+  190 					err: <>
+  191 					get_word: 124
+  192 					fclose: <>
+  193 					eq: <>
+  194 					get_quoted_word: char * (), <./main.c 348>
+  195 						getc: <>
+  196 						printf: <>
+  197 						exit: <>
+  198 						isspace: <>
+  199 						ungetc: <>
+  200 					errout: void (), <./mkmakefile.c 63>
+  201 						va_start: <>
+  202 						vfprintf: <>
+  203 						va_end: <>
+  204 						exit: <>
+  205 					snprintf: <>
+  206 					read_file: 188
+  207 					ns: <>
+  208 					fl_lookup: struct file_list (), <./mkmakefile.c 77>
+  209 					STAILQ_FOREACH: <>
+  210 					SLIST_FOREACH: <>
+  211 					opteq: int (), <./mkmakefile.c 540>
+  212 						isupper: <>
+  213 						tolower: <>
+  214 					new_fent: struct file_list (), <./mkmakefile.c 92>
+  215 				STAILQ_FIRST: <>
+  216 				STAILQ_NEXT: <>
+  217 				free: <>
+  218 			open_makefile_template: 51
+  219 			fopen: <>
+  220 			path: 63
+  221 			err: <>
+  222 			fprintf: <>
+  223 			SLIST_FOREACH_SAFE: <>
+  224 			SLIST_NEXT: <>
+  225 			fgets: <>
+  226 			eq: <>
+  227 			do_before_depend: void (), <./mkmakefile.c 557>
+  228 				fputs: <>
+  229 				STAILQ_FOREACH: <>
+  230 				strlen: <>
+  231 				fprintf: <>
+  232 				putc: <>
+  233 			do_objs: void (), <./mkmakefile.c 582>
+  234 				fprintf: <>
+  235 				STAILQ_FOREACH: <>
+  236 				tail: char * (), <./mkmakefile.c 651>
+  237 					strrchr: <>
+  238 				strlen: <>
+  239 				putc: <>
+  240 			strncmp: <>
+  241 			do_xxfiles: void (), <./mkmakefile.c 611>
+  242 				strlen: <>
+  243 				ns: <>
+  244 				raisestr: char * (), <./mkmakefile.c 769>
+  245 					islower: <>
+  246 					toupper: <>
+  247 				fprintf: <>
+  248 				free: <>
+  249 				STAILQ_FOREACH: <>
+  250 				strcasecmp: <>
+  251 				fputs: <>
+  252 				putc: <>
+  253 			do_rules: void (), <./mkmakefile.c 666>
+  254 				STAILQ_FOREACH: <>
+  255 				fprintf: <>
+  256 				strlen: <>
+  257 				tail: 236
+  258 				snprintf: <>
+  259 				toupper: <>
+  260 			do_clean: void (), <./mkmakefile.c 747>
+  261 				fputs: <>
+  262 				STAILQ_FOREACH: <>
+  263 				strlen: <>
+  264 				fprintf: <>
+  265 				putc: <>
+  266 			fclose: <>
+  267 			moveifchanged: 102
+  268 		makeenv: void (), <./mkmakefile.c 243>
+  269 			fopen: <>
+  270 			err: <>
+  271 			path: 63
+  272 			fprintf: <>
+  273 			fgets: <>
+  274 			strrchr: <>
+  275 			strchr: <>
+  276 			fclose: <>
+  277 			moveifchanged: 102
+  278 		makehints: void (), <./mkmakefile.c 184>
+  279 			fopen: <>
+  280 			path: 63
+  281 			err: <>
+  282 			fprintf: <>
+  283 			STAILQ_FOREACH: <>
+  284 			fgets: <>
+  285 			strrchr: <>
+  286 			strchr: <>
+  287 			fclose: <>
+  288 			moveifchanged: 102
+  289 		headers: void (), <./mkheaders.c 51>
+  290 			STAILQ_FOREACH: <>
+  291 			warnx: <>
+  292 			errx: <>
+  293 		cleanheaders: void (), <./main.c 606>
+  294 			remember: 163
+  295 			STAILQ_FOREACH: <>
+  296 			opendir: <>
+  297 			err: <>
+  298 			readdir: <>
+  299 			strlen: <>
+  300 			strchr: <>
+  301 			strncmp: <>
+  302 			eq: <>
+  303 			printf: <>
+  304 			unlink: <>
+  305 			path: 63
+  306 			warn: <>
+  307 			closedir: <>

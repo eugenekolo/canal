@@ -1,0 +1,167 @@
+    1 	main: int (), <./uhsoctl.c 1357>
+    2 		TAILQ_INIT: <>
+    3 		getopt: <>
+    4 		strtol: <>
+    5 		warnx: <>
+    6 		usage: void (), <./uhsoctl.c 1343>
+    7 			printf: <>
+    8 		exit: <>
+    9 		errx: <>
+   10 		strdup: <>
+   11 		printf: <>
+   12 		send_disconnect: void (), <./uhsoctl.c 1316>
+   13 			snprintf: <>
+   14 			fopen: <>
+   15 			warn: <>
+   16 			fscanf: <>
+   17 			fclose: <>
+   18 			warnx: <>
+   19 			fprintf: <>
+   20 			kill: <>
+   21 		signal: <>
+   22 		sig_handle: void (), <./uhsoctl.c 317>
+   23 			tmr_run: void (), <./uhsoctl.c 198>
+   24 				TAILQ_FIRST: <>
+   25 				TAILQ_NEXT: <>
+   26 				TAILQ_REMOVE: <>
+   27 				free: <>
+   28 		setitimer: <>
+   29 		tmr_add: void (), <./uhsoctl.c 220>
+   30 			malloc: <>
+   31 			memset: <>
+   32 			TAILQ_FIRST: <>
+   33 			TAILQ_EMPTY: <>
+   34 			TAILQ_INSERT_HEAD: <>
+   35 			TAILQ_NEXT: <>
+   36 			TAILQ_INSERT_AFTER: <>
+   37 		tmr_watchdog: void (), <./uhsoctl.c 293>
+   38 			tmr_add: 29
+   39 			tmr_watchdog: 37
+   40 			clock_gettime: <>
+   41 			fprintf: <>
+   42 			getpid: <>
+   43 			kill: <>
+   44 		watchdog_reset: void (), <./uhsoctl.c 255>
+   45 			clock_gettime: <>
+   46 			watchdog_enable: <>
+   47 		do_connect: int (), <./uhsoctl.c 1132>
+   48 			fprintf: <>
+   49 			open: <>
+   50 			tcgetattr: <>
+   51 			tcsetattr: <>
+   52 			at_cmd: int (), <./uhsoctl.c 577>
+   53 				va_start: <>
+   54 				vsnprintf: <>
+   55 				va_end: <>
+   56 				fprintf: <>
+   57 				strlen: <>
+   58 				write: <>
+   59 				bzero: <>
+   60 				FD_ZERO: <>
+   61 				watchdog_reset: 44
+   62 				FD_SET: <>
+   63 				select: <>
+   64 				watchdog_disable: <>
+   65 				readline: int (), <./uhsoctl.c 554>
+   66 					read: <>
+   67 				strcmp: <>
+   68 				strchr: <>
+   69 				strncasecmp: <>
+   70 				strncmp: <>
+   71 				strstr: <>
+   72 			warnx: <>
+   73 			saveresp: void (), <./uhsoctl.c 686>
+   74 				fprintf: <>
+   75 				realloc: <>
+   76 				strdup: <>
+   77 			strstr: <>
+   78 			errx: <>
+   79 			freeresp: void (), <./uhsoctl.c 706>
+   80 				free: <>
+   81 			sscanf: <>
+   82 			free: <>
+   83 			strdup: <>
+   84 			strcmp: <>
+   85 			at_cmd_async: int (), <./uhsoctl.c 668>
+   86 				va_start: <>
+   87 				vsnprintf: <>
+   88 				va_end: <>
+   89 				fprintf: <>
+   90 				strlen: <>
+   91 				write: <>
+   92 			tmr_add: 29
+   93 			tmr_status: void (), <./uhsoctl.c 284>
+   94 				at_cmd_async: 85
+   95 				watchdog_reset: 44
+   96 		get_tty: char ** (), <./uhsoctl.c 1020>
+   97 			snprintf: <>
+   98 			sysctlbyname: <>
+   99 			fprintf: <>
+  100 			strcasecmp: <>
+  101 			strstr: <>
+  102 			sscanf: <>
+  103 			memset: <>
+  104 			realloc: <>
+  105 			malloc: <>
+  106 			strlen: <>
+  107 			sprintf: <>
+  108 		fprintf: <>
+  109 		daemonize: void (), <./uhsoctl.c 1287>
+  110 			snprintf: <>
+  111 			pidfile_open: <>
+  112 			warn: <>
+  113 			daemon: <>
+  114 			pidfile_remove: <>
+  115 			pidfile_write: <>
+  116 			getprogname: <>
+  117 			openlog: <>
+  118 		FD_ZERO: <>
+  119 		FD_SET: <>
+  120 		watchdog_disable: <>
+  121 		select: <>
+  122 		do_disconnect: void (), <./uhsoctl.c 1258>
+  123 			at_cmd: 52
+  124 			close: <>
+  125 			memset: <>
+  126 			memcpy: <>
+  127 			ifaddr_del: int (), <./uhsoctl.c 430>
+  128 				ifaddr_ad: int (), <./uhsoctl.c 361>
+  129 					socket: <>
+  130 					memset: <>
+  131 					strlcpy: <>
+  132 					memcpy: <>
+  133 					ioctl: <>
+  134 					close: <>
+  135 				warn: <>
+  136 			if_ifdown: <>
+  137 			set_nameservers: int (), <./uhsoctl.c 441>
+  138 				free: <>
+  139 				open: <>
+  140 				ftruncate: <>
+  141 				lseek: <>
+  142 				write: <>
+  143 				close: <>
+  144 				malloc: <>
+  145 				va_start: <>
+  146 				va_arg: <>
+  147 				strdup: <>
+  148 				va_end: <>
+  149 				fstat: <>
+  150 				read: <>
+  151 				fdopen: <>
+  152 				readline_buf: int (), <./uhsoctl.c 535>
+  153 				strncasecmp: <>
+  154 				fprintf: <>
+  155 				fclose: <>
+  156 		FD_ISSET: <>
+  157 		at_async: int (), <./uhsoctl.c 985>
+  158 			watchdog_reset: 44
+  159 			bzero: <>
+  160 			readline: 65
+  161 			fprintf: <>
+  162 			strlen: <>
+  163 			strncmp: <>
+  164 			func: <>
+  165 		fflush: <>
+  166 		pidfile_remove: <>
+  167 		closelog: <>

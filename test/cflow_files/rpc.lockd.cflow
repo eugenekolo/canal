@@ -1,0 +1,171 @@
+    1 	main: int (), <./test.c 308>
+    2 		getopt: <>
+    3 		atoi: <>
+    4 		usage: void (), <./lockd.c 962>
+    5 			errx: <>
+    6 		realloc: <>
+    7 		free: <>
+    8 		out_of_mem: void (), <./lockd.c 1021>
+    9 			syslog: <>
+   10 			exit: <>
+   11 		strdup: <>
+   12 		strtoul: <>
+   13 		geteuid: <>
+   14 		fprintf: <>
+   15 		exit: <>
+   16 		modfind: <>
+   17 		kldload: <>
+   18 		getosreldate: <>
+   19 		rpcb_unset: <>
+   20 		socket: <>
+   21 		close: <>
+   22 		rpc_control: <>
+   23 		malloc: <>
+   24 		memset: <>
+   25 		unlink: <>
+   26 		strcpy: <>
+   27 		SUN_LEN: <>
+   28 		err: <>
+   29 		umask: <>
+   30 		bind: <>
+   31 		listen: <>
+   32 		svc_vc_create: <>
+   33 		svc_reg: <>
+   34 		setnetconfig: <>
+   35 		getnetconfig: <>
+   36 		strcmp: <>
+   37 		lookup_addresses: void (), <./lockd.c 812>
+   38 			syslog: <>
+   39 			memset: <>
+   40 			inet_pton: <>
+   41 			strcmp: <>
+   42 			malloc: <>
+   43 			out_of_mem: 8
+   44 			htons: <>
+   45 			htonl: <>
+   46 			getaddrinfo: <>
+   47 			gai_strerror: <>
+   48 			taddr2uaddr: <>
+   49 			realloc: <>
+   50 			strdup: <>
+   51 		endnetconfig: <>
+   52 		create_service: int (), <./lockd.c 492>
+   53 			syslog: <>
+   54 			memset: <>
+   55 			realloc: <>
+   56 			out_of_mem: 8
+   57 			inet_pton: <>
+   58 			close: <>
+   59 			strcmp: <>
+   60 			malloc: <>
+   61 			htons: <>
+   62 			htonl: <>
+   63 			exit: <>
+   64 			getaddrinfo: <>
+   65 			gai_strerror: <>
+   66 			bindresvport_sa: <>
+   67 			free: <>
+   68 			freeaddrinfo: <>
+   69 			getnameinfo: <>
+   70 			errx: <>
+   71 		clearout_service: void (), <./lockd.c 796>
+   72 			shutdown: <>
+   73 			close: <>
+   74 		syslog: <>
+   75 		complete_service: void (), <./lockd.c 691>
+   76 			syslog: <>
+   77 			listen: <>
+   78 			svc_tli_create: <>
+   79 			svc_reg: <>
+   80 			memset: <>
+   81 			getaddrinfo: <>
+   82 			gai_strerror: <>
+   83 			exit: <>
+   84 			malloc: <>
+   85 			memcpy: <>
+   86 			rpcb_set: <>
+   87 			freeaddrinfo: <>
+   88 		daemon: <>
+   89 		openlog: <>
+   90 		sigalarm_handler: void (), <./lockd.c 955>
+   91 		sigemptyset: <>
+   92 		sigaction: <>
+   93 		strerror: <>
+   94 		init_nsm: void (), <./lockd.c 973>
+   95 			memset: <>
+   96 			callrpc: <>
+   97 			syslog: <>
+   98 			clnt_sperrno: <>
+   99 			sleep: <>
+  100 			exit: <>
+  101 		client_request: pid_t (), <./kern.c 123>
+  102 			open: <>
+  103 			syslog: <>
+  104 			err: <>
+  105 			signal: <>
+  106 			fork: <>
+  107 			setproctitle: <>
+  108 			client_cleanup: void (), <./kern.c 111>
+  109 				lockd_seteuid: <>
+  110 				exit: <>
+  111 			time: <>
+  112 			getpid: <>
+  113 			gethostname: <>
+  114 			getpwnam: <>
+  115 			lockd_seteuid: <>
+  116 			read: <>
+  117 			show: void (), <./kern.c 570>
+  118 				syslog: <>
+  119 			test_request: int (), <./kern.c 255>
+  120 				syslog: <>
+  121 				from_addr: const char * (), <./kern.c 100>
+  122 					getnameinfo: <>
+  123 				get_client: CLIENT * (), <./lock_proc.c 188>
+  124 					gettimeofday: <>
+  125 					syslog: <>
+  126 					clnt_destroy: <>
+  127 					addrcmp: int (), <./lock_proc.c 161>
+  128 						memcmp: <>
+  129 					getnameinfo: <>
+  130 					gai_strerror: <>
+  131 					getnetconfigent: <>
+  132 					clnt_tp_create: <>
+  133 					freenetconfigent: <>
+  134 					clnt_spcreateerror: <>
+  135 					clnt_control: <>
+  136 					geteuid: <>
+  137 					seteuid: <>
+  138 					bindresvport: <>
+  139 					memcpy: <>
+  140 				set_auth: void (), <./kern.c 233>
+  141 					authunix_create: <>
+  142 				clnt_call: <>
+  143 			lock_request: int (), <./kern.c 324>
+  144 				syslog: <>
+  145 				from_addr: 121
+  146 				get_client: 123
+  147 				set_auth: 140
+  148 				clnt_call: <>
+  149 			unlock_request: int (), <./kern.c 397>
+  150 				syslog: <>
+  151 				from_addr: 121
+  152 				get_client: 123
+  153 				set_auth: 140
+  154 				clnt_call: <>
+  155 			nfslockdans: int (), <./kern.c 84>
+  156 				write: <>
+  157 		fork: <>
+  158 		nlm_syscall: <>
+  159 		svc_run: <>
+  160 		alarm: <>
+  161 		printf: <>
+  162 		clnt_create: <>
+  163 		errx: <>
+  164 		clnt_control: <>
+  165 		nlm_lock_res_1: void * (), <./test.c 189>
+  166 			bzero: <>
+  167 			clnt_call: <>
+  168 		nlm_lock_msg_1: void * (), <./test.c 113>
+  169 			bzero: <>
+  170 			clnt_call: <>
+  171 			clnt_perror: <>

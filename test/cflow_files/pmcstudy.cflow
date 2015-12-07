@@ -1,0 +1,131 @@
+    1 	main: int (), <./eval_expr.c 704>
+    2 		get_cpuid_set: void (), <./pmcstudy.c 1871>
+    3 			cpuid: <>
+    4 			printf: <>
+    5 			exit: <>
+    6 			set_sandybridge: void (), <./pmcstudy.c 1533>
+    7 				strcpy: <>
+    8 				explain_name_sb: void (), <./pmcstudy.c 207>
+    9 					strcmp: <>
+   10 					printf: <>
+   11 			set_ivybridge: void (), <./pmcstudy.c 1542>
+   12 				strcpy: <>
+   13 				explain_name_ib: void (), <./pmcstudy.c 286>
+   14 					strcmp: <>
+   15 					printf: <>
+   16 			set_haswell: void (), <./pmcstudy.c 1552>
+   17 				strcpy: <>
+   18 				explain_name_has: void (), <./pmcstudy.c 369>
+   19 					strcmp: <>
+   20 					printf: <>
+   21 			my_popen: FILE * (), <./pmcstudy.c 65>
+   22 				strcmp: <>
+   23 				pipe: <>
+   24 				close: <>
+   25 				strcpy: <>
+   26 				fork: <>
+   27 				dup: <>
+   28 				execve: <>
+   29 				exit: <>
+   30 				fdopen: <>
+   31 			malloc: <>
+   32 			memset: <>
+   33 			fgets: <>
+   34 			strlen: <>
+   35 			strcpy: <>
+   36 			memcpy: <>
+   37 			free: <>
+   38 			my_pclose: void (), <./pmcstudy.c 149>
+   39 				fclose: <>
+   40 				kill: <>
+   41 				wait4: <>
+   42 		memset: <>
+   43 		getopt: <>
+   44 		list_all: void (), <./pmcstudy.c 2303>
+   45 			printf: <>
+   46 		printf: <>
+   47 		explain_all: void (), <./pmcstudy.c 2071>
+   48 			printf: <>
+   49 		parse_expression: struct expression (), <./eval_expr.c 427>
+   50 		set_manual_exp: void (), <./pmcstudy.c 2283>
+   51 			user_expr: int (), <./pmcstudy.c 2253>
+   52 				find_counter: struct counters (), <./pmcstudy.c 448>
+   53 				printf: <>
+   54 				exit: <>
+   55 				run_expr: double (), <./eval_expr.c 572>
+   56 					gather_exp_to_paren_close: struct expression (), <./eval_expr.c 548>
+   57 					printf: <>
+   58 					exit: <>
+   59 			build_command_for_exp: char * (), <./pmcstudy.c 2185>
+   60 				printf: <>
+   61 				exit: <>
+   62 				malloc: <>
+   63 				memset: <>
+   64 				add_it_to: int (), <./pmcstudy.c 2157>
+   65 					strcmp: <>
+   66 					printf: <>
+   67 					exit: <>
+   68 					strlen: <>
+   69 					malloc: <>
+   70 					memset: <>
+   71 					strcpy: <>
+   72 				strlen: <>
+   73 				strcpy: <>
+   74 				sprintf: <>
+   75 				strcat: <>
+   76 				free: <>
+   77 		validate_expression: int (), <./pmcstudy.c 1585>
+   78 			strcmp: <>
+   79 		set_expression: void (), <./pmcstudy.c 1561>
+   80 			strcmp: <>
+   81 			printf: <>
+   82 			exit: <>
+   83 		strtol: <>
+   84 		run_tests: void (), <./pmcstudy.c 2291>
+   85 			printf: <>
+   86 			fflush: <>
+   87 			test_for_a_pmc: void (), <./pmcstudy.c 2084>
+   88 				printf: <>
+   89 				sprintf: <>
+   90 				my_popen: 21
+   91 				fgets: <>
+   92 				strlen: <>
+   93 				strncmp: <>
+   94 				my_pclose: 38
+   95 		print_exp: void (), <./eval_expr.c 172>
+   96 			printf: <>
+   97 			print_exp: 95
+   98 		process_file: void (), <./pmcstudy.c 1790>
+   99 			my_popen: 21
+  100 			printf: <>
+  101 			fopen: <>
+  102 			build_counters_from_header: void (), <./pmcstudy.c 1642>
+  103 				fgets: <>
+  104 				printf: <>
+  105 				strlen: <>
+  106 				strncmp: <>
+  107 				malloc: <>
+  108 				memset: <>
+  109 				process_header: void (), <./pmcstudy.c 1611>
+  110 					strncmp: <>
+  111 					printf: <>
+  112 					strtol: <>
+  113 					strlen: <>
+  114 					strcpy: <>
+  115 					strncpy: <>
+  116 			fclose: <>
+  117 			my_pclose: 38
+  118 			lace_cpus_together: void (), <./pmcstudy.c 1751>
+  119 				printf: <>
+  120 			print_header: void (), <./pmcstudy.c 1725>
+  121 				printf: <>
+  122 			read_a_line: int (), <./pmcstudy.c 1702>
+  123 				fgets: <>
+  124 				strtol: <>
+  125 			do_expression: void (), <./pmcstudy.c 1603>
+  126 		do_expression: 125
+  127 		calc_expr: double (), <./eval_expr.c 673>
+  128 			random: <>
+  129 			print_exp: 95
+  130 			run_expr: 55
+  131 			printf: <>

@@ -1,0 +1,36 @@
+    1 	main: int (), <./gpioctl.c 178>
+    2 		getopt: <>
+    3 		str2int: int (), <./gpioctl.c 106>
+    4 			strtod: <>
+    5 			strlen: <>
+    6 		fail: void (), <./gpioctl.c 167>
+    7 			va_start: <>
+    8 			vfprintf: <>
+    9 			va_end: <>
+   10 			exit: <>
+   11 		usage: void (), <./gpioctl.c 65>
+   12 			fprintf: <>
+   13 			exit: <>
+   14 		gpio_open: <>
+   15 		gpio_open_device: <>
+   16 		perror: <>
+   17 		exit: <>
+   18 		gpio_pin_set_name: <>
+   19 		dump_pins: void (), <./gpioctl.c 137>
+   20 			gpio_pin_list: <>
+   21 			perror: <>
+   22 			exit: <>
+   23 			gpio_pin_get: <>
+   24 			printf: <>
+   25 			print_caps: void (), <./gpioctl.c 119>
+   26 				printf: <>
+   27 				cap2str: const char * (), <./gpioctl.c 77>
+   28 			free: <>
+   29 		gpio_close: <>
+   30 		gpio_pin_toggle: <>
+   31 		str2cap: int (), <./gpioctl.c 90>
+   32 			strcasecmp: <>
+   33 		gpio_pin_set_flags: <>
+   34 		gpio_pin_get: <>
+   35 		printf: <>
+   36 		gpio_pin_set: <>

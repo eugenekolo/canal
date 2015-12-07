@@ -1,0 +1,438 @@
+    1 	main: int (), <./ypldap.c 498>
+    2 		log_init: void (), <./log.c 44>
+    3 			openlog: <>
+    4 			tzset: <>
+    5 		getopt: <>
+    6 		cmdline_symset: <>
+    7 		log_warnx: void (), <./log.c 111>
+    8 			va_start: <>
+    9 			vlog: void (), <./log.c 67>
+   10 				asprintf: <>
+   11 				vfprintf: <>
+   12 				fprintf: <>
+   13 				free: <>
+   14 				fflush: <>
+   15 				vsyslog: <>
+   16 			va_end: <>
+   17 		usage: void (), <./ypldap.c 64>
+   18 			fprintf: <>
+   19 			exit: <>
+   20 		RB_INIT: <>
+   21 		parse_config: <>
+   22 		exit: <>
+   23 		fprintf: <>
+   24 		geteuid: <>
+   25 		errx: <>
+   26 		daemon: <>
+   27 		err: <>
+   28 		log_info: void (), <./log.c 121>
+   29 			va_start: <>
+   30 			vlog: 9
+   31 			va_end: <>
+   32 		socketpair: <>
+   33 		fatal: void (), <./log.c 143>
+   34 			logit: void (), <./log.c 57>
+   35 				va_start: <>
+   36 				vlog: 9
+   37 				va_end: <>
+   38 			strerror: <>
+   39 			exit: <>
+   40 		ldapclient: pid_t (), <./ldapclient.c 358>
+   41 			fork: <>
+   42 			fatal: 33
+   43 			bzero: <>
+   44 			TAILQ_INIT: <>
+   45 			getpwnam: <>
+   46 			socketpair: <>
+   47 			ypldap_dns: pid_t (), <./ypldap_dns.c 74>
+   48 				fork: <>
+   49 				fatal: 33
+   50 				setproctitle: <>
+   51 				close: <>
+   52 				setgroups: <>
+   53 				setresgid: <>
+   54 				setresuid: <>
+   55 				endservent: <>
+   56 				event_init: <>
+   57 				signal_set: <>
+   58 				dns_sig_handler: void (), <./ypldap_dns.c 54>
+   59 					dns_shutdown: void (), <./ypldap_dns.c 67>
+   60 						log_info: 28
+   61 					fatalx: void (), <./log.c 158>
+   62 						fatal: 33
+   63 				signal_add: <>
+   64 				calloc: <>
+   65 				imsg_init: <>
+   66 				dns_dispatch_imsg: void (), <./ypldap_dns.c 127>
+   67 					fatalx: 61
+   68 					imsg_read: <>
+   69 					fatal: 33
+   70 					msgbuf_write: <>
+   71 					imsg_get: <>
+   72 					strlen: <>
+   73 					host_dns: int (), <./ypldap_dns.c 207>
+   74 						bzero: <>
+   75 						getaddrinfo: <>
+   76 						log_warnx: 7
+   77 						gai_strerror: <>
+   78 						calloc: <>
+   79 						fatal: 33
+   80 						memcpy: <>
+   81 						freeaddrinfo: <>
+   82 					imsg_create: <>
+   83 					imsg_add: <>
+   84 					free: <>
+   85 					imsg_close: <>
+   86 					imsg_free: <>
+   87 					imsg_event_add: void (), <./ypldap.c 625>
+   88 						imsg_flush: <>
+   89 						event_del: <>
+   90 						event_set: <>
+   91 						event_add: <>
+   92 					event_del: <>
+   93 					event_loopexit: <>
+   94 				event_set: <>
+   95 				event_add: <>
+   96 				event_dispatch: <>
+   97 				dns_shutdown: 59
+   98 			close: <>
+   99 			chroot: <>
+  100 			chdir: <>
+  101 			setproctitle: <>
+  102 			setgroups: <>
+  103 			setresgid: <>
+  104 			setresuid: <>
+  105 			event_init: <>
+  106 			signal: <>
+  107 			signal_set: <>
+  108 			client_sig_handler: void (), <./ldapclient.c 144>
+  109 				client_shutdown: void (), <./ldapclient.c 351>
+  110 					log_info: 28
+  111 				fatalx: 61
+  112 			signal_add: <>
+  113 			calloc: <>
+  114 			imsg_init: <>
+  115 			client_dispatch_parent: void (), <./ldapclient.c 265>
+  116 				fatalx: 61
+  117 				imsg_read: <>
+  118 				fatal: 33
+  119 				msgbuf_write: <>
+  120 				imsg_get: <>
+  121 				log_warnx: 7
+  122 				memcpy: <>
+  123 				log_debug: void (), <./log.c 131>
+  124 					va_start: <>
+  125 					vlog: 9
+  126 					va_end: <>
+  127 				purge_config: void (), <./ypldap.c 487>
+  128 					TAILQ_FIRST: <>
+  129 					TAILQ_REMOVE: <>
+  130 					free: <>
+  131 				calloc: <>
+  132 				TAILQ_INSERT_TAIL: <>
+  133 				client_configure: void (), <./ldapclient.c 684>
+  134 					log_debug: 123
+  135 					imsg_compose_event: int (), <./ypldap.c 642>
+  136 						imsg_compose: <>
+  137 						imsg_event_add: 87
+  138 					TAILQ_FOREACH: <>
+  139 					strlen: <>
+  140 					evtimer_set: <>
+  141 					client_periodic_update: void (), <./ldapclient.c 657>
+  142 						TAILQ_FOREACH: <>
+  143 						client_addr_free: int (), <./ldapclient.c 126>
+  144 							free: <>
+  145 						log_debug: 123
+  146 						imsg_compose_event: 135
+  147 						client_configure: 133
+  148 					evtimer_add: <>
+  149 				imsg_free: <>
+  150 				imsg_event_add: 87
+  151 				event_del: <>
+  152 				event_loopexit: <>
+  153 			event_set: <>
+  154 			event_add: <>
+  155 			client_dispatch_dns: void (), <./ldapclient.c 157>
+  156 				fatalx: 61
+  157 				imsg_read: <>
+  158 				fatal: 33
+  159 				msgbuf_write: <>
+  160 				imsg_get: <>
+  161 				TAILQ_FOREACH: <>
+  162 				log_warnx: 7
+  163 				calloc: <>
+  164 				memcpy: <>
+  165 				client_addr_init: int (), <./ldapclient.c 96>
+  166 					ntohs: <>
+  167 					htons: <>
+  168 					fatalx: 61
+  169 				imsg_free: <>
+  170 				client_try_idm: int (), <./ldapclient.c 582>
+  171 					client_aldap_open: struct aldap (), <./ldapclient.c 66>
+  172 					aldap_bind: int (), <./aldap.c 82>
+  173 						ber_add_sequence: struct ber_element (), <./ber.c 132>
+  174 						ber_printf_elements: struct ber_element (), <./ber.c 525>
+  175 						LDAP_DEBUG: <>
+  176 						ber_write_elements: int (), <./ber.c 764>
+  177 							ber_calc_len: size_t (), <./ber.c 846>
+  178 								ber_calc_len: 177
+  179 							DPRINTF: <>
+  180 							free: <>
+  181 							malloc: <>
+  182 							ber_dump_element: int (), <./ber.c 881>
+  183 								ber_dump_header: void (), <./ber.c 921>
+  184 									ber_putc: void (), <./ber.c 969>
+  185 								ber_putc: void (), <./ber.c 969>
+  186 								ber_write: void (), <./ber.c 977>
+  187 									bcopy: <>
+  188 								ber_dump_element: 182
+  189 							write: <>
+  190 						ber_free_elements: void (), <./ber.c 831>
+  191 							ber_free_elements: 190
+  192 							free: <>
+  193 					aldap_parse: struct aldap_message (), <./aldap.c 250>
+  194 					aldap_freemsg: void (), <./aldap.c 362>
+  195 						ber_free_elements: 190
+  196 						free: <>
+  197 					bzero: <>
+  198 					F_FIXED_ATTR: <>
+  199 					log_debug: 123
+  200 					client_search_idm: int (), <./ldapclient.c 516>
+  201 						aldap_search: int (), <./aldap.c 150>
+  202 							ber_add_sequence: struct ber_element (), <./ber.c 132>
+  203 							ber_printf_elements: struct ber_element (), <./ber.c 525>
+  204 							ldap_parse_search_filter: struct ber_element (), <./aldap.c 736>
+  205 							ber_add_string: struct ber_element (), <./ber.c 263>
+  206 							aldap_create_page_control: int (), <./aldap.c 211>
+  207 								ber_add_sequence: struct ber_element (), <./ber.c 132>
+  208 								ber_printf_elements: struct ber_element (), <./ber.c 525>
+  209 								ber_write_elements: 176
+  210 								ber_free_elements: 190
+  211 								ber_free: void (), <./ber.c 1220>
+  212 									free: <>
+  213 							LDAP_DEBUG: <>
+  214 							ber_write_elements: 176
+  215 							ber_free_elements: 190
+  216 						aldap_get_errno: int (), <./aldap.c 1253>
+  217 						log_debug: 123
+  218 						aldap_freepage: void (), <./aldap.c 354>
+  219 							free: <>
+  220 						aldap_parse: struct aldap_message (), <./aldap.c 250>
+  221 						aldap_freemsg: 194
+  222 						client_build_req: int (), <./ldapclient.c 445>
+  223 							bzero: <>
+  224 							F_FIXED_ATTR: <>
+  225 							strlcat: <>
+  226 							strtonum: <>
+  227 							F_LIST: <>
+  228 							aldap_match_attr: int (), <./aldap.c 507>
+  229 								LDAP_DEBUG: <>
+  230 								ber_get_eoc: int (), <./ber.c 382>
+  231 								ber_scanf_elements: int (), <./ber.c 630>
+  232 									strlen: <>
+  233 									bzero: <>
+  234 									va_start: <>
+  235 									va_arg: <>
+  236 									ber_get_bitstring: int (), <./ber.c 336>
+  237 									ber_get_boolean: int (), <./ber.c 253>
+  238 									ber_get_enumerated: int (), <./ber.c 226>
+  239 									ber_get_integer: int (), <./ber.c 216>
+  240 									ber_get_oid: int (), <./ber.c 496>
+  241 										bzero: <>
+  242 									ber_get_string: int (), <./ber.c 292>
+  243 									ber_get_nstring: int (), <./ber.c 302>
+  244 									va_end: <>
+  245 								strcasecmp: <>
+  246 								aldap_get_stringset: char ** (), <./aldap.c 698>
+  247 									calloc: <>
+  248 									ber_get_string: 242
+  249 									utoa: char * (), <./aldap.c 1171>
+  250 										calloc: <>
+  251 							aldap_free_attr: int (), <./aldap.c 544>
+  252 								free: <>
+  253 						imsg_compose_event: 135
+  254 					aldap_close: int (), <./aldap.c 58>
+  255 						close: <>
+  256 						ber_free: 211
+  257 						free: <>
+  258 				imsg_compose_event: 135
+  259 				imsg_event_add: 87
+  260 				event_del: <>
+  261 				event_loopexit: <>
+  262 			event_dispatch: <>
+  263 			client_shutdown: 109
+  264 		setproctitle: <>
+  265 		event_init: <>
+  266 		signal_set: <>
+  267 		main_sig_handler: void (), <./ypldap.c 94>
+  268 			check_child: int (), <./ypldap.c 74>
+  269 				waitpid: <>
+  270 				WIFEXITED: <>
+  271 				log_warnx: 7
+  272 				WIFSIGNALED: <>
+  273 				WTERMSIG: <>
+  274 			main_shutdown: void (), <./ypldap.c 120>
+  275 			fatalx: 61
+  276 		signal_add: <>
+  277 		close: <>
+  278 		calloc: <>
+  279 		imsg_init: <>
+  280 		main_dispatch_client: void (), <./ypldap.c 350>
+  281 			fatalx: 61
+  282 			imsg_read: <>
+  283 			fatal: 33
+  284 			msgbuf_write: <>
+  285 			imsg_get: <>
+  286 			main_start_update: void (), <./ypldap.c 126>
+  287 				log_debug: 123
+  288 				calloc: <>
+  289 				fatal: 33
+  290 				RB_INIT: <>
+  291 			memcpy: <>
+  292 			calloc: <>
+  293 			strdup: <>
+  294 			strlen: <>
+  295 			strcspn: <>
+  296 			RB_INSERT: <>
+  297 			free: <>
+  298 			main_trash_update: void (), <./ypldap.c 148>
+  299 				RB_ROOT: <>
+  300 				RB_REMOVE: <>
+  301 				free: <>
+  302 			main_end_update: void (), <./ypldap.c 274>
+  303 				log_debug: 123
+  304 				main_create_user_groups: int (), <./ypldap.c 176>
+  305 					RB_FOREACH: <>
+  306 					strlen: <>
+  307 					strcspn: <>
+  308 					strtonum: <>
+  309 					log_warnx: 7
+  310 					calloc: <>
+  311 					snprintf: <>
+  312 					strsep: <>
+  313 					RB_FIND: <>
+  314 				main_trash_update: 298
+  315 				flatten_entries: void (), <./entries.c 41>
+  316 					log_debug: 123
+  317 					calloc: <>
+  318 					fatal: 33
+  319 					RB_FOREACH: <>
+  320 					strlen: <>
+  321 					memcpy: <>
+  322 					strcspn: <>
+  323 					free: <>
+  324 					strdup: <>
+  325 				RB_ROOT: <>
+  326 				RB_REMOVE: <>
+  327 				free: <>
+  328 				RB_INIT: <>
+  329 				RB_FOREACH: <>
+  330 				RB_INSERT: <>
+  331 			log_debug: 123
+  332 			imsg_free: <>
+  333 			imsg_event_add: 87
+  334 			event_del: <>
+  335 			event_loopexit: <>
+  336 		event_set: <>
+  337 		event_add: <>
+  338 		yp_init: void (), <./yp.c 109>
+  339 			calloc: <>
+  340 			fatal: 33
+  341 			TAILQ_INIT: <>
+  342 			pmap_unset: <>
+  343 			svcudp_create: <>
+  344 			svctcp_create: <>
+  345 			svc_register: <>
+  346 			yp_dispatch: void (), <./yp.c 141>
+  347 				yp_check: int (), <./yp.c 266>
+  348 					svc_getcaller: <>
+  349 				svc_sendreply: <>
+  350 				svcerr_systemerr: <>
+  351 				ypproc_domain_2_svc: bool_t * (), <./yp.c 292>
+  352 					strcmp: <>
+  353 				ypproc_domain_nonack_2_svc: bool_t * (), <./yp.c 303>
+  354 					strcmp: <>
+  355 				ypproc_match_2_svc: ypresp_val * (), <./yp.c 314>
+  356 					log_debug: 123
+  357 					yp_valid_domain: int (), <./yp.c 278>
+  358 						log_debug: 123
+  359 						strcmp: <>
+  360 					bzero: <>
+  361 					strncpy: <>
+  362 					strcmp: <>
+  363 					RB_FIND: <>
+  364 					yp_make_val: void (), <./yp.c 609>
+  365 						bzero: <>
+  366 						strlen: <>
+  367 						strlcpy: <>
+  368 						strcspn: <>
+  369 						log_debug: 123
+  370 					strtonum: <>
+  371 					strncmp: <>
+  372 					strlen: <>
+  373 					strsep: <>
+  374 				ypproc_first_2_svc: ypresp_key_val * (), <./yp.c 444>
+  375 					yp_valid_domain: 357
+  376 					strcmp: <>
+  377 					yp_make_keyval: void (), <./yp.c 628>
+  378 						bzero: <>
+  379 						strlcpy: <>
+  380 						strlen: <>
+  381 						strcspn: <>
+  382 						log_debug: 123
+  383 					log_debug: 123
+  384 				ypproc_next_2_svc: ypresp_key_val * (), <./yp.c 471>
+  385 					yp_valid_domain: 357
+  386 					strcmp: <>
+  387 					bzero: <>
+  388 					strncpy: <>
+  389 					RB_FIND: <>
+  390 					RB_INSERT: <>
+  391 					RB_NEXT: <>
+  392 					RB_REMOVE: <>
+  393 					strlen: <>
+  394 					yp_make_keyval: 377
+  395 					log_debug: 123
+  396 				svcerr_noproc: <>
+  397 				log_debug: 123
+  398 				ypproc_all_2_svc: ypresp_all * (), <./yp.c 550>
+  399 					yp_valid_domain: 357
+  400 					svcerr_auth: <>
+  401 				ypproc_master_2_svc: ypresp_master * (), <./yp.c 562>
+  402 					yp_valid_domain: 357
+  403 				ypproc_maplist_2_svc: ypresp_maplist * (), <./yp.c 574>
+  404 					yp_valid_domain: 357
+  405 				memset: <>
+  406 				svc_getargs: <>
+  407 				svcerr_decode: <>
+  408 				svc_freeargs: <>
+  409 				fatal: 33
+  410 		getpwnam: <>
+  411 		setgroups: <>
+  412 		setresgid: <>
+  413 		setresuid: <>
+  414 		bzero: <>
+  415 		evtimer_set: <>
+  416 		main_init_timer: void (), <./ypldap.c 479>
+  417 			main_configure_client: void (), <./ypldap.c 465>
+  418 				imsg_compose_event: 135
+  419 				TAILQ_FOREACH: <>
+  420 		evtimer_add: <>
+  421 		yp_enable_events: void (), <./yp.c 83>
+  422 			getdtablesize: <>
+  423 			FD_ISSET: <>
+  424 			calloc: <>
+  425 			fatal: 33
+  426 			event_set: <>
+  427 			yp_fd_event: void (), <./yp.c 101>
+  428 				svc_getreq_common: <>
+  429 				yp_disable_events: void (), <./yp.c 71>
+  430 					TAILQ_FIRST: <>
+  431 					TAILQ_REMOVE: <>
+  432 					event_del: <>
+  433 					free: <>
+  434 				yp_enable_events: 421
+  435 			event_add: <>
+  436 			TAILQ_INSERT_TAIL: <>
+  437 		event_dispatch: <>
+  438 		main_shutdown: 274
