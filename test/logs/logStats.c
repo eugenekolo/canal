@@ -15,7 +15,6 @@ int main(){
         ls_dump = fopen("/tmp/ls_dump.txt", "r");
 	char log_file[200];
 
-
         while(!feof(ls_dump) && log_file != ""){
 		fgets(log_file, 200, ls_dump);
 		log_file[strlen(log_file)-1] = '\0';
@@ -25,6 +24,9 @@ int main(){
 		strcat(sys_arg, log_file);
 		strcat(sys_arg, " | wc -l ");
 
+		char sys_echo[200] = "echo ";
+		strcat(sys_echo, log_file);
+		system(sys_echo);
 		system(sys_arg);
 	}
 	printf("yooyoyoyoyo\n");
