@@ -103,8 +103,8 @@ def find_bounds_issues(line, variable):
                 # look for user-editable files and such
     if(('=' in backHalf) and ("/bin" in backHalf)):
         #get start and end of vulnerable input
-        inputStart = backHalf.find("/bin")
-        theEnding = backHalf.split("/bin",1)[1]
+        inputStart = backHalf.find("usr/bin")
+        theEnding = backHalf.split("usr/bin",1)[1]
         inputEnd = theEnding.find("\"")
         print("error = Vulnerable input from user-accessable file in ", backHalf[inputStart:inputEnd])
         return 1 #anything will count as true here, will add more for handler function
