@@ -61,7 +61,7 @@ def main(fileName):
             badArguments = targetline.split(", ")
 
             # print("Line", item, "calls", targetword, "with ", end = "")
-            print ("\t\t","error = " + targetword + ", line = " + str(item) + ", comment = [ERROR] ", end=" ")
+            print ("\t","error = " + targetword + ", line = " + str(item) + ", comment = [ERROR] ", end=" ")
             # print(*badArguments, sep=', ')
             # ok, now we have the arguments for the badword function in targetline
             # simple vulnerability check - are we calling from argv
