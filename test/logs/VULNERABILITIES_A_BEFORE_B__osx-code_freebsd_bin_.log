@@ -1,0 +1,107 @@
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/cat.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/chflags.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/chio.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/chmod.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/cp.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/csh.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/date.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/dd.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/df.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/domainname.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/echo.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/ed.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/expr.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/freebsd-version.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/getfacl.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/hostname.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/kenv.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/kill.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/ln.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/ls.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/mkdir.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/mv.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/pax.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/pkill.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/ps.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/pwait.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/pwd.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/rcp.cflow
+	error = malloc, line = 1, comment = [ERROR] malloc happens before setuid on 18!
+	error = malloc, line = 1, comment = [ERROR] malloc happens before setuid on 104!
+	error = malloc, line = 1, comment = [ERROR] malloc happens before setuid on 113!
+	error = malloc, line = 1, comment = [ERROR] malloc happens before seteuid on 126!
+	error = malloc, line = 119, comment = [ERROR] malloc happens before seteuid on 126!
+	error = system, line = 103, comment = [ERROR] system happens before setuid on 104!
+	error = system, line = 103, comment = [ERROR] system happens before setuid on 113!
+	error = system, line = 103, comment = [ERROR] system happens before seteuid on 126!
+	error = system, line = 122, comment = [ERROR] system happens before seteuid on 126!
+	error = execl, line = 106, comment = [ERROR] execl happens before setuid on 113!
+	error = execl, line = 106, comment = [ERROR] execl happens before seteuid on 126!
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/realpath.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/rmail.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/rm.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/rmdir.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/setfacl.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/sh.cflow
+	error = malloc, line = 44, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 44, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 93, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 93, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 95, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 95, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 97, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 97, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 99, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 99, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 100, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 100, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 105, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 105, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 129, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 129, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 169, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 169, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 173, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 173, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 181, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 181, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 203, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 203, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 216, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 216, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 337, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 337, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 412, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 412, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 440, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 440, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 475, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 475, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 542, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 542, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 546, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 546, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 590, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 590, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 605, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 605, comment = [ERROR] malloc happens before setuid on 998!
+	error = malloc, line = 857, comment = [ERROR] malloc happens before setgid on 995!
+	error = malloc, line = 857, comment = [ERROR] malloc happens before setuid on 998!
+	error = sigaction, line = 252, comment = [ERROR] sigaction happens before setgid on 995!
+	error = sigaction, line = 252, comment = [ERROR] sigaction happens before setuid on 998!
+	error = sigaction, line = 253, comment = [ERROR] sigaction happens before setgid on 995!
+	error = sigaction, line = 253, comment = [ERROR] sigaction happens before setuid on 998!
+	error = sigaction, line = 265, comment = [ERROR] sigaction happens before setgid on 995!
+	error = sigaction, line = 265, comment = [ERROR] sigaction happens before setuid on 998!
+	error = sigaction, line = 367, comment = [ERROR] sigaction happens before setgid on 995!
+	error = sigaction, line = 367, comment = [ERROR] sigaction happens before setuid on 998!
+	error = execve, line = 676, comment = [ERROR] execve happens before setgid on 995!
+	error = execve, line = 676, comment = [ERROR] execve happens before setuid on 998!
+	error = execv, line = 676, comment = [ERROR] execv happens before setgid on 995!
+	error = execv, line = 676, comment = [ERROR] execv happens before setuid on 998!
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/sleep.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/stty.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/sync.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/test.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/tests.cflow
+[CHECK_A_BEFORE_B] Errors in: /osx-code/EC521//test/cflow_files/uuidgen.cflow

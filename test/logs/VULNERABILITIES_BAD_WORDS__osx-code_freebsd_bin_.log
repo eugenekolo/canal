@@ -1,0 +1,293 @@
+[CHECK_BAD_WORDS] Errors in: ./mv/mv.c
+	error = strcpy, line = 142, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 236, comment = [ERROR] Dangerous exec* call!
+	error = execl, line = 397, comment = [ERROR] Dangerous exec* call!
+	error = execl, line = 424, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./cat/cat.c
+	error = scanf, line = 72, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 144, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 146, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 163, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./kenv/kenv.c
+[CHECK_BAD_WORDS] Errors in: ./chio/chio.c
+	error = system, line = 1222, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pwd/pwd.c
+[CHECK_BAD_WORDS] Errors in: ./csh/iconv_stub.c
+[CHECK_BAD_WORDS] Errors in: ./uuidgen/uuidgen.c
+[CHECK_BAD_WORDS] Errors in: ./ps/ps.c
+	error = strcpy, line = 1105, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 1398, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 1408, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 1433, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./ps/print.c
+	error = system, line = 825, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 827, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./ps/fmt.c
+	error = strcpy, line = 134, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./ps/keyword.c
+	error = system, line = 196, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./ps/nlist.c
+[CHECK_BAD_WORDS] Errors in: ./domainname/domainname.c
+[CHECK_BAD_WORDS] Errors in: ./dd/args.c
+[CHECK_BAD_WORDS] Errors in: ./dd/conv_tab.c
+[CHECK_BAD_WORDS] Errors in: ./dd/conv.c
+[CHECK_BAD_WORDS] Errors in: ./dd/position.c
+[CHECK_BAD_WORDS] Errors in: ./dd/dd.c
+[CHECK_BAD_WORDS] Errors in: ./dd/misc.c
+[CHECK_BAD_WORDS] Errors in: ./dd/gen.c
+[CHECK_BAD_WORDS] Errors in: ./rmdir/rmdir.c
+[CHECK_BAD_WORDS] Errors in: ./date/netdate.c
+	error = gets, line = 77, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 141, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./date/date.c
+[CHECK_BAD_WORDS] Errors in: ./date/vary.c
+[CHECK_BAD_WORDS] Errors in: ./echo/echo.c
+[CHECK_BAD_WORDS] Errors in: ./test/test.c
+[CHECK_BAD_WORDS] Errors in: ./ls/print.c
+	error = setuid, line = 89, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setgid, line = 90, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+[CHECK_BAD_WORDS] Errors in: ./ls/ls.c
+	error = gets, line = 380, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 381, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 382, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 383, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 388, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 390, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 632, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 638, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 652, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 654, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 838, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 840, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 852, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 858, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./ls/cmp.c
+[CHECK_BAD_WORDS] Errors in: ./ls/util.c
+	error = system, line = 135, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./kill/kill.c
+[CHECK_BAD_WORDS] Errors in: ./chmod/chmod.c
+[CHECK_BAD_WORDS] Errors in: ./stty/stty.c
+[CHECK_BAD_WORDS] Errors in: ./stty/print.c
+[CHECK_BAD_WORDS] Errors in: ./stty/util.c
+[CHECK_BAD_WORDS] Errors in: ./stty/gfmt.c
+	error = scanf, line = 87, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 99, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 112, comment = [ERROR] Dangerous boundless call used!
+	error = scanf, line = 119, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./stty/modes.c
+[CHECK_BAD_WORDS] Errors in: ./stty/key.c
+[CHECK_BAD_WORDS] Errors in: ./stty/cchar.c
+[CHECK_BAD_WORDS] Errors in: ./ed/cbc.c
+	error = system, line = 49, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 288, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./ed/buf.c
+	error = strcpy, line = 198, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./ed/io.c
+[CHECK_BAD_WORDS] Errors in: ./ed/undo.c
+[CHECK_BAD_WORDS] Errors in: ./ed/glbl.c
+[CHECK_BAD_WORDS] Errors in: ./ed/re.c
+[CHECK_BAD_WORDS] Errors in: ./ed/main.c
+	error = strcpy, line = 507, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 534, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 665, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 799, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 854, comment = [ERROR] Dangerous exec* call!
+	error = strcpy, line = 1365, comment = [ERROR] Dangerous boundless call used!
+	error = strcat, line = 1368, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./ed/sub.c
+[CHECK_BAD_WORDS] Errors in: ./getfacl/getfacl.c
+	error = gets, line = 268, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./sh/mail.c
+[CHECK_BAD_WORDS] Errors in: ./sh/var.c
+	error = execve, line = 541, comment = [ERROR] Dangerous exec* call!
+	error = execv, line = 541, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./sh/arith_yacc.c
+[CHECK_BAD_WORDS] Errors in: ./sh/exec.c
+	error = execve, line = 152, comment = [ERROR] Dangerous exec* call!
+	error = execv, line = 152, comment = [ERROR] Dangerous exec* call!
+	error = execve, line = 167, comment = [ERROR] Dangerous exec* call!
+	error = execv, line = 167, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./sh/bltin/echo.c
+[CHECK_BAD_WORDS] Errors in: ./sh/trap.c
+	error = gets, line = 87, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 302, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 339, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./sh/jobs.c
+	error = strcpy, line = 343, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 354, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 356, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 360, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 368, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 370, comment = [ERROR] Dangerous boundless call used!
+	error = strcat, line = 372, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./sh/options.c
+	error = setgid, line = 284, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setgid, line = 285, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 286, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 287, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+[CHECK_BAD_WORDS] Errors in: ./sh/output.c
+[CHECK_BAD_WORDS] Errors in: ./sh/error.c
+[CHECK_BAD_WORDS] Errors in: ./sh/mknodes.c
+	error = gets, line = 257, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 407, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 446, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./sh/eval.c
+	error = gets, line = 1155, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./sh/miscbltin.c
+[CHECK_BAD_WORDS] Errors in: ./sh/mksyntax.c
+[CHECK_BAD_WORDS] Errors in: ./sh/expand.c
+[CHECK_BAD_WORDS] Errors in: ./sh/mystring.c
+[CHECK_BAD_WORDS] Errors in: ./sh/alias.c
+[CHECK_BAD_WORDS] Errors in: ./sh/cd.c
+[CHECK_BAD_WORDS] Errors in: ./sh/main.c
+[CHECK_BAD_WORDS] Errors in: ./sh/arith_yylex.c
+[CHECK_BAD_WORDS] Errors in: ./sh/histedit.c
+[CHECK_BAD_WORDS] Errors in: ./sh/show.c
+	error = strcpy, line = 392, comment = [ERROR] Dangerous boundless call used!
+	error = strcat, line = 393, comment = [ERROR] Dangerous boundless call used!
+	error = strcpy, line = 396, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./sh/parser.c
+[CHECK_BAD_WORDS] Errors in: ./sh/input.c
+	error = gets, line = 145, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./sh/redir.c
+	error = system, line = 97, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./sh/memalloc.c
+[CHECK_BAD_WORDS] Errors in: ./mkdir/mkdir.c
+	error = setuid, line = 119, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setgid, line = 119, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+[CHECK_BAD_WORDS] Errors in: ./hostname/hostname.c
+[CHECK_BAD_WORDS] Errors in: ./df/df.c
+	error = system, line = 207, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 215, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 216, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 218, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 306, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 311, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 331, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 332, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 352, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 412, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 421, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 433, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 453, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 470, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 473, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 523, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 541, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 592, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./sleep/sleep.c
+	error = scanf, line = 74, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./cp/utils.c
+	error = setuid, line = 100, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = system, line = 159, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 188, comment = [ERROR] Dangerous exec* call!
+	error = setuid, line = 374, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 375, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setgid, line = 375, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+[CHECK_BAD_WORDS] Errors in: ./cp/cp.c
+	error = setuid, line = 368, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setgid, line = 368, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+[CHECK_BAD_WORDS] Errors in: ./setfacl/merge.c
+[CHECK_BAD_WORDS] Errors in: ./setfacl/file.c
+[CHECK_BAD_WORDS] Errors in: ./setfacl/mask.c
+[CHECK_BAD_WORDS] Errors in: ./setfacl/util.c
+[CHECK_BAD_WORDS] Errors in: ./setfacl/remove.c
+[CHECK_BAD_WORDS] Errors in: ./setfacl/setfacl.c
+	error = gets, line = 215, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./pkill/pkill.c
+	error = system, line = 71, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 587, comment = [ERROR] Dangerous exec* call!
+	error = gets, line = 701, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 825, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./ln/ln.c
+[CHECK_BAD_WORDS] Errors in: ./pax/sel_subs.c
+[CHECK_BAD_WORDS] Errors in: ./pax/tables.c
+[CHECK_BAD_WORDS] Errors in: ./pax/cpio.c
+	error = strcpy, line = 167, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 503, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 508, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 526, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 557, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 689, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/pat_rep.c
+	error = system, line = 651, comment = [ERROR] Dangerous exec* call!
+	error = strcpy, line = 880, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./pax/buf_subs.c
+	error = system, line = 76, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 124, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 164, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 176, comment = [ERROR] Dangerous exec* call!
+	error = gets, line = 721, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 813, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./pax/options.c
+	error = system, line = 338, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 486, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 777, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/getoldopt.c
+[CHECK_BAD_WORDS] Errors in: ./pax/ar_io.c
+	error = system, line = 534, comment = [ERROR] Dangerous exec* call!
+	error = execl, line = 1282, comment = [ERROR] Dangerous exec* call!
+	error = execlp, line = 1282, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/ftree.c
+	error = gets, line = 293, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 414, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 416, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 432, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/tty_subs.c
+	error = gets, line = 117, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./pax/file_subs.c
+	error = system, line = 332, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 484, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 533, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 539, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 570, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 662, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 713, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 723, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 729, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 733, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 737, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 761, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 809, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 822, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/ar_subs.c
+	error = system, line = 83, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 202, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 715, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/gen_subs.c
+[CHECK_BAD_WORDS] Errors in: ./pax/tar.c
+	error = system, line = 513, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 901, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/pax.c
+	error = system, line = 136, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 160, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 164, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 190, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./pax/cache.c
+[CHECK_BAD_WORDS] Errors in: ./rcp/util.c
+	error = system, line = 103, comment = [ERROR] Dangerous exec* call!
+	error = setuid, line = 115, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = execl, line = 116, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./rcp/rcp.c
+	error = gets, line = 83, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 144, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 161, comment = [ERROR] Dangerous boundless call used!
+	error = setuid, line = 173, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = setuid, line = 179, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = gets, line = 187, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 190, comment = [ERROR] Dangerous exec* call!
+	error = gets, line = 193, comment = [ERROR] Dangerous boundless call used!
+	error = gets, line = 201, comment = [ERROR] Dangerous boundless call used!
+	error = system, line = 259, comment = [ERROR] Dangerous exec* call!
+	error = setuid, line = 282, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = system, line = 304, comment = [ERROR] Dangerous exec* call!
+	error = seteuid, line = 336, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = seteuid, line = 344, comment = [ERROR] Dangerous setuid operation. Be sure to know your OS!
+	error = gets, line = 516, comment = [ERROR] Dangerous boundless call used!
+[CHECK_BAD_WORDS] Errors in: ./pwait/pwait.c
+[CHECK_BAD_WORDS] Errors in: ./sync/sync.c
+[CHECK_BAD_WORDS] Errors in: ./realpath/realpath.c
+[CHECK_BAD_WORDS] Errors in: ./rm/rm.c
+	error = system, line = 417, comment = [ERROR] Dangerous exec* call!
+	error = system, line = 418, comment = [ERROR] Dangerous exec* call!
+[CHECK_BAD_WORDS] Errors in: ./chflags/chflags.c

@@ -1,0 +1,64 @@
+    1 	main: int (), <./date.c 76>
+    2 		setlocale: <>
+    3 		getopt: <>
+    4 		strtol: <>
+    5 		usage: void (), <./date.c 323>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		strtoq: <>
+    9 		stat: <>
+   10 		setenv: <>
+   11 		vary_append: struct vary (), <./vary.c 83>
+   12 		settimeofday: <>
+   13 		err: <>
+   14 		time: <>
+   15 		setthetime: void (), <./date.c 204>
+   16 			localtime: <>
+   17 			strptime: <>
+   18 			fprintf: <>
+   19 			badformat: void (), <./date.c 316>
+   20 				warnx: <>
+   21 				usage: 5
+   22 			strlen: <>
+   23 			isdigit: <>
+   24 			ATOI2: <>
+   25 			mktime: <>
+   26 			errx: <>
+   27 			netsettime: int (), <./netdate.c 66>
+   28 				getservbyname: <>
+   29 				warnx: <>
+   30 				htonl: <>
+   31 				socket: <>
+   32 				warn: <>
+   33 				memset: <>
+   34 				htons: <>
+   35 				bind: <>
+   36 				gethostname: <>
+   37 				strlcpy: <>
+   38 				connect: <>
+   39 				send: <>
+   40 				FD_ZERO: <>
+   41 				FD_SET: <>
+   42 				select: <>
+   43 				getsockopt: <>
+   44 				warnc: <>
+   45 				FD_ISSET: <>
+   46 				recvfrom: <>
+   47 				ntohs: <>
+   48 				ntohl: <>
+   49 				close: <>
+   50 			gettimeofday: <>
+   51 			pututxline: <>
+   52 			settimeofday: <>
+   53 			err: <>
+   54 			getlogin: <>
+   55 			syslog: <>
+   56 		localtime: <>
+   57 		vary_apply: const struct vary (), <./vary.c 416>
+   58 		fprintf: <>
+   59 		vary_destroy: void (), <./vary.c 497>
+   60 			free: <>
+   61 		strftime: <>
+   62 		printf: <>
+   63 		fflush: <>
+   64 		exit: <>

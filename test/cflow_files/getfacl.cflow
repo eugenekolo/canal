@@ -1,0 +1,35 @@
+    1 	main: int (), <./getfacl.c 282>
+    2 		getopt: <>
+    3 		usage: void (), <./getfacl.c 54>
+    4 			fprintf: <>
+    5 		print_acl_from_stdin: int (), <./getfacl.c 263>
+    6 			fgets: <>
+    7 			strchr: <>
+    8 			print_acl: int (), <./getfacl.c 178>
+    9 				lstat: <>
+   10 				stat: <>
+   11 				warn: <>
+   12 				lpathconf: <>
+   13 				pathconf: <>
+   14 				warnx: <>
+   15 				printf: <>
+   16 				getuname: char * (), <./getfacl.c 61>
+   17 					getpwuid: <>
+   18 					snprintf: <>
+   19 				getgname: char * (), <./getfacl.c 74>
+   20 					getgrgid: <>
+   21 					snprintf: <>
+   22 				acl_get_link_np: <>
+   23 				acl_get_file: <>
+   24 				acl_from_stat: acl_t (), <./getfacl.c 91>
+   25 					acl_init: <>
+   26 					acl_create_entry: <>
+   27 					acl_set_tag_type: <>
+   28 					acl_get_permset: <>
+   29 					acl_clear_perms: <>
+   30 					acl_add_perm: <>
+   31 					acl_set_permset: <>
+   32 				acl_to_text_np: <>
+   33 				acl_free: <>
+   34 		strcmp: <>
+   35 		print_acl: 8

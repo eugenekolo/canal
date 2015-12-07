@@ -1,0 +1,84 @@
+    1 	main: int (), <./rm.c 85>
+    2 		setlocale: <>
+    3 		strrchr: <>
+    4 		strcmp: <>
+    5 		getopt: <>
+    6 		usage: void (), <./rm.c 630>
+    7 			fprintf: <>
+    8 			exit: <>
+    9 		rm_file: void (), <./rm.c 346>
+   10 			lstat: <>
+   11 			warn: <>
+   12 			warnx: <>
+   13 			strerror: <>
+   14 			S_ISDIR: <>
+   15 			S_ISWHT: <>
+   16 			check: int (), <./rm.c 490>
+   17 				fprintf: <>
+   18 				S_ISLNK: <>
+   19 				access: <>
+   20 				strmode: <>
+   21 				fflagstostr: <>
+   22 				err: <>
+   23 				errx: <>
+   24 				user_from_uid: <>
+   25 				group_from_gid: <>
+   26 				free: <>
+   27 				fflush: <>
+   28 				getchar: <>
+   29 			lchflags: <>
+   30 			undelete: <>
+   31 			rmdir: <>
+   32 			rm_overwrite: int (), <./rm.c 423>
+   33 				lstat: <>
+   34 				err: <>
+   35 				S_ISREG: <>
+   36 				warnx: <>
+   37 				open: <>
+   38 				fstat: <>
+   39 				fstatfs: <>
+   40 				MAX: <>
+   41 				malloc: <>
+   42 				PASS: <>
+   43 				fsync: <>
+   44 				lseek: <>
+   45 				close: <>
+   46 				free: <>
+   47 				warn: <>
+   48 			unlink: <>
+   49 			printf: <>
+   50 		exit: <>
+   51 		checkdot: void (), <./rm.c 606>
+   52 			strrchr: <>
+   53 			ISDOT: <>
+   54 			warnx: <>
+   55 		checkslash: void (), <./rm.c 535>
+   56 			ISSLASH: <>
+   57 			warnx: <>
+   58 		geteuid: <>
+   59 		signal: <>
+   60 		siginfo: void (), <./rm.c 640>
+   61 		isatty: <>
+   62 		check2: int (), <./rm.c 555>
+   63 			lstat: <>
+   64 			S_ISDIR: <>
+   65 			fprintf: <>
+   66 			fflush: <>
+   67 			getchar: <>
+   68 		rm_tree: void (), <./rm.c 179>
+   69 			fts_open: <>
+   70 			err: <>
+   71 			fts_read: <>
+   72 			warnx: <>
+   73 			strerror: <>
+   74 			errx: <>
+   75 			check: 16
+   76 			fts_set: <>
+   77 			lchflags: <>
+   78 			rmdir: <>
+   79 			printf: <>
+   80 			undelete: <>
+   81 			rm_overwrite: 32
+   82 			unlink: <>
+   83 			warn: <>
+   84 			fts_close: <>

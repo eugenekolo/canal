@@ -1,0 +1,129 @@
+    1 	main: int (), <./setfacl.c 101>
+    2 		TAILQ_INIT: <>
+    3 		getopt: <>
+    4 		zmalloc: void * (), <./util.c 37>
+    5 			calloc: <>
+    6 			err: <>
+    7 		get_acl_from_file: acl_t (), <./file.c 43>
+    8 			err: <>
+    9 			bzero: <>
+   10 			strcmp: <>
+   11 			fopen: <>
+   12 			fread: <>
+   13 			ferror: <>
+   14 			fclose: <>
+   15 			feof: <>
+   16 			errx: <>
+   17 			acl_from_text: <>
+   18 		err: <>
+   19 		TAILQ_INSERT_TAIL: <>
+   20 		strtol: <>
+   21 		strlen: <>
+   22 		errx: <>
+   23 		acl_from_text: <>
+   24 		usage: void (), <./setfacl.c 92>
+   25 			fprintf: <>
+   26 			exit: <>
+   27 		TAILQ_EMPTY: <>
+   28 		strcmp: <>
+   29 		bzero: <>
+   30 		fgets: <>
+   31 		strdup: <>
+   32 		add_filename: void (), <./setfacl.c 78>
+   33 			strlen: <>
+   34 			warn: <>
+   35 			zmalloc: 4
+   36 			TAILQ_INSERT_TAIL: <>
+   37 		TAILQ_FOREACH: <>
+   38 		stat: <>
+   39 		warn: <>
+   40 		S_ISDIR: <>
+   41 		warnx: <>
+   42 		lpathconf: <>
+   43 		pathconf: <>
+   44 		acl_get_link_np: <>
+   45 		acl_get_file: <>
+   46 		add_acl: int (), <./merge.c 240>
+   47 			acl_get_brand_np: <>
+   48 			warnx: <>
+   49 			branding_mismatch: int (), <./util.c 61>
+   50 			brand_name: const char * (), <./util.c 48>
+   51 			acl_dup: <>
+   52 			err: <>
+   53 			acl_get_entry: <>
+   54 			acl_create_entry_np: <>
+   55 			warn: <>
+   56 			acl_free: <>
+   57 			acl_copy_entry: <>
+   58 		merge_acl: int (), <./merge.c 89>
+   59 			acl_get_brand_np: <>
+   60 			branding_mismatch: 49
+   61 			warnx: <>
+   62 			brand_name: 50
+   63 			acl_dup: <>
+   64 			err: <>
+   65 			acl_get_entry: <>
+   66 			acl_get_tag_type: <>
+   67 			acl_get_entry_type_np: <>
+   68 			merge_user_group: int (), <./merge.c 43>
+   69 				acl_get_qualifier: <>
+   70 				err: <>
+   71 				acl_get_permset: <>
+   72 				acl_set_permset: <>
+   73 				acl_get_entry_type_np: <>
+   74 				acl_set_entry_type_np: <>
+   75 				acl_get_flagset_np: <>
+   76 				acl_set_flagset_np: <>
+   77 				acl_free: <>
+   78 			acl_get_permset: <>
+   79 			acl_set_permset: <>
+   80 			acl_set_entry_type_np: <>
+   81 			acl_get_flagset_np: <>
+   82 			acl_set_flagset_np: <>
+   83 			errx: <>
+   84 			acl_create_entry_np: <>
+   85 			warn: <>
+   86 			acl_free: <>
+   87 			acl_create_entry: <>
+   88 			acl_copy_entry: <>
+   89 		acl_get_entry: <>
+   90 		remove_default: int (), <./remove.c 148>
+   91 			acl_free: <>
+   92 			acl_init: <>
+   93 			err: <>
+   94 		remove_ext: void (), <./remove.c 163>
+   95 			acl_strip_np: <>
+   96 			err: <>
+   97 			acl_free: <>
+   98 		acl_delete_def_file: <>
+   99 		remove_acl: int (), <./remove.c 44>
+  100 			acl_get_brand_np: <>
+  101 			branding_mismatch: 49
+  102 			warnx: <>
+  103 			brand_name: 50
+  104 			acl_dup: <>
+  105 			err: <>
+  106 			acl_get_entry: <>
+  107 			acl_get_tag_type: <>
+  108 			acl_delete_entry: <>
+  109 			acl_free: <>
+  110 		remove_by_number: int (), <./remove.c 96>
+  111 			acl_dup: <>
+  112 			err: <>
+  113 			acl_get_entry: <>
+  114 			acl_get_tag_type: <>
+  115 			acl_delete_entry_np: <>
+  116 			warn: <>
+  117 			acl_free: <>
+  118 		set_acl_mask: int (), <./mask.c 43>
+  119 			acl_dup: <>
+  120 			err: <>
+  121 			acl_calc_mask: <>
+  122 			warn: <>
+  123 			acl_free: <>
+  124 			acl_get_entry: <>
+  125 			acl_get_tag_type: <>
+  126 			warnx: <>
+  127 		acl_set_link_np: <>
+  128 		acl_set_file: <>
+  129 		acl_free: <>

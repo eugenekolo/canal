@@ -1,0 +1,226 @@
+    1 	main: int (), <./ls.c 155>
+    2 		setlocale: <>
+    3 		isatty: <>
+    4 		getenv: <>
+    5 		strtonum: <>
+    6 		ioctl: <>
+    7 		xo_parse_args: <>
+    8 		xo_set_flags: <>
+    9 		xo_set_version: <>
+   10 		getopt: <>
+   11 		setenv: <>
+   12 		usage: void (), <./util.c 238>
+   13 			xo_error: <>
+   14 			exit: <>
+   15 		getuid: <>
+   16 		tgetent: <>
+   17 		tgetstr: <>
+   18 		xo_warnx: <>
+   19 		signal: <>
+   20 		colorquit: void (), <./print.c 636>
+   21 			endcolor: void (), <./print.c 539>
+   22 				tputs: <>
+   23 				writech: int (), <./print.c 510>
+   24 					write: <>
+   25 				putch: int (), <./print.c 503>
+   26 					xo_emit: <>
+   27 			signal: <>
+   28 			kill: <>
+   29 			getpid: <>
+   30 		parsecolors: void (), <./print.c 588>
+   31 			strlen: <>
+   32 			xo_warnx: <>
+   33 			tolower: <>
+   34 		getbsize: <>
+   35 		sortfcn: int () (), <./ls.c 101>
+   36 		revnamecmp: int (), <./cmp.c 59>
+   37 			strcoll: <>
+   38 		revsizecmp: int (), <./cmp.c 193>
+   39 			sizecmp: int (), <./cmp.c 182>
+   40 				strcoll: <>
+   41 		revacccmp: int (), <./cmp.c 117>
+   42 			acccmp: int (), <./cmp.c 95>
+   43 				strcoll: <>
+   44 		revbirthcmp: int (), <./cmp.c 146>
+   45 			birthcmp: int (), <./cmp.c 124>
+   46 				strcoll: <>
+   47 		revstatcmp: int (), <./cmp.c 175>
+   48 			statcmp: int (), <./cmp.c 153>
+   49 				strcoll: <>
+   50 		revmodcmp: int (), <./cmp.c 88>
+   51 			modcmp: int (), <./cmp.c 66>
+   52 				strcoll: <>
+   53 		namecmp: int (), <./cmp.c 52>
+   54 			strcoll: <>
+   55 		sizecmp: 39
+   56 		acccmp: 42
+   57 		birthcmp: 45
+   58 		statcmp: 48
+   59 		modcmp: 51
+   60 		printfcn: void () (), <./ls.c 100>
+   61 		printscol: void (), <./print.c 109>
+   62 			xo_open_list: <>
+   63 			IS_NOPRINT: <>
+   64 			xo_open_instance: <>
+   65 			printaname: int (), <./print.c 389>
+   66 				xo_emit: <>
+   67 				howmany: <>
+   68 				colortype: int (), <./print.c 546>
+   69 					printcolor: void (), <./print.c 519>
+   70 						tputs: <>
+   71 						putch: 25
+   72 						tgoto: <>
+   73 				printname: int (), <./print.c 129>
+   74 					getname: char * (), <./print.c 145>
+   75 						get_octal: char * (), <./util.c 179>
+   76 							strlen: <>
+   77 							alloca: <>
+   78 							memset: <>
+   79 							mbrtowc: <>
+   80 							iswprint: <>
+   81 							wcwidth: <>
+   82 							strchr: <>
+   83 							strdup: <>
+   84 						get_printable: char * (), <./util.c 96>
+   85 							strlen: <>
+   86 							alloca: <>
+   87 							memset: <>
+   88 							mbrtowc: <>
+   89 							iswprint: <>
+   90 							wcwidth: <>
+   91 							strdup: <>
+   92 						strdup: <>
+   93 					snprintf: <>
+   94 					xo_emit: <>
+   95 					free: <>
+   96 				endcolor: 21
+   97 				printtype: int (), <./print.c 464>
+   98 					xo_emit: <>
+   99 			xo_close_instance: <>
+  100 			xo_emit: <>
+  101 			xo_close_list: <>
+  102 		printlong: void (), <./print.c 156>
+  103 			xo_emit: <>
+  104 			howmany: <>
+  105 			xo_open_list: <>
+  106 			IS_NOPRINT: <>
+  107 			xo_open_instance: <>
+  108 			getname: 74
+  109 			strmode: <>
+  110 			aclmode: void (), <./print.c 697>
+  111 				S_ISCHR: <>
+  112 				S_ISBLK: <>
+  113 				S_ISWHT: <>
+  114 				snprintf: <>
+  115 				lpathconf: <>
+  116 				xo_warn: <>
+  117 				acl_get_link_np: <>
+  118 				acl_is_trivial_np: <>
+  119 				acl_free: <>
+  120 			xo_attr: <>
+  121 			S_ISBLK: <>
+  122 			asprintf: <>
+  123 			S_ISCHR: <>
+  124 			S_ISDIR: <>
+  125 			S_ISFIFO: <>
+  126 			S_ISLNK: <>
+  127 			S_ISREG: <>
+  128 			S_ISSOCK: <>
+  129 			S_ISWHT: <>
+  130 			free: <>
+  131 			printdev: void (), <./print.c 423>
+  132 				xo_emit: <>
+  133 			printsize: void (), <./print.c 668>
+  134 				humanize_number: <>
+  135 				snprintf: <>
+  136 				xo_attr: <>
+  137 				xo_emit: <>
+  138 			printtime: void (), <./print.c 429>
+  139 				nl_langinfo: <>
+  140 				time: <>
+  141 				strftime: <>
+  142 				localtime: <>
+  143 				snprintf: <>
+  144 				xo_attr: <>
+  145 				xo_emit: <>
+  146 			colortype: 68
+  147 			endcolor: 21
+  148 			printtype: 97
+  149 			printlink: void (), <./print.c 647>
+  150 				snprintf: <>
+  151 				readlink: <>
+  152 				xo_error: <>
+  153 				strerror: <>
+  154 				xo_emit: <>
+  155 				printname: 73
+  156 			xo_close_instance: <>
+  157 			xo_close_list: <>
+  158 		printstream: void (), <./print.c 260>
+  159 			xo_open_list: <>
+  160 			strlen: <>
+  161 			xo_emit: <>
+  162 			xo_open_instance: <>
+  163 			printaname: 65
+  164 			xo_close_instance: <>
+  165 			xo_close_list: <>
+  166 		printcol: void (), <./print.c 289>
+  167 			realloc: <>
+  168 			printscol: 61
+  169 			xo_emit: <>
+  170 			howmany: <>
+  171 			xo_open_list: <>
+  172 			xo_open_instance: <>
+  173 			printaname: 65
+  174 			xo_close_instance: <>
+  175 			xo_close_list: <>
+  176 		xo_open_container: <>
+  177 		traverse: void (), <./ls.c 513>
+  178 			fts_open: <>
+  179 			mastercmp: int (), <./ls.c 911>
+  180 				namecmp: 53
+  181 				sortfcn: int () (), <./ls.c 101>
+  182 			xo_err: <>
+  183 			fts_children: <>
+  184 			display: void (), <./ls.c 598>
+  185 				getenv: <>
+  186 				malloc: <>
+  187 				strlen: <>
+  188 				xo_err: <>
+  189 				strcpy: <>
+  190 				sscanf: <>
+  191 				MAKENINES: <>
+  192 				free: <>
+  193 				xo_warnx: <>
+  194 				strerror: <>
+  195 				len_octal: size_t (), <./util.c 149>
+  196 					memset: <>
+  197 					mbrtowc: <>
+  198 					iswprint: <>
+  199 				snprintf: <>
+  200 				user_from_uid: <>
+  201 				group_from_gid: <>
+  202 				fflagstostr: <>
+  203 				strdup: <>
+  204 				mac_prepare_file_label: <>
+  205 				xo_warn: <>
+  206 				mac_get_file: <>
+  207 				mac_get_link: <>
+  208 				mac_free: <>
+  209 				mac_to_text: <>
+  210 				S_ISCHR: <>
+  211 				S_ISBLK: <>
+  212 				howmany: <>
+  213 				printfcn: void () (), <./ls.c 100>
+  214 			fts_read: <>
+  215 			xo_warnx: <>
+  216 			strerror: <>
+  217 			xo_open_list: <>
+  218 			xo_open_instance: <>
+  219 			xo_emit: <>
+  220 			printname: 73
+  221 			xo_close_instance: <>
+  222 			fts_set: <>
+  223 			xo_close_list: <>
+  224 		xo_close_container: <>
+  225 		xo_finish: <>
+  226 		exit: <>
