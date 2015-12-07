@@ -15,7 +15,7 @@ import sys, re
 #import os
 
 badwords = ['execve', 'execl', 'execlp', 'execle', 'execv', 'execvp', 'execvpe', 'system']
-no_bound_calls = ['gets', 'scanf', 'strcat', 'strcpy']
+no_bound_calls = ['gets', 'scanf', 'strcat', 'strcpy', 'cat', 'argv']
 
 
 #chekcing to see if there are errors in the c file
