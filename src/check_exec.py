@@ -23,7 +23,7 @@ def main(fileName):
     program_errors = [] # e.g. [{"error":"seteuid", "line":52, "comment":"You should..."}, 
                           #       {"error":"setregid", "line":19, "comment":""}, ...]
 
-
+    print("[CHECK EXEC] Errors in:", fileName)
     #simple method - start by finding vulnerable calls (badwords)
 
     badlineNums = []
@@ -61,7 +61,7 @@ def main(fileName):
             badArguments = targetline.split(", ")
 
             # print("Line", item, "calls", targetword, "with ", end = "")
-            print ("error = " + targetword + ", line = " + str(item) + ", comment = [ERROR] ")
+            print ("\terror = " + targetword + ", line = " + str(item) + ", comment = [ERROR] ", end="")
             # print(*badArguments, sep=', ')
             # ok, now we have the arguments for the badword function in targetline
             # simple vulnerability check - are we calling from argv
