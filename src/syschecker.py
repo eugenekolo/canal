@@ -76,14 +76,70 @@ def main(fileName):
                 else:
                     q = open(fileName, 'r')
                     for lineNum, line in enumerate(q):
-                        if((argument in line) and (lineNum < item)):
-                            print("\t\t", lineNum, line)
+                        if((argument in line) and (lineNum < item) and (lineNum not in badlineLines)): # avoid calls past the argument, and avoid prior bad calls to system/execv in case of repeats
+
+                            result = find_bounds_issues(line, argument)
+                            if(result): 
+                               print("\t\t", lineNum, line)
 
 
     # ## Report results!
     # print("[CHECK_EXEC] Errors in: " + fileName)
     # for error in program_errors:
     #     print("\terror = {0}, line = {1}, comment = {2}".format(error['error'], str(error['line']), error['comment']))
+
+def find_bounds_issues(line, variable):
+    frontHalf, backHalf = line.split(variable, 1)
+    # look for target of no bound call issues
+    for call in no_bound_calls:
+        if((call in frontHalf) and (string_with_open_parenthesis(frontHalf))): 
+            return call  # this is the front half check, e.g. scanf(badsource, vulnerable_variable)
+        elif((call in backHalf) and (detect_variable_is_array(backHalf)) and (detect_variable_is_char_star(frontHalf))):
+            return call # this is the back half check for badness, e.g. = strcpy(badness, badness)
+
+    # look for user-editable files and such
+
+
+
+    #fail
+    return 0
+
+def string_with_open_parenthesis(theString):
+    parenthesisCount = 0
+    for character in theString:
+                if character == '(':
+                    parenthesisCount += 1
+                elif (character == ')'):
+                    if (parenthesisCount > 0):
+                        parenthesisCount -= 1
+    if(parenthesisCount == 0):
+        return 0
+    else:
+        return 1
+
+def detect_variable_is_array(theString):
+    theString = theString.strip() #nab the blanks
+    re.sub("[^0-9]", "", theString) #nab the numbers between []
+    if((theString[0] == '[') and (theString[1] == ']')):
+        return 1
+    else:
+        return 0
+
+def detect_variable_is_char_star(theString):
+    theString = theString.strip() #nab the blanks
+    if(';' in theString):
+        theString = theString.rsplit(';',1)[1] #check and scrub for no whitespace between lines
+    elif(',' in theString):
+        theString = theString[:theString.find('*')+1] #check and scrub multiple declarations
+
+    if("char*" in theString):
+        return 1
+    else:
+        return 0
+
+
+
+
 
 
 ###############################################################################
