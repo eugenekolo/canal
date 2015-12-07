@@ -74,10 +74,10 @@ def main(fileName):
                 if(('(' in argument) or ("cat " in argument) or ("argv" in argument)) : # avoid function calls within function calls for now
                    continue
                 else:
+                    #print(argument)
                     q = open(fileName, 'r')
                     for lineNum, line in enumerate(q):
                         if((argument in line) and (lineNum < item) and (lineNum not in badlineLines)): # avoid calls past the argument, and avoid prior bad calls to system/execv in case of repeats
-
                             result = find_bounds_issues(line, argument)
                             if(result): 
                                print("\t\t", lineNum, line)
@@ -92,12 +92,20 @@ def find_bounds_issues(line, variable):
     frontHalf, backHalf = line.split(variable, 1)
     # look for target of no bound call issues
     for call in no_bound_calls:
-        if((call in frontHalf) and (string_with_open_parenthesis(frontHalf))): 
+        if((call in frontHalf) and (string_with_open_parenthesis(frontHalf))):
+            print("Vulnerable input via", call)
             return call  # this is the front half check, e.g. scanf(badsource, vulnerable_variable)
-        elif((call in backHalf) and (detect_variable_is_array(backHalf)) and (detect_variable_is_char_star(frontHalf))):
+        elif((call in backHalf) and (detect_variable_is_array(backHalf)) or (detect_variable_is_char_star(frontHalf)) and (assignment_before_call(backHalf, call))):
+            print("Vulnerable input via", call)
             return call # this is the back half check for badness, e.g. = strcpy(badness, badness)
-
-    # look for user-editable files and such
+                # look for user-editable files and such
+    if(('=' in backHalf) and ("/bin" in backHalf)):
+        #get start and end of vulnerable input
+        inputStart = backHalf.find("/bin")
+        theEnding = backHalf.split("/bin",1)[1]
+        inputEnd = theEnding.find("\"")
+        print("Vulnerable input from user-accessable file in ", backHalf[inputStart:inputEnd])
+        return 1 #anything will count as true here, will add more for handler function
 
 
 
@@ -130,14 +138,19 @@ def detect_variable_is_char_star(theString):
     if(';' in theString):
         theString = theString.rsplit(';',1)[1] #check and scrub for no whitespace between lines
     elif(',' in theString):
-        theString = theString[:theString.find('*')+1] #check and scrub multiple declarations
+        theString = theString[:theString.find('*')+1] #check and scrub predecessors in multiple declarations
 
     if("char*" in theString):
         return 1
     else:
         return 0
 
-
+def assignment_before_call(theString, call):
+    theString = theString.split(call, 1)[0]
+    if('=' in theString):
+        return 1
+    else:
+        return 0
 
 
 
