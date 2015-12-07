@@ -43,7 +43,7 @@ echo "[MAIN]: Runing cflow."
 ./cflowGenerate.sh
 
 echo "[MAIN]: Plotting call graphs."
-./cflowVisualize.sh
+#./cflowVisualize.sh
 
 echo "[MAIN]: Running security checkers."
 ./runSubmodules.sh

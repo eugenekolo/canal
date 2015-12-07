@@ -1,0 +1,3104 @@
+    1 	main: int (), <./libxslt/doc/tutorial2/libxslt_pipes.c 39>
+    2 		usage: void (), <./libxslt/xsltproc/xsltproc.c 489>
+    3 			printf: <>
+    4 		xmlInitMemory: <>
+    5 		xsltNewSecurityPrefs: xsltSecurityPrefsPtr (), <./libxslt/libxslt/security.c 89>
+    6 			xsltInitGlobals: void (), <./libxslt/libxslt/extensions.c 2261>
+    7 				xmlNewMutex: <>
+    8 			xmlMalloc: <>
+    9 			xsltTransformError: void (), <./libxslt/libxslt/xsltutils.c 698>
+   10 				error: <>
+   11 				xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+   12 				xsltPrintErrorContext: void (), <./libxslt/libxslt/xsltutils.c 604>
+   13 					error: <>
+   14 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+   15 					xmlGetLineNo: <>
+   16 					XSLT_CCTXT: <>
+   17 				XSLT_GET_VAR_STR: <>
+   18 				xmlFree: <>
+   19 			memset: <>
+   20 		xsltSetDefaultSecurityPrefs: void (), <./libxslt/libxslt/security.c 183>
+   21 		defaultEntityLoader: xmlExternalEntityLoader, <./libxslt/xsltproc/xsltproc.c 136>
+   22 		xmlGetExternalEntityLoader: <>
+   23 		xmlSetExternalEntityLoader: <>
+   24 		xsltprocExternalEntityLoader: xmlParserInputPtr (), <./libxslt/xsltproc/xsltproc.c 139>
+   25 			warning: <>
+   26 			defaultEntityLoader: xmlExternalEntityLoader, <./libxslt/xsltproc/xsltproc.c 136>
+   27 			fprintf: <>
+   28 			xmlStrdup: <>
+   29 			xmlStrcat: <>
+   30 			xmlFree: <>
+   31 		strcmp: <>
+   32 		xsltSetGenericDebugFunc: void (), <./libxslt/libxslt/xsltutils.c 587>
+   33 			xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+   34 			xsltGenericDebugDefaultFunc: void (), <./libxslt/libxslt/xsltutils.c 558>
+   35 				va_start: <>
+   36 				vfprintf: <>
+   37 				va_end: <>
+   38 		xmlCanonicPath: <>
+   39 		xmlStrdup: <>
+   40 		printf: <>
+   41 		xsltSetSecurityPrefs: int (), <./libxslt/libxslt/security.c 128>
+   42 			xsltInitGlobals: 6
+   43 		xsltSecurityForbid: int (), <./libxslt/libxslt/security.c 247>
+   44 		xsltSubtreeCheck: int (), <./libxslt/xsltproc/xsltproc.c 337>
+   45 			xmlStrlen: <>
+   46 			BAD_CAST: <>
+   47 			xmlStrncmp: <>
+   48 		parsePath: void (), <./libxslt/xsltproc/xsltproc.c 111>
+   49 			fprintf: <>
+   50 			xmlStrndup: <>
+   51 		BAD_CAST: <>
+   52 		getenv: <>
+   53 		fprintf: <>
+   54 		xmlLoadCatalogs: <>
+   55 		xsltSetXIncludeDefault: void (), <./libxslt/libxslt/transform.c 354>
+   56 		xmlStrchr: <>
+   57 		xmlStrcat: <>
+   58 		sscanf: <>
+   59 		exsltRegisterAll: void (), <./libxslt/libexslt/exslt.c 26>
+   60 			xsltInitGlobals: 6
+   61 			exsltCommonRegister: void (), <./libxslt/libexslt/common.c 126>
+   62 				xsltRegisterExtModuleFunction: int (), <./libxslt/libxslt/extensions.c 1387>
+   63 					xmlHashCreate: <>
+   64 					xmlMutexLock: <>
+   65 					xmlHashUpdateEntry2: <>
+   66 					XML_CAST_FPTR: <>
+   67 					xmlMutexUnlock: <>
+   68 				exsltNodeSetFunction: void (), <./libxslt/libexslt/common.c 25>
+   69 					xmlXPathSetArityError: <>
+   70 					xmlXPathStackIsNodeSet: <>
+   71 					xsltFunctionNodeSet: void (), <./libxslt/libxslt/extra.c 131>
+   72 						xsltTransformError: 9
+   73 						xsltXPathGetTransformContext: xsltTransformContextPtr (), <./libxslt/libxslt/extensions.c 1369>
+   74 					xsltXPathGetTransformContext: 73
+   75 					xsltCreateRVT: xmlDocPtr (), <./libxslt/libxslt/variables.c 65>
+   76 						xmlNewDoc: <>
+   77 						xmlDictReference: <>
+   78 						XSLT_MARK_RES_TREE_FRAG: <>
+   79 					xsltTransformError: 9
+   80 					xsltRegisterLocalRVT: int (), <./libxslt/libxslt/variables.c 156>
+   81 						XSLT_TCTXT_VARIABLE: <>
+   82 					xmlXPathPopString: <>
+   83 					xmlNewDocText: <>
+   84 					xmlAddChild: <>
+   85 					xmlXPathNewNodeSet: <>
+   86 					xsltExtensionInstructionResultRegister: int (), <./libxslt/libxslt/variables.c 243>
+   87 						xsltTransformError: 9
+   88 						error: <>
+   89 					xmlFree: <>
+   90 					valuePush: <>
+   91 				exsltObjectTypeFunction: void (), <./libxslt/libexslt/common.c 78>
+   92 					xmlXPathSetArityError: <>
+   93 					valuePop: <>
+   94 					xmlXPathNewCString: <>
+   95 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+   96 					xmlXPathFreeObject: <>
+   97 					valuePush: <>
+   98 				xsltRegisterExtModuleElement: int (), <./libxslt/libxslt/extensions.c 1621>
+   99 					xmlHashCreate: <>
+  100 					xmlMutexLock: <>
+  101 					xsltNewExtElement: xsltExtElementPtr (), <./libxslt/libxslt/extensions.c 259>
+  102 						xmlMalloc: <>
+  103 						xsltTransformError: 9
+  104 					xmlHashUpdateEntry2: <>
+  105 					xsltFreeExtElement: void (), <./libxslt/libxslt/extensions.c 285>
+  106 						xmlFree: <>
+  107 					xmlMutexUnlock: <>
+  108 				xsltDocumentComp: xsltElemPreCompPtr (), <./libxslt/libxslt/preproc.c 532>
+  109 					xsltNewStylePreComp: xsltStylePreCompPtr (), <./libxslt/libxslt/preproc.c 225>
+  110 						xsltTransformError: 9
+  111 						xmlMalloc: <>
+  112 						memset: <>
+  113 						xsltCopy: void (), <./libxslt/libxslt/transform.c 3767>
+  114 							XSLT_TRACE: <>
+  115 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  116 							xsltCopyText: xmlNodePtr (), <./libxslt/libxslt/transform.c 857>
+  117 								XSLT_TRACE: <>
+  118 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  119 								xmlHashLookup2: <>
+  120 								xsltAddTextString: xmlNodePtr (), <./libxslt/libxslt/transform.c 708>
+  121 									xmlRealloc: <>
+  122 									xsltTransformError: 9
+  123 									memcpy: <>
+  124 									xmlNodeAddContent: <>
+  125 									xmlStrlen: <>
+  126 								xmlStrlen: <>
+  127 								exit: <>
+  128 								xmlNewCDataBlock: <>
+  129 								xmlNewTextLen: <>
+  130 								xmlDictOwns: <>
+  131 								xmlStrdup: <>
+  132 								xsltAddChild: xmlNodePtr (), <./libxslt/libxslt/transform.c 682>
+  133 									xmlFreeNode: <>
+  134 									xmlAddChild: <>
+  135 								xsltTransformError: 9
+  136 							xsltShallowCopyElem: xmlNodePtr (), <./libxslt/libxslt/transform.c 1206>
+  137 								xsltCopyText: 116
+  138 								xmlDocCopyNode: <>
+  139 								xsltAddChild: 132
+  140 								xsltCopyNamespaceList: xmlNsPtr (), <./libxslt/libxslt/namespaces.c 735>
+  141 									xmlStrEqual: <>
+  142 									xmlSearchNs: <>
+  143 									xmlNewNs: <>
+  144 									xmlHashLookup: <>
+  145 								xsltCopyNamespaceListInternal: xmlNsPtr (), <./libxslt/libxslt/transform.c 1329>
+  146 									xmlStrEqual: <>
+  147 									xmlSearchNs: <>
+  148 									xmlNewNs: <>
+  149 								xsltGetNamespace: xmlNsPtr (), <./libxslt/libxslt/namespaces.c 634>
+  150 									xsltGetSpecialNamespace: xmlNsPtr (), <./libxslt/libxslt/namespaces.c 337>
+  151 										xsltTransformError: 9
+  152 										xmlSearchNs: <>
+  153 										xmlNewNs: <>
+  154 										BAD_CAST: <>
+  155 										xmlStrEqual: <>
+  156 										xmlSearchNsByHref: <>
+  157 										snprintf: <>
+  158 									xmlHashLookup: <>
+  159 									xsltNextImport: xsltStylesheetPtr (), <./libxslt/libxslt/imports.c 288>
+  160 									xmlSearchNs: <>
+  161 								xsltGetSpecialNamespace: 150
+  162 								xsltTransformError: 9
+  163 							xsltApplyAttributeSet: void (), <./libxslt/libxslt/attributes.c 1039>
+  164 								IS_BLANK: <>
+  165 								xmlDictLookup: <>
+  166 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  167 								xsltSplitQName: const xmlChar * (), <./libxslt/libxslt/xsltutils.c 739>
+  168 									xmlDictLookup: <>
+  169 								xmlHashLookup2: <>
+  170 								xslHandleDebugger: void (), <./libxslt/libxslt/xsltutils.c 2396>
+  171 								xsltAttributeInternal: void (), <./libxslt/libxslt/attributes.c 640>
+  172 									xsltTransformError: 9
+  173 									xslHandleDebugger: 170
+  174 									xsltEvalAttrValueTemplate: xmlChar * (), <./libxslt/libxslt/templates.c 387>
+  175 										xsltGetNsProp: xmlChar * (), <./libxslt/libxslt/xsltutils.c 168>
+  176 											xmlGetProp: <>
+  177 											xmlStrEqual: <>
+  178 											xmlNodeListGetString: <>
+  179 											xmlStrdup: <>
+  180 											xmlGetDtdAttrDesc: <>
+  181 											xmlSearchNs: <>
+  182 										xsltAttrTemplateValueProcessNode: xmlChar * (), <./libxslt/libxslt/templates.c 256>
+  183 											xmlStrndup: <>
+  184 											xmlStrncat: <>
+  185 											xsltTransformError: 9
+  186 											xmlStrcat: <>
+  187 											xmlFree: <>
+  188 											xmlGetNsList: <>
+  189 											xmlXPathCompile: <>
+  190 											xsltEvalXPathStringNs: xmlChar * (), <./libxslt/libxslt/templates.c 116>
+  191 												xmlXPathCompiledEval: <>
+  192 												xmlXPathConvertString: <>
+  193 												xsltTransformError: 9
+  194 												xmlXPathFreeObject: <>
+  195 												XSLT_TRACE: <>
+  196 												xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  197 											xmlXPathFreeCompExpr: <>
+  198 										XSLT_TRACE: <>
+  199 										xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  200 										xmlFree: <>
+  201 									error: <>
+  202 									xmlValidateQName: <>
+  203 									xsltSplitQName: 167
+  204 									xmlFree: <>
+  205 									xmlStrncasecmp: <>
+  206 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  207 									xmlDictLookup: <>
+  208 									BAD_CAST: <>
+  209 									xmlSearchNs: <>
+  210 									xmlHasNsProp: <>
+  211 									xsltTreeAcquireStoredNs: xmlNsPtr (), <./libxslt/libxslt/xslt.c 1813>
+  212 										xsltTreeEnsureXMLDecl: xmlNsPtr (), <./libxslt/libxslt/xslt.c 1764>
+  213 											xmlMalloc: <>
+  214 											xmlGenericError: <>
+  215 											memset: <>
+  216 											xmlDictLookup: <>
+  217 											xmlStrdup: <>
+  218 										xmlStrEqual: <>
+  219 										xmlNewNs: <>
+  220 									xmlStrdup: <>
+  221 									xsltGetSpecialNamespace: 150
+  222 									xmlSetNsProp: <>
+  223 									xmlNewText: <>
+  224 									xmlIsID: <>
+  225 									xmlAddID: <>
+  226 									xsltEvalTemplateString: xmlChar * (), <./libxslt/libxslt/templates.c 194>
+  227 										xmlNewDocNode: <>
+  228 										xsltTransformError: 9
+  229 										xsltApplyOneTemplate: void (), <./libxslt/libxslt/transform.c 3209>
+  230 											xsltLocalVariablePush: int (), <./libxslt/libxslt/transform.c 2148>
+  231 												xmlMalloc: <>
+  232 												xmlGenericError: <>
+  233 												xmlRealloc: <>
+  234 											xsltApplySequenceConstructor: void (), <./libxslt/libxslt/transform.c 2232>
+  235 												xsltDebuggerStartSequenceConstructor: xmlNodePtr (), <./libxslt/libxslt/transform.c 2100>
+  236 													xslAddCall: int (), <./libxslt/libxslt/xsltutils.c 2413>
+  237 													xslDropCall: void (), <./libxslt/libxslt/xsltutils.c 2426>
+  238 													xslHandleDebugger: 170
+  239 												XSLT_TRACE: <>
+  240 												xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  241 												error: <>
+  242 												xslHandleDebugger: 170
+  243 												IS_XSLT_ELEM_FAST: <>
+  244 												IS_XSLT_NAME: <>
+  245 												xsltMessage: void (), <./libxslt/libxslt/xsltutils.c 428>
+  246 													error: <>
+  247 													xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  248 													xmlGetNsProp: <>
+  249 													xmlStrEqual: <>
+  250 													xmlFree: <>
+  251 													xsltEvalTemplateString: 226
+  252 													xmlStrlen: <>
+  253 												xsltTransformError: 9
+  254 												xmlDocCopyNode: <>
+  255 												xsltAddChild: 132
+  256 												xmlSearchNs: <>
+  257 												xmlStrEqual: <>
+  258 												xmlNewNs: <>
+  259 												xsltGetSpecialNamespace: 150
+  260 												xsltAttrListTemplateProcess: xmlAttrPtr (), <./libxslt/libxslt/templates.c 626>
+  261 													xmlStrEqual: <>
+  262 													xsltTransformError: 9
+  263 													error: <>
+  264 													xmlDictLookup: <>
+  265 													BAD_CAST: <>
+  266 													xmlNewDocProp: <>
+  267 													xsltGetSpecialNamespace: 150
+  268 													xsltGetNamespace: 149
+  269 													xmlNewText: <>
+  270 													xsltEvalAVT: xmlChar * (), <./libxslt/libxslt/attrvt.c 359>
+  271 														xmlStrcat: <>
+  272 														xsltEvalXPathStringNs: 190
+  273 														xmlFree: <>
+  274 													xmlStrdup: <>
+  275 													xmlIsID: <>
+  276 													xmlAddID: <>
+  277 													xsltApplyAttributeSet: 163
+  278 												xsltApplyFallbacks: int (), <./libxslt/libxslt/transform.c 1727>
+  279 													IS_XSLT_ELEM: <>
+  280 													xmlStrEqual: <>
+  281 													BAD_CAST: <>
+  282 													xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  283 													xsltApplySequenceConstructor: 234
+  284 												xsltReleaseLocalRVTs: void (), <./libxslt/libxslt/transform.c 2186>
+  285 													xsltReleaseRVT: void (), <./libxslt/libxslt/variables.c 319>
+  286 														xsltFreeDocumentKeys: void (), <./libxslt/libxslt/keys.c 915>
+  287 															xsltFreeKeyTableList: void (), <./libxslt/libxslt/keys.c 174>
+  288 																xsltFreeKeyTable: void (), <./libxslt/libxslt/keys.c 153>
+  289 																	xmlFree: <>
+  290 																	xmlHashFree: <>
+  291 																	xmlXPathFreeNodeSet: <>
+  292 																	memset: <>
+  293 														xmlFree: <>
+  294 														xmlFreeNodeList: <>
+  295 														xmlFreeIDTable: <>
+  296 														xmlFreeRefTable: <>
+  297 														xmlFreeDoc: <>
+  298 												xsltParseStylesheetVariable: void (), <./libxslt/libxslt/variables.c 2114>
+  299 													xsltTransformError: 9
+  300 													XSLT_TRACE: <>
+  301 													xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  302 													xsltRegisterVariable: int (), <./libxslt/libxslt/variables.c 1778>
+  303 														xsltCheckStackElem: int (), <./libxslt/libxslt/variables.c 696>
+  304 															xsltStackLookup: xsltStackElemPtr (), <./libxslt/libxslt/variables.c 627>
+  305 																xmlDictLookup: <>
+  306 														xsltTransformError: 9
+  307 														XSLT_TRACE: <>
+  308 														xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  309 														xsltBuildVariable: xsltStackElemPtr (), <./libxslt/libxslt/variables.c 1730>
+  310 															XSLT_TRACE: <>
+  311 															xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  312 															xsltNewStackElem: xsltStackElemPtr (), <./libxslt/libxslt/variables.c 474>
+  313 																xmlMalloc: <>
+  314 																xsltTransformError: 9
+  315 																memset: <>
+  316 															xsltEvalVariable: xmlXPathObjectPtr (), <./libxslt/libxslt/variables.c 799>
+  317 																XSLT_TRACE: <>
+  318 																xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  319 																xmlXPathCompile: <>
+  320 																xmlXPathCompiledEval: <>
+  321 																xmlXPathFreeCompExpr: <>
+  322 																xsltTransformError: 9
+  323 																xmlXPathDebugDumpObject: <>
+  324 																xmlXPathNewCString: <>
+  325 																xsltCreateRVT: 75
+  326 																error: <>
+  327 																xsltApplyOneTemplate: 229
+  328 																xmlXPathNewValueTree: <>
+  329 														xsltAddStackElem: int (), <./libxslt/libxslt/variables.c 731>
+  330 															xmlMalloc: <>
+  331 															xmlGenericError: <>
+  332 															xmlRealloc: <>
+  333 												func: <>
+  334 												xsltExtElementLookup: xsltTransformFunction (), <./libxslt/libxslt/extensions.c 1666>
+  335 													XML_CAST_FPTR: <>
+  336 													xmlHashLookup2: <>
+  337 													xsltExtModuleElementLookup: xsltTransformFunction (), <./libxslt/libxslt/extensions.c 1696>
+  338 														xmlMutexLock: <>
+  339 														xmlHashLookup2: <>
+  340 														xmlMutexUnlock: <>
+  341 														xsltExtModuleRegisterDynamic: int (), <./libxslt/libxslt/extensions.c 459>
+  342 															xmlHashCreate: <>
+  343 															xmlMutexLock: <>
+  344 															xmlHashLookup: <>
+  345 															xmlMutexUnlock: <>
+  346 															xmlStrstr: <>
+  347 															BAD_CAST: <>
+  348 															xmlStrdup: <>
+  349 															getenv: <>
+  350 															LIBXSLT_DEFAULT_PLUGINS_PATH: <>
+  351 															xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  352 															xmlStrPrintf: <>
+  353 															xmlCheckFilename: <>
+  354 															xmlFree: <>
+  355 															xmlModuleOpen: <>
+  356 															xmlStrcat: <>
+  357 															xmlModuleSymbol: <>
+  358 															xmlHashAddEntry: <>
+  359 															xmlModuleClose: <>
+  360 												XSLT_IS_TEXT_NODE: <>
+  361 												xsltCopyText: 116
+  362 												IS_XSLT_ELEM: <>
+  363 												xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  364 												function: <>
+  365 												xsltApplySequenceConstructor: 234
+  366 												xsltShallowCopyElem: 136
+  367 												xmlHashLookup: <>
+  368 												xsltNextImport: 159
+  369 												xsltGetNamespace: 149
+  370 												xsltLocalVariablePop: void (), <./libxslt/libxslt/transform.c 181>
+  371 													xsltFreeStackElemList: void (), <./libxslt/libxslt/variables.c 603>
+  372 														xsltFreeStackElem: void (), <./libxslt/libxslt/variables.c 536>
+  373 															xmlXPathFreeObject: <>
+  374 															xsltRegisterLocalRVT: 80
+  375 															xsltReleaseRVT: 285
+  376 															memset: <>
+  377 															xmlFree: <>
+  378 												xslDropCall: 237
+  379 											xsltLocalVariablePop: 370
+  380 										xmlNodeGetContent: <>
+  381 										xmlFreeNode: <>
+  382 								xsltNextImport: 159
+  383 							xsltShallowCopyAttr: xmlAttrPtr (), <./libxslt/libxslt/transform.c 1031>
+  384 								xsltTransformError: 9
+  385 								xmlNodeListGetString: <>
+  386 								xsltGetSpecialNamespace: 150
+  387 								xmlSetNsProp: <>
+  388 								xmlFree: <>
+  389 								xmlNewDocText: <>
+  390 								xmlDictLookup: <>
+  391 								BAD_CAST: <>
+  392 							xmlNewDocPI: <>
+  393 							xsltAddChild: 132
+  394 							xmlNewComment: <>
+  395 							xsltShallowCopyNsNode: xmlNsPtr (), <./libxslt/libxslt/transform.c 1386>
+  396 								xsltTransformError: 9
+  397 								xmlStrEqual: <>
+  398 								BAD_CAST: <>
+  399 								xmlSearchNs: <>
+  400 								xmlNewNs: <>
+  401 							xsltApplySequenceConstructor: 234
+  402 						xsltSort: void (), <./libxslt/libxslt/transform.c 3745>
+  403 							xsltTransformError: 9
+  404 						xsltText: void (), <./libxslt/libxslt/transform.c 3886>
+  405 							xsltTransformError: 9
+  406 							xmlNewDocText: <>
+  407 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  408 							xsltAddChild: 132
+  409 						xsltElement: void (), <./libxslt/libxslt/transform.c 3923>
+  410 							xsltEvalAttrValueTemplate: 174
+  411 							xsltTransformError: 9
+  412 							error: <>
+  413 							xmlValidateQName: <>
+  414 							xsltSplitQName: 167
+  415 							xmlFree: <>
+  416 							xmlStrncasecmp: <>
+  417 							xmlNewDocNodeEatName: <>
+  418 							xmlNewDocNode: <>
+  419 							xsltAddChild: 132
+  420 							xmlDictLookup: <>
+  421 							BAD_CAST: <>
+  422 							xmlSearchNs: <>
+  423 							xsltGetSpecialNamespace: 150
+  424 							xsltApplyAttributeSet: 163
+  425 							xsltApplySequenceConstructor: 234
+  426 						xsltAttribute: void (), <./libxslt/libxslt/attributes.c 1021>
+  427 							xsltAttributeInternal: 171
+  428 						xsltComment: void (), <./libxslt/libxslt/transform.c 4112>
+  429 							xsltEvalTemplateString: 226
+  430 							xmlStrlen: <>
+  431 							xmlStrstr: <>
+  432 							BAD_CAST: <>
+  433 							xsltTransformError: 9
+  434 							XSLT_TRACE: <>
+  435 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  436 							xmlNewComment: <>
+  437 							xsltAddChild: 132
+  438 							xmlFree: <>
+  439 						xsltProcessingInstruction: void (), <./libxslt/libxslt/transform.c 4156>
+  440 							xsltEvalAttrValueTemplate: 174
+  441 							xsltTransformError: 9
+  442 							error: <>
+  443 							xsltEvalTemplateString: 226
+  444 							xmlStrstr: <>
+  445 							BAD_CAST: <>
+  446 							XSLT_TRACE: <>
+  447 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  448 							xmlNewDocPI: <>
+  449 							xsltAddChild: 132
+  450 							xmlFree: <>
+  451 						xsltCopyOf: void (), <./libxslt/libxslt/transform.c 4222>
+  452 							xsltTransformError: 9
+  453 							XSLT_TRACE: <>
+  454 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  455 							xmlXPathCompiledEval: <>
+  456 							xsltCopyTreeList: xmlNodePtr (), <./libxslt/libxslt/transform.c 1293>
+  457 								xsltCopyTreeInternal: xmlNodePtr (), <./libxslt/libxslt/transform.c 1497>
+  458 									xsltCopyTextString: xmlNodePtr (), <./libxslt/libxslt/transform.c 761>
+  459 										XSLT_TRACE: <>
+  460 										xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  461 										xmlStrlen: <>
+  462 										xmlHashLookup2: <>
+  463 										xsltAddTextString: 120
+  464 										xmlNewCDataBlock: <>
+  465 										xmlNewTextLen: <>
+  466 										xsltAddChild: 132
+  467 										xsltTransformError: 9
+  468 									xsltShallowCopyAttr: 383
+  469 									xsltShallowCopyNsNode: 395
+  470 									XSLT_IS_RES_TREE_FRAG: <>
+  471 									xsltCopyTreeList: 456
+  472 									xmlDocCopyNode: <>
+  473 									xsltAddChild: 132
+  474 									xmlGetNsList: <>
+  475 									xmlSearchNs: <>
+  476 									xmlStrEqual: <>
+  477 									xmlSearchNsByHref: <>
+  478 									xmlNewNs: <>
+  479 									xmlFree: <>
+  480 									xsltCopyNamespaceList: 140
+  481 									xsltCopyNamespaceListInternal: 145
+  482 									xsltGetSpecialNamespace: 150
+  483 									xsltCopyAttrListNoOverwrite: int (), <./libxslt/libxslt/transform.c 1130>
+  484 										xsltGetSpecialNamespace: 150
+  485 										xmlNewNsProp: <>
+  486 										xmlNodeListGetString: <>
+  487 										BAD_CAST: <>
+  488 										xmlFree: <>
+  489 									xsltTransformError: 9
+  490 							xsltShallowCopyAttr: 383
+  491 							xsltCopyTreeInternal: 457
+  492 							IS_XSLT_REAL_NODE: <>
+  493 							xmlXPathCastToString: <>
+  494 							xsltCopyTextString: 458
+  495 							xmlFree: <>
+  496 							xmlXPathFreeObject: <>
+  497 						xsltValueOf: void (), <./libxslt/libxslt/transform.c 4407>
+  498 							xsltTransformError: 9
+  499 							XSLT_TRACE: <>
+  500 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  501 							xmlXPathCompiledEval: <>
+  502 							xmlXPathCastToString: <>
+  503 							error: <>
+  504 							xsltCopyTextString: 458
+  505 							xmlFree: <>
+  506 							xmlXPathFreeObject: <>
+  507 						xsltNumber: void (), <./libxslt/libxslt/transform.c 4523>
+  508 							xsltTransformError: 9
+  509 							xsltNumberFormat: void (), <./libxslt/libxslt/numbers.c 712>
+  510 								xsltEvalAttrValueTemplate: 174
+  511 								xmlBufferCreate: <>
+  512 								xsltNumberFormatTokenize: void (), <./libxslt/libxslt/numbers.c 318>
+  513 									BAD_CAST: <>
+  514 									IS_LETTER: <>
+  515 									xmlStringCurrentChar: <>
+  516 									IS_DIGIT: <>
+  517 									xmlStrndup: <>
+  518 									IS_DIGIT_ONE: <>
+  519 									IS_DIGIT_ZERO: <>
+  520 								xsltNumberFormatGetValue: int (), <./libxslt/libxslt/numbers.c 676>
+  521 									xmlBufferCreate: <>
+  522 									xmlBufferCCat: <>
+  523 									xmlBufferCat: <>
+  524 									xmlXPathEvalExpression: <>
+  525 									xmlBufferContent: <>
+  526 									xmlXPathFreeObject: <>
+  527 									xmlBufferFree: <>
+  528 								xsltNumberFormatInsertNumbers: void (), <./libxslt/libxslt/numbers.c 424>
+  529 									xmlBufferCat: <>
+  530 									xmlBufferCCat: <>
+  531 									xmlXPathIsInf: <>
+  532 									xmlXPathIsNaN: <>
+  533 									xsltNumberFormatAlpha: void (), <./libxslt/libxslt/numbers.c 230>
+  534 										fmod: <>
+  535 										fabs: <>
+  536 										xmlBufferCCat: <>
+  537 									xsltNumberFormatRoman: void (), <./libxslt/libxslt/numbers.c 256>
+  538 										xmlBufferCCat: <>
+  539 									IS_DIGIT_ZERO: <>
+  540 									xsltNumberFormatDecimal: void (), <./libxslt/libxslt/numbers.c 156>
+  541 										fabs: <>
+  542 										xmlCopyCharMultiByte: <>
+  543 										fmod: <>
+  544 										memcpy: <>
+  545 										xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  546 										xmlBufferCat: <>
+  547 								xmlStrEqual: <>
+  548 								xsltNumberFormatGetMultipleLevel: int (), <./libxslt/libxslt/numbers.c 613>
+  549 									xmlXPathNewParserContext: <>
+  550 									xmlXPathNextAncestor: <>
+  551 									xsltTestCompMatchList: int (), <./libxslt/libxslt/pattern.c 1207>
+  552 										xsltTestCompMatch: int (), <./libxslt/libxslt/pattern.c 631>
+  553 											xsltTransformError: 9
+  554 											xmlStrEqual: <>
+  555 											xsltPatPushState: int (), <./libxslt/libxslt/pattern.c 478>
+  556 												xmlMalloc: <>
+  557 												xmlRealloc: <>
+  558 												xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  559 												fprintf: <>
+  560 											xmlGetID: <>
+  561 											xsltGetKey: xmlNodeSetPtr (), <./libxslt/libxslt/keys.c 411>
+  562 												xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  563 												xsltInitAllDocKeys: int (), <./libxslt/libxslt/keys.c 529>
+  564 													fprintf: <>
+  565 													xmlStrEqual: <>
+  566 													xsltInitDocKeyTable: int (), <./libxslt/libxslt/keys.c 473>
+  567 														fprintf: <>
+  568 														xmlStrEqual: <>
+  569 														xsltInitCtxtKey: int (), <./libxslt/libxslt/keys.c 598>
+  570 															fprintf: <>
+  571 															XSLT_TRACE: <>
+  572 															xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  573 															xsltTransformError: 9
+  574 															xmlXPathCompiledEval: <>
+  575 															error: <>
+  576 															exit: <>
+  577 															xmlStrEqual: <>
+  578 															xsltNewKeyTable: xsltKeyTablePtr (), <./libxslt/libxslt/keys.c 128>
+  579 																xmlMalloc: <>
+  580 																xsltTransformError: 9
+  581 																memset: <>
+  582 																xmlStrdup: <>
+  583 																xmlHashCreate: <>
+  584 															IS_XSLT_REAL_NODE: <>
+  585 															xmlXPathFreeObject: <>
+  586 															xmlXPathCastNodeToString: <>
+  587 															xmlXPathCastToString: <>
+  588 															xmlHashLookup: <>
+  589 															xmlXPathNodeSetCreate: <>
+  590 															xmlHashAddEntry: <>
+  591 															xmlXPathNodeSetAdd: <>
+  592 															xmlFree: <>
+  593 														xsltNextImport: 159
+  594 														XSLT_TRACE: <>
+  595 														xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  596 														xsltTransformError: 9
+  597 													xsltNextImport: 159
+  598 												xmlStrEqual: <>
+  599 												xmlHashLookup: <>
+  600 												xsltInitDocKeyTable: 566
+  601 											xmlFree: <>
+  602 											xsltTestCompMatchDirect: int (), <./libxslt/libxslt/pattern.c 521>
+  603 												XSLT_IS_RES_TREE_FRAG: <>
+  604 												XSLT_RUNTIME_EXTRA: <>
+  605 												XSLT_RUNTIME_EXTRA_LST: <>
+  606 												xmlXPathEval: <>
+  607 												xmlXPathFreeObject: <>
+  608 												XSLT_RUNTIME_EXTRA_FREE: <>
+  609 											XSLT_IS_RES_TREE_FRAG: <>
+  610 											XSLT_RUNTIME_EXTRA: <>
+  611 											xsltEvalXPathPredicate: int (), <./libxslt/libxslt/templates.c 56>
+  612 												xmlXPathCompiledEval: <>
+  613 												xmlXPathEvalPredicate: <>
+  614 												xmlXPathFreeObject: <>
+  615 												XSLT_TRACE: <>
+  616 												xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  617 											fprintf: <>
+  618 									xmlStrEqual: <>
+  619 									xmlXPathNextPrecedingSibling: <>
+  620 									xmlXPathFreeParserContext: <>
+  621 								xsltNumberFormatGetAnyLevel: int (), <./libxslt/libxslt/numbers.c 535>
+  622 									xmlStrEqual: <>
+  623 									xsltTestCompMatchList: 551
+  624 								xsltCopyTextString: 458
+  625 								xmlBufferContent: <>
+  626 								xmlFree: <>
+  627 								xmlBufferFree: <>
+  628 						xsltApplyImports: void (), <./libxslt/libxslt/transform.c 4556>
+  629 							xsltTransformError: 9
+  630 							xsltGetTemplate: xsltTemplatePtr (), <./libxslt/libxslt/pattern.c 2238>
+  631 								xsltNextImport: 159
+  632 								xmlHashLookup3: <>
+  633 								xsltTestCompMatch: 552
+  634 								xsltComputeAllKeys: int (), <./libxslt/libxslt/pattern.c 2193>
+  635 									xsltTransformError: 9
+  636 									xsltNewDocument: xsltDocumentPtr (), <./libxslt/libxslt/documents.c 144>
+  637 										xmlMalloc: <>
+  638 										xsltTransformError: 9
+  639 										memset: <>
+  640 										XSLT_IS_RES_TREE_FRAG: <>
+  641 									xsltInitAllDocKeys: 563
+  642 								error: <>
+  643 							xsltApplyXSLTTemplate: void (), <./libxslt/libxslt/transform.c 2940>
+  644 								xsltTransformError: 9
+  645 								xsltDebuggerStartSequenceConstructor: 235
+  646 								xsltDebug: void (), <./libxslt/libxslt/extra.c 58>
+  647 									xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  648 									xmlXPathDebugDumpObject: <>
+  649 								xsltTimestamp: long (), <./libxslt/libxslt/xsltutils.c 1814>
+  650 									QueryPerformanceCounter: <>
+  651 									QueryPerformanceFrequency: <>
+  652 									clock_gettime: <>
+  653 									xsltCalibrateTimestamps: long (), <./libxslt/libxslt/xsltutils.c 1786>
+  654 										xsltTimestamp: 649
+  655 									gettimeofday: <>
+  656 								profPush: int (), <./libxslt/libxslt/transform.c 241>
+  657 									xmlMalloc: <>
+  658 									xmlGenericError: <>
+  659 									xmlRealloc: <>
+  660 								profCallgraphAdd: void (), <./libxslt/libxslt/transform.c 292>
+  661 									xmlMalloc: <>
+  662 									xmlGenericError: <>
+  663 									xmlRealloc: <>
+  664 								templPush: int (), <./libxslt/libxslt/transform.c 116>
+  665 									xmlMalloc: <>
+  666 									xmlGenericError: <>
+  667 									xmlRealloc: <>
+  668 								XSLT_TRACE: <>
+  669 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  670 								xmlStrEqual: <>
+  671 								BAD_CAST: <>
+  672 								IS_XSLT_ELEM: <>
+  673 								xsltLocalVariablePush: 230
+  674 								xsltParseStylesheetParam: void (), <./libxslt/libxslt/variables.c 2156>
+  675 									xsltTransformError: 9
+  676 									XSLT_TRACE: <>
+  677 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  678 									xsltRegisterVariable: 302
+  679 								xsltApplySequenceConstructor: 234
+  680 								xsltTemplateParamsCleanup: void (), <./libxslt/libxslt/transform.c 211>
+  681 									xsltFreeStackElemList: 371
+  682 								xsltReleaseRVT: 285
+  683 								templPop: xsltTemplatePtr (), <./libxslt/libxslt/transform.c 152>
+  684 								profPop: long (), <./libxslt/libxslt/transform.c 275>
+  685 								xsltCalibrateAdjust: void (), <./libxslt/libxslt/xsltutils.c 1801>
+  686 								xslDropCall: 237
+  687 						xsltCallTemplate: void (), <./libxslt/libxslt/transform.c 4621>
+  688 							xsltTransformError: 9
+  689 							xsltFindTemplate: xsltTemplatePtr (), <./libxslt/libxslt/imports.c 394>
+  690 								xmlStrEqual: <>
+  691 								xsltNextImport: 159
+  692 							XSLT_TRACE: <>
+  693 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  694 							xslHandleDebugger: 170
+  695 							IS_XSLT_ELEM: <>
+  696 							IS_XSLT_NAME: <>
+  697 							xsltParseStylesheetCallerParam: xsltStackElemPtr (), <./libxslt/libxslt/variables.c 1927>
+  698 								xsltTransformError: 9
+  699 								XSLT_TRACE: <>
+  700 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  701 								xsltBuildVariable: 309
+  702 							xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  703 							xsltApplyXSLTTemplate: 643
+  704 							xsltFreeStackElemList: 371
+  705 						xsltApplyTemplates: void (), <./libxslt/libxslt/transform.c 4724>
+  706 							xsltTransformError: 9
+  707 							XSLT_TRACE: <>
+  708 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  709 							error: <>
+  710 							xmlXPathCompiledEval: <>
+  711 							xmlXPathFreeObject: <>
+  712 							exit: <>
+  713 							XSLT_IS_RES_TREE_FRAG: <>
+  714 							xmlXPathNodeSetCreate: <>
+  715 							IS_BLANK_NODE: <>
+  716 							xmlHashLookup2: <>
+  717 							BAD_CAST: <>
+  718 							xmlStrEqual: <>
+  719 							xmlXPathNodeSetAddUnique: <>
+  720 							xmlUnlinkNode: <>
+  721 							xmlFreeNode: <>
+  722 							xslHandleDebugger: 170
+  723 							IS_XSLT_ELEM: <>
+  724 							IS_XSLT_NAME: <>
+  725 							xsltParseStylesheetCallerParam: 697
+  726 							xsltDoSortFunction: void (), <./libxslt/libxslt/xsltutils.c 1349>
+  727 								xsltSortFunction: xsltSortFunc, <./libxslt/libxslt/xsltutils.c 1332>
+  728 							xsltProcessOneNode: void (), <./libxslt/libxslt/transform.c 2026>
+  729 								xsltGetTemplate: 630
+  730 								XSLT_TRACE: <>
+  731 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  732 								xsltDefaultProcessOneNode: void (), <./libxslt/libxslt/transform.c 1783>
+  733 									XSLT_TRACE: <>
+  734 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  735 									xsltCopyText: 116
+  736 									xsltTransformError: 9
+  737 									xmlUnlinkNode: <>
+  738 									xmlFreeNode: <>
+  739 									xsltProcessOneNode: 728
+  740 									xsltGetTemplate: 630
+  741 									xsltApplyXSLTTemplate: 643
+  742 								xsltApplyXSLTTemplate: 643
+  743 							xsltFreeStackElemList: 371
+  744 							xmlXPathFreeNodeSet: <>
+  745 						xsltChoose: void (), <./libxslt/libxslt/transform.c 5119>
+  746 							xsltTransformError: 9
+  747 							IS_XSLT_ELEM: <>
+  748 							IS_XSLT_NAME: <>
+  749 							error: <>
+  750 							xslHandleDebugger: 170
+  751 							XSLT_TRACE: <>
+  752 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  753 							xmlXPathCompiledEvalToBoolean: <>
+  754 							xmlXPathCompiledEval: <>
+  755 							xmlXPathConvertBoolean: <>
+  756 							xmlXPathFreeObject: <>
+  757 							exit: <>
+  758 							xsltApplySequenceConstructor: 234
+  759 						xsltIf: void (), <./libxslt/libxslt/transform.c 5315>
+  760 							xsltTransformError: 9
+  761 							XSLT_TRACE: <>
+  762 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  763 							xmlXPathCompiledEvalToBoolean: <>
+  764 							xsltReleaseLocalRVTs: 284
+  765 							error: <>
+  766 							xsltApplySequenceConstructor: 234
+  767 							xmlXPathCompiledEval: <>
+  768 							xmlXPathConvertBoolean: <>
+  769 							xmlXPathFreeObject: <>
+  770 						xsltForEach: void (), <./libxslt/libxslt/transform.c 5498>
+  771 							xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  772 							xsltTransformError: 9
+  773 							XSLT_TRACE: <>
+  774 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  775 							xmlXPathCompiledEval: <>
+  776 							error: <>
+  777 							exit: <>
+  778 							IS_XSLT_ELEM: <>
+  779 							IS_XSLT_NAME: <>
+  780 							xslHandleDebugger: 170
+  781 							xsltDoSortFunction: 726
+  782 							xsltApplySequenceConstructor: 234
+  783 							xmlXPathFreeObject: <>
+  784 						xsltDocumentElem: void (), <./libxslt/libxslt/transform.c 3259>
+  785 							xmlStrEqual: <>
+  786 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  787 							xsltEvalAttrValueTemplate: 174
+  788 							xmlXPathCompile: <>
+  789 							xsltEvalXPathString: xmlChar * (), <./libxslt/libxslt/templates.c 176>
+  790 								xsltEvalXPathStringNs: 190
+  791 							xmlXPathFreeCompExpr: <>
+  792 							xmlFree: <>
+  793 							xmlStrdup: <>
+  794 							xsltTransformError: 9
+  795 							xmlBuildURI: <>
+  796 							xmlURIEscapeStr: <>
+  797 							BAD_CAST: <>
+  798 							xsltCheckWrite: int (), <./libxslt/libxslt/security.c 368>
+  799 								check: <>
+  800 								xmlParseURI: <>
+  801 								xmlCreateURI: <>
+  802 								xsltTransformError: 9
+  803 								xmlStrdup: <>
+  804 								xmlStrEqual: <>
+  805 								BAD_CAST: <>
+  806 								xsltCheckWritePath: int (), <./libxslt/libxslt/security.c 306>
+  807 									check: <>
+  808 									xsltGetSecurityPrefs: xsltSecurityCheck (), <./libxslt/libxslt/security.c 158>
+  809 									xsltTransformError: 9
+  810 									xmlParserGetDirectory: <>
+  811 									xsltCheckFilename: int (), <./libxslt/libxslt/security.c 278>
+  812 										GetFileAttributes: <>
+  813 										stat: <>
+  814 										S_ISDIR: <>
+  815 									xmlFree: <>
+  816 									xsltCheckWritePath: 806
+  817 									mkdir: <>
+  818 								xmlFreeURI: <>
+  819 								xsltGetSecurityPrefs: 808
+  820 							xsltNewStylesheet: xsltStylesheetPtr (), <./libxslt/libxslt/xslt.c 737>
+  821 								xmlMalloc: <>
+  822 								xsltTransformError: 9
+  823 								memset: <>
+  824 								xsltNewDecimalFormat: xsltDecimalFormatPtr (), <./libxslt/libxslt/xslt.c 278>
+  825 									xmlMalloc: <>
+  826 									xmlStrdup: <>
+  827 									BAD_CAST: <>
+  828 								xmlDictCreate: <>
+  829 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  830 								xsltInit: void (), <./libxslt/libxslt/xslt.c 229>
+  831 									xmlNewRMutex: <>
+  832 									xsltRegisterAllExtras: void (), <./libxslt/libxslt/extra.c 294>
+  833 										xsltRegisterExtModuleFunction: 62
+  834 										xsltFunctionNodeSet: 71
+  835 										xsltFunctionLocalTime: void (), <./libxslt/libxslt/extra.c 172>
+  836 											xsltTransformError: 9
+  837 											xsltXPathGetTransformContext: 73
+  838 											valuePop: <>
+  839 											xmlXPathConvertString: <>
+  840 											valuePush: <>
+  841 											xmlXPathNewString: <>
+  842 											memset: <>
+  843 											strncpy: <>
+  844 											strtol: <>
+  845 											mktime: <>
+  846 											localtime: <>
+  847 											asctime: <>
+  848 											strcpy: <>
+  849 										xsltRegisterExtModuleElement: 98
+  850 										xsltDebug: 646
+  851 										xsltDocumentComp: 108
+  852 										xsltDocumentElem: 784
+  853 								xsltFreeStylesheet: void (), <./libxslt/libxslt/xslt.c 930>
+  854 									xsltCleanupStylesheetTree: int (), <./libxslt/libxslt/xslt.c 875>
+  855 									xmlDocGetRootElement: <>
+  856 									XSLT_HAS_INTERNAL_NSMAP: <>
+  857 									xsltRestoreDocumentNamespaces: int (), <./libxslt/libxslt/xslt.c 6275>
+  858 									XSLT_GET_INTERNAL_NSMAP: <>
+  859 									xsltFreeKeys: void (), <./libxslt/libxslt/keys.c 198>
+  860 										xsltFreeKeyDefList: void (), <./libxslt/libxslt/keys.c 108>
+  861 											xsltFreeKeyDef: void (), <./libxslt/libxslt/keys.c 80>
+  862 												xmlXPathFreeCompExpr: <>
+  863 												xmlFree: <>
+  864 												memset: <>
+  865 									xsltFreeExts: void (), <./libxslt/libxslt/extensions.c 479>
+  866 										xsltFreeExtDefList: void (), <./libxslt/libxslt/extensions.c 150>
+  867 											xsltFreeExtDef: void (), <./libxslt/libxslt/extensions.c 132>
+  868 												xmlFree: <>
+  869 									xsltFreeTemplateHashes: void (), <./libxslt/libxslt/pattern.c 2493>
+  870 										xmlHashFree: <>
+  871 										xsltFreeCompMatchList: void (), <./libxslt/libxslt/pattern.c 209>
+  872 											xsltFreeCompMatch: void (), <./libxslt/libxslt/pattern.c 176>
+  873 												xmlFree: <>
+  874 												xmlXPathFreeCompExpr: <>
+  875 												memset: <>
+  876 									xsltFreeDecimalFormatList: void (), <./libxslt/libxslt/xslt.c 335>
+  877 										xsltFreeDecimalFormat: void (), <./libxslt/libxslt/xslt.c 305>
+  878 											xmlFree: <>
+  879 									xsltFreeTemplateList: void (), <./libxslt/libxslt/xslt.c 440>
+  880 										xsltFreeTemplate: void (), <./libxslt/libxslt/xslt.c 410>
+  881 											xmlFree: <>
+  882 											memset: <>
+  883 									xsltFreeAttributeSetsHashes: void (), <./libxslt/libxslt/attributes.c 1134>
+  884 										xmlHashFree: <>
+  885 										xsltFreeAttrElemList: void (), <./libxslt/libxslt/attributes.c 141>
+  886 											xsltFreeAttrElem: void (), <./libxslt/libxslt/attributes.c 130>
+  887 												xmlFree: <>
+  888 									xsltFreeNamespaceAliasHashes: void (), <./libxslt/libxslt/namespaces.c 847>
+  889 										xmlHashFree: <>
+  890 									xsltFreeStylePreComps: void (), <./libxslt/libxslt/preproc.c 1974>
+  891 										xsltFreeStylePreComp: void (), <./libxslt/libxslt/preproc.c 381>
+  892 											xsltFreeLocale: void (), <./libxslt/libxslt/xsltlocale.c 354>
+  893 												freelocale: <>
+  894 											xmlXPathFreeCompExpr: <>
+  895 											xsltFreeCompMatchList: 871
+  896 											xmlFree: <>
+  897 									xsltFreeStyleDocuments: void (), <./libxslt/libxslt/documents.c 210>
+  898 										XSLT_HAS_INTERNAL_NSMAP: <>
+  899 										XSLT_GET_INTERNAL_NSMAP: <>
+  900 										xsltRestoreDocumentNamespaces: 857
+  901 										xsltFreeDocumentKeys: 286
+  902 										xmlFreeDoc: <>
+  903 										xmlFree: <>
+  904 									xsltShutdownExts: void (), <./libxslt/libxslt/extensions.c 1133>
+  905 										xmlHashScan: <>
+  906 										xsltShutdownExt: void (), <./libxslt/libxslt/extensions.c 1101>
+  907 											xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  908 										xmlHashFree: <>
+  909 										xsltFreeExtData: void (), <./libxslt/libxslt/extensions.c 241>
+  910 											xmlFree: <>
+  911 									xsltFreeStackElemList: 371
+  912 									xmlHashFree: <>
+  913 									xmlFree: <>
+  914 									xsltFreeAVTList: void (), <./libxslt/libxslt/attrvt.c 125>
+  915 										xsltFreeAttrVT: void (), <./libxslt/libxslt/attrvt.c 95>
+  916 											xmlFree: <>
+  917 											xmlXPathFreeCompExpr: <>
+  918 									xsltFreeStylesheetList: void (), <./libxslt/libxslt/xslt.c 853>
+  919 										xsltFreeStylesheet: 853
+  920 									xsltFreePrincipalStylesheetData: void (), <./libxslt/libxslt/xslt.c 630>
+  921 										xmlFree: <>
+  922 										xsltPointerListFree: void (), <./libxslt/libxslt/xsltutils.c 384>
+  923 											xmlFree: <>
+  924 										xsltLREEffectiveNsNodesFree: void (), <./libxslt/libxslt/xslt.c 618>
+  925 											xmlFree: <>
+  926 										xsltFreeNamespaceMap: void (), <./libxslt/libxslt/xslt.c 467>
+  927 											xmlFree: <>
+  928 									xmlFreeDoc: <>
+  929 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  930 									xmlDictFree: <>
+  931 									memset: <>
+  932 							error: <>
+  933 							xsltGetQNameURI: const xmlChar * (), <./libxslt/libxslt/xsltutils.c 772>
+  934 								xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  935 								xmlFree: <>
+  936 								xmlStrdup: <>
+  937 								xmlSearchNs: <>
+  938 							xmlHashCreate: <>
+  939 							IS_BLANK_CH: <>
+  940 							xmlStrndup: <>
+  941 							xmlHashAddEntry2: <>
+  942 							XSLT_GET_IMPORT_PTR: <>
+  943 							htmlNewDoc: <>
+  944 							xsltGetHTMLIDs: int (), <./libxslt/libxslt/transform.c 5740>
+  945 								xmlStrcasecmp: <>
+  946 							htmlNewDocNoDtD: <>
+  947 							xmlDictReference: <>
+  948 							xmlNewDoc: <>
+  949 							xsltApplySequenceConstructor: 234
+  950 							xmlDocGetRootElement: <>
+  951 							xmlDictQLookup: <>
+  952 							xmlStrcasecmp: <>
+  953 							xmlIsBlankNode: <>
+  954 							xmlCreateIntSubset: <>
+  955 							xsltSaveResultToFilename: int (), <./libxslt/libxslt/xsltutils.c 1601>
+  956 								XSLT_GET_IMPORT_PTR: <>
+  957 								xmlFindCharEncodingHandler: <>
+  958 								xmlStrEqual: <>
+  959 								xmlOutputBufferCreateFilename: <>
+  960 								xsltSaveResultTo: int (), <./libxslt/libxslt/xsltutils.c 1440>
+  961 									xmlStrEqual: <>
+  962 									xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+  963 									XSLT_GET_IMPORT_PTR: <>
+  964 									XSLT_GET_IMPORT_INT: <>
+  965 									htmlSetMetaEncoding: <>
+  966 									htmlDocContentDumpFormatOutput: <>
+  967 									xmlOutputBufferFlush: <>
+  968 									htmlDocContentDumpOutput: <>
+  969 									xmlOutputBufferWriteString: <>
+  970 									xmlBufferWriteQuotedString: <>
+  971 									xmlGetCharEncodingName: <>
+  972 									xmlNodeDumpOutput: <>
+  973 								xmlOutputBufferClose: <>
+  974 							xsltFreeStylesheet: 853
+  975 							xmlFreeDoc: <>
+  976 					xmlStrEqual: <>
+  977 					xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+  978 					xsltEvalStaticAttrValueTemplate: const xmlChar * (), <./libxslt/libxslt/templates.c 432>
+  979 						xsltGetNsProp: 175
+  980 						xmlStrchr: <>
+  981 						xmlFree: <>
+  982 						xmlDictLookup: <>
+  983 					error: <>
+  984 				xsltDocumentElem: 784
+  985 			exsltCryptoRegister: void (), <./libxslt/libexslt/crypto.c 810>
+  986 				xsltRegisterExtModuleFunction: 62
+  987 				exsltCryptoMd4Function: void (), <./libxslt/libexslt/crypto.c 493>
+  988 					exsltCryptoPopString: int (), <./libxslt/libexslt/crypto.c 463>
+  989 						xmlXPathSetArityError: <>
+  990 						xmlXPathPopString: <>
+  991 						xmlUTF8Strlen: <>
+  992 						xmlXPathReturnEmptyString: <>
+  993 						xmlFree: <>
+  994 					xmlXPathReturnEmptyString: <>
+  995 					xmlFree: <>
+  996 					PLATFORM_HASH: <>
+  997 					exsltCryptoBin2Hex: void (), <./libxslt/libexslt/crypto.c 54>
+  998 					xmlStrdup: <>
+  999 					xmlXPathReturnString: <>
+ 1000 				exsltCryptoMd5Function: void (), <./libxslt/libexslt/crypto.c 526>
+ 1001 					exsltCryptoPopString: 988
+ 1002 					xmlXPathReturnEmptyString: <>
+ 1003 					xmlFree: <>
+ 1004 					PLATFORM_HASH: <>
+ 1005 					exsltCryptoBin2Hex: 997
+ 1006 					xmlStrdup: <>
+ 1007 					xmlXPathReturnString: <>
+ 1008 				exsltCryptoSha1Function: void (), <./libxslt/libexslt/crypto.c 559>
+ 1009 					exsltCryptoPopString: 988
+ 1010 					xmlXPathReturnEmptyString: <>
+ 1011 					xmlFree: <>
+ 1012 					PLATFORM_HASH: <>
+ 1013 					exsltCryptoBin2Hex: 997
+ 1014 					xmlStrdup: <>
+ 1015 					xmlXPathReturnString: <>
+ 1016 				exsltCryptoRc4EncryptFunction: void (), <./libxslt/libexslt/crypto.c 592>
+ 1017 					xmlXPathSetArityError: <>
+ 1018 					xsltXPathGetTransformContext: 73
+ 1019 					xmlXPathPopString: <>
+ 1020 					xmlUTF8Strlen: <>
+ 1021 					xmlXPathReturnEmptyString: <>
+ 1022 					xmlFree: <>
+ 1023 					xmlMallocAtomic: <>
+ 1024 					xsltTransformError: 9
+ 1025 					memset: <>
+ 1026 					xmlUTF8Strsize: <>
+ 1027 					memcpy: <>
+ 1028 					xmlStrdup: <>
+ 1029 					PLATFORM_RC4_ENCRYPT: <>
+ 1030 					exsltCryptoBin2Hex: 997
+ 1031 					xmlXPathReturnString: <>
+ 1032 				exsltCryptoRc4DecryptFunction: void (), <./libxslt/libexslt/crypto.c 690>
+ 1033 					xmlXPathSetArityError: <>
+ 1034 					xsltXPathGetTransformContext: 73
+ 1035 					xmlXPathPopString: <>
+ 1036 					xmlUTF8Strlen: <>
+ 1037 					xmlXPathReturnEmptyString: <>
+ 1038 					xmlFree: <>
+ 1039 					xmlMallocAtomic: <>
+ 1040 					xsltTransformError: 9
+ 1041 					memset: <>
+ 1042 					xmlUTF8Strsize: <>
+ 1043 					memcpy: <>
+ 1044 					exsltCryptoHex2Bin: int (), <./libxslt/libexslt/crypto.c 84>
+ 1045 					PLATFORM_RC4_DECRYPT: <>
+ 1046 					xmlXPathReturnString: <>
+ 1047 			exsltMathRegister: void (), <./libxslt/libexslt/math.c 1048>
+ 1048 				xsltRegisterExtModuleFunction: 62
+ 1049 				exsltMathMinFunction: void (), <./libxslt/libexslt/math.c 68>
+ 1050 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1051 					xmlXPathPopNodeSet: <>
+ 1052 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1053 					exsltMathMin: double (), <./libxslt/libexslt/math.c 41>
+ 1054 						xmlXPathCastNodeToNumber: <>
+ 1055 						xmlXPathIsNaN: <>
+ 1056 					xmlXPathFreeNodeSet: <>
+ 1057 					xmlFreeNodeList: <>
+ 1058 					xmlXPathReturnNumber: <>
+ 1059 				exsltMathMaxFunction: void (), <./libxslt/libexslt/math.c 137>
+ 1060 					xmlXPathSetArityError: <>
+ 1061 					xmlXPathPopNodeSet: <>
+ 1062 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1063 					exsltMathMax: double (), <./libxslt/libexslt/math.c 110>
+ 1064 						xmlXPathCastNodeToNumber: <>
+ 1065 						xmlXPathIsNaN: <>
+ 1066 					xmlXPathFreeNodeSet: <>
+ 1067 					xmlFreeNodeList: <>
+ 1068 					xmlXPathReturnNumber: <>
+ 1069 				exsltMathHighestFunction: void (), <./libxslt/libexslt/math.c 218>
+ 1070 					xmlXPathSetArityError: <>
+ 1071 					xmlXPathPopNodeSet: <>
+ 1072 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1073 					exsltMathHighest: xmlNodeSetPtr (), <./libxslt/libexslt/math.c 177>
+ 1074 						xmlXPathNodeSetCreate: <>
+ 1075 						xmlXPathCastNodeToNumber: <>
+ 1076 						xmlXPathIsNaN: <>
+ 1077 						xmlXPathNodeSetAddUnique: <>
+ 1078 						xmlXPathEmptyNodeSet: <>
+ 1079 					xmlXPathFreeNodeSet: <>
+ 1080 					xmlFreeNodeList: <>
+ 1081 					xmlXPathReturnNodeSet: <>
+ 1082 				exsltMathLowestFunction: void (), <./libxslt/libexslt/math.c 298>
+ 1083 					xmlXPathSetArityError: <>
+ 1084 					xmlXPathPopNodeSet: <>
+ 1085 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1086 					exsltMathLowest: xmlNodeSetPtr (), <./libxslt/libexslt/math.c 257>
+ 1087 						xmlXPathNodeSetCreate: <>
+ 1088 						xmlXPathCastNodeToNumber: <>
+ 1089 						xmlXPathIsNaN: <>
+ 1090 						xmlXPathNodeSetAddUnique: <>
+ 1091 						xmlXPathEmptyNodeSet: <>
+ 1092 					xmlXPathFreeNodeSet: <>
+ 1093 					xmlFreeNodeList: <>
+ 1094 					xmlXPathReturnNodeSet: <>
+ 1095 				exsltMathConstantFunction: void (), <./libxslt/libexslt/math.c 440>
+ 1096 					xmlXPathSetArityError: <>
+ 1097 					xmlXPathPopNumber: <>
+ 1098 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1099 					xmlXPathPopString: <>
+ 1100 					exsltMathConstant: double (), <./libxslt/libexslt/math.c 358>
+ 1101 						xmlXPathIsNaN: <>
+ 1102 						xmlStrEqual: <>
+ 1103 						BAD_CAST: <>
+ 1104 						xmlStrlen: <>
+ 1105 						xmlStrsub: <>
+ 1106 						xmlXPathCastStringToNumber: <>
+ 1107 						xmlFree: <>
+ 1108 					xmlFree: <>
+ 1109 					xmlXPathReturnNumber: <>
+ 1110 				exsltMathRandomFunction: void (), <./libxslt/libexslt/math.c 491>
+ 1111 					xmlXPathSetArityError: <>
+ 1112 					exsltMathRandom: double (), <./libxslt/libexslt/math.c 474>
+ 1113 						rand: <>
+ 1114 					xmlXPathReturnNumber: <>
+ 1115 				exsltMathAbsFunction: void (), <./libxslt/libexslt/math.c 535>
+ 1116 					xmlXPathSetArityError: <>
+ 1117 					xmlXPathPopNumber: <>
+ 1118 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1119 					exsltMathAbs: double (), <./libxslt/libexslt/math.c 518>
+ 1120 						xmlXPathIsNaN: <>
+ 1121 						fabs: <>
+ 1122 					xmlXPathReturnNumber: <>
+ 1123 				exsltMathSqrtFunction: void (), <./libxslt/libexslt/math.c 578>
+ 1124 					xmlXPathSetArityError: <>
+ 1125 					xmlXPathPopNumber: <>
+ 1126 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1127 					exsltMathSqrt: double (), <./libxslt/libexslt/math.c 561>
+ 1128 						xmlXPathIsNaN: <>
+ 1129 						sqrt: <>
+ 1130 					xmlXPathReturnNumber: <>
+ 1131 				exsltMathPowerFunction: void (), <./libxslt/libexslt/math.c 623>
+ 1132 					xmlXPathSetArityError: <>
+ 1133 					xmlXPathPopNumber: <>
+ 1134 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1135 					exsltMathPower: double (), <./libxslt/libexslt/math.c 606>
+ 1136 						xmlXPathIsNaN: <>
+ 1137 						pow: <>
+ 1138 					xmlXPathReturnNumber: <>
+ 1139 				exsltMathLogFunction: void (), <./libxslt/libexslt/math.c 671>
+ 1140 					xmlXPathSetArityError: <>
+ 1141 					xmlXPathPopNumber: <>
+ 1142 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1143 					exsltMathLog: double (), <./libxslt/libexslt/math.c 654>
+ 1144 						xmlXPathIsNaN: <>
+ 1145 						log: <>
+ 1146 					xmlXPathReturnNumber: <>
+ 1147 				exsltMathSinFunction: void (), <./libxslt/libexslt/math.c 714>
+ 1148 					xmlXPathSetArityError: <>
+ 1149 					xmlXPathPopNumber: <>
+ 1150 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1151 					exsltMathSin: double (), <./libxslt/libexslt/math.c 697>
+ 1152 						xmlXPathIsNaN: <>
+ 1153 						sin: <>
+ 1154 					xmlXPathReturnNumber: <>
+ 1155 				exsltMathCosFunction: void (), <./libxslt/libexslt/math.c 757>
+ 1156 					xmlXPathSetArityError: <>
+ 1157 					xmlXPathPopNumber: <>
+ 1158 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1159 					exsltMathCos: double (), <./libxslt/libexslt/math.c 740>
+ 1160 						xmlXPathIsNaN: <>
+ 1161 						cos: <>
+ 1162 					xmlXPathReturnNumber: <>
+ 1163 				exsltMathTanFunction: void (), <./libxslt/libexslt/math.c 800>
+ 1164 					xmlXPathSetArityError: <>
+ 1165 					xmlXPathPopNumber: <>
+ 1166 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1167 					exsltMathTan: double (), <./libxslt/libexslt/math.c 783>
+ 1168 						xmlXPathIsNaN: <>
+ 1169 						tan: <>
+ 1170 					xmlXPathReturnNumber: <>
+ 1171 				exsltMathAsinFunction: void (), <./libxslt/libexslt/math.c 843>
+ 1172 					xmlXPathSetArityError: <>
+ 1173 					xmlXPathPopNumber: <>
+ 1174 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1175 					exsltMathAsin: double (), <./libxslt/libexslt/math.c 826>
+ 1176 						xmlXPathIsNaN: <>
+ 1177 						asin: <>
+ 1178 					xmlXPathReturnNumber: <>
+ 1179 				exsltMathAcosFunction: void (), <./libxslt/libexslt/math.c 886>
+ 1180 					xmlXPathSetArityError: <>
+ 1181 					xmlXPathPopNumber: <>
+ 1182 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1183 					exsltMathAcos: double (), <./libxslt/libexslt/math.c 869>
+ 1184 						xmlXPathIsNaN: <>
+ 1185 						acos: <>
+ 1186 					xmlXPathReturnNumber: <>
+ 1187 				exsltMathAtanFunction: void (), <./libxslt/libexslt/math.c 929>
+ 1188 					xmlXPathSetArityError: <>
+ 1189 					xmlXPathPopNumber: <>
+ 1190 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1191 					exsltMathAtan: double (), <./libxslt/libexslt/math.c 912>
+ 1192 						xmlXPathIsNaN: <>
+ 1193 						atan: <>
+ 1194 					xmlXPathReturnNumber: <>
+ 1195 				exsltMathAtan2Function: void (), <./libxslt/libexslt/math.c 974>
+ 1196 					xmlXPathSetArityError: <>
+ 1197 					xmlXPathPopNumber: <>
+ 1198 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1199 					exsltMathAtan2: double (), <./libxslt/libexslt/math.c 957>
+ 1200 						xmlXPathIsNaN: <>
+ 1201 						atan2: <>
+ 1202 					xmlXPathReturnNumber: <>
+ 1203 				exsltMathExpFunction: void (), <./libxslt/libexslt/math.c 1023>
+ 1204 					xmlXPathSetArityError: <>
+ 1205 					xmlXPathPopNumber: <>
+ 1206 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1207 					exsltMathExp: double (), <./libxslt/libexslt/math.c 1006>
+ 1208 						xmlXPathIsNaN: <>
+ 1209 						exp: <>
+ 1210 					xmlXPathReturnNumber: <>
+ 1211 			exsltSetsRegister: void (), <./libxslt/libexslt/sets.c 273>
+ 1212 				xsltRegisterExtModuleFunction: 62
+ 1213 				exsltSetsDifferenceFunction: void (), <./libxslt/libexslt/sets.c 28>
+ 1214 					xmlXPathSetArityError: <>
+ 1215 					xmlXPathPopNodeSet: <>
+ 1216 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1217 					xmlXPathSetTypeError: <>
+ 1218 					xmlXPathDifference: <>
+ 1219 					xmlXPathFreeNodeSet: <>
+ 1220 					xmlXPathReturnNodeSet: <>
+ 1221 				exsltSetsIntersectionFunction: void (), <./libxslt/libexslt/sets.c 65>
+ 1222 					xmlXPathSetArityError: <>
+ 1223 					xmlXPathPopNodeSet: <>
+ 1224 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1225 					xmlXPathSetTypeError: <>
+ 1226 					xmlXPathIntersection: <>
+ 1227 					xmlXPathFreeNodeSet: <>
+ 1228 					xmlXPathReturnNodeSet: <>
+ 1229 				exsltSetsDistinctFunction: void (), <./libxslt/libexslt/sets.c 101>
+ 1230 					xmlXPathSetArityError: <>
+ 1231 					xmlXPathPopNodeSet: <>
+ 1232 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1233 					xmlXPathDistinctSorted: <>
+ 1234 					xmlXPathFreeNodeSet: <>
+ 1235 					xmlXPathWrapNodeSet: <>
+ 1236 					valuePush: <>
+ 1237 				exsltSetsHasSameNodesFunction: void (), <./libxslt/libexslt/sets.c 142>
+ 1238 					xmlXPathSetArityError: <>
+ 1239 					xmlXPathPopNodeSet: <>
+ 1240 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1241 					xmlXPathSetTypeError: <>
+ 1242 					xmlXPathHasSameNodes: <>
+ 1243 					xmlXPathFreeNodeSet: <>
+ 1244 					xmlXPathReturnBoolean: <>
+ 1245 				exsltSetsLeadingFunction: void (), <./libxslt/libexslt/sets.c 180>
+ 1246 					xmlXPathSetArityError: <>
+ 1247 					xmlXPathPopNodeSet: <>
+ 1248 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1249 					xmlXPathSetTypeError: <>
+ 1250 					xmlXPathNodeSetIsEmpty: <>
+ 1251 					xmlXPathReturnNodeSet: <>
+ 1252 					xmlXPathFreeNodeSet: <>
+ 1253 					xmlXPathNodeLeadingSorted: <>
+ 1254 					xmlXPathNodeSetItem: <>
+ 1255 				exsltSetsTrailingFunction: void (), <./libxslt/libexslt/sets.c 227>
+ 1256 					xmlXPathSetArityError: <>
+ 1257 					xmlXPathPopNodeSet: <>
+ 1258 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1259 					xmlXPathSetTypeError: <>
+ 1260 					xmlXPathNodeSetIsEmpty: <>
+ 1261 					xmlXPathReturnNodeSet: <>
+ 1262 					xmlXPathFreeNodeSet: <>
+ 1263 					xmlXPathNodeTrailingSorted: <>
+ 1264 					xmlXPathNodeSetItem: <>
+ 1265 			exsltFuncRegister: void (), <./libxslt/libexslt/functions.c 760>
+ 1266 				xsltRegisterExtModuleFull: int (), <./libxslt/libxslt/extensions.c 1248>
+ 1267 					xmlHashCreate: <>
+ 1268 					xmlMutexLock: <>
+ 1269 					xmlHashLookup: <>
+ 1270 					xsltNewExtModule: xsltExtModulePtr (), <./libxslt/libxslt/extensions.c 173>
+ 1271 						xmlMalloc: <>
+ 1272 						xsltTransformError: 9
+ 1273 					xmlHashAddEntry: <>
+ 1274 					xmlMutexUnlock: <>
+ 1275 				exsltFuncInit: exsltFuncData * (), <./libxslt/libexslt/functions.c 144>
+ 1276 					xmlMalloc: <>
+ 1277 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1278 					memset: <>
+ 1279 					xsltStyleGetExtData: void * (), <./libxslt/libxslt/extensions.c 756>
+ 1280 						xmlHashLookup: <>
+ 1281 						xsltNextImport: 159
+ 1282 						xsltStyleInitializeStylesheetModule: xsltExtDataPtr (), <./libxslt/libxslt/extensions.c 663>
+ 1283 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1284 							xmlMutexLock: <>
+ 1285 							xmlHashLookup: <>
+ 1286 							xmlMutexUnlock: <>
+ 1287 							xmlHashCreate: <>
+ 1288 							xsltNewExtData: xsltExtDataPtr (), <./libxslt/libxslt/extensions.c 217>
+ 1289 								xmlMalloc: <>
+ 1290 								xsltTransformError: 9
+ 1291 							xmlHashAddEntry: <>
+ 1292 							xsltTransformError: 9
+ 1293 							xsltFreeExtData: 909
+ 1294 					xmlHashScanFull: <>
+ 1295 					exsltFuncRegisterFunc: void (), <./libxslt/libexslt/functions.c 74>
+ 1296 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1297 						xsltRegisterExtFunction: int (), <./libxslt/libxslt/extensions.c 587>
+ 1298 							xmlXPathRegisterFuncNS: <>
+ 1299 							xmlHashCreate: <>
+ 1300 							xmlHashAddEntry2: <>
+ 1301 							XML_CAST_FPTR: <>
+ 1302 						exsltFuncFunctionFunction: void (), <./libxslt/libexslt/functions.c 278>
+ 1303 							xsltXPathGetTransformContext: 73
+ 1304 							xsltGetExtData: void * (), <./libxslt/libxslt/extensions.c 862>
+ 1305 								xmlHashCreate: <>
+ 1306 								xmlHashLookup: <>
+ 1307 								xmlMutexLock: <>
+ 1308 								xmlMutexUnlock: <>
+ 1309 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1310 								xsltNewExtData: 1288
+ 1311 								xmlHashAddEntry: <>
+ 1312 								xsltTransformError: 9
+ 1313 								xsltFreeExtData: 909
+ 1314 							xmlHashLookup2: <>
+ 1315 							function: <>
+ 1316 							xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1317 							xmlMalloc: <>
+ 1318 							valuePop: <>
+ 1319 							xsltParseStylesheetCallerParam: 697
+ 1320 							xmlXPathFreeObject: <>
+ 1321 							xmlFree: <>
+ 1322 							xsltLocalVariablePush: 230
+ 1323 							xmlNewDocNode: <>
+ 1324 							xsltApplyOneTemplate: 229
+ 1325 							xmlXPathGetContextNode: <>
+ 1326 							xsltLocalVariablePop: 370
+ 1327 							xsltFreeStackElemList: 371
+ 1328 							error: <>
+ 1329 							xmlXPathNewCString: <>
+ 1330 							xmlDebugDumpNode: <>
+ 1331 							xmlFreeNode: <>
+ 1332 							valuePush: <>
+ 1333 							xsltExtensionInstructionResultFinalize: int (), <./libxslt/libxslt/variables.c 209>
+ 1334 					xsltNextImport: 159
+ 1335 					xsltGetExtInfo: xmlHashTablePtr (), <./libxslt/libxslt/extensions.c 1933>
+ 1336 						xmlHashLookup: <>
+ 1337 					exsltFuncRegisterImportFunc: void (), <./libxslt/libexslt/functions.c 99>
+ 1338 						xmlHashLookup2: <>
+ 1339 						exsltFuncNewFunctionData: exsltFuncFunctionData * (), <./libxslt/libexslt/functions.c 235>
+ 1340 							xmlMalloc: <>
+ 1341 							xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1342 							memset: <>
+ 1343 						memcpy: <>
+ 1344 						xmlHashAddEntry2: <>
+ 1345 						xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1346 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1347 						xsltRegisterExtFunction: 1297
+ 1348 						exsltFuncFunctionFunction: 1302
+ 1349 				exsltFuncShutdown: void (), <./libxslt/libexslt/functions.c 187>
+ 1350 					xmlXPathFreeObject: <>
+ 1351 					xmlFree: <>
+ 1352 				exsltFuncStyleInit: xmlHashTablePtr (), <./libxslt/libexslt/functions.c 206>
+ 1353 					xmlHashCreate: <>
+ 1354 				exsltFuncStyleShutdown: void (), <./libxslt/libexslt/functions.c 221>
+ 1355 					xmlHashFree: <>
+ 1356 					xmlFree: <>
+ 1357 				xsltRegisterExtModuleTopLevel: int (), <./libxslt/libxslt/extensions.c 1823>
+ 1358 					xmlHashCreate: <>
+ 1359 					xmlMutexLock: <>
+ 1360 					xmlHashUpdateEntry2: <>
+ 1361 					XML_CAST_FPTR: <>
+ 1362 					xmlMutexUnlock: <>
+ 1363 				exsltFuncFunctionComp: void (), <./libxslt/libexslt/functions.c 456>
+ 1364 					xmlGetProp: <>
+ 1365 					xmlSplitQName2: <>
+ 1366 					xmlFree: <>
+ 1367 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1368 					xmlSearchNs: <>
+ 1369 					exsltFuncNewFunctionData: 1339
+ 1370 					IS_XSLT_ELEM: <>
+ 1371 					IS_XSLT_NAME: <>
+ 1372 					xsltParseTemplateContent: void (), <./libxslt/libxslt/xslt.c 4839>
+ 1373 						XSLT_CCTXT: <>
+ 1374 						IS_XSLT_ELEM_FAST: <>
+ 1375 						IS_XSLT_NAME: <>
+ 1376 						xsltParseAnyXSLTElem: int (), <./libxslt/libxslt/xslt.c 3845>
+ 1377 							IS_XSLT_ELEM_FAST: <>
+ 1378 							xsltCompilerNodePush: xsltCompilerNodeInfoPtr (), <./libxslt/libxslt/xslt.c 2319>
+ 1379 								xmlMalloc: <>
+ 1380 								xsltTransformError: 9
+ 1381 								memset: <>
+ 1382 								xsltLREInfoCreate: int (), <./libxslt/libxslt/xslt.c 2204>
+ 1383 									xmlMalloc: <>
+ 1384 									xsltTransformError: 9
+ 1385 									memset: <>
+ 1386 									xsltLREBuildEffectiveNsNodes: int (), <./libxslt/libxslt/xslt.c 2031>
+ 1387 										xmlStrEqual: <>
+ 1388 										BAD_CAST: <>
+ 1389 										xmlMalloc: <>
+ 1390 										xsltTransformError: 9
+ 1391 							xsltGetXSLTElementTypeByNode: xsltStyleType (), <./libxslt/libxslt/xslt.c 3721>
+ 1392 								IS_XSLT_NAME: <>
+ 1393 							xsltCompilerBuildInScopeNsList: xsltNsListContainerPtr (), <./libxslt/libxslt/xslt.c 2510>
+ 1394 								xmlMalloc: <>
+ 1395 								xsltTransformError: 9
+ 1396 								memset: <>
+ 1397 								xmlStrEqual: <>
+ 1398 								xmlRealloc: <>
+ 1399 								xsltPointerListAddSize: int (), <./libxslt/libxslt/xsltutils.c 318>
+ 1400 									xmlMalloc: <>
+ 1401 									xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1402 									xmlRealloc: <>
+ 1403 								xmlFree: <>
+ 1404 							xsltStylePreCompute: void (), <./libxslt/libxslt/preproc.c 2214>
+ 1405 								IS_XSLT_ELEM_FAST: <>
+ 1406 								XSLT_CCTXT: <>
+ 1407 								xsltApplyTemplatesComp: void (), <./libxslt/libxslt/preproc.c 1608>
+ 1408 									xsltNewStylePreComp: 109
+ 1409 									xsltGetQNameProperty: void (), <./libxslt/libxslt/preproc.c 1281>
+ 1410 										xsltGetCNsProp: const xmlChar * (), <./libxslt/libxslt/xsltutils.c 83>
+ 1411 											xmlGetProp: <>
+ 1412 											xmlStrEqual: <>
+ 1413 											xmlNodeListGetString: <>
+ 1414 											xmlDictLookup: <>
+ 1415 											BAD_CAST: <>
+ 1416 											xmlFree: <>
+ 1417 											xmlGetDtdAttrDesc: <>
+ 1418 											xmlSearchNs: <>
+ 1419 										xsltTransformError: 9
+ 1420 										xmlValidateQName: <>
+ 1421 										xsltGetQNameURI2: const xmlChar * (), <./libxslt/libxslt/xsltutils.c 846>
+ 1422 											xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1423 											xmlDictLookup: <>
+ 1424 											xmlStrndup: <>
+ 1425 											xmlSearchNs: <>
+ 1426 											xsltTransformError: 9
+ 1427 											xmlFree: <>
+ 1428 										xmlDictLookup: <>
+ 1429 									BAD_CAST: <>
+ 1430 									xsltGetCNsProp: 1410
+ 1431 									xsltXPathCompile: xmlXPathCompExprPtr (), <./libxslt/libxslt/xsltutils.c 2253>
+ 1432 										XSLT_CCTXT: <>
+ 1433 										xmlXPathNewContext: <>
+ 1434 										xmlXPathCtxtCompile: <>
+ 1435 										xmlXPathFreeContext: <>
+ 1436 									xsltTransformError: 9
+ 1437 								xsltWithParamComp: void (), <./libxslt/libxslt/preproc.c 1354>
+ 1438 									xsltNewStylePreComp: 109
+ 1439 									xsltGetQNameProperty: 1409
+ 1440 									BAD_CAST: <>
+ 1441 									xsltGetCNsProp: 1410
+ 1442 									xsltXPathCompile: 1431
+ 1443 									xsltTransformError: 9
+ 1444 								xsltValueOfComp: void (), <./libxslt/libxslt/preproc.c 1228>
+ 1445 									xsltNewStylePreComp: 109
+ 1446 									xsltGetCNsProp: 1410
+ 1447 									xmlStrEqual: <>
+ 1448 									xsltTransformError: 9
+ 1449 									xsltXPathCompile: 1431
+ 1450 								xsltCopyComp: void (), <./libxslt/libxslt/preproc.c 784>
+ 1451 									xsltNewStylePreComp: 109
+ 1452 									xsltGetCNsProp: 1410
+ 1453 								xsltCopyOfComp: void (), <./libxslt/libxslt/preproc.c 1182>
+ 1454 									xsltNewStylePreComp: 109
+ 1455 									xsltGetCNsProp: 1410
+ 1456 									xsltTransformError: 9
+ 1457 									xsltXPathCompile: 1431
+ 1458 								xsltIfComp: void (), <./libxslt/libxslt/preproc.c 1691>
+ 1459 									xsltNewStylePreComp: 109
+ 1460 									xsltGetCNsProp: 1410
+ 1461 									xsltTransformError: 9
+ 1462 									xsltXPathCompile: 1431
+ 1463 								xsltChooseComp: void (), <./libxslt/libxslt/preproc.c 1660>
+ 1464 									xsltNewStylePreComp: 109
+ 1465 								xsltWhenComp: void (), <./libxslt/libxslt/preproc.c 1737>
+ 1466 									xsltNewStylePreComp: 109
+ 1467 									xsltGetCNsProp: 1410
+ 1468 									xsltTransformError: 9
+ 1469 									xsltXPathCompile: 1431
+ 1470 								xsltForEachComp: void (), <./libxslt/libxslt/preproc.c 1783>
+ 1471 									xsltNewStylePreComp: 109
+ 1472 									xsltGetCNsProp: 1410
+ 1473 									xsltTransformError: 9
+ 1474 									xsltXPathCompile: 1431
+ 1475 								xsltApplyImportsComp: void (), <./libxslt/libxslt/preproc.c 1539>
+ 1476 									xsltNewStylePreComp: 109
+ 1477 								xsltAttributeComp: void (), <./libxslt/libxslt/preproc.c 991>
+ 1478 									xsltNewStylePreComp: 109
+ 1479 									xsltEvalStaticAttrValueTemplate: 978
+ 1480 									xsltTransformError: 9
+ 1481 									xmlValidateQName: <>
+ 1482 									xsltSplitQName: 167
+ 1483 									xmlSearchNs: <>
+ 1484 									xmlDictLookup: <>
+ 1485 									xmlStrncasecmp: <>
+ 1486 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1487 								xsltElementComp: void (), <./libxslt/libxslt/preproc.c 873>
+ 1488 									xsltNewStylePreComp: 109
+ 1489 									xsltEvalStaticAttrValueTemplate: 978
+ 1490 									xsltTransformError: 9
+ 1491 									error: <>
+ 1492 									xmlValidateQName: <>
+ 1493 									xsltSplitQName: 167
+ 1494 									xmlSearchNs: <>
+ 1495 									xmlDictLookup: <>
+ 1496 									xmlStrncasecmp: <>
+ 1497 								xsltSortComp: void (), <./libxslt/libxslt/preproc.c 677>
+ 1498 									xsltNewStylePreComp: 109
+ 1499 									xsltEvalStaticAttrValueTemplate: 978
+ 1500 									xmlStrEqual: <>
+ 1501 									xsltTransformError: 9
+ 1502 									xsltNewLocale: xsltLocale (), <./libxslt/libxslt/xsltlocale.c 94>
+ 1503 										ISALPHA: <>
+ 1504 										TOLOWER: <>
+ 1505 										TOUPPER: <>
+ 1506 										memcpy: <>
+ 1507 										newlocale: <>
+ 1508 										xsltDefaultRegion: const xmlChar * (), <./libxslt/libxslt/xsltlocale.c 210>
+ 1509 										xsltEnumSupportedLocales: void (), <./libxslt/libxslt/xsltlocale.c 510>
+ 1510 											xmlRMutexLock: <>
+ 1511 											EnumSystemLocalesA: <>
+ 1512 											xsltCountSupportedLocales: BOOL CALLBACK (), <./libxslt/libxslt/xsltlocale.c 464>
+ 1513 											xmlMalloc: <>
+ 1514 											memset: <>
+ 1515 											xsltIterateSupportedLocales: BOOL CALLBACK (), <./libxslt/libxslt/xsltlocale.c 479>
+ 1516 												sscanf: <>
+ 1517 												GetLocaleInfoA: <>
+ 1518 												memcpy: <>
+ 1519 											xmlRMutexUnlock: <>
+ 1520 										xslt_locale_WINAPI: xsltLocale (), <./libxslt/libxslt/xsltlocale.c 57>
+ 1521 											xmlStrcmp: <>
+ 1522 										strcpy: <>
+ 1523 									xsltGetCNsProp: 1410
+ 1524 									xmlDictLookup: <>
+ 1525 									BAD_CAST: <>
+ 1526 									xsltXPathCompile: 1431
+ 1527 								xsltCommentComp: void (), <./libxslt/libxslt/preproc.c 1118>
+ 1528 									xsltNewStylePreComp: 109
+ 1529 								xsltNumberComp: void (), <./libxslt/libxslt/preproc.c 1412>
+ 1530 									xsltNewStylePreComp: 109
+ 1531 									xsltGetCNsProp: 1410
+ 1532 									xsltEvalStaticAttrValueTemplate: 978
+ 1533 									xmlDictLookup: <>
+ 1534 									BAD_CAST: <>
+ 1535 									xsltCompilePattern: xsltCompMatchPtr (), <./libxslt/libxslt/pattern.c 2006>
+ 1536 										xsltCompilePatternInternal: xsltCompMatchPtr (), <./libxslt/libxslt/pattern.c 1831>
+ 1537 											xsltTransformError: 9
+ 1538 											xsltNewParserContext: xsltParserContextPtr (), <./libxslt/libxslt/pattern.c 251>
+ 1539 												xmlMalloc: <>
+ 1540 												xsltTransformError: 9
+ 1541 												memset: <>
+ 1542 											IS_BLANK_CH: <>
+ 1543 											error: <>
+ 1544 											xsltNewCompMatch: xsltCompMatchPtr (), <./libxslt/libxslt/pattern.c 143>
+ 1545 												xmlMalloc: <>
+ 1546 												xsltTransformError: 9
+ 1547 												memset: <>
+ 1548 												xmlFree: <>
+ 1549 											xmlStrndup: <>
+ 1550 											xmlGetNsList: <>
+ 1551 											xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1552 											xsltCompileLocationPathPattern: void (), <./libxslt/libxslt/pattern.c 1755>
+ 1553 												NXT: <>
+ 1554 												xsltCompileRelativePathPattern: void (), <./libxslt/libxslt/pattern.c 1712>
+ 1555 													xsltCompileStepPattern: void (), <./libxslt/libxslt/pattern.c 1526>
+ 1556 														xsltScanNCName: xmlChar * (), <./libxslt/libxslt/pattern.c 1323>
+ 1557 															xmlStringCurrentChar: <>
+ 1558 															IS_LETTER: <>
+ 1559 															IS_DIGIT: <>
+ 1560 															IS_COMBINING: <>
+ 1561 															IS_EXTENDER: <>
+ 1562 															xmlStrndup: <>
+ 1563 														PUSH: <>
+ 1564 														xsltTransformError: 9
+ 1565 														error: <>
+ 1566 														xsltCompileIdKeyPattern: void (), <./libxslt/libxslt/pattern.c 1366>
+ 1567 															xsltTransformError: 9
+ 1568 															xmlStrEqual: <>
+ 1569 															xsltScanLiteral: xmlChar * (), <./libxslt/libxslt/pattern.c 1267>
+ 1570 																xmlStringCurrentChar: <>
+ 1571 																IS_CHAR: <>
+ 1572 																xmlStrndup: <>
+ 1573 															PUSH: <>
+ 1574 															error: <>
+ 1575 															xmlFree: <>
+ 1576 														xmlSearchNs: <>
+ 1577 														xmlFree: <>
+ 1578 														xmlStrdup: <>
+ 1579 														xmlStrEqual: <>
+ 1580 														xsltGetQNameURI: 933
+ 1581 														xmlStrndup: <>
+ 1582 														SWAP: <>
+ 1583 													error: <>
+ 1584 													NXT: <>
+ 1585 													PUSH: <>
+ 1586 													xsltCompileRelativePathPattern: 1554
+ 1587 												PUSH: <>
+ 1588 												xsltScanNCName: 1556
+ 1589 												xsltTransformError: 9
+ 1590 												xmlXPathIsNodeType: <>
+ 1591 												xsltCompileIdKeyPattern: 1566
+ 1592 												error: <>
+ 1593 											xsltReverseCompMatch: void (), <./libxslt/libxslt/pattern.c 409>
+ 1594 												xsltCompMatchAdd: int (), <./libxslt/libxslt/pattern.c 293>
+ 1595 													xmlRealloc: <>
+ 1596 													xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1597 													xsltAllocateExtraCtxt: int (), <./libxslt/libxslt/xslt.c 803>
+ 1598 														xmlMalloc: <>
+ 1599 														xmlGenericError: <>
+ 1600 														deallocate: <>
+ 1601 														xmlRealloc: <>
+ 1602 													xsltAllocateExtra: int (), <./libxslt/libxslt/xslt.c 787>
+ 1603 													xmlXPathNewContext: <>
+ 1604 													xmlXPathCtxtCompile: <>
+ 1605 													xmlXPathFreeContext: <>
+ 1606 													xsltTransformError: 9
+ 1607 												xmlStrdup: <>
+ 1608 												xmlStrcat: <>
+ 1609 												xmlFree: <>
+ 1610 											xsltFreeParserContext: void (), <./libxslt/libxslt/pattern.c 273>
+ 1611 												memset: <>
+ 1612 												xmlFree: <>
+ 1613 											xsltFreeCompMatchList: 871
+ 1614 									xmlStrEqual: <>
+ 1615 									xsltTransformError: 9
+ 1616 									xmlStrlen: <>
+ 1617 									xsltGetUTF8Char: int (), <./libxslt/libxslt/xsltutils.c 247>
+ 1618 										error: <>
+ 1619 									sscanf: <>
+ 1620 								xsltProcessingInstructionComp: void (), <./libxslt/libxslt/preproc.c 1148>
+ 1621 									xsltNewStylePreComp: 109
+ 1622 									xsltEvalStaticAttrValueTemplate: 978
+ 1623 								xsltCallTemplateComp: void (), <./libxslt/libxslt/preproc.c 1569>
+ 1624 									xsltNewStylePreComp: 109
+ 1625 									xsltGetQNameProperty: 1409
+ 1626 									BAD_CAST: <>
+ 1627 								xsltParamComp: void (), <./libxslt/libxslt/preproc.c 1910>
+ 1628 									xsltNewStylePreComp: 109
+ 1629 									xsltGetQNameProperty: 1409
+ 1630 									BAD_CAST: <>
+ 1631 									xsltGetCNsProp: 1410
+ 1632 									xsltXPathCompile: 1431
+ 1633 									xsltTransformError: 9
+ 1634 								xsltVariableComp: void (), <./libxslt/libxslt/preproc.c 1831>
+ 1635 									xsltNewStylePreComp: 109
+ 1636 									xsltGetQNameProperty: 1409
+ 1637 									BAD_CAST: <>
+ 1638 									xsltGetCNsProp: 1410
+ 1639 									xsltXPathCompile: 1431
+ 1640 									xsltTransformError: 9
+ 1641 									xsltIsBlank: int (), <./libxslt/libxslt/xslt.c 262>
+ 1642 										IS_BLANK: <>
+ 1643 								xsltDocumentComp: 108
+ 1644 								xsltDocumentElem: 784
+ 1645 								xsltTransformError: 9
+ 1646 								IS_XSLT_NAME: <>
+ 1647 								IS_XSLT_ELEM: <>
+ 1648 								xsltCheckInstructionElement: void (), <./libxslt/libxslt/preproc.c 110>
+ 1649 									xsltTransformError: 9
+ 1650 									xmlStrEqual: <>
+ 1651 									BAD_CAST: <>
+ 1652 									xmlHashLookup: <>
+ 1653 								xsltCheckParentElement: void (), <./libxslt/libxslt/preproc.c 165>
+ 1654 									xsltTransformError: 9
+ 1655 									xmlStrEqual: <>
+ 1656 									xmlHashLookup: <>
+ 1657 								BAD_CAST: <>
+ 1658 								xmlStrEqual: <>
+ 1659 								xsltTextComp: void (), <./libxslt/libxslt/preproc.c 827>
+ 1660 									xsltNewStylePreComp: 109
+ 1661 									xsltGetCNsProp: 1410
+ 1662 									xmlStrEqual: <>
+ 1663 									xsltTransformError: 9
+ 1664 								xsltCheckTopLevelElement: int (), <./libxslt/libxslt/preproc.c 72>
+ 1665 									xsltTransformError: 9
+ 1666 									xmlStrEqual: <>
+ 1667 									BAD_CAST: <>
+ 1668 								xmlGetNsList: <>
+ 1669 								xsltPreComputeExtModuleElement: xsltElemPreCompPtr (), <./libxslt/libxslt/extensions.c 1556>
+ 1670 									xmlMutexLock: <>
+ 1671 									xmlHashLookup2: <>
+ 1672 									xmlMutexUnlock: <>
+ 1673 									xsltNewElemPreComp: xsltElemPreCompPtr (), <./libxslt/libxslt/extensions.c 1500>
+ 1674 										xmlMalloc: <>
+ 1675 										xsltTransformError: 9
+ 1676 										memset: <>
+ 1677 										xsltInitElemPreComp: void (), <./libxslt/libxslt/extensions.c 1533>
+ 1678 										xmlFree: <>
+ 1679 							xsltTransformError: 9
+ 1680 							error: <>
+ 1681 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1682 							xmlStrEqual: <>
+ 1683 							BAD_CAST: <>
+ 1684 							xsltParseAnyXSLTElem: 1376
+ 1685 							xsltParseContentError: void (), <./libxslt/libxslt/xslt.c 125>
+ 1686 								IS_XSLT_ELEM: <>
+ 1687 								xsltTransformError: 9
+ 1688 							exit: <>
+ 1689 							IS_BLANK_NODE: <>
+ 1690 							xsltParseSequenceConstructor: void (), <./libxslt/libxslt/xslt.c 4370>
+ 1691 								xmlGenericError: <>
+ 1692 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1693 								xmlUnlinkNode: <>
+ 1694 								xmlFreeNode: <>
+ 1695 								xmlAddPrevSibling: <>
+ 1696 								xsltTransformError: 9
+ 1697 								xmlStrEqual: <>
+ 1698 								BAD_CAST: <>
+ 1699 								IS_XSLT_ELEM_FAST: <>
+ 1700 								xsltGetXSLTElementTypeByNode: 1391
+ 1701 								xsltParseAnyXSLTElem: 1376
+ 1702 								xsltParseUnknownXSLTElem: int (), <./libxslt/libxslt/xslt.c 4287>
+ 1703 									xsltTransformError: 9
+ 1704 									xsltForwardsCompatUnkownItemCreate: xsltStyleItemUknownPtr (), <./libxslt/libxslt/xslt.c 4250>
+ 1705 										xmlMalloc: <>
+ 1706 										xsltTransformError: 9
+ 1707 										memset: <>
+ 1708 									xsltCompilerNodePush: 1378
+ 1709 									xsltCompilerBuildInScopeNsList: 1393
+ 1710 									IS_XSLT_ELEM_FAST: <>
+ 1711 									IS_XSLT_NAME: <>
+ 1712 									xsltParseAnyXSLTElem: 1376
+ 1713 									xsltCompilerNodePop: void (), <./libxslt/libxslt/xslt.c 2423>
+ 1714 										xmlGenericError: <>
+ 1715 										xsltCompilerVarInfoPop: void (), <./libxslt/libxslt/xslt.c 2297>
+ 1716 										BAD_CAST: <>
+ 1717 								xsltCompilerNodePush: 1378
+ 1718 								xsltCompilerBuildInScopeNsList: 1393
+ 1719 								xsltParseExtElemPrefixes: xsltPointerListPtr (), <./libxslt/libxslt/xslt.c 2836>
+ 1720 									xmlHasNsProp: <>
+ 1721 									BAD_CAST: <>
+ 1722 									xsltTransformError: 9
+ 1723 									xsltParseNsPrefixList: int (), <./libxslt/libxslt/xslt.c 2620>
+ 1724 										IS_BLANK: <>
+ 1725 										xmlStrndup: <>
+ 1726 										xmlStrEqual: <>
+ 1727 										xmlSearchNs: <>
+ 1728 										xsltTransformError: 9
+ 1729 										xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1730 										xsltPointerListAddSize: 1399
+ 1731 										xmlDictLookup: <>
+ 1732 										xmlFree: <>
+ 1733 									exit: <>
+ 1734 									xsltRegisterExtPrefix: int (), <./libxslt/libxslt/extensions.c 503>
+ 1735 										xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1736 										xmlStrEqual: <>
+ 1737 										xsltNewExtDef: xsltExtDefPtr (), <./libxslt/libxslt/extensions.c 107>
+ 1738 											xmlMalloc: <>
+ 1739 											xsltTransformError: 9
+ 1740 											memset: <>
+ 1741 											xmlStrdup: <>
+ 1742 										xmlMutexLock: <>
+ 1743 										xmlHashLookup: <>
+ 1744 										xmlMutexUnlock: <>
+ 1745 										xsltExtModuleRegisterDynamic: 341
+ 1746 										xsltStyleGetExtData: 1279
+ 1747 									xsltCompilerUtilsCreateMergedList: xsltPointerListPtr (), <./libxslt/libxslt/xslt.c 2711>
+ 1748 										xsltPointerListCreate: xsltPointerListPtr (), <./libxslt/libxslt/xsltutils.c 358>
+ 1749 											xmlMalloc: <>
+ 1750 											xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1751 											memset: <>
+ 1752 											xsltPointerListAddSize: 1399
+ 1753 										memcpy: <>
+ 1754 									xsltPointerListAddSize: 1399
+ 1755 									xsltPointerListFree: 922
+ 1756 								xsltCheckExtPrefix: int (), <./libxslt/libxslt/extensions.c 1158>
+ 1757 									XSLT_CCTXT: <>
+ 1758 									xmlStrEqual: <>
+ 1759 									BAD_CAST: <>
+ 1760 								xsltPreComputeExtModuleElement: 1669
+ 1761 								xsltParseSequenceConstructor: 1690
+ 1762 								xsltParseExclResultPrefixes: xsltPointerListPtr (), <./libxslt/libxslt/xslt.c 2755>
+ 1763 									xmlHasNsProp: <>
+ 1764 									BAD_CAST: <>
+ 1765 									xsltTransformError: 9
+ 1766 									xsltParseNsPrefixList: 1723
+ 1767 									exit: <>
+ 1768 									xsltCompilerUtilsCreateMergedList: 1747
+ 1769 									xsltPointerListAddSize: 1399
+ 1770 									xsltPointerListFree: 922
+ 1771 								xsltParseAttrXSLTVersion: int (), <./libxslt/libxslt/xslt.c 2928>
+ 1772 									xmlHasNsProp: <>
+ 1773 									BAD_CAST: <>
+ 1774 									xsltTransformError: 9
+ 1775 									xmlStrEqual: <>
+ 1776 								IS_XSLT_ATTR_FAST: <>
+ 1777 								xsltLREInfoCreate: 1382
+ 1778 								xsltLREBuildEffectiveNs: int (), <./libxslt/libxslt/xslt.c 1860>
+ 1779 									xmlStrEqual: <>
+ 1780 									xmlSearchNs: <>
+ 1781 									xsltTreeAcquireStoredNs: 211
+ 1782 									xsltTransformError: 9
+ 1783 								xsltCompileAttr: void (), <./libxslt/libxslt/attrvt.c 171>
+ 1784 									xsltTransformError: 9
+ 1785 									xmlStrchr: <>
+ 1786 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1787 									xsltNewAttrVT: xsltAttrVTPtr (), <./libxslt/libxslt/attrvt.c 63>
+ 1788 										xmlMalloc: <>
+ 1789 										xsltTransformError: 9
+ 1790 										memset: <>
+ 1791 									xmlGetNsList: <>
+ 1792 									xmlStrncat: <>
+ 1793 									xsltSetAttrVTsegment: xsltAttrVTPtr (), <./libxslt/libxslt/attrvt.c 147>
+ 1794 										xmlRealloc: <>
+ 1795 										memset: <>
+ 1796 									error: <>
+ 1797 									xmlStrndup: <>
+ 1798 									xsltXPathCompile: 1431
+ 1799 									xmlFree: <>
+ 1800 								xsltCompilerNodePop: 1713
+ 1801 							xsltCompilerVarInfoPush: xsltVarInfoPtr (), <./libxslt/libxslt/xslt.c 2253>
+ 1802 								xmlMalloc: <>
+ 1803 								xsltTransformError: 9
+ 1804 							xsltCompilerNodePop: 1713
+ 1805 						xsltParseSequenceConstructor: 1690
+ 1806 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1807 						xmlUnlinkNode: <>
+ 1808 						xmlFreeNode: <>
+ 1809 						IS_XSLT_ELEM: <>
+ 1810 						xmlGetNsProp: <>
+ 1811 						xmlStrEqual: <>
+ 1812 						xsltTransformError: 9
+ 1813 						xmlFree: <>
+ 1814 						xmlDictOwns: <>
+ 1815 						xmlDictLookup: <>
+ 1816 						xmlNodeSetContent: <>
+ 1817 						xmlAddPrevSibling: <>
+ 1818 						xsltCheckExtPrefix: 1756
+ 1819 						xsltStylePreCompute: 1404
+ 1820 						xmlSearchNsByHref: <>
+ 1821 						xsltCompileAttr: 1783
+ 1822 					xsltStyleStylesheetLevelGetExtData: void * (), <./libxslt/libxslt/extensions.c 823>
+ 1823 						xmlHashLookup: <>
+ 1824 						xsltStyleInitializeStylesheetModule: 1282
+ 1825 					xsltStyleGetExtData: 1279
+ 1826 					xmlHashAddEntry2: <>
+ 1827 					xsltTransformError: 9
+ 1828 					xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1829 				xsltRegisterExtModuleElement: 98
+ 1830 				exsltFuncResultComp: xsltElemPreCompPtr (), <./libxslt/libexslt/functions.c 543>
+ 1831 					IS_XSLT_ELEM: <>
+ 1832 					IS_XSLT_NAME: <>
+ 1833 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1834 					xmlStrEqual: <>
+ 1835 					xmlMalloc: <>
+ 1836 					xsltPrintErrorContext: 12
+ 1837 					memset: <>
+ 1838 					xsltInitElemPreComp: 1677
+ 1839 					exsltFreeFuncResultPreComp: void (), <./libxslt/libexslt/functions.c 259>
+ 1840 						xmlXPathFreeCompExpr: <>
+ 1841 						xmlFree: <>
+ 1842 					xmlGetNsProp: <>
+ 1843 					xmlXPathCompile: <>
+ 1844 					xmlFree: <>
+ 1845 					xmlGetNsList: <>
+ 1846 				exsltFuncResultElem: void (), <./libxslt/libexslt/functions.c 642>
+ 1847 					xsltGetExtData: 1304
+ 1848 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1849 					xmlXPathCompiledEval: <>
+ 1850 					xsltExtensionInstructionResultRegister: 86
+ 1851 					xsltCreateRVT: 75
+ 1852 					xsltRegisterLocalRVT: 80
+ 1853 					xsltApplyOneTemplate: 229
+ 1854 					xmlXPathNewValueTree: <>
+ 1855 					xmlXPathNewCString: <>
+ 1856 			exsltStrRegister: void (), <./libxslt/libexslt/strings.c 650>
+ 1857 				xsltRegisterExtModuleFunction: 62
+ 1858 				exsltStrTokenizeFunction: void (), <./libxslt/libexslt/strings.c 33>
+ 1859 					xmlXPathSetArityError: <>
+ 1860 					xmlXPathPopString: <>
+ 1861 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1862 					xmlStrdup: <>
+ 1863 					xmlFree: <>
+ 1864 					xsltXPathGetTransformContext: 73
+ 1865 					xsltTransformError: 9
+ 1866 					xsltCreateRVT: 75
+ 1867 					xsltRegisterLocalRVT: 80
+ 1868 					xmlXPathNewNodeSet: <>
+ 1869 					xmlUTF8Size: <>
+ 1870 					xmlNewDocRawNode: <>
+ 1871 					xmlAddChild: <>
+ 1872 					xmlXPathNodeSetAddUnique: <>
+ 1873 					xmlUTF8Charcmp: <>
+ 1874 					xsltExtensionInstructionResultRegister: 86
+ 1875 					valuePush: <>
+ 1876 				exsltStrSplitFunction: void (), <./libxslt/libexslt/strings.c 142>
+ 1877 					xmlXPathSetArityError: <>
+ 1878 					xmlXPathPopString: <>
+ 1879 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1880 					xmlStrdup: <>
+ 1881 					xmlStrlen: <>
+ 1882 					xmlFree: <>
+ 1883 					xsltXPathGetTransformContext: 73
+ 1884 					xsltTransformError: 9
+ 1885 					xsltCreateRVT: 75
+ 1886 					xsltRegisterLocalRVT: 80
+ 1887 					xmlXPathNewNodeSet: <>
+ 1888 					xmlNewDocRawNode: <>
+ 1889 					xmlAddChild: <>
+ 1890 					xmlXPathNodeSetAddUnique: <>
+ 1891 					xmlStrncasecmp: <>
+ 1892 					xsltExtensionInstructionResultRegister: 86
+ 1893 					valuePush: <>
+ 1894 				exsltStrEncodeUriFunction: void (), <./libxslt/libexslt/strings.c 252>
+ 1895 					xmlXPathSetArityError: <>
+ 1896 					xmlXPathPopString: <>
+ 1897 					xmlUTF8Strlen: <>
+ 1898 					xmlStrcmp: <>
+ 1899 					xmlXPathReturnEmptyString: <>
+ 1900 					xmlFree: <>
+ 1901 					xmlXPathPopBoolean: <>
+ 1902 					xmlURIEscapeStr: <>
+ 1903 					xmlXPathReturnString: <>
+ 1904 				exsltStrDecodeUriFunction: void (), <./libxslt/libexslt/strings.c 299>
+ 1905 					xmlXPathSetArityError: <>
+ 1906 					xmlXPathPopString: <>
+ 1907 					xmlUTF8Strlen: <>
+ 1908 					xmlStrcmp: <>
+ 1909 					xmlXPathReturnEmptyString: <>
+ 1910 					xmlFree: <>
+ 1911 					xmlURIUnescapeString: <>
+ 1912 					xmlCheckUTF8: <>
+ 1913 					xmlXPathReturnString: <>
+ 1914 				exsltStrPaddingFunction: void (), <./libxslt/libexslt/strings.c 353>
+ 1915 					xmlXPathSetArityError: <>
+ 1916 					xmlXPathPopString: <>
+ 1917 					xmlUTF8Strlen: <>
+ 1918 					xmlFree: <>
+ 1919 					xmlStrdup: <>
+ 1920 					xmlXPathPopNumber: <>
+ 1921 					xmlXPathReturnEmptyString: <>
+ 1922 					xmlStrncat: <>
+ 1923 					xmlUTF8Strndup: <>
+ 1924 					xmlStrcat: <>
+ 1925 					xmlXPathReturnString: <>
+ 1926 				exsltStrAlignFunction: void (), <./libxslt/libexslt/strings.c 403>
+ 1927 					xmlXPathSetArityError: <>
+ 1928 					xmlXPathPopString: <>
+ 1929 					xmlUTF8Strlen: <>
+ 1930 					xmlXPathReturnString: <>
+ 1931 					xmlFree: <>
+ 1932 					xmlUTF8Strndup: <>
+ 1933 					xmlStrEqual: <>
+ 1934 					xmlStrcat: <>
+ 1935 					xmlUTF8Strsize: <>
+ 1936 					xmlStrlen: <>
+ 1937 					xmlStrdup: <>
+ 1938 				exsltStrConcatFunction: void (), <./libxslt/libexslt/strings.c 471>
+ 1939 					xmlXPathSetArityError: <>
+ 1940 					xmlXPathStackIsNodeSet: <>
+ 1941 					xmlXPathSetTypeError: <>
+ 1942 					valuePop: <>
+ 1943 					xmlXPathNodeSetIsEmpty: <>
+ 1944 					xmlXPathReturnEmptyString: <>
+ 1945 					xmlXPathCastNodeToString: <>
+ 1946 					xmlStrcat: <>
+ 1947 					xmlFree: <>
+ 1948 					xmlXPathFreeObject: <>
+ 1949 					xmlXPathReturnString: <>
+ 1950 				exsltStrReplaceFunction: void (), <./libxslt/libexslt/strings.c 549>
+ 1951 					xmlXPathSetArityError: <>
+ 1952 					xmlXPathStackIsNodeSet: <>
+ 1953 					xmlXPathPopString: <>
+ 1954 					xmlXPathPopNodeSet: <>
+ 1955 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1956 					xmlXPathSetTypeError: <>
+ 1957 					exsltStrReplaceInternal: xmlChar * (), <./libxslt/libexslt/strings.c 516>
+ 1958 						xmlStrlen: <>
+ 1959 						xmlStrstr: <>
+ 1960 						xmlStrcat: <>
+ 1961 						xmlStrncat: <>
+ 1962 					xmlStrdup: <>
+ 1963 					xmlXPathCastNodeToString: <>
+ 1964 					xmlFree: <>
+ 1965 					xmlXPathFreeNodeSet: <>
+ 1966 					xmlXPathReturnString: <>
+ 1967 			exsltDateRegister: void (), <./libxslt/libexslt/date.c 3715>
+ 1968 				xsltRegisterExtModuleFunction: 62
+ 1969 				exsltDateAddFunction: void (), <./libxslt/libexslt/date.c 3569>
+ 1970 				exsltDateAddDurationFunction: void (), <./libxslt/libexslt/date.c 3606>
+ 1971 					xmlXPathSetArityError: <>
+ 1972 					xmlXPathPopString: <>
+ 1973 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1974 					xmlFree: <>
+ 1975 					exsltDateAddDuration: xmlChar * (), <./libxslt/libexslt/date.c 2747>
+ 1976 						exsltDateParseDuration: exsltDateValPtr (), <./libxslt/libexslt/date.c 978>
+ 1977 							exsltDateCreateDate: exsltDateValPtr (), <./libxslt/libexslt/date.c 658>
+ 1978 								xmlMalloc: <>
+ 1979 								xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 1980 								memset: <>
+ 1981 							error: <>
+ 1982 							PARSE_NUM: <>
+ 1983 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 1984 							exsltDateFreeDate: void (), <./libxslt/libexslt/date.c 683>
+ 1985 								xmlFree: <>
+ 1986 						exsltDateFreeDate: 1984
+ 1987 						exsltDateFormatDuration: xmlChar * (), <./libxslt/libexslt/date.c 1104>
+ 1988 							xmlStrdup: <>
+ 1989 							FORMAT_ITEM: <>
+ 1990 							floor: <>
+ 1991 							FORMAT_FLOAT: <>
+ 1992 					xmlXPathReturnEmptyString: <>
+ 1993 					xmlXPathReturnString: <>
+ 1994 				exsltDateDateFunction: void (), <./libxslt/libexslt/date.c 3123>
+ 1995 					xmlXPathSetArityError: <>
+ 1996 					xmlXPathPopString: <>
+ 1997 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 1998 					xmlXPathSetTypeError: <>
+ 1999 					exsltDateDate: xmlChar * (), <./libxslt/libexslt/date.c 1819>
+ 2000 						exsltDateCurrent: exsltDateValPtr (), <./libxslt/libexslt/date.c 747>
+ 2001 							exsltDateCreateDate: 1977
+ 2002 							time: <>
+ 2003 							localtime_r: <>
+ 2004 							localtime: <>
+ 2005 							gmtime_r: <>
+ 2006 							gmtime: <>
+ 2007 						exsltDateParse: exsltDateValPtr (), <./libxslt/libexslt/date.c 828>
+ 2008 							exsltDateCreateDate: 1977
+ 2009 							error: <>
+ 2010 							RETURN_TYPE_IF_VALID: <>
+ 2011 							VALID_DATE: <>
+ 2012 							VALID_DATETIME: <>
+ 2013 							exsltDateFreeDate: 1984
+ 2014 						exsltDateFreeDate: 1984
+ 2015 						exsltDateFormatDate: xmlChar * (), <./libxslt/libexslt/date.c 1209>
+ 2016 							VALID_DATETIME: <>
+ 2017 							FORMAT_DATE: <>
+ 2018 							FORMAT_TZ: <>
+ 2019 							xmlStrdup: <>
+ 2020 					xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2021 					xmlXPathReturnEmptyString: <>
+ 2022 					xmlXPathReturnString: <>
+ 2023 					xmlFree: <>
+ 2024 				exsltDateDateTimeFunction: void (), <./libxslt/libexslt/date.c 3098>
+ 2025 					xmlXPathSetArityError: <>
+ 2026 					exsltDateDateTime: xmlChar * (), <./libxslt/libexslt/date.c 1786>
+ 2027 						exsltDateCurrent: 2000
+ 2028 						exsltDateFormatDateTime: xmlChar * (), <./libxslt/libexslt/date.c 1183>
+ 2029 							VALID_DATETIME: <>
+ 2030 							FORMAT_DATE: <>
+ 2031 							FORMAT_TIME: <>
+ 2032 							FORMAT_TZ: <>
+ 2033 							xmlStrdup: <>
+ 2034 						exsltDateFreeDate: 1984
+ 2035 					xmlXPathReturnEmptyString: <>
+ 2036 					xmlXPathReturnString: <>
+ 2037 				exsltDateDayAbbreviationFunction: void (), <./libxslt/libexslt/date.c 3471>
+ 2038 					xmlXPathSetArityError: <>
+ 2039 					xmlXPathPopString: <>
+ 2040 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2041 					xmlXPathSetTypeError: <>
+ 2042 					exsltDateDayAbbreviation: const xmlChar * (), <./libxslt/libexslt/date.c 2505>
+ 2043 						exsltDateDayInWeek: double (), <./libxslt/libexslt/date.c 2413>
+ 2044 							exsltDateCurrent: 2000
+ 2045 							exsltDateParse: 2007
+ 2046 							exsltDateFreeDate: 1984
+ 2047 							DAY_IN_YEAR: <>
+ 2048 					xmlFree: <>
+ 2049 					xmlXPathReturnEmptyString: <>
+ 2050 					xmlXPathReturnString: <>
+ 2051 					xmlStrdup: <>
+ 2052 				exsltDateDayNameFunction: void (), <./libxslt/libexslt/date.c 3434>
+ 2053 					xmlXPathSetArityError: <>
+ 2054 					xmlXPathPopString: <>
+ 2055 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2056 					xmlXPathSetTypeError: <>
+ 2057 					exsltDateDayName: const xmlChar * (), <./libxslt/libexslt/date.c 2465>
+ 2058 						exsltDateDayInWeek: 2043
+ 2059 					xmlFree: <>
+ 2060 					xmlXPathReturnEmptyString: <>
+ 2061 					xmlXPathReturnString: <>
+ 2062 					xmlStrdup: <>
+ 2063 				exsltDateDifferenceFunction: void (), <./libxslt/libexslt/date.c 3643>
+ 2064 					xmlXPathSetArityError: <>
+ 2065 					xmlXPathPopString: <>
+ 2066 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2067 					xmlFree: <>
+ 2068 					exsltDateDifference: xmlChar * (), <./libxslt/libexslt/date.c 2997>
+ 2069 						exsltDateParse: 2007
+ 2070 						exsltDateFreeDate: 1984
+ 2071 						exsltDateFormatDuration: 1987
+ 2072 					xmlXPathReturnEmptyString: <>
+ 2073 					xmlXPathReturnString: <>
+ 2074 				exsltDateDurationFunction: void (), <./libxslt/libexslt/date.c 3680>
+ 2075 					xmlXPathSetArityError: <>
+ 2076 					xmlXPathPopString: <>
+ 2077 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2078 					xmlXPathSetTypeError: <>
+ 2079 					exsltDateDuration: xmlChar * (), <./libxslt/libexslt/date.c 3057>
+ 2080 						exsltDateSeconds: double (), <./libxslt/libexslt/date.c 2909>
+ 2081 							exsltDateCurrent: 2000
+ 2082 							exsltDateParseDuration: 1976
+ 2083 							exsltDateParse: 2007
+ 2084 							exsltDateCreateDate: 1977
+ 2085 							exsltDateCastDateToNumber: double (), <./libxslt/libexslt/date.c 1351>
+ 2086 								TIME_TO_NUMBER: <>
+ 2087 							exsltDateFreeDate: 1984
+ 2088 						xmlXPathCastStringToNumber: <>
+ 2089 						xmlXPathIsNaN: <>
+ 2090 						xmlXPathIsInf: <>
+ 2091 						exsltDateCreateDate: 1977
+ 2092 						exsltDateFormatDuration: 1987
+ 2093 						exsltDateFreeDate: 1984
+ 2094 					xmlFree: <>
+ 2095 					xmlXPathReturnEmptyString: <>
+ 2096 					xmlXPathReturnString: <>
+ 2097 				exsltDateLeapYearFunction: void (), <./libxslt/libexslt/date.c 3235>
+ 2098 					xmlXPathSetArityError: <>
+ 2099 					xmlXPathPopString: <>
+ 2100 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2101 					xmlXPathSetTypeError: <>
+ 2102 					exsltDateLeapYear: xmlXPathObjectPtr (), <./libxslt/libexslt/date.c 1960>
+ 2103 						exsltDateYear: double (), <./libxslt/libexslt/date.c 1911>
+ 2104 							exsltDateCurrent: 2000
+ 2105 							exsltDateParse: 2007
+ 2106 							exsltDateFreeDate: 1984
+ 2107 						xmlXPathIsNaN: <>
+ 2108 						xmlXPathNewFloat: <>
+ 2109 						IS_LEAP: <>
+ 2110 						xmlXPathNewBoolean: <>
+ 2111 					xmlFree: <>
+ 2112 					valuePush: <>
+ 2113 				exsltDateMonthAbbreviationFunction: void (), <./libxslt/libexslt/date.c 3343>
+ 2114 				exsltDateSumFunction: void (), <./libxslt/libexslt/date.c 2799>
+ 2115 					xmlXPathSetArityError: <>
+ 2116 					xmlXPathPopNodeSet: <>
+ 2117 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2118 					xmlXPathReturnEmptyString: <>
+ 2119 					xmlXPathFreeNodeSet: <>
+ 2120 					exsltDateCreateDate: 1977
+ 2121 					xmlXPathCastNodeToString: <>
+ 2122 					exsltDateFreeDate: 1984
+ 2123 					exsltDateParseDuration: 1976
+ 2124 					xmlFree: <>
+ 2125 					exsltDateFormatDuration: 1987
+ 2126 					xmlFreeNodeList: <>
+ 2127 					xmlXPathReturnString: <>
+ 2128 				exsltDateTimeFunction: void (), <./libxslt/libexslt/date.c 3162>
+ 2129 					xmlXPathSetArityError: <>
+ 2130 					xmlXPathPopString: <>
+ 2131 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2132 					xmlXPathSetTypeError: <>
+ 2133 					exsltDateTime: xmlChar * (), <./libxslt/libexslt/date.c 1863>
+ 2134 						exsltDateCurrent: 2000
+ 2135 						exsltDateParse: 2007
+ 2136 						exsltDateFreeDate: 1984
+ 2137 						exsltDateFormatTime: xmlChar * (), <./libxslt/libexslt/date.c 1234>
+ 2138 							VALID_TIME: <>
+ 2139 							FORMAT_TIME: <>
+ 2140 							FORMAT_TZ: <>
+ 2141 							xmlStrdup: <>
+ 2142 					xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2143 					xmlXPathReturnEmptyString: <>
+ 2144 					xmlXPathReturnString: <>
+ 2145 					xmlFree: <>
+ 2146 				exsltDateYearFunction: void (), <./libxslt/libexslt/date.c 3201>
+ 2147 					xmlXPathSetArityError: <>
+ 2148 					xmlXPathPopString: <>
+ 2149 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2150 					xmlXPathSetTypeError: <>
+ 2151 					exsltDateYear: 2103
+ 2152 					xmlFree: <>
+ 2153 					xmlXPathReturnNumber: <>
+ 2154 			exsltSaxonRegister: void (), <./libxslt/libexslt/saxon.c 251>
+ 2155 				xsltRegisterExtModule: int (), <./libxslt/libxslt/extensions.c 1300>
+ 2156 					xsltRegisterExtModuleFull: 1266
+ 2157 				exsltSaxonInit: xmlHashTablePtr (), <./libxslt/libexslt/saxon.c 33>
+ 2158 					xmlHashCreate: <>
+ 2159 				exsltSaxonShutdown: void (), <./libxslt/libexslt/saxon.c 47>
+ 2160 					xmlHashFree: <>
+ 2161 					xmlXPathFreeCompExpr: <>
+ 2162 				xsltRegisterExtModuleFunction: 62
+ 2163 				exsltSaxonExpressionFunction: void (), <./libxslt/libexslt/saxon.c 78>
+ 2164 					xsltXPathGetTransformContext: 73
+ 2165 					xmlXPathSetArityError: <>
+ 2166 					xmlXPathPopString: <>
+ 2167 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2168 					xmlXPathSetTypeError: <>
+ 2169 					xsltGetExtData: 1304
+ 2170 					xmlHashLookup: <>
+ 2171 					xmlXPathCompile: <>
+ 2172 					xmlFree: <>
+ 2173 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2174 					function: <>
+ 2175 					xmlHashAddEntry: <>
+ 2176 					xmlXPathReturnExternal: <>
+ 2177 				exsltSaxonEvalFunction: void (), <./libxslt/libexslt/saxon.c 133>
+ 2178 					xmlXPathSetArityError: <>
+ 2179 					xmlXPathStackIsExternal: <>
+ 2180 					xmlXPathSetTypeError: <>
+ 2181 					xmlXPathPopExternal: <>
+ 2182 					xmlXPathCompiledEval: <>
+ 2183 					valuePush: <>
+ 2184 				exsltSaxonEvaluateFunction: void (), <./libxslt/libexslt/saxon.c 172>
+ 2185 					xmlXPathSetArityError: <>
+ 2186 					exsltSaxonExpressionFunction: 2163
+ 2187 					exsltSaxonEvalFunction: 2177
+ 2188 				exsltSaxonLineNumberFunction: void (), <./libxslt/libexslt/saxon.c 202>
+ 2189 					xsltTransformError: 9
+ 2190 					xsltXPathGetTransformContext: 73
+ 2191 					valuePop: <>
+ 2192 					xmlXPathFreeObject: <>
+ 2193 					valuePush: <>
+ 2194 					xmlXPathNewFloat: <>
+ 2195 					xmlXPathCmpNodes: <>
+ 2196 					xmlGetLineNo: <>
+ 2197 			exsltDynRegister: void (), <./libxslt/libexslt/dynamic.c 279>
+ 2198 				xsltRegisterExtModuleFunction: 62
+ 2199 				exsltDynEvaluateFunction: void (), <./libxslt/libexslt/dynamic.c 54>
+ 2200 					xsltPrintErrorContext: 12
+ 2201 					xsltXPathGetTransformContext: 73
+ 2202 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2203 					xmlXPathPopString: <>
+ 2204 					xmlStrlen: <>
+ 2205 					xmlFree: <>
+ 2206 					valuePush: <>
+ 2207 					xmlXPathNewNodeSet: <>
+ 2208 					xmlXPathEval: <>
+ 2209 				exsltDynMapFunction: void (), <./libxslt/libexslt/dynamic.c 97>
+ 2210 					xmlXPathSetArityError: <>
+ 2211 					xmlXPathPopString: <>
+ 2212 					xmlXPathCheckError: if (), <./libxslt/libexslt/date.c 3548>
+ 2213 					xmlXPathSetTypeError: <>
+ 2214 					xmlXPathPopNodeSet: <>
+ 2215 					xmlStrlen: <>
+ 2216 					xmlXPathCompile: <>
+ 2217 					xmlXPathFreeNodeSet: <>
+ 2218 					xmlFree: <>
+ 2219 					valuePush: <>
+ 2220 					xmlXPathNewNodeSet: <>
+ 2221 					xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2222 					xsltXPathGetTransformContext: 73
+ 2223 					xsltTransformError: 9
+ 2224 					xsltCreateRVT: 75
+ 2225 					xsltRegisterLocalRVT: 80
+ 2226 					xmlXPathNodeSetSort: <>
+ 2227 					xmlXPathCompiledEval: <>
+ 2228 					xmlXPathNodeSetAdd: <>
+ 2229 					xmlNewChild: <>
+ 2230 					BAD_CAST: <>
+ 2231 					xmlNewNs: <>
+ 2232 					xmlXPathNodeSetAddUnique: <>
+ 2233 					xsltExtensionInstructionResultRegister: 86
+ 2234 					xmlXPathCastNumberToString: <>
+ 2235 					xmlXPathFreeObject: <>
+ 2236 					xmlXPathFreeCompExpr: <>
+ 2237 		xsltRegisterTestModule: void (), <./libxslt/libxslt/extensions.c 2229>
+ 2238 			xsltInitGlobals: 6
+ 2239 			xsltRegisterExtModuleFull: 1266
+ 2240 			xsltExtInitTest: void * (), <./libxslt/libxslt/extensions.c 2121>
+ 2241 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2242 				xsltStyleGetExtData: 1279
+ 2243 				xsltTransformError: 9
+ 2244 			xsltExtShutdownTest: void (), <./libxslt/libxslt/extensions.c 2155>
+ 2245 				xsltTransformError: 9
+ 2246 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2247 			xsltExtStyleInitTest: void * (), <./libxslt/libxslt/extensions.c 2182>
+ 2248 				xsltTransformError: 9
+ 2249 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2250 			xsltExtStyleShutdownTest: void (), <./libxslt/libxslt/extensions.c 2206>
+ 2251 				xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2252 				xsltTransformError: 9
+ 2253 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2254 			xsltRegisterExtModuleFunction: 62
+ 2255 			xsltExtFunctionTest: void (), <./libxslt/libxslt/extensions.c 1975>
+ 2256 				xsltXPathGetTransformContext: 73
+ 2257 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2258 				xsltGetExtData: 1304
+ 2259 				xsltTransformError: 9
+ 2260 			xsltRegisterExtModuleElement: 98
+ 2261 			xsltExtElementPreCompTest: xsltElemPreCompPtr (), <./libxslt/libxslt/extensions.c 2025>
+ 2262 				xsltTransformError: 9
+ 2263 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2264 				xsltStyleGetExtData: 1279
+ 2265 				xsltNewElemPreComp: 1673
+ 2266 			xsltExtElementTest: void (), <./libxslt/libxslt/extensions.c 2069>
+ 2267 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2268 				xsltGetExtData: 1304
+ 2269 				xsltTransformError: 9
+ 2270 				xmlNewComment: <>
+ 2271 				xmlAddChild: <>
+ 2272 		xsltDebugDumpExtensions: void (), <./libxslt/libxslt/extensions.c 2325>
+ 2273 			fprintf: <>
+ 2274 			xmlMutexLock: <>
+ 2275 			xmlHashScanFull: <>
+ 2276 			xsltDebugDumpExtensionsCallback: void (), <./libxslt/libxslt/extensions.c 2297>
+ 2277 				fprintf: <>
+ 2278 			xmlMutexUnlock: <>
+ 2279 			xsltDebugDumpExtModulesCallback: void (), <./libxslt/libxslt/extensions.c 2308>
+ 2280 				fprintf: <>
+ 2281 		startTimer: void (), <./libxslt/xsltproc/xsltproc.c 307>
+ 2282 			gettimeofday: <>
+ 2283 			clock: <>
+ 2284 		xmlReadFile: <>
+ 2285 		endTimer: void (), <./libxslt/xsltproc/xsltproc.c 313>
+ 2286 			gettimeofday: <>
+ 2287 			va_start: <>
+ 2288 			vfprintf: <>
+ 2289 			va_end: <>
+ 2290 			fprintf: <>
+ 2291 			clock: <>
+ 2292 		xmlXIncludeProcessFlags: <>
+ 2293 		xmlXIncludeProcess: <>
+ 2294 		xsltLoadStylesheetPI: xsltStylesheetPtr (), <./libxslt/libxslt/xslt.c 6865>
+ 2295 			xsltInitGlobals: 6
+ 2296 			xmlStrEqual: <>
+ 2297 			BAD_CAST: <>
+ 2298 			xsltParseStylesheetPI: xmlChar * (), <./libxslt/libxslt/xslt.c 6775>
+ 2299 				NXT: <>
+ 2300 				SKIP: <>
+ 2301 				xmlStrndup: <>
+ 2302 				xmlStrcasecmp: <>
+ 2303 				BAD_CAST: <>
+ 2304 				xmlFree: <>
+ 2305 				IS_BLANK: <>
+ 2306 			xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2307 			xmlParseURI: <>
+ 2308 			xsltTransformError: 9
+ 2309 			xmlFree: <>
+ 2310 			xmlGetID: <>
+ 2311 			xmlNewDoc: <>
+ 2312 			xmlDictReference: <>
+ 2313 			xmlDocCopyNode: <>
+ 2314 			xmlNodeGetBase: <>
+ 2315 			xmlNewNs: <>
+ 2316 			xmlAddChild: <>
+ 2317 			xsltParseStylesheetDoc: xsltStylesheetPtr (), <./libxslt/libxslt/xslt.c 6670>
+ 2318 				xsltInitGlobals: 6
+ 2319 				xsltParseStylesheetImportedDoc: xsltStylesheetPtr (), <./libxslt/libxslt/xslt.c 6489>
+ 2320 					xsltNewStylesheet: 820
+ 2321 					xmlDictFree: <>
+ 2322 					xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2323 					xmlDictReference: <>
+ 2324 					xsltGatherNamespaces: void (), <./libxslt/libxslt/xslt.c 3636>
+ 2325 						xmlDocGetRootElement: <>
+ 2326 						xmlHashCreate: <>
+ 2327 						xsltTransformError: 9
+ 2328 						xmlHashLookup: <>
+ 2329 						xmlStrEqual: <>
+ 2330 						xmlHashUpdateEntry: <>
+ 2331 						xmlFree: <>
+ 2332 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2333 					xsltNewPrincipalStylesheetData: xsltPrincipalStylesheetDataPtr (), <./libxslt/libxslt/xslt.c 688>
+ 2334 						xmlMalloc: <>
+ 2335 						xsltTransformError: 9
+ 2336 						memset: <>
+ 2337 						xsltPointerListCreate: 1748
+ 2338 					xsltFreeStylesheet: 853
+ 2339 					xsltCompilationCtxtCreate: xsltCompilerCtxtPtr (), <./libxslt/libxslt/xslt.c 583>
+ 2340 						xmlMalloc: <>
+ 2341 						xsltTransformError: 9
+ 2342 						memset: <>
+ 2343 						xsltPointerListCreate: 1748
+ 2344 						xmlXPathNewContext: <>
+ 2345 						xsltCompilationCtxtFree: void (), <./libxslt/libxslt/xslt.c 536>
+ 2346 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2347 							xmlFree: <>
+ 2348 							xsltPointerListFree: 922
+ 2349 							xmlXPathFreeContext: <>
+ 2350 							xsltFreeNsAliasList: void (), <./libxslt/libxslt/xslt.c 453>
+ 2351 								xmlFree: <>
+ 2352 							xsltCompilerVarInfoFree: void (), <./libxslt/libxslt/xslt.c 519>
+ 2353 								xmlFree: <>
+ 2354 					xsltCompilerNodePush: 1378
+ 2355 					xsltParseStylesheetProcess: xsltStylesheetPtr (), <./libxslt/libxslt/xslt.c 6382>
+ 2356 						xsltInitGlobals: 6
+ 2357 						XSLT_CCTXT: <>
+ 2358 						xmlDocGetRootElement: <>
+ 2359 						xsltTransformError: 9
+ 2360 						IS_XSLT_ELEM: <>
+ 2361 						IS_XSLT_NAME: <>
+ 2362 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2363 						xsltParsePreprocessStylesheetTree: int (), <./libxslt/libxslt/xslt.c 2991>
+ 2364 							xmlNodeGetSpacePreserve: <>
+ 2365 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2366 							xmlUnlinkNode: <>
+ 2367 							xmlFreeNode: <>
+ 2368 							xsltCompilerNodePush: 1378
+ 2369 							IS_XSLT_ELEM: <>
+ 2370 							xsltNewNamespaceMapItem: xsltNsMapPtr (), <./libxslt/libxslt/xslt.c 480>
+ 2371 								xmlMalloc: <>
+ 2372 								xsltTransformError: 9
+ 2373 								memset: <>
+ 2374 							xmlStrEqual: <>
+ 2375 							BAD_CAST: <>
+ 2376 							IS_BLANK_NODE: <>
+ 2377 							xmlDictOwns: <>
+ 2378 							xmlDictLookup: <>
+ 2379 							xmlNodeSetContent: <>
+ 2380 							xmlGetNsProp: <>
+ 2381 							xsltTransformError: 9
+ 2382 							xmlFree: <>
+ 2383 							xmlNodeAddContent: <>
+ 2384 							IS_BLANK: <>
+ 2385 							xsltIsBlank: 1641
+ 2386 							xsltCompilerNodePop: 1713
+ 2387 						xsltParseXSLTStylesheetElem: int (), <./libxslt/libxslt/xslt.c 5959>
+ 2388 							exit: <>
+ 2389 							xsltParseFindTopLevelElem: int (), <./libxslt/libxslt/xslt.c 5470>
+ 2390 								xmlStrEqual: <>
+ 2391 							BAD_CAST: <>
+ 2392 							xsltParseStylesheetImport: int (), <./libxslt/libxslt/imports.c 87>
+ 2393 								xmlGetNsProp: <>
+ 2394 								xsltTransformError: 9
+ 2395 								error: <>
+ 2396 								xmlNodeGetBase: <>
+ 2397 								xmlBuildURI: <>
+ 2398 								xmlStrEqual: <>
+ 2399 								xsltGetDefaultSecurityPrefs: xsltSecurityPrefsPtr (), <./libxslt/libxslt/security.c 196>
+ 2400 								xsltCheckRead: int (), <./libxslt/libxslt/security.c 433>
+ 2401 									check: <>
+ 2402 									xmlParseURI: <>
+ 2403 									xsltTransformError: 9
+ 2404 									xmlStrEqual: <>
+ 2405 									BAD_CAST: <>
+ 2406 									xsltGetSecurityPrefs: 808
+ 2407 									xmlFreeURI: <>
+ 2408 								xsltDocDefaultLoader: xsltDocLoaderFunc, <./libxslt/libxslt/documents.c 110>
+ 2409 								xsltParseStylesheetImportedDoc: 2319
+ 2410 								xsltFixImportedCompSteps: void (), <./libxslt/libxslt/imports.c 65>
+ 2411 									xmlHashScan: <>
+ 2412 									xsltNormalizeCompSteps: void (), <./libxslt/libxslt/pattern.c 228>
+ 2413 									xsltFixImportedCompSteps: 2410
+ 2414 								xmlFreeDoc: <>
+ 2415 								xmlFree: <>
+ 2416 							xsltParseTopLevelXSLTElem: int (), <./libxslt/libxslt/xslt.c 5502>
+ 2417 								xsltCompilerNodePush: 1378
+ 2418 								xsltCompilerBuildInScopeNsList: 1393
+ 2419 								xsltCompileXSLTIncludeElem: xsltStyleItemIncludePtr (), <./libxslt/libxslt/xslt.c 5440>
+ 2420 									xmlMalloc: <>
+ 2421 									xsltTransformError: 9
+ 2422 									memset: <>
+ 2423 								exit: <>
+ 2424 								xsltParseStylesheetInclude: int (), <./libxslt/libxslt/imports.c 184>
+ 2425 									xmlGetNsProp: <>
+ 2426 									xsltTransformError: 9
+ 2427 									error: <>
+ 2428 									xmlNodeGetBase: <>
+ 2429 									xmlBuildURI: <>
+ 2430 									xmlStrEqual: <>
+ 2431 									xsltLoadStyleDocument: xsltDocumentPtr (), <./libxslt/libxslt/documents.c 359>
+ 2432 										xsltGetDefaultSecurityPrefs: 2399
+ 2433 										xsltCheckRead: 2400
+ 2434 										xsltTransformError: 9
+ 2435 										xmlStrEqual: <>
+ 2436 										xsltDocDefaultLoader: xsltDocLoaderFunc, <./libxslt/libxslt/documents.c 110>
+ 2437 										xsltNewStyleDocument: xsltDocumentPtr (), <./libxslt/libxslt/documents.c 183>
+ 2438 											xmlMalloc: <>
+ 2439 											xsltTransformError: 9
+ 2440 											memset: <>
+ 2441 									IS_XSLT_ELEM_FAST: <>
+ 2442 									xsltParseStylesheetProcess: 2355
+ 2443 									xmlFree: <>
+ 2444 								xsltStylePreCompute: 1404
+ 2445 								xsltParseGlobalParam: void (), <./libxslt/libxslt/variables.c 2052>
+ 2446 									xsltStylePreCompute: 1404
+ 2447 									xsltTransformError: 9
+ 2448 									xsltParseSequenceConstructor: 1690
+ 2449 									XSLT_CCTXT: <>
+ 2450 									xsltParseTemplateContent: 1372
+ 2451 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2452 									xsltRegisterGlobalVariable: int (), <./libxslt/libxslt/variables.c 1323>
+ 2453 										xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2454 										xsltNewStackElem: 312
+ 2455 										xmlDictLookup: <>
+ 2456 										xmlStrEqual: <>
+ 2457 										xsltTransformError: 9
+ 2458 										xmlXPathNewString: <>
+ 2459 								xsltParseGlobalVariable: void (), <./libxslt/libxslt/variables.c 1989>
+ 2460 									xsltStylePreCompute: 1404
+ 2461 									xsltTransformError: 9
+ 2462 									xsltParseSequenceConstructor: 1690
+ 2463 									XSLT_CCTXT: <>
+ 2464 									xsltParseTemplateContent: 1372
+ 2465 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2466 									xsltRegisterGlobalVariable: 2452
+ 2467 								xsltParseStylesheetAttributeSet: void (), <./libxslt/libxslt/attributes.c 289>
+ 2468 									xmlGetNsProp: <>
+ 2469 									xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2470 									xsltSplitQName: 167
+ 2471 									xmlFree: <>
+ 2472 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2473 									xmlHashCreate: <>
+ 2474 									xmlHashLookup2: <>
+ 2475 									IS_XSLT_ELEM: <>
+ 2476 									xsltTransformError: 9
+ 2477 									IS_XSLT_NAME: <>
+ 2478 									xsltNewAttrElem: xsltAttrElemPtr (), <./libxslt/libxslt/attributes.c 109>
+ 2479 										xmlMalloc: <>
+ 2480 										xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2481 										memset: <>
+ 2482 									xsltParseAnyXSLTElem: 1376
+ 2483 									XSLT_CCTXT: <>
+ 2484 									xsltAddAttrElemList: xsltAttrElemPtr (), <./libxslt/libxslt/attributes.c 166>
+ 2485 										xsltNewAttrElem: 2478
+ 2486 									IS_BLANK: <>
+ 2487 									xmlDictLookup: <>
+ 2488 									xsltMergeAttrElemList: xsltAttrElemPtr (), <./libxslt/libxslt/attributes.c 199>
+ 2489 										xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2490 										xsltNewAttrElem: 2478
+ 2491 										xmlDictLookup: <>
+ 2492 									xsltFreeAttrElem: 886
+ 2493 									xmlHashUpdateEntry2: <>
+ 2494 								xsltTransformError: 9
+ 2495 								xsltCompilerNodePop: 1713
+ 2496 							xsltNamespaceAlias: void (), <./libxslt/libxslt/namespaces.c 93>
+ 2497 								xmlGetNsProp: <>
+ 2498 								xsltTransformError: 9
+ 2499 								xmlStrEqual: <>
+ 2500 								xmlSearchNs: <>
+ 2501 								error: <>
+ 2502 								xsltNewNsAlias: xsltNsAliasPtr (), <./libxslt/libxslt/namespaces.c 60>
+ 2503 									xmlMalloc: <>
+ 2504 									xsltTransformError: 9
+ 2505 									memset: <>
+ 2506 								XSLT_CCTXT: <>
+ 2507 								xmlHashCreate: <>
+ 2508 								xmlHashAddEntry: <>
+ 2509 								xmlFree: <>
+ 2510 							xsltParseXSLTStylesheetElemCore: int (), <./libxslt/libxslt/xslt.c 5599>
+ 2511 								IS_XSLT_ELEM_FAST: <>
+ 2512 								IS_XSLT_NAME: <>
+ 2513 								xmlDocGetRootElement: <>
+ 2514 								xsltCompilerNodePush: 1378
+ 2515 								xsltCompilerBuildInScopeNsList: 1393
+ 2516 								xsltParseAttrXSLTVersion: 1771
+ 2517 								xsltTransformError: 9
+ 2518 								xsltParseExtElemPrefixes: 1719
+ 2519 								xsltParseExclResultPrefixes: 1762
+ 2520 								xsltLREInfoCreate: 1382
+ 2521 								BAD_CAST: <>
+ 2522 								xsltParseFindTopLevelElem: 2389
+ 2523 								exit: <>
+ 2524 								xsltParseTopLevelXSLTElem: 2416
+ 2525 								xsltParseXSLTTemplate: void (), <./libxslt/libxslt/xslt.c 5145>
+ 2526 									xsltNewTemplate: xsltTemplatePtr (), <./libxslt/libxslt/xslt.c 389>
+ 2527 										xmlMalloc: <>
+ 2528 										xsltTransformError: 9
+ 2529 										memset: <>
+ 2530 									xsltCompilerNodePush: 1378
+ 2531 									xsltCompilerBuildInScopeNsList: 1393
+ 2532 									xmlGetNsProp: <>
+ 2533 									xsltGetQNameURI: 933
+ 2534 									error: <>
+ 2535 									xmlDictLookup: <>
+ 2536 									xmlFree: <>
+ 2537 									xmlValidateNCName: <>
+ 2538 									xsltTransformError: 9
+ 2539 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2540 									xmlXPathStringEvalNumber: <>
+ 2541 									xmlStrEqual: <>
+ 2542 									xsltParseTemplateContent: 1372
+ 2543 									xsltAddTemplate: int (), <./libxslt/libxslt/pattern.c 2030>
+ 2544 										xsltCompilePatternInternal: 1536
+ 2545 										xmlDictLookup: <>
+ 2546 										xsltTransformError: 9
+ 2547 										xsltFreeCompMatch: 872
+ 2548 										xmlHashCreate: <>
+ 2549 										xmlHashAddEntry3: <>
+ 2550 										xmlHashLookup3: <>
+ 2551 										xmlHashUpdateEntry3: <>
+ 2552 										xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2553 									xsltCompilerNodePop: 1713
+ 2554 								xsltParseXSLTStylesheetElemCore: 2510
+ 2555 								xsltParseStylesheetStripSpace: void (), <./libxslt/libxslt/xslt.c 1622>
+ 2556 									xmlGetNsProp: <>
+ 2557 									xsltTransformError: 9
+ 2558 									xmlHashCreate: <>
+ 2559 									IS_BLANK: <>
+ 2560 									xmlStrndup: <>
+ 2561 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2562 									xmlStrEqual: <>
+ 2563 									xsltGetQNameURI: 933
+ 2564 									xmlHashAddEntry2: <>
+ 2565 									xmlFree: <>
+ 2566 									xsltParseContentError: 1685
+ 2567 								xsltParseStylesheetPreserveSpace: void (), <./libxslt/libxslt/xslt.c 1483>
+ 2568 									xmlGetNsProp: <>
+ 2569 									xsltTransformError: 9
+ 2570 									xmlHashCreate: <>
+ 2571 									IS_BLANK: <>
+ 2572 									xmlStrndup: <>
+ 2573 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2574 									xmlStrEqual: <>
+ 2575 									xsltGetQNameURI: 933
+ 2576 									xmlHashAddEntry2: <>
+ 2577 									xmlFree: <>
+ 2578 									xsltParseContentError: 1685
+ 2579 								xsltParseStylesheetOutput: void (), <./libxslt/libxslt/xslt.c 1158>
+ 2580 									xmlGetNsProp: <>
+ 2581 									xmlFree: <>
+ 2582 									xsltGetQNameURI: 933
+ 2583 									xmlStrEqual: <>
+ 2584 									xsltTransformError: 9
+ 2585 									xmlStrdup: <>
+ 2586 									xmlHashCreate: <>
+ 2587 									IS_BLANK: <>
+ 2588 									xmlStrndup: <>
+ 2589 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2590 									xmlValidateQName: <>
+ 2591 									BAD_CAST: <>
+ 2592 									xmlSearchNs: <>
+ 2593 									xmlHashAddEntry2: <>
+ 2594 									xsltParseContentError: 1685
+ 2595 								xsltParseStylesheetKey: void (), <./libxslt/libxslt/xslt.c 5053>
+ 2596 									xmlGetNsProp: <>
+ 2597 									xsltGetQNameURI: 933
+ 2598 									error: <>
+ 2599 									xmlStrdup: <>
+ 2600 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2601 									xsltTransformError: 9
+ 2602 									xsltAddKey: int (), <./libxslt/libxslt/keys.c 274>
+ 2603 										xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2604 										xsltNewKeyDef: xsltKeyDefPtr (), <./libxslt/libxslt/keys.c 55>
+ 2605 											xmlMalloc: <>
+ 2606 											xsltTransformError: 9
+ 2607 											memset: <>
+ 2608 											xmlStrdup: <>
+ 2609 										xmlStrdup: <>
+ 2610 										xmlGetNsList: <>
+ 2611 										IS_BLANK_CH: <>
+ 2612 										skipPredicate: int (), <./libxslt/libxslt/keys.c 238>
+ 2613 											skipString: int (), <./libxslt/libxslt/keys.c 213>
+ 2614 											skipPredicate: 2612
+ 2615 										xsltTransformError: 9
+ 2616 										error: <>
+ 2617 										xmlStrcat: <>
+ 2618 										xmlStrncat: <>
+ 2619 										xsltXPathCompile: 1431
+ 2620 										xmlFree: <>
+ 2621 									xmlFree: <>
+ 2622 									xsltParseContentError: 1685
+ 2623 								xsltParseStylesheetDecimalFormat: void (), <./libxslt/libxslt/xslt.c 1375>
+ 2624 									xmlGetNsProp: <>
+ 2625 									BAD_CAST: <>
+ 2626 									xsltDecimalFormatGetByName: xsltDecimalFormatPtr (), <./libxslt/libxslt/xslt.c 361>
+ 2627 										xmlStrEqual: <>
+ 2628 										xsltNextImport: 159
+ 2629 									xsltTransformError: 9
+ 2630 									xsltNewDecimalFormat: 824
+ 2631 									xmlFree: <>
+ 2632 									xsltParseContentError: 1685
+ 2633 								function: <>
+ 2634 								xsltExtModuleTopLevelLookup: xsltTopLevelFunction (), <./libxslt/libxslt/extensions.c 1854>
+ 2635 									xmlMutexLock: <>
+ 2636 									XML_CAST_FPTR: <>
+ 2637 									xmlHashLookup2: <>
+ 2638 									xmlMutexUnlock: <>
+ 2639 									xsltExtModuleRegisterDynamic: 341
+ 2640 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2641 								xsltCompilerNodePop: 1713
+ 2642 						xsltParseSimplifiedStylesheetTree: int (), <./libxslt/libxslt/xslt.c 6200>
+ 2643 							xsltParseAttrXSLTVersion: 1771
+ 2644 							xsltTransformError: 9
+ 2645 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2646 							xsltNewTemplate: 2526
+ 2647 							xmlStrdup: <>
+ 2648 							BAD_CAST: <>
+ 2649 							xsltCompilerNodePush: 1378
+ 2650 							xsltCompilerBuildInScopeNsList: 1393
+ 2651 							xsltParseSequenceConstructor: 1690
+ 2652 							xsltCompilerNodePop: 1713
+ 2653 							xsltAddTemplate: 2543
+ 2654 						xsltParseStylesheetExcludePrefix: int (), <./libxslt/libxslt/xslt.c 1692>
+ 2655 							xmlGetNsProp: <>
+ 2656 							IS_BLANK: <>
+ 2657 							xmlStrndup: <>
+ 2658 							xmlStrEqual: <>
+ 2659 							xmlSearchNs: <>
+ 2660 							xsltTransformError: 9
+ 2661 							exclPrefixPush: int (), <./libxslt/libxslt/xslt.c 155>
+ 2662 								xmlMalloc: <>
+ 2663 								xmlGenericError: <>
+ 2664 								xmlStrEqual: <>
+ 2665 								xmlRealloc: <>
+ 2666 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2667 							xmlFree: <>
+ 2668 						xsltParseStylesheetExtPrefix: void (), <./libxslt/libxslt/xslt.c 1556>
+ 2669 							xmlGetNsProp: <>
+ 2670 							IS_BLANK: <>
+ 2671 							xmlStrndup: <>
+ 2672 							xmlStrEqual: <>
+ 2673 							xmlSearchNs: <>
+ 2674 							xsltTransformError: 9
+ 2675 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2676 							xsltRegisterExtPrefix: 1734
+ 2677 							xmlFree: <>
+ 2678 						xsltPrecomputeStylesheet: void (), <./libxslt/libxslt/xslt.c 3426>
+ 2679 							IS_XSLT_ELEM: <>
+ 2680 							IS_XSLT_NAME: <>
+ 2681 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2682 							xmlUnlinkNode: <>
+ 2683 							xmlFreeNode: <>
+ 2684 							xmlDictOwns: <>
+ 2685 							xmlDictLookup: <>
+ 2686 							xmlNodeSetContent: <>
+ 2687 							xsltStylePreCompute: 1404
+ 2688 							exclPrefixPop: xmlChar * (), <./libxslt/libxslt/xslt.c 198>
+ 2689 							xsltParseStylesheetExcludePrefix: 2654
+ 2690 							xmlDocGetRootElement: <>
+ 2691 							xmlStrEqual: <>
+ 2692 							xsltPrecomputeStylesheet: 2678
+ 2693 							IS_BLANK_NODE: <>
+ 2694 							xmlNodeGetSpacePreserve: <>
+ 2695 							xsltCheckExtURI: int (), <./libxslt/libxslt/extensions.c 1218>
+ 2696 								xmlStrEqual: <>
+ 2697 						xsltParseStylesheetTop: void (), <./libxslt/libxslt/xslt.c 6044>
+ 2698 							xmlGetNsProp: <>
+ 2699 							xsltTransformError: 9
+ 2700 							xmlStrEqual: <>
+ 2701 							xmlFree: <>
+ 2702 							IS_BLANK_NODE: <>
+ 2703 							IS_XSLT_ELEM: <>
+ 2704 							IS_XSLT_NAME: <>
+ 2705 							xsltParseStylesheetImport: 2392
+ 2706 							xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2707 							function: <>
+ 2708 							xsltExtModuleTopLevelLookup: 2634
+ 2709 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2710 							xsltParseStylesheetInclude: 2424
+ 2711 							xsltParseStylesheetStripSpace: 2555
+ 2712 							xsltParseStylesheetPreserveSpace: 2567
+ 2713 							xsltParseStylesheetOutput: 2579
+ 2714 							xsltParseStylesheetKey: 2595
+ 2715 							xsltParseStylesheetDecimalFormat: 2623
+ 2716 							xsltParseStylesheetAttributeSet: 2467
+ 2717 							xsltParseGlobalVariable: 2459
+ 2718 							xsltParseGlobalParam: 2445
+ 2719 							xsltParseStylesheetTemplate: void (), <./libxslt/libxslt/xslt.c 5304>
+ 2720 								xsltNewTemplate: 2526
+ 2721 								xsltGetInheritedNsList: int (), <./libxslt/libxslt/xslt.c 1063>
+ 2722 									xmlStrEqual: <>
+ 2723 									xsltCheckExtPrefix: 1756
+ 2724 									xmlMalloc: <>
+ 2725 									xmlGenericError: <>
+ 2726 									xmlRealloc: <>
+ 2727 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2728 								xmlGetNsProp: <>
+ 2729 								xsltGetQNameURI: 933
+ 2730 								error: <>
+ 2731 								xmlStrdup: <>
+ 2732 								xmlDictLookup: <>
+ 2733 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2734 								xmlFree: <>
+ 2735 								xmlXPathStringEvalNumber: <>
+ 2736 								xmlValidateNCName: <>
+ 2737 								xsltTransformError: 9
+ 2738 								BAD_CAST: <>
+ 2739 								xmlStrEqual: <>
+ 2740 								xsltParseTemplateContent: 1372
+ 2741 								xsltAddTemplate: 2543
+ 2742 							xsltNamespaceAlias: 2496
+ 2743 							strncmp: <>
+ 2744 						xmlGetNsProp: <>
+ 2745 						xmlStrEqual: <>
+ 2746 						xmlFree: <>
+ 2747 						xsltNewTemplate: 2526
+ 2748 						xmlStrdup: <>
+ 2749 						xsltParseTemplateContent: 1372
+ 2750 						xsltAddTemplate: 2543
+ 2751 					xsltCompilerNodePop: 1713
+ 2752 					xsltRestoreDocumentNamespaces: 857
+ 2753 					xsltCleanupStylesheetTree: 854
+ 2754 					xmlDocGetRootElement: <>
+ 2755 					xsltCompilationCtxtFree: 2345
+ 2756 				xsltResolveStylesheetAttributeSet: void (), <./libxslt/libxslt/attributes.c 588>
+ 2757 					xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2758 					xsltNextImport: 159
+ 2759 					xmlHashCreate: <>
+ 2760 					xmlHashScanFull: <>
+ 2761 					xsltMergeSASCallback: void (), <./libxslt/libxslt/attributes.c 546>
+ 2762 						xmlHashAddEntry2: <>
+ 2763 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2764 						xmlHashLookup2: <>
+ 2765 						xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2766 						xsltMergeAttrElemList: 2488
+ 2767 						xmlHashUpdateEntry2: <>
+ 2768 						xsltFreeAttrElemList: 885
+ 2769 					xmlHashFree: <>
+ 2770 					xsltResolveSASCallback: void (), <./libxslt/libxslt/attributes.c 491>
+ 2771 						xmlStrEqual: <>
+ 2772 						xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2773 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2774 						xsltGetSAS: xsltAttrElemPtr (), <./libxslt/libxslt/attributes.c 472>
+ 2775 							xmlHashLookup2: <>
+ 2776 							xsltNextImport: 159
+ 2777 						xsltResolveSASCallback: 2770
+ 2778 						xsltMergeAttrElemList: 2488
+ 2779 				xsltCompilationCtxtFree: 2345
+ 2780 				XSLT_CCTXT: <>
+ 2781 			xmlFreeDoc: <>
+ 2782 			xmlBuildURI: <>
+ 2783 			xsltParseStylesheetFile: xsltStylesheetPtr (), <./libxslt/libxslt/xslt.c 6704>
+ 2784 				xsltInitGlobals: 6
+ 2785 				xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2786 				xsltGetDefaultSecurityPrefs: 2399
+ 2787 				xsltCheckRead: 2400
+ 2788 				xsltTransformError: 9
+ 2789 				xsltDocDefaultLoader: xsltDocLoaderFunc, <./libxslt/libxslt/documents.c 110>
+ 2790 				xsltParseStylesheetDoc: 2317
+ 2791 				xmlFreeDoc: <>
+ 2792 			xmlFreeURI: <>
+ 2793 		xsltProcess: void (), <./libxslt/xsltproc/xsltproc.c 355>
+ 2794 			startTimer: 2281
+ 2795 			xmlXIncludeProcessFlags: <>
+ 2796 			xmlXIncludeProcess: <>
+ 2797 			endTimer: 2285
+ 2798 			xsltApplyStylesheet: xmlDocPtr (), <./libxslt/libxslt/transform.c 6288>
+ 2799 				xsltApplyStylesheetInternal: xmlDocPtr (), <./libxslt/libxslt/transform.c 5888>
+ 2800 					xsltInitGlobals: 6
+ 2801 					xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2802 					xmlDocGetRootElement: <>
+ 2803 					xmlXPathOrderDocElems: <>
+ 2804 					xsltNewTransformContext: xsltTransformContextPtr (), <./libxslt/libxslt/transform.c 465>
+ 2805 						xsltInitGlobals: 6
+ 2806 						xmlMalloc: <>
+ 2807 						xsltTransformError: 9
+ 2808 						memset: <>
+ 2809 						xsltTransformCacheCreate: xsltTransformCachePtr (), <./libxslt/libxslt/transform.c 400>
+ 2810 							xmlMalloc: <>
+ 2811 							xsltTransformError: 9
+ 2812 							memset: <>
+ 2813 						xmlDictCreateSub: <>
+ 2814 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2815 						xmlGenericError: <>
+ 2816 						xmlXPathInit: <>
+ 2817 						xmlXPathNewContext: <>
+ 2818 						xmlXPathContextSetCache: <>
+ 2819 						deallocate: <>
+ 2820 						XSLT_REGISTER_VARIABLE_LOOKUP: <>
+ 2821 						XSLT_REGISTER_FUNCTION_LOOKUP: <>
+ 2822 						xsltInitCtxtExts: int (), <./libxslt/libxslt/extensions.c 1015>
+ 2823 							xmlHashScan: <>
+ 2824 							xsltInitCtxtExt: void (), <./libxslt/libxslt/extensions.c 937>
+ 2825 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2826 								xmlHashLookup: <>
+ 2827 								xsltNewExtData: 1288
+ 2828 								xmlHashCreate: <>
+ 2829 								xmlHashAddEntry: <>
+ 2830 								xsltGenericError: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 523>
+ 2831 								xsltFreeExtData: 909
+ 2832 							xsltNextImport: 159
+ 2833 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2834 						xmlXPathOrderDocElems: <>
+ 2835 						xsltNewDocument: 636
+ 2836 						xsltGetDefaultSecurityPrefs: 2399
+ 2837 						xsltGetXIncludeDefault: int (), <./libxslt/libxslt/transform.c 366>
+ 2838 						xsltFreeTransformContext: void (), <./libxslt/libxslt/transform.c 617>
+ 2839 							xsltShutdownCtxtExts: void (), <./libxslt/libxslt/extensions.c 1080>
+ 2840 								xmlHashScan: <>
+ 2841 								xsltShutdownCtxtExt: void (), <./libxslt/libxslt/extensions.c 1055>
+ 2842 									xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2843 								xmlHashFree: <>
+ 2844 								xsltFreeExtData: 909
+ 2845 							xmlXPathFreeContext: <>
+ 2846 							xmlFree: <>
+ 2847 							deallocate: <>
+ 2848 							xsltFreeGlobalVariables: void (), <./libxslt/libxslt/variables.c 2192>
+ 2849 								xmlHashFree: <>
+ 2850 								xsltFreeStackElem: 372
+ 2851 							xsltFreeDocuments: void (), <./libxslt/libxslt/documents.c 251>
+ 2852 								xsltFreeDocumentKeys: 286
+ 2853 								xmlFreeDoc: <>
+ 2854 								xmlFree: <>
+ 2855 							xsltFreeCtxtExts: void (), <./libxslt/libxslt/extensions.c 642>
+ 2856 								xmlHashFree: <>
+ 2857 							xsltFreeRVTs: void (), <./libxslt/libxslt/variables.c 410>
+ 2858 								xsltFreeDocumentKeys: 286
+ 2859 								xmlFree: <>
+ 2860 								xmlFreeDoc: <>
+ 2861 							xsltTransformCacheFree: void (), <./libxslt/libxslt/transform.c 415>
+ 2862 								xsltFreeDocumentKeys: 286
+ 2863 								xmlFree: <>
+ 2864 								xmlFreeDoc: <>
+ 2865 							xmlDictFree: <>
+ 2866 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2867 							memset: <>
+ 2868 					xmlDictLookup: <>
+ 2869 					XSLT_GET_IMPORT_PTR: <>
+ 2870 					xmlStrEqual: <>
+ 2871 					htmlNewDoc: <>
+ 2872 					xmlGetIntSubset: <>
+ 2873 					xmlUnlinkNode: <>
+ 2874 					xmlFreeDtd: <>
+ 2875 					xsltGetHTMLIDs: 944
+ 2876 					error: <>
+ 2877 					xmlDictReference: <>
+ 2878 					xsltTransformError: 9
+ 2879 					xmlNewDoc: <>
+ 2880 					xmlStrdup: <>
+ 2881 					xsltNeedElemSpaceHandling: int (), <./libxslt/libxslt/imports.c 313>
+ 2882 						xsltNextImport: 159
+ 2883 					xsltApplyStripSpaces: void (), <./libxslt/libxslt/transform.c 5768>
+ 2884 						IS_XSLT_REAL_NODE: <>
+ 2885 						xsltFindElemSpaceHandling: int (), <./libxslt/libxslt/imports.c 340>
+ 2886 							xmlHashLookup2: <>
+ 2887 							BAD_CAST: <>
+ 2888 							xmlStrEqual: <>
+ 2889 							xsltNextImport: 159
+ 2890 						IS_BLANK_NODE: <>
+ 2891 						xmlUnlinkNode: <>
+ 2892 						xmlFreeNode: <>
+ 2893 						xsltApplyStripSpaces: 2883
+ 2894 						XSLT_TRACE: <>
+ 2895 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2896 					xmlHashCreate: <>
+ 2897 					xsltEvalUserParams: int (), <./libxslt/libxslt/variables.c 1626>
+ 2898 						xsltEvalOneUserParam: int (), <./libxslt/libxslt/variables.c 1691>
+ 2899 							xsltProcessUserParamInternal: int (), <./libxslt/libxslt/variables.c 1416>
+ 2900 								XSLT_TRACE: <>
+ 2901 								xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2902 								xsltSplitQName: 167
+ 2903 								xmlSearchNs: <>
+ 2904 								xmlDocGetRootElement: <>
+ 2905 								xsltTransformError: 9
+ 2906 								xmlHashLookup2: <>
+ 2907 								xmlHashCreate: <>
+ 2908 								xmlStrEqual: <>
+ 2909 								xsltNextImport: 159
+ 2910 								xmlXPathCompile: <>
+ 2911 								xmlXPathCompiledEval: <>
+ 2912 								xmlXPathFreeCompExpr: <>
+ 2913 								xmlXPathDebugDumpObject: <>
+ 2914 								xsltNewStackElem: 312
+ 2915 								xmlDictLookup: <>
+ 2916 								xmlXPathNewString: <>
+ 2917 								xmlHashAddEntry2: <>
+ 2918 								xsltFreeStackElem: 372
+ 2919 					xsltCountKeys: int (), <./libxslt/libxslt/transform.c 5837>
+ 2920 						xsltNextImport: 159
+ 2921 					xsltEvalGlobalVariables: int (), <./libxslt/libxslt/variables.c 1237>
+ 2922 						XSLT_TRACE: <>
+ 2923 						xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2924 						xmlHashLookup2: <>
+ 2925 						xsltCopyStackElem: xsltStackElemPtr (), <./libxslt/libxslt/variables.c 510>
+ 2926 							xmlMalloc: <>
+ 2927 							xsltTransformError: 9
+ 2928 							memset: <>
+ 2929 						xmlHashAddEntry2: <>
+ 2930 						xsltTransformError: 9
+ 2931 						xsltNextImport: 159
+ 2932 						xmlHashScan: <>
+ 2933 						xsltEvalGlobalVariable: xmlXPathObjectPtr (), <./libxslt/libxslt/variables.c 1023>
+ 2934 							XSLT_TRACE: <>
+ 2935 							xsltGenericDebug: xmlGenericErrorFunc, <./libxslt/libxslt/xsltutils.c 569>
+ 2936 							xslHandleDebugger: 170
+ 2937 							xmlXPathCompile: <>
+ 2938 							error: <>
+ 2939 							xmlXPathCompiledEval: <>
+ 2940 							xmlXPathFreeCompExpr: <>
+ 2941 							xsltTransformError: 9
+ 2942 							xmlXPathDebugDumpObject: <>
+ 2943 							xmlXPathNewCString: <>
+ 2944 							xsltCreateRVT: 75
+ 2945 							xsltRegisterPersistRVT: int (), <./libxslt/libxslt/variables.c 390>
+ 2946 							xsltApplyOneTemplate: 229
+ 2947 							xmlXPathNewValueTree: <>
+ 2948 					xsltProcessOneNode: 728
+ 2949 					xsltLocalVariablePop: 370
+ 2950 					xsltShutdownCtxtExts: 2839
+ 2951 					xsltCleanupTemplates: void (), <./libxslt/libxslt/pattern.c 2483>
+ 2952 					xsltFreeStackElemList: 371
+ 2953 					xmlXPathFreeObject: <>
+ 2954 					xsltFreeRVTs: 2857
+ 2955 					xmlDictQLookup: <>
+ 2956 					xmlStrcasecmp: <>
+ 2957 					xmlIsBlankNode: <>
+ 2958 					xmlCreateIntSubset: <>
+ 2959 					xmlXPathFreeNodeSet: <>
+ 2960 					xsltSaveProfiling: void (), <./libxslt/libxslt/xsltutils.c 1929>
+ 2961 						xmlMalloc: <>
+ 2962 						xsltNextImport: 159
+ 2963 						time: <>
+ 2964 						fprintf: <>
+ 2965 						xmlStrlen: <>
+ 2966 						sprintf: <>
+ 2967 						pretty_templ_match: char * (), <./libxslt/libxslt/xsltutils.c 1896>
+ 2968 						xmlFree: <>
+ 2969 					xmlFreeDoc: <>
+ 2970 					xsltCheckWrite: 798
+ 2971 					printf: <>
+ 2972 					xsltFreeTransformContext: 2838
+ 2973 			xmlFreeDoc: <>
+ 2974 			htmlReadFile: <>
+ 2975 			xmlReadFile: <>
+ 2976 			xsltNewTransformContext: 2804
+ 2977 			xsltSetCtxtParseOptions: int (), <./libxslt/libxslt/xsltutils.c 1405>
+ 2978 			xsltApplyStylesheetUser: xmlDocPtr (), <./libxslt/libxslt/transform.c 6331>
+ 2979 				xsltApplyStylesheetInternal: 2799
+ 2980 			xsltFreeTransformContext: 2838
+ 2981 			fprintf: <>
+ 2982 			xmlDebugDumpDocument: <>
+ 2983 			xsltSaveResultToFile: int (), <./libxslt/libxslt/xsltutils.c 1645>
+ 2984 				XSLT_GET_IMPORT_PTR: <>
+ 2985 				xmlFindCharEncodingHandler: <>
+ 2986 				xmlStrEqual: <>
+ 2987 				xmlOutputBufferCreateFile: <>
+ 2988 				xsltSaveResultTo: 960
+ 2989 				xmlOutputBufferClose: <>
+ 2990 			xmlStrEqual: <>
+ 2991 			xsltRunStylesheetUser: int (), <./libxslt/libxslt/transform.c 6369>
+ 2992 				xsltApplyStylesheetInternal: 2799
+ 2993 				xsltTransformError: 9
+ 2994 				xsltSaveResultTo: 960
+ 2995 				xsltSaveResultToFilename: 955
+ 2996 				xmlFreeDoc: <>
+ 2997 		xsltFreeStylesheet: 853
+ 2998 		xsltParseStylesheetDoc: 2317
+ 2999 		xmlFreeDoc: <>
+ 3000 		htmlReadFile: <>
+ 3001 		xmlFree: <>
+ 3002 		xsltFreeSecurityPrefs: void (), <./libxslt/libxslt/security.c 111>
+ 3003 			xmlFree: <>
+ 3004 		xsltCleanupGlobals: void (), <./libxslt/libxslt/extensions.c 2274>
+ 3005 			xsltUnregisterAllExtModules: void (), <./libxslt/libxslt/extensions.c 1342>
+ 3006 				xmlMutexLock: <>
+ 3007 				xmlHashFree: <>
+ 3008 				xsltFreeExtModule: void (), <./libxslt/libxslt/extensions.c 200>
+ 3009 					xmlFree: <>
+ 3010 				xmlMutexUnlock: <>
+ 3011 			xsltUnregisterAllExtModuleFunction: void (), <./libxslt/libxslt/extensions.c 1478>
+ 3012 				xmlMutexLock: <>
+ 3013 				xmlHashFree: <>
+ 3014 				xmlMutexUnlock: <>
+ 3015 			xsltUnregisterAllExtModuleElement: void (), <./libxslt/libxslt/extensions.c 1802>
+ 3016 				xmlMutexLock: <>
+ 3017 				xmlHashFree: <>
+ 3018 				xsltFreeExtElement: 105
+ 3019 				xmlMutexUnlock: <>
+ 3020 			xsltUnregisterAllExtModuleTopLevel: void (), <./libxslt/libxslt/extensions.c 1913>
+ 3021 				xmlMutexLock: <>
+ 3022 				xmlHashFree: <>
+ 3023 				xmlMutexUnlock: <>
+ 3024 			xmlMutexLock: <>
+ 3025 			xmlHashScan: <>
+ 3026 			xsltHashScannerModuleFree: void (), <./libxslt/libxslt/extensions.c 2246>
+ 3027 				xmlModuleClose: <>
+ 3028 			xmlHashFree: <>
+ 3029 			xmlMutexUnlock: <>
+ 3030 			xmlFreeMutex: <>
+ 3031 			xsltFreeLocales: void (), <./libxslt/libxslt/xsltlocale.c 75>
+ 3032 				xmlRMutexLock: <>
+ 3033 				xmlFree: <>
+ 3034 				xmlRMutexUnlock: <>
+ 3035 			xsltUninit: void (), <./libxslt/libxslt/xslt.c 245>
+ 3036 				xmlFreeRMutex: <>
+ 3037 		xmlCleanupParser: <>
+ 3038 		xmlMemoryDump: <>
+ 3039 		xmlInitParser: <>
+ 3040 		registerFooModule: void (), <./libxslt/xsltproc/testThreads.c 88>
+ 3041 			xsltRegisterExtModule: 2155
+ 3042 			registerFooExtensions: void * (), <./libxslt/xsltproc/testThreads.c 70>
+ 3043 				xsltRegisterExtModuleFunction: 62
+ 3044 				BAD_CAST: <>
+ 3045 				fooFunction: void (), <./libxslt/xsltproc/testThreads.c 64>
+ 3046 					xmlXPathReturnString: <>
+ 3047 					xmlStrdup: <>
+ 3048 					BAD_CAST: <>
+ 3049 			shutdownFooExtensions: void (), <./libxslt/xsltproc/testThreads.c 77>
+ 3050 				xmlStrEqual: <>
+ 3051 				fprintf: <>
+ 3052 				BAD_CAST: <>
+ 3053 		pthread_create: <>
+ 3054 		threadRoutine1: void * (), <./libxslt/xsltproc/testThreads.c 93>
+ 3055 			xmlReadMemory: <>
+ 3056 			strlen: <>
+ 3057 			fprintf: <>
+ 3058 			exit: <>
+ 3059 			xsltParseStylesheetDoc: 2317
+ 3060 			xsltApplyStylesheet: 2798
+ 3061 			xsltSaveResultToString: int (), <./libxslt/libxslt/xsltutils.c 1732>
+ 3062 				XSLT_GET_IMPORT_PTR: <>
+ 3063 				xmlFindCharEncodingHandler: <>
+ 3064 				xmlStrEqual: <>
+ 3065 				xmlAllocOutputBuffer: <>
+ 3066 				xsltSaveResultTo: 960
+ 3067 				xmlStrndup: <>
+ 3068 				xmlOutputBufferClose: <>
+ 3069 			xmlStrEqual: <>
+ 3070 			BAD_CAST: <>
+ 3071 			xsltFreeStylesheet: 853
+ 3072 			xmlFreeDoc: <>
+ 3073 			xmlFree: <>
+ 3074 		perror: <>
+ 3075 		exit: <>
+ 3076 		pthread_join: <>
+ 3077 		xmlReadMemory: <>
+ 3078 		strlen: <>
+ 3079 		threadRoutine2: void * (), <./libxslt/xsltproc/testThreads.c 139>
+ 3080 			fprintf: <>
+ 3081 			exit: <>
+ 3082 			xmlReadMemory: <>
+ 3083 			strlen: <>
+ 3084 			xsltApplyStylesheet: 2798
+ 3085 			xsltSaveResultToString: 3061
+ 3086 			xmlStrEqual: <>
+ 3087 			BAD_CAST: <>
+ 3088 			xmlFreeDoc: <>
+ 3089 			xmlFree: <>
+ 3090 		calloc: <>
+ 3091 		usage: void (), <./libxslt/doc/tutorial2/libxslt_pipes.c 32>
+ 3092 			printf: <>
+ 3093 		fopen: <>
+ 3094 		malloc: <>
+ 3095 		strcpy: <>
+ 3096 		strtok: <>
+ 3097 		xsltParseStylesheetFile: 2783
+ 3098 		xmlParseFile: <>
+ 3099 		free: <>
+ 3100 		xmlSubstituteEntitiesDefault: <>
+ 3101 		xsltApplyStylesheet: 2798
+ 3102 		xsltSaveResultToFile: 2983
+ 3103 		xmlDocDump: <>
+ 3104 		fclose: <>

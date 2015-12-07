@@ -1,0 +1,338 @@
+    1 	main: int (), <./BatteryFaker/suidLauncherTool/suidLauncher.c 57>
+    2 		openlog: <>
+    3 		signal: <>
+    4 		SignalHandler: void (), <./ioupsd/upsd.c 112>
+    5 			syslog: <>
+    6 			IONotificationPortDestroy: <>
+    7 			IOObjectRelease: <>
+    8 			exit: <>
+    9 		SetupMIGServer: Boolean (), <./ioupsd/upsd.c 136>
+   10 			task_get_bootstrap_port: <>
+   11 			mach_task_self: <>
+   12 			CFRunLoopGetCurrent: <>
+   13 			bootstrap_check_in: <>
+   14 			syslog: <>
+   15 			CFMachPortCreateWithPort: <>
+   16 			upsd_mach_port_callback: void (), <./ioupsd/ioupsplugin.c 97>
+   17 				CFAllocatorAllocate: <>
+   18 				upsd_demux: boolean_t (), <./ioupsd/ioupsplugin.c 42>
+   19 					round_msg: <>
+   20 					ioupsplugin_server: <>
+   21 				CFAllocatorDeallocate: <>
+   22 				mach_msg_destroy: <>
+   23 				MACH_MSGH_BITS_REMOTE: <>
+   24 				mach_msg: <>
+   25 			CFMachPortCreateRunLoopSource: <>
+   26 			CFRunLoopAddSource: <>
+   27 			CFRelease: <>
+   28 		InitUPSNotifications: void (), <./ioupsd/upsd.c 198>
+   29 			IONotificationPortCreate: <>
+   30 			CFRunLoopAddSource: <>
+   31 			CFRunLoopGetCurrent: <>
+   32 			IONotificationPortGetRunLoopSource: <>
+   33 			IOServiceMatching: <>
+   34 			CFDictionaryCreateMutable: <>
+   35 			CFRelease: <>
+   36 			CFDictionarySetValue: <>
+   37 			CFSTR: <>
+   38 			IOServiceAddMatchingNotification: <>
+   39 			UPSDeviceAdded: void (), <./ioupsd/upsd.c 268>
+   40 				IOIteratorNext: <>
+   41 				IOCreatePlugInInterfaceForService: <>
+   42 				QueryInterface: <>
+   43 				CFUUIDGetUUIDBytes: <>
+   44 				createAsyncEventSource: <>
+   45 				CFGetTypeID: <>
+   46 				CFRunLoopTimerGetTypeID: <>
+   47 				CFRunLoopAddTimer: <>
+   48 				CFRunLoopGetCurrent: <>
+   49 				CFRunLoopSourceGetTypeID: <>
+   50 				CFRunLoopAddSource: <>
+   51 				getProperties: <>
+   52 				GetPrivateData: UPSDataRef (), <./ioupsd/upsd.c 524>
+   53 					CFArrayCreateMutable: <>
+   54 					CFArrayGetCount: <>
+   55 					CFArrayGetValueAtIndex: <>
+   56 					CFDataGetMutableBytePtr: <>
+   57 					CFDataCreateMutable: <>
+   58 					bzero: <>
+   59 					CFArrayAppendValue: <>
+   60 					CFRelease: <>
+   61 				getCapabilities: <>
+   62 				CreatePowerManagerUPSEntry: IOReturn (), <./ioupsd/upsd.c 587>
+   63 					CFDictionaryCreateMutable: <>
+   64 					CFDictionaryGetValue: <>
+   65 					CFSTR: <>
+   66 					CFDictionarySetValue: <>
+   67 					CFNumberCreate: <>
+   68 					CFRelease: <>
+   69 					CFSetContainsValue: <>
+   70 					SCDynamicStoreCreate: <>
+   71 					snprintf: <>
+   72 					SCLog: <>
+   73 					CFStringCreateWithCStringNoCopy: <>
+   74 					SCDynamicStoreKeyCreate: <>
+   75 					SCDynamicStoreSetValue: <>
+   76 					SCError: <>
+   77 				getEvent: <>
+   78 				ProcessUPSEvent: void (), <./ioupsd/upsd.c 485>
+   79 					CFDictionaryGetCount: <>
+   80 					malloc: <>
+   81 					CFDictionaryGetKeysAndValues: <>
+   82 					CFDictionarySetValue: <>
+   83 					free: <>
+   84 					SCDynamicStoreSetValue: <>
+   85 				setEventCallback: <>
+   86 				UPSEventCallback: void (), <./ioupsd/upsd.c 472>
+   87 					ProcessUPSEvent: 78
+   88 				IOServiceAddInterestNotification: <>
+   89 				DeviceNotification: void (), <./ioupsd/upsd.c 407>
+   90 					SCDynamicStoreRemoveValue: <>
+   91 					CFRunLoopRemoveSource: <>
+   92 					CFRunLoopGetCurrent: <>
+   93 					CFRelease: <>
+   94 					CFRunLoopRemoveTimer: <>
+   95 					Release: <>
+   96 					IOObjectRelease: <>
+   97 				Release: <>
+   98 				CFRunLoopRemoveSource: <>
+   99 				CFRunLoopRemoveTimer: <>
+  100 				IOObjectRelease: <>
+  101 		CFRunLoopRun: <>
+  102 		getopt: <>
+  103 		usage: void (), <./caffeinate/caffeinate.c 226>
+  104 			fprintf: <>
+  105 		exit: <>
+  106 		strtol: <>
+  107 		forkChild: void (), <./caffeinate/caffeinate.c 183>
+  108 			fork: <>
+  109 			perror: <>
+  110 			exit: <>
+  111 			createAssertions: int (), <./caffeinate/caffeinate.c 127>
+  112 				snprintf: <>
+  113 				CFStringCreateWithCString: <>
+  114 				fprintf: <>
+  115 				IOPMAssertionCreateWithDescription: <>
+  116 				CFSTR: <>
+  117 				CFStringGetCStringPtr: <>
+  118 				CFRelease: <>
+  119 			execvp: <>
+  120 			signal: <>
+  121 			dispatch_source_create: <>
+  122 			dispatch_get_main_queue: <>
+  123 			dispatch_source_set_event_handler: <>
+  124 			waitpid: <>
+  125 			WIFEXITED: <>
+  126 			WEXITSTATUS: <>
+  127 			dispatch_resume: <>
+  128 		createAssertions: 111
+  129 		sleep: <>
+  130 		dispatch_main: <>
+  131 		fprintf: <>
+  132 		fgetln: <>
+  133 		has_prefix: int (), <./Tests/Tools/pm_bsdtestsummarize.c 14>
+  134 			strncmp: <>
+  135 			strlen: <>
+  136 		strncmp: <>
+  137 		MIN: <>
+  138 		print_summary: int (), <./Tests/Tools/pm_bsdtestsummarize.c 19>
+  139 			snprintf: <>
+  140 			fprintf: <>
+  141 			floor: <>
+  142 			ceil: <>
+  143 		strncpy: <>
+  144 		PMTestInitialize: IOReturn (), <./Tests/Sources/PMTestLib.c 42>
+  145 			printf: <>
+  146 			XILogOpenLog: <>
+  147 		PMTestLog: void (), <./Tests/Sources/PMTestLib.c 69>
+  148 			va_start: <>
+  149 			vprintf: <>
+  150 			printf: <>
+  151 			XILog: <>
+  152 			va_end: <>
+  153 		notify_register_dispatch: <>
+  154 		dispatch_get_main_queue: <>
+  155 		PMTestFail: void (), <./Tests/Sources/PMTestLib.c 98>
+  156 			va_start: <>
+  157 			printf: <>
+  158 			vprintf: <>
+  159 			va_end: <>
+  160 		calloc: <>
+  161 		dispatch_async: <>
+  162 		CFStringCreateWithFormat: <>
+  163 		CFSTR: <>
+  164 		IOPMAssertionCreateWithDescription: <>
+  165 		CFStringGetCString: <>
+  166 		CFRelease: <>
+  167 		dispatch_source_create: <>
+  168 		dispatch_source_set_timer: <>
+  169 		dispatch_time: <>
+  170 		dispatch_source_set_event_handler: <>
+  171 		printf: <>
+  172 		IOPMAssertionCopyProperties: <>
+  173 		snprintf: <>
+  174 		CFDictionaryGetValue: <>
+  175 		CFShow: <>
+  176 		CFDateGetTimeIntervalSinceDate: <>
+  177 		CFNumberGetValue: <>
+  178 		CFEqual: <>
+  179 		dispatch_resume: <>
+  180 		pthread_create: <>
+  181 		threadLoopConnection: void (), <./Tests/Sources/pmconfigdserver_connect.c 49>
+  182 			PMTestLog: 147
+  183 			bootstrap_look_up: <>
+  184 			PMTestFail: 155
+  185 			PMTestPass: void (), <./Tests/Sources/PMTestLib.c 84>
+  186 				va_start: <>
+  187 				printf: <>
+  188 				vprintf: <>
+  189 				va_end: <>
+  190 			IOPMCopyActivePowerProfiles: <>
+  191 			CFDictionaryCreateMutableCopy: <>
+  192 			CFNumberCreate: <>
+  193 			CFDictionarySetValue: <>
+  194 			CFSTR: <>
+  195 			IOPMSetActivePowerProfiles: <>
+  196 			mach_port_destroy: <>
+  197 			mach_task_self: <>
+  198 		pthread_join: <>
+  199 		checkForBatteries: void (), <./Tests/Sources/EnergyPrefs.c 332>
+  200 			IOPSCopyPowerSourcesInfo: <>
+  201 			PMTestFail: 155
+  202 			IOPSPowerSourceSupported: <>
+  203 			CFSTR: <>
+  204 			PMTestLog: 147
+  205 			CFRelease: <>
+  206 			PMTestPass: 185
+  207 		IOPMFindPowerManagement: <>
+  208 		IOPMGetAggressiveness: <>
+  209 		IOServiceClose: <>
+  210 		PMTestPass: 185
+  211 		IOPMCopyPMPreferences: <>
+  212 		verifyEnergySettingsDictionary: void (), <./Tests/Sources/EnergyPrefs.c 215>
+  213 			PMTestFail: 155
+  214 			CFDictionaryGetValue: <>
+  215 			CFSTR: <>
+  216 			CFDictionaryGetCount: <>
+  217 		IOPMCopyPowerProfiles: <>
+  218 		verifyPowerProfiles: void (), <./Tests/Sources/EnergyPrefs.c 272>
+  219 			PMTestFail: 155
+  220 			CFArrayGetCount: <>
+  221 			CFArrayGetValueAtIndex: <>
+  222 			PMTestLog: 147
+  223 			verifyEnergySettingsDictionary: 212
+  224 		IOPMCopyActivePowerProfiles: <>
+  225 		verifyActivePowerProfiles: void (), <./Tests/Sources/EnergyPrefs.c 301>
+  226 			isA_CFDictionary: <>
+  227 			PMTestFail: 155
+  228 			CFDictionaryGetValue: <>
+  229 			CFSTR: <>
+  230 			isA_CFNumber: <>
+  231 		connectSmartBatteryManager: io_connect_t (), <./Tests/Sources/SmartBatteryUserClient.c 223>
+  232 			IOServiceGetMatchingService: <>
+  233 			IOServiceNameMatching: <>
+  234 			IOServiceOpen: <>
+  235 			mach_task_self: <>
+  236 			IOObjectRelease: <>
+  237 		IOServiceGetMatchingService: <>
+  238 		IOServiceNameMatching: <>
+  239 		IOObjectRelease: <>
+  240 		CFAbsoluteTimeGetCurrent: <>
+  241 		IOPMAssertionCreate: <>
+  242 		CFDictionaryContainsKey: <>
+  243 		IOPMAssertionRelease: <>
+  244 		fork: <>
+  245 		CFNumberCreate: <>
+  246 		CFDictionaryCreate: <>
+  247 		IOPMAssertionCreateWithProperties: <>
+  248 		wait4: <>
+  249 		WIFEXITED: <>
+  250 		WEXITSTATUS: <>
+  251 		check_IOPMConnectionCreate_and_Release: void (), <./Tests/Sources/assertions-crash-configd-6765534.c 159>
+  252 			fork: <>
+  253 			PMTestFail: 155
+  254 			exit: <>
+  255 			IOPMConnectionCreate: <>
+  256 			CFSTR: <>
+  257 			IOPMConnectionSetNotification: <>
+  258 			myDummyPMConnectionHandler: void (), <./Tests/Sources/assertions-crash-configd-6765534.c 147>
+  259 				PMTestFail: 155
+  260 			IOPMConnectionScheduleWithRunLoop: <>
+  261 			CFRunLoopGetCurrent: <>
+  262 			IOPMConnectionRelease: <>
+  263 			wait4: <>
+  264 			WIFEXITED: <>
+  265 			WEXITSTATUS: <>
+  266 		IOPMAssertionSetTimeout: <>
+  267 		getAssertionLevelForType: IOPMAssertionLevel (), <./Tests/Sources/AssertTimeouts-TurnOff-9892470.c 54>
+  268 			IOPMCopyAssertionsStatus: <>
+  269 			CFDictionaryGetValue: <>
+  270 			CFNumberGetValue: <>
+  271 			CFRelease: <>
+  272 		overrideSetting: __private_extern__ void (), <./pmconfigd/PMSettings.c 91>
+  273 		CFDictionaryCreateMutable: <>
+  274 		CFDictionarySetValue: <>
+  275 		IOPMOverrideDefaultPMPreferences: <>
+  276 		IOPSCopyPowerSourcesInfo: <>
+  277 		IORegistryEntryFromPath: <>
+  278 		IORegistryEntryCreateCFProperty: <>
+  279 		CFDataGetBytePtr: <>
+  280 		IOPSGetActiveBattery: <>
+  281 		IOPSGetProvidingPowerSourceType: <>
+  282 		IOPSGetBatteryWarningLevel: <>
+  283 		IOPSGetTimeRemainingEstimate: <>
+  284 		IOPSCopyExternalPowerAdapterDetails: <>
+  285 		assertToBeKilled: void (), <./Tests/Sources/AssertTimeouts-Kill-10652741.c 132>
+  286 			CFStringCreateWithCString: <>
+  287 			IOPMAssertionCreateWithDescription: <>
+  288 			exit: <>
+  289 			sleep: <>
+  290 		posix_spawn: <>
+  291 		waitpid: <>
+  292 		WIFSIGNALED: <>
+  293 		stringForSignal: char * (), <./Tests/Sources/AssertTimeouts-Kill-10652741.c 62>
+  294 		WTERMSIG: <>
+  295 		check_IOPMAssertionCreate_and_Release: void (), <./Tests/Sources/assertions-crash-configd-6765534.c 82>
+  296 			fork: <>
+  297 			perror: <>
+  298 			exit: <>
+  299 			IOPMAssertionCreateWithName: <>
+  300 			CFSTR: <>
+  301 			PMTestFail: 155
+  302 			IOPMAssertionSetTimeout: <>
+  303 			IOPMAssertionRelease: <>
+  304 			wait4: <>
+  305 			WIFEXITED: <>
+  306 			WEXITSTATUS: <>
+  307 		Test_runthroughonce: void (), <./Tests/Sources/AssertEach.c 113>
+  308 			IOPMCopyAssertionsStatus: <>
+  309 			fprintf: <>
+  310 			CFDictionaryCreateMutableCopy: <>
+  311 			CFRelease: <>
+  312 			CFDictionaryRemoveValue: <>
+  313 			CFDictionaryGetCount: <>
+  314 			calloc: <>
+  315 			CFDictionaryGetKeysAndValues: <>
+  316 			PMTestLog: 147
+  317 			CFStringGetCString: <>
+  318 			IOPMAssertionCreate: <>
+  319 			PMTestFail: 155
+  320 			IOPMAssertionRelease: <>
+  321 			PMTestPass: 185
+  322 			createLongAssertionName: CFStringRef (), <./Tests/Sources/copyAssertEach.c 84>
+  323 				CFStringCreateWithCString: <>
+  324 			IOPMAssertionCreateWithName: <>
+  325 			createFunnyAssertionName: CFStringRef (), <./Tests/Sources/copyAssertEach.c 75>
+  326 				CFStringCreateWithCString: <>
+  327 			bzero: <>
+  328 			AssertionIsSupported: bool (), <./Tests/Sources/copyAssertEach.c 93>
+  329 				CFEqual: <>
+  330 			createLongAssertionName: CFStringRef (), <./Tests/Sources/AssertEach.c 79>
+  331 				CFStringCreateWithCString: <>
+  332 			createFunnyAssertionName: CFStringRef (), <./Tests/Sources/AssertEach.c 70>
+  333 				CFStringCreateWithCString: <>
+  334 			AssertionIsSupported: bool (), <./Tests/Sources/AssertEach.c 88>
+  335 				CFEqual: <>
+  336 		strcmp: <>
+  337 		execl: <>
+  338 		strerror: <>

@@ -1,0 +1,29 @@
+    1 	main: int (), <./testsuite/unw_getcontext.c 16>
+    2 		unwind_tester: <>
+    3 		dlopen: <>
+    4 		printf: <>
+    5 		dlsym: <>
+    6 		unw_iterate_dwarf_unwind_cache: <>
+    7 		callback: void (), <./testsuite/dwarf_cache_dlclose.mk/main.c 13>
+    8 		dlclose: <>
+    9 		bar: int (), <./testsuite/exception_missing_eh2.c 10>
+   10 			unw_getcontext: <>
+   11 			unw_init_local: <>
+   12 			unw_get_proc_name: <>
+   13 			strcmp: <>
+   14 			exit: <>
+   15 			unw_step: <>
+   16 			handler: _Unwind_Reason_Code (), <./testsuite/Unwind_Backtrace.c 28>
+   17 				dladdr: <>
+   18 				strcmp: <>
+   19 				fprintf: <>
+   20 				exit: <>
+   21 			foo: int (), <./testsuite/backtrace2.c 4>
+   22 				bar: 9
+   23 		foo: 21
+   24 		pthread_create: <>
+   25 		work: void * (), <./testsuite/backtrace.c 51>
+   26 			foo: 21
+   27 		exit: <>
+   28 		pthread_join: <>
+   29 		unw_getcontext: <>

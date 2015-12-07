@@ -1,0 +1,303 @@
+    1 	main: int (), <./gzip/gzip.c 391>
+    2 		getopt_long: int (), <./gzip/lib/getopt1.c 41>
+    3 		printf: <>
+    4 		exit: <>
+    5 		getopt: int (), <./gzip/lib/getopt.c 1116>
+    6 		putchar: <>
+    7 		getchar: <>
+    8 		fputs: <>
+    9 		fprintf: <>
+   10 		strcpy: <>
+   11 		strncat: <>
+   12 		strlen: <>
+   13 		popen: <>
+   14 		getc: <>
+   15 		pclose: <>
+   16 		fread: <>
+   17 		fwrite: <>
+   18 		EXPAND: <>
+   19 		gzip_base_name: char * (), <./gzip/util.c 241>
+   20 		strequ:  + if (), <./patches/patch-gzip.c 68>
+   21 		add_envopt: char * (), <./gzip/util.c 364>
+   22 		strncmp: <>
+   23 		atoi: <>
+   24 		try_help: void (), <./gzip/gzip.c 306>
+   25 			fprintf: <>
+   26 			do_exit: local void (), <./gzip/gzip.c 1873>
+   27 				exit: <>
+   28 				free: <>
+   29 				FREE: <>
+   30 		help: local void (), <./gzip/gzip.c 314>
+   31 			printf: <>
+   32 		do_exit: 26
+   33 		license: local void (), <./gzip/gzip.c 364>
+   34 			printf: <>
+   35 		version: local void (), <./gzip/gzip.c 373>
+   36 			license: 33
+   37 			printf: <>
+   38 		lzw: int (), <./gzip/lzw.c 17>
+   39 			fprintf: <>
+   40 		ALLOC: <>
+   41 		install_signal_handlers: void (), <./gzip/gzip.c 1808>
+   42 			sigemptyset: <>
+   43 			sigaction: <>
+   44 			sigaddset: <>
+   45 			abort_gzip_signal: RETSIGTYPE (), <./gzip/gzip.c 1929>
+   46 				signal: <>
+   47 				remove_output_file: void (), <./gzip/gzip.c 1899>
+   48 					sigprocmask: <>
+   49 					close: <>
+   50 					xunlink: int (), <./gzip/util.c 263>
+   51 				raise: <>
+   52 			sigismember: <>
+   53 			signal: <>
+   54 			siginterrupt: <>
+   55 		SET_BINARY_MODE: <>
+   56 		fileno: <>
+   57 		treat_file:  + + + + local void (), <./patches/patch-gzip.c 62>
+   58 			strequ:  + if (), <./patches/patch-gzip.c 68>
+   59 			treat_stdin: local void (), <./gzip/gzip.c 592>
+   60 				isatty: <>
+   61 				fileno: <>
+   62 				fprintf: <>
+   63 				do_exit: 26
+   64 				SET_BINARY_MODE: <>
+   65 				strcpy: <>
+   66 				fstat: int (), <./gzip/primos/primos.c 106>
+   67 					stat: int (), <./gzip/primos/primos.c 54>
+   68 						frwlock: <>
+   69 						ftype: <>
+   70 						fsize: <>
+   71 						fdtm: <>
+   72 					getname: <>
+   73 				progerror: local void (), <./gzip/gzip.c 380>
+   74 					fprintf: <>
+   75 					perror: <>
+   76 				S_ISREG: <>
+   77 				get_stat_mtime: <>
+   78 				clear_bufs: void (), <./gzip/util.c 107>
+   79 				get_method: local int (), <./gzip/gzip.c 1278>
+   80 					try_byte: <>
+   81 					get_byte: <>
+   82 					memcmp: <>
+   83 					fprintf: <>
+   84 					unzip: int (), <./gzip/unzip.c 116>
+   85 						updcrc: ulg (), <./gzip/util.c 84>
+   86 						LG: <>
+   87 						inflate: <>
+   88 						xalloc_die: void (), <./gzip/util.c 429>
+   89 							abort: <>
+   90 						gzip_error: void (), <./gzip/util.c 421>
+   91 						fprintf: <>
+   92 						get_byte: <>
+   93 						put_ubyte: <>
+   94 						flush_window: void (), <./gzip/util.c 191>
+   95 							updcrc: ulg (), <./gzip/util.c 84>
+   96 							write_buf: void (), <./gzip/util.c 207>
+   97 						WARN: <>
+   98 						abort_gzip: void (), <./gzip/gzip.c 1919>
+   99 							remove_output_file: 47
+  100 							do_exit: 26
+  101 					gzip_base_name: char * (), <./gzip/util.c 241>
+  102 					get_char: <>
+  103 					gzip_error: void (), <./gzip/util.c 421>
+  104 					memmove: <>
+  105 					strlen: <>
+  106 					MAKE_LEGAL_NAME: <>
+  107 					check_zipfile: int (), <./gzip/unzip.c 68>
+  108 						SH: <>
+  109 						LG: <>
+  110 						fprintf: <>
+  111 					unpack: int (), <./gzip/unpack.c 203>
+  112 						read_tree: local void (), <./gzip/unpack.c 108>
+  113 							get_byte: <>
+  114 							gzip_error: void (), <./gzip/util.c 421>
+  115 							Trace: <>
+  116 						build_tree: local void (), <./gzip/unpack.c 163>
+  117 							pqdownheap: local void (), <./gzip/trees.c 464>
+  118 								smaller: <>
+  119 							pqremove: <>
+  120 							MAX: <>
+  121 							fprintf: <>
+  122 							gen_bitlen: local void (), <./gzip/trees.c 496>
+  123 								Trace: <>
+  124 							gen_codes: local void (), <./gzip/trees.c 581>
+  125 								Assert: <>
+  126 								Tracev: <>
+  127 								bi_reverse: <>
+  128 								Tracec: <>
+  129 								isgraph: <>
+  130 							MIN: <>
+  131 						clear_bitbuf: <>
+  132 						Trace: <>
+  133 						look_bits: <>
+  134 						put_ubyte: <>
+  135 						Tracev: <>
+  136 						skip_bits: <>
+  137 						flush_window: 94
+  138 						gzip_error: void (), <./gzip/util.c 421>
+  139 					unlzw: int (), <./gzip/unlzw.c 191>
+  140 						get_byte: <>
+  141 						WARN: <>
+  142 						MAXCODE: <>
+  143 						fprintf: <>
+  144 						clear_tab_prefixof: <>
+  145 						tab_suffixof: <>
+  146 						abs: <>
+  147 						read_buffer: int (), <./gzip/util.c 148>
+  148 						read_error: void (), <./gzip/util.c 441>
+  149 							fprintf: <>
+  150 							perror: <>
+  151 							abort_gzip: 98
+  152 						input: <>
+  153 						Tracev: <>
+  154 						gzip_error: void (), <./gzip/util.c 421>
+  155 						write_buf: void (), <./gzip/util.c 207>
+  156 						tab_prefixof: <>
+  157 						memcpy: <>
+  158 					unlzh: int (), <./gzip/unlzh.c 386>
+  159 					copy: int (), <./gzip/util.c 63>
+  160 						write_buf: void (), <./gzip/util.c 207>
+  161 						read_buffer: int (), <./gzip/util.c 148>
+  162 						read_error: 148
+  163 					WARN: <>
+  164 				do_list: local void (), <./gzip/gzip.c 1470>
+  165 					printf: <>
+  166 					fprint_off: void (), <./gzip/util.c 478>
+  167 						putc: <>
+  168 					display_ratio: void (), <./gzip/util.c 466>
+  169 						fprintf: <>
+  170 					lseek: <>
+  171 					read: <>
+  172 					read_error: 148
+  173 					LG: <>
+  174 					localtime: <>
+  175 				input_eof: local int (), <./gzip/gzip.c 572>
+  176 					fill_inbuf: int (), <./gzip/util.c 117>
+  177 						read_buffer: int (), <./gzip/util.c 148>
+  178 						read_error: 148
+  179 						flush_window: 94
+  180 				display_ratio: 168
+  181 			COMPAT_MODE: <>
+  182 			strrchr: <>
+  183 			strcmp: <>
+  184 			strlen: <>
+  185 			WARN: <>
+  186 			strcpy: <>
+  187 			strcat: <>
+  188 			open_input_file: int (), <./gzip/gzip.c 1088>
+  189 				strlen: <>
+  190 				strcpy: <>
+  191 				open_and_stat: int (), <./gzip/gzip.c 1045>
+  192 					lstat: int (), <./gzip/primos/primos.c 47>
+  193 						stat: 67
+  194 					S_ISLNK: <>
+  195 					OPEN: <>
+  196 					fstat: 66
+  197 					close: <>
+  198 				progerror: 73
+  199 				get_suffix: local char * (), <./gzip/gzip.c 998>
+  200 					strequ:  + if (), <./patches/patch-gzip.c 68>
+  201 					strrchr: <>
+  202 					strlen: <>
+  203 					strcpy: <>
+  204 					strlwr: char * (), <./gzip/util.c 226>
+  205 				strrchr: <>
+  206 				strcat: <>
+  207 				strequ:  + if (), <./patches/patch-gzip.c 68>
+  208 				fprintf: <>
+  209 			S_ISDIR: <>
+  210 			treat_dir: local void (), <./gzip/gzip.c 1733>
+  211 				fdopendir: <>
+  212 				close: <>
+  213 				opendir: <>
+  214 				progerror: 73
+  215 				readdir: <>
+  216 				strequ:  + if (), <./patches/patch-gzip.c 68>
+  217 				strlen: <>
+  218 				strcpy: <>
+  219 				treat_file: 57
+  220 				fprintf: <>
+  221 				CLOSEDIR: <>
+  222 			close: <>
+  223 			S_ISREG: <>
+  224 			get_stat_mtime: <>
+  225 			make_ofname: local int (), <./gzip/gzip.c 1189>
+  226 				strcpy: <>
+  227 				get_suffix: 199
+  228 				WARN: <>
+  229 				strlwr: char * (), <./gzip/util.c 226>
+  230 				strequ:  + if (), <./patches/patch-gzip.c 68>
+  231 				fprintf: <>
+  232 				strrchr: <>
+  233 				strlen: <>
+  234 				strcat: <>
+  235 			clear_bufs: void (), <./gzip/util.c 107>
+  236 			get_method: 79
+  237 			do_list: 164
+  238 			read_error: 148
+  239 			fileno: <>
+  240 			create_outfile: local int (), <./gzip/gzip.c 933>
+  241 				sigprocmask: <>
+  242 				OPEN: <>
+  243 				shorten_name: local void (), <./gzip/gzip.c 1583>
+  244 					strlen: <>
+  245 					gzip_error: void (), <./gzip/util.c 421>
+  246 					get_suffix: 199
+  247 					strequ:  + if (), <./patches/patch-gzip.c 68>
+  248 					strcpy: <>
+  249 					strrchr: <>
+  250 					strcspn: <>
+  251 				check_ofname: local int (), <./gzip/gzip.c 1642>
+  252 					fprintf: <>
+  253 					isatty: <>
+  254 					fileno: <>
+  255 					fflush: <>
+  256 					yesno: bool (), <./gzip/lib/yesno.c 36>
+  257 						getline: <>
+  258 						rpmatch: <>
+  259 						free: <>
+  260 						getchar: <>
+  261 					xunlink: int (), <./gzip/util.c 263>
+  262 					progerror: 73
+  263 				close: <>
+  264 				progerror: 73
+  265 				WARN: <>
+  266 			fprintf: <>
+  267 			input_eof: 175
+  268 			copyfile: <>
+  269 			clear_type_and_creator: void (), <./gzip/gzip.c 682>
+  270 				memset: <>
+  271 				getattrlist: <>
+  272 				setattrlist: <>
+  273 			copy_stat: local void (), <./gzip/gzip.c 1671>
+  274 				get_stat_atime: <>
+  275 				get_stat_mtime: <>
+  276 				fprintf: <>
+  277 				futimens: int (), <./gzip/lib/utimens.c 78>
+  278 					sync: <>
+  279 					fsync: <>
+  280 					futimesat: <>
+  281 					futimes: <>
+  282 					dup: <>
+  283 					close: <>
+  284 					utimes: <>
+  285 					utime: int (), <./gzip/amiga/tailor.c 153>
+  286 						SetFileDate: <>
+  287 				WARN: <>
+  288 				perror: <>
+  289 				fchown: <>
+  290 				chown: <>
+  291 				fchmod: <>
+  292 				chmod: int (), <./gzip/primos/primos.c 21>
+  293 			write_error: void (), <./gzip/util.c 454>
+  294 				fprintf: <>
+  295 				perror: <>
+  296 				abort_gzip: 98
+  297 			sigprocmask: <>
+  298 			xunlink: int (), <./gzip/util.c 263>
+  299 			perror: <>
+  300 			remove_output_file: 47
+  301 			display_ratio: 168
+  302 		treat_stdin: 59
+  303 		do_list: 164

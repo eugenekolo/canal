@@ -1,0 +1,520 @@
+    1 	main: int (), <./libiconv/tests/gengb18030z.c 26>
+    2 		set_program_name: void (), <./libiconv/srclib/progname.c 38>
+    3 			strrchr: <>
+    4 			memcmp: <>
+    5 			strncmp: <>
+    6 		setlocale: <>
+    7 		bindtextdomain: <>
+    8 		relocate: const char * (), <./libiconv/libcharset/lib/relocatable.c 407>
+    9 			compute_curr_prefix: const char * (), <./libiconv/lib/relocatable.c 171>
+   10 				strncmp: <>
+   11 				strlen: <>
+   12 				FILESYSTEM_PREFIX_LEN: <>
+   13 				ISSLASH: <>
+   14 				xmalloc: void * (), <./libiconv/tests/uniq-u.c 39>
+   15 					malloc: <>
+   16 					fixup_null_alloc: void * (), <./libiconv/srclib/xmalloc.c 49>
+   17 						malloc: <>
+   18 						xalloc_die: void (), <./libiconv/srclib/xmalloc.c 39>
+   19 							error: void (), <./libiconv/srclib/error.c 189>
+   20 								fflush: <>
+   21 								fprintf: <>
+   22 								va_start: <>
+   23 								error_tail: void (), <./libiconv/srclib/error.c 136>
+   24 									strlen: <>
+   25 									alloca: <>
+   26 									malloc: <>
+   27 									memset: <>
+   28 									mbsrtowcs: <>
+   29 									free: <>
+   30 									vfprintf: <>
+   31 									va_end: <>
+   32 									print_errno_message: void (), <./libiconv/srclib/error.c 105>
+   33 										strerror: char * (), <./libiconv/srclib/strerror.c 39>
+   34 											sprintf: <>
+   35 										fprintf: <>
+   36 									putwc: <>
+   37 									putc: <>
+   38 									fflush: <>
+   39 									exit: <>
+   40 							exit: <>
+   41 					xalloc_fail: void (), <./libiconv/tests/uniq-u.c 30>
+   42 						fprintf: <>
+   43 						exit: <>
+   44 				memcpy: <>
+   45 			get_shared_library_fullname: char * (), <./libiconv/lib/relocatable.c 368>
+   46 				find_shared_library_fullname: void (), <./libiconv/lib/relocatable.c 314>
+   47 					fopen: <>
+   48 					find_shared_library_fullname: 46
+   49 					fscanf: <>
+   50 					getc: <>
+   51 					ungetc: <>
+   52 					getline: <>
+   53 					fclose: <>
+   54 			set_relocation_prefix: void (), <./libiconv/libcharset/lib/relocatable.c 144>
+   55 				set_this_relocation_prefix: void (), <./libiconv/lib/relocatable.c 106>
+   56 					strcmp: <>
+   57 					strlen: <>
+   58 					xmalloc: 14
+   59 					memcpy: <>
+   60 				libcharset_set_relocation_prefix: <>
+   61 				libiconv_set_relocation_prefix: <>
+   62 				libintl_set_relocation_prefix: <>
+   63 				set_this_relocation_prefix: void (), <./libiconv/srclib/relocatable.c 106>
+   64 					strcmp: <>
+   65 					strlen: <>
+   66 					xmalloc: 14
+   67 					memcpy: <>
+   68 				set_this_relocation_prefix: void (), <./libiconv/libcharset/lib/relocatable.c 106>
+   69 					strcmp: <>
+   70 					strlen: <>
+   71 					xmalloc: 14
+   72 					memcpy: <>
+   73 			strncmp: <>
+   74 			ISSLASH: <>
+   75 			xmalloc: 14
+   76 			strlen: <>
+   77 			memcpy: <>
+   78 			strcpy: <>
+   79 			compute_curr_prefix: const char * (), <./libiconv/srclib/relocatable.c 171>
+   80 				strncmp: <>
+   81 				strlen: <>
+   82 				FILE_SYSTEM_PREFIX_LEN: <>
+   83 				ISSLASH: <>
+   84 				xmalloc: 14
+   85 				memcpy: <>
+   86 			get_shared_library_fullname: char * (), <./libiconv/srclib/relocatable.c 389>
+   87 				find_shared_library_fullname: void (), <./libiconv/srclib/relocatable.c 335>
+   88 					fopen: <>
+   89 					find_shared_library_fullname: 87
+   90 					fscanf: <>
+   91 					getc: <>
+   92 					ungetc: <>
+   93 					getline: <>
+   94 					fclose: <>
+   95 			compute_curr_prefix: const char * (), <./libiconv/libcharset/lib/relocatable.c 171>
+   96 				strncmp: <>
+   97 				strlen: <>
+   98 				FILE_SYSTEM_PREFIX_LEN: <>
+   99 				ISSLASH: <>
+  100 				xmalloc: 14
+  101 				memcpy: <>
+  102 			get_shared_library_fullname: char * (), <./libiconv/libcharset/lib/relocatable.c 389>
+  103 				find_shared_library_fullname: void (), <./libiconv/libcharset/lib/relocatable.c 335>
+  104 					fopen: <>
+  105 					find_shared_library_fullname: 103
+  106 					fscanf: <>
+  107 					getc: <>
+  108 					ungetc: <>
+  109 					getline: <>
+  110 					fclose: <>
+  111 		textdomain: <>
+  112 		strlen: <>
+  113 		strcmp: <>
+  114 		strncmp: <>
+  115 		usage: void (), <./libiconv/src/iconv.c 103>
+  116 			fprintf: <>
+  117 			printf: <>
+  118 			fputs: <>
+  119 			exit: <>
+  120 		check_subst_formatstring: size_t (), <./libiconv/src/iconv.c 237>
+  121 			error: void (), <./libiconv/src/iconv.c 54>
+  122 				fflush: <>
+  123 				fprintf: <>
+  124 				va_start: <>
+  125 				vfprintf: <>
+  126 				va_end: <>
+  127 				strerror: 33
+  128 				putc: <>
+  129 				exit: <>
+  130 			isdigit: <>
+  131 			c_isprint: <>
+  132 			abort: <>
+  133 			ngettext: <>
+  134 		print_version: void (), <./libiconv/src/iconv.c 181>
+  135 			printf: <>
+  136 			exit: <>
+  137 		iconvlist: void (), <./libiconv/lib/iconv.c 533>
+  138 			qsort: <>
+  139 			compare_by_index: int (), <./libiconv/lib/iconv.c 513>
+  140 			compare_by_name: int (), <./libiconv/lib/iconv.c 520>
+  141 				strcmp: <>
+  142 		print_one: int (), <./libiconv/src/iconv.c 193>
+  143 			putc: <>
+  144 			fputs: <>
+  145 		SET_BINARY: <>
+  146 		fileno: <>
+  147 		iconv_open: iconv_t (), <./libiconv/lib/iconv.c 202>
+  148 			memcmp: <>
+  149 			locale_charset: STATIC const char * (), <./libiconv/libcharset/lib/localcharset.c 293>
+  150 				nl_langinfo: <>
+  151 				strcmp: <>
+  152 				getenv: <>
+  153 				strchr: <>
+  154 				memcpy: <>
+  155 				sprintf: <>
+  156 				GetACP: <>
+  157 				setlocale: <>
+  158 				DosQueryCp: <>
+  159 				get_charset_aliases: const char * (), <./libiconv/libcharset/lib/localcharset.c 113>
+  160 					getenv: <>
+  161 					relocate: 8
+  162 					strlen: <>
+  163 					ISSLASH: <>
+  164 					malloc: <>
+  165 					memcpy: <>
+  166 					fopen: <>
+  167 					getc: <>
+  168 					ungetc: <>
+  169 					fscanf: <>
+  170 					realloc: <>
+  171 					free: <>
+  172 					strcpy: <>
+  173 					fclose: <>
+  174 				strlen: <>
+  175 			aliases_lookup: <>
+  176 			aliases2_lookup: __inline const struct alias * (), <./libiconv/lib/iconv.c 167>
+  177 			malloc: <>
+  178 			loop_convert: <>
+  179 			loop_reset: <>
+  180 			memset: <>
+  181 		error: 121
+  182 		iconv_canonicalize: const char * (), <./libiconv/lib/iconv.c 618>
+  183 			memcmp: <>
+  184 			locale_charset: 149
+  185 			aliases_lookup: <>
+  186 			aliases2_lookup: __inline const struct alias * (), <./libiconv/lib/iconv.c 167>
+  187 		is_cjk_encoding: <>
+  188 		xmalloc: 14
+  189 		subst_mb_to_uc_fallback: void (), <./libiconv/src/iconv.c 389>
+  190 			sprintf: <>
+  191 			strlen: <>
+  192 			iconv: size_t (), <./libiconv/lib/iconv.c 439>
+  193 				loop_reset: <>
+  194 				loop_convert: <>
+  195 			error: 121
+  196 			abort: <>
+  197 		subst_uc_to_mb_fallback: void (), <./libiconv/src/iconv.c 427>
+  198 			sprintf: <>
+  199 			strlen: <>
+  200 			iconv: 192
+  201 			error: 121
+  202 		subst_mb_to_wc_fallback: void (), <./libiconv/src/iconv.c 462>
+  203 			sprintf: <>
+  204 			strlen: <>
+  205 			iconv: 192
+  206 			error: 121
+  207 			abort: <>
+  208 		subst_wc_to_mb_fallback: void (), <./libiconv/src/iconv.c 501>
+  209 			sprintf: <>
+  210 			strlen: <>
+  211 			iconv: 192
+  212 			error: 121
+  213 		iconvctl: int (), <./libiconv/lib/iconv.c 461>
+  214 			loop_convert: <>
+  215 		update_line_column: void (), <./libiconv/src/iconv.c 215>
+  216 			uc_width: int (), <./libiconv/srclib/width.c 220>
+  217 				is_cjk_encoding: <>
+  218 		convert: int (), <./libiconv/src/iconv.c 566>
+  219 			SET_BINARY: <>
+  220 			fileno: <>
+  221 			iconv: 192
+  222 			fread: <>
+  223 			subst_mb_to_mb_fallback: void (), <./libiconv/src/iconv.c 540>
+  224 				sprintf: <>
+  225 				strlen: <>
+  226 				iconv: 192
+  227 				error: 121
+  228 				fwrite: <>
+  229 			fflush: <>
+  230 			putc: <>
+  231 			error: 121
+  232 			fwrite: <>
+  233 			iconvctl: 213
+  234 			free: <>
+  235 			xalloc_die: 18
+  236 			xmalloc: 14
+  237 			ferror: <>
+  238 		fopen: <>
+  239 		fclose: <>
+  240 		iconv_close: int (), <./libiconv/lib/iconv.c 452>
+  241 			free: <>
+  242 		ferror: <>
+  243 		exit: <>
+  244 		printf: <>
+  245 		getc: <>
+  246 		ungetc: <>
+  247 		scanf: <>
+  248 		malloc: <>
+  249 		sprintf: <>
+  250 		abort: <>
+  251 		fdopen: <>
+  252 		set_program_name_and_installdir: void (), <./libiconv/srclib/progreloc.c 295>
+  253 			strlen: <>
+  254 			memcmp: <>
+  255 			xmalloc: 14
+  256 			memcpy: <>
+  257 			set_program_name: 2
+  258 			prepare_relocate: void (), <./libiconv/srclib/progreloc.c 276>
+  259 				find_executable: char * (), <./libiconv/srclib/progreloc.c 132>
+  260 					GetModuleFileName: <>
+  261 					IS_PATH_WITH_DIR: <>
+  262 					cygwin_conv_to_posix_path: <>
+  263 					strlen: <>
+  264 					canonicalize_file_name: <>
+  265 					xstrdup: char * (), <./libiconv/srclib/xstrdup.c 30>
+  266 						strcpy: <>
+  267 						xmalloc: 14
+  268 						strlen: <>
+  269 					xreadlink: char * (), <./libiconv/srclib/xreadlink.c 62>
+  270 						readlink: int (), <./libiconv/srclib/readlink.c 37>
+  271 							stat: <>
+  272 						free: <>
+  273 						xmalloc: 14
+  274 						memcpy: <>
+  275 						realloc: <>
+  276 						xalloc_die: 18
+  277 					open: <>
+  278 					sprintf: <>
+  279 					getpid: <>
+  280 					getenv: <>
+  281 					xmalloc: 14
+  282 					strcpy: <>
+  283 					memcpy: <>
+  284 					maybe_executable: bool (), <./libiconv/srclib/progreloc.c 96>
+  285 						access: <>
+  286 						fstat: <>
+  287 						stat: <>
+  288 					free: <>
+  289 				compute_curr_prefix: 95
+  290 				set_relocation_prefix: 54
+  291 		get_full_program_name: char * (), <./libiconv/srclib/progreloc.c 356>
+  292 		add_dotbin: char * (), <./libiconv/srclib/relocwrapper.c 64>
+  293 			strlen: <>
+  294 			malloc: <>
+  295 			memcpy: <>
+  296 			fprintf: <>
+  297 			exit: <>
+  298 		relocate_libdirs: void (), <./libiconv/srclib/relocwrapper.c 121>
+  299 			relocate: 8
+  300 		activate_libdirs: void (), <./libiconv/srclib/relocwrapper.c 131>
+  301 			getenv: <>
+  302 			strlen: <>
+  303 			malloc: <>
+  304 			fprintf: <>
+  305 			exit: <>
+  306 			memcpy: <>
+  307 			strcpy: <>
+  308 			setenv: int (), <./libiconv/srclib/setenv.c 283>
+  309 		execv: <>
+  310 		fprintf: <>
+  311 		strerror: 33
+  312 		output_title: void (), <./libiconv/tools/cjk_tab_to_h.c 76>
+  313 			printf: <>
+  314 		do_normal: void (), <./libiconv/tools/cjk_tab_to_h.c 865>
+  315 			row_byte_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 860>
+  316 			col_byte_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 861>
+  317 			byte_row_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 862>
+  318 			byte_col_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 863>
+  319 			read_table: void (), <./libiconv/tools/cjk_tab_to_h.c 107>
+  320 				malloc: <>
+  321 				getc: <>
+  322 				ungetc: <>
+  323 				scanf: <>
+  324 				exit: <>
+  325 				fprintf: <>
+  326 			output_charset2uni: void (), <./libiconv/tools/cjk_tab_to_h.c 286>
+  327 				is_charset2uni_large: bool (), <./libiconv/tools/cjk_tab_to_h.c 173>
+  328 				compact_large_charset2uni: int (), <./libiconv/tools/cjk_tab_to_h.c 188>
+  329 					malloc: <>
+  330 					abort: <>
+  331 				find_charset2uni_pages: void (), <./libiconv/tools/cjk_tab_to_h.c 245>
+  332 					malloc: <>
+  333 				find_charset2uni_blocks: void (), <./libiconv/tools/cjk_tab_to_h.c 266>
+  334 					malloc: <>
+  335 				printf: <>
+  336 			invert: void (), <./libiconv/tools/cjk_tab_to_h.c 523>
+  337 				malloc: <>
+  338 			output_uni2charset_sparse: void (), <./libiconv/tools/cjk_tab_to_h.c 674>
+  339 				strcmp: <>
+  340 				printf: <>
+  341 		do_normal_only_charset2uni: void (), <./libiconv/tools/cjk_tab_to_h.c 890>
+  342 			row_byte_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 860>
+  343 			col_byte_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 861>
+  344 			byte_row_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 862>
+  345 			byte_col_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 863>
+  346 			read_table: 319
+  347 			output_charset2uni: 326
+  348 		do_cns11643_only_uni2charset: void (), <./libiconv/tools/cjk_tab_to_h.c 918>
+  349 			row_byte_cns11643: int (), <./libiconv/tools/cjk_tab_to_h.c 911>
+  350 			col_byte_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 861>
+  351 			byte_row_cns11643: int (), <./libiconv/tools/cjk_tab_to_h.c 914>
+  352 			byte_col_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 863>
+  353 			read_table: 319
+  354 			invert: 336
+  355 			output_uni2charset_sparse: 338
+  356 		do_gbk1_only_charset2uni: void (), <./libiconv/tools/cjk_tab_to_h.c 981>
+  357 			row_byte_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 940>
+  358 			col_byte_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 943>
+  359 			byte_row_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 946>
+  360 			byte_col_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 952>
+  361 			read_table: 319
+  362 			output_charset2uni: 326
+  363 		do_gbk2_only_charset2uni: void (), <./libiconv/tools/cjk_tab_to_h.c 1021>
+  364 			row_byte_gbk2: int (), <./libiconv/tools/cjk_tab_to_h.c 1000>
+  365 			col_byte_gbk2: int (), <./libiconv/tools/cjk_tab_to_h.c 1003>
+  366 			byte_row_gbk2: int (), <./libiconv/tools/cjk_tab_to_h.c 1006>
+  367 			byte_col_gbk2: int (), <./libiconv/tools/cjk_tab_to_h.c 1012>
+  368 			read_table: 319
+  369 			output_charset2uni: 326
+  370 		do_gbk1_only_uni2charset: void (), <./libiconv/tools/cjk_tab_to_h.c 1040>
+  371 			row_byte_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 940>
+  372 			col_byte_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 943>
+  373 			byte_row_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 946>
+  374 			byte_col_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 952>
+  375 			read_table: 319
+  376 			invert: 336
+  377 			output_uni2charset_sparse: 338
+  378 		do_gbk1: void (), <./libiconv/tools/cjk_tab_to_h.c 961>
+  379 			row_byte_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 940>
+  380 			col_byte_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 943>
+  381 			byte_row_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 946>
+  382 			byte_col_gbk1: int (), <./libiconv/tools/cjk_tab_to_h.c 952>
+  383 			read_table: 319
+  384 			output_charset2uni: 326
+  385 			invert: 336
+  386 			output_uni2charset_dense: void (), <./libiconv/tools/cjk_tab_to_h.c 544>
+  387 				printf: <>
+  388 				abort: <>
+  389 		do_ksc5601: void (), <./libiconv/tools/cjk_tab_to_h.c 1134>
+  390 			row_byte_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 860>
+  391 			col_byte_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 861>
+  392 			byte_row_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 862>
+  393 			byte_col_normal: int (), <./libiconv/tools/cjk_tab_to_h.c 863>
+  394 			read_table_ksc5601: void (), <./libiconv/tools/cjk_tab_to_h.c 1064>
+  395 				malloc: <>
+  396 				getc: <>
+  397 				ungetc: <>
+  398 				scanf: <>
+  399 				exit: <>
+  400 				fprintf: <>
+  401 			output_charset2uni: 326
+  402 			invert: 336
+  403 			output_uni2charset_sparse: 338
+  404 		do_uhc_1: void (), <./libiconv/tools/cjk_tab_to_h.c 1181>
+  405 			row_byte_uhc_1: int (), <./libiconv/tools/cjk_tab_to_h.c 1158>
+  406 			col_byte_uhc_1: int (), <./libiconv/tools/cjk_tab_to_h.c 1161>
+  407 			byte_row_uhc_1: int (), <./libiconv/tools/cjk_tab_to_h.c 1164>
+  408 			byte_col_uhc_1: int (), <./libiconv/tools/cjk_tab_to_h.c 1170>
+  409 			read_table: 319
+  410 			output_charset2uni_noholes_monotonic: void (), <./libiconv/tools/cjk_tab_to_h.c 406>
+  411 				find_charset2uni_pages: 331
+  412 				find_charset2uni_blocks: 333
+  413 				printf: <>
+  414 			invert: 336
+  415 			output_uni2charset_sparse: 338
+  416 		do_uhc_2: void (), <./libiconv/tools/cjk_tab_to_h.c 1226>
+  417 			row_byte_uhc_2: int (), <./libiconv/tools/cjk_tab_to_h.c 1203>
+  418 			col_byte_uhc_2: int (), <./libiconv/tools/cjk_tab_to_h.c 1206>
+  419 			byte_row_uhc_2: int (), <./libiconv/tools/cjk_tab_to_h.c 1209>
+  420 			byte_col_uhc_2: int (), <./libiconv/tools/cjk_tab_to_h.c 1215>
+  421 			read_table: 319
+  422 			output_charset2uni_noholes_monotonic: 410
+  423 			invert: 336
+  424 			output_uni2charset_sparse: 338
+  425 		do_big5: void (), <./libiconv/tools/cjk_tab_to_h.c 1269>
+  426 			row_byte_big5: int (), <./libiconv/tools/cjk_tab_to_h.c 1248>
+  427 			col_byte_big5: int (), <./libiconv/tools/cjk_tab_to_h.c 1251>
+  428 			byte_row_big5: int (), <./libiconv/tools/cjk_tab_to_h.c 1254>
+  429 			byte_col_big5: int (), <./libiconv/tools/cjk_tab_to_h.c 1260>
+  430 			read_table: 319
+  431 			output_charset2uni: 326
+  432 			invert: 336
+  433 			output_uni2charset_sparse: 338
+  434 		do_hkscs: void (), <./libiconv/tools/cjk_tab_to_h.c 1301>
+  435 			row_byte_hkscs: int (), <./libiconv/tools/cjk_tab_to_h.c 1291>
+  436 			col_byte_big5: int (), <./libiconv/tools/cjk_tab_to_h.c 1251>
+  437 			byte_row_hkscs: int (), <./libiconv/tools/cjk_tab_to_h.c 1294>
+  438 			byte_col_big5: int (), <./libiconv/tools/cjk_tab_to_h.c 1260>
+  439 			read_table: 319
+  440 			output_charset2uni: 326
+  441 			invert: 336
+  442 			output_uni2charset_sparse: 338
+  443 		do_johab_hangul: void (), <./libiconv/tools/cjk_tab_to_h.c 1344>
+  444 			row_byte_johab_hangul: int (), <./libiconv/tools/cjk_tab_to_h.c 1323>
+  445 			col_byte_johab_hangul: int (), <./libiconv/tools/cjk_tab_to_h.c 1326>
+  446 			byte_row_johab_hangul: int (), <./libiconv/tools/cjk_tab_to_h.c 1329>
+  447 			byte_col_johab_hangul: int (), <./libiconv/tools/cjk_tab_to_h.c 1335>
+  448 			read_table: 319
+  449 			output_charset2uni: 326
+  450 			invert: 336
+  451 			output_uni2charset_dense: 386
+  452 		do_sjis: void (), <./libiconv/tools/cjk_tab_to_h.c 1389>
+  453 			row_byte_sjis: int (), <./libiconv/tools/cjk_tab_to_h.c 1366>
+  454 			col_byte_sjis: int (), <./libiconv/tools/cjk_tab_to_h.c 1369>
+  455 			byte_row_sjis: int (), <./libiconv/tools/cjk_tab_to_h.c 1372>
+  456 			byte_col_sjis: int (), <./libiconv/tools/cjk_tab_to_h.c 1380>
+  457 			read_table: 319
+  458 			output_charset2uni: 326
+  459 			invert: 336
+  460 			output_uni2charset_sparse: 338
+  461 		do_gb18030uni: void (), <./libiconv/tools/cjk_tab_to_h.c 1411>
+  462 			getc: <>
+  463 			ungetc: <>
+  464 			scanf: <>
+  465 			exit: <>
+  466 			fprintf: <>
+  467 			printf: <>
+  468 			abort: <>
+  469 		do_jisx0213: void (), <./libiconv/tools/cjk_tab_to_h.c 1649>
+  470 			printf: <>
+  471 			memset: <>
+  472 			scanf: <>
+  473 			assert: <>
+  474 			isxdigit: <>
+  475 			strtoul: <>
+  476 			row_convert: <>
+  477 			sprintf: <>
+  478 			strlen: <>
+  479 			rewind: <>
+  480 		strcpy: <>
+  481 		strcat: <>
+  482 		locale_charset: 149
+  483 		nl_langinfo: <>
+  484 		XOpenDisplay: <>
+  485 		XmbTextListToTextProperty: <>
+  486 		assert: <>
+  487 		XGetAtomName: <>
+  488 		XCloseDisplay: <>
+  489 		perror: <>
+  490 		try: int (), <./libiconv/tests/table-from.c 48>
+  491 			iconv: 192
+  492 			fprintf: <>
+  493 			hexbuf: const char * (), <./libiconv/tests/table-from.c 35>
+  494 				sprintf: <>
+  495 				abort: <>
+  496 			perror: <>
+  497 			exit: <>
+  498 		ucs4_decode: const char * (), <./libiconv/tests/table-from.c 83>
+  499 			sprintf: <>
+  500 			strlen: <>
+  501 		hexbuf: 493
+  502 		check_file: void (), <./libiconv/tests/uniq-u.c 169>
+  503 			strcmp: <>
+  504 			fopen: <>
+  505 			fprintf: <>
+  506 			exit: <>
+  507 			initbuffer: void (), <./libiconv/tests/uniq-u.c 74>
+  508 				xmalloc: 14
+  509 			readline: struct linebuffer (), <./libiconv/tests/uniq-u.c 87>
+  510 			feof: <>
+  511 			different: int (), <./libiconv/tests/uniq-u.c 142>
+  512 				memcmp: <>
+  513 				min: <>
+  514 			writeline: void (), <./libiconv/tests/uniq-u.c 159>
+  515 				fwrite: <>
+  516 			ferror: <>
+  517 			fclose: <>
+  518 			freebuffer: void (), <./libiconv/tests/uniq-u.c 127>
+  519 				free: <>
+  520 		iconv: 192

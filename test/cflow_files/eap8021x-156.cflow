@@ -1,0 +1,3023 @@
+    1 	main: int (), <./eapolclient.tproj/Alert.c 252>
+    2 		usage: void (), <./eapoltest.tproj/client.c 587>
+    3 			fprintf: <>
+    4 			exit: <>
+    5 		S_lookup_func: funcptr_t (), <./eapoltest.tproj/client.c 601>
+    6 			strcmp: <>
+    7 			fprintf: <>
+    8 			usage: 2
+    9 			exit: <>
+   10 		exit: <>
+   11 		strrchr: <>
+   12 		usage: STATIC void (), <./eapolcfg.tproj/eapolcfg.c 2497>
+   13 			fprintf: <>
+   14 			exit: <>
+   15 		lookup_func: command_info * (), <./eapolcfg.tproj/eapolcfg.c 2536>
+   16 			lookup_command_info: command_info * (), <./eapolcfg.tproj/eapolcfg.c 2510>
+   17 				strcasecmp: <>
+   18 			fprintf: <>
+   19 			exit: <>
+   20 		malloc: <>
+   21 		bzero: <>
+   22 		myInstall: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 1186>
+   23 			SCDynamicStoreCreate: <>
+   24 			CFSTR: <>
+   25 			handle_changes: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 1027>
+   26 				CFArrayGetCount: <>
+   27 				CFArrayGetValueAtIndex: <>
+   28 				CFEqual: <>
+   29 				CFStringHasSuffix: <>
+   30 				my_CFStringCopyComponent: CFStringRef (), <./EAPOLMonitor.bproj/eapol_monitor.c 168>
+   31 					CFStringCreateArrayBySeparatingStrings: <>
+   32 					CFArrayGetCount: <>
+   33 					CFRetain: <>
+   34 					CFArrayGetValueAtIndex: <>
+   35 					my_CFRelease: void (), <./EAPOLController.bproj/myCFUtil.c 36>
+   36 						CFRelease: <>
+   37 				CFSTR: <>
+   38 				MonitoredInterfaceLookupByName: MonitoredInterfaceRef (), <./EAPOLMonitor.bproj/eapol_monitor.c 473>
+   39 					LIST_FOREACH: <>
+   40 					CFEqual: <>
+   41 				CFRelease: <>
+   42 				MonitoredInterfaceLinkStatusChanged: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 882>
+   43 					is_link_active: bool (), <./EAPOLMonitor.bproj/eapol_monitor.c 244>
+   44 						socket: <>
+   45 						perror: <>
+   46 						bzero: <>
+   47 						strlcpy: <>
+   48 						ioctl: <>
+   49 						close: <>
+   50 					MonitoredInterfaceReleasePrompt: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 440>
+   51 						CFUserNotificationCancel: <>
+   52 						my_CFRelease: 35
+   53 						CFRunLoopRemoveSource: <>
+   54 						CFRunLoopGetCurrent: <>
+   55 				EAPOLControlKeyCopyInterface: CFStringRef (), <./EAP8021X.fproj/EAPOLControl.c 1079>
+   56 					CFStringHasSuffix: <>
+   57 					SCDynamicStoreKeyCreate: <>
+   58 					CFSTR: <>
+   59 					parse_component: CFStringRef (), <./EAP8021X.fproj/EAPOLControl.c 1055>
+   60 						CFStringHasPrefix: <>
+   61 						CFStringCreateMutableCopy: <>
+   62 						CFStringDelete: <>
+   63 						CFRangeMake: <>
+   64 						CFStringGetLength: <>
+   65 						CFStringFind: <>
+   66 						CFSTR: <>
+   67 						CFRelease: <>
+   68 				CFArrayCreateMutable: <>
+   69 				CFArrayAppendValue: <>
+   70 				process_interface_change_info: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 996>
+   71 					CFArrayGetCount: <>
+   72 					CFArrayGetValueAtIndex: <>
+   73 					MonitoredInterfaceLookupByName: 38
+   74 					MonitoredInterfaceCreate: MonitoredInterfaceRef (), <./EAPOLMonitor.bproj/eapol_monitor.c 426>
+   75 						malloc: <>
+   76 						bzero: <>
+   77 						CFRetain: <>
+   78 						CFStringGetCString: <>
+   79 						LIST_INSERT_HEAD: <>
+   80 					get_ifm_type: int (), <./EAPOLMonitor.bproj/eapol_monitor.c 273>
+   81 						socket: <>
+   82 						perror: <>
+   83 						bzero: <>
+   84 						strlcpy: <>
+   85 						ioctl: <>
+   86 						IFM_TYPE: <>
+   87 						close: <>
+   88 					MonitoredInterfaceCheckStatus: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 841>
+   89 						MonitoredInterfaceReleasePrompt: 50
+   90 						EAPOLControlCopyStateAndStatus: int (), <./EAP8021X.fproj/EAPOLControl.c 403>
+   91 							get_server_port: Boolean (), <./EAP8021X.fproj/EAPOLControl.c 60>
+   92 								eapolcontroller_server_port: <>
+   93 								fprintf: <>
+   94 								mach_error_string: <>
+   95 							strncpy: <>
+   96 							eapolcontroller_copy_status: kern_return_t (), <./EAPOLController.bproj/server.c 139>
+   97 								ControllerCopyStateAndStatus: int (), <./EAPOLController.bproj/controller.c 943>
+   98 									eapolClientLookupInterface: eapolClientRef (), <./EAPOLController.bproj/controller.c 324>
+   99 										LIST_FOREACH: <>
+  100 										strcmp: <>
+  101 									CFRetain: <>
+  102 								my_CFPropertyListCreateVMData: vm_address_t (), <./EAPOLController.bproj/server.c 62>
+  103 									CFPropertyListCreateXMLData: <>
+  104 									CFDataGetLength: <>
+  105 									vm_allocate: <>
+  106 									mach_task_self: <>
+  107 									bcopy: <>
+  108 									CFDataGetBytePtr: <>
+  109 									my_CFRelease: 35
+  110 								syslog: <>
+  111 								my_CFRelease: 35
+  112 							mach_error: <>
+  113 							my_CFPropertyListCreateWithBytePtrAndLength: CFPropertyListRef (), <./EAP8021X.fproj/myCFUtil.c 205>
+  114 								CFDataCreateWithBytesNoCopy: <>
+  115 								CFPropertyListCreateFromXMLData: <>
+  116 								CFRelease: <>
+  117 							vm_deallocate: <>
+  118 							mach_task_self: <>
+  119 						my_log: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 190>
+  120 							va_start: <>
+  121 							vsyslog: <>
+  122 							va_end: <>
+  123 						EAPOLControlDidUserCancel: boolean_t (), <./EAP8021X.fproj/EAPOLControl.c 725>
+  124 							get_server_port: 91
+  125 							strncpy: <>
+  126 							eapolcontroller_did_user_cancel: kern_return_t (), <./EAPOLController.bproj/server.c 206>
+  127 								ControllerDidUserCancel: boolean_t (), <./EAPOLController.bproj/controller.c 1460>
+  128 									eapolClientLookupInterface: 98
+  129 							mach_error: <>
+  130 						MonitoredInterfaceProcessStatus: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 734>
+  131 							S_get_plist_uint32: uint32_t (), <./EAPOLMonitor.bproj/eapol_monitor.c 298>
+  132 								isA_CFNumber: <>
+  133 								CFDictionaryGetValue: <>
+  134 								CFNumberGetValue: <>
+  135 							getuid: <>
+  136 							my_log: 119
+  137 							SupplicantStateString: <>
+  138 							CFDictionaryGetValue: <>
+  139 							CFEqual: <>
+  140 							EAPOLClientConfigurationCreate: EAPOLClientConfigurationRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 968>
+  141 								EAPOLClientConfigurationCreateInternal: EAPOLClientConfigurationRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 903>
+  142 									SCPreferencesCreateWithAuthorization: <>
+  143 									SCPreferencesCreate: <>
+  144 									malloc: <>
+  145 									AuthorizationMakeExternalForm: <>
+  146 									free: <>
+  147 									import_profiles: STATIC void (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 316>
+  148 										CFDictionaryCreateMutable: <>
+  149 										SCPreferencesGetValue: <>
+  150 										isA_CFDictionary: <>
+  151 										CFDictionaryGetCount: <>
+  152 										malloc: <>
+  153 										CFDictionaryGetKeysAndValues: <>
+  154 										SCLog: <>
+  155 										CFSTR: <>
+  156 										EAPOLClientProfileCreateWithDictAndProfileID: PRIVATE_EXTERN EAPOLClientProfileRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 668>
+  157 											CFGetAllocator: <>
+  158 											CFDictionaryGetValue: <>
+  159 											isA_CFDictionary: <>
+  160 											CFDictionaryGetCount: <>
+  161 											SCLog: <>
+  162 											CFSTR: <>
+  163 											accept_types_valid: PRIVATE_EXTERN Boolean (), <./EAP8021X.fproj/EAPOLClientProfile.c 66>
+  164 												isA_CFArray: <>
+  165 												CFArrayGetCount: <>
+  166 												CFArrayGetValueAtIndex: <>
+  167 												isA_CFNumber: <>
+  168 											isA_CFData: <>
+  169 											isA_CFString: <>
+  170 											CFRetain: <>
+  171 											EAPOLClientProfileSetUserDefinedName: void (), <./EAP8021X.fproj/EAPOLClientProfile.c 324>
+  172 												CFRetain: <>
+  173 												CFRelease: <>
+  174 											EAPOLClientProfileSetAuthenticationProperties: void (), <./EAP8021X.fproj/EAPOLClientProfile.c 371>
+  175 												CFRetain: <>
+  176 												CFRelease: <>
+  177 											EAPOLClientProfileSetWLANSSIDAndSecurityType: Boolean (), <./EAP8021X.fproj/EAPOLClientProfile.c 427>
+  178 												EAPOLClientConfigurationGetProfileWithWLANSSID: EAPOLClientProfileRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 1138>
+  179 													CFDictionaryGetValue: <>
+  180 												EAPOLClientConfigurationSetProfileForSSID: PRIVATE_EXTERN void (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 1632>
+  181 													CFDictionaryRemoveValue: <>
+  182 													CFDictionarySetValue: <>
+  183 													EAPOLClientProfileGetID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 344>
+  184 												CFRetain: <>
+  185 												CFRelease: <>
+  186 											CFDictionaryCreateMutableCopy: <>
+  187 										EAPOLClientProfileGetWLANSSIDAndSecurityType: CFDataRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 395>
+  188 										CFDictionaryGetValue: <>
+  189 										my_CFStringCreateWithData: CFStringRef (), <./EAP8021X.fproj/myCFUtil.c 260>
+  190 											CFGetAllocator: <>
+  191 											CFStringCreateWithBytes: <>
+  192 											CFDataGetBytePtr: <>
+  193 											CFDataGetLength: <>
+  194 										CFRelease: <>
+  195 										CFDictionarySetValue: <>
+  196 										EAPOLClientProfileSetConfiguration: PRIVATE_EXTERN void (), <./EAP8021X.fproj/EAPOLClientProfile.c 764>
+  197 										free: <>
+  198 									copy_def_auth_props: STATIC CFDictionaryRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 451>
+  199 										SCPreferencesGetValue: <>
+  200 										CFDictionaryGetValue: <>
+  201 										accept_types_valid: 163
+  202 										CFRetain: <>
+  203 										SCLog: <>
+  204 										CFSTR: <>
+  205 										myCFArrayCreateWithIntegerList: STATIC CFArrayRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 434>
+  206 											CFArrayCreateMutable: <>
+  207 											CFNumberCreate: <>
+  208 											CFArrayAppendValue: <>
+  209 											CFRelease: <>
+  210 										CFDictionaryCreateMutable: <>
+  211 										CFDictionarySetValue: <>
+  212 										CFRelease: <>
+  213 									my_CFRelease: 35
+  214 							EAPOLClientConfigurationGetProfileWithID: EAPOLClientProfileRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 1121>
+  215 								CFDictionaryGetValue: <>
+  216 							EAPOLClientItemIDCreateWithProfile: EAPOLClientItemIDRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 767>
+  217 								CFGetAllocator: <>
+  218 								CFRetain: <>
+  219 							EAPOLClientItemIDCreateDefault: EAPOLClientItemIDRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 789>
+  220 							EAPOLControlSetItemIDForAuthenticator: void (), <./EAP8021X.fproj/EAPOLControl.c 935>
+  221 								EAPOLControlUserCopyValue: CFPropertyListRef (), <./EAP8021X.fproj/EAPOLControl.c 804>
+  222 									settings_change_check: void (), <./EAP8021X.fproj/EAPOLControl.c 760>
+  223 										notify_register_check: <>
+  224 										syslog: <>
+  225 										notify_check: <>
+  226 										CFPreferencesSynchronize: <>
+  227 									CFPreferencesCopyValue: <>
+  228 								S_authenticator_copy_string: CFStringRef (), <./EAP8021X.fproj/EAPOLControl.c 879>
+  229 									CFDataGetLength: <>
+  230 									CFDataGetBytePtr: <>
+  231 									CFStringCreateWithFormat: <>
+  232 									CFSTR: <>
+  233 									EA_LIST: <>
+  234 								CFDictionaryGetValue: <>
+  235 								EAPOLClientItemIDGetProfile: EAPOLClientProfileRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 1269>
+  236 								EAPOLClientProfileGetID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 344>
+  237 								isA_CFDictionary: <>
+  238 								isA_CFString: <>
+  239 								my_CFEqual: Boolean (), <./EAP8021X.fproj/myCFUtil.c 52>
+  240 									CFEqual: <>
+  241 								CFDictionaryCreateMutableCopy: <>
+  242 								CFDictionaryCreateMutable: <>
+  243 								CFDictionaryRemoveValue: <>
+  244 								CFDictionarySetValue: <>
+  245 								CFRelease: <>
+  246 								CFPreferencesSetValue: <>
+  247 								CFPreferencesSynchronize: <>
+  248 								settings_change_notify: void (), <./EAP8021X.fproj/EAPOLControl.c 791>
+  249 									notify_post: <>
+  250 									syslog: <>
+  251 								my_CFRelease: 35
+  252 							CFRelease: <>
+  253 							CFAbsoluteTimeGetCurrent: <>
+  254 							MonitoredInterfaceStopAuthentication: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 555>
+  255 								my_log: 119
+  256 								EAPOLControlStop: int (), <./EAP8021X.fproj/EAPOLControl.c 276>
+  257 									get_server_port: 91
+  258 									strncpy: <>
+  259 									eapolcontroller_stop: kern_return_t (), <./EAPOLController.bproj/server.c 291>
+  260 										ControllerStop: int (), <./EAPOLController.bproj/controller.c 1095>
+  261 											eapolClientLookupInterface: 98
+  262 											S_get_plist_boolean: boolean_t (), <./EAPOLController.bproj/controller.c 1081>
+  263 												isA_CFBoolean: <>
+  264 												CFDictionaryGetValue: <>
+  265 												CFBooleanGetValue: <>
+  266 											CFSTR: <>
+  267 											login_window_uid: uid_t (), <./EAPOLController.bproj/controller.c 184>
+  268 												getpwnam: <>
+  269 												my_log: void (), <./eapolclient.tproj/mylog.c 44>
+  270 													va_start: <>
+  271 													vsnprintf: <>
+  272 													SCLog: <>
+  273 													CFSTR: <>
+  274 													vsyslog: <>
+  275 													va_end: <>
+  276 											is_console_user: boolean_t (), <./EAPOLController.bproj/controller.c 202>
+  277 												SCDynamicStoreCopyConsoleUser: <>
+  278 												CFRelease: <>
+  279 											clear_loginwindow_config: void (), <./EAPOLController.bproj/controller.c 147>
+  280 												my_CFRelease: 35
+  281 											eapolClientStop: int (), <./EAPOLController.bproj/controller.c 1047>
+  282 												eapolClientSetState: void (), <./EAPOLController.bproj/controller.c 479>
+  283 													SCDynamicStoreNotifyValue: <>
+  284 													eapolClientNotificationKey: CFStringRef (), <./EAPOLController.bproj/controller.c 466>
+  285 														SCDynamicStoreKeyCreateNetworkInterfaceEntity: <>
+  286 												my_CFRelease: 35
+  287 												eapolClientNotify: void (), <./EAPOLController.bproj/controller.c 433>
+  288 													MACH_MSGH_BITS: <>
+  289 													mach_msg: <>
+  290 													my_log: 269
+  291 													mach_error_string: <>
+  292 												kill: <>
+  293 									mach_error: <>
+  294 						my_CFRelease: 35
+  295 				S_on_console: bool (), <./EAPOLMonitor.bproj/eapol_monitor.c 130>
+  296 					SCDynamicStoreCopyConsoleUser: <>
+  297 					getuid: <>
+  298 					my_CFRelease: 35
+  299 				EAPOLControlCopyAutoDetectInformation: int (), <./EAP8021X.fproj/EAPOLControl.c 687>
+  300 					get_server_port: 91
+  301 					eapolcontroller_copy_autodetect_info: kern_return_t (), <./EAPOLController.bproj/server.c 185>
+  302 						ControllerCopyAutoDetectInformation: int (), <./EAPOLController.bproj/controller.c 1403>
+  303 							LIST_FOREACH: <>
+  304 							CFAbsoluteTimeGetCurrent: <>
+  305 							CFDictionaryCreateMutable: <>
+  306 							make_number: CFNumberRef (), <./EAPOLController.bproj/controller.c 306>
+  307 								CFNumberCreate: <>
+  308 							CFDictionarySetValue: <>
+  309 							CFRelease: <>
+  310 							CFDataCreate: <>
+  311 							CFDictionaryGetCount: <>
+  312 							my_CFRelease: 35
+  313 						my_CFPropertyListCreateVMData: 102
+  314 						syslog: <>
+  315 						my_CFRelease: 35
+  316 					mach_error: <>
+  317 					my_CFPropertyListCreateWithBytePtrAndLength: 113
+  318 					vm_deallocate: <>
+  319 					mach_task_self: <>
+  320 				process_auto_detect_info: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 984>
+  321 					my_log: 119
+  322 					PromptStartContextInit: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 365>
+  323 						EAPOLClientConfigurationCreate: 140
+  324 						EAPOLClientConfigurationCopyProfiles: CFArrayRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 1093>
+  325 							CFGetAllocator: <>
+  326 							CFDictionaryGetCount: <>
+  327 							malloc: <>
+  328 							CFDictionaryGetKeysAndValues: <>
+  329 							CFArrayCreate: <>
+  330 							free: <>
+  331 						CFArrayGetCount: <>
+  332 						CFArrayCreateMutable: <>
+  333 						S_get_bundle: CFBundleRef (), <./EAPOLMonitor.bproj/eapol_monitor.c 148>
+  334 							CFBundleGetBundleWithIdentifier: <>
+  335 							CFBundleGetMainBundle: <>
+  336 						CFBundleCopyLocalizedString: <>
+  337 						CFSTR: <>
+  338 						CFArrayAppendValue: <>
+  339 						CFRelease: <>
+  340 						CFArrayGetValueAtIndex: <>
+  341 						EAPOLClientProfileGetUserDefinedName: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 307>
+  342 						EAPOLClientProfileGetID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 344>
+  343 						CFRetain: <>
+  344 						CFArrayContainsValue: <>
+  345 						CFStringCreateWithFormat: <>
+  346 					CFDictionaryApplyFunction: <>
+  347 					prompt_or_start: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 899>
+  348 						MonitoredInterfaceLookupByName: 38
+  349 						MonitoredInterfaceCreate: 74
+  350 						my_log: 119
+  351 						isA_CFDictionary: <>
+  352 						CFDictionaryGetValue: <>
+  353 						isA_CFNumber: <>
+  354 						CFNumberGetValue: <>
+  355 						is_link_active: 43
+  356 						isA_CFData: <>
+  357 						EAPOLControlCopyItemIDForAuthenticator: EAPOLClientItemIDRef (), <./EAP8021X.fproj/EAPOLControl.c 892>
+  358 							EAPOLControlUserCopyValue: 221
+  359 							isA_CFDictionary: <>
+  360 							S_authenticator_copy_string: 228
+  361 							CFDictionaryGetValue: <>
+  362 							isA_CFString: <>
+  363 							EAPOLClientConfigurationCreate: 140
+  364 							EAPOLClientConfigurationGetProfileWithID: 214
+  365 							EAPOLClientItemIDCreateWithProfile: 216
+  366 							CFRelease: <>
+  367 							EAPOLClientItemIDCreateDefault: 219
+  368 							my_CFRelease: 35
+  369 						MonitoredInterfaceStartAuthentication: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 501>
+  370 							EAPOLClientItemIDGetProfile: 235
+  371 							CFDictionaryCreate: <>
+  372 							my_log: 119
+  373 							EAPOLControlStartWithOptions: int (), <./EAP8021X.fproj/EAPOLControl.c 185>
+  374 								CFDictionaryGetValue: <>
+  375 								auth_info_is_valid: Boolean (), <./EAP8021X.fproj/EAPOLControl.c 142>
+  376 									isA_CFDictionary: <>
+  377 									CFDictionaryGetCount: <>
+  378 									CFDictionaryGetKeysAndValues: <>
+  379 									CFEqual: <>
+  380 								isA_CFString: <>
+  381 								EAPOLClientItemIDCopyDictionary: CFDictionaryRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 1285>
+  382 									EAPOLClientItemIDGetProfileID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 1238>
+  383 										EAPOLClientProfileGetID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 344>
+  384 									EAPOLClientItemIDGetWLANSSID: CFDataRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 1254>
+  385 										EAPOLClientProfileGetWLANSSIDAndSecurityType: 187
+  386 									CFDictionaryCreate: <>
+  387 								CFDictionaryCreate: <>
+  388 								CFRelease: <>
+  389 								EAPOLControlStart: int (), <./EAP8021X.fproj/EAPOLControl.c 72>
+  390 									mach_port_mod_refs: <>
+  391 									mach_task_self: <>
+  392 									mach_error: <>
+  393 									audit_session_self: <>
+  394 									perror: <>
+  395 									get_server_port: 91
+  396 									isA_CFDictionary: <>
+  397 									CFPropertyListCreateXMLData: <>
+  398 									strncpy: <>
+  399 									eapolcontroller_start: kern_return_t (), <./EAPOLController.bproj/server.c 217>
+  400 										my_CFPropertyListCreateWithBytePtrAndLength: CFPropertyListRef (), <./EAPOLController.bproj/server.c 90>
+  401 											CFDataCreateWithBytesNoCopy: <>
+  402 											CFPropertyListCreateFromXMLData: <>
+  403 											CFRelease: <>
+  404 										vm_deallocate: <>
+  405 										mach_task_self: <>
+  406 										isA_CFDictionary: <>
+  407 										ControllerStart: int (), <./EAPOLController.bproj/controller.c 966>
+  408 											eapolClientLookupInterface: 98
+  409 											get_ifm_type: int (), <./EAPOLController.bproj/controller.c 238>
+  410 												socket: <>
+  411 												perror: <>
+  412 												bzero: <>
+  413 												strlcpy: <>
+  414 												ioctl: <>
+  415 												IFM_TYPE: <>
+  416 												malloc: <>
+  417 												IFM_SUBTYPE: <>
+  418 												close: <>
+  419 											eapolClientAdd: eapolClientRef (), <./EAPOLController.bproj/controller.c 364>
+  420 												malloc: <>
+  421 												bzero: <>
+  422 												strlcpy: <>
+  423 												CFStringCreateWithCString: <>
+  424 												LIST_INSERT_HEAD: <>
+  425 											getpwnam: <>
+  426 											my_log: 269
+  427 											eapolClientStart: int (), <./EAPOLController.bproj/controller.c 781>
+  428 												bzero: <>
+  429 												open_eapol_socket: int (), <./EAPOLController.bproj/controller.c 768>
+  430 													eapol_socket: int (), <./EAP8021X.fproj/eapol_socket.c 164>
+  431 														ndrv_socket: STATIC int (), <./EAP8021X.fproj/eapol_socket.c 70>
+  432 															socket: <>
+  433 															fprintf: <>
+  434 															strerror: <>
+  435 															strlcpy: <>
+  436 															bind: <>
+  437 															close: <>
+  438 														syslog: <>
+  439 														ioctl: <>
+  440 														strerror: <>
+  441 														eapol_socket_add_multicast: STATIC bool (), <./EAP8021X.fproj/eapol_socket.c 142>
+  442 															bzero: <>
+  443 															bcopy: <>
+  444 															ndrv_socket_add_multicast: STATIC int (), <./EAP8021X.fproj/eapol_socket.c 127>
+  445 																setsockopt: <>
+  446 																syslog: <>
+  447 																strerror: <>
+  448 															syslog: <>
+  449 															strerror: <>
+  450 														ndrv_socket_bind: STATIC int (), <./EAP8021X.fproj/eapol_socket.c 96>
+  451 															malloc: <>
+  452 															htons: <>
+  453 															setsockopt: <>
+  454 															free: <>
+  455 															syslog: <>
+  456 															strerror: <>
+  457 														close: <>
+  458 													get_ifm_type: 409
+  459 												syslog: <>
+  460 												snprintf: <>
+  461 												exec_callback: void (), <./EAPOLController.bproj/controller.c 701>
+  462 													eapolClientLookupProcess: eapolClientRef (), <./EAPOLController.bproj/controller.c 337>
+  463 														LIST_FOREACH: <>
+  464 													my_log: 269
+  465 													eapolClientInvalidate: void (), <./EAPOLController.bproj/controller.c 397>
+  466 														eapolClientSetState: 282
+  467 														my_CFRelease: 35
+  468 														mach_port_deallocate: <>
+  469 														mach_task_self: <>
+  470 														CFMachPortInvalidate: <>
+  471 													eapolClientExited: void (), <./EAPOLController.bproj/controller.c 674>
+  472 														SCDynamicStoreCopyConsoleUser: <>
+  473 														CFRelease: <>
+  474 														handle_config_changed: void (), <./EAPOLController.bproj/controller.c 2112>
+  475 															EAPOLEthernetInfoInit: void (), <./EAPOLController.bproj/controller.c 1881>
+  476 																bzero: <>
+  477 																SCDynamicStoreKeyCreateNetworkServiceEntity: <>
+  478 																SCDynamicStoreKeyCreateNetworkInterfaceEntity: <>
+  479 																CFArrayCreate: <>
+  480 																CFRelease: <>
+  481 																SCDynamicStoreCopyMultiple: <>
+  482 																my_CFRelease: 35
+  483 																CFArrayCreateMutable: <>
+  484 																CFDictionaryCreateMutable: <>
+  485 																CFDictionaryApplyFunction: <>
+  486 																EAPOLEthernetInfoProcess: void (), <./EAPOLController.bproj/controller.c 1814>
+  487 																	isA_CFDictionary: <>
+  488 																	CFStringHasSuffix: <>
+  489 																	mySCNetworkInterfacePathCopyInterfaceName: CFStringRef (), <./EAPOLController.bproj/controller.c 1755>
+  490 																		CFStringCreateArrayBySeparatingStrings: <>
+  491 																		CFSTR: <>
+  492 																		CFArrayGetCount: <>
+  493 																		CFRetain: <>
+  494 																		CFArrayGetValueAtIndex: <>
+  495 																		CFRelease: <>
+  496 																	EAPOLClientConfigurationCreate: 140
+  497 																	EAPOLClientConfigurationGetSystemProfile: EAPOLClientProfileRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 1432>
+  498 																		get_eapol_configuration: STATIC CFDictionaryRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 652>
+  499 																			copy_interface: STATIC SCNetworkInterfaceRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 551>
+  500 																				copy_configured_interface: STATIC SCNetworkInterfaceRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 229>
+  501 																					SCNetworkSetCopyCurrent: <>
+  502 																					SCNetworkSetCopyServices: <>
+  503 																					CFArrayGetCount: <>
+  504 																					CFArrayGetValueAtIndex: <>
+  505 																					SCNetworkServiceGetInterface: <>
+  506 																					SCNetworkInterfaceGetBSDName: <>
+  507 																					CFEqual: <>
+  508 																					CFRetain: <>
+  509 																					my_CFRelease: 35
+  510 																				CFRetain: <>
+  511 																				copy_present_interface: STATIC SCNetworkInterfaceRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 280>
+  512 																					SCNetworkInterfaceCopyAll: <>
+  513 																					CFArrayGetCount: <>
+  514 																					CFArrayGetValueAtIndex: <>
+  515 																					SCNetworkInterfaceGetBSDName: <>
+  516 																					CFEqual: <>
+  517 																					CFRetain: <>
+  518 																					my_CFRelease: 35
+  519 																				copy_service: STATIC SCNetworkServiceRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 506>
+  520 																					SCNetworkServiceCopyAll: <>
+  521 																					CFArrayGetCount: <>
+  522 																					CFArrayGetValueAtIndex: <>
+  523 																					SCNetworkServiceGetInterface: <>
+  524 																					CFEqual: <>
+  525 																					CFRetain: <>
+  526 																					my_CFRelease: 35
+  527 																				syslog: <>
+  528 																				SCNetworkSetCopyCurrent: <>
+  529 																				SCNetworkSetAddService: <>
+  530 																				SCNetworkServiceGetInterface: <>
+  531 																				my_CFRelease: 35
+  532 																			SCNetworkInterfaceGetExtendedConfiguration: <>
+  533 																			my_CFRelease: 35
+  534 																		get_sc_prefs: STATIC SCPreferencesRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 86>
+  535 																			SCPreferencesCreate: <>
+  536 																			syslog: <>
+  537 																			SCErrorString: <>
+  538 																			SCError: <>
+  539 																		CFEqual: <>
+  540 																		SCNetworkInterfaceGetInterfaceType: <>
+  541 																		CFDictionaryGetValue: <>
+  542 																		isA_CFString: <>
+  543 																		EAPOLClientConfigurationGetProfileWithID: 214
+  544 																		my_CFRelease: 35
+  545 																	S_profile_copy_itemID_dict: CFDictionaryRef (), <./EAPOLController.bproj/controller.c 216>
+  546 																		EAPOLClientItemIDCreateWithProfile: 216
+  547 																		EAPOLClientItemIDCopyDictionary: 381
+  548 																		CFRelease: <>
+  549 																		CFDictionaryCreate: <>
+  550 																	CFDictionarySetValue: <>
+  551 																	CFRelease: <>
+  552 																	CFArrayAppendValue: <>
+  553 																	my_CFRelease: 35
+  554 																	CFDictionaryGetValue: <>
+  555 																	CFEqual: <>
+  556 																	isA_CFString: <>
+  557 																	CFStringGetCString: <>
+  558 																	CFArrayContainsValue: <>
+  559 																	get_ifm_type: 409
+  560 															update_system_mode_interfaces: void (), <./EAPOLController.bproj/controller.c 1941>
+  561 																copy_interface_list: CFArrayRef (), <./EAPOLController.bproj/controller.c 1779>
+  562 																	SCDynamicStoreKeyCreateNetworkInterface: <>
+  563 																	SCDynamicStoreCopyValue: <>
+  564 																	my_CFRelease: 35
+  565 																	isA_CFDictionary: <>
+  566 																	CFDictionaryGetValue: <>
+  567 																	isA_CFArray: <>
+  568 																	CFRetain: <>
+  569 																	CFArrayCreate: <>
+  570 																CFRangeMake: <>
+  571 																CFArrayGetCount: <>
+  572 																LIST_FOREACH: <>
+  573 																CFArrayContainsValue: <>
+  574 																eapolClientStopMonitoring: void (), <./EAPOLController.bproj/controller.c 602>
+  575 																	CFSocketInvalidate: <>
+  576 																	my_CFRelease: 35
+  577 																	close: <>
+  578 																	syslog: <>
+  579 																eapolClientStop: 281
+  580 																CFDictionaryGetValue: <>
+  581 																CFDictionaryContainsKey: <>
+  582 																my_log: 269
+  583 																CFEqual: <>
+  584 																eapolClientUpdate: int (), <./EAPOLController.bproj/controller.c 863>
+  585 																	eapolClientNotify: 287
+  586 																	my_CFRelease: 35
+  587 																	CFRetain: <>
+  588 																eapolClientStart: 427
+  589 																CFArrayGetValueAtIndex: <>
+  590 																eapolClientLookupInterfaceCF: eapolClientRef (), <./EAPOLController.bproj/controller.c 312>
+  591 																	LIST_FOREACH: <>
+  592 																	CFEqual: <>
+  593 																my_CFStringToCString: char * (), <./EAP8021X.fproj/myCFUtil.c 78>
+  594 																	CFRangeMake: <>
+  595 																	CFStringGetLength: <>
+  596 																	CFStringGetBytes: <>
+  597 																	malloc: <>
+  598 																eapolClientAdd: 419
+  599 																free: <>
+  600 																my_CFRelease: 35
+  601 															update_monitored_interfaces: void (), <./EAPOLController.bproj/controller.c 2062>
+  602 																CFRangeMake: <>
+  603 																CFArrayGetCount: <>
+  604 																LIST_FOREACH: <>
+  605 																CFArrayContainsValue: <>
+  606 																eapolClientStopMonitoring: 574
+  607 																CFArrayGetValueAtIndex: <>
+  608 																eapolClientLookupInterfaceCF: 590
+  609 																my_CFStringToCString: 593
+  610 																eapolClientAdd: 419
+  611 																my_log: 269
+  612 																eapolClientStartMonitoring: void (), <./EAPOLController.bproj/controller.c 625>
+  613 																	syslog: <>
+  614 																	my_log: 269
+  615 																	eapol_socket: 430
+  616 																	CFSocketCreateWithNative: <>
+  617 																	monitoring_callback: void (), <./EAPOLController.bproj/controller.c 548>
+  618 																		recv: <>
+  619 																		my_log: 269
+  620 																		strerror: <>
+  621 																		EAPOLPacketValid: bool (), <./EAP8021X.fproj/EAPOLUtil.c 278>
+  622 																			eapol_header_valid: bool (), <./EAP8021X.fproj/EAPOLUtil.c 258>
+  623 																				fprintf: <>
+  624 																				EAPOLPacketTypeStr: const char * (), <./EAP8021X.fproj/EAPOLUtil.c 52>
+  625 																					EAPOLPacketTypeValid: bool (), <./EAP8021X.fproj/EAPOLUtil.c 42>
+  626 																				EAPOLPacketGetLength: uint16_t (), <./EAP8021X.fproj/EAPOLUtil.c 294>
+  627 																					net_uint16_get: <>
+  628 																			eapol_body_valid: bool (), <./EAP8021X.fproj/EAPOLUtil.c 213>
+  629 																				EAPOLPacketGetLength: 626
+  630 																				fprintf: <>
+  631 																				EAPPacketValid: bool (), <./EAP8021X.fproj/EAPUtil.c 178>
+  632 																					fprintf: <>
+  633 																					EAPPacketGetLength: uint16_t (), <./EAP8021X.fproj/EAPUtil.c 272>
+  634 																						net_uint16_get: <>
+  635 																					EAPCodeStr: const char * (), <./EAP8021X.fproj/EAPUtil.c 55>
+  636 																						EAPCodeValid: int (), <./EAP8021X.fproj/EAPUtil.c 45>
+  637 																					EAPRequestResponseValid: bool (), <./EAP8021X.fproj/EAPUtil.c 114>
+  638 																						fprintf: <>
+  639 																						EAPTypeStr: const char * (), <./EAP8021X.fproj/EAPUtil.c 70>
+  640 																						EAPClientModuleLookup: EAPClientModuleRef (), <./EAP8021X.fproj/EAPClientModule.c 78>
+  641 																							TAILQ_FOREACH: <>
+  642 																						EAPClientModulePluginPacketDump: bool (), <./EAP8021X.fproj/EAPClientModule.c 377>
+  643 																						fprint_data: void (), <./EAP8021X.fproj/printdata.c 66>
+  644 																							fprintf: <>
+  645 																							isprint: <>
+  646 																							fflush: <>
+  647 																					fprint_data: 643
+  648 																				eapol_key_descriptor_valid: bool (), <./EAP8021X.fproj/EAPOLUtil.c 151>
+  649 																					fprintf: <>
+  650 																					fprint_eapol_rc4_key_descriptor: void (), <./EAP8021X.fproj/EAPOLUtil.c 69>
+  651 																						EAPOLKeyDescriptorGetLength: uint16_t (), <./EAP8021X.fproj/EAPOLUtil.c 320>
+  652 																							EAPOLRC4KeyDescriptorGetLength: uint16_t (), <./EAP8021X.fproj/EAPOLUtil.c 314>
+  653 																								net_uint16_get: <>
+  654 																						fprintf: <>
+  655 																						fprint_bytes: void (), <./EAP8021X.fproj/printdata.c 40>
+  656 																							fprintf: <>
+  657 																							fflush: <>
+  658 																					EAPOLIEEE80211KeyDescriptorGetKeyDataLength: uint16_t (), <./EAP8021X.fproj/EAPOLUtil.c 338>
+  659 																						net_uint16_get: <>
+  660 																					fprint_eapol_ieee80211_key_descriptor: void (), <./EAP8021X.fproj/EAPOLUtil.c 108>
+  661 																						EAPOLIEEE80211KeyDescriptorGetLength: uint16_t (), <./EAP8021X.fproj/EAPOLUtil.c 326>
+  662 																							net_uint16_get: <>
+  663 																						EAPOLIEEE80211KeyDescriptorGetInformation: uint16_t (), <./EAP8021X.fproj/EAPOLUtil.c 332>
+  664 																							net_uint16_get: <>
+  665 																						EAPOLIEEE80211KeyDescriptorGetKeyDataLength: 658
+  666 																						fprintf: <>
+  667 																						fprint_bytes: 655
+  668 																				fprint_data: 643
+  669 																		CFAbsoluteTimeGetCurrent: <>
+  670 																		bcopy: <>
+  671 																		syslog: <>
+  672 																		SCDynamicStoreNotifyValue: <>
+  673 																	CFSocketCreateRunLoopSource: <>
+  674 																	CFRunLoopAddSource: <>
+  675 																	CFRunLoopGetCurrent: <>
+  676 																	CFRelease: <>
+  677 																	eapolClientStopMonitoring: 574
+  678 																free: <>
+  679 															EAPOLEthernetInfoFree: void (), <./EAPOLController.bproj/controller.c 1931>
+  680 																my_CFRelease: 35
+  681 												exec_setup: void (), <./EAPOLController.bproj/controller.c 727>
+  682 													close: <>
+  683 													eapolClientStopMonitoring: 574
+  684 													getdtablesize: <>
+  685 													dup: <>
+  686 													open: <>
+  687 												is_console_user: 276
+  688 												login_window_uid: 267
+  689 												CFRetain: <>
+  690 												eapolClientSetState: 282
+  691 											mach_port_deallocate: <>
+  692 											mach_task_self: <>
+  693 										my_CFRelease: 35
+  694 									CFDataGetBytePtr: <>
+  695 									CFDataGetLength: <>
+  696 									fprintf: <>
+  697 									mach_port_deallocate: <>
+  698 									my_CFRelease: 35
+  699 							CFRelease: <>
+  700 							CFAbsoluteTimeGetCurrent: <>
+  701 							is_link_active: 43
+  702 						CFRelease: <>
+  703 						MonitoredInterfaceDisplayProfilePrompt: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 644>
+  704 							MonitoredInterfaceReleasePrompt: 50
+  705 							S_get_bundle: 333
+  706 							syslog: <>
+  707 							CFBundleCopyBundleURL: <>
+  708 							my_log: 119
+  709 							CFDictionaryCreateMutable: <>
+  710 							CFDictionaryAddValue: <>
+  711 							CFSTR: <>
+  712 							CFBundleCopyLocalizedString: <>
+  713 							copy_localized_if_name: CFStringRef (), <./EAPOLMonitor.bproj/eapol_monitor.c 208>
+  714 								SCNetworkInterfaceCopyAll: <>
+  715 								CFArrayGetCount: <>
+  716 								CFArrayGetValueAtIndex: <>
+  717 								SCNetworkInterfaceGetBSDName: <>
+  718 								CFEqual: <>
+  719 								SCNetworkInterfaceGetLocalizedDisplayName: <>
+  720 								CFRetain: <>
+  721 								CFRelease: <>
+  722 							CFStringCreateWithFormat: <>
+  723 							CFRelease: <>
+  724 							my_CFRelease: 35
+  725 							CFDictionarySetValue: <>
+  726 							copy_icon_url: CFURLRef (), <./EAPOLMonitor.bproj/eapol_monitor.c 321>
+  727 								CFURLCreateWithFileSystemPath: <>
+  728 								CFSTR: <>
+  729 								CFBundleCreate: <>
+  730 								CFBundleCopyResourceURL: <>
+  731 								CFRelease: <>
+  732 							CFUserNotificationCreate: <>
+  733 							CFUserNotificationCreateRunLoopSource: <>
+  734 							MonitoredInterfacePromptComplete: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 608>
+  735 								MonitoredInterfaceLookupByCFUN: MonitoredInterfaceRef (), <./EAPOLMonitor.bproj/eapol_monitor.c 486>
+  736 									LIST_FOREACH: <>
+  737 								my_log: 119
+  738 								S_CFUserNotificationResponse: __inline__ CFOptionFlags (), <./EAPOLMonitor.bproj/eapol_monitor.c 313>
+  739 								CFUserNotificationPopUpSelection: <>
+  740 								CFArrayGetValueAtIndex: <>
+  741 								MonitoredInterfaceStartAuthenticationWithProfile: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 538>
+  742 									EAPOLClientItemIDCreateDefault: 219
+  743 									EAPOLClientItemIDCreateWithProfile: 216
+  744 									MonitoredInterfaceStartAuthentication: 369
+  745 									CFRelease: <>
+  746 								MonitoredInterfaceReleasePrompt: 50
+  747 							CFRunLoopAddSource: <>
+  748 							CFRunLoopGetCurrent: <>
+  749 							CFRetain: <>
+  750 						MonitoredInterfaceStartAuthenticationWithProfile: 741
+  751 					PromptStartContextRelease: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 356>
+  752 						my_CFRelease: 35
+  753 				my_CFRelease: 35
+  754 			my_log: 119
+  755 			SCErrorString: <>
+  756 			SCError: <>
+  757 			CFArrayCreate: <>
+  758 			EAPOLControlAnyInterfaceKeyCreate: CFStringRef (), <./EAP8021X.fproj/EAPOLControl.c 1031>
+  759 				SCDynamicStoreKeyCreateNetworkInterfaceEntity: <>
+  760 			SCDynamicStoreKeyCreateNetworkInterfaceEntity: <>
+  761 			CFRelease: <>
+  762 			SCDynamicStoreSetNotificationKeys: <>
+  763 			SCDynamicStoreCreateRunLoopSource: <>
+  764 			CFRunLoopAddSource: <>
+  765 			CFRunLoopGetCurrent: <>
+  766 			add_settings_notification: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 1142>
+  767 				notify_register_mach_port: <>
+  768 				my_log: 119
+  769 				CFMachPortCreateWithPort: <>
+  770 				settings_changed: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 1126>
+  771 					my_log: 119
+  772 					EAPOLControlIsUserAutoConnectVerboseEnabled: Boolean (), <./EAP8021X.fproj/EAPOLControl.c 867>
+  773 						EAPOLControlUserGetBooleanValue: Boolean (), <./EAP8021X.fproj/EAPOLControl.c 814>
+  774 							EAPOLControlUserCopyValue: 221
+  775 							isA_CFBoolean: <>
+  776 							CFBooleanGetValue: <>
+  777 							my_CFRelease: 35
+  778 					EAPOLControlIsUserAutoConnectEnabled: Boolean (), <./EAP8021X.fproj/EAPOLControl.c 854>
+  779 						EAPOLControlUserGetBooleanValue: 773
+  780 					check_settings: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 1094>
+  781 						S_on_console: 295
+  782 						my_log: 119
+  783 						EAPOLControlCopyAutoDetectInformation: 299
+  784 						process_auto_detect_info: 320
+  785 						CFRelease: <>
+  786 						LIST_FOREACH: <>
+  787 						MonitoredInterfaceStopIfNecessary: void (), <./EAPOLMonitor.bproj/eapol_monitor.c 570>
+  788 							EAPOLControlCopyStateAndStatus: 90
+  789 							my_log: 119
+  790 							CFDictionaryGetValue: <>
+  791 							CFEqual: <>
+  792 							MonitoredInterfaceStopAuthentication: 254
+  793 							my_CFRelease: 35
+  794 						MonitoredInterfaceReleasePrompt: 50
+  795 				notify_cancel: <>
+  796 				CFMachPortCreateRunLoopSource: <>
+  797 				CFRelease: <>
+  798 				CFRunLoopAddSource: <>
+  799 				CFRunLoopGetCurrent: <>
+  800 			EAPOLControlIsUserAutoConnectVerboseEnabled: 772
+  801 			EAPOLControlIsUserAutoConnectEnabled: 778
+  802 			check_settings: 780
+  803 		CFRunLoopRun: <>
+  804 		openlog: <>
+  805 		geteuid: <>
+  806 		syslog: <>
+  807 		launch_data_new_string: <>
+  808 		launch_msg: <>
+  809 		launch_data_free: <>
+  810 		launch_data_get_type: <>
+  811 		launch_data_dict_lookup: <>
+  812 		launch_data_dict_iterate: <>
+  813 		process_launchd_machport: void (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 476>
+  814 			launch_data_get_type: <>
+  815 			syslog: <>
+  816 			launch_data_get_machport: <>
+  817 			CFMachPortCreateWithPort: <>
+  818 			server_handle_request: void (), <./EAPOLController.bproj/server.c 500>
+  819 				process_notification: STATIC boolean_t (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 420>
+  820 				eapolcfg_auth_server: <>
+  821 				syslog: <>
+  822 				mach_msg_destroy: <>
+  823 				MACH_MSGH_BITS_REMOTE: <>
+  824 				mach_msg: <>
+  825 				mach_error_string: <>
+  826 				process_notification: boolean_t (), <./EAPOLController.bproj/server.c 487>
+  827 				read_trailer: __inline__ void (), <./EAPOLController.bproj/server.c 110>
+  828 					round_msg: <>
+  829 				eapolcontroller_server: <>
+  830 			CFMachPortCreateRunLoopSource: <>
+  831 			CFRunLoopAddSource: <>
+  832 			CFRunLoopGetCurrent: <>
+  833 			CFRelease: <>
+  834 		CFRunLoopRunInMode: <>
+  835 		fprintf: <>
+  836 		get_ifm_type: int (), <./EAP8021X.fproj/eapol_socket.c 210>
+  837 			socket: <>
+  838 			perror: <>
+  839 			bzero: <>
+  840 			strlcpy: <>
+  841 			ioctl: <>
+  842 			IFM_TYPE: <>
+  843 			malloc: <>
+  844 			IFM_SUBTYPE: <>
+  845 			close: <>
+  846 		eapol_socket: 430
+  847 		fstat: <>
+  848 		S_ISSOCK: <>
+  849 		close: <>
+  850 		SIMProcessRAND: __private_extern__ bool (), <./EAP8021X.fproj/SIMAccess.c 312>
+  851 			ServerConnectionInit: STATIC void (), <./EAP8021X.fproj/SIMAccess.c 86>
+  852 				bzero: <>
+  853 			ServerConnectionOpen: STATIC bool (), <./EAP8021X.fproj/SIMAccess.c 113>
+  854 				serverConnectionCopyDescription: STATIC CFStringRef (), <./EAP8021X.fproj/SIMAccess.c 107>
+  855 					CFRetain: <>
+  856 					CFSTR: <>
+  857 				CFSTR: <>
+  858 				ServerConnectionCallback: STATIC void (), <./EAP8021X.fproj/SIMAccess.c 64>
+  859 					CFEqual: <>
+  860 				fprintf: <>
+  861 				CFRunLoopGetCurrent: <>
+  862 				ServerConnectionClose: STATIC void (), <./EAP8021X.fproj/SIMAccess.c 93>
+  863 					CFRelease: <>
+  864 					ServerConnectionInit: 851
+  865 			syslog: <>
+  866 			ServerConnectionStartRequest: STATIC CTError (), <./EAP8021X.fproj/SIMAccess.c 142>
+  867 				CFDataCreate: <>
+  868 				fprintf: <>
+  869 				CFRelease: <>
+  870 			ServerConnectionClose: 862
+  871 			ServerConnectionRun: STATIC SInt32 (), <./EAP8021X.fproj/SIMAccess.c 164>
+  872 				CFRunLoopRunInMode: <>
+  873 			ServerConnectionGetKcSRES: STATIC CTError (), <./EAP8021X.fproj/SIMAccess.c 170>
+  874 				fprintf: <>
+  875 				CFDictionaryGetValue: <>
+  876 				CFDataGetLength: <>
+  877 				CFRangeMake: <>
+  878 				CFDataGetBytes: <>
+  879 				CFRelease: <>
+  880 		printf: <>
+  881 		print_data: void (), <./EAP8021X.fproj/printdata.c 114>
+  882 			fprint_data: 643
+  883 		eapsim_packet_dump: STATIC bool (), <./EAP8021X.fproj/eapsim_plugin.c 2839>
+  884 			EAPPacketGetLength: 633
+  885 			fprintf: <>
+  886 			EAPSIMSubtypeString: STATIC const char * (), <./EAP8021X.fproj/eapsim_plugin.c 149>
+  887 				snprintf: <>
+  888 			TLVListInit: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 990>
+  889 			TLVListParse: STATIC bool (), <./EAP8021X.fproj/eapfast_plugin.c 2228>
+  890 				snprintf: <>
+  891 				EAPSIMAttributeTypeString: STATIC const char * (), <./EAP8021X.fproj/eapsim_plugin.c 201>
+  892 					snprintf: <>
+  893 				TLVCheckValidity: STATIC int (), <./EAP8021X.fproj/eapsim_plugin.c 1042>
+  894 					offsetof: <>
+  895 					snprintf: <>
+  896 					EAPSIMAttributeTypeString: 891
+  897 					net_uint16_get: <>
+  898 				TLSListAddAttribute: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 1011>
+  899 					TLVListAttrsStaticSize: INLINE int (), <./EAP8021X.fproj/eapsim_plugin.c 975>
+  900 					malloc: <>
+  901 					bcopy: <>
+  902 					reallocf: <>
+  903 				TLVListFree: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 998>
+  904 					printf: <>
+  905 					free: <>
+  906 					TLVListInit: 888
+  907 				bzero: <>
+  908 				syslog: <>
+  909 				TLVGetType: INLINE TLVType (), <./EAP8021X.fproj/eapfast_plugin.c 210>
+  910 					net_uint16_get: <>
+  911 				TLVGetLength: INLINE TLVLength (), <./EAP8021X.fproj/eapfast_plugin.c 197>
+  912 					net_uint16_get: <>
+  913 				TLVTypeGetType: INLINE TLVType (), <./EAP8021X.fproj/eapfast_plugin.c 222>
+  914 				printf: <>
+  915 				TLVTypeName: STATIC const char * (), <./EAP8021X.fproj/eapfast_plugin.c 138>
+  916 				TLVTypeIsMandatory: INLINE bool (), <./EAP8021X.fproj/eapfast_plugin.c 216>
+  917 				print_data: 881
+  918 				ResultTLVGetStatus: INLINE TLVStatus (), <./EAP8021X.fproj/eapfast_plugin.c 248>
+  919 					net_uint16_get: <>
+  920 				ErrorTLVGetErrorCode: INLINE ErrorTLVErrorCode (), <./EAP8021X.fproj/eapfast_plugin.c 311>
+  921 					net_uint32_get: <>
+  922 				EAPPacketValid: 631
+  923 				PACTLVAttributeListParse: STATIC bool (), <./EAP8021X.fproj/eapfast_plugin.c 2122>
+  924 					syslog: <>
+  925 					TLVGetType: 909
+  926 					TLVGetLength: 911
+  927 					TLVTypeGetType: 913
+  928 					printf: <>
+  929 					PACTLVAttributeTypeName: STATIC const char * (), <./EAP8021X.fproj/eapfast_plugin.c 405>
+  930 					TLVTypeIsMandatory: 916
+  931 					print_data: 881
+  932 					PACTLVAttributeListParse: 923
+  933 			TLVListErrorString: STATIC const char * (), <./EAP8021X.fproj/eapsim_plugin.c 984>
+  934 			TLVListPrint: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 1363>
+  935 				TLVPrint: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 1247>
+  936 					fprintf: <>
+  937 					EAPSIMAttributeTypeString: 891
+  938 					fprint_bytes: 655
+  939 					offsetof: <>
+  940 					net_uint16_get: <>
+  941 					snprintf: <>
+  942 					fprint_data: 643
+  943 				fflush: <>
+  944 			TLVListFree: 903
+  945 		TLVBufferInit: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 814>
+  946 		offsetof: <>
+  947 		TLVBufferAllocateTLV: STATIC TLVRef (), <./EAP8021X.fproj/eapsim_plugin.c 824>
+  948 			offsetof: <>
+  949 			TLVRoundUp: INLINE int (), <./EAP8021X.fproj/eapsim_plugin.c 789>
+  950 				roundup: <>
+  951 			snprintf: <>
+  952 		TLVBufferErrorString: STATIC const char * (), <./EAP8021X.fproj/eapsim_plugin.c 808>
+  953 		net_uint16_set: <>
+  954 		EAPPacketSetLength: void (), <./EAP8021X.fproj/EAPUtil.c 265>
+  955 			net_uint16_set: <>
+  956 		TLVBufferUsed: STATIC int (), <./EAP8021X.fproj/eapsim_plugin.c 802>
+  957 		blocks_are_duplicated: STATIC bool (), <./EAP8021X.fproj/eapsim_plugin.c 750>
+  958 			bcmp: <>
+  959 		CC_SHA1_Init: <>
+  960 		CC_SHA1_Update: <>
+  961 		CC_SHA1_Final: <>
+  962 		bcmp: <>
+  963 		fips186_2prf: __private_extern__ void (), <./EAP8021X.fproj/fips186prf.c 91>
+  964 			memcpy: <>
+  965 			memset: <>
+  966 			fr_SHA1Init: EXTERN void (), <./EAP8021X.fproj/fr_sha1.c 92>
+  967 			fr_SHA1Transform: EXTERN void (), <./EAP8021X.fproj/fr_sha1.c 39>
+  968 				memcpy: <>
+  969 				R0: <>
+  970 				R1: <>
+  971 				R2: <>
+  972 				R3: <>
+  973 				R4: <>
+  974 			fr_SHA1FinalNoLen: EXTERN void (), <./EAP8021X.fproj/fr_sha1.c 156>
+  975 				memset: <>
+  976 			onesixty_add_mod: void (), <./EAP8021X.fproj/fips186prf.c 66>
+  977 		EAPPacketGetLength: 633
+  978 		TLVListInit: 888
+  979 		TLVListParse: 889
+  980 		TLVListErrorString: STATIC const char * (), <./EAP8021X.fproj/eapsim_plugin.c 984>
+  981 		TLVListLookupAttribute: STATIC TLVRef (), <./EAP8021X.fproj/eapsim_plugin.c 1377>
+  982 		eapsim_compute_mac: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 2007>
+  983 			EAPPacketGetLength: 633
+  984 			bzero: <>
+  985 			CCHmacInit: <>
+  986 			CCHmacUpdate: <>
+  987 			CCHmacFinal: <>
+  988 		dump_triplets: void (), <./EAP8021X.fproj/eapsim_plugin.c 3555>
+  989 			CFDictionaryCreateMutable: <>
+  990 			CFArrayCreateMutable: <>
+  991 			CFDataCreateWithBytesNoCopy: <>
+  992 			CFArrayAppendValue: <>
+  993 			CFRelease: <>
+  994 			CFDictionarySetValue: <>
+  995 			dump_plist: void (), <./EAP8021X.fproj/eapsim_plugin.c 3542>
+  996 				CFPropertyListCreateXMLData: <>
+  997 				fwrite: <>
+  998 				CFDataGetBytePtr: <>
+  999 				CFDataGetLength: <>
+ 1000 				CFRelease: <>
+ 1001 		test_encr_data: void (), <./EAP8021X.fproj/eapsim_plugin.c 3669>
+ 1002 			CCCryptorCreate: <>
+ 1003 			fprintf: <>
+ 1004 			CCCryptorUpdate: <>
+ 1005 			bcmp: <>
+ 1006 			CCCryptorRelease: <>
+ 1007 		test_decrypt_data: void (), <./EAP8021X.fproj/eapsim_plugin.c 3723>
+ 1008 			CCCryptorCreate: <>
+ 1009 			fprintf: <>
+ 1010 			CCCryptorUpdate: <>
+ 1011 			bcmp: <>
+ 1012 			CCCryptorRelease: <>
+ 1013 		EAPSIMContextClear: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 1474>
+ 1014 			bzero: <>
+ 1015 		EAPSIMContextSetVersionList: STATIC void (), <./EAP8021X.fproj/eapsim_plugin.c 1445>
+ 1016 			bcmp: <>
+ 1017 			free: <>
+ 1018 			malloc: <>
+ 1019 			bcopy: <>
+ 1020 		sim_identity_create: STATIC CFStringRef (), <./EAP8021X.fproj/eapsim_plugin.c 719>
+ 1021 			sim_imsi_copy: STATIC CFStringRef (), <./EAP8021X.fproj/eapsim_plugin.c 725>
+ 1022 				CTSIMSupportCopyMobileSubscriberIdentity: <>
+ 1023 				CFStringGetLength: <>
+ 1024 				CFRelease: <>
+ 1025 			copy_static_realm: STATIC CFStringRef (), <./EAP8021X.fproj/eapsim_plugin.c 576>
+ 1026 				isA_CFString: <>
+ 1027 				CFDictionaryGetValue: <>
+ 1028 				CFRetain: <>
+ 1029 			sim_realm_create: STATIC CFStringRef (), <./EAP8021X.fproj/eapsim_plugin.c 645>
+ 1030 				CTSIMSupportCopyMobileSubscriberCountryCode: <>
+ 1031 				CTSIMSupportCopyMobileSubscriberNetworkCode: <>
+ 1032 				CFStringGetLength: <>
+ 1033 				CFStringCreateWithFormat: <>
+ 1034 				CFSTR: <>
+ 1035 				CFRelease: <>
+ 1036 				my_CFRelease: 35
+ 1037 			EAPSIMPseudonymCopy: STATIC CFStringRef (), <./EAP8021X.fproj/eapsim_plugin.c 524>
+ 1038 				CFPreferencesCopyValue: <>
+ 1039 				isA_CFString: <>
+ 1040 				my_CFRelease: 35
+ 1041 			copy_pseudonym_identity: STATIC CFStringRef (), <./EAP8021X.fproj/eapsim_plugin.c 552>
+ 1042 				CFStringCreateWithFormat: <>
+ 1043 				CFSTR: <>
+ 1044 				CFRetain: <>
+ 1045 			CFRelease: <>
+ 1046 			copy_imsi_identity: STATIC CFStringRef (), <./EAP8021X.fproj/eapsim_plugin.c 563>
+ 1047 				CFStringCreateWithFormat: <>
+ 1048 				CFSTR: <>
+ 1049 			my_CFRelease: 35
+ 1050 		CFShow: <>
+ 1051 		CFRelease: <>
+ 1052 		showAllCerts: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 873>
+ 1053 			copyAllCerts: CFArrayRef (), <./EAP8021X.fproj/EAPCertificateUtil.c 806>
+ 1054 				CFDictionaryCreate: <>
+ 1055 				SecItemCopyMatching: <>
+ 1056 				CFRelease: <>
+ 1057 				SecKeychainSearchCreateFromAttributes: <>
+ 1058 				fprintf: <>
+ 1059 				CFArrayCreateMutable: <>
+ 1060 				SecKeychainSearchCopyNext: <>
+ 1061 				SecKeychainItemCopyContent: <>
+ 1062 				SecCertificateCreateFromData: <>
+ 1063 				SecKeychainItemFreeContent: <>
+ 1064 				CFArrayAppendValue: <>
+ 1065 				my_CFRelease: 35
+ 1066 				CFArrayGetCount: <>
+ 1067 			CFArrayGetCount: <>
+ 1068 			CFArrayGetValueAtIndex: <>
+ 1069 			dump_cert: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 924>
+ 1070 				EAPSecCertificateCopyAttributesDictionary: CFDictionaryRef (), <./EAP8021X.fproj/EAPCertificateUtil.c 656>
+ 1071 					CFDictionaryCreateMutable: <>
+ 1072 					dict_insert_cert_name_attr: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 557>
+ 1073 						CFEqual: <>
+ 1074 						CFArrayGetCount: <>
+ 1075 						CFDictionarySetValue: <>
+ 1076 						CFArrayGetValueAtIndex: <>
+ 1077 						CFRelease: <>
+ 1078 					CFDictionarySetValue: <>
+ 1079 					CFDictionaryGetCount: <>
+ 1080 					CFRelease: <>
+ 1081 					CFArrayCreate: <>
+ 1082 					SecCertificateCopyValues: <>
+ 1083 					CFDictionaryGetValue: <>
+ 1084 					dictSetValue: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 639>
+ 1085 						isA_CFArray: <>
+ 1086 						CFArrayGetCount: <>
+ 1087 						CFArrayGetValueAtIndex: <>
+ 1088 						isA_CFString: <>
+ 1089 						CFDictionarySetValue: <>
+ 1090 					isA_CFArray: <>
+ 1091 					CFArrayGetCount: <>
+ 1092 					CFArrayGetValueAtIndex: <>
+ 1093 					CFEqual: <>
+ 1094 					SecCertificateCopyEmailAddresses: <>
+ 1095 				printf: <>
+ 1096 				dump_as_xml: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 910>
+ 1097 					CFPropertyListCreateXMLData: <>
+ 1098 					fwrite: <>
+ 1099 					CFDataGetBytePtr: <>
+ 1100 					CFDataGetLength: <>
+ 1101 					CFRelease: <>
+ 1102 				CFRelease: <>
+ 1103 				SecCertificateCopySubjectSummary: <>
+ 1104 				EAPSecCertificateCopyUserNameString: CFStringRef (), <./EAP8021X.fproj/EAPCertificateUtil.c 734>
+ 1105 					EAPSecCertificateCopyAttributesDictionary: 1070
+ 1106 					CFDictionaryGetValue: <>
+ 1107 					CFRetain: <>
+ 1108 					my_CFRelease: 35
+ 1109 				SCPrint: <>
+ 1110 				CFSTR: <>
+ 1111 				my_CFRelease: 35
+ 1112 			CFRelease: <>
+ 1113 		sleep: <>
+ 1114 		strcmp: <>
+ 1115 		usage: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 1106>
+ 1116 			fprintf: <>
+ 1117 			exit: <>
+ 1118 		show_all_identities: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 958>
+ 1119 			EAPSecIdentityListCreate: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 85>
+ 1120 				CFDictionaryCreate: <>
+ 1121 				SecItemCopyMatching: <>
+ 1122 				CFRelease: <>
+ 1123 			fprintf: <>
+ 1124 			EAPSecurityErrorString: const char * (), <./EAP8021X.fproj/EAPSecurity.c 32>
+ 1125 			exit: <>
+ 1126 			CFArrayGetCount: <>
+ 1127 			CFArrayGetValueAtIndex: <>
+ 1128 			EAPSecIdentityHandleCreate: EAPSecIdentityHandleRef (), <./EAP8021X.fproj/EAPCertificateUtil.c 454>
+ 1129 				CFDictionaryCreate: <>
+ 1130 				SecItemCopyMatching: <>
+ 1131 				fprintf: <>
+ 1132 				CFRelease: <>
+ 1133 				SecIdentityCopyCertificate: <>
+ 1134 				EAPSecurityErrorString: 1124
+ 1135 				SecKeychainItemCreatePersistentReference: <>
+ 1136 			EAPSecIdentityHandleCreateSecIdentity: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 267>
+ 1137 				isA_CFDictionary: <>
+ 1138 				IdentityCreateFromDictionary: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 133>
+ 1139 					CFDictionaryGetValue: <>
+ 1140 					isA_CFString: <>
+ 1141 					CFEqual: <>
+ 1142 					isA_CFData: <>
+ 1143 					EAPSecIdentityListCreate: 1119
+ 1144 					CFArrayGetCount: <>
+ 1145 					CFArrayGetValueAtIndex: <>
+ 1146 					CFRetain: <>
+ 1147 					SecIdentityCopyCertificate: <>
+ 1148 					fprintf: <>
+ 1149 					EAPSecurityErrorString: 1124
+ 1150 					CFRelease: <>
+ 1151 					my_CFRelease: 35
+ 1152 				isA_CFData: <>
+ 1153 				IdentityCreateFromData: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 237>
+ 1154 					CFDictionaryCreate: <>
+ 1155 					SecItemCopyMatching: <>
+ 1156 					CFRelease: <>
+ 1157 					SecKeychainItemCopyFromPersistentReference: <>
+ 1158 					SecIdentityCreateWithCertificate: <>
+ 1159 			SecIdentityCopyCertificate: <>
+ 1160 			printf: <>
+ 1161 			dump_cert: 1069
+ 1162 			dump_as_xml: 1096
+ 1163 			my_CFRelease: 35
+ 1164 			CFRelease: <>
+ 1165 		get_identity: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 1012>
+ 1166 			my_CFPropertyListCreateFromFile: CFPropertyListRef (), <./EAP8021X.fproj/myCFUtil.c 158>
+ 1167 				read_file: void * (), <./EAP8021X.fproj/myCFUtil.c 97>
+ 1168 					stat: <>
+ 1169 					malloc: <>
+ 1170 					open: <>
+ 1171 					read: <>
+ 1172 					close: <>
+ 1173 				CFDataCreate: <>
+ 1174 				CFPropertyListCreateFromXMLData: <>
+ 1175 				CFRelease: <>
+ 1176 				free: <>
+ 1177 			fprintf: <>
+ 1178 			exit: <>
+ 1179 			EAPSecIdentityHandleCreateSecIdentity: 1136
+ 1180 			SecIdentityCopyCertificate: <>
+ 1181 			dump_cert: 1069
+ 1182 			CFRelease: <>
+ 1183 		remove_all_identities: void (), <./EAP8021X.fproj/EAPCertificateUtil.c 1070>
+ 1184 			EAPSecIdentityListCreate: 1119
+ 1185 			fprintf: <>
+ 1186 			EAPSecurityErrorString: 1124
+ 1187 			exit: <>
+ 1188 			CFArrayGetCount: <>
+ 1189 			CFArrayGetValueAtIndex: <>
+ 1190 			SecIdentityCopyCertificate: <>
+ 1191 			printf: <>
+ 1192 			dump_cert: 1069
+ 1193 			my_CFRelease: 35
+ 1194 			remove_identity: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 1046>
+ 1195 				CFDictionaryCreate: <>
+ 1196 				SecItemDelete: <>
+ 1197 				fprintf: <>
+ 1198 				CFRelease: <>
+ 1199 			CFRelease: <>
+ 1200 		EAPSecIdentityHandleCreateSecIdentityTrustChain: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 397>
+ 1201 			EAPSecIdentityHandleCreateSecIdentity: 1136
+ 1202 			EAPSecIdentityCreateTrustChain: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 357>
+ 1203 				EAPSecIdentityCreateCertificateTrustChain: OSStatus (), <./EAP8021X.fproj/EAPCertificateUtil.c 282>
+ 1204 					EAPSecPolicyCopy: OSStatus (), <./EAP8021X.fproj/EAPTLSUtil.c 699>
+ 1205 						SecPolicyCreateEAP: <>
+ 1206 						SecPolicyCreateWithOID: <>
+ 1207 					fprintf: <>
+ 1208 					EAPSecurityErrorString: 1124
+ 1209 					SecIdentityCopyCertificate: <>
+ 1210 					CFArrayCreate: <>
+ 1211 					my_CFRelease: 35
+ 1212 					SecTrustCreateWithCertificates: <>
+ 1213 					SecTrustEvaluate: <>
+ 1214 					SecTrustGetCertificateCount: <>
+ 1215 					CFArrayCreateMutable: <>
+ 1216 					SecTrustGetCertificateAtIndex: <>
+ 1217 					CFArrayAppendValue: <>
+ 1218 				fprintf: <>
+ 1219 				EAPSecurityErrorString: 1124
+ 1220 				CFArrayGetCount: <>
+ 1221 				CFArrayCreateMutableCopy: <>
+ 1222 				CFArraySetValueAtIndex: <>
+ 1223 				my_CFRelease: 35
+ 1224 			my_CFRelease: 35
+ 1225 		EAPSecurityErrorString: 1124
+ 1226 		EAPSecIdentityListCreate: 1119
+ 1227 		CFArrayGetCount: <>
+ 1228 		CFArrayGetValueAtIndex: <>
+ 1229 		EAPSecIdentityHandleCreate: 1128
+ 1230 		usage: void (), <./EAP8021X.fproj/EAPKeychainUtil.c 943>
+ 1231 			fprintf: <>
+ 1232 			exit: <>
+ 1233 		SecKeychainCopySystemKeychain: OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 918>
+ 1234 			SecKeychainCopyDomainDefault: <>
+ 1235 			CFRelease: <>
+ 1236 		CFStringCreateWithCStringNoCopy: <>
+ 1237 		CFDataCreateWithBytesNoCopy: <>
+ 1238 		strlen: <>
+ 1239 		CFDictionaryCreateMutable: <>
+ 1240 		CFDictionarySetValue: <>
+ 1241 		copy_trusted_applications: STATIC CFArrayRef (), <./EAP8021X.fproj/EAPKeychainUtil.c 969>
+ 1242 			CFArrayCreateMutable: <>
+ 1243 			create_trusted_app_from_bundle_resource: STATIC SecTrustedApplicationRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 86>
+ 1244 				CFURLCreateWithFileSystemPath: <>
+ 1245 				CFBundleCreate: <>
+ 1246 				CFRelease: <>
+ 1247 				CFBundleCopyResourceURL: <>
+ 1248 				CFSTR: <>
+ 1249 				CFURLGetFileSystemRepresentation: <>
+ 1250 				SecTrustedApplicationCreateFromPath: <>
+ 1251 				fprintf: <>
+ 1252 			CFSTR: <>
+ 1253 			CFArrayAppendValue: <>
+ 1254 			CFRelease: <>
+ 1255 			SecTrustedApplicationCreateApplicationGroup: <>
+ 1256 			fprintf: <>
+ 1257 			SecTrustedApplicationCreateFromPath: <>
+ 1258 			CFArrayGetCount: <>
+ 1259 			my_CFRelease: 35
+ 1260 		EAPSecKeychainPasswordItemSet2: OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 832>
+ 1261 			KeychainPasswordItemCopy: STATIC OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 442>
+ 1262 				CFStringCreateExternalRepresentation: <>
+ 1263 				SecKeychainFindGenericPassword: <>
+ 1264 				CFDataGetLength: <>
+ 1265 				CFDataGetBytePtr: <>
+ 1266 				CFRelease: <>
+ 1267 				fprintf: <>
+ 1268 				EAPSecurityErrorString: 1124
+ 1269 			mySecKeychainAttributeListInit: STATIC void (), <./EAP8021X.fproj/EAPKeychainUtil.c 260>
+ 1270 			mySecKeychainAttributeListAddFromDict: STATIC Boolean (), <./EAP8021X.fproj/EAPKeychainUtil.c 288>
+ 1271 				CFDictionaryGetValue: <>
+ 1272 				mySecKeychainAttributeListAdd: STATIC Boolean (), <./EAP8021X.fproj/EAPKeychainUtil.c 268>
+ 1273 					fprintf: <>
+ 1274 					CFDataGetLength: <>
+ 1275 					CFDataGetBytePtr: <>
+ 1276 				fprintf: <>
+ 1277 			CFDictionaryGetValue: <>
+ 1278 			CFDataGetLength: <>
+ 1279 			CFDataGetBytePtr: <>
+ 1280 			SecKeychainItemModifyAttributesAndData: <>
+ 1281 			CFRelease: <>
+ 1282 		my_CFRelease: 35
+ 1283 		access: <>
+ 1284 		SecAccessCreateWithOwnerAndACL: <>
+ 1285 		CFErrorGetCode: <>
+ 1286 		SecAccessCreate: <>
+ 1287 		CFSTR: <>
+ 1288 		EAPSecKeychainPasswordItemCreate: OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 701>
+ 1289 			access: <>
+ 1290 			CFDictionaryGetValue: <>
+ 1291 			CFDataGetLength: <>
+ 1292 			CFDataGetBytePtr: <>
+ 1293 			EAPSecAccessCreateWithTrustedApplications: PRIVATE_EXTERN OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 311>
+ 1294 				my_CFStringCreateWithData: 189
+ 1295 				CFSTR: <>
+ 1296 				CFRetain: <>
+ 1297 				SecAccessCreate: <>
+ 1298 				my_CFRelease: 35
+ 1299 			fprintf: <>
+ 1300 			CFBooleanGetValue: <>
+ 1301 			SecAccessCreateWithOwnerAndACL: <>
+ 1302 			CFErrorGetCode: <>
+ 1303 			CFRelease: <>
+ 1304 			mySecKeychainAttributeListInit: 1269
+ 1305 			CFStringCreateExternalRepresentation: <>
+ 1306 			mySecKeychainAttributeListAdd: 1272
+ 1307 			mySecKeychainAttributeListAddFromDict: 1270
+ 1308 			SecKeychainItemCreateFromContent: <>
+ 1309 			my_CFRelease: 35
+ 1310 		EAPSecKeychainPasswordItemCreateUnique: OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 788>
+ 1311 			my_CFUUIDStringCreate: CFStringRef (), <./EAP8021X.fproj/myCFUtil.c 241>
+ 1312 				CFUUIDCreate: <>
+ 1313 				CFUUIDCreateString: <>
+ 1314 				CFRelease: <>
+ 1315 			EAPSecKeychainPasswordItemCreate: 1288
+ 1316 			CFRelease: <>
+ 1317 		CFStringCreateExternalRepresentation: <>
+ 1318 		fwrite: <>
+ 1319 		CFDataGetBytePtr: <>
+ 1320 		CFDataGetLength: <>
+ 1321 		EAPSecKeychainPasswordItemRemove: OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 586>
+ 1322 			CFDictionaryCreate: <>
+ 1323 			SecItemDelete: <>
+ 1324 			CFRelease: <>
+ 1325 			fprintf: <>
+ 1326 			EAPSecurityErrorString: 1124
+ 1327 			KeychainPasswordItemCopy: 1261
+ 1328 			SecKeychainItemDelete: <>
+ 1329 		CFArrayCreate: <>
+ 1330 		EAPSecKeychainPasswordItemCopy2: OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 608>
+ 1331 			KeychainPasswordItemCopy: 1261
+ 1332 			KeychainItemCopyInfo: STATIC OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 492>
+ 1333 				CFRangeMake: <>
+ 1334 				CFArrayGetCount: <>
+ 1335 				mySecKeychainAttributeInfoInit: STATIC void (), <./EAP8021X.fproj/EAPKeychainUtil.c 234>
+ 1336 				CFArrayContainsValue: <>
+ 1337 				mySecKeychainAttributeInfoAdd: STATIC Boolean (), <./EAP8021X.fproj/EAPKeychainUtil.c 243>
+ 1338 					fprintf: <>
+ 1339 				SecKeychainItemCopyAttributesAndData: <>
+ 1340 				CFDictionaryCreateMutable: <>
+ 1341 				CFDataCreate: <>
+ 1342 				CFDictionarySetValue: <>
+ 1343 				CFRelease: <>
+ 1344 				SecKeychainAttrTypeGetCFString: STATIC CFStringRef (), <./EAP8021X.fproj/EAPKeychainUtil.c 478>
+ 1345 				SecKeychainItemFreeAttributesAndData: <>
+ 1346 			CFRelease: <>
+ 1347 		CFDictionaryGetValue: <>
+ 1348 		MSChap2_MPPEGetMasterKey: void (), <./EAP8021X.fproj/mschap.c 521>
+ 1349 			password_to_unicode: void (), <./EAP8021X.fproj/mschap.c 43>
+ 1350 				bzero: <>
+ 1351 			NTPasswordHashHash: void (), <./EAP8021X.fproj/mschap.c 67>
+ 1352 				NTPasswordHash: void (), <./EAP8021X.fproj/mschap.c 59>
+ 1353 					CC_MD4: <>
+ 1354 			GetMasterKey: void (), <./EAP8021X.fproj/mschap.c 502>
+ 1355 				memset: <>
+ 1356 				CC_SHA1_Init: <>
+ 1357 				CC_SHA1_Update: <>
+ 1358 				CC_SHA1_Final: <>
+ 1359 				memcpy: <>
+ 1360 		MSChap2_MPPEGetAsymetricStartKey: void (), <./EAP8021X.fproj/mschap.c 535>
+ 1361 			memset: <>
+ 1362 			CC_SHA1_Init: <>
+ 1363 			CC_SHA1_Update: <>
+ 1364 			CC_SHA1_Final: <>
+ 1365 			memcpy: <>
+ 1366 		usage: void (), <./EAP8021X.fproj/EAPTLSUtil.c 1861>
+ 1367 			fprintf: <>
+ 1368 			exit: <>
+ 1369 		getTrustExceptions: void (), <./EAP8021X.fproj/EAPTLSUtil.c 1717>
+ 1370 			CFStringCreateWithCStringNoCopy: <>
+ 1371 			file_create_certificate_hash: CFStringRef (), <./EAP8021X.fproj/EAPTLSUtil.c 1702>
+ 1372 				file_create_certificate: SecCertificateRef (), <./EAP8021X.fproj/EAPTLSUtil.c 1668>
+ 1373 					file_create_data: CFDataRef (), <./EAP8021X.fproj/EAPTLSUtil.c 1634>
+ 1374 						stat: <>
+ 1375 						CFDataCreateMutable: <>
+ 1376 						open: <>
+ 1377 						CFDataSetLength: <>
+ 1378 						read: <>
+ 1379 						CFDataGetMutableBytePtr: <>
+ 1380 						close: <>
+ 1381 					SecCertificateCreateWithData: <>
+ 1382 					CFRelease: <>
+ 1383 				EAPSecCertificateCopySHA1DigestString: CFStringRef (), <./EAP8021X.fproj/EAPCertificateUtil.c 618>
+ 1384 					SecCertificateGetSHA1Digest: <>
+ 1385 					CFDataGetLength: <>
+ 1386 					CFDataGetBytePtr: <>
+ 1387 					CFStringCreateMutable: <>
+ 1388 					CFStringAppendFormat: <>
+ 1389 					CFSTR: <>
+ 1390 				CFRelease: <>
+ 1391 			fprintf: <>
+ 1392 			strerror: <>
+ 1393 			exit: <>
+ 1394 			EAPTLSTrustExceptionsCopy: CFDataRef (), <./EAP8021X.fproj/EAPTLSUtil.c 998>
+ 1395 				exceptions_change_check: void (), <./EAP8021X.fproj/EAPTLSUtil.c 788>
+ 1396 					notify_register_check: <>
+ 1397 					syslog: <>
+ 1398 					notify_check: <>
+ 1399 					CFPreferencesSynchronize: <>
+ 1400 				CFPreferencesCopyValue: <>
+ 1401 				isA_CFDictionary: <>
+ 1402 				CFDictionaryGetValue: <>
+ 1403 				isA_CFData: <>
+ 1404 				CFRetain: <>
+ 1405 				my_CFRelease: 35
+ 1406 			SCPrint: <>
+ 1407 			CFSTR: <>
+ 1408 		removeAllTrustExceptions: void (), <./EAP8021X.fproj/EAPTLSUtil.c 1758>
+ 1409 			CFStringCreateWithCStringNoCopy: <>
+ 1410 			EAPTLSRemoveTrustExceptionsBindings: void (), <./EAP8021X.fproj/EAPTLSUtil.c 959>
+ 1411 				exceptions_change_check: 1395
+ 1412 				CFPreferencesCopyValue: <>
+ 1413 				isA_CFDictionary: <>
+ 1414 				CFRelease: <>
+ 1415 				CFDictionaryGetValue: <>
+ 1416 				CFDictionaryCreateMutableCopy: <>
+ 1417 				CFDictionaryRemoveValue: <>
+ 1418 				CFPreferencesSetValue: <>
+ 1419 				CFPreferencesSynchronize: <>
+ 1420 				exceptions_change_notify: void (), <./EAP8021X.fproj/EAPTLSUtil.c 819>
+ 1421 					notify_post: <>
+ 1422 					syslog: <>
+ 1423 			CFRelease: <>
+ 1424 		read_dictionary: CFDictionaryRef (), <./EAP8021X.fproj/EAPTLSUtil.c 2019>
+ 1425 			my_CFPropertyListCreateFromFile: 1166
+ 1426 			isA_CFDictionary: <>
+ 1427 			CFRelease: <>
+ 1428 		read_array: CFArrayRef (), <./EAP8021X.fproj/EAPTLSUtil.c 1846>
+ 1429 			my_CFPropertyListCreateFromFile: 1166
+ 1430 			isA_CFArray: <>
+ 1431 			CFRelease: <>
+ 1432 		EAPCFDataArrayCreateSecCertificateArray: CFArrayRef (), <./EAP8021X.fproj/EAPCertificateUtil.c 518>
+ 1433 			CFArrayGetCount: <>
+ 1434 			CFArrayCreateMutable: <>
+ 1435 			isA_CFData: <>
+ 1436 			CFArrayGetValueAtIndex: <>
+ 1437 			CFArrayAppendValue: <>
+ 1438 			my_CFRelease: 35
+ 1439 		EAPTLSCreateSecTrust: SecTrustRef (), <./EAP8021X.fproj/EAPTLSUtil.c 1173>
+ 1440 			CFDictionaryCreateMutableCopy: <>
+ 1441 			CFDictionarySetValue: <>
+ 1442 			CFRelease: <>
+ 1443 		SecTrustEvaluate: <>
+ 1444 		SCPrint: <>
+ 1445 		server_name_matches_server_names: bool (), <./EAP8021X.fproj/EAPTLSUtil.c 1361>
+ 1446 			CFArrayGetCount: <>
+ 1447 			CFArrayGetValueAtIndex: <>
+ 1448 			CFEqual: <>
+ 1449 			CFStringHasPrefix: <>
+ 1450 			CFSTR: <>
+ 1451 			CFStringCreateMutableCopy: <>
+ 1452 			CFStringDelete: <>
+ 1453 			CFRangeMake: <>
+ 1454 			CFStringHasSuffix: <>
+ 1455 			CFRelease: <>
+ 1456 		file_create_certificate: 1372
+ 1457 		EAPTLSVerifyServerCertificateChain: EAPClientStatus (), <./EAP8021X.fproj/EAPTLSUtil.c 1452>
+ 1458 			SecTrustEvaluate: <>
+ 1459 			syslog: <>
+ 1460 			EAPSecurityErrorString: 1124
+ 1461 			copy_user_trust_proceed_certs: CFArrayRef (), <./EAP8021X.fproj/EAPTLSUtil.c 726>
+ 1462 				CFDictionaryGetValue: <>
+ 1463 				EAPCFDataArrayCreateSecCertificateArray: 1432
+ 1464 			CFEqual: <>
+ 1465 			my_CFDictionaryGetBooleanValue: Boolean (), <./EAP8021X.fproj/myCFUtil.c 224>
+ 1466 				CFDictionaryGetValue: <>
+ 1467 				isA_CFBoolean: <>
+ 1468 				CFBooleanGetValue: <>
+ 1469 			CFDictionaryGetValue: <>
+ 1470 			EAPTLSSecTrustSaveExceptionsBinding: bool (), <./EAP8021X.fproj/EAPTLSUtil.c 931>
+ 1471 				SecTrustCopyExceptions: <>
+ 1472 				syslog: <>
+ 1473 				EAPTLSTrustExceptionsSave: void (), <./EAP8021X.fproj/EAPTLSUtil.c 833>
+ 1474 					exceptions_change_check: 1395
+ 1475 					CFPreferencesCopyValue: <>
+ 1476 					isA_CFDictionary: <>
+ 1477 					CFRelease: <>
+ 1478 					CFDictionaryGetValue: <>
+ 1479 					isA_CFData: <>
+ 1480 					CFEqual: <>
+ 1481 					CFDictionaryCreate: <>
+ 1482 					CFDictionaryCreateMutableCopy: <>
+ 1483 					CFDictionarySetValue: <>
+ 1484 					CFPreferencesSetValue: <>
+ 1485 					CFPreferencesSynchronize: <>
+ 1486 					exceptions_change_notify: 1420
+ 1487 					my_CFRelease: 35
+ 1488 				CFRelease: <>
+ 1489 			my_CFRelease: 35
+ 1490 			CFArrayGetCount: <>
+ 1491 			copy_cert_list: CFArrayRef (), <./EAP8021X.fproj/EAPTLSUtil.c 711>
+ 1492 				CFDictionaryGetValue: <>
+ 1493 				isA_CFArray: <>
+ 1494 				EAPCFDataArrayCreateSecCertificateArray: 1432
+ 1495 			get_trusted_server_names: CFArrayRef (), <./EAP8021X.fproj/EAPTLSUtil.c 739>
+ 1496 				CFDictionaryGetValue: <>
+ 1497 				CFSTR: <>
+ 1498 				isA_CFArray: <>
+ 1499 				syslog: <>
+ 1500 				CFArrayGetCount: <>
+ 1501 				CFArrayGetValueAtIndex: <>
+ 1502 				isA_CFString: <>
+ 1503 			EAPSecPolicyCopy: 1204
+ 1504 			SecTrustCreateWithCertificates: <>
+ 1505 			SecTrustSetAnchorCertificates: <>
+ 1506 			SecKeychainSetPreferenceDomain: <>
+ 1507 			verify_server_certs: bool (), <./EAP8021X.fproj/EAPTLSUtil.c 1430>
+ 1508 				CFArrayGetValueAtIndex: <>
+ 1509 				server_cert_matches_server_names: bool (), <./EAP8021X.fproj/EAPTLSUtil.c 1396>
+ 1510 					EAPSecCertificateCopyAttributesDictionary: 1070
+ 1511 					CFDictionaryGetValue: <>
+ 1512 					server_name_matches_server_names: 1445
+ 1513 					my_CFRelease: 35
+ 1514 				server_cert_chain_is_trusted: bool (), <./EAP8021X.fproj/EAPTLSUtil.c 1326>
+ 1515 					EAPSecTrustCopyCertificateChain: CFArrayRef (), <./EAP8021X.fproj/EAPTLSUtil.c 1304>
+ 1516 						SecTrustGetCertificateCount: <>
+ 1517 						fprintf: <>
+ 1518 						CFArrayCreateMutable: <>
+ 1519 						SecTrustGetCertificateAtIndex: <>
+ 1520 						CFArrayAppendValue: <>
+ 1521 					CFArrayGetCount: <>
+ 1522 					syslog: <>
+ 1523 					CFArrayGetValueAtIndex: <>
+ 1524 					cert_list_contains_cert: bool (), <./EAP8021X.fproj/EAPTLSUtil.c 1286>
+ 1525 						CFArrayGetCount: <>
+ 1526 						CFArrayGetValueAtIndex: <>
+ 1527 						CFEqual: <>
+ 1528 					my_CFRelease: 35
+ 1529 		LinkAddresses_create: LinkAddressesRef (), <./EAP8021X.fproj/LinkAddresses.c 139>
+ 1530 			sysctl: <>
+ 1531 			fprintf: <>
+ 1532 			strerror: <>
+ 1533 			malloc: <>
+ 1534 			realloc: <>
+ 1535 			bcopy: <>
+ 1536 			free: <>
+ 1537 		LinkAddresses_print: void (), <./EAP8021X.fproj/LinkAddresses.c 75>
+ 1538 			printf: <>
+ 1539 			sockaddr_dl_print: void (), <./EAP8021X.fproj/LinkAddresses.c 59>
+ 1540 				printf: <>
+ 1541 		LinkAddresses_free: void (), <./EAP8021X.fproj/LinkAddresses.c 119>
+ 1542 			free: <>
+ 1543 		InterestNotificationCreate: InterestNotificationRef (), <./eapolclient.tproj/InterestNotification.c 165>
+ 1544 			malloc: <>
+ 1545 			InterestNotificationInit: void (), <./eapolclient.tproj/InterestNotification.c 68>
+ 1546 				bzero: <>
+ 1547 			InterestNotificationStart: boolean_t (), <./eapolclient.tproj/InterestNotification.c 92>
+ 1548 				IOBSDNameMatching: <>
+ 1549 				IOServiceGetMatchingServices: <>
+ 1550 				fprintf: <>
+ 1551 				IONotificationPortCreate: <>
+ 1552 				IOIteratorNext: <>
+ 1553 				IOServiceAddInterestNotification: <>
+ 1554 				InterestNotificationHandleMessage: void (), <./eapolclient.tproj/InterestNotification.c 52>
+ 1555 				CFRunLoopAddSource: <>
+ 1556 				CFRunLoopGetCurrent: <>
+ 1557 				IONotificationPortGetRunLoopSource: <>
+ 1558 				IOObjectRelease: <>
+ 1559 				IONotificationPortDestroy: <>
+ 1560 			free: <>
+ 1561 		change_callback: void (), <./eapolclient.tproj/InterestNotification.c 187>
+ 1562 			printf: <>
+ 1563 			InterestNotificationRelease: void (), <./eapolclient.tproj/InterestNotification.c 75>
+ 1564 				IOObjectRelease: <>
+ 1565 				CFRunLoopRemoveSource: <>
+ 1566 				CFRunLoopGetCurrent: <>
+ 1567 				IONotificationPortGetRunLoopSource: <>
+ 1568 				IONotificationPortDestroy: <>
+ 1569 				InterestNotificationInit: 1545
+ 1570 				free: <>
+ 1571 		KeyValueList_create: KeyValueList * (), <./eapolclient.tproj/KeyValue.c 115>
+ 1572 			malloc: <>
+ 1573 			bcopy: <>
+ 1574 			strcspn: <>
+ 1575 			realloc: <>
+ 1576 			free: <>
+ 1577 		KeyValueList_print: void (), <./eapolclient.tproj/KeyValue.c 54>
+ 1578 			printf: <>
+ 1579 		KeyValueList_free: void (), <./eapolclient.tproj/KeyValue.c 92>
+ 1580 			free: <>
+ 1581 		getopt: <>
+ 1582 		usage: void (), <./eapolclient.tproj/main.c 192>
+ 1583 			fprintf: <>
+ 1584 			exit: <>
+ 1585 		strtoul: <>
+ 1586 		getuid: <>
+ 1587 		getgid: <>
+ 1588 		LinkAddresses_lookup: struct sockaddr_dl (), <./EAP8021X.fproj/LinkAddresses.c 87>
+ 1589 		open_prefs: SCPreferencesRef (), <./eapolclient.tproj/main.c 209>
+ 1590 			SCPreferencesCreate: <>
+ 1591 			CFSTR: <>
+ 1592 			my_log: 269
+ 1593 		setup_log_file: FILE * (), <./eapolclient.tproj/main.c 145>
+ 1594 			SCPreferencesGetValue: <>
+ 1595 			CFSTR: <>
+ 1596 			isA_CFNumber: <>
+ 1597 			CFNumberGetValue: <>
+ 1598 			my_log: 269
+ 1599 			snprintf: <>
+ 1600 			fopen: <>
+ 1601 			strerror: <>
+ 1602 			fflush: <>
+ 1603 			fileno: <>
+ 1604 			dup2: <>
+ 1605 		eapolclient_log_set: void (), <./eapolclient.tproj/mylog.c 98>
+ 1606 		eapolclient_log: void (), <./eapolclient.tproj/mylog.c 139>
+ 1607 			fflush: <>
+ 1608 			eapolclient_should_log: bool (), <./eapolclient.tproj/mylog.c 111>
+ 1609 			va_start: <>
+ 1610 			fprint_time: void (), <./eapolclient.tproj/mylog.c 62>
+ 1611 				gettimeofday: <>
+ 1612 				localtime_r: <>
+ 1613 				fprintf: <>
+ 1614 			vfprintf: <>
+ 1615 			va_end: <>
+ 1616 		getpid: <>
+ 1617 		EAPOLSocketSetGlobals: void (), <./eapolclient.tproj/EAPOLSocket.c 341>
+ 1618 			SCPreferencesGetValue: <>
+ 1619 			isA_CFNumber: <>
+ 1620 			CFNumberGetValue: <>
+ 1621 			my_log: 269
+ 1622 			isA_CFDictionary: <>
+ 1623 			S_get_plist_boolean: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 269>
+ 1624 				isA_CFBoolean: <>
+ 1625 				CFDictionaryGetValue: <>
+ 1626 				CFBooleanGetValue: <>
+ 1627 				eapolclient_should_log: 1608
+ 1628 				eapolclient_log_file: FILE * (), <./eapolclient.tproj/mylog.c 174>
+ 1629 				SCPrint: <>
+ 1630 				CFSTR: <>
+ 1631 				fflush: <>
+ 1632 			get_plist_int: __private_extern__ int (), <./eapolclient.tproj/EAPOLSocket.c 312>
+ 1633 				S_get_plist_int_log: int (), <./eapolclient.tproj/EAPOLSocket.c 290>
+ 1634 					isA_CFNumber: <>
+ 1635 					CFDictionaryGetValue: <>
+ 1636 					CFNumberGetValue: <>
+ 1637 					eapolclient_should_log: 1608
+ 1638 					eapolclient_log_file: 1628
+ 1639 					SCPrint: <>
+ 1640 					CFSTR: <>
+ 1641 					fflush: <>
+ 1642 			S_get_plist_int_log: 1633
+ 1643 			eapolclient_log: 1606
+ 1644 		Supplicant_set_globals: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 3553>
+ 1645 			SCPreferencesGetValue: <>
+ 1646 			isA_CFDictionary: <>
+ 1647 			get_plist_int: 1632
+ 1648 		EAPOLSocketSourceCreate: EAPOLSocketSourceRef (), <./eapolclient.tproj/EAPOLSocket.c 1373>
+ 1649 			wireless_bind: <>
+ 1650 			fd_is_socket: bool (), <./eapolclient.tproj/EAPOLSocket.c 1360>
+ 1651 				fstat: <>
+ 1652 				S_ISSOCK: <>
+ 1653 			eapol_socket: 430
+ 1654 			my_log: 269
+ 1655 			FDHandler_create: FDHandler * (), <./eapolclient.tproj/FDHandler.c 76>
+ 1656 				malloc: <>
+ 1657 				bzero: <>
+ 1658 				CFSocketCreateWithNative: <>
+ 1659 				FDHandler_callback: void (), <./eapolclient.tproj/FDHandler.c 64>
+ 1660 				CFSocketCreateRunLoopSource: <>
+ 1661 				CFRunLoopAddSource: <>
+ 1662 				CFRunLoopGetCurrent: <>
+ 1663 			malloc: <>
+ 1664 			bzero: <>
+ 1665 			CFRunLoopObserverCreate: <>
+ 1666 			EAPOLSocketSourceObserver: void (), <./eapolclient.tproj/EAPOLSocket.c 1347>
+ 1667 				EAPOLSocketSourceRemovePreauthSockets: void (), <./eapolclient.tproj/EAPOLSocket.c 1318>
+ 1668 					TAILQ_FOREACH: <>
+ 1669 					eapolclient_should_log: 1608
+ 1670 					eapolclient_log: 1606
+ 1671 					ether_ntoa: <>
+ 1672 					Supplicant_free: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 3419>
+ 1673 						AlertDialogue_free: void (), <./eapolclient.tproj/Dialogue.c 956>
+ 1674 							LIST_REMOVE: <>
+ 1675 							CFRunLoopSourceInvalidate: <>
+ 1676 							my_CFRelease: 35
+ 1677 							CFUserNotificationCancel: <>
+ 1678 							bzero: <>
+ 1679 							free: <>
+ 1680 						CredentialsDialogue_free: void (), <./eapolclient.tproj/Dialogue.c 548>
+ 1681 							LIST_REMOVE: <>
+ 1682 							CFRunLoopSourceInvalidate: <>
+ 1683 							my_CFRelease: 35
+ 1684 							CFUserNotificationCancel: <>
+ 1685 							bzero: <>
+ 1686 							free: <>
+ 1687 						TrustDialogue_free: void (), <./eapolclient.tproj/Dialogue.c 785>
+ 1688 							LIST_REMOVE: <>
+ 1689 							kill: <>
+ 1690 							my_log: 269
+ 1691 							close: <>
+ 1692 							my_CFRelease: 35
+ 1693 							free: <>
+ 1694 						Timer_free: void (), <./eapolclient.tproj/Timer.c 91>
+ 1695 							Timer_cancel: void (), <./eapolclient.tproj/Timer.c 146>
+ 1696 								my_log: 269
+ 1697 								CFRunLoopTimerInvalidate: <>
+ 1698 								my_CFRelease: 35
+ 1699 							free: <>
+ 1700 						my_CFRelease: 35
+ 1701 						CFMachPortInvalidate: <>
+ 1702 						notify_cancel: <>
+ 1703 						free: <>
+ 1704 						EAPAcceptTypesFree: void (), <./eapolclient.tproj/Supplicant.c 540>
+ 1705 							free: <>
+ 1706 							bzero: <>
+ 1707 						free_last_packet: void (), <./eapolclient.tproj/Supplicant.c 755>
+ 1708 							free: <>
+ 1709 							bzero: <>
+ 1710 						eap_client_free: void (), <./eapolclient.tproj/Supplicant.c 372>
+ 1711 							EAPClientModulePluginFree: void (), <./EAP8021X.fproj/EAPClientModule.c 270>
+ 1712 								free: <>
+ 1713 							eap_client_free_properties: void (), <./eapolclient.tproj/Supplicant.c 298>
+ 1714 								my_CFRelease: 35
+ 1715 							bzero: <>
+ 1716 							my_CFRelease: 35
+ 1717 					EAPOLSocketFree: void (), <./eapolclient.tproj/EAPOLSocket.c 493>
+ 1718 						TAILQ_REMOVE: <>
+ 1719 						EAPOLSocketSetEAPTxPacket: void (), <./eapolclient.tproj/EAPOLSocket.c 423>
+ 1720 							free: <>
+ 1721 							malloc: <>
+ 1722 							bcopy: <>
+ 1723 						free: <>
+ 1724 			Timer_create: TimerRef (), <./eapolclient.tproj/Timer.c 79>
+ 1725 				malloc: <>
+ 1726 				bzero: <>
+ 1727 			link_event_register: SCDynamicStoreRef (), <./eapolclient.tproj/EAPOLSocket.c 860>
+ 1728 				bzero: <>
+ 1729 				SCDynamicStoreCreate: <>
+ 1730 				CFSTR: <>
+ 1731 				my_log: 269
+ 1732 				SCErrorString: <>
+ 1733 				SCError: <>
+ 1734 				CFArrayCreateMutable: <>
+ 1735 				SCDynamicStoreKeyCreate: <>
+ 1736 				CFArrayAppendValue: <>
+ 1737 				my_CFRelease: 35
+ 1738 				SCDynamicStoreSetNotificationKeys: <>
+ 1739 				SCDynamicStoreCreateRunLoopSource: <>
+ 1740 				CFRunLoopAddSource: <>
+ 1741 				CFRunLoopGetCurrent: <>
+ 1742 			EAPOLSocketSourceLinkStatusChanged: void (), <./eapolclient.tproj/EAPOLSocket.c 1036>
+ 1743 				is_link_active: bool (), <./eapolclient.tproj/EAPOLSocket.c 1007>
+ 1744 					socket: <>
+ 1745 					perror: <>
+ 1746 					bzero: <>
+ 1747 					strlcpy: <>
+ 1748 					ioctl: <>
+ 1749 					close: <>
+ 1750 				eapolclient_log: 1606
+ 1751 				EAPOLSocketSourceUpdateWirelessInfo: bool (), <./eapolclient.tproj/EAPOLSocket.c 1516>
+ 1752 					wireless_ap_mac: <>
+ 1753 					my_log: 269
+ 1754 					EAPOLSocketSourceUnscheduleHandshakeNotification: void (), <./eapolclient.tproj/EAPOLSocket.c 1911>
+ 1755 						EAPOLSocketSourceReleaseHandshakeNotification: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 1852>
+ 1756 							InterestNotificationRelease: 1563
+ 1757 						eapolclient_log: 1606
+ 1758 					eapolclient_log: 1606
+ 1759 					my_CFRelease: 35
+ 1760 					Timer_cancel: 1695
+ 1761 					wireless_scan_cancel: <>
+ 1762 					bcmp: <>
+ 1763 					EAPOLSocketSourceRemoveSocketWithBSSID: void (), <./eapolclient.tproj/EAPOLSocket.c 1496>
+ 1764 						EAPOLSocketSourceLookupPreauthSocket: EAPOLSocketRef (), <./eapolclient.tproj/EAPOLSocket.c 982>
+ 1765 							TAILQ_FOREACH: <>
+ 1766 							bcmp: <>
+ 1767 						eapolclient_should_log: 1608
+ 1768 						eapolclient_log: 1606
+ 1769 						ether_ntoa: <>
+ 1770 						Supplicant_free: 1672
+ 1771 						EAPOLSocketFree: 1717
+ 1772 					EAPOLSocketSourceScheduleScan: void (), <./eapolclient.tproj/EAPOLSocket.c 1835>
+ 1773 						Timer_set_relative: int (), <./eapolclient.tproj/Timer.c 105>
+ 1774 							Timer_cancel: 1695
+ 1775 							CFAbsoluteTimeGetCurrent: <>
+ 1776 							CFRunLoopTimerCreate: <>
+ 1777 							Timer_process: void (), <./eapolclient.tproj/Timer.c 67>
+ 1778 							my_log: 269
+ 1779 							CFRunLoopAddTimer: <>
+ 1780 							CFRunLoopGetCurrent: <>
+ 1781 						EAPOLSocketSourceInitiateScan: void (), <./eapolclient.tproj/EAPOLSocket.c 1814>
+ 1782 							wireless_scan: <>
+ 1783 							EAPOLSocketSourceScanCallback: void (), <./eapolclient.tproj/EAPOLSocket.c 1744>
+ 1784 								eapolclient_log: 1606
+ 1785 								my_log: 269
+ 1786 								eapolclient_should_log: 1608
+ 1787 								S_log_bssid_list: void (), <./eapolclient.tproj/EAPOLSocket.c 1721>
+ 1788 									eapolclient_log_file: 1628
+ 1789 									CFArrayGetCount: <>
+ 1790 									eapolclient_log: 1606
+ 1791 									CFArrayGetValueAtIndex: <>
+ 1792 									CFDataGetBytePtr: <>
+ 1793 									fprintf: <>
+ 1794 									ether_ntoa: <>
+ 1795 									fflush: <>
+ 1796 								CFArrayGetCount: <>
+ 1797 								CFArrayGetValueAtIndex: <>
+ 1798 								CFDataGetBytePtr: <>
+ 1799 								bcmp: <>
+ 1800 								EAPOLSocketSourceLookupPreauthSocket: 1764
+ 1801 								EAPOLSocketSourceCreateSocket: EAPOLSocketRef (), <./eapolclient.tproj/EAPOLSocket.c 1626>
+ 1802 									malloc: <>
+ 1803 									my_log: 269
+ 1804 									bzero: <>
+ 1805 									TAILQ_INSERT_TAIL: <>
+ 1806 								Supplicant_create_with_supplicant: PRIVATE_EXTERN SupplicantRef (), <./eapolclient.tproj/Supplicant.c 3375>
+ 1807 									Supplicant_create: PRIVATE_EXTERN SupplicantRef (), <./eapolclient.tproj/Supplicant.c 3344>
+ 1808 										Timer_create: 1724
+ 1809 										my_log: 269
+ 1810 										malloc: <>
+ 1811 										bzero: <>
+ 1812 										free: <>
+ 1813 										Timer_free: 1694
+ 1814 									CFRetain: <>
+ 1815 									CFDictionaryCreateMutableCopy: <>
+ 1816 									strdup: <>
+ 1817 									EAPAcceptTypesCopy: void (), <./eapolclient.tproj/Supplicant.c 531>
+ 1818 										malloc: <>
+ 1819 										bcopy: <>
+ 1820 								ether_ntoa: <>
+ 1821 								EAPOLSocketFree: 1717
+ 1822 								Supplicant_start: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 2496>
+ 1823 									EAPOLSocketIsLinkActive: bool (), <./eapolclient.tproj/EAPOLSocket.c 664>
+ 1824 									Supplicant_disconnected: void (), <./eapolclient.tproj/Supplicant.c 1147>
+ 1825 										Supplicant_cancel_pending_events: void (), <./eapolclient.tproj/Supplicant.c 785>
+ 1826 											EAPOLSocketDisableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 580>
+ 1827 											Timer_cancel: 1695
+ 1828 										Supplicant_report_status: void (), <./eapolclient.tproj/Supplicant.c 2237>
+ 1829 											CFDictionaryCreateMutable: <>
+ 1830 											EAPOLSocketGetMode: EAPOLControlMode (), <./eapolclient.tproj/EAPOLSocket.c 777>
+ 1831 											dictInsertMode: void (), <./eapolclient.tproj/Supplicant.c 1870>
+ 1832 												dictInsertNumber: void (), <./eapolclient.tproj/Supplicant.c 1771>
+ 1833 													CFNumberCreate: <>
+ 1834 													CFDictionarySetValue: <>
+ 1835 													my_CFRelease: 35
+ 1836 												CFDictionarySetValue: <>
+ 1837 											CFDictionarySetValue: <>
+ 1838 											dictInsertSupplicantState: void (), <./eapolclient.tproj/Supplicant.c 1805>
+ 1839 												dictInsertNumber: 1832
+ 1840 											dictInsertAuthenticatorMACAddress: void (), <./eapolclient.tproj/Supplicant.c 2122>
+ 1841 												EAPOLSocketGetAuthenticatorMACAddress: const struct ether_addr (), <./eapolclient.tproj/EAPOLSocket.c 558>
+ 1842 												CFDataCreate: <>
+ 1843 												CFDictionarySetValue: <>
+ 1844 												CFRelease: <>
+ 1845 											dictInsertNumber: 1832
+ 1846 											getuid: <>
+ 1847 											dictInsertClientStatus: void (), <./eapolclient.tproj/Supplicant.c 1812>
+ 1848 												dictInsertNumber: 1832
+ 1849 											dictInsertEAPTypeInfo: void (), <./eapolclient.tproj/Supplicant.c 1782>
+ 1850 												CFStringCreateWithCString: <>
+ 1851 												CFDictionarySetValue: <>
+ 1852 												my_CFRelease: 35
+ 1853 												dictInsertNumber: 1832
+ 1854 											dictInsertRequiredProperties: void (), <./eapolclient.tproj/Supplicant.c 1827>
+ 1855 												CFArrayCreateMutable: <>
+ 1856 												CFArrayAppendValue: <>
+ 1857 												CFDictionarySetValue: <>
+ 1858 												my_CFRelease: 35
+ 1859 											my_CFArrayContainsValue: Boolean (), <./eapolclient.tproj/Supplicant.c 2112>
+ 1860 												CFArrayContainsValue: <>
+ 1861 												CFRangeMake: <>
+ 1862 												CFArrayGetCount: <>
+ 1863 											dictInsertPublishedProperties: void (), <./eapolclient.tproj/Supplicant.c 1848>
+ 1864 												CFDictionarySetValue: <>
+ 1865 											dictInsertIdentityAttributes: void (), <./eapolclient.tproj/Supplicant.c 1859>
+ 1866 												CFDictionarySetValue: <>
+ 1867 											dictInsertGeneration: void (), <./eapolclient.tproj/Supplicant.c 1821>
+ 1868 												dictInsertNumber: 1832
+ 1869 											CFDateCreate: <>
+ 1870 											CFAbsoluteTimeGetCurrent: <>
+ 1871 											my_CFRelease: 35
+ 1872 											eapolclient_should_log: 1608
+ 1873 											eapolclient_log: 1606
+ 1874 											EAPOLSocketName: const char * (), <./eapolclient.tproj/EAPOLSocket.c 473>
+ 1875 												EAPOLSocketIsMain: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 456>
+ 1876 												ether_ntoa: <>
+ 1877 											SupplicantStateString: <>
+ 1878 											eapolclient_log_plist: void (), <./eapolclient.tproj/mylog.c 159>
+ 1879 												fflush: <>
+ 1880 												eapolclient_should_log: 1608
+ 1881 												fwrite_plist: void (), <./eapolclient.tproj/mylog.c 125>
+ 1882 													CFPropertyListCreateXMLData: <>
+ 1883 													fwrite: <>
+ 1884 													CFDataGetBytePtr: <>
+ 1885 													CFDataGetLength: <>
+ 1886 													CFRelease: <>
+ 1887 											EAPOLSocketReportStatus: void (), <./eapolclient.tproj/EAPOLSocket.c 670>
+ 1888 												Supplicant_get_state: PRIVATE_EXTERN SupplicantState (), <./eapolclient.tproj/Supplicant.c 3478>
+ 1889 												EAPOLSocketSourceUnscheduleHandshakeNotification: 1754
+ 1890 												EAPOLSocketSourceForceRenew: void (), <./eapolclient.tproj/EAPOLSocket.c 908>
+ 1891 													eapolclient_log: 1606
+ 1892 													EAPOLClientForceRenew: int (), <./EAP8021X.fproj/EAPOLClient.c 337>
+ 1893 														eapolcontroller_client_force_renew: kern_return_t (), <./EAPOLController.bproj/server.c 466>
+ 1894 															ControllerClientForceRenew: int (), <./EAPOLController.bproj/controller.c 1641>
+ 1895 																eapolClientLookupSession: eapolClientRef (), <./EAPOLController.bproj/controller.c 350>
+ 1896 																	LIST_FOREACH: <>
+ 1897 																	CFMachPortGetPort: <>
+ 1898 																eapolClientForceRenew: void (), <./EAPOLController.bproj/controller.c 516>
+ 1899 																	SCDynamicStoreNotifyValue: <>
+ 1900 																	eapolClientForceRenewKey: CFStringRef (), <./EAPOLController.bproj/controller.c 503>
+ 1901 																		SCDynamicStoreKeyCreateNetworkInterfaceEntity: <>
+ 1902 														mach_error: <>
+ 1903 												EAPOLSocketIsWireless: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 487>
+ 1904 												usleep: <>
+ 1905 												EAPOLClientReportStatus: int (), <./EAP8021X.fproj/EAPOLClient.c 306>
+ 1906 													isA_CFDictionary: <>
+ 1907 													CFPropertyListCreateXMLData: <>
+ 1908 													eapolcontroller_client_report_status: kern_return_t (), <./EAPOLController.bproj/server.c 439>
+ 1909 														my_CFPropertyListCreateWithBytePtrAndLength: 400
+ 1910 														vm_deallocate: <>
+ 1911 														mach_task_self: <>
+ 1912 														isA_CFDictionary: <>
+ 1913 														ControllerClientReportStatus: int (), <./EAPOLController.bproj/controller.c 1624>
+ 1914 															eapolClientLookupSession: 1895
+ 1915 															eapolClientPublishStatus: void (), <./EAPOLController.bproj/controller.c 490>
+ 1916 																CFRetain: <>
+ 1917 																my_CFRelease: 35
+ 1918 																SCDynamicStoreNotifyValue: <>
+ 1919 																eapolClientNotificationKey: 284
+ 1920 														my_CFRelease: 35
+ 1921 													CFDataGetBytePtr: <>
+ 1922 													CFDataGetLength: <>
+ 1923 													mach_error: <>
+ 1924 													my_CFRelease: 35
+ 1925 												my_log: 269
+ 1926 												strerror: <>
+ 1927 												EAPOLSocketSourceScheduleScan: 1772
+ 1928 												EAPOLSocketSourceCancelScan: void (), <./eapolclient.tproj/EAPOLSocket.c 1826>
+ 1929 													Timer_cancel: 1695
+ 1930 													wireless_scan_cancel: <>
+ 1931 												EAPOLSocketSourceMarkPreauthSocketsForRemoval: void (), <./eapolclient.tproj/EAPOLSocket.c 996>
+ 1932 													TAILQ_FOREACH: <>
+ 1933 													EAPOLSocketMarkForRemoval: void (), <./eapolclient.tproj/EAPOLSocket.c 448>
+ 1934 												ether_ntoa: <>
+ 1935 												eapolclient_log: 1606
+ 1936 												EAPOLSocketMarkForRemoval: 1933
+ 1937 												eapolclient_should_log: 1608
+ 1938 											EAPOLSocketGetSSID: CFStringRef (), <./eapolclient.tproj/EAPOLSocket.c 536>
+ 1939 											EAPAcceptTypesIsSupportedType: bool (), <./eapolclient.tproj/Supplicant.c 652>
+ 1940 												EAPAcceptTypesIndexOfType: int (), <./eapolclient.tproj/Supplicant.c 636>
+ 1941 											EAPSecIdentityListCreate: 1119
+ 1942 											my_log: 269
+ 1943 											CFDictionaryGetValue: <>
+ 1944 											CFRelease: <>
+ 1945 											CredentialsDialogue_create: CredentialsDialogueRef (), <./eapolclient.tproj/Dialogue.c 500>
+ 1946 												get_bundle: CFBundleRef (), <./eapolclient.tproj/Dialogue.c 86>
+ 1947 													CFURLCreateWithFileSystemPath: <>
+ 1948 													CFSTR: <>
+ 1949 													CFBundleCreate: <>
+ 1950 													CFRelease: <>
+ 1951 												my_log: 269
+ 1952 												malloc: <>
+ 1953 												bzero: <>
+ 1954 												CredentialsDialogueShow: CFUserNotificationRef (), <./eapolclient.tproj/Dialogue.c 329>
+ 1955 													CFDictionaryCreateMutable: <>
+ 1956 													CFBundleCopyBundleURL: <>
+ 1957 													CFDictionarySetValue: <>
+ 1958 													CFRelease: <>
+ 1959 													CFDictionaryGetValue: <>
+ 1960 													CFSTR: <>
+ 1961 													copy_icon_url: CFURLRef (), <./eapolclient.tproj/Dialogue.c 295>
+ 1962 														CFURLCreateWithFileSystemPath: <>
+ 1963 														CFSTR: <>
+ 1964 														CFBundleCreate: <>
+ 1965 														CFBundleCopyResourceURL: <>
+ 1966 														CFRelease: <>
+ 1967 													CFDictionaryAddValue: <>
+ 1968 													isA_CFType: <>
+ 1969 													CFNullGetTypeID: <>
+ 1970 													CFArrayCreateMutable: <>
+ 1971 													CFArrayAppendValue: <>
+ 1972 													CFUserNotificationSecureTextField: <>
+ 1973 													CFArrayGetCount: <>
+ 1974 													my_CFRelease: 35
+ 1975 													CFBooleanGetValue: <>
+ 1976 													CFUserNotificationCheckBoxChecked: <>
+ 1977 													copy_certificate_labels: CFArrayRef (), <./eapolclient.tproj/Dialogue.c 143>
+ 1978 														CFArrayGetCount: <>
+ 1979 														CFArrayCreateMutable: <>
+ 1980 														CFArrayAppendValue: <>
+ 1981 														CFArrayGetValueAtIndex: <>
+ 1982 														SecIdentityCopyCertificate: <>
+ 1983 														SecCertificateCopyShortDescription: <>
+ 1984 														CFRelease: <>
+ 1985 														CFRetain: <>
+ 1986 														CFArrayContainsValue: <>
+ 1987 														CFStringCreateWithFormat: <>
+ 1988 														CFSTR: <>
+ 1989 													copy_localized_string: CFStringRef (), <./eapolclient.tproj/Dialogue.c 105>
+ 1990 														CFBundleCopyLocalizedString: <>
+ 1991 														CFStringCreateWithFormat: <>
+ 1992 														CFRelease: <>
+ 1993 														CFRetain: <>
+ 1994 													CFUserNotificationCreate: <>
+ 1995 													my_log: 269
+ 1996 												CFUserNotificationCreateRunLoopSource: <>
+ 1997 												CredentialsDialogue_response: void (), <./eapolclient.tproj/Dialogue.c 213>
+ 1998 													CredentialsDialogue_find: CredentialsDialogueRef (), <./eapolclient.tproj/Dialogue.c 195>
+ 1999 														LIST_FOREACH: <>
+ 2000 													bzero: <>
+ 2001 													S_CFUserNotificationResponse: __inline__ CFOptionFlags (), <./eapolclient.tproj/Dialogue.c 207>
+ 2002 													CFUserNotificationGetResponseValue: <>
+ 2003 													CFStringGetLength: <>
+ 2004 													CFRetain: <>
+ 2005 													CFUserNotificationCheckBoxChecked: <>
+ 2006 													CFUserNotificationPopUpSelection: <>
+ 2007 													CFArrayGetValueAtIndex: <>
+ 2008 													my_CFRelease: 35
+ 2009 													CFRunLoopSourceInvalidate: <>
+ 2010 												CFRunLoopAddSource: <>
+ 2011 												CFRunLoopGetCurrent: <>
+ 2012 												LIST_INSERT_HEAD: <>
+ 2013 												free: <>
+ 2014 												my_CFRelease: 35
+ 2015 											credentials_callback: void (), <./eapolclient.tproj/Supplicant.c 2004>
+ 2016 												CredentialsDialogue_free: 1680
+ 2017 												my_log: 269
+ 2018 												EAPOLSocketIfName: const char * (), <./eapolclient.tproj/EAPOLSocket.c 462>
+ 2019 												EAPOLSocketStopClient: void (), <./eapolclient.tproj/EAPOLSocket.c 783>
+ 2020 													EAPOLControlStop: 256
+ 2021 													EAPOLSocketIfName: 2018
+ 2022 													EAPOLClientUserCancelled: int (), <./EAP8021X.fproj/EAPOLClient.c 354>
+ 2023 														eapolcontroller_client_user_cancelled: kern_return_t (), <./EAPOLController.bproj/server.c 281>
+ 2024 															ControllerClientUserCancelled: int (), <./EAPOLController.bproj/controller.c 1658>
+ 2025 																eapolClientLookupSession: 1895
+ 2026 																eapolClientStop: 281
+ 2027 														mach_error: <>
+ 2028 													EAPOLSocketIsWireless: 1903
+ 2029 													wireless_disassociate: <>
+ 2030 												create_ui_config_dict: void (), <./eapolclient.tproj/Supplicant.c 1915>
+ 2031 													CFDictionaryCreateMutable: <>
+ 2032 												CFDictionarySetValue: <>
+ 2033 												EAPSecIdentityHandleCreate: 1128
+ 2034 												CFRelease: <>
+ 2035 												CFDictionaryCreateCopy: <>
+ 2036 												Supplicant_update_configuration: PRIVATE_EXTERN bool (), <./eapolclient.tproj/Supplicant.c 3024>
+ 2037 													my_CFRelease: 35
+ 2038 													CFDictionaryGetValue: <>
+ 2039 													isA_CFString: <>
+ 2040 													CFRetain: <>
+ 2041 													isA_CFDictionary: <>
+ 2042 													my_log: 269
+ 2043 													EAPOLClientConfigurationCreate: 140
+ 2044 													EAPOLClientItemIDCreateWithDictionary: EAPOLClientItemIDRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 1317>
+ 2045 														isA_CFDictionary: <>
+ 2046 														CFDictionaryGetValue: <>
+ 2047 														isA_CFString: <>
+ 2048 														EAPOLClientConfigurationGetProfileWithID: 214
+ 2049 														EAPOLClientItemIDCreateWithProfile: 216
+ 2050 														EAPOLClientItemIDCreateWithProfileID: EAPOLClientItemIDRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 726>
+ 2051 															CFGetAllocator: <>
+ 2052 															CFRetain: <>
+ 2053 														isA_CFData: <>
+ 2054 														EAPOLClientConfigurationGetProfileWithWLANSSID: 178
+ 2055 														EAPOLClientItemIDCreateWithWLANSSID: EAPOLClientItemIDRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 746>
+ 2056 															CFGetAllocator: <>
+ 2057 															CFRetain: <>
+ 2058 														EAPOLClientItemIDCreateDefault: 219
+ 2059 													EAPOLClientItemIDGetProfile: 235
+ 2060 													EAPOLClientConfigurationGetDefaultAuthenticationProperties: CFDictionaryRef (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 1586>
+ 2061 													EAPOLClientProfileGetAuthenticationProperties: CFDictionaryRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 358>
+ 2062 													EAPOLClientProfileGetID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 344>
+ 2063 													S_add_config_notification: void (), <./eapolclient.tproj/Supplicant.c 2169>
+ 2064 														notify_register_mach_port: <>
+ 2065 														my_log: 269
+ 2066 														CFMachPortCreateWithPort: <>
+ 2067 														S_config_changed: void (), <./eapolclient.tproj/Supplicant.c 2140>
+ 2068 															EAPOLClientItemIDGetProfileID: 382
+ 2069 															EAPOLClientConfigurationCreate: 140
+ 2070 															my_log: 269
+ 2071 															EAPOLClientConfigurationGetProfileWithID: 214
+ 2072 															EAPOLSocketIfName: 2018
+ 2073 															eapolclient_log: 1606
+ 2074 															EAPOLControlStop: 256
+ 2075 															CFRelease: <>
+ 2076 														notify_cancel: <>
+ 2077 														CFMachPortCreateRunLoopSource: <>
+ 2078 														CFRelease: <>
+ 2079 														CFRunLoopAddSource: <>
+ 2080 														CFRunLoopGetCurrent: <>
+ 2081 													CFDictionaryCreateCopy: <>
+ 2082 													cfstring_is_empty: bool (), <./eapolclient.tproj/Supplicant.c 3002>
+ 2083 														isA_CFString: <>
+ 2084 														CFStringGetLength: <>
+ 2085 													CFDictionaryContainsKey: <>
+ 2086 													CFDictionaryCreateMutableCopy: <>
+ 2087 													CFDictionaryRemoveValue: <>
+ 2088 													CFDictionaryApplyFunction: <>
+ 2089 													dict_add_key_value: void (), <./eapolclient.tproj/Supplicant.c 2982>
+ 2090 														CFDictionaryAddValue: <>
+ 2091 													CFDictionarySetValue: <>
+ 2092 													debug_properties_present: bool (), <./eapolclient.tproj/Supplicant.c 3011>
+ 2093 														CFDictionaryGetValue: <>
+ 2094 														CFSTR: <>
+ 2095 													Supplicant_set_debug: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 3469>
+ 2096 														EAPOLSocketSetDebug: void (), <./eapolclient.tproj/EAPOLSocket.c 441>
+ 2097 													eapolclient_log: 1606
+ 2098 													eapolclient_log_config_dict: void (), <./eapolclient.tproj/Supplicant.c 3492>
+ 2099 														eapolclient_should_log: 1608
+ 2100 														CFDictionaryGetValue: <>
+ 2101 														CFDictionaryCreateMutableCopy: <>
+ 2102 														CFDictionarySetValue: <>
+ 2103 														CFSTR: <>
+ 2104 														eapolclient_log_plist: 1878
+ 2105 														CFRelease: <>
+ 2106 													S_set_credentials: bool (), <./eapolclient.tproj/Supplicant.c 2716>
+ 2107 														CFDictionaryGetValue: <>
+ 2108 														isA_CFArray: <>
+ 2109 														EAPAcceptTypesFree: 1704
+ 2110 														EAPAcceptTypesInit: void (), <./eapolclient.tproj/Supplicant.c 550>
+ 2111 															EAPAcceptTypesFree: 1704
+ 2112 															CFArrayGetCount: <>
+ 2113 															malloc: <>
+ 2114 															CFArrayGetValueAtIndex: <>
+ 2115 															isA_CFNumber: <>
+ 2116 															my_log: 269
+ 2117 															CFNumberGetValue: <>
+ 2118 															EAPClientModuleLookup: 640
+ 2119 															EAPTypeStr: 639
+ 2120 															free: <>
+ 2121 														EAPOLSocketGetMode: 1830
+ 2122 														S_set_credentials_access_time: void (), <./eapolclient.tproj/Supplicant.c 689>
+ 2123 															Timer_current_secs: long (), <./eapolclient.tproj/Timer.c 165>
+ 2124 																CFAbsoluteTimeGetCurrent: <>
+ 2125 														myCFDictionaryGetBooleanValue: Boolean (), <./eapolclient.tproj/Supplicant.c 2651>
+ 2126 															CFDictionaryGetValue: <>
+ 2127 															isA_CFBoolean: <>
+ 2128 															CFBooleanGetValue: <>
+ 2129 														S_system_mode_use_ad: bool (), <./eapolclient.tproj/Supplicant.c 2215>
+ 2130 															CFDictionaryGetValue: <>
+ 2131 															isA_CFString: <>
+ 2132 															CFEqual: <>
+ 2133 														ODActiveDirectoryTrustInfoCopy: <>
+ 2134 														CFStringCreateMutableCopy: <>
+ 2135 														CFStringAppend: <>
+ 2136 														CFSTR: <>
+ 2137 														CFRelease: <>
+ 2138 														my_CFStringToCString: 593
+ 2139 														eapolclient_log: 1606
+ 2140 														my_log: 269
+ 2141 														my_CFRelease: 35
+ 2142 														isA_CFString: <>
+ 2143 														S_copy_password_from_keychain: char * (), <./eapolclient.tproj/Supplicant.c 2617>
+ 2144 															SecKeychainCopyDomainDefault: <>
+ 2145 															EAPSecKeychainPasswordItemCopy: OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 628>
+ 2146 																CFDictionaryCreate: <>
+ 2147 																SecItemCopyMatching: <>
+ 2148 																CFRelease: <>
+ 2149 																CFArrayCreate: <>
+ 2150 																EAPSecKeychainPasswordItemCopy2: 1330
+ 2151 																CFDictionaryGetValue: <>
+ 2152 																CFRetain: <>
+ 2153 															my_log: 269
+ 2154 															S_string_from_data: char * (), <./eapolclient.tproj/Supplicant.c 2604>
+ 2155 																CFDataGetLength: <>
+ 2156 																malloc: <>
+ 2157 																bcopy: <>
+ 2158 																CFDataGetBytePtr: <>
+ 2159 															my_CFRelease: 35
+ 2160 														EAPOLSocketIfName: 2018
+ 2161 														EAPOLClientItemIDCopyPasswordItem: Boolean (), <./EAP8021X.fproj/EAPOLClientItemID.c 816>
+ 2162 															SecKeychainCopyDomainDefault: <>
+ 2163 															fprintf: <>
+ 2164 															EAPOLClientItemIDGetAuthorizationExternalForm: PRIVATE_EXTERN AuthorizationExternalForm * (), <./EAP8021X.fproj/EAPOLClientItemID.c 1354>
+ 2165 																EAPOLClientItemIDGetProfile: 235
+ 2166 																EAPOLClientProfileGetConfiguration: PRIVATE_EXTERN EAPOLClientConfigurationRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 773>
+ 2167 																EAPOLClientConfigurationGetAuthorizationExternalForm: PRIVATE_EXTERN AuthorizationExternalForm * (), <./EAP8021X.fproj/EAPOLClientConfiguration.c 1647>
+ 2168 															authEAPOLClientItemIDCopyPasswordItem: STATIC Boolean (), <./EAP8021X.fproj/EAPOLClientItemID.c 421>
+ 2169 																eapolcfg_auth_server_port: STATIC mach_port_t (), <./EAP8021X.fproj/EAPOLClientItemID.c 242>
+ 2170 																	bootstrap_look_up2: <>
+ 2171 																	bootstrap_look_up: <>
+ 2172 																	syslog: <>
+ 2173 																EAPOLClientItemIDGetAuthorizationExternalForm: 2164
+ 2174 																itemID_copy_data: STATIC CFDataRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 230>
+ 2175 																	EAPOLClientItemIDCopyDictionary: 381
+ 2176 																	CFPropertyListCreateXMLData: <>
+ 2177 																	CFRelease: <>
+ 2178 																eapolclientitemid_check_password: PRIVATE_EXTERN kern_return_t (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 339>
+ 2179 																	authorization_is_valid: STATIC Boolean (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 99>
+ 2180 																		syslog: <>
+ 2181 																		AuthorizationCreateFromExternalForm: <>
+ 2182 																		AuthorizationCopyRights: <>
+ 2183 																		AuthorizationFree: <>
+ 2184 																	init_itemID_and_cfg: STATIC int (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 139>
+ 2185 																		my_CFPropertyListCreateWithBytePtrAndLength: 113
+ 2186 																		isA_CFDictionary: <>
+ 2187 																		EAPOLClientConfigurationCreate: 140
+ 2188 																		EAPOLClientItemIDCreateWithDictionary: 2044
+ 2189 																		my_CFRelease: 35
+ 2190 																	EAPOLClientItemIDCopyPasswordItem: 2161
+ 2191 																	CFDataGetLength: <>
+ 2192 																	vm_allocate: <>
+ 2193 																	mach_task_self: <>
+ 2194 																	bcopy: <>
+ 2195 																	CFDataGetBytePtr: <>
+ 2196 																	CFRelease: <>
+ 2197 																	vm_deallocate: <>
+ 2198 																	my_vm_deallocate: INLINE void (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 62>
+ 2199 																		vm_deallocate: <>
+ 2200 																		mach_task_self: <>
+ 2201 																	my_CFRelease: 35
+ 2202 																CFDataGetBytePtr: <>
+ 2203 																CFDataGetLength: <>
+ 2204 																syslog: <>
+ 2205 																CFDataCreate: <>
+ 2206 																vm_deallocate: <>
+ 2207 																mach_task_self: <>
+ 2208 																my_CFRelease: 35
+ 2209 															CFArrayCreate: <>
+ 2210 															EAPOLClientItemIDCopyUniqueString: STATIC CFStringRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 523>
+ 2211 																my_CFStringCreateWithData: 189
+ 2212 																create_item_format: INLINE CFStringRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 504>
+ 2213 																	CFStringCreateWithFormat: <>
+ 2214 																	CFSTR: <>
+ 2215 																CFRelease: <>
+ 2216 																EAPOLClientProfileGetWLANSSIDAndSecurityType: 187
+ 2217 																EAPOLClientProfileGetID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 344>
+ 2218 															EAPSecKeychainPasswordItemCopy2: 1330
+ 2219 															my_CFDictionaryCopyValue: STATIC CFTypeRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 69>
+ 2220 																CFDictionaryGetValue: <>
+ 2221 																CFRetain: <>
+ 2222 															my_CFRelease: 35
+ 2223 														S_string_from_data: 2154
+ 2224 														S_array_contains_int: bool (), <./eapolclient.tproj/Supplicant.c 240>
+ 2225 															CFArrayGetCount: <>
+ 2226 															CFArrayGetValueAtIndex: <>
+ 2227 															isA_CFNumber: <>
+ 2228 															CFNumberGetValue: <>
+ 2229 														EAPSecIdentityHandleCreateSecIdentity: 1136
+ 2230 														EAPOLClientItemIDCopyIdentity: SecIdentityRef (), <./EAP8021X.fproj/EAPOLClientItemID.c 1134>
+ 2231 															SecKeychainGetPreferenceDomain: <>
+ 2232 															SecKeychainSetPreferenceDomain: <>
+ 2233 															EAPOLClientItemIDCopyUniqueString: 2210
+ 2234 															SecIdentityCopyPreferred: <>
+ 2235 															my_CFRelease: 35
+ 2236 														S_identity_copy_name: char * (), <./eapolclient.tproj/Supplicant.c 268>
+ 2237 															SecIdentityCopyCertificate: <>
+ 2238 															my_log: 269
+ 2239 															EAPSecCertificateCopyUserNameString: 1104
+ 2240 															CFRelease: <>
+ 2241 															my_CFStringToCString: 593
+ 2242 														S_filter_eap_accept_types: void (), <./eapolclient.tproj/Supplicant.c 2680>
+ 2243 															EAPAcceptTypesIndexOfType: 1940
+ 2244 															my_log: 269
+ 2245 															EAPOLSocketIfName: 2018
+ 2246 															eapolclient_log: 1606
+ 2247 															EAPAcceptTypesRemoveTypeAtIndex: void (), <./eapolclient.tproj/Supplicant.c 664>
+ 2248 														eap_method_user_name: char * (), <./eapolclient.tproj/Supplicant.c 2570>
+ 2249 															EAPClientModuleLookup: 640
+ 2250 															EAPClientModulePluginUserName: CFStringRef (), <./EAP8021X.fproj/EAPClientModule.c 394>
+ 2251 															my_CFStringToCString: 593
+ 2252 															my_CFRelease: 35
+ 2253 														my_strcmp: int (), <./eapolclient.tproj/Supplicant.c 2555>
+ 2254 															strcmp: <>
+ 2255 														free: <>
+ 2256 														strlen: <>
+ 2257 														EAPAcceptTypesUseOuterIdentity: bool (), <./eapolclient.tproj/Supplicant.c 658>
+ 2258 													EAPAcceptTypesIsSupportedType: 1939
+ 2259 													eap_client_type: EAPType (), <./eapolclient.tproj/Supplicant.c 388>
+ 2260 														EAPClientModulePluginEAPType: EAPType (), <./EAP8021X.fproj/EAPClientModule.c 90>
+ 2261 													eap_client_free: 1710
+ 2262 												my_CFRelease: 35
+ 2263 												user_supplied_data: void (), <./eapolclient.tproj/Supplicant.c 1895>
+ 2264 													eapolclient_log: 1606
+ 2265 													Supplicant_acquired: void (), <./eapolclient.tproj/Supplicant.c 1337>
+ 2266 														EAPAcceptTypesReset: void (), <./eapolclient.tproj/Supplicant.c 629>
+ 2267 														Supplicant_cancel_pending_events: 1825
+ 2268 														EAPOLSocketEnableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 569>
+ 2269 														Supplicant_acquired: 2265
+ 2270 														EAPPacketGetLength: 633
+ 2271 														S_update_identity_attributes: void (), <./eapolclient.tproj/Supplicant.c 793>
+ 2272 															my_CFRelease: 35
+ 2273 															memchr: <>
+ 2274 															CFStringCreateWithBytes: <>
+ 2275 															CFStringCreateArrayBySeparatingStrings: <>
+ 2276 															CFSTR: <>
+ 2277 														eapolclient_log: 1606
+ 2278 														S_check_for_updated_credentials: void (), <./eapolclient.tproj/Supplicant.c 696>
+ 2279 															EAPOLSocketGetMode: 1830
+ 2280 															Timer_current_secs: 2123
+ 2281 															eapolclient_log: 1606
+ 2282 															S_set_credentials: 2106
+ 2283 														respond_with_identity: bool (), <./eapolclient.tproj/Supplicant.c 1294>
+ 2284 															S_retrieve_identity: bool (), <./eapolclient.tproj/Supplicant.c 1262>
+ 2285 																EAPClientModulePluginCopyIdentity: CFStringRef (), <./EAP8021X.fproj/EAPClientModule.c 407>
+ 2286 																my_CFStringToCString: 593
+ 2287 																my_CFRelease: 35
+ 2288 																free: <>
+ 2289 																strlen: <>
+ 2290 															eapolclient_log: 1606
+ 2291 															EAPPacketCreate: EAPPacketRef (), <./EAP8021X.fproj/EAPUtil.c 225>
+ 2292 																malloc: <>
+ 2293 																EAPPacketSetLength: 954
+ 2294 																memcpy: <>
+ 2295 															EAPOLSocketTransmit: int (), <./eapolclient.tproj/EAPOLSocket.c 587>
+ 2296 																EAPOLSocketSetEAPTxPacket: 1719
+ 2297 																EAPOLSocketSourceTransmit: int (), <./eapolclient.tproj/EAPOLSocket.c 1197>
+ 2298 																	bzero: <>
+ 2299 																	EAPOLSocketSourceUpdateWirelessInfo: 1751
+ 2300 																	eapolclient_log: 1606
+ 2301 																	my_log: 269
+ 2302 																	bcopy: <>
+ 2303 																	htons: <>
+ 2304 																	EAPOLPacketSetLength: void (), <./EAP8021X.fproj/EAPOLUtil.c 287>
+ 2305 																		net_uint16_set: <>
+ 2306 																	printf: <>
+ 2307 																	timestamp_fprintf: void (), <./eapolclient.tproj/mylog.c 80>
+ 2308 																		gettimeofday: <>
+ 2309 																		localtime_r: <>
+ 2310 																		va_start: <>
+ 2311 																		fprintf: <>
+ 2312 																		vfprintf: <>
+ 2313 																		va_end: <>
+ 2314 																		fprint_time: 1610
+ 2315 																	ether_header_valid: bool (), <./eapolclient.tproj/EAPOLSocket.c 838>
+ 2316 																		fprintf: <>
+ 2317 																		fprint_data: 643
+ 2318 																		ether_header_fprint: void (), <./eapolclient.tproj/EAPOLSocket.c 827>
+ 2319 																			fprintf: <>
+ 2320 																			ether_ntoa: <>
+ 2321 																			ntohs: <>
+ 2322 																	EAPOLPacketValid: 621
+ 2323 																	fflush: <>
+ 2324 																	eapolclient_should_log: 1608
+ 2325 																	eapolclient_log_file: 1628
+ 2326 																	ether_header_fprint: 2318
+ 2327 																	ntohs: <>
+ 2328 																	ether_ntoa: <>
+ 2329 																	S_simulated_event_occurred: bool (), <./eapolclient.tproj/EAPOLSocket.c 326>
+ 2330 																		arc4random: <>
+ 2331 																	sendto: <>
+ 2332 																	FDHandler_fd: int (), <./eapolclient.tproj/FDHandler.c 150>
+ 2333 																	strerror: <>
+ 2334 															my_log: 269
+ 2335 															free: <>
+ 2336 														Supplicant_report_status: 1828
+ 2337 														Timer_set_relative: 1773
+ 2338 														my_log: 269
+ 2339 														Supplicant_held: void (), <./eapolclient.tproj/Supplicant.c 2407>
+ 2340 															EAPOLSocketIsWireless: 1903
+ 2341 															clear_wpa_key_info: void (), <./eapolclient.tproj/Supplicant.c 970>
+ 2342 																EAPOLSocketSetWPAKey: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 618>
+ 2343 																	EAPOLSocketSourceScheduleHandshakeNotification: void (), <./eapolclient.tproj/EAPOLSocket.c 1888>
+ 2344 																		EAPOLSocketSourceUnscheduleHandshakeNotification: 1754
+ 2345 																		InterestNotificationCreate: 1543
+ 2346 																		EAPOLSocketSourceHandshakeComplete: void (), <./eapolclient.tproj/EAPOLSocket.c 1863>
+ 2347 																			eapolclient_log: 1606
+ 2348 																			Supplicant_get_state: PRIVATE_EXTERN SupplicantState (), <./eapolclient.tproj/Supplicant.c 3478>
+ 2349 																			EAPOLSocketSourceForceRenew: 1890
+ 2350 																			Supplicant_simulate_success: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 3526>
+ 2351 																				roundup: <>
+ 2352 																				eapolclient_log: 1606
+ 2353 																				EAPOLPacketSetLength: 2304
+ 2354 																				EAPPacketSetLength: 954
+ 2355 																				Supplicant_authenticating: void (), <./eapolclient.tproj/Supplicant.c 1681>
+ 2356 																					EAPOLSocketIsWireless: 1903
+ 2357 																					clear_wpa_key_info: 2341
+ 2358 																					Supplicant_report_status: 1828
+ 2359 																					EAPOLSocketEnableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 569>
+ 2360 																					Supplicant_authenticating: 2355
+ 2361 																					Timer_cancel: 1695
+ 2362 																					process_packet: void (), <./eapolclient.tproj/Supplicant.c 1493>
+ 2363 																						eap_client_type: 2259
+ 2364 																						EAPAcceptTypesIsSupportedType: 1939
+ 2365 																						EAPAcceptTypesNextType: EAPType (), <./eapolclient.tproj/Supplicant.c 619>
+ 2366 																						eapolclient_log: 1606
+ 2367 																						Supplicant_held: 2339
+ 2368 																						respond_with_nak: void (), <./eapolclient.tproj/Supplicant.c 1473>
+ 2369 																							EAPPacketCreate: 2291
+ 2370 																							EAPOLSocketTransmit: 2295
+ 2371 																							my_log: 269
+ 2372 																						Timer_set_relative: 1773
+ 2373 																						Supplicant_authenticating: 2355
+ 2374 																						Timer_cancel: 1695
+ 2375 																						eap_client_free: 1710
+ 2376 																						eap_client_init: bool (), <./eapolclient.tproj/Supplicant.c 404>
+ 2377 																							my_log: 269
+ 2378 																							EAPClientModuleLookup: 640
+ 2379 																							my_CFRelease: 35
+ 2380 																							bzero: <>
+ 2381 																							EAPOLSocketIfName: 2018
+ 2382 																							S_set_uint32: __inline__ void (), <./eapolclient.tproj/Supplicant.c 397>
+ 2383 																							EAPOLSocketMTU: int (), <./eapolclient.tproj/EAPOLSocket.c 549>
+ 2384 																							eap_client_set_properties: void (), <./eapolclient.tproj/Supplicant.c 362>
+ 2385 																								eap_client_free_properties: 1713
+ 2386 																								CFDictionaryGetValue: <>
+ 2387 																								CFRetain: <>
+ 2388 																								EAPOLSocketGetSSID: 1938
+ 2389 																								CFStringCreateWithCString: <>
+ 2390 																								EAPOLSocketIfName: 2018
+ 2391 																								CFDictionaryCreateMutableCopy: <>
+ 2392 																								CFDictionarySetValue: <>
+ 2393 																								my_CFRelease: 35
+ 2394 																							EAPOLSocketGetMode: 1830
+ 2395 																							EAPClientModulePluginInit: EAPClientStatus (), <./EAP8021X.fproj/EAPClientModule.c 257>
+ 2396 																							EAPClientModulePluginEAPName: const char * (), <./EAP8021X.fproj/EAPClientModule.c 96>
+ 2397 																						my_log: 269
+ 2398 																						save_last_packet: void (), <./eapolclient.tproj/Supplicant.c 765>
+ 2399 																							bzero: <>
+ 2400 																							malloc: <>
+ 2401 																							bcopy: <>
+ 2402 																							free: <>
+ 2403 																						Supplicant_report_status: 1828
+ 2404 																						Supplicant_authenticated: void (), <./eapolclient.tproj/Supplicant.c 1002>
+ 2405 																							Supplicant_cancel_pending_events: 1825
+ 2406 																							free_last_packet: 1707
+ 2407 																							AlertDialogue_free: 1673
+ 2408 																							CredentialsDialogue_free: 1680
+ 2409 																							TrustDialogue_free: 1687
+ 2410 																							CFDataCreate: <>
+ 2411 																							EAPOLClientItemIDSetIdentity: Boolean (), <./EAP8021X.fproj/EAPOLClientItemID.c 1185>
+ 2412 																								EAPOLClientItemIDGetAuthorizationExternalForm: 2164
+ 2413 																								authEAPOLClientItemIDSetIdentity: STATIC Boolean (), <./EAP8021X.fproj/EAPOLClientItemID.c 271>
+ 2414 																									eapolcfg_auth_server_port: 2169
+ 2415 																									EAPOLClientItemIDGetAuthorizationExternalForm: 2164
+ 2416 																									EAPSecIdentityHandleCreate: 1128
+ 2417 																									CFDataGetBytePtr: <>
+ 2418 																									CFDataGetLength: <>
+ 2419 																									itemID_copy_data: 2174
+ 2420 																									eapolclientitemid_set_identity: PRIVATE_EXTERN kern_return_t (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 183>
+ 2421 																										authorization_is_valid: 2179
+ 2422 																										init_itemID_and_cfg: 2184
+ 2423 																										CFDataCreateWithBytesNoCopy: <>
+ 2424 																										EAPSecIdentityHandleCreateSecIdentity: 1136
+ 2425 																										CFRelease: <>
+ 2426 																										EAPOLClientItemIDSetIdentity: 2411
+ 2427 																										my_vm_deallocate: 2198
+ 2428 																										my_CFRelease: 35
+ 2429 																									syslog: <>
+ 2430 																									my_CFRelease: 35
+ 2431 																								SecKeychainGetPreferenceDomain: <>
+ 2432 																								SecKeychainSetPreferenceDomain: <>
+ 2433 																								EAPOLClientItemIDCopyUniqueString: 2210
+ 2434 																								SecIdentitySetPreferred: <>
+ 2435 																								fprintf: <>
+ 2436 																								EAPSecurityErrorString: 1124
+ 2437 																								my_CFRelease: 35
+ 2438 																							my_log: 269
+ 2439 																							eapolclient_log: 1606
+ 2440 																							EAPOLClientSetACLForIdentity: OSStatus (), <./EAP8021X.fproj/EAPOLClientItemID.c 204>
+ 2441 																								SecIdentityCopyPrivateKey: <>
+ 2442 																								copy_trusted_applications: 1241
+ 2443 																								EAPSecKeychainItemSetAccessForTrustedApplications: PRIVATE_EXTERN OSStatus (), <./EAP8021X.fproj/EAPKeychainUtil.c 331>
+ 2444 																									access: <>
+ 2445 																									SecKeychainItemCopyAccess: <>
+ 2446 																									SecAccessCreate: <>
+ 2447 																									CFSTR: <>
+ 2448 																									SecAccessCopyMatchingACLList: <>
+ 2449 																									CFArrayGetValueAtIndex: <>
+ 2450 																									SecACLCopyContents: <>
+ 2451 																									CFArrayGetCount: <>
+ 2452 																									CFArrayCreateMutable: <>
+ 2453 																									SecTrustedApplicationCopyExternalRepresentation: <>
+ 2454 																									CFArrayAppendValue: <>
+ 2455 																									CFRelease: <>
+ 2456 																									CFArrayContainsValue: <>
+ 2457 																									CFArrayCreateMutableCopy: <>
+ 2458 																									SecACLSetContents: <>
+ 2459 																									SecKeychainItemSetAccess: <>
+ 2460 																									my_CFRelease: 35
+ 2461 																								my_CFRelease: 35
+ 2462 																							fprintf: <>
+ 2463 																							EAPOLClientItemIDSetPasswordItem: Boolean (), <./EAP8021X.fproj/EAPOLClientItemID.c 920>
+ 2464 																								SecKeychainCopyDomainDefault: <>
+ 2465 																								fprintf: <>
+ 2466 																								EAPSecurityErrorString: 1124
+ 2467 																								EAPOLClientItemIDGetAuthorizationExternalForm: 2164
+ 2468 																								authEAPOLClientItemIDSetPasswordItem: STATIC Boolean (), <./EAP8021X.fproj/EAPOLClientItemID.c 325>
+ 2469 																									eapolcfg_auth_server_port: 2169
+ 2470 																									EAPOLClientItemIDGetAuthorizationExternalForm: 2164
+ 2471 																									CFDataGetBytePtr: <>
+ 2472 																									CFDataGetLength: <>
+ 2473 																									itemID_copy_data: 2174
+ 2474 																									eapolclientitemid_set_password: kern_return_t (), <./eapolcfg_auth.tproj/eapolcfg_auth.c 242>
+ 2475 																										authorization_is_valid: 2179
+ 2476 																										init_itemID_and_cfg: 2184
+ 2477 																										CFDataCreate: <>
+ 2478 																										syslog: <>
+ 2479 																										EAPOLClientItemIDSetPasswordItem: 2463
+ 2480 																										my_vm_deallocate: 2198
+ 2481 																										my_CFRelease: 35
+ 2482 																									syslog: <>
+ 2483 																									my_CFRelease: 35
+ 2484 																								CFDictionaryCreateMutable: <>
+ 2485 																								CFDataCreate: <>
+ 2486 																								CFDictionarySetValue: <>
+ 2487 																								CFRelease: <>
+ 2488 																								my_CFDataCreateWithString: CFDataRef (), <./EAP8021X.fproj/myCFUtil.c 280>
+ 2489 																									CFStringCreateExternalRepresentation: <>
+ 2490 																								EAPOLClientProfileGetWLANSSIDAndSecurityType: 187
+ 2491 																								EAPOLClientProfileGetUserDefinedName: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 307>
+ 2492 																								EAPOLClientProfileGetID: CFStringRef (), <./EAP8021X.fproj/EAPOLClientProfile.c 344>
+ 2493 																								CFSTR: <>
+ 2494 																								copy_trusted_applications: 1241
+ 2495 																								EAPOLClientItemIDCopyUniqueString: 2210
+ 2496 																								EAPSecKeychainPasswordItemSet2: 1260
+ 2497 																								EAPSecKeychainPasswordItemCreate: 1288
+ 2498 																								my_CFRelease: 35
+ 2499 																								syslog: <>
+ 2500 																							my_CFRelease: 35
+ 2501 																							clear_password: void (), <./eapolclient.tproj/Supplicant.c 719>
+ 2502 																								free: <>
+ 2503 																							Supplicant_report_status: 1828
+ 2504 																							EAPOLSocketEnableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 569>
+ 2505 																							Supplicant_authenticated: 2404
+ 2506 																							Timer_cancel: 1695
+ 2507 																							Supplicant_acquired: 2265
+ 2508 																							EAPPacketGetLength: 633
+ 2509 																							respond_to_notification: void (), <./eapolclient.tproj/Supplicant.c 1451>
+ 2510 																								eapolclient_log: 1606
+ 2511 																								EAPPacketCreate: 2291
+ 2512 																								EAPOLSocketTransmit: 2295
+ 2513 																								my_log: 269
+ 2514 																							Supplicant_authenticating: 2355
+ 2515 																							EAPOLSocketIsWireless: 1903
+ 2516 																							process_key: void (), <./eapolclient.tproj/Supplicant.c 869>
+ 2517 																								eap_client_session_key: void * (), <./eapolclient.tproj/Supplicant.c 511>
+ 2518 																									EAPClientModulePluginSessionKey: void * (), <./EAP8021X.fproj/EAPClientModule.c 325>
+ 2519 																								my_log: 269
+ 2520 																								eapolclient_log: 1606
+ 2521 																								eap_client_server_key: void * (), <./eapolclient.tproj/Supplicant.c 519>
+ 2522 																									EAPClientModulePluginServerKey: void * (), <./EAP8021X.fproj/EAPClientModule.c 338>
+ 2523 																								EAPOLPacketGetLength: 626
+ 2524 																								eapol_key_verify_signature: bool (), <./eapolclient.tproj/Supplicant.c 838>
+ 2525 																									malloc: <>
+ 2526 																									bcopy: <>
+ 2527 																									bzero: <>
+ 2528 																									CCHmac: <>
+ 2529 																									bcmp: <>
+ 2530 																									printf: <>
+ 2531 																									print_bytes: void (), <./EAP8021X.fproj/printdata.c 108>
+ 2532 																										fprint_bytes: 655
+ 2533 																									fflush: <>
+ 2534 																									free: <>
+ 2535 																								EAPOLKeyDescriptorGetLength: 651
+ 2536 																								malloc: <>
+ 2537 																								bcopy: <>
+ 2538 																								CCCrypt: <>
+ 2539 																								EAPOLSocketSetKey: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 522>
+ 2540 																									wireless_set_key: <>
+ 2541 																								free: <>
+ 2542 																						my_CFRelease: 35
+ 2543 																						eap_client_process: EAPClientState (), <./eapolclient.tproj/Supplicant.c 467>
+ 2544 																							S_set_uint32: 2382
+ 2545 																							eap_client_set_properties: 2384
+ 2546 																							EAPClientModulePluginProcess: EAPClientState (), <./EAP8021X.fproj/EAPClientModule.c 295>
+ 2547 																						EAPOLSocketTransmit: 2295
+ 2548 																						EAPPacketGetLength: 633
+ 2549 																						eap_client_free_packet: void (), <./eapolclient.tproj/Supplicant.c 491>
+ 2550 																							EAPClientModulePluginFreePacket: void (), <./EAP8021X.fproj/EAPClientModule.c 282>
+ 2551 																						eap_client_publish_properties: CFDictionaryRef (), <./eapolclient.tproj/Supplicant.c 460>
+ 2552 																							EAPClientModulePluginPublishProperties: CFDictionaryRef (), <./EAP8021X.fproj/EAPClientModule.c 364>
+ 2553 																						eap_client_require_properties: CFArrayRef (), <./eapolclient.tproj/Supplicant.c 453>
+ 2554 																							EAPClientModulePluginRequireProperties: CFArrayRef (), <./EAP8021X.fproj/EAPClientModule.c 351>
+ 2555 																						CFSTR: <>
+ 2556 																						SCLog: <>
+ 2557 																						eapolclient_log_plist: 1878
+ 2558 																						EAPOLSocketIsWireless: 1903
+ 2559 																						set_wpa_key_info: void (), <./eapolclient.tproj/Supplicant.c 978>
+ 2560 																							eap_client_session_key: 2517
+ 2561 																							eap_client_server_key: 2521
+ 2562 																							EAPOLSocketSetWPAKey: 2342
+ 2563 																						EAPOLSocketIfName: 2018
+ 2564 																						eap_client_log_failure: void (), <./eapolclient.tproj/Supplicant.c 499>
+ 2565 																							EAPClientModulePluginFailureString: const char * (), <./EAP8021X.fproj/EAPClientModule.c 311>
+ 2566 																							my_log: 269
+ 2567 																					my_log: 269
+ 2568 																					SupplicantStateString: <>
+ 2569 																					Supplicant_acquired: 2265
+ 2570 																					EAPPacketGetLength: 633
+ 2571 																					eapolclient_log: 1606
+ 2572 																					respond_to_notification: 2509
+ 2573 																					Supplicant_connecting: void (), <./eapolclient.tproj/Supplicant.c 1187>
+ 2574 																						Supplicant_cancel_pending_events: 1825
+ 2575 																						Supplicant_report_status: 1828
+ 2576 																						EAPOLSocketEnableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 569>
+ 2577 																						Supplicant_connecting: 2573
+ 2578 																						Supplicant_acquired: 2265
+ 2579 																						Supplicant_authenticating: 2355
+ 2580 																						Supplicant_no_authenticator: void (), <./eapolclient.tproj/Supplicant.c 1165>
+ 2581 																							Supplicant_cancel_pending_events: 1825
+ 2582 																							Supplicant_report_status: 1828
+ 2583 																							EAPOLSocketEnableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 569>
+ 2584 																							Supplicant_connecting: 2573
+ 2585 																						EAPOLSocketTransmit: 2295
+ 2586 																						Timer_set_relative: 1773
+ 2587 																			EAPOLSocketSourceReleaseHandshakeNotification: 1755
+ 2588 																		eapolclient_log: 1606
+ 2589 																	EAPOLSocketSourceUnscheduleHandshakeNotification: 1754
+ 2590 																	eapolclient_should_log: 1608
+ 2591 																	eapolclient_log: 1606
+ 2592 																	ether_ntoa: <>
+ 2593 																	wireless_set_wpa_key: <>
+ 2594 															Supplicant_cancel_pending_events: 1825
+ 2595 															Supplicant_report_status: 1828
+ 2596 															EAPAcceptTypesReset: void (), <./eapolclient.tproj/Supplicant.c 629>
+ 2597 															present_alert_dialogue: void (), <./eapolclient.tproj/Supplicant.c 2063>
+ 2598 																AlertDialogue_free: 1673
+ 2599 																CFSTR: <>
+ 2600 																AlertDialogue_create: AlertDialogueRef (), <./eapolclient.tproj/Dialogue.c 907>
+ 2601 																	get_bundle: 1946
+ 2602 																	my_log: 269
+ 2603 																	malloc: <>
+ 2604 																	bzero: <>
+ 2605 																	AlertDialogueShow: CFUserNotificationRef (), <./eapolclient.tproj/Dialogue.c 835>
+ 2606 																		CFDictionaryCreateMutable: <>
+ 2607 																		CFBundleCopyBundleURL: <>
+ 2608 																		CFDictionarySetValue: <>
+ 2609 																		CFRelease: <>
+ 2610 																		CFSTR: <>
+ 2611 																		copy_icon_url: 1961
+ 2612 																		CFDictionaryAddValue: <>
+ 2613 																		CFUserNotificationCreate: <>
+ 2614 																		my_log: 269
+ 2615 																		my_CFRelease: 35
+ 2616 																	CFUserNotificationCreateRunLoopSource: <>
+ 2617 																	AlertDialogue_response: void (), <./eapolclient.tproj/Dialogue.c 887>
+ 2618 																		AlertDialogue_find: AlertDialogueRef (), <./eapolclient.tproj/Dialogue.c 875>
+ 2619 																			LIST_FOREACH: <>
+ 2620 																		CFRunLoopSourceInvalidate: <>
+ 2621 																		my_CFRelease: 35
+ 2622 																	CFRunLoopAddSource: <>
+ 2623 																	CFRunLoopGetCurrent: <>
+ 2624 																	LIST_INSERT_HEAD: <>
+ 2625 																	free: <>
+ 2626 																	my_CFRelease: 35
+ 2627 																alert_callback: void (), <./eapolclient.tproj/Supplicant.c 2052>
+ 2628 																	AlertDialogue_free: 1673
+ 2629 																	EAPOLSocketStopClient: 2019
+ 2630 															CredentialsDialogue_free: 1680
+ 2631 															TrustDialogue_free: 1687
+ 2632 															clear_sec_identity: void (), <./eapolclient.tproj/Supplicant.c 747>
+ 2633 																my_CFRelease: 35
+ 2634 															clear_username: void (), <./eapolclient.tproj/Supplicant.c 733>
+ 2635 																free: <>
+ 2636 															clear_password: 2501
+ 2637 															EAPOLSocketReassociate: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 802>
+ 2638 																EAPOLSocketIsWireless: 1903
+ 2639 																EAPOLSocketIsMain: boolean_t (), <./eapolclient.tproj/EAPOLSocket.c 456>
+ 2640 																wireless_copy_scan_record: <>
+ 2641 																wireless_reassociate: <>
+ 2642 																CFRelease: <>
+ 2643 															free_last_packet: 1707
+ 2644 															eap_client_free: 1710
+ 2645 															EAPOLSocketEnableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 569>
+ 2646 															Supplicant_held: 2339
+ 2647 															Timer_set_relative: 1773
+ 2648 															Supplicant_connecting: 2573
+ 2649 															Supplicant_acquired: 2265
+ 2650 															my_log: 269
+ 2651 															EAPPacketGetLength: 633
+ 2652 															respond_to_notification: 2509
+ 2653 															Supplicant_authenticating: 2355
+ 2654 														SupplicantStateString: <>
+ 2655 														Supplicant_authenticating: 2355
+ 2656 														Supplicant_connecting: 2573
+ 2657 													process_packet: 2362
+ 2658 											TrustDialogue_create: TrustDialogueRef (), <./eapolclient.tproj/Dialogue.c 714>
+ 2659 												get_bundle: 1946
+ 2660 												my_log: 269
+ 2661 												pthread_once: <>
+ 2662 												malloc: <>
+ 2663 												bzero: <>
+ 2664 												pipe: <>
+ 2665 												CFDictionaryCreateMutable: <>
+ 2666 												CFDictionarySetValue: <>
+ 2667 												CFSTR: <>
+ 2668 												copy_localized_title: CFStringRef (), <./eapolclient.tproj/Dialogue.c 131>
+ 2669 													copy_localized_string: 1989
+ 2670 												CFRelease: <>
+ 2671 												CFDictionaryCreateCopy: <>
+ 2672 												my_CFRelease: 35
+ 2673 												TrustDialogue_callback: void (), <./eapolclient.tproj/Dialogue.c 610>
+ 2674 													TrustDialogue_find: TrustDialogueRef (), <./eapolclient.tproj/Dialogue.c 597>
+ 2675 														LIST_FOREACH: <>
+ 2676 													WIFEXITED: <>
+ 2677 													WEXITSTATUS: <>
+ 2678 													my_log: 269
+ 2679 													WIFSIGNALED: <>
+ 2680 													WTERMSIG: <>
+ 2681 												geteuid: <>
+ 2682 												getegid: <>
+ 2683 												TrustDialogue_setup: void (), <./eapolclient.tproj/Dialogue.c 696>
+ 2684 													TrustDialogue_setup_child: void (), <./eapolclient.tproj/Dialogue.c 639>
+ 2685 														getdtablesize: <>
+ 2686 														close: <>
+ 2687 														dup: <>
+ 2688 														open: <>
+ 2689 													TrustDialogue_setup_parent: void (), <./eapolclient.tproj/Dialogue.c 660>
+ 2690 														close: <>
+ 2691 														CFPropertyListCreateXMLData: <>
+ 2692 														CFDataGetLength: <>
+ 2693 														write: <>
+ 2694 														CFDataGetBytePtr: <>
+ 2695 														my_CFRelease: 35
+ 2696 														my_log: 269
+ 2697 												LIST_INSERT_HEAD: <>
+ 2698 												TrustDialogue_free: 1687
+ 2699 											trust_callback: void (), <./eapolclient.tproj/Supplicant.c 1947>
+ 2700 												TrustDialogue_trust_info: CFDictionaryRef (), <./eapolclient.tproj/Dialogue.c 775>
+ 2701 													CFDictionaryGetValue: <>
+ 2702 													CFSTR: <>
+ 2703 												CFRetain: <>
+ 2704 												TrustDialogue_free: 1687
+ 2705 												my_log: 269
+ 2706 												EAPOLSocketIfName: 2018
+ 2707 												EAPOLSocketStopClient: 2019
+ 2708 												create_ui_config_dict: 2030
+ 2709 												dicts_compare_arrays: Boolean (), <./eapolclient.tproj/Supplicant.c 1930>
+ 2710 													CFDictionaryGetValue: <>
+ 2711 													CFEqual: <>
+ 2712 												CFDictionaryRemoveValue: <>
+ 2713 												CFDictionaryGetValue: <>
+ 2714 												CFDictionarySetValue: <>
+ 2715 												CFDictionaryCreateCopy: <>
+ 2716 												Supplicant_update_configuration: 2036
+ 2717 												my_CFRelease: 35
+ 2718 												user_supplied_data: 2263
+ 2719 										Supplicant_cleanup: void (), <./eapolclient.tproj/Supplicant.c 1135>
+ 2720 											EAPAcceptTypesReset: void (), <./eapolclient.tproj/Supplicant.c 629>
+ 2721 											eap_client_free: 1710
+ 2722 											free_last_packet: 1707
+ 2723 										Supplicant_connecting: 2573
+ 2724 									Supplicant_inactive: void (), <./eapolclient.tproj/Supplicant.c 2508>
+ 2725 										Supplicant_cancel_pending_events: 1825
+ 2726 										Supplicant_report_status: 1828
+ 2727 										EAPOLSocketEnableReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 569>
+ 2728 										Supplicant_connecting: 2573
+ 2729 								EAPOLSocketSourceScheduleScan: 1772
+ 2730 							eapolclient_log: 1606
+ 2731 					wireless_copy_ssid_string: <>
+ 2732 					wireless_is_wpa_enterprise: <>
+ 2733 					CFEqual: <>
+ 2734 					EAPOLSocketSourceCancelScan: 1928
+ 2735 					SCLog: <>
+ 2736 					CFSTR: <>
+ 2737 					ether_ntoa: <>
+ 2738 					eapolclient_should_log: 1608
+ 2739 					eapolclient_log_file: 1628
+ 2740 					SCPrint: <>
+ 2741 					fflush: <>
+ 2742 				EAPOLSocketSetEAPTxPacket: 1719
+ 2743 				Supplicant_link_status_changed: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 3298>
+ 2744 					Timer_set_relative: 1773
+ 2745 					Supplicant_connecting: 2573
+ 2746 					Supplicant_inactive: 2724
+ 2747 			SCErrorString: <>
+ 2748 			SCError: <>
+ 2749 			TAILQ_INIT: <>
+ 2750 			strlcpy: <>
+ 2751 			strlen: <>
+ 2752 			FDHandler_enable: void (), <./eapolclient.tproj/FDHandler.c 130>
+ 2753 			EAPOLSocketSourceReceive: void (), <./eapolclient.tproj/EAPOLSocket.c 1063>
+ 2754 				recv: <>
+ 2755 				FDHandler_fd: int (), <./eapolclient.tproj/FDHandler.c 150>
+ 2756 				my_log: 269
+ 2757 				strerror: <>
+ 2758 				printf: <>
+ 2759 				timestamp_fprintf: 2307
+ 2760 				ether_header_valid: 2315
+ 2761 				ntohs: <>
+ 2762 				fprintf: <>
+ 2763 				EAPOLPacketValid: 621
+ 2764 				bcopy: <>
+ 2765 				bcmp: <>
+ 2766 				EAPOLSocketSourceUpdateWirelessInfo: 1751
+ 2767 				eapolclient_should_log: 1608
+ 2768 				eapolclient_log_file: 1628
+ 2769 				eapolclient_log: 1606
+ 2770 				ether_header_fprint: 2318
+ 2771 				fflush: <>
+ 2772 				ether_ntoa: <>
+ 2773 				EAPOLSocketSourceLookupPreauthSocket: 1764
+ 2774 				EAPOLSocketSetEAPTxPacket: 1719
+ 2775 				EAPOLSocketSourceTransmit: 2297
+ 2776 				S_simulated_event_occurred: 2329
+ 2777 			EAPOLClientAttach: EAPOLClientRef (), <./EAP8021X.fproj/EAPOLClient.c 129>
+ 2778 				eapolcontroller_server_port: <>
+ 2779 				fprintf: <>
+ 2780 				mach_error_string: <>
+ 2781 				malloc: <>
+ 2782 				bzero: <>
+ 2783 				strlcpy: <>
+ 2784 				EAPOLClientHandleMessage: void (), <./EAP8021X.fproj/EAPOLClient.c 81>
+ 2785 					syslog: <>
+ 2786 					EAPOLClientInvalidate: void (), <./EAP8021X.fproj/EAPOLClient.c 53>
+ 2787 						CFMachPortGetPort: <>
+ 2788 						mach_port_mod_refs: <>
+ 2789 						mach_task_self: <>
+ 2790 						CFMachPortInvalidate: <>
+ 2791 						my_CFRelease: 35
+ 2792 						CFRunLoopRemoveSource: <>
+ 2793 						CFRunLoopGetCurrent: <>
+ 2794 						mach_port_deallocate: <>
+ 2795 				CFMachPortGetPort: <>
+ 2796 				mach_port_request_notification: <>
+ 2797 				mach_task_self: <>
+ 2798 				eapolcontroller_client_attach: kern_return_t (), <./EAPOLController.bproj/server.c 367>
+ 2799 					pid_for_task: <>
+ 2800 					mach_port_deallocate: <>
+ 2801 					mach_task_self: <>
+ 2802 					ControllerClientAttach: int (), <./EAPOLController.bproj/controller.c 1478>
+ 2803 						eapolClientLookupInterface: 98
+ 2804 						CFMachPortCreate: <>
+ 2805 						server_handle_request: 818
+ 2806 						CFMachPortGetPort: <>
+ 2807 						CFMachPortCreateRunLoopSource: <>
+ 2808 						CFRunLoopAddSource: <>
+ 2809 						CFRunLoopGetCurrent: <>
+ 2810 						CFRelease: <>
+ 2811 						CFDictionaryCreateMutable: <>
+ 2812 						make_number: 306
+ 2813 						CFDictionarySetValue: <>
+ 2814 						eapolClientSetState: 282
+ 2815 						set_loginwindow_config: void (), <./EAPOLController.bproj/controller.c 154>
+ 2816 							clear_loginwindow_config: 279
+ 2817 							CFDictionaryGetValue: <>
+ 2818 							isA_CFDictionary: <>
+ 2819 							CFDictionaryCreate: <>
+ 2820 						mach_port_deallocate: <>
+ 2821 						mach_task_self: <>
+ 2822 					my_CFPropertyListCreateVMData: 102
+ 2823 					syslog: <>
+ 2824 					my_CFRelease: 35
+ 2825 				task_set_bootstrap_port: <>
+ 2826 				audit_session_join: <>
+ 2827 				my_CFPropertyListCreateWithBytePtrAndLength: 113
+ 2828 				vm_deallocate: <>
+ 2829 				CFMachPortCreateRunLoopSource: <>
+ 2830 				CFRunLoopAddSource: <>
+ 2831 				CFRunLoopGetCurrent: <>
+ 2832 				EAPOLClientInvalidate: 2786
+ 2833 				my_CFRelease: 35
+ 2834 				free: <>
+ 2835 			EAPOLSocketSourceClientNotification: void (), <./eapolclient.tproj/EAPOLSocket.c 933>
+ 2836 				my_log: 269
+ 2837 				exit: <>
+ 2838 				EAPOLClientGetConfig: int (), <./EAP8021X.fproj/EAPOLClient.c 270>
+ 2839 					eapolcontroller_client_getconfig: kern_return_t (), <./EAPOLController.bproj/server.c 416>
+ 2840 						ControllerClientGetConfig: int (), <./EAPOLController.bproj/controller.c 1571>
+ 2841 							eapolClientLookupSession: 1895
+ 2842 							CFDictionaryCreateMutable: <>
+ 2843 							make_number: 306
+ 2844 							CFDictionarySetValue: <>
+ 2845 							my_CFRelease: 35
+ 2846 						my_CFPropertyListCreateVMData: 102
+ 2847 						syslog: <>
+ 2848 						my_CFRelease: 35
+ 2849 					fprintf: <>
+ 2850 					mach_error_string: <>
+ 2851 					my_CFPropertyListCreateWithBytePtrAndLength: 113
+ 2852 					vm_deallocate: <>
+ 2853 					mach_task_self: <>
+ 2854 					my_CFRelease: 35
+ 2855 				strerror: <>
+ 2856 				CFDictionaryGetValue: <>
+ 2857 				get_number: bool (), <./eapolclient.tproj/EAPOLSocket.c 898>
+ 2858 					isA_CFNumber: <>
+ 2859 					CFNumberGetValue: <>
+ 2860 				Supplicant_control: PRIVATE_EXTERN bool (), <./eapolclient.tproj/Supplicant.c 3215>
+ 2861 					Supplicant_connecting: 2573
+ 2862 					CFDictionaryGetValue: <>
+ 2863 					create_ui_config_dict: 2030
+ 2864 					CFDictionaryApplyFunction: <>
+ 2865 					dict_set_key_value: void (), <./eapolclient.tproj/Supplicant.c 2992>
+ 2866 						CFDictionarySetValue: <>
+ 2867 					CFDictionaryCreateCopy: <>
+ 2868 					Supplicant_update_configuration: 2036
+ 2869 					my_CFRelease: 35
+ 2870 					user_supplied_data: 2263
+ 2871 					EAPOLSocketIsLinkActive: 1823
+ 2872 					Supplicant_acquired: 2265
+ 2873 					process_packet: 2362
+ 2874 					Supplicant_disconnected: 1824
+ 2875 					fflush: <>
+ 2876 				my_CFRelease: 35
+ 2877 				EAPOLSocketSourceStop: void (), <./eapolclient.tproj/EAPOLSocket.c 922>
+ 2878 					my_log: 269
+ 2879 					Supplicant_stop: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 1883>
+ 2880 						eapolclient_log: 1606
+ 2881 						eap_client_free: 1710
+ 2882 						Supplicant_logoff: void (), <./eapolclient.tproj/Supplicant.c 2529>
+ 2883 							Supplicant_cancel_pending_events: 1825
+ 2884 							EAPOLSocketIsWireless: 1903
+ 2885 							EAPOLSocketClearPMKCache: void (), <./eapolclient.tproj/EAPOLSocket.c 602>
+ 2886 								wireless_clear_wpa_pmk_cache: <>
+ 2887 								eapolclient_log: 1606
+ 2888 							eap_client_free: 1710
+ 2889 							EAPOLSocketTransmit: 2295
+ 2890 							Supplicant_report_status: 1828
+ 2891 						Supplicant_free: 1672
+ 2892 						fflush: <>
+ 2893 					EAPOLSocketSourceFree: void (), <./eapolclient.tproj/EAPOLSocket.c 1591>
+ 2894 						FDHandler_free: void (), <./eapolclient.tproj/FDHandler.c 98>
+ 2895 							CFRunLoopRemoveSource: <>
+ 2896 							CFRunLoopGetCurrent: <>
+ 2897 							CFSocketInvalidate: <>
+ 2898 							CFRelease: <>
+ 2899 							free: <>
+ 2900 						wireless_free: <>
+ 2901 						my_CFRelease: 35
+ 2902 						CFRunLoopRemoveObserver: <>
+ 2903 						CFRunLoopGetCurrent: <>
+ 2904 						EAPOLClientDetach: int (), <./EAP8021X.fproj/EAPOLClient.c 240>
+ 2905 							eapolcontroller_client_detach: kern_return_t (), <./EAPOLController.bproj/server.c 409>
+ 2906 								ControllerClientDetach: int (), <./EAPOLController.bproj/controller.c 1551>
+ 2907 									eapolClientLookupSession: 1895
+ 2908 									eapolClientInvalidate: 465
+ 2909 									eapolClientExited: 471
+ 2910 							fprintf: <>
+ 2911 							mach_error_string: <>
+ 2912 							EAPOLClientInvalidate: 2786
+ 2913 							free: <>
+ 2914 						Timer_free: 1694
+ 2915 						EAPOLSocketSourceUnscheduleHandshakeNotification: 1754
+ 2916 						free: <>
+ 2917 					exit: <>
+ 2918 			strerror: <>
+ 2919 			CFRunLoopAddObserver: <>
+ 2920 			CFRunLoopGetCurrent: <>
+ 2921 			wireless_free: <>
+ 2922 			free: <>
+ 2923 			FDHandler_free: 2894
+ 2924 			close: <>
+ 2925 			CFRelease: <>
+ 2926 			Timer_free: 1694
+ 2927 		my_log: 269
+ 2928 		log_then_exit: void (), <./eapolclient.tproj/main.c 201>
+ 2929 			eapolclient_log: 1606
+ 2930 			exit: <>
+ 2931 		setgid: <>
+ 2932 		setuid: <>
+ 2933 		my_CFPropertyListCreateFromFile: 1166
+ 2934 		isA_CFDictionary: <>
+ 2935 		S_load_modules: EAPClientModuleStatus (), <./eapolclient.tproj/main.c 89>
+ 2936 			EAPClientModuleAddBuiltinModule: EAPClientModuleStatus (), <./EAP8021X.fproj/EAPClientModule.c 151>
+ 2937 				EAPClientModuleInit: void (), <./EAP8021X.fproj/EAPClientModule.c 139>
+ 2938 				EAPClientModuleLookup: 640
+ 2939 				malloc: <>
+ 2940 				bzero: <>
+ 2941 				EAPClientModuleValidatePlugin: EAPClientModuleStatus (), <./EAP8021X.fproj/EAPClientModule.c 108>
+ 2942 				EAPClientModuleAdd: EAPClientModuleStatus (), <./EAP8021X.fproj/EAPClientModule.c 124>
+ 2943 					malloc: <>
+ 2944 					bzero: <>
+ 2945 					TAILQ_INSERT_TAIL: <>
+ 2946 				free: <>
+ 2947 			md5_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/md5_plugin.c 206>
+ 2948 				strcmp: <>
+ 2949 			fprintf: <>
+ 2950 			eaptls_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/eaptls_plugin.c 959>
+ 2951 				strcmp: <>
+ 2952 			eapttls_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/eapttls_plugin.c 1618>
+ 2953 				strcmp: <>
+ 2954 			peap_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/peap_plugin.c 1710>
+ 2955 				strcmp: <>
+ 2956 			eapfast_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/eapfast_plugin.c 3711>
+ 2957 				strcmp: <>
+ 2958 			eapmschapv2_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/eapmschapv2_plugin.c 1206>
+ 2959 				strcmp: <>
+ 2960 			eapgtc_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/eapgtc_plugin.c 221>
+ 2961 				strcmp: <>
+ 2962 			eapsim_introspect: EAPClientPluginFuncRef (), <./EAP8021X.fproj/eapsim_plugin.c 2923>
+ 2963 				strcmp: <>
+ 2964 		EAPOLSocketSourceCreateSupplicant: SupplicantRef (), <./eapolclient.tproj/EAPOLSocket.c 1650>
+ 2965 			CFDictionaryGetValue: <>
+ 2966 			get_number: 2857
+ 2967 			my_log: 269
+ 2968 			EAPOLSocketSourceCreateSocket: 1801
+ 2969 			Supplicant_create: 1807
+ 2970 			Supplicant_set_no_ui: PRIVATE_EXTERN void (), <./eapolclient.tproj/Supplicant.c 3485>
+ 2971 			Supplicant_update_configuration: 2036
+ 2972 			EAPOLSocketFree: 1717
+ 2973 			Supplicant_free: 1672
+ 2974 		EAPOLSocketSourceFree: 2893
+ 2975 		setsid: <>
+ 2976 		chdir: <>
+ 2977 		Supplicant_update_configuration: 2036
+ 2978 		Supplicant_start: 1822
+ 2979 		CredentialsDialogue_create: 1945
+ 2980 		my_callback: void (), <./eapolclient.tproj/Alert.c 237>
+ 2981 			SCPrint: <>
+ 2982 			CFSTR: <>
+ 2983 			SecIdentityCopyCertificate: <>
+ 2984 			SecCertificateCopyShortDescription: <>
+ 2985 			CFRelease: <>
+ 2986 			printf: <>
+ 2987 			CredentialsDialogue_free: 1680
+ 2988 			Alert_create: Alert * (), <./eapolclient.tproj/Alert.c 161>
+ 2989 				malloc: <>
+ 2990 				my_log: 269
+ 2991 				bzero: <>
+ 2992 				make_alert_dict: CFDictionaryRef (), <./eapolclient.tproj/Alert.c 86>
+ 2993 					CFDictionaryCreateMutable: <>
+ 2994 					CFDictionaryAddValue: <>
+ 2995 					CFSTR: <>
+ 2996 					CFStringCreateWithCString: <>
+ 2997 					my_CFRelease: 35
+ 2998 				CFUserNotificationCreate: <>
+ 2999 				CFUserNotificationCreateRunLoopSource: <>
+ 3000 				Alert_response: void (), <./eapolclient.tproj/Alert.c 64>
+ 3001 					Alert_find: Alert * (), <./eapolclient.tproj/Alert.c 52>
+ 3002 						LIST_FOREACH: <>
+ 3003 					my_log: 269
+ 3004 					CFRunLoopSourceInvalidate: <>
+ 3005 					my_CFRelease: 35
+ 3006 				CFRunLoopAddSource: <>
+ 3007 				CFRunLoopGetCurrent: <>
+ 3008 				LIST_INSERT_HEAD: <>
+ 3009 				my_CFRelease: 35
+ 3010 				free: <>
+ 3011 			my_callback: 2980
+ 3012 			Alert_free: void (), <./eapolclient.tproj/Alert.c 214>
+ 3013 				LIST_REMOVE: <>
+ 3014 				CFRunLoopSourceInvalidate: <>
+ 3015 				my_CFRelease: 35
+ 3016 				CFUserNotificationCancel: <>
+ 3017 				bzero: <>
+ 3018 				free: <>
+ 3019 		AlertDialogue_create: 2600
+ 3020 		my_alert_callback: void (), <./eapolclient.tproj/Dialogue.c 1015>
+ 3021 			printf: <>
+ 3022 			AlertDialogue_free: 1673
+ 3023 		Alert_create: 2988

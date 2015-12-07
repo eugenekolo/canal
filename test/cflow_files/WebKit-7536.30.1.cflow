@@ -1,0 +1,2364 @@
+    1 	main: int (), <./gtk/tests/testhttpbackend.c 79>
+    2 		gtk_test_init: <>
+    3 		g_test_bug_base: <>
+    4 		g_test_add_func: <>
+    5 		test_webkit_web_inspector_destroy_inspected_web_view: void (), <./gtk/tests/testwebinspector.c 129>
+    6 			WEBKIT_WEB_VIEW: <>
+    7 			webkit_web_view_new: <>
+    8 			g_main_loop_new: <>
+    9 			g_signal_connect: <>
+   10 			G_CALLBACK: <>
+   11 			loadFinished: void (), <./gtk/tests/testwebinspector.c 79>
+   12 				g_main_loop_is_running: <>
+   13 				g_main_loop_quit: <>
+   14 			webkit_web_view_load_string: <>
+   15 			g_main_loop_run: <>
+   16 			g_object_set: <>
+   17 			webkit_web_view_get_settings: <>
+   18 			webkit_web_view_get_inspector: <>
+   19 			g_object_connect: <>
+   20 			inspectElementCallback: WebKitWebView * (), <./gtk/tests/testwebinspector.c 50>
+   21 				gtk_window_new: <>
+   22 				webkit_web_view_new: <>
+   23 				gtk_container_add: <>
+   24 				GTK_CONTAINER: <>
+   25 				g_signal_connect: <>
+   26 				G_CALLBACK: <>
+   27 				consoleMessageCallback: gboolean (), <./gtk/tests/testwebinspector.c 41>
+   28 					strstr: <>
+   29 					g_warning: <>
+   30 				WEBKIT_WEB_VIEW: <>
+   31 			showInspector: gboolean (), <./gtk/tests/testwebinspector.c 73>
+   32 				g_idle_add: <>
+   33 				quitLoop: gboolean (), <./gtk/tests/testwebinspector.c 32>
+   34 					g_main_loop_quit: <>
+   35 			closeInspector: gboolean (), <./gtk/tests/testwebinspector.c 65>
+   36 				gtk_widget_destroy: <>
+   37 			webkit_web_inspector_inspect_coordinates: <>
+   38 			g_assert_cmpint: <>
+   39 			gtk_widget_destroy: <>
+   40 			GTK_WIDGET: <>
+   41 			g_main_loop_unref: <>
+   42 		test_webkit_web_inspector_close_and_inspect: void (), <./gtk/tests/testwebinspector.c 86>
+   43 			WEBKIT_WEB_VIEW: <>
+   44 			webkit_web_view_new: <>
+   45 			g_main_loop_new: <>
+   46 			g_signal_connect: <>
+   47 			G_CALLBACK: <>
+   48 			loadFinished: 11
+   49 			webkit_web_view_load_string: <>
+   50 			g_main_loop_run: <>
+   51 			g_object_set: <>
+   52 			webkit_web_view_get_settings: <>
+   53 			webkit_web_view_get_inspector: <>
+   54 			g_object_connect: <>
+   55 			inspectElementCallback: 20
+   56 			showInspector: 31
+   57 			closeInspector: 35
+   58 			webkit_web_inspector_inspect_coordinates: <>
+   59 			g_assert_cmpint: <>
+   60 			webkit_web_inspector_close: <>
+   61 			gtk_widget_destroy: <>
+   62 			GTK_WIDGET: <>
+   63 			g_main_loop_unref: <>
+   64 		g_test_run: <>
+   65 		g_critical: <>
+   66 		g_test_add: <>
+   67 		dom_document_fixture_setup: void (), <./gtk/tests/testdomdocument.c 49>
+   68 			g_main_loop_new: <>
+   69 			webkit_web_view_new: <>
+   70 			g_object_ref_sink: <>
+   71 			webkit_web_view_load_string: <>
+   72 			WEBKIT_WEB_VIEW: <>
+   73 			g_idle_add: <>
+   74 			finish_loading: gboolean (), <./gtk/tests/testdomdocument.c 41>
+   75 				g_main_loop_is_running: <>
+   76 				g_main_loop_quit: <>
+   77 			g_main_loop_run: <>
+   78 		test_dom_document_title: void (), <./gtk/tests/testdomdocument.c 69>
+   79 			g_assert: <>
+   80 			webkit_web_view_get_dom_document: <>
+   81 			webkit_dom_document_get_title: <>
+   82 			g_assert_cmpstr: <>
+   83 			g_free: <>
+   84 			webkit_dom_document_set_title: <>
+   85 		dom_document_fixture_teardown: void (), <./gtk/tests/testdomdocument.c 62>
+   86 			g_object_unref: <>
+   87 			g_main_loop_unref: <>
+   88 		test_dom_document_get_elements_by_tag_name: void (), <./gtk/tests/testdomdocument.c 87>
+   89 			g_assert: <>
+   90 			webkit_web_view_get_dom_document: <>
+   91 			webkit_dom_document_get_elements_by_tag_name: <>
+   92 			webkit_dom_node_list_get_length: <>
+   93 			g_assert_cmpint: <>
+   94 			webkit_dom_node_list_item: <>
+   95 			g_assert_cmpstr: <>
+   96 			webkit_dom_element_get_tag_name: <>
+   97 			g_strdup_printf: <>
+   98 			webkit_dom_html_element_get_inner_text: <>
+   99 			g_free: <>
+  100 			g_object_unref: <>
+  101 		test_dom_document_get_elements_by_class_name: void (), <./gtk/tests/testdomdocument.c 116>
+  102 			g_assert: <>
+  103 			webkit_web_view_get_dom_document: <>
+  104 			webkit_dom_document_get_elements_by_class_name: <>
+  105 			webkit_dom_node_list_get_length: <>
+  106 			g_assert_cmpint: <>
+  107 			webkit_dom_node_list_item: <>
+  108 			g_assert_cmpstr: <>
+  109 			webkit_dom_element_get_tag_name: <>
+  110 			g_object_unref: <>
+  111 		test_dom_document_get_element_by_id: void (), <./gtk/tests/testdomdocument.c 141>
+  112 			g_assert: <>
+  113 			webkit_web_view_get_dom_document: <>
+  114 			webkit_dom_document_get_element_by_id: <>
+  115 			g_assert_cmpstr: <>
+  116 			webkit_dom_html_element_get_inner_text: <>
+  117 		test_dom_document_get_links: void (), <./gtk/tests/testdomdocument.c 161>
+  118 			g_assert: <>
+  119 			webkit_web_view_get_dom_document: <>
+  120 			webkit_dom_document_get_links: <>
+  121 			webkit_dom_html_collection_get_length: <>
+  122 			g_assert_cmpint: <>
+  123 			webkit_dom_html_collection_item: <>
+  124 			g_assert_cmpstr: <>
+  125 			webkit_dom_element_get_tag_name: <>
+  126 			webkit_dom_html_element_get_inner_text: <>
+  127 			webkit_dom_html_anchor_element_get_href: <>
+  128 			g_object_unref: <>
+  129 		test_dom_document_garbage_collection: void (), <./gtk/tests/testdomdocument.c 196>
+  130 			g_assert: <>
+  131 			webkit_web_view_get_dom_document: <>
+  132 			g_object_weak_ref: <>
+  133 			G_OBJECT: <>
+  134 			weak_notify: void (), <./gtk/tests/testdomdocument.c 190>
+  135 			webkit_dom_document_get_head: <>
+  136 			webkit_dom_document_get_body: <>
+  137 			webkit_dom_document_get_links: <>
+  138 			webkit_web_view_load_string: <>
+  139 			WEBKIT_WEB_VIEW: <>
+  140 			g_main_context_pending: <>
+  141 			g_main_context_iteration: <>
+  142 			g_assert_cmpuint: <>
+  143 			g_object_unref: <>
+  144 			webkit_dom_document_get_element_by_id: <>
+  145 			webkit_dom_element_set_attribute: <>
+  146 			webkit_dom_html_iframe_element_get_content_document: <>
+  147 			WEBKIT_DOM_HTML_IFRAME_ELEMENT: <>
+  148 			gtk_widget_destroy: <>
+  149 		test_info_new: TestInfo * (), <./gtk/tests/testkeyevents.c 45>
+  150 			g_slice_new0: <>
+  151 			g_strdup: <>
+  152 			g_slice_new: <>
+  153 		copy_and_paste_fixture_setup: void (), <./gtk/tests/testcopyandpaste.c 61>
+  154 			g_main_loop_new: <>
+  155 			gtk_window_new: <>
+  156 			WEBKIT_WEB_VIEW: <>
+  157 			webkit_web_view_new: <>
+  158 			gtk_container_add: <>
+  159 			GTK_CONTAINER: <>
+  160 			GTK_WIDGET: <>
+  161 		test_copy_and_paste: void (), <./gtk/tests/testcopyandpaste.c 120>
+  162 			g_signal_connect: <>
+  163 			G_CALLBACK: <>
+  164 			map_event_cb: gboolean (), <./gtk/tests/testdomdomwindow.c 97>
+  165 				webkit_web_view_load_string: <>
+  166 				WEBKIT_WEB_VIEW: <>
+  167 			gtk_widget_show: <>
+  168 			GTK_WIDGET: <>
+  169 			gtk_window_present: <>
+  170 			GTK_WINDOW: <>
+  171 			gtk_widget_grab_focus: <>
+  172 			load_status_cb: void (), <./gtk/tests/testcopyandpaste.c 78>
+  173 				webkit_web_view_get_load_status: <>
+  174 				gtk_clipboard_get: <>
+  175 				gtk_clipboard_clear: <>
+  176 				webkit_web_view_copy_clipboard: <>
+  177 				gtk_clipboard_wait_for_text: <>
+  178 				g_assert: <>
+  179 				strcmp: <>
+  180 				g_free: <>
+  181 				gtk_clipboard_wait_for_contents: <>
+  182 				gdk_atom_intern: <>
+  183 				g_strndup: <>
+  184 				gtk_selection_data_get_data: <>
+  185 				gtk_selection_data_get_length: <>
+  186 				strlen: <>
+  187 				strncmp: <>
+  188 				gtk_clipboard_wait_is_uris_available: <>
+  189 				gtk_clipboard_wait_is_image_available: <>
+  190 				g_main_loop_quit: <>
+  191 			g_main_loop_run: <>
+  192 		copy_and_paste_fixture_teardown: void (), <./gtk/tests/testcopyandpaste.c 71>
+  193 			gtk_widget_destroy: <>
+  194 			g_main_loop_unref: <>
+  195 			test_info_destroy: void (), <./gtk/tests/testkeyevents.c 58>
+  196 				g_free: <>
+  197 				g_slice_free: <>
+  198 		test_pasting_markup: void (), <./gtk/tests/testcopyandpaste.c 200>
+  199 			gtk_target_list_new: <>
+  200 			gtk_target_list_add: <>
+  201 			gdk_atom_intern: <>
+  202 			gtk_target_table_new_from_list: <>
+  203 			gtk_clipboard_set_with_data: <>
+  204 			gtk_clipboard_get: <>
+  205 			pasting_test_get_data_callback: void (), <./gtk/tests/testcopyandpaste.c 190>
+  206 				gtk_selection_data_set: <>
+  207 				gdk_atom_intern: <>
+  208 				strlen: <>
+  209 			pasting_test_clear_data_callback: void (), <./gtk/tests/testcopyandpaste.c 195>
+  210 				g_free: <>
+  211 			g_strdup: <>
+  212 			gtk_target_list_unref: <>
+  213 			gtk_target_table_free: <>
+  214 			g_signal_connect: <>
+  215 			G_CALLBACK: <>
+  216 			map_event_cb: 164
+  217 			window_object_cleared_callback: void (), <./gtk/tests/testcopyandpaste.c 182>
+  218 				JSStringCreateWithUTF8CString: <>
+  219 				JSObjectMakeFunctionWithCallback: <>
+  220 				runPasteTestCallback: JSValueRef (), <./gtk/tests/testcopyandpaste.c 138>
+  221 					gtk_widget_grab_focus: <>
+  222 					GTK_WIDGET: <>
+  223 					gdk_event_new: <>
+  224 					gdk_unicode_to_keyval: <>
+  225 					gtk_widget_get_window: <>
+  226 					g_object_ref: <>
+  227 					gdk_display_get_device_manager: <>
+  228 					gdk_window_get_display: <>
+  229 					gdk_event_set_device: <>
+  230 					gdk_device_manager_get_client_pointer: <>
+  231 					gdk_keymap_get_entries_for_keyval: <>
+  232 					gdk_keymap_get_default: <>
+  233 					g_free: <>
+  234 					gtk_main_do_event: <>
+  235 					gdk_event_free: <>
+  236 					JSStringCreateWithUTF8CString: <>
+  237 					JSEvaluateScript: <>
+  238 					JSStringRelease: <>
+  239 					g_assert: <>
+  240 					JSValueIsString: <>
+  241 					JSValueToStringCopy: <>
+  242 					JSStringIsEqual: <>
+  243 					g_main_loop_quit: <>
+  244 					JSValueMakeUndefined: <>
+  245 				JSObjectSetProperty: <>
+  246 				JSStringRelease: <>
+  247 			gtk_widget_show: <>
+  248 			GTK_WIDGET: <>
+  249 			gtk_window_present: <>
+  250 			GTK_WINDOW: <>
+  251 			g_main_loop_run: <>
+  252 		test_application_cache_maximum_size: void (), <./gtk/tests/testapplicationcache.c 27>
+  253 			webkit_application_cache_set_maximum_size: <>
+  254 			WEBKIT_WEB_VIEW: <>
+  255 			webkit_web_view_new: <>
+  256 			g_object_ref_sink: <>
+  257 			g_object_unref: <>
+  258 			g_assert: <>
+  259 			webkit_application_cache_get_maximum_size: <>
+  260 		test_network_response_create_destroy: void (), <./gtk/tests/testnetworkresponse.c 31>
+  261 			WEBKIT_NETWORK_RESPONSE: <>
+  262 			g_object_new: <>
+  263 			g_assert: <>
+  264 			WEBKIT_IS_NETWORK_RESPONSE: <>
+  265 			webkit_network_response_get_message: <>
+  266 			g_object_unref: <>
+  267 			soup_message_new: <>
+  268 			g_assert_cmpint: <>
+  269 			G_OBJECT: <>
+  270 			g_assert_cmpstr: <>
+  271 			webkit_network_response_get_uri: <>
+  272 		test_network_response_properties: void (), <./gtk/tests/testnetworkresponse.c 63>
+  273 			webkit_network_response_new: <>
+  274 			g_assert: <>
+  275 			WEBKIT_IS_NETWORK_RESPONSE: <>
+  276 			g_assert_cmpstr: <>
+  277 			webkit_network_response_get_uri: <>
+  278 			g_object_unref: <>
+  279 			soup_message_new: <>
+  280 			WEBKIT_NETWORK_RESPONSE: <>
+  281 			g_object_new: <>
+  282 			webkit_network_response_get_message: <>
+  283 			soup_uri_to_string: <>
+  284 			soup_message_get_uri: <>
+  285 			g_free: <>
+  286 		atk_roles_fixture_setup: void (), <./gtk/tests/testatkroles.c 77>
+  287 			g_main_loop_new: <>
+  288 			webkit_web_view_new: <>
+  289 			g_object_ref_sink: <>
+  290 			gtk_widget_size_allocate: <>
+  291 			webkit_web_view_load_string: <>
+  292 			WEBKIT_WEB_VIEW: <>
+  293 			g_idle_add: <>
+  294 			finish_loading: gboolean (), <./gtk/tests/testatkroles.c 57>
+  295 				g_main_loop_is_running: <>
+  296 				g_main_loop_quit: <>
+  297 				gtk_widget_get_accessible: <>
+  298 				atk_object_ref_accessible_child: <>
+  299 				g_assert: <>
+  300 				g_object_unref: <>
+  301 			g_main_loop_run: <>
+  302 		test_webkit_atk_get_role_document_frame: void (), <./gtk/tests/testatkroles.c 112>
+  303 			atk_object_get_role: <>
+  304 			g_assert: <>
+  305 		atk_roles_fixture_teardown: void (), <./gtk/tests/testatkroles.c 93>
+  306 			g_object_unref: <>
+  307 			g_main_loop_unref: <>
+  308 		test_webkit_atk_get_role_heading: void (), <./gtk/tests/testatkroles.c 118>
+  309 			get_child_and_test_role: void (), <./gtk/tests/testatkroles.c 99>
+  310 				atk_object_ref_accessible_child: <>
+  311 				g_assert: <>
+  312 				atk_object_get_role: <>
+  313 				g_object_unref: <>
+  314 		test_webkit_atk_get_role_image: void (), <./gtk/tests/testatkroles.c 128>
+  315 			atk_object_ref_accessible_child: <>
+  316 			g_assert: <>
+  317 			get_child_and_test_role: 309
+  318 			g_object_unref: <>
+  319 		test_webkit_atk_get_role_link: void (), <./gtk/tests/testatkroles.c 139>
+  320 			atk_object_ref_accessible_child: <>
+  321 			g_assert: <>
+  322 			get_child_and_test_role: 309
+  323 			g_object_unref: <>
+  324 		test_webkit_atk_get_role_list_and_item: void (), <./gtk/tests/testatkroles.c 150>
+  325 			atk_object_ref_accessible_child: <>
+  326 			g_assert: <>
+  327 			atk_object_get_role: <>
+  328 			get_child_and_test_role: 309
+  329 			g_object_unref: <>
+  330 		test_webkit_atk_get_role_paragraph: void (), <./gtk/tests/testatkroles.c 173>
+  331 			get_child_and_test_role: 309
+  332 		test_webkit_atk_get_role_section: void (), <./gtk/tests/testatkroles.c 178>
+  333 			get_child_and_test_role: 309
+  334 		test_webkit_atk_get_role_table: void (), <./gtk/tests/testatkroles.c 184>
+  335 			get_child_and_test_role: 309
+  336 		test_webkit_atk_get_role_separator: void (), <./gtk/tests/testatkroles.c 189>
+  337 			get_child_and_test_role: 309
+  338 		test_webkit_atk_get_role_combobox: void (), <./gtk/tests/testatkroles.c 194>
+  339 			atk_object_ref_accessible_child: <>
+  340 			g_assert: <>
+  341 			atk_object_get_role: <>
+  342 			get_child_and_test_role: 309
+  343 			g_object_unref: <>
+  344 		test_webkit_atk_get_role_form: void (), <./gtk/tests/testatkroles.c 221>
+  345 			get_child_and_test_role: 309
+  346 		test_webkit_atk_get_role_check_box: void (), <./gtk/tests/testatkroles.c 226>
+  347 			atk_object_ref_accessible_child: <>
+  348 			g_assert: <>
+  349 			get_child_and_test_role: 309
+  350 			g_object_unref: <>
+  351 		test_webkit_atk_get_role_entry: void (), <./gtk/tests/testatkroles.c 237>
+  352 			atk_object_ref_accessible_child: <>
+  353 			g_assert: <>
+  354 			get_child_and_test_role: 309
+  355 			g_object_unref: <>
+  356 		test_webkit_atk_get_role_label: void (), <./gtk/tests/testatkroles.c 248>
+  357 			atk_object_ref_accessible_child: <>
+  358 			g_assert: <>
+  359 			get_child_and_test_role: 309
+  360 			g_object_unref: <>
+  361 		test_webkit_atk_get_role_listbox: void (), <./gtk/tests/testatkroles.c 259>
+  362 			atk_object_ref_accessible_child: <>
+  363 			g_assert: <>
+  364 			atk_object_get_role: <>
+  365 			get_child_and_test_role: 309
+  366 			g_object_unref: <>
+  367 		test_webkit_atk_get_role_password_text: void (), <./gtk/tests/testatkroles.c 279>
+  368 			atk_object_ref_accessible_child: <>
+  369 			g_assert: <>
+  370 			get_child_and_test_role: 309
+  371 			g_object_unref: <>
+  372 		test_webkit_atk_get_role_push_button: void (), <./gtk/tests/testatkroles.c 290>
+  373 			atk_object_ref_accessible_child: <>
+  374 			g_assert: <>
+  375 			get_child_and_test_role: 309
+  376 			g_object_unref: <>
+  377 		test_webkit_atk_get_role_radio_button: void (), <./gtk/tests/testatkroles.c 301>
+  378 			atk_object_ref_accessible_child: <>
+  379 			g_assert: <>
+  380 			get_child_and_test_role: 309
+  381 			g_object_unref: <>
+  382 		hit_test_result_fixture_setup: void (), <./gtk/tests/testhittestresult.c 58>
+  383 			WEBKIT_WEB_VIEW: <>
+  384 			webkit_web_view_new: <>
+  385 			g_object_ref_sink: <>
+  386 			g_main_loop_new: <>
+  387 		test_webkit_hit_test_result: void (), <./gtk/tests/testhittestresult.c 128>
+  388 			webkit_web_view_load_string: <>
+  389 			gtk_widget_size_allocate: <>
+  390 			GTK_WIDGET: <>
+  391 			g_signal_connect: <>
+  392 			G_CALLBACK: <>
+  393 			load_status_cb: void (), <./gtk/tests/testhittestresult.c 74>
+  394 				webkit_web_view_get_load_status: <>
+  395 				gdk_event_new: <>
+  396 				webkit_web_view_get_hit_test_result: <>
+  397 				gdk_event_free: <>
+  398 				g_assert: <>
+  399 				g_object_get: <>
+  400 				WEBKIT_DOM_IS_NODE: <>
+  401 				g_assert_cmpint: <>
+  402 				WEBKIT_DOM_IS_HTML_HTML_ELEMENT: <>
+  403 				WEBKIT_DOM_IS_HTML_IMAGE_ELEMENT: <>
+  404 				webkit_dom_node_get_parent_node: <>
+  405 				WEBKIT_DOM_IS_HTML_ANCHOR_ELEMENT: <>
+  406 				g_object_unref: <>
+  407 				g_main_loop_quit: <>
+  408 			g_main_loop_run: <>
+  409 		hit_test_result_fixture_teardown: void (), <./gtk/tests/testhittestresult.c 66>
+  410 			g_object_unref: <>
+  411 			g_main_loop_unref: <>
+  412 			test_info_destroy: 195
+  413 		key_event_fixture_setup: void (), <./gtk/tests/testkeyevents.c 65>
+  414 			g_main_loop_new: <>
+  415 			gtk_window_new: <>
+  416 			WEBKIT_WEB_VIEW: <>
+  417 			webkit_web_view_new: <>
+  418 			gtk_container_add: <>
+  419 			GTK_CONTAINER: <>
+  420 			GTK_WIDGET: <>
+  421 		test_keypress_events: void (), <./gtk/tests/testkeyevents.c 144>
+  422 			setup_keyevent_test: void (), <./gtk/tests/testkeyevents.c 127>
+  423 				g_signal_connect: <>
+  424 				G_CALLBACK: <>
+  425 				map_event_cb: 164
+  426 				gtk_widget_grab_focus: <>
+  427 				GTK_WIDGET: <>
+  428 				gtk_widget_show: <>
+  429 				gtk_window_present: <>
+  430 				GTK_WINDOW: <>
+  431 				g_main_loop_run: <>
+  432 			G_CALLBACK: <>
+  433 			test_keypress_events_load_status_cb: void (), <./gtk/tests/testkeyevents.c 103>
+  434 				webkit_web_view_get_load_status: <>
+  435 				g_signal_connect: <>
+  436 				G_CALLBACK: <>
+  437 				key_press_event_cb: gboolean (), <./gtk/tests/testkeyevents.c 82>
+  438 					GTK_WIDGET_GET_CLASS: <>
+  439 					key_press_event: <>
+  440 					GTK_WIDGET: <>
+  441 					g_assert_cmpint: <>
+  442 				key_release_event_cb: gboolean (), <./gtk/tests/testkeyevents.c 91>
+  443 					GTK_WIDGET_GET_CLASS: <>
+  444 					key_press_event: <>
+  445 					GTK_WIDGET: <>
+  446 					g_assert: <>
+  447 					g_main_loop_quit: <>
+  448 				gtk_test_widget_send_key: <>
+  449 				GTK_WIDGET: <>
+  450 				gdk_unicode_to_keyval: <>
+  451 				g_assert_not_reached: <>
+  452 		key_event_fixture_teardown: void (), <./gtk/tests/testkeyevents.c 75>
+  453 			gtk_widget_destroy: <>
+  454 			g_main_loop_unref: <>
+  455 			test_info_destroy: 195
+  456 		test_ime: void (), <./gtk/tests/testkeyevents.c 209>
+  457 			setup_keyevent_test: 422
+  458 			G_CALLBACK: <>
+  459 			test_ime_load_status_cb: void (), <./gtk/tests/testkeyevents.c 179>
+  460 				webkit_web_view_get_load_status: <>
+  461 				webkit_web_frame_get_global_context: <>
+  462 				webkit_web_view_get_main_frame: <>
+  463 				g_assert: <>
+  464 				g_object_get: <>
+  465 				element_text_equal_to: gboolean (), <./gtk/tests/testkeyevents.c 149>
+  466 					JSStringCreateWithUTF8CString: <>
+  467 					JSEvaluateScript: <>
+  468 					JSStringRelease: <>
+  469 					JSValueIsString: <>
+  470 					g_assert: <>
+  471 					JSValueToStringCopy: <>
+  472 					JSStringGetMaximumUTF8CStringSize: <>
+  473 					g_malloc: <>
+  474 					JSStringGetUTF8CString: <>
+  475 					g_utf8_collate: <>
+  476 					g_free: <>
+  477 				g_signal_emit_by_name: <>
+  478 				g_object_unref: <>
+  479 				g_main_loop_quit: <>
+  480 		test_blocking: void (), <./gtk/tests/testkeyevents.c 248>
+  481 			setup_keyevent_test: 422
+  482 			G_CALLBACK: <>
+  483 			test_blocking_load_status_cb: void (), <./gtk/tests/testkeyevents.c 226>
+  484 				webkit_web_view_get_load_status: <>
+  485 				g_strdup: <>
+  486 				gtk_test_widget_send_key: <>
+  487 				GTK_WIDGET: <>
+  488 				gdk_unicode_to_keyval: <>
+  489 				g_assert_not_reached: <>
+  490 				g_idle_add: <>
+  491 				verify_contents: gboolean (), <./gtk/tests/testkeyevents.c 214>
+  492 					webkit_web_frame_get_global_context: <>
+  493 					webkit_web_view_get_main_frame: <>
+  494 					g_assert: <>
+  495 					element_text_equal_to: 465
+  496 					g_main_loop_quit: <>
+  497 		test_xim: void (), <./gtk/tests/testkeyevents.c 298>
+  498 			setup_keyevent_test: 422
+  499 			G_CALLBACK: <>
+  500 			test_xim_load_status_cb: void (), <./gtk/tests/testkeyevents.c 254>
+  501 				webkit_web_view_get_load_status: <>
+  502 				g_object_get: <>
+  503 				g_assert: <>
+  504 				g_strdup: <>
+  505 				gtk_im_multicontext_get_context_id: <>
+  506 				GTK_IM_MULTICONTEXT: <>
+  507 				gtk_im_multicontext_set_context_id: <>
+  508 				gtk_test_widget_send_key: <>
+  509 				GTK_WIDGET: <>
+  510 				gdk_unicode_to_keyval: <>
+  511 				g_assert_not_reached: <>
+  512 				g_free: <>
+  513 				g_object_unref: <>
+  514 				g_idle_add: <>
+  515 				verify_contents: 491
+  516 		web_history_item_fixture_setup: void (), <./gtk/tests/testwebhistoryitem.c 30>
+  517 			webkit_web_history_item_new_with_data: <>
+  518 			g_assert_cmpint: <>
+  519 			G_OBJECT: <>
+  520 			g_assert: <>
+  521 		test_webkit_web_history_item_get_data: void (), <./gtk/tests/testwebhistoryitem.c 45>
+  522 			g_assert_cmpstr: <>
+  523 			webkit_web_history_item_get_title: <>
+  524 			webkit_web_history_item_get_uri: <>
+  525 		web_history_item_fixture_teardown: void (), <./gtk/tests/testwebhistoryitem.c 38>
+  526 			g_assert: <>
+  527 			g_assert_cmpint: <>
+  528 			G_OBJECT: <>
+  529 		test_webkit_web_history_item_alternate_title: void (), <./gtk/tests/testwebhistoryitem.c 52>
+  530 			webkit_web_history_item_set_alternate_title: <>
+  531 			g_assert_cmpstr: <>
+  532 			webkit_web_history_item_get_alternate_title: <>
+  533 		test_webkit_web_frame_create_destroy: void (), <./gtk/tests/testwebframe.c 74>
+  534 			g_test_bug: <>
+  535 			webkit_web_view_new: <>
+  536 			g_object_ref_sink: <>
+  537 			g_assert_cmpint: <>
+  538 			G_OBJECT: <>
+  539 			g_object_unref: <>
+  540 			gtk_window_new: <>
+  541 			gtk_container_add: <>
+  542 			GTK_CONTAINER: <>
+  543 			gtk_widget_show: <>
+  544 			gtk_widget_destroy: <>
+  545 		test_webkit_web_frame_created_signal: void (), <./gtk/tests/testwebframe.c 44>
+  546 			g_main_loop_new: <>
+  547 			gtk_window_new: <>
+  548 			webkit_web_view_new: <>
+  549 			g_signal_connect: <>
+  550 			G_CALLBACK: <>
+  551 			createFrameSignalTestFrameCreatedCallback: void (), <./gtk/tests/testwebframe.c 32>
+  552 			g_timeout_add: <>
+  553 			createFrameSignalTestTimeout: gboolean (), <./gtk/tests/testwebframe.c 37>
+  554 				g_assert_cmpint: <>
+  555 				g_main_loop_quit: <>
+  556 			gtk_container_add: <>
+  557 			GTK_CONTAINER: <>
+  558 			gtk_widget_show: <>
+  559 			webkit_web_view_load_string: <>
+  560 			WEBKIT_WEB_VIEW: <>
+  561 			g_main_loop_run: <>
+  562 		test_webkit_web_frame_lifetime: void (), <./gtk/tests/testwebframe.c 95>
+  563 			g_test_bug: <>
+  564 			WEBKIT_WEB_VIEW: <>
+  565 			webkit_web_view_new: <>
+  566 			g_object_ref_sink: <>
+  567 			g_assert_cmpint: <>
+  568 			G_OBJECT: <>
+  569 			webkit_web_view_get_main_frame: <>
+  570 			g_object_ref: <>
+  571 			g_object_unref: <>
+  572 		test_webkit_web_frame_printing: void (), <./gtk/tests/testwebframe.c 134>
+  573 			WEBKIT_WEB_VIEW: <>
+  574 			webkit_web_view_new: <>
+  575 			g_object_ref_sink: <>
+  576 			g_assert_cmpint: <>
+  577 			G_OBJECT: <>
+  578 			webkit_web_view_load_string: <>
+  579 			g_main_loop_new: <>
+  580 			g_signal_connect: <>
+  581 			G_CALLBACK: <>
+  582 			print_requested_cb: gboolean (), <./gtk/tests/testwebframe.c 121>
+  583 				g_object_set_data: <>
+  584 				G_OBJECT: <>
+  585 				GINT_TO_POINTER: <>
+  586 				g_main_loop_quit: <>
+  587 			g_object_set_data: <>
+  588 			GINT_TO_POINTER: <>
+  589 			webkit_web_view_execute_script: <>
+  590 			g_timeout_add: <>
+  591 			print_timeout: void (), <./gtk/tests/testwebframe.c 128>
+  592 				g_main_loop_is_running: <>
+  593 				g_main_loop_quit: <>
+  594 			g_main_loop_run: <>
+  595 			GPOINTER_TO_INT: <>
+  596 			g_object_get_data: <>
+  597 			g_file_open_tmp: <>
+  598 			close: <>
+  599 			g_critical: <>
+  600 			g_error_free: <>
+  601 			g_unlink: <>
+  602 			g_warning: <>
+  603 			g_strerror: <>
+  604 			webkit_web_view_get_main_frame: <>
+  605 			gtk_print_operation_new: <>
+  606 			gtk_print_operation_set_export_filename: <>
+  607 			webkit_web_frame_print_full: <>
+  608 			g_file_test: <>
+  609 			g_object_unref: <>
+  610 			g_free: <>
+  611 		test_webkit_web_frame_response: void (), <./gtk/tests/testwebframe.c 202>
+  612 			g_object_new: <>
+  613 			webkit_web_frame_get_network_response: <>
+  614 			g_assert: <>
+  615 			g_object_unref: <>
+  616 		test_webkit_window_scrollbar_policy: void (), <./gtk/tests/testwindow.c 34>
+  617 			g_main_loop_new: <>
+  618 			gtk_scrolled_window_new: <>
+  619 			gtk_scrolled_window_set_policy: <>
+  620 			GTK_SCROLLED_WINDOW: <>
+  621 			webkit_web_view_new: <>
+  622 			g_object_ref_sink: <>
+  623 			g_signal_connect: <>
+  624 			G_CALLBACK: <>
+  625 			notify_load_status_cb: void (), <./gtk/tests/testwindow.c 25>
+  626 				webkit_web_view_get_load_status: <>
+  627 				g_main_loop_quit: <>
+  628 			gtk_container_add: <>
+  629 			GTK_CONTAINER: <>
+  630 			webkit_web_view_get_main_frame: <>
+  631 			WEBKIT_WEB_VIEW: <>
+  632 			webkit_web_view_load_html_string: <>
+  633 			g_main_loop_run: <>
+  634 			gtk_scrolled_window_get_policy: <>
+  635 			g_assert: <>
+  636 			webkit_web_frame_get_horizontal_scrollbar_policy: <>
+  637 			webkit_web_frame_get_vertical_scrollbar_policy: <>
+  638 			g_object_unref: <>
+  639 		test_webkit_web_back_forward_list_add_item: void (), <./gtk/tests/testwebbackforwardlist.c 198>
+  640 			g_test_bug: <>
+  641 			WEBKIT_WEB_VIEW: <>
+  642 			webkit_web_view_new: <>
+  643 			g_object_ref_sink: <>
+  644 			webkit_web_view_set_maintains_back_forward_list: <>
+  645 			webkit_web_view_get_back_forward_list: <>
+  646 			g_assert: <>
+  647 			webkit_web_back_forward_list_get_current_item: <>
+  648 			g_assert_cmpint: <>
+  649 			webkit_web_back_forward_list_get_forward_length: <>
+  650 			webkit_web_back_forward_list_get_back_length: <>
+  651 			webkit_web_view_can_go_forward: <>
+  652 			webkit_web_view_can_go_back: <>
+  653 			webkit_web_history_item_new_with_data: <>
+  654 			webkit_web_back_forward_list_add_item: <>
+  655 			g_object_unref: <>
+  656 			webkit_web_back_forward_list_contains_item: <>
+  657 			g_assert_cmpstr: <>
+  658 			webkit_web_history_item_get_uri: <>
+  659 			webkit_web_history_item_get_title: <>
+  660 			webkit_web_back_forward_list_get_back_item: <>
+  661 			webkit_web_view_go_to_back_forward_item: <>
+  662 		test_webkit_web_back_forward_list_order: void (), <./gtk/tests/testwebbackforwardlist.c 108>
+  663 			g_test_bug: <>
+  664 			WEBKIT_WEB_VIEW: <>
+  665 			webkit_web_view_new: <>
+  666 			g_object_ref_sink: <>
+  667 			webkit_web_view_set_maintains_back_forward_list: <>
+  668 			webkit_web_view_get_back_forward_list: <>
+  669 			g_assert: <>
+  670 			webkit_web_back_forward_list_get_current_item: <>
+  671 			g_assert_cmpint: <>
+  672 			webkit_web_back_forward_list_get_forward_length: <>
+  673 			webkit_web_back_forward_list_get_back_length: <>
+  674 			webkit_web_view_can_go_forward: <>
+  675 			webkit_web_view_can_go_back: <>
+  676 			webkit_web_history_item_new_with_data: <>
+  677 			webkit_web_back_forward_list_add_item: <>
+  678 			g_object_unref: <>
+  679 			webkit_web_back_forward_list_contains_item: <>
+  680 			webkit_web_back_forward_list_get_back_list_with_limit: <>
+  681 			WEBKIT_WEB_HISTORY_ITEM: <>
+  682 			g_assert_cmpstr: <>
+  683 			webkit_web_history_item_get_uri: <>
+  684 			webkit_web_history_item_get_title: <>
+  685 			g_list_free: <>
+  686 			webkit_web_view_go_to_back_forward_item: <>
+  687 			webkit_web_back_forward_list_get_forward_list_with_limit: <>
+  688 		test_webkit_web_history_item_lifetime: void (), <./gtk/tests/testwebbackforwardlist.c 26>
+  689 			g_test_bug: <>
+  690 			WEBKIT_WEB_VIEW: <>
+  691 			webkit_web_view_new: <>
+  692 			g_object_ref_sink: <>
+  693 			webkit_web_view_get_back_forward_list: <>
+  694 			g_assert_cmpint: <>
+  695 			G_OBJECT: <>
+  696 			webkit_web_history_item_new_with_data: <>
+  697 			webkit_web_back_forward_list_add_item: <>
+  698 			g_object_unref: <>
+  699 			webkit_web_back_forward_list_get_back_item: <>
+  700 			g_object_ref: <>
+  701 			webkit_web_back_forward_list_get_current_item: <>
+  702 			webkit_web_back_forward_list_go_to_item: <>
+  703 			webkit_web_back_forward_list_get_forward_item: <>
+  704 			webkit_web_back_forward_list_get_nth_item: <>
+  705 			webkit_web_back_forward_list_get_back_list_with_limit: <>
+  706 			webkit_web_back_forward_list_get_forward_list_with_limit: <>
+  707 			g_list_free: <>
+  708 		test_webkit_web_back_forward_list_clear: void (), <./gtk/tests/testwebbackforwardlist.c 269>
+  709 			g_test_bug: <>
+  710 			WEBKIT_WEB_VIEW: <>
+  711 			webkit_web_view_new: <>
+  712 			g_object_ref_sink: <>
+  713 			webkit_web_view_get_back_forward_list: <>
+  714 			g_assert: <>
+  715 			g_assert_cmpint: <>
+  716 			webkit_web_back_forward_list_get_forward_length: <>
+  717 			webkit_web_back_forward_list_get_back_length: <>
+  718 			webkit_web_back_forward_list_get_current_item: <>
+  719 			webkit_web_view_can_go_forward: <>
+  720 			webkit_web_view_can_go_back: <>
+  721 			webkit_web_back_forward_list_clear: <>
+  722 			webkit_web_history_item_new_with_data: <>
+  723 			webkit_web_back_forward_list_add_item: <>
+  724 			g_object_unref: <>
+  725 			webkit_web_back_forward_list_contains_item: <>
+  726 		soup_server_new: <>
+  727 		soup_server_run_async: <>
+  728 		soup_server_add_handler: <>
+  729 		server_callback: void (), <./gtk/tests/testwebresource.c 45>
+  730 			soup_message_set_status: <>
+  731 			g_str_equal: <>
+  732 			soup_message_headers_append: <>
+  733 			soup_message_body_append: <>
+  734 			strlen: <>
+  735 			soup_message_body_complete: <>
+  736 		soup_uri_new: <>
+  737 		soup_uri_set_port: <>
+  738 		soup_server_get_port: <>
+  739 		soup_uri_to_string: <>
+  740 		soup_uri_free: <>
+  741 		web_resource_fixture_setup: void (), <./gtk/tests/testwebresource.c 83>
+  742 			WEBKIT_WEB_VIEW: <>
+  743 			webkit_web_view_new: <>
+  744 			g_object_ref_sink: <>
+  745 			webkit_web_resource_new: <>
+  746 			strlen: <>
+  747 			g_assert: <>
+  748 		test_webkit_web_resource_get_url: void (), <./gtk/tests/testwebresource.c 99>
+  749 			g_object_get: <>
+  750 			G_OBJECT: <>
+  751 			g_assert_cmpstr: <>
+  752 			webkit_web_resource_get_uri: <>
+  753 			g_free: <>
+  754 		web_resource_fixture_teardown: void (), <./gtk/tests/testwebresource.c 92>
+  755 			g_assert: <>
+  756 			g_object_unref: <>
+  757 		test_webkit_web_resource_get_mime_type: void (), <./gtk/tests/testwebresource.c 114>
+  758 			g_object_get: <>
+  759 			G_OBJECT: <>
+  760 			g_assert_cmpstr: <>
+  761 			webkit_web_resource_get_mime_type: <>
+  762 			g_free: <>
+  763 		test_webkit_web_resource_get_encoding: void (), <./gtk/tests/testwebresource.c 123>
+  764 			g_object_get: <>
+  765 			G_OBJECT: <>
+  766 			g_assert_cmpstr: <>
+  767 			webkit_web_resource_get_encoding: <>
+  768 			g_free: <>
+  769 		test_webkit_web_resource_get_frame_name: void (), <./gtk/tests/testwebresource.c 132>
+  770 			g_object_get: <>
+  771 			G_OBJECT: <>
+  772 			g_assert_cmpstr: <>
+  773 			webkit_web_resource_get_frame_name: <>
+  774 			g_free: <>
+  775 		test_webkit_web_resource_get_data: void (), <./gtk/tests/testwebresource.c 108>
+  776 			webkit_web_resource_get_data: <>
+  777 			g_assert_cmpstr: <>
+  778 		test_web_resource_loading: void (), <./gtk/tests/testwebresource.c 178>
+  779 			WEBKIT_WEB_VIEW: <>
+  780 			webkit_web_view_new: <>
+  781 			g_main_loop_new: <>
+  782 			g_object_ref_sink: <>
+  783 			g_signal_connect: <>
+  784 			G_CALLBACK: <>
+  785 			resource_request_starting_cb: void (), <./gtk/tests/testwebresource.c 141>
+  786 				g_assert: <>
+  787 				g_object_ref: <>
+  788 				g_assert_cmpstr: <>
+  789 				webkit_web_resource_get_uri: <>
+  790 				g_strdup_printf: <>
+  791 				webkit_network_request_set_uri: <>
+  792 				g_free: <>
+  793 			notify_load_status_cb: void (), <./gtk/tests/testwebresource.c 166>
+  794 				webkit_web_view_get_load_status: <>
+  795 				g_assert_cmpstr: <>
+  796 				webkit_web_view_get_uri: <>
+  797 				g_main_loop_quit: <>
+  798 			webkit_web_view_load_uri: <>
+  799 			g_main_loop_run: <>
+  800 			webkit_web_view_get_main_frame: <>
+  801 			webkit_web_frame_get_data_source: <>
+  802 			g_assert: <>
+  803 			webkit_web_data_source_get_main_resource: <>
+  804 			g_object_unref: <>
+  805 			g_assert_cmpint: <>
+  806 			g_main_loop_unref: <>
+  807 		test_web_resource_sub_resource_loading: void (), <./gtk/tests/testwebresource.c 237>
+  808 			WEBKIT_WEB_VIEW: <>
+  809 			webkit_web_view_new: <>
+  810 			g_strdup_printf: <>
+  811 			g_main_loop_new: <>
+  812 			g_object_ref_sink: <>
+  813 			g_signal_connect: <>
+  814 			G_CALLBACK: <>
+  815 			resource_request_starting_sub_cb: void (), <./gtk/tests/testwebresource.c 217>
+  816 				g_object_ref: <>
+  817 			notify_load_status_sub_cb: void (), <./gtk/tests/testwebresource.c 225>
+  818 				webkit_web_view_get_load_status: <>
+  819 				g_main_loop_quit: <>
+  820 			webkit_web_view_load_uri: <>
+  821 			g_main_loop_run: <>
+  822 			g_idle_add: <>
+  823 			idle_quit_loop_cb: gboolean (), <./gtk/tests/testwebresource.c 231>
+  824 				g_main_loop_quit: <>
+  825 			g_assert: <>
+  826 			webkit_web_view_get_main_frame: <>
+  827 			webkit_web_frame_get_data_source: <>
+  828 			webkit_web_data_source_get_main_resource: <>
+  829 			g_object_unref: <>
+  830 			webkit_web_data_source_get_subresources: <>
+  831 			WEBKIT_WEB_RESOURCE: <>
+  832 			g_main_loop_unref: <>
+  833 		test_globals_default_session: void (), <./gtk/tests/testglobals.c 27>
+  834 			g_test_bug: <>
+  835 			webkit_get_default_session: <>
+  836 			soup_session_remove_feature_by_type: <>
+  837 			g_assert: <>
+  838 			soup_session_get_feature: <>
+  839 			WEBKIT_WEB_VIEW: <>
+  840 			webkit_web_view_new: <>
+  841 			g_object_ref_sink: <>
+  842 			g_object_unref: <>
+  843 		dom_node_fixture_setup: void (), <./gtk/tests/testdomnode.c 45>
+  844 			g_main_loop_new: <>
+  845 			webkit_web_view_new: <>
+  846 			g_object_ref_sink: <>
+  847 			webkit_web_view_load_string: <>
+  848 			WEBKIT_WEB_VIEW: <>
+  849 			g_idle_add: <>
+  850 			finish_loading: gboolean (), <./gtk/tests/testdomnode.c 37>
+  851 				g_main_loop_is_running: <>
+  852 				g_main_loop_quit: <>
+  853 			g_main_loop_run: <>
+  854 		test_dom_node_hierarchy_navigation: void (), <./gtk/tests/testdomnode.c 64>
+  855 			webkit_web_view_get_dom_document: <>
+  856 			WEBKIT_WEB_VIEW: <>
+  857 			g_assert: <>
+  858 			WEBKIT_DOM_IS_DOCUMENT: <>
+  859 			webkit_dom_document_get_head: <>
+  860 			WEBKIT_DOM_IS_HTML_HEAD_ELEMENT: <>
+  861 			webkit_dom_node_has_child_nodes: <>
+  862 			WEBKIT_DOM_NODE: <>
+  863 			webkit_dom_node_get_child_nodes: <>
+  864 			g_assert_cmpint: <>
+  865 			webkit_dom_node_list_get_length: <>
+  866 			webkit_dom_node_list_item: <>
+  867 			WEBKIT_DOM_IS_HTML_TITLE_ELEMENT: <>
+  868 			g_object_unref: <>
+  869 			webkit_dom_node_get_next_sibling: <>
+  870 			WEBKIT_DOM_HTML_BODY_ELEMENT: <>
+  871 			WEBKIT_DOM_IS_HTML_BODY_ELEMENT: <>
+  872 			webkit_dom_node_get_previous_sibling: <>
+  873 			WEBKIT_DOM_IS_HTML_PARAGRAPH_ELEMENT: <>
+  874 		dom_node_fixture_teardown: void (), <./gtk/tests/testdomnode.c 58>
+  875 			g_object_unref: <>
+  876 			g_main_loop_unref: <>
+  877 		test_dom_node_insertion: void (), <./gtk/tests/testdomnode.c 125>
+  878 			webkit_web_view_get_dom_document: <>
+  879 			WEBKIT_WEB_VIEW: <>
+  880 			g_assert: <>
+  881 			webkit_dom_document_get_body: <>
+  882 			WEBKIT_DOM_IS_HTML_ELEMENT: <>
+  883 			webkit_dom_node_has_child_nodes: <>
+  884 			WEBKIT_DOM_NODE: <>
+  885 			webkit_dom_document_create_element: <>
+  886 			webkit_dom_node_append_child: <>
+  887 			webkit_dom_node_get_child_nodes: <>
+  888 			g_assert_cmpint: <>
+  889 			webkit_dom_node_list_get_length: <>
+  890 			webkit_dom_node_list_item: <>
+  891 			webkit_dom_node_is_same_node: <>
+  892 			g_object_unref: <>
+  893 			webkit_dom_node_replace_child: <>
+  894 			webkit_dom_node_remove_child: <>
+  895 		test_network_request_create_destroy: void (), <./gtk/tests/testnetworkrequest.c 30>
+  896 			WEBKIT_NETWORK_REQUEST: <>
+  897 			g_object_new: <>
+  898 			g_assert: <>
+  899 			WEBKIT_IS_NETWORK_REQUEST: <>
+  900 			webkit_network_request_get_message: <>
+  901 			g_object_unref: <>
+  902 			soup_message_new: <>
+  903 			g_assert_cmpint: <>
+  904 			G_OBJECT: <>
+  905 			g_assert_cmpstr: <>
+  906 			webkit_network_request_get_uri: <>
+  907 		test_network_request_properties: void (), <./gtk/tests/testnetworkrequest.c 62>
+  908 			webkit_network_request_new: <>
+  909 			g_assert: <>
+  910 			WEBKIT_IS_NETWORK_REQUEST: <>
+  911 			g_assert_cmpstr: <>
+  912 			webkit_network_request_get_uri: <>
+  913 			g_object_unref: <>
+  914 			soup_message_new: <>
+  915 			WEBKIT_NETWORK_REQUEST: <>
+  916 			g_object_new: <>
+  917 			webkit_network_request_get_message: <>
+  918 			soup_uri_to_string: <>
+  919 			soup_message_get_uri: <>
+  920 			g_free: <>
+  921 		testInfoNew: TestInfo * (), <./gtk/tests/testcontextmenu.c 36>
+  922 			g_slice_new: <>
+  923 			g_strdup: <>
+  924 		contextMenuFixtureSetup: void (), <./gtk/tests/testcontextmenu.c 51>
+  925 			WEBKIT_WEB_VIEW: <>
+  926 			webkit_web_view_new: <>
+  927 			g_main_loop_new: <>
+  928 		testContextMenu: void (), <./gtk/tests/testcontextmenu.c 214>
+  929 			gtk_window_new: <>
+  930 			gtk_window_resize: <>
+  931 			GTK_WINDOW: <>
+  932 			gtk_window_move: <>
+  933 			gtk_widget_size_allocate: <>
+  934 			GTK_WIDGET: <>
+  935 			gtk_container_add: <>
+  936 			GTK_CONTAINER: <>
+  937 			g_signal_connect: <>
+  938 			G_CALLBACK: <>
+  939 			mapEventCallback: gboolean (), <./gtk/tests/testcontextmenu.c 201>
+  940 				gtk_widget_grab_focus: <>
+  941 				webkit_web_view_load_string: <>
+  942 				g_signal_connect: <>
+  943 				G_CALLBACK: <>
+  944 				loadStatusCallback: void (), <./gtk/tests/testcontextmenu.c 187>
+  945 					webkit_web_view_get_load_status: <>
+  946 					g_assert: <>
+  947 					g_signal_connect: <>
+  948 					G_CALLBACK: <>
+  949 					contextMenuCallback: gboolean (), <./gtk/tests/testcontextmenu.c 95>
+  950 						g_assert: <>
+  951 						WEBKIT_IS_WEB_VIEW: <>
+  952 						GTK_IS_MENU: <>
+  953 						WEBKIT_IS_HIT_TEST_RESULT: <>
+  954 						g_object_get: <>
+  955 						gtk_container_get_children: <>
+  956 						GTK_CONTAINER: <>
+  957 						checkAction: GList * (), <./gtk/tests/testcontextmenu.c 65>
+  958 							g_assert: <>
+  959 							GTK_IS_MENU_ITEM: <>
+  960 							webkit_context_menu_item_get_action: <>
+  961 						checkSeparator: GList * (), <./gtk/tests/testcontextmenu.c 86>
+  962 							g_assert: <>
+  963 							GTK_IS_SEPARATOR_MENU_ITEM: <>
+  964 						checkActionWithSubmenu: GList * (), <./gtk/tests/testcontextmenu.c 75>
+  965 							g_assert: <>
+  966 							GTK_IS_MENU_ITEM: <>
+  967 							webkit_context_menu_item_get_action: <>
+  968 							GTK_IS_MENU: <>
+  969 							gtk_menu_item_get_submenu: <>
+  970 						g_assert_not_reached: <>
+  971 						g_list_free: <>
+  972 						g_main_loop_quit: <>
+  973 					pushEvent: void (), <./gtk/tests/testcontextmenu.c 164>
+  974 						gdk_event_new: <>
+  975 						g_object_ref: <>
+  976 						gtk_widget_get_window: <>
+  977 						GTK_WIDGET: <>
+  978 						gdk_display_get_device_manager: <>
+  979 						gdk_display_get_default: <>
+  980 						gdk_device_manager_get_client_pointer: <>
+  981 						gdk_event_put: <>
+  982 						gdk_event_free: <>
+  983 			gtk_widget_show_all: <>
+  984 			g_main_loop_run: <>
+  985 		contextMenuFixtureTeardown: void (), <./gtk/tests/testcontextmenu.c 58>
+  986 			g_object_unref: <>
+  987 			g_main_loop_unref: <>
+  988 			testInfoDestroy: void (), <./gtk/tests/testcontextmenu.c 45>
+  989 				g_free: <>
+  990 				g_slice_free: <>
+  991 		testContextMenuCustomItem: void (), <./gtk/tests/testcontextmenu.c 269>
+  992 			gtk_window_new: <>
+  993 			gtk_container_add: <>
+  994 			GTK_CONTAINER: <>
+  995 			GTK_WIDGET: <>
+  996 			gtk_widget_show_all: <>
+  997 			gtk_widget_grab_focus: <>
+  998 			webkit_web_view_load_string: <>
+  999 			g_signal_connect: <>
+ 1000 			G_CALLBACK: <>
+ 1001 			contextMenuCustomItemCallback: gboolean (), <./gtk/tests/testcontextmenu.c 229>
+ 1002 				g_assert: <>
+ 1003 				WEBKIT_IS_WEB_VIEW: <>
+ 1004 				GTK_IS_MENU: <>
+ 1005 				WEBKIT_IS_HIT_TEST_RESULT: <>
+ 1006 				g_object_get: <>
+ 1007 				gtk_action_new: <>
+ 1008 				gtk_action_create_menu_item: <>
+ 1009 				g_object_unref: <>
+ 1010 				gtk_menu_shell_append: <>
+ 1011 				GTK_MENU_SHELL: <>
+ 1012 				gtk_widget_show: <>
+ 1013 				gtk_container_get_children: <>
+ 1014 				GTK_CONTAINER: <>
+ 1015 				checkAction: 957
+ 1016 				g_list_free: <>
+ 1017 				g_main_loop_quit: <>
+ 1018 			pushEvent: 973
+ 1019 		testutils_relative_chdir: int (), <./gtk/tests/test_utils.c 25>
+ 1020 			g_getenv: <>
+ 1021 			g_chdir: <>
+ 1022 			g_path_get_dirname: <>
+ 1023 			g_file_test: <>
+ 1024 			g_assert: <>
+ 1025 			g_str_equal: <>
+ 1026 			g_get_current_dir: <>
+ 1027 			g_free: <>
+ 1028 		server_callback: void (), <./gtk/tests/testwebview.c 43>
+ 1029 			soup_message_set_status: <>
+ 1030 			g_str_equal: <>
+ 1031 			g_file_get_contents: <>
+ 1032 			g_assert: <>
+ 1033 			soup_message_body_append: <>
+ 1034 			g_strdup: <>
+ 1035 			strlen: <>
+ 1036 			soup_message_body_complete: <>
+ 1037 		test_webkit_web_view_icon_uri: void (), <./gtk/tests/testwebview.c 115>
+ 1038 			WEBKIT_WEB_VIEW: <>
+ 1039 			webkit_web_view_new: <>
+ 1040 			g_object_ref_sink: <>
+ 1041 			G_OBJECT: <>
+ 1042 			g_main_loop_new: <>
+ 1043 			g_object_connect: <>
+ 1044 			icon_uri_changed_cb: void (), <./gtk/tests/testwebview.c 90>
+ 1045 				g_assert_cmpstr: <>
+ 1046 				g_param_spec_get_name: <>
+ 1047 				g_strdup_printf: <>
+ 1048 				webkit_web_view_get_icon_uri: <>
+ 1049 				g_free: <>
+ 1050 				g_main_loop_quit: <>
+ 1051 			icon_loaded_cb: void (), <./gtk/tests/testwebview.c 103>
+ 1052 				g_strdup_printf: <>
+ 1053 				g_assert_cmpstr: <>
+ 1054 				g_free: <>
+ 1055 				webkit_web_view_get_icon_uri: <>
+ 1056 			webkit_web_view_load_uri: <>
+ 1057 			g_timeout_add: <>
+ 1058 			timeout_cb: gboolean (), <./gtk/tests/testwebview.c 84>
+ 1059 				g_error: <>
+ 1060 			g_main_loop_run: <>
+ 1061 			g_source_remove: <>
+ 1062 			g_assert: <>
+ 1063 			g_object_unref: <>
+ 1064 		test_webkit_web_view_adjustments: void (), <./gtk/tests/testwebview.c 307>
+ 1065 			do_test_webkit_web_view_adjustments: void (), <./gtk/tests/testwebview.c 214>
+ 1066 				g_strconcat: <>
+ 1067 				gtk_window_new: <>
+ 1068 				gtk_scrolled_window_new: <>
+ 1069 				WEBKIT_WEB_VIEW: <>
+ 1070 				webkit_web_view_new: <>
+ 1071 				webkit_web_view_get_settings: <>
+ 1072 				g_object_set: <>
+ 1073 				gtk_window_set_default_size: <>
+ 1074 				GTK_WINDOW: <>
+ 1075 				gtk_container_add: <>
+ 1076 				GTK_CONTAINER: <>
+ 1077 				GTK_WIDGET: <>
+ 1078 				gtk_scrolled_window_set_policy: <>
+ 1079 				GTK_SCROLLED_WINDOW: <>
+ 1080 				g_main_loop_new: <>
+ 1081 				g_object_connect: <>
+ 1082 				G_OBJECT: <>
+ 1083 				idle_quit_loop_cb: void (), <./gtk/tests/testwebview.c 77>
+ 1084 					webkit_web_view_get_load_status: <>
+ 1085 					g_main_loop_quit: <>
+ 1086 				gtk_widget_show_all: <>
+ 1087 				g_signal_connect: <>
+ 1088 				G_CALLBACK: <>
+ 1089 				map_event_cb: gboolean (), <./gtk/tests/testwebview.c 141>
+ 1090 					g_main_loop_quit: <>
+ 1091 				g_main_loop_run: <>
+ 1092 				webkit_web_view_load_uri: <>
+ 1093 				g_timeout_add: <>
+ 1094 				quit_after_short_delay_cb: gboolean (), <./gtk/tests/testwebview.c 149>
+ 1095 					g_main_loop_quit: <>
+ 1096 				gtk_scrolled_window_get_vadjustment: <>
+ 1097 				g_assert_cmpfloat: <>
+ 1098 				gtk_adjustment_get_value: <>
+ 1099 				gtk_adjustment_get_lower: <>
+ 1100 				gtk_adjustment_get_upper: <>
+ 1101 				webkit_web_view_execute_script: <>
+ 1102 				webkit_web_view_go_back: <>
+ 1103 				gtk_events_pending: <>
+ 1104 				gtk_main_iteration: <>
+ 1105 				g_free: <>
+ 1106 				gtk_widget_destroy: <>
+ 1107 		test_webkit_web_view_destroy: void (), <./gtk/tests/testwebview.c 321>
+ 1108 			gtk_window_new: <>
+ 1109 			webkit_web_view_new: <>
+ 1110 			gtk_container_add: <>
+ 1111 			GTK_CONTAINER: <>
+ 1112 			gtk_widget_show_all: <>
+ 1113 			g_main_loop_new: <>
+ 1114 			g_signal_connect: <>
+ 1115 			G_CALLBACK: <>
+ 1116 			map_event_cb: 1089
+ 1117 			g_main_loop_run: <>
+ 1118 			g_idle_add: <>
+ 1119 			delayed_destroy: gboolean (), <./gtk/tests/testwebview.c 314>
+ 1120 				gtk_widget_destroy: <>
+ 1121 				GTK_WIDGET: <>
+ 1122 				g_main_loop_quit: <>
+ 1123 			gtk_widget_destroy: <>
+ 1124 		test_webkit_web_view_grab_focus: void (), <./gtk/tests/testwebview.c 155>
+ 1125 			g_strconcat: <>
+ 1126 			gtk_window_new: <>
+ 1127 			gtk_scrolled_window_new: <>
+ 1128 			WEBKIT_WEB_VIEW: <>
+ 1129 			webkit_web_view_new: <>
+ 1130 			gtk_window_set_default_size: <>
+ 1131 			GTK_WINDOW: <>
+ 1132 			gtk_container_add: <>
+ 1133 			GTK_CONTAINER: <>
+ 1134 			GTK_WIDGET: <>
+ 1135 			gtk_scrolled_window_set_policy: <>
+ 1136 			GTK_SCROLLED_WINDOW: <>
+ 1137 			g_main_loop_new: <>
+ 1138 			g_signal_connect: <>
+ 1139 			G_CALLBACK: <>
+ 1140 			idle_quit_loop_cb: 1083
+ 1141 			gtk_widget_show_all: <>
+ 1142 			map_event_cb: 1089
+ 1143 			g_main_loop_run: <>
+ 1144 			webkit_web_view_load_uri: <>
+ 1145 			gtk_scrolled_window_get_vadjustment: <>
+ 1146 			g_assert_cmpfloat: <>
+ 1147 			gtk_adjustment_get_value: <>
+ 1148 			webkit_web_view_execute_script: <>
+ 1149 			g_timeout_add: <>
+ 1150 			quit_after_short_delay_cb: 1094
+ 1151 			g_free: <>
+ 1152 			gtk_widget_destroy: <>
+ 1153 		test_webkit_web_view_window_features: void (), <./gtk/tests/testwebview.c 345>
+ 1154 			gtk_window_new: <>
+ 1155 			webkit_web_view_new: <>
+ 1156 			gtk_container_add: <>
+ 1157 			GTK_CONTAINER: <>
+ 1158 			gtk_widget_show_all: <>
+ 1159 			g_main_loop_new: <>
+ 1160 			g_signal_connect: <>
+ 1161 			G_CALLBACK: <>
+ 1162 			map_event_cb: 1089
+ 1163 			g_main_loop_run: <>
+ 1164 			g_object_set: <>
+ 1165 			G_OBJECT: <>
+ 1166 			gtk_widget_destroy: <>
+ 1167 		test_webkit_web_view_in_offscreen_window_does_not_crash: void (), <./gtk/tests/testwebview.c 369>
+ 1168 			g_main_loop_new: <>
+ 1169 			gtk_offscreen_window_new: <>
+ 1170 			webkit_web_view_new: <>
+ 1171 			gtk_container_add: <>
+ 1172 			GTK_CONTAINER: <>
+ 1173 			gtk_widget_show_all: <>
+ 1174 			g_signal_connect: <>
+ 1175 			G_CALLBACK: <>
+ 1176 			idle_quit_loop_cb: 1083
+ 1177 			webkit_web_view_load_uri: <>
+ 1178 			WEBKIT_WEB_VIEW: <>
+ 1179 			g_main_loop_run: <>
+ 1180 			gtk_widget_destroy: <>
+ 1181 			g_main_loop_unref: <>
+ 1182 		test_webkit_web_view_does_not_steal_focus: void (), <./gtk/tests/testwebview.c 387>
+ 1183 			g_main_loop_new: <>
+ 1184 			gtk_offscreen_window_new: <>
+ 1185 			webkit_web_view_new: <>
+ 1186 			gtk_entry_new: <>
+ 1187 			gtk_hbox_new: <>
+ 1188 			gtk_box_new: <>
+ 1189 			gtk_container_add: <>
+ 1190 			GTK_CONTAINER: <>
+ 1191 			gtk_widget_show_all: <>
+ 1192 			gtk_widget_grab_focus: <>
+ 1193 			g_assert: <>
+ 1194 			gtk_widget_is_focus: <>
+ 1195 			g_signal_connect: <>
+ 1196 			G_CALLBACK: <>
+ 1197 			idle_quit_loop_cb: 1083
+ 1198 			webkit_web_view_load_html_string: <>
+ 1199 			WEBKIT_WEB_VIEW: <>
+ 1200 			g_main_loop_run: <>
+ 1201 			gtk_widget_destroy: <>
+ 1202 			g_main_loop_unref: <>
+ 1203 		g_test_add_data_func: <>
+ 1204 		GINT_TO_POINTER: <>
+ 1205 		test_webkit_web_view_fullscreen: void (), <./gtk/tests/testwebview.c 473>
+ 1206 			gtk_window_new: <>
+ 1207 			webkit_web_view_new: <>
+ 1208 			webkit_web_view_get_settings: <>
+ 1209 			WEBKIT_WEB_VIEW: <>
+ 1210 			g_object_set: <>
+ 1211 			webkit_web_view_set_settings: <>
+ 1212 			gtk_container_add: <>
+ 1213 			GTK_CONTAINER: <>
+ 1214 			gtk_widget_show_all: <>
+ 1215 			g_main_loop_new: <>
+ 1216 			g_signal_connect: <>
+ 1217 			G_CALLBACK: <>
+ 1218 			entering_fullscreen_cb: gboolean (), <./gtk/tests/testwebview.c 458>
+ 1219 				g_main_loop_quit: <>
+ 1220 				g_timeout_add: <>
+ 1221 				emitKeyStroke: gboolean (), <./gtk/tests/testwebview.c 426>
+ 1222 					gdk_event_new: <>
+ 1223 					gtk_widget_get_window: <>
+ 1224 					GTK_WIDGET: <>
+ 1225 					g_object_ref: <>
+ 1226 					gdk_display_get_device_manager: <>
+ 1227 					gdk_window_get_display: <>
+ 1228 					gdk_event_set_device: <>
+ 1229 					gdk_device_manager_get_client_pointer: <>
+ 1230 					gdk_keymap_get_entries_for_keyval: <>
+ 1231 					gdk_keymap_get_default: <>
+ 1232 					g_free: <>
+ 1233 					gdk_event_copy: <>
+ 1234 					gtk_main_do_event: <>
+ 1235 					gdk_event_free: <>
+ 1236 			leaving_fullscreen_cb: gboolean (), <./gtk/tests/testwebview.c 467>
+ 1237 				g_main_loop_quit: <>
+ 1238 			webkit_web_view_load_string: <>
+ 1239 			g_timeout_add: <>
+ 1240 			emitKeyStroke: 1221
+ 1241 			g_main_loop_run: <>
+ 1242 			gtk_widget_destroy: <>
+ 1243 		server_callback: void (), <./gtk/tests/testmimehandling.c 38>
+ 1244 			soup_message_set_status: <>
+ 1245 			g_str_equal: <>
+ 1246 			g_file_get_contents: <>
+ 1247 			g_assert: <>
+ 1248 			soup_message_body_append: <>
+ 1249 			soup_message_headers_append: <>
+ 1250 			soup_message_body_complete: <>
+ 1251 		testRemoteMimeType: void (), <./gtk/tests/testmimehandling.c 125>
+ 1252 			WEBKIT_WEB_VIEW: <>
+ 1253 			webkit_web_view_new: <>
+ 1254 			g_object_ref_sink: <>
+ 1255 			G_OBJECT: <>
+ 1256 			g_main_loop_new: <>
+ 1257 			g_object_connect: <>
+ 1258 			idle_quit_loop_cb: void (), <./gtk/tests/testmimehandling.c 84>
+ 1259 				webkit_web_view_get_load_status: <>
+ 1260 				g_main_loop_quit: <>
+ 1261 			mime_type_policy_decision_requested_cb: gboolean (), <./gtk/tests/testmimehandling.c 91>
+ 1262 				g_str_equal: <>
+ 1263 				g_assert_cmpstr: <>
+ 1264 				g_assert: <>
+ 1265 				webkit_web_view_can_show_mime_type: <>
+ 1266 				webkit_web_frame_get_network_response: <>
+ 1267 				webkit_network_response_get_message: <>
+ 1268 				soup_message_headers_get_content_disposition: <>
+ 1269 				g_object_unref: <>
+ 1270 				g_free: <>
+ 1271 			g_strdup: <>
+ 1272 			g_strdup_printf: <>
+ 1273 			webkit_web_view_load_uri: <>
+ 1274 			g_free: <>
+ 1275 			g_main_loop_run: <>
+ 1276 			g_object_unref: <>
+ 1277 		testLocalMimeType: void (), <./gtk/tests/testmimehandling.c 147>
+ 1278 			WEBKIT_WEB_VIEW: <>
+ 1279 			webkit_web_view_new: <>
+ 1280 			g_object_ref_sink: <>
+ 1281 			G_OBJECT: <>
+ 1282 			g_main_loop_new: <>
+ 1283 			g_object_connect: <>
+ 1284 			idle_quit_loop_cb: 1258
+ 1285 			mime_type_policy_decision_requested_cb: 1261
+ 1286 			g_strdup: <>
+ 1287 			g_strdup_printf: <>
+ 1288 			g_file_new_for_path: <>
+ 1289 			g_free: <>
+ 1290 			g_file_get_uri: <>
+ 1291 			g_object_unref: <>
+ 1292 			webkit_web_view_load_uri: <>
+ 1293 			g_main_loop_run: <>
+ 1294 		initializeTestingFramework: void (), <./gtk/tests/testatk.c 1847>
+ 1295 			g_setenv: <>
+ 1296 			g_test_init: <>
+ 1297 			gtk_disable_setlocale: <>
+ 1298 			setlocale: <>
+ 1299 			gdk_disable_multidevice: <>
+ 1300 			gtk_init: <>
+ 1301 		testWebkitAtkCaretOffsets: void (), <./gtk/tests/testatk.c 270>
+ 1302 			WEBKIT_WEB_VIEW: <>
+ 1303 			webkit_web_view_new: <>
+ 1304 			g_object_ref_sink: <>
+ 1305 			gtk_widget_size_allocate: <>
+ 1306 			GTK_WIDGET: <>
+ 1307 			webkit_web_view_load_string: <>
+ 1308 			getWebAreaObject: AtkObject * (), <./gtk/tests/testatk.c 74>
+ 1309 				g_main_context_pending: <>
+ 1310 				g_main_context_iteration: <>
+ 1311 				gtk_widget_get_accessible: <>
+ 1312 				GTK_WIDGET: <>
+ 1313 				atk_object_ref_accessible_child: <>
+ 1314 				g_object_unref: <>
+ 1315 			g_assert: <>
+ 1316 			atk_object_ref_accessible_child: <>
+ 1317 			ATK_IS_TEXT: <>
+ 1318 			g_signal_connect: <>
+ 1319 			G_CALLBACK: <>
+ 1320 			textCaretMovedCallback: void (), <./gtk/tests/testatk.c 261>
+ 1321 				g_assert: <>
+ 1322 				ATK_IS_TEXT: <>
+ 1323 				g_free: <>
+ 1324 				atk_object_get_role: <>
+ 1325 				ATK_OBJECT: <>
+ 1326 				g_strdup_printf: <>
+ 1327 				atk_role_get_name: <>
+ 1328 			atk_text_get_text: <>
+ 1329 			ATK_TEXT: <>
+ 1330 			g_assert_cmpstr: <>
+ 1331 			g_free: <>
+ 1332 			atk_text_set_caret_offset: <>
+ 1333 			g_assert_cmpint: <>
+ 1334 			atk_text_get_caret_offset: <>
+ 1335 			ATK_OBJECT: <>
+ 1336 			atk_object_get_role: <>
+ 1337 			atk_object_get_n_accessible_children: <>
+ 1338 			ATK_IS_OBJECT: <>
+ 1339 			g_object_unref: <>
+ 1340 		testWebkitAtkCaretOffsetsAndExtranousWhiteSpaces: void (), <./gtk/tests/testatk.c 407>
+ 1341 			WEBKIT_WEB_VIEW: <>
+ 1342 			webkit_web_view_new: <>
+ 1343 			g_object_ref_sink: <>
+ 1344 			gtk_widget_size_allocate: <>
+ 1345 			GTK_WIDGET: <>
+ 1346 			webkit_web_view_load_string: <>
+ 1347 			webkit_web_view_get_settings: <>
+ 1348 			g_object_set: <>
+ 1349 			G_OBJECT: <>
+ 1350 			webkit_web_view_set_settings: <>
+ 1351 			getWebAreaObject: 1308
+ 1352 			g_assert: <>
+ 1353 			atk_object_ref_accessible_child: <>
+ 1354 			ATK_TEXT: <>
+ 1355 			ATK_IS_TEXT: <>
+ 1356 			atk_text_get_text: <>
+ 1357 			g_assert_cmpstr: <>
+ 1358 			g_free: <>
+ 1359 			atk_text_get_character_count: <>
+ 1360 			g_assert_cmpint: <>
+ 1361 			atk_text_set_caret_offset: <>
+ 1362 			atk_text_get_caret_offset: <>
+ 1363 			g_object_unref: <>
+ 1364 		testWebkitAtkComboBox: void (), <./gtk/tests/testatk.c 451>
+ 1365 			WEBKIT_WEB_VIEW: <>
+ 1366 			webkit_web_view_new: <>
+ 1367 			g_object_ref_sink: <>
+ 1368 			gtk_widget_size_allocate: <>
+ 1369 			GTK_WIDGET: <>
+ 1370 			webkit_web_view_load_string: <>
+ 1371 			getWebAreaObject: 1308
+ 1372 			g_assert: <>
+ 1373 			atk_object_ref_accessible_child: <>
+ 1374 			ATK_IS_OBJECT: <>
+ 1375 			atk_object_get_role: <>
+ 1376 			ATK_IS_SELECTION: <>
+ 1377 			ATK_SELECTION: <>
+ 1378 			g_assert_cmpint: <>
+ 1379 			atk_selection_get_selection_count: <>
+ 1380 			atk_selection_is_child_selected: <>
+ 1381 			atk_selection_ref_selection: <>
+ 1382 			g_object_unref: <>
+ 1383 			ATK_IS_ACTION: <>
+ 1384 			ATK_ACTION: <>
+ 1385 			atk_action_get_n_actions: <>
+ 1386 			atk_action_do_action: <>
+ 1387 			ATK_IS_TEXT: <>
+ 1388 			ATK_TEXT: <>
+ 1389 			atk_text_get_text: <>
+ 1390 			g_assert_cmpstr: <>
+ 1391 			g_free: <>
+ 1392 		testWebkitAtkDocumentLoadingEvents: void (), <./gtk/tests/testatk.c 573>
+ 1393 			WEBKIT_WEB_VIEW: <>
+ 1394 			webkit_web_view_new: <>
+ 1395 			g_object_ref_sink: <>
+ 1396 			gtk_widget_size_allocate: <>
+ 1397 			GTK_WIDGET: <>
+ 1398 			atk_add_global_event_listener: <>
+ 1399 			documentLoadingEventCallback: gboolean (), <./gtk/tests/testatk.c 560>
+ 1400 				g_signal_query: <>
+ 1401 				updateLoadingEventsResult: void (), <./gtk/tests/testatk.c 551>
+ 1402 					g_assert: <>
+ 1403 					g_strdup_printf: <>
+ 1404 					g_free: <>
+ 1405 			g_strdup: <>
+ 1406 			webkit_web_view_load_string: <>
+ 1407 			getWebAreaObject: 1308
+ 1408 			atk_remove_global_event_listener: <>
+ 1409 			g_assert_cmpstr: <>
+ 1410 			g_free: <>
+ 1411 			g_object_unref: <>
+ 1412 		testWebkitAtkEmbeddedObjects: void (), <./gtk/tests/testatk.c 599>
+ 1413 			WEBKIT_WEB_VIEW: <>
+ 1414 			webkit_web_view_new: <>
+ 1415 			g_object_ref_sink: <>
+ 1416 			gtk_widget_size_allocate: <>
+ 1417 			GTK_WIDGET: <>
+ 1418 			webkit_web_view_load_string: <>
+ 1419 			getWebAreaObject: 1308
+ 1420 			g_assert: <>
+ 1421 			ATK_TEXT: <>
+ 1422 			atk_object_ref_accessible_child: <>
+ 1423 			ATK_IS_TEXT: <>
+ 1424 			ATK_IS_HYPERTEXT: <>
+ 1425 			atk_text_get_text: <>
+ 1426 			g_assert_cmpstr: <>
+ 1427 			g_free: <>
+ 1428 			atk_hypertext_get_n_links: <>
+ 1429 			ATK_HYPERTEXT: <>
+ 1430 			g_assert_cmpint: <>
+ 1431 			atk_hypertext_get_link: <>
+ 1432 			ATK_HYPERLINK: <>
+ 1433 			atk_hyperlink_get_object: <>
+ 1434 			ATK_OBJECT: <>
+ 1435 			atk_object_get_role: <>
+ 1436 			atk_hyperlink_get_start_index: <>
+ 1437 			atk_hyperlink_get_end_index: <>
+ 1438 			atk_hyperlink_get_n_anchors: <>
+ 1439 			atk_hyperlink_get_uri: <>
+ 1440 			g_object_unref: <>
+ 1441 		testWebkitAtkGetTextAtOffset: void (), <./gtk/tests/testatk.c 682>
+ 1442 			WEBKIT_WEB_VIEW: <>
+ 1443 			webkit_web_view_new: <>
+ 1444 			g_object_ref_sink: <>
+ 1445 			gtk_widget_size_allocate: <>
+ 1446 			GTK_WIDGET: <>
+ 1447 			webkit_web_view_load_string: <>
+ 1448 			getWebAreaObject: 1308
+ 1449 			g_assert: <>
+ 1450 			atk_object_ref_accessible_child: <>
+ 1451 			ATK_TEXT: <>
+ 1452 			ATK_IS_TEXT: <>
+ 1453 			runGetTextTests: void (), <./gtk/tests/testatk.c 108>
+ 1454 				atk_text_get_text: <>
+ 1455 				g_assert_cmpstr: <>
+ 1456 				g_free: <>
+ 1457 				testGetTextFunction: void (), <./gtk/tests/testatk.c 97>
+ 1458 					g_assert_cmpstr: <>
+ 1459 					g_assert_cmpint: <>
+ 1460 					g_free: <>
+ 1461 				atk_text_get_text_at_offset: <>
+ 1462 				ATK_IS_EDITABLE_TEXT: <>
+ 1463 				atk_editable_text_set_text_contents: <>
+ 1464 				ATK_EDITABLE_TEXT: <>
+ 1465 			g_object_unref: <>
+ 1466 		testWebkitAtkGetTextAtOffsetNewlines: void (), <./gtk/tests/testatk.c 704>
+ 1467 			WEBKIT_WEB_VIEW: <>
+ 1468 			webkit_web_view_new: <>
+ 1469 			g_object_ref_sink: <>
+ 1470 			gtk_widget_size_allocate: <>
+ 1471 			GTK_WIDGET: <>
+ 1472 			webkit_web_view_load_string: <>
+ 1473 			getWebAreaObject: 1308
+ 1474 			g_assert: <>
+ 1475 			atk_object_ref_accessible_child: <>
+ 1476 			ATK_TEXT: <>
+ 1477 			ATK_IS_TEXT: <>
+ 1478 			runGetTextTests: 1453
+ 1479 			g_object_unref: <>
+ 1480 		testWebkitAtkGetTextAtOffsetTextarea: void (), <./gtk/tests/testatk.c 726>
+ 1481 			WEBKIT_WEB_VIEW: <>
+ 1482 			webkit_web_view_new: <>
+ 1483 			g_object_ref_sink: <>
+ 1484 			gtk_widget_size_allocate: <>
+ 1485 			GTK_WIDGET: <>
+ 1486 			webkit_web_view_load_string: <>
+ 1487 			getWebAreaObject: 1308
+ 1488 			g_assert: <>
+ 1489 			atk_object_ref_accessible_child: <>
+ 1490 			ATK_TEXT: <>
+ 1491 			ATK_IS_TEXT: <>
+ 1492 			runGetTextTests: 1453
+ 1493 			g_object_unref: <>
+ 1494 		testWebkitAtkGetTextAtOffsetTextInput: void (), <./gtk/tests/testatk.c 750>
+ 1495 			WEBKIT_WEB_VIEW: <>
+ 1496 			webkit_web_view_new: <>
+ 1497 			g_object_ref_sink: <>
+ 1498 			gtk_widget_size_allocate: <>
+ 1499 			GTK_WIDGET: <>
+ 1500 			webkit_web_view_load_string: <>
+ 1501 			getWebAreaObject: 1308
+ 1502 			g_assert: <>
+ 1503 			atk_object_ref_accessible_child: <>
+ 1504 			ATK_TEXT: <>
+ 1505 			ATK_IS_TEXT: <>
+ 1506 			runGetTextTests: 1453
+ 1507 			g_object_unref: <>
+ 1508 		testWebkitAtkGetTextAtOffsetWithPreformattedText: void (), <./gtk/tests/testatk.c 774>
+ 1509 			WEBKIT_WEB_VIEW: <>
+ 1510 			webkit_web_view_new: <>
+ 1511 			g_object_ref_sink: <>
+ 1512 			gtk_widget_size_allocate: <>
+ 1513 			GTK_WIDGET: <>
+ 1514 			webkit_web_view_load_string: <>
+ 1515 			getWebAreaObject: 1308
+ 1516 			g_assert: <>
+ 1517 			atk_object_ref_accessible_child: <>
+ 1518 			ATK_IS_OBJECT: <>
+ 1519 			atk_object_get_role: <>
+ 1520 			ATK_IS_TEXT: <>
+ 1521 			atk_text_get_text: <>
+ 1522 			ATK_TEXT: <>
+ 1523 			g_assert_cmpstr: <>
+ 1524 			g_free: <>
+ 1525 			testGetTextFunction: 1457
+ 1526 			atk_text_get_text_at_offset: <>
+ 1527 			g_object_unref: <>
+ 1528 		testWebkitAtkGetTextAtOffsetWithSpecialCharacters: void (), <./gtk/tests/testatk.c 802>
+ 1529 			WEBKIT_WEB_VIEW: <>
+ 1530 			webkit_web_view_new: <>
+ 1531 			g_object_ref_sink: <>
+ 1532 			gtk_widget_size_allocate: <>
+ 1533 			GTK_WIDGET: <>
+ 1534 			webkit_web_view_load_string: <>
+ 1535 			getWebAreaObject: 1308
+ 1536 			g_assert: <>
+ 1537 			atk_object_ref_accessible_child: <>
+ 1538 			ATK_IS_TEXT: <>
+ 1539 			g_strdup: <>
+ 1540 			atk_text_get_text: <>
+ 1541 			ATK_TEXT: <>
+ 1542 			g_assert_cmpstr: <>
+ 1543 			g_free: <>
+ 1544 			testGetTextFunction: 1457
+ 1545 			atk_text_get_text_at_offset: <>
+ 1546 			ATK_OBJECT: <>
+ 1547 			g_object_unref: <>
+ 1548 		testWebkitAtkGetTextInParagraphAndBodySimple: void (), <./gtk/tests/testatk.c 854>
+ 1549 			WEBKIT_WEB_VIEW: <>
+ 1550 			webkit_web_view_new: <>
+ 1551 			g_object_ref_sink: <>
+ 1552 			gtk_widget_size_allocate: <>
+ 1553 			GTK_WIDGET: <>
+ 1554 			webkit_web_view_load_string: <>
+ 1555 			getWebAreaObject: 1308
+ 1556 			g_assert: <>
+ 1557 			atk_object_ref_accessible_child: <>
+ 1558 			ATK_TEXT: <>
+ 1559 			ATK_IS_TEXT: <>
+ 1560 			atk_text_get_text: <>
+ 1561 			g_assert_cmpstr: <>
+ 1562 			g_object_unref: <>
+ 1563 		testWebkitAtkGetTextInParagraphAndBodyModerate: void (), <./gtk/tests/testatk.c 886>
+ 1564 			WEBKIT_WEB_VIEW: <>
+ 1565 			webkit_web_view_new: <>
+ 1566 			g_object_ref_sink: <>
+ 1567 			gtk_widget_size_allocate: <>
+ 1568 			GTK_WIDGET: <>
+ 1569 			webkit_web_view_load_string: <>
+ 1570 			getWebAreaObject: 1308
+ 1571 			g_assert: <>
+ 1572 			atk_object_ref_accessible_child: <>
+ 1573 			ATK_TEXT: <>
+ 1574 			ATK_IS_TEXT: <>
+ 1575 			atk_text_get_text: <>
+ 1576 			g_assert_cmpstr: <>
+ 1577 			g_object_unref: <>
+ 1578 		testWebkitAtkGetTextInTable: void (), <./gtk/tests/testatk.c 918>
+ 1579 			WEBKIT_WEB_VIEW: <>
+ 1580 			webkit_web_view_new: <>
+ 1581 			g_object_ref_sink: <>
+ 1582 			gtk_widget_size_allocate: <>
+ 1583 			GTK_WIDGET: <>
+ 1584 			webkit_web_view_load_string: <>
+ 1585 			getWebAreaObject: 1308
+ 1586 			g_assert: <>
+ 1587 			atk_object_ref_accessible_child: <>
+ 1588 			G_TYPE_INSTANCE_GET_INTERFACE: <>
+ 1589 			g_object_unref: <>
+ 1590 		testWebkitAtkGetHeadersInTable: void (), <./gtk/tests/testatk.c 938>
+ 1591 			WEBKIT_WEB_VIEW: <>
+ 1592 			webkit_web_view_new: <>
+ 1593 			g_object_ref_sink: <>
+ 1594 			gtk_widget_size_allocate: <>
+ 1595 			GTK_WIDGET: <>
+ 1596 			webkit_web_view_load_string: <>
+ 1597 			getWebAreaObject: 1308
+ 1598 			g_assert: <>
+ 1599 			atk_object_ref_accessible_child: <>
+ 1600 			atk_object_get_role: <>
+ 1601 			atk_table_get_column_header: <>
+ 1602 			ATK_TABLE: <>
+ 1603 			atk_object_get_index_in_parent: <>
+ 1604 			atk_table_get_row_header: <>
+ 1605 			g_object_unref: <>
+ 1606 		testWebkitAtkTextAttributes: void (), <./gtk/tests/testatk.c 1069>
+ 1607 			WEBKIT_WEB_VIEW: <>
+ 1608 			webkit_web_view_new: <>
+ 1609 			g_object_ref_sink: <>
+ 1610 			gtk_widget_size_allocate: <>
+ 1611 			GTK_WIDGET: <>
+ 1612 			webkit_web_view_load_string: <>
+ 1613 			getWebAreaObject: 1308
+ 1614 			g_assert: <>
+ 1615 			atk_object_ref_accessible_child: <>
+ 1616 			ATK_IS_TEXT: <>
+ 1617 			ATK_TEXT: <>
+ 1618 			atk_text_get_run_attributes: <>
+ 1619 			g_assert_cmpint: <>
+ 1620 			atkAttributeSetAreEqual: gboolean (), <./gtk/tests/testatk.c 1050>
+ 1621 				g_slist_sort: <>
+ 1622 				compAtkAttribute: gint (), <./gtk/tests/testatk.c 1017>
+ 1623 					g_strcmp0: <>
+ 1624 			atkAttributeSetAttributeHasValue: gboolean (), <./gtk/tests/testatk.c 1045>
+ 1625 				atkAttributeSetAttributeNameHasValue: gboolean (), <./gtk/tests/testatk.c 1030>
+ 1626 					g_slist_find_custom: <>
+ 1627 					compAtkAttributeName: gint (), <./gtk/tests/testatk.c 1025>
+ 1628 						g_strcmp0: <>
+ 1629 					g_strcmp0: <>
+ 1630 				atk_text_attribute_get_name: <>
+ 1631 			atk_text_get_default_attributes: <>
+ 1632 			atk_attribute_set_free: <>
+ 1633 		testWebkitAtkTextSelections: void (), <./gtk/tests/testatk.c 1190>
+ 1634 			WEBKIT_WEB_VIEW: <>
+ 1635 			webkit_web_view_new: <>
+ 1636 			g_object_ref_sink: <>
+ 1637 			gtk_widget_size_allocate: <>
+ 1638 			GTK_WIDGET: <>
+ 1639 			webkit_web_view_load_string: <>
+ 1640 			getWebAreaObject: 1308
+ 1641 			g_assert: <>
+ 1642 			ATK_TEXT: <>
+ 1643 			atk_object_ref_accessible_child: <>
+ 1644 			ATK_IS_TEXT: <>
+ 1645 			g_signal_connect: <>
+ 1646 			G_CALLBACK: <>
+ 1647 			textSelectionChangedCallback: void (), <./gtk/tests/testatk.c 1178>
+ 1648 				g_assert: <>
+ 1649 				ATK_IS_TEXT: <>
+ 1650 				g_free: <>
+ 1651 				atk_object_get_role: <>
+ 1652 				ATK_OBJECT: <>
+ 1653 				atk_text_get_selection: <>
+ 1654 				ATK_TEXT: <>
+ 1655 				g_strdup_printf: <>
+ 1656 				atk_role_get_name: <>
+ 1657 			ATK_OBJECT: <>
+ 1658 			g_assert_cmpint: <>
+ 1659 			atk_text_get_n_selections: <>
+ 1660 			atk_text_get_selection: <>
+ 1661 			g_assert_cmpstr: <>
+ 1662 			g_free: <>
+ 1663 			atk_text_remove_selection: <>
+ 1664 			atk_text_set_selection: <>
+ 1665 			atk_object_get_role: <>
+ 1666 			atk_object_get_n_accessible_children: <>
+ 1667 			atk_text_get_text: <>
+ 1668 			g_object_unref: <>
+ 1669 		testWebkitAtkGetExtents: void (), <./gtk/tests/testatk.c 1351>
+ 1670 			WEBKIT_WEB_VIEW: <>
+ 1671 			webkit_web_view_new: <>
+ 1672 			g_object_ref_sink: <>
+ 1673 			gtk_widget_size_allocate: <>
+ 1674 			GTK_WIDGET: <>
+ 1675 			webkit_web_view_load_string: <>
+ 1676 			getWebAreaObject: 1308
+ 1677 			g_assert: <>
+ 1678 			ATK_TEXT: <>
+ 1679 			atk_object_ref_accessible_child: <>
+ 1680 			ATK_IS_TEXT: <>
+ 1681 			atk_text_get_range_extents: <>
+ 1682 			g_assert_cmpint: <>
+ 1683 			atk_text_get_character_extents: <>
+ 1684 			atk_text_get_text_at_offset: <>
+ 1685 			g_free: <>
+ 1686 			g_object_unref: <>
+ 1687 		testWebkitAtkHypertextAndHyperlinks: void (), <./gtk/tests/testatk.c 1548>
+ 1688 			WEBKIT_WEB_VIEW: <>
+ 1689 			webkit_web_view_new: <>
+ 1690 			g_object_ref_sink: <>
+ 1691 			gtk_widget_size_allocate: <>
+ 1692 			GTK_WIDGET: <>
+ 1693 			webkit_web_view_load_string: <>
+ 1694 			getWebAreaObject: 1308
+ 1695 			g_assert: <>
+ 1696 			atk_object_ref_accessible_child: <>
+ 1697 			ATK_OBJECT: <>
+ 1698 			atk_object_get_role: <>
+ 1699 			ATK_IS_HYPERTEXT: <>
+ 1700 			atk_hypertext_get_n_links: <>
+ 1701 			ATK_HYPERTEXT: <>
+ 1702 			g_assert_cmpint: <>
+ 1703 			atk_hypertext_get_link: <>
+ 1704 			ATK_HYPERLINK: <>
+ 1705 			atk_hyperlink_get_object: <>
+ 1706 			atk_hyperlink_get_start_index: <>
+ 1707 			atk_hyperlink_get_end_index: <>
+ 1708 			atk_hyperlink_get_n_anchors: <>
+ 1709 			g_assert_cmpstr: <>
+ 1710 			atk_hyperlink_get_uri: <>
+ 1711 			atk_object_get_n_accessible_children: <>
+ 1712 			ATK_IS_TEXT: <>
+ 1713 			ATK_IS_ACTION: <>
+ 1714 			atk_action_get_n_actions: <>
+ 1715 			ATK_ACTION: <>
+ 1716 			atk_action_get_keybinding: <>
+ 1717 			atk_action_get_name: <>
+ 1718 			atk_action_do_action: <>
+ 1719 			g_object_unref: <>
+ 1720 		testWebkitAtkLayoutAndDataTables: void (), <./gtk/tests/testatk.c 1464>
+ 1721 			WEBKIT_WEB_VIEW: <>
+ 1722 			webkit_web_view_new: <>
+ 1723 			g_object_ref_sink: <>
+ 1724 			gtk_widget_size_allocate: <>
+ 1725 			GTK_WIDGET: <>
+ 1726 			webkit_web_view_load_string: <>
+ 1727 			getWebAreaObject: 1308
+ 1728 			g_assert: <>
+ 1729 			atk_object_ref_accessible_child: <>
+ 1730 			ATK_IS_TABLE: <>
+ 1731 			atk_object_get_attributes: <>
+ 1732 			atkAttributeSetContainsAttributeName: gboolean (), <./gtk/tests/testatk.c 1038>
+ 1733 				g_slist_find_custom: <>
+ 1734 				compAtkAttributeName: 1627
+ 1735 			atk_attribute_set_free: <>
+ 1736 			atkAttributeSetAttributeNameHasValue: 1625
+ 1737 			g_object_unref: <>
+ 1738 		testWebkitAtkLinksWithInlineImages: void (), <./gtk/tests/testatk.c 1499>
+ 1739 			WEBKIT_WEB_VIEW: <>
+ 1740 			webkit_web_view_new: <>
+ 1741 			g_object_ref_sink: <>
+ 1742 			gtk_widget_size_allocate: <>
+ 1743 			GTK_WIDGET: <>
+ 1744 			webkit_web_view_load_string: <>
+ 1745 			getWebAreaObject: 1308
+ 1746 			g_assert: <>
+ 1747 			atk_object_ref_accessible_child: <>
+ 1748 			ATK_IS_TEXT: <>
+ 1749 			atk_text_get_text_at_offset: <>
+ 1750 			ATK_TEXT: <>
+ 1751 			g_assert_cmpstr: <>
+ 1752 			g_assert_cmpint: <>
+ 1753 			g_free: <>
+ 1754 			g_object_unref: <>
+ 1755 		testWebkitAtkListsOfItems: void (), <./gtk/tests/testatk.c 1640>
+ 1756 			WEBKIT_WEB_VIEW: <>
+ 1757 			webkit_web_view_new: <>
+ 1758 			g_object_ref_sink: <>
+ 1759 			gtk_widget_size_allocate: <>
+ 1760 			GTK_WIDGET: <>
+ 1761 			webkit_web_view_load_string: <>
+ 1762 			getWebAreaObject: 1308
+ 1763 			g_assert: <>
+ 1764 			atk_object_ref_accessible_child: <>
+ 1765 			ATK_OBJECT: <>
+ 1766 			atk_object_get_role: <>
+ 1767 			g_assert_cmpint: <>
+ 1768 			atk_object_get_n_accessible_children: <>
+ 1769 			ATK_IS_TEXT: <>
+ 1770 			g_assert_cmpstr: <>
+ 1771 			atk_text_get_text: <>
+ 1772 			ATK_TEXT: <>
+ 1773 			g_object_unref: <>
+ 1774 		testWebkitAtkTextChangedNotifications: void (), <./gtk/tests/testatk.c 1724>
+ 1775 			WEBKIT_WEB_VIEW: <>
+ 1776 			webkit_web_view_new: <>
+ 1777 			g_object_ref_sink: <>
+ 1778 			gtk_widget_size_allocate: <>
+ 1779 			GTK_WIDGET: <>
+ 1780 			webkit_web_view_load_string: <>
+ 1781 			getWebAreaObject: 1308
+ 1782 			g_assert: <>
+ 1783 			atk_object_ref_accessible_child: <>
+ 1784 			ATK_IS_OBJECT: <>
+ 1785 			ATK_IS_EDITABLE_TEXT: <>
+ 1786 			atk_object_get_role: <>
+ 1787 			ATK_OBJECT: <>
+ 1788 			g_signal_connect: <>
+ 1789 			G_CALLBACK: <>
+ 1790 			textChangedCb: void (), <./gtk/tests/testatk.c 1715>
+ 1791 				g_assert: <>
+ 1792 				ATK_IS_OBJECT: <>
+ 1793 				GPOINTER_TO_INT: <>
+ 1794 				g_free: <>
+ 1795 				g_strdup_printf: <>
+ 1796 			GINT_TO_POINTER: <>
+ 1797 			atk_editable_text_insert_text: <>
+ 1798 			ATK_EDITABLE_TEXT: <>
+ 1799 			atk_text_get_text: <>
+ 1800 			ATK_TEXT: <>
+ 1801 			g_assert_cmpstr: <>
+ 1802 			g_free: <>
+ 1803 			atk_editable_text_delete_text: <>
+ 1804 			g_object_unref: <>
+ 1805 		testWebkitAtkParentForRootObject: void (), <./gtk/tests/testatk.c 1776>
+ 1806 			WEBKIT_WEB_VIEW: <>
+ 1807 			webkit_web_view_new: <>
+ 1808 			gtk_widget_size_allocate: <>
+ 1809 			GTK_WIDGET: <>
+ 1810 			webkit_web_view_load_string: <>
+ 1811 			gtk_window_new: <>
+ 1812 			g_object_ref_sink: <>
+ 1813 			gtk_container_add: <>
+ 1814 			GTK_CONTAINER: <>
+ 1815 			gtk_widget_get_accessible: <>
+ 1816 			g_assert: <>
+ 1817 			ATK_IS_OBJECT: <>
+ 1818 			atk_object_ref_accessible_child: <>
+ 1819 			atk_object_get_parent: <>
+ 1820 			g_object_unref: <>
+ 1821 		testWebkitAtkSetParentForObject: void (), <./gtk/tests/testatk.c 1806>
+ 1822 			WEBKIT_WEB_VIEW: <>
+ 1823 			webkit_web_view_new: <>
+ 1824 			gtk_widget_size_allocate: <>
+ 1825 			GTK_WIDGET: <>
+ 1826 			webkit_web_view_load_string: <>
+ 1827 			gtk_window_new: <>
+ 1828 			g_object_ref_sink: <>
+ 1829 			gtk_container_add: <>
+ 1830 			GTK_CONTAINER: <>
+ 1831 			gtk_widget_get_accessible: <>
+ 1832 			g_assert: <>
+ 1833 			ATK_IS_OBJECT: <>
+ 1834 			atk_object_get_parent: <>
+ 1835 			gtk_button_new: <>
+ 1836 			atk_object_set_parent: <>
+ 1837 			g_object_unref: <>
+ 1838 		dom_domview_fixture_setup: void (), <./gtk/tests/testdomdomwindow.c 50>
+ 1839 			g_main_loop_new: <>
+ 1840 			gtk_window_new: <>
+ 1841 			webkit_web_view_new: <>
+ 1842 			gtk_container_add: <>
+ 1843 			GTK_CONTAINER: <>
+ 1844 			GTK_WIDGET: <>
+ 1845 		test_dom_domview_signals: void (), <./gtk/tests/testdomdomwindow.c 116>
+ 1846 			g_assert: <>
+ 1847 			webkit_web_view_get_dom_document: <>
+ 1848 			webkit_dom_document_get_default_view: <>
+ 1849 			webkit_dom_event_target_add_event_listener: <>
+ 1850 			WEBKIT_DOM_EVENT_TARGET: <>
+ 1851 			G_CALLBACK: <>
+ 1852 			loadedCallback: gboolean (), <./gtk/tests/testdomdomwindow.c 66>
+ 1853 				g_assert: <>
+ 1854 			g_signal_connect: <>
+ 1855 			map_event_cb: 164
+ 1856 			load_event_callback: void (), <./gtk/tests/testdomdomwindow.c 104>
+ 1857 				webkit_web_view_get_load_status: <>
+ 1858 				webkit_dom_event_target_add_event_listener: <>
+ 1859 				WEBKIT_DOM_EVENT_TARGET: <>
+ 1860 				G_CALLBACK: <>
+ 1861 				clickedCallback: gboolean (), <./gtk/tests/testdomdomwindow.c 74>
+ 1862 					g_assert: <>
+ 1863 					WEBKIT_DOM_IS_EVENT: <>
+ 1864 					webkit_dom_event_get_event_phase: <>
+ 1865 					g_assert_cmpint: <>
+ 1866 					webkit_dom_event_get_current_target: <>
+ 1867 					WEBKIT_DOM_EVENT_TARGET: <>
+ 1868 					finish_loading: gboolean (), <./gtk/tests/testdomdomwindow.c 42>
+ 1869 						g_main_loop_is_running: <>
+ 1870 						g_main_loop_quit: <>
+ 1871 				g_assert: <>
+ 1872 				gtk_test_widget_click: <>
+ 1873 				GTK_WIDGET: <>
+ 1874 			gtk_widget_show_all: <>
+ 1875 			gtk_window_present: <>
+ 1876 			GTK_WINDOW: <>
+ 1877 			g_main_loop_run: <>
+ 1878 		dom_domview_fixture_teardown: void (), <./gtk/tests/testdomdomwindow.c 60>
+ 1879 			gtk_widget_destroy: <>
+ 1880 			g_main_loop_unref: <>
+ 1881 		test_dom_domview_dispatch_event: void (), <./gtk/tests/testdomdomwindow.c 186>
+ 1882 			g_signal_connect: <>
+ 1883 			G_CALLBACK: <>
+ 1884 			map_event_cb: 164
+ 1885 			load_status_callback: void (), <./gtk/tests/testdomdomwindow.c 150>
+ 1886 				webkit_web_view_get_load_status: <>
+ 1887 				webkit_web_view_get_dom_document: <>
+ 1888 				WEBKIT_WEB_VIEW: <>
+ 1889 				g_assert: <>
+ 1890 				webkit_dom_document_get_default_view: <>
+ 1891 				webkit_dom_document_get_element_by_id: <>
+ 1892 				webkit_dom_document_create_event: <>
+ 1893 				WEBKIT_DOM_IS_EVENT: <>
+ 1894 				WEBKIT_DOM_IS_MOUSE_EVENT: <>
+ 1895 				webkit_dom_element_get_client_left: <>
+ 1896 				webkit_dom_element_get_client_top: <>
+ 1897 				webkit_dom_mouse_event_init_mouse_event: <>
+ 1898 				WEBKIT_DOM_MOUSE_EVENT: <>
+ 1899 				WEBKIT_DOM_EVENT_TARGET: <>
+ 1900 				webkit_dom_event_target_add_event_listener: <>
+ 1901 				G_CALLBACK: <>
+ 1902 				clicked_cb: gboolean (), <./gtk/tests/testdomdomwindow.c 142>
+ 1903 					g_assert: <>
+ 1904 					finish_loading: 1868
+ 1905 				webkit_dom_event_target_dispatch_event: <>
+ 1906 			gtk_widget_show_all: <>
+ 1907 			gtk_window_present: <>
+ 1908 			GTK_WINDOW: <>
+ 1909 			g_main_loop_run: <>
+ 1910 			g_assert: <>
+ 1911 		server_callback: void (), <./gtk/tests/testloading.c 36>
+ 1912 			soup_message_set_status: <>
+ 1913 			g_str_equal: <>
+ 1914 			soup_message_body_append: <>
+ 1915 			strlen: <>
+ 1916 			soup_message_headers_set_encoding: <>
+ 1917 			soup_server_unpause_message: <>
+ 1918 			soup_message_body_complete: <>
+ 1919 		web_loading_fixture_setup: void (), <./gtk/tests/testloading.c 72>
+ 1920 			WEBKIT_WEB_VIEW: <>
+ 1921 			webkit_web_view_new: <>
+ 1922 			g_main_loop_new: <>
+ 1923 			g_object_ref_sink: <>
+ 1924 		test_loading_status: void (), <./gtk/tests/testloading.c 146>
+ 1925 			g_assert_cmpint: <>
+ 1926 			webkit_web_view_get_load_status: <>
+ 1927 			g_object_connect: <>
+ 1928 			G_OBJECT: <>
+ 1929 			G_CALLBACK: <>
+ 1930 			status_changed_cb: void (), <./gtk/tests/testloading.c 113>
+ 1931 				webkit_web_view_get_load_status: <>
+ 1932 				WEBKIT_WEB_VIEW: <>
+ 1933 				g_assert: <>
+ 1934 				g_assert_not_reached: <>
+ 1935 			load_finished_cb: void (), <./gtk/tests/testloading.c 103>
+ 1936 				g_assert: <>
+ 1937 				g_main_loop_quit: <>
+ 1938 			get_uri_for_path: char * (), <./gtk/tests/testloading.c 91>
+ 1939 				soup_uri_new_with_base: <>
+ 1940 				soup_uri_to_string: <>
+ 1941 				soup_uri_free: <>
+ 1942 			webkit_web_view_load_uri: <>
+ 1943 			g_free: <>
+ 1944 			g_main_loop_run: <>
+ 1945 		web_loading_fixture_teardown: void (), <./gtk/tests/testloading.c 85>
+ 1946 			g_object_unref: <>
+ 1947 			g_main_loop_unref: <>
+ 1948 		test_loading_error: void (), <./gtk/tests/testloading.c 207>
+ 1949 			g_test_bug: <>
+ 1950 			g_signal_connect: <>
+ 1951 			G_CALLBACK: <>
+ 1952 			load_error_cb: gboolean (), <./gtk/tests/testloading.c 198>
+ 1953 				g_assert: <>
+ 1954 			load_error_status_changed_cb: void (), <./gtk/tests/testloading.c 168>
+ 1955 				webkit_web_view_get_load_status: <>
+ 1956 				WEBKIT_WEB_VIEW: <>
+ 1957 				g_assert: <>
+ 1958 				g_main_loop_quit: <>
+ 1959 			get_uri_for_path: 1938
+ 1960 			webkit_web_view_load_uri: <>
+ 1961 			g_free: <>
+ 1962 			g_main_loop_run: <>
+ 1963 			g_assert: <>
+ 1964 		test_loading_cancelled: void (), <./gtk/tests/testloading.c 276>
+ 1965 			g_test_bug: <>
+ 1966 			g_signal_connect: <>
+ 1967 			G_CALLBACK: <>
+ 1968 			load_cancelled_cb: gboolean (), <./gtk/tests/testloading.c 231>
+ 1969 				g_assert: <>
+ 1970 			load_cancelled_status_changed_cb: void (), <./gtk/tests/testloading.c 248>
+ 1971 				webkit_web_view_get_load_status: <>
+ 1972 				WEBKIT_WEB_VIEW: <>
+ 1973 				g_assert: <>
+ 1974 				g_idle_add: <>
+ 1975 				stop_load: gboolean (), <./gtk/tests/testloading.c 242>
+ 1976 					webkit_web_view_stop_loading: <>
+ 1977 					WEBKIT_WEB_VIEW: <>
+ 1978 				g_main_loop_quit: <>
+ 1979 				g_assert_not_reached: <>
+ 1980 			get_uri_for_path: 1938
+ 1981 			webkit_web_view_load_uri: <>
+ 1982 			g_free: <>
+ 1983 			g_main_loop_run: <>
+ 1984 		test_loading_goback: void (), <./gtk/tests/testloading.c 355>
+ 1985 			g_signal_connect: <>
+ 1986 			G_CALLBACK: <>
+ 1987 			load_goback_status_changed_cb: void (), <./gtk/tests/testloading.c 292>
+ 1988 				webkit_web_view_get_load_status: <>
+ 1989 				WEBKIT_WEB_VIEW: <>
+ 1990 				g_assert: <>
+ 1991 				g_assert_not_reached: <>
+ 1992 				g_main_loop_quit: <>
+ 1993 			load_error_test: void (), <./gtk/tests/testloading.c 350>
+ 1994 				g_debug: <>
+ 1995 			get_uri_for_path: 1938
+ 1996 			webkit_web_view_load_uri: <>
+ 1997 			g_free: <>
+ 1998 			g_main_loop_run: <>
+ 1999 			g_signal_handlers_disconnect_by_func: <>
+ 2000 			load_wentback_status_changed_cb: void (), <./gtk/tests/testloading.c 319>
+ 2001 				webkit_web_view_get_load_status: <>
+ 2002 				WEBKIT_WEB_VIEW: <>
+ 2003 				get_uri_for_path: 1938
+ 2004 				g_assert_cmpstr: <>
+ 2005 				webkit_web_view_get_uri: <>
+ 2006 				g_assert_not_reached: <>
+ 2007 				g_main_loop_quit: <>
+ 2008 				g_free: <>
+ 2009 			webkit_web_view_go_back: <>
+ 2010 		test_webkit_download_create: void (), <./gtk/tests/testdownload.c 32>
+ 2011 			webkit_network_request_new: <>
+ 2012 			webkit_download_new: <>
+ 2013 			g_object_unref: <>
+ 2014 			g_assert_cmpstr: <>
+ 2015 			webkit_download_get_uri: <>
+ 2016 			g_assert: <>
+ 2017 			webkit_download_get_network_request: <>
+ 2018 			g_strrstr: <>
+ 2019 			webkit_download_get_suggested_filename: <>
+ 2020 			webkit_download_get_status: <>
+ 2021 			webkit_download_get_total_size: <>
+ 2022 			webkit_download_get_current_size: <>
+ 2023 			webkit_download_get_progress: <>
+ 2024 			webkit_download_get_elapsed_time: <>
+ 2025 			g_filename_to_uri: <>
+ 2026 			g_get_tmp_dir: <>
+ 2027 			webkit_download_set_destination_uri: <>
+ 2028 			webkit_download_get_destination_uri: <>
+ 2029 			g_free: <>
+ 2030 		test_webkit_download_synch: void (), <./gtk/tests/testdownload.c 194>
+ 2031 			test_webkit_download_perform: void (), <./gtk/tests/testdownload.c 140>
+ 2032 				WEBKIT_WEB_VIEW: <>
+ 2033 				webkit_web_view_new: <>
+ 2034 				g_object_ref_sink: <>
+ 2035 				G_OBJECT: <>
+ 2036 				g_signal_connect: <>
+ 2037 				G_CALLBACK: <>
+ 2038 				navigation_policy_decision_requested_cb: gboolean (), <./gtk/tests/testdownload.c 58>
+ 2039 					webkit_web_policy_decision_download: <>
+ 2040 				download_requested_asynch_cb: gboolean (), <./gtk/tests/testdownload.c 131>
+ 2041 					handle_download_requested_cb: void (), <./gtk/tests/testdownload.c 99>
+ 2042 						g_idle_add: <>
+ 2043 						set_filename: gboolean (), <./gtk/tests/testdownload.c 87>
+ 2044 							g_filename_to_uri: <>
+ 2045 							webkit_download_set_destination_uri: <>
+ 2046 							g_free: <>
+ 2047 							webkit_download_start: <>
+ 2048 						g_filename_to_uri: <>
+ 2049 						webkit_download_set_destination_uri: <>
+ 2050 						g_free: <>
+ 2051 						g_signal_connect: <>
+ 2052 						G_CALLBACK: <>
+ 2053 						notify_status_cb: void (), <./gtk/tests/testdownload.c 70>
+ 2054 							WEBKIT_DOWNLOAD: <>
+ 2055 							webkit_download_get_status: <>
+ 2056 							g_main_loop_quit: <>
+ 2057 							g_assert_not_reached: <>
+ 2058 				download_requested_cb: gboolean (), <./gtk/tests/testdownload.c 122>
+ 2059 					handle_download_requested_cb: 2041
+ 2060 				g_file_open_tmp: <>
+ 2061 				close: <>
+ 2062 				g_critical: <>
+ 2063 				g_unlink: <>
+ 2064 				g_strerror: <>
+ 2065 				g_main_loop_new: <>
+ 2066 				webkit_web_view_load_uri: <>
+ 2067 				g_main_loop_run: <>
+ 2068 				g_assert_cmpint: <>
+ 2069 				g_file_test: <>
+ 2070 				g_free: <>
+ 2071 				g_main_loop_unref: <>
+ 2072 				g_object_unref: <>
+ 2073 		test_webkit_download_asynch: void (), <./gtk/tests/testdownload.c 200>
+ 2074 			test_webkit_download_perform: 2031
+ 2075 		test_webkit_download_data: void (), <./gtk/tests/testdownload.c 221>
+ 2076 			WEBKIT_WEB_VIEW: <>
+ 2077 			webkit_web_view_new: <>
+ 2078 			g_object_ref_sink: <>
+ 2079 			g_signal_connect: <>
+ 2080 			G_CALLBACK: <>
+ 2081 			download_requested_cb: 2058
+ 2082 			idle_quit_loop_cb: void (), <./gtk/tests/testdownload.c 213>
+ 2083 				webkit_web_view_get_load_status: <>
+ 2084 				g_main_loop_quit: <>
+ 2085 			mime_type_policy_decision_requested_cb: gboolean (), <./gtk/tests/testdownload.c 205>
+ 2086 				webkit_web_policy_decision_download: <>
+ 2087 			g_main_loop_new: <>
+ 2088 			webkit_web_view_load_uri: <>
+ 2089 			g_main_loop_run: <>
+ 2090 			g_assert_cmpint: <>
+ 2091 			g_main_loop_unref: <>
+ 2092 			g_object_unref: <>
+ 2093 		test_webkit_download_not_found: void (), <./gtk/tests/testdownload.c 282>
+ 2094 			soup_server_new: <>
+ 2095 			soup_server_run_async: <>
+ 2096 			soup_server_add_handler: <>
+ 2097 			serverCallback: void (), <./gtk/tests/testdownload.c 271>
+ 2098 				soup_message_set_status: <>
+ 2099 				soup_message_body_complete: <>
+ 2100 			soup_uri_new: <>
+ 2101 			soup_uri_set_port: <>
+ 2102 			soup_server_get_port: <>
+ 2103 			soup_uri_new_with_base: <>
+ 2104 			soup_uri_to_string: <>
+ 2105 			soup_uri_free: <>
+ 2106 			g_main_loop_new: <>
+ 2107 			webkit_network_request_new: <>
+ 2108 			g_free: <>
+ 2109 			webkit_download_new: <>
+ 2110 			g_object_unref: <>
+ 2111 			webkit_download_set_destination_uri: <>
+ 2112 			g_signal_connect: <>
+ 2113 			G_CALLBACK: <>
+ 2114 			notifyDownloadStatusCallback: void (), <./gtk/tests/testdownload.c 251>
+ 2115 				WEBKIT_DOWNLOAD: <>
+ 2116 				webkit_download_get_network_response: <>
+ 2117 				webkit_network_response_get_message: <>
+ 2118 				webkit_download_get_status: <>
+ 2119 				g_assert_cmpint: <>
+ 2120 				g_main_loop_quit: <>
+ 2121 				g_assert_not_reached: <>
+ 2122 			webkit_download_start: <>
+ 2123 			g_main_loop_run: <>
+ 2124 			g_main_loop_unref: <>
+ 2125 		g_test_bug: <>
+ 2126 		test_webkit_web_data_source_get_initial_request: void (), <./gtk/tests/testwebdatasource.c 35>
+ 2127 			WEBKIT_WEB_VIEW: <>
+ 2128 			webkit_web_view_new: <>
+ 2129 			g_object_ref_sink: <>
+ 2130 			webkit_web_view_get_main_frame: <>
+ 2131 			webkit_network_request_new: <>
+ 2132 			webkit_web_frame_load_request: <>
+ 2133 			g_object_unref: <>
+ 2134 			webkit_web_frame_get_provisional_data_source: <>
+ 2135 			g_assert: <>
+ 2136 			webkit_web_data_source_get_initial_request: <>
+ 2137 			g_assert_cmpstr: <>
+ 2138 			webkit_network_request_get_uri: <>
+ 2139 		test_webkit_web_data_source: void (), <./gtk/tests/testwebdatasource.c 118>
+ 2140 			WEBKIT_WEB_VIEW: <>
+ 2141 			webkit_web_view_new: <>
+ 2142 			g_object_ref_sink: <>
+ 2143 			g_main_loop_new: <>
+ 2144 			g_signal_connect: <>
+ 2145 			G_CALLBACK: <>
+ 2146 			notify_load_status_cb: void (), <./gtk/tests/testwebdatasource.c 76>
+ 2147 				webkit_web_view_get_load_status: <>
+ 2148 				webkit_web_view_get_main_frame: <>
+ 2149 				webkit_web_frame_get_data_source: <>
+ 2150 				g_assert: <>
+ 2151 				webkit_web_data_source_is_loading: <>
+ 2152 				g_test_message: <>
+ 2153 				webkit_web_data_source_get_request: <>
+ 2154 				g_assert_cmpstr: <>
+ 2155 				webkit_network_request_get_uri: <>
+ 2156 				webkit_web_data_source_get_main_resource: <>
+ 2157 				webkit_web_resource_get_mime_type: <>
+ 2158 				webkit_web_resource_get_uri: <>
+ 2159 				webkit_web_data_source_get_data: <>
+ 2160 				g_main_loop_quit: <>
+ 2161 			webkit_web_view_load_uri: <>
+ 2162 			g_timeout_add_seconds: <>
+ 2163 			wait_timer_fired: gboolean (), <./gtk/tests/testwebdatasource.c 110>
+ 2164 				g_main_loop_quit: <>
+ 2165 			g_main_loop_run: <>
+ 2166 			g_source_remove: <>
+ 2167 			g_main_loop_unref: <>
+ 2168 			g_object_unref: <>
+ 2169 		test_webkit_web_data_source_unreachable_uri: void (), <./gtk/tests/testwebdatasource.c 200>
+ 2170 			WEBKIT_WEB_VIEW: <>
+ 2171 			webkit_web_view_new: <>
+ 2172 			g_object_ref_sink: <>
+ 2173 			g_main_loop_new: <>
+ 2174 			g_signal_connect: <>
+ 2175 			G_CALLBACK: <>
+ 2176 			notify_load_status_unreachable_cb: void (), <./gtk/tests/testwebdatasource.c 58>
+ 2177 				webkit_web_view_get_load_status: <>
+ 2178 				webkit_web_view_get_main_frame: <>
+ 2179 				g_assert: <>
+ 2180 				webkit_web_frame_get_data_source: <>
+ 2181 				g_assert_cmpstr: <>
+ 2182 				webkit_web_data_source_get_unreachable_uri: <>
+ 2183 				g_main_loop_quit: <>
+ 2184 			webkit_web_view_load_uri: <>
+ 2185 			g_timeout_add_seconds: <>
+ 2186 			wait_timer_fired: 2163
+ 2187 			g_main_loop_run: <>
+ 2188 			g_source_remove: <>
+ 2189 			g_main_loop_unref: <>
+ 2190 			g_object_unref: <>
+ 2191 		test_webkit_web_data_source_lifetime: void (), <./gtk/tests/testwebdatasource.c 157>
+ 2192 			WEBKIT_WEB_VIEW: <>
+ 2193 			webkit_web_view_new: <>
+ 2194 			g_object_ref_sink: <>
+ 2195 			g_main_loop_new: <>
+ 2196 			g_signal_connect: <>
+ 2197 			G_CALLBACK: <>
+ 2198 			notify_load_status_lifetime_cb: void (), <./gtk/tests/testwebdatasource.c 142>
+ 2199 				webkit_web_view_get_load_status: <>
+ 2200 				webkit_web_view_get_main_frame: <>
+ 2201 				webkit_web_frame_get_data_source: <>
+ 2202 				g_assert: <>
+ 2203 				webkit_web_data_source_is_loading: <>
+ 2204 				g_main_loop_quit: <>
+ 2205 			webkit_web_view_load_uri: <>
+ 2206 			g_timeout_add_seconds: <>
+ 2207 			wait_timer_fired: 2163
+ 2208 			g_main_loop_run: <>
+ 2209 			webkit_web_frame_get_data_source: <>
+ 2210 			webkit_web_view_get_main_frame: <>
+ 2211 			webkit_web_data_source_get_subresources: <>
+ 2212 			g_list_length: <>
+ 2213 			g_list_free: <>
+ 2214 			g_assert_cmpint: <>
+ 2215 			webkit_web_view_get_load_status: <>
+ 2216 			webkit_web_view_stop_loading: <>
+ 2217 			g_source_remove: <>
+ 2218 			g_main_loop_unref: <>
+ 2219 			g_object_unref: <>
+ 2220 		test_webkit_web_settings_user_agent: void (), <./gtk/tests/testwebsettings.c 84>
+ 2221 			g_test_bug: <>
+ 2222 			webkit_web_view_new: <>
+ 2223 			g_object_ref_sink: <>
+ 2224 			webkit_web_view_get_settings: <>
+ 2225 			WEBKIT_WEB_VIEW: <>
+ 2226 			g_strdup: <>
+ 2227 			webkit_web_settings_get_user_agent: <>
+ 2228 			test_non_quirky_user_agents: void (), <./gtk/tests/testwebsettings.c 59>
+ 2229 				g_object_set: <>
+ 2230 				g_object_get: <>
+ 2231 				g_assert_cmpstr: <>
+ 2232 				g_free: <>
+ 2233 			g_object_set: <>
+ 2234 			webkitWebSettingsUserAgentForURI: <>
+ 2235 			g_assert_cmpstr: <>
+ 2236 			g_free: <>
+ 2237 			g_object_unref: <>
+ 2238 		test_webkit_web_settings_copy: void (), <./gtk/tests/testwebsettings.c 29>
+ 2239 			webkit_web_settings_new: <>
+ 2240 			g_object_set: <>
+ 2241 			webkit_web_settings_copy: <>
+ 2242 			g_object_get: <>
+ 2243 			g_assert: <>
+ 2244 			g_assert_cmpstr: <>
+ 2245 			g_free: <>
+ 2246 		test_webkit_web_plugin_database_get_plugins: void (), <./gtk/tests/testwebplugindatabase.c 31>
+ 2247 			WEBKIT_WEB_VIEW: <>
+ 2248 			webkit_web_view_new: <>
+ 2249 			webkit_web_settings_add_extra_plugin_directory: <>
+ 2250 			g_object_ref_sink: <>
+ 2251 			G_OBJECT: <>
+ 2252 			webkit_get_web_plugin_database: <>
+ 2253 			webkit_web_plugin_database_get_plugins: <>
+ 2254 			g_strcmp0: <>
+ 2255 			webkit_web_plugin_get_name: <>
+ 2256 			webkit_web_plugin_get_description: <>
+ 2257 			webkit_web_plugin_get_enabled: <>
+ 2258 			webkit_web_plugin_set_enabled: <>
+ 2259 			webkit_web_plugin_database_plugins_list_free: <>
+ 2260 			g_assert: <>
+ 2261 			webkit_web_plugin_database_refresh: <>
+ 2262 			g_object_unref: <>
+ 2263 		serverCallback: void (), <./gtk/tests/testfavicondatabase.c 33>
+ 2264 			soup_message_set_status: <>
+ 2265 			g_str_equal: <>
+ 2266 			g_file_get_contents: <>
+ 2267 			g_assert: <>
+ 2268 			g_strdup: <>
+ 2269 			strlen: <>
+ 2270 			soup_message_body_append: <>
+ 2271 			soup_message_body_complete: <>
+ 2272 		testWebKitFaviconDatabaseSetPath: void (), <./gtk/tests/testfavicondatabase.c 73>
+ 2273 			g_build_filename: <>
+ 2274 			g_get_tmp_dir: <>
+ 2275 			deleteDatabaseFileIfExists: void (), <./gtk/tests/testfavicondatabase.c 58>
+ 2276 				g_file_test: <>
+ 2277 				g_build_filename: <>
+ 2278 				g_unlink: <>
+ 2279 				g_free: <>
+ 2280 				g_rmdir: <>
+ 2281 			webkit_get_favicon_database: <>
+ 2282 			webkit_favicon_database_set_path: <>
+ 2283 			g_assert_cmpstr: <>
+ 2284 			webkit_favicon_database_get_path: <>
+ 2285 			g_free: <>
+ 2286 		testWebKitFaviconDatabaseGetFavicon: void (), <./gtk/tests/testfavicondatabase.c 190>
+ 2287 			g_main_loop_new: <>
+ 2288 			loadURI: void (), <./gtk/tests/testfavicondatabase.c 148>
+ 2289 				WEBKIT_WEB_VIEW: <>
+ 2290 				webkit_web_view_new: <>
+ 2291 				webkit_web_view_load_uri: <>
+ 2292 				g_signal_connect: <>
+ 2293 				G_CALLBACK: <>
+ 2294 				idleQuitLoopCallback: void (), <./gtk/tests/testfavicondatabase.c 135>
+ 2295 					webkit_web_view_get_load_status: <>
+ 2296 					quitMainLoopIfLoadCompleted: inline void (), <./gtk/tests/testfavicondatabase.c 127>
+ 2297 						g_main_loop_quit: <>
+ 2298 				webkitWebViewIconLoaded: void (), <./gtk/tests/testfavicondatabase.c 143>
+ 2299 					quitMainLoopIfLoadCompleted: 2296
+ 2300 				g_main_loop_run: <>
+ 2301 				g_signal_handlers_disconnect_matched: <>
+ 2302 			g_idle_add: <>
+ 2303 			faviconDatabaseGetValidFaviconIdle: gboolean (), <./gtk/tests/testfavicondatabase.c 163>
+ 2304 				webkit_favicon_database_get_favicon_pixbuf: <>
+ 2305 				webkit_get_favicon_database: <>
+ 2306 				faviconDatabaseGetValidFaviconCallback: void (), <./gtk/tests/testfavicondatabase.c 89>
+ 2307 					webkit_favicon_database_get_favicon_pixbuf_finish: <>
+ 2308 					WEBKIT_FAVICON_DATABASE: <>
+ 2309 					g_assert: <>
+ 2310 					g_object_unref: <>
+ 2311 					g_main_loop_quit: <>
+ 2312 			g_main_loop_run: <>
+ 2313 			g_assert: <>
+ 2314 			faviconDatabaseGetInvalidFaviconIdle: gboolean (), <./gtk/tests/testfavicondatabase.c 171>
+ 2315 				webkit_favicon_database_get_favicon_pixbuf: <>
+ 2316 				webkit_get_favicon_database: <>
+ 2317 				faviconDatabaseGetInvalidFaviconCallback: void (), <./gtk/tests/testfavicondatabase.c 102>
+ 2318 					webkit_favicon_database_get_favicon_pixbuf_finish: <>
+ 2319 					WEBKIT_FAVICON_DATABASE: <>
+ 2320 					g_assert: <>
+ 2321 					g_main_loop_quit: <>
+ 2322 			faviconDatabaseGetFaviconCancelledIdle: gboolean (), <./gtk/tests/testfavicondatabase.c 179>
+ 2323 				g_cancellable_new: <>
+ 2324 				webkit_favicon_database_get_favicon_pixbuf: <>
+ 2325 				webkit_get_favicon_database: <>
+ 2326 				faviconDatabaseGetFaviconCancelledCallback: void (), <./gtk/tests/testfavicondatabase.c 114>
+ 2327 					webkit_favicon_database_get_favicon_pixbuf_finish: <>
+ 2328 					WEBKIT_FAVICON_DATABASE: <>
+ 2329 					g_assert: <>
+ 2330 					g_error_matches: <>
+ 2331 					g_main_loop_quit: <>
+ 2332 				g_cancellable_cancel: <>
+ 2333 				g_object_unref: <>
+ 2334 		testWebKitFaviconDatabaseGetFaviconURI: void (), <./gtk/tests/testfavicondatabase.c 215>
+ 2335 			webkit_favicon_database_get_favicon_uri: <>
+ 2336 			webkit_get_favicon_database: <>
+ 2337 			g_strdup_printf: <>
+ 2338 			g_assert_cmpstr: <>
+ 2339 			g_free: <>
+ 2340 		testWebKitFaviconDatabaseRemoveAll: void (), <./gtk/tests/testfavicondatabase.c 226>
+ 2341 			webkit_get_favicon_database: <>
+ 2342 			webkit_favicon_database_clear: <>
+ 2343 			webkit_favicon_database_get_favicon_uri: <>
+ 2344 			g_assert: <>
+ 2345 			g_free: <>
+ 2346 		testWebKitFaviconDatabaseCloseDatabase: void (), <./gtk/tests/testfavicondatabase.c 235>
+ 2347 			webkit_get_favicon_database: <>
+ 2348 			g_strdup: <>
+ 2349 			webkit_favicon_database_get_path: <>
+ 2350 			webkit_favicon_database_set_path: <>
+ 2351 			deleteDatabaseFileIfExists: 2275
+ 2352 			g_free: <>
+ 2353 		test_soup_message_lifetime: void (), <./gtk/tests/testhttpbackend.c 51>
+ 2354 			WEBKIT_WEB_VIEW: <>
+ 2355 			webkit_web_view_new: <>
+ 2356 			g_object_ref_sink: <>
+ 2357 			g_signal_connect: <>
+ 2358 			G_CALLBACK: <>
+ 2359 			navigation_policy_decision_requested_cb: gboolean (), <./gtk/tests/testhttpbackend.c 32>
+ 2360 				webkit_network_request_get_message: <>
+ 2361 				g_assert_cmpint: <>
+ 2362 				G_OBJECT: <>
+ 2363 			webkit_web_view_load_uri: <>
+ 2364 			g_object_unref: <>

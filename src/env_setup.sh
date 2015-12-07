@@ -30,8 +30,8 @@ fi
 ####################
 
 # YOU NEED TO CHANGE THE FOLLOWING PATH TO YOUR GIT DIRECTORY
-export PROJECT_PATH="$HOME/GoogleDrive/Courses/EC521/Project/EC521/"
-#export PROJECT_PATH="/osx-code/EC521/"
+#export PROJECT_PATH="$HOME/GoogleDrive/Courses/EC521/Project/EC521/"
+export PROJECT_PATH="/osx-code/EC521/"
 
 export CFLOW_INPUT_PROJECT_DIRECTORY="$1"
 export CFLOW_OUTPUT_DIRECTORY="$PROJECT_PATH""/test/cflow_files"

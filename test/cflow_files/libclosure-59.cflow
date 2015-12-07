@@ -1,0 +1,166 @@
+    1 	main: int (), <./objectTests/recursiveassign.c 25>
+    2 		printf: <>
+    3 		parameters_example: int (), <./tests/parameters.c 56>
+    4 			invoke_parameters_example: void (), <./tests/parameters.c 47>
+    5 				setGlobalInt: void (), <./tests/driver.c 29>
+    6 			getGlobalInt: int (), <./tests/driver.c 30>
+    7 			error_found: int (), <./tests/driver.c 73>
+    8 				printf: <>
+    9 				aDoNothingFunction: void (), <./tests/driver.c 69>
+   10 		result_value_example: int (), <./tests/closure_return.c 59>
+   11 			invoke_result_value_example: int (), <./tests/closure_return.c 54>
+   12 			printf: <>
+   13 		imports_example: int (), <./tests/import_const.c 84>
+   14 			rand: <>
+   15 			invoke_imports_example: void (), <./tests/import_const.c 72>
+   16 				setGlobalInt: 5
+   17 			callVoidVoid: void (), <./objectTests/byrefaccess.c 20>
+   18 			getGlobalInt: 6
+   19 			error_found: 7
+   20 			Block_copy: <>
+   21 			setGlobalInt: 5
+   22 			Block_release: <>
+   23 		import_byref: int (), <./tests/import_byref.c 107>
+   24 			rand: <>
+   25 			invoke_import_byref: void (), <./tests/import_byref.c 75>
+   26 				setGlobalInt: 5
+   27 			copy_import_byref: void (), <./tests/import_byref.c 85>
+   28 			destroy_import_byref: void (), <./tests/import_byref.c 98>
+   29 				Block_release_byref: <>
+   30 			callVoidVoid: 17
+   31 			getGlobalInt: 6
+   32 			error_found: 7
+   33 			Block_copy: <>
+   34 			Block_release: <>
+   35 			Block_release_byref: <>
+   36 		import_byref_interim: int (), <./tests/import_interim_byref.c 73>
+   37 			rand: <>
+   38 			invoke_import_byref_interim: void (), <./tests/import_interim_byref.c 60>
+   39 				setGlobalInt: 5
+   40 			callVoidVoid: 17
+   41 			getGlobalInt: 6
+   42 			error_found: 7
+   43 			Block_copy: <>
+   44 			Block_release: <>
+   45 		import_global: int (), <./tests/import_global.c 51>
+   46 			rand: <>
+   47 			invoke_import_global: void (), <./tests/import_global.c 43>
+   48 				setGlobalInt: 5
+   49 			callVoidVoid: 17
+   50 			getGlobalInt: 6
+   51 			error_found: 7
+   52 		test_blocks: int (), <./tests/block_examples.c 80>
+   53 			test1: int (), <./tests/block_examples.c 23>
+   54 				setGlobalInt: 5
+   55 				callVoidVoid: 17
+   56 				error_found: 7
+   57 			test2: int (), <./tests/block_examples.c 37>
+   58 				setGlobalInt: 5
+   59 				callVoidVoid: 17
+   60 			test3: int (), <./tests/block_examples.c 48>
+   61 				printf: <>
+   62 				setGlobalInt: 5
+   63 				callVoidVoid: 17
+   64 		result_value_example_real: int (), <./tests/closure_return.c 29>
+   65 			printf: <>
+   66 		parameters_example_real: int (), <./tests/parameters.c 27>
+   67 			setGlobalInt: 5
+   68 			getGlobalInt: 6
+   69 			error_found: 7
+   70 		import_global_real: int (), <./tests/import_global.c 22>
+   71 			rand: <>
+   72 			setGlobalInt: 5
+   73 			callVoidVoid: 17
+   74 			getGlobalInt: 6
+   75 			error_found: 7
+   76 		imports_example_real: int (), <./tests/import_const.c 40>
+   77 			rand: <>
+   78 			setGlobalInt: 5
+   79 			callVoidVoid: 17
+   80 			getGlobalInt: 6
+   81 			error_found: 7
+   82 			Block_copy: <>
+   83 			Block_release: <>
+   84 		import_byref_real: int (), <./tests/import_byref.c 28>
+   85 			rand: <>
+   86 			setGlobalInt: 5
+   87 			callVoidVoid: 17
+   88 			getGlobalInt: 6
+   89 			error_found: 7
+   90 			Block_copy: <>
+   91 			Block_release: <>
+   92 		import_byref_interim_real: int (), <./tests/import_interim_byref.c 26>
+   93 			rand: <>
+   94 			setGlobalInt: 5
+   95 			callVoidVoid: 17
+   96 			getGlobalInt: 6
+   97 			error_found: 7
+   98 			Block_copy: <>
+   99 			Block_release: <>
+  100 		test_objc: <>
+  101 		Block_copy: <>
+  102 		Block_release: <>
+  103 		testprintf: <>
+  104 		succeed: <>
+  105 		blockFu: <>
+  106 		dispatch_async: <>
+  107 		dispatch_get_main_queue: <>
+  108 		dispatch_apply: <>
+  109 		dispatch_get_global_queue: <>
+  110 		dispatch_main: <>
+  111 		fail: <>
+  112 		callVoidVoid: 17
+  113 		Block_size: size_t (), <./runtime.c 541>
+  114 		testwarn: <>
+  115 		memset: <>
+  116 		assert: <>
+  117 		malloc: <>
+  118 		testassert: <>
+  119 		strcmp: <>
+  120 		check: void (), <./objectTests/nullblockisa.c 22>
+  121 			fail: <>
+  122 		va_start: <>
+  123 		va_arg: <>
+  124 		va_end: <>
+  125 		callsomething: void (), <./objectTests/dispatch_call_Block_with_release.c 13>
+  126 			asm: <>
+  127 		dispatch_call_Block_with_release2: void (), <./objectTests/dispatch_call_Block_with_release.c 18>
+  128 			Block_release: <>
+  129 		aresame: int (), <./objectTests/localisglobal.c 23>
+  130 		testRoutine: voidVoid (), <./objectTests/byrefcopyint.c 44>
+  131 			strlen: <>
+  132 			Block_copy: <>
+  133 		block: <>
+  134 		mkblock: void () (), <./objectTests/rdar6396238.c 15>
+  135 		addthem: <>
+  136 		copy: <>
+  137 		dispose: <>
+  138 		testFunction: voidVoid (), <./objectTests/recursive-block.c 31>
+  139 			random: <>
+  140 			inner: <>
+  141 			doSomething: int (), <./objectTests/recursive-block.c 17>
+  142 			Block_copy: <>
+  143 		dirtyStack: void (), <./objectTests/recursive-block.c 22>
+  144 			random: <>
+  145 			doSomething: 141
+  146 		dispatch_queue_create: <>
+  147 		EnqueueStuff: void (), <./objectTests/dispatch_async.c 16>
+  148 			dispatch_async: <>
+  149 			succeed: <>
+  150 			fail: <>
+  151 		setClosures: void (), <./objectTests/byrefcopystack.c 26>
+  152 			bumpi: void () (), <./objectTests/byrefcopystack.c 23>
+  153 			Block_copy: <>
+  154 			geti: int () (), <./objectTests/byrefcopystack.c 24>
+  155 		bumpi: void () (), <./objectTests/byrefcopystack.c 23>
+  156 		geti: int () (), <./objectTests/byrefcopystack.c 24>
+  157 		sortWithBlock: void (), <./objectTests/rettypepromotion.c 39>
+  158 		random: <>
+  159 		recursive_local_block: <>
+  160 		recursive_copy_block: <>
+  161 		gblock: void () (), <./objectTests/globalexpression.c 15>
+  162 		foo: void (), <./objectTests/constassign.c 32>
+  163 			printf: <>
+  164 		bar: void (), <./objectTests/constassign.c 33>
+  165 			printf: <>
+  166 		abort: <>

@@ -1,0 +1,3291 @@
+    1 	main:  (), <./freeradius/src/modules/rlm_eap/radeapclient.c 1403>
+    2 		atoi: <>
+    3 		htons: <>
+    4 		memset: <>
+    5 		fork: <>
+    6 		perror: <>
+    7 		usleep: <>
+    8 		socket: <>
+    9 		udpfromto_init: <>
+   10 		waitpid: <>
+   11 		bind: <>
+   12 		printf: <>
+   13 		recvfromto: int (), <./freeradius/src/lib/udpfromto.c 151>
+   14 			recvfrom: <>
+   15 			getsockname: <>
+   16 			memset: <>
+   17 			recvmsg: <>
+   18 			CMSG_FIRSTHDR: <>
+   19 			CMSG_NXTHDR: <>
+   20 			CMSG_DATA: <>
+   21 		inet_ntoa: <>
+   22 		ntohs: <>
+   23 		sendfromto: int (), <./freeradius/src/lib/udpfromto.c 289>
+   24 			sendto: <>
+   25 			memset: <>
+   26 			CMSG_SPACE: <>
+   27 			CMSG_FIRSTHDR: <>
+   28 			CMSG_LEN: <>
+   29 			CMSG_DATA: <>
+   30 			sendmsg: <>
+   31 		close: <>
+   32 		inet_addr: <>
+   33 		sendto: <>
+   34 		fr_randinit: void (), <./freeradius/src/lib/isaac.c 66>
+   35 			mix: <>
+   36 			fr_isaac: <>
+   37 		fr_isaac: <>
+   38 		fr_event_list_create: fr_event_list_t * (), <./freeradius/src/lib/event.c 100>
+   39 			malloc: <>
+   40 			memset: <>
+   41 			fr_heap_create: fr_heap_t * (), <./freeradius/src/lib/heap.c 45>
+   42 				malloc: <>
+   43 				memset: <>
+   44 				free: <>
+   45 			fr_event_list_time_cmp: int (), <./freeradius/src/lib/event.c 70>
+   46 			offsetof: <>
+   47 			fr_event_list_free: void (), <./freeradius/src/lib/event.c 85>
+   48 				fr_heap_peek: void * (), <./freeradius/src/lib/heap.c 208>
+   49 				fr_event_delete: int (), <./freeradius/src/lib/event.c 134>
+   50 					fr_heap_extract: int (), <./freeradius/src/lib/heap.c 148>
+   51 						RESET_OFFSET: <>
+   52 						HEAP_LEFT: <>
+   53 						SET_OFFSET: <>
+   54 						fr_heap_bubble: int (), <./freeradius/src/lib/heap.c 119>
+   55 							HEAP_PARENT: <>
+   56 							HEAP_SWAP: <>
+   57 							SET_OFFSET: <>
+   58 					free: <>
+   59 				fr_heap_delete: void (), <./freeradius/src/lib/heap.c 37>
+   60 					free: <>
+   61 				free: <>
+   62 		exit: <>
+   63 		time: <>
+   64 		gettimeofday: int (), <./freeradius/src/lib/missing.c 219>
+   65 			GetSystemTimeAsFileTime: <>
+   66 			filetime_to_unix_epoch: uint64_t (), <./freeradius/src/lib/missing.c 209>
+   67 		event_rand: uint32_t (), <./freeradius/src/lib/event.c 453>
+   68 			fr_isaac: <>
+   69 		fr_event_insert: int (), <./freeradius/src/lib/event.c 151>
+   70 			fr_event_delete: 49
+   71 			malloc: <>
+   72 			memset: <>
+   73 			fr_heap_insert: int (), <./freeradius/src/lib/heap.c 93>
+   74 				malloc: <>
+   75 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+   76 				free: <>
+   77 				fr_heap_bubble: 54
+   78 			free: <>
+   79 		print_time: void (), <./freeradius/src/lib/event.c 443>
+   80 			printf: <>
+   81 			fflush: <>
+   82 		fr_event_list_num_elements: int (), <./freeradius/src/lib/event.c 126>
+   83 			fr_heap_num_elements: int (), <./freeradius/src/lib/heap.c 218>
+   84 		fr_event_run: int (), <./freeradius/src/lib/event.c 181>
+   85 			callback: <>
+   86 			fr_heap_num_elements: int (), <./freeradius/src/lib/heap.c 218>
+   87 			fr_heap_peek: 48
+   88 			fr_event_delete: 49
+   89 		fflush: <>
+   90 		fr_event_list_free: 47
+   91 		fr_heap_create: 41
+   92 		heap_cmp: int (), <./freeradius/src/lib/heap.c 237>
+   93 		fprintf: <>
+   94 		fr_heap_insert: 73
+   95 		fr_heap_peek: 48
+   96 		fr_heap_extract: 50
+   97 		fr_heap_delete: 59
+   98 		snprintf: <>
+   99 		fr_fifo_create: fr_fifo_t * (), <./freeradius/src/lib/fifo.c 45>
+  100 			malloc: <>
+  101 			memset: <>
+  102 		fr_fifo_push: int (), <./freeradius/src/lib/fifo.c 102>
+  103 			fr_fifo_alloc_entry: fr_fifo_entry_t * (), <./freeradius/src/lib/fifo.c 86>
+  104 				malloc: <>
+  105 				memset: <>
+  106 		fr_fifo_pop: void * (), <./freeradius/src/lib/fifo.c 134>
+  107 			fr_fifo_free_entry: void (), <./freeradius/src/lib/fifo.c 126>
+  108 		strlen: <>
+  109 		fr_hmac_sha1: void (), <./freeradius/src/lib/hmacsha1.c 31>
+  110 			fr_SHA1Init: void (), <./freeradius/src/lib/sha1.c 92>
+  111 			fr_SHA1Update: void (), <./freeradius/src/lib/sha1.c 106>
+  112 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  113 				fr_SHA1Transform: <>
+  114 			fr_SHA1Final: void (), <./freeradius/src/lib/sha1.c 128>
+  115 				fr_SHA1Update: 111
+  116 				memset: <>
+  117 				fr_SHA1Transform: <>
+  118 			printf: <>
+  119 			memset: <>
+  120 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  121 		fr_hash_table_create: fr_hash_table_t * (), <./freeradius/src/lib/hash.c 260>
+  122 			malloc: <>
+  123 			memset: <>
+  124 			free: <>
+  125 		hash_int: uint32_t (), <./freeradius/src/lib/hash.c 799>
+  126 			fr_hash: uint32_t (), <./freeradius/src/lib/hash.c 699>
+  127 				hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+  128 		malloc: <>
+  129 		fr_hash_table_insert: int (), <./freeradius/src/lib/hash.c 389>
+  130 			reverse: uint32_t (), <./freeradius/src/lib/hash.c 155>
+  131 			fr_hash_table_fixup: void (), <./freeradius/src/lib/hash.c 312>
+  132 				parent_of: uint32_t (), <./freeradius/src/lib/hash.c 166>
+  133 				fr_hash_table_fixup: 131
+  134 			malloc: <>
+  135 			memset: <>
+  136 			list_insert: int (), <./freeradius/src/lib/hash.c 207>
+  137 			free: <>
+  138 			fr_hash_table_grow: void (), <./freeradius/src/lib/hash.c 362>
+  139 				malloc: <>
+  140 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  141 				memset: <>
+  142 				free: <>
+  143 				fprintf: <>
+  144 		fr_hash_table_finddata: void * (), <./freeradius/src/lib/hash.c 480>
+  145 			fr_hash_table_find: fr_hash_entry_t * (), <./freeradius/src/lib/hash.c 439>
+  146 				reverse: 130
+  147 				fr_hash_table_fixup: 131
+  148 				list_find: fr_hash_entry_t * (), <./freeradius/src/lib/hash.c 181>
+  149 		fr_hash_table_info: int (), <./freeradius/src/lib/hash.c 617>
+  150 			memset: <>
+  151 			printf: <>
+  152 		fr_hash_table_delete: int (), <./freeradius/src/lib/hash.c 527>
+  153 			fr_hash_table_yank: void * (), <./freeradius/src/lib/hash.c 495>
+  154 				reverse: 130
+  155 				fr_hash_table_fixup: 131
+  156 				list_find: 148
+  157 				list_delete: int (), <./freeradius/src/lib/hash.c 238>
+  158 				free: <>
+  159 		fr_hash_table_free: void (), <./freeradius/src/lib/hash.c 543>
+  160 			free: <>
+  161 		free: <>
+  162 		getopt: <>
+  163 		usage: void NEVER_RETURNS (), <./freeradius/src/main/radwho.c 263>
+  164 			fprintf: <>
+  165 			exit: <>
+  166 		inet_pton: int (), <./freeradius/src/lib/misc.c 344>
+  167 			inet_pton4: int (), <./freeradius/src/lib/misc.c 192>
+  168 				strchr: <>
+  169 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  170 			inet_pton6: int (), <./freeradius/src/lib/misc.c 256>
+  171 				val: <>
+  172 				memset: <>
+  173 				strchr: <>
+  174 				inet_pton4: 167
+  175 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  176 		hostname: const char * (), <./freeradius/src/main/radwho.c 247>
+  177 			inet_ntop: const char * (), <./freeradius/src/lib/misc.c 366>
+  178 				snprintf: <>
+  179 		cf_file_read: CONF_SECTION * (), <./freeradius/src/main/conffile.c 1812>
+  180 			cf_section_alloc: CONF_SECTION * (), <./freeradius/src/main/conffile.c 401>
+  181 				strlen: <>
+  182 				rad_malloc: void * (), <./freeradius/src/main/util.c 344>
+  183 					malloc: <>
+  184 					radlog: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 1390>
+  185 						va_start: <>
+  186 						vradlog: int (), <./freeradius/src/main/log.c 56>
+  187 							time: <>
+  188 							CTIME_R: <>
+  189 							fr_int2str: const char * (), <./freeradius/src/lib/token.c 273>
+  190 							strcat: <>
+  191 							strlen: <>
+  192 							vsnprintf: <>
+  193 							syslog: <>
+  194 							write: <>
+  195 						va_end: <>
+  196 						vfprintf: <>
+  197 						fputc: <>
+  198 					exit: <>
+  199 				memset: <>
+  200 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  201 				rbtree_create: rbtree_t * (), <./freeradius/src/lib/rbtree.c 86>
+  202 					malloc: <>
+  203 					memset: <>
+  204 				pair_cmp: int (), <./freeradius/src/main/conffile.c 226>
+  205 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  206 				cf_section_free: void (), <./freeradius/src/main/conffile.c 338>
+  207 					cf_section_parse_free: void (), <./freeradius/src/main/conffile.c 285>
+  208 						free: <>
+  209 					cf_itemtopair: CONF_PAIR * (), <./freeradius/src/main/conffile.c 108>
+  210 						rad_assert: <>
+  211 					cf_pair_free: void (), <./freeradius/src/main/conffile.c 189>
+  212 						memset: <>
+  213 						free: <>
+  214 					cf_itemtosection: CONF_SECTION * (), <./freeradius/src/main/conffile.c 115>
+  215 						rad_assert: <>
+  216 					cf_section_free: 206
+  217 					cf_itemtodata: CONF_DATA * (), <./freeradius/src/main/conffile.c 135>
+  218 						rad_assert: <>
+  219 					cf_data_free: void (), <./freeradius/src/main/conffile.c 206>
+  220 						free: <>
+  221 						memset: <>
+  222 					rbtree_free: void (), <./freeradius/src/lib/rbtree.c 67>
+  223 						FreeWalker: void (), <./freeradius/src/lib/rbtree.c 58>
+  224 							FreeWalker: 223
+  225 							free: <>
+  226 						free: <>
+  227 					memset: <>
+  228 					free: <>
+  229 			cf_pair_alloc: CONF_PAIR * (), <./freeradius/src/main/conffile.c 152>
+  230 				strlen: <>
+  231 				rad_malloc: 182
+  232 				memset: <>
+  233 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  234 			strrchr: <>
+  235 			cf_item_add: void (), <./freeradius/src/main/conffile.c 490>
+  236 				rad_assert: <>
+  237 				rbtree_insert: int (), <./freeradius/src/lib/rbtree.c 297>
+  238 					rbtree_insertnode: rbnode_t * (), <./freeradius/src/lib/rbtree.c 231>
+  239 						malloc: <>
+  240 						exit: <>
+  241 						InsertFixup: void (), <./freeradius/src/lib/rbtree.c 166>
+  242 							RotateLeft: void (), <./freeradius/src/lib/rbtree.c 110>
+  243 							RotateRight: void (), <./freeradius/src/lib/rbtree.c 138>
+  244 				cf_itemtosection: 214
+  245 				rbtree_create: 201
+  246 				section_cmp: int (), <./freeradius/src/main/conffile.c 238>
+  247 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  248 				radlog: 184
+  249 				rbtree_finddata: void * (), <./freeradius/src/lib/rbtree.c 494>
+  250 					rbtree_find: rbnode_t * (), <./freeradius/src/lib/rbtree.c 470>
+  251 				name2_cmp: int (), <./freeradius/src/main/conffile.c 250>
+  252 					rad_assert: <>
+  253 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  254 				data_cmp: int (), <./freeradius/src/main/conffile.c 268>
+  255 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  256 			cf_pairtoitem: CONF_ITEM * (), <./freeradius/src/main/conffile.c 122>
+  257 			cf_file_include: int (), <./freeradius/src/main/conffile.c 1730>
+  258 				DEBUG2: <>
+  259 				stat: <>
+  260 				radlog: 184
+  261 				fopen: <>
+  262 				strerror: <>
+  263 				cf_data_find_internal: void * (), <./freeradius/src/main/conffile.c 2273>
+  264 					rbtree_finddata: 249
+  265 				fclose: <>
+  266 				rad_malloc: 182
+  267 				cf_data_add_internal: int (), <./freeradius/src/main/conffile.c 2307>
+  268 					cf_data_find_internal: 263
+  269 					cf_data_alloc: CONF_DATA * (), <./freeradius/src/main/conffile.c 2248>
+  270 						strlen: <>
+  271 						rad_malloc: 182
+  272 						memset: <>
+  273 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  274 					cf_item_add: 235
+  275 					cf_datatoitem: CONF_ITEM * (), <./freeradius/src/main/conffile.c 142>
+  276 				free: <>
+  277 				cf_section_read: int (), <./freeradius/src/main/conffile.c 1259>
+  278 					fgets: <>
+  279 					strlen: <>
+  280 					radlog: 184
+  281 					isspace: <>
+  282 					rad_copy_variable: int (), <./freeradius/src/main/util.c 539>
+  283 						rad_copy_string: int (), <./freeradius/src/main/util.c 512>
+  284 						rad_copy_variable: 282
+  285 					rad_copy_string: int (), <./freeradius/src/main/util.c 512>
+  286 					gettoken: FR_TOKEN (), <./freeradius/src/lib/token.c 231>
+  287 						getthing: FR_TOKEN (), <./freeradius/src/lib/token.c 72>
+  288 							isspace: <>
+  289 							TOKEN_MATCH: <>
+  290 							strcpy: <>
+  291 							strlen: <>
+  292 							sscanf: <>
+  293 							fr_strerror_printf: void (), <./freeradius/src/lib/log.c 82>
+  294 								pthread_once: <>
+  295 								fr_strerror_make_key: void (), <./freeradius/src/lib/log.c 73>
+  296 									pthread_key_create: <>
+  297 								pthread_getspecific: <>
+  298 								malloc: <>
+  299 								pthread_setspecific: <>
+  300 								va_start: <>
+  301 								vsnprintf: <>
+  302 								va_end: <>
+  303 					seen_too_much: int (), <./freeradius/src/main/conffile.c 1233>
+  304 						isspace: <>
+  305 						radlog: 184
+  306 					strcasecmp: int (), <./freeradius/src/lib/missing.c 70>
+  307 						strlen: <>
+  308 						strncasecmp: int (), <./freeradius/src/lib/missing.c 40>
+  309 					getword: int (), <./freeradius/src/lib/token.c 207>
+  310 						getthing: 287
+  311 					cf_expand_variables: const char * (), <./freeradius/src/main/conffile.c 701>
+  312 						cf_top_section: CONF_SECTION * (), <./freeradius/src/main/conffile.c 688>
+  313 						strchr: <>
+  314 						radlog: 184
+  315 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  316 						cf_reference_item: CONF_ITEM * (), <./freeradius/src/main/conffile.c 572>
+  317 							strlcpy: <>
+  318 							strchr: <>
+  319 							cf_section_sub_find_name2: CONF_SECTION * (), <./freeradius/src/main/conffile.c 2090>
+  320 								rbtree_finddata: 249
+  321 								cf_itemtosection: 214
+  322 								strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  323 							cf_sectiontoitem: CONF_ITEM * (), <./freeradius/src/main/conffile.c 128>
+  324 							cf_section_sub_find: CONF_SECTION * (), <./freeradius/src/main/conffile.c 2058>
+  325 								rbtree_finddata: 249
+  326 								strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  327 								cf_itemtosection: 214
+  328 							cf_pair_find: CONF_PAIR * (), <./freeradius/src/main/conffile.c 1842>
+  329 								rbtree_finddata: 249
+  330 								cf_itemtopair: 209
+  331 								cf_pair_find: 328
+  332 							cf_pairtoitem: 256
+  333 							DEBUG2: <>
+  334 						cf_itemtopair: 209
+  335 						strcpy: <>
+  336 						strlen: <>
+  337 						memcmp: <>
+  338 						getenv: <>
+  339 					FR_DIR_IS_RELATIVE: <>
+  340 					cf_local_file: const char * (), <./freeradius/src/main/conffile.c 1211>
+  341 						cf_top_section: 312
+  342 						strrchr: <>
+  343 						strlen: <>
+  344 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  345 						strlcpy: <>
+  346 					DEBUG2: <>
+  347 					opendir: <>
+  348 					strerror: <>
+  349 					readdir: struct dirent (), <./freeradius/libltdl/ltdl.c 486>
+  350 					isalpha: <>
+  351 					isdigit: <>
+  352 					snprintf: <>
+  353 					stat: <>
+  354 					S_ISDIR: <>
+  355 					cf_file_include: 257
+  356 					closedir: void (), <./freeradius/libltdl/ltdl.c 441>
+  357 						assert: <>
+  358 						FindClose: <>
+  359 						lt_dlfree: LT_GLOBAL_DATA void (), <./freeradius/libltdl/ltdl.c 224>
+  360 					DEBUG: <>
+  361 					cf_top_section: 312
+  362 					cf_section_sub_find: 324
+  363 					cf_reference_item: 316
+  364 					cf_itemtosection: 214
+  365 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  366 					getstring: FR_TOKEN (), <./freeradius/src/lib/token.c 239>
+  367 						isspace: <>
+  368 						gettoken: 286
+  369 						getthing: 287
+  370 					fr_strerror: const char * (), <./freeradius/src/lib/log.c 110>
+  371 						pthread_once: <>
+  372 						fr_strerror_make_key: 295
+  373 						pthread_getspecific: <>
+  374 					cf_pair_alloc: 229
+  375 					cf_item_add: 235
+  376 					cf_pairtoitem: 256
+  377 					condition_looks_ok: int (), <./freeradius/src/main/conffile.c 1130>
+  378 						DEBUG2: <>
+  379 						DEBUG3: <>
+  380 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  381 					cf_section_alloc: 180
+  382 					cf_sectiontoitem: 323
+  383 					feof: <>
+  384 					cf_section_name1: const char * (), <./freeradius/src/main/conffile.c 1955>
+  385 					cf_section_lineno: int (), <./freeradius/src/main/conffile.c 2218>
+  386 						cf_sectiontoitem: 323
+  387 			cf_section_free: 206
+  388 		cf_section_sub_find: 324
+  389 		cf_section_parse: int (), <./freeradius/src/main/conffile.c 1044>
+  390 			cf_log_info: void (), <./freeradius/src/main/conffile.c 2569>
+  391 				va_start: <>
+  392 				vradlog: 186
+  393 				va_end: <>
+  394 			cf_section_sub_find: 324
+  395 			DEBUG2: <>
+  396 			cf_section_parse: 389
+  397 			cf_item_parse: int (), <./freeradius/src/main/conffile.c 847>
+  398 				cf_pair_find: 328
+  399 				strcasecmp: 306
+  400 				radlog: 184
+  401 				cf_log_info: 390
+  402 				strtol: <>
+  403 				free: <>
+  404 				cf_expand_variables: 311
+  405 				cf_log_err: void (), <./freeradius/src/main/conffile.c 2556>
+  406 					va_start: <>
+  407 					vsnprintf: <>
+  408 					va_end: <>
+  409 					radlog: 184
+  410 				cf_sectiontoitem: 323
+  411 				strdup: <>
+  412 				stat: <>
+  413 				rad_malloc: 182
+  414 				cf_data_add_internal: 267
+  415 				strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  416 				htonl: <>
+  417 				ip_hton: int (), <./freeradius/src/lib/misc.c 411>
+  418 					memset: <>
+  419 					getaddrinfo: int (), <./freeradius/src/lib/getaddrinfo.c 263>
+  420 						isdigit: <>
+  421 						htons: <>
+  422 						atoi: <>
+  423 						getservbyname: <>
+  424 						malloc_ai: struct addrinfo (), <./freeradius/src/lib/getaddrinfo.c 208>
+  425 						htonl: <>
+  426 						inet_aton: int (), <./freeradius/src/lib/missing.c 83>
+  427 							sscanf: <>
+  428 							htonl: <>
+  429 						gethostbyname_r: struct hostent (), <./freeradius/src/lib/getaddrinfo.c 136>
+  430 						freeaddrinfo: void (), <./freeradius/src/lib/getaddrinfo.c 250>
+  431 							free: <>
+  432 						strdup: <>
+  433 					fr_strerror_printf: 293
+  434 					gai_strerror: const char * (), <./freeradius/src/lib/getaddrinfo.c 233>
+  435 					freeaddrinfo: 430
+  436 					fr_sockaddr2ipaddr: int (), <./freeradius/src/lib/misc.c 613>
+  437 						fr_strerror_printf: 293
+  438 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  439 						ntohs: <>
+  440 				strspn: <>
+  441 				strlen: <>
+  442 				ip_ntoh: const char * (), <./freeradius/src/lib/misc.c 446>
+  443 					inet_ntop: 177
+  444 					fr_ipaddr2sockaddr: int (), <./freeradius/src/lib/misc.c 576>
+  445 						memset: <>
+  446 						htons: <>
+  447 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  448 					getnameinfo: int (), <./freeradius/src/lib/getaddrinfo.c 383>
+  449 						snprintf: <>
+  450 						ntohs: <>
+  451 						strlen: <>
+  452 						strcpy: <>
+  453 						inet_ntoa: <>
+  454 						gethostbyaddr_r: struct hostent (), <./freeradius/src/lib/getaddrinfo.c 169>
+  455 					fr_strerror_printf: 293
+  456 					gai_strerror: 434
+  457 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  458 				cf_pair_alloc: 229
+  459 				cf_item_add: 235
+  460 				cf_pairtoitem: 256
+  461 			cf_section_parse_free: 207
+  462 		strstr: <>
+  463 		fgets: <>
+  464 		ffile: int (), <./freeradius/src/main/radwho.c 125>
+  465 			snprintf: <>
+  466 			access: <>
+  467 			safe_popen: FILE * (), <./freeradius/src/main/radwho.c 101>
+  468 				strlcpy: <>
+  469 				isalnum: <>
+  470 				strchr: <>
+  471 				popen: <>
+  472 			fopen: <>
+  473 			fgets: <>
+  474 			strchr: <>
+  475 			fprintf: <>
+  476 			pclose: <>
+  477 			fclose: <>
+  478 			fflush: <>
+  479 		sys_finger: void (), <./freeradius/src/main/radwho.c 159>
+  480 			ffile: 464
+  481 			exit: <>
+  482 			snprintf: <>
+  483 			safe_popen: 467
+  484 			printf: <>
+  485 			strerror: <>
+  486 			fgets: <>
+  487 			strchr: <>
+  488 			fprintf: <>
+  489 			pclose: <>
+  490 		fopen: <>
+  491 		strerror: <>
+  492 		fputs: <>
+  493 		fread: <>
+  494 		strchr: <>
+  495 		strncasecmp: int (), <./freeradius/src/lib/missing.c 40>
+  496 		strncmp: <>
+  497 		memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  498 		fr_print_string: size_t (), <./freeradius/src/lib/print.c 130>
+  499 			strlen: <>
+  500 			fr_utf8_char: <>
+  501 			snprintf: <>
+  502 		fullname: char * (), <./freeradius/src/main/radwho.c 187>
+  503 			getpwnam: <>
+  504 			strchr: <>
+  505 		proto: const char * (), <./freeradius/src/main/radwho.c 205>
+  506 			strchr: <>
+  507 			snprintf: <>
+  508 		dotime: char * (), <./freeradius/src/main/radwho.c 228>
+  509 			ctime: <>
+  510 			strlcpy: <>
+  511 		fclose: <>
+  512 		strrchr: <>
+  513 		usage: int (), <./freeradius/src/main/radmin.c 164>
+  514 			printf: <>
+  515 			exit: <>
+  516 		strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  517 		cf_subsection_find_next: CONF_SECTION * (), <./freeradius/src/main/conffile.c 2143>
+  518 			cf_sectiontoitem: 323
+  519 			strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  520 			cf_itemtosection: 214
+  521 		cf_pair_find: 328
+  522 		cf_pair_value: const char * (), <./freeradius/src/main/conffile.c 1886>
+  523 		cf_item_parse: 397
+  524 		isatty: <>
+  525 		using_history: <>
+  526 		rl_bind_key: <>
+  527 		fr_domain_socket: int (), <./freeradius/src/main/radmin.c 96>
+  528 			strlen: <>
+  529 			fprintf: <>
+  530 			socket: <>
+  531 			strerror: <>
+  532 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  533 			SUN_LEN: <>
+  534 			connect: <>
+  535 			close: <>
+  536 			stat: <>
+  537 			fcntl: <>
+  538 		read: <>
+  539 		ntohl: <>
+  540 		run_command: ssize_t (), <./freeradius/src/main/radmin.c 180>
+  541 			fprintf: <>
+  542 			write: <>
+  543 			strlen: <>
+  544 			memset: <>
+  545 			FD_ZERO: <>
+  546 			FD_SET: <>
+  547 			select: <>
+  548 			strerror: <>
+  549 			exit: <>
+  550 			recv: <>
+  551 			strstr: <>
+  552 		readline: <>
+  553 		add_history: <>
+  554 		isdigit: <>
+  555 		usage: void NEVER_RETURNS (), <./freeradius/src/main/dhclient.c 68>
+  556 			fprintf: <>
+  557 			exit: <>
+  558 		atof: <>
+  559 		dict_init: int (), <./freeradius/src/lib/dict.c 1612>
+  560 			dict_stat_check: int (), <./freeradius/src/lib/dict.c 286>
+  561 				strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  562 				stat: <>
+  563 			dict_free: void (), <./freeradius/src/lib/dict.c 390>
+  564 				fr_hash_table_free: 159
+  565 				memset: <>
+  566 				fr_pool_delete: void (), <./freeradius/src/lib/dict.c 335>
+  567 					free: <>
+  568 				dict_stat_free: void (), <./freeradius/src/lib/dict.c 235>
+  569 					free: <>
+  570 			strdup: <>
+  571 			fr_hash_table_create: 121
+  572 			dict_vendor_name_hash: uint32_t (), <./freeradius/src/lib/dict.c 162>
+  573 				dict_hashname: uint32_t (), <./freeradius/src/lib/dict.c 109>
+  574 					hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+  575 					isalpha: <>
+  576 					tolower: <>
+  577 			dict_vendor_name_cmp: int (), <./freeradius/src/lib/dict.c 167>
+  578 				strcasecmp: 306
+  579 			fr_pool_free: void (), <./freeradius/src/lib/dict.c 380>
+  580 			dict_vendor_value_hash: uint32_t (), <./freeradius/src/lib/dict.c 175>
+  581 				fr_hash: 126
+  582 			dict_vendor_value_cmp: int (), <./freeradius/src/lib/dict.c 181>
+  583 			dict_attr_name_hash: uint32_t (), <./freeradius/src/lib/dict.c 129>
+  584 				dict_hashname: 573
+  585 			dict_attr_name_cmp: int (), <./freeradius/src/lib/dict.c 134>
+  586 				strcasecmp: 306
+  587 			dict_attr_value_hash: uint32_t (), <./freeradius/src/lib/dict.c 142>
+  588 				hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+  589 				fr_hash: 126
+  590 				fr_hash_update: uint32_t (), <./freeradius/src/lib/hash.c 732>
+  591 			dict_attr_value_cmp: int (), <./freeradius/src/lib/dict.c 151>
+  592 			dict_value_name_hash: uint32_t (), <./freeradius/src/lib/dict.c 189>
+  593 				hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+  594 				dict_hashname: 573
+  595 				fr_hash_update: 590
+  596 			dict_value_name_cmp: int (), <./freeradius/src/lib/dict.c 198>
+  597 				strcasecmp: 306
+  598 			dict_value_value_hash: uint32_t (), <./freeradius/src/lib/dict.c 210>
+  599 				hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+  600 				fr_hash: 126
+  601 				fr_hash_update: 590
+  602 			dict_value_value_cmp: int (), <./freeradius/src/lib/dict.c 219>
+  603 			my_dict_init: int (), <./freeradius/src/lib/dict.c 1311>
+  604 				strlen: <>
+  605 				fr_strerror_printf: 293
+  606 				strrchr: <>
+  607 				strcpy: <>
+  608 				strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  609 				snprintf: <>
+  610 				fopen: <>
+  611 				strerror: <>
+  612 				stat: <>
+  613 				S_ISREG: <>
+  614 				fclose: <>
+  615 				dict_stat_add: void (), <./freeradius/src/lib/dict.c 262>
+  616 					malloc: <>
+  617 					memset: <>
+  618 					strdup: <>
+  619 				fr_rand_seed: void (), <./freeradius/src/lib/radius.c 3492>
+  620 					hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+  621 					memset: <>
+  622 					open: <>
+  623 					read: <>
+  624 					close: <>
+  625 					time: <>
+  626 					fr_randinit: 34
+  627 					fr_rand: uint32_t (), <./freeradius/src/lib/radius.c 3544>
+  628 						fr_rand_seed: 619
+  629 						fr_isaac: <>
+  630 					fr_hash_update: 590
+  631 				fgets: <>
+  632 				strchr: <>
+  633 				str2argv: int (), <./freeradius/src/lib/dict.c 1271>
+  634 				strcasecmp: 306
+  635 				process_value: int (), <./freeradius/src/lib/dict.c 1030>
+  636 					fr_strerror_printf: 293
+  637 					strcasecmp: 306
+  638 					sscanf_i: int (), <./freeradius/src/lib/dict.c 813>
+  639 						memchr: <>
+  640 						tolower: <>
+  641 					dict_addvalue: int (), <./freeradius/src/lib/dict.c 664>
+  642 						fr_strerror_printf: 293
+  643 						strlen: <>
+  644 						fr_pool_alloc: void * (), <./freeradius/src/lib/dict.c 350>
+  645 							fr_pool_create: fr_pool_t * (), <./freeradius/src/lib/dict.c 320>
+  646 								malloc: <>
+  647 								memset: <>
+  648 						memset: <>
+  649 						strcpy: <>
+  650 						strcasecmp: 306
+  651 						dict_attrbyname: DICT_ATTR * (), <./freeradius/src/lib/dict.c 1778>
+  652 							strlcpy: <>
+  653 							fr_hash_table_finddata: 144
+  654 						fr_pool_free: void (), <./freeradius/src/lib/dict.c 380>
+  655 						fr_int2str: 189
+  656 						malloc: <>
+  657 						strlcpy: <>
+  658 						fr_hash_table_insert: 129
+  659 						dict_valbyname: DICT_VALUE * (), <./freeradius/src/lib/dict.c 1819>
+  660 							fr_hash_table_finddata: 144
+  661 							strlcpy: <>
+  662 						fr_hash_table_replace: int (), <./freeradius/src/lib/hash.c 461>
+  663 							fr_hash_table_find: 145
+  664 							fr_hash_table_insert: 129
+  665 					strlcpy: <>
+  666 					fr_strerror: 370
+  667 				process_attribute: int (), <./freeradius/src/lib/dict.c 846>
+  668 					fr_strerror_printf: 293
+  669 					sscanf_i: 638
+  670 					fr_str2int: int (), <./freeradius/src/lib/token.c 257>
+  671 						strcasecmp: 306
+  672 					memset: <>
+  673 					strchr: <>
+  674 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+  675 					strncmp: <>
+  676 					strtol: <>
+  677 					dict_vendorbyname: int (), <./freeradius/src/lib/dict.c 1847>
+  678 						strlcpy: <>
+  679 						fr_hash_table_finddata: 144
+  680 					fr_int2str: 189
+  681 					strstr: <>
+  682 					fprintf: <>
+  683 					dict_addattr: int (), <./freeradius/src/lib/dict.c 486>
+  684 						strlen: <>
+  685 						fr_strerror_printf: 293
+  686 						dict_attrbyname: 651
+  687 						dict_vendorbyvalue: DICT_VENDOR * (), <./freeradius/src/lib/dict.c 1866>
+  688 							fr_hash_table_finddata: 144
+  689 						fr_pool_alloc: 644
+  690 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  691 						fr_hash_table_insert: 129
+  692 						fr_hash_table_finddata: 144
+  693 						strcasecmp: 306
+  694 						fr_pool_free: void (), <./freeradius/src/lib/dict.c 380>
+  695 						fr_hash_table_delete: 152
+  696 						fr_hash_table_replace: 662
+  697 					strlcpy: <>
+  698 					fr_strerror: 370
+  699 				my_dict_init: 603
+  700 				process_value_alias: int (), <./freeradius/src/lib/dict.c 1075>
+  701 					fr_strerror_printf: 293
+  702 					dict_attrbyname: 651
+  703 					fr_pool_alloc: 644
+  704 					fr_hash_table_insert: 129
+  705 					fr_pool_free: void (), <./freeradius/src/lib/dict.c 380>
+  706 				process_vendor: int (), <./freeradius/src/lib/dict.c 1154>
+  707 					fr_strerror_printf: 293
+  708 					isdigit: <>
+  709 					atoi: <>
+  710 					dict_addvendor: int (), <./freeradius/src/lib/dict.c 421>
+  711 						fr_strerror_printf: 293
+  712 						strlen: <>
+  713 						fr_pool_alloc: 644
+  714 						strcpy: <>
+  715 						fr_hash_table_insert: 129
+  716 						fr_hash_table_finddata: 144
+  717 						fr_pool_free: void (), <./freeradius/src/lib/dict.c 380>
+  718 						fr_hash_table_replace: 662
+  719 					strlcpy: <>
+  720 					fr_strerror: 370
+  721 					strncasecmp: int (), <./freeradius/src/lib/missing.c 40>
+  722 					strlen: <>
+  723 					dict_vendorbyvalue: 687
+  724 				dict_attrbyname: 651
+  725 				dict_vendorbyname: 677
+  726 			dict_attrbyname: 651
+  727 			fr_strerror_printf: 293
+  728 			fr_hash_table_replace: 662
+  729 			fr_hash_table_finddata: 144
+  730 			free: <>
+  731 			fr_hash_table_walk: int (), <./freeradius/src/lib/hash.c 585>
+  732 				fr_hash_table_fixup: 131
+  733 			null_callback: int (), <./freeradius/src/lib/dict.c 1599>
+  734 		fr_perror: void (), <./freeradius/src/lib/log.c 127>
+  735 			va_start: <>
+  736 			vfprintf: <>
+  737 			strchr: <>
+  738 			fprintf: <>
+  739 			fr_strerror: 370
+  740 			va_end: <>
+  741 		ip_hton: 417
+  742 		request_init: int (), <./freeradius/src/main/dhclient.c 87>
+  743 			fopen: <>
+  744 			fprintf: <>
+  745 			strerror: <>
+  746 			rad_alloc: RADIUS_PACKET * (), <./freeradius/src/lib/radius.c 3568>
+  747 				malloc: <>
+  748 				fr_strerror_printf: 293
+  749 				memset: <>
+  750 				hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+  751 				fr_rand: 627
+  752 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  753 			readvp2: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 1870>
+  754 				fgets: <>
+  755 				userparse: FR_TOKEN (), <./freeradius/src/lib/valuepair.c 1830>
+  756 					pairread: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 1644>
+  757 						fr_strerror_printf: 293
+  758 						gettoken: 286
+  759 						pairmake: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 1469>
+  760 							strrchr: <>
+  761 							fr_strerror_printf: 293
+  762 							strlcpy: <>
+  763 							strtol: <>
+  764 							TAG_VALID_ZERO: <>
+  765 							dict_attrbyname: 651
+  766 							pairmake_any: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 1279>
+  767 								strncasecmp: int (), <./freeradius/src/lib/missing.c 40>
+  768 								fr_strerror_printf: 293
+  769 								strtol: <>
+  770 								strchr: <>
+  771 								memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  772 								dict_vendorbyname: 677
+  773 								dict_vendorbyvalue: 687
+  774 								paircreate: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 168>
+  775 									dict_attrbyvalue: DICT_ATTR * (), <./freeradius/src/lib/dict.c 1763>
+  776 										VENDOR: <>
+  777 										fr_hash_table_finddata: 144
+  778 									pairalloc: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 61>
+  779 										malloc: <>
+  780 										memset: <>
+  781 									fr_strerror_printf: 293
+  782 									paircreate_raw: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 138>
+  783 										pairfree: void (), <./freeradius/src/lib/valuepair.c 204>
+  784 											pairbasicfree: void (), <./freeradius/src/lib/valuepair.c 192>
+  785 												free: <>
+  786 												memset: <>
+  787 										VENDOR: <>
+  788 										memset: <>
+  789 										vp_print_name: const char * (), <./freeradius/src/lib/print.c 391>
+  790 											VENDOR: <>
+  791 											dict_vendorbyvalue: 687
+  792 											snprintf: <>
+  793 											strlen: <>
+  794 										free: <>
+  795 								strlen: <>
+  796 								memset: <>
+  797 								fr_hex2bin: size_t (), <./freeradius/src/lib/misc.c 479>
+  798 									memchr: <>
+  799 									tolower: <>
+  800 								free: <>
+  801 							pairalloc: 778
+  802 							DEBUG: <>
+  803 							pairbasicfree: 784
+  804 							strlen: <>
+  805 							pairparsevalue: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 864>
+  806 								strlcpy: <>
+  807 								strlen: <>
+  808 								sscanf: <>
+  809 								strrchr: <>
+  810 								strdup: <>
+  811 								ip_hton: 417
+  812 								free: <>
+  813 								fr_strerror_printf: 293
+  814 								getint: uint32_t (), <./freeradius/src/lib/valuepair.c 843>
+  815 									strtoul: <>
+  816 								check_for_whitespace: int (), <./freeradius/src/lib/valuepair.c 852>
+  817 									isspace: <>
+  818 								dict_valbyname: 659
+  819 								gettime: int (), <./freeradius/src/lib/valuepair.c 700>
+  820 									strtoul: <>
+  821 									memset: <>
+  822 									strlcpy: <>
+  823 									mystrtok: char * (), <./freeradius/src/lib/valuepair.c 678>
+  824 										strchr: <>
+  825 									strchr: <>
+  826 									isalpha: <>
+  827 									strncasecmp: int (), <./freeradius/src/lib/missing.c 40>
+  828 									atoi: <>
+  829 									mktime: <>
+  830 								strncasecmp: int (), <./freeradius/src/lib/missing.c 40>
+  831 								ascend_parse_filter: int (), <./freeradius/src/lib/filters.c 988>
+  832 									fr_strerror_printf: 293
+  833 									str2argv: int (), <./freeradius/src/lib/filters.c 357>
+  834 									fr_str2int: 670
+  835 									memset: <>
+  836 									ascend_parse_generic: int (), <./freeradius/src/lib/filters.c 885>
+  837 										strspn: <>
+  838 										strlen: <>
+  839 										atoi: <>
+  840 										htons: <>
+  841 										fr_hex2bin: 797
+  842 										fr_str2int: 670
+  843 										fr_strerror_printf: 293
+  844 									ascend_parse_ip: int (), <./freeradius/src/lib/filters.c 748>
+  845 										fr_str2int: 670
+  846 										ascend_parse_ipaddr: int (), <./freeradius/src/lib/filters.c 583>
+  847 											atoi: <>
+  848 											strspn: <>
+  849 											fr_strerror_printf: 293
+  850 											htonl: <>
+  851 										ascend_parse_port: int (), <./freeradius/src/lib/filters.c 681>
+  852 											fr_str2int: 670
+  853 											strspn: <>
+  854 											strlen: <>
+  855 											atoi: <>
+  856 											htons: <>
+  857 										strspn: <>
+  858 										strlen: <>
+  859 										atoi: <>
+  860 										fr_strerror_printf: 293
+  861 									ascend_parse_ipx: int (), <./freeradius/src/lib/filters.c 515>
+  862 										fr_str2int: 670
+  863 										ascend_parse_ipx_net: int (), <./freeradius/src/lib/filters.c 383>
+  864 											htonl: <>
+  865 											strtol: <>
+  866 											fr_str2int: 670
+  867 											memcmp: <>
+  868 											fr_hex2bin: 797
+  869 											strtoul: <>
+  870 											htons: <>
+  871 										fr_strerror_printf: 293
+  872 									memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  873 								snprintf: <>
+  874 								fr_strerror: 370
+  875 								ifid_aton: uint8_t * (), <./freeradius/src/lib/misc.c 147>
+  876 									strchr: <>
+  877 									tolower: <>
+  878 								strchr: <>
+  879 								memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  880 								inet_pton: 166
+  881 								strtoul: <>
+  882 								memchr: <>
+  883 								tolower: <>
+  884 								strtol: <>
+  885 								malloc: <>
+  886 								fr_hex2bin: 797
+  887 						strchr: <>
+  888 						strlen: <>
+  889 						strlcpy: <>
+  890 						pairparsevalue: 805
+  891 						pairfree: 783
+  892 					pairadd: void (), <./freeradius/src/lib/valuepair.c 254>
+  893 				fr_perror: 734
+  894 				pairadd: 892
+  895 				pairfree: 783
+  896 			rad_free: void (), <./freeradius/src/lib/radius.c 3631>
+  897 				free: <>
+  898 				pairfree: 783
+  899 			fclose: <>
+  900 		fr_socket: int (), <./freeradius/src/lib/packet.c 199>
+  901 			fr_strerror_printf: 293
+  902 			socket: <>
+  903 			strerror: <>
+  904 			udpfromto_init: <>
+  905 			close: <>
+  906 			fr_ipaddr2sockaddr: 444
+  907 			IN6_IS_ADDR_UNSPECIFIED: <>
+  908 			setsockopt: <>
+  909 			bind: <>
+  910 		fr_strerror: 370
+  911 		fr_dhcp_encode: int (), <./freeradius/src/lib/dhcp.c 958>
+  912 			malloc: <>
+  913 			htonl: <>
+  914 			memset: <>
+  915 			snprintf: <>
+  916 			DEBUG: <>
+  917 			inet_ntop: 177
+  918 			pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+  919 			DHCP2ATTR: <>
+  920 			debug_pair: void (), <./freeradius/src/main/valuepair.c 737>
+  921 				vp_print: void (), <./freeradius/src/lib/print.c 476>
+  922 					vp_prints: int (), <./freeradius/src/lib/print.c 428>
+  923 						vp_print_name: 789
+  924 						snprintf: <>
+  925 						strlen: <>
+  926 						vp_prints_value: int (), <./freeradius/src/lib/print.c 206>
+  927 							fr_print_string: 498
+  928 							strcat: <>
+  929 							strlcpy: <>
+  930 							strlen: <>
+  931 							dict_valbyattr: DICT_VALUE * (), <./freeradius/src/lib/dict.c 1794>
+  932 								fr_hash_table_finddata: 144
+  933 							snprintf: <>
+  934 							strftime: <>
+  935 							localtime_r: struct tm (), <./freeradius/src/lib/missing.c 149>
+  936 							inet_ntop: 177
+  937 							print_abinary: void (), <./freeradius/src/lib/filters.c 1145>
+  938 								strcpy: <>
+  939 								snprintf: <>
+  940 								fr_int2str: 189
+  941 								ntohs: <>
+  942 								ntohl: <>
+  943 								socket: <>
+  944 							strcpy: <>
+  945 							fr_bin2hex: void (), <./freeradius/src/lib/misc.c 500>
+  946 							ifid_ntoa: char * (), <./freeradius/src/lib/misc.c 134>
+  947 								snprintf: <>
+  948 							memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  949 					fputc: <>
+  950 					fputs: <>
+  951 			gettimeofday: 64
+  952 			timeval2ntp: void (), <./freeradius/src/lib/missing.c 244>
+  953 				htonl: <>
+  954 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  955 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  956 			fr_strerror_printf: 293
+  957 			fr_rand: 627
+  958 			pairmake: 759
+  959 			fr_strerror: 370
+  960 			ntohl: <>
+  961 			strlen: <>
+  962 			pairfree: 783
+  963 			vp_prints: 922
+  964 			qsort: <>
+  965 			attr_cmp: int (), <./freeradius/src/lib/dhcp.c 806>
+  966 				DHCP2ATTR: <>
+  967 			free: <>
+  968 			IS_DHCP_ATTR: <>
+  969 			DHCP_BASE_ATTR: <>
+  970 			memmove: lt_ptr (), <./freeradius/libltdl/ltdl.c 409>
+  971 			fr_dhcp_vp2suboption: VALUE_PAIR * (), <./freeradius/src/lib/dhcp.c 894>
+  972 				paircreate: 774
+  973 				pairfree: 783
+  974 				malloc: <>
+  975 				fr_dhcp_vp2attr: size_t (), <./freeradius/src/lib/dhcp.c 827>
+  976 					htonl: <>
+  977 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  978 					fr_strerror_printf: 293
+  979 			fr_dhcp_vp2attr: 975
+  980 			fprintf: <>
+  981 		print_hex: void (), <./freeradius/src/main/dhclient.c 203>
+  982 			printf: <>
+  983 			fflush: <>
+  984 		fr_dhcp_send: int (), <./freeradius/src/lib/dhcp.c 371>
+  985 			fr_ipaddr2sockaddr: 444
+  986 			sendto: <>
+  987 			sendfromto: 23
+  988 		fr_dhcp_recv: RADIUS_PACKET * (), <./freeradius/src/lib/dhcp.c 202>
+  989 			rad_alloc: 746
+  990 			fr_strerror_printf: 293
+  991 			memset: <>
+  992 			malloc: <>
+  993 			rad_free: 896
+  994 			recvfromto: 13
+  995 			recvfrom: <>
+  996 			strerror: <>
+  997 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+  998 			ntohl: <>
+  999 			dhcp_get_option: uint8_t * (), <./freeradius/src/lib/dhcp.c 130>
+ 1000 				offsetof: <>
+ 1001 				fr_strerror_printf: 293
+ 1002 			getsockname: <>
+ 1003 			fr_sockaddr2ipaddr: 436
+ 1004 			snprintf: <>
+ 1005 			DEBUG: <>
+ 1006 			inet_ntop: 177
+ 1007 		fr_dhcp_decode: int (), <./freeradius/src/lib/dhcp.c 532>
+ 1008 			fr_strerror_printf: 293
+ 1009 			fprintf: <>
+ 1010 			pairmake: 759
+ 1011 			fr_strerror: 370
+ 1012 			pairfree: 783
+ 1013 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1014 			ntohl: <>
+ 1015 			strlen: <>
+ 1016 			debug_pair: 920
+ 1017 			dict_attrbyvalue: 775
+ 1018 			DHCP2ATTR: <>
+ 1019 			fr_dhcp_attr2vp: int (), <./freeradius/src/lib/dhcp.c 481>
+ 1020 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1021 				ntohl: <>
+ 1022 				decode_tlv: int (), <./freeradius/src/lib/dhcp.c 413>
+ 1023 					paircreate: 774
+ 1024 					pairfree: 783
+ 1025 					fr_dhcp_attr2vp: 1019
+ 1026 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1027 					malloc: <>
+ 1028 					fr_strerror_printf: 293
+ 1029 				fr_strerror_printf: 293
+ 1030 			htonl: <>
+ 1031 			pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 1032 			strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1033 			fflush: <>
+ 1034 		dict_free: 563
+ 1035 		rbtree_create: 201
+ 1036 		filename_cmp: int (), <./freeradius/src/main/radclient.c 397>
+ 1037 			strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1038 		usage: void NEVER_RETURNS (), <./freeradius/src/main/radclient.c 89>
+ 1039 			fprintf: <>
+ 1040 			exit: <>
+ 1041 		rbtree_insert: 237
+ 1042 		getport: int (), <./freeradius/src/main/radclient.c 805>
+ 1043 			getservbyname: <>
+ 1044 			ntohs: <>
+ 1045 		rbtree_num_elements: int (), <./freeradius/src/lib/rbtree.c 614>
+ 1046 		rbtree_walk: int (), <./freeradius/src/lib/rbtree.c 594>
+ 1047 			WalkNodePreOrder: int (), <./freeradius/src/lib/rbtree.c 510>
+ 1048 				WalkNodePreOrder: 1047
+ 1049 			WalkNodeInOrder: int (), <./freeradius/src/lib/rbtree.c 538>
+ 1050 				WalkNodeInOrder: 1049
+ 1051 			WalkNodePostOrder: int (), <./freeradius/src/lib/rbtree.c 566>
+ 1052 				WalkNodeInOrder: 1049
+ 1053 		filename_walk: int (), <./freeradius/src/main/radclient.c 402>
+ 1054 			radclient_init: int (), <./freeradius/src/main/radclient.c 190>
+ 1055 				assert: <>
+ 1056 				strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1057 				fopen: <>
+ 1058 				fprintf: <>
+ 1059 				strerror: <>
+ 1060 				malloc: <>
+ 1061 				perror: <>
+ 1062 				fclose: <>
+ 1063 				memset: <>
+ 1064 				rad_alloc: 746
+ 1065 				fr_perror: 734
+ 1066 				free: <>
+ 1067 				readvp2: 753
+ 1068 				rad_free: 896
+ 1069 				pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 1070 				strlcpy: <>
+ 1071 				memmove: lt_ptr (), <./freeradius/libltdl/ltdl.c 409>
+ 1072 		fr_packet_list_create: fr_packet_list_t * (), <./freeradius/src/lib/packet.c 522>
+ 1073 			malloc: <>
+ 1074 			memset: <>
+ 1075 			rbtree_create: 201
+ 1076 			packet_entry_cmp: int (), <./freeradius/src/lib/packet.c 435>
+ 1077 				fr_packet_cmp: int (), <./freeradius/src/lib/packet.c 135>
+ 1078 					fr_ipaddr_cmp: int (), <./freeradius/src/lib/misc.c 546>
+ 1079 						memcmp: <>
+ 1080 			fr_packet_list_free: void (), <./freeradius/src/lib/packet.c 509>
+ 1081 				rbtree_free: 222
+ 1082 				fr_hash_table_free: 159
+ 1083 				free: <>
+ 1084 			fr_hash_table_create: 121
+ 1085 			packet_dst2id_hash: uint32_t (), <./freeradius/src/lib/packet.c 467>
+ 1086 				hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+ 1087 				fr_hash: 126
+ 1088 				fr_hash_update: 590
+ 1089 			packet_dst2id_cmp: int (), <./freeradius/src/lib/packet.c 492>
+ 1090 				fr_ipaddr_cmp: 1078
+ 1091 			packet_dst2id_free: void (), <./freeradius/src/lib/packet.c 503>
+ 1092 				free: <>
+ 1093 		fr_packet_list_socket_add: int (), <./freeradius/src/lib/packet.c 366>
+ 1094 			SOCK2OFFSET: <>
+ 1095 			memset: <>
+ 1096 			getsockname: <>
+ 1097 			fr_sockaddr2ipaddr: 436
+ 1098 			IN6_IS_ADDR_UNSPECIFIED: <>
+ 1099 		radclient_sane: int (), <./freeradius/src/main/radclient.c 366>
+ 1100 			fprintf: <>
+ 1101 		recv_one_packet: int (), <./freeradius/src/main/radclient.c 692>
+ 1102 			FD_ZERO: <>
+ 1103 			fr_packet_list_fd_set: int (), <./freeradius/src/lib/packet.c 835>
+ 1104 				FD_SET: <>
+ 1105 			exit: <>
+ 1106 			select: <>
+ 1107 			fr_packet_list_recv: RADIUS_PACKET * (), <./freeradius/src/lib/packet.c 862>
+ 1108 				FD_ISSET: <>
+ 1109 				rad_recv: RADIUS_PACKET * (), <./freeradius/src/lib/radius.c 1937>
+ 1110 					malloc: <>
+ 1111 					fr_strerror_printf: 293
+ 1112 					memset: <>
+ 1113 					rad_recvfrom: ssize_t (), <./freeradius/src/lib/radius.c 344>
+ 1114 						memset: <>
+ 1115 						getsockname: <>
+ 1116 						recvfrom: <>
+ 1117 						malloc: <>
+ 1118 						recvfromto: 13
+ 1119 						free: <>
+ 1120 						fr_sockaddr2ipaddr: 436
+ 1121 					strerror: <>
+ 1122 					free: <>
+ 1123 					rad_packet_ok: int (), <./freeradius/src/lib/radius.c 1628>
+ 1124 						fr_strerror_printf: 293
+ 1125 						inet_ntop: 177
+ 1126 						memset: <>
+ 1127 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1128 					rad_free: 896
+ 1129 					DEBUG: <>
+ 1130 					inet_ntop: 177
+ 1131 			fprintf: <>
+ 1132 			fr_strerror: 370
+ 1133 			print_hex: void (), <./freeradius/src/main/radclient.c 449>
+ 1134 				printf: <>
+ 1135 				fflush: <>
+ 1136 			fr_packet_list_find_byreply: RADIUS_PACKET ** (), <./freeradius/src/lib/packet.c 582>
+ 1137 				fr_socket_find: fr_packet_socket_t * (), <./freeradius/src/lib/packet.c 329>
+ 1138 					SOCK2OFFSET: <>
+ 1139 				rbtree_finddata: 249
+ 1140 			rad_free: 896
+ 1141 			fr_packet2myptr: <>
+ 1142 			rad_verify: int (), <./freeradius/src/lib/radius.c 2046>
+ 1143 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1144 				memset: <>
+ 1145 				fr_strerror_printf: 293
+ 1146 				fr_hmac_md5: <>
+ 1147 				strlen: <>
+ 1148 				rad_digest_cmp: int (), <./freeradius/src/lib/radius.c 1533>
+ 1149 				inet_ntop: 177
+ 1150 				calc_acctdigest: int (), <./freeradius/src/lib/radius.c 1550>
+ 1151 					memset: <>
+ 1152 					fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1153 					fr_MD5Update: void (), <./freeradius/src/lib/md5.c 104>
+ 1154 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1155 						fr_MD5Transform: void (), <./freeradius/src/lib/md5.c 190>
+ 1156 							MD5STEP: <>
+ 1157 					strlen: <>
+ 1158 					fr_MD5Final: void (), <./freeradius/src/lib/md5.c 147>
+ 1159 						PUT_64BIT_LE: <>
+ 1160 						fr_MD5Update: 1153
+ 1161 						PUT_32BIT_LE: <>
+ 1162 						memset: <>
+ 1163 					rad_digest_cmp: 1148
+ 1164 				calc_replydigest: int (), <./freeradius/src/lib/radius.c 1583>
+ 1165 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1166 					fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1167 					fr_MD5Update: 1153
+ 1168 					strlen: <>
+ 1169 					fr_MD5Final: 1158
+ 1170 					rad_digest_cmp: 1148
+ 1171 			fr_perror: 734
+ 1172 			fr_packet_list_yank: RADIUS_PACKET ** (), <./freeradius/src/lib/packet.c 618>
+ 1173 				rbtree_finddata: 249
+ 1174 				rbtree_deletebydata: int (), <./freeradius/src/lib/rbtree.c 455>
+ 1175 					rbtree_find: 250
+ 1176 					rbtree_delete: void (), <./freeradius/src/lib/rbtree.c 373>
+ 1177 						DeleteFixup: void (), <./freeradius/src/lib/rbtree.c 303>
+ 1178 							RotateLeft: 242
+ 1179 							RotateRight: 243
+ 1180 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1181 						free: <>
+ 1182 			printf: <>
+ 1183 			deallocate_id: void (), <./freeradius/src/main/radclient.c 422>
+ 1184 				fr_packet_list_id_free: int (), <./freeradius/src/lib/packet.c 802>
+ 1185 					fr_socket_find: 1137
+ 1186 					fr_hash_table_finddata: 144
+ 1187 				free: <>
+ 1188 				rad_free: 896
+ 1189 			rad_decode: int (), <./freeradius/src/lib/radius.c 2742>
+ 1190 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1191 				ntohl: <>
+ 1192 				dict_vendorbyvalue: 687
+ 1193 				dict_attrbyvalue: 775
+ 1194 				rad_continuation2vp: VALUE_PAIR * (), <./freeradius/src/lib/radius.c 2611>
+ 1195 					rad_coalesce: uint8_t * (), <./freeradius/src/lib/radius.c 2527>
+ 1196 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1197 						ntohl: <>
+ 1198 						malloc: <>
+ 1199 					malloc: <>
+ 1200 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1201 					paircreate: 774
+ 1202 					pairfree: 783
+ 1203 					data2vp: VALUE_PAIR * (), <./freeradius/src/lib/radius.c 2219>
+ 1204 						TAG_VALID: <>
+ 1205 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1206 						rad_pwdecode: int (), <./freeradius/src/lib/radius.c 3175>
+ 1207 							strlen: <>
+ 1208 							fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1209 							fr_MD5Update: 1153
+ 1210 							fr_MD5Final: 1158
+ 1211 						strlen: <>
+ 1212 						rad_tunnel_pwdecode: int (), <./freeradius/src/lib/radius.c 3330>
+ 1213 							fr_strerror_printf: 293
+ 1214 							strlen: <>
+ 1215 							fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1216 							fr_MD5Update: 1153
+ 1217 							fr_MD5Final: 1158
+ 1218 						make_secret: void (), <./freeradius/src/lib/radius.c 479>
+ 1219 							fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1220 							fr_MD5Update: 1153
+ 1221 							strlen: <>
+ 1222 							fr_MD5Final: 1158
+ 1223 						ntohl: <>
+ 1224 						dict_valbyattr: 931
+ 1225 						strlcpy: <>
+ 1226 						memset: <>
+ 1227 						malloc: <>
+ 1228 						pairfree: 783
+ 1229 						fr_strerror_printf: 293
+ 1230 						pairalloc: 778
+ 1231 						paircreate_raw: 782
+ 1232 					free: <>
+ 1233 					rad_sortvp: void (), <./freeradius/src/lib/radius.c 2486>
+ 1234 				rad_attr2vp: VALUE_PAIR * (), <./freeradius/src/lib/radius.c 2723>
+ 1235 					paircreate: 774
+ 1236 					data2vp: 1203
+ 1237 				pairfree: 783
+ 1238 				fr_strerror_printf: 293
+ 1239 				debug_pair: 920
+ 1240 				inet_ntop: 177
+ 1241 				fr_rand_seed: 619
+ 1242 			vp_printlist: void (), <./freeradius/src/lib/print.c 491>
+ 1243 				vp_print: 921
+ 1244 		radclient_free: void (), <./freeradius/src/main/radclient.c 119>
+ 1245 			rad_free: 896
+ 1246 			assert: <>
+ 1247 			free: <>
+ 1248 		send_one_packet: int (), <./freeradius/src/main/radclient.c 513>
+ 1249 			assert: <>
+ 1250 			fr_packet_list_id_alloc: int (), <./freeradius/src/lib/packet.c 654>
+ 1251 				fr_strerror_printf: 293
+ 1252 				memset: <>
+ 1253 				fr_inaddr_any: int (), <./freeradius/src/lib/packet.c 157>
+ 1254 					IN6_IS_ADDR_UNSPECIFIED: <>
+ 1255 					fr_strerror_printf: 293
+ 1256 				fr_hash_table_finddata: 144
+ 1257 				malloc: <>
+ 1258 				fr_hash_table_insert: 129
+ 1259 				free: <>
+ 1260 				fr_rand: 627
+ 1261 				fr_ipaddr_cmp: 1078
+ 1262 			fr_socket: 900
+ 1263 			fprintf: <>
+ 1264 			exit: <>
+ 1265 			fr_packet_list_socket_add: 1093
+ 1266 			fr_rand: 627
+ 1267 			pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 1268 			strlcpy: <>
+ 1269 			strlen: <>
+ 1270 			rad_chap_encode: int (), <./freeradius/src/lib/radius.c 3436>
+ 1271 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1272 				pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 1273 				fr_md5_calc: <>
+ 1274 			mschapv1_encode: int (), <./freeradius/src/main/radclient.c 148>
+ 1275 				paircreate: 774
+ 1276 				fprintf: <>
+ 1277 				pairadd: 892
+ 1278 				fr_rand: 627
+ 1279 				memset: <>
+ 1280 				mschap_ntpwdhash: <>
+ 1281 				smbdes_mschap: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 339>
+ 1282 					memset: <>
+ 1283 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1284 					smbhash: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 287>
+ 1285 						str_to_key: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 269>
+ 1286 						dohash: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 190>
+ 1287 							permute: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 158>
+ 1288 							lshift: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 165>
+ 1289 							concat: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 175>
+ 1290 							xor: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 183>
+ 1291 			printf: <>
+ 1292 			time: <>
+ 1293 			fr_packet_list_insert: int (), <./freeradius/src/lib/packet.c 561>
+ 1294 				rbtree_insert: 237
+ 1295 			fr_packet_list_yank: 1172
+ 1296 			deallocate_id: 1183
+ 1297 			rad_send: int (), <./freeradius/src/lib/radius.c 1460>
+ 1298 				rad_encode: int (), <./freeradius/src/lib/radius.c 1136>
+ 1299 					DEBUG: <>
+ 1300 					inet_ntop: 177
+ 1301 					fr_strerror_printf: 293
+ 1302 					memset: <>
+ 1303 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1304 					VENDOR: <>
+ 1305 					debug_pair: 920
+ 1306 					rad_vp2tlv: VALUE_PAIR * (), <./freeradius/src/lib/radius.c 799>
+ 1307 						paircreate: 774
+ 1308 						pairfree: 783
+ 1309 						malloc: <>
+ 1310 						vp2data: uint8_t * (), <./freeradius/src/lib/radius.c 646>
+ 1311 							htonl: <>
+ 1312 							memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1313 							fr_strerror_printf: 293
+ 1314 							make_passwd: void (), <./freeradius/src/lib/radius.c 496>
+ 1315 								memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1316 								memset: <>
+ 1317 								fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1318 								fr_MD5Update: 1153
+ 1319 								strlen: <>
+ 1320 								fr_MD5Final: 1158
+ 1321 							make_tunnel_passwd: void (), <./freeradius/src/lib/radius.c 552>
+ 1322 								memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1323 								memset: <>
+ 1324 								fr_rand: 627
+ 1325 								fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1326 								fr_MD5Update: 1153
+ 1327 								strlen: <>
+ 1328 								fr_MD5Final: 1158
+ 1329 							make_secret: 1218
+ 1330 					rad_vp2attr: int (), <./freeradius/src/lib/radius.c 955>
+ 1331 						VENDOR: <>
+ 1332 						dict_vendorbyvalue: 687
+ 1333 						htonl: <>
+ 1334 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1335 						rad_vp2continuation: int (), <./freeradius/src/lib/radius.c 882>
+ 1336 							memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1337 						TAG_VALID: <>
+ 1338 						vp2data: 1310
+ 1339 					malloc: <>
+ 1340 					htons: <>
+ 1341 				rad_sign: int (), <./freeradius/src/lib/radius.c 1341>
+ 1342 					fr_strerror_printf: 293
+ 1343 					memset: <>
+ 1344 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1345 					fr_hmac_md5: <>
+ 1346 					strlen: <>
+ 1347 					fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1348 					fr_MD5Update: 1153
+ 1349 					fr_MD5Final: 1158
+ 1350 				DEBUG: <>
+ 1351 				inet_ntop: 177
+ 1352 				VENDOR: <>
+ 1353 				debug_pair: 920
+ 1354 				rad_sendto: int (), <./freeradius/src/lib/radius.c 209>
+ 1355 					fr_ipaddr2sockaddr: 444
+ 1356 					fr_inaddr_any: 1253
+ 1357 					sendfromto: 23
+ 1358 					sendto: <>
+ 1359 					DEBUG: <>
+ 1360 					strerror: <>
+ 1361 			fr_strerror: 370
+ 1362 			print_hex: 1133
+ 1363 		select: <>
+ 1364 		assert: <>
+ 1365 		fr_packet_list_num_elements: int (), <./freeradius/src/lib/packet.c 633>
+ 1366 			rbtree_num_elements: int (), <./freeradius/src/lib/rbtree.c 614>
+ 1367 		rbtree_free: 222
+ 1368 		fr_packet_list_free: 1080
+ 1369 		pcap_lookupdev: <>
+ 1370 		usage: void NEVER_RETURNS (), <./freeradius/src/main/radsniff.c 331>
+ 1371 			fprintf: <>
+ 1372 			exit: <>
+ 1373 		userparse: 755
+ 1374 		fr_packet_cmp: 1077
+ 1375 		rad_alloc: 746
+ 1376 		pcap_lookupnet: <>
+ 1377 		vp_printlist: 1242
+ 1378 		pcap_open_offline: <>
+ 1379 		pcap_fopen_offline: <>
+ 1380 		pcap_open_live: <>
+ 1381 		pcap_dump_open: <>
+ 1382 		pcap_geterr: <>
+ 1383 		pcap_dump_fopen: <>
+ 1384 		pcap_compile: <>
+ 1385 		pcap_setfilter: <>
+ 1386 		pcap_loop: <>
+ 1387 		got_packet: void (), <./freeradius/src/main/radsniff.c 187>
+ 1388 			malloc: <>
+ 1389 			fprintf: <>
+ 1390 			memset: <>
+ 1391 			ntohs: <>
+ 1392 			rad_packet_ok: 1123
+ 1393 			printf: <>
+ 1394 			fr_strerror: 370
+ 1395 			inet_ntoa: <>
+ 1396 			free: <>
+ 1397 			rbtree_finddata: 249
+ 1398 			rad_alloc_reply: RADIUS_PACKET * (), <./freeradius/src/lib/radius.c 3599>
+ 1399 				rad_alloc: 746
+ 1400 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1401 			rbtree_deletebydata: 1174
+ 1402 			rbtree_insert: 237
+ 1403 			rad_decode: 1189
+ 1404 			fr_perror: 734
+ 1405 			filter_packet: int (), <./freeradius/src/main/radsniff.c 51>
+ 1406 				paircmp: int (), <./freeradius/src/lib/valuepair.c 1937>
+ 1407 					regcomp: <>
+ 1408 					regerror: <>
+ 1409 					fr_strerror_printf: 293
+ 1410 					vp_prints_value: 926
+ 1411 					regexec: <>
+ 1412 					regfree: <>
+ 1413 					memcmp: <>
+ 1414 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1415 					ntohl: <>
+ 1416 				rbtree_deletebydata: 1174
+ 1417 				rbtree_insert: 237
+ 1418 				fprintf: <>
+ 1419 				exit: <>
+ 1420 				rad_alloc_reply: 1398
+ 1421 				rbtree_finddata: 249
+ 1422 				rad_free: 896
+ 1423 			DEBUG: <>
+ 1424 			pcap_dump: <>
+ 1425 			tv_sub: void (), <./freeradius/src/main/radsniff.c 168>
+ 1426 			sort: void (), <./freeradius/src/main/radsniff.c 133>
+ 1427 			vp_printlist: 1242
+ 1428 			pairfree: 783
+ 1429 			rad_print_hex: void (), <./freeradius/src/lib/radius.c 143>
+ 1430 				printf: <>
+ 1431 				fflush: <>
+ 1432 			fflush: <>
+ 1433 		pcap_close: <>
+ 1434 		DEBUG: <>
+ 1435 		usage: int (), <./freeradius/src/main/radconf2xml.c 55>
+ 1436 			printf: <>
+ 1437 			exit: <>
+ 1438 		cf_section2xml: int (), <./freeradius/src/main/conffile.c 2721>
+ 1439 			fprintf: <>
+ 1440 			cf_pair2xml: int (), <./freeradius/src/main/conffile.c 2684>
+ 1441 				fprintf: <>
+ 1442 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1443 			cf_section2xml: 1438
+ 1444 		unlink: <>
+ 1445 		set_auth_parameters: <>
+ 1446 		WSAStartup: <>
+ 1447 		MAKEWORD: <>
+ 1448 		strdup: <>
+ 1449 		sigemptyset: <>
+ 1450 		usage: void NEVER_RETURNS (), <./freeradius/src/main/radiusd.c 473>
+ 1451 			fprintf: <>
+ 1452 			exit: <>
+ 1453 		open: <>
+ 1454 		version: <>
+ 1455 		radlog: 184
+ 1456 		read_mainconfig: int (), <./freeradius/src/main/mainconfig.c 755>
+ 1457 			radlog: 184
+ 1458 			stat: <>
+ 1459 			strerror: <>
+ 1460 			snprintf: <>
+ 1461 			cf_file_read: 179
+ 1462 			cf_section_parse: 389
+ 1463 			fprintf: <>
+ 1464 			cf_section_free: 206
+ 1465 			fr_str2int: 670
+ 1466 			openlog: <>
+ 1467 			switch_users: int (), <./freeradius/src/main/mainconfig.c 586>
+ 1468 				getrlimit: <>
+ 1469 				radlog: 184
+ 1470 				strerror: <>
+ 1471 				getuid: <>
+ 1472 				cf_section_parse: 389
+ 1473 				fprintf: <>
+ 1474 				getgrnam: <>
+ 1475 				getgid: <>
+ 1476 				getpwnam: <>
+ 1477 				initgroups: <>
+ 1478 				chroot: <>
+ 1479 				setgid: <>
+ 1480 				open: <>
+ 1481 				chown: <>
+ 1482 				fr_suid_down: void (), <./freeradius/src/main/mainconfig.c 569>
+ 1483 					setresuid: <>
+ 1484 					geteuid: <>
+ 1485 					fprintf: <>
+ 1486 					strerror: <>
+ 1487 					fr_set_dumpable: void (), <./freeradius/src/main/mainconfig.c 437>
+ 1488 						setrlimit: <>
+ 1489 						radlog: 184
+ 1490 						strerror: <>
+ 1491 						prctl: <>
+ 1492 					setuid: <>
+ 1493 				fr_set_dumpable: 1487
+ 1494 			exit: <>
+ 1495 			open: <>
+ 1496 			cf_pair_find: 328
+ 1497 			cf_pair_value: 522
+ 1498 			DEBUG2: <>
+ 1499 			dict_init: 559
+ 1500 			fr_strerror: 370
+ 1501 			realms_init: int (), <./freeradius/src/main/realms.c 1663>
+ 1502 				rbtree_create: 201
+ 1503 				realm_name_cmp: int (), <./freeradius/src/main/realms.c 122>
+ 1504 					strcasecmp: 306
+ 1505 				free: <>
+ 1506 				realms_free: void (), <./freeradius/src/main/realms.c 242>
+ 1507 					rbtree_free: 222
+ 1508 					free: <>
+ 1509 				home_server_addr_cmp: int (), <./freeradius/src/main/realms.c 143>
+ 1510 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1511 					fr_ipaddr_cmp: 1078
+ 1512 				home_server_name_cmp: int (), <./freeradius/src/main/realms.c 132>
+ 1513 					strcasecmp: 306
+ 1514 				home_server_number_cmp: int (), <./freeradius/src/main/realms.c 163>
+ 1515 				home_pool_name_cmp: int (), <./freeradius/src/main/realms.c 172>
+ 1516 					strcasecmp: 306
+ 1517 				rad_malloc: 182
+ 1518 				memset: <>
+ 1519 				cf_subsection_find_next: 517
+ 1520 				cf_section_parse: 389
+ 1521 				home_server_add: int (), <./freeradius/src/main/realms.c 375>
+ 1522 					free: <>
+ 1523 					cf_section_name2: const char * (), <./freeradius/src/main/conffile.c 1964>
+ 1524 					cf_log_err: 405
+ 1525 					cf_sectiontoitem: 323
+ 1526 					rad_malloc: 182
+ 1527 					memset: <>
+ 1528 					time: <>
+ 1529 					cf_section_parse: 389
+ 1530 					cf_pair_find: 328
+ 1531 					cf_pair_value: 522
+ 1532 					cf_section_sub_find_name2: 319
+ 1533 					strdup: <>
+ 1534 					strcasecmp: 306
+ 1535 					rbtree_finddata: 249
+ 1536 					ip_hton: 417
+ 1537 					rbtree_insert: 237
+ 1538 					rbtree_deletebydata: 1174
+ 1539 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1540 					cf_data_add: int (), <./freeradius/src/main/conffile.c 2332>
+ 1541 						cf_data_add_internal: 267
+ 1542 					null_free: void (), <./freeradius/src/main/realms.c 371>
+ 1543 				realm_add: int (), <./freeradius/src/main/realms.c 1392>
+ 1544 					cf_section_name1: 384
+ 1545 					strcasecmp: 306
+ 1546 					cf_log_err: 405
+ 1547 					cf_sectiontoitem: 323
+ 1548 					cf_section_name2: 1523
+ 1549 					cf_pair_find: 328
+ 1550 					cf_pair_value: 522
+ 1551 					add_pool_to_realm: int (), <./freeradius/src/main/realms.c 1343>
+ 1552 						rbtree_finddata: 249
+ 1553 						cf_section_sub_find_name2: 319
+ 1554 						cf_log_err: 405
+ 1555 						cf_sectiontoitem: 323
+ 1556 						server_pool_add: int (), <./freeradius/src/main/realms.c 775>
+ 1557 							cf_section_name1: 384
+ 1558 							strcasecmp: 306
+ 1559 							cf_log_err: 405
+ 1560 							cf_sectiontoitem: 323
+ 1561 							cf_section_name2: 1523
+ 1562 							cf_pair_find: 328
+ 1563 							cf_pair_find_next: CONF_PAIR * (), <./freeradius/src/main/conffile.c 2014>
+ 1564 								cf_pair_find: 328
+ 1565 								cf_pairtoitem: 256
+ 1566 								strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1567 								cf_itemtopair: 209
+ 1568 							pool_check_home_server: int (), <./freeradius/src/main/realms.c 737>
+ 1569 								cf_log_err: 405
+ 1570 								cf_pairtoitem: 256
+ 1571 								rbtree_finddata: 249
+ 1572 								cf_section_sub_find_name2: 319
+ 1573 							cf_pair_value: 522
+ 1574 							server_pool_alloc: home_pool_t * (), <./freeradius/src/main/realms.c 717>
+ 1575 								rad_malloc: 182
+ 1576 								memset: <>
+ 1577 							cf_log_info: 390
+ 1578 							cf_pairtoitem: 256
+ 1579 							fr_str2int: 670
+ 1580 							cf_section_sub_find_name2: 319
+ 1581 							memset: <>
+ 1582 							rbtree_finddata: 249
+ 1583 							DEBUG2: <>
+ 1584 							rbtree_insert: 237
+ 1585 							rad_assert: <>
+ 1586 							cf_data_add: 1540
+ 1587 							free: <>
+ 1588 						radlog: 184
+ 1589 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1590 					cf_log_info: 390
+ 1591 					realm_find2: REALM * (), <./freeradius/src/main/realms.c 1783>
+ 1592 						rbtree_finddata: 249
+ 1593 						strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1594 					old_realm_config: int (), <./freeradius/src/main/realms.c 1218>
+ 1595 						cf_pair_find: 328
+ 1596 						cf_pair_value: 522
+ 1597 						cf_log_err: 405
+ 1598 						cf_pairtoitem: 256
+ 1599 						strcasecmp: 306
+ 1600 						cf_log_info: 390
+ 1601 						cf_sectiontoitem: 323
+ 1602 						strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1603 						old_server_add: int (), <./freeradius/src/main/realms.c 958>
+ 1604 							strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1605 							cf_log_err: 405
+ 1606 							cf_sectiontoitem: 323
+ 1607 							rbtree_finddata: 249
+ 1608 							rad_malloc: 182
+ 1609 							memset: <>
+ 1610 							strchr: <>
+ 1611 							free: <>
+ 1612 							atoi: <>
+ 1613 							memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1614 							ip_hton: 417
+ 1615 							rbtree_insert: 237
+ 1616 							rbtree_deletebydata: 1174
+ 1617 							rad_assert: <>
+ 1618 							cf_section_find_next: CONF_SECTION * (), <./freeradius/src/main/conffile.c 2180>
+ 1619 								cf_subsection_find_next: 517
+ 1620 							cf_section_name2: 1523
+ 1621 							server_pool_alloc: 1574
+ 1622 					regcomp: <>
+ 1623 					regerror: <>
+ 1624 					regfree: <>
+ 1625 					rad_malloc: 182
+ 1626 					memset: <>
+ 1627 					DEBUG2: <>
+ 1628 					cf_pair_attr: const char * (), <./freeradius/src/main/conffile.c 1877>
+ 1629 					rbtree_insert: 237
+ 1630 					rad_assert: <>
+ 1631 					free: <>
+ 1632 				cf_data_find: void * (), <./freeradius/src/main/conffile.c 2295>
+ 1633 					cf_data_find_internal: 263
+ 1634 				pool_peek_type: int (), <./freeradius/src/main/realms.c 1616>
+ 1635 					cf_pair_find: 328
+ 1636 					cf_log_err: 405
+ 1637 					cf_sectiontoitem: 323
+ 1638 					cf_pair_value: 522
+ 1639 					cf_pairtoitem: 256
+ 1640 					cf_section_sub_find_name2: 319
+ 1641 					fr_str2int: 670
+ 1642 				server_pool_add: 1556
+ 1643 				xlat_register: int (), <./freeradius/src/main/xlat.c 667>
+ 1644 					strlen: <>
+ 1645 					DEBUG: <>
+ 1646 					rbtree_create: 201
+ 1647 					xlat_cmp: int (), <./freeradius/src/main/xlat.c 630>
+ 1648 						memcmp: <>
+ 1649 					free: <>
+ 1650 					xlat_register: 1643
+ 1651 					xlat_packet: size_t (), <./freeradius/src/main/xlat.c 102>
+ 1652 						dict_attrbyname: 651
+ 1653 						strlen: <>
+ 1654 						strchr: <>
+ 1655 						strlcpy: <>
+ 1656 						pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 1657 						snprintf: <>
+ 1658 						valuepair2str: int (), <./freeradius/src/main/xlat.c 66>
+ 1659 							vp_prints_value: 926
+ 1660 							strlcpy: <>
+ 1661 							strlen: <>
+ 1662 						rad_assert: <>
+ 1663 						atoi: <>
+ 1664 						strspn: <>
+ 1665 						RDEBUG2: <>
+ 1666 						memset: <>
+ 1667 						dict_valbyattr: 931
+ 1668 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 1669 					xlat_find: xlat_t * (), <./freeradius/src/main/xlat.c 644>
+ 1670 						dict_attrbyname: 651
+ 1671 						strchr: <>
+ 1672 						strlcpy: <>
+ 1673 						strlen: <>
+ 1674 						rbtree_finddata: 249
+ 1675 					rad_assert: <>
+ 1676 					xlat_integer: size_t (), <./freeradius/src/main/xlat.c 423>
+ 1677 						isspace: <>
+ 1678 						radius_get_vp: int (), <./freeradius/src/main/evaluate.c 202>
+ 1679 							strncmp: <>
+ 1680 							dict_attrbyname: 651
+ 1681 							pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 1682 						snprintf: <>
+ 1683 					xlat_string: size_t (), <./freeradius/src/main/xlat.c 451>
+ 1684 						isspace: <>
+ 1685 						radius_get_vp: 1678
+ 1686 						fr_print_string: 498
+ 1687 					xlat_regex: size_t (), <./freeradius/src/main/xlat.c 482>
+ 1688 						request_data_reference: void * (), <./freeradius/src/main/util.c 169>
+ 1689 						strlcpy: <>
+ 1690 						strlen: <>
+ 1691 					xlat_debug: size_t (), <./freeradius/src/main/xlat.c 512>
+ 1692 						atoi: <>
+ 1693 						radlog_request: void (), <./freeradius/src/modules/rlm_eap/radeapclient.c 125>
+ 1694 							va_start: <>
+ 1695 							va_end: <>
+ 1696 							radius_xlat: int (), <./freeradius/src/main/radconf2xml.c 49>
+ 1697 								xlat_copy: size_t (), <./freeradius/src/main/xlat.c 1050>
+ 1698 								decode_attribute: int (), <./freeradius/src/main/xlat.c 829>
+ 1699 									rad_copy_variable: 282
+ 1700 									RDEBUG2: <>
+ 1701 									getstring: 366
+ 1702 									strlen: <>
+ 1703 									radius_xlat: 1696
+ 1704 									strlcpy: <>
+ 1705 									xlat_find: 1669
+ 1706 									RDEBUG3: <>
+ 1707 									snprintf: <>
+ 1708 								valuepair2str: 1658
+ 1709 								pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 1710 								localtime_r: struct tm (), <./freeradius/src/lib/missing.c 149>
+ 1711 								strftime: <>
+ 1712 								strlcpy: <>
+ 1713 								strlen: <>
+ 1714 								snprintf: <>
+ 1715 								CTIME_R: <>
+ 1716 								strchr: <>
+ 1717 								vp_prints: 922
+ 1718 								RDEBUG2: <>
+ 1719 							strrchr: <>
+ 1720 							rad_mkdir: int (), <./freeradius/src/main/util.c 292>
+ 1721 								stat: <>
+ 1722 								strrchr: <>
+ 1723 								rad_mkdir: 1720
+ 1724 								mkdir: <>
+ 1725 							radlog: 184
+ 1726 							strerror: <>
+ 1727 							fopen: <>
+ 1728 							time: <>
+ 1729 							CTIME_R: <>
+ 1730 							fr_int2str: 189
+ 1731 							strcat: <>
+ 1732 							strlen: <>
+ 1733 							snprintf: <>
+ 1734 							vsnprintf: <>
+ 1735 							fputs: <>
+ 1736 							fputc: <>
+ 1737 							fclose: <>
+ 1738 							vfprintf: <>
+ 1739 						snprintf: <>
+ 1740 						strlen: <>
+ 1741 					xlat_md5: size_t (), <./freeradius/src/main/xlat.c 538>
+ 1742 						radius_xlat: 1696
+ 1743 						fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 1744 						fr_MD5Update: 1153
+ 1745 						strlen: <>
+ 1746 						fr_MD5Final: 1158
+ 1747 						snprintf: <>
+ 1748 					xlat_lc: size_t (), <./freeradius/src/main/xlat.c 572>
+ 1749 						radius_xlat: 1696
+ 1750 						tolower: <>
+ 1751 						strlen: <>
+ 1752 					xlat_uc: size_t (), <./freeradius/src/main/xlat.c 601>
+ 1753 						radius_xlat: 1696
+ 1754 						toupper: <>
+ 1755 						strlen: <>
+ 1756 					strlcpy: <>
+ 1757 					rbtree_finddata: 249
+ 1758 					rad_malloc: 182
+ 1759 					memset: <>
+ 1760 					rbtree_insert: 237
+ 1761 				xlat_home_server: size_t (), <./freeradius/src/main/realms.c 187>
+ 1762 					cf_pair_find: 328
+ 1763 					cf_pair_value: 522
+ 1764 					strlcpy: <>
+ 1765 					strlen: <>
+ 1766 				xlat_server_pool: size_t (), <./freeradius/src/main/realms.c 216>
+ 1767 					cf_pair_find: 328
+ 1768 					cf_pair_value: 522
+ 1769 					strlcpy: <>
+ 1770 					strlen: <>
+ 1771 			clients_parse_section: RADCLIENT_LIST * (), <./freeradius/src/main/client.c 765>
+ 1772 				cf_data_find: 1632
+ 1773 				clients_init: RADCLIENT_LIST * (), <./freeradius/src/main/client.c 175>
+ 1774 					calloc: <>
+ 1775 				cf_top_section: 312
+ 1776 				strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1777 				cf_section_name1: 384
+ 1778 				cf_data_add: 1540
+ 1779 				clients_free: void (), <./freeradius/src/main/client.c 143>
+ 1780 					rbtree_free: 222
+ 1781 					free: <>
+ 1782 				cf_log_err: 405
+ 1783 				cf_sectiontoitem: 323
+ 1784 				cf_subsection_find_next: 517
+ 1785 				client_parse: RADCLIENT * (), <./freeradius/src/main/client.c 551>
+ 1786 					cf_section_name2: 1523
+ 1787 					cf_log_err: 405
+ 1788 					cf_sectiontoitem: 323
+ 1789 					rad_malloc: 182
+ 1790 					memset: <>
+ 1791 					cf_section_parse: 389
+ 1792 					client_free: void (), <./freeradius/src/main/client.c 64>
+ 1793 						fr_fifo_create: 99
+ 1794 						client_free: 1792
+ 1795 						time: <>
+ 1796 						fr_fifo_push: 102
+ 1797 						fr_fifo_peek: void * (), <./freeradius/src/lib/fifo.c 157>
+ 1798 						fr_fifo_pop: 106
+ 1799 						rad_assert: <>
+ 1800 						free: <>
+ 1801 					cf_pair_find: 328
+ 1802 					strchr: <>
+ 1803 					atoi: <>
+ 1804 					ip_hton: 417
+ 1805 					fr_strerror: 370
+ 1806 					strdup: <>
+ 1807 					ip_ntoh: 442
+ 1808 					free: <>
+ 1809 					cf_pair_value: 522
+ 1810 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1811 					home_pool_byname: home_pool_t * (), <./freeradius/src/main/realms.c 2212>
+ 1812 						memset: <>
+ 1813 						rbtree_finddata: 249
+ 1814 					home_server_byname: home_server * (), <./freeradius/src/main/realms.c 2187>
+ 1815 						memset: <>
+ 1816 						rbtree_finddata: 249
+ 1817 				cf_pair_find: 328
+ 1818 				cf_pair_value: 522
+ 1819 				client_free: 1792
+ 1820 				DEBUG: <>
+ 1821 				opendir: <>
+ 1822 				strerror: <>
+ 1823 				readdir: struct dirent (), <./freeradius/libltdl/ltdl.c 486>
+ 1824 				isalpha: <>
+ 1825 				isdigit: <>
+ 1826 				snprintf: <>
+ 1827 				stat: <>
+ 1828 				S_ISDIR: <>
+ 1829 				client_read: RADCLIENT * (), <./freeradius/src/main/client.c 1102>
+ 1830 					cf_file_read: 179
+ 1831 					client_parse: 1785
+ 1832 					cf_section_sub_find: 324
+ 1833 					strrchr: <>
+ 1834 					ip_ntoh: 442
+ 1835 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1836 					DEBUG: <>
+ 1837 					client_free: 1792
+ 1838 				client_validate: int (), <./freeradius/src/main/client.c 942>
+ 1839 					strdup: <>
+ 1840 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1841 					DEBUG: <>
+ 1842 					ip_ntoh: 442
+ 1843 					client_add: int (), <./freeradius/src/main/client.c 264>
+ 1844 						clients_init: 1773
+ 1845 						client_sane: int (), <./freeradius/src/main/client.c 190>
+ 1846 							memset: <>
+ 1847 							htonl: <>
+ 1848 						rbtree_create: 201
+ 1849 						client_ipaddr_cmp: int (), <./freeradius/src/main/client.c 122>
+ 1850 							fr_ipaddr_cmp: 1078
+ 1851 						client_free: 1792
+ 1852 						rbtree_finddata: 249
+ 1853 						fr_ipaddr_cmp: 1078
+ 1854 						namecmp: <>
+ 1855 						DEBUG: <>
+ 1856 						radlog: 184
+ 1857 						rbtree_insert: 237
+ 1858 						client_num_cmp: int (), <./freeradius/src/main/client.c 131>
+ 1859 						rad_malloc: 182
+ 1860 						memset: <>
+ 1861 						client_find: RADCLIENT * (), <./freeradius/src/main/client.c 454>
+ 1862 							client_sane: 1845
+ 1863 							rbtree_finddata: 249
+ 1864 					time: <>
+ 1865 					client_free: 1792
+ 1866 				client_add: 1843
+ 1867 				cf_section_name2: 1523
+ 1868 			xlat_register: 1643
+ 1869 			xlat_config: size_t (), <./freeradius/src/main/mainconfig.c 330>
+ 1870 				radius_xlat: 1696
+ 1871 				config_escape_func: size_t (), <./freeradius/src/main/mainconfig.c 275>
+ 1872 					snprintf: <>
+ 1873 					strchr: <>
+ 1874 				cf_reference_item: 316
+ 1875 				cf_item_is_pair: int (), <./freeradius/src/main/conffile.c 2242>
+ 1876 				cf_itemtopair: 209
+ 1877 				cf_pair_value: 522
+ 1878 				strlen: <>
+ 1879 			xlat_client: size_t (), <./freeradius/src/main/mainconfig.c 378>
+ 1880 				cf_pair_find: 328
+ 1881 				cf_pair_value: 522
+ 1882 				strlcpy: <>
+ 1883 				strlen: <>
+ 1884 			setup_modules: int (), <./freeradius/src/main/modules.c 1370>
+ 1885 				LTDL_SET_PRELOADED_SYMBOLS: <>
+ 1886 				lt_dlinit: int (), <./freeradius/libltdl/ltdl.c 2215>
+ 1887 					LT_DLMUTEX_LOCK: <>
+ 1888 					lt_dlloader_add: int (), <./freeradius/libltdl/ltdl.c 4335>
+ 1889 					lt_dlloader_next: <>
+ 1890 					sys_dyld_init: int (), <./freeradius/libltdl/ltdl.c 1789>
+ 1891 					presym_init: int (), <./freeradius/libltdl/ltdl.c 1962>
+ 1892 						LT_DLMUTEX_LOCK: <>
+ 1893 						lt_dlpreload: <>
+ 1894 						LT_DLMUTEX_UNLOCK: <>
+ 1895 					LT_DLMUTEX_SETERROR: <>
+ 1896 					LT_DLSTRERROR: <>
+ 1897 					LT_DLMUTEX_UNLOCK: <>
+ 1898 				radlog: 184
+ 1899 				lt_dlerror: const char * (), <./freeradius/libltdl/ltdl.c 3979>
+ 1900 					dlerror: <>
+ 1901 				lt_dlsetsearchpath: <>
+ 1902 				rbtree_create: 201
+ 1903 				module_entry_cmp: int (), <./freeradius/src/main/modules.c 402>
+ 1904 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1905 				module_entry_free: void (), <./freeradius/src/main/modules.c 413>
+ 1906 					lt_dlclose: int (), <./freeradius/src/main/modules.c 193>
+ 1907 						dlclose: <>
+ 1908 					memset: <>
+ 1909 					free: <>
+ 1910 				module_instance_cmp: int (), <./freeradius/src/main/modules.c 327>
+ 1911 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1912 				module_instance_free: void (), <./freeradius/src/main/modules.c 373>
+ 1913 					module_instance_free_old: void (), <./freeradius/src/main/modules.c 336>
+ 1914 						cf_section_parse_free: 207
+ 1915 						free: <>
+ 1916 					time: <>
+ 1917 					pthread_mutex_destroy: <>
+ 1918 					free: <>
+ 1919 					memset: <>
+ 1920 				memset: <>
+ 1921 				cf_section_sub_find: 324
+ 1922 				DEBUG2: <>
+ 1923 				cf_item_find_next: CONF_ITEM * (), <./freeradius/src/main/conffile.c 2195>
+ 1924 				cf_item_is_section: int (), <./freeradius/src/main/conffile.c 2238>
+ 1925 				cf_itemtosection: 214
+ 1926 				cf_section_name1: 384
+ 1927 				cf_section_name2: 1523
+ 1928 				cf_section_find_name2: CONF_SECTION * (), <./freeradius/src/main/conffile.c 1982>
+ 1929 					cf_sectiontoitem: 323
+ 1930 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1931 					cf_itemtosection: 214
+ 1932 				cf_section_filename: const char * (), <./freeradius/src/main/conffile.c 2228>
+ 1933 					cf_sectiontoitem: 323
+ 1934 				cf_section_lineno: 385
+ 1935 				cf_log_info: 390
+ 1936 				cf_item_is_pair: 1875
+ 1937 				cf_itemtopair: 209
+ 1938 				cf_pair_attr: 1628
+ 1939 				find_module_instance: module_instance_t * (), <./freeradius/src/main/modules.c 528>
+ 1940 					cf_section_sub_find_name2: 319
+ 1941 					radlog: 184
+ 1942 					strlcpy: <>
+ 1943 					rbtree_finddata: 249
+ 1944 					cf_section_name1: 384
+ 1945 					rad_malloc: 182
+ 1946 					memset: <>
+ 1947 					snprintf: <>
+ 1948 					linkto_module: module_entry_t * (), <./freeradius/src/main/modules.c 440>
+ 1949 						strlcpy: <>
+ 1950 						rbtree_finddata: 249
+ 1951 						fr_dlopenext: lt_dlhandle (), <./freeradius/src/main/modules.c 213>
+ 1952 							lt_dladvise_init: <>
+ 1953 							lt_dladvise_ext: <>
+ 1954 							lt_dladvise_global: <>
+ 1955 							lt_dlopenadvise: <>
+ 1956 							lt_dladvise_destroy: <>
+ 1957 						cf_log_err: 405
+ 1958 						cf_sectiontoitem: 323
+ 1959 						lt_dlerror: 1899
+ 1960 						strcpy: <>
+ 1961 						strrchr: <>
+ 1962 						DEBUG3: <>
+ 1963 						lt_dlsym: void * (), <./freeradius/src/main/modules.c 188>
+ 1964 							dlsym: <>
+ 1965 						lt_dlclose: 1906
+ 1966 						rad_malloc: 182
+ 1967 						memset: <>
+ 1968 						cf_log_module: void (), <./freeradius/src/main/conffile.c 2581>
+ 1969 							va_start: <>
+ 1970 							vsnprintf: <>
+ 1971 							radlog: 184
+ 1972 							va_end: <>
+ 1973 						rbtree_insert: 237
+ 1974 						radlog: 184
+ 1975 						free: <>
+ 1976 					free: <>
+ 1977 					cf_pair_find: 328
+ 1978 					cf_pair_value: 522
+ 1979 					strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 1980 					cf_log_module: 1968
+ 1981 					cf_section_filename: 1932
+ 1982 					cf_log_err: 405
+ 1983 					cf_sectiontoitem: 323
+ 1984 					pthread_mutex_init: <>
+ 1985 					rbtree_insert: 237
+ 1986 				cf_section_sub_find_name2: 319
+ 1987 				virtual_servers_load: int (), <./freeradius/src/main/modules.c 1208>
+ 1988 					DEBUG2: <>
+ 1989 					cf_section_find_name2: 1928
+ 1990 					cf_subsection_find_next: 517
+ 1991 					load_byserver: int (), <./freeradius/src/main/modules.c 964>
+ 1992 						cf_section_name2: 1523
+ 1993 						cf_log_info: 390
+ 1994 						cf_section_filename: 1932
+ 1995 						rbtree_create: 201
+ 1996 						indexed_modcallable_cmp: int (), <./freeradius/src/main/modules.c 312>
+ 1997 						indexed_modcallable_free: void (), <./freeradius/src/main/modules.c 304>
+ 1998 							modcallable_free: void (), <./freeradius/src/main/modcall.c 2211>
+ 1999 								mod_callabletogroup: modgroup * (), <./freeradius/src/main/modcall.c 104>
+ 2000 									rad_assert: <>
+ 2001 								modcallable_free: 1998
+ 2002 								pairfree: 783
+ 2003 								free: <>
+ 2004 							free: <>
+ 2005 						radlog: 184
+ 2006 						rad_malloc: 182
+ 2007 						memset: <>
+ 2008 						time: <>
+ 2009 						cf_section_sub_find: 324
+ 2010 						cf_item_find_next: 1923
+ 2011 						dict_attrbyvalue: 775
+ 2012 						cf_log_err: 405
+ 2013 						cf_sectiontoitem: 323
+ 2014 						virtual_server_free: void (), <./freeradius/src/main/modules.c 260>
+ 2015 							rbtree_free: 222
+ 2016 							free: <>
+ 2017 						cf_item_is_pair: 1875
+ 2018 						cf_itemtopair: 209
+ 2019 						define_type: int (), <./freeradius/src/main/modules.c 802>
+ 2020 							dict_valbyname: 659
+ 2021 							fr_rand: 627
+ 2022 							dict_valbyattr: 931
+ 2023 							DEBUG2: <>
+ 2024 							dict_addvalue: 641
+ 2025 							radlog: 184
+ 2026 							fr_strerror: 370
+ 2027 						cf_pair_attr: 1628
+ 2028 						cf_item_is_section: 1924
+ 2029 						cf_itemtosection: 214
+ 2030 						cf_section_name1: 384
+ 2031 						strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2032 						cf_log_module: 1968
+ 2033 						load_component_section: int (), <./freeradius/src/main/modules.c 834>
+ 2034 							dict_attrbyvalue: 775
+ 2035 							cf_log_err: 405
+ 2036 							cf_sectiontoitem: 323
+ 2037 							cf_item_find_next: 1923
+ 2038 							cf_item_is_section: 1924
+ 2039 							cf_itemtosection: 214
+ 2040 							cf_section_name1: 384
+ 2041 							strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2042 							load_subcomponent_section: int (), <./freeradius/src/main/modules.c 748>
+ 2043 								cf_section_name2: 1523
+ 2044 								rad_assert: <>
+ 2045 								cf_log_err: 405
+ 2046 								cf_sectiontoitem: 323
+ 2047 								compile_modgroup: modcallable * (), <./freeradius/src/main/modcall.c 2169>
+ 2048 									do_compile_modgroup: modcallable * (), <./freeradius/src/main/modcall.c 2044>
+ 2049 										rad_malloc: 182
+ 2050 										memset: <>
+ 2051 										mod_grouptocallable: modcallable * (), <./freeradius/src/main/modcall.c 114>
+ 2052 										cf_section_name2: 1523
+ 2053 										cf_section_name1: 384
+ 2054 										strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2055 										cf_item_find_next: 1923
+ 2056 										cf_item_is_section: 1924
+ 2057 										cf_itemtosection: 214
+ 2058 										do_compile_modsingle: modcallable * (), <./freeradius/src/main/modcall.c 1603>
+ 2059 											cf_item_is_section: 1924
+ 2060 											cf_itemtosection: 214
+ 2061 											cf_section_name1: 384
+ 2062 											cf_section_name2: 1523
+ 2063 											strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2064 											do_compile_modgroup: 2048
+ 2065 											all_children_are_modules: int (), <./freeradius/src/main/modcall.c 1555>
+ 2066 												cf_item_find_next: 1923
+ 2067 												cf_item_is_section: 1924
+ 2068 												cf_itemtosection: 214
+ 2069 												cf_section_name1: 384
+ 2070 												strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2071 												cf_log_err: 405
+ 2072 												cf_item_is_pair: 1875
+ 2073 												cf_itemtopair: 209
+ 2074 												cf_pair_value: 522
+ 2075 											cf_log_err: 405
+ 2076 											radius_evaluate_condition: int (), <./freeradius/src/main/evaluate.c 561>
+ 2077 												radlog: 184
+ 2078 												RDEBUG4: <>
+ 2079 												radius_evaluate_condition: 2076
+ 2080 												RDEBUG2: <>
+ 2081 												gettoken: 286
+ 2082 												expand_string: const char * (), <./freeradius/src/main/evaluate.c 65>
+ 2083 													radius_exec_program: int (), <./freeradius/src/main/exec.c 74>
+ 2084 													strchr: <>
+ 2085 													radius_xlat: 1696
+ 2086 												getregex: FR_TOKEN (), <./freeradius/src/main/evaluate.c 108>
+ 2087 													sscanf: <>
+ 2088 												radius_do_cmp: int (), <./freeradius/src/main/evaluate.c 300>
+ 2089 													fr_str2int: 670
+ 2090 													radius_get_vp: 1678
+ 2091 													dict_attrbyname: 651
+ 2092 													radius_find_compare: int (), <./freeradius/src/main/valuepair.c 283>
+ 2093 													pairmake: 759
+ 2094 													radius_callback_compare: int (), <./freeradius/src/main/valuepair.c 249>
+ 2095 														radius_compare_vps: int (), <./freeradius/src/main/valuepair.c 57>
+ 2096 															snprintf: <>
+ 2097 															radius_xlat: 1696
+ 2098 															regcomp: <>
+ 2099 															regerror: <>
+ 2100 															RDEBUG: <>
+ 2101 															regexec: <>
+ 2102 															regfree: <>
+ 2103 															request_data_get: void * (), <./freeradius/src/main/util.c 140>
+ 2104 																free: <>
+ 2105 															free: <>
+ 2106 															memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2107 															strdup: <>
+ 2108 															request_data_add: int (), <./freeradius/src/main/util.c 96>
+ 2109 																rad_malloc: 182
+ 2110 																memset: <>
+ 2111 															memcmp: <>
+ 2112 															strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2113 															ntohl: <>
+ 2114 													RDEBUG3: <>
+ 2115 													pairfree: 783
+ 2116 													RDEBUG2: <>
+ 2117 													vp_prints_value: 926
+ 2118 													memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2119 													pairparsevalue: 805
+ 2120 													fr_strerror: 370
+ 2121 													paircmp: 1406
+ 2122 													all_digits: <>
+ 2123 													strtoul: <>
+ 2124 													strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2125 													regcomp: <>
+ 2126 													regerror: <>
+ 2127 													DEBUG: <>
+ 2128 													regexec: <>
+ 2129 													regfree: <>
+ 2130 													free: <>
+ 2131 													request_data_get: 2103
+ 2132 													rad_malloc: 182
+ 2133 													request_data_add: 2108
+ 2134 													fr_token_name: const char * (), <./freeradius/src/lib/token.c 287>
+ 2135 														fr_int2str: 189
+ 2136 											modcallable_free: 1998
+ 2137 											do_compile_modupdate: modcallable * (), <./freeradius/src/main/modcall.c 1285>
+ 2138 												cf_section_name2: 1523
+ 2139 												cf_log_err: 405
+ 2140 												cf_sectiontoitem: 323
+ 2141 												strncmp: <>
+ 2142 												strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2143 												cf_item_find_next: 1923
+ 2144 												cf_item_is_section: 1924
+ 2145 												cf_item_is_pair: 1875
+ 2146 												cf_itemtopair: 209
+ 2147 												cf_pairtovp: VALUE_PAIR * (), <./freeradius/src/main/conffile.c 1900>
+ 2148 													fr_strerror_printf: 293
+ 2149 													pairmake: 759
+ 2150 													pairparsevalue: 805
+ 2151 													pairfree: 783
+ 2152 												pairfree: 783
+ 2153 												fr_strerror: 370
+ 2154 												rad_malloc: 182
+ 2155 												memset: <>
+ 2156 												mod_grouptocallable: 2051
+ 2157 											do_compile_modswitch: modcallable * (), <./freeradius/src/main/modcall.c 1419>
+ 2158 												cf_section_name2: 1523
+ 2159 												cf_log_err: 405
+ 2160 												cf_sectiontoitem: 323
+ 2161 												cf_item_find_next: 1923
+ 2162 												cf_item_is_section: 1924
+ 2163 												cf_item_is_pair: 1875
+ 2164 												cf_itemtosection: 214
+ 2165 												cf_section_name1: 384
+ 2166 												strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2167 												do_compile_modgroup: 2048
+ 2168 											cf_item_is_pair: 1875
+ 2169 											cf_itemtopair: 209
+ 2170 											cf_pair_attr: 1628
+ 2171 											cf_pair_value: 522
+ 2172 											do_compile_modxlat: modcallable * (), <./freeradius/src/main/modcall.c 1520>
+ 2173 												rad_malloc: 182
+ 2174 												memset: <>
+ 2175 												mod_xlattocallable: modcallable * (), <./freeradius/src/main/modcall.c 134>
+ 2176 												memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2177 												strdup: <>
+ 2178 												strcpy: <>
+ 2179 												strrchr: <>
+ 2180 											cf_section_find: CONF_SECTION * (), <./freeradius/src/main/conffile.c 2046>
+ 2181 												cf_section_sub_find: 324
+ 2182 											cf_section_sub_find_name2: 319
+ 2183 											snprintf: <>
+ 2184 											cf_item_parent: CONF_SECTION * (), <./freeradius/src/main/conffile.c 2211>
+ 2185 											cf_sectiontoitem: 323
+ 2186 											DEBUG2: <>
+ 2187 											do_compile_modsingle: 2058
+ 2188 											find_module_instance: 1939
+ 2189 											strrchr: <>
+ 2190 											strlcpy: <>
+ 2191 											strncmp: <>
+ 2192 											do_compile_modserver: modcallable * (), <./freeradius/src/main/modcall.c 1484>
+ 2193 												cf_section_sub_find_name2: 319
+ 2194 												cf_log_err: 405
+ 2195 												rad_malloc: 182
+ 2196 												memset: <>
+ 2197 												mod_reftocallable: modcallable * (), <./freeradius/src/main/modcall.c 124>
+ 2198 												memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2199 												strdup: <>
+ 2200 											rad_malloc: 182
+ 2201 											memset: <>
+ 2202 											mod_singletocallable: modcallable * (), <./freeradius/src/main/modcall.c 110>
+ 2203 											memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2204 											rad_assert: <>
+ 2205 											cf_item_find_next: 1923
+ 2206 											compile_action: int (), <./freeradius/src/main/modcall.c 178>
+ 2207 												cf_pair_attr: 1628
+ 2208 												cf_pair_value: 522
+ 2209 												strcasecmp: 306
+ 2210 												strspn: <>
+ 2211 												strlen: <>
+ 2212 												atoi: <>
+ 2213 												cf_log_err: 405
+ 2214 												cf_pairtoitem: 256
+ 2215 												fr_str2int: 670
+ 2216 										cf_log_err: 405
+ 2217 										modcallable_free: 1998
+ 2218 										add_child: void (), <./freeradius/src/main/modcall.c 141>
+ 2219 											rad_assert: <>
+ 2220 											mod_grouptocallable: 2051
+ 2221 										cf_item_is_pair: 1875
+ 2222 										cf_itemtopair: 209
+ 2223 										cf_pair_attr: 1628
+ 2224 										cf_pair_value: 522
+ 2225 										compile_action: 2206
+ 2226 									dump_tree: void (), <./freeradius/src/main/modcall.c 873>
+ 2227 										RDEBUG: <>
+ 2228 										dump_mc: void (), <./freeradius/src/main/modcall.c 847>
+ 2229 											mod_callabletosingle: modsingle * (), <./freeradius/src/main/modcall.c 99>
+ 2230 												rad_assert: <>
+ 2231 											DEBUG: <>
+ 2232 											mod_callabletogroup: 1999
+ 2233 											dump_mc: 2228
+ 2234 											fr_int2str: 189
+ 2235 											action2str: const char * (), <./freeradius/src/main/modcall.c 833>
+ 2236 												snprintf: <>
+ 2237 								dict_valbyname: 659
+ 2238 								modcallable_free: 1998
+ 2239 								new_sublist: indexed_modcallable * (), <./freeradius/src/main/modules.c 660>
+ 2240 									lookup_by_index: indexed_modcallable * (), <./freeradius/src/main/modules.c 646>
+ 2241 										rbtree_finddata: 249
+ 2242 									rad_malloc: 182
+ 2243 									rbtree_insert: 237
+ 2244 									free: <>
+ 2245 							cf_item_is_pair: 1875
+ 2246 							cf_itemtopair: 209
+ 2247 							compile_modsingle: modcallable * (), <./freeradius/src/main/modcall.c 2029>
+ 2248 								do_compile_modsingle: 2058
+ 2249 								dump_tree: 2226
+ 2250 							cf_pair_attr: 1628
+ 2251 							cf_section_name2: 1523
+ 2252 							modcallable_free: 1998
+ 2253 							dict_valbyname: 659
+ 2254 							new_sublist: 2239
+ 2255 							add_to_modcallable: void (), <./freeradius/src/main/modcall.c 2179>
+ 2256 								rad_assert: <>
+ 2257 								rad_malloc: 182
+ 2258 								memset: <>
+ 2259 								mod_grouptocallable: 2051
+ 2260 								memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2261 								mod_callabletogroup: 1999
+ 2262 								add_child: 2218
+ 2263 						lookup_by_index: 2240
+ 2264 						dict_attrbyname: 651
+ 2265 						cf_subsection_find_next: 517
+ 2266 						DEBUG2: <>
+ 2267 						load_subcomponent_section: 2042
+ 2268 						DEBUG: <>
+ 2269 						virtual_server_idx: int (), <./freeradius/src/main/modules.c 231>
+ 2270 							hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+ 2271 							fr_hash_string: uint32_t (), <./freeradius/src/lib/hash.c 776>
+ 2272 								hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+ 2273 					cf_section_name2: 1523
+ 2274 					virtual_server_find: virtual_server_t * (), <./freeradius/src/main/modules.c 242>
+ 2275 						virtual_server_idx: 2269
+ 2276 						strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2277 					cf_top_section: 312
+ 2278 					radlog: 184
+ 2279 					cf_section_filename: 1932
+ 2280 					cf_section_lineno: 385
+ 2281 			chdir: <>
+ 2282 			rad_malloc: 182
+ 2283 			memset: <>
+ 2284 			rad_assert: <>
+ 2285 		setsid: <>
+ 2286 		getpid: <>
+ 2287 		dup2: <>
+ 2288 		setlinebuf: <>
+ 2289 		radius_event_init: int (), <./freeradius/src/main/event.c 3525>
+ 2290 			time: <>
+ 2291 			fr_event_list_create: 38
+ 2292 			event_status: void (), <./freeradius/src/main/event.c 3479>
+ 2293 				radlog: 184
+ 2294 				DEBUG: <>
+ 2295 				waitpid: <>
+ 2296 			fr_packet_list_create: 1072
+ 2297 			pthread_mutex_init: <>
+ 2298 			radlog: 184
+ 2299 			strerror: <>
+ 2300 			exit: <>
+ 2301 			pthread_self: <>
+ 2302 			thread_pool_init: int (), <./freeradius/src/main/threads.c 741>
+ 2303 				time: <>
+ 2304 				rad_assert: <>
+ 2305 				cf_subsection_find_next: 517
+ 2306 				memset: <>
+ 2307 				pthread_mutex_init: <>
+ 2308 				radlog: 184
+ 2309 				strerror: <>
+ 2310 				fr_hash_table_create: 121
+ 2311 				pid_hash: uint32_t (), <./freeradius/src/main/threads.c 719>
+ 2312 					fr_hash: 126
+ 2313 				pid_cmp: int (), <./freeradius/src/main/threads.c 726>
+ 2314 				free: <>
+ 2315 				cf_section_parse: 389
+ 2316 				sem_init: <>
+ 2317 				fr_fifo_create: 99
+ 2318 				setup_ssl_mutexes: int (), <./freeradius/src/main/threads.c 212>
+ 2319 					OpenSSL_add_all_algorithms: <>
+ 2320 					rad_malloc: 182
+ 2321 					CRYPTO_num_locks: <>
+ 2322 					radlog: 184
+ 2323 					pthread_mutex_init: <>
+ 2324 					CRYPTO_set_id_callback: <>
+ 2325 					ssl_id_function: unsigned long (), <./freeradius/src/main/threads.c 195>
+ 2326 						pthread_self: <>
+ 2327 					CRYPTO_set_locking_callback: <>
+ 2328 					ssl_locking_function: void (), <./freeradius/src/main/threads.c 200>
+ 2329 						pthread_mutex_lock: <>
+ 2330 						pthread_mutex_unlock: <>
+ 2331 				spawn_thread: THREAD_HANDLE * (), <./freeradius/src/main/threads.c 619>
+ 2332 					DEBUG2: <>
+ 2333 					rad_malloc: 182
+ 2334 					memset: <>
+ 2335 					time: <>
+ 2336 					pthread_attr_init: <>
+ 2337 					pthread_attr_setdetachstate: <>
+ 2338 					pthread_create: <>
+ 2339 					request_handler_thread: void * (), <./freeradius/src/main/threads.c 483>
+ 2340 						DEBUG2: <>
+ 2341 						sem_wait: <>
+ 2342 						radlog: 184
+ 2343 						strerror: <>
+ 2344 						ERR_clear_error: <>
+ 2345 						request_dequeue: int (), <./freeradius/src/main/threads.c 361>
+ 2346 							reap_children: void (), <./freeradius/src/main/threads.c 257>
+ 2347 								pthread_mutex_lock: <>
+ 2348 								waitpid: <>
+ 2349 								fr_hash_table_finddata: 144
+ 2350 								fr_hash_table_num_elements: int (), <./freeradius/src/lib/hash.c 574>
+ 2351 								pthread_mutex_unlock: <>
+ 2352 							pthread_mutex_lock: <>
+ 2353 							fr_fifo_peek: 1797
+ 2354 							fr_fifo_pop: 106
+ 2355 							rad_assert: <>
+ 2356 							free: <>
+ 2357 							pthread_mutex_unlock: <>
+ 2358 							radlog: 184
+ 2359 						radius_handle_request: void (), <./freeradius/src/main/event.c 3778>
+ 2360 							request_pre_handler: int (), <./freeradius/src/main/event.c 1789>
+ 2361 								rad_assert: <>
+ 2362 								pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2363 								decode: <>
+ 2364 								DEBUG_PACKET: <>
+ 2365 								radius_evaluate_condition: 2076
+ 2366 								radlog_request: 1693
+ 2367 								RDEBUG: <>
+ 2368 								fr_strerror: 370
+ 2369 								process_proxy_reply: int (), <./freeradius/src/main/event.c 1704>
+ 2370 									pairfree: 783
+ 2371 									pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2372 									RDEBUG2: <>
+ 2373 									module_post_proxy: int (), <./freeradius/src/main/modules.c 1648>
+ 2374 										indexed_modcall: int (), <./freeradius/src/main/modules.c 694>
+ 2375 											virtual_server_find: 2274
+ 2376 											RDEBUG: <>
+ 2377 											RDEBUG2: <>
+ 2378 											lookup_by_index: 2240
+ 2379 											cf_section_filename: 1932
+ 2380 											modcall: int (), <./freeradius/src/main/modcall.c 368>
+ 2381 												RDEBUG2: <>
+ 2382 												radius_evaluate_condition: 2076
+ 2383 												mod_callabletogroup: 1999
+ 2384 												radius_update_attrlist: int (), <./freeradius/src/main/evaluate.c 1214>
+ 2385 													strncmp: <>
+ 2386 													strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2387 													request_alloc_coa: REQUEST * (), <./freeradius/src/main/util.c 490>
+ 2388 														request_alloc_fake: REQUEST * (), <./freeradius/src/main/util.c 408>
+ 2389 															request_alloc: REQUEST * (), <./freeradius/src/main/util.c 372>
+ 2390 																rad_malloc: 182
+ 2391 																memset: <>
+ 2392 																time: <>
+ 2393 																radlog_request: 1693
+ 2394 															rad_alloc: 746
+ 2395 															request_free: void (), <./freeradius/src/main/util.c 191>
+ 2396 																rad_assert: <>
+ 2397 																rad_free: 896
+ 2398 																pairfree: 783
+ 2399 																free: <>
+ 2400 																request_free: 2395
+ 2401 														rad_alloc: 746
+ 2402 													paircopy: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 385>
+ 2403 														paircopy2: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 359>
+ 2404 															paircopyvp: VALUE_PAIR * (), <./freeradius/src/lib/valuepair.c 322>
+ 2405 																malloc: <>
+ 2406 																fr_strerror_printf: 293
+ 2407 																memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2408 													RDEBUG2: <>
+ 2409 													cf_item_find_next: 1923
+ 2410 													cf_item_is_section: 1924
+ 2411 													pairfree: 783
+ 2412 													cf_itemtopair: 209
+ 2413 													radius_find_compare: 2092
+ 2414 													DEBUG: <>
+ 2415 													expand_string: 2082
+ 2416 													pairparsevalue: 805
+ 2417 													fr_strerror: 370
+ 2418 													radius_pairmove: void (), <./freeradius/src/main/evaluate.c 908>
+ 2419 														rad_malloc: 182
+ 2420 														memset: <>
+ 2421 														RDEBUG4: <>
+ 2422 														pairfree: 783
+ 2423 														radius_compare_vps: 2095
+ 2424 														rad_assert: <>
+ 2425 														free: <>
+ 2426 														fix_up: void (), <./freeradius/src/main/evaluate.c 878>
+ 2427 												mod_callabletoref: modref * (), <./freeradius/src/main/modcall.c 119>
+ 2428 													rad_assert: <>
+ 2429 												RDEBUG: <>
+ 2430 												indexed_modcall: 2374
+ 2431 												mod_callabletoxlat: modxlat * (), <./freeradius/src/main/modcall.c 129>
+ 2432 													rad_assert: <>
+ 2433 												radius_xlat: 1696
+ 2434 												radius_exec_program: int (), <./freeradius/src/main/exec.c 74>
+ 2435 												radlog: 184
+ 2436 												exit: <>
+ 2437 												fr_rand: 627
+ 2438 												strchr: <>
+ 2439 												radius_get_vp: 1678
+ 2440 												vp_prints_value: 926
+ 2441 												strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2442 												fr_int2str: 189
+ 2443 												mod_callabletosingle: 2229
+ 2444 												call_modsingle: int (), <./freeradius/src/main/modcall.c 275>
+ 2445 													rad_assert: <>
+ 2446 													RDEBUG3: <>
+ 2447 													safe_lock: void (), <./freeradius/src/main/modcall.c 253>
+ 2448 														pthread_mutex_lock: <>
+ 2449 													safe_unlock: void (), <./freeradius/src/main/modcall.c 262>
+ 2450 														pthread_mutex_unlock: <>
+ 2451 												rad_assert: <>
+ 2452 									pairdelete: void (), <./freeradius/src/lib/valuepair.c 235>
+ 2453 										pairbasicfree: 784
+ 2454 									pairadd: 892
+ 2455 							rad_assert: <>
+ 2456 							RDEBUG: <>
+ 2457 							request_post_handler: void (), <./freeradius/src/main/event.c 2275>
+ 2458 								RDEBUG2: <>
+ 2459 								rad_panic: <>
+ 2460 								pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2461 								successfully_proxied_request: int (), <./freeradius/src/main/event.c 2018>
+ 2462 									pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2463 									home_pool_byname: 1811
+ 2464 									RDEBUG2: <>
+ 2465 									realm_find2: 1591
+ 2466 									rad_panic: <>
+ 2467 									home_server_ldb: home_server * (), <./freeradius/src/main/realms.c 1861>
+ 2468 										hash: unsigned int (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 122>
+ 2469 										fr_hash: 126
+ 2470 										fr_hash_update: 590
+ 2471 										pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2472 										fr_ipaddr_cmp: 1078
+ 2473 										RDEBUG3: <>
+ 2474 										fr_rand: 627
+ 2475 										rad_alloc: 746
+ 2476 										radlog: 184
+ 2477 										exit: <>
+ 2478 										paircopy: 2402
+ 2479 										radius_pairmake: VALUE_PAIR * (), <./freeradius/src/main/valuepair.c 721>
+ 2480 											pairmake: 759
+ 2481 											pairadd: 892
+ 2482 										strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2483 										realm_find: REALM * (), <./freeradius/src/main/realms.c 1817>
+ 2484 											rbtree_finddata: 249
+ 2485 											regcomp: <>
+ 2486 											regexec: <>
+ 2487 											regfree: <>
+ 2488 										RDEBUG2: <>
+ 2489 										home_server_ldb: 2467
+ 2490 									ev_request_free: void (), <./freeradius/src/main/event.c 151>
+ 2491 										ev_request_free: 2490
+ 2492 										fr_event_delete: 49
+ 2493 										remove_from_proxy_hash: void (), <./freeradius/src/main/event.c 240>
+ 2494 											PTHREAD_MUTEX_LOCK: <>
+ 2495 											PTHREAD_MUTEX_UNLOCK: <>
+ 2496 											fr_packet_list_yank: 1172
+ 2497 											fr_packet_list_id_free: 1184
+ 2498 										remove_from_request_hash: void (), <./freeradius/src/main/event.c 140>
+ 2499 											fr_packet_list_yank: 1172
+ 2500 											request_stats_final: void (), <./freeradius/src/main/stats.c 53>
+ 2501 												INC_AUTH: <>
+ 2502 												INC_ACCT: <>
+ 2503 												INC: <>
+ 2504 										rad_assert: <>
+ 2505 										request_free: 2395
+ 2506 									pairadd: 892
+ 2507 									pairmake: 759
+ 2508 									radius_paircreate: VALUE_PAIR * (), <./freeradius/src/main/valuepair.c 696>
+ 2509 										paircreate: 774
+ 2510 										radlog: 184
+ 2511 										rad_assert: <>
+ 2512 										pairadd: 892
+ 2513 									rad_assert: <>
+ 2514 									memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2515 									snprintf: <>
+ 2516 									strlen: <>
+ 2517 									module_pre_proxy: int (), <./freeradius/src/main/modules.c 1640>
+ 2518 										indexed_modcall: 2374
+ 2519 									proxy_to_virtual_server: int (), <./freeradius/src/main/event.c 1942>
+ 2520 										RDEBUG2: <>
+ 2521 										request_alloc_fake: 2388
+ 2522 										paircopy: 2402
+ 2523 										rad_authenticate: int (), <./freeradius/src/main/auth.c 470>
+ 2524 											radius_paircreate: 2508
+ 2525 											authenticate: <>
+ 2526 											rad_authlog: int (), <./freeradius/src/main/auth.c 72>
+ 2527 											pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2528 											module_authorize: int (), <./freeradius/src/main/modules.c 1564>
+ 2529 												DEBUG2: <>
+ 2530 												indexed_modcall: 2374
+ 2531 											snprintf: <>
+ 2532 											RDEBUG2: <>
+ 2533 											realm_find2: 1591
+ 2534 											strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2535 											rad_check_password: int (), <./freeradius/src/main/auth.c 168>
+ 2536 												pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2537 												dict_valbyattr: 931
+ 2538 												RDEBUG2: <>
+ 2539 												radlog_request: 1693
+ 2540 												pairdelete: 2452
+ 2541 												RDEBUG: <>
+ 2542 												dict_attrbyvalue: 775
+ 2543 												rad_authlog: int (), <./freeradius/src/main/auth.c 72>
+ 2544 												fr_crypt_check: int (), <./freeradius/src/main/crypt.c 48>
+ 2545 													pthread_mutex_init: <>
+ 2546 													pthread_mutex_lock: <>
+ 2547 													crypt: <>
+ 2548 													strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2549 													pthread_mutex_unlock: <>
+ 2550 												strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2551 												rad_chap_encode: 1270
+ 2552 												memcmp: <>
+ 2553 												module_authenticate: int (), <./freeradius/src/main/modules.c 1585>
+ 2554 													indexed_modcall: 2374
+ 2555 											fr_utf8_char: <>
+ 2556 											log_debug: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 112>
+ 2557 												va_start: <>
+ 2558 												vradlog: 186
+ 2559 												va_end: <>
+ 2560 												vfprintf: <>
+ 2561 												fputc: <>
+ 2562 											module_checksimul: int (), <./freeradius/src/main/modules.c 1614>
+ 2563 												indexed_modcall: 2374
+ 2564 											pairfree: 783
+ 2565 											radius_pairmake: 2479
+ 2566 											ntohl: <>
+ 2567 											htonl: <>
+ 2568 											ip_ntoa: const char * (), <./freeradius/src/lib/misc.c 40>
+ 2569 												ntohl: <>
+ 2570 												sprintf: <>
+ 2571 											pairdelete: 2452
+ 2572 											rad_postauth: int (), <./freeradius/src/main/auth.c 418>
+ 2573 												pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2574 												RDEBUG2: <>
+ 2575 												module_post_auth: int (), <./freeradius/src/main/modules.c 1657>
+ 2576 													indexed_modcall: 2374
+ 2577 										rad_accounting: <>
+ 2578 										ev_request_free: 2490
+ 2579 										radius_handle_request: 2359
+ 2580 										setup_post_proxy_fail: int (), <./freeradius/src/main/event.c 936>
+ 2581 											dict_valbyname: 659
+ 2582 											pairdelete: 2452
+ 2583 											pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2584 											radius_paircreate: 2508
+ 2585 											rad_assert: <>
+ 2586 										process_proxy_reply: 2369
+ 2587 										RDEBUG: <>
+ 2588 									proxy_request: int (), <./freeradius/src/main/event.c 1871>
+ 2589 										RDEBUG: <>
+ 2590 										ev_request_free: 2490
+ 2591 										insert_into_proxy_hash: int (), <./freeradius/src/main/event.c 355>
+ 2592 											rad_assert: <>
+ 2593 											PTHREAD_MUTEX_LOCK: <>
+ 2594 											proxy_id_alloc: int (), <./freeradius/src/main/event.c 305>
+ 2595 												fr_packet_list_id_alloc: 1250
+ 2596 												proxy_new_listener: rad_listen_t * (), <./freeradius/src/main/listen.c 1784>
+ 2597 													fr_ipaddr_cmp: 1078
+ 2598 													listen_alloc: rad_listen_t * (), <./freeradius/src/main/listen.c 1713>
+ 2599 														rad_malloc: 182
+ 2600 														memset: <>
+ 2601 														recv: <>
+ 2602 														send: <>
+ 2603 														encode: <>
+ 2604 														decode: <>
+ 2605 														rad_assert: <>
+ 2606 													DEBUG: <>
+ 2607 													memset: <>
+ 2608 													listen_bind: int (), <./freeradius/src/main/listen.c 1441>
+ 2609 														getservbyname: <>
+ 2610 														ntohs: <>
+ 2611 														DEBUG: <>
+ 2612 														socket: <>
+ 2613 														radlog: 184
+ 2614 														strerror: <>
+ 2615 														strcpy: <>
+ 2616 														fr_suid_up: void (), <./freeradius/src/main/mainconfig.c 566>
+ 2617 															getresuid: <>
+ 2618 															radlog: 184
+ 2619 															setresuid: <>
+ 2620 															geteuid: <>
+ 2621 														setsockopt: <>
+ 2622 														fr_suid_down: 1482
+ 2623 														close: <>
+ 2624 														if_nametoindex: <>
+ 2625 														udpfromto_init: <>
+ 2626 														fr_ipaddr2sockaddr: 444
+ 2627 														IN6_IS_ADDR_UNSPECIFIED: <>
+ 2628 														bind: <>
+ 2629 														memset: <>
+ 2630 														getsockname: <>
+ 2631 														fr_sockaddr2ipaddr: 436
+ 2632 														fcntl: <>
+ 2633 													radlog: 184
+ 2634 													listen_free: void (), <./freeradius/src/main/listen.c 2315>
+ 2635 														close: <>
+ 2636 														free: <>
+ 2637 												radlog: 184
+ 2638 												proxy_add_fds: int (), <./freeradius/src/main/event.c 284>
+ 2639 												listen_free: 2634
+ 2640 												fr_packet_list_socket_add: 1093
+ 2641 												RDEBUG2: <>
+ 2642 												radius_signal_self: void (), <./freeradius/src/main/event.c 3364>
+ 2643 													handle_signal_self: void (), <./freeradius/src/main/event.c 3284>
+ 2644 														radlog: 184
+ 2645 														fr_event_loop_exit: void (), <./freeradius/src/lib/event.c 308>
+ 2646 														time: <>
+ 2647 														event_poll_detail: void (), <./freeradius/src/main/event.c 3435>
+ 2648 															rad_assert: <>
+ 2649 															thread_pool_addrequest: int (), <./freeradius/src/main/threads.c 878>
+ 2650 																radius_handle_request: 2359
+ 2651 																wait: <>
+ 2652 																request_enqueue: int (), <./freeradius/src/main/threads.c 291>
+ 2653 																	pthread_mutex_lock: <>
+ 2654 																	time: <>
+ 2655 																	pthread_mutex_unlock: <>
+ 2656 																	radlog: 184
+ 2657 																	rad_malloc: 182
+ 2658 																	fr_fifo_push: 102
+ 2659 																	sem_post: <>
+ 2660 																thread_pool_manage: void (), <./freeradius/src/main/threads.c 923>
+ 2661 																	DEBUG2: <>
+ 2662 																	spawn_thread: 2331
+ 2663 																	delete_thread: void (), <./freeradius/src/main/threads.c 575>
+ 2664 																		rad_assert: <>
+ 2665 																		DEBUG2: <>
+ 2666 																		free: <>
+ 2667 																	sem_post: <>
+ 2668 															fr_event_now: int (), <./freeradius/src/lib/event.c 225>
+ 2669 																gettimeofday: 64
+ 2670 															gettimeofday: 64
+ 2671 															tv_add: void (), <./freeradius/src/main/event.c 126>
+ 2672 															fr_event_insert: 69
+ 2673 															event_poll_detail: 2647
+ 2674 															radlog: 184
+ 2675 															exit: <>
+ 2676 														event_new_fd: void (), <./freeradius/src/main/event.c 3243>
+ 2677 													read: <>
+ 2678 													write: <>
+ 2679 											PTHREAD_MUTEX_UNLOCK: <>
+ 2680 											fr_packet_list_yank: 1172
+ 2681 											fr_packet_list_id_free: 1184
+ 2682 											RDEBUG2: <>
+ 2683 											fr_packet_list_insert: 1293
+ 2684 											RDEBUG3: <>
+ 2685 											inet_ntop: 177
+ 2686 										encode: <>
+ 2687 										gettimeofday: 64
+ 2688 										rad_assert: <>
+ 2689 										timercmp: <>
+ 2690 										no_response_to_proxied_request: void (), <./freeradius/src/main/event.c 1047>
+ 2691 											rad_assert: <>
+ 2692 											wait_a_bit: void (), <./freeradius/src/main/event.c 1145>
+ 2693 												callback: <>
+ 2694 												rad_assert: <>
+ 2695 												INSERT_EVENT: <>
+ 2696 												fr_event_now: 2668
+ 2697 												timercmp: <>
+ 2698 												tv_add: 2671
+ 2699 												wait_a_bit: 2692
+ 2700 												pthread_equal: <>
+ 2701 												radlog: 184
+ 2702 												wait_for_child_to_die: void (), <./freeradius/src/main/event.c 485>
+ 2703 													rad_assert: <>
+ 2704 													remove_from_request_hash: 2498
+ 2705 													pthread_equal: <>
+ 2706 													radlog: 184
+ 2707 													RDEBUG2: <>
+ 2708 													tv_add: 2671
+ 2709 													INSERT_EVENT: <>
+ 2710 													wait_for_child_to_die: 2702
+ 2711 													wait_for_proxy_id_to_expire: void (), <./freeradius/src/main/event.c 445>
+ 2712 														rad_assert: <>
+ 2713 														fr_event_now: 2668
+ 2714 														gettimeofday: 64
+ 2715 														timercmp: <>
+ 2716 														RDEBUG2: <>
+ 2717 														ev_request_free: 2490
+ 2718 														INSERT_EVENT: <>
+ 2719 														wait_for_proxy_id_to_expire: 2711
+ 2720 													ev_request_free: 2490
+ 2721 												ev_request_free: 2490
+ 2722 												request_stats_final: 2500
+ 2723 												cleanup_delay: void (), <./freeradius/src/main/event.c 532>
+ 2724 													rad_assert: <>
+ 2725 													remove_from_request_hash: 2498
+ 2726 													wait_for_proxy_id_to_expire: 2711
+ 2727 													RDEBUG2: <>
+ 2728 													ev_request_free: 2490
+ 2729 												rad_panic: <>
+ 2730 												RDEBUG: <>
+ 2731 											check_for_zombie_home_server: void (), <./freeradius/src/main/event.c 872>
+ 2732 												fr_event_now: 2668
+ 2733 												timercmp: <>
+ 2734 												mark_home_server_dead: void (), <./freeradius/src/main/event.c 837>
+ 2735 													radlog: 184
+ 2736 													inet_ntop: 177
+ 2737 													ping_home_server: void (), <./freeradius/src/main/event.c 735>
+ 2738 														request_alloc: 2389
+ 2739 														rad_alloc: 746
+ 2740 														rad_assert: <>
+ 2741 														fr_event_now: 2668
+ 2742 														radius_pairmake: 2479
+ 2743 														insert_into_proxy_hash: 2591
+ 2744 														RDEBUG2: <>
+ 2745 														ev_request_free: 2490
+ 2746 														send: <>
+ 2747 														gettimeofday: 64
+ 2748 														INSERT_EVENT: <>
+ 2749 														no_response_to_ping: void (), <./freeradius/src/main/event.c 655>
+ 2750 															rad_assert: <>
+ 2751 															radlog: 184
+ 2752 															inet_ntop: 177
+ 2753 															check_for_zombie_home_server: 2731
+ 2754 															wait_for_proxy_id_to_expire: 2711
+ 2755 														fr_rand: 627
+ 2756 														tv_add: 2671
+ 2757 														ping_home_server: 2737
+ 2758 													INSERT_EVENT: <>
+ 2759 													revive_home_server: void (), <./freeradius/src/main/event.c 633>
+ 2760 														fr_event_delete: 49
+ 2761 														radlog: 184
+ 2762 														inet_ntop: 177
+ 2763 											radlog: 184
+ 2764 											inet_ntop: 177
+ 2765 											post_proxy_fail_handler: void (), <./freeradius/src/main/event.c 993>
+ 2766 												gettimeofday: 64
+ 2767 												setup_post_proxy_fail: 2580
+ 2768 												request_post_handler: 2457
+ 2769 												rad_assert: <>
+ 2770 												thread_pool_addrequest: 2649
+ 2771 												null_handler: int (), <./freeradius/src/main/event.c 988>
+ 2772 												wait_a_bit: 2692
+ 2773 											fr_event_delete: 49
+ 2774 											ping_home_server: 2737
+ 2775 										RDEBUG2: <>
+ 2776 										inet_ntop: 177
+ 2777 										DEBUG_PACKET: <>
+ 2778 										send: <>
+ 2779 									RDEBUG: <>
+ 2780 								setup_post_proxy_fail: 2580
+ 2781 								request_pre_handler: 2360
+ 2782 								RDEBUG: <>
+ 2783 								ev_request_free: 2490
+ 2784 								paircopy2: 2403
+ 2785 								pairadd: 892
+ 2786 								gettimeofday: 64
+ 2787 								cleanup_delay: 2723
+ 2788 								pairdelete: 2452
+ 2789 								radius_pairmake: 2479
+ 2790 								rad_postauth: 2572
+ 2791 								reject_delay: void (), <./freeradius/src/main/event.c 612>
+ 2792 									rad_assert: <>
+ 2793 									RDEBUG2: <>
+ 2794 									DEBUG_PACKET: <>
+ 2795 									send: <>
+ 2796 									cleanup_delay: 2723
+ 2797 									INSERT_EVENT: <>
+ 2798 								timercmp: <>
+ 2799 								DEBUG_PACKET: <>
+ 2800 								send: <>
+ 2801 								originated_coa_request: int (), <./freeradius/src/main/event.c 1461>
+ 2802 									rad_assert: <>
+ 2803 									pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2804 									ev_request_free: 2490
+ 2805 									request_alloc_coa: 2387
+ 2806 									memset: <>
+ 2807 									home_pool_byname: 1811
+ 2808 									RDEBUG2: <>
+ 2809 									memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2810 									home_server_ldb: 2467
+ 2811 									RDEBUG: <>
+ 2812 									home_server_find: home_server * (), <./freeradius/src/main/realms.c 2174>
+ 2813 										memset: <>
+ 2814 										rbtree_finddata: 249
+ 2815 									inet_ntop: 177
+ 2816 									DEBUG: <>
+ 2817 									paircopy: 2402
+ 2818 									module_pre_proxy: 2517
+ 2819 									insert_into_proxy_hash: 2591
+ 2820 									gettimeofday: 64
+ 2821 									fr_rand: 627
+ 2822 									tv_add: 2671
+ 2823 									retransmit_coa_request: void (), <./freeradius/src/main/event.c 1367>
+ 2824 										rad_assert: <>
+ 2825 										fr_event_now: 2668
+ 2826 										no_response_to_coa_request: void (), <./freeradius/src/main/event.c 1322>
+ 2827 											rad_assert: <>
+ 2828 											radlog: 184
+ 2829 											inet_ntop: 177
+ 2830 											post_proxy_fail_handler: 2765
+ 2831 										fr_rand: 627
+ 2832 										tv_add: 2671
+ 2833 										timercmp: <>
+ 2834 										INSERT_EVENT: <>
+ 2835 										retransmit_coa_request: 2823
+ 2836 										update_event_timestamp: int (), <./freeradius/src/main/event.c 1345>
+ 2837 											pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2838 											free: <>
+ 2839 										insert_into_proxy_hash: 2591
+ 2840 										DEBUG: <>
+ 2841 										send: <>
+ 2842 									update_event_timestamp: 2836
+ 2843 									DEBUG_PACKET: <>
+ 2844 									send: <>
+ 2845 								pairfree: 783
+ 2846 								rad_free: 896
+ 2847 								rad_assert: <>
+ 2848 								wait_a_bit: 2692
+ 2849 							DEBUG2: <>
+ 2850 						pthread_mutex_lock: <>
+ 2851 						rad_assert: <>
+ 2852 						pthread_mutex_unlock: <>
+ 2853 						ERR_remove_state: <>
+ 2854 					radlog: 184
+ 2855 					strerror: <>
+ 2856 					pthread_attr_destroy: <>
+ 2857 					rad_assert: <>
+ 2858 				DEBUG2: <>
+ 2859 			DEBUG: <>
+ 2860 			listen_init: int (), <./freeradius/src/main/listen.c 1965>
+ 2861 				rad_assert: <>
+ 2862 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 2863 				htonl: <>
+ 2864 				cf_item_parse: 397
+ 2865 				radlog: 184
+ 2866 				strcmp: if (), <./freeradius/libltdl/ltdl.c 4453>
+ 2867 				listen_alloc: 2598
+ 2868 				clients_parse_section: 1771
+ 2869 				cf_log_err: 405
+ 2870 				cf_sectiontoitem: 323
+ 2871 				listen_free: 2634
+ 2872 				listen_bind: 2608
+ 2873 				cf_section_sub_find_name2: 319
+ 2874 				do_proxy: int (), <./freeradius/src/main/listen.c 989>
+ 2875 					pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 2876 					home_pool_byname: 1811
+ 2877 					RDEBUG2: <>
+ 2878 				cf_section_name2: 1523
+ 2879 				cf_subsection_find_next: 517
+ 2880 				listen_parse: rad_listen_t * (), <./freeradius/src/main/listen.c 1897>
+ 2881 					cf_log_info: 390
+ 2882 					cf_item_parse: 397
+ 2883 					free: <>
+ 2884 					cf_log_err: 405
+ 2885 					cf_sectiontoitem: 323
+ 2886 					fr_str2int: 670
+ 2887 					listen_alloc: 2598
+ 2888 					parse: <>
+ 2889 					listen_free: 2634
+ 2890 				IN6_IS_ADDR_LINKLOCAL: <>
+ 2891 				fr_rand: 627
+ 2892 				home_server_create_listeners: int (), <./freeradius/src/main/realms.c 2254>
+ 2893 					rbtree_walk: 1046
+ 2894 					home_server_create_callback: int (), <./freeradius/src/main/realms.c 2225>
+ 2895 						proxy_new_listener: 2596
+ 2896 				xlat_register: 1643
+ 2897 				xlat_listen: size_t (), <./freeradius/src/main/listen.c 84>
+ 2898 					cf_pair_find: 328
+ 2899 					cf_pair_value: 522
+ 2900 					strlcpy: <>
+ 2901 					strlen: <>
+ 2902 			fflush: <>
+ 2903 			pipe: <>
+ 2904 			fcntl: <>
+ 2905 			fr_event_fd_insert: int (), <./freeradius/src/lib/event.c 239>
+ 2906 			event_signal_handler: void (), <./freeradius/src/main/event.c 3389>
+ 2907 				read: <>
+ 2908 				handle_signal_self: 2643
+ 2909 			fr_suid_down_permanent: void (), <./freeradius/src/main/mainconfig.c 573>
+ 2910 				setresuid: <>
+ 2911 				radlog: 184
+ 2912 				strerror: <>
+ 2913 				geteuid: <>
+ 2914 				fr_set_dumpable: 1487
+ 2915 			event_poll_detail: 2647
+ 2916 			proxy_add_fds: 2638
+ 2917 			fr_packet_list_socket_add: 1093
+ 2918 			rad_assert: <>
+ 2919 			event_new_fd: void (), <./freeradius/src/main/event.c 3243>
+ 2920 		signal: <>
+ 2921 		sig_hup: void (), <./freeradius/src/main/radiusd.c 530>
+ 2922 			reset_signal: <>
+ 2923 			sig_hup: 2921
+ 2924 			radius_signal_self: 2642
+ 2925 		sigaction: <>
+ 2926 		sig_fatal: void (), <./freeradius/src/main/radiusd.c 501>
+ 2927 			getpid: <>
+ 2928 			radius_signal_self: 2642
+ 2929 		radius_stats_init: void (), <./freeradius/src/main/stats.c 624>
+ 2930 			gettimeofday: 64
+ 2931 		radius_event_process: int (), <./freeradius/src/main/event.c 3771>
+ 2932 			fr_event_loop: int (), <./freeradius/src/lib/event.c 316>
+ 2933 				FD_ZERO: <>
+ 2934 				FD_SET: <>
+ 2935 				fr_heap_num_elements: int (), <./freeradius/src/lib/heap.c 218>
+ 2936 				fr_heap_peek: 48
+ 2937 				gettimeofday: 64
+ 2938 				timercmp: <>
+ 2939 				select: <>
+ 2940 				fr_strerror_printf: 293
+ 2941 				strerror: <>
+ 2942 				fr_event_run: 84
+ 2943 				FD_ISSET: <>
+ 2944 		hup_mainconfig: void (), <./freeradius/src/main/mainconfig.c 1004>
+ 2945 			radlog: 184
+ 2946 			snprintf: <>
+ 2947 			cf_file_read: 179
+ 2948 			rad_malloc: 182
+ 2949 			memset: <>
+ 2950 			time: <>
+ 2951 			open: <>
+ 2952 			close: <>
+ 2953 			module_hup: int (), <./freeradius/src/main/modules.c 1324>
+ 2954 				time: <>
+ 2955 				cf_item_find_next: 1923
+ 2956 				cf_item_is_section: 1924
+ 2957 				cf_itemtosection: 214
+ 2958 				cf_section_name2: 1523
+ 2959 				cf_section_name1: 384
+ 2960 				strlcpy: <>
+ 2961 				rbtree_finddata: 249
+ 2962 				module_hup_module: int (), <./freeradius/src/main/modules.c 1279>
+ 2963 					cf_log_module: 1968
+ 2964 					cf_log_err: 405
+ 2965 					cf_sectiontoitem: 323
+ 2966 					radlog: 184
+ 2967 					module_instance_free_old: 1913
+ 2968 					rad_malloc: 182
+ 2969 			cf_section_sub_find: 324
+ 2970 			virtual_servers_load: 1987
+ 2971 			virtual_servers_free: void (), <./freeradius/src/main/modules.c 270>
+ 2972 				virtual_server_free: 2014
+ 2973 		kill: <>
+ 2974 		radius_event_free: void (), <./freeradius/src/main/event.c 3743>
+ 2975 			fr_packet_list_walk: int (), <./freeradius/src/lib/packet.c 827>
+ 2976 				rbtree_walk: 1046
+ 2977 			proxy_hash_cb: int (), <./freeradius/src/main/event.c 3733>
+ 2978 				fr_packet2myptr: <>
+ 2979 				ev_request_free: 2490
+ 2980 			fr_packet_list_free: 1080
+ 2981 			request_hash_cb: int (), <./freeradius/src/main/event.c 3718>
+ 2982 				fr_packet2myptr: <>
+ 2983 				rad_assert: <>
+ 2984 				ev_request_free: 2490
+ 2985 			fr_event_list_free: 47
+ 2986 		free_mainconfig: int (), <./freeradius/src/main/mainconfig.c 978>
+ 2987 			virtual_servers_free: 2971
+ 2988 			cf_section_free: 206
+ 2989 			free: <>
+ 2990 			realms_free: 1506
+ 2991 			listen_free: 2634
+ 2992 			dict_free: 563
+ 2993 		detach_modules: int (), <./freeradius/src/main/modules.c 426>
+ 2994 			rbtree_free: 222
+ 2995 			lt_dlexit: int (), <./freeradius/libltdl/ltdl.c 2301>
+ 2996 		xlat_free: void (), <./freeradius/src/main/xlat.c 820>
+ 2997 			rbtree_free: 222
+ 2998 		WSACleanup: <>
+ 2999 		usage: void NEVER_RETURNS (), <./freeradius/src/modules/rlm_ippool/rlm_ippool_tool.c 532>
+ 3000 			printf: <>
+ 3001 			exit: <>
+ 3002 		viewdb: void (), <./freeradius/src/modules/rlm_ippool/rlm_ippool_tool.c 407>
+ 3003 			gdbm_open: <>
+ 3004 			memset: <>
+ 3005 			gdbm_firstkey: <>
+ 3006 			gdbm_nextkey: <>
+ 3007 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3008 			gdbm_fetch: <>
+ 3009 			inet_ntoa: <>
+ 3010 			MATCH_IP: <>
+ 3011 			MATCH_ACTIVE: <>
+ 3012 			printf: <>
+ 3013 			fr_bin2hex: 945
+ 3014 			gdbm_store: <>
+ 3015 			gdbm_strerror: <>
+ 3016 			gdbm_close: <>
+ 3017 			gdbm_delete: <>
+ 3018 		addip: void (), <./freeradius/src/modules/rlm_ippool/rlm_ippool_tool.c 99>
+ 3019 			gdbm_open: <>
+ 3020 			inet_aton: 426
+ 3021 			printf: <>
+ 3022 			strtoul: <>
+ 3023 			strlcpy: <>
+ 3024 			snprintf: <>
+ 3025 			fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 3026 			fr_MD5Update: 1153
+ 3027 			strlen: <>
+ 3028 			fr_MD5Final: 1158
+ 3029 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3030 			fr_bin2hex: 945
+ 3031 			gdbm_fetch: <>
+ 3032 			free: <>
+ 3033 			gdbm_store: <>
+ 3034 			gdbm_strerror: <>
+ 3035 			gdbm_close: <>
+ 3036 			gdbm_delete: <>
+ 3037 			gdbm_firstkey: <>
+ 3038 			gdbm_nextkey: <>
+ 3039 		tonewformat: void (), <./freeradius/src/modules/rlm_ippool/rlm_ippool_tool.c 354>
+ 3040 			gdbm_open: <>
+ 3041 			memset: <>
+ 3042 			gdbm_firstkey: <>
+ 3043 			gdbm_nextkey: <>
+ 3044 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3045 			snprintf: <>
+ 3046 			fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 3047 			fr_MD5Update: 1153
+ 3048 			strlen: <>
+ 3049 			fr_MD5Final: 1158
+ 3050 			fr_bin2hex: 945
+ 3051 			printf: <>
+ 3052 			gdbm_fetch: <>
+ 3053 			gdbm_store: <>
+ 3054 			gdbm_strerror: <>
+ 3055 			gdbm_close: <>
+ 3056 		build_hash_table: struct hashtable (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 156>
+ 3057 		printpw: void (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 52>
+ 3058 			printf: <>
+ 3059 			fflush: <>
+ 3060 		get_pw_nam: struct mypasswd (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 294>
+ 3061 		get_next: struct mypasswd (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 248>
+ 3062 		release_ht: void (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 149>
+ 3063 			release_hash_table: void (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 131>
+ 3064 				destroy_password: void (), <./freeradius/src/modules/rlm_passwd/rlm_passwd.c 112>
+ 3065 					free: <>
+ 3066 				free: <>
+ 3067 				fclose: <>
+ 3068 			free: <>
+ 3069 		smbdes_lmpwdhash: void (), <./freeradius/src/modules/rlm_mschap/smbdes.c 319>
+ 3070 			memset: <>
+ 3071 			toupper: <>
+ 3072 			smbhash: 1284
+ 3073 		tohex: void (), <./freeradius/src/modules/rlm_mschap/smbencrypt.c 40>
+ 3074 		ntpwdhash: void (), <./freeradius/src/modules/rlm_mschap/smbencrypt.c 50>
+ 3075 			strlen: <>
+ 3076 			fr_md4_calc: <>
+ 3077 		timestr_match: int (), <./freeradius/src/modules/rlm_logintime/timestr.c 199>
+ 3078 			localtime_r: struct tm (), <./freeradius/src/lib/missing.c 149>
+ 3079 			memset: <>
+ 3080 			week_fill: int (), <./freeradius/src/modules/rlm_logintime/timestr.c 176>
+ 3081 				strlcpy: <>
+ 3082 				isupper: <>
+ 3083 				tolower: <>
+ 3084 				strtok: <>
+ 3085 				day_fill: int (), <./freeradius/src/modules/rlm_logintime/timestr.c 127>
+ 3086 					isdigit: <>
+ 3087 					timestr_debug: <>
+ 3088 					strcode: int (), <./freeradius/src/modules/rlm_logintime/timestr.c 48>
+ 3089 						timestr_debug: <>
+ 3090 						strlen: <>
+ 3091 						strncmp: <>
+ 3092 					hour_fill: int (), <./freeradius/src/modules/rlm_logintime/timestr.c 73>
+ 3093 						timestr_debug: <>
+ 3094 						strchr: <>
+ 3095 						strlen: <>
+ 3096 						isdigit: <>
+ 3097 						val: <>
+ 3098 						atoi: <>
+ 3099 			timestr_debug: <>
+ 3100 			memcmp: <>
+ 3101 		dbm_open: <>
+ 3102 		dbm_fetch: <>
+ 3103 		dump_record: void (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_cat.c 47>
+ 3104 			putchar: <>
+ 3105 		dbm_firstkey: <>
+ 3106 		dbm_nextkey: <>
+ 3107 		dbm_close: <>
+ 3108 		sm_usage: void (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_parser.c 289>
+ 3109 			fprintf: <>
+ 3110 		DOUT1: <>
+ 3111 		open_storage: int (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_parser.c 96>
+ 3112 			dbm_open: <>
+ 3113 			perror: <>
+ 3114 		sm_parse_file: int (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_parser.c 182>
+ 3115 			fgets: <>
+ 3116 			strchr: <>
+ 3117 			fprintf: <>
+ 3118 			DOUT2: <>
+ 3119 			isspace: <>
+ 3120 			storecontent: int (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_parser.c 145>
+ 3121 				DOUT2: <>
+ 3122 				strlen: <>
+ 3123 				dbm_store: <>
+ 3124 				perror: <>
+ 3125 			getuname: int (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_parser.c 173>
+ 3126 				isspace: <>
+ 3127 			DOUT1: <>
+ 3128 			userparse: 755
+ 3129 			addlinetocontent: int (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_parser.c 109>
+ 3130 				vp_prints: 922
+ 3131 				strcat: <>
+ 3132 			pairfree: 783
+ 3133 			fr_perror: 734
+ 3134 			feof: <>
+ 3135 		close_storage: void (), <./freeradius/src/modules/rlm_dbm/rlm_dbm_parser.c 105>
+ 3136 			dbm_close: <>
+ 3137 		eapsim_calculate_keys: <>
+ 3138 		eapsim_dump_mk: void (), <./freeradius/src/modules/rlm_eap/libeap/eapcrypto.c 106>
+ 3139 			printf: <>
+ 3140 		fips186_2prf: void (), <./freeradius/src/modules/rlm_eap/libeap/fips186prf.c 103>
+ 3141 			memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3142 			memset: <>
+ 3143 			fr_SHA1Init: void (), <./freeradius/src/lib/sha1.c 92>
+ 3144 			fr_SHA1Transform: <>
+ 3145 			fr_SHA1FinalNoLen: void (), <./freeradius/src/lib/sha1.c 157>
+ 3146 				memset: <>
+ 3147 				fr_SHA1Transform: <>
+ 3148 			onesixty_add_mod: void (), <./freeradius/src/modules/rlm_eap/libeap/fips186prf.c 80>
+ 3149 		usage: void NEVER_RETURNS (), <./freeradius/src/modules/rlm_eap/radeapclient.c 76>
+ 3150 			fprintf: <>
+ 3151 			exit: <>
+ 3152 		getport: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 136>
+ 3153 			getservbyname: <>
+ 3154 			ntohs: <>
+ 3155 		pairfree: 783
+ 3156 		readvp2: 753
+ 3157 		sendrecv_eap: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 840>
+ 3158 			pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3159 			strlcpy: <>
+ 3160 			map_eap_types: void (), <./freeradius/src/modules/rlm_eap/radeapclient.c 1215>
+ 3161 				pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3162 				getpid: <>
+ 3163 				pairdelete: 2452
+ 3164 				memset: <>
+ 3165 				malloc: <>
+ 3166 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3167 				eap_basic_compose: int (), <./freeradius/src/modules/rlm_eap/libeap/eapcommon.c 250>
+ 3168 					eap_wireformat: int (), <./freeradius/src/modules/rlm_eap/libeap/eapcommon.c 187>
+ 3169 						malloc: <>
+ 3170 						radlog: 184
+ 3171 						htons: <>
+ 3172 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3173 						free: <>
+ 3174 					pairdelete: 2452
+ 3175 					eap_packet2vp: VALUE_PAIR * (), <./freeradius/src/modules/rlm_eap/libeap/eapcommon.c 309>
+ 3176 						paircreate: 774
+ 3177 						pairfree: 783
+ 3178 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3179 					pairadd: 892
+ 3180 					pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3181 					paircreate: 774
+ 3182 					memset: <>
+ 3183 					radlog: 184
+ 3184 			memmove: lt_ptr (), <./freeradius/libltdl/ltdl.c 409>
+ 3185 			free: <>
+ 3186 			fr_md5_calc: <>
+ 3187 			strlen: <>
+ 3188 			rad_chap_encode: 1270
+ 3189 			send_packet: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 200>
+ 3190 				debug_packet: void (), <./freeradius/src/modules/rlm_eap/radeapclient.c 150>
+ 3191 					printf: <>
+ 3192 					inet_ntop: 177
+ 3193 					vp_prints: 922
+ 3194 					fflush: <>
+ 3195 				rad_send: 1297
+ 3196 				FD_ZERO: <>
+ 3197 				FD_SET: <>
+ 3198 				select: <>
+ 3199 				rad_recv: 1109
+ 3200 				memcmp: <>
+ 3201 				ip_ntoh: 442
+ 3202 				fprintf: <>
+ 3203 				exit: <>
+ 3204 				fr_perror: 734
+ 3205 				rad_verify: 1142
+ 3206 				rad_decode: 1189
+ 3207 			unmap_eap_types: void (), <./freeradius/src/modules/rlm_eap/radeapclient.c 1288>
+ 3208 				eap_vp2packet: eap_packet_t * (), <./freeradius/src/modules/rlm_eap/libeap/eapcommon.c 351>
+ 3209 					pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3210 					DEBUG: <>
+ 3211 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3212 					ntohs: <>
+ 3213 					malloc: <>
+ 3214 					radlog: 184
+ 3215 				paircreate: 774
+ 3216 				pairadd: 892
+ 3217 				free: <>
+ 3218 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3219 			debug_packet: 3190
+ 3220 			respond_eap_md5: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 767>
+ 3221 				cleanresp: void (), <./freeradius/src/modules/rlm_eap/radeapclient.c 289>
+ 3222 					pairdelete: 2452
+ 3223 					pairbasicfree: 784
+ 3224 				paircopy2: 2403
+ 3225 				fprintf: <>
+ 3226 				pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3227 				fr_MD5Init: void (), <./freeradius/src/lib/md5.c 89>
+ 3228 				fr_MD5Update: 1153
+ 3229 				strlen: <>
+ 3230 				fr_MD5Final: 1158
+ 3231 				paircreate: 774
+ 3232 				memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3233 				pairreplace: void (), <./freeradius/src/lib/valuepair.c 272>
+ 3234 					pairbasicfree: 784
+ 3235 			respond_eap_sim: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 663>
+ 3236 				paircopy2: 2403
+ 3237 				pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3238 				paircreate: 774
+ 3239 				pairreplace: 3233
+ 3240 				unmap_eapsim_types: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 1371>
+ 3241 					pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3242 					radlog: 184
+ 3243 					unmap_eapsim_basictypes: int (), <./freeradius/src/modules/rlm_eap/libeap/eapsimlib.c 317>
+ 3244 				process_eap_start: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 324>
+ 3245 					cleanresp: 3221
+ 3246 					pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3247 					fprintf: <>
+ 3248 					ntohs: <>
+ 3249 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3250 					paircreate: 774
+ 3251 					pairreplace: 3233
+ 3252 					htons: <>
+ 3253 					fr_rand: 627
+ 3254 					strlen: <>
+ 3255 				fprintf: <>
+ 3256 				sim_state2name: const char * (), <./freeradius/src/modules/rlm_eap/libeap/eapsimlib.c 485>
+ 3257 					snprintf: <>
+ 3258 				sim_subtype2name: const char * (), <./freeradius/src/modules/rlm_eap/libeap/eapsimlib.c 511>
+ 3259 					snprintf: <>
+ 3260 				process_eap_challenge: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 490>
+ 3261 					pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3262 					fprintf: <>
+ 3263 					memcmp: <>
+ 3264 					printf: <>
+ 3265 					memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3266 					eapsim_calculate_keys: <>
+ 3267 					eapsim_dump_mk: 3138
+ 3268 					eapsim_checkmac: int (), <./freeradius/src/modules/rlm_eap/libeap/eapsimlib.c 390>
+ 3269 						pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3270 						eap_vp2packet: 3208
+ 3271 						malloc: <>
+ 3272 						free: <>
+ 3273 						memcpy: lt_ptr (), <./freeradius/libltdl/ltdl.c 383>
+ 3274 						memset: <>
+ 3275 						fr_hmac_sha1: 109
+ 3276 						memcmp: <>
+ 3277 					cleanresp: 3221
+ 3278 					paircreate: 774
+ 3279 					pairreplace: 3233
+ 3280 				map_eapsim_types: int (), <./freeradius/src/modules/rlm_eap/radeapclient.c 1356>
+ 3281 					memset: <>
+ 3282 					map_eapsim_basictypes: <>
+ 3283 					eap_basic_compose: 3167
+ 3284 		map_eapsim_types: 3280
+ 3285 		map_eap_types: 3160
+ 3286 		paircopy2: 2403
+ 3287 		pairadd: 892
+ 3288 		unmap_eap_types: 3207
+ 3289 		unmap_eapsim_types: 3240
+ 3290 		pairfind: if (), <./freeradius/src/modules/rlm_chap/rlm_chap.c 41>
+ 3291 		eapsim_checkmac: 3268

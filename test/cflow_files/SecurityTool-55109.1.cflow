@@ -1,0 +1,45 @@
+    1 	main: int (), <./security.c 855>
+    2 		strrchr: <>
+    3 		getopt: <>
+    4 		SecKeychainSystemKeychainCheckWouldDeadlock: <>
+    5 		usage: int (), <./security.c 750>
+    6 			printf: <>
+    7 			help: int (), <./security.c 601>
+    8 				match_command: int (), <./security.c 594>
+    9 					strncmp: <>
+   10 					strlen: <>
+   11 				printf: <>
+   12 				sec_error: void (), <./security.c 835>
+   13 					fprintf: <>
+   14 					va_start: <>
+   15 					vfprintf: <>
+   16 					va_end: <>
+   17 		help: 7
+   18 		receive_notifications: void (), <./security.c 816>
+   19 			CFRunLoopRunInMode: <>
+   20 		execute_command: int (), <./security.c 766>
+   21 			match_command: 8
+   22 			fprintf: <>
+   23 			sec_error: 12
+   24 		isatty: <>
+   25 		fprintf: <>
+   26 		readline: char * (), <./readline.c 41>
+   27 			malloc: <>
+   28 			realloc: <>
+   29 			getchar: <>
+   30 			free: <>
+   31 		split_line: void (), <./security.c 651>
+   32 			isspace: <>
+   33 		leaks: int (), <./leaks.c 37>
+   34 			getpid: <>
+   35 			fork: <>
+   36 			sec_error: 12
+   37 			strerror: <>
+   38 			malloc: <>
+   39 			sprintf: <>
+   40 			execv: <>
+   41 			waitpid: <>
+   42 			WIFEXITED: <>
+   43 			WEXITSTATUS: <>
+   44 			WIFSIGNALED: <>
+   45 			WTERMSIG: <>

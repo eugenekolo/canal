@@ -1,0 +1,1051 @@
+    1 	main: int (), <./xarsig/xar-sig.c 1077>
+    2 		usage: void (), <./xar/src/xar.c 694>
+    3 			fprintf: <>
+    4 		exit: <>
+    5 		getopt_long: <>
+    6 		strcmp: <>
+    7 		fprintf: <>
+    8 		print_version: void (), <./xar/src/xar.c 751>
+    9 			printf: <>
+   10 		asprintf: <>
+   11 		malloc: <>
+   12 		regcomp: <>
+   13 		regerror: <>
+   14 		printf: <>
+   15 		strtol: <>
+   16 		strdup: <>
+   17 		dump_header: int (), <./xar/src/xar.c 603>
+   18 			open: <>
+   19 			perror: <>
+   20 			exit: <>
+   21 			read: <>
+   22 			fprintf: <>
+   23 			printf: <>
+   24 			ntohl: <>
+   25 			ntohs: <>
+   26 			xar_ntoh64: uint64_t (), <./xar/lib/util.c 56>
+   27 				ntohl: <>
+   28 		list_subdocs: int (), <./xar/src/xar.c 484>
+   29 			xar_open: xar_t (), <./xar/lib/archive.c 193>
+   30 				xar_new: xar_t (), <./xar/lib/archive.c 101>
+   31 					malloc: <>
+   32 					memset: <>
+   33 					XAR: <>
+   34 					free: <>
+   35 					xmlHashCreate: <>
+   36 				XAR: <>
+   37 				strdup: <>
+   38 				OpenSSL_add_all_digests: <>
+   39 				dirname: <>
+   40 				asprintf: <>
+   41 				free: <>
+   42 				strcmp: <>
+   43 				open: <>
+   44 				mkstemp: <>
+   45 				close: <>
+   46 				unlink: <>
+   47 				deflateInit: <>
+   48 				xar_close: int (), <./xar/lib/archive.c 425>
+   49 					XAR: <>
+   50 					xar_opt_get: const char * (), <./xar/lib/archive.c 784>
+   51 						XAR: <>
+   52 						XAR_ATTR: <>
+   53 						strcmp: <>
+   54 					strcmp: <>
+   55 					xar_prop_set: int32_t (), <./xar/lib/filetree.c 561>
+   56 						xar_prop_set_r: xar_prop_t (), <./xar/lib/filetree.c 484>
+   57 							strdup: <>
+   58 							strsep: <>
+   59 							XAR_FILE: <>
+   60 							XAR_PROP: <>
+   61 							strcmp: <>
+   62 							xar_prop_setvalue: int32_t (), <./xar/lib/filetree.c 299>
+   63 								free: <>
+   64 								XAR_PROP: <>
+   65 								strdup: <>
+   66 							free: <>
+   67 							xar_prop_new: xar_prop_t (), <./xar/lib/filetree.c 410>
+   68 								malloc: <>
+   69 								XAR_PROP: <>
+   70 								XAR_FILE: <>
+   71 							xar_prop_setkey: int32_t (), <./xar/lib/filetree.c 293>
+   72 								free: <>
+   73 								XAR_PROP: <>
+   74 								strdup: <>
+   75 							xar_prop_set_r: 56
+   76 					XAR_FILE: <>
+   77 					digestRef_from_name: CCDigestRef (), <./xar/lib/hash.c 63>
+   78 						strcasecmp: <>
+   79 						CCDigestCreate: <>
+   80 					EVP_get_digestbyname: <>
+   81 					EVP_DigestInit: <>
+   82 					htonl: <>
+   83 					xar_attr_set: int32_t (), <./xar/lib/filetree.c 151>
+   84 						xar_attr_pset: int32_t (), <./xar/lib/filetree.c 101>
+   85 							XAR_FILE: <>
+   86 							XAR_PROP: <>
+   87 							xar_attr_new: xar_attr_t (), <./xar/lib/filetree.c 88>
+   88 								malloc: <>
+   89 								XAR_ATTR: <>
+   90 							XAR_ATTR: <>
+   91 							strdup: <>
+   92 							strcmp: <>
+   93 							free: <>
+   94 						xar_prop_find: xar_prop_t (), <./xar/lib/filetree.c 452>
+   95 							strdup: <>
+   96 							strsep: <>
+   97 							strcmp: <>
+   98 							XAR_PROP: <>
+   99 							free: <>
+  100 							xar_prop_find: 94
+  101 						XAR_FILE: <>
+  102 					time: <>
+  103 					gmtime_r: <>
+  104 					memset: <>
+  105 					strftime: <>
+  106 					asprintf: <>
+  107 					dirname: <>
+  108 					mkstemp: <>
+  109 					xar_serialize: void (), <./xar/lib/archive.c 1517>
+  110 						xmlNewTextWriterFilename: <>
+  111 						xmlTextWriterStartDocument: <>
+  112 						xmlTextWriterSetIndent: <>
+  113 						xmlTextWriterStartElement: <>
+  114 						BAD_CAST: <>
+  115 						XAR: <>
+  116 						xar_subdoc_next: xar_subdoc_t (), <./xar/lib/subdoc.c 85>
+  117 							XAR_SUBDOC: <>
+  118 						xar_subdoc_serialize: void (), <./xar/lib/subdoc.c 159>
+  119 							xmlTextWriterStartElementNS: <>
+  120 							BAD_CAST: <>
+  121 							XAR_SUBDOC: <>
+  122 							xmlTextWriterWriteAttribute: <>
+  123 							xmlTextWriterWriteString: <>
+  124 							xar_prop_serialize: void (), <./xar/lib/filetree.c 920>
+  125 								XAR_PROP: <>
+  126 								xmlTextWriterStartElementNS: <>
+  127 								BAD_CAST: <>
+  128 								xmlTextWriterStartElement: <>
+  129 								XAR_ATTR: <>
+  130 								xmlTextWriterWriteAttributeNS: <>
+  131 								strcmp: <>
+  132 								strlen: <>
+  133 								malloc: <>
+  134 								assert: <>
+  135 								UTF8Toisolat1: <>
+  136 								xmlTextWriterWriteAttribute: <>
+  137 								xmlTextWriterWriteBase64: <>
+  138 								xmlTextWriterWriteString: <>
+  139 								free: <>
+  140 								xar_prop_serialize: 124
+  141 								xmlTextWriterEndElement: <>
+  142 							xmlTextWriterEndElement: <>
+  143 						xar_prop_serialize: 124
+  144 						xar_signature_serialize: int32_t (), <./xar/lib/signature.c 444>
+  145 							XAR_SIGNATURE: <>
+  146 							xmlTextWriterStartElementNS: <>
+  147 							BAD_CAST: <>
+  148 							xmlTextWriterWriteAttribute: <>
+  149 							xmlTextWriterWriteFormatString: <>
+  150 							xmlTextWriterEndElement: <>
+  151 							xmlTextWriterWriteBase64: <>
+  152 							xar_signature_serialize: 144
+  153 						xar_file_serialize: void (), <./xar/lib/filetree.c 970>
+  154 							xmlTextWriterStartElement: <>
+  155 							BAD_CAST: <>
+  156 							XAR_FILE: <>
+  157 							XAR_ATTR: <>
+  158 							xmlTextWriterWriteAttribute: <>
+  159 							xar_prop_serialize: 124
+  160 							xar_file_serialize: 153
+  161 							xmlTextWriterEndElement: <>
+  162 						xmlTextWriterEndDocument: <>
+  163 						xmlFreeTextWriter: <>
+  164 					unlink: <>
+  165 					free: <>
+  166 					strtol: <>
+  167 					malloc: <>
+  168 					close: <>
+  169 					deflateInit: <>
+  170 					read: <>
+  171 					realloc: <>
+  172 					deflate: <>
+  173 					write: <>
+  174 					xar_err_new: void (), <./xar/lib/err.c 80>
+  175 						memset: <>
+  176 						XAR: <>
+  177 					xar_err_set_string: void (), <./xar/lib/err.c 66>
+  178 						XAR: <>
+  179 					CCDigestUpdate: <>
+  180 					EVP_DigestUpdate: <>
+  181 					deflateEnd: <>
+  182 					ntohs: <>
+  183 					xar_ntoh64: 26
+  184 					lseek: <>
+  185 					CCDigestFinal: <>
+  186 					CCDigestDestroy: <>
+  187 					EVP_DigestFinal: <>
+  188 					XAR_SIGNATURE: <>
+  189 					fprintf: <>
+  190 					xar_signature_remove: void (), <./xar/lib/signature.c 524>
+  191 						XAR_SIGNATURE: <>
+  192 						free: <>
+  193 						xar_signature_remove: 190
+  194 					strerror: <>
+  195 					exit: <>
+  196 					inflateEnd: <>
+  197 					xar_subdoc_remove: void (), <./xar/lib/subdoc.c 171>
+  198 						xar_subdoc_first: xar_subdoc_t (), <./xar/lib/subdoc.c 81>
+  199 							XAR: <>
+  200 						XAR_SUBDOC: <>
+  201 						XAR: <>
+  202 						xar_subdoc_next: 116
+  203 						XAR_PROP: <>
+  204 						xar_prop_free: void (), <./xar/lib/filetree.c 671>
+  205 							XAR_PROP: <>
+  206 							xar_prop_free: 204
+  207 							XAR_ATTR: <>
+  208 							xar_attr_free: void (), <./xar/lib/filetree.c 207>
+  209 								free: <>
+  210 								XAR_ATTR: <>
+  211 							free: <>
+  212 						free: <>
+  213 					XAR_ATTR: <>
+  214 					xar_attr_free: 208
+  215 					XAR_PROP: <>
+  216 					xar_prop_free: 204
+  217 					xar_file_free: void (), <./xar/lib/filetree.c 784>
+  218 						XAR_FILE: <>
+  219 						xar_file_free: 217
+  220 						XAR_PROP: <>
+  221 						xar_prop_free: 204
+  222 						XAR_ATTR: <>
+  223 						xar_attr_free: 208
+  224 						free: <>
+  225 					xmlHashFree: <>
+  226 				xar_opt_set: int32_t (), <./xar/lib/archive.c 801>
+  227 					strcmp: <>
+  228 					XAR: <>
+  229 					xar_attr_new: 87
+  230 					XAR_ATTR: <>
+  231 					strdup: <>
+  232 				inflateInit: <>
+  233 				xar_parse_header: int32_t (), <./xar/lib/archive.c 130>
+  234 					xar_read_fd: ssize_t (), <./xar/lib/util.c 118>
+  235 						read: <>
+  236 					XAR: <>
+  237 					ntohl: <>
+  238 					ntohs: <>
+  239 					xar_ntoh64: 26
+  240 					lseek: <>
+  241 				digestRef_from_name: 77
+  242 				EVP_get_digestbyname: <>
+  243 				EVP_DigestInit: <>
+  244 				fprintf: <>
+  245 				xar_unserialize: int32_t (), <./xar/lib/archive.c 1551>
+  246 					xmlReaderForIO: <>
+  247 					toc_read_callback: int (), <./xar/lib/archive.c 1463>
+  248 						XAR: <>
+  249 						xar_read_fd: 234
+  250 						read: <>
+  251 						CCDigestUpdate: <>
+  252 						EVP_DigestUpdate: <>
+  253 						inflate: <>
+  254 					close_callback: int (), <./xar/lib/archive.c 1508>
+  255 					XAR: <>
+  256 					xmlTextReaderRead: <>
+  257 					xmlTextReaderNodeType: <>
+  258 					xmlTextReaderAttributeCount: <>
+  259 					xmlTextReaderConstLocalName: <>
+  260 					strcmp: <>
+  261 					xar_file_unserialize: xar_file_t (), <./xar/lib/filetree.c 1080>
+  262 						xar_file_new: xar_file_t (), <./xar/lib/filetree.c 731>
+  263 							calloc: <>
+  264 							XAR_FILE: <>
+  265 						xmlTextReaderAttributeCount: <>
+  266 						xmlTextReaderMoveToFirstAttribute: <>
+  267 						xmlTextReaderMoveToNextAttribute: <>
+  268 						xmlTextReaderConstLocalName: <>
+  269 						xmlTextReaderConstValue: <>
+  270 						xar_attr_new: 87
+  271 						XAR_ATTR: <>
+  272 						strdup: <>
+  273 						XAR_FILE: <>
+  274 						xmlTextReaderRead: <>
+  275 						xmlTextReaderNodeType: <>
+  276 						strcmp: <>
+  277 						xar_prop_get: int32_t (), <./xar/lib/filetree.c 597>
+  278 							xar_prop_find: 94
+  279 							XAR_FILE: <>
+  280 							XAR_PROP: <>
+  281 						xar_attr_get: const char * (), <./xar/lib/filetree.c 189>
+  282 							xar_attr_pget: const char * (), <./xar/lib/filetree.c 162>
+  283 								XAR_FILE: <>
+  284 								XAR_PROP: <>
+  285 								XAR_ATTR: <>
+  286 								strcmp: <>
+  287 							xar_prop_find: 94
+  288 							XAR_FILE: <>
+  289 						xmlHashAddEntry: <>
+  290 						XAR: <>
+  291 						BAD_CAST: <>
+  292 						xar_file_unserialize: 261
+  293 						xar_prop_unserialize: int32_t (), <./xar/lib/filetree.c 994>
+  294 							xar_prop_new: 67
+  295 							xmlTextReaderIsEmptyElement: <>
+  296 							xmlTextReaderAttributeCount: <>
+  297 							xmlTextReaderConstLocalName: <>
+  298 							XAR_PROP: <>
+  299 							strdup: <>
+  300 							xmlTextReaderConstPrefix: <>
+  301 							strcmp: <>
+  302 							xmlTextReaderMoveToFirstAttribute: <>
+  303 							xmlTextReaderMoveToNextAttribute: <>
+  304 							xmlTextReaderConstValue: <>
+  305 							xar_attr_new: 87
+  306 							XAR_ATTR: <>
+  307 							xmlTextReaderRead: <>
+  308 							xmlTextReaderNodeType: <>
+  309 							xar_prop_unserialize: 293
+  310 							free: <>
+  311 							xar_from_base64: unsigned char * (), <./xar/lib/b64.c 187>
+  312 								malloc: <>
+  313 								raw_base64_decode: unsigned int (), <./xar/lib/b64.c 89>
+  314 								free: <>
+  315 							BAD_CAST: <>
+  316 							strlen: <>
+  317 							XAR_FILE: <>
+  318 							asprintf: <>
+  319 					XAR_FILE: <>
+  320 					xar_signature_unserialize: xar_signature_t (), <./xar/lib/signature.c 298>
+  321 						malloc: <>
+  322 						memset: <>
+  323 						xmlTextReaderConstLocalName: <>
+  324 						strcmp: <>
+  325 						xmlTextReaderGetAttribute: <>
+  326 						strdup: <>
+  327 						xmlTextReaderRead: <>
+  328 						xmlTextReaderNodeType: <>
+  329 						xmlFree: <>
+  330 						xmlTextReaderConstValue: <>
+  331 						strtoull: <>
+  332 						xar_from_base64: 311
+  333 						strlen: <>
+  334 						xar_signature_add_x509certificate: int32_t (), <./xar/lib/signature.c 131>
+  335 							malloc: <>
+  336 							memset: <>
+  337 							memcpy: <>
+  338 							XAR_SIGNATURE: <>
+  339 						free: <>
+  340 					xmlFreeTextReader: <>
+  341 					xmlDictCleanup: <>
+  342 					xmlCleanupCharEncodingHandlers: <>
+  343 					XAR_SIGNATURE: <>
+  344 					xar_prop_unserialize: 293
+  345 					xmlTextReaderPrefix: <>
+  346 					xmlTextReaderNamespaceUri: <>
+  347 					xmlTextReaderMoveToFirstAttribute: <>
+  348 					xmlTextReaderMoveToNextAttribute: <>
+  349 					xmlTextReaderConstValue: <>
+  350 					xar_attr_new: 87
+  351 					XAR_ATTR: <>
+  352 					strdup: <>
+  353 					XAR_SUBDOC: <>
+  354 					xar_subdoc_new: xar_subdoc_t (), <./xar/lib/subdoc.c 46>
+  355 						xar_subdoc_find: xar_subdoc_t (), <./xar/lib/subdoc.c 93>
+  356 							XAR: <>
+  357 							XAR_SUBDOC: <>
+  358 							strcmp: <>
+  359 						malloc: <>
+  360 						memset: <>
+  361 						XAR_SUBDOC: <>
+  362 						strdup: <>
+  363 						XAR: <>
+  364 					xar_subdoc_unserialize: void (), <./xar/lib/subdoc.c 198>
+  365 						xmlTextReaderRead: <>
+  366 						xmlTextReaderNodeType: <>
+  367 						xar_prop_unserialize: 293
+  368 						xmlTextReaderConstValue: <>
+  369 						free: <>
+  370 						XAR_SUBDOC: <>
+  371 						strdup: <>
+  372 				xar_attr_get: 281
+  373 				XAR_FILE: <>
+  374 				xar_signature_first: xar_signature_t (), <./xar/lib/signature.c 204>
+  375 					XAR: <>
+  376 				CCDigestFinal: <>
+  377 				CCDigestDestroy: <>
+  378 				EVP_DigestFinal: <>
+  379 				xar_prop_get: 277
+  380 				strtoull: <>
+  381 				xar_get_heap_offset: off_t (), <./xar/lib/util.c 109>
+  382 					XAR: <>
+  383 				lseek: <>
+  384 				xar_read_fd: 234
+  385 				memcmp: <>
+  386 			fprintf: <>
+  387 			exit: <>
+  388 			xar_subdoc_first: 198
+  389 			xar_subdoc_next: 116
+  390 			printf: <>
+  391 			xar_subdoc_name: const char * (), <./xar/lib/subdoc.c 89>
+  392 				XAR_SUBDOC: <>
+  393 			xar_close: 48
+  394 		memset: <>
+  395 		archive: int (), <./xar/src/xar.c 173>
+  396 			xar_open: 29
+  397 			fprintf: <>
+  398 			exit: <>
+  399 			xar_opt_set: 226
+  400 			xar_register_errhandler: void (), <./xar/lib/err.c 42>
+  401 				ECTX: <>
+  402 				XAR: <>
+  403 				ercallback: <>
+  404 			err_callback: int32_t (), <./xar/src/xar.c 646>
+  405 				xar_err_get_archive: xar_t (), <./xar/lib/err.c 49>
+  406 					ECTX: <>
+  407 				xar_err_get_file: xar_file_t (), <./xar/lib/err.c 53>
+  408 					ECTX: <>
+  409 				xar_err_get_string: const char * (), <./xar/lib/err.c 62>
+  410 					ECTX: <>
+  411 				xar_err_get_errno: int (), <./xar/lib/err.c 71>
+  412 					ECTX: <>
+  413 				printf: <>
+  414 				print_file: void (), <./xar/src/xar.c 92>
+  415 					xar_get_size: char * (), <./xar/lib/util.c 249>
+  416 						xar_prop_get: 277
+  417 						strcmp: <>
+  418 						link: <>
+  419 						xar_attr_get: 281
+  420 						xar_iter_new: xar_iter_t (), <./xar/lib/filetree.c 266>
+  421 							malloc: <>
+  422 							XAR_ITER: <>
+  423 						xar_file_first: xar_file_t (), <./xar/lib/filetree.c 817>
+  424 							XAR_ITER: <>
+  425 							XAR: <>
+  426 							free: <>
+  427 						xar_file_next: xar_file_t (), <./xar/lib/filetree.c 833>
+  428 							XAR_ITER: <>
+  429 							XAR_FILE: <>
+  430 							xar_prop_get: 277
+  431 							asprintf: <>
+  432 							free: <>
+  433 							strdup: <>
+  434 							strstr: <>
+  435 							dirname: <>
+  436 							xar_file_next: 427
+  437 						xar_iter_free: void (), <./xar/lib/filetree.c 280>
+  438 							free: <>
+  439 							XAR_ITER: <>
+  440 						strdup: <>
+  441 					xar_get_path: char * (), <./xar/lib/util.c 91>
+  442 						xar_prop_get: 277
+  443 						strdup: <>
+  444 						XAR_FILE: <>
+  445 						asprintf: <>
+  446 						free: <>
+  447 					xar_get_type: char * (), <./xar/lib/util.c 241>
+  448 						xar_prop_get: 277
+  449 						strdup: <>
+  450 					xar_get_mode: char * (), <./xar/lib/util.c 285>
+  451 						xar_prop_get: 277
+  452 						strdup: <>
+  453 						strtoll: <>
+  454 						strcmp: <>
+  455 						calloc: <>
+  456 						strmode: <>
+  457 					xar_get_owner: char * (), <./xar/lib/util.c 329>
+  458 						xar_prop_get: 277
+  459 						strdup: <>
+  460 					xar_get_group: char * (), <./xar/lib/util.c 338>
+  461 						xar_prop_get: 277
+  462 						strdup: <>
+  463 					xar_get_mtime: char * (), <./xar/lib/util.c 347>
+  464 						xar_prop_get: 277
+  465 						strptime: <>
+  466 						calloc: <>
+  467 						strftime: <>
+  468 					printf: <>
+  469 					free: <>
+  470 					xar_path_issane: int (), <./xar/lib/util.c 204>
+  471 						strlen: <>
+  472 						xar_path_nextcomponent: char * (), <./xar/lib/util.c 175>
+  473 							malloc: <>
+  474 							strncpy: <>
+  475 						strcmp: <>
+  476 						free: <>
+  477 				xar_get_path: 441
+  478 				free: <>
+  479 				strerror: <>
+  480 				exit: <>
+  481 			add_subdoc: void (), <./xar/src/xar.c 121>
+  482 				open: <>
+  483 				fprintf: <>
+  484 				xar_subdoc_new: 354
+  485 				fstat: <>
+  486 				malloc: <>
+  487 				close: <>
+  488 				memset: <>
+  489 				read: <>
+  490 				xar_subdoc_copyin: int32_t (), <./xar/lib/subdoc.c 139>
+  491 					xmlReaderForMemory: <>
+  492 					xar_subdoc_unserialize: 364
+  493 					xmlFreeTextReader: <>
+  494 			strdup: <>
+  495 			xar_opt_get: 50
+  496 			fts_open: <>
+  497 			fts_read: <>
+  498 			strcmp: <>
+  499 			regexec: <>
+  500 			printf: <>
+  501 			xar_add: xar_file_t (), <./xar/lib/archive.c 1145>
+  502 				xar_underbar_check: xar_file_t (), <./xar/lib/darwinattr.c 413>
+  503 					strdup: <>
+  504 					basename: <>
+  505 					dirname: <>
+  506 					asprintf: <>
+  507 					free: <>
+  508 					stat: <>
+  509 					xar_file_find: xar_file_t (), <./xar/lib/filetree.c 886>
+  510 						strdup: <>
+  511 						strsep: <>
+  512 						xar_prop_get: 277
+  513 						strcmp: <>
+  514 						free: <>
+  515 						xar_file_find: 509
+  516 						XAR_FILE: <>
+  517 					XAR: <>
+  518 					xar_add: 501
+  519 				XAR: <>
+  520 				xar_add_r: xar_file_t (), <./xar/lib/archive.c 1045>
+  521 					strdup: <>
+  522 					strsep: <>
+  523 					xar_add_r: 520
+  524 					free: <>
+  525 					strcmp: <>
+  526 					XAR: <>
+  527 					xar_err_new: 174
+  528 					xar_err_set_string: 177
+  529 					xar_err_callback: int32_t (), <./xar/lib/err.c 86>
+  530 						XAR: <>
+  531 						ercallback: <>
+  532 						ECTX: <>
+  533 					asprintf: <>
+  534 					XAR_FILE: <>
+  535 					xar_prop_get: 277
+  536 					xar_add_pseudodir: xar_file_t (), <./xar/lib/archive.c 970>
+  537 						asprintf: <>
+  538 						XAR: <>
+  539 						lstat: <>
+  540 						free: <>
+  541 						xar_file_new: 262
+  542 						memset: <>
+  543 						snprintf: <>
+  544 						xar_attr_set: 83
+  545 						XAR_FILE: <>
+  546 						strcmp: <>
+  547 						strlen: <>
+  548 						xar_prop_set: 55
+  549 					xar_add_node: xar_file_t (), <./xar/lib/archive.c 880>
+  550 						asprintf: <>
+  551 						XAR: <>
+  552 						lstat: <>
+  553 						free: <>
+  554 						xar_file_new: 262
+  555 						memset: <>
+  556 						snprintf: <>
+  557 						xar_attr_set: 83
+  558 						XAR_FILE: <>
+  559 						strcmp: <>
+  560 						strlen: <>
+  561 						xar_prop_set: 55
+  562 						xar_arcmod_archive: int32_t (), <./xar/lib/arcmod.c 68>
+  563 							archive: int (), <./xarsig/xar-sig.c 634>
+  564 								xar_open: 29
+  565 								fprintf: <>
+  566 								exit: <>
+  567 								xar_signature_new: xar_signature_t (), <./xar/lib/signature.c 107>
+  568 									xar_signature_new_internal: , <./xar/lib/signature.c 54>
+  569 										XAR: <>
+  570 										xar_err_new: 174
+  571 										xar_err_set_string: 177
+  572 										xar_err_callback: 529
+  573 										malloc: <>
+  574 										memset: <>
+  575 										XAR_SIGNATURE: <>
+  576 										strdup: <>
+  577 								signingCallback: int32_t (), <./xarsig/xar-sig.c 537>
+  578 									fopen: <>
+  579 									fprintf: <>
+  580 									exit: <>
+  581 									fwrite: <>
+  582 									fclose: <>
+  583 									malloc: <>
+  584 									memset: <>
+  585 									strncpy: <>
+  586 								insert_cert: void (), <./xarsig/xar-sig.c 562>
+  587 									malloc: <>
+  588 									stat: <>
+  589 									fprintf: <>
+  590 									exit: <>
+  591 									fopen: <>
+  592 									fread: <>
+  593 									fclose: <>
+  594 									xar_signature_add_x509certificate: 334
+  595 									free: <>
+  596 								xar_opt_set: 226
+  597 								xar_register_errhandler: 400
+  598 								err_callback: int32_t (), <./xar/test/buffer.c 8>
+  599 									printf: <>
+  600 								add_subdoc: void (), <./xarsig/xar-sig.c 116>
+  601 									xar_subdoc_new: 354
+  602 									open: <>
+  603 									fstat: <>
+  604 									malloc: <>
+  605 									close: <>
+  606 									memset: <>
+  607 									read: <>
+  608 									xar_subdoc_copyin: 490
+  609 								strdup: <>
+  610 								xar_opt_get: 50
+  611 								fts_open: <>
+  612 								fts_read: <>
+  613 								strcmp: <>
+  614 								regexec: <>
+  615 								printf: <>
+  616 								xar_add: 501
+  617 								print_file: void (), <./xarsig/xar-sig.c 108>
+  618 									xar_get_path: 441
+  619 									printf: <>
+  620 									free: <>
+  621 								fts_close: <>
+  622 								xar_close: 48
+  623 								free: <>
+  624 								regfree: <>
+  625 								extract_sig_offset: int (), <./xarsig/xar-sig.c 309>
+  626 									get_sig_offset: off_t (), <./xarsig/xar-sig.c 300>
+  627 										xar_signature_first: 374
+  628 										xar_signature_copy_signed_data: uint8_t (), <./xar/lib/signature.c 242>
+  629 											XAR_SIGNATURE: <>
+  630 											xar_prop_get: 277
+  631 											XAR_FILE: <>
+  632 											strtoull: <>
+  633 											malloc: <>
+  634 										xar_get_heap_offset: 381
+  635 									fopen: <>
+  636 									fprintf: <>
+  637 									fclose: <>
+  638 						xar_file_free: 217
+  639 			print_file: 414
+  640 			fts_close: <>
+  641 			xar_close: 48
+  642 			free: <>
+  643 			regfree: <>
+  644 		dumptoc: int (), <./xar/src/xar.c 590>
+  645 			xar_open: 29
+  646 			fprintf: <>
+  647 			exit: <>
+  648 			xar_serialize: 109
+  649 			xar_close: 48
+  650 		extract: int (), <./xar/src/xar.c 302>
+  651 			malloc: <>
+  652 			strdup: <>
+  653 			regcomp: <>
+  654 			regerror: <>
+  655 			printf: <>
+  656 			exit: <>
+  657 			asprintf: <>
+  658 			xar_open: 29
+  659 			fprintf: <>
+  660 			chdir: <>
+  661 			xar_register_errhandler: 400
+  662 			err_callback: 404
+  663 			xar_opt_set: 226
+  664 			xar_iter_new: 420
+  665 			xar_file_first: 423
+  666 			xar_file_next: 427
+  667 			xar_get_path: 441
+  668 			regexec: <>
+  669 			free: <>
+  670 			xar_path_issane: 470
+  671 			lstat: <>
+  672 			xar_prop_get: 277
+  673 			strcmp: <>
+  674 			calloc: <>
+  675 			print_file: 414
+  676 			xar_extract: int32_t (), <./xar/lib/archive.c 1422>
+  677 				strstr: <>
+  678 				XAR_FILE: <>
+  679 				stat: <>
+  680 				strdup: <>
+  681 				dirname: <>
+  682 				xar_file_find: 509
+  683 				XAR: <>
+  684 				xar_err_set_string: 177
+  685 				xar_err_callback: 529
+  686 				free: <>
+  687 				xar_extract: 676
+  688 				xar_extract_tofile: int32_t (), <./xar/lib/archive.c 1326>
+  689 					xar_arcmod_extract: int32_t (), <./xar/lib/arcmod.c 92>
+  690 						extract: int (), <./xarsig/xar-sig.c 771>
+  691 							xar_open: 29
+  692 							fprintf: <>
+  693 							exit: <>
+  694 							xar_register_errhandler: 400
+  695 							err_callback: 598
+  696 							xar_opt_set: 226
+  697 							xar_iter_new: 420
+  698 							xar_file_first: 423
+  699 							xar_file_next: 427
+  700 							xar_get_path: 441
+  701 							strcmp: <>
+  702 							regexec: <>
+  703 							printf: <>
+  704 							free: <>
+  705 							print_file: 617
+  706 							xar_extract: 676
+  707 							extract_subdoc: void (), <./xarsig/xar-sig.c 146>
+  708 								xar_subdoc_first: 198
+  709 								xar_subdoc_next: 116
+  710 								xar_subdoc_name: 391
+  711 								strcmp: <>
+  712 								xar_subdoc_copyout: int32_t (), <./xar/lib/subdoc.c 105>
+  713 									xmlBufferCreate: <>
+  714 									xmlNewTextWriterMemory: <>
+  715 									xmlBufferFree: <>
+  716 									xmlTextWriterSetIndent: <>
+  717 									xar_subdoc_serialize: 118
+  718 									xmlTextWriterEndDocument: <>
+  719 									xmlFreeTextWriter: <>
+  720 									malloc: <>
+  721 									assert: <>
+  722 									memcpy: <>
+  723 								open: <>
+  724 								write: <>
+  725 								close: <>
+  726 								free: <>
+  727 							xar_iter_free: 437
+  728 							xar_close: 48
+  729 			extract_subdoc: void (), <./xar/src/xar.c 153>
+  730 				xar_subdoc_first: 198
+  731 				xar_subdoc_next: 116
+  732 				xar_subdoc_name: 391
+  733 				strcmp: <>
+  734 				xar_subdoc_copyout: 712
+  735 				open: <>
+  736 				write: <>
+  737 				close: <>
+  738 				free: <>
+  739 			xar_iter_free: 437
+  740 			xar_close: 48
+  741 			regfree: <>
+  742 		calloc: <>
+  743 		list: int (), <./xar/src/xar.c 502>
+  744 			malloc: <>
+  745 			strdup: <>
+  746 			regcomp: <>
+  747 			regerror: <>
+  748 			printf: <>
+  749 			exit: <>
+  750 			xar_open: 29
+  751 			fprintf: <>
+  752 			xar_iter_new: 420
+  753 			xar_file_first: 423
+  754 			xar_file_next: 427
+  755 			xar_get_path: 441
+  756 			xar_path_issane: 470
+  757 			free: <>
+  758 			regexec: <>
+  759 			print_file: 414
+  760 			xar_iter_free: 437
+  761 			xar_close: 48
+  762 			regfree: <>
+  763 		free: <>
+  764 		xar_open: 29
+  765 		xar_register_errhandler: 400
+  766 		err_callback: 404
+  767 		extract_subdoc: 729
+  768 		xar_close: 48
+  769 		benc: <>
+  770 		strlen: <>
+  771 		bdec: <>
+  772 		open: <>
+  773 		fstat: <>
+  774 		read: <>
+  775 		err_callback: 598
+  776 		xar_add_folder: xar_file_t (), <./xar/lib/archive.c 1219>
+  777 			memcpy: <>
+  778 			XAR: <>
+  779 			stat: <>
+  780 			xar_file_new: 262
+  781 			memset: <>
+  782 			snprintf: <>
+  783 			xar_attr_set: 83
+  784 			XAR_FILE: <>
+  785 			xar_prop_set: 55
+  786 			xar_arcmod_archive: 562
+  787 			xar_file_free: 217
+  788 		xar_add_frombuffer: xar_file_t (), <./xar/lib/archive.c 1172>
+  789 			xar_file_new: 262
+  790 			memset: <>
+  791 			snprintf: <>
+  792 			XAR: <>
+  793 			xar_attr_set: 83
+  794 			XAR_FILE: <>
+  795 			xar_prop_set: 55
+  796 			xar_arcmod_archive: 562
+  797 			xar_file_free: 217
+  798 		close: <>
+  799 		htons: <>
+  800 		xar_ntoh64: 26
+  801 		xar_iter_new: 420
+  802 		xar_file_first: 423
+  803 		xar_file_next: 427
+  804 		prop_check: void (), <./xar/test/validate.c 79>
+  805 			xar_iter_new: 420
+  806 			fprintf: <>
+  807 			exit: <>
+  808 			xar_prop_get: 277
+  809 			xar_prop_first: const char * (), <./xar/lib/filetree.c 333>
+  810 				XAR_ITER: <>
+  811 				XAR_FILE: <>
+  812 				free: <>
+  813 				strdup: <>
+  814 				XAR_PROP: <>
+  815 			xar_prop_next: const char * (), <./xar/lib/filetree.c 350>
+  816 				XAR_ITER: <>
+  817 				XAR_PROP: <>
+  818 				asprintf: <>
+  819 				free: <>
+  820 				strdup: <>
+  821 				strstr: <>
+  822 				dirname: <>
+  823 				xar_prop_next: 815
+  824 			asprintf: <>
+  825 			strtoll: <>
+  826 			free: <>
+  827 			heap_check: void (), <./xar/test/validate.c 33>
+  828 				fprintf: <>
+  829 				OpenSSL_add_all_digests: <>
+  830 				EVP_get_digestbyname: <>
+  831 				exit: <>
+  832 				EVP_DigestInit: <>
+  833 				malloc: <>
+  834 				lseek: <>
+  835 				perror: <>
+  836 				read: <>
+  837 				EVP_DigestUpdate: <>
+  838 				EVP_DigestFinal: <>
+  839 				xar_format_md5: char * (), <./xar/test/validate.c 19>
+  840 					asprintf: <>
+  841 				strcmp: <>
+  842 				free: <>
+  843 		usage: void (), <./xarsig/xar-sig.c 1003>
+  844 			fprintf: <>
+  845 		print_version: void (), <./xarsig/xar-sig.c 1073>
+  846 			printf: <>
+  847 		stat: <>
+  848 		dump_header: int (), <./xarsig/xar-sig.c 914>
+  849 			open: <>
+  850 			perror: <>
+  851 			exit: <>
+  852 			read: <>
+  853 			fprintf: <>
+  854 			printf: <>
+  855 			ntohl: <>
+  856 			ntohs: <>
+  857 			xar_ntoh64: 26
+  858 		list_subdocs: int (), <./xarsig/xar-sig.c 856>
+  859 			xar_open: 29
+  860 			fprintf: <>
+  861 			exit: <>
+  862 			xar_subdoc_first: 198
+  863 			xar_subdoc_next: 116
+  864 			printf: <>
+  865 			xar_subdoc_name: 391
+  866 			xar_close: 48
+  867 		archive: 563
+  868 		dumptoc: int (), <./xarsig/xar-sig.c 901>
+  869 			xar_open: 29
+  870 			fprintf: <>
+  871 			exit: <>
+  872 			xar_serialize: 109
+  873 			xar_close: 48
+  874 		extract: 690
+  875 		list: int (), <./xarsig/xar-sig.c 874>
+  876 			xar_open: 29
+  877 			fprintf: <>
+  878 			exit: <>
+  879 			xar_iter_new: 420
+  880 			xar_file_first: 423
+  881 			xar_file_next: 427
+  882 			print_file: 617
+  883 			xar_iter_free: 437
+  884 			xar_close: 48
+  885 		err_callback: int32_t (), <./xarsig/xar-sig.c 957>
+  886 			xar_err_get_file: 407
+  887 			xar_err_get_string: 409
+  888 			xar_err_get_errno: 411
+  889 			printf: <>
+  890 			print_file: 617
+  891 			xar_get_path: 441
+  892 			free: <>
+  893 			strerror: <>
+  894 			exit: <>
+  895 		extract_subdoc: 707
+  896 		extract_data_to_sign: void (), <./xarsig/xar-sig.c 166>
+  897 			xar_open: 29
+  898 			fprintf: <>
+  899 			exit: <>
+  900 			xar_signature_first: 374
+  901 			xar_prop_get: 277
+  902 			xar_get_heap_offset: 381
+  903 			strtoull: <>
+  904 			xar_signature_copy_signed_data: 628
+  905 			xar_close: 48
+  906 			fopen: <>
+  907 			fseek: <>
+  908 			malloc: <>
+  909 			fread: <>
+  910 			fclose: <>
+  911 			fwrite: <>
+  912 			free: <>
+  913 		replace_sign: void (), <./xarsig/xar-sig.c 372>
+  914 			malloc: <>
+  915 			strncpy: <>
+  916 			mktemp: <>
+  917 			xar_open: 29
+  918 			fprintf: <>
+  919 			exit: <>
+  920 			xar_signature_new: 567
+  921 			signingCallback: 577
+  922 			insert_cert: 586
+  923 			xar_opt_get: 50
+  924 			xar_opt_set: 226
+  925 			xar_iter_new: 420
+  926 			xar_file_first: 423
+  927 			stack_new: stack (), <./xarsig/xar-sig.c 333>
+  928 				malloc: <>
+  929 			xar_file_next: 427
+  930 			printf: <>
+  931 			xar_get_path: 441
+  932 			XAR_FILE: <>
+  933 			xar_prop_get: 277
+  934 			xar_add_from_archive: xar_file_t (), <./xar/lib/archive.c 1270>
+  935 				xar_file_replicate: xar_file_t (), <./xar/lib/filetree.c 759>
+  936 					xar_file_new: 262
+  937 					XAR_FILE: <>
+  938 					XAR_ATTR: <>
+  939 					strcmp: <>
+  940 					xar_attr_set: 83
+  941 					xar_prop_replicate_r: void (), <./xar/lib/filetree.c 627>
+  942 						xar_prop_new: 67
+  943 						XAR_PROP: <>
+  944 						strdup: <>
+  945 						xar_attr_new: 87
+  946 						XAR_ATTR: <>
+  947 						xar_prop_replicate_r: 941
+  948 				memset: <>
+  949 				snprintf: <>
+  950 				XAR: <>
+  951 				xar_attr_set: 83
+  952 				XAR_FILE: <>
+  953 				xar_prop_set: 55
+  954 				xar_prop_pfirst: xar_prop_t (), <./xar/lib/filetree.c 311>
+  955 					XAR_FILE: <>
+  956 				xar_prop_pget: xar_prop_t (), <./xar/lib/filetree.c 609>
+  957 					XAR_PROP: <>
+  958 					asprintf: <>
+  959 					xar_prop_find: 94
+  960 					free: <>
+  961 				xar_attrcopy_from_heap_to_heap: int32_t (), <./xar/lib/io.c 510>
+  962 					XAR: <>
+  963 					get_rsize: size_t (), <./xar/lib/io.c 121>
+  964 						xar_opt_get: 50
+  965 						strtol: <>
+  966 					get_offset: off_t (), <./xar/lib/io.c 138>
+  967 						xar_prop_pget: 956
+  968 						xar_prop_getvalue: const char * (), <./xar/lib/filetree.c 290>
+  969 							XAR_PROP: <>
+  970 						strtoll: <>
+  971 					xar_io_seek: void (), <./xar/lib/io.c 176>
+  972 						XAR: <>
+  973 						lseek: <>
+  974 						xar_err_new: 174
+  975 						xar_err_set_file: void (), <./xar/lib/err.c 57>
+  976 							XAR: <>
+  977 						xar_err_set_string: 177
+  978 						xar_err_callback: 529
+  979 						malloc: <>
+  980 						assert: <>
+  981 						xar_read_fd: 234
+  982 						free: <>
+  983 					get_length: int64_t (), <./xar/lib/io.c 156>
+  984 						xar_prop_pget: 956
+  985 						xar_prop_getvalue: 968
+  986 						strtoll: <>
+  987 					malloc: <>
+  988 					read: <>
+  989 					free: <>
+  990 					write: <>
+  991 					asprintf: <>
+  992 					xar_prop_getkey: const char * (), <./xar/lib/filetree.c 287>
+  993 						XAR_PROP: <>
+  994 					xar_prop_pfirst: 954
+  995 					xar_prop_find: 94
+  996 					xar_prop_pset: xar_prop_t (), <./xar/lib/filetree.c 572>
+  997 						xar_prop_set_r: 56
+  998 				xar_file_free: 217
+  999 				xar_prop_pnext: xar_prop_t (), <./xar/lib/filetree.c 319>
+ 1000 					XAR_PROP: <>
+ 1001 			stack_push: void (), <./xarsig/xar-sig.c 341>
+ 1002 				malloc: <>
+ 1003 			stack_pop: void * (), <./xarsig/xar-sig.c 354>
+ 1004 				free: <>
+ 1005 			xar_iter_free: 437
+ 1006 			stack_free: void (), <./xarsig/xar-sig.c 338>
+ 1007 				free: <>
+ 1008 			xar_close: 48
+ 1009 			unlink: <>
+ 1010 			extract_sig_offset: 625
+ 1011 			asprintf: <>
+ 1012 			system: <>
+ 1013 			free: <>
+ 1014 		inject_signature: void (), <./xarsig/xar-sig.c 585>
+ 1015 			malloc: <>
+ 1016 			printf: <>
+ 1017 			xar_open: 29
+ 1018 			fprintf: <>
+ 1019 			exit: <>
+ 1020 			get_sig_offset: 626
+ 1021 			xar_close: 48
+ 1022 			fopen: <>
+ 1023 			fseek: <>
+ 1024 			fread: <>
+ 1025 			ferror: <>
+ 1026 			fwrite: <>
+ 1027 			feof: <>
+ 1028 			fclose: <>
+ 1029 			free: <>
+ 1030 		belated_sign: void (), <./xarsig/xar-sig.c 522>
+ 1031 			xar_open: 29
+ 1032 			fprintf: <>
+ 1033 			exit: <>
+ 1034 			xar_signature_first: 374
+ 1035 			xar_close: 48
+ 1036 			replace_sign: 913
+ 1037 		extract_certs: void (), <./xarsig/xar-sig.c 251>
+ 1038 			xar_open: 29
+ 1039 			fprintf: <>
+ 1040 			exit: <>
+ 1041 			xar_signature_first: 374
+ 1042 			xar_signature_get_x509certificate_count: int32_t (), <./xar/lib/signature.c 160>
+ 1043 				XAR_SIGNATURE: <>
+ 1044 			xar_signature_get_x509certificate_data: int32_t (), <./xar/lib/signature.c 169>
+ 1045 				XAR_SIGNATURE: <>
+ 1046 			asprintf: <>
+ 1047 			fopen: <>
+ 1048 			fwrite: <>
+ 1049 			fclose: <>
+ 1050 			free: <>
+ 1051 			xar_close: 48

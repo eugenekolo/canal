@@ -1,0 +1,498 @@
+    1 	main: int (), <./control.c 62>
+    2 		getopt: <>
+    3 		usage: int (), <./control.c 150>
+    4 			warnx: <>
+    5 			fprintf: <>
+    6 			fflush: <>
+    7 		sscanf: <>
+    8 		strcmp: <>
+    9 		start_cache: int (), <./control.c 886>
+   10 			errx: <>
+   11 			strcmp: <>
+   12 			BC_read_playlist: int (), <./library.c 68>
+   13 				warnx: <>
+   14 				open: <>
+   15 				strerror: <>
+   16 				read: <>
+   17 				calloc: <>
+   18 				malloc: <>
+   19 				BC_verify_playlist: int (), <./library.c 451>
+   20 					warnx: <>
+   21 					calloc: <>
+   22 					free: <>
+   23 				close: <>
+   24 				PC_FREE_ZERO: <>
+   25 			warnx: <>
+   26 			strerror: <>
+   27 			PC_FREE_ZERO: <>
+   28 			unlink: <>
+   29 			BC_start: int (), <./library.c 685>
+   30 				sysctlbyname: <>
+   31 		do_boot_cache: int (), <./control.c 360>
+   32 			BC_test: int (), <./library.c 1002>
+   33 				sysctlbyname: <>
+   34 			isRootCPDK: bool (), <./control.c 236>
+   35 				bzero: <>
+   36 				statfs: <>
+   37 				strlen: <>
+   38 				IOMasterPort: <>
+   39 				IOServiceGetMatchingService: <>
+   40 				IOBSDNameMatching: <>
+   41 				IOObjectConformsTo: <>
+   42 				IORegistryEntryCreateCFProperty: <>
+   43 				CFSTR: <>
+   44 				CFGetTypeID: <>
+   45 				CFStringGetTypeID: <>
+   46 				CFStringCreateCopy: <>
+   47 				CFRelease: <>
+   48 				IOObjectRelease: <>
+   49 				CoreStorageCopyVolumeProperties: <>
+   50 				CFDictionaryGetValue: <>
+   51 				CoreStorageCopyLVGProperties: <>
+   52 				CFStringCompare: <>
+   53 			BC_read_playlist: 12
+   54 			warnx: <>
+   55 			strerror: <>
+   56 			sysctlbyname: <>
+   57 			unlink: <>
+   58 			errx: <>
+   59 			gettimeofday: <>
+   60 			open: <>
+   61 			fcntl: <>
+   62 			fprintf: <>
+   63 			close: <>
+   64 			timersub: <>
+   65 			add_fseventsd_files: int (), <./control.c 813>
+   66 				opendir: <>
+   67 				readdir: <>
+   68 				strlcpy: <>
+   69 				strncmp: <>
+   70 				closedir: <>
+   71 				snprintf: <>
+   72 				add_file: int (), <./control.c 710>
+   73 					open: <>
+   74 					warnx: <>
+   75 					strerror: <>
+   76 					BC_playlist_for_filename: int (), <./library.c 795>
+   77 						fstat: <>
+   78 						warnx: <>
+   79 						strerror: <>
+   80 						getxattr: <>
+   81 						sprintf: <>
+   82 						open: <>
+   83 						fstatfs: <>
+   84 						uuid_clear: <>
+   85 						getattrlist: <>
+   86 						calloc: <>
+   87 						malloc: <>
+   88 						PC_FREE_ZERO: <>
+   89 						uuid_copy: <>
+   90 						syscall: <>
+   91 						fcntl: <>
+   92 						reallocf: <>
+   93 						BC_verify_playlist: 19
+   94 						close: <>
+   95 					close: <>
+   96 					BC_merge_playlists: int (), <./library.c 260>
+   97 						reallocf: <>
+   98 						uuid_compare: <>
+   99 						uuid_copy: <>
+  100 						memcpy: <>
+  101 						warnx: <>
+  102 						BC_sort_playlist: void (), <./library.c 335>
+  103 							qsort: <>
+  104 							compare_playlist_entry: int (), <./library.c 317>
+  105 						BC_coalesce_playlist: int (), <./library.c 349>
+  106 							MAX: <>
+  107 							MIN: <>
+  108 							realloc: <>
+  109 						BC_verify_playlist: 19
+  110 					PC_FREE_ZERO: <>
+  111 					free: <>
+  112 					memset: <>
+  113 			add_logical_playlist: int (), <./control.c 197>
+  114 				fopen: <>
+  115 				warnx: <>
+  116 				strerror: <>
+  117 				fgets: <>
+  118 				strlen: <>
+  119 				add_directory: int (), <./control.c 779>
+  120 					opendir: <>
+  121 					readdir: <>
+  122 					snprintf: <>
+  123 					add_file: 72
+  124 					closedir: <>
+  125 				add_file: 72
+  126 				fclose: <>
+  127 			calloc: <>
+  128 			add_playlist_for_preheated_user: int (), <./control.c 478>
+  129 				sysctlbyname: <>
+  130 				warnx: <>
+  131 				IORegistryEntryFromPath: <>
+  132 				IORegistryEntryCreateCFProperty: <>
+  133 				CFSTR: <>
+  134 				IOObjectRelease: <>
+  135 				CFDataGetBytes: <>
+  136 				CFRangeMake: <>
+  137 				CFRelease: <>
+  138 				snprintf: <>
+  139 				strlcpy: <>
+  140 				BC_read_playlist: 12
+  141 				getxattr: <>
+  142 				add_file: 72
+  143 				strlen: <>
+  144 				opendir: <>
+  145 				readdir: <>
+  146 				strncmp: <>
+  147 				PC_FREE_ZERO: <>
+  148 				BC_merge_playlists: 96
+  149 				rewinddir: <>
+  150 				closedir: <>
+  151 				free: <>
+  152 				memset: <>
+  153 			add_file: 72
+  154 			BC_start: 29
+  155 			PC_FREE_ZERO: <>
+  156 		stop_cache: int (), <./control.c 944>
+  157 			notify_post: <>
+  158 			BC_stop: int (), <./library.c 706>
+  159 				sysctlbyname: <>
+  160 				warnx: <>
+  161 				strerror: <>
+  162 				calloc: <>
+  163 				malloc: <>
+  164 				HC_FREE_ZERO: <>
+  165 			print_statistics: int (), <./control.c 1155>
+  166 				BC_fetch_statistics: int (), <./library.c 526>
+  167 					sysctlbyname: <>
+  168 				errx: <>
+  169 				strerror: <>
+  170 				BC_print_statistics: int (), <./library.c 1033>
+  171 					fopen: <>
+  172 					fprintf: <>
+  173 					fflush: <>
+  174 					fclose: <>
+  175 			print_history: void (), <./control.c 1172>
+  176 				printf: <>
+  177 				uuid_string: inline const char * (), <./control.c 189>
+  178 					uuid_unparse: <>
+  179 			BC_print_history: int (), <./library.c 1284>
+  180 				fopen: <>
+  181 				fprintf: <>
+  182 				uuid_string: inline const char * (), <./library.c 36>
+  183 					uuid_unparse: <>
+  184 				fflush: <>
+  185 				fclose: <>
+  186 			BC_fetch_statistics: 166
+  187 			errx: <>
+  188 			strerror: <>
+  189 			BC_print_statistics: 170
+  190 			HC_FREE_ZERO: <>
+  191 			BC_convert_history: int (), <./library.c 554>
+  192 				calloc: <>
+  193 				malloc: <>
+  194 				uuid_is_null: <>
+  195 				uuid_copy: <>
+  196 				warnx: <>
+  197 				uuid_compare: <>
+  198 				uuid_string: 182
+  199 				memcpy: <>
+  200 				BC_verify_playlist: 19
+  201 				PC_FREE_ZERO: <>
+  202 			BC_sort_playlist: 102
+  203 			BC_coalesce_playlist: 105
+  204 			warnx: <>
+  205 			BC_read_playlist: 12
+  206 			BC_merge_playlists: 96
+  207 			PC_FREE_ZERO: <>
+  208 			BC_write_playlist: int (), <./library.c 149>
+  209 				BC_verify_playlist: 19
+  210 				strlen: <>
+  211 				warnx: <>
+  212 				malloc: <>
+  213 				snprintf: <>
+  214 				mkstemp: <>
+  215 				write: <>
+  216 				strerror: <>
+  217 				lseek: <>
+  218 				close: <>
+  219 				rename: <>
+  220 				free: <>
+  221 				unlink: <>
+  222 		BC_notify_mount: int (), <./library.c 979>
+  223 			sysctlbyname: <>
+  224 			warnx: <>
+  225 			strerror: <>
+  226 		jettison_cache: int (), <./control.c 1083>
+  227 			BC_jettison: int (), <./library.c 1014>
+  228 				sysctlbyname: <>
+  229 				warnx: <>
+  230 				strerror: <>
+  231 			print_statistics: 165
+  232 		BC_tag_history: int (), <./library.c 1318>
+  233 			sysctlbyname: <>
+  234 			warnx: <>
+  235 			strerror: <>
+  236 		print_statistics: 165
+  237 		merge_playlists: int (), <./control.c 1104>
+  238 			errx: <>
+  239 			calloc: <>
+  240 			BC_read_playlist: 12
+  241 			BC_merge_playlists: 96
+  242 			PC_FREE_ZERO: <>
+  243 			BC_write_playlist: 208
+  244 		print_playlist: int (), <./control.c 1191>
+  245 			errx: <>
+  246 			BC_read_playlist: 12
+  247 			printf: <>
+  248 			uuid_string: 177
+  249 			PC_FREE_ZERO: <>
+  250 		unprint_playlist: int (), <./control.c 1285>
+  251 			uuid_string: 177
+  252 			calloc: <>
+  253 			errx: <>
+  254 			fgets: <>
+  255 			sscanf: <>
+  256 			realloc: <>
+  257 			uuid_parse: <>
+  258 			uuid_compare: <>
+  259 			warnx: <>
+  260 			malloc: <>
+  261 			get_volume_uuid: void (), <./control.c 1262>
+  262 				getattrlist: <>
+  263 				errx: <>
+  264 				uuid_copy: <>
+  265 			BC_verify_playlist: 19
+  266 			BC_write_playlist: 208
+  267 			strerror: <>
+  268 			PC_FREE_ZERO: <>
+  269 		generalize_playlist: int (), <./control.c 1438>
+  270 			errx: <>
+  271 			BC_read_playlist: 12
+  272 			uuid_clear: <>
+  273 			BC_write_playlist: 208
+  274 			PC_FREE_ZERO: <>
+  275 		generate_playlist: int (), <./control.c 1468>
+  276 			errx: <>
+  277 			strlen: <>
+  278 			malloc: <>
+  279 			statfs: <>
+  280 			warnx: <>
+  281 			strerror: <>
+  282 			get_volume_uuid: 261
+  283 			fscanf: <>
+  284 			strlcpy: <>
+  285 			fgetc: <>
+  286 			open: <>
+  287 			fstat: <>
+  288 			close: <>
+  289 			syscall: <>
+  290 			fcntl: <>
+  291 			realloc: <>
+  292 			BC_verify_playlist: 19
+  293 			BC_sort_playlist: 102
+  294 			BC_coalesce_playlist: 105
+  295 			BC_write_playlist: 208
+  296 		truncate_playlist: int (), <./control.c 1636>
+  297 			errx: <>
+  298 			strtol: <>
+  299 			err: <>
+  300 			BC_read_playlist: 12
+  301 			warnx: <>
+  302 			memcpy: <>
+  303 			BC_write_playlist: 208
+  304 			strerror: <>
+  305 			PC_FREE_ZERO: <>
+  306 		BC_unload: int (), <./library.c 1337>
+  307 			debug: <>
+  308 			BC_terminate_history: int (), <./kext.c 2661>
+  309 				LOCK_HANDLERS: <>
+  310 				BC_clear_flag: inline UInt32 (), <./kext.c 640>
+  311 					OSBitAndAtomic: <>
+  312 				debug: <>
+  313 				UNLOCK_HANDLERS: <>
+  314 				BC_check_handlers: void (), <./kext.c 2714>
+  315 					debug: <>
+  316 					BC_strategy: int (), <./kext.c 1643>
+  317 						assert: <>
+  318 						buf_blkno: <>
+  319 						buf_count: <>
+  320 						buf_flags: <>
+  321 						buf_device: <>
+  322 						buf_vnode: <>
+  323 						nulldev: <>
+  324 						BC_ADD_STAT: <>
+  325 						vnode_isswap: <>
+  326 						proc_selfpid: <>
+  327 						vnode_isdyldsharedcache: <>
+  328 						vnode_israge: <>
+  329 						OSAddAtomic: <>
+  330 						LOCK_CACHE_R: <>
+  331 						BC_find_cache_mount: int (), <./kext.c 680>
+  332 							nulldev: <>
+  333 						CB_BLOCK_TO_BYTE: <>
+  334 						LOCK_MOUNT_R: <>
+  335 						UNLOCK_MOUNT_R: <>
+  336 						debug: <>
+  337 						BC_find_extent: struct BC_cache_extent (), <./kext.c 784>
+  338 						proc_selfname: <>
+  339 						vnode_getname: <>
+  340 						xdebug: <>
+  341 						vnode_putname: <>
+  342 						BC_MALLOC: <>
+  343 						memcpy: <>
+  344 						extents_status: int (), <./kext.c 1585>
+  345 						microtime: <>
+  346 						LOCK_EXTENT: <>
+  347 						UNLOCK_CACHE_R: <>
+  348 						wait_for_extent: void (), <./kext.c 1620>
+  349 							microtime: <>
+  350 							timersub: <>
+  351 							msleep: <>
+  352 						UNLOCK_EXTENT: <>
+  353 						timersub: <>
+  354 						buf_map: <>
+  355 						vnode_getwithvid: <>
+  356 						buf_unmap: <>
+  357 						vnode_put: <>
+  358 						MAX: <>
+  359 						MIN: <>
+  360 						BC_blocks_present: int (), <./kext.c 1093>
+  361 							assert: <>
+  362 							howmany: <>
+  363 							CB_BLOCK_PRESENT: <>
+  364 						CB_BYTE_TO_BLOCK: <>
+  365 						uio_create: <>
+  366 						uio_addiov: <>
+  367 						CAST_USER_ADDR_T: <>
+  368 						cluster_copy_ubc_data: <>
+  369 						BC_discard_bytes: int (), <./kext.c 958>
+  370 							assert: <>
+  371 							lck_mtx_assert: <>
+  372 							CB_BYTE_TO_BLOCK: <>
+  373 							howmany: <>
+  374 							CB_BLOCK_PRESENT: <>
+  375 							CB_MARK_BLOCK_VACANT: <>
+  376 							CB_BLOCK_TO_PAGE: <>
+  377 							CB_PAGE_VACANT: <>
+  378 							BC_free_page: void (), <./kext.c 5150>
+  379 								vnode_getwithvid: <>
+  380 								debug: <>
+  381 								ubc_range_op: <>
+  382 								vnode_put: <>
+  383 						uio_free: <>
+  384 						buf_setresid: <>
+  385 						buf_biodone: <>
+  386 						BC_add_history: int (), <./kext.c 4512>
+  387 							LOCK_HISTORY_R: <>
+  388 							BC_ADD_STAT: <>
+  389 							debug: <>
+  390 							BC_set_flag: inline UInt32 (), <./kext.c 634>
+  391 								OSBitOrAtomic: <>
+  392 							BC_get_history_mount_device: struct BC_history_mount_device (), <./kext.c 4452>
+  393 							uuid_is_null: <>
+  394 							OSIncrementAtomic: <>
+  395 							HB_BLOCK_TO_BYTE: <>
+  396 							OSAddAtomic: <>
+  397 							message: <>
+  398 							kalloc: <>
+  399 							OSCompareAndSwapPtr: <>
+  400 							kfree: <>
+  401 							assert: <>
+  402 							OSAddAtomic64: <>
+  403 							UNLOCK_HISTORY_R: <>
+  404 						BC_handle_discards: int (), <./kext.c 2361>
+  405 							BC_find_extent: struct BC_cache_extent (), <./kext.c 784>
+  406 							LOCK_EXTENT: <>
+  407 							BC_discard_bytes: 369
+  408 							UNLOCK_EXTENT: <>
+  409 							BC_check_intersection: inline int (), <./kext.c 664>
+  410 						BC_terminate_cache_async: void (), <./kext.c 2481>
+  411 							debug: <>
+  412 							kernel_thread_start: <>
+  413 							BC_terminate_cache_thread: void (), <./kext.c 2472>
+  414 								BC_terminate_cache: int (), <./kext.c 2507>
+  415 									BC_terminate_readahead: int (), <./kext.c 2415>
+  416 										BC_set_flag: 390
+  417 										LOCK_READERS: <>
+  418 										debug: <>
+  419 										msleep: <>
+  420 										UNLOCK_READERS: <>
+  421 										message: <>
+  422 										Debugger: <>
+  423 									debug: <>
+  424 									LOCK_CACHE_R: <>
+  425 									LOCK_HANDLERS: <>
+  426 									BC_clear_flag: 310
+  427 									UNLOCK_HANDLERS: <>
+  428 									UNLOCK_CACHE_R: <>
+  429 									BC_check_handlers: 314
+  430 									LOCK_EXTENT: <>
+  431 									howmany: <>
+  432 									CB_BLOCK_PRESENT: <>
+  433 									BC_ADD_STAT: <>
+  434 									BC_teardown_extent: void (), <./kext.c 2859>
+  435 									UNLOCK_EXTENT: <>
+  436 									wakeup: <>
+  437 									LOCK_MOUNT_W: <>
+  438 									BC_teardown_mount: void (), <./kext.c 3251>
+  439 										buf_free: <>
+  440 									UNLOCK_MOUNT_W: <>
+  441 									tsleep: <>
+  442 									message: <>
+  443 									LOCK_CACHE_R_TO_W: <>
+  444 									BC_teardown_disk: void (), <./kext.c 2893>
+  445 									lck_mtx_destroy: <>
+  446 									BC_free_pagebuffer: void (), <./kext.c 5112>
+  447 										vnode_getwithref: <>
+  448 										debug: <>
+  449 										ubc_range_op: <>
+  450 										vnode_delete: <>
+  451 										vfs_context_current: <>
+  452 										vnode_close: <>
+  453 									lck_rw_destroy: <>
+  454 									UNLOCK_CACHE_W: <>
+  455 									microtime: <>
+  456 									timersub: <>
+  457 							thread_deallocate: <>
+  458 							message: <>
+  459 						BC_set_flag: 390
+  460 					BC_close: int (), <./kext.c 1522>
+  461 						LOCK_CACHE_R: <>
+  462 						BC_find_cache_mount: 331
+  463 						debug: <>
+  464 						uuid_string: inline const char * (), <./kext.c 651>
+  465 							uuid_unparse: <>
+  466 						LOCK_MOUNT_R: <>
+  467 						LOCK_EXTENT: <>
+  468 						BC_teardown_extent: 434
+  469 						UNLOCK_EXTENT: <>
+  470 						wakeup: <>
+  471 						LOCK_MOUNT_R_TO_W: <>
+  472 						LOCK_MOUNT_W: <>
+  473 						UNLOCK_MOUNT_W: <>
+  474 						BC_teardown_mount: 438
+  475 						UNLOCK_MOUNT_R: <>
+  476 						UNLOCK_CACHE_R: <>
+  477 				untimeout: <>
+  478 				BC_timeout_history: void (), <./kext.c 4269>
+  479 					debug: <>
+  480 					BC_terminate_history: 308
+  481 				uuid_is_null: <>
+  482 				BC_ADD_STAT: <>
+  483 				microtime: <>
+  484 				timersub: <>
+  485 			BC_terminate_cache: 414
+  486 			LOCK_HISTORY_W: <>
+  487 			BC_discard_history: void (), <./kext.c 4808>
+  488 				kfree: <>
+  489 			UNLOCK_HISTORY_W: <>
+  490 			lck_rw_destroy: <>
+  491 			lck_mtx_destroy: <>
+  492 			lck_grp_free: <>
+  493 			sysctl_unregister_oid: <>
+  494 			fork: <>
+  495 			execve: <>
+  496 			exit: <>
+  497 			waitpid: <>
+  498 		warnx: <>

@@ -1,0 +1,134 @@
+    1 	main:  (), <./Helpers/pppdump/pppdump.c 54>
+    2 		tzset: <>
+    3 		switch_option: char (), <./Helpers/chat/chat.c 185>
+    4 		OPTARG: <>
+    5 		copy_of: void * (), <./Helpers/chat/chat.c 312>
+    6 			dup_mem: void * (), <./Helpers/chat/chat.c 300>
+    7 				malloc: <>
+    8 				fatal: <>
+    9 				memcpy: <>
+   10 			strlen: <>
+   11 		usage: void (), <./Helpers/chat/chat.c 530>
+   12 			fprintf: <>
+   13 			exit: <>
+   14 		atoi: <>
+   15 		fclose: <>
+   16 		fopen: <>
+   17 		fprintf: <>
+   18 		openlog: <>
+   19 		setlogmask: <>
+   20 		LOG_UPTO: <>
+   21 		init: void (), <./Helpers/chat/chat.c 638>
+   22 			signal: <>
+   23 			sigint: SIGTYPE (), <./Helpers/chat/chat.c 620>
+   24 				fatal: <>
+   25 			sigterm: SIGTYPE (), <./Helpers/chat/chat.c 626>
+   26 				fatal: <>
+   27 			sighup: SIGTYPE (), <./Helpers/chat/chat.c 632>
+   28 				fatal: <>
+   29 			set_tty_parameters: void (), <./Helpers/chat/chat.c 650>
+   30 				get_term_param: <>
+   31 				fatal: <>
+   32 				set_term_param: <>
+   33 			sigalrm: SIGTYPE (), <./Helpers/chat/chat.c 590>
+   34 				alarm: <>
+   35 				signal: <>
+   36 				sigalrm: 33
+   37 				fcntl: <>
+   38 				fatal: <>
+   39 				logfile: <>
+   40 			alarm: <>
+   41 		ARG: <>
+   42 		do_file: void (), <./Helpers/chat/chat.c 461>
+   43 			fopen: <>
+   44 			fatal: <>
+   45 			fgets: <>
+   46 			strchr: <>
+   47 			chat_send: <>
+   48 			chat_expect: void (), <./Helpers/chat/chat.c 957>
+   49 			fclose: <>
+   50 		chat_expect: void (), <./Helpers/chat/chat.c 957>
+   51 		chat_send: <>
+   52 		terminate: void (), <./Helpers/chat/chat.c 681>
+   53 			exit: <>
+   54 			echo_stderr: void (), <./Helpers/chat/chat.c 1383>
+   55 			strlen: <>
+   56 			alarm: <>
+   57 			get_char: int (), <./Helpers/chat/chat.c 1257>
+   58 			iscntrl: <>
+   59 			fprintf: <>
+   60 			fclose: <>
+   61 			set_term_param: <>
+   62 			fatal: <>
+   63 		strrchr: <>
+   64 		getopt: <>
+   65 		usage: void (), <./Helpers/pppstats/pppstats.c 141>
+   66 			fprintf: <>
+   67 			exit: <>
+   68 		sscanf: <>
+   69 		socket: <>
+   70 		perror: <>
+   71 		exit: <>
+   72 		strncpy: <>
+   73 		ioctl: <>
+   74 		open: <>
+   75 		strioctl: int (), <./Helpers/pppstats/pppstats.c 243>
+   76 			ioctl: <>
+   77 			fprintf: <>
+   78 		intpr: void (), <./Helpers/pppstats/pppstats.c 311>
+   79 			memset: <>
+   80 			get_ppp_stats: void (), <./Helpers/pppstats/pppstats.c 262>
+   81 				memset: <>
+   82 				strncpy: <>
+   83 				ioctl: <>
+   84 				fprintf: <>
+   85 				perror: <>
+   86 				exit: <>
+   87 				strioctl: 75
+   88 			get_ppp_cstats: void (), <./Helpers/pppstats/pppstats.c 276>
+   89 				memset: <>
+   90 				strncpy: <>
+   91 				ioctl: <>
+   92 				fprintf: <>
+   93 				exit: <>
+   94 				perror: <>
+   95 				strioctl: 75
+   96 			signal: <>
+   97 			catchalarm: void (), <./Helpers/pppstats/pppstats.c 153>
+   98 			alarm: <>
+   99 			printf: <>
+  100 			putchar: <>
+  101 			KBPS: <>
+  102 			W: <>
+  103 			V: <>
+  104 			CRATE: <>
+  105 			fflush: <>
+  106 			sigemptyset: <>
+  107 			sigaddset: <>
+  108 			sigprocmask: <>
+  109 			sigsuspend: <>
+  110 		decompress: int, <./Helpers/pppdump/pppdump.c 44>
+  111 		dumplog:  (), <./Helpers/pppdump/pppdump.c 106>
+  112 			getc: <>
+  113 			printf: <>
+  114 			exit: <>
+  115 			putchar: <>
+  116 			show_time:  (), <./Helpers/pppdump/pppdump.c 486>
+  117 				getc: <>
+  118 				printf: <>
+  119 				ctime: <>
+  120 				localtime: <>
+  121 		dumpppp:  (), <./Helpers/pppdump/pppdump.c 245>
+  122 			getc: <>
+  123 			printf: <>
+  124 			exit: <>
+  125 			PPP_FCS: <>
+  126 			decompress: int, <./Helpers/pppdump/pppdump.c 44>
+  127 			handle_ccp:  (), <./Helpers/pppdump/pppdump.c 430>
+  128 				CCP_LENGTH: <>
+  129 				CCP_CODE: <>
+  130 				CCP_OPT_LENGTH: <>
+  131 				decomp_alloc: <>
+  132 			incomp: <>
+  133 			putchar: <>
+  134 			show_time: 116

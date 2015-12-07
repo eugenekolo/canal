@@ -1,0 +1,307 @@
+    1 	main: int (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_ushort.c 20>
+    2 		allocate_mmap: <>
+    3 		CHECK: <>
+    4 		ffi_prep_cif: ffi_status (), <./RubyCocoa/misc/libffi/src/prep_cif.c 123>
+    5 			FFI_ASSERT: <>
+    6 			initialize_aggregate: ffi_status (), <./RubyCocoa/misc/libffi/src/prep_cif.c 36>
+    7 				FFI_ASSERT: <>
+    8 				initialize_aggregate: 6
+    9 				FFI_ASSERT_VALID_TYPE: <>
+   10 				ALIGN: <>
+   11 			FFI_ASSERT_VALID_TYPE: <>
+   12 			struct_on_stack: inline int (), <./RubyCocoa/misc/libffi/src/prep_cif.c 111>
+   13 			STACK_ARG_SIZE: <>
+   14 			ALIGN: <>
+   15 			ffi_prep_cif_machdep: ffi_status (), <./RubyCocoa/misc/libffi/src/powerpc/ffi.c 506>
+   16 				examine_argument: int (), <./RubyCocoa/misc/libffi/src/x86/ffi64.c 232>
+   17 					classify_argument: int (), <./RubyCocoa/misc/libffi/src/x86/ffi64.c 132>
+   18 						ALIGN: <>
+   19 						classify_argument: 17
+   20 						merge_classes: enum x86_64_reg_class (), <./RubyCocoa/misc/libffi/src/x86/ffi64.c 84>
+   21 						FFI_ASSERT: <>
+   22 					abort: <>
+   23 				SSE_CLASS_P: <>
+   24 				ALIGN: <>
+   25 		ffi_call: void (), <./RubyCocoa/misc/libffi/src/powerpc/ffi.c 768>
+   26 			retval_on_stack: inline int (), <./RubyCocoa/misc/libffi/src/x86/ffi_darwin.c 43>
+   27 			alloca: <>
+   28 			ffi_call_SYSV: <>
+   29 			ffi_prep_args: void (), <./RubyCocoa/misc/libffi/src/powerpc/ffi_darwin.c 84>
+   30 				retval_on_stack: 26
+   31 				ALIGN: <>
+   32 				FFI_ASSERT: <>
+   33 				memcpy: <>
+   34 			ffi_call_STDCALL: <>
+   35 			FFI_ASSERT: <>
+   36 			examine_argument: 16
+   37 			ALIGN: <>
+   38 			memcpy: <>
+   39 			abort: <>
+   40 			ffi_call_unix64: <>
+   41 			ffi_call_AIX: <>
+   42 			ffi_call_DARWIN: <>
+   43 			ffi_call_LINUX64: <>
+   44 		FFI_FN: <>
+   45 		cls_struct_9byte_fn: cls_struct_9byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_9byte2.c 18>
+   46 			printf: <>
+   47 		printf: <>
+   48 		ffi_prep_closure: ffi_status (), <./RubyCocoa/misc/libffi/src/powerpc/ffi.c 835>
+   49 			FFI_ASSERT: <>
+   50 			FFI_INIT_TRAMPOLINE: <>
+   51 			ffi_closure_SYSV: void (), <./RubyCocoa/misc/libffi/src/x86/ffi_darwin.c 322>
+   52 				alloca: <>
+   53 				ffi_prep_incoming_args_SYSV: inline void (), <./RubyCocoa/misc/libffi/src/x86/ffi_darwin.c 279>
+   54 					retval_on_stack: 26
+   55 					ALIGN: <>
+   56 				asm: <>
+   57 			flush_range: void (), <./RubyCocoa/misc/libffi/src/powerpc/ffi_darwin.c 571>
+   58 				flush_icache: void (), <./RubyCocoa/misc/libffi/src/powerpc/ffi_darwin.c 557>
+   59 			memcpy: <>
+   60 			flush_icache: void (), <./RubyCocoa/misc/libffi/src/powerpc/ffi.c 818>
+   61 		cls_struct_9byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_9byte1.c 32>
+   62 			cls_struct_9byte: <>
+   63 			cls_struct_9byte_fn: 45
+   64 		cls_struct_9byte: <>
+   65 		exit: <>
+   66 		malloc: <>
+   67 		struct2: test_structure_2 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct2.c 16>
+   68 		free: <>
+   69 		test_func_fn: unsigned char (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_multi_uchar.c 10>
+   70 			printf: <>
+   71 		test_func_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_multi_sshort.c 22>
+   72 			test_func_fn: 69
+   73 		cls_struct_align_fn: cls_struct_align (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_sint64.c 16>
+   74 			printf: <>
+   75 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_double.c 31>
+   76 			cls_struct_align: <>
+   77 			cls_struct_align_fn: 73
+   78 		cls_struct_align: <>
+   79 		struct3: test_structure_3 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct3.c 15>
+   80 		cls_struct_20byte_fn: cls_struct_20byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_20byte.c 17>
+   81 			printf: <>
+   82 		cls_struct_20byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_20byte1.c 32>
+   83 			cls_struct_20byte: <>
+   84 			cls_struct_20byte_fn: 80
+   85 		cls_struct_20byte: <>
+   86 		return_sc: signed char (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/return_sc.c 10>
+   87 		struct9: test_structure_9 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct9.c 16>
+   88 		closure_test_fn0: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/closure_fn0.c 13>
+   89 			printf: <>
+   90 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_uint64.c 31>
+   91 			cls_struct_align: <>
+   92 			cls_struct_align_fn: 73
+   93 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_float.c 31>
+   94 			cls_struct_align: <>
+   95 			cls_struct_align_fn: 73
+   96 		test_func_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_multi_schar.c 22>
+   97 			test_func_fn: 69
+   98 		cls_ret_sshort_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_sshort.c 10>
+   99 			printf: <>
+  100 		struct5: test_structure_5 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct5.c 15>
+  101 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_sint32.c 31>
+  102 			cls_struct_align: <>
+  103 			cls_struct_align_fn: 73
+  104 		abort: <>
+  105 		doit: int (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/pyobjc-tc.c 25>
+  106 			printf: <>
+  107 		cls_struct_6byte_fn: cls_struct_6byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_6byte.c 18>
+  108 			printf: <>
+  109 		cls_struct_6byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_6byte.c 36>
+  110 			cls_struct_6byte: <>
+  111 			cls_struct_6byte_fn: 107
+  112 		cls_struct_6byte: <>
+  113 		B_fn: B (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/nested_struct3.c 22>
+  114 			printf: <>
+  115 		B_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/nested_struct2.c 47>
+  116 			B: <>
+  117 			B_fn: 113
+  118 		B: <>
+  119 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_uint32.c 31>
+  120 			cls_struct_align: <>
+  121 			cls_struct_align_fn: 73
+  122 		cls_struct_24byte_fn: cls_struct_24byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_24byte.c 18>
+  123 			printf: <>
+  124 		cls_struct_24byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_24byte.c 41>
+  125 			cls_struct_24byte: <>
+  126 			cls_struct_24byte_fn: 122
+  127 		cls_struct_24byte: <>
+  128 		my_strlen: size_t (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/strlen.c 10>
+  129 			strlen: <>
+  130 		cls_struct_64byte_fn: cls_struct_64byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_64byte.c 23>
+  131 			printf: <>
+  132 		cls_struct_64byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_64byte.c 46>
+  133 			cls_struct_64byte: <>
+  134 			cls_struct_64byte_fn: 130
+  135 		cls_struct_64byte: <>
+  136 		struct7: test_structure_7 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct7.c 16>
+  137 		many: float (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/many.c 12>
+  138 			printf: <>
+  139 		cls_ret_uint_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_uint.c 10>
+  140 			printf: <>
+  141 		cls_ret_uchar_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_uchar.c 10>
+  142 			printf: <>
+  143 		floating: int (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/float.c 12>
+  144 			printf: <>
+  145 		cls_struct_3_1byte_fn: cls_struct_3_1byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_3_1byte.c 18>
+  146 			printf: <>
+  147 		cls_struct_3_1byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_3_1byte.c 35>
+  148 			cls_struct_3_1byte: <>
+  149 			cls_struct_3_1byte_fn: 145
+  150 		cls_struct_3_1byte: <>
+  151 		closure_test_fn5: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/closure_fn5.c 14>
+  152 			printf: <>
+  153 		test_func_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_multi_ushortchar.c 23>
+  154 			test_func_fn: 69
+  155 		ldblit: long double (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/float2.c 13>
+  156 		puts: <>
+  157 		closure_test_fn1: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/closure_fn1.c 13>
+  158 			printf: <>
+  159 		struct1: test_structure_1 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct1.c 17>
+  160 		cls_struct_1_1byte_fn: cls_struct_1_1byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_1_1byte.c 16>
+  161 			printf: <>
+  162 		cls_struct_1_1byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_1_1byte.c 29>
+  163 			cls_struct_1_1byte: <>
+  164 			cls_struct_1_1byte_fn: 160
+  165 		cls_struct_1_1byte: <>
+  166 		closure_test_fn3: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/closure_fn3.c 12>
+  167 			printf: <>
+  168 		cls_ret_schar_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_schar.c 10>
+  169 			printf: <>
+  170 		cls_struct_8byte_fn: cls_struct_8byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_8byte.c 16>
+  171 			printf: <>
+  172 		cls_struct_8byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_8byte.c 30>
+  173 			cls_struct_8byte: <>
+  174 			cls_struct_8byte_fn: 170
+  175 		cls_struct_8byte: <>
+  176 		cls_struct_4_1byte_fn: cls_struct_4_1byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_4_1byte.c 19>
+  177 			printf: <>
+  178 		cls_struct_4_1byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_4_1byte.c 37>
+  179 			cls_struct_4_1byte: <>
+  180 			cls_struct_4_1byte_fn: 176
+  181 		cls_struct_4_1byte: <>
+  182 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_sint16.c 31>
+  183 			cls_struct_align: <>
+  184 			cls_struct_align_fn: 73
+  185 		B_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/nested_struct3.c 38>
+  186 			B: <>
+  187 			B_fn: 113
+  188 		dblit: double (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/float1.c 11>
+  189 		promotion: int (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/promotion.c 9>
+  190 		cls_struct_combined_fn: cls_struct_combined (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/nested_struct1.c 28>
+  191 			printf: <>
+  192 		cls_struct_combined_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/nested_struct.c 53>
+  193 			cls_struct_combined: <>
+  194 			cls_struct_combined_fn: 190
+  195 		cls_struct_combined: <>
+  196 		cls_ret_float_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_float.c 10>
+  197 			printf: <>
+  198 		test_func_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_multi_ushort.c 22>
+  199 			test_func_fn: 69
+  200 		cls_struct_16byte_fn: cls_struct_16byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_16byte.c 17>
+  201 			printf: <>
+  202 		cls_struct_16byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_16byte.c 32>
+  203 			cls_struct_16byte: <>
+  204 			cls_struct_16byte_fn: 200
+  205 		cls_struct_16byte: <>
+  206 		struct4: test_structure_4 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct4.c 17>
+  207 		cls_struct_3byte_fn: cls_struct_3byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_3byte1.c 17>
+  208 			printf: <>
+  209 		cls_struct_3byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_3byte1.c 31>
+  210 			cls_struct_3byte: <>
+  211 			cls_struct_3byte_fn: 207
+  212 		cls_struct_3byte: <>
+  213 		closure_test_fn0: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/closure_fn4.c 14>
+  214 			printf: <>
+  215 		cls_struct_2byte_fn: cls_struct_2byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_2byte.c 17>
+  216 			printf: <>
+  217 		cls_struct_2byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_2byte.c 31>
+  218 			cls_struct_2byte: <>
+  219 			cls_struct_2byte_fn: 215
+  220 		cls_struct_2byte: <>
+  221 		struct6: test_structure_6 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct6.c 15>
+  222 		test_func_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_multi_sshortchar.c 23>
+  223 			test_func_fn: 69
+  224 		cls_ret_ulonglong_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_ulonglong.c 10>
+  225 			printf: <>
+  226 		cls_struct_18byte_fn: cls_struct_18byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_18byte.c 18>
+  227 			printf: <>
+  228 		cls_struct_18byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_18byte.c 36>
+  229 			cls_struct_18byte: <>
+  230 			cls_struct_18byte_fn: 226
+  231 		cls_struct_18byte: <>
+  232 		cls_struct_12byte_fn: cls_struct_12byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_12byte.c 16>
+  233 			printf: <>
+  234 		cls_struct_12byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_12byte.c 31>
+  235 			cls_struct_12byte: <>
+  236 			cls_struct_12byte_fn: 232
+  237 		cls_struct_12byte: <>
+  238 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_pointer.c 31>
+  239 			cls_struct_align: <>
+  240 			cls_struct_align_fn: 73
+  241 		struct8: test_structure_8 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/struct8.c 17>
+  242 		cls_struct_4byte_fn: cls_struct_4byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_4byte.c 17>
+  243 			printf: <>
+  244 		cls_struct_4byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_4byte.c 31>
+  245 			cls_struct_4byte: <>
+  246 			cls_struct_4byte_fn: 242
+  247 		cls_struct_4byte: <>
+  248 		return_ll: long long (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/return_ll.c 9>
+  249 		cls_struct_7byte_fn: cls_struct_7byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_7byte.c 18>
+  250 			printf: <>
+  251 		cls_struct_7byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_7byte.c 36>
+  252 			cls_struct_7byte: <>
+  253 			cls_struct_7byte_fn: 249
+  254 		cls_struct_7byte: <>
+  255 		return_uc: unsigned char (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/return_uc.c 10>
+  256 		cls_struct_combined_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/nested_struct1.c 55>
+  257 			cls_struct_combined: <>
+  258 			cls_struct_combined_fn: 190
+  259 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_longdouble.c 33>
+  260 			cls_struct_align: <>
+  261 			cls_struct_align_fn: 73
+  262 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_uint16.c 31>
+  263 			cls_struct_align: <>
+  264 			cls_struct_align_fn: 73
+  265 		cls_struct_5byte_fn: cls_struct_5byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_5byte.c 17>
+  266 			printf: <>
+  267 		cls_struct_5byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_5byte.c 34>
+  268 			cls_struct_5byte: <>
+  269 			cls_struct_5byte_fn: 265
+  270 		cls_struct_5byte: <>
+  271 		callee: my_ffi_struct (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/problem1.c 16>
+  272 			printf: <>
+  273 		stub: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/problem1.c 30>
+  274 			my_ffi_struct: <>
+  275 			callee: 271
+  276 		my_ffi_struct: <>
+  277 		cls_ret_double_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_double.c 10>
+  278 			printf: <>
+  279 		cls_struct_9byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_9byte2.c 32>
+  280 			cls_struct_9byte: <>
+  281 			cls_struct_9byte_fn: 45
+  282 		closure_test_fn2: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/closure_fn2.c 12>
+  283 			printf: <>
+  284 		cls_ret_sint_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_sint.c 10>
+  285 			printf: <>
+  286 		test_func_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_multi_uchar.c 23>
+  287 			test_func_fn: 69
+  288 		cls_struct_20byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_20byte.c 32>
+  289 			cls_struct_20byte: <>
+  290 			cls_struct_20byte_fn: 80
+  291 		cls_struct_align_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_align_sint64.c 31>
+  292 			cls_struct_align: <>
+  293 			cls_struct_align_fn: 73
+  294 		cls_struct_3byte_fn1: cls_struct_3byte_1 (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_3byte2.c 17>
+  295 			printf: <>
+  296 		cls_struct_3byte_gn1: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_3byte2.c 31>
+  297 			cls_struct_3byte_1: <>
+  298 			cls_struct_3byte_fn1: 294
+  299 		cls_struct_3byte_1: <>
+  300 		cls_struct_19byte_fn: cls_struct_19byte (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_19byte.c 19>
+  301 			printf: <>
+  302 		cls_struct_19byte_gn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_19byte.c 39>
+  303 			cls_struct_19byte: <>
+  304 			cls_struct_19byte_fn: 300
+  305 		cls_struct_19byte: <>
+  306 		cls_ret_ushort_fn: void (), <./RubyCocoa/misc/libffi/testsuite/libffi.call/cls_ushort.c 10>
+  307 			printf: <>

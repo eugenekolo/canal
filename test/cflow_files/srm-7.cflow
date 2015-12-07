@@ -1,0 +1,162 @@
+    1 	main: int (), <./srm/lib/getopt.c 991>
+    2 		strrchr: <>
+    3 		getopt_long: int (), <./srm/lib/getopt1.c 67>
+    4 		fprintf: <>
+    5 		exit: <>
+    6 		atoi: <>
+    7 		error: void (), <./srm/src/error.c 8>
+    8 			va_start: <>
+    9 			vsnprintf: int (), <./srm/lib/snprintf.c 702>
+   10 				dopr: void (), <./srm/lib/snprintf.c 139>
+   11 					dopr_outch: void (), <./srm/lib/snprintf.c 695>
+   12 					isdigit: <>
+   13 					char_to_int: <>
+   14 					va_arg: <>
+   15 					fmtint: void (), <./srm/lib/snprintf.c 431>
+   16 						MAX: <>
+   17 						dprint: <>
+   18 						dopr_outch: void (), <./srm/lib/snprintf.c 695>
+   19 					fmtfp: void (), <./srm/lib/snprintf.c 556>
+   20 						abs_val: LDOUBLE (), <./srm/lib/snprintf.c 521>
+   21 						round: long (), <./srm/lib/snprintf.c 544>
+   22 						pow10: LDOUBLE (), <./srm/lib/snprintf.c 531>
+   23 						dprint: <>
+   24 						dopr_outch: void (), <./srm/lib/snprintf.c 695>
+   25 					fmtstr: void (), <./srm/lib/snprintf.c 392>
+   26 						dopr_outch: void (), <./srm/lib/snprintf.c 695>
+   27 				strlen: <>
+   28 			fprintf: <>
+   29 			va_end: <>
+   30 		printf: <>
+   31 		init_random: void (), <./srm/src/random.c 35>
+   32 			arc4random_addrandom: <>
+   33 			stat: <>
+   34 			S_ISCHR: <>
+   35 			open: <>
+   36 			srand: <>
+   37 			seed_random: void (), <./srm/src/random.c 16>
+   38 				arc4random_stir: <>
+   39 				read: <>
+   40 				rand: <>
+   41 				gettimeofday: <>
+   42 				getpid: <>
+   43 				srand: <>
+   44 		getpid: <>
+   45 		tree_walker: int (), <./srm/src/tree_walker.c 209>
+   46 			strlen: <>
+   47 			fts_open: <>
+   48 			errorp: void (), <./srm/src/error.c 18>
+   49 				va_start: <>
+   50 				vsnprintf: 9
+   51 				snprintf: , <./srm/lib/snprintf.c 713>
+   52 					VA_START: <>
+   53 					VA_SHIFT: <>
+   54 					vsnprintf: 9
+   55 					strlen: <>
+   56 				perror: <>
+   57 				va_end: <>
+   58 			fts_read: <>
+   59 			process_file: int (), <./srm/src/tree_walker.c 96>
+   60 				strlen: <>
+   61 				error: 7
+   62 				prompt_file: int (), <./srm/src/tree_walker.c 54>
+   63 					strlen: <>
+   64 					malloc: <>
+   65 					errorp: 48
+   66 					printf: <>
+   67 					fflush: <>
+   68 					check_perms: int (), <./srm/src/tree_walker.c 39>
+   69 						open: <>
+   70 						chmod: <>
+   71 						errorp: 48
+   72 						close: <>
+   73 					open: <>
+   74 					snprintf: 51
+   75 					prompt_user: int (), <./srm/src/tree_walker.c 31>
+   76 						printf: <>
+   77 						fgets: <>
+   78 						strncmp: if (), <./srm/lib/getopt.c 845>
+   79 					free: <>
+   80 					close: <>
+   81 				rename_unlink: int (), <./srm/src/rename_unlink.c 32>
+   82 					strlen: <>
+   83 					alloca: <>
+   84 					strncpy: <>
+   85 					strrchr: <>
+   86 					random_char: char (), <./srm/src/random.c 50>
+   87 						arc4random: <>
+   88 						read: <>
+   89 						rand: <>
+   90 					isalnum: <>
+   91 					lstat: <>
+   92 					S_ISDIR: <>
+   93 					empty_directory: int (), <./srm/src/rename_unlink.c 13>
+   94 						opendir: <>
+   95 						readdir: <>
+   96 						strcmp: <>
+   97 						closedir: <>
+   98 					rename: <>
+   99 					sync: <>
+  100 					perror: <>
+  101 					exit: <>
+  102 					rmdir: <>
+  103 					unlink: <>
+  104 				errorp: 48
+  105 				sunlink: int (), <./srm/src/sunlink.c 326>
+  106 					lstat: <>
+  107 					S_ISREG: <>
+  108 					rename_unlink: 81
+  109 					open: <>
+  110 					fcntl: <>
+  111 					close: <>
+  112 					fstatfs: <>
+  113 					printf: <>
+  114 					fflush: <>
+  115 					ioctl: <>
+  116 					init_write_buffer: int (), <./srm/src/sunlink.c 70>
+  117 						free: <>
+  118 						malloc: <>
+  119 					overwrite_file: void (), <./srm/src/sunlink.c 258>
+  120 						printf: <>
+  121 						fflush: <>
+  122 						overwrite_random: void (), <./srm/src/sunlink.c 224>
+  123 							overwrite: void (), <./srm/src/sunlink.c 177>
+  124 								lseek: <>
+  125 								randomize_buffer: void (), <./srm/src/random.c 65>
+  126 									arc4random: <>
+  127 									seed_random: 37
+  128 									read: <>
+  129 									rand: <>
+  130 								align_buffer: unsigned char * (), <./srm/src/sunlink.c 160>
+  131 								write: <>
+  132 								read: <>
+  133 								memcmp: <>
+  134 								verification_failure: void (), <./srm/src/sunlink.c 167>
+  135 									printf: <>
+  136 									fflush: <>
+  137 								update_progress: void (), <./srm/src/sunlink.c 142>
+  138 									printf: <>
+  139 									fflush: <>
+  140 								flush: void (), <./srm/src/sunlink.c 127>
+  141 									fcntl: <>
+  142 									fsync: <>
+  143 									fdatasync: <>
+  144 						overwrite_byte: void (), <./srm/src/sunlink.c 232>
+  145 							memset: <>
+  146 							overwrite: 123
+  147 						overwrite_bytes: void (), <./srm/src/sunlink.c 237>
+  148 							overwrite: 123
+  149 					ftruncate: <>
+  150 					strlen: <>
+  151 					alloca: <>
+  152 					snprintf: 51
+  153 			fts_set: <>
+  154 			nftw: <>
+  155 			ftw_process_path: int (), <./srm/src/tree_walker.c 171>
+  156 				strlen: <>
+  157 				alloca: <>
+  158 				strncpy: <>
+  159 				process_file: 59
+  160 		snprintf: 51
+  161 		sprintf: <>
+  162 		strcmp: <>

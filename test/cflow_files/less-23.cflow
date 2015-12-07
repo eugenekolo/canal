@@ -1,0 +1,1352 @@
+    1 	main: int (), <./less/scrsize.c 83>
+    2 		printf: <>
+    3 		getchar: <>
+    4 		lstrtol: long (), <./less/lessecho.c 73>
+    5 		pr_error: void (), <./less/lessecho.c 65>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		strcmp: <>
+    9 		pr_usage: void (), <./less/lessecho.c 42>
+   10 			fprintf: <>
+   11 		pr_version: void (), <./less/lessecho.c 49>
+   12 			printf: <>
+   13 		strchr: char * (), <./less/os.c 299>
+   14 		strlen: <>
+   15 		COMPAT_MODE: <>
+   16 		lgetenv: public char * (), <./less/decode.c 564>
+   17 			cmd_decode: int (), <./less/decode.c 509>
+   18 				cmd_search: int (), <./less/decode.c 417>
+   19 			getenv: <>
+   20 		getenv: <>
+   21 		ecalloc: public VOID_POINTER (), <./less/main.c 366>
+   22 		strcpy: <>
+   23 		strcat: <>
+   24 		putenv: <>
+   25 		GetConsoleTitle: <>
+   26 		isatty: int (), <./less/os.c 345>
+   27 		get_term: public void (), <./less/screen.c 1089>
+   28 			get_clock: void (), <./less/screen.c 858>
+   29 				clock: <>
+   30 			gettextinfo: <>
+   31 			GetStdHandle: <>
+   32 			SET_BINARY: <>
+   33 			GetConsoleScreenBufferInfo: <>
+   34 			ReadConsoleOutputAttribute: <>
+   35 			scrsize: public void (), <./less/screen.c 699>
+   36 				gettextinfo: <>
+   37 				GetConsoleScreenBufferInfo: <>
+   38 				getenv: <>
+   39 				popen: <>
+   40 				fscanf: <>
+   41 				pclose: if (), <./less/tags.c 590>
+   42 				ioctl: <>
+   43 				lgetenv: 16
+   44 				atoi: <>
+   45 				ltgetnum: int (), <./less/screen.c 668>
+   46 					ltget_env: char * (), <./less/screen.c 626>
+   47 						lgetenv: 16
+   48 						strcmp: <>
+   49 						ecalloc: public VOID_POINTER (), <./less/main.c 366>
+   50 						save: public char * (), <./less/main.c 351>
+   51 							ecalloc: public VOID_POINTER (), <./less/main.c 366>
+   52 							strlen: <>
+   53 							strcpy: <>
+   54 						strlen: <>
+   55 						sprintf: <>
+   56 						strcpy: <>
+   57 						strcat: <>
+   58 					atoi: <>
+   59 					tgetnum: <>
+   60 			pos_init: public void (), <./less/position.c 107>
+   61 				get_scrpos: public void (), <./less/position.c 180>
+   62 				free: <>
+   63 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+   64 				pos_clear: public void (), <./less/position.c 95>
+   65 			lgetenv: 16
+   66 			homefile: public char * (), <./less/filename.c 265>
+   67 				dirfile: char * (), <./less/filename.c 225>
+   68 					strlen: <>
+   69 					calloc: <>
+   70 					SNPRINTF3: <>
+   71 					shell_unquote: public char * (), <./less/filename.c 67>
+   72 						ecalloc: public VOID_POINTER (), <./less/main.c 366>
+   73 						strlen: <>
+   74 						get_meta_escape: public char * (), <./less/filename.c 106>
+   75 							lgetenv: 16
+   76 						strncmp: <>
+   77 					open: <>
+   78 					free: <>
+   79 					close: <>
+   80 				lgetenv: 16
+   81 				calloc: <>
+   82 				searchpath: <>
+   83 				strcpy: <>
+   84 				free: <>
+   85 			ecalloc: public VOID_POINTER (), <./less/main.c 366>
+   86 			strlen: <>
+   87 			sprintf: <>
+   88 			free: <>
+   89 			putenv: <>
+   90 			tgetent: <>
+   91 			ltgetflag: int (), <./less/screen.c 655>
+   92 				ltget_env: 46
+   93 				tgetflag: <>
+   94 			ltgetnum: 45
+   95 			ltgetstr: char * (), <./less/screen.c 681>
+   96 				ltget_env: 46
+   97 				tgetstr: <>
+   98 			tmodes: void (), <./less/screen.c 1427>
+   99 				ltgetstr: 95
+  100 			strcpy: <>
+  101 			tgoto: <>
+  102 			cheaper: char * (), <./less/screen.c 1408>
+  103 				cost: int (), <./less/screen.c 1394>
+  104 					tputs: <>
+  105 					inc_costcount: int (), <./less/screen.c 1386>
+  106 		init_cmds: public void (), <./less/decode.c 305>
+  107 			COMPAT_MODE: <>
+  108 			add_UNIX03cmd_table: public void (), <./less/decode.c 368>
+  109 				add_cmd_table: int (), <./less/decode.c 338>
+  110 					calloc: <>
+  111 					expand_special_keys: void (), <./less/decode.c 244>
+  112 						special_key_str: public char * (), <./less/screen.c 916>
+  113 							ltgetstr: 95
+  114 							CONTROL: <>
+  115 						strlen: <>
+  116 				error: public void (), <./less/output.c 481>
+  117 					squish_check: public void (), <./less/forwback.c 84>
+  118 						repaint: public void (), <./less/jump.c 97>
+  119 							get_scrpos: 61
+  120 							pos_clear: 64
+  121 							jump_loc: <>
+  122 					at_exit: public void (), <./less/screen.c 2259>
+  123 						tputs: <>
+  124 						putchr: public int (), <./less/output.c 295>
+  125 							utf_len: switch (), <./less/charset.c 566>
+  126 							get_wchar: public LWCHAR (), <./less/charset.c 563>
+  127 							clear_bot: public void (), <./less/screen.c 2195>
+  128 								lower_left: public void (), <./less/screen.c 1853>
+  129 									tputs: <>
+  130 									putchr: 124
+  131 									flush: public void (), <./less/output.c 97>
+  132 										WIN32textout: public void (), <./less/screen.c 2520>
+  133 											WriteConsole: <>
+  134 											cputs: <>
+  135 										memchr: <>
+  136 										is_ansi_end: public int (), <./less/line.c 538>
+  137 											is_ascii_char: public int (), <./less/line.c 142>
+  138 											strchr: 13
+  139 										WIN32setcolors: public void (), <./less/screen.c 2510>
+  140 											SETCOLORS: <>
+  141 										strtol: <>
+  142 										strcpy: <>
+  143 										write: <>
+  144 								line_left: public void (), <./less/screen.c 1867>
+  145 									tputs: <>
+  146 									putchr: 124
+  147 									flush: 131
+  148 									GetConsoleScreenBufferInfo: <>
+  149 									wherey: <>
+  150 								clear_eol_bot: void (), <./less/screen.c 2178>
+  151 									clear_eol: public void (), <./less/screen.c 2119>
+  152 										tputs: <>
+  153 										putchr: 124
+  154 										flush: 131
+  155 										clreol: <>
+  156 										memset: <>
+  157 										GetConsoleScreenBufferInfo: <>
+  158 										MAKEATTR: <>
+  159 										FillConsoleOutputAttribute: <>
+  160 										FillConsoleOutputCharacter: <>
+  161 									tputs: <>
+  162 									putchr: 124
+  163 								at_exit: 122
+  164 								at_enter: public void (), <./less/screen.c 2220>
+  165 									apply_at_specials: public int (), <./less/screen.c 2305>
+  166 									tputs: <>
+  167 									putchr: 124
+  168 									flush: 131
+  169 									SETCOLORS: <>
+  170 							putchr: 124
+  171 							flush: 131
+  172 						flush: 131
+  173 						SETCOLORS: <>
+  174 					clear_bot: 127
+  175 					at_enter: 164
+  176 					less_printf: <>
+  177 					putchr: 124
+  178 					putstr: <>
+  179 					get_return: public void (), <./less/output.c 462>
+  180 					lower_left: 128
+  181 					flush: 131
+  182 			add_fcmd_table: public void (), <./less/decode.c 380>
+  183 				add_cmd_table: 109
+  184 				error: 116
+  185 			add_ecmd_table: public void (), <./less/decode.c 392>
+  186 				add_cmd_table: 109
+  187 				error: 116
+  188 			add_hometable: public void (), <./less/decode.c 748>
+  189 				lgetenv: 16
+  190 				save: 50
+  191 				homefile: 66
+  192 				lesskey: public int (), <./less/decode.c 678>
+  193 					shell_unquote: 71
+  194 					open: <>
+  195 					free: <>
+  196 					filesize: public POSITION (), <./less/filename.c 1023>
+  197 						fstat: <>
+  198 						seek_filesize: POSITION (), <./less/filename.c 504>
+  199 							lseek: <>
+  200 					close: <>
+  201 					calloc: <>
+  202 					lseek: <>
+  203 					read: <>
+  204 					old_lesskey: int (), <./less/decode.c 603>
+  205 						add_fcmd_table: 182
+  206 					new_lesskey: int (), <./less/decode.c 624>
+  207 						gint: int (), <./less/decode.c 589>
+  208 						add_fcmd_table: 182
+  209 						add_ecmd_table: 185
+  210 						add_var_table: void (), <./less/decode.c 404>
+  211 							add_cmd_table: 109
+  212 							error: 116
+  213 				error: 116
+  214 				free: <>
+  215 		init_charset: public void (), <./less/charset.c 374>
+  216 			setlocale: <>
+  217 			set_charset: void (), <./less/charset.c 303>
+  218 				lgetenv: 16
+  219 				icharset: <>
+  220 				ichardef: void (), <./less/charset.c 134>
+  221 					error: 116
+  222 					quit: public void (), <./less/main.c 432>
+  223 				nl_langinfo: <>
+  224 				strstr: <>
+  225 				ilocale: void (), <./less/charset.c 234>
+  226 			lgetenv: 16
+  227 			setbinfmt: void (), <./less/charset.c 254>
+  228 				strchr: 13
+  229 		init_line: public void (), <./less/line.c 75>
+  230 			lgetenv: 16
+  231 			ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  232 		init_cmdhist: public void (), <./less/cmdbuf.c 1359>
+  233 			histfile_name: char * (), <./less/cmdbuf.c 1322>
+  234 				lgetenv: 16
+  235 				strcmp: <>
+  236 				save: 50
+  237 				strlen: <>
+  238 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  239 				SNPRINTF2: <>
+  240 			fopen: <>
+  241 			free: <>
+  242 			fgets: while (), <./less/tags.c 550>
+  243 			strncmp: <>
+  244 			strlen: <>
+  245 			fclose: <>
+  246 			strcmp: <>
+  247 			cmd_addhist: public void (), <./less/cmdbuf.c 717>
+  248 				strlen: <>
+  249 				strcmp: <>
+  250 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  251 				save: 50
+  252 		init_option: public void (), <./less/opttbl.c 482>
+  253 			lgetenv: 16
+  254 		init_prompt: public void (), <./less/prompt.c 71>
+  255 			save: 50
+  256 		scan_option: public void (), <./less/option.c 42>
+  257 			propt: char * (), <./less/option.c 489>
+  258 				sprintf: <>
+  259 				prchar: public char * (), <./less/charset.c 418>
+  260 			getnum: public int (), <./less/option.c 639>
+  261 				skipsp: <>
+  262 				num_error: int (), <./less/option.c 612>
+  263 					error: 116
+  264 					quit: public void (), <./less/main.c 432>
+  265 			optstring: char * (), <./less/option.c 570>
+  266 				nostring: void (), <./less/option.c 547>
+  267 					error: 116
+  268 				quit: public void (), <./less/main.c 432>
+  269 				strchr: 13
+  270 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  271 				strncpy: <>
+  272 			save: 50
+  273 			ungetsc: public void (), <./less/command.c 802>
+  274 				strlen: <>
+  275 				ungetcc: public void (), <./less/command.c 784>
+  276 					error: 116
+  277 					quit: public void (), <./less/main.c 432>
+  278 			ASCII_IS_LOWER: <>
+  279 			findopt: loption * (), <./less/opttbl.c 507>
+  280 				ASCII_TO_UPPER: <>
+  281 			findopt_name: loption * (), <./less/opttbl.c 545>
+  282 				sprefix: public int (), <./less/main.c 399>
+  283 				is_optchar: int (), <./less/opttbl.c 526>
+  284 					ASCII_IS_UPPER: <>
+  285 					ASCII_IS_LOWER: <>
+  286 				strlen: <>
+  287 			error: 116
+  288 			quit: public void (), <./less/main.c 432>
+  289 			flip_triple: int (), <./less/option.c 474>
+  290 		save: 50
+  291 		isoptstring: <>
+  292 		isoptpending: public int (), <./less/option.c 538>
+  293 		nopendopt: public void (), <./less/option.c 559>
+  294 			nostring: 266
+  295 			propt: 257
+  296 		quit: public void (), <./less/main.c 432>
+  297 		get_quit_at_eof: public int (), <./less/option.c 711>
+  298 		get_ifile: public IFILE (), <./less/ifile.c 227>
+  299 		lglob: public char * (), <./less/filename.c 620>
+  300 			fexpand: public char * (), <./less/filename.c 315>
+  301 				fchar_ifile: <>
+  302 				strlen: <>
+  303 				get_filename: <>
+  304 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  305 				strcpy: <>
+  306 			shell_unquote: 71
+  307 			DECL_GLOB_LIST: <>
+  308 			GLOB_LIST: <>
+  309 			GLOB_LIST_FAILED: <>
+  310 			free: <>
+  311 			SCAN_GLOB_LIST: <>
+  312 			INIT_GLOB_LIST: <>
+  313 			shell_quote: public char * (), <./less/filename.c 147>
+  314 				get_meta_escape: 74
+  315 				strlen: <>
+  316 				metachar: int (), <./less/filename.c 137>
+  317 					strchr: 13
+  318 					metachars: char * (), <./less/filename.c 120>
+  319 						lgetenv: 16
+  320 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  321 				SNPRINTF3: <>
+  322 				strcpy: <>
+  323 			strlen: <>
+  324 			ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  325 			sprintf: <>
+  326 			GLOB_LIST_DONE: <>
+  327 			DECL_GLOB_NAME: <>
+  328 			GLOB_FIRST_NAME: <>
+  329 			GLOB_FIRST_FAILED: <>
+  330 			SNPRINTF3: <>
+  331 			strcpy: <>
+  332 			GLOB_NEXT_NAME: <>
+  333 			GLOB_NAME_DONE: <>
+  334 			get_meta_escape: 74
+  335 			lgetenv: 16
+  336 			metachars: 318
+  337 			SNPRINTF4: <>
+  338 			shellcmd: FILE * (), <./less/filename.c 569>
+  339 				lgetenv: 16
+  340 				shell_quote: 313
+  341 				popen: <>
+  342 				strlen: <>
+  343 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  344 				SNPRINTF3: <>
+  345 				shell_coption: public char * (), <./less/filename.c 1046>
+  346 				free: <>
+  347 				SET_BINARY: <>
+  348 			readfd: char * (), <./less/filename.c 520>
+  349 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  350 				getc: <>
+  351 				strcpy: <>
+  352 				free: <>
+  353 				strlen: <>
+  354 			pclose: if (), <./less/tags.c 590>
+  355 			save: 50
+  356 		init_textlist: public void (), <./less/edit.c 64>
+  357 			get_meta_escape: 74
+  358 			strlen: <>
+  359 			skipsp: <>
+  360 			strncmp: <>
+  361 		forw_textlist: public char * (), <./less/edit.c 108>
+  362 			strlen: <>
+  363 		prev_ifile: <>
+  364 		free: <>
+  365 		shell_quote: 313
+  366 		SET_BINARY: <>
+  367 		nifile: public int (), <./less/ifile.c 201>
+  368 		edit_stdin: public int (), <./less/edit.c 707>
+  369 			isatty: int (), <./less/os.c 345>
+  370 			error: 116
+  371 			quit: public void (), <./less/main.c 432>
+  372 			edit: public int (), <./less/edit.c 205>
+  373 				edit_ifile: public int (), <./less/edit.c 218>
+  374 					end_logfile: public void (), <./less/ch.c 361>
+  375 						ierror: public void (), <./less/output.c 535>
+  376 							at_exit: 122
+  377 							clear_bot: 127
+  378 							at_enter: 164
+  379 							less_printf: <>
+  380 							putstr: <>
+  381 							flush: 131
+  382 						ch_forw_get: public int (), <./less/ch.c 566>
+  383 							ch_get: <>
+  384 						ABORT_SIGS: <>
+  385 						close: <>
+  386 					save_curr_ifile: public IFILE (), <./less/edit.c 643>
+  387 						hold_ifile: <>
+  388 					ch_getflags: public int (), <./less/ch.c 858>
+  389 					close_file: void (), <./less/edit.c 161>
+  390 						get_scrpos: 61
+  391 						store_pos: <>
+  392 						lastmark: public void (), <./less/mark.c 164>
+  393 						ch_close: public void (), <./less/ch.c 815>
+  394 							ch_delbufs: void (), <./less/ch.c 734>
+  395 								free: <>
+  396 								init_hashtbl: void (), <./less/ch.c 719>
+  397 									END_OF_HCHAIN: <>
+  398 							close: <>
+  399 							free: <>
+  400 							set_filestate: <>
+  401 						close_altfile: public void (), <./less/filename.c 901>
+  402 							kill: <>
+  403 							pclose: if (), <./less/tags.c 590>
+  404 							lgetenv: 16
+  405 							strlen: <>
+  406 							ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  407 							SNPRINTF2: <>
+  408 							shellcmd: 338
+  409 							free: <>
+  410 						get_filename: <>
+  411 						free: <>
+  412 					held_ifile: <>
+  413 					del_ifile: <>
+  414 					unsave_ifile: public void (), <./less/edit.c 651>
+  415 						hold_ifile: <>
+  416 					save: 50
+  417 					get_filename: <>
+  418 					open_altfile: public char * (), <./less/filename.c 810>
+  419 						ch_ungetchar: public void (), <./less/ch.c 347>
+  420 							error: 116
+  421 						lgetenv: 16
+  422 						strcmp: <>
+  423 						error: 116
+  424 						strlen: <>
+  425 						ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  426 						SNPRINTF1: <>
+  427 						shellcmd: 338
+  428 						free: <>
+  429 						fileno: <>
+  430 						SET_BINARY: <>
+  431 						read: <>
+  432 						pclose: if (), <./less/tags.c 590>
+  433 						save: 50
+  434 						readfd: 348
+  435 					shell_unquote: 71
+  436 					strcmp: <>
+  437 					SET_BINARY: <>
+  438 					bad_file: public char * (), <./less/filename.c 977>
+  439 						shell_unquote: 71
+  440 						is_dir: public int (), <./less/filename.c 941>
+  441 							shell_unquote: 71
+  442 							stat: <>
+  443 							S_ISDIR: <>
+  444 							open: <>
+  445 							close: <>
+  446 							free: <>
+  447 						ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  448 						strlen: <>
+  449 						strcpy: <>
+  450 						strcat: <>
+  451 						stat: <>
+  452 						errno_message: public char * (), <./less/os.c 233>
+  453 							strerror: char * (), <./less/os.c 211>
+  454 								sprintf: <>
+  455 							strlen: <>
+  456 							ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  457 							SNPRINTF2: <>
+  458 						S_ISREG: <>
+  459 						free: <>
+  460 					error: 116
+  461 					free: <>
+  462 					close_altfile: 401
+  463 					quit: public void (), <./less/main.c 432>
+  464 					reedit_ifile: public void (), <./less/edit.c 662>
+  465 						unsave_ifile: 414
+  466 						next_ifile: <>
+  467 						prev_ifile: <>
+  468 						edit_ifile: 373
+  469 						edit_inext: int (), <./less/edit.c 589>
+  470 							edit_istep: int (), <./less/edit.c 546>
+  471 								next_ifile: <>
+  472 								prev_ifile: <>
+  473 								edit_ifile: 373
+  474 								ABORT_SIGS: <>
+  475 						edit_iprev: int (), <./less/edit.c 604>
+  476 							edit_istep: 470
+  477 						quit: public void (), <./less/main.c 432>
+  478 					open: <>
+  479 					errno_message: 452
+  480 					opened: <>
+  481 					bin_file: public int (), <./less/filename.c 470>
+  482 						seekable: public int (), <./less/ch.c 753>
+  483 							isatty: int (), <./less/os.c 345>
+  484 							lseek: <>
+  485 						lseek: <>
+  486 						read: <>
+  487 						IS_CSI_START: <>
+  488 						is_ansi_middle: public int (), <./less/line.c 550>
+  489 							is_ascii_char: public int (), <./less/line.c 142>
+  490 							is_ansi_end: 136
+  491 							strchr: 13
+  492 						binary_char: <>
+  493 					query: public int (), <./less/output.c 554>
+  494 						clear_bot: 127
+  495 						less_printf: <>
+  496 						getchr: public int (), <./less/ttyin.c 103>
+  497 							flush: 131
+  498 							ABORT_SIGS: <>
+  499 							WIN32getch: public char (), <./less/screen.c 2476>
+  500 								win32_kbhit: int (), <./less/screen.c 2411>
+  501 									read: <>
+  502 									PeekConsoleInput: <>
+  503 									ReadConsoleInput: <>
+  504 								Sleep: <>
+  505 								ABORT_SIGS: <>
+  506 							getch: <>
+  507 							iread: public int (), <./less/os.c 70>
+  508 							quit: public void (), <./less/main.c 432>
+  509 							CONTROL: <>
+  510 						putchr: 124
+  511 						lower_left: 128
+  512 						flush: 131
+  513 					close: <>
+  514 					set_open: <>
+  515 					get_pos: <>
+  516 					ch_init: public void (), <./less/ch.c 774>
+  517 						get_filestate: <>
+  518 						calloc: <>
+  519 						init_hashtbl: 396
+  520 						seekable: 482
+  521 						set_filestate: <>
+  522 						ch_flush: public void (), <./less/ch.c 629>
+  523 							filesize: 196
+  524 							lseek: <>
+  525 							error: 116
+  526 					use_logfile: public void (), <./less/edit.c 739>
+  527 						ch_getflags: 388
+  528 						shell_unquote: 71
+  529 						open: <>
+  530 						close: <>
+  531 						query: 493
+  532 						creat: <>
+  533 						lseek: <>
+  534 						free: <>
+  535 						quit: public void (), <./less/main.c 432>
+  536 						error: 116
+  537 						SET_BINARY: <>
+  538 					stat: <>
+  539 					ungetsc: 273
+  540 					flush: 131
+  541 					pos_clear: 64
+  542 					clr_linenum: public void (), <./less/linenum.c 78>
+  543 					clr_hilite: public void (), <./less/search.c 603>
+  544 						free: <>
+  545 					cmd_addhist: 247
+  546 				get_ifile: public IFILE (), <./less/ifile.c 227>
+  547 		cat_file: public void (), <./less/edit.c 722>
+  548 			ch_forw_get: 382
+  549 			putchr: 124
+  550 			flush: 131
+  551 		edit_first: public int (), <./less/edit.c 525>
+  552 			edit_next: public int (), <./less/edit.c 597>
+  553 				edit_istep: 470
+  554 		edit_next: 552
+  555 		error: 116
+  556 		init_mark: public void (), <./less/mark.c 39>
+  557 		open_getchr: public void (), <./less/ttyin.c 37>
+  558 			memset: <>
+  559 			CreateFile: <>
+  560 			GetConsoleMode: <>
+  561 			SetConsoleMode: <>
+  562 			dup: <>
+  563 			close: <>
+  564 			open: <>
+  565 		raw_mode: public void (), <./less/screen.c 261>
+  566 			tcgetattr: <>
+  567 			cfgetospeed: <>
+  568 			CONTROL: <>
+  569 			fsync: <>
+  570 			tcsetattr: <>
+  571 			ioctl: <>
+  572 			LSIGNAL: <>
+  573 			setmode: <>
+  574 		init_signals: public void (), <./less/signal.c 143>
+  575 			LSIGNAL: <>
+  576 			u_interrupt: RETSIGTYPE (), <./less/signal.c 45>
+  577 				LSIGNAL: <>
+  578 				u_interrupt: 576
+  579 				kbhit: if (), <./less/os.c 83>
+  580 				getkey: <>
+  581 				quit: public void (), <./less/main.c 432>
+  582 				intread: public void (), <./less/os.c 186>
+  583 			SetConsoleCtrlHandler: <>
+  584 			wbreak_handler: BOOL WINAPI (), <./less/signal.c 123>
+  585 			stop: RETSIGTYPE (), <./less/signal.c 74>
+  586 				LSIGNAL: <>
+  587 				stop: 585
+  588 				intread: public void (), <./less/os.c 186>
+  589 			winch: public RETSIGTYPE (), <./less/signal.c 105>
+  590 				LSIGNAL: <>
+  591 				winch: 589
+  592 				intread: public void (), <./less/os.c 186>
+  593 		findtag: <>
+  594 		edit_tagfile: public int (), <./less/tags.c 381>
+  595 		tagsearch: public POSITION (), <./less/tags.c 204>
+  596 		init: public void (), <./less/screen.c 1567>
+  597 			tputs: <>
+  598 			putchr: 124
+  599 			win32_init_term: void (), <./less/screen.c 1516>
+  600 				GetConsoleScreenBufferInfo: <>
+  601 				CreateConsoleScreenBuffer: <>
+  602 				SetConsoleScreenBufferSize: <>
+  603 				SetConsoleActiveScreenBuffer: <>
+  604 			initcolor: void (), <./less/screen.c 1483>
+  605 				SETCOLORS: <>
+  606 				ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  607 				free: <>
+  608 			flush: 131
+  609 		commands: public void (), <./less/command.c 914>
+  610 			new_ifile: struct ifile * (), <./less/ifile.c 108>
+  611 			cmd_accept: public void (), <./less/cmdbuf.c 761>
+  612 				cmd_addhist: 247
+  613 			psignals: public void (), <./less/signal.c 196>
+  614 				LSIGNAL: <>
+  615 				clear_bot: 127
+  616 				deinit: public void (), <./less/screen.c 1602>
+  617 					tputs: <>
+  618 					putchr: 124
+  619 					SETCOLORS: <>
+  620 					win32_deinit_term: void (), <./less/screen.c 1551>
+  621 						CloseHandle: <>
+  622 						SetConsoleActiveScreenBuffer: <>
+  623 					clreol: <>
+  624 				flush: 131
+  625 				raw_mode: 565
+  626 				kill: <>
+  627 				getpid: <>
+  628 				stop: 585
+  629 				init: 596
+  630 				get_term: 27
+  631 				calc_jump_sline: public void (), <./less/optfunc.c 218>
+  632 				quit: public void (), <./less/main.c 432>
+  633 				bell: public void (), <./less/screen.c 2088>
+  634 					vbell: public void (), <./less/screen.c 2007>
+  635 						tputs: <>
+  636 						putchr: 124
+  637 						ScreenVisualBell: <>
+  638 						create_flash: void (), <./less/screen.c 1948>
+  639 							at_enter: 164
+  640 							at_exit: 122
+  641 							ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  642 							free: <>
+  643 							malloc: <>
+  644 						delay: void (), <./less/screen.c 893>
+  645 							dummy_func: void (), <./less/screen.c 886>
+  646 						malloc: <>
+  647 						gettext: <>
+  648 						puttext: <>
+  649 						free: <>
+  650 						clear: public void (), <./less/screen.c 2100>
+  651 							tputs: <>
+  652 							putchr: 124
+  653 							flush: 131
+  654 							win32_clear: void (), <./less/screen.c 1756>
+  655 								GetConsoleScreenBufferInfo: <>
+  656 								MAKEATTR: <>
+  657 								FillConsoleOutputCharacter: <>
+  658 								FillConsoleOutputAttribute: <>
+  659 						Sleep: <>
+  660 						repaint: 118
+  661 					beep: void (), <./less/screen.c 2071>
+  662 						putchr: 124
+  663 						CONTROL: <>
+  664 						MessageBeep: <>
+  665 						write: <>
+  666 				error: 116
+  667 			quit: public void (), <./less/main.c 432>
+  668 			check_winch: public void (), <./less/screen.c 1899>
+  669 				flush: 131
+  670 				GetConsoleScreenBufferInfo: <>
+  671 				SetConsoleScreenBufferSize: <>
+  672 				pos_init: 60
+  673 			cmd_reset: public void (), <./less/cmdbuf.c 117>
+  674 			prompt: void (), <./less/command.c 633>
+  675 				make_display: void (), <./less/command.c 593>
+  676 					empty_screen: public int (), <./less/position.c 153>
+  677 						empty_lines: public int (), <./less/position.c 159>
+  678 					jump_loc: <>
+  679 					ch_zero: <>
+  680 					reopen_curr_ifile: public void (), <./less/edit.c 696>
+  681 						save_curr_ifile: 386
+  682 						close_file: 389
+  683 						reedit_ifile: 464
+  684 					jump_forw: public void (), <./less/jump.c 31>
+  685 						ch_end_seek: public int (), <./less/ch.c 482>
+  686 						error: 116
+  687 						lastmark: public void (), <./less/mark.c 164>
+  688 						pos_clear: 64
+  689 						ch_tell: public POSITION (), <./less/ch.c 555>
+  690 						back_line: public POSITION (), <./less/input.c 215>
+  691 							ch_zero: <>
+  692 							null_line: public void (), <./less/line.c 1119>
+  693 							prep_hilite: public void (), <./less/search.c 1385>
+  694 								prev_pattern: int (), <./less/search.c 233>
+  695 								forw_raw_line: public POSITION (), <./less/line.c 1131>
+  696 									ch_seek: if (), <./less/jump.c 207>
+  697 									ch_forw_get: 382
+  698 									ABORT_SIGS: <>
+  699 									ch_tell: 689
+  700 									expand_linebuf: int (), <./less/line.c 94>
+  701 										realloc: <>
+  702 										calloc: <>
+  703 										free: <>
+  704 										memset: <>
+  705 										memcpy: <>
+  706 								clr_hilite: 543
+  707 								search_range: int (), <./less/search.c 1042>
+  708 									find_linenum: public LINENUM (), <./less/linenum.c 257>
+  709 										ch_zero: <>
+  710 										get_time: public long (), <./less/os.c 196>
+  711 											time: <>
+  712 										ch_seek: if (), <./less/jump.c 207>
+  713 										forw_raw_line: 695
+  714 										ABORT_SIGS: <>
+  715 										longish: void (), <./less/linenum.c 231>
+  716 											get_time: 710
+  717 											longloopmessage: void (), <./less/linenum.c 214>
+  718 										add_lnum: <>
+  719 										back_raw_line: public POSITION (), <./less/line.c 1180>
+  720 											ch_zero: <>
+  721 											ch_seek: if (), <./less/jump.c 207>
+  722 											ch_back_get: public int (), <./less/ch.c 589>
+  723 												buffered: int (), <./less/ch.c 423>
+  724 													BUFHASH: <>
+  725 													FOR_BUFS_IN_CHAIN: <>
+  726 												ch_get: <>
+  727 											ABORT_SIGS: <>
+  728 											ch_tell: 689
+  729 											expand_linebuf: 700
+  730 									ABORT_SIGS: <>
+  731 									forw_raw_line: 695
+  732 									back_raw_line: 719
+  733 									abs: <>
+  734 									add_lnum: <>
+  735 									get_cvt_ops: int (), <./less/search.c 190>
+  736 									calloc: <>
+  737 									cvt_length: int (), <./less/search.c 118>
+  738 									cvt_text: void (), <./less/search.c 138>
+  739 										strlen: <>
+  740 										step_char: public LWCHAR (), <./less/charset.c 665>
+  741 										IS_UPPER: <>
+  742 										put_wchar: public void (), <./less/charset.c 615>
+  743 										TO_LOWER: <>
+  744 										IS_ASCII_OCTET: <>
+  745 										IS_UTF8_LEAD: <>
+  746 										IS_CSI_START: <>
+  747 										is_ansi_middle: 488
+  748 									match_pattern: int (), <./less/search.c 527>
+  749 										match: int (), <./less/search.c 1511>
+  750 										strlen: <>
+  751 										regexec: <>
+  752 										pcre_exec: <>
+  753 										re_exec: <>
+  754 										regex: <>
+  755 										regexec2: <>
+  756 									free: <>
+  757 									hilite_line: void (), <./less/search.c 833>
+  758 										ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  759 										add_hilite: void (), <./less/search.c 693>
+  760 											MAXPOS: <>
+  761 											MINPOS: <>
+  762 											free: <>
+  763 										match_pattern: 748
+  764 										adj_hilite: void (), <./less/search.c 733>
+  765 											forw_raw_line: 695
+  766 											step_char: public LWCHAR (), <./less/charset.c 665>
+  767 											IS_UPPER: <>
+  768 											put_wchar: public void (), <./less/charset.c 615>
+  769 											TO_LOWER: <>
+  770 											IS_CSI_START: <>
+  771 											is_ansi_middle: 488
+  772 									clr_hilite: 543
+  773 							ch_seek: if (), <./less/jump.c 207>
+  774 							ch_forw_get: 382
+  775 							ch_back_get: 722
+  776 							ABORT_SIGS: <>
+  777 							ch_tell: 689
+  778 							prewind: public void (), <./less/line.c 152>
+  779 							plinenum: public void (), <./less/line.c 174>
+  780 								find_linenum: 708
+  781 								linenumtoa: (, <./less/output.c 378>
+  782 								strlen: <>
+  783 								sprintf: <>
+  784 							pflushmbc: public int (), <./less/line.c 980>
+  785 								flush_mbc_buf: int (), <./less/line.c 725>
+  786 									store_prchar: int (), <./less/line.c 699>
+  787 										prchar: public char * (), <./less/charset.c 418>
+  788 										strlen: <>
+  789 										pwidth: int (), <./less/line.c 423>
+  790 											is_wide_char: public int (), <./less/charset.c 1141>
+  791 												is_in_table: int (), <./less/charset.c 1090>
+  792 											is_ascii_char: public int (), <./less/line.c 142>
+  793 											control_char: public int (), <./less/charset.c 406>
+  794 											is_composing_char: public int (), <./less/charset.c 1121>
+  795 												is_in_table: 791
+  796 											is_combining_char: public int (), <./less/charset.c 1153>
+  797 											is_at_equiv: public int (), <./less/screen.c 2294>
+  798 												apply_at_specials: 165
+  799 											attr_ewidth: int (), <./less/line.c 397>
+  800 												apply_at_specials: 165
+  801 											apply_at_specials: 165
+  802 											attr_swidth: int (), <./less/line.c 373>
+  803 												apply_at_specials: 165
+  804 										attr_ewidth: 799
+  805 										STORE_CHAR: <>
+  806 							pappend: public int (), <./less/line.c 743>
+  807 								do_append: int (), <./less/line.c 846>
+  808 									STORE_PRCHAR: <>
+  809 									STORE_CHAR: <>
+  810 									backc: int (), <./less/line.c 487>
+  811 										step_char: public LWCHAR (), <./less/charset.c 665>
+  812 										pwidth: 789
+  813 									get_wchar: public LWCHAR (), <./less/charset.c 563>
+  814 									is_composing_char: 794
+  815 									is_combining_char: 796
+  816 									STORE_TAB: <>
+  817 									is_ascii_char: public int (), <./less/line.c 142>
+  818 									control_char: public int (), <./less/charset.c 406>
+  819 									IS_CSI_START: <>
+  820 									is_ubin_char: public int (), <./less/charset.c 1131>
+  821 										is_in_table: 791
+  822 									prutfchar: <>
+  823 									strlen: <>
+  824 									pwidth: 789
+  825 									attr_ewidth: 799
+  826 								flush_mbc_buf: 785
+  827 								IS_ASCII_OCTET: <>
+  828 								IS_UTF8_LEAD: <>
+  829 								utf_len: switch (), <./less/charset.c 566>
+  830 								IS_UTF8_TRAIL: <>
+  831 								is_utf8_well_formed: <>
+  832 								get_wchar: public LWCHAR (), <./less/charset.c 563>
+  833 								pshift: void (), <./less/line.c 245>
+  834 									IS_CSI_START: <>
+  835 									is_ansi_middle: 488
+  836 									IS_ASCII_OCTET: <>
+  837 									utf_len: switch (), <./less/charset.c 566>
+  838 									get_wchar: public LWCHAR (), <./less/charset.c 563>
+  839 									is_composing_char: 794
+  840 									is_combining_char: 796
+  841 									is_wide_char: 790
+  842 									control_char: public int (), <./less/charset.c 406>
+  843 									is_at_equiv: 797
+  844 									attr_swidth: 802
+  845 									attr_ewidth: 799
+  846 							pshift_all: public void (), <./less/line.c 363>
+  847 								pshift: 833
+  848 							pdone: public void (), <./less/line.c 997>
+  849 								pflushmbc: 784
+  850 								do_append: 807
+  851 								pshift: 833
+  852 								is_ansi_end: 136
+  853 						jump_loc: <>
+  854 						position: public POSITION (), <./less/position.c 40>
+  855 						repaint: 118
+  856 					repaint: 118
+  857 				position: 854
+  858 				get_quit_at_eof: 297
+  859 				ch_getflags: 388
+  860 				next_ifile: <>
+  861 				quit: public void (), <./less/main.c 432>
+  862 				SetConsoleTitle: <>
+  863 				pr_expand: public char * (), <./less/prompt.c 476>
+  864 				clear_bot: 127
+  865 				clear_cmd: public void (), <./less/cmdbuf.c 131>
+  866 				pr_string: public char * (), <./less/prompt.c 564>
+  867 					pr_expand: public char * (), <./less/prompt.c 476>
+  868 					ch_getflags: 388
+  869 				putchr: 124
+  870 				at_enter: 164
+  871 				putstr: <>
+  872 				at_exit: 122
+  873 				clear_eol: 151
+  874 			getcc: public int (), <./less/command.c 733>
+  875 				getchr: 496
+  876 				len_cmdbuf: public int (), <./less/cmdbuf.c 172>
+  877 					strlen: <>
+  878 					step_char: public LWCHAR (), <./less/charset.c 665>
+  879 				empty_screen: 676
+  880 			mca_char: int (), <./less/command.c 282>
+  881 				editchar: public int (), <./less/decode.c 777>
+  882 					getcc: 874
+  883 					ecmd_decode: public int (), <./less/decode.c 552>
+  884 						cmd_decode: 17
+  885 					ungetcc: 275
+  886 					ungetsc: 273
+  887 				cmd_int: <>
+  888 				cmd_accept: 611
+  889 				len_cmdbuf: 876
+  890 				mca_opt_toggle: void (), <./less/command.c 157>
+  891 					clear_bot: 127
+  892 					clear_cmd: 865
+  893 					cmd_putstr: public void (), <./less/cmdbuf.c 141>
+  894 						strlen: <>
+  895 						step_char: public LWCHAR (), <./less/charset.c 665>
+  896 						putchr: 124
+  897 						is_composing_char: 794
+  898 						is_combining_char: 796
+  899 						is_wide_char: 790
+  900 					set_mlist: public void (), <./less/cmdbuf.c 661>
+  901 				CONTROL: <>
+  902 				get_cmdbuf: public char * (), <./less/cmdbuf.c 1301>
+  903 				error: 116
+  904 				cmd_reset: 673
+  905 				cmd_char: public int (), <./less/cmdbuf.c 1189>
+  906 					IS_ASCII_OCTET: <>
+  907 					IS_UTF8_LEAD: <>
+  908 					utf_len: switch (), <./less/charset.c 566>
+  909 					bell: 633
+  910 					IS_UTF8_TRAIL: <>
+  911 					is_utf8_well_formed: <>
+  912 					cmd_ichar: int (), <./less/cmdbuf.c 481>
+  913 						strlen: <>
+  914 						bell: 633
+  915 						cmd_repaint: void (), <./less/cmdbuf.c 288>
+  916 							clear_eol: 151
+  917 							cmd_step_right: char * (), <./less/cmdbuf.c 257>
+  918 								step_char: public LWCHAR (), <./less/charset.c 665>
+  919 								strlen: <>
+  920 								cmd_step_common: char * (), <./less/cmdbuf.c 190>
+  921 									prchar: public char * (), <./less/charset.c 418>
+  922 									strlen: <>
+  923 									prutfchar: <>
+  924 									is_composing_char: 794
+  925 									is_ubin_char: 820
+  926 									step_char: public LWCHAR (), <./less/charset.c 665>
+  927 									is_combining_char: 796
+  928 									is_wide_char: 790
+  929 							putstr: <>
+  930 							cmd_left: int (), <./less/cmdbuf.c 451>
+  931 								cmd_step_left: char * (), <./less/cmdbuf.c 272>
+  932 									step_char: public LWCHAR (), <./less/charset.c 665>
+  933 									cmd_step_common: 920
+  934 								cmd_rshift: void (), <./less/cmdbuf.c 386>
+  935 									cmd_step_left: 931
+  936 									cmd_home: void (), <./less/cmdbuf.c 329>
+  937 										cmd_step_left: 931
+  938 										putbs: public void (), <./less/screen.c 2372>
+  939 											tputs: <>
+  940 											putchr: 124
+  941 											flush: 131
+  942 											wherey: <>
+  943 											wherex: <>
+  944 											GetConsoleScreenBufferInfo: <>
+  945 									cmd_repaint: 915
+  946 								putbs: 938
+  947 						cmd_right: int (), <./less/cmdbuf.c 416>
+  948 							cmd_step_right: 917
+  949 							cmd_lshift: void (), <./less/cmdbuf.c 348>
+  950 								cmd_step_right: 917
+  951 								cmd_home: 936
+  952 								cmd_repaint: 915
+  953 							putstr: <>
+  954 					in_mca: public int (), <./less/command.c 116>
+  955 					cmd_edit: int (), <./less/cmdbuf.c 783>
+  956 						editchar: 881
+  957 						not_in_completion: <>
+  958 						cmd_right: 947
+  959 						cmd_left: 930
+  960 						cmd_home: 936
+  961 						cmd_repaint: 915
+  962 						cmd_erase: int (), <./less/cmdbuf.c 517>
+  963 							cmd_left: 930
+  964 							cmd_repaint: 915
+  965 						cmd_kill: int (), <./less/cmdbuf.c 636>
+  966 							cmd_home: 936
+  967 							cmd_repaint: 915
+  968 						cmd_werase: int (), <./less/cmdbuf.c 584>
+  969 							cmd_erase: 962
+  970 						cmd_delete: int (), <./less/cmdbuf.c 565>
+  971 							cmd_right: 947
+  972 							cmd_erase: 962
+  973 						cmd_wdelete: int (), <./less/cmdbuf.c 610>
+  974 							cmd_delete: 970
+  975 						cmd_updown: int (), <./less/cmdbuf.c 678>
+  976 							bell: 633
+  977 							cmd_home: 936
+  978 							clear_eol: 151
+  979 							strcpy: <>
+  980 							cmd_right: 947
+  981 						cmd_complete: int (), <./less/cmdbuf.c 1091>
+  982 							init_compl: void (), <./less/cmdbuf.c 1010>
+  983 								free: <>
+  984 								delimit_word: char * (), <./less/cmdbuf.c 923>
+  985 									get_meta_escape: 74
+  986 									strlen: <>
+  987 									cmd_right: 947
+  988 									strncmp: <>
+  989 								ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  990 								strncpy: <>
+  991 								fcomplete: public char * (), <./less/filename.c 410>
+  992 									strlen: <>
+  993 									ecalloc: public VOID_POINTER (), <./less/main.c 366>
+  994 									strchr: 13
+  995 									SNPRINTF1: <>
+  996 									lglob: 299
+  997 									shell_unquote: 71
+  998 									strcmp: <>
+  999 									free: <>
+ 1000 								shell_quote: 313
+ 1001 							bell: 633
+ 1002 							init_textlist: 356
+ 1003 							next_compl: char * (), <./less/cmdbuf.c 1069>
+ 1004 								forw_textlist: 361
+ 1005 								back_textlist: public char * (), <./less/edit.c 132>
+ 1006 							cmd_erase: 962
+ 1007 							cmd_istr: int (), <./less/cmdbuf.c 895>
+ 1008 								strlen: <>
+ 1009 								step_char: public LWCHAR (), <./less/charset.c 665>
+ 1010 								cmd_ichar: 912
+ 1011 								bell: 633
+ 1012 							is_dir: 440
+ 1013 							lgetenv: 16
+ 1014 				ASCII_IS_LOWER: <>
+ 1015 				findopt_name: 281
+ 1016 				ASCII_TO_UPPER: <>
+ 1017 				single_char_option: public int (), <./less/option.c 503>
+ 1018 					findopt: 279
+ 1019 				toggle_option: public void (), <./less/option.c 281>
+ 1020 					findopt: 279
+ 1021 					propt: 257
+ 1022 					error: 116
+ 1023 					repaint_hilite: public void (), <./less/search.c 264>
+ 1024 						repaint: 118
+ 1025 						position: 854
+ 1026 						is_hilited: public int (), <./less/search.c 644>
+ 1027 							is_hilited_range: int (), <./less/search.c 621>
+ 1028 						forw_line: public POSITION (), <./less/input.c 46>
+ 1029 							null_line: public void (), <./less/line.c 1119>
+ 1030 							prep_hilite: 693
+ 1031 							ch_seek: if (), <./less/jump.c 207>
+ 1032 							ABORT_SIGS: <>
+ 1033 							ch_back_get: 722
+ 1034 							ch_forw_get: 382
+ 1035 							prewind: 778
+ 1036 							plinenum: 779
+ 1037 							pappend: 806
+ 1038 							pshift_all: 846
+ 1039 							pflushmbc: 784
+ 1040 							ch_tell: 689
+ 1041 							pdone: 848
+ 1042 						goto_line: public void (), <./less/screen.c 1929>
+ 1043 							tputs: <>
+ 1044 							tgoto: <>
+ 1045 							putchr: 124
+ 1046 							flush: 131
+ 1047 						put_line: public void (), <./less/output.c 47>
+ 1048 							ABORT_SIGS: <>
+ 1049 							gline: <>
+ 1050 							at_switch: public void (), <./less/screen.c 2280>
+ 1051 								apply_at_specials: 165
+ 1052 								at_exit: 122
+ 1053 								at_enter: 164
+ 1054 							putbs: 938
+ 1055 							putchr: 124
+ 1056 							at_exit: 122
+ 1057 						lower_left: 128
+ 1058 					flip_triple: 289
+ 1059 					ASCII_IS_LOWER: <>
+ 1060 					getnum: 260
+ 1061 					chg_hilite: public void (), <./less/search.c 948>
+ 1062 						clr_hilite: 543
+ 1063 						hilite_screen: void (), <./less/search.c 933>
+ 1064 							get_scrpos: 61
+ 1065 							prep_hilite: 693
+ 1066 							position: 854
+ 1067 							repaint_hilite: 1023
+ 1068 				opt_prompt: public char * (), <./less/option.c 519>
+ 1069 					findopt: 279
+ 1070 				start_mca: void (), <./less/command.c 102>
+ 1071 					clear_bot: 127
+ 1072 					clear_cmd: 865
+ 1073 					cmd_putstr: 893
+ 1074 					set_mlist: 900
+ 1075 				mca_search: void (), <./less/command.c 125>
+ 1076 					clear_bot: 127
+ 1077 					clear_cmd: 865
+ 1078 					cmd_putstr: 893
+ 1079 					set_mlist: 900
+ 1080 				exec_mca: void (), <./less/command.c 191>
+ 1081 					cmd_exec: void (), <./less/command.c 91>
+ 1082 						clear_attn: public void (), <./less/search.c 323>
+ 1083 							repaint: 118
+ 1084 							position: 854
+ 1085 							forw_line: 1028
+ 1086 							goto_line: 1042
+ 1087 							put_line: 1047
+ 1088 							lower_left: 128
+ 1089 						clear_bot: 127
+ 1090 						flush: 131
+ 1091 					get_cmdbuf: public char * (), <./less/cmdbuf.c 1301>
+ 1092 					multi_search: void (), <./less/command.c 817>
+ 1093 						save_curr_ifile: 386
+ 1094 						edit_first: 551
+ 1095 						edit_last: public int (), <./less/edit.c 535>
+ 1096 							edit_prev: public int (), <./less/edit.c 612>
+ 1097 								edit_istep: 470
+ 1098 						unsave_ifile: 414
+ 1099 						search: public int (), <./less/search.c 1240>
+ 1100 							prev_pattern: 694
+ 1101 							hist_pattern: int (), <./less/search.c 1199>
+ 1102 								set_mlist: 900
+ 1103 								cmd_lastpattern: public char * (), <./less/cmdbuf.c 1310>
+ 1104 								compile_pattern: int (), <./less/search.c 470>
+ 1105 									ecalloc: public VOID_POINTER (), <./less/main.c 366>
+ 1106 									cvt_length: 737
+ 1107 									strlen: <>
+ 1108 									cvt_text: 738
+ 1109 									compile_pattern2: int (), <./less/search.c 387>
+ 1110 										ecalloc: public VOID_POINTER (), <./less/main.c 366>
+ 1111 										regcomp: regexp * (), <./less/regexp.c 210>
+ 1112 											FAIL: <>
+ 1113 											regc: void (), <./less/regexp.c 608>
+ 1114 											reg: char * (), <./less/regexp.c 297>
+ 1115 												FAIL: <>
+ 1116 												regnode: char * (), <./less/regexp.c 583>
+ 1117 												regbranch: char * (), <./less/regexp.c 369>
+ 1118 													regnode: 1116
+ 1119 													regpiece: char * (), <./less/regexp.c 408>
+ 1120 														regatom: char * (), <./less/regexp.c 472>
+ 1121 															regnode: 1116
+ 1122 															regc: 1113
+ 1123 															UCHARAT: <>
+ 1124 															FAIL: <>
+ 1125 															reg: 1114
+ 1126 															strcspn: int (), <./less/regexp.c 1233>
+ 1127 															ISMULT: <>
+ 1128 														ISMULT: <>
+ 1129 														FAIL: <>
+ 1130 														reginsert: void (), <./less/regexp.c 623>
+ 1131 														regoptail: void (), <./less/regexp.c 684>
+ 1132 															OP: switch (), <./less/regexp.c 1035>
+ 1133 															regtail: void (), <./less/regexp.c 652>
+ 1134 																regnext: <>
+ 1135 																OP: switch (), <./less/regexp.c 1035>
+ 1136 															OPERAND: <>
+ 1137 														regnode: 1116
+ 1138 														regtail: 1133
+ 1139 													regtail: 1133
+ 1140 												regtail: 1133
+ 1141 												regnext: <>
+ 1142 												regoptail: 1131
+ 1143 											malloc: <>
+ 1144 											OP: switch (), <./less/regexp.c 1035>
+ 1145 											regnext: <>
+ 1146 											OPERAND: <>
+ 1147 											strlen: <>
+ 1148 										free: <>
+ 1149 										error: 116
+ 1150 										regfree: <>
+ 1151 										pcre_compile: <>
+ 1152 										re_comp: <>
+ 1153 										regcmp: <>
+ 1154 										calloc: <>
+ 1155 										strlen: <>
+ 1156 										strcpy: <>
+ 1157 									free: <>
+ 1158 								is_ucase: int (), <./less/search.c 214>
+ 1159 									strlen: <>
+ 1160 									step_char: public LWCHAR (), <./less/charset.c 665>
+ 1161 									IS_UPPER: <>
+ 1162 								hilite_screen: 1063
+ 1163 							error: 116
+ 1164 							repaint_hilite: 1023
+ 1165 							hilite_screen: 1063
+ 1166 							compile_pattern: 1104
+ 1167 							is_ucase: 1158
+ 1168 							clr_hilite: 543
+ 1169 							search_pos: POSITION (), <./less/search.c 968>
+ 1170 								empty_screen: 676
+ 1171 								ch_zero: <>
+ 1172 								ch_length: public POSITION (), <./less/ch.c 540>
+ 1173 								ch_end_seek: public int (), <./less/ch.c 482>
+ 1174 								position: 854
+ 1175 								adjsline: public int (), <./less/position.c 212>
+ 1176 								forw_raw_line: 695
+ 1177 							search_range: 707
+ 1178 							jump_loc: <>
+ 1179 						edit_next: 552
+ 1180 						edit_prev: 1096
+ 1181 						error: 116
+ 1182 						reedit_ifile: 464
+ 1183 					free: <>
+ 1184 					save: 50
+ 1185 					toggle_option: 1019
+ 1186 					match_brac: <>
+ 1187 					edit_list: public int (), <./less/edit.c 467>
+ 1188 						save_curr_ifile: 386
+ 1189 						init_textlist: 356
+ 1190 						forw_textlist: 361
+ 1191 						lglob: 299
+ 1192 						edit: 372
+ 1193 						get_filename: <>
+ 1194 						free: <>
+ 1195 						unsave_ifile: 414
+ 1196 						get_ifile: public IFILE (), <./less/ifile.c 227>
+ 1197 						reedit_ifile: 464
+ 1198 					jump_back: public void (), <./less/jump.c 64>
+ 1199 						find_pos: public POSITION (), <./less/linenum.c 366>
+ 1200 							ch_zero: <>
+ 1201 							ch_seek: if (), <./less/jump.c 207>
+ 1202 							forw_raw_line: 695
+ 1203 							ABORT_SIGS: <>
+ 1204 							back_raw_line: 719
+ 1205 							add_lnum: <>
+ 1206 						ch_seek: if (), <./less/jump.c 207>
+ 1207 						set_attnpos: public void (), <./less/input.c 378>
+ 1208 							ch_seek: if (), <./less/jump.c 207>
+ 1209 							ch_forw_get: 382
+ 1210 						jump_loc: <>
+ 1211 						ch_beg_seek: public int (), <./less/ch.c 511>
+ 1212 							ch_seek: if (), <./less/jump.c 207>
+ 1213 							ch_zero: <>
+ 1214 						ch_tell: 689
+ 1215 						error: 116
+ 1216 					cleantags: public void (), <./less/tags.c 92>
+ 1217 						TAG_RM: <>
+ 1218 						free: <>
+ 1219 					fexpand: 300
+ 1220 					lsystem: public void (), <./less/lsystem.c 42>
+ 1221 						clear_bot: 127
+ 1222 						putstr: <>
+ 1223 						getcwd: <>
+ 1224 						save_curr_ifile: 386
+ 1225 						edit_ifile: 373
+ 1226 						deinit: 616
+ 1227 						flush: 131
+ 1228 						raw_mode: 565
+ 1229 						close_getchr: public void (), <./less/ttyin.c 91>
+ 1230 							SetConsoleMode: <>
+ 1231 							CloseHandle: <>
+ 1232 						init_signals: 574
+ 1233 						dup: <>
+ 1234 						close: <>
+ 1235 						open: <>
+ 1236 						lgetenv: 16
+ 1237 						save: 50
+ 1238 						shell_quote: 313
+ 1239 						strlen: <>
+ 1240 						ecalloc: public VOID_POINTER (), <./less/main.c 366>
+ 1241 						SNPRINTF3: <>
+ 1242 						shell_coption: public char * (), <./less/filename.c 1046>
+ 1243 						free: <>
+ 1244 						system: <>
+ 1245 						setmode: <>
+ 1246 						open_getchr: 557
+ 1247 						get_return: public void (), <./less/output.c 462>
+ 1248 						putchr: 124
+ 1249 						init: 596
+ 1250 						chdir: <>
+ 1251 						setdisk: <>
+ 1252 						reedit_ifile: 464
+ 1253 						winch: 589
+ 1254 					pipe_mark: public int (), <./less/lsystem.c 249>
+ 1255 						markpos: public POSITION (), <./less/mark.c 229>
+ 1256 							getmark: struct mark * (), <./less/mark.c 70>
+ 1257 							error: 116
+ 1258 						position: 854
+ 1259 						ch_zero: <>
+ 1260 						pipe_data: public int (), <./less/lsystem.c 283>
+ 1261 							ch_seek: if (), <./less/jump.c 207>
+ 1262 							error: 116
+ 1263 							popen: <>
+ 1264 							clear_bot: 127
+ 1265 							putstr: <>
+ 1266 							deinit: 616
+ 1267 							flush: 131
+ 1268 							raw_mode: 565
+ 1269 							init_signals: 574
+ 1270 							close_getchr: 1229
+ 1271 							LSIGNAL: <>
+ 1272 							ch_forw_get: 382
+ 1273 							putc: <>
+ 1274 							pclose: if (), <./less/tags.c 590>
+ 1275 							open_getchr: 557
+ 1276 							init: 596
+ 1277 							winch: 589
+ 1278 					error: 116
+ 1279 			cmd_char: 905
+ 1280 			len_cmdbuf: 876
+ 1281 			get_cmdbuf: public char * (), <./less/cmdbuf.c 1301>
+ 1282 			fcmd_decode: public int (), <./less/decode.c 536>
+ 1283 				cmd_decode: 17
+ 1284 			ungetsc: 273
+ 1285 			start_mca: 1070
+ 1286 			get_swindow: public int (), <./less/optfunc.c 663>
+ 1287 			cmd_exec: 1081
+ 1288 			set_attnpos: 1207
+ 1289 			forward: public void (), <./less/forwback.c 331>
+ 1290 			backward: public void (), <./less/forwback.c 384>
+ 1291 			ch_getflags: 388
+ 1292 			jump_forw: 684
+ 1293 			make_display: 675
+ 1294 			ABORT_SIGS: <>
+ 1295 			clear_buffers: void (), <./less/command.c 578>
+ 1296 				ch_getflags: 388
+ 1297 				ch_flush: 522
+ 1298 				clr_linenum: 542
+ 1299 				clr_hilite: 543
+ 1300 			repaint: 118
+ 1301 			jump_back: 1198
+ 1302 			jump_percent: public void (), <./less/jump.c 113>
+ 1303 			jump_line_loc: <>
+ 1304 			eq_message: public char * (), <./less/prompt.c 552>
+ 1305 			error: 116
+ 1306 			dispversion: public void (), <./less/command.c 718>
+ 1307 				error: 116
+ 1308 			edit_prev: 1096
+ 1309 			mca_search: 1075
+ 1310 			DO_SEARCH: <>
+ 1311 			SRCH_REVERSE: <>
+ 1312 			undo_search: public void (), <./less/search.c 370>
+ 1313 				prev_pattern: 694
+ 1314 				error: 116
+ 1315 				repaint_hilite: 1023
+ 1316 			edit: 372
+ 1317 			strcmp: <>
+ 1318 			get_filename: <>
+ 1319 			lsystem: 1220
+ 1320 			pr_expand: public char * (), <./less/prompt.c 476>
+ 1321 			ntags: public int (), <./less/tags.c 246>
+ 1322 			edit_next: 552
+ 1323 			get_quit_at_eof: 297
+ 1324 			nexttag: public char * (), <./less/tags.c 218>
+ 1325 				nextgtag: char * (), <./less/tags.c 616>
+ 1326 			tagsearch: public POSITION (), <./less/tags.c 204>
+ 1327 			jump_loc: <>
+ 1328 			prevtag: public char * (), <./less/tags.c 232>
+ 1329 				prevgtag: char * (), <./less/tags.c 646>
+ 1330 			edit_index: public int (), <./less/edit.c 622>
+ 1331 				next_ifile: <>
+ 1332 				get_index: <>
+ 1333 				edit_ifile: 373
+ 1334 			getoff_ifile: <>
+ 1335 			bell: 633
+ 1336 			edit_ifile: 373
+ 1337 			reedit_ifile: 464
+ 1338 			del_ifile: <>
+ 1339 			mca_opt_toggle: 890
+ 1340 			setmark: public void (), <./less/mark.c 146>
+ 1341 			gomark: public void (), <./less/mark.c 181>
+ 1342 				getmark: struct mark * (), <./less/mark.c 70>
+ 1343 				ch_zero: <>
+ 1344 				edit_ifile: 373
+ 1345 				jump_loc: <>
+ 1346 			badmark: public int (), <./less/mark.c 136>
+ 1347 		XOpenDisplay: <>
+ 1348 		get_winsize: int (), <./less/scrsize.c 49>
+ 1349 			XGetWindowAttributes: <>
+ 1350 			XGetWMNormalHints: <>
+ 1351 		atol: <>
+ 1352 		XCloseDisplay: <>

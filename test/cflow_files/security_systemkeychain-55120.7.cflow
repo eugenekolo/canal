@@ -1,0 +1,25 @@
+    1 	create_fv_user: int (), <./src/create_fv_user.c 80>
+    2 		getopt: <>
+    3 		do_lock_all: int (), <./src/create_fv_user.c 41>
+    4 			SecKeychainLockAll: <>
+    5 			sec_perror: <>
+    6 		do_lock: int (), <./src/create_fv_user.c 51>
+    7 			keychain_open: <>
+    8 			SecKeychainLock: <>
+    9 			sec_error: <>
+   10 			sec_errstr: <>
+   11 			CFRelease: <>
+   12 	read_file: int (), <./src/readline.c 86>
+   13 		open: <>
+   14 		sec_error: <>
+   15 		strerror: <>
+   16 		lseek: <>
+   17 		malloc: <>
+   18 		pread: <>
+   19 		close: <>
+   20 		free: <>
+   21 	readline: char * (), <./src/readline.c 41>
+   22 		malloc: <>
+   23 		realloc: <>
+   24 		getchar: <>
+   25 		free: <>

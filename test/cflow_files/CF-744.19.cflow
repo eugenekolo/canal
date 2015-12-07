@@ -1,0 +1,180 @@
+    1 	main: int (), <./Examples/plconvert.c 69>
+    2 		printf: <>
+    3 		createDataFromFile: CFMutableDataRef (), <./plconvert.c 64>
+    4 			open: <>
+    5 			CFDataCreateMutable: CFMutableDataRef (), <./CFData.c 469>
+    6 				Boolean: <>
+    7 				CFMakeCollectable: CFTypeRef (), <./CFRuntime.c 725>
+    8 			read: <>
+    9 			CFDataAppendBytes: void (), <./CFData.c 592>
+   10 				CF_OBJC_FUNCDISPATCHV: <>
+   11 				CFAssert1: <>
+   12 				CFDataReplaceBytes: void (), <./CFData.c 604>
+   13 					CF_OBJC_FUNCDISPATCHV: <>
+   14 					NSMakeRange: <>
+   15 					CFAssert1: <>
+   16 					CFAssert2: <>
+   17 					CFIndex: <>
+   18 					CFDataGetMutableBytePtr: uint8_t * (), <./CFData.c 504>
+   19 						CF_OBJC_FUNCDISPATCHV: <>
+   20 						CFAssert1: <>
+   21 					malloc: <>
+   22 					memmove: <>
+   23 					free: <>
+   24 				CFRangeMake: <>
+   25 			close: <>
+   26 		CFErrorRef: <>
+   27 		CFPropertyListCreateWithData: CFPropertyListRef (), <./CFPropertyList.c 2686>
+   28 			initStatics: void (), <./CFPropertyList.c 113>
+   29 				dispatch_once: <>
+   30 				CFStringGetTypeID: CFTypeID (), <./CFString.c 1201>
+   31 				CFDataGetTypeID: CFTypeID (), <./CFData.c 341>
+   32 				CFNumberGetTypeID: CFTypeID (), <./CFNumber.c 1055>
+   33 				CFBooleanGetTypeID: CFTypeID (), <./CFNumber.c 99>
+   34 				CFDateGetTypeID: CFTypeID (), <./CFDate.c 134>
+   35 				CFDictionaryGetTypeID: CFTypeID (), <./CFDictionary.c 131>
+   36 				CFArrayGetTypeID: CFTypeID (), <./CFArray.c 362>
+   37 				CFSetGetTypeID: CFTypeID (), <./CFSet.c 131>
+   38 				CFNullGetTypeID: CFTypeID (), <./CFBase.c 882>
+   39 			CFAssert1: <>
+   40 			CFAssert2: <>
+   41 		logIt: void (), <./plconvert.c 44>
+   42 			va_start: <>
+   43 			CFStringRef: <>
+   44 			CFStringCreateWithFormatAndArguments: CFStringRef (), <./CFString.c 1565>
+   45 			CFIndex: <>
+   46 			CFStringGetMaximumSizeForEncoding: CFIndex (), <./CFString.c 466>
+   47 			CFStringGetLength: CFIndex (), <./CFString.c 1907>
+   48 				CF_OBJC_FUNCDISPATCHV: <>
+   49 				CFIndex: <>
+   50 			malloc: <>
+   51 			Boolean: <>
+   52 			CFStringGetCString: Boolean (), <./CFString.c 2117>
+   53 				CFIndex: <>
+   54 				CF_OBJC_FUNCDISPATCHV: <>
+   55 				memmove: <>
+   56 				strlcpy: <>
+   57 			printf: <>
+   58 			free: <>
+   59 			CFRelease: void (), <./CFRuntime.c 576>
+   60 				CRSetCrashLogMessage: <>
+   61 				CFLog: void (), <./CFUtilities.c 733>
+   62 					va_start: <>
+   63 					va_end: <>
+   64 				CFSTR: <>
+   65 				object_getClass: <>
+   66 				object_getClassName: <>
+   67 			va_end: <>
+   68 		CFSTR: <>
+   69 		CFPropertyListCreateData: CFDataRef (), <./CFPropertyList.c 2707>
+   70 			initStatics: 28
+   71 			CFAssert1: <>
+   72 			CFAssert2: <>
+   73 			CFStringRef: <>
+   74 			CFLog: 61
+   75 			CFSTR: <>
+   76 			CFRelease: 59
+   77 			CFWriteStreamCreateWithAllocatedBuffers: CF_EXPORT CFWriteStreamRef (), <./CFConcreteStreams.c 869>
+   78 			CFWriteStreamOpen: CF_EXPORT Boolean (), <./CFStream.c 971>
+   79 				CF_IS_OBJC: <>
+   80 				CF_OBJC_CALLV: <>
+   81 				open: <>
+   82 			CFIndex: <>
+   83 			CFPropertyListWrite: CFIndex (), <./CFPropertyList.c 2754>
+   84 				initStatics: 28
+   85 				CFAssert1: <>
+   86 				CFAssert2: <>
+   87 				CFWriteStreamGetTypeID: CF_EXPORT CFTypeID (), <./CFStream.c 374>
+   88 				CFGetTypeID: CFTypeID (), <./CFRuntime.c 550>
+   89 					CRSetCrashLogMessage: <>
+   90 					CFTYPE_OBJC_FUNCDISPATCH0: <>
+   91 				CFWriteStreamGetStatus: CF_EXPORT CFStreamStatus (), <./CFStream.c 873>
+   92 					CF_OBJC_FUNCDISPATCHV: <>
+   93 				CFStringRef: <>
+   94 				CFLog: 61
+   95 				CFSTR: <>
+   96 				CFRelease: 59
+   97 				CFIndex: <>
+   98 				CFDataGetLength: CFIndex (), <./CFData.c 491>
+   99 					CF_OBJC_FUNCDISPATCHV: <>
+  100 					CFIndex: <>
+  101 				CFDataGetBytePtr: const uint8_t * (), <./CFData.c 497>
+  102 					CF_OBJC_FUNCDISPATCHV: <>
+  103 				CFWriteStreamWrite: CF_EXPORT CFIndex (), <./CFStream.c 1152>
+  104 					CF_OBJC_FUNCDISPATCHV: <>
+  105 					CFIndex: <>
+  106 					write: <>
+  107 					cb: <>
+  108 					waitForOpen: void (), <./CFStream.c 1557>
+  109 						CFRunLoopGetCurrent: CFRunLoopRef (), <./CFRunLoop.c 1411>
+  110 							CHECK_FOR_FORK: <>
+  111 							pthread_self: <>
+  112 						CFStringRef: <>
+  113 						CFSTR: <>
+  114 						CFRunLoopRunInMode: SInt32 (), <./CFRunLoop.c 2388>
+  115 							CHECK_FOR_FORK: <>
+  116 							CFRunLoopRunSpecific: SInt32 (), <./CFRunLoop.c 2355>
+  117 								CHECK_FOR_FORK: <>
+  118 								Boolean: <>
+  119 							CFRunLoopGetCurrent: 109
+  120 					CFStreamError: <>
+  121 				CFErrorRef: <>
+  122 				CFWriteStreamCopyError: CF_EXPORT CFErrorRef (), <./CFStream.c 919>
+  123 					CF_OBJC_FUNCDISPATCHV: <>
+  124 					CFErrorRef: <>
+  125 				CFDictionaryCreateMutable: <>
+  126 				CFDictionarySetValue: <>
+  127 				CFErrorCreate: CFErrorRef (), <./CFError.c 336>
+  128 					CFStringGetTypeID: 30
+  129 					CFDictionaryGetTypeID: 35
+  130 					CFErrorRef: <>
+  131 					CFStringCreateCopy: CFStringRef (), <./CFString.c 1609>
+  132 						CFStringRef: <>
+  133 						CFRetain: CFTypeRef (), <./CFRuntime.c 568>
+  134 							CRSetCrashLogMessage: <>
+  135 					CFDictionaryCreateCopy: <>
+  136 			CFWriteStreamCopyProperty: CF_EXPORT CFTypeRef (), <./CFStream.c 1211>
+  137 				CF_OBJC_FUNCDISPATCHV: <>
+  138 				CFTypeRef: <>
+  139 			CFWriteStreamClose: CF_EXPORT void (), <./CFStream.c 984>
+  140 				CF_OBJC_FUNCDISPATCHV: <>
+  141 				close: <>
+  142 			CFDataCreateMutable: 5
+  143 		bool: <>
+  144 		writeDataToFile: bool (), <./plconvert.c 78>
+  145 			open: <>
+  146 			printf: <>
+  147 			CFDataGetLength: 98
+  148 			write: <>
+  149 			CFDataGetBytePtr: 101
+  150 			fsync: <>
+  151 			close: <>
+  152 		CFRelease: 59
+  153 		createDataFromFile: CFMutableDataRef (), <./Examples/plconvert.c 41>
+  154 			open: <>
+  155 			CFDataCreateMutable: 5
+  156 			read: <>
+  157 			CFDataAppendBytes: 9
+  158 			close: <>
+  159 		logIt: void (), <./Examples/plconvert.c 21>
+  160 			va_start: <>
+  161 			CFStringRef: <>
+  162 			CFStringCreateWithFormatAndArguments: 44
+  163 			CFIndex: <>
+  164 			CFStringGetMaximumSizeForEncoding: 46
+  165 			CFStringGetLength: 47
+  166 			malloc: <>
+  167 			Boolean: <>
+  168 			CFStringGetCString: 52
+  169 			printf: <>
+  170 			free: <>
+  171 			CFRelease: 59
+  172 			va_end: <>
+  173 		writeDataToFile: bool (), <./Examples/plconvert.c 55>
+  174 			open: <>
+  175 			printf: <>
+  176 			CFDataGetLength: 98
+  177 			write: <>
+  178 			CFDataGetBytePtr: 101
+  179 			fsync: <>
+  180 			close: <>

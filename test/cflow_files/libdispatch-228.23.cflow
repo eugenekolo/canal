@@ -1,0 +1,297 @@
+    1 	DISPATCH_OBJECT_SUSPENDED: <>
+    2 	dispatch_after: void (), <./src/queue.c 1834>
+    3 		DISPATCH_CLIENT_CRASH: <>
+    4 		dispatch_after_f: DISPATCH_NOINLINE void (), <./src/queue.c 1795>
+    5 			DISPATCH_CLIENT_CRASH: <>
+    6 			dispatch_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1294>
+    7 				dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+    8 				fastpath: if (), <./src/queue.c 1263>
+    9 			dispatch_source_create: dispatch_source_t (), <./src/source.c 51>
+   10 				kevent: <>
+   11 				calloc: <>
+   12 				TAILQ_INIT: <>
+   13 				DISPATCH_VTABLE: <>
+   14 				strlcpy: <>
+   15 				fastpath: if (), <./src/queue.c 1263>
+   16 				slowpath: if (), <./src/queue.c 1716>
+   17 				dispatch_assert: <>
+   18 				dispatch_set_target_queue: void (), <./src/queue.c 716>
+   19 					slowpath: if (), <./src/queue.c 1716>
+   20 					dx_type: <>
+   21 					dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+   22 					dispatch_atomic_store_barrier: <>
+   23 					dispatch_atomic_xchg2o: <>
+   24 				dispatch_debug: DISPATCH_NOINLINE void (), <./src/init.c 425>
+   25 					va_start: <>
+   26 					dispatch_debugv: DISPATCH_NOINLINE void (), <./src/init.c 408>
+   27 						dx_debug: <>
+   28 						snprintf: <>
+   29 					va_end: <>
+   30 				free: <>
+   31 			dispatch_assert: <>
+   32 			malloc: <>
+   33 			dispatch_set_context: void (), <./src/object.c 220>
+   34 			dispatch_source_set_event_handler_f: void (), <./src/source.c 267>
+   35 				dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+   36 			dispatch_source_set_timer: void (), <./src/source.c 1183>
+   37 				slowpath: if (), <./src/queue.c 1716>
+   38 				DISPATCH_CLIENT_CRASH: <>
+   39 				calloc: <>
+   40 				sleep: <>
+   41 				ds_timer: <>
+   42 				dispatch_retain: void (), <./src/object.c 150>
+   43 				dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+   44 			dispatch_resume: void (), <./src/object.c 256>
+   45 				slowpath: if (), <./src/queue.c 1716>
+   46 				dispatch_atomic_sub2o: <>
+   47 				fastpath: if (), <./src/queue.c 1263>
+   48 				DISPATCH_CLIENT_CRASH: <>
+   49 	dispatch_after_f: 4
+   50 	dispatch_apply_f: DISPATCH_NOINLINE void (), <./src/apply.c 169>
+   51 		slowpath: if (), <./src/queue.c 1716>
+   52 		typeof: <>
+   53 		dispatch_sync_f: DISPATCH_NOINLINE void (), <./src/queue.c 1724>
+   54 		dispatch_atomic_acquire_barrier: <>
+   55 	dispatch_async: void (), <./src/queue.c 1322>
+   56 		dispatch_async_f: 6
+   57 	dispatch_async_f: 6
+   58 	dispatch_atfork_child: DISPATCH_EXPORT DISPATCH_NOTHROW void (), <./src/queue.c 567>
+   59 	dispatch_barrier_async: void (), <./src/queue.c 1159>
+   60 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+   61 	dispatch_barrier_sync: void (), <./src/queue.c 1630>
+   62 		slowpath: if (), <./src/queue.c 1716>
+   63 		dispatch_barrier_sync_f: DISPATCH_NOINLINE void (), <./src/queue.c 1590>
+   64 			slowpath: if (), <./src/queue.c 1716>
+   65 			DISPATCH_OBJECT_SUSPENDED: 1
+   66 			dispatch_atomic_cmpxchg2o: if (), <./src/semaphore.c 208>
+   67 	dispatch_barrier_sync_f: 63
+   68 	dispatch_benchmark: uint64_t (), <./src/benchmark.c 75>
+   69 		dispatch_benchmark_f: uint64_t (), <./src/benchmark.c 83>
+   70 			dummy_function: void (), <./src/init.c 59>
+   71 			dispatch_once_f: DISPATCH_NOINLINE void (), <./src/once.c 46>
+   72 				dispatch_atomic_cmpxchg: <>
+   73 				dispatch_atomic_acquire_barrier: <>
+   74 				dispatch_atomic_maximally_synchronizing_barrier: <>
+   75 				dispatch_atomic_xchg: <>
+   76 				dispatch_atomic_store_barrier: <>
+   77 			slowpath: if (), <./src/queue.c 1716>
+   78 	dispatch_benchmark_f: 69
+   79 	dispatch_data_apply: bool (), <./src/data.c 388>
+   80 	dispatch_data_copy_region: dispatch_data_t (), <./src/data.c 398>
+   81 	dispatch_data_create: dispatch_data_t (), <./src/data.c 98>
+   82 		malloc: <>
+   83 		slowpath: if (), <./src/queue.c 1716>
+   84 		free: <>
+   85 		memcpy: <>
+   86 	dispatch_data_create_concat: dispatch_data_t (), <./src/data.c 196>
+   87 		memcpy: <>
+   88 	dispatch_data_create_map: dispatch_data_t (), <./src/data.c 286>
+   89 		dispatch_atomic_inc2o: <>
+   90 		malloc: <>
+   91 		dispatch_data_apply: 79
+   92 		memcpy: <>
+   93 		dispatch_data_create: 81
+   94 	dispatch_data_create_subrange: dispatch_data_t (), <./src/data.c 229>
+   95 		dispatch_data_create_subrange: 94
+   96 		dispatch_data_create_concat: 86
+   97 		DISPATCH_CRASH: <>
+   98 	dispatch_data_create_with_transform: dispatch_data_t (), <./src/transform.c 910>
+   99 		dispatch_data_get_size: size_t (), <./src/data.c 190>
+  100 		dispatch_retain: 42
+  101 		dispatch_release: void (), <./src/object.c 162>
+  102 	dispatch_debug: 24
+  103 	dispatch_debug_kevents: void (), <./src/source.c 1841>
+  104 	dispatch_debug_machport: void (), <./src/source.c 2028>
+  105 		mach_port_type: <>
+  106 		mach_task_self: <>
+  107 		mach_error_string: <>
+  108 		dispatch_assume_zero: <>
+  109 		mach_port_get_refs: <>
+  110 		mach_port_dnrequest_info: <>
+  111 		mach_port_get_attributes: <>
+  112 	dispatch_debug_queue: void (), <./src/queue.c 964>
+  113 		fastpath: if (), <./src/queue.c 1263>
+  114 		dispatch_debug: 24
+  115 	dispatch_debugv: 26
+  116 	dispatch_flush_continuation_cache: void (), <./src/queue.c 1053>
+  117 	dispatch_get_context: void * (), <./src/object.c 214>
+  118 	dispatch_get_current_queue: dispatch_queue_t (), <./src/queue.c 380>
+  119 	dispatch_get_global_queue: dispatch_queue_t (), <./src/queue.c 370>
+  120 	dispatch_get_specific: DISPATCH_NOINLINE void * (), <./src/queue.c 918>
+  121 		slowpath: if (), <./src/queue.c 1716>
+  122 		dispatch_sync_f: DISPATCH_NOINLINE void (), <./src/queue.c 1724>
+  123 	dispatch_group_async: void (), <./src/queue.c 1359>
+  124 		dispatch_group_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1334>
+  125 			dispatch_group_enter: void (), <./src/semaphore.c 322>
+  126 				dispatch_semaphore_wait: long (), <./src/semaphore.c 299>
+  127 	dispatch_group_async_f: 124
+  128 	dispatch_group_create: dispatch_group_t (), <./src/semaphore.c 313>
+  129 		DISPATCH_VTABLE: <>
+  130 	dispatch_group_enter: 125
+  131 	dispatch_group_leave: void (), <./src/semaphore.c 376>
+  132 		dispatch_atomic_release_barrier: <>
+  133 		dispatch_atomic_inc2o: <>
+  134 		slowpath: if (), <./src/queue.c 1716>
+  135 		DISPATCH_CLIENT_CRASH: <>
+  136 	dispatch_group_notify: void (), <./src/semaphore.c 548>
+  137 		dispatch_group_notify_f: DISPATCH_NOINLINE void (), <./src/semaphore.c 518>
+  138 			calloc: <>
+  139 			sleep: <>
+  140 			dispatch_atomic_store_barrier: <>
+  141 			dispatch_atomic_xchg2o: <>
+  142 			fastpath: if (), <./src/queue.c 1263>
+  143 	dispatch_group_notify_f: 137
+  144 	dispatch_io_barrier: void (), <./src/io.c 652>
+  145 		dispatch_async: 55
+  146 		dispatch_suspend: void (), <./src/object.c 234>
+  147 			slowpath: if (), <./src/queue.c 1716>
+  148 			dispatch_atomic_add2o: <>
+  149 		dispatch_group_notify: 136
+  150 		dispatch_resume: 44
+  151 	dispatch_io_close: void (), <./src/io.c 621>
+  152 		dispatch_async: 55
+  153 		dispatch_atomic_or2o: <>
+  154 	dispatch_io_create: dispatch_io_t (), <./src/io.c 295>
+  155 		dispatch_suspend: 146
+  156 		lseek: <>
+  157 		dispatch_assume_zero: <>
+  158 		dispatch_resume: 44
+  159 	dispatch_io_create_with_io: dispatch_io_t (), <./src/io.c 413>
+  160 		dispatch_suspend: 146
+  161 		dispatch_async: 55
+  162 		dispatch_resume: 44
+  163 		stat: <>
+  164 		lseek: <>
+  165 		dispatch_assume_zero: <>
+  166 		malloc: <>
+  167 		memcpy: <>
+  168 	dispatch_io_create_with_path: dispatch_io_t (), <./src/io.c 333>
+  169 		strlen: <>
+  170 		malloc: <>
+  171 		memcpy: <>
+  172 		dispatch_async: 55
+  173 		lstat: <>
+  174 		stat: <>
+  175 		strrchr: <>
+  176 		dispatch_assert: <>
+  177 		free: <>
+  178 		dispatch_suspend: 146
+  179 		dispatch_once_f: 71
+  180 		dispatch_resume: 44
+  181 	dispatch_io_get_descriptor: dispatch_fd_t (), <./src/io.c 565>
+  182 	dispatch_io_read: void (), <./src/io.c 673>
+  183 		dispatch_async: 55
+  184 	dispatch_io_set_high_water: void (), <./src/io.c 511>
+  185 		dispatch_async: 55
+  186 	dispatch_io_set_interval: void (), <./src/io.c 539>
+  187 		dispatch_async: 55
+  188 	dispatch_io_set_low_water: void (), <./src/io.c 525>
+  189 		dispatch_async: 55
+  190 	dispatch_io_write: void (), <./src/io.c 695>
+  191 		dispatch_async: 55
+  192 		dispatch_data_get_size: size_t (), <./src/data.c 190>
+  193 	dispatch_mach_msg_get_context: void * (), <./src/init.c 798>
+  194 		round_msg: <>
+  195 	dispatch_main: void (), <./src/queue.c 2544>
+  196 		pthread_main_np: <>
+  197 		pthread_exit: <>
+  198 		DISPATCH_CRASH: <>
+  199 		DISPATCH_CLIENT_CRASH: <>
+  200 	dispatch_mig_server: mach_msg_return_t (), <./src/source.c 1637>
+  201 		MACH_RCV_TRAILER_ELEMENTS: <>
+  202 		MACH_RCV_TRAILER_TYPE: <>
+  203 		alloca: <>
+  204 		DISPATCH_OBJECT_SUSPENDED: 1
+  205 		mach_msg: <>
+  206 		slowpath: if (), <./src/queue.c 1716>
+  207 		mach_msg_destroy: <>
+  208 		malloc: <>
+  209 		free: <>
+  210 		MACH_MSGH_BITS_REMOTE: <>
+  211 	dispatch_once: void (), <./src/once.c 36>
+  212 		dispatch_once_f: 71
+  213 	dispatch_once_f: 71
+  214 	dispatch_queue_create: dispatch_queue_t (), <./src/queue.c 600>
+  215 		strlen: <>
+  216 		DISPATCH_VTABLE: <>
+  217 		strcpy: <>
+  218 		fastpath: if (), <./src/queue.c 1263>
+  219 		dispatch_debug_assert: <>
+  220 	dispatch_queue_debug: size_t (), <./src/queue.c 951>
+  221 		snprintf: <>
+  222 	dispatch_queue_get_specific: DISPATCH_NOINLINE void * (), <./src/queue.c 902>
+  223 		slowpath: if (), <./src/queue.c 1716>
+  224 		fastpath: if (), <./src/queue.c 1263>
+  225 		dispatch_sync_f: DISPATCH_NOINLINE void (), <./src/queue.c 1724>
+  226 	dispatch_queue_set_specific: DISPATCH_NOINLINE void (), <./src/queue.c 863>
+  227 		slowpath: if (), <./src/queue.c 1716>
+  228 		calloc: <>
+  229 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+  230 	dispatch_queue_set_width: void (), <./src/queue.c 694>
+  231 		slowpath: if (), <./src/queue.c 1716>
+  232 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+  233 	dispatch_read: void (), <./src/io.c 720>
+  234 		dispatch_async: 55
+  235 		dispatch_retain: 42
+  236 		dispatch_data_create_concat: 86
+  237 	dispatch_release: 101
+  238 	dispatch_resume: 44
+  239 	dispatch_retain: 42
+  240 	dispatch_semaphore_create: dispatch_semaphore_t (), <./src/semaphore.c 63>
+  241 		DISPATCH_VTABLE: <>
+  242 	dispatch_semaphore_signal: long (), <./src/semaphore.c 183>
+  243 		dispatch_atomic_release_barrier: <>
+  244 		dispatch_atomic_inc2o: <>
+  245 		fastpath: if (), <./src/queue.c 1263>
+  246 		slowpath: if (), <./src/queue.c 1716>
+  247 		DISPATCH_CLIENT_CRASH: <>
+  248 	dispatch_set_context: 33
+  249 	dispatch_set_current_target_queue: void (), <./src/queue.c 749>
+  250 		slowpath: if (), <./src/queue.c 1716>
+  251 		DISPATCH_CLIENT_CRASH: <>
+  252 	dispatch_set_finalizer_f: void (), <./src/object.c 228>
+  253 	dispatch_set_target_queue: 18
+  254 	dispatch_source_cancel: void (), <./src/source.c 160>
+  255 		dispatch_debug: 24
+  256 		dispatch_atomic_or2o: <>
+  257 	dispatch_source_create: 9
+  258 	dispatch_source_merge_data: void (), <./src/source.c 202>
+  259 		typeof: <>
+  260 		dispatch_assert: <>
+  261 	dispatch_source_set_cancel_handler: void (), <./src/source.c 292>
+  262 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+  263 	dispatch_source_set_cancel_handler_f: void (), <./src/source.c 318>
+  264 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+  265 	dispatch_source_set_event_handler: void (), <./src/source.c 240>
+  266 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+  267 	dispatch_source_set_event_handler_f: 34
+  268 	dispatch_source_set_registration_handler: void (), <./src/source.c 341>
+  269 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+  270 	dispatch_source_set_registration_handler_f: void (), <./src/source.c 367>
+  271 		dispatch_barrier_async_f: DISPATCH_NOINLINE void (), <./src/queue.c 1140>
+  272 	dispatch_source_set_timer: 36
+  273 	dispatch_source_testcancel: long (), <./src/source.c 177>
+  274 	dispatch_stride: void (), <./src/apply.c 242>
+  275 		dispatch_stride_f: DISPATCH_NOINLINE void (), <./src/apply.c 253>
+  276 			dispatch_apply: void (), <./src/apply.c 225>
+  277 			dispatch_sync: void (), <./src/queue.c 1757>
+  278 				slowpath: if (), <./src/queue.c 1716>
+  279 				dispatch_sync_f: DISPATCH_NOINLINE void (), <./src/queue.c 1724>
+  280 	dispatch_stride_f: 275
+  281 	dispatch_suspend: 146
+  282 	dispatch_sync: 277
+  283 	dispatch_time: dispatch_time_t (), <./src/time.c 49>
+  284 	dispatch_walltime: dispatch_time_t (), <./src/time.c 86>
+  285 	dispatch_write: void (), <./src/io.c 779>
+  286 		dispatch_async: 55
+  287 		dispatch_retain: 42
+  288 		dispatch_data_get_size: size_t (), <./src/data.c 190>
+  289 	libdispatch_init: DISPATCH_EXPORT DISPATCH_NOTHROW void (), <./src/queue.c 507>
+  290 		dispatch_assert: <>
+  291 		countof: <>
+  292 		ROUND_UP_TO_CACHELINE_SIZE: <>
+  293 		dispatch_assume_zero: <>
+  294 		pthread_atfork: <>
+  295 		dispatch_atfork_prepare: DISPATCH_EXPORT DISPATCH_NOTHROW void (), <./src/init.c 48>
+  296 		dispatch_atfork_parent: DISPATCH_EXPORT DISPATCH_NOTHROW void (), <./src/init.c 54>
+  297 		dispatch_atfork_child: 58

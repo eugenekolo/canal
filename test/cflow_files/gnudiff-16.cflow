@@ -1,0 +1,733 @@
+    1 	main: int (), <./diffutils/lib/getopt.c 1003>
+    2 		initialize_main: <>
+    3 		setlocale: <>
+    4 		bindtextdomain: <>
+    5 		textdomain: <>
+    6 		c_stack_action: int (), <./diffutils/lib/c-stack.c 171>
+    7 			sigaltstack: <>
+    8 			segv_action: void () (), <./diffutils/lib/c-stack.c 98>
+    9 			sigemptyset: <>
+   10 			segv_handler: void (), <./diffutils/lib/c-stack.c 104>
+   11 				sysconf: <>
+   12 				find_stack_direction: int (), <./diffutils/lib/c-stack.c 90>
+   13 					find_stack_direction: 12
+   14 				segv_action: void () (), <./diffutils/lib/c-stack.c 98>
+   15 			sigaction: <>
+   16 		c_stack_die: void (), <./diffutils/lib/c-stack.c 141>
+   17 			write: <>
+   18 			strlen: <>
+   19 			kill: <>
+   20 			getpid: <>
+   21 		getopt_long: int (), <./diffutils/lib/getopt1.c 66>
+   22 		parse_ignore_initial: off_t (), <./diffutils/src/cmp.c 132>
+   23 			xstrtoumax: <>
+   24 			try_help: void (), <./diffutils/src/diff3.c 422>
+   25 				error: <>
+   26 					fflush: <>
+   27 					fprintf: <>
+   28 					VA_START: <>
+   29 					error_tail: void (), <./diffutils/lib/error.c 172>
+   30 						strlen: <>
+   31 						alloca: pointer (), <./diffutils/lib/alloca.c 172>
+   32 							ADDRESS_FUNCTION: <>
+   33 							find_stack_direction: void (), <./diffutils/lib/alloca.c 118>
+   34 								ADDRESS_FUNCTION: <>
+   35 								find_stack_direction: 33
+   36 							free: <>
+   37 							malloc: <>
+   38 							abort: <>
+   39 						realloc: <>
+   40 						fputws_unlocked: <>
+   41 						memset: <>
+   42 						mbsrtowcs: <>
+   43 						vfprintf: <>
+   44 						va_end: <>
+   45 						print_errno_message: void (), <./diffutils/lib/error.c 136>
+   46 							strerror: <>
+   47 							fprintf: <>
+   48 						putwc: <>
+   49 						putc: <>
+   50 						fflush: <>
+   51 						exit: <>
+   52 					print_errno_message: 45
+   53 					putc: <>
+   54 					exit: <>
+   55 				abort: <>
+   56 		specify_comparison_type: void (), <./diffutils/src/cmp.c 147>
+   57 			try_help: 24
+   58 		xstrtoumax: <>
+   59 		try_help: 24
+   60 		printf: <>
+   61 		check_stdout: void (), <./diffutils/src/cmp.c 155>
+   62 			ferror: <>
+   63 			error: 25
+   64 			fclose: <>
+   65 		usage: void (), <./diffutils/src/cmp.c 177>
+   66 			printf: <>
+   67 		strcmp: <>
+   68 		file_name_cmp: <>
+   69 		open: <>
+   70 		fstat: <>
+   71 		exit: <>
+   72 		error: 25
+   73 		set_binary_mode: bool (), <./diffutils/lib/setmode.c 53>
+   74 			isatty: <>
+   75 			setmode: <>
+   76 		COMPAT_MODE: <>
+   77 		same_file: <>
+   78 		same_file_attributes: <>
+   79 		file_position: off_t (), <./diffutils/src/cmp.c 671>
+   80 			lseek: <>
+   81 		stat: <>
+   82 		S_ISREG: <>
+   83 		MIN: <>
+   84 		buffer_lcm: size_t (), <./diffutils/lib/cmpbuf.c 129>
+   85 		STAT_BLOCKSIZE: <>
+   86 		xmalloc: void * (), <./diffutils/lib/xmalloc.c 80>
+   87 			malloc: <>
+   88 			xalloc_die: void (), <./diffutils/lib/xmalloc.c 66>
+   89 				error: 25
+   90 				exit: <>
+   91 		cmp: int (), <./diffutils/src/cmp.c 373>
+   92 			MIN: <>
+   93 			TYPE_MAXIMUM: <>
+   94 			S_ISREG: <>
+   95 			file_position: 79
+   96 			block_read: size_t (), <./diffutils/lib/cmpbuf.c 84>
+   97 				MIN: <>
+   98 				read: <>
+   99 			error: 25
+  100 			block_compare_and_count: size_t (), <./diffutils/src/cmp.c 572>
+  101 			block_compare: size_t (), <./diffutils/src/cmp.c 616>
+  102 			offtostr: <>
+  103 			N_: <>
+  104 			printf: <>
+  105 			sprintc: void (), <./diffutils/src/cmp.c 641>
+  106 				ISPRINT: <>
+  107 			fprintf: <>
+  108 		close: <>
+  109 		check_stdout: void (), <./diffutils/src/diff3.c 432>
+  110 			ferror: <>
+  111 			fatal: void (), <./diffutils/src/util.c 72>
+  112 				print_message_queue: void (), <./diffutils/src/util.c 130>
+  113 					strlen: <>
+  114 					printf: <>
+  115 					free: <>
+  116 				error: 25
+  117 				abort: <>
+  118 			fclose: <>
+  119 			perror_with_exit: void (), <./diffutils/src/diff3.c 1741>
+  120 				error: 25
+  121 				abort: <>
+  122 		usage: void (), <./diffutils/src/diff3.c 461>
+  123 			printf: <>
+  124 			putchar: <>
+  125 		fatal: 111
+  126 		perror_with_exit: 119
+  127 		S_ISDIR: <>
+  128 		signal: <>
+  129 		process_diff: struct diff_block (), <./diffutils/src/diff3.c 943>
+  130 		make_3way_diff: struct diff3_block (), <./diffutils/src/diff3.c 536>
+  131 		output_diff3_edscript: bool (), <./diffutils/src/diff3.c 1489>
+  132 			reverse_diff3_blocklist: struct diff3_block (), <./diffutils/src/diff3.c 1719>
+  133 			D_LOWLINE: <>
+  134 			D_HIGHLINE: <>
+  135 			fprintf: <>
+  136 			dotlines: bool (), <./diffutils/src/diff3.c 1425>
+  137 				D_NUMLINES: <>
+  138 				D_RELNUM: <>
+  139 				fprintf: <>
+  140 				fwrite: <>
+  141 				D_RELLEN: <>
+  142 			undotlines: void (), <./diffutils/src/diff3.c 1454>
+  143 				fprintf: <>
+  144 			D_NUMLINES: <>
+  145 		freopen: <>
+  146 		output_diff3_merge: bool (), <./diffutils/src/diff3.c 1605>
+  147 			D_LOWLINE: <>
+  148 			getc: <>
+  149 			ferror: <>
+  150 			perror_with_exit: 119
+  151 			feof: <>
+  152 			fatal: 111
+  153 			putc: <>
+  154 			fprintf: <>
+  155 			D_NUMLINES: <>
+  156 			fwrite: <>
+  157 			D_RELNUM: <>
+  158 			D_RELLEN: <>
+  159 		ferror: <>
+  160 		output_diff3: void (), <./diffutils/src/diff3.c 1336>
+  161 			D_NEXT: <>
+  162 			fatal: 111
+  163 			fprintf: <>
+  164 			D_LOWLINE: <>
+  165 			D_HIGHLINE: <>
+  166 			D_RELNUM: <>
+  167 			D_RELLEN: <>
+  168 			fwrite: <>
+  169 		re_set_syntax: reg_syntax_t (), <./diffutils/lib/regex.c 1341>
+  170 		new_exclude: struct exclude (), <./diffutils/lib/exclude.c 97>
+  171 		ISDIGIT: <>
+  172 		strtoumax: <>
+  173 		try_help: void (), <./diffutils/src/diff.c 813>
+  174 			error: 25
+  175 			abort: <>
+  176 		specify_style: void (), <./diffutils/src/diff.c 957>
+  177 			try_help: 173
+  178 		strlen: <>
+  179 		sprintf: <>
+  180 		specify_value: void (), <./diffutils/src/diff.c 945>
+  181 			strcmp: <>
+  182 			error: 25
+  183 			try_help: 173
+  184 		add_regexp: void (), <./diffutils/src/diff.c 755>
+  185 			strlen: <>
+  186 			re_compile_pattern: <>
+  187 			error: 25
+  188 			xrealloc: void * (), <./diffutils/lib/xmalloc.c 94>
+  189 				realloc: <>
+  190 				xalloc_die: 88
+  191 			memcpy: <>
+  192 		check_stdout: void (), <./diffutils/src/diff.c 823>
+  193 			ferror: <>
+  194 			fatal: 111
+  195 			fclose: <>
+  196 			pfatal_with_name: void (), <./diffutils/src/util.c 61>
+  197 				print_message_queue: 112
+  198 				error: 25
+  199 				abort: <>
+  200 		add_exclude: void (), <./diffutils/lib/exclude.c 191>
+  201 			xalloc_die: 88
+  202 			xrealloc: 188
+  203 		exclude_options: int (), <./diffutils/src/diff.c 136>
+  204 		add_exclude_file: int (), <./diffutils/lib/exclude.c 215>
+  205 			fopen: <>
+  206 			xmalloc: 86
+  207 			getc: <>
+  208 			xalloc_die: 88
+  209 			xrealloc: 188
+  210 			ferror: <>
+  211 			fclose: <>
+  212 		pfatal_with_name: 196
+  213 		usage: void (), <./diffutils/src/diff.c 916>
+  214 			printf: <>
+  215 			putchar: <>
+  216 			strchr: <>
+  217 		MAX: <>
+  218 		hard_locale: int (), <./diffutils/lib/hard-locale.c 40>
+  219 			setlocale: <>
+  220 			strcmp: <>
+  221 			malloc: <>
+  222 			strlen: <>
+  223 			strcpy: <>
+  224 			free: <>
+  225 		posix2_version: int (), <./diffutils/lib/posixver.c 44>
+  226 			getenv: <>
+  227 			strtol: <>
+  228 		summarize_regexp_list: void (), <./diffutils/src/diff.c 794>
+  229 			xmalloc: 86
+  230 			re_compile_pattern: <>
+  231 			error: 25
+  232 		concat: char * (), <./diffutils/src/util.c 712>
+  233 			xmalloc: 86
+  234 			strlen: <>
+  235 			sprintf: <>
+  236 		option_list: char * (), <./diffutils/src/diff.c 110>
+  237 			quote_system_arg: size_t (), <./diffutils/lib/quotesys.c 33>
+  238 			xmalloc: 86
+  239 		compare_files: int (), <./diffutils/src/diff.c 1047>
+  240 			memset: <>
+  241 			dir_file_pathname: char * (), <./diffutils/src/util.c 733>
+  242 				base_name: char * (), <./diffutils/lib/basename.c 36>
+  243 					FILESYSTEM_PREFIX_LEN: <>
+  244 					ISSLASH: <>
+  245 				strlen: <>
+  246 				concat: 232
+  247 			file_name_cmp: <>
+  248 			stat: <>
+  249 			strcmp: <>
+  250 			fstat: <>
+  251 			ERRNO_ENCODE: <>
+  252 			S_ISREG: <>
+  253 			lseek: <>
+  254 			MAX: <>
+  255 			set_mtime_to_now: void (), <./diffutils/src/diff.c 1012>
+  256 				clock_gettime: <>
+  257 				gettimeofday: <>
+  258 				time: <>
+  259 			ERRNO_DECODE: <>
+  260 			perror_with_name: void (), <./diffutils/src/util.c 53>
+  261 				error: 25
+  262 			DIR_P: <>
+  263 			base_name: 242
+  264 			fatal: 111
+  265 			same_file: <>
+  266 			same_file_attributes: <>
+  267 			diff_dirs: int (), <./diffutils/src/dir.c 201>
+  268 				dir_loop: bool (), <./diffutils/src/dir.c 282>
+  269 					same_file: <>
+  270 					stat: <>
+  271 				error: 25
+  272 				dir_read: bool (), <./diffutils/src/dir.c 54>
+  273 					opendir: <>
+  274 					xmalloc: 86
+  275 					readdir: <>
+  276 					NAMLEN: <>
+  277 					excluded_filename: bool (), <./diffutils/lib/exclude.c 145>
+  278 						fnmatch: int (), <./diffutils/lib/fnmatch.c 46>
+  279 							FOLD: <>
+  280 							fnmatch: 278
+  281 						fnmatch_no_wildcards: int (), <./diffutils/lib/exclude.c 120>
+  282 							strcasecmp: <>
+  283 							strcmp: <>
+  284 							strlen: <>
+  285 							strncasecmp: <>
+  286 							strncmp: if (), <./diffutils/lib/getopt.c 857>
+  287 					xalloc_die: 88
+  288 					xrealloc: 188
+  289 					memcpy: <>
+  290 					closedir: <>
+  291 					strlen: <>
+  292 				perror_with_name: 260
+  293 				setjmp: <>
+  294 				qsort: <>
+  295 				compare_names_for_qsort: int (), <./diffutils/src/dir.c 176>
+  296 					compare_names: int (), <./diffutils/src/dir.c 146>
+  297 						strcasecmp: <>
+  298 						strcoll: <>
+  299 						error: 25
+  300 						longjmp: <>
+  301 						file_name_cmp: <>
+  302 				compare_names: 296
+  303 				free: <>
+  304 			compare_files: 239
+  305 			message5: void (), <./diffutils/src/util.c 89>
+  306 				offsetof: <>
+  307 				strlen: <>
+  308 				xmalloc: 86
+  309 				memcpy: <>
+  310 				putchar: <>
+  311 				printf: <>
+  312 			filetype: char const * (), <./diffutils/src/diff.c 968>
+  313 				S_ISREG: <>
+  314 				S_ISDIR: <>
+  315 				S_ISBLK: <>
+  316 				S_ISCHR: <>
+  317 				S_ISFIFO: <>
+  318 				S_ISSOCK: <>
+  319 				S_TYPEISMQ: <>
+  320 				S_TYPEISSEM: <>
+  321 				S_TYPEISSHM: <>
+  322 				S_TYPEISTMO: <>
+  323 			open: <>
+  324 			set_binary_mode: 73
+  325 			diff_2_files: int (), <./diffutils/src/analyze.c 822>
+  326 				read_files: bool (), <./diffutils/src/io.c 804>
+  327 					sip: bool (), <./diffutils/src/io.c 97>
+  328 						xmalloc: 86
+  329 						buffer_lcm: 84
+  330 						STAT_BLOCKSIZE: <>
+  331 						set_binary_mode: 73
+  332 						file_block_read: void (), <./diffutils/src/io.c 72>
+  333 							block_read: 96
+  334 							FILE_BUFFER: <>
+  335 							pfatal_with_name: 196
+  336 						lseek: <>
+  337 						pfatal_with_name: 196
+  338 						binary_file_p: <>
+  339 					set_binary_mode: 73
+  340 					find_identical_ends: void (), <./diffutils/src/io.c 566>
+  341 						slurp: void (), <./diffutils/src/io.c 148>
+  342 							S_ISREG: <>
+  343 							xalloc_die: 88
+  344 							xrealloc: 188
+  345 							file_block_read: 332
+  346 						prepare_text: void (), <./diffutils/src/io.c 515>
+  347 							FILE_BUFFER: <>
+  348 							memset: <>
+  349 							memchr: <>
+  350 						ROBUST_OUTPUT_STYLE: <>
+  351 						guess_lines: lin (), <./diffutils/src/io.c 555>
+  352 							MAX: <>
+  353 							MIN: <>
+  354 						MIN: <>
+  355 						xmalloc: 86
+  356 						xalloc_die: 88
+  357 						xrealloc: 188
+  358 					xalloc_die: 88
+  359 					xmalloc: 86
+  360 					zalloc: void * (), <./diffutils/src/util.c 722>
+  361 						xmalloc: 86
+  362 						memset: <>
+  363 					find_and_hash_each_line: void (), <./diffutils/src/io.c 217>
+  364 						xmalloc: 86
+  365 						FILE_BUFFER: <>
+  366 						ISSPACE: <>
+  367 						HASH: <>
+  368 						TOLOWER: <>
+  369 						ROBUST_OUTPUT_STYLE: <>
+  370 						xalloc_die: 88
+  371 						xrealloc: 188
+  372 						memcmp: <>
+  373 						lines_differ: bool (), <./diffutils/src/util.c 315>
+  374 							ISSPACE: <>
+  375 							TOLOWER: <>
+  376 					free: <>
+  377 				stat: <>
+  378 				S_ISREG: <>
+  379 				buffer_lcm: 84
+  380 				STAT_BLOCKSIZE: <>
+  381 				xrealloc: 188
+  382 				file_block_read: 332
+  383 				memcmp: <>
+  384 				briefly_report: int (), <./diffutils/src/analyze.c 801>
+  385 				zalloc: 360
+  386 				discard_confusing_lines: void (), <./diffutils/src/analyze.c 400>
+  387 					xmalloc: 86
+  388 					zalloc: 360
+  389 					free: <>
+  390 				xmalloc: 86
+  391 				MAX: <>
+  392 				compareseq: void (), <./diffutils/src/analyze.c 334>
+  393 					diag: lin (), <./diffutils/src/analyze.c 95>
+  394 						MIN: <>
+  395 						MAX: <>
+  396 					abort: <>
+  397 					compareseq: 392
+  398 				free: <>
+  399 				shift_boundaries: void (), <./diffutils/src/analyze.c 609>
+  400 				build_reverse_script: struct change (), <./diffutils/src/analyze.c 731>
+  401 				build_script: struct change (), <./diffutils/src/analyze.c 768>
+  402 				find_change: struct change (), <./diffutils/src/util.c 449>
+  403 				analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  404 				setup_output: void (), <./diffutils/src/util.c 160>
+  405 				print_context_script: void (), <./diffutils/src/context.c 92>
+  406 					mark_ignorable: void (), <./diffutils/src/context.c 424>
+  407 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  408 					print_script: void (), <./diffutils/src/util.c 472>
+  409 						debug_script: void (), <./diffutils/src/util.c 741>
+  410 							fflush: <>
+  411 							fprintf: <>
+  412 					find_hunk: struct change (), <./diffutils/src/context.c 384>
+  413 					pr_unidiff_hunk: void (), <./diffutils/src/context.c 287>
+  414 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  415 						MAX: <>
+  416 						find_function: char const * (), <./diffutils/src/context.c 451>
+  417 							MIN: <>
+  418 							re_search:  (), <./diffutils/lib/regex.c 5015>
+  419 						begin_output: void (), <./diffutils/src/util.c 173>
+  420 							xmalloc: 86
+  421 							strlen: <>
+  422 							sprintf: <>
+  423 							fflush: <>
+  424 							pfatal_with_name: 196
+  425 							pipe: <>
+  426 							vfork: <>
+  427 							close: <>
+  428 							dup2: <>
+  429 							execl: <>
+  430 							fdopen: <>
+  431 							quote_system_arg: 237
+  432 							popen: <>
+  433 							free: <>
+  434 							printf: <>
+  435 							print_context_header: void (), <./diffutils/src/context.c 75>
+  436 								print_context_label: void (), <./diffutils/src/context.c 50>
+  437 									fprintf: <>
+  438 									localtime: <>
+  439 									TIMESPEC_NS: <>
+  440 									nstrftime: <>
+  441 									verify: <>
+  442 									sprintf: <>
+  443 						fprintf: <>
+  444 						print_unidiff_number_range: void (), <./diffutils/src/context.c 265>
+  445 							translate_range: void (), <./diffutils/src/util.c 603>
+  446 								translate_line_number: lin (), <./diffutils/src/util.c 593>
+  447 							fprintf: <>
+  448 						print_context_function: void (), <./diffutils/src/context.c 141>
+  449 							putc: <>
+  450 							fwrite: <>
+  451 						putc: <>
+  452 						print_1_line: void (), <./diffutils/src/util.c 507>
+  453 							fprintf: <>
+  454 							output_1_line: void (), <./diffutils/src/util.c 535>
+  455 								fwrite: <>
+  456 								putc: <>
+  457 								fprintf: <>
+  458 								ISPRINT: <>
+  459 					pr_context_hunk: void (), <./diffutils/src/context.c 158>
+  460 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  461 						MAX: <>
+  462 						find_function: 416
+  463 						begin_output: 419
+  464 						fprintf: <>
+  465 						print_context_function: 448
+  466 						print_context_number_range: void (), <./diffutils/src/context.c 119>
+  467 							translate_range: 445
+  468 							fprintf: <>
+  469 						print_1_line: 452
+  470 				print_ed_script: void (), <./diffutils/src/ed.c 32>
+  471 					print_script: 408
+  472 					find_reverse_change: struct change (), <./diffutils/src/util.c 455>
+  473 					print_ed_hunk: void (), <./diffutils/src/ed.c 40>
+  474 						debug_script: 409
+  475 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  476 						begin_output: 419
+  477 						print_number_range: void (), <./diffutils/src/util.c 618>
+  478 							translate_range: 445
+  479 							fprintf: <>
+  480 						fprintf: <>
+  481 						print_1_line: 452
+  482 				pr_forward_ed_script: void (), <./diffutils/src/ed.c 87>
+  483 					print_script: 408
+  484 					find_change: struct change (), <./diffutils/src/util.c 449>
+  485 					pr_forward_ed_hunk: void (), <./diffutils/src/ed.c 93>
+  486 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  487 						begin_output: 419
+  488 						fprintf: <>
+  489 						print_number_range: 477
+  490 						print_1_line: 452
+  491 				print_rcs_script: void (), <./diffutils/src/ed.c 127>
+  492 					print_script: 408
+  493 					find_change: struct change (), <./diffutils/src/util.c 449>
+  494 					print_rcs_hunk: void (), <./diffutils/src/ed.c 135>
+  495 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  496 						begin_output: 419
+  497 						translate_range: 445
+  498 						fprintf: <>
+  499 						print_1_line: 452
+  500 				print_normal_script: void (), <./diffutils/src/normal.c 31>
+  501 					print_script: 408
+  502 					find_change: struct change (), <./diffutils/src/util.c 449>
+  503 					print_normal_hunk: void (), <./diffutils/src/normal.c 41>
+  504 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  505 						begin_output: 419
+  506 						print_number_range: 477
+  507 						fprintf: <>
+  508 						print_1_line: 452
+  509 				print_ifdef_script: void (), <./diffutils/src/ifdef.c 49>
+  510 					print_script: 408
+  511 					find_change: struct change (), <./diffutils/src/util.c 449>
+  512 					print_ifdef_hunk: void (), <./diffutils/src/ifdef.c 67>
+  513 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  514 						begin_output: 419
+  515 						format_ifdef: void (), <./diffutils/src/ifdef.c 93>
+  516 							format_group: char const * (), <./diffutils/src/ifdef.c 113>
+  517 								ISDIGIT: <>
+  518 								strtoumax: <>
+  519 								groups_letter_value: lin (), <./diffutils/src/ifdef.c 206>
+  520 									translate_line_number: lin (), <./diffutils/src/util.c 593>
+  521 								format_group: 516
+  522 								print_ifdef_lines: void (), <./diffutils/src/ifdef.c 231>
+  523 									fwrite: <>
+  524 									output_1_line: 454
+  525 									do_printf_spec: char const * (), <./diffutils/src/ifdef.c 299>
+  526 										ISDIGIT: <>
+  527 										scan_char_literal: char const * (), <./diffutils/src/ifdef.c 388>
+  528 										putc: <>
+  529 										translate_line_number: lin (), <./diffutils/src/util.c 593>
+  530 										groups_letter_value: 519
+  531 										xmalloc: 86
+  532 										memcpy: <>
+  533 										fprintf: <>
+  534 										free: <>
+  535 									putc: <>
+  536 								do_printf_spec: 525
+  537 								putc: <>
+  538 					begin_output: 419
+  539 					format_ifdef: 515
+  540 				print_sdiff_script: void (), <./diffutils/src/side.c 34>
+  541 					begin_output: 419
+  542 					print_script: 408
+  543 					find_change: struct change (), <./diffutils/src/util.c 449>
+  544 					print_sdiff_hunk: void (), <./diffutils/src/side.c 237>
+  545 						analyze_hunk: enum changes (), <./diffutils/src/util.c 646>
+  546 						print_sdiff_common_lines: void (), <./diffutils/src/side.c 203>
+  547 							fprintf: <>
+  548 							print_1sdiff_line: void (), <./diffutils/src/side.c 165>
+  549 								print_half_line: unsigned int (), <./diffutils/src/side.c 69>
+  550 									putc: <>
+  551 									tab_from_to: unsigned int (), <./diffutils/src/side.c 47>
+  552 										putc: <>
+  553 									ISPRINT: <>
+  554 								tab_from_to: 551
+  555 								putc: <>
+  556 						fprintf: <>
+  557 						print_1sdiff_line: 548
+  558 					print_sdiff_common_lines: 546
+  559 				abort: <>
+  560 				finish_output: void (), <./diffutils/src/util.c 279>
+  561 					ferror: <>
+  562 					fatal: 111
+  563 					pclose: <>
+  564 					fclose: <>
+  565 					pfatal_with_name: 196
+  566 					waitpid: pid_t (), <./diffutils/lib/waitpid.c 33>
+  567 						wait: <>
+  568 					WIFEXITED: <>
+  569 					WEXITSTATUS: <>
+  570 					error: 25
+  571 				ROBUST_OUTPUT_STYLE: <>
+  572 				error: 25
+  573 			close: <>
+  574 			fflush: <>
+  575 			pfatal_with_name: 196
+  576 			free: <>
+  577 		print_message_queue: 112
+  578 		getenv: <>
+  579 		diffarg: void (), <./diffutils/src/sdiff.c 737>
+  580 			xalloc_die: 88
+  581 			xrealloc: 188
+  582 		check_stdout: void (), <./diffutils/src/sdiff.c 174>
+  583 		usage: void (), <./diffutils/src/sdiff.c 210>
+  584 			printf: <>
+  585 			putchar: <>
+  586 		try_help: <>
+  587 		execvp: <>
+  588 		perror_fatal: void (), <./diffutils/src/sdiff.c 255>
+  589 			checksigs: void (), <./diffutils/src/sdiff.c 833>
+  590 				cleanup: void (), <./diffutils/src/sdiff.c 227>
+  591 					kill: <>
+  592 					unlink: <>
+  593 				untrapsig: void (), <./diffutils/src/sdiff.c 817>
+  594 					initial_handler: <>
+  595 					sigaction: <>
+  596 					signal: <>
+  597 				kill: <>
+  598 				getpid: <>
+  599 				exit: <>
+  600 			error: 25
+  601 			exiterr: <>
+  602 		diraccess: bool (), <./diffutils/src/sdiff.c 1183>
+  603 			stat: <>
+  604 			S_ISDIR: <>
+  605 		fatal: void (), <./diffutils/src/sdiff.c 248>
+  606 			error: 25
+  607 			exiterr: <>
+  608 		expand_name: char const * (), <./diffutils/src/sdiff.c 324>
+  609 			strcmp: <>
+  610 			fatal: 605
+  611 			base_name: 242
+  612 			strlen: <>
+  613 			xmalloc: 86
+  614 			memcpy: <>
+  615 		ck_fopen: FILE * (), <./diffutils/src/sdiff.c 285>
+  616 			fopen: <>
+  617 			perror_fatal: 588
+  618 		trapsigs: void (), <./diffutils/src/sdiff.c 785>
+  619 			sigemptyset: <>
+  620 			sigaddset: <>
+  621 			sigaction: <>
+  622 			signal: <>
+  623 			initial_handler: <>
+  624 			signal_handler: void (), <./diffutils/src/sdiff.c 777>
+  625 				sigaction: <>
+  626 			catchsig: RETSIGTYPE (), <./diffutils/src/sdiff.c 764>
+  627 				signal: <>
+  628 		quote_system_arg: 237
+  629 		popen: <>
+  630 		free: <>
+  631 		pipe: <>
+  632 		sigemptyset: <>
+  633 		sigaddset: <>
+  634 		sigprocmask: <>
+  635 		vfork: <>
+  636 		initial_handler: <>
+  637 		signal_handler: 624
+  638 		dup2: <>
+  639 		catchsig: 626
+  640 		fdopen: <>
+  641 		lf_init: void (), <./diffutils/src/sdiff.c 354>
+  642 			xmalloc: 86
+  643 		interact: bool (), <./diffutils/src/sdiff.c 1117>
+  644 			lf_snarf: int (), <./diffutils/src/sdiff.c 421>
+  645 				memchr: <>
+  646 				memcpy: <>
+  647 				lf_refill: size_t (), <./diffutils/src/sdiff.c 363>
+  648 					ck_fread: size_t (), <./diffutils/src/sdiff.c 301>
+  649 						fread: <>
+  650 						ferror: <>
+  651 						perror_fatal: 588
+  652 					checksigs: 589
+  653 			checksigs: 589
+  654 			puts: <>
+  655 			strtoumax: <>
+  656 			fatal: 605
+  657 			MAX: <>
+  658 			lf_skip: void (), <./diffutils/src/sdiff.c 401>
+  659 				memchr: <>
+  660 				lf_refill: 647
+  661 			lf_copy: void (), <./diffutils/src/sdiff.c 375>
+  662 				memchr: <>
+  663 				ck_fwrite: void (), <./diffutils/src/sdiff.c 310>
+  664 					fwrite: <>
+  665 					perror_fatal: 588
+  666 				lf_refill: 647
+  667 			edit: bool (), <./diffutils/src/sdiff.c 896>
+  668 				putchar: <>
+  669 				perror_fatal: 588
+  670 				ck_fflush: void (), <./diffutils/src/sdiff.c 317>
+  671 					fflush: <>
+  672 					perror_fatal: 588
+  673 				skip_white: int (), <./diffutils/src/sdiff.c 868>
+  674 					getchar: <>
+  675 					ISSPACE: <>
+  676 					checksigs: 589
+  677 					ferror: <>
+  678 					perror_fatal: 588
+  679 				give_help: void (), <./diffutils/src/sdiff.c 851>
+  680 					fprintf: <>
+  681 				flush_line: void (), <./diffutils/src/sdiff.c 884>
+  682 					getchar: <>
+  683 					ferror: <>
+  684 					perror_fatal: 588
+  685 				feof: <>
+  686 				lf_copy: 661
+  687 				lf_skip: 658
+  688 				fopen: <>
+  689 				temporary_file: int (), <./diffutils/src/sdiff.c 1200>
+  690 					getenv: <>
+  691 					xmalloc: 86
+  692 					strlen: <>
+  693 					sprintf: <>
+  694 					sigemptyset: <>
+  695 					sigaddset: <>
+  696 					sigprocmask: <>
+  697 					mkstemp: <>
+  698 				fdopen: <>
+  699 				fprintf: <>
+  700 				ck_fclose: void (), <./diffutils/src/sdiff.c 294>
+  701 					fclose: <>
+  702 					perror_fatal: 588
+  703 				checksigs: 589
+  704 				xmalloc: 86
+  705 				quote_system_arg: 237
+  706 				strlen: <>
+  707 				sprintf: <>
+  708 				system: <>
+  709 				free: <>
+  710 				vfork: <>
+  711 				execvp: <>
+  712 				waitpid: 566
+  713 				ck_editor_status: void (), <./diffutils/src/sdiff.c 264>
+  714 					N_: <>
+  715 					WIFEXITED: <>
+  716 					WEXITSTATUS: <>
+  717 					error: 25
+  718 					exiterr: <>
+  719 				ck_fopen: 615
+  720 				ck_fread: 648
+  721 				ck_fwrite: 663
+  722 		ck_fclose: 700
+  723 		pclose: <>
+  724 		waitpid: 566
+  725 		checksigs: 589
+  726 		unlink: <>
+  727 		exiterr: <>
+  728 		ck_editor_status: 713
+  729 		untrapsig: 593
+  730 		WEXITSTATUS: <>
+  731 		STRTOL_FATAL_ERROR: <>
+  732 		recurse: long (), <./diffutils/lib/c-stack.c 211>
+  733 			recurse: 732

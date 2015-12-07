@@ -1,0 +1,2198 @@
+    1 	main: int (), <./gnutar/rmt/rmt.c 593>
+    2 		set_start_time: void (), <./gnutar/src/buffer.c 177>
+    3 			gettime: void (), <./gnutar/lib/gettime.c 30>
+    4 				nanotime: <>
+    5 				clock_gettime: <>
+    6 				gettimeofday: <>
+    7 		setlocale: <>
+    8 		bindtextdomain: <>
+    9 		textdomain: <>
+   10 		set_quoting_style: void (), <./gnutar/lib/quotearg.c 125>
+   11 		stdopen: bool (), <./gnutar/lib/stdopen.c 40>
+   12 			fcntl: <>
+   13 			open: int (), <./gnutar/lib/fchdir.c 98>
+   14 				arg: void (), <./gnutar/lib/argp-help.c 963>
+   15 					dgettext: <>
+   16 				va_start: <>
+   17 				va_arg: <>
+   18 				va_end: <>
+   19 				open: 13
+   20 				ensure_dirs_slot: void (), <./gnutar/lib/fchdir.c 51>
+   21 					realloc: <>
+   22 					malloc: <>
+   23 				fstat: <>
+   24 				S_ISDIR: <>
+   25 				canonicalize_file_name: <>
+   26 			close: int (), <./gnutar/lib/fchdir.c 82>
+   27 				close: 26
+   28 				free: <>
+   29 		xmalloc: void * (), <./gnutar/lib/xmalloc.c 48>
+   30 			malloc: <>
+   31 			xalloc_die: void (), <./gnutar/lib/xalloc-die.c 33>
+   32 				error: void (), <./gnutar/lib/error.c 227>
+   33 					fflush: <>
+   34 					fprintf: <>
+   35 					va_start: <>
+   36 					error_tail: void (), <./gnutar/lib/error.c 136>
+   37 						strlen: <>
+   38 						alloca: void * (), <./gnutar/lib/alloca.c 151>
+   39 							ADDRESS_FUNCTION: <>
+   40 							find_stack_direction: void (), <./gnutar/lib/alloca.c 97>
+   41 								ADDRESS_FUNCTION: <>
+   42 								find_stack_direction: 40
+   43 							free: <>
+   44 							memory_full: <>
+   45 							malloc: <>
+   46 						realloc: <>
+   47 						free: <>
+   48 						fputws_unlocked: <>
+   49 						memset: void * (), <./gnutar/lib/memset.c 21>
+   50 						mbsrtowcs: <>
+   51 						vfprintf: <>
+   52 						va_end: <>
+   53 						print_errno_message: void (), <./gnutar/lib/error.c 105>
+   54 							strerror: char * (), <./gnutar/lib/strerror.c 37>
+   55 								sprintf: <>
+   56 							fprintf: <>
+   57 						putc: <>
+   58 						fflush: <>
+   59 						exit: <>
+   60 				fatal_exit: void (), <./gnutar/src/extract.c 1478>
+   61 					extract_finish: void (), <./gnutar/src/extract.c 1430>
+   62 						apply_nonancestor_delayed_set_stat: void (), <./gnutar/src/extract.c 619>
+   63 							strlen: <>
+   64 							ISSLASH: <>
+   65 							memcmp: <>
+   66 							stat: <>
+   67 							stat_error: void (), <./gnutar/lib/paxerror.c 295>
+   68 								call_arg_error: void (), <./gnutar/lib/paxerror.c 51>
+   69 									ERROR: <>
+   70 									quotearg_colon: char * (), <./gnutar/lib/quotearg.c 694>
+   71 										quotearg_char: char * (), <./gnutar/lib/quotearg.c 685>
+   72 											set_char_quoting: int (), <./gnutar/lib/quotearg.c 136>
+   73 											quotearg_n_options: char * (), <./gnutar/lib/quotearg.c 591>
+   74 												abort: <>
+   75 												xalloc_oversized: <>
+   76 												xalloc_die: 31
+   77 												xrealloc: void * (), <./gnutar/lib/xmalloc.c 60>
+   78 													realloc: <>
+   79 													xalloc_die: 31
+   80 												memset: 49
+   81 												quotearg_buffer: size_t (), <./gnutar/lib/quotearg.c 521>
+   82 													quotearg_buffer_restyled: size_t (), <./gnutar/lib/quotearg.c 172>
+   83 														STORE: <>
+   84 														gettext_quote: char const * (), <./gnutar/lib/quotearg.c 150>
+   85 														N_: <>
+   86 														strlen: <>
+   87 														memcmp: <>
+   88 														isprint: <>
+   89 														memset: 49
+   90 														mbrtowc: <>
+   91 														iswprint: <>
+   92 														mbsinit: <>
+   93 														quotearg_buffer_restyled: 82
+   94 												free: <>
+   95 												xcharalloc: <>
+   96 							ERROR: <>
+   97 							quotearg_colon: 70
+   98 							set_stat: void (), <./gnutar/src/extract.c 253>
+   99 								utimens: int (), <./gnutar/lib/utimens.c 186>
+  100 									gl_futimens: int (), <./gnutar/lib/utimens.c 78>
+  101 										sync: <>
+  102 										fsync: <>
+  103 										futimesat: <>
+  104 										futimes: <>
+  105 										dup: int (), <./gnutar/lib/fchdir.c 182>
+  106 											dup: 105
+  107 											ensure_dirs_slot: 20
+  108 											strdup: <>
+  109 										close: 26
+  110 										utimes: <>
+  111 										utime: <>
+  112 								utime_error: void (), <./gnutar/lib/paxerror.c 325>
+  113 									call_arg_error: 68
+  114 								check_time: void (), <./gnutar/src/extract.c 212>
+  115 									WARN: <>
+  116 									tartime: char const * (), <./gnutar/src/list.c 989>
+  117 										gmtime: struct tm (), <./gnutar/lib/gettimeofday.c 65>
+  118 										localtime: struct tm (), <./gnutar/lib/gettimeofday.c 51>
+  119 										sprintf: <>
+  120 										code_ns_fraction: void (), <./gnutar/src/misc.c 225>
+  121 										strlen: <>
+  122 										umaxtostr: <>
+  123 									timespec_cmp: <>
+  124 									gettime: 3
+  125 									code_timespec: char const * (), <./gnutar/src/misc.c 253>
+  126 										umaxtostr: <>
+  127 										code_ns_fraction: void (), <./gnutar/src/misc.c 225>
+  128 								lchown: int (), <./gnutar/lib/lchown.c 34>
+  129 									lstat: <>
+  130 									S_ISLNK: <>
+  131 									chown: <>
+  132 								chown: <>
+  133 								chown_error_details: void (), <./gnutar/lib/paxerror.c 98>
+  134 									ERROR: <>
+  135 									quotearg_colon: 70
+  136 								set_mode: void (), <./gnutar/src/extract.c 157>
+  137 									stat: <>
+  138 									stat_error: 67
+  139 									chmod: <>
+  140 									chmod_error_details: void (), <./gnutar/lib/paxerror.c 88>
+  141 										pax_decode_mode: void (), <./gnutar/lib/paxerror.c 28>
+  142 										ERROR: <>
+  143 										quotearg_colon: 70
+  144 							free: <>
+  145 						apply_delayed_links: void (), <./gnutar/src/extract.c 1365>
+  146 							lstat: <>
+  147 							timespec_cmp: <>
+  148 							get_stat_mtime: <>
+  149 							unlink: <>
+  150 							unlink_error: void (), <./gnutar/lib/paxerror.c 319>
+  151 								call_arg_error: 68
+  152 							link: <>
+  153 							link_error: void (), <./gnutar/lib/paxerror.c 124>
+  154 								ERROR: <>
+  155 								quotearg_colon: 70
+  156 								quote_n: char const * (), <./gnutar/lib/quote.c 30>
+  157 									quotearg_n_style: char * (), <./gnutar/lib/quotearg.c 664>
+  158 										quoting_options_from_style: struct quoting_options (), <./gnutar/lib/quotearg.c 655>
+  159 										quotearg_n_options: 73
+  160 							symlink: <>
+  161 							symlink_error: void (), <./gnutar/lib/paxerror.c 281>
+  162 								ERROR: <>
+  163 								quotearg_colon: 70
+  164 								quote_n: 156
+  165 							set_stat: 98
+  166 							free: <>
+  167 					error: 32
+  168 					abort: <>
+  169 				abort: <>
+  170 		obstack_init: <>
+  171 		signal: <>
+  172 		decode_options: void (), <./gnutar/src/tar.c 1951>
+  173 			getenv: <>
+  174 			new_exclude: struct exclude (), <./gnutar/lib/exclude.c 80>
+  175 			TYPE_MINIMUM: <>
+  176 			strlen: <>
+  177 			xmalloc: 29
+  178 			xstrdup: char * (), <./gnutar/lib/xmalloc.c 120>
+  179 				xmemdup: void * (), <./gnutar/lib/xmalloc.c 112>
+  180 					memcpy: <>
+  181 					xmalloc: 29
+  182 				strlen: <>
+  183 			find_argp_option: struct argp_option (), <./gnutar/src/tar.c 1937>
+  184 			USAGE_ERROR: <>
+  185 			prepend_default_options: void (), <./gnutar/lib/prepargs.c 79>
+  186 				xmalloc: 29
+  187 				strlen: <>
+  188 				prepend_args: int (), <./gnutar/lib/prepargs.c 50>
+  189 					ISSPACE: <>
+  190 			argp_parse: <>
+  191 			exit: <>
+  192 			set_archive_format: void (), <./gnutar/src/tar.c 151>
+  193 				strcmp: <>
+  194 				USAGE_ERROR: <>
+  195 				quotearg_colon: 70
+  196 			name_add_name: void (), <./gnutar/src/names.c 234>
+  197 				check_name_alloc: void (), <./gnutar/src/names.c 221>
+  198 					x2nrealloc: <>
+  199 			MAKE_INCL_OPTIONS: <>
+  200 			assert_format: void (), <./gnutar/src/tar.c 177>
+  201 				FORMAT_MASK: <>
+  202 				USAGE_ERROR: <>
+  203 			FORMAT_MASK: <>
+  204 			NEWER_OPTION_INITIALIZED: <>
+  205 			INT_STRLEN_BOUND: <>
+  206 			ngettext: <>
+  207 			quotearg_colon: 70
+  208 			strcmp: <>
+  209 			request_stdin: void (), <./gnutar/src/tar.c 77>
+  210 				USAGE_ERROR: <>
+  211 			fopen: <>
+  212 			open_error: void (), <./gnutar/lib/paxerror.c 150>
+  213 				call_arg_error: 68
+  214 			xget_version: enum backup_type (), <./gnutar/lib/backupfile.c 358>
+  215 			report_textual_dates: void (), <./gnutar/src/tar.c 953>
+  216 				tartime: 116
+  217 				strcmp: <>
+  218 				WARN: <>
+  219 				free: <>
+  220 		name_init: void (), <./gnutar/src/names.c 273>
+  221 			xmalloc: 29
+  222 		init_volume_number: void (), <./gnutar/src/buffer.c 909>
+  223 			fopen: <>
+  224 			fscanf: <>
+  225 			FATAL_ERROR: <>
+  226 			quotearg_colon: 70
+  227 			ferror: <>
+  228 			read_error: void (), <./gnutar/lib/paxerror.c 168>
+  229 				call_arg_error: 68
+  230 			fclose: <>
+  231 			close_error: void (), <./gnutar/lib/paxerror.c 106>
+  232 				call_arg_error: 68
+  233 			open_error: 212
+  234 		USAGE_ERROR: <>
+  235 		update_archive: void (), <./gnutar/src/update.c 106>
+  236 			name_gather: void (), <./gnutar/src/names.c 380>
+  237 				offsetof: <>
+  238 				xmalloc: 29
+  239 				memset: 49
+  240 				name_next_elt: struct name_elt (), <./gnutar/src/names.c 298>
+  241 				chdir_arg: int (), <./gnutar/src/misc.c 542>
+  242 					xmalloc: 29
+  243 					x2nrealloc: <>
+  244 					ISSLASH: <>
+  245 				xstrdup: 178
+  246 				strlen: <>
+  247 				xalloc_die: 31
+  248 				xrealloc: 77
+  249 				strcpy: <>
+  250 				addname: struct name (), <./gnutar/src/names.c 458>
+  251 			open_archive: void (), <./gnutar/src/buffer.c 1711>
+  252 				flush_read_ptr: void () (), <./gnutar/src/buffer.c 94>
+  253 				gnu_flush_read: void (), <./gnutar/src/buffer.c 1611>
+  254 					flush_read_ptr: void () (), <./gnutar/src/buffer.c 94>
+  255 					simple_flush_read: void (), <./gnutar/src/buffer.c 1497>
+  256 						do_checkpoint: void (), <./gnutar/src/buffer.c 625>
+  257 							fputc: <>
+  258 							fflush: <>
+  259 							WARN: <>
+  260 						sys_write_archive_buffer: size_t (), <./gnutar/src/system.c 271>
+  261 							full_write: <>
+  262 							rmtwrite: <>
+  263 						archive_write_error: void (), <./gnutar/src/buffer.c 678>
+  264 							print_total_stats: void (), <./gnutar/src/buffer.c 317>
+  265 								print_stats: void (), <./gnutar/src/buffer.c 298>
+  266 									sprintf: <>
+  267 									fprintf: <>
+  268 									human_readable: char * (), <./gnutar/lib/human.c 159>
+  269 										localeconv: <>
+  270 										strlen: <>
+  271 										sprintf: <>
+  272 										adjust_value: long double (), <./gnutar/lib/human.c 60>
+  273 										memmove: <>
+  274 										memcpy: <>
+  275 										group_number: char * (), <./gnutar/lib/human.c 85>
+  276 											strlen: <>
+  277 											memcpy: <>
+  278 								fprintf: <>
+  279 								STRINGIFY_BIGINT: <>
+  280 								abort: <>
+  281 							write_fatal_details: void (), <./gnutar/src/misc.c 699>
+  282 								write_error_details: void (), <./gnutar/lib/paxerror.c 343>
+  283 									write_error: void (), <./gnutar/lib/paxerror.c 337>
+  284 										call_arg_error: 68
+  285 									ERROR: <>
+  286 									ngettext: <>
+  287 								fatal_exit: 60
+  288 						rmtread: <>
+  289 						archive_read_error: void (), <./gnutar/src/buffer.c 695>
+  290 							read_error: 228
+  291 							FATAL_ERROR: <>
+  292 						short_read: void (), <./gnutar/src/buffer.c 711>
+  293 							rmtread: <>
+  294 							archive_read_error: 289
+  295 							FATAL_ERROR: <>
+  296 							ngettext: <>
+  297 							WARN: <>
+  298 					gnu_flush_read: 253
+  299 				flush_write_ptr: void () (), <./gnutar/src/buffer.c 93>
+  300 				gnu_flush_write: void (), <./gnutar/src/buffer.c 1691>
+  301 					flush_write_ptr: void () (), <./gnutar/src/buffer.c 93>
+  302 					simple_flush_write: void (), <./gnutar/src/buffer.c 1537>
+  303 						archive_write_error: 263
+  304 					gnu_flush_write: 300
+  305 				match_volume_label: void (), <./gnutar/src/buffer.c 1326>
+  306 					find_next_block: union block (), <./gnutar/src/buffer.c 380>
+  307 					FATAL_ERROR: <>
+  308 					quote: char const * (), <./gnutar/lib/quote.c 38>
+  309 						quote_n: 156
+  310 					check_label_pattern: bool (), <./gnutar/src/buffer.c 1300>
+  311 						memchr: <>
+  312 						fnmatch: int (), <./gnutar/lib/fnmatch.c 275>
+  313 							memset: 49
+  314 							mbsrtowcs: <>
+  315 							assert: <>
+  316 							mbsinit: <>
+  317 							alloca: 38
+  318 							malloc: <>
+  319 							internal_fnwmatch: <>
+  320 							free: <>
+  321 							internal_fnmatch: <>
+  322 							strlen: <>
+  323 						xmalloc: 29
+  324 						strlen: <>
+  325 						strcpy: <>
+  326 						strcat: <>
+  327 						free: <>
+  328 					quote_n: 156
+  329 				write_volume_label: void (), <./gnutar/src/buffer.c 1413>
+  330 					add_volume_label: void (), <./gnutar/src/buffer.c 1368>
+  331 						STRINGIFY_BIGINT: <>
+  332 						xmalloc: 29
+  333 						strlen: <>
+  334 						sprintf: <>
+  335 						free: <>
+  336 				set_volume_start_time: void (), <./gnutar/src/buffer.c 185>
+  337 					gettime: 3
+  338 			buffer_write_global_xheader: void (), <./gnutar/src/buffer.c 128>
+  339 				xheader_write_global: void (), <./gnutar/src/xheader.c 406>
+  340 					xheader_init: void (), <./gnutar/src/xheader.c 617>
+  341 						xmalloc: 29
+  342 						obstack_init: <>
+  343 					code_string: void (), <./gnutar/src/xheader.c 817>
+  344 						utf8_convert: bool (), <./gnutar/src/utf8.c 63>
+  345 							utf8_init: iconv_t (), <./gnutar/src/utf8.c 50>
+  346 								iconv_open: <>
+  347 								locale_charset: STATIC const char * (), <./gnutar/lib/localcharset.c 286>
+  348 									nl_langinfo: <>
+  349 									strcmp: <>
+  350 									getenv: <>
+  351 									strchr: <>
+  352 									memcpy: <>
+  353 									sprintf: <>
+  354 									GetACP: <>
+  355 									setlocale: <>
+  356 									DosQueryCp: <>
+  357 									get_charset_aliases: const char * (), <./gnutar/lib/localcharset.c 106>
+  358 										getenv: <>
+  359 										relocate: <>
+  360 										dir_len: size_t (), <./gnutar/lib/dirname.c 33>
+  361 											FILE_SYSTEM_PREFIX_LEN: <>
+  362 											ISSLASH: <>
+  363 											last_component: char * (), <./gnutar/lib/basename.c 33>
+  364 												FILE_SYSTEM_PREFIX_LEN: <>
+  365 												ISSLASH: <>
+  366 										strlen: <>
+  367 										base_len: size_t (), <./gnutar/lib/basename.c 112>
+  368 											FILE_SYSTEM_PREFIX_LEN: <>
+  369 											strlen: <>
+  370 											ISSLASH: <>
+  371 										ISSLASH: <>
+  372 										malloc: <>
+  373 										memcpy: <>
+  374 										fopen: <>
+  375 										getc: <>
+  376 										ungetc: <>
+  377 										fscanf: <>
+  378 										realloc: <>
+  379 										free: <>
+  380 										strcpy: <>
+  381 										fclose: <>
+  382 									strlen: <>
+  383 							xstrdup: 178
+  384 							strlen: <>
+  385 							xmalloc: 29
+  386 							iconv: <>
+  387 						xstrdup: 178
+  388 						xheader_print: void (), <./gnutar/src/xheader.c 700>
+  389 							xheader_print_n: void (), <./gnutar/src/xheader.c 674>
+  390 								strlen: <>
+  391 								umaxtostr: <>
+  392 								x_obstack_grow: void (), <./gnutar/src/xheader.c 55>
+  393 									obstack_grow: <>
+  394 								x_obstack_1grow: void (), <./gnutar/src/xheader.c 62>
+  395 									obstack_1grow: <>
+  396 							strlen: <>
+  397 						free: <>
+  398 					xheader_finish: void (), <./gnutar/src/xheader.c 706>
+  399 						code_string: 343
+  400 						obstack_finish: <>
+  401 					xheader_write: void (), <./gnutar/src/xheader.c 369>
+  402 						start_private_header: union block (), <./gnutar/src/create.c 525>
+  403 						simple_finish_header: void (), <./gnutar/src/create.c 958>
+  404 							memcpy: <>
+  405 							uintmax_to_chars: bool (), <./gnutar/src/create.c 477>
+  406 								to_chars: bool (), <./gnutar/src/create.c 305>
+  407 									MAX_VAL_WITH_DIGITS: <>
+  408 									to_octal: void (), <./gnutar/src/create.c 165>
+  409 									to_base256: void (), <./gnutar/src/create.c 208>
+  410 									WARN: <>
+  411 									substitute: <>
+  412 									to_chars_subst: bool (), <./gnutar/src/create.c 230>
+  413 										MAX_VAL_WITH_DIGITS: <>
+  414 										STRINGIFY_BIGINT: <>
+  415 										substitute: <>
+  416 										WARN: <>
+  417 										to_chars: 406
+  418 										ERROR: <>
+  419 							set_next_block_after: void (), <./gnutar/src/buffer.c 398>
+  420 								abort: <>
+  421 						find_next_block: union block (), <./gnutar/src/buffer.c 380>
+  422 						memcpy: <>
+  423 						memset: 49
+  424 						set_next_block_after: 419
+  425 						xheader_destroy: void (), <./gnutar/src/xheader.c 717>
+  426 							obstack_free: <>
+  427 							free: <>
+  428 					xheader_ghdr_name: char * (), <./gnutar/src/xheader.c 351>
+  429 						getenv: <>
+  430 						strlen: <>
+  431 						xmalloc: 29
+  432 						strcpy: <>
+  433 						strcat: <>
+  434 						xheader_format_name: char * (), <./gnutar/src/xheader.c 230>
+  435 							strlen: <>
+  436 							strchr: <>
+  437 							dir_name: char * (), <./gnutar/lib/dirname.c 72>
+  438 								dir_len: 360
+  439 								FILE_SYSTEM_PREFIX_LEN: <>
+  440 								ISSLASH: <>
+  441 								xmalloc: 29
+  442 								memcpy: <>
+  443 							safer_name_suffix: char * (), <./gnutar/lib/paxnames.c 115>
+  444 								FILE_SYSTEM_PREFIX_LEN: <>
+  445 								ISSLASH: <>
+  446 								hash_string_insert_prefix: bool (), <./gnutar/lib/paxnames.c 44>
+  447 									xmalloc: 29
+  448 									memcpy: <>
+  449 									xstrdup: 178
+  450 									hash_initialize: Hash_table * (), <./gnutar/lib/hash.c 538>
+  451 										malloc: <>
+  452 										check_tuning: bool (), <./gnutar/lib/hash.c 482>
+  453 										xalloc_oversized: <>
+  454 										next_prime: size_t (), <./gnutar/lib/hash.c 454>
+  455 											is_prime: bool (), <./gnutar/lib/hash.c 435>
+  456 										calloc: <>
+  457 										obstack_init: <>
+  458 										free: <>
+  459 									hash_string_hasher: size_t (), <./gnutar/lib/paxnames.c 27>
+  460 										hash_string: size_t (), <./gnutar/lib/hash.c 419>
+  461 											HASH_ONE_CHAR: <>
+  462 									hash_string_compare: bool (), <./gnutar/lib/paxnames.c 34>
+  463 										strcmp: <>
+  464 									hash_insert: void * (), <./gnutar/lib/hash.c 906>
+  465 										abort: <>
+  466 										hash_find_entry: void * (), <./gnutar/lib/hash.c 742>
+  467 											abort: <>
+  468 											free_entry: void (), <./gnutar/lib/hash.c 728>
+  469 										allocate_entry: struct hash_entry (), <./gnutar/lib/hash.c 703>
+  470 										check_tuning: 452
+  471 										hash_rehash: bool (), <./gnutar/lib/hash.c 817>
+  472 											hash_initialize: 450
+  473 											obstack_free: <>
+  474 											abort: <>
+  475 											allocate_entry: struct hash_entry (), <./gnutar/lib/hash.c 703>
+  476 											free_entry: 468
+  477 											free: <>
+  478 									xalloc_die: 31
+  479 									free: <>
+  480 								N_: <>
+  481 								WARN: <>
+  482 							last_component: 363
+  483 							umaxtostr: <>
+  484 							getpid: <>
+  485 							xmalloc: 29
+  486 							stpcpy: <>
+  487 							free: <>
+  488 							ISSLASH: <>
+  489 					free: <>
+  490 			read_header: enum read_header (), <./gnutar/src/list.c 511>
+  491 			abort: <>
+  492 			decode_header: void (), <./gnutar/src/list.c 573>
+  493 				strcmp: <>
+  494 				ISOCTAL: <>
+  495 				MODE_FROM_HEADER: <>
+  496 				TIME_FROM_HEADER: <>
+  497 				assign_string: void (), <./gnutar/src/misc.c 42>
+  498 					free: <>
+  499 					xstrdup: 178
+  500 				UID_FROM_HEADER: <>
+  501 				GID_FROM_HEADER: <>
+  502 				uname_to_uid: int (), <./gnutar/src/names.c 123>
+  503 					strcmp: <>
+  504 					getpwnam: <>
+  505 					assign_string: 497
+  506 				gname_to_gid: int (), <./gnutar/src/names.c 153>
+  507 					strcmp: <>
+  508 					getgrnam: <>
+  509 					assign_string: 497
+  510 				makedev: <>
+  511 				MAJOR_FROM_HEADER: <>
+  512 				MINOR_FROM_HEADER: <>
+  513 				xheader_decode: void (), <./gnutar/src/xheader.c 581>
+  514 					run_override_list: void (), <./gnutar/src/xheader.c 552>
+  515 						locate_handler: struct xhdr_tab (), <./gnutar/src/xheader.c 443>
+  516 						strlen: <>
+  517 					decode_record: bool (), <./gnutar/src/xheader.c 478>
+  518 						ISDIGIT: <>
+  519 						ERROR: <>
+  520 						strtoumax: <>
+  521 						strchr: <>
+  522 					decx: void (), <./gnutar/src/xheader.c 563>
+  523 						xheader_keyword_deleted_p: bool (), <./gnutar/src/xheader.c 105>
+  524 							fnmatch: 312
+  525 						xheader_keyword_override_p: bool (), <./gnutar/src/xheader.c 116>
+  526 							strcmp: <>
+  527 						locate_handler: struct xhdr_tab (), <./gnutar/src/xheader.c 443>
+  528 						WARN: <>
+  529 				sparse_member_p: bool (), <./gnutar/src/sparse.c 413>
+  530 					tar_sparse_init: bool (), <./gnutar/src/sparse.c 104>
+  531 						memset: 49
+  532 						sparse_select_optab: bool (), <./gnutar/src/sparse.c 271>
+  533 						init: <>
+  534 					tar_sparse_member_p: bool (), <./gnutar/src/sparse.c 96>
+  535 						sparse_member_p: 529
+  536 				sparse_fixup_header: bool (), <./gnutar/src/sparse.c 424>
+  537 					tar_sparse_init: 530
+  538 					tar_sparse_fixup_header: bool (), <./gnutar/src/sparse.c 167>
+  539 						fixup_header: <>
+  540 				transform_member_name: bool (), <./gnutar/src/list.c 552>
+  541 					transform_name_fp: bool (), <./gnutar/src/transform.c 501>
+  542 						obstack_finish: <>
+  543 						assign_string: 497
+  544 						obstack_free: <>
+  545 						free: <>
+  546 					decode_xform: char * (), <./gnutar/src/list.c 517>
+  547 						safer_name_suffix: 443
+  548 						stripped_prefix_len: size_t (), <./gnutar/src/names.c 984>
+  549 							FILE_SYSTEM_PREFIX_LEN: <>
+  550 							ISSLASH: <>
+  551 						strlen: <>
+  552 			name_scan: struct name (), <./gnutar/src/names.c 858>
+  553 			chdir_do: void (), <./gnutar/src/misc.c 581>
+  554 				save_cwd: int (), <./gnutar/lib/save-cwd.c 69>
+  555 					open: 13
+  556 					xgetcwd: char * (), <./gnutar/lib/xgetcwd.c 35>
+  557 						getcwd: <>
+  558 						xalloc_die: 31
+  559 				dup: 105
+  560 				close: 26
+  561 				xgetcwd: 556
+  562 				FATAL_ERROR: <>
+  563 				restore_cwd: int (), <./gnutar/lib/save-cwd.c 88>
+  564 					fchdir: int (), <./gnutar/lib/fchdir.c 254>
+  565 						chdir: <>
+  566 					chdir_long: int (), <./gnutar/lib/chdir-long.c 107>
+  567 						chdir: <>
+  568 						strlen: <>
+  569 						cdb_init: inline void (), <./gnutar/lib/chdir-long.c 44>
+  570 						assert: <>
+  571 						strspn: <>
+  572 						memchr: <>
+  573 						cdb_advance_fd: int (), <./gnutar/lib/chdir-long.c 70>
+  574 							openat: int (), <./gnutar/lib/openat.c 43>
+  575 								va_start: <>
+  576 								va_arg: <>
+  577 								va_end: <>
+  578 								openat_permissive: int (), <./gnutar/lib/openat.c 77>
+  579 									IS_ABSOLUTE_FILE_NAME: <>
+  580 									open: 13
+  581 									openat_proc_name: char * (), <./gnutar/lib/openat-proc.c 54>
+  582 										open: 13
+  583 										sprintf: <>
+  584 										stat: <>
+  585 										SAME_INODE: <>
+  586 										close: 26
+  587 										PROC_SELF_FD_NAME_SIZE_BOUND: <>
+  588 										strlen: <>
+  589 										xmalloc: 29
+  590 									free: <>
+  591 									EXPECTED_ERRNO: <>
+  592 									save_cwd: 554
+  593 									openat_save_fail: void (), <./gnutar/lib/openat-die.c 31>
+  594 										error: 32
+  595 										abort: <>
+  596 									fchdir: 564
+  597 									restore_cwd: 563
+  598 									openat_restore_fail: void (), <./gnutar/lib/openat-die.c 44>
+  599 										error: 32
+  600 										abort: <>
+  601 									free_cwd: void (), <./gnutar/lib/save-cwd.c 97>
+  602 										close: 26
+  603 										free: <>
+  604 							cdb_free: inline void (), <./gnutar/lib/chdir-long.c 56>
+  605 								close: 26
+  606 								assert: <>
+  607 						find_non_slash: inline char * (), <./gnutar/lib/chdir-long.c 85>
+  608 							strspn: <>
+  609 						memrchr: <>
+  610 						cdb_fchdir: inline int (), <./gnutar/lib/chdir-long.c 50>
+  611 							fchdir: 564
+  612 						cdb_free: 604
+  613 				ISSLASH: <>
+  614 				chdir_do: 553
+  615 				chdir: <>
+  616 				chdir_fatal: void (), <./gnutar/lib/paxerror.c 362>
+  617 					call_arg_fatal: void (), <./gnutar/lib/paxerror.c 64>
+  618 						FATAL_ERROR: <>
+  619 						quotearg_colon: 70
+  620 			deref_stat: int (), <./gnutar/src/misc.c 497>
+  621 				stat: <>
+  622 				lstat: <>
+  623 			tar_timespec_cmp: int (), <./gnutar/src/tar.c 2422>
+  624 				FORMAT_MASK: <>
+  625 				timespec_cmp: <>
+  626 			get_stat_mtime: <>
+  627 			add_avoided_name: void (), <./gnutar/src/names.c 943>
+  628 				hash_string_insert: bool (), <./gnutar/lib/paxnames.c 82>
+  629 					hash_string_insert_prefix: 446
+  630 			skip_member: void (), <./gnutar/src/list.c 1369>
+  631 				set_next_block_after: 419
+  632 				mv_begin: void (), <./gnutar/src/buffer.c 134>
+  633 					assign_string: 497
+  634 				sparse_skip_file: enum dump_status (), <./gnutar/src/sparse.c 457>
+  635 				skip_file: void (), <./gnutar/src/list.c 1337>
+  636 					seek_archive: off_t (), <./gnutar/src/buffer.c 839>
+  637 						current_block_ordinal: off_t (), <./gnutar/src/buffer.c 358>
+  638 						rmtlseek: <>
+  639 						FATAL_ERROR: <>
+  640 					mv_size_left: void (), <./gnutar/src/buffer.c 157>
+  641 					find_next_block: union block (), <./gnutar/src/buffer.c 380>
+  642 					FATAL_ERROR: <>
+  643 					set_next_block_after: 419
+  644 				mv_end: void (), <./gnutar/src/buffer.c 144>
+  645 					assign_string: 497
+  646 			set_next_block_after: 419
+  647 			WARN: <>
+  648 			ERROR: <>
+  649 			tar_stat_destroy: void (), <./gnutar/src/tar.c 2402>
+  650 				free: <>
+  651 				xheader_destroy: 425
+  652 				memset: 49
+  653 			reset_eof: void (), <./gnutar/src/buffer.c 365>
+  654 			name_from_list: char * (), <./gnutar/src/names.c 890>
+  655 				chdir_do: 553
+  656 			excluded_name: bool (), <./gnutar/src/names.c 933>
+  657 				excluded_file_name: bool (), <./gnutar/lib/exclude.c 163>
+  658 					exclude_fnmatch: bool (), <./gnutar/lib/exclude.c 143>
+  659 						fnmatch: 312
+  660 						fnmatch_no_wildcards: int (), <./gnutar/lib/exclude.c 98>
+  661 							mbscasecmp: int (), <./gnutar/lib/mbscasecmp.c 40>
+  662 								mbui_init: <>
+  663 								mbui_avail: <>
+  664 								mb_casecmp: <>
+  665 								mbui_cur: <>
+  666 								mbui_advance: <>
+  667 								TOLOWER: <>
+  668 							strcmp: <>
+  669 							strlen: <>
+  670 							strncmp: <>
+  671 							xstrdup: 178
+  672 							strchr: <>
+  673 							free: <>
+  674 				FILE_SYSTEM_PREFIX_LEN: <>
+  675 			confirm: int (), <./gnutar/src/tar.c 90>
+  676 				fopen: <>
+  677 				open_fatal: void (), <./gnutar/lib/paxerror.c 156>
+  678 					call_arg_fatal: 617
+  679 				request_stdin: 209
+  680 				fprintf: <>
+  681 				quote: 308
+  682 				fflush: <>
+  683 				getline: ssize_t (), <./gnutar/lib/getline.c 27>
+  684 					getdelim: ssize_t (), <./gnutar/lib/getdelim.c 52>
+  685 						flockfile: <>
+  686 						malloc: <>
+  687 						getc: <>
+  688 						realloc: <>
+  689 						funlockfile: <>
+  690 				rpmatch: int (), <./gnutar/lib/rpmatch.c 59>
+  691 					try: int (), <./gnutar/lib/rpmatch.c 34>
+  692 						regfree: void (), <./gnutar/lib/regcomp.c 637>
+  693 							BE: <>
+  694 							free_dfa_content: void (), <./gnutar/lib/regcomp.c 587>
+  695 								free_token: void (), <./gnutar/lib/regcomp.c 3767>
+  696 									free_charset: void (), <./gnutar/lib/regcomp.c 3690>
+  697 										re_free: <>
+  698 									re_free: <>
+  699 								re_free: <>
+  700 								re_node_set_free: <>
+  701 								free_state: void (), <./gnutar/lib/regex_internal.c 1600>
+  702 									re_node_set_free: <>
+  703 									re_free: <>
+  704 							re_free: <>
+  705 						regcomp: int (), <./gnutar/lib/regcomp.c 453>
+  706 						regexec: <>
+  707 				free: <>
+  708 				fputc: <>
+  709 			append_file: void (), <./gnutar/src/update.c 48>
+  710 				open: 13
+  711 				open_error: 212
+  712 				fstat: <>
+  713 				stat_error: 67
+  714 				find_next_block: union block (), <./gnutar/src/buffer.c 380>
+  715 				available_space_after: size_t (), <./gnutar/src/buffer.c 416>
+  716 				memset: 49
+  717 				safe_read: <>
+  718 				read_fatal_details: void (), <./gnutar/lib/paxerror.c 206>
+  719 					FATAL_ERROR: <>
+  720 					ngettext: <>
+  721 					quotearg_colon: 70
+  722 					STRINGIFY_BIGINT: <>
+  723 				FATAL_ERROR: <>
+  724 				ngettext: <>
+  725 				quotearg_colon: 70
+  726 				STRINGIFY_BIGINT: <>
+  727 				set_next_block_after: 419
+  728 				close: 26
+  729 				close_error: 231
+  730 			dump_file: void (), <./gnutar/src/create.c 1795>
+  731 				getenv: <>
+  732 				strncmp: <>
+  733 				basename: <>
+  734 				asprintf: <>
+  735 				dirname: <>
+  736 				copyfile: <>
+  737 				tar_stat_init: void (), <./gnutar/src/tar.c 2396>
+  738 					memset: 49
+  739 				mktemp: <>
+  740 				dump_file0: void (), <./gnutar/src/create.c 1483>
+  741 					confirm: 675
+  742 					assign_string: 497
+  743 					safer_name_suffix: 443
+  744 					transform_name: bool (), <./gnutar/src/transform.c 523>
+  745 						transform_name_fp: 541
+  746 					deref_stat: 620
+  747 					stat_diag: void (), <./gnutar/src/misc.c 690>
+  748 						stat_warn: void (), <./gnutar/lib/paxerror.c 301>
+  749 							call_arg_warn: void (), <./gnutar/lib/paxerror.c 77>
+  750 								WARN: <>
+  751 								quotearg_colon: 70
+  752 						stat_error: 67
+  753 					get_stat_atime: <>
+  754 					get_stat_mtime: <>
+  755 					get_stat_ctime: <>
+  756 					S_ISHIDDEN: <>
+  757 					alloca: 38
+  758 					strlen: <>
+  759 					strcpy: <>
+  760 					strcat: <>
+  761 					is_individual_file: bool (), <./gnutar/src/names.c 972>
+  762 						hash_string_lookup: bool (), <./gnutar/lib/paxnames.c 89>
+  763 							hash_lookup: void * (), <./gnutar/lib/hash.c 248>
+  764 								abort: <>
+  765 					S_ISDIR: <>
+  766 					OLDER_TAR_STAT_TIME: <>
+  767 					WARN: <>
+  768 					quotearg_colon: 70
+  769 					sys_file_is_archive: bool (), <./gnutar/src/system.c 132>
+  770 					is_avoided_name: bool (), <./gnutar/src/names.c 950>
+  771 						hash_string_lookup: 762
+  772 					dump_hard_link: bool (), <./gnutar/src/create.c 1383>
+  773 						hash_lookup: 763
+  774 						safer_name_suffix: 443
+  775 						current_block_ordinal: 637
+  776 						assign_string: 497
+  777 						strlen: <>
+  778 						write_long_link: void (), <./gnutar/src/create.c 656>
+  779 							xheader_store: void (), <./gnutar/src/xheader.c 627>
+  780 								locate_handler: struct xhdr_tab (), <./gnutar/src/xheader.c 443>
+  781 								xheader_keyword_deleted_p: 523
+  782 								xheader_keyword_override_p: 525
+  783 								xheader_init: 340
+  784 							ERROR: <>
+  785 							quotearg_colon: 70
+  786 							write_gnu_long_link: void (), <./gnutar/src/create.c 566>
+  787 								strlen: <>
+  788 								start_private_header: union block (), <./gnutar/src/create.c 525>
+  789 								FILL: <>
+  790 								uid_to_uname: void (), <./gnutar/src/names.c 63>
+  791 									xstrdup: 178
+  792 									getpwuid: <>
+  793 									assign_string: 497
+  794 								UNAME_TO_CHARS: <>
+  795 								free: <>
+  796 								gid_to_gname: void (), <./gnutar/src/names.c 93>
+  797 									xstrdup: 178
+  798 									getgrgid: <>
+  799 									assign_string: 497
+  800 								GNAME_TO_CHARS: <>
+  801 								strcpy: <>
+  802 								finish_header: void (), <./gnutar/src/create.c 992>
+  803 									print_header: void (), <./gnutar/src/list.c 1067>
+  804 										current_block_ordinal: 637
+  805 										fprintf: <>
+  806 										STRINGIFY_BIGINT: <>
+  807 										quotearg: char * (), <./gnutar/lib/quotearg.c 648>
+  808 											quotearg_n: char * (), <./gnutar/lib/quotearg.c 642>
+  809 												quotearg_n_options: 73
+  810 										ERROR: <>
+  811 										strlen: <>
+  812 										pax_decode_mode: 141
+  813 										tartime: 116
+  814 										from_header: uintmax_t (), <./gnutar/src/list.c 685>
+  815 											ERROR: <>
+  816 											ISSPACE: <>
+  817 											ISODIGIT: <>
+  818 											WARN: <>
+  819 											alloca: 38
+  820 											memcpy: <>
+  821 											quote: 308
+  822 											clone_quoting_options: struct quoting_options (), <./gnutar/lib/quotearg.c 106>
+  823 											set_quoting_style: 10
+  824 											quotearg_buffer: 81
+  825 											STRINGIFY_BIGINT: <>
+  826 										TYPE_MAXIMUM: <>
+  827 										sprintf: <>
+  828 										UID_FROM_HEADER: <>
+  829 										GID_FROM_HEADER: <>
+  830 										strcpy: <>
+  831 										major: <>
+  832 										strcat: <>
+  833 										minor: <>
+  834 										quote: 308
+  835 										putc: <>
+  836 										UINTMAX_FROM_HEADER: <>
+  837 										fflush: <>
+  838 									write_extended: union block (), <./gnutar/src/create.c 717>
+  839 									simple_finish_header: 403
+  840 								find_next_block: union block (), <./gnutar/src/buffer.c 380>
+  841 								available_space_after: 715
+  842 								memcpy: <>
+  843 								set_next_block_after: 419
+  844 								memset: 49
+  845 							abort: <>
+  846 						start_header: union block (), <./gnutar/src/create.c 767>
+  847 						tar_copy_str: void (), <./gnutar/src/create.c 182>
+  848 						finish_header: 802
+  849 						unlink: <>
+  850 						unlink_error: 150
+  851 					S_ISREG: <>
+  852 					S_ISCTG: <>
+  853 					file_dumpable_p: bool (), <./gnutar/src/create.c 498>
+  854 						ST_IS_SPARSE: <>
+  855 					open: 13
+  856 					open_diag: void (), <./gnutar/src/misc.c 645>
+  857 						open_warn: void (), <./gnutar/lib/paxerror.c 162>
+  858 							call_arg_warn: 749
+  859 						open_error: 212
+  860 					ensure_slash: void (), <./gnutar/src/create.c 1245>
+  861 						strlen: <>
+  862 						ISSLASH: <>
+  863 						xrealloc: 77
+  864 					check_exclusion_tags: enum exclusion_tag_type (), <./gnutar/src/create.c 83>
+  865 					exclusion_tag_warning: void (), <./gnutar/src/create.c 71>
+  866 						WARN: <>
+  867 						quotearg_colon: 70
+  868 						quotearg_n: 808
+  869 					dump_dir: bool (), <./gnutar/src/create.c 1257>
+  870 						fdsavedir: char * (), <./gnutar/lib/savedir.c 134>
+  871 							savedirstream: char * (), <./gnutar/lib/savedir.c 58>
+  872 								xmalloc: 29
+  873 								readdir: <>
+  874 								xalloc_die: 31
+  875 								xrealloc: 77
+  876 								memcpy: <>
+  877 								closedir: int (), <./gnutar/lib/fchdir.c 139>
+  878 									dirfd: int (), <./gnutar/lib/dirfd.c 26>
+  879 										DIR_TO_FD: <>
+  880 									closedir: 877
+  881 									free: <>
+  882 								free: <>
+  883 							fdopendir: DIR * (), <./gnutar/lib/openat.c 175>
+  884 								openat_proc_name: 581
+  885 								opendir: DIR * (), <./gnutar/lib/fchdir.c 156>
+  886 									opendir: 885
+  887 									dirfd: 878
+  888 									ensure_dirs_slot: 20
+  889 									canonicalize_file_name: <>
+  890 								EXPECTED_ERRNO: <>
+  891 								save_cwd: 554
+  892 								openat_save_fail: 593
+  893 								fchdir: 564
+  894 								restore_cwd: 563
+  895 								openat_restore_fail: 598
+  896 								free_cwd: 601
+  897 								close: 26
+  898 								free: <>
+  899 						savedir_diag: void (), <./gnutar/src/misc.c 672>
+  900 							savedir_warn: void (), <./gnutar/lib/paxerror.c 243>
+  901 								call_arg_warn: 749
+  902 							savedir_error: void (), <./gnutar/lib/paxerror.c 237>
+  903 								call_arg_error: 68
+  904 						dump_dir0: void (), <./gnutar/src/create.c 1100>
+  905 							is_avoided_name: 770
+  906 							current_block_ordinal: 637
+  907 							start_header: union block (), <./gnutar/src/create.c 767>
+  908 							finish_header: 802
+  909 							xheader_store: 779
+  910 							dumpdir_size: size_t (), <./gnutar/src/incremen.c 365>
+  911 								strlen: <>
+  912 							OFF_TO_CHARS: <>
+  913 							mv_begin: 632
+  914 							mv_total_size: void (), <./gnutar/src/buffer.c 151>
+  915 							mv_size_left: 640
+  916 							find_next_block: union block (), <./gnutar/src/buffer.c 380>
+  917 							available_space_after: 715
+  918 							memset: 49
+  919 							memcpy: <>
+  920 							set_next_block_after: 419
+  921 							mv_end: 644
+  922 							WARN: <>
+  923 							quotearg_colon: 70
+  924 							check_exclusion_tags: enum exclusion_tag_type (), <./gnutar/src/create.c 83>
+  925 							xstrdup: 178
+  926 							strlen: <>
+  927 							xrealloc: 77
+  928 							strcpy: <>
+  929 							excluded_name: 656
+  930 							dump_file: 730
+  931 							free: <>
+  932 							exclusion_tag_warning: 865
+  933 							xmalloc: 29
+  934 							strcat: <>
+  935 						free: <>
+  936 					ST_IS_SPARSE: <>
+  937 					sparse_dump_file: enum dump_status (), <./gnutar/src/sparse.c 380>
+  938 					dump_regular_file: enum dump_status (), <./gnutar/src/create.c 1030>
+  939 					mv_end: 644
+  940 					abort: <>
+  941 					file_count_links: void (), <./gnutar/src/create.c 1428>
+  942 						xmalloc: 29
+  943 						offsetof: <>
+  944 						link: <>
+  945 						strlen: <>
+  946 						strcpy: <>
+  947 						hash_initialize: 450
+  948 						hash_link: size_t (), <./gnutar/src/create.c 1347>
+  949 						compare_links: bool (), <./gnutar/src/create.c 1356>
+  950 						hash_insert: 464
+  951 						xalloc_die: 31
+  952 						abort: <>
+  953 					fstat: <>
+  954 					timespec_cmp: <>
+  955 					set_file_atime: int (), <./gnutar/src/misc.c 506>
+  956 						ioctl: <>
+  957 						gl_futimens: 100
+  958 					utime_error: 112
+  959 					close: 26
+  960 					close_diag: void (), <./gnutar/src/misc.c 636>
+  961 						close_warn: void (), <./gnutar/lib/paxerror.c 112>
+  962 							call_arg_warn: 749
+  963 						close_error: 231
+  964 					rmdir: int (), <./gnutar/lib/rmdir.c 32>
+  965 						stat: <>
+  966 						S_ISDIR: <>
+  967 						fork: <>
+  968 						execl: <>
+  969 						wait: <>
+  970 					rmdir_error: void (), <./gnutar/lib/paxerror.c 231>
+  971 						call_arg_error: 68
+  972 					unlink: <>
+  973 					unlink_error: 150
+  974 					S_ISLNK: <>
+  975 					xalloc_die: 31
+  976 					readlink: int (), <./gnutar/lib/readlink.c 38>
+  977 						stat: <>
+  978 					readlink_diag: void (), <./gnutar/src/misc.c 663>
+  979 						readlink_warn: void (), <./gnutar/lib/paxerror.c 225>
+  980 							call_arg_warn: 749
+  981 						readlink_error: void (), <./gnutar/lib/paxerror.c 219>
+  982 							call_arg_error: 68
+  983 					write_long_link: 778
+  984 					current_block_ordinal: 637
+  985 					start_header: union block (), <./gnutar/src/create.c 767>
+  986 					tar_copy_str: 847
+  987 					finish_header: 802
+  988 					S_ISCHR: <>
+  989 					S_ISBLK: <>
+  990 					S_ISFIFO: <>
+  991 					S_ISSOCK: <>
+  992 					S_ISDOOR: <>
+  993 					unknown_file_error: void (), <./gnutar/src/create.c 1364>
+  994 						WARN: <>
+  995 						quotearg_colon: 70
+  996 					MAJOR_TO_CHARS: <>
+  997 					major: <>
+  998 					MINOR_TO_CHARS: <>
+  999 					minor: <>
+ 1000 				WARN: <>
+ 1001 				strerror: 54
+ 1002 				tar_stat_destroy: 649
+ 1003 				unlink: <>
+ 1004 				free: <>
+ 1005 				update_parent_directory: void (), <./gnutar/src/incremen.c 211>
+ 1006 					dir_name: 437
+ 1007 					find_directory: struct directory (), <./gnutar/src/incremen.c 178>
+ 1008 					deref_stat: 620
+ 1009 					stat_diag: 747
+ 1010 					get_stat_mtime: <>
+ 1011 					free: <>
+ 1012 			write_eot: void (), <./gnutar/src/create.c 513>
+ 1013 				find_next_block: union block (), <./gnutar/src/buffer.c 380>
+ 1014 				memset: 49
+ 1015 				set_next_block_after: 419
+ 1016 				available_space_after: 715
+ 1017 			close_archive: void (), <./gnutar/src/buffer.c 876>
+ 1018 				flush_archive: void (), <./gnutar/src/buffer.c 766>
+ 1019 					backspace_output: void (), <./gnutar/src/buffer.c 799>
+ 1020 						rmtioctl: <>
+ 1021 						rmtlseek: <>
+ 1022 						WARN: <>
+ 1023 						memset: 49
+ 1024 					flush_read: void (), <./gnutar/src/buffer.c 1699>
+ 1025 						flush_read_ptr: void () (), <./gnutar/src/buffer.c 94>
+ 1026 					flush_write_ptr: void () (), <./gnutar/src/buffer.c 93>
+ 1027 					abort: <>
+ 1028 				sys_drain_input_pipe: void (), <./gnutar/src/system.c 171>
+ 1029 					S_ISFIFO: <>
+ 1030 					S_ISSOCK: <>
+ 1031 					rmtread: <>
+ 1032 				compute_duration: void (), <./gnutar/src/buffer.c 192>
+ 1033 					gettime: 3
+ 1034 				verify_volume: void (), <./gnutar/src/compare.c 519>
+ 1035 					removed_prefixes_p: bool (), <./gnutar/lib/paxnames.c 102>
+ 1036 						hash_get_n_entries: size_t (), <./gnutar/lib/hash.c 164>
+ 1037 					WARN: <>
+ 1038 					diff_init: void (), <./gnutar/src/compare.c 45>
+ 1039 						page_aligned_alloc: void * (), <./gnutar/src/misc.c 740>
+ 1040 							getpagesize: <>
+ 1041 							xalloc_die: 31
+ 1042 							xmalloc: 29
+ 1043 							ptr_align: inline void * (), <./gnutar/src/misc.c 729>
+ 1044 						read_directory_file: void (), <./gnutar/src/incremen.c 1025>
+ 1045 							open: 13
+ 1046 							open_error: 212
+ 1047 							fdopen: <>
+ 1048 							close: 26
+ 1049 							getline: 683
+ 1050 							strncmp: <>
+ 1051 							ERROR: <>
+ 1052 							strtoumax: <>
+ 1053 							read_incr_db_01: void (), <./gnutar/src/incremen.c 662>
+ 1054 								getline: 683
+ 1055 								read_error: 228
+ 1056 								free: <>
+ 1057 								strdup: <>
+ 1058 								strlen: <>
+ 1059 								TYPE_MINIMUM: <>
+ 1060 								strtoumax: <>
+ 1061 								TYPE_MAXIMUM: <>
+ 1062 								ERROR: <>
+ 1063 								quotearg_colon: 70
+ 1064 								memset: 49
+ 1065 								unquote_string: int (), <./gnutar/src/misc.c 114>
+ 1066 								note_directory: struct directory (), <./gnutar/src/incremen.c 136>
+ 1067 							read_incr_db_2: void (), <./gnutar/src/incremen.c 963>
+ 1068 								obstack_init: <>
+ 1069 								read_timespec: void (), <./gnutar/src/incremen.c 936>
+ 1070 									getc: <>
+ 1071 									read_negative_num: void (), <./gnutar/src/incremen.c 845>
+ 1072 										ISDIGIT: <>
+ 1073 										getc: <>
+ 1074 										FATAL_ERROR: <>
+ 1075 										ferror: <>
+ 1076 										strtoimax: Int (), <./gnutar/lib/strtoimax.c 63>
+ 1077 											verify: <>
+ 1078 											strtoll: <>
+ 1079 											strtol: INT weak_function (), <./gnutar/lib/strtol.c 432>
+ 1080 												INTERNAL: INT () (), <./gnutar/lib/strtol.c 241>
+ 1081 													ISSPACE: <>
+ 1082 													L_: <>
+ 1083 													TOUPPER: <>
+ 1084 													ISALPHA: <>
+ 1085 													correctly_grouped_prefix: <>
+ 1086 												strtol: 1079
+ 1087 									TYPE_MINIMUM: <>
+ 1088 									read_unsigned_num: int (), <./gnutar/src/incremen.c 885>
+ 1089 										ISDIGIT: <>
+ 1090 										FATAL_ERROR: <>
+ 1091 										getc: <>
+ 1092 										ferror: <>
+ 1093 										strtoumax: <>
+ 1094 									TYPE_MAXIMUM: <>
+ 1095 									read_num: int (), <./gnutar/src/incremen.c 925>
+ 1096 										read_unsigned_num: 1088
+ 1097 										getc: <>
+ 1098 									FATAL_ERROR: <>
+ 1099 									quotearg_colon: 70
+ 1100 								read_num: 1095
+ 1101 								TYPE_MAXIMUM: <>
+ 1102 								read_obstack: int (), <./gnutar/src/incremen.c 824>
+ 1103 									getc: <>
+ 1104 									obstack_1grow: <>
+ 1105 								obstack_finish: <>
+ 1106 								getc: <>
+ 1107 								FATAL_ERROR: <>
+ 1108 								quotearg_colon: 70
+ 1109 								note_directory: struct directory (), <./gnutar/src/incremen.c 136>
+ 1110 								obstack_free: <>
+ 1111 							ferror: <>
+ 1112 							read_error: 228
+ 1113 							free: <>
+ 1114 					fsync: <>
+ 1115 					ioctl: <>
+ 1116 					rmtioctl: <>
+ 1117 					rmtlseek: <>
+ 1118 					seek_warn: void (), <./gnutar/lib/paxerror.c 265>
+ 1119 						call_arg_warn: 749
+ 1120 					flush_read: 1024
+ 1121 					read_header: enum read_header (), <./gnutar/src/list.c 511>
+ 1122 					set_next_block_after: 419
+ 1123 					ERROR: <>
+ 1124 					ngettext: <>
+ 1125 					diff_archive: void (), <./gnutar/src/compare.c 451>
+ 1126 						set_next_block_after: 419
+ 1127 						decode_header: 492
+ 1128 						fprintf: <>
+ 1129 						print_header: 803
+ 1130 						ERROR: <>
+ 1131 						quotearg_colon: 70
+ 1132 						diff_dir: void (), <./gnutar/src/compare.c 172>
+ 1133 							get_stat_data: int (), <./gnutar/src/compare.c 153>
+ 1134 								deref_stat: 620
+ 1135 								stat_warn: 748
+ 1136 								stat_error: 67
+ 1137 								report_difference: void (), <./gnutar/src/compare.c 56>
+ 1138 									fprintf: <>
+ 1139 									quotearg_colon: 70
+ 1140 									va_start: <>
+ 1141 									vfprintf: <>
+ 1142 									va_end: <>
+ 1143 							S_ISDIR: <>
+ 1144 							report_difference: 1137
+ 1145 						diff_file: void (), <./gnutar/src/compare.c 187>
+ 1146 							get_stat_data: 1133
+ 1147 							skip_member: 630
+ 1148 							S_ISREG: <>
+ 1149 							report_difference: 1137
+ 1150 							sys_compare_uid: bool (), <./gnutar/src/system.c 232>
+ 1151 							sys_compare_gid: bool (), <./gnutar/src/system.c 238>
+ 1152 							tar_timespec_cmp: 623
+ 1153 							get_stat_mtime: <>
+ 1154 							open: 13
+ 1155 							open_error: 212
+ 1156 							sparse_diff_file: bool (), <./gnutar/src/sparse.c 554>
+ 1157 								tar_sparse_init: 530
+ 1158 								tar_sparse_decode_header: bool (), <./gnutar/src/sparse.c 159>
+ 1159 									decode_header: 492
+ 1160 								mv_begin: 632
+ 1161 								check_sparse_region: bool (), <./gnutar/src/sparse.c 475>
+ 1162 									lseek_or_error: bool (), <./gnutar/src/sparse.c 176>
+ 1163 										lseek: <>
+ 1164 										dump_zeros: bool (), <./gnutar/src/sparse.c 65>
+ 1165 											write: <>
+ 1166 										seek_diag_details: void (), <./gnutar/src/misc.c 681>
+ 1167 											seek_warn_details: void (), <./gnutar/lib/paxerror.c 271>
+ 1168 												WARN: <>
+ 1169 												quotearg_colon: 70
+ 1170 												STRINGIFY_BIGINT: <>
+ 1171 											seek_error_details: void (), <./gnutar/lib/paxerror.c 255>
+ 1172 												ERROR: <>
+ 1173 												quotearg_colon: 70
+ 1174 												STRINGIFY_BIGINT: <>
+ 1175 									safe_read: <>
+ 1176 									read_diag_details: void (), <./gnutar/src/misc.c 654>
+ 1177 										read_warn_details: void (), <./gnutar/lib/paxerror.c 187>
+ 1178 											WARN: <>
+ 1179 											ngettext: <>
+ 1180 											quotearg_colon: 70
+ 1181 											STRINGIFY_BIGINT: <>
+ 1182 										read_error_details: void (), <./gnutar/lib/paxerror.c 174>
+ 1183 											ERROR: <>
+ 1184 											ngettext: <>
+ 1185 											quotearg_colon: 70
+ 1186 											STRINGIFY_BIGINT: <>
+ 1187 									zero_block_p: bool (), <./gnutar/src/sparse.c 192>
+ 1188 									report_difference: 1137
+ 1189 									offtostr: <>
+ 1190 								check_data_region: bool (), <./gnutar/src/sparse.c 509>
+ 1191 									lseek_or_error: 1162
+ 1192 									mv_size_left: 640
+ 1193 									find_next_block: union block (), <./gnutar/src/buffer.c 380>
+ 1194 									ERROR: <>
+ 1195 									set_next_block_after: 419
+ 1196 									safe_read: <>
+ 1197 									read_diag_details: 1176
+ 1198 									memcmp: <>
+ 1199 									report_difference: 1137
+ 1200 								skip_file: 635
+ 1201 								mv_end: 644
+ 1202 								tar_sparse_done: bool (), <./gnutar/src/sparse.c 118>
+ 1203 									done: <>
+ 1204 							read_and_process: void (), <./gnutar/src/compare.c 120>
+ 1205 								mv_begin: 632
+ 1206 								find_next_block: union block (), <./gnutar/src/buffer.c 380>
+ 1207 								ERROR: <>
+ 1208 								available_space_after: 715
+ 1209 								process_noop: int (), <./gnutar/src/compare.c 75>
+ 1210 								set_next_block_after: 419
+ 1211 								mv_size_left: 640
+ 1212 								mv_end: 644
+ 1213 							process_rawdata: int (), <./gnutar/src/compare.c 82>
+ 1214 								safe_read: <>
+ 1215 								read_error: 228
+ 1216 								report_difference: 1137
+ 1217 								ngettext: <>
+ 1218 								memcmp: <>
+ 1219 							get_stat_atime: <>
+ 1220 							set_file_atime: 955
+ 1221 							utime_error: 112
+ 1222 							close: 26
+ 1223 							close_error: 231
+ 1224 						diff_link: void (), <./gnutar/src/compare.c 261>
+ 1225 							get_stat_data: 1133
+ 1226 							sys_compare_links: bool (), <./gnutar/src/system.c 244>
+ 1227 							report_difference: 1137
+ 1228 							quote: 308
+ 1229 						diff_symlink: void (), <./gnutar/src/compare.c 276>
+ 1230 							strlen: <>
+ 1231 							alloca: 38
+ 1232 							readlink: 976
+ 1233 							readlink_warn: 979
+ 1234 							readlink_error: 981
+ 1235 							report_difference: 1137
+ 1236 							strncmp: <>
+ 1237 						diff_special: void (), <./gnutar/src/compare.c 298>
+ 1238 							get_stat_data: 1133
+ 1239 							S_ISCHR: <>
+ 1240 							S_ISBLK: <>
+ 1241 							S_ISFIFO: <>
+ 1242 							report_difference: 1137
+ 1243 						is_dumpdir: bool (), <./gnutar/src/incremen.c 1214>
+ 1244 							get_gnu_dumpdir: void (), <./gnutar/src/incremen.c 1172>
+ 1245 								xmalloc: 29
+ 1246 								set_next_block_after: 419
+ 1247 								mv_begin: 632
+ 1248 								mv_size_left: 640
+ 1249 								find_next_block: union block (), <./gnutar/src/buffer.c 380>
+ 1250 								ERROR: <>
+ 1251 								available_space_after: 715
+ 1252 								memcpy: <>
+ 1253 								mv_end: 644
+ 1254 						diff_dumpdir: void (), <./gnutar/src/compare.c 367>
+ 1255 							deref_stat: 620
+ 1256 							stat_warn: 748
+ 1257 							stat_error: 67
+ 1258 							get_directory_contents: char * (), <./gnutar/src/incremen.c 555>
+ 1259 								scan_directory: char * (), <./gnutar/src/incremen.c 458>
+ 1260 									savedir: char * (), <./gnutar/lib/savedir.c 123>
+ 1261 										savedirstream: 871
+ 1262 										opendir: 885
+ 1263 									savedir_error: 902
+ 1264 									strlen: <>
+ 1265 									xmalloc: 29
+ 1266 									strcpy: <>
+ 1267 									ISSLASH: <>
+ 1268 									strcat: <>
+ 1269 									deref_stat: 620
+ 1270 									stat_diag: 747
+ 1271 									free: <>
+ 1272 									procdir: struct directory (), <./gnutar/src/incremen.c 230>
+ 1273 									makedumpdir: void (), <./gnutar/src/incremen.c 398>
+ 1274 										DIR_IS_RENAMED: <>
+ 1275 										strlen: <>
+ 1276 										xcalloc: void * (), <./gnutar/lib/xmalloc.c 94>
+ 1277 											xalloc_oversized: <>
+ 1278 											calloc: <>
+ 1279 											xalloc_die: 31
+ 1280 										qsort: <>
+ 1281 										compare_dirnames: int (), <./gnutar/src/incremen.c 379>
+ 1282 											strcmp: <>
+ 1283 										xmalloc: 29
+ 1284 										dumpdir_locate: const char * (), <./gnutar/src/incremen.c 340>
+ 1285 											strchr: <>
+ 1286 											strcmp: <>
+ 1287 											strlen: <>
+ 1288 										free: <>
+ 1289 									xrealloc: 77
+ 1290 									excluded_name: 656
+ 1291 									S_ISDIR: <>
+ 1292 									OLDER_STAT_TIME: <>
+ 1293 							dumpdir_cmp: int (), <./gnutar/src/compare.c 332>
+ 1294 								strchr: <>
+ 1295 								strcmp: <>
+ 1296 								strlen: <>
+ 1297 							report_difference: 1137
+ 1298 							read_and_process: 1204
+ 1299 							process_noop: int (), <./gnutar/src/compare.c 75>
+ 1300 						diff_multivol: void (), <./gnutar/src/compare.c 395>
+ 1301 							diff_dir: 1132
+ 1302 							get_stat_data: 1133
+ 1303 							S_ISREG: <>
+ 1304 							report_difference: 1137
+ 1305 							skip_member: 630
+ 1306 							OFF_FROM_HEADER: <>
+ 1307 							open: 13
+ 1308 							open_error: 212
+ 1309 							lseek: <>
+ 1310 							seek_error_details: 1171
+ 1311 							read_and_process: 1204
+ 1312 							process_rawdata: 1213
+ 1313 							close: 26
+ 1314 							close_error: 231
+ 1315 					tar_stat_destroy: 649
+ 1316 				rmtclose: <>
+ 1317 				close_warn: 961
+ 1318 				sys_wait_for_child: void (), <./gnutar/src/system.c 184>
+ 1319 					waitpid: pid_t (), <./gnutar/lib/waitpid.c 36>
+ 1320 						wait: <>
+ 1321 					waitpid_error: void (), <./gnutar/lib/paxerror.c 331>
+ 1322 						call_arg_error: 68
+ 1323 					WIFSIGNALED: <>
+ 1324 					ERROR: <>
+ 1325 					WTERMSIG: <>
+ 1326 					WEXITSTATUS: <>
+ 1327 				tar_stat_destroy: 649
+ 1328 				free: <>
+ 1329 				finish_qtn: void (), <./gnutar/src/buffer.c 473>
+ 1330 					qtn_file_free: <>
+ 1331 			names_notfound: void (), <./gnutar/src/names.c 609>
+ 1332 				WASFOUND: <>
+ 1333 				regex_usage_warning: void (), <./gnutar/src/names.c 589>
+ 1334 					is_pattern: inline int (), <./gnutar/src/names.c 583>
+ 1335 						strchr: <>
+ 1336 					WARN: <>
+ 1337 				ERROR: <>
+ 1338 				quotearg_colon: 70
+ 1339 				name_next: const char * (), <./gnutar/src/names.c 363>
+ 1340 					name_next_elt: struct name_elt (), <./gnutar/src/names.c 298>
+ 1341 		delete_archive_members: void (), <./gnutar/src/delete.c 152>
+ 1342 			name_gather: 236
+ 1343 			open_archive: 251
+ 1344 			strcmp: <>
+ 1345 			read_header: enum read_header (), <./gnutar/src/list.c 511>
+ 1346 			abort: <>
+ 1347 			name_scan: struct name (), <./gnutar/src/names.c 858>
+ 1348 			skip_member: 630
+ 1349 			ISFOUND: <>
+ 1350 			set_next_block_after: 419
+ 1351 			WARN: <>
+ 1352 			ERROR: <>
+ 1353 			xmalloc: 29
+ 1354 			memcpy: <>
+ 1355 			flush_archive: 1018
+ 1356 			xheader_decode: 513
+ 1357 			write_recent_bytes: void (), <./gnutar/src/delete.c 137>
+ 1358 				write_recent_blocks: void (), <./gnutar/src/delete.c 125>
+ 1359 					write_record: void (), <./gnutar/src/delete.c 94>
+ 1360 						flush_write: void (), <./gnutar/src/buffer.c 1705>
+ 1361 							flush_write_ptr: void () (), <./gnutar/src/buffer.c 93>
+ 1362 						move_archive: void (), <./gnutar/src/delete.c 49>
+ 1363 							rmtioctl: <>
+ 1364 							rmtlseek: <>
+ 1365 							seek_error_details: 1171
+ 1366 				memcpy: <>
+ 1367 				memset: 49
+ 1368 				write_record: 1359
+ 1369 			write_recent_blocks: 1358
+ 1370 			write_record: 1359
+ 1371 			flush_read: 1024
+ 1372 			memset: 49
+ 1373 			sys_truncate: int (), <./gnutar/src/system.c 251>
+ 1374 				write: <>
+ 1375 				lseek: <>
+ 1376 				ftruncate: int (), <./gnutar/lib/ftruncate.c 82>
+ 1377 					fcntl: <>
+ 1378 					fstat: <>
+ 1379 					lseek: <>
+ 1380 					write: <>
+ 1381 					chsize: <>
+ 1382 			truncate_warn: void (), <./gnutar/lib/paxerror.c 313>
+ 1383 				call_arg_warn: 749
+ 1384 			free: <>
+ 1385 			close_archive: 1017
+ 1386 			names_notfound: 1331
+ 1387 		create_archive: void (), <./gnutar/src/create.c 1276>
+ 1388 			open_archive: 251
+ 1389 			buffer_write_global_xheader: 338
+ 1390 			xmalloc: 29
+ 1391 			collect_and_sort_names: void (), <./gnutar/src/names.c 795>
+ 1392 				name_gather: 236
+ 1393 				read_directory_file: 1044
+ 1394 				addname: struct name (), <./gnutar/src/names.c 458>
+ 1395 				chdir_do: 553
+ 1396 				deref_stat: 620
+ 1397 				stat_diag: 747
+ 1398 				S_ISDIR: <>
+ 1399 				add_hierarchy_to_namelist: void (), <./gnutar/src/names.c 734>
+ 1400 					get_directory_contents: 1258
+ 1401 					xmalloc: 29
+ 1402 					strcpy: <>
+ 1403 					ISSLASH: <>
+ 1404 					strlen: <>
+ 1405 					xalloc_die: 31
+ 1406 					xrealloc: 77
+ 1407 					addname: struct name (), <./gnutar/src/names.c 458>
+ 1408 					add_hierarchy_to_namelist: 1399
+ 1409 					free: <>
+ 1410 				merge_sort: struct name (), <./gnutar/src/names.c 651>
+ 1411 				compare_names: int (), <./gnutar/src/names.c 723>
+ 1412 					WASFOUND: <>
+ 1413 					strcmp: <>
+ 1414 				append_incremental_renames: const char * (), <./gnutar/src/incremen.c 618>
+ 1415 					obstack_init: <>
+ 1416 					dumpdir_size: 910
+ 1417 					obstack_grow: <>
+ 1418 					hash_do_for_each: size_t (), <./gnutar/lib/hash.c 356>
+ 1419 					rename_handler: bool (), <./gnutar/src/incremen.c 571>
+ 1420 						DIR_IS_RENAMED: <>
+ 1421 						DIR_CLEAR_FLAG: <>
+ 1422 						obstack_code_rename: void (), <./gnutar/src/incremen.c 562>
+ 1423 							obstack_1grow: <>
+ 1424 							obstack_grow: <>
+ 1425 							strlen: <>
+ 1426 						dir_name: 437
+ 1427 						obstack_1grow: <>
+ 1428 						obstack_grow: <>
+ 1429 						strlen: <>
+ 1430 					obstack_object_size: <>
+ 1431 					obstack_1grow: <>
+ 1432 					obstack_finish: <>
+ 1433 					obstack_free: <>
+ 1434 			name_from_list: 654
+ 1435 			excluded_name: 656
+ 1436 			dump_file: 730
+ 1437 			blank_name_list: void (), <./gnutar/src/names.c 907>
+ 1438 			strlen: <>
+ 1439 			xrealloc: 77
+ 1440 			memcpy: <>
+ 1441 			ISSLASH: <>
+ 1442 			strcpy: <>
+ 1443 			free: <>
+ 1444 			name_next: 1339
+ 1445 			write_eot: 1012
+ 1446 			close_archive: 1017
+ 1447 			write_directory_file: void (), <./gnutar/src/incremen.c 1135>
+ 1448 				fseek: <>
+ 1449 				seek_error: void (), <./gnutar/lib/paxerror.c 249>
+ 1450 					call_arg_error: 68
+ 1451 				sys_truncate: 1373
+ 1452 				fileno: <>
+ 1453 				truncate_error: void (), <./gnutar/lib/paxerror.c 307>
+ 1454 					call_arg_error: 68
+ 1455 				fprintf: <>
+ 1456 				TYPE_SIGNED: <>
+ 1457 				imaxtostr: <>
+ 1458 				umaxtostr: <>
+ 1459 				fwrite: <>
+ 1460 				strlen: <>
+ 1461 				ferror: <>
+ 1462 				hash_do_for_each: 1418
+ 1463 				write_directory_file_entry: bool (), <./gnutar/src/incremen.c 1095>
+ 1464 					DIR_IS_FOUND: <>
+ 1465 					DIR_IS_NFS: <>
+ 1466 					fwrite: <>
+ 1467 					TYPE_SIGNED: <>
+ 1468 					imaxtostr: <>
+ 1469 					umaxtostr: <>
+ 1470 					strlen: <>
+ 1471 					strchr: <>
+ 1472 					ferror: <>
+ 1473 				write_error: 283
+ 1474 				fclose: <>
+ 1475 				close_error: 231
+ 1476 		extr_init: void (), <./gnutar/src/extract.c 130>
+ 1477 			geteuid: <>
+ 1478 			umask: <>
+ 1479 		read_and: void (), <./gnutar/src/list.c 78>
+ 1480 			getenv: <>
+ 1481 			LIST_INIT: <>
+ 1482 			base64_init: void (), <./gnutar/src/list.c 68>
+ 1483 				memset: 49
+ 1484 			name_gather: 236
+ 1485 			open_archive: 251
+ 1486 			tar_stat_destroy: 649
+ 1487 			read_header: enum read_header (), <./gnutar/src/list.c 511>
+ 1488 			abort: <>
+ 1489 			name_match: bool (), <./gnutar/src/names.c 500>
+ 1490 				strlen: <>
+ 1491 				chdir_do: 553
+ 1492 				namelist_match: struct name (), <./gnutar/src/names.c 483>
+ 1493 				ISSLASH: <>
+ 1494 				free: <>
+ 1495 				ISFOUND: <>
+ 1496 				name_gather: 236
+ 1497 			NEWER_OPTION_INITIALIZED: <>
+ 1498 			TIME_FROM_HEADER: <>
+ 1499 			OLDER_TAR_STAT_TIME: <>
+ 1500 			excluded_name: 656
+ 1501 			WARN: <>
+ 1502 			quotearg_colon: 70
+ 1503 			decode_header: 492
+ 1504 			skip_member: 630
+ 1505 			fprintf: <>
+ 1506 			STRINGIFY_BIGINT: <>
+ 1507 			current_block_ordinal: 637
+ 1508 			set_next_block_after: 419
+ 1509 			ERROR: <>
+ 1510 			all_names_found: bool (), <./gnutar/src/names.c 563>
+ 1511 				strlen: <>
+ 1512 				WASFOUND: <>
+ 1513 				ISSLASH: <>
+ 1514 			LIST_FOREACH: <>
+ 1515 			link: <>
+ 1516 			copyfile: <>
+ 1517 			unlink: <>
+ 1518 			strerror: 54
+ 1519 			rename: <>
+ 1520 			apply_qtn_to_path: void (), <./gnutar/src/extract.c 458>
+ 1521 				stat: <>
+ 1522 				chmod: <>
+ 1523 				qtn_file_apply_to_path: <>
+ 1524 				warnx: <>
+ 1525 				qtn_error: <>
+ 1526 			free: <>
+ 1527 			close_archive: 1017
+ 1528 			names_notfound: 1331
+ 1529 		extract_archive: void (), <./gnutar/src/extract.c 1283>
+ 1530 			set_next_block_after: 419
+ 1531 			decode_header: 492
+ 1532 			confirm: 675
+ 1533 			skip_member: 630
+ 1534 			print_header: 803
+ 1535 			apply_nonancestor_delayed_set_stat: 62
+ 1536 			maybe_backup_file: bool (), <./gnutar/src/misc.c 416>
+ 1537 				stat: <>
+ 1538 				stat_error: 67
+ 1539 				S_ISDIR: <>
+ 1540 				S_ISBLK: <>
+ 1541 				S_ISCHR: <>
+ 1542 				assign_string: 497
+ 1543 				find_backup_file_name: char * (), <./gnutar/lib/backupfile.c 273>
+ 1544 					strlen: <>
+ 1545 					xmalloc: 29
+ 1546 					memcpy: <>
+ 1547 					numbered_backup: enum numbered_backup_result (), <./gnutar/lib/backupfile.c 181>
+ 1548 					check_extension: void (), <./gnutar/lib/backupfile.c 101>
+ 1549 						last_component: 363
+ 1550 						base_len: 367
+ 1551 						memcpy: <>
+ 1552 						strcpy: <>
+ 1553 						pathconf: <>
+ 1554 						strchr: <>
+ 1555 				xalloc_die: 31
+ 1556 				rename: <>
+ 1557 				fprintf: <>
+ 1558 				quote_n: 156
+ 1559 				ERROR: <>
+ 1560 				quotearg_colon: 70
+ 1561 			ERROR: <>
+ 1562 			quotearg_colon: 70
+ 1563 			sparse_member_p: 529
+ 1564 			prepare_to_extract: int (), <./gnutar/src/extract.c 1160>
+ 1565 				extract_file: int (), <./gnutar/src/extract.c 804>
+ 1566 					sys_exec_command: int (), <./gnutar/src/system.c 704>
+ 1567 						xpipe: void (), <./gnutar/src/misc.c 717>
+ 1568 							pipe: <>
+ 1569 							call_arg_fatal: 617
+ 1570 						signal: <>
+ 1571 						xfork: pid_t (), <./gnutar/src/misc.c 707>
+ 1572 							fork: <>
+ 1573 							call_arg_fatal: 617
+ 1574 						xclose: void (), <./gnutar/src/buffer.c 423>
+ 1575 							close: 26
+ 1576 							close_error: 231
+ 1577 						xdup2: void (), <./gnutar/src/system.c 282>
+ 1578 							close: 26
+ 1579 							FATAL_ERROR: <>
+ 1580 							dup: 105
+ 1581 							abort: <>
+ 1582 							xclose: 1574
+ 1583 						stat_to_env: void (), <./gnutar/src/system.c 660>
+ 1584 							str_to_env: void (), <./gnutar/src/system.c 638>
+ 1585 								setenv: int (), <./gnutar/lib/setenv.c 284>
+ 1586 								xalloc_die: 31
+ 1587 								unsetenv: <>
+ 1588 							chr_to_env: void (), <./gnutar/src/system.c 650>
+ 1589 								setenv: 1585
+ 1590 								xalloc_die: 31
+ 1591 							oct_to_env: void (), <./gnutar/src/system.c 628>
+ 1592 								snprintf: <>
+ 1593 								setenv: 1585
+ 1594 								xalloc_die: 31
+ 1595 							time_to_env: void (), <./gnutar/src/system.c 620>
+ 1596 								setenv: 1585
+ 1597 								code_timespec: 125
+ 1598 								xalloc_die: 31
+ 1599 							dec_to_env: void (), <./gnutar/src/system.c 609>
+ 1600 								STRINGIFY_BIGINT: <>
+ 1601 								setenv: 1585
+ 1602 								xalloc_die: 31
+ 1603 							minor: <>
+ 1604 							major: <>
+ 1605 							unsetenv: <>
+ 1606 						execv: <>
+ 1607 						exec_fatal: void (), <./gnutar/lib/paxerror.c 118>
+ 1608 							call_arg_fatal: 617
+ 1609 					skip_member: 630
+ 1610 					open_output_file: int (), <./gnutar/src/extract.c 764>
+ 1611 						open: 13
+ 1612 						WARN: <>
+ 1613 					maybe_recoverable: int (), <./gnutar/src/extract.c 558>
+ 1614 						file_newer_p: bool (), <./gnutar/src/extract.c 535>
+ 1615 							stat: <>
+ 1616 							stat_warn: 748
+ 1617 							S_ISDIR: <>
+ 1618 							tar_timespec_cmp: 623
+ 1619 							get_stat_mtime: <>
+ 1620 						remove_any_file: int (), <./gnutar/src/misc.c 332>
+ 1621 							cannot_unlink_dir: bool (), <./gnutar/lib/unlinkdir.c 37>
+ 1622 								priv_allocset: <>
+ 1623 								getppriv: <>
+ 1624 								priv_ismember: <>
+ 1625 								priv_delset: <>
+ 1626 								setppriv: <>
+ 1627 								priv_freeset: <>
+ 1628 								geteuid: <>
+ 1629 							unlink: <>
+ 1630 							safer_rmdir: int (), <./gnutar/src/misc.c 313>
+ 1631 								must_be_dot_or_slash: bool (), <./gnutar/src/misc.c 281>
+ 1632 									FILE_SYSTEM_PREFIX_LEN: <>
+ 1633 									ISSLASH: <>
+ 1634 								rmdir: 964
+ 1635 							savedir: 1260
+ 1636 							strlen: <>
+ 1637 							new_name: char * (), <./gnutar/src/names.c 919>
+ 1638 								strlen: <>
+ 1639 								ISSLASH: <>
+ 1640 								xmalloc: 29
+ 1641 								memcpy: <>
+ 1642 							remove_any_file: 1620
+ 1643 							free: <>
+ 1644 						make_directories: int (), <./gnutar/src/extract.c 466>
+ 1645 							FILE_SYSTEM_PREFIX_LEN: <>
+ 1646 							ISSLASH: <>
+ 1647 							mkdir: <>
+ 1648 							apply_qtn_to_path: 1520
+ 1649 							delay_set_stat: void (), <./gnutar/src/extract.c 353>
+ 1650 								strlen: <>
+ 1651 								xmalloc: 29
+ 1652 								offsetof: <>
+ 1653 								strcpy: <>
+ 1654 							print_for_mkdir: void (), <./gnutar/src/list.c 1312>
+ 1655 								pax_decode_mode: 141
+ 1656 								fprintf: <>
+ 1657 								STRINGIFY_BIGINT: <>
+ 1658 								current_block_ordinal: 637
+ 1659 								quotearg: 807
+ 1660 							access: <>
+ 1661 					open_error: 212
+ 1662 					fcntl: <>
+ 1663 					apply_qtn: void (), <./gnutar/src/extract.c 457>
+ 1664 						fstat: <>
+ 1665 						fchmod: <>
+ 1666 						qtn_file_apply_to_fd: <>
+ 1667 						warnx: <>
+ 1668 						qtn_error: <>
+ 1669 					mv_begin: 632
+ 1670 					sparse_extract_file: enum dump_status (), <./gnutar/src/sparse.c 435>
+ 1671 					mv_size_left: 640
+ 1672 					find_next_block: union block (), <./gnutar/src/buffer.c 380>
+ 1673 					ERROR: <>
+ 1674 					available_space_after: 715
+ 1675 					full_write: <>
+ 1676 					set_next_block_after: 419
+ 1677 					write_error_details: 282
+ 1678 					skip_file: 635
+ 1679 					mv_end: 644
+ 1680 					close: 26
+ 1681 					close_error: 231
+ 1682 					sys_wait_command: void (), <./gnutar/src/system.c 736>
+ 1683 						signal: <>
+ 1684 						waitpid: 1319
+ 1685 						waitpid_error: 1321
+ 1686 						WIFEXITED: <>
+ 1687 						WEXITSTATUS: <>
+ 1688 						ERROR: <>
+ 1689 						WIFSIGNALED: <>
+ 1690 						WARN: <>
+ 1691 						WTERMSIG: <>
+ 1692 					set_stat: 98
+ 1693 				extract_dir: int (), <./gnutar/src/extract.c 680>
+ 1694 					xgetcwd: 556
+ 1695 					deref_stat: 620
+ 1696 					stat_diag: 747
+ 1697 					free: <>
+ 1698 					purge_directory: void (), <./gnutar/src/incremen.c 1430>
+ 1699 						try_purge_directory: bool (), <./gnutar/src/incremen.c 1309>
+ 1700 							is_dumpdir: 1243
+ 1701 							savedir: 1260
+ 1702 							dumpdir_ok: bool (), <./gnutar/src/incremen.c 1222>
+ 1703 								strlen: <>
+ 1704 								ERROR: <>
+ 1705 								WARN: <>
+ 1706 							strlen: <>
+ 1707 							xrealloc: 77
+ 1708 							memcpy: <>
+ 1709 							mkdtemp: char * (), <./gnutar/lib/mkdtemp.c 33>
+ 1710 								gen_tempname: <>
+ 1711 							ERROR: <>
+ 1712 							quote: 308
+ 1713 							free: <>
+ 1714 							rename_directory: bool (), <./gnutar/src/extract.c 1445>
+ 1715 								rename: <>
+ 1716 								make_directories: 1644
+ 1717 								ERROR: <>
+ 1718 								quote_n: 156
+ 1719 							new_name: 1637
+ 1720 							deref_stat: 620
+ 1721 							stat_diag: 747
+ 1722 							WARN: <>
+ 1723 							quotearg_colon: 70
+ 1724 							dumpdir_locate: 1284
+ 1725 							S_ISDIR: <>
+ 1726 							confirm: 675
+ 1727 							fprintf: <>
+ 1728 							remove_any_file: 1620
+ 1729 						skip_member: 630
+ 1730 					skip_member: 630
+ 1731 					mkdir: <>
+ 1732 					stat: <>
+ 1733 					repair_delayed_set_stat: void (), <./gnutar/src/extract.c 381>
+ 1734 						stat: <>
+ 1735 						stat_error: 67
+ 1736 						ERROR: <>
+ 1737 						quotearg_colon: 70
+ 1738 					S_ISDIR: <>
+ 1739 					maybe_recoverable: 1613
+ 1740 					mkdir_error: void (), <./gnutar/lib/paxerror.c 132>
+ 1741 						call_arg_error: 68
+ 1742 					apply_qtn_to_path: 1520
+ 1743 					delay_set_stat: 1649
+ 1744 				extract_symlink: int (), <./gnutar/src/extract.c 1055>
+ 1745 					transform_member_name: 540
+ 1746 					IS_ABSOLUTE_FILE_NAME: <>
+ 1747 					contains_dot_dot: bool (), <./gnutar/src/names.c 1006>
+ 1748 						FILE_SYSTEM_PREFIX_LEN: <>
+ 1749 						ISSLASH: <>
+ 1750 					create_placeholder_file: int (), <./gnutar/src/extract.c 929>
+ 1751 						open: 13
+ 1752 						maybe_recoverable: 1613
+ 1753 						open_error: 212
+ 1754 						fstat: <>
+ 1755 						stat_error: 67
+ 1756 						close: 26
+ 1757 						close_error: 231
+ 1758 						xmalloc: 29
+ 1759 						offsetof: <>
+ 1760 						strlen: <>
+ 1761 						get_stat_mtime: <>
+ 1762 						strcpy: <>
+ 1763 						strncmp: <>
+ 1764 						ISSLASH: <>
+ 1765 						last_component: 363
+ 1766 						stat: <>
+ 1767 					symlink: <>
+ 1768 					maybe_recoverable: 1613
+ 1769 					set_stat: 98
+ 1770 					symlink_error: 161
+ 1771 					WARN: <>
+ 1772 					extract_link: int (), <./gnutar/src/extract.c 999>
+ 1773 						transform_member_name: 540
+ 1774 						contains_dot_dot: 1747
+ 1775 						create_placeholder_file: 1750
+ 1776 						link: <>
+ 1777 						lstat: <>
+ 1778 						timespec_cmp: <>
+ 1779 						get_stat_mtime: <>
+ 1780 						xmalloc: 29
+ 1781 						offsetof: <>
+ 1782 						strlen: <>
+ 1783 						strcpy: <>
+ 1784 						strcmp: <>
+ 1785 						maybe_recoverable: 1613
+ 1786 						link_error: 153
+ 1787 				extract_link: 1772
+ 1788 				extract_node: int (), <./gnutar/src/extract.c 1092>
+ 1789 					mknod: <>
+ 1790 					maybe_recoverable: 1613
+ 1791 					mknod_error: void (), <./gnutar/lib/paxerror.c 144>
+ 1792 						call_arg_error: 68
+ 1793 					set_stat: 98
+ 1794 				extract_fifo: int (), <./gnutar/src/extract.c 1116>
+ 1795 					mkfifo: <>
+ 1796 					maybe_recoverable: 1613
+ 1797 					set_stat: 98
+ 1798 					mkfifo_error: void (), <./gnutar/lib/paxerror.c 138>
+ 1799 						call_arg_error: 68
+ 1800 				extract_volhdr: int (), <./gnutar/src/extract.c 1138>
+ 1801 					fprintf: <>
+ 1802 					quote: 308
+ 1803 					skip_member: 630
+ 1804 				ERROR: <>
+ 1805 				quotearg_colon: 70
+ 1806 				extract_failure: int (), <./gnutar/src/extract.c 1147>
+ 1807 				WARN: <>
+ 1808 				remove_any_file: 1620
+ 1809 				unlink_error: 150
+ 1810 				file_newer_p: 1614
+ 1811 				quote: 308
+ 1812 			strncmp: <>
+ 1813 			basename: <>
+ 1814 			calloc: <>
+ 1815 			strdup: <>
+ 1816 			asprintf: <>
+ 1817 			mktemp: <>
+ 1818 			dirname: <>
+ 1819 			LIST_INSERT_HEAD: <>
+ 1820 			link: <>
+ 1821 			free: <>
+ 1822 			undo_last_backup: void (), <./gnutar/src/misc.c 476>
+ 1823 				rename: <>
+ 1824 				ERROR: <>
+ 1825 				quotearg_colon: 70
+ 1826 				quote_n: 156
+ 1827 				fprintf: <>
+ 1828 				assign_string: 497
+ 1829 		extract_finish: 61
+ 1830 		list_archive: void (), <./gnutar/src/list.c 248>
+ 1831 			current_block_ordinal: 637
+ 1832 			decode_header: 492
+ 1833 			print_header: 803
+ 1834 			is_dumpdir: 1243
+ 1835 			list_dumpdir: void (), <./gnutar/src/incremen.c 1437>
+ 1836 				fprintf: <>
+ 1837 				fputc: <>
+ 1838 			dumpdir_size: 910
+ 1839 			skip_member: 630
+ 1840 		diff_init: 1038
+ 1841 		diff_archive: 1125
+ 1842 		print_total_stats: 264
+ 1843 		check_links: void (), <./gnutar/src/create.c 1455>
+ 1844 			hash_get_first: void * (), <./gnutar/lib/hash.c 277>
+ 1845 				abort: <>
+ 1846 			hash_get_next: void * (), <./gnutar/lib/hash.c 296>
+ 1847 				abort: <>
+ 1848 			WARN: <>
+ 1849 			quote: 308
+ 1850 		closeout_volume_number: void (), <./gnutar/src/buffer.c 930>
+ 1851 			fopen: <>
+ 1852 			fprintf: <>
+ 1853 			ferror: <>
+ 1854 			write_error: 283
+ 1855 			fclose: <>
+ 1856 			close_error: 231
+ 1857 			open_error: 212
+ 1858 		free: <>
+ 1859 		name_term: void (), <./gnutar/src/names.c 280>
+ 1860 			free: <>
+ 1861 		error: 32
+ 1862 		close_stdout: void (), <./gnutar/lib/closeout.c 70>
+ 1863 			close_stream: int (), <./gnutar/lib/close-stream.c 54>
+ 1864 				ferror: <>
+ 1865 				fclose: <>
+ 1866 			error: 32
+ 1867 			quotearg_colon: 70
+ 1868 		ferror: <>
+ 1869 		fclose: <>
+ 1870 		printf: <>
+ 1871 		fflush: <>
+ 1872 		fgets: <>
+ 1873 		get_date: bool (), <getdate.y 1166>
+ 1874 			gettime: 3
+ 1875 			localtime: struct tm (), <./gnutar/lib/gettimeofday.c 51>
+ 1876 			isspace: <>
+ 1877 			strncmp: <>
+ 1878 			get_tz: char * (), <getdate.y 1148>
+ 1879 				getenv: <>
+ 1880 				strlen: <>
+ 1881 				memcpy: <>
+ 1882 				xmemdup: <>
+ 1883 			xmalloc: 29
+ 1884 			setenv: 1585
+ 1885 			free: <>
+ 1886 			strcmp: <>
+ 1887 			yyparse: , <getdate.c 1390>
+ 1888 			to_year: long int (), <getdate.y 811>
+ 1889 			to_hour: int (), <getdate.y 796>
+ 1890 			mktime: <>
+ 1891 			mktime_ok: bool (), <getdate.y 1121>
+ 1892 				localtime: struct tm (), <./gnutar/lib/gettimeofday.c 51>
+ 1893 			sprintf: <>
+ 1894 			gmtime: struct tm (), <./gnutar/lib/gettimeofday.c 65>
+ 1895 			tm_diff: long int (), <getdate.y 854>
+ 1896 				SHR: <>
+ 1897 			done: <>
+ 1898 			unsetenv: <>
+ 1899 		localtime: struct tm (), <./gnutar/lib/gettimeofday.c 51>
+ 1900 		printf: <>
+ 1901 		STRTOL_FATAL_ERROR: <>
+ 1902 		exit: <>
+ 1903 		getopt_long: int (), <./gnutar/lib/getopt1.c 41>
+ 1904 		fprintf: <>
+ 1905 		getenv: <>
+ 1906 		XARGMATCH: <>
+ 1907 		ARGMATCH_TO_ARGUMENT: <>
+ 1908 		sscanf: <>
+ 1909 		atoi: <>
+ 1910 		mktime: time_t (), <./gnutar/lib/mktime.c 504>
+ 1911 		print_tm: void (), <./gnutar/lib/mktime.c 541>
+ 1912 		check_result: int (), <./gnutar/lib/mktime.c 553>
+ 1913 			not_equal_tm: <>
+ 1914 			printf: <>
+ 1915 			print_tm: void (), <./gnutar/lib/mktime.c 541>
+ 1916 		strcmp: <>
+ 1917 		atol: <>
+ 1918 		atexit: <>
+ 1919 		getline: 683
+ 1920 		feof: <>
+ 1921 		chdir_long: 566
+ 1922 		execlp: <>
+ 1923 		getopt: int (), <./gnutar/lib/getopt.c 1116>
+ 1924 		argp_parse: <>
+ 1925 		print_stat: void (), <./gnutar/tests/genfile.c 551>
+ 1926 			stat: <>
+ 1927 			error: 32
+ 1928 			strdup: <>
+ 1929 			strtok: <>
+ 1930 			memcmp: <>
+ 1931 			strcmp: <>
+ 1932 			printf: <>
+ 1933 			strncmp: <>
+ 1934 			ispunct: <>
+ 1935 			strtoul: <>
+ 1936 			umaxtostr: <>
+ 1937 			print_time: void (), <./gnutar/tests/genfile.c 543>
+ 1938 				strftime: <>
+ 1939 				gmtime: struct tm (), <./gnutar/lib/gettimeofday.c 65>
+ 1940 				printf: <>
+ 1941 			ST_IS_SPARSE: <>
+ 1942 			free: <>
+ 1943 		generate_sparse_file: void (), <./gnutar/tests/genfile.c 500>
+ 1944 			error: 32
+ 1945 			open: 13
+ 1946 			xmalloc: 29
+ 1947 			get_size: off_t (), <./gnutar/tests/genfile.c 227>
+ 1948 				xlat_suffix: int (), <./gnutar/tests/genfile.c 199>
+ 1949 				error: 32
+ 1950 			mkhole: void (), <./gnutar/tests/genfile.c 478>
+ 1951 				lseek: <>
+ 1952 				error: 32
+ 1953 				ftruncate: 1376
+ 1954 			strlen: <>
+ 1955 			mksparse: void (), <./gnutar/tests/genfile.c 486>
+ 1956 				lseek: <>
+ 1957 				error: 32
+ 1958 				memset: 49
+ 1959 				write: <>
+ 1960 			close: 26
+ 1961 		verify_file: void (), <./gnutar/tests/genfile.c 253>
+ 1962 			stat: <>
+ 1963 			error: 32
+ 1964 			printf: <>
+ 1965 			exit: <>
+ 1966 			ST_IS_SPARSE: <>
+ 1967 		generate_files_from_list: void (), <./gnutar/tests/genfile.c 454>
+ 1968 			strcmp: <>
+ 1969 			fopen: <>
+ 1970 			error: 32
+ 1971 			obstack_init: <>
+ 1972 			read_name_from_file: int (), <./gnutar/tests/genfile.c 435>
+ 1973 				getc: <>
+ 1974 				error: 32
+ 1975 				obstack_1grow: <>
+ 1976 			obstack_finish: <>
+ 1977 			generate_simple_file: void (), <./gnutar/tests/genfile.c 412>
+ 1978 				fopen: <>
+ 1979 				error: 32
+ 1980 				fseeko: <>
+ 1981 				strerror: 54
+ 1982 				fill: void (), <./gnutar/tests/genfile.c 392>
+ 1983 					fputc: <>
+ 1984 				fclose: <>
+ 1985 			verify_file: 1961
+ 1986 			obstack_free: <>
+ 1987 			fclose: <>
+ 1988 		generate_simple_file: 1977
+ 1989 		exec_command: void (), <./gnutar/tests/genfile.c 723>
+ 1990 			xrealloc: 77
+ 1991 			memmove: <>
+ 1992 			signal: <>
+ 1993 			pipe: <>
+ 1994 			fork: <>
+ 1995 			error: 32
+ 1996 			dup2: int (), <./gnutar/lib/dup2.c 48>
+ 1997 				dup2: 1996
+ 1998 				ensure_dirs_slot: 20
+ 1999 				strdup: <>
+ 2000 				close: 26
+ 2001 				fcntl: <>
+ 2002 				dupfd: int (), <./gnutar/lib/dup2.c 31>
+ 2003 					dup: 105
+ 2004 					dupfd: 2002
+ 2005 					close: 26
+ 2006 			close: 26
+ 2007 			setenv: 1585
+ 2008 			execvp: <>
+ 2009 			fdopen: <>
+ 2010 			fgets: <>
+ 2011 			isspace: <>
+ 2012 			memcmp: <>
+ 2013 			strtoul: <>
+ 2014 			process_checkpoint: void (), <./gnutar/tests/genfile.c 695>
+ 2015 				exec_checkpoint: void (), <./gnutar/tests/genfile.c 639>
+ 2016 					printf: <>
+ 2017 					utimens: 99
+ 2018 					error: 32
+ 2019 					fopen: <>
+ 2020 					fill: 1982
+ 2021 					fclose: <>
+ 2022 					open: 13
+ 2023 					ftruncate: 1376
+ 2024 					close: 26
+ 2025 					system: <>
+ 2026 					abort: <>
+ 2027 				free: <>
+ 2028 			fprintf: <>
+ 2029 			waitpid: 1319
+ 2030 			WIFEXITED: <>
+ 2031 			WEXITSTATUS: <>
+ 2032 			printf: <>
+ 2033 			WIFSIGNALED: <>
+ 2034 			WTERMSIG: <>
+ 2035 			WIFSTOPPED: <>
+ 2036 			WSTOPSIG: <>
+ 2037 			WCOREDUMP: <>
+ 2038 			exit: <>
+ 2039 		abort: <>
+ 2040 		argcv_get: int (), <./gnutar/tests/argcv.c 272>
+ 2041 			strlen: <>
+ 2042 			argcv_scan: int (), <./gnutar/tests/argcv.c 34>
+ 2043 				isws: <>
+ 2044 				isdelim: <>
+ 2045 				strchr: <>
+ 2046 			calloc: <>
+ 2047 			unescape_copy: void (), <./gnutar/tests/argcv.c 167>
+ 2048 				xtonum: int (), <./gnutar/tests/argcv.c 126>
+ 2049 					memcpy: <>
+ 2050 					strtoul: <>
+ 2051 				argcv_unescape_char: int (), <./gnutar/tests/argcv.c 98>
+ 2052 		argcv_string: int (), <./gnutar/tests/argcv.c 332>
+ 2053 			malloc: <>
+ 2054 			escaped_length: size_t (), <./gnutar/tests/argcv.c 140>
+ 2055 				isprint: <>
+ 2056 				argcv_escape_char: int (), <./gnutar/tests/argcv.c 111>
+ 2057 			realloc: <>
+ 2058 			escape_copy: void (), <./gnutar/tests/argcv.c 243>
+ 2059 				isprint: <>
+ 2060 				argcv_escape_char: 2056
+ 2061 				snprintf: <>
+ 2062 				memcpy: <>
+ 2063 			isspace: <>
+ 2064 		usage: void (), <./gnutar/src/tar.c 1927>
+ 2065 			argp_help: <>
+ 2066 			close_stdout: 1862
+ 2067 			exit: <>
+ 2068 			i18n_setup: void (), <./gnutar/rmt/rmt.c 289>
+ 2069 				setlocale: <>
+ 2070 				bindtextdomain: <>
+ 2071 				textdomain: <>
+ 2072 			fprintf: <>
+ 2073 			printf: <>
+ 2074 		i18n_setup: 2068
+ 2075 		version_etc: void (), <./gnutar/lib/version-etc.c 167>
+ 2076 			va_start: <>
+ 2077 			version_etc_va: void (), <./gnutar/lib/version-etc.c 41>
+ 2078 				va_copy: <>
+ 2079 				va_arg: <>
+ 2080 				fprintf: <>
+ 2081 				fputs: <>
+ 2082 				abort: <>
+ 2083 				vfprintf: <>
+ 2084 				va_end: <>
+ 2085 		fopen: <>
+ 2086 		report_numbered_error: void (), <./gnutar/rmt/rmt.c 96>
+ 2087 			DEBUG2: <>
+ 2088 			strerror: 54
+ 2089 			sprintf: <>
+ 2090 			full_write: <>
+ 2091 			strlen: <>
+ 2092 		setbuf: <>
+ 2093 		safe_read: <>
+ 2094 		open_device: void (), <./gnutar/rmt/rmt.c 334>
+ 2095 			get_string: char * (), <./gnutar/rmt/rmt.c 105>
+ 2096 				safe_read: <>
+ 2097 				exit: <>
+ 2098 				obstack_1grow: <>
+ 2099 				obstack_finish: <>
+ 2100 			DEBUG2: <>
+ 2101 			close: 26
+ 2102 			open: 13
+ 2103 			decode_oflag: int (), <./gnutar/rmt/rmt.c 213>
+ 2104 				strtol: 1079
+ 2105 				ISSPACE: <>
+ 2106 				strncmp: <>
+ 2107 				strlen: <>
+ 2108 				strchr: <>
+ 2109 			report_numbered_error: 2086
+ 2110 			respond: void (), <./gnutar/rmt/rmt.c 323>
+ 2111 				DEBUG1: <>
+ 2112 				sprintf: <>
+ 2113 				full_write: <>
+ 2114 				strlen: <>
+ 2115 			free_string: void (), <./gnutar/rmt/rmt.c 123>
+ 2116 				obstack_free: <>
+ 2117 		close_device: void (), <./gnutar/rmt/rmt.c 354>
+ 2118 			free_string: 2115
+ 2119 			get_string: 2095
+ 2120 			DEBUG: <>
+ 2121 			close: 26
+ 2122 			report_numbered_error: 2086
+ 2123 			respond: 2110
+ 2124 		lseek_device: void (), <./gnutar/rmt/rmt.c 369>
+ 2125 			get_string_n: void (), <./gnutar/rmt/rmt.c 129>
+ 2126 				safe_read: <>
+ 2127 				exit: <>
+ 2128 				report_error_message: void (), <./gnutar/rmt/rmt.c 87>
+ 2129 					DEBUG1: <>
+ 2130 					sprintf: <>
+ 2131 					full_write: <>
+ 2132 					strlen: <>
+ 2133 				N_: <>
+ 2134 			DEBUG2: <>
+ 2135 			report_error_message: 2128
+ 2136 			N_: <>
+ 2137 			exit: <>
+ 2138 			get_long: long int (), <./gnutar/rmt/rmt.c 148>
+ 2139 				strtol: 1079
+ 2140 				report_numbered_error: 2086
+ 2141 				exit: <>
+ 2142 				report_error_message: 2128
+ 2143 				N_: <>
+ 2144 			lseek: <>
+ 2145 			report_numbered_error: 2086
+ 2146 			DEBUG1: <>
+ 2147 			sprintf: <>
+ 2148 			full_write: <>
+ 2149 			strlen: <>
+ 2150 		write_device: void (), <./gnutar/rmt/rmt.c 454>
+ 2151 			get_string_n: 2125
+ 2152 			get_long: 2138
+ 2153 			DEBUG1: <>
+ 2154 			prepare_input_buffer: void (), <./gnutar/rmt/rmt.c 168>
+ 2155 				free: <>
+ 2156 				malloc: <>
+ 2157 				DEBUG: <>
+ 2158 				report_error_message: 2128
+ 2159 				N_: <>
+ 2160 				exit: <>
+ 2161 				setsockopt: <>
+ 2162 			safe_read: <>
+ 2163 			DEBUG: <>
+ 2164 			report_error_message: 2128
+ 2165 			N_: <>
+ 2166 			exit: <>
+ 2167 			full_write: <>
+ 2168 			report_numbered_error: 2086
+ 2169 			respond: 2110
+ 2170 		read_device: void (), <./gnutar/rmt/rmt.c 486>
+ 2171 			get_string_n: 2125
+ 2172 			DEBUG1: <>
+ 2173 			get_long: 2138
+ 2174 			prepare_input_buffer: 2154
+ 2175 			safe_read: <>
+ 2176 			report_numbered_error: 2086
+ 2177 			sprintf: <>
+ 2178 			full_write: <>
+ 2179 			strlen: <>
+ 2180 		mtioctop: void (), <./gnutar/rmt/rmt.c 509>
+ 2181 			get_string_n: 2125
+ 2182 			DEBUG2: <>
+ 2183 			report_error_message: 2128
+ 2184 			N_: <>
+ 2185 			exit: <>
+ 2186 			get_long: 2138
+ 2187 			ioctl: <>
+ 2188 			report_numbered_error: 2086
+ 2189 			respond: 2110
+ 2190 		status_device: void (), <./gnutar/rmt/rmt.c 573>
+ 2191 			DEBUG: <>
+ 2192 			ioctl: <>
+ 2193 			report_numbered_error: 2086
+ 2194 			respond: 2110
+ 2195 			full_write: <>
+ 2196 		DEBUG1: <>
+ 2197 		report_error_message: 2128
+ 2198 		N_: <>

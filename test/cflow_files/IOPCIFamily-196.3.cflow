@@ -1,0 +1,173 @@
+    1 	main: int (), <./rballoc.c 67>
+    2 		atop: <>
+    3 		vtd_ballocator_alloc: <>
+    4 		vtd_blog: void (), <./balloc.c 25>
+    5 			free:  (), <./vtd.c 872>
+    6 			VTLOG: <>
+    7 			vtd_space_nfault: <>
+    8 			vtassert: <>
+    9 		VTLOG: <>
+   10 		vtd_balloc_fixed: void (), <./balloc.c 175>
+   11 			free:  (), <./vtd.c 872>
+   12 			vtassert: <>
+   13 			STAT_ADD: <>
+   14 			vtd_log2down: vtd_vaddr_t (), <./vtd.c 566>
+   15 			vtd_bchunk_free: void (), <./balloc.c 46>
+   16 				vtassert: <>
+   17 				free:  (), <./vtd.c 872>
+   18 				STAT_ADD: <>
+   19 		vtd_bfree_fixed: void (), <./balloc.c 242>
+   20 			vtd_bfree: void (), <./balloc.c 72>
+   21 				vtd_log2up: vtd_vaddr_t (), <./vtd.c 558>
+   22 				vtassert: <>
+   23 				free:  (), <./vtd.c 872>
+   24 				vtd_space_present: bool (), <./vtd.c 597>
+   25 					vtassert: <>
+   26 				STAT_ADD: <>
+   27 				vtd_bchunk_free: 15
+   28 		srandomdev: <>
+   29 		random: <>
+   30 		srandom: <>
+   31 		bzero: <>
+   32 		vtd_bfree: 20
+   33 		vtd_balloc: vtd_baddr_t (), <./balloc.c 111>
+   34 			vtd_log2up: 21
+   35 			free:  (), <./vtd.c 872>
+   36 			vtd_space_nfault: <>
+   37 			vtassert: <>
+   38 			STAT_ADD: <>
+   39 			vtd_bchunk_free: 15
+   40 			vtd_space_set: void (), <./vtd.c 663>
+   41 				VTLOG: <>
+   42 				vtassert: <>
+   43 				vtd_space_nfault: <>
+   44 				ptoa_64: <>
+   45 				table_flush: <>
+   46 			bzero: <>
+   47 		arrayCount: <>
+   48 		vtd_log2up: 21
+   49 		vtassert: <>
+   50 		free:  (), <./vtd.c 872>
+   51 		exit: <>
+   52 		IOServiceGetMatchingService: <>
+   53 		IOServiceMatching: <>
+   54 		assert: <>
+   55 		IOServiceOpen: <>
+   56 		mach_task_self: <>
+   57 		IOObjectRelease: <>
+   58 		strtoul: <>
+   59 		dumpDevice: void (), <./tools/pcidump.c 408>
+   60 			configRead32: uint32_t (), <./tools/pcidump.c 229>
+   61 				IOConnectCallStructMethod: <>
+   62 				assert: <>
+   63 			printf: <>
+   64 			lookService: io_registry_entry_t (), <./tools/pcidump.c 350>
+   65 				IOServiceGetMatchingServices: <>
+   66 				IOServiceMatching: <>
+   67 				assert: <>
+   68 				IOIteratorNext: <>
+   69 				IORegistryEntryCreateCFProperty: <>
+   70 				CFSTR: <>
+   71 				CFDataGetTypeID: <>
+   72 				CFGetTypeID: <>
+   73 				CFDataGetBytePtr: <>
+   74 				CFRelease: <>
+   75 				IOObjectRetain: <>
+   76 				IOObjectRelease: <>
+   77 			IORegistryEntryGetName: <>
+   78 			assert: <>
+   79 			IORegistryEntryGetRegistryEntryID: <>
+   80 			IOObjectRelease: <>
+   81 			dump: void (), <./tools/pcidump.c 393>
+   82 				printf: <>
+   83 		configWrite32: void (), <./tools/pcidump.c 258>
+   84 			IOConnectCallStructMethod: <>
+   85 			assert: <>
+   86 		printf: <>
+   87 		configRead32: 60
+   88 		strtoull: <>
+   89 		physWrite32: void (), <./tools/pcidump.c 286>
+   90 			IOConnectCallStructMethod: <>
+   91 			assert: <>
+   92 		physRead32: uint32_t (), <./tools/pcidump.c 306>
+   93 			IOConnectCallStructMethod: <>
+   94 			assert: <>
+   95 		ioRead32: uint32_t (), <./tools/pcidump.c 328>
+   96 			IOConnectCallStructMethod: <>
+   97 			assert: <>
+   98 		strtoll: <>
+   99 		IORegistryEntryIDMatching: <>
+  100 		CFArrayCreateMutable: <>
+  101 		CFStringCreateWithCString: <>
+  102 		CFStringGetSystemEncoding: <>
+  103 		CFArrayAppendValue: <>
+  104 		IORegistryEntrySetCFProperty: <>
+  105 		CFSTR: <>
+  106 		mach_error_string: <>
+  107 		IORegistryEntryCreateCFProperty: <>
+  108 		CFDataGetBytePtr: <>
+  109 		IOMasterPort: <>
+  110 		IOServiceGetMatchingServices: <>
+  111 		IOIteratorNext: <>
+  112 		IORegistryEntryGetPath: <>
+  113 		IORegistryEntryCreateCFProperties: <>
+  114 		CFDictionaryGetValue: <>
+  115 		CFStringGetCStringPtr: <>
+  116 		CFStringGetLength: <>
+  117 		malloc: <>
+  118 		CFStringGetCString: <>
+  119 		CFRelease: <>
+  120 		Test: void (), <./AppleSamplePCI/AppleSamplePCIClient.c 89>
+  121 			IOServiceOpen: <>
+  122 			mach_task_self: <>
+  123 			assert: <>
+  124 			IOConnectCallStructMethod: <>
+  125 			IOConnectMethodStructureIStructureO: <>
+  126 			printf: <>
+  127 			TestSharedMemory: void (), <./AppleSamplePCI/AppleSamplePCIClient.c 160>
+  128 				IOConnectMapMemory: <>
+  129 				mach_task_self: <>
+  130 				assert: <>
+  131 				printf: <>
+  132 				strcpy: <>
+  133 			malloc: <>
+  134 			strcpy: <>
+  135 			free:  (), <./vtd.c 872>
+  136 		RB_INIT: <>
+  137 		vtd_rbfree: void (), <./rballoc.c 181>
+  138 			RB_ROOT: <>
+  139 			vtd_log2up: <>
+  140 			vtassert: <>
+  141 			RB_RIGHT: <>
+  142 			RB_LEFT: <>
+  143 			RB_NEXT: <>
+  144 			RB_REMOVE: <>
+  145 			RB_INSERT: <>
+  146 			IONew: <>
+  147 			typeof: <>
+  148 			memset: <>
+  149 		vtd_rblog: void (), <./rballoc.c 165>
+  150 			RB_FOREACH: <>
+  151 			VTLOG: <>
+  152 		vtd_rballoc_fixed: void (), <./rballoc.c 354>
+  153 			RB_ROOT: <>
+  154 			RB_RIGHT: <>
+  155 			RB_LEFT: <>
+  156 			RB_REMOVE: <>
+  157 			RB_INSERT: <>
+  158 			vtassert: <>
+  159 			IONew: <>
+  160 			typeof: <>
+  161 			memset: <>
+  162 		vtd_rballoc: vtd_rbaddr_t (), <./rballoc.c 268>
+  163 			RB_ROOT: <>
+  164 			vtassert: <>
+  165 			vtd_log2up: <>
+  166 			RB_RIGHT: <>
+  167 			RB_LEFT: <>
+  168 			RB_REMOVE: <>
+  169 			IODelete: <>
+  170 			typeof: <>
+  171 			RB_INSERT: <>
+  172 			IONew: <>
+  173 			memset: <>

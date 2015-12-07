@@ -1,0 +1,1650 @@
+    1 	main: int (), <./libpcap/msdos/bin2c.c 15>
+    2 		pcap_findalldevs: int (), <./libpcap/fad-null.c 56>
+    3 			strcpy: <>
+    4 			acn_parse_hosts_file: int (), <./libpcap/pcap-sita.c 257>
+    5 				empty_unit_table: void (), <./libpcap/pcap-sita.c 220>
+    6 					free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+    7 					empty_unit: void (), <./libpcap/pcap-sita.c 211>
+    8 						empty_unit_iface: void (), <./libpcap/pcap-sita.c 197>
+    9 							free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+   10 						realloc: <>
+   11 				fopen: <>
+   12 				snprintf: int (), <./libpcap/missing/snprintf.c 466>
+   13 					va_start: <>
+   14 					vsnprintf: int (), <./libpcap/missing/snprintf.c 610>
+   15 						sn_append_char: int (), <./libpcap/missing/snprintf.c 85>
+   16 							sn_reserve: int (), <./libpcap/missing/snprintf.c 79>
+   17 						sn_reserve: int (), <./libpcap/missing/snprintf.c 79>
+   18 						xyzprintf: int (), <./libpcap/missing/snprintf.c 288>
+   19 							isdigit: <>
+   20 							va_arg: <>
+   21 							append_char: int (), <./libpcap/missing/snprintf.c 253>
+   22 							append_string: int (), <./libpcap/missing/snprintf.c 222>
+   23 								strlen: <>
+   24 							PARSE_INT_FORMAT: <>
+   25 							append_number: int (), <./libpcap/missing/snprintf.c 133>
+   26 					malloc: <>
+   27 					abort: <>
+   28 					vsprintf: <>
+   29 					strcmp: <>
+   30 					free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+   31 					va_end: <>
+   32 				fgets: <>
+   33 				strcspn: <>
+   34 				strspn: <>
+   35 				strlen: <>
+   36 				strstr: <>
+   37 				malloc: <>
+   38 				pcap_strerror: const char * (), <./libpcap/pcap.c 1017>
+   39 					strerror: <>
+   40 					snprintf: 12
+   41 				strcpy: <>
+   42 				fclose: <>
+   43 			acn_findalldevs: int (), <./libpcap/pcap-sita.c 729>
+   44 				FD_ZERO: <>
+   45 				open_with_IOP: int (), <./libpcap/pcap-sita.c 308>
+   46 					malloc: <>
+   47 					bzero: <>
+   48 					inet_addr: <>
+   49 					htons: <>
+   50 					socket: <>
+   51 					fprintf: <>
+   52 					connect: <>
+   53 				send_to_fd: void (), <./libpcap/pcap-sita.c 359>
+   54 					write: <>
+   55 					find_unit_by_fd: int (), <./libpcap/pcap-sita.c 167>
+   56 					close_with_IOP: void (), <./libpcap/pcap-sita.c 335>
+   57 						close: <>
+   58 					empty_unit: 7
+   59 				get_error_response: char * (), <./libpcap/pcap-sita.c 712>
+   60 					recv: <>
+   61 				close_with_IOP: 56
+   62 				FD_SET: <>
+   63 				wait_for_all_answers: void (), <./libpcap/pcap-sita.c 675>
+   64 					FD_ISSET: <>
+   65 					memcpy: <>
+   66 					select: <>
+   67 					printf: <>
+   68 					read_client_data: int (), <./libpcap/pcap-sita.c 658>
+   69 						find_unit_by_fd: 55
+   70 						recv: <>
+   71 						realloc: <>
+   72 						memcpy: <>
+   73 					FD_CLR: <>
+   74 					find_unit_by_fd: 55
+   75 					close_with_IOP: 56
+   76 				process_client_data: int (), <./libpcap/pcap-sita.c 528>
+   77 					empty_unit_iface: 8
+   78 					malloc: <>
+   79 					snprintf: 12
+   80 					pcap_strerror: 38
+   81 					bzero: <>
+   82 					memcpy: <>
+   83 					ntohl: <>
+   84 					translate_IOP_to_pcap_name: char * (), <./libpcap/pcap-sita.c 411>
+   85 						malloc: <>
+   86 						bzero: <>
+   87 						strlen: <>
+   88 						strcpy: <>
+   89 						strncmp: <>
+   90 						atoi: <>
+   91 						nonUnified_port_num: char * (), <./libpcap/pcap-sita.c 397>
+   92 							sprintf: <>
+   93 						unified_port_num: char * (), <./libpcap/pcap-sita.c 403>
+   94 							sprintf: <>
+   95 						sprintf: <>
+   96 					realloc: <>
+   97 					strlen: <>
+   98 					strcpy: <>
+   99 				sort_if_table: void (), <./libpcap/pcap-sita.c 492>
+  100 					if_sort: int (), <./libpcap/pcap-sita.c 465>
+  101 						strchr: <>
+  102 						strlen: <>
+  103 						strncpy: <>
+  104 						strcmp: <>
+  105 			PCAP_ASSERT: <>
+  106 			FLUSHK: <>
+  107 			memset: <>
+  108 			pcap_add_if: int (), <./libpcap/inet.c 579>
+  109 				add_or_find_if: int (), <./libpcap/inet.c 130>
+  110 					strcmp: <>
+  111 					strncmp: <>
+  112 					strlen: <>
+  113 					malloc: <>
+  114 					snprintf: 12
+  115 					pcap_strerror: 38
+  116 					strcpy: <>
+  117 					strcat: <>
+  118 					pcap_open_live: pcap_t * (), <./libpcap/pcap.c 350>
+  119 						pcap_create: pcap_t * (), <./libpcap/pcap-libdlpi.c 362>
+  120 							pcap_create_common: pcap_t * (), <./libpcap/pcap.c 221>
+  121 								malloc: <>
+  122 								snprintf: 12
+  123 								pcap_strerror: 38
+  124 								memset: <>
+  125 								strdup: <>
+  126 								free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  127 								pcap_cant_set_rfmon: int (), <./libpcap/pcap.c 102>
+  128 								initialize_ops: void (), <./libpcap/pcap.c 185>
+  129 									pcap_not_initialized: int (), <./libpcap/pcap.c 82>
+  130 									pcap_cleanup_live_common: void (), <./libpcap/pcap.c 1204>
+  131 										free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  132 										pcap_freecode: void (), <./libpcap/gencode.c 498>
+  133 											free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  134 										close: <>
+  135 									pcap_oneshot: void (), <./libpcap/pcap.c 113>
+  136 								pcap_set_timeout: int (), <./libpcap/pcap.c 303>
+  137 									pcap_check_activated: int (), <./libpcap/pcap.c 265>
+  138 										snprintf: 12
+  139 								pcap_set_snaplen: int (), <./libpcap/pcap.c 276>
+  140 									pcap_check_activated: 137
+  141 							pcap_activate_sita: int (), <./libpcap/pcap-sita.c 921>
+  142 								pcap_inject_acn: int (), <./libpcap/pcap-sita.c 822>
+  143 									strlcpy: <>
+  144 								pcap_setfilter_acn: int (), <./libpcap/pcap-sita.c 828>
+  145 									send_to_fd: 53
+  146 									htonl: <>
+  147 									htons: <>
+  148 									get_error_response: 59
+  149 								pcap_setdirection_acn: int (), <./libpcap/pcap-sita.c 854>
+  150 									snprintf: 12
+  151 								pcap_getnonblock_fd: int (), <./libpcap/pcap.c 879>
+  152 									fcntl: <>
+  153 									snprintf: 12
+  154 									pcap_strerror: 38
+  155 								pcap_setnonblock_fd: int (), <./libpcap/pcap.c 910>
+  156 									fcntl: <>
+  157 									snprintf: 12
+  158 									pcap_strerror: 38
+  159 								pcap_cleanup_acn: void (), <./libpcap/pcap-sita.c 347>
+  160 									find_unit_by_fd: 55
+  161 									close_with_IOP: 56
+  162 									pcap_cleanup_live_common: 130
+  163 								pcap_read_acn: int (), <./libpcap/pcap-sita.c 897>
+  164 									acn_start_monitor: void (), <./libpcap/pcap-sita.c 803>
+  165 										find_unit_by_fd: 55
+  166 										htonl: <>
+  167 										send_to_fd: 53
+  168 									acn_read_n_bytes_with_timeout: int (), <./libpcap/pcap-sita.c 860>
+  169 										FD_ZERO: <>
+  170 										FD_SET: <>
+  171 										memcpy: <>
+  172 										select: <>
+  173 										recv: <>
+  174 									ntohl: <>
+  175 								pcap_stats_acn: int (), <./libpcap/pcap-sita.c 759>
+  176 									send_to_fd: 53
+  177 									read_client_nbytes: int (), <./libpcap/pcap-sita.c 183>
+  178 										find_unit_by_fd: 55
+  179 										recv: <>
+  180 									ntohl: <>
+  181 								acn_open_live: int (), <./libpcap/pcap-sita.c 773>
+  182 									pcap_findalldevs: 2
+  183 									strcmp: <>
+  184 									open_with_IOP: 45
+  185 									send_to_fd: 53
+  186 									strlen: <>
+  187 									get_error_response: 59
+  188 								malloc: <>
+  189 								snprintf: 12
+  190 								pcap_strerror: 38
+  191 							pcap_activate_snoop: int (), <./libpcap/pcap-snoop.c 198>
+  192 								socket: <>
+  193 								snprintf: 12
+  194 								pcap_strerror: 38
+  195 								memset: <>
+  196 								strncpy: <>
+  197 								bind: <>
+  198 								ioctl: <>
+  199 								setsockopt: <>
+  200 								strncmp: <>
+  201 								RAW_HDRPAD: <>
+  202 								malloc: <>
+  203 								pcap_read_snoop: int (), <./libpcap/pcap-snoop.c 62>
+  204 									read: <>
+  205 									snprintf: 12
+  206 									pcap_strerror: 38
+  207 									bpf_filter: <>
+  208 									stat: <>
+  209 								pcap_inject_snoop: int (), <./libpcap/pcap-snoop.c 139>
+  210 									write: <>
+  211 									snprintf: 12
+  212 									pcap_strerror: 38
+  213 								install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  214 								pcap_getnonblock_fd: 151
+  215 								pcap_setnonblock_fd: 155
+  216 								pcap_stats_snoop: int (), <./libpcap/pcap-snoop.c 157>
+  217 									memset: <>
+  218 									ioctl: <>
+  219 									snprintf: 12
+  220 									pcap_strerror: 38
+  221 									stat: <>
+  222 								pcap_cleanup_live_common: 130
+  223 							pcap_activate_dlpi: int (), <./libpcap/pcap-dlpi.c 333>
+  224 								strrchr: <>
+  225 								strlcpy: <>
+  226 								split_dname: char * (), <./libpcap/pcap-dlpi.c 775>
+  227 									strlen: <>
+  228 									snprintf: 12
+  229 									strtol: <>
+  230 								open: <>
+  231 								snprintf: 12
+  232 								pcap_strerror: 38
+  233 								get_dlpi_ppa: int (), <./libpcap/pcap-dlpi.c 1606>
+  234 									memset: <>
+  235 									send_request: int (), <./libpcap/pcap-dlpi.c 924>
+  236 										putmsg: <>
+  237 										snprintf: 12
+  238 										pcap_strerror: 38
+  239 									getmsg: <>
+  240 									snprintf: 12
+  241 									pcap_strerror: 38
+  242 									malloc: <>
+  243 									free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  244 									strcmp: <>
+  245 									stat: <>
+  246 									major: <>
+  247 									strrchr: <>
+  248 									nlist: <>
+  249 									open: <>
+  250 									dlpi_kread: int (), <./libpcap/pcap-dlpi.c 1658>
+  251 										lseek: <>
+  252 										snprintf: 12
+  253 										pcap_strerror: 38
+  254 										read: <>
+  255 									close: <>
+  256 								dlinforeq: int (), <./libpcap/pcap-dlpi.c 1282>
+  257 									send_request: 235
+  258 								dlinfoack: int (), <./libpcap/pcap-dlpi.c 1292>
+  259 									recv_ack: int (), <./libpcap/pcap-dlpi.c 944>
+  260 										getmsg: <>
+  261 										snprintf: 12
+  262 										pcap_strerror: 38
+  263 										MAKE_DL_PRIMITIVES: <>
+  264 										dlstrerror: char * (), <./libpcap/pcap-dlpi.c 1021>
+  265 											sprintf: <>
+  266 										dlprim: char * (), <./libpcap/pcap-dlpi.c 1131>
+  267 											sprintf: <>
+  268 								MAKE_DL_PRIMITIVES: <>
+  269 								dl_doattach: int (), <./libpcap/pcap-dlpi.c 816>
+  270 									dlattachreq: int (), <./libpcap/pcap-dlpi.c 1225>
+  271 										send_request: 235
+  272 									dlokack: int (), <./libpcap/pcap-dlpi.c 1274>
+  273 										recv_ack: 259
+  274 								dlpassive: void (), <./libpcap/pcap-dlpi.c 1304>
+  275 									send_request: 235
+  276 									dlokack: 272
+  277 								dlbindreq: int (), <./libpcap/pcap-dlpi.c 1236>
+  278 									memset: <>
+  279 									send_request: 235
+  280 								dlbindack: int (), <./libpcap/pcap-dlpi.c 1256>
+  281 									recv_ack: 259
+  282 								dl_dohpuxbind: int (), <./libpcap/pcap-dlpi.c 831>
+  283 									dlbindreq: 277
+  284 									dlbindack: 280
+  285 									strlcpy: <>
+  286 								strioctl: int (), <./libpcap/dlpisubs.c 334>
+  287 									ioctl: <>
+  288 								dlpromisconreq: int (), <./libpcap/pcap-dlpi.c 1263>
+  289 									send_request: 235
+  290 								dlokack: 272
+  291 								pcap_process_mactype: int (), <./libpcap/dlpisubs.c 207>
+  292 									malloc: <>
+  293 									snprintf: 12
+  294 								get_release: char * (), <./libpcap/pcap-dlpi.c 1354>
+  295 									sysinfo: <>
+  296 									isdigit: <>
+  297 									strtol: <>
+  298 								getenv: <>
+  299 								pcap_conf_bufmod: int (), <./libpcap/dlpisubs.c 270>
+  300 									ioctl: <>
+  301 									pcap_stream_err: void (), <./libpcap/dlpisubs.c 354>
+  302 										snprintf: 12
+  303 										pcap_strerror: 38
+  304 									strioctl: 286
+  305 								ioctl: <>
+  306 								pcap_alloc_databuf: int (), <./libpcap/dlpisubs.c 317>
+  307 									malloc: <>
+  308 									strlcpy: <>
+  309 									pcap_strerror: 38
+  310 								pcap_read_dlpi: int (), <./libpcap/pcap-dlpi.c 190>
+  311 									getmsg: <>
+  312 									strlcpy: <>
+  313 									pcap_strerror: 38
+  314 									pcap_process_pkts: int (), <./libpcap/dlpisubs.c 120>
+  315 										memcpy: <>
+  316 										stat: <>
+  317 										min: <>
+  318 										bpf_filter: <>
+  319 										gettimeofday: <>
+  320 								pcap_inject_dlpi: int (), <./libpcap/pcap-dlpi.c 247>
+  321 									write: <>
+  322 									snprintf: 12
+  323 									pcap_strerror: 38
+  324 									dlrawdatareq: int (), <./libpcap/pcap-dlpi.c 1321>
+  325 										MAKE_DL_PRIMITIVES: <>
+  326 										putmsg: <>
+  327 									strlcpy: <>
+  328 								install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  329 								pcap_getnonblock_fd: 151
+  330 								pcap_setnonblock_fd: 155
+  331 								pcap_stats_dlpi: int (), <./libpcap/dlpisubs.c 80>
+  332 									stat: <>
+  333 								pcap_cleanup_dlpi: void (), <./libpcap/pcap-dlpi.c 323>
+  334 									close: <>
+  335 									pcap_cleanup_live_common: 130
+  336 							strstr: <>
+  337 							dag_create: pcap_t * (), <./libpcap/pcap-dag.c 838>
+  338 								pcap_create_common: 120
+  339 								dag_activate: int (), <./libpcap/pcap-dag.c 588>
+  340 									snprintf: 12
+  341 									pcap_strerror: 38
+  342 									malloc: <>
+  343 									strlen: <>
+  344 									dag_parse_name: <>
+  345 									strncmp: <>
+  346 									strcpy: <>
+  347 									strcat: <>
+  348 									dag_open: <>
+  349 									dag_attach_stream: <>
+  350 									dag_get_stream_poll: <>
+  351 									dag_set_stream_poll: <>
+  352 									dag_mmap: <>
+  353 									dag_configure: <>
+  354 									dag_start_stream: <>
+  355 									dag_start: <>
+  356 									dag_info: <>
+  357 									LT_FCS_DATALINK_EXT: <>
+  358 									getenv: <>
+  359 									atoi: <>
+  360 									dag_get_datalink: int (), <./libpcap/pcap-dag.c 1004>
+  361 										memset: <>
+  362 										malloc: <>
+  363 										snprintf: 12
+  364 										pcap_strerror: 38
+  365 										dag_get_stream_erf_types: <>
+  366 										dag_get_erf_types: <>
+  367 										dag_linktype: <>
+  368 									new_pcap_dag: int (), <./libpcap/pcap-dag.c 166>
+  369 										malloc: <>
+  370 										atexit: <>
+  371 										atexit_handler: void (), <./libpcap/pcap-dag.c 154>
+  372 											getpid: <>
+  373 											dag_platform_cleanup: void (), <./libpcap/pcap-dag.c 128>
+  374 												dag_stop_stream: <>
+  375 												fprintf: <>
+  376 												strerror: <>
+  377 												dag_detach_stream: <>
+  378 												dag_stop: <>
+  379 												dag_close: <>
+  380 												delete_pcap_dag: void (), <./libpcap/pcap-dag.c 105>
+  381 												pcap_cleanup_live_common: 130
+  382 											delete_pcap_dag: 380
+  383 										getpid: <>
+  384 									free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  385 									dag_read: int (), <./libpcap/pcap-dag.c 226>
+  386 										dag_advance_stream: <>
+  387 										dag_offset: <>
+  388 										ntohs: <>
+  389 										strncpy: <>
+  390 										stat: <>
+  391 										dag_erf_ext_header_count: unsigned int (), <./libpcap/pcap-dag.c 189>
+  392 										ntohl: <>
+  393 										htons: <>
+  394 										memcpy: <>
+  395 										bpf_filter: <>
+  396 										IS_BIGENDIAN: <>
+  397 										SWAPLL: <>
+  398 									dag_inject: int (), <./libpcap/pcap-dag.c 570>
+  399 										strlcpy: <>
+  400 									dag_setfilter: int (), <./libpcap/pcap-dag.c 928>
+  401 										strncpy: <>
+  402 										install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  403 									dag_set_datalink: int (), <./libpcap/pcap-dag.c 949>
+  404 									pcap_getnonblock_fd: 151
+  405 									dag_setnonblock: int (), <./libpcap/pcap-dag.c 957>
+  406 										pcap_setnonblock_fd: 155
+  407 										dag_get_stream_poll: <>
+  408 										snprintf: 12
+  409 										pcap_strerror: 38
+  410 										dag_set_stream_poll: <>
+  411 									dag_stats: int (), <./libpcap/pcap-dag.c 851>
+  412 										stat: <>
+  413 									dag_platform_cleanup: 373
+  414 									stat: <>
+  415 									dag_stop_stream: <>
+  416 									fprintf: <>
+  417 									strerror: <>
+  418 									dag_detach_stream: <>
+  419 									dag_stop: <>
+  420 									dag_close: <>
+  421 									delete_pcap_dag: 380
+  422 									pcap_cleanup_live_common: 130
+  423 							snf_create: pcap_t * (), <./libpcap/pcap-snf.c 262>
+  424 								snf_init: <>
+  425 								snf_getifaddrs: <>
+  426 								strlen: <>
+  427 								strncmp: <>
+  428 								snf_freeifaddrs: <>
+  429 								sscanf: <>
+  430 								pcap_create_common: 120
+  431 								snf_activate: int (), <./libpcap/pcap-snf.c 180>
+  432 									snprintf: 12
+  433 									pcap_strerror: 38
+  434 									getenv: <>
+  435 									atoi: <>
+  436 									snf_open: <>
+  437 									snf_ring_open: <>
+  438 									snf_start: <>
+  439 									snf_read: int (), <./libpcap/pcap-snf.c 97>
+  440 										snf_ring_recv: <>
+  441 										snprintf: 12
+  442 										pcap_strerror: 38
+  443 										bpf_filter: <>
+  444 										snf_timestamp_to_timeval: inline struct timeval (), <./libpcap/pcap-snf.c 85>
+  445 									snf_inject: int (), <./libpcap/pcap-snf.c 172>
+  446 										strlcpy: <>
+  447 									snf_setfilter: int (), <./libpcap/pcap-snf.c 151>
+  448 										strncpy: <>
+  449 										install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  450 									snf_set_datalink: int (), <./libpcap/pcap-snf.c 27>
+  451 									snf_getnonblock: int (), <./libpcap/pcap-snf.c 62>
+  452 									snf_setnonblock: int (), <./libpcap/pcap-snf.c 68>
+  453 									snf_pcap_stats: int (), <./libpcap/pcap-snf.c 34>
+  454 										snf_ring_getstats: <>
+  455 										snprintf: 12
+  456 										pcap_strerror: 38
+  457 									snf_platform_cleanup: void (), <./libpcap/pcap-snf.c 51>
+  458 										snf_ring_close: <>
+  459 										snf_close: <>
+  460 										pcap_cleanup_live_common: 130
+  461 									stat: <>
+  462 							pcap_activate_bpf: int (), <./libpcap/pcap-bpf.c 1520>
+  463 								bpf_open: int (), <./libpcap/pcap-bpf.c 461>
+  464 									bpf_load: int (), <./libpcap/pcap-bpf.c 1203>
+  465 										major: <>
+  466 										bpf_odminit: int (), <./libpcap/pcap-bpf.c 1146>
+  467 											odm_initialize: <>
+  468 											odm_err_msg: <>
+  469 											snprintf: 12
+  470 											odm_lock: <>
+  471 											odm_terminate: <>
+  472 										genmajor: <>
+  473 										snprintf: 12
+  474 										pcap_strerror: 38
+  475 										bpf_odmcleanup: int (), <./libpcap/pcap-bpf.c 1173>
+  476 											odm_unlock: <>
+  477 											odm_err_msg: <>
+  478 											snprintf: 12
+  479 											odm_terminate: <>
+  480 										getminor: <>
+  481 										genminor: <>
+  482 										stat: <>
+  483 										getmajor: <>
+  484 										sprintf: <>
+  485 										unlink: <>
+  486 										mknod: <>
+  487 										domakedev: <>
+  488 										memset: <>
+  489 										sysconfig: <>
+  490 										strerror: <>
+  491 									open: <>
+  492 									snprintf: 12
+  493 									pcap_strerror: 38
+  494 								ioctl: <>
+  495 								snprintf: 12
+  496 								pcap_strerror: 38
+  497 								strdup: <>
+  498 								uname: <>
+  499 								strncmp: <>
+  500 								socket: <>
+  501 								strlcpy: <>
+  502 								close: <>
+  503 								malloc: <>
+  504 								strlen: <>
+  505 								strcpy: <>
+  506 								strcat: <>
+  507 								free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  508 								pcap_cleanup_zbuf: void (), <./libpcap/pcap-bpf.c 266>
+  509 									munmap: <>
+  510 									pcap_cleanup_live_common: 130
+  511 								pcap_setnonblock_zbuf: int (), <./libpcap/pcap-bpf.c 230>
+  512 								pcap_getnonblock_zbuf: int (), <./libpcap/pcap-bpf.c 220>
+  513 								roundup: <>
+  514 								getpagesize: <>
+  515 								mmap: <>
+  516 								bzero: <>
+  517 								strncpy: <>
+  518 								check_setif_failure: int (), <./libpcap/pcap-bpf.c 1400>
+  519 									strncmp: <>
+  520 									socket: <>
+  521 									strlcpy: <>
+  522 									strlcat: <>
+  523 									ioctl: <>
+  524 									snprintf: 12
+  525 									pcap_strerror: 38
+  526 									close: <>
+  527 								get_dlt_list: int (), <./libpcap/pcap-bpf.c 534>
+  528 									memset: <>
+  529 									ioctl: <>
+  530 									malloc: <>
+  531 									snprintf: 12
+  532 									pcap_strerror: 38
+  533 									free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  534 								isdigit: <>
+  535 								find_802_11: int (), <./libpcap/pcap-bpf.c 2472>
+  536 								remove_en: void (), <./libpcap/pcap-bpf.c 2537>
+  537 								remove_802_11: void (), <./libpcap/pcap-bpf.c 2580>
+  538 								monitor_mode: int (), <./libpcap/pcap-bpf.c 2320>
+  539 								IOCPARM_LEN: <>
+  540 								memset: <>
+  541 								strcmp: <>
+  542 								pcap_read_bpf: int (), <./libpcap/pcap-bpf.c 823>
+  543 									pcap_ack_zbuf: int (), <./libpcap/pcap-bpf.c 426>
+  544 										atomic_store_rel_int: <>
+  545 									pcap_next_zbuf: int (), <./libpcap/pcap-bpf.c 329>
+  546 										pcap_next_zbuf_shm: int (), <./libpcap/pcap-bpf.c 292>
+  547 											atomic_load_acq_int: <>
+  548 										clock_gettime: <>
+  549 										TSTOMILLI: <>
+  550 										ioctl: <>
+  551 										snprintf: 12
+  552 										strerror: <>
+  553 										FD_ZERO: <>
+  554 										FD_SET: <>
+  555 										select: <>
+  556 									read: <>
+  557 									snprintf: 12
+  558 									lseek: <>
+  559 									pcap_strerror: 38
+  560 									bpf_filter: <>
+  561 									pcap_svc2str: char * (), <./libpcap/pcap-bpf.c 791>
+  562 										snprintf: 12
+  563 									memset: <>
+  564 									BPF_WORDALIGN: <>
+  565 								pcap_inject_bpf: int (), <./libpcap/pcap-bpf.c 1096>
+  566 									write: <>
+  567 									ioctl: <>
+  568 									snprintf: 12
+  569 									pcap_strerror: 38
+  570 								pcap_setfilter_bpf: int (), <./libpcap/pcap-bpf.c 2623>
+  571 								pcap_setdirection_bpf: int (), <./libpcap/pcap-bpf.c 2686>
+  572 								pcap_set_datalink_bpf: int (), <./libpcap/pcap-bpf.c 2731>
+  573 								pcap_getnonblock_fd: 151
+  574 								pcap_setnonblock_fd: 155
+  575 								pcap_stats_bpf: int (), <./libpcap/pcap-bpf.c 761>
+  576 									ioctl: <>
+  577 									snprintf: 12
+  578 									pcap_strerror: 38
+  579 								pcap_cleanup_bpf: void (), <./libpcap/pcap-bpf.c 1308>
+  580 									socket: <>
+  581 									fprintf: <>
+  582 									strerror: <>
+  583 									memset: <>
+  584 									strncpy: <>
+  585 									ioctl: <>
+  586 									close: <>
+  587 									pcap_remove_from_pcaps_to_close: void (), <./libpcap/pcap.c 1177>
+  588 									munmap: <>
+  589 									free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  590 									pcap_cleanup_live_common: 130
+  591 								dag_platform_finddevs: int (), <./libpcap/pcap-dag.c 873>
+  592 									snprintf: 12
+  593 									dag_parse_name: <>
+  594 									dag_open: <>
+  595 									pcap_add_if: 108
+  596 									dag_rx_get_stream_count: <>
+  597 									dag_attach_stream: <>
+  598 									dag_detach_stream: <>
+  599 									dag_close: <>
+  600 								snf_platform_finddevs: int (), <./libpcap/pcap-snf.c 252>
+  601 								IFM_TYPE: <>
+  602 								IFM_SUBTYPE: <>
+  603 								pcap_do_addexit: int (), <./libpcap/pcap.c 1149>
+  604 									atexit: <>
+  605 									pcap_close_all: void (), <./libpcap/pcap.c 1140>
+  606 										pcap_close: void (), <./libpcap/pcap.c 1279>
+  607 											free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  608 									strncpy: <>
+  609 								pcap_add_to_pcaps_to_close: void (), <./libpcap/pcap.c 1170>
+  610 								pcap_freecode: 132
+  611 								install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  612 								strerror: <>
+  613 							pcap_can_set_rfmon_bpf: int (), <./libpcap/pcap-bpf.c 614>
+  614 								uname: <>
+  615 								strncmp: <>
+  616 								socket: <>
+  617 								snprintf: 12
+  618 								pcap_strerror: 38
+  619 								strlcpy: <>
+  620 								strlcat: <>
+  621 								ioctl: <>
+  622 								close: <>
+  623 								bpf_open: 463
+  624 								strncpy: <>
+  625 								get_dlt_list: 527
+  626 								find_802_11: int (), <./libpcap/pcap-bpf.c 2472>
+  627 								free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  628 								monitor_mode: int (), <./libpcap/pcap-bpf.c 2320>
+  629 							pcap_activate_dos: int (), <./libpcap/pcap-dos.c 162>
+  630 								pcap_cleanup_dos: void (), <./libpcap/pcap-dos.c 429>
+  631 									pcap_stats: int (), <./libpcap/pcap.c 1057>
+  632 									stat: <>
+  633 									get_device: struct device (), <./libpcap/pcap-dos.c 139>
+  634 									close_driver: void (), <./libpcap/pcap-dos.c 682>
+  635 										FLUSHK: <>
+  636 										k_free: <>
+  637 										pcibios_exit: <>
+  638 								pcap_read_dos: int (), <./libpcap/pcap-dos.c 322>
+  639 									pcap_read_one: int (), <./libpcap/pcap-dos.c 211>
+  640 										gettimeofday2: <>
+  641 										get_device: struct device (), <./libpcap/pcap-dos.c 139>
+  642 										PCAP_ASSERT: <>
+  643 										FLUSHK: <>
+  644 										min: <>
+  645 										bpf_filter: <>
+  646 										watt32_recv_hook: void (), <./libpcap/pcap-dos.c 824>
+  647 											memcpy: <>
+  648 											ARGSUSED: <>
+  649 										dbug_write: <>
+  650 										timercmp: <>
+  651 										kbhit: <>
+  652 										stat: <>
+  653 										printk: <>
+  654 								pcap_stats_dos: int (), <./libpcap/pcap-dos.c 343>
+  655 									get_device: struct device (), <./libpcap/pcap-dos.c 139>
+  656 									strcpy: <>
+  657 									FLUSHK: <>
+  658 									stat: <>
+  659 								pcap_sendpacket_dos: int (), <./libpcap/pcap-dos.c 872>
+  660 									get_device: struct device (), <./libpcap/pcap-dos.c 139>
+  661 								pcap_setfilter_dos: int (), <./libpcap/pcap-dos.c 402>
+  662 								init_watt32: int (), <./libpcap/pcap-dos.c 907>
+  663 									sock_exit: <>
+  664 									getenv: <>
+  665 									atoi: <>
+  666 									dbug_init: <>
+  667 									pcap_init_hook: void (), <./libpcap/pcap-dos.c 887>
+  668 									null_print: void (), <./libpcap/pcap-dos.c 899>
+  669 									strncmp: <>
+  670 									sock_init: <>
+  671 									printf: <>
+  672 									aton: <>
+  673 									sprintf: <>
+  674 									pcap_recv_hook: void * (), <./libpcap/pcap-dos.c 840>
+  675 										pcap_read_dos: 638
+  676 										watt32_recv_hook: 646
+  677 									pcap_xmit_hook: int (), <./libpcap/pcap-dos.c 855>
+  678 										dbug_write: <>
+  679 									memcpy: <>
+  680 									pkt_get_mtu: <>
+  681 								first_init: int (), <./libpcap/pcap-dos.c 750>
+  682 									k_calloc: <>
+  683 									strcpy: <>
+  684 									setup_signals: void (), <./libpcap/pcap-dos.c 708>
+  685 										signal: <>
+  686 									exc_handler: void (), <./libpcap/pcap-dos.c 715>
+  687 										disable_irq: <>
+  688 										irq_eoi_cmd: <>
+  689 										fputs: <>
+  690 										fprintf: <>
+  691 										pcap_cleanup_dos: 630
+  692 									init_32bit: void (), <./libpcap/pcap-dos.c 803>
+  693 										pci_init: <>
+  694 									open_driver: struct device (), <./libpcap/pcap-dos.c 604>
+  695 									k_free: <>
+  696 									get_rxbuf: BYTE * (), <./libpcap/pcap-dos.c 1325>
+  697 										pktq_in_index: int (), <./libpcap/pcap-dos.c 1433>
+  698 										writew: <>
+  699 										pktq_in_elem: struct rx_elem (), <./libpcap/pcap-dos.c 1445>
+  700 										pktq_clear: void (), <./libpcap/pcap-dos.c 1461>
+  701 									peek_rxbuf: int (), <./libpcap/pcap-dos.c 1283>
+  702 										PCAP_ASSERT: <>
+  703 										pktq_check: int (), <./libpcap/pcap-dos.c 1365>
+  704 										DISABLE: <>
+  705 										pktq_out_elem: struct rx_elem (), <./libpcap/pcap-dos.c 1453>
+  706 										pktq_in_elem: struct rx_elem (), <./libpcap/pcap-dos.c 1445>
+  707 										ENABLE: <>
+  708 									release_rxbuf: int (), <./libpcap/pcap-dos.c 1308>
+  709 										pktq_out_elem: struct rx_elem (), <./libpcap/pcap-dos.c 1453>
+  710 										PCAP_ASSERT: <>
+  711 										ARGSUSED: <>
+  712 										pktq_inc_out: int (), <./libpcap/pcap-dos.c 1421>
+  713 									pktq_init: int (), <./libpcap/pcap-dos.c 1388>
+  714 										PCAP_ASSERT: <>
+  715 								atexit: <>
+  716 								close_driver: 634
+  717 								stricmp: <>
+  718 								snprintf: 12
+  719 							strlen: <>
+  720 							wcslen: <>
+  721 							malloc: <>
+  722 							snprintf: 12
+  723 							free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  724 							pcap_activate_win32: int (), <./libpcap/pcap-win32.c 453>
+  725 								wsockinit: int (), <./libpcap/pcap-win32.c 99>
+  726 									MAKEWORD: <>
+  727 									WSAStartup: <>
+  728 								PacketOpenAdapter: <>
+  729 								snprintf: 12
+  730 								pcap_win32strerror: char * (), <./libpcap/pcap.c 940>
+  731 									GetLastError: <>
+  732 									FormatMessage: <>
+  733 									strlen: <>
+  734 									strchr: <>
+  735 									snprintf: 12
+  736 								PacketGetNetType: <>
+  737 								malloc: <>
+  738 								PacketSetHwFilter: <>
+  739 								PacketAllocatePacket: <>
+  740 								PacketSetBuff: <>
+  741 								pcap_strerror: 38
+  742 								PacketInitPacket: <>
+  743 								PacketSetMinToCopy: <>
+  744 								strstr: <>
+  745 								RegOpenKeyEx: <>
+  746 								RegQueryValueEx: <>
+  747 								RegCloseKey: <>
+  748 								PacketSetSnapLen: <>
+  749 								PacketSetReadTimeout: <>
+  750 								pcap_read_win32_dag: int (), <./libpcap/pcap-win32.c 249>
+  751 									PacketReceivePacket: <>
+  752 									snprintf: 12
+  753 									SWAPS: <>
+  754 									stat: <>
+  755 									bpf_filter: <>
+  756 								pcap_setfilter_win32_dag: int (), <./libpcap/pcap-win32.c 783>
+  757 									strncpy: <>
+  758 									install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  759 									snprintf: 12
+  760 									pcap_strerror: 38
+  761 								pcap_read_win32_npf: int (), <./libpcap/pcap-win32.c 164>
+  762 									PacketReceivePacket: <>
+  763 									snprintf: 12
+  764 									BPF_WORDALIGN: <>
+  765 								pcap_setfilter_win32_npf: int (), <./libpcap/pcap-win32.c 757>
+  766 									PacketSetBpf: <>
+  767 									snprintf: 12
+  768 									pcap_win32strerror: 730
+  769 								pcap_inject_win32: int (), <./libpcap/pcap-win32.c 410>
+  770 									PacketAllocatePacket: <>
+  771 									snprintf: 12
+  772 									PacketInitPacket: <>
+  773 									PacketSendPacket: <>
+  774 									PacketFreePacket: <>
+  775 								pcap_getnonblock_win32: int (), <./libpcap/pcap-win32.c 805>
+  776 								pcap_setnonblock_win32: int (), <./libpcap/pcap-win32.c 816>
+  777 									PacketSetReadTimeout: <>
+  778 									snprintf: 12
+  779 									pcap_win32strerror: 730
+  780 								pcap_stats_win32: int (), <./libpcap/pcap-win32.c 115>
+  781 									PacketGetStats: <>
+  782 									snprintf: 12
+  783 									pcap_win32strerror: 730
+  784 								pcap_setbuff_win32: int (), <./libpcap/pcap-win32.c 128>
+  785 									PacketSetBuff: <>
+  786 									snprintf: 12
+  787 								pcap_setmode_win32: int (), <./libpcap/pcap-win32.c 140>
+  788 									PacketSetMode: <>
+  789 									snprintf: 12
+  790 								pcap_setmintocopy_win32: int (), <./libpcap/pcap-win32.c 153>
+  791 									PacketSetMinToCopy: <>
+  792 									snprintf: 12
+  793 								pcap_cleanup_win32: void (), <./libpcap/pcap-win32.c 439>
+  794 									PacketCloseAdapter: <>
+  795 									PacketFreePacket: <>
+  796 									pcap_cleanup_live_common: 130
+  797 							pcap_activate_pf: int (), <./libpcap/pcap-pf.c 295>
+  798 								pfopen: <>
+  799 								snprintf: 12
+  800 								pcap_strerror: 38
+  801 								ioctl: <>
+  802 								malloc: <>
+  803 								memset: <>
+  804 								strlcpy: <>
+  805 								pcap_read_pf: int (), <./libpcap/pcap-pf.c 88>
+  806 									read: <>
+  807 									lseek: <>
+  808 									snprintf: 12
+  809 									pcap_strerror: 38
+  810 									memcpy: <>
+  811 									ENALIGN: <>
+  812 									bpf_filter: <>
+  813 								pcap_inject_pf: int (), <./libpcap/pcap-pf.c 227>
+  814 									write: <>
+  815 									snprintf: 12
+  816 									pcap_strerror: 38
+  817 								pcap_setfilter_pf: int (), <./libpcap/pcap-pf.c 521>
+  818 									ioctl: <>
+  819 									snprintf: 12
+  820 									pcap_strerror: 38
+  821 									fprintf: <>
+  822 									install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  823 								pcap_getnonblock_fd: 151
+  824 								pcap_setnonblock_fd: 155
+  825 								pcap_stats_pf: int (), <./libpcap/pcap-pf.c 241>
+  826 								pcap_cleanup_live_common: 130
+  827 							septel_create: pcap_t * (), <./libpcap/pcap-septel.c 224>
+  828 								pcap_create_common: 120
+  829 								septel_activate: pcap_t * (), <./libpcap/pcap-septel.c 202>
+  830 									septel_read: int (), <./libpcap/pcap-septel.c 67>
+  831 										GCT_grab: <>
+  832 										relm: <>
+  833 										get_param: <>
+  834 										bpf_filter: <>
+  835 										gettimeofday: <>
+  836 										stat: <>
+  837 									septel_inject: int (), <./libpcap/pcap-septel.c 188>
+  838 										strlcpy: <>
+  839 									septel_setfilter: int (), <./libpcap/pcap-septel.c 263>
+  840 										strncpy: <>
+  841 										install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  842 										snprintf: 12
+  843 										pcap_strerror: 38
+  844 									pcap_getnonblock_fd: 151
+  845 									septel_setnonblock: int (), <./libpcap/pcap-septel.c 287>
+  846 									septel_stats: int (), <./libpcap/pcap-septel.c 235>
+  847 										stat: <>
+  848 							bt_create: pcap_t * (), <./libpcap/pcap-bt-linux.c 138>
+  849 								pcap_create_common: 120
+  850 								bt_activate: int (), <./libpcap/pcap-bt-linux.c 151>
+  851 									sscanf: <>
+  852 									snprintf: 12
+  853 									bt_read_linux: int (), <./libpcap/pcap-bt-linux.c 263>
+  854 										memset: <>
+  855 										recvmsg: <>
+  856 										snprintf: 12
+  857 										strerror: <>
+  858 										CMSG_FIRSTHDR: <>
+  859 										CMSG_DATA: <>
+  860 										CMSG_NXTHDR: <>
+  861 										htonl: <>
+  862 									bt_inject_linux: int (), <./libpcap/pcap-bt-linux.c 324>
+  863 										snprintf: 12
+  864 									bt_setfilter_linux: int (), <./libpcap/pcap-bt-linux.c 361>
+  865 									bt_setdirection_linux: int (), <./libpcap/pcap-bt-linux.c 368>
+  866 									pcap_getnonblock_fd: 151
+  867 									pcap_setnonblock_fd: 155
+  868 									bt_stats_linux: int (), <./libpcap/pcap-bt-linux.c 333>
+  869 										ioctl: <>
+  870 										snprintf: 12
+  871 										strerror: <>
+  872 									socket: <>
+  873 									strerror: <>
+  874 									malloc: <>
+  875 									pcap_strerror: 38
+  876 									setsockopt: <>
+  877 									memset: <>
+  878 									bind: <>
+  879 									pcap_cleanup_live_common: 130
+  880 							can_create: pcap_t * (), <./libpcap/pcap-can-linux.c 76>
+  881 								pcap_create_common: 120
+  882 								can_activate: int (), <./libpcap/pcap-can-linux.c 90>
+  883 									can_read_linux: int (), <./libpcap/pcap-can-linux.c 165>
+  884 										memset: <>
+  885 										recvmsg: <>
+  886 										snprintf: 12
+  887 										strerror: <>
+  888 										htonl: <>
+  889 										gettimeofday: <>
+  890 									can_inject_linux: int (), <./libpcap/pcap-can-linux.c 219>
+  891 										snprintf: 12
+  892 									can_setfilter_linux: int (), <./libpcap/pcap-can-linux.c 240>
+  893 									can_setdirection_linux: int (), <./libpcap/pcap-can-linux.c 248>
+  894 										snprintf: 12
+  895 									pcap_getnonblock_fd: 151
+  896 									pcap_setnonblock_fd: 155
+  897 									can_stats_linux: int (), <./libpcap/pcap-can-linux.c 229>
+  898 									socket: <>
+  899 									snprintf: 12
+  900 									strerror: <>
+  901 									memset: <>
+  902 									strncpy: <>
+  903 									ioctl: <>
+  904 									pcap_strerror: 38
+  905 									pcap_cleanup_live_common: 130
+  906 									malloc: <>
+  907 									bind: <>
+  908 							usb_create: pcap_t * (), <./libpcap/pcap-usb-linux.c 281>
+  909 								pcap_create_common: 120
+  910 								usb_activate: int (), <./libpcap/pcap-usb-linux.c 294>
+  911 									usb_inject_linux: int (), <./libpcap/pcap-usb-linux.c 609>
+  912 										snprintf: 12
+  913 									usb_setfilter_linux: int (), <./libpcap/pcap-usb-linux.c 692>
+  914 									usb_setdirection_linux: int (), <./libpcap/pcap-usb-linux.c 698>
+  915 									pcap_getnonblock_fd: 151
+  916 									pcap_setnonblock_fd: 155
+  917 									sscanf: <>
+  918 									snprintf: 12
+  919 									open: <>
+  920 									close: <>
+  921 									usb_mmap: int (), <./libpcap/pcap-usb-linux.c 199>
+  922 										ioctl: <>
+  923 										mmap: <>
+  924 									usb_stats_linux_bin: int (), <./libpcap/pcap-usb-linux.c 706>
+  925 										ioctl: <>
+  926 										snprintf: 12
+  927 										strerror: <>
+  928 									usb_read_linux_mmap: int (), <./libpcap/pcap-usb-linux.c 781>
+  929 										ioctl: <>
+  930 										snprintf: 12
+  931 										strerror: <>
+  932 									usb_cleanup_linux_mmap: void (), <./libpcap/pcap-usb-linux.c 860>
+  933 										munmap: <>
+  934 										pcap_cleanup_live_common: 130
+  935 									probe_devices: void (), <./libpcap/pcap-usb-linux.c 226>
+  936 										snprintf: 12
+  937 										opendir: <>
+  938 										readdir: <>
+  939 										open: <>
+  940 										ioctl: <>
+  941 										close: <>
+  942 										closedir: <>
+  943 									usb_read_linux_bin: int (), <./libpcap/pcap-usb-linux.c 729>
+  944 										ioctl: <>
+  945 										snprintf: 12
+  946 										strerror: <>
+  947 									strerror: <>
+  948 									usb_stats_linux: int (), <./libpcap/pcap-usb-linux.c 617>
+  949 										snprintf: 12
+  950 										open: <>
+  951 										strerror: <>
+  952 										read: <>
+  953 										close: <>
+  954 										sscanf: <>
+  955 										strcmp: <>
+  956 									usb_read_linux: int (), <./libpcap/pcap-usb-linux.c 417>
+  957 										read: <>
+  958 										snprintf: 12
+  959 										strerror: <>
+  960 										sscanf: <>
+  961 										gettimeofday: <>
+  962 										strtoul: <>
+  963 										htols: <>
+  964 										ascii_to_int: inline int (), <./libpcap/pcap-usb-linux.c 406>
+  965 									malloc: <>
+  966 									pcap_strerror: 38
+  967 							pcap_activate_linux: int (), <./libpcap/pcap-linux.c 1114>
+  968 								pcap_inject_linux: int (), <./libpcap/pcap-linux.c 1615>
+  969 									strlcpy: <>
+  970 									send: <>
+  971 									snprintf: 12
+  972 									pcap_strerror: 38
+  973 								pcap_setfilter_linux: int (), <./libpcap/pcap-linux.c 2277>
+  974 									pcap_setfilter_linux_common: int (), <./libpcap/pcap-linux.c 2142>
+  975 										strncpy: <>
+  976 										install_bpf_program: int (), <./libpcap/optimize.c 2304>
+  977 										fprintf: <>
+  978 										fix_program: int (), <./libpcap/pcap-linux.c 4617>
+  979 											malloc: <>
+  980 											snprintf: 12
+  981 											pcap_strerror: 38
+  982 											memcpy: <>
+  983 											BPF_CLASS: switch (), <./libpcap/net/bpf_filter.c 546>
+  984 											BPF_MODE: <>
+  985 											fix_offset: int (), <./libpcap/pcap-linux.c 4717>
+  986 										set_kernel_filter: int (), <./libpcap/pcap-linux.c 4748>
+  987 											setsockopt: <>
+  988 											fcntl: <>
+  989 											recv: <>
+  990 											reset_kernel_filter: int (), <./libpcap/pcap-linux.c 4850>
+  991 												setsockopt: <>
+  992 											snprintf: 12
+  993 											pcap_strerror: 38
+  994 										pcap_strerror: 38
+  995 										reset_kernel_filter: 990
+  996 										free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+  997 								pcap_setdirection_linux: int (), <./libpcap/pcap-linux.c 2288>
+  998 									snprintf: 12
+  999 								pcap_getnonblock_fd: 151
+ 1000 								pcap_setnonblock_fd: 155
+ 1001 								pcap_cleanup_linux: void (), <./libpcap/pcap-linux.c 989>
+ 1002 									memset: <>
+ 1003 									strncpy: <>
+ 1004 									ioctl: <>
+ 1005 									fprintf: <>
+ 1006 									strerror: <>
+ 1007 									nl80211_init: int (), <./libpcap/pcap-linux.c 511>
+ 1008 										nl_handle_alloc: <>
+ 1009 										snprintf: 12
+ 1010 										genl_connect: <>
+ 1011 										genl_ctrl_alloc_cache: <>
+ 1012 										genl_ctrl_search_by_name: <>
+ 1013 										nl_cache_free: <>
+ 1014 										nl_handle_destroy: <>
+ 1015 									del_mon_if: int (), <./libpcap/pcap-linux.c 640>
+ 1016 										iface_get_id: int (), <./libpcap/pcap-linux.c 3621>
+ 1017 											memset: <>
+ 1018 											strncpy: <>
+ 1019 											ioctl: <>
+ 1020 											snprintf: 12
+ 1021 											pcap_strerror: 38
+ 1022 										nlmsg_alloc: <>
+ 1023 										snprintf: 12
+ 1024 										genlmsg_put: <>
+ 1025 										genl_family_get_id: <>
+ 1026 										NLA_PUT_U32: <>
+ 1027 										nl_send_auto_complete: <>
+ 1028 										nlmsg_free: <>
+ 1029 										strerror: <>
+ 1030 										nl_wait_for_ack: <>
+ 1031 									nl80211_cleanup: void (), <./libpcap/pcap-linux.c 550>
+ 1032 										genl_family_put: <>
+ 1033 										nl_cache_free: <>
+ 1034 										nl_handle_destroy: <>
+ 1035 									pcap_remove_from_pcaps_to_close: 587
+ 1036 									free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1037 									pcap_cleanup_live_common: 130
+ 1038 								pcap_read_linux: int (), <./libpcap/pcap-linux.c 1266>
+ 1039 									pcap_read_packet: int (), <./libpcap/pcap-linux.c 1281>
+ 1040 										recvmsg: <>
+ 1041 										recvfrom: <>
+ 1042 										snprintf: 12
+ 1043 										pcap_strerror: 38
+ 1044 										map_packet_type_to_sll_type: short int (), <./libpcap/pcap-linux.c 2316>
+ 1045 											htons: <>
+ 1046 										htons: <>
+ 1047 										memcpy: <>
+ 1048 										CMSG_FIRSTHDR: <>
+ 1049 										CMSG_NXTHDR: <>
+ 1050 										CMSG_LEN: <>
+ 1051 										CMSG_DATA: <>
+ 1052 										memmove: <>
+ 1053 										bpf_filter: <>
+ 1054 										ioctl: <>
+ 1055 								pcap_stats_linux: int (), <./libpcap/pcap-linux.c 1666>
+ 1056 									linux_if_drops: long int (), <./libpcap/pcap-linux.c 925>
+ 1057 										strlen: <>
+ 1058 										fopen: <>
+ 1059 										fgets: <>
+ 1060 										strstr: <>
+ 1061 										strtol: <>
+ 1062 										fclose: <>
+ 1063 									stat: <>
+ 1064 									getsockopt: <>
+ 1065 									snprintf: 12
+ 1066 									pcap_strerror: 38
+ 1067 								strcmp: <>
+ 1068 								snprintf: 12
+ 1069 								strdup: <>
+ 1070 								pcap_strerror: 38
+ 1071 								linux_if_drops: 1056
+ 1072 								activate_new: int (), <./libpcap/pcap-linux.c 2668>
+ 1073 									strcmp: <>
+ 1074 									socket: <>
+ 1075 									htons: <>
+ 1076 									snprintf: 12
+ 1077 									pcap_strerror: 38
+ 1078 									iface_get_id: 1016
+ 1079 									enter_rfmon_mode: int (), <./libpcap/pcap-linux.c 4313>
+ 1080 										enter_rfmon_mode_mac80211: int (), <./libpcap/pcap-linux.c 720>
+ 1081 											get_mac80211_phydev: int (), <./libpcap/pcap-linux.c 468>
+ 1082 												asprintf: int (), <./libpcap/missing/snprintf.c 498>
+ 1083 													va_start: <>
+ 1084 													vasprintf: int (), <./libpcap/missing/snprintf.c 558>
+ 1085 														vasnprintf: int (), <./libpcap/missing/snprintf.c 567>
+ 1086 															malloc: <>
+ 1087 															as_append_char: int (), <./libpcap/missing/snprintf.c 121>
+ 1088 																as_reserve: int (), <./libpcap/missing/snprintf.c 98>
+ 1089 																	max: , <./libpcap/gencode.c 5716>
+ 1090 																	min: <>
+ 1091 																	realloc: <>
+ 1092 															as_reserve: 1088
+ 1093 															xyzprintf: 18
+ 1094 															free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1095 															realloc: <>
+ 1096 													malloc: <>
+ 1097 													abort: <>
+ 1098 													vsprintf: <>
+ 1099 													strcmp: <>
+ 1100 													free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1101 													va_end: <>
+ 1102 												snprintf: 12
+ 1103 												readlink: <>
+ 1104 												free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1105 												strerror: <>
+ 1106 											nl80211_init: 1007
+ 1107 											snprintf: 12
+ 1108 											add_mon_if: int (), <./libpcap/pcap-linux.c 558>
+ 1109 												iface_get_id: 1016
+ 1110 												nlmsg_alloc: <>
+ 1111 												snprintf: 12
+ 1112 												genlmsg_put: <>
+ 1113 												genl_family_get_id: <>
+ 1114 												NLA_PUT_U32: <>
+ 1115 												NLA_PUT_STRING: <>
+ 1116 												nl_send_auto_complete: <>
+ 1117 												nlmsg_free: <>
+ 1118 												strerror: <>
+ 1119 												nl_wait_for_ack: <>
+ 1120 											strdup: <>
+ 1121 											nl80211_cleanup: 1031
+ 1122 											nanosleep: <>
+ 1123 											memset: <>
+ 1124 											strncpy: <>
+ 1125 											ioctl: <>
+ 1126 											strerror: <>
+ 1127 											del_mon_if: 1015
+ 1128 											pcap_add_to_pcaps_to_close: 609
+ 1129 										enter_rfmon_mode_wext: int (), <./libpcap/pcap-linux.c 3750>
+ 1130 											has_wext: int (), <./libpcap/pcap-linux.c 3704>
+ 1131 												strncpy: <>
+ 1132 												ioctl: <>
+ 1133 												snprintf: 12
+ 1134 												pcap_strerror: 38
+ 1135 											memset: <>
+ 1136 											strncpy: <>
+ 1137 											ioctl: <>
+ 1138 											snprintf: 12
+ 1139 											pcap_strerror: 38
+ 1140 											malloc: <>
+ 1141 											free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1142 											strcmp: <>
+ 1143 											pcap_do_addexit: 603
+ 1144 											memcpy: <>
+ 1145 											pcap_add_to_pcaps_to_close: 609
+ 1146 									close: <>
+ 1147 									iface_get_arptype: int (), <./libpcap/pcap-linux.c 4593>
+ 1148 										memset: <>
+ 1149 										strncpy: <>
+ 1150 										ioctl: <>
+ 1151 										snprintf: 12
+ 1152 										pcap_strerror: 38
+ 1153 									map_arphrd_to_dlt: void (), <./libpcap/pcap-linux.c 2359>
+ 1154 										malloc: <>
+ 1155 									strncmp: <>
+ 1156 									free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1157 									iface_bind: int (), <./libpcap/pcap-linux.c 3643>
+ 1158 										memset: <>
+ 1159 										htons: <>
+ 1160 										bind: <>
+ 1161 										snprintf: 12
+ 1162 										pcap_strerror: 38
+ 1163 										getsockopt: <>
+ 1164 									memset: <>
+ 1165 									setsockopt: <>
+ 1166 									strncpy: <>
+ 1167 								activate_mmap: int (), <./libpcap/pcap-linux.c 2954>
+ 1168 									malloc: <>
+ 1169 									snprintf: 12
+ 1170 									pcap_strerror: 38
+ 1171 									prepare_tpacket_socket: int (), <./libpcap/pcap-linux.c 3005>
+ 1172 										getsockopt: <>
+ 1173 										snprintf: 12
+ 1174 										pcap_strerror: 38
+ 1175 										setsockopt: <>
+ 1176 									free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1177 									create_ring: int (), <./libpcap/pcap-linux.c 3056>
+ 1178 										TPACKET_ALIGN: <>
+ 1179 										getpagesize: <>
+ 1180 										setsockopt: <>
+ 1181 										snprintf: 12
+ 1182 										pcap_strerror: 38
+ 1183 										mmap: <>
+ 1184 										destroy_ring: void (), <./libpcap/pcap-linux.c 3160>
+ 1185 											memset: <>
+ 1186 											setsockopt: <>
+ 1187 											munmap: <>
+ 1188 										malloc: <>
+ 1189 										RING_GET_FRAME: <>
+ 1190 									pcap_read_linux_mmap: int (), <./libpcap/pcap-linux.c 3280>
+ 1191 										pcap_get_ring_frame: inline union thdr * (), <./libpcap/pcap-linux.c 3253>
+ 1192 										poll: <>
+ 1193 										snprintf: 12
+ 1194 										pcap_strerror: 38
+ 1195 										recv: <>
+ 1196 										strerror: <>
+ 1197 										bpf_filter: <>
+ 1198 										TPACKET_ALIGN: <>
+ 1199 										map_packet_type_to_sll_type: 1044
+ 1200 										htons: <>
+ 1201 										memcpy: <>
+ 1202 										memmove: <>
+ 1203 									pcap_cleanup_linux_mmap: void (), <./libpcap/pcap-linux.c 3205>
+ 1204 										destroy_ring: 1184
+ 1205 										free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1206 										pcap_cleanup_linux: 1001
+ 1207 									pcap_setfilter_linux_mmap: int (), <./libpcap/pcap-linux.c 3572>
+ 1208 										pcap_setfilter_linux_common: 974
+ 1209 										pcap_get_ring_frame: inline union thdr * (), <./libpcap/pcap-linux.c 3253>
+ 1210 									pcap_setnonblock_mmap: int (), <./libpcap/pcap-linux.c 3224>
+ 1211 									pcap_getnonblock_mmap: int (), <./libpcap/pcap-linux.c 3217>
+ 1212 									pcap_oneshot_mmap: void (), <./libpcap/pcap-linux.c 3194>
+ 1213 										memcpy: <>
+ 1214 								activate_old: int (), <./libpcap/pcap-linux.c 4352>
+ 1215 									socket: <>
+ 1216 									htons: <>
+ 1217 									snprintf: 12
+ 1218 									pcap_strerror: 38
+ 1219 									strcmp: <>
+ 1220 									strncpy: <>
+ 1221 									iface_bind_old: int (), <./libpcap/pcap-linux.c 4532>
+ 1222 										memset: <>
+ 1223 										strncpy: <>
+ 1224 										bind: <>
+ 1225 										snprintf: 12
+ 1226 										pcap_strerror: 38
+ 1227 										getsockopt: <>
+ 1228 									iface_get_arptype: 1147
+ 1229 									map_arphrd_to_dlt: 1153
+ 1230 									memset: <>
+ 1231 									ioctl: <>
+ 1232 									pcap_do_addexit: 603
+ 1233 									pcap_add_to_pcaps_to_close: 609
+ 1234 									uname: <>
+ 1235 									strncmp: <>
+ 1236 									iface_get_mtu: int (), <./libpcap/pcap-linux.c 4570>
+ 1237 										memset: <>
+ 1238 										strncpy: <>
+ 1239 										ioctl: <>
+ 1240 										snprintf: 12
+ 1241 										pcap_strerror: 38
+ 1242 								setsockopt: <>
+ 1243 								malloc: <>
+ 1244 							pcap_can_set_rfmon_linux: int (), <./libpcap/pcap-linux.c 834>
+ 1245 								strcmp: <>
+ 1246 								get_mac80211_phydev: 1081
+ 1247 								socket: <>
+ 1248 								htons: <>
+ 1249 								snprintf: 12
+ 1250 								pcap_strerror: 38
+ 1251 								strncpy: <>
+ 1252 								ioctl: <>
+ 1253 								close: <>
+ 1254 							strlcpy: <>
+ 1255 							pcap_activate_snit: int (), <./libpcap/pcap-snit.c 264>
+ 1256 								open: <>
+ 1257 								snprintf: 12
+ 1258 								pcap_strerror: 38
+ 1259 								ioctl: <>
+ 1260 								strncpy: <>
+ 1261 								nit_setflags: int (), <./libpcap/pcap-snit.c 230>
+ 1262 									ioctl: <>
+ 1263 									snprintf: 12
+ 1264 									pcap_strerror: 38
+ 1265 								malloc: <>
+ 1266 								strlcpy: <>
+ 1267 								pcap_read_snit: int (), <./libpcap/pcap-snit.c 113>
+ 1268 									read: <>
+ 1269 									snprintf: 12
+ 1270 									pcap_strerror: 38
+ 1271 									stat: <>
+ 1272 									bpf_filter: <>
+ 1273 								pcap_inject_snit: int (), <./libpcap/pcap-snit.c 207>
+ 1274 									putmsg: <>
+ 1275 									snprintf: 12
+ 1276 									pcap_strerror: 38
+ 1277 								install_bpf_program: int (), <./libpcap/optimize.c 2304>
+ 1278 								pcap_getnonblock_fd: 151
+ 1279 								pcap_setnonblock_fd: 155
+ 1280 								pcap_stats_snit: int (), <./libpcap/pcap-snit.c 88>
+ 1281 									stat: <>
+ 1282 								pcap_cleanup_live_common: 130
+ 1283 							pcap_activate_nit: int (), <./libpcap/pcap-nit.c 241>
+ 1284 								memset: <>
+ 1285 								socket: <>
+ 1286 								snprintf: 12
+ 1287 								pcap_strerror: 38
+ 1288 								strncpy: <>
+ 1289 								bind: <>
+ 1290 								nit_setflags: int (), <./libpcap/pcap-nit.c 212>
+ 1291 									memset: <>
+ 1292 									ioctl: <>
+ 1293 									snprintf: 12
+ 1294 									pcap_strerror: 38
+ 1295 								malloc: <>
+ 1296 								strlcpy: <>
+ 1297 								pcap_read_nit: int (), <./libpcap/pcap-nit.c 99>
+ 1298 									read: <>
+ 1299 									snprintf: 12
+ 1300 									pcap_strerror: 38
+ 1301 									stat: <>
+ 1302 									bpf_filter: <>
+ 1303 								pcap_inject_nit: int (), <./libpcap/pcap-nit.c 195>
+ 1304 									memset: <>
+ 1305 									strncpy: <>
+ 1306 									sendto: <>
+ 1307 									snprintf: 12
+ 1308 									pcap_strerror: 38
+ 1309 								install_bpf_program: int (), <./libpcap/optimize.c 2304>
+ 1310 								pcap_getnonblock_fd: 151
+ 1311 								pcap_setnonblock_fd: 155
+ 1312 								pcap_stats_nit: int (), <./libpcap/pcap-nit.c 75>
+ 1313 									stat: <>
+ 1314 								pcap_cleanup_live_common: 130
+ 1315 							pcap_activate_libdlpi: int (), <./libpcap/pcap-libdlpi.c 101>
+ 1316 								dlpi_open: <>
+ 1317 								pcap_libdlpi_err: void (), <./libpcap/pcap-libdlpi.c 355>
+ 1318 									snprintf: 12
+ 1319 									dlpi_strerror: <>
+ 1320 								dlpi_bind: <>
+ 1321 								dlpi_promiscon: <>
+ 1322 								fprintf: <>
+ 1323 								dlpi_strerror: <>
+ 1324 								dlpi_info: <>
+ 1325 								pcap_process_mactype: 291
+ 1326 								dlpi_fd: <>
+ 1327 								pcap_conf_bufmod: 299
+ 1328 								ioctl: <>
+ 1329 								snprintf: 12
+ 1330 								pcap_strerror: 38
+ 1331 								pcap_alloc_databuf: 306
+ 1332 								pcap_read_libdlpi: int (), <./libpcap/pcap-libdlpi.c 268>
+ 1333 									dlpi_recv: <>
+ 1334 									pcap_libdlpi_err: 1317
+ 1335 									dlpi_linkname: <>
+ 1336 									pcap_process_pkts: 314
+ 1337 								pcap_inject_libdlpi: int (), <./libpcap/pcap-libdlpi.c 319>
+ 1338 									dlpi_send: <>
+ 1339 									pcap_libdlpi_err: 1317
+ 1340 									dlpi_linkname: <>
+ 1341 								install_bpf_program: int (), <./libpcap/optimize.c 2304>
+ 1342 								pcap_getnonblock_fd: 151
+ 1343 								pcap_setnonblock_fd: 155
+ 1344 								pcap_stats_dlpi: 331
+ 1345 								pcap_cleanup_libdlpi: void (), <./libpcap/pcap-libdlpi.c 341>
+ 1346 									dlpi_close: <>
+ 1347 									pcap_cleanup_live_common: 130
+ 1348 						pcap_set_snaplen: 139
+ 1349 						pcap_set_promisc: int (), <./libpcap/pcap.c 285>
+ 1350 							pcap_check_activated: 137
+ 1351 						pcap_set_timeout: 136
+ 1352 						pcap_activate: int (), <./libpcap/pcap.c 321>
+ 1353 							snprintf: 12
+ 1354 							pcap_statustostr: const char * (), <./libpcap/pcap.c 970>
+ 1355 								snprintf: 12
+ 1356 							initialize_ops: 128
+ 1357 						snprintf: 12
+ 1358 						pcap_statustostr: 1354
+ 1359 						pcap_close: 606
+ 1360 					free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1361 					pcap_close: 606
+ 1362 					strdup: <>
+ 1363 					ISLOOPBACK: <>
+ 1364 					get_instance: int (), <./libpcap/inet.c 104>
+ 1365 						strcmp: <>
+ 1366 						strlen: <>
+ 1367 						isdigit: <>
+ 1368 						atoi: <>
+ 1369 			add_addr_to_iflist: int (), <./libpcap/inet.c 406>
+ 1370 				memset: <>
+ 1371 				strlcpy: <>
+ 1372 				socket: <>
+ 1373 				free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1374 				malloc: <>
+ 1375 				ioctl: <>
+ 1376 				close: <>
+ 1377 				strlen: <>
+ 1378 				add_or_find_if: 109
+ 1379 				snprintf: 12
+ 1380 				pcap_strerror: 38
+ 1381 				dup_sockaddr: struct sockaddr (), <./libpcap/inet.c 94>
+ 1382 			pcap_freealldevs: void (), <./libpcap/inet.c 593>
+ 1383 				free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1384 			socket: <>
+ 1385 			snprintf: 12
+ 1386 			pcap_strerror: 38
+ 1387 			close: <>
+ 1388 			ioctl: <>
+ 1389 			malloc: <>
+ 1390 			free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1391 			strncmp: <>
+ 1392 			strchr: <>
+ 1393 			isdigit: <>
+ 1394 			strncpy: <>
+ 1395 			memcpy: <>
+ 1396 			pcap_platform_finddevs: int (), <./libpcap/pcap-libdlpi.c 228>
+ 1397 				open: <>
+ 1398 				strioctl: 286
+ 1399 				snprintf: 12
+ 1400 				pcap_strerror: 38
+ 1401 				pcap_add_if: 108
+ 1402 				scan_sys_class_net: int (), <./libpcap/pcap-linux.c 1805>
+ 1403 					opendir: <>
+ 1404 					socket: <>
+ 1405 					snprintf: 12
+ 1406 					pcap_strerror: 38
+ 1407 					readdir: <>
+ 1408 					isascii: <>
+ 1409 					isspace: <>
+ 1410 					isdigit: <>
+ 1411 					strncpy: <>
+ 1412 					ioctl: <>
+ 1413 					pcap_add_if: 108
+ 1414 					close: <>
+ 1415 					closedir: <>
+ 1416 				scan_proc_net_dev: int (), <./libpcap/pcap-linux.c 1937>
+ 1417 					fopen: <>
+ 1418 					socket: <>
+ 1419 					snprintf: 12
+ 1420 					pcap_strerror: 38
+ 1421 					fgets: <>
+ 1422 					isascii: <>
+ 1423 					isspace: <>
+ 1424 					isdigit: <>
+ 1425 					strncpy: <>
+ 1426 					ioctl: <>
+ 1427 					pcap_add_if: 108
+ 1428 					ferror: <>
+ 1429 					close: <>
+ 1430 					fclose: <>
+ 1431 				dag_platform_finddevs: 591
+ 1432 				septel_platform_finddevs: int (), <./libpcap/pcap-septel.c 246>
+ 1433 					pcap_add_if: 108
+ 1434 				snf_platform_finddevs: int (), <./libpcap/pcap-snf.c 252>
+ 1435 				bt_platform_finddevs: int (), <./libpcap/pcap-bt-linux.c 75>
+ 1436 					socket: <>
+ 1437 					snprintf: 12
+ 1438 					strerror: <>
+ 1439 					malloc: <>
+ 1440 					ioctl: <>
+ 1441 					free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1442 					pcap_add_if: 108
+ 1443 					close: <>
+ 1444 				usb_platform_finddevs: int (), <./libpcap/pcap-usb-linux.c 145>
+ 1445 					opendir: <>
+ 1446 					readdir: <>
+ 1447 					strncmp: <>
+ 1448 					sscanf: <>
+ 1449 					usb_dev_add: int (), <./libpcap/pcap-usb-linux.c 131>
+ 1450 						snprintf: 12
+ 1451 						pcap_add_if: 108
+ 1452 					closedir: <>
+ 1453 					strlen: <>
+ 1454 					isdigit: <>
+ 1455 				dlpi_walk: <>
+ 1456 				list_interfaces: boolean_t (), <./libpcap/pcap-libdlpi.c 79>
+ 1457 					calloc: <>
+ 1458 					strlcpy: <>
+ 1459 				free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1460 			getifaddrs: <>
+ 1461 			SA_LEN: <>
+ 1462 			freeifaddrs: <>
+ 1463 			PacketGetAdapterNames: if (), <./libpcap/inet.c 821>
+ 1464 			GetLastError: <>
+ 1465 			pcap_win32strerror: 730
+ 1466 			pcap_add_if_win32: int (), <./libpcap/fad-win32.c 146>
+ 1467 				add_or_find_if: 109
+ 1468 				PacketGetNetInfoEx: if (), <./libpcap/inet.c 879>
+ 1469 				add_addr_to_list: int (), <./libpcap/fad-win32.c 54>
+ 1470 					malloc: <>
+ 1471 					snprintf: 12
+ 1472 					pcap_strerror: 38
+ 1473 					dup_sockaddr: struct sockaddr (), <./libpcap/inet.c 94>
+ 1474 					free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1475 			strlen: <>
+ 1476 		fprintf: <>
+ 1477 		exit: <>
+ 1478 		ifprint: void (), <./libpcap/findalldevstest.c 56>
+ 1479 			printf: <>
+ 1480 			inet_ntoa: <>
+ 1481 			inet_ntop: <>
+ 1482 		pcap_lookupdev: char * (), <./libpcap/pcap-dos.c 452>
+ 1483 			init_32bit: 692
+ 1484 			PCAP_ASSERT: <>
+ 1485 			FLUSHK: <>
+ 1486 			strcpy: <>
+ 1487 		printf: <>
+ 1488 		pcap_lookupnet: int (), <./libpcap/pcap-dos.c 480>
+ 1489 			strcpy: <>
+ 1490 			IN_CLASSA: <>
+ 1491 			IN_CLASSB: <>
+ 1492 			IN_CLASSC: <>
+ 1493 			sprintf: <>
+ 1494 			ARGSUSED: <>
+ 1495 		iptos: char * (), <./libpcap/findalldevstest.c 121>
+ 1496 			sprintf: <>
+ 1497 		wsockinit: 725
+ 1498 		strrchr: <>
+ 1499 		getopt: int (), <./libpcap/Win32/Src/getopt.c 57>
+ 1500 		inet_addr: <>
+ 1501 		error: void (), <./libpcap/filtertest.c 108>
+ 1502 			fprintf: <>
+ 1503 			va_start: <>
+ 1504 			vfprintf: <>
+ 1505 			va_end: <>
+ 1506 			strlen: <>
+ 1507 			fputc: <>
+ 1508 			exit: <>
+ 1509 		strtol: <>
+ 1510 		usage: void (), <./libpcap/filtertest.c 258>
+ 1511 			fprintf: <>
+ 1512 			pcap_lib_version: const char * (), <./libpcap/pcap.c 1414>
+ 1513 				PacketGetVersion: <>
+ 1514 				strcmp: <>
+ 1515 				strlen: <>
+ 1516 				malloc: <>
+ 1517 				sprintf: <>
+ 1518 				strcpy: <>
+ 1519 				strcat: <>
+ 1520 			exit: <>
+ 1521 		pcap_datalink_name_to_val: int (), <./libpcap/pcap.c 765>
+ 1522 			pcap_strcasecmp: int (), <./libpcap/pcap.c 752>
+ 1523 		read_infile: char * (), <./libpcap/filtertest.c 72>
+ 1524 			open: <>
+ 1525 			error: 1501
+ 1526 			pcap_strerror: 38
+ 1527 			fstat: <>
+ 1528 			malloc: <>
+ 1529 			read: <>
+ 1530 			close: <>
+ 1531 		copy_argv: char * (), <./libpcap/filtertest.c 129>
+ 1532 			strlen: <>
+ 1533 			malloc: <>
+ 1534 			error: 1501
+ 1535 		pcap_open_dead: pcap_t * (), <./libpcap/pcap.c 1233>
+ 1536 			malloc: <>
+ 1537 			memset: <>
+ 1538 			pcap_stats_dead: int (), <./libpcap/pcap.c 1063>
+ 1539 				snprintf: 12
+ 1540 			pcap_setbuff_dead: int (), <./libpcap/pcap.c 1078>
+ 1541 				snprintf: 12
+ 1542 			pcap_setmode_dead: int (), <./libpcap/pcap.c 1092>
+ 1543 				snprintf: 12
+ 1544 			pcap_setmintocopy_dead: int (), <./libpcap/pcap.c 1106>
+ 1545 				snprintf: 12
+ 1546 			pcap_cleanup_dead: void (), <./libpcap/pcap.c 1227>
+ 1547 		pcap_compile: int (), <./libpcap/gencode.c 396>
+ 1548 			EnterCriticalSection: <>
+ 1549 			pcap_compile_unsafe: , <./libpcap/gencode.c 411>
+ 1550 				init_regs: void (), <./libpcap/gencode.c 6980>
+ 1551 					memset: <>
+ 1552 				setjmp: <>
+ 1553 				freeaddrinfo: void (), <./libpcap/Win32/Src/getaddrinfo.c 267>
+ 1554 					free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1555 				lex_cleanup: <>
+ 1556 				freechunks: void (), <./libpcap/gencode.c 320>
+ 1557 					free: , <./libpcap/Win32/Src/getaddrinfo.c 964>
+ 1558 				pcap_snapshot: int (), <./libpcap/pcap.c 802>
+ 1559 				snprintf: 12
+ 1560 				lex_init: <>
+ 1561 				init_linktype: void (), <./libpcap/gencode.c 901>
+ 1562 					pcap_datalink: int (), <./libpcap/pcap.c 453>
+ 1563 					bpf_error: void (), <./libpcap/gencode.c 133>
+ 1564 						va_start: <>
+ 1565 						vsnprintf: 14
+ 1566 						pcap_geterr: char * (), <./libpcap/pcap.c 859>
+ 1567 						va_end: <>
+ 1568 						longjmp: <>
+ 1569 				pcap_parse: <>
+ 1570 				syntax: inline void (), <./libpcap/gencode.c 382>
+ 1571 				gen_retblk: struct block * (), <./libpcap/gencode.c 372>
+ 1572 				bpf_optimize: <>
+ 1573 				bpf_error: 1563
+ 1574 				icode_to_fcode: <>
+ 1575 			LeaveCriticalSection: <>
+ 1576 		pcap_geterr: char * (), <./libpcap/pcap.c 859>
+ 1577 		bpf_dump: void (), <./libpcap/bpf_dump.c 34>
+ 1578 			printf: <>
+ 1579 			puts: <>
+ 1580 			bpf_image: <>
+ 1581 		pcap_close: 606
+ 1582 		usage: void (), <./libpcap/selpolltest.c 275>
+ 1583 			fprintf: <>
+ 1584 			exit: <>
+ 1585 		error: void (), <./libpcap/selpolltest.c 284>
+ 1586 			fprintf: <>
+ 1587 			va_start: <>
+ 1588 			vfprintf: <>
+ 1589 			va_end: <>
+ 1590 			strlen: <>
+ 1591 			fputc: <>
+ 1592 			exit: <>
+ 1593 		pcap_open_live: 118
+ 1594 		warning: void (), <./libpcap/selpolltest.c 303>
+ 1595 			fprintf: <>
+ 1596 			va_start: <>
+ 1597 			vfprintf: <>
+ 1598 			va_end: <>
+ 1599 			strlen: <>
+ 1600 			fputc: <>
+ 1601 		copy_argv: char * (), <./libpcap/selpolltest.c 322>
+ 1602 			strlen: <>
+ 1603 			malloc: <>
+ 1604 			error: 1585
+ 1605 		pcap_setfilter: int (), <./libpcap/pcap.c 1034>
+ 1606 		pcap_get_selectable_fd: int (), <./libpcap/pcap.c 846>
+ 1607 		pcap_setnonblock: int (), <./libpcap/pcap.c 897>
+ 1608 		FD_ZERO: <>
+ 1609 		FD_SET: <>
+ 1610 		select: <>
+ 1611 		strerror: <>
+ 1612 		FD_ISSET: <>
+ 1613 		pcap_dispatch: int (), <./libpcap/pcap.c 398>
+ 1614 		countme: void (), <./libpcap/selpolltest.c 267>
+ 1615 		poll: <>
+ 1616 		putchar: <>
+ 1617 		fflush: <>
+ 1618 		atoi: <>
+ 1619 		usage: void (), <./libpcap/opentest.c 174>
+ 1620 			fprintf: <>
+ 1621 			exit: <>
+ 1622 		pcap_create: 119
+ 1623 		pcap_set_snaplen: 139
+ 1624 		pcap_statustostr: 1354
+ 1625 		pcap_set_promisc: 1349
+ 1626 		pcap_set_rfmon: int (), <./libpcap/pcap.c 294>
+ 1627 			pcap_check_activated: 137
+ 1628 		pcap_set_timeout: 136
+ 1629 		pcap_set_buffer_size: int (), <./libpcap/pcap.c 312>
+ 1630 			pcap_check_activated: 137
+ 1631 		pcap_activate: 1352
+ 1632 		warning: void (), <./libpcap/opentest.c 203>
+ 1633 			fprintf: <>
+ 1634 			va_start: <>
+ 1635 			vfprintf: <>
+ 1636 			va_end: <>
+ 1637 			strlen: <>
+ 1638 			fputc: <>
+ 1639 		time: <>
+ 1640 		Abort: void (), <./libpcap/msdos/bin2c.c 6>
+ 1641 			va_start: <>
+ 1642 			vfprintf: <>
+ 1643 			va_end: <>
+ 1644 			exit: <>
+ 1645 		fopen: <>
+ 1646 		ctime: <>
+ 1647 		fgetc: <>
+ 1648 		fputs: <>
+ 1649 		fputc: <>
+ 1650 		fclose: <>

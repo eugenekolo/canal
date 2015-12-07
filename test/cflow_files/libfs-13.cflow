@@ -1,0 +1,61 @@
+    1 	FSCopyFormatNameForFSType: CFStringRef (), <./FSFormatName.c 39>
+    2 		CFStringCreateWithFormat: <>
+    3 		CFSTR: <>
+    4 		OSSpinLockLock: <>
+    5 		CFDictionaryGetValue: <>
+    6 		OSSpinLockUnlock: <>
+    7 		CFCopySearchPathForDirectoriesInDomains: <>
+    8 		CFArrayCreateMutable: <>
+    9 		CFArrayGetCount: <>
+   10 		CFArrayGetValueAtIndex: <>
+   11 		CFGetTypeID: <>
+   12 		CFURLGetTypeID: <>
+   13 		CFURLGetFileSystemRepresentation: <>
+   14 		CFStringGetTypeID: <>
+   15 		CFStringGetCString: <>
+   16 		strlcat: <>
+   17 		CFStringCreateWithCString: <>
+   18 		CFURLCreateWithFileSystemPath: <>
+   19 		CFArrayAppendValue: <>
+   20 		CFRelease: <>
+   21 		CFArrayCreateCopy: <>
+   22 		CFURLCreateWithFileSystemPathRelativeToBase: <>
+   23 		CFBundleCreate: <>
+   24 		CFBundleGetInfoDictionary: <>
+   25 		CFBundleGetValueForInfoDictionaryKey: <>
+   26 		CFDictionaryGetCount: <>
+   27 		malloc: <>
+   28 		CFDictionaryGetKeysAndValues: <>
+   29 		CFNumberCreate: <>
+   30 		CFDictionaryGetValueIfPresent: <>
+   31 		CFNumberCompare: <>
+   32 		CFDictionaryCreateMutable: <>
+   33 		CFDictionarySetValue: <>
+   34 		free: <>
+   35 		CFCopyLocalizedString: <>
+   36 		CFRetain: <>
+   37 		CFDictionaryGetTypeID: <>
+   38 	getfstype: bool (), <./FSFormatName.c 354>
+   39 		is_hfs: bool (), <./FSFormatName.c 375>
+   40 			malloc: <>
+   41 			open: <>
+   42 			getblk: int (), <./FSFormatName.c 588>
+   43 				pread: <>
+   44 			getwrapper: int (), <./FSFormatName.c 603>
+   45 				SW16: <>
+   46 				SW32: <>
+   47 			SW16: <>
+   48 			SW32: <>
+   49 			free: <>
+   50 			close: <>
+   51 		strcpy: <>
+   52 		is_msdos: bool (), <./FSFormatName.c 486>
+   53 			malloc: <>
+   54 			open: <>
+   55 			getblk: 42
+   56 			getushort: <>
+   57 			getulong: <>
+   58 			free: <>
+   59 			close: <>
+   60 	is_hfs: 39
+   61 	is_msdos: 52

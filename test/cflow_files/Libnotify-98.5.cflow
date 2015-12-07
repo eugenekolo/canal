@@ -1,0 +1,380 @@
+    1 	main: int (), <./notifyd/notifyd.c 1074>
+    2 		dispatch_queue_create: <>
+    3 		strrchr: <>
+    4 		strcmp: <>
+    5 		usage: void (), <./notifyutil/notifyutil.c 96>
+    6 			fprintf: <>
+    7 		exit: <>
+    8 		fprintf: <>
+    9 		atoi: <>
+   10 		atoll: <>
+   11 		notify_set_options: void (), <./notify_client.c 941>
+   12 		notify_post: uint32_t (), <./notify_client.c 991>
+   13 			regenerate_check: inline void (), <./notify_client.c 671>
+   14 			strncmp: <>
+   15 			strlen: <>
+   16 			pthread_mutex_lock: <>
+   17 			name_table_find_retain_no_lock: name_table_node_t * (), <./notify_client.c 477>
+   18 			name_table_release_no_lock: void (), <./notify_client.c 488>
+   19 				free: <>
+   20 			pthread_mutex_unlock: <>
+   21 		printf: <>
+   22 		notify_status_strerror: const char * (), <./notifyutil/notifyutil.c 119>
+   23 		usleep: <>
+   24 		reg_find_name: uint32_t (), <./notifyutil/notifyutil.c 195>
+   25 			strcmp: <>
+   26 		do_register: uint32_t (), <./notifyutil/notifyutil.c 354>
+   27 			notify_register_mach_port: uint32_t (), <./notify_client.c 1506>
+   28 				regenerate_check: 13
+   29 				strlen: <>
+   30 				mach_task_self: <>
+   31 				mach_port_allocate: <>
+   32 				mach_port_insert_right: <>
+   33 				mach_port_mod_refs: <>
+   34 				strncmp: <>
+   35 				mach_port_deallocate: <>
+   36 				OSAtomicIncrement32: <>
+   37 				token_table_add: uint32_t (), <./notify_client.c 369>
+   38 					dispatch_once: <>
+   39 					calloc: <>
+   40 					pthread_mutex_lock: <>
+   41 					strdup: <>
+   42 					free: <>
+   43 					pthread_mutex_unlock: <>
+   44 					asl_open: <>
+   45 					asl_log: <>
+   46 					asl_close: <>
+   47 				notify_retain_mach_port: void (), <./notify_client.c 784>
+   48 					calloc: <>
+   49 					reallocf: <>
+   50 					free: <>
+   51 				token_table_find_retain: token_table_node_t * (), <./notify_client.c 456>
+   52 					pthread_mutex_lock: <>
+   53 					pthread_mutex_unlock: <>
+   54 				dispatch_get_global_queue: <>
+   55 				dispatch_retain: <>
+   56 				Block_copy: <>
+   57 				memset: <>
+   58 				MACH_MSGH_BITS: <>
+   59 				mach_msg: <>
+   60 				token_table_release: void (), <./notify_client.c 920>
+   61 					pthread_mutex_lock: <>
+   62 					token_table_release_no_lock: void (), <./notify_client.c 897>
+   63 						notify_release_file_descriptor: void (), <./notify_client.c 731>
+   64 							close: <>
+   65 							free: <>
+   66 							reallocf: <>
+   67 						notify_release_mach_port: void (), <./notify_client.c 834>
+   68 							mach_port_mod_refs: <>
+   69 							mach_task_self: <>
+   70 							mach_port_deallocate: <>
+   71 							free: <>
+   72 							reallocf: <>
+   73 						dispatch_release: <>
+   74 						Block_release: <>
+   75 						name_table_release_no_lock: 18
+   76 						free: <>
+   77 					pthread_mutex_unlock: <>
+   78 			dispatch_source_create: <>
+   79 			dispatch_source_set_event_handler: <>
+   80 			port_handler: void (), <./notifyutil/notifyutil.c 287>
+   81 				memset: <>
+   82 				mach_msg: <>
+   83 				process_event: void (), <./notifyutil/notifyutil.c 213>
+   84 					gettimeofday: <>
+   85 					reg_find_token: uint32_t (), <./notifyutil/notifyutil.c 204>
+   86 					snprintf: <>
+   87 					printf: <>
+   88 					notify_get_state: uint32_t (), <./notify_client.c 2052>
+   89 						regenerate_check: 13
+   90 						token_table_find_retain: 51
+   91 						token_table_release: 60
+   92 						name_table_set_nid: void (), <./notify_client.c 505>
+   93 							pthread_mutex_lock: <>
+   94 							pthread_mutex_unlock: <>
+   95 					notify_status_strerror: 22
+   96 					notify_cancel: uint32_t (), <./notify_client.c 2270>
+   97 						regenerate_check: 13
+   98 						pthread_mutex_lock: <>
+   99 						token_table_find_no_lock: token_table_node_t * (), <./notify_client.c 471>
+  100 						pthread_mutex_unlock: <>
+  101 						token_table_release_no_lock: 62
+  102 					reg_delete: void (), <./notifyutil/notifyutil.c 166>
+  103 						free: <>
+  104 						reallocf: <>
+  105 						fprintf: <>
+  106 				exit: <>
+  107 			dispatch_resume: <>
+  108 			notify_register_file_descriptor: uint32_t (), <./notify_client.c 1702>
+  109 				regenerate_check: 13
+  110 				strlen: <>
+  111 				pipe: <>
+  112 				strncmp: <>
+  113 				close: <>
+  114 				OSAtomicIncrement32: <>
+  115 				token_table_add: 37
+  116 				notify_retain_file_descriptor: void (), <./notify_client.c 680>
+  117 					calloc: <>
+  118 					reallocf: <>
+  119 					free: <>
+  120 				notify_register_mux_fd: uint32_t (), <./notify_client.c 1276>
+  121 					notify_register_mach_port: 27
+  122 					token_table_find_retain: 51
+  123 					dispatch_get_global_queue: <>
+  124 					dispatch_retain: <>
+  125 					htonl: <>
+  126 					Block_copy: <>
+  127 					write: <>
+  128 					token_table_release: 60
+  129 				fileport_makeport: <>
+  130 			file_handler: void (), <./notifyutil/notifyutil.c 270>
+  131 				read: <>
+  132 				ntohl: <>
+  133 				process_event: 83
+  134 				exit: <>
+  135 			signal: <>
+  136 			notify_register_signal: uint32_t (), <./notify_client.c 1441>
+  137 				regenerate_check: 13
+  138 				strlen: <>
+  139 				strncmp: <>
+  140 				OSAtomicIncrement32: <>
+  141 				token_table_add: 37
+  142 				notify_register_dispatch: uint32_t (), <./notify_client.c 1236>
+  143 					regenerate_check: 13
+  144 					notify_set_options: 11
+  145 					strncmp: <>
+  146 					notify_register_mach_port: 27
+  147 					token_table_find_retain: 51
+  148 					dispatch_retain: <>
+  149 					Block_copy: <>
+  150 					token_table_release: 60
+  151 				dispatch_get_global_queue: <>
+  152 				kill: <>
+  153 				getpid: <>
+  154 			notify_check: uint32_t (), <./notify_client.c 1860>
+  155 				regenerate_check: 13
+  156 				token_table_find_retain: 51
+  157 				token_table_release: 60
+  158 			signal_handler: void (), <./notifyutil/notifyutil.c 306>
+  159 				printf: <>
+  160 				notify_check: 154
+  161 				process_event: 83
+  162 				exit: <>
+  163 			notify_register_dispatch: 142
+  164 			dispatch_handler: void (), <./notifyutil/notifyutil.c 326>
+  165 				reg_find_name: 24
+  166 				process_event: 83
+  167 			notify_register_check: uint32_t (), <./notify_client.c 1304>
+  168 				regenerate_check: 13
+  169 				strlen: <>
+  170 				strncmp: <>
+  171 				OSAtomicIncrement32: <>
+  172 				token_table_add: 37
+  173 				shm_attach: int (), <./notify_client.c 151>
+  174 					shm_open: <>
+  175 					mmap: <>
+  176 					close: <>
+  177 			timer_handler: void (), <./notifyutil/notifyutil.c 335>
+  178 				notify_check: 154
+  179 				process_event: 83
+  180 				exit: <>
+  181 			dispatch_source_set_timer: <>
+  182 			dispatch_time: <>
+  183 			notify_register_plain: uint32_t (), <./notify_client.c 1381>
+  184 				regenerate_check: 13
+  185 				strlen: <>
+  186 				strncmp: <>
+  187 				OSAtomicIncrement32: <>
+  188 				token_table_add: 37
+  189 			reg_add: void (), <./notifyutil/notifyutil.c 137>
+  190 				reallocf: <>
+  191 				fprintf: <>
+  192 				strdup: <>
+  193 		notify_register_plain: 183
+  194 		notify_get_state: 88
+  195 		notify_cancel: 96
+  196 		notify_set_state: uint32_t (), <./notify_client.c 2111>
+  197 			regenerate_check: 13
+  198 			token_table_find_retain: 51
+  199 			token_table_release: 60
+  200 			name_table_set_nid: 92
+  201 			mach_absolute_time: <>
+  202 		dispatch_main: <>
+  203 		fopen: <>
+  204 		MIN: <>
+  205 		setrlimit: <>
+  206 		signal: <>
+  207 		memset: <>
+  208 		getpagesize: <>
+  209 		fclose: <>
+  210 		log_message: void (), <./notifyd/notifyd.c 606>
+  211 			va_start: <>
+  212 			time: <>
+  213 			memset: <>
+  214 			strftime: <>
+  215 			localtime: <>
+  216 			fprintf: <>
+  217 			vfprintf: <>
+  218 			fflush: <>
+  219 			va_end: <>
+  220 		getpid: <>
+  221 		init_launch_config: void (), <./notifyd/notifyd.c 691>
+  222 			launch_data_new_string: <>
+  223 			launch_msg: <>
+  224 			launch_data_free: <>
+  225 			fprintf: <>
+  226 			getpid: <>
+  227 			exit: <>
+  228 			launch_data_dict_lookup: <>
+  229 			launch_data_get_machport: <>
+  230 		open_shared_memory: int32_t (), <./notifyd/notifyd.c 1025>
+  231 			shm_open: <>
+  232 			fprintf: <>
+  233 			strerror: <>
+  234 			ftruncate: <>
+  235 			mmap: <>
+  236 			close: <>
+  237 			malloc: <>
+  238 			memcpy: <>
+  239 			memset: <>
+  240 			getpid: <>
+  241 		assert: <>
+  242 		init_config: void (), <./notifyd/notifyd.c 853>
+  243 			getpid: <>
+  244 			stat: <>
+  245 			log_message: 210
+  246 			fopen: <>
+  247 			fgets: <>
+  248 			strlen: <>
+  249 			explode: char ** (), <./notifyd/notifyd.c 805>
+  250 				string_index: unsigned int (), <./notifyd/notifyd.c 789>
+  251 				malloc: <>
+  252 				string_append: char ** (), <./notifyd/notifyd.c 773>
+  253 					string_insert: char ** (), <./notifyd/notifyd.c 742>
+  254 						malloc: <>
+  255 						strdup: <>
+  256 						realloc: <>
+  257 				free: <>
+  258 			string_list_length: unsigned int (), <./notifyd/notifyd.c 779>
+  259 			strcasecmp: <>
+  260 			string_list_free: void (), <./notifyd/notifyd.c 728>
+  261 				free: <>
+  262 			service_open_path: int (), <./notifyd/service.c 76>
+  263 				strcmp: <>
+  264 				path_node_create: path_node_t * (), <./notifyd/pathwatch.c 870>
+  265 					dispatch_once: <>
+  266 					dispatch_sync: <>
+  267 					dispatch_retain: <>
+  268 					dispatch_source_create: <>
+  269 				dispatch_get_main_queue: <>
+  270 				strdup: <>
+  271 				calloc: <>
+  272 				assert: <>
+  273 				dispatch_source_set_event_handler: <>
+  274 				dispatch_async: <>
+  275 				dispatch_source_testcancel: <>
+  276 				daemon_post: uint32_t (), <./notifyd/notifyd.c 635>
+  277 				dispatch_resume: <>
+  278 			service_open_timer: int (), <./notifyd/service.c 289>
+  279 				parse_timer_args: uint32_t (), <./notifyd/service.c 246>
+  280 					parse_single_arg: int (), <./notifyd/service.c 191>
+  281 						time: <>
+  282 						strchr: <>
+  283 						strlen: <>
+  284 						atoll: <>
+  285 						atoi: <>
+  286 					strchr: <>
+  287 					atoi: <>
+  288 				timer_oneshot: timer_t * (), <./notifyd/timer.c 275>
+  289 					time: <>
+  290 					calloc: <>
+  291 					dispatch_retain: <>
+  292 					dispatch_source_create: <>
+  293 					dispatch_walltime: <>
+  294 					dispatch_source_set_timer: <>
+  295 					dispatch_source_set_event_handler: <>
+  296 					dispatch_source_merge_data: <>
+  297 					dispatch_source_cancel: <>
+  298 					dispatch_async: <>
+  299 					dispatch_resume: <>
+  300 				dispatch_get_main_queue: <>
+  301 				timer_clock: timer_t * (), <./notifyd/timer.c 323>
+  302 					timer_oneshot: 288
+  303 					time: <>
+  304 					calloc: <>
+  305 					dispatch_source_create: <>
+  306 					dispatch_walltime: <>
+  307 					dispatch_source_set_timer: <>
+  308 					dispatch_source_set_event_handler: <>
+  309 					dispatch_source_get_data: <>
+  310 					dispatch_source_merge_data: <>
+  311 					dispatch_source_cancel: <>
+  312 					dispatch_async: <>
+  313 					dispatch_resume: <>
+  314 				timer_calendar: timer_t * (), <./notifyd/timer.c 380>
+  315 					timer_oneshot: 288
+  316 					time: <>
+  317 					calloc: <>
+  318 					dispatch_source_create: <>
+  319 					timer_next: time_t (), <./notifyd/timer.c 47>
+  320 						memset: <>
+  321 						localtime_r: <>
+  322 						mktime: <>
+  323 					dispatch_walltime: <>
+  324 					dispatch_source_set_timer: <>
+  325 					dispatch_source_set_event_handler: <>
+  326 					dispatch_source_get_data: <>
+  327 					dispatch_source_merge_data: <>
+  328 					dispatch_source_cancel: <>
+  329 					dispatch_async: <>
+  330 					dispatch_resume: <>
+  331 				strdup: <>
+  332 				calloc: <>
+  333 				assert: <>
+  334 				dispatch_source_set_event_handler: <>
+  335 				dispatch_async: <>
+  336 				dispatch_source_testcancel: <>
+  337 				daemon_post: 276
+  338 				dispatch_resume: <>
+  339 			atoll: <>
+  340 			atoi: <>
+  341 			atoaccess: uint32_t (), <./notifyd/notifyd.c 832>
+  342 				strlen: <>
+  343 			fclose: <>
+  344 		dispatch_get_main_queue: <>
+  345 		dispatch_async: <>
+  346 		dispatch_get_global_queue: <>
+  347 		service_mach_message: void (), <./notifyd/notifyd.c 971>
+  348 			memset: <>
+  349 			MACH_RCV_TRAILER_ELEMENTS: <>
+  350 			MACH_RCV_TRAILER_TYPE: <>
+  351 			mach_msg: <>
+  352 			dispatch_sync: <>
+  353 			notify_ipc_server: <>
+  354 			mach_msg_destroy: <>
+  355 		dispatch_source_create: <>
+  356 		dispatch_source_set_event_handler: <>
+  357 		dispatch_resume: <>
+  358 		dump_status: void (), <./notifyd/notifyd.c 585>
+  359 			asprintf: <>
+  360 			getpid: <>
+  361 			unlink: <>
+  362 			fopen: <>
+  363 			fprint_quick_status: void (), <./notifyd/notifyd.c 273>
+  364 				fprint_quick_name_info: void (), <./notifyd/notifyd.c 165>
+  365 					fprintf: <>
+  366 					fprint_quick_client: void (), <./notifyd/notifyd.c 147>
+  367 						fprintf: <>
+  368 						notify_type_name: const char * (), <./notifyd/notifyd.c 84>
+  369 				fprintf: <>
+  370 			fprint_status: void (), <./notifyd/notifyd.c 292>
+  371 				fprintf: <>
+  372 				fprint_name_info: void (), <./notifyd/notifyd.c 195>
+  373 					fprintf: <>
+  374 					fprint_client: void (), <./notifyd/notifyd.c 101>
+  375 						fprintf: <>
+  376 						notify_type_name: 368
+  377 				fprint_quick_client: 366
+  378 				strcmp: <>
+  379 				notify_type_name: 368
+  380 			fclose: <>

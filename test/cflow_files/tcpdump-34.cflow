@@ -1,0 +1,289 @@
+    1 	main: int (), <./tcpdump/print-ascii.c 168>
+    2 		RETSIGTYPE:  () (), <./tcpdump/setsignal.c 74>
+    3 		wsockinit: <>
+    4 		ndo_default_print: void (), <./tcpdump/tcpdump.c 1767>
+    5 			hex_and_ascii_print: void (), <./tcpdump/print-ascii.c 124>
+    6 				hex_and_ascii_print_with_offset: void (), <./tcpdump/print-ascii.c 77>
+    7 					snprintf: , <./tcpdump/machdep.c 48>
+    8 						va_start: <>
+    9 						vsnprintf: int (), <./tcpdump/missing/snprintf.c 610>
+   10 							sn_append_char: int (), <./tcpdump/missing/snprintf.c 85>
+   11 								sn_reserve: int (), <./tcpdump/missing/snprintf.c 79>
+   12 							sn_reserve: int (), <./tcpdump/missing/snprintf.c 79>
+   13 							xyzprintf: int (), <./tcpdump/missing/snprintf.c 288>
+   14 								isdigit: <>
+   15 								va_arg: <>
+   16 								append_char: int (), <./tcpdump/missing/snprintf.c 253>
+   17 								append_string: int (), <./tcpdump/missing/snprintf.c 222>
+   18 									strlen: <>
+   19 								PARSE_INT_FORMAT: <>
+   20 								append_number: int (), <./tcpdump/missing/snprintf.c 133>
+   21 						malloc: <>
+   22 						abort: <>
+   23 						vsprintf: <>
+   24 						strcmp: <>
+   25 						free: <>
+   26 						va_end: <>
+   27 						setsysinfo: <>
+   28 						snprintf: 7
+   29 					isgraph: <>
+   30 					printf: <>
+   31 		tcpdump_printf: int (), <./tcpdump/tcpdump.c 543>
+   32 			va_start: <>
+   33 			vfprintf:  (), <./tcpdump/vfprintf.c 44>
+   34 				ferror: <>
+   35 			va_end: <>
+   36 		ndo_error: void (), <./tcpdump/tcpdump.c 1858>
+   37 			fprintf: <>
+   38 			va_start: <>
+   39 			vfprintf: 33
+   40 			va_end: <>
+   41 			strlen: <>
+   42 			fputc: <>
+   43 			exit: <>
+   44 		ndo_warning: void (), <./tcpdump/tcpdump.c 1877>
+   45 			fprintf: <>
+   46 			va_start: <>
+   47 			vfprintf: 33
+   48 			va_end: <>
+   49 			strlen: <>
+   50 			fputc: <>
+   51 		strrchr: <>
+   52 		abort_on_misalignment: <>
+   53 		error: void (), <./tcpdump/util.c 473>
+   54 			fprintf: <>
+   55 			va_start: <>
+   56 			vfprintf: 33
+   57 			va_end: <>
+   58 			strlen: <>
+   59 			fputc: <>
+   60 			exit: <>
+   61 		smiInit: <>
+   62 		getopt: int (), <./tcpdump/win32/Src/getopt.c 57>
+   63 		atoi: <>
+   64 		pcap_findalldevs: <>
+   65 		printf: <>
+   66 		warning: void (), <./tcpdump/util.c 492>
+   67 			fprintf: <>
+   68 			va_start: <>
+   69 			vfprintf: 33
+   70 			va_end: <>
+   71 			strlen: <>
+   72 			fputc: <>
+   73 		time: <>
+   74 		pcap_strerror: <>
+   75 		setvbuf: <>
+   76 		setlinebuf: <>
+   77 		smiLoadModule: <>
+   78 		fprintf: <>
+   79 		strtol: <>
+   80 		strcasecmp: <>
+   81 		getWflagChars: int (), <./tcpdump/tcpdump.c 498>
+   82 		pcap_datalink_name_to_val: int (), <./tcpdump/missing/dlnames.c 140>
+   83 			strcasecmp: <>
+   84 		strdup: <>
+   85 		usage: void (), <./tcpdump/tcpdump.c 1812>
+   86 			fprintf: <>
+   87 			pcap_lib_version: <>
+   88 			exit: <>
+   89 		gmt2local: int32_t (), <./tcpdump/gmt2local.c 46>
+   90 			time: <>
+   91 			gmtime: <>
+   92 			localtime: <>
+   93 		getuid: <>
+   94 		geteuid: <>
+   95 		setgid: <>
+   96 		getgid: <>
+   97 		setuid: <>
+   98 		pcap_open_offline: <>
+   99 		pcap_datalink: <>
+  100 		pcap_datalink_val_to_name: const char * (), <./tcpdump/missing/dlnames.c 153>
+  101 		pcap_datalink_val_to_description: const char * (), <./tcpdump/missing/dlnames.c 166>
+  102 		pcap_lookupdev: <>
+  103 		strlen: <>
+  104 		fflush: <>
+  105 		pcap_create: <>
+  106 		pcap_can_set_rfmon: <>
+  107 		pcap_set_snaplen: <>
+  108 		pcap_statustostr: <>
+  109 		pcap_set_promisc: <>
+  110 		pcap_set_rfmon: <>
+  111 		pcap_set_timeout: <>
+  112 		pcap_set_buffer_size: <>
+  113 		pcap_activate: <>
+  114 		pcap_geterr: <>
+  115 		pcap_open_live: <>
+  116 		pcap_apple_set_exthdr: <>
+  117 		warn: <>
+  118 		pcap_setbuff: <>
+  119 		show_dlts_and_exit: void (), <./tcpdump/tcpdump.c 366>
+  120 			pcap_list_datalinks: int (), <./tcpdump/missing/datalinks.c 55>
+  121 				malloc: <>
+  122 				pcap_datalink: <>
+  123 			error: 53
+  124 			pcap_geterr: <>
+  125 			fprintf: <>
+  126 			pcap_datalink_val_to_name: 100
+  127 			pcap_datalink_val_to_description: 101
+  128 			lookup_printer: if_printer (), <./tcpdump/tcpdump.c 316>
+  129 			lookup_ndo_printer: if_ndo_printer (), <./tcpdump/tcpdump.c 329>
+  130 			putchar: <>
+  131 			free: <>
+  132 			exit: <>
+  133 		pcap_set_datalink: <>
+  134 		pcap_snapshot: <>
+  135 		pcap_lookupnet: <>
+  136 		read_infile: char * (), <./tcpdump/util.c 552>
+  137 			open: <>
+  138 			error: 53
+  139 			pcap_strerror: <>
+  140 			fstat: <>
+  141 			malloc: <>
+  142 			read: <>
+  143 			close: <>
+  144 		copy_argv: char * (), <./tcpdump/util.c 511>
+  145 			strlen: <>
+  146 			malloc: <>
+  147 			error: 53
+  148 		pcap_compile: <>
+  149 		free: <>
+  150 		bpf_dump: void (), <./tcpdump/bpf_dump.c 38>
+  151 			printf: <>
+  152 			puts: <>
+  153 			bpf_image: <>
+  154 		pcap_close: <>
+  155 		exit: <>
+  156 		init_addrtoname: void (), <./tcpdump/addrtoname.c 1106>
+  157 			init_etherarray: void (), <./tcpdump/addrtoname.c 819>
+  158 				fopen: <>
+  159 				pcap_next_etherent: <>
+  160 				lookup_emem: inline struct enamemem * (), <./tcpdump/addrtoname.c 320>
+  161 				strdup: <>
+  162 				fclose: <>
+  163 				ether_ntohost: <>
+  164 			init_servarray: void (), <./tcpdump/addrtoname.c 693>
+  165 				getservent: <>
+  166 				ntohs: <>
+  167 				strcmp: <>
+  168 				snprintf: 7
+  169 				strdup: <>
+  170 				newhnamemem: struct hnamemem (), <./tcpdump/addrtoname.c 1147>
+  171 				endservent: <>
+  172 			init_eprotoarray: void (), <./tcpdump/addrtoname.c 735>
+  173 				htons: <>
+  174 				newhnamemem: struct hnamemem (), <./tcpdump/addrtoname.c 1147>
+  175 			init_protoidarray: void (), <./tcpdump/addrtoname.c 768>
+  176 				htons: <>
+  177 				memcpy: <>
+  178 				lookup_protoid: inline struct protoidmem * (), <./tcpdump/addrtoname.c 438>
+  179 				strdup: <>
+  180 			init_ipxsaparray: void (), <./tcpdump/addrtoname.c 1083>
+  181 				htons: <>
+  182 				newhnamemem: struct hnamemem (), <./tcpdump/addrtoname.c 1147>
+  183 		init_checksum: void (), <./tcpdump/checksum.c 133>
+  184 			init_crc10_table: void (), <./tcpdump/checksum.c 95>
+  185 				assert: <>
+  186 				memcmp: <>
+  187 		setsignal: <>
+  188 		cleanup: RETSIGTYPE (), <./tcpdump/tcpdump.c 1358>
+  189 			timeKillEvent: <>
+  190 			alarm: <>
+  191 			pcap_breakloop: <>
+  192 			pcap_file: <>
+  193 			putchar: <>
+  194 			fflush: <>
+  195 			info: void (), <./tcpdump/tcpdump.c 1410>
+  196 				pcap_stats: <>
+  197 				fprintf: <>
+  198 				pcap_geterr: <>
+  199 				fputs: <>
+  200 				putc: <>
+  201 			exit: <>
+  202 		child_cleanup: RETSIGTYPE (), <./tcpdump/tcpdump.c 1403>
+  203 			wait: <>
+  204 		pcap_setfilter: <>
+  205 		malloc: <>
+  206 		MakeFilename: void (), <./tcpdump/tcpdump.c 513>
+  207 			malloc: <>
+  208 			localtime: <>
+  209 			error: 53
+  210 			strftime: <>
+  211 			strncpy: <>
+  212 			snprintf: 7
+  213 			free: <>
+  214 		pcap_ng_dump_open: <>
+  215 		pcap_dump_open: <>
+  216 		dump_packet_and_trunc: void (), <./tcpdump/tcpdump.c 1482>
+  217 			time: <>
+  218 			error: 53
+  219 			pcap_strerror: <>
+  220 			pcap_ng_dump_close: <>
+  221 			pcap_dump_close: <>
+  222 			compress_savefile: void (), <./tcpdump/tcpdump.c 1474>
+  223 				fork: <>
+  224 				setpriority: <>
+  225 				execlp: <>
+  226 				fprintf: <>
+  227 				strerror: <>
+  228 			fprintf: <>
+  229 			exit: <>
+  230 			free: <>
+  231 			malloc: <>
+  232 			MakeFilename: 206
+  233 			pcap_ng_dump_open: <>
+  234 			pcap_dump_open: <>
+  235 			pcap_geterr: <>
+  236 			pcap_dump_ftell: long (), <./tcpdump/pcap_dump_ftell.c 33>
+  237 				ftell: <>
+  238 			pcap_ng_dump: <>
+  239 			pcap_dump: <>
+  240 			pcap_dump_flush: <>
+  241 			info: 195
+  242 		dump_packet: void (), <./tcpdump/tcpdump.c 1621>
+  243 			pcap_ng_dump: <>
+  244 			pcap_dump: <>
+  245 			pcap_dump_flush: <>
+  246 			info: 195
+  247 		lookup_ndo_printer: 129
+  248 		lookup_printer: 128
+  249 		print_packet: void (), <./tcpdump/tcpdump.c 1642>
+  250 			ts_print: void (), <./tcpdump/util.c 160>
+  251 				printf: <>
+  252 				ts_format: char * (), <./tcpdump/util.c 147>
+  253 					snprintf: 7
+  254 				gmtime: <>
+  255 			printf: <>
+  256 			hex_and_ascii_print: 5
+  257 			hex_print: void (), <./tcpdump/print-ascii.c 161>
+  258 				hex_print_with_offset: void (), <./tcpdump/print-ascii.c 134>
+  259 					printf: <>
+  260 			ascii_print: void (), <./tcpdump/print-ascii.c 60>
+  261 				putchar: <>
+  262 				isgraph: <>
+  263 			putchar: <>
+  264 			info: 195
+  265 		droproot: void (), <./tcpdump/tcpdump.c 461>
+  266 			fprintf: <>
+  267 			exit: <>
+  268 			getpwnam: <>
+  269 			chroot: <>
+  270 			chdir: <>
+  271 			pcap_strerror: <>
+  272 			initgroups: <>
+  273 			setgid: <>
+  274 			setuid: <>
+  275 		requestinfo: RETSIGTYPE (), <./tcpdump/tcpdump.c 1779>
+  276 			info: 195
+  277 		timeSetEvent: <>
+  278 		verbose_stats_dump: void CALLBACK (), <./tcpdump/tcpdump.c 1792>
+  279 			pcap_stats: <>
+  280 			fprintf: <>
+  281 		alarm: <>
+  282 		pcap_loop: <>
+  283 		putchar: <>
+  284 		info: 195
+  285 		hex_print: 257
+  286 		hex_and_ascii_print: 5
+  287 		ascii_print: 260
+  288 		hex_print_with_offset: 258
+  289 		hex_and_ascii_print_with_offset: 6

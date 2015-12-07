@@ -1,0 +1,273 @@
+    1 	blankCursor: GdkCursor * (), <./platform/gtk/GtkVersioning.c 76>
+    2 		gdk_cursor_new: <>
+    3 		gdk_bitmap_create_from_data: <>
+    4 		gdk_cursor_new_from_pixmap: <>
+    5 		gdk_pixmap_unref: <>
+    6 	g_signal_accumulator_first_wins: gboolean (), <./platform/gtk/GtkVersioning.c 293>
+    7 		g_value_copy: <>
+    8 	gdk_pixbuf_get_from_surface: GdkPixbuf * (), <./platform/gtk/GtkVersioning.c 225>
+    9 		g_return_val_if_fail: <>
+   10 		cairo_surface_get_content: <>
+   11 		gdk_pixbuf_new: <>
+   12 		gdk_cairo_surface_coerce_to_image: cairo_surface_t * (), <./platform/gtk/GtkVersioning.c 123>
+   13 			cairo_surface_get_type: <>
+   14 			cairo_surface_get_content: <>
+   15 			cairo_image_surface_get_width: <>
+   16 			cairo_image_surface_get_height: <>
+   17 			cairo_surface_reference: <>
+   18 			cairo_image_surface_create: <>
+   19 			gdk_cairo_format_for_content: cairo_format_t (), <./platform/gtk/GtkVersioning.c 109>
+   20 			cairo_create: <>
+   21 			cairo_set_operator: <>
+   22 			cairo_set_source_surface: <>
+   23 			cairo_paint: <>
+   24 			cairo_destroy: <>
+   25 		cairo_surface_flush: <>
+   26 		cairo_surface_status: <>
+   27 		cairo_surface_destroy: <>
+   28 		gdk_pixbuf_get_has_alpha: <>
+   29 		convert_alpha: void (), <./platform/gtk/GtkVersioning.c 151>
+   30 		gdk_pixbuf_get_pixels: <>
+   31 		gdk_pixbuf_get_rowstride: <>
+   32 		cairo_image_surface_get_data: <>
+   33 		cairo_image_surface_get_stride: <>
+   34 		convert_no_alpha: void (), <./platform/gtk/GtkVersioning.c 183>
+   35 	gdk_screen_get_monitor_workarea: void (), <./platform/gtk/GtkVersioning.c 371>
+   36 		gdk_screen_get_monitor_geometry: <>
+   37 		getScreenWorkArea: void (), <./platform/gtk/GtkVersioning.c 336>
+   38 			GDK_DISPLAY_XDISPLAY: <>
+   39 			gdk_screen_get_display: <>
+   40 			XInternAtom: <>
+   41 			gdk_screen_get_width: <>
+   42 			gdk_screen_get_height: <>
+   43 			XRootWindow: <>
+   44 			GDK_SCREEN_XNUMBER: <>
+   45 			XGetWindowProperty: <>
+   46 			getScreenCurrentDesktop: int (), <./platform/gtk/GtkVersioning.c 313>
+   47 				GDK_DISPLAY_XDISPLAY: <>
+   48 				gdk_screen_get_display: <>
+   49 				XRootWindow: <>
+   50 				GDK_SCREEN_XNUMBER: <>
+   51 				XInternAtom: <>
+   52 				XGetWindowProperty: <>
+   53 				XFree: <>
+   54 			XFree: <>
+   55 		gdk_rectangle_intersect: <>
+   56 	gdk_window_create_similar_surface: cairo_surface_t * (), <./platform/gtk/GtkVersioning.c 301>
+   57 		gdk_cairo_create: <>
+   58 		cairo_get_target: <>
+   59 		cairo_surface_create_similar: <>
+   60 		cairo_destroy: <>
+   61 	gdk_window_get_root_coords: void (), <./platform/gtk/GtkVersioning.c 68>
+   62 		gdk_window_get_root_origin: <>
+   63 	getDefaultGDKPointerDevice: GdkDevice * (), <./platform/gtk/GtkVersioning.c 57>
+   64 		gdk_display_get_device_manager: <>
+   65 		gdk_window_get_display: <>
+   66 		gdk_device_manager_get_client_pointer: <>
+   67 		gdk_device_get_core_pointer: <>
+   68 	getGdkDrawableSize: void (), <./platform/gtk/GtkVersioning.c 284>
+   69 		g_return_if_fail: <>
+   70 		GDK_IS_PIXMAP: <>
+   71 		GDK_IS_WINDOW: <>
+   72 		gdk_pixmap_get_size: <>
+   73 		GDK_PIXMAP: <>
+   74 		GDK_WINDOW: <>
+   75 		gdk_window_get_width: <>
+   76 		gdk_window_get_height: <>
+   77 		gdk_drawable_get_size: <>
+   78 	gtk_adjustment_configure: void (), <./platform/gtk/GtkVersioning.c 37>
+   79 		g_object_freeze_notify: <>
+   80 		G_OBJECT: <>
+   81 		g_object_set: <>
+   82 		g_object_thaw_notify: <>
+   83 		gtk_adjustment_changed: <>
+   84 		gtk_adjustment_value_changed: <>
+   85 	gtk_adjustment_set_value: void (), <./platform/gtk/GtkVersioning.c 31>
+   86 		gtk_adjustment_value_changed: <>
+   87 	gtk_menu_item_get_label: const gchar * (), <./platform/gtk/GtkVersioning.c 98>
+   88 		gtk_bin_get_child: <>
+   89 		GTK_BIN: <>
+   90 		GTK_IS_LABEL: <>
+   91 		gtk_label_get_text: <>
+   92 		GTK_LABEL: <>
+   93 	gtk_xtbin_get_type: GType (), <./plugins/gtk/gtk2xtbin.c 217>
+   94 		gtk_xtbin_class_init: void (), <./plugins/gtk/gtk2xtbin.c 246>
+   95 			g_type_class_peek_parent: <>
+   96 			GTK_WIDGET_CLASS: <>
+   97 			gtk_xtbin_realize: void (), <./plugins/gtk/gtk2xtbin.c 272>
+   98 				printf: <>
+   99 				g_return_if_fail: <>
+  100 				GTK_IS_XTBIN: <>
+  101 				GTK_XTBIN: <>
+  102 				gdk_window_get_width: <>
+  103 				gdk_window_get_height: <>
+  104 				gdk_window_get_geometry: <>
+  105 				gtk_widget_size_allocate: <>
+  106 				gtk_widget_get_allocation: <>
+  107 				GTK_WIDGET_CLASS: <>
+  108 				xt_client_create: void (), <./plugins/gtk/gtk2xtbin.c 580>
+  109 					printf: <>
+  110 					XtAppCreateShell: <>
+  111 					XtSetArg: <>
+  112 					XtSetValues: <>
+  113 					XtVaCreateWidget: <>
+  114 					XSync: <>
+  115 					XtRegisterDrawable: <>
+  116 					XtRealizeWidget: <>
+  117 					XSelectInput: <>
+  118 					XtWindow: <>
+  119 					xt_client_set_info: void (), <./plugins/gtk/gtk2xtbin.c 686>
+  120 						XInternAtom: <>
+  121 						XtDisplay: <>
+  122 						XChangeProperty: <>
+  123 						XtWindow: <>
+  124 					XtManageChild: <>
+  125 					XtAddEventHandler: <>
+  126 					xt_client_event_handler: void (), <./plugins/gtk/gtk2xtbin.c 763>
+  127 						XInternAtom: <>
+  128 						XtDisplay: <>
+  129 						xt_client_handle_xembed_message: void (), <./plugins/gtk/gtk2xtbin.c 702>
+  130 							printf: <>
+  131 							memset: <>
+  132 							XtWindow: <>
+  133 							XtDisplay: <>
+  134 							XSendEvent: <>
+  135 							XSync: <>
+  136 						xt_client_set_info: 119
+  137 						send_xembed_message: void (), <./plugins/gtk/gtk2xtbin.c 802>
+  138 							XtWindow: <>
+  139 							memset: <>
+  140 							XInternAtom: <>
+  141 							trap_errors: void (), <./plugins/gtk/gtk2xtbin.c 844>
+  142 								XSetErrorHandler: <>
+  143 								error_handler: int (), <./plugins/gtk/gtk2xtbin.c 837>
+  144 							XSendEvent: <>
+  145 							XSync: <>
+  146 							untrap_error: int (), <./plugins/gtk/gtk2xtbin.c 851>
+  147 								XSetErrorHandler: <>
+  148 								printf: <>
+  149 							printf: <>
+  150 						printf: <>
+  151 					xt_client_focus_listener: void (), <./plugins/gtk/gtk2xtbin.c 863>
+  152 						XtDisplay: <>
+  153 						XtWindow: <>
+  154 						XtWindowToWidget: <>
+  155 						xt_add_focus_listener_tree: void (), <./plugins/gtk/gtk2xtbin.c 940>
+  156 							XtWindow: <>
+  157 							XtDisplay: <>
+  158 							xt_remove_focus_listener: void (), <./plugins/gtk/gtk2xtbin.c 930>
+  159 								trap_errors: 141
+  160 								XtRemoveEventHandler: <>
+  161 								xt_client_focus_listener: 151
+  162 								untrap_error: 146
+  163 							xt_add_focus_listener: void (), <./plugins/gtk/gtk2xtbin.c 908>
+  164 								trap_errors: 141
+  165 								XGetWindowAttributes: <>
+  166 								XtDisplay: <>
+  167 								XtWindow: <>
+  168 								XSelectInput: <>
+  169 								XtAddEventHandler: <>
+  170 								xt_client_focus_listener: 151
+  171 								untrap_error: 146
+  172 							trap_errors: 141
+  173 							XQueryTree: <>
+  174 							untrap_error: 146
+  175 							XtWindowToWidget: <>
+  176 							xt_add_focus_listener_tree: 155
+  177 							XFree: <>
+  178 						xt_remove_focus_listener: 158
+  179 						XSetInputFocus: <>
+  180 						send_xembed_message: 137
+  181 				gtk_socket_get_id: <>
+  182 				GTK_SOCKET: <>
+  183 				XtWindow: <>
+  184 				gdk_flush: <>
+  185 				gtk_socket_add_id: <>
+  186 			gtk_xtbin_unrealize: void (), <./plugins/gtk/gtk2xtbin.c 472>
+  187 				printf: <>
+  188 				GTK_XTBIN: <>
+  189 				GTK_WIDGET: <>
+  190 				gtk_widget_set_visible: <>
+  191 				gtk_widget_get_realized: <>
+  192 				xt_client_unrealize: void (), <./plugins/gtk/gtk2xtbin.c 656>
+  193 					XtUnregisterDrawable: <>
+  194 					XSync: <>
+  195 					XtUnrealizeWidget: <>
+  196 				GTK_WIDGET_CLASS: <>
+  197 			G_OBJECT_CLASS: <>
+  198 			gtk_xtbin_dispose: void (), <./plugins/gtk/gtk2xtbin.c 495>
+  199 				printf: <>
+  200 				g_return_if_fail: <>
+  201 				GTK_IS_XTBIN: <>
+  202 				GTK_XTBIN: <>
+  203 				xt_client_destroy: void (), <./plugins/gtk/gtk2xtbin.c 675>
+  204 					XtRemoveEventHandler: <>
+  205 					xt_client_event_handler: 126
+  206 					XtDestroyWidget: <>
+  207 				g_main_context_remove_poll: <>
+  208 				g_source_remove: <>
+  209 				G_OBJECT_CLASS: <>
+  210 				dispose: <>
+  211 		gtk_xtbin_init: void (), <./plugins/gtk/gtk2xtbin.c 262>
+  212 		g_type_register_static: <>
+  213 	gtk_xtbin_new: GtkWidget * (), <./plugins/gtk/gtk2xtbin.c 332>
+  214 		gtk_widget_get_window: <>
+  215 		assert: <>
+  216 		g_object_new: <>
+  217 		gtk_widget_get_screen: <>
+  218 		gdk_screen_get_system_visual: <>
+  219 		XCreateColormap: <>
+  220 		GDK_DISPLAY_XDISPLAY: <>
+  221 		gdk_screen_get_display: <>
+  222 		GDK_WINDOW_XWINDOW: <>
+  223 		gdk_screen_get_root_window: <>
+  224 		GDK_VISUAL_XVISUAL: <>
+  225 		xt_client_init: void (), <./plugins/gtk/gtk2xtbin.c 538>
+  226 			printf: <>
+  227 			XtToolkitInitialize: <>
+  228 			XtCreateApplicationContext: <>
+  229 			XtAppSetFallbackResources: <>
+  230 			XtOpenDisplay: <>
+  231 			gdk_get_display: <>
+  232 		gdk_visual_get_depth: <>
+  233 		printf: <>
+  234 		g_free: <>
+  235 		g_source_new: <>
+  236 		g_source_set_priority: <>
+  237 		g_source_set_can_recurse: <>
+  238 		g_source_attach: <>
+  239 		XConnectionNumber: <>
+  240 		ConnectionNumber: <>
+  241 		g_main_context_add_poll: <>
+  242 		g_timeout_add: <>
+  243 		xt_event_polling_timer_callback: gboolean (), <./plugins/gtk/gtk2xtbin.c 196>
+  244 			XtDisplayToApplicationContext: <>
+  245 			XtAppPending: <>
+  246 			XtAppProcessEvent: <>
+  247 		gtk_widget_set_parent_window: <>
+  248 		GTK_WIDGET: <>
+  249 		gdk_window_get_user_data: <>
+  250 		gtk_container_add: <>
+  251 		GTK_CONTAINER: <>
+  252 	gtk_xtbin_resize: void (), <./plugins/gtk/gtk2xtbin.c 437>
+  253 		GTK_XTBIN: <>
+  254 		printf: <>
+  255 		XtSetArg: <>
+  256 		XtSetValues: <>
+  257 		gtk_widget_size_allocate: <>
+  258 	gtk_xtbin_set_position: void (), <./plugins/gtk/gtk2xtbin.c 425>
+  259 		gtk_widget_get_realized: <>
+  260 		GTK_WIDGET: <>
+  261 		gdk_window_move: <>
+  262 		gtk_widget_get_window: <>
+  263 	shapeArabic: int32_t (), <./platform/text/mac/ShapeArabic.c 477>
+  264 		U_FAILURE: <>
+  265 		u_strlen: <>
+  266 		ASSERT: <>
+  267 		memcpy: <>
+  268 		shapeUnicode: int32_t (), <./platform/text/mac/ShapeArabic.c 351>
+  269 			getLink: UChar (), <./platform/text/mac/ShapeArabic.c 317>
+  270 			isTashkeelChar: int32_t (), <./platform/text/mac/ShapeArabic.c 337>
+  271 			changeLamAlef: UChar (), <./platform/text/mac/ShapeArabic.c 266>
+  272 			specialChar: int32_t (), <./platform/text/mac/ShapeArabic.c 293>
+  273 		ASSERT_NOT_REACHED: <>

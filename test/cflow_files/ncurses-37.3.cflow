@@ -1,0 +1,3964 @@
+    1 	main: int (), <./ncurses/Ada95/gen/gen.c 1290>
+    2 		check_aliases: void (), <./ncurses/progs/tput.c 87>
+    3 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+    4 		getenv: <>
+    5 		getopt: <>
+    6 		use_env: <>
+    7 		puts: <>
+    8 		curses_version: <>
+    9 		ExitProgram: <>
+   10 			free: <>
+   11 		usage: void (), <./ncurses/progs/tput.c 80>
+   12 			fprintf: <>
+   13 			ExitProgram: 9
+   14 		quit: void (), <./ncurses/progs/tput.c 67>
+   15 			va_start: <>
+   16 			fprintf: <>
+   17 			vfprintf: <>
+   18 			va_end: <>
+   19 			ExitProgram: 9
+   20 		setupterm: <>
+   21 		tput: int (), <./ncurses/progs/tput.c 149>
+   22 			check_aliases: 2
+   23 			system: <>
+   24 			PUTS: <>
+   25 			TPARM_2: <>
+   26 			TPARM_1: <>
+   27 			PUTCHAR: <>
+   28 			fopen: <>
+   29 			quit: 14
+   30 			fgetc: <>
+   31 			fclose: <>
+   32 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+   33 			longname: <>
+   34 			tigetflag: <>
+   35 			exit_code: int (), <./ncurses/progs/tput.c 130>
+   36 			tigetnum: <>
+   37 			printf: <>
+   38 			tigetstr: <>
+   39 			strtol: <>
+   40 			tparm_type: TParams (), <./ncurses/progs/tput.c 102>
+   41 			TPARM_3: <>
+   42 			TPARM_9: <>
+   43 			myParam: <>
+   44 			putp: <>
+   45 		fgets: <>
+   46 		isspace: <>
+   47 		UChar: <>
+   48 		SIZEOF: <>
+   49 		obsolete: void (), <./ncurses/progs/tset.c 1099>
+   50 			strdup: char * (), <./ncurses/test/testcurs.c 52>
+   51 				typeMalloc: <>
+   52 				strlen: <>
+   53 				strcpy: <>
+   54 		add_mapping: void (), <./ncurses/progs/tset.c 380>
+   55 			strdup: 50
+   56 			malloc: <>
+   57 			failed: void (), <./ncurses/progs/tset.c 189>
+   58 				strlen: <>
+   59 				strcpy: <>
+   60 				strcat: <>
+   61 				perror: <>
+   62 				strncat: <>
+   63 				exit_error: void (), <./ncurses/progs/tset.c 166>
+   64 					SET_TTY: <>
+   65 					fprintf: <>
+   66 					fflush: <>
+   67 					ExitProgram: 9
+   68 			strpbrk: <>
+   69 			done: RETSIGTYPE (), <./ncurses/test/xmas.c 1147>
+   70 				CATCHALL: <>
+   71 				done: 69
+   72 				move: <>
+   73 				refresh: <>
+   74 				endwin: <>
+   75 				curs_set: <>
+   76 				free: <>
+   77 				ExitProgram: 9
+   78 			strchr: <>
+   79 			tbaudrate: int (), <./ncurses/progs/tset.c 354>
+   80 				CaselessCmp: int (), <./ncurses/progs/tset.c 154>
+   81 					LOWERCASE: <>
+   82 				err: void (), <./ncurses/progs/tset.c 177>
+   83 					va_start: <>
+   84 					fprintf: <>
+   85 					vfprintf: <>
+   86 					va_end: <>
+   87 					exit_error: 63
+   88 			err: 82
+   89 			free: <>
+   90 			printf: <>
+   91 		arg_to_char: char (), <./ncurses/progs/tset.c 1156>
+   92 			CTRL: <>
+   93 		usage: void (), <./ncurses/progs/tset.c 1129>
+   94 			fprintf: <>
+   95 			exit_error: 63
+   96 		GET_TTY: <>
+   97 		failed: 57
+   98 		cfgetospeed: <>
+   99 		strcmp: if (), <./ncurses/progs/tic.c 1117>
+  100 		reset_mode: void (), <./ncurses/progs/tset.c 734>
+  101 			tcgetattr: <>
+  102 			stty: <>
+  103 			CHK: <>
+  104 			SET_TTY: <>
+  105 		get_termcap_entry: const char * (), <./ncurses/progs/tset.c 547>
+  106 			getenv: <>
+  107 			ttyname: <>
+  108 			getttynam: <>
+  109 			fopen: <>
+  110 			fgets: <>
+  111 			isspace: <>
+  112 			UChar: <>
+  113 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+  114 			strdup: 50
+  115 			fclose: <>
+  116 			mapped: const char * (), <./ncurses/progs/tset.c 500>
+  117 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+  118 			strncmp: if (), <./ncurses/ncurses/tinfo/strings.c 54>
+  119 			askuser: const char * (), <./ncurses/progs/tset.c 229>
+  120 				clearerr: <>
+  121 				feof: <>
+  122 				ferror: <>
+  123 				fprintf: <>
+  124 				exit_error: 63
+  125 				fflush: <>
+  126 				fgets: <>
+  127 				strchr: <>
+  128 			setupterm: <>
+  129 			fprintf: <>
+  130 			tgetflag: <>
+  131 		ioctl: <>
+  132 		WINSIZE_ROWS: <>
+  133 		WINSIZE_COLS: <>
+  134 		set_control_chars: void (), <./ncurses/progs/tset.c 889>
+  135 			DISABLED: <>
+  136 			default_erase: int (), <./ncurses/progs/tset.c 866>
+  137 				strlen: <>
+  138 		set_conversions: void (), <./ncurses/progs/tset.c 910>
+  139 			tgetflag: <>
+  140 		set_init: void (), <./ncurses/progs/tset.c 974>
+  141 			SET_TTY: <>
+  142 			set_tabs: bool (), <./ncurses/progs/tset.c 1024>
+  143 				putc: <>
+  144 				tputs: <>
+  145 				outc: int (), <./ncurses/progs/tset.c 222>
+  146 					putc: <>
+  147 				fputs: <>
+  148 			tputs: <>
+  149 			outc: 145
+  150 			cat: void (), <./ncurses/progs/tset.c 206>
+  151 				fopen: <>
+  152 				failed: 57
+  153 				fread: <>
+  154 				fwrite: <>
+  155 				fclose: <>
+  156 			putc: <>
+  157 			fflush: <>
+  158 			napms: <>
+  159 		memcmp: <>
+  160 		SET_TTY: <>
+  161 		printf: <>
+  162 		fprintf: <>
+  163 		report: void (), <./ncurses/progs/tset.c 1061>
+  164 			fprintf: <>
+  165 			DISABLED: <>
+  166 			UChar: <>
+  167 		err: 82
+  168 		strlen: <>
+  169 		tputs: <>
+  170 		isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+  171 		usage: void (), <./ncurses/progs/toe.c 319>
+  172 			fprintf: <>
+  173 			ExitProgram: 9
+  174 		set_trace_level: <>
+  175 		freopen: <>
+  176 		fflush: <>
+  177 		for_entry_list: <>
+  178 		putchar: <>
+  179 		typelist: int (), <./ncurses/progs/toe.c 156>
+  180 			opendir: <>
+  181 			fflush: <>
+  182 			fprintf: <>
+  183 			printf: <>
+  184 			readdir: <>
+  185 			NAMLEN: <>
+  186 			strlen: <>
+  187 			typeRealloc: <>
+  188 			perror: <>
+  189 			strncpy: <>
+  190 			isDotname: <>
+  191 			sprintf: <>
+  192 			chdir: <>
+  193 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+  194 			closedir: <>
+  195 			free: <>
+  196 			make_db_name: bool (), <./ncurses/progs/toe.c 66>
+  197 				strlen: <>
+  198 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+  199 				strcpy: <>
+  200 				sprintf: <>
+  201 			cgetfirst: <>
+  202 			show_termcap: void (), <./ncurses/progs/toe.c 130>
+  203 				strchr: <>
+  204 				strrchr: <>
+  205 				strdup: 50
+  206 				strtok: <>
+  207 				free: <>
+  208 			cgetnext: <>
+  209 			cgetclose: <>
+  210 			fopen: <>
+  211 			fgets: <>
+  212 			isspace: <>
+  213 			fclose: <>
+  214 		deschook: void (), <./ncurses/progs/toe.c 117>
+  215 			strrchr: <>
+  216 			printf: <>
+  217 		is_database: bool (), <./ncurses/progs/toe.c 88>
+  218 			access: <>
+  219 			make_db_name: 196
+  220 		strdup: 50
+  221 		typeCalloc: <>
+  222 		free: <>
+  223 		use_extended_names: <>
+  224 		memcpy: <>
+  225 		optarg_to_number: int (), <./ncurses/progs/infocmp.c 1226>
+  226 			strtol: <>
+  227 			fprintf: <>
+  228 			ExitProgram: 9
+  229 		usage: void (), <./ncurses/progs/infocmp.c 972>
+  230 			SIZEOF: <>
+  231 			fprintf: <>
+  232 			ExitProgram: 9
+  233 		typeMalloc: <>
+  234 		dump_init: void (), <./ncurses/progs/dump_entry.c 175>
+  235 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+  236 			fprintf: <>
+  237 		terminal_env: char * (), <./ncurses/progs/infocmp.c 1239>
+  238 			getenv: <>
+  239 			fprintf: <>
+  240 			exit: <>
+  241 		sprintf: <>
+  242 		repair_acsc: void (), <./ncurses/progs/dump_entry.c 1231>
+  243 			VALID_STRING: <>
+  244 			UChar: <>
+  245 			memset: <>
+  246 		dump_termtype: void (), <./ncurses/progs/infocmp.c 1187>
+  247 			printf: <>
+  248 			name_initializer: char * (), <./ncurses/progs/infocmp.c 1052>
+  249 				any_initializer: char * (), <./ncurses/progs/infocmp.c 1032>
+  250 					malloc: <>
+  251 					strlen: <>
+  252 					strcpy: <>
+  253 					isalnum: <>
+  254 					UChar: <>
+  255 					sprintf: <>
+  256 			NUM_BOOLEANS: <>
+  257 			NUM_NUMBERS: <>
+  258 			NUM_STRINGS: <>
+  259 		dump_initializers: void (), <./ncurses/progs/infocmp.c 1065>
+  260 			printf: <>
+  261 			name_initializer: 248
+  262 			for_each_string: <>
+  263 			VALID_STRING: <>
+  264 			isascii: <>
+  265 			UChar: <>
+  266 			isprint: if (), <./ncurses/form/fld_pad.c 56>
+  267 				sprintf: <>
+  268 			sprintf: <>
+  269 			string_variable: char * (), <./ncurses/progs/infocmp.c 1058>
+  270 				any_initializer: 249
+  271 			ExtStrname: <>
+  272 			for_each_boolean: <>
+  273 			ExtBoolname: <>
+  274 			for_each_number: <>
+  275 			ExtNumname: <>
+  276 			NUM_BOOLEANS: <>
+  277 			NUM_NUMBERS: <>
+  278 			NUM_STRINGS: <>
+  279 		analyze_string: void (), <./ncurses/progs/infocmp.c 604>
+  280 			printf: <>
+  281 			strlen: <>
+  282 			strncpy: <>
+  283 			ISRS: <>
+  284 			skip_csi: int (), <./ncurses/progs/infocmp.c 548>
+  285 				UChar: <>
+  286 			strncmp: if (), <./ncurses/ncurses/tinfo/strings.c 54>
+  287 			strspn: <>
+  288 			strcpy: <>
+  289 			lookup_params: char * (), <./ncurses/progs/infocmp.c 569>
+  290 				strtok: <>
+  291 				strlen: <>
+  292 				same_param: bool (), <./ncurses/progs/infocmp.c 559>
+  293 					strncmp: if (), <./ncurses/ncurses/tinfo/strings.c 54>
+  294 					isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+  295 					UChar: <>
+  296 				strcat: <>
+  297 			strcat: <>
+  298 			sprintf: <>
+  299 			fputs: <>
+  300 			TIC_EXPAND: <>
+  301 			putchar: <>
+  302 		dump_entry: void (), <./ncurses/progs/dump_entry.c 1019>
+  303 			set_obsolete_termcaps: void (), <./ncurses/progs/dump_entry.c 1221>
+  304 			FMT_ENTRY: <>
+  305 			SHOW_WHY: <>
+  306 			NUM_STRINGS: <>
+  307 			ExtStrname: <>
+  308 			VALID_STRING: <>
+  309 			strlen: <>
+  310 			purged_acs: bool (), <./ncurses/progs/dump_entry.c 1000>
+  311 				VALID_STRING: <>
+  312 				one_one_mapping: bool (), <./ncurses/progs/dump_entry.c 973>
+  313 					isLine: <>
+  314 				SHOW_WHY: <>
+  315 			kill_labels: int (), <./ncurses/progs/dump_entry.c 921>
+  316 				sprintf: <>
+  317 				find_string: char * (), <./ncurses/progs/dump_entry.c 900>
+  318 					NUM_STRINGS: <>
+  319 					version_filter: bool (), <./ncurses/progs/dump_entry.c 305>
+  320 						BOOL_IDX: <>
+  321 						NUM_IDX: <>
+  322 						STR_IDX: <>
+  323 						FNKEY: <>
+  324 						is_termcap: <>
+  325 					strcmp: if (), <./ncurses/progs/tic.c 1117>
+  326 					VALID_STRING: <>
+  327 				kill_string: bool (), <./ncurses/progs/dump_entry.c 887>
+  328 					NUM_STRINGS: <>
+  329 				strlen: <>
+  330 			kill_fkeys: int (), <./ncurses/progs/dump_entry.c 946>
+  331 				sprintf: <>
+  332 				find_string: 317
+  333 				kill_string: 327
+  334 				strlen: <>
+  335 			fprintf: <>
+  336 			version_filter: 319
+  337 			STR_IDX: <>
+  338 		show_entry: int (), <./ncurses/progs/dump_entry.c 1152>
+  339 			trim_trailing: void (), <./ncurses/progs/dump_entry.c 378>
+  340 			fputs: <>
+  341 			putchar: <>
+  342 		compare_entry: void (), <./ncurses/progs/dump_entry.c 1161>
+  343 			fputs: <>
+  344 			for_each_boolean: <>
+  345 			BoolIndirect: <>
+  346 			ExtBoolname: <>
+  347 			isObsolete: <>
+  348 			for_each_number: <>
+  349 			NumIndirect: <>
+  350 			ExtNumname: <>
+  351 			for_each_string: <>
+  352 			StrIndirect: <>
+  353 			ExtStrname: <>
+  354 		compare_predicate: void (), <./ncurses/progs/infocmp.c 335>
+  355 			printf: <>
+  356 			dump_boolean: const char * (), <./ncurses/progs/infocmp.c 287>
+  357 			dump_numeric: void (), <./ncurses/progs/infocmp.c 305>
+  358 				strcpy: <>
+  359 				sprintf: <>
+  360 			capcmp: int (), <./ncurses/progs/infocmp.c 123>
+  361 				VALID_STRING: <>
+  362 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+  363 			dump_string: void (), <./ncurses/progs/infocmp.c 322>
+  364 				strcpy: <>
+  365 				sprintf: <>
+  366 				TIC_EXPAND: <>
+  367 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+  368 			TIC_EXPAND: <>
+  369 			useeq: bool (), <./ncurses/progs/infocmp.c 221>
+  370 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+  371 			fputs: <>
+  372 			print_uses: void (), <./ncurses/progs/infocmp.c 271>
+  373 				fputs: <>
+  374 		use_predicate: int (), <./ncurses/progs/infocmp.c 138>
+  375 			VALID_NUMERIC: <>
+  376 			capcmp: 360
+  377 		dump_uses: void (), <./ncurses/progs/dump_entry.c 1140>
+  378 			trim_trailing: 339
+  379 			sprintf: <>
+  380 			wrap_concat: void (), <./ncurses/progs/dump_entry.c 394>
+  381 				strlen: <>
+  382 				force_wrap: void (), <./ncurses/progs/dump_entry.c 385>
+  383 					trim_trailing: 339
+  384 					strcpy_DYN: void (), <./ncurses/progs/dump_entry.c 116>
+  385 						strcpy_DYN: 384
+  386 						strncpy_DYN: void (), <./ncurses/progs/dump_entry.c 103>
+  387 							typeRealloc: <>
+  388 							strncpy: <>
+  389 						strlen: <>
+  390 				strcpy_DYN: 384
+  391 		file_comparison: void (), <./ncurses/progs/infocmp.c 788>
+  392 			memset: <>
+  393 			dump_init: 234
+  394 			freopen: <>
+  395 			fprintf: <>
+  396 			for_entry_list: <>
+  397 			fputs: <>
+  398 			fputc: <>
+  399 			ExitProgram: 9
+  400 			printf: <>
+  401 			repair_acsc: 242
+  402 			entryeq: bool (), <./ncurses/progs/infocmp.c 248>
+  403 				NUM_BOOLEANS: <>
+  404 				NUM_NUMBERS: <>
+  405 				NUM_STRINGS: <>
+  406 				capcmp: 360
+  407 			useeq: 369
+  408 			canonical_name: char * (), <./ncurses/progs/infocmp.c 104>
+  409 				strcpy: <>
+  410 				strchr: <>
+  411 			compare_entry: 342
+  412 			compare_predicate: 354
+  413 		usage: void (), <./ncurses/progs/tic.c 127>
+  414 			fprintf: <>
+  415 			SIZEOF: <>
+  416 			fputs: <>
+  417 			putc: <>
+  418 			ExitProgram: 9
+  419 		cleanup: void (), <./ncurses/progs/tic.c 102>
+  420 			free_namelist: void (), <./ncurses/progs/tic.c 90>
+  421 				free: <>
+  422 			fclose: <>
+  423 			remove: <>
+  424 			unlink: <>
+  425 		make_namelist: char ** (), <./ncurses/progs/tic.c 374>
+  426 			strchr: <>
+  427 			open_input: FILE * (), <./ncurses/progs/tic.c 355>
+  428 				fopen: <>
+  429 				fprintf: <>
+  430 				ExitProgram: 9
+  431 				fstat: <>
+  432 				fileno: <>
+  433 			fgets: <>
+  434 			stripped: char * (), <./ncurses/progs/tic.c 340>
+  435 				isspace: <>
+  436 				UChar: <>
+  437 				strcpy: <>
+  438 				malloc: <>
+  439 				strlen: <>
+  440 			free: <>
+  441 			typeCalloc: <>
+  442 			rewind: <>
+  443 			fclose: <>
+  444 			fprintf: <>
+  445 		save_check_termtype: void () (), <./ncurses/progs/tic.c 58>
+  446 		check_termtype: void (), <./ncurses/progs/tic.c 1360>
+  447 			memset: <>
+  448 			VALID_STRING: <>
+  449 			fprintf: <>
+  450 			keyname: <>
+  451 			NUM_STRINGS: <>
+  452 			check_params: void (), <./ncurses/progs/tic.c 1132>
+  453 			ExtStrname: <>
+  454 			check_acs: void (), <./ncurses/progs/tic.c 822>
+  455 				VALID_STRING: <>
+  456 				memset: <>
+  457 				UChar: <>
+  458 				assert: <>
+  459 				strlen: <>
+  460 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+  461 			check_colors: void (), <./ncurses/progs/tic.c 862>
+  462 				PAIRED: <>
+  463 				VALID_STRING: <>
+  464 				VALID_NUMERIC: <>
+  465 			check_keypad: void (), <./ncurses/progs/tic.c 932>
+  466 				VALID_STRING: <>
+  467 				keypad_final: char (), <./ncurses/progs/tic.c 896>
+  468 					VALID_STRING: <>
+  469 					strlen: <>
+  470 				assert: <>
+  471 				strlen: <>
+  472 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+  473 				keypad_index: int (), <./ncurses/progs/tic.c 911>
+  474 					keypad_final: 467
+  475 					strchr: <>
+  476 				strcat: <>
+  477 			ANDMISSING: <>
+  478 			PRESENT: <>
+  479 			strdup: 50
+  480 			CHECK_SGR: <>
+  481 			TPARM_9: <>
+  482 			free: <>
+  483 			show_where: void (), <./ncurses/progs/tic.c 1341>
+  484 				DEBUG_LEVEL: <>
+  485 				fprintf: <>
+  486 			DEBUG: <>
+  487 			save_check_termtype: void () (), <./ncurses/progs/tic.c 58>
+  488 		access: <>
+  489 		open_tempfile: FILE * (), <./ncurses/progs/tic.c 453>
+  490 			mkstemp: <>
+  491 			fdopen: <>
+  492 			tmpnam: <>
+  493 			fopen: <>
+  494 		strcpy: <>
+  495 		fclose: <>
+  496 		open_input: 427
+  497 		failed: void (), <./ncurses/progs/tic.c 119>
+  498 			perror: <>
+  499 			cleanup: 419
+  500 			ExitProgram: 9
+  501 		immedhook: bool (), <./ncurses/progs/tic.c 229>
+  502 			write_it: void (), <./ncurses/progs/tic.c 179>
+  503 				VALID_STRING: <>
+  504 				strchr: <>
+  505 				strtol: <>
+  506 				isprint: 266
+  507 				strlen: <>
+  508 				strcpy: <>
+  509 			free: <>
+  510 		matches: bool (), <./ncurses/progs/tic.c 434>
+  511 		fmt_entry: int (), <./ncurses/progs/dump_entry.c 563>
+  512 			dump_predicate: int (), <./ncurses/progs/dump_entry.c 271>
+  513 			strcpy_DYN: 384
+  514 			force_wrap: 382
+  515 			for_each_boolean: <>
+  516 			BoolIndirect: <>
+  517 			ExtBoolname: <>
+  518 			assert: <>
+  519 			strlen: <>
+  520 			version_filter: 319
+  521 			isObsolete: <>
+  522 			strcpy: <>
+  523 			strcat: <>
+  524 			for_each_number: <>
+  525 			NumIndirect: <>
+  526 			ExtNumname: <>
+  527 			sprintf: <>
+  528 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+  529 			DISCARD: <>
+  530 			for_each_string: <>
+  531 			StrIndirect: <>
+  532 			ExtStrname: <>
+  533 			PRESENT: <>
+  534 			SAME_CAP: <>
+  535 			VALID_STRING: <>
+  536 			SIZEOF: <>
+  537 			fmt_complex: char * (), <./ncurses/progs/dump_entry.c 476>
+  538 				has_params: bool (), <./ncurses/progs/dump_entry.c 452>
+  539 					strlen: <>
+  540 					strncmp: if (), <./ncurses/ncurses/tinfo/strings.c 54>
+  541 				strncpy_DYN: 386
+  542 				indent_DYN: void (), <./ncurses/progs/dump_entry.c 443>
+  543 					strncpy_DYN: 386
+  544 				fmt_complex: 537
+  545 			wrap_concat: 380
+  546 			free: <>
+  547 			strchr: <>
+  548 			fprintf: <>
+  549 			termcap_length: int (), <./ncurses/progs/dump_entry.c 424>
+  550 				strlen: <>
+  551 				IGNORE_SEP_TRAIL: <>
+  552 		write_it: 502
+  553 		fseek: <>
+  554 		fgetc: <>
+  555 		put_translate: void (), <./ncurses/progs/tic.c 279>
+  556 			typeRealloc: <>
+  557 			putchar: <>
+  558 			fputs: <>
+  559 			strchr: <>
+  560 			strcpy: <>
+  561 			nametrans: NCURSES_CONST char * (), <./ncurses/progs/dump_entry.c 151>
+  562 				NameTrans: <>
+  563 		fileno: <>
+  564 		CharOf: <>
+  565 		isatty: <>
+  566 		usage: void (), <./ncurses/ncurses/tty/hashmap.c 425>
+  567 			fprintf: <>
+  568 		fputs: <>
+  569 		strtok: <>
+  570 		atoi: <>
+  571 		exit: <>
+  572 		load_term: void (), <./ncurses/ncurses/tty/lib_mvcur.c 1006>
+  573 			setupterm: <>
+  574 		baudrate: <>
+  575 		NC_BUFFERED: <>
+  576 		termname: <>
+  577 		sscanf: <>
+  578 		gettimeofday: <>
+  579 		mvcur: <>
+  580 		srand: <>
+  581 		getpid: <>
+  582 		time: <>
+  583 		roll: int (), <./ncurses/ncurses/tty/lib_mvcur.c 1012>
+  584 			rand: <>
+  585 		strchr: <>
+  586 		parse_columns: char ** (), <./ncurses/ncurses/tinfo/comp_hash.c 198>
+  587 			typeCalloc: <>
+  588 			isspace: <>
+  589 			UChar: <>
+  590 			assert: <>
+  591 		write_list: void (), <./ncurses/ncurses/tinfo/make_keys.c 103>
+  592 			fprintf: <>
+  593 		fopen: <>
+  594 		make_keys: void (), <./ncurses/ncurses/tinfo/make_keys.c 71>
+  595 			fgets: <>
+  596 			sscanf: <>
+  597 			strlen: <>
+  598 			fprintf: <>
+  599 		setlocale: <>
+  600 		filter: <>
+  601 		newterm: <>
+  602 		cbreak: <>
+  603 		keypad: <>
+  604 		has_colors: if (), <./ncurses/test/xmas.c 156>
+  605 		start_color: <>
+  606 		use_default_colors: <>
+  607 		init_pair: <>
+  608 		COLOR_PAIR: <>
+  609 		new_command: int (), <./ncurses/test/filter.c 51>
+  610 			attron: <>
+  611 			printw: <>
+  612 			getnstr: <>
+  613 			strcpy: <>
+  614 			getch: <>
+  615 			attroff: <>
+  616 		reset_shell_mode: <>
+  617 		system: <>
+  618 		reset_prog_mode: <>
+  619 		touchwin: <>
+  620 		erase: <>
+  621 		refresh: <>
+  622 		printw: <>
+  623 		endwin: <>
+  624 		message: void (), <./ncurses/test/movewindow.c 79>
+  625 			getyx: <>
+  626 			move: <>
+  627 			clrtoeol: <>
+  628 			vsprintf: <>
+  629 			addstr: <>
+  630 			vwprintw: <>
+  631 			refresh: <>
+  632 		CATCHALL: <>
+  633 		trap: RETSIGTYPE (), <./ncurses/test/newdemo.c 51>
+  634 			endwin: <>
+  635 			ExitProgram: 9
+  636 		initscr: <>
+  637 		curs_set: <>
+  638 		newwin: <>
+  639 		set_colors: void (), <./ncurses/test/newdemo.c 81>
+  640 			has_colors: if (), <./ncurses/test/xmas.c 156>
+  641 			init_pair: <>
+  642 			wattrset: <>
+  643 			COLOR_PAIR: <>
+  644 		werase: <>
+  645 		box: <>
+  646 		wrefresh: <>
+  647 		use_colors: chtype (), <./ncurses/test/newdemo.c 92>
+  648 			has_colors: if (), <./ncurses/test/xmas.c 156>
+  649 			COLOR_PAIR: <>
+  650 			wattrset: <>
+  651 		rand: <>
+  652 		mvwaddch: <>
+  653 		nodelay: <>
+  654 		wgetch: <>
+  655 		SubWinTest: int (), <./ncurses/test/newdemo.c 107>
+  656 			getmaxyx: <>
+  657 			getbegyx: <>
+  658 			subwin: <>
+  659 			set_colors: 639
+  660 			werase: <>
+  661 			mvwaddstr: <>
+  662 			wrefresh: <>
+  663 			delwin: <>
+  664 			WaitForUser: int (), <./ncurses/test/newdemo.c 61>
+  665 				nodelay: <>
+  666 				time: <>
+  667 				wgetch: <>
+  668 		wbkgd: <>
+  669 		mvwaddstr: <>
+  670 		delay_output: <>
+  671 		strcat: <>
+  672 		mvwaddnstr: <>
+  673 		flushinp: <>
+  674 		memset: <>
+  675 		mvwinch: <>
+  676 		WaitForUser: 664
+  677 		BouncingBalls: int (), <./ncurses/test/newdemo.c 161>
+  678 			getmaxyx: <>
+  679 			rand: <>
+  680 			nodelay: <>
+  681 			wgetch: <>
+  682 			bounce: int (), <./ncurses/test/newdemo.c 146>
+  683 			set_colors: 639
+  684 			mvwaddch: <>
+  685 			wmove: <>
+  686 			wrefresh: <>
+  687 			delay_output: <>
+  688 		die: RETSIGTYPE (), <./ncurses/test/blue.c 136>
+  689 			signal: <>
+  690 			endwin: <>
+  691 			ExitProgram: 9
+  692 		OR_COLORS: <>
+  693 		PC_COLORS: <>
+  694 		tigetstr: <>
+  695 		init_vars: void (), <./ncurses/test/blue.c 144>
+  696 		shuffle: void (), <./ncurses/test/blue.c 156>
+  697 			rand: <>
+  698 		deal_cards: void (), <./ncurses/test/blue.c 172>
+  699 			memset: <>
+  700 		display_cards: void (), <./ncurses/test/blue.c 213>
+  701 			clear: <>
+  702 			printw: <>
+  703 			move: <>
+  704 			printcard: void (), <./ncurses/test/blue.c 199>
+  705 				addch: <>
+  706 				addstr: <>
+  707 				COLOR_PAIR: <>
+  708 			refresh: <>
+  709 			P: <>
+  710 		play_game: void (), <./ncurses/test/blue.c 274>
+  711 			find: int (), <./ncurses/test/blue.c 246>
+  712 			move: <>
+  713 			printw: <>
+  714 			strlen: <>
+  715 			refresh: <>
+  716 			sleep: <>
+  717 			sprintf: <>
+  718 			addstr: <>
+  719 			clrtoeol: <>
+  720 			addch: <>
+  721 			getch: <>
+  722 			display_cards: 700
+  723 			die: 688
+  724 			beep: <>
+  725 			movecard: void (), <./ncurses/test/blue.c 259>
+  726 				move: <>
+  727 				printcard: 704
+  728 				refresh: <>
+  729 			standout: <>
+  730 			standend: <>
+  731 		collect_discards: int (), <./ncurses/test/blue.c 363>
+  732 		game_finished: void (), <./ncurses/test/blue.c 385>
+  733 			clear: <>
+  734 			printw: <>
+  735 			standout: <>
+  736 			addstr: <>
+  737 			standend: <>
+  738 			refresh: <>
+  739 		PDC_debug: <>
+  740 		initTest: int (), <./ncurses/test/testcurs.c 180>
+  741 			PDC_debug: <>
+  742 			trace: <>
+  743 			initscr: <>
+  744 			has_colors: if (), <./ncurses/test/xmas.c 156>
+  745 			start_color: <>
+  746 			newwin: <>
+  747 			endwin: <>
+  748 		display_menu: void (), <./ncurses/test/testcurs.c 717>
+  749 			assert: <>
+  750 			attrset: <>
+  751 			mvaddstr: <>
+  752 			refresh: <>
+  753 		noecho: <>
+  754 		raw: <>
+  755 		getch: <>
+  756 		isalpha: <>
+  757 		islower: <>
+  758 		toupper: <>
+  759 		beep: <>
+  760 		delwin: <>
+  761 		XCursesExit: <>
+  762 		usage: void (), <./ncurses/test/key_names.c 37>
+  763 			fprintf: <>
+  764 			ExitProgram: 9
+  765 		meta: <>
+  766 		key_name: <>
+  767 		onsig: void (), <./ncurses/test/echochar.c 56>
+  768 		ranf: float (), <./ncurses/test/echochar.c 62>
+  769 			rand: <>
+  770 		move: <>
+  771 		set_color: void (), <./ncurses/test/echochar.c 69>
+  772 			init_pair: <>
+  773 			attron: <>
+  774 			COLOR_PAIR: <>
+  775 		napms: <>
+  776 		attron: <>
+  777 		attroff: <>
+  778 		addch: <>
+  779 		echochar: <>
+  780 		cleanup: void (), <./ncurses/test/echochar.c 46>
+  781 			endwin: <>
+  782 			printf: <>
+  783 			time: <>
+  784 		init_panel: void (), <./ncurses/test/demo_panels.c 358>
+  785 			wprintw: <>
+  786 		fill_panel: void (), <./ncurses/test/demo_panels.c 369>
+  787 			panel_window: <>
+  788 			panel_userptr: <>
+  789 			wmove: <>
+  790 			wprintw: <>
+  791 			wclrtoeol: <>
+  792 			box: <>
+  793 			getmaxy: <>
+  794 			getmaxx: <>
+  795 			waddch: <>
+  796 			UChar: <>
+  797 		init_wide_panel: void (), <./ncurses/test/demo_panels.c 416>
+  798 			make_fullwidth_digit: void (), <./ncurses/test/demo_panels.c 406>
+  799 				setcchar: <>
+  800 			getyx: <>
+  801 			add_wch: <>
+  802 		fill_wide_panel: void (), <./ncurses/test/demo_panels.c 432>
+  803 			panel_window: <>
+  804 			panel_userptr: <>
+  805 			wmove: <>
+  806 			wprintw: <>
+  807 			wclrtoeol: <>
+  808 			box: <>
+  809 			getmaxy: <>
+  810 			getmaxx: <>
+  811 			waddch: <>
+  812 			UChar: <>
+  813 		usage: void (), <./ncurses/test/demo_panels.c 734>
+  814 			SIZEOF: <>
+  815 			fprintf: <>
+  816 			ExitProgram: 9
+  817 		fill_unboxed: void (), <./ncurses/test/demo_panels.c 389>
+  818 			panel_window: <>
+  819 			panel_userptr: <>
+  820 			getmaxy: <>
+  821 			getmaxx: <>
+  822 			wmove: <>
+  823 			waddch: <>
+  824 			UChar: <>
+  825 		demo_panels: void (), <./ncurses/test/demo_panels.c 707>
+  826 			scrollok: <>
+  827 			refresh: <>
+  828 			memset: <>
+  829 			get_command: bool (), <./ncurses/test/demo_panels.c 625>
+  830 				getyx: <>
+  831 				statusline: WINDOW * (), <./ncurses/test/demo_panels.c 70>
+  832 					wmove: <>
+  833 					wclrtoeol: <>
+  834 				waddstr: <>
+  835 				fgets: <>
+  836 				strlen: <>
+  837 				isspace: <>
+  838 				UChar: <>
+  839 				close_input: void (), <./ncurses/test/demo_panels.c 52>
+  840 					fclose: <>
+  841 				wgetch: <>
+  842 				CTRL: <>
+  843 				wrefresh: <>
+  844 				show_panels: void (), <./ncurses/test/demo_panels.c 469>
+  845 					valid: <>
+  846 					panel_hidden: <>
+  847 					panel_above: <>
+  848 					panel_below: <>
+  849 					newwin: <>
+  850 					keypad: <>
+  851 					new_panel: <>
+  852 					werase: <>
+  853 					mvwprintw: <>
+  854 					wprintw: <>
+  855 					waddstr: <>
+  856 					which_panel: int (), <./ncurses/test/demo_panels.c 454>
+  857 					waddch: <>
+  858 					SIZEOF: <>
+  859 					wgetch: <>
+  860 					del_panel: <>
+  861 					pflush: void (), <./ncurses/test/demo_panels.c 80>
+  862 						update_panels: <>
+  863 						doupdate: <>
+  864 					delwin: <>
+  865 				beep: <>
+  866 				ok_letter: bool (), <./ncurses/test/demo_panels.c 607>
+  867 				isalpha: <>
+  868 				isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+  869 				wprintw: <>
+  870 				ok_digit: bool (), <./ncurses/test/demo_panels.c 613>
+  871 					isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+  872 					UChar: <>
+  873 				wmove: <>
+  874 				fprintf: <>
+  875 			strlen: <>
+  876 			do_panel: <>
+  877 			pflush: 861
+  878 			my_remove_panel: void (), <./ncurses/test/demo_panels.c 232>
+  879 				panel_window: <>
+  880 				panel_userptr: <>
+  881 				free: <>
+  882 				del_panel: <>
+  883 				delwin: <>
+  884 		close_input: 839
+  885 		close_output: void (), <./ncurses/test/demo_panels.c 61>
+  886 			fclose: <>
+  887 		assert: <>
+  888 		usage: void (), <./ncurses/test/hashtest.c 151>
+  889 			SIZEOF: <>
+  890 			fprintf: <>
+  891 			ExitProgram: 9
+  892 		trace: <>
+  893 		finish: RETSIGTYPE (), <./ncurses/test/hashtest.c 58>
+  894 			cleanup: void (), <./ncurses/test/hashtest.c 49>
+  895 				move: <>
+  896 				clrtoeol: <>
+  897 				refresh: <>
+  898 				endwin: <>
+  899 			ExitProgram: 9
+  900 		nonl: <>
+  901 		scrollok: <>
+  902 		run_test: void (), <./ncurses/test/hashtest.c 121>
+  903 			Trace: <>
+  904 			one_cycle: void (), <./ncurses/test/hashtest.c 110>
+  905 				genlines: void (), <./ncurses/test/hashtest.c 65>
+  906 					Trace: <>
+  907 					scrollok: <>
+  908 					move: <>
+  909 					addch: <>
+  910 					UChar: <>
+  911 					getch: <>
+  912 					refresh: <>
+  913 		cleanup: 894
+  914 		unlink: <>
+  915 		demo_foldkeys: void (), <./ncurses/test/foldkeys.c 104>
+  916 			keypad: <>
+  917 			tigetstr: <>
+  918 			key_defined: <>
+  919 			keyname: <>
+  920 			printw: <>
+  921 			sscanf: <>
+  922 			strdup: char * (), <./ncurses/test/demo_menus.c 115>
+  923 				typeMalloc: <>
+  924 				strlen: <>
+  925 				strcpy: <>
+  926 			sprintf: <>
+  927 			strcmp: if (), <./ncurses/progs/tic.c 1117>
+  928 			define_key: <>
+  929 			keyok: <>
+  930 			free: <>
+  931 		keyname: <>
+  932 		log_last_line: void (), <./ncurses/test/foldkeys.c 63>
+  933 			fopen: <>
+  934 			getyx: <>
+  935 			wmove: <>
+  936 			winnstr: <>
+  937 			isspace: <>
+  938 			UChar: <>
+  939 			fprintf: <>
+  940 			fclose: <>
+  941 		clrtoeol: <>
+  942 		usage: void (), <./ncurses/test/ditto.c 110>
+  943 			fprintf: <>
+  944 			ExitProgram: 9
+  945 		failed: void (), <./ncurses/test/ditto.c 103>
+  946 			perror: <>
+  947 			ExitProgram: 9
+  948 		open_screen: void (), <./ncurses/test/ditto.c 227>
+  949 			open_tty: FILE * (), <./ncurses/test/ditto.c 147>
+  950 				openpty: <>
+  951 				strlen: <>
+  952 				failed: 945
+  953 				strrchr: <>
+  954 				sprintf: <>
+  955 				fork: <>
+  956 				execlp: <>
+  957 				fdopen: <>
+  958 				stat: <>
+  959 				fopen: <>
+  960 				printf: <>
+  961 				assert: <>
+  962 			newterm: <>
+  963 			failed: 945
+  964 			USING_SCREEN: <>
+  965 			init_screen: void (), <./ncurses/test/ditto.c 191>
+  966 				cbreak: <>
+  967 				noecho: <>
+  968 				scrollok: <>
+  969 				box: <>
+  970 				typeCalloc: <>
+  971 				newwin: <>
+  972 				derwin: <>
+  973 				mvwaddstr: <>
+  974 				wnoutrefresh: <>
+  975 				keypad: <>
+  976 				nodelay: <>
+  977 				doupdate: <>
+  978 		pthread_create: <>
+  979 		handle_screen: void * (), <./ncurses/test/ditto.c 320>
+  980 			memset: <>
+  981 			read_screen: int (), <./ncurses/test/ditto.c 262>
+  982 				wgetch: <>
+  983 				put_fifo: void (), <./ncurses/test/ditto.c 118>
+  984 					NEXT_FIFO: <>
+  985 			CTRL: <>
+  986 			pthread_cancel: <>
+  987 			show_ditto: void (), <./ncurses/test/ditto.c 308>
+  988 				USING_SCREEN: <>
+  989 				write_screen: int (), <./ncurses/test/ditto.c 281>
+  990 					peek_fifo: int (), <./ncurses/test/ditto.c 136>
+  991 						THIS_FIFO: <>
+  992 					waddch: <>
+  993 					wnoutrefresh: <>
+  994 					doupdate: <>
+  995 		pthread_join: <>
+  996 		USING_SCREEN: <>
+  997 		read_screen: 981
+  998 		CTRL: <>
+  999 		show_ditto: 987
+ 1000 		close_screen: int (), <./ncurses/test/ditto.c 251>
+ 1001 			endwin: <>
+ 1002 		delscreen: <>
+ 1003 		derwin: <>
+ 1004 		wnoutrefresh: <>
+ 1005 		test_inchs: int (), <./ncurses/test/inch_wide.c 60>
+ 1006 			beep: <>
+ 1007 			newwin: <>
+ 1008 			box: <>
+ 1009 			wnoutrefresh: <>
+ 1010 			derwin: <>
+ 1011 			getmaxy: <>
+ 1012 			getmaxx: <>
+ 1013 			keypad: <>
+ 1014 			cbreak: <>
+ 1015 			noecho: <>
+ 1016 			wmove: <>
+ 1017 			fopen: <>
+ 1018 			fgetc: <>
+ 1019 			waddch: <>
+ 1020 			UChar: <>
+ 1021 			fclose: <>
+ 1022 			wprintw: <>
+ 1023 			Quit: bool (), <./ncurses/test/inch_wide.c 54>
+ 1024 			mvwgetch: <>
+ 1025 			test_inchs: 1005
+ 1026 			touchwin: <>
+ 1027 			mvwprintw: <>
+ 1028 			wclrtoeol: <>
+ 1029 			win_wch: <>
+ 1030 			wadd_wch: <>
+ 1031 			mvwin_wch: <>
+ 1032 			move: <>
+ 1033 			in_wch: <>
+ 1034 			mvin_wch: <>
+ 1035 			wclrtobot: <>
+ 1036 			win_wchstr: <>
+ 1037 			mvwadd_wchstr: <>
+ 1038 			win_wchnstr: <>
+ 1039 			mvwin_wchstr: <>
+ 1040 			mvwin_wchnstr: <>
+ 1041 			in_wchstr: <>
+ 1042 			in_wchnstr: <>
+ 1043 			mvin_wchstr: <>
+ 1044 			mvin_wchnstr: <>
+ 1045 			delwin: <>
+ 1046 		test_get_wstr: int (), <./ncurses/test/test_get_wstr.c 134>
+ 1047 			getmaxx: <>
+ 1048 			beep: <>
+ 1049 			newwin: <>
+ 1050 			box: <>
+ 1051 			wnoutrefresh: <>
+ 1052 			derwin: <>
+ 1053 			getmaxy: <>
+ 1054 			keypad: <>
+ 1055 			cbreak: <>
+ 1056 			noecho: <>
+ 1057 			wmove: <>
+ 1058 			fopen: <>
+ 1059 			fgetc: <>
+ 1060 			waddch: <>
+ 1061 			UChar: <>
+ 1062 			fclose: <>
+ 1063 			wprintw: <>
+ 1064 			ShowFlavor: int (), <./ncurses/test/test_get_wstr.c 92>
+ 1065 				wmove: <>
+ 1066 				werase: <>
+ 1067 				wprintw: <>
+ 1068 				Remainder: int (), <./ncurses/test/test_get_wstr.c 67>
+ 1069 					getmaxx: <>
+ 1070 					getcurx: <>
+ 1071 				ShowPrompt: void (), <./ncurses/test/test_get_wstr.c 77>
+ 1072 					wchgat: <>
+ 1073 					wnoutrefresh: <>
+ 1074 				wnoutrefresh: <>
+ 1075 			Quit: bool (), <./ncurses/test/test_get_wstr.c 61>
+ 1076 			mvwgetch: <>
+ 1077 			MovePrompt: void (), <./ncurses/test/test_get_wstr.c 84>
+ 1078 				wchgat: <>
+ 1079 				Remainder: 1068
+ 1080 				wmove: <>
+ 1081 				ShowPrompt: 1071
+ 1082 			test_get_wstr: 1046
+ 1083 			touchwin: <>
+ 1084 			echo: <>
+ 1085 			wattrset: <>
+ 1086 			wget_wstr: <>
+ 1087 			move: <>
+ 1088 			get_wstr: <>
+ 1089 			wgetn_wstr: <>
+ 1090 			getn_wstr: <>
+ 1091 			mvwget_wstr: <>
+ 1092 			mvget_wstr: <>
+ 1093 			mvwgetn_wstr: <>
+ 1094 			mvgetn_wstr: <>
+ 1095 			waddwstr: <>
+ 1096 			doupdate: <>
+ 1097 			delwin: <>
+ 1098 		DUMP: <>
+ 1099 		set: void (), <./ncurses/test/gdc.c 127>
+ 1100 		bkgdset: <>
+ 1101 		attrset: <>
+ 1102 		attr_addstr: void (), <./ncurses/test/testaddch.c 37>
+ 1103 			addch: <>
+ 1104 		test_getstr: int (), <./ncurses/test/test_getstr.c 135>
+ 1105 			getmaxx: <>
+ 1106 			beep: <>
+ 1107 			newwin: <>
+ 1108 			box: <>
+ 1109 			wnoutrefresh: <>
+ 1110 			derwin: <>
+ 1111 			getmaxy: <>
+ 1112 			keypad: <>
+ 1113 			cbreak: <>
+ 1114 			noecho: <>
+ 1115 			wmove: <>
+ 1116 			fopen: <>
+ 1117 			fgetc: <>
+ 1118 			waddch: <>
+ 1119 			UChar: <>
+ 1120 			fclose: <>
+ 1121 			wprintw: <>
+ 1122 			ShowFlavor: int (), <./ncurses/test/test_getstr.c 93>
+ 1123 				wmove: <>
+ 1124 				werase: <>
+ 1125 				wprintw: <>
+ 1126 				Remainder: int (), <./ncurses/test/test_getstr.c 68>
+ 1127 					getmaxx: <>
+ 1128 					getcurx: <>
+ 1129 				ShowPrompt: void (), <./ncurses/test/test_getstr.c 78>
+ 1130 					wchgat: <>
+ 1131 					wnoutrefresh: <>
+ 1132 				wnoutrefresh: <>
+ 1133 			Quit: bool (), <./ncurses/test/test_getstr.c 62>
+ 1134 			mvwgetch: <>
+ 1135 			MovePrompt: void (), <./ncurses/test/test_getstr.c 85>
+ 1136 				wchgat: <>
+ 1137 				Remainder: 1126
+ 1138 				wmove: <>
+ 1139 				ShowPrompt: 1129
+ 1140 			test_getstr: 1104
+ 1141 			touchwin: <>
+ 1142 			echo: <>
+ 1143 			wattrset: <>
+ 1144 			wgetstr: <>
+ 1145 			move: <>
+ 1146 			getstr: <>
+ 1147 			wgetnstr: <>
+ 1148 			getnstr: <>
+ 1149 			mvwgetstr: <>
+ 1150 			mvgetstr: <>
+ 1151 			mvwgetnstr: <>
+ 1152 			mvgetnstr: <>
+ 1153 			doupdate: <>
+ 1154 			delwin: <>
+ 1155 		done: 69
+ 1156 		signal: <>
+ 1157 		finish: RETSIGTYPE (), <./ncurses/test/view.c 476>
+ 1158 			endwin: <>
+ 1159 			free: <>
+ 1160 			ExitProgram: 9
+ 1161 		usage: void (), <./ncurses/test/view.c 123>
+ 1162 			SIZEOF: <>
+ 1163 			fprintf: <>
+ 1164 			ExitProgram: 9
+ 1165 		perror: <>
+ 1166 		adjust: RETSIGTYPE (), <./ncurses/test/view.c 504>
+ 1167 			ioctl: <>
+ 1168 			fileno: <>
+ 1169 			resize_term: <>
+ 1170 			wrefresh: <>
+ 1171 			show_all: void (), <./ncurses/test/view.c 523>
+ 1172 				sprintf: <>
+ 1173 				strlen: <>
+ 1174 				move: <>
+ 1175 				printw: <>
+ 1176 				clrtoeol: <>
+ 1177 				time: <>
+ 1178 				strcpy: <>
+ 1179 				ctime: <>
+ 1180 				scrollok: <>
+ 1181 				ch_len: int (), <./ncurses/test/view.c 148>
+ 1182 					getcchar: <>
+ 1183 				add_wchstr: <>
+ 1184 				addchstr: <>
+ 1185 				wchgat: <>
+ 1186 				setscrreg: <>
+ 1187 				refresh: <>
+ 1188 			signal: <>
+ 1189 			adjust: 1166
+ 1190 		isprint: 266
+ 1191 		ch_dup: NCURSES_CH_T * (), <./ncurses/test/view.c 169>
+ 1192 			strlen: <>
+ 1193 			typeMalloc: <>
+ 1194 			reset_mbytes: <>
+ 1195 			check_mbytes: <>
+ 1196 			wcwidth: <>
+ 1197 			L:  ==, <./ncurses/ncurses/widechar/lib_add_wch.c 55>
+ 1198 			setcchar: <>
+ 1199 		idlok: <>
+ 1200 		bkgd: <>
+ 1201 		show_all: 1171
+ 1202 		mvprintw: <>
+ 1203 		scrl: <>
+ 1204 		halfdelay: <>
+ 1205 		test_chgat: void (), <./ncurses/test/chgat.c 319>
+ 1206 			init_status: void (), <./ncurses/test/chgat.c 177>
+ 1207 				memset: <>
+ 1208 				keypad: <>
+ 1209 				fill_window: void (), <./ncurses/test/chgat.c 124>
+ 1210 					getyx: <>
+ 1211 					wmove: <>
+ 1212 					waddstr: <>
+ 1213 				getbegyx: <>
+ 1214 				getmaxyx: <>
+ 1215 			chgat: <>
+ 1216 			touch_if_needed: <>
+ 1217 			mvchgat: <>
+ 1218 			move: <>
+ 1219 			do_subwindow: void (), <./ncurses/test/chgat.c 152>
+ 1220 				newwin: <>
+ 1221 				derwin: <>
+ 1222 				box: <>
+ 1223 				wrefresh: <>
+ 1224 				delwin: <>
+ 1225 				beep: <>
+ 1226 				touchwin: <>
+ 1227 			test_wchgat: void (), <./ncurses/test/chgat.c 289>
+ 1228 				init_status: 1206
+ 1229 				wchgat: <>
+ 1230 				touch_if_needed: <>
+ 1231 				mvwchgat: <>
+ 1232 				wmove: <>
+ 1233 				do_subwindow: 1219
+ 1234 				test_wchgat: 1227
+ 1235 				update_status: void (), <./ncurses/test/chgat.c 224>
+ 1236 					has_colors: if (), <./ncurses/test/xmas.c 156>
+ 1237 					color_params: const char * (), <./ncurses/test/chgat.c 63>
+ 1238 						has_colors: if (), <./ncurses/test/xmas.c 156>
+ 1239 						start_color: <>
+ 1240 						SIZEOF: <>
+ 1241 						init_pair: <>
+ 1242 					video_params: const char * (), <./ncurses/test/chgat.c 98>
+ 1243 						SIZEOF: <>
+ 1244 					show_status: void (), <./ncurses/test/chgat.c 136>
+ 1245 						getyx: <>
+ 1246 						wmove: <>
+ 1247 						wprintw: <>
+ 1248 						wclrtoeol: <>
+ 1249 					wmove: <>
+ 1250 					touchline: <>
+ 1251 					do_subwindow: 1219
+ 1252 					show_help: void (), <./ncurses/test/chgat.c 192>
+ 1253 						getmaxyx: <>
+ 1254 						SIZEOF: <>
+ 1255 						mvwprintw: <>
+ 1256 						wgetch: <>
+ 1257 						beep: <>
+ 1258 					isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+ 1259 					beep: <>
+ 1260 				wgetch: <>
+ 1261 			update_status: 1235
+ 1262 			getch: <>
+ 1263 		usage: void (), <./ncurses/test/ncurses.c 6199>
+ 1264 			SIZEOF: <>
+ 1265 			fprintf: <>
+ 1266 			ExitProgram: 9
+ 1267 		onsig: RETSIGTYPE (), <./ncurses/test/worm.c 213>
+ 1268 			cleanup: void (), <./ncurses/test/worm.c 205>
+ 1269 				USING_WINDOW: <>
+ 1270 				wrefresh: <>
+ 1271 				curs_set: <>
+ 1272 				endwin: <>
+ 1273 			ExitProgram: 9
+ 1274 		SET_COLOR: <>
+ 1275 		USING_WINDOW: <>
+ 1276 		get_input: int (), <./ncurses/test/worm.c 367>
+ 1277 			USING_WINDOW: <>
+ 1278 			wgetch: <>
+ 1279 		update_refs: int (), <./ncurses/test/worm.c 376>
+ 1280 			typeRealloc: <>
+ 1281 			free: <>
+ 1282 			typeMalloc: <>
+ 1283 		draw_all_worms: bool (), <./ncurses/test/worm.c 342>
+ 1284 			done: 69
+ 1285 			pthread_create: <>
+ 1286 			start_worm: void * (), <./ncurses/test/worm.c 326>
+ 1287 				Trace: <>
+ 1288 				quit_worm: bool (), <./ncurses/test/worm.c 317>
+ 1289 					napms: <>
+ 1290 				use_window: <>
+ 1291 				draw_worm: int (), <./ncurses/test/worm.c 227>
+ 1292 					done: 69
+ 1293 					wmove: <>
+ 1294 					waddch: <>
+ 1295 					ranf: float (), <./ncurses/test/worm.c 220>
+ 1296 						rand: <>
+ 1297 			USING_WINDOW2: <>
+ 1298 			draw_worm: 1291
+ 1299 		Trace: <>
+ 1300 		cleanup: 1268
+ 1301 		onsig: void (), <./ncurses/test/rain.c 70>
+ 1302 			curs_set: <>
+ 1303 			endwin: <>
+ 1304 			ExitProgram: 9
+ 1305 		nl: <>
+ 1306 		timeout: <>
+ 1307 		random_x: int (), <./ncurses/test/rain.c 85>
+ 1308 			ranf: float (), <./ncurses/test/rain.c 78>
+ 1309 				rand: <>
+ 1310 		random_y: int (), <./ncurses/test/rain.c 91>
+ 1311 			ranf: 1308
+ 1312 		start_drop: int (), <./ncurses/test/rain.c 261>
+ 1313 			pthread_mutex_init: <>
+ 1314 			pthread_cond_init: <>
+ 1315 			pthread_create: <>
+ 1316 			draw_drop: void * (), <./ncurses/test/rain.c 216>
+ 1317 				pthread_self: <>
+ 1318 				draw_part: void (), <./ncurses/test/rain.c 182>
+ 1319 					use_window: <>
+ 1320 					really_draw: int (), <./ncurses/test/rain.c 170>
+ 1321 						next_j: int (), <./ncurses/test/rain.c 97>
+ 1322 							has_colors: if (), <./ncurses/test/xmas.c 156>
+ 1323 							ranf: 1308
+ 1324 							COLOR_PAIR: <>
+ 1325 							attrset: <>
+ 1326 						refresh: <>
+ 1327 					napsome: void (), <./ncurses/test/rain.c 161>
+ 1328 						napms: <>
+ 1329 				part1: void (), <./ncurses/test/rain.c 114>
+ 1330 					mvaddch: <>
+ 1331 				part2: void (), <./ncurses/test/rain.c 120>
+ 1332 					mvaddch: <>
+ 1333 				part3: void (), <./ncurses/test/rain.c 126>
+ 1334 					mvaddch: <>
+ 1335 				part4: void (), <./ncurses/test/rain.c 132>
+ 1336 					mvaddch: <>
+ 1337 					mvaddstr: <>
+ 1338 				part5: void (), <./ncurses/test/rain.c 140>
+ 1339 					mvaddch: <>
+ 1340 					mvaddstr: <>
+ 1341 				part6: void (), <./ncurses/test/rain.c 150>
+ 1342 					mvaddch: <>
+ 1343 					mvaddstr: <>
+ 1344 				get_next_drop: int (), <./ncurses/test/rain.c 207>
+ 1345 					pthread_mutex_lock: <>
+ 1346 					pthread_cond_wait: <>
+ 1347 			put_next_drop: int (), <./ncurses/test/rain.c 195>
+ 1348 				pthread_cond_signal: <>
+ 1349 				pthread_mutex_unlock: <>
+ 1350 		part1: 1329
+ 1351 		part2: 1331
+ 1352 		next_j: 1321
+ 1353 		part3: 1333
+ 1354 		part4: 1335
+ 1355 		part5: 1338
+ 1356 		part6: 1341
+ 1357 		get_input: int (), <./ncurses/test/rain.c 285>
+ 1358 			USING_WINDOW: <>
+ 1359 			wgetch: <>
+ 1360 		onsig: void (), <./ncurses/test/dots_mvcur.c 86>
+ 1361 		outs: bool (), <./ncurses/test/dots_mvcur.c 62>
+ 1362 			valid: <>
+ 1363 			tputs: <>
+ 1364 			outc: int (), <./ncurses/test/dots_mvcur.c 50>
+ 1365 				write: <>
+ 1366 				putc: <>
+ 1367 		valid: <>
+ 1368 		ranf: float (), <./ncurses/test/dots_mvcur.c 92>
+ 1369 			rand: <>
+ 1370 		tparm2: <>
+ 1371 		outc: 1364
+ 1372 		cleanup: void (), <./ncurses/test/dots_mvcur.c 72>
+ 1373 			outs: 1361
+ 1374 			printf: <>
+ 1375 			time: <>
+ 1376 		ripoffline: <>
+ 1377 		rip_footer: int (), <./ncurses/test/ncurses.c 6253>
+ 1378 			wbkgd: <>
+ 1379 			werase: <>
+ 1380 			wmove: <>
+ 1381 			wprintw: <>
+ 1382 			wnoutrefresh: <>
+ 1383 		rip_header: int (), <./ncurses/test/ncurses.c 6264>
+ 1384 			wbkgd: <>
+ 1385 			werase: <>
+ 1386 			wmove: <>
+ 1387 			wprintw: <>
+ 1388 			wnoutrefresh: <>
+ 1389 		atol: <>
+ 1390 		strtol: <>
+ 1391 		slk_init: <>
+ 1392 		announce_sig: RETSIGTYPE (), <./ncurses/test/ncurses.c 6245>
+ 1393 			fprintf: <>
+ 1394 		assume_default_colors: <>
+ 1395 		can_change_color: <>
+ 1396 		color_content: <>
+ 1397 		okCOLOR: <>
+ 1398 		okRGB: <>
+ 1399 		set_terminal_modes: void (), <./ncurses/test/ncurses.c 6233>
+ 1400 			noraw: <>
+ 1401 			cbreak: <>
+ 1402 			noecho: <>
+ 1403 			scrollok: <>
+ 1404 			idlok: <>
+ 1405 			keypad: <>
+ 1406 		def_prog_mode: <>
+ 1407 		main_menu: void (), <./ncurses/test/ncurses.c 6276>
+ 1408 			puts: <>
+ 1409 			fputs: <>
+ 1410 			fflush: <>
+ 1411 			read: <>
+ 1412 			fileno: <>
+ 1413 			isspace: <>
+ 1414 			UChar: <>
+ 1415 			do_single_test: bool (), <./ncurses/test/ncurses.c 6068>
+ 1416 				getch_test: void (), <./ncurses/test/ncurses.c 900>
+ 1417 					begin_getch_test: int (), <./ncurses/test/ncurses.c 860>
+ 1418 						refresh: <>
+ 1419 						mousemask: <>
+ 1420 						printw: <>
+ 1421 						echo: <>
+ 1422 						getnstr: <>
+ 1423 						noecho: <>
+ 1424 						nonl: <>
+ 1425 						isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+ 1426 						UChar: <>
+ 1427 						atoi: <>
+ 1428 						raw: <>
+ 1429 						move: <>
+ 1430 					slk_restore: <>
+ 1431 					wgetch_test: void (), <./ncurses/test/ncurses.c 728>
+ 1432 						memset: <>
+ 1433 						UChar: <>
+ 1434 						setup_getch: void (), <./ncurses/test/ncurses.c 573>
+ 1435 							keypad: <>
+ 1436 							meta: <>
+ 1437 							echo: <>
+ 1438 							noecho: <>
+ 1439 						wtimeout: <>
+ 1440 						getyx: <>
+ 1441 						wgetch_help: void (), <./ncurses/test/ncurses.c 584>
+ 1442 							SIZEOF: <>
+ 1443 							getyx: <>
+ 1444 							move: <>
+ 1445 							printw: <>
+ 1446 							strstr: <>
+ 1447 							UChar: <>
+ 1448 							standout: <>
+ 1449 							mvprintw: <>
+ 1450 							clrtoeol: <>
+ 1451 							standend: <>
+ 1452 							wrefresh: <>
+ 1453 							wmove: <>
+ 1454 						wsetscrreg: <>
+ 1455 						getmaxy: <>
+ 1456 						scrollok: <>
+ 1457 						wGetchar: int (), <./ncurses/test/ncurses.c 203>
+ 1458 							wgetch: <>
+ 1459 							CTRL: <>
+ 1460 							Trace: <>
+ 1461 							trace: <>
+ 1462 						wprintw: <>
+ 1463 						wgetch_wrap: void (), <./ncurses/test/ncurses.c 625>
+ 1464 							getmaxy: <>
+ 1465 							getcury: <>
+ 1466 							wmove: <>
+ 1467 							wclrtoeol: <>
+ 1468 						isQuit: bool (), <./ncurses/test/ncurses.c 193>
+ 1469 						waddstr: <>
+ 1470 						echo: <>
+ 1471 						wgetnstr: <>
+ 1472 						noecho: <>
+ 1473 						strlen: <>
+ 1474 						wclrtoeol: <>
+ 1475 						ShellOut: void (), <./ncurses/test/ncurses.c 480>
+ 1476 							addstr: <>
+ 1477 							def_prog_mode: <>
+ 1478 							endwin: <>
+ 1479 							system: <>
+ 1480 							refresh: <>
+ 1481 						getmaxx: <>
+ 1482 						getbegy: <>
+ 1483 						getbegx: <>
+ 1484 						newwin: <>
+ 1485 						box: <>
+ 1486 						wrefresh: <>
+ 1487 						wmove: <>
+ 1488 						remember_boxes: void (), <./ncurses/test/ncurses.c 656>
+ 1489 							assert: <>
+ 1490 							typeMalloc: <>
+ 1491 							typeRealloc: <>
+ 1492 						wgetch_test: 1431
+ 1493 						delwin: <>
+ 1494 						touchwin: <>
+ 1495 						doupdate: <>
+ 1496 						kill: <>
+ 1497 						getpid: <>
+ 1498 						getmouse: <>
+ 1499 						mouse_decode: const char * (), <./ncurses/test/ncurses.c 498>
+ 1500 							sprintf: <>
+ 1501 							SHOW: <>
+ 1502 							strlen: <>
+ 1503 							strcat: <>
+ 1504 						move: <>
+ 1505 						addch: <>
+ 1506 						resize_boxes: void (), <./ncurses/test/ncurses.c 692>
+ 1507 							touchwin: <>
+ 1508 							wnoutrefresh: <>
+ 1509 							slk_repaint: void (), <./ncurses/test/ncurses.c 675>
+ 1510 								slk_touch: <>
+ 1511 								slk_clear: <>
+ 1512 								slk_noutrefresh: <>
+ 1513 							wresize: <>
+ 1514 							werase: <>
+ 1515 							box: <>
+ 1516 							wprintw: <>
+ 1517 							getmaxy: <>
+ 1518 							getmaxx: <>
+ 1519 							doupdate: <>
+ 1520 						keyname: <>
+ 1521 						isprint: 266
+ 1522 						unctrl: <>
+ 1523 					forget_boxes: void (), <./ncurses/test/ncurses.c 646>
+ 1524 						free: <>
+ 1525 					finish_getch_test: void (), <./ncurses/test/ncurses.c 888>
+ 1526 						mousemask: <>
+ 1527 						erase: <>
+ 1528 						noraw: <>
+ 1529 						nl: <>
+ 1530 						endwin: <>
+ 1531 				get_wch_test: void (), <./ncurses/test/ncurses.c 1117>
+ 1532 					begin_getch_test: 1417
+ 1533 					slk_restore: <>
+ 1534 					wget_wch_test: void (), <./ncurses/test/ncurses.c 974>
+ 1535 						memset: <>
+ 1536 						UChar: <>
+ 1537 						setup_getch: 1434
+ 1538 						wtimeout: <>
+ 1539 						getyx: <>
+ 1540 						wgetch_help: 1441
+ 1541 						wsetscrreg: <>
+ 1542 						getmaxy: <>
+ 1543 						scrollok: <>
+ 1544 						wGet_wchar: int (), <./ncurses/test/ncurses.c 332>
+ 1545 							wget_wch: <>
+ 1546 							CTRL: <>
+ 1547 							Trace: <>
+ 1548 							trace: <>
+ 1549 						wprintw: <>
+ 1550 						wgetch_wrap: 1463
+ 1551 						isQuit: 1468
+ 1552 						waddstr: <>
+ 1553 						echo: <>
+ 1554 						wgetn_wstr: <>
+ 1555 						noecho: <>
+ 1556 						wcstos: char * (), <./ncurses/test/ncurses.c 950>
+ 1557 							reset_wchars: <>
+ 1558 							count_wchars: <>
+ 1559 							typeCalloc: <>
+ 1560 							trans_wchars: <>
+ 1561 							free: <>
+ 1562 						wcslen: <>
+ 1563 						free: <>
+ 1564 						wclrtoeol: <>
+ 1565 						ShellOut: 1475
+ 1566 						getmaxx: <>
+ 1567 						getbegy: <>
+ 1568 						getbegx: <>
+ 1569 						newwin: <>
+ 1570 						box_set: <>
+ 1571 						wrefresh: <>
+ 1572 						wmove: <>
+ 1573 						remember_boxes: 1488
+ 1574 						wget_wch_test: 1534
+ 1575 						delwin: <>
+ 1576 						touchwin: <>
+ 1577 						kill: <>
+ 1578 						getpid: <>
+ 1579 						getmouse: <>
+ 1580 						mouse_decode: 1499
+ 1581 						move: <>
+ 1582 						addch: <>
+ 1583 						resize_wide_boxes: void (), <./ncurses/test/ncurses.c 917>
+ 1584 							touchwin: <>
+ 1585 							wnoutrefresh: <>
+ 1586 							slk_repaint: 1509
+ 1587 							wresize: <>
+ 1588 							werase: <>
+ 1589 							box_set: <>
+ 1590 							wprintw: <>
+ 1591 							getmaxy: <>
+ 1592 							getmaxx: <>
+ 1593 							doupdate: <>
+ 1594 						key_name: <>
+ 1595 						iscntrl: <>
+ 1596 						unctrl: <>
+ 1597 						waddnwstr: <>
+ 1598 					forget_boxes: 1523
+ 1599 					finish_getch_test: 1525
+ 1600 				attr_test: void (), <./ncurses/test/ncurses.c 1459>
+ 1601 					get_xmc: <>
+ 1602 					SIZEOF: <>
+ 1603 					init_attr_string: void (), <./ncurses/test/ncurses.c 1302>
+ 1604 						adjust_attr_string: void (), <./ncurses/test/ncurses.c 1278>
+ 1605 							UChar: <>
+ 1606 							beep: <>
+ 1607 					init_pair: <>
+ 1608 					beep: <>
+ 1609 					COLOR_PAIR: <>
+ 1610 					bkgd: <>
+ 1611 					bkgdset: <>
+ 1612 					erase: <>
+ 1613 					box: <>
+ 1614 					mvaddstr: <>
+ 1615 					show_attr: int (), <./ncurses/test/ncurses.c 1309>
+ 1616 						get_ncv: <>
+ 1617 						mvprintw: <>
+ 1618 						printw: <>
+ 1619 						UChar: <>
+ 1620 						addch: <>
+ 1621 						attrset: <>
+ 1622 						addstr: <>
+ 1623 						attroff: <>
+ 1624 						termattrs: <>
+ 1625 						getbkgd: <>
+ 1626 						SIZEOF: <>
+ 1627 					mvprintw: <>
+ 1628 					show_color_attr: void (), <./ncurses/test/ncurses.c 1218>
+ 1629 						printw: <>
+ 1630 					printw: <>
+ 1631 					refresh: <>
+ 1632 					attr_getc: bool (), <./ncurses/test/ncurses.c 1398>
+ 1633 						Getchar: <>
+ 1634 						isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+ 1635 						CTRL: <>
+ 1636 						Repaint: void (), <./ncurses/test/ncurses.c 185>
+ 1637 							touchwin: <>
+ 1638 							wrefresh: <>
+ 1639 						newwin: <>
+ 1640 						box: <>
+ 1641 						attr_legend: void (), <./ncurses/test/ncurses.c 1186>
+ 1642 							mvwprintw: <>
+ 1643 						wGetchar: 1457
+ 1644 						delwin: <>
+ 1645 						SIZEOF: <>
+ 1646 						adjust_attr_string: 1604
+ 1647 						cycle_color_attr: bool (), <./ncurses/test/ncurses.c 1229>
+ 1648 							beep: <>
+ 1649 					endwin: <>
+ 1650 				wide_attr_test: void (), <./ncurses/test/ncurses.c 1735>
+ 1651 					get_xmc: <>
+ 1652 					SIZEOF: <>
+ 1653 					wide_init_attr_string: void (), <./ncurses/test/ncurses.c 1560>
+ 1654 						wide_adjust_attr_string: void (), <./ncurses/test/ncurses.c 1536>
+ 1655 							UChar: <>
+ 1656 							beep: <>
+ 1657 					init_pair: <>
+ 1658 					beep: <>
+ 1659 					set_wide_background: void (), <./ncurses/test/ncurses.c 1567>
+ 1660 						setcchar: <>
+ 1661 						bkgrnd: <>
+ 1662 						bkgrndset: <>
+ 1663 					erase: <>
+ 1664 					box_set: <>
+ 1665 					mvaddstr: <>
+ 1666 					wide_show_attr: int (), <./ncurses/test/ncurses.c 1597>
+ 1667 						get_ncv: <>
+ 1668 						mvprintw: <>
+ 1669 						printw: <>
+ 1670 						L:  ==, <./ncurses/ncurses/widechar/lib_add_wch.c 55>
+ 1671 						fill: void (), <./ncurses/test/firstlast.c 38>
+ 1672 							waddch: <>
+ 1673 							UChar: <>
+ 1674 							wmove: <>
+ 1675 						setcchar: <>
+ 1676 						add_wch: <>
+ 1677 						attr_get: <>
+ 1678 						attr_set: <>
+ 1679 						addwstr: <>
+ 1680 						term_attrs: <>
+ 1681 						get_wide_background: attr_t (), <./ncurses/test/ncurses.c 1580>
+ 1682 							getbkgrnd: <>
+ 1683 							getcchar: <>
+ 1684 						SIZEOF: <>
+ 1685 					mvprintw: <>
+ 1686 					show_color_attr: 1628
+ 1687 					printw: <>
+ 1688 					refresh: <>
+ 1689 					wide_attr_getc: bool (), <./ncurses/test/ncurses.c 1674>
+ 1690 						Getchar: <>
+ 1691 						isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+ 1692 						CTRL: <>
+ 1693 						Repaint: 1636
+ 1694 						newwin: <>
+ 1695 						box_set: <>
+ 1696 						attr_legend: 1641
+ 1697 						wGetchar: 1457
+ 1698 						delwin: <>
+ 1699 						SIZEOF: <>
+ 1700 						wide_adjust_attr_string: 1654
+ 1701 						cycle_color_attr: 1647
+ 1702 					endwin: <>
+ 1703 				Cannot: void (), <./ncurses/test/ncurses.c 473>
+ 1704 					printw: <>
+ 1705 					getenv: <>
+ 1706 					Pause: void (), <./ncurses/test/ncurses.c 465>
+ 1707 						move: <>
+ 1708 						addstr: <>
+ 1709 						Getchar: <>
+ 1710 				color_test: void (), <./ncurses/test/ncurses.c 1894>
+ 1711 					PAIR_NUMBER: <>
+ 1712 					done: 69
+ 1713 					move: <>
+ 1714 					printw: <>
+ 1715 					clrtobot: <>
+ 1716 					mvprintw: <>
+ 1717 					show_color_name: void (), <./ncurses/test/ncurses.c 1832>
+ 1718 						move: <>
+ 1719 						sprintf: <>
+ 1720 						strcpy: <>
+ 1721 						printw: <>
+ 1722 					init_pair: <>
+ 1723 					attron: <>
+ 1724 					COLOR_PAIR: <>
+ 1725 					sprintf: <>
+ 1726 					attrset: <>
+ 1727 					wGetchar: 1457
+ 1728 					set_color_test: <>
+ 1729 					CTRL: <>
+ 1730 					beep: <>
+ 1731 					newwin: <>
+ 1732 					box: <>
+ 1733 					color_legend: void (), <./ncurses/test/ncurses.c 1851>
+ 1734 						mvwprintw: <>
+ 1735 					delwin: <>
+ 1736 					erase: <>
+ 1737 					endwin: <>
+ 1738 				wide_color_test: void (), <./ncurses/test/ncurses.c 2068>
+ 1739 					done: 69
+ 1740 					make_fullwidth_text: void (), <./ncurses/test/ncurses.c 302>
+ 1741 						fullwidth_of: wchar_t (), <./ncurses/test/ncurses.c 296>
+ 1742 					make_narrow_text: void (), <./ncurses/test/ncurses.c 312>
+ 1743 					move: <>
+ 1744 					printw: <>
+ 1745 					clrtobot: <>
+ 1746 					mvprintw: <>
+ 1747 					show_color_name: 1717
+ 1748 					init_pair: <>
+ 1749 					color_set: <>
+ 1750 					attr_on: <>
+ 1751 					sprintf: <>
+ 1752 					addnwstr: <>
+ 1753 					attr_set: <>
+ 1754 					wGetchar: 1457
+ 1755 					set_color_test: <>
+ 1756 					CTRL: <>
+ 1757 					beep: <>
+ 1758 					newwin: <>
+ 1759 					box: <>
+ 1760 					color_legend: 1733
+ 1761 					delwin: <>
+ 1762 					erase: <>
+ 1763 					endwin: <>
+ 1764 				can_change_color: <>
+ 1765 				color_edit: void (), <./ncurses/test/ncurses.c 2292>
+ 1766 					init_all_colors: void (), <./ncurses/test/ncurses.c 2278>
+ 1767 						init_color: <>
+ 1768 					refresh: <>
+ 1769 					init_pair: <>
+ 1770 					mvprintw: <>
+ 1771 					attron: <>
+ 1772 					mvaddstr: <>
+ 1773 					attroff: <>
+ 1774 					sprintf: <>
+ 1775 					SIZEOF: <>
+ 1776 					attrset: <>
+ 1777 					COLOR_PAIR: <>
+ 1778 					addstr: <>
+ 1779 					color_content: <>
+ 1780 					printw: <>
+ 1781 					scaled_rgb: <>
+ 1782 					move: <>
+ 1783 					Getchar: <>
+ 1784 					isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+ 1785 					CTRL: <>
+ 1786 					beep: <>
+ 1787 					change_color: void (), <./ncurses/test/ncurses.c 2255>
+ 1788 						color_content: <>
+ 1789 						init_color: <>
+ 1790 						beep: <>
+ 1791 					erase: <>
+ 1792 					P: <>
+ 1793 					Pause: 1706
+ 1794 					endwin: <>
+ 1795 					main_menu: 1407
+ 1796 					clrtoeol: <>
+ 1797 					isQuit: 1468
+ 1798 				slk_test: void (), <./ncurses/test/ncurses.c 2545>
+ 1799 					CTRL: <>
+ 1800 					call_slk_color: void (), <./ncurses/test/ncurses.c 2534>
+ 1801 						init_pair: <>
+ 1802 						slk_color: <>
+ 1803 						mvprintw: <>
+ 1804 						clrtoeol: <>
+ 1805 						refresh: <>
+ 1806 					move: <>
+ 1807 					erase: <>
+ 1808 					attron: <>
+ 1809 					mvaddstr: <>
+ 1810 					attroff: <>
+ 1811 					slk_help: void (), <./ncurses/test/ncurses.c 2499>
+ 1812 						move: <>
+ 1813 						SIZEOF: <>
+ 1814 						P: <>
+ 1815 						refresh: <>
+ 1816 					slk_restore: <>
+ 1817 					wclear: <>
+ 1818 					mvprintw: <>
+ 1819 					Getchar: <>
+ 1820 					addch: <>
+ 1821 					slk_clear: <>
+ 1822 					strcpy: <>
+ 1823 					slk_label: <>
+ 1824 					strncpy: <>
+ 1825 					wGetstring: void (), <./ncurses/test/ncurses.c 228>
+ 1826 						done: 69
+ 1827 						echo: <>
+ 1828 						getyx: <>
+ 1829 						wattrset: <>
+ 1830 						strlen: <>
+ 1831 						wmove: <>
+ 1832 						wprintw: <>
+ 1833 						wGetchar: 1457
+ 1834 						CTRL: <>
+ 1835 						beep: <>
+ 1836 						flash: <>
+ 1837 						isprint: 266
+ 1838 						wattroff: <>
+ 1839 						noecho: <>
+ 1840 					slk_set: <>
+ 1841 					slk_refresh: <>
+ 1842 					clrtobot: <>
+ 1843 					done: 69
+ 1844 					wnoutrefresh: <>
+ 1845 					beep: <>
+ 1846 					isQuit: 1468
+ 1847 					endwin: <>
+ 1848 				wide_slk_test: void (), <./ncurses/test/ncurses.c 2662>
+ 1849 					CTRL: <>
+ 1850 					call_slk_color: 1800
+ 1851 					move: <>
+ 1852 					erase: <>
+ 1853 					attr_on: <>
+ 1854 					mvaddstr: <>
+ 1855 					attr_off: <>
+ 1856 					slk_help: 1811
+ 1857 					slk_restore: <>
+ 1858 					wclear: <>
+ 1859 					mvprintw: <>
+ 1860 					Getchar: <>
+ 1861 					addch: <>
+ 1862 					slk_clear: <>
+ 1863 					slk_label: <>
+ 1864 					strdup: 922
+ 1865 					strlen: <>
+ 1866 					L:  ==, <./ncurses/ncurses/widechar/lib_add_wch.c 55>
+ 1867 					reset_mbytes: <>
+ 1868 					count_mbytes: <>
+ 1869 					trans_mbytes: <>
+ 1870 					free: <>
+ 1871 					wGet_wstring: void (), <./ncurses/test/ncurses.c 357>
+ 1872 						done: 69
+ 1873 						echo: <>
+ 1874 						getyx: <>
+ 1875 						wattrset: <>
+ 1876 						wcslen: <>
+ 1877 						wmove: <>
+ 1878 						wprintw: <>
+ 1879 						waddnwstr: <>
+ 1880 						wGet_wchar: 1544
+ 1881 						CTRL: <>
+ 1882 						beep: <>
+ 1883 						wattroff: <>
+ 1884 						noecho: <>
+ 1885 					slk_wset: <>
+ 1886 					slk_refresh: <>
+ 1887 					clrtobot: <>
+ 1888 					done: 69
+ 1889 					wnoutrefresh: <>
+ 1890 					beep: <>
+ 1891 					isQuit: 1468
+ 1892 					endwin: <>
+ 1893 				acs_display: void (), <./ncurses/test/ncurses.c 3059>
+ 1894 					getenv: <>
+ 1895 					strstr: <>
+ 1896 					CTRL: <>
+ 1897 					Repaint: 1636
+ 1898 					ToggleAcs: <>
+ 1899 					show_acs_chars: void (), <./ncurses/test/ncurses.c 3000>
+ 1900 						erase: <>
+ 1901 						attron: <>
+ 1902 						mvaddstr: <>
+ 1903 						attroff: <>
+ 1904 						refresh: <>
+ 1905 						show_1_acs: int (), <./ncurses/test/ncurses.c 2986>
+ 1906 							mvprintw: <>
+ 1907 							addch: <>
+ 1908 						BOTH: <>
+ 1909 					show_pc_chars: void (), <./ncurses/test/ncurses.c 2921>
+ 1910 						erase: <>
+ 1911 						attron: <>
+ 1912 						mvprintw: <>
+ 1913 						attroff: <>
+ 1914 						refresh: <>
+ 1915 						move: <>
+ 1916 						addch: <>
+ 1917 						COLOR_PAIR: <>
+ 1918 					beep: <>
+ 1919 					show_box_chars: void (), <./ncurses/test/ncurses.c 2962>
+ 1920 						COLOR_PAIR: <>
+ 1921 						erase: <>
+ 1922 						attron: <>
+ 1923 						mvaddstr: <>
+ 1924 						attroff: <>
+ 1925 						refresh: <>
+ 1926 						box: <>
+ 1927 						mvhline: <>
+ 1928 						mvvline: <>
+ 1929 						mvaddch: <>
+ 1930 					cycle_attr: bool (), <./ncurses/test/ncurses.c 2811>
+ 1931 						SIZEOF: <>
+ 1932 					cycle_colors: bool (), <./ncurses/test/ncurses.c 2836>
+ 1933 						init_pair: <>
+ 1934 					show_upper_chars: void (), <./ncurses/test/ncurses.c 2880>
+ 1935 						erase: <>
+ 1936 						attron: <>
+ 1937 						mvprintw: <>
+ 1938 						attroff: <>
+ 1939 						refresh: <>
+ 1940 						sprintf: <>
+ 1941 						nodelay: <>
+ 1942 						echochar: <>
+ 1943 						COLOR_PAIR: <>
+ 1944 						Getchar: <>
+ 1945 						addch: <>
+ 1946 						UChar: <>
+ 1947 						napms: <>
+ 1948 					mvprintw: <>
+ 1949 					refresh: <>
+ 1950 					isQuit: 1468
+ 1951 					Getchar: <>
+ 1952 					Pause: 1706
+ 1953 					erase: <>
+ 1954 					endwin: <>
+ 1955 				wide_acs_display: void (), <./ncurses/test/ncurses.c 3413>
+ 1956 					CTRL: <>
+ 1957 					Repaint: 1636
+ 1958 					ToggleAcs: <>
+ 1959 					show_wacs_chars: void (), <./ncurses/test/ncurses.c 3250>
+ 1960 						erase: <>
+ 1961 						attron: <>
+ 1962 						mvaddstr: <>
+ 1963 						attroff: <>
+ 1964 						refresh: <>
+ 1965 						show_1_wacs: int (), <./ncurses/test/ncurses.c 3234>
+ 1966 							mvprintw: <>
+ 1967 							add_wch: <>
+ 1968 						BOTH2: <>
+ 1969 					show_wbox_chars: void (), <./ncurses/test/ncurses.c 3313>
+ 1970 						erase: <>
+ 1971 						attron: <>
+ 1972 						mvaddstr: <>
+ 1973 						attroff: <>
+ 1974 						refresh: <>
+ 1975 						attr_set: <>
+ 1976 						box_set: <>
+ 1977 						mvhline_set: <>
+ 1978 						MERGE_ATTR: <>
+ 1979 						mvvline_set: <>
+ 1980 						mvadd_wch: <>
+ 1981 					show_utf8_chars: void (), <./ncurses/test/ncurses.c 3359>
+ 1982 						erase: <>
+ 1983 						attron: <>
+ 1984 						mvaddstr: <>
+ 1985 						attroff: <>
+ 1986 						refresh: <>
+ 1987 						SHOW_UTF8: <>
+ 1988 					isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+ 1989 					cycle_attr: 1930
+ 1990 					cycle_colors: 1932
+ 1991 					beep: <>
+ 1992 					show_upper_widechars: void (), <./ncurses/test/ncurses.c 3183>
+ 1993 						erase: <>
+ 1994 						attron: <>
+ 1995 						mvprintw: <>
+ 1996 						attroff: <>
+ 1997 						memset: <>
+ 1998 						sprintf: <>
+ 1999 						setcchar: <>
+ 2000 						wcwidth: <>
+ 2001 						addch: <>
+ 2002 						echo_wchar: <>
+ 2003 						getyx: <>
+ 2004 					mvprintw: <>
+ 2005 					refresh: <>
+ 2006 					isQuit: 1468
+ 2007 					Getchar: <>
+ 2008 					Pause: 1706
+ 2009 					erase: <>
+ 2010 					endwin: <>
+ 2011 				demo_panels: void (), <./ncurses/test/ncurses.c 4336>
+ 2012 					scrollok: <>
+ 2013 					refresh: <>
+ 2014 					mkpanel: PANEL * (), <./ncurses/test/ncurses.c 4192>
+ 2015 						newwin: <>
+ 2016 						new_panel: <>
+ 2017 						delwin: <>
+ 2018 						init_pair: <>
+ 2019 						wbkgdset: <>
+ 2020 						COLOR_PAIR: <>
+ 2021 					set_panel_userptr: <>
+ 2022 					hide_panel: <>
+ 2023 					pflush: void (), <./ncurses/test/ncurses.c 4228>
+ 2024 						update_panels: <>
+ 2025 						doupdate: <>
+ 2026 					saywhat: void (), <./ncurses/test/ncurses.c 4177>
+ 2027 						wmove: <>
+ 2028 						wclrtoeol: <>
+ 2029 						waddstr: <>
+ 2030 					wait_a_while: void (), <./ncurses/test/ncurses.c 4156>
+ 2031 						wGetchar: 1457
+ 2032 						napms: <>
+ 2033 						sleep: <>
+ 2034 					move_panel: <>
+ 2035 					show_panel: <>
+ 2036 					canned_panel: void (), <./ncurses/test/ncurses.c 4309>
+ 2037 						saywhat: 2026
+ 2038 						hide_panel: <>
+ 2039 						show_panel: <>
+ 2040 						top_panel: <>
+ 2041 						bottom_panel: <>
+ 2042 						rmpanel: void (), <./ncurses/test/ncurses.c 4217>
+ 2043 							panel_window: <>
+ 2044 							del_panel: <>
+ 2045 							delwin: <>
+ 2046 						pflush: 2023
+ 2047 						wait_a_while: 2030
+ 2048 					panel_window: <>
+ 2049 					wmove: <>
+ 2050 					waddstr: <>
+ 2051 					L:  ==, <./ncurses/ncurses/widechar/lib_add_wch.c 55>
+ 2052 					erase: <>
+ 2053 					endwin: <>
+ 2054 				init_panel: void (), <./ncurses/test/ncurses.c 4238>
+ 2055 					wprintw: <>
+ 2056 				fill_panel: void (), <./ncurses/test/ncurses.c 4249>
+ 2057 					panel_window: <>
+ 2058 					panel_userptr: <>
+ 2059 					wmove: <>
+ 2060 					wprintw: <>
+ 2061 					wclrtoeol: <>
+ 2062 					box: <>
+ 2063 					getmaxy: <>
+ 2064 					getmaxx: <>
+ 2065 					waddch: <>
+ 2066 					UChar: <>
+ 2067 				init_wide_panel: void (), <./ncurses/test/ncurses.c 4270>
+ 2068 					make_fullwidth_digit: void (), <./ncurses/test/ncurses.c 322>
+ 2069 						fullwidth_of: wchar_t (), <./ncurses/test/ncurses.c 296>
+ 2070 						setcchar: <>
+ 2071 					getyx: <>
+ 2072 					add_wch: <>
+ 2073 				fill_wide_panel: void (), <./ncurses/test/ncurses.c 4286>
+ 2074 					panel_window: <>
+ 2075 					panel_userptr: <>
+ 2076 					wmove: <>
+ 2077 					wprintw: <>
+ 2078 					wclrtoeol: <>
+ 2079 					box: <>
+ 2080 					getmaxy: <>
+ 2081 					getmaxx: <>
+ 2082 					waddch: <>
+ 2083 					UChar: <>
+ 2084 				acs_and_scroll: void (), <./ncurses/test/ncurses.c 3893>
+ 2085 					mousemask: <>
+ 2086 					CTRL: <>
+ 2087 					raw: <>
+ 2088 					transient: void (), <./ncurses/test/ncurses.c 3707>
+ 2089 					typeCalloc: <>
+ 2090 					getwindow: WINDOW * (), <./ncurses/test/ncurses.c 3816>
+ 2091 						move: <>
+ 2092 						clrtoeol: <>
+ 2093 						addstr: <>
+ 2094 						refresh: <>
+ 2095 						selectcell: pair * (), <./ncurses/test/ncurses.c 3742>
+ 2096 							move: <>
+ 2097 							newwin_report: void (), <./ncurses/test/ncurses.c 3724>
+ 2098 								frame_win: WINDOW * (), <./ncurses/test/ncurses.c 3609>
+ 2099 								transient: void (), <./ncurses/test/ncurses.c 3707>
+ 2100 								getyx: <>
+ 2101 								move: <>
+ 2102 								printw: <>
+ 2103 								refresh: <>
+ 2104 								wmove: <>
+ 2105 							Getchar: <>
+ 2106 							getmouse: <>
+ 2107 							beep: <>
+ 2108 						memcpy: <>
+ 2109 						mvaddch: <>
+ 2110 						subwin: <>
+ 2111 						outerbox: void (), <./ncurses/test/ncurses.c 3798>
+ 2112 							mvaddch: <>
+ 2113 							move: <>
+ 2114 							hline: <>
+ 2115 							vline: <>
+ 2116 						wrefresh: <>
+ 2117 					free: <>
+ 2118 					keypad: <>
+ 2119 					HaveKeypad: bool (), <./ncurses/test/ncurses.c 3619>
+ 2120 						frame_win: 2098
+ 2121 						is_keypad: <>
+ 2122 					HaveScroll: bool (), <./ncurses/test/ncurses.c 3627>
+ 2123 						frame_win: 2098
+ 2124 						is_scrollok: <>
+ 2125 					wscrl: <>
+ 2126 					frame_win: 2098
+ 2127 					scrollok: <>
+ 2128 					fopen: <>
+ 2129 					putwin: <>
+ 2130 					fclose: <>
+ 2131 					delete_framed: FRAME * (), <./ncurses/test/ncurses.c 3872>
+ 2132 						werase: <>
+ 2133 						wrefresh: <>
+ 2134 						delwin: <>
+ 2135 						free: <>
+ 2136 					getwin: <>
+ 2137 					wrefresh: <>
+ 2138 					move: <>
+ 2139 					clrtoeol: <>
+ 2140 					addstr: <>
+ 2141 					refresh: <>
+ 2142 					getbegyx: <>
+ 2143 					selectcell: 2095
+ 2144 					beep: <>
+ 2145 					getmaxyx: <>
+ 2146 					outerbox: 2111
+ 2147 					wnoutrefresh: <>
+ 2148 					getyx: <>
+ 2149 					wmove: <>
+ 2150 					wclrtobot: <>
+ 2151 					wclrtoeol: <>
+ 2152 					memcpy: <>
+ 2153 					wresize: <>
+ 2154 					doupdate: <>
+ 2155 					KEY_F: <>
+ 2156 					clrtobot: <>
+ 2157 					newwin_move: void (), <./ncurses/test/ncurses.c 3852>
+ 2158 						frame_win: 2098
+ 2159 						getyx: <>
+ 2160 						getmaxyx: <>
+ 2161 						wmove: <>
+ 2162 					getmaxx: <>
+ 2163 					mvwdelch: <>
+ 2164 					waddch: <>
+ 2165 					newwin_report: 2097
+ 2166 					isQuit: 1468
+ 2167 					wGetchar: 1457
+ 2168 					noraw: <>
+ 2169 					erase: <>
+ 2170 					endwin: <>
+ 2171 				flushinp_test: void (), <./ncurses/test/ncurses.c 4936>
+ 2172 					wclear: <>
+ 2173 					getmaxyx: <>
+ 2174 					getbegyx: <>
+ 2175 					subwin: <>
+ 2176 					init_pair: <>
+ 2177 					wbkgd: <>
+ 2178 					COLOR_PAIR: <>
+ 2179 					wattrset: <>
+ 2180 					box: <>
+ 2181 					mvwaddstr: <>
+ 2182 					wrefresh: <>
+ 2183 					cbreak: <>
+ 2184 					mvwprintw: <>
+ 2185 					napms: <>
+ 2186 					flushinp: <>
+ 2187 					delwin: <>
+ 2188 					werase: <>
+ 2189 					flash: <>
+ 2190 					wmove: <>
+ 2191 					echo: <>
+ 2192 					wGetchar: 1457
+ 2193 					Continue: void (), <./ncurses/test/ncurses.c 4926>
+ 2194 						noecho: <>
+ 2195 						wmove: <>
+ 2196 						mvwaddstr: <>
+ 2197 						wrefresh: <>
+ 2198 						wGetchar: 1457
+ 2199 					wdelch: <>
+ 2200 					clrtoeol: <>
+ 2201 					waddstr: <>
+ 2202 				test_sgr_attributes: void (), <./ncurses/test/ncurses.c 3498>
+ 2203 					init_pair: <>
+ 2204 					COLOR_PAIR: <>
+ 2205 					bkgdset: <>
+ 2206 					erase: <>
+ 2207 					mvprintw: <>
+ 2208 					set_sgr: <>
+ 2209 					clrtoeol: <>
+ 2210 					Pause: 1706
+ 2211 					endwin: <>
+ 2212 				menu_test: void (), <./ncurses/test/ncurses.c 5074>
+ 2213 					SIZEOF: <>
+ 2214 					mousemask: <>
+ 2215 					mvaddstr: <>
+ 2216 					refresh: <>
+ 2217 					new_item: <>
+ 2218 					new_menu: <>
+ 2219 					set_menu_format: <>
+ 2220 					scale_menu: <>
+ 2221 					newwin: <>
+ 2222 					set_menu_win: <>
+ 2223 					keypad: <>
+ 2224 					box: <>
+ 2225 					set_menu_sub: <>
+ 2226 					derwin: <>
+ 2227 					post_menu: <>
+ 2228 					menu_driver: <>
+ 2229 					menu_virtualize: int (), <./ncurses/test/ncurses.c 5030>
+ 2230 						beep: <>
+ 2231 					wGetchar: 1457
+ 2232 					beep: <>
+ 2233 					mvprintw: <>
+ 2234 					item_name: <>
+ 2235 					current_item: <>
+ 2236 					addstr: <>
+ 2237 					unpost_menu: <>
+ 2238 					delwin: <>
+ 2239 					free_menu: <>
+ 2240 					free_item: <>
+ 2241 				demo_pad: void (), <./ncurses/test/ncurses.c 4889>
+ 2242 					newpad: <>
+ 2243 					Cannot: 1703
+ 2244 					fill_pad: void (), <./ncurses/test/ncurses.c 4524>
+ 2245 						wmove: <>
+ 2246 						getmaxy: <>
+ 2247 						getmaxx: <>
+ 2248 						waddch: <>
+ 2249 					panner_legend: int (), <./ncurses/test/ncurses.c 4489>
+ 2250 						SIZEOF: <>
+ 2251 						move: <>
+ 2252 						printw: <>
+ 2253 						clrtoeol: <>
+ 2254 					keypad: <>
+ 2255 					panner: void (), <./ncurses/test/ncurses.c 4553>
+ 2256 						getmaxyx: <>
+ 2257 						scrollok: <>
+ 2258 						erase: <>
+ 2259 						panner_legend: 2249
+ 2260 						fill_pad: 2244
+ 2261 						beep: <>
+ 2262 						panner_v_cleanup: void (), <./ncurses/test/ncurses.c 4517>
+ 2263 							panner_legend: 2249
+ 2264 							do_v_line: void (), <./ncurses/test/ncurses.c 178>
+ 2265 								mvvline: <>
+ 2266 						panner_h_cleanup: void (), <./ncurses/test/ncurses.c 4510>
+ 2267 							panner_legend: 2249
+ 2268 							do_h_line: void (), <./ncurses/test/ncurses.c 171>
+ 2269 								mvhline: <>
+ 2270 						mvaddch: <>
+ 2271 						do_v_line: 2264
+ 2272 						do_h_line: 2268
+ 2273 						attron: <>
+ 2274 						attroff: <>
+ 2275 						gettimeofday: <>
+ 2276 						wnoutrefresh: <>
+ 2277 						pnoutrefresh: <>
+ 2278 						doupdate: <>
+ 2279 						move: <>
+ 2280 						printw: <>
+ 2281 						refresh: <>
+ 2282 					padgetch: int (), <./ncurses/test/ncurses.c 4817>
+ 2283 						wGetchar: 1457
+ 2284 						ShellOut: 1475
+ 2285 						CTRL: <>
+ 2286 						endwin: <>
+ 2287 						refresh: <>
+ 2288 					delwin: <>
+ 2289 					endwin: <>
+ 2290 					erase: <>
+ 2291 				demo_forms: void (), <./ncurses/test/ncurses.c 5624>
+ 2292 					new_fieldtype: <>
+ 2293 					mousemask: <>
+ 2294 					move: <>
+ 2295 					addstr: <>
+ 2296 					mvaddstr: <>
+ 2297 					refresh: <>
+ 2298 					memset: <>
+ 2299 					make_label: FIELD * (), <./ncurses/test/ncurses.c 5314>
+ 2300 						new_field: <>
+ 2301 						strlen: <>
+ 2302 						set_field_buffer: <>
+ 2303 						set_field_opts: <>
+ 2304 						field_opts: <>
+ 2305 					make_field: FIELD * (), <./ncurses/test/ncurses.c 5326>
+ 2306 						new_field: <>
+ 2307 						set_field_back: <>
+ 2308 						set_field_userptr: <>
+ 2309 					set_field_type: <>
+ 2310 					new_form: <>
+ 2311 					display_form: void (), <./ncurses/test/ncurses.c 5338>
+ 2312 						scale_form: <>
+ 2313 						newwin: <>
+ 2314 						set_form_win: <>
+ 2315 						set_form_sub: <>
+ 2316 						derwin: <>
+ 2317 						box: <>
+ 2318 						keypad: <>
+ 2319 						post_form: <>
+ 2320 						wrefresh: <>
+ 2321 					form_win: <>
+ 2322 					raw: <>
+ 2323 					nonl: <>
+ 2324 					form_driver: <>
+ 2325 					form_virtualize: int (), <./ncurses/test/ncurses.c 5431>
+ 2326 					field_buffer: <>
+ 2327 					clrtoeol: <>
+ 2328 					my_form_driver: int (), <./ncurses/test/ncurses.c 5538>
+ 2329 					beep: <>
+ 2330 					erase_form: void (), <./ncurses/test/ncurses.c 5357>
+ 2331 						form_win: <>
+ 2332 						form_sub: <>
+ 2333 						unpost_form: <>
+ 2334 						werase: <>
+ 2335 						wrefresh: <>
+ 2336 						delwin: <>
+ 2337 					free_form: <>
+ 2338 					free_field: <>
+ 2339 					free_fieldtype: <>
+ 2340 					noraw: <>
+ 2341 					nl: <>
+ 2342 				overlap_test: void (), <./ncurses/test/ncurses.c 5969>
+ 2343 					newwin: <>
+ 2344 					curs_set: <>
+ 2345 					raw: <>
+ 2346 					refresh: <>
+ 2347 					move: <>
+ 2348 					printw: <>
+ 2349 					memset: <>
+ 2350 					overlap_help: int (), <./ncurses/test/ncurses.c 5816>
+ 2351 						assert: <>
+ 2352 						sprintf: <>
+ 2353 						overlap_test_1_attr: void (), <./ncurses/test/ncurses.c 5771>
+ 2354 							wattrset: <>
+ 2355 							init_pair: <>
+ 2356 							COLOR_PAIR: <>
+ 2357 						overlap_helpitem: void (), <./ncurses/test/ncurses.c 5760>
+ 2358 							move: <>
+ 2359 							printw: <>
+ 2360 							clrtoeol: <>
+ 2361 						wattrset: <>
+ 2362 						wbkgdset: <>
+ 2363 						move: <>
+ 2364 						printw: <>
+ 2365 					isQuit: 1468
+ 2366 					Getchar: <>
+ 2367 					overlap_test_0: void (), <./ncurses/test/ncurses.c 5904>
+ 2368 						touchwin: <>
+ 2369 						wnoutrefresh: <>
+ 2370 						doupdate: <>
+ 2371 					overlap_test_1: void (), <./ncurses/test/ncurses.c 5914>
+ 2372 						overlap_test_1_attr: 2353
+ 2373 						fillwin: void (), <./ncurses/test/ncurses.c 5727>
+ 2374 							getmaxyx: <>
+ 2375 							wmove: <>
+ 2376 							waddch: <>
+ 2377 							UChar: <>
+ 2378 						wattrset: <>
+ 2379 					overlap_test_2: void (), <./ncurses/test/ncurses.c 5922>
+ 2380 						overlap_test_2_attr: void (), <./ncurses/test/ncurses.c 5794>
+ 2381 							init_pair: <>
+ 2382 							wbkgdset: <>
+ 2383 							COLOR_PAIR: <>
+ 2384 						crosswin: void (), <./ncurses/test/ncurses.c 5741>
+ 2385 							getmaxyx: <>
+ 2386 							wmove: <>
+ 2387 							waddch: <>
+ 2388 							UChar: <>
+ 2389 						box: <>
+ 2390 					overlap_test_3: void (), <./ncurses/test/ncurses.c 5942>
+ 2391 						wclear: <>
+ 2392 						wmove: <>
+ 2393 					overlap_test_4: void (), <./ncurses/test/ncurses.c 5949>
+ 2394 						overwrite: <>
+ 2395 						copywin: <>
+ 2396 						getmaxy: <>
+ 2397 						getmaxx: <>
+ 2398 						overlay: <>
+ 2399 					CTRL: <>
+ 2400 					beep: <>
+ 2401 					delwin: <>
+ 2402 					erase: <>
+ 2403 					endwin: <>
+ 2404 				trace_set: void (), <./ncurses/test/ncurses.c 5233>
+ 2405 					SIZEOF: <>
+ 2406 					mvaddstr: <>
+ 2407 					mvprintw: <>
+ 2408 					tracetrace: char * (), <./ncurses/test/ncurses.c 5167>
+ 2409 						strlen: <>
+ 2410 						typeMalloc: <>
+ 2411 						sprintf: <>
+ 2412 						strcat: <>
+ 2413 					refresh: <>
+ 2414 					new_item: <>
+ 2415 					new_menu: <>
+ 2416 					set_menu_format: <>
+ 2417 					scale_menu: <>
+ 2418 					menu_opts_off: <>
+ 2419 					newwin: <>
+ 2420 					set_menu_win: <>
+ 2421 					keypad: <>
+ 2422 					box: <>
+ 2423 					set_menu_sub: <>
+ 2424 					derwin: <>
+ 2425 					post_menu: <>
+ 2426 					menu_items: <>
+ 2427 					item_index: <>
+ 2428 					set_item_value: <>
+ 2429 					run_trace_menu: int (), <./ncurses/test/ncurses.c 5197>
+ 2430 						menu_driver: <>
+ 2431 						menu_virtualize: 2229
+ 2432 						wGetchar: 1457
+ 2433 						menu_win: <>
+ 2434 						menu_items: <>
+ 2435 						current_item: <>
+ 2436 						item_value: <>
+ 2437 						set_item_value: <>
+ 2438 					item_value: <>
+ 2439 					trace: <>
+ 2440 					Trace: <>
+ 2441 					addstr: <>
+ 2442 					wGetchar: 1457
+ 2443 					unpost_menu: <>
+ 2444 					delwin: <>
+ 2445 					free_menu: <>
+ 2446 					free_item: <>
+ 2447 			flushinp: <>
+ 2448 			set_terminal_modes: 1399
+ 2449 			reset_prog_mode: <>
+ 2450 			clear: <>
+ 2451 			refresh: <>
+ 2452 			endwin: <>
+ 2453 		railroad: void (), <./ncurses/test/railroad.c 181>
+ 2454 			getenv: <>
+ 2455 			tgetent: <>
+ 2456 			tgetstr: <>
+ 2457 			tgetnum: <>
+ 2458 			ShowCursor: void (), <./ncurses/test/railroad.c 85>
+ 2459 				tputs: <>
+ 2460 				outc: int (), <./ncurses/test/railroad.c 59>
+ 2461 					write: <>
+ 2462 					putc: <>
+ 2463 			CATCHALL: <>
+ 2464 			onsig: void (), <./ncurses/test/railroad.c 173>
+ 2465 				cleanup: void (), <./ncurses/test/railroad.c 165>
+ 2466 					Underline: void (), <./ncurses/test/railroad.c 101>
+ 2467 						tputs: <>
+ 2468 						outc: 2460
+ 2469 					StandOut: void (), <./ncurses/test/railroad.c 93>
+ 2470 						tputs: <>
+ 2471 						outc: 2460
+ 2472 					ShowCursor: 2458
+ 2473 				ExitProgram: 9
+ 2474 			ShowSign: void (), <./ncurses/test/railroad.c 109>
+ 2475 				tputs: <>
+ 2476 				tgoto: <>
+ 2477 				outc: 2460
+ 2478 				PutChar: void (), <./ncurses/test/railroad.c 71>
+ 2479 					putchar: <>
+ 2480 					fflush: <>
+ 2481 					napms: <>
+ 2482 				isalpha: <>
+ 2483 				isupper: <>
+ 2484 				isdigit: if (), <./ncurses/form/fty_ipv4.c 57>
+ 2485 				Underline: 2466
+ 2486 				Backup: void (), <./ncurses/test/railroad.c 79>
+ 2487 					tputs: <>
+ 2488 					outc: 2460
+ 2489 				StandOut: 2469
+ 2490 				fflush: <>
+ 2491 				putchar: <>
+ 2492 		clear: <>
+ 2493 		look_out: void (), <./ncurses/test/xmas.c 177>
+ 2494 			napms: <>
+ 2495 			getch: <>
+ 2496 			beep: <>
+ 2497 			done: 69
+ 2498 		boxit: int (), <./ncurses/test/xmas.c 676>
+ 2499 			mvaddch: <>
+ 2500 		seas: int (), <./ncurses/test/xmas.c 703>
+ 2501 			mvaddch: <>
+ 2502 		greet: int (), <./ncurses/test/xmas.c 718>
+ 2503 			mvaddch: <>
+ 2504 		fromwho: int (), <./ncurses/test/xmas.c 734>
+ 2505 			mvaddstr: <>
+ 2506 		tree: if (, <./ncurses/ncurses/tinfo/add_tries.c 57>
+ 2507 			T: <>
+ 2508 			T_CALLED: <>
+ 2509 			tree: 2506
+ 2510 			returnCode: <>
+ 2511 			free: <>
+ 2512 			typeMalloc: <>
+ 2513 			recur_tries: <>
+ 2514 		balls: int (), <./ncurses/test/xmas.c 788>
+ 2515 			overlay: <>
+ 2516 			set_color: <>
+ 2517 			mvwaddch: <>
+ 2518 			unset_color: void (), <./ncurses/test/xmas.c 170>
+ 2519 			wrefresh: <>
+ 2520 		star: int (), <./ncurses/test/xmas.c 817>
+ 2521 			wattrset: <>
+ 2522 			set_color: <>
+ 2523 			mvwaddch: <>
+ 2524 			wstandend: <>
+ 2525 			unset_color: void (), <./ncurses/test/xmas.c 170>
+ 2526 			wrefresh: <>
+ 2527 		strng1: int (), <./ncurses/test/xmas.c 832>
+ 2528 			wattrset: <>
+ 2529 			set_color: <>
+ 2530 			mvwaddch: <>
+ 2531 			wattroff: <>
+ 2532 			unset_color: void (), <./ncurses/test/xmas.c 170>
+ 2533 			wrefresh: <>
+ 2534 		strng2: int (), <./ncurses/test/xmas.c 850>
+ 2535 			wattrset: <>
+ 2536 			set_color: <>
+ 2537 			mvwaddch: <>
+ 2538 			wattroff: <>
+ 2539 			unset_color: void (), <./ncurses/test/xmas.c 170>
+ 2540 			wrefresh: <>
+ 2541 		strng3: int (), <./ncurses/test/xmas.c 871>
+ 2542 			wattrset: <>
+ 2543 			set_color: <>
+ 2544 			mvwaddch: <>
+ 2545 			wattroff: <>
+ 2546 			unset_color: void (), <./ncurses/test/xmas.c 170>
+ 2547 			wrefresh: <>
+ 2548 		strng4: int (), <./ncurses/test/xmas.c 894>
+ 2549 			wattrset: <>
+ 2550 			set_color: <>
+ 2551 			mvwaddch: <>
+ 2552 			wattroff: <>
+ 2553 			unset_color: void (), <./ncurses/test/xmas.c 170>
+ 2554 			wrefresh: <>
+ 2555 		strng5: int (), <./ncurses/test/xmas.c 922>
+ 2556 			wattrset: <>
+ 2557 			set_color: <>
+ 2558 			mvwaddch: <>
+ 2559 			wattroff: <>
+ 2560 			unset_color: void (), <./ncurses/test/xmas.c 170>
+ 2561 			overlay: <>
+ 2562 			wrefresh: <>
+ 2563 		overlay: <>
+ 2564 		wstandout: <>
+ 2565 		wstandend: <>
+ 2566 		reindeer: int (), <./ncurses/test/xmas.c 1007>
+ 2567 			mvwaddch: <>
+ 2568 			wrefresh: <>
+ 2569 			werase: <>
+ 2570 			look_out: 2493
+ 2571 			touchwin: <>
+ 2572 			deer_step: void (), <./ncurses/test/xmas.c 998>
+ 2573 				mvwin: <>
+ 2574 				wrefresh: <>
+ 2575 				look_out: 2493
+ 2576 		blinkit: int (), <./ncurses/test/xmas.c 948>
+ 2577 			touchwin: <>
+ 2578 			overlay: <>
+ 2579 			wrefresh: <>
+ 2580 		wmove: <>
+ 2581 		wprintw: <>
+ 2582 		wclrtoeol: <>
+ 2583 		keyok: <>
+ 2584 		A2X: <>
+ 2585 		A2Y: <>
+ 2586 		mvaddstr: <>
+ 2587 		localtime: <>
+ 2588 		dline: void (), <./ncurses/test/tclock.c 61>
+ 2589 			has_colors: if (), <./ncurses/test/xmas.c 156>
+ 2590 			attrset: <>
+ 2591 			COLOR_PAIR: <>
+ 2592 			abs: <>
+ 2593 			sign: <>
+ 2594 			plot: void (), <./ncurses/test/tclock.c 54>
+ 2595 				mvaddch: <>
+ 2596 		ctime: <>
+ 2597 		flash: <>
+ 2598 		usage: void (), <./ncurses/test/ins_wide.c 469>
+ 2599 			SIZEOF: <>
+ 2600 			fprintf: <>
+ 2601 			ExitProgram: 9
+ 2602 		test_inserts: void (), <./ncurses/test/ins_wide.c 213>
+ 2603 			show: void (), <./ncurses/test/lrtest.c 52>
+ 2604 				mvaddch: <>
+ 2605 			setlocale: <>
+ 2606 			putenv: <>
+ 2607 			strcpy: <>
+ 2608 			initscr: <>
+ 2609 			cbreak: <>
+ 2610 			noecho: <>
+ 2611 			keypad: <>
+ 2612 			newwin: <>
+ 2613 			box: <>
+ 2614 			wnoutrefresh: <>
+ 2615 			derwin: <>
+ 2616 			mvwvline: <>
+ 2617 			mvwaddstr: <>
+ 2618 			legend: void (), <./ncurses/test/ins_wide.c 72>
+ 2619 				wmove: <>
+ 2620 				wprintw: <>
+ 2621 				wclrtoeol: <>
+ 2622 				waddwstr: <>
+ 2623 				waddstr: <>
+ 2624 			doupdate: <>
+ 2625 			has_colors: if (), <./ncurses/test/xmas.c 156>
+ 2626 			start_color: <>
+ 2627 			init_pair: <>
+ 2628 			wbkgdset: <>
+ 2629 			COLOR_PAIR: <>
+ 2630 			wget_wch: <>
+ 2631 			CTRL: <>
+ 2632 			beep: <>
+ 2633 			wmove: <>
+ 2634 			test_inserts: 2602
+ 2635 			touchwin: <>
+ 2636 			ColOf: int (), <./ncurses/test/ins_wide.c 105>
+ 2637 				wcwidth: <>
+ 2638 			move: <>
+ 2639 			InsNStr: <>
+ 2640 			LEN: <>
+ 2641 			InsStr: <>
+ 2642 			MvInsNStr: <>
+ 2643 			MvInsStr: <>
+ 2644 			WInsNStr: <>
+ 2645 			WInsStr: <>
+ 2646 			MvWInsNStr: <>
+ 2647 			MvWInsStr: <>
+ 2648 			InsCh: int (), <./ncurses/test/ins_wide.c 198>
+ 2649 				ConvertCh: int (), <./ncurses/test/ins_wide.c 142>
+ 2650 					setcchar: <>
+ 2651 					beep: <>
+ 2652 				ins_wch: <>
+ 2653 				insch: <>
+ 2654 			MvInsCh: int (), <./ncurses/test/ins_wide.c 170>
+ 2655 				ConvertCh: 2649
+ 2656 				mvins_wch: <>
+ 2657 				mvinsch: <>
+ 2658 			WInsCh: int (), <./ncurses/test/ins_wide.c 184>
+ 2659 				ConvertCh: 2649
+ 2660 				wins_wch: <>
+ 2661 				winsch: <>
+ 2662 			MvWInsCh: int (), <./ncurses/test/ins_wide.c 156>
+ 2663 				ConvertCh: 2649
+ 2664 				mvwins_wch: <>
+ 2665 				mvwinsch: <>
+ 2666 			delwin: <>
+ 2667 		usage: void (), <./ncurses/test/demo_forms.c 458>
+ 2668 			SIZEOF: <>
+ 2669 			fprintf: <>
+ 2670 			exit: <>
+ 2671 		intrflush: <>
+ 2672 		demo_forms: void (), <./ncurses/test/demo_forms.c 331>
+ 2673 			mousemask: <>
+ 2674 			help_edit_field: void (), <./ncurses/test/edit_field.c 194>
+ 2675 				newwin: <>
+ 2676 				newpad: <>
+ 2677 				SIZEOF: <>
+ 2678 				begin_popup: void (), <./ncurses/test/edit_field.c 175>
+ 2679 					doupdate: <>
+ 2680 					dupwin: <>
+ 2681 				keypad: <>
+ 2682 				waddstr: <>
+ 2683 				form_request_name: <>
+ 2684 				wprintw: <>
+ 2685 				keyname: <>
+ 2686 				getcury: <>
+ 2687 				beep: <>
+ 2688 				CTRL: <>
+ 2689 				werase: <>
+ 2690 				box: <>
+ 2691 				wnoutrefresh: <>
+ 2692 				pnoutrefresh: <>
+ 2693 				doupdate: <>
+ 2694 				wgetch: <>
+ 2695 				wrefresh: <>
+ 2696 				delwin: <>
+ 2697 				end_popup: void (), <./ncurses/test/edit_field.c 182>
+ 2698 					touchwin: <>
+ 2699 					wnoutrefresh: <>
+ 2700 					doupdate: <>
+ 2701 					delwin: <>
+ 2702 			mvaddstr: <>
+ 2703 			show_insert_mode: void (), <./ncurses/test/demo_forms.c 169>
+ 2704 				mvaddstr: <>
+ 2705 			refresh: <>
+ 2706 			memset: <>
+ 2707 			sprintf: <>
+ 2708 			make_label: FIELD * (), <./ncurses/test/demo_forms.c 80>
+ 2709 				new_field: <>
+ 2710 				strlen: <>
+ 2711 				set_field_buffer: <>
+ 2712 				set_field_opts: <>
+ 2713 				field_opts: <>
+ 2714 			set_new_page: <>
+ 2715 			make_field: FIELD * (), <./ncurses/test/demo_forms.c 95>
+ 2716 				new_field: <>
+ 2717 				set_field_back: <>
+ 2718 				set_field_just: <>
+ 2719 				has_colors: if (), <./ncurses/test/xmas.c 156>
+ 2720 				set_field_fore: <>
+ 2721 				COLOR_PAIR: <>
+ 2722 				field_opts_off: <>
+ 2723 				set_max_field: <>
+ 2724 				set_field_userptr: <>
+ 2725 				field_back: <>
+ 2726 				set_field_buffer: <>
+ 2727 			set_field_type: <>
+ 2728 			set_field_pad: <>
+ 2729 			set_field_buffer: <>
+ 2730 			new_form: <>
+ 2731 			display_form: void (), <./ncurses/test/demo_forms.c 133>
+ 2732 				scale_form: <>
+ 2733 				newwin: <>
+ 2734 				set_form_win: <>
+ 2735 				set_form_sub: <>
+ 2736 				derwin: <>
+ 2737 				box: <>
+ 2738 				keypad: <>
+ 2739 				post_form: <>
+ 2740 				wrefresh: <>
+ 2741 			form_win: <>
+ 2742 			newwin: <>
+ 2743 			getmaxy: <>
+ 2744 			show_current_field: void (), <./ncurses/test/demo_forms.c 243>
+ 2745 				has_colors: if (), <./ncurses/test/xmas.c 156>
+ 2746 				wbkgd: <>
+ 2747 				COLOR_PAIR: <>
+ 2748 				werase: <>
+ 2749 				wprintw: <>
+ 2750 				data_ahead: <>
+ 2751 				waddstr: <>
+ 2752 				data_behind: <>
+ 2753 				waddch: <>
+ 2754 				current_field: <>
+ 2755 				form_page: <>
+ 2756 				new_page: <>
+ 2757 				field_index: <>
+ 2758 				field_count: <>
+ 2759 				field_arg: <>
+ 2760 				field_type: <>
+ 2761 				field_opts: <>
+ 2762 				field_status: <>
+ 2763 				dynamic_field_info: <>
+ 2764 				wattrset: <>
+ 2765 				field_fore: <>
+ 2766 				wattroff: <>
+ 2767 				field_back: <>
+ 2768 				field_pad: <>
+ 2769 				field_buffer: <>
+ 2770 				wrefresh: <>
+ 2771 			edit_field: int (), <./ncurses/test/edit_field.c 302>
+ 2772 				wgetch: <>
+ 2773 				form_win: <>
+ 2774 				offset_in_field: int (), <./ncurses/test/edit_field.c 288>
+ 2775 					current_field: <>
+ 2776 				current_field: <>
+ 2777 				set_field_back: <>
+ 2778 				inactive_field: void (), <./ncurses/test/edit_field.c 295>
+ 2779 					field_userptr: <>
+ 2780 					set_field_back: <>
+ 2781 				SIZEOF: <>
+ 2782 				form_driver: <>
+ 2783 				field_buffer: <>
+ 2784 				atoi: <>
+ 2785 				beep: <>
+ 2786 				isprint: 266
+ 2787 				sprintf: <>
+ 2788 				set_field_buffer: <>
+ 2789 			my_form_driver: int (), <./ncurses/test/demo_forms.c 196>
+ 2790 				form_driver: <>
+ 2791 				help_edit_field: 2674
+ 2792 				current_field: <>
+ 2793 				set_current_field: <>
+ 2794 				another_field: FIELD * (), <./ncurses/test/demo_forms.c 179>
+ 2795 					form_fields: <>
+ 2796 					field_opts_on: <>
+ 2797 				field_opts: <>
+ 2798 				field_opts_off: <>
+ 2799 				set_field_status: <>
+ 2800 				field_opts_on: <>
+ 2801 				show_insert_mode: 2703
+ 2802 				refresh: <>
+ 2803 				beep: <>
+ 2804 			beep: <>
+ 2805 			erase_form: void (), <./ncurses/test/demo_forms.c 156>
+ 2806 				form_win: <>
+ 2807 				form_sub: <>
+ 2808 				unpost_form: <>
+ 2809 				werase: <>
+ 2810 				wrefresh: <>
+ 2811 				delwin: <>
+ 2812 			free_form: <>
+ 2813 			free_field: <>
+ 2814 			noraw: <>
+ 2815 			nl: <>
+ 2816 		usage: void (), <./ncurses/test/inserts.c 384>
+ 2817 			SIZEOF: <>
+ 2818 			fprintf: <>
+ 2819 			ExitProgram: 9
+ 2820 		test_inserts: void (), <./ncurses/test/inserts.c 136>
+ 2821 			show: 2603
+ 2822 			setlocale: <>
+ 2823 			putenv: <>
+ 2824 			strcpy: <>
+ 2825 			initscr: <>
+ 2826 			cbreak: <>
+ 2827 			noecho: <>
+ 2828 			keypad: <>
+ 2829 			newwin: <>
+ 2830 			box: <>
+ 2831 			wnoutrefresh: <>
+ 2832 			derwin: <>
+ 2833 			mvwvline: <>
+ 2834 			mvwaddstr: <>
+ 2835 			legend: void (), <./ncurses/test/inserts.c 67>
+ 2836 				wmove: <>
+ 2837 				wprintw: <>
+ 2838 				wclrtoeol: <>
+ 2839 			doupdate: <>
+ 2840 			has_colors: if (), <./ncurses/test/xmas.c 156>
+ 2841 			start_color: <>
+ 2842 			init_pair: <>
+ 2843 			wbkgdset: <>
+ 2844 			COLOR_PAIR: <>
+ 2845 			wgetch: <>
+ 2846 			beep: <>
+ 2847 			wmove: <>
+ 2848 			test_inserts: 2820
+ 2849 			touchwin: <>
+ 2850 			CTRL: <>
+ 2851 			ColOf: int (), <./ncurses/test/inserts.c 98>
+ 2852 				UChar: <>
+ 2853 			move: <>
+ 2854 			InsNStr: <>
+ 2855 			LEN: <>
+ 2856 			InsStr: <>
+ 2857 			MvInsNStr: <>
+ 2858 			MvInsStr: <>
+ 2859 			WInsNStr: <>
+ 2860 			WInsStr: <>
+ 2861 			MvWInsNStr: <>
+ 2862 			MvWInsStr: <>
+ 2863 			InsCh: <>
+ 2864 			UChar: <>
+ 2865 			MvInsCh: <>
+ 2866 			WInsCh: <>
+ 2867 			MvWInsCh: <>
+ 2868 			delwin: <>
+ 2869 		test_set_escdelay: void (), <./ncurses/test/test_opaque.c 398>
+ 2870 			set_escdelay: <>
+ 2871 		test_set_tabsize: void (), <./ncurses/test/test_opaque.c 404>
+ 2872 			cbreak: <>
+ 2873 			noecho: <>
+ 2874 			set_tabsize: <>
+ 2875 			move: <>
+ 2876 			addch: <>
+ 2877 			getyx: <>
+ 2878 			getch: <>
+ 2879 			erase: <>
+ 2880 		test_opaque: int (), <./ncurses/test/test_opaque.c 247>
+ 2881 			beep: <>
+ 2882 			newwin: <>
+ 2883 			box: <>
+ 2884 			wnoutrefresh: <>
+ 2885 			derwin: <>
+ 2886 			getmaxy: <>
+ 2887 			getmaxx: <>
+ 2888 			keypad: <>
+ 2889 			cbreak: <>
+ 2890 			noecho: <>
+ 2891 			wmove: <>
+ 2892 			fopen: <>
+ 2893 			fgetc: <>
+ 2894 			waddch: <>
+ 2895 			UChar: <>
+ 2896 			fclose: <>
+ 2897 			wprintw: <>
+ 2898 			to_keyword: void (), <./ncurses/test/test_opaque.c 168>
+ 2899 				wmove: <>
+ 2900 				status_y: int (), <./ncurses/test/test_opaque.c 156>
+ 2901 					getmaxy: <>
+ 2902 				status_x: int (), <./ncurses/test/test_opaque.c 162>
+ 2903 					getmaxy: <>
+ 2904 			wgetch: <>
+ 2905 			show_opaque: int (), <./ncurses/test/test_opaque.c 217>
+ 2906 				werase: <>
+ 2907 				SIZEOF: <>
+ 2908 				show_keyword: void (), <./ncurses/test/test_opaque.c 184>
+ 2909 					to_keyword: 2898
+ 2910 					wstandout: <>
+ 2911 					wprintw: <>
+ 2912 					wstandend: <>
+ 2913 				to_result: void (), <./ncurses/test/test_opaque.c 174>
+ 2914 					status_y: 2900
+ 2915 					status_x: 2902
+ 2916 					wmove: <>
+ 2917 				wprintw: <>
+ 2918 				func: NCURSES_SCREEN_CB, <./ncurses/ncurses/tinfo/use_screen.c 38>
+ 2919 				wgetparent: <>
+ 2920 				wgetscrreg: <>
+ 2921 				wnoutrefresh: <>
+ 2922 			Quit: bool (), <./ncurses/test/test_opaque.c 57>
+ 2923 			SIZEOF: <>
+ 2924 			func: NCURSES_SCREEN_CB, <./ncurses/ncurses/tinfo/use_screen.c 38>
+ 2925 			mvwgetch: <>
+ 2926 			test_opaque: 2880
+ 2927 			touchwin: <>
+ 2928 			napms: <>
+ 2929 			delwin: <>
+ 2930 		test_inchs: int (), <./ncurses/test/test_inwstr.c 73>
+ 2931 			getmaxx: <>
+ 2932 			beep: <>
+ 2933 			newwin: <>
+ 2934 			box: <>
+ 2935 			wnoutrefresh: <>
+ 2936 			derwin: <>
+ 2937 			getmaxy: <>
+ 2938 			keypad: <>
+ 2939 			cbreak: <>
+ 2940 			noecho: <>
+ 2941 			wmove: <>
+ 2942 			fopen: <>
+ 2943 			fgetc: <>
+ 2944 			waddch: <>
+ 2945 			UChar: <>
+ 2946 			fclose: <>
+ 2947 			wprintw: <>
+ 2948 			Quit: bool (), <./ncurses/test/test_inwstr.c 53>
+ 2949 			mvwgetch: <>
+ 2950 			test_inchs: 2930
+ 2951 			touchwin: <>
+ 2952 			mvwprintw: <>
+ 2953 			wclrtoeol: <>
+ 2954 			winwstr: <>
+ 2955 			show_1st: void (), <./ncurses/test/test_inwstr.c 59>
+ 2956 				mvwaddwstr: <>
+ 2957 			mvwinwstr: <>
+ 2958 			showmore: void (), <./ncurses/test/test_inwstr.c 65>
+ 2959 				wmove: <>
+ 2960 				wclrtoeol: <>
+ 2961 				show_1st: 2955
+ 2962 			move: <>
+ 2963 			inwstr: <>
+ 2964 			mvinwstr: <>
+ 2965 			wclrtobot: <>
+ 2966 			winnwstr: <>
+ 2967 			mvwinnwstr: <>
+ 2968 			innwstr: <>
+ 2969 			mvinnwstr: <>
+ 2970 			delwin: <>
+ 2971 		test_inchs: int (), <./ncurses/test/inchs.c 60>
+ 2972 			beep: <>
+ 2973 			newwin: <>
+ 2974 			box: <>
+ 2975 			wnoutrefresh: <>
+ 2976 			derwin: <>
+ 2977 			getmaxy: <>
+ 2978 			getmaxx: <>
+ 2979 			keypad: <>
+ 2980 			cbreak: <>
+ 2981 			noecho: <>
+ 2982 			wmove: <>
+ 2983 			fopen: <>
+ 2984 			fgetc: <>
+ 2985 			waddch: <>
+ 2986 			UChar: <>
+ 2987 			fclose: <>
+ 2988 			wprintw: <>
+ 2989 			Quit: bool (), <./ncurses/test/inchs.c 54>
+ 2990 			mvwgetch: <>
+ 2991 			test_inchs: 2971
+ 2992 			touchwin: <>
+ 2993 			mvwprintw: <>
+ 2994 			wclrtoeol: <>
+ 2995 			winch: <>
+ 2996 			mvwinch: <>
+ 2997 			move: <>
+ 2998 			inch: <>
+ 2999 			mvinch: <>
+ 3000 			wclrtobot: <>
+ 3001 			winchstr: <>
+ 3002 			mvwaddchstr: <>
+ 3003 			winchnstr: <>
+ 3004 			mvwinchstr: <>
+ 3005 			mvwinchnstr: <>
+ 3006 			inchstr: <>
+ 3007 			inchnstr: <>
+ 3008 			mvinchstr: <>
+ 3009 			mvinchnstr: <>
+ 3010 			delwin: <>
+ 3011 		test_inchs: int (), <./ncurses/test/test_instr.c 71>
+ 3012 			getmaxx: <>
+ 3013 			beep: <>
+ 3014 			newwin: <>
+ 3015 			box: <>
+ 3016 			wnoutrefresh: <>
+ 3017 			derwin: <>
+ 3018 			getmaxy: <>
+ 3019 			keypad: <>
+ 3020 			cbreak: <>
+ 3021 			noecho: <>
+ 3022 			wmove: <>
+ 3023 			fopen: <>
+ 3024 			fgetc: <>
+ 3025 			waddch: <>
+ 3026 			UChar: <>
+ 3027 			fclose: <>
+ 3028 			wprintw: <>
+ 3029 			Quit: bool (), <./ncurses/test/test_instr.c 51>
+ 3030 			mvwgetch: <>
+ 3031 			test_inchs: 3011
+ 3032 			touchwin: <>
+ 3033 			mvwprintw: <>
+ 3034 			wclrtoeol: <>
+ 3035 			winstr: <>
+ 3036 			show_1st: void (), <./ncurses/test/test_instr.c 57>
+ 3037 				mvwaddstr: <>
+ 3038 			mvwinstr: <>
+ 3039 			showmore: void (), <./ncurses/test/test_instr.c 63>
+ 3040 				wmove: <>
+ 3041 				wclrtoeol: <>
+ 3042 				show_1st: 3036
+ 3043 			move: <>
+ 3044 			instr: <>
+ 3045 			mvinstr: <>
+ 3046 			wclrtobot: <>
+ 3047 			winnstr: <>
+ 3048 			mvwinnstr: <>
+ 3049 			innstr: <>
+ 3050 			mvinnstr: <>
+ 3051 			delwin: <>
+ 3052 		onsig: RETSIGTYPE (), <./ncurses/test/firework.c 45>
+ 3053 			cleanup: void (), <./ncurses/test/firework.c 38>
+ 3054 				curs_set: <>
+ 3055 				endwin: <>
+ 3056 			ExitProgram: 9
+ 3057 		abs: <>
+ 3058 		showit: void (), <./ncurses/test/firework.c 52>
+ 3059 			napms: <>
+ 3060 			getch: <>
+ 3061 			erase: <>
+ 3062 			cleanup: 3053
+ 3063 			ExitProgram: 9
+ 3064 			nodelay: <>
+ 3065 		explode: void (), <./ncurses/test/firework.c 89>
+ 3066 			erase: <>
+ 3067 			mvprintw: <>
+ 3068 			showit: 3058
+ 3069 			init_pair: <>
+ 3070 			get_colour: int (), <./ncurses/test/firework.c 74>
+ 3071 				rand: <>
+ 3072 			attrset: <>
+ 3073 			COLOR_PAIR: <>
+ 3074 		has_ic: <>
+ 3075 		addstr: <>
+ 3076 		show: 2603
+ 3077 		pair_content: <>
+ 3078 		color_set: <>
+ 3079 		SHOW: <>
+ 3080 		define_key: <>
+ 3081 		keybound: <>
+ 3082 		log_last_line: void (), <./ncurses/test/demo_altkeys.c 57>
+ 3083 			fopen: <>
+ 3084 			getyx: <>
+ 3085 			wmove: <>
+ 3086 			winnstr: <>
+ 3087 			isspace: <>
+ 3088 			UChar: <>
+ 3089 			fprintf: <>
+ 3090 			fclose: <>
+ 3091 		test_redraw: void (), <./ncurses/test/redraw.c 59>
+ 3092 			scrollok: <>
+ 3093 			keypad: <>
+ 3094 			getmaxyx: <>
+ 3095 			getbegyx: <>
+ 3096 			wgetch: <>
+ 3097 			getyx: <>
+ 3098 			newwin: <>
+ 3099 			box: <>
+ 3100 			wrefresh: <>
+ 3101 			test_redraw: 3091
+ 3102 			delwin: <>
+ 3103 			touchwin: <>
+ 3104 			trash: void (), <./ncurses/test/redraw.c 38>
+ 3105 				putchar: <>
+ 3106 			system: <>
+ 3107 			mvcur: <>
+ 3108 			CTRL: <>
+ 3109 			redrawwin: <>
+ 3110 			wredrawln: <>
+ 3111 			wmove: <>
+ 3112 			waddstr: <>
+ 3113 			keyname: <>
+ 3114 			unctrl: <>
+ 3115 			UChar: <>
+ 3116 			wnoutrefresh: <>
+ 3117 			doupdate: <>
+ 3118 		fill: 1671
+ 3119 		waddstr: <>
+ 3120 		wclrtobot: <>
+ 3121 		do_options: void (), <./ncurses/test/bs.c 1146>
+ 3122 			fprintf: <>
+ 3123 			ExitProgram: 9
+ 3124 		intro: void (), <./ncurses/test/bs.c 215>
+ 3125 			srand: <>
+ 3126 			time: <>
+ 3127 			L:  ==, <./ncurses/ncurses/widechar/lib_add_wch.c 55>
+ 3128 			getpid: <>
+ 3129 			CATCHALL: <>
+ 3130 			uninitgame: <>
+ 3131 			getlogin: <>
+ 3132 			strcpy: <>
+ 3133 			toupper: <>
+ 3134 			UChar: <>
+ 3135 			initscr: <>
+ 3136 			keypad: <>
+ 3137 			def_prog_mode: <>
+ 3138 			nonl: <>
+ 3139 			cbreak: <>
+ 3140 			noecho: <>
+ 3141 			clear: <>
+ 3142 			mvaddstr: <>
+ 3143 			move: <>
+ 3144 			PR: <>
+ 3145 			refresh: <>
+ 3146 			getch: <>
+ 3147 			start_color: <>
+ 3148 			init_pair: <>
+ 3149 			mousemask: <>
+ 3150 		initgame: void (), <./ncurses/test/bs.c 334>
+ 3151 			clear: <>
+ 3152 			mvaddstr: <>
+ 3153 			move: <>
+ 3154 			announceopts: void (), <./ncurses/test/bs.c 192>
+ 3155 				printw: <>
+ 3156 			memset: <>
+ 3157 			mvaddch: <>
+ 3158 			has_colors: if (), <./ncurses/test/xmas.c 156>
+ 3159 			attron: <>
+ 3160 			COLOR_PAIR: <>
+ 3161 			addch: <>
+ 3162 			addstr: <>
+ 3163 			attrset: <>
+ 3164 			mvprintw: <>
+ 3165 			randomplace: void (), <./ncurses/test/bs.c 321>
+ 3166 				rnd: int (), <./ncurses/test/bs.c 315>
+ 3167 					rand: <>
+ 3168 				checkplace: bool (), <./ncurses/test/bs.c 677>
+ 3169 					ONBOARD: <>
+ 3170 					rnd: 3166
+ 3171 					error: void (), <./ncurses/test/bs.c 286>
+ 3172 						move: <>
+ 3173 						clrtoeol: <>
+ 3174 						addstr: <>
+ 3175 						beep: <>
+ 3176 					collidecheck: bool (), <./ncurses/test/bs.c 648>
+ 3177 						IS_SHIP: <>
+ 3178 						ONBOARD: <>
+ 3179 			placeship: void (), <./ncurses/test/bs.c 297>
+ 3180 				pgoto: <>
+ 3181 				addch: <>
+ 3182 			prompt: void (), <./ncurses/test/bs.c 276>
+ 3183 				move: <>
+ 3184 				clrtoeol: <>
+ 3185 				printw: <>
+ 3186 				refresh: <>
+ 3187 			getcoord: int (), <./ncurses/test/bs.c 539>
+ 3188 				cgoto: <>
+ 3189 				pgoto: <>
+ 3190 				refresh: <>
+ 3191 				mvprintw: <>
+ 3192 				getch: <>
+ 3193 				clearok: <>
+ 3194 				getmouse: <>
+ 3195 				CY: <>
+ 3196 				CX: <>
+ 3197 				CXINV: <>
+ 3198 				CYINV: <>
+ 3199 				beep: <>
+ 3200 				mvaddstr: <>
+ 3201 			strchr: <>
+ 3202 			ungetch: <>
+ 3203 			pgoto: <>
+ 3204 			getch: <>
+ 3205 			clearok: <>
+ 3206 			refresh: <>
+ 3207 			assert: <>
+ 3208 			error: 3171
+ 3209 			checkplace: 3168
+ 3210 			rnd: 3166
+ 3211 		awinna: int (), <./ncurses/test/bs.c 721>
+ 3212 			OTHER: <>
+ 3213 		cputurn: bool (), <./ncurses/test/bs.c 990>
+ 3214 			randomfire: void (), <./ncurses/test/bs.c 896>
+ 3215 				rnd: 3166
+ 3216 				error: 3171
+ 3217 				ExitProgram: 9
+ 3218 			cpufire: int (), <./ncurses/test/bs.c 949>
+ 3219 				mvprintw: <>
+ 3220 				hitship: ship_t * (), <./ncurses/test/bs.c 738>
+ 3221 					getyx: <>
+ 3222 					OTHER: <>
+ 3223 					ONBOARD: <>
+ 3224 					cgoto: <>
+ 3225 					has_colors: if (), <./ncurses/test/xmas.c 156>
+ 3226 					attron: <>
+ 3227 					COLOR_PAIR: <>
+ 3228 					addch: <>
+ 3229 					attrset: <>
+ 3230 					pgoto: <>
+ 3231 					move: <>
+ 3232 				printw: <>
+ 3233 				clrtoeol: <>
+ 3234 				pgoto: <>
+ 3235 				has_colors: if (), <./ncurses/test/xmas.c 156>
+ 3236 				attron: <>
+ 3237 				COLOR_PAIR: <>
+ 3238 				addch: <>
+ 3239 				attrset: <>
+ 3240 			POSSIBLE: <>
+ 3241 			rnd: 3166
+ 3242 			assert: <>
+ 3243 			refresh: <>
+ 3244 			sleep: <>
+ 3245 			mvprintw: <>
+ 3246 		plyturn: bool (), <./ncurses/test/bs.c 816>
+ 3247 			prompt: 3182
+ 3248 			getcoord: 3187
+ 3249 			beep: <>
+ 3250 			IS_SHIP: <>
+ 3251 			cgoto: <>
+ 3252 			has_colors: if (), <./ncurses/test/xmas.c 156>
+ 3253 			attron: <>
+ 3254 			COLOR_PAIR: <>
+ 3255 			addch: <>
+ 3256 			attrset: <>
+ 3257 			hitship: 3220
+ 3258 			rnd: 3166
+ 3259 			printw: <>
+ 3260 		scount: int (), <./ncurses/test/bs.c 1195>
+ 3261 		OTHER: <>
+ 3262 		playagain: int (), <./ncurses/test/bs.c 1117>
+ 3263 			cgoto: <>
+ 3264 			addch: <>
+ 3265 			awinna: 3211
+ 3266 			strlen: <>
+ 3267 			mvprintw: <>
+ 3268 			prompt: 3182
+ 3269 			sgetc: int (), <./ncurses/test/bs.c 873>
+ 3270 				refresh: <>
+ 3271 				getch: <>
+ 3272 				islower: <>
+ 3273 				toupper: <>
+ 3274 				uninitgame: <>
+ 3275 				addch: <>
+ 3276 		uninitgame: <>
+ 3277 		demo_termcap: void (), <./ncurses/test/demo_termcap.c 119>
+ 3278 			printf: <>
+ 3279 			tgetent: <>
+ 3280 			isCapName: <>
+ 3281 			dumpit: void (), <./ncurses/test/demo_termcap.c 44>
+ 3282 				tgetstr: <>
+ 3283 				printf: <>
+ 3284 				UChar: <>
+ 3285 				fputs: <>
+ 3286 				isgraph: <>
+ 3287 				fputc: <>
+ 3288 				tgetnum: <>
+ 3289 				tgetflag: <>
+ 3290 				fflush: <>
+ 3291 		rip_footer: int (), <./ncurses/test/demo_menus.c 805>
+ 3292 			wbkgd: <>
+ 3293 			werase: <>
+ 3294 			wmove: <>
+ 3295 			wprintw: <>
+ 3296 			wnoutrefresh: <>
+ 3297 		rip_header: int (), <./ncurses/test/demo_menus.c 816>
+ 3298 			wbkgd: <>
+ 3299 			werase: <>
+ 3300 			wmove: <>
+ 3301 			wprintw: <>
+ 3302 			wnoutrefresh: <>
+ 3303 		strtoul: <>
+ 3304 		usage: void (), <./ncurses/test/demo_menus.c 828>
+ 3305 			SIZEOF: <>
+ 3306 			fprintf: <>
+ 3307 			ExitProgram: 9
+ 3308 		noraw: <>
+ 3309 		build_menus: void (), <./ncurses/test/demo_menus.c 589>
+ 3310 			new_item: <>
+ 3311 			menu_create: MENU * (), <./ncurses/test/demo_menus.c 211>
+ 3312 				okMenuNo: <>
+ 3313 				menu_offset: int (), <./ncurses/test/demo_menus.c 191>
+ 3314 					okMenuNo: <>
+ 3315 					menu_spacing: <>
+ 3316 				new_menu: <>
+ 3317 				has_colors: if (), <./ncurses/test/xmas.c 156>
+ 3318 				set_menu_fore: <>
+ 3319 				COLOR_PAIR: <>
+ 3320 				set_menu_back: <>
+ 3321 				set_menu_format: <>
+ 3322 				scale_menu: <>
+ 3323 				menu_opts_off: <>
+ 3324 				menu_opts_on: <>
+ 3325 				newwin: <>
+ 3326 				set_menu_win: <>
+ 3327 				keypad: <>
+ 3328 				box: <>
+ 3329 				set_menu_sub: <>
+ 3330 				derwin: <>
+ 3331 				post_menu: <>
+ 3332 			SIZEOF: <>
+ 3333 			set_menu_mark: <>
+ 3334 			build_file_menu: void (), <./ncurses/test/demo_menus.c 306>
+ 3335 				new_item: <>
+ 3336 				menu_create: 3311
+ 3337 				SIZEOF: <>
+ 3338 			build_select_menu: void (), <./ncurses/test/demo_menus.c 334>
+ 3339 				stat: <>
+ 3340 				typeMalloc: <>
+ 3341 				typeCalloc: <>
+ 3342 				Trace: <>
+ 3343 				fopen: <>
+ 3344 				fread: <>
+ 3345 				fclose: <>
+ 3346 				SIZEOF: <>
+ 3347 				new_item: <>
+ 3348 				menu_create: 3311
+ 3349 				free: <>
+ 3350 			build_trace_menu: void (), <./ncurses/test/demo_menus.c 454>
+ 3351 				new_item: <>
+ 3352 				menu_create: 3311
+ 3353 				SIZEOF: <>
+ 3354 		perform_menus: void (), <./ncurses/test/demo_menus.c 683>
+ 3355 			mousemask: <>
+ 3356 			menu_display: void (), <./ncurses/test/demo_menus.c 297>
+ 3357 				touchwin: <>
+ 3358 				menu_win: <>
+ 3359 				wrefresh: <>
+ 3360 			show_status: void (), <./ncurses/test/demo_menus.c 670>
+ 3361 				move: <>
+ 3362 				printw: <>
+ 3363 				keyname: <>
+ 3364 				menu_number: int (), <./ncurses/test/demo_menus.c 559>
+ 3365 					item_index: <>
+ 3366 					current_item: <>
+ 3367 				menu_mark: <>
+ 3368 				menu_pattern: <>
+ 3369 				clrtoeol: <>
+ 3370 				refresh: <>
+ 3371 			menu_getc: int (), <./ncurses/test/demo_menus.c 185>
+ 3372 				wGetchar: int (), <./ncurses/test/demo_menus.c 128>
+ 3373 					wgetch: <>
+ 3374 					CTRL: <>
+ 3375 					Trace: <>
+ 3376 					trace: <>
+ 3377 				menu_win: <>
+ 3378 			move_menus: void (), <./ncurses/test/demo_menus.c 655>
+ 3379 				move_menu: int (), <./ncurses/test/demo_menus.c 620>
+ 3380 					menu_win: <>
+ 3381 					menu_sub: <>
+ 3382 					getbegyx: <>
+ 3383 					mvwin: <>
+ 3384 					touchwin: <>
+ 3385 					wnoutrefresh: <>
+ 3386 				erase: <>
+ 3387 				wnoutrefresh: <>
+ 3388 				doupdate: <>
+ 3389 			menu_virtualize: int (), <./ncurses/test/demo_menus.c 152>
+ 3390 				beep: <>
+ 3391 			menu_driver: <>
+ 3392 			menu_number: 3364
+ 3393 			perform_file_menu: int (), <./ncurses/test/demo_menus.c 326>
+ 3394 				menu_driver: <>
+ 3395 			perform_select_menu: int (), <./ncurses/test/demo_menus.c 418>
+ 3396 				menu_driver: <>
+ 3397 			perform_trace_menu: int (), <./ncurses/test/demo_menus.c 520>
+ 3398 				menu_items: <>
+ 3399 				item_index: <>
+ 3400 				set_item_value: <>
+ 3401 				menu_driver: <>
+ 3402 				update_trace_menu: bool (), <./ncurses/test/demo_menus.c 499>
+ 3403 					menu_items: <>
+ 3404 					current_item: <>
+ 3405 					item_value: <>
+ 3406 					set_item_value: <>
+ 3407 				item_value: <>
+ 3408 				trace: <>
+ 3409 				Trace: <>
+ 3410 				tracetrace: char * (), <./ncurses/test/demo_menus.c 469>
+ 3411 					strlen: <>
+ 3412 					typeMalloc: <>
+ 3413 					sprintf: <>
+ 3414 					strcat: <>
+ 3415 				mvprintw: <>
+ 3416 				refresh: <>
+ 3417 			current_menu: MENU * (), <./ncurses/test/demo_menus.c 565>
+ 3418 				menu_number: 3364
+ 3419 			move: <>
+ 3420 			clrtobot: <>
+ 3421 			box: <>
+ 3422 			menu_win: <>
+ 3423 			refresh: <>
+ 3424 			wrefresh: <>
+ 3425 			beep: <>
+ 3426 		destroy_menus: void (), <./ncurses/test/demo_menus.c 793>
+ 3427 			menu_destroy: void (), <./ncurses/test/demo_menus.c 259>
+ 3428 				Trace: <>
+ 3429 				menu_items: <>
+ 3430 				item_count: <>
+ 3431 				item_name: <>
+ 3432 				unpost_menu: <>
+ 3433 				free_menu: <>
+ 3434 				free: <>
+ 3435 		usage: void (), <./ncurses/test/savescreen.c 125>
+ 3436 			SIZEOF: <>
+ 3437 			fprintf: <>
+ 3438 			ExitProgram: 9
+ 3439 		load_screen: int (), <./ncurses/test/savescreen.c 68>
+ 3440 			scr_init: <>
+ 3441 			scr_restore: <>
+ 3442 			scr_set: <>
+ 3443 		after_load: void (), <./ncurses/test/savescreen.c 87>
+ 3444 			overwrite: <>
+ 3445 			doupdate: <>
+ 3446 		setup_next: void (), <./ncurses/test/savescreen.c 51>
+ 3447 			curs_set: <>
+ 3448 			reset_shell_mode: <>
+ 3449 		cleanup: void (), <./ncurses/test/savescreen.c 58>
+ 3450 			unlink: <>
+ 3451 		scr_restore: <>
+ 3452 		getyx: <>
+ 3453 		get_command: int (), <./ncurses/test/savescreen.c 110>
+ 3454 			timeout: <>
+ 3455 			show_what: void (), <./ncurses/test/savescreen.c 94>
+ 3456 				time: <>
+ 3457 				getyx: <>
+ 3458 				move: <>
+ 3459 				printw: <>
+ 3460 				ctime: <>
+ 3461 				refresh: <>
+ 3462 			getch: <>
+ 3463 		show_what: 3455
+ 3464 		scr_dump: <>
+ 3465 		sighndl: RETSIGTYPE (), <./ncurses/test/gdc.c 64>
+ 3466 			signal: <>
+ 3467 			sighndl: 3465
+ 3468 			endwin: <>
+ 3469 			ExitProgram: 9
+ 3470 		usage: void (), <./ncurses/test/gdc.c 141>
+ 3471 			SIZEOF: <>
+ 3472 			fprintf: <>
+ 3473 			ExitProgram: 9
+ 3474 		drawbox: void (), <./ncurses/test/gdc.c 75>
+ 3475 			attrset: <>
+ 3476 			COLOR_PAIR: <>
+ 3477 			mvaddch: <>
+ 3478 			hline: <>
+ 3479 			mvinchnstr: <>
+ 3480 			mvaddchnstr: <>
+ 3481 			move: <>
+ 3482 			vline: <>
+ 3483 		standt: void (), <./ncurses/test/gdc.c 109>
+ 3484 			attron: <>
+ 3485 			COLOR_PAIR: <>
+ 3486 			attroff: <>
+ 3487 		standend: <>
+ 3488 		init_program: void (), <./ncurses/test/knight.c 99>
+ 3489 			setlocale: <>
+ 3490 			srand: <>
+ 3491 			getpid: <>
+ 3492 			initscr: <>
+ 3493 			cbreak: <>
+ 3494 			noecho: <>
+ 3495 			newwin: <>
+ 3496 			scrollok: <>
+ 3497 			keypad: <>
+ 3498 			has_colors: if (), <./ncurses/test/xmas.c 156>
+ 3499 			start_color: <>
+ 3500 			use_default_colors: <>
+ 3501 			init_pair: <>
+ 3502 			COLOR_PAIR: <>
+ 3503 			mousemask: <>
+ 3504 		play: void (), <./ncurses/test/knight.c 449>
+ 3505 			werase: <>
+ 3506 			dosquares: void (), <./ncurses/test/knight.c 225>
+ 3507 				mvaddstr: <>
+ 3508 				move: <>
+ 3509 				waddch: <>
+ 3510 			help1: void (), <./ncurses/test/knight.c 138>
+ 3511 				waddstr: <>
+ 3512 				mvwaddstr: <>
+ 3513 			wnoutrefresh: <>
+ 3514 			doupdate: <>
+ 3515 			unmarkcell: void (), <./ncurses/test/knight.c 344>
+ 3516 				cellmove: <>
+ 3517 				waddch: <>
+ 3518 			memset: <>
+ 3519 			show_help: void (), <./ncurses/test/knight.c 189>
+ 3520 				werase: <>
+ 3521 				help1: 3510
+ 3522 				help2: void (), <./ncurses/test/knight.c 163>
+ 3523 					waddstr: <>
+ 3524 					mvwaddstr: <>
+ 3525 				wrefresh: <>
+ 3526 			cellmove: <>
+ 3527 			waddch: <>
+ 3528 			winch: <>
+ 3529 			wrefresh: <>
+ 3530 			wgetch: <>
+ 3531 			getmouse: <>
+ 3532 			CY: <>
+ 3533 			CX: <>
+ 3534 			CXINV: <>
+ 3535 			CYINV: <>
+ 3536 			ungetch: <>
+ 3537 			beep: <>
+ 3538 			evalmove: bool (), <./ncurses/test/knight.c 408>
+ 3539 				waddstr: <>
+ 3540 				iabs: int (), <./ncurses/test/knight.c 399>
+ 3541 			drawmove: void (), <./ncurses/test/knight.c 364>
+ 3542 				unmarkcell: 3515
+ 3543 				cellmove: <>
+ 3544 				winch: <>
+ 3545 				waddch: <>
+ 3546 				markcell: void (), <./ncurses/test/knight.c 354>
+ 3547 					cellmove: <>
+ 3548 					waddch: <>
+ 3549 				mark_possibles: void (), <./ncurses/test/knight.c 291>
+ 3550 					SIZEOF: <>
+ 3551 					chksqr: bool (), <./ncurses/test/knight.c 203>
+ 3552 					cellmove: <>
+ 3553 					waddch: <>
+ 3554 				wprintw: <>
+ 3555 				wclrtoeol: <>
+ 3556 			chkmoves: bool (), <./ncurses/test/knight.c 213>
+ 3557 				SIZEOF: <>
+ 3558 				chksqr: 3551
+ 3559 			completed: int (), <./ncurses/test/knight.c 430>
+ 3560 			waddstr: <>
+ 3561 			no_previous_move: void (), <./ncurses/test/knight.c 442>
+ 3562 				waddstr: <>
+ 3563 				beep: <>
+ 3564 			find_next_move: void (), <./ncurses/test/knight.c 304>
+ 3565 				SIZEOF: <>
+ 3566 				chksqr: 3551
+ 3567 				beep: <>
+ 3568 			clearok: <>
+ 3569 			wprintw: <>
+ 3570 			wclrtoeol: <>
+ 3571 			tolower: <>
+ 3572 		redefine: void (), <./ncurses/test/demo_defkey.c 202>
+ 3573 			really_define_key: void (), <./ncurses/test/demo_defkey.c 125>
+ 3574 				keyname: <>
+ 3575 				sprintf: <>
+ 3576 				keybound: <>
+ 3577 				wprintw: <>
+ 3578 				visible: char * (), <./ncurses/test/demo_defkey.c 98>
+ 3579 					strcpy: <>
+ 3580 					visichar: char * (), <./ncurses/test/demo_defkey.c 74>
+ 3581 						UChar: <>
+ 3582 						assert: <>
+ 3583 						strcpy: <>
+ 3584 						sprintf: <>
+ 3585 					strcat: <>
+ 3586 					strlen: <>
+ 3587 					typeCalloc: <>
+ 3588 				log_last_line: void (), <./ncurses/test/demo_defkey.c 45>
+ 3589 					fopen: <>
+ 3590 					getyx: <>
+ 3591 					wmove: <>
+ 3592 					winnstr: <>
+ 3593 					isspace: <>
+ 3594 					UChar: <>
+ 3595 					fprintf: <>
+ 3596 					fclose: <>
+ 3597 				free: <>
+ 3598 				key_defined: <>
+ 3599 				define_key: <>
+ 3600 		KEY_F: <>
+ 3601 		duplicate: void (), <./ncurses/test/demo_defkey.c 181>
+ 3602 			tigetstr: <>
+ 3603 			strncmp: if (), <./ncurses/ncurses/tinfo/strings.c 54>
+ 3604 			sprintf: <>
+ 3605 			really_define_key: 3573
+ 3606 		remove_definition: void (), <./ncurses/test/demo_defkey.c 208>
+ 3607 			really_define_key: 3573
+ 3608 		really_define_key: 3573
+ 3609 		log_last_line: 3588
+ 3610 		add_window: void (), <./ncurses/test/movewindow.c 247>
+ 3611 			keypad: <>
+ 3612 			typeRealloc: <>
+ 3613 		mousemask: <>
+ 3614 		show_help: void (), <./ncurses/test/movewindow.c 515>
+ 3615 			CTRL: <>
+ 3616 			newwin: <>
+ 3617 			SIZEOF: <>
+ 3618 			wmove: <>
+ 3619 			wprintw: <>
+ 3620 			keyname: <>
+ 3621 			box_inside: void (), <./ncurses/test/movewindow.c 219>
+ 3622 				getyx: <>
+ 3623 				getmaxyx: <>
+ 3624 				mvwhline: <>
+ 3625 				mvwvline: <>
+ 3626 				mvwaddch: <>
+ 3627 				wsyncdown: <>
+ 3628 				wmove: <>
+ 3629 				wrefresh: <>
+ 3630 			wgetch: <>
+ 3631 			delwin: <>
+ 3632 			refresh_all: void (), <./ncurses/test/movewindow.c 293>
+ 3633 				repaint_one: void (), <./ncurses/test/movewindow.c 286>
+ 3634 					touchwin: <>
+ 3635 					wnoutrefresh: <>
+ 3636 				doupdate: <>
+ 3637 		box_inside: 3621
+ 3638 		create_my_window: WINDOW * (), <./ncurses/test/movewindow.c 457>
+ 3639 			getwindow: bool (), <./ncurses/test/movewindow.c 187>
+ 3640 				getmaxx: <>
+ 3641 				getmaxy: <>
+ 3642 				head_line: void (), <./ncurses/test/movewindow.c 102>
+ 3643 					va_start: <>
+ 3644 					message: 624
+ 3645 					va_end: <>
+ 3646 				selectcell: PAIR * (), <./ncurses/test/movewindow.c 125>
+ 3647 					tail_line: void (), <./ncurses/test/movewindow.c 112>
+ 3648 						va_start: <>
+ 3649 						message: 624
+ 3650 						va_end: <>
+ 3651 					wmove: <>
+ 3652 					wgetch: <>
+ 3653 					getmouse: <>
+ 3654 					beep: <>
+ 3655 				mvwaddch: <>
+ 3656 				wmove: <>
+ 3657 				wsyncdown: <>
+ 3658 				wrefresh: <>
+ 3659 			newwin: <>
+ 3660 			lines_of: <>
+ 3661 			cols_of: <>
+ 3662 			pair_of: <>
+ 3663 			fill_window: void (), <./ncurses/test/movewindow.c 434>
+ 3664 				getyx: <>
+ 3665 				getmaxyx: <>
+ 3666 				mvwaddch: <>
+ 3667 				wsyncdown: <>
+ 3668 				wmove: <>
+ 3669 				wrefresh: <>
+ 3670 			add_window: 3610
+ 3671 		create_my_derwin: WINDOW * (), <./ncurses/test/movewindow.c 475>
+ 3672 			getwindow: 3639
+ 3673 			derwin: <>
+ 3674 			lines_of: <>
+ 3675 			cols_of: <>
+ 3676 			pair_of: <>
+ 3677 			fill_window: 3663
+ 3678 			add_window: 3610
+ 3679 		fill_window: 3663
+ 3680 		move_window: bool (), <./ncurses/test/movewindow.c 357>
+ 3681 			parent_of: WINDOW * (), <./ncurses/test/movewindow.c 276>
+ 3682 				window2num: int (), <./ncurses/test/movewindow.c 262>
+ 3683 			getmaxx: <>
+ 3684 			getmaxy: <>
+ 3685 			head_line: 3642
+ 3686 			selectcell: 3646
+ 3687 			getbegyx: <>
+ 3688 			mvwin: <>
+ 3689 			recur_move_window: void (), <./ncurses/test/movewindow.c 338>
+ 3690 				getbegyx: <>
+ 3691 				mvwin: <>
+ 3692 				recur_move_window: 3689
+ 3693 			refresh_all: 3632
+ 3694 			doupdate: <>
+ 3695 		tail_line: 3647
+ 3696 		create_my_subwin: WINDOW * (), <./ncurses/test/movewindow.c 493>
+ 3697 			getwindow: 3639
+ 3698 			subwin: <>
+ 3699 			lines_of: <>
+ 3700 			cols_of: <>
+ 3701 			getbegy: <>
+ 3702 			getbegx: <>
+ 3703 			fill_window: 3663
+ 3704 			add_window: 3610
+ 3705 		move_subwin: bool (), <./ncurses/test/movewindow.c 401>
+ 3706 			parent_of: 3681
+ 3707 			getmaxx: <>
+ 3708 			getmaxy: <>
+ 3709 			head_line: 3642
+ 3710 			selectcell: 3646
+ 3711 			getbegyx: <>
+ 3712 			mvderwin: <>
+ 3713 			refresh_all: 3632
+ 3714 			doupdate: <>
+ 3715 		refresh_all: 3632
+ 3716 		next_window: WINDOW * (), <./ncurses/test/movewindow.c 308>
+ 3717 			window2num: 3682
+ 3718 			wmove: <>
+ 3719 			wrefresh: <>
+ 3720 		prev_window: WINDOW * (), <./ncurses/test/movewindow.c 322>
+ 3721 			window2num: 3682
+ 3722 			wmove: <>
+ 3723 			wrefresh: <>
+ 3724 		getmaxy: <>
+ 3725 		getmaxx: <>
+ 3726 		getbegy: <>
+ 3727 		getbegx: <>
+ 3728 		getpary: <>
+ 3729 		getparx: <>
+ 3730 		onsig: void (), <./ncurses/test/dots.c 86>
+ 3731 		outs: bool (), <./ncurses/test/dots.c 62>
+ 3732 			valid: <>
+ 3733 			tputs: <>
+ 3734 			outc: int (), <./ncurses/test/dots.c 50>
+ 3735 				write: <>
+ 3736 				putc: <>
+ 3737 		ranf: float (), <./ncurses/test/dots.c 92>
+ 3738 			rand: <>
+ 3739 		tparm3: <>
+ 3740 		outc: 3734
+ 3741 		cleanup: void (), <./ncurses/test/dots.c 72>
+ 3742 			outs: 3731
+ 3743 			printf: <>
+ 3744 			time: <>
+ 3745 		usage: void (), <./ncurses/test/cardfile.c 550>
+ 3746 			SIZEOF: <>
+ 3747 			fprintf: <>
+ 3748 			ExitProgram: 9
+ 3749 		read_data: void (), <./ncurses/test/cardfile.c 173>
+ 3750 			fopen: <>
+ 3751 			fgets: <>
+ 3752 			trim: void (), <./ncurses/test/cardfile.c 92>
+ 3753 				strlen: <>
+ 3754 				isspace: <>
+ 3755 				UChar: <>
+ 3756 			isspace: <>
+ 3757 			UChar: <>
+ 3758 			add_title: CARD * (), <./ncurses/test/cardfile.c 102>
+ 3759 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+ 3760 				typeCalloc: <>
+ 3761 				strdup: char * (), <./ncurses/test/cardfile.c 74>
+ 3762 					typeMalloc: <>
+ 3763 					strlen: <>
+ 3764 					strcpy: <>
+ 3765 			add_content: void (), <./ncurses/test/cardfile.c 130>
+ 3766 				skip: const char * (), <./ncurses/test/cardfile.c 84>
+ 3767 					isspace: <>
+ 3768 					UChar: <>
+ 3769 				strlen: <>
+ 3770 				typeRealloc: <>
+ 3771 				strcpy: <>
+ 3772 				free: <>
+ 3773 				typeMalloc: <>
+ 3774 			find_card: CARD * (), <./ncurses/test/cardfile.c 161>
+ 3775 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+ 3776 			fclose: <>
+ 3777 		count_cards: int (), <./ncurses/test/cardfile.c 229>
+ 3778 		new_card: CARD * (), <./ncurses/test/cardfile.c 153>
+ 3779 			add_title: 3758
+ 3780 			add_content: 3765
+ 3781 		cardfile: void (), <./ncurses/test/cardfile.c 382>
+ 3782 			show_legend: void (), <./ncurses/test/cardfile.c 357>
+ 3783 				erase: <>
+ 3784 				move: <>
+ 3785 				addstr: <>
+ 3786 			count_cards: 3777
+ 3787 			newwin: <>
+ 3788 			wbkgd: <>
+ 3789 			COLOR_PAIR: <>
+ 3790 			keypad: <>
+ 3791 			new_panel: <>
+ 3792 			box: <>
+ 3793 			new_form: <>
+ 3794 			make_fields: FIELD ** (), <./ncurses/test/cardfile.c 338>
+ 3795 				typeCalloc: <>
+ 3796 				new_field: <>
+ 3797 				set_field_back: <>
+ 3798 				set_field_buffer: <>
+ 3799 				field_opts_off: <>
+ 3800 				set_field_just: <>
+ 3801 			set_form_win: <>
+ 3802 			set_form_sub: <>
+ 3803 			derwin: <>
+ 3804 			post_form: <>
+ 3805 			first_card: CARD * (), <./ncurses/test/cardfile.c 291>
+ 3806 				isVisible: <>
+ 3807 				next_card: CARD * (), <./ncurses/test/cardfile.c 258>
+ 3808 					isVisible: <>
+ 3809 					next_card: 3807
+ 3810 			order_cards: void (), <./ncurses/test/cardfile.c 244>
+ 3811 				order_cards: 3810
+ 3812 				isVisible: <>
+ 3813 				top_panel: <>
+ 3814 			update_panels: <>
+ 3815 			doupdate: <>
+ 3816 			form_virtualize: int (), <./ncurses/test/cardfile.c 301>
+ 3817 				wgetch: <>
+ 3818 				CTRL: <>
+ 3819 			panel_window: <>
+ 3820 			form_driver: <>
+ 3821 			prev_card: CARD * (), <./ncurses/test/cardfile.c 274>
+ 3822 				isVisible: <>
+ 3823 				prev_card: 3821
+ 3824 			next_card: 3807
+ 3825 			write_data: void (), <./ncurses/test/cardfile.c 197>
+ 3826 				strcmp: if (), <./ncurses/progs/tic.c 1117>
+ 3827 				fopen: <>
+ 3828 				form_fields: <>
+ 3829 				field_buffer: <>
+ 3830 				strdup: 3761
+ 3831 				trim: 3752
+ 3832 				fprintf: <>
+ 3833 				free: <>
+ 3834 				fclose: <>
+ 3835 			form_fields: <>
+ 3836 			form_sub: <>
+ 3837 			isVisible: <>
+ 3838 			form_win: <>
+ 3839 			mvwin: <>
+ 3840 			wresize: <>
+ 3841 			werase: <>
+ 3842 			unpost_form: <>
+ 3843 			free_form: <>
+ 3844 			free_form_fields: void (), <./ncurses/test/cardfile.c 368>
+ 3845 				free_field: <>
+ 3846 				free: <>
+ 3847 			delwin: <>
+ 3848 			beep: <>
+ 3849 			flash: <>
+ 3850 			field_count: <>
+ 3851 			del_panel: <>
+ 3852 			free: <>
+ 3853 		echo: <>
+ 3854 		scanw: <>
+ 3855 		usage: void (), <./ncurses/test/keynames.c 35>
+ 3856 			fprintf: <>
+ 3857 			ExitProgram: 9
+ 3858 		Usage: void (), <./ncurses/test/hanoi.c 329>
+ 3859 			fprintf: <>
+ 3860 		leaveok: <>
+ 3861 		InitTiles: void (), <./ncurses/test/hanoi.c 210>
+ 3862 		DisplayTiles: void (), <./ncurses/test/hanoi.c 223>
+ 3863 			erase: <>
+ 3864 			mvaddstr: <>
+ 3865 			mvprintw: <>
+ 3866 			attrset: <>
+ 3867 			mvaddch: <>
+ 3868 			memset: <>
+ 3869 			has_colors: if (), <./ncurses/test/xmas.c 156>
+ 3870 			COLOR_PAIR: <>
+ 3871 			LENTOIND: <>
+ 3872 			refresh: <>
+ 3873 		AutoMove: void (), <./ncurses/test/hanoi.c 304>
+ 3874 			MakeMove: void (), <./ncurses/test/hanoi.c 294>
+ 3875 				DisplayTiles: 3862
+ 3876 			napms: <>
+ 3877 			AutoMove: 3873
+ 3878 			OTHER: <>
+ 3879 		Solved: int (), <./ncurses/test/hanoi.c 318>
+ 3880 		sleep: <>
+ 3881 		GetMove: int (), <./ncurses/test/hanoi.c 268>
+ 3882 			mvaddstr: <>
+ 3883 			clrtoeol: <>
+ 3884 			refresh: <>
+ 3885 			getch: <>
+ 3886 			addstr: <>
+ 3887 			napms: <>
+ 3888 			move: <>
+ 3889 		InvalidMove: int (), <./ncurses/test/hanoi.c 188>
+ 3890 		MakeMove: 3874
+ 3891 		gen_attr_set: void (), <./ncurses/Ada95/gen/gen.c 231>
+ 3892 			gen_reps: void (), <./ncurses/Ada95/gen/gen.c 112>
+ 3893 				strlen: <>
+ 3894 				assert: <>
+ 3895 				printf: <>
+ 3896 				find_pos: int (), <./ncurses/Ada95/gen/gen.c 68>
+ 3897 		basedefs: void (), <./ncurses/Ada95/gen/gen.c 1096>
+ 3898 			prologue: void (), <./ncurses/Ada95/gen/gen.c 1081>
+ 3899 				printf: <>
+ 3900 			printf: <>
+ 3901 			fprintf: <>
+ 3902 			exit: <>
+ 3903 		gen_color: void (), <./ncurses/Ada95/gen/gen.c 1154>
+ 3904 			color_def: void (), <./ncurses/Ada95/gen/gen.c 1145>
+ 3905 				printf: <>
+ 3906 		gen_offsets: void (), <./ncurses/Ada95/gen/gen.c 1248>
+ 3907 			printf: <>
+ 3908 		gen_mouse_events: void (), <./ncurses/Ada95/gen/gen.c 900>
+ 3909 			GEN_MEVENT: <>
+ 3910 			GEN_EVENT: <>
+ 3911 		gen_keydefs: void (), <./ncurses/Ada95/gen/gen.c 458>
+ 3912 			keydef: void (), <./ncurses/Ada95/gen/gen.c 433>
+ 3913 				printf: <>
+ 3914 				toupper: <>
+ 3915 			sprintf: <>
+ 3916 			KEY_F: <>
+ 3917 		gen_linkopts: void (), <./ncurses/Ada95/gen/gen.c 1189>
+ 3918 			printf: <>
+ 3919 		gen_acs: void (), <./ncurses/Ada95/gen/gen.c 774>
+ 3920 			printf: <>
+ 3921 			acs_def: void (), <./ncurses/Ada95/gen/gen.c 759>
+ 3922 				printf: <>
+ 3923 				isprint: 266
+ 3924 		gen_public_vars: void (), <./ncurses/Ada95/gen/gen.c 1064>
+ 3925 			GEN_PUBLIC_VAR: <>
+ 3926 		gen_chtype_rep: void (), <./ncurses/Ada95/gen/gen.c 175>
+ 3927 			printf: <>
+ 3928 			chtype_rep: void (), <./ncurses/Ada95/gen/gen.c 163>
+ 3929 				find_pos: 3896
+ 3930 				printf: <>
+ 3931 		gen_trace: void (), <./ncurses/Ada95/gen/gen.c 308>
+ 3932 			gen_reps: 3892
+ 3933 		gen_version_info: void (), <./ncurses/Ada95/gen/gen.c 1222>
+ 3934 			printf: <>
+ 3935 		gen_menu_opt_rep: void (), <./ncurses/Ada95/gen/gen.c 330>
+ 3936 			gen_reps: 3892
+ 3937 		menu_basedefs: void (), <./ncurses/Ada95/gen/gen.c 1118>
+ 3938 			prologue: 3898
+ 3939 		gen_menu_linkopts: void (), <./ncurses/Ada95/gen/gen.c 1198>
+ 3940 			printf: <>
+ 3941 		gen_item_opt_rep: void (), <./ncurses/Ada95/gen/gen.c 358>
+ 3942 			gen_reps: 3892
+ 3943 		gen_form_opt_rep: void (), <./ncurses/Ada95/gen/gen.c 371>
+ 3944 			gen_reps: 3892
+ 3945 		form_basedefs: void (), <./ncurses/Ada95/gen/gen.c 1127>
+ 3946 			prologue: 3898
+ 3947 		gen_form_linkopts: void (), <./ncurses/Ada95/gen/gen.c 1207>
+ 3948 			printf: <>
+ 3949 		gen_field_opt_rep: void (), <./ncurses/Ada95/gen/gen.c 390>
+ 3950 			gen_reps: 3892
+ 3951 		mouse_basedefs: void (), <./ncurses/Ada95/gen/gen.c 1136>
+ 3952 			prologue: 3898
+ 3953 		gen_mrep_rep: void (), <./ncurses/Ada95/gen/gen.c 199>
+ 3954 			printf: <>
+ 3955 			memset: <>
+ 3956 			mrep_rep: void (), <./ncurses/Ada95/gen/gen.c 189>
+ 3957 				find_pos: 3896
+ 3958 				printf: <>
+ 3959 		gen_panel_linkopts: void (), <./ncurses/Ada95/gen/gen.c 1216>
+ 3960 			printf: <>
+ 3961 		malloc: <>
+ 3962 		eti_gen: int (), <./ncurses/Ada95/gen/gen.c 1237>
+ 3963 			sprintf: <>
+ 3964 			strlen: <>

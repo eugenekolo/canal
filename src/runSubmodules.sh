@@ -49,6 +49,7 @@ check_return_wrapper(){
 
 	# Feed every c program to vulnerability checker submodule
 	for program in $LIST_OF_C_PROGRAMS; do
+		echo "[Run Submodules]: Checking $program ..."
 		python check_return.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_RETURN_CHECKS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
 	done
 
@@ -66,6 +67,7 @@ check_a_before_b_wrapper(){
 
 	# Iterate through each cflow file
 	for cflow_output in $CFLOW_OUTPUT_DIRECTORY/*; do
+		echo "[Run Submodules]: Checking $program ..."
 		python check_a_before_b.py $cflow_output 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_A_BEFORE_B.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
 	done
 }
@@ -89,7 +91,8 @@ check_exec_wrapper(){
 
   # Feed every c program to vulnerability checker submodule
   for program in $LIST_OF_C_PROGRAMS; do
-          python check_exec.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+	echo "[Run Submodules]: Checking $program ..."
+	python check_exec.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
   done
 
   rm check_exec.py
@@ -100,7 +103,7 @@ check_exec_wrapper(){
 # BAD WORDS WRAPPER #
 #####################
 check_bad_words_wrapper(){
-	scripts_dir=`pwd`
+  scripts_dir=`pwd`
   cd $CFLOW_INPUT_PROJECT_DIRECTORY
 
   # Get a copy of the submodule code
@@ -114,7 +117,8 @@ check_bad_words_wrapper(){
 
   # Feed every c program to vulnerability checker submodule
   for program in $LIST_OF_C_PROGRAMS; do
-          python check_bad_words.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+	echo "[Run Submodules]: Checking $program ..."
+     	python check_bad_words.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_BAD_WORDS.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
   done
 
   rm check_bad_words.py
@@ -128,18 +132,22 @@ check_bad_words_wrapper(){
 rm $VULNERABILITY_LOGS_DIRECTORY/ERRORS.log 2>/dev/null
 
 if [ $VULNERABILITY_ANALYSIS_TYPE1_ENABLED == 1 ]; then
+	echo "[Run Submodules]: Checking A before B vulnerability."
 	check_a_before_b_wrapper
 fi
 
 if [ $VULNERABILITY_ANALYSIS_TYPE2_ENABLED == 1 ]; then
+	echo "[Run Submodules]: Checking function returns."
 	check_return_wrapper
 fi
 
 if [ $VULNERABILITY_ANALYSIS_TYPE3_ENABLED == 1 ]; then
+	echo "[Run Submodules]: Checking exec calls."
  	check_exec_wrapper
 fi
 
 if [ $VULNERABILITY_ANALYSIS_TYPE4_ENABLED == 1 ]; then
+	echo "[Run Submodules]: Checking for bad words."
  	check_bad_words_wrapper
 fi
 

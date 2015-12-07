@@ -1,0 +1,56 @@
+    1 	main:  (), <./screen/terminfo/checktc.c 9>
+    2 		atoi: <>
+    3 		srand: <>
+    4 		getpid: <>
+    5 		system: <>
+    6 		sigvec: <>
+    7 		t:  (), <./screen/terminfo/tetris.c 1>
+    8 			setitimer: <>
+    9 		puts: <>
+   10 		rand: <>
+   11 		g:  (), <./screen/terminfo/tetris.c 8>
+   12 		u:  (), <./screen/terminfo/tetris.c 5>
+   13 			printf: <>
+   14 			getchar: <>
+   15 		G:  (), <./screen/terminfo/tetris.c 7>
+   16 		sigblock: <>
+   17 		printf: <>
+   18 		getchar: <>
+   19 		sigsetmask: <>
+   20 		popen: <>
+   21 		fprintf: <>
+   22 		getlogin: char * (), <./screen/utmp.c 829>
+   23 			ttyname: <>
+   24 			open: <>
+   25 			stripdev: char * (), <./screen/misc.c 157>
+   26 			read: <>
+   27 			strncmp: if (), <./screen/screen.c 1192>
+   28 			strncpy: <>
+   29 			close: <>
+   30 		pclose: <>
+   31 		getenv: <>
+   32 		exit: <>
+   33 		tgetent: <>
+   34 		tgetstr: <>
+   35 		tgetnum: <>
+   36 		GotoPos: void (), <./screen/terminfo/checktc.c 190>
+   37 			tputs: <>
+   38 			tgoto: <>
+   39 			putcha: void (), <./screen/terminfo/checktc.c 160>
+   40 				putchar: <>
+   41 			fflush: <>
+   42 		PutStr: void (), <./screen/terminfo/checktc.c 167>
+   43 			tputs: <>
+   44 			putcha: 39
+   45 			fflush: <>
+   46 		RETURN: void (), <./screen/terminfo/checktc.c 198>
+   47 			printf: <>
+   48 			fflush: <>
+   49 			getchar: <>
+   50 			PutStr: 42
+   51 		tgetflag: <>
+   52 		CCPutStr: void (), <./screen/terminfo/checktc.c 182>
+   53 			tputs: <>
+   54 			tgoto: <>
+   55 			putcha: 39
+   56 			fflush: <>

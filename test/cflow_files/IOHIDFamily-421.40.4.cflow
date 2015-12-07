@@ -1,0 +1,41 @@
+    1 	main: int (), <./hidd/hidd.c 26>
+    2 		IOHIDManagerCreate: <>
+    3 		strcmp: <>
+    4 		printf: <>
+    5 		IOHIDManagerRegisterDeviceMatchingCallback: <>
+    6 		IOHIDManagerRegisterDeviceRemovalCallback: <>
+    7 		IOHIDManagerRegisterInputReportCallback: <>
+    8 		IOHIDManagerRegisterInputValueCallback: <>
+    9 		IOHIDManagerScheduleWithRunLoop: <>
+   10 		CFRunLoopGetCurrent: <>
+   11 		IOHIDManagerSetDeviceMatching: <>
+   12 		IOHIDManagerOpen: <>
+   13 		CFRunLoopRun: <>
+   14 		CFSTR: <>
+   15 		CFDataCreate: <>
+   16 		require: <>
+   17 		CFDictionaryCreate: <>
+   18 		IOHIDUserDeviceCreate: <>
+   19 		IOHIDUserDeviceScheduleWithRunLoop: <>
+   20 		IOHIDUserDeviceRegisterSetReportCallback: <>
+   21 		setReportCallback: IOReturn (), <./tools/IOHIDUserKeyboardTest.c 225>
+   22 			printReport: void (), <./tools/IOHIDUserKeyboardTest.c 180>
+   23 				printf: <>
+   24 		assert: <>
+   25 		pthread_attr_init: <>
+   26 		pthread_attr_setdetachstate: <>
+   27 		pthread_create: <>
+   28 		getcThread: void * (), <./tools/IOHIDUserKeyboardTest.c 215>
+   29 			printf: <>
+   30 			dispatchKeyboardEvent: void (), <./tools/IOHIDUserKeyboardTest.c 190>
+   31 				bzero: <>
+   32 				printf: <>
+   33 				pthread_mutex_lock: <>
+   34 				printReport: 22
+   35 				IOHIDUserDeviceHandleReport: <>
+   36 				pthread_mutex_unlock: <>
+   37 			getchar: <>
+   38 		pthread_attr_destroy: <>
+   39 		CFRelease: <>
+   40 		IOHIDEventSystemCreate: <>
+   41 		IOHIDEventSystemOpen: <>

@@ -1,0 +1,2650 @@
+    1 	main: int (), <./vm_stat.tproj/vm_stat.c 70>
+    2 		getopt: <>
+    3 		strlen: <>
+    4 		errx: <>
+    5 		usage: void (), <./vm_stat.tproj/vm_stat.c 106>
+    6 			fprintf: <>
+    7 			exit: <>
+    8 		getgrnam: <>
+    9 		sigemptyset: <>
+   10 		sigaddset: <>
+   11 		sigprocmask: <>
+   12 		umask: <>
+   13 		strdup: <>
+   14 		changedir: char * (), <./pwd_mkdb.tproj/pwd_mkdb.c 482>
+   15 			strrchr: <>
+   16 			snprintf: <>
+   17 		err: <>
+   18 		fopen: <>
+   19 		error: void (), <./pwd_mkdb.tproj/pwd_mkdb.c 432>
+   20 			warn: <>
+   21 			cleanup: void (), <./pwd_mkdb.tproj/pwd_mkdb.c 452>
+   22 				snprintf: <>
+   23 				unlink: <>
+   24 				changedir: 14
+   25 			exit: <>
+   26 		scan: int (), <./pwd_mkdb.tproj/pwd_mkdb.c 357>
+   27 			fgets: <>
+   28 			strlen: <>
+   29 			warnx: <>
+   30 			pw_scan: int (), <./pwd_mkdb.tproj/pw_scan.c 58>
+   31 				strsep: <>
+   32 				strcmp: <>
+   33 					erealloc: <>
+   34 					strlen: <>
+   35 					sprintf: <>
+   36 					error: 19
+   37 				strtoul: <>
+   38 				warnx: <>
+   39 				atol: <>
+   40 				setusershell: <>
+   41 				getusershell: <>
+   42 				endusershell: <>
+   43 			error: 19
+   44 		exit: <>
+   45 		fstat: <>
+   46 		fileno: <>
+   47 		MIN: <>
+   48 		dbopen: <>
+   49 		strlcpy: <>
+   50 		memcpy: <>
+   51 		snprintf: <>
+   52 		fchown: <>
+   53 		warn: <>
+   54 		fchmod: <>
+   55 		open: <>
+   56 		fdopen: <>
+   57 		db_store: void (), <./pwd_mkdb.tproj/pwd_mkdb.c 497>
+   58 			rewind: <>
+   59 			scan: 26
+   60 			warnx: <>
+   61 			fprintf: <>
+   62 			error: 19
+   63 			strcmp: 32
+   64 			memcpy: <>
+   65 			memmove: <>
+   66 			strlen: <>
+   67 			COMPACT: <>
+   68 			memset: <>
+   69 			errorx: void (), <./pwd_mkdb.tproj/pwd_mkdb.c 442>
+   70 				warnx: <>
+   71 				cleanup: 21
+   72 				exit: <>
+   73 		fclose: <>
+   74 		mv: void (), <./pwd_mkdb.tproj/pwd_mkdb.c 417>
+   75 			rename: <>
+   76 			snprintf: <>
+   77 			error: 19
+   78 		cmp_avgusrsys: int (), <./sa.tproj/main.c 477>
+   79 			memcpy: <>
+   80 			cmp_comm: int (), <./sa.tproj/main.c 440>
+   81 				strcmp: 32
+   82 		cmp_avgdkio: int (), <./sa.tproj/main.c 518>
+   83 			memcpy: <>
+   84 			cmp_comm: 80
+   85 		cmp_dkio: int (), <./sa.tproj/main.c 501>
+   86 			memcpy: <>
+   87 			cmp_comm: 80
+   88 		cmp_avgcpumem: int (), <./sa.tproj/main.c 561>
+   89 			memcpy: <>
+   90 			cmp_comm: 80
+   91 		cmp_cpumem: int (), <./sa.tproj/main.c 544>
+   92 			memcpy: <>
+   93 			cmp_comm: 80
+   94 		cmp_calls: int (), <./sa.tproj/main.c 595>
+   95 			memcpy: <>
+   96 			cmp_comm: 80
+   97 		atoi: <>
+   98 		pacct_init: int (), <./sa.tproj/pdb.c 97>
+   99 			db_copy_in: int (), <./sa.tproj/db.c 57>
+  100 				dbopen: <>
+  101 				warn: <>
+  102 				db_destroy: void (), <./sa.tproj/db.c 207>
+  103 					DB_CLOSE: <>
+  104 					warn: <>
+  105 				DB_GET: <>
+  106 				warnx: <>
+  107 				memcpy: <>
+  108 				DB_SEQ: <>
+  109 				memcmp: <>
+  110 				DB_PUT: <>
+  111 				DB_CLOSE: <>
+  112 			v1_to_v2: int (), <./sa.tproj/pdb.c 70>
+  113 				memcpy: <>
+  114 				memset: <>
+  115 		usracct_init: int (), <./sa.tproj/usrdb.c 100>
+  116 			bzero: <>
+  117 			uid_compare: int (), <./sa.tproj/usrdb.c 248>
+  118 				bcopy: <>
+  119 			db_copy_in: 99
+  120 			v1_to_v2: int (), <./sa.tproj/usrdb.c 67>
+  121 				memcpy: <>
+  122 				memset: <>
+  123 		acct_load: FILE * (), <./sa.tproj/main.c 314>
+  124 			fopen: <>
+  125 			warn: <>
+  126 			read: <>
+  127 			fileno: <>
+  128 			acct: <>
+  129 			warnx: <>
+  130 			readrec_forward: <>
+  131 			isascii: <>
+  132 			iscntrl: <>
+  133 			decode_comp_t: u_quad_t (), <./sa.tproj/main.c 419>
+  134 			pacct_add: int (), <./sa.tproj/pdb.c 110>
+  135 				bcopy: <>
+  136 				strlen: <>
+  137 				DB_GET: <>
+  138 				warn: <>
+  139 				bzero: <>
+  140 				add_ci: void (), <./sa.tproj/pdb.c 270>
+  141 				DB_PUT: <>
+  142 				warnx: <>
+  143 			usracct_add: int (), <./sa.tproj/usrdb.c 118>
+  144 				DB_GET: <>
+  145 				warn: <>
+  146 				bcopy: <>
+  147 				warnx: <>
+  148 				bzero: <>
+  149 				DB_PUT: <>
+  150 			printf: <>
+  151 		sigfillset: <>
+  152 		ftruncate: <>
+  153 		pacct_update: int (), <./sa.tproj/pdb.c 153>
+  154 			db_copy_out: int (), <./sa.tproj/db.c 149>
+  155 				dbopen: <>
+  156 				warn: <>
+  157 				DB_SEQ: <>
+  158 				DB_PUT: <>
+  159 				warnx: <>
+  160 				DB_SYNC: <>
+  161 				DB_CLOSE: <>
+  162 		usracct_update: int (), <./sa.tproj/usrdb.c 169>
+  163 			bzero: <>
+  164 			uid_compare: 117
+  165 			db_copy_out: 154
+  166 		pacct_print: void (), <./sa.tproj/pdb.c 160>
+  167 			bzero: <>
+  168 			strcpy: <>
+  169 			dbopen: <>
+  170 			warn: <>
+  171 			DB_SEQ: <>
+  172 			bcopy: <>
+  173 			add_ci: void (), <./sa.tproj/pdb.c 270>
+  174 			check_junk: int (), <./sa.tproj/pdb.c 258>
+  175 				fprintf: <>
+  176 				fgetln: <>
+  177 			DB_PUT: <>
+  178 			print_ci: void (), <./sa.tproj/pdb.c 375>
+  179 				printf: <>
+  180 			DB_CLOSE: <>
+  181 		usracct_print: void (), <./sa.tproj/usrdb.c 181>
+  182 			DB_SEQ: <>
+  183 			warn: <>
+  184 			memcpy: <>
+  185 			printf: <>
+  186 			user_from_uid: <>
+  187 		pacct_destroy: void (), <./sa.tproj/pdb.c 104>
+  188 			db_destroy: 102
+  189 		usracct_destroy: void (), <./sa.tproj/usrdb.c 112>
+  190 			db_destroy: 102
+  191 		mach_host_self: <>
+  192 		host_kernel_version: <>
+  193 		mach_error: <>
+  194 		printf: <>
+  195 		host_info: <>
+  196 		processor_set_default: <>
+  197 		processor_set_info: <>
+  198 		processor_set_statistics: <>
+  199 		sysctl: <>
+  200 		perror: <>
+  201 		slot_name: <>
+  202 		usage: void (), <./getconf.tproj/getconf.c 49>
+  203 			fprintf: <>
+  204 			exit: <>
+  205 		find_progenv: <>
+  206 		execl: <>
+  207 		find_limit: <>
+  208 		find_confstr: <>
+  209 		do_confstr: void (), <./getconf.tproj/getconf.c 139>
+  210 			confstr: <>
+  211 			err: <>
+  212 			printf: <>
+  213 		find_sysconf: <>
+  214 		do_sysconf: void (), <./getconf.tproj/getconf.c 162>
+  215 			sysconf: <>
+  216 			err: <>
+  217 			printf: <>
+  218 		find_pathconf: <>
+  219 		do_pathconf: void (), <./getconf.tproj/getconf.c 177>
+  220 			pathconf: <>
+  221 			err: <>
+  222 			printf: <>
+  223 		sync: <>
+  224 		usage: void (), <./iostat.tproj/iostat.c 197>
+  225 			fprintf: <>
+  226 		IOMasterPort: <>
+  227 		IONotificationPortCreate: <>
+  228 		IONotificationPortGetRunLoopSource: <>
+  229 		CFRunLoopAddSource: <>
+  230 		CFRunLoopGetCurrent: <>
+  231 		isdigit: <>
+  232 		record_one_device: int (), <./iostat.tproj/iostat.c 892>
+  233 			IOServiceGetMatchingServices: <>
+  234 			IOBSDNameMatching: <>
+  235 			errx: <>
+  236 			IOIteratorNext: <>
+  237 			IOObjectConformsTo: <>
+  238 			record_device: int (), <./iostat.tproj/iostat.c 932>
+  239 				IORegistryEntryGetParentEntry: <>
+  240 				errx: <>
+  241 				IOObjectConformsTo: <>
+  242 				IORegistryEntryCreateCFProperties: <>
+  243 				CFDictionaryGetValue: <>
+  244 				CFSTR: <>
+  245 				CFStringGetCString: <>
+  246 				CFNumberGetValue: <>
+  247 				CFRelease: <>
+  248 				IOObjectRelease: <>
+  249 			IOObjectRelease: <>
+  250 		record_all_devices: int (), <./iostat.tproj/iostat.c 795>
+  251 			IOServiceMatching: <>
+  252 			CFDictionaryAddValue: <>
+  253 			CFSTR: <>
+  254 			CFRetain: <>
+  255 			IOServiceAddMatchingNotification: <>
+  256 			record_drivelist: void (), <./iostat.tproj/iostat.c 835>
+  257 				IOIteratorNext: <>
+  258 				record_device: 238
+  259 				IOObjectRelease: <>
+  260 				qsort: <>
+  261 				compare_drivestats: int (), <./iostat.tproj/iostat.c 987>
+  262 					strcmp: 32
+  263 			errx: <>
+  264 			remove_drivelist: void (), <./iostat.tproj/iostat.c 848>
+  265 				IOIteratorNext: <>
+  266 				IORegistryEntryCreateCFProperties: <>
+  267 				CFDictionaryGetValue: <>
+  268 				CFSTR: <>
+  269 				CFStringGetCString: <>
+  270 				strcmp: 32
+  271 				memmove: <>
+  272 				qsort: <>
+  273 				compare_drivestats: 261
+  274 				CFRelease: <>
+  275 				IOObjectRelease: <>
+  276 		warnx: <>
+  277 		readvar: int (), <./iostat.tproj/iostat.c 734>
+  278 			sysctlbyname: <>
+  279 			warn: <>
+  280 			strcmp: 32
+  281 			sysctl: <>
+  282 			warnx: <>
+  283 		signal: <>
+  284 		phdr: void (), <./iostat.tproj/iostat.c 464>
+  285 		do_phdr: void (), <./iostat.tproj/iostat.c 471>
+  286 			printf: <>
+  287 		gettimeofday: <>
+  288 		compute_etime: long double (), <./iostat.tproj/iostat.c 774>
+  289 			timersub: <>
+  290 		devstats: void (), <./iostat.tproj/iostat.c 520>
+  291 			IORegistryEntryCreateCFProperties: <>
+  292 			CFDictionaryGetValue: <>
+  293 			CFSTR: <>
+  294 			CFNumberGetValue: <>
+  295 			CFRelease: <>
+  296 			printf: <>
+  297 		cpustats: void (), <./iostat.tproj/iostat.c 674>
+  298 			host_statistics: <>
+  299 			errx: <>
+  300 			PTIME: <>
+  301 		loadstats: void (), <./iostat.tproj/iostat.c 723>
+  302 			getloadavg: <>
+  303 			errx: <>
+  304 			printf: <>
+  305 		fflush: <>
+  306 		CFRunLoopRunInMode: <>
+  307 		strrchr: <>
+  308 		CFStringCreateWithCString: <>
+  309 		getuid: <>
+  310 		getpwuid: <>
+  311 		getpwnam: <>
+  312 		baduser: void (), <./chpass.tproj/chpass.c 435>
+  313 			errx: <>
+  314 			strerror: char * (), <./zic.tproj/zic.c 371>
+  315 		pw_dup: <>
+  316 		strcmp: 32
+  317 		cfprintf: int (), <./chpass.tproj/util.c 226>
+  318 			va_start: <>
+  319 			CFStringCreateWithCStringNoCopy: <>
+  320 			CFStringCreateWithFormatAndArguments: <>
+  321 			CFStringGetMaximumSizeForEncoding: <>
+  322 			CFStringGetLength: <>
+  323 			va_end: <>
+  324 			malloc: <>
+  325 			CFStringGetCString: <>
+  326 			fprintf: <>
+  327 			free: <>
+  328 			CFRelease: <>
+  329 		odGetUser: ODRecordRef (), <./chpass.tproj/open_directory.c 94>
+  330 			error: 19
+  331 			assert: <>
+  332 			ODNodeCreateWithName: <>
+  333 			ODNodeCreateWithNodeType: <>
+  334 			CFArrayCreate: <>
+  335 			ODNodeCopyRecord: <>
+  336 			CFRelease: <>
+  337 			ODRecordCopyDetails: <>
+  338 			CFDictionaryGetValue: <>
+  339 			CFArrayGetCount: <>
+  340 			CFArrayGetValueAtIndex: <>
+  341 			CFStringCompareWithOptions: <>
+  342 			CFSTR: <>
+  343 			CFRangeMake: <>
+  344 			prompt_passwd: CFStringRef (), <./chpass.tproj/open_directory.c 60>
+  345 				result: const char * (), <./getty.tproj/chat.c 305>
+  346 				prompt: void (), <./getty.tproj/main.c 737>
+  347 					putf: void (), <./getty.tproj/main.c 771>
+  348 						uname: <>
+  349 						putchr: void (), <./getty.tproj/main.c 710>
+  350 							oflush: void (), <./getty.tproj/main.c 729>
+  351 								write: <>
+  352 							write: <>
+  353 						strrchr: <>
+  354 						puts: void (), <./getty.tproj/main.c 700>
+  355 							putchr: 349
+  356 						time: <>
+  357 						setlocale: <>
+  358 						strftime: <>
+  359 						localtime: <>
+  360 					putchr: 349
+  361 				CFStringCreateWithFormat: <>
+  362 				CFSTR: <>
+  363 				CFStringGetMaximumSizeForEncoding: <>
+  364 				CFStringGetLength: <>
+  365 				malloc: <>
+  366 				CFStringGetCString: <>
+  367 				getpass: <>
+  368 				CFStringCreateWithCString: <>
+  369 				memset: <>
+  370 				strlen: <>
+  371 				free: <>
+  372 				CFRelease: <>
+  373 			ODRecordSetNodeCredentials: <>
+  374 			show_error: void (), <./chpass.tproj/open_directory.c 76>
+  375 				CFErrorCopyDescription: <>
+  376 				cfprintf: 317
+  377 				CFRelease: <>
+  378 				CFErrorCopyFailureReason: <>
+  379 				CFErrorCopyRecoverySuggestion: <>
+  380 				fprintf: <>
+  381 		ypclnt_new: <>
+  382 		ypclnt_connect: <>
+  383 		ypclnt_havepasswdd: <>
+  384 		ypclnt_free: <>
+  385 		p_shell: int (), <./chpass.tproj/field.c 262>
+  386 			memset: <>
+  387 			strdup: <>
+  388 			ok_shell: int (), <./chpass.tproj/util.c 176>
+  389 				setusershell: <>
+  390 				getusershell: <>
+  391 				strcmp: 32
+  392 				endusershell: <>
+  393 				strrchr: <>
+  394 			warnx: <>
+  395 			dup_shell: char * (), <./chpass.tproj/util.c 203>
+  396 				setusershell: <>
+  397 				getusershell: <>
+  398 				strcmp: 32
+  399 				endusershell: <>
+  400 				strdup: <>
+  401 				strrchr: <>
+  402 			stat: <>
+  403 			warn: <>
+  404 			S_ISREG: <>
+  405 		setrestricted: void (), <./chpass.tproj/open_directory.c 15>
+  406 			strncasecmp: <>
+  407 			strcmp: 32
+  408 			CFDictionaryGetValue: <>
+  409 			CFArrayGetCount: <>
+  410 			CFArrayGetValueAtIndex: <>
+  411 			CFGetTypeID: <>
+  412 			CFStringGetTypeID: <>
+  413 			CFStringGetMaximumSizeForEncoding: <>
+  414 			CFStringGetLength: <>
+  415 			malloc: <>
+  416 			CFStringGetCString: <>
+  417 			ok_shell: 388
+  418 		strncasecmp: <>
+  419 		CFDictionaryCreateMutable: <>
+  420 		CFDictionarySetValue: <>
+  421 		CFRelease: <>
+  422 		p_expire: int (), <./chpass.tproj/field.c 219>
+  423 			atot: int (), <./chpass.tproj/util.c 116>
+  424 				unsetenv: <>
+  425 				time: <>
+  426 				localtime: <>
+  427 				strtok: <>
+  428 				isdigit: <>
+  429 				atoi: <>
+  430 				strncasecmp: <>
+  431 				mktime: <>
+  432 			warnx: <>
+  433 		strchr: <>
+  434 		getenv: <>
+  435 		mkstemp: <>
+  436 		edit: , <./chpass.tproj/edit.c 104>
+  437 			display: <>
+  438 			editfile: int (), <./chpass.tproj/util.c 254>
+  439 				getenv: <>
+  440 				strrchr: <>
+  441 				stat: <>
+  442 				sigemptyset: <>
+  443 				sigaction: <>
+  444 				sigaddset: <>
+  445 				sigprocmask: <>
+  446 				fork: <>
+  447 				setgid: <>
+  448 				getgid: <>
+  449 				setuid: <>
+  450 				getuid: <>
+  451 				execlp: <>
+  452 				waitpid: <>
+  453 				unlink: <>
+  454 				WIFSTOPPED: <>
+  455 				raise: <>
+  456 				WSTOPSIG: <>
+  457 				WIFEXITED: <>
+  458 				WEXITSTATUS: (), <./zic.tproj/zic.c 1892>
+  459 			pw_edit: void (), <./vipw.tproj/pw_util.c 184>
+  460 				getenv: <>
+  461 				strrchr: <>
+  462 				vfork: <>
+  463 				setgid: <>
+  464 				getgid: <>
+  465 				setuid: <>
+  466 				getuid: <>
+  467 				execlp: <>
+  468 				waitpid: <>
+  469 				pw_error: void (), <./vipw.tproj/pw_util.c 234>
+  470 					warn: <>
+  471 					exit: <>
+  472 					warnx: <>
+  473 					unlink: <>
+  474 				WIFSTOPPED: <>
+  475 				raise: <>
+  476 				WSTOPSIG: <>
+  477 				WIFEXITED: <>
+  478 				WEXITSTATUS: 458
+  479 			pw_dup: <>
+  480 			verify: <>
+  481 			free: <>
+  482 			printf: <>
+  483 			fflush: <>
+  484 			fgetln: <>
+  485 			warn: <>
+  486 			fopen: <>
+  487 			CFDictionaryGetValue: <>
+  488 			CFArrayGetCount: <>
+  489 			CFArrayGetValueAtIndex: <>
+  490 			cfprintf: 317
+  491 			CFSTR: <>
+  492 			fprintf: <>
+  493 			ttoa: char * (), <./chpass.tproj/util.c 100>
+  494 				localtime: <>
+  495 				sprintf: <>
+  496 			ok_shell: 388
+  497 			strdup: <>
+  498 			fclose: <>
+  499 			strsep: <>
+  500 			fchown: <>
+  501 			fileno: <>
+  502 			getuid: <>
+  503 			getgid: <>
+  504 			CFDictionaryCreateMutable: <>
+  505 			fstat: <>
+  506 			warnx: <>
+  507 			isspace: <>
+  508 			strncasecmp: <>
+  509 			asprintf: <>
+  510 			strpbrk: <>
+  511 			CFStringCreateWithCString: <>
+  512 			CFDictionarySetValue: <>
+  513 			CFRelease: <>
+  514 			pw_make: <>
+  515 			pw_scan: 30
+  516 		unlink: <>
+  517 		pw_init: void (), <./vipw.tproj/pw_util.c 100>
+  518 			setrlimit: <>
+  519 			signal: <>
+  520 			pw_cont: void (), <./vipw.tproj/pw_util.c 91>
+  521 				kill: <>
+  522 			umask: <>
+  523 		pw_tmp: int (), <./vipw.tproj/pw_util.c 147>
+  524 			strrchr: <>
+  525 			strcpy: <>
+  526 			mkstemp: <>
+  527 			err: <>
+  528 		pw_fini: <>
+  529 		free: <>
+  530 		pw_tempname: <>
+  531 		pw_equal: <>
+  532 		getpass: <>
+  533 		crypt: <>
+  534 		odUpdateUser: void (), <./chpass.tproj/open_directory.c 151>
+  535 			error: 19
+  536 			CFDictionaryGetValue: <>
+  537 			CFArrayGetCount: <>
+  538 			CFArrayGetValueAtIndex: <>
+  539 			CFGetTypeID: <>
+  540 			CFStringGetTypeID: <>
+  541 			CFStringCompare: <>
+  542 			CFStringGetLength: <>
+  543 			CFEqual: <>
+  544 			CFSTR: <>
+  545 			CFArrayCreate: <>
+  546 			ODRecordSetValue: <>
+  547 			CFRelease: <>
+  548 			show_error: 374
+  549 			ODRecordSynchronize: <>
+  550 			fprintf: <>
+  551 		ypclnt_passwd: <>
+  552 		pw_lock: int (), <./vipw.tproj/pw_util.c 130>
+  553 			open: <>
+  554 			fcntl: <>
+  555 			err: <>
+  556 			flock: <>
+  557 			errx: <>
+  558 		pw_copy: void (), <./chpass.tproj/pw_copy.c 72>
+  559 			fdopen: <>
+  560 			pw_error: 469
+  561 			fgets: <>
+  562 			strchr: <>
+  563 			warnx: <>
+  564 			fprintf: <>
+  565 			ferror: <>
+  566 			err: <>
+  567 			strcmp: 32
+  568 			fclose: <>
+  569 		pw_mkdb: int (), <./vipw.tproj/pw_util.c 165>
+  570 			warnx: <>
+  571 			fflush: <>
+  572 			vfork: <>
+  573 			execl: <>
+  574 			pw_error: 469
+  575 			waitpid: <>
+  576 			WIFEXITED: <>
+  577 			WEXITSTATUS: 458
+  578 		geteuid: <>
+  579 		seteuid: <>
+  580 		restoregrps: void (), <./newgrp.tproj/newgrp.c 134>
+  581 			initgroups: <>
+  582 			setgid: <>
+  583 			warn: <>
+  584 		addgroup: void (), <./newgrp.tproj/newgrp.c 150>
+  585 			getegid: <>
+  586 			getgrnam: <>
+  587 			strtol: <>
+  588 			getgrgid: <>
+  589 			warnx: <>
+  590 			mbr_uid_to_uuid: <>
+  591 			errc: <>
+  592 			mbr_gid_to_uuid: <>
+  593 			mbr_check_membership: <>
+  594 			strcmp: 32
+  595 			getuid: <>
+  596 			getpass: <>
+  597 			crypt: <>
+  598 			fprintf: <>
+  599 			sysconf: <>
+  600 			malloc: <>
+  601 			err: <>
+  602 			getgroups: <>
+  603 			warn: <>
+  604 			inarray: int (), <./newgrp.tproj/newgrp.c 269>
+  605 			memmove: <>
+  606 			setgroups: <>
+  607 			setgid: <>
+  608 			free: <>
+  609 		setuid: <>
+  610 		loginshell: void (), <./newgrp.tproj/newgrp.c 284>
+  611 			chdir: <>
+  612 			warn: <>
+  613 			getenv: <>
+  614 			calloc: <>
+  615 			err: <>
+  616 			login_getpwclass: <>
+  617 			setusercontext: <>
+  618 			login_close: <>
+  619 			setenv: <>
+  620 			strlcpy: <>
+  621 			basename: <>
+  622 			asprintf: <>
+  623 			execv: <>
+  624 		doshell: void (), <./newgrp.tproj/newgrp.c 333>
+  625 			strlcpy: <>
+  626 			basename: <>
+  627 			execl: <>
+  628 			err: <>
+  629 		getprogname: <>
+  630 		arch: void __dead2 (), <./arch.tproj/arch.c 116>
+  631 			arch: 630
+  632 			NXGetLocalArchInfo: <>
+  633 			errx: <>
+  634 			NXGetArchInfoFromCpuType: <>
+  635 			printf: <>
+  636 			isatty: <>
+  637 			exit: <>
+  638 		initCPU: void (), <./arch.tproj/arch.c 181>
+  639 			malloc: <>
+  640 			err: <>
+  641 		spawnFromArgs: void __dead2 (), <./arch.tproj/arch.c 613>
+  642 			MATCHARGWITHVALUE: <>
+  643 			MATCHARG: <>
+  644 			free: <>
+  645 			errx: <>
+  646 			MAKEENVCOPY: <>
+  647 			strchr: <>
+  648 			warnx: <>
+  649 			usage: void __dead2 (), <./arch.tproj/arch.c 487>
+  650 				fprintf: <>
+  651 				exit: <>
+  652 			addCPUbyname: void (), <./arch.tproj/arch.c 216>
+  653 				strcasecmp: <>
+  654 				arch: 630
+  655 				addCPU: void (), <./arch.tproj/arch.c 196>
+  656 					realloc: <>
+  657 					err: <>
+  658 				warnx: <>
+  659 			exit: <>
+  660 			wrapped: int (), <./arch.tproj/arch.c 508>
+  661 				strlen: <>
+  662 				index: <>
+  663 				stat: <>
+  664 				S_ISREG: <>
+  665 				access: <>
+  666 				errx: <>
+  667 				getenv: <>
+  668 				alloca: <>
+  669 				err: <>
+  670 				strcpy: <>
+  671 				strsep: <>
+  672 				warn: <>
+  673 				bcopy: <>
+  674 				realpath: <>
+  675 				strcmp: 32
+  676 			spawnFromPreferences: void __dead2 (), <./arch.tproj/arch.c 319>
+  677 				strrchr: <>
+  678 				errx: <>
+  679 				useEnv: size_t (), <./arch.tproj/arch.c 249>
+  680 					getenv: <>
+  681 					strrchr: <>
+  682 					errx: <>
+  683 					strdup: <>
+  684 					err: <>
+  685 					strsep: <>
+  686 					strcmp: 32
+  687 					addCPUbyname: 652
+  688 					exit: <>
+  689 				spawnIt: void __dead2 (), <./arch.tproj/arch.c 138>
+  690 					warnx: <>
+  691 					exit: <>
+  692 					fprintf: <>
+  693 					posix_spawnattr_init: <>
+  694 					errc: <>
+  695 					posix_spawnattr_setflags: <>
+  696 					posix_spawnattr_setbinpref_np: <>
+  697 					errx: <>
+  698 					posix_spawnp: <>
+  699 					posix_spawn: <>
+  700 				NSStartSearchPathEnumeration: <>
+  701 				NSGetNextSearchPathEnumeration: <>
+  702 				bzero: <>
+  703 				glob: <>
+  704 				strlcpy: <>
+  705 				globfree: <>
+  706 				strlcat: <>
+  707 				open: <>
+  708 				fstat: <>
+  709 				malloc: <>
+  710 				read: <>
+  711 				CFDataCreateWithBytesNoCopy: <>
+  712 				CFPropertyListCreateWithData: <>
+  713 				CFRelease: <>
+  714 				free: <>
+  715 				close: <>
+  716 				CFGetTypeID: <>
+  717 				CFDictionaryGetTypeID: <>
+  718 				CFDictionaryGetValue: <>
+  719 				CFSTR: <>
+  720 				warnx: <>
+  721 				CFStringGetTypeID: <>
+  722 				CFEqual: <>
+  723 				CFStringGetFileSystemRepresentation: <>
+  724 				CFArrayGetTypeID: <>
+  725 				CFArrayGetCount: <>
+  726 				CFArrayGetValueAtIndex: <>
+  727 				CFStringGetCString: <>
+  728 				addCPUbyname: 652
+  729 				exit: <>
+  730 			spawnIt: 689
+  731 		spawnFromPreferences: 676
+  732 		reexec_to_match_kernel: <>
+  733 		fprintf: <>
+  734 		rindex: <>
+  735 		argtoi: int (), <./sc_usage.tproj/sc_usage.c 1793>
+  736 			strtol: <>
+  737 			errx: <>
+  738 		exit_usage: int (), <./fs_usage.tproj/fs_usage.c 1006>
+  739 			fprintf: <>
+  740 			exit: <>
+  741 		argtopid: void (), <./fs_usage.tproj/fs_usage.c 4274>
+  742 			find_proc_names: void (), <./fs_usage.tproj/fs_usage.c 2131>
+  743 				sysctl: <>
+  744 				quit: int (), <./fs_usage.tproj/fs_usage.c 950>
+  745 					set_enable: void (), <./fs_usage.tproj/fs_usage.c 2156>
+  746 						sysctl: <>
+  747 						quit: 744
+  748 						ARRAYSIZE: <>
+  749 						quit: int (), <./latency.tproj/latency.c 357>
+  750 							set_enable: 745
+  751 							set_remove: void (), <./fs_usage.tproj/fs_usage.c 2266>
+  752 								sysctl: <>
+  753 								quit: 744
+  754 								ARRAYSIZE: <>
+  755 								quit: 749
+  756 							printf: <>
+  757 							exit: <>
+  758 					set_remove: 751
+  759 					erase: <>
+  760 					move: <>
+  761 					refresh: <>
+  762 					endwin: <>
+  763 					printf: <>
+  764 					exit: <>
+  765 					fprintf: <>
+  766 				malloc: <>
+  767 			strtol: <>
+  768 			strcmp: 32
+  769 			strncpy: <>
+  770 			strncmp: <>
+  771 				update_user: <>
+  772 				printf: <>
+  773 				ctime: <>
+  774 				free: <>
+  775 		strncpy: <>
+  776 		getgid: <>
+  777 		getegid: <>
+  778 		setegid: <>
+  779 		vfork: <>
+  780 		setsid: <>
+  781 		ptrace: <>
+  782 		execve: <>
+  783 		initscr: <>
+  784 		cbreak: <>
+  785 		noecho: <>
+  786 		clear: <>
+  787 		refresh: <>
+  788 		leave: void (), <./fs_usage.tproj/fs_usage.c 924>
+  789 			move: <>
+  790 			refresh: <>
+  791 			endwin: <>
+  792 			set_enable: 745
+  793 			set_pidcheck: void (), <./fs_usage.tproj/fs_usage.c 2199>
+  794 				sysctl: <>
+  795 				printf: <>
+  796 				set_remove: 751
+  797 				exit: <>
+  798 				fprintf: <>
+  799 			set_remove: 751
+  800 			exit: <>
+  801 			write_high_res_latencies: void (), <./latency.tproj/latency.c 450>
+  802 				fopen: <>
+  803 				fprintf: <>
+  804 				fclose: <>
+  805 			set_pidexclude: void (), <./fs_usage.tproj/fs_usage.c 2226>
+  806 				sysctl: <>
+  807 				printf: <>
+  808 				set_remove: 751
+  809 				exit: <>
+  810 				ARRAYSIZE: <>
+  811 				fprintf: <>
+  812 			getpid: <>
+  813 			fflush: <>
+  814 		sigwinch: void (), <./fs_usage.tproj/fs_usage.c 988>
+  815 			get_screenwidth: void (), <./fs_usage.tproj/fs_usage.c 971>
+  816 				isatty: <>
+  817 				ioctl: <>
+  818 		set_remove: 751
+  819 		set_numbufs: void (), <./fs_usage.tproj/fs_usage.c 2175>
+  820 			sysctl: <>
+  821 			quit: 744
+  822 			ARRAYSIZE: <>
+  823 			quit: 749
+  824 		set_init: void (), <./fs_usage.tproj/fs_usage.c 2288>
+  825 			sysctl: <>
+  826 			quit: 744
+  827 		set_pidcheck: 793
+  828 		set_enable: 745
+  829 		get_bufinfo: void (), <./fs_usage.tproj/fs_usage.c 2250>
+  830 			sysctl: <>
+  831 			quit: 744
+  832 			ARRAYSIZE: <>
+  833 			quit: 749
+  834 		malloc: <>
+  835 		quit: 744
+  836 		getch: <>
+  837 		usleep: <>
+  838 		endwin: <>
+  839 		strstr: <>
+  840 		reserve_reboot: int (), <./reboot.tproj/reboot.c 312>
+  841 			bootstrap_look_up: <>
+  842 			finish: <>
+  843 			mach_task_self: <>
+  844 			mach_port_allocate: <>
+  845 			kextmanager_lock_reboot: <>
+  846 			warnx: <>
+  847 			mach_error_string: <>
+  848 			mach_port_mod_refs: <>
+  849 		reboot: <>
+  850 		write: <>
+  851 		close: <>
+  852 		getlogin: <>
+  853 		openlog: <>
+  854 		syslog: <>
+  855 		bzero: <>
+  856 		pututxline: <>
+  857 		sysctlbyname: <>
+  858 		logwtmp: <>
+  859 		kill: <>
+  860 		sleep: <>
+  861 		get_pageins: u_int (), <./reboot.tproj/reboot.c 290>
+  862 			sysctlbyname: <>
+  863 			warnx: <>
+  864 		reboot2: <>
+  865 		strerror: 314
+  866 		sigintr: void (), <./zprint.tproj/zprint.c 111>
+  867 		streql: <>
+  868 		usage: void (), <./zprint.tproj/zprint.c 117>
+  869 			fprintf: <>
+  870 			exit: <>
+  871 		task_for_pid: <>
+  872 		mach_task_self: <>
+  873 		mach_error_string: <>
+  874 		task_zone_info: <>
+  875 		mach_zone_info: <>
+  876 		vm_allocate: <>
+  877 		vm_deallocate: <>
+  878 		find_deltas: int (), <./zprint.tproj/zprint.c 513>
+  879 			substr: boolean_t (), <./zprint.tproj/zprint.c 350>
+  880 				strneql: <>
+  881 			strnlen: <>
+  882 		colprintzoneheader: void (), <./zprint.tproj/zprint.c 482>
+  883 			printf: <>
+  884 		colprintzone: void (), <./zprint.tproj/zprint.c 413>
+  885 			putchar: <>
+  886 			printf: <>
+  887 			PRINTK: <>
+  888 		printzone: void (), <./zprint.tproj/zprint.c 362>
+  889 			printf: <>
+  890 		strcpy: <>
+  891 		should_encrypt_swap: boolean_t (), <./dynamic_pager.tproj/dynamic_pager.c 520>
+  892 			CFURLCreateFromFileSystemRepresentation: <>
+  893 			strlen: <>
+  894 			CFURLCreateDataAndPropertiesFromResource: <>
+  895 			CFRelease: <>
+  896 			CFPropertyListCreateFromXMLData: <>
+  897 			CFGetTypeID: <>
+  898 			CFDictionaryGetTypeID: <>
+  899 			CFDictionaryGetValue: <>
+  900 			CFSTR: <>
+  901 			CFBooleanGetTypeID: <>
+  902 			fprintf: <>
+  903 			getprogname: <>
+  904 			CFBooleanGetValue: <>
+  905 		clean_swap_directory: void (), <./dynamic_pager.tproj/dynamic_pager.c 494>
+  906 			opendir: <>
+  907 			fprintf: <>
+  908 			exit: <>
+  909 			readdir: <>
+  910 			strncmp: 770
+  911 			snprintf: <>
+  912 			unlink: <>
+  913 			closedir: <>
+  914 		get_paging_mode: uint32_t (), <./dynamic_pager.tproj/dynamic_pager.c 591>
+  915 			SCPreferencesCreate: <>
+  916 			CFSTR: <>
+  917 			SCPreferencesGetValue: <>
+  918 			CFGetTypeID: <>
+  919 			CFNumberGetTypeID: <>
+  920 			CFNumberGetValue: <>
+  921 			CFRelease: <>
+  922 		statfs: <>
+  923 		mkdir: <>
+  924 		chown: <>
+  925 		paging_setup: void (), <./dynamic_pager.tproj/dynamic_pager.c 411>
+  926 			sprintf: <>
+  927 			open: <>
+  928 			fprintf: <>
+  929 			exit: <>
+  930 			fcntl: <>
+  931 			unlink: <>
+  932 			close: <>
+  933 			ftruncate: <>
+  934 			macx_triggers: <>
+  935 			macx_swapon: <>
+  936 			mach_port_allocate: <>
+  937 			mach_task_self: <>
+  938 			mach_port_extract_right: <>
+  939 			set_dp_control_port: <>
+  940 			mach_host_self: <>
+  941 			wait_on_paging_trigger: void (), <./dynamic_pager.tproj/dynamic_pager.c 398>
+  942 				result: 345
+  943 				server_alert_loop: mach_msg_return_t (), <./dynamic_pager.tproj/dynamic_pager.c 102>
+  944 					vm_allocate: <>
+  945 					mach_task_self: <>
+  946 					mlock: <>
+  947 					mach_msg: <>
+  948 					default_pager_alerts_server: <>
+  949 					backing_store_triggers_server: <>
+  950 					mach_msg_destroy: <>
+  951 					vm_deallocate: <>
+  952 				fprintf: <>
+  953 				exit: <>
+  954 		reexec_to_match_lp64ness: <>
+  955 		setiopolicy_np: <>
+  956 		signal_handler_RAW: void (), <./trace.tproj/trace.c 1248>
+  957 		argtoul: unsigned long (), <./trace.tproj/trace.c 1780>
+  958 			strtoul: <>
+  959 			errx: <>
+  960 		parse_codefile: int (), <./trace.tproj/trace.c 1853>
+  961 		getdivisor: void (), <./fs_usage.tproj/fs_usage.c 995>
+  962 			mach_timebase_info: <>
+  963 		set_pidexclude: 805
+  964 		set_nowrap: void (), <./trace.tproj/trace.c 328>
+  965 			sysctl: <>
+  966 			quit: 744
+  967 		set_freerun: void (), <./trace.tproj/trace.c 391>
+  968 			sysctl: <>
+  969 			quit: 744
+  970 		set_class: void (), <./trace.tproj/trace.c 444>
+  971 			sysctl: <>
+  972 			quit: 744
+  973 		set_subclass: void (), <./trace.tproj/trace.c 482>
+  974 			sysctl: <>
+  975 			quit: 744
+  976 		set_kval_list: void (), <./trace.tproj/trace.c 462>
+  977 			sysctl: <>
+  978 			quit: 744
+  979 		signal_handler: void (), <./trace.tproj/trace.c 1238>
+  980 			ptrace: <>
+  981 			exit: <>
+  982 		waitpid: <>
+  983 		setbuffer: <>
+  984 		fcntl: <>
+  985 		read_trace: void (), <./trace.tproj/trace.c 929>
+  986 			get_bufinfo: 829
+  987 			set_enable: 745
+  988 			printf: <>
+  989 			open: <>
+  990 			perror: <>
+  991 			exit: <>
+  992 			read: <>
+  993 			time: <>
+  994 			lseek: <>
+  995 			ctime: <>
+  996 			malloc: <>
+  997 			quit: 744
+  998 			read_command_map: void (), <./fs_usage.tproj/fs_usage.c 4012>
+  999 				get_bufinfo: 829
+ 1000 				printf: <>
+ 1001 				malloc: <>
+ 1002 				bzero: <>
+ 1003 				read: <>
+ 1004 				free: <>
+ 1005 				lseek: <>
+ 1006 				sysctl: <>
+ 1007 				create_map_entry: void (), <./fs_usage.tproj/fs_usage.c 4126>
+ 1008 					malloc: <>
+ 1009 					strncpy: <>
+ 1010 					strncmp: 770
+ 1011 					get_real_command_name: int (), <./fs_usage.tproj/fs_usage.c 4970>
+ 1012 						bzero: <>
+ 1013 						sysctl: <>
+ 1014 						strncpy: <>
+ 1015 				perror: <>
+ 1016 				exit: <>
+ 1017 				time: <>
+ 1018 				ARRAYSIZE: <>
+ 1019 				delete_all_map_entries: void (), <./fs_usage.tproj/fs_usage.c 4106>
+ 1020 					free: <>
+ 1021 				open: <>
+ 1022 			sysctl: <>
+ 1023 			kdbg_get_cpu: <>
+ 1024 			fprintf: <>
+ 1025 			fcntl: <>
+ 1026 			handle_lookup_event: lookup_t (), <./trace.tproj/trace.c 548>
+ 1027 				malloc: <>
+ 1028 			find_thread_command: void (), <./trace.tproj/trace.c 2262>
+ 1029 				find_thread_entry: threadmap_t (), <./latency.tproj/latency.c 1313>
+ 1030 				strncpy: <>
+ 1031 				delete_thread_entry: void (), <./latency.tproj/latency.c 1234>
+ 1032 				create_tmp_map_entry: void (), <./latency.tproj/latency.c 1293>
+ 1033 					malloc: <>
+ 1034 				find_and_insert_tmp_map_entry: void (), <./latency.tproj/latency.c 1262>
+ 1035 					strncpy: <>
+ 1036 					delete_thread_entry: 1031
+ 1037 				create_map_entry: 1007
+ 1038 				find_thread_name: void (), <./latency.tproj/latency.c 1328>
+ 1039 					find_thread_entry: 1029
+ 1040 			insert_start_event: void (), <./trace.tproj/trace.c 628>
+ 1041 				malloc: <>
+ 1042 			consume_start_event: uint64_t (), <./trace.tproj/trace.c 656>
+ 1043 			sprintf: <>
+ 1044 			strchr: <>
+ 1045 			match_debugid: int (), <./trace.tproj/trace.c 2015>
+ 1046 				binary_search: int (), <./trace.tproj/trace.c 1815>
+ 1047 				bcopy: <>
+ 1048 			strlen: <>
+ 1049 			delete_lookup_event: void (), <./trace.tproj/trace.c 597>
+ 1050 		Log_trace: void (), <./trace.tproj/trace.c 757>
+ 1051 			memset: <>
+ 1052 			open: <>
+ 1053 			perror: <>
+ 1054 			exit: <>
+ 1055 			sysctl: <>
+ 1056 			set_remove: 751
+ 1057 			set_numbufs: 819
+ 1058 			set_init: 824
+ 1059 			set_class: 970
+ 1060 			set_subclass: 973
+ 1061 			set_kval_list: 976
+ 1062 			get_bufinfo: 829
+ 1063 			malloc: <>
+ 1064 			quit: 744
+ 1065 			set_enable: 745
+ 1066 			write_command_map: int (), <./trace.tproj/trace.c 531>
+ 1067 				sysctl: <>
+ 1068 			read_command_map: 998
+ 1069 			time: <>
+ 1070 			write: <>
+ 1071 			mach_absolute_time: <>
+ 1072 			writetrace: int (), <./trace.tproj/trace.c 515>
+ 1073 				sysctl: <>
+ 1074 			printf: <>
+ 1075 			usleep: <>
+ 1076 			readtrace: void (), <./trace.tproj/trace.c 501>
+ 1077 				sysctl: <>
+ 1078 				quit: 744
+ 1079 			close: <>
+ 1080 		log_trace: void (), <./trace.tproj/trace.c 692>
+ 1081 			open: <>
+ 1082 			perror: <>
+ 1083 			exit: <>
+ 1084 			get_bufinfo: 829
+ 1085 			set_enable: 745
+ 1086 			printf: <>
+ 1087 			malloc: <>
+ 1088 			quit: 744
+ 1089 			read_command_map: 998
+ 1090 			time: <>
+ 1091 			write: <>
+ 1092 			memset: <>
+ 1093 			readtrace: 1076
+ 1094 			close: <>
+ 1095 		strncmp: 770
+ 1096 		open_output_file: void (), <./sar.tproj/sar.c 527>
+ 1097 			open: <>
+ 1098 			fprintf: <>
+ 1099 			exit_usage: void (), <./sar.tproj/sar.c 519>
+ 1100 				fprintf: <>
+ 1101 				exit: <>
+ 1102 		convert_hms: time_t (), <./sar.tproj/sar.c 653>
+ 1103 			isdigit: <>
+ 1104 			sscanf: <>
+ 1105 			time: <>
+ 1106 			localtime: <>
+ 1107 			fprintf: <>
+ 1108 			exit_usage: 1099
+ 1109 		infile: char *, <./sar.tproj/sar.c 61>
+ 1110 		exit_average: void (), <./sar.tproj/sar.c 1562>
+ 1111 			exit: <>
+ 1112 			close: <>
+ 1113 			print_column_heading: void (), <./sar.tproj/sar.c 2297>
+ 1114 				fprintf: <>
+ 1115 			fprintf: <>
+ 1116 			fflush: <>
+ 1117 		strtol: <>
+ 1118 		open_input_file: void (), <./sar.tproj/sar.c 539>
+ 1119 			open: <>
+ 1120 			fprintf: <>
+ 1121 			exit_usage: 1099
+ 1122 		time: <>
+ 1123 		ctime_r: <>
+ 1124 		pipe: <>
+ 1125 		fork: <>
+ 1126 		getdtablesize: <>
+ 1127 		dup2: <>
+ 1128 		do_main_workloop: void (), <./sar.tproj/sar.c 737>
+ 1129 			find_restart_header: int (), <./sar.tproj/sar.c 807>
+ 1130 				read_record_hdr: void (), <./sar.tproj/sar.c 550>
+ 1131 					read: <>
+ 1132 					exit_average: 1110
+ 1133 					fprintf: <>
+ 1134 					exit: <>
+ 1135 					write_record_hdr: void (), <./sar.tproj/sar.c 618>
+ 1136 						write: <>
+ 1137 						fprintf: <>
+ 1138 						exit: <>
+ 1139 				write_record_hdr: 1135
+ 1140 				free: <>
+ 1141 				lseek: <>
+ 1142 				fprintf: <>
+ 1143 				exit: <>
+ 1144 				malloc: <>
+ 1145 				read_record_data: void (), <./sar.tproj/sar.c 585>
+ 1146 					read: <>
+ 1147 					exit_average: 1110
+ 1148 					fprintf: <>
+ 1149 					exit: <>
+ 1150 					write_record_data: void (), <./sar.tproj/sar.c 633>
+ 1151 						write: <>
+ 1152 						fprintf: <>
+ 1153 						exit: <>
+ 1154 			exit: <>
+ 1155 			fprintf: <>
+ 1156 			bypass_sample_set: int (), <./sar.tproj/sar.c 907>
+ 1157 				read_record_hdr: 1130
+ 1158 				free: <>
+ 1159 				lseek: <>
+ 1160 				fprintf: <>
+ 1161 				exit: <>
+ 1162 				malloc: <>
+ 1163 				read_record_data: 1145
+ 1164 			print_all_column_headings: void (), <./sar.tproj/sar.c 868>
+ 1165 				get_hms_string: char * (), <./sar.tproj/sar.c 715>
+ 1166 					ctime_r: <>
+ 1167 				print_column_heading: 1113
+ 1168 			read_sample_set: void (), <./sar.tproj/sar.c 977>
+ 1169 				read_record_hdr: 1130
+ 1170 				get_cpu_sample: int (), <./sar.tproj/sar.c 1084>
+ 1171 					skip_data: void (), <./sar.tproj/sar.c 1051>
+ 1172 						lseek: <>
+ 1173 						fprintf: <>
+ 1174 						exit: <>
+ 1175 						malloc: <>
+ 1176 						read_record_data: 1145
+ 1177 						free: <>
+ 1178 					read_record_data: 1145
+ 1179 					bzero: <>
+ 1180 				get_vmstat_sample: int (), <./sar.tproj/sar.c 1182>
+ 1181 					skip_data: 1171
+ 1182 					read_record_data: 1145
+ 1183 					bzero: <>
+ 1184 				get_drivepath_sample: int (), <./sar.tproj/sar.c 1759>
+ 1185 					skip_data: 1171
+ 1186 					read_record_data: 1145
+ 1187 					malloc: <>
+ 1188 					fprintf: <>
+ 1189 					realloc: <>
+ 1190 					bzero: <>
+ 1191 					strcmp: 32
+ 1192 					strcpy: <>
+ 1193 				fprintf: <>
+ 1194 				get_drivestats_sample: int (), <./sar.tproj/sar.c 1257>
+ 1195 					skip_data: 1171
+ 1196 					malloc: <>
+ 1197 					fprintf: <>
+ 1198 					exit: <>
+ 1199 					bzero: <>
+ 1200 					read_record_data: 1145
+ 1201 					strncpy: <>
+ 1202 					strcpy: <>
+ 1203 					init_drivestats: void (), <./sar.tproj/sar.c 1411>
+ 1204 				get_netstats_sample: int (), <./sar.tproj/sar.c 1928>
+ 1205 					skip_data: 1171
+ 1206 					free: <>
+ 1207 					malloc: <>
+ 1208 					fprintf: <>
+ 1209 					exit: <>
+ 1210 					bzero: <>
+ 1211 					read_record_data: 1145
+ 1212 					strncmp: 770
+ 1213 					strncpy: <>
+ 1214 					set_cur_netstats: void (), <./sar.tproj/sar.c 1873>
+ 1215 					init_prev_netstats: void (), <./sar.tproj/sar.c 1892>
+ 1216 					strcmp: 32
+ 1217 					realloc: <>
+ 1218 				get_hms_string: 1165
+ 1219 				print_cpu_sample: void (), <./sar.tproj/sar.c 1110>
+ 1220 					rint: <>
+ 1221 					print_column_heading: 1113
+ 1222 					fprintf: <>
+ 1223 				print_vmstat_sample: void (), <./sar.tproj/sar.c 1209>
+ 1224 					print_column_heading: 1113
+ 1225 					fprintf: <>
+ 1226 					fflush: <>
+ 1227 				print_drivestats_sample: void (), <./sar.tproj/sar.c 1442>
+ 1228 					print_column_heading: 1113
+ 1229 					init_drivestats: void (), <./sar.tproj/sar.c 1411>
+ 1230 					fprintf: <>
+ 1231 				print_netstats_sample: void (), <./sar.tproj/sar.c 2081>
+ 1232 					strncmp: 770
+ 1233 					init_prev_netstats: void (), <./sar.tproj/sar.c 1892>
+ 1234 					fprintf: <>
+ 1235 					print_column_heading: 1113
+ 1236 					fflush: <>
+ 1237 			exit_average: 1110
+ 1238 		COMPAT_MODE: <>
+ 1239 		islower: <>
+ 1240 		isupper: <>
+ 1241 		ttime: time_t (), <./at.tproj/at.c 677>
+ 1242 			gettimeofday: <>
+ 1243 			panic: void (), <./at.tproj/panic.c 48>
+ 1244 				unlink: <>
+ 1245 				errx: <>
+ 1246 			localtime: <>
+ 1247 			strchr: <>
+ 1248 			strlen: <>
+ 1249 			ATOI2: <>
+ 1250 			mktime: <>
+ 1251 		check_permission: int (), <./at.tproj/perm.c 84>
+ 1252 			geteuid: <>
+ 1253 			getpwuid: <>
+ 1254 			err: <>
+ 1255 			fopen: <>
+ 1256 			check_for_user: int (), <./at.tproj/perm.c 60>
+ 1257 				strlen: <>
+ 1258 				malloc: <>
+ 1259 				errx: <>
+ 1260 				fgets: <>
+ 1261 				strncmp: 770
+ 1262 				fclose: <>
+ 1263 				free: <>
+ 1264 			warn: <>
+ 1265 		REDUCE_PRIV: <>
+ 1266 		get_job_list: long * (), <./at.tproj/at.c 746>
+ 1267 			malloc: <>
+ 1268 			panic: 1243
+ 1269 			strtol: <>
+ 1270 		list_jobs: void (), <./at.tproj/at.c 546>
+ 1271 			setlocale: <>
+ 1272 			chdir: <>
+ 1273 			perr: void (), <./atrun.tproj/atrun.c 371>
+ 1274 				unlink: <>
+ 1275 				err: <>
+ 1276 				warn: <>
+ 1277 				syslog: <>
+ 1278 				exit: <>
+ 1279 			sprintf: <>
+ 1280 			glob: <>
+ 1281 			list_one_job: void (), <./at.tproj/at.c 492>
+ 1282 				stat: <>
+ 1283 				perr: 1273
+ 1284 				S_ISREG: <>
+ 1285 				sscanf: <>
+ 1286 				in_job_list: int (), <./at.tproj/at.c 480>
+ 1287 				localtime: <>
+ 1288 				strftime: <>
+ 1289 				printf: <>
+ 1290 				getpwuid: <>
+ 1291 			globfree: <>
+ 1292 			opendir: <>
+ 1293 			readdir: <>
+ 1294 			closedir: <>
+ 1295 		process_jobs: void (), <./at.tproj/at.c 595>
+ 1296 			chdir: <>
+ 1297 			perr: 1273
+ 1298 			opendir: <>
+ 1299 			readdir: <>
+ 1300 			stat: <>
+ 1301 			sscanf: <>
+ 1302 			atoi: <>
+ 1303 			strcmp: 32
+ 1304 			errx: <>
+ 1305 			unlink: <>
+ 1306 			fopen: <>
+ 1307 			getc: <>
+ 1308 			putchar: <>
+ 1309 		parsetime: time_t (), <./at.tproj/parsetime.c 585>
+ 1310 			time: <>
+ 1311 			localtime: <>
+ 1312 			usage: 5
+ 1313 			init_scanner: void (), <./at.tproj/parsetime.c 182>
+ 1314 				strlen: <>
+ 1315 				malloc: <>
+ 1316 				errx: <>
+ 1317 			token: int (), <./at.tproj/parsetime.c 199>
+ 1318 				memset: <>
+ 1319 				isspace: <>
+ 1320 				isdigit: <>
+ 1321 				isalpha: <>
+ 1322 				parse_token: int (), <./at.tproj/parsetime.c 163>
+ 1323 					strcasecmp: <>
+ 1324 			expect: void (), <./at.tproj/parsetime.c 278>
+ 1325 				token: 1317
+ 1326 				plonk: void (), <./at.tproj/parsetime.c 267>
+ 1327 					panic: 1243
+ 1328 			plus: void (), <./at.tproj/parsetime.c 293>
+ 1329 				expect: 1324
+ 1330 				atoi: <>
+ 1331 				token: 1317
+ 1332 				plonk: 1326
+ 1333 				warnx: <>
+ 1334 				mktime: <>
+ 1335 			tod: void (), <./at.tproj/parsetime.c 341>
+ 1336 				atoi: <>
+ 1337 				strlen: <>
+ 1338 				token: 1317
+ 1339 				expect: 1324
+ 1340 				panic: 1243
+ 1341 			month: void (), <./at.tproj/parsetime.c 472>
+ 1342 				plus: 1328
+ 1343 				token: 1317
+ 1344 				expect: 1324
+ 1345 				atol: <>
+ 1346 				assign_date: void (), <./at.tproj/parsetime.c 424>
+ 1347 					time: <>
+ 1348 					localtime: <>
+ 1349 				strlen: <>
+ 1350 				panic: 1243
+ 1351 			mktime: <>
+ 1352 			panic: 1243
+ 1353 		localtime: <>
+ 1354 		asctime: <>
+ 1355 		writefile: void (), <./at.tproj/at.c 217>
+ 1356 			setlocale: <>
+ 1357 			sigc: void (), <./at.tproj/at.c 134>
+ 1358 				unlink: <>
+ 1359 			sigemptyset: <>
+ 1360 			sigaction: <>
+ 1361 			strlen: <>
+ 1362 			open: <>
+ 1363 			perr: 1273
+ 1364 			alarmc: void (), <./at.tproj/at.c 148>
+ 1365 				strlcpy: <>
+ 1366 				strlcat: <>
+ 1367 				write: <>
+ 1368 				strlen: <>
+ 1369 				sigc: 1357
+ 1370 			alarm: <>
+ 1371 			fcntl: <>
+ 1372 			nextjob: long (), <./at.tproj/at.c 192>
+ 1373 				fopen: <>
+ 1374 				fscanf: <>
+ 1375 				rewind: <>
+ 1376 				fprintf: <>
+ 1377 				fclose: <>
+ 1378 			sprintf: <>
+ 1379 			stat: <>
+ 1380 			umask: <>
+ 1381 			creat: <>
+ 1382 			dup: <>
+ 1383 			fchown: <>
+ 1384 			REDUCE_PRIV: <>
+ 1385 			close: <>
+ 1386 			fdopen: <>
+ 1387 			panic: 1243
+ 1388 			getlogin: <>
+ 1389 			getenv: <>
+ 1390 			getpwnam: <>
+ 1391 			getpwuid: <>
+ 1392 			freopen: <>
+ 1393 			fprintf: <>
+ 1394 			strchr: <>
+ 1395 			strncmp: 770
+ 1396 			fwrite: <>
+ 1397 			isalnum: <>
+ 1398 			fputc: <>
+ 1399 			fputs: <>
+ 1400 			cwdname: char * (), <./at.tproj/at.c 161>
+ 1401 				malloc: <>
+ 1402 				errx: <>
+ 1403 				panic: 1243
+ 1404 				getcwd: <>
+ 1405 				perr: 1273
+ 1406 				free: <>
+ 1407 			getchar: <>
+ 1408 			ferror: <>
+ 1409 			fclose: <>
+ 1410 			fchmod: <>
+ 1411 			localtime: <>
+ 1412 			strftime: <>
+ 1413 		toupper: <>
+ 1414 		panic: 1243
+ 1415 		proc_kmsgbuf: <>
+ 1416 		strvis: <>
+ 1417 		strcasecmp: <>
+ 1418 		file_check_passwd: int (), <./chkpasswd.tproj/file_passwd.c 246>
+ 1419 			access: <>
+ 1420 			fopen: <>
+ 1421 			fprintf: <>
+ 1422 			perror: <>
+ 1423 			exit: <>
+ 1424 			find_user: struct passwd (), <./chkpasswd.tproj/file_passwd.c 111>
+ 1425 			checkpasswd: void (), <./chkpasswd.tproj/passwd.c 58>
+ 1426 				printf: <>
+ 1427 				getpass: <>
+ 1428 				sleep: <>
+ 1429 				strcmp: 32
+ 1430 				crypt: <>
+ 1431 				fprintf: <>
+ 1432 				exit: <>
+ 1433 			fclose: <>
+ 1434 		nis_check_passwd: int (), <./chkpasswd.tproj/nis_passwd.c 88>
+ 1435 			yp_get_default_domain: <>
+ 1436 			fprintf: <>
+ 1437 			exit: <>
+ 1438 			yp_master: <>
+ 1439 			getrpcport: <>
+ 1440 			ypgetpwnam: struct passwd (), <./chkpasswd.tproj/nis_passwd.c 187>
+ 1441 			checkpasswd: 1425
+ 1442 		od_check_passwd: int (), <./chkpasswd.tproj/od_passwd.c 59>
+ 1443 			CFStringCreateWithCString: <>
+ 1444 			printf: <>
+ 1445 			getpass: <>
+ 1446 			ODSessionCreate: <>
+ 1447 			ODNodeCreateWithName: <>
+ 1448 			ODNodeCreateWithNodeType: <>
+ 1449 			ODNodeCopyRecord: <>
+ 1450 			ODRecordVerifyPassword: <>
+ 1451 			fprintf: <>
+ 1452 			exit: <>
+ 1453 		pam_check_passwd: int (), <./chkpasswd.tproj/pam_passwd.c 36>
+ 1454 			pam_start: <>
+ 1455 			printf: <>
+ 1456 			pam_authenticate: <>
+ 1457 			pam_acct_mgmt: <>
+ 1458 			pam_chauthtok: <>
+ 1459 			pam_setcred: <>
+ 1460 			pam_open_session: <>
+ 1461 			pam_close_session: <>
+ 1462 			fprintf: <>
+ 1463 			pam_end: <>
+ 1464 		copyfile: void (), <./vipw.tproj/vipw.c 131>
+ 1465 			read: <>
+ 1466 			write: <>
+ 1467 			pw_error: 469
+ 1468 		stat: <>
+ 1469 		pw_error: 469
+ 1470 		pw_edit: 459
+ 1471 		pw_prompt: void (), <./vipw.tproj/pw_util.c 220>
+ 1472 			printf: <>
+ 1473 			fflush: <>
+ 1474 			getchar: <>
+ 1475 			pw_error: 469
+ 1476 		gethostname: <>
+ 1477 		timeoverrun: void (), <./getty.tproj/main.c 180>
+ 1478 			syslog: <>
+ 1479 			exit: <>
+ 1480 		setrlimit: <>
+ 1481 		gettable: void (), <./getty.tproj/subr.c 67>
+ 1482 			strlen: <>
+ 1483 			malloc: <>
+ 1484 			strncpy: <>
+ 1485 			cgetent: <>
+ 1486 			syslog: <>
+ 1487 			cgetstr: <>
+ 1488 			strcmp: 32
+ 1489 			free: <>
+ 1490 			cgetnum: <>
+ 1491 			cgetcap: <>
+ 1492 			printf: <>
+ 1493 		gendefaults: void (), <./getty.tproj/subr.c 184>
+ 1494 			strdup: <>
+ 1495 		ttyname: <>
+ 1496 		strncat: <>
+ 1497 		chmod: <>
+ 1498 		revoke: <>
+ 1499 		dogettytab: void (), <./getty.tproj/main.c 839>
+ 1500 			gettable: 1481
+ 1501 			setdefaults: void (), <./getty.tproj/subr.c 204>
+ 1502 				strdup: <>
+ 1503 		opentty: int (), <./getty.tproj/main.c 465>
+ 1504 			open: <>
+ 1505 			syslog: <>
+ 1506 			sleep: <>
+ 1507 			login_tty: <>
+ 1508 			daemon: <>
+ 1509 			close: <>
+ 1510 		defttymode: void (), <./getty.tproj/main.c 496>
+ 1511 			tcgetattr: <>
+ 1512 			syslog: <>
+ 1513 			exit: <>
+ 1514 			dogettytab: 1499
+ 1515 		setttymode: void (), <./getty.tproj/main.c 523>
+ 1516 			tcflush: <>
+ 1517 			ioctl: <>
+ 1518 			cfsetispeed: <>
+ 1519 			speed: int (), <./getty.tproj/subr.c 568>
+ 1520 			cfsetospeed: <>
+ 1521 			set_flags: void (), <./getty.tproj/subr.c 268>
+ 1522 				CLR: <>
+ 1523 				SET: <>
+ 1524 				delaybits: int (), <./getty.tproj/subr.c 475>
+ 1525 					adelay: int (), <./getty.tproj/subr.c 488>
+ 1526 			setchars: void (), <./getty.tproj/subr.c 248>
+ 1527 			cfmakeraw: <>
+ 1528 			tcsetattr: <>
+ 1529 			syslog: <>
+ 1530 			exit: <>
+ 1531 		getty_chat: int (), <./getty.tproj/chat.c 442>
+ 1532 			syslog: <>
+ 1533 			read_chat: char ** (), <./getty.tproj/chat.c 136>
+ 1534 				strlen: <>
+ 1535 				malloc: <>
+ 1536 				strtok: <>
+ 1537 				strcpy: <>
+ 1538 				getdigit: int (), <./getty.tproj/chat.c 109>
+ 1539 					strchr: <>
+ 1540 					tolower: <>
+ 1541 				strrchr: <>
+ 1542 				free: <>
+ 1543 			signal: <>
+ 1544 			chat_alrm: void (), <./getty.tproj/chat.c 81>
+ 1545 				alarm: <>
+ 1546 				signal: <>
+ 1547 				chat_alrm: 1544
+ 1548 				ioctl: <>
+ 1549 			chat_unalarm: int (), <./getty.tproj/chat.c 97>
+ 1550 				ioctl: <>
+ 1551 			chat_expect: int (), <./getty.tproj/chat.c 320>
+ 1552 				syslog: <>
+ 1553 				cleanstr: char * (), <./getty.tproj/chat.c 276>
+ 1554 					realloc: <>
+ 1555 					cleanchr: char * (), <./getty.tproj/chat.c 242>
+ 1556 						strcpy: <>
+ 1557 				strlen: <>
+ 1558 				malloc: <>
+ 1559 				memset: <>
+ 1560 				alarm: <>
+ 1561 				read: <>
+ 1562 				cleanchr: 1555
+ 1563 				memcmp: <>
+ 1564 				memcpy: <>
+ 1565 				chat_unalarm: 1549
+ 1566 				free: <>
+ 1567 				result: 345
+ 1568 			chat_send: int (), <./getty.tproj/chat.c 389>
+ 1569 				syslog: <>
+ 1570 				cleanstr: 1553
+ 1571 				strlen: <>
+ 1572 				alarm: <>
+ 1573 				usleep: <>
+ 1574 				write: <>
+ 1575 				chat_unalarm: 1549
+ 1576 				result: 345
+ 1577 			free: <>
+ 1578 			ioctl: <>
+ 1579 			result: 345
+ 1580 		tcsetattr: <>
+ 1581 		select: <>
+ 1582 		tcflush: <>
+ 1583 		autobaud: const char * (), <./getty.tproj/subr.c 665>
+ 1584 			tcflush: <>
+ 1585 			select: <>
+ 1586 			read: <>
+ 1587 		portselector: const char * (), <./getty.tproj/subr.c 631>
+ 1588 			alarm: <>
+ 1589 			read: <>
+ 1590 			strcmp: 32
+ 1591 			sleep: <>
+ 1592 		putpad: void (), <./getty.tproj/main.c 663>
+ 1593 			cfgetospeed: <>
+ 1594 			isdigit: <>
+ 1595 			puts: 354
+ 1596 			putchr: 349
+ 1597 		edithost: void (), <./getty.tproj/subr.c 501>
+ 1598 			strncpy: <>
+ 1599 		getline: char * (), <./getty.tproj/main.c 747>
+ 1600 			read: <>
+ 1601 		putf: 347
+ 1602 		setjmp: <>
+ 1603 		cfsetispeed: <>
+ 1604 		cfsetospeed: <>
+ 1605 		dingdong: void (), <./getty.tproj/main.c 162>
+ 1606 			alarm: <>
+ 1607 			longjmp: <>
+ 1608 		alarm: <>
+ 1609 		getname: int (), <./getty.tproj/main.c 551>
+ 1610 			setjmp: <>
+ 1611 			signal: <>
+ 1612 			interrupt: void (), <./getty.tproj/main.c 171>
+ 1613 				longjmp: <>
+ 1614 			set_flags: 1521
+ 1615 			prompt: 346
+ 1616 			oflush: 350
+ 1617 			sleep: <>
+ 1618 			tcsetattr: <>
+ 1619 			syslog: <>
+ 1620 			exit: <>
+ 1621 			read: <>
+ 1622 			CTRL: <>
+ 1623 			putf: 347
+ 1624 			islower: <>
+ 1625 			isupper: <>
+ 1626 			cfgetospeed: <>
+ 1627 			puts: 354
+ 1628 			putchr: 349
+ 1629 			isdigit: <>
+ 1630 			tolower: <>
+ 1631 		oflush: 350
+ 1632 		execle: <>
+ 1633 		puts: 354
+ 1634 		set_flags: 1521
+ 1635 		makeenv: void (), <./getty.tproj/subr.c 583>
+ 1636 			strlcat: <>
+ 1637 			strchr: <>
+ 1638 		getoffset: <>
+ 1639 		memmove: <>
+ 1640 		fgets: <>
+ 1641 		ctime: <>
+ 1642 		audit_shutdown: <>
+ 1643 		putc: <>
+ 1644 		setpriority: <>
+ 1645 		loop: <>
+ 1646 		nolog: <>
+ 1647 		timewarn: <>
+ 1648 		log_and_exec_reboot_or_halt: <>
+ 1649 		die_you_gravy_sucking_pig_dog: <>
+ 1650 		access: <>
+ 1651 		popen: <>
+ 1652 		fwrite: <>
+ 1653 		pclose: <>
+ 1654 		longjmp: <>
+ 1655 		finish: <>
+ 1656 		IOPMFindPowerManagement: <>
+ 1657 		IOPMSleepSystem: <>
+ 1658 		badtime: <>
+ 1659 		isascii: <>
+ 1660 		unsetenv: <>
+ 1661 		ATOI2: <>
+ 1662 		mktime: <>
+ 1663 		auditon: <>
+ 1664 		au_open: <>
+ 1665 		au_to_me: <>
+ 1666 		au_write: <>
+ 1667 		au_to_return32: <>
+ 1668 		au_close: <>
+ 1669 		bootstrap_look_up: <>
+ 1670 		mach_port_allocate: <>
+ 1671 		kextmanager_lock_reboot: <>
+ 1672 		mach_port_mod_refs: <>
+ 1673 		strtoll: <>
+ 1674 		create_file: void (), <./mkfile.tproj/mkfile.c 140>
+ 1675 			geteuid: <>
+ 1676 			open: <>
+ 1677 			err: <>
+ 1678 			lseek: <>
+ 1679 			write: <>
+ 1680 			err_rm: void (), <./mkfile.tproj/mkfile.c 200>
+ 1681 				unlink: <>
+ 1682 				err: <>
+ 1683 			bzero: <>
+ 1684 			fchmod: <>
+ 1685 			close: <>
+ 1686 			fprintf: <>
+ 1687 		open_rawfile: void (), <./latency.tproj/latency.c 2761>
+ 1688 			open: <>
+ 1689 			fprintf: <>
+ 1690 			exit_usage: 738
+ 1691 		open_logfile: void (), <./latency.tproj/latency.c 2746>
+ 1692 			fopen: <>
+ 1693 			fprintf: <>
+ 1694 			exit_usage: 738
+ 1695 		do_kernel_nm: void (), <./latency.tproj/latency.c 2559>
+ 1696 			bzero: <>
+ 1697 			strcpy: <>
+ 1698 			mktemp: <>
+ 1699 			fprintf: <>
+ 1700 			sprintf: <>
+ 1701 			system: <>
+ 1702 			fopen: <>
+ 1703 			getc: <>
+ 1704 			rewind: <>
+ 1705 			malloc: <>
+ 1706 			fscanf: <>
+ 1707 			strlen: <>
+ 1708 			free: <>
+ 1709 			fclose: <>
+ 1710 			unlink: <>
+ 1711 			printf: <>
+ 1712 		init_code_file: void (), <./latency.tproj/latency.c 2523>
+ 1713 			fopen: <>
+ 1714 			fprintf: <>
+ 1715 			fscanf: <>
+ 1716 			strncpy: <>
+ 1717 			fclose: <>
+ 1718 		sigintr: void (), <./latency.tproj/latency.c 466>
+ 1719 			write_high_res_latencies: 801
+ 1720 			set_enable: 745
+ 1721 			set_pidexclude: 805
+ 1722 			getpid: <>
+ 1723 			screen_update: void (), <./latency.tproj/latency.c 534>
+ 1724 				erase: <>
+ 1725 				move: <>
+ 1726 				sprintf: <>
+ 1727 				strlen: <>
+ 1728 				time: <>
+ 1729 				memset: <>
+ 1730 				ctime: <>
+ 1731 				printf: <>
+ 1732 				printw: <>
+ 1733 				print_time: void (), <./sc_usage.tproj/sc_usage.c 288>
+ 1734 					sprintf: <>
+ 1735 					usec_to_1000ths: <>
+ 1736 				print_row: void (), <./sc_usage.tproj/sc_usage.c 519>
+ 1737 					sprintf: <>
+ 1738 					strlen: <>
+ 1739 					memset: <>
+ 1740 					print_time: 1733
+ 1741 					printf: <>
+ 1742 					printw: <>
+ 1743 				mach_absolute_time: <>
+ 1744 				refresh: <>
+ 1745 				fprintf: <>
+ 1746 				print_total: void (), <./latency.tproj/latency.c 500>
+ 1747 					sprintf: <>
+ 1748 					fprintf: <>
+ 1749 					printw: <>
+ 1750 				fflush: <>
+ 1751 			endwin: <>
+ 1752 			set_remove: 751
+ 1753 			exit: <>
+ 1754 		ARRAYSIZE: <>
+ 1755 		getpid: <>
+ 1756 		quit: 749
+ 1757 		sample_sc: void (), <./fs_usage.tproj/fs_usage.c 2318>
+ 1758 			set_enable: 745
+ 1759 			get_bufinfo: 829
+ 1760 			sysctl: <>
+ 1761 			quit: 744
+ 1762 			set_remove: 751
+ 1763 			set_init: 824
+ 1764 			set_pidcheck: 793
+ 1765 			find_thread: struct th_info (), <./sc_usage.tproj/sc_usage.c 1075>
+ 1766 			delete_all_thread_entries: void (), <./latency.tproj/latency.c 1443>
+ 1767 			read_command_map: 998
+ 1768 			read: <>
+ 1769 			perror: <>
+ 1770 			exit: <>
+ 1771 			ARRAYSIZE: <>
+ 1772 			quit: 749
+ 1773 			fprintf: <>
+ 1774 			ctime: <>
+ 1775 			check_for_thread_update: void (), <./latency.tproj/latency.c 2028>
+ 1776 				create_tmp_map_entry: 1032
+ 1777 				find_and_insert_tmp_map_entry: 1034
+ 1778 				exec_thread_entry: void (), <./latency.tproj/latency.c 1356>
+ 1779 					find_thread_entry: 1029
+ 1780 					strncpy: <>
+ 1781 					add_thread_entry_to_list: void (), <./latency.tproj/latency.c 1340>
+ 1782 						malloc: <>
+ 1783 					create_map_entry: 1007
+ 1784 				record_thread_entry_for_gc: void (), <./latency.tproj/latency.c 1375>
+ 1785 					add_thread_entry_to_list: 1781
+ 1786 				find_thread_name: 1038
+ 1787 			CPU_NUMBER: <>
+ 1788 			handle_decrementer: double (), <./latency.tproj/latency.c 2456>
+ 1789 			log_decrementer: kd_buf * (), <./latency.tproj/latency.c 2275>
+ 1790 				CPU_NUMBER: <>
+ 1791 				sprintf: <>
+ 1792 				ctime: <>
+ 1793 				log_range: void (), <./latency.tproj/latency.c 2216>
+ 1794 					delta: long (), <./zdump.tproj/zdump.c 343>
+ 1795 						delta: 1794
+ 1796 						isleap: <>
+ 1797 					strlen: <>
+ 1798 					memset: <>
+ 1799 					fprintf: <>
+ 1800 					reset_thread_names: void (), <./latency.tproj/latency.c 1417>
+ 1801 						find_thread_entry: 1029
+ 1802 						strncpy: <>
+ 1803 					log_info: void (), <./latency.tproj/latency.c 2054>
+ 1804 						CPU_NUMBER: <>
+ 1805 						check_for_thread_update: 1775
+ 1806 						pc_to_string: void (), <./latency.tproj/latency.c 2679>
+ 1807 							sprintf: <>
+ 1808 							binary_search: int (), <./latency.tproj/latency.c 2708>
+ 1809 								binary_search: 1808
+ 1810 							memcpy: <>
+ 1811 						fprintf: <>
+ 1812 						find_thread_name: 1038
+ 1813 						sprintf: <>
+ 1814 						thread_in_user_mode: int (), <./latency.tproj/latency.c 1661>
+ 1815 							strcmp: 32
+ 1816 						handle_lookup_event: lookup_t (), <./latency.tproj/latency.c 1682>
+ 1817 							malloc: <>
+ 1818 							add_thread_entry_to_list: 1781
+ 1819 						strlen: <>
+ 1820 						delete_lookup_event: void (), <./latency.tproj/latency.c 1739>
+ 1821 						enter_syscall: void (), <./latency.tproj/latency.c 1908>
+ 1822 							CPU_NUMBER: <>
+ 1823 							find_code: char * (), <./latency.tproj/latency.c 2510>
+ 1824 							pc_to_string: 1806
+ 1825 							fprintf: <>
+ 1826 							insert_start_event: void (), <./latency.tproj/latency.c 1564>
+ 1827 								malloc: <>
+ 1828 								add_thread_entry_to_list: 1781
+ 1829 						exit_syscall: void (), <./latency.tproj/latency.c 1956>
+ 1830 							consume_start_event: uint64_t (), <./latency.tproj/latency.c 1595>
+ 1831 								printf: <>
+ 1832 							CPU_NUMBER: <>
+ 1833 							fprintf: <>
+ 1834 							find_code: 1823
+ 1835 						print_entry: void (), <./latency.tproj/latency.c 1998>
+ 1836 							CPU_NUMBER: <>
+ 1837 							find_code: 1823
+ 1838 							fprintf: <>
+ 1839 					insert_start_event: 1826
+ 1840 					consume_start_event: 1830
+ 1841 					gc_start_events: void (), <./latency.tproj/latency.c 1632>
+ 1842 					gc_lookup_events: void (), <./latency.tproj/latency.c 1769>
+ 1843 			check_for_scheduler_latency: int (), <./latency.tproj/latency.c 2396>
+ 1844 				insert_run_event: void (), <./latency.tproj/latency.c 1463>
+ 1845 					malloc: <>
+ 1846 					add_thread_entry_to_list: 1781
+ 1847 				find_run_event: threadrun_t (), <./latency.tproj/latency.c 1493>
+ 1848 				delete_run_event: void (), <./latency.tproj/latency.c 1507>
+ 1849 			log_scheduler: void (), <./latency.tproj/latency.c 2348>
+ 1850 				CPU_NUMBER: <>
+ 1851 				sprintf: <>
+ 1852 				ctime: <>
+ 1853 				log_range: 1793
+ 1854 			fflush: <>
+ 1855 			gc_thread_entries: void (), <./latency.tproj/latency.c 1381>
+ 1856 				delete_thread_entry: 1031
+ 1857 			gc_reset_entries: void (), <./latency.tproj/latency.c 1400>
+ 1858 			gc_run_events: void (), <./latency.tproj/latency.c 1536>
+ 1859 			delete_all_events: void (), <./fs_usage.tproj/fs_usage.c 3981>
+ 1860 			kdbg_get_timestamp: <>
+ 1861 			time: <>
+ 1862 			insert_diskio: struct diskio (), <./fs_usage.tproj/fs_usage.c 4524>
+ 1863 			complete_diskio: struct diskio (), <./fs_usage.tproj/fs_usage.c 4560>
+ 1864 			print_diskio: void (), <./fs_usage.tproj/fs_usage.c 4594>
+ 1865 				strncpy: <>
+ 1866 				check_filter_mode: int (), <./fs_usage.tproj/fs_usage.c 4800>
+ 1867 					strcmp: 32
+ 1868 					fs_usage_fd_isset: int (), <./fs_usage.tproj/fs_usage.c 4247>
+ 1869 						find_map_entry: threadmap_t (), <./fs_usage.tproj/fs_usage.c 4156>
+ 1870 					fs_usage_fd_clear: void (), <./fs_usage.tproj/fs_usage.c 4261>
+ 1871 						find_map_entry: 1869
+ 1872 					fs_usage_fd_set: void (), <./fs_usage.tproj/fs_usage.c 4206>
+ 1873 						find_map_entry: 1869
+ 1874 						malloc: <>
+ 1875 						FS_USAGE_NFDBYTES: <>
+ 1876 						bzero: <>
+ 1877 						realloc: <>
+ 1878 				format_print: void (), <./fs_usage.tproj/fs_usage.c 2967>
+ 1879 					find_map_entry: 1869
+ 1880 					sprintf: <>
+ 1881 					ctime: <>
+ 1882 					find_event: th_info_t (), <./fs_usage.tproj/fs_usage.c 3958>
+ 1883 					printf: <>
+ 1884 					lookup_name: void (), <./fs_usage.tproj/fs_usage.c 4306>
+ 1885 					clip_64bit: int (), <./fs_usage.tproj/fs_usage.c 2947>
+ 1886 						printf: <>
+ 1887 					find_disk_name: char * (), <./fs_usage.tproj/fs_usage.c 4761>
+ 1888 						recache_disk_names: void (), <./fs_usage.tproj/fs_usage.c 4745>
+ 1889 							free: <>
+ 1890 							cache_disk_names: void (), <./fs_usage.tproj/fs_usage.c 4705>
+ 1891 								opendir: <>
+ 1892 								readdir: <>
+ 1893 								strncmp: 770
+ 1894 								snprintf: <>
+ 1895 								stat: <>
+ 1896 								malloc: <>
+ 1897 								free: <>
+ 1898 								strncpy: <>
+ 1899 								closedir: <>
+ 1900 					generate_cs_disk_name: char * (), <./fs_usage.tproj/fs_usage.c 4783>
+ 1901 						sprintf: <>
+ 1902 					memset: <>
+ 1903 					get_mode_string: void (), <./fs_usage.tproj/fs_usage.c 2936>
+ 1904 						memset: <>
+ 1905 						get_mode_nibble: void (), <./fs_usage.tproj/fs_usage.c 2917>
+ 1906 			free_diskio: void (), <./fs_usage.tproj/fs_usage.c 4587>
+ 1907 			enter_event: void (), <./fs_usage.tproj/fs_usage.c 2803>
+ 1908 				enter_event_now: void (), <./fs_usage.tproj/fs_usage.c 2710>
+ 1909 					add_event: th_info_t (), <./fs_usage.tproj/fs_usage.c 3931>
+ 1910 						malloc: <>
+ 1911 					sprintf: <>
+ 1912 					ctime: <>
+ 1913 					strlen: <>
+ 1914 					printf: <>
+ 1915 					find_map_entry: 1869
+ 1916 					memset: <>
+ 1917 				BSC_INDEX: <>
+ 1918 				filemgr_index: int (), <./fs_usage.tproj/fs_usage.c 1031>
+ 1919 			exit_event: void (), <./fs_usage.tproj/fs_usage.c 2895>
+ 1920 				find_event: 1882
+ 1921 				check_filter_mode: 1866
+ 1922 				format_print: 1878
+ 1923 				delete_event: void (), <./fs_usage.tproj/fs_usage.c 3902>
+ 1924 			add_event: 1909
+ 1925 			find_event: 1882
+ 1926 			create_map_entry: 1007
+ 1927 			delete_event: 1923
+ 1928 			delete_map_entry: void (), <./fs_usage.tproj/fs_usage.c 4172>
+ 1929 				free: <>
+ 1930 			mark_thread_waited: void (), <./fs_usage.tproj/fs_usage.c 3999>
+ 1931 			filemgr_index: int (), <./fs_usage.tproj/fs_usage.c 1031>
+ 1932 			check_filter_mode: 1866
+ 1933 			format_print: 1878
+ 1934 			extend_syscall: void (), <./fs_usage.tproj/fs_usage.c 2839>
+ 1935 				find_event: 1882
+ 1936 			BSC_INDEX: <>
+ 1937 		screen_update: 1723
+ 1938 		adelay: int (), <./getty.tproj/subr.c 488>
+ 1939 		mach_wait_until: <>
+ 1940 		mach_absolute_time: <>
+ 1941 		closelog: <>
+ 1942 		acct: <>
+ 1943 		usage: void (), <./passwd.tproj/passwd.c 149>
+ 1944 			fprintf: <>
+ 1945 			exit: <>
+ 1946 		file_passwd: int (), <./passwd.tproj/file_passwd.c 182>
+ 1947 			open: <>
+ 1948 			err: <>
+ 1949 			fdopen: <>
+ 1950 			find_user: struct passwd (), <./passwd.tproj/file_passwd.c 109>
+ 1951 			errx: <>
+ 1952 			getuid: <>
+ 1953 			getpasswd: void (), <./passwd.tproj/passwd.c 44>
+ 1954 				printf: <>
+ 1955 				getpass: <>
+ 1956 				strcmp: 32
+ 1957 				crypt: <>
+ 1958 				fprintf: <>
+ 1959 				exit: <>
+ 1960 				snprintf: <>
+ 1961 				strlen: <>
+ 1962 				isupper: <>
+ 1963 				islower: <>
+ 1964 				isalpha: <>
+ 1965 				srandom: <>
+ 1966 				time: <>
+ 1967 				random: <>
+ 1968 			strdup: <>
+ 1969 			rewind: <>
+ 1970 			rewrite_file: void (), <./passwd.tproj/file_passwd.c 126>
+ 1971 				asprintf: <>
+ 1972 				mkstemp: <>
+ 1973 				err: <>
+ 1974 				fdopen: <>
+ 1975 				fchmod: <>
+ 1976 				unlink: <>
+ 1977 				fgetln: <>
+ 1978 				parse_user: struct passwd (), <./passwd.tproj/file_passwd.c 47>
+ 1979 				strcmp: 32
+ 1980 				fwrite: <>
+ 1981 				fprintf: <>
+ 1982 				fclose: <>
+ 1983 				rename: <>
+ 1984 				free: <>
+ 1985 			fclose: <>
+ 1986 		nis_passwd: int (), <./passwd.tproj/nis_passwd.c 92>
+ 1987 			yp_get_default_domain: <>
+ 1988 			fprintf: <>
+ 1989 			exit: <>
+ 1990 			yp_master: <>
+ 1991 			getrpcport: <>
+ 1992 			ypgetpwnam: struct passwd (), <./passwd.tproj/nis_passwd.c 239>
+ 1993 			getuid: <>
+ 1994 			getpasswd: 1953
+ 1995 			clnt_create: <>
+ 1996 			authunix_create_default: <>
+ 1997 			clnt_call: <>
+ 1998 			clnt_perrno: <>
+ 1999 		od_passwd: int (), <./passwd.tproj/od_passwd.c 82>
+ 2000 			error: 19
+ 2001 			strdup: <>
+ 2002 			getuid: <>
+ 2003 			strcmp: 32
+ 2004 			CFStringCreateWithCString: <>
+ 2005 			ODNodeCreateWithName: <>
+ 2006 			ODNodeCreateWithNodeType: <>
+ 2007 			ODNodeCopyRecord: <>
+ 2008 			CFRelease: <>
+ 2009 			show_error: void (), <./passwd.tproj/od_passwd.c 64>
+ 2010 				CFErrorCopyDescription: <>
+ 2011 				cfprintf: int (), <./passwd.tproj/od_passwd.c 40>
+ 2012 					va_start: <>
+ 2013 					CFStringCreateWithCStringNoCopy: <>
+ 2014 					CFStringCreateWithFormatAndArguments: <>
+ 2015 					CFStringGetMaximumSizeForEncoding: <>
+ 2016 					CFStringGetLength: <>
+ 2017 					va_end: <>
+ 2018 					malloc: <>
+ 2019 					CFStringGetCString: <>
+ 2020 					fprintf: <>
+ 2021 					free: <>
+ 2022 					CFRelease: <>
+ 2023 				CFRelease: <>
+ 2024 				CFErrorCopyFailureReason: <>
+ 2025 				CFErrorCopyRecoverySuggestion: <>
+ 2026 				fprintf: <>
+ 2027 			fprintf: <>
+ 2028 			ODRecordCopyValues: <>
+ 2029 			CFArrayGetCount: <>
+ 2030 			CFArrayGetValueAtIndex: <>
+ 2031 			printf: <>
+ 2032 			CFStringCompareWithOptions: <>
+ 2033 			CFSTR: <>
+ 2034 			CFRangeMake: <>
+ 2035 			strlcpy: <>
+ 2036 			snprintf: <>
+ 2037 			getpass: <>
+ 2038 			memset: <>
+ 2039 			strlen: <>
+ 2040 			exit: <>
+ 2041 			verify: <>
+ 2042 			CFEqual: <>
+ 2043 			ODRecordChangePassword: <>
+ 2044 		pam_passwd: int (), <./passwd.tproj/pam_passwd.c 36>
+ 2045 			pam_start: <>
+ 2046 			pam_authenticate: <>
+ 2047 			pam_acct_mgmt: <>
+ 2048 			printf: <>
+ 2049 			pam_chauthtok: <>
+ 2050 			pam_setcred: <>
+ 2051 			pam_open_session: <>
+ 2052 			pam_close_session: <>
+ 2053 			fprintf: <>
+ 2054 			pam_strerror: <>
+ 2055 			pam_end: <>
+ 2056 		setvbuf: <>
+ 2057 		open_datafile: void (), <./sadc.tproj/sadc.c 238>
+ 2058 			fopen: <>
+ 2059 			fprintf: <>
+ 2060 			exit_usage: void (), <./sadc.tproj/sadc.c 231>
+ 2061 				fprintf: <>
+ 2062 				exit: <>
+ 2063 		write_record_hdr: void (), <./sadc.tproj/sadc.c 257>
+ 2064 			fwrite: <>
+ 2065 			fprintf: <>
+ 2066 			exit: <>
+ 2067 			fflush: <>
+ 2068 		get_all_stats: void (), <./sadc.tproj/sadc.c 716>
+ 2069 			get_drivestat_sample: void (), <./sadc.tproj/sadc.c 333>
+ 2070 				get_ndrives: int (), <./sadc.tproj/sadc.c 653>
+ 2071 					IOServiceMatching: <>
+ 2072 					CFDictionaryAddValue: <>
+ 2073 					CFSTR: <>
+ 2074 					IOServiceGetMatchingServices: <>
+ 2075 					IOIteratorNext: <>
+ 2076 					IORegistryEntryGetParentEntry: <>
+ 2077 					IOObjectRelease: <>
+ 2078 					IOObjectConformsTo: <>
+ 2079 				malloc: <>
+ 2080 				bzero: <>
+ 2081 				IOServiceMatching: <>
+ 2082 				CFDictionaryAddValue: <>
+ 2083 				CFSTR: <>
+ 2084 				IOServiceGetMatchingServices: <>
+ 2085 				IOIteratorNext: <>
+ 2086 				record_device: int (), <./sadc.tproj/sadc.c 419>
+ 2087 					IORegistryEntryGetParentEntry: <>
+ 2088 					IOObjectConformsTo: <>
+ 2089 					bzero: <>
+ 2090 					IORegistryEntryGetPath: <>
+ 2091 					IORegistryEntryCreateCFProperties: <>
+ 2092 					CFDictionaryGetValue: <>
+ 2093 					CFSTR: <>
+ 2094 					CFStringGetCString: <>
+ 2095 					CFNumberGetValue: <>
+ 2096 					CFRelease: <>
+ 2097 					check_device_path: int (), <./sadc.tproj/sadc.c 737>
+ 2098 						malloc: <>
+ 2099 						bzero: <>
+ 2100 						strcmp: 32
+ 2101 						strcpy: <>
+ 2102 						write_record_hdr: 2063
+ 2103 						write_record_data: void (), <./sadc.tproj/sadc.c 273>
+ 2104 							fwrite: <>
+ 2105 							fprintf: <>
+ 2106 							exit: <>
+ 2107 							fflush: <>
+ 2108 						realloc: <>
+ 2109 					IOObjectRelease: <>
+ 2110 				IOObjectRelease: <>
+ 2111 				write_record_hdr: 2063
+ 2112 				write_record_data: 2103
+ 2113 				free: <>
+ 2114 			get_netstat_sample: void (), <./sadc.tproj/sadc.c 823>
+ 2115 				malloc: <>
+ 2116 				fprintf: <>
+ 2117 				bzero: <>
+ 2118 				getifaddrs: <>
+ 2119 				strncmp: 770
+ 2120 				snprintf: <>
+ 2121 				realloc: <>
+ 2122 				strncpy: <>
+ 2123 				write_record_hdr: 2063
+ 2124 				write_record_data: 2103
+ 2125 			get_vmstat_sample: void (), <./sadc.tproj/sadc.c 291>
+ 2126 				error: 19
+ 2127 				host_statistics: <>
+ 2128 				fprintf: <>
+ 2129 				mach_error_string: <>
+ 2130 				exit: <>
+ 2131 				write_record_hdr: 2063
+ 2132 				write_record_data: 2103
+ 2133 			get_cpu_sample: void (), <./sadc.tproj/sadc.c 312>
+ 2134 				error: 19
+ 2135 				host_statistics: <>
+ 2136 				fprintf: <>
+ 2137 				mach_error_string: <>
+ 2138 				exit: <>
+ 2139 				write_record_hdr: 2063
+ 2140 				write_record_data: 2103
+ 2141 		gmtime: <>
+ 2142 		task_threads: <>
+ 2143 		thread_policy_set: <>
+ 2144 		task_suspend: <>
+ 2145 		task_resume: <>
+ 2146 		badlogin: void (), <./login.tproj/login.c 1407>
+ 2147 		bail: <>
+ 2148 		timedout: void (), <./login.tproj/login.c 1342>
+ 2149 		getpriority: <>
+ 2150 		setproctitle: <>
+ 2151 		login_getclass: <>
+ 2152 		login_getcapstr: <>
+ 2153 		login_getcapnum: <>
+ 2154 		login_close: <>
+ 2155 		audit_set_terminal_id: <>
+ 2156 		au_login_fail: void (), <./login.tproj/login_audit.c 139>
+ 2157 			getpid: <>
+ 2158 			auditon: <>
+ 2159 			errx: <>
+ 2160 			au_open: <>
+ 2161 			au_to_subject32_ex: <>
+ 2162 			geteuid: <>
+ 2163 			getegid: <>
+ 2164 			au_write: <>
+ 2165 			au_to_text: <>
+ 2166 			au_to_return32: <>
+ 2167 			au_close: <>
+ 2168 		S_ISCHR: <>
+ 2169 		getloginname: char * (), <./login.tproj/login.c 1228>
+ 2170 		getlastlogxbyname: <>
+ 2171 		pam_start: <>
+ 2172 		pam_syslog: void (), <./login.tproj/login.c 1462>
+ 2173 		pam_set_item: <>
+ 2174 		auth_pam: int (), <./login.tproj/login.c 1070>
+ 2175 		memset: <>
+ 2176 		rootterm: int (), <./login.tproj/login.c 1265>
+ 2177 		refused: void (), <./login.tproj/login.c 1442>
+ 2178 		pam_cleanup: void (), <./login.tproj/login.c 1471>
+ 2179 		endpwent: <>
+ 2180 		checknologin: <>
+ 2181 		au_login_success: void (), <./login.tproj/login_audit.c 65>
+ 2182 			getpid: <>
+ 2183 			auditon: <>
+ 2184 			errx: <>
+ 2185 			getaudit_addr: <>
+ 2186 			err: <>
+ 2187 			memcpy: <>
+ 2188 			au_user_mask: <>
+ 2189 			setaudit_addr: <>
+ 2190 			asprintf: <>
+ 2191 			setenv: <>
+ 2192 			free: <>
+ 2193 			au_open: <>
+ 2194 			au_to_subject32_ex: <>
+ 2195 			geteuid: <>
+ 2196 			getegid: <>
+ 2197 			au_write: <>
+ 2198 			au_to_return32: <>
+ 2199 			au_close: <>
+ 2200 		login_getpwclass: <>
+ 2201 		login_getuserclass: <>
+ 2202 		login_getcapbool: <>
+ 2203 		chdir: <>
+ 2204 		dolastlog: <>
+ 2205 		login_fbtab: <>
+ 2206 		chflags: <>
+ 2207 		isdialuptty: <>
+ 2208 		setenv: <>
+ 2209 		setusercontext: <>
+ 2210 		pam_setcred: <>
+ 2211 		pam_open_session: <>
+ 2212 		handle_sighup: void (), <./login.tproj/login.c 1313>
+ 2213 		export_pam_environment: void (), <./login.tproj/login.c 1163>
+ 2214 		pam_end: <>
+ 2215 		setlogin: <>
+ 2216 		setgid: <>
+ 2217 		initgroups: <>
+ 2218 		stypeof: <>
+ 2219 		task_get_bootstrap_port: <>
+ 2220 		bootstrap_strerror: <>
+ 2221 		task_set_exception_ports: <>
+ 2222 		motd: int (), <./login.tproj/login.c 1287>
+ 2223 		asprintf: <>
+ 2224 		execvp: <>
+ 2225 		execlp: <>
+ 2226 		pam_authenticate: <>
+ 2227 		pam_get_item: <>
+ 2228 		pam_acct_mgmt: <>
+ 2229 		pam_chauthtok: <>
+ 2230 		pam_getenvlist: <>
+ 2231 		export: int (), <./login.tproj/login.c 1186>
+ 2232 		getchar: <>
+ 2233 		getttynam: <>
+ 2234 		sigint: void (), <./login.tproj/login.c 1278>
+ 2235 		fgetc: <>
+ 2236 		putchar: <>
+ 2237 		ferror: <>
+ 2238 		getpgid: <>
+ 2239 		getpgrp: <>
+ 2240 		read: <>
+ 2241 		getlastlogx: <>
+ 2242 		pam_strerror: <>
+ 2243 		pam_close_session: <>
+ 2244 		audit_logout: void (), <./login.tproj/login_audit.c 196>
+ 2245 			getpid: <>
+ 2246 			auditon: <>
+ 2247 			errx: <>
+ 2248 			au_open: <>
+ 2249 			au_to_subject32_ex: <>
+ 2250 			geteuid: <>
+ 2251 			getegid: <>
+ 2252 			au_write: <>
+ 2253 			au_to_return32: <>
+ 2254 			au_close: <>
+ 2255 		fputc: <>
+ 2256 		is_safeboot: int (), <./dirhelper.tproj/dirhelper.c 291>
+ 2257 			sysctlbyname: <>
+ 2258 		clean_directories: void (), <./dirhelper.tproj/dirhelper.c 401>
+ 2259 			mach_timebase_info: <>
+ 2260 			mach_absolute_time: <>
+ 2261 			fopen: <>
+ 2262 			fprintf: <>
+ 2263 			pthread_create: <>
+ 2264 			clean_thread: void * (), <./dirhelper.tproj/dirhelper.c 303>
+ 2265 				getenv: <>
+ 2266 				strtol: <>
+ 2267 				gettimeofday: <>
+ 2268 				asl_log: <>
+ 2269 				sysctlbyname: <>
+ 2270 				strerror: 314
+ 2271 				is_root_wheel_directory: <>
+ 2272 				chroot: <>
+ 2273 				chdir: <>
+ 2274 				opendir: <>
+ 2275 				readdir: <>
+ 2276 				strcmp: 32
+ 2277 				snprintf: <>
+ 2278 				is_directory_get_owner_group: <>
+ 2279 				pthread_setugid_np: <>
+ 2280 				is_directory: <>
+ 2281 				clean_files_older_than: void (), <./dirhelper.tproj/dirhelper.c 194>
+ 2282 					fts_open: <>
+ 2283 					asl_log: <>
+ 2284 					fts_read: <>
+ 2285 					unlink: <>
+ 2286 					S_ISREG: <>
+ 2287 					open: <>
+ 2288 					flock: <>
+ 2289 					fstat: <>
+ 2290 					close: <>
+ 2291 					rmdir: <>
+ 2292 					strerror: 314
+ 2293 					fts_close: <>
+ 2294 				closedir: <>
+ 2295 			pthread_join: <>
+ 2296 			asl_log: <>
+ 2297 			strerror: 314
+ 2298 			fclose: <>
+ 2299 		launch_data_new_string: <>
+ 2300 		launch_msg: <>
+ 2301 		launch_data_get_type: <>
+ 2302 		asl_log: <>
+ 2303 		launch_data_dict_lookup: <>
+ 2304 		launch_data_get_integer: <>
+ 2305 		launch_data_get_machport: <>
+ 2306 		mach_port_insert_right: <>
+ 2307 		pthread_create: <>
+ 2308 		idle_thread: void * (), <./dirhelper.tproj/dirhelper.c 176>
+ 2309 			gettimeofday: <>
+ 2310 			delta: 1794
+ 2311 			sleep: <>
+ 2312 		mach_port_get_attributes: <>
+ 2313 		mach_msg_server: <>
+ 2314 		MACH_RCV_TRAILER_ELEMENTS: <>
+ 2315 		MACH_RCV_TRAILER_TYPE: <>
+ 2316 		get_screenwidth: 815
+ 2317 		atof: <>
+ 2318 		sigaction: <>
+ 2319 		ReadSharedCacheMap: int (), <./fs_usage.tproj/fs_usage.c 4370>
+ 2320 			bzero: <>
+ 2321 			fopen: <>
+ 2322 			fgets: <>
+ 2323 			strncmp: 770
+ 2324 			strlen: <>
+ 2325 			strrchr: <>
+ 2326 			strncpy: <>
+ 2327 			malloc: <>
+ 2328 			strcpy: <>
+ 2329 			scanline: int (), <./fs_usage.tproj/fs_usage.c 4352>
+ 2330 				strsep: <>
+ 2331 			strtoull: <>
+ 2332 			printf: <>
+ 2333 			fclose: <>
+ 2334 		SortFrameworkAddresses: void (), <./fs_usage.tproj/fs_usage.c 4513>
+ 2335 			qsort: <>
+ 2336 			compareFrameworkAddress: int (), <./fs_usage.tproj/fs_usage.c 4341>
+ 2337 		cache_disk_names: 1890
+ 2338 		init_arguments_buffer: void (), <./fs_usage.tproj/fs_usage.c 4948>
+ 2339 			sysctl: <>
+ 2340 			malloc: <>
+ 2341 		init_tables: void (), <./fs_usage.tproj/fs_usage.c 1040>
+ 2342 			BSC_INDEX: <>
+ 2343 			printf: <>
+ 2344 			filemgr_index: int (), <./fs_usage.tproj/fs_usage.c 1031>
+ 2345 		IORegistryEntryFromPath: <>
+ 2346 		PrintOFVariables: void (), <./nvram.tproj/nvram.c 510>
+ 2347 			IORegistryEntryCreateCFProperties: <>
+ 2348 			errx: <>
+ 2349 			mach_error_string: <>
+ 2350 			CFPropertyListCreateXMLData: <>
+ 2351 			fwrite: <>
+ 2352 			CFDataGetBytePtr: <>
+ 2353 			CFDataGetLength: <>
+ 2354 			CFRelease: <>
+ 2355 			CFDictionaryApplyFunction: <>
+ 2356 			PrintOFVariable: void (), <./nvram.tproj/nvram.c 545>
+ 2357 				CFStringGetLength: <>
+ 2358 				malloc: <>
+ 2359 				CFStringGetCString: <>
+ 2360 				warnx: <>
+ 2361 				CFGetTypeID: <>
+ 2362 				CFBooleanGetTypeID: <>
+ 2363 				CFBooleanGetValue: <>
+ 2364 				CFNumberGetTypeID: <>
+ 2365 				CFNumberGetValue: <>
+ 2366 				sprintf: <>
+ 2367 				CFStringGetTypeID: <>
+ 2368 				CFDataGetTypeID: <>
+ 2369 				CFDataGetLength: <>
+ 2370 				CFDataGetBytePtr: <>
+ 2371 				isprint: <>
+ 2372 				printf: <>
+ 2373 				free: <>
+ 2374 		ParseFile: void (), <./nvram.tproj/nvram.c 176>
+ 2375 			ParseXMLFile: void (), <./nvram.tproj/nvram.c 297>
+ 2376 				CFStringCreateWithCString: <>
+ 2377 				errx: <>
+ 2378 				CFURLCreateWithFileSystemPath: <>
+ 2379 				CFRelease: <>
+ 2380 				CFURLCreateDataAndPropertiesFromResource: <>
+ 2381 				CFPropertyListCreateFromXMLData: <>
+ 2382 				CFStringGetCStringPtr: <>
+ 2383 				CFDictionaryApplyFunction: <>
+ 2384 				SetOFVariableFromFile: void (), <./nvram.tproj/nvram.c 692>
+ 2385 					IORegistryEntrySetCFProperty: <>
+ 2386 					CFStringGetLength: <>
+ 2387 					malloc: <>
+ 2388 					CFStringGetCString: <>
+ 2389 					warnx: <>
+ 2390 					errx: <>
+ 2391 					mach_error_string: <>
+ 2392 			fopen: <>
+ 2393 			err: <>
+ 2394 			getc: <>
+ 2395 			errx: <>
+ 2396 			isspace: <>
+ 2397 			warnx: <>
+ 2398 			SetOFVariable: kern_return_t (), <./nvram.tproj/nvram.c 431>
+ 2399 				CFStringCreateWithCString: <>
+ 2400 				errx: <>
+ 2401 				IORegistryEntryCreateCFProperty: <>
+ 2402 				CFGetTypeID: <>
+ 2403 				CFRelease: <>
+ 2404 				ConvertValueToCFTypeRef: CFTypeRef (), <./nvram.tproj/nvram.c 655>
+ 2405 					CFBooleanGetTypeID: <>
+ 2406 					strcmp: 32
+ 2407 					CFNumberGetTypeID: <>
+ 2408 					strtol: <>
+ 2409 					CFNumberCreate: <>
+ 2410 					CFStringGetTypeID: <>
+ 2411 					CFStringCreateWithCString: <>
+ 2412 					CFDataGetTypeID: <>
+ 2413 					strlen: <>
+ 2414 					ishexnumber: <>
+ 2415 					toupper: <>
+ 2416 					CFDataCreateWithBytesNoCopy: <>
+ 2417 				IORegistryEntrySetCFProperty: <>
+ 2418 				CFDataGetTypeID: <>
+ 2419 				CFStringGetTypeID: <>
+ 2420 				CFNumberGetTypeID: <>
+ 2421 				CFBooleanGetTypeID: <>
+ 2422 			mach_error_string: <>
+ 2423 		UsageMessage: void (), <./nvram.tproj/nvram.c 137>
+ 2424 			warnx: <>
+ 2425 			printf: <>
+ 2426 			exit: <>
+ 2427 		DeleteOFVariable: void (), <./nvram.tproj/nvram.c 496>
+ 2428 			SetOFVariable: 2398
+ 2429 		ClearOFVariables: void (), <./nvram.tproj/nvram.c 627>
+ 2430 			IORegistryEntryCreateCFProperties: <>
+ 2431 			errx: <>
+ 2432 			mach_error_string: <>
+ 2433 			CFDictionaryApplyFunction: <>
+ 2434 			ClearOFVariable: void (), <./nvram.tproj/nvram.c 641>
+ 2435 				IORegistryEntrySetCFProperty: <>
+ 2436 				CFSTR: <>
+ 2437 				errx: <>
+ 2438 				mach_error_string: <>
+ 2439 			CFRelease: <>
+ 2440 		SetOrGetOFVariable: void (), <./nvram.tproj/nvram.c 360>
+ 2441 			SetOFVariable: 2398
+ 2442 			NVRamSyncNow: void (), <./nvram.tproj/nvram.c 501>
+ 2443 				SetOFVariable: 2398
+ 2444 			errx: <>
+ 2445 			mach_error_string: <>
+ 2446 			GetOFVariable: kern_return_t (), <./nvram.tproj/nvram.c 411>
+ 2447 				CFStringCreateWithCString: <>
+ 2448 				errx: <>
+ 2449 				IORegistryEntryCreateCFProperty: <>
+ 2450 			PrintOFVariable: 2356
+ 2451 			CFRelease: <>
+ 2452 		IOObjectRelease: <>
+ 2453 		get: void (), <./makekey.tproj/makekey.c 94>
+ 2454 		RELINQUISH_PRIVS_ROOT: <>
+ 2455 		sscanf: <>
+ 2456 		perr: 1273
+ 2457 		opendir: <>
+ 2458 		readdir: <>
+ 2459 		S_ISREG: <>
+ 2460 		run_file: void (), <./atrun.tproj/atrun.c 113>
+ 2461 			chmod: <>
+ 2462 			perr: 1273
+ 2463 			fork: <>
+ 2464 			setsid: <>
+ 2465 			syslog: <>
+ 2466 			getpwuid: <>
+ 2467 			exit: <>
+ 2468 			fopen: <>
+ 2469 			time: <>
+ 2470 			dup: <>
+ 2471 			fileno: <>
+ 2472 			fstat: <>
+ 2473 			lstat: <>
+ 2474 			S_ISLNK: <>
+ 2475 			fcntl: <>
+ 2476 			asprintf: <>
+ 2477 			fscanf: <>
+ 2478 			free: <>
+ 2479 			fclose: <>
+ 2480 			chdir: <>
+ 2481 			open: <>
+ 2482 			write_string: int (), <./atrun.tproj/atrun.c 92>
+ 2483 				write: <>
+ 2484 				strlen: <>
+ 2485 			close: <>
+ 2486 			lseek: <>
+ 2487 			nice: <>
+ 2488 			tolower: <>
+ 2489 			setgid: <>
+ 2490 			setegid: <>
+ 2491 			initgroups: <>
+ 2492 			setlogin: <>
+ 2493 			setuid: <>
+ 2494 			seteuid: <>
+ 2495 			execle: <>
+ 2496 			waitpid: <>
+ 2497 			stat: <>
+ 2498 			unlink: <>
+ 2499 			execl: <>
+ 2500 		getloadavg: <>
+ 2501 		warning: char *, <./vifs.tproj/vifs.c 38>
+ 2502 		flock: <>
+ 2503 		WIFSTOPPED: <>
+ 2504 		raise: <>
+ 2505 		WSTOPSIG: <>
+ 2506 		WIFEXITED: <>
+ 2507 		WEXITSTATUS: 458
+ 2508 		debuginit: void (), <./sysctl.tproj/sysctl.c 584>
+ 2509 			sysctl: <>
+ 2510 		vfsinit: void (), <./sysctl.tproj/sysctl.c 609>
+ 2511 			sysctl: <>
+ 2512 			malloc: <>
+ 2513 			memset: <>
+ 2514 			perror: <>
+ 2515 			free: <>
+ 2516 			strcat: <>
+ 2517 			strlen: <>
+ 2518 		listall: void (), <./sysctl.tproj/sysctl.c 221>
+ 2519 			strcpy: <>
+ 2520 			strlen: <>
+ 2521 			old_parse: void (), <./sysctl.tproj/sysctl.c 247>
+ 2522 				snprintf: <>
+ 2523 				strchr: <>
+ 2524 				fprintf: <>
+ 2525 				exit: <>
+ 2526 				isspace: <>
+ 2527 				strlen: <>
+ 2528 				findname: int (), <./sysctl.tproj/sysctl.c 653>
+ 2529 					strlen: <>
+ 2530 					strsep: <>
+ 2531 					fprintf: <>
+ 2532 					strcmp: 32
+ 2533 				vfsinit: 2510
+ 2534 				debuginit: 2508
+ 2535 				listall: 2518
+ 2536 				sysctl: <>
+ 2537 				getloadavg: <>
+ 2538 				strerror: 314
+ 2539 				perror: <>
+ 2540 				strtoul: <>
+ 2541 				strtol: <>
+ 2542 				strtoq: <>
+ 2543 				ctime: <>
+ 2544 				devname: <>
+ 2545 		sysctl_all: int (), <./sysctl.tproj/sysctl.c 1186>
+ 2546 			memcpy: <>
+ 2547 			sysctl: <>
+ 2548 			err: <>
+ 2549 			show_var: int (), <./sysctl.tproj/sysctl.c 1006>
+ 2550 				memcpy: <>
+ 2551 				sysctl: <>
+ 2552 				err: <>
+ 2553 				malloc: <>
+ 2554 				fwrite: <>
+ 2555 				printf: <>
+ 2556 				strcmp: 32
+ 2557 				S_clockinfo: int (), <./sysctl.tproj/sysctl.c 843>
+ 2558 					warnx: <>
+ 2559 					printf: <>
+ 2560 				S_timeval: int (), <./sysctl.tproj/sysctl.c 874>
+ 2561 					warnx: <>
+ 2562 					printf: <>
+ 2563 					strdup: <>
+ 2564 					ctime: <>
+ 2565 					fputs: <>
+ 2566 					free: <>
+ 2567 				S_loadavg: int (), <./sysctl.tproj/sysctl.c 858>
+ 2568 					warnx: <>
+ 2569 					printf: <>
+ 2570 				S_xswusage: int (), <./sysctl.tproj/sysctl.c 898>
+ 2571 					warnx: <>
+ 2572 					fprintf: <>
+ 2573 				T_dev_t: int (), <./sysctl.tproj/sysctl.c 916>
+ 2574 					warnx: <>
+ 2575 					minor: <>
+ 2576 					printf: <>
+ 2577 					major: <>
+ 2578 				free: <>
+ 2579 			putchar: <>
+ 2580 		parse: void (), <./sysctl.tproj/sysctl.c 705>
+ 2581 			snprintf: <>
+ 2582 			errx: <>
+ 2583 			strchr: <>
+ 2584 			isspace: <>
+ 2585 			strlen: <>
+ 2586 			usage: 5
+ 2587 			name2oid: int (), <./sysctl.tproj/sysctl.c 945>
+ 2588 				sysctl: <>
+ 2589 				strlen: <>
+ 2590 			old_parse: 2521
+ 2591 			oidfmt: int (), <./sysctl.tproj/sysctl.c 963>
+ 2592 				memcpy: <>
+ 2593 				sysctl: <>
+ 2594 				err: <>
+ 2595 				strcpy: <>
+ 2596 			sysctl_all: 2545
+ 2597 			show_var: 2549
+ 2598 			putchar: <>
+ 2599 			strtoul: <>
+ 2600 			strtol: <>
+ 2601 			strtoq: <>
+ 2602 			sysctl: <>
+ 2603 			warn: <>
+ 2604 			printf: <>
+ 2605 		INITIALIZE: <>
+ 2606 		setlocale: <>
+ 2607 		bindtextdomain: <>
+ 2608 		textdomain: <>
+ 2609 		isleap: <>
+ 2610 		show: void (), <./ac.tproj/ac.c 289>
+ 2611 		abbr: char * (), <./zdump.tproj/zdump.c 390>
+ 2612 		delta: 1794
+ 2613 		hunt: time_t (), <./zdump.tproj/zdump.c 307>
+ 2614 			localtime: <>
+ 2615 			strncpy: <>
+ 2616 			abbr: 2611
+ 2617 			delta: 1794
+ 2618 			strcmp: 32
+ 2619 			show: void (), <./ac.tproj/ac.c 289>
+ 2620 		setgroup: <>
+ 2621 		setmode: <>
+ 2622 		getmode: <>
+ 2623 		setuser: <>
+ 2624 		setboundaries: <>
+ 2625 		adjleap: <>
+ 2626 		associate: <>
+ 2627 		outzone: <>
+ 2628 		eat: <>
+ 2629 		dolink: <>
+ 2630 		setlinebuf: <>
+ 2631 		host_page_size: <>
+ 2632 		snapshot: void (), <./vm_stat.tproj/vm_stat.c 113>
+ 2633 			get_stats: void (), <./vm_stat.tproj/vm_stat.c 225>
+ 2634 				host_statistics64: <>
+ 2635 				fprintf: <>
+ 2636 				exit: <>
+ 2637 			printf: <>
+ 2638 			sspstat: void (), <./vm_stat.tproj/vm_stat.c 141>
+ 2639 				printf: <>
+ 2640 		print_stats: void (), <./vm_stat.tproj/vm_stat.c 169>
+ 2641 			banner: void (), <./vm_stat.tproj/vm_stat.c 147>
+ 2642 				get_stats: 2633
+ 2643 				printf: <>
+ 2644 				bzero: <>
+ 2645 			get_stats: 2633
+ 2646 			pstat: void (), <./vm_stat.tproj/vm_stat.c 196>
+ 2647 				snprintf: <>
+ 2648 				fputs: <>
+ 2649 				putchar: <>
+ 2650 			putchar: <>

@@ -1,0 +1,922 @@
+    1 	main: int (), <./iodisplayregistry.c 51>
+    2 		IOMasterPort: <>
+    3 		IOPMFindADBController: io_connect_t (), <./adb.subproj/IOADBLib.c 33>
+    4 			IORegistryCreateIterator: <>
+    5 			IOIteratorNext: <>
+    6 			IOObjectConformsTo: <>
+    7 			IOObjectRelease: <>
+    8 			IORegistryDisposeEnumerator: <>
+    9 			IOServiceOpen: <>
+   10 			mach_task_self: <>
+   11 		printf: <>
+   12 		IOPMClaimADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 66>
+   13 			IOConnectCallScalarMethod: <>
+   14 		IOPMReleaseADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 82>
+   15 			IOConnectCallScalarMethod: <>
+   16 		IOPMReadADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 99>
+   17 			IOConnectCallMethod: <>
+   18 			arrayCnt: <>
+   19 		IOPMWriteADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 124>
+   20 			IOConnectCallMethod: <>
+   21 			arrayCnt: <>
+   22 		assert: <>
+   23 		notifyTest: void (), <./ionotify.c 70>
+   24 			assert: <>
+   25 			IONotificationPortCreate: <>
+   26 			IOServiceAddMatchingNotification: <>
+   27 			IOServiceMatching: <>
+   28 			ServiceArrivalCallback: void (), <./ionotifyCB.c 56>
+   29 				IOIteratorNext: <>
+   30 				assert: <>
+   31 				IORegistryEntryGetName: <>
+   32 				printf: <>
+   33 				IOCreateDisplayInfoDictionary: <>
+   34 				CFShow: <>
+   35 				CFRelease: <>
+   36 				IORegistryEntryGetPath: <>
+   37 				IOServiceAddInterestNotification: <>
+   38 				ServiceInterestCallback: void (), <./ionotifyCB.c 41>
+   39 					assert: <>
+   40 					IORegistryEntryGetName: <>
+   41 					printf: <>
+   42 				IOObjectRelease: <>
+   43 			printf: <>
+   44 			IORegistryEntryFromPath: <>
+   45 			IOServiceAddInterestNotification: <>
+   46 			ServiceInterestCallback: 38
+   47 			CFRunLoopAddSource: <>
+   48 			CFRunLoopGetCurrent: <>
+   49 			IONotificationPortGetRunLoopSource: <>
+   50 			CFRunLoopRun: <>
+   51 			IOObjectRelease: <>
+   52 			mach_port_allocate: <>
+   53 			mach_task_self: <>
+   54 			IOServiceAddNotification: <>
+   55 			dumpIter: void (), <./Tests.c 418>
+   56 				IOIteratorNext: <>
+   57 				assert: <>
+   58 				IORegistryEntryGetName: <>
+   59 				printf: <>
+   60 				IORegistryEntryGetPath: <>
+   61 				IOServiceAddInterestNotificationMsg: <>
+   62 				IOObjectRelease: <>
+   63 			IOServiceAddInterestNotificationMsg: <>
+   64 			mach_msg: <>
+   65 			OSGetNotificationFromMessage: <>
+   66 			IORegistryEntryGetName: <>
+   67 		exit: <>
+   68 		IOCatalogueTerminate: <>
+   69 		getClockFrequency: void (), <./Tests.c 79>
+   70 			properties: void (), <./iodisplayregistry.c 256>
+   71 				indent: void (), <./iodisplayregistry.c 291>
+   72 					printf: <>
+   73 				printf: <>
+   74 				IORegistryEntryCreateCFProperties: <>
+   75 				assert: <>
+   76 				CFDictionaryGetTypeID: <>
+   77 				CFGetTypeID: <>
+   78 				CFDictionaryApplyFunction: <>
+   79 				printEntry: void (), <./iodisplayregistry.c 216>
+   80 					indent: 71
+   81 					printf: <>
+   82 					printCFString: void (), <./iodisplayregistry.c 200>
+   83 						CFStringGetMaximumSizeForEncoding: <>
+   84 						CFStringGetLength: <>
+   85 						CFStringGetSystemEncoding: <>
+   86 						malloc: <>
+   87 						CFStringGetCString: <>
+   88 						printf: <>
+   89 						free: <>
+   90 					IOCFSerialize: CFDataRef (), <./IOCFSerialize.c 729>
+   91 						CFDataCreateMutable: <>
+   92 						assert: <>
+   93 						CFDictionaryCreateMutable: <>
+   94 						DoIdrefScan: Boolean (), <./IOCFSerialize.c 617>
+   95 							assert: <>
+   96 							recordObjectInIDRefDictionary: void (), <./IOCFSerialize.c 127>
+   97 								idRefDictionaryForObject: CFMutableDictionaryRef (), <./IOCFSerialize.c 98>
+   98 									CFNullGetTypeID: <>
+   99 									CFGetTypeID: <>
+  100 									CFDictionaryGetTypeID: <>
+  101 									CFStringGetTypeID: <>
+  102 									CFArrayGetTypeID: <>
+  103 									CFNumberGetTypeID: <>
+  104 									CFDataGetTypeID: <>
+  105 									CFSetGetTypeID: <>
+  106 								CFDictionaryGetValue: <>
+  107 								CFDictionaryAddValue: <>
+  108 								CFDictionarySetValue: <>
+  109 							CFGetTypeID: <>
+  110 							CFDictionaryGetTypeID: <>
+  111 							CFDictionaryGetCount: <>
+  112 							malloc: <>
+  113 							CFDictionaryGetKeysAndValues: <>
+  114 							DoIdrefScan: 94
+  115 							free: <>
+  116 							CFArrayGetTypeID: <>
+  117 							CFArrayGetCount: <>
+  118 							CFArrayGetValueAtIndex: <>
+  119 							CFSetGetTypeID: <>
+  120 							CFSetGetCount: <>
+  121 							CFSetGetValues: <>
+  122 						DoCFSerialize: Boolean (), <./IOCFSerialize.c 687>
+  123 							assert: <>
+  124 							CFGetTypeID: <>
+  125 							CFDictionaryGetTypeID: <>
+  126 							DoCFSerializeDictionary: Boolean (), <./IOCFSerialize.c 578>
+  127 								previouslySerialized: Boolean (), <./IOCFSerialize.c 167>
+  128 									CFNullGetTypeID: <>
+  129 									idRefDictionaryForObject: 97
+  130 									CFDictionaryGetValue: <>
+  131 									CFGetTypeID: <>
+  132 									CFBooleanGetTypeID: <>
+  133 									CFNumberGetTypeID: <>
+  134 									CFNumberGetValue: <>
+  135 									snprintf: <>
+  136 									getTagString: const char * (), <./IOCFSerialize.c 79>
+  137 										assert: <>
+  138 										CFGetTypeID: <>
+  139 										CFStringGetTypeID: <>
+  140 										CFNumberGetTypeID: <>
+  141 										CFDataGetTypeID: <>
+  142 										CFDictionaryGetTypeID: <>
+  143 										CFArrayGetTypeID: <>
+  144 										CFSetGetTypeID: <>
+  145 									addString: Boolean (), <./IOCFSerialize.c 70>
+  146 										strlen: <>
+  147 										CFDataAppendBytes: <>
+  148 								addStartTag: Boolean (), <./IOCFSerialize.c 225>
+  149 									idRefDictionaryForObject: 97
+  150 									CFDictionaryGetValue: <>
+  151 									CFNumberCreate: <>
+  152 									assert: <>
+  153 									CFDictionarySetValue: <>
+  154 									CFRelease: <>
+  155 									snprintf: <>
+  156 									getTagString: 136
+  157 									addString: 145
+  158 								CFDictionaryGetCount: <>
+  159 								malloc: <>
+  160 								CFDictionaryGetKeysAndValues: <>
+  161 								DoCFSerializeKey: Boolean (), <./IOCFSerialize.c 410>
+  162 									addString: 145
+  163 									CFStringCreateExternalRepresentation: <>
+  164 									CFDataGetLength: <>
+  165 									CFDataGetBytePtr: <>
+  166 									malloc: <>
+  167 									bcopy: <>
+  168 									syslog: <>
+  169 									free: <>
+  170 									addChar: Boolean (), <./IOCFSerialize.c 62>
+  171 										CFDataAppendBytes: <>
+  172 									CFRelease: <>
+  173 								DoCFSerialize: 122
+  174 								free: <>
+  175 								addEndTag: Boolean (), <./IOCFSerialize.c 276>
+  176 									snprintf: <>
+  177 									getTagString: 136
+  178 									addString: 145
+  179 							CFStringGetTypeID: <>
+  180 							DoCFSerializeString: Boolean (), <./IOCFSerialize.c 350>
+  181 								previouslySerialized: 127
+  182 								addStartTag: 148
+  183 								CFStringCreateExternalRepresentation: <>
+  184 								CFDataGetLength: <>
+  185 								CFDataGetBytePtr: <>
+  186 								malloc: <>
+  187 								bcopy: <>
+  188 								syslog: <>
+  189 								free: <>
+  190 								addString: 145
+  191 								addChar: 170
+  192 								CFRelease: <>
+  193 								addEndTag: 175
+  194 							CFArrayGetTypeID: <>
+  195 							DoCFSerializeArray: Boolean (), <./IOCFSerialize.c 525>
+  196 								previouslySerialized: 127
+  197 								addStartTag: 148
+  198 								CFArrayGetCount: <>
+  199 								DoCFSerialize: 122
+  200 								CFArrayGetValueAtIndex: <>
+  201 								addEndTag: 175
+  202 							CFNumberGetTypeID: <>
+  203 							DoCFSerializeNumber: Boolean (), <./IOCFSerialize.c 287>
+  204 								previouslySerialized: 127
+  205 								CFNumberGetValue: <>
+  206 								CFNumberGetType: <>
+  207 								snprintf: <>
+  208 								addStartTag: 148
+  209 								addString: 145
+  210 								addEndTag: 175
+  211 							CFDataGetTypeID: <>
+  212 							DoCFSerializeData: Boolean (), <./IOCFSerialize.c 471>
+  213 								previouslySerialized: 127
+  214 								CFDataGetLength: <>
+  215 								CFDataGetBytePtr: <>
+  216 								addStartTag: 148
+  217 								addChar: 170
+  218 								addEndTag: 175
+  219 							CFBooleanGetTypeID: <>
+  220 							DoCFSerializeBoolean: Boolean (), <./IOCFSerialize.c 344>
+  221 								addString: 145
+  222 								CFBooleanGetValue: <>
+  223 							CFSetGetTypeID: <>
+  224 							DoCFSerializeSet: Boolean (), <./IOCFSerialize.c 546>
+  225 								previouslySerialized: 127
+  226 								addStartTag: 148
+  227 								CFSetGetCount: <>
+  228 								malloc: <>
+  229 								CFSetGetValues: <>
+  230 								DoCFSerialize: 122
+  231 								free: <>
+  232 								addEndTag: 175
+  233 							CFStringCreateWithFormat: <>
+  234 							CFSTR: <>
+  235 							CFRelease: <>
+  236 						addChar: 170
+  237 						CFRelease: <>
+  238 					CFDataGetLength: <>
+  239 					CFDataGetBytePtr: <>
+  240 					CFRelease: <>
+  241 					CFCopyDescription: <>
+  242 					CFStringCreateWithFormat: <>
+  243 					CFSTR: <>
+  244 					assert: <>
+  245 				CFRelease: <>
+  246 			assert: <>
+  247 			IORegistryEntryFromPath: <>
+  248 			IORegistryEntryCreateCFProperties: <>
+  249 			CFDictionaryGetValue: <>
+  250 			CFSTR: <>
+  251 			printf: <>
+  252 			CFDataGetBytePtr: <>
+  253 			printDictInt32: void (), <./clockfreq.c 54>
+  254 				printInt32: void (), <./clockfreq.c 40>
+  255 					printf: <>
+  256 					CFStringGetCStringPtr: <>
+  257 					CFDataGetLength: <>
+  258 					CFDataGetBytePtr: <>
+  259 				CFDictionaryGetValue: <>
+  260 			CFRelease: <>
+  261 			IORegistryEntryGetChildIterator: <>
+  262 			IOObjectRelease: <>
+  263 			IOIteratorNext: <>
+  264 			IORegistryEntryCreateCFProperty: <>
+  265 			strcmp: <>
+  266 			IORegistryEntryGetName: <>
+  267 			IORegistryEntryGetProperty: <>
+  268 		NXOpenEventStatus: NXEventHandle (), <./hidsystem.subproj/IOEventStatusAPI.c 62>
+  269 			IOMasterPort: <>
+  270 			IORegistryEntryFromPath: <>
+  271 			IOServiceOpen: <>
+  272 			mach_task_self: <>
+  273 			IOObjectRelease: <>
+  274 		CFSTR: <>
+  275 		IOHIDGetAccelerationWithKey: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 662>
+  276 			IOHIDGetParameter: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 236>
+  277 				IOHIDCopyCFTypeParameter: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 307>
+  278 					IOConnectGetService: <>
+  279 					IORegistryEntryCreateCFProperty: <>
+  280 					CFSTR: <>
+  281 					CFDictionaryGetValue: <>
+  282 					CFRetain: <>
+  283 					CFRelease: <>
+  284 					IOObjectRelease: <>
+  285 				CFGetTypeID: <>
+  286 				CFDataGetTypeID: <>
+  287 				CFDataGetLength: <>
+  288 				bcopy: <>
+  289 				CFDataGetBytePtr: <>
+  290 				CFNumberGetTypeID: <>
+  291 				CFNumberGetByteSize: <>
+  292 				CFNumberGetValue: <>
+  293 				CFRelease: <>
+  294 		sscanf: <>
+  295 		IOHIDSetAccelerationWithKey: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 677>
+  296 			IOHIDSetParameter: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 180>
+  297 				CFNumberCreate: <>
+  298 				IOConnectSetCFProperty: <>
+  299 				CFRelease: <>
+  300 		IOHIDGetMouseAcceleration: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 637>
+  301 			IOHIDGetParameter: 276
+  302 			CFSTR: <>
+  303 		IOHIDSetMouseAcceleration: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 652>
+  304 			IOHIDSetParameter: 296
+  305 			CFSTR: <>
+  306 		TestParams: void (), <./hidsystem.subproj/HIDParamTest.c 61>
+  307 			assert: <>
+  308 			IOHIDSetMouseLocation: <>
+  309 			IOHIDPostEvent: <>
+  310 		OpenEventDriver: io_connect_t (), <./hidsystem.subproj/HIDParamTest.c 33>
+  311 			assert: <>
+  312 			IOServiceGetMatchingServices: <>
+  313 			IOServiceMatching: <>
+  314 			IOIteratorNext: <>
+  315 			IOServiceOpen: <>
+  316 			mach_task_self: <>
+  317 			IOObjectRelease: <>
+  318 		NXEventSystemInfo: NXEventSystemInfoType (), <./hidsystem.subproj/IOEventStatusAPI.c 98>
+  319 			strcmp: <>
+  320 			IOConnectGetService: <>
+  321 			IORegistryEntryCreateCFProperty: <>
+  322 			CFSTR: <>
+  323 			IOObjectRelease: <>
+  324 			CFArrayGetCount: <>
+  325 			CFArrayGetValueAtIndex: <>
+  326 			CFDictionaryGetValue: <>
+  327 			CFNumberGetValue: <>
+  328 			CFRelease: <>
+  329 		NXKeyRepeatInterval: double (), <./hidsystem.subproj/IOEventStatusAPI.c 474>
+  330 			IOHIDGetParameter: 276
+  331 			CFSTR: <>
+  332 			packed_nsecs_to_secs: double (), <./hidsystem.subproj/IOEventStatusAPI.c 56>
+  333 		NXSetKeyRepeatInterval: void (), <./hidsystem.subproj/IOEventStatusAPI.c 467>
+  334 			secs_to_packed_nsecs: void (), <./hidsystem.subproj/IOEventStatusAPI.c 51>
+  335 			IOHIDSetParameter: 296
+  336 			CFSTR: <>
+  337 		NXKeyRepeatThreshold: double (), <./hidsystem.subproj/IOEventStatusAPI.c 495>
+  338 			IOHIDGetParameter: 276
+  339 			CFSTR: <>
+  340 			packed_nsecs_to_secs: double (), <./hidsystem.subproj/IOEventStatusAPI.c 56>
+  341 		NXSetKeyRepeatThreshold: void (), <./hidsystem.subproj/IOEventStatusAPI.c 488>
+  342 			secs_to_packed_nsecs: void (), <./hidsystem.subproj/IOEventStatusAPI.c 51>
+  343 			IOHIDSetParameter: 296
+  344 			CFSTR: <>
+  345 		NXGetMouseScaling: <>
+  346 		NXSetMouseScaling: <>
+  347 		NXAutoDimThreshold: <>
+  348 		NXAutoDimTime: <>
+  349 		NXIdleTime: <>
+  350 		NXAutoDimState: <>
+  351 		NXAutoDimBrightness: <>
+  352 		NXScreenBrightness: <>
+  353 		NXSetAutoDimThreshold: <>
+  354 		NXSetAutoDimBrightness: <>
+  355 		NXSetScreenBrightness: <>
+  356 		NXKeyMappingLength: int (), <./hidsystem.subproj/IOEventStatusAPI.c 522>
+  357 			NXEvGetParameterChar: <>
+  358 			CFSTR: <>
+  359 		malloc: <>
+  360 		NXGetKeyMapping: NXKeyMapping * (), <./hidsystem.subproj/IOEventStatusAPI.c 535>
+  361 			NXEvGetParameterChar: <>
+  362 			CFSTR: <>
+  363 		NXSetKeyMapping: NXKeyMapping * (), <./hidsystem.subproj/IOEventStatusAPI.c 508>
+  364 			NXEvSetParameterChar: inline int (), <./hidsystem.subproj/IOEventStatusAPI.c 345>
+  365 				CFDataCreate: <>
+  366 				IOHIDSetCFTypeParameter: kern_return_t (), <./hidsystem.subproj/IOEventStatusAPI.c 220>
+  367 					IOConnectSetCFProperty: <>
+  368 				CFRelease: <>
+  369 			CFSTR: <>
+  370 		thread_switch: <>
+  371 		NXResetKeyboard: void (), <./hidsystem.subproj/IOEventStatusAPI.c 460>
+  372 			NXEvSetParameterInt: inline int (), <./hidsystem.subproj/IOEventStatusAPI.c 365>
+  373 				CFArrayCreateMutable: <>
+  374 				CFNumberCreate: <>
+  375 				CFArraySetValueAtIndex: <>
+  376 				CFRelease: <>
+  377 				IOHIDSetCFTypeParameter: 366
+  378 			CFSTR: <>
+  379 		NXResetMouse: void (), <./hidsystem.subproj/IOEventStatusAPI.c 549>
+  380 			NXEvSetParameterInt: 372
+  381 			CFSTR: <>
+  382 		getopt: <>
+  383 		usage: void (), <./network.subproj/enetstat.c 381>
+  384 			printf: <>
+  385 			exit: <>
+  386 		CFStringCreateWithCString: <>
+  387 		getInterfaceWithBSDName: io_object_t (), <./network.subproj/enetstat.c 347>
+  388 			IORegistryCreateIterator: <>
+  389 			printf: <>
+  390 			IOIteratorNext: <>
+  391 			IOObjectConformsTo: <>
+  392 			matchBSDNameProperty: int (), <./network.subproj/enetstat.c 307>
+  393 				properties: 70
+  394 				IORegistryEntryCreateCFProperties: <>
+  395 				printf: <>
+  396 				CFDictionaryGetValue: <>
+  397 				CFSTR: <>
+  398 				CFStringCompare: <>
+  399 				CFStringShow: void (), <./network.subproj/enetstat.c 276>
+  400 					CFStringGetCStringPtr: <>
+  401 					printf: <>
+  402 					CFStringGetMaximumSizeForEncoding: <>
+  403 					CFStringGetLength: <>
+  404 					malloc: <>
+  405 					CFStringGetCString: <>
+  406 					free: <>
+  407 				CFRelease: <>
+  408 			IOObjectRelease: <>
+  409 			IORegistryDisposeEnumerator: <>
+  410 		IONetworkOpen: IOReturn (), <./network.subproj/IONetworkLib.c 44>
+  411 			IOServiceOpen: <>
+  412 			mach_task_self: <>
+  413 		displayGenericStats: IOReturn (), <./network.subproj/enetstat.c 50>
+  414 			IONetworkGetDataHandle: IOReturn (), <./network.subproj/IONetworkLib.c 144>
+  415 				IOConnectCallStructMethod: <>
+  416 				strlen: <>
+  417 			printf: <>
+  418 			IONetworkReadData: IOReturn (), <./network.subproj/IONetworkLib.c 83>
+  419 				IOConnectCallMethod: <>
+  420 		displayEthernetStats: IOReturn (), <./network.subproj/enetstat.c 91>
+  421 			IONetworkGetDataHandle: 414
+  422 			printf: <>
+  423 			IONetworkReadData: 418
+  424 		displayOutputQueueStats: IOReturn (), <./network.subproj/enetstat.c 191>
+  425 			IONetworkGetDataHandle: 414
+  426 			printf: <>
+  427 			IONetworkReadData: 418
+  428 			IONetworkGetDataCapacity: IOReturn (), <./network.subproj/IONetworkLib.c 124>
+  429 				IOConnectCallScalarMethod: <>
+  430 			IONetworkResetData: IOReturn (), <./network.subproj/IONetworkLib.c 108>
+  431 				IOConnectCallScalarMethod: <>
+  432 			IONetworkWriteData: IOReturn (), <./network.subproj/IONetworkLib.c 60>
+  433 				IOConnectCallMethod: <>
+  434 		IONetworkClose: IOReturn (), <./network.subproj/IONetworkLib.c 52>
+  435 			IOServiceClose: <>
+  436 		IOObjectRelease: <>
+  437 		usage: void (), <./network.subproj/monitorlink.c 305>
+  438 			printf: <>
+  439 			exit: <>
+  440 		mach_port_allocate: <>
+  441 		mach_task_self: <>
+  442 		getInterfaceWithBSDName: io_object_t (), <./network.subproj/monitorlink.c 142>
+  443 			IORegistryCreateIterator: <>
+  444 			printf: <>
+  445 			IOIteratorNext: <>
+  446 			IOObjectConformsTo: <>
+  447 			matchBSDNameProperty: int (), <./network.subproj/monitorlink.c 101>
+  448 				properties: 70
+  449 				IORegistryEntryCreateCFProperties: <>
+  450 				printf: <>
+  451 				CFDictionaryGetValue: <>
+  452 				CFSTR: <>
+  453 				CFStringCompare: <>
+  454 				CFStringShow: void (), <./network.subproj/monitorlink.c 70>
+  455 					CFStringGetCStringPtr: <>
+  456 					printf: <>
+  457 					CFStringGetMaximumSizeForEncoding: <>
+  458 					CFStringGetLength: <>
+  459 					malloc: <>
+  460 					CFStringGetCString: <>
+  461 					free: <>
+  462 				CFRelease: <>
+  463 			IOObjectRelease: <>
+  464 			IORegistryDisposeEnumerator: <>
+  465 		IOConnectSetNotificationPort: <>
+  466 		getControllerForInterface: io_object_t (), <./network.subproj/monitorlink.c 261>
+  467 			IORegistryEntryGetParentIterator: <>
+  468 			IOIteratorNext: <>
+  469 			IORegistryDisposeEnumerator: <>
+  470 		printLinkProperties: void (), <./network.subproj/monitorlink.c 177>
+  471 			properties: 70
+  472 			IORegistryEntryCreateCFProperties: <>
+  473 			printf: <>
+  474 			CFDictionaryGetValue: <>
+  475 			CFSTR: <>
+  476 			CFStringShow: 454
+  477 			CFNumberShow: void (), <./network.subproj/monitorlink.c 60>
+  478 				CFNumberGetValue: <>
+  479 				printf: <>
+  480 			CFNumberGetValue: <>
+  481 			CFRelease: <>
+  482 		waitForNotification: void (), <./network.subproj/monitorlink.c 282>
+  483 			mach_msg: <>
+  484 			printf: <>
+  485 		CGSInitialize: <>
+  486 		CGSGetDisplayList: <>
+  487 		CGSServiceForDisplayNumber: <>
+  488 		IODisplayCreateInfoDictionary: <>
+  489 		CFDictionaryGetValue: <>
+  490 		CFNumberGetValue: <>
+  491 		CFArrayCreateMutable: <>
+  492 		CFDictionaryApplyFunction: <>
+  493 		KeyArrayCallback: void (), <./graphics.subproj/IODisplayTest.c 34>
+  494 			CFArrayAppendValue: <>
+  495 		CFBundleCopyPreferredLocalizationsFromArray: <>
+  496 		CFRelease: <>
+  497 		CFArrayGetCount: <>
+  498 		CFArrayGetValueAtIndex: <>
+  499 		CFStringGetCString: <>
+  500 		CFStringGetSystemEncoding: <>
+  501 		CFShow: <>
+  502 		IODisplayCreateInterface: <>
+  503 		CFDictionaryCreateMutable: <>
+  504 		CFNumberCreate: <>
+  505 		CFDictionarySetValue: <>
+  506 		IODisplaySetParameters: <>
+  507 		strcmp: <>
+  508 		strtol: <>
+  509 		AccelTests: void (), <./Tests.c 107>
+  510 			start: <>
+  511 			assert: <>
+  512 			IOServiceGetMatchingServices: <>
+  513 			IOServiceMatching: <>
+  514 			IOIteratorNext: <>
+  515 			IORegistryEntryGetName: <>
+  516 			IOPSAllocateBlitEngine: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 5157>
+  517 				calloc: <>
+  518 				IOCreatePlugInInterfaceForService: kern_return_t (), <./IOCFPlugIn.c 141>
+  519 					index: <>
+  520 					IOFindPlugIns: kern_return_t (), <./IOCFPlugIn.c 50>
+  521 						IORegistryEntryCreateCFProperty: <>
+  522 						CFSTR: <>
+  523 						CFDictionaryApplyFunction: <>
+  524 						CFStringCreateMutable: <>
+  525 						CFStringAppendCString: <>
+  526 						CFStringAppend: <>
+  527 						CFURLCreateWithFileSystemPath: <>
+  528 						CFPlugInCreate: <>
+  529 						CFRelease: <>
+  530 						CFPlugInGetBundle: <>
+  531 						CFBundleGetInfoDictionary: <>
+  532 						CFDictionaryGetValue: <>
+  533 						IOServiceMatchPropertyTable: <>
+  534 						CFPlugInFindFactoriesForPlugInTypeInPlugIn: <>
+  535 					CFRelease: <>
+  536 					CFArrayGetCount: <>
+  537 					CFArrayCreateMutable: <>
+  538 					CFArrayGetValueAtIndex: <>
+  539 					CFPlugInInstanceCreate: <>
+  540 					QueryInterface: <>
+  541 					CFUUIDGetUUIDBytes: <>
+  542 					Release: <>
+  543 					Probe: <>
+  544 					CFArrayInsertValueAtIndex: <>
+  545 					Start: <>
+  546 				SetDestination: <>
+  547 				GetBlitter: <>
+  548 				IODestroyPlugInInterface: kern_return_t (), <./IOCFPlugIn.c 259>
+  549 					Stop: <>
+  550 					Release: <>
+  551 				free: <>
+  552 			srandom: <>
+  553 			random: <>
+  554 			CFReadTSR: inline UInt64 (), <./Tests.c 58>
+  555 			IOPSBlitInvert: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 5189>
+  556 				SetDestination: <>
+  557 				Flush: <>
+  558 			IOPSBlitIdle: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 5169>
+  559 				WaitComplete: <>
+  560 			printf: <>
+  561 			printElapsed: void (), <./Tests.c 100>
+  562 				printf: <>
+  563 			IOFBSetupFIFOBurst: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 5205>
+  564 				IOSharedLockLock: <>
+  565 				setupFIFOBurst: <>
+  566 				IOSharedLockUnlock: <>
+  567 			IOFBBurstWrite32: void (), <./graphics.subproj/IOGraphicsLib.c 5209>
+  568 			IOObjectRelease: <>
+  569 		CGSGetNumberOfDisplays: <>
+  570 		IOCreateDisplayInfoDictionary: <>
+  571 		CFArrayAppendValue: <>
+  572 		IODisplayMatchDictionaries: <>
+  573 		IORegistryGetRootEntry: <>
+  574 		IORegistryEntryCreateCFProperties: <>
+  575 		CFDictionaryGetTypeID: <>
+  576 		CFGetTypeID: <>
+  577 		printNumber: void (), <./alloccount.c 32>
+  578 			CFDictionaryGetValue: <>
+  579 			assert: <>
+  580 			CFNumberGetTypeID: <>
+  581 			CFGetTypeID: <>
+  582 			CFNumberGetValue: <>
+  583 			printf: <>
+  584 			CFStringGetCStringPtr: <>
+  585 			CFStringGetSystemEncoding: <>
+  586 		CFNumberGetTypeID: <>
+  587 		SetupFBandHID: void (), <./Tests.c 212>
+  588 			assert: <>
+  589 			IORegistryCreateEnumerator: <>
+  590 			IORegistryEnumeratorNextConforming: <>
+  591 			IOOpenConnection: <>
+  592 			mach_task_self: <>
+  593 			IOServiceGetMatchingServices: <>
+  594 			IOServiceMatching: <>
+  595 			IOIteratorNext: <>
+  596 			IORegistryEntryGetName: <>
+  597 			printf: <>
+  598 			IOServiceOpen: <>
+  599 			IOObjectRelease: <>
+  600 			IOConnectGetService: <>
+  601 			IOFBCreateSharedCursor: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 382>
+  602 				IOFramebufferServerOpen: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 4080>
+  603 					IOFBConnectToRef: __private_extern__ IOFBConnectRef (), <./graphics.subproj/IOGraphicsLib.c 4074>
+  604 						CFDictionaryGetValue: <>
+  605 					IOMasterPort: <>
+  606 					CFDictionaryCreateMutable: <>
+  607 					calloc: <>
+  608 					IOConnectGetService: <>
+  609 					fopen: <>
+  610 					mach_absolute_time: <>
+  611 					DEBG: <>
+  612 					CFDictionarySetValue: <>
+  613 					IORegistryEntryCreateCFProperty: <>
+  614 					CFSTR: <>
+  615 					CFNumberGetValue: <>
+  616 					CFRelease: <>
+  617 					IONotificationPortCreate: <>
+  618 					IOConnectSetNotificationPort: <>
+  619 					IONotificationPortGetMachPort: <>
+  620 					IOServiceAddInterestNotification: <>
+  621 					IOFBInterestCallback: void (), <./graphics.subproj/IOGraphicsLib.c 2598>
+  622 						TIMESTART: <>
+  623 						TIMEEND: <>
+  624 						IOFBProcessConnectChange: void (), <./graphics.subproj/IOGraphicsLib.c 2542>
+  625 							mach_absolute_time: <>
+  626 							TIMESTART: <>
+  627 							IOFBUpdateConnectState: void (), <./graphics.subproj/IOGraphicsLib.c 2130>
+  628 								IOFBGetState: IOOptionBits (), <./graphics.subproj/IOGraphicsLib.c 585>
+  629 									IODisplayForFramebuffer: <>
+  630 									IOObjectRelease: <>
+  631 									DEBG: <>
+  632 							TIMEEND: <>
+  633 							IOFBRebuild: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 2386>
+  634 								TIMESTART: <>
+  635 								IOFBGetAttributeForFramebuffer: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 748>
+  636 									IOFBConnectToRef: 603
+  637 									DEBG: <>
+  638 								TIMEEND: <>
+  639 								DEBG: <>
+  640 								IOFBCreateOverrides: void (), <./graphics.subproj/IOGraphicsLib.c 2803>
+  641 									CFRelease: <>
+  642 									CFDictionaryGetValue: <>
+  643 									CFSTR: <>
+  644 									CFNumberGetValue: <>
+  645 									CFDictionaryCreateMutable: <>
+  646 									IOFBMakeIntegerKeys: CFMutableDictionaryRef (), <./graphics.subproj/IOGraphicsLib.c 233>
+  647 										CFDictionaryCreateMutable: <>
+  648 										CFDictionaryApplyFunction: <>
+  649 										IOFBMakeNumKeys: void (), <./graphics.subproj/IOGraphicsLib.c 196>
+  650 											CFStringGetCStringPtr: <>
+  651 											CFStringGetMaximumSizeForEncoding: <>
+  652 											CFStringGetLength: <>
+  653 											malloc: <>
+  654 											CFStringGetCString: <>
+  655 											strtol: <>
+  656 											free: <>
+  657 											CFNumberGetValue: <>
+  658 											CFDictionarySetValue: <>
+  659 									CFDictionarySetValue: <>
+  660 									CFNumberCreate: <>
+  661 								CFDictionaryGetValue: <>
+  662 								CFSTR: <>
+  663 								CFNumberGetValue: <>
+  664 								IOFBResetTransform: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 2255>
+  665 									IORegistryEntryCreateCFProperty: <>
+  666 									CFSTR: <>
+  667 									CFNumberGetValue: <>
+  668 									CFRelease: <>
+  669 									IOAccelDestroySurface: <>
+  670 									DEBG: <>
+  671 									index: <>
+  672 									IOFBGetAttributeForFramebuffer: 635
+  673 									IOAccelFindAccelerator: <>
+  674 									IOAccelCreateSurface: <>
+  675 									IOAccelSetSurfaceFramebufferShape: <>
+  676 									IOAccelWriteLockSurface: <>
+  677 								IOFBBuildModeList: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 1561>
+  678 									CFRelease: <>
+  679 									CFDictionaryCreateMutable: <>
+  680 									IORegistryEntryCreateCFProperty: <>
+  681 									CFSTR: <>
+  682 									CFDictionaryGetValue: <>
+  683 									CFRetain: <>
+  684 									bcopy: <>
+  685 									CFDataGetBytePtr: <>
+  686 									CFArrayGetCount: <>
+  687 									CFArrayGetValueAtIndex: <>
+  688 									CFNumberGetValue: <>
+  689 									CFDictionarySetValue: <>
+  690 									CFArrayCreateMutable: <>
+  691 									CFDataGetLength: <>
+  692 									DEBG: <>
+  693 									bzero: <>
+  694 									IOFBCreateDisplayModeInformation: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 3766>
+  695 										IOConnectCallMethod: <>
+  696 										IOFBTimingSanity: __private_extern__ Boolean (), <./graphics.subproj/IOGraphicsLib.c 3704>
+  697 									CFDataCreate: <>
+  698 									CFArrayAppendValue: <>
+  699 									calloc: <>
+  700 									IOFBLogTiming: <>
+  701 									IODisplayInstallTimings: <>
+  702 									CFDataGetBytes: <>
+  703 									CFRangeMake: <>
+  704 									IOFBAdjustDisplayModeInformation: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 3804>
+  705 										DEBG: <>
+  706 										CFDictionaryGetValue: <>
+  707 										CFSTR: <>
+  708 										CFDataGetBytePtr: <>
+  709 										GetTovr: bool (), <./graphics.subproj/IOGraphicsLib.c 1075>
+  710 											CFDictionaryGetValue: <>
+  711 											CFSTR: <>
+  712 											CFDataGetBytePtr: <>
+  713 											DEBG: <>
+  714 											OSReadBigInt32: <>
+  715 										IOCheckTimingWithDisplay: <>
+  716 									MakeDetailedRefresh: void (), <./graphics.subproj/IOGraphicsLib.c 905>
+  717 										ValidateTimingInformation: __private_extern__ Boolean (), <./graphics.subproj/IOGraphicsLib.c 855>
+  718 											DEBG: <>
+  719 											IOFBLogTiming: <>
+  720 									IOFBLookScaleBaseMode: Boolean (), <./graphics.subproj/IOGraphicsLib.c 3477>
+  721 										DEBG: <>
+  722 										RefreshRateFromDetailedTiming: __private_extern__ float (), <./graphics.subproj/IOGraphicsLib.c 890>
+  723 									IOFBSetImageSize: void (), <./graphics.subproj/IOGraphicsLib.c 1131>
+  724 										DEBG: <>
+  725 									IOFBInstallMode: __private_extern__ kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 1187>
+  726 										CFDictionaryGetValue: <>
+  727 										CFSTR: <>
+  728 										CFArrayGetCount: <>
+  729 										DEBG: <>
+  730 										CFDataCreate: <>
+  731 										CFArrayGetValueAtIndex: <>
+  732 										CFDataGetBytePtr: <>
+  733 										GetTovr: 709
+  734 										DetailedTimingsEqual: Boolean (), <./graphics.subproj/IOGraphicsLib.c 944>
+  735 											fabsf: <>
+  736 											RefreshRateFromDetailedTiming: 722
+  737 										MergeDisplayModeInformation: void (), <./graphics.subproj/IOGraphicsLib.c 1121>
+  738 										InvalidTiming: __private_extern__ Boolean (), <./graphics.subproj/IOGraphicsLib.c 872>
+  739 											DEBG: <>
+  740 											IOFBLogTiming: <>
+  741 										CFArrayCreateMutable: <>
+  742 										CFDictionarySetValue: <>
+  743 										CFRelease: <>
+  744 										CFArrayAppendValue: <>
+  745 										CFDictionaryCreateMutable: <>
+  746 										CFNumberCreate: <>
+  747 										CFDictionaryAddValue: <>
+  748 									UpdateTimingInfoForTransform: __private_extern__ void (), <./graphics.subproj/IOGraphicsLib.c 3280>
+  749 										DEBG: <>
+  750 										IOFBLogTiming: <>
+  751 									IOFBInstallScaledMode: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 3220>
+  752 										IOFBDriverPreflight: __private_extern__ kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 3722>
+  753 											IOConnectCallStructMethod: <>
+  754 											IOFBTimingSanity: 696
+  755 											ValidateTimingInformation: 717
+  756 											DEBG: <>
+  757 											IOFBLogTiming: <>
+  758 										IOFBCheckScaleDupMode: Boolean (), <./graphics.subproj/IOGraphicsLib.c 3170>
+  759 											CFArrayGetCount: <>
+  760 											CFArrayGetValueAtIndex: <>
+  761 											CFDictionaryGetValue: <>
+  762 											CFSTR: <>
+  763 											CFDataGetBytePtr: <>
+  764 										IOFBSetImageSize: 723
+  765 										IOFBInstallMode: 725
+  766 									free: <>
+  767 									IOFBInstallScaledModes: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 3564>
+  768 										CFArrayCreateMutable: <>
+  769 										CFDictionaryGetValue: <>
+  770 										CFSTR: <>
+  771 										CFArrayAppendValue: <>
+  772 										DEBG: <>
+  773 										IOFBInstallScaledResolution: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 3449>
+  774 											DEBG: <>
+  775 											ratioOver: __private_extern__ float (), <./graphics.subproj/IOGraphicsLib.c 846>
+  776 										ratioOver: __private_extern__ float (), <./graphics.subproj/IOGraphicsLib.c 846>
+  777 										CFArrayGetCount: <>
+  778 										CFArrayGetValueAtIndex: <>
+  779 										CFNumberGetTypeID: <>
+  780 										CFGetTypeID: <>
+  781 										CFNumberGetValue: <>
+  782 										CFDataGetTypeID: <>
+  783 										CFDataGetBytePtr: <>
+  784 										OSReadBigInt32: <>
+  785 										CFDataGetLength: <>
+  786 										CFRelease: <>
+  787 									typeof: <>
+  788 									IOFBTimingSanity: 696
+  789 									CFArrayRemoveValueAtIndex: <>
+  790 									CFDictionaryRemoveValue: <>
+  791 									DetailedTimingsEqual: 734
+  792 									IOFBSetKernelConfig: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 1466>
+  793 										CFDictionaryGetCount: <>
+  794 										IOConnectSetCFProperty: <>
+  795 										CFSTR: <>
+  796 								IOFBLookDefaultDisplayMode: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 2937>
+  797 									CFDictionaryGetValue: <>
+  798 									CFSTR: <>
+  799 									CFNumberGetValue: <>
+  800 									CFDataGetBytePtr: <>
+  801 									OSReadBigInt32: <>
+  802 									CFArrayGetCount: <>
+  803 									CFArrayGetValueAtIndex: <>
+  804 									IOFBIndexForPixelBits: IOIndex (), <./graphics.subproj/IOGraphicsLib.c 2898>
+  805 										index: <>
+  806 									ratioOver: __private_extern__ float (), <./graphics.subproj/IOGraphicsLib.c 846>
+  807 									abs: <>
+  808 									IOFBShouldDefaultDeep: Boolean (), <./graphics.subproj/IOGraphicsLib.c 2919>
+  809 										IORegistryEntryCreateCFProperty: <>
+  810 										CFSTR: <>
+  811 										CFNumberGetValue: <>
+  812 										CFRelease: <>
+  813 								CFGetTypeID: <>
+  814 								CFNumberGetTypeID: <>
+  815 								aslmsg: <>
+  816 								asl_new: <>
+  817 								snprintf: <>
+  818 								asl_set: <>
+  819 								IODisplayEDIDName: <>
+  820 								CFDataGetBytePtr: <>
+  821 								IORegistryEntryFromPath: <>
+  822 								IORegistryEntryGetName: <>
+  823 								IOObjectRelease: <>
+  824 								asl_log: <>
+  825 								asl_free: <>
+  826 							IOFBGetDisplayModeInformation: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 4026>
+  827 								IOFBConnectToRef: 603
+  828 							ratioOver: __private_extern__ float (), <./graphics.subproj/IOGraphicsLib.c 846>
+  829 							IOFBSetDisplayModeAndDepth: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 4453>
+  830 								IOFBConnectToRef: 603
+  831 								DEBG: <>
+  832 								IOConnectCallMethod: <>
+  833 								arrayCnt: <>
+  834 								IOFBResetTransform: 664
+  835 						ConnectionChange: <>
+  836 						IOFBWritePrefs: bool (), <./graphics.subproj/IOGraphicsLib.c 2354>
+  837 							CFDictionaryGetValue: <>
+  838 							CFSTR: <>
+  839 							IORegistryEntryCreateCFProperty: <>
+  840 							CFEqual: <>
+  841 							DEBG: <>
+  842 							geteuid: <>
+  843 							seteuid: <>
+  844 							writePlist: <>
+  845 							CFDictionarySetValue: <>
+  846 							CFRelease: <>
+  847 				IOFramebufferServerFinishOpen: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 4186>
+  848 					IOFBConnectToRef: 603
+  849 					IOFramebufferFinishOpen: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 4209>
+  850 						IOFBUpdateConnectState: 627
+  851 						IOFBRebuild: 633
+  852 						ratioOver: __private_extern__ float (), <./graphics.subproj/IOGraphicsLib.c 846>
+  853 						CFDictionaryGetValue: <>
+  854 						CFSTR: <>
+  855 						CFDataGetBytePtr: <>
+  856 						IOFBIndexForPixelBits: 804
+  857 						IOFBShouldDefaultDeep: 808
+  858 						DEBG: <>
+  859 						IOFBSetDisplayModeAndDepth: 829
+  860 						IOFBSetStartupDisplayModeAndDepth: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 4487>
+  861 							IOConnectCallMethod: <>
+  862 							arrayCnt: <>
+  863 				IOConnectCallMethod: <>
+  864 				arrayCnt: <>
+  865 			IOFBGetFramebufferInformationForAperture: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 397>
+  866 				IOFBConnectToRef: 603
+  867 				IOFBGetFramebufferOffsetForAperture: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 431>
+  868 					IOFBConnectToRef: 603
+  869 					IOConnectCallMethod: <>
+  870 			IOFBGetCurrentDisplayModeAndDepth: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 507>
+  871 				IOFBConnectToRef: 603
+  872 			IOFBGetPixelFormat: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 519>
+  873 				IOFBGetPixelInformation: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 4411>
+  874 					IOFBConnectToRef: 603
+  875 					CFDictionaryGetValue: <>
+  876 					CFSTR: <>
+  877 					CFDataGetLength: <>
+  878 					CFDataGetBytes: <>
+  879 					CFRangeMake: <>
+  880 				strncpy: <>
+  881 			IOMapMemory: <>
+  882 			SetCursor: void (), <./Tests.c 178>
+  883 			IOConnectMapMemory: <>
+  884 			IOFBSetGamma: kern_return_t (), <./graphics.subproj/IOGraphicsLib.c 561>
+  885 				IOFBConnectToRef: 603
+  886 				IOConnectCallMethod: <>
+  887 				arrayCnt: <>
+  888 			vm_region: <>
+  889 			IORegistryEnumeratorReset: <>
+  890 			IOHIDCreateSharedMemory: <>
+  891 			IOHIDSetEventsEnable: <>
+  892 			IORegisterClient: <>
+  893 			IOHIDSetCursorEnable: <>
+  894 			IORegistryDisposeEnumerator: <>
+  895 		stat: <>
+  896 		open: <>
+  897 		read: <>
+  898 		strdup: <>
+  899 		strlen: <>
+  900 		IOCFUnserialize: <>
+  901 		CFStringGetMaximumSizeForEncoding: <>
+  902 		CFStringGetLength: <>
+  903 		IOCFSerialize: 90
+  904 		CFDataGetBytePtr: <>
+  905 		CFEqual: <>
+  906 		CFPropertyListCreateXMLData: <>
+  907 		CFDataCreateWithBytesNoCopy: <>
+  908 		CFPropertyListCreateFromXMLData: <>
+  909 		traverse: void (), <./iodisplayregistry.c 104>
+  910 			IOIteratorNext: <>
+  911 			IORegistryEntryGetChildIterator: <>
+  912 			assert: <>
+  913 			indent: 71
+  914 			IORegistryEntryGetName: <>
+  915 			printf: <>
+  916 			strcmp: <>
+  917 			IOObjectGetClass: <>
+  918 			IOServiceGetBusyState: <>
+  919 			IOObjectGetRetainCount: <>
+  920 			properties: 70
+  921 			traverse: 909
+  922 			IOObjectRelease: <>

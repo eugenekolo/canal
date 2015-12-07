@@ -1,0 +1,166 @@
+    1 	main: int (), <./newsyslog/newsyslog.c 236>
+    2 		SLIST_INIT: <>
+    3 		parse_args: void (), <./newsyslog/newsyslog.c 569>
+    4 			ptime_init: struct ptime_data (), <./newsyslog/ptimes.c 323>
+    5 			ptimeset_time: int (), <./newsyslog/ptimes.c 607>
+    6 				localtime: <>
+    7 			time: <>
+    8 			strlcpy: <>
+    9 			ptimeget_ctime: const char * (), <./newsyslog/ptimes.c 472>
+   10 				ctime: <>
+   11 			ptimeget_secs: time_t (), <./newsyslog/ptimes.c 494>
+   12 			fprintf: <>
+   13 			exit: <>
+   14 			gethostname: <>
+   15 			strchr: <>
+   16 			getopt: <>
+   17 			parse_doption: int (), <./newsyslog/newsyslog.c 688>
+   18 				strncmp: <>
+   19 				ptime_init: struct ptime_data (), <./newsyslog/ptimes.c 323>
+   20 				ptime_relparse: int (), <./newsyslog/ptimes.c 382>
+   21 					localtime: <>
+   22 					parseDWM: int (), <./newsyslog/ptimes.c 220>
+   23 						days_pmonth: int (), <./newsyslog/ptimes.c 90>
+   24 						strtol: <>
+   25 						tolower: <>
+   26 						isspace: <>
+   27 					parse8601: int (), <./newsyslog/ptimes.c 129>
+   28 						strtol: <>
+   29 						isspace: <>
+   30 					days_pmonth: 23
+   31 					fprintf: <>
+   32 					mktime: <>
+   33 					ptimeset_nxtime: int (), <./newsyslog/ptimes.c 510>
+   34 						days_pmonth: 23
+   35 						mktime: <>
+   36 						localtime: <>
+   37 						ptime_adjust4dst: int (), <./newsyslog/ptimes.c 343>
+   38 							localtime: <>
+   39 				time: <>
+   40 				warnx: <>
+   41 				strcmp: <>
+   42 			usage: void (), <./newsyslog/newsyslog.c 729>
+   43 				fprintf: <>
+   44 				exit: <>
+   45 			strdup: <>
+   46 			warnx: <>
+   47 			isprintch: <>
+   48 			ptime_free: int (), <./newsyslog/ptimes.c 457>
+   49 				free: <>
+   50 		getuid: <>
+   51 		geteuid: <>
+   52 		errx: <>
+   53 		get_worklist: struct conf_entry (), <./newsyslog/newsyslog.c 743>
+   54 		do_entry: fk_entry (), <./newsyslog/newsyslog.c 426>
+   55 			printf: <>
+   56 			sizefile: int (), <./newsyslog/newsyslog.c 1915>
+   57 				stat: <>
+   58 				kbytes: <>
+   59 				dbtob: <>
+   60 			age_old_log: int (), <./newsyslog/newsyslog.c 1930>
+   61 				strlcpy: <>
+   62 				rindex: <>
+   63 				strlcat: <>
+   64 				stat: <>
+   65 				strchr: <>
+   66 				ptimeget_secs: 11
+   67 			strlcpy: <>
+   68 			createlog: void (), <./newsyslog/newsyslog.c 2093>
+   69 				strlcpy: <>
+   70 				strrchr: <>
+   71 				stat: <>
+   72 				err: <>
+   73 				createdir: void (), <./newsyslog/newsyslog.c 2048>
+   74 					lstat: <>
+   75 					printf: <>
+   76 					mkdir: <>
+   77 					err: <>
+   78 				S_ISDIR: <>
+   79 				errx: <>
+   80 				strlcat: <>
+   81 				printf: <>
+   82 				mkstemp: <>
+   83 				log_trim: int (), <./newsyslog/newsyslog.c 1889>
+   84 					fopen: <>
+   85 					fprintf: <>
+   86 					getpid: <>
+   87 					fclose: <>
+   88 					err: <>
+   89 				fchown: <>
+   90 				fchflags: <>
+   91 				warn: <>
+   92 				fchmod: <>
+   93 				rename: <>
+   94 				close: <>
+   95 			ptimeget_diff: double (), <./newsyslog/ptimes.c 482>
+   96 				difftime: <>
+   97 			ptime_adjust4dst: 37
+   98 			ptimeget_ctime: 9
+   99 			ptimeset_nxtime: 33
+  100 			snprintf: <>
+  101 			strdup: <>
+  102 			do_rotate: fk_entry (), <./newsyslog/newsyslog.c 1405>
+  103 				strlcpy: <>
+  104 				rindex: <>
+  105 				strlcat: <>
+  106 				lstat: <>
+  107 				createdir: 73
+  108 				snprintf: <>
+  109 				printf: <>
+  110 				unlink: <>
+  111 				rename: <>
+  112 				change_attrs: void (), <./newsyslog/newsyslog.c 2204>
+  113 					printf: <>
+  114 					chmod: <>
+  115 					err: <>
+  116 					warn: <>
+  117 					chown: <>
+  118 					chflags: <>
+  119 				log_trim: 83
+  120 				savelog: void (), <./newsyslog/newsyslog.c 2019>
+  121 					link: <>
+  122 					fopen: <>
+  123 					err: <>
+  124 					getc: <>
+  125 					putc: <>
+  126 					ferror: <>
+  127 					fclose: <>
+  128 				createlog: 68
+  129 				save_sigwork: struct sigwork_entry (), <./newsyslog/newsyslog.c 1736>
+  130 				save_zipwork: struct zipwork_entry (), <./newsyslog/newsyslog.c 1782>
+  131 		free_entry: void (), <./newsyslog/newsyslog.c 376>
+  132 			printf: <>
+  133 			free: <>
+  134 			ptime_free: 48
+  135 		SLIST_EMPTY: <>
+  136 		printf: <>
+  137 		SLIST_FOREACH: <>
+  138 		do_sigwork: void (), <./newsyslog/newsyslog.c 1561>
+  139 			SLIST_NEXT: <>
+  140 			printf: <>
+  141 			kill: <>
+  142 			warn: <>
+  143 			sleep: <>
+  144 		sleep: <>
+  145 		SLIST_FIRST: <>
+  146 		do_zipwork: void (), <./newsyslog/newsyslog.c 1634>
+  147 			strlcpy: <>
+  148 			strlcat: <>
+  149 			warnx: <>
+  150 			strrchr: <>
+  151 			change_attrs: 112
+  152 			printf: <>
+  153 			posix_spawn: <>
+  154 			errc: <>
+  155 			fork: <>
+  156 			warn: <>
+  157 			errx: <>
+  158 			sleep: <>
+  159 			execl: <>
+  160 			err: <>
+  161 			waitpid: <>
+  162 			WIFEXITED: <>
+  163 			WEXITSTATUS: <>
+  164 		SLIST_REMOVE_HEAD: <>
+  165 		free: <>
+  166 		wait: <>

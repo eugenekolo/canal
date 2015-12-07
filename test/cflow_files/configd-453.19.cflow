@@ -1,0 +1,4314 @@
+    1 	main: int (), <./scutil.tproj/scutil.c 329>
+    2 		SCPreferencesCreate: SCPreferencesRef (), <./SystemConfiguration.fproj/SCPOpen.c 615>
+    3 		CFSTR: <>
+    4 		SCNetworkSetCopyCurrent: SCNetworkSetRef (), <./SystemConfiguration.fproj/SCNetworkSet.c 538>
+    5 			SCPreferencesGetValue: CFPropertyListRef (), <./SystemConfiguration.fproj/SCPGet.c 43>
+    6 				CFDictionaryGetValue: <>
+    7 			isA_CFString: <>
+    8 			CFStringCreateArrayBySeparatingStrings: <>
+    9 			CFSTR: <>
+   10 			CFArrayGetCount: <>
+   11 			CFArrayGetValueAtIndex: <>
+   12 			SCPreferencesPathKeyCreateSet: __private_extern__ CFStringRef (), <./SystemConfiguration.fproj/SCPreferencesPathKey.c 113>
+   13 				CFStringCreateWithFormat: <>
+   14 				CFSTR: <>
+   15 			CFEqual: <>
+   16 			SCLog: void (), <./SystemConfiguration.fproj/SCD.c 475>
+   17 				va_start: <>
+   18 				va_copy: <>
+   19 				va_end: <>
+   20 				LOG_PRI: <>
+   21 			CFRelease: <>
+   22 		SCNetworkSetCopyServices: CFArrayRef (), <./SystemConfiguration.fproj/SCNetworkSet.c 573>
+   23 			isA_SCNetworkSet: <>
+   24 			SCPreferencesPathKeyCreateSetNetworkService: __private_extern__ CFStringRef (), <./SystemConfiguration.fproj/SCPreferencesPathKey.c 168>
+   25 				CFStringCreateWithFormat: <>
+   26 				CFSTR: <>
+   27 			SCPreferencesPathGetValue: CFDictionaryRef (), <./SystemConfiguration.fproj/SCPPath.c 393>
+   28 				getPath: Boolean (), <./SystemConfiguration.fproj/SCPPath.c 78>
+   29 					normalizePath: CF_RETURNS_RETAINED CFMutableArrayRef (), <./SystemConfiguration.fproj/SCPPath.c 42>
+   30 						isA_CFString: <>
+   31 						CFStringHasPrefix: <>
+   32 						CFSTR: <>
+   33 						CFStringCreateArrayBySeparatingStrings: <>
+   34 						CFArrayCreateMutableCopy: <>
+   35 						CFRelease: <>
+   36 						CFArrayGetCount: <>
+   37 						CFArrayGetValueAtIndex: <>
+   38 						CFStringGetLength: <>
+   39 						CFArrayRemoveValueAtIndex: <>
+   40 					CFArrayGetCount: <>
+   41 					CFArrayGetValueAtIndex: <>
+   42 					SCPreferencesGetValue: 5
+   43 					CFDictionaryGetValue: <>
+   44 					isA_CFDictionary: <>
+   45 					CFDictionaryGetValueIfPresent: <>
+   46 					CFArrayAppendArray: <>
+   47 					CFRangeMake: <>
+   48 					CFRelease: <>
+   49 				isA_CFDictionary: <>
+   50 				CFDictionaryGetValueIfPresent: <>
+   51 			CFRelease: <>
+   52 			isA_CFDictionary: <>
+   53 			CFArrayCreateMutable: <>
+   54 			CFDictionaryGetCount: <>
+   55 			CFAllocatorAllocate: <>
+   56 			CFDictionaryGetKeysAndValues: <>
+   57 			SCPreferencesPathKeyCreateSetNetworkServiceEntity: __private_extern__ CFStringRef (), <./SystemConfiguration.fproj/SCPreferencesPathKey.c 204>
+   58 				CFStringCreateWithFormat: <>
+   59 				CFSTR: <>
+   60 			SCPreferencesPathGetLink: CFStringRef (), <./SystemConfiguration.fproj/SCPPath.c 423>
+   61 				getPath: 28
+   62 				isA_CFDictionary: <>
+   63 				CFDictionaryGetValueIfPresent: <>
+   64 			SCLog: 16
+   65 			CFSTR: <>
+   66 			CFStringCreateArrayBySeparatingStrings: <>
+   67 			CFArrayGetCount: <>
+   68 			CFArrayGetValueAtIndex: <>
+   69 			SCPreferencesPathKeyCreateNetworkServiceEntity: __private_extern__ CFStringRef (), <./SystemConfiguration.fproj/SCPreferencesPathKey.c 68>
+   70 				CFStringCreateWithFormat: <>
+   71 				CFSTR: <>
+   72 			CFEqual: <>
+   73 			CFArrayAppendValue: <>
+   74 			CFAllocatorDeallocate: <>
+   75 		CFSetCreateMutable: <>
+   76 		CFArrayGetCount: <>
+   77 		CFArrayGetValueAtIndex: <>
+   78 		SCNetworkServiceGetInterface: SCNetworkInterfaceRef (), <./SystemConfiguration.fproj/SCNetworkService.c 1025>
+   79 			isA_SCNetworkService: <>
+   80 			SCPreferencesPathKeyCreateNetworkServiceEntity: 69
+   81 			SCPreferencesPathGetValue: 27
+   82 			CFRelease: <>
+   83 			isA_CFDictionary: <>
+   84 		CFSetContainsValue: <>
+   85 		SCNetworkInterfaceCopyCapability: CFTypeRef (), <./SystemConfiguration.fproj/LinkConfiguration.c 210>
+   86 			isA_SCNetworkInterface: <>
+   87 			SCNetworkInterfaceGetBSDName: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4369>
+   88 				isA_SCNetworkInterface: <>
+   89 			CFDictionaryCreateMutable: <>
+   90 			CFNumberCreate: <>
+   91 			CFDictionarySetValue: <>
+   92 			CFRelease: <>
+   93 			findCapability: CFIndex (), <./SystemConfiguration.fproj/LinkConfiguration.c 84>
+   94 				CFEqual: <>
+   95 		SCNetworkInterfaceGetConfiguration: CFDictionaryRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4305>
+   96 			isA_SCNetworkInterface: <>
+   97 			CFEqual: <>
+   98 			SCPreferencesPathKeyCreateNetworkServiceEntity: 69
+   99 			CFRelease: <>
+  100 		SCPrint: void (), <./SystemConfiguration.fproj/SCD.c 576>
+  101 			va_start: <>
+  102 			va_end: <>
+  103 		SCNetworkInterfaceGetBSDName: 87
+  104 		CFRelease: <>
+  105 		CFSetAddValue: <>
+  106 		load_LinkConfiguration: __private_extern__ void (), <./Plugins/LinkConfiguration/linkconfig.c 650>
+  107 			SCLog: 16
+  108 			CFSTR: <>
+  109 			CFBundleGetIdentifier: <>
+  110 			CFDictionaryCreateMutable: <>
+  111 			SCDynamicStoreCreate: SCDynamicStoreRef (), <./SystemConfiguration.fproj/SCDOpen.c 773>
+  112 				SCDynamicStoreCreateWithOptions: SCDynamicStoreRef (), <./SystemConfiguration.fproj/SCDOpen.c 736>
+  113 					CFStringCreateWithFormat: <>
+  114 					CFSTR: <>
+  115 					CFRetain: <>
+  116 					CFRelease: <>
+  117 			linkConfigChangedCallback: void (), <./Plugins/LinkConfiguration/linkconfig.c 599>
+  118 				SCDynamicStoreKeyCreate: CFStringRef (), <./SystemConfiguration.fproj/SCDKeys.c 49>
+  119 					va_start: <>
+  120 					CFStringCreateWithFormatAndArguments: <>
+  121 					va_end: <>
+  122 				CFSTR: <>
+  123 				SCDynamicStoreCopyMultiple: CFDictionaryRef (), <./SystemConfiguration.fproj/SCDGet.c 44>
+  124 					CFRelease: <>
+  125 					configget_m: <>
+  126 					vm_deallocate: <>
+  127 					mach_task_self: <>
+  128 				CFArrayGetCount: <>
+  129 				CFArrayGetValueAtIndex: <>
+  130 				CFDictionaryGetValue: <>
+  131 				CFEqual: <>
+  132 				isA_CFArray: <>
+  133 				updateInterfaces: void (), <./Plugins/LinkConfiguration/linkconfig.c 470>
+  134 					CFArrayGetCount: <>
+  135 					CFArrayGetValueAtIndex: <>
+  136 					CFArrayContainsValue: <>
+  137 					CFRangeMake: <>
+  138 					CFDictionaryGetValue: <>
+  139 					updateLink: void (), <./Plugins/LinkConfiguration/linkconfig.c 503>
+  140 						CFDictionarySetValue: <>
+  141 						CFDictionaryRemoveValue: <>
+  142 						CFDictionaryContainsKey: <>
+  143 						SCNetworkInterfaceCopyMediaOptions: Boolean (), <./SystemConfiguration.fproj/LinkConfiguration.c 680>
+  144 							isA_SCNetworkInterface: <>
+  145 							SCNetworkInterfaceGetBSDName: 87
+  146 							CFArrayCreateMutable: <>
+  147 							CFRetain: <>
+  148 							CFArrayContainsValue: <>
+  149 							CFRangeMake: <>
+  150 							CFArrayGetCount: <>
+  151 							CFArrayAppendValue: <>
+  152 							CFRelease: <>
+  153 						CFDictionaryCreateMutableCopy: <>
+  154 						CFRelease: <>
+  155 						SCNetworkInterfaceCopyMTU: Boolean (), <./SystemConfiguration.fproj/LinkConfiguration.c 984>
+  156 							isA_SCNetworkInterface: <>
+  157 							SCNetworkInterfaceGetBSDName: 87
+  158 							bzero: <>
+  159 							SCLog: 16
+  160 							CFSTR: <>
+  161 							socket: <>
+  162 							strerror: <>
+  163 							ioctl: <>
+  164 							close: <>
+  165 						CFDictionaryCreateMutable: <>
+  166 						CFNumberCreate: <>
+  167 						CFDictionaryAddValue: <>
+  168 						CFDictionaryGetValue: <>
+  169 					CFRelease: <>
+  170 					CFRetain: <>
+  171 				parse_component: CF_RETURNS_RETAINED CFStringRef (), <./Plugins/LinkConfiguration/linkconfig.c 446>
+  172 					CFStringHasPrefix: <>
+  173 					CFStringCreateMutableCopy: <>
+  174 					CFStringDelete: <>
+  175 					CFRangeMake: <>
+  176 					CFStringGetLength: <>
+  177 					CFStringFind: <>
+  178 					CFSTR: <>
+  179 				updateLink: 139
+  180 				CFRelease: <>
+  181 			SCErrorString: const char * (), <./SystemConfiguration.fproj/SCD.c 711>
+  182 				strerror: <>
+  183 				bootstrap_strerror: <>
+  184 				mach_error_string: <>
+  185 			SCError: int (), <./SystemConfiguration.fproj/SCD.c 701>
+  186 			CFArrayCreateMutable: <>
+  187 			SCDynamicStoreKeyCreateNetworkInterface: CFStringRef (), <./SystemConfiguration.fproj/SCDKeys.c 81>
+  188 				CFStringCreateWithFormat: <>
+  189 				CFSTR: <>
+  190 			CFArrayAppendValue: <>
+  191 			SCDynamicStoreKeyCreateNetworkInterfaceEntity: CFStringRef (), <./SystemConfiguration.fproj/SCDKeys.c 93>
+  192 				CFStringCreateWithFormat: <>
+  193 				CFSTR: <>
+  194 			CFRelease: <>
+  195 			SCDynamicStoreSetNotificationKeys: Boolean (), <./SystemConfiguration.fproj/SCDNotifierSetKeys.c 41>
+  196 				CFRelease: <>
+  197 				notifyset: <>
+  198 				CFArrayCreateMutableCopy: <>
+  199 			SCDynamicStoreCreateRunLoopSource: CFRunLoopSourceRef (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 442>
+  200 				CFRetain: <>
+  201 				rlsRetain: CFTypeRef (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 359>
+  202 					CFRetain: <>
+  203 					SCLog: 16
+  204 					CFSTR: <>
+  205 				rlsRelease: void (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 383>
+  206 					CFRelease: <>
+  207 					SCLog: 16
+  208 					CFSTR: <>
+  209 				rlsCopyDescription: CFStringRef (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 409>
+  210 					CFStringCreateMutable: <>
+  211 					CFStringAppendFormat: <>
+  212 					CFSTR: <>
+  213 					CFStringCreateWithFormat: <>
+  214 					CFRetain: <>
+  215 					CFRelease: <>
+  216 				CFEqual: <>
+  217 				CFHash: <>
+  218 				rlsSchedule: void (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 102>
+  219 					SCLog: 16
+  220 					CFSTR: <>
+  221 					CFRetain: <>
+  222 					CFRelease: <>
+  223 					notifyMPCopyDescription: CFStringRef (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 48>
+  224 						CFStringCreateWithFormat: <>
+  225 						CFSTR: <>
+  226 					mach_port_allocate: <>
+  227 					mach_task_self: <>
+  228 					mach_error_string: <>
+  229 					mach_port_insert_right: <>
+  230 					mach_port_request_notification: <>
+  231 					notifyviaport: <>
+  232 					mach_port_deallocate: <>
+  233 					mach_port_mod_refs: <>
+  234 					rlsCallback: void (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 60>
+  235 						SCLog: 16
+  236 						CFSTR: <>
+  237 						CFRunLoopSourceSignal: <>
+  238 					CFMachPortSetInvalidationCallBack: <>
+  239 					portInvalidate: void (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 92>
+  240 						CFMachPortGetPort: <>
+  241 						mach_port_mod_refs: <>
+  242 						mach_task_self: <>
+  243 					CFMachPortCreateRunLoopSource: <>
+  244 					CFArrayCreateMutable: <>
+  245 					CFRunLoopAddSource: <>
+  246 					CFMachPortGetPort: <>
+  247 				rlsCancel: void (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 229>
+  248 					SCLog: 16
+  249 					CFSTR: <>
+  250 					CFArrayGetCount: <>
+  251 					CFRunLoopRemoveSource: <>
+  252 					CFMachPortGetPort: <>
+  253 					CFRelease: <>
+  254 					CFRunLoopSourceInvalidate: <>
+  255 					CFMachPortInvalidate: <>
+  256 					notifycancel: <>
+  257 				rlsPerform: void (), <./SystemConfiguration.fproj/SCDNotifierInformViaCallback.c 309>
+  258 					SCLog: 16
+  259 					CFSTR: <>
+  260 					SCDynamicStoreCopyNotifiedKeys: CFArrayRef (), <./SystemConfiguration.fproj/SCDNotifierGetChanges.c 43>
+  261 						notifychanges: <>
+  262 						vm_deallocate: <>
+  263 						mach_task_self: <>
+  264 					CFArrayCreate: <>
+  265 					CFArrayGetCount: <>
+  266 					retain: <>
+  267 					CFRelease: <>
+  268 				CFRunLoopSourceCreate: <>
+  269 			CFRunLoopAddSource: <>
+  270 			CFRunLoopGetCurrent: <>
+  271 		CFBundleGetMainBundle: <>
+  272 		CFRunLoopRun: <>
+  273 		exit: <>
+  274 		load: void (), <./Plugins/Logger/logger.c 1941>
+  275 			asl_new: <>
+  276 			asl_set: <>
+  277 			elapsed: char * (), <./Plugins/Logger/logger.c 87>
+  278 				gettimeofday: <>
+  279 				localtime_r: <>
+  280 				timersub: <>
+  281 				sprintf: <>
+  282 			CFBundleGetInfoDictionary: <>
+  283 			isA_CFDictionary: <>
+  284 			bValFromDictionary: __inline__ Boolean (), <./Plugins/Logger/logger.c 1925>
+  285 				CFDictionaryGetValueIfPresent: <>
+  286 				isA_CFBoolean: <>
+  287 				CFBooleanGetValue: <>
+  288 			CFSTR: <>
+  289 			add_wake_uuid_notification: void (), <./Plugins/Logger/logger.c 652>
+  290 				IONotificationPortCreate: <>
+  291 				IORegistryEntryFromPath: <>
+  292 				IOServiceAddInterestNotification: <>
+  293 				wake_uuid_notification: void (), <./Plugins/Logger/logger.c 615>
+  294 					IORegistryEntryCreateCFProperty: <>
+  295 					CFSTR: <>
+  296 					asl_set: <>
+  297 					SCLOG: void (), <./SystemConfiguration.fproj/SCD.c 526>
+  298 						va_start: <>
+  299 						va_copy: <>
+  300 						va_end: <>
+  301 					elapsed: 277
+  302 					CFRelease: <>
+  303 					asl_unset: <>
+  304 				SCLOG: 297
+  305 				CFSTR: <>
+  306 				CFRunLoopAddSource: <>
+  307 				CFRunLoopGetCurrent: <>
+  308 				IONotificationPortGetRunLoopSource: <>
+  309 			add_power_notification: void (), <./Plugins/Logger/logger.c 594>
+  310 				IORegisterForSystemPower: <>
+  311 				power_notification: void (), <./Plugins/Logger/logger.c 506>
+  312 					SCLOG: 297
+  313 					CFSTR: <>
+  314 					elapsed: 277
+  315 					IOAllowPowerChange: <>
+  316 				SCLOG: 297
+  317 				CFSTR: <>
+  318 				CFRunLoopAddSource: <>
+  319 				CFRunLoopGetCurrent: <>
+  320 				IONotificationPortGetRunLoopSource: <>
+  321 			add_KernelEvent_notification: void (), <./Plugins/Logger/logger.c 451>
+  322 				socket: <>
+  323 				SCLOG: 297
+  324 				CFSTR: <>
+  325 				ioctl: <>
+  326 				close: <>
+  327 				CFSocketCreateWithNative: <>
+  328 				KernelEvent_notification: void (), <./Plugins/Logger/logger.c 212>
+  329 					CFSocketGetNative: <>
+  330 					recv: <>
+  331 					SCLOG: 297
+  332 					CFSTR: <>
+  333 					strerror: <>
+  334 					CFSocketInvalidate: <>
+  335 					snprintf: <>
+  336 					elapsed: 277
+  337 					copyInterfaceFlags: CFStringRef (), <./Plugins/Logger/logger.c 127>
+  338 						socket: <>
+  339 						SCLOG: 297
+  340 						CFSTR: <>
+  341 						bzero: <>
+  342 						strlcpy: <>
+  343 						ioctl: <>
+  344 						strncpy: <>
+  345 						CFStringCreateWithFormat: <>
+  346 						close: <>
+  347 					CFRelease: <>
+  348 					bzero: <>
+  349 					ntohl: <>
+  350 					prefixLength: int (), <./Plugins/Logger/logger.c 171>
+  351 				CFSocketCreateRunLoopSource: <>
+  352 				CFRelease: <>
+  353 				CFRunLoopAddSource: <>
+  354 				CFRunLoopGetCurrent: <>
+  355 			add_nwi_notification: void (), <./Plugins/Logger/logger.c 1473>
+  356 				nwi_state_get_notify_key: const char * (), <./nwi/network_information.c 106>
+  357 				notify_register_mach_port: <>
+  358 				SCLOG: 297
+  359 				CFSTR: <>
+  360 				nwi_notification: void (), <./Plugins/Logger/logger.c 1462>
+  361 					SCLOG: 297
+  362 					CFSTR: <>
+  363 					elapsed: 277
+  364 				notify_cancel: <>
+  365 				CFMachPortCreateRunLoopSource: <>
+  366 				CFRelease: <>
+  367 				CFRunLoopAddSource: <>
+  368 				CFRunLoopGetCurrent: <>
+  369 			add_dnsinfo_notification: void (), <./Plugins/Logger/logger.c 1419>
+  370 				dns_configuration_notify_key: const char * (), <./dnsinfo/dnsinfo_copy.c 455>
+  371 					pthread_once: <>
+  372 				notify_register_mach_port: <>
+  373 				SCLOG: 297
+  374 				CFSTR: <>
+  375 				dnsinfo_notification: void (), <./Plugins/Logger/logger.c 1408>
+  376 					SCLOG: 297
+  377 					CFSTR: <>
+  378 					elapsed: 277
+  379 				notify_cancel: <>
+  380 				CFMachPortCreateRunLoopSource: <>
+  381 				CFRelease: <>
+  382 				CFRunLoopAddSource: <>
+  383 				CFRunLoopGetCurrent: <>
+  384 			add_network_notification: void (), <./Plugins/Logger/logger.c 1529>
+  385 				notify_register_mach_port: <>
+  386 				SCLOG: 297
+  387 				CFSTR: <>
+  388 				network_notification: void (), <./Plugins/Logger/logger.c 1518>
+  389 					SCLOG: 297
+  390 					CFSTR: <>
+  391 					elapsed: 277
+  392 				notify_cancel: <>
+  393 				CFMachPortCreateRunLoopSource: <>
+  394 				CFRelease: <>
+  395 				CFRunLoopAddSource: <>
+  396 				CFRunLoopGetCurrent: <>
+  397 			add_smbconf_notification: void (), <./Plugins/Logger/logger.c 1588>
+  398 				notify_register_mach_port: <>
+  399 				SCLOG: 297
+  400 				CFSTR: <>
+  401 				smbconf_notification: void (), <./Plugins/Logger/logger.c 1577>
+  402 					SCLOG: 297
+  403 					CFSTR: <>
+  404 					elapsed: 277
+  405 				notify_cancel: <>
+  406 				CFMachPortCreateRunLoopSource: <>
+  407 				CFRelease: <>
+  408 				CFRunLoopAddSource: <>
+  409 				CFRunLoopGetCurrent: <>
+  410 			add_pututxline_notification: void (), <./Plugins/Logger/logger.c 1794>
+  411 				notify_register_mach_port: <>
+  412 				SCLOG: 297
+  413 				CFSTR: <>
+  414 				pututxline_notification: void (), <./Plugins/Logger/logger.c 1685>
+  415 					CFStringCreateMutable: <>
+  416 					CFStringAppendFormat: <>
+  417 					CFSTR: <>
+  418 					elapsed: 277
+  419 					ut_time: const char * (), <./Plugins/Logger/logger.c 1634>
+  420 						localtime_r: <>
+  421 						snprintf: <>
+  422 					ut_id: const char * (), <./Plugins/Logger/logger.c 1651>
+  423 						isprint: <>
+  424 						snprintf: <>
+  425 					ut_pid: const char * (), <./Plugins/Logger/logger.c 1674>
+  426 						snprintf: <>
+  427 					snprintf: <>
+  428 					strlen: <>
+  429 					SCLOG: 297
+  430 					CFRelease: <>
+  431 				notify_cancel: <>
+  432 				CFMachPortCreateRunLoopSource: <>
+  433 				CFRelease: <>
+  434 				CFRunLoopAddSource: <>
+  435 				CFRunLoopGetCurrent: <>
+  436 			add_BTMM_notification: void (), <./Plugins/Logger/logger.c 1879>
+  437 				SCDynamicStoreCreate: 111
+  438 				CFSTR: <>
+  439 				BTMM_notification: void (), <./Plugins/Logger/logger.c 1842>
+  440 					CFStringCreateMutable: <>
+  441 					CFStringAppendFormat: <>
+  442 					CFSTR: <>
+  443 					elapsed: 277
+  444 					CFArrayGetCount: <>
+  445 					CFArrayGetValueAtIndex: <>
+  446 					SCDynamicStoreCopyValue: CFPropertyListRef (), <./SystemConfiguration.fproj/SCDGet.c 139>
+  447 						configget: <>
+  448 						CFRelease: <>
+  449 						vm_deallocate: <>
+  450 						mach_task_self: <>
+  451 					CFRelease: <>
+  452 					SCLOG: 297
+  453 				SCLOG: 297
+  454 				CFArrayCreateMutable: <>
+  455 				CFArrayAppendValue: <>
+  456 				SCDynamicStoreSetNotificationKeys: 195
+  457 				CFRelease: <>
+  458 				SCDynamicStoreCreateRunLoopSource: 199
+  459 				CFRunLoopAddSource: <>
+  460 				CFRunLoopGetCurrent: <>
+  461 			add_console_notification: void (), <./Plugins/Logger/logger.c 1279>
+  462 				SCDynamicStoreCreate: 111
+  463 				CFSTR: <>
+  464 				console_notification: void (), <./Plugins/Logger/logger.c 1224>
+  465 					CFStringCreateMutable: <>
+  466 					CFStringAppendFormat: <>
+  467 					CFSTR: <>
+  468 					elapsed: 277
+  469 					SCDynamicStoreCopyConsoleUser: CFStringRef (), <./SystemConfiguration.fproj/SCDConsoleUser.c 82>
+  470 						SCDynamicStoreKeyCreateConsoleUser: CFStringRef (), <./SystemConfiguration.fproj/SCDConsoleUser.c 71>
+  471 							SCDynamicStoreKeyCreate: 118
+  472 							CFSTR: <>
+  473 						SCDynamicStoreCopyValue: 446
+  474 						CFRelease: <>
+  475 						isA_CFDictionary: <>
+  476 						CFDictionaryGetValue: <>
+  477 						isA_CFString: <>
+  478 						CFRetain: <>
+  479 						isA_CFNumber: <>
+  480 						CFNumberGetValue: <>
+  481 					CFRelease: <>
+  482 					SCDynamicStoreCopyConsoleInformation: CFArrayRef (), <./SystemConfiguration.fproj/SCDConsoleUser.c 139>
+  483 						SCDynamicStoreKeyCreateConsoleUser: 470
+  484 						SCDynamicStoreCopyValue: 446
+  485 						CFRelease: <>
+  486 						isA_CFDictionary: <>
+  487 						CFDictionaryGetValue: <>
+  488 						isA_CFArray: <>
+  489 						CFRetain: <>
+  490 					CFArrayGetCount: <>
+  491 					CFArrayGetValueAtIndex: <>
+  492 					CFDictionaryGetValue: <>
+  493 					CFBooleanGetValue: <>
+  494 					SCLOG: 297
+  495 				SCLOG: 297
+  496 				CFArrayCreateMutable: <>
+  497 				SCDynamicStoreKeyCreateConsoleUser: 470
+  498 				CFArrayAppendValue: <>
+  499 				CFRelease: <>
+  500 				SCDynamicStoreSetNotificationKeys: 195
+  501 				SCDynamicStoreCreateRunLoopSource: 199
+  502 				CFRunLoopAddSource: <>
+  503 				CFRunLoopGetCurrent: <>
+  504 			add_DirectoryServices_notification: void (), <./Plugins/Logger/logger.c 1360>
+  505 				SCDynamicStoreCreate: 111
+  506 				CFSTR: <>
+  507 				directoryServices_notification: void (), <./Plugins/Logger/logger.c 1334>
+  508 					CFStringCreateMutable: <>
+  509 					CFStringAppendFormat: <>
+  510 					CFSTR: <>
+  511 					elapsed: 277
+  512 					CFArrayGetCount: <>
+  513 					CFArrayGetValueAtIndex: <>
+  514 					SCLOG: 297
+  515 					CFRelease: <>
+  516 				SCLOG: 297
+  517 				CFArrayCreateMutable: <>
+  518 				CFArrayAppendValue: <>
+  519 				SCDynamicStoreSetNotificationKeys: 195
+  520 				CFRelease: <>
+  521 				SCDynamicStoreCreateRunLoopSource: 199
+  522 				CFRunLoopAddSource: <>
+  523 				CFRunLoopGetCurrent: <>
+  524 			add_NetworkChange_notification: void (), <./Plugins/Logger/logger.c 912>
+  525 				SCDynamicStoreCreate: 111
+  526 				CFSTR: <>
+  527 				NetworkChange_notification: void (), <./Plugins/Logger/logger.c 694>
+  528 					CFStringCreateMutable: <>
+  529 					CFStringAppendFormat: <>
+  530 					CFSTR: <>
+  531 					elapsed: 277
+  532 					CFArrayGetCount: <>
+  533 					CFArrayGetValueAtIndex: <>
+  534 					CFStringCreateArrayBySeparatingStrings: <>
+  535 					CFEqual: <>
+  536 					SCDynamicStoreCopyValue: 446
+  537 					CFDictionaryGetValue: <>
+  538 					CFBooleanGetValue: <>
+  539 					CFRelease: <>
+  540 					ether_ntoa: <>
+  541 					CFDataGetBytePtr: <>
+  542 					CFDictionaryGetValueIfPresent: <>
+  543 					SCDynamicStoreKeyCreateNetworkServiceEntity: CFStringRef (), <./SystemConfiguration.fproj/SCDKeys.c 119>
+  544 						CFStringCreateWithFormat: <>
+  545 						CFSTR: <>
+  546 					CFStringHasPrefix: <>
+  547 					isA_CFNumber: <>
+  548 					CFNumberGetValue: <>
+  549 					SCLOG: 297
+  550 				SCLOG: 297
+  551 				CFArrayCreateMutable: <>
+  552 				SCDynamicStoreKeyCreateNetworkInterface: 187
+  553 				CFArrayAppendValue: <>
+  554 				CFRelease: <>
+  555 				add_NetworkChange_keys: void (), <./Plugins/Logger/logger.c 871>
+  556 					SCDynamicStoreKeyCreateNetworkGlobalEntity: CFStringRef (), <./SystemConfiguration.fproj/SCDKeys.c 67>
+  557 						CFStringCreateWithFormat: <>
+  558 						CFSTR: <>
+  559 					CFArrayAppendValue: <>
+  560 					CFRelease: <>
+  561 					SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+  562 					SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+  563 				CFStringCreateWithCString: <>
+  564 				dns_configuration_notify_key: 370
+  565 				CFStringCreateWithFormat: <>
+  566 				SCDynamicStoreKeyCreateProxies: CFStringRef (), <./SystemConfiguration.fproj/SCProxies.c 42>
+  567 					SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+  568 				SCDynamicStoreKeyCreateComputerName: CFStringRef (), <./SystemConfiguration.fproj/SCDHostName.c 101>
+  569 					SCDynamicStoreKeyCreate: 118
+  570 					CFSTR: <>
+  571 				SCDynamicStoreKeyCreateHostNames: CFStringRef (), <./SystemConfiguration.fproj/SCDHostName.c 381>
+  572 					SCDynamicStoreKeyCreate: 118
+  573 					CFSTR: <>
+  574 				SCDynamicStoreKeyCreate: 118
+  575 				SCDynamicStoreSetNotificationKeys: 195
+  576 				SCDynamicStoreCreateRunLoopSource: 199
+  577 				CFRunLoopAddSource: <>
+  578 				CFRunLoopGetCurrent: <>
+  579 			add_PrimaryService_notification: void (), <./Plugins/Logger/logger.c 1075>
+  580 				SCDynamicStoreCreate: 111
+  581 				CFSTR: <>
+  582 				PrimaryService_notification: void (), <./Plugins/Logger/logger.c 1029>
+  583 					SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+  584 					SCDynamicStoreCopyValue: 446
+  585 					CFRelease: <>
+  586 					isA_CFDictionary: <>
+  587 					CFDictionaryGetValueIfPresent: <>
+  588 					isA_CFString: <>
+  589 					CFRetain: <>
+  590 					CFDictionaryGetValue: <>
+  591 					SCLOG: 297
+  592 					CFSTR: <>
+  593 					elapsed: 277
+  594 				SCLOG: 297
+  595 				CFArrayCreateMutable: <>
+  596 				SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+  597 				CFArrayAppendValue: <>
+  598 				CFRelease: <>
+  599 				SCDynamicStoreSetNotificationKeys: 195
+  600 				SCDynamicStoreCreateRunLoopSource: 199
+  601 				CFRunLoopAddSource: <>
+  602 				CFRunLoopGetCurrent: <>
+  603 			CFDictionaryGetValueIfPresent: <>
+  604 			isA_CFArray: <>
+  605 			CFArrayGetCount: <>
+  606 			add_reachability_notification: void (), <./Plugins/Logger/logger.c 1135>
+  607 				CFRetain: <>
+  608 				CFRelease: <>
+  609 				CFSTR: <>
+  610 				bzero: <>
+  611 				htonl: <>
+  612 				SCNetworkReachabilityCreateWithAddress: SCNetworkReachabilityRef (), <./SystemConfiguration.fproj/SCNetworkReachability.c 2416>
+  613 					is_valid_address: const struct sockaddr * (), <./SystemConfiguration.fproj/SCNetworkReachability.c 2369>
+  614 					CFAllocatorAllocate: <>
+  615 					bcopy: <>
+  616 					SCLog: 16
+  617 					CFSTR: <>
+  618 				SCLOG: 297
+  619 				SCNetworkReachabilitySetCallback: Boolean (), <./SystemConfiguration.fproj/SCNetworkReachability.c 5843>
+  620 					MUTEX_LOCK: <>
+  621 					retain: <>
+  622 					bcopy: <>
+  623 					MUTEX_UNLOCK: <>
+  624 				reachability_notification: void (), <./Plugins/Logger/logger.c 1121>
+  625 					SCLOG: 297
+  626 					CFSTR: <>
+  627 					elapsed: 277
+  628 				SCNetworkReachabilityScheduleWithRunLoop: Boolean (), <./SystemConfiguration.fproj/SCNetworkReachability.c 6299>
+  629 					isA_SCNetworkReachability: __inline__ CFTypeRef (), <./SystemConfiguration.fproj/SCNetworkReachability.c 1851>
+  630 						isA_CFType: <>
+  631 						SCNetworkReachabilityGetTypeID: CFTypeID (), <./SystemConfiguration.fproj/SCNetworkReachability.c 2754>
+  632 							pthread_once: <>
+  633 				CFRunLoopGetCurrent: <>
+  634 				CFArrayGetCount: <>
+  635 				CFArrayGetValueAtIndex: <>
+  636 				isA_CFString: <>
+  637 				CFStringGetLength: <>
+  638 				SCNetworkReachabilityCreateWithName: SCNetworkReachabilityRef (), <./SystemConfiguration.fproj/SCNetworkReachability.c 2500>
+  639 					strlen: <>
+  640 					SCNetworkReachabilityCreateWithAddress: 612
+  641 					CFAllocatorAllocate: <>
+  642 					strlcpy: <>
+  643 					SCLog: 16
+  644 					CFSTR: <>
+  645 				CFAllocatorDeallocate: <>
+  646 		load_KernelEventMonitor: __private_extern__ void (), <./Plugins/KernelEventMonitor/eventmon.c 651>
+  647 			kevSocketCopyDescription: CFStringRef (), <./Plugins/KernelEventMonitor/eventmon.c 644>
+  648 				CFStringCreateWithFormat: <>
+  649 				CFSTR: <>
+  650 			SCLog: 16
+  651 			CFSTR: <>
+  652 			CFBundleGetIdentifier: <>
+  653 			SCDynamicStoreCreate: 111
+  654 			SCErrorString: 181
+  655 			SCError: 185
+  656 			socket: <>
+  657 			ioctl: <>
+  658 			strerror: <>
+  659 			close: <>
+  660 			CFRelease: <>
+  661 			CFSocketCreateWithNative: <>
+  662 			eventCallback: void (), <./Plugins/KernelEventMonitor/eventmon.c 514>
+  663 				CFSocketGetNative: <>
+  664 				recv: <>
+  665 				SCLog: 16
+  666 				CFSTR: <>
+  667 				strerror: <>
+  668 				cache_open: __private_extern__ void (), <./Plugins/common/cache.c 47>
+  669 					CFDictionaryCreateMutable: <>
+  670 					CFArrayCreateMutable: <>
+  671 				processEvent_Apple_Network: void (), <./Plugins/KernelEventMonitor/eventmon.c 264>
+  672 					inetEventNameString: const char * (), <./Plugins/KernelEventMonitor/eventmon.c 230>
+  673 					copy_if_name: void (), <./Plugins/KernelEventMonitor/eventmon.c 257>
+  674 						snprintf: <>
+  675 					interface_update_ipv4: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_ipv4.c 132>
+  676 						CFDictionaryCreateMutable: <>
+  677 						getifaddrs: <>
+  678 						SCLog: 16
+  679 						CFSTR: <>
+  680 						strerror: <>
+  681 						strncmp: <>
+  682 						CFStringCreateWithCString: <>
+  683 						SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+  684 						CFRelease: <>
+  685 						copyIF: CFMutableDictionaryRef (), <./Plugins/KernelEventMonitor/ev_ipv4.c 75>
+  686 							CFDictionaryGetValueIfPresent: <>
+  687 							CFDictionaryCreateMutableCopy: <>
+  688 							cache_SCDynamicStoreCopyValue: __private_extern__ CFPropertyListRef (), <./Plugins/common/cache.c 70>
+  689 								CFDictionaryGetValue: <>
+  690 								CFRetain: <>
+  691 								CFArrayContainsValue: <>
+  692 								CFRangeMake: <>
+  693 								CFArrayGetCount: <>
+  694 								SCDynamicStoreCopyValue: 446
+  695 								CFDictionarySetValue: <>
+  696 							CFDictionarySetValue: <>
+  697 							isA_CFDictionary: <>
+  698 							CFDictionaryRemoveValue: <>
+  699 							CFRelease: <>
+  700 							CFDictionaryCreateMutable: <>
+  701 						appendAddress: void (), <./Plugins/KernelEventMonitor/ev_ipv4.c 51>
+  702 							CFDictionaryGetValue: <>
+  703 							CFArrayCreateMutableCopy: <>
+  704 							CFArrayCreateMutable: <>
+  705 							CFStringCreateWithFormat: <>
+  706 							CFSTR: <>
+  707 							IP_LIST: <>
+  708 							CFArrayAppendValue: <>
+  709 							CFRelease: <>
+  710 							CFDictionarySetValue: <>
+  711 						CFDictionarySetValue: <>
+  712 						CFDictionaryApplyFunction: <>
+  713 						updateStore: void (), <./Plugins/KernelEventMonitor/ev_ipv4.c 109>
+  714 							CFDictionaryGetValue: <>
+  715 							CFEqual: <>
+  716 							CFDictionaryGetCount: <>
+  717 							cache_SCDynamicStoreSetValue: __private_extern__ void (), <./Plugins/common/cache.c 105>
+  718 								CFArrayGetFirstIndexOfValue: <>
+  719 								CFRangeMake: <>
+  720 								CFArrayGetCount: <>
+  721 								CFArrayRemoveValueAtIndex: <>
+  722 								CFDictionarySetValue: <>
+  723 							cache_SCDynamicStoreRemoveValue: __private_extern__ void (), <./Plugins/common/cache.c 124>
+  724 								CFDictionaryRemoveValue: <>
+  725 								CFArrayContainsValue: <>
+  726 								CFRangeMake: <>
+  727 								CFArrayGetCount: <>
+  728 								CFArrayAppendValue: <>
+  729 						freeifaddrs: <>
+  730 					interface_collision_ipv4: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_ipv4.c 242>
+  731 						CFStringCreateWithCString: <>
+  732 						SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+  733 						CFStringCreateMutableCopy: <>
+  734 						CFStringAppendFormat: <>
+  735 						CFSTR: <>
+  736 						IP_LIST: <>
+  737 						cache_SCDynamicStoreNotifyValue: __private_extern__ void (), <./Plugins/common/cache.c 140>
+  738 							CFArrayContainsValue: <>
+  739 							CFRangeMake: <>
+  740 							CFArrayGetCount: <>
+  741 							CFArrayAppendValue: <>
+  742 						CFRelease: <>
+  743 					port_in_use_ipv4: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_ipv4.c 273>
+  744 						SCDynamicStoreKeyCreate: 118
+  745 						CFSTR: <>
+  746 						cache_SCDynamicStoreNotifyValue: 737
+  747 						CFRelease: <>
+  748 					inet6EventNameString: const char * (), <./Plugins/KernelEventMonitor/eventmon.c 239>
+  749 					interface_update_ipv6: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_ipv6.c 248>
+  750 						CFDictionaryCreateMutable: <>
+  751 						getifaddrs: <>
+  752 						SCLog: 16
+  753 						CFSTR: <>
+  754 						strerror: <>
+  755 						strncmp: <>
+  756 						dgram_socket: __private_extern__ int (), <./Plugins/KernelEventMonitor/eventmon.c 131>
+  757 							socket: <>
+  758 						CFStringCreateWithCString: <>
+  759 						SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+  760 						CFRelease: <>
+  761 						copyIF: CFMutableDictionaryRef (), <./Plugins/KernelEventMonitor/ev_ipv6.c 188>
+  762 							CFDictionaryGetValueIfPresent: <>
+  763 							CFDictionaryCreateMutableCopy: <>
+  764 							cache_SCDynamicStoreCopyValue: 688
+  765 							CFDictionarySetValue: <>
+  766 							isA_CFDictionary: <>
+  767 							CFDictionaryRemoveValue: <>
+  768 							CFRelease: <>
+  769 							CFDictionaryCreateMutable: <>
+  770 						IN6_IS_ADDR_LINKLOCAL: <>
+  771 						IN6_IS_ADDR_MC_LINKLOCAL: <>
+  772 						index: <>
+  773 						ntohs: <>
+  774 						bzero: <>
+  775 						strncpy: <>
+  776 						ioctl: <>
+  777 						appendAddress: void (), <./Plugins/KernelEventMonitor/ev_ipv6.c 46>
+  778 							CFDictionaryGetValue: <>
+  779 							CFArrayCreateMutableCopy: <>
+  780 							CFArrayCreateMutable: <>
+  781 							inet_ntop: <>
+  782 							SCLog: 16
+  783 							CFSTR: <>
+  784 							strerror: <>
+  785 							CFStringCreateWithFormat: <>
+  786 							CFArrayAppendValue: <>
+  787 							CFRelease: <>
+  788 							CFDictionarySetValue: <>
+  789 						appendScopeID: void (), <./Plugins/KernelEventMonitor/ev_ipv6.c 163>
+  790 							CFDictionaryGetValue: <>
+  791 							CFArrayCreateMutableCopy: <>
+  792 							CFArrayCreateMutable: <>
+  793 							CFNumberCreate: <>
+  794 							CFArrayAppendValue: <>
+  795 							CFRelease: <>
+  796 							CFDictionarySetValue: <>
+  797 						appendPrefixLen: void (), <./Plugins/KernelEventMonitor/ev_ipv6.c 100>
+  798 							CFDictionaryGetValue: <>
+  799 							CFArrayCreateMutableCopy: <>
+  800 							CFArrayCreateMutable: <>
+  801 							CFNumberCreate: <>
+  802 							CFArrayAppendValue: <>
+  803 							CFRelease: <>
+  804 							CFDictionarySetValue: <>
+  805 						appendFlags: void (), <./Plugins/KernelEventMonitor/ev_ipv6.c 76>
+  806 							CFDictionaryGetValue: <>
+  807 							CFArrayCreateMutableCopy: <>
+  808 							CFArrayCreateMutable: <>
+  809 							CFNumberCreate: <>
+  810 							CFArrayAppendValue: <>
+  811 							CFRelease: <>
+  812 							CFDictionarySetValue: <>
+  813 						CFDictionarySetValue: <>
+  814 						CFDictionaryApplyFunction: <>
+  815 						updateStore: void (), <./Plugins/KernelEventMonitor/ev_ipv6.c 225>
+  816 							CFDictionaryGetValue: <>
+  817 							CFEqual: <>
+  818 							CFDictionaryGetCount: <>
+  819 							cache_SCDynamicStoreSetValue: 717
+  820 							cache_SCDynamicStoreRemoveValue: 723
+  821 						freeifaddrs: <>
+  822 						close: <>
+  823 					dlEventNameString: const char * (), <./Plugins/KernelEventMonitor/eventmon.c 248>
+  824 					link_add: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_dlil.c 275>
+  825 						CFStringCreateWithCString: <>
+  826 						SCDynamicStoreKeyCreateNetworkInterface: 187
+  827 						cache_SCDynamicStoreCopyValue: 688
+  828 						isA_CFDictionary: <>
+  829 						CFDictionaryCreateMutableCopy: <>
+  830 						CFDictionaryGetValue: <>
+  831 						isA_CFArray: <>
+  832 						CFArrayCreateMutableCopy: <>
+  833 						CFRelease: <>
+  834 						CFDictionaryCreateMutable: <>
+  835 						CFArrayCreateMutable: <>
+  836 						CFArrayContainsValue: <>
+  837 						CFRangeMake: <>
+  838 						CFArrayGetCount: <>
+  839 						CFArrayAppendValue: <>
+  840 						CFDictionarySetValue: <>
+  841 						cache_SCDynamicStoreSetValue: 717
+  842 						link_update_status: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_dlil.c 230>
+  843 							dgram_socket: 756
+  844 							SCLog: 16
+  845 							CFSTR: <>
+  846 							strerror: <>
+  847 							bzero: <>
+  848 							strncpy: <>
+  849 							ioctl: <>
+  850 							interface_update_status: void (), <./Plugins/KernelEventMonitor/ev_dlil.c 79>
+  851 								create_interface_key: CFStringRef (), <./Plugins/KernelEventMonitor/ev_dlil.c 40>
+  852 									CFStringCreateWithCString: <>
+  853 									SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+  854 									CFRelease: <>
+  855 								copy_entity: CFMutableDictionaryRef (), <./Plugins/KernelEventMonitor/ev_dlil.c 56>
+  856 									cache_SCDynamicStoreCopyValue: 688
+  857 									isA_CFDictionary: <>
+  858 									CFDictionaryCreateMutableCopy: <>
+  859 									CFRelease: <>
+  860 									CFDictionaryCreateMutable: <>
+  861 								CFDictionaryRemoveValue: <>
+  862 								CFDictionarySetValue: <>
+  863 								CFDictionaryGetCount: <>
+  864 								cache_SCDynamicStoreSetValue: 717
+  865 								cache_SCDynamicStoreRemoveValue: 723
+  866 								CFRelease: <>
+  867 							close: <>
+  868 						link_update_quality_metric: void (), <./Plugins/KernelEventMonitor/ev_dlil.c 163>
+  869 							dgram_socket: 756
+  870 							SCLog: 16
+  871 							CFSTR: <>
+  872 							strerror: <>
+  873 							bzero: <>
+  874 							snprintf: <>
+  875 							ioctl: <>
+  876 							interface_update_quality_metric: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_dlil.c 130>
+  877 								create_linkquality_key: CFStringRef (), <./Plugins/KernelEventMonitor/ev_dlil.c 113>
+  878 									CFStringCreateWithCString: <>
+  879 									SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+  880 									CFRelease: <>
+  881 								copy_entity: 855
+  882 								CFNumberCreate: <>
+  883 								CFDictionarySetValue: <>
+  884 								CFRelease: <>
+  885 								CFDictionaryRemoveValue: <>
+  886 								CFDictionaryGetCount: <>
+  887 								cache_SCDynamicStoreSetValue: 717
+  888 								cache_SCDynamicStoreRemoveValue: 723
+  889 							close: <>
+  890 					link_remove: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_dlil.c 333>
+  891 						CFStringCreateWithCString: <>
+  892 						SCDynamicStoreKeyCreateNetworkInterface: 187
+  893 						cache_SCDynamicStoreCopyValue: 688
+  894 						isA_CFDictionary: <>
+  895 						CFDictionaryCreateMutableCopy: <>
+  896 						CFDictionaryGetValue: <>
+  897 						isA_CFArray: <>
+  898 						CFArrayCreateMutableCopy: <>
+  899 						CFRelease: <>
+  900 						CFArrayGetFirstIndexOfValue: <>
+  901 						CFRangeMake: <>
+  902 						CFArrayGetCount: <>
+  903 						CFArrayRemoveValueAtIndex: <>
+  904 						CFDictionarySetValue: <>
+  905 						cache_SCDynamicStoreSetValue: 717
+  906 						interface_remove: void (), <./Plugins/KernelEventMonitor/ev_dlil.c 210>
+  907 							create_interface_key: 851
+  908 							cache_SCDynamicStoreRemoveValue: 723
+  909 							CFRelease: <>
+  910 							create_linkquality_key: 877
+  911 					interface_detaching: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_dlil.c 194>
+  912 						create_interface_key: 851
+  913 						copy_entity: 855
+  914 						CFDictionarySetValue: <>
+  915 						cache_SCDynamicStoreSetValue: 717
+  916 						CFRelease: <>
+  917 					mark_if_down: void (), <./Plugins/KernelEventMonitor/eventmon.c 179>
+  918 						dgram_socket: 756
+  919 						ifflags_clear: int (), <./Plugins/KernelEventMonitor/eventmon.c 153>
+  920 							bzero: <>
+  921 							strlcpy: <>
+  922 							ioctl: <>
+  923 						close: <>
+  924 					mark_if_up: void (), <./Plugins/KernelEventMonitor/eventmon.c 169>
+  925 						dgram_socket: 756
+  926 						ifflags_set: int (), <./Plugins/KernelEventMonitor/eventmon.c 137>
+  927 							bzero: <>
+  928 							strlcpy: <>
+  929 							ioctl: <>
+  930 						close: <>
+  931 					interface_update_idle_state: __private_extern__ void (), <./Plugins/KernelEventMonitor/ev_dlil.c 414>
+  932 						socket_reference_count: int (), <./Plugins/KernelEventMonitor/ev_dlil.c 389>
+  933 							dgram_socket: 756
+  934 							bzero: <>
+  935 							snprintf: <>
+  936 							ioctl: <>
+  937 							close: <>
+  938 						CFStringCreateWithCString: <>
+  939 						SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+  940 						cache_SCDynamicStoreNotifyValue: 737
+  941 						CFRelease: <>
+  942 					link_update_status: 842
+  943 					interface_update_quality_metric: 876
+  944 					nd6EventNameString: const char *[], <./Plugins/KernelEventMonitor/eventmon.c 119>
+  945 					CFStringCreateWithCString: <>
+  946 					logEvent: void (), <./Plugins/KernelEventMonitor/eventmon.c 206>
+  947 						SCLog: 16
+  948 						CFSTR: <>
+  949 					CFRelease: <>
+  950 				logEvent: 946
+  951 				cache_write: __private_extern__ void (), <./Plugins/common/cache.c 154>
+  952 					CFDictionaryGetCount: <>
+  953 					CFArrayGetCount: <>
+  954 					SCDynamicStoreSetMultiple: Boolean (), <./SystemConfiguration.fproj/SCDSet.c 44>
+  955 						CFRelease: <>
+  956 						configset_m: <>
+  957 					SCLog: 16
+  958 					CFSTR: <>
+  959 					SCErrorString: 181
+  960 					SCError: 185
+  961 				cache_close: __private_extern__ void (), <./scutil.tproj/cache.c 180>
+  962 					CFRelease: <>
+  963 				post_network_changed: void (), <./Plugins/KernelEventMonitor/eventmon.c 189>
+  964 					notify_post: <>
+  965 					SCLog: 16
+  966 					CFSTR: <>
+  967 				CFSocketInvalidate: <>
+  968 			CFSocketCreateRunLoopSource: <>
+  969 			CFRunLoopAddSource: <>
+  970 			CFRunLoopGetCurrent: <>
+  971 		prime_KernelEventMonitor: __private_extern__ void (), <./Plugins/KernelEventMonitor/eventmon.c 582>
+  972 			SCLog: 16
+  973 			CFSTR: <>
+  974 			cache_open: 668
+  975 			dgram_socket: 756
+  976 			strerror: <>
+  977 			getifaddrs: <>
+  978 			link_add: 824
+  979 			interface_update_ipv4: 675
+  980 			interface_update_ipv6: 749
+  981 			freeifaddrs: <>
+  982 			close: <>
+  983 			cache_write: 951
+  984 			cache_close: 961
+  985 			post_network_changed: 963
+  986 		load_PreferencesMonitor: __private_extern__ void (), <./Plugins/PreferencesMonitor/prefsmon.c 703>
+  987 			SCLog: 16
+  988 			CFSTR: <>
+  989 			CFBundleGetIdentifier: <>
+  990 			SCDynamicStoreCreate: 111
+  991 			watchQuietCallback: void (), <./Plugins/PreferencesMonitor/prefsmon.c 303>
+  992 				quiet: Boolean (), <./Plugins/PreferencesMonitor/prefsmon.c 230>
+  993 					SCDynamicStoreCopyValue: 446
+  994 					isA_CFDictionary: <>
+  995 					CFDictionaryContainsKey: <>
+  996 					CFSTR: <>
+  997 					CFRelease: <>
+  998 				watchQuietDisable: void (), <./Plugins/PreferencesMonitor/prefsmon.c 258>
+  999 					SCDynamicStoreSetNotificationKeys: 195
+ 1000 					CFRunLoopSourceInvalidate: <>
+ 1001 					CFRelease: <>
+ 1002 				establishNewPreferences: Boolean (), <./Plugins/PreferencesMonitor/prefsmon.c 71>
+ 1003 					SCPreferencesLock: Boolean (), <./SystemConfiguration.fproj/SCPLock.c 356>
+ 1004 						pthread_mutex_lock: <>
+ 1005 						strlen: <>
+ 1006 						CFAllocatorAllocate: <>
+ 1007 						snprintf: <>
+ 1008 						gettimeofday: <>
+ 1009 						lockWithSCDynamicStore: Boolean (), <./SystemConfiguration.fproj/SCPLock.c 284>
+ 1010 							SCDynamicStoreAddWatchedKey: Boolean (), <./SystemConfiguration.fproj/SCDNotifierAdd.c 56>
+ 1011 								notifyadd: <>
+ 1012 								CFRelease: <>
+ 1013 								addKey: void (), <./SystemConfiguration.fproj/SCDNotifierAdd.c 44>
+ 1014 									CFArrayCreateMutable: <>
+ 1015 									CFArrayAppendValue: <>
+ 1016 							SCError: 185
+ 1017 							SCLog: 16
+ 1018 							CFSTR: <>
+ 1019 							CFDateCreate: <>
+ 1020 							CFAbsoluteTimeGetCurrent: <>
+ 1021 							SCDynamicStoreAddTemporaryValue: Boolean (), <./SystemConfiguration.fproj/SCDAdd.c 43>
+ 1022 								CFRelease: <>
+ 1023 								configadd_s: <>
+ 1024 							CFRelease: <>
+ 1025 							SCDynamicStoreNotifyWait: Boolean (), <./SystemConfiguration.fproj/SCDNotifierWait.c 68>
+ 1026 								mach_port_allocate: <>
+ 1027 								mach_task_self: <>
+ 1028 								SCLog: 16
+ 1029 								CFSTR: <>
+ 1030 								mach_error_string: <>
+ 1031 								mach_port_insert_right: <>
+ 1032 								mach_port_request_notification: <>
+ 1033 								notifyviaport: <>
+ 1034 								mach_port_deallocate: <>
+ 1035 								mach_port_mod_refs: <>
+ 1036 								waitForMachMessage: mach_msg_id_t (), <./SystemConfiguration.fproj/SCDNotifierWait.c 43>
+ 1037 									mach_msg: <>
+ 1038 									SCLog: 16
+ 1039 									CFSTR: <>
+ 1040 									mach_error_string: <>
+ 1041 								notifycancel: <>
+ 1042 							SCDynamicStoreCopyNotifiedKeys: 260
+ 1043 							SCDynamicStoreRemoveWatchedKey: Boolean (), <./SystemConfiguration.fproj/SCDNotifierRemove.c 66>
+ 1044 								notifyremove: <>
+ 1045 								CFRelease: <>
+ 1046 								removeKey: void (), <./SystemConfiguration.fproj/SCDNotifierRemove.c 43>
+ 1047 									CFArrayGetCount: <>
+ 1048 									CFArrayGetFirstIndexOfValue: <>
+ 1049 									CFRangeMake: <>
+ 1050 									CFArrayRemoveValueAtIndex: <>
+ 1051 						open: <>
+ 1052 						CFStringHasPrefix: <>
+ 1053 						CFSTR: <>
+ 1054 						createParentDirectory: int (), <./SystemConfiguration.fproj/SCPLock.c 104>
+ 1055 							strlcpy: <>
+ 1056 							strrchr: <>
+ 1057 							mkdir: <>
+ 1058 							getgrnam_r: <>
+ 1059 							SCLog: 16
+ 1060 							CFSTR: <>
+ 1061 							strerror: <>
+ 1062 							chown: <>
+ 1063 							chmod: <>
+ 1064 							strchr: <>
+ 1065 						SCLog: 16
+ 1066 						has_O_EXLOCK: Boolean (), <./SystemConfiguration.fproj/SCPLock.c 227>
+ 1067 							open: <>
+ 1068 							SCLog: 16
+ 1069 							CFSTR: <>
+ 1070 							strerror: <>
+ 1071 							fstatfs: <>
+ 1072 							unlink: <>
+ 1073 							close: <>
+ 1074 							bzero: <>
+ 1075 							getattrlist: <>
+ 1076 						strerror: <>
+ 1077 						stat: <>
+ 1078 						fstat: <>
+ 1079 						close: <>
+ 1080 						getpid: <>
+ 1081 						write: <>
+ 1082 						timersub: <>
+ 1083 						bzero: <>
+ 1084 						CFEqual: <>
+ 1085 						CFRelease: <>
+ 1086 						reportDelay: void (), <./SystemConfiguration.fproj/SCPLock.c 196>
+ 1087 							asl_new: <>
+ 1088 							asl_set: <>
+ 1089 							snprintf: <>
+ 1090 							SCLOG: 297
+ 1091 							CFSTR: <>
+ 1092 							asl_free: <>
+ 1093 						pthread_mutex_unlock: <>
+ 1094 						unlink: <>
+ 1095 					SCError: 185
+ 1096 					SCPreferencesSynchronize: void (), <./SystemConfiguration.fproj/SCPOpen.c 1116>
+ 1097 						isA_SCPreferences: __inline__ CFTypeRef (), <./SystemConfiguration.fproj/SCPOpen.c 59>
+ 1098 							isA_CFType: <>
+ 1099 							SCPreferencesGetTypeID: CFTypeID (), <./SystemConfiguration.fproj/SCPOpen.c 743>
+ 1100 								pthread_once: <>
+ 1101 						CFRelease: <>
+ 1102 					SCLog: 16
+ 1103 					CFSTR: <>
+ 1104 					SCErrorString: 181
+ 1105 					SCPreferencesGetValue: 5
+ 1106 					index: <>
+ 1107 					SCPreferencesCopyKeyList: CFArrayRef (), <./SystemConfiguration.fproj/SCPList.c 39>
+ 1108 						CFGetAllocator: <>
+ 1109 						CFDictionaryGetCount: <>
+ 1110 						CFAllocatorAllocate: <>
+ 1111 						CFDictionaryGetKeysAndValues: <>
+ 1112 						CFArrayCreate: <>
+ 1113 						CFAllocatorDeallocate: <>
+ 1114 					CFArrayGetCount: <>
+ 1115 					CFArrayGetValueAtIndex: <>
+ 1116 					isA_CFString: <>
+ 1117 					CFEqual: <>
+ 1118 					CFStringFind: <>
+ 1119 					CFStringCreateWithFormat: <>
+ 1120 					SCPreferencesSetValue: Boolean (), <./SystemConfiguration.fproj/SCPSet.c 39>
+ 1121 						CFDictionarySetValue: <>
+ 1122 					SCPreferencesRemoveValue: Boolean (), <./SystemConfiguration.fproj/SCPRemove.c 58>
+ 1123 						CFDictionaryContainsKey: <>
+ 1124 						CFDictionaryRemoveValue: <>
+ 1125 					CFRelease: <>
+ 1126 					SCNetworkSetCopyCurrent: 4
+ 1127 					SCNetworkSetCreate: SCNetworkSetRef (), <./SystemConfiguration.fproj/SCNetworkSet.c 656>
+ 1128 						SCPreferencesPathKeyCreateSets: __private_extern__ CFStringRef (), <./SystemConfiguration.fproj/SCPreferencesPathKey.c 100>
+ 1129 							CFStringCreateWithFormat: <>
+ 1130 							CFSTR: <>
+ 1131 						SCPreferencesPathCreateUniqueChild: CFStringRef (), <./SystemConfiguration.fproj/SCPPath.c 344>
+ 1132 							getPath: 28
+ 1133 							CFDictionaryContainsKey: <>
+ 1134 							SCError: 185
+ 1135 							CFUUIDCreate: <>
+ 1136 							CFUUIDCreateString: <>
+ 1137 							CFStringCreateWithFormat: <>
+ 1138 							CFSTR: <>
+ 1139 							CFRelease: <>
+ 1140 							CFDictionaryCreate: <>
+ 1141 							setPath: Boolean (), <./SystemConfiguration.fproj/SCPPath.c 170>
+ 1142 								isA_CFDictionary: <>
+ 1143 								normalizePath: 29
+ 1144 								CFArrayGetCount: <>
+ 1145 								CFRelease: <>
+ 1146 								CFDictionaryCreateMutable: <>
+ 1147 								CFDictionaryCreateMutableCopy: <>
+ 1148 								CFArrayCreateMutable: <>
+ 1149 								CFArrayGetValueAtIndex: <>
+ 1150 								SCPreferencesGetValue: 5
+ 1151 								CFDictionaryGetValue: <>
+ 1152 								CFArrayAppendValue: <>
+ 1153 								CFDictionaryCreate: <>
+ 1154 								CFDictionaryGetValueIfPresent: <>
+ 1155 								CFArrayAppendArray: <>
+ 1156 								CFRangeMake: <>
+ 1157 								CFRetain: <>
+ 1158 								SCPreferencesSetValue: 1120
+ 1159 								SCPreferencesRemoveValue: 1122
+ 1160 								CFDictionarySetValue: <>
+ 1161 								CFDictionaryRemoveValue: <>
+ 1162 								CFDictionaryGetCount: <>
+ 1163 						CFRelease: <>
+ 1164 						CFStringCreateArrayBySeparatingStrings: <>
+ 1165 						CFSTR: <>
+ 1166 						CFArrayGetValueAtIndex: <>
+ 1167 						CFDictionaryCreate: <>
+ 1168 						SCPreferencesPathSetValue: Boolean (), <./SystemConfiguration.fproj/SCPPath.c 450>
+ 1169 							CFEqual: <>
+ 1170 							CFSTR: <>
+ 1171 							isA_CFString: <>
+ 1172 							SCPrint: 100
+ 1173 							SCPreferencesSetValue: 1120
+ 1174 							isA_CFDictionary: <>
+ 1175 							setPath: 1141
+ 1176 					CFBundleCopyLocalizedString: <>
+ 1177 					SCNetworkSetSetName: Boolean (), <./SystemConfiguration.fproj/SCNetworkSet.c 919>
+ 1178 						isA_SCNetworkSet: <>
+ 1179 						isA_CFString: <>
+ 1180 						CFSTR: <>
+ 1181 						CFEqual: <>
+ 1182 						CFBundleCopyLocalizedString: <>
+ 1183 						SCNetworkSetCopyAll: CFArrayRef (), <./SystemConfiguration.fproj/SCNetworkSet.c 478>
+ 1184 							SCPreferencesPathKeyCreateSets: 1128
+ 1185 							SCPreferencesPathGetValue: 27
+ 1186 							CFRelease: <>
+ 1187 							isA_CFDictionary: <>
+ 1188 							CFArrayCreateMutable: <>
+ 1189 							CFDictionaryGetCount: <>
+ 1190 							CFAllocatorAllocate: <>
+ 1191 							CFDictionaryGetKeysAndValues: <>
+ 1192 							SCLog: 16
+ 1193 							CFSTR: <>
+ 1194 							CFArrayAppendValue: <>
+ 1195 							CFAllocatorDeallocate: <>
+ 1196 						CFArrayGetCount: <>
+ 1197 						CFArrayGetValueAtIndex: <>
+ 1198 						SCNetworkSetGetSetID: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkSet.c 700>
+ 1199 							isA_SCNetworkSet: <>
+ 1200 						SCNetworkSetGetName: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkSet.c 714>
+ 1201 							isA_SCNetworkSet: <>
+ 1202 							SCPreferencesPathKeyCreateSet: 12
+ 1203 							SCPreferencesPathGetValue: 27
+ 1204 							CFRelease: <>
+ 1205 							isA_CFDictionary: <>
+ 1206 							CFDictionaryGetValue: <>
+ 1207 							isA_CFString: <>
+ 1208 							CFRetain: <>
+ 1209 							CFSTR: <>
+ 1210 							CFEqual: <>
+ 1211 							CFBundleCopyLocalizedString: <>
+ 1212 						CFRelease: <>
+ 1213 						SCPreferencesPathKeyCreateSet: 12
+ 1214 						SCPreferencesPathGetValue: 27
+ 1215 						isA_CFDictionary: <>
+ 1216 						CFDictionaryCreateMutableCopy: <>
+ 1217 						CFDictionaryCreateMutable: <>
+ 1218 						CFDictionarySetValue: <>
+ 1219 						CFDictionaryRemoveValue: <>
+ 1220 						SCPreferencesPathSetValue: 1168
+ 1221 					SCNetworkSetSetCurrent: Boolean (), <./SystemConfiguration.fproj/SCNetworkSet.c 900>
+ 1222 						isA_SCNetworkSet: <>
+ 1223 						SCPreferencesPathKeyCreateSet: 12
+ 1224 						SCPreferencesSetValue: 1120
+ 1225 						CFRelease: <>
+ 1226 					SCNetworkSetEstablishDefaultConfiguration: Boolean (), <./SystemConfiguration.fproj/SCNetworkSet.c 1357>
+ 1227 						isA_SCNetworkSet: <>
+ 1228 						CFRelease: <>
+ 1229 					SCPreferencesCommitChanges: Boolean (), <./SystemConfiguration.fproj/SCPCommit.c 132>
+ 1230 						SCPreferencesLock: 1003
+ 1231 						SCLog: 16
+ 1232 						CFSTR: <>
+ 1233 						CFDictionaryGetCount: <>
+ 1234 						CFDictionaryGetValueIfPresent: <>
+ 1235 						isA_CFBoolean: <>
+ 1236 						CFBooleanGetValue: <>
+ 1237 						stat: <>
+ 1238 						bzero: <>
+ 1239 						geteuid: <>
+ 1240 						getegid: <>
+ 1241 						strerror: <>
+ 1242 						strlen: <>
+ 1243 						CFAllocatorAllocate: <>
+ 1244 						snprintf: <>
+ 1245 						open: <>
+ 1246 						CFAllocatorDeallocate: <>
+ 1247 						fchown: <>
+ 1248 						fchmod: <>
+ 1249 						CFPropertyListCreateData: <>
+ 1250 						close: <>
+ 1251 						writen: ssize_t (), <./SystemConfiguration.fproj/SCPCommit.c 111>
+ 1252 							write: <>
+ 1253 						CFDataGetBytePtr: <>
+ 1254 						CFDataGetLength: <>
+ 1255 						unlink: <>
+ 1256 						CFRelease: <>
+ 1257 						fsync: <>
+ 1258 						fcntl: <>
+ 1259 						rename: <>
+ 1260 						symlink: <>
+ 1261 						SCDynamicStoreNotifyValue: Boolean (), <./SystemConfiguration.fproj/SCDNotify.c 40>
+ 1262 							confignotify: <>
+ 1263 							CFRelease: <>
+ 1264 						SCError: 185
+ 1265 						SCPreferencesUnlock: Boolean (), <./SystemConfiguration.fproj/SCPUnlock.c 120>
+ 1266 							pthread_mutex_lock: <>
+ 1267 							SCDynamicStoreRemoveValue: Boolean (), <./SystemConfiguration.fproj/SCDRemove.c 43>
+ 1268 								configremove: <>
+ 1269 								CFRelease: <>
+ 1270 							unlink: <>
+ 1271 							close: <>
+ 1272 							gettimeofday: <>
+ 1273 							timersub: <>
+ 1274 							reportDelay: void (), <./SystemConfiguration.fproj/SCPUnlock.c 90>
+ 1275 								asl_new: <>
+ 1276 								asl_set: <>
+ 1277 								snprintf: <>
+ 1278 								SCLOG: 297
+ 1279 								CFSTR: <>
+ 1280 								asl_free: <>
+ 1281 							pthread_mutex_unlock: <>
+ 1282 					SCPreferencesApplyChanges: Boolean (), <./SystemConfiguration.fproj/SCPApply.c 87>
+ 1283 						SCPreferencesLock: 1003
+ 1284 						SCLog: 16
+ 1285 						CFSTR: <>
+ 1286 						SCDynamicStoreNotifyValue: 1261
+ 1287 						SCError: 185
+ 1288 						SCPreferencesUnlock: 1265
+ 1289 					SCNetworkSetRemove: Boolean (), <./SystemConfiguration.fproj/SCNetworkSet.c 816>
+ 1290 						isA_SCNetworkSet: <>
+ 1291 						SCPreferencesGetValue: 5
+ 1292 						SCPreferencesPathKeyCreateSet: 12
+ 1293 						isA_CFString: <>
+ 1294 						CFEqual: <>
+ 1295 						SCPreferencesPathRemoveValue: Boolean (), <./SystemConfiguration.fproj/SCPPath.c 525>
+ 1296 							getPath: 28
+ 1297 							normalizePath: 29
+ 1298 							setPath: 1141
+ 1299 							CFRelease: <>
+ 1300 						CFRelease: <>
+ 1301 					SCPreferencesUnlock: 1265
+ 1302 				SCLog: 16
+ 1303 				CFSTR: <>
+ 1304 			SCErrorString: 181
+ 1305 			SCError: 185
+ 1306 			SCPreferencesCreate: 2
+ 1307 			SCPreferencesGetValue: 5
+ 1308 			SCNetworkSetCopyCurrent: 4
+ 1309 			CFRelease: <>
+ 1310 			SCPreferencesSetCallback: Boolean (), <./SystemConfiguration.fproj/SCPOpen.c 844>
+ 1311 				isA_SCPreferences: 1097
+ 1312 				pthread_mutex_lock: <>
+ 1313 				retain: <>
+ 1314 				bcopy: <>
+ 1315 				pthread_mutex_unlock: <>
+ 1316 			updateConfiguration: void (), <./Plugins/PreferencesMonitor/prefsmon.c 651>
+ 1317 				SCNetworkSetCopyCurrent: 4
+ 1318 				watchQuietDisable: 998
+ 1319 				CFRelease: <>
+ 1320 				SCLog: 16
+ 1321 				CFSTR: <>
+ 1322 				updateSCDynamicStore: void (), <./Plugins/PreferencesMonitor/prefsmon.c 457>
+ 1323 					CFArrayCreateMutable: <>
+ 1324 					CFStringCreateWithFormat: <>
+ 1325 					CFSTR: <>
+ 1326 					CFArrayAppendValue: <>
+ 1327 					SCDynamicStoreCopyMultiple: 123
+ 1328 					CFRelease: <>
+ 1329 					CFDictionaryCreateMutableCopy: <>
+ 1330 					CFDictionaryCreateMutable: <>
+ 1331 					CFDictionaryGetCount: <>
+ 1332 					CFAllocatorAllocate: <>
+ 1333 					CFDictionaryGetKeysAndValues: <>
+ 1334 					CFArrayCreate: <>
+ 1335 					CFArrayCreateMutableCopy: <>
+ 1336 					CFAllocatorDeallocate: <>
+ 1337 					CFDateCreate: <>
+ 1338 					CFAbsoluteTimeGetCurrent: <>
+ 1339 					SCPreferencesCopyKeyList: 1107
+ 1340 					CFArrayGetCount: <>
+ 1341 					SCLog: 16
+ 1342 					SCPreferencesGetValue: 5
+ 1343 					isA_CFDictionary: <>
+ 1344 					flatten: void (), <./Plugins/PreferencesMonitor/prefsmon.c 365>
+ 1345 						CFDictionaryGetValueIfPresent: <>
+ 1346 						SCPreferencesPathGetValue: 27
+ 1347 						SCLog: 16
+ 1348 						CFSTR: <>
+ 1349 						SCErrorString: 181
+ 1350 						SCError: 185
+ 1351 						CFDictionaryContainsKey: <>
+ 1352 						CFStringCreateWithFormat: <>
+ 1353 						CFDictionaryGetValue: <>
+ 1354 						CFDictionaryCreateMutableCopy: <>
+ 1355 						CFDictionaryCreateMutable: <>
+ 1356 						CFDictionaryGetCount: <>
+ 1357 						CFAllocatorAllocate: <>
+ 1358 						CFDictionaryGetKeysAndValues: <>
+ 1359 						CFGetTypeID: <>
+ 1360 						CFDictionaryGetTypeID: <>
+ 1361 						CFDictionarySetValue: <>
+ 1362 						CFEqual: <>
+ 1363 						flatten: 1344
+ 1364 						CFRelease: <>
+ 1365 						CFAllocatorDeallocate: <>
+ 1366 					isA_CFString: <>
+ 1367 					SCPreferencesPathGetValue: 27
+ 1368 					CFDictionarySetValue: <>
+ 1369 					CFDictionaryApplyFunction: <>
+ 1370 					updateCache: void (), <./Plugins/PreferencesMonitor/prefsmon.c 332>
+ 1371 						CFDictionaryGetValue: <>
+ 1372 						CFEqual: <>
+ 1373 						CFArrayAppendValue: <>
+ 1374 						CFArrayGetFirstIndexOfValue: <>
+ 1375 						CFRangeMake: <>
+ 1376 						CFArrayGetCount: <>
+ 1377 						CFArrayRemoveValueAtIndex: <>
+ 1378 					CFArrayGetValueAtIndex: <>
+ 1379 					CFDictionaryRemoveValue: <>
+ 1380 					SCDynamicStoreSetMultiple: 954
+ 1381 					SCErrorString: 181
+ 1382 					SCError: 185
+ 1383 				SCPreferencesSynchronize: 1096
+ 1384 			SCPreferencesScheduleWithRunLoop: Boolean (), <./SystemConfiguration.fproj/SCPOpen.c 1037>
+ 1385 				isA_SCPreferences: 1097
+ 1386 			CFRunLoopGetCurrent: <>
+ 1387 			watchQuietEnable: void (), <./Plugins/PreferencesMonitor/prefsmon.c 278>
+ 1388 				SCDynamicStoreKeyCreate: 118
+ 1389 				CFSTR: <>
+ 1390 				SCDynamicStoreCreateRunLoopSource: 199
+ 1391 				CFRunLoopAddSource: <>
+ 1392 				CFRunLoopGetCurrent: <>
+ 1393 				CFArrayCreate: <>
+ 1394 				SCDynamicStoreSetNotificationKeys: 195
+ 1395 				CFRelease: <>
+ 1396 				SCLog: 16
+ 1397 				SCErrorString: 181
+ 1398 				SCError: 185
+ 1399 				watchQuietDisable: 998
+ 1400 			watchQuietDisable: 998
+ 1401 		prime_PreferencesMonitor: __private_extern__ void (), <./Plugins/PreferencesMonitor/prefsmon.c 690>
+ 1402 			SCLog: 16
+ 1403 			CFSTR: <>
+ 1404 			updateConfiguration: 1316
+ 1405 		strcmp: <>
+ 1406 		SCDynamicStoreCreate: 111
+ 1407 		SCErrorString: 181
+ 1408 		SCError: 185
+ 1409 		copy_static_name: CFStringRef (), <./Plugins/IPMonitor/set-hostname.c 115>
+ 1410 			fopen: <>
+ 1411 			fgets: <>
+ 1412 			strlen: <>
+ 1413 			fgetc: <>
+ 1414 			isspace: <>
+ 1415 			strncmp: <>
+ 1416 			CFRelease: <>
+ 1417 			strcmp: <>
+ 1418 			CFStringCreateWithCString: <>
+ 1419 			fclose: <>
+ 1420 		copy_prefs_hostname: CFStringRef (), <./Plugins/IPMonitor/set-hostname.c 219>
+ 1421 			SCDynamicStoreKeyCreateComputerName: 568
+ 1422 			SCDynamicStoreCopyValue: 446
+ 1423 			CFRelease: <>
+ 1424 			isA_CFDictionary: <>
+ 1425 			isA_CFString: <>
+ 1426 			CFDictionaryGetValue: <>
+ 1427 			CFRetain: <>
+ 1428 		copy_primary_service: CFStringRef (), <./Plugins/IPMonitor/set-hostname.c 250>
+ 1429 			SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 1430 			SCDynamicStoreCopyValue: 446
+ 1431 			CFRelease: <>
+ 1432 			isA_CFDictionary: <>
+ 1433 			CFDictionaryGetValue: <>
+ 1434 			isA_CFString: <>
+ 1435 			CFRetain: <>
+ 1436 		CFStringCreateWithCString: <>
+ 1437 		copy_dhcp_name: <>
+ 1438 		copy_primary_ip: CFStringRef (), <./Plugins/IPMonitor/set-hostname.c 279>
+ 1439 			SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 1440 			SCDynamicStoreCopyValue: 446
+ 1441 			CFRelease: <>
+ 1442 			isA_CFDictionary: <>
+ 1443 			CFDictionaryGetValue: <>
+ 1444 			isA_CFArray: <>
+ 1445 			CFArrayGetCount: <>
+ 1446 			CFArrayGetValueAtIndex: <>
+ 1447 			isA_CFString: <>
+ 1448 			CFRetain: <>
+ 1449 		start_dns_query: void (), <./Plugins/IPMonitor/set-hostname.c 449>
+ 1450 			SCLog: 16
+ 1451 			CFSTR: <>
+ 1452 			CFRetain: <>
+ 1453 			CFRelease: <>
+ 1454 			replyMPCopyDescription: CFStringRef (), <./Plugins/IPMonitor/set-hostname.c 391>
+ 1455 				CFStringCreateWithFormat: <>
+ 1456 				CFSTR: <>
+ 1457 			gettimeofday: <>
+ 1458 			getnameinfo_async_start: <>
+ 1459 			reverseDNSComplete: void (), <./Plugins/IPMonitor/set-hostname.c 313>
+ 1460 				gettimeofday: <>
+ 1461 				timersub: <>
+ 1462 				SCLog: 16
+ 1463 				CFSTR: <>
+ 1464 				CFStringCreateWithCString: <>
+ 1465 				set_hostname: void (), <./Plugins/IPMonitor/set-hostname.c 59>
+ 1466 					gethostname: <>
+ 1467 					SCLog: 16
+ 1468 					CFSTR: <>
+ 1469 					strerror: <>
+ 1470 					strcmp: <>
+ 1471 					sethostname: <>
+ 1472 					strlen: <>
+ 1473 					notify_post: <>
+ 1474 				CFRelease: <>
+ 1475 				gai_strerror: <>
+ 1476 				SCDynamicStoreCopyLocalHostName: CFStringRef (), <./SystemConfiguration.fproj/SCDHostName.c 392>
+ 1477 					SCDynamicStoreKeyCreateHostNames: 571
+ 1478 					SCDynamicStoreCopyValue: 446
+ 1479 					CFRelease: <>
+ 1480 					isA_CFDictionary: <>
+ 1481 					isA_CFString: <>
+ 1482 					CFDictionaryGetValue: <>
+ 1483 					CFRetain: <>
+ 1484 				CFStringCreateMutableCopy: <>
+ 1485 				CFStringAppend: <>
+ 1486 				free: <>
+ 1487 			getnameinfo_async_handleCFReply: void (), <./Plugins/IPMonitor/set-hostname.c 403>
+ 1488 				SCLog: 16
+ 1489 				CFSTR: <>
+ 1490 				CFMachPortGetPort: <>
+ 1491 				CFMachPortInvalidate: <>
+ 1492 				CFRelease: <>
+ 1493 				getnameinfo_async_handle_reply: <>
+ 1494 				CFRetain: <>
+ 1495 				replyMPCopyDescription: 1454
+ 1496 				getnameinfo_async_handleCFReply: 1487
+ 1497 				CFMachPortCreateRunLoopSource: <>
+ 1498 				CFRunLoopAddSource: <>
+ 1499 				CFRunLoopGetCurrent: <>
+ 1500 			CFMachPortCreateRunLoopSource: <>
+ 1501 			CFRunLoopAddSource: <>
+ 1502 			CFRunLoopGetCurrent: <>
+ 1503 		SCDynamicStoreCopyLocalHostName: 1476
+ 1504 		CFStringCreateMutableCopy: <>
+ 1505 		CFStringAppend: <>
+ 1506 		update_hostname: void (), <./Plugins/IPMonitor/set-hostname.c 523>
+ 1507 			CFMachPortGetPort: <>
+ 1508 			CFMachPortInvalidate: <>
+ 1509 			CFRelease: <>
+ 1510 			getnameinfo_async_cancel: <>
+ 1511 			copy_static_name: 1409
+ 1512 			SCLog: 16
+ 1513 			CFSTR: <>
+ 1514 			set_hostname: 1465
+ 1515 			copy_prefs_hostname: 1420
+ 1516 			copy_primary_service: 1428
+ 1517 			copy_dhcp_hostname: __private_extern__ CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 1566>
+ 1518 				service_dict_get: CFDictionaryRef (), <./Plugins/IPMonitor/ip_plugin.c 1549>
+ 1519 					CFDictionaryGetValue: <>
+ 1520 				isA_CFDictionary: <>
+ 1521 				CFDictionaryGetValue: <>
+ 1522 				CFRetain: <>
+ 1523 			copy_primary_ip: 1438
+ 1524 			start_dns_query: 1449
+ 1525 			SCDynamicStoreCopyLocalHostName: 1476
+ 1526 			CFStringCreateMutableCopy: <>
+ 1527 			CFStringAppend: <>
+ 1528 		load_hostname: __private_extern__ void (), <./Plugins/IPMonitor/set-hostname.c 617>
+ 1529 			SCDynamicStoreCreate: 111
+ 1530 			CFSTR: <>
+ 1531 			update_hostname: 1506
+ 1532 			SCLog: 16
+ 1533 			SCErrorString: 181
+ 1534 			SCError: 185
+ 1535 			CFArrayCreateMutable: <>
+ 1536 			SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 1537 			CFArrayAppendValue: <>
+ 1538 			CFRelease: <>
+ 1539 			SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 1540 			SCDynamicStoreKeyCreateComputerName: 568
+ 1541 			SCDynamicStoreKeyCreateHostNames: 571
+ 1542 			SCDynamicStoreSetNotificationKeys: 195
+ 1543 			SCDynamicStoreCreateRunLoopSource: 199
+ 1544 			CFRunLoopAddSource: <>
+ 1545 			CFRunLoopGetCurrent: <>
+ 1546 		strtoul: <>
+ 1547 		load_IPMonitor: __private_extern__ void (), <./Plugins/IPMonitor/ip_plugin.c 5127>
+ 1548 			CFBundleGetInfoDictionary: <>
+ 1549 			S_get_plist_boolean: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 5112>
+ 1550 				isA_CFBoolean: <>
+ 1551 				CFDictionaryGetValue: <>
+ 1552 				CFBooleanGetValue: <>
+ 1553 			CFSTR: <>
+ 1554 			dns_configuration_init: __private_extern__ void (), <./Plugins/IPMonitor/dns-configuration.c 1470>
+ 1555 				CFBundleGetInfoDictionary: <>
+ 1556 				isA_CFDictionary: <>
+ 1557 				CFDictionaryGetValue: <>
+ 1558 				CFSTR: <>
+ 1559 				isA_CFNumber: <>
+ 1560 			proxy_configuration_init: __private_extern__ void (), <./Plugins/IPMonitor/proxy-configuration.c 665>
+ 1561 				CFBundleGetInfoDictionary: <>
+ 1562 				isA_CFDictionary: <>
+ 1563 				CFDictionaryGetValue: <>
+ 1564 				CFSTR: <>
+ 1565 				isA_CFBoolean: <>
+ 1566 			ip_plugin_init: void (), <./Plugins/IPMonitor/ip_plugin.c 4951>
+ 1567 				S_is_network_boot: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 537>
+ 1568 					sysctl: <>
+ 1569 				S_is_scoped_routing_enabled: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 591>
+ 1570 					sysctlbyname: <>
+ 1571 					SCLog: 16
+ 1572 					CFSTR: <>
+ 1573 					strerror: <>
+ 1574 				S_is_scoped_v6_routing_enabled: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 606>
+ 1575 					sysctlbyname: <>
+ 1576 					SCLog: 16
+ 1577 					CFSTR: <>
+ 1578 					strerror: <>
+ 1579 				SCDynamicStoreCreate: 111
+ 1580 				CFSTR: <>
+ 1581 				IPMonitorNotify: void (), <./Plugins/IPMonitor/ip_plugin.c 4553>
+ 1582 					CFArrayGetCount: <>
+ 1583 					SCLog: 16
+ 1584 					CFSTR: <>
+ 1585 					service_dict_get: 1518
+ 1586 					CFDictionaryCreateCopy: <>
+ 1587 					keyChangeListInit: void (), <./Plugins/IPMonitor/ip_plugin.c 442>
+ 1588 						CFArrayCreateMutable: <>
+ 1589 						CFDictionaryCreateMutable: <>
+ 1590 					CFArrayCreateMutable: <>
+ 1591 					CFArrayGetValueAtIndex: <>
+ 1592 					CFEqual: <>
+ 1593 					CFStringHasPrefix: <>
+ 1594 					CFStringHasSuffix: <>
+ 1595 					parse_component: CF_RETURNS_RETAINED CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 1427>
+ 1596 						CFStringHasPrefix: <>
+ 1597 						CFStringCreateMutableCopy: <>
+ 1598 						CFStringDelete: <>
+ 1599 						CFRangeMake: <>
+ 1600 						CFStringGetLength: <>
+ 1601 						CFStringFind: <>
+ 1602 						CFSTR: <>
+ 1603 					my_CFArrayAppendUniqueValue: void (), <./Plugins/IPMonitor/ip_plugin.c 622>
+ 1604 						CFArrayGetCount: <>
+ 1605 						CFArrayContainsValue: <>
+ 1606 						CFRangeMake: <>
+ 1607 						CFArrayAppendValue: <>
+ 1608 					CFRelease: <>
+ 1609 					my_CFStringCopyComponent: CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 421>
+ 1610 						CFStringCreateArrayBySeparatingStrings: <>
+ 1611 						CFArrayGetCount: <>
+ 1612 						CFRetain: <>
+ 1613 						CFArrayGetValueAtIndex: <>
+ 1614 						my_CFRelease: void (), <./Plugins/IPMonitor/ip_plugin.c 648>
+ 1615 							CFRelease: <>
+ 1616 					append_serviceIDs_for_interface: void (), <./Plugins/IPMonitor/ip_plugin.c 4329>
+ 1617 						CFDictionaryGetCount: <>
+ 1618 						malloc: <>
+ 1619 						CFDictionaryGetKeysAndValues: <>
+ 1620 						CFDictionaryGetValue: <>
+ 1621 						ipv4_dict_get_ifname: CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 358>
+ 1622 							isA_CFDictionary: <>
+ 1623 							CFDictionaryGetValue: <>
+ 1624 						CFEqual: <>
+ 1625 						SCLog: 16
+ 1626 						CFSTR: <>
+ 1627 						my_CFArrayAppendUniqueValue: 1603
+ 1628 						free: <>
+ 1629 					services_info_copy: CFDictionaryRef (), <./Plugins/IPMonitor/ip_plugin.c 2851>
+ 1630 						CFArrayGetCount: <>
+ 1631 						CFArrayCreateMutable: <>
+ 1632 						CFArrayAppendValue: <>
+ 1633 						CFArrayGetValueAtIndex: <>
+ 1634 						add_service_keys: void (), <./Plugins/IPMonitor/ip_plugin.c 2817>
+ 1635 							CFEqual: <>
+ 1636 							setup_service_key: CF_RETURNS_RETAINED CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 722>
+ 1637 								SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 1638 							CFArrayAppendValue: <>
+ 1639 							CFRelease: <>
+ 1640 							state_service_key: CF_RETURNS_RETAINED CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 731>
+ 1641 								SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 1642 						if_rank_key_copy: CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 2740>
+ 1643 							SCDynamicStoreKeyCreateNetworkInterfaceEntity: 191
+ 1644 						CFRelease: <>
+ 1645 						SCDynamicStoreCopyMultiple: 123
+ 1646 						my_CFRelease: 1614
+ 1647 					service_order_get: CFArrayRef (), <./Plugins/IPMonitor/ip_plugin.c 4231>
+ 1648 						my_CFDictionaryGetDictionary: CFDictionaryRef (), <./Plugins/IPMonitor/ip_plugin.c 660>
+ 1649 							isA_CFDictionary: <>
+ 1650 							CFDictionaryGetValue: <>
+ 1651 						CFDictionaryGetValue: <>
+ 1652 						isA_CFArray: <>
+ 1653 						isA_CFNumber: <>
+ 1654 						CFNumberGetValue: <>
+ 1655 					update_interface_rank: void (), <./Plugins/IPMonitor/ip_plugin.c 4316>
+ 1656 						if_rank_key_copy: 1642
+ 1657 						CFDictionaryGetValue: <>
+ 1658 						CFRelease: <>
+ 1659 						if_rank_set: void (), <./Plugins/IPMonitor/ip_plugin.c 2749>
+ 1660 							isA_CFDictionary: <>
+ 1661 							CFDictionaryGetValue: <>
+ 1662 							isA_CFString: <>
+ 1663 							SCLog: 16
+ 1664 							CFSTR: <>
+ 1665 							CFDictionarySetValue: <>
+ 1666 							CFDictionaryRemoveValue: <>
+ 1667 					service_changed: uint32_t (), <./Plugins/IPMonitor/ip_plugin.c 4201>
+ 1668 						get_rank_changes: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 2667>
+ 1669 							isA_CFDictionary: <>
+ 1670 							CFDictionaryGetValue: <>
+ 1671 							isA_CFString: <>
+ 1672 							CFEqual: <>
+ 1673 							services_info_get_interface: CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 2643>
+ 1674 								get_service_state_entity: CFDictionaryRef (), <./Plugins/IPMonitor/ip_plugin.c 753>
+ 1675 									state_service_key: 1640
+ 1676 									my_CFDictionaryGetDictionary: 1648
+ 1677 									my_CFRelease: 1614
+ 1678 								isA_CFDictionary: <>
+ 1679 								CFDictionaryGetValue: <>
+ 1680 							SCLog: 16
+ 1681 							CFSTR: <>
+ 1682 							CFDictionaryCreateMutable: <>
+ 1683 							CFDictionarySetValue: <>
+ 1684 							service_dict_set: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 1507>
+ 1685 								service_dict_copy: CFMutableDictionaryRef (), <./Plugins/IPMonitor/ip_plugin.c 1450>
+ 1686 									CFDictionaryGetValue: <>
+ 1687 									CFDictionaryCreateMutable: <>
+ 1688 									CFDictionaryCreateMutableCopy: <>
+ 1689 								CFDictionaryGetValue: <>
+ 1690 								dump_service_entity: void (), <./Plugins/IPMonitor/ip_plugin.c 1470>
+ 1691 									CFEqual: <>
+ 1692 									isA_CFDictionary: <>
+ 1693 									CFDictionaryGetValue: <>
+ 1694 									IPv4RouteListCopyDescription: CFMutableStringRef (), <./Plugins/IPMonitor/ip_plugin.c 948>
+ 1695 										CFStringCreateMutable: <>
+ 1696 										CFStringAppendFormat: <>
+ 1697 										CFSTR: <>
+ 1698 										IPv4RouteCopyDescriptionWithString: void (), <./Plugins/IPMonitor/ip_plugin.c 827>
+ 1699 											RANK_ASSERTION_MASK: <>
+ 1700 											CFStringAppendFormat: <>
+ 1701 											CFSTR: <>
+ 1702 											IP_LIST: <>
+ 1703 											CFStringAppend: <>
+ 1704 										CFStringAppend: <>
+ 1705 									CFDataGetBytePtr: <>
+ 1706 									CFStringCreateMutable: <>
+ 1707 									CFStringAppendFormat: <>
+ 1708 									CFSTR: <>
+ 1709 									SCLog: 16
+ 1710 									my_CFRelease: 1614
+ 1711 								CFSTR: <>
+ 1712 								CFDictionaryRemoveValue: <>
+ 1713 								CFEqual: <>
+ 1714 								CFDictionarySetValue: <>
+ 1715 								CFDictionaryGetCount: <>
+ 1716 								my_CFRelease: 1614
+ 1717 							my_CFRelease: 1614
+ 1718 						get_service_state_entity: 1674
+ 1719 						get_service_setup_entity: CFDictionaryRef (), <./Plugins/IPMonitor/ip_plugin.c 740>
+ 1720 							setup_service_key: 1636
+ 1721 							my_CFDictionaryGetDictionary: 1648
+ 1722 							my_CFRelease: 1614
+ 1723 					update_dns: void (), <./Plugins/IPMonitor/ip_plugin.c 3638>
+ 1724 						CFDictionaryGetValue: <>
+ 1725 						empty_dns: __inline__ void (), <./Plugins/IPMonitor/ip_plugin.c 3221>
+ 1726 							unlink: <>
+ 1727 						keyChangeListRemoveValue: void (), <./Plugins/IPMonitor/ip_plugin.c 469>
+ 1728 							my_CFArrayAppendUniqueValue: 1603
+ 1729 							CFDictionaryRemoveValue: <>
+ 1730 						set_dns: void (), <./Plugins/IPMonitor/ip_plugin.c 3227>
+ 1731 							fopen: <>
+ 1732 							SCPrint: 100
+ 1733 							CFSTR: <>
+ 1734 							isA_CFArray: <>
+ 1735 							CFArrayGetCount: <>
+ 1736 							CFArrayGetValueAtIndex: <>
+ 1737 							isA_CFString: <>
+ 1738 							fclose: <>
+ 1739 							rename: <>
+ 1740 						CFDictionaryCreateMutableCopy: <>
+ 1741 						CFDictionaryRemoveValue: <>
+ 1742 						keyChangeListSetValue: void (), <./Plugins/IPMonitor/ip_plugin.c 477>
+ 1743 							my_CFArrayRemoveValue: void (), <./Plugins/IPMonitor/ip_plugin.c 634>
+ 1744 								CFArrayGetFirstIndexOfValue: <>
+ 1745 								CFRangeMake: <>
+ 1746 								CFArrayGetCount: <>
+ 1747 								CFArrayRemoveValueAtIndex: <>
+ 1748 							CFDictionarySetValue: <>
+ 1749 						CFRelease: <>
+ 1750 					update_smb: void (), <./Plugins/IPMonitor/ip_plugin.c 3745>
+ 1751 						CFDictionaryGetValue: <>
+ 1752 						keyChangeListRemoveValue: 1727
+ 1753 						keyChangeListSetValue: 1742
+ 1754 					CFDictionaryGetCount: <>
+ 1755 					nwi_state_copy_priv: __private_extern__ nwi_state_t (), <./nwi/network_information_priv.c 44>
+ 1756 						malloc: <>
+ 1757 						bcopy: <>
+ 1758 					nwi_state_new: __private_extern__ nwi_state_t (), <./nwi/network_information_priv.c 64>
+ 1759 						nwi_state_compute_size: __inline__ unsigned int (), <./nwi/network_information_priv.c 37>
+ 1760 							offsetof: <>
+ 1761 						malloc: <>
+ 1762 						bcopy: <>
+ 1763 						free: <>
+ 1764 						nwi_state_set_last: __private_extern__ void (), <./nwi/network_information_priv.c 213>
+ 1765 					elect_new_primary: CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 4142>
+ 1766 						CFDictionaryGetCount: <>
+ 1767 						malloc: <>
+ 1768 						CFDictionaryGetKeysAndValues: <>
+ 1769 						CFRetain: <>
+ 1770 						free: <>
+ 1771 					elect_ipv4: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 3852>
+ 1772 						service_dict_get_ipv4_routelist: IPv4RouteListRef (), <./Plugins/IPMonitor/ip_plugin.c 3319>
+ 1773 							CFDictionaryGetValue: <>
+ 1774 							ipv4_dict_get_routelist: IPv4RouteListRef (), <./Plugins/IPMonitor/ip_plugin.c 340>
+ 1775 								isA_CFDictionary: <>
+ 1776 								CFDictionaryGetValue: <>
+ 1777 								CFDataGetBytePtr: <>
+ 1778 						get_service_rank: Rank (), <./Plugins/IPMonitor/ip_plugin.c 3771>
+ 1779 							isA_CFString: <>
+ 1780 							CFArrayGetValueAtIndex: <>
+ 1781 							CFEqual: <>
+ 1782 						RANK_ASSERTION_MASK: <>
+ 1783 						strncmp: <>
+ 1784 						RankMake: __inline__ Rank (), <./Plugins/IPMonitor/ip_plugin.c 215>
+ 1785 							RANK_INDEX_MASK: <>
+ 1786 							RANK_ASSERTION_MASK: <>
+ 1787 						IPv4RouteListAddRouteList: IPv4RouteListRef (), <./Plugins/IPMonitor/ip_plugin.c 1239>
+ 1788 							IPv4RouteListAddRoute: IPv4RouteListRef (), <./Plugins/IPMonitor/ip_plugin.c 1080>
+ 1789 								malloc: <>
+ 1790 								IPv4RouteListComputeSize: __inline__ unsigned int (), <./Plugins/IPMonitor/ip_plugin.c 986>
+ 1791 									offsetof: <>
+ 1792 								IPv4RouteCompare: int (), <./Plugins/IPMonitor/ip_plugin.c 899>
+ 1793 									in_addr_cmp: __inline__ int (), <./Plugins/IPMonitor/ip_plugin.c 815>
+ 1794 										uint32_cmp: <>
+ 1795 										ntohl: <>
+ 1796 									strcmp: <>
+ 1797 									RankCompare: <>
+ 1798 									IPv4RouteCopyDescription: CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 869>
+ 1799 										CFStringCreateMutable: <>
+ 1800 										IPv4RouteCopyDescriptionWithString: 1698
+ 1801 									SCLog: 16
+ 1802 									CFSTR: <>
+ 1803 									CFRelease: <>
+ 1804 								ROUTELIST_DEBUG: <>
+ 1805 								bcopy: <>
+ 1806 								realloc: <>
+ 1807 						rank_dict_set_service_rank: void (), <./Plugins/IPMonitor/ip_plugin.c 3820>
+ 1808 							CFNumberCreate: <>
+ 1809 							CFDictionarySetValue: <>
+ 1810 							CFRelease: <>
+ 1811 					update_nwi_state_ipv4: void (), <./Plugins/IPMonitor/ip_plugin.c 4079>
+ 1812 						nwi_state_clear: __private_extern__ void (), <./nwi/network_information_priv.c 198>
+ 1813 							nwi_state_set_last: 1764
+ 1814 						CFDictionaryGetCount: <>
+ 1815 						malloc: <>
+ 1816 						CFDictionaryGetKeysAndValues: <>
+ 1817 						RANK_ASSERTION_MASK: <>
+ 1818 						interface_has_dns: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 4051>
+ 1819 							CFStringCreateWithCString: <>
+ 1820 							CFDictionaryGetValue: <>
+ 1821 							CFEqual: <>
+ 1822 							CFRelease: <>
+ 1823 						SCLog: 16
+ 1824 						CFSTR: <>
+ 1825 						nwi_insert_ifstate: __private_extern__ void (), <./nwi/network_information_priv.c 145>
+ 1826 							nwi_state_get_ifstate_with_name: <>
+ 1827 							nwi_ifstate_get_last: inline nwi_ifstate_t (), <./nwi/network_information_priv.c 126>
+ 1828 							strcpy: <>
+ 1829 						free: <>
+ 1830 						nwi_state_set_last: 1764
+ 1831 					set_new_primary: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 4261>
+ 1832 						CFEqual: <>
+ 1833 						SCLog: 16
+ 1834 						CFSTR: <>
+ 1835 						my_CFRelease: 1614
+ 1836 						CFRetain: <>
+ 1837 					update_ipv4: void (), <./Plugins/IPMonitor/ip_plugin.c 3464>
+ 1838 						CFDictionaryCreateMutable: <>
+ 1839 						CFStringCreateWithCString: <>
+ 1840 						inet_ntoa: <>
+ 1841 						CFDictionarySetValue: <>
+ 1842 						CFRelease: <>
+ 1843 						keyChangeListSetValue: 1742
+ 1844 						keyChangeListRemoveValue: 1727
+ 1845 						bzero: <>
+ 1846 						route_open_socket: int (), <./Plugins/IPMonitor/ip_plugin.c 2895>
+ 1847 							socket: <>
+ 1848 							SCLog: 16
+ 1849 							CFSTR: <>
+ 1850 							strerror: <>
+ 1851 						SCLog: 16
+ 1852 						CFSTR: <>
+ 1853 						IPv4RouteListLog: __inline__ void (), <./Plugins/IPMonitor/ip_plugin.c 976>
+ 1854 							IPv4RouteListCopyDescription: 1694
+ 1855 							SCLog: 16
+ 1856 							CFSTR: <>
+ 1857 							CFRelease: <>
+ 1858 						IPv4RouteListApply: void (), <./Plugins/IPMonitor/ip_plugin.c 1013>
+ 1859 							IPv4RouteListFindRoute: IPv4RouteRef (), <./Plugins/IPMonitor/ip_plugin.c 992>
+ 1860 								strcmp: <>
+ 1861 						apply_ipv4_route: void (), <./Plugins/IPMonitor/ip_plugin.c 3355>
+ 1862 							ipv4_route_gateway: int (), <./Plugins/IPMonitor/ip_plugin.c 3338>
+ 1863 								htonl: <>
+ 1864 								ipv4_route: int (), <./Plugins/IPMonitor/ip_plugin.c 2923>
+ 1865 									syslog: <>
+ 1866 									inet_ntoa: <>
+ 1867 									memset: <>
+ 1868 									strlen: <>
+ 1869 									bcopy: <>
+ 1870 									write: <>
+ 1871 							SCLog: 16
+ 1872 							CFSTR: <>
+ 1873 							inet_ntoa: <>
+ 1874 							strerror: <>
+ 1875 							ipv4_route: 1864
+ 1876 							IPv4RouteLog: __inline__ void (), <./Plugins/IPMonitor/ip_plugin.c 889>
+ 1877 								IPv4RouteCopyDescription: 1798
+ 1878 								SCLog: 16
+ 1879 								CFSTR: <>
+ 1880 								CFRelease: <>
+ 1881 						multicast_route_delete: int (), <./Plugins/IPMonitor/ip_plugin.c 3154>
+ 1882 							htonl: <>
+ 1883 							ipv4_route: 1864
+ 1884 						multicast_route_add: int (), <./Plugins/IPMonitor/ip_plugin.c 3165>
+ 1885 							htonl: <>
+ 1886 							ipv4_route: 1864
+ 1887 						close: <>
+ 1888 						free: <>
+ 1889 					free: <>
+ 1890 					my_CFRelease: 1614
+ 1891 					IPv6RankedListComputeSize: __inline__ unsigned int (), <./Plugins/IPMonitor/ip_plugin.c 4309>
+ 1892 						offsetof: <>
+ 1893 					malloc: <>
+ 1894 					elect_ipv6: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 3933>
+ 1895 						memset: <>
+ 1896 						get_service_rank: 1778
+ 1897 						CFDictionaryGetValue: <>
+ 1898 						CFEqual: <>
+ 1899 						CFSTR: <>
+ 1900 						CFStringGetCString: <>
+ 1901 						service_dict_get: 1518
+ 1902 						PrimaryRankGetRankAssertion: __inline__ Rank (), <./Plugins/IPMonitor/ip_plugin.c 221>
+ 1903 							CFEqual: <>
+ 1904 						RankMake: 1784
+ 1905 						IPv6RankedListInsertE: void (), <./Plugins/IPMonitor/ip_plugin.c 3902>
+ 1906 							SCLog: 16
+ 1907 							CFSTR: <>
+ 1908 							bcopy: <>
+ 1909 						get_override_primary: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 780>
+ 1910 							CFDictionaryGetValue: <>
+ 1911 							isA_CFNumber: <>
+ 1912 							CFNumberGetValue: <>
+ 1913 							isA_CFBoolean: <>
+ 1914 							CFBooleanGetValue: <>
+ 1915 						CFStringHasPrefix: <>
+ 1916 						cfstring_to_ip6: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 716>
+ 1917 							cfstring_to_ipvx: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 678>
+ 1918 								isA_CFString: <>
+ 1919 								inet_pton: <>
+ 1920 								bzero: <>
+ 1921 						rank_dict_set_service_rank: 1807
+ 1922 					update_nwi_state_ipv6: void (), <./Plugins/IPMonitor/ip_plugin.c 4013>
+ 1923 						nwi_state_clear: 1812
+ 1924 						inet_ntop: <>
+ 1925 						SCLog: 16
+ 1926 						CFSTR: <>
+ 1927 						nwi_insert_ifstate: 1825
+ 1928 						nwi_state_set_last: 1764
+ 1929 					update_ipv6: void (), <./Plugins/IPMonitor/ip_plugin.c 3557>
+ 1930 						CFDictionaryGetValue: <>
+ 1931 						CFDictionaryCreateMutable: <>
+ 1932 						router_is_our_ipv6_address: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 3300>
+ 1933 							CFArrayGetCount: <>
+ 1934 							cfstring_to_ip6: 1916
+ 1935 							CFArrayGetValueAtIndex: <>
+ 1936 							bcmp: <>
+ 1937 						CFDictionarySetValue: <>
+ 1938 						CFArrayGetValueAtIndex: <>
+ 1939 						CFStringGetCString: <>
+ 1940 						keyChangeListSetValue: 1742
+ 1941 						CFRelease: <>
+ 1942 						set_ipv6_default_interface: void (), <./Plugins/IPMonitor/ip_plugin.c 3177>
+ 1943 							bzero: <>
+ 1944 							strlcpy: <>
+ 1945 							if_nametoindex: <>
+ 1946 							inet6_dgram_socket: __inline__ int (), <./Plugins/IPMonitor/ip_plugin.c 551>
+ 1947 								socket: <>
+ 1948 							SCLog: 16
+ 1949 							CFSTR: <>
+ 1950 							strerror: <>
+ 1951 							ioctl: <>
+ 1952 							close: <>
+ 1953 						cfstring_to_ip6: 1916
+ 1954 						set_ipv6_router: void (), <./Plugins/IPMonitor/ip_plugin.c 3209>
+ 1955 							ipv6_default_route_delete: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 3126>
+ 1956 								SCLog: 16
+ 1957 								CFSTR: <>
+ 1958 								ipv6_route: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 3034>
+ 1959 									bcmp: <>
+ 1960 									IN6_IS_ADDR_LINKLOCAL: <>
+ 1961 									IN6_IS_ADDR_MC_LINKLOCAL: <>
+ 1962 									index: <>
+ 1963 									if_nametoindex: <>
+ 1964 									htons: <>
+ 1965 									route_open_socket: 1846
+ 1966 									memset: <>
+ 1967 									strlen: <>
+ 1968 									bcopy: <>
+ 1969 									write: <>
+ 1970 									SCLog: 16
+ 1971 									CFSTR: <>
+ 1972 									strerror: <>
+ 1973 									close: <>
+ 1974 							ipv6_default_route_add: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 3136>
+ 1975 								SCLog: 16
+ 1976 								CFSTR: <>
+ 1977 								inet_ntop: <>
+ 1978 								ipv6_route: 1958
+ 1979 						keyChangeListRemoveValue: 1727
+ 1980 					rank_service_entity: Rank (), <./Plugins/IPMonitor/ip_plugin.c 4299>
+ 1981 						service_dict_get: 1518
+ 1982 						RankMake: 1784
+ 1983 						rank_dict_get_service_rank: Rank (), <./Plugins/IPMonitor/ip_plugin.c 3801>
+ 1984 							RankMake: 1784
+ 1985 							CFDictionaryGetValue: <>
+ 1986 							CFNumberGetValue: <>
+ 1987 					mach_absolute_time: <>
+ 1988 					syslog: <>
+ 1989 					update_dnsinfo: void (), <./Plugins/IPMonitor/ip_plugin.c 3679>
+ 1990 						CFDictionaryGetValue: <>
+ 1991 						dns_configuration_set: __private_extern__ Boolean (), <./Plugins/IPMonitor/dns-configuration.c 1252>
+ 1992 							CFArrayCreateMutable: <>
+ 1993 							add_supplemental_resolvers: void (), <./Plugins/IPMonitor/dns-configuration.c 261>
+ 1994 								isA_CFDictionary: <>
+ 1995 								CFDictionaryGetCount: <>
+ 1996 								CFAllocatorAllocate: <>
+ 1997 								isA_CFArray: <>
+ 1998 								CFArrayGetCount: <>
+ 1999 								CFDictionaryGetKeysAndValues: <>
+ 2000 								CFDictionaryGetValue: <>
+ 2001 								CFArrayContainsValue: <>
+ 2002 								CFRangeMake: <>
+ 2003 								add_supplemental: void (), <./Plugins/IPMonitor/dns-configuration.c 186>
+ 2004 									CFDictionaryGetValue: <>
+ 2005 									isA_CFArray: <>
+ 2006 									CFArrayGetCount: <>
+ 2007 									CFArrayGetValueAtIndex: <>
+ 2008 									isA_CFString: <>
+ 2009 									CFDictionaryCreateMutableCopy: <>
+ 2010 									CFStringGetLength: <>
+ 2011 									CFDictionarySetValue: <>
+ 2012 									CFDictionaryRemoveValue: <>
+ 2013 									isA_CFNumber: <>
+ 2014 									CFDictionaryContainsKey: <>
+ 2015 									CFNumberCreate: <>
+ 2016 									CFRelease: <>
+ 2017 									add_resolver: void (), <./Plugins/IPMonitor/dns-configuration.c 86>
+ 2018 										CFDictionaryGetValue: <>
+ 2019 										isA_CFNumber: <>
+ 2020 										CFNumberGetValue: <>
+ 2021 										CFArrayGetCount: <>
+ 2022 										CFArrayGetValueAtIndex: <>
+ 2023 										CFEqual: <>
+ 2024 										CFDictionaryCreateMutableCopy: <>
+ 2025 										CFDictionarySetValue: <>
+ 2026 										CFRelease: <>
+ 2027 										CFArraySetValueAtIndex: <>
+ 2028 										CFNumberCreate: <>
+ 2029 										if_nametoindex: <>
+ 2030 										CFDictionaryGetValueIfPresent: <>
+ 2031 										isA_CFBoolean: <>
+ 2032 										CFBooleanGetValue: <>
+ 2033 										CFArrayAppendValue: <>
+ 2034 								CFAllocatorDeallocate: <>
+ 2035 							add_private_resolvers: void (), <./Plugins/IPMonitor/dns-configuration.c 364>
+ 2036 								isA_CFArray: <>
+ 2037 								CFArrayGetCount: <>
+ 2038 								CFArrayGetValueAtIndex: <>
+ 2039 								CFDictionaryCreateMutable: <>
+ 2040 								CFDictionarySetValue: <>
+ 2041 								CFSTR: <>
+ 2042 								CFNumberCreate: <>
+ 2043 								CFRelease: <>
+ 2044 								add_resolver: 2017
+ 2045 							add_default_resolver: void (), <./Plugins/IPMonitor/dns-configuration.c 787>
+ 2046 								CFDictionaryCreateMutable: <>
+ 2047 								CFDictionaryCreateMutableCopy: <>
+ 2048 								CFDictionaryGetValue: <>
+ 2049 								isA_CFNumber: <>
+ 2050 								CFNumberGetValue: <>
+ 2051 								CFNumberCreate: <>
+ 2052 								CFDictionarySetValue: <>
+ 2053 								CFRelease: <>
+ 2054 								extract_search_domains: CF_RETURNS_RETAINED CFArrayRef (), <./Plugins/IPMonitor/dns-configuration.c 452>
+ 2055 									CFArrayCreateMutable: <>
+ 2056 									CFDictionaryGetValue: <>
+ 2057 									isA_CFNumber: <>
+ 2058 									CFNumberGetValue: <>
+ 2059 									isA_CFArray: <>
+ 2060 									CFArrayGetCount: <>
+ 2061 									CFArrayGetValueAtIndex: <>
+ 2062 									CFArrayAppendValue: <>
+ 2063 									CFRelease: <>
+ 2064 									strstr: <>
+ 2065 									isspace: <>
+ 2066 									isdigit: <>
+ 2067 									strtol: <>
+ 2068 									CFAllocatorDeallocate: <>
+ 2069 									CFStringCreateWithCString: <>
+ 2070 									strchr: <>
+ 2071 									CFArrayCreateMutableCopy: <>
+ 2072 									CFArraySortValues: <>
+ 2073 									CFRangeMake: <>
+ 2074 									compareBySearchOrder: CFComparisonResult (), <./Plugins/IPMonitor/dns-configuration.c 408>
+ 2075 										CFDictionaryGetValue: <>
+ 2076 										isA_CFNumber: <>
+ 2077 										CFNumberGetValue: <>
+ 2078 										CFDictionaryGetValueIfPresent: <>
+ 2079 									isA_CFString: <>
+ 2080 									CFEqual: <>
+ 2081 									CFSTR: <>
+ 2082 									CFStringFind: <>
+ 2083 									CFStringHasSuffix: <>
+ 2084 									CFArrayGetFirstIndexOfValue: <>
+ 2085 									CFArrayRemoveValueAtIndex: <>
+ 2086 									CFArrayInsertValueAtIndex: <>
+ 2087 									CFDictionaryRemoveValue: <>
+ 2088 								add_resolver: 2017
+ 2089 							add_multicast_resolvers: void (), <./Plugins/IPMonitor/dns-configuration.c 320>
+ 2090 								isA_CFArray: <>
+ 2091 								CFArrayGetCount: <>
+ 2092 								CFArrayGetValueAtIndex: <>
+ 2093 								CFDictionaryCreateMutable: <>
+ 2094 								CFDictionarySetValue: <>
+ 2095 								CFSTR: <>
+ 2096 								CFNumberCreate: <>
+ 2097 								CFRelease: <>
+ 2098 								add_resolver: 2017
+ 2099 							add_scoped_resolvers: void (), <./Plugins/IPMonitor/dns-configuration.c 664>
+ 2100 								isA_CFDictionary: <>
+ 2101 								CFDictionaryGetCount: <>
+ 2102 								isA_CFArray: <>
+ 2103 								CFArrayGetCount: <>
+ 2104 								CFArrayCreateMutableCopy: <>
+ 2105 								CFArrayCreateMutable: <>
+ 2106 								CFAllocatorAllocate: <>
+ 2107 								CFDictionaryGetKeysAndValues: <>
+ 2108 								CFArrayContainsValue: <>
+ 2109 								CFRangeMake: <>
+ 2110 								CFArrayAppendValue: <>
+ 2111 								CFAllocatorDeallocate: <>
+ 2112 								CFSetCreateMutable: <>
+ 2113 								CFArrayGetValueAtIndex: <>
+ 2114 								CFDictionaryGetValue: <>
+ 2115 								CFSetContainsValue: <>
+ 2116 								CFSetSetValue: <>
+ 2117 								if_nametoindex: <>
+ 2118 								CFDictionaryCreateMutableCopy: <>
+ 2119 								extract_search_domains: 2054
+ 2120 								CFDictionarySetValue: <>
+ 2121 								CFRelease: <>
+ 2122 								CFDictionaryGetValueIfPresent: <>
+ 2123 								isA_CFNumber: <>
+ 2124 								CFNumberGetValue: <>
+ 2125 								CFNumberCreate: <>
+ 2126 								CFDictionaryRemoveValue: <>
+ 2127 								add_resolver: 2017
+ 2128 							CFArrayGetCount: <>
+ 2129 							CFArraySortValues: <>
+ 2130 							CFRangeMake: <>
+ 2131 							compareDomain: CFComparisonResult (), <./Plugins/IPMonitor/dns-configuration.c 1161>
+ 2132 								CFDictionaryGetValue: <>
+ 2133 								isScopedConfiguration: __inline__ Boolean (), <./Plugins/IPMonitor/dns-configuration.c 1143>
+ 2134 									CFDictionaryGetValueIfPresent: <>
+ 2135 									CFNumberGetValue: <>
+ 2136 								CFStringHasSuffix: <>
+ 2137 								CFSTR: <>
+ 2138 								CFStringCreateArrayBySeparatingStrings: <>
+ 2139 								CFArrayGetCount: <>
+ 2140 								CFArrayGetValueAtIndex: <>
+ 2141 								CFStringCompare: <>
+ 2142 								compareBySearchOrder: 2074
+ 2143 								CFRelease: <>
+ 2144 							CFArrayGetValueAtIndex: <>
+ 2145 							CFDictionaryContainsKey: <>
+ 2146 							CFArrayRemoveValueAtIndex: <>
+ 2147 							CFDictionaryCreateMutableCopy: <>
+ 2148 							CFDictionarySetValue: <>
+ 2149 							CFRelease: <>
+ 2150 							isScopedConfiguration: 2133
+ 2151 							CFDictionaryRemoveValue: <>
+ 2152 							CFArraySetValueAtIndex: <>
+ 2153 							create_resolver: dns_create_resolver_t (), <./Plugins/IPMonitor/dns-configuration.c 848>
+ 2154 								CFDictionaryGetValue: <>
+ 2155 								isA_CFString: <>
+ 2156 								CFStringGetLength: <>
+ 2157 								isA_CFArray: <>
+ 2158 								CFArrayGetCount: <>
+ 2159 								CFArrayGetValueAtIndex: <>
+ 2160 								isA_CFNumber: <>
+ 2161 								CFNumberGetValue: <>
+ 2162 								if_indextoname: <>
+ 2163 								CFStringCreateWithCString: <>
+ 2164 								CFArrayCreateMutable: <>
+ 2165 								IN6_IS_ADDR_LINKLOCAL: <>
+ 2166 								IN6_IS_ADDR_MC_LINKLOCAL: <>
+ 2167 								CFDataCreate: <>
+ 2168 								CFArrayAppendValue: <>
+ 2169 								CFRelease: <>
+ 2170 								strchr: <>
+ 2171 								bzero: <>
+ 2172 								inet_aton: <>
+ 2173 								ntohl: <>
+ 2174 								IN_CLASSA: <>
+ 2175 								IN_CLASSB: <>
+ 2176 								IN_CLASSC: <>
+ 2177 								htonl: <>
+ 2178 								CFAllocatorDeallocate: <>
+ 2179 								CFDictionaryCreateMutable: <>
+ 2180 								CFDictionarySetValue: <>
+ 2181 								SCNetworkReachabilityCreateWithOptions: SCNetworkReachabilityRef (), <./SystemConfiguration.fproj/SCNetworkReachability.c 2555>
+ 2182 									isA_CFDictionary: <>
+ 2183 									CFDictionaryGetValue: <>
+ 2184 									isA_CFString: <>
+ 2185 									CFStringGetLength: <>
+ 2186 									isA_CFData: <>
+ 2187 									CFDataGetLength: <>
+ 2188 									CFDataGetBytePtr: <>
+ 2189 									isA_CFBoolean: <>
+ 2190 									SCNetworkReachabilityCreateWithName: 638
+ 2191 									CFAllocatorDeallocate: <>
+ 2192 									SCNetworkReachabilityCreateWithAddressPair: SCNetworkReachabilityRef (), <./SystemConfiguration.fproj/SCNetworkReachability.c 2446>
+ 2193 										is_valid_address: const struct sockaddr * (), <./SystemConfiguration.fproj/SCNetworkReachability.c 2369>
+ 2194 										CFAllocatorAllocate: <>
+ 2195 										bcopy: <>
+ 2196 										SCLog: 16
+ 2197 										CFSTR: <>
+ 2198 									SCNetworkReachabilityCreateWithAddress: 612
+ 2199 									bcopy: <>
+ 2200 									if_nametoindex: <>
+ 2201 									CFRelease: <>
+ 2202 									CFBooleanGetValue: <>
+ 2203 									SCLog: 16
+ 2204 									CFSTR: <>
+ 2205 								CFDictionaryRemoveValue: <>
+ 2206 								SCLog: 16
+ 2207 								CFSTR: <>
+ 2208 								SCNetworkReachabilityGetFlags: Boolean (), <./SystemConfiguration.fproj/SCNetworkReachability.c 5188>
+ 2209 									isA_SCNetworkReachability: 629
+ 2210 									ReachabilityStoreInfo_init: void (), <./SystemConfiguration.fproj/SCNetworkReachability.c 474>
+ 2211 										dispatch_sync: <>
+ 2212 										bzero: <>
+ 2213 										ReachabilityStoreInfo_copy: void (), <./SystemConfiguration.fproj/SCNetworkReachability.c 408>
+ 2214 											CFRetain: <>
+ 2215 											CFAllocatorAllocate: <>
+ 2216 											memcpy: <>
+ 2217 									MUTEX_LOCK: <>
+ 2218 									MUTEX_UNLOCK: <>
+ 2219 									ReachabilityStoreInfo_free: void (), <./SystemConfiguration.fproj/SCNetworkReachability.c 448>
+ 2220 										CFAllocatorDeallocate: <>
+ 2221 										CFRelease: <>
+ 2222 								rankReachability: int (), <./Plugins/IPMonitor/dns-configuration.c 837>
+ 2223 							bcmp: <>
+ 2224 							bcopy: <>
+ 2225 							SCLog: 16
+ 2226 							CFSTR: <>
+ 2227 						keyChangeListNotifyKey: void (), <./Plugins/IPMonitor/ip_plugin.c 462>
+ 2228 							my_CFArrayAppendUniqueValue: 1603
+ 2229 					CFBooleanGetValue: <>
+ 2230 					update_proxies: void (), <./Plugins/IPMonitor/ip_plugin.c 3713>
+ 2231 						CFDictionaryGetValue: <>
+ 2232 						proxy_configuration_update: __private_extern__ CF_RETURNS_RETAINED CFDictionaryRef (), <./Plugins/IPMonitor/proxy-configuration.c 549>
+ 2233 							CFArrayCreateMutable: <>
+ 2234 							add_supplemental_proxies: void (), <./Plugins/IPMonitor/proxy-configuration.c 156>
+ 2235 								isA_CFDictionary: <>
+ 2236 								CFDictionaryGetCount: <>
+ 2237 								CFAllocatorAllocate: <>
+ 2238 								isA_CFArray: <>
+ 2239 								CFArrayGetCount: <>
+ 2240 								CFDictionaryGetKeysAndValues: <>
+ 2241 								CFDictionaryGetValue: <>
+ 2242 								CFBooleanGetValue: <>
+ 2243 								CFDictionaryContainsKey: <>
+ 2244 								CFDictionaryGetValueIfPresent: <>
+ 2245 								CFDictionaryCreateMutableCopy: <>
+ 2246 								CFDictionarySetValue: <>
+ 2247 								CFDictionaryRemoveValue: <>
+ 2248 								CFArrayContainsValue: <>
+ 2249 								CFRangeMake: <>
+ 2250 								add_supplemental: void (), <./Plugins/IPMonitor/proxy-configuration.c 80>
+ 2251 									CFDictionaryGetValue: <>
+ 2252 									isA_CFArray: <>
+ 2253 									CFArrayGetCount: <>
+ 2254 									CFArrayGetValueAtIndex: <>
+ 2255 									isA_CFString: <>
+ 2256 									CFDictionaryCreateMutableCopy: <>
+ 2257 									CFDictionarySetValue: <>
+ 2258 									CFRelease: <>
+ 2259 									CFDictionaryRemoveValue: <>
+ 2260 									isA_CFNumber: <>
+ 2261 									CFNumberCreate: <>
+ 2262 									add_proxy: void (), <./Plugins/IPMonitor/proxy-configuration.c 53>
+ 2263 										CFArrayGetCount: <>
+ 2264 										CFArrayGetValueAtIndex: <>
+ 2265 										CFEqual: <>
+ 2266 										CFNumberCreate: <>
+ 2267 										CFDictionarySetValue: <>
+ 2268 										CFRelease: <>
+ 2269 										CFArrayAppendValue: <>
+ 2270 								CFRelease: <>
+ 2271 								CFAllocatorDeallocate: <>
+ 2272 							add_default_proxy: void (), <./Plugins/IPMonitor/proxy-configuration.c 434>
+ 2273 								CFDictionaryCreateMutable: <>
+ 2274 								CFDictionaryCreateMutableCopy: <>
+ 2275 								CFDictionaryRemoveValue: <>
+ 2276 								CFDictionaryGetValue: <>
+ 2277 								isA_CFNumber: <>
+ 2278 								CFNumberGetValue: <>
+ 2279 								CFNumberCreate: <>
+ 2280 								CFDictionarySetValue: <>
+ 2281 								CFRelease: <>
+ 2282 								add_proxy: 2262
+ 2283 							CFArrayGetCount: <>
+ 2284 							CFArraySortValues: <>
+ 2285 							CFRangeMake: <>
+ 2286 							compareDomain: CFComparisonResult (), <./Plugins/IPMonitor/proxy-configuration.c 473>
+ 2287 								CFDictionaryGetValue: <>
+ 2288 								CFStringHasSuffix: <>
+ 2289 								CFSTR: <>
+ 2290 								CFStringCreateArrayBySeparatingStrings: <>
+ 2291 								CFArrayGetCount: <>
+ 2292 								CFArrayGetValueAtIndex: <>
+ 2293 								CFStringCompare: <>
+ 2294 								compareBySearchOrder: CFComparisonResult (), <./Plugins/IPMonitor/proxy-configuration.c 239>
+ 2295 									CFDictionaryGetValue: <>
+ 2296 									isA_CFNumber: <>
+ 2297 									CFNumberGetValue: <>
+ 2298 									CFDictionaryGetValueIfPresent: <>
+ 2299 								CFRelease: <>
+ 2300 							CFArrayGetValueAtIndex: <>
+ 2301 							CFDictionaryContainsKey: <>
+ 2302 							CFArrayRemoveValueAtIndex: <>
+ 2303 							CFDictionaryCreateMutableCopy: <>
+ 2304 							CFDictionaryRemoveValue: <>
+ 2305 							CFArraySetValueAtIndex: <>
+ 2306 							CFRelease: <>
+ 2307 							CFDictionaryCreateMutable: <>
+ 2308 							copy_supplemental_proxies: CFArrayRef (), <./Plugins/IPMonitor/proxy-configuration.c 295>
+ 2309 								isA_CFArray: <>
+ 2310 								CFArrayGetCount: <>
+ 2311 								CFArrayGetValueAtIndex: <>
+ 2312 								isSupplementalProxy: __inline__ Boolean (), <./Plugins/IPMonitor/proxy-configuration.c 283>
+ 2313 									CFDictionaryContainsKey: <>
+ 2314 								CFArrayCreateMutable: <>
+ 2315 								CFArrayAppendValue: <>
+ 2316 							CFDictionarySetValue: <>
+ 2317 							copy_scoped_proxies: CFDictionaryRef (), <./Plugins/IPMonitor/proxy-configuration.c 327>
+ 2318 								isA_CFDictionary: <>
+ 2319 								CFDictionaryGetCount: <>
+ 2320 								isA_CFArray: <>
+ 2321 								CFArrayGetCount: <>
+ 2322 								CFArrayCreateMutableCopy: <>
+ 2323 								CFArrayCreateMutable: <>
+ 2324 								CFAllocatorAllocate: <>
+ 2325 								CFDictionaryGetKeysAndValues: <>
+ 2326 								CFArrayContainsValue: <>
+ 2327 								CFRangeMake: <>
+ 2328 								CFArrayAppendValue: <>
+ 2329 								CFAllocatorDeallocate: <>
+ 2330 								CFArrayGetValueAtIndex: <>
+ 2331 								CFDictionaryGetValue: <>
+ 2332 								CFDictionaryContainsKey: <>
+ 2333 								if_nametoindex: <>
+ 2334 								CFRetain: <>
+ 2335 								CFDictionaryCreateMutableCopy: <>
+ 2336 								CFDictionaryRemoveValue: <>
+ 2337 								CFDictionaryCreateMutable: <>
+ 2338 								CFDictionarySetValue: <>
+ 2339 								CFRelease: <>
+ 2340 						keyChangeListRemoveValue: 1727
+ 2341 						keyChangeListSetValue: 1742
+ 2342 						CFRelease: <>
+ 2343 					nwi_state_diff: __private_extern__ nwi_state_t (), <./nwi/network_information_priv.c 434>
+ 2344 						nwi_state_new: 1758
+ 2345 						nwi_state_merge_added: void (), <./nwi/network_information_priv.c 360>
+ 2346 							nwi_state_get_first_ifstate: nwi_ifstate_t (), <./nwi/network_information.c 281>
+ 2347 								nwi_state_get_ifstate_with_index: <>
+ 2348 							nwi_ifstate_get_ifname: const char * (), <./nwi/network_information.c 227>
+ 2349 							nwi_state_get_ifstate_with_name: <>
+ 2350 							nwi_ifstate_append: inline nwi_ifstate_t (), <./nwi/network_information_priv.c 339>
+ 2351 								nwi_ifstate_get_last: 1827
+ 2352 								memcpy: <>
+ 2353 							nwi_ifstate_set_diff_str: inline void (), <./nwi/network_information_priv.c 353>
+ 2354 							nwi_ifstate_has_changed: inline boolean_t (), <./nwi/network_information_priv.c 314>
+ 2355 								memcmp: <>
+ 2356 							nwi_ifstate_get_next: nwi_ifstate_t (), <./nwi/network_information.c 332>
+ 2357 							nwi_state_set_last: 1764
+ 2358 						nwi_state_merge_removed: void (), <./nwi/network_information_priv.c 402>
+ 2359 							nwi_state_get_first_ifstate: 2346
+ 2360 							nwi_ifstate_get_ifname: 2348
+ 2361 							nwi_state_get_ifstate_with_name: <>
+ 2362 							nwi_ifstate_append: 2350
+ 2363 							nwi_ifstate_set_diff_str: inline void (), <./nwi/network_information_priv.c 353>
+ 2364 							nwi_ifstate_get_next: 2356
+ 2365 							nwi_state_set_last: 1764
+ 2366 					generate_log_changes: CF_RETURNS_RETAINED CFStringRef (), <./Plugins/IPMonitor/ip_plugin.c 4444>
+ 2367 						CFStringCreateMutable: <>
+ 2368 						nwi_state_get_first_ifstate: 2346
+ 2369 						nwi_ifstate_get_diff_str: __private_extern__ const char * (), <./nwi/network_information_priv.c 306>
+ 2370 						nwi_ifstate_get_address: __private_extern__ void * (), <./nwi/network_information_priv.c 299>
+ 2371 						inet_ntop: <>
+ 2372 						CFStringAppendFormat: <>
+ 2373 						CFSTR: <>
+ 2374 						nwi_ifstate_get_ifname: 2348
+ 2375 						strcmp: <>
+ 2376 						nwi_ifstate_get_next: 2356
+ 2377 						CFStringGetLength: <>
+ 2378 						my_CFRelease: 1614
+ 2379 						get_changed_str: inline const char * (), <./Plugins/IPMonitor/ip_plugin.c 4421>
+ 2380 							service_dict_get: 1518
+ 2381 							CFEqual: <>
+ 2382 					keyChangeListApplyToStore: void (), <./Plugins/IPMonitor/ip_plugin.c 485>
+ 2383 						CFArrayGetCount: <>
+ 2384 						CFDictionaryGetCount: <>
+ 2385 						SCLog: 16
+ 2386 						CFSTR: <>
+ 2387 						SCDynamicStoreSetMultiple: 954
+ 2388 						notify_post: <>
+ 2389 						CFStringGetLength: <>
+ 2390 					nwi_state_release: void (), <./nwi/network_information.c 127>
+ 2391 						ATOMIC_DEC: <>
+ 2392 						free: <>
+ 2393 					keyChangeListFree: void (), <./Plugins/IPMonitor/ip_plugin.c 453>
+ 2394 						my_CFRelease: 1614
+ 2395 				SCLog: 16
+ 2396 				SCErrorString: 181
+ 2397 				SCError: 185
+ 2398 				SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 2399 				SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 2400 				CFDictionaryCreateMutable: <>
+ 2401 				CFArrayCreateMutable: <>
+ 2402 				add_service_keys: 1634
+ 2403 				add_status_keys: void (), <./Plugins/IPMonitor/ip_plugin.c 4403>
+ 2404 					state_service_key: 1640
+ 2405 					CFArrayAppendValue: <>
+ 2406 					CFRelease: <>
+ 2407 				if_rank_key_copy: 1642
+ 2408 				CFArrayAppendValue: <>
+ 2409 				CFRelease: <>
+ 2410 				SCDynamicStoreKeyCreate: 118
+ 2411 				SCDynamicStoreSetNotificationKeys: 195
+ 2412 				SCDynamicStoreCreateRunLoopSource: 199
+ 2413 				CFRunLoopAddSource: <>
+ 2414 				CFRunLoopGetCurrent: <>
+ 2415 				dns_configuration_set: 1991
+ 2416 				empty_dns: 1725
+ 2417 				SCDynamicStoreRemoveValue: 1267
+ 2418 				if_rank_dict_init: void (), <./Plugins/IPMonitor/ip_plugin.c 2791>
+ 2419 					CFDictionaryCreateMutable: <>
+ 2420 					if_rank_key_copy: 1642
+ 2421 					CFArrayCreate: <>
+ 2422 					CFRelease: <>
+ 2423 					SCDynamicStoreCopyMultiple: 123
+ 2424 					CFDictionaryApplyFunction: <>
+ 2425 					if_rank_apply: void (), <./Plugins/IPMonitor/ip_plugin.c 2776>
+ 2426 						my_CFStringCopyComponent: 1609
+ 2427 						CFSTR: <>
+ 2428 						if_rank_set: 1659
+ 2429 						CFRelease: <>
+ 2430 				my_CFRelease: 1614
+ 2431 			dns_configuration_monitor: __private_extern__ void (), <./Plugins/IPMonitor/dns-configuration.c 1423>
+ 2432 				notify_register_mach_port: <>
+ 2433 				SCLOG: 297
+ 2434 				CFSTR: <>
+ 2435 				notify_monitor_file: <>
+ 2436 				notify_cancel: <>
+ 2437 				dns_configuration_changed: void (), <./Plugins/IPMonitor/dns-configuration.c 1394>
+ 2438 					CFSTR: <>
+ 2439 					stat: <>
+ 2440 					SCLog: 16
+ 2441 					CFArrayCreate: <>
+ 2442 					CFRelease: <>
+ 2443 				CFMachPortCreateRunLoopSource: <>
+ 2444 				CFRelease: <>
+ 2445 				CFRunLoopAddSource: <>
+ 2446 				CFRunLoopGetCurrent: <>
+ 2447 			IPMonitorNotify: 1581
+ 2448 			load_hostname: 1528
+ 2449 			load_smb_configuration: __private_extern__ void (), <./Plugins/IPMonitor/smb-configuration.c 856>
+ 2450 				SCDynamicStoreCreate: 111
+ 2451 				CFSTR: <>
+ 2452 				configuration_changed: void (), <./Plugins/IPMonitor/smb-configuration.c 812>
+ 2453 					CFRetain: <>
+ 2454 					CFRelease: <>
+ 2455 					CFMachPortGetPort: <>
+ 2456 					CFMachPortInvalidate: <>
+ 2457 					getnameinfo_async_cancel: <>
+ 2458 					CFRunLoopTimerInvalidate: <>
+ 2459 					boottime: CFAbsoluteTime (), <./Plugins/IPMonitor/smb-configuration.c 91>
+ 2460 						sysctl: <>
+ 2461 						SCLog: 16
+ 2462 						CFSTR: <>
+ 2463 						strerror: <>
+ 2464 					CFAbsoluteTimeGetCurrent: <>
+ 2465 					CFRunLoopTimerCreate: <>
+ 2466 					smb_update_configuration: void (), <./Plugins/IPMonitor/smb-configuration.c 719>
+ 2467 						smb_copy_global_configuration: CFDictionaryRef (), <./Plugins/IPMonitor/smb-configuration.c 217>
+ 2468 							SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 2469 							SCDynamicStoreCopyValue: 446
+ 2470 							CFRelease: <>
+ 2471 							isA_CFDictionary: <>
+ 2472 							CFDictionaryCreate: <>
+ 2473 						CFDictionaryGetValue: <>
+ 2474 						SCLog: 16
+ 2475 						CFSTR: <>
+ 2476 						copy_primary_service: CFStringRef (), <./Plugins/IPMonitor/smb-configuration.c 408>
+ 2477 							SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 2478 							SCDynamicStoreCopyValue: 446
+ 2479 							CFRelease: <>
+ 2480 							isA_CFDictionary: <>
+ 2481 							CFDictionaryGetValue: <>
+ 2482 							isA_CFString: <>
+ 2483 							CFRetain: <>
+ 2484 						copy_primary_ip: CFStringRef (), <./Plugins/IPMonitor/smb-configuration.c 437>
+ 2485 							SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 2486 							SCDynamicStoreCopyValue: 446
+ 2487 							CFRelease: <>
+ 2488 							isA_CFDictionary: <>
+ 2489 							CFDictionaryGetValue: <>
+ 2490 							isA_CFArray: <>
+ 2491 							CFArrayGetCount: <>
+ 2492 							CFArrayGetValueAtIndex: <>
+ 2493 							isA_CFString: <>
+ 2494 							CFRetain: <>
+ 2495 						start_dns_query: Boolean (), <./Plugins/IPMonitor/smb-configuration.c 646>
+ 2496 							SCLog: 16
+ 2497 							CFSTR: <>
+ 2498 							CFRetain: <>
+ 2499 							CFRelease: <>
+ 2500 							replyMPCopyDescription: CFStringRef (), <./Plugins/IPMonitor/smb-configuration.c 591>
+ 2501 								CFStringCreateWithFormat: <>
+ 2502 								CFSTR: <>
+ 2503 							gettimeofday: <>
+ 2504 							getnameinfo_async_start: <>
+ 2505 							reverseDNSComplete: void (), <./Plugins/IPMonitor/smb-configuration.c 472>
+ 2506 								gettimeofday: <>
+ 2507 								timersub: <>
+ 2508 								SCLog: 16
+ 2509 								CFSTR: <>
+ 2510 								smb_copy_global_configuration: 2467
+ 2511 								CFDictionaryGetValue: <>
+ 2512 								strchr: <>
+ 2513 								CFStringCreateWithBytes: <>
+ 2514 								strlen: <>
+ 2515 								CFDictionaryCreateMutableCopy: <>
+ 2516 								CFDictionarySetValue: <>
+ 2517 								CFRelease: <>
+ 2518 								gai_strerror: <>
+ 2519 								SCDynamicStoreCopyLocalHostName: 1476
+ 2520 								copy_default_name: CFStringRef (), <./Plugins/IPMonitor/smb-configuration.c 115>
+ 2521 									bzero: <>
+ 2522 									sysctl: <>
+ 2523 									SCLog: 16
+ 2524 									CFSTR: <>
+ 2525 									strerror: <>
+ 2526 									index: <>
+ 2527 									strlen: <>
+ 2528 									isdigit: <>
+ 2529 									CFStringCreateMutable: <>
+ 2530 									CFStringAppendFormat: <>
+ 2531 									SCNetworkInterfaceGetHardwareAddressString: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4389>
+ 2532 										isA_SCNetworkInterface: <>
+ 2533 										CFDataGetBytePtr: <>
+ 2534 										CFDataGetLength: <>
+ 2535 										CFAllocatorAllocate: <>
+ 2536 										snprintf: <>
+ 2537 										CFStringCreateWithCString: <>
+ 2538 										CFAllocatorDeallocate: <>
+ 2539 									CFStringCreateMutableCopy: <>
+ 2540 									CFStringFindAndReplace: <>
+ 2541 									CFRangeMake: <>
+ 2542 									CFStringGetLength: <>
+ 2543 									CFStringDelete: <>
+ 2544 									CFRelease: <>
+ 2545 									CFStringUppercase: <>
+ 2546 								smb_set_configuration: void (), <./Plugins/IPMonitor/smb-configuration.c 267>
+ 2547 									SCPreferencesCreate: 2
+ 2548 									CFSTR: <>
+ 2549 									SCLog: 16
+ 2550 									SCErrorString: 181
+ 2551 									SCError: 185
+ 2552 									SCPreferencesLock: 1003
+ 2553 									isMacOSXServer: Boolean (), <./Plugins/IPMonitor/smb-configuration.c 74>
+ 2554 										stat: <>
+ 2555 									SCDynamicStoreCopyComputerName: CFStringRef (), <./SystemConfiguration.fproj/SCDHostName.c 111>
+ 2556 										SCDynamicStoreKeyCreateComputerName: 568
+ 2557 										SCDynamicStoreCopyValue: 446
+ 2558 										CFRelease: <>
+ 2559 										isA_CFDictionary: <>
+ 2560 										isA_CFString: <>
+ 2561 										CFDictionaryGetValue: <>
+ 2562 										CFRetain: <>
+ 2563 										isA_CFNumber: <>
+ 2564 										CFNumberGetValue: <>
+ 2565 										CFStringGetSystemEncoding: <>
+ 2566 									update_pref: void (), <./Plugins/IPMonitor/smb-configuration.c 247>
+ 2567 										SCPreferencesGetValue: 5
+ 2568 										SCPreferencesSetValue: 1120
+ 2569 										SCPreferencesRemoveValue: 1122
+ 2570 									SCDynamicStoreKeyCreateComputerName: 568
+ 2571 									SCDynamicStoreCopyValue: 446
+ 2572 									CFRelease: <>
+ 2573 									isA_CFDictionary: <>
+ 2574 									CFDictionaryGetValue: <>
+ 2575 									isA_CFNumber: <>
+ 2576 									CFNumberGetValue: <>
+ 2577 									CFStringCreateWithFormat: <>
+ 2578 									isA_CFString: <>
+ 2579 									CFEqual: <>
+ 2580 									isA_CFArray: <>
+ 2581 									SCPreferencesCommitChanges: 1229
+ 2582 									SCPreferencesApplyChanges: 1282
+ 2583 									SCPreferencesUnlock: 1265
+ 2584 								free: <>
+ 2585 							getnameinfo_async_handleCFReply: void (), <./Plugins/IPMonitor/smb-configuration.c 603>
+ 2586 								SCLog: 16
+ 2587 								CFSTR: <>
+ 2588 								CFMachPortGetPort: <>
+ 2589 								CFMachPortInvalidate: <>
+ 2590 								CFRelease: <>
+ 2591 								getnameinfo_async_handle_reply: <>
+ 2592 								CFRetain: <>
+ 2593 								replyMPCopyDescription: 2500
+ 2594 								getnameinfo_async_handleCFReply: 2585
+ 2595 								CFMachPortCreateRunLoopSource: <>
+ 2596 								CFRunLoopAddSource: <>
+ 2597 								CFRunLoopGetCurrent: <>
+ 2598 							CFMachPortCreateRunLoopSource: <>
+ 2599 							CFRunLoopAddSource: <>
+ 2600 							CFRunLoopGetCurrent: <>
+ 2601 						SCDynamicStoreCopyLocalHostName: 1476
+ 2602 						CFDictionaryCreateMutableCopy: <>
+ 2603 						CFDictionarySetValue: <>
+ 2604 						CFRelease: <>
+ 2605 						copy_default_name: 2520
+ 2606 						smb_set_configuration: 2546
+ 2607 						CFRunLoopTimerInvalidate: <>
+ 2608 					CFRunLoopAddTimer: <>
+ 2609 					CFRunLoopGetCurrent: <>
+ 2610 				SCLog: 16
+ 2611 				SCErrorString: 181
+ 2612 				SCError: 185
+ 2613 				CFArrayCreateMutable: <>
+ 2614 				SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 2615 				CFArrayAppendValue: <>
+ 2616 				CFRelease: <>
+ 2617 				SCDynamicStoreKeyCreateComputerName: 568
+ 2618 				SCDynamicStoreKeyCreateHostNames: 571
+ 2619 				SCDynamicStoreSetNotificationKeys: 195
+ 2620 				SCDynamicStoreCreateRunLoopSource: 199
+ 2621 				CFRunLoopAddSource: <>
+ 2622 				CFRunLoopGetCurrent: <>
+ 2623 		prime_IPMonitor: __private_extern__ void (), <./Plugins/IPMonitor/ip_plugin.c 5104>
+ 2624 			update_ipv4: 1837
+ 2625 		run_test: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 5521>
+ 2626 			printf: <>
+ 2627 			make_IPv4_dict: CFDictionaryRef (), <./Plugins/IPMonitor/ip_plugin.c 5450>
+ 2628 				CFDictionaryCreateMutable: <>
+ 2629 				dict_add_string_as_array: void (), <./Plugins/IPMonitor/ip_plugin.c 5428>
+ 2630 					CFStringCreateWithCString: <>
+ 2631 					CFArrayCreate: <>
+ 2632 					CFRelease: <>
+ 2633 					CFDictionarySetValue: <>
+ 2634 				dict_add_string: void (), <./Plugins/IPMonitor/ip_plugin.c 5411>
+ 2635 					CFStringCreateWithCString: <>
+ 2636 					CFDictionarySetValue: <>
+ 2637 					CFRelease: <>
+ 2638 			fprintf: <>
+ 2639 			exit: <>
+ 2640 			IPv4RouteListCreateWithDictionary: IPv4RouteListRef (), <./Plugins/IPMonitor/ip_plugin.c 1282>
+ 2641 				plist_get_cstring: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 1253>
+ 2642 					CFDictionaryGetValue: <>
+ 2643 					isA_CFString: <>
+ 2644 					CFStringGetCString: <>
+ 2645 				if_nametoindex: <>
+ 2646 				cfstring_to_ip: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 710>
+ 2647 					cfstring_to_ipvx: 1917
+ 2648 				CFDictionaryGetValue: <>
+ 2649 				dict_get_first_ip: boolean_t (), <./Plugins/IPMonitor/ip_plugin.c 766>
+ 2650 					CFDictionaryGetValue: <>
+ 2651 					isA_CFArray: <>
+ 2652 					CFArrayGetCount: <>
+ 2653 					cfstring_to_ip: 2646
+ 2654 					CFArrayGetValueAtIndex: <>
+ 2655 				subnet_addr: in_addr (), <./Plugins/IPMonitor/ip_plugin.c 806>
+ 2656 				ntohl: <>
+ 2657 				PrimaryRankGetRankAssertion: 1902
+ 2658 				get_override_primary: 1909
+ 2659 				strncmp: <>
+ 2660 				malloc: <>
+ 2661 				IPv4RouteListComputeSize: 1790
+ 2662 				bzero: <>
+ 2663 				strlcpy: <>
+ 2664 			IPv4RouteListCopyDescription: 1694
+ 2665 			SCLog: 16
+ 2666 			CFSTR: <>
+ 2667 			CFRelease: <>
+ 2668 			RankMake: 1784
+ 2669 			PrimaryRankGetRankAssertion: 1902
+ 2670 			IPv4RouteListAddRouteList: 1787
+ 2671 			free: <>
+ 2672 			bcmp: <>
+ 2673 			IPv4RouteListComputeSize: 1790
+ 2674 		fprintf: <>
+ 2675 		printf: <>
+ 2676 		compare_tests: void (), <./Plugins/IPMonitor/ip_plugin.c 5671>
+ 2677 			make_IPv4RouteList: IPv4RouteListRef (), <./Plugins/IPMonitor/ip_plugin.c 5466>
+ 2678 				make_IPv4_dict: 2627
+ 2679 				fprintf: <>
+ 2680 				exit: <>
+ 2681 				IPv4RouteListCreateWithDictionary: 2640
+ 2682 				RankMake: 1784
+ 2683 				PrimaryRankGetRankAssertion: 1902
+ 2684 				IPv4RouteListAddRouteList: 1787
+ 2685 				free: <>
+ 2686 				CFRelease: <>
+ 2687 			printf: <>
+ 2688 			IPv4RouteListPrint: __inline__ void (), <./Plugins/IPMonitor/ip_plugin.c 966>
+ 2689 				IPv4RouteListCopyDescription: 1694
+ 2690 				SCPrint: 100
+ 2691 				CFSTR: <>
+ 2692 				CFRelease: <>
+ 2693 			IPv4RouteListApply: 1858
+ 2694 			compare_callback: void (), <./Plugins/IPMonitor/ip_plugin.c 5651>
+ 2695 				printf: <>
+ 2696 				IPv4RoutePrint: __inline__ void (), <./Plugins/IPMonitor/ip_plugin.c 879>
+ 2697 					IPv4RouteCopyDescription: 1798
+ 2698 					SCPrint: 100
+ 2699 					CFSTR: <>
+ 2700 					CFRelease: <>
+ 2701 			free: <>
+ 2702 		sprintf: <>
+ 2703 		getpid: <>
+ 2704 		fflush: <>
+ 2705 		system: <>
+ 2706 		CFArrayCreateMutable: <>
+ 2707 		SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 2708 		CFArrayAppendValue: <>
+ 2709 		SCDynamicStoreCopyMultiple: 123
+ 2710 		CFDictionaryCreateMutable: <>
+ 2711 		CFDictionaryApplyFunction: <>
+ 2712 		split: void (), <./Plugins/IPMonitor/dns-configuration.c 1494>
+ 2713 			CFStringCreateArrayBySeparatingStrings: <>
+ 2714 			CFSTR: <>
+ 2715 			CFArrayGetValueAtIndex: <>
+ 2716 			CFDictionaryGetValue: <>
+ 2717 			CFDictionaryCreateMutableCopy: <>
+ 2718 			CFDictionaryCreateMutable: <>
+ 2719 			CFEqual: <>
+ 2720 			CFDictionarySetValue: <>
+ 2721 			CFRelease: <>
+ 2722 		SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 2723 		SCDynamicStoreCopyValue: 446
+ 2724 		CFDictionaryGetValue: <>
+ 2725 		SCDynamicStoreKeyCreate: 118
+ 2726 		dns_configuration_init: 1554
+ 2727 		dns_configuration_set: 1991
+ 2728 		split: void (), <./Plugins/IPMonitor/proxy-configuration.c 696>
+ 2729 			CFStringCreateArrayBySeparatingStrings: <>
+ 2730 			CFSTR: <>
+ 2731 			CFArrayGetValueAtIndex: <>
+ 2732 			CFDictionaryGetValue: <>
+ 2733 			CFDictionaryCreateMutableCopy: <>
+ 2734 			CFDictionaryCreateMutable: <>
+ 2735 			CFEqual: <>
+ 2736 			CFDictionarySetValue: <>
+ 2737 			CFRelease: <>
+ 2738 			CFDictionaryApplyFunction: <>
+ 2739 			mergeDict: void (), <./Plugins/IPMonitor/proxy-configuration.c 686>
+ 2740 				CFDictionarySetValue: <>
+ 2741 		CFDictionaryCreateMutableCopy: <>
+ 2742 		CFDictionaryRemoveValue: <>
+ 2743 		proxy_configuration_init: 1560
+ 2744 		proxy_configuration_update: 2232
+ 2745 		copy_default_name: 2520
+ 2746 		copy_primary_service: 2476
+ 2747 		copy_primary_ip: 2484
+ 2748 		start_dns_query: 2495
+ 2749 		smb_update_configuration: 2466
+ 2750 		load_smb_configuration: 2449
+ 2751 		CFRetain: <>
+ 2752 		exec_InterfaceNamer: void * (), <./Plugins/InterfaceNamer/ifnamer.c 2309>
+ 2753 			pthread_setname_np: <>
+ 2754 			CFBundleGetInfoDictionary: <>
+ 2755 			isA_CFDictionary: <>
+ 2756 			CFDictionaryGetValue: <>
+ 2757 			CFSTR: <>
+ 2758 			isA_CFNumber: <>
+ 2759 			CFNumberGetValue: <>
+ 2760 			SCLog: 16
+ 2761 			setup_Virtual: Boolean (), <./Plugins/InterfaceNamer/ifnamer.c 2274>
+ 2762 				SCPreferencesCreate: 2
+ 2763 				CFSTR: <>
+ 2764 				SCLog: 16
+ 2765 				SCErrorString: 181
+ 2766 				SCError: 185
+ 2767 				SCPreferencesSetCallback: 1310
+ 2768 				updateVirtualNetworkInterfaceConfiguration: void (), <./Plugins/InterfaceNamer/ifnamer.c 557>
+ 2769 					CFRelease: <>
+ 2770 					updateBondInterfaceConfiguration: void (), <./Plugins/InterfaceNamer/ifnamer.c 469>
+ 2771 						SCBondInterfaceCopyAll: CFArrayRef (), <./SystemConfiguration.fproj/BondConfiguration.c 361>
+ 2772 							CFArrayCreateMutable: <>
+ 2773 							CFStringCreateWithFormat: <>
+ 2774 							CFSTR: <>
+ 2775 							SCPreferencesPathGetValue: 27
+ 2776 							isA_CFDictionary: <>
+ 2777 							CFDictionaryApplyFunction: <>
+ 2778 							add_configured_interface: void (), <./SystemConfiguration.fproj/BondConfiguration.c 170>
+ 2779 								CFDictionaryGetValue: <>
+ 2780 								isA_CFArray: <>
+ 2781 								CFArrayGetCount: <>
+ 2782 								CFArrayGetValueAtIndex: <>
+ 2783 								isA_CFString: <>
+ 2784 								add_interface: void (), <./SystemConfiguration.fproj/BondConfiguration.c 141>
+ 2785 									CFArrayCreateMutable: <>
+ 2786 									CFArrayAppendValue: <>
+ 2787 									CFRelease: <>
+ 2788 								CFRelease: <>
+ 2789 								SCBondInterfaceSetLocalizedDisplayName: Boolean (), <./SystemConfiguration.fproj/BondConfiguration.c 887>
+ 2790 									isA_SCBondInterface: <>
+ 2791 									isA_CFString: <>
+ 2792 									CFStringCreateWithFormat: <>
+ 2793 									CFSTR: <>
+ 2794 									SCPreferencesPathGetValue: 27
+ 2795 									isA_CFDictionary: <>
+ 2796 									CFRelease: <>
+ 2797 									CFDictionaryCreateMutableCopy: <>
+ 2798 									CFDictionarySetValue: <>
+ 2799 									CFDictionaryRemoveValue: <>
+ 2800 									SCPreferencesPathSetValue: 1168
+ 2801 									CFStringCreateCopy: <>
+ 2802 								isA_CFDictionary: <>
+ 2803 								SCBondInterfaceSetOptions: Boolean (), <./SystemConfiguration.fproj/BondConfiguration.c 949>
+ 2804 									isA_SCBondInterface: <>
+ 2805 									isA_CFDictionary: <>
+ 2806 									CFStringCreateWithFormat: <>
+ 2807 									CFSTR: <>
+ 2808 									SCPreferencesPathGetValue: 27
+ 2809 									CFRelease: <>
+ 2810 									CFDictionaryCreateMutableCopy: <>
+ 2811 									CFDictionarySetValue: <>
+ 2812 									CFDictionaryRemoveValue: <>
+ 2813 									SCPreferencesPathSetValue: 1168
+ 2814 									CFDictionaryCreateCopy: <>
+ 2815 								isA_CFNumber: <>
+ 2816 								CFRetain: <>
+ 2817 								CFArrayAppendValue: <>
+ 2818 							CFDictionaryCreate: <>
+ 2819 							SCPreferencesPathSetValue: 1168
+ 2820 							CFRelease: <>
+ 2821 							add_legacy_configuration: void (), <./SystemConfiguration.fproj/BondConfiguration.c 232>
+ 2822 								SCPreferencesCreate: 2
+ 2823 								CFSTR: <>
+ 2824 								SCPreferencesGetValue: 5
+ 2825 								isA_CFArray: <>
+ 2826 								CFRelease: <>
+ 2827 								CFArrayGetCount: <>
+ 2828 								CFArrayGetValueAtIndex: <>
+ 2829 								isA_CFDictionary: <>
+ 2830 								CFDictionaryGetValue: <>
+ 2831 								isA_CFString: <>
+ 2832 								CFStringCreateWithFormat: <>
+ 2833 								SCPreferencesPathGetValue: 27
+ 2834 								CFDictionaryCreateMutable: <>
+ 2835 								CFArrayCreate: <>
+ 2836 								CFDictionaryAddValue: <>
+ 2837 								SCPreferencesPathSetValue: 1168
+ 2838 								CFRetain: <>
+ 2839 								add_interface: 2784
+ 2840 								SCBondInterfaceSetLocalizedDisplayName: 2789
+ 2841 								CFArrayAppendValue: <>
+ 2842 						CFArrayGetCount: <>
+ 2843 						CFRelease: <>
+ 2844 						SCLog: 16
+ 2845 						CFSTR: <>
+ 2846 						SCErrorString: 181
+ 2847 						SCError: 185
+ 2848 					updateBridgeInterfaceConfiguration: void (), <./Plugins/InterfaceNamer/ifnamer.c 499>
+ 2849 						SCBridgeInterfaceCopyAll: CFArrayRef (), <./SystemConfiguration.fproj/BridgeConfiguration.c 216>
+ 2850 							CFArrayCreateMutable: <>
+ 2851 							CFStringCreateWithFormat: <>
+ 2852 							CFSTR: <>
+ 2853 							SCPreferencesPathGetValue: 27
+ 2854 							isA_CFDictionary: <>
+ 2855 							CFDictionaryApplyFunction: <>
+ 2856 							add_configured_interface: void (), <./SystemConfiguration.fproj/BridgeConfiguration.c 155>
+ 2857 								CFDictionaryGetValue: <>
+ 2858 								isA_CFArray: <>
+ 2859 								CFArrayGetCount: <>
+ 2860 								CFArrayGetValueAtIndex: <>
+ 2861 								isA_CFString: <>
+ 2862 								add_interface: void (), <./SystemConfiguration.fproj/BridgeConfiguration.c 129>
+ 2863 									CFArrayCreateMutable: <>
+ 2864 									CFArrayAppendValue: <>
+ 2865 									CFRelease: <>
+ 2866 								CFRelease: <>
+ 2867 								SCBridgeInterfaceSetLocalizedDisplayName: Boolean (), <./SystemConfiguration.fproj/BridgeConfiguration.c 728>
+ 2868 									isA_SCBridgeInterface: <>
+ 2869 									isA_CFString: <>
+ 2870 									CFStringCreateWithFormat: <>
+ 2871 									CFSTR: <>
+ 2872 									SCPreferencesPathGetValue: 27
+ 2873 									isA_CFDictionary: <>
+ 2874 									CFRelease: <>
+ 2875 									CFDictionaryCreateMutableCopy: <>
+ 2876 									CFDictionarySetValue: <>
+ 2877 									CFDictionaryRemoveValue: <>
+ 2878 									SCPreferencesPathSetValue: 1168
+ 2879 									CFStringCreateCopy: <>
+ 2880 								isA_CFDictionary: <>
+ 2881 								SCBridgeInterfaceSetOptions: Boolean (), <./SystemConfiguration.fproj/BridgeConfiguration.c 790>
+ 2882 									isA_SCBridgeInterface: <>
+ 2883 									isA_CFDictionary: <>
+ 2884 									CFStringCreateWithFormat: <>
+ 2885 									CFSTR: <>
+ 2886 									SCPreferencesPathGetValue: 27
+ 2887 									CFRelease: <>
+ 2888 									CFDictionaryCreateMutableCopy: <>
+ 2889 									CFDictionarySetValue: <>
+ 2890 									CFDictionaryRemoveValue: <>
+ 2891 									SCPreferencesPathSetValue: 1168
+ 2892 									CFDictionaryCreateCopy: <>
+ 2893 								CFRetain: <>
+ 2894 								CFArrayAppendValue: <>
+ 2895 							CFRelease: <>
+ 2896 						CFArrayGetCount: <>
+ 2897 						CFRelease: <>
+ 2898 						SCLog: 16
+ 2899 						CFSTR: <>
+ 2900 						SCErrorString: 181
+ 2901 						SCError: 185
+ 2902 					updateVLANInterfaceConfiguration: void (), <./Plugins/InterfaceNamer/ifnamer.c 528>
+ 2903 						SCVLANInterfaceCopyAll: CFArrayRef (), <./SystemConfiguration.fproj/VLANConfiguration.c 303>
+ 2904 							CFArrayCreateMutable: <>
+ 2905 							CFStringCreateWithFormat: <>
+ 2906 							CFSTR: <>
+ 2907 							SCPreferencesPathGetValue: 27
+ 2908 							isA_CFDictionary: <>
+ 2909 							CFDictionaryApplyFunction: <>
+ 2910 							add_configured_interface: void (), <./SystemConfiguration.fproj/VLANConfiguration.c 80>
+ 2911 								CFDictionaryGetValue: <>
+ 2912 								isA_CFString: <>
+ 2913 								isA_CFNumber: <>
+ 2914 								SCVLANInterfaceSetPhysicalInterfaceAndTag: Boolean (), <./SystemConfiguration.fproj/VLANConfiguration.c 688>
+ 2915 									isA_SCVLANInterface: <>
+ 2916 									isA_SCNetworkInterface: <>
+ 2917 									isA_CFNumber: <>
+ 2918 									CFNumberGetValue: <>
+ 2919 									findVLANInterfaceAndTag: SCVLANInterfaceRef (), <./SystemConfiguration.fproj/VLANConfiguration.c 258>
+ 2920 										SCVLANInterfaceCopyAll: 2903
+ 2921 										CFArrayGetCount: <>
+ 2922 										CFArrayGetValueAtIndex: <>
+ 2923 										SCVLANInterfaceGetPhysicalInterface: SCNetworkInterfaceRef (), <./SystemConfiguration.fproj/VLANConfiguration.c 646>
+ 2924 											isA_SCVLANInterface: <>
+ 2925 										SCVLANInterfaceGetTag: CFNumberRef (), <./SystemConfiguration.fproj/VLANConfiguration.c 660>
+ 2926 											isA_SCVLANInterface: <>
+ 2927 										CFEqual: <>
+ 2928 										CFRetain: <>
+ 2929 										CFRelease: <>
+ 2930 									CFEqual: <>
+ 2931 									CFRelease: <>
+ 2932 									CFStringCreateWithFormat: <>
+ 2933 									CFSTR: <>
+ 2934 									SCPreferencesPathGetValue: 27
+ 2935 									isA_CFDictionary: <>
+ 2936 									CFDictionaryCreateMutableCopy: <>
+ 2937 									CFDictionarySetValue: <>
+ 2938 									SCNetworkInterfaceGetBSDName: 87
+ 2939 									SCPreferencesPathSetValue: 1168
+ 2940 									CFRetain: <>
+ 2941 								CFRelease: <>
+ 2942 								SCVLANInterfaceSetLocalizedDisplayName: Boolean (), <./SystemConfiguration.fproj/VLANConfiguration.c 789>
+ 2943 									isA_SCVLANInterface: <>
+ 2944 									isA_CFString: <>
+ 2945 									CFStringCreateWithFormat: <>
+ 2946 									CFSTR: <>
+ 2947 									SCPreferencesPathGetValue: 27
+ 2948 									isA_CFDictionary: <>
+ 2949 									CFRelease: <>
+ 2950 									CFDictionaryCreateMutableCopy: <>
+ 2951 									CFDictionarySetValue: <>
+ 2952 									CFDictionaryRemoveValue: <>
+ 2953 									SCPreferencesPathSetValue: 1168
+ 2954 									CFStringCreateCopy: <>
+ 2955 								isA_CFDictionary: <>
+ 2956 								SCVLANInterfaceSetOptions: Boolean (), <./SystemConfiguration.fproj/VLANConfiguration.c 851>
+ 2957 									isA_SCVLANInterface: <>
+ 2958 									isA_CFDictionary: <>
+ 2959 									CFStringCreateWithFormat: <>
+ 2960 									CFSTR: <>
+ 2961 									SCPreferencesPathGetValue: 27
+ 2962 									CFRelease: <>
+ 2963 									CFDictionaryCreateMutableCopy: <>
+ 2964 									CFDictionarySetValue: <>
+ 2965 									CFDictionaryRemoveValue: <>
+ 2966 									SCPreferencesPathSetValue: 1168
+ 2967 									CFDictionaryCreateCopy: <>
+ 2968 								CFRetain: <>
+ 2969 								CFArrayAppendValue: <>
+ 2970 							CFDictionaryCreate: <>
+ 2971 							SCPreferencesPathSetValue: 1168
+ 2972 							CFRelease: <>
+ 2973 							add_legacy_configuration: void (), <./SystemConfiguration.fproj/VLANConfiguration.c 138>
+ 2974 								SCPreferencesCreate: 2
+ 2975 								CFSTR: <>
+ 2976 								SCPreferencesGetValue: 5
+ 2977 								isA_CFArray: <>
+ 2978 								CFRelease: <>
+ 2979 								CFArrayGetCount: <>
+ 2980 								CFArrayGetValueAtIndex: <>
+ 2981 								isA_CFDictionary: <>
+ 2982 								CFDictionaryGetValue: <>
+ 2983 								isA_CFString: <>
+ 2984 								isA_CFNumber: <>
+ 2985 								CFStringCreateWithFormat: <>
+ 2986 								SCPreferencesPathGetValue: 27
+ 2987 								CFDictionaryCreate: <>
+ 2988 								SCPreferencesPathSetValue: 1168
+ 2989 								CFRetain: <>
+ 2990 								SCVLANInterfaceSetPhysicalInterfaceAndTag: 2914
+ 2991 								SCVLANInterfaceSetLocalizedDisplayName: 2942
+ 2992 								CFArrayAppendValue: <>
+ 2993 						CFArrayGetCount: <>
+ 2994 						CFRelease: <>
+ 2995 						SCLog: 16
+ 2996 						CFSTR: <>
+ 2997 						SCErrorString: 181
+ 2998 						SCError: 185
+ 2999 					SCPreferencesSynchronize: 1096
+ 3000 				CFRelease: <>
+ 3001 				SCPreferencesScheduleWithRunLoop: 1384
+ 3002 				CFRunLoopGetCurrent: <>
+ 3003 			setup_IOKit: Boolean (), <./Plugins/InterfaceNamer/ifnamer.c 2105>
+ 3004 				readInterfaceList: CF_RETURNS_RETAINED CFMutableArrayRef (), <./Plugins/InterfaceNamer/ifnamer.c 369>
+ 3005 					SCPreferencesCreate: 2
+ 3006 					SCLog: 16
+ 3007 					CFSTR: <>
+ 3008 					SCErrorString: 181
+ 3009 					SCError: 185
+ 3010 					SCPreferencesGetValue: 5
+ 3011 					isA_CFArray: <>
+ 3012 					CFArrayGetCount: <>
+ 3013 					CFArrayCreateMutable: <>
+ 3014 					CFArrayGetValueAtIndex: <>
+ 3015 					isA_CFDictionary: <>
+ 3016 					CFDictionaryContainsKey: <>
+ 3017 					CFArrayAppendValue: <>
+ 3018 					CFRelease: <>
+ 3019 				CFArrayGetCount: <>
+ 3020 				CFArraySortValues: <>
+ 3021 				CFRangeMake: <>
+ 3022 				if_unit_compare: CFComparisonResult (), <./Plugins/InterfaceNamer/ifnamer.c 246>
+ 3023 					CFDictionaryGetValue: <>
+ 3024 					CFSTR: <>
+ 3025 					CFNumberCompare: <>
+ 3026 				previouslyActiveInterfaces: CF_RETURNS_RETAINED CFMutableArrayRef (), <./Plugins/InterfaceNamer/ifnamer.c 423>
+ 3027 					CFArrayCreateMutable: <>
+ 3028 					CFArrayGetCount: <>
+ 3029 					CFArrayGetValueAtIndex: <>
+ 3030 					CFDictionaryContainsKey: <>
+ 3031 					CFSTR: <>
+ 3032 					CFDictionaryCreateMutableCopy: <>
+ 3033 					CFDictionaryRemoveValue: <>
+ 3034 					CFArraySetValueAtIndex: <>
+ 3035 					CFArrayAppendValue: <>
+ 3036 					CFRelease: <>
+ 3037 				CFDictionaryCreateMutable: <>
+ 3038 				addTimestamp: void (), <./Plugins/InterfaceNamer/ifnamer.c 230>
+ 3039 					CFAbsoluteTimeGetCurrent: <>
+ 3040 					CFNumberCreate: <>
+ 3041 					CFDictionaryAddValue: <>
+ 3042 					CFRelease: <>
+ 3043 				CFSTR: <>
+ 3044 				IOMasterPort: <>
+ 3045 				SCLog: 16
+ 3046 				IONotificationPortCreate: <>
+ 3047 				IORegistryEntryFromPath: <>
+ 3048 				IOServiceAddInterestNotification: <>
+ 3049 				quietCallback: void (), <./Plugins/InterfaceNamer/ifnamer.c 1900>
+ 3050 					addTimestamp: 3038
+ 3051 					CFSTR: <>
+ 3052 					SCLog: 16
+ 3053 					IOObjectRelease: <>
+ 3054 					CFRunLoopTimerInvalidate: <>
+ 3055 					CFRelease: <>
+ 3056 					interfaceArrivalCallback: void (), <./Plugins/InterfaceNamer/ifnamer.c 1822>
+ 3057 						IOIteratorNext: <>
+ 3058 						CFArrayCreateMutable: <>
+ 3059 						CFArrayAppendValue: <>
+ 3060 						CFRelease: <>
+ 3061 						IOObjectRelease: <>
+ 3062 						updateInterfaces: void (), <./Plugins/InterfaceNamer/ifnamer.c 1567>
+ 3063 							CFArrayGetCount: <>
+ 3064 							CFArraySortValues: <>
+ 3065 							CFRangeMake: <>
+ 3066 							nameInterfaces: void (), <./Plugins/InterfaceNamer/ifnamer.c 1327>
+ 3067 								CFArrayGetCount: <>
+ 3068 								CFArrayGetValueAtIndex: <>
+ 3069 								SCNetworkInterfaceGetBSDName: 87
+ 3070 								CFDictionaryContainsKey: <>
+ 3071 								SCLog: 16
+ 3072 								CFSTR: <>
+ 3073 								displayInterface: void (), <./Plugins/InterfaceNamer/ifnamer.c 1274>
+ 3074 									SCNetworkInterfaceGetBSDName: 87
+ 3075 									SCNetworkInterfaceGetHardwareAddressString: 2531
+ 3076 									SCLog: 16
+ 3077 									CFSTR: <>
+ 3078 								lookupInterfaceByAddress: CFDictionaryRef (), <./Plugins/InterfaceNamer/ifnamer.c 650>
+ 3079 									CFArrayGetCount: <>
+ 3080 									CFArrayGetValueAtIndex: <>
+ 3081 									CFDictionaryGetValue: <>
+ 3082 									CFSTR: <>
+ 3083 									CFEqual: <>
+ 3084 								CFArrayRemoveValueAtIndex: <>
+ 3085 								replaceInterface: void (), <./Plugins/InterfaceNamer/ifnamer.c 1021>
+ 3086 									CFArrayCreateMutable: <>
+ 3087 									lookupInterfaceByAddress: 3078
+ 3088 									CFArrayRemoveValueAtIndex: <>
+ 3089 									lookupInterfaceByUnit: CFDictionaryRef (), <./Plugins/InterfaceNamer/ifnamer.c 688>
+ 3090 										CFArrayGetCount: <>
+ 3091 										CFArrayGetValueAtIndex: <>
+ 3092 										CFDictionaryGetValue: <>
+ 3093 										CFSTR: <>
+ 3094 										CFEqual: <>
+ 3095 									insertInterface: void (), <./Plugins/InterfaceNamer/ifnamer.c 974>
+ 3096 										CFArrayGetCount: <>
+ 3097 										SCNetworkInterfaceGetBSDName: 87
+ 3098 										addTimestamp: 3038
+ 3099 										createInterfaceDict: CFDictionaryRef (), <./Plugins/InterfaceNamer/ifnamer.c 594>
+ 3100 											CFDictionaryCreateMutable: <>
+ 3101 											CFDictionarySetValue: <>
+ 3102 											CFSTR: <>
+ 3103 											CFRelease: <>
+ 3104 											SCNetworkInterfaceGetBSDName: 87
+ 3105 											SCNetworkInterfaceGetInterfaceType: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4440>
+ 3106 												isA_SCNetworkInterface: <>
+ 3107 										CFRelease: <>
+ 3108 										CFArrayGetValueAtIndex: <>
+ 3109 										CFDictionaryGetValue: <>
+ 3110 										CFSTR: <>
+ 3111 										CFNumberCompare: <>
+ 3112 										CFArrayInsertValueAtIndex: <>
+ 3113 										CFArrayAppendValue: <>
+ 3114 									CFStringCreateWithFormat: <>
+ 3115 									CFSTR: <>
+ 3116 									reportIssue: void (), <./Plugins/InterfaceNamer/ifnamer.c 270>
+ 3117 										asl_new: <>
+ 3118 										asl_set: <>
+ 3119 										SCLOG: 297
+ 3120 										CFSTR: <>
+ 3121 										asl_free: <>
+ 3122 									CFRelease: <>
+ 3123 								CFDictionaryGetValue: <>
+ 3124 								CFRetain: <>
+ 3125 								isQuiet: __inline__ boolean_t (), <./Plugins/InterfaceNamer/ifnamer.c 1321>
+ 3126 								addTimestamp: 3038
+ 3127 								lookupMatchingInterface: CFDictionaryRef (), <./Plugins/InterfaceNamer/ifnamer.c 891>
+ 3128 									SCNetworkInterfaceGetInterfaceType: 3105
+ 3129 									CFArrayApplyFunction: <>
+ 3130 									CFRangeMake: <>
+ 3131 									CFArrayGetCount: <>
+ 3132 									matchKnown: void (), <./Plugins/InterfaceNamer/ifnamer.c 778>
+ 3133 										CFDictionaryGetValue: <>
+ 3134 										CFSTR: <>
+ 3135 										matchInterfaceInfo: Boolean (), <./Plugins/InterfaceNamer/ifnamer.c 757>
+ 3136 											isA_CFDictionary: <>
+ 3137 											thinInterfaceInfo: CF_RETURNS_RETAINED CFDictionaryRef (), <./Plugins/InterfaceNamer/ifnamer.c 733>
+ 3138 												CFDictionaryGetValueIfPresent: <>
+ 3139 												CFSTR: <>
+ 3140 												isA_CFNumber: <>
+ 3141 												CFNumberGetValue: <>
+ 3142 												CFDictionaryCreateMutableCopy: <>
+ 3143 												CFDictionaryRemoveValue: <>
+ 3144 												CFRetain: <>
+ 3145 											CFRelease: <>
+ 3146 										isA_CFBoolean: <>
+ 3147 										CFArrayCreateMutable: <>
+ 3148 										CFArrayAppendValue: <>
+ 3149 									matchUnnamed: void (), <./Plugins/InterfaceNamer/ifnamer.c 826>
+ 3150 										SCNetworkInterfaceGetInterfaceType: 3105
+ 3151 										matchInterfaceInfo: 3135
+ 3152 										CFRelease: <>
+ 3153 									CFArrayGetValueAtIndex: <>
+ 3154 									CFRelease: <>
+ 3155 									CFDictionaryGetValue: <>
+ 3156 									CFSTR: <>
+ 3157 									isA_CFString: <>
+ 3158 									socket: <>
+ 3159 									ioctl: <>
+ 3160 									close: <>
+ 3161 								CFArrayGetFirstIndexOfValue: <>
+ 3162 								CFRangeMake: <>
+ 3163 								builtinCount: int (), <./Plugins/InterfaceNamer/ifnamer.c 1299>
+ 3164 									CFArrayGetValueAtIndex: <>
+ 3165 									CFEqual: <>
+ 3166 								getHighestUnitForType: CFNumberRef (), <./Plugins/InterfaceNamer/ifnamer.c 1057>
+ 3167 									CFArrayGetCount: <>
+ 3168 									CFArrayGetValueAtIndex: <>
+ 3169 									CFDictionaryGetValue: <>
+ 3170 									CFSTR: <>
+ 3171 									CFEqual: <>
+ 3172 									CFNumberCompare: <>
+ 3173 								CFNumberGetValue: <>
+ 3174 								CFNumberCreate: <>
+ 3175 								registerInterfaceWithIORegistryEntryID: kern_return_t (), <./Plugins/InterfaceNamer/ifnamer.c 1107>
+ 3176 									CFDictionaryCreateMutable: <>
+ 3177 									CFNumberCreate: <>
+ 3178 									CFDictionarySetValue: <>
+ 3179 									CFSTR: <>
+ 3180 									CFRelease: <>
+ 3181 									CFDataCreate: <>
+ 3182 									IOConnectSetCFProperties: <>
+ 3183 								copyNamedInterfaceForIORegistryEntryID: SCNetworkInterfaceRef (), <./Plugins/InterfaceNamer/ifnamer.c 1186>
+ 3184 									copyInterfaceForIORegistryEntryID: SCNetworkInterfaceRef (), <./Plugins/InterfaceNamer/ifnamer.c 1133>
+ 3185 										IOMasterPort: <>
+ 3186 										SCLog: 16
+ 3187 										CFSTR: <>
+ 3188 										IOServiceGetMatchingServices: <>
+ 3189 										IORegistryEntryIDMatching: <>
+ 3190 										IOIteratorNext: <>
+ 3191 										mach_port_deallocate: <>
+ 3192 										mach_task_self: <>
+ 3193 										IOObjectRelease: <>
+ 3194 									ensureInterfaceHasUnit: SCNetworkInterfaceRef (), <./Plugins/InterfaceNamer/ifnamer.c 1095>
+ 3195 										CFRelease: <>
+ 3196 								registerInterfaceWithIOServicePath: kern_return_t (), <./Plugins/InterfaceNamer/ifnamer.c 1202>
+ 3197 									CFDictionaryCreateMutable: <>
+ 3198 									CFNumberCreate: <>
+ 3199 									CFDictionarySetValue: <>
+ 3200 									CFSTR: <>
+ 3201 									CFRelease: <>
+ 3202 									IOConnectSetCFProperties: <>
+ 3203 								copyNamedInterfaceForIOKitPath: SCNetworkInterfaceRef (), <./Plugins/InterfaceNamer/ifnamer.c 1263>
+ 3204 									copyInterfaceForIOKitPath: SCNetworkInterfaceRef (), <./Plugins/InterfaceNamer/ifnamer.c 1225>
+ 3205 										IOMasterPort: <>
+ 3206 										SCLog: 16
+ 3207 										CFSTR: <>
+ 3208 										IORegistryEntryFromPath: <>
+ 3209 										mach_port_deallocate: <>
+ 3210 										mach_task_self: <>
+ 3211 										IOObjectRelease: <>
+ 3212 									ensureInterfaceHasUnit: 3194
+ 3213 								CFStringCreateWithFormat: <>
+ 3214 								reportIssue: 3116
+ 3215 								CFRelease: <>
+ 3216 								usleep: <>
+ 3217 								CFUserNotificationDisplayNotice: <>
+ 3218 								CFEqual: <>
+ 3219 								CFArraySetValueAtIndex: <>
+ 3220 								lookupInterfaceByUnit: 3089
+ 3221 							isQuiet: 3125
+ 3222 							writeInterfaceList: void (), <./Plugins/InterfaceNamer/ifnamer.c 285>
+ 3223 								isA_CFArray: <>
+ 3224 								SCPreferencesCreate: 2
+ 3225 								SCLog: 16
+ 3226 								CFSTR: <>
+ 3227 								SCErrorString: 181
+ 3228 								SCError: 185
+ 3229 								SCPreferencesGetValue: 5
+ 3230 								history: <>
+ 3231 								CFStringCreateWithFormat: <>
+ 3232 								SCPreferencesSetValue: 1120
+ 3233 								CFRelease: <>
+ 3234 								reportIssue: 3116
+ 3235 								SCPreferencesCommitChanges: 1229
+ 3236 							updateVirtualNetworkInterfaceConfiguration: 2768
+ 3237 							updateStore: void (), <./Plugins/InterfaceNamer/ifnamer.c 455>
+ 3238 								SCDynamicStoreKeyCreate: 118
+ 3239 								CFSTR: <>
+ 3240 								SCDynamicStoreSetValue: Boolean (), <./SystemConfiguration.fproj/SCDSet.c 148>
+ 3241 									CFRelease: <>
+ 3242 									configset: <>
+ 3243 								CFRelease: <>
+ 3244 							CFRelease: <>
+ 3245 							SCLog: 16
+ 3246 							CFSTR: <>
+ 3247 							CFArrayGetValueAtIndex: <>
+ 3248 							CFDictionaryGetValue: <>
+ 3249 							addTimestamp: 3038
+ 3250 					updatePlatformUUID: void (), <./Plugins/InterfaceNamer/ifnamer.c 1766>
+ 3251 						IORegistryEntryFromPath: <>
+ 3252 						IORegistryEntryCreateCFProperty: <>
+ 3253 						CFSTR: <>
+ 3254 						copyEthernetUUID: CFStringRef (), <./Plugins/InterfaceNamer/ifnamer.c 1677>
+ 3255 							CFArrayCreateMutable: <>
+ 3256 							CFArrayGetCount: <>
+ 3257 							CFArrayGetValueAtIndex: <>
+ 3258 							CFDictionaryGetValue: <>
+ 3259 							CFSTR: <>
+ 3260 							isA_CFString: <>
+ 3261 							CFEqual: <>
+ 3262 							isA_CFBoolean: <>
+ 3263 							CFBooleanGetValue: <>
+ 3264 							isA_CFData: <>
+ 3265 							CFDataGetLength: <>
+ 3266 							CFArrayAppendValue: <>
+ 3267 							CFArraySortValues: <>
+ 3268 							CFRangeMake: <>
+ 3269 							compareMacAddress: CFComparisonResult (), <./Plugins/InterfaceNamer/ifnamer.c 1655>
+ 3270 								CFDataGetLength: <>
+ 3271 								bcmp: <>
+ 3272 								CFDataGetBytePtr: <>
+ 3273 							bcopy: <>
+ 3274 							CFDataGetBytePtr: <>
+ 3275 							CFUUIDCreateFromUUIDBytes: <>
+ 3276 							CFUUIDCreateString: <>
+ 3277 							CFRelease: <>
+ 3278 							SCLog: 16
+ 3279 						CFUUIDCreate: <>
+ 3280 						CFUUIDCreateString: <>
+ 3281 						CFRelease: <>
+ 3282 						SCLog: 16
+ 3283 						getenv: <>
+ 3284 						IORegistryEntrySetCFProperty: <>
+ 3285 						addTimestamp: 3038
+ 3286 						updateStore: 3237
+ 3287 						vproc_transaction_end: <>
+ 3288 						IOObjectRelease: <>
+ 3289 				IOServiceGetBusyState: <>
+ 3290 				CFRunLoopTimerCreate: <>
+ 3291 				CFAbsoluteTimeGetCurrent: <>
+ 3292 				timerCallback: void (), <./Plugins/InterfaceNamer/ifnamer.c 2084>
+ 3293 					snapshot: <>
+ 3294 					addTimestamp: 3038
+ 3295 					CFSTR: <>
+ 3296 					captureBusy: CF_RETURNS_RETAINED CFStringRef (), <./Plugins/InterfaceNamer/ifnamer.c 2054>
+ 3297 						snapshot: <>
+ 3298 						CFStringCreateMutable: <>
+ 3299 						IORegistryCreateIterator: <>
+ 3300 						SCLog: 16
+ 3301 						CFSTR: <>
+ 3302 						iterateRegistryBusy: void (), <./Plugins/InterfaceNamer/ifnamer.c 1944>
+ 3303 							IOIteratorNext: <>
+ 3304 							CFArrayCreateMutable: <>
+ 3305 							CFArrayCreateMutableCopy: <>
+ 3306 							IORegistryEntryGetName: <>
+ 3307 							SCLog: 16
+ 3308 							CFSTR: <>
+ 3309 							CFStringCreateMutable: <>
+ 3310 							CFStringAppendCString: <>
+ 3311 							IORegistryEntryGetLocationInPlane: <>
+ 3312 							CFRelease: <>
+ 3313 							CFArrayAppendValue: <>
+ 3314 							IOServiceGetBusyStateAndTime: <>
+ 3315 							CFStringAppend: <>
+ 3316 							CFStringCreateByCombiningStrings: <>
+ 3317 							CFStringAppendFormat: <>
+ 3318 							IORegistryIteratorEnterEntry: <>
+ 3319 							iterateRegistryBusy: 3302
+ 3320 							IORegistryIteratorExitEntry: <>
+ 3321 							IOObjectRelease: <>
+ 3322 						CFStringAppend: <>
+ 3323 						IOObjectRelease: <>
+ 3324 					SCLog: 16
+ 3325 					reportIssue: 3116
+ 3326 					CFRelease: <>
+ 3327 					quietCallback: 3049
+ 3328 				CFRunLoopAddTimer: <>
+ 3329 				CFRunLoopGetCurrent: <>
+ 3330 				IOServiceAddMatchingNotification: <>
+ 3331 				IOServiceMatching: <>
+ 3332 				stackCallback: void (), <./Plugins/InterfaceNamer/ifnamer.c 1854>
+ 3333 					IOIteratorNext: <>
+ 3334 					IOServiceOpen: <>
+ 3335 					mach_task_self: <>
+ 3336 					SCLog: 16
+ 3337 					CFSTR: <>
+ 3338 					addTimestamp: 3038
+ 3339 					IOObjectRelease: <>
+ 3340 					CFRunLoopTimerIsValid: <>
+ 3341 					CFRunLoopTimerSetNextFireDate: <>
+ 3342 					CFAbsoluteTimeGetCurrent: <>
+ 3343 					updateInterfaces: 3062
+ 3344 				interfaceArrivalCallback: 3056
+ 3345 				CFRunLoopAddSource: <>
+ 3346 				IONotificationPortGetRunLoopSource: <>
+ 3347 				CFRunLoopRunInMode: <>
+ 3348 				IOObjectRelease: <>
+ 3349 				mach_port_deallocate: <>
+ 3350 				mach_task_self: <>
+ 3351 			vproc_transaction_begin: <>
+ 3352 			IOServiceClose: <>
+ 3353 			CFRelease: <>
+ 3354 			IOObjectRelease: <>
+ 3355 			IONotificationPortDestroy: <>
+ 3356 			CFRunLoopTimerInvalidate: <>
+ 3357 			CFRunLoopRun: <>
+ 3358 		SCNetworkInterfaceCopyAll: CFArrayRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 3929>
+ 3359 		createInterfaceDict: 3099
+ 3360 		copyEthernetUUID: 3254
+ 3361 		updatePlatformUUID: 3250
+ 3362 		snapshot: <>
+ 3363 		captureBusy: 3296
+ 3364 		getopt_long: <>
+ 3365 		usage: void (), <./scselect.tproj/scselect.c 69>
+ 3366 			SCPrint: 100
+ 3367 			CFSTR: <>
+ 3368 			exit: <>
+ 3369 		CFStringCreateWithFormat: <>
+ 3370 		CFStringGetLength: <>
+ 3371 		CFStringHasPrefix: <>
+ 3372 		CFStringDelete: <>
+ 3373 		CFRangeMake: <>
+ 3374 		CFStringCreateCopy: <>
+ 3375 		CFStringFind: <>
+ 3376 		SCPreferencesGetValue: 5
+ 3377 		CFDictionaryGetCount: <>
+ 3378 		CFAllocatorAllocate: <>
+ 3379 		CFDictionaryGetKeysAndValues: <>
+ 3380 		CFEqual: <>
+ 3381 		isAdmin: Boolean (), <./scselect.tproj/scselect.c 77>
+ 3382 			getuid: <>
+ 3383 			getgroups: <>
+ 3384 			getgrnam: <>
+ 3385 		hasLocalConsoleAccess: Boolean (), <./scselect.tproj/scselect.c 144>
+ 3386 			SessionGetInfo: <>
+ 3387 		SCPreferencesSetValue: 1120
+ 3388 		SCPreferencesCommitChanges: 1229
+ 3389 		SCPreferencesApplyChanges: 1282
+ 3390 		ntohl: <>
+ 3391 		malloc: <>
+ 3392 		bcopy: <>
+ 3393 		bzero: <>
+ 3394 		expand_config: dns_config_t * (), <./dnsinfo/dnsinfo_copy.c 360>
+ 3395 			ntohl: <>
+ 3396 			add_list: boolean_t (), <./dnsinfo/dnsinfo_copy.c 74>
+ 3397 			DNS_PTR: <>
+ 3398 			expand_resolver: dns_resolver_t * (), <./dnsinfo/dnsinfo_copy.c 226>
+ 3399 				ntohl: <>
+ 3400 				add_list: 3396
+ 3401 				DNS_PTR: <>
+ 3402 				ntohs: <>
+ 3403 		dns_configuration_copy: dns_config_t * (), <./dnsinfo/dnsinfo_copy.c 468>
+ 3404 			copy_dns_info: _dns_config_buf_t * (), <./dnsinfo/dnsinfo_copy.c 184>
+ 3405 				ntohl: <>
+ 3406 				malloc: <>
+ 3407 				bcopy: <>
+ 3408 				bzero: <>
+ 3409 				vm_deallocate: <>
+ 3410 				mach_task_self: <>
+ 3411 				mach_error: <>
+ 3412 				free: <>
+ 3413 			expand_config: 3394
+ 3414 			free: <>
+ 3415 		dns_configuration_free: void (), <./dnsinfo/dnsinfo_copy.c 489>
+ 3416 			free: <>
+ 3417 		load_SCNetworkReachability: __private_extern__ void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 1957>
+ 3418 			CFDictionaryCreateMutable: <>
+ 3419 			dispatch_queue_create: <>
+ 3420 			getenv: <>
+ 3421 			xpc_connection_create_mach_service: <>
+ 3422 			xpc_connection_set_event_handler: <>
+ 3423 			xpc_get_type: <>
+ 3424 			process_new_connection: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 1851>
+ 3425 				SCLog: 16
+ 3426 				CFSTR: <>
+ 3427 				xpc_connection_get_pid: <>
+ 3428 				dispatch_sync: <>
+ 3429 				rb_tree_insert_node: bool (), <./SystemConfiguration.fproj/reachability/rb.c 175>
+ 3430 					RBSTAT_INC: <>
+ 3431 					RB_SENTINEL_P: <>
+ 3432 					KASSERT: <>
+ 3433 					TAILQ_NEXT: <>
+ 3434 					TAILQ_PREV: <>
+ 3435 					RB_SET_FATHER: <>
+ 3436 					RB_SET_POSITION: <>
+ 3437 					RB_MARK_BLACK: <>
+ 3438 					RB_MARK_RED: <>
+ 3439 					RB_RED_P: <>
+ 3440 					RB_CHILDLESS_P: <>
+ 3441 					RB_ROOT_P: <>
+ 3442 					RB_TAILQ_INSERT_HEAD: <>
+ 3443 					RB_FATHER: <>
+ 3444 					RB_TAILQ_INSERT_BEFORE: <>
+ 3445 					RB_TAILQ_INSERT_AFTER: <>
+ 3446 					rb_tree_check_node: bool (), <./SystemConfiguration.fproj/reachability/rb.c 1058>
+ 3447 						KASSERT: <>
+ 3448 						RB_SENTINEL_P: <>
+ 3449 						RB_ROOT_P: <>
+ 3450 						RB_POSITION: <>
+ 3451 						RB_FATHER: <>
+ 3452 						RB_FATHER_SENTINEL_P: <>
+ 3453 						rb_tree_iterate_const: const struct rb_node * (), <./SystemConfiguration.fproj/reachability/rb.c 996>
+ 3454 						TAILQ_PREV: <>
+ 3455 						TAILQ_NEXT: <>
+ 3456 						RB_BLACK_P: <>
+ 3457 						rb_tree_count_black: unsigned int (), <./SystemConfiguration.fproj/reachability/rb.c 1042>
+ 3458 							RB_SENTINEL_P: <>
+ 3459 							rb_tree_count_black: 3457
+ 3460 							KASSERT: <>
+ 3461 							RB_BLACK_P: <>
+ 3462 						RB_RED_P: <>
+ 3463 						RB_CHILDLESS_P: <>
+ 3464 						RB_TWOCHILDREN_P: <>
+ 3465 						RB_LEFT_SENTINEL_P: <>
+ 3466 						RB_RIGHT_SENTINEL_P: <>
+ 3467 					rb_tree_insert_rebalance: void (), <./SystemConfiguration.fproj/reachability/rb.c 372>
+ 3468 						RB_FATHER: <>
+ 3469 						KASSERT: <>
+ 3470 						RB_ROOT_P: <>
+ 3471 						RB_RED_P: <>
+ 3472 						RBSTAT_INC: <>
+ 3473 						RB_SENTINEL_P: <>
+ 3474 						RB_BLACK_P: <>
+ 3475 						RB_MARK_BLACK: <>
+ 3476 						RB_MARK_RED: <>
+ 3477 						rb_tree_reparent_nodes: void (), <./SystemConfiguration.fproj/reachability/rb.c 310>
+ 3478 							RB_FATHER: <>
+ 3479 							KASSERT: <>
+ 3480 							RB_SENTINEL_P: <>
+ 3481 							rb_tree_check_node: 3446
+ 3482 							RB_ROOT_P: <>
+ 3483 							RB_POSITION: <>
+ 3484 							RB_SET_FATHER: <>
+ 3485 							RB_COPY_PROPERTIES: <>
+ 3486 							RB_SWAP_PROPERTIES: <>
+ 3487 							RB_SET_POSITION: <>
+ 3488 						RB_POSITION: <>
+ 3489 				xpc_connection_set_event_handler: <>
+ 3490 				xpc_get_type: <>
+ 3491 				rb_tree_find_node: struct rb_node (), <./SystemConfiguration.fproj/reachability/rb.c 121>
+ 3492 				RBNODE_TO_REACH_CLIENT: <>
+ 3493 				process_request: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 1812>
+ 3494 					xpc_dictionary_get_int64: <>
+ 3495 					target_add: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 903>
+ 3496 						SCLog: 16
+ 3497 						CFSTR: <>
+ 3498 						xpc_dictionary_get_remote_connection: <>
+ 3499 						xpc_dictionary_create_reply: <>
+ 3500 						xpc_dictionary_get_uint64: <>
+ 3501 						xpc_dictionary_set_string: <>
+ 3502 						CC_SHA1_Init: <>
+ 3503 						xpc_dictionary_get_string: <>
+ 3504 						CC_SHA1_Update: <>
+ 3505 						strlen: <>
+ 3506 						xpc_dictionary_get_data: <>
+ 3507 						sanitize_address: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 865>
+ 3508 							bzero: <>
+ 3509 							bcopy: <>
+ 3510 						xpc_dictionary_get_int64: <>
+ 3511 						xpc_dictionary_get_bool: <>
+ 3512 						CC_SHA1_Final: <>
+ 3513 						CFDataCreate: <>
+ 3514 						dispatch_sync: <>
+ 3515 						CFDictionaryGetValue: <>
+ 3516 						CFRetain: <>
+ 3517 						CFDictionaryCreateMutable: <>
+ 3518 						CFStringCreateWithCString: <>
+ 3519 						CFDictionarySetValue: <>
+ 3520 						CFRelease: <>
+ 3521 						SCNetworkReachabilityCreateWithOptions: 2181
+ 3522 						strlcpy: <>
+ 3523 						SCNetworkReachabilitySetCallback: 619
+ 3524 						xpc_dictionary_set_int64: <>
+ 3525 						xpc_connection_send_message: <>
+ 3526 						xpc_release: <>
+ 3527 					target_remove: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 1161>
+ 3528 						SCLog: 16
+ 3529 						CFSTR: <>
+ 3530 						xpc_dictionary_get_remote_connection: <>
+ 3531 						xpc_dictionary_create_reply: <>
+ 3532 						xpc_dictionary_get_uint64: <>
+ 3533 						xpc_dictionary_set_string: <>
+ 3534 						dispatch_sync: <>
+ 3535 						xpc_dictionary_set_int64: <>
+ 3536 						xpc_connection_send_message: <>
+ 3537 						xpc_release: <>
+ 3538 						CFRelease: <>
+ 3539 					target_status: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 1289>
+ 3540 						SCLog: 16
+ 3541 						CFSTR: <>
+ 3542 						xpc_dictionary_get_remote_connection: <>
+ 3543 						xpc_dictionary_create_reply: <>
+ 3544 						xpc_dictionary_get_uint64: <>
+ 3545 						xpc_dictionary_set_string: <>
+ 3546 						dispatch_sync: <>
+ 3547 						CFRelease: <>
+ 3548 						CFRetain: <>
+ 3549 						dispatch_group_async: <>
+ 3550 						SCNetworkReachabilityGetFlags: 2208
+ 3551 						SCErrorString: 181
+ 3552 						SCError: 185
+ 3553 						dispatch_group_notify: <>
+ 3554 						xpc_dictionary_set_int64: <>
+ 3555 						xpc_connection_send_message: <>
+ 3556 						xpc_release: <>
+ 3557 					target_schedule: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 1228>
+ 3558 						SCLog: 16
+ 3559 						CFSTR: <>
+ 3560 						xpc_dictionary_get_remote_connection: <>
+ 3561 						xpc_dictionary_create_reply: <>
+ 3562 						xpc_dictionary_get_uint64: <>
+ 3563 						xpc_dictionary_set_string: <>
+ 3564 						xpc_dictionary_set_int64: <>
+ 3565 						xpc_connection_send_message: <>
+ 3566 						xpc_release: <>
+ 3567 						CFRelease: <>
+ 3568 					target_unschedule: void (), <./SystemConfiguration.fproj/reachability/SCNetworkReachabilityServer_server.c 1505>
+ 3569 						SCLog: 16
+ 3570 						CFSTR: <>
+ 3571 						xpc_dictionary_get_remote_connection: <>
+ 3572 						xpc_dictionary_create_reply: <>
+ 3573 						xpc_dictionary_get_uint64: <>
+ 3574 						xpc_dictionary_set_string: <>
+ 3575 						xpc_dictionary_set_int64: <>
+ 3576 						xpc_connection_send_message: <>
+ 3577 						xpc_release: <>
+ 3578 						CFRelease: <>
+ 3579 					SCLog: 16
+ 3580 					CFSTR: <>
+ 3581 				xpc_copy_description: <>
+ 3582 				free: <>
+ 3583 				xpc_connection_cancel: <>
+ 3584 				xpc_dictionary_get_string: <>
+ 3585 				xpc_retain: <>
+ 3586 				dispatch_async: <>
+ 3587 				xpc_release: <>
+ 3588 				xpc_connection_resume: <>
+ 3589 			xpc_dictionary_get_string: <>
+ 3590 			SCLog: 16
+ 3591 			CFSTR: <>
+ 3592 			xpc_release: <>
+ 3593 			xpc_connection_resume: <>
+ 3594 		SCLog: 16
+ 3595 		SCNetworkReachabilityCreateWithName: 638
+ 3596 		sleep: <>
+ 3597 		usage: void (), <./SystemConfiguration.fproj/DHCP.c 368>
+ 3598 			printf: <>
+ 3599 			exit: <>
+ 3600 		SCDynamicStoreCopyDHCPInfo: CFDictionaryRef (), <./SystemConfiguration.fproj/DHCP.c 239>
+ 3601 			SCDynamicStoreKeyCreateNetworkGlobalEntity: 556
+ 3602 			SCDynamicStoreCopyValue: 446
+ 3603 			CFDictionaryGetValue: <>
+ 3604 			CFRelease: <>
+ 3605 			SCDynamicStoreKeyCreateNetworkServiceEntity: 543
+ 3606 			isA_CFDictionary: <>
+ 3607 		atoi: <>
+ 3608 		DHCPInfoGetOptionData: CFDataRef (), <./SystemConfiguration.fproj/DHCP.c 283>
+ 3609 			CFStringCreateWithFormat: <>
+ 3610 			CFSTR: <>
+ 3611 			CFDictionaryGetValue: <>
+ 3612 			isA_CFData: <>
+ 3613 			CFRelease: <>
+ 3614 		CFDataGetLength: <>
+ 3615 		CFDataGetBytePtr: <>
+ 3616 		IP_LIST: <>
+ 3617 		print_data: void (), <./SystemConfiguration.fproj/DHCP.c 316>
+ 3618 			printf: <>
+ 3619 			isprint: <>
+ 3620 		DHCPInfoGetLeaseStartTime: CFDateRef (), <./SystemConfiguration.fproj/DHCP.c 303>
+ 3621 			CFDictionaryGetValue: <>
+ 3622 			CFSTR: <>
+ 3623 		show_date: void (), <./SystemConfiguration.fproj/DHCP.c 393>
+ 3624 			CFTimeZoneCopySystem: <>
+ 3625 			CFAbsoluteTimeGetGregorianDate: <>
+ 3626 			dump_gregorian_date: void (), <./SystemConfiguration.fproj/DHCP.c 385>
+ 3627 				printf: <>
+ 3628 		CFDateGetAbsoluteTime: <>
+ 3629 		DHCPClientPreferencesCopyApplicationOptions: UInt8 * (), <./SystemConfiguration.fproj/DHCP.c 192>
+ 3630 			S_application_path: __inline__ CF_RETURNS_RETAINED CFStringRef (), <./SystemConfiguration.fproj/DHCP.c 94>
+ 3631 				CFStringCreateWithFormat: <>
+ 3632 				CFSTR: <>
+ 3633 			SCPreferencesCreate: 2
+ 3634 			CFSTR: <>
+ 3635 			SCPreferencesPathGetValue: 27
+ 3636 			CFDictionaryGetValue: <>
+ 3637 			isA_CFArray: <>
+ 3638 			S_get_char_array: UInt8 * (), <./SystemConfiguration.fproj/DHCP.c 42>
+ 3639 				CFArrayGetCount: <>
+ 3640 				malloc: <>
+ 3641 				isA_CFNumber: <>
+ 3642 				CFArrayGetValueAtIndex: <>
+ 3643 				CFNumberGetValue: <>
+ 3644 				free: <>
+ 3645 			CFRelease: <>
+ 3646 		S_print_char_array: __inline__ void (), <./SystemConfiguration.fproj/DHCP.c 354>
+ 3647 			printf: <>
+ 3648 		free: <>
+ 3649 		strerror: <>
+ 3650 		DHCPClientPreferencesSetApplicationOptions: Boolean (), <./SystemConfiguration.fproj/DHCP.c 103>
+ 3651 			S_application_path: 3630
+ 3652 			SCPreferencesCreate: 2
+ 3653 			CFSTR: <>
+ 3654 			SCPreferencesPathGetValue: 27
+ 3655 			CFDictionaryCreateMutable: <>
+ 3656 			CFDictionaryCreateMutableCopy: <>
+ 3657 			CFArrayCreateMutable: <>
+ 3658 			CFNumberCreate: <>
+ 3659 			CFRelease: <>
+ 3660 			my_CFArrayAppendUniqueValue: void (), <./SystemConfiguration.fproj/DHCP.c 78>
+ 3661 				CFArrayGetCount: <>
+ 3662 				CFArrayGetValueAtIndex: <>
+ 3663 				CFEqual: <>
+ 3664 				CFArrayAppendValue: <>
+ 3665 			CFDictionarySetValue: <>
+ 3666 			CFDictionaryRemoveValue: <>
+ 3667 			SCPreferencesLock: 1003
+ 3668 			SCPreferencesPathSetValue: 1168
+ 3669 			SCPreferencesCommitChanges: 1229
+ 3670 			SCPreferencesApplyChanges: 1282
+ 3671 			SCPreferencesUnlock: 1265
+ 3672 		dump_names: void (), <./SystemConfiguration.fproj/genSCPreferences.c 1340>
+ 3673 			strlen: <>
+ 3674 			printf: <>
+ 3675 			print_define: void (), <./SystemConfiguration.fproj/genSCPreferences.c 1173>
+ 3676 				printf: <>
+ 3677 			strcmp: <>
+ 3678 			snprintf: <>
+ 3679 			print_comment: void (), <./SystemConfiguration.fproj/genSCPreferences.c 1152>
+ 3680 				snprintf: <>
+ 3681 				printf: <>
+ 3682 			print_headerdoc: void (), <./SystemConfiguration.fproj/genSCPreferences.c 1180>
+ 3683 				snprintf: <>
+ 3684 				setmax: __inline__ void (), <./SystemConfiguration.fproj/genSCPreferences.c 1127>
+ 3685 					strlen: <>
+ 3686 					free: <>
+ 3687 					strdup: <>
+ 3688 				printf: <>
+ 3689 			print_hfile: void (), <./SystemConfiguration.fproj/genSCPreferences.c 1255>
+ 3690 				snprintf: <>
+ 3691 				setmax: 3684
+ 3692 				printf: <>
+ 3693 			fprintf: <>
+ 3694 		openlog: <>
+ 3695 		geteuid: <>
+ 3696 		CFRunLoopGetCurrent: <>
+ 3697 		launch_data_new_string: <>
+ 3698 		launch_msg: <>
+ 3699 		launch_data_free: <>
+ 3700 		launch_data_get_type: <>
+ 3701 		init_MiG: int (), <./SystemConfiguration.fproj/helper/SCHelper_server.c 2080>
+ 3702 			launch_data_dict_lookup: <>
+ 3703 			launch_data_get_type: <>
+ 3704 			SCLog: 16
+ 3705 			CFSTR: <>
+ 3706 			launch_data_dict_iterate: <>
+ 3707 			init_MiG_1: void (), <./SystemConfiguration.fproj/helper/SCHelper_server.c 2037>
+ 3708 				helperMPCopyDescription: CFStringRef (), <./SystemConfiguration.fproj/helper/SCHelper_server.c 2030>
+ 3709 					CFStringCreateWithFormat: <>
+ 3710 					CFSTR: <>
+ 3711 				launch_data_get_type: <>
+ 3712 				SCLog: 16
+ 3713 				CFSTR: <>
+ 3714 				launch_data_get_machport: <>
+ 3715 				helperCallback: void (), <./SystemConfiguration.fproj/helper/SCHelper_server.c 1721>
+ 3716 					SCLog: 16
+ 3717 					CFSTR: <>
+ 3718 					CFAllocatorAllocate: <>
+ 3719 					helper_demux: __private_extern__ boolean_t (), <./SystemConfiguration.fproj/helper/SCHelper_server.c 1681>
+ 3720 						helper_server: <>
+ 3721 						notify_server: boolean_t (), <./SystemConfiguration.fproj/helper/SCHelper_server.c 1619>
+ 3722 							MACH_MSGH_BITS: <>
+ 3723 							MACH_MSGH_BITS_REMOTE: <>
+ 3724 							CFMachPortInvalidate: <>
+ 3725 							mach_port_mod_refs: <>
+ 3726 							mach_task_self: <>
+ 3727 							SCLog: 16
+ 3728 							CFSTR: <>
+ 3729 						SCLog: 16
+ 3730 						CFSTR: <>
+ 3731 						MACH_MSGH_BITS: <>
+ 3732 						MACH_MSGH_BITS_REMOTE: <>
+ 3733 					mach_msg_destroy: <>
+ 3734 					MACH_MSGH_BITS_REMOTE: <>
+ 3735 					mach_msg: <>
+ 3736 					CFAllocatorDeallocate: <>
+ 3737 				CFMachPortCreateRunLoopSource: <>
+ 3738 				CFRelease: <>
+ 3739 				CFRunLoopAddSource: <>
+ 3740 				CFRunLoopGetCurrent: <>
+ 3741 		pthread_setname_np: <>
+ 3742 		CFRunLoopRunInMode: <>
+ 3743 		pthread_mutex_lock: <>
+ 3744 		CFSetGetCount: <>
+ 3745 		CFSetApplyFunction: <>
+ 3746 		fclose: <>
+ 3747 		pthread_mutex_unlock: <>
+ 3748 		myInstall: void (), <./SCMonitor/monitor.c 1264>
+ 3749 			watcher_add: void (), <./SCMonitor/monitor.c 1131>
+ 3750 				asl_new: <>
+ 3751 				asl_set: <>
+ 3752 				CFBundleGetBundleWithIdentifier: <>
+ 3753 				CFSTR: <>
+ 3754 				CFBundleGetInfoDictionary: <>
+ 3755 				CFDictionaryGetValue: <>
+ 3756 				isA_CFBoolean: <>
+ 3757 				CFBooleanGetValue: <>
+ 3758 				isA_CFString: <>
+ 3759 				CFSetCreateMutable: <>
+ 3760 				watcher_add_lan: void (), <./SCMonitor/monitor.c 699>
+ 3761 					SCDynamicStoreCreate: 111
+ 3762 					CFSTR: <>
+ 3763 					update_lan: void (), <./SCMonitor/monitor.c 689>
+ 3764 						updateInterfaceList: void (), <./SCMonitor/monitor.c 536>
+ 3765 							SCPreferencesCreate: 2
+ 3766 							CFSTR: <>
+ 3767 							SCNetworkSetCopyCurrent: 4
+ 3768 							SCNetworkSetCreate: 1127
+ 3769 							CFSetCreateMutableCopy: <>
+ 3770 							CFArrayGetCount: <>
+ 3771 							CFArrayGetValueAtIndex: <>
+ 3772 							CFSetRemoveValue: <>
+ 3773 							CFSetContainsValue: <>
+ 3774 							CFSetAddValue: <>
+ 3775 							SCNetworkSetEstablishDefaultInterfaceConfiguration: Boolean (), <./SystemConfiguration.fproj/SCNetworkSet.c 1379>
+ 3776 								isA_SCNetworkSet: <>
+ 3777 								isA_SCNetworkInterface: <>
+ 3778 								CFArrayCreate: <>
+ 3779 								CFRelease: <>
+ 3780 							CFEqual: <>
+ 3781 							CFArrayCreateMutable: <>
+ 3782 							CFArrayAppendValue: <>
+ 3783 							hasAuthorization: Boolean (), <./SCMonitor/monitor.c 136>
+ 3784 								getAuthorization: AuthorizationRef (), <./SCMonitor/monitor.c 114>
+ 3785 									AuthorizationCreate: <>
+ 3786 									SCLOG: 297
+ 3787 									CFSTR: <>
+ 3788 								AuthorizationCopyRights: <>
+ 3789 							CFRelease: <>
+ 3790 							CFSetGetCount: <>
+ 3791 							CFAllocatorAllocate: <>
+ 3792 							CFSetGetValues: <>
+ 3793 							CFArrayRemoveValueAtIndex: <>
+ 3794 							CFAllocatorDeallocate: <>
+ 3795 							notify_configure: void (), <./SCMonitor/monitor.c 455>
+ 3796 								CFArrayGetCount: <>
+ 3797 								geteuid: <>
+ 3798 								SCPreferencesCreate: 2
+ 3799 								CFSTR: <>
+ 3800 								getAuthorization: 3784
+ 3801 								SCPreferencesCreateWithAuthorization: SCPreferencesRef (), <./SystemConfiguration.fproj/SCPOpen.c 627>
+ 3802 									SCPreferencesCreateWithOptions: SCPreferencesRef (), <./SystemConfiguration.fproj/SCPOpen.c 648>
+ 3803 										isA_CFDictionary: <>
+ 3804 										CFDictionaryCreateMutable: <>
+ 3805 										AuthorizationMakeExternalForm: <>
+ 3806 										SCLog: 16
+ 3807 										CFSTR: <>
+ 3808 										CFRelease: <>
+ 3809 										CFDataCreate: <>
+ 3810 										CFDictionaryAddValue: <>
+ 3811 										CFBundleGetMainBundle: <>
+ 3812 										CFBundleGetIdentifier: <>
+ 3813 										CFRetain: <>
+ 3814 										CFBundleCopyExecutableURL: <>
+ 3815 										CFURLCopyPath: <>
+ 3816 										CFEqual: <>
+ 3817 										CFStringCreateWithFormat: <>
+ 3818 										getpid: <>
+ 3819 								SCNetworkSetCopyCurrent: 4
+ 3820 								SCNetworkSetCreate: 1127
+ 3821 								CFArrayGetValueAtIndex: <>
+ 3822 								SCNetworkSetEstablishDefaultInterfaceConfiguration: 3775
+ 3823 								SCNetworkInterfaceGetLocalizedDisplayName: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4620>
+ 3824 									isA_SCNetworkInterface: <>
+ 3825 									copy_display_name: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4475>
+ 3826 										CFStringCreateMutable: <>
+ 3827 										CFEqual: <>
+ 3828 										CFStringCreateWithFormat: <>
+ 3829 										CFSTR: <>
+ 3830 										copy_interface_string: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4454>
+ 3831 											CFBundleCopyLocalizedString: <>
+ 3832 										CFStringAppendFormat: <>
+ 3833 										CFRelease: <>
+ 3834 										SCPreferencesPathKeyCreateNetworkServiceEntity: 69
+ 3835 										SCPreferencesPathGetValue: 27
+ 3836 										isA_CFDictionary: <>
+ 3837 										CFDictionaryGetValue: <>
+ 3838 										isA_CFString: <>
+ 3839 										CFStringAppend: <>
+ 3840 										CFStringCreateCopy: <>
+ 3841 								SCLOG: 297
+ 3842 								SCPreferencesCommitChanges: 1229
+ 3843 								SCErrorString: 181
+ 3844 								SCError: 185
+ 3845 								SCPreferencesApplyChanges: 1282
+ 3846 								CFRelease: <>
+ 3847 							notify_add: void (), <./SCMonitor/monitor.c 302>
+ 3848 								CFArrayGetCount: <>
+ 3849 								CFRetain: <>
+ 3850 								notify_remove: void (), <./SCMonitor/monitor.c 227>
+ 3851 									CFRelease: <>
+ 3852 									CFRunLoopSourceInvalidate: <>
+ 3853 									CFUserNotificationCancel: <>
+ 3854 									SCLOG: 297
+ 3855 									CFSTR: <>
+ 3856 								CFDictionaryCreateMutable: <>
+ 3857 								CFBundleGetBundleWithIdentifier: <>
+ 3858 								CFSTR: <>
+ 3859 								CFBundleCopyBundleURL: <>
+ 3860 								CFURLCreateFromFileSystemRepresentation: <>
+ 3861 								strlen: <>
+ 3862 								CFBundleCreate: <>
+ 3863 								CFDictionarySetValue: <>
+ 3864 								CFRelease: <>
+ 3865 								SCLOG: 297
+ 3866 								CFBundleCopyLocalizedString: <>
+ 3867 								CFArrayGetValueAtIndex: <>
+ 3868 								SCNetworkInterfaceGetLocalizedDisplayName: 3823
+ 3869 								CFStringCreateWithFormat: <>
+ 3870 								CFArrayCreateMutable: <>
+ 3871 								CFArrayAppendValue: <>
+ 3872 								CFDictionaryAddValue: <>
+ 3873 								CFUserNotificationCreate: <>
+ 3874 								CFUserNotificationCreateRunLoopSource: <>
+ 3875 								notify_reply: void (), <./SCMonitor/monitor.c 265>
+ 3876 									CFDictionaryGetValue: <>
+ 3877 									CFDictionaryRemoveValue: <>
+ 3878 									CFDictionaryGetCount: <>
+ 3879 									CFRelease: <>
+ 3880 									SCLOG: 297
+ 3881 									CFSTR: <>
+ 3882 									open_NetworkPrefPane: void (), <./SCMonitor/monitor.c 186>
+ 3883 										CFURLCreateWithFileSystemPath: <>
+ 3884 										CFSTR: <>
+ 3885 										CFArrayCreate: <>
+ 3886 										CFRelease: <>
+ 3887 										AECreateDesc: <>
+ 3888 										strlen: <>
+ 3889 										SCLOG: 297
+ 3890 										LSOpenFromURLSpec: <>
+ 3891 										AEDisposeDesc: <>
+ 3892 									notify_remove: 3850
+ 3893 								CFRunLoopAddSource: <>
+ 3894 								CFRunLoopGetCurrent: <>
+ 3895 					SCLOG: 297
+ 3896 					SCErrorString: 181
+ 3897 					SCError: 185
+ 3898 					SCDynamicStoreKeyCreateNetworkInterface: 187
+ 3899 					CFArrayCreate: <>
+ 3900 					SCDynamicStoreSetNotificationKeys: 195
+ 3901 					CFRelease: <>
+ 3902 					SCDynamicStoreCreateRunLoopSource: 199
+ 3903 					CFRunLoopAddSource: <>
+ 3904 					CFRunLoopGetCurrent: <>
+ 3905 					hasAuthorization: 3783
+ 3906 					SCDynamicStoreCopyValue: 446
+ 3907 					isA_CFDictionary: <>
+ 3908 					CFDictionaryGetValue: <>
+ 3909 					isA_CFArray: <>
+ 3910 					CFArrayGetCount: <>
+ 3911 					CFArrayGetValueAtIndex: <>
+ 3912 					isA_CFString: <>
+ 3913 					CFSetAddValue: <>
+ 3914 				watcher_add_serial: void (), <./SCMonitor/monitor.c 1011>
+ 3915 					IONotificationPortCreate: <>
+ 3916 					SCLOG: 297
+ 3917 					CFSTR: <>
+ 3918 					IOServiceAddMatchingNotification: <>
+ 3919 					IOServiceMatching: <>
+ 3920 					update_serial_nodes: void (), <./SCMonitor/monitor.c 1001>
+ 3921 						update_serial: void (), <./SCMonitor/monitor.c 974>
+ 3922 							IOIteratorNext: <>
+ 3923 							CFRelease: <>
+ 3924 							add_node_watcher: void (), <./SCMonitor/monitor.c 874>
+ 3925 								CFDataCreateMutable: <>
+ 3926 								CFDataSetLength: <>
+ 3927 								CFDataGetBytePtr: <>
+ 3928 								bzero: <>
+ 3929 								IOObjectRetain: <>
+ 3930 								IOServiceAddInterestNotification: <>
+ 3931 								update_node: void (), <./SCMonitor/monitor.c 799>
+ 3932 									CFDataGetBytePtr: <>
+ 3933 									IORegistryEntryCreateCFProperty: <>
+ 3934 									CFSTR: <>
+ 3935 									isA_CFBoolean: <>
+ 3936 									CFBooleanGetValue: <>
+ 3937 									CFRelease: <>
+ 3938 									add_node_watcher: 3924
+ 3939 									IOObjectRelease: <>
+ 3940 									CFArrayGetFirstIndexOfValue: <>
+ 3941 									CFRangeMake: <>
+ 3942 									CFArrayGetCount: <>
+ 3943 									CFArrayRemoveValueAtIndex: <>
+ 3944 									updateInterfaceList: 3764
+ 3945 								CFArrayCreateMutable: <>
+ 3946 								CFArrayAppendValue: <>
+ 3947 								SCLOG: 297
+ 3948 								CFSTR: <>
+ 3949 								CFRelease: <>
+ 3950 							add_init_watcher: void (), <./SCMonitor/monitor.c 919>
+ 3951 								IORegistryEntryCreateCFProperty: <>
+ 3952 								CFRelease: <>
+ 3953 								IORegistryEntryGetParentEntry: <>
+ 3954 								SCLOG: 297
+ 3955 								CFSTR: <>
+ 3956 								IOObjectRelease: <>
+ 3957 								isA_CFBoolean: <>
+ 3958 								CFBooleanGetValue: <>
+ 3959 								add_node_watcher: 3924
+ 3960 							IOObjectRelease: <>
+ 3961 						updateInterfaceList: 3764
+ 3962 					update_serial: 3921
+ 3963 					hasAuthorization: 3783
+ 3964 					CFArrayGetCount: <>
+ 3965 					CFArrayGetValueAtIndex: <>
+ 3966 					CFDataGetBytePtr: <>
+ 3967 					CFSetAddValue: <>
+ 3968 					CFRelease: <>
+ 3969 					CFRunLoopAddSource: <>
+ 3970 					CFRunLoopGetCurrent: <>
+ 3971 					IONotificationPortGetRunLoopSource: <>
+ 3972 				updateInterfaceList: 3764
+ 3973 		do_showDNSConfiguration: __private_extern__ void (), <./scutil.tproj/tests.c 842>
+ 3974 			dns_configuration_copy: 3403
+ 3975 			SCPrint: 100
+ 3976 			CFSTR: <>
+ 3977 			exit: <>
+ 3978 			showResolver: void (), <./scutil.tproj/tests.c 753>
+ 3979 				SCPrint: 100
+ 3980 				CFSTR: <>
+ 3981 				inet_ntop: <>
+ 3982 				if_indextoname: <>
+ 3983 			CFRelease: <>
+ 3984 			dns_configuration_free: 3415
+ 3985 		usage: void (), <./scutil.tproj/scutil.c 277>
+ 3986 			SCPrint: 100
+ 3987 			CFSTR: <>
+ 3988 			getenv: <>
+ 3989 			exit: <>
+ 3990 		do_watchReachability: __private_extern__ void (), <./scutil.tproj/tests.c 681>
+ 3991 			SCPrint: 100
+ 3992 			CFSTR: <>
+ 3993 			SCErrorString: 181
+ 3994 			SCError: 185
+ 3995 			exit: <>
+ 3996 			getenv: <>
+ 3997 			CFRelease: <>
+ 3998 			CFRetain: <>
+ 3999 			SCNetworkReachabilitySetCallback: 619
+ 4000 			callout: void (), <./scutil.tproj/tests.c 657>
+ 4001 				gettimeofday: <>
+ 4002 				localtime_r: <>
+ 4003 				SCPrint: 100
+ 4004 				CFSTR: <>
+ 4005 			printf: <>
+ 4006 			SCNetworkReachabilitySetDispatchQueue: Boolean (), <./SystemConfiguration.fproj/SCNetworkReachability.c 6325>
+ 4007 				isA_SCNetworkReachability: 629
+ 4008 			dispatch_get_current_queue: <>
+ 4009 			SCNetworkReachabilityScheduleWithRunLoop: 628
+ 4010 			CFRunLoopGetCurrent: <>
+ 4011 			CFRunLoopRun: <>
+ 4012 		do_checkReachability: __private_extern__ void (), <./scutil.tproj/tests.c 531>
+ 4013 			SCPrint: 100
+ 4014 			CFSTR: <>
+ 4015 			SCErrorString: 181
+ 4016 			SCError: 185
+ 4017 			exit: <>
+ 4018 			CFRelease: <>
+ 4019 		do_wait: __private_extern__ void (), <./scutil.tproj/tests.c 1063>
+ 4020 			SCDynamicStoreCreate: 111
+ 4021 			CFSTR: <>
+ 4022 			waitKeyFound: void (), <./scutil.tproj/tests.c 1048>
+ 4023 				exit: <>
+ 4024 			SCPrint: 100
+ 4025 			SCErrorString: 181
+ 4026 			SCError: 185
+ 4027 			exit: <>
+ 4028 			CFStringCreateWithCString: <>
+ 4029 			CFArrayCreateMutable: <>
+ 4030 			CFArrayAppendValue: <>
+ 4031 			SCDynamicStoreSetNotificationKeys: 195
+ 4032 			CFRelease: <>
+ 4033 			SCDynamicStoreCreateRunLoopSource: 199
+ 4034 			CFRunLoopAddSource: <>
+ 4035 			CFRunLoopGetCurrent: <>
+ 4036 			SCDynamicStoreCopyValue: 446
+ 4037 			signal: <>
+ 4038 			waitTimeout: void (), <./scutil.tproj/tests.c 1055>
+ 4039 				exit: <>
+ 4040 			bzero: <>
+ 4041 			setitimer: <>
+ 4042 			strerror: <>
+ 4043 			CFRunLoopRun: <>
+ 4044 		do_nwi: __private_extern__ void (), <./scutil.tproj/tests.c 581>
+ 4045 			nwi_state_copy: nwi_state_t (), <./nwi/network_information.c 142>
+ 4046 				pthread_once: <>
+ 4047 				pthread_mutex_lock: <>
+ 4048 				notify_check: <>
+ 4049 				fprintf: <>
+ 4050 				nwi_state_retain: void (), <./nwi/network_information.c 115>
+ 4051 					ATOMIC_INC: <>
+ 4052 				pthread_mutex_unlock: <>
+ 4053 				nwi_state_release: 2390
+ 4054 			SCPrint: 100
+ 4055 			CFSTR: <>
+ 4056 			exit: <>
+ 4057 			nwi_state_get_ifstate: nwi_ifstate_t (), <./nwi/network_information.c 313>
+ 4058 				nwi_state_get_ifstate_with_name: <>
+ 4059 			nwi_ifstate_get_flags: nwi_ifstate_flags (), <./nwi/network_information.c 246>
+ 4060 				flags_from_af: uint64_t (), <./nwi/network_information.c 234>
+ 4061 			nwi_ifstate_get_ifname: 2348
+ 4062 			nwi_state_get_first_ifstate: 2346
+ 4063 			nwi_ifstate_get_next: 2356
+ 4064 			nwi_state_release: 2390
+ 4065 		do_open: __private_extern__ void (), <./scutil.tproj/session.c 50>
+ 4066 			CFRelease: <>
+ 4067 			SCDynamicStoreCreate: 111
+ 4068 			CFSTR: <>
+ 4069 			storeCallback: __private_extern__ void (), <./scutil.tproj/notifications.c 92>
+ 4070 				SCPrint: 100
+ 4071 				CFSTR: <>
+ 4072 				CFArrayGetCount: <>
+ 4073 				elapsed: char * (), <./scutil.tproj/notifications.c 50>
+ 4074 					gettimeofday: <>
+ 4075 					localtime_r: <>
+ 4076 					timersub: <>
+ 4077 					snprintf: <>
+ 4078 				CFArrayGetValueAtIndex: <>
+ 4079 			CFDictionaryCreateMutable: <>
+ 4080 			CFDictionarySetValue: <>
+ 4081 			SCDynamicStoreCreateWithOptions: 112
+ 4082 			SCPrint: 100
+ 4083 			SCErrorString: 181
+ 4084 			SCError: 185
+ 4085 			SCDynamicStoreSetDisconnectCallBack: Boolean (), <./SystemConfiguration.fproj/SCDOpen.c 789>
+ 4086 			reconnected: void (), <./scutil.tproj/session.c 41>
+ 4087 				SCPrint: 100
+ 4088 				CFSTR: <>
+ 4089 			CFArrayCreateMutable: <>
+ 4090 			cache_close: 961
+ 4091 		do_snapshot: __private_extern__ void (), <./scutil.tproj/tests.c 1033>
+ 4092 			SCDynamicStoreSnapshot: Boolean (), <./SystemConfiguration.fproj/SCDSnapshot.c 43>
+ 4093 				snapshot: <>
+ 4094 			SCPrint: 100
+ 4095 			CFSTR: <>
+ 4096 			SCErrorString: 181
+ 4097 			SCError: 185
+ 4098 		findPref: __private_extern__ int (), <./scutil.tproj/prefs.c 514>
+ 4099 			strcmp: <>
+ 4100 		do_getPref: __private_extern__ void (), <./scutil.tproj/prefs.c 530>
+ 4101 			findPref: 4098
+ 4102 		do_showProxyConfiguration: __private_extern__ void (), <./scutil.tproj/tests.c 940>
+ 4103 			SCDynamicStoreCopyProxies: CFDictionaryRef (), <./SystemConfiguration.fproj/SCProxies.c 342>
+ 4104 				SCDynamicStoreKeyCreateProxies: 566
+ 4105 				SCDynamicStoreCopyValue: 446
+ 4106 				CFRelease: <>
+ 4107 				CFDictionaryCreate: <>
+ 4108 			strcasecmp: <>
+ 4109 			SCPrint: 100
+ 4110 			CFSTR: <>
+ 4111 			exit: <>
+ 4112 			if_nametoindex: <>
+ 4113 			CFStringCreateWithCString: <>
+ 4114 			CFRelease: <>
+ 4115 			SCNetworkProxiesCopyMatching: CFArrayRef (), <./SystemConfiguration.fproj/SCProxies.c 375>
+ 4116 				isA_CFDictionary: <>
+ 4117 				isA_CFString: <>
+ 4118 				CFStringGetLength: <>
+ 4119 				CFDictionaryGetValue: <>
+ 4120 				CFArrayCreate: <>
+ 4121 				isA_CFArray: <>
+ 4122 				CFArrayGetCount: <>
+ 4123 				CFArrayGetValueAtIndex: <>
+ 4124 				CFStringFindWithOptions: <>
+ 4125 				CFRangeMake: <>
+ 4126 				CFSTR: <>
+ 4127 				CFArrayCreateMutable: <>
+ 4128 				CFDictionaryCreateMutableCopy: <>
+ 4129 				CFDictionaryRemoveValue: <>
+ 4130 				CFArrayContainsValue: <>
+ 4131 				CFArrayAppendValue: <>
+ 4132 				CFRelease: <>
+ 4133 				CFArrayCreateCopy: <>
+ 4134 			CFArrayGetCount: <>
+ 4135 			CFArrayGetValueAtIndex: <>
+ 4136 			showProxy: void (), <./scutil.tproj/tests.c 921>
+ 4137 				CFDictionaryCreateMutableCopy: <>
+ 4138 				CFDictionaryRemoveValue: <>
+ 4139 				SCPrint: 100
+ 4140 				CFSTR: <>
+ 4141 				CFRelease: <>
+ 4142 		do_setPref: __private_extern__ void (), <./scutil.tproj/prefs.c 544>
+ 4143 			findPref: 4098
+ 4144 		find_nc_cmd: int (), <./scutil.tproj/nc.c 759>
+ 4145 			strcmp: <>
+ 4146 		do_nc_cmd: void (), <./scutil.tproj/nc.c 776>
+ 4147 			find_nc_cmd: 4144
+ 4148 			nc_status: void (), <./scutil.tproj/nc.c 377>
+ 4149 				nc_create_connection: void (), <./scutil.tproj/nc.c 222>
+ 4150 					nc_copy_service_from_arguments: SCNetworkServiceRef (), <./scutil.tproj/nc.c 141>
+ 4151 						CFStringCreateWithCString: <>
+ 4152 						SCPrint: 100
+ 4153 						CFSTR: <>
+ 4154 						nc_copy_service: SCNetworkServiceRef (), <./scutil.tproj/nc.c 85>
+ 4155 							SCNetworkConnectionCopyAvailableServices: CFArrayRef (), <./SystemConfiguration.fproj/SCNetworkConnection.c 862>
+ 4156 								SCPreferencesCreate: 2
+ 4157 								CFSTR: <>
+ 4158 								SCNetworkSetCopyCurrent: 4
+ 4159 								CFRelease: <>
+ 4160 								CFArrayCreateMutable: <>
+ 4161 								SCNetworkSetCopyServices: 22
+ 4162 								CFArrayGetCount: <>
+ 4163 								CFArrayGetValueAtIndex: <>
+ 4164 								SCNetworkServiceGetInterface: 78
+ 4165 								SCNetworkInterfaceGetInterfaceType: 3105
+ 4166 								CFEqual: <>
+ 4167 								CFArrayAppendValue: <>
+ 4168 							CFArrayGetCount: <>
+ 4169 							CFArrayGetValueAtIndex: <>
+ 4170 							SCNetworkServiceGetServiceID: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkService.c 1198>
+ 4171 								isA_SCNetworkService: <>
+ 4172 							CFEqual: <>
+ 4173 							SCNetworkServiceGetName: CFStringRef (), <./SystemConfiguration.fproj/SCNetworkService.c 1054>
+ 4174 								isA_SCNetworkService: <>
+ 4175 								SCPreferencesPathKeyCreateNetworkServiceEntity: 69
+ 4176 								SCPreferencesPathGetValue: 27
+ 4177 								CFRelease: <>
+ 4178 								isA_CFDictionary: <>
+ 4179 								CFDictionaryGetValue: <>
+ 4180 								isA_CFString: <>
+ 4181 								CFRetain: <>
+ 4182 								SCNetworkServiceGetInterface: 78
+ 4183 								SCNetworkInterfaceGetInterfaceType: 3105
+ 4184 								CFEqual: <>
+ 4185 								SCNetworkInterfaceGetInterface: SCNetworkInterfaceRef (), <./SystemConfiguration.fproj/SCNetworkInterface.c 4426>
+ 4186 									isA_SCNetworkInterface: <>
+ 4187 								CFStringHasPrefix: <>
+ 4188 								CFStringGetLength: <>
+ 4189 								CFStringCreateWithSubstring: <>
+ 4190 								CFRangeMake: <>
+ 4191 								SCNetworkInterfaceGetLocalizedDisplayName: 3823
+ 4192 								CFStringCreateWithFormat: <>
+ 4193 								CFSTR: <>
+ 4194 							SCPrint: 100
+ 4195 							CFSTR: <>
+ 4196 							CFRetain: <>
+ 4197 							CFRelease: <>
+ 4198 						my_CFRelease: void (), <./scutil.tproj/nc.c 57>
+ 4199 							CFRelease: <>
+ 4200 					SCPrint: 100
+ 4201 					CFSTR: <>
+ 4202 					exit: <>
+ 4203 					SCNetworkConnectionCreateWithService: SCNetworkConnectionRef (), <./SystemConfiguration.fproj/SCNetworkConnection.c 920>
+ 4204 						isA_SCNetworkService: <>
+ 4205 					nc_callback: void (), <./scutil.tproj/nc.c 181>
+ 4206 						SCPrint: 100
+ 4207 						CFSTR: <>
+ 4208 						gettimeofday: <>
+ 4209 						localtime_r: <>
+ 4210 						nc_status_string: char * (), <./scutil.tproj/nc.c 163>
+ 4211 						SCErrorString: 181
+ 4212 						SCError: 185
+ 4213 						SCNetworkConnectionCopyExtendedStatus: CFDictionaryRef (), <./SystemConfiguration.fproj/SCNetworkConnection.c 1145>
+ 4214 							isA_SCNetworkConnection: __inline__ CFTypeRef (), <./SystemConfiguration.fproj/SCNetworkConnection.c 122>
+ 4215 								isA_CFType: <>
+ 4216 								SCNetworkConnectionGetTypeID: CFTypeID (), <./SystemConfiguration.fproj/SCNetworkConnection.c 855>
+ 4217 									pthread_once: <>
+ 4218 							pthread_mutex_lock: <>
+ 4219 							pppcontroller_copyextendedstatus: <>
+ 4220 							SCError: 185
+ 4221 							isA_CFDictionary: <>
+ 4222 							usleep: <>
+ 4223 							CFRelease: <>
+ 4224 							pthread_mutex_unlock: <>
+ 4225 						CFRelease: <>
+ 4226 					CFRelease: <>
+ 4227 					SCErrorString: 181
+ 4228 					SCError: 185
+ 4229 				SCNetworkConnectionGetStatus: SCNetworkConnectionStatus (), <./SystemConfiguration.fproj/SCNetworkConnection.c 1090>
+ 4230 					nc_status: 4148
+ 4231 					isA_SCNetworkConnection: 4214
+ 4232 					pthread_mutex_lock: <>
+ 4233 					pppcontroller_getstatus: <>
+ 4234 					usleep: <>
+ 4235 					pthread_mutex_unlock: <>
+ 4236 				nc_callback: 4205
+ 4237 				nc_release_connection: void (), <./scutil.tproj/nc.c 248>
+ 4238 					my_CFRelease: 4198
+ 4239 				exit: <>
+ 4240 			nc_watch: void (), <./scutil.tproj/nc.c 391>
+ 4241 				nc_create_connection: 4149
+ 4242 				SCNetworkConnectionGetStatus: 4229
+ 4243 				nc_callback: 4205
+ 4244 				SCNetworkConnectionSetDispatchQueue: Boolean (), <./SystemConfiguration.fproj/SCNetworkConnection.c 1857>
+ 4245 					isA_SCNetworkConnection: 4214
+ 4246 				dispatch_get_current_queue: <>
+ 4247 				SCPrint: 100
+ 4248 				CFSTR: <>
+ 4249 				SCErrorString: 181
+ 4250 				SCError: 185
+ 4251 				exit: <>
+ 4252 				SCNetworkConnectionScheduleWithRunLoop: Boolean (), <./SystemConfiguration.fproj/SCNetworkConnection.c 1829>
+ 4253 					isA_SCNetworkConnection: 4214
+ 4254 				CFRunLoopGetCurrent: <>
+ 4255 				CFRunLoopRun: <>
+ 4256 				nc_release_connection: 4237
+ 4257 		getenv: <>
+ 4258 		do_net_init: __private_extern__ void (), <./scutil.tproj/net.c 492>
+ 4259 			CFNumberCreate: <>
+ 4260 		do_net_open: __private_extern__ void (), <./scutil.tproj/net.c 506>
+ 4261 			CFStringCreateWithCString: <>
+ 4262 			CFSTR: <>
+ 4263 			CFRelease: <>
+ 4264 			SCPrint: 100
+ 4265 			SCErrorString: 181
+ 4266 			SCError: 185
+ 4267 			SCNetworkSetCopyCurrent: 4
+ 4268 			SCNetworkSetGetName: 1200
+ 4269 			SCNetworkSetGetSetID: 1198
+ 4270 		do_dictInit: __private_extern__ void (), <./scutil.tproj/dictionary.c 44>
+ 4271 			CFRelease: <>
+ 4272 			CFDictionaryCreateMutable: <>
+ 4273 		do_prefs_init: __private_extern__ void (), <./scutil.tproj/prefs.c 561>
+ 4274 		do_prefs_open: __private_extern__ void (), <./scutil.tproj/prefs.c 569>
+ 4275 			do_prefs_close: __private_extern__ void (), <./scutil.tproj/prefs.c 656>
+ 4276 			CFStringCreateWithCString: <>
+ 4277 			CFSTR: <>
+ 4278 			CFRelease: <>
+ 4279 			SCPrint: 100
+ 4280 			SCErrorString: 181
+ 4281 			SCError: 185
+ 4282 		isatty: <>
+ 4283 		fileno: <>
+ 4284 		tcgetattr: <>
+ 4285 		el_init: <>
+ 4286 		history_init: <>
+ 4287 		history: <>
+ 4288 		el_set: <>
+ 4289 		prompt: char * (), <./scutil.tproj/scutil.c 322>
+ 4290 		el_source: <>
+ 4291 		el_get: <>
+ 4292 		history_end: <>
+ 4293 		el_end: <>
+ 4294 		process_line: __private_extern__ Boolean (), <./scutil.tproj/scutil.c 229>
+ 4295 			getLine: char * (), <./scutil.tproj/scutil.c 136>
+ 4296 				el_gets: <>
+ 4297 				strncpy: <>
+ 4298 				fgets: <>
+ 4299 				strlen: <>
+ 4300 				fgetc: <>
+ 4301 				history: <>
+ 4302 			SCPrint: 100
+ 4303 			CFSTR: <>
+ 4304 			getString: char * (), <./scutil.tproj/scutil.c 177>
+ 4305 				isspace: <>
+ 4306 				malloc: <>
+ 4307 			malloc: <>
+ 4308 			reallocf: <>
+ 4309 			do_command: __private_extern__ void (), <./scutil.tproj/commands.c 319>
+ 4310 				strcasecmp: <>
+ 4311 				SCPrint: 100
+ 4312 				CFSTR: <>
+ 4313 			free: <>
+ 4314 		CFAllocatorDeallocate: <>

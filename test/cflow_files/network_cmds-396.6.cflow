@@ -1,0 +1,3049 @@
+    1 	main: int (), <./rtadvd.tproj/rtadvd.c 147>
+    2 		socket: <>
+    3 		err: <>
+    4 			va_start: <>
+    5 			fprintf: <>
+    6 			vfprintf: <>
+    7 			vsyslog: <>
+    8 			va_end: <>
+    9 			exit: <>
+   10 		setbuf: <>
+   11 		access: <>
+   12 		getopt: <>
+   13 		errx: <>
+   14 		show_usage: void (), <./ip6fw.tproj/ip6fw.c 507>
+   15 			va_start: <>
+   16 			vsnprintf: <>
+   17 			va_end: <>
+   18 			warnx: <>
+   19 			fprintf: <>
+   20 			exit: <>
+   21 		fopen: <>
+   22 		pipe: <>
+   23 		fork: <>
+   24 		dup2: <>
+   25 		fileno: <>
+   26 		fclose: <>
+   27 		close: <>
+   28 		execvp: <>
+   29 		fdopen: <>
+   30 		kill: <>
+   31 		fgets: <>
+   32 		snprintf: <>
+   33 		strchr: <>
+   34 		strtok: <>
+   35 		ip6fw_main: int (), <./ip6fw.tproj/ip6fw.c 1201>
+   36 			show_usage: 14
+   37 			isatty: <>
+   38 			getopt: <>
+   39 			strncmp: <>
+   40 			strlen: <>
+   41 			add: void (), <./ip6fw.tproj/ip6fw.c 869>
+   42 				memset: <>
+   43 				isdigit: <>
+   44 				atoi: <>
+   45 				show_usage: 14
+   46 				strncmp: <>
+   47 				strlen: <>
+   48 				strtoul: <>
+   49 				setservent: <>
+   50 				getservbyname: <>
+   51 				ntohs: <>
+   52 				fill_reject_code6: void (), <./ip6fw.tproj/ip6fw.c 606>
+   53 					strtoul: <>
+   54 					strcasecmp: <>
+   55 					show_usage: 14
+   56 				getprotobyname: <>
+   57 				fill_ip6: void (), <./ip6fw.tproj/ip6fw.c 561>
+   58 					strncmp: <>
+   59 					strlen: <>
+   60 					strchr: <>
+   61 					lookup_host: int (), <./ip6fw.tproj/ip6fw.c 546>
+   62 						gethostbyname2: <>
+   63 						memcpy: <>
+   64 					show_usage: 14
+   65 					atoi: <>
+   66 					plen2mask: struct in6_addr (), <./ip6fw.tproj/ip6fw.c 137>
+   67 				lookup_port: int (), <./ip6fw.tproj/ip6fw.c 636>
+   68 					snprintf: <>
+   69 					strcspn: <>
+   70 					strtoul: <>
+   71 					setservent: <>
+   72 					getservbyname: <>
+   73 					htons: <>
+   74 					errx: <>
+   75 				fill_port: int (), <./ip6fw.tproj/ip6fw.c 667>
+   76 					strcspn: <>
+   77 					strchr: <>
+   78 					errx: <>
+   79 					add_port: void (), <./ip6fw.tproj/ip6fw.c 626>
+   80 						errx: <>
+   81 					lookup_port: 67
+   82 				IPV6_FW_SETNSRCP: <>
+   83 				IPV6_FW_GETNSRCP: <>
+   84 				IPV6_FW_SETNDSTP: <>
+   85 				IPV6_FW_GETNDSTP: <>
+   86 				fill_iface: void (), <./ip6fw.tproj/ip6fw.c 841>
+   87 					show_usage: 14
+   88 					strcmp: <>
+   89 					isdigit: <>
+   90 					strncpy: <>
+   91 					atoi: <>
+   92 					verify_interface: void (), <./ip6fw.tproj/ip6fw.c 824>
+   93 					inet_pton: <>
+   94 				fill_ip6opt: void (), <./ip6fw.tproj/ip6fw.c 741>
+   95 					strchr: <>
+   96 					strncmp: <>
+   97 					strlen: <>
+   98 				fill_tcpflag: void (), <./ip6fw.tproj/ip6fw.c 699>
+   99 					strchr: <>
+  100 					strncmp: <>
+  101 					strlen: <>
+  102 					show_usage: 14
+  103 				fill_icmptypes: void (), <./ipfw.tproj/ipfw2.c 850>
+  104 					strtoul: <>
+  105 					errx: <>
+  106 					F_INSN_SIZE: <>
+  107 				setsockopt: <>
+  108 				err: 3
+  109 				show_ip6fw: void (), <./ip6fw.tproj/ip6fw.c 216>
+  110 					IPV6_FW_GETNSRCP: <>
+  111 					IPV6_FW_GETNDSTP: <>
+  112 					setservent: <>
+  113 					printf: <>
+  114 					strlcpy: <>
+  115 					ctime: <>
+  116 					strchr: <>
+  117 					print_reject_code: void (), <./ip6fw.tproj/ip6fw.c 203>
+  118 						printf: <>
+  119 					errx: <>
+  120 					getprotobynumber: <>
+  121 					mask_bits: int (), <./ip6fw.tproj/ip6fw.c 110>
+  122 						MASKLEN: <>
+  123 					gethostbyaddr: <>
+  124 					inet_ntop: <>
+  125 					print_port: void (), <./ip6fw.tproj/ip6fw.c 157>
+  126 					print_iface: void (), <./ip6fw.tproj/ip6fw.c 185>
+  127 					PRINTOPT: <>
+  128 					PRINTFLG: <>
+  129 					endservent: <>
+  130 			delete: int (), <./ndp.tproj/ndp.c 514>
+  131 				getsocket: void (), <./ndp.tproj/ndp.c 372>
+  132 					socket: <>
+  133 					perror: <>
+  134 					exit: <>
+  135 				bzero: <>
+  136 				getaddrinfo: <>
+  137 				fprintf: <>
+  138 				gai_strerror: <>
+  139 				IN6_IS_ADDR_LINKLOCAL: <>
+  140 				htons: <>
+  141 				rtmsg: int (), <./ndp.tproj/ndp.c 1137>
+  142 					bzero: <>
+  143 					mask_addr: void (), <./route.tproj/route.c 1241>
+  144 					NEXTADDR: <>
+  145 					print_rtmsg: <>
+  146 					write: <>
+  147 					warnx: <>
+  148 					route_strerror: const char * (), <./route.tproj/route.c 543>
+  149 					read: <>
+  150 					warn: <>
+  151 					print_getmsg: <>
+  152 					fprintf: <>
+  153 					exit: <>
+  154 					memset: <>
+  155 					perror: <>
+  156 					strerror: <>
+  157 				perror: <>
+  158 				ROUNDUP: <>
+  159 				IN6_ARE_ADDR_EQUAL: <>
+  160 				delete: 130
+  161 				printf: <>
+  162 				ntohs: <>
+  163 				getnameinfo: <>
+  164 				sockaddr: <>
+  165 			printf: <>
+  166 			fflush: <>
+  167 			toupper: <>
+  168 			getc: <>
+  169 			feof: <>
+  170 			memset: <>
+  171 			setsockopt: <>
+  172 			err: 3
+  173 			zero: void (), <./ip6fw.tproj/ip6fw.c 1160>
+  174 				memset: <>
+  175 				setsockopt: <>
+  176 				err: 3
+  177 				printf: <>
+  178 				isdigit: <>
+  179 				atoi: <>
+  180 				warn: <>
+  181 				show_usage: 14
+  182 				exit: <>
+  183 			list: void (), <./ip6fw.tproj/ip6fw.c 441>
+  184 				realloc: <>
+  185 				err: 3
+  186 				memset: <>
+  187 				getsockopt: <>
+  188 				show_ip6fw: 109
+  189 				strtoul: <>
+  190 				warn: <>
+  191 				warnx: <>
+  192 				exit: <>
+  193 		waitpid: <>
+  194 		WIFEXITED: <>
+  195 		WEXITSTATUS: <>
+  196 		WIFSIGNALED: <>
+  197 		WTERMSIG: <>
+  198 		ipfw_readfile: void (), <./ipfw.tproj/ipfw2.c 3923>
+  199 			getopt: <>
+  200 			fprintf: <>
+  201 			errx: <>
+  202 			fopen: <>
+  203 			err: 3
+  204 			pipe: <>
+  205 			fork: <>
+  206 			dup2: <>
+  207 			fileno: <>
+  208 			fclose: <>
+  209 			close: <>
+  210 			execvp: <>
+  211 			fdopen: <>
+  212 			kill: <>
+  213 			fgets: <>
+  214 			snprintf: <>
+  215 			setprogname: <>
+  216 			ipfw_main: int (), <./ipfw.tproj/ipfw2.c 3684>
+  217 				strlen: <>
+  218 				index: <>
+  219 				calloc: <>
+  220 				bcopy: <>
+  221 				strlcat: <>
+  222 				isatty: <>
+  223 				getopt: <>
+  224 				free_args: void (), <./ipfw.tproj/ipfw2.c 3670>
+  225 					free: <>
+  226 				help: void (), <./ipfw.tproj/ipfw2.c 1919>
+  227 					fprintf: <>
+  228 					exit: <>
+  229 				atoi: <>
+  230 				NEED1: <>
+  231 				isdigit: <>
+  232 				strncmp: <>
+  233 				add: void (), <./ipfw.tproj/ipfw2.c 2789>
+  234 					bzero: <>
+  235 					isdigit: <>
+  236 					atoi: <>
+  237 					strncmp: <>
+  238 					strlen: <>
+  239 					strtoul: <>
+  240 					errx: <>
+  241 					strtod: <>
+  242 					NEED1: <>
+  243 					match_token: int (), <./ipfw.tproj/ipfw2.c 446>
+  244 						strlen: <>
+  245 						bcmp: <>
+  246 					fill_reject_code: void (), <./ipfw.tproj/ipfw2.c 669>
+  247 						strtoul: <>
+  248 						match_token: 243
+  249 						errx: <>
+  250 					F_INSN_SIZE: <>
+  251 					setservent: <>
+  252 					getservbyname: <>
+  253 					ntohs: <>
+  254 					p: <>
+  255 					strchr: <>
+  256 					strtoport: int (), <./ipfw.tproj/ipfw2.c 549>
+  257 						isdigit: <>
+  258 						strtol: <>
+  259 						isalnum: <>
+  260 						malloc: <>
+  261 						match_token: 243
+  262 						free: <>
+  263 						getprotobynumber: <>
+  264 						setservent: <>
+  265 						getservbyname: <>
+  266 						ntohs: <>
+  267 					lookup_host: int (), <./ipfw.tproj/ipfw2.c 1950>
+  268 						inet_aton: <>
+  269 						gethostbyname: <>
+  270 					next_cmd: ipfw_insn * (), <./ipfw.tproj/ipfw2.c 2630>
+  271 						F_LEN: <>
+  272 						bzero: <>
+  273 					add_mac: ipfw_insn * (), <./ipfw.tproj/ipfw2.c 2685>
+  274 						errx: <>
+  275 						F_INSN_SIZE: <>
+  276 						get_mac_addr_mask: void (), <./ipfw.tproj/ipfw2.c 2592>
+  277 							strcmp: <>
+  278 							strtol: <>
+  279 					add_mactype: ipfw_insn * (), <./ipfw.tproj/ipfw2.c 2702>
+  280 						errx: <>
+  281 						strcmp: <>
+  282 						fill_newports: int (), <./ipfw.tproj/ipfw2.c 614>
+  283 							p: <>
+  284 							strtoport: 256
+  285 							errx: <>
+  286 					OR_START: <>
+  287 					add_proto: ipfw_insn * (), <./ipfw.tproj/ipfw2.c 2715>
+  288 						strncmp: <>
+  289 						strlen: <>
+  290 						atoi: <>
+  291 						getprotobyname: <>
+  292 						fill_cmd: void (), <./ipfw.tproj/ipfw2.c 2673>
+  293 					F_LEN: <>
+  294 					OR_BLOCK: <>
+  295 					add_srcip: ipfw_insn * (), <./ipfw.tproj/ipfw2.c 2734>
+  296 						fill_ip: void (), <./ipfw.tproj/ipfw2.c 1975>
+  297 							strncmp: <>
+  298 							strlen: <>
+  299 							F_INSN_SIZE: <>
+  300 							strpbrk: <>
+  301 							lookup_host: 267
+  302 							errx: <>
+  303 							inet_aton: <>
+  304 							atoi: <>
+  305 							htonl: <>
+  306 							contigmask: int (), <./ipfw.tproj/ipfw2.c 706>
+  307 							ntohl: <>
+  308 							isdigit: <>
+  309 							strtol: <>
+  310 						F_LEN: <>
+  311 						F_INSN_SIZE: <>
+  312 					add_ports: ipfw_insn * (), <./ipfw.tproj/ipfw2.c 2764>
+  313 						strncmp: <>
+  314 						strlen: <>
+  315 						fill_newports: 282
+  316 					add_dstip: ipfw_insn * (), <./ipfw.tproj/ipfw2.c 2749>
+  317 						fill_ip: 296
+  318 						F_LEN: <>
+  319 						F_INSN_SIZE: <>
+  320 					fill_cmd: 292
+  321 					fill_iface: void (), <./ipfw.tproj/ipfw2.c 2232>
+  322 						F_INSN_SIZE: <>
+  323 						strcmp: <>
+  324 						isdigit: <>
+  325 						strncpy: <>
+  326 						atoi: <>
+  327 						inet_aton: <>
+  328 						errx: <>
+  329 					fill_icmptypes: 103
+  330 					strpbrk: <>
+  331 					fill_flags: void (), <./ipfw.tproj/ipfw2.c 2143>
+  332 						set: int (), <./ndp.tproj/ndp.c 396>
+  333 							getsocket: 131
+  334 							bzero: <>
+  335 							getaddrinfo: <>
+  336 							fprintf: <>
+  337 							gai_strerror: <>
+  338 							IN6_IS_ADDR_LINKLOCAL: <>
+  339 							htons: <>
+  340 							LLADDR: <>
+  341 							ndp_ether_aton: int (), <./ndp.tproj/ndp.c 1097>
+  342 							strncmp: <>
+  343 							gettimeofday: <>
+  344 							rtmsg: 141
+  345 							perror: <>
+  346 							ROUNDUP: <>
+  347 							IN6_ARE_ADDR_EQUAL: <>
+  348 							printf: <>
+  349 						strchr: <>
+  350 						match_token: 243
+  351 						errx: <>
+  352 					getpwuid: <>
+  353 					getpwnam: <>
+  354 					getgrgid: <>
+  355 					getgrnam: <>
+  356 					htonl: <>
+  357 					htons: <>
+  358 					fill_comment: void (), <./ipfw.tproj/ipfw2.c 2641>
+  359 						strlen: <>
+  360 						errx: <>
+  361 						strlcpy: <>
+  362 					bcopy: <>
+  363 					do_cmd: int (), <./ipfw.tproj/ipfw2.c 407>
+  364 						socket: <>
+  365 						err: 3
+  366 						getsockopt: <>
+  367 						setsockopt: <>
+  368 					err: 3
+  369 					show_ipfw: void (), <./ipfw.tproj/ipfw2.c 937>
+  370 						bcopy: <>
+  371 						printf: <>
+  372 						align_uint64: __inline uint64_t (), <./ipfw.tproj/ipfw2.c 396>
+  373 							bcopy: <>
+  374 						strlcpy: <>
+  375 						ctime: <>
+  376 						strchr: <>
+  377 						strlen: <>
+  378 						p: <>
+  379 						ACTION_PTR: <>
+  380 						F_LEN: <>
+  381 						print_reject_code: void (), <./ipfw.tproj/ipfw2.c 684>
+  382 							match_value: char const * (), <./ipfw.tproj/ipfw2.c 462>
+  383 							printf: <>
+  384 						inet_ntoa: <>
+  385 						show_prerequisites: void (), <./ipfw.tproj/ipfw2.c 910>
+  386 							printf: <>
+  387 						print_mac: void (), <./ipfw.tproj/ipfw2.c 831>
+  388 							contigmask: int (), <./ipfw.tproj/ipfw2.c 706>
+  389 							printf: <>
+  390 						print_newports: void (), <./ipfw.tproj/ipfw2.c 513>
+  391 							p: <>
+  392 							printf: <>
+  393 							match_value: 382
+  394 							F_LEN: <>
+  395 							print_port: void (), <./ipfw.tproj/ipfw2.c 474>
+  396 								match_value: 382
+  397 								printf: <>
+  398 								getprotobynumber: <>
+  399 								getservbyport: <>
+  400 								htons: <>
+  401 						print_ip: void (), <./ipfw.tproj/ipfw2.c 755>
+  402 							F_LEN: <>
+  403 							printf: <>
+  404 							htonl: <>
+  405 							inet_ntoa: <>
+  406 							contigmask: int (), <./ipfw.tproj/ipfw2.c 706>
+  407 							gethostbyaddr: <>
+  408 						getprotobynumber: <>
+  409 						print_flags: void (), <./ipfw.tproj/ipfw2.c 724>
+  410 							set: 332
+  411 							printf: <>
+  412 						print_icmptypes: void (), <./ipfw.tproj/ipfw2.c 874>
+  413 							printf: <>
+  414 						ntohs: <>
+  415 						ntohl: <>
+  416 						getpwuid: <>
+  417 						getgrgid: <>
+  418 				config_pipe: void (), <./ipfw.tproj/ipfw2.c 2261>
+  419 					memset: <>
+  420 					isdigit: <>
+  421 					atoi: <>
+  422 					match_token: 243
+  423 					NEED1: <>
+  424 					strtod: <>
+  425 					strtoul: <>
+  426 					strncmp: <>
+  427 					errx: <>
+  428 					strsep: <>
+  429 					strncpy: <>
+  430 					sysctlbyname: <>
+  431 					do_cmd: 363
+  432 					err: 3
+  433 				delete: void (), <./ipfw.tproj/ipfw2.c 2174>
+  434 					memset: <>
+  435 					strncmp: <>
+  436 					strlen: <>
+  437 					isdigit: <>
+  438 					atoi: <>
+  439 					do_cmd: 363
+  440 					warn: <>
+  441 					bzero: <>
+  442 					exit: <>
+  443 				flush: void (), <./ipfw.tproj/ipfw2.c 3631>
+  444 					printf: <>
+  445 					fflush: <>
+  446 					toupper: <>
+  447 					getc: <>
+  448 					feof: <>
+  449 					bzero: <>
+  450 					do_cmd: 363
+  451 					err: 3
+  452 				zero: void (), <./ipfw.tproj/ipfw2.c 3586>
+  453 					bzero: <>
+  454 					do_cmd: 363
+  455 					err: 3
+  456 					printf: <>
+  457 					isdigit: <>
+  458 					atoi: <>
+  459 					warn: <>
+  460 					errx: <>
+  461 					exit: <>
+  462 				list: void (), <./ipfw.tproj/ipfw2.c 1743>
+  463 					fprintf: <>
+  464 					realloc: <>
+  465 					err: 3
+  466 					do_cmd: 363
+  467 					list_pipes: void (), <./ipfw.tproj/ipfw2.c 1520>
+  468 						strtoul: <>
+  469 						snprintf: <>
+  470 						print_flowset_parms: void (), <./ipfw.tproj/ipfw2.c 1485>
+  471 							snprintf: <>
+  472 							SCALE_VAL: <>
+  473 							printf: <>
+  474 						printf: <>
+  475 						list_queues: void (), <./ipfw.tproj/ipfw2.c 1444>
+  476 							printf: <>
+  477 							heapsort: <>
+  478 							sort_q: int (), <./ipfw.tproj/ipfw2.c 1412>
+  479 							htonl: <>
+  480 							getprotobynumber: <>
+  481 							inet_ntoa: <>
+  482 					NEXT: <>
+  483 					snprintf: <>
+  484 					align_uint64: 372
+  485 					show_ipfw: 369
+  486 					printf: <>
+  487 					show_dyn_ipfw: void (), <./ipfw.tproj/ipfw2.c 1370>
+  488 						bcopy: <>
+  489 						printf: <>
+  490 						align_uint64: 372
+  491 						getprotobynumber: <>
+  492 						htonl: <>
+  493 						inet_ntoa: <>
+  494 					strtoul: <>
+  495 					warnx: <>
+  496 					bcopy: <>
+  497 					free: <>
+  498 					exit: <>
+  499 				sets_handler: void (), <./ipfw.tproj/ipfw2.c 1598>
+  500 					errx: <>
+  501 					strncmp: <>
+  502 					strlen: <>
+  503 					calloc: <>
+  504 					err: 3
+  505 					do_cmd: 363
+  506 					bcopy: <>
+  507 					printf: <>
+  508 					atoi: <>
+  509 					isdigit: <>
+  510 					bzero: <>
+  511 					warn: <>
+  512 				sysctl_handler: void (), <./ipfw.tproj/ipfw2.c 1715>
+  513 					warnx: <>
+  514 					strncmp: <>
+  515 					strlen: <>
+  516 					sysctlbyname: <>
+  517 				errx: <>
+  518 			waitpid: <>
+  519 			WIFEXITED: <>
+  520 			WEXITSTATUS: <>
+  521 			WIFSIGNALED: <>
+  522 			WTERMSIG: <>
+  523 		ipfw_main: 216
+  524 		show_usage: void (), <./ipfw.tproj/ipfw2.c 1910>
+  525 			fprintf: <>
+  526 			exit: <>
+  527 		openlog: <>
+  528 		syslog: <>
+  529 		strlen: <>
+  530 		exit: <>
+  531 		ioctl: <>
+  532 		recvfrom: <>
+  533 		sockaddr: <>
+  534 		sleep: <>
+  535 		inet_ntoa: <>
+  536 		stat: <>
+  537 		getpwnam: <>
+  538 		chroot: <>
+  539 		chdir: <>
+  540 		setuid: <>
+  541 		alarm: <>
+  542 		memset: <>
+  543 		bind: <>
+  544 		connect: <>
+  545 		ntohs: <>
+  546 		kdump: void (), <./kdumpd.tproj/kdumpd.c 331>
+  547 			nak: void (), <./kdumpd.tproj/kdumpd.c 652>
+  548 				htons: <>
+  549 				strerror: <>
+  550 				strlen: <>
+  551 				syslog: <>
+  552 				strlcpy: <>
+  553 				send: <>
+  554 			exit: <>
+  555 			isupper: <>
+  556 			tolower: <>
+  557 			strncmp: <>
+  558 			ntohl: <>
+  559 			syslog: <>
+  560 			strcmp: <>
+  561 			verifyhost: char * (), <./kdumpd.tproj/kdumpd.c 685>
+  562 				gethostbyaddr: <>
+  563 				inet_ntoa: <>
+  564 			errtomsg: char * (), <./kdumpd.tproj/kdumpd.c 631>
+  565 				snprintf: <>
+  566 		getpid: <>
+  567 		setdefif: void (), <./ndp.tproj/ndp.c 1749>
+  568 			strcasecmp: <>
+  569 			if_nametoindex: <>
+  570 			err: 3
+  571 			socket: <>
+  572 			strlcpy: <>
+  573 			ioctl: <>
+  574 			close: <>
+  575 		getdefif: void (), <./ndp.tproj/ndp.c 1775>
+  576 			socket: <>
+  577 			err: 3
+  578 			memset: <>
+  579 			strlcpy: <>
+  580 			ioctl: <>
+  581 			printf: <>
+  582 			if_indextoname: <>
+  583 			close: <>
+  584 		usage: void (), <./ping6.tproj/ping6.c 2939>
+  585 			Fprintf: <>
+  586 			exit: <>
+  587 			fprintf: <>
+  588 		ifinfo: void (), <./ndp.tproj/ndp.c 1200>
+  589 			socket: <>
+  590 			perror: <>
+  591 			exit: <>
+  592 			bzero: <>
+  593 			strlcpy: <>
+  594 			ioctl: <>
+  595 			SETFLAG: <>
+  596 			printf: <>
+  597 			memset: <>
+  598 			memcmp: <>
+  599 			putc: <>
+  600 			close: <>
+  601 		file: int (), <./ndp.tproj/ndp.c 339>
+  602 			fopen: <>
+  603 			fprintf: <>
+  604 			exit: <>
+  605 			fgets: <>
+  606 			sscanf: <>
+  607 			set: 332
+  608 			fclose: <>
+  609 		atoi: <>
+  610 		dump_ext: void (), <./ndp.tproj/ndp.c 792>
+  611 			printf: <>
+  612 			sysctl: <>
+  613 			err: 3
+  614 			malloc: <>
+  615 			errx: <>
+  616 			ROUNDUP: <>
+  617 			IN6_ARE_ADDR_EQUAL: <>
+  618 			IN6_IS_ADDR_MULTICAST: <>
+  619 			IN6_IS_ADDR_LINKLOCAL: <>
+  620 			IN6_IS_ADDR_MC_NODELOCAL: <>
+  621 			IN6_IS_ADDR_MC_LINKLOCAL: <>
+  622 			getnameinfo: <>
+  623 			sockaddr: <>
+  624 			delete: 130
+  625 			gettimeofday: <>
+  626 			ts_print: <>
+  627 			strlen: <>
+  628 			ether_str: char * (), <./rtadvd.tproj/dump.c 102>
+  629 				LLADDR: <>
+  630 				snprintf: <>
+  631 			if_indextoname: <>
+  632 			sec2str: char * (), <./ndp.tproj/ndp.c 1803>
+  633 				snprintf: <>
+  634 			getnbrinfo: <>
+  635 			warnx: <>
+  636 			putchar: <>
+  637 			snprintf: <>
+  638 			IN6_IS_ADDR_UNSPECIFIED: <>
+  639 			free: <>
+  640 			sleep: <>
+  641 		dump: void (), <./ndp.tproj/ndp.c 592>
+  642 			printf: <>
+  643 			sysctl: <>
+  644 			err: 3
+  645 			malloc: <>
+  646 			errx: <>
+  647 			ROUNDUP: <>
+  648 			IN6_ARE_ADDR_EQUAL: <>
+  649 			IN6_IS_ADDR_MULTICAST: <>
+  650 			IN6_IS_ADDR_LINKLOCAL: <>
+  651 			IN6_IS_ADDR_MC_NODELOCAL: <>
+  652 			IN6_IS_ADDR_MC_LINKLOCAL: <>
+  653 			getnameinfo: <>
+  654 			sockaddr: <>
+  655 			delete: 130
+  656 			gettimeofday: <>
+  657 			ts_print: <>
+  658 			strlen: <>
+  659 			ether_str: 628
+  660 			if_indextoname: <>
+  661 			getnbrinfo: <>
+  662 			sec2str: 632
+  663 			warnx: <>
+  664 			putchar: <>
+  665 			snprintf: <>
+  666 			IN6_IS_ADDR_UNSPECIFIED: <>
+  667 			free: <>
+  668 			sleep: <>
+  669 		delete: 130
+  670 		plist: void (), <./ndp.tproj/ndp.c 1404>
+  671 			sysctl: <>
+  672 			err: 3
+  673 			malloc: <>
+  674 			errx: <>
+  675 			getnameinfo: <>
+  676 			sockaddr: <>
+  677 			strlcpy: <>
+  678 			printf: <>
+  679 			if_indextoname: <>
+  680 			gettimeofday: <>
+  681 			sec2str: 632
+  682 			getnbrinfo: <>
+  683 			free: <>
+  684 			socket: <>
+  685 			perror: <>
+  686 			exit: <>
+  687 			bzero: <>
+  688 			ioctl: <>
+  689 			memset: <>
+  690 			IN6_IS_ADDR_LINKLOCAL: <>
+  691 			memcpy: <>
+  692 			ntohs: <>
+  693 			warnx: <>
+  694 			close: <>
+  695 		rtrlist: void (), <./ndp.tproj/ndp.c 1308>
+  696 			sysctl: <>
+  697 			err: 3
+  698 			malloc: <>
+  699 			errx: <>
+  700 			getnameinfo: <>
+  701 			sockaddr: <>
+  702 			strlcpy: <>
+  703 			printf: <>
+  704 			if_indextoname: <>
+  705 			gettimeofday: <>
+  706 			sec2str: 632
+  707 			free: <>
+  708 			socket: <>
+  709 			perror: <>
+  710 			exit: <>
+  711 			bzero: <>
+  712 			ioctl: <>
+  713 			close: <>
+  714 		set: 332
+  715 		harmonize_rtr: void (), <./ndp.tproj/ndp.c 1733>
+  716 			socket: <>
+  717 			err: 3
+  718 			strlcpy: <>
+  719 			ioctl: <>
+  720 			close: <>
+  721 		pfx_flush: void (), <./ndp.tproj/ndp.c 1705>
+  722 			socket: <>
+  723 			err: 3
+  724 			strlcpy: <>
+  725 			ioctl: <>
+  726 		rtr_flush: void (), <./ndp.tproj/ndp.c 1718>
+  727 			socket: <>
+  728 			err: 3
+  729 			strlcpy: <>
+  730 			ioctl: <>
+  731 			close: <>
+  732 		get: void (), <./ndp.tproj/ndp.c 477>
+  733 			bzero: <>
+  734 			getaddrinfo: <>
+  735 			fprintf: <>
+  736 			gai_strerror: <>
+  737 			IN6_IS_ADDR_LINKLOCAL: <>
+  738 			htons: <>
+  739 			dump: 641
+  740 			getnameinfo: <>
+  741 			sockaddr: <>
+  742 			printf: <>
+  743 			exit: <>
+  744 		open: <>
+  745 		Fprintf: <>
+  746 		strerror: <>
+  747 		getprotobyname: <>
+  748 		getuid: <>
+  749 		sysctl: <>
+  750 		perror: <>
+  751 		strrchr: <>
+  752 		str2val: int (), <./traceroute.tproj/traceroute.c 1736>
+  753 			strtol: <>
+  754 			Fprintf: <>
+  755 			exit: <>
+  756 		getaddr: void (), <./traceroute.tproj/traceroute.c 1713>
+  757 			getifaddrs: <>
+  758 			err: 3
+  759 			strcmp: <>
+  760 			memcpy: <>
+  761 			freeifaddrs: <>
+  762 			usage: 584
+  763 			getaddr: 756
+  764 			strchr: <>
+  765 			memset: <>
+  766 			getaddrinfo: <>
+  767 			fprintf: <>
+  768 			gai_strerror: <>
+  769 			exit: <>
+  770 			IN6_IS_ADDR_LINKLOCAL: <>
+  771 			IN6_IS_ADDR_MC_NODELOCAL: <>
+  772 			IN6_IS_ADDR_MC_LINKLOCAL: <>
+  773 			htons: <>
+  774 			freeaddrinfo: <>
+  775 			inet6_makenetandmask: int (), <./route.tproj/route.c 847>
+  776 			link_addr: <>
+  777 			sockaddr: <>
+  778 			inet_addr: <>
+  779 			inet_makenetandmask: <>
+  780 			ntohl: <>
+  781 			strtoul: <>
+  782 			inet_lnaof: <>
+  783 			inet_network: <>
+  784 			getnetbyname: <>
+  785 			gethostbyname: <>
+  786 			bcopy: <>
+  787 			MIN: <>
+  788 			errx: <>
+  789 			gethostinfo: struct hostinfo (), <./traceroute.tproj/traceroute.c 1646>
+  790 			freehostinfo: void (), <./traceroute.tproj/traceroute.c 1702>
+  791 				free: <>
+  792 		setproto: struct outproto (), <./traceroute.tproj/traceroute.c 1770>
+  793 		gethostinfo: struct hostinfo (), <./traceroute.tproj/traceroute.c 1646>
+  794 		setsin: void (), <./traceroute.tproj/traceroute.c 1723>
+  795 			memset: <>
+  796 		freehostinfo: 790
+  797 		setlinebuf: <>
+  798 		setvbuf: <>
+  799 		malloc: <>
+  800 		htons: <>
+  801 		memcpy: <>
+  802 		setsockopt: <>
+  803 		setpolicy: int (), <./ping6.tproj/ping6.c 2871>
+  804 			ipsec_set_policy: <>
+  805 			strlen: <>
+  806 			warnx: <>
+  807 			ipsec_strerror: <>
+  808 			setsockopt: <>
+  809 			ipsec_get_policylen: <>
+  810 			free: <>
+  811 			errx: <>
+  812 		ipsec_strerror: <>
+  813 		ifaddrlist: int (), <./traceroute.tproj/ifaddrlist.c 103>
+  814 			ifaddrlist: 813
+  815 			socket: <>
+  816 			snprintf: <>
+  817 			strerror: <>
+  818 			ioctl: <>
+  819 			close: <>
+  820 			strncpy: <>
+  821 			strchr: <>
+  822 			strdup: <>
+  823 		strcmp: <>
+  824 		findsaddr: const char * (), <./traceroute.tproj/findsaddr-socket.c 133>
+  825 			sockaddr: <>
+  826 			socket: <>
+  827 			snprintf: <>
+  828 			strerror: <>
+  829 			getpid: <>
+  830 			roundup: <>
+  831 			SALEN: <>
+  832 			write: <>
+  833 			close: <>
+  834 			memset: <>
+  835 			read: <>
+  836 		as_setup: void * (), <./traceroute.tproj/as.c 66>
+  837 			memset: <>
+  838 			getservbyname: <>
+  839 			warnx: <>
+  840 			ntohs: <>
+  841 			inet_aton: <>
+  842 			gethostbyname: <>
+  843 			hstrerror: <>
+  844 			socket: <>
+  845 			warn: <>
+  846 			memcpy: <>
+  847 			connect: <>
+  848 			sockaddr: <>
+  849 			close: <>
+  850 			fdopen: <>
+  851 			fprintf: <>
+  852 			fflush: <>
+  853 			malloc: <>
+  854 			fclose: <>
+  855 			fopen: <>
+  856 		fflush: <>
+  857 		Printf: <>
+  858 		usleep: <>
+  859 		gettimeofday: <>
+  860 		send_probe: void (), <./traceroute6.tproj/traceroute6.c 1013>
+  861 			htons: <>
+  862 			Printf: <>
+  863 			ntohs: <>
+  864 			setsockopt: <>
+  865 			Fprintf: <>
+  866 			strerror: <>
+  867 			exit: <>
+  868 			sendto: <>
+  869 			fflush: <>
+  870 			perror: <>
+  871 			gettimeofday: <>
+  872 			htonl: <>
+  873 			bcopy: <>
+  874 			fprintf: <>
+  875 			sockaddr: <>
+  876 			printf: <>
+  877 		wait_for_reply: int (), <./traceroute6.tproj/traceroute6.c 952>
+  878 			howmany: <>
+  879 			malloc: <>
+  880 			err: 3
+  881 			memset: <>
+  882 			FD_SET: <>
+  883 			gettimeofday: <>
+  884 			tvsub: void (), <./ping6.tproj/ping6.c 2392>
+  885 			select: <>
+  886 			Fprintf: <>
+  887 			exit: <>
+  888 			recvfrom: <>
+  889 			sockaddr: <>
+  890 			free: <>
+  891 			poll: <>
+  892 			recvmsg: <>
+  893 		packet_ok: int (), <./traceroute6.tproj/traceroute6.c 1161>
+  894 			Printf: <>
+  895 			inet_ntoa: <>
+  896 			ntohs: <>
+  897 			pr_type: char * (), <./traceroute6.tproj/traceroute6.c 1104>
+  898 			getnameinfo: <>
+  899 			sockaddr: <>
+  900 			strlcpy: <>
+  901 			printf: <>
+  902 			CMSG_FIRSTHDR: <>
+  903 			CMSG_NXTHDR: <>
+  904 			CMSG_LEN: <>
+  905 				CMSG_DATA: <>
+  906 				IN6_ARE_ADDR_EQUAL: <>
+  907 				printf: <>
+  908 				pr_addr: const char * (), <./ping6.tproj/ping6.c 2734>
+  909 					getnameinfo: <>
+  910 				sockaddr: <>
+  911 			CMSG_DATA: <>
+  912 			warnx: <>
+  913 			get_uphdr: void * (), <./traceroute6.tproj/traceroute6.c 1304>
+  914 			htons: <>
+  915 			fprintf: <>
+  916 			p: <>
+  917 			inet_ntop: <>
+  918 		printf: <>
+  919 		print: void (), <./traceroute6.tproj/traceroute6.c 1350>
+  920 			Printf: <>
+  921 			as_lookup: int (), <./traceroute.tproj/as.c 141>
+  922 				fprintf: <>
+  923 				inet_ntoa: <>
+  924 				fflush: <>
+  925 				fgets: <>
+  926 				sscanf: <>
+  927 				strlen: <>
+  928 				strncasecmp: <>
+  929 			inet_ntoa: <>
+  930 			inetname: char * (), <./netstat.tproj/inet.c 962>
+  931 				gethostname: <>
+  932 				strchr: <>
+  933 				gethostbyname: <>
+  934 				strncpy: <>
+  935 				gethostbyaddr: <>
+  936 				strcmp: <>
+  937 				inet_ntoa: <>
+  938 				strlcpy: <>
+  939 				getnameinfo: <>
+  940 				inet_netof: <>
+  941 				inet_lnaof: <>
+  942 				getnetbyaddr: <>
+  943 				ntohl: <>
+  944 				snprintf: <>
+  945 				C: <>
+  946 			getnameinfo: <>
+  947 			sockaddr: <>
+  948 			strlcpy: <>
+  949 			printf: <>
+  950 			inet_ntop: <>
+  951 		deltaT: double (), <./traceroute6.tproj/traceroute6.c 1090>
+  952 		pkt_compare: void (), <./traceroute.tproj/traceroute.c 1796>
+  953 			Printf: <>
+  954 		putchar: <>
+  955 		as_shutdown: void (), <./traceroute.tproj/as.c 226>
+  956 			fprintf: <>
+  957 			fclose: <>
+  958 			free: <>
+  959 		PacketAliasInit: void (), <./alias/alias_db.c 2780>
+  960 			gettimeofday: <>
+  961 			LIST_INIT: <>
+  962 			atexit: <>
+  963 			PacketAliasUninit: void (), <./alias/alias_db.c 2829>
+  964 				CleanupAliasData: void (), <./alias/alias_db.c 914>
+  965 					LIST_FIRST: <>
+  966 					LIST_NEXT: <>
+  967 					DeleteLink: void (), <./alias/alias_db.c 984>
+  968 						ClearFWHole: void (), <./alias/alias_db.c 3021>
+  969 							memset: <>
+  970 							setsockopt: <>
+  971 							fw_clrfield: <>
+  972 						free: <>
+  973 						LIST_REMOVE: <>
+  974 						close: <>
+  975 						IN_MULTICAST: <>
+  976 						fprintf: <>
+  977 						inet_ntop: <>
+  978 						fflush: <>
+  979 						ShowAliasStats: void (), <./alias/alias_db.c 517>
+  980 							fprintf: <>
+  981 							fflush: <>
+  982 				UninitPacketAliasLog: void (), <./alias/alias_db.c 2586>
+  983 					fclose: <>
+  984 				UninitPunchFW: void (), <./alias/alias_db.c 2926>
+  985 					ClearAllFWHoles: void (), <./alias/alias_db.c 3040>
+  986 						memset: <>
+  987 						setsockopt: <>
+  988 					close: <>
+  989 					free: <>
+  990 			CleanupAliasData: 964
+  991 		ParseArgs: void (), <./natd.tproj/natd.c 642>
+  992 			warnx: <>
+  993 			Usage: void (), <./natd.tproj/natd.c 2027>
+  994 				fprintf: <>
+  995 				exit: <>
+  996 			strncat: <>
+  997 			strlen: <>
+  998 			ParseOption: void (), <./natd.tproj/natd.c 1752>
+  999 				strcmp: <>
+ 1000 				warnx: <>
+ 1001 				Usage: 993
+ 1002 				errx: <>
+ 1003 				StrToPort: u_short (), <./natd.tproj/natd.c 2310>
+ 1004 					strtol: <>
+ 1005 					htons: <>
+ 1006 					getservbyname: <>
+ 1007 					errx: <>
+ 1008 				strtol: <>
+ 1009 				StrToAddr: void (), <./natd.tproj/natd.c 2296>
+ 1010 					inet_aton: <>
+ 1011 					gethostbyname: <>
+ 1012 					errx: <>
+ 1013 					memcpy: <>
+ 1014 				PacketAliasSetMode: unsigned int (), <./alias/alias_db.c 2842>
+ 1015 					InitPacketAliasLog: void (), <./alias/alias_db.c 2572>
+ 1016 						fopen: <>
+ 1017 						fprintf: <>
+ 1018 					UninitPacketAliasLog: 982
+ 1019 					InitPunchFW: void (), <./alias/alias_db.c 2913>
+ 1020 						malloc: <>
+ 1021 						memset: <>
+ 1022 						socket: <>
+ 1023 						ClearAllFWHoles: 985
+ 1024 					UninitPunchFW: 984
+ 1025 				memcpy: <>
+ 1026 				PacketAliasSetTarget: void (), <./alias/alias_db.c 2773>
+ 1027 				SetupPortRedirect: void (), <./natd.tproj/natd.c 2051>
+ 1028 					strlcpy: <>
+ 1029 					strtok: <>
+ 1030 					errx: <>
+ 1031 					StrToProto: int (), <./natd.tproj/natd.c 2371>
+ 1032 						strcmp: <>
+ 1033 						errx: <>
+ 1034 					strchr: <>
+ 1035 					StrToAddrAndPortRange: int (), <./natd.tproj/natd.c 2382>
+ 1036 						strchr: <>
+ 1037 						errx: <>
+ 1038 						StrToAddr: 1009
+ 1039 						StrToPortRange: int (), <./natd.tproj/natd.c 2327>
+ 1040 							getservbyname: <>
+ 1041 							SETLOPORT: <>
+ 1042 							ntohs: <>
+ 1043 							SETNUMPORTS: <>
+ 1044 							strchr: <>
+ 1045 							strtol: <>
+ 1046 							errx: <>
+ 1047 							sscanf: <>
+ 1048 							GETNUMPORTS: <>
+ 1049 					GETLOPORT: <>
+ 1050 					GETNUMPORTS: <>
+ 1051 					StrToPortRange: 1039
+ 1052 					SETLOPORT: <>
+ 1053 					SETNUMPORTS: <>
+ 1054 					StrToAddr: 1009
+ 1055 					PacketAliasRedirectPort: struct alias_link (), <./alias/alias_db.c 2620>
+ 1056 					htons: <>
+ 1057 					PacketAliasAddServer: int (), <./alias/alias_db.c 2665>
+ 1058 						malloc: <>
+ 1059 				SetupProtoRedirect: void (), <./natd.tproj/natd.c 2192>
+ 1060 					strlcpy: <>
+ 1061 					strtok: <>
+ 1062 					errx: <>
+ 1063 					getprotobyname: <>
+ 1064 					StrToAddr: 1009
+ 1065 					PacketAliasRedirectProto: struct alias_link (), <./alias/alias_db.c 2696>
+ 1066 				SetupAddressRedirect: void (), <./natd.tproj/natd.c 2247>
+ 1067 					strlcpy: <>
+ 1068 					strtok: <>
+ 1069 					errx: <>
+ 1070 					strchr: <>
+ 1071 					StrToAddr: 1009
+ 1072 					PacketAliasRedirectAddr: struct alias_link (), <./alias/alias_db.c 2724>
+ 1073 					PacketAliasAddServer: 1057
+ 1074 					htons: <>
+ 1075 				PacketAliasProxyRule: int (), <./alias/alias_proxy.c 547>
+ 1076 					strspn: <>
+ 1077 					strlen: <>
+ 1078 					strlcpy: <>
+ 1079 					tolower: <>
+ 1080 					IpMask: int (), <./alias/alias_proxy.c 176>
+ 1081 						htonl: <>
+ 1082 					strsep: <>
+ 1083 					strcmp: <>
+ 1084 					IpAddr: int (), <./alias/alias_proxy.c 193>
+ 1085 						inet_aton: <>
+ 1086 					sscanf: <>
+ 1087 					RuleNumberDelete: int (), <./alias/alias_proxy.c 288>
+ 1088 						RuleDelete: void (), <./alias/alias_proxy.c 274>
+ 1089 							free: <>
+ 1090 					IpPort: int (), <./alias/alias_proxy.c 202>
+ 1091 						sscanf: <>
+ 1092 						getservbyname: <>
+ 1093 						ntohs: <>
+ 1094 					malloc: <>
+ 1095 					htons: <>
+ 1096 					RuleAdd: void (), <./alias/alias_proxy.c 228>
+ 1097 				free: <>
+ 1098 				strdup: <>
+ 1099 				ReadConfigFile: void (), <./natd.tproj/natd.c 1971>
+ 1100 					file: 601
+ 1101 					fopen: <>
+ 1102 					err: 3
+ 1103 					fgetln: <>
+ 1104 					errx: <>
+ 1105 					strchr: <>
+ 1106 					isspace: <>
+ 1107 					ParseOption: 998
+ 1108 					fclose: <>
+ 1109 				SetupPunchFW: void (), <./natd.tproj/natd.c 2398>
+ 1110 					sscanf: <>
+ 1111 					errx: <>
+ 1112 					PacketAliasSetFWBase: void (), <./alias/alias_db.c 3058>
+ 1113 					PacketAliasSetMode: 1014
+ 1114 				realloc: <>
+ 1115 				printf: <>
+ 1116 				malloc: <>
+ 1117 		ParseOption: 998
+ 1118 		PacketAliasSetMode: 1014
+ 1119 		Quit: void (), <./natd.tproj/natd.c 1435>
+ 1120 			Warn: void (), <./natd.tproj/natd.c 1441>
+ 1121 				syslog: <>
+ 1122 				warn: <>
+ 1123 			exit: <>
+ 1124 		SetAliasAddressFromIfName: void (), <./natd.tproj/natd.c 1322>
+ 1125 			sysctl: <>
+ 1126 			err: 3
+ 1127 			malloc: <>
+ 1128 			errx: <>
+ 1129 			warnx: <>
+ 1130 			strlen: <>
+ 1131 			strncmp: <>
+ 1132 			PacketAliasClampMSS: void (), <./alias/alias.c 184>
+ 1133 			ADVANCE: <>
+ 1134 			sockaddr: <>
+ 1135 			PacketAliasSetAddress: void (), <./alias/alias_db.c 2762>
+ 1136 				CleanupAliasData: 964
+ 1137 			signal: <>
+ 1138 			Natdtimer: void (), <./natd.tproj/natd.c 1090>
+ 1139 				SendPortMapMulti: void (), <./natd.tproj/natd.c 1022>
+ 1140 					memset: <>
+ 1141 					inet_addr: <>
+ 1142 					htons: <>
+ 1143 					socket: <>
+ 1144 					printf: <>
+ 1145 					setsockopt: <>
+ 1146 					close: <>
+ 1147 					sendto: <>
+ 1148 					sockaddr: <>
+ 1149 				Doubletime: void (), <./natd.tproj/natd.c 1072>
+ 1150 					timeradd: <>
+ 1151 				setitimer: <>
+ 1152 				printf: <>
+ 1153 				Stoptimer: void (), <./natd.tproj/natd.c 1080>
+ 1154 					setitimer: <>
+ 1155 					printf: <>
+ 1156 			NotifyPublicAddress: void (), <./natd.tproj/natd.c 1114>
+ 1157 				Stoptimer: 1153
+ 1158 				SendPortMapMulti: 1139
+ 1159 				setitimer: <>
+ 1160 				printf: <>
+ 1161 			syslog: <>
+ 1162 			inet_ntoa: <>
+ 1163 			free: <>
+ 1164 		fcntl: <>
+ 1165 		NatPortMapPInit: void (), <./natd.tproj/natd.c 913>
+ 1166 			malloc: <>
+ 1167 			bzero: <>
+ 1168 			getifaddrs: <>
+ 1169 			Quit: 1119
+ 1170 			strcmp: <>
+ 1171 			freeifaddrs: <>
+ 1172 			getdivisor: void (), <./natd.tproj/natd.c 891>
+ 1173 				mach_timebase_info: <>
+ 1174 		signal: <>
+ 1175 		Natdtimer: 1138
+ 1176 		DaemonMode: void (), <./natd.tproj/natd.c 611>
+ 1177 			daemon: <>
+ 1178 			fopen: <>
+ 1179 			fprintf: <>
+ 1180 			getpid: <>
+ 1181 			fclose: <>
+ 1182 			open: <>
+ 1183 			dup2: <>
+ 1184 			close: <>
+ 1185 		siginterrupt: <>
+ 1186 		InitiateShutdown: void (), <./natd.tproj/natd.c 1455>
+ 1187 			siginterrupt: <>
+ 1188 			signal: <>
+ 1189 			Shutdown: void (), <./natd.tproj/natd.c 1467>
+ 1190 			alarm: <>
+ 1191 		RefreshAddr: void (), <./natd.tproj/natd.c 1449>
+ 1192 		HandleInfo: void (), <./natd.tproj/natd.c 1472>
+ 1193 		PacketAliasSetAddress: 1135
+ 1194 		NotifyPublicAddress: 1156
+ 1195 		DoAliasing: void (), <./natd.tproj/natd.c 682>
+ 1196 			SetAliasAddressFromIfName: 1124
+ 1197 			recvfrom: <>
+ 1198 			sockaddr: <>
+ 1199 			Warn: 1120
+ 1200 			printf: <>
+ 1201 			PrintPacket: void (), <./natd.tproj/natd.c 1263>
+ 1202 				printf: <>
+ 1203 				FormatPacket: char * (), <./natd.tproj/natd.c 1273>
+ 1204 					strlcpy: <>
+ 1205 					inet_ntoa: <>
+ 1206 					snprintf: <>
+ 1207 					ntohs: <>
+ 1208 			PacketAliasOut: int (), <./alias/alias.c 1462>
+ 1209 				PacketAliasIn: int (), <./alias/alias.c 1372>
+ 1210 					PacketAliasOut: 1208
+ 1211 					HouseKeeping: void (), <./alias/alias_db.c 2519>
+ 1212 						gettimeofday: <>
+ 1213 						IncrementalCleanup: void (), <./alias/alias_db.c 938>
+ 1214 							LIST_FIRST: <>
+ 1215 							LIST_NEXT: <>
+ 1216 							DeleteLink: 967
+ 1217 						fprintf: <>
+ 1218 					ClearCheckNewLink: void (), <./alias/alias_db.c 2469>
+ 1219 					ntohs: <>
+ 1220 					IcmpAliasIn: int (), <./alias/alias.c 522>
+ 1221 						IcmpAliasIn1: int (), <./alias/alias.c 366>
+ 1222 							FindIcmpIn: struct alias_link (), <./alias/alias_db.c 1555>
+ 1223 							GetOriginalPort: u_short (), <./alias/alias_db.c 2242>
+ 1224 							ADJUST_CHECKSUM: <>
+ 1225 							GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1226 							DifferentialChecksum: void (), <./alias/alias_util.c 163>
+ 1227 						IcmpAliasIn2: int (), <./alias/alias.c 412>
+ 1228 							FindUdpTcpIn: struct alias_link (), <./alias/alias_db.c 1708>
+ 1229 							FindIcmpIn: struct alias_link (), <./alias/alias_db.c 1555>
+ 1230 							GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1231 							GetOriginalPort: u_short (), <./alias/alias_db.c 2242>
+ 1232 							ADJUST_CHECKSUM: <>
+ 1233 							DifferentialChecksum: 1226
+ 1234 					UdpAliasIn: int (), <./alias/alias.c 832>
+ 1235 						FindUdpTcpIn: struct alias_link (), <./alias/alias_db.c 1708>
+ 1236 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1237 						GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1238 						GetOriginalPort: u_short (), <./alias/alias_db.c 2242>
+ 1239 						ntohs: <>
+ 1240 						AliasHandleCUSeeMeIn: void (), <./alias/alias_cuseeme.c 114>
+ 1241 							ntohs: <>
+ 1242 						AliasHandleUdpNbt: int (), <./alias/alias_nbt.c 225>
+ 1243 							p: <>
+ 1244 							ntohs: <>
+ 1245 							printf: <>
+ 1246 							AliasHandleName: u_char * (), <./alias/alias_nbt.c 150>
+ 1247 								printf: <>
+ 1248 								isprint: <>
+ 1249 								fflush: <>
+ 1250 							inet_ntoa: <>
+ 1251 							ADJUST_CHECKSUM: <>
+ 1252 							fflush: <>
+ 1253 						AliasHandleUdpNbtNS: int (), <./alias/alias_nbt.c 641>
+ 1254 							p: <>
+ 1255 							ntohs: <>
+ 1256 							printf: <>
+ 1257 							AliasHandleQuestion: u_char * (), <./alias/alias_nbt.c 301>
+ 1258 								AliasHandleName: 1246
+ 1259 								ntohs: <>
+ 1260 								printf: <>
+ 1261 							AliasHandleResource: u_char * (), <./alias/alias_nbt.c 572>
+ 1262 								AliasHandleName: 1246
+ 1263 								printf: <>
+ 1264 								ntohs: <>
+ 1265 								AliasHandleResourceNB: u_char * (), <./alias/alias_nbt.c 358>
+ 1266 									ntohs: <>
+ 1267 									printf: <>
+ 1268 									inet_ntoa: <>
+ 1269 									bcmp: <>
+ 1270 									ADJUST_CHECKSUM: <>
+ 1271 								AliasHandleResourceA: u_char * (), <./alias/alias_nbt.c 427>
+ 1272 									ntohs: <>
+ 1273 									printf: <>
+ 1274 									inet_ntoa: <>
+ 1275 									bcmp: <>
+ 1276 									ADJUST_CHECKSUM: <>
+ 1277 								AliasHandleResourceNS: u_char * (), <./alias/alias_nbt.c 517>
+ 1278 									ntohs: <>
+ 1279 									AliasHandleName: 1246
+ 1280 								AliasHandleResourceNULL: u_char * (), <./alias/alias_nbt.c 484>
+ 1281 									ntohs: <>
+ 1282 								AliasHandleResourceNBSTAT: u_char * (), <./alias/alias_nbt.c 548>
+ 1283 									ntohs: <>
+ 1284 								fflush: <>
+ 1285 							PrintRcode: void (), <./alias/alias_nbt.c 120>
+ 1286 								printf: <>
+ 1287 						ADJUST_CHECKSUM: <>
+ 1288 						DifferentialChecksum: 1226
+ 1289 					TcpAliasIn: int (), <./alias/alias.c 976>
+ 1290 						FindUdpTcpIn: struct alias_link (), <./alias/alias_db.c 1708>
+ 1291 						ntohs: <>
+ 1292 						AliasHandlePptpIn: void (), <./alias/alias_pptp.c 232>
+ 1293 							AliasVerifyPptp: PptpCallId (), <./alias/alias_pptp.c 297>
+ 1294 								ntohs: <>
+ 1295 								ntohl: <>
+ 1296 							FindPptpInByCallId: struct alias_link (), <./alias/alias_db.c 1860>
+ 1297 							GetDestAddress: struct in_addr (), <./alias/alias_db.c 2211>
+ 1298 							GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1299 							SetExpire: void (), <./alias/alias_db.c 2444>
+ 1300 								DeleteLink: 967
+ 1301 								fprintf: <>
+ 1302 							FindPptpInByPeerCallId: struct alias_link (), <./alias/alias_db.c 1880>
+ 1303 							GetOriginalPort: u_short (), <./alias/alias_db.c 2242>
+ 1304 							ADJUST_CHECKSUM: <>
+ 1305 							SetDestCallId: void (), <./alias/alias_db.c 2492>
+ 1306 								ReLink: struct alias_link (), <./alias/alias_db.c 1267>
+ 1307 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1308 						GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1309 						GetProxyAddress: struct in_addr (), <./alias/alias_db.c 2271>
+ 1310 						GetOriginalPort: u_short (), <./alias/alias_db.c 2242>
+ 1311 						GetProxyPort: u_short (), <./alias/alias_db.c 2285>
+ 1312 						GetAckModified: int (), <./alias/alias_db.c 2299>
+ 1313 						GetDeltaAckIn: int (), <./alias/alias_db.c 2307>
+ 1314 							SeqDiff: int (), <./alias/alias_db.c 502>
+ 1315 								ntohl: <>
+ 1316 						htonl: <>
+ 1317 						ntohl: <>
+ 1318 						ADJUST_CHECKSUM: <>
+ 1319 						TcpMonitorIn: void (), <./alias/alias.c 249>
+ 1320 							GetStateIn: int (), <./alias/alias_db.c 2185>
+ 1321 							SetStateIn: void (), <./alias/alias_db.c 2141>
+ 1322 								abort: <>
+ 1323 							DoMSSClamp: void (), <./alias/alias.c 189>
+ 1324 								ntohs: <>
+ 1325 								htons: <>
+ 1326 								ADJUST_CHECKSUM: <>
+ 1327 					AliasHandlePptpGreIn: int (), <./alias/alias_pptp.c 363>
+ 1328 						ntohl: <>
+ 1329 						FindPptpInByPeerCallId: struct alias_link (), <./alias/alias_db.c 1880>
+ 1330 						GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1331 						GetOriginalPort: u_short (), <./alias/alias_db.c 2242>
+ 1332 						DifferentialChecksum: 1226
+ 1333 					ProtoAliasIn: int (), <./alias/alias.c 763>
+ 1334 						FindProtoIn: struct alias_link (), <./alias/alias_db.c 1658>
+ 1335 						GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1336 						DifferentialChecksum: 1226
+ 1337 					FindFragmentIn1: struct alias_link (), <./alias/alias_db.c 1605>
+ 1338 					SetFragmentAddr: void (), <./alias/alias_db.c 2113>
+ 1339 					FragmentIn: int (), <./alias/alias.c 1252>
+ 1340 						FindFragmentIn2: struct alias_link (), <./alias/alias_db.c 1627>
+ 1341 						GetFragmentAddr: void (), <./alias/alias_db.c 2120>
+ 1342 						DifferentialChecksum: 1226
+ 1343 				HouseKeeping: 1211
+ 1344 				ClearCheckNewLink: 1218
+ 1345 				ntohs: <>
+ 1346 				GetDefaultAliasAddress: struct in_addr (), <./alias/alias_db.c 2228>
+ 1347 				ntohl: <>
+ 1348 				SetDefaultAliasAddress: void (), <./alias/alias_db.c 2235>
+ 1349 				IcmpAliasOut: int (), <./alias/alias.c 726>
+ 1350 					IcmpAliasOut1: int (), <./alias/alias.c 559>
+ 1351 						FindIcmpOut: struct alias_link (), <./alias/alias_db.c 1580>
+ 1352 						GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1353 						ADJUST_CHECKSUM: <>
+ 1354 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1355 						DifferentialChecksum: 1226
+ 1356 					IcmpAliasOut2: int (), <./alias/alias.c 606>
+ 1357 						FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1750>
+ 1358 						FindIcmpOut: struct alias_link (), <./alias/alias_db.c 1580>
+ 1359 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1360 						GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1361 						ADJUST_CHECKSUM: <>
+ 1362 						DifferentialChecksum: 1226
+ 1363 				UdpAliasOut: int (), <./alias/alias.c 906>
+ 1364 					FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1750>
+ 1365 					GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1366 					GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1367 					ntohs: <>
+ 1368 					AliasHandleCUSeeMeOut: void (), <./alias/alias_cuseeme.c 90>
+ 1369 						ntohs: <>
+ 1370 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1371 						FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1750>
+ 1372 						GetDestAddress: struct in_addr (), <./alias/alias_db.c 2211>
+ 1373 						PunchFWHole: void (), <./alias/alias_db.c 2939>
+ 1374 							memset: <>
+ 1375 							fw_tstfield: <>
+ 1376 							fprintf: <>
+ 1377 							IP_FW_SETNSRCP: <>
+ 1378 							IP_FW_SETNDSTP: <>
+ 1379 							GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1380 							GetDestAddress: struct in_addr (), <./alias/alias_db.c 2211>
+ 1381 							ntohs: <>
+ 1382 							GetOriginalPort: u_short (), <./alias/alias_db.c 2242>
+ 1383 							GetDestPort: u_short (), <./alias/alias_db.c 2256>
+ 1384 							setsockopt: <>
+ 1385 							err: 3
+ 1386 							fw_setfield: <>
+ 1387 					AliasHandleUdpNbt: 1242
+ 1388 					AliasHandleUdpNbtNS: 1253
+ 1389 					ADJUST_CHECKSUM: <>
+ 1390 					DifferentialChecksum: 1226
+ 1391 				TcpAliasOut: int (), <./alias/alias.c 1089>
+ 1392 					ProxyCheck: int (), <./alias/alias_proxy.c 478>
+ 1393 					ADJUST_CHECKSUM: <>
+ 1394 					FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1750>
+ 1395 					SetProxyPort: void (), <./alias/alias_db.c 2292>
+ 1396 					SetProxyAddress: void (), <./alias/alias_db.c 2278>
+ 1397 					ProxyModify: void (), <./alias/alias_proxy.c 524>
+ 1398 						ProxyEncodeIpHeader: void (), <./alias/alias_proxy.c 399>
+ 1399 							fprintf: <>
+ 1400 							IpChecksum: u_short (), <./alias/alias_util.c 106>
+ 1401 								PacketAliasInternetChecksum: u_short (), <./alias/alias_util.c 83>
+ 1402 							TcpChecksum: u_short (), <./alias/alias_util.c 114>
+ 1403 								ntohs: <>
+ 1404 								htons: <>
+ 1405 							memcpy: <>
+ 1406 							ntohs: <>
+ 1407 							htons: <>
+ 1408 							ADJUST_CHECKSUM: <>
+ 1409 						ProxyEncodeTcpStream: void (), <./alias/alias_proxy.c 313>
+ 1410 							GetAckModified: 1312
+ 1411 							snprintf: <>
+ 1412 							inet_ntoa: <>
+ 1413 							GetProxyAddress: struct in_addr (), <./alias/alias_db.c 2271>
+ 1414 							ntohs: <>
+ 1415 							GetProxyPort: u_short (), <./alias/alias_db.c 2285>
+ 1416 							strlen: <>
+ 1417 							strlcat: <>
+ 1418 							p: <>
+ 1419 							memmove: <>
+ 1420 							memcpy: <>
+ 1421 							SetAckModified: void (), <./alias/alias_db.c 2263>
+ 1422 							GetDeltaSeqOut: int (), <./alias/alias_db.c 2358>
+ 1423 								SeqDiff: 1314
+ 1424 							AddSeq: void (), <./alias/alias_db.c 2409>
+ 1425 								ntohs: <>
+ 1426 								htonl: <>
+ 1427 								ntohl: <>
+ 1428 								index: <>
+ 1429 							htons: <>
+ 1430 							ADJUST_CHECKSUM: <>
+ 1431 							TcpChecksum: 1402
+ 1432 					GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1433 					GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1434 					TcpMonitorOut: void (), <./alias/alias.c 276>
+ 1435 						GetStateOut: int (), <./alias/alias_db.c 2193>
+ 1436 						SetStateOut: void (), <./alias/alias_db.c 2163>
+ 1437 							abort: <>
+ 1438 						DoMSSClamp: 1323
+ 1439 					ntohs: <>
+ 1440 					AliasHandleFtpOut: void (), <./alias/alias_ftp.c 132>
+ 1441 						ntohs: <>
+ 1442 						GetLastLineCrlfTermed: int (), <./alias/alias_db.c 2485>
+ 1443 						ParseFtpPortCommand: int (), <./alias/alias_ftp.c 192>
+ 1444 							isspace: <>
+ 1445 							isdigit: <>
+ 1446 							htonl: <>
+ 1447 						ParseFtpEprtCommand: int (), <./alias/alias_ftp.c 258>
+ 1448 							isspace: <>
+ 1449 							isdigit: <>
+ 1450 							htonl: <>
+ 1451 						ParseFtp227Reply: int (), <./alias/alias_ftp.c 345>
+ 1452 							isdigit: <>
+ 1453 							htonl: <>
+ 1454 						ParseFtp229Reply: int (), <./alias/alias_ftp.c 411>
+ 1455 							isdigit: <>
+ 1456 						NewFtpMessage: void (), <./alias/alias_ftp.c 481>
+ 1457 							FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1750>
+ 1458 							GetDestAddress: struct in_addr (), <./alias/alias_db.c 2211>
+ 1459 							htons: <>
+ 1460 							PunchFWHole: 1373
+ 1461 							ntohs: <>
+ 1462 							GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1463 							GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1464 							snprintf: <>
+ 1465 							strlen: <>
+ 1466 							strncpy: <>
+ 1467 							SetAckModified: 1421
+ 1468 							GetDeltaSeqOut: 1422
+ 1469 							AddSeq: 1424
+ 1470 							DifferentialChecksum: 1226
+ 1471 							TcpChecksum: 1402
+ 1472 							fprintf: <>
+ 1473 						SetLastLineCrlfTermed: void (), <./alias/alias_db.c 2475>
+ 1474 					AliasHandleIrcOut: void (), <./alias/alias_irc.c 89>
+ 1475 						ntohs: <>
+ 1476 						DBprintf: <>
+ 1477 						isdigit: <>
+ 1478 						htons: <>
+ 1479 						htonl: <>
+ 1480 						FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1750>
+ 1481 						PunchFWHole: 1373
+ 1482 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1483 						snprintf: <>
+ 1484 						GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1485 						memcpy: <>
+ 1486 						SetAckModified: 1421
+ 1487 						GetDeltaSeqOut: 1422
+ 1488 						AddSeq: 1424
+ 1489 						DifferentialChecksum: 1226
+ 1490 						TcpChecksum: 1402
+ 1491 					AliasHandleRtspOut: void (), <./alias/alias_smedia.c 437>
+ 1492 						ntohs: <>
+ 1493 						strlen: <>
+ 1494 						memcmp: <>
+ 1495 						alias_rtsp_out: int (), <./alias/alias_smedia.c 169>
+ 1496 							p: <>
+ 1497 							ntohs: <>
+ 1498 							fprintf: <>
+ 1499 							search_string: int (), <./alias/alias_smedia.c 148>
+ 1500 								strlen: <>
+ 1501 							memcpy: <>
+ 1502 							strlen: <>
+ 1503 							ISDIGIT: <>
+ 1504 							htons: <>
+ 1505 							FindNewPortGroup: int (), <./alias/alias_db.c 824>
+ 1506 								ntohs: <>
+ 1507 								random: <>
+ 1508 								FindLinkIn: struct alias_link (), <./alias/alias_db.c 1505>
+ 1509 								htons: <>
+ 1510 								fprintf: <>
+ 1511 							FindAliasAddress: struct in_addr (), <./alias/alias_db.c 1968>
+ 1512 							FindRtspOut: struct alias_link (), <./alias/alias_db.c 1896>
+ 1513 							GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1514 							PunchFWHole: 1373
+ 1515 							snprintf: <>
+ 1516 							SetAckModified: 1421
+ 1517 							GetDeltaSeqOut: 1422
+ 1518 							AddSeq: 1424
+ 1519 							DifferentialChecksum: 1226
+ 1520 							TcpChecksum: 1402
+ 1521 						alias_pna_out: int (), <./alias/alias_smedia.c 390>
+ 1522 							memcpy: <>
+ 1523 							ntohs: <>
+ 1524 							FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1750>
+ 1525 							GetDestAddress: struct in_addr (), <./alias/alias_db.c 2211>
+ 1526 							PunchFWHole: 1373
+ 1527 							GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1528 							TcpChecksum: 1402
+ 1529 					AliasHandlePptpOut: void (), <./alias/alias_pptp.c 169>
+ 1530 						AliasVerifyPptp: 1293
+ 1531 						AddPptp: struct alias_link (), <./alias/alias_db.c 1804>
+ 1532 						GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 2201>
+ 1533 						GetDestAddress: struct in_addr (), <./alias/alias_db.c 2211>
+ 1534 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1535 						FindPptpOutByCallId: struct alias_link (), <./alias/alias_db.c 1820>
+ 1536 						GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1537 						ADJUST_CHECKSUM: <>
+ 1538 						SetDestCallId: 1305
+ 1539 						SetExpire: 1299
+ 1540 					GetAckModified: 1312
+ 1541 					GetDeltaSeqOut: 1422
+ 1542 					htonl: <>
+ 1543 					ntohl: <>
+ 1544 				AliasHandlePptpGreOut: int (), <./alias/alias_pptp.c 335>
+ 1545 					ntohl: <>
+ 1546 					FindPptpOutByPeerCallId: struct alias_link (), <./alias/alias_db.c 1840>
+ 1547 					GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1548 					DifferentialChecksum: 1226
+ 1549 				ProtoAliasOut: int (), <./alias/alias.c 798>
+ 1550 					FindProtoOut: struct alias_link (), <./alias/alias_db.c 1683>
+ 1551 					GetAliasAddress: struct in_addr (), <./alias/alias_db.c 2218>
+ 1552 					DifferentialChecksum: 1226
+ 1553 				FragmentOut: int (), <./alias/alias.c 1275>
+ 1554 					FindAliasAddress: struct in_addr (), <./alias/alias_db.c 1968>
+ 1555 					DifferentialChecksum: 1226
+ 1556 			PacketAliasIn: 1209
+ 1557 			SyslogPacket: void (), <./natd.tproj/natd.c 1268>
+ 1558 				syslog: <>
+ 1559 				FormatPacket: 1203
+ 1560 			ntohs: <>
+ 1561 			FlushPacketBuffer: void (), <./natd.tproj/natd.c 806>
+ 1562 				sendto: <>
+ 1563 				sockaddr: <>
+ 1564 				SendNeedFragIcmp: int (), <./natd.tproj/icmp.c 60>
+ 1565 					ntohs: <>
+ 1566 					htons: <>
+ 1567 					memcpy: <>
+ 1568 					PacketAliasInternetChecksum: 1401
+ 1569 					PacketAliasIn: 1209
+ 1570 					sendto: <>
+ 1571 					sockaddr: <>
+ 1572 					Warn: 1120
+ 1573 				snprintf: <>
+ 1574 				Warn: 1120
+ 1575 		FD_ZERO: <>
+ 1576 		FD_SET: <>
+ 1577 		select: <>
+ 1578 		DumpInfo: void (), <./alias/alias_db.c 3066>
+ 1579 			LIST_FIRST: <>
+ 1580 			snprintf: <>
+ 1581 			inet_ntoa: <>
+ 1582 			ntohs: <>
+ 1583 			syslog: <>
+ 1584 			LIST_NEXT: <>
+ 1585 		FD_ISSET: <>
+ 1586 		FlushPacketBuffer: 1561
+ 1587 		HandleRoutingInfo: void (), <./natd.tproj/natd.c 847>
+ 1588 			read: <>
+ 1589 			Warn: 1120
+ 1590 			printf: <>
+ 1591 		DiscardIncomingPackets: void (), <./natd.tproj/natd.c 878>
+ 1592 			recvfrom: <>
+ 1593 			sockaddr: <>
+ 1594 		HandlePortMap: void (), <./natd.tproj/natd.c 1178>
+ 1595 			recvfrom: <>
+ 1596 			sockaddr: <>
+ 1597 			printf: <>
+ 1598 			inet_ntoa: <>
+ 1599 			SendPortMapResponse: void (), <./natd.tproj/natd.c 955>
+ 1600 				htons: <>
+ 1601 				htonl: <>
+ 1602 				getuptime: uint32_t (), <./natd.tproj/natd.c 901>
+ 1603 					mach_absolute_time: <>
+ 1604 				sendto: <>
+ 1605 				sockaddr: <>
+ 1606 				printf: <>
+ 1607 			SendPublicAddress: void (), <./natd.tproj/natd.c 971>
+ 1608 				htonl: <>
+ 1609 				getuptime: 1602
+ 1610 				sendto: <>
+ 1611 				sockaddr: <>
+ 1612 				printf: <>
+ 1613 			DoPortMapping: void (), <./natd.tproj/natd.c 1135>
+ 1614 				FindAliasPortOut: int (), <./alias/alias_db.c 1993>
+ 1615 					printf: <>
+ 1616 					inet_ntoa: <>
+ 1617 					ntohs: <>
+ 1618 					LIST_FIRST: <>
+ 1619 					snprintf: <>
+ 1620 					LIST_NEXT: <>
+ 1621 					StartPointOut: u_int (), <./alias/alias_db.c 484>
+ 1622 					LIST_FOREACH: <>
+ 1623 					FindAliasAddress: struct in_addr (), <./alias/alias_db.c 1968>
+ 1624 					AddLink: struct alias_link (), <./alias/alias_db.c 1090>
+ 1625 					SetExpire: 1299
+ 1626 					GetAliasPort: u_short (), <./alias/alias_db.c 2249>
+ 1627 				ntohl: <>
+ 1628 				SendPublicPortResponse: void (), <./natd.tproj/natd.c 991>
+ 1629 					bzero: <>
+ 1630 					htons: <>
+ 1631 					htonl: <>
+ 1632 					getuptime: 1602
+ 1633 					sendto: <>
+ 1634 					sockaddr: <>
+ 1635 					printf: <>
+ 1636 		unlink: <>
+ 1637 		WSAStartup: <>
+ 1638 		MAKEWORD: <>
+ 1639 		mnc_error: void (), <./mnc.tproj/mnc_error.c 71>
+ 1640 			va_start: <>
+ 1641 			fprintf: <>
+ 1642 			exit: <>
+ 1643 			vfprintf: <>
+ 1644 			va_end: <>
+ 1645 		parse_arguments: struct mnc_configuration (), <./mnc.tproj/mnc_opts.c 73>
+ 1646 		multicast_setup_listen: int (), <./mnc.tproj/mnc_multicast.c 271>
+ 1647 			bind: <>
+ 1648 			mnc_warning: void (), <./mnc.tproj/mnc_error.c 48>
+ 1649 				va_start: <>
+ 1650 				fprintf: <>
+ 1651 				exit: <>
+ 1652 				vfprintf: <>
+ 1653 				va_end: <>
+ 1654 			sockaddr: <>
+ 1655 			setsockopt: <>
+ 1656 			mnc_join_ipv6_ssm: int (), <./mnc.tproj/mnc_multicast.c 118>
+ 1657 				mnc_warning: 1648
+ 1658 			mnc_join_ipv4_ssm: int (), <./mnc.tproj/mnc_multicast.c 109>
+ 1659 				inet_addr: <>
+ 1660 				mnc_warning: 1648
+ 1661 				htonl: <>
+ 1662 				setsockopt: <>
+ 1663 				strerror: <>
+ 1664 			mnc_join_ipv6_asm: int (), <./mnc.tproj/mnc_multicast.c 212>
+ 1665 				mnc_warning: 1648
+ 1666 			mnc_join_ipv4_asm: int (), <./mnc.tproj/mnc_multicast.c 175>
+ 1667 				inet_addr: <>
+ 1668 				mnc_warning: 1648
+ 1669 				htonl: <>
+ 1670 				setsockopt: <>
+ 1671 				strerror: <>
+ 1672 		write: <>
+ 1673 		multicast_setup_send: int (), <./mnc.tproj/mnc_multicast.c 369>
+ 1674 			bind: <>
+ 1675 			mnc_warning: 1648
+ 1676 			setsockopt: <>
+ 1677 		read: <>
+ 1678 		sendto: <>
+ 1679 		TAILQ_INIT: <>
+ 1680 		strcasecmp: <>
+ 1681 		get_policy: void (), <./ip6addrctl.tproj/ip6addrctl.c 110>
+ 1682 			sysctl: <>
+ 1683 			err: 3
+ 1684 			printf: <>
+ 1685 			malloc: <>
+ 1686 			errx: <>
+ 1687 			TAILQ_INSERT_TAIL: <>
+ 1688 			free: <>
+ 1689 		dump_policy: void (), <./ip6addrctl.tproj/ip6addrctl.c 148>
+ 1690 			TAILQ_FIRST: <>
+ 1691 			TAILQ_NEXT: <>
+ 1692 			printf: <>
+ 1693 			getnameinfo: <>
+ 1694 			sockaddr: <>
+ 1695 			warnx: <>
+ 1696 			mask2plen: int (), <./ip6addrctl.tproj/ip6addrctl.c 337>
+ 1697 				p: <>
+ 1698 			strlen: <>
+ 1699 			snprintf: <>
+ 1700 		add_policy: void (), <./ip6addrctl.tproj/ip6addrctl.c 397>
+ 1701 			memset: <>
+ 1702 			parse_prefix: <>
+ 1703 			errx: <>
+ 1704 			atoi: <>
+ 1705 			socket: <>
+ 1706 			err: 3
+ 1707 			ioctl: <>
+ 1708 			close: <>
+ 1709 		delete_policy: void (), <./ip6addrctl.tproj/ip6addrctl.c 419>
+ 1710 			memset: <>
+ 1711 			parse_prefix: <>
+ 1712 			errx: <>
+ 1713 			socket: <>
+ 1714 			err: 3
+ 1715 			ioctl: <>
+ 1716 			close: <>
+ 1717 		flush_policy: void (), <./ip6addrctl.tproj/ip6addrctl.c 439>
+ 1718 			socket: <>
+ 1719 			err: 3
+ 1720 			TAILQ_FIRST: <>
+ 1721 			TAILQ_NEXT: <>
+ 1722 			ioctl: <>
+ 1723 			warn: <>
+ 1724 			close: <>
+ 1725 		make_policy_fromfile: void (), <./ip6addrctl.tproj/ip6addrctl.c 204>
+ 1726 			fopen: <>
+ 1727 			err: 3
+ 1728 			fgets: <>
+ 1729 			memset: <>
+ 1730 			SKIP_WHITE: <>
+ 1731 			parse_prefix: <>
+ 1732 			SKIP_WORD: <>
+ 1733 			atoi: <>
+ 1734 			malloc: <>
+ 1735 			errx: <>
+ 1736 			TAILQ_INSERT_TAIL: <>
+ 1737 			fclose: <>
+ 1738 		set_policy: void (), <./ip6addrctl.tproj/ip6addrctl.c 319>
+ 1739 		strtoul: <>
+ 1740 		fprintf: <>
+ 1741 		getipnodebyname: <>
+ 1742 		inet6_rth_init: <>
+ 1743 		inet6_rth_add: <>
+ 1744 		inet6_rthdr_init: <>
+ 1745 		inet6_rthdr_add: <>
+ 1746 		freehostent: <>
+ 1747 		seteuid: <>
+ 1748 		getaddrinfo: <>
+ 1749 		gai_strerror: <>
+ 1750 		strdup: <>
+ 1751 		getnameinfo: <>
+ 1752 		strlcpy: <>
+ 1753 		bzero: <>
+ 1754 		CMSG_SPACE: <>
+ 1755 		inet6_rthdr_lasthop: <>
+ 1756 		freeaddrinfo: <>
+ 1757 		bcopy: <>
+ 1758 		inet6_rthdr_getaddr: <>
+ 1759 		getsockname: <>
+ 1760 		IN6_ARE_ADDR_EQUAL: <>
+ 1761 		fputs: <>
+ 1762 		init_all: void (), <./rarpd.tproj/rarpd.c 236>
+ 1763 			socket: <>
+ 1764 			err: 3
+ 1765 			strerror: <>
+ 1766 			ioctl: <>
+ 1767 			init_one: void (), <./rarpd.tproj/rarpd.c 213>
+ 1768 				malloc: <>
+ 1769 				err: 3
+ 1770 				strerror: <>
+ 1771 				rarp_open: int (), <./rarpd.tproj/rarpd.c 305>
+ 1772 					BPF_STMT: <>
+ 1773 					BPF_JUMP: <>
+ 1774 					bpf_open: int (), <./rarpd.tproj/rarpd.c 282>
+ 1775 						snprintf: <>
+ 1776 						open: <>
+ 1777 						err: 3
+ 1778 						strerror: <>
+ 1779 					ioctl: <>
+ 1780 					err: 3
+ 1781 					strerror: <>
+ 1782 					strncpy: <>
+ 1783 				lookup_eaddr: void (), <./rarpd.tproj/rarpd.c 574>
+ 1784 					socket: <>
+ 1785 					err: 3
+ 1786 					strerror: <>
+ 1787 					ioctl: <>
+ 1788 					strncmp: <>
+ 1789 					bcopy: <>
+ 1790 					LLADDR: <>
+ 1791 					fprintf: <>
+ 1792 				lookup_ipaddr: void (), <./rarpd.tproj/rarpd.c 626>
+ 1793 					socket: <>
+ 1794 					err: 3
+ 1795 					strerror: <>
+ 1796 					strncpy: <>
+ 1797 					ioctl: <>
+ 1798 					perror: <>
+ 1799 					exit: <>
+ 1800 					ipaddrtonetmask: in_addr_t (), <./rarpd.tproj/rarpd.c 761>
+ 1801 						IN_CLASSA: <>
+ 1802 						IN_CLASSB: <>
+ 1803 						IN_CLASSC: <>
+ 1804 						err: 3
+ 1805 					close: <>
+ 1806 			close: <>
+ 1807 		init_one: 1767
+ 1808 		setpgid: <>
+ 1809 		rarp_loop: void (), <./rarpd.tproj/rarpd.c 400>
+ 1810 			err: 3
+ 1811 			ioctl: <>
+ 1812 			strerror: <>
+ 1813 			malloc: <>
+ 1814 			FD_ZERO: <>
+ 1815 			FD_SET: <>
+ 1816 			select: <>
+ 1817 			FD_ISSET: <>
+ 1818 			read: <>
+ 1819 			lseek: <>
+ 1820 			rarp_check: int (), <./rarpd.tproj/rarpd.c 362>
+ 1821 				debug: <>
+ 1822 					va_start: <>
+ 1823 					fprintf: <>
+ 1824 					vfprintf: <>
+ 1825 					va_end: <>
+ 1826 				err: 3
+ 1827 				ntohs: <>
+ 1828 				bcmp: <>
+ 1829 			rarp_process: void (), <./rarpd.tproj/rarpd.c 536>
+ 1830 				ether_ntohost: <>
+ 1831 				gethostbyname: <>
+ 1832 				err: 3
+ 1833 				choose_ipaddr: in_addr_t (), <./rarpd.tproj/rarpd.c 520>
+ 1834 				inet_ntoa: <>
+ 1835 				rarp_bootable: int (), <./rarpd.tproj/rarpd.c 485>
+ 1836 					snprintf: <>
+ 1837 					rewinddir: <>
+ 1838 					chdir: <>
+ 1839 					err: 3
+ 1840 					strerror: <>
+ 1841 					opendir: <>
+ 1842 					readdir: <>
+ 1843 					strncmp: <>
+ 1844 				htonl: <>
+ 1845 				rarp_reply: void (), <./rarpd.tproj/rarpd.c 725>
+ 1846 					update_arptab: void (), <./rarpd.tproj/rarpd.c 664>
+ 1847 						bcopy: <>
+ 1848 						socket: <>
+ 1849 						ioctl: <>
+ 1850 						err: 3
+ 1851 						strerror: <>
+ 1852 						close: <>
+ 1853 					htons: <>
+ 1854 					bcopy: <>
+ 1855 					write: <>
+ 1856 					err: 3
+ 1857 			BPF_WORDALIGN: <>
+ 1858 		strlcat: <>
+ 1859 		usage: void (), <./ifconfig.tproj/ifconfig.c 160>
+ 1860 			strlcat: <>
+ 1861 			fprintf: <>
+ 1862 			exit: <>
+ 1863 		af_getbyname: struct afswtch (), <./ifconfig.tproj/ifconfig.c 393>
+ 1864 		ifmaybeload: void (), <./ifconfig.tproj/ifconfig.c 1288>
+ 1865 			strlcpy: <>
+ 1866 			isdigit: <>
+ 1867 			kldnext: <>
+ 1868 			kldfirstmod: <>
+ 1869 			modfnext: <>
+ 1870 			modstat: <>
+ 1871 			strchr: <>
+ 1872 			strncmp: <>
+ 1873 			strlen: <>
+ 1874 			kldload: <>
+ 1875 		if_nametoindex: <>
+ 1876 		ifconfig: int (), <./ifconfig.tproj/ifconfig.c 500>
+ 1877 			strncpy: <>
+ 1878 			af_getbyname: struct afswtch (), <./ifconfig.tproj/ifconfig.c 393>
+ 1879 			socket: <>
+ 1880 			err: 3
+ 1881 			p: <>
+ 1882 			cmd_lookup: const struct cmd * (), <./ifconfig.tproj/ifconfig.c 458>
+ 1883 			c_func: <>
+ 1884 			c_func2: <>
+ 1885 			errx: <>
+ 1886 			close: <>
+ 1887 			warnx: <>
+ 1888 			ioctl: <>
+ 1889 			Perror: void (), <./ifconfig.tproj/ifconfig.c 1238>
+ 1890 				errx: <>
+ 1891 				err: 3
+ 1892 		getifaddrs: <>
+ 1893 		strncpy: <>
+ 1894 		warnx: <>
+ 1895 		status: void (), <./ifconfig.tproj/ifconfig.c 969>
+ 1896 			af_getbyname: struct afswtch (), <./ifconfig.tproj/ifconfig.c 393>
+ 1897 			strncpy: <>
+ 1898 			socket: <>
+ 1899 			err: 3
+ 1900 			printf: <>
+ 1901 			printb: void (), <./netstat.tproj/mcast.c 835>
+ 1902 				printf: <>
+ 1903 				putchar: <>
+ 1904 			ioctl: <>
+ 1905 			if_nametoindex: <>
+ 1906 			putchar: <>
+ 1907 			tunnel_status: void (), <./ifconfig.tproj/ifconfig.c 1232>
+ 1908 				af_all_tunnel_status: void (), <./ifconfig.tproj/ifconfig.c 432>
+ 1909 					howmany: <>
+ 1910 					memset: <>
+ 1911 					isset: <>
+ 1912 					setbit: <>
+ 1913 			strcmp: <>
+ 1914 			p: <>
+ 1915 			af_getbyfamily: struct afswtch (), <./ifconfig.tproj/ifconfig.c 404>
+ 1916 			sockaddr: <>
+ 1917 			af_other_status: void (), <./ifconfig.tproj/ifconfig.c 415>
+ 1918 				howmany: <>
+ 1919 				memset: <>
+ 1920 				isset: <>
+ 1921 				setbit: <>
+ 1922 			bzero: <>
+ 1923 			sched2str: char * (), <./ifconfig.tproj/ifconfig.c 1451>
+ 1924 			tl2str: char * (), <./ifconfig.tproj/ifconfig.c 1486>
+ 1925 			bps_to_str: char * (), <./ifconfig.tproj/ifconfig.c 1207>
+ 1926 				snprintf: <>
+ 1927 			sysctl: <>
+ 1928 			close: <>
+ 1929 		freeifaddrs: <>
+ 1930 		SETFUNC: <>
+ 1931 		search_ext: int (), <./arp.tproj/arp.c 1010>
+ 1932 			sysctl: <>
+ 1933 			err: 3
+ 1934 			realloc: <>
+ 1935 			free: <>
+ 1936 			errx: <>
+ 1937 			SA_SIZE: <>
+ 1938 			if_indextoname: <>
+ 1939 			strcmp: <>
+ 1940 		print_entry_ext: void (), <./arp.tproj/arp.c 1067>
+ 1941 			gethostbyaddr: <>
+ 1942 			inet_ntoa: <>
+ 1943 			printf: <>
+ 1944 			print_lladdr: char * (), <./arp.tproj/arp.c 632>
+ 1945 				bzero: <>
+ 1946 				LLADDR: <>
+ 1947 				snprintf: <>
+ 1948 			gettimeofday: <>
+ 1949 			sec2str: char * (), <./arp.tproj/arp.c 979>
+ 1950 				snprintf: <>
+ 1951 			if_indextoname: <>
+ 1952 			snprintf: <>
+ 1953 		search: int (), <./arp.tproj/arp.c 572>
+ 1954 			sysctl: <>
+ 1955 			err: 3
+ 1956 			realloc: <>
+ 1957 			free: <>
+ 1958 			errx: <>
+ 1959 			SA_SIZE: <>
+ 1960 			if_indextoname: <>
+ 1961 			strcmp: <>
+ 1962 		print_entry: void (), <./arp.tproj/arp.c 652>
+ 1963 			gethostbyaddr: <>
+ 1964 			printf: <>
+ 1965 			inet_ntoa: <>
+ 1966 			print_lladdr: 1944
+ 1967 			ether_ntoa: <>
+ 1968 			LLADDR: <>
+ 1969 			link_ntoa: <>
+ 1970 			if_indextoname: <>
+ 1971 			SA_SIZE: <>
+ 1972 			SDL_ISO88025: <>
+ 1973 			ntohs: <>
+ 1974 			TR_RCF_RIFLEN: <>
+ 1975 		nuke_entry: void (), <./arp.tproj/arp.c 755>
+ 1976 			snprintf: <>
+ 1977 			inet_ntoa: <>
+ 1978 			delete: int (), <./arp.tproj/arp.c 531>
+ 1979 				getaddr: struct sockaddr_inarp (), <./arp.tproj/arp.c 338>
+ 1980 				rtmsg: 141
+ 1981 				warn: <>
+ 1982 				SA_SIZE: <>
+ 1983 				valid_type: int (), <./arp.tproj/arp.c 362>
+ 1984 				fprintf: <>
+ 1985 				printf: <>
+ 1986 				inet_ntoa: <>
+ 1987 		strncmp: <>
+ 1988 		autoifprobe: char ** (), <./rtsol.tproj/rtsold.c 736>
+ 1989 			errx: <>
+ 1990 			getifaddrs: <>
+ 1991 			strcmp: <>
+ 1992 			warnx: <>
+ 1993 			strncpy: <>
+ 1994 			freeifaddrs: <>
+ 1995 		setlogmask: <>
+ 1996 		LOG_UPTO: <>
+ 1997 		srandom: <>
+ 1998 		time: <>
+ 1999 		getinet6sysctl: int (), <./rtsol.tproj/if.c 342>
+ 2000 			sysctl: <>
+ 2001 		rtsold_set_dump_file: void (), <./rtsol.tproj/rtsold.c 689>
+ 2002 		sockopen: int (), <./rtsol.tproj/rtsol.c 74>
+ 2003 			CMSG_SPACE: <>
+ 2004 			malloc: <>
+ 2005 			warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2006 			memset: <>
+ 2007 			inet_pton: <>
+ 2008 			socket: <>
+ 2009 			strerror: <>
+ 2010 			setsockopt: <>
+ 2011 			exit: <>
+ 2012 			ICMP6_FILTER_SETBLOCKALL: <>
+ 2013 			ICMP6_FILTER_SETPASS: <>
+ 2014 		rtsock_open: int (), <./rtsol.tproj/rtsock.c 83>
+ 2015 			socket: <>
+ 2016 		ifinit: int (), <./rtsol.tproj/if.c 116>
+ 2017 		ifconfig: int (), <./rtsol.tproj/rtsold.c 321>
+ 2018 			if_nametosdl: struct sockaddr_dl (), <./rtadvd.tproj/if.c 85>
+ 2019 			warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2020 			find_ifinfo: struct ifinfo (), <./rtsol.tproj/rtsold.c 419>
+ 2021 			free: <>
+ 2022 			malloc: <>
+ 2023 			memset: <>
+ 2024 			strncpy: <>
+ 2025 			make_packet: int (), <./rtsol.tproj/rtsold.c 431>
+ 2026 				lladdropt_length: int (), <./rtadvd.tproj/if.c 207>
+ 2027 					ROUNDUP8: <>
+ 2028 				warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2029 				malloc: <>
+ 2030 				lladdropt_fill: void (), <./rtadvd.tproj/if.c 218>
+ 2031 					ROUNDUP8: <>
+ 2032 					memcpy: <>
+ 2033 					LLADDR: <>
+ 2034 					warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2035 					exit: <>
+ 2036 					syslog: <>
+ 2037 			interface_status: int (), <./rtsol.tproj/if.c 177>
+ 2038 				memset: <>
+ 2039 				strncpy: <>
+ 2040 				ioctl: <>
+ 2041 				warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2042 				strerror: <>
+ 2043 			interface_up: int (), <./rtsol.tproj/if.c 124>
+ 2044 				strncpy: <>
+ 2045 				ioctl: <>
+ 2046 				warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2047 				strerror: <>
+ 2048 				get_llflag: int (), <./rtsol.tproj/if.c 360>
+ 2049 					socket: <>
+ 2050 					warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2051 					strerror: <>
+ 2052 					exit: <>
+ 2053 					getifaddrs: <>
+ 2054 					strlen: <>
+ 2055 					strncmp: <>
+ 2056 					IN6_IS_ADDR_LINKLOCAL: <>
+ 2057 					memset: <>
+ 2058 					strlcpy: <>
+ 2059 					memcpy: <>
+ 2060 					ioctl: <>
+ 2061 					freeifaddrs: <>
+ 2062 					close: <>
+ 2063 					if_maxindex: unsigned int (), <./rtsol.tproj/if.c 473>
+ 2064 						if_nameindex: <>
+ 2065 						if_freenameindex: <>
+ 2066 					malloc: <>
+ 2067 					free: <>
+ 2068 			rtsol_timer_update: void (), <./rtsol.tproj/rtsold.c 573>
+ 2069 				bzero: <>
+ 2070 				random: <>
+ 2071 				arc4random: <>
+ 2072 				warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2073 				TIMEVAL_EQ: <>
+ 2074 				gettimeofday: <>
+ 2075 				TIMEVAL_ADD: void (), <./rtsol.tproj/rtsold.c 655>
+ 2076 		probe_init: int (), <./rtsol.tproj/probe.c 96>
+ 2077 			CMSG_SPACE: <>
+ 2078 			malloc: <>
+ 2079 			warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2080 			socket: <>
+ 2081 			strerror: <>
+ 2082 			shutdown: <>
+ 2083 		daemon: <>
+ 2084 		warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2085 		rtsold_dump_file: void (), <./rtsol.tproj/dump.c 129>
+ 2086 			fopen: <>
+ 2087 			warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2088 			strerror: <>
+ 2089 			dump_interface_status: void (), <./rtsol.tproj/dump.c 89>
+ 2090 				gettimeofday: <>
+ 2091 				fprintf: <>
+ 2092 				sec2str: char * (), <./rtsol.tproj/dump.c 144>
+ 2093 					snprintf: <>
+ 2094 			fclose: <>
+ 2095 		rtsol_check_timer: struct timeval (), <./rtsol.tproj/rtsold.c 469>
+ 2096 		rtsock_input: int (), <./rtsol.tproj/rtsock.c 90>
+ 2097 			offsetof: <>
+ 2098 			read: <>
+ 2099 			warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2100 		rtsol_input: void (), <./rtsol.tproj/rtsol.c 225>
+ 2101 			recvmsg: <>
+ 2102 			warnmsg: , <./rtsol.tproj/rtsold.c 709>
+ 2103 			strerror: <>
+ 2104 			CMSG_FIRSTHDR: <>
+ 2105 			CMSG_NXTHDR: <>
+ 2106 			CMSG_LEN: 904
+ 2107 			CMSG_DATA: <>
+ 2108 			inet_ntop: <>
+ 2109 			if_indextoname: <>
+ 2110 			IN6_IS_ADDR_LINKLOCAL: <>
+ 2111 			find_ifinfo: struct ifinfo (), <./rtsol.tproj/rtsold.c 419>
+ 2112 			rtsol_timer_update: 2068
+ 2113 		isalpha: <>
+ 2114 		name2protox: struct protox (), <./netstat.tproj/main.c 613>
+ 2115 		isdigit: <>
+ 2116 		mbpr: void (), <./netstat.tproj/mbuf.c 140>
+ 2117 			mbpr_getdata: int (), <./netstat.tproj/mbuf.c 377>
+ 2118 				fprintf: <>
+ 2119 				sysctlbyname: <>
+ 2120 				calloc: <>
+ 2121 				free: <>
+ 2122 			printf: <>
+ 2123 			mbpr_state: const char * (), <./netstat.tproj/mbuf.c 335>
+ 2124 			mbpr_mem: const char * (), <./netstat.tproj/mbuf.c 360>
+ 2125 				snprintf: <>
+ 2126 			free: <>
+ 2127 		intpr_ri: void (), <./netstat.tproj/if.c 1070>
+ 2128 			if_nametoindex: <>
+ 2129 			printf: <>
+ 2130 			exit: <>
+ 2131 			sysctl: <>
+ 2132 			malloc: <>
+ 2133 			free: <>
+ 2134 			llreach_sysctl: void (), <./netstat.tproj/if.c 1128>
+ 2135 				bzero: <>
+ 2136 				sysctlnametomib: <>
+ 2137 				perror: <>
+ 2138 				sysctl: <>
+ 2139 				malloc: <>
+ 2140 				free: <>
+ 2141 				gettimeofday: <>
+ 2142 				if_indextoname: <>
+ 2143 				snprintf: <>
+ 2144 				printf: <>
+ 2145 				ether_ntoa: <>
+ 2146 				sec2str: char * (), <./netstat.tproj/if.c 1039>
+ 2147 					snprintf: <>
+ 2148 				fprintf: <>
+ 2149 		intpr: void (), <./netstat.tproj/if.c 267>
+ 2150 			timer: void (), <./kdumpd.tproj/kdumpd.c 455>
+ 2151 				longjmp: <>
+ 2152 			sidewaysintpr: void (), <./netstat.tproj/if.c 630>
+ 2153 				sysctl: <>
+ 2154 				err: 3
+ 2155 				malloc: <>
+ 2156 				strcmp: <>
+ 2157 				calloc: <>
+ 2158 				if_nametoindex: <>
+ 2159 				snprintf: <>
+ 2160 				signal: <>
+ 2161 				catchalarm: void (), <./netstat.tproj/if.c 1033>
+ 2162 				setitimer: <>
+ 2163 				printf: <>
+ 2164 				putchar: <>
+ 2165 				fflush: <>
+ 2166 				free: <>
+ 2167 				sigemptyset: <>
+ 2168 				sigaddset: <>
+ 2169 				sigprocmask: <>
+ 2170 				sigsuspend: <>
+ 2171 			if_nametoindex: <>
+ 2172 			sysctl: <>
+ 2173 			malloc: <>
+ 2174 			printf: <>
+ 2175 			exit: <>
+ 2176 			free: <>
+ 2177 			putchar: <>
+ 2178 			bzero: <>
+ 2179 			strncpy: <>
+ 2180 			index: <>
+ 2181 			err: 3
+ 2182 			get_rti_info: size_t (), <./netstat.tproj/if.c 176>
+ 2183 				sockaddr: <>
+ 2184 				NEXT_SA: <>
+ 2185 			sockaddr: <>
+ 2186 			memcpy: <>
+ 2187 			netname: char * (), <./netstat.tproj/route.c 538>
+ 2188 				ntohl: <>
+ 2189 				forgemask: uint32_t (), <./netstat.tproj/route.c 492>
+ 2190 					IN_CLASSA: <>
+ 2191 					IN_CLASSB: <>
+ 2192 				getnetbyaddr: <>
+ 2193 				strncpy: <>
+ 2194 				snprintf: <>
+ 2195 				C: <>
+ 2196 				domask: void (), <./netstat.tproj/route.c 506>
+ 2197 					forgemask: 2189
+ 2198 					snprintf: <>
+ 2199 				strlen: <>
+ 2200 			ntohl: <>
+ 2201 			routename: char * (), <./netstat.tproj/route.c 464>
+ 2202 				gethostbyaddr: <>
+ 2203 				strncpy: <>
+ 2204 				ntohl: <>
+ 2205 				snprintf: <>
+ 2206 				C: <>
+ 2207 			netname6: char * (), <./netstat.tproj/route.c 594>
+ 2208 				p: <>
+ 2209 				fprintf: <>
+ 2210 				IN6_IS_ADDR_UNSPECIFIED: <>
+ 2211 				getnameinfo: <>
+ 2212 				sockaddr: <>
+ 2213 				snprintf: <>
+ 2214 				strlen: <>
+ 2215 			inet_ntop: <>
+ 2216 			LLADDR: <>
+ 2217 			snprintf: <>
+ 2218 			show_stat: void (), <./netstat.tproj/if.c 161>
+ 2219 				snprintf: <>
+ 2220 				printf: <>
+ 2221 			multipr: void (), <./netstat.tproj/if.c 197>
+ 2222 				get_rti_info: 2182
+ 2223 				sockaddr: <>
+ 2224 				routename: 2201
+ 2225 				memcpy: <>
+ 2226 				IN6_IS_ADDR_LINKLOCAL: <>
+ 2227 				IN6_IS_ADDR_MC_NODELOCAL: <>
+ 2228 				IN6_IS_ADDR_MC_LINKLOCAL: <>
+ 2229 				ntohs: <>
+ 2230 				printf: <>
+ 2231 				inet_ntop: <>
+ 2232 				ether_ntoa: <>
+ 2233 				LLADDR: <>
+ 2234 		rt_stats: void (), <./netstat.tproj/route.c 682>
+ 2235 			sysctl: <>
+ 2236 			printf: <>
+ 2237 			p: <>
+ 2238 			plural: char * (), <./netstat.tproj/main.c 583>
+ 2239 		routepr: void (), <./netstat.tproj/route.c 142>
+ 2240 			printf: <>
+ 2241 			ntreestuff: void (), <./netstat.tproj/route.c 229>
+ 2242 				sysctl: <>
+ 2243 				err: 3
+ 2244 				malloc: <>
+ 2245 				np_rtentry: void (), <./netstat.tproj/route.c 275>
+ 2246 					sockaddr: <>
+ 2247 					pr_family: void (), <./netstat.tproj/route.c 160>
+ 2248 						printf: <>
+ 2249 					pr_rthdr: void (), <./ping6.tproj/ping6.c 2060>
+ 2250 						printf: <>
+ 2251 						WID_DST: <>
+ 2252 						WID_GW: <>
+ 2253 						WID_IF: <>
+ 2254 						inet6_rth_segments: <>
+ 2255 						CMSG_SPACE: <>
+ 2256 						inet6_rth_space: <>
+ 2257 						warnx: <>
+ 2258 						inet6_rth_getaddr: <>
+ 2259 						inet_ntop: <>
+ 2260 						strlcpy: <>
+ 2261 						putchar: <>
+ 2262 					get_rtaddrs: void (), <./netstat.tproj/route.c 260>
+ 2263 						sockaddr: <>
+ 2264 						ROUNDUP: <>
+ 2265 					bzero: <>
+ 2266 					bcopy: <>
+ 2267 					p_sockaddr: void (), <./netstat.tproj/route.c 344>
+ 2268 						ntohl: <>
+ 2269 						routename: 2201
+ 2270 						netname: 2187
+ 2271 						IN6_IS_ADDR_LINKLOCAL: <>
+ 2272 						IN6_IS_ADDR_MC_NODELOCAL: <>
+ 2273 						IN6_IS_ADDR_MC_LINKLOCAL: <>
+ 2274 						ntohs: <>
+ 2275 						routename6: char * (), <./netstat.tproj/route.c 658>
+ 2276 							getnameinfo: <>
+ 2277 							sockaddr: <>
+ 2278 						netname6: 2207
+ 2279 						snprintf: <>
+ 2280 						link_ntoa: <>
+ 2281 						printf: <>
+ 2282 					WID_DST: <>
+ 2283 					WID_GW: <>
+ 2284 					p_flags: void (), <./netstat.tproj/route.c 451>
+ 2285 						printf: <>
+ 2286 					printf: <>
+ 2287 					if_indextoname: <>
+ 2288 					WID_IF: <>
+ 2289 					time: <>
+ 2290 					putchar: <>
+ 2291 		aqstatpr: void (), <./netstat.tproj/if.c 1255>
+ 2292 			fprintf: <>
+ 2293 			if_nametoindex: <>
+ 2294 			malloc: <>
+ 2295 			socket: <>
+ 2296 			perror: <>
+ 2297 			free: <>
+ 2298 			bzero: <>
+ 2299 			strlcpy: <>
+ 2300 			signal: <>
+ 2301 			catchalarm: 2161
+ 2302 			setitimer: <>
+ 2303 			ioctl: <>
+ 2304 			printf: <>
+ 2305 			sched2str: char * (), <./netstat.tproj/if.c 1799>
+ 2306 			update_avg: void (), <./netstat.tproj/if.c 1678>
+ 2307 				p: <>
+ 2308 			print_cbqstats: void (), <./netstat.tproj/if.c 1406>
+ 2309 				printf: <>
+ 2310 				qtype2str: char * (), <./netstat.tproj/if.c 1738>
+ 2311 				qid2str: char * (), <./netstat.tproj/if.c 1834>
+ 2312 				rate2str: char * (), <./netstat.tproj/if.c 1933>
+ 2313 					snprintf: <>
+ 2314 				print_sfbstats: void (), <./netstat.tproj/if.c 1610>
+ 2315 					printf: <>
+ 2316 					nsec_to_str: char * (), <./netstat.tproj/if.c 1774>
+ 2317 						snprintf: <>
+ 2318 			print_hfscstats: void (), <./netstat.tproj/if.c 1469>
+ 2319 				printf: <>
+ 2320 				qtype2str: 2310
+ 2321 				qid2str: char * (), <./netstat.tproj/if.c 1834>
+ 2322 				rate2str: 2312
+ 2323 				print_sfbstats: 2314
+ 2324 			print_priqstats: void (), <./netstat.tproj/if.c 1438>
+ 2325 				printf: <>
+ 2326 				qtype2str: 2310
+ 2327 				qid2str: char * (), <./netstat.tproj/if.c 1834>
+ 2328 				rate2str: 2312
+ 2329 				print_sfbstats: 2314
+ 2330 			print_fairqstats: void (), <./netstat.tproj/if.c 1500>
+ 2331 				printf: <>
+ 2332 				qtype2str: 2310
+ 2333 				qid2str: char * (), <./netstat.tproj/if.c 1834>
+ 2334 				rate2str: 2312
+ 2335 				print_sfbstats: 2314
+ 2336 			print_tcqstats: void (), <./netstat.tproj/if.c 1531>
+ 2337 				printf: <>
+ 2338 				tcqslot2str: char * (), <./netstat.tproj/if.c 1878>
+ 2339 				qtype2str: 2310
+ 2340 				qid2str: char * (), <./netstat.tproj/if.c 1834>
+ 2341 				qstate2str: char * (), <./netstat.tproj/if.c 1910>
+ 2342 				rate2str: 2312
+ 2343 				print_sfbstats: 2314
+ 2344 			print_qfqstats: void (), <./netstat.tproj/if.c 1576>
+ 2345 				printf: <>
+ 2346 				qtype2str: 2310
+ 2347 				qid2str: char * (), <./netstat.tproj/if.c 1834>
+ 2348 				qstate2str: 2341
+ 2349 				rate2str: 2312
+ 2350 				print_sfbstats: 2314
+ 2351 			fflush: <>
+ 2352 			sigemptyset: <>
+ 2353 			sigaddset: <>
+ 2354 			sigprocmask: <>
+ 2355 			sigsuspend: <>
+ 2356 			close: <>
+ 2357 		rxpollstatpr: void (), <./netstat.tproj/if.c 1957>
+ 2358 			if_nametoindex: <>
+ 2359 			fprintf: <>
+ 2360 			bzero: <>
+ 2361 			signal: <>
+ 2362 			catchalarm: 2161
+ 2363 			setitimer: <>
+ 2364 			sysctl: <>
+ 2365 			err: 3
+ 2366 			printf: <>
+ 2367 			fflush: <>
+ 2368 			sigemptyset: <>
+ 2369 			sigaddset: <>
+ 2370 			sigprocmask: <>
+ 2371 			sigsuspend: <>
+ 2372 		mrt_stats: void (), <./netstat.tproj/mroute.c 185>
+ 2373 			sysctlbyname: <>
+ 2374 			printf: <>
+ 2375 			plural: char * (), <./netstat.tproj/main.c 583>
+ 2376 			plurales: char * (), <./netstat.tproj/main.c 589>
+ 2377 		mrt6_stats: void (), <./netstat.tproj/mroute6.c 243>
+ 2378 			sysctlbyname: <>
+ 2379 			printf: <>
+ 2380 			plural: char * (), <./netstat.tproj/main.c 583>
+ 2381 			plurales: char * (), <./netstat.tproj/main.c 589>
+ 2382 		mroutepr: void (), <./netstat.tproj/mroute.c 92>
+ 2383 			sysctlbyname: <>
+ 2384 			printf: <>
+ 2385 			routename: 2201
+ 2386 			malloc: <>
+ 2387 			free: <>
+ 2388 		mroute6pr: void (), <./netstat.tproj/mroute6.c 124>
+ 2389 			sysctlbyname: <>
+ 2390 			printf: <>
+ 2391 			if_indextoname: <>
+ 2392 			malloc: <>
+ 2393 			free: <>
+ 2394 			routename6: 2275
+ 2395 			IF_ISSET: <>
+ 2396 		ifmalist_dump: void (), <./netstat.tproj/mcast.c 268>
+ 2397 			getifmaddrs: <>
+ 2398 			err: 3
+ 2399 			ifmalist_dump_af: void (), <./netstat.tproj/mcast.c 154>
+ 2400 				fprintf: <>
+ 2401 				inet_ntoa: <>
+ 2402 				routename6: 2275
+ 2403 				ether_ntoa: <>
+ 2404 				addr2ascii: <>
+ 2405 				printf: <>
+ 2406 				strlcpy: <>
+ 2407 				link_ntoa: <>
+ 2408 				strchr: <>
+ 2409 			fputs: <>
+ 2410 			ifmalist_dump_mcstat: int (), <./netstat.tproj/mcast.c 291>
+ 2411 				if_nametoindex: <>
+ 2412 				getifaddrs: <>
+ 2413 				warn: <>
+ 2414 				fprintf: <>
+ 2415 				strlcpy: <>
+ 2416 				link_ntoa: <>
+ 2417 				strchr: <>
+ 2418 				strcmp: <>
+ 2419 				IN6_IS_ADDR_LINKLOCAL: <>
+ 2420 				sa_dl_equal: <>
+ 2421 				sa_equal: <>
+ 2422 				p: <>
+ 2423 				inet6_n2a: const char * (), <./netstat.tproj/mcast.c 802>
+ 2424 					memset: <>
+ 2425 					IN6_IS_ADDR_LINKLOCAL: <>
+ 2426 					IN6_IS_ADDR_MC_LINKLOCAL: <>
+ 2427 					IN6_IS_ADDR_MC_NODELOCAL: <>
+ 2428 					ntohs: <>
+ 2429 					getnameinfo: <>
+ 2430 					sockaddr: <>
+ 2431 				getnameinfo: <>
+ 2432 				printf: <>
+ 2433 				gai_strerror: <>
+ 2434 				sdl_addr_to_hex: const char * (), <./netstat.tproj/mcast.c 866>
+ 2435 					snprintf: <>
+ 2436 				sysctlnametomib: <>
+ 2437 				perror: <>
+ 2438 				sysctl: <>
+ 2439 				in_ifinfo: void (), <./netstat.tproj/mcast.c 542>
+ 2440 					printf: <>
+ 2441 					printb: 1901
+ 2442 				in6_ifinfo: void (), <./netstat.tproj/mcast.c 674>
+ 2443 					printf: <>
+ 2444 					printb: 1901
+ 2445 				inm_print_sources_sysctl: void (), <./netstat.tproj/mcast.c 587>
+ 2446 					p: <>
+ 2447 					sysctlnametomib: <>
+ 2448 					perror: <>
+ 2449 					sysctl: <>
+ 2450 					malloc: <>
+ 2451 					free: <>
+ 2452 					inm_mode: const char * (), <./netstat.tproj/mcast.c 575>
+ 2453 					printf: <>
+ 2454 					fprintf: <>
+ 2455 					inet_ntoa: <>
+ 2456 				in6m_print_sources_sysctl: void (), <./netstat.tproj/mcast.c 710>
+ 2457 					p: <>
+ 2458 					sysctlnametomib: <>
+ 2459 					perror: <>
+ 2460 					sysctl: <>
+ 2461 					malloc: <>
+ 2462 					free: <>
+ 2463 					inm_mode: 2452
+ 2464 					printf: <>
+ 2465 					inet_ntop: <>
+ 2466 					fprintf: <>
+ 2467 				freeifaddrs: <>
+ 2468 			freeifmaddrs: <>
+ 2469 		printproto: <>
+ 2470 		unixpr: void (), <./netstat.tproj/unix.c 97>
+ 2471 			snprintf: <>
+ 2472 			sysctlbyname: <>
+ 2473 			warn: <>
+ 2474 			malloc: <>
+ 2475 			free: <>
+ 2476 			unixdomainpr: <>
+ 2477 			printf: <>
+ 2478 		dnctl_readfile: void (), <./dnctl/dnctl.c 1182>
+ 2479 			getopt: <>
+ 2480 			fprintf: <>
+ 2481 			errx: <>
+ 2482 			fopen: <>
+ 2483 			err: 3
+ 2484 			pipe: <>
+ 2485 			fork: <>
+ 2486 			dup2: <>
+ 2487 			fileno: <>
+ 2488 			fclose: <>
+ 2489 			close: <>
+ 2490 			execvp: <>
+ 2491 			fdopen: <>
+ 2492 			kill: <>
+ 2493 			fgets: <>
+ 2494 			snprintf: <>
+ 2495 			setprogname: <>
+ 2496 			parse_args: int (), <./dnctl/dnctl.c 983>
+ 2497 				strlen: <>
+ 2498 				index: <>
+ 2499 				calloc: <>
+ 2500 				bcopy: <>
+ 2501 				strlcat: <>
+ 2502 				isatty: <>
+ 2503 				getopt: <>
+ 2504 				free_args: void (), <./dnctl/dnctl.c 969>
+ 2505 					free: <>
+ 2506 				help: void (), <./dnctl/dnctl.c 541>
+ 2507 					fprintf: <>
+ 2508 					exit: <>
+ 2509 				atoi: <>
+ 2510 				NEED1: <>
+ 2511 				isdigit: <>
+ 2512 				strncmp: <>
+ 2513 				config_pipe: void (), <./dnctl/dnctl.c 589>
+ 2514 					memset: <>
+ 2515 					isdigit: <>
+ 2516 					atoi: <>
+ 2517 					match_token: int (), <./dnctl/dnctl.c 225>
+ 2518 						strlen: <>
+ 2519 						bcmp: <>
+ 2520 					NEED1: <>
+ 2521 					strtod: <>
+ 2522 					strtoul: <>
+ 2523 					strncmp: <>
+ 2524 					n2mask: void (), <./dnctl/dnctl.c 161>
+ 2525 						p: <>
+ 2526 						memset: <>
+ 2527 					errx: <>
+ 2528 					strsep: <>
+ 2529 					strncpy: <>
+ 2530 					sysctlbyname: <>
+ 2531 					do_cmd: int (), <./dnctl/dnctl.c 200>
+ 2532 						socket: <>
+ 2533 						err: 3
+ 2534 						getsockopt: <>
+ 2535 						setsockopt: <>
+ 2536 					err: 3
+ 2537 				delete: void (), <./dnctl/dnctl.c 552>
+ 2538 					memset: <>
+ 2539 					isdigit: <>
+ 2540 					atoi: <>
+ 2541 					do_cmd: 2531
+ 2542 					warn: <>
+ 2543 					exit: <>
+ 2544 				flush: void (), <./dnctl/dnctl.c 940>
+ 2545 					printf: <>
+ 2546 					fflush: <>
+ 2547 					toupper: <>
+ 2548 					getc: <>
+ 2549 					feof: <>
+ 2550 					do_cmd: 2531
+ 2551 					err: 3
+ 2552 				list: void (), <./dnctl/dnctl.c 488>
+ 2553 					fprintf: <>
+ 2554 					realloc: <>
+ 2555 					err: 3
+ 2556 					do_cmd: 2531
+ 2557 					list_pipes: void (), <./dnctl/dnctl.c 417>
+ 2558 						strtoul: <>
+ 2559 						snprintf: <>
+ 2560 						print_flowset_parms: void (), <./dnctl/dnctl.c 382>
+ 2561 							snprintf: <>
+ 2562 							SCALE_VAL: <>
+ 2563 							printf: <>
+ 2564 						printf: <>
+ 2565 						list_queues: void (), <./dnctl/dnctl.c 269>
+ 2566 							printf: <>
+ 2567 							heapsort: <>
+ 2568 							sort_q: int (), <./dnctl/dnctl.c 237>
+ 2569 							IS_IP6_FLOW_ID: <>
+ 2570 							getprotobynumber: <>
+ 2571 							htonl: <>
+ 2572 							inet_ntoa: <>
+ 2573 							align_uint64: unsigned long long (), <./dnctl/dnctl.c 188>
+ 2574 								bcopy: <>
+ 2575 							inet_ntop: <>
+ 2576 					free: <>
+ 2577 					exit: <>
+ 2578 				errx: <>
+ 2579 			waitpid: <>
+ 2580 			WIFEXITED: <>
+ 2581 			WEXITSTATUS: <>
+ 2582 			WIFSIGNALED: <>
+ 2583 			WTERMSIG: <>
+ 2584 		parse_args: 2496
+ 2585 		show_usage: void (), <./dnctl/dnctl.c 532>
+ 2586 			fprintf: <>
+ 2587 			exit: <>
+ 2588 		clnt_create: <>
+ 2589 		clnt_pcreateerror: <>
+ 2590 		clnt_control: <>
+ 2591 		clnt_call: <>
+ 2592 		clnt_perror: <>
+ 2593 		print_xferstats: void (), <./spray.tproj/spray.c 218>
+ 2594 			printf: <>
+ 2595 		isatty: <>
+ 2596 		process_cmd: void (), <./mtest.tproj/mtest.c 364>
+ 2597 			isblank: <>
+ 2598 			usage: 584
+ 2599 			close: <>
+ 2600 			exit: <>
+ 2601 			sscanf: <>
+ 2602 			printf: <>
+ 2603 			sleep: <>
+ 2604 			parse_cmd_args: uint32_t (), <./mtest.tproj/mtest.c 277>
+ 2605 				assert: <>
+ 2606 				if_nametoindex: <>
+ 2607 				memset: <>
+ 2608 				getaddrinfo: <>
+ 2609 				warnx: <>
+ 2610 				gai_strerror: <>
+ 2611 				memcpy: <>
+ 2612 				freeaddrinfo: <>
+ 2613 			warn: <>
+ 2614 			setsockopt: <>
+ 2615 			memset: <>
+ 2616 			fgets: <>
+ 2617 			strchr: <>
+ 2618 			getaddrinfo: <>
+ 2619 			assert: <>
+ 2620 			memcpy: <>
+ 2621 			freeaddrinfo: <>
+ 2622 			warnx: <>
+ 2623 			gai_strerror: <>
+ 2624 			setsourcefilter: <>
+ 2625 			af2sock: __inline int (), <./mtest.tproj/mtest.c 338>
+ 2626 			getsourcefilter: <>
+ 2627 			MIN: <>
+ 2628 			fprintf: <>
+ 2629 			qsort: <>
+ 2630 			su_cmp: int (), <./mtest.tproj/mtest.c 119>
+ 2631 				assert: <>
+ 2632 				memcmp: <>
+ 2633 			getnameinfo: <>
+ 2634 			warnc: <>
+ 2635 			ether_aton: <>
+ 2636 			strlcpy: <>
+ 2637 			LLADDR: <>
+ 2638 			ioctl: <>
+ 2639 		isblank: <>
+ 2640 		process_file: void (), <./mtest.tproj/mtest.c 244>
+ 2641 			fopen: <>
+ 2642 			warn: <>
+ 2643 			fgets: <>
+ 2644 			isblank: <>
+ 2645 			process_cmd: 2596
+ 2646 			fclose: <>
+ 2647 		feof: <>
+ 2648 		strtol: <>
+ 2649 		strtod: <>
+ 2650 		fill: void (), <./ping6.tproj/ping6.c 2837>
+ 2651 			isxdigit: <>
+ 2652 			errx: <>
+ 2653 			sscanf: <>
+ 2654 			printf: <>
+ 2655 		inet6_rth_space: <>
+ 2656 		inet6_rthdr_space: <>
+ 2657 		nigroup: char * (), <./ping6.tproj/ping6.c 2894>
+ 2658 			strchr: <>
+ 2659 			strlen: <>
+ 2660 			strncpy: <>
+ 2661 			isupper: <>
+ 2662 			tolower: <>
+ 2663 			memset: <>
+ 2664 			MD5Init: <>
+ 2665 			MD5Update: <>
+ 2666 			MD5Final: <>
+ 2667 			inet_pton: <>
+ 2668 			bcopy: <>
+ 2669 			inet_ntop: <>
+ 2670 			strdup: <>
+ 2671 		srand: <>
+ 2672 		rand: <>
+ 2673 		arc4random: <>
+ 2674 		IN6_IS_ADDR_MULTICAST: <>
+ 2675 		ICMP6_FILTER_SETBLOCKALL: <>
+ 2676 		ICMP6_FILTER_SETPASS: <>
+ 2677 		ICMP6_FILTER_SETPASSALL: <>
+ 2678 		CMSG_DATA: <>
+ 2679 		CMSG_LEN: 904
+ 2680 		CMSG_NXTHDR: <>
+ 2681 		SIN6: <>
+ 2682 		warn: <>
+ 2683 		pingerlen: size_t (), <./ping6.tproj/ping6.c 1366>
+ 2684 		pr_addr: 908
+ 2685 		pinger: int (), <./ping6.tproj/ping6.c 1385>
+ 2686 			memset: <>
+ 2687 			CLR: <>
+ 2688 			htons: <>
+ 2689 			memcpy: <>
+ 2690 			ntohs: <>
+ 2691 			gettimeofday: <>
+ 2692 			htonl: <>
+ 2693 			pingerlen: 2683
+ 2694 			errx: <>
+ 2695 			sendmsg: <>
+ 2696 			warn: <>
+ 2697 			printf: <>
+ 2698 			write: <>
+ 2699 		onsignal: void (), <./ping6.tproj/ping6.c 1306>
+ 2700 		setitimer: <>
+ 2701 		retransmit: void (), <./ping6.tproj/ping6.c 1330>
+ 2702 			pinger: 2685
+ 2703 			signal: <>
+ 2704 			onsignal: 2699
+ 2705 			setitimer: <>
+ 2706 		howmany: <>
+ 2707 		onint: void (), <./ping6.tproj/ping6.c 2408>
+ 2708 			summary: void (), <./ping6.tproj/ping6.c 2425>
+ 2709 				printf: <>
+ 2710 				putchar: <>
+ 2711 				sqrt: <>
+ 2712 				fflush: <>
+ 2713 			signal: <>
+ 2714 			kill: <>
+ 2715 			getpid: <>
+ 2716 			exit: <>
+ 2717 		summary: 2708
+ 2718 		poll: <>
+ 2719 		recvmsg: <>
+ 2720 		get_pathmtu: <>
+ 2721 		pr_pack: <>
+ 2722 		rtadvd_timer_init: void (), <./rtadvd.tproj/timer.c 50>
+ 2723 			memset: <>
+ 2724 		init_iflist: void (), <./rtadvd.tproj/if.c 566>
+ 2725 			free: <>
+ 2726 			get_iflist: void (), <./rtadvd.tproj/if.c 475>
+ 2727 				sysctl: <>
+ 2728 				syslog: <>
+ 2729 				exit: <>
+ 2730 				malloc: <>
+ 2731 			parse_iflist: void (), <./rtadvd.tproj/if.c 508>
+ 2732 				malloc: <>
+ 2733 				syslog: <>
+ 2734 				exit: <>
+ 2735 		getconfig: void (), <./rtadvd.tproj/config.c 106>
+ 2736 			agetent: <>
+ 2737 			memset: <>
+ 2738 			syslog: <>
+ 2739 			malloc: <>
+ 2740 			exit: <>
+ 2741 			getinet6sysctl: 1999
+ 2742 			agetflag: <>
+ 2743 			if_nametosdl: struct sockaddr_dl (), <./rtadvd.tproj/if.c 85>
+ 2744 			if_nametoindex: <>
+ 2745 			strncpy: <>
+ 2746 			if_getmtu: int (), <./rtadvd.tproj/if.c 139>
+ 2747 				getifaddrs: <>
+ 2748 				strcmp: <>
+ 2749 				freeifaddrs: <>
+ 2750 				socket: <>
+ 2751 				strncpy: <>
+ 2752 				ioctl: <>
+ 2753 				close: <>
+ 2754 			MAYHAVE: <>
+ 2755 			agetstr: <>
+ 2756 			strchr: <>
+ 2757 			agetnum: <>
+ 2758 			makeentry: void (), <./rtadvd.tproj/config.c 866>
+ 2759 				strlcpy: <>
+ 2760 				snprintf: <>
+ 2761 			prefix: if (, <./ip6addrctl.tproj/ip6addrctl.c 268>
+ 2762 			insque: <>
+ 2763 			inet_pton: <>
+ 2764 			IN6_IS_ADDR_MULTICAST: <>
+ 2765 			IN6_IS_ADDR_LINKLOCAL: <>
+ 2766 			gettimeofday: <>
+ 2767 			get_prefix: void (), <./rtadvd.tproj/config.c 778>
+ 2768 				p: <>
+ 2769 				getifaddrs: <>
+ 2770 				syslog: <>
+ 2771 				exit: <>
+ 2772 				strcmp: <>
+ 2773 				IN6_IS_ADDR_LINKLOCAL: <>
+ 2774 				prefixlen: int (), <./rtadvd.tproj/if.c 406>
+ 2775 					atoi: <>
+ 2776 					fprintf: <>
+ 2777 					exit: <>
+ 2778 					memset: <>
+ 2779 				find_prefix: struct prefix (), <./rtadvd.tproj/rtadvd.c 1190>
+ 2780 				malloc: <>
+ 2781 				memset: <>
+ 2782 				memcpy: <>
+ 2783 				inet_ntop: <>
+ 2784 				insque: <>
+ 2785 				freeifaddrs: <>
+ 2786 			strcmp: <>
+ 2787 			socket: <>
+ 2788 			strerror: <>
+ 2789 			ioctl: <>
+ 2790 			close: <>
+ 2791 			fprintf: <>
+ 2792 			strlen: <>
+ 2793 			memcpy: <>
+ 2794 			offsetof: <>
+ 2795 			make_packet: void (), <./rtadvd.tproj/config.c 1080>
+ 2796 				lladdropt_length: 2026
+ 2797 				syslog: <>
+ 2798 				malloc: <>
+ 2799 				exit: <>
+ 2800 				free: <>
+ 2801 				htons: <>
+ 2802 				htonl: <>
+ 2803 				lladdropt_fill: 2030
+ 2804 				gettimeofday: <>
+ 2805 				memcpy: <>
+ 2806 				memset: <>
+ 2807 				offsetof: <>
+ 2808 				encode_domain: int (), <./rtadvd.tproj/config.c 1322>
+ 2809 					strdup: <>
+ 2810 					strsep: <>
+ 2811 					strlen: <>
+ 2812 					memcpy: <>
+ 2813 					free: <>
+ 2814 			rtadvd_add_timer: struct rtadvd_timer (), <./rtadvd.tproj/timer.c 59>
+ 2815 			ra_timeout: struct rtadvd_timer (), <./rtadvd.tproj/rtadvd.c 1608>
+ 2816 			ra_timer_update: void (), <./rtadvd.tproj/rtadvd.c 1627>
+ 2817 				random: <>
+ 2818 				syslog: <>
+ 2819 			rtadvd_set_timer: void (), <./rtadvd.tproj/timer.c 99>
+ 2820 				gettimeofday: <>
+ 2821 				TIMEVAL_ADD: void (), <./rtadvd.tproj/timer.c 177>
+ 2822 				TIMEVAL_LT: <>
+ 2823 		inet_pton: <>
+ 2824 		pidfile_open: <>
+ 2825 		getprogname: <>
+ 2826 		sock_open: void (), <./rtadvd.tproj/rtadvd.c 1347>
+ 2827 			CMSG_SPACE: <>
+ 2828 			malloc: <>
+ 2829 			syslog: <>
+ 2830 			exit: <>
+ 2831 			socket: <>
+ 2832 			strerror: <>
+ 2833 			setsockopt: <>
+ 2834 			ICMP6_FILTER_SETBLOCKALL: <>
+ 2835 			ICMP6_FILTER_SETPASS: <>
+ 2836 			inet_pton: <>
+ 2837 			if_nametoindex: <>
+ 2838 		pidfile_write: <>
+ 2839 		set_die: void (), <./rtadvd.tproj/rtadvd.c 329>
+ 2840 		rtadvd_set_dump_file: void (), <./rtadvd.tproj/rtadvd.c 322>
+ 2841 		rtadvd_dump_file: void (), <./rtadvd.tproj/dump.c 264>
+ 2842 			syslog: <>
+ 2843 			fopen: <>
+ 2844 			if_dump: void (), <./rtadvd.tproj/dump.c 119>
+ 2845 				gettimeofday: <>
+ 2846 				fprintf: <>
+ 2847 				ctime: <>
+ 2848 				ether_str: 628
+ 2849 				inet_ntop: <>
+ 2850 				rtadvd_timer_rest: struct timeval (), <./rtadvd.tproj/timer.c 158>
+ 2851 			fclose: <>
+ 2852 		die: void (), <./rtadvd.tproj/rtadvd.c 336>
+ 2853 			syslog: <>
+ 2854 			make_packet: 2795
+ 2855 			ra_output: void (), <./rtadvd.tproj/rtadvd.c 1528>
+ 2856 				syslog: <>
+ 2857 				make_packet: 2795
+ 2858 				CMSG_FIRSTHDR: <>
+ 2859 				CMSG_LEN: 904
+ 2860 				CMSG_DATA: <>
+ 2861 				memset: <>
+ 2862 				CMSG_NXTHDR: <>
+ 2863 				memcpy: <>
+ 2864 				sendmsg: <>
+ 2865 				strerror: <>
+ 2866 				free: <>
+ 2867 				gettimeofday: <>
+ 2868 			sleep: <>
+ 2869 			pidfile_remove: <>
+ 2870 			exit: <>
+ 2871 		rtadvd_check_timer: struct timeval (), <./rtadvd.tproj/timer.c 121>
+ 2872 		rtmsg_input: void (), <./rtadvd.tproj/rtadvd.c 362>
+ 2873 			read: <>
+ 2874 			syslog: <>
+ 2875 			rtmsg_type: int (), <./rtadvd.tproj/if.c 447>
+ 2876 			rtmsg_len: int (), <./rtadvd.tproj/if.c 455>
+ 2877 			get_next_msg: char * (), <./rtadvd.tproj/if.c 256>
+ 2878 				syslog: <>
+ 2879 				FILTER_MATCH: <>
+ 2880 				sockaddr: <>
+ 2881 				get_rtaddrs: void (), <./rtadvd.tproj/if.c 70>
+ 2882 					NEXT_SA: <>
+ 2883 				IN6_IS_ADDR_LINKLOCAL: <>
+ 2884 				SIN6: <>
+ 2885 				IN6_IS_ADDR_MULTICAST: <>
+ 2886 				SDL: <>
+ 2887 			RTADV_TYPE2BITMASK: <>
+ 2888 			get_rtm_ifindex: int (), <./rtadvd.tproj/if.c 354>
+ 2889 				sockaddr: <>
+ 2890 				get_rtaddrs: 2881
+ 2891 			get_ifam_ifindex: int (), <./rtadvd.tproj/if.c 374>
+ 2892 			get_ifm_ifindex: int (), <./rtadvd.tproj/if.c 366>
+ 2893 			if_indextoname: <>
+ 2894 			if_indextorainfo: struct rainfo (), <./rtadvd.tproj/rtadvd.c 1515>
+ 2895 			if_getflags: int (), <./rtadvd.tproj/if.c 183>
+ 2896 				socket: <>
+ 2897 				syslog: <>
+ 2898 				strerror: <>
+ 2899 				if_indextoname: <>
+ 2900 				ioctl: <>
+ 2901 				close: <>
+ 2902 			get_addr: struct in6_addr (), <./rtadvd.tproj/if.c 342>
+ 2903 			get_prefixlen: int (), <./rtadvd.tproj/if.c 390>
+ 2904 				p: <>
+ 2905 				sockaddr: <>
+ 2906 				get_rtaddrs: 2881
+ 2907 				SIN6: <>
+ 2908 				prefixlen: 2774
+ 2909 			find_prefix: struct prefix (), <./rtadvd.tproj/rtadvd.c 1190>
+ 2910 			update_prefix: void (), <./rtadvd.tproj/config.c 987>
+ 2911 				syslog: <>
+ 2912 				exit: <>
+ 2913 				inet_ntop: <>
+ 2914 				rtadvd_remove_timer: void (), <./rtadvd.tproj/timer.c 91>
+ 2915 					remque: <>
+ 2916 					free: <>
+ 2917 			inet_ntop: <>
+ 2918 			make_prefix: void (), <./rtadvd.tproj/config.c 1058>
+ 2919 				memset: <>
+ 2920 				if_indextoname: <>
+ 2921 				syslog: <>
+ 2922 				strerror: <>
+ 2923 				exit: <>
+ 2924 				init_prefix: int (), <./rtadvd.tproj/config.c 1013>
+ 2925 					socket: <>
+ 2926 					syslog: <>
+ 2927 					strerror: <>
+ 2928 					exit: <>
+ 2929 					ioctl: <>
+ 2930 					inet_ntop: <>
+ 2931 					close: <>
+ 2932 				add_prefix: void (), <./rtadvd.tproj/config.c 887>
+ 2933 					malloc: <>
+ 2934 					syslog: <>
+ 2935 					memset: <>
+ 2936 					insque: <>
+ 2937 					inet_ntop: <>
+ 2938 					free: <>
+ 2939 					make_packet: 2795
+ 2940 			invalidate_prefix: void (), <./rtadvd.tproj/config.c 946>
+ 2941 				syslog: <>
+ 2942 				exit: <>
+ 2943 				inet_ntop: <>
+ 2944 				rtadvd_add_timer: struct rtadvd_timer (), <./rtadvd.tproj/timer.c 59>
+ 2945 				prefix_timeout: struct rtadvd_timer (), <./rtadvd.tproj/config.c 977>
+ 2946 				delete_prefix: void (), <./rtadvd.tproj/config.c 929>
+ 2947 					remque: <>
+ 2948 					syslog: <>
+ 2949 					inet_ntop: <>
+ 2950 					rtadvd_remove_timer: 2914
+ 2951 					free: <>
+ 2952 				rtadvd_set_timer: 2819
+ 2953 			get_ifm_flags: int (), <./rtadvd.tproj/if.c 382>
+ 2954 			rtadvd_remove_timer: 2914
+ 2955 			rtadvd_add_timer: struct rtadvd_timer (), <./rtadvd.tproj/timer.c 59>
+ 2956 			ra_timeout: struct rtadvd_timer (), <./rtadvd.tproj/rtadvd.c 1608>
+ 2957 			ra_timer_update: 2816
+ 2958 			rtadvd_set_timer: 2819
+ 2959 			set_short_delay: void (), <./rtadvd.tproj/rtadvd.c 856>
+ 2960 				arc4random_uniform: <>
+ 2961 				random: <>
+ 2962 				rtadvd_timer_rest: struct timeval (), <./rtadvd.tproj/timer.c 158>
+ 2963 				TIMEVAL_LT: <>
+ 2964 				syslog: <>
+ 2965 				gettimeofday: <>
+ 2966 				TIMEVAL_SUB: void (), <./rtadvd.tproj/timer.c 196>
+ 2967 				TIMEVAL_ADD: 2821
+ 2968 				rtadvd_set_timer: 2819
+ 2969 		rtadvd_input: void (), <./rtadvd.tproj/rtadvd.c 577>
+ 2970 			recvmsg: <>
+ 2971 			CMSG_FIRSTHDR: <>
+ 2972 			CMSG_NXTHDR: <>
+ 2973 			CMSG_LEN: 904
+ 2974 			CMSG_DATA: <>
+ 2975 			syslog: <>
+ 2976 			if_indextoname: <>
+ 2977 			inet_ntop: <>
+ 2978 			rs_input: void (), <./rtadvd.tproj/rtadvd.c 766>
+ 2979 				syslog: <>
+ 2980 				inet_ntop: <>
+ 2981 				if_indextoname: <>
+ 2982 				memset: <>
+ 2983 				nd6_options: int (), <./rtadvd.tproj/rtadvd.c 1239>
+ 2984 					syslog: <>
+ 2985 					malloc: <>
+ 2986 					free_ndopts: void (), <./rtadvd.tproj/rtadvd.c 1335>
+ 2987 						free: <>
+ 2988 				IN6_IS_ADDR_UNSPECIFIED: <>
+ 2989 				malloc: <>
+ 2990 				set_short_delay: 2959
+ 2991 				free_ndopts: 2986
+ 2992 			ra_input: void (), <./rtadvd.tproj/rtadvd.c 902>
+ 2993 				syslog: <>
+ 2994 				inet_ntop: <>
+ 2995 				if_indextoname: <>
+ 2996 				memset: <>
+ 2997 				nd6_options: 2983
+ 2998 				if_indextorainfo: struct rainfo (), <./rtadvd.tproj/rtadvd.c 1515>
+ 2999 				ntohl: <>
+ 3000 				prefix_check: int (), <./rtadvd.tproj/rtadvd.c 1062>
+ 3001 					IN6_IS_ADDR_LINKLOCAL: <>
+ 3002 					syslog: <>
+ 3003 					inet_ntop: <>
+ 3004 					find_prefix: struct prefix (), <./rtadvd.tproj/rtadvd.c 1190>
+ 3005 					ntohl: <>
+ 3006 					gettimeofday: <>
+ 3007 					abs: <>
+ 3008 				free_ndopts: 2986
+ 3009 			rr_input: void (), <./rtadvd.tproj/rrenum.c 418>
+ 3010 				syslog: <>
+ 3011 				inet_ntop: <>
+ 3012 				if_indextoname: <>
+ 3013 				IN6_IS_ADDR_MULTICAST: <>
+ 3014 				IN6_ARE_ADDR_EQUAL: <>
+ 3015 				rr_command_input: void (), <./rtadvd.tproj/rrenum.c 392>
+ 3016 					rr_command_check: int (), <./rtadvd.tproj/rrenum.c 335>
+ 3017 						syslog: <>
+ 3018 						IN6_IS_ADDR_MULTICAST: <>
+ 3019 						IN6_IS_ADDR_MC_LINKLOCAL: <>
+ 3020 						IN6_IS_ADDR_MC_SITELOCAL: <>
+ 3021 						inet_ntop: <>
+ 3022 						ntohl: <>
+ 3023 						RR_ISSET_SEGNUM: <>
+ 3024 						memset: <>
+ 3025 					do_rr: int (), <./rtadvd.tproj/rrenum.c 291>
+ 3026 						init_iflist: 2724
+ 3027 						syslog: <>
+ 3028 						do_pco: int (), <./rtadvd.tproj/rrenum.c 241>
+ 3029 							rr_pco_check: int (), <./rtadvd.tproj/rrenum.c 79>
+ 3030 								syslog: <>
+ 3031 							socket: <>
+ 3032 							syslog: <>
+ 3033 							strerror: <>
+ 3034 							exit: <>
+ 3035 							memset: <>
+ 3036 							if_indextoname: <>
+ 3037 							do_use_prefix: void (), <./rtadvd.tproj/rrenum.c 139>
+ 3038 								memset: <>
+ 3039 								ioctl: <>
+ 3040 								syslog: <>
+ 3041 								strerror: <>
+ 3042 								ntohl: <>
+ 3043 								IN6_ARE_ADDR_EQUAL: <>
+ 3044 								if_indextorainfo: struct rainfo (), <./rtadvd.tproj/rtadvd.c 1515>
+ 3045 								prefix_match: int (), <./rtadvd.tproj/rtadvd.c 1216>
+ 3046 									memcmp: <>
+ 3047 								gettimeofday: <>
+ 3048 					RR_SET_SEGNUM: <>
+ 3049 					syslog: <>

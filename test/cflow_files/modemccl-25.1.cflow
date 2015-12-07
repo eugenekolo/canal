@@ -1,0 +1,323 @@
+    1 	main: int (), <./CCLEngine/CCLEngine.c 749>
+    2 		signal: <>
+    3 		hangup: void (), <./CCLEngine/CCLEngine.c 293>
+    4 		badsignal: void (), <./CCLEngine/CCLEngine.c 286>
+    5 		openlog: <>
+    6 		ParsePipeArgs: bool (), <./CCLEngine/CCLEngine.c 711>
+    7 			malloc: <>
+    8 			read: <>
+    9 			realloc: <>
+   10 			IOCFUnserialize: <>
+   11 			ParseArgDictionary: bool (), <./CCLEngine/CCLEngine.c 691>
+   12 				ParseEngineDict: bool (), <./CCLEngine/CCLEngine.c 591>
+   13 					GetCFDictionaryFromDict: CFDictionaryRef (), <./CCLEngine/CCLArgFunctions.c 41>
+   14 						CFDictionaryGetValue: <>
+   15 						CFDictionaryGetTypeID: <>
+   16 						CFGetTypeID: <>
+   17 					CFDictionaryGetValue: <>
+   18 					CFStringGetTypeID: <>
+   19 					CFGetTypeID: <>
+   20 					CFStringCompare: <>
+   21 					CopyCStringFromDict: bool (), <./CCLEngine/CCLArgFunctions.c 68>
+   22 						GetCFStringFromDict: bool (), <./CCLEngine/CCLArgFunctions.c 52>
+   23 							CFDictionaryGetValue: <>
+   24 							CFStringGetTypeID: <>
+   25 							CFGetTypeID: <>
+   26 						CFStringGetMaximumSizeForEncoding: <>
+   27 						CFStringGetLength: <>
+   28 						malloc: <>
+   29 						CFStringGetCString: <>
+   30 						free: <>
+   31 					GetIntFromDict: bool (), <./CCLEngine/CCLArgFunctions.c 109>
+   32 						GetCFNumberFromDict: bool (), <./CCLEngine/CCLArgFunctions.c 93>
+   33 							CFDictionaryGetValue: <>
+   34 							CFNumberGetTypeID: <>
+   35 							CFGetTypeID: <>
+   36 						CFNumberGetValue: <>
+   37 				ParseModemDict: bool (), <./CCLEngine/CCLEngine.c 625>
+   38 					GetCFDictionaryFromDict: 13
+   39 					CopyCStringFromDict: 21
+   40 					GetCFStringFromDict: 22
+   41 					ConfigureCCL: bool (), <./CCLEngine/CCLEngine.c 543>
+   42 						ResolveCCLPath: bool (), <./CCLEngine/CCLEngine.c 475>
+   43 							strlen: <>
+   44 							strcmp: <>
+   45 							snprintf: <>
+   46 							stat: <>
+   47 							strlcpy: <>
+   48 						sLog: void (), <./CCLEngine/CCLEngine.c 516>
+   49 							va_start: <>
+   50 							vsyslog: <>
+   51 							va_end: <>
+   52 							time: <>
+   53 							strftime: <>
+   54 							localtime: <>
+   55 							strlcpy: <>
+   56 							strlcat: <>
+   57 							vfprintf: <>
+   58 						CFURLCreateFromFileSystemRepresentation: <>
+   59 						strlen: <>
+   60 						S_ISDIR: <>
+   61 						CFBundleCreate: <>
+   62 						ConfigureWithBundle: bool (), <./CCLEngine/CCLEngine.c 434>
+   63 							VerifyCCLBundle: bool (), <./CCLEngine/CCLEngine.c 352>
+   64 								CFBundleGetInfoDictionary: <>
+   65 								GetIntFromDict: 31
+   66 							CopyScriptWithPersonality: CFURLRef (), <./CCLEngine/CCLEngine.c 389>
+   67 								CFBundleGetInfoDictionary: <>
+   68 								GetCFDictionaryFromDict: 13
+   69 								GetCFStringFromDict: 22
+   70 								CFBundleCopyResourceURL: <>
+   71 								ConfigureCCLParameters: bool (), <./CCLEngine/CCLEngine.c 367>
+   72 									GetCFDictionaryFromDict: 13
+   73 									SetVarStringFromDict: bool (), <./CCLEngine/CCLEngine.c 325>
+   74 										CFDictionaryGetValue: <>
+   75 										CFStringGetTypeID: <>
+   76 										CFGetTypeID: <>
+   77 										CFStringGetPascalString: <>
+   78 										CFStringGetSystemEncoding: <>
+   79 										SetVarString: void (), <./CCLEngine/CCLEngine.c 959>
+   80 											free: <>
+   81 											malloc: <>
+   82 											bcopy: <>
+   83 											sLog: 48
+   84 											strerror: <>
+   85 										sLog: 48
+   86 										CFShow: <>
+   87 								CFRelease: <>
+   88 							CFURLGetFileSystemRepresentation: <>
+   89 							free: <>
+   90 							strdup: <>
+   91 							CFRetain: <>
+   92 							CFRelease: <>
+   93 						CFRelease: <>
+   94 						S_ISREG: <>
+   95 						free: <>
+   96 						strdup: <>
+   97 					free: <>
+   98 					CFDictionaryGetValue: <>
+   99 					CFStringGetTypeID: <>
+  100 					CFGetTypeID: <>
+  101 					CFStringCompare: <>
+  102 					GetIntFromDict: 31
+  103 					SetVarStringFromDict: 73
+  104 				CFBundleGetMainBundle: <>
+  105 				CFBundleCopyBundleURL: <>
+  106 			free: <>
+  107 			close: <>
+  108 		terminate: void (), <./CCLEngine/CCLEngine.c 3041>
+  109 			sLog: 48
+  110 			CFNumberCreate: <>
+  111 			publish_entry: int (), <./CCLEngine/CCLEngine.c 3200>
+  112 				SCDynamicStoreCreate: <>
+  113 				CFSTR: <>
+  114 				SCDynamicStoreKeyCreate: <>
+  115 				SCDynamicStoreCopyValue: <>
+  116 				CFDictionaryCreateMutableCopy: <>
+  117 				CFRelease: <>
+  118 				CFDictionaryCreateMutable: <>
+  119 				CFDictionarySetValue: <>
+  120 				SCDynamicStoreSetValue: <>
+  121 			CFRelease: <>
+  122 			unpublish_entry: int (), <./CCLEngine/CCLEngine.c 3236>
+  123 				SCDynamicStoreCreate: <>
+  124 				CFSTR: <>
+  125 				SCDynamicStoreKeyCreate: <>
+  126 				SCDynamicStoreCopyValue: <>
+  127 				CFDictionaryCreateMutableCopy: <>
+  128 				CFDictionaryRemoveValue: <>
+  129 				SCDynamicStoreSetValue: <>
+  130 				CFRelease: <>
+  131 			close: <>
+  132 			exit: <>
+  133 		InitScript: void (), <./CCLEngine/CCLEngine.c 855>
+  134 			bzero: <>
+  135 			strlen: <>
+  136 			bcopy: <>
+  137 			SetVarString: 79
+  138 			sprintf: <>
+  139 		CFStringCreateWithCString: <>
+  140 		CFURLCreateFromFileSystemRepresentation: <>
+  141 		strlen: <>
+  142 		stat: <>
+  143 		malloc: <>
+  144 		fopen: <>
+  145 		fread: <>
+  146 		unpublish_entry: 122
+  147 		StopRead: void (), <./CCLEngine/CCLEngine.c 311>
+  148 			FD_ZERO: <>
+  149 		Play: void (), <./CCLEngine/CCLEngine.c 998>
+  150 			PrepScript: int (), <./CCLEngine/CCLEngine.c 1090>
+  151 				malloc: <>
+  152 				NextLine: u_int8_t (), <./CCLEngine/CCLEngine.c 1377>
+  153 				NextCommand: int (), <./CCLEngine/CCLEngine.c 1422>
+  154 					SkipBlanks: void (), <./CCLEngine/CCLEngine.c 1695>
+  155 					bcopy: <>
+  156 					equalstring: int (), <./CCLEngine/CCLEngine.c 1404>
+  157 						toupper: <>
+  158 				NextInt: int (), <./CCLEngine/CCLEngine.c 1713>
+  159 					SkipBlanks: 154
+  160 					PrepStr: void (), <./CCLEngine/CCLEngine.c 1478>
+  161 						GetVarString: u_int8_t * (), <./CCLEngine/CCLEngine.c 980>
+  162 				SkipBlanks: 154
+  163 				PrepStr: 160
+  164 			sLog: 48
+  165 			terminate: 108
+  166 			strlen: <>
+  167 			bcopy: <>
+  168 			GetVarString: 161
+  169 			SetVarString: 79
+  170 			min: <>
+  171 			RunScript: void (), <./CCLEngine/CCLEngine.c 1762>
+  172 				terminate: 108
+  173 				NextLine: 152
+  174 				NextCommand: 153
+  175 				Ask: u_int8_t (), <./CCLEngine/CCLEngine.c 2669>
+  176 					NextInt: 158
+  177 					SkipBlanks: 154
+  178 					PrepStr: 160
+  179 					localizeString: void (), <./CCLEngine/CCLEngine.c 2484>
+  180 						localizeStringWithBundle: bool (), <./CCLEngine/CCLEngine.c 2441>
+  181 							SCDynamicStoreCopyConsoleUser: <>
+  182 							CFPreferencesSynchronize: <>
+  183 							CFPreferencesCopyValue: <>
+  184 							CFSTR: <>
+  185 							CFStringCreateWithPascalString: <>
+  186 							CFBundleCreate: <>
+  187 							copyUserLocalizedString: CFStringRef (), <./CCLEngine/CCLEngine.c 2389>
+  188 								CFBundleCopyLocalizedString: <>
+  189 								CFRetain: <>
+  190 								CFSTR: <>
+  191 								CFBundleCopyBundleLocalizations: <>
+  192 								CFBundleCopyLocalizationsForPreferences: <>
+  193 								CFArrayGetCount: <>
+  194 								CFBundleCopyResourceURLForLocalization: <>
+  195 								CFArrayGetValueAtIndex: <>
+  196 								CFURLCreateDataAndPropertiesFromResource: <>
+  197 								CFPropertyListCreateFromXMLData: <>
+  198 								CFRelease: <>
+  199 								CFDictionaryGetValue: <>
+  200 								CFEqual: <>
+  201 							CFStringGetPascalString: <>
+  202 							CFRelease: <>
+  203 						bcopy: <>
+  204 					varSubstitution: void (), <./CCLEngine/CCLEngine.c 1641>
+  205 						GetVarString: 161
+  206 					CFStringCreateWithPascalString: <>
+  207 					CFDictionaryCreateMutable: <>
+  208 					CFDictionaryAddValue: <>
+  209 					CFArrayCreateMutable: <>
+  210 					CFArrayAppendValue: <>
+  211 					CFRelease: <>
+  212 					CFUserNotificationSecureTextField: <>
+  213 					CFUserNotificationCreate: <>
+  214 					CFUserNotificationReceiveResponse: <>
+  215 					CFUserNotificationGetResponseValue: <>
+  216 					CFStringGetPascalString: <>
+  217 					SetVarString: 79
+  218 				NextInt: 158
+  219 				CommunicatingAt: void (), <./CCLEngine/CCLEngine.c 2800>
+  220 					NextInt: 158
+  221 					sLog: 48
+  222 					CFNumberCreate: <>
+  223 					publish_entry: 111
+  224 					CFRelease: <>
+  225 				DTRCommand: void (), <./CCLEngine/CCLEngine.c 3000>
+  226 					ioctl: <>
+  227 				Note: void (), <./CCLEngine/CCLEngine.c 2508>
+  228 					SkipBlanks: 154
+  229 					PrepStr: 160
+  230 					localizeString: 179
+  231 					varSubstitution: 204
+  232 					NextInt: 158
+  233 					bcopy: <>
+  234 					CFStringCreateWithCString: <>
+  235 					publish_entry: 111
+  236 					CFRelease: <>
+  237 					sLog: 48
+  238 				Flush: void (), <./CCLEngine/CCLEngine.c 2925>
+  239 					tcflush: <>
+  240 				HSReset: void (), <./CCLEngine/CCLEngine.c 2933>
+  241 					tcgetattr: <>
+  242 					NextInt: 158
+  243 					tcsetattr: <>
+  244 				IfStr: int (), <./CCLEngine/CCLEngine.c 2876>
+  245 					NextInt: 158
+  246 					GetVarString: 161
+  247 					SkipBlanks: 154
+  248 					PrepStr: 160
+  249 					equalstring: 156
+  250 				MatchClr: void (), <./CCLEngine/CCLEngine.c 2031>
+  251 				ScheduleTimer: void (), <./CCLEngine/CCLEngine.c 2864>
+  252 					timeout: void (), <./CCLEngine/CCLEngine.c 3101>
+  253 						malloc: <>
+  254 						terminate: 108
+  255 						gettimeofday: <>
+  256 					TimerExpired: void (), <./CCLEngine/CCLEngine.c 2639>
+  257 						StopRead: 147
+  258 						RunScript: 171
+  259 						WriteContinue: void (), <./CCLEngine/CCLEngine.c 2620>
+  260 							write: <>
+  261 							terminate: 108
+  262 						ScheduleTimer: 251
+  263 					untimeout: void (), <./CCLEngine/CCLEngine.c 3135>
+  264 						free: <>
+  265 				StartRead: void (), <./CCLEngine/CCLEngine.c 303>
+  266 					FD_SET: <>
+  267 				MatchStr: int (), <./CCLEngine/CCLEngine.c 1992>
+  268 					NextInt: 158
+  269 					SkipBlanks: 154
+  270 				usleep: <>
+  271 				Break: void (), <./CCLEngine/CCLEngine.c 2213>
+  272 					tcsendbreak: <>
+  273 				MonitorLine: void (), <./CCLEngine/CCLEngine.c 2319>
+  274 					tcgetattr: <>
+  275 					NextInt: 158
+  276 					tcsetattr: <>
+  277 				DebugLevel: void (), <./CCLEngine/CCLEngine.c 2343>
+  278 					NextInt: 158
+  279 				SerReset: void (), <./CCLEngine/CCLEngine.c 2253>
+  280 					tcgetattr: <>
+  281 					NextInt: 158
+  282 					IsValidBaudRate: <>
+  283 					cfsetispeed: <>
+  284 					cfsetospeed: <>
+  285 					tcsetattr: <>
+  286 				SetSpeed: void (), <./CCLEngine/CCLEngine.c 2371>
+  287 					NextInt: 158
+  288 					IsValidBaudRate: <>
+  289 					tcgetattr: <>
+  290 					cfsetispeed: <>
+  291 					cfsetospeed: <>
+  292 					tcsetattr: <>
+  293 				UserHook: void (), <./CCLEngine/CCLEngine.c 2824>
+  294 					NextInt: 158
+  295 					new: <>
+  296 					DebugStop: <>
+  297 				Write: u_int8_t (), <./CCLEngine/CCLEngine.c 2560>
+  298 					SkipBlanks: 154
+  299 					PrepStr: 160
+  300 					bcopy: <>
+  301 					sLog: 48
+  302 					WriteContinue: 259
+  303 					ScheduleTimer: 251
+  304 					write: <>
+  305 					terminate: 108
+  306 		select: <>
+  307 		timeleft: struct timeval (), <./CCLEngine/CCLEngine.c 3179>
+  308 		FD_ISSET: <>
+  309 		read: <>
+  310 		ReceiveMatchData: void (), <./CCLEngine/CCLEngine.c 2902>
+  311 			fprintf: <>
+  312 			MatchFind: int (), <./CCLEngine/CCLEngine.c 2054>
+  313 				GetVarString: 161
+  314 				bcopy: <>
+  315 				sLog: 48
+  316 			ScheduleTimer: 251
+  317 			StopRead: 147
+  318 			RunScript: 171
+  319 		calltimeout: void (), <./CCLEngine/CCLEngine.c 3154>
+  320 			gettimeofday: <>
+  321 			terminate: 108
+  322 			free: <>
+  323 		exit: <>

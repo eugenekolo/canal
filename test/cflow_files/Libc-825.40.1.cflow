@@ -1,0 +1,174 @@
+    1 	main: int (), <./gen/FreeBSD/arc4random.c 337>
+    2 		printf: int (), <./stdio/FreeBSD/printf.c 45>
+    3 			va_start: <>
+    4 			vfprintf_l: int (), <./stdio/FreeBSD/vfprintf.c 273>
+    5 				NORMALIZE_LOCALE: <>
+    6 				FLOCKFILE: <>
+    7 				FUNLOCKFILE: <>
+    8 			va_end: <>
+    9 		strcpy: char * (), <./string/strcpy.c 27>
+   10 			size_t: (), <./gen/FreeBSD/fnmatch.c 462>
+   11 				memset: void *, <./arm/string/dyld_resolvers.c 51>
+   12 			strlen: size_t (), <./string/FreeBSD/strlen.c 81>
+   13 				testbyte: <>
+   14 			memcpy: void *, <./arm/string/dyld_resolvers.c 66>
+   15 		strtok: char * (), <./string/FreeBSD/strtok.c 98>
+   16 		strtok_r: <>
+   17 		size_t: 10
+   18 		fparseln: <>
+   19 		offsetof: <>
+   20 		cthread_self: <>
+   21 		exit: void (), <./stdlib/FreeBSD/exit.c 51>
+   22 		assert: <>
+   23 		pthread_atfork: int (), <./threads/cthreads.c 96>
+   24 			malloc: void * (), <./gen/malloc.c 929>
+   25 				malloc_zone_malloc: void * (), <./gen/malloc.c 679>
+   26 					internal_check: void (), <./gen/malloc.c 624>
+   27 						malloc_zone_check: boolean_t (), <./gen/malloc.c 1287>
+   28 							index:  ++, <./gen/malloc.c 194>
+   29 							check: <>
+   30 						vm_allocate: <>
+   31 						mach_task_self: <>
+   32 						thread_stack_pcs: void (), <./gen/thread_stack_pcs.c 102>
+   33 						malloc_printf: void (), <./gen/malloc.c 917>
+   34 							va_start: <>
+   35 							va_end: <>
+   36 						index: 28
+   37 						CRSetCrashLogMessage: <>
+   38 						abort: <>
+   39 						sleep: <>
+   40 					malloc_logger: malloc_logger_t *, <./gen/malloc.c 78>
+   41 				inline_malloc_default_zone: <>
+   42 			TAILQ_INSERT_TAIL: <>
+   43 		prepare1: void (), <./pthreads/tests/pthread_atfork_test.c 15>
+   44 		parent1: void (), <./pthreads/tests/pthread_atfork_test.c 25>
+   45 		child1: void (), <./pthreads/tests/pthread_atfork_test.c 35>
+   46 		prepare2: void (), <./pthreads/tests/pthread_atfork_test.c 20>
+   47 		parent2: void (), <./pthreads/tests/pthread_atfork_test.c 30>
+   48 		child2: void (), <./pthreads/tests/pthread_atfork_test.c 40>
+   49 		fork: switch (), <./gen/FreeBSD/daemon.c 94>
+   50 		waitpid: <>
+   51 		WIFEXITED: <>
+   52 		WEXITSTATUS: <>
+   53 		srand: void (), <./stdlib/FreeBSD/rand.c 104>
+   54 		rand: int (), <./stdlib/FreeBSD/rand.c 98>
+   55 			do_rand: int (), <./stdlib/FreeBSD/rand.c 51>
+   56 		rand_r: int (), <./stdlib/FreeBSD/rand.c 85>
+   57 			do_rand: 55
+   58 		setenv: <>
+   59 		getenv: <>
+   60 		check_env_var: void (), <./gen/get_compat.c 46>
+   61 			getenv: <>
+   62 			strcasecmp: int (), <./string/FreeBSD/strcasecmp.c 60>
+   63 		compat_mode: bool (), <./gen/get_compat.c 79>
+   64 			pthread_once: if (), <./stdlib/FreeBSD/radixsort.c 268>
+   65 				pthread_cleanup_push: <>
+   66 				pthread_cleanup_pop: <>
+   67 			check_env_var: 60
+   68 			strcasecmp: int (), <./string/FreeBSD/strcasecmp.c 60>
+   69 			strpbrk: char * (), <./string/FreeBSD/strpbrk.c 42>
+   70 			compat_mode: 63
+   71 			malloc: 24
+   72 			strlcpy: size_t (), <./string/strlcpy.c 27>
+   73 				size_t: 10
+   74 				strlen: 12
+   75 				memcpy: void *, <./arm/string/dyld_resolvers.c 66>
+   76 			free: void (), <./gen/malloc.c 949>
+   77 				size_t: 10
+   78 				find_registered_zone: <>
+   79 				malloc_printf: 33
+   80 				malloc_error_break:  (), <./gen/malloc.c 210>
+   81 					MAGMALLOC_MALLOCERRORBREAK: <>
+   82 				CRSetCrashLogMessage: <>
+   83 				abort: <>
+   84 				malloc_zone_free_definite_size: void (), <./gen/malloc.c 751>
+   85 					malloc_logger: malloc_logger_t *, <./gen/malloc.c 78>
+   86 					internal_check: 26
+   87 				malloc_zone_free: void (), <./gen/malloc.c 741>
+   88 					malloc_logger: malloc_logger_t *, <./gen/malloc.c 78>
+   89 					internal_check: 26
+   90 			fprintf: int (), <./stdio/FreeBSD/fprintf.c 45>
+   91 				va_start: <>
+   92 				vfprintf_l: 4
+   93 				va_end: <>
+   94 		fprintf: 90
+   95 		getpid: <>
+   96 		create_log_file: char * (), <./gen/stack_logging_disk.c 457>
+   97 			getpid: <>
+   98 			getprogname: <>
+   99 			allocate_pages: void * (), <./gen/scalable_malloc.c 642>
+  100 				size_t: 10
+  101 				round_page: <>
+  102 				mmap: <>
+  103 				VM_MAKE_TAG: <>
+  104 				szone_error: void (), <./gen/scalable_malloc.c 421>
+  105 				munmap: <>
+  106 				malloc_printf: 33
+  107 				protect: void (), <./gen/scalable_malloc.c 621>
+  108 			round_page: <>
+  109 			getenv: <>
+  110 			size_t: 10
+  111 			strlcpy: 72
+  112 			access: <>
+  113 			get_writeable_temp_dir: bool (), <./gen/stack_logging_disk.c 415>
+  114 				access: <>
+  115 				strlcpy: 72
+  116 				size_t: 10
+  117 				getenv: <>
+  118 				confstr: size_t (), <./gen/confstr.c 78>
+  119 					size_t: 10
+  120 					sysctl: int (), <./gen/FreeBSD/sysctl.c 50>
+  121 						memmove: void *, <./arm/string/dyld_resolvers.c 61>
+  122 					malloc: 24
+  123 					free: 76
+  124 					strncpy: char * (), <./string/strncpy.c 27>
+  125 						size_t: 10
+  126 						strnlen: size_t (), <./string/FreeBSD/strnlen.c 33>
+  127 							size_t: 10
+  128 						memcpy: void *, <./arm/string/dyld_resolvers.c 66>
+  129 						memset: void *, <./arm/string/dyld_resolvers.c 51>
+  130 					strlcpy: 72
+  131 					strlen: 12
+  132 					alloca: <>
+  133 					getenv: <>
+  134 					access: <>
+  135 				postpone_stack_logging: void (), <./gen/stack_logging_disk.c 404>
+  136 			strcmp: <>
+  137 			strlen: 12
+  138 			strlcat: size_t (), <./string/strlcat.c 27>
+  139 				size_t: 10
+  140 				strlen: 12
+  141 				strnlen: 126
+  142 				memcpy: void *, <./arm/string/dyld_resolvers.c 66>
+  143 			append_int: void (), <./gen/stack_logging_disk.c 376>
+  144 				size_t: 10
+  145 				strlen: 12
+  146 				value:  ++, <./stdlib/FreeBSD/setenv.c 460>
+  147 			mkstemps: int (), <./stdio/FreeBSD/mktemp.c 56>
+  148 			delete_logging_file: int (), <./gen/stack_logging_disk.c 616>
+  149 				unlink: <>
+  150 				stat:  += sizeof (), <./gen/fts.c 1035>
+  151 			write: <>
+  152 			close: <>
+  153 		wait: <>
+  154 		delete_log_files: void (), <./gen/stack_logging_disk.c 629>
+  155 			delete_logging_file: 148
+  156 		rdtsc: <>
+  157 		arc4random: u_int32_t (), <./gen/FreeBSD/arc4random.c 238>
+  158 			THREAD_LOCK: <>
+  159 			arc4_check_stir: inline int (), <./gen/FreeBSD/arc4random.c 211>
+  160 				arc4_stir: void (), <./gen/FreeBSD/arc4random.c 145>
+  161 					arc4_fetch: void (), <./gen/FreeBSD/arc4random.c 127>
+  162 						gettimeofday: int (), <./sys/gettimeofday.c 42>
+  163 							timezone: char * (), <./gen/FreeBSD/timezone.c 56>
+  164 								getenv: <>
+  165 								index: 28
+  166 								strncpy: 124
+  167 							localtime: <>
+  168 						getpid: <>
+  169 					arc4_addrandom: inline void (), <./gen/FreeBSD/arc4random.c 110>
+  170 					arc4_getbyte: inline u_int8_t (), <./gen/FreeBSD/arc4random.c 175>
+  171 			arc4_getword: inline u_int32_t (), <./gen/FreeBSD/arc4random.c 190>
+  172 				arc4_getbyte: 170
+  173 			THREAD_UNLOCK: <>
+  174 			arc4_fetch: 161

@@ -1,0 +1,330 @@
+    1 	main: int (), <./gssd.c 583>
+    2 		getuid: <>
+    3 		setprogname: <>
+    4 		getopt: <>
+    5 		atoi: <>
+    6 		strcmp: <>
+    7 		Log: <>
+    8 		exit: <>
+    9 		getpwnam: <>
+   10 		Usage: void (), <./gsstest.c 129>
+   11 			Log: <>
+   12 			getprogname: <>
+   13 			exit: <>
+   14 		gethostname: <>
+   15 		getpwuid: <>
+   16 		strlen: <>
+   17 		printf: <>
+   18 		bootstrap_look_up: <>
+   19 		bootstrap_strerror: <>
+   20 		task_get_gssd_port: <>
+   21 		mach_task_self: <>
+   22 		mach_error_string: <>
+   23 		MACH_PORT_VALID: <>
+   24 		do_refcount: int (), <./gsstest.c 166>
+   25 			printf: <>
+   26 			mach_gss_hold_cred: <>
+   27 			strlen: <>
+   28 			getchar: <>
+   29 			mach_gss_unhold_cred: <>
+   30 			Log: <>
+   31 		strlcpy: <>
+   32 		strlcat: <>
+   33 		getchar: <>
+   34 		pthread_attr_init: <>
+   35 		pthread_attr_setdetachstate: <>
+   36 		pthread_mutex_init: <>
+   37 		pthread_cond_init: <>
+   38 		pthread_create: <>
+   39 		server: void * (), <./gsstest.c 685>
+   40 			pthread_mutex_init: <>
+   41 			pthread_cond_init: <>
+   42 			pthread_create: <>
+   43 			client: void * (), <./gsstest.c 560>
+   44 				read_channel: int (), <./gsstest.c 514>
+   45 					pthread_mutex_lock: <>
+   46 					pthread_cond_wait: <>
+   47 					waittime: void (), <./gsstest.c 463>
+   48 						random: <>
+   49 						nanosleep: <>
+   50 					pthread_mutex_unlock: <>
+   51 				Log: <>
+   52 				Debug: <>
+   53 				pthread_self: <>
+   54 				deallocate: void (), <./gsstest.c 506>
+   55 					vm_deallocate: <>
+   56 					mach_task_self: <>
+   57 				mach_gss_init_sec_context: <>
+   58 				mach_gss_init_sec_context_v2: <>
+   59 				exit: <>
+   60 				OSAtomicIncrement32: <>
+   61 				mach_error_string: <>
+   62 				write_channel: int (), <./gsstest.c 530>
+   63 					Log: <>
+   64 					pthread_cond_signal: <>
+   65 					pthread_mutex_unlock: <>
+   66 				HexDump: void (), <./gssd_util.c 1072>
+   67 					HexLine: void (), <./gssd_util.c 1028>
+   68 						memset: <>
+   69 					gssd_log: void (), <./gssd_util.c 928>
+   70 						pthread_once: <>
+   71 						gssd_log_init: void (), <./gssd_util.c 493>
+   72 							in_foreground: int (), <./gssd_util.c 429>
+   73 								open: <>
+   74 								tcgetpgrp: <>
+   75 								close: <>
+   76 								getpgid: <>
+   77 								getpid: <>
+   78 							traced: int (), <./gssd_util.c 98>
+   79 								sysctlnametomib: <>
+   80 								getpid: <>
+   81 								sysctl: <>
+   82 								gssd_log: 69
+   83 								strerror: <>
+   84 							asl_open: <>
+   85 							getprogname: <>
+   86 							asl_set_filter: <>
+   87 							regcomp: <>
+   88 							regerr: void (), <./gssd_util.c 118>
+   89 								regerror: <>
+   90 								Fatal: <>
+   91 						va_start: <>
+   92 						has_gss_conv: int (), <./gssd_util.c 688>
+   93 							regexec: <>
+   94 							regerr: 88
+   95 						g_vlog: void (), <./gssd_util.c 655>
+   96 							vfprintf: <>
+   97 							fflush: <>
+   98 							isatty: <>
+   99 							va_copy: <>
+  100 							vprintf: <>
+  101 							va_end: <>
+  102 							asl_vlog: <>
+  103 						va_end: <>
+  104 						fmt_parse: const char * (), <./gssd_util.c 855>
+  105 							regexec: <>
+  106 							regerr: 88
+  107 							va_arg: <>
+  108 							gss_strerror: char * (), <./gssd_util.c 364>
+  109 								pthread_once: <>
+  110 								gss_strerror_init: void (), <./gssd_util.c 356>
+  111 									regcomp: <>
+  112 									regerr: 88
+  113 								strdup: <>
+  114 								oid_name: char * (), <./gssd_util.c 166>
+  115 									gss_oid_equal: <>
+  116 									gss_oid_to_str: <>
+  117 									strdup: <>
+  118 									buf_to_str: char * (), <./gssd_util.c 83>
+  119 										malloc: <>
+  120 										memcpy: <>
+  121 										gss_release_buffer: <>
+  122 								Fatal: <>
+  123 								gss_alt_error: char * (), <./gssd_util.c 293>
+  124 									strdup: <>
+  125 									gss_error: const char * (), <./gssd_util.c 238>
+  126 									gss_call_error: const char * (), <./gssd_util.c 250>
+  127 									gss_sup_info: char * (), <./gssd_util.c 262>
+  128 										malloc: <>
+  129 										Fatal: <>
+  130 										strlcat: <>
+  131 									asprintf: <>
+  132 									free: <>
+  133 								gss_display_status: <>
+  134 								asprintf: <>
+  135 								free: <>
+  136 								buf_to_str: 118
+  137 								regexec: <>
+  138 								regerr: 88
+  139 							strlncpy: size_t (), <./gssd_util.c 750>
+  140 								strlncat: size_t (), <./gssd_util.c 731>
+  141 									strlen: <>
+  142 									Fatal: <>
+  143 							strnlen: <>
+  144 							slprintf: int (), <./gssd_util.c 718>
+  145 								va_start: <>
+  146 								vslprintf: int (), <./gssd_util.c 704>
+  147 									strlen: <>
+  148 									vsnprintf: <>
+  149 								va_end: <>
+  150 							free: <>
+  151 							va_copy: <>
+  152 							vslprintf: 146
+  153 							va_end: <>
+  154 							va_next: void (), <./gssd_util.c 765>
+  155 								va_arg: <>
+  156 						g_log: void (), <./gssd_util.c 677>
+  157 							va_start: <>
+  158 							g_vlog: 95
+  159 							va_end: <>
+  160 						strlen: <>
+  161 				close_channel: int (), <./gsstest.c 542>
+  162 					pthread_mutex_lock: <>
+  163 					pthread_cond_wait: <>
+  164 					pthread_cond_signal: <>
+  165 					pthread_mutex_unlock: <>
+  166 			Log: <>
+  167 			strerror: <>
+  168 			read_channel: 44
+  169 			deallocate: 54
+  170 			Debug: <>
+  171 			pthread_self: <>
+  172 			mach_gss_accept_sec_context: <>
+  173 			mach_gss_accept_sec_context_v2: <>
+  174 			strlen: <>
+  175 			exit: <>
+  176 			OSAtomicIncrement32: <>
+  177 			mach_error_string: <>
+  178 			write_channel: 62
+  179 			close_channel: 161
+  180 			pthread_join: <>
+  181 			CHANNEL_FAILED: <>
+  182 			memcmp: <>
+  183 			HexDump: 66
+  184 			pthread_mutex_destroy: <>
+  185 			pthread_cond_destroy: <>
+  186 			server_done: void (), <./gsstest.c 487>
+  187 				pthread_mutex_lock: <>
+  188 				pthread_cond_signal: <>
+  189 				pthread_mutex_unlock: <>
+  190 		strerror: <>
+  191 		waitall: void (), <./gsstest.c 497>
+  192 			pthread_mutex_lock: <>
+  193 			pthread_cond_wait: <>
+  194 			pthread_mutex_unlock: <>
+  195 		report_errors: void (), <./gsstest.c 478>
+  196 			printf: <>
+  197 		pthread_attr_destroy: <>
+  198 		mach_port_deallocate: <>
+  199 		setlinebuf: <>
+  200 		set_identity: void (), <./gssd.c 511>
+  201 			getenv: <>
+  202 			Debug: <>
+  203 			geteuid: <>
+  204 			uuidstr2sessioninfo: int (), <./gssd.c 424>
+  205 				uuid_parse: <>
+  206 			Log: <>
+  207 			join_session: int (), <./gssd.c 461>
+  208 				audit_session_port: <>
+  209 				Log: <>
+  210 				strerror: <>
+  211 				audit_session_join: <>
+  212 				mach_port_deallocate: <>
+  213 				current_task: <>
+  214 			setuid: <>
+  215 			getaudit: <>
+  216 			strerror: <>
+  217 		getprogname: <>
+  218 		checkin_or_register: kern_return_t (), <./gssd.c 382>
+  219 			bootstrap_check_in: <>
+  220 			Log: <>
+  221 			bootstrap_strerror: <>
+  222 			mach_port_allocate: <>
+  223 			mach_task_self: <>
+  224 			mach_error_string: <>
+  225 			mach_port_insert_right: <>
+  226 			bootstrap_register2: <>
+  227 		sigemptyset: <>
+  228 		sigaddset: <>
+  229 		traced: 78
+  230 		in_foreground: 72
+  231 		pthread_sigmask: <>
+  232 		set_debug_level_init: void (), <./gssd_util.c 534>
+  233 			disable_timeout: void () (), <./gssd_util.c 527>
+  234 		disable_timeout: void (), <./gssd.c 1719>
+  235 			pthread_mutex_lock: <>
+  236 			pthread_mutex_unlock: <>
+  237 		set_debug_level: void (), <./gssd_util.c 572>
+  238 			asl_get_filter: <>
+  239 			Log: <>
+  240 			ASL_FILTER_MASK: <>
+  241 			maximum: <>
+  242 			ASL_FILTER_MASK_UPTO: <>
+  243 			asl_set_filter: <>
+  244 			gssd_log: 69
+  245 			disable_timeout: void () (), <./gssd_util.c 527>
+  246 		gssd_init: void (), <./gssd.c 1451>
+  247 			krb5_set_home_dir_access: <>
+  248 			getpwnam: <>
+  249 			getgrnam: <>
+  250 			gethostname: <>
+  251 			canonicalize_host: char * (), <./gssd.c 1059>
+  252 				getipnodebyname: <>
+  253 				DEBUG: <>
+  254 				strdup: <>
+  255 				lowercase: char * (), <./gssd.c 1041>
+  256 					tolower: <>
+  257 				Log: <>
+  258 				getipnodebyaddr: <>
+  259 				strncmp: <>
+  260 				freehostent: <>
+  261 			Info: <>
+  262 			lowercase: 255
+  263 			sysconf: <>
+  264 			DEBUG: <>
+  265 			getpid: <>
+  266 			get_debug_level: int (), <./gssd_util.c 539>
+  267 			get_local_realms: int (), <./gssd.c 726>
+  268 				krb5_init_context: <>
+  269 				Log: <>
+  270 				krb5_free_context: <>
+  271 				krb5_get_default_realms: <>
+  272 			free_local_realms: void (), <./gssd.c 750>
+  273 				krb5_init_context: <>
+  274 				Log: <>
+  275 				krb5_free_host_realm: <>
+  276 				krb5_free_context: <>
+  277 		shutdown_thread: void * (), <./gssd.c 1613>
+  278 			pthread_setname_np: <>
+  279 			sigemptyset: <>
+  280 			sigaddset: <>
+  281 			notify_register_signal: <>
+  282 			asl_remote_notify_name: <>
+  283 			Log: <>
+  284 			notify_check: <>
+  285 			get_debug_level: 266
+  286 			sigwait: <>
+  287 			strerror: <>
+  288 			DEBUG: <>
+  289 			pthread_sigmask: <>
+  290 			raise: <>
+  291 			set_debug_level: 237
+  292 			Info: <>
+  293 			sigismember: <>
+  294 			pthread_mutex_lock: <>
+  295 			pthread_cond_broadcast: <>
+  296 			pthread_mutex_unlock: <>
+  297 		timeout_thread: void * (), <./gssd.c 1727>
+  298 			pthread_setname_np: <>
+  299 			pthread_mutex_lock: <>
+  300 			compute_new_timeout: void (), <./gssd.c 1707>
+  301 				gettimeofday: <>
+  302 			pthread_cond_timedwait: <>
+  303 			DEBUG: <>
+  304 			strerror: <>
+  305 			pthread_mutex_unlock: <>
+  306 		vproc_transaction_begin: <>
+  307 		time: <>
+  308 		DEBUG: <>
+  309 		ctime: <>
+  310 		new_worker_thread: void (), <./gssd.c 1548>
+  311 			pthread_mutex_lock: <>
+  312 			pthread_cond_wait: <>
+  313 			pthread_create: <>
+  314 			receive_message: void * (), <./gssd.c 1505>
+  315 				DEBUG: <>
+  316 				pthread_self: <>
+  317 				pthread_setname_np: <>
+  318 				mach_msg_server_once: <>
+  319 				MACH_RCV_TRAILER_ELEMENTS: <>
+  320 				MACH_RCV_TRAILER_TYPE: <>
+  321 				Info: <>
+  322 				mach_error_string: <>
+  323 				exit: <>
+  324 			Info: <>
+  325 			strerror: <>
+  326 			snprintf: <>
+  327 			pthread_setname_np: <>
+  328 			DEBUG: <>
+  329 			pthread_mutex_unlock: <>
+  330 		pthread_join: <>

@@ -1,0 +1,1048 @@
+    1 	main: int (), <./setclass.tproj/setclass.c 66>
+    2 		getopt: <>
+    3 		getmntopts: <>
+    4 		usage: void (), <./setclass.tproj/setclass.c 22>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 			AUTO_print_styles: void (), <./fdisk.tproj/auto.c 57>
+    8 				fprintf: <>
+    9 			printf: <>
+   10 		realpath: <>
+   11 		err: <>
+   12 			va_start: <>
+   13 			fprintf: <>
+   14 			vfprintf: <>
+   15 			va_end: <>
+   16 			exit: <>
+   17 		mount: <>
+   18 		exit: <>
+   19 		atoi: <>
+   20 		errx: <>
+   21 		malloc: <>
+   22 		DISK_fake_CHS: void (), <./fdisk.tproj/disk.c 133>
+   23 		DISK_get_sector_size: int (), <./fdisk.tproj/disk.c 264>
+   24 			DISK_open: int (), <./fdisk.tproj/disk.c 74>
+   25 				open: <>
+   26 				err: 11
+   27 				fstat: <>
+   28 				S_ISCHR: <>
+   29 				S_ISBLK: <>
+   30 				S_ISREG: <>
+   31 				errx: <>
+   32 			err: 11
+   33 			ioctl: <>
+   34 		DISK_getmetrics: int (), <./fdisk.tproj/disk.c 218>
+   35 			DISK_getlabelmetrics: DISK_metrics * (), <./fdisk.tproj/disk.c 158>
+   36 				DISK_open: 24
+   37 				malloc: <>
+   38 				fstat: <>
+   39 				err: 11
+   40 				S_ISREG: <>
+   41 				S_ISBLK: <>
+   42 				ioctl: <>
+   43 				free: <>
+   44 				DISK_fake_CHS: void (), <./fdisk.tproj/disk.c 133>
+   45 				DISK_close: int (), <./fdisk.tproj/disk.c 122>
+   46 					close: <>
+   47 			DISK_getbiosmetrics: DISK_metrics * (), <./fdisk.tproj/disk.c 202>
+   48 			errx: <>
+   49 		MBR_read_all: mbr_t * (), <./fdisk.tproj/mbr.c 472>
+   50 			DISK_open: 24
+   51 			MBR_alloc: mbr_t * (), <./fdisk.tproj/mbr.c 446>
+   52 				malloc: <>
+   53 				bzero: <>
+   54 			MBR_read: int (), <./fdisk.tproj/mbr.c 178>
+   55 				lseek: <>
+   56 				read: switch (), <./edquota.tproj/edquota.c 446>
+   57 			MBR_parse: void (), <./fdisk.tproj/mbr.c 127>
+   58 				memcpy: <>
+   59 				getshort: u_int16_t (), <./fdisk.tproj/misc.c 150>
+   60 				PRT_parse: void (), <./fdisk.tproj/part.c 205>
+   61 					getlong: u_int32_t (), <./fdisk.tproj/misc.c 167>
+   62 					memset: <>
+   63 			DISK_close: 45
+   64 		MBR_free: void (), <./fdisk.tproj/mbr.c 458>
+   65 			free: <>
+   66 		USER_print_disk: int (), <./fdisk.tproj/user.c 251>
+   67 			DISK_open: 24
+   68 			DISK_printmetrics: int (), <./fdisk.tproj/disk.c 292>
+   69 				printf: <>
+   70 			MBR_read_all: 49
+   71 			MBR_dump_all: void (), <./fdisk.tproj/mbr.c 534>
+   72 				MBR_dump: void (), <./fdisk.tproj/mbr.c 424>
+   73 					printf: <>
+   74 			MBR_print_all: void (), <./fdisk.tproj/mbr.c 526>
+   75 				MBR_print: void (), <./fdisk.tproj/mbr.c 162>
+   76 					printf: <>
+   77 					PRT_print: void (), <./fdisk.tproj/part.c 320>
+   78 						printf: <>
+   79 						PRT_ascii_id: const char * (), <./fdisk.tproj/part.c 190>
+   80 			MBR_free: 64
+   81 			DISK_close: 45
+   82 		open: <>
+   83 		warn: <>
+   84 		bzero: <>
+   85 		read: switch (), <./edquota.tproj/edquota.c 446>
+   86 		close: <>
+   87 		bcopy: <>
+   88 		MBR_make: void (), <./fdisk.tproj/mbr.c 147>
+   89 			memcpy: <>
+   90 			putshort: void (), <./fdisk.tproj/misc.c 158>
+   91 			PRT_make: void (), <./fdisk.tproj/part.c 260>
+   92 				PRT_check_chs: int (), <./fdisk.tproj/part.c 245>
+   93 				printf: <>
+   94 				putlong: void (), <./fdisk.tproj/misc.c 175>
+   95 		MBR_alloc: 51
+   96 		AUTO_init: int (), <./fdisk.tproj/auto.c 69>
+   97 			strcasecmp: <>
+   98 			warnx: <>
+   99 		MBR_parse_spec: mbr_t * (), <./fdisk.tproj/mbr.c 371>
+  100 			feof: <>
+  101 			fgets: <>
+  102 			MBR_alloc: 51
+  103 			MBR_parse_one_spec: int (), <./fdisk.tproj/mbr.c 279>
+  104 				isspace: <>
+  105 				strsep: <>
+  106 				parse_number: int (), <./fdisk.tproj/mbr.c 255>
+  107 					strtol: <>
+  108 				null_arg: inline int (), <./fdisk.tproj/mbr.c 263>
+  109 				errx: <>
+  110 				PRT_fix_BN: void (), <./fdisk.tproj/part.c 341>
+  111 					memset: <>
+  112 					warn: <>
+  113 				PRT_fix_CHS: void (), <./fdisk.tproj/part.c 378>
+  114 					memset: <>
+  115 			bzero: <>
+  116 		USER_write: int (), <./fdisk.tproj/user.c 94>
+  117 			printf: <>
+  118 			ask_yn: int (), <./fdisk.tproj/misc.c 129>
+  119 				printf: <>
+  120 				fflush: <>
+  121 				getchar: <>
+  122 				errx: <>
+  123 			DISK_openshared: int (), <./fdisk.tproj/disk.c 93>
+  124 				open: <>
+  125 				err: 11
+  126 				fstat: <>
+  127 				S_ISCHR: <>
+  128 				S_ISBLK: <>
+  129 				S_ISREG: <>
+  130 				errx: <>
+  131 			MBR_make: 88
+  132 			MBR_write: int (), <./fdisk.tproj/mbr.c 201>
+  133 				lseek: <>
+  134 				write: <>
+  135 				ioctl: <>
+  136 			DISK_close: 45
+  137 			MBR_write_all: int (), <./fdisk.tproj/mbr.c 508>
+  138 				DISK_open: 24
+  139 				MBR_make: 88
+  140 				MBR_write: 132
+  141 				DISK_close: 45
+  142 		USER_modify: int (), <./fdisk.tproj/user.c 139>
+  143 			MBR_alloc: 51
+  144 			DISK_open: 24
+  145 			MBR_read: 54
+  146 			DISK_close: 45
+  147 			MBR_parse: 57
+  148 			ask_yn: 118
+  149 			strcpy: <>
+  150 			Xerase: int (), <./fdisk.tproj/cmd.c 71>
+  151 				bzero: <>
+  152 			printf: <>
+  153 			fflush: <>
+  154 			ask_cmd: int (), <./fdisk.tproj/misc.c 64>
+  155 				fgets: <>
+  156 				errx: <>
+  157 				strlen: <>
+  158 				strspn: <>
+  159 				strcspn: <>
+  160 				strncpy: <>
+  161 			strstr: <>
+  162 			strcmp: if (), <./edquota.tproj/edquota.c 340>
+  163 				printf: <>
+  164 			fcn: <>
+  165 			DISK_openshared: 123
+  166 			close: <>
+  167 			MBR_make: 88
+  168 			MBR_write: 132
+  169 			MBR_free: 64
+  170 		free: <>
+  171 		strrchr: <>
+  172 		a_gid: gid_t (), <./mount_hfs.tproj/mount_hfs.c 651>
+  173 			isdigit: if (), <./disklib/preen.c 229>
+  174 			atoi: <>
+  175 			getgrnam: <>
+  176 			errx: <>
+  177 		isdigit: if (), <./disklib/preen.c 229>
+  178 		get_num: UInt64 (), <./newfs_hfs.tproj/newfs_hfs.c 135>
+  179 			strtoull: <>
+  180 			tolower: <>
+  181 		printf: <>
+  182 		a_mask: mode_t (), <./newfs_hfs.tproj/newfs_hfs.c 480>
+  183 			strtol: <>
+  184 			errx: <>
+  185 		a_uid: uid_t (), <./newfs_hfs.tproj/newfs_hfs.c 461>
+  186 			getpwnam: <>
+  187 			isdigit: if (), <./disklib/preen.c 229>
+  188 			atoi: <>
+  189 			errx: <>
+  190 		fatal: <>
+  191 			va_start: <>
+  192 			fcntl: <>
+  193 			openlog: <>
+  194 			vsyslog: <>
+  195 			closelog: <>
+  196 			vwarnx: <>
+  197 			va_end: <>
+  198 			exit: <>
+  199 		getclumpopts: void (), <./newfs_hfs.tproj/newfs_hfs.c 399>
+  200 			strsep: <>
+  201 			strchr: <>
+  202 			usage: 4
+  203 			atoi: <>
+  204 		getnodeopts: void (), <./newfs_hfs.tproj/newfs_hfs.c 357>
+  205 			strsep: <>
+  206 			strchr: <>
+  207 			usage: 4
+  208 			atoi: <>
+  209 			fatal: 190
+  210 		strlen: <>
+  211 		strlcpy: <>
+  212 		rawdevice: const char * (), <./mount_hfs.tproj/mount_hfs.c 163>
+  213 			strncmp: <>
+  214 			strlen: <>
+  215 			snprintf: <>
+  216 		snprintf: <>
+  217 		getmntinfo: <>
+  218 		strerror: <>
+  219 		strcmp: 162
+  220 		hfs_newfs: int (), <./newfs_hfs.tproj/newfs_hfs.c 664>
+  221 			open: <>
+  222 			fcntl: <>
+  223 			fatal: 190
+  224 			strerror: <>
+  225 			fstat: <>
+  226 			ioctl: <>
+  227 			MIN: <>
+  228 			time: , <./edquota.tproj/edquota.c 1092>
+  229 			bad_disk_size: int (), <./newfs_hfs.tproj/newfs_hfs.c 504>
+  230 				get_high_bit: int (), <./newfs_hfs.tproj/newfs_hfs.c 587>
+  231 			validate_hfsplus_block_size: void (), <./newfs_hfs.tproj/newfs_hfs.c 604>
+  232 				get_high_bit: 230
+  233 				fatal: 190
+  234 				warnx: <>
+  235 			hfsplus_params: void (), <./newfs_hfs.tproj/newfs_hfs.c 807>
+  236 				geteuid: <>
+  237 				getegid: <>
+  238 				printf: <>
+  239 				strncpy: <>
+  240 				ROUNDUP: <>
+  241 				clumpsizecalc: UInt32 (), <./newfs_hfs.tproj/newfs_hfs.c 1062>
+  242 					fatal: 190
+  243 				CalcHFSPlusBTreeClumpSize: UInt32 (), <./newfs_hfs.tproj/newfs_hfs.c 1134>
+  244 					MAX: <>
+  245 				fatal: 190
+  246 				warnx: <>
+  247 			make_hfsplus: int (), <./newfs_hfs.tproj/makehfs.c 206>
+  248 				dowipefs: int (), <./newfs_hfs.tproj/makehfs.c 184>
+  249 					wipefs_alloc: <>
+  250 					wipefs_wipe: <>
+  251 					wipefs_free: <>
+  252 				malloc: <>
+  253 				err: 11
+  254 				getencodinghint: int (), <./newfs_hfs.tproj/makehfs.c 1621>
+  255 					getvfsbyname: <>
+  256 					sysctl: <>
+  257 					strlen: <>
+  258 					GetDefaultEncoding: UInt32 (), <./newfs_hfs.tproj/makehfs.c 1534>
+  259 						getpwuid: <>
+  260 						strlcpy: <>
+  261 						strlcat: <>
+  262 						open: <>
+  263 						read: switch (), <./edquota.tproj/edquota.c 446>
+  264 						close: <>
+  265 						strtol: <>
+  266 				InitVH: void (), <./newfs_hfs.tproj/makehfs.c 406>
+  267 					bzero: <>
+  268 					UTCToLocal: UInt32 (), <./newfs_hfs.tproj/makehfs.c 1511>
+  269 						gettimeofday: <>
+  270 					ENCODING_TO_BIT: <>
+  271 					GenerateVolumeUUID: void (), <./vsdbutil.tproj/vsdbutil_main.c 720>
+  272 						SHA1_Init: <>
+  273 						clock: <>
+  274 						SHA1_Update: <>
+  275 						sysctl: <>
+  276 						getloadavg: <>
+  277 						time: , <./edquota.tproj/edquota.c 1092>
+  278 						strncpy: <>
+  279 						asctime: <>
+  280 						gmtime: <>
+  281 						SHA1_Final: <>
+  282 						memcpy: <>
+  283 					OSSwapHostToBigInt32: <>
+  284 				WriteBuffer: void (), <./newfs_hfs.tproj/makehfs.c 1361>
+  285 					exit: <>
+  286 					MIN: <>
+  287 					valloc: <>
+  288 					pread: <>
+  289 					memcpy: <>
+  290 					bzero: <>
+  291 					pwrite: <>
+  292 					free: <>
+  293 					err: 11
+  294 				Largest: UInt32 (), <./newfs_hfs.tproj/makehfs.c 1464>
+  295 				valloc: <>
+  296 				bzero: <>
+  297 				AllocateExtent: void (), <./newfs_hfs.tproj/makehfs.c 582>
+  298 					memset: <>
+  299 				MarkBitInAllocationBuffer: void (), <./newfs_hfs.tproj/makehfs.c 1487>
+  300 				WriteExtentsFile: void (), <./newfs_hfs.tproj/makehfs.c 620>
+  301 					bzero: <>
+  302 					SWAP_BE16: <>
+  303 					SETOFFSET: <>
+  304 					SWAP_BE32: <>
+  305 					WriteBuffer: 284
+  306 				WriteMapNodes: void (), <./newfs_hfs.tproj/makehfs.c 1315>
+  307 					bzero: <>
+  308 					SWAP_BE16: <>
+  309 					SETOFFSET: <>
+  310 					SWAP_BE32: <>
+  311 					WriteBuffer: 284
+  312 				WriteAttributesFile: void (), <./newfs_hfs.tproj/makehfs.c 721>
+  313 					bzero: <>
+  314 					SWAP_BE16: <>
+  315 					SETOFFSET: <>
+  316 					SWAP_BE32: <>
+  317 					CFStringCreateWithCString: <>
+  318 					ConvertUTF8toUnicode: int (), <./newfs_hfs.tproj/makehfs.c 1559>
+  319 						SWAP_BE16: <>
+  320 					OSSwapHostToLittleInt16: <>
+  321 					memcpy: <>
+  322 					CFRelease: <>
+  323 					WriteBuffer: 284
+  324 				WriteCatalogFile: void (), <./newfs_hfs.tproj/makehfs.c 1006>
+  325 					bzero: <>
+  326 					SWAP_BE16: <>
+  327 					SETOFFSET: <>
+  328 					SWAP_BE32: <>
+  329 					InitCatalogRoot_HFSPlus: void (), <./newfs_hfs.tproj/makehfs.c 1106>
+  330 						bzero: <>
+  331 						SWAP_BE16: <>
+  332 						SETOFFSET: <>
+  333 						CFStringCreateWithCString: <>
+  334 						ConvertUTF8toUnicode: 318
+  335 						warnx: <>
+  336 						CFRelease: <>
+  337 						SWAP_BE32: <>
+  338 						bcopy: <>
+  339 						SWAP_BE64: <>
+  340 					WriteBuffer: 284
+  341 				WriteJournalInfo: int (), <./newfs_hfs.tproj/makehfs.c 945>
+  342 					memset: <>
+  343 					get_dev_uuid: int (), <./newfs_hfs.tproj/makehfs.c 898>
+  344 						strncmp: <>
+  345 						strlen: <>
+  346 						IOServiceGetMatchingService: <>
+  347 						IOBSDNameMatching: <>
+  348 						IORegistryEntryCreateCFProperty: <>
+  349 						CFSTR: <>
+  350 						CFStringGetFileSystemRepresentation: <>
+  351 						CFRelease: <>
+  352 						IOObjectRelease: <>
+  353 					strlcpy: <>
+  354 					clear_journal_dev: int (), <./newfs_hfs.tproj/makehfs.c 926>
+  355 						open: <>
+  356 						printf: <>
+  357 						strerror: <>
+  358 						dowipefs: 248
+  359 						close: <>
+  360 					printf: <>
+  361 					SWAP_BE32: <>
+  362 					SWAP_BE64: <>
+  363 					WriteBuffer: 284
+  364 				WriteVH: void (), <./newfs_hfs.tproj/makehfs.c 391>
+  365 					SWAP_HFSPLUSVH: <>
+  366 					WriteBuffer: 284
+  367 				free: <>
+  368 			printf: <>
+  369 			close: <>
+  370 		fprintf: <>
+  371 		hasquota: int (), <./quotacheck.tproj/quotacheck.c 799>
+  372 			snprintf: <>
+  373 			stat: (), <./edquota.tproj/edquota.c 767>
+  374 		repquota: int (), <./repquota.tproj/repquota.c 250>
+  375 			quotactl: <>
+  376 			QCMD: <>
+  377 			fprintf: <>
+  378 			printf: <>
+  379 			fopen: <>
+  380 			perror: <>
+  381 			fread: <>
+  382 			OSSwapBigToHostInt32: <>
+  383 			OSSwapInt32: <>
+  384 			fclose: <>
+  385 			powerof2: <>
+  386 			feof: <>
+  387 			getpwuid: <>
+  388 			getgrgid: <>
+  389 			OSSwapBigToHostInt64: <>
+  390 		oneof: <>
+  391 		setgrent: <>
+  392 		getgrent: <>
+  393 		addid: <>
+  394 		endgrent: <>
+  395 		setpwent: <>
+  396 		getpwent: <>
+  397 		endpwent: <>
+  398 		setfsent: <>
+  399 		getfsent: <>
+  400 		endfsent: <>
+  401 		makevfslist: const char ** (), <./disklib/vfslist.c 83>
+  402 		getpid: <>
+  403 		sysctlbyname: <>
+  404 		checkvfsname: <>
+  405 		umountfs: int (), <./umount.tproj/umount.c 275>
+  406 			getmntname: char * (), <./umount.tproj/umount.c 527>
+  407 				getmntinfo: <>
+  408 				warn: <>
+  409 				strcmp: 162
+  410 			time: , <./edquota.tproj/edquota.c 1092>
+  411 			pthread_create: <>
+  412 			syncit: void * (), <./umount.tproj/umount.c 106>
+  413 				fsctl: <>
+  414 				warn: <>
+  415 				pthread_mutex_lock: <>
+  416 				pthread_cond_signal: <>
+  417 				pthread_mutex_unlock: <>
+  418 			pthread_mutex_lock: <>
+  419 			pthread_cond_timedwait: <>
+  420 			pthread_mutex_unlock: <>
+  421 			warn: <>
+  422 			realpath: <>
+  423 			stat: (), <./edquota.tproj/edquota.c 767>
+  424 			S_ISBLK: <>
+  425 			S_ISDIR: <>
+  426 			warnx: <>
+  427 			strcmp: 162
+  428 			checkvfsname: <>
+  429 			strncmp: <>
+  430 			isxdigit: <>
+  431 			inet_pton: <>
+  432 			getipnodebyname: <>
+  433 			namematch: int (), <./umount.tproj/umount.c 571>
+  434 				strcasecmp: <>
+  435 				strchr: <>
+  436 			freehostent: <>
+  437 			printf: <>
+  438 			unmount: <>
+  439 			getuid: if (), <./edquota.tproj/edquota.c 152>
+  440 			unmount_by_fsid: int (), <./umount.tproj/umount.c 633>
+  441 				getmntfsid: int (), <./umount.tproj/umount.c 552>
+  442 					getmntinfo: <>
+  443 					warn: <>
+  444 					strcmp: 162
+  445 				printf: <>
+  446 				sysctl_fsid: int (), <./umount.tproj/umount.c 603>
+  447 					sysctlnametomib: <>
+  448 					warn: <>
+  449 					bzero: <>
+  450 					sysctl: <>
+  451 			fprintf: <>
+  452 			strerror: <>
+  453 		umountall: int (), <./umount.tproj/umount.c 230>
+  454 			getfsent: <>
+  455 			strcmp: 162
+  456 			getvfsbyname: <>
+  457 			warnx: <>
+  458 			checkvfsname: <>
+  459 			malloc: <>
+  460 			strlen: <>
+  461 			err: 11
+  462 			strcpy: <>
+  463 			umountall: 453
+  464 			umountfs: 405
+  465 			free: <>
+  466 		sync: <>
+  467 		argtoi: int (), <./fsck.tproj/fsck.c 105>
+  468 			strtol: <>
+  469 			errx: <>
+  470 		signal: <>
+  471 		catchsig: void (), <./fsck.tproj/fsck.c 763>
+  472 			exit: <>
+  473 		catchquit: void (), <./fsck.tproj/fsck.c 754>
+  474 			printf: <>
+  475 			signal: <>
+  476 		usage: void (), <./fsck.tproj/fsck.c 115>
+  477 			fprintf: <>
+  478 		checkfstab: , <./disklib/preen.c 94>
+  479 			setfsent: <>
+  480 			fprintf: <>
+  481 			build_disklist: int (), <./fsck.tproj/fsck.c 344>
+  482 				setfsent: <>
+  483 				fprintf: <>
+  484 				getfsent: <>
+  485 				fs_checkable: int (), <./fsck.tproj/fsck.c 773>
+  486 					strcmp: 162
+  487 					strncmp: <>
+  488 					strlen: <>
+  489 				blockcheck: char * (), <./fstyp.tproj/fstyp_msdos.c 146>
+  490 					stat: (), <./edquota.tproj/edquota.c 767>
+  491 					perror: <>
+  492 					printf: <>
+  493 					kqueue: <>
+  494 					open: <>
+  495 					EV_SET: <>
+  496 					kevent: <>
+  497 					close: <>
+  498 					time: , <./edquota.tproj/edquota.c 1092>
+  499 					rawname: char * (), <./fstyp.tproj/fstyp_msdos.c 102>
+  500 						strrchr: <>
+  501 						strlcpy: <>
+  502 						strlcat: <>
+  503 						strcpy: <>
+  504 						strcat: <>
+  505 					unrawname: char * (), <./fstyp.tproj/fstyp_msdos.c 120>
+  506 						strrchr: <>
+  507 						stat: (), <./edquota.tproj/edquota.c 767>
+  508 						strlen: <>
+  509 						memmove: <>
+  510 						strcpy: <>
+  511 					plog: void (), <./fsck_hfs.tproj/utilities.c 760>
+  512 						va_start: <>
+  513 						setup_logging: void (), <./fsck_hfs.tproj/utilities.c 483>
+  514 							setlinebuf: <>
+  515 							fopen: <>
+  516 							time: , <./edquota.tproj/edquota.c 1092>
+  517 							fprintf: <>
+  518 							ctime: <>
+  519 							fflush: <>
+  520 							malloc: <>
+  521 							print_to_mem: void (), <./fsck_hfs.tproj/utilities.c 568>
+  522 								va_copy: <>
+  523 								pthread_mutex_lock: <>
+  524 								vsnprintf: <>
+  525 								snprintf: <>
+  526 								realloc: <>
+  527 								pthread_cond_signal: <>
+  528 								pthread_mutex_unlock: <>
+  529 								va_end: <>
+  530 							pthread_cond_init: <>
+  531 							signal: <>
+  532 							my_sighandler: void (), <./fsck_hfs.tproj/utilities.c 474>
+  533 								cleanup_fs_fd: void (), <./fsck_hfs.tproj/fsck_hfs.c 308>
+  534 									fcntl: <>
+  535 									close: <>
+  536 								exit: <>
+  537 							pthread_create: <>
+  538 							fsck_printing_thread: void * (), <./fsck_hfs.tproj/utilities.c 295>
+  539 								pthread_mutex_lock: <>
+  540 								pthread_cond_wait: <>
+  541 								fprintf: <>
+  542 								pthread_mutex_unlock: <>
+  543 								memcpy: <>
+  544 								memmove: <>
+  545 								printf: <>
+  546 								fflush: <>
+  547 							atexit: <>
+  548 							shutdown_logging: void (), <./fsck_hfs.tproj/utilities.c 366>
+  549 								fflush: <>
+  550 								fclose: <>
+  551 								pthread_mutex_lock: <>
+  552 								pthread_cond_signal: <>
+  553 								pthread_mutex_unlock: <>
+  554 								pthread_join: <>
+  555 								free: <>
+  556 								getuid: if (), <./edquota.tproj/edquota.c 152>
+  557 								fork: <>
+  558 								getpwuid: <>
+  559 								snprintf: <>
+  560 								fopen: <>
+  561 								fwrite: <>
+  562 								sleep: <>
+  563 						vfprintf: <>
+  564 						VFLOG: <>
+  565 						va_end: <>
+  566 					fprintf: <>
+  567 					strdup: <>
+  568 				checkfilesys: int (), <./fsck.tproj/fsck.c 647>
+  569 					signal: <>
+  570 					ignore_single_quit: void (), <./fsck.tproj/fsck.c 1149>
+  571 						sleep: <>
+  572 						signal: <>
+  573 					bzero: <>
+  574 					snprintf: <>
+  575 					strlen: <>
+  576 					stat: (), <./edquota.tproj/edquota.c 767>
+  577 					fprintf: <>
+  578 					fork: <>
+  579 					exit: <>
+  580 					execv: <>
+  581 					waitpid: <>
+  582 					WIFEXITED: if (), <./mount.tproj/mount.c 446>
+  583 					WEXITSTATUS: <>
+  584 					WIFSIGNALED: else if (), <./mount.tproj/mount.c 449>
+  585 					printf: <>
+  586 					WTERMSIG: <>
+  587 				addpart: void (), <./disklib/preen.c 258>
+  588 					finddisk: disk_t * (), <./fsck.tproj/fsck.c 1011>
+  589 						strrchr: <>
+  590 						isdigit: if (), <./disklib/preen.c 229>
+  591 						strlen: <>
+  592 						strncmp: <>
+  593 						malloc: <>
+  594 						fprintf: <>
+  595 						exit: <>
+  596 						strncpy: <>
+  597 					strcmp: 162
+  598 					printf: <>
+  599 					malloc: <>
+  600 					fprintf: <>
+  601 					exit: <>
+  602 					strlen: <>
+  603 					strcpy: <>
+  604 					strdup: <>
+  605 			do_diskchecks: int (), <./fsck.tproj/fsck.c 467>
+  606 				startdiskcheck: int (), <./fsck.tproj/fsck.c 615>
+  607 					fork: <>
+  608 					perror: <>
+  609 					exit: <>
+  610 					checkfilesys: 568
+  611 				sleep: <>
+  612 				wait: <>
+  613 				printf: <>
+  614 				WIFEXITED: if (), <./mount.tproj/mount.c 446>
+  615 				WEXITSTATUS: <>
+  616 				WIFSIGNALED: else if (), <./mount.tproj/mount.c 449>
+  617 				WTERMSIG: <>
+  618 				destroy_part: void (), <./fsck.tproj/fsck.c 1127>
+  619 					free: <>
+  620 			endfsent: <>
+  621 			getfsent: <>
+  622 			blockcheck: 489
+  623 			addpart: 587
+  624 			startdisk: <>
+  625 			sleep: <>
+  626 			wait: <>
+  627 			printf: <>
+  628 			WIFEXITED: if (), <./mount.tproj/mount.c 446>
+  629 			WEXITSTATUS: <>
+  630 			WIFSIGNALED: else if (), <./mount.tproj/mount.c 449>
+  631 			WTERMSIG: <>
+  632 		memset: <>
+  633 		strtoul: <>
+  634 		a_uid: uid_t (), <./mount_hfs.tproj/mount_hfs.c 673>
+  635 			isdigit: if (), <./disklib/preen.c 229>
+  636 			atoi: <>
+  637 			getpwnam: <>
+  638 			errx: <>
+  639 		a_mask: mode_t (), <./mount_hfs.tproj/mount_hfs.c 695>
+  640 			strtol: <>
+  641 			errx: <>
+  642 		a_encoding: struct hfs_mnt_encoding (), <./mount_hfs.tproj/mount_hfs.c 713>
+  643 		gettimeofday: <>
+  644 		load_encoding: int (), <./mount_hfs.tproj/mount_hfs.c 369>
+  645 			snprintf: <>
+  646 			stat: (), <./edquota.tproj/edquota.c 767>
+  647 			fprintf: <>
+  648 			fork: <>
+  649 			execl: <>
+  650 			exit: <>
+  651 			waitpid: <>
+  652 			WIFEXITED: if (), <./mount.tproj/mount.c 446>
+  653 		get_encoding_pref: int (), <./mount_hfs.tproj/mount_hfs.c 757>
+  654 		stat: (), <./edquota.tproj/edquota.c 767>
+  655 		getVolumeCreateDate: u_int32_t (), <./mount_hfs.tproj/mount_hfs.c 281>
+  656 			GetMasterBlock: void * (), <./mount_hfs.tproj/mount_hfs.c 203>
+  657 				rawdevice: 212
+  658 				open: <>
+  659 				fprintf: <>
+  660 				ioctl: <>
+  661 				malloc: <>
+  662 				pread: <>
+  663 				close: <>
+  664 				free: <>
+  665 			exit: <>
+  666 			SWAP_BE16: <>
+  667 			SWAP_BE32: <>
+  668 		syncCreateDate: void (), <./mount_hfs.tproj/mount_hfs.c 312>
+  669 			snprintf: <>
+  670 			getattrlist: <>
+  671 			setattrlist: <>
+  672 		check_uid: void (), <./vsdbutil.tproj/vsdbutil_main.c 220>
+  673 			geteuid: <>
+  674 			fprintf: <>
+  675 			exit: <>
+  676 		AdoptVolume: int (), <./vsdbutil.tproj/vsdbutil_main.c 332>
+  677 			GetVolumeUUID: int (), <./vsdbutil.tproj/vsdbutil_main.c 552>
+  678 				getattrlist: <>
+  679 				warn: <>
+  680 				GenerateVolumeUUID: 271
+  681 				OSSwapHostToBigInt32: <>
+  682 				setattrlist: <>
+  683 				OSSwapBigToHostInt32: <>
+  684 			warnx: <>
+  685 			strerror: <>
+  686 			OpenVolumeStatusDB: int (), <./vsdbutil.tproj/vsdbutil_main.c 840>
+  687 				malloc: <>
+  688 				open: <>
+  689 			GetVolumeStatusDBEntry: int (), <./vsdbutil.tproj/vsdbutil_main.c 871>
+  690 				LockDB: int (), <./vsdbutil.tproj/vsdbutil_main.c 1047>
+  691 					fprintf: <>
+  692 					flock: <>
+  693 				FindVolumeRecordByUUID: int (), <./vsdbutil.tproj/vsdbutil_main.c 1065>
+  694 					FormatDBKey: void (), <./vsdbutil.tproj/vsdbutil_main.c 1206>
+  695 						FormatUUID: void (), <./vsdbutil.tproj/vsdbutil_main.c 1198>
+  696 							FormatULong: void (), <./vsdbutil.tproj/vsdbutil_main.c 1180>
+  697 					lseek: <>
+  698 					GetVSDBEntry: int (), <./vsdbutil.tproj/vsdbutil_main.c 1127>
+  699 						lseek: <>
+  700 						fprintf: <>
+  701 						read: switch (), <./edquota.tproj/edquota.c 446>
+  702 						strncpy: <>
+  703 						memcpy: <>
+  704 					CompareVSDBKeys: int (), <./vsdbutil.tproj/vsdbutil_main.c 1157>
+  705 						strncpy: <>
+  706 						fprintf: <>
+  707 						memcmp: <>
+  708 					fprintf: <>
+  709 					memcpy: <>
+  710 				ConvertHexStringToULong: u_int32_t (), <./vsdbutil.tproj/vsdbutil_main.c 1232>
+  711 				UnlockDB: int (), <./vsdbutil.tproj/vsdbutil_main.c 1056>
+  712 					fprintf: <>
+  713 					flock: <>
+  714 			SetVolumeStatusDBEntry: int (), <./vsdbutil.tproj/vsdbutil_main.c 894>
+  715 				LockDB: 690
+  716 				FormatDBEntry: void (), <./vsdbutil.tproj/vsdbutil_main.c 1218>
+  717 					FormatDBKey: 694
+  718 					FormatDBRecord: void (), <./vsdbutil.tproj/vsdbutil_main.c 1212>
+  719 						FormatULong: 696
+  720 					fprintf: <>
+  721 				FindVolumeRecordByUUID: 693
+  722 				fprintf: <>
+  723 				UpdateVolumeRecord: int (), <./vsdbutil.tproj/vsdbutil_main.c 1108>
+  724 					strncpy: <>
+  725 					fprintf: <>
+  726 					lseek: <>
+  727 					write: <>
+  728 				AddVolumeRecord: int (), <./vsdbutil.tproj/vsdbutil_main.c 1091>
+  729 					strncpy: <>
+  730 					fprintf: <>
+  731 					lseek: <>
+  732 					write: <>
+  733 				fsync: <>
+  734 				UnlockDB: 711
+  735 			CloseVolumeStatusDB: int (), <./vsdbutil.tproj/vsdbutil_main.c 1024>
+  736 				close: <>
+  737 				free: <>
+  738 			sync: <>
+  739 			UpdateMountStatus: int (), <./vsdbutil.tproj/vsdbutil_main.c 237>
+  740 				statfs: if (), <./quotacheck.tproj/quotacheck.c 730>
+  741 				warn: <>
+  742 				snprintf: <>
+  743 				fork: <>
+  744 				execl: <>
+  745 				fprintf: <>
+  746 				wait4: <>
+  747 				WIFEXITED: if (), <./mount.tproj/mount.c 446>
+  748 		DisplayVolumeStatus: int (), <./vsdbutil.tproj/vsdbutil_main.c 502>
+  749 			GetVolumeUUID: 677
+  750 			warnx: <>
+  751 			strerror: <>
+  752 			OpenVolumeStatusDB: 686
+  753 			GetVolumeStatusDBEntry: 689
+  754 			printf: <>
+  755 			CloseVolumeStatusDB: 735
+  756 		DisownVolume: int (), <./vsdbutil.tproj/vsdbutil_main.c 390>
+  757 			GetVolumeUUID: 677
+  758 			warnx: <>
+  759 			strerror: <>
+  760 			OpenVolumeStatusDB: 686
+  761 			GetVolumeStatusDBEntry: 689
+  762 			SetVolumeStatusDBEntry: 714
+  763 			CloseVolumeStatusDB: 735
+  764 			sync: <>
+  765 			UpdateMountStatus: 739
+  766 		AdoptAllLocalVolumes: int (), <./vsdbutil.tproj/vsdbutil_main.c 302>
+  767 			getmntinfo: <>
+  768 			warn: <>
+  769 			strcmp: 162
+  770 			AdoptVolume: 676
+  771 		ClearVolumeUUID: int (), <./vsdbutil.tproj/vsdbutil_main.c 446>
+  772 			GetVolumeUUID: 677
+  773 			warnx: <>
+  774 			strerror: <>
+  775 			OpenVolumeStatusDB: 686
+  776 			GetVolumeStatusDBEntry: 689
+  777 			DeleteVolumeStatusDBEntry: int (), <./vsdbutil.tproj/vsdbutil_main.c 930>
+  778 				LockDB: 690
+  779 				FindVolumeRecordByUUID: 693
+  780 				fprintf: <>
+  781 				stat: (), <./edquota.tproj/edquota.c 767>
+  782 				malloc: <>
+  783 				lseek: <>
+  784 				read: switch (), <./edquota.tproj/edquota.c 446>
+  785 				write: <>
+  786 				ftruncate: <>
+  787 				fsync: <>
+  788 				free: <>
+  789 				UnlockDB: 711
+  790 			CloseVolumeStatusDB: 735
+  791 			sync: <>
+  792 			UpdateMountStatus: 739
+  793 			SetVolumeUUID: int (), <./vsdbutil.tproj/vsdbutil_main.c 604>
+  794 				getattrlist: <>
+  795 				warn: <>
+  796 				OSSwapHostToBigInt32: <>
+  797 				setattrlist: <>
+  798 		statfs: if (), <./quotacheck.tproj/quotacheck.c 730>
+  799 		quotaonoff: <>
+  800 		needchk: void * (), <./quotacheck.tproj/quotacheck.c 279>
+  801 			strcmp: 162
+  802 			malloc: <>
+  803 			err: 11
+  804 			strerror: <>
+  805 			hasquota: 371
+  806 			strlcpy: <>
+  807 			free: <>
+  808 		blockcheck: 489
+  809 		chkquota: int (), <./quotacheck.tproj/quotacheck.c 339>
+  810 		chdir: <>
+  811 		opendir: <>
+  812 		dbopen: <>
+  813 		readdir: <>
+  814 		lstat: <>
+  815 		S_ISCHR: <>
+  816 		S_ISBLK: <>
+  817 		rename: <>
+  818 		catopt: char * (), <./mount.tproj/mount.c 511>
+  819 		BADTYPE: <>
+  820 		hasopt: <>
+  821 		ismounted: <>
+  822 		mountfs: <>
+  823 		prmount: <>
+  824 		getmntpt: <>
+  825 		strchr: <>
+  826 		getfsfile: <>
+  827 		getfsspec: <>
+  828 		perror: <>
+  829 		ioctl: <>
+  830 		quotactl: <>
+  831 		showuid: void (), <./quota.tproj/quota.c 206>
+  832 			getpwuid: <>
+  833 			getuid: if (), <./edquota.tproj/edquota.c 152>
+  834 			printf: <>
+  835 			showquotas: void (), <./quota.tproj/quota.c 314>
+  836 				time: , <./edquota.tproj/edquota.c 1092>
+  837 				heading: <>
+  838 				printf: <>
+  839 				dbtob: <>
+  840 				snprintf: <>
+  841 				sprintf: <>
+  842 				malloc: <>
+  843 				free: <>
+  844 				strcmp: 162
+  845 				realloc: <>
+  846 				strdup: <>
+  847 				QCMD: <>
+  848 				getmntinfo: <>
+  849 				fprintf: <>
+  850 				exit: <>
+  851 				init_list: void * (), <./quota.tproj/quota.c 497>
+  852 				hasseen: int (), <./quota.tproj/quota.c 528>
+  853 				quotactl: <>
+  854 				hasquota: 371
+  855 				bcopy: <>
+  856 				open: <>
+  857 				perror: <>
+  858 				qflookup: int (), <./edquota.tproj/edquota.c 547>
+  859 				close: <>
+  860 				strlcpy: <>
+  861 				free_list: void (), <./quota.tproj/quota.c 513>
+  862 				setfsent: <>
+  863 				getfsent: <>
+  864 				lseek: <>
+  865 				read: switch (), <./edquota.tproj/edquota.c 446>
+  866 				bzero: <>
+  867 				endfsent: <>
+  868 				OSSwapBigToHostInt32: <>
+  869 				powerof2: 385
+  870 				dqhash1: <>
+  871 				dqhashshift: <>
+  872 				dqhash2: <>
+  873 				dqoffset: <>
+  874 				OSSwapBigToHostInt64: 389
+  875 				stat: (), <./edquota.tproj/edquota.c 767>
+  876 				isdigit: if (), <./disklib/preen.c 229>
+  877 		getuid: if (), <./edquota.tproj/edquota.c 152>
+  878 		getgroups: <>
+  879 		showgid: void (), <./quota.tproj/quota.c 252>
+  880 			getgrgid: <>
+  881 			getgroups: <>
+  882 			perror: <>
+  883 			getuid: if (), <./edquota.tproj/edquota.c 152>
+  884 			fprintf: <>
+  885 			showquotas: 835
+  886 		alldigits: <>
+  887 		showusrname: void (), <./quota.tproj/quota.c 229>
+  888 			getpwnam: <>
+  889 			fprintf: <>
+  890 			getuid: if (), <./edquota.tproj/edquota.c 152>
+  891 			showquotas: 835
+  892 		showgrpname: void (), <./quota.tproj/quota.c 285>
+  893 			getgrnam: <>
+  894 			fprintf: <>
+  895 			getgroups: <>
+  896 			perror: <>
+  897 			getuid: if (), <./edquota.tproj/edquota.c 152>
+  898 			showquotas: 835
+  899 		plog: 511
+  900 		getblocklist: int (), <./fsck_hfs.tproj/fsck_hfs.c 839>
+  901 			malloc: <>
+  902 			pfatal: <>
+  903 				setup_logging: 513
+  904 				va_start: <>
+  905 				vfprintf: <>
+  906 				VFLOG: <>
+  907 				va_end: <>
+  908 				fprintf: <>
+  909 				FLOG: <>
+  910 				exit: <>
+  911 			fopen: <>
+  912 			fscanf: <>
+  913 			realloc: <>
+  914 			fclose: <>
+  915 			printf: <>
+  916 		strtoull: <>
+  917 		tolower: <>
+  918 		fplog: void (), <./fsck_hfs.tproj/utilities.c 797>
+  919 			va_start: <>
+  920 			setup_logging: 513
+  921 			vfprintf: <>
+  922 			VFLOG: <>
+  923 			va_end: <>
+  924 		strcasecmp: <>
+  925 		strtol: <>
+  926 		catch: void (), <./fsck_hfs.tproj/utilities.c 248>
+  927 			ckfini: void (), <./fsck_hfs.tproj/utilities.c 110>
+  928 				CacheDestroy: int (), <./fsck_hfs.tproj/cache.c 292>
+  929 					CacheFlush: int (), <./fsck_hfs.tproj/cache.c 820>
+  930 						CacheRawWrite: int (), <./fsck_hfs.tproj/cache.c 1282>
+  931 							lseek: <>
+  932 							write: <>
+  933 						printf: <>
+  934 					printf: <>
+  935 					LRUDestroy: int (), <./fsck_hfs.tproj/cache.c 1335>
+  936 				close: <>
+  937 				flush: <>
+  938 				reply: int (), <./fsck_hfs.tproj/utilities.c 77>
+  939 					pfatal: 902
+  940 					strcmp: 162
+  941 					plog: 511
+  942 					fflush: <>
+  943 					getc: <>
+  944 					feof: <>
+  945 				sbdirty: <>
+  946 				free: <>
+  947 				errx: <>
+  948 				plog: 511
+  949 			exit: <>
+  950 		checkfilesys: 568
+  951 		convertfmt: char * (), <./fsck_hfs.tproj/fsck_messages.c 208>
+  952 			strchr: <>
+  953 			calloc: <>
+  954 			strlen: <>
+  955 			sprintf: <>
+  956 		fsckCreate: fsck_ctx_t (), <./fsck_hfs.tproj/fsck_messages.c 261>
+  957 			calloc: <>
+  958 			fsckAddMessages: int (), <./fsck_hfs.tproj/fsck_messages.c 625>
+  959 				realloc: <>
+  960 				qsort: <>
+  961 				msgCompar: int (), <./fsck_hfs.tproj/fsck_messages.c 603>
+  962 			fsckDestroy: void (), <./fsck_hfs.tproj/fsck_messages.c 573>
+  963 				free: <>
+  964 				fclose: <>
+  965 				Block_release: <>
+  966 			fsckSetWriter: int (), <./fsck_hfs.tproj/fsck_messages.c 346>
+  967 			stdprint: void (), <./fsck_hfs.tproj/fsck_messages.c 136>
+  968 				fputs: <>
+  969 				fflush: <>
+  970 		fsckSetStyle: <>
+  971 		fsckSetDefaultResponse: int (), <./fsck_hfs.tproj/fsck_messages.c 471>
+  972 		fsckSetOutput: int (), <./fsck_hfs.tproj/fsck_messages.c 363>
+  973 		fsckPrint: int (), <./fsck_hfs.tproj/fsck_messages.c 921>
+  974 			va_start: <>
+  975 			findmessage: fsck_message_t * (), <./fsck_hfs.tproj/fsck_messages.c 677>
+  976 				bsearch: <>
+  977 				bCompar: int (), <./fsck_hfs.tproj/fsck_messages.c 662>
+  978 			assert: <>
+  979 			fsckPrintString: int (), <./fsck_hfs.tproj/fsck_messages.c 741>
+  980 				fsckPrintToString: char * (), <./fsck_hfs.tproj/fsck_messages.c 704>
+  981 					vasprintf: <>
+  982 					asprintf: <>
+  983 					free: <>
+  984 				printargs: void (), <./fsck_hfs.tproj/fsck_messages.c 121>
+  985 					va_start: <>
+  986 					printv: void (), <./fsck_hfs.tproj/fsck_messages.c 78>
+  987 						vsnprintf: <>
+  988 						malloc: <>
+  989 						strcpy: <>
+  990 						free: <>
+  991 				free: <>
+  992 			fsckPrintGUI: int (), <./fsck_hfs.tproj/fsck_messages.c 849>
+  993 				convertfmt: 951
+  994 				printargs: 984
+  995 				va_arg: <>
+  996 				free: <>
+  997 			fsckPrintXML: int (), <./fsck_hfs.tproj/fsck_messages.c 762>
+  998 				convertfmt: 951
+  999 				printargs: 984
+ 1000 				typestring: const char * (), <./fsck_hfs.tproj/fsck_messages.c 152>
+ 1001 				verbosity_string: const char * (), <./fsck_hfs.tproj/fsck_messages.c 185>
+ 1002 				va_arg: <>
+ 1003 				free: <>
+ 1004 			fsckPrintNothing: int (), <./fsck_hfs.tproj/fsck_messages.c 905>
+ 1005 			va_copy: <>
+ 1006 			fsckPrintToString: 980
+ 1007 			free: <>
+ 1008 		fsckAskPrompt: int (), <./fsck_hfs.tproj/fsck_messages.c 493>
+ 1009 			va_start: <>
+ 1010 			printv: 986
+ 1011 			fgetln: <>
+ 1012 			printargs: 984
+ 1013 		fsckDestroy: 962
+ 1014 		scandir: <>
+ 1015 		select_fstyp: int (), <./fstyp.tproj/fstyp.c 109>
+ 1016 			strlen: <>
+ 1017 			strncmp: <>
+ 1018 		test: int (), <./fstyp.tproj/fstyp.c 119>
+ 1019 			strlen: <>
+ 1020 			snprintf: <>
+ 1021 			popen: <>
+ 1022 			pclose: <>
+ 1023 			WIFEXITED: if (), <./mount.tproj/mount.c 446>
+ 1024 			WEXITSTATUS: <>
+ 1025 		puts: <>
+ 1026 		dealloc: void (), <./fstyp.tproj/fstyp.c 147>
+ 1027 			free: <>
+ 1028 		checkVolHdr: int (), <./fstyp.tproj/fstyp_msdos.c 188>
+ 1029 			memcmp: <>
+ 1030 			strncmp: <>
+ 1031 		CheckUDF: int (), <./fstyp.tproj/fstyp_udf.c 139>
+ 1032 			err: 11
+ 1033 			lseek: <>
+ 1034 			warn: <>
+ 1035 			read: switch (), <./edquota.tproj/edquota.c 446>
+ 1036 			IsVSD: int (), <./fstyp.tproj/fstyp_udf.c 113>
+ 1037 				memcmp: <>
+ 1038 				fprintf: <>
+ 1039 			memcmp: <>
+ 1040 		pread: <>
+ 1041 		chartoclass: int (), <./setclass.tproj/setclass.c 31>
+ 1042 			usage: 4
+ 1043 			exit: <>
+ 1044 		S_ISDIR: <>
+ 1045 		S_ISREG: <>
+ 1046 		open_dprotected_np: <>
+ 1047 		fcntl: <>
+ 1048 		classtochar: char (), <./setclass.tproj/setclass.c 60>
