@@ -60,14 +60,15 @@ def main(fileName):
 
             badArguments = targetline.split(", ")
 
-            print("Line", item, "calls", targetword, "with ", end = "")
-            print(*badArguments, sep=', ')
+            # print("Line", item, "calls", targetword, "with ", end = "")
+            print ("error = " + targetword + ", line = " + str(item) + ", comment = [ERROR] ", end = "")
+            # print(*badArguments, sep=', ')
             # ok, now we have the arguments for the badword function in targetline
             # simple vulnerability check - are we calling from argv
             if "argv" in targetline:
-                print("\targv called in vulnerable function!")
+                print("argv called in vulnerable function!")
             if "cat " in targetline:
-                print("\tcat called in vulnerable function")
+                print("cat called in vulnerable function")
 
             # hard part - finding user-vulnerable strings that are passed to the function
             # start by hunting for variables that are declared previously as char * or char ____ [___]
@@ -94,10 +95,10 @@ def find_bounds_issues(line, variable):
     # look for target of no bound call issues
     for call in no_bound_calls:
         if((call in frontHalf) and (string_with_open_parenthesis(frontHalf))):
-            print("Vulnerable input via", call)
+            print("error = Vulnerable input via", call)
             return call  # this is the front half check, e.g. scanf(badsource, vulnerable_variable)
         elif((call in backHalf) and (detect_variable_is_array(backHalf)) or (detect_variable_is_char_star(frontHalf)) and (assignment_before_call(backHalf, call))):
-            print("Vulnerable input via", call)
+            print("error = Vulnerable input via", call)
             return call # this is the back half check for badness, e.g. = strcpy(badness, badness)
                 # look for user-editable files and such
     if(('=' in backHalf) and ("/bin" in backHalf)):
@@ -105,7 +106,7 @@ def find_bounds_issues(line, variable):
         inputStart = backHalf.find("/bin")
         theEnding = backHalf.split("/bin",1)[1]
         inputEnd = theEnding.find("\"")
-        print("Vulnerable input from user-accessable file in ", backHalf[inputStart:inputEnd])
+        print("error = Vulnerable input from user-accessable file in ", backHalf[inputStart:inputEnd])
         return 1 #anything will count as true here, will add more for handler function
 
 
