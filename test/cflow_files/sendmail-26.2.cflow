@@ -1,0 +1,1143 @@
+    1 	main: int (), <./sendmail/makemap/makemap.c 77>
+    2 		close: , <./sendmail/sendmail/udb.c 1141>
+    3 		umask: <>
+    4 		openlog: <>
+    5 		getopt: <>
+    6 		mailerr: <>
+    7 		usage: void (), <./sendmail/vacation/vacation.c 768>
+    8 			syslog: <>
+    9 			getuid: <>
+   10 			exit: <>
+   11 		notifybiff: <>
+   12 		dolmtp: void (), <./sendmail/mail.local/mail.local.c 470>
+   13 			gethostname: <>
+   14 			printf: <>
+   15 			fflush: <>
+   16 			fgets: <>
+   17 			exit: <>
+   18 			strlen: <>
+   19 				strlcat: <>
+   20 			strcasecmp: <>
+   21 				snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+   22 				newstr: <>
+   23 				tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   24 				dprintf: , <./sendmail/libsmutil/debug.c 23>
+   25 				bitnset: if (), <./sendmail/sendmail/parseaddr.c 1817>
+   26 					define: void (), <./sendmail/sendmail/macro.c 243>
+   27 					macid: <>
+   28 					rewrite: int (), <./sendmail/sendmail/parseaddr.c 774>
+   29 					strcmp: <>
+   30 						tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   31 						dprintf: , <./sendmail/libsmutil/debug.c 23>
+   32 						sendtolist: int (), <./sendmail/sendmail/recipient.c 52>
+   33 						returntosender: int (), <./sendmail/sendmail/savemail.c 476>
+   34 					copyplist: char ** (), <./sendmail/sendmail/util.c 407>
+   35 					tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   36 					dprintf: , <./sendmail/libsmutil/debug.c 23>
+   37 					printav: <>
+   38 					smtpmessage: <>
+   39 					udbsender: char * (), <./sendmail/sendmail/udb.c 568>
+   40 				strcmp: 29
+   41 			store: int (), <./sendmail/mail.local/mail.local.c 672>
+   42 				umask: <>
+   43 				strlcpy: <>
+   44 				mkstemp: <>
+   45 				fdopen: <>
+   46 				printf: <>
+   47 				mailerr: <>
+   48 				exit: <>
+   49 				unlink: <>
+   50 				fflush: <>
+   51 				time: <>
+   52 				fprintf: <>
+   53 				ctime: <>
+   54 				fgets: <>
+   55 				memcpy: <>
+   56 				fgetc: <>
+   57 				ungetc: <>
+   58 				ftell: <>
+   59 				memcmp: <>
+   60 					bitset: if (), <./sendmail/libsmutil/safefile.c 637>
+   61 						fprintf: <>
+   62 						denlstring: char * (), <./sendmail/sendmail/util.c 2051>
+   63 						bitset: 60
+   64 						commaize: <>
+   65 						tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   66 						dprintf: , <./sendmail/libsmutil/debug.c 23>
+   67 						dbm_fetch: <>
+   68 						queuename: <>
+   69 						fopen: <>
+   70 						syserr: , <./sendmail/makemap/makemap.c 554>
+   71 						queueup: <>
+   72 						milter_connect: char * (), <./sendmail/sendmail/milter.c 2232>
+   73 							tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   74 							dprintf: , <./sendmail/libsmutil/debug.c 23>
+   75 							htons: <>
+   76 							inet_ntoa: <>
+   77 							anynet_ntop: char * (), <./sendmail/sendmail/daemon.c 3124>
+   78 								IN6_IS_ADDR_V4MAPPED: <>
+   79 								inet_ntop: <>
+   80 							strlen: 18
+   81 							xalloc: <>
+   82 							memcpy: <>
+   83 							milter_command: char * (), <./sendmail/sendmail/milter.c 1394>
+   84 								tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   85 								dprintf: , <./sendmail/libsmutil/debug.c 23>
+   86 								milter_send_macros: void (), <./sendmail/sendmail/milter.c 1324>
+   87 									macid: <>
+   88 									macvalue: char * (), <./sendmail/sendmail/macro.c 284>
+   89 									strlen: 18
+   90 									xalloc: <>
+   91 									tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   92 									dprintf: , <./sendmail/libsmutil/debug.c 23>
+   93 									strlcpy: <>
+   94 									milter_write: char * (), <./sendmail/sendmail/milter.c 338>
+   95 										tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+   96 										dprintf: , <./sendmail/libsmutil/debug.c 23>
+   97 										sm_syslog: <>
+   98 										milter_error: void (), <./sendmail/sendmail/milter.c 1695>
+   99 											close: , <./sendmail/sendmail/udb.c 1141>
+  100 										htonl: <>
+  101 										memcpy: <>
+  102 										curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+  103 										MILTER_TIMEOUT: <>
+  104 										write: <>
+  105 										errstring: const char * (), <./sendmail/libsmutil/errstring.c 34>
+  106 											snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  107 											SPACELEFT: <>
+  108 											strerror: <>
+  109 											strlen: 18
+  110 											shortenstring: <>
+  111 											strlcpy: <>
+  112 											ldap_err2string: <>
+  113 									free: <>
+  114 								MILTER_CHECK_ERROR: <>
+  115 								bitset: 60
+  116 								milter_write: 94
+  117 								milter_read: char * (), <./sendmail/sendmail/milter.c 181>
+  118 									curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+  119 									MILTER_TIMEOUT: <>
+  120 									read: <>
+  121 									tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  122 									dprintf: , <./sendmail/libsmutil/debug.c 23>
+  123 									errstring: 105
+  124 									sm_syslog: <>
+  125 									milter_error: 98
+  126 									memcpy: <>
+  127 									ntohl: <>
+  128 									xalloc: <>
+  129 									free: <>
+  130 								MILTER_CHECK_REPLYCODE: <>
+  131 								sm_syslog: <>
+  132 								milter_error: 98
+  133 								free: <>
+  134 							free: <>
+  135 							milter_quit: void (), <./sendmail/sendmail/milter.c 2977>
+  136 								tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  137 								dprintf: , <./sendmail/libsmutil/debug.c 23>
+  138 								milter_quit_filter: void (), <./sendmail/sendmail/milter.c 1255>
+  139 									tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  140 									dprintf: , <./sendmail/libsmutil/debug.c 23>
+  141 									milter_write: 94
+  142 									close: , <./sendmail/sendmail/udb.c 1141>
+  143 							milter_per_connection_check: void (), <./sendmail/sendmail/milter.c 1670>
+  144 								milter_quit_filter: 138
+  145 						milter_helo: char * (), <./sendmail/sendmail/milter.c 2354>
+  146 							tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  147 							dprintf: , <./sendmail/libsmutil/debug.c 23>
+  148 							milter_command: 83
+  149 							strlen: 18
+  150 							milter_per_connection_check: 143
+  151 						usrerr: , <./sendmail/sendmail/err.c 198>
+  152 						free: <>
+  153 						milter_envfrom: char * (), <./sendmail/sendmail/milter.c 2382>
+  154 							tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  155 							dprintf: , <./sendmail/libsmutil/debug.c 23>
+  156 							milter_abort_filter: void (), <./sendmail/sendmail/milter.c 1294>
+  157 								tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  158 								dprintf: , <./sendmail/libsmutil/debug.c 23>
+  159 								milter_write: 94
+  160 							strlen: 18
+  161 							xalloc: <>
+  162 							strlcpy: <>
+  163 							milter_command: 83
+  164 							free: <>
+  165 							MILTER_CHECK_DONE_MSG: <>
+  166 						milter_envrcpt: char * (), <./sendmail/sendmail/milter.c 2465>
+  167 							tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  168 							dprintf: , <./sendmail/libsmutil/debug.c 23>
+  169 							strlen: 18
+  170 							xalloc: <>
+  171 							strlcpy: <>
+  172 							milter_command: 83
+  173 							free: <>
+  174 						drop_privileges: <>
+  175 						setstat: <>
+  176 						milter_header: char * (), <./sendmail/sendmail/milter.c 2522>
+  177 							tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  178 							dprintf: , <./sendmail/libsmutil/debug.c 23>
+  179 							strlen: 18
+  180 							xalloc: <>
+  181 							snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  182 							milter_command: 83
+  183 							free: <>
+  184 							MILTER_CHECK_DONE_MSG: <>
+  185 						xputs: <>
+  186 						expand: <>
+  187 						crackaddr: <>
+  188 						newstr: <>
+  189 						strrchr: <>
+  190 						safedirpath: int (), <./sendmail/libsmutil/safefile.c 389>
+  191 						lstat: <>
+  192 						errstring: 105
+  193 					xalloc: <>
+  194 					memmove: <>
+  195 					free: <>
+  196 					strlen: 18
+  197 				putc: <>
+  198 				strncasecmp: <>
+  199 				fwrite: <>
+  200 				ferror: if (), <./sendmail/sendmail/readcf.c 544>
+  201 					getc: <>
+  202 					clearerr: <>
+  203 				fclose: <>
+  204 				strchr: <>
+  205 				snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  206 				quad_to_string: <>
+  207 			strchr: 204
+  208 			deliver: void (), <./sendmail/mail.local/mail.local.c 880>
+  209 				getpwnam: <>
+  210 				printf: <>
+  211 				mailerr: <>
+  212 				endpwent: <>
+  213 				strlen: 18
+  214 				isascii: if (), <./sendmail/sendmail/headers.c 162>
+  215 				isprint: if (), <./sendmail/sendmail/util.c 700>
+  216 				snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  217 				lockmbox: <>
+  218 				e_to_sys: <>
+  219 				errstring: 105
+  220 				lstat: <>
+  221 				umask: <>
+  222 				open: <>
+  223 				fchown: <>
+  224 				S_ISREG: if (), <./sendmail/sendmail/readcf.c 127>
+  225 					tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  226 					dprintf: , <./sendmail/libsmutil/debug.c 23>
+  227 				fstat: <>
+  228 					close: , <./sendmail/sendmail/udb.c 1141>
+  229 					syserr: , <./sendmail/makemap/makemap.c 554>
+  230 				flock: <>
+  231 				lseek: <>
+  232 				quad_to_string: <>
+  233 				setreuid: <>
+  234 				getuid: <>
+  235 				geteuid: <>
+  236 					message: , <./sendmail/makemap/makemap.c 530>
+  237 					map_close: <>
+  238 					rebuildaliases: <>
+  239 					map_open: <>
+  240 				fprintf: <>
+  241 				read: <>
+  242 				write: <>
+  243 				fsync: <>
+  244 				ftruncate: <>
+  245 				close: , <./sendmail/sendmail/udb.c 1141>
+  246 				unlockmbox: <>
+  247 				truncate: <>
+  248 				notifybiff: <>
+  249 				maillock: <>
+  250 				mailunlock: <>
+  251 				time: <>
+  252 				sleep: <>
+  253 				stat: <>
+  254 				unlink: <>
+  255 				getservbyname: <>
+  256 				gethostbyname: <>
+  257 				memcpy: <>
+  258 				socket: <>
+  259 				sendto: <>
+  260 				exit: <>
+  261 				va_start: <>
+  262 				vprintf: <>
+  263 				vwarn: <>
+  264 				vfprintf: <>
+  265 				vsyslog: <>
+  266 				vsnprintf: int (), <./sendmail/libsmutil/snprintf.c 73>
+  267 				syslog: <>
+  268 				mkstemp: <>
+  269 				getpid: <>
+  270 				S_ISDIR: if (), <./sendmail/sendmail/mci.c 979>
+  271 				isdigit: if (), <./sendmail/sendmail/readcf.c 3106>
+  272 			close: , <./sendmail/sendmail/udb.c 1141>
+  273 			strncasecmp: <>
+  274 			parseaddr: ADDRESS * (), <./sendmail/sendmail/parseaddr.c 64>
+  275 				strlen: 18
+  276 				malloc: <>
+  277 				printf: <>
+  278 				exit: <>
+  279 				strlcpy: <>
+  280 			REALLOC: <>
+  281 			process_recipient: char * (), <./sendmail/mail.local/mail.local.c 459>
+  282 				getpwnam: <>
+  283 			free: <>
+  284 		getuid: <>
+  285 		getlogin: <>
+  286 		getpwnam: <>
+  287 		getpwuid: <>
+  288 		store: 41
+  289 		deliver: 208
+  290 		exit: <>
+  291 		strlcpy: <>
+  292 		strlcat: <>
+  293 		strcmp: 29
+  294 		fprintf: <>
+  295 		syslog: <>
+  296 		strlen: 18
+  297 		isascii: if (), <./sendmail/sendmail/headers.c 162>
+  298 		isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+  299 		strpbrk: <>
+  300 		addcmd: void (), <./sendmail/smrsh/smrsh.c 112>
+  301 			strlen: 18
+  302 			fprintf: <>
+  303 			syslog: <>
+  304 			exit: <>
+  305 			strlcat: <>
+  306 		printf: <>
+  307 		access: <>
+  308 		execle: <>
+  309 		perror: <>
+  310 		clrbitmap: <>
+  311 		getgid: <>
+  312 		snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  313 		praliases: void (), <./sendmail/praliases/praliases.c 229>
+  314 			strchr: 204
+  315 			isascii: if (), <./sendmail/sendmail/headers.c 162>
+  316 			isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+  317 			fprintf: <>
+  318 			memset: <>
+  319 			strlcpy: <>
+  320 			smdb_open_database: int (), <./sendmail/libsmdb/smdb.c 97>
+  321 			errstring: 105
+  322 			printf: <>
+  323 			strlen: 18
+  324 		fopen: <>
+  325 		errstring: 105
+  326 		fgets: <>
+  327 		strchr: 204
+  328 		strncasecmp: <>
+  329 		isalnum: <>
+  330 		fclose: <>
+  331 		printuids: void (), <./sendmail/test/t_seteuid.c 27>
+  332 			printf: <>
+  333 			getuid: <>
+  334 			geteuid: 235
+  335 		geteuid: 235
+  336 		seteuid: <>
+  337 		printuids: void (), <./sendmail/test/t_setreuid.c 24>
+  338 			printf: <>
+  339 			getuid: <>
+  340 			geteuid: 235
+  341 		setreuid: <>
+  342 		strcpy: <>
+  343 		mkstemp: <>
+  344 		pathconf: <>
+  345 		fpathconf: <>
+  346 		fchown: <>
+  347 		unlink: <>
+  348 		printuids: void (), <./sendmail/test/t_setuid.c 22>
+  349 			printf: <>
+  350 			getuid: <>
+  351 			geteuid: 235
+  352 		setuid: <>
+  353 		sprintf: <>
+  354 		getpid: <>
+  355 		time: <>
+  356 		symlink: <>
+  357 		bail: void (), <./sendmail/test/t_exclopen.c 46>
+  358 			unlink: <>
+  359 			exit: <>
+  360 		stat: <>
+  361 		open: <>
+  362 		syserr: , <./sendmail/makemap/makemap.c 554>
+  363 		abort: <>
+  364 		init_md: void (), <./sendmail/sendmail/conf.c 1408>
+  365 			setcompat: <>
+  366 			getcompat: <>
+  367 			init_md_sun: <>
+  368 			set_domain_trim_off: <>
+  369 			set_auth_parameters: <>
+  370 			getluid: <>
+  371 			setluid: <>
+  372 		getdtsize: <>
+  373 		fill_fd: void (), <./sendmail/sendmail/main.c 2640>
+  374 		bitset: 60
+  375 		checkfd012: void (), <./sendmail/sendmail/util.c 1424>
+  376 		seed_random: <>
+  377 		tTsetup: void (), <./sendmail/sendmail/trace.c 40>
+  378 		getgroups: <>
+  379 		drop_privileges: <>
+  380 		setstat: <>
+  381 		setsignal: sigfunc_t (), <./sendmail/sendmail/conf.c 1222>
+  382 		sigusr1: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 2483>
+  383 		initsetproctitle: void (), <./sendmail/sendmail/conf.c 2366>
+  384 			strlen: 18
+  385 			xalloc: <>
+  386 			newstr: <>
+  387 		obsolete: void (), <./sendmail/sendmail/main.c 2257>
+  388 		tTflag: <>
+  389 		setbuf: <>
+  390 		min: <>
+  391 		xalloc: <>
+  392 		closelog: <>
+  393 		putheader: <>
+  394 		putbody: <>
+  395 		STRUCTCOPY: <>
+  396 		setdefaults: <>
+  397 		sm_getpwuid: <>
+  398 		tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  399 		dprintf: , <./sendmail/libsmutil/debug.c 23>
+  400 		finis: , <./sendmail/sendmail/parseaddr.c 2790>
+  401 		getegid: <>
+  402 		newstr: <>
+  403 		getcfname: <>
+  404 		getextenv: <>
+  405 		putenv: <>
+  406 		setuserenv: <>
+  407 		intsig: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 2038>
+  408 		res_init: <>
+  409 		initmacros: <>
+  410 		init_vendor_macros: <>
+  411 		define: void (), <./sendmail/sendmail/macro.c 243>
+  412 		myhostname: char ** (), <./sendmail/sendmail/daemon.c 2937>
+  413 			fopen: <>
+  414 			fgets: <>
+  415 			fixcrlf: void (), <./sendmail/sendmail/util.c 814>
+  416 			fclose: <>
+  417 		setclass: void (), <./sendmail/sendmail/readcf.c 2965>
+  418 		uname: <>
+  419 		makelower: <>
+  420 		memmove: <>
+  421 		inet_ntoa: <>
+  422 		anynet_ntop: 77
+  423 		arpadate: <>
+  424 		sm_getla: int (), <./sendmail/sendmail/conf.c 2133>
+  425 			getla: int (), <./sendmail/sendmail/conf.c 2064>
+  426 				tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  427 				dprintf: , <./sendmail/libsmutil/debug.c 23>
+  428 			snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  429 			define: void (), <./sendmail/sendmail/macro.c 243>
+  430 			macid: <>
+  431 			newstr: <>
+  432 		strrchr: <>
+  433 		usrerr: , <./sendmail/sendmail/err.c 198>
+  434 		denlstring: char * (), <./sendmail/sendmail/util.c 2051>
+  435 		strtol: <>
+  436 		macid: <>
+  437 		strcasecmp: 20
+  438 		setoption: void (), <./sendmail/sendmail/readcf.c 1782>
+  439 		cleanstrcpy: <>
+  440 		convtime: time_t (), <./sendmail/sendmail/convtime.c 44>
+  441 			strcasecmp: 20
+  442 			isascii: if (), <./sendmail/sendmail/headers.c 162>
+  443 			isdigit: 271
+  444 			strchr: 204
+  445 			usrerr: , <./sendmail/sendmail/err.c 198>
+  446 		xtextok: bool (), <./sendmail/sendmail/savemail.c 1510>
+  447 		S_ISFIFO: <>
+  448 		setvbuf: <>
+  449 		setlinebuf: <>
+  450 		vendor_pre_defaults: <>
+  451 		readcf: void (), <./sendmail/sendmail/readcf.c 84>
+  452 		vendor_post_defaults: <>
+  453 		unsetenv: <>
+  454 		tzset: <>
+  455 		resetlimits: <>
+  456 		getauthinfo: char * (), <./sendmail/sendmail/daemon.c 2972>
+  457 			isatty: <>
+  458 			getpeername: <>
+  459 			snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  460 			tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  461 			dprintf: , <./sendmail/libsmutil/debug.c 23>
+  462 			newstr: <>
+  463 			hostnamebyanyaddr: <>
+  464 			strlen: 18
+  465 			anynet_ntoa: <>
+  466 			sm_gethostbyname: <>
+  467 			addrcmp: <>
+  468 			getsockname: <>
+  469 			ntohs: <>
+  470 			htons: <>
+  471 			getservbyname: <>
+  472 			setjmp: <>
+  473 			close: , <./sendmail/sendmail/udb.c 1141>
+  474 			setevent: EVENT * (), <./sendmail/sendmail/clock.c 47>
+  475 				syserr: , <./sendmail/makemap/makemap.c 554>
+  476 				blocksignal: int (), <./sendmail/sendmail/conf.c 1288>
+  477 				curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+  478 				xalloc: <>
+  479 				getpid: <>
+  480 				tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  481 				dprintf: , <./sendmail/libsmutil/debug.c 23>
+  482 				setsignal: sigfunc_t (), <./sendmail/sendmail/conf.c 1222>
+  483 				tick: SIGFUNC_DECL (), <./sendmail/sendmail/clock.c 207>
+  484 					getpid: <>
+  485 					alarm: <>
+  486 					curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+  487 					tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  488 					dprintf: , <./sendmail/libsmutil/debug.c 23>
+  489 					setsignal: sigfunc_t (), <./sendmail/sendmail/conf.c 1222>
+  490 					tick: 483
+  491 				alarm: <>
+  492 				releasesignal: int (), <./sendmail/sendmail/conf.c 1330>
+  493 			authtimeout: void (), <./sendmail/sendmail/daemon.c 2323>
+  494 				longjmp: <>
+  495 			socket: <>
+  496 			clrevent: <>
+  497 			bind: <>
+  498 			connect: <>
+  499 			write: <>
+  500 			read: <>
+  501 			strchr: 204
+  502 			isascii: if (), <./sendmail/sendmail/headers.c 162>
+  503 			isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+  504 			strncasecmp: <>
+  505 			cleanstrcpy: <>
+  506 			getsockopt: <>
+  507 			SPACELEFT: <>
+  508 			inet_ntoa: <>
+  509 			GET_IPOPT_DST: <>
+  510 			memcpy: <>
+  511 		expand: <>
+  512 		load_if_names: <>
+  513 		xputs: <>
+  514 		macvalue: char * (), <./sendmail/sendmail/macro.c 284>
+  515 		auth_warning: <>
+  516 		wordinclass: if (), <./sendmail/sendmail/parseaddr.c 907>
+  517 		sm_syslog: <>
+  518 		vendor_daemon_setup: <>
+  519 		sighup: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 2493>
+  520 		releasesignal: int (), <./sendmail/sendmail/conf.c 1330>
+  521 		rfc822_string: if (), <./sendmail/sendmail/headers.c 636>
+  522 			strchr: 204
+  523 		addquotes: char * (), <./sendmail/sendmail/util.c 78>
+  524 			xalloc: <>
+  525 		free: <>
+  526 		message: , <./sendmail/makemap/makemap.c 530>
+  527 		getvendor: <>
+  528 		stab: STAB * (), <./sendmail/sendmail/stab.c 44>
+  529 			tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  530 			dprintf: , <./sendmail/libsmutil/debug.c 23>
+  531 			lower: <>
+  532 			strcmp: 29
+  533 			strcasecmp: 20
+  534 			syserr: , <./sendmail/makemap/makemap.c 554>
+  535 			xalloc: <>
+  536 			memset: <>
+  537 			newstr: <>
+  538 		clrbitn: <>
+  539 		setbitn: <>
+  540 		multiqueue_cache: void (), <./sendmail/sendmail/queue.c 3053>
+  541 		path_is_dir: if (), <./sendmail/sendmail/mci.c 1355>
+  542 		milter_parse_list: void (), <./sendmail/sendmail/milter.c 959>
+  543 			isascii: if (), <./sendmail/sendmail/headers.c 162>
+  544 			isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+  545 			syserr: , <./sendmail/makemap/makemap.c 554>
+  546 			strpbrk: <>
+  547 			stab: 528
+  548 		dropenvelope: <>
+  549 		quiesce: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 1926>
+  550 			clear_events: void (), <./sendmail/sendmail/clock.c 161>
+  551 			finis: , <./sendmail/sendmail/parseaddr.c 2790>
+  552 		printqueue: void (), <./sendmail/sendmail/queue.c 2288>
+  553 		mci_traverse_persistent: int (), <./sendmail/sendmail/mci.c 955>
+  554 		mci_print_persistent: int (), <./sendmail/sendmail/mci.c 1109>
+  555 		mci_purge_persistent: int (), <./sendmail/sendmail/mci.c 1200>
+  556 		initmaps: void (), <./sendmail/sendmail/map.c 435>
+  557 		printrules: void (), <./sendmail/sendmail/readcf.c 1467>
+  558 		printmailer: <>
+  559 		newenvelope: <>
+  560 		isatty: <>
+  561 		fileno: <>
+  562 			syserr: , <./sendmail/makemap/makemap.c 554>
+  563 			setstat: <>
+  564 			ftruncate: <>
+  565 			fileno: 561
+  566 		setjmp: <>
+  567 		intindebug: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 1935>
+  568 			longjmp: <>
+  569 		fflush: <>
+  570 		testmodeline: void (), <./sendmail/sendmail/main.c 2682>
+  571 		runqueue: bool (), <./sendmail/sendmail/queue.c 637>
+  572 			run_single_queue: bool (), <./sendmail/sendmail/queue.c 694>
+  573 				sm_getla: 424
+  574 				curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+  575 				shouldqueue: if (), <./sendmail/sendmail/srvrsmtp.c 1628>
+  576 				message: , <./sendmail/makemap/makemap.c 530>
+  577 				sm_syslog: <>
+  578 				blocksignal: int (), <./sendmail/sendmail/conf.c 1288>
+  579 				setsignal: sigfunc_t (), <./sendmail/sendmail/conf.c 1222>
+  580 				reapchild: SIGFUNC_DECL (), <./sendmail/sendmail/conf.c 2613>
+  581 					waitpid: <>
+  582 					sm_syslog: <>
+  583 					wait3: <>
+  584 					wait: <>
+  585 					proc_list_drop: int (), <./sendmail/sendmail/util.c 2254>
+  586 					WIFEXITED: if (), <./sendmail/sendmail/deliver.c 2718>
+  587 					WEXITSTATUS: <>
+  588 					sighup: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 2493>
+  589 					intsig: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 2038>
+  590 					setsignal: sigfunc_t (), <./sendmail/sendmail/conf.c 1222>
+  591 					reapchild: 580
+  592 					strchr: 204
+  593 					strlen: 18
+  594 					strncmp: if (), <./sendmail/rmail/rmail.c 215>
+  595 					malloc: <>
+  596 					memcpy: <>
+  597 					realloc: <>
+  598 					memmove: <>
+  599 					setenv: <>
+  600 					getrlimit: <>
+  601 					getdtablesize: <>
+  602 					sysconf: <>
+  603 					fopen: <>
+  604 					fgets: <>
+  605 					fclose: <>
+  606 					sscanf: <>
+  607 					popen: <>
+  608 					pclose: <>
+  609 					initgroups: <>
+  610 					open: <>
+  611 					ioctl: <>
+  612 					close: , <./sendmail/sendmail/udb.c 1141>
+  613 					setpgrp: <>
+  614 					setpgid: <>
+  615 					getpid: <>
+  616 					fsync: <>
+  617 					fcntl: <>
+  618 					dgux_inet_addr: <>
+  619 					inet_addr: <>
+  620 					tell: <>
+  621 					vfprintf: <>
+  622 					fprintf: <>
+  623 					vsprintf: <>
+  624 					sprintf: <>
+  625 					usershellok: <>
+  626 					wordinclass: if (), <./sendmail/sendmail/parseaddr.c 907>
+  627 					setusershell: <>
+  628 					getusershell: <>
+  629 					strcmp: 29
+  630 					endusershell: <>
+  631 					getconfattr: <>
+  632 					errstring: 105
+  633 					isascii: if (), <./sendmail/sendmail/headers.c 162>
+  634 					isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+  635 					freediskspace: <>
+  636 					stat: <>
+  637 					ustat: <>
+  638 					statfs: <>
+  639 					statvfs: <>
+  640 					enoughdiskspace: if (), <./sendmail/sendmail/srvrsmtp.c 1208>
+  641 					tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  642 					dprintf: , <./sendmail/libsmutil/debug.c 23>
+  643 					transienterror: else if (), <./sendmail/sendmail/alias.c 917>
+  644 					lockfile: if (), <./sendmail/libsmutil/safefile.c 935>
+  645 						message: , <./sendmail/makemap/makemap.c 530>
+  646 						lockfile: 644
+  647 						fclose: <>
+  648 						memset: <>
+  649 						bitset: 60
+  650 						fcntl: <>
+  651 						flock: <>
+  652 					memset: <>
+  653 					bitset: 60
+  654 					syserr: , <./sendmail/makemap/makemap.c 554>
+  655 					geteuid: 235
+  656 					dumpfd: void (), <./sendmail/vacation/vacation.c 824>
+  657 					flock: <>
+  658 					chownsafe: <>
+  659 					bitnset: 25
+  660 					fpathconf: <>
+  661 					setrlimit: <>
+  662 					ulimit: <>
+  663 					ni_propval: char * (), <./sendmail/sendmail/map.c 5375>
+  664 						strlen: 18
+  665 						strlcpy: <>
+  666 						strlcat: <>
+  667 						tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  668 						dprintf: , <./sendmail/libsmutil/debug.c 23>
+  669 						ni_open: <>
+  670 						ni_free: <>
+  671 						ni_pathsearch: <>
+  672 						ni_lookupprop: <>
+  673 						ni_namelist_free: <>
+  674 						xalloc: <>
+  675 					setvendor: <>
+  676 					strcasecmp: 20
+  677 					sun_pre_defaults: <>
+  678 					setuserenv: <>
+  679 					getextenv: <>
+  680 					sun_post_defaults: <>
+  681 					setlogin: <>
+  682 					getluid: <>
+  683 					usrerr: , <./sendmail/sendmail/err.c 198>
+  684 					finis: , <./sendmail/sendmail/parseaddr.c 2790>
+  685 					setupshares: <>
+  686 					setup_secure: <>
+  687 					anynet_ntoa: <>
+  688 					rscheck: int (), <./sendmail/sendmail/parseaddr.c 2654>
+  689 					ISSMTPCODE: if (), <./sendmail/sendmail/err.c 736>
+  690 					isenhsc: <>
+  691 					strlcpy: <>
+  692 					hosts_ctl: <>
+  693 					strtol: <>
+  694 					isdigit: 271
+  695 					isalpha: <>
+  696 					isupper: <>
+  697 					gethostbyname: <>
+  698 					gethostbyaddr: <>
+  699 					getipnodebyname: struct hostent (), <./sendmail/sendmail/conf.c 4338>
+  700 					switch_map_find: int (), <./sendmail/sendmail/conf.c 813>
+  701 					shorten_hostname: void (), <./sendmail/sendmail/util.c 1748>
+  702 					anynet_ntop: 77
+  703 					inet_ntoa: <>
+  704 					getipnodebyaddr: struct hostent (), <./sendmail/sendmail/conf.c 4362>
+  705 					getpwnam: <>
+  706 					getpwuid: <>
+  707 					set_secure_info: <>
+  708 					IN6_IS_ADDR_LINKLOCAL: <>
+  709 					setclass: void (), <./sendmail/sendmail/readcf.c 2965>
+  710 					snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  711 					socket: <>
+  712 					xalloc: <>
+  713 					message: , <./sendmail/makemap/makemap.c 530>
+  714 					add_hostnames: <>
+  715 					free: <>
+  716 					isloopback: <>
+  717 					IN6_IS_ADDR_LOOPBACK: <>
+  718 					ntohl: <>
+  719 					sysctl: <>
+  720 					mpctl: <>
+  721 					srandomdev: <>
+  722 					gettimeofday: <>
+  723 					srandom: <>
+  724 					srand: <>
+  725 					VA_START: <>
+  726 					sm_dopr: void (), <./sendmail/libsmutil/snprintf.c 106>
+  727 					syslog: <>
+  728 					vsnprintf: int (), <./sendmail/libsmutil/snprintf.c 73>
+  729 					res_init: <>
+  730 				dofork: int (), <./sendmail/sendmail/deliver.c 909>
+  731 				errstring: 105
+  732 				releasesignal: int (), <./sendmail/sendmail/conf.c 1330>
+  733 				proc_list_add: void (), <./sendmail/sendmail/util.c 2157>
+  734 					proc_list_probe: void (), <./sendmail/sendmail/util.c 2306>
+  735 						kill: <>
+  736 						sm_syslog: <>
+  737 					xalloc: <>
+  738 					memmove: <>
+  739 					free: <>
+  740 					newstr: <>
+  741 					getpid: <>
+  742 				clrcontrol: void (), <./sendmail/sendmail/control.c 175>
+  743 					close: , <./sendmail/sendmail/udb.c 1141>
+  744 				proc_list_clear: void (), <./sendmail/sendmail/util.c 2284>
+  745 				getpid: <>
+  746 				intsig: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 2038>
+  747 				sm_setproctitle: , <./sendmail/sendmail/conf.c 2517>
+  748 				qid_printqueue: char * (), <./sendmail/sendmail/queue.c 2899>
+  749 				tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  750 				clrdaemon: void (), <./sendmail/sendmail/daemon.c 982>
+  751 					close: , <./sendmail/sendmail/udb.c 1141>
+  752 				geteuid: 235
+  753 				drop_privileges: <>
+  754 				newenvelope: <>
+  755 				disconnect: void (), <./sendmail/sendmail/main.c 2178>
+  756 				orderq: int (), <./sendmail/sendmail/queue.c 988>
+  757 					strlcpy: <>
+  758 					snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  759 					bitset: 60
+  760 					tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  761 					dprintf: , <./sendmail/libsmutil/debug.c 23>
+  762 					free: <>
+  763 					opendir: <>
+  764 					syserr: , <./sendmail/makemap/makemap.c 554>
+  765 					qid_printqueue: char * (), <./sendmail/sendmail/queue.c 2899>
+  766 					readdir: <>
+  767 					strlen: 18
+  768 					printf: <>
+  769 					sm_syslog: <>
+  770 					strcontainedin: <>
+  771 					grow_wlist: void (), <./sendmail/sendmail/queue.c 1425>
+  772 						tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  773 						dprintf: , <./sendmail/libsmutil/debug.c 23>
+  774 						xalloc: <>
+  775 						realloc: <>
+  776 						sm_syslog: <>
+  777 						qid_printqueue: char * (), <./sendmail/sendmail/queue.c 2899>
+  778 					stat: <>
+  779 					newstr: <>
+  780 					fopen: <>
+  781 					errstring: 105
+  782 					lockfile: 644
+  783 					fileno: 561
+  784 					fgets: <>
+  785 					strchr: 204
+  786 					getc: <>
+  787 					atoi: <>
+  788 					atol: <>
+  789 					strrchr: <>
+  790 					strrev: char * (), <./sendmail/sendmail/queue.c 1643>
+  791 					makelower: <>
+  792 					curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+  793 					fclose: <>
+  794 					shouldqueue: if (), <./sendmail/sendmail/srvrsmtp.c 1628>
+  795 					closedir: <>
+  796 					min: <>
+  797 					qsort: <>
+  798 					sm_strcasecmp: <>
+  799 					xalloc: <>
+  800 				dowork: pid_t (), <./sendmail/sendmail/queue.c 1677>
+  801 				waitfor: int (), <./sendmail/sendmail/conf.c 2562>
+  802 					releasesignal: int (), <./sendmail/sendmail/conf.c 1330>
+  803 					wait: <>
+  804 					blocksignal: int (), <./sendmail/sendmail/conf.c 1288>
+  805 					proc_list_drop: 585
+  806 				free: <>
+  807 				finis: , <./sendmail/sendmail/parseaddr.c 2790>
+  808 			setevent: 474
+  809 			runqueueevent: void (), <./sendmail/sendmail/queue.c 957>
+  810 		fork: <>
+  811 		disconnect: void (), <./sendmail/sendmail/main.c 2178>
+  812 		pintvl: char * (), <./sendmail/sendmail/convtime.c 119>
+  813 			snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  814 			SPACELEFT: <>
+  815 			strlen: 18
+  816 			PLURAL: <>
+  817 		xla_create_file: <>
+  818 		log_sendmail_pid: <>
+  819 		pause: <>
+  820 		getrequests: BITMAP256 * (), <./sendmail/sendmail/daemon.c 142>
+  821 			setupdaemon: u_short (), <./sendmail/sendmail/daemon.c 890>
+  822 				memset: <>
+  823 				IN6_IS_ADDR_UNSPECIFIED: <>
+  824 				htons: <>
+  825 				getservbyname: <>
+  826 				syserr: , <./sendmail/makemap/makemap.c 554>
+  827 			tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  828 			dprintf: , <./sendmail/libsmutil/debug.c 23>
+  829 			ntohs: <>
+  830 			opendaemonsocket: int (), <./sendmail/sendmail/daemon.c 749>
+  831 				tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  832 				dprintf: , <./sendmail/libsmutil/debug.c 23>
+  833 				sleep: <>
+  834 				socket: <>
+  835 				syserr: , <./sendmail/makemap/makemap.c 554>
+  836 				sm_syslog: <>
+  837 				setsockopt: <>
+  838 				fcntl: <>
+  839 				errstring: 105
+  840 				close: , <./sendmail/sendmail/udb.c 1141>
+  841 				bind: <>
+  842 				listen: <>
+  843 				transienterror: else if (), <./sendmail/sendmail/alias.c 917>
+  844 			opencontrolsocket: int (), <./sendmail/sendmail/control.c 33>
+  845 				strlen: 18
+  846 				safefile: int (), <./sendmail/libsmutil/safefile.c 44>
+  847 				socket: <>
+  848 				unlink: <>
+  849 				memset: <>
+  850 				strlcpy: <>
+  851 				bind: <>
+  852 				clrcontrol: 742
+  853 				geteuid: 235
+  854 				chown: <>
+  855 				sm_syslog: <>
+  856 				errstring: 105
+  857 				message: , <./sendmail/makemap/makemap.c 530>
+  858 				closecontrolsocket: void (), <./sendmail/sendmail/control.c 127>
+  859 					close: , <./sendmail/sendmail/udb.c 1141>
+  860 					safefile: int (), <./sendmail/libsmutil/safefile.c 44>
+  861 					unlink: <>
+  862 					sm_syslog: <>
+  863 					errstring: 105
+  864 				chmod: <>
+  865 				listen: <>
+  866 			sm_syslog: <>
+  867 			errstring: 105
+  868 			setsignal: sigfunc_t (), <./sendmail/sendmail/conf.c 1222>
+  869 			reapchild: 580
+  870 			log_sendmail_pid: <>
+  871 			expand: <>
+  872 			strchr: 204
+  873 			proc_list_add: 733
+  874 			getpid: <>
+  875 			blocksignal: int (), <./sendmail/sendmail/conf.c 1288>
+  876 			curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+  877 			refuseconnections: bool (), <./sendmail/sendmail/conf.c 2215>
+  878 			close: , <./sendmail/sendmail/udb.c 1141>
+  879 			enoughdiskspace: if (), <./sendmail/sendmail/srvrsmtp.c 1208>
+  880 			bitnset: 25
+  881 			sm_setproctitle: , <./sendmail/sendmail/conf.c 2517>
+  882 			setbitn: <>
+  883 			clrbitn: <>
+  884 			wordinclass: if (), <./sendmail/sendmail/parseaddr.c 907>
+  885 			dumpstate: void (), <./sendmail/sendmail/main.c 2438>
+  886 			abort: <>
+  887 			SetNonBlocking: <>
+  888 			releasesignal: int (), <./sendmail/sendmail/conf.c 1330>
+  889 			FD_ZERO: <>
+  890 			FD_SET: <>
+  891 			select: <>
+  892 			runqueue: 571
+  893 			FD_ISSET: <>
+  894 			accept: <>
+  895 			syserr: , <./sendmail/makemap/makemap.c 554>
+  896 			define: void (), <./sendmail/sendmail/macro.c 243>
+  897 			macid: <>
+  898 			get_random: <>
+  899 			pipe: <>
+  900 			fork: <>
+  901 			sleep: <>
+  902 			newstr: <>
+  903 			anynet_ntoa: <>
+  904 			snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  905 			intsig: SIGFUNC_DECL (), <./sendmail/sendmail/main.c 2038>
+  906 			clrcontrol: 742
+  907 			proc_list_clear: 744
+  908 			read: <>
+  909 			control_command: void (), <./sendmail/sendmail/control.c 232>
+  910 				exitstat: char * (), <./sendmail/sendmail/sysexits.c 196>
+  911 					isascii: if (), <./sendmail/sendmail/headers.c 162>
+  912 					isdigit: 271
+  913 				sm_setproctitle: , <./sendmail/sendmail/conf.c 2517>
+  914 				setjmp: <>
+  915 				sm_syslog: <>
+  916 				exit: <>
+  917 				setevent: 474
+  918 				controltimeout: void (), <./sendmail/sendmail/control.c 225>
+  919 					longjmp: <>
+  920 				fdopen: <>
+  921 				close: , <./sendmail/sendmail/udb.c 1141>
+  922 				setbuf: <>
+  923 				fgets: <>
+  924 				fclose: <>
+  925 				fflush: <>
+  926 				fixcrlf: void (), <./sendmail/sendmail/util.c 814>
+  927 				isascii: if (), <./sendmail/sendmail/headers.c 162>
+  928 				isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+  929 				strcasecmp: 20
+  930 				help: void (), <./sendmail/sendmail/srvrsmtp.c 2582>
+  931 				fprintf: <>
+  932 				proc_list_probe: 734
+  933 				freediskspace: <>
+  934 				sm_getla: 424
+  935 				proc_list_display: void (), <./sendmail/sendmail/util.c 2339>
+  936 					fprintf: <>
+  937 				clrevent: <>
+  938 			exit: <>
+  939 			hostnamebyanyaddr: <>
+  940 			strlen: 18
+  941 			fdopen: <>
+  942 			dup: <>
+  943 			finis: , <./sendmail/sendmail/parseaddr.c 2790>
+  944 			xla_host_ok: <>
+  945 			message: , <./sendmail/makemap/makemap.c 530>
+  946 			getsockname: <>
+  947 			fileno: 561
+  948 			isloopback: <>
+  949 			xalloc: <>
+  950 			macvalue: char * (), <./sendmail/sendmail/macro.c 284>
+  951 		anynet_ntoa: <>
+  952 		sasl_server_init: <>
+  953 		validate_connection: <>
+  954 		smtp: void (), <./sendmail/sendmail/srvrsmtp.c 133>
+  955 		clearenvelope: <>
+  956 		set_delivery_mode: void (), <./sendmail/sendmail/util.c 529>
+  957 		initsys: <>
+  958 		setsender: void (), <./sendmail/sendmail/envelope.c 669>
+  959 		bitnset: 25
+  960 		xtextify: <>
+  961 		collect: void (), <./sendmail/sendmail/collect.c 101>
+  962 		sendtoargv: <>
+  963 		buffer_errors: void (), <./sendmail/sendmail/err.c 813>
+  964 		QS_IS_UNDELIVERED: if (), <./sendmail/sendmail/srvrsmtp.c 1754>
+  965 		logdelivery: <>
+  966 		flush_errors: void (), <./sendmail/sendmail/err.c 830>
+  967 			putoutmsg: void (), <./sendmail/sendmail/err.c 471>
+  968 				tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  969 				dprintf: , <./sendmail/libsmutil/debug.c 23>
+  970 				strchr: 204
+  971 				fprintf: <>
+  972 				sm_syslog: <>
+  973 				snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+  974 				fflush: <>
+  975 				ISSMTPREPLY: <>
+  976 				isenhsc: <>
+  977 				getpid: <>
+  978 				ferror: 200
+  979 				feof: else if (), <./sendmail/sendmail/alias.c 667>
+  980 				strncmp: if (), <./sendmail/rmail/rmail.c 215>
+  981 				shortenstring: <>
+  982 				errstring: 105
+  983 		printaddr: <>
+  984 		sendall: void (), <./sendmail/sendmail/deliver.c 55>
+  985 			bitset: 60
+  986 			tTd: if (), <./sendmail/libsmutil/safefile.c 853>
+  987 			dprintf: , <./sendmail/libsmutil/debug.c 23>
+  988 			sm_syslog: <>
+  989 			markstats: <>
+  990 			shouldqueue: if (), <./sendmail/sendmail/srvrsmtp.c 1628>
+  991 			printaddr: <>
+  992 			printenvflags: <>
+  993 			checkfds: void (), <./sendmail/sendmail/util.c 1474>
+  994 			queueup: <>
+  995 			syserr: , <./sendmail/makemap/makemap.c 554>
+  996 			QS_IS_DEAD: if (), <./sendmail/sendmail/util.c 456>
+  997 				QS_IS_DEAD: 996
+  998 				usrerrenh: , <./sendmail/sendmail/err.c 283>
+  999 			QS_IS_QUEUEUP: if (), <./sendmail/sendmail/savemail.c 1189>
+ 1000 			recipient: <>
+ 1001 			strcmp: 29
+ 1002 			QS_IS_BADADDR: if (), <./sendmail/sendmail/srvrsmtp.c 1482>
+ 1003 				macvalue: char * (), <./sendmail/sendmail/macro.c 284>
+ 1004 				snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+ 1005 				sm_syslog: <>
+ 1006 				shortenstring: <>
+ 1007 				QS_IS_BADADDR: 1002
+ 1008 				usrerrenh: , <./sendmail/sendmail/err.c 283>
+ 1009 				parseaddr: 274
+ 1010 				newstr: <>
+ 1011 				expand: <>
+ 1012 				syserr: , <./sendmail/makemap/makemap.c 554>
+ 1013 			wordinclass: if (), <./sendmail/sendmail/parseaddr.c 907>
+ 1014 			strlen: 18
+ 1015 			xalloc: <>
+ 1016 			snprintf: , <./sendmail/libsmutil/snprintf.c 52>
+ 1017 			bitnset: 25
+ 1018 			assign_queueid: <>
+ 1019 			copyheader: <>
+ 1020 			copyqueue: <>
+ 1021 			setsender: void (), <./sendmail/sendmail/envelope.c 669>
+ 1022 			dup_queue_file: <>
+ 1023 			bfdup: <>
+ 1024 			openxscript: <>
+ 1025 			curtime: time_t (), <./sendmail/sendmail/util.c 1269>
+ 1026 			dropenvelope: <>
+ 1027 			fflush: <>
+ 1028 			closemaps: void (), <./sendmail/sendmail/map.c 597>
+ 1029 			fork: <>
+ 1030 			closexscript: <>
+ 1031 			bfclose: <>
+ 1032 			fclose: <>
+ 1033 			waitfor: 801
+ 1034 			exit: <>
+ 1035 			disconnect: void (), <./sendmail/sendmail/main.c 2178>
+ 1036 			clearstats: void (), <./sendmail/sendmail/stats.c 91>
+ 1037 			finis: , <./sendmail/sendmail/parseaddr.c 2790>
+ 1038 			mci_flush: <>
+ 1039 			dowork: pid_t (), <./sendmail/sendmail/queue.c 1677>
+ 1040 			sendenvelope: <>
+ 1041 		fputs: <>
+ 1042 		read: <>
+ 1043 		sleep: <>
+ 1044 		memset: <>
+ 1045 		ctime: <>
+ 1046 		malloc: <>
+ 1047 		isdigit: 271
+ 1048 		atol: <>
+ 1049 		chdir: <>
+ 1050 		smdb_open_database: int (), <./sendmail/libsmdb/smdb.c 97>
+ 1051 		setinterval: void (), <./sendmail/vacation/vacation.c 612>
+ 1052 			memset: <>
+ 1053 		xclude: void (), <./sendmail/vacation/vacation.c 672>
+ 1054 			fgets: <>
+ 1055 			strchr: 204
+ 1056 			setreply: void (), <./sendmail/vacation/vacation.c 642>
+ 1057 				memset: <>
+ 1058 				strlen: 18
+ 1059 		readheaders: void (), <./sendmail/vacation/vacation.c 320>
+ 1060 			fgets: <>
+ 1061 			strncmp: if (), <./sendmail/rmail/rmail.c 215>
+ 1062 			syslog: <>
+ 1063 			exit: <>
+ 1064 			strlcpy: <>
+ 1065 			strchr: 204
+ 1066 			junkmail: bool (), <./sendmail/vacation/vacation.c 489>
+ 1067 			strlen: 18
+ 1068 			strncasecmp: <>
+ 1069 			isascii: if (), <./sendmail/sendmail/headers.c 162>
+ 1070 			isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+ 1071 			nsearch: <>
+ 1072 		recent: bool (), <./sendmail/vacation/vacation.c 551>
+ 1073 		setreply: 1056
+ 1074 		sendmessage: void (), <./sendmail/vacation/vacation.c 703>
+ 1075 			fopen: <>
+ 1076 			syslog: <>
+ 1077 			exit: <>
+ 1078 			pipe: <>
+ 1079 			errstring: 105
+ 1080 			fork: <>
+ 1081 			dup2: <>
+ 1082 			close: , <./sendmail/sendmail/udb.c 1141>
+ 1083 			fclose: <>
+ 1084 			execl: <>
+ 1085 			fdopen: <>
+ 1086 			fprintf: <>
+ 1087 			fgets: <>
+ 1088 			fputs: <>
+ 1089 		freopen: <>
+ 1090 		readfile:  (), <./sendmail/contrib/bitdomain.c 84>
+ 1091 			fgets: <>
+ 1092 			isspace: if (), <./sendmail/sendmail/srvrsmtp.c 869>
+ 1093 			isupper: <>
+ 1094 			tolower: <>
+ 1095 			fprintf: <>
+ 1096 			strlen: 18
+ 1097 			strcmp: 29
+ 1098 			entry:  (), <./sendmail/contrib/bitdomain.c 136>
+ 1099 				lookup: char * (), <./sendmail/contrib/bitdomain.c 337>
+ 1100 					strcmp: 29
+ 1101 				strchr: 204
+ 1102 				remember:  (), <./sendmail/contrib/bitdomain.c 355>
+ 1103 					strchr: 204
+ 1104 					fprintf: <>
+ 1105 					strcmp: 29
+ 1106 					malloc: <>
+ 1107 					strlen: 18
+ 1108 					strcpy: <>
+ 1109 					entry: 1098
+ 1110 					exit: <>
+ 1111 				valhost: int (), <./sendmail/contrib/bitdomain.c 208>
+ 1112 					res_init: <>
+ 1113 					res_querydomain:  (), <./sendmail/contrib/oldbind.compat.c 41>
+ 1114 						strcpy: <>
+ 1115 						strlen: 18
+ 1116 						strcat: <>
+ 1117 						res_mkquery: <>
+ 1118 						res_send: <>
+ 1119 					ntohs: <>
+ 1120 					dn_skipname: <>
+ 1121 					dn_expand: <>
+ 1122 					GETSHORT: <>
+ 1123 					strlen: 18
+ 1124 					strcpy: <>
+ 1125 				fprintf: <>
+ 1126 		finish:  (), <./sendmail/contrib/bitdomain.c 398>
+ 1127 			strchr: 204
+ 1128 			lookup: 1099
+ 1129 			remember: 1102
+ 1130 		smdb_print_available_types: void (), <./sendmail/libsmdb/smdb.c 360>
+ 1131 		usage: void (), <./sendmail/makemap/makemap.c 61>
+ 1132 			fprintf: <>
+ 1133 			exit: <>
+ 1134 		atoi: <>
+ 1135 		smdb_db_definition: char * (), <./sendmail/libsmdb/smdb.c 399>
+ 1136 			strcmp: 29
+ 1137 		exitstat: 910
+ 1138 		feof: else if (), <./sendmail/sendmail/alias.c 667>
+ 1139 		ISSEP: <>
+ 1140 		isupper: <>
+ 1141 		tolower: <>
+ 1142 		smdb_free_database: void (), <./sendmail/libsmdb/smdb.c 57>
+ 1143 			free: <>

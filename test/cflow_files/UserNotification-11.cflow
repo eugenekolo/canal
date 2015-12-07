@@ -1,0 +1,49 @@
+    1 	UNCDisplayAlert: int (), <./Libunc/UNCUserNotification.c 328>
+    2 		UNCUserNotificationCreate: UNCUserNotificationRef (), <./Libunc/UNCUserNotification.c 207>
+    3 			getpid: <>
+    4 			mach_port_allocate: <>
+    5 			mach_task_self: <>
+    6 			UNCSendRequest: int (), <./Libunc/UNCUserNotification.c 176>
+    7 				task_get_bootstrap_port: <>
+    8 				mach_task_self: <>
+    9 				bootstrap_look_up: <>
+   10 				UNCPackContents: unsigned (), <./Libunc/UNCUserNotification.c 70>
+   11 					snprintf: <>
+   12 					APPEND: <>
+   13 					strlen: <>
+   14 					APPENDN: <>
+   15 				malloc: <>
+   16 				bzero: <>
+   17 				MACH_MSGH_BITS: <>
+   18 				mach_msg: <>
+   19 				free: <>
+   20 			malloc: <>
+   21 			bzero: <>
+   22 			mach_port_destroy: <>
+   23 		UNCUserNotificationReceiveResponse: int (), <./Libunc/UNCUserNotification.c 235>
+   24 			malloc: <>
+   25 			bzero: <>
+   26 			mach_msg: <>
+   27 			UNCUnpackContents: unsigned (), <./Libunc/UNCUserNotification.c 123>
+   28 				strstr: <>
+   29 				strlen: <>
+   30 			mach_port_destroy: <>
+   31 			mach_task_self: <>
+   32 			free: <>
+   33 		UNCUserNotificationFree: void (), <./Libunc/UNCUserNotification.c 303>
+   34 			mach_port_destroy: <>
+   35 			mach_task_self: <>
+   36 			free: <>
+   37 	UNCDisplayNotice: int (), <./Libunc/UNCUserNotification.c 311>
+   38 		UNCUserNotificationCreate: 2
+   39 		UNCUserNotificationFree: 33
+   40 	UNCUserNotificationCancel: int (), <./Libunc/UNCUserNotification.c 295>
+   41 		UNCSendRequest: 6
+   42 	UNCUserNotificationCreate: 2
+   43 	UNCUserNotificationFree: 33
+   44 	UNCUserNotificationGetResponseContents: const char ** (), <./Libunc/UNCUserNotification.c 283>
+   45 	UNCUserNotificationGetResponseValue: const char * (), <./Libunc/UNCUserNotification.c 271>
+   46 		strcmp: <>
+   47 	UNCUserNotificationReceiveResponse: 23
+   48 	UNCUserNotificationUpdate: int (), <./Libunc/UNCUserNotification.c 287>
+   49 		UNCSendRequest: 6

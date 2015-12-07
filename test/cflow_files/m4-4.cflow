@@ -1,0 +1,198 @@
+    1 	main: int (), <./main.c 154>
+    2 		basename: char * (), <./misc.c 237>
+    3 		signal: <>
+    4 		onintr: void (), <./misc.c 189>
+    5 			errx: <>
+    6 		initkwds: void (), <./main.c 476>
+    7 			hash: int (), <./look.c 64>
+    8 			xalloc: <>
+    9 		getopt: <>
+   10 		dodefine: void (), <./eval.c 457>
+   11 			errx: <>
+   12 			STREQ: <>
+   13 			lookup: ndptr (), <./look.c 77>
+   14 				hash: 7
+   15 				STREQ: <>
+   16 			addent: ndptr (), <./look.c 93>
+   17 				hash: 7
+   18 				xalloc: <>
+   19 				xstrdup: <>
+   20 			free: <>
+   21 			xstrdup: <>
+   22 		remhash: void (), <./look.c 123>
+   23 			hash: 7
+   24 			STREQ: <>
+   25 			freent: void (), <./look.c 108>
+   26 				free: <>
+   27 		usage: void (), <./misc.c 249>
+   28 		mktemp: <>
+   29 		xstrdup: <>
+   30 		macro: void (), <./main.c 280>
+   31 			gpbc: <>
+   32 			isalpha: <>
+   33 			putback: <>
+   34 			inspect: ndptr (), <./main.c 445>
+   35 				isalnum: <>
+   36 				gpbc: <>
+   37 				putback: <>
+   38 				errx: <>
+   39 				STREQ: <>
+   40 			putc: <>
+   41 			chrsave: void (), <./misc.c 149>
+   42 				errx: <>
+   43 			pushf: <>
+   44 			pushs: <>
+   45 			errx: <>
+   46 			fclose: <>
+   47 			LOOK_AHEAD: <>
+   48 			isspace: <>
+   49 			expand: void (), <./eval.c 386>
+   50 				putback: <>
+   51 				pbnum: void (), <./misc.c 130>
+   52 					putback: <>
+   53 				pbstr: void (), <./misc.c 107>
+   54 					errx: <>
+   55 			eval: void (), <./eval.c 86>
+   56 				printf: <>
+   57 				dodefine: 10
+   58 				dopushdef: void (), <./eval.c 503>
+   59 					errx: <>
+   60 					STREQ: <>
+   61 					addent: 16
+   62 					xstrdup: <>
+   63 				dodump: void (), <./eval.c 527>
+   64 					lookup: 13
+   65 					fprintf: <>
+   66 				pbnum: 51
+   67 				expr: int (), <./expr.c 144>
+   68 					setjmp: <>
+   69 					query: int (), <./expr.c 165>
+   70 						lor: int (), <./expr.c 187>
+   71 							land: int (), <./expr.c 207>
+   72 								not: int (), <./expr.c 227>
+   73 									skipws: int (), <./expr.c 565>
+   74 										getch: <>
+   75 									getch: <>
+   76 									ungetch: <>
+   77 									not: 72
+   78 									eqrel: int (), <./expr.c 247>
+   79 										shift: int (), <./expr.c 285>
+   80 											primary: int (), <./expr.c 309>
+   81 												term: int (), <./expr.c 331>
+   82 													exp: int (), <./expr.c 359>
+   83 														unary: int (), <./expr.c 388>
+   84 															skipws: 73
+   85 															unary: 83
+   86 															ungetch: <>
+   87 															factor: int (), <./expr.c 413>
+   88 																skipws: 73
+   89 																query: 69
+   90 																experr: void (), <./expr.c 579>
+   91 																	printf: <>
+   92 																	longjmp: <>
+   93 																ungetch: <>
+   94 																constant: int (), <./expr.c 433>
+   95 																	skipws: 73
+   96 																	ungetch: <>
+   97 																	num: int (), <./expr.c 494>
+   98 																		skipws: 73
+   99 																		getch: <>
+  100 																		ungetch: <>
+  101 																		experr: 90
+  102 																	getch: <>
+  103 																	experr: 90
+  104 														skipws: 73
+  105 														getch: <>
+  106 														ungetch: <>
+  107 														exp: 82
+  108 													skipws: 73
+  109 													ungetch: <>
+  110 												skipws: 73
+  111 												ungetch: <>
+  112 											skipws: 73
+  113 											getch: <>
+  114 											ungetch: <>
+  115 										geteqrel: int (), <./expr.c 521>
+  116 											skipws: 73
+  117 											getch: <>
+  118 											ungetch: <>
+  119 								skipws: 73
+  120 								getch: <>
+  121 								ungetch: <>
+  122 							skipws: 73
+  123 							getch: <>
+  124 							ungetch: <>
+  125 						skipws: 73
+  126 						ungetch: <>
+  127 						query: 69
+  128 						experr: 90
+  129 					skipws: 73
+  130 					printf: <>
+  131 				doifelse: void (), <./eval.c 552>
+  132 					STREQ: <>
+  133 					pbstr: 53
+  134 				lookup: 13
+  135 				pbstr: 53
+  136 				strlen: <>
+  137 				atoi: <>
+  138 				system: <>
+  139 				doincl: int (), <./eval.c 574>
+  140 					errx: <>
+  141 					fopen: <>
+  142 				err: <>
+  143 				dopaste: int (), <./eval.c 594>
+  144 					fopen: <>
+  145 					getc: <>
+  146 					putc: <>
+  147 					fclose: <>
+  148 				dochq: void (), <./eval.c 615>
+  149 					strncpy: <>
+  150 					strcpy: <>
+  151 				dochc: void (), <./eval.c 639>
+  152 					strncpy: <>
+  153 				dosub: void (), <./eval.c 713>
+  154 					expr: 67
+  155 					atoi: <>
+  156 					strlen: <>
+  157 					min: <>
+  158 					putback: <>
+  159 				putback: <>
+  160 				dodiv: void (), <./eval.c 663>
+  161 					fopen: <>
+  162 					err: <>
+  163 				doundiv: void (), <./eval.c 688>
+  164 					atoi: <>
+  165 					getdiv: void (), <./misc.c 162>
+  166 						errx: <>
+  167 						fclose: <>
+  168 						fopen: <>
+  169 						err: <>
+  170 						getc: <>
+  171 						putc: <>
+  172 						remove: <>
+  173 						unlink: <>
+  174 				remhash: 22
+  175 				mktemp: <>
+  176 				map: void (), <./eval.c 765>
+  177 				indx: int (), <./misc.c 64>
+  178 					strstr: <>
+  179 				fprintf: <>
+  180 				gpbc: <>
+  181 				xstrdup: <>
+  182 				killdiv: void (), <./misc.c 199>
+  183 					fclose: <>
+  184 					remove: <>
+  185 					unlink: <>
+  186 				exit: <>
+  187 				dodefn: void (), <./eval.c 483>
+  188 					lookup: 13
+  189 					pbstr: 53
+  190 				errx: <>
+  191 		fopen: <>
+  192 		err: <>
+  193 		fclose: <>
+  194 		putbackeof: void (), <./misc.c 93>
+  195 		pbstr: 53
+  196 		getdiv: 165
+  197 		remove: <>
+  198 		unlink: <>

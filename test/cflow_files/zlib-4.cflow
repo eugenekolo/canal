@@ -1,0 +1,92 @@
+    1 	main: int (), <./zlib/minigzip.c 270>
+    2 		zcalloc: voidpf (), <./zlib/zutil.c 208>
+    3 			farmalloc: <>
+    4 		zcfree: void (), <./zlib/zutil.c 192>
+    5 			farfree: <>
+    6 			Assert: <>
+    7 		inflate_trees_fixed: int (), <./zlib/inftrees.c 399>
+    8 			ZALLOC: <>
+    9 			ZFREE: <>
+   10 			huft_build: local int (), <./zlib/inftrees.c 93>
+   11 		fprintf: <>
+   12 		puts: <>
+   13 		printf: <>
+   14 		maketree: void (), <./zlib/maketree.c 28>
+   15 			fprintf: <>
+   16 			exit: <>
+   17 			printf: <>
+   18 			putchar: <>
+   19 			puts: <>
+   20 		do_help: void (), <./zlib/contrib/minizip/miniunz.c 142>
+   21 			printf: <>
+   22 		exit: <>
+   23 		malloc: <>
+   24 		strcpy: <>
+   25 		strlen: <>
+   26 		strcat: <>
+   27 		check_exist_file: <>
+   28 		scanf: <>
+   29 		zipOpen: <>
+   30 		filetime: uLong (), <./zlib/contrib/minizip/minizip.c 85>
+   31 			FindFirstFile: <>
+   32 			FileTimeToLocalFileTime: <>
+   33 			FileTimeToDosDateTime: <>
+   34 			FindClose: <>
+   35 			strcmp: if (), <./zlib/example.c 497>
+   36 			strlen: <>
+   37 			strcpy: <>
+   38 			stat: <>
+   39 			localtime: <>
+   40 		zipOpenNewFileInZip: <>
+   41 		fopen: <>
+   42 		fread: <>
+   43 		feof: <>
+   44 		zipWriteInFileInZip: <>
+   45 		fclose: <>
+   46 		zipCloseFileInZip: <>
+   47 		zipClose: <>
+   48 		free: <>
+   49 		strrchr: <>
+   50 		help: void (), <./zlib/contrib/untgz/untgz.c 428>
+   51 			fprintf: <>
+   52 			exit: <>
+   53 		strcmp: if (), <./zlib/example.c 497>
+   54 		TGZfname: <>
+   55 		TGZnotfound: <>
+   56 		gzopen: <>
+   57 		tar: int (), <./zlib/contrib/untgz/untgz.c 271>
+   58 			printf: <>
+   59 			gzread: <>
+   60 			error: void (), <./zlib/contrib/untgz/untgz.c 440>
+   61 				fprintf: <>
+   62 				exit: <>
+   63 			gzerror: <>
+   64 			getoct: int (), <./zlib/contrib/untgz/untgz.c 141>
+   65 			strcpy: <>
+   66 			strtime: char * (), <./zlib/contrib/untgz/untgz.c 158>
+   67 				localtime: <>
+   68 				sprintf: <>
+   69 			makedir: int (), <./zlib/contrib/untgz/untgz.c 214>
+   70 				strdup: <>
+   71 				strlen: <>
+   72 				free: <>
+   73 				mkdir: <>
+   74 				fprintf: <>
+   75 			matchname: int (), <./zlib/contrib/untgz/untgz.c 256>
+   76 				ExprMatch: int (), <./zlib/contrib/untgz/untgz.c 175>
+   77 					ISSPECIAL: <>
+   78 			fopen: <>
+   79 			strrchr: <>
+   80 			fprintf: <>
+   81 			fwrite: <>
+   82 			fclose: 45
+   83 			unlink: <>
+   84 			localtime: <>
+   85 			CreateFile: <>
+   86 			SystemTimeToFileTime: <>
+   87 			LocalFileTimeToFileTime: <>
+   88 			SetFileTime: <>
+   89 			CloseHandle: <>
+   90 			utime: <>
+   91 			gzclose: <>
+   92 		error: 60

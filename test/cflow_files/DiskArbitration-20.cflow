@@ -1,0 +1,1084 @@
+    1 	main: int (), <./disktool.tproj/DiskArbitrationClient.c 232>
+    2 		getuid: <>
+    3 		pwarning: <>
+    4 		exit: <>
+    5 		signal: <>
+    6 		handleSIGHUP: void (), <./autodiskmount.tproj/autodiskmount.c 75>
+    7 			dwarning: <>
+    8 			DiskArbRefresh_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 413>
+    9 				getmntinfo: <>
+   10 				dwarning: <>
+   11 				strstr: <>
+   12 				strcmp: <>
+   13 				LookupDiskByIOBSDName: DiskPtr (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 660>
+   14 					pwarning: <>
+   15 					strcmp: <>
+   16 				SendDiskAppearedMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1883>
+   17 					dwarning: <>
+   18 					malloc: <>
+   19 					StartBlueBoxNotificationThread: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1813>
+   20 						pthread_attr_init: <>
+   21 						pthread_attr_setdetachstate: <>
+   22 						pthread_create: <>
+   23 						NotifyBlueBoxMessages: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1738>
+   24 							DiskArbBlueBoxBootVolumeUpdated_async_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 523>
+   25 								dwarning: <>
+   26 							dwarning: <>
+   27 							mach_error_string: <>
+   28 							free: <>
+   29 						pthread_attr_destroy: <>
+   30 					SendUnrecognizedDiskMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2013>
+   31 						malloc: <>
+   32 						dwarning: <>
+   33 						strdup: <>
+   34 						StartUnrecognizedDiskThread: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1858>
+   35 							pthread_attr_init: <>
+   36 							pthread_attr_setdetachstate: <>
+   37 							pthread_create: <>
+   38 							NotifyUnrecognizedDiskInserted: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1771>
+   39 								DiskArbUnknownFileSystemInserted_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 546>
+   40 									dwarning: <>
+   41 								dwarning: <>
+   42 								mach_error_string: <>
+   43 								free: <>
+   44 							pthread_attr_destroy: <>
+   45 					strcmp: <>
+   46 					strdup: <>
+   47 					StartDiskAppearedThread: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1790>
+   48 						pthread_attr_init: <>
+   49 						pthread_attr_setdetachstate: <>
+   50 						pthread_create: <>
+   51 						NotifyDiskAppeared: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1654>
+   52 							DiskArbDiskAppearedWithoutMountpoint_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 268>
+   53 								dwarning: <>
+   54 							DiskArbDiskAppearedWithMountpoint_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 294>
+   55 								dwarning: <>
+   56 							DiskArbDiskAppeared_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 320>
+   57 								dwarning: <>
+   58 							DiskArbDiskAppeared2_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 347>
+   59 								dwarning: <>
+   60 							dwarning: <>
+   61 							mach_error_string: <>
+   62 							free: <>
+   63 						pthread_attr_destroy: <>
+   64 					SetStateForOnePartition: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1033>
+   65 						dwarning: <>
+   66 						DISKSTATE: <>
+   67 						FreeAckValues: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1335>
+   68 							dwarning: <>
+   69 							free: <>
+   70 						IsStateNeedingAckValueTable: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1012>
+   71 						NewAckValues: AckValues * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1300>
+   72 							dwarning: <>
+   73 							malloc: <>
+   74 							bzero: <>
+   75 							free: <>
+   76 						NumClientsDesiringAsyncNotification: unsigned (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1620>
+   77 				NewDisk: DiskPtr (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 480>
+   78 					dwarning: <>
+   79 					malloc: <>
+   80 					bzero: <>
+   81 					strdup: <>
+   82 					strcmp: <>
+   83 					NextSequenceNumber: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 606>
+   84 						dwarning: <>
+   85 				DiskExistsInMountTable: int (), <./autodiskmount.tproj/DiskArbitrationServer.c 379>
+   86 					getmntinfo: <>
+   87 					pwarning: <>
+   88 					strcmp: <>
+   89 					dwarning: <>
+   90 					sprintf: <>
+   91 				free: <>
+   92 				strdup: <>
+   93 				SetStateForOnePartition: 64
+   94 				SendUnmountPostNotifyMsgsForOnePartition: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2305>
+   95 					dwarning: <>
+   96 					DiskArbUnmountPostNotify_async_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 431>
+   97 						dwarning: <>
+   98 					mach_error_string: <>
+   99 		getopt: <>
+  100 		DiskArbitrationServerMain: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2798>
+  101 			dwarning: <>
+  102 			malloc: <>
+  103 			cacheFileSystemDictionaries: void (), <./autodiskmount.tproj/FSParticular.c 254>
+  104 				CFDictionaryCreateMutable: <>
+  105 				scandir: <>
+  106 				suffixfs: int (), <./autodiskmount.tproj/FSParticular.c 245>
+  107 					strstr: <>
+  108 					strlen: <>
+  109 				sortfs: int (), <./autodiskmount.tproj/FSParticular.c 98>
+  110 					strcat: <>
+  111 					strcmp: <>
+  112 				dwarning: <>
+  113 				sprintf: <>
+  114 				CFBundleCopyInfoDictionaryInDirectory: <>
+  115 				CFURLCreateWithFileSystemPath: <>
+  116 				CFStringCreateWithCString: <>
+  117 				CFDictionaryAddValue: <>
+  118 			cacheFileSystemMatchingArray: void (), <./autodiskmount.tproj/FSParticular.c 314>
+  119 				CFArrayCreateMutable: <>
+  120 				scandir: <>
+  121 				suffixfs: 106
+  122 				sortfs: 109
+  123 				sprintf: <>
+  124 				CFBundleCopyInfoDictionaryInDirectory: <>
+  125 				CFURLCreateWithFileSystemPath: <>
+  126 				CFStringCreateWithCString: <>
+  127 				CFDictionaryGetValue: <>
+  128 				CFSTR: <>
+  129 				CFDictionaryGetCount: <>
+  130 				CFDictionaryGetKeysAndValues: <>
+  131 				CFDictionaryCreateMutableCopy: <>
+  132 				CFDictionaryAddValue: <>
+  133 				CFArrayAppendValue: <>
+  134 				CFRelease: <>
+  135 				CFArraySortValues: <>
+  136 				CFRangeMake: <>
+  137 				CFArrayGetCount: <>
+  138 				compareDicts: CFComparisonResult (), <./autodiskmount.tproj/FSParticular.c 292>
+  139 					CFDictionaryGetValue: <>
+  140 					CFSTR: <>
+  141 					CFNumberGetValue: <>
+  142 			printArgsForFsname: void (), <./autodiskmount.tproj/FSParticular.c 578>
+  143 				printf: <>
+  144 				verifyPathForFileSystem: char * (), <./autodiskmount.tproj/FSParticular.c 397>
+  145 					malloc: <>
+  146 					strlen: <>
+  147 					sprintf: <>
+  148 					CFDictionaryGetValue: <>
+  149 					CFStringCreateWithCString: <>
+  150 					CFSTR: <>
+  151 					CFDictionaryGetCount: <>
+  152 					CFDictionaryGetKeysAndValues: <>
+  153 					resourcePathForFSName: char * (), <./autodiskmount.tproj/FSParticular.c 367>
+  154 						malloc: <>
+  155 						sprintf: <>
+  156 						CFURLCreateWithFileSystemPath: <>
+  157 						CFStringCreateWithCString: <>
+  158 						CFBundleCreate: <>
+  159 						CFBundleCopyResourcesDirectoryURL: <>
+  160 						CFURLCopyPath: <>
+  161 						daCreateCStringFromCFString: char * (), <./autodiskmount.tproj/FSParticular.c 57>
+  162 							CFStringGetLength: <>
+  163 							malloc: <>
+  164 							CFStringGetCString: <>
+  165 							free: <>
+  166 						CFRelease: <>
+  167 						free: <>
+  168 					daCreateCStringFromCFString: 161
+  169 					free: <>
+  170 				verifyArgsForFileSystem: char * (), <./autodiskmount.tproj/FSParticular.c 489>
+  171 					strlen: <>
+  172 					malloc: <>
+  173 					sprintf: <>
+  174 					CFDictionaryGetValue: <>
+  175 					CFStringCreateWithCString: <>
+  176 					CFSTR: <>
+  177 					CFDictionaryGetCount: <>
+  178 					CFDictionaryGetKeysAndValues: <>
+  179 					daCreateCStringFromCFString: 161
+  180 				repairPathForFileSystem: char * (), <./autodiskmount.tproj/FSParticular.c 443>
+  181 					malloc: <>
+  182 					strlen: <>
+  183 					sprintf: <>
+  184 					CFDictionaryGetValue: <>
+  185 					CFStringCreateWithCString: <>
+  186 					CFSTR: <>
+  187 					CFDictionaryGetCount: <>
+  188 					CFDictionaryGetKeysAndValues: <>
+  189 					resourcePathForFSName: 153
+  190 					daCreateCStringFromCFString: 161
+  191 					free: <>
+  192 				repairArgsForFileSystem: char * (), <./autodiskmount.tproj/FSParticular.c 534>
+  193 					strlen: <>
+  194 					malloc: <>
+  195 					sprintf: <>
+  196 					CFDictionaryGetValue: <>
+  197 					CFStringCreateWithCString: <>
+  198 					CFSTR: <>
+  199 					CFDictionaryGetCount: <>
+  200 					CFDictionaryGetKeysAndValues: <>
+  201 					daCreateCStringFromCFString: 161
+  202 			InitNotifyPort: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 166>
+  203 				mach_port_allocate: <>
+  204 				mach_task_self: <>
+  205 				LogErrorMessage: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 239>
+  206 					va_start: <>
+  207 					openlog: <>
+  208 					vsyslog: <>
+  209 					closelog: <>
+  210 					vfprintf: <>
+  211 					va_end: <>
+  212 				mach_error_string: <>
+  213 				dwarning: <>
+  214 			IOMasterPort: <>
+  215 			LogErrorMessage: 205
+  216 			mach_error_string: <>
+  217 			mach_port_allocate: <>
+  218 			mach_task_self: <>
+  219 			IOServiceAddNotification: <>
+  220 			IOServiceMatching: <>
+  221 			GetDisksFromRegistry: void (), <./autodiskmount.tproj/GetRegistry.c 64>
+  222 				IOMasterPort: <>
+  223 				IOKitWaitQuiet: <>
+  224 				IOIteratorNext: <>
+  225 				IORegistryEntryGetName: <>
+  226 				dwarning: <>
+  227 				IORegistryEntryCreateCFProperties: <>
+  228 				assert: <>
+  229 				CFGetTypeID: <>
+  230 				CFDictionaryGetTypeID: <>
+  231 				CFDictionaryGetValue: <>
+  232 				CFSTR: <>
+  233 				CFStringGetTypeID: <>
+  234 				daCreateCStringFromCFString: 161
+  235 				CFNumberGetTypeID: <>
+  236 				CFNumberGetValue: <>
+  237 				CFBooleanGetTypeID: <>
+  238 				IORegistryEntryGetPath: <>
+  239 				strlen: <>
+  240 				GetDriveType: DriveType (), <./autodiskmount.tproj/GetRegistry.c 356>
+  241 					IORegistryEntryGetParentIterator: <>
+  242 					IOObjectRelease: <>
+  243 					IOIteratorNext: <>
+  244 					IOObjectConformsTo: <>
+  245 					dwarning: <>
+  246 				shouldAutomount: int (), <./autodiskmount.tproj/GetRegistry.c 417>
+  247 					IORegistryEntryGetParentIterator: <>
+  248 					IOObjectRelease: <>
+  249 					IOIteratorNext: <>
+  250 					IOObjectConformsTo: <>
+  251 					IORegistryEntryCreateCFProperties: <>
+  252 					assert: <>
+  253 					CFGetTypeID: <>
+  254 					CFDictionaryGetTypeID: <>
+  255 					CFDictionaryGetValue: <>
+  256 					CFSTR: <>
+  257 					CFBooleanGetTypeID: <>
+  258 				LookupDiskByIOBSDName: 13
+  259 				strcmp: <>
+  260 				NewDisk: 77
+  261 				LogErrorMessage: 205
+  262 				CFRelease: <>
+  263 				free: <>
+  264 			IOIteratorNext: <>
+  265 			IOObjectRelease: <>
+  266 			autodiskmount: void (), <./autodiskmount.tproj/autodiskmount.c 277>
+  267 				DiskVolumes_new: void (), <./autodiskmount.tproj/DiskVolume.c 787>
+  268 					malloc: <>
+  269 					CFArrayCreateMutable: <>
+  270 					CFRetain: <>
+  271 				CleanupDirectory: void (), <./autodiskmount.tproj/autodiskmount.c 81>
+  272 					fts_open: <>
+  273 					fts_read: <>
+  274 					fts_children: <>
+  275 					sprintf: <>
+  276 					stat: <>
+  277 					remove: <>
+  278 					rmdir: <>
+  279 					dwarning: <>
+  280 					fts_close: <>
+  281 				mountPath: char * (), <./autodiskmount.tproj/DiskVolume.c 1014>
+  282 					stat: <>
+  283 					mkdir: <>
+  284 					pwarning: <>
+  285 					strerror: <>
+  286 					chmod: <>
+  287 				DiskVolumes_do_removable: DiskVolumesPtr (), <./autodiskmount.tproj/DiskVolume.c 858>
+  288 					get_fsstat_list: struct statfs (), <./autodiskmount.tproj/DiskVolume.c 215>
+  289 					scandir: <>
+  290 					suffixfs: 106
+  291 					sortfs: 109
+  292 					strrchr: <>
+  293 					dwarning: <>
+  294 					eject_media: void (), <./autodiskmount.tproj/DiskVolume.c 196>
+  295 						sprintf: <>
+  296 						open: <>
+  297 						ioctl: <>
+  298 						pwarning: <>
+  299 						strerror: <>
+  300 						close: <>
+  301 					CanSkipContentType: int (), <./autodiskmount.tproj/DiskVolume.c 812>
+  302 						strcmp: <>
+  303 					DiskVolumes_newVolume: DiskVolumePtr (), <./autodiskmount.tproj/DiskVolume.c 673>
+  304 						CFArrayGetCount: <>
+  305 						CFArrayGetValueAtIndex: <>
+  306 						CFDictionaryGetValue: <>
+  307 						CFSTR: <>
+  308 						IOServiceMatchPropertyTable: <>
+  309 						dwarning: <>
+  310 						CFStringCreateArrayBySeparatingStrings: <>
+  311 						daCreateCStringFromCFString: 161
+  312 						sprintf: <>
+  313 						resourcePathForFSName: 153
+  314 						foreignProbe: int (), <./autodiskmount.tproj/DiskVolume.c 341>
+  315 							fsDirForFS: char * (), <./autodiskmount.tproj/FSParticular.c 160>
+  316 								malloc: <>
+  317 								sprintf: <>
+  318 							dwarning: <>
+  319 							access: <>
+  320 							fork: <>
+  321 							cleanUpAfterFork: void (), <./autodiskmount.tproj/DiskArbitrationServer.c 108>
+  322 								getdtablesize: <>
+  323 								close: <>
+  324 								open: <>
+  325 								ioctl: <>
+  326 								setgid: <>
+  327 								getgid: <>
+  328 								setuid: <>
+  329 								getuid: <>
+  330 								dup2: <>
+  331 							chdir: <>
+  332 							execve: <>
+  333 							exit: <>
+  334 							wait4: <>
+  335 							WIFEXITED: <>
+  336 							WEXITSTATUS: <>
+  337 							free: <>
+  338 						foreignLabel: char * (), <./autodiskmount.tproj/DiskVolume.c 317>
+  339 							sprintf: <>
+  340 							open: <>
+  341 							read: <>
+  342 							close: <>
+  343 						printf: <>
+  344 						fsNameForFSWithMediaName: char * (), <./autodiskmount.tproj/FSParticular.c 231>
+  345 							malloc: <>
+  346 							strcmp: <>
+  347 							sprintf: <>
+  348 						DiskVolume_new: void (), <./autodiskmount.tproj/DiskVolume.c 634>
+  349 							malloc: <>
+  350 						DiskVolume_setDiskDevName: void (), <./autodiskmount.tproj/DiskVolume.c 602>
+  351 							setVar: void (), <./autodiskmount.tproj/DiskVolume.c 570>
+  352 								free: <>
+  353 								strdup: <>
+  354 						DiskVolume_setFSType: void (), <./autodiskmount.tproj/DiskVolume.c 586>
+  355 							setVar: 351
+  356 						DiskVolume_setDiskName: void (), <./autodiskmount.tproj/DiskVolume.c 594>
+  357 							setVar: 351
+  358 						DiskVolume_setDeviceType: void (), <./autodiskmount.tproj/DiskVolume.c 590>
+  359 							setVar: 351
+  360 						DiskVolume_setWritable: void (), <./autodiskmount.tproj/DiskVolume.c 622>
+  361 						DiskVolume_setRemovable: void (), <./autodiskmount.tproj/DiskVolume.c 626>
+  362 						DiskVolume_setMounted: void (), <./autodiskmount.tproj/DiskVolume.c 610>
+  363 							LookupDiskByIOBSDName: 13
+  364 							strdup: <>
+  365 						DiskVolume_setDirtyFS: void (), <./autodiskmount.tproj/DiskVolume.c 630>
+  366 						DiskVolume_setUtilPath: void (), <./autodiskmount.tproj/DiskVolume.c 598>
+  367 							setVar: 351
+  368 						fsstat_lookup_spec: struct statfs (), <./autodiskmount.tproj/DiskVolume.c 244>
+  369 						DiskVolume_setMountPoint: void (), <./autodiskmount.tproj/DiskVolume.c 606>
+  370 							setVar: 351
+  371 						fsck_needed: boolean_t (), <./autodiskmount.tproj/DiskVolume.c 264>
+  372 							repairPathForFileSystem: 180
+  373 							sprintf: <>
+  374 							stat: <>
+  375 							dwarning: <>
+  376 							popen: <>
+  377 							fflush: <>
+  378 							pclose: <>
+  379 							free: <>
+  380 						CFRelease: <>
+  381 						free: <>
+  382 					strncmp: <>
+  383 					strlen: <>
+  384 					CFArrayAppendValue: <>
+  385 					free: <>
+  386 					DiskVolumes_delete: void (), <./autodiskmount.tproj/DiskVolume.c 793>
+  387 						CFArrayGetCount: <>
+  388 						DiskVolume_delete: void (), <./autodiskmount.tproj/DiskVolume.c 644>
+  389 							free: <>
+  390 						CFArrayGetValueAtIndex: <>
+  391 						CFArrayRemoveAllValues: <>
+  392 						CFRelease: <>
+  393 						free: <>
+  394 				fsck_vols: boolean_t (), <./autodiskmount.tproj/autodiskmount.c 123>
+  395 					DiskVolumes_count: unsigned (), <./autodiskmount.tproj/DiskVolume.c 991>
+  396 						CFArrayGetCount: <>
+  397 					DiskVolumes_objectAtIndex: DiskVolumePtr (), <./autodiskmount.tproj/DiskVolume.c 995>
+  398 						CFArrayGetValueAtIndex: <>
+  399 					repairPathForFileSystem: 180
+  400 					repairArgsForFileSystem: 192
+  401 					sprintf: <>
+  402 					stat: <>
+  403 					dwarning: <>
+  404 					popen: <>
+  405 					fflush: <>
+  406 					pclose: <>
+  407 					free: <>
+  408 				pwarning: <>
+  409 				mount_vols: boolean_t (), <./autodiskmount.tproj/autodiskmount.c 210>
+  410 					DiskVolumes_count: 395
+  411 					DiskVolumes_objectAtIndex: 397
+  412 					LookupDiskByIOBSDName: 13
+  413 					DiskSetMountpoint: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 645>
+  414 						free: <>
+  415 						strdup: <>
+  416 						NextSequenceNumber: 83
+  417 					dwarning: <>
+  418 					chown: <>
+  419 					DiskVolume_SetTrashes: void (), <./autodiskmount.tproj/DiskVolume.c 1162>
+  420 						sprintf: <>
+  421 						stat: <>
+  422 						dwarning: <>
+  423 						mkdir: <>
+  424 						pwarning: <>
+  425 						strerror: <>
+  426 						chmod: <>
+  427 						HideFile: int (), <./autodiskmount.tproj/DiskVolume.c 1137>
+  428 							getattrlist: <>
+  429 							dwarning: <>
+  430 							setattrlist: <>
+  431 					DiskVolumes_setVolumeMountPoint: boolean_t (), <./autodiskmount.tproj/DiskVolume.c 1047>
+  432 						mountModeForFS: mode_t (), <./autodiskmount.tproj/FSParticular.c 81>
+  433 						sprintf: <>
+  434 						strchr: <>
+  435 						mountPath: 281
+  436 						stat: <>
+  437 						pwarning: <>
+  438 						strerror: <>
+  439 						DiskVolumes_volumeWithMount: DiskVolumePtr (), <./autodiskmount.tproj/DiskVolume.c 1000>
+  440 							CFArrayGetCount: <>
+  441 							CFArrayGetValueAtIndex: <>
+  442 							strcmp: <>
+  443 						rmdir: <>
+  444 						remove: <>
+  445 						mkdir: <>
+  446 						chmod: <>
+  447 						fopen: <>
+  448 						fclose: <>
+  449 						DiskVolume_setMountPoint: 369
+  450 					DiskVolume_mount: boolean_t (), <./autodiskmount.tproj/DiskVolume.c 534>
+  451 						LookupDiskByIOBSDName: 13
+  452 						strcmp: <>
+  453 						DiskVolume_mount_ufs: boolean_t (), <./autodiskmount.tproj/FSParticular.c 117>
+  454 							sprintf: <>
+  455 							pwarning: <>
+  456 							strerror: <>
+  457 							DiskVolume_setMounted: 362
+  458 						DiskVolume_mount_foreign: boolean_t (), <./autodiskmount.tproj/DiskVolume.c 463>
+  459 							foreignMountDevice: int (), <./autodiskmount.tproj/DiskVolume.c 397>
+  460 								fsDirForFS: 315
+  461 								dwarning: <>
+  462 								fork: <>
+  463 								cleanUpAfterFork: 321
+  464 								chdir: <>
+  465 								execve: <>
+  466 								exit: <>
+  467 								wait4: <>
+  468 								WIFEXITED: <>
+  469 								WEXITSTATUS: <>
+  470 								free: <>
+  471 							printf: <>
+  472 							DiskVolume_setMounted: 362
+  473 							repairPathForFileSystem: 180
+  474 							repairArgsForFileSystem: 192
+  475 							sprintf: <>
+  476 							dwarning: <>
+  477 							popen: <>
+  478 							fflush: <>
+  479 							pclose: <>
+  480 							pwarning: <>
+  481 							free: <>
+  482 				strlen: <>
+  483 				LookupWholeDiskForThisPartition: DiskPtr (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1187>
+  484 					IsNetwork: boolean_t (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 580>
+  485 					IsWhole: boolean_t (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 566>
+  486 					dwarning: <>
+  487 					STR: <>
+  488 				DiskArbIsHandlingUnrecognizedDisks: int (), <./autodiskmount.tproj/DiskVolume.c 108>
+  489 				StartUnrecognizedDiskDialogThread: void (), <./autodiskmount.tproj/DiskVolume.c 183>
+  490 					pthread_attr_init: <>
+  491 					pthread_attr_setdetachstate: <>
+  492 					pthread_create: <>
+  493 					UnrecognizedDiskDiscovered: void * (), <./autodiskmount.tproj/DiskVolume.c 123>
+  494 						CFURLCreateWithFileSystemPath: <>
+  495 						CFSTR: <>
+  496 						CFUserNotificationDisplayAlert: <>
+  497 						LookupWholeDiskForThisPartition: 483
+  498 						DiskArbUnmountAndEjectRequest_async_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 878>
+  499 							dwarning: <>
+  500 							LookupDiskByIOBSDName: 13
+  501 							AreWeBusy: DiskState (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2663>
+  502 								dwarning: <>
+  503 								DISKSTATE: <>
+  504 							pwarning: <>
+  505 							UnmountAllPartitions: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 783>
+  506 								strlen: <>
+  507 								dwarning: <>
+  508 								IsNetwork: 484
+  509 								UnmountDisk: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 710>
+  510 									sprintf: <>
+  511 									dwarning: <>
+  512 									strcmp: <>
+  513 									SetStateForOnePartition: 64
+  514 									LogErrorMessage: 205
+  515 									strerror: <>
+  516 									rmdir: <>
+  517 									stat: <>
+  518 									remove: <>
+  519 									free: <>
+  520 									strdup: <>
+  521 							SetStateForAllPartitions: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1072>
+  522 								dwarning: <>
+  523 								DISKSTATE: <>
+  524 								IsNetwork: 484
+  525 								SetStateForOnePartition: 64
+  526 							PrepareToSendPreUnmountMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2108>
+  527 								dwarning: <>
+  528 								InitAckValue: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1377>
+  529 									dwarning: <>
+  530 									LogErrorMessage: 205
+  531 						MACH_MSGH_BITS: <>
+  532 						mach_msg: <>
+  533 						seteuid: <>
+  534 						system: <>
+  535 						CFRelease: <>
+  536 					pthread_attr_destroy: <>
+  537 				DiskVolumes_print: DiskVolumesPtr (), <./autodiskmount.tproj/DiskVolume.c 974>
+  538 					printf: <>
+  539 					CFArrayGetCount: <>
+  540 					DiskVolume_print: void (), <./autodiskmount.tproj/DiskVolume.c 559>
+  541 						pwarning: <>
+  542 					CFArrayGetValueAtIndex: <>
+  543 				DiskVolumes_delete: 386
+  544 			FreeAllDisks: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 691>
+  545 				FreeDisk: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 917>
+  546 					dwarning: <>
+  547 					free: <>
+  548 					FreeAckValues: 67
+  549 					IOObjectRelease: <>
+  550 			daemon: <>
+  551 			mach_port_insert_right: <>
+  552 			bootstrap_register: <>
+  553 			mach_port_move_member: <>
+  554 			GetNotifyPort: mach_port_t (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 183>
+  555 			writepid: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2785>
+  556 				fopen: <>
+  557 				fprintf: <>
+  558 				getpid: <>
+  559 				fclose: <>
+  560 			AreWeBusy: 501
+  561 			CompleteUnmount: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2480>
+  562 				dwarning: <>
+  563 				NumUnsetAckValuesForAllDisks: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1457>
+  564 					NumUnsetAckValues: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1435>
+  565 					dwarning: <>
+  566 				LookupWholeDiskToBeEjected: DiskPtr (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1232>
+  567 					IsWhole: 485
+  568 					IsNetwork: 484
+  569 					dwarning: <>
+  570 					STR: <>
+  571 					DISKSTATE: <>
+  572 				GetDissenterFromAckValues: AckValue * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1499>
+  573 				UnmountDisk: 509
+  574 				SetStateForOnePartition: 64
+  575 				SendUnmountPostNotifyMsgsForOnePartition: 94
+  576 				NumPartitionsMountedFromThisDisk: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1111>
+  577 					IsNetwork: 484
+  578 					strcmp: <>
+  579 					dwarning: <>
+  580 				SetStateForAllPartitions: 521
+  581 				PrepareToSendPreEjectMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2142>
+  582 					dwarning: <>
+  583 					InitAckValue: 528
+  584 			NumUnsetAckValuesForAllDisks: 563
+  585 			SendCompletedMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2429>
+  586 				dwarning: <>
+  587 				malloc: <>
+  588 				StartDiskMessagesCompleted: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1802>
+  589 					pthread_attr_init: <>
+  590 					pthread_attr_setdetachstate: <>
+  591 					pthread_create: <>
+  592 					NotifyDiskMessagesCompleted: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1707>
+  593 						DiskArbNotificationComplete_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 600>
+  594 							dwarning: <>
+  595 						dwarning: <>
+  596 						mach_error_string: <>
+  597 						free: <>
+  598 					pthread_attr_destroy: <>
+  599 			CompleteEject: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2585>
+  600 				dwarning: <>
+  601 				NumUnsetAckValuesForAllDisks: 563
+  602 				LookupWholeDiskToBeEjected: 566
+  603 				LogErrorMessage: 205
+  604 				GetDissenterFromAckValuesForAllDisks: AckValue * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1522>
+  605 					GetDissenterFromAckValues: 572
+  606 				EjectDisk: int (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 839>
+  607 					dwarning: <>
+  608 					IsNetwork: 484
+  609 					strcmp: <>
+  610 					SetStateForOnePartition: 64
+  611 					LookupWholeDiskForThisPartition: 483
+  612 					LogErrorMessage: 205
+  613 					SetStateForAllPartitions: 521
+  614 					sprintf: <>
+  615 					open: <>
+  616 					strerror: <>
+  617 					ioctl: <>
+  618 					close: <>
+  619 				SetStateForAllPartitions: 521
+  620 				SendEjectPostNotifyMsgsForAllPartitions: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2368>
+  621 					dwarning: <>
+  622 					IsNetwork: 484
+  623 					SendEjectPostNotifyMsgsForOnePartition: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2337>
+  624 						dwarning: <>
+  625 						DiskArbEjectPostNotify_async_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 478>
+  626 							dwarning: <>
+  627 						mach_error_string: <>
+  628 			SendPreUnmountMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2176>
+  629 				dwarning: <>
+  630 				LookupClientByPID: ClientPtr (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 453>
+  631 				pwarning: <>
+  632 				DiskArbUnmountPreNotify_async_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 408>
+  633 					dwarning: <>
+  634 				mach_error_string: <>
+  635 			SendPreEjectMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2240>
+  636 				dwarning: <>
+  637 				LookupClientByPID: 630
+  638 				pwarning: <>
+  639 				DiskArbEjectPreNotify_async_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 455>
+  640 					dwarning: <>
+  641 				mach_error_string: <>
+  642 			SendDiskAppearedMsgs: 16
+  643 			SetStateForOnePartition: 64
+  644 			FreeDisk: 545
+  645 			PrintDisks: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 973>
+  646 				dwarning: <>
+  647 				PrintAckValues: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1479>
+  648 					dwarning: <>
+  649 			mach_msg: <>
+  650 			GetUnresponderFromAckValuesForAllDisks: AckValue * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1569>
+  651 				GetUnresponderFromAckValues: AckValue * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1546>
+  652 			LookupClientByPID: 630
+  653 			SendClientWasDisconnectedMsg: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1870>
+  654 				malloc: <>
+  655 				dwarning: <>
+  656 				StartClientDisconnectedThread: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1836>
+  657 					pthread_attr_init: <>
+  658 					pthread_attr_setdetachstate: <>
+  659 					pthread_create: <>
+  660 					NotifyClientDisconnected: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1723>
+  661 						DiskArbClientDisconnected_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 501>
+  662 							dwarning: <>
+  663 						dwarning: <>
+  664 						mach_error_string: <>
+  665 					pthread_attr_destroy: <>
+  666 			ClientDeath: void (), <./autodiskmount.tproj/DiskArbitrationServer.c 151>
+  667 				dwarning: <>
+  668 				PrintClient: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 423>
+  669 					dwarning: <>
+  670 				MakeDeadClientAgreeable: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1594>
+  671 				mach_port_deallocate: <>
+  672 				mach_task_self: <>
+  673 				mach_error_string: <>
+  674 				SetBlueBoxBootVolume: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2455>
+  675 					dwarning: <>
+  676 					SendBlueBoxBootVolumeUpdatedMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2405>
+  677 						dwarning: <>
+  678 						malloc: <>
+  679 						StartBlueBoxNotificationThread: 19
+  680 				free: <>
+  681 				PrintClients: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 433>
+  682 					dwarning: <>
+  683 					PrintClient: 668
+  684 			MessageIsNotificationDeath: boolean_t (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 192>
+  685 				GetNotifyPort: 554
+  686 				dwarning: <>
+  687 				LogErrorMessage: 205
+  688 			mach_port_deallocate: <>
+  689 			bzero: <>
+  690 			ClientToServer_server: <>
+  691 			mach_msg_send: <>
+  692 			HandleIONotificationMsg: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 261>
+  693 				OSGetNotificationFromMessage: <>
+  694 				dwarning: <>
+  695 				GetDisksFromRegistry: 221
+  696 				autodiskmount: 266
+  697 				IOIteratorNext: <>
+  698 				IORegistryEntryGetName: <>
+  699 				IORegistryEntryCreateCFProperties: <>
+  700 				assert: <>
+  701 				CFGetTypeID: <>
+  702 				CFDictionaryGetTypeID: <>
+  703 				CFDictionaryGetValue: <>
+  704 				CFSTR: <>
+  705 				daCreateCStringFromCFString: 161
+  706 				LookupDiskByIOBSDName: 13
+  707 				strlen: <>
+  708 				LookupWholeDiskForThisPartition: 483
+  709 				StartYankedDiskMessage: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 148>
+  710 					pthread_attr_init: <>
+  711 					pthread_attr_setdetachstate: <>
+  712 					pthread_create: <>
+  713 					YankedDiskThread: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 131>
+  714 						CFURLCreateWithFileSystemPath: <>
+  715 						CFSTR: <>
+  716 						CFUserNotificationDisplayNotice: <>
+  717 						CFRelease: <>
+  718 					pthread_attr_destroy: <>
+  719 				UnmountDisk: 509
+  720 				SendUnmountPostNotifyMsgsForOnePartition: 94
+  721 				SendEjectPostNotifyMsgsForOnePartition: 623
+  722 				FreeDisk: 545
+  723 				IOObjectRelease: <>
+  724 				CFRelease: <>
+  725 				free: <>
+  726 		DisplayHelp: void (), <./disktool.tproj/DiskArbitrationClient.c 205>
+  727 			printf: <>
+  728 		atoi: <>
+  729 		printf: <>
+  730 		DiskArbRegisterCallback_DiskAppeared2: void (), <./DiskArbitration.fproj/DiskArbitration.c 109>
+  731 		DiskArbDiskAppeared2_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 57>
+  732 			printf: <>
+  733 		DiskArbRegisterCallback_UnmountPreNotification: void (), <./DiskArbitration.fproj/DiskArbitration.c 119>
+  734 		DiskArbUnmountPreNotification_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 69>
+  735 			DiskArbUnmountPreNotifyAck_async_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 983>
+  736 				DiskArbUnmountPreNotifyAck_async_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 738>
+  737 					dwarning: <>
+  738 					LookupClientByPID: 630
+  739 					pwarning: <>
+  740 					LookupDiskByIOBSDName: 13
+  741 					UpdateAckValue: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1397>
+  742 						dwarning: <>
+  743 						LogErrorMessage: 205
+  744 					PrintAckValues: 647
+  745 				getpid: <>
+  746 			printf: <>
+  747 		DiskArbRegisterCallback_UnmountPostNotification: void (), <./DiskArbitration.fproj/DiskArbitration.c 124>
+  748 		DiskArbUnmountPostNotification_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 81>
+  749 			printf: <>
+  750 			strcmp: <>
+  751 			exit: <>
+  752 		DiskArbRegisterCallback_EjectPreNotification: void (), <./DiskArbitration.fproj/DiskArbitration.c 129>
+  753 		DiskArbEjectPreNotification_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 103>
+  754 			printf: <>
+  755 			DiskArbEjectPreNotifyAck_async_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 997>
+  756 				DiskArbEjectPreNotifyAck_async_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 830>
+  757 					dwarning: <>
+  758 					LookupClientByPID: 630
+  759 					pwarning: <>
+  760 					LookupDiskByIOBSDName: 13
+  761 					UpdateAckValue: 741
+  762 					PrintAckValues: 647
+  763 				getpid: <>
+  764 		DiskArbRegisterCallback_EjectPostNotification: void (), <./DiskArbitration.fproj/DiskArbitration.c 134>
+  765 		DiskArbEjectPostNotification_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 128>
+  766 			printf: <>
+  767 			strcmp: <>
+  768 			exit: <>
+  769 		DiskArbRegisterCallback_ClientDisconnectedNotification: void (), <./DiskArbitration.fproj/DiskArbitration.c 139>
+  770 		DiskArbClientDisconnected_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 116>
+  771 			printf: <>
+  772 			DiskArbStart: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 709>
+  773 				bootstrap_look_up: <>
+  774 				dwarning: <>
+  775 				mach_port_allocate: <>
+  776 				mach_task_self: <>
+  777 				mach_error_string: <>
+  778 				printf: <>
+  779 				DiskArbRegisterWithPID_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 891>
+  780 					DiskArbRegisterWithPID_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 555>
+  781 						dwarning: <>
+  782 						EnableDeathNotifications: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1278>
+  783 							dwarning: <>
+  784 							mach_port_request_notification: <>
+  785 							mach_task_self: <>
+  786 							GetNotifyPort: 554
+  787 							LogErrorMessage: 205
+  788 							mach_error_string: <>
+  789 						mach_port_deallocate: <>
+  790 						mach_task_self: <>
+  791 						mach_error_string: <>
+  792 						LookupClientByPID: 630
+  793 						PrintClient: 668
+  794 						NewClient: ClientPtr (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 385>
+  795 							malloc: <>
+  796 							dwarning: <>
+  797 						StartDiskRegistrationCompleteThread: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1825>
+  798 							pthread_attr_init: <>
+  799 							pthread_attr_setdetachstate: <>
+  800 							pthread_create: <>
+  801 							NotifyDiskRegistrationComplete: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1690>
+  802 								DiskArbRegistrationComplete_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 622>
+  803 									dwarning: <>
+  804 								dwarning: <>
+  805 								mach_error_string: <>
+  806 							pthread_attr_destroy: <>
+  807 						PrintClients: 681
+  808 					getpid: <>
+  809 				DiskArbMsgLoopWithTimeout: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 1037>
+  810 					malloc: <>
+  811 					dwarning: <>
+  812 					mach_msg: <>
+  813 					mach_error_string: <>
+  814 					free: <>
+  815 					bzero: <>
+  816 					DiskArbHandleMsg: boolean_t (), <./DiskArbitration.fproj/DiskArbitration.c 185>
+  817 						ServerToClient_server: <>
+  818 					mach_msg_send: <>
+  819 				DiskArbMarkPIDNew_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 906>
+  820 					DiskArbMarkPIDNew_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 631>
+  821 						dwarning: <>
+  822 						ClientDeath: 666
+  823 						EnableDeathNotifications: 782
+  824 						NewClient: 794
+  825 					getpid: <>
+  826 		DiskArbRegisterCallback_UnknownFileSystemNotification: void (), <./DiskArbitration.fproj/DiskArbitration.c 149>
+  827 		UnknownFileSystemInserted_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 195>
+  828 			printf: <>
+  829 		DiskArbRegisterCallback_DiskChangedNotification: void (), <./DiskArbitration.fproj/DiskArbitration.c 154>
+  830 		DiskChanged_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 181>
+  831 			printf: <>
+  832 			strcmp: <>
+  833 			exit: <>
+  834 		DiskArbRegisterCallback_NotificationComplete: void (), <./DiskArbitration.fproj/DiskArbitration.c 159>
+  835 		NotificationComplete_callback: void (), <./disktool.tproj/DiskArbitrationClient.c 200>
+  836 			printf: <>
+  837 		DiskArbStart: 772
+  838 		malloc: <>
+  839 		DiskArbSetVolumeEncoding_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 947>
+  840 			DiskArbSetVolumeEncoding_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 1172>
+  841 				LookupDiskByIOBSDName: 13
+  842 				sprintf: <>
+  843 				strcmp: <>
+  844 				fork: <>
+  845 				cleanUpAfterFork: 321
+  846 				execve: <>
+  847 				exit: <>
+  848 				dwarning: <>
+  849 				wait4: <>
+  850 				WIFEXITED: <>
+  851 				WEXITSTATUS: <>
+  852 				getattrlist: <>
+  853 				mountPath: 281
+  854 				stat: <>
+  855 				pwarning: <>
+  856 				strerror: <>
+  857 				rmdir: <>
+  858 				remove: <>
+  859 				rename: <>
+  860 				strcpy: <>
+  861 				SendDiskChangedMsgs: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 2033>
+  862 					dwarning: <>
+  863 					malloc: <>
+  864 					strdup: <>
+  865 					StartDiskChangedThread: void (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1847>
+  866 						pthread_attr_init: <>
+  867 						pthread_attr_setdetachstate: <>
+  868 						pthread_create: <>
+  869 						NotifyDiskChanged: void * (), <./autodiskmount.tproj/DiskArbitrationServerMain.c 1754>
+  870 							DiskArbDiskChanged_rpc: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 573>
+  871 								dwarning: <>
+  872 							dwarning: <>
+  873 							mach_error_string: <>
+  874 							free: <>
+  875 						pthread_attr_destroy: <>
+  876 		DiskArbGetVolumeEncoding_auto: int (), <./DiskArbitration.fproj/DiskArbitration.c 952>
+  877 			DiskArbGetVolumeEncoding_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 1374>
+  878 				LookupDiskByIOBSDName: 13
+  879 				strcmp: <>
+  880 				getattrlist: <>
+  881 		DiskArbSetCurrentUser_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 923>
+  882 			DiskArbSetCurrentUser_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 1132>
+  883 				UnmountAllPartitions: 505
+  884 				IOMasterPort: <>
+  885 				IOServiceGetMatchingServices: <>
+  886 				IOServiceMatching: <>
+  887 				GetDisksFromRegistry: 221
+  888 				autodiskmount: 266
+  889 		DiskArbVSDBGetVolumeStatus_auto: int (), <./DiskArbitration.fproj/DiskArbitration.c 938>
+  890 			DiskArbVSDBGetVolumeStatus_rpc: kern_return_t (), <./autodiskmount.tproj/vsdbutil.c 1169>
+  891 				LookupDiskByIOBSDName: 13
+  892 				strcmp: <>
+  893 				dwarning: <>
+  894 				GetVolumeUUID: int (), <./autodiskmount.tproj/vsdbutil.c 288>
+  895 					getattrlist: <>
+  896 					warn: <>
+  897 					GenerateVolumeUUID: void (), <./autodiskmount.tproj/vsdbutil.c 415>
+  898 						SHA1Init: void (), <./autodiskmount.tproj/vsdbutil.c 1068>
+  899 						clock: <>
+  900 						SHA1Update: void (), <./autodiskmount.tproj/vsdbutil.c 1082>
+  901 							memcpy: <>
+  902 							SHA1Transform: void (), <./autodiskmount.tproj/vsdbutil.c 1008>
+  903 								memcpy: <>
+  904 								printf: <>
+  905 								R0: <>
+  906 								R1: <>
+  907 								R2: <>
+  908 								R3: <>
+  909 								R4: <>
+  910 						sysctl: <>
+  911 						time: <>
+  912 						strncpy: <>
+  913 						asctime: <>
+  914 						gmtime: <>
+  915 						SHA1Final: void (), <./autodiskmount.tproj/vsdbutil.c 1105>
+  916 							SHA1Update: 900
+  917 							memset: <>
+  918 							SHA1Transform: 902
+  919 						memcpy: <>
+  920 					bcopy: <>
+  921 					setattrlist: <>
+  922 				OpenVolumeStatusDB: int (), <./autodiskmount.tproj/vsdbutil.c 537>
+  923 					malloc: <>
+  924 					open: <>
+  925 				GetVolumeStatusDBEntry: int (), <./autodiskmount.tproj/vsdbutil.c 568>
+  926 					LockDB: int (), <./autodiskmount.tproj/vsdbutil.c 744>
+  927 						fprintf: <>
+  928 						flock: <>
+  929 					FindVolumeRecordByUUID: int (), <./autodiskmount.tproj/vsdbutil.c 762>
+  930 						FormatDBKey: void (), <./autodiskmount.tproj/vsdbutil.c 903>
+  931 							FormatUUID: void (), <./autodiskmount.tproj/vsdbutil.c 895>
+  932 								FormatULong: void (), <./autodiskmount.tproj/vsdbutil.c 877>
+  933 						lseek: <>
+  934 						GetVSDBEntry: int (), <./autodiskmount.tproj/vsdbutil.c 824>
+  935 							lseek: <>
+  936 							fprintf: <>
+  937 							read: <>
+  938 							strncpy: <>
+  939 							memcpy: <>
+  940 						CompareVSDBKeys: int (), <./autodiskmount.tproj/vsdbutil.c 854>
+  941 							strncpy: <>
+  942 							fprintf: <>
+  943 							memcmp: <>
+  944 						fprintf: <>
+  945 						memcpy: <>
+  946 					ConvertHexStringToULong: unsigned long (), <./autodiskmount.tproj/vsdbutil.c 929>
+  947 					UnlockDB: int (), <./autodiskmount.tproj/vsdbutil.c 753>
+  948 						fprintf: <>
+  949 						flock: <>
+  950 				CloseVolumeStatusDB: int (), <./autodiskmount.tproj/vsdbutil.c 721>
+  951 					close: <>
+  952 					free: <>
+  953 		DiskArbVSDBAdoptVolume_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 928>
+  954 			DiskArbVSDBAdoptVolume_rpc: kern_return_t (), <./autodiskmount.tproj/vsdbutil.c 1134>
+  955 				LookupDiskByIOBSDName: 13
+  956 				dwarning: <>
+  957 				AdoptVolume: int (), <./autodiskmount.tproj/vsdbutil.c 175>
+  958 					GetVolumeUUID: 894
+  959 					warnx: <>
+  960 					strerror: <>
+  961 					OpenVolumeStatusDB: 922
+  962 					GetVolumeStatusDBEntry: 925
+  963 					SetVolumeStatusDBEntry: int (), <./autodiskmount.tproj/vsdbutil.c 591>
+  964 						LockDB: 926
+  965 						FormatDBEntry: void (), <./autodiskmount.tproj/vsdbutil.c 915>
+  966 							FormatDBKey: 930
+  967 							FormatDBRecord: void (), <./autodiskmount.tproj/vsdbutil.c 909>
+  968 								FormatULong: 932
+  969 							fprintf: <>
+  970 						FindVolumeRecordByUUID: 929
+  971 						fprintf: <>
+  972 						UpdateVolumeRecord: int (), <./autodiskmount.tproj/vsdbutil.c 805>
+  973 							strncpy: <>
+  974 							fprintf: <>
+  975 							lseek: <>
+  976 							write: <>
+  977 						AddVolumeRecord: int (), <./autodiskmount.tproj/vsdbutil.c 788>
+  978 							strncpy: <>
+  979 							fprintf: <>
+  980 							lseek: <>
+  981 							write: <>
+  982 						fsync: <>
+  983 						UnlockDB: 947
+  984 					CloseVolumeStatusDB: 950
+  985 					sync: <>
+  986 					UpdateMountStatus: int (), <./autodiskmount.tproj/vsdbutil.c 125>
+  987 						statfs: <>
+  988 						warn: <>
+  989 						fork: <>
+  990 						execl: <>
+  991 						fprintf: <>
+  992 						wait4: <>
+  993 						WIFEXITED: <>
+  994 		DiskArbVSDBDisownVolume_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 933>
+  995 			DiskArbVSDBDisownVolume_rpc: kern_return_t (), <./autodiskmount.tproj/vsdbutil.c 1152>
+  996 				LookupDiskByIOBSDName: 13
+  997 				dwarning: <>
+  998 				DisownVolume: int (), <./autodiskmount.tproj/vsdbutil.c 233>
+  999 					GetVolumeUUID: 894
+ 1000 					warnx: <>
+ 1001 					strerror: <>
+ 1002 					OpenVolumeStatusDB: 922
+ 1003 					GetVolumeStatusDBEntry: 925
+ 1004 					SetVolumeStatusDBEntry: 963
+ 1005 					CloseVolumeStatusDB: 950
+ 1006 					sync: <>
+ 1007 					UpdateMountStatus: 986
+ 1008 		DiskArbRefresh_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 886>
+ 1009 			DiskArbRefresh_rpc: 8
+ 1010 		DiskArbUnmountRequest_async_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 976>
+ 1011 			DiskArbUnmountRequest_async_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 679>
+ 1012 				dwarning: <>
+ 1013 				LookupDiskByIOBSDName: 13
+ 1014 				pwarning: <>
+ 1015 				AreWeBusy: 501
+ 1016 				UnmountDisk: 509
+ 1017 				UnmountAllPartitions: 505
+ 1018 				SetStateForOnePartition: 64
+ 1019 				SetStateForAllPartitions: 521
+ 1020 				PrepareToSendPreUnmountMsgs: 526
+ 1021 		DiskArbUnmountAndEjectRequest_async_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 1004>
+ 1022 			DiskArbUnmountAndEjectRequest_async_rpc: 498
+ 1023 		DiskArbRequestMount_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 873>
+ 1024 			DiskArbRequestMount_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 515>
+ 1025 				IOMasterPort: <>
+ 1026 				dwarning: <>
+ 1027 				IOServiceGetMatchingServices: <>
+ 1028 				IOServiceMatching: <>
+ 1029 				LookupDiskByIOBSDName: 13
+ 1030 				UnmountAllPartitions: 505
+ 1031 				FreeDisk: 545
+ 1032 				GetDisksFromRegistry: 221
+ 1033 				autodiskmount: 266
+ 1034 		DiskArbDiskAppearedWithMountpointPing_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 858>
+ 1035 			DiskArbDiskAppearedWithMountpointPing_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 309>
+ 1036 				dwarning: <>
+ 1037 				NewDisk: 77
+ 1038 		DiskArbDiskDisappearedPing_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 866>
+ 1039 			DiskArbDiskDisappearedPing_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 344>
+ 1040 				dwarning: <>
+ 1041 				LookupDiskByIOBSDName: 13
+ 1042 				UnmountAllPartitions: 505
+ 1043 				SendUnmountPostNotifyMsgsForOnePartition: 94
+ 1044 				SendEjectPostNotifyMsgsForOnePartition: 623
+ 1045 				FreeDisk: 545
+ 1046 		DiskArbRequestDiskChange_auto: kern_return_t (), <./DiskArbitration.fproj/DiskArbitration.c 915>
+ 1047 			DiskArbRequestDiskChange_rpc: kern_return_t (), <./autodiskmount.tproj/DiskArbitrationServer.c 960>
+ 1048 				dwarning: <>
+ 1049 				sprintf: <>
+ 1050 				mountPath: 281
+ 1051 				LookupDiskByIOBSDName: 13
+ 1052 				stat: <>
+ 1053 				pwarning: <>
+ 1054 				strerror: <>
+ 1055 				rmdir: <>
+ 1056 				remove: <>
+ 1057 				strcmp: <>
+ 1058 				getattrlist: <>
+ 1059 				strncpy: <>
+ 1060 				strlen: <>
+ 1061 				setattrlist: <>
+ 1062 				strcpy: <>
+ 1063 				rename: <>
+ 1064 				renameUFSDevice: int (), <./autodiskmount.tproj/FSParticular.c 178>
+ 1065 					utilPathForFS: char * (), <./autodiskmount.tproj/FSParticular.c 167>
+ 1066 						malloc: <>
+ 1067 						sprintf: <>
+ 1068 					fsDirForFS: 315
+ 1069 					dwarning: <>
+ 1070 					fork: <>
+ 1071 					cleanUpAfterFork: 321
+ 1072 					chdir: <>
+ 1073 					execve: <>
+ 1074 					exit: <>
+ 1075 					wait4: <>
+ 1076 					WIFEXITED: <>
+ 1077 					WEXITSTATUS: <>
+ 1078 				SendDiskChangedMsgs: 861
+ 1079 				PrintDisks: 645
+ 1080 		mach_msg: <>
+ 1081 		mach_error_string: <>
+ 1082 		free: <>
+ 1083 		DiskArbHandleMsg: 816
+ 1084 		mach_msg_send: <>

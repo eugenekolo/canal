@@ -1,0 +1,271 @@
+    1 	SIP_start: int (), <./SIP-NKE.kmodproj/sip.c 180>
+    2 		thread_funnel_set: <>
+    3 		splnet: <>
+    4 		pffindproto: <>
+    5 		log: <>
+    6 		splx: <>
+    7 		register_sockfilter: <>
+    8 	SIP_stop: int (), <./SIP-NKE.kmodproj/sip.c 610>
+    9 		thread_funnel_set: <>
+   10 		log: <>
+   11 		splnet: <>
+   12 		splx: <>
+   13 		atalk_stop: int (), <./SIP-NKE.kmodproj/sip_atalk.c 487>
+   14 			log: <>
+   15 			dlil_detach_filter: <>
+   16 		ipv4_stop: int (), <./SIP-NKE.kmodproj/sip_inet.c 1506>
+   17 			in_pcb_rem_share_client: <>
+   18 			log: <>
+   19 			dlil_detach_filter: <>
+   20 			untimeout: <>
+   21 			sip_fragtimer: void (), <./SIP-NKE.kmodproj/sip_inet.c 2067>
+   22 				thread_funnel_set: <>
+   23 				splnet: <>
+   24 				release_ifb: void (), <./SIP-NKE.kmodproj/sip.c 778>
+   25 					FREE: <>
+   26 				splx: <>
+   27 				TAILQ_FIRST: <>
+   28 				TAILQ_NEXT: <>
+   29 				log: <>
+   30 				TAILQ_REMOVE: <>
+   31 				m_freem: <>
+   32 				FREE: <>
+   33 				timeout: <>
+   34 				sip_fragtimer: 21
+   35 			TAILQ_FIRST: <>
+   36 			TAILQ_REMOVE: <>
+   37 			m_freem: <>
+   38 			FREE: <>
+   39 		FREE: <>
+   40 		pffindproto: <>
+   41 		unregister_sockfilter: <>
+   42 	atalk_attach_protofltr: int (), <./SIP-NKE.kmodproj/sip_atalk.c 353>
+   43 		atalk_infltr: int (), <./SIP-NKE.kmodproj/sip_atalk.c 147>
+   44 			MDATA_ETHER_START: <>
+   45 			log: <>
+   46 			blue_inject: int (), <./SIP-NKE.kmodproj/sip.c 676>
+   47 				bcopy: <>
+   48 				log: <>
+   49 				m_freem: <>
+   50 				splnet: <>
+   51 				sbappendaddr: <>
+   52 				m_free: <>
+   53 				splx: <>
+   54 				sorwakeup: <>
+   55 			MDATA_ETHER_END: <>
+   56 			m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+   57 		atalk_outfltr: int (), <./SIP-NKE.kmodproj/sip_atalk.c 234>
+   58 			MDATA_ETHER_START: <>
+   59 			m_pullup: <>
+   60 			min: <>
+   61 			log: <>
+   62 			MDATA_ETHER_END: <>
+   63 			my_frameout: int (), <./SIP-NKE.kmodproj/sip.c 729>
+   64 				log: <>
+   65 				m_freem: <>
+   66 				M_PREPEND: <>
+   67 				mtod: <>
+   68 				memcpy: <>
+   69 			blue_inject: 46
+   70 			m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+   71 		atalk_stop: 13
+   72 		dlil_find_dltag: <>
+   73 		ether_attach_at: <>
+   74 		dlil_attach_protocol_filter: <>
+   75 		log: <>
+   76 	atalk_stop: 13
+   77 	blue_inject: 46
+   78 	enable_atalk: int (), <./SIP-NKE.kmodproj/sip_atalk.c 85>
+   79 		copyin: <>
+   80 		log: <>
+   81 		sotondrvcb: <>
+   82 		bzero: <>
+   83 		TAILQ_FOREACH: <>
+   84 		splnet: <>
+   85 		atalk_attach_protofltr: 42
+   86 		splx: <>
+   87 	enable_filters: int (), <./SIP-NKE.kmodproj/sip.c 278>
+   88 		log: <>
+   89 		splnet: <>
+   90 		enable_atalk: 78
+   91 		enable_ipv4: int (), <./SIP-NKE.kmodproj/sip_inet.c 140>
+   92 			copyin: <>
+   93 			log: <>
+   94 			validate_addrs: int (), <./SIP-NKE.kmodproj/sip_inet.c 1741>
+   95 				log: <>
+   96 			in_pcb_new_share_client: <>
+   97 			in_pcb_rem_share_client: <>
+   98 			MALLOC: <>
+   99 			bcopy: <>
+  100 			splnet: <>
+  101 			ipv4_attach_protofltr: int (), <./SIP-NKE.kmodproj/sip_inet.c 1443>
+  102 				ipv4_loop_outfltr: int (), <./SIP-NKE.kmodproj/sip_inet.c 924>
+  103 					m_pullup: <>
+  104 					min: <>
+  105 					log: <>
+  106 					not4us: int (), <./SIP-NKE.kmodproj/sip_inet.c 1771>
+  107 					IN_CLASSD: <>
+  108 					m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  109 					handle_frags: int (), <./SIP-NKE.kmodproj/sip_inet.c 1824>
+  110 						mtod: <>
+  111 						log: <>
+  112 						TAILQ_FOREACH: <>
+  113 						MALLOC: <>
+  114 						bzero: <>
+  115 						TAILQ_INIT: <>
+  116 						timeout: <>
+  117 						sip_fragtimer: 21
+  118 						TAILQ_INSERT_TAIL: <>
+  119 						in_pcb_get_owner: <>
+  120 						TAILQ_EMPTY: <>
+  121 						m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  122 						blue_inject: 46
+  123 						MDATA_ETHER_END: <>
+  124 						dlil_inject_pr_input: <>
+  125 						IN_CLASSD: <>
+  126 						M_PREPEND: <>
+  127 						bcopy: <>
+  128 					in_pcb_get_owner: <>
+  129 					M_PREPEND: <>
+  130 					mtod: <>
+  131 					bcopy: <>
+  132 					blue_inject: 46
+  133 				ipv4_stop: 16
+  134 				dlil_find_dltag: <>
+  135 				ipv4_eth_infltr: int (), <./SIP-NKE.kmodproj/sip_inet.c 564>
+  136 					m_pullup: <>
+  137 					min: <>
+  138 					mtod: <>
+  139 					MDATA_ETHER_START: <>
+  140 					log: <>
+  141 					m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  142 					handle_frags: 109
+  143 					in_pcb_get_owner: <>
+  144 					blue_inject: 46
+  145 					MDATA_ETHER_END: <>
+  146 				ipv4_eth_outfltr: int (), <./SIP-NKE.kmodproj/sip_inet.c 752>
+  147 					m_pullup: <>
+  148 					min: <>
+  149 					not4us: 106
+  150 					IN_CLASSD: <>
+  151 					m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  152 					handle_frags: 109
+  153 					log: <>
+  154 					in_pcb_get_owner: <>
+  155 					M_PREPEND: <>
+  156 					mtod: <>
+  157 					bcopy: <>
+  158 					blue_inject: 46
+  159 				ipv4_ppp_infltr: int (), <./SIP-NKE.kmodproj/sip_inet.c 240>
+  160 					m_pullup: <>
+  161 					min: <>
+  162 					mtod: <>
+  163 					handle_frags: 109
+  164 					log: <>
+  165 					in_pcb_get_owner: <>
+  166 					m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  167 					blue_inject: 46
+  168 				ipv4_ppp_outfltr: int (), <./SIP-NKE.kmodproj/sip_inet.c 392>
+  169 					m_pullup: <>
+  170 					min: <>
+  171 					not4us: 106
+  172 					IN_CLASSD: <>
+  173 					m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  174 					handle_frags: 109
+  175 					log: <>
+  176 					in_pcb_get_owner: <>
+  177 					blue_inject: 46
+  178 				dlil_attach_protocol_filter: <>
+  179 				log: <>
+  180 			splx: <>
+  181 		splx: <>
+  182 	enable_ipv4: 91
+  183 	handle_frags: 109
+  184 	ipv4_attach_protofltr: 101
+  185 	ipv4_control: int (), <./SIP-NKE.kmodproj/sip_inet.c 1584>
+  186 		log: <>
+  187 		in_pcb_grab_port: <>
+  188 		in_pcb_letgo_port: <>
+  189 	ipv4_eth_infltr: 135
+  190 	ipv4_eth_outfltr: 146
+  191 	ipv4_loop_outfltr: 102
+  192 	ipv4_ppp_infltr: 159
+  193 	ipv4_ppp_outfltr: 168
+  194 	ipv4_stop: 16
+  195 	my_frameout: 63
+  196 	not4us: 106
+  197 	release_ifb: 24
+  198 	si_bind: int (), <./SIP-NKE.kmodproj/sip.c 386>
+  199 		sotondrvcb: <>
+  200 		log: <>
+  201 		bzero: <>
+  202 		TAILQ_INIT: <>
+  203 		FREE: <>
+  204 		sbreserve: <>
+  205 	si_close: int (), <./SIP-NKE.kmodproj/sip.c 460>
+  206 		splnet: <>
+  207 		atalk_stop: 13
+  208 		ipv4_stop: 16
+  209 		release_ifb: 24
+  210 		splx: <>
+  211 	si_control: int (), <./SIP-NKE.kmodproj/sip.c 217>
+  212 		log: <>
+  213 		sooptcopyin: <>
+  214 		enable_filters: 87
+  215 		splnet: <>
+  216 		ipv4_control: 185
+  217 		splx: <>
+  218 		sooptcopyout: <>
+  219 	si_create: int (), <./SIP-NKE.kmodproj/sip.c 486>
+  220 		log: <>
+  221 		init_ipv4: void (), <./SIP-NKE.kmodproj/sip_inet.c 1793>
+  222 	si_discon: int (), <./SIP-NKE.kmodproj/sip.c 498>
+  223 		log: <>
+  224 	si_sbappend: int (), <./SIP-NKE.kmodproj/sip.c 514>
+  225 		log: <>
+  226 	si_send: int (), <./SIP-NKE.kmodproj/sip.c 523>
+  227 		log: <>
+  228 		mtod: <>
+  229 		splnet: <>
+  230 		si_send_eth_atalk: int (), <./SIP-NKE.kmodproj/sip_atalk.c 403>
+  231 			mtod: <>
+  232 			m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  233 			log: <>
+  234 			MDATA_ETHER_END: <>
+  235 			sotondrvcb: <>
+  236 			dlil_inject_pr_input: <>
+  237 		si_send_eth_ipv4: int (), <./SIP-NKE.kmodproj/sip_inet.c 1102>
+  238 			m_pullup: <>
+  239 			min: <>
+  240 			mtod: <>
+  241 			log: <>
+  242 			not4us: 106
+  243 			IN_CLASSD: <>
+  244 			m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  245 			handle_frags: 109
+  246 			in_pcb_get_owner: <>
+  247 			MDATA_ETHER_END: <>
+  248 			dlil_inject_pr_input: <>
+  249 		m_adj: <>
+  250 		si_send_ppp_ipv4: int (), <./SIP-NKE.kmodproj/sip_inet.c 1273>
+  251 			m_pullup: <>
+  252 			min: <>
+  253 			mtod: <>
+  254 			not4us: 106
+  255 			IN_CLASSD: <>
+  256 			m_dup: struct mbuf (), <./SIP-NKE.kmodproj/sip.c 815>
+  257 			handle_frags: 109
+  258 			log: <>
+  259 			in_pcb_get_owner: <>
+  260 			dlil_inject_pr_input: <>
+  261 		splx: <>
+  262 		dlil_find_dltag: <>
+  263 		bzero: <>
+  264 		dlil_output: <>
+  265 	si_send_eth_atalk: 230
+  266 	si_send_eth_ipv4: 237
+  267 	si_send_ppp_ipv4: 250
+  268 	si_shutdown: int (), <./SIP-NKE.kmodproj/sip.c 594>
+  269 		log: <>
+  270 	sip_fragtimer: 21
+  271 	validate_addrs: 94

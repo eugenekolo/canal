@@ -1,0 +1,869 @@
+    1 	main: int (), <./comsat/comsat.c 90>
+    2 		signal: <>
+    3 		sigchild: void (), <./mail/popen.c 336>
+    4 		isatty: <>
+    5 		assign: void (), <./mail/vars.c 58>
+    6 			hash: int (), <./mail/vars.c 185>
+    7 			lookup: struct var (), <./mail/vars.c 133>
+    8 			calloc: <>
+    9 			vcopy: char * (), <./mail/vars.c 96>
+   10 				strlen: <>
+   11 				malloc: <>
+   12 				errx: <>
+   13 				memmove: <>
+   14 			v_free: void (), <./mail/vars.c 83>
+   15 				free: <>
+   16 		getopt: <>
+   17 		creat: <>
+   18 		perror: <>
+   19 		exit: <>
+   20 		close: <>
+   21 		cat: <>
+   22 		nalloc: struct name (), <./mail/names.c 60>
+   23 		fputs: <>
+   24 		fprintf: <>
+   25 		tinit: void (), <./mail/temp.c 62>
+   26 			getenv: <>
+   27 			tempnam: <>
+   28 			getuserid: int (), <./mail/getname.c 69>
+   29 				getpwnam: <>
+   30 			printf: <>
+   31 			exit: <>
+   32 			username: const char * (), <./mail/v7.local.c 89>
+   33 				getenv: <>
+   34 				getname: const char * (), <./mail/getname.c 54>
+   35 					getpwuid: <>
+   36 				getuid: <>
+   37 				printf: <>
+   38 			savestr: <>
+   39 		setscreensize: void (), <./mail/main.c 286>
+   40 			ioctl: <>
+   41 			tcgetattr: <>
+   42 			cfgetospeed: <>
+   43 		spreserve: void (), <./mail/strings.c 128>
+   44 		load: void (), <./mail/lex.c 704>
+   45 			Fopen: FILE * (), <./mail/popen.c 72>
+   46 				fopen: <>
+   47 				register_file: void (), <./mail/popen.c 173>
+   48 					malloc: <>
+   49 					errx: <>
+   50 				fcntl: <>
+   51 				fileno: <>
+   52 			commands: void (), <./mail/lex.c 207>
+   53 				signal: <>
+   54 				intr: void (), <./mail/lex.c 545>
+   55 					unstack: int (), <./mail/aux.c 316>
+   56 						printf: <>
+   57 						Fclose: int (), <./mail/popen.c 99>
+   58 							unregister_file: void (), <./mail/popen.c 189>
+   59 								free: <>
+   60 								errx: <>
+   61 							fclose: <>
+   62 					close_all_files: void (), <./mail/popen.c 162>
+   63 						Pclose: int (), <./mail/popen.c 143>
+   64 							file_pid: int (), <./mail/popen.c 204>
+   65 								errx: <>
+   66 							unregister_file: 58
+   67 							fclose: <>
+   68 							sigemptyset: <>
+   69 							sigaddset: <>
+   70 							sigprocmask: <>
+   71 							wait_child: int (), <./mail/popen.c 361>
+   72 								findchild: struct child (), <./mail/popen.c 306>
+   73 								sigemptyset: <>
+   74 								sigaddset: <>
+   75 								sigprocmask: <>
+   76 								sigsuspend: <>
+   77 								delchild: <>
+   78 						Fclose: 57
+   79 					close: <>
+   80 					fprintf: <>
+   81 					reset: <>
+   82 				hangup: void (), <./mail/lex.c 593>
+   83 					exit: <>
+   84 				stop: void (), <./mail/lex.c 570>
+   85 					signal: <>
+   86 					sigemptyset: <>
+   87 					sigaddset: <>
+   88 					sigprocmask: <>
+   89 					kill: <>
+   90 					reset: <>
+   91 				setexit: <>
+   92 				value: char * (), <./mail/vars.c 117>
+   93 					lookup: struct var (), <./mail/vars.c 133>
+   94 					getenv: <>
+   95 				incfile: int (), <./mail/lex.c 174>
+   96 					Fopen: 45
+   97 					holdsigs: void (), <./mail/fio.c 299>
+   98 						sigemptyset: <>
+   99 						sigaddset: <>
+  100 						sigprocmask: <>
+  101 					fsize: off_t (), <./mail/fio.c 327>
+  102 						fstat: <>
+  103 						fileno: <>
+  104 					setptr: void (), <./mail/fio.c 58>
+  105 						snprintf: <>
+  106 						mkstemp: <>
+  107 						Fdopen: FILE * (), <./mail/popen.c 85>
+  108 							fdopen: <>
+  109 							register_file: 47
+  110 							fcntl: <>
+  111 							fileno: <>
+  112 						fprintf: <>
+  113 						exit: <>
+  114 						unlink: <>
+  115 						fseek: <>
+  116 						ftell: <>
+  117 						fgets: <>
+  118 						append: int (), <./mail/fio.c 268>
+  119 							fwrite: <>
+  120 						perror: <>
+  121 						makemessage: void (), <./mail/fio.c 234>
+  122 							realloc: <>
+  123 							errx: <>
+  124 							free: <>
+  125 							malloc: <>
+  126 							fflush: <>
+  127 							lseek: <>
+  128 							fileno: <>
+  129 							read: <>
+  130 							Fclose: 57
+  131 						strlen: <>
+  132 						fwrite: <>
+  133 						ferror: if (), <./mail/names.c 337>
+  134 						ishead: int (), <./mail/head.c 60>
+  135 							parse: void (), <./mail/head.c 106>
+  136 								nextword: char * (), <./mail/head.c 239>
+  137 								copyin: char * (), <./mail/head.c 141>
+  138 							fail: void (), <./mail/head.c 88>
+  139 							isdate: int (), <./mail/head.c 178>
+  140 								cmatch: int (), <./mail/head.c 192>
+  141 									islower: <>
+  142 									isupper: <>
+  143 									isdigit: <>
+  144 						blockof: <>
+  145 						offsetof: <>
+  146 						isspace: <>
+  147 						toupper: <>
+  148 					setmsize: void (), <./mail/lex.c 488>
+  149 						free: <>
+  150 						calloc: <>
+  151 					ftell: <>
+  152 					Fclose: 57
+  153 					relsesigs: void (), <./mail/fio.c 315>
+  154 						sigprocmask: <>
+  155 				printf: <>
+  156 				fflush: <>
+  157 				sreset: void (), <./mail/strings.c 106>
+  158 				readline: int (), <./mail/fio.c 198>
+  159 					clearerr: <>
+  160 					fgets: <>
+  161 					strlen: <>
+  162 				strlen: <>
+  163 				unstack: 55
+  164 				execute: int (), <./mail/lex.c 289>
+  165 					isspace: <>
+  166 					printf: <>
+  167 					shell: int (), <./mail/cmd3.c 60>
+  168 						signal: <>
+  169 						strcpy: <>
+  170 						bangexp: int (), <./mail/cmd3.c 106>
+  171 							strlen: <>
+  172 							printf: <>
+  173 							strcpy: <>
+  174 							fflush: <>
+  175 							strncpy: <>
+  176 						value: 92
+  177 						run_command: int (), <./mail/popen.c 225>
+  178 							start_command: int (), <./mail/popen.c 240>
+  179 								vfork: <>
+  180 								perror: <>
+  181 								getrawlist: int (), <./mail/list.c 395>
+  182 									printf: <>
+  183 									savestr: <>
+  184 								prepare_child: void (), <./mail/popen.c 269>
+  185 									dup2: <>
+  186 									sigismember: <>
+  187 									signal: <>
+  188 									sigemptyset: <>
+  189 									sigprocmask: <>
+  190 								execvp: <>
+  191 							wait_command: int (), <./mail/popen.c 294>
+  192 								wait_child: 71
+  193 								printf: <>
+  194 						printf: <>
+  195 					index: <>
+  196 					lex: const struct cmd (), <./mail/lex.c 503>
+  197 					getmsglist: int (), <./mail/list.c 63>
+  198 						markall: int (), <./mail/list.c 122>
+  199 							unmark: void (), <./mail/list.c 799>
+  200 								errx: <>
+  201 							scaninit: void (), <./mail/list.c 627>
+  202 							scan: int (), <./mail/list.c 510>
+  203 								strcpy: <>
+  204 								isdigit: <>
+  205 								fprintf: <>
+  206 							printf: <>
+  207 							check: int (), <./mail/list.c 373>
+  208 								printf: <>
+  209 							mark: void (), <./mail/list.c 784>
+  210 								errx: <>
+  211 							regret: void (), <./mail/list.c 612>
+  212 								errx: <>
+  213 								savestr: <>
+  214 							evalcol: int (), <./mail/list.c 354>
+  215 							savestr: <>
+  216 							metamess: int (), <./mail/list.c 814>
+  217 								printf: <>
+  218 							matchsubj: int (), <./mail/list.c 733>
+  219 								strncpy: <>
+  220 								value: 92
+  221 								index: <>
+  222 								raise: int (), <./mail/aux.c 631>
+  223 									islower: <>
+  224 									toupper: <>
+  225 								matchto: int (), <./mail/list.c 689>
+  226 									hfield: if (, <./mail/aux.c 158>
+  227 									raise: 222
+  228 								hfield: if (, <./mail/aux.c 158>
+  229 							matchsender: int (), <./mail/list.c 660>
+  230 								nameof: char * (), <./mail/aux.c 376>
+  231 									skin: char * (), <./mail/aux.c 426>
+  232 										index: <>
+  233 										skip_comment: char * (), <./mail/aux.c 399>
+  234 										savestr: <>
+  235 									name1: char * (), <./mail/aux.c 534>
+  236 										hfield: if (, <./mail/aux.c 158>
+  237 										setinput: FILE * (), <./mail/fio.c 219>
+  238 											fflush: <>
+  239 											fseek: <>
+  240 											positionof: <>
+  241 											err: <>
+  242 										readline: 158
+  243 										savestr: <>
+  244 										strlen: <>
+  245 										index: <>
+  246 										strncmp: <>
+  247 										rindex: <>
+  248 									charcount: int (), <./mail/aux.c 600>
+  249 									rindex: <>
+  250 								raise: 222
+  251 					first: int (), <./mail/list.c 637>
+  252 					getrawlist: 181
+  253 					errx: <>
+  254 					unstack: 55
+  255 					value: 92
+  256 					type: int (), <./mail/cmd1.c 287>
+  257 						type1: int (), <./mail/cmd1.c 312>
+  258 							setjmp: <>
+  259 							value: 92
+  260 							atoi: <>
+  261 							Popen: FILE * (), <./mail/popen.c 107>
+  262 								pipe: <>
+  263 								fcntl: <>
+  264 								sigemptyset: <>
+  265 								start_command: 178
+  266 								close: <>
+  267 								fdopen: <>
+  268 								register_file: 47
+  269 							perror: <>
+  270 							signal: <>
+  271 							brokpipe: void (), <./mail/cmd1.c 374>
+  272 								longjmp: <>
+  273 							touch: <>
+  274 							fprintf: <>
+  275 							send: __private_extern__ int (), <./mail/send.c 65>
+  276 								count: <>
+  277 								setinput: 237
+  278 								isign: int (), <./mail/aux.c 657>
+  279 									istrcpy: void (), <./mail/aux.c 251>
+  280 									member: int (), <./mail/aux.c 677>
+  281 										hash: int (), <./mail/vars.c 185>
+  282 										equal: <>
+  283 								fgets: <>
+  284 								strlen: <>
+  285 								statusput: void (), <./mail/send.c 242>
+  286 									fprintf: <>
+  287 								isspace: <>
+  288 								putc: <>
+  289 								strcasecmp: <>
+  290 								fputs: <>
+  291 								fwrite: <>
+  292 								ferror: if (), <./mail/names.c 337>
+  293 								fread: <>
+  294 								getc: <>
+  295 							Pclose: 63
+  296 			Fclose: 57
+  297 		getenv: <>
+  298 		expand: char * (), <./mail/fio.c 349>
+  299 			findmail: void (), <./mail/v7.local.c 61>
+  300 				getenv: <>
+  301 				snprintf: <>
+  302 				strncpy: <>
+  303 			savestr: <>
+  304 			printf: <>
+  305 			value: 92
+  306 			getfold: int (), <./mail/fio.c 441>
+  307 				value: 92
+  308 				strncpy: <>
+  309 				snprintf: <>
+  310 			snprintf: <>
+  311 			anyof: int (), <./mail/aux.c 617>
+  312 				index: <>
+  313 			pipe: <>
+  314 			perror: <>
+  315 			start_command: 178
+  316 			close: <>
+  317 			read: <>
+  318 			wait_child: 71
+  319 			fprintf: <>
+  320 			index: <>
+  321 			stat: <>
+  322 		mail: int (), <./mail/send.c 265>
+  323 			mail1: void (), <./mail/send.c 306>
+  324 				collect: FILE * (), <./mail/collect.c 79>
+  325 					sigemptyset: <>
+  326 					sigaddset: <>
+  327 					sigprocmask: <>
+  328 					signal: <>
+  329 					collint: void (), <./mail/collect.c 608>
+  330 						value: 92
+  331 						puts: <>
+  332 						fflush: <>
+  333 						clearerr: <>
+  334 						longjmp: <>
+  335 						rewind: <>
+  336 						savedeadletter: void (), <./mail/collect.c 645>
+  337 							fsize: 101
+  338 							getdeadletter: char * (), <./mail/fio.c 461>
+  339 								value: 92
+  340 								expand: 298
+  341 								snprintf: <>
+  342 							umask: <>
+  343 							Fopen: 45
+  344 							getc: <>
+  345 							putc: <>
+  346 							Fclose: 57
+  347 							rewind: <>
+  348 					collhup: void (), <./mail/collect.c 632>
+  349 						rewind: <>
+  350 						savedeadletter: 336
+  351 						exit: <>
+  352 					collstop: void (), <./mail/collect.c 583>
+  353 						signal: <>
+  354 						sigemptyset: <>
+  355 						sigaddset: <>
+  356 						sigprocmask: <>
+  357 						kill: <>
+  358 						longjmp: <>
+  359 					setjmp: <>
+  360 					rm: int (), <./mail/fio.c 279>
+  361 						stat: <>
+  362 						S_ISREG: <>
+  363 						unlink: <>
+  364 					err: <>
+  365 					Fopen: 45
+  366 					perror: <>
+  367 					unlink: <>
+  368 					value: 92
+  369 					puthead: int (), <./mail/send.c 496>
+  370 						fmt: void (), <./mail/send.c 521>
+  371 							strlen: <>
+  372 							fputs: <>
+  373 							putc: <>
+  374 						fprintf: <>
+  375 						putc: <>
+  376 					fflush: <>
+  377 					grabh: int (), <./mail/tty.c 67>
+  378 						signal: <>
+  379 						tcgetattr: <>
+  380 						fileno: <>
+  381 						perror: <>
+  382 						ioctl: <>
+  383 						setjmp: <>
+  384 						ttyint: void (), <./mail/tty.c 308>
+  385 							longjmp: <>
+  386 						tcsetattr: <>
+  387 						extract: struct name * (), <./mail/names.c 97>
+  388 						readtty: char * (), <./mail/tty.c 185>
+  389 							fputs: <>
+  390 							fflush: <>
+  391 							strlen: <>
+  392 							printf: <>
+  393 							copy: char * (), <./mail/aux.c 644>
+  394 							ioctl: <>
+  395 							setjmp: <>
+  396 							signal: <>
+  397 							ttystop: void (), <./mail/tty.c 291>
+  398 								signal: <>
+  399 								sigemptyset: <>
+  400 								sigaddset: <>
+  401 								sigprocmask: <>
+  402 								kill: <>
+  403 								longjmp: <>
+  404 							clearerr: <>
+  405 							getc: <>
+  406 							ferror: if (), <./mail/names.c 337>
+  407 							readtty: 388
+  408 							savestr: <>
+  409 							equal: <>
+  410 						detract: <>
+  411 					fprintf: <>
+  412 					printf: <>
+  413 					readline: 158
+  414 					putline: int (), <./mail/fio.c 174>
+  415 						strlen: <>
+  416 						fwrite: <>
+  417 						putc: <>
+  418 						ferror: if (), <./mail/names.c 337>
+  419 					core: int (), <./mail/cmd2.c 381>
+  420 						vfork: <>
+  421 						perror: <>
+  422 						abort: <>
+  423 						printf: <>
+  424 						fflush: <>
+  425 						wait_child: 71
+  426 					shell: 167
+  427 					execute: 164
+  428 					exit: <>
+  429 					cat: <>
+  430 					extract: struct name * (), <./mail/names.c 97>
+  431 					isspace: <>
+  432 					savestr: <>
+  433 					strcpy: <>
+  434 					getdeadletter: 338
+  435 					expand: 298
+  436 					isdir: int (), <./mail/aux.c 111>
+  437 					Fclose: 57
+  438 					rewind: <>
+  439 					exwrite: int (), <./mail/collect.c 415>
+  440 						printf: <>
+  441 						fflush: <>
+  442 						stat: <>
+  443 						S_ISREG: <>
+  444 						fprintf: <>
+  445 						Fopen: 45
+  446 						perror: <>
+  447 						getc: <>
+  448 						putc: <>
+  449 						ferror: if (), <./mail/names.c 337>
+  450 						Fclose: 57
+  451 					forward: int (), <./mail/collect.c 535>
+  452 						salloc: char * (), <./mail/strings.c 65>
+  453 							errx: <>
+  454 							malloc: <>
+  455 						getmsglist: 197
+  456 						first: 251
+  457 						printf: <>
+  458 						value: 92
+  459 						isupper: <>
+  460 						touch: <>
+  461 						send: 275
+  462 						perror: <>
+  463 					getc: <>
+  464 					putchar: <>
+  465 					mespipe: void (), <./mail/collect.c 486>
+  466 						signal: <>
+  467 						Fopen: 45
+  468 						perror: <>
+  469 						unlink: <>
+  470 						value: 92
+  471 						run_command: 177
+  472 						fileno: <>
+  473 						Fclose: 57
+  474 						fsize: 101
+  475 						fprintf: <>
+  476 						fseek: <>
+  477 					mesedit: void (), <./mail/collect.c 464>
+  478 						signal: <>
+  479 						run_editor: FILE * (), <./mail/edit.c 149>
+  480 							creat: <>
+  481 							perror: <>
+  482 							Fdopen: 107
+  483 							unlink: <>
+  484 							getc: <>
+  485 							putc: <>
+  486 							fflush: <>
+  487 							ferror: if (), <./mail/names.c 337>
+  488 							Fclose: 57
+  489 							fstat: <>
+  490 							fileno: <>
+  491 							value: 92
+  492 							run_command: 177
+  493 							stat: <>
+  494 							Fopen: 45
+  495 						fseek: <>
+  496 						Fclose: 57
+  497 				value: 92
+  498 				grabh: 377
+  499 				printf: <>
+  500 				fflush: <>
+  501 				fsize: 101
+  502 				usermap: <>
+  503 				cat: <>
+  504 				outof: <>
+  505 				savedeadletter: 336
+  506 				elide: <>
+  507 				count: <>
+  508 				fixhead: void (), <./mail/send.c 419>
+  509 					cat: <>
+  510 					nalloc: struct name (), <./mail/names.c 60>
+  511 				infix: FILE * (), <./mail/send.c 448>
+  512 					Fopen: 45
+  513 					perror: <>
+  514 					Fclose: 57
+  515 					rm: 360
+  516 					puthead: 369
+  517 					getc: <>
+  518 					putc: <>
+  519 					ferror: if (), <./mail/names.c 337>
+  520 					rewind: <>
+  521 					fflush: <>
+  522 				fprintf: <>
+  523 				unpack: <>
+  524 				savemail: int (), <./mail/send.c 557>
+  525 					Fopen: 45
+  526 					perror: <>
+  527 					time: <>
+  528 					fprintf: <>
+  529 					ctime: <>
+  530 					fread: <>
+  531 					fwrite: <>
+  532 					putc: <>
+  533 					fflush: <>
+  534 					ferror: if (), <./mail/names.c 337>
+  535 					Fclose: 57
+  536 					rewind: <>
+  537 				expand: 298
+  538 				fork: <>
+  539 				perror: <>
+  540 				sigemptyset: <>
+  541 				sigaddset: <>
+  542 				prepare_child: 184
+  543 				fileno: <>
+  544 				execv: <>
+  545 				wait_child: 71
+  546 				free_child: void (), <./mail/popen.c 382>
+  547 					findchild: struct child (), <./mail/popen.c 306>
+  548 					sigemptyset: <>
+  549 					sigaddset: <>
+  550 					sigprocmask: <>
+  551 					delchild: <>
+  552 				Fclose: 57
+  553 		setfile: int (), <./mail/lex.c 63>
+  554 			expand: 298
+  555 			Fopen: 45
+  556 			perror: <>
+  557 			fstat: <>
+  558 			fileno: <>
+  559 			Fclose: 57
+  560 			holdsigs: 97
+  561 			quit: void (), <./mail/quit.c 76>
+  562 				edstop: void (), <./mail/quit.c 442>
+  563 					holdsigs: 97
+  564 					Fopen: 45
+  565 					hfield: if (, <./mail/aux.c 158>
+  566 					fprintf: <>
+  567 					Fclose: 57
+  568 					stat: <>
+  569 					tempnam: <>
+  570 					perror: <>
+  571 					relsesigs: 153
+  572 					reset: <>
+  573 					rm: 360
+  574 					fseek: <>
+  575 					getc: <>
+  576 					putc: <>
+  577 					fflush: <>
+  578 					ferror: if (), <./mail/names.c 337>
+  579 					free: <>
+  580 					printf: <>
+  581 					trunc: <>
+  582 					send: 275
+  583 				Fopen: 45
+  584 				flock: <>
+  585 				fileno: <>
+  586 				perror: <>
+  587 				Fclose: 57
+  588 				dot_lock: <>
+  589 				fstat: <>
+  590 				printf: <>
+  591 				fseek: <>
+  592 				getc: <>
+  593 				putc: <>
+  594 				fflush: <>
+  595 				ferror: if (), <./mail/names.c 337>
+  596 				dot_unlock: <>
+  597 				rm: 360
+  598 				value: 92
+  599 				hfield: if (, <./mail/aux.c 158>
+  600 				fprintf: <>
+  601 				writeback: int (), <./mail/quit.c 380>
+  602 					Fopen: 45
+  603 					perror: <>
+  604 					getc: <>
+  605 					putc: <>
+  606 					fflush: <>
+  607 					ferror: if (), <./mail/names.c 337>
+  608 					Fclose: 57
+  609 					send: 275
+  610 					trunc: <>
+  611 					alter: void (), <./mail/aux.c 340>
+  612 						stat: <>
+  613 						gettimeofday: <>
+  614 						TIMESPEC_TO_TIMEVAL: <>
+  615 						utimes: <>
+  616 					printf: <>
+  617 				expand: 298
+  618 				close: <>
+  619 				creat: <>
+  620 				fchmod: <>
+  621 				send: 275
+  622 				rewind: <>
+  623 				trunc: <>
+  624 				alter: 611
+  625 				demail: void (), <./mail/v7.local.c 78>
+  626 					value: 92
+  627 					rm: 360
+  628 					close: <>
+  629 					creat: <>
+  630 			open: <>
+  631 			close: <>
+  632 			fclose: <>
+  633 			strcpy: <>
+  634 			fsize: 101
+  635 			fopen: <>
+  636 			exit: <>
+  637 			fcntl: <>
+  638 			rm: 360
+  639 			setptr: 104
+  640 			setmsize: 148
+  641 			ftell: <>
+  642 			relsesigs: 153
+  643 			fprintf: <>
+  644 		setjmp: <>
+  645 		hdrstop: void (), <./mail/main.c 268>
+  646 			fflush: <>
+  647 			fprintf: <>
+  648 			longjmp: <>
+  649 		value: 92
+  650 		printf: <>
+  651 		announce: void (), <./mail/lex.c 606>
+  652 			newfileinfo: int (), <./mail/lex.c 626>
+  653 				getfold: 306
+  654 				strlen: <>
+  655 				strncmp: <>
+  656 				snprintf: <>
+  657 				printf: <>
+  658 			value: 92
+  659 			headers: int (), <./mail/cmd1.c 62>
+  660 				screensize: int (), <./mail/cmd1.c 147>
+  661 					value: 92
+  662 					atoi: <>
+  663 				printhead: void (), <./mail/cmd1.c 180>
+  664 					readline: 158
+  665 					setinput: 237
+  666 					hfield: if (, <./mail/aux.c 158>
+  667 					parse: 135
+  668 					snprintf: <>
+  669 					strlen: <>
+  670 					value: 92
+  671 					skin: 231
+  672 					nameof: 230
+  673 					printf: <>
+  674 				printf: <>
+  675 		fflush: <>
+  676 		commands: 52
+  677 		quit: 561
+  678 		isupper: <>
+  679 		tolower: <>
+  680 		getpwuid: <>
+  681 		getuid: <>
+  682 		sprintf: <>
+  683 		freopen: <>
+  684 		fgets: <>
+  685 		strncmp: <>
+  686 		match: int (), <./from/from.c 140>
+  687 			isspace: <>
+  688 			isupper: <>
+  689 			tolower: <>
+  690 		setbuf: <>
+  691 		time: <>
+  692 		setuid: <>
+  693 		isdigit: <>
+  694 		atoi: <>
+  695 		fopen: <>
+  696 		fscanf: <>
+  697 		fclose: <>
+  698 		opendir: <>
+  699 		chmod: <>
+  700 		readdir: <>
+  701 		stat: <>
+  702 		unlink: <>
+  703 		closedir: <>
+  704 		onintr: void (), <./msgs/msgs.c 677>
+  705 			signal: <>
+  706 			onintr: 704
+  707 			unlink: <>
+  708 			puts: <>
+  709 			exit: <>
+  710 			putchar: <>
+  711 			fseek: <>
+  712 		fileno: <>
+  713 		ctime: <>
+  714 		putchar: <>
+  715 		feof: <>
+  716 		ferror: if (), <./mail/names.c 337>
+  717 		truncate: <>
+  718 		fseek: <>
+  719 		ioctl: <>
+  720 		tgetent: <>
+  721 		tgetnum: <>
+  722 		gfrsub: void (), <./msgs/msgs.c 823>
+  723 			fgets: <>
+  724 			strncmp: <>
+  725 			ftell: <>
+  726 			nxtfld: char * (), <./msgs/msgs.c 900>
+  727 			strncpy: <>
+  728 			fseek: <>
+  729 		onsusp: void (), <./msgs/msgs.c 703>
+  730 			signal: <>
+  731 			sigsetmask: <>
+  732 			kill: <>
+  733 			onsusp: 729
+  734 			longjmp: <>
+  735 		linecnt: int (), <./msgs/msgs.c 716>
+  736 			ftell: <>
+  737 			fgets: <>
+  738 			clearerr: <>
+  739 			fseek: <>
+  740 		ask: void (), <./msgs/msgs.c 741>
+  741 			printf: <>
+  742 			fflush: <>
+  743 			fgets: <>
+  744 			strlen: <>
+  745 			isdigit: <>
+  746 			atoi: <>
+  747 			sprintf: <>
+  748 			ftell: <>
+  749 			fopen: <>
+  750 			ask: 740
+  751 			nxtfld: char * (), <./msgs/msgs.c 900>
+  752 			strcpy: <>
+  753 			mktemp: <>
+  754 			perror: <>
+  755 			fseek: <>
+  756 			fread: <>
+  757 			fwrite: <>
+  758 			fclose: <>
+  759 			system: <>
+  760 			unlink: <>
+  761 		next: int (), <./msgs/msgs.c 731>
+  762 			printf: <>
+  763 			type: 256
+  764 			sscanf: <>
+  765 			sprintf: <>
+  766 		prmesg: void (), <./msgs/msgs.c 629>
+  767 			signal: <>
+  768 			getenv: <>
+  769 			sprintf: <>
+  770 			strcpy: <>
+  771 			popen: <>
+  772 			setbuf: <>
+  773 			putc: <>
+  774 			fgets: <>
+  775 			fputs: <>
+  776 			ferror: if (), <./mail/names.c 337>
+  777 			clearerr: <>
+  778 			pclose: <>
+  779 			fflush: <>
+  780 			tcdrain: <>
+  781 			fileno: <>
+  782 		usage: void (), <./biff/biff.c 109>
+  783 			fprintf: <>
+  784 			exit: <>
+  785 		ttyname: <>
+  786 		err: <>
+  787 		malloc: <>
+  788 		atol: <>
+  789 		usage: void (), <./vacation/vacation.c 445>
+  790 		syslog: <>
+  791 		getpwnam: <>
+  792 		chdir: <>
+  793 		dbopen: <>
+  794 		setinterval: void (), <./vacation/vacation.c 367>
+  795 		readheaders: void (), <./vacation/vacation.c 203>
+  796 			fgets: <>
+  797 			strncmp: <>
+  798 			strcpy: <>
+  799 			strchr: <>
+  800 			junkmail: int (), <./vacation/vacation.c 288>
+  801 			exit: <>
+  802 			strncasecmp: <>
+  803 			isspace: <>
+  804 			nsearch: <>
+  805 			syslog: <>
+  806 		recent: int (), <./vacation/vacation.c 337>
+  807 			next: 761
+  808 			memmove: <>
+  809 			strlen: <>
+  810 			time: <>
+  811 		setreply: void (), <./vacation/vacation.c 384>
+  812 			strlen: <>
+  813 			time: <>
+  814 		sendmessage: <>
+  815 		getsockname: <>
+  816 		strerror: <>
+  817 		openlog: <>
+  818 		recv: <>
+  819 		open: <>
+  820 		gethostname: <>
+  821 		onalrm: void (), <./comsat/comsat.c 166>
+  822 			time: <>
+  823 			exit: <>
+  824 			alarm: <>
+  825 			fstat: <>
+  826 			realloc: <>
+  827 			syslog: <>
+  828 			strerror: <>
+  829 			lseek: <>
+  830 			read: <>
+  831 		reapchildren: void (), <./comsat/comsat.c 158>
+  832 			wait3: <>
+  833 		sleep: <>
+  834 		sigemptyset: <>
+  835 		sigaddset: <>
+  836 		sigprocmask: <>
+  837 		mailfor: void (), <./comsat/comsat.c 192>
+  838 			strchr: <>
+  839 			atoi: <>
+  840 			strncmp: <>
+  841 			notify: void (), <./comsat/comsat.c 211>
+  842 				snprintf: <>
+  843 				strchr: <>
+  844 				syslog: <>
+  845 				stat: <>
+  846 				dsyslog: <>
+  847 				fork: <>
+  848 				signal: <>
+  849 				alarm: <>
+  850 				fopen: <>
+  851 				strerror: <>
+  852 				tcgetattr: <>
+  853 				fileno: <>
+  854 				strncpy: <>
+  855 				getpwnam: <>
+  856 				initgroups: <>
+  857 				setgid: <>
+  858 				setuid: <>
+  859 				fprintf: <>
+  860 				jkfprintf: void (), <./comsat/comsat.c 269>
+  861 					fopen: <>
+  862 					fseek: <>
+  863 					fgets: <>
+  864 					strncasecmp: <>
+  865 					fprintf: <>
+  866 					fclose: <>
+  867 					strvis: <>
+  868 					fputs: <>
+  869 				fclose: <>

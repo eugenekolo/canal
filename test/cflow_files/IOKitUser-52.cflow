@@ -1,0 +1,359 @@
+    1 	main: int (), <./pwr_mgt.subproj/pma.c 39>
+    2 		IOMasterPort: kern_return_t (), <./IOKitLib.c 59>
+    3 			host_get_io_master: <>
+    4 			mach_host_self: <>
+    5 		IOPMFindADBController: io_connect_t (), <./adb.subproj/IOADBLib.c 30>
+    6 			IORegistryCreateIterator: kern_return_t (), <./IOKitLib.c 1020>
+    7 				io_registry_create_iterator: <>
+    8 			IOIteratorNext: io_object_t (), <./IOKitLib.c 142>
+    9 				io_iterator_next: <>
+   10 			IOObjectConformsTo: boolean_t (), <./IOKitLib.c 103>
+   11 				io_object_conforms_to: <>
+   12 			IOObjectRelease: kern_return_t (), <./IOKitLib.c 88>
+   13 				mach_port_deallocate: <>
+   14 				mach_task_self: <>
+   15 			IORegistryDisposeEnumerator: kern_return_t (), <./IOKitLib.c 1524>
+   16 				IOObjectRelease: 12
+   17 			IOServiceOpen: kern_return_t (), <./IOKitLib.c 688>
+   18 				io_service_open: <>
+   19 			mach_task_self: <>
+   20 		printf: <>
+   21 		IOPMClaimADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 63>
+   22 			io_connect_method_scalarI_scalarO: <>
+   23 		IOPMReleaseADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 78>
+   24 			io_connect_method_scalarI_scalarO: <>
+   25 		IOPMReadADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 94>
+   26 			io_connect_method_scalarI_structureO: <>
+   27 		IOPMWriteADBDevice: IOReturn (), <./adb.subproj/IOADBLib.c 115>
+   28 			io_connect_method_scalarI_scalarO: <>
+   29 		assert: <>
+   30 		TestParams: void (), <./hidsystem.subproj/HIDParamTest.c 60>
+   31 			assert: <>
+   32 			IOHIDSetMouseLocation: kern_return_t (), <./hidsystem.subproj/IOHIDLib.c 100>
+   33 				io_connect_method_structureI_structureO: <>
+   34 			IOHIDPostEvent: kern_return_t (), <./hidsystem.subproj/IOHIDLib.c 76>
+   35 				io_connect_method_structureI_structureO: <>
+   36 		OpenEventDriver: io_connect_t (), <./hidsystem.subproj/HIDParamTest.c 32>
+   37 			assert: <>
+   38 			IOServiceGetMatchingServices: kern_return_t (), <./IOKitLib.c 179>
+   39 				IOCFSerialize: CFDataRef (), <./IOCFSerialize.c 448>
+   40 					CFDictionaryCreateMutable: <>
+   41 					CFDataCreateMutable: <>
+   42 					assert: <>
+   43 					DoCFSerialize: Boolean (), <./IOCFSerialize.c 415>
+   44 						assert: <>
+   45 						CFGetTypeID: <>
+   46 						CFNumberGetTypeID: <>
+   47 						DoCFSerializeNumber: Boolean (), <./IOCFSerialize.c 138>
+   48 							previouslySerialized: Boolean (), <./IOCFSerialize.c 81>
+   49 								CFDictionaryGetValue: <>
+   50 								CFNumberGetValue: <>
+   51 								sprintf: <>
+   52 								getTagString: const char * (), <./IOCFSerialize.c 62>
+   53 									assert: <>
+   54 									CFGetTypeID: <>
+   55 									CFDictionaryGetTypeID: <>
+   56 									CFArrayGetTypeID: <>
+   57 									CFSetGetTypeID: <>
+   58 									CFStringGetTypeID: <>
+   59 									CFDataGetTypeID: <>
+   60 									CFNumberGetTypeID: <>
+   61 								addString: Boolean (), <./IOCFSerialize.c 52>
+   62 									strlen: <>
+   63 									CFDataAppendBytes: <>
+   64 								CFNumberCreate: <>
+   65 								CFDictionaryAddValue: <>
+   66 								CFRelease: <>
+   67 							CFNumberGetValue: <>
+   68 							CFNumberGetType: <>
+   69 							sprintf: <>
+   70 							addStartTag: Boolean (), <./IOCFSerialize.c 104>
+   71 								CFDictionaryGetValue: <>
+   72 								assert: <>
+   73 								CFNumberGetValue: <>
+   74 								snprintf: <>
+   75 								getTagString: 52
+   76 								addString: 61
+   77 							addString: 61
+   78 							addEndTag: Boolean (), <./IOCFSerialize.c 127>
+   79 								snprintf: <>
+   80 								getTagString: 52
+   81 								addString: 61
+   82 						CFBooleanGetTypeID: <>
+   83 						DoCFSerializeBoolean: Boolean (), <./IOCFSerialize.c 187>
+   84 							addString: 61
+   85 							CFBooleanGetValue: <>
+   86 						CFStringGetTypeID: <>
+   87 						DoCFSerializeString: Boolean (), <./IOCFSerialize.c 193>
+   88 							previouslySerialized: 48
+   89 							addStartTag: 70
+   90 							CFStringGetCStringPtr: <>
+   91 							CFStringGetLength: <>
+   92 							malloc: <>
+   93 							CFStringGetCString: <>
+   94 							addString: 61
+   95 							addChar: Boolean (), <./IOCFSerialize.c 44>
+   96 								CFDataAppendBytes: <>
+   97 							free: <>
+   98 							addEndTag: 78
+   99 						CFDataGetTypeID: <>
+  100 						DoCFSerializeData: Boolean (), <./IOCFSerialize.c 270>
+  101 							previouslySerialized: 48
+  102 							CFDataGetLength: <>
+  103 							CFDataGetBytePtr: <>
+  104 							addStartTag: 70
+  105 							addChar: 95
+  106 							addEndTag: 78
+  107 						CFArrayGetTypeID: <>
+  108 						DoCFSerializeArray: Boolean (), <./IOCFSerialize.c 324>
+  109 							previouslySerialized: 48
+  110 							addStartTag: 70
+  111 							CFArrayGetCount: <>
+  112 							DoCFSerialize: 43
+  113 							CFArrayGetValueAtIndex: <>
+  114 							addEndTag: 78
+  115 						CFSetGetTypeID: <>
+  116 						DoCFSerializeSet: Boolean (), <./IOCFSerialize.c 345>
+  117 							previouslySerialized: 48
+  118 							addStartTag: 70
+  119 							CFSetGetCount: <>
+  120 							malloc: <>
+  121 							CFSetGetValues: <>
+  122 							DoCFSerialize: 43
+  123 							free: <>
+  124 							addEndTag: 78
+  125 						CFDictionaryGetTypeID: <>
+  126 						DoCFSerializeDictionary: Boolean (), <./IOCFSerialize.c 377>
+  127 							previouslySerialized: 48
+  128 							addStartTag: 70
+  129 							CFDictionaryGetCount: <>
+  130 							malloc: <>
+  131 							CFDictionaryGetKeysAndValues: <>
+  132 							DoCFSerializeKey: Boolean (), <./IOCFSerialize.c 231>
+  133 								addString: 61
+  134 								CFStringGetCStringPtr: <>
+  135 								CFStringGetLength: <>
+  136 								malloc: <>
+  137 								CFStringGetCString: <>
+  138 								addChar: 95
+  139 								free: <>
+  140 							DoCFSerialize: 43
+  141 							free: <>
+  142 							addEndTag: 78
+  143 						sprintf: <>
+  144 						addString: 61
+  145 					addChar: 95
+  146 					CFRelease: <>
+  147 				io_service_get_matching_services: <>
+  148 				CFDataGetBytePtr: <>
+  149 				CFRelease: <>
+  150 			IOServiceMatching: CFMutableDictionaryRef (), <./IOKitLib.c 447>
+  151 				MakeOneStringProp: CFMutableDictionaryRef (), <./IOKitLib.c 418>
+  152 					CFDictionaryCreateMutable: <>
+  153 					CFStringCreateWithCString: <>
+  154 					CFDictionarySetValue: <>
+  155 					CFRelease: <>
+  156 				CFSTR: <>
+  157 			IOIteratorNext: 8
+  158 			IOServiceOpen: 17
+  159 			mach_task_self: <>
+  160 			IOObjectRelease: 12
+  161 		atoi: <>
+  162 		TestSound: void (), <./audio.subproj/audiotest.c 40>
+  163 			printf: <>
+  164 			IORegistryCreateIterator: 6
+  165 			IOIteratorNext: 8
+  166 			IOObjectConformsTo: 10
+  167 			IOObjectRelease: 12
+  168 			IORegistryEntryCreateCFProperties: kern_return_t (), <./IOKitLib.c 1127>
+  169 				io_registry_entry_get_properties: <>
+  170 				IOCFUnserialize: <>
+  171 				CFStringGetCStringPtr: <>
+  172 				printf: <>
+  173 				CFRelease: <>
+  174 				vm_deallocate: <>
+  175 				mach_task_self: <>
+  176 			CFDictionaryGetCount: <>
+  177 			IOCFSerialize: 39
+  178 			CFDataGetBytePtr: <>
+  179 			CFRelease: <>
+  180 			IOAudioIsOutput: kern_return_t (), <./audio.subproj/IOAudioLib.c 40>
+  181 				IORegistryEntryCreateCFProperties: 168
+  182 				CFDictionaryGetValue: <>
+  183 				CFSTR: <>
+  184 				CFNumberGetTypeID: <>
+  185 				CFGetTypeID: <>
+  186 				CFNumberGetValue: <>
+  187 				CFRelease: <>
+  188 			IOServiceOpen: 17
+  189 			mach_task_self: <>
+  190 			IOMapMemory: kern_return_t (), <./IOKitLib.c 1531>
+  191 				io_connect_map_memory: <>
+  192 			IOAudioSetErase: kern_return_t (), <./audio.subproj/IOAudioLib.c 80>
+  193 				io_connect_method_scalarI_scalarO: <>
+  194 		testNotify: void (), <./audio.subproj/audiotest.c 266>
+  195 			printf: <>
+  196 			mach_port_allocate: <>
+  197 			mach_task_self: <>
+  198 			CFStringCreateWithCString: <>
+  199 			IORegistryCreateIterator: 6
+  200 			IOIteratorNext: 8
+  201 			IOObjectConformsTo: 10
+  202 			IOObjectRelease: 12
+  203 			IORegistryEntryCreateCFProperties: 168
+  204 			CFDictionaryGetValue: <>
+  205 			CFSTR: <>
+  206 			CFGetTypeID: <>
+  207 			CFStringGetTypeID: <>
+  208 			CFStringCompare: <>
+  209 			CFDictionaryGetCount: <>
+  210 			IOCFSerialize: 39
+  211 			CFDataGetBytePtr: <>
+  212 			CFRelease: <>
+  213 			CFDictionaryGetTypeID: <>
+  214 			IOServiceOpen: 17
+  215 			IOConnectSetNotificationPort: kern_return_t (), <./IOKitLib.c 752>
+  216 				io_connect_set_notification_port: <>
+  217 			mach_msg: <>
+  218 			IOServiceClose: kern_return_t (), <./IOKitLib.c 699>
+  219 				io_service_close: <>
+  220 				IOObjectRelease: 12
+  221 		setVal: void (), <./audio.subproj/audiotest.c 167>
+  222 			printf: <>
+  223 			CFStringCreateWithCString: <>
+  224 			IORegistryCreateIterator: 6
+  225 			IOIteratorNext: 8
+  226 			IOObjectConformsTo: 10
+  227 			IOObjectRelease: 12
+  228 			IORegistryEntryCreateCFProperties: 168
+  229 			CFDictionaryGetValue: <>
+  230 			CFSTR: <>
+  231 			CFGetTypeID: <>
+  232 			CFStringGetTypeID: <>
+  233 			CFStringCompare: <>
+  234 			CFDictionaryGetTypeID: <>
+  235 			CFNumberGetTypeID: <>
+  236 			CFNumberGetValue: <>
+  237 			CFNumberCreate: <>
+  238 			CFDictionarySetValue: <>
+  239 			IOServiceOpen: 17
+  240 			mach_task_self: <>
+  241 			IOConnectSetCFProperties: kern_return_t (), <./IOKitLib.c 965>
+  242 				IOCFSerialize: 39
+  243 				io_connect_set_properties: <>
+  244 				CFDataGetBytePtr: <>
+  245 				CFDataGetLength: <>
+  246 				CFRelease: <>
+  247 			IOServiceClose: 218
+  248 			CFRelease: <>
+  249 		getopt: <>
+  250 		usage: void (), <./network.subproj/enetstat.c 379>
+  251 			printf: <>
+  252 			exit: <>
+  253 		CFStringCreateWithCString: <>
+  254 		getInterfaceWithBSDName: io_object_t (), <./network.subproj/enetstat.c 345>
+  255 			IORegistryCreateIterator: 6
+  256 			printf: <>
+  257 			IOIteratorNext: 8
+  258 			IOObjectConformsTo: 10
+  259 			matchBSDNameProperty: int (), <./network.subproj/enetstat.c 305>
+  260 				IORegistryEntryCreateCFProperties: 168
+  261 				printf: <>
+  262 				CFDictionaryGetValue: <>
+  263 				CFSTR: <>
+  264 				CFStringCompare: <>
+  265 				CFStringShow: void (), <./network.subproj/enetstat.c 275>
+  266 					CFStringGetCStringPtr: <>
+  267 					printf: <>
+  268 					CFStringGetLength: <>
+  269 					malloc: <>
+  270 					CFStringGetCString: <>
+  271 					free: <>
+  272 				CFRelease: <>
+  273 			IOObjectRelease: 12
+  274 			IORegistryDisposeEnumerator: 15
+  275 		IONetworkOpen: IOReturn (), <./network.subproj/IONetworkLib.c 42>
+  276 			IOServiceOpen: 17
+  277 			mach_task_self: <>
+  278 		displayGenericStats: IOReturn (), <./network.subproj/enetstat.c 49>
+  279 			IONetworkGetDataHandle: IOReturn (), <./network.subproj/IONetworkLib.c 148>
+  280 				strlen: <>
+  281 				io_connect_method_structureI_structureO: <>
+  282 			printf: <>
+  283 			IONetworkReadData: IOReturn (), <./network.subproj/IONetworkLib.c 82>
+  284 				io_connect_method_scalarI_structureO: <>
+  285 		displayEthernetStats: IOReturn (), <./network.subproj/enetstat.c 90>
+  286 			IONetworkGetDataHandle: 279
+  287 			printf: <>
+  288 			IONetworkReadData: 283
+  289 		displayOutputQueueStats: IOReturn (), <./network.subproj/enetstat.c 190>
+  290 			IONetworkGetDataHandle: 279
+  291 			printf: <>
+  292 			IONetworkReadData: 283
+  293 			IONetworkGetDataCapacity: IOReturn (), <./network.subproj/IONetworkLib.c 126>
+  294 				io_connect_method_scalarI_scalarO: <>
+  295 			IONetworkResetData: IOReturn (), <./network.subproj/IONetworkLib.c 106>
+  296 				io_connect_method_scalarI_scalarO: <>
+  297 			IONetworkWriteData: IOReturn (), <./network.subproj/IONetworkLib.c 58>
+  298 				io_connect_method_scalarI_structureI: <>
+  299 		IONetworkClose: IOReturn (), <./network.subproj/IONetworkLib.c 50>
+  300 			IOServiceClose: 218
+  301 		IOObjectRelease: 12
+  302 		exit: <>
+  303 		usage: void (), <./network.subproj/monitorlink.c 303>
+  304 			printf: <>
+  305 			exit: <>
+  306 		mach_port_allocate: <>
+  307 		mach_task_self: <>
+  308 		getInterfaceWithBSDName: io_object_t (), <./network.subproj/monitorlink.c 140>
+  309 			IORegistryCreateIterator: 6
+  310 			printf: <>
+  311 			IOIteratorNext: 8
+  312 			IOObjectConformsTo: 10
+  313 			matchBSDNameProperty: int (), <./network.subproj/monitorlink.c 99>
+  314 				IORegistryEntryCreateCFProperties: 168
+  315 				printf: <>
+  316 				CFDictionaryGetValue: <>
+  317 				CFSTR: <>
+  318 				CFStringCompare: <>
+  319 				CFStringShow: void (), <./network.subproj/monitorlink.c 69>
+  320 					CFStringGetCStringPtr: <>
+  321 					printf: <>
+  322 					CFStringGetLength: <>
+  323 					malloc: <>
+  324 					CFStringGetCString: <>
+  325 					free: <>
+  326 				CFRelease: <>
+  327 			IOObjectRelease: 12
+  328 			IORegistryDisposeEnumerator: 15
+  329 		IOConnectSetNotificationPort: 215
+  330 		getControllerForInterface: io_object_t (), <./network.subproj/monitorlink.c 259>
+  331 			IORegistryEntryGetParentIterator: kern_return_t (), <./IOKitLib.c 1254>
+  332 				io_registry_entry_get_parent_iterator: <>
+  333 			IOIteratorNext: 8
+  334 			IORegistryDisposeEnumerator: 15
+  335 		printLinkProperties: void (), <./network.subproj/monitorlink.c 175>
+  336 			IORegistryEntryCreateCFProperties: 168
+  337 			printf: <>
+  338 			CFDictionaryGetValue: <>
+  339 			CFSTR: <>
+  340 			CFStringShow: 319
+  341 			CFNumberShow: void (), <./network.subproj/monitorlink.c 59>
+  342 				CFNumberGetValue: <>
+  343 				printf: <>
+  344 			CFNumberGetValue: <>
+  345 			CFRelease: <>
+  346 		waitForNotification: void (), <./network.subproj/monitorlink.c 280>
+  347 			mach_msg: <>
+  348 			printf: <>
+  349 		IOPMFindPowerManagement: io_connect_t (), <./pwr_mgt.subproj/IOPMLib.c 32>
+  350 			IORegistryEntryFromPath: io_registry_entry_t (), <./IOKitLib.c 1057>
+  351 				io_registry_entry_from_path: <>
+  352 			IOServiceOpen: 17
+  353 			mach_task_self: <>
+  354 		IOPMSleepSystem: IOReturn (), <./pwr_mgt.subproj/IOPMLib.c 74>
+  355 			io_connect_method_scalarI_scalarO: <>
+  356 		IOPMGetAggressiveness: IOReturn (), <./pwr_mgt.subproj/IOPMLib.c 49>
+  357 			io_connect_method_scalarI_scalarO: <>
+  358 		IOPMSetAggressiveness: IOReturn (), <./pwr_mgt.subproj/IOPMLib.c 60>
+  359 			io_connect_method_scalarI_scalarO: <>

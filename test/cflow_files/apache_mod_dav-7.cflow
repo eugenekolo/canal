@@ -1,0 +1,45 @@
+    1 	main: int (), <./mod_dav/util/dbu.c 62>
+    2 		tweakname: const char * (), <./mod_dav/util/fixvers.c 48>
+    3 			strlen: <>
+    4 			memcmp: <>
+    5 			printf: <>
+    6 			malloc: <>
+    7 			memcpy: <>
+    8 		fixfile: void (), <./mod_dav/util/fixvers.c 65>
+    9 			sdbm_open: <>
+   10 			sdbm_fetch: <>
+   11 			malloc: <>
+   12 			memcpy: <>
+   13 			sdbm_store: <>
+   14 			free: <>
+   15 			sdbm_close: <>
+   16 			printf: <>
+   17 		free: <>
+   18 		printf: <>
+   19 		CheckFile: int (), <./mod_dav/util/lockview.c 170>
+   20 			strcpy: <>
+   21 			strcat: <>
+   22 			access: <>
+   23 			printf: <>
+   24 		sdbm_open: <>
+   25 		sdbm_firstkey: <>
+   26 		sdbm_fetch: <>
+   27 		display_info: int (), <./mod_dav/util/lockview.c 66>
+   28 			memcpy: <>
+   29 			strlen: <>
+   30 			printf: <>
+   31 			display_key: void (), <./mod_dav/util/lockview.c 46>
+   32 				printf: <>
+   33 			ctime: <>
+   34 			time: <>
+   35 			show_uuid: char * (), <./mod_dav/util/lockview.c 34>
+   36 				calloc: <>
+   37 				sprintf: <>
+   38 		sdbm_nextkey: <>
+   39 		sdbm_close: <>
+   40 		exit: <>
+   41 		getopt: <>
+   42 		oops: <>
+   43 		parse: <>
+   44 		badk: void (), <./mod_dav/util/dbu.c 193>
+   45 		doit: <>

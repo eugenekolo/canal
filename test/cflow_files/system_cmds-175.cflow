@@ -1,0 +1,2294 @@
+    1 	main: int (), <./vm_stat.tproj/vm_stat.c 63>
+    2 		getopt: <>
+    3 		usage: void (), <./vm_stat.tproj/vm_stat.c 101>
+    4 			fprintf: <>
+    5 			exit: <>
+    6 		sigemptyset: <>
+    7 		sigaddset: <>
+    8 		sigprocmask: <>
+    9 		umask: <>
+   10 		fopen: <>
+   11 		error: void (), <./mach_init.tproj/error_log.c 121>
+   12 			warn: <>
+   13 			cleanup: void (), <./pwd_mkdb.tproj/pwd_mkdb.c 392>
+   14 				snprintf: <>
+   15 				unlink: <>
+   16 			exit: <>
+   17 			va_start: <>
+   18 			fprintf: <>
+   19 			vfprintf: <>
+   20 			va_end: <>
+   21 			do_log: void (), <./mach_init.tproj/error_log.c 77>
+   22 				pthread_mutex_lock: <>
+   23 				fprintf: <>
+   24 				getpid: <>
+   25 				vfprintf: <>
+   26 				vsyslog: <>
+   27 				pthread_mutex_unlock: <>
+   28 		snprintf: <>
+   29 		dbopen: <>
+   30 		open: <>
+   31 		fdopen: <>
+   32 		scan: int (), <./pwd_mkdb.tproj/pwd_mkdb.c 329>
+   33 			fgets: <>
+   34 			strchr: <>
+   35 			warnx: <>
+   36 			pw_scan: int (), <./pwd_mkdb.tproj/pw_scan.c 80>
+   37 				strsep: <>
+   38 				strcmp: <>
+   39 					erealloc: <>
+   40 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+   41 					sprintf: <>
+   42 					error: 11
+   43 				atol: <>
+   44 				warnx: <>
+   45 				setusershell: <>
+   46 				getusershell: <>
+   47 			error: 11
+   48 		COMPACT: <>
+   49 		memmove: <>
+   50 		strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+   51 		fprintf: <>
+   52 		fflush: <>
+   53 		fclose: <>
+   54 		rewind: <>
+   55 		fchmod: <>
+   56 		fileno: <>
+   57 		mv: void (), <./pwd_mkdb.tproj/pwd_mkdb.c 368>
+   58 			rename: <>
+   59 			snprintf: <>
+   60 			error: 11
+   61 		exit: <>
+   62 		mach_host_self: <>
+   63 		host_kernel_version: <>
+   64 		mach_error: <>
+   65 		printf: <>
+   66 		host_info: <>
+   67 		processor_set_default: <>
+   68 		processor_set_info: <>
+   69 		processor_set_statistics: <>
+   70 		slot_name: <>
+   71 		IOMasterPort: <>
+   72 		usage: void (), <./kextunload.tproj/kextunload_main.c 48>
+   73 			printf: <>
+   74 			exit: <>
+   75 		KEXTUnload: KEXTReturn (), <./kextunload.tproj/kextunload_main.c 161>
+   76 			abs: <>
+   77 			error: 11
+   78 			CFStringCreateWithCString: <>
+   79 			CFURLCreateWithFileSystemPath: <>
+   80 			CFRelease: <>
+   81 			CFURLCopyAbsoluteURL: <>
+   82 			printf: <>
+   83 			exit: <>
+   84 			InitManager: Boolean (), <./kextunload.tproj/kextunload_main.c 91>
+   85 				error: 11
+   86 				authenticate: KEXTReturn (), <./kextunload.tproj/kextunload_main.c 57>
+   87 					KEXTManagerAuthenticateURL: <>
+   88 					CFURLCopyAbsoluteURL: <>
+   89 					CFURLGetString: <>
+   90 					CFStringCreateWithFormat: <>
+   91 					CFSTR: <>
+   92 					CFShow: <>
+   93 					CFRelease: <>
+   94 				CFURLCreateWithFileSystemPath: <>
+   95 				KEXTManagerCreate: <>
+   96 				printf: <>
+   97 				KEXTManagerScanPath: <>
+   98 				KEXTError: <>
+   99 				CFSTR: <>
+  100 			KEXTManagerAddBundle: <>
+  101 			KEXTManagerGetBundleWithURL: <>
+  102 			KEXTUnloadAllModules: KEXTReturn (), <./kextunload.tproj/kextunload_main.c 125>
+  103 				KEXTManagerCopyModulesForBundle: <>
+  104 				CFArrayGetCount: <>
+  105 				CFArrayGetValueAtIndex: <>
+  106 				KEXTModuleGetProperty: <>
+  107 				CFSTR: <>
+  108 				CFStringGetCString: <>
+  109 				IOCatalogueTerminate: <>
+  110 				printf: <>
+  111 				CFRelease: <>
+  112 			KEXTManagerRelease: <>
+  113 		IOCatalogueTerminate: <>
+  114 		sync: <>
+  115 		atoi: <>
+  116 		errx: <>
+  117 		setgid: <>
+  118 		getgid: <>
+  119 		kvm_openfiles: <>
+  120 		kvm_nlist: <>
+  121 		kvm_geterr: <>
+  122 		nlread: <>
+  123 		calloc: <>
+  124 		sprintf: <>
+  125 		strdup: <>
+  126 		read_names: int (), <./iostat.tproj/names.c 239>
+  127 			fprintf: <>
+  128 			kvm_read: <>
+  129 			sprintf: <>
+  130 			kvm_rea: <>
+  131 		kvm_read: <>
+  132 		isdigit: if (), <./getty.tproj/main.c 450>
+  133 		strcmp: 38
+  134 		signal: <>
+  135 		phdr: void (), <./iostat.tproj/iostat.c 348>
+  136 			printf: <>
+  137 		X: <>
+  138 		dkstats: void (), <./iostat.tproj/iostat.c 365>
+  139 			printf: <>
+  140 		cpustats: void (), <./iostat.tproj/iostat.c 395>
+  141 			printf: <>
+  142 		sleep: <>
+  143 		getuid: <>
+  144 		getpwuid: <>
+  145 		getpwnam: <>
+  146 		baduser: void (), <./chpass.tproj/chpass.c 199>
+  147 			errx: <>
+  148 			strerror: char * (), <./zic.tproj/zic.c 406>
+  149 		p_shell: int (), <./chpass.tproj/field.c 258>
+  150 			warnx: <>
+  151 			strdup: <>
+  152 		pw_error: void (), <./vipw.tproj/pw_util.c 233>
+  153 			warn: <>
+  154 			warnx: <>
+  155 			unlink: <>
+  156 			exit: <>
+  157 		pw_scan: 36
+  158 		pw_init: void (), <./vipw.tproj/pw_util.c 99>
+  159 			setrlimit: <>
+  160 			signal: <>
+  161 			pw_cont: void (), <./vipw.tproj/pw_util.c 90>
+  162 				kill: <>
+  163 			umask: <>
+  164 		pw_lock: int (), <./vipw.tproj/pw_util.c 129>
+  165 			open: <>
+  166 			fcntl: <>
+  167 			err: <>
+  168 				va_start: <>
+  169 				fprintf: <>
+  170 				vfprintf: <>
+  171 				va_end: <>
+  172 				exit: <>
+  173 			flock: <>
+  174 			errx: <>
+  175 		pw_tmp: int (), <./vipw.tproj/pw_util.c 146>
+  176 			strrchr: <>
+  177 			strcpy: <>
+  178 			mkstemp: <>
+  179 			err: 167
+  180 		display: void (), <./chpass.tproj/edit.c 105>
+  181 			fdopen: <>
+  182 			pw_error: 152
+  183 			fprintf: <>
+  184 			ok_shell: char * (), <./chpass.tproj/util.c 150>
+  185 				setusershell: <>
+  186 				getusershell: <>
+  187 				strcmp: 38
+  188 				strrchr: <>
+  189 			strsep: <>
+  190 			fchown: <>
+  191 			getuid: <>
+  192 			getgid: <>
+  193 			fclose: <>
+  194 		edit: void (), <./chpass.tproj/edit.c 78>
+  195 			stat: <>
+  196 			pw_error: 152
+  197 			pw_edit: void (), <./vipw.tproj/pw_util.c 183>
+  198 				getenv: <>
+  199 				strrchr: <>
+  200 				vfork: <>
+  201 				setgid: <>
+  202 				getgid: <>
+  203 				setuid: <>
+  204 				getuid: <>
+  205 				execlp: <>
+  206 				waitpid: <>
+  207 				pw_error: 152
+  208 				WIFSTOPPED: <>
+  209 				raise: <>
+  210 				WSTOPSIG: <>
+  211 				WIFEXITED: <>
+  212 				WEXITSTATUS: <>
+  213 			warnx: <>
+  214 			verify: int (), <./chpass.tproj/edit.c 156>
+  215 				fopen: <>
+  216 				pw_error: 152
+  217 				fstat: <>
+  218 				fileno: <>
+  219 				warnx: <>
+  220 				fgets: <>
+  221 				strchr: <>
+  222 				strncasecmp: <>
+  223 				isspace: <>
+  224 				strpbrk: <>
+  225 				fclose: <>
+  226 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  227 				malloc: <>
+  228 				err: 167
+  229 				sprintf: <>
+  230 				snprintf: <>
+  231 				pw_scan: 36
+  232 			pw_prompt: void (), <./vipw.tproj/pw_util.c 219>
+  233 				printf: <>
+  234 				fflush: <>
+  235 				getchar: <>
+  236 				pw_error: 152
+  237 		unlink: <>
+  238 		pw_copy: void (), <./chpass.tproj/pw_copy.c 73>
+  239 			fdopen: <>
+  240 			pw_error: 152
+  241 			fgets: <>
+  242 			strchr: <>
+  243 			warnx: <>
+  244 			fprintf: <>
+  245 			ferror: if (), <./zic.tproj/zic.c 872>
+  246 			err: 167
+  247 			strcmp: 38
+  248 			fclose: <>
+  249 		pw_mkdb: int (), <./vipw.tproj/pw_util.c 164>
+  250 			warnx: <>
+  251 			fflush: <>
+  252 			vfork: <>
+  253 			execl: <>
+  254 			pw_error: 152
+  255 			waitpid: <>
+  256 			WIFEXITED: <>
+  257 			WEXITSTATUS: <>
+  258 		NXGetLocalArchInfo: <>
+  259 		get_progname: char * (), <./arch.tproj/arch.c 34>
+  260 			strrchr: <>
+  261 		NXGetArchInfoFromCpuType: <>
+  262 		isatty: <>
+  263 		openlog: <>
+  264 		syslog: <>
+  265 		kill: <>
+  266 		perror: <>
+  267 		setalarm:  (), <./halt.tproj/halt.c 174>
+  268 			signal: <>
+  269 			dingdong: void (), <./halt.tproj/halt.c 169>
+  270 			alarm: <>
+  271 		pause: <>
+  272 		logwtmp: <>
+  273 		reboot: <>
+  274 		geteuid: <>
+  275 		rindex: <>
+  276 		exit_usage: int (), <./fs_usage.tproj/fs_usage.c 306>
+  277 			fprintf: <>
+  278 			exit: <>
+  279 		strrchr: <>
+  280 		strncpy: <>
+  281 		getegid: <>
+  282 		seteuid: <>
+  283 		setegid: <>
+  284 		vfork: <>
+  285 		setsid: <>
+  286 		ptrace: <>
+  287 		execve: <>
+  288 		tcgetattr: <>
+  289 		tcsetattr: <>
+  290 		initscr: <>
+  291 		clear: <>
+  292 		refresh: <>
+  293 		leave: void (), <./fs_usage.tproj/fs_usage.c 277>
+  294 			move: <>
+  295 			refresh: <>
+  296 			endwin: <>
+  297 			tcsetattr: <>
+  298 			set_enable: void (), <./fs_usage.tproj/fs_usage.c 475>
+  299 				sysctl: <>
+  300 				quit: int (), <./fs_usage.tproj/fs_usage.c 1701>
+  301 					set_enable: 298
+  302 					set_remove: void (), <./fs_usage.tproj/fs_usage.c 584>
+  303 						sysctl: <>
+  304 						quit: 300
+  305 					printf: <>
+  306 					exit: <>
+  307 					endwin: <>
+  308 					tcsetattr: <>
+  309 			set_pidcheck: void (), <./fs_usage.tproj/fs_usage.c 515>
+  310 				sysctl: <>
+  311 				printf: <>
+  312 				set_remove: 302
+  313 				exit: <>
+  314 			set_remove: 302
+  315 			exit: <>
+  316 		sigwinch: void (), <./fs_usage.tproj/fs_usage.c 300>
+  317 			initscr: <>
+  318 		malloc: <>
+  319 		set_remove: 302
+  320 		set_numbufs: void (), <./fs_usage.tproj/fs_usage.c 493>
+  321 			sysctl: <>
+  322 			quit: 300
+  323 		set_init: void (), <./fs_usage.tproj/fs_usage.c 608>
+  324 			sysctl: <>
+  325 			quit: 300
+  326 		set_pidcheck: 309
+  327 		set_enable: 298
+  328 		read: <>
+  329 		usleep: <>
+  330 		err: 167
+  331 		strerror: 148
+  332 		getlogin: <>
+  333 		info: void (), <./mach_init.tproj/error_log.c 103>
+  334 			va_start: <>
+  335 			do_log: 21
+  336 			va_end: <>
+  337 		streql: <>
+  338 		usage: void (), <./zprint.tproj/zprint.c 68>
+  339 			fprintf: <>
+  340 			exit: <>
+  341 		host_zone_info: <>
+  342 		mach_error_string: <>
+  343 		colprintzoneheader: void (), <./zprint.tproj/zprint.c 347>
+  344 			printf: <>
+  345 		substr: boolean_t (), <./zprint.tproj/zprint.c 230>
+  346 			strneql: <>
+  347 		strnlen: int (), <./zprint.tproj/zprint.c 217>
+  348 		colprintzone: void (), <./zprint.tproj/zprint.c 288>
+  349 			putchar: <>
+  350 			printf: <>
+  351 			printk: void (), <./zprint.tproj/zprint.c 279>
+  352 				printf: <>
+  353 				putchar: <>
+  354 		printzone: void (), <./zprint.tproj/zprint.c 246>
+  355 			printf: <>
+  356 		vm_deallocate: <>
+  357 		mach_task_self: <>
+  358 		strcpy: <>
+  359 		paging_setup: void (), <./dynamic_pager.tproj/dynamic_pager.c 267>
+  360 			error: 11
+  361 			sprintf: <>
+  362 			fopen: <>
+  363 			fchmod: <>
+  364 			fileno: <>
+  365 			fcntl: <>
+  366 			fclose: <>
+  367 			macx_swapon: <>
+  368 			daemon: <>
+  369 			mach_port_allocate: <>
+  370 			mach_task_self: <>
+  371 			fprintf: <>
+  372 			exit: <>
+  373 			macx_triggers: <>
+  374 			set_dp_control_port: <>
+  375 			mach_host_self: <>
+  376 			wait_on_paging_trigger: void (), <./dynamic_pager.tproj/dynamic_pager.c 254>
+  377 				server_alert_loop: mach_msg_return_t (), <./dynamic_pager.tproj/dynamic_pager.c 64>
+  378 					vm_allocate: <>
+  379 					mach_task_self: <>
+  380 					mlock: <>
+  381 					mach_msg_overwrite_trap: <>
+  382 					default_pager_alerts_server: <>
+  383 					backing_store_triggers_server: <>
+  384 					mach_msg_destroy: <>
+  385 					vm_deallocate: <>
+  386 				fprintf: <>
+  387 				exit: <>
+  388 		openfiles:  (), <./kgmon.tproj/kgmon.c 183>
+  389 			sysctl: <>
+  390 			fprintf: <>
+  391 			exit: <>
+  392 			seteuid: <>
+  393 			getuid: <>
+  394 			kern_readonly:  (), <./kgmon.tproj/kgmon.c 241>
+  395 				fprintf: <>
+  396 			kvm_openfiles: <>
+  397 			kvm_nlist: <>
+  398 		getprof:  (), <./kgmon.tproj/kgmon.c 260>
+  399 			kvm_read: <>
+  400 			sysctl: <>
+  401 			fprintf: <>
+  402 			kvm_geterr: <>
+  403 			strerror: 148
+  404 			exit: <>
+  405 		dumpstate: void (), <./kgmon.tproj/kgmon.c 322>
+  406 			setprof: void (), <./kgmon.tproj/kgmon.c 288>
+  407 				sysctl: <>
+  408 				seteuid: <>
+  409 				getuid: <>
+  410 				kvm_write: <>
+  411 				fprintf: <>
+  412 			fopen: <>
+  413 			perror: <>
+  414 			bzero: <>
+  415 			getprofhz: int (), <./kgmon.tproj/kgmon.c 452>
+  416 				kvm_read: <>
+  417 				fprintf: <>
+  418 				kvm_geterr: <>
+  419 				sysctl: <>
+  420 				strerror: 148
+  421 			fwrite: <>
+  422 			malloc: <>
+  423 			fprintf: <>
+  424 			exit: <>
+  425 			kvm_read: <>
+  426 			sysctl: <>
+  427 			kvm_geterr: <>
+  428 			strerror: 148
+  429 			free: <>
+  430 			debug: void (), <./mach_init.tproj/error_log.c 92>
+  431 				va_start: <>
+  432 				do_log: 21
+  433 				va_end: <>
+  434 			fclose: <>
+  435 		reset: void (), <./kgmon.tproj/kgmon.c 480>
+  436 			setprof: 406
+  437 			malloc: <>
+  438 			fprintf: <>
+  439 			exit: <>
+  440 			bzero: <>
+  441 			kvm_write: <>
+  442 			kvm_geterr: <>
+  443 			seteuid: <>
+  444 			sysctl: <>
+  445 			strerror: 148
+  446 			getuid: <>
+  447 			free: <>
+  448 		setprof: 406
+  449 		islower: <>
+  450 		check_permission: int (), <./at.tproj/perm.c 108>
+  451 			geteuid: <>
+  452 			getpwuid: <>
+  453 			perror: <>
+  454 			exit: <>
+  455 			fopen: <>
+  456 			check_for_user: int (), <./at.tproj/perm.c 82>
+  457 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  458 				malloc: <>
+  459 				fprintf: <>
+  460 				exit: <>
+  461 				fgets: <>
+  462 				strncmp: <>
+  463 				fclose: <>
+  464 				free: <>
+  465 		REDUCE_PRIV: <>
+  466 		list_jobs: void (), <./at.tproj/at.c 389>
+  467 			chdir: <>
+  468 			perr2: void (), <./at.tproj/panic.c 100>
+  469 				fprintf: <>
+  470 				perr: void (), <./at.tproj/panic.c 87>
+  471 					perror: <>
+  472 					unlink: <>
+  473 					exit: <>
+  474 			opendir: <>
+  475 			readdir: <>
+  476 			stat: <>
+  477 			S_ISREG: <>
+  478 			sscanf: <>
+  479 			localtime: <>
+  480 			strftime: <>
+  481 			printf: <>
+  482 			getpwuid: <>
+  483 		delete_jobs: void (), <./at.tproj/at.c 454>
+  484 			chdir: <>
+  485 			perr2: 468
+  486 			stat: <>
+  487 			perr: 470
+  488 			fprintf: <>
+  489 			exit: <>
+  490 			unlink: <>
+  491 		parsetime: time_t (), <./at.tproj/parsetime.c 535>
+  492 		localtime: <>
+  493 		asctime: <>
+  494 		writefile: void (), <./at.tproj/at.c 169>
+  495 			sigc: void (), <./at.tproj/at.c 115>
+  496 				unlink: <>
+  497 				exit: <>
+  498 			sigemptyset: <>
+  499 			sigaction: <>
+  500 			strcpy: <>
+  501 			strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  502 			open: <>
+  503 			perr2: 468
+  504 			alarmc: void (), <./at.tproj/at.c 130>
+  505 				panic: __private_extern__ void (), <./at.tproj/panic.c 74>
+  506 					fprintf: <>
+  507 					unlink: <>
+  508 					exit: <>
+  509 			alarm: <>
+  510 			fcntl: <>
+  511 			sprintf: <>
+  512 			stat: <>
+  513 			panic: 505
+  514 			umask: <>
+  515 			creat: <>
+  516 			perr: 470
+  517 			dup: <>
+  518 			fchown: <>
+  519 			REDUCE_PRIV: <>
+  520 			close: <>
+  521 			fdopen: <>
+  522 			getlogin: <>
+  523 			getenv: <>
+  524 			getpwuid: <>
+  525 			getuid: <>
+  526 			freopen: <>
+  527 			fprintf: <>
+  528 			strchr: <>
+  529 			strncmp: <>
+  530 			fwrite: <>
+  531 			isalnum: <>
+  532 			fputc: <>
+  533 			fputs: <>
+  534 			cwdname: char * (), <./at.tproj/at.c 141>
+  535 				malloc: <>
+  536 				panic: 505
+  537 				getcwd: <>
+  538 				perr: 470
+  539 				free: <>
+  540 			getchar: <>
+  541 			ferror: if (), <./zic.tproj/zic.c 872>
+  542 			fclose: <>
+  543 			fchmod: <>
+  544 		time: <>
+  545 		panic: 505
+  546 		kvm_open: <>
+  547 		KREAD: <>
+  548 		kvm_close: <>
+  549 		vis: <>
+  550 		putchar: <>
+  551 		netinfo_check_passwd: int (), <./chkpasswd.tproj/netinfo_passwd.c 320>
+  552 			domain_for_user: void * (), <./chkpasswd.tproj/netinfo_passwd.c 264>
+  553 				malloc: <>
+  554 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  555 				sprintf: <>
+  556 				strncmp: <>
+  557 				parse_server_tag: void (), <./chkpasswd.tproj/netinfo_passwd.c 188>
+  558 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  559 					index: <>
+  560 					fprintf: <>
+  561 					exit: <>
+  562 					malloc: <>
+  563 					strncpy: <>
+  564 					strcpy: <>
+  565 					inet_addr: <>
+  566 					gethostbyname: <>
+  567 					bcopy: <>
+  568 					free: <>
+  569 				ni_connect: <>
+  570 				ni_open: <>
+  571 				ni_pathsearch: <>
+  572 				free: <>
+  573 				ni_free: <>
+  574 			fprintf: <>
+  575 			exit: <>
+  576 			ni_lookupprop: <>
+  577 			ni_free: <>
+  578 			ni_error: <>
+  579 			checkpasswd: void (), <./chkpasswd.tproj/passwd.c 55>
+  580 				printf: <>
+  581 				getpass: <>
+  582 				sleep: <>
+  583 				strcmp: 38
+  584 				crypt: <>
+  585 				fprintf: <>
+  586 				exit: <>
+  587 		file_check_passwd: int (), <./chkpasswd.tproj/file_passwd.c 247>
+  588 			fopen: <>
+  589 			fprintf: <>
+  590 			perror: <>
+  591 			exit: <>
+  592 			find_user: struct passwd (), <./passwd.tproj/file_passwd.c 112>
+  593 			checkpasswd: 579
+  594 			fclose: <>
+  595 		nis_check_passwd: int (), <./chkpasswd.tproj/nis_passwd.c 88>
+  596 			yp_get_default_domain: <>
+  597 			fprintf: <>
+  598 			exit: <>
+  599 			yp_master: <>
+  600 			getrpcport: <>
+  601 			ypgetpwnam: struct passwd (), <./chkpasswd.tproj/nis_passwd.c 187>
+  602 			checkpasswd: 579
+  603 		copyfile: void (), <./vipw.tproj/vipw.c 130>
+  604 			read: <>
+  605 			write: <>
+  606 			pw_error: 152
+  607 		close: <>
+  608 		stat: <>
+  609 		pw_edit: 197
+  610 		warnx: <>
+  611 		pw_prompt: 232
+  612 		gethostname: <>
+  613 		uname: <>
+  614 		timeoverrun: void (), <./getty.tproj/main.c 165>
+  615 			syslog: <>
+  616 			exit: <>
+  617 		setrlimit: <>
+  618 		ttyname: <>
+  619 		strncat: <>
+  620 		chown: <>
+  621 		chmod: <>
+  622 		revoke: <>
+  623 		closelog: <>
+  624 		login_tty: <>
+  625 		gettable: void (), <./getty.tproj/subr.c 84>
+  626 			cgetent: <>
+  627 			cgetstr: <>
+  628 			cgetnum: <>
+  629 			cgetcap: <>
+  630 			printf: <>
+  631 			exit: <>
+  632 		gendefaults: void (), <./getty.tproj/subr.c 130>
+  633 		setdefaults: void (), <./getty.tproj/subr.c 150>
+  634 		ioctl: <>
+  635 		cfsetispeed: <>
+  636 		cfsetospeed: <>
+  637 		setflags: void (), <./getty.tproj/subr.c 198>
+  638 			compatflags: <>
+  639 			BIC: <>
+  640 			BICS: <>
+  641 			BIS: <>
+  642 			delaybits: int (), <./getty.tproj/subr.c 539>
+  643 				adelay: <>
+  644 		setchars: void (), <./getty.tproj/subr.c 183>
+  645 		autobaud: char * (), <./getty.tproj/subr.c 691>
+  646 			ioctl: <>
+  647 			select: <>
+  648 			read: <>
+  649 		portselector: char * (), <./getty.tproj/subr.c 656>
+  650 			alarm: <>
+  651 			read: <>
+  652 			strcmp: 38
+  653 			sleep: <>
+  654 		putpad: <>
+  655 		edithost: <>
+  656 		putf: <>
+  657 		setjmp: <>
+  658 		dingdong: void (), <./getty.tproj/main.c 143>
+  659 			alarm: <>
+  660 			signal: <>
+  661 			longjmp: <>
+  662 		alarm: <>
+  663 		getname: int (), <./getty.tproj/main.c 362>
+  664 			setjmp: <>
+  665 			signal: <>
+  666 			interrupt: void (), <./getty.tproj/main.c 154>
+  667 				signal: <>
+  668 				interrupt: 666
+  669 				longjmp: <>
+  670 			setflags: 637
+  671 			prompt: void (), <./getty.tproj/main.c 521>
+  672 				putf: <>
+  673 				putchr: void (), <./getty.tproj/main.c 493>
+  674 					oflush: void (), <./getty.tproj/main.c 513>
+  675 						write: <>
+  676 					write: <>
+  677 			oflush: 674
+  678 			sleep: <>
+  679 			tcsetattr: <>
+  680 			syslog: <>
+  681 			exit: <>
+  682 			read: <>
+  683 			putf: <>
+  684 			islower: <>
+  685 			isupper: <>
+  686 			cfgetospeed: <>
+  687 			puts: <>
+  688 			putchr: 673
+  689 			isdigit: if (), <./getty.tproj/main.c 450>
+  690 			tolower: <>
+  691 		oflush: 674
+  692 		puts: <>
+  693 		makeenv: void (), <./getty.tproj/subr.c 607>
+  694 		execle: <>
+  695 		getpid: <>
+  696 		warning: void (), <./init.tproj/init.c 399>
+  697 			va_start: <>
+  698 			vsyslog: <>
+  699 			va_end: <>
+  700 		setlogin: <>
+  701 		single_user: state_func_t (), <./init.tproj/init.c 742>
+  702 			getsecuritylevel: int (), <./init.tproj/init.c 457>
+  703 				sysctl: <>
+  704 				emergency: void (), <./init.tproj/init.c 413>
+  705 					va_start: <>
+  706 					vsyslog: <>
+  707 					va_end: <>
+  708 				strerror: 148
+  709 			setsecuritylevel: void (), <./init.tproj/init.c 482>
+  710 				getsecuritylevel: 702
+  711 				sysctl: <>
+  712 				emergency: 704
+  713 				strerror: 148
+  714 				warning: 696
+  715 			fork: <>
+  716 			setctty: void (), <./init.tproj/init.c 538>
+  717 				revoke: <>
+  718 				sleep: <>
+  719 				open: <>
+  720 				stall: void (), <./init.tproj/init.c 383>
+  721 					va_start: <>
+  722 					vsyslog: <>
+  723 					va_end: <>
+  724 					sleep: <>
+  725 				login_tty: <>
+  726 			do_security_check: void (), <./init.tproj/init.c 670>
+  727 				hw_passwd: char * (), <./init.tproj/init.c 636>
+  728 					open: <>
+  729 					ioctl: <>
+  730 					strncpy: <>
+  731 				write: <>
+  732 				gethwpasswd: char * (), <./init.tproj/init.c 601>
+  733 					tcgetattr: <>
+  734 					tcsetattr: <>
+  735 					write: <>
+  736 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  737 					getchar: <>
+  738 				strncmp: <>
+  739 				execl: <>
+  740 				exit: <>
+  741 				sprintf: <>
+  742 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  743 				do_halt: void (), <./init.tproj/init.c 576>
+  744 					kill: <>
+  745 					sprintf: <>
+  746 					write: <>
+  747 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  748 					signal: <>
+  749 					shutend: void (), <./init.tproj/init.c 565>
+  750 						acct: <>
+  751 						close: <>
+  752 						logwtmp: <>
+  753 					sync: <>
+  754 					alrm_handler: void (), <./init.tproj/init.c 1557>
+  755 					alarm: <>
+  756 					pause: <>
+  757 					syscall: <>
+  758 				getttynam: <>
+  759 				getpwnam: <>
+  760 				getpass: <>
+  761 				crypt: <>
+  762 				memset: <>
+  763 				strcmp: 38
+  764 				warning: 696
+  765 				endttyent: <>
+  766 				endpwent: <>
+  767 			write: <>
+  768 			read: <>
+  769 			sigemptyset: <>
+  770 			sigprocmask: <>
+  771 			setenv: <>
+  772 			execv: <>
+  773 			emergency: 704
+  774 			sleep: <>
+  775 			waitpid: <>
+  776 			single_user: 701
+  777 			collect_child: void (), <./init.tproj/init.c 1367>
+  778 				find_session: session_t * (), <./init.tproj/init.c 1051>
+  779 					memmove: <>
+  780 				clear_session_logs: void (), <./init.tproj/init.c 524>
+  781 					logout: <>
+  782 					logwtmp: <>
+  783 				del_session: void (), <./init.tproj/init.c 1035>
+  784 					emergency: 704
+  785 					strerror: 148
+  786 				free_session: <>
+  787 				start_getty: pid_t (), <./init.tproj/init.c 1290>
+  788 					time: <>
+  789 					start_window_system: pid_t (), <./init.tproj/init.c 1259>
+  790 						fork: <>
+  791 						emergency: 704
+  792 						sigemptyset: <>
+  793 						sigprocmask: <>
+  794 						setsid: <>
+  795 						execv: <>
+  796 						stall: 720
+  797 					fork: <>
+  798 					emergency: 704
+  799 					warning: 696
+  800 					sleep: <>
+  801 					sigemptyset: <>
+  802 					sigprocmask: <>
+  803 					execv: <>
+  804 					stall: 720
+  805 				clean_ttys: state_func_t (), <./init.tproj/init.c 1490>
+  806 					multi_user: state_func_t (), <./init.tproj/init.c 1432>
+  807 						getsecuritylevel: 702
+  808 						setsecuritylevel: 709
+  809 						start_getty: 787
+  810 						clean_ttys: 805
+  811 						time: <>
+  812 						add_session: void (), <./init.tproj/init.c 1016>
+  813 							emergency: 704
+  814 							strerror: 148
+  815 						waitpid: <>
+  816 						find_session: 778
+  817 						WIFSIGNALED: <>
+  818 						WEXITSTATUS: <>
+  819 						collect_child: 777
+  820 					getttyent: <>
+  821 					strcmp: 38
+  822 					warning: 696
+  823 					kill: <>
+  824 					setupargv: int (), <./init.tproj/init.c 1136>
+  825 						setup_command: int (), <./init.tproj/init.c 1111>
+  826 						warning: 696
+  827 					new_session: session_t * (), <./init.tproj/init.c 1181>
+  828 					endttyent: <>
+  829 				time: <>
+  830 				add_session: 812
+  831 			warning: 696
+  832 			WIFSTOPPED: <>
+  833 			kill: <>
+  834 			WIFEXITED: <>
+  835 			WTERMSIG: <>
+  836 			runcom: state_func_t (), <./init.tproj/init.c 865>
+  837 				fork: <>
+  838 				sigemptyset: <>
+  839 				sigaction: <>
+  840 				setctty: 716
+  841 				single_user: 701
+  842 				warning: 696
+  843 				sigprocmask: <>
+  844 				execv: <>
+  845 				stall: 720
+  846 				emergency: 704
+  847 				waitpid: <>
+  848 				sleep: <>
+  849 				collect_child: 777
+  850 				WIFSTOPPED: <>
+  851 				kill: <>
+  852 				WIFSIGNALED: <>
+  853 				WTERMSIG: <>
+  854 				catatonia: state_func_t (), <./init.tproj/init.c 1543>
+  855 					multi_user: 806
+  856 				sigfillset: <>
+  857 				sigsuspend: <>
+  858 				WIFEXITED: <>
+  859 				WEXITSTATUS: <>
+  860 				logwtmp: <>
+  861 				read_ttys: state_func_t (), <./init.tproj/init.c 1222>
+  862 		handle: void (), <./init.tproj/init.c 342>
+  863 			va_start: <>
+  864 			sigfillset: <>
+  865 			va_arg: <>
+  866 			sigaction: <>
+  867 			va_end: <>
+  868 		badsys: void (), <./init.tproj/init.c 429>
+  869 			disaster: void (), <./init.tproj/init.c 443>
+  870 				emergency: 704
+  871 				sleep: <>
+  872 		disaster: 869
+  873 		transition_handler: void (), <./init.tproj/init.c 1408>
+  874 			clean_ttys: 805
+  875 			death: state_func_t (), <./init.tproj/init.c 1567>
+  876 				logwtmp: <>
+  877 				kill: <>
+  878 				single_user: 701
+  879 				alarm: <>
+  880 				waitpid: <>
+  881 				collect_child: 777
+  882 				warning: 696
+  883 			catatonia: 854
+  884 		alrm_handler: 754
+  885 		sigfillset: <>
+  886 		delset: void (), <./init.tproj/init.c 366>
+  887 			va_start: <>
+  888 			va_arg: <>
+  889 			sigdelset: <>
+  890 			va_end: <>
+  891 		sigaction: <>
+  892 		runcom: 836
+  893 		transition: void (), <./init.tproj/init.c 512>
+  894 		getoffset: <>
+  895 		fgets: <>
+  896 		ctime: <>
+  897 		putc: <>
+  898 		setpriority: <>
+  899 		fork: <>
+  900 		loop: void (), <./shutdown.tproj/shutdown.c 235>
+  901 			nolog: void (), <./shutdown.tproj/shutdown.c 464>
+  902 				unlink: <>
+  903 				signal: <>
+  904 				finish: void (), <./shutdown.tproj/shutdown.c 486>
+  905 					unlink: <>
+  906 					exit: <>
+  907 				open: <>
+  908 				write: <>
+  909 				ctime: <>
+  910 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+  911 				close: <>
+  912 			sleep: <>
+  913 			timewarn: void (), <./shutdown.tproj/shutdown.c 279>
+  914 				gethostname: <>
+  915 				snprintf: <>
+  916 				popen: <>
+  917 				syslog: <>
+  918 				fprintf: <>
+  919 				ctime: <>
+  920 				fwrite: <>
+  921 				setjmp: <>
+  922 				signal: <>
+  923 				alarm: <>
+  924 				pclose: <>
+  925 			die_you_gravy_sucking_pig_dog: void (), <./shutdown.tproj/shutdown.c 336>
+  926 				syslog: <>
+  927 				sleep: <>
+  928 				printf: <>
+  929 				finish: 904
+  930 				doitfast: void (), <./shutdown.tproj/shutdown.c 451>
+  931 				execle: <>
+  932 				perror: <>
+  933 				kill: <>
+  934 		strtoq: <>
+  935 		create_file: void (), <./mkfile.tproj/mkfile.c 136>
+  936 			open: <>
+  937 			err: 167
+  938 			lseek: <>
+  939 			write: <>
+  940 			err_rm: void (), <./mkfile.tproj/mkfile.c 199>
+  941 				unlink: <>
+  942 				err: 167
+  943 			bzero: <>
+  944 			geteuid: <>
+  945 			fchmod: <>
+  946 			close: <>
+  947 			fprintf: <>
+  948 		strtoul: <>
+  949 		usage: void (), <./kmodload.tproj/kmodload.c 125>
+  950 			fprintf: <>
+  951 			exit: <>
+  952 		map_module: void (), <./kmodload.tproj/kmodload.c 322>
+  953 			open: <>
+  954 			fprintf: <>
+  955 			exit: <>
+  956 			nlist: <>
+  957 			fstat: <>
+  958 			map_fd: <>
+  959 			close: <>
+  960 			NXSwapBigLongToHost: <>
+  961 			host_info: <>
+  962 			mach_host_self: <>
+  963 			cpusubtype_getbestarch: <>
+  964 		task_for_pid: <>
+  965 		machwarn: void (), <./kmodload.tproj/kmodload.c 304>
+  966 			fprintf: <>
+  967 			mach_error_string: <>
+  968 		kmod_get_info: <>
+  969 		macherr: void (), <./kmodload.tproj/kmodload.c 311>
+  970 			fprintf: <>
+  971 			mach_error_string: <>
+  972 			cleanup_kernel_memory: void (), <./kmodload.tproj/kmodload.c 554>
+  973 				v_printf: <>
+  974 				vm_deallocate: <>
+  975 				clear_globals: void (), <./kmodload.tproj/kmodload.c 571>
+  976 				machwarn: 965
+  977 			exit: <>
+  978 		link_base: void (), <./kmodload.tproj/kmodload.c 426>
+  979 			kld_load_basefile: <>
+  980 			fflush: <>
+  981 			fprintf: <>
+  982 			exit: <>
+  983 			map_module: 952
+  984 			strcmp: 38
+  985 			malloc: <>
+  986 			link_module: struct mach_header (), <./kmodload.tproj/kmodload.c 584>
+  987 			patch_module: vm_address_t (), <./kmodload.tproj/kmodload.c 603>
+  988 				info: 333
+  989 				kld_lookup: <>
+  990 				fflush: <>
+  991 				fprintf: <>
+  992 				cleanup_kernel_memory: 972
+  993 				exit: <>
+  994 				kld_forget_symbol: <>
+  995 				v_printf: <>
+  996 				page_round: <>
+  997 			clear_globals: 975
+  998 		link_module: struct mach_header (), <./kmodload.tproj/kmodload.c 584>
+  999 		patch_module: 987
+ 1000 		load_module: kmod_t (), <./kmodload.tproj/kmodload.c 655>
+ 1001 			vm_allocate: <>
+ 1002 			mach_task_self: <>
+ 1003 			macherr: 969
+ 1004 			bzero: <>
+ 1005 			memcpy: <>
+ 1006 			page_round: <>
+ 1007 			vm_write: <>
+ 1008 			kmod_create: <>
+ 1009 			v_printf: <>
+ 1010 			vm_deallocate: <>
+ 1011 		set_module_dependencies: void (), <./kmodload.tproj/kmodload.c 693>
+ 1012 			kmod_control: <>
+ 1013 			KMOD_PACK_IDS: <>
+ 1014 			machwarn: 965
+ 1015 			clear_globals: 975
+ 1016 			kmod_destroy: <>
+ 1017 			macherr: 969
+ 1018 			exit: <>
+ 1019 			v_printf: <>
+ 1020 		start_module: void (), <./kmodload.tproj/kmodload.c 718>
+ 1021 			kmod_control: <>
+ 1022 			machwarn: 965
+ 1023 			clear_globals: 975
+ 1024 			kmod_destroy: <>
+ 1025 			macherr: 969
+ 1026 			exit: <>
+ 1027 			v_printf: <>
+ 1028 		daemon: <>
+ 1029 		setitimer: <>
+ 1030 		sigpause: <>
+ 1031 		sigblock: <>
+ 1032 		adelay: <>
+ 1033 		AbsoluteTime_to_scalar: <>
+ 1034 		set_rtcdec:  (), <./latency.tproj/latency.c 323>
+ 1035 			sysctl: <>
+ 1036 			quit: 300
+ 1037 		sigintr: void (), <./latency.tproj/latency.c 455>
+ 1038 			set_enable: 298
+ 1039 			set_pidexclude: void (), <./fs_usage.tproj/fs_usage.c 544>
+ 1040 				sysctl: <>
+ 1041 				printf: <>
+ 1042 			getpid: <>
+ 1043 			set_rtcdec: 1034
+ 1044 			set_remove: 302
+ 1045 			exit: <>
+ 1046 		sigquit: void (), <./latency.tproj/latency.c 468>
+ 1047 			set_enable: 298
+ 1048 			set_pidexclude: 1039
+ 1049 			getpid: <>
+ 1050 			set_rtcdec: 1034
+ 1051 			set_remove: 302
+ 1052 			exit: <>
+ 1053 		sigterm: void (), <./latency.tproj/latency.c 478>
+ 1054 			set_enable: 298
+ 1055 			set_pidexclude: 1039
+ 1056 			getpid: <>
+ 1057 			set_rtcdec: 1034
+ 1058 			set_remove: 302
+ 1059 			exit: <>
+ 1060 		quit: 300
+ 1061 		set_init_logging: void (), <./latency.tproj/latency.c 421>
+ 1062 			sysctl: <>
+ 1063 			quit: 300
+ 1064 		set_init_nologging: void (), <./latency.tproj/latency.c 390>
+ 1065 			sysctl: <>
+ 1066 			quit: 300
+ 1067 		set_pidexclude: 1039
+ 1068 		set_time_constraint_policy: kern_return_t (), <./latency.tproj/latency.c 969>
+ 1069 			info: 333
+ 1070 			thread_policy_get: <>
+ 1071 			mach_thread_self: <>
+ 1072 			thread_policy_set: <>
+ 1073 		set_standard_policy: kern_return_t (), <./latency.tproj/latency.c 991>
+ 1074 			info: 333
+ 1075 			thread_policy_get: <>
+ 1076 			mach_thread_self: <>
+ 1077 			thread_policy_set: <>
+ 1078 		screen_update: void (), <./top.tproj/top.c 1439>
+ 1079 			erase: <>
+ 1080 			move: <>
+ 1081 			sprintf: <>
+ 1082 			strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1083 			time: <>
+ 1084 			memset: <>
+ 1085 			ctime: <>
+ 1086 			printf: <>
+ 1087 			printw: <>
+ 1088 			print_time: void (), <./top.tproj/top.c 287>
+ 1089 				sprintf: <>
+ 1090 				usec_to_1000ths: <>
+ 1091 				usec_to_100ths: <>
+ 1092 			print_row: void (), <./sc_usage.tproj/sc_usage.c 542>
+ 1093 				sprintf: <>
+ 1094 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1095 				memset: <>
+ 1096 				print_time: 1088
+ 1097 				printf: <>
+ 1098 				printw: <>
+ 1099 			clock_get_uptime: void (), <./latency.tproj/latency.c 206>
+ 1100 			refresh: <>
+ 1101 			fprintf: <>
+ 1102 			fflush: <>
+ 1103 			error: 11
+ 1104 			bzero: <>
+ 1105 			read_proc_table: void (), <./top.tproj/top.c 1099>
+ 1106 				printf: <>
+ 1107 				exit: <>
+ 1108 				host_processor_sets: <>
+ 1109 				mach_error: <>
+ 1110 				host_processor_set_priv: <>
+ 1111 				processor_set_tasks: <>
+ 1112 				grab_task: void (), <./top.tproj/top.c 948>
+ 1113 					pid_for_task: <>
+ 1114 					sysctl: <>
+ 1115 					perror: <>
+ 1116 					exit: <>
+ 1117 					realloc: <>
+ 1118 					bzero: <>
+ 1119 				mach_task_self: <>
+ 1120 				mach_port_deallocate: <>
+ 1121 				vm_deallocate: <>
+ 1122 			host_statistics: <>
+ 1123 			mach_error: <>
+ 1124 			exit: <>
+ 1125 			getNETWORKcounters:  (), <./top.tproj/top.c 2191>
+ 1126 				kread: int (), <./top.tproj/top.c 2159>
+ 1127 					kvm_openfiles: <>
+ 1128 					kvm_nlist: <>
+ 1129 					errx: <>
+ 1130 					kvm_geterr: <>
+ 1131 					kvm_read: <>
+ 1132 					warnx: <>
+ 1133 				snprintf: <>
+ 1134 				strcmp: 38
+ 1135 			getDISKcounters:  (), <./top.tproj/top.c 2228>
+ 1136 				IOIteratorNext: <>
+ 1137 				IORegistryEntryCreateCFProperties: <>
+ 1138 				CFDictionaryGetValue: <>
+ 1139 				CFSTR: <>
+ 1140 				CFNumberGetValue: <>
+ 1141 				CFRelease: <>
+ 1142 				IOObjectRelease: <>
+ 1143 				IOIteratorReset: <>
+ 1144 			get_proc_info: void (), <./top.tproj/top.c 723>
+ 1145 				task_for_pid: <>
+ 1146 				mach_task_self: <>
+ 1147 				task_info: <>
+ 1148 				pmem_doit: void (), <./top.tproj/top.c 433>
+ 1149 					err: 167
+ 1150 					info: 333
+ 1151 					vm_region_64: <>
+ 1152 					vm_region: <>
+ 1153 					shared_hash_enter: void (), <./top.tproj/top.c 398>
+ 1154 						OT_HASH: <>
+ 1155 						malloc: <>
+ 1156 				time_value_add: <>
+ 1157 				task_threads: <>
+ 1158 				thread_info: <>
+ 1159 				mach_state_order: int (), <./top.tproj/top.c 243>
+ 1160 				mach_port_deallocate: <>
+ 1161 				vm_deallocate: <>
+ 1162 				mach_port_names: <>
+ 1163 				strncmp: <>
+ 1164 				get_real_command_name: int (), <./top.tproj/top.c 624>
+ 1165 					malloc: <>
+ 1166 					sysctl: <>
+ 1167 					free: <>
+ 1168 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1169 					strncpy: <>
+ 1170 				strncpy: <>
+ 1171 			getCPU: kern_return_t (), <./top.tproj/top.c 1151>
+ 1172 				host_statistics: <>
+ 1173 			updateCPU:  (), <./top.tproj/top.c 1164>
+ 1174 			gettimeofday: <>
+ 1175 			timersub: <>
+ 1176 			pmem_fw_resident: void (), <./top.tproj/top.c 537>
+ 1177 				err: 167
+ 1178 				vm_region_recurse_64: <>
+ 1179 				mach_task_self: <>
+ 1180 			pmem_shared_resident: void (), <./top.tproj/top.c 593>
+ 1181 			mem_to_string: <>
+ 1182 			update_histdata: void (), <./top.tproj/top.c 993>
+ 1183 				time_value_sub: <>
+ 1184 				bzero: <>
+ 1185 				bcopy: <>
+ 1186 			qsort: <>
+ 1187 			print_usage: void (), <./top.tproj/top.c 311>
+ 1188 				sprintf: <>
+ 1189 			offset_to_string: char * (), <./top.tproj/top.c 367>
+ 1190 			leave: 293
+ 1191 		clock_get_uptime: 1099
+ 1192 		ADD_ABSOLUTETIME: <>
+ 1193 		mk_wait_until: <>
+ 1194 		acct: <>
+ 1195 		netinfo_passwd: int (), <./passwd.tproj/netinfo_passwd.c 320>
+ 1196 			domain_for_user: void * (), <./passwd.tproj/netinfo_passwd.c 264>
+ 1197 				malloc: <>
+ 1198 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1199 				sprintf: <>
+ 1200 				strncmp: <>
+ 1201 				parse_server_tag: void (), <./passwd.tproj/netinfo_passwd.c 188>
+ 1202 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1203 					index: <>
+ 1204 					fprintf: <>
+ 1205 					exit: <>
+ 1206 					malloc: <>
+ 1207 					strncpy: <>
+ 1208 					strcpy: <>
+ 1209 					inet_addr: <>
+ 1210 					gethostbyname: <>
+ 1211 					bcopy: <>
+ 1212 					free: <>
+ 1213 				ni_connect: <>
+ 1214 				ni_open: <>
+ 1215 				ni_pathsearch: <>
+ 1216 				free: <>
+ 1217 				ni_free: <>
+ 1218 			fprintf: <>
+ 1219 			exit: <>
+ 1220 			ni_lookupprop: <>
+ 1221 			ni_free: <>
+ 1222 			ni_error: <>
+ 1223 			atoi: <>
+ 1224 			is_root_on_master: int (), <./passwd.tproj/netinfo_passwd.c 93>
+ 1225 				getuid: <>
+ 1226 				gethostname: <>
+ 1227 				strchr: <>
+ 1228 				ni_root: <>
+ 1229 				ni_read: <>
+ 1230 				ni_proplist_match: <>
+ 1231 				ni_proplist_free: <>
+ 1232 				fprintf: <>
+ 1233 				strcmp: 38
+ 1234 				ni_addrtag: <>
+ 1235 				sys_ismyaddress: int (), <./passwd.tproj/netinfo_passwd.c 43>
+ 1236 					htonl: <>
+ 1237 					socket: <>
+ 1238 					ioctl: <>
+ 1239 					close: <>
+ 1240 			getuid: <>
+ 1241 			ni_needwrite: <>
+ 1242 			secure_passwords: int (), <./passwd.tproj/netinfo_passwd.c 156>
+ 1243 				ni_open: <>
+ 1244 				ni_lookupprop: <>
+ 1245 				ni_namelist_match: <>
+ 1246 				ni_free: <>
+ 1247 			getpasswd: void (), <./passwd.tproj/passwd.c 54>
+ 1248 				printf: <>
+ 1249 				getpass: <>
+ 1250 				strcmp: 38
+ 1251 				crypt: <>
+ 1252 				fprintf: <>
+ 1253 				exit: <>
+ 1254 				strcpy: <>
+ 1255 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1256 				isupper: <>
+ 1257 				islower: <>
+ 1258 				isalpha: <>
+ 1259 				srandom: <>
+ 1260 				time: <>
+ 1261 				random: <>
+ 1262 			ni_setuser: <>
+ 1263 			ni_setpassword: <>
+ 1264 			ni_read: <>
+ 1265 			malloc: <>
+ 1266 			ni_proplist_match: <>
+ 1267 			ni_createprop: <>
+ 1268 			ni_writeprop: <>
+ 1269 			free: <>
+ 1270 		file_passwd: int (), <./passwd.tproj/file_passwd.c 247>
+ 1271 			fopen: <>
+ 1272 			fprintf: <>
+ 1273 			perror: <>
+ 1274 			exit: <>
+ 1275 			find_user: struct passwd (), <./passwd.tproj/file_passwd.c 112>
+ 1276 			getuid: <>
+ 1277 			getpasswd: 1247
+ 1278 			copyString: char * (), <./passwd.tproj/stringops.c 30>
+ 1279 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1280 				malloc: <>
+ 1281 				bcopy: <>
+ 1282 			rewrite_file: void (), <./passwd.tproj/file_passwd.c 132>
+ 1283 				sprintf: <>
+ 1284 				getpid: <>
+ 1285 				fopen: <>
+ 1286 				fprintf: <>
+ 1287 				perror: <>
+ 1288 				exit: <>
+ 1289 				strcmp: 38
+ 1290 				rewind: <>
+ 1291 				getline: char * (), <./passwd.tproj/file_passwd.c 43>
+ 1292 					fgets: <>
+ 1293 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1294 				parse_user: struct passwd (), <./passwd.tproj/file_passwd.c 62>
+ 1295 				fclose: <>
+ 1296 				unlink: <>
+ 1297 			parse_user: struct passwd (), <./passwd.tproj/file_passwd.c 62>
+ 1298 			free: <>
+ 1299 			fclose: <>
+ 1300 		nis_passwd: int (), <./passwd.tproj/nis_passwd.c 88>
+ 1301 			yp_get_default_domain: <>
+ 1302 			fprintf: <>
+ 1303 			exit: <>
+ 1304 			yp_master: <>
+ 1305 			getrpcport: <>
+ 1306 			ypgetpwnam: struct passwd (), <./passwd.tproj/nis_passwd.c 235>
+ 1307 			getuid: <>
+ 1308 			getpasswd: 1247
+ 1309 			clnt_create: <>
+ 1310 			authunix_create_default: <>
+ 1311 			clnt_call: <>
+ 1312 			clnt_perrno: <>
+ 1313 		usage: void (), <./kmodstat.tproj/kmodstat.c 91>
+ 1314 			fprintf: <>
+ 1315 			exit: <>
+ 1316 		machwarn: void (), <./kmodstat.tproj/kmodstat.c 70>
+ 1317 			fprintf: <>
+ 1318 			mach_error_string: <>
+ 1319 		macherr: void (), <./kmodstat.tproj/kmodstat.c 77>
+ 1320 			fprintf: <>
+ 1321 			mach_error_string: <>
+ 1322 			exit: <>
+ 1323 		qsort: <>
+ 1324 		kmod_compare: int (), <./kmodstat.tproj/kmodstat.c 85>
+ 1325 		debug: 430
+ 1326 		usage: void (), <./kextd.tproj/KEXTD_main.c 10>
+ 1327 			printf: <>
+ 1328 			exit: <>
+ 1329 		CFURLCreateWithFileSystemPath: <>
+ 1330 		CFSTR: <>
+ 1331 		CFArrayCreate: <>
+ 1332 		CFRelease: <>
+ 1333 		KEXTDCreate: KEXTDRef (), <./kextd.tproj/KEXTD.c 913>
+ 1334 			malloc: <>
+ 1335 			memset: <>
+ 1336 			PTLockCreate: PTLockRef (), <./kextd.tproj/PTLock.c 29>
+ 1337 				malloc: <>
+ 1338 				mutex_init: <>
+ 1339 				condition_init: <>
+ 1340 			CFArrayCreateMutable: <>
+ 1341 			KEXTDFree: void (), <./kextd.tproj/KEXTD.c 984>
+ 1342 				syslog: <>
+ 1343 				CFRelease: <>
+ 1344 				KEXTManagerRelease: <>
+ 1345 				PTLockFree: void (), <./kextd.tproj/PTLock.c 45>
+ 1346 					mutex_free: <>
+ 1347 					condition_free: <>
+ 1348 					free: <>
+ 1349 				closelog: <>
+ 1350 				free: <>
+ 1351 			queue_init: <>
+ 1352 			CFArrayGetCount: <>
+ 1353 			CFArrayGetValueAtIndex: <>
+ 1354 			KEXTDAddScanPath: void (), <./kextd.tproj/KEXTD.c 1768>
+ 1355 				CFURLGetTypeID: <>
+ 1356 				CFGetTypeID: <>
+ 1357 				CFArrayAppendValue: <>
+ 1358 		KEXTError: <>
+ 1359 		KEXTDRegisterHelperCallbacks: void (), <./kextd.tproj/KEXTD.c 1779>
+ 1360 			malloc: <>
+ 1361 			HelperInitialize: <>
+ 1362 			HelperFinalize: <>
+ 1363 			DaemonDidFinishLaunching: <>
+ 1364 			DaemonWillTerminate: <>
+ 1365 			BundleAdd: <>
+ 1366 			BundleRemove: <>
+ 1367 			EventOccurred: <>
+ 1368 			ModuleWillLoad: <>
+ 1369 			ModuleWasLoaded: <>
+ 1370 			ModuleLoadError: <>
+ 1371 			CFArrayAppendValue: <>
+ 1372 		KEXTDStartMain: , <./kextd.tproj/KEXTD.c 1541>
+ 1373 			error: 11
+ 1374 			KEXTdaemon: int (), <./kextd.tproj/KEXTD.c 1496>
+ 1375 				semaphore_create: <>
+ 1376 				mach_task_self: <>
+ 1377 				syslog: <>
+ 1378 				task_get_bootstrap_port: <>
+ 1379 				bootstrap_register: <>
+ 1380 				fork: <>
+ 1381 				KEXTdaemonWait: void (), <./kextd.tproj/KEXTD.c 1485>
+ 1382 					semaphore_timedwait: <>
+ 1383 					syslog: <>
+ 1384 				setsid: <>
+ 1385 				chdir: <>
+ 1386 				open: <>
+ 1387 				dup2: <>
+ 1388 				close: <>
+ 1389 			syslog: <>
+ 1390 			KEXTManagerCreate: <>
+ 1391 			logErrorFunction: void (), <./kextd.tproj/KEXTD.c 189>
+ 1392 				syslog: <>
+ 1393 			logMessageFunction: void (), <./kextd.tproj/KEXTD.c 195>
+ 1394 				syslog: <>
+ 1395 			memset: <>
+ 1396 			KERN2KEXTReturn: <>
+ 1397 			IOCatalogueSendData: <>
+ 1398 			signal: <>
+ 1399 			signalhandler: void (), <./kextd.tproj/KEXTD.c 377>
+ 1400 				KEXTDHangup: void (), <./kextd.tproj/KEXTD.c 1313>
+ 1401 					PTLockTakeLock: void (), <./kextd.tproj/PTLock.c 58>
+ 1402 						mutex_lock: <>
+ 1403 						condition_wait: <>
+ 1404 						mutex_unlock: <>
+ 1405 					CFRunLoopSourceSignal: <>
+ 1406 					CFRunLoopWakeUp: <>
+ 1407 					PTLockUnlock: void (), <./kextd.tproj/PTLock.c 70>
+ 1408 						mutex_lock: <>
+ 1409 						condition_signal: <>
+ 1410 						mutex_unlock: <>
+ 1411 			CFRunLoopGetCurrent: <>
+ 1412 			CFRunLoopSourceCreate: <>
+ 1413 			CFRunLoopAddSource: <>
+ 1414 			CFArrayGetCount: <>
+ 1415 			CFArrayGetValueAtIndex: <>
+ 1416 			DaemonDidFinishLaunching: <>
+ 1417 			pthread_attr_init: <>
+ 1418 			pthread_create: <>
+ 1419 			pthread_detach: <>
+ 1420 			IOCatalogueReset: <>
+ 1421 			KEXTDScanPaths: void (), <./kextd.tproj/KEXTD.c 1699>
+ 1422 				error: 11
+ 1423 				CFArrayGetCount: <>
+ 1424 				CFArrayGetValueAtIndex: <>
+ 1425 				CFURLGetString: <>
+ 1426 				CFStringGetCString: <>
+ 1427 				syslog: <>
+ 1428 				KEXTManagerScanPath: <>
+ 1429 				index: <>
+ 1430 				err: 167
+ 1431 				CFURLCreateCopyAppendingPathComponent: <>
+ 1432 				CFSTR: <>
+ 1433 				IOURLCreatePropertyFromResource: <>
+ 1434 				CFRelease: <>
+ 1435 				file: FILE * (), <./ac.tproj/ac.c 125>
+ 1436 					fopen: <>
+ 1437 					err: 167
+ 1438 					strcmp: 38
+ 1439 				PEFExamineFile: int (), <./kextd.tproj/PEFSupport.c 645>
+ 1440 					CFURLGetFileSystemRepresentation: <>
+ 1441 					readFile: int (), <./kextd.tproj/PEFSupport.c 461>
+ 1442 						open: <>
+ 1443 						fstat: <>
+ 1444 						map_fd: <>
+ 1445 						close: <>
+ 1446 					strcat: <>
+ 1447 					CFDataCreateWithBytesNoCopy: <>
+ 1448 					CFPropertyListCreateFromXMLData: <>
+ 1449 					CFDictionaryGetTypeID: <>
+ 1450 					CFGetTypeID: <>
+ 1451 					CFDictionaryGetValue: <>
+ 1452 					CFSTR: <>
+ 1453 					CFArrayGetTypeID: <>
+ 1454 					GetPEFLen: IOByteCount (), <./kextd.tproj/PEFSupport.c 403>
+ 1455 					ExaminePEF: void (), <./kextd.tproj/PEFSupport.c 519>
+ 1456 						err: 167
+ 1457 						CFSTR: <>
+ 1458 						index: <>
+ 1459 						GetSymbolFromPEF: OSStatus (), <./kextd.tproj/PEFSupport.c 270>
+ 1460 							SymbolCompare: Boolean (), <./kextd.tproj/PEFSupport.c 439>
+ 1461 							UnpackPiData: OSErr (), <./kextd.tproj/PEFSupport.c 100>
+ 1462 								delta: long (), <./zdump.tproj/zdump.c 332>
+ 1463 									delta: 1462
+ 1464 									isleap: <>
+ 1465 								NewPtrSys: <>
+ 1466 								PEFGetNextByte: unsigned char (), <./kextd.tproj/PEFSupport.c 52>
+ 1467 								PIOP: <>
+ 1468 								PICNT: <>
+ 1469 								PEFGetCount: unsigned long (), <./kextd.tproj/PEFSupport.c 60>
+ 1470 									PEFGetNextByte: unsigned char (), <./kextd.tproj/PEFSupport.c 52>
+ 1471 									IS_LAST_PICNT_BYTE: <>
+ 1472 									CONCAT_PICNT: <>
+ 1473 								Error: void (), <./nvram.tproj/nvram.c 113>
+ 1474 									fprintf: <>
+ 1475 								memset: <>
+ 1476 								DisposePtr: <>
+ 1477 							DisposePtr: <>
+ 1478 						printf: <>
+ 1479 						strncpy: <>
+ 1480 						CFArrayGetCount: <>
+ 1481 						CFArrayGetValueAtIndex: <>
+ 1482 						CFStringGetTypeID: <>
+ 1483 						CFGetTypeID: <>
+ 1484 						CFStringGetCString: <>
+ 1485 						strcmp: 38
+ 1486 						IOMasterPort: <>
+ 1487 						mach_task_self: <>
+ 1488 						IOServiceGetMatchingServices: <>
+ 1489 						IOServiceNameMatching: <>
+ 1490 						IOIteratorNext: <>
+ 1491 						IOObjectRelease: <>
+ 1492 						IORegistryEntryGetPath: <>
+ 1493 						IORegistryEntryCreateCFProperty: <>
+ 1494 						CFDataGetBytePtr: <>
+ 1495 						CFRelease: <>
+ 1496 						CFDataCreateWithBytesNoCopy: <>
+ 1497 						CFDictionaryCreateMutable: <>
+ 1498 						CFDictionarySetValue: <>
+ 1499 						IORegistryEntryGetChildEntry: <>
+ 1500 						IORegistryEntrySetCFProperties: <>
+ 1501 					CFRelease: <>
+ 1502 					vm_deallocate: <>
+ 1503 					mach_task_self: <>
+ 1504 			CFRunLoopTimerCreate: <>
+ 1505 			CFAbsoluteTimeGetCurrent: <>
+ 1506 			CFRunLoopAddTimer: <>
+ 1507 			CFRelease: <>
+ 1508 			CFRunLoopRun: <>
+ 1509 		KEXTDFree: 1341
+ 1510 		task_get_bootstrap_port: <>
+ 1511 		task_self: <>
+ 1512 		bootstrap_info: <>
+ 1513 		print:  (), <./mach_init.tproj/testServer/testServer.c 34>
+ 1514 			va_start: <>
+ 1515 			vfprintf: <>
+ 1516 			fprintf: <>
+ 1517 			va_end: <>
+ 1518 		bootstrap_look_up: <>
+ 1519 		port_allocate: <>
+ 1520 		bootstrap_subset: <>
+ 1521 		log_boot_servers: void (), <./mach_init.tproj/testServer/boot_subset.c 125>
+ 1522 			bootstrap_info: <>
+ 1523 			printf: <>
+ 1524 		bootstrap_register: <>
+ 1525 		port_deallocate: <>
+ 1526 		bootstrap_check_in: <>
+ 1527 		port_type: <>
+ 1528 		bootstrap_status: <>
+ 1529 		mach_ports_lookup: <>
+ 1530 		service_checkin: <>
+ 1531 		LAST_ELEMENT: <>
+ 1532 		bootstrap_look_up_array: <>
+ 1533 		bootstrap_get_unpriv_port: <>
+ 1534 		init_errlog: void (), <./mach_init.tproj/error_log.c 48>
+ 1535 			close: <>
+ 1536 			freopen: <>
+ 1537 			setbuf: <>
+ 1538 			getdtablesize: <>
+ 1539 			openlog: <>
+ 1540 			setlogmask: <>
+ 1541 			LOG_UPTO: <>
+ 1542 		bootstrap_ports: <>
+ 1543 		kern_error: void (), <./mach_init.tproj/error_log.c 130>
+ 1544 			sprintf: <>
+ 1545 			mach_error_string: <>
+ 1546 			va_start: <>
+ 1547 			do_log: 21
+ 1548 			va_end: <>
+ 1549 		init_lists: void (), <./mach_init.tproj/lists.c 63>
+ 1550 		fatal: void (), <./mach_init.tproj/error_log.c 166>
+ 1551 			va_start: <>
+ 1552 			do_log: 21
+ 1553 			va_end: <>
+ 1554 			exit: <>
+ 1555 		add_init_arg: void (), <./mach_init.tproj/bootstrap.c 352>
+ 1556 			strncat: <>
+ 1557 		log: __private_extern__ void (), <./mach_init.tproj/error_log.c 112>
+ 1558 			va_start: <>
+ 1559 			do_log: 21
+ 1560 			va_end: <>
+ 1561 		init_config: void (), <./mach_init.tproj/parser.c 106>
+ 1562 			fopen: <>
+ 1563 			get_from_conf: int (), <./mach_init.tproj/parser.c 134>
+ 1564 				getc: <>
+ 1565 			error: 11
+ 1566 			get_from_default: int (), <./mach_init.tproj/parser.c 140>
+ 1567 			parse_conf_file: boolean_t (), <./mach_init.tproj/parser.c 159>
+ 1568 				advance_token: void (), <./mach_init.tproj/parser.c 385>
+ 1569 					isspace: <>
+ 1570 					isalpha: <>
+ 1571 					isalnum: <>
+ 1572 					LAST_ELEMENT: <>
+ 1573 					parse_error: void (), <./mach_init.tproj/error_log.c 154>
+ 1574 						sprintf: <>
+ 1575 						va_start: <>
+ 1576 						do_log: 21
+ 1577 						va_end: <>
+ 1578 					keyword_lookup: token_t (), <./mach_init.tproj/parser.c 486>
+ 1579 						STREQ: <>
+ 1580 					isdigit: if (), <./getty.tproj/main.c 450>
+ 1581 				error: 11
+ 1582 				parse_server: boolean_t (), <./mach_init.tproj/parser.c 279>
+ 1583 					advance_token: 1568
+ 1584 					find_init_server: server_t * (), <./mach_init.tproj/lists.c 361>
+ 1585 						FIRST: <>
+ 1586 						IS_END: <>
+ 1587 						NEXT: <>
+ 1588 					parse_error: 1573
+ 1589 					parse_pri: boolean_t (), <./mach_init.tproj/parser.c 358>
+ 1590 						ASSERT: <>
+ 1591 						advance_token: 1568
+ 1592 						parse_error: 1573
+ 1593 					new_server: server_t * (), <./mach_init.tproj/lists.c 72>
+ 1594 						debug: 430
+ 1595 						NEW: <>
+ 1596 						strncpy: <>
+ 1597 						LAST_ELEMENT: <>
+ 1598 					parse_service: boolean_t (), <./mach_init.tproj/parser.c 330>
+ 1599 						ASSERT: <>
+ 1600 						advance_token: 1568
+ 1601 						strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1602 						parse_error: 1573
+ 1603 						lookup_service_by_name: service_t * (), <./mach_init.tproj/lists.c 215>
+ 1604 							FIRST: <>
+ 1605 							IS_END: <>
+ 1606 							NEXT: <>
+ 1607 							STREQ: <>
+ 1608 						strcpy: <>
+ 1609 						new_service: service_t * (), <./mach_init.tproj/lists.c 98>
+ 1610 							NEW: <>
+ 1611 							strncpy: <>
+ 1612 							LAST_ELEMENT: <>
+ 1613 							mach_port_request_notification: <>
+ 1614 							mach_task_self: <>
+ 1615 							debug: 430
+ 1616 							error: 11
+ 1617 							mach_error_string: <>
+ 1618 				parse_service: 1598
+ 1619 				parse_self: boolean_t (), <./mach_init.tproj/parser.c 247>
+ 1620 					ASSERT: <>
+ 1621 					advance_token: 1568
+ 1622 					parse_pri: 1589
+ 1623 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1624 					parse_error: 1573
+ 1625 					lookup_service_by_name: 1603
+ 1626 					strcpy: <>
+ 1627 					new_service: 1609
+ 1628 				parse_error: 1573
+ 1629 			init_lists: 1549
+ 1630 			fatal: 1550
+ 1631 		find_init_server: 1584
+ 1632 		mach_port_allocate: <>
+ 1633 		kern_fatal: void (), <./mach_init.tproj/error_log.c 176>
+ 1634 			sprintf: <>
+ 1635 			mach_error_string: <>
+ 1636 			va_start: <>
+ 1637 			do_log: 21
+ 1638 			va_end: <>
+ 1639 			exit: <>
+ 1640 		mach_port_insert_right: <>
+ 1641 		task_set_bootstrap_port: <>
+ 1642 		mach_port_request_notification: <>
+ 1643 		unix_fatal: void (), <./mach_init.tproj/error_log.c 189>
+ 1644 			sprintf: <>
+ 1645 			strerror: 148
+ 1646 			va_start: <>
+ 1647 			do_log: 21
+ 1648 			va_end: <>
+ 1649 			exit: <>
+ 1650 		init_process: <>
+ 1651 		init_ports: void (), <./mach_init.tproj/bootstrap.c 384>
+ 1652 			mach_task_self: <>
+ 1653 			task_get_bootstrap_port: <>
+ 1654 			kern_fatal: 1633
+ 1655 			task_set_bootstrap_port: <>
+ 1656 			mach_port_allocate: <>
+ 1657 			mach_port_request_notification: <>
+ 1658 			mach_port_move_member: <>
+ 1659 			mach_port_insert_right: <>
+ 1660 			bootstrap_register: <>
+ 1661 			FIRST: <>
+ 1662 			IS_END: <>
+ 1663 			NEXT: <>
+ 1664 			debug: 430
+ 1665 			port_set_backup: <>
+ 1666 			task_self: <>
+ 1667 			new_server: 1593
+ 1668 			info: 333
+ 1669 			fatal: 1550
+ 1670 		FIRST: <>
+ 1671 		IS_END: <>
+ 1672 		NEXT: <>
+ 1673 		start_server: void (), <./mach_init.tproj/bootstrap.c 498>
+ 1674 			msg_destroy_port: void (), <./mach_init.tproj/bootstrap.c 938>
+ 1675 				mach_task_self: <>
+ 1676 				mig_get_reply_port: <>
+ 1677 				lookup_service_by_port: service_t * (), <./mach_init.tproj/lists.c 289>
+ 1678 					FIRST: <>
+ 1679 					IS_END: <>
+ 1680 					NEXT: <>
+ 1681 				lookup_server_by_port: server_t * (), <./mach_init.tproj/lists.c 346>
+ 1682 					FIRST: <>
+ 1683 					IS_END: <>
+ 1684 					NEXT: <>
+ 1685 				lookup_bootstrap_by_port: bootstrap_info_t * (), <./mach_init.tproj/lists.c 183>
+ 1686 					FIRST: <>
+ 1687 					IS_END: <>
+ 1688 					NEXT: <>
+ 1689 				lookup_bootstrap_req_by_port: bootstrap_info_t * (), <./mach_init.tproj/lists.c 199>
+ 1690 					FIRST: <>
+ 1691 					IS_END: <>
+ 1692 					NEXT: <>
+ 1693 				debug: 430
+ 1694 				mach_port_deallocate: <>
+ 1695 			mach_port_allocate: <>
+ 1696 			mach_task_self: <>
+ 1697 			info: 333
+ 1698 			kern_fatal: 1633
+ 1699 			mach_port_insert_right: <>
+ 1700 			mach_port_move_member: <>
+ 1701 			task_for_pid: <>
+ 1702 			unblock_init: void (), <./mach_init.tproj/bootstrap.c 577>
+ 1703 				MACH_MSGH_BITS: <>
+ 1704 				mach_msg: <>
+ 1705 				kern_fatal: 1633
+ 1706 				debug: 430
+ 1707 			task_set_bootstrap_port: <>
+ 1708 			fork: <>
+ 1709 			unix_error: void (), <./mach_init.tproj/error_log.c 142>
+ 1710 				sprintf: <>
+ 1711 				strerror: 148
+ 1712 				va_start: <>
+ 1713 				do_log: 21
+ 1714 				va_end: <>
+ 1715 			exec_server: void (), <./mach_init.tproj/bootstrap.c 596>
+ 1716 				log: 1557
+ 1717 				getpid: <>
+ 1718 				argvize: char ** (), <./mach_init.tproj/bootstrap.c 646>
+ 1719 					isspace: <>
+ 1720 					NELEM: <>
+ 1721 					END_OF: <>
+ 1722 				getdtablesize: <>
+ 1723 				task_priority: <>
+ 1724 				mach_task_self: <>
+ 1725 				kern_error: 1543
+ 1726 				close_errlog: void (), <./mach_init.tproj/error_log.c 72>
+ 1727 					closelog: <>
+ 1728 				debug: 430
+ 1729 				init_process: <>
+ 1730 				close: <>
+ 1731 				open: <>
+ 1732 				ioctl: <>
+ 1733 				execv: <>
+ 1734 				unix_error: 1709
+ 1735 			exit: <>
+ 1736 		task_priority: <>
+ 1737 		server_loop: void (), <./mach_init.tproj/bootstrap.c 687>
+ 1738 			memset: <>
+ 1739 			mach_msg_overwrite_trap: <>
+ 1740 			kern_error: 1543
+ 1741 			debug: 430
+ 1742 			info: 333
+ 1743 			lookup_server_by_task_port: server_t * (), <./mach_init.tproj/lists.c 304>
+ 1744 				FIRST: <>
+ 1745 				IS_END: <>
+ 1746 				NEXT: <>
+ 1747 			error: 11
+ 1748 			log: 1557
+ 1749 			start_server: 1673
+ 1750 			lookup_bootstrap_req_by_port: 1689
+ 1751 			delete_bootstrap: void (), <./mach_init.tproj/lists.c 319>
+ 1752 				ASSERT: <>
+ 1753 				destroy_services: void (), <./mach_init.tproj/lists.c 255>
+ 1754 					FIRST: <>
+ 1755 					IS_END: <>
+ 1756 					NEXT: <>
+ 1757 					unlink_service: void (), <./mach_init.tproj/lists.c 237>
+ 1758 						ASSERT: <>
+ 1759 					log: 1557
+ 1760 					msg_destroy_port: 1674
+ 1761 					delete_service: void (), <./mach_init.tproj/lists.c 247>
+ 1762 						unlink_service: 1757
+ 1763 						free: <>
+ 1764 					error: 11
+ 1765 				FIRST: <>
+ 1766 				IS_END: <>
+ 1767 				NEXT: <>
+ 1768 				delete_bootstrap: 1751
+ 1769 				debug: 430
+ 1770 				mach_port_destroy: <>
+ 1771 				mach_task_self: <>
+ 1772 				mach_port_deallocate: <>
+ 1773 				free: <>
+ 1774 			lookup_service_by_port: 1677
+ 1775 			mach_port_deallocate: <>
+ 1776 			mach_task_self: <>
+ 1777 			delete_service: 1761
+ 1778 			msg_destroy_port: 1674
+ 1779 			mach_port_allocate: <>
+ 1780 			kern_fatal: 1633
+ 1781 			mach_port_insert_right: <>
+ 1782 			port_set_backup: <>
+ 1783 			ASSERT: <>
+ 1784 			canReceive: boolean_t (), <./mach_init.tproj/bootstrap.c 960>
+ 1785 				mach_port_type: <>
+ 1786 				mach_task_self: <>
+ 1787 				kern_error: 1543
+ 1788 			bootstrap_server: <>
+ 1789 			mach_msg: <>
+ 1790 			msg_destroy: void (), <./mach_init.tproj/bootstrap.c 883>
+ 1791 				msg_destroy_port: 1674
+ 1792 				MSG_TYPE_PORT_ANY: <>
+ 1793 				vm_deallocate: <>
+ 1794 				mach_task_self: <>
+ 1795 				kern_error: 1543
+ 1796 		wait_for_go: void (), <./mach_init.tproj/bootstrap.c 359>
+ 1797 			mach_msg: <>
+ 1798 			kern_error: 1543
+ 1799 			task_set_bootstrap_port: <>
+ 1800 			mach_task_self: <>
+ 1801 		exec_server: 1715
+ 1802 		timedout: void (), <./login.tproj/login.c 511>
+ 1803 			fprintf: <>
+ 1804 			exit: <>
+ 1805 		strchr: <>
+ 1806 		strcasecmp: if (), <./shutdown.tproj/shutdown.c 386>
+ 1807 		getdtablesize: <>
+ 1808 		getloginname: void (), <./login.tproj/login.c 444>
+ 1809 			printf: <>
+ 1810 			getchar: <>
+ 1811 			badlogin: void (), <./login.tproj/login.c 568>
+ 1812 				syslog: <>
+ 1813 			exit: <>
+ 1814 			fprintf: <>
+ 1815 		strncmp: <>
+ 1816 		badlogin: 1811
+ 1817 		getpass: <>
+ 1818 		klogin: int (), <./login.tproj/klogin.c 84>
+ 1819 			strcmp: 38
+ 1820 			krb_get_lrealm: <>
+ 1821 			sprintf: <>
+ 1822 			krb_set_tkt_string: <>
+ 1823 			setuid: <>
+ 1824 			warnx: <>
+ 1825 			krb_get_pw_in_tkt: <>
+ 1826 			syslog: <>
+ 1827 			dest_tkt: <>
+ 1828 			chown: <>
+ 1829 			strncpy: <>
+ 1830 			krb_mk_req: <>
+ 1831 			gethostbyname: <>
+ 1832 			memmove: <>
+ 1833 			krb_rd_req: <>
+ 1834 		crypt: <>
+ 1835 		memset: <>
+ 1836 		rootterm: int (), <./login.tproj/login.c 473>
+ 1837 			getttynam: <>
+ 1838 		sleepexit: void (), <./login.tproj/login.c 602>
+ 1839 			sleep: <>
+ 1840 			exit: <>
+ 1841 		endpwent: <>
+ 1842 		checknologin: void (), <./login.tproj/login.c 520>
+ 1843 			open: <>
+ 1844 			read: <>
+ 1845 			write: <>
+ 1846 			fileno: <>
+ 1847 			sleepexit: 1838
+ 1848 		chdir: <>
+ 1849 		access: <>
+ 1850 		gettimeofday: <>
+ 1851 		login: <>
+ 1852 		dolastlog: void (), <./login.tproj/login.c 533>
+ 1853 			open: <>
+ 1854 			lseek: <>
+ 1855 			read: <>
+ 1856 			printf: <>
+ 1857 			ctime: <>
+ 1858 			memset: <>
+ 1859 			time: <>
+ 1860 			strncpy: <>
+ 1861 			write: <>
+ 1862 			close: <>
+ 1863 		getgrnam: <>
+ 1864 		initgroups: <>
+ 1865 		setenv: <>
+ 1866 		stypeof: char * (), <./login.tproj/login.c 593>
+ 1867 			getttynam: <>
+ 1868 		motd: void (), <./login.tproj/login.c 484>
+ 1869 			open: <>
+ 1870 			signal: <>
+ 1871 			sigint: void (), <./login.tproj/login.c 502>
+ 1872 				longjmp: <>
+ 1873 			setjmp: <>
+ 1874 			read: <>
+ 1875 			write: <>
+ 1876 			fileno: <>
+ 1877 			close: <>
+ 1878 		setuid: <>
+ 1879 		execlp: <>
+ 1880 		get_host_priv: mach_port_t (), <./top.tproj/top.c 387>
+ 1881 		get_host_port: mach_port_t (), <./top.tproj/top.c 392>
+ 1882 			mach_host_self: <>
+ 1883 		bzero: <>
+ 1884 		host_page_size: <>
+ 1885 		erase: <>
+ 1886 		printw: <>
+ 1887 		kread: 1126
+ 1888 		IOServiceGetMatchingServices: <>
+ 1889 		IOServiceMatching: <>
+ 1890 		getCPU: 1171
+ 1891 		sample_sc: void (), <./fs_usage.tproj/fs_usage.c 637>
+ 1892 			get_bufinfo: void (), <./fs_usage.tproj/fs_usage.c 568>
+ 1893 				sysctl: <>
+ 1894 				quit: 300
+ 1895 			set_enable: 298
+ 1896 			sysctl: <>
+ 1897 			quit: 300
+ 1898 			set_remove: 302
+ 1899 			set_init: 323
+ 1900 			set_pidcheck: 309
+ 1901 			find_thread: struct th_info (), <./fs_usage.tproj/fs_usage.c 455>
+ 1902 			memset: <>
+ 1903 			set_standard_policy: 1073
+ 1904 			fprintf: <>
+ 1905 			ctime: <>
+ 1906 			find_thread_map: kd_threadmap * (), <./fs_usage.tproj/fs_usage.c 1827>
+ 1907 			log_decrementer: kd_buf * (), <./latency.tproj/latency.c 1681>
+ 1908 				find_thread_map: 1906
+ 1909 				sprintf: <>
+ 1910 				ctime: <>
+ 1911 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1912 				memset: <>
+ 1913 				fprintf: <>
+ 1914 				find_thread: struct th_info (), <./fs_usage.tproj/fs_usage.c 455>
+ 1915 				strcpy: <>
+ 1916 				pc_to_string: char * (), <./latency.tproj/latency.c 2063>
+ 1917 					sprintf: <>
+ 1918 					memcpy: <>
+ 1919 				strcmp: 38
+ 1920 				enter_syscall: void (), <./fs_usage.tproj/fs_usage.c 1396>
+ 1921 					find_code: char * (), <./latency.tproj/latency.c 1159>
+ 1922 					find_thread: struct th_info (), <./fs_usage.tproj/fs_usage.c 455>
+ 1923 					strcmp: 38
+ 1924 					fprintf: <>
+ 1925 					pc_to_string: 1916
+ 1926 					find_thread_map: 1906
+ 1927 					time: <>
+ 1928 					printf: <>
+ 1929 					ctime: <>
+ 1930 					sprintf: <>
+ 1931 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1932 					memset: <>
+ 1933 				exit_syscall: void (), <./fs_usage.tproj/fs_usage.c 1604>
+ 1934 					find_thread: struct th_info (), <./fs_usage.tproj/fs_usage.c 455>
+ 1935 					fprintf: <>
+ 1936 					find_code: 1921
+ 1937 					find_thread_map: 1906
+ 1938 					time: <>
+ 1939 					printf: <>
+ 1940 					ctime: <>
+ 1941 				print_entry: void (), <./latency.tproj/latency.c 1617>
+ 1942 					fprintf: <>
+ 1943 					find_code: 1921
+ 1944 			sprintf: <>
+ 1945 			strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 1946 			strcpy: <>
+ 1947 			pc_to_string: 1916
+ 1948 			strcmp: 38
+ 1949 			fflush: <>
+ 1950 			set_time_constraint_policy: 1068
+ 1951 			printf: <>
+ 1952 		usage: void (), <./kmodunload.tproj/kmodunload.c 112>
+ 1953 			fprintf: <>
+ 1954 			exit: <>
+ 1955 		machwarn: void (), <./kmodunload.tproj/kmodunload.c 71>
+ 1956 			fprintf: <>
+ 1957 			mach_error_string: <>
+ 1958 		macherr: void (), <./kmodunload.tproj/kmodunload.c 78>
+ 1959 			fprintf: <>
+ 1960 			mach_error_string: <>
+ 1961 			exit: <>
+ 1962 		v_printf: <>
+ 1963 		stop_module: void (), <./kmodunload.tproj/kmodunload.c 88>
+ 1964 			kmod_control: <>
+ 1965 			macherr: 1958
+ 1966 			v_printf: <>
+ 1967 		unload_module: void (), <./kmodunload.tproj/kmodunload.c 101>
+ 1968 			kmod_destroy: <>
+ 1969 			macherr: 1958
+ 1970 			v_printf: <>
+ 1971 		FatalError: void (), <./nvram.tproj/nvram.c 125>
+ 1972 			fprintf: <>
+ 1973 			exit: <>
+ 1974 		IORegistryEntryFromPath: <>
+ 1975 		PrintOFVariables: void (), <./nvram.tproj/nvram.c 388>
+ 1976 			IORegistryEntryCreateCFProperties: <>
+ 1977 			FatalError: 1971
+ 1978 			CFDictionaryApplyFunction: <>
+ 1979 			PrintOFVariable: void (), <./nvram.tproj/nvram.c 407>
+ 1980 				CFStringGetCStringPtr: <>
+ 1981 				CFGetTypeID: <>
+ 1982 				CFBooleanGetTypeID: <>
+ 1983 				CFBooleanGetValue: <>
+ 1984 				CFNumberGetTypeID: <>
+ 1985 				CFNumberGetValue: <>
+ 1986 				sprintf: <>
+ 1987 				CFStringGetTypeID: <>
+ 1988 				CFDataGetTypeID: <>
+ 1989 				CFDataGetLength: <>
+ 1990 				malloc: <>
+ 1991 				CFDataGetBytePtr: <>
+ 1992 				isprint: <>
+ 1993 				printf: <>
+ 1994 				free: <>
+ 1995 			CFRelease: <>
+ 1996 		ParseFile: void (), <./nvram.tproj/nvram.c 174>
+ 1997 			fopen: <>
+ 1998 			FatalError: 1971
+ 1999 			getc: <>
+ 2000 			isspace: <>
+ 2001 			Error: 1473
+ 2002 			SetOFVariable: kern_return_t (), <./nvram.tproj/nvram.c 352>
+ 2003 				CFStringCreateWithCString: <>
+ 2004 				FatalError: 1971
+ 2005 				IORegistryEntryCreateCFProperty: <>
+ 2006 				CFGetTypeID: <>
+ 2007 				CFRelease: <>
+ 2008 				CFDataGetTypeID: <>
+ 2009 				ConvertValueToCFTypeRef: CFTypeRef (), <./nvram.tproj/nvram.c 467>
+ 2010 					CFBooleanGetTypeID: <>
+ 2011 					strcmp: 38
+ 2012 					CFNumberGetTypeID: <>
+ 2013 					strtol: <>
+ 2014 					CFNumberCreate: <>
+ 2015 					CFStringGetTypeID: <>
+ 2016 					CFStringCreateWithCString: <>
+ 2017 					CFDataGetTypeID: <>
+ 2018 					strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 2019 					ishexnumber: <>
+ 2020 					toupper: <>
+ 2021 					CFDataCreateWithBytesNoCopy: <>
+ 2022 				IORegistryEntrySetCFProperty: <>
+ 2023 		UsageMessage: void (), <./nvram.tproj/nvram.c 139>
+ 2024 			Error: 1473
+ 2025 			printf: <>
+ 2026 			exit: <>
+ 2027 		SetOrGetOFVariable: void (), <./nvram.tproj/nvram.c 284>
+ 2028 			SetOFVariable: 2002
+ 2029 			FatalError: 1971
+ 2030 			GetOFVariable: kern_return_t (), <./nvram.tproj/nvram.c 332>
+ 2031 				CFStringCreateWithCString: <>
+ 2032 				FatalError: 1971
+ 2033 				IORegistryEntryCreateCFProperty: <>
+ 2034 			PrintOFVariable: 1979
+ 2035 			CFRelease: <>
+ 2036 		IOObjectRelease: <>
+ 2037 		abs: <>
+ 2038 		CFArrayCreateMutable: <>
+ 2039 		usage: void (), <./kextload.tproj/kextload_main.c 47>
+ 2040 			fprintf: <>
+ 2041 			exit: <>
+ 2042 		CFStringCreateWithCString: <>
+ 2043 		CFArrayAppendValue: <>
+ 2044 		CFArrayInsertValueAtIndex: <>
+ 2045 		URLCreateAbsoluteWithPath: CFURLRef (), <./kextload.tproj/kextload_main.c 122>
+ 2046 			CFURLCreateWithFileSystemPath: <>
+ 2047 			CFURLCopyAbsoluteURL: <>
+ 2048 			CFRelease: <>
+ 2049 			CFURLGetString: <>
+ 2050 			CFURLCreateWithString: <>
+ 2051 		InitManager: Boolean (), <./kextload.tproj/kextload_main.c 243>
+ 2052 			error: 11
+ 2053 			authenticate: KEXTReturn (), <./kextload.tproj/kextload_main.c 139>
+ 2054 				KEXTManagerAuthenticateURL: <>
+ 2055 				CFURLCopyAbsoluteURL: <>
+ 2056 				CFURLGetString: <>
+ 2057 				CFStringCreateWithFormat: <>
+ 2058 				CFSTR: <>
+ 2059 				CFShow: <>
+ 2060 				CFRelease: <>
+ 2061 			mWillLoad: Boolean (), <./kextload.tproj/kextload_main.c 173>
+ 2062 				KEXTModuleGetProperty: <>
+ 2063 				CFSTR: <>
+ 2064 				CFStringCreateWithFormat: <>
+ 2065 				CFShow: <>
+ 2066 				CFRelease: <>
+ 2067 			mWasLoaded: void (), <./kextload.tproj/kextload_main.c 191>
+ 2068 				KEXTModuleGetProperty: <>
+ 2069 				CFSTR: <>
+ 2070 				CFStringCreateWithFormat: <>
+ 2071 				CFShow: <>
+ 2072 				CFRelease: <>
+ 2073 			mLoadError: KEXTReturn (), <./kextload.tproj/kextload_main.c 207>
+ 2074 				KEXTModuleGetProperty: <>
+ 2075 				CFSTR: <>
+ 2076 				CFStringCreateWithFormat: <>
+ 2077 				CFShow: <>
+ 2078 				CFRelease: <>
+ 2079 				KEXTError: <>
+ 2080 			KEXTManagerCreate: <>
+ 2081 			printError: void (), <./kextload.tproj/kextload_main.c 62>
+ 2082 				fprintf: <>
+ 2083 			printMessage: void (), <./kextload.tproj/kextload_main.c 68>
+ 2084 				fprintf: <>
+ 2085 			fprintf: <>
+ 2086 			CFArrayGetCount: <>
+ 2087 			CFArrayGetValueAtIndex: <>
+ 2088 			URLCreateAbsoluteWithPath: 2045
+ 2089 			KEXTManagerScanPath: <>
+ 2090 			CFRelease: <>
+ 2091 			CFStringCreateWithFormat: <>
+ 2092 			CFSTR: <>
+ 2093 			KEXTError: <>
+ 2094 		KEXTManagerAddBundle: <>
+ 2095 		KEXTManagerGetBundleWithURL: <>
+ 2096 		LoadAllPersonalities: KEXTReturn (), <./kextload.tproj/kextload_main.c 422>
+ 2097 			error: 11
+ 2098 			KEXTManagerCopyConfigsForBundle: <>
+ 2099 			KEXTManagerCopyPersonalitiesForBundle: <>
+ 2100 			CFArrayCreateMutable: <>
+ 2101 			CFRangeMake: <>
+ 2102 			CFArrayGetCount: <>
+ 2103 			CFArrayApplyFunction: <>
+ 2104 			PromptForLoading: void (), <./kextload.tproj/kextload_main.c 284>
+ 2105 				KEXTPersonalityGetProperty: <>
+ 2106 				CFSTR: <>
+ 2107 				CFStringCreateWithFormat: <>
+ 2108 				Prompt: Boolean (), <./kextload.tproj/kextload_main.c 76>
+ 2109 					CFStringGetLength: <>
+ 2110 					malloc: <>
+ 2111 					CFStringGetCString: <>
+ 2112 					free: <>
+ 2113 					printf: <>
+ 2114 					fflush: <>
+ 2115 					fscanf: <>
+ 2116 					fgetc: <>
+ 2117 					tolower: <>
+ 2118 				CFRelease: <>
+ 2119 				CFArrayAppendValue: <>
+ 2120 			CFRelease: <>
+ 2121 			ArrayGetModuleList: void (), <./kextload.tproj/kextload_main.c 312>
+ 2122 				error: 11
+ 2123 				KEXTPersonalityGetProperty: <>
+ 2124 				CFSTR: <>
+ 2125 				CFStringCreateWithFormat: <>
+ 2126 				CFShow: <>
+ 2127 				CFRelease: <>
+ 2128 				Prompt: 2108
+ 2129 				KEXTManagerGetModule: <>
+ 2130 				CFRangeMake: <>
+ 2131 				CFArrayGetCount: <>
+ 2132 				CFArrayContainsValue: <>
+ 2133 				CFArrayAppendValue: <>
+ 2134 			ArrayLoadMods: void (), <./kextload.tproj/kextload_main.c 362>
+ 2135 				error: 11
+ 2136 				KEXTModuleGetProperty: <>
+ 2137 				CFSTR: <>
+ 2138 				CFStringCreateWithFormat: <>
+ 2139 				Prompt: 2108
+ 2140 				CFRelease: <>
+ 2141 				KEXTManagerLoadModule: <>
+ 2142 				KEXTError: <>
+ 2143 			KEXTManagerLoadPersonalities: <>
+ 2144 		LoadAllModules: KEXTReturn (), <./kextload.tproj/kextload_main.c 398>
+ 2145 			error: 11
+ 2146 			KEXTManagerCopyModulesForBundle: <>
+ 2147 			CFRangeMake: <>
+ 2148 			CFArrayGetCount: <>
+ 2149 			CFArrayApplyFunction: <>
+ 2150 			ArrayLoadMods: 2134
+ 2151 			CFRelease: <>
+ 2152 		KEXTManagerRelease: <>
+ 2153 		get: void (), <./makekey.tproj/makekey.c 93>
+ 2154 		write: <>
+ 2155 		debuginit: void (), <./sysctl.tproj/sysctl.c 537>
+ 2156 			sysctl: <>
+ 2157 		vfsinit: void (), <./sysctl.tproj/sysctl.c 562>
+ 2158 			sysctl: <>
+ 2159 			malloc: <>
+ 2160 			memset: <>
+ 2161 			perror: <>
+ 2162 			free: <>
+ 2163 			strcat: <>
+ 2164 			strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 2165 		listall: void (), <./sysctl.tproj/sysctl.c 224>
+ 2166 			strcpy: <>
+ 2167 			strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 2168 			old_parse: void (), <./sysctl.tproj/sysctl.c 250>
+ 2169 				snprintf: <>
+ 2170 				strchr: <>
+ 2171 				fprintf: <>
+ 2172 				exit: <>
+ 2173 				isspace: <>
+ 2174 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 2175 				findname: int (), <./sysctl.tproj/sysctl.c 606>
+ 2176 					strsep: <>
+ 2177 					fprintf: <>
+ 2178 					strcmp: 38
+ 2179 				vfsinit: 2157
+ 2180 				debuginit: 2155
+ 2181 				listall: 2165
+ 2182 				sysctl: <>
+ 2183 				getloadavg: <>
+ 2184 				perror: <>
+ 2185 				strtoul: <>
+ 2186 				atoi: <>
+ 2187 				sscanf: <>
+ 2188 				ctime: <>
+ 2189 				devname: <>
+ 2190 		sysctl_all: int (), <./sysctl.tproj/sysctl.c 1011>
+ 2191 			memcpy: <>
+ 2192 			sysctl: <>
+ 2193 			err: 167
+ 2194 			show_var: int (), <./sysctl.tproj/sysctl.c 888>
+ 2195 				memcpy: <>
+ 2196 				sysctl: <>
+ 2197 				err: 167
+ 2198 				alloca: <>
+ 2199 				fwrite: <>
+ 2200 				printf: <>
+ 2201 				strcmp: 38
+ 2202 				S_clockinfo: int (), <./sysctl.tproj/sysctl.c 765>
+ 2203 					err: 167
+ 2204 					printf: <>
+ 2205 				S_timeval: int (), <./sysctl.tproj/sysctl.c 791>
+ 2206 					err: 167
+ 2207 					printf: <>
+ 2208 					strdup: <>
+ 2209 					ctime: <>
+ 2210 					fputs: <>
+ 2211 				S_loadavg: int (), <./sysctl.tproj/sysctl.c 776>
+ 2212 					err: 167
+ 2213 					printf: <>
+ 2214 				T_dev_t: int (), <./sysctl.tproj/sysctl.c 811>
+ 2215 					err: 167
+ 2216 					minor: <>
+ 2217 					printf: <>
+ 2218 					major: <>
+ 2219 			putchar: <>
+ 2220 		parse: void (), <./sysctl.tproj/sysctl.c 649>
+ 2221 			snprintf: <>
+ 2222 			strchr: <>
+ 2223 			errx: <>
+ 2224 			isspace: <>
+ 2225 			strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 2226 			usage: 3
+ 2227 			name2oid: int (), <./sysctl.tproj/sysctl.c 837>
+ 2228 				sysctl: <>
+ 2229 				strlen: switch (), <./shutdown.tproj/shutdown.c 414>
+ 2230 			old_parse: 2168
+ 2231 			oidfmt: int (), <./sysctl.tproj/sysctl.c 855>
+ 2232 				memcpy: <>
+ 2233 				sysctl: <>
+ 2234 				err: 167
+ 2235 				strcpy: <>
+ 2236 			err: 167
+ 2237 			sysctl_all: 2190
+ 2238 			show_var: 2194
+ 2239 			putchar: <>
+ 2240 			strtoul: <>
+ 2241 			strtol: <>
+ 2242 			sscanf: <>
+ 2243 			sysctl: <>
+ 2244 			warn: <>
+ 2245 			printf: <>
+ 2246 		rpid:  (), <./ktrace.tproj/ktrace.c 165>
+ 2247 			warnx: <>
+ 2248 			usage: 3
+ 2249 			atoi: <>
+ 2250 		getpoints:  (), <./ktrace.tproj/subr.c 68>
+ 2251 		no_ktrace: void (), <./ktrace.tproj/ktrace.c 190>
+ 2252 			fprintf: <>
+ 2253 			exit: <>
+ 2254 		ktrace: <>
+ 2255 		execvp: <>
+ 2256 		INITIALIZE: <>
+ 2257 		setlocale: <>
+ 2258 		bindtextdomain: <>
+ 2259 		textdomain: <>
+ 2260 		isleap: <>
+ 2261 		show: void (), <./ac.tproj/ac.c 313>
+ 2262 		abbr: char * (), <./zdump.tproj/zdump.c 381>
+ 2263 		delta: 1462
+ 2264 		hunt: time_t (), <./zdump.tproj/zdump.c 295>
+ 2265 			localtime: <>
+ 2266 			strncpy: <>
+ 2267 			abbr: 2262
+ 2268 			delta: 1462
+ 2269 			strcmp: 38
+ 2270 			show: void (), <./ac.tproj/ac.c 313>
+ 2271 		ferror: if (), <./zic.tproj/zic.c 872>
+ 2272 		setboundaries: <>
+ 2273 		infile: <>
+ 2274 		adjleap: <>
+ 2275 		associate: <>
+ 2276 		outzone: <>
+ 2277 		dolink: <>
+ 2278 		setlinebuf: <>
+ 2279 		sscanf: <>
+ 2280 		snapshot: void (), <./vm_stat.tproj/vm_stat.c 129>
+ 2281 			get_stats: void (), <./vm_stat.tproj/vm_stat.c 185>
+ 2282 				host_statistics: <>
+ 2283 				fprintf: <>
+ 2284 				exit: <>
+ 2285 			printf: <>
+ 2286 			pstat: void (), <./vm_stat.tproj/vm_stat.c 151>
+ 2287 				printf: <>
+ 2288 		print_stats: void (), <./vm_stat.tproj/vm_stat.c 159>
+ 2289 			banner: void (), <./vm_stat.tproj/vm_stat.c 108>
+ 2290 				get_stats: 2281
+ 2291 				printf: <>
+ 2292 				bzero: <>
+ 2293 			get_stats: 2281
+ 2294 			printf: <>

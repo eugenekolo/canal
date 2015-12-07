@@ -1,0 +1,4436 @@
+    1 	main: int (), <./nfsd.tproj/nfsd.c 148>
+    2 		getopt: <>
+    3 		atoi: <>
+    4 		usage:  (), <./ypcat.tproj/ypcat.c 86>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 			printf: <>
+    8 			syslog: <>
+    9 		pmapdump: void (), <./rpcinfo.tproj/rpcinfo.c 498>
+   10 		udpping: void (), <./rpcinfo.tproj/rpcinfo.c 209>
+   11 			usage: 4
+   12 			exit: <>
+   13 			getprognum: u_long (), <./rpcinfo.tproj/rpcinfo.c 642>
+   14 				isalpha: <>
+   15 				getrpcbyname: <>
+   16 				fprintf: <>
+   17 				exit: <>
+   18 				atoi: <>
+   19 			get_inet_address: void (), <./rpcinfo.tproj/rpcinfo.c 674>
+   20 				bzero: <>
+   21 				inet_addr: <>
+   22 				gethostbyname: <>
+   23 				fprintf: <>
+   24 				exit: <>
+   25 				bcopy: <>
+   26 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+   27 			perror: <>
+   28 			htons: <>
+   29 			clntudp_create: <>
+   30 			clnt_pcreateerror: <>
+   31 			printf: <>
+   32 			clnt_call: <>
+   33 			clnt_geterr: <>
+   34 			pstatus: <>
+   35 			clnt_destroy: <>
+   36 			getvers: u_long (), <./rpcinfo.tproj/rpcinfo.c 664>
+   37 				atoi: <>
+   38 			close: <>
+   39 		tcpping: void (), <./rpcinfo.tproj/rpcinfo.c 345>
+   40 			usage: 4
+   41 			exit: <>
+   42 			getprognum: 13
+   43 			get_inet_address: 19
+   44 			htons: <>
+   45 			clnttcp_create: <>
+   46 			clnt_pcreateerror: <>
+   47 			printf: <>
+   48 			clnt_call: <>
+   49 			clnt_geterr: <>
+   50 			pstatus: <>
+   51 			clnt_destroy: <>
+   52 			close: <>
+   53 			getvers: 36
+   54 		brdcst: void (), <./rpcinfo.tproj/rpcinfo.c 585>
+   55 		deletereg: void (), <./rpcinfo.tproj/rpcinfo.c 609>
+   56 		retry: void (), <./inetd.tproj/inetd.c 619>
+   57 			setup: void (), <./inetd.tproj/inetd.c 631>
+   58 				socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+   59 				fprintf: <>
+   60 				strerror: <>
+   61 				syslog: <>
+   62 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+   63 				turnon: <>
+   64 				bind: <>
+   65 				sockaddr: <>
+   66 				close: <>
+   67 				alarm: <>
+   68 				listen: <>
+   69 				FD_SET: <>
+   70 		openlog: <>
+   71 		setlogmask: <>
+   72 		LOG_UPTO: <>
+   73 		getservbyname: <>
+   74 		fprintf: <>
+   75 		exit: <>
+   76 		socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+   77 		shutdown: <>
+   78 		getsocket: void (), <./arp.tproj/arp.c 187>
+   79 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+   80 			perror: <>
+   81 			syslog: <>
+   82 			setsockopt: <>
+   83 			close: <>
+   84 			fprintf: <>
+   85 			bind: <>
+   86 			sockaddr: <>
+   87 			fcntl: <>
+   88 			exit: <>
+   89 		strcmp: else if (), <./telnet.tproj/commands.c 1033>
+   90 		daemon: <>
+   91 		traceon: void (), <./timed.tproj/timed.tproj/master.c 866>
+   92 		bumploglevel:  (), <./routed.tproj/trace.c 175>
+   93 			gettimeofday: <>
+   94 			fprintf: <>
+   95 			ctime: <>
+   96 			fflush: <>
+   97 		gettimeofday: <>
+   98 		rtinit:  (), <./routed.tproj/tables.c 372>
+   99 		ifinit:  (), <./routed.tproj/startup.c 128>
+  100 		gwkludge:  (), <./routed.tproj/startup.c 396>
+  101 		rtdefault:  (), <./routed.tproj/tables.c 364>
+  102 		htons: <>
+  103 		htonl: <>
+  104 		toall:  (), <./routed.tproj/output.c 71>
+  105 			sockaddr: <>
+  106 		sndmsg:  (), <./routed.tproj/output.c 96>
+  107 			TRACE_OUTPUT: <>
+  108 		signal: <>
+  109 		timer: void (), <./tftpd.tproj/tftpd.c 442>
+  110 			gettimeofday: <>
+  111 			ifinit:  (), <./routed.tproj/startup.c 128>
+  112 			rtdelete: <>
+  113 			rtchange: <>
+  114 			toall: 104
+  115 			exit: <>
+  116 			longjmp: <>
+  117 		rtdeleteall:  (), <./routed.tproj/tables.c 328>
+  118 		sigtrace: void (), <./routed.tproj/trace.c 155>
+  119 			traceoff: void (), <./timed.tproj/timed.tproj/master.c 884>
+  120 				get_goodgroup: void (), <./timed.tproj/timed.tproj/timed.c 919>
+  121 					times: <>
+  122 					free: <>
+  123 					innetgr: <>
+  124 					fprintf: <>
+  125 					setnetgrent: <>
+  126 					getnetgrent: <>
+  127 					add_good_host: void (), <./timed.tproj/timed.tproj/timed.c 891>
+  128 						malloc: <>
+  129 						syslog: <>
+  130 						exit: <>
+  131 						bzero: <>
+  132 						strncpy: <>
+  133 						gethostbyname: <>
+  134 						fprintf: <>
+  135 					endnetgrent: <>
+  136 					good_host_name: else if (), <./timed.tproj/timed.tproj/master.c 857>
+  137 						strcasecmp: if (), <./inetd.tproj/inetd.c 1284>
+  138 				setstatus: void (), <./timed.tproj/timed.tproj/timed.c 733>
+  139 					fprintf: <>
+  140 					inet_ntoa: char * (), <./identd.tproj/identd.c 140>
+  141 						sprintf: <>
+  142 				prthp: void (), <./timed.tproj/timed.tproj/master.c 553>
+  143 					times: <>
+  144 					fprintf: <>
+  145 					date: char * (), <./timed.tproj/timed.tproj/timed.c 855>
+  146 					strlen: <>
+  147 						realloc: <>
+  148 						printf: <>
+  149 				fprintf: <>
+  150 				date: char * (), <./timed.tproj/timed.tproj/timed.c 855>
+  151 				fclose: <>
+  152 				moncontrol: <>
+  153 			traceon: void (), <./timed.tproj/timed.tproj/master.c 866>
+  154 			bumploglevel: 92
+  155 		srandom: <>
+  156 		getpid: <>
+  157 		setitimer: <>
+  158 		syslog: <>
+  159 		FD_ZERO: <>
+  160 		FD_SET: <>
+  161 		timevalsub:  (), <./routed.tproj/main.c 292>
+  162 		select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+  163 		sigblock: <>
+  164 		sigmask: <>
+  165 		sigsetmask: <>
+  166 		FD_ISSET: if (), <./telnetd.tproj/telnetd.c 1329>
+  167 		process:  (), <./routed.tproj/main.c 303>
+  168 			recvfrom: <>
+  169 			perror: <>
+  170 			rip_input:  (), <./routed.tproj/input.c 69>
+  171 		interval: char * (), <./ruptime.tproj/ruptime.c 212>
+  172 			snprintf: <>
+  173 		display: int (), <./telnet.tproj/commands.c 1275>
+  174 			dotog: <>
+  175 			printf: <>
+  176 			doset: <>
+  177 			getset: struct setlist (), <./telnet.tproj/commands.c 951>
+  178 			GETTOGGLE: <>
+  179 			Ambiguous: if (), <./telnet.tproj/commands.c 1677>
+  180 			optionstatus: void (), <./telnet.tproj/utilities.c 239>
+  181 			EncryptStatus: <>
+  182 		setegid: <>
+  183 		getgid: <>
+  184 		setgid: <>
+  185 		kvm_openfiles: <>
+  186 		errx: <>
+  187 		kvm_nlist: <>
+  188 		sidewaysintpr: void (), <./nfsstat.tproj/nfsstat.c 366>
+  189 			signal: <>
+  190 			alarm: <>
+  191 			bzero: <>
+  192 			printhdr: void (), <./nfsstat.tproj/nfsstat.c 421>
+  193 				printf: <>
+  194 				fflush: <>
+  195 			readstats: void (), <./nfsstat.tproj/nfsstat.c 181>
+  196 				kvm_read: <>
+  197 				err: , <./route.tproj/route.c 722>
+  198 					va_start: <>
+  199 					fprintf: <>
+  200 					vfprintf:  (), <./tcpdump.tproj/vfprintf.c 69>
+  201 						ferror: <>
+  202 					vsyslog: <>
+  203 					va_end: <>
+  204 					exit: <>
+  205 				getvfsbyname: <>
+  206 				sysctl: <>
+  207 			printf: <>
+  208 			fflush: <>
+  209 			sigblock: <>
+  210 			sigmask: <>
+  211 			sigpause: <>
+  212 			sigsetmask: <>
+  213 		intpr: void (), <./netstat.tproj/if.c 87>
+  214 			readstats: 195
+  215 			printf: <>
+  216 			sidewaysintpr: 188
+  217 			kread: if (), <./netstat.tproj/if.c 455>
+  218 			putchar: <>
+  219 			snprintf: <>
+  220 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  221 			index: return, <./pcap/gencode.c 1508>
+  222 			CP: <>
+  223 			sockaddr: <>
+  224 			inet_makeaddr: in_addr (), <./routed.tproj/inet.c 73>
+  225 				IN_CLASSA: <>
+  226 				IN_CLASSB: <>
+  227 				htonl: <>
+  228 			netname: <>
+  229 			htonl: <>
+  230 			routename: <>
+  231 			sprintf: <>
+  232 			ntohl: <>
+  233 			ipx_phost: <>
+  234 			atalk_print: void (), <./tcpdump.tproj/print-atalk.c 121>
+  235 				printf: <>
+  236 				ataddr_string: const char * (), <./tcpdump.tproj/print-atalk.c 509>
+  237 					fopen: <>
+  238 					fgets: <>
+  239 					sscanf: <>
+  240 					newhnamemem: struct hnamemem (), <./tcpdump.tproj/addrtoname.c 764>
+  241 					savestr: char * (), <./tcpdump.tproj/util.c 274>
+  242 						strlen: 146
+  243 						malloc: <>
+  244 						error: , <./tcpdump.tproj/util.c 185>
+  245 							sprintf: <>
+  246 							write: <>
+  247 							strlen: 146
+  248 							va_start: <>
+  249 							vsnprintf: <>
+  250 						strcpy: <>
+  251 					fclose: <>
+  252 					sprintf: <>
+  253 				ddpskt_string: const char * (), <./tcpdump.tproj/print-atalk.c 586>
+  254 					sprintf: <>
+  255 					tok2str: const char * (), <./tcpdump.tproj/util.c 165>
+  256 						sprintf: <>
+  257 				ddp_print: void (), <./tcpdump.tproj/print-atalk.c 212>
+  258 					nbp_print: void (), <./tcpdump.tproj/print-atalk.c 356>
+  259 						printf: <>
+  260 						fputs: <>
+  261 						nbp_name_print: const struct atNBPtuple * (), <./tcpdump.tproj/print-atalk.c 476>
+  262 						EXTRACT_16BITS: <>
+  263 						ataddr_string: 236
+  264 						nbp_tuple_print: const struct atNBPtuple * (), <./tcpdump.tproj/print-atalk.c 446>
+  265 					atp_print: void (), <./tcpdump.tproj/print-atalk.c 233>
+  266 						fputs: <>
+  267 						printf: <>
+  268 						EXTRACT_16BITS: <>
+  269 						atp_bitmap_print: void (), <./tcpdump.tproj/print-atalk.c 325>
+  270 							printf: <>
+  271 						EXTRACT_32BITS: <>
+  272 					printf: <>
+  273 					tok2str: 255
+  274 				EXTRACT_16BITS: <>
+  275 				klap_print: <>
+  276 			upHex: <>
+  277 			ns_phost: <>
+  278 			LLADDR: <>
+  279 			hexprint: void (), <./netstat.tproj/iso.c 843>
+  280 				printf: <>
+  281 			ether_ntoa: <>
+  282 		yp_get_default_domain: <>
+  283 		usage: void (), <./ypbind.tproj/ypbind.c 209>
+  284 			fprintf: <>
+  285 			exit: <>
+  286 		sys_openlog: void (), <./ypbind.tproj/ypbind.c 175>
+  287 			free: <>
+  288 			malloc: <>
+  289 			strlen: 146
+  290 			strcpy: <>
+  291 			openlog: <>
+  292 		snprintf: <>
+  293 		stat: <>
+  294 		sys_msg: void (), <./ypbind.tproj/ypbind.c 189>
+  295 			va_start: <>
+  296 			vsyslog: <>
+  297 			fprintf: <>
+  298 			vfprintf: 200
+  299 			fflush: <>
+  300 			va_end: <>
+  301 		open: <>
+  302 		flock: <>
+  303 		pmap_unset: <>
+  304 		svcudp_create: <>
+  305 		svc_register: <>
+  306 		ypbindprog_2: void (), <./ypbind.tproj/ypbind.c 411>
+  307 			svc_ypbindproc_null_2: void * (), <./ypbind.tproj/ypbind.c 263>
+  308 				sys_msg: 294
+  309 				memset: <>
+  310 			xdr_domainname: __private_extern__ bool_t (), <./yppush.tproj/yppush_xdr.c 66>
+  311 				xdr_string: <>
+  312 			xdr_ypbind_resp: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 444>
+  313 				xdr_ypbind_resptype: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 410>
+  314 					xdr_enum: <>
+  315 				xdr_u_int: <>
+  316 				xdr_ypbind_binding: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 425>
+  317 					xdr_opaque: <>
+  318 			svc_ypbindproc_domain_2: void * (), <./ypbind.tproj/ypbind.c 274>
+  319 				sys_msg: 294
+  320 				memset: <>
+  321 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  322 				makebinding: struct _dom_binding (), <./ypbind.tproj/ypbind.c 217>
+  323 				removelock: void (), <./ypbind.tproj/ypbind.c 253>
+  324 					snprintf: <>
+  325 					unlink: <>
+  326 				unique_xid: u_int32_t (), <./ypbind.tproj/ypbind.c 1281>
+  327 					xid2ypdb: struct _dom_binding (), <./ypbind.tproj/ypbind.c 1268>
+  328 				time: , <./talkd.tproj/table.c 197>
+  329 				bcopy: <>
+  330 				inet_ntoa: 140
+  331 				ntohs: <>
+  332 			svcerr_auth: <>
+  333 			xdr_ypbind_setdom: bool_t (), <./ypserv.tproj/ypserv_xdr.c 472>
+  334 				xdr_domainname: 310
+  335 				xdr_ypbind_binding: 316
+  336 				xdr_u_int: <>
+  337 			svc_ypbindproc_setdom_2: void * (), <./ypbind.tproj/ypbind.c 348>
+  338 				memset: <>
+  339 				bcopy: <>
+  340 				svc_getcaller: <>
+  341 				htonl: <>
+  342 				sys_msg: 294
+  343 				inet_ntoa: 140
+  344 				ntohs: <>
+  345 				rpc_received: void (), <./ypbind.tproj/ypbind.c 1187>
+  346 					sys_msg: 294
+  347 					inet_ntoa: 140
+  348 					ntohs: <>
+  349 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  350 					makebinding: struct _dom_binding (), <./ypbind.tproj/ypbind.c 217>
+  351 					memcmp: <>
+  352 					time: , <./talkd.tproj/table.c 197>
+  353 					memcpy: <>
+  354 					close: <>
+  355 					makelock: int (), <./ypbind.tproj/ypbind.c 230>
+  356 						snprintf: <>
+  357 						open: <>
+  358 						mkdir: <>
+  359 						flock: <>
+  360 					memset: <>
+  361 					bcopy: <>
+  362 					writev: <>
+  363 					strerror: <>
+  364 					removelock: 323
+  365 			svcerr_noproc: <>
+  366 			memset: <>
+  367 			svc_getargs: if (), <./yppush.tproj/yppush_svc.c 137>
+  368 			svcerr_decode: <>
+  369 			svc_sendreply: <>
+  370 			svcerr_systemerr: <>
+  371 		svctcp_create: <>
+  372 		fcntl: <>
+  373 		setsockopt: <>
+  374 		xdr_bool: <>
+  375 		makebinding: struct _dom_binding (), <./ypbind.tproj/ypbind.c 217>
+  376 		removelock: 323
+  377 		checkwork: void (), <./ypbind.tproj/ypbind.c 676>
+  378 			time: , <./talkd.tproj/table.c 197>
+  379 			ping: int (), <./ypbind.tproj/ypbind.c 697>
+  380 				memset: <>
+  381 				authunix_create_default: <>
+  382 				sys_msg: 294
+  383 				xdrmem_create: <>
+  384 				xdr_callmsg: <>
+  385 				AUTH_DESTROY: <>
+  386 				xdr_domainname: 310
+  387 				xdr_getpos: <>
+  388 				xdr_destroy: <>
+  389 				sendto: <>
+  390 				sockaddr: <>
+  391 			nag_servers: int (), <./ypbind.tproj/ypbind.c 762>
+  392 				xdr_domainname: 310
+  393 				memset: <>
+  394 				authunix_create_default: <>
+  395 				sys_msg: 294
+  396 				xdrmem_create: <>
+  397 				xdr_callmsg: <>
+  398 				AUTH_DESTROY: <>
+  399 				xdr_rmtcall_args: <>
+  400 				xdr_getpos: <>
+  401 				xdr_destroy: <>
+  402 				close: <>
+  403 				removelock: 323
+  404 				htons: <>
+  405 				sendto: <>
+  406 				sockaddr: <>
+  407 				direct_set: int (), <./ypbind.tproj/ypbind.c 1023>
+  408 					snprintf: <>
+  409 					open: <>
+  410 					sys_msg: 294
+  411 					flock: <>
+  412 					readv: <>
+  413 					close: <>
+  414 					bcopy: <>
+  415 					sendto: <>
+  416 					sockaddr: <>
+  417 					strerror: <>
+  418 				broadcast: int (), <./ypbind.tproj/ypbind.c 865>
+  419 					socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+  420 					sys_msg: 294
+  421 					strerror: <>
+  422 					memset: <>
+  423 					htons: <>
+  424 					ioctl: <>
+  425 					close: <>
+  426 					sendto: <>
+  427 					sockaddr: <>
+  428 				direct: int (), <./ypbind.tproj/ypbind.c 945>
+  429 					rewind: <>
+  430 					snprintf: <>
+  431 					fopen: <>
+  432 					sys_msg: 294
+  433 					exit: <>
+  434 					memset: <>
+  435 					htons: <>
+  436 					fgets: <>
+  437 					strchr: <>
+  438 					getc: <>
+  439 					isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+  440 					gethostbyname: <>
+  441 					memmove: <>
+  442 					sendto: <>
+  443 					sockaddr: <>
+  444 					strerror: <>
+  445 		strerror: <>
+  446 		handle_replies: enum clnt_stat (), <./ypbind.tproj/ypbind.c 1081>
+  447 		handle_ping: enum clnt_stat (), <./ypbind.tproj/ypbind.c 1132>
+  448 		svc_getreqset: <>
+  449 		printf: <>
+  450 		yp_match: <>
+  451 		strlen: 146
+  452 		yperr_string: <>
+  453 		strchr: <>
+  454 		ypopenlog: void (), <./ypserv.tproj/yplog.c 125>
+  455 		yplog: <>
+  456 			va_start: <>
+  457 			vyplog: <>
+  458 			va_end: <>
+  459 		get_local_ordernum: int (), <./ypxfr.tproj/ypxfr.c 118>
+  460 			snprintf: <>
+  461 			stat: <>
+  462 			fprintf: <>
+  463 			ypdb_open: <>
+  464 			ypdb_fetch: <>
+  465 			ypdb_close: <>
+  466 			strncpy: <>
+  467 			atol: <>
+  468 		yp_master: <>
+  469 		getrpcport: <>
+  470 		yp_bind_host: CLIENT * (), <./yppush.tproj/yplib_host.c 92>
+  471 			memset: <>
+  472 			htons: <>
+  473 			inet_aton: <>
+  474 			fprintf: <>
+  475 			exit: <>
+  476 			gethostbyname: <>
+  477 			clnttcp_create: <>
+  478 			clntudp_create: <>
+  479 		get_remote_ordernum: int (), <./ypxfr.tproj/ypxfr.c 187>
+  480 			yp_order_host: <>
+  481 		mkstemp: <>
+  482 		close: <>
+  483 		create_db: DBM * (), <./ypxfr.tproj/ypxfr.c 221>
+  484 			ypdb_open_suf: <>
+  485 		add_order: int (), <./ypxfr.tproj/ypxfr.c 245>
+  486 			sprintf: <>
+  487 			strlen: 146
+  488 			ypdb_store: <>
+  489 		add_master: int (), <./ypxfr.tproj/ypxfr.c 272>
+  490 			yp_master_host: <>
+  491 			strlen: 146
+  492 			ypdb_store: <>
+  493 		add_interdomain: int (), <./ypxfr.tproj/ypxfr.c 308>
+  494 			strlen: 146
+  495 			yp_match_host: int (), <./yppush.tproj/yplib_host.c 178>
+  496 			ypdb_store: <>
+  497 		add_secure: int (), <./ypxfr.tproj/ypxfr.c 346>
+  498 			strlen: 146
+  499 			yp_match_host: int (), <./yppush.tproj/yplib_host.c 178>
+  500 			ypdb_store: <>
+  501 		ypxfr_foreach: int (), <./ypxfr.tproj/ypxfr.c 94>
+  502 			strlen: 146
+  503 			ypdb_store: <>
+  504 		get_map: void (), <./ypxfr.tproj/ypxfr.c 210>
+  505 			yp_all_host: <>
+  506 		ypdb_close: <>
+  507 		install_db: int (), <./ypxfr.tproj/ypxfr.c 230>
+  508 			snprintf: <>
+  509 			rename: <>
+  510 		unlink: <>
+  511 		clnt_destroy: <>
+  512 		yp_bind_local: CLIENT * (), <./yppush.tproj/yplib_host.c 150>
+  513 			memset: <>
+  514 			htonl: <>
+  515 			clntudp_create: <>
+  516 			fprintf: <>
+  517 			exit: <>
+  518 		send_clear: int (), <./ypxfr.tproj/ypxfr.c 385>
+  519 			clnt_call: <>
+  520 			clnt_perror: <>
+  521 		send_reply: int (), <./ypxfr.tproj/ypxfr.c 410>
+  522 			clnt_call: <>
+  523 			xdr_ypresp_xfr: bool_t (), <./ypserv.tproj/ypserv_xdr.c 325>
+  524 				xdr_u_int: <>
+  525 				xdr_ypxfrstat: bool_t (), <./ypserv.tproj/ypserv_xdr.c 50>
+  526 					xdr_enum: <>
+  527 			clnt_perror: <>
+  528 		isatty: <>
+  529 		fileno: <>
+  530 		proxy: int (), <./identd.tproj/proxy.c 60>
+  531 			printf: <>
+  532 			id_open: <>
+  533 			id_query: <>
+  534 			id_close: <>
+  535 			id_parse: <>
+  536 		getlogin: <>
+  537 		getpwnam: <>
+  538 		getpwuid: <>
+  539 		getuid: if (), <./rpcinfo.tproj/rpcinfo.c 618>
+  540 		strcpy: <>
+  541 		setjmp: <>
+  542 		intr: SIG_FUNC_RET (), <./telnet.tproj/sys_bsd.c 897>
+  543 			longjmp: <>
+  544 			signal: <>
+  545 			alarm: <>
+  546 			exit: <>
+  547 		lostpeer: void (), <./rlogin.tproj/rlogin.c 889>
+  548 			shutdown: <>
+  549 			fileno: <>
+  550 			fclose: <>
+  551 			close: <>
+  552 			pswitch: void (), <./ftp.tproj/ftp.c 1212>
+  553 				signal: <>
+  554 				psabort: void (), <./ftp.tproj/ftp.c 1205>
+  555 				proxy: 530
+  556 				strncpy: <>
+  557 				strlen: 146
+  558 				strcpy: <>
+  559 			sigemptyset: <>
+  560 			sigaction: <>
+  561 		setpeer: void (), <./tftp.tproj/main.c 209>
+  562 			printf: <>
+  563 			another: int (), <./ftp.tproj/cmds.c 92>
+  564 				strlen: 146
+  565 				printf: <>
+  566 				intr: 542
+  567 				fgets: <>
+  568 				makeargv: void (), <./timed.tproj/timedc.tproj/timedc.c 204>
+  569 					slurpstring: char * (), <./ftp.tproj/main.c 346>
+  570 			atoi: <>
+  571 			htons: <>
+  572 			hookup: char * (), <./ftp.tproj/ftp.c 101>
+  573 				memset: <>
+  574 				inet_addr: <>
+  575 				strncpy: <>
+  576 				gethostbyname: <>
+  577 				warnx: <>
+  578 				hstrerror: <>
+  579 				memmove: <>
+  580 				socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+  581 				warn: <>
+  582 				connect: <>
+  583 				sockaddr: <>
+  584 				inet_ntoa: 140
+  585 				fprintf: <>
+  586 				close: <>
+  587 				getsockname: <>
+  588 				setsockopt: <>
+  589 				fdopen: <>
+  590 				fclose: <>
+  591 				printf: <>
+  592 				getreply: int (), <./ftp.tproj/ftp.c 323>
+  593 					signal: <>
+  594 					cmdabort: void (), <./ftp.tproj/ftp.c 273>
+  595 						printf: <>
+  596 						fflush: <>
+  597 						longjmp: <>
+  598 					getc: <>
+  599 					fprintf: <>
+  600 					fflush: <>
+  601 					lostpeer: 547
+  602 					printf: <>
+  603 					putchar: <>
+  604 					isdigit: <>
+  605 			strcpy: <>
+  606 			login: int (), <./ftp.tproj/ftp.c 210>
+  607 				ruserpass: int (), <./ftp.tproj/ruserpass.c 98>
+  608 					getenv: <>
+  609 					sprintf: <>
+  610 					fopen: <>
+  611 					warn: <>
+  612 					gethostname: <>
+  613 					strchr: <>
+  614 					token: int (), <./ftp.tproj/ruserpass.c 264>
+  615 						feof: <>
+  616 						ferror: <>
+  617 						getc: <>
+  618 						strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  619 					strcasecmp: if (), <./inetd.tproj/inetd.c 1284>
+  620 					strncasecmp: <>
+  621 					malloc: <>
+  622 					strlen: 146
+  623 					strcpy: <>
+  624 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  625 					fstat: <>
+  626 					fileno: <>
+  627 					warnx: <>
+  628 					proxy: 530
+  629 					fclose: <>
+  630 					getc: <>
+  631 					printf: <>
+  632 					isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+  633 				getlogin: <>
+  634 				getpwuid: <>
+  635 				getuid: if (), <./rpcinfo.tproj/rpcinfo.c 618>
+  636 				printf: <>
+  637 				fgets: <>
+  638 				strlen: 146
+  639 				command: int (), <./ftp.tproj/ftp.c 283>
+  640 					printf: <>
+  641 					va_start: <>
+  642 					strncmp: <>
+  643 					vfprintf: 200
+  644 					va_end: <>
+  645 					fflush: <>
+  646 					warn: <>
+  647 					signal: <>
+  648 					cmdabort: 594
+  649 					fprintf: <>
+  650 					getreply: 592
+  651 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  652 				getpass: <>
+  653 				warnx: <>
+  654 				proxy: 530
+  655 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  656 				strcpy: <>
+  657 				makeargv: 568
+  658 				domacro: void (), <./ftp.tproj/domacro.c 66>
+  659 					another: 563
+  660 					printf: <>
+  661 					strncmp: <>
+  662 					strcpy: <>
+  663 					isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+  664 					isdigit: <>
+  665 					strlen: 146
+  666 					makeargv: 568
+  667 					getcmd: struct cmd (), <./ftp.tproj/main.c 292>
+  668 					putchar: <>
+  669 			command: 639
+  670 			strchr: <>
+  671 			strncmp: <>
+  672 			proxy: 530
+  673 			fgets: <>
+  674 			strlen: 146
+  675 			makeargv: 568
+  676 			gethostbyname: <>
+  677 			bcopy: <>
+  678 			inet_addr: <>
+  679 		cmdscanner: void (), <./ftp.tproj/main.c 236>
+  680 			putchar: <>
+  681 			printf: <>
+  682 			fflush: <>
+  683 			fgets: <>
+  684 			quit:  (), <./telnet.tproj/commands.c 1498>
+  685 				fprintf: <>
+  686 				strerror: <>
+  687 				exit: <>
+  688 				disconnect: void (), <./ftp.tproj/cmds.c 1581>
+  689 					command: 639
+  690 					fclose: <>
+  691 					proxy: 530
+  692 				pswitch: 552
+  693 				wmove: <>
+  694 				wclrtoeol: <>
+  695 				wrefresh: <>
+  696 				endwin: <>
+  697 				send_delete:  (), <./talk.tproj/invite.c 188>
+  698 					htonl: <>
+  699 					sendto: <>
+  700 					sockaddr: <>
+  701 					perror: <>
+  702 				syslog: <>
+  703 				call:  (), <./telnet.tproj/commands.c 2582>
+  704 					call: 703
+  705 					va_start: <>
+  706 					va_arg: <>
+  707 					va_end: <>
+  708 					genget: <>
+  709 					setcommandmode: void (), <./telnet.tproj/terminal.c 260>
+  710 						TerminalNewMode: <>
+  711 					putchar: <>
+  712 					signal: <>
+  713 					printf: <>
+  714 					getline:  (), <./startslip.tproj/startslip.c 427>
+  715 						read: <>
+  716 						printd: <>
+  717 						perror: <>
+  718 						fprintf: <>
+  719 					fgets: <>
+  720 					feof: <>
+  721 					ferror: <>
+  722 					quit: 684
+  723 					makeargv: void (), <./telnet.tproj/commands.c 141>
+  724 						strcpy: <>
+  725 						isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+  726 					getcmd: Command * (), <./telnet.tproj/commands.c 2609>
+  727 					Ambiguous: if (), <./telnet.tproj/commands.c 1677>
+  728 					longjmp: <>
+  729 					setconnmode: void (), <./telnet.tproj/terminal.c 229>
+  730 						getconnmode: int (), <./telnet.tproj/terminal.c 189>
+  731 							my_want_state_is_dont: <>
+  732 							my_want_state_is_will: <>
+  733 							his_want_state_is_will: if (), <./telnetd.tproj/telnetd.c 1053>
+  734 						TerminalNewMode: <>
+  735 						my_want_state_is_will: <>
+  736 						encrypt_request_start: <>
+  737 						encrypt_request_end: <>
+  738 					cmdrc: <>
+  739 					strlen: 146
+  740 					strcpy: <>
+  741 					getenv: <>
+  742 					strcat: <>
+  743 					fopen: <>
+  744 					isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+  745 					strncasecmp: <>
+  746 					strncpy: <>
+  747 					fclose: <>
+  748 					sourceroute: <>
+  749 					inet_addr: <>
+  750 					gethostbyname: <>
+  751 					memmove: <>
+  752 				bye:  (), <./telnet.tproj/commands.c 1469>
+  753 					shutdown: <>
+  754 					printf: <>
+  755 					NetClose: int (), <./telnet.tproj/sys_bsd.c 847>
+  756 					auth_encrypt_connect: <>
+  757 					tninit: void (), <./telnet.tproj/main.c 86>
+  758 						init_terminal: void (), <./telnet.tproj/terminal.c 115>
+  759 							ring_init:  (), <./telnet.tproj/ring.c 125>
+  760 							exit: <>
+  761 							TerminalAutoFlush: int (), <./telnet.tproj/sys_bsd.c 177>
+  762 								ioctl: <>
+  763 						init_network: void (), <./telnet.tproj/network.c 83>
+  764 							ring_init:  (), <./telnet.tproj/ring.c 125>
+  765 							exit: <>
+  766 						init_telnet: void (), <./telnet.tproj/telnet.c 195>
+  767 							env_init: void (), <./telnet.tproj/commands.c 1718>
+  768 							SB_CLEAR: <>
+  769 							ClearArray: <>
+  770 							auth_encrypt_connect: <>
+  771 							CONTROL: <>
+  772 						init_sys: void (), <./telnet.tproj/sys_bsd.c 144>
+  773 							fileno: <>
+  774 							FD_ZERO: <>
+  775 						init_3270: void (), <./telnet.tproj/tn3270.c 104>
+  776 							init_ctlr: <>
+  777 							init_keyboard: <>
+  778 							init_screen: <>
+  779 							init_system: <>
+  780 					SetIn3270: void (), <./telnet.tproj/tn3270.c 337>
+  781 						my_want_state_is_will: <>
+  782 						my_want_state_is_do: <>
+  783 						Init3270: <>
+  784 						InitTerminal: <>
+  785 						setconnmode: 729
+  786 						StopScreen: <>
+  787 						Stop3270: <>
+  788 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+  789 					longjmp: <>
+  790 				Exit: void (), <./rbootd.tproj/rbootd.c 445>
+  791 					SetForExit: void (), <./telnet.tproj/utilities.c 920>
+  792 						setconnmode: 729
+  793 						Finish3270: void (), <./telnet.tproj/tn3270.c 287>
+  794 							Push3270: int (), <./telnet.tproj/tn3270.c 261>
+  795 							DoTerminalOutput: <>
+  796 						telrcv: void (), <./telnetd.tproj/state.c 108>
+  797 							his_state_is_wont: if (), <./telnetd.tproj/telnetd.c 996>
+  798 							tty_iscrnl: int (), <./telnetd.tproj/sys_term.c 958>
+  799 							DIAG: <>
+  800 							printoption: void (), <./telnet.tproj/utilities.c 203>
+  801 							interrupt: void (), <./telnetd.tproj/telnetd.c 1555>
+  802 								ptyflush: void (), <./telnetd.tproj/utility.c 133>
+  803 									DIAG: <>
+  804 									sprintf: <>
+  805 									strlen: 146
+  806 									printdata: <>
+  807 									write: <>
+  808 									cleanup: void (), <./telnetd.tproj/sys_term.c 1846>
+  809 										pcap_file: FILE * (), <./pcap/pcap.c 162>
+  810 										fflush: <>
+  811 										putc: <>
+  812 										pcap_stats: int (), <./pcap/pcap-bpf.c 76>
+  813 											ioctl: <>
+  814 											sprintf: <>
+  815 											pcap_strerror: char * (), <./pcap/pcap.c 189>
+  816 												strerror: <>
+  817 												sprintf: <>
+  818 										fprintf: <>
+  819 										pcap_geterr: char * (), <./pcap/pcap.c 180>
+  820 										exit: <>
+  821 								ioctl: <>
+  822 								init_termbuf: void (), <./telnetd.tproj/sys_term.c 209>
+  823 									ioctl: <>
+  824 									tcgetattr: <>
+  825 							sendbrk: void (), <./telnetd.tproj/telnetd.c 1583>
+  826 								NET2ADD: <>
+  827 								printoption: void (), <./telnet.tproj/utilities.c 203>
+  828 								doflush: void (), <./telnet.tproj/telnet.c 2473>
+  829 									NET2ADD: <>
+  830 									NETADD: <>
+  831 									ttyflush: int (), <./telnet.tproj/terminal.c 139>
+  832 										ring_full_count: <>
+  833 										ring_full_consecutive: <>
+  834 										TerminalFlushOutput: void (), <./telnet.tproj/sys_bsd.c 251>
+  835 											ioctl: <>
+  836 											fileno: <>
+  837 										TerminalWrite: int (), <./telnet.tproj/sys_bsd.c 157>
+  838 											write: <>
+  839 										Dump: void (), <./telnet.tproj/utilities.c 151>
+  840 										ring_consumed: <>
+  841 									printoption: void (), <./telnet.tproj/utilities.c 203>
+  842 								dosynch: int (), <./telnet.tproj/telnet.c 2511>
+  843 									netclear: void (), <./telnet.tproj/telnet.c 2430>
+  844 										nextitem: char * (), <./telnet.tproj/telnet.c 2382>
+  845 										wewant: <>
+  846 										memmove: <>
+  847 									NETADD: <>
+  848 									setneturg: void (), <./telnet.tproj/network.c 133>
+  849 										ring_mark: <>
+  850 									printoption: void (), <./telnet.tproj/utilities.c 203>
+  851 								ptyflush: 802
+  852 								ioctl: <>
+  853 								init_termbuf: 822
+  854 							recv_ayt: void (), <./telnetd.tproj/telnetd.c 1614>
+  855 								ioctl: <>
+  856 								strcpy: <>
+  857 							ptyflush: 802
+  858 							init_termbuf: 822
+  859 							netclear: void (), <./telnetd.tproj/utility.c 212>
+  860 								nextitem: char * (), <./telnetd.tproj/utility.c 165>
+  861 								wewant: <>
+  862 								memmove: <>
+  863 							stilloob: int (), <./telnetd.tproj/utility.c 109>
+  864 								FD_ZERO: <>
+  865 								FD_SET: <>
+  866 								select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+  867 								perror: <>
+  868 								quit: 684
+  869 								FD_ISSET: if (), <./telnetd.tproj/telnetd.c 1329>
+  870 								fatalperror: void (), <./telnetd.tproj/utility.c 388>
+  871 							settimer: <>
+  872 							SB_CLEAR: <>
+  873 							his_state_is_will: <>
+  874 							doeof: void (), <./telnetd.tproj/telnetd.c 1627>
+  875 								init_termbuf: 822
+  876 								tty_isediting: int (), <./telnetd.tproj/sys_term.c 817>
+  877 							sendsusp: void (), <./telnetd.tproj/telnetd.c 1596>
+  878 								NET2ADD: <>
+  879 								printoption: void (), <./telnet.tproj/utilities.c 203>
+  880 								doflush: 828
+  881 								dosynch: 842
+  882 								ptyflush: 802
+  883 								ioctl: <>
+  884 							SB_ACCUM: <>
+  885 							SB_TERM: <>
+  886 							suboption: void (), <./telnetd.tproj/state.c 1119>
+  887 								DIAG: <>
+  888 								netflush: void (), <./telnetd.tproj/utility.c 265>
+  889 									ring_encrypt: <>
+  890 									ring_full_consecutive: <>
+  891 									ring_at_mark: <>
+  892 									send: <>
+  893 									setcommandmode: 709
+  894 									perror: <>
+  895 									NetClose: int (), <./telnet.tproj/sys_bsd.c 847>
+  896 									ring_clear_mark: <>
+  897 									longjmp: <>
+  898 									Dump: void (), <./telnet.tproj/utilities.c 151>
+  899 									ring_consumed: <>
+  900 									netflush: 888
+  901 									DIAG: <>
+  902 									sprintf: <>
+  903 									strlen: 146
+  904 									write: <>
+  905 									cleanup: 808
+  906 								printsub: void (), <./telnetd.tproj/utility.c 540>
+  907 								SB_LEN: <>
+  908 								SB_GET: <>
+  909 								his_state_is_wont: if (), <./telnetd.tproj/telnetd.c 996>
+  910 								settimer: <>
+  911 								SB_EOF: <>
+  912 								atoi: <>
+  913 								clientstat: <>
+  914 								isupper: <>
+  915 								tolower: <>
+  916 								start_slc: <>
+  917 								do_opt_slc: <>
+  918 								end_slc: <>
+  919 								my_state_is_will: <>
+  920 								send_status: void (), <./telnetd.tproj/state.c 1548>
+  921 									netflush: 888
+  922 									ADD: (, <./routed.tproj/tables.c 290>
+  923 									my_want_state_is_will: <>
+  924 									ADD_DATA: <>
+  925 									his_want_state_is_will: if (), <./telnetd.tproj/telnetd.c 1053>
+  926 									start_slc: <>
+  927 									send_slc: void (), <./telnetd.tproj/slc.c 79>
+  928 										add_slc: <>
+  929 									end_slc: <>
+  930 									writenet: <>
+  931 									DIAG: <>
+  932 									printsub: void (), <./telnetd.tproj/utility.c 540>
+  933 								setenv: <>
+  934 								SB_SAVE: <>
+  935 								sprintf: <>
+  936 								strlen: 146
+  937 								SB_RESTORE: <>
+  938 								unsetenv: <>
+  939 								auth_is: <>
+  940 								auth_name: <>
+  941 								encrypt_support: <>
+  942 								encrypt_is: <>
+  943 								encrypt_reply: <>
+  944 								encrypt_start: <>
+  945 								encrypt_end: <>
+  946 								encrypt_request_start: <>
+  947 								encrypt_request_end: <>
+  948 								encrypt_enc_keyid: <>
+  949 								encrypt_dec_keyid: <>
+  950 							willoption: void (), <./telnetd.tproj/state.c 495>
+  951 								DIAG: <>
+  952 								printoption: void (), <./telnet.tproj/utilities.c 203>
+  953 								his_state_is_will: <>
+  954 								his_want_state_is_wont: <>
+  955 								init_termbuf: 822
+  956 								tty_binaryin: void (), <./telnetd.tproj/sys_term.c 756>
+  957 								set_termbuf: void (), <./telnetd.tproj/sys_term.c 242>
+  958 									memcmp: <>
+  959 									ioctl: <>
+  960 									tcsetattr: <>
+  961 								clientstat: <>
+  962 								send_wont: void (), <./telnetd.tproj/state.c 996>
+  963 									my_state_is_wont: <>
+  964 									my_want_state_is_wont: if (), <./telnet.tproj/telnet.c 495>
+  965 									set_my_want_state_wont: <>
+  966 									sprintf: <>
+  967 									DIAG: <>
+  968 									printoption: void (), <./telnet.tproj/utilities.c 203>
+  969 								doclientstat: void (), <./telnetd.tproj/state.c 1540>
+  970 									clientstat: <>
+  971 								set_his_want_state_will: <>
+  972 								send_do: void (), <./telnetd.tproj/state.c 460>
+  973 									his_state_is_will: <>
+  974 									his_want_state_is_will: if (), <./telnetd.tproj/telnetd.c 1053>
+  975 									set_his_want_state_wont: <>
+  976 									set_his_want_state_will: <>
+  977 									sprintf: <>
+  978 									DIAG: <>
+  979 									printoption: void (), <./telnet.tproj/utilities.c 203>
+  980 								send_dont: void (), <./telnetd.tproj/state.c 688>
+  981 									his_state_is_wont: if (), <./telnetd.tproj/telnetd.c 996>
+  982 									his_want_state_is_wont: <>
+  983 									set_his_want_state_wont: <>
+  984 									sprintf: <>
+  985 									DIAG: <>
+  986 									printoption: void (), <./telnet.tproj/utilities.c 203>
+  987 								flowstat: void (), <./telnetd.tproj/termstat.c 382>
+  988 									his_state_is_will: <>
+  989 									tty_flowmode: int (), <./telnetd.tproj/sys_term.c 687>
+  990 									sprintf: <>
+  991 									tty_restartany: int (), <./telnetd.tproj/sys_term.c 697>
+  992 								set_his_state_will: <>
+  993 							wontoption: void (), <./telnetd.tproj/state.c 705>
+  994 								DIAG: <>
+  995 								printoption: void (), <./telnet.tproj/utilities.c 203>
+  996 								his_state_is_wont: if (), <./telnetd.tproj/telnetd.c 996>
+  997 								his_want_state_is_will: if (), <./telnetd.tproj/telnetd.c 1053>
+  998 								init_termbuf: 822
+  999 								tty_binaryin: 956
+ 1000 								set_termbuf: 957
+ 1001 								clientstat: <>
+ 1002 								set_his_want_state_wont: <>
+ 1003 								auth_finished: <>
+ 1004 								settimer: <>
+ 1005 								his_state_is_will: <>
+ 1006 								send_dont: 980
+ 1007 								send_will: void (), <./telnetd.tproj/state.c 837>
+ 1008 									my_state_is_will: <>
+ 1009 									my_want_state_is_will: <>
+ 1010 									set_my_want_state_will: <>
+ 1011 									sprintf: <>
+ 1012 									DIAG: <>
+ 1013 									printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1014 								set_his_state_wont: <>
+ 1015 							dooption: void (), <./telnetd.tproj/state.c 865>
+ 1016 								DIAG: <>
+ 1017 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1018 								my_state_is_will: <>
+ 1019 								my_want_state_is_wont: if (), <./telnet.tproj/telnet.c 495>
+ 1020 								his_state_is_wont: if (), <./telnetd.tproj/telnetd.c 996>
+ 1021 								init_termbuf: 822
+ 1022 								tty_setecho: void (), <./telnetd.tproj/sys_term.c 711>
+ 1023 								set_termbuf: 957
+ 1024 								tty_binaryout: void (), <./telnetd.tproj/sys_term.c 774>
+ 1025 								clientstat: <>
+ 1026 								send_will: 1007
+ 1027 								set_my_want_state_wont: <>
+ 1028 								set_my_state_wont: <>
+ 1029 								set_my_want_state_will: <>
+ 1030 								set_my_state_will: <>
+ 1031 								netflush: 888
+ 1032 								cleanup: 808
+ 1033 								send_wont: 962
+ 1034 							dontoption: void (), <./telnetd.tproj/state.c 1013>
+ 1035 								DIAG: <>
+ 1036 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1037 								my_state_is_wont: <>
+ 1038 								my_want_state_is_will: <>
+ 1039 								init_termbuf: 822
+ 1040 								tty_binaryout: 1024
+ 1041 								set_termbuf: 957
+ 1042 								his_state_is_wont: if (), <./telnetd.tproj/telnetd.c 996>
+ 1043 								tty_setecho: 1022
+ 1044 								clientstat: <>
+ 1045 								set_my_want_state_wont: <>
+ 1046 								my_state_is_will: <>
+ 1047 								send_wont: 962
+ 1048 								set_my_state_wont: <>
+ 1049 								send_will: 1007
+ 1050 							syslog: <>
+ 1051 							printf: <>
+ 1052 							exit: <>
+ 1053 							memmove: <>
+ 1054 							term_input: <>
+ 1055 						EmptyTerminal: void (), <./telnet.tproj/utilities.c 893>
+ 1056 						ring_full_count: <>
+ 1057 						setcommandmode: 709
+ 1058 						fflush: <>
+ 1059 						StopScreen: <>
+ 1060 					exit: <>
+ 1061 			strlen: 146
+ 1062 			getchar: <>
+ 1063 			makeargv: 568
+ 1064 			getcmd: struct cmd (), <./ftp.tproj/main.c 292>
+ 1065 			help: void (), <./timed.tproj/timedc.tproj/timedc.c 232>
+ 1066 				printf: <>
+ 1067 				strlen: 146
+ 1068 				proxy: 530
+ 1069 				putchar: <>
+ 1070 				getcmd: struct cmd (), <./ftp.tproj/main.c 292>
+ 1071 				getcmd: struct cmd (), <./timed.tproj/timedc.tproj/timedc.c 170>
+ 1072 			signal: <>
+ 1073 			intr: 542
+ 1074 			lostpeer: 547
+ 1075 		err: 197
+ 1076 		setbuf: <>
+ 1077 		access: <>
+ 1078 		show_usage: void (), <./ipfw.tproj/ipfw.c 563>
+ 1079 			va_start: <>
+ 1080 			vsnprintf: <>
+ 1081 			va_end: <>
+ 1082 			warnx: <>
+ 1083 			fprintf: <>
+ 1084 			exit: <>
+ 1085 		fopen: <>
+ 1086 		pipe: <>
+ 1087 		fork: switch (), <./telnetd.tproj/sys_term.c 2158>
+ 1088 		dup2: <>
+ 1089 		fclose: <>
+ 1090 		execvp: <>
+ 1091 		fdopen: <>
+ 1092 		kill: , <./talk.tproj/display.c 140>
+ 1093 		fgets: <>
+ 1094 		sprintf: <>
+ 1095 		strtok: <>
+ 1096 		ipfw_main: int (), <./ipfw.tproj/ipfw.c 1361>
+ 1097 			show_usage: 1078
+ 1098 			isatty: <>
+ 1099 			getopt: <>
+ 1100 			strncmp: <>
+ 1101 			strlen: 146
+ 1102 			add: void (), <./ipfw.tproj/ipfw.c 1004>
+ 1103 				memset: <>
+ 1104 				isdigit: <>
+ 1105 				atoi: <>
+ 1106 				show_usage: 1078
+ 1107 				strncmp: <>
+ 1108 				strlen: 146
+ 1109 				strtoul: <>
+ 1110 				setservent: <>
+ 1111 				getservbyname: <>
+ 1112 				ntohs: <>
+ 1113 				err: 197
+ 1114 				strchr: <>
+ 1115 				lookup_port: int (), <./ipfw.tproj/ipfw.c 700>
+ 1116 					snprintf: <>
+ 1117 					strcspn: <>
+ 1118 					strtoul: <>
+ 1119 					setservent: <>
+ 1120 					getservbyname: <>
+ 1121 					htons: <>
+ 1122 					errx: <>
+ 1123 				fill_ip: void (), <./ipfw.tproj/ipfw.c 620>
+ 1124 					strncmp: <>
+ 1125 					strlen: 146
+ 1126 					strchr: <>
+ 1127 					lookup_host: int (), <./ipfw.tproj/ipfw.c 602>
+ 1128 						gethostbyname: <>
+ 1129 						inet_aton: <>
+ 1130 					show_usage: 1078
+ 1131 					inet_aton: <>
+ 1132 					atoi: <>
+ 1133 					htonl: <>
+ 1134 				fill_reject_code: void (), <./ipfw.tproj/ipfw.c 670>
+ 1135 					strtoul: <>
+ 1136 					strcasecmp: if (), <./inetd.tproj/inetd.c 1284>
+ 1137 					show_usage: 1078
+ 1138 				getprotobyname: <>
+ 1139 				fill_port: int (), <./ipfw.tproj/ipfw.c 731>
+ 1140 					strcspn: <>
+ 1141 					strchr: <>
+ 1142 					errx: <>
+ 1143 					add_port: void (), <./ipfw.tproj/ipfw.c 690>
+ 1144 						errx: <>
+ 1145 					lookup_port: 1115
+ 1146 				IP_FW_SETNSRCP: <>
+ 1147 				IP_FW_GETNSRCP: <>
+ 1148 				IP_FW_SETNDSTP: <>
+ 1149 				IP_FW_GETNDSTP: <>
+ 1150 				fill_iface: void (), <./ipfw.tproj/ipfw.c 913>
+ 1151 					show_usage: 1078
+ 1152 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 1153 					isdigit: <>
+ 1154 					strncpy: <>
+ 1155 					atoi: <>
+ 1156 					verify_interface: void (), <./ipfw.tproj/ipfw.c 896>
+ 1157 						snprintf: <>
+ 1158 						ioctl: <>
+ 1159 						warnx: <>
+ 1160 					inet_aton: <>
+ 1161 				fill_ipopt: void (), <./ipfw.tproj/ipfw.c 805>
+ 1162 					strchr: <>
+ 1163 					strncmp: <>
+ 1164 					strlen: 146
+ 1165 				fill_tcpflag: void (), <./ipfw.tproj/ipfw.c 763>
+ 1166 					strchr: <>
+ 1167 					strncmp: <>
+ 1168 					strlen: 146
+ 1169 					show_usage: 1078
+ 1170 				fill_icmptypes: void (), <./ipfw.tproj/ipfw.c 829>
+ 1171 					strtoul: <>
+ 1172 					show_usage: 1078
+ 1173 				show_ipfw: void (), <./ipfw.tproj/ipfw.c 175>
+ 1174 					IP_FW_GETNSRCP: <>
+ 1175 					IP_FW_GETNDSTP: <>
+ 1176 					setservent: <>
+ 1177 					printf: <>
+ 1178 					strcpy: <>
+ 1179 					ctime: <>
+ 1180 					strchr: <>
+ 1181 					print_reject_code: void (), <./ipfw.tproj/ipfw.c 162>
+ 1182 						printf: <>
+ 1183 					inet_ntoa: 140
+ 1184 					errx: <>
+ 1185 					getprotobynumber: <>
+ 1186 					ntohl: <>
+ 1187 					gethostbyaddr: <>
+ 1188 					mask_bits: int (), <./ipfw.tproj/ipfw.c 96>
+ 1189 						ntohl: <>
+ 1190 					print_port: void (), <./ipfw.tproj/ipfw.c 116>
+ 1191 					print_iface: void (), <./ipfw.tproj/ipfw.c 144>
+ 1192 					PRINTOPT: <>
+ 1193 					PRINTFLG: <>
+ 1194 					endservent: <>
+ 1195 				setsockopt: <>
+ 1196 			config_pipe: void (), <./ipfw.tproj/ipfw.c 941>
+ 1197 				memset: <>
+ 1198 				isdigit: <>
+ 1199 				atoi: <>
+ 1200 				strncmp: <>
+ 1201 				strlen: 146
+ 1202 				strtoul: <>
+ 1203 				strtod: <>
+ 1204 				show_usage: 1078
+ 1205 				printf: <>
+ 1206 				setsockopt: <>
+ 1207 				err: 197
+ 1208 			delete: void (), <./ipfw.tproj/ipfw.c 858>
+ 1209 				memset: <>
+ 1210 				isdigit: <>
+ 1211 				atoi: <>
+ 1212 				setsockopt: <>
+ 1213 				warn: <>
+ 1214 				exit: <>
+ 1215 			printf: <>
+ 1216 			fflush: <>
+ 1217 			toupper: <>
+ 1218 			getc: <>
+ 1219 			feof: <>
+ 1220 			setsockopt: <>
+ 1221 			err: 197
+ 1222 			zero: void (), <./ipfw.tproj/ipfw.c 1322>
+ 1223 				setsockopt: <>
+ 1224 				err: 197
+ 1225 				printf: <>
+ 1226 				memset: <>
+ 1227 				isdigit: <>
+ 1228 				atoi: <>
+ 1229 				warn: <>
+ 1230 				show_usage: 1078
+ 1231 				exit: <>
+ 1232 			list: void (), <./ipfw.tproj/ipfw.c 419>
+ 1233 				realloc: <>
+ 1234 				err: 197
+ 1235 				getsockopt: <>
+ 1236 				strtoul: <>
+ 1237 				sprintf: <>
+ 1238 				printf: <>
+ 1239 				free: <>
+ 1240 				show_ipfw: 1173
+ 1241 				warnx: <>
+ 1242 				exit: <>
+ 1243 		waitpid: <>
+ 1244 		WIFEXITED: <>
+ 1245 		WEXITSTATUS: <>
+ 1246 		WIFSIGNALED: <>
+ 1247 		WTERMSIG: <>
+ 1248 		strrchr: <>
+ 1249 		getescape: <>
+ 1250 		strncpy: <>
+ 1251 		des_set_key: void (), <./rlogin.tproj/des_rw.c 101>
+ 1252 		warning: , <./tcpdump.tproj/util.c 214>
+ 1253 			fprintf: <>
+ 1254 			va_start: <>
+ 1255 			vfprintf: 200
+ 1256 			va_end: <>
+ 1257 		getenv: <>
+ 1258 		get_window_size: int (), <./rlogin.tproj/rlogin.c 972>
+ 1259 			ioctl: <>
+ 1260 		sigemptyset: <>
+ 1261 		sigaction: <>
+ 1262 		sigaddset: <>
+ 1263 		sigprocmask: <>
+ 1264 		copytochild: void (), <./rlogin.tproj/rlogin.c 904>
+ 1265 			kill: , <./talk.tproj/display.c 140>
+ 1266 		writeroob: void (), <./rlogin.tproj/rlogin.c 497>
+ 1267 			sendwindow: void (), <./rlogin.tproj/rlogin.c 674>
+ 1268 			sigemptyset: <>
+ 1269 			sigwinch: void (), <./rlogin.tproj/rlogin.c 658>
+ 1270 			sigaction: <>
+ 1271 		gethostbyname: <>
+ 1272 		strdup: <>
+ 1273 		krb_realmofhost: <>
+ 1274 		krcmd_mutual: int (), <./rlogin.tproj/krcmd.c 134>
+ 1275 			kcmd: int (), <./rlogin.tproj/kcmd.c 92>
+ 1276 			fprintf: <>
+ 1277 		krcmd: int (), <./rlogin.tproj/krcmd.c 93>
+ 1278 			kcmd: int (), <./rlogin.tproj/kcmd.c 92>
+ 1279 			fprintf: <>
+ 1280 		rcmd: <>
+ 1281 		warn: <>
+ 1282 		setuid: <>
+ 1283 		doit: void (), <./telnetd.tproj/telnetd.c 822>
+ 1284 			tcgetattr: <>
+ 1285 			sigemptyset: <>
+ 1286 			sigaction: <>
+ 1287 			setsignal: void (), <./rlogin.tproj/rlogin.c 448>
+ 1288 				sigemptyset: <>
+ 1289 				sigaddset: <>
+ 1290 				sigprocmask: <>
+ 1291 				do_exit: void (), <./rlogin.tproj/rlogin.c 911>
+ 1292 					exit: <>
+ 1293 				sigaction: <>
+ 1294 			fork: switch (), <./telnetd.tproj/sys_term.c 2158>
+ 1295 			warn: <>
+ 1296 			reader: int (), <./rlogin.tproj/rlogin.c 798>
+ 1297 				getpid: <>
+ 1298 				sigemptyset: <>
+ 1299 				sigaction: <>
+ 1300 				oob: void (), <./rlogin.tproj/rlogin.c 711>
+ 1301 					recv: <>
+ 1302 					read: <>
+ 1303 					kill: , <./talk.tproj/display.c 140>
+ 1304 					tcgetattr: <>
+ 1305 					tcsetattr: <>
+ 1306 					ioctl: <>
+ 1307 					warn: <>
+ 1308 					longjmp: <>
+ 1309 				getppid: <>
+ 1310 				fcntl: <>
+ 1311 				setjmp: <>
+ 1312 				sigprocmask: <>
+ 1313 				write: <>
+ 1314 				des_read: int (), <./rlogin.tproj/des_rw.c 118>
+ 1315 				read: <>
+ 1316 				warn: <>
+ 1317 			exit: <>
+ 1318 			sleep: <>
+ 1319 			sigprocmask: <>
+ 1320 			catch_child: void (), <./rlogin.tproj/rlogin.c 513>
+ 1321 				waitpid: <>
+ 1322 				WIFSTOPPED: if (), <./telnetd.tproj/sys_term.c 1898>
+ 1323 				WEXITSTATUS: <>
+ 1324 				WTERMSIG: <>
+ 1325 			writer: void (), <./rlogin.tproj/rlogin.c 537>
+ 1326 				read: <>
+ 1327 				echo: <>
+ 1328 				des_write: int (), <./rlogin.tproj/des_rw.c 189>
+ 1329 					srandom: <>
+ 1330 					time: , <./talkd.tproj/table.c 197>
+ 1331 					random: <>
+ 1332 					bcopy: <>
+ 1333 					MIN: <>
+ 1334 					des_pcbc_encrypt: <>
+ 1335 					htonl: <>
+ 1336 					write: <>
+ 1337 					roundup: <>
+ 1338 				write: <>
+ 1339 			signal: <>
+ 1340 			open: <>
+ 1341 			ioctl: <>
+ 1342 			close: <>
+ 1343 			dup2: <>
+ 1344 			alarm: <>
+ 1345 			read: <>
+ 1346 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 1347 			bind: <>
+ 1348 			sockaddr: <>
+ 1349 			htons: <>
+ 1350 			connect: <>
+ 1351 			getstr: void (), <./rshd.tproj/rshd.c 745>
+ 1352 				read: <>
+ 1353 				exit: <>
+ 1354 				error: 244
+ 1355 			setpwent: <>
+ 1356 			getpwnam: <>
+ 1357 			error: 244
+ 1358 			endpwent: <>
+ 1359 			crypt: <>
+ 1360 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 1361 			chdir: <>
+ 1362 			write: <>
+ 1363 			pipe: <>
+ 1364 			select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+ 1365 			killpg: <>
+ 1366 			shutdown: <>
+ 1367 			setpgrp: <>
+ 1368 			getpid: <>
+ 1369 			setgid: <>
+ 1370 			initgroups: <>
+ 1371 			setuid: <>
+ 1372 			strcat: <>
+ 1373 			strncat: <>
+ 1374 			strrchr: <>
+ 1375 			execl: <>
+ 1376 			perror: <>
+ 1377 			fatal: void (), <./telnetd.tproj/utility.c 365>
+ 1378 				errx: <>
+ 1379 				reply: <>
+ 1380 					va_start: <>
+ 1381 					printf: <>
+ 1382 					vprintf: <>
+ 1383 					fflush: <>
+ 1384 					syslog: <>
+ 1385 					vsyslog: <>
+ 1386 				dologout:  (), <./uucpd.tproj/uucpd.c 260>
+ 1387 					seteuid: <>
+ 1388 					logwtmp: void (), <./timed.tproj/timed.tproj/master.c 906>
+ 1389 						open: <>
+ 1390 						fstat: <>
+ 1391 						strncpy: <>
+ 1392 						time: , <./talkd.tproj/table.c 197>
+ 1393 						write: <>
+ 1394 						ftruncate: <>
+ 1395 						setutent: <>
+ 1396 						pututline: <>
+ 1397 						endutent: <>
+ 1398 						close: <>
+ 1399 					wait: , <./timed.tproj/timed.tproj/master.c 486>
+ 1400 					wait3: <>
+ 1401 					open: <>
+ 1402 					sprintf: <>
+ 1403 					SCPYN: <>
+ 1404 					time: , <./talkd.tproj/table.c 197>
+ 1405 					write: <>
+ 1406 					close: <>
+ 1407 					dologin: <>
+ 1408 					gethostbyaddr: <>
+ 1409 					strncpy: <>
+ 1410 					endhostent: <>
+ 1411 					inet_ntoa: 140
+ 1412 					getpid: <>
+ 1413 					lseek: <>
+ 1414 					strcpy: <>
+ 1415 			ntohs: <>
+ 1416 			gethostbyaddr: <>
+ 1417 			strcpy: <>
+ 1418 			inet_ntoa: 140
+ 1419 			do_krb_login: <>
+ 1420 			syslog: <>
+ 1421 			getprotobyname: <>
+ 1422 			getsockopt: <>
+ 1423 			sprintf: <>
+ 1424 			setsockopt: <>
+ 1425 			do_rlogin: <>
+ 1426 			des_write: 1328
+ 1427 			forkpty: <>
+ 1428 			setup_term: void (), <./rlogind.tproj/rlogind.c 627>
+ 1429 			execle: <>
+ 1430 			cleanup: 808
+ 1431 			protocol: const char *, <./ipfw.tproj/ipfw.c 123>
+ 1432 			printf: <>
+ 1433 			fflush: <>
+ 1434 			readline: <>
+ 1435 			fprintf: <>
+ 1436 			dologin: <>
+ 1437 			rresvport: <>
+ 1438 			local_domain: int (), <./rshd.tproj/rshd.c 771>
+ 1439 				gethostname: <>
+ 1440 				topdomain: char * (), <./rshd.tproj/rshd.c 787>
+ 1441 					strlen: 146
+ 1442 				strcasecmp: if (), <./inetd.tproj/inetd.c 1284>
+ 1443 			strncpy: <>
+ 1444 			gethostbyname: <>
+ 1445 			bcmp: <>
+ 1446 			getsockname: <>
+ 1447 			krb_recvauth: <>
+ 1448 			des_set_key: 1251
+ 1449 			kuserok: <>
+ 1450 			iruserok: <>
+ 1451 			access: <>
+ 1452 			FD_ZERO: <>
+ 1453 			FD_SET: <>
+ 1454 			MAX: <>
+ 1455 			FD_ISSET: if (), <./telnetd.tproj/telnetd.c 1329>
+ 1456 			des_read: int (), <./rlogin.tproj/des_rw.c 118>
+ 1457 			FD_CLR: <>
+ 1458 			setlogin: <>
+ 1459 			getpty: int (), <./telnetd.tproj/sys_term.c 498>
+ 1460 				open: <>
+ 1461 				grantpt: <>
+ 1462 				unlockpt: <>
+ 1463 				strcpy: <>
+ 1464 				p1: <>
+ 1465 				p2: <>
+ 1466 				sprintf: <>
+ 1467 				stat: <>
+ 1468 				chown: <>
+ 1469 				chmod: <>
+ 1470 				ioctl: <>
+ 1471 				close: <>
+ 1472 				access: <>
+ 1473 			setdevs: <>
+ 1474 			strlen: 146
+ 1475 			gethostname: <>
+ 1476 			auth_encrypt_init: <>
+ 1477 			init_env: void (), <./telnetd.tproj/sys_term.c 1539>
+ 1478 				getenv: <>
+ 1479 			getterminaltype: int (), <./telnetd.tproj/telnetd.c 618>
+ 1480 				settimer: <>
+ 1481 				send_do: 972
+ 1482 				his_will_wont_is_changing: <>
+ 1483 				ttloop: void (), <./telnetd.tproj/utility.c 78>
+ 1484 					DIAG: <>
+ 1485 					sprintf: <>
+ 1486 					strlen: 146
+ 1487 					read: <>
+ 1488 					syslog: <>
+ 1489 					exit: <>
+ 1490 					telrcv: 796
+ 1491 				his_state_is_will: <>
+ 1492 				auth_wait: <>
+ 1493 				send_will: 1007
+ 1494 				his_do_dont_is_changing: <>
+ 1495 				encrypt_wait: <>
+ 1496 				memmove: <>
+ 1497 				DIAG: <>
+ 1498 				printsub: void (), <./telnetd.tproj/utility.c 540>
+ 1499 				sequenceIs: <>
+ 1500 				terminaltypeok: int (), <./telnetd.tproj/telnetd.c 784>
+ 1501 					tgetent: <>
+ 1502 				strncpy: <>
+ 1503 				strncmp: <>
+ 1504 				his_state_is_wont: if (), <./telnetd.tproj/telnetd.c 996>
+ 1505 			setenv: <>
+ 1506 			startslave: void (), <./telnetd.tproj/sys_term.c 1405>
+ 1507 				time: , <./talkd.tproj/table.c 197>
+ 1508 				fatal: 1377
+ 1509 				exit: <>
+ 1510 				utmp_sig_init: void (), <./telnetd.tproj/sys_term.c 1959>
+ 1511 					signal: <>
+ 1512 					fatalperror: void (), <./telnetd.tproj/utility.c 388>
+ 1513 				fork: switch (), <./telnetd.tproj/sys_term.c 2158>
+ 1514 				fatalperror: void (), <./telnetd.tproj/utility.c 388>
+ 1515 				setpgrp: <>
+ 1516 				utmp_sig_reset: void (), <./telnetd.tproj/sys_term.c 1969>
+ 1517 					signal: <>
+ 1518 				SCPYN: <>
+ 1519 				pututline: <>
+ 1520 				endutent: <>
+ 1521 				open: <>
+ 1522 				write: <>
+ 1523 				close: <>
+ 1524 				signal: <>
+ 1525 				sigjob: void (), <./telnetd.tproj/sys_term.c 2004>
+ 1526 					waitjob: <>
+ 1527 					jobend: <>
+ 1528 				utmp_sig_notify: void (), <./telnetd.tproj/sys_term.c 1994>
+ 1529 					kill: , <./talk.tproj/display.c 140>
+ 1530 				getptyslave: int (), <./telnetd.tproj/sys_term.c 1094>
+ 1531 					tty_linemode: int (), <./telnetd.tproj/sys_term.c 638>
+ 1532 					open: <>
+ 1533 					ioctl: <>
+ 1534 					close: <>
+ 1535 					utmp_sig_wait: void (), <./telnetd.tproj/sys_term.c 1980>
+ 1536 						sigoff: <>
+ 1537 						pause: <>
+ 1538 						sigon: <>
+ 1539 					cleanopen: int (), <./telnetd.tproj/sys_term.c 1240>
+ 1540 						chown: <>
+ 1541 						chmod: <>
+ 1542 						revoke: <>
+ 1543 						secstat: <>
+ 1544 						setulvl: <>
+ 1545 						setucmp: <>
+ 1546 						open: <>
+ 1547 						signal: <>
+ 1548 						vhangup: <>
+ 1549 						ioctl: <>
+ 1550 						close: <>
+ 1551 					fatalperror: void (), <./telnetd.tproj/utility.c 388>
+ 1552 					fatal: 1377
+ 1553 					init_termbuf: 822
+ 1554 					memset: <>
+ 1555 					tty_rspeed: void (), <./telnetd.tproj/sys_term.c 1035>
+ 1556 						cfsetispeed: <>
+ 1557 					tty_tspeed: void (), <./telnetd.tproj/sys_term.c 1018>
+ 1558 						cfsetospeed: <>
+ 1559 					tty_setlinemode: void (), <./telnetd.tproj/sys_term.c 652>
+ 1560 						set_termbuf: 957
+ 1561 						ioctl: <>
+ 1562 						init_termbuf: 822
+ 1563 					set_termbuf: 957
+ 1564 					login_tty: int (), <./telnetd.tproj/sys_term.c 1339>
+ 1565 						setsid: <>
+ 1566 						setpgrp: <>
+ 1567 						fatalperror: void (), <./telnetd.tproj/utility.c 388>
+ 1568 						ioctl: <>
+ 1569 						close: <>
+ 1570 						open: <>
+ 1571 						dup2: <>
+ 1572 				start_login: void (), <./telnetd.tproj/sys_term.c 1565>
+ 1573 					getpid: <>
+ 1574 					memset: <>
+ 1575 					SCPYN: <>
+ 1576 					time: , <./talkd.tproj/table.c 197>
+ 1577 					pututxline: <>
+ 1578 					fatal: 1377
+ 1579 					getenv: <>
+ 1580 					strcpy: <>
+ 1581 					strncat: <>
+ 1582 					setenv: <>
+ 1583 					init_termbuf: 822
+ 1584 					tty_isecho: int (), <./telnetd.tproj/sys_term.c 677>
+ 1585 					tty_israw: int (), <./telnetd.tproj/sys_term.c 728>
+ 1586 					tty_setecho: 1022
+ 1587 					tty_setraw: int (), <./telnetd.tproj/sys_term.c 739>
+ 1588 					set_termbuf: 957
+ 1589 					strlen: 146
+ 1590 					write: <>
+ 1591 					sprintf: <>
+ 1592 					unsetenv: <>
+ 1593 					close: <>
+ 1594 					closelog: <>
+ 1595 					sleep: <>
+ 1596 					execv: <>
+ 1597 					syslog: <>
+ 1598 					fatalperror: void (), <./telnetd.tproj/utility.c 388>
+ 1599 				sprintf: <>
+ 1600 				memset: <>
+ 1601 				getpid: <>
+ 1602 				alarm: <>
+ 1603 				read: <>
+ 1604 				strlen: 146
+ 1605 			setulvl: <>
+ 1606 			setucmp: <>
+ 1607 			telnet: , <./telnetd.tproj/telnetd.c 951>
+ 1608 				sys_telnet_init: void (), <./telnet.tproj/sys_bsd.c 964>
+ 1609 				gethostname: <>
+ 1610 				auth_encrypt_init: <>
+ 1611 				auth_encrypt_user: <>
+ 1612 				send_will: 1007
+ 1613 				send_do: 972
+ 1614 				env_getvalue: <>
+ 1615 				tel_enter_binary: void (), <./telnet.tproj/telnet.c 2656>
+ 1616 					send_do: 972
+ 1617 					send_will: 1007
+ 1618 				Scheduler: int (), <./telnet.tproj/telnet.c 2186>
+ 1619 					ring_full_count: <>
+ 1620 					my_want_state_is_wont: if (), <./telnet.tproj/telnet.c 495>
+ 1621 					my_want_state_is_do: <>
+ 1622 					my_want_state_is_will: <>
+ 1623 					ring_empty_count: <>
+ 1624 					signal: <>
+ 1625 					inputAvailable: void (), <./telnet.tproj/tn3270.c 190>
+ 1626 					process_rings: int (), <./telnet.tproj/sys_bsd.c 1009>
+ 1627 						FD_SET: <>
+ 1628 						select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+ 1629 						FD_ZERO: <>
+ 1630 						printf: <>
+ 1631 						sleep: <>
+ 1632 						FD_ISSET: if (), <./telnetd.tproj/telnetd.c 1329>
+ 1633 						FD_CLR: <>
+ 1634 						ttyflush: 831
+ 1635 						ring_empty_consecutive: <>
+ 1636 						ioctl: <>
+ 1637 						recv: <>
+ 1638 						stilloob: 863
+ 1639 						memcmp: <>
+ 1640 						read: <>
+ 1641 						settimer: <>
+ 1642 						Dump: void (), <./telnet.tproj/utilities.c 151>
+ 1643 						ring_supplied: <>
+ 1644 						TerminalRead: int (), <./telnet.tproj/sys_bsd.c 165>
+ 1645 							read: <>
+ 1646 						MODE_LOCAL_CHARS: <>
+ 1647 						isatty: <>
+ 1648 						netflush: 888
+ 1649 					DataFromTerminal: <>
+ 1650 					ring_full_consecutive: <>
+ 1651 					ring_consumed: <>
+ 1652 					telsnd: int (), <./telnet.tproj/telnet.c 2035>
+ 1653 						NETROOM: <>
+ 1654 						ring_consumed: <>
+ 1655 						ring_full_consecutive: <>
+ 1656 						strip: <>
+ 1657 						command: 639
+ 1658 						settimer: <>
+ 1659 						setconnmode: 729
+ 1660 						MODE_LOCAL_CHARS: <>
+ 1661 						TerminalSpecialChars: int (), <./telnet.tproj/sys_bsd.c 207>
+ 1662 							intp: void (), <./telnet.tproj/telnet.c 2550>
+ 1663 								NET2ADD: <>
+ 1664 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1665 								doflush: 828
+ 1666 								dosynch: 842
+ 1667 							sendbrk: 825
+ 1668 							sendabort: void (), <./telnet.tproj/telnet.c 2578>
+ 1669 								NET2ADD: <>
+ 1670 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1671 								doflush: 828
+ 1672 								dosynch: 842
+ 1673 							my_want_state_is_will: <>
+ 1674 							sendeof: void (), <./telnet.tproj/telnet.c 2606>
+ 1675 								NET2ADD: <>
+ 1676 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1677 							sendsusp: 877
+ 1678 							xmitAO: void (), <./telnet.tproj/telnet.c 2485>
+ 1679 								NET2ADD: <>
+ 1680 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1681 								doflush: 828
+ 1682 							MODE_LOCAL_CHARS: <>
+ 1683 							xmitEL: void (), <./telnet.tproj/telnet.c 2496>
+ 1684 								NET2ADD: <>
+ 1685 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1686 							xmitEC: void (), <./telnet.tproj/telnet.c 2503>
+ 1687 								NET2ADD: <>
+ 1688 								printoption: void (), <./telnet.tproj/utilities.c 203>
+ 1689 						my_want_state_is_wont: if (), <./telnet.tproj/telnet.c 495>
+ 1690 						NETADD: <>
+ 1691 						NET2ADD: <>
+ 1692 					telrcv: 796
+ 1693 					Push3270: int (), <./telnet.tproj/tn3270.c 261>
+ 1694 				setcommandmode: 709
+ 1695 				ring_full_count: <>
+ 1696 				shell_continue: <>
+ 1697 				ConnectScreen: <>
+ 1698 				DoTerminalOutput: <>
+ 1699 		warnx: <>
+ 1700 		strpbrk: <>
+ 1701 		store: void (), <./ftpd.tproj/ftpd.c 720>
+ 1702 			stat: <>
+ 1703 			gunique: char * (), <./ftp.tproj/ftp.c 1458>
+ 1704 				strrchr: <>
+ 1705 				access: <>
+ 1706 				warn: <>
+ 1707 				strcpy: <>
+ 1708 				strlen: 146
+ 1709 				printf: <>
+ 1710 			LOGCMD: <>
+ 1711 			fopen: <>
+ 1712 			fclose: <>
+ 1713 			perror_reply: void (), <./ftpd.tproj/ftpd.c 1499>
+ 1714 				reply: 1379
+ 1715 				strerror: <>
+ 1716 			getc: <>
+ 1717 			fseek: <>
+ 1718 			lseek: <>
+ 1719 			fileno: <>
+ 1720 			dataconn: FILE * (), <./ftp.tproj/ftp.c 1135>
+ 1721 				fdopen: <>
+ 1722 				accept: <>
+ 1723 				sockaddr: <>
+ 1724 				warn: <>
+ 1725 				close: <>
+ 1726 				setsockopt: <>
+ 1727 			receive_data: int (), <./ftpd.tproj/ftpd.c 989>
+ 1728 				setjmp: <>
+ 1729 				read: <>
+ 1730 				fileno: <>
+ 1731 				write: <>
+ 1732 				reply: 1379
+ 1733 				getc: <>
+ 1734 				ferror: <>
+ 1735 				putc: <>
+ 1736 				fflush: <>
+ 1737 				lreply: <>
+ 1738 					va_start: <>
+ 1739 					printf: <>
+ 1740 					vprintf: <>
+ 1741 					fflush: <>
+ 1742 					syslog: <>
+ 1743 					vsyslog: <>
+ 1744 				printf: <>
+ 1745 				perror_reply: 1713
+ 1746 			reply: 1379
+ 1747 			pdata: int, <./ftpd.tproj/ftpd.c 140>
+ 1748 			LOGBYTES: <>
+ 1749 		mstore: <>
+ 1750 		bzero: <>
+ 1751 		bind_host: int (), <./ypwhich.tproj/ypwhich.c 107>
+ 1752 			clntudp_create: <>
+ 1753 			fprintf: <>
+ 1754 			yperr_string: <>
+ 1755 			clnt_call: <>
+ 1756 			xdr_domainname: 310
+ 1757 			xdr_ypbind_resp: 312
+ 1758 			clnt_destroy: <>
+ 1759 			memmove: <>
+ 1760 			gethostbyaddr: <>
+ 1761 			printf: <>
+ 1762 			inet_ntoa: 140
+ 1763 		inet_addr: <>
+ 1764 		bcopy: <>
+ 1765 		free: <>
+ 1766 		yp_maplist: <>
+ 1767 		strcat: <>
+ 1768 		chdir: <>
+ 1769 		sig_child: void (), <./ypserv.tproj/ypserv.c 539>
+ 1770 			wait3: <>
+ 1771 		yppasswddprog_1: void (), <./rpc_yppasswdd.tproj/rpc.yppasswdd.c 168>
+ 1772 			bool_t: <>
+ 1773 			svc_sendreply: <>
+ 1774 			yppasswdproc_update_1_svc: int * (), <./rpc_yppasswdd.tproj/yppasswdd_proc.c 71>
+ 1775 				bzero: <>
+ 1776 				make_passwd: int (), <./rpc_yppasswdd.tproj/yppasswdd_mkpw.c 192>
+ 1777 					pw_init: void (), <./rpc_yppasswdd.tproj/passwd.c 155>
+ 1778 						setrlimit: <>
+ 1779 						signal: <>
+ 1780 						pw_cont: void (), <./rpc_yppasswdd.tproj/passwd.c 146>
+ 1781 							kill: , <./talk.tproj/display.c 140>
+ 1782 					open: <>
+ 1783 					fstat: <>
+ 1784 					malloc: <>
+ 1785 					read: <>
+ 1786 					close: <>
+ 1787 					subst: int (), <./rpc_yppasswdd.tproj/yppasswdd_mkpw.c 175>
+ 1788 					strchr: <>
+ 1789 					syslog: <>
+ 1790 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 1791 					EXPAND: <>
+ 1792 					atoi: <>
+ 1793 					atol: <>
+ 1794 					crypt: <>
+ 1795 					badchars: int (), <./rpc_yppasswdd.tproj/yppasswdd_mkpw.c 155>
+ 1796 						isprint: if (), <./tcpdump.tproj/parsenfsfh.c 428>
+ 1797 						strchr: <>
+ 1798 					strlen: 146
+ 1799 					sprintf: <>
+ 1800 					pw_lock: int (), <./rpc_yppasswdd.tproj/passwd.c 88>
+ 1801 						umask: <>
+ 1802 						open: <>
+ 1803 						sleep: <>
+ 1804 					pw_mkdb: int (), <./rpc_yppasswdd.tproj/passwd.c 107>
+ 1805 						stat: <>
+ 1806 						warnx: <>
+ 1807 						vfork: <>
+ 1808 						execl: <>
+ 1809 						waitpid: <>
+ 1810 						WIFEXITED: <>
+ 1811 						WEXITSTATUS: <>
+ 1812 					free: <>
+ 1813 					fork: switch (), <./telnetd.tproj/sys_term.c 2158>
+ 1814 					chdir: <>
+ 1815 					umask: <>
+ 1816 					system: <>
+ 1817 					exit: <>
+ 1818 				svc_sendreply: <>
+ 1819 				svcerr_systemerr: <>
+ 1820 				svc_freeargs: if (), <./yppush.tproj/yppush_svc.c 147>
+ 1821 				fprintf: <>
+ 1822 				exit: <>
+ 1823 			svcerr_noproc: <>
+ 1824 			bzero: <>
+ 1825 			svc_getargs: if (), <./yppush.tproj/yppush_svc.c 137>
+ 1826 			svcerr_decode: <>
+ 1827 		svc_run: <>
+ 1828 		list_database: void (), <./makedbm.tproj/makedbm.c 166>
+ 1829 			ypdb_open: <>
+ 1830 			db_hash_list_database: int (), <./makedbm.tproj/db.c 74>
+ 1831 				snprintf: <>
+ 1832 				dbopen: <>
+ 1833 				printf: <>
+ 1834 			fprintf: <>
+ 1835 			exit: <>
+ 1836 			ypdb_firstkey: <>
+ 1837 			ypdb_fetch: <>
+ 1838 			printf: <>
+ 1839 			ypdb_nextkey: <>
+ 1840 			ypdb_close: <>
+ 1841 		create_database: void (), <./makedbm.tproj/makedbm.c 204>
+ 1842 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 1843 			fopen: <>
+ 1844 			fprintf: <>
+ 1845 			perror: <>
+ 1846 			exit: <>
+ 1847 			strlen: 146
+ 1848 			snprintf: <>
+ 1849 			strrchr: <>
+ 1850 			mktemp: <>
+ 1851 			ypdb_open: <>
+ 1852 			read_line: int (), <./makedbm.tproj/makedbm.c 79>
+ 1853 				fgets: <>
+ 1854 				strlen: 146
+ 1855 				getc: <>
+ 1856 				isascii: <>
+ 1857 				isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 1858 				ungetc: <>
+ 1859 				feof: <>
+ 1860 			isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 1861 			isupper: <>
+ 1862 			tolower: <>
+ 1863 			add_record: void (), <./makedbm.tproj/makedbm.c 114>
+ 1864 				strlen: 146
+ 1865 				ypdb_fetch: <>
+ 1866 				ypdb_store: <>
+ 1867 				printf: <>
+ 1868 				exit: <>
+ 1869 			fclose: <>
+ 1870 			file_date: char * (), <./makedbm.tproj/makedbm.c 144>
+ 1871 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 1872 				sprintf: <>
+ 1873 				time: , <./talkd.tproj/table.c 197>
+ 1874 				stat: <>
+ 1875 				fprintf: <>
+ 1876 				exit: <>
+ 1877 			gethostname: <>
+ 1878 			ypdb_close: <>
+ 1879 			rename: <>
+ 1880 		lseek: <>
+ 1881 		setlinebuf: <>
+ 1882 		fputs: <>
+ 1883 		sscanf: <>
+ 1884 		nlist: <>
+ 1885 		perror: <>
+ 1886 		read: <>
+ 1887 		klseek:  (), <./trpt.tproj/trpt.c 427>
+ 1888 		qsort: <>
+ 1889 		putchar: <>
+ 1890 		dotrace: <>
+ 1891 		get_names:  (), <./talk.tproj/get_names.c 72>
+ 1892 			printf: <>
+ 1893 			exit: <>
+ 1894 			isatty: <>
+ 1895 			getlogin: <>
+ 1896 			getpwuid: <>
+ 1897 			getuid: if (), <./rpcinfo.tproj/rpcinfo.c 618>
+ 1898 			gethostname: <>
+ 1899 			index: return, <./pcap/gencode.c 1508>
+ 1900 			get_addrs:  (), <./talk.tproj/get_addrs.c 66>
+ 1901 				htonl: <>
+ 1902 				getpid: <>
+ 1903 				gethostbyname: <>
+ 1904 				fprintf: <>
+ 1905 				herror: <>
+ 1906 				exit: <>
+ 1907 				bcopy: <>
+ 1908 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 1909 				getservbyname: <>
+ 1910 			htons: <>
+ 1911 			htonl: <>
+ 1912 			strncpy: <>
+ 1913 		init_display:  (), <./talk.tproj/init_disp.c 74>
+ 1914 			initscr: <>
+ 1915 			errx: <>
+ 1916 			sigvec: <>
+ 1917 			sigmask: <>
+ 1918 			refresh: <>
+ 1919 			noecho: <>
+ 1920 			crmode: <>
+ 1921 			signal: <>
+ 1922 			newwin: <>
+ 1923 			scrollok: <>
+ 1924 			wclear: <>
+ 1925 			box: <>
+ 1926 			wrefresh: <>
+ 1927 		open_ctl:  (), <./talk.tproj/ctl.c 104>
+ 1928 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 1929 			p_error:  (), <./talk.tproj/io.c 138>
+ 1930 				wmove: <>
+ 1931 				wprintw: <>
+ 1932 				strerror: <>
+ 1933 				wrefresh: <>
+ 1934 				move: <>
+ 1935 				refresh: <>
+ 1936 				quit: 684
+ 1937 			bind: <>
+ 1938 			sockaddr: <>
+ 1939 			getsockname: <>
+ 1940 		open_sockt:  (), <./talk.tproj/ctl.c 87>
+ 1941 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 1942 			p_error: 1929
+ 1943 			bind: <>
+ 1944 			sockaddr: <>
+ 1945 			getsockname: <>
+ 1946 		start_msgs:  (), <./talk.tproj/msgs.c 79>
+ 1947 			signal: <>
+ 1948 			disp_msg: void (), <./talk.tproj/msgs.c 74>
+ 1949 			setitimer: <>
+ 1950 		check_local:  (), <./talk.tproj/look_up.c 69>
+ 1951 			htons: <>
+ 1952 			sockaddr: <>
+ 1953 			look_for_invite:  (), <./talk.tproj/look_up.c 117>
+ 1954 				ctl_transact:  (), <./talk.tproj/ctl_transact.c 73>
+ 1955 					sendto: <>
+ 1956 					sockaddr: <>
+ 1957 					p_error: 1929
+ 1958 					select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+ 1959 					recv: <>
+ 1960 					timerclear: <>
+ 1961 					ntohl: <>
+ 1962 					ntohs: <>
+ 1963 				htonl: <>
+ 1964 			p_error: 1929
+ 1965 			connect: <>
+ 1966 			ctl_transact: 1954
+ 1967 			close: <>
+ 1968 			open_sockt: 1940
+ 1969 		invite_remote:  (), <./talk.tproj/invite.c 85>
+ 1970 			listen: <>
+ 1971 			p_error: 1929
+ 1972 			htons: <>
+ 1973 			sockaddr: <>
+ 1974 			htonl: <>
+ 1975 			announce_invite:  (), <./talk.tproj/invite.c 168>
+ 1976 				ctl_transact: 1954
+ 1977 				quit: 684
+ 1978 			end_msgs:  (), <./talk.tproj/msgs.c 90>
+ 1979 				timerclear: <>
+ 1980 				setitimer: <>
+ 1981 				signal: <>
+ 1982 			setitimer: <>
+ 1983 			signal: <>
+ 1984 			re_invite: void (), <./talk.tproj/invite.c 141>
+ 1985 				htonl: <>
+ 1986 				announce_invite: 1975
+ 1987 				longjmp: <>
+ 1988 			setjmp: <>
+ 1989 			accept: <>
+ 1990 			close: <>
+ 1991 			start_msgs: 1946
+ 1992 			ctl_transact: 1954
+ 1993 		end_msgs: 1978
+ 1994 		set_edit_chars:  (), <./talk.tproj/init_disp.c 117>
+ 1995 			ioctl: <>
+ 1996 			write: <>
+ 1997 			p_error: 1929
+ 1998 			read: <>
+ 1999 		talk: void (), <./rsh.tproj/rsh.c 335>
+ 2000 		freopen: <>
+ 2001 		pencode: <>
+ 2002 		execv: <>
+ 2003 		copyargs: char * (), <./rsh.tproj/rsh.c 468>
+ 2004 		sendsig: void (), <./rsh.tproj/rsh.c 433>
+ 2005 		ioctl: <>
+ 2006 		strtol: <>
+ 2007 		memset: <>
+ 2008 		sigvec: <>
+ 2009 		config: void (), <./inetd.tproj/inetd.c 522>
+ 2010 			setconfig: int (), <./inetd.tproj/inetd.c 729>
+ 2011 				fseek: <>
+ 2012 				fopen: <>
+ 2013 			syslog: <>
+ 2014 			getconfigent: struct servtab (), <./inetd.tproj/inetd.c 750>
+ 2015 			getpwnam: <>
+ 2016 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2017 			sigblock: <>
+ 2018 			SWAP: <>
+ 2019 			sigsetmask: <>
+ 2020 			freeconfig: void (), <./inetd.tproj/inetd.c 849>
+ 2021 				free: <>
+ 2022 			print_service: void (), <./inetd.tproj/inetd.c 1204>
+ 2023 				fprintf: <>
+ 2024 			enter: <>
+ 2025 			ISMUX: <>
+ 2026 			getservbyname: <>
+ 2027 			close_sep: void (), <./inetd.tproj/inetd.c 685>
+ 2028 				FD_CLR: <>
+ 2029 				close: <>
+ 2030 			setup: 57
+ 2031 			endconfig: void (), <./inetd.tproj/inetd.c 741>
+ 2032 				fclose: <>
+ 2033 			free: <>
+ 2034 		reapchild: void (), <./nfsiod.tproj/nfsiod.c 172>
+ 2035 			wait3: <>
+ 2036 			fprintf: <>
+ 2037 			syslog: <>
+ 2038 			FD_SET: <>
+ 2039 		setenv: <>
+ 2040 		sigpause: <>
+ 2041 		sleep: <>
+ 2042 		accept: <>
+ 2043 		sockaddr: <>
+ 2044 		tcpmux: struct servtab (), <./inetd.tproj/inetd.c 1249>
+ 2045 		close_sep: 2027
+ 2046 		alarm: <>
+ 2047 		FD_CLR: <>
+ 2048 		setsid: <>
+ 2049 		recv: <>
+ 2050 		initgroups: <>
+ 2051 		bind_tohost: int (), <./ypset.tproj/ypset.c 85>
+ 2052 			htons: <>
+ 2053 			getrpcport: <>
+ 2054 			fprintf: <>
+ 2055 			exit: <>
+ 2056 			clntudp_create: <>
+ 2057 			authunix_create_default: <>
+ 2058 			bzero: <>
+ 2059 			gethostbyname: <>
+ 2060 			bcopy: <>
+ 2061 			inet_addr: <>
+ 2062 			clnt_call: <>
+ 2063 			xdr_ypbind_setdom: 333
+ 2064 			clnt_sperror: <>
+ 2065 			clnt_destroy: <>
+ 2066 		geteuid: <>
+ 2067 		acl_init: int (), <./ypserv.tproj/acl.c 177>
+ 2068 			fopen: <>
+ 2069 			acl_read_line: int (), <./ypserv.tproj/acl.c 76>
+ 2070 				fgets: <>
+ 2071 				isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 2072 				strlen: 146
+ 2073 				feof: <>
+ 2074 			strlen: 146
+ 2075 			isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 2076 			tolower: <>
+ 2077 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2078 			acl_add_net: void (), <./ypserv.tproj/acl.c 139>
+ 2079 				malloc: <>
+ 2080 			inet_aton: <>
+ 2081 			acl_add_host: void (), <./ypserv.tproj/acl.c 165>
+ 2082 				htonl: <>
+ 2083 				acl_add_net: 2078
+ 2084 			gethostbyname: <>
+ 2085 			getnetbyname: <>
+ 2086 			ntohl: <>
+ 2087 			htonl: <>
+ 2088 			fprintf: <>
+ 2089 			fflush: <>
+ 2090 			fclose: <>
+ 2091 		acl_securenet: int (), <./ypserv.tproj/acl.c 479>
+ 2092 			fopen: <>
+ 2093 			htonl: <>
+ 2094 			acl_add_net: 2078
+ 2095 			acl_read_line: 2069
+ 2096 			strlen: 146
+ 2097 			isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 2098 			tolower: <>
+ 2099 			inet_aton: <>
+ 2100 			getnetbyname: <>
+ 2101 			ntohl: <>
+ 2102 			fprintf: <>
+ 2103 			fflush: <>
+ 2104 			fclose: <>
+ 2105 		getsockname: <>
+ 2106 		getsockopt: <>
+ 2107 		getdtablesize: <>
+ 2108 		ypdb_init: void (), <./ypserv.tproj/ypserv_db.c 124>
+ 2109 			LIST_INIT: <>
+ 2110 			CIRCLEQ_INIT: <>
+ 2111 		sig_hup: void (), <./ypserv.tproj/ypserv.c 549>
+ 2112 			acl_reset: void (), <./ypserv.tproj/acl.c 632>
+ 2113 				free: <>
+ 2114 			yplog: 455
+ 2115 			acl_init: 2067
+ 2116 			acl_securenet: 2091
+ 2117 		ypprog_1: void (), <./ypserv.tproj/ypserv.c 145>
+ 2118 			ypproc_null_1_svc: void * (), <./ypserv.tproj/ypserv_proc.c 616>
+ 2119 				svc_getcaller: <>
+ 2120 				acl_check_host: int (), <./ypserv.tproj/acl.c 123>
+ 2121 				YPLOG: <>
+ 2122 				inet_ntoa: 140
+ 2123 				ntohs: <>
+ 2124 				TORF: <>
+ 2125 				svcerr_auth: <>
+ 2126 			xdr_domainname: 310
+ 2127 			xdr_bool: <>
+ 2128 			ypproc_domain_1_svc: bool_t * (), <./ypserv.tproj/ypserv_proc.c 638>
+ 2129 				svc_getcaller: <>
+ 2130 				acl_check_host: 2120
+ 2131 				strchr: <>
+ 2132 				snprintf: <>
+ 2133 				bool_t: <>
+ 2134 				stat: <>
+ 2135 				YPLOG: <>
+ 2136 				inet_ntoa: 140
+ 2137 				ntohs: <>
+ 2138 				TORF: <>
+ 2139 				svcerr_auth: <>
+ 2140 			ypproc_domain_nonack_1_svc: bool_t * (), <./ypserv.tproj/ypserv_proc.c 668>
+ 2141 				svc_getcaller: <>
+ 2142 				acl_check_host: 2120
+ 2143 				strchr: <>
+ 2144 				snprintf: <>
+ 2145 				bool_t: <>
+ 2146 				stat: <>
+ 2147 				YPLOG: <>
+ 2148 				inet_ntoa: 140
+ 2149 				ntohs: <>
+ 2150 				TORF: <>
+ 2151 				svcerr_auth: <>
+ 2152 			xdr_yprequest: bool_t (), <./ypserv.tproj/ypserv_xdr_v1.c 64>
+ 2153 				xdr_ypreqtype: bool_t (), <./ypserv.tproj/ypserv_xdr_v1.c 36>
+ 2154 					xdr_enum: <>
+ 2155 				printf: <>
+ 2156 				xdr_ypreq_key: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 163>
+ 2157 					xdr_domainname: 310
+ 2158 					xdr_mapname: __private_extern__ bool_t (), <./yppush.tproj/yppush_xdr.c 78>
+ 2159 						xdr_string: <>
+ 2160 					xdr_keydat: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 110>
+ 2161 						xdr_bytes: <>
+ 2162 				xdr_ypmap_parms: bool_t (), <./yppush.tproj/yppush_xdr.c 101>
+ 2163 					xdr_domainname: 310
+ 2164 					xdr_mapname: 2158
+ 2165 					xdr_u_int: <>
+ 2166 					xdr_peername: __private_extern__ bool_t (), <./yppush.tproj/yppush_xdr.c 90>
+ 2167 						xdr_string: <>
+ 2168 			xdr_ypresponse: bool_t (), <./ypserv.tproj/ypserv_xdr_v1.c 99>
+ 2169 				xdr_ypresptype: bool_t (), <./ypserv.tproj/ypserv_xdr_v1.c 50>
+ 2170 					xdr_enum: <>
+ 2171 				xdr_ypresp_val: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 225>
+ 2172 					xdr_ypstat: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 36>
+ 2173 						xdr_enum: <>
+ 2174 					xdr_valdat: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 125>
+ 2175 						xdr_bytes: <>
+ 2176 				xdr_ypresp_key_val: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 243>
+ 2177 					xdr_ypstat: 2172
+ 2178 					xdr_valdat: 2174
+ 2179 					xdr_keydat: 2160
+ 2180 				xdr_ypmap_parms: 2162
+ 2181 			ypproc_match_1_svc: ypresponse * (), <./ypserv.tproj/ypserv_proc.c 703>
+ 2182 				svc_getcaller: <>
+ 2183 				acl_check_host: 2120
+ 2184 				strchr: <>
+ 2185 				ypdb_secure: int (), <./ypserv.tproj/ypserv_db.c 790>
+ 2186 					bzero: <>
+ 2187 					ypdb_open_db: DBM * (), <./ypserv.tproj/ypserv_db.c 246>
+ 2188 						strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2189 						yplog: 455
+ 2190 						CIRCLEQ_REMOVE: <>
+ 2191 						CIRCLEQ_INSERT_HEAD: <>
+ 2192 						strchr: <>
+ 2193 						snprintf: <>
+ 2194 						ypdb_open: <>
+ 2195 						ypdb_close_last: void (), <./ypserv.tproj/ypserv_db.c 182>
+ 2196 							yplog: 455
+ 2197 							CIRCLEQ_REMOVE: <>
+ 2198 							LIST_REMOVE: <>
+ 2199 							ypdb_close: <>
+ 2200 							free: <>
+ 2201 						malloc: <>
+ 2202 						strdup: <>
+ 2203 						ypdb_close: <>
+ 2204 						free: <>
+ 2205 						LIST_INIT: <>
+ 2206 						LIST_INSERT_HEAD: <>
+ 2207 						ypdb_fetch: <>
+ 2208 					ypdb_close_db: void (), <./ypserv.tproj/ypserv_db.c 230>
+ 2209 						yplog: 455
+ 2210 						ypdb_close_all: void (), <./ypserv.tproj/ypserv_db.c 211>
+ 2211 							yplog: 455
+ 2212 							ypdb_close_last: 2195
+ 2213 				YPLOG: <>
+ 2214 				inet_ntoa: 140
+ 2215 				ntohs: <>
+ 2216 				TORF: <>
+ 2217 				svcerr_auth: <>
+ 2218 				ypdb_get_record: ypresp_val (), <./ypserv.tproj/ypserv_db.c 501>
+ 2219 					bzero: <>
+ 2220 					ypdb_open_db: 2187
+ 2221 					yp_private: int (), <./ypserv.tproj/ypserv_db.c 139>
+ 2222 						strncmp: <>
+ 2223 					ypdb_fetch: <>
+ 2224 					ypdb_close_db: 2208
+ 2225 				yplog: 455
+ 2226 				yperr_string: <>
+ 2227 				ypprot_err: <>
+ 2228 			ypproc_first_1_svc: ypresponse * (), <./ypserv.tproj/ypserv_proc.c 758>
+ 2229 				svc_getcaller: <>
+ 2230 				acl_check_host: 2120
+ 2231 				strchr: <>
+ 2232 				ypdb_secure: 2185
+ 2233 				YPLOG: <>
+ 2234 				inet_ntoa: 140
+ 2235 				ntohs: <>
+ 2236 				TORF: <>
+ 2237 				svcerr_auth: <>
+ 2238 				ypdb_get_first: ypresp_key_val (), <./ypserv.tproj/ypserv_db.c 549>
+ 2239 					bzero: <>
+ 2240 					ypdb_open_db: 2187
+ 2241 					ypdb_firstkey: <>
+ 2242 					yp_private: 2221
+ 2243 					ypdb_nextkey: <>
+ 2244 					ypdb_fetch: <>
+ 2245 					ypdb_close_db: 2208
+ 2246 				yplog: 455
+ 2247 				yperr_string: <>
+ 2248 				ypprot_err: <>
+ 2249 			ypproc_next_1_svc: ypresponse * (), <./ypserv.tproj/ypserv_proc.c 810>
+ 2250 				svc_getcaller: <>
+ 2251 				acl_check_host: 2120
+ 2252 				strchr: <>
+ 2253 				ypdb_secure: 2185
+ 2254 				YPLOG: <>
+ 2255 				inet_ntoa: 140
+ 2256 				ntohs: <>
+ 2257 				TORF: <>
+ 2258 				svcerr_auth: <>
+ 2259 				ypdb_get_next: ypresp_key_val (), <./ypserv.tproj/ypserv_db.c 591>
+ 2260 					bzero: <>
+ 2261 					ypdb_open_db: 2187
+ 2262 					ypdb_setkey: <>
+ 2263 					ypdb_nextkey: <>
+ 2264 					yp_private: 2221
+ 2265 					ypdb_fetch: <>
+ 2266 					ypdb_close_db: 2208
+ 2267 				yplog: 455
+ 2268 				yperr_string: <>
+ 2269 				ypprot_err: <>
+ 2270 			ypproc_poll_1_svc: ypresponse * (), <./ypserv.tproj/ypserv_proc.c 865>
+ 2271 				master: int (), <./timed.tproj/timed.tproj/master.c 102>
+ 2272 					syslog: <>
+ 2273 					fprintf: <>
+ 2274 					masterup: <>
+ 2275 					gettimeofday: <>
+ 2276 					justquit: void (), <./tftpd.tproj/tftpd.c 515>
+ 2277 						exit: <>
+ 2278 					readmsg: struct tsp (), <./timed.tproj/timed.tproj/readmsg.c 100>
+ 2279 					get_goodgroup: 120
+ 2280 					trace_msg: <>
+ 2281 					lookformaster: void (), <./timed.tproj/timed.tproj/timed.c 633>
+ 2282 						get_goodgroup: 120
+ 2283 						strcpy: <>
+ 2284 						acksend: <>
+ 2285 						good_host_name: 136
+ 2286 						suppress: void (), <./timed.tproj/timed.tproj/timed.c 605>
+ 2287 							fprintf: <>
+ 2288 							strcpy: <>
+ 2289 							readmsg: struct tsp (), <./timed.tproj/timed.tproj/readmsg.c 100>
+ 2290 							syslog: <>
+ 2291 							acksend: <>
+ 2292 						readmsg: struct tsp (), <./timed.tproj/timed.tproj/readmsg.c 100>
+ 2293 						strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2294 						syslog: <>
+ 2295 					setstatus: 138
+ 2296 					synch: <>
+ 2297 					strcpy: <>
+ 2298 					bytenetorder: void (), <./timed.tproj/timed.tproj/byteorder.c 72>
+ 2299 						htons: <>
+ 2300 						htonl: <>
+ 2301 					sendto: <>
+ 2302 					sockaddr: <>
+ 2303 					trace_sendto_err: <>
+ 2304 					newslave: <>
+ 2305 					cftime: <>
+ 2306 					ctime: <>
+ 2307 					good_host_name: 136
+ 2308 					spreadtime: void (), <./timed.tproj/timed.tproj/master.c 517>
+ 2309 					mchgdate: void (), <./timed.tproj/timed.tproj/master.c 383>
+ 2310 						strcpy: <>
+ 2311 						xmit: void (), <./timed.tproj/timed.tproj/acksend.c 72>
+ 2312 							strcpy: <>
+ 2313 							bytenetorder: 2298
+ 2314 							sendto: <>
+ 2315 							sockaddr: <>
+ 2316 							trace_sendto_err: <>
+ 2317 						date: char * (), <./timed.tproj/timed.tproj/timed.c 855>
+ 2318 						gettimeofday: <>
+ 2319 						adj_msg_time: <>
+ 2320 						timevalsub:  (), <./routed.tproj/main.c 292>
+ 2321 						synch: <>
+ 2322 						tvtomsround: <>
+ 2323 						settimeofday: <>
+ 2324 						syslog: <>
+ 2325 						logwtmp: 1388
+ 2326 						spreadtime: void (), <./timed.tproj/timed.tproj/master.c 517>
+ 2327 					findhost: struct hosttbl (), <./timed.tproj/timed.tproj/master.c 592>
+ 2328 					xmit: 2311
+ 2329 					traceon: void (), <./timed.tproj/timed.tproj/master.c 866>
+ 2330 					traceoff: 119
+ 2331 					addmach: struct hosttbl * (), <./timed.tproj/timed.tproj/master.c 619>
+ 2332 					acksend: <>
+ 2333 					doquit: <>
+ 2334 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2335 					inet_ntoa: 140
+ 2336 					remmach: <>
+ 2337 					print: void (), <./timed.tproj/timed.tproj/readmsg.c 456>
+ 2338 						Printf: <>
+ 2339 						inet_ntoa: 140
+ 2340 						inetname: <>
+ 2341 						fprintf: <>
+ 2342 						cftime: <>
+ 2343 						strncpy: <>
+ 2344 						ctime: <>
+ 2345 				svc_getcaller: <>
+ 2346 				acl_check_host: 2120
+ 2347 				strchr: <>
+ 2348 				ypdb_secure: 2185
+ 2349 				YPLOG: <>
+ 2350 				inet_ntoa: 140
+ 2351 				ntohs: <>
+ 2352 				TORF: <>
+ 2353 				svcerr_auth: <>
+ 2354 				ypdb_get_order: ypresp_order (), <./ypserv.tproj/ypserv_db.c 649>
+ 2355 					bzero: <>
+ 2356 					ypdb_open_db: 2187
+ 2357 					ypdb_fetch: <>
+ 2358 					strncpy: <>
+ 2359 					atol: <>
+ 2360 					ypdb_close_db: 2208
+ 2361 				ypdb_get_master: ypresp_master (), <./ypserv.tproj/ypserv_db.c 684>
+ 2362 					bzero: <>
+ 2363 					ypdb_open_db: 2187
+ 2364 					ypdb_fetch: <>
+ 2365 					strncpy: <>
+ 2366 					ypdb_close_db: 2208
+ 2367 				yplog: 455
+ 2368 			ypproc_push_1_svc: void * (), <./ypserv.tproj/ypserv_proc.c 918>
+ 2369 				svc_getcaller: <>
+ 2370 				acl_check_host: 2120
+ 2371 				strchr: <>
+ 2372 				ypdb_secure: 2185
+ 2373 				YPLOG: <>
+ 2374 				inet_ntoa: 140
+ 2375 				ntohs: <>
+ 2376 				TORF: <>
+ 2377 				svcerr_auth: <>
+ 2378 				vfork: <>
+ 2379 				svcerr_systemerr: <>
+ 2380 				execl: <>
+ 2381 			ypproc_pull_1_svc: void * (), <./ypserv.tproj/ypserv_proc.c 966>
+ 2382 				svc_getcaller: <>
+ 2383 				acl_check_host: 2120
+ 2384 				strchr: <>
+ 2385 				ypdb_secure: 2185
+ 2386 				YPLOG: <>
+ 2387 				inet_ntoa: 140
+ 2388 				ntohs: <>
+ 2389 				TORF: <>
+ 2390 				svcerr_auth: <>
+ 2391 				vfork: <>
+ 2392 				svcerr_systemerr: <>
+ 2393 				execl: <>
+ 2394 			ypproc_get_1_svc: void * (), <./ypserv.tproj/ypserv_proc.c 1014>
+ 2395 				svc_getcaller: <>
+ 2396 				acl_check_host: 2120
+ 2397 				strchr: <>
+ 2398 				ypdb_secure: 2185
+ 2399 				YPLOG: <>
+ 2400 				inet_ntoa: 140
+ 2401 				ntohs: <>
+ 2402 				TORF: <>
+ 2403 				svcerr_auth: <>
+ 2404 				vfork: <>
+ 2405 				svcerr_systemerr: <>
+ 2406 				execl: <>
+ 2407 			svcerr_noproc: <>
+ 2408 			memset: <>
+ 2409 			svc_getargs: if (), <./yppush.tproj/yppush_svc.c 137>
+ 2410 			svcerr_decode: <>
+ 2411 			svc_sendreply: <>
+ 2412 			svcerr_systemerr: <>
+ 2413 			svc_freeargs: if (), <./yppush.tproj/yppush_svc.c 147>
+ 2414 			exit: <>
+ 2415 		ypprog_2: void (), <./ypserv.tproj/ypserv.c 248>
+ 2416 			ypproc_null_2_svc: void * (), <./ypserv.tproj/ypserv_proc.c 99>
+ 2417 				svc_getcaller: <>
+ 2418 				acl_check_host: 2120
+ 2419 				YPLOG: <>
+ 2420 				inet_ntoa: 140
+ 2421 				ntohs: <>
+ 2422 				TORF: <>
+ 2423 				svcerr_auth: <>
+ 2424 			xdr_domainname: 310
+ 2425 			xdr_bool: <>
+ 2426 			ypproc_domain_2_svc: bool_t * (), <./ypserv.tproj/ypserv_proc.c 121>
+ 2427 				svc_getcaller: <>
+ 2428 				acl_check_host: 2120
+ 2429 				strchr: <>
+ 2430 				snprintf: <>
+ 2431 				bool_t: <>
+ 2432 				stat: <>
+ 2433 				YPLOG: <>
+ 2434 				inet_ntoa: 140
+ 2435 				ntohs: <>
+ 2436 				TORF: <>
+ 2437 				svcerr_auth: <>
+ 2438 			ypproc_domain_nonack_2_svc: bool_t * (), <./ypserv.tproj/ypserv_proc.c 151>
+ 2439 				svc_getcaller: <>
+ 2440 				acl_check_host: 2120
+ 2441 				strchr: <>
+ 2442 				snprintf: <>
+ 2443 				bool_t: <>
+ 2444 				stat: <>
+ 2445 				YPLOG: <>
+ 2446 				inet_ntoa: 140
+ 2447 				ntohs: <>
+ 2448 				TORF: <>
+ 2449 				svcerr_auth: <>
+ 2450 			xdr_ypreq_key: 2156
+ 2451 			xdr_ypresp_val: 2171
+ 2452 			ypproc_match_2_svc: ypresp_val * (), <./ypserv.tproj/ypserv_proc.c 186>
+ 2453 				svc_getcaller: <>
+ 2454 				acl_check_host: 2120
+ 2455 				ypdb_secure: 2185
+ 2456 				strchr: <>
+ 2457 				YPLOG: <>
+ 2458 				inet_ntoa: 140
+ 2459 				ntohs: <>
+ 2460 				TORF: <>
+ 2461 				svcerr_auth: <>
+ 2462 				ypdb_get_record: 2218
+ 2463 				yplog: 455
+ 2464 				yperr_string: <>
+ 2465 				ypprot_err: <>
+ 2466 			xdr_ypresp_key_val: 2176
+ 2467 			ypproc_first_2_svc: ypresp_key_val * (), <./ypserv.tproj/ypserv_proc.c 223>
+ 2468 				svc_getcaller: <>
+ 2469 				acl_check_host: 2120
+ 2470 				ypdb_secure: 2185
+ 2471 				strchr: <>
+ 2472 				YPLOG: <>
+ 2473 				inet_ntoa: 140
+ 2474 				ntohs: <>
+ 2475 				TORF: <>
+ 2476 				svcerr_auth: <>
+ 2477 				ypdb_get_first: 2238
+ 2478 				yplog: 455
+ 2479 				yperr_string: <>
+ 2480 				ypprot_err: <>
+ 2481 			ypproc_next_2_svc: ypresp_key_val * (), <./ypserv.tproj/ypserv_proc.c 259>
+ 2482 				svc_getcaller: <>
+ 2483 				acl_check_host: 2120
+ 2484 				ypdb_secure: 2185
+ 2485 				strchr: <>
+ 2486 				YPLOG: <>
+ 2487 				inet_ntoa: 140
+ 2488 				ntohs: <>
+ 2489 				TORF: <>
+ 2490 				svcerr_auth: <>
+ 2491 				ypdb_get_next: 2259
+ 2492 				yplog: 455
+ 2493 				yperr_string: <>
+ 2494 				ypprot_err: <>
+ 2495 			xdr_ypreq_xfr: bool_t (), <./yppush.tproj/yppush_xdr.c 121>
+ 2496 				xdr_ypmap_parms: 2162
+ 2497 				xdr_u_int: <>
+ 2498 			xdr_ypresp_xfr: 523
+ 2499 			ypproc_xfr_2_svc: ypresp_xfr * (), <./ypserv.tproj/ypserv_proc.c 296>
+ 2500 				svc_getcaller: <>
+ 2501 				acl_check_host: 2120
+ 2502 				bzero: <>
+ 2503 				YPLOG: <>
+ 2504 				inet_ntoa: 140
+ 2505 				ntohs: <>
+ 2506 				TORF: <>
+ 2507 				strchr: <>
+ 2508 				svcerr_auth: <>
+ 2509 				snprintf: <>
+ 2510 				vfork: <>
+ 2511 				svcerr_systemerr: <>
+ 2512 				execl: <>
+ 2513 			ypproc_clear_2_svc: void * (), <./ypserv.tproj/ypserv_proc.c 348>
+ 2514 				svc_getcaller: <>
+ 2515 				acl_check_host: 2120
+ 2516 				YPLOG: <>
+ 2517 				inet_ntoa: 140
+ 2518 				ntohs: <>
+ 2519 				TORF: <>
+ 2520 				svcerr_auth: <>
+ 2521 				ypdb_close_all: 2210
+ 2522 			xdr_ypresp_all: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 300>
+ 2523 				xdr_bool: <>
+ 2524 				xdr_ypresp_key_val: 2176
+ 2525 			ypproc_all_2_svc: ypresp_all * (), <./ypserv.tproj/ypserv_proc.c 383>
+ 2526 				svc_getcaller: <>
+ 2527 				acl_check_host: 2120
+ 2528 				ypdb_secure: 2185
+ 2529 				strchr: <>
+ 2530 				YPLOG: <>
+ 2531 				inet_ntoa: 140
+ 2532 				ntohs: <>
+ 2533 				TORF: <>
+ 2534 				svcerr_auth: <>
+ 2535 				bzero: <>
+ 2536 				fork: switch (), <./telnetd.tproj/sys_term.c 2158>
+ 2537 				svc_sendreply: <>
+ 2538 				ypdb_xdr_get_all: bool_t (), <./ypserv.tproj/ypserv_db.c 719>
+ 2539 					bzero: <>
+ 2540 					ypdb_open_db: 2187
+ 2541 					ypdb_firstkey: <>
+ 2542 					yp_private: 2221
+ 2543 					ypdb_nextkey: <>
+ 2544 					ypdb_fetch: <>
+ 2545 					xdr_ypresp_all: 2522
+ 2546 					yplog: 455
+ 2547 					ypdb_close_db: 2208
+ 2548 				svcerr_systemerr: <>
+ 2549 				exit: <>
+ 2550 			xdr_ypresp_master: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 264>
+ 2551 				xdr_ypstat: 2172
+ 2552 				xdr_peername: 2166
+ 2553 			ypproc_master_2_svc: ypresp_master * (), <./ypserv.tproj/ypserv_proc.c 435>
+ 2554 				svc_getcaller: <>
+ 2555 				acl_check_host: 2120
+ 2556 				ypdb_secure: 2185
+ 2557 				strchr: <>
+ 2558 				YPLOG: <>
+ 2559 				inet_ntoa: 140
+ 2560 				ntohs: <>
+ 2561 				TORF: <>
+ 2562 				svcerr_auth: <>
+ 2563 				ypdb_get_master: 2361
+ 2564 				yplog: 455
+ 2565 				yperr_string: <>
+ 2566 				ypprot_err: <>
+ 2567 			xdr_ypresp_order: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 282>
+ 2568 				xdr_ypstat: 2172
+ 2569 				xdr_u_int: <>
+ 2570 			ypproc_order_2_svc: ypresp_order * (), <./ypserv.tproj/ypserv_proc.c 487>
+ 2571 				svc_getcaller: <>
+ 2572 				acl_check_host: 2120
+ 2573 				ypdb_secure: 2185
+ 2574 				strchr: <>
+ 2575 				YPLOG: <>
+ 2576 				inet_ntoa: 140
+ 2577 				ntohs: <>
+ 2578 				TORF: <>
+ 2579 				svcerr_auth: <>
+ 2580 				ypdb_get_order: 2354
+ 2581 				yplog: 455
+ 2582 				yperr_string: <>
+ 2583 				ypprot_err: <>
+ 2584 			xdr_ypresp_maplist: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 361>
+ 2585 				xdr_ypstat: 2172
+ 2586 				xdr_pointer: <>
+ 2587 				xdr_ypmaplist: __private_extern__ bool_t (), <./ypserv.tproj/ypserv_xdr.c 343>
+ 2588 					xdr_mapname: 2158
+ 2589 					xdr_pointer: <>
+ 2590 					xdr_ypmaplist: 2587
+ 2591 			ypproc_maplist_2_svc: ypresp_maplist * (), <./ypserv.tproj/ypserv_proc.c 525>
+ 2592 				svc_getcaller: <>
+ 2593 				acl_check_host: 2120
+ 2594 				strchr: <>
+ 2595 				YPLOG: <>
+ 2596 				inet_ntoa: 140
+ 2597 				ntohs: <>
+ 2598 				TORF: <>
+ 2599 				svcerr_auth: <>
+ 2600 				bzero: <>
+ 2601 				snprintf: <>
+ 2602 				stat: <>
+ 2603 				opendir: <>
+ 2604 				readdir: <>
+ 2605 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2606 				malloc: <>
+ 2607 				strncpy: <>
+ 2608 				closedir: <>
+ 2609 				yplog: 455
+ 2610 				yperr_string: <>
+ 2611 				ypprot_err: <>
+ 2612 			svcerr_noproc: <>
+ 2613 			memset: <>
+ 2614 			svc_getargs: if (), <./yppush.tproj/yppush_svc.c 137>
+ 2615 			svcerr_decode: <>
+ 2616 			svc_sendreply: <>
+ 2617 			svcerr_systemerr: <>
+ 2618 			svc_freeargs: if (), <./yppush.tproj/yppush_svc.c 147>
+ 2619 			exit: <>
+ 2620 		svcfd_create: <>
+ 2621 		closedown: void (), <./ypserv.tproj/ypserv.c 123>
+ 2622 			exit: <>
+ 2623 			getdtablesize: <>
+ 2624 			FD_ISSET: if (), <./telnetd.tproj/telnetd.c 1329>
+ 2625 			alarm: <>
+ 2626 		Fprintf: <>
+ 2627 		source: void (), <./rcp.tproj/rcp.c 404>
+ 2628 			open: <>
+ 2629 			fstat: <>
+ 2630 			run_err: <>
+ 2631 				va_start: <>
+ 2632 				fdopen: <>
+ 2633 				fprintf: <>
+ 2634 				vfprintf: 200
+ 2635 				fflush: <>
+ 2636 				vwarnx: <>
+ 2637 				va_end: <>
+ 2638 			strerror: <>
+ 2639 			rsource: void (), <./rcp.tproj/rcp.c 491>
+ 2640 				opendir: <>
+ 2641 				run_err: 2630
+ 2642 				strerror: <>
+ 2643 				strrchr: <>
+ 2644 				snprintf: <>
+ 2645 				write: <>
+ 2646 				strlen: 146
+ 2647 				closedir: <>
+ 2648 				readdir: <>
+ 2649 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2650 				source: 2627
+ 2651 			strrchr: <>
+ 2652 			snprintf: <>
+ 2653 			write: <>
+ 2654 			strlen: 146
+ 2655 			allocbuf: BUF * (), <./rcp.tproj/util.c 155>
+ 2656 				fstat: <>
+ 2657 				run_err: 2630
+ 2658 				strerror: <>
+ 2659 				roundup: <>
+ 2660 				realloc: <>
+ 2661 			close: <>
+ 2662 			read: <>
+ 2663 		malloc: <>
+ 2664 		getprotobyname: <>
+ 2665 		Printf: <>
+ 2666 		bind: <>
+ 2667 		inet_ntoa: 140
+ 2668 		fflush: <>
+ 2669 		send_probe: void (), <./traceroute.tproj/traceroute.c 600>
+ 2670 			htons: <>
+ 2671 			gettimeofday: <>
+ 2672 			sendto: <>
+ 2673 			sockaddr: <>
+ 2674 			perror: <>
+ 2675 			Printf: <>
+ 2676 			fflush: <>
+ 2677 		wait_for_reply: int (), <./traceroute.tproj/traceroute.c 578>
+ 2678 			FD_ZERO: <>
+ 2679 			FD_SET: <>
+ 2680 			select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+ 2681 			recvfrom: <>
+ 2682 			sockaddr: <>
+ 2683 		packet_ok: int (), <./traceroute.tproj/traceroute.c 672>
+ 2684 			Printf: <>
+ 2685 			inet_ntoa: 140
+ 2686 			htons: <>
+ 2687 			pr_type: char * (), <./traceroute.tproj/traceroute.c 653>
+ 2688 		print: 2337
+ 2689 		deltaT: double (), <./traceroute.tproj/traceroute.c 638>
+ 2690 		time: , <./talkd.tproj/table.c 197>
+ 2691 		opendir: <>
+ 2692 		readdir: <>
+ 2693 		strncmp: <>
+ 2694 		down: <>
+ 2695 		utmpcmp:  (), <./rwho.tproj/rwho.c 192>
+ 2696 			strncmp: <>
+ 2697 		ctime: <>
+ 2698 		PacketAliasInit: void (), <./alias/alias_db.c 2047>
+ 2699 			gettimeofday: <>
+ 2700 			atexit: <>
+ 2701 			PacketAliasUninit: void (), <./alias/alias_db.c 2096>
+ 2702 				CleanupAliasData: void (), <./alias/alias_db.c 691>
+ 2703 					DeleteLink: void (), <./alias/alias_db.c 764>
+ 2704 						ClearFWHole: void (), <./alias/alias_db.c 2296>
+ 2705 							memset: <>
+ 2706 							setsockopt: <>
+ 2707 							fw_clrfield: <>
+ 2708 						close: <>
+ 2709 						free: <>
+ 2710 						ShowAliasStats: void (), <./alias/alias_db.c 444>
+ 2711 							fprintf: <>
+ 2712 							fflush: <>
+ 2713 				UninitPacketAliasLog: void (), <./alias/alias_db.c 1894>
+ 2714 					fclose: <>
+ 2715 				UninitPunchFW: void (), <./alias/alias_db.c 2200>
+ 2716 					ClearAllFWHoles: void (), <./alias/alias_db.c 2315>
+ 2717 						memset: <>
+ 2718 						setsockopt: <>
+ 2719 					close: <>
+ 2720 					free: <>
+ 2721 			CleanupAliasData: 2702
+ 2722 		ParseArgs: void (), <./natd.tproj/natd.c 411>
+ 2723 			warnx: <>
+ 2724 			Usage: void (), <./natd.tproj/natd.c 1297>
+ 2725 				fprintf: <>
+ 2726 				exit: <>
+ 2727 			strcat: <>
+ 2728 			ParseOption: void (), <./natd.tproj/natd.c 1063>
+ 2729 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2730 				warnx: <>
+ 2731 				Usage: 2724
+ 2732 				errx: <>
+ 2733 				StrToPort: u_short (), <./natd.tproj/natd.c 1493>
+ 2734 					strtol: <>
+ 2735 					htons: <>
+ 2736 					getservbyname: <>
+ 2737 					errx: <>
+ 2738 				strtol: <>
+ 2739 				StrToAddr: void (), <./natd.tproj/natd.c 1479>
+ 2740 					inet_aton: <>
+ 2741 					gethostbyname: <>
+ 2742 					errx: <>
+ 2743 					memcpy: <>
+ 2744 				PacketAliasSetMode: unsigned int (), <./alias/alias_db.c 2109>
+ 2745 					InitPacketAliasLog: void (), <./alias/alias_db.c 1880>
+ 2746 						fopen: <>
+ 2747 						fprintf: <>
+ 2748 					UninitPacketAliasLog: 2713
+ 2749 					InitPunchFW: void (), <./alias/alias_db.c 2187>
+ 2750 						malloc: <>
+ 2751 						memset: <>
+ 2752 						socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 2753 						ClearAllFWHoles: 2716
+ 2754 					UninitPunchFW: 2715
+ 2755 				memcpy: <>
+ 2756 				SetupPortRedirect: void (), <./natd.tproj/natd.c 1340>
+ 2757 					strcpy: <>
+ 2758 					strtok: <>
+ 2759 					errx: <>
+ 2760 					StrToProto: int (), <./natd.tproj/natd.c 1554>
+ 2761 						strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2762 						errx: <>
+ 2763 					StrToAddrAndPortRange: int (), <./natd.tproj/natd.c 1565>
+ 2764 						strchr: <>
+ 2765 						errx: <>
+ 2766 						StrToAddr: 2739
+ 2767 						StrToPortRange: int (), <./natd.tproj/natd.c 1510>
+ 2768 							getservbyname: <>
+ 2769 							SETLOPORT: <>
+ 2770 							ntohs: <>
+ 2771 							SETNUMPORTS: <>
+ 2772 							strchr: <>
+ 2773 							strtol: <>
+ 2774 							errx: <>
+ 2775 							sscanf: <>
+ 2776 							GETNUMPORTS: <>
+ 2777 					GETLOPORT: <>
+ 2778 					GETNUMPORTS: <>
+ 2779 					strchr: <>
+ 2780 					StrToPortRange: 2767
+ 2781 					SETLOPORT: <>
+ 2782 					SETNUMPORTS: <>
+ 2783 					StrToAddr: 2739
+ 2784 					PacketAliasRedirectPort: struct alias_link (), <./alias/alias_db.c 1926>
+ 2785 					htons: <>
+ 2786 				SetupAddressRedirect: void (), <./natd.tproj/natd.c 1452>
+ 2787 					strcpy: <>
+ 2788 					strtok: <>
+ 2789 					errx: <>
+ 2790 					StrToAddr: 2739
+ 2791 					PacketAliasRedirectAddr: struct alias_link (), <./alias/alias_db.c 1991>
+ 2792 				SetupPptpAlias: void (), <./natd.tproj/natd.c 1321>
+ 2793 					strcpy: <>
+ 2794 					strtok: <>
+ 2795 					errx: <>
+ 2796 					StrToAddr: 2739
+ 2797 					PacketAliasPptp: int (), <./alias/alias_db.c 1972>
+ 2798 				PacketAliasProxyRule: int (), <./alias/alias_proxy.c 490>
+ 2799 					strlen: 146
+ 2800 					strcpy: <>
+ 2801 					tolower: <>
+ 2802 					IpMask: int (), <./alias/alias_proxy.c 119>
+ 2803 						htonl: <>
+ 2804 					strtok: <>
+ 2805 					strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2806 					IpAddr: int (), <./alias/alias_proxy.c 136>
+ 2807 						inet_aton: <>
+ 2808 					sscanf: <>
+ 2809 					RuleNumberDelete: int (), <./alias/alias_proxy.c 231>
+ 2810 						RuleDelete: void (), <./alias/alias_proxy.c 217>
+ 2811 							free: <>
+ 2812 					IpPort: int (), <./alias/alias_proxy.c 145>
+ 2813 						sscanf: <>
+ 2814 						getservbyname: <>
+ 2815 						ntohs: <>
+ 2816 					malloc: <>
+ 2817 					htons: <>
+ 2818 					RuleAdd: void (), <./alias/alias_proxy.c 171>
+ 2819 				free: <>
+ 2820 				strdup: <>
+ 2821 				ReadConfigFile: void (), <./natd.tproj/natd.c 1240>
+ 2822 					fopen: <>
+ 2823 					sprintf: <>
+ 2824 					Quit: void (), <./natd.tproj/natd.c 800>
+ 2825 						Warn: void (), <./natd.tproj/natd.c 806>
+ 2826 							syslog: <>
+ 2827 							warn: <>
+ 2828 						exit: <>
+ 2829 					fgets: <>
+ 2830 					strchr: <>
+ 2831 					errx: <>
+ 2832 					isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 2833 					ParseOption: 2728
+ 2834 					fclose: <>
+ 2835 		ParseOption: 2728
+ 2836 		PacketAliasSetMode: 2744
+ 2837 		Quit: 2824
+ 2838 		DaemonMode: void (), <./natd.tproj/natd.c 396>
+ 2839 			daemon: <>
+ 2840 			fopen: <>
+ 2841 			fprintf: <>
+ 2842 			getpid: <>
+ 2843 			fclose: <>
+ 2844 		InitiateShutdown: void (), <./natd.tproj/natd.c 821>
+ 2845 			signal: <>
+ 2846 			Shutdown: void (), <./natd.tproj/natd.c 832>
+ 2847 			alarm: <>
+ 2848 		RefreshAddr: void (), <./natd.tproj/natd.c 814>
+ 2849 			signal: <>
+ 2850 			RefreshAddr: 2848
+ 2851 		PacketAliasSetAddress: void (), <./alias/alias_db.c 2029>
+ 2852 			CleanupAliasData: 2702
+ 2853 		DoAliasing: void (), <./natd.tproj/natd.c 447>
+ 2854 			SetAliasAddressFromIfName: void (), <./natd.tproj/natd.c 703>
+ 2855 				socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 2856 				Quit: 2824
+ 2857 				exit: <>
+ 2858 				ioctl: <>
+ 2859 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 2860 				strcpy: <>
+ 2861 				sockaddr: <>
+ 2862 				close: <>
+ 2863 				sprintf: <>
+ 2864 				PacketAliasSetAddress: 2851
+ 2865 				syslog: <>
+ 2866 				inet_ntoa: 140
+ 2867 			recvfrom: <>
+ 2868 			sockaddr: <>
+ 2869 			Warn: 2825
+ 2870 			printf: <>
+ 2871 			PrintPacket: void (), <./natd.tproj/natd.c 645>
+ 2872 				printf: <>
+ 2873 				FormatPacket: char * (), <./natd.tproj/natd.c 655>
+ 2874 					strcpy: <>
+ 2875 					inet_ntoa: 140
+ 2876 					sprintf: <>
+ 2877 					ntohs: <>
+ 2878 			PacketAliasOut: int (), <./alias/alias.c 1250>
+ 2879 				PacketAliasIn: int (), <./alias/alias.c 1171>
+ 2880 					PacketAliasOut: 2878
+ 2881 					HouseKeeping: void (), <./alias/alias_db.c 1827>
+ 2882 						gettimeofday: <>
+ 2883 						IncrementalCleanup: void (), <./alias/alias_db.c 715>
+ 2884 							DeleteLink: 2703
+ 2885 						fprintf: <>
+ 2886 					ClearCheckNewLink: void (), <./alias/alias_db.c 1804>
+ 2887 					ntohs: <>
+ 2888 					IcmpAliasIn: int (), <./alias/alias.c 404>
+ 2889 						IcmpAliasIn1: int (), <./alias/alias.c 234>
+ 2890 							FindIcmpIn: struct alias_link (), <./alias/alias_db.c 1215>
+ 2891 							GetOriginalPort: u_short (), <./alias/alias_db.c 1579>
+ 2892 							ADJUST_CHECKSUM: <>
+ 2893 							GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 1538>
+ 2894 							DifferentialChecksum: void (), <./alias/alias_util.c 111>
+ 2895 						IcmpAliasIn2: int (), <./alias/alias.c 279>
+ 2896 							FindUdpTcpIn: struct alias_link (), <./alias/alias_db.c 1303>
+ 2897 							FindIcmpIn: struct alias_link (), <./alias/alias_db.c 1215>
+ 2898 							GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 1538>
+ 2899 							GetOriginalPort: u_short (), <./alias/alias_db.c 1579>
+ 2900 							ADJUST_CHECKSUM: <>
+ 2901 							DifferentialChecksum: 2894
+ 2902 						IcmpAliasIn3: int (), <./alias/alias.c 388>
+ 2903 							FindOriginalAddress: struct in_addr (), <./alias/alias_db.c 1385>
+ 2904 							DifferentialChecksum: 2894
+ 2905 					UdpAliasIn: int (), <./alias/alias.c 634>
+ 2906 						FindUdpTcpIn: struct alias_link (), <./alias/alias_db.c 1303>
+ 2907 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 2908 						GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 1538>
+ 2909 						GetOriginalPort: u_short (), <./alias/alias_db.c 1579>
+ 2910 						ntohs: <>
+ 2911 						AliasHandleUdpNbt: int (), <./alias/alias_nbt.c 205>
+ 2912 							ntohs: <>
+ 2913 							printf: <>
+ 2914 							AliasHandleName: u_char * (), <./alias/alias_nbt.c 130>
+ 2915 								printf: <>
+ 2916 								isprint: if (), <./tcpdump.tproj/parsenfsfh.c 428>
+ 2917 								fflush: <>
+ 2918 							inet_ntoa: 140
+ 2919 							ADJUST_CHECKSUM: <>
+ 2920 							fflush: <>
+ 2921 						AliasHandleUdpNbtNS: int (), <./alias/alias_nbt.c 621>
+ 2922 							ntohs: <>
+ 2923 							printf: <>
+ 2924 							AliasHandleQuestion: u_char * (), <./alias/alias_nbt.c 281>
+ 2925 								AliasHandleName: 2914
+ 2926 								ntohs: <>
+ 2927 								printf: <>
+ 2928 							AliasHandleResource: u_char * (), <./alias/alias_nbt.c 552>
+ 2929 								AliasHandleName: 2914
+ 2930 								printf: <>
+ 2931 								ntohs: <>
+ 2932 								AliasHandleResourceNB: u_char * (), <./alias/alias_nbt.c 338>
+ 2933 									ntohs: <>
+ 2934 									printf: <>
+ 2935 									inet_ntoa: 140
+ 2936 									bcmp: <>
+ 2937 									ADJUST_CHECKSUM: <>
+ 2938 								AliasHandleResourceA: u_char * (), <./alias/alias_nbt.c 407>
+ 2939 									ntohs: <>
+ 2940 									printf: <>
+ 2941 									inet_ntoa: 140
+ 2942 									bcmp: <>
+ 2943 									ADJUST_CHECKSUM: <>
+ 2944 								AliasHandleResourceNS: u_char * (), <./alias/alias_nbt.c 497>
+ 2945 									ntohs: <>
+ 2946 									AliasHandleName: 2914
+ 2947 								AliasHandleResourceNULL: u_char * (), <./alias/alias_nbt.c 464>
+ 2948 									ntohs: <>
+ 2949 								AliasHandleResourceNBSTAT: u_char * (), <./alias/alias_nbt.c 528>
+ 2950 									ntohs: <>
+ 2951 								fflush: <>
+ 2952 							PrintRcode: void (), <./alias/alias_nbt.c 106>
+ 2953 								printf: <>
+ 2954 						AliasHandleCUSeeMeIn: void (), <./alias/alias_cuseeme.c 92>
+ 2955 							ntohs: <>
+ 2956 						ADJUST_CHECKSUM: <>
+ 2957 						DifferentialChecksum: 2894
+ 2958 					TcpAliasIn: int (), <./alias/alias.c 790>
+ 2959 						FindUdpTcpIn: struct alias_link (), <./alias/alias_db.c 1303>
+ 2960 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 2961 						GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 1538>
+ 2962 						GetProxyAddress: struct in_addr (), <./alias/alias_db.c 1606>
+ 2963 						GetOriginalPort: u_short (), <./alias/alias_db.c 1579>
+ 2964 						GetProxyPort: u_short (), <./alias/alias_db.c 1620>
+ 2965 						GetAckModified: int (), <./alias/alias_db.c 1634>
+ 2966 						GetDeltaAckIn: int (), <./alias/alias_db.c 1642>
+ 2967 							SeqDiff: int (), <./alias/alias_db.c 430>
+ 2968 								ntohl: <>
+ 2969 						htonl: <>
+ 2970 						ntohl: <>
+ 2971 						ADJUST_CHECKSUM: <>
+ 2972 						TcpMonitorIn: void (), <./alias/alias.c 131>
+ 2973 							GetStateIn: int (), <./alias/alias_db.c 1522>
+ 2974 							SetStateIn: void (), <./alias/alias_db.c 1472>
+ 2975 								abort: <>
+ 2976 					PptpAliasIn: int (), <./alias/alias.c 579>
+ 2977 						GetPptpAlias: int (), <./alias/alias_db.c 1981>
+ 2978 						DifferentialChecksum: 2894
+ 2979 					FindFragmentIn1: struct alias_link (), <./alias/alias_db.c 1250>
+ 2980 					SetFragmentAddr: void (), <./alias/alias_db.c 1444>
+ 2981 					FragmentIn: int (), <./alias/alias.c 1052>
+ 2982 						FindFragmentIn2: struct alias_link (), <./alias/alias_db.c 1272>
+ 2983 						GetFragmentAddr: void (), <./alias/alias_db.c 1451>
+ 2984 						DifferentialChecksum: 2894
+ 2985 				HouseKeeping: 2881
+ 2986 				ClearCheckNewLink: 2886
+ 2987 				ntohs: <>
+ 2988 				GetDefaultAliasAddress: struct in_addr (), <./alias/alias_db.c 1565>
+ 2989 				ntohl: <>
+ 2990 				SetDefaultAliasAddress: void (), <./alias/alias_db.c 1572>
+ 2991 				IcmpAliasOut: int (), <./alias/alias.c 542>
+ 2992 					IcmpAliasOut1: int (), <./alias/alias.c 441>
+ 2993 						FindIcmpOut: struct alias_link (), <./alias/alias_db.c 1226>
+ 2994 						GetAliasPort: u_short (), <./alias/alias_db.c 1586>
+ 2995 						ADJUST_CHECKSUM: <>
+ 2996 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 2997 						DifferentialChecksum: 2894
+ 2998 					IcmpAliasOut2: int (), <./alias/alias.c 487>
+ 2999 						FindAliasAddress: struct in_addr (), <./alias/alias_db.c 1410>
+ 3000 						DifferentialChecksum: 2894
+ 3001 					IcmpAliasOut3: int (), <./alias/alias.c 521>
+ 3002 						FindAliasAddress: struct in_addr (), <./alias/alias_db.c 1410>
+ 3003 						DifferentialChecksum: 2894
+ 3004 				UdpAliasOut: int (), <./alias/alias.c 714>
+ 3005 					FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1346>
+ 3006 					GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 3007 					GetAliasPort: u_short (), <./alias/alias_db.c 1586>
+ 3008 					ntohs: <>
+ 3009 					AliasHandleCUSeeMeOut: void (), <./alias/alias_cuseeme.c 68>
+ 3010 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 3011 						FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1346>
+ 3012 						GetDestAddress: struct in_addr (), <./alias/alias_db.c 1548>
+ 3013 						PunchFWHole: void (), <./alias/alias_db.c 2213>
+ 3014 							memset: <>
+ 3015 							fw_tstfield: <>
+ 3016 							fprintf: <>
+ 3017 							GetOriginalAddress: struct in_addr (), <./alias/alias_db.c 1538>
+ 3018 							GetDestAddress: struct in_addr (), <./alias/alias_db.c 1548>
+ 3019 							ntohs: <>
+ 3020 							GetOriginalPort: u_short (), <./alias/alias_db.c 1579>
+ 3021 							GetDestPort: u_short (), <./alias/alias_db.c 1592>
+ 3022 							setsockopt: <>
+ 3023 							err: 197
+ 3024 							fw_setfield: <>
+ 3025 					AliasHandleUdpNbt: 2911
+ 3026 					AliasHandleUdpNbtNS: 2921
+ 3027 					ADJUST_CHECKSUM: <>
+ 3028 					DifferentialChecksum: 2894
+ 3029 				TcpAliasOut: int (), <./alias/alias.c 897>
+ 3030 					ProxyCheck: int (), <./alias/alias_proxy.c 421>
+ 3031 					ADJUST_CHECKSUM: <>
+ 3032 					FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1346>
+ 3033 					SetProxyPort: void (), <./alias/alias_db.c 1627>
+ 3034 					SetProxyAddress: void (), <./alias/alias_db.c 1613>
+ 3035 					ProxyModify: void (), <./alias/alias_proxy.c 467>
+ 3036 						ProxyEncodeIpHeader: void (), <./alias/alias_proxy.c 342>
+ 3037 							fprintf: <>
+ 3038 							IpChecksum: u_short (), <./alias/alias_util.c 55>
+ 3039 								PacketAliasInternetChecksum: u_short (), <./alias/alias_util.c 33>
+ 3040 							TcpChecksum: u_short (), <./alias/alias_util.c 63>
+ 3041 								ntohs: <>
+ 3042 								htons: <>
+ 3043 							memcpy: <>
+ 3044 							ntohs: <>
+ 3045 							htons: <>
+ 3046 							ADJUST_CHECKSUM: <>
+ 3047 						ProxyEncodeTcpStream: void (), <./alias/alias_proxy.c 256>
+ 3048 							GetAckModified: 2965
+ 3049 							snprintf: <>
+ 3050 							inet_ntoa: 140
+ 3051 							GetProxyAddress: struct in_addr (), <./alias/alias_db.c 1606>
+ 3052 							ntohs: <>
+ 3053 							GetProxyPort: u_short (), <./alias/alias_db.c 1620>
+ 3054 							strlen: 146
+ 3055 							strcat: <>
+ 3056 							memmove: <>
+ 3057 							memcpy: <>
+ 3058 							SetAckModified: void (), <./alias/alias_db.c 1598>
+ 3059 							GetDeltaSeqOut: int (), <./alias/alias_db.c 1693>
+ 3060 								SeqDiff: 2967
+ 3061 							AddSeq: void (), <./alias/alias_db.c 1744>
+ 3062 								ntohs: <>
+ 3063 								htonl: <>
+ 3064 								ntohl: <>
+ 3065 								index: return, <./pcap/gencode.c 1508>
+ 3066 							htons: <>
+ 3067 							ADJUST_CHECKSUM: <>
+ 3068 							TcpChecksum: 3040
+ 3069 					GetAliasPort: u_short (), <./alias/alias_db.c 1586>
+ 3070 					GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 3071 					TcpMonitorOut: void (), <./alias/alias.c 152>
+ 3072 						GetStateOut: int (), <./alias/alias_db.c 1530>
+ 3073 						SetStateOut: void (), <./alias/alias_db.c 1497>
+ 3074 							abort: <>
+ 3075 					ntohs: <>
+ 3076 					AliasHandleFtpOut: void (), <./alias/alias_ftp.c 56>
+ 3077 						ntohs: <>
+ 3078 						p1: <>
+ 3079 						p2: <>
+ 3080 						isdigit: <>
+ 3081 						htons: <>
+ 3082 						htonl: <>
+ 3083 						NewFtpPortCommand: void (), <./alias/alias_ftp.c 138>
+ 3084 							FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1346>
+ 3085 							GetDestAddress: struct in_addr (), <./alias/alias_db.c 1548>
+ 3086 							PunchFWHole: 3013
+ 3087 							ntohs: <>
+ 3088 							GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 3089 							GetAliasPort: u_short (), <./alias/alias_db.c 1586>
+ 3090 							sprintf: <>
+ 3091 							strlen: 146
+ 3092 							strncpy: <>
+ 3093 							SetAckModified: 3058
+ 3094 							GetDeltaSeqOut: 3059
+ 3095 							AddSeq: 3061
+ 3096 							htons: <>
+ 3097 							DifferentialChecksum: 2894
+ 3098 							TcpChecksum: 3040
+ 3099 							fprintf: <>
+ 3100 					AliasHandleIrcOut: void (), <./alias/alias_irc.c 42>
+ 3101 						ntohs: <>
+ 3102 						DBprintf: <>
+ 3103 						isdigit: <>
+ 3104 						htons: <>
+ 3105 						htonl: <>
+ 3106 						FindUdpTcpOut: struct alias_link (), <./alias/alias_db.c 1346>
+ 3107 						PunchFWHole: 3013
+ 3108 						GetAliasAddress: struct in_addr (), <./alias/alias_db.c 1555>
+ 3109 						snprintf: <>
+ 3110 						GetAliasPort: u_short (), <./alias/alias_db.c 1586>
+ 3111 						memcpy: <>
+ 3112 						SetAckModified: 3058
+ 3113 						GetDeltaSeqOut: 3059
+ 3114 						AddSeq: 3061
+ 3115 						DifferentialChecksum: 2894
+ 3116 						TcpChecksum: 3040
+ 3117 					GetAckModified: 2965
+ 3118 					GetDeltaSeqOut: 3059
+ 3119 					htonl: <>
+ 3120 					ntohl: <>
+ 3121 				PptpAliasOut: int (), <./alias/alias.c 606>
+ 3122 					GetPptpAlias: 2977
+ 3123 					FindAliasAddress: struct in_addr (), <./alias/alias_db.c 1410>
+ 3124 					DifferentialChecksum: 2894
+ 3125 				FragmentOut: int (), <./alias/alias.c 1075>
+ 3126 					FindAliasAddress: struct in_addr (), <./alias/alias_db.c 1410>
+ 3127 					DifferentialChecksum: 2894
+ 3128 			PacketAliasIn: 2879
+ 3129 			SyslogPacket: void (), <./natd.tproj/natd.c 650>
+ 3130 				syslog: <>
+ 3131 				FormatPacket: 2873
+ 3132 			ntohs: <>
+ 3133 			FlushPacketBuffer: void (), <./natd.tproj/natd.c 571>
+ 3134 				sendto: <>
+ 3135 				sockaddr: <>
+ 3136 				SendNeedFragIcmp: int (), <./natd.tproj/icmp.c 38>
+ 3137 					ntohs: <>
+ 3138 					htons: <>
+ 3139 					memcpy: <>
+ 3140 					PacketAliasInternetChecksum: 3039
+ 3141 					PacketAliasIn: 2879
+ 3142 					sendto: <>
+ 3143 					sockaddr: <>
+ 3144 					Warn: 2825
+ 3145 				sprintf: <>
+ 3146 				Warn: 2825
+ 3147 		FlushPacketBuffer: 3133
+ 3148 		HandleRoutingInfo: void (), <./natd.tproj/natd.c 612>
+ 3149 			read: <>
+ 3150 			Warn: 2825
+ 3151 			printf: <>
+ 3152 		oldw: <>
+ 3153 			va_start: <>
+ 3154 			fprintf: <>
+ 3155 			vfprintf: 200
+ 3156 			va_end: <>
+ 3157 		sink: void (), <./rcp.tproj/rcp.c 543>
+ 3158 			umask: <>
+ 3159 			run_err: 2630
+ 3160 			exit: <>
+ 3161 			verifydir: void (), <./rcp.tproj/util.c 91>
+ 3162 				stat: <>
+ 3163 				S_ISDIR: <>
+ 3164 				run_err: 2630
+ 3165 				strerror: <>
+ 3166 				exit: <>
+ 3167 			write: <>
+ 3168 			stat: <>
+ 3169 			S_ISDIR: <>
+ 3170 			read: <>
+ 3171 			SCREWUP: <>
+ 3172 			strlen: 146
+ 3173 			getnum: <>
+ 3174 			isdigit: <>
+ 3175 			malloc: <>
+ 3176 			strerror: <>
+ 3177 			snprintf: <>
+ 3178 			chmod: <>
+ 3179 			mkdir: <>
+ 3180 			sink: 3157
+ 3181 			utimes: <>
+ 3182 			open: <>
+ 3183 			allocbuf: 2655
+ 3184 			close: <>
+ 3185 			ftruncate: <>
+ 3186 			fchmod: <>
+ 3187 		lostconn: void (), <./rcp.tproj/util.c 181>
+ 3188 			warnx: <>
+ 3189 			exit: <>
+ 3190 		colon: char * (), <./rcp.tproj/util.c 75>
+ 3191 		toremote: void (), <./rcp.tproj/rcp.c 252>
+ 3192 			strchr: <>
+ 3193 			okname: int (), <./rcp.tproj/util.c 106>
+ 3194 				isalpha: <>
+ 3195 				isdigit: <>
+ 3196 				warnx: <>
+ 3197 			exit: <>
+ 3198 			colon: char * (), <./rcp.tproj/util.c 75>
+ 3199 			strlen: 146
+ 3200 			malloc: <>
+ 3201 			err: 197
+ 3202 			snprintf: <>
+ 3203 			susystem: int (), <./rcp.tproj/util.c 127>
+ 3204 				vfork: <>
+ 3205 				setuid: <>
+ 3206 				execl: <>
+ 3207 				signal: <>
+ 3208 				waitpid: <>
+ 3209 			free: <>
+ 3210 			kerberos: int (), <./rcp.tproj/rcp.c 784>
+ 3211 				krb_realmofhost: <>
+ 3212 				krcmd_mutual: 1274
+ 3213 				krcmd: 1277
+ 3214 				getservbyname: <>
+ 3215 				errx: <>
+ 3216 				oldw: 3152
+ 3217 				rcmd: <>
+ 3218 			rcmd: <>
+ 3219 			setsockopt: <>
+ 3220 			warn: <>
+ 3221 			setuid: <>
+ 3222 			source: 2627
+ 3223 		tolocal: void (), <./rcp.tproj/rcp.c 342>
+ 3224 			colon: char * (), <./rcp.tproj/util.c 75>
+ 3225 			strlen: 146
+ 3226 			malloc: <>
+ 3227 			err: 197
+ 3228 			snprintf: <>
+ 3229 			susystem: 3203
+ 3230 			free: <>
+ 3231 			strchr: <>
+ 3232 			okname: 3193
+ 3233 			kerberos: 3210
+ 3234 			rcmd: <>
+ 3235 			seteuid: <>
+ 3236 			setsockopt: <>
+ 3237 			warn: <>
+ 3238 			sink: 3157
+ 3239 			close: <>
+ 3240 		verifydir: 3161
+ 3241 		findid: void (), <./sliplogin.tproj/sliplogin.c 126>
+ 3242 			strcpy: <>
+ 3243 			fopen: <>
+ 3244 			fprintf: <>
+ 3245 			strerror: <>
+ 3246 			syslog: <>
+ 3247 			exit: <>
+ 3248 			fgets: <>
+ 3249 			ferror: <>
+ 3250 			sscanf: <>
+ 3251 			isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 3252 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 3253 			sprintf: <>
+ 3254 			access: <>
+ 3255 			fputs: <>
+ 3256 			fclose: <>
+ 3257 		ttyname: <>
+ 3258 		setpgrp: <>
+ 3259 		fchmod: <>
+ 3260 		tcgetattr: <>
+ 3261 		cfmakeraw: <>
+ 3262 		tcsetattr: <>
+ 3263 		cfgetispeed: <>
+ 3264 		hup_handler: void (), <./sliplogin.tproj/sliplogin.c 229>
+ 3265 			sprintf: <>
+ 3266 			access: <>
+ 3267 			strcpy: <>
+ 3268 			system: <>
+ 3269 			close: <>
+ 3270 			syslog: <>
+ 3271 			sigstr: char * (), <./sliplogin.tproj/sliplogin.c 184>
+ 3272 				sprintf: <>
+ 3273 			exit: <>
+ 3274 		system: <>
+ 3275 		get_remote_info: int (), <./yppoll.tproj/yppoll.c 87>
+ 3276 			bzero: <>
+ 3277 			gethostbyname: <>
+ 3278 			inet_aton: <>
+ 3279 			fprintf: <>
+ 3280 			exit: <>
+ 3281 			clntudp_create: <>
+ 3282 			clnt_call: <>
+ 3283 			xdr_ypresp_order: 2567
+ 3284 			clnt_perror: <>
+ 3285 			xdr_free: <>
+ 3286 			ypprot_err: <>
+ 3287 			xdr_ypresp_master: 2550
+ 3288 			strdup: <>
+ 3289 			clnt_destroy: <>
+ 3290 		yp_order: <>
+ 3291 		reap: void (), <./portmap.tproj/portmap.c 658>
+ 3292 		portmap_svc_run: void (), <./portmap.tproj/portmap.c 142>
+ 3293 			select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+ 3294 			syslog: <>
+ 3295 			strerror: <>
+ 3296 			svc_getreqset: <>
+ 3297 		abort: <>
+ 3298 		setdomainname: <>
+ 3299 		getdomainname: <>
+ 3300 		getpeername: <>
+ 3301 		ntohs: <>
+ 3302 		myoob: void (), <./ftpd.tproj/ftpd.c 1385>
+ 3303 			getline: 714
+ 3304 			reply: 1379
+ 3305 			dologout: 1386
+ 3306 			upper: <>
+ 3307 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 3308 			longjmp: <>
+ 3309 		dolog: void (), <./ftpd.tproj/ftpd.c 1342>
+ 3310 			gethostbyaddr: <>
+ 3311 			strncpy: <>
+ 3312 			inet_ntoa: 140
+ 3313 			snprintf: <>
+ 3314 			setproctitle: void (), <./inetd.tproj/inetd.c 941>
+ 3315 				getpeername: <>
+ 3316 				sockaddr: <>
+ 3317 				sprintf: <>
+ 3318 				inet_ntoa: 140
+ 3319 				strncpy: <>
+ 3320 				strlen: 146
+ 3321 				va_start: <>
+ 3322 				vsnprintf: <>
+ 3323 			syslog: <>
+ 3324 		lreply: 1737
+ 3325 		reply: 1379
+ 3326 		gethostname: <>
+ 3327 		yyparse: <>
+ 3328 		read_line: int (), <./stdhosts.tproj/stdhosts.c 69>
+ 3329 			fgets: <>
+ 3330 			strlen: 146
+ 3331 			getc: <>
+ 3332 			isascii: <>
+ 3333 			isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 3334 			ungetc: <>
+ 3335 			feof: <>
+ 3336 		isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 3337 		inet_aton: <>
+ 3338 		bp_whoami: int (), <./bootparams/bpwhoami.tproj/bpwhoami.c 203>
+ 3339 			getFirstInterface: boolean_t (), <./bootparams/bpwhoami.tproj/bpwhoami.c 128>
+ 3340 				socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 3341 				fprintf: <>
+ 3342 				realloc: <>
+ 3343 				malloc: <>
+ 3344 				err: 197
+ 3345 				ioctl: <>
+ 3346 				IFR_NEXT: <>
+ 3347 				strncpy: <>
+ 3348 				close: <>
+ 3349 				free: <>
+ 3350 			bzero: <>
+ 3351 			clnt_broadcast: <>
+ 3352 			each_whoresult: bool_t (), <./bootparams/bpwhoami.tproj/bpwhoami.c 93>
+ 3353 				in_subnet: __inline__ boolean_t (), <./bootparams/bpwhoami.tproj/bpwhoami.c 83>
+ 3354 					iptohl: __inline__ u_long (), <./bootparams/bpwhoami.tproj/bpwhoami.c 77>
+ 3355 						ntohl: <>
+ 3356 				printf: <>
+ 3357 				inet_ntoa: 140
+ 3358 				gethostbyaddr: <>
+ 3359 			fprintf: <>
+ 3360 			clnt_perrno: <>
+ 3361 		popen: <>
+ 3362 		pclose: <>
+ 3363 		command: 639
+ 3364 		fatal: 1377
+ 3365 		init_all: void (), <./rarpd.tproj/rarpd.c 234>
+ 3366 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 3367 			err: 197
+ 3368 			strerror: <>
+ 3369 			ioctl: <>
+ 3370 			init_one: void (), <./rarpd.tproj/rarpd.c 211>
+ 3371 				malloc: <>
+ 3372 				err: 197
+ 3373 				strerror: <>
+ 3374 				rarp_open: int (), <./rarpd.tproj/rarpd.c 303>
+ 3375 					BPF_STMT: <>
+ 3376 					BPF_JUMP: <>
+ 3377 					bpf_open: int (), <./rarpd.tproj/rarpd.c 280>
+ 3378 						sprintf: <>
+ 3379 						open: <>
+ 3380 						err: 197
+ 3381 						strerror: <>
+ 3382 					ioctl: <>
+ 3383 					err: 197
+ 3384 					strerror: <>
+ 3385 					strncpy: <>
+ 3386 				lookup_eaddr: void (), <./rarpd.tproj/rarpd.c 572>
+ 3387 					socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 3388 					err: 197
+ 3389 					strerror: <>
+ 3390 					ioctl: <>
+ 3391 					strncmp: <>
+ 3392 					bcopy: <>
+ 3393 					LLADDR: <>
+ 3394 					fprintf: <>
+ 3395 				lookup_ipaddr: void (), <./rarpd.tproj/rarpd.c 624>
+ 3396 					socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 3397 					err: 197
+ 3398 					strerror: <>
+ 3399 					strncpy: <>
+ 3400 					ioctl: <>
+ 3401 					perror: <>
+ 3402 					exit: <>
+ 3403 					ipaddrtonetmask: u_long (), <./rarpd.tproj/rarpd.c 759>
+ 3404 						IN_CLASSA: <>
+ 3405 						IN_CLASSB: <>
+ 3406 						IN_CLASSC: <>
+ 3407 						err: 197
+ 3408 					close: <>
+ 3409 			close: <>
+ 3410 		init_one: 3370
+ 3411 		rarp_loop: void (), <./rarpd.tproj/rarpd.c 398>
+ 3412 			err: 197
+ 3413 			ioctl: <>
+ 3414 			strerror: <>
+ 3415 			malloc: <>
+ 3416 			FD_ZERO: <>
+ 3417 			FD_SET: <>
+ 3418 			select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+ 3419 			FD_ISSET: if (), <./telnetd.tproj/telnetd.c 1329>
+ 3420 			read: <>
+ 3421 			lseek: <>
+ 3422 			rarp_check: int (), <./rarpd.tproj/rarpd.c 360>
+ 3423 				err: 197
+ 3424 				ntohs: <>
+ 3425 				bcmp: <>
+ 3426 			rarp_process: void (), <./rarpd.tproj/rarpd.c 534>
+ 3427 				ether_ntohost: <>
+ 3428 				gethostbyname: <>
+ 3429 				err: 197
+ 3430 				choose_ipaddr: u_long (), <./rarpd.tproj/rarpd.c 518>
+ 3431 				inet_ntoa: 140
+ 3432 				rarp_bootable: int (), <./rarpd.tproj/rarpd.c 483>
+ 3433 					sprintf: <>
+ 3434 					rewinddir: <>
+ 3435 					chdir: <>
+ 3436 					err: 197
+ 3437 					strerror: <>
+ 3438 					opendir: <>
+ 3439 					readdir: <>
+ 3440 					strncmp: <>
+ 3441 				htonl: <>
+ 3442 				rarp_reply: void (), <./rarpd.tproj/rarpd.c 723>
+ 3443 					update_arptab: void (), <./rarpd.tproj/rarpd.c 662>
+ 3444 						bcopy: <>
+ 3445 						socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 3446 						ioctl: <>
+ 3447 						err: 197
+ 3448 						strerror: <>
+ 3449 						close: <>
+ 3450 					htons: <>
+ 3451 					bcopy: <>
+ 3452 					write: <>
+ 3453 					err: 197
+ 3454 			BPF_WORDALIGN: <>
+ 3455 		ypdb_open: <>
+ 3456 		ypdb_fetch: <>
+ 3457 		isdigit: <>
+ 3458 		yp_bind: <>
+ 3459 		master: 2271
+ 3460 		push: void (), <./yppush.tproj/yppush.c 170>
+ 3461 			bool_t: <>
+ 3462 			snprintf: <>
+ 3463 			clnt_create: <>
+ 3464 			fprintf: <>
+ 3465 			clnt_pcreateerror: <>
+ 3466 			svcudp_create: <>
+ 3467 			SVC_DESTROY: <>
+ 3468 			svc_register: <>
+ 3469 			yppush_xfrrespprog_1: void (), <./yppush.tproj/yppush_svc.c 105>
+ 3470 			fork: switch (), <./telnetd.tproj/sys_term.c 2158>
+ 3471 			exit: <>
+ 3472 			close: <>
+ 3473 			req_xfr: void (), <./yppush.tproj/yppush.c 130>
+ 3474 				master: 2271
+ 3475 				printf: <>
+ 3476 				clnt_call: <>
+ 3477 				xdr_ypreq_xfr: 2495
+ 3478 				clnt_perror: <>
+ 3479 				kill: , <./talk.tproj/display.c 140>
+ 3480 			wait4: <>
+ 3481 			svc_unregister: <>
+ 3482 			clnt_destroy: <>
+ 3483 		pushit: int (), <./yppush.tproj/yppush.c 237>
+ 3484 			push: 3460
+ 3485 		yp_all_host: <>
+ 3486 		sysctl: <>
+ 3487 		ether_status: void (), <./ifconfig.tproj/ifconfig.c 768>
+ 3488 		ifconfig: int (), <./ifconfig.tproj/ifconfig.c 427>
+ 3489 		dump: void (), <./arp.tproj/arp.c 386>
+ 3490 			sysctl: <>
+ 3491 			err: 197
+ 3492 			malloc: <>
+ 3493 			gethostbyaddr: <>
+ 3494 			printf: <>
+ 3495 			inet_ntoa: 140
+ 3496 			ether_print: void (), <./arp.tproj/arp.c 454>
+ 3497 				printf: <>
+ 3498 			LLADDR: <>
+ 3499 		delete: int (), <./arp.tproj/arp.c 325>
+ 3500 			another: 563
+ 3501 			printf: <>
+ 3502 			command: 639
+ 3503 			LOGCMD: <>
+ 3504 			stat: <>
+ 3505 			perror_reply: 1713
+ 3506 			rmdir: <>
+ 3507 			unlink: <>
+ 3508 			ack: void (), <./ftpd.tproj/ftpd.c 1216>
+ 3509 				reply: 1379
+ 3510 			strncmp: <>
+ 3511 			getsocket: 78
+ 3512 			inet_addr: <>
+ 3513 			gethostbyname: <>
+ 3514 			fprintf: <>
+ 3515 			herror: <>
+ 3516 			bcopy: <>
+ 3517 			rtmsg: int (), <./arp.tproj/arp.c 490>
+ 3518 				bzero: <>
+ 3519 				mask_addr: void (), <./route.tproj/route.c 1134>
+ 3520 				NEXTADDR: <>
+ 3521 				print_rtmsg: <>
+ 3522 				write: <>
+ 3523 				warn: <>
+ 3524 				read: <>
+ 3525 				print_getmsg: <>
+ 3526 				doit: 1283
+ 3527 				fprintf: <>
+ 3528 				exit: <>
+ 3529 				perror: <>
+ 3530 				strerror: <>
+ 3531 			perror: <>
+ 3532 			delete: 3499
+ 3533 			inet_ntoa: 140
+ 3534 		set: int (), <./arp.tproj/arp.c 210>
+ 3535 			getsocket: 78
+ 3536 			inet_addr: <>
+ 3537 			gethostbyname: <>
+ 3538 			fprintf: <>
+ 3539 			herror: <>
+ 3540 			bcopy: <>
+ 3541 			LLADDR: <>
+ 3542 			ether_aton: int (), <./arp.tproj/arp.c 461>
+ 3543 				sscanf: <>
+ 3544 				fprintf: <>
+ 3545 			strncmp: <>
+ 3546 			gettimeofday: <>
+ 3547 			printf: <>
+ 3548 			rtmsg: 3517
+ 3549 			perror: <>
+ 3550 		get: void (), <./arp.tproj/arp.c 296>
+ 3551 			strcpy: <>
+ 3552 			printf: <>
+ 3553 			fgets: <>
+ 3554 			strlen: 146
+ 3555 			makeargv: 568
+ 3556 			getusage: void (), <./tftp.tproj/main.c 505>
+ 3557 				printf: <>
+ 3558 			index: return, <./pcap/gencode.c 1508>
+ 3559 			gethostbyname: <>
+ 3560 			fprintf: <>
+ 3561 			herror: <>
+ 3562 			bcopy: <>
+ 3563 			tail: char * (), <./tftp.tproj/main.c 593>
+ 3564 				rindex: <>
+ 3565 			creat: <>
+ 3566 			perror: <>
+ 3567 			recvfile: void (), <./tftpd.tproj/tftpd.c 525>
+ 3568 				startclock: void (), <./tftp.tproj/tftp.c 434>
+ 3569 					gettimeofday: <>
+ 3570 				fdopen: <>
+ 3571 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 3572 				signal: <>
+ 3573 				timer: 109
+ 3574 				makerequest: int (), <./tftp.tproj/tftp.c 322>
+ 3575 				htons: <>
+ 3576 				setjmp: <>
+ 3577 				tpacket: <>
+ 3578 				sendto: <>
+ 3579 				sockaddr: <>
+ 3580 				alarm: <>
+ 3581 				perror: <>
+ 3582 				abort: <>
+ 3583 				write_behind: <>
+ 3584 				recvfrom: <>
+ 3585 				ntohs: <>
+ 3586 				ERROR: , <./tftp.tproj/tftp.c 402>
+ 3587 				printf: <>
+ 3588 				synchnet: int (), <./tftp.tproj/tftpsubs.c 274>
+ 3589 				writeit: <>
+ 3590 				nak: void (), <./tftp.tproj/tftp.c 363>
+ 3591 					htons: <>
+ 3592 					ERROR: , <./tftp.tproj/tftp.c 402>
+ 3593 					strcpy: <>
+ 3594 					strlen: 146
+ 3595 					tpacket: <>
+ 3596 					sendto: <>
+ 3597 					sockaddr: <>
+ 3598 					perror: <>
+ 3599 				fclose: <>
+ 3600 				stopclock: void (), <./tftp.tproj/tftp.c 441>
+ 3601 					gettimeofday: <>
+ 3602 				printstats: <>
+ 3603 				send: <>
+ 3604 				syslog: <>
+ 3605 				recv: <>
+ 3606 				nak: void (), <./tftpd.tproj/tftpd.c 636>
+ 3607 					htons: <>
+ 3608 					ERROR: , <./tftp.tproj/tftp.c 402>
+ 3609 					strerror: <>
+ 3610 					strcpy: <>
+ 3611 					strlen: 146
+ 3612 					send: <>
+ 3613 					syslog: <>
+ 3614 				justquit: 2276
+ 3615 			inet_addr: <>
+ 3616 			exit: <>
+ 3617 			dump: 3489
+ 3618 			inet_ntoa: 140
+ 3619 		die: void (), <./syslogd.tproj/syslogd.c 867>
+ 3620 			fprintlog: void (), <./syslogd.tproj/syslogd.c 603>
+ 3621 				snprintf: <>
+ 3622 				ctime: <>
+ 3623 				strlen: 146
+ 3624 				dprintf: <>
+ 3625 				sendto: <>
+ 3626 				sockaddr: <>
+ 3627 				close: <>
+ 3628 				logerror: void (), <./syslogd.tproj/syslogd.c 851>
+ 3629 					snprintf: <>
+ 3630 					strerror: <>
+ 3631 					dprintf: <>
+ 3632 					logmsg: void (), <./syslogd.tproj/syslogd.c 495>
+ 3633 						dprintf: <>
+ 3634 						sigblock: <>
+ 3635 						sigmask: <>
+ 3636 						strlen: 146
+ 3637 						time: , <./talkd.tproj/table.c 197>
+ 3638 						ctime: <>
+ 3639 						LOG_FAC: <>
+ 3640 						LOG_PRI: <>
+ 3641 						open: <>
+ 3642 						fprintlog: 3620
+ 3643 						close: <>
+ 3644 						sigsetmask: <>
+ 3645 						strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 3646 						strncpy: <>
+ 3647 						REPEATTIME: <>
+ 3648 						BACKOFF: <>
+ 3649 						strcpy: <>
+ 3650 				writev: <>
+ 3651 				open: <>
+ 3652 				fsync: <>
+ 3653 				wallmsg: void (), <./syslogd.tproj/syslogd.c 735>
+ 3654 					fopen: <>
+ 3655 					logerror: 3628
+ 3656 					fread: <>
+ 3657 					strncpy: <>
+ 3658 					ttymsg: char * (), <./wall.tproj/ttymsg.c 78>
+ 3659 						strcpy: <>
+ 3660 						strchr: <>
+ 3661 						snprintf: <>
+ 3662 						open: <>
+ 3663 						strerror: <>
+ 3664 						writev: <>
+ 3665 						bcopy: <>
+ 3666 						close: <>
+ 3667 						fork: switch (), <./telnetd.tproj/sys_term.c 2158>
+ 3668 						signal: <>
+ 3669 						sigsetmask: <>
+ 3670 						alarm: <>
+ 3671 						fcntl: <>
+ 3672 					strncmp: <>
+ 3673 					fclose: <>
+ 3674 			dprintf: <>
+ 3675 			snprintf: <>
+ 3676 			logerror: 3628
+ 3677 			unlink: <>
+ 3678 			exit: <>
+ 3679 		domark: void (), <./syslogd.tproj/syslogd.c 823>
+ 3680 			time: , <./talkd.tproj/table.c 197>
+ 3681 			logmsg: 3632
+ 3682 			REPEATTIME: <>
+ 3683 			dprintf: <>
+ 3684 			fprintlog: 3620
+ 3685 			BACKOFF: <>
+ 3686 			alarm: <>
+ 3687 		SUN_LEN: <>
+ 3688 		chmod: <>
+ 3689 		logerror: 3628
+ 3690 		dprintf: <>
+ 3691 		FDMASK: <>
+ 3692 		printsys: void (), <./syslogd.tproj/syslogd.c 456>
+ 3693 			strcpy: <>
+ 3694 			strlen: 146
+ 3695 			isdigit: <>
+ 3696 			logmsg: 3632
+ 3697 		recvfrom: <>
+ 3698 		printline: void (), <./syslogd.tproj/syslogd.c 406>
+ 3699 			isdigit: <>
+ 3700 			LOG_FAC: <>
+ 3701 			LOG_MAKEPRI: <>
+ 3702 			LOG_PRI: <>
+ 3703 			iscntrl: <>
+ 3704 			logmsg: 3632
+ 3705 		cvthname: char * (), <./syslogd.tproj/syslogd.c 798>
+ 3706 			dprintf: <>
+ 3707 			inet_ntoa: 140
+ 3708 			gethostbyaddr: <>
+ 3709 			strchr: <>
+ 3710 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 3711 		getboottime: void (), <./rwhod.tproj/rwhod.c 373>
+ 3712 			sysctl: <>
+ 3713 			syslog: <>
+ 3714 			exit: <>
+ 3715 			htonl: <>
+ 3716 		index: return, <./pcap/gencode.c 1508>
+ 3717 		configure: int (), <./rwhod.tproj/rwhod.c 424>
+ 3718 		onalrm: void (), <./rwhod.tproj/rwhod.c 286>
+ 3719 			time: , <./talkd.tproj/table.c 197>
+ 3720 			getboottime: 3711
+ 3721 			fstat: <>
+ 3722 			realloc: <>
+ 3723 			malloc: <>
+ 3724 			fprintf: <>
+ 3725 			lseek: <>
+ 3726 			read: <>
+ 3727 			strerror: <>
+ 3728 			memcpy: <>
+ 3729 			htonl: <>
+ 3730 			chdir: <>
+ 3731 			syslog: <>
+ 3732 			exit: <>
+ 3733 			stat: <>
+ 3734 			getloadavg: <>
+ 3735 			sendto: <>
+ 3736 			alarm: <>
+ 3737 		verify: <>
+ 3738 		ntohl: <>
+ 3739 		write: <>
+ 3740 		fstat: <>
+ 3741 		ftruncate: <>
+ 3742 		parse_config: int (), <./identd.tproj/config.c 45>
+ 3743 			fopen: <>
+ 3744 			ERROR1: <>
+ 3745 			fclose: <>
+ 3746 		ERROR1: <>
+ 3747 		getgrnam: <>
+ 3748 		k_open: int (), <./identd.tproj/netbsd.c 112>
+ 3749 			kvm_openfiles: <>
+ 3750 			ERROR: , <./tftp.tproj/tftp.c 402>
+ 3751 			kvm_nlist: <>
+ 3752 		ERROR: , <./tftp.tproj/tftp.c 402>
+ 3753 		clearmem: char * (), <./identd.tproj/identd.c 213>
+ 3754 		listen: <>
+ 3755 		SIGRETURN_TYPE: <>
+ 3756 		child_handler: SIGRETURN_TYPE (), <./identd.tproj/identd.c 195>
+ 3757 			wait3: <>
+ 3758 		alarm_handler: SIGRETURN_TYPE (), <./identd.tproj/identd.c 181>
+ 3759 			syslog: <>
+ 3760 			exit: <>
+ 3761 		gethost: char * (), <./identd.tproj/identd.c 164>
+ 3762 			gethostbyaddr: <>
+ 3763 			inet_ntoa: 140
+ 3764 		t_getsockname: <>
+ 3765 		parse: int (), <./identd.tproj/parse.c 167>
+ 3766 			syslog: <>
+ 3767 			fscanf: <>
+ 3768 			getc: <>
+ 3769 			printf: <>
+ 3770 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 3771 			inet_addr: <>
+ 3772 			proxy: 530
+ 3773 			valid_fhost: int (), <./identd.tproj/parse.c 95>
+ 3774 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 3775 				isdigit: <>
+ 3776 				inet_ntoa: 140
+ 3777 				syslog: <>
+ 3778 				gethost: 3761
+ 3779 			gethost: 3761
+ 3780 			k_getuid: <>
+ 3781 			htons: <>
+ 3782 			getpwuid: <>
+ 3783 			check_noident: int (), <./identd.tproj/parse.c 142>
+ 3784 				malloc: <>
+ 3785 				strlen: 146
+ 3786 				strcpy: <>
+ 3787 				strcat: <>
+ 3788 				stat: <>
+ 3789 				free: <>
+ 3790 			fflush: <>
+ 3791 			eat_whitespace: int (), <./identd.tproj/parse.c 70>
+ 3792 				getchar: <>
+ 3793 				ungetc: <>
+ 3794 		fscanf: <>
+ 3795 		restart: void (), <./ftp.tproj/cmds.c 2080>
+ 3796 			printf: <>
+ 3797 			atol: <>
+ 3798 		printd: <>
+ 3799 		cfsetspeed: <>
+ 3800 		putc: <>
+ 3801 		getline: 714
+ 3802 		bcmp: <>
+ 3803 		isalpha: <>
+ 3804 		name2protox: struct protox * (), <./netstat.tproj/main.c 601>
+ 3805 		kread: if (), <./netstat.tproj/if.c 455>
+ 3806 		mbpr: void (), <./netstat.tproj/mbuf.c 108>
+ 3807 			fprintf: <>
+ 3808 			kread: if (), <./netstat.tproj/if.c 455>
+ 3809 			printf: <>
+ 3810 		sethostent: <>
+ 3811 		setnetent: <>
+ 3812 		rt_stats: <>
+ 3813 		routepr: void (), <./netstat.tproj/route.c 159>
+ 3814 			printf: <>
+ 3815 			ntreestuff: void (), <./netstat.tproj/route.c 345>
+ 3816 				sysctl: <>
+ 3817 				err: 197
+ 3818 				malloc: <>
+ 3819 				np_rtentry: <>
+ 3820 			kget: <>
+ 3821 			p_tree: <>
+ 3822 			pr_family: void (), <./netstat.tproj/route.c 199>
+ 3823 				printf: <>
+ 3824 			pr_rthdr: void (), <./netstat.tproj/route.c 247>
+ 3825 				printf: <>
+ 3826 		mrt_stats: void (), <./netstat.tproj/mroute.c 172>
+ 3827 			printf: <>
+ 3828 			kread: if (), <./netstat.tproj/if.c 455>
+ 3829 			plural: char * (), <./netstat.tproj/main.c 568>
+ 3830 			plurales: char * (), <./netstat.tproj/main.c 575>
+ 3831 		mroutepr: void (), <./netstat.tproj/mroute.c 88>
+ 3832 			printf: <>
+ 3833 			kread: if (), <./netstat.tproj/if.c 455>
+ 3834 			routename: <>
+ 3835 		setprotoent: <>
+ 3836 		setservent: <>
+ 3837 		getprotoent: <>
+ 3838 		printproto: <>
+ 3839 		endprotoent: <>
+ 3840 		unixpr: void (), <./netstat.tproj/unix.c 94>
+ 3841 			sprintf: <>
+ 3842 			sysctlbyname: <>
+ 3843 			warn: <>
+ 3844 			malloc: <>
+ 3845 			free: <>
+ 3846 			unixdomainpr: void (), <./netstat.tproj/unix.c 152>
+ 3847 				printf: <>
+ 3848 				offsetof: <>
+ 3849 				putchar: <>
+ 3850 			printf: <>
+ 3851 		makemsg: void (), <./wall.tproj/wall.c 144>
+ 3852 			time: , <./talkd.tproj/table.c 197>
+ 3853 			strcat: <>
+ 3854 			mkstemp: <>
+ 3855 			fdopen: <>
+ 3856 			fprintf: <>
+ 3857 			exit: <>
+ 3858 			unlink: <>
+ 3859 			getpwuid: <>
+ 3860 			getuid: if (), <./rpcinfo.tproj/rpcinfo.c 618>
+ 3861 			gethostname: <>
+ 3862 			localtime: <>
+ 3863 			sprintf: <>
+ 3864 			freopen: <>
+ 3865 			fgets: <>
+ 3866 			putc: <>
+ 3867 			rewind: <>
+ 3868 			fstat: <>
+ 3869 			malloc: <>
+ 3870 			fread: <>
+ 3871 			close: <>
+ 3872 		fread: <>
+ 3873 		read_line: int (), <./stdethers.tproj/stdethers.c 97>
+ 3874 			fgets: <>
+ 3875 			strlen: 146
+ 3876 			getc: <>
+ 3877 			isascii: <>
+ 3878 			isspace: if (), <./rpc_yppasswdd.tproj/passwd.c 223>
+ 3879 			ungetc: <>
+ 3880 			feof: <>
+ 3881 		ether_line: <>
+ 3882 		NTOA: <>
+ 3883 		clnt_create: <>
+ 3884 		clnt_pcreateerror: <>
+ 3885 		clnt_control: <>
+ 3886 		clnt_call: <>
+ 3887 		clnt_perror: <>
+ 3888 		usleep: <>
+ 3889 		print_xferstats: void (), <./spray.tproj/spray.c 218>
+ 3890 			printf: <>
+ 3891 		fill:  (), <./ping.tproj/ping.c 980>
+ 3892 			isxdigit: <>
+ 3893 			fprintf: <>
+ 3894 			exit: <>
+ 3895 			sscanf: <>
+ 3896 			printf: <>
+ 3897 		memmove: <>
+ 3898 		finish: void (), <./ping.tproj/ping.c 724>
+ 3899 		catcher: void (), <./ping.tproj/ping.c 404>
+ 3900 			pinger:  (), <./ping.tproj/ping.c 432>
+ 3901 				CLR: <>
+ 3902 				gettimeofday: <>
+ 3903 				in_cksum: int (), <./timed.tproj/timed.tproj/cksum.c 79>
+ 3904 				sendto: <>
+ 3905 				sockaddr: <>
+ 3906 				perror: <>
+ 3907 				printf: <>
+ 3908 				write: <>
+ 3909 			signal: <>
+ 3910 			catcher: 3899
+ 3911 			alarm: <>
+ 3912 			interval: 171
+ 3913 			finish: void (), <./ping.tproj/ping.c 724>
+ 3914 		pinger: 3900
+ 3915 		pr_pack:  (), <./ping.tproj/ping.c 476>
+ 3916 			gettimeofday: <>
+ 3917 			fprintf: <>
+ 3918 			inet_ntoa: 140
+ 3919 			tvsub: <>
+ 3920 			TST: <>
+ 3921 			SET: <>
+ 3922 			write: <>
+ 3923 			printf: <>
+ 3924 			pr_addr: char * (), <./ping.tproj/ping.c 943>
+ 3925 				gethostbyaddr: <>
+ 3926 				sprintf: <>
+ 3927 				inet_ntoa: 140
+ 3928 			pr_icmph:  (), <./ping.tproj/ping.c 773>
+ 3929 				printf: <>
+ 3930 				pr_retip:  (), <./ping.tproj/ping.c 962>
+ 3931 					pr_iph:  (), <./ping.tproj/ping.c 913>
+ 3932 						printf: <>
+ 3933 						inet_ntoa: 140
+ 3934 						putchar: <>
+ 3935 					printf: <>
+ 3936 			ntohl: <>
+ 3937 			putchar: <>
+ 3938 			memcmp: <>
+ 3939 			memcpy: <>
+ 3940 			fflush: <>
+ 3941 		priv_resources: int (), <./timed.tproj/timedc.tproj/cmds.c 513>
+ 3942 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 3943 			perror: <>
+ 3944 			htons: <>
+ 3945 			bind: <>
+ 3946 			sockaddr: <>
+ 3947 			close: <>
+ 3948 			fprintf: <>
+ 3949 		getcmd: struct cmd (), <./ftp.tproj/main.c 292>
+ 3950 		quit: 684
+ 3951 		makeargv: 568
+ 3952 		syssgi: <>
+ 3953 		times: <>
+ 3954 		addnetname: void (), <./timed.tproj/timed.tproj/timed.c 873>
+ 3955 			malloc: <>
+ 3956 			fprintf: <>
+ 3957 			exit: <>
+ 3958 			bzero: <>
+ 3959 		add_good_host: 127
+ 3960 		rint: <>
+ 3961 		random: <>
+ 3962 		adjtime: if (), <./timed.tproj/timed.tproj/correct.c 176>
+ 3963 		getnetbyname: <>
+ 3964 		inet_network: <>
+ 3965 		getnetbyaddr: <>
+ 3966 		schedctl: <>
+ 3967 		casual: <>
+ 3968 		setstatus: 138
+ 3969 		checkignorednets: void (), <./timed.tproj/timed.tproj/timed.c 802>
+ 3970 			lookformaster: 2281
+ 3971 		pickslavenet: void (), <./timed.tproj/timed.tproj/timed.c 824>
+ 3972 			makeslave: void (), <./timed.tproj/timed.tproj/timed.c 786>
+ 3973 		election: int (), <./timed.tproj/timed.tproj/candidate.c 74>
+ 3974 			readmsg: struct tsp (), <./timed.tproj/timed.tproj/readmsg.c 100>
+ 3975 			fprintf: <>
+ 3976 			syslog: <>
+ 3977 			strcpy: <>
+ 3978 			bytenetorder: 2298
+ 3979 			sendto: <>
+ 3980 			sockaddr: <>
+ 3981 			trace_sendto_err: <>
+ 3982 			gettimeofday: <>
+ 3983 			timevalsub:  (), <./routed.tproj/main.c 292>
+ 3984 			addmach: struct hosttbl * (), <./timed.tproj/timed.tproj/master.c 619>
+ 3985 			good_host_name: 136
+ 3986 			suppress: 2286
+ 3987 			rmnetmachs: <>
+ 3988 			acksend: <>
+ 3989 			print: 2337
+ 3990 		makeslave: 3972
+ 3991 		justquit: 2276
+ 3992 		slave: int (), <./timed.tproj/timed.tproj/slave.c 90>
+ 3993 			adjtime: if (), <./timed.tproj/timed.tproj/correct.c 176>
+ 3994 			gettimeofday: <>
+ 3995 			justquit: 2276
+ 3996 			xmit: 2311
+ 3997 			masterup: <>
+ 3998 			get_goodgroup: 120
+ 3999 			fprintf: <>
+ 4000 			longjmp: <>
+ 4001 			lookformaster: 2281
+ 4002 			makeslave: 3972
+ 4003 			setstatus: 138
+ 4004 			strcpy: <>
+ 4005 			bytenetorder: 2298
+ 4006 			sendto: <>
+ 4007 			sockaddr: <>
+ 4008 			trace_sendto_err: <>
+ 4009 			min: <>
+ 4010 			readmsg: struct tsp (), <./timed.tproj/timed.tproj/readmsg.c 100>
+ 4011 			print: 2337
+ 4012 			good_host_name: 136
+ 4013 			syslog: <>
+ 4014 			suppress: 2286
+ 4015 			setmaster: void (), <./timed.tproj/timed.tproj/slave.c 654>
+ 4016 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 4017 				strcpy: <>
+ 4018 				syslog: <>
+ 4019 				fprintf: <>
+ 4020 			synch: <>
+ 4021 			tvtomsround: <>
+ 4022 			adj_msg_time: <>
+ 4023 			cftime: <>
+ 4024 			date: char * (), <./timed.tproj/timed.tproj/timed.c 855>
+ 4025 			ctime: <>
+ 4026 			timevalsub:  (), <./routed.tproj/main.c 292>
+ 4027 			settimeofday: <>
+ 4028 			logwtmp: 1388
+ 4029 			spreadtime: void (), <./timed.tproj/timed.tproj/master.c 517>
+ 4030 			answerdelay: void (), <./timed.tproj/timed.tproj/slave.c 724>
+ 4031 				sginap: <>
+ 4032 				select: if (), <./timed.tproj/timed.tproj/readmsg.c 225>
+ 4033 			schgdate: void (), <./timed.tproj/timed.tproj/slave.c 684>
+ 4034 				syslog: <>
+ 4035 				gettimeofday: <>
+ 4036 				adj_msg_time: <>
+ 4037 				strcpy: <>
+ 4038 				acksend: <>
+ 4039 				xmit: 2311
+ 4040 			findhost: struct hosttbl (), <./timed.tproj/timed.tproj/master.c 592>
+ 4041 			traceon: void (), <./timed.tproj/timed.tproj/master.c 866>
+ 4042 			traceoff: 119
+ 4043 			newslave: <>
+ 4044 			acksend: <>
+ 4045 			addmach: struct hosttbl * (), <./timed.tproj/timed.tproj/master.c 619>
+ 4046 			remmach: <>
+ 4047 			doquit: <>
+ 4048 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 4049 		rmnetmachs: <>
+ 4050 		realloc: <>
+ 4051 		ISDOWN: <>
+ 4052 		tninit: 757
+ 4053 		TerminalSaveState: void (), <./telnet.tproj/sys_bsd.c 261>
+ 4054 			ioctl: <>
+ 4055 			tcgetattr: <>
+ 4056 			CONTROL: <>
+ 4057 		parsetos: <>
+ 4058 		auth_disable_name: <>
+ 4059 		set_escape_char: void (), <./telnet.tproj/commands.c 959>
+ 4060 		SetNetTrace: <>
+ 4061 		encrypt_auto: <>
+ 4062 		decrypt_auto: <>
+ 4063 		Exit: 790
+ 4064 		tn: int (), <./telnet.tproj/commands.c 2257>
+ 4065 			sourceroute: <>
+ 4066 			memset: <>
+ 4067 			printf: <>
+ 4068 			setuid: <>
+ 4069 			getuid: if (), <./rpcinfo.tproj/rpcinfo.c 618>
+ 4070 			strcpy: <>
+ 4071 			fgets: <>
+ 4072 			strlen: 146
+ 4073 			makeargv: 723
+ 4074 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 4075 			isprefix: <>
+ 4076 			usage: 4
+ 4077 			herror: <>
+ 4078 			inet_addr: <>
+ 4079 			gethostbyname: <>
+ 4080 			memmove: <>
+ 4081 			strncpy: <>
+ 4082 			atoi: <>
+ 4083 			getservbyname: <>
+ 4084 			htons: <>
+ 4085 			P: <>
+ 4086 			fprintf: <>
+ 4087 			inet_ntoa: 140
+ 4088 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 4089 			perror: <>
+ 4090 			setsockopt: <>
+ 4091 			gettosbyname: <>
+ 4092 			SetSockOpt: int (), <./telnet.tproj/utilities.c 110>
+ 4093 			connect: <>
+ 4094 			sockaddr: <>
+ 4095 			NetClose: int (), <./telnet.tproj/sys_bsd.c 847>
+ 4096 			auth_encrypt_connect: <>
+ 4097 			cmdrc: <>
+ 4098 			getenv: <>
+ 4099 			getpwnam: <>
+ 4100 			getpwuid: <>
+ 4101 			env_define: <>
+ 4102 			env_export: <>
+ 4103 			call: 703
+ 4104 			status:  (), <./telnet.tproj/commands.c 2176>
+ 4105 				printf: <>
+ 4106 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 4107 				getconnmode: 730
+ 4108 				my_want_state_is_will: <>
+ 4109 				slcstate: void (), <./telnet.tproj/telnet.c 1287>
+ 4110 					printf: <>
+ 4111 				my_want_state_is_dont: <>
+ 4112 				encrypt_display: <>
+ 4113 				control: int (), <./rlogind.tproj/rlogind.c 368>
+ 4114 					memmove: <>
+ 4115 					ntohs: <>
+ 4116 					ioctl: <>
+ 4117 				fflush: <>
+ 4118 				getpid: <>
+ 4119 				getpgrp: <>
+ 4120 				filestuff: void (), <./telnet.tproj/commands.c 2140>
+ 4121 					setconnmode: 729
+ 4122 					fcntl: <>
+ 4123 					setcommandmode: 709
+ 4124 					perror: <>
+ 4125 					printf: <>
+ 4126 					decodeflags: <>
+ 4127 			setjmp: <>
+ 4128 			telnet: 1607
+ 4129 			ExitString: void (), <./telnet.tproj/utilities.c 955>
+ 4130 				SetForExit: 791
+ 4131 				fwrite: <>
+ 4132 				strlen: 146
+ 4133 				exit: <>
+ 4134 		shell_continue: <>
+ 4135 		rindex: <>
+ 4136 		DebugOn: void (), <./rbootd.tproj/rbootd.c 524>
+ 4137 		DebugOff: void (), <./rbootd.tproj/rbootd.c 501>
+ 4138 		BpfGetIntfName: char * (), <./rbootd.tproj/bpf.c 243>
+ 4139 			socket: int, <./rpcinfo.tproj/rpcinfo.c 505>
+ 4140 			strcpy: <>
+ 4141 			ioctl: <>
+ 4142 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 4143 			isdigit: <>
+ 4144 			atoi: <>
+ 4145 			close: <>
+ 4146 		ReConfig: void (), <./rbootd.tproj/rbootd.c 474>
+ 4147 		GetBootFiles: int (), <./rbootd.tproj/parseconf.c 334>
+ 4148 			FreeStr: <>
+ 4149 			opendir: <>
+ 4150 			syslog: <>
+ 4151 			readdir: <>
+ 4152 			stat: <>
+ 4153 			NewStr: char * (), <./rbootd.tproj/utils.c 358>
+ 4154 				malloc: <>
+ 4155 				strlen: 146
+ 4156 				syslog: <>
+ 4157 				strcpy: <>
+ 4158 			closedir: <>
+ 4159 		ParseConfig: int (), <./rbootd.tproj/parseconf.c 104>
+ 4160 			FreeClients: void (), <./rbootd.tproj/utils.c 333>
+ 4161 			fopen: <>
+ 4162 			syslog: <>
+ 4163 			sigblock: <>
+ 4164 			sigmask: <>
+ 4165 			fgets: <>
+ 4166 			index: return, <./pcap/gencode.c 1508>
+ 4167 			ParseAddr: u_char * (), <./rbootd.tproj/parseconf.c 270>
+ 4168 				bzero: <>
+ 4169 				isdigit: <>
+ 4170 				isupper: <>
+ 4171 				tolower: <>
+ 4172 			NewClient: <>
+ 4173 			STREQN: <>
+ 4174 			FreeClient: <>
+ 4175 			fclose: <>
+ 4176 			sigsetmask: <>
+ 4177 		BpfOpen: int (), <./rbootd.tproj/bpf.c 109>
+ 4178 			sprintf: <>
+ 4179 			open: <>
+ 4180 			syslog: <>
+ 4181 			Exit: 790
+ 4182 			strncpy: <>
+ 4183 			ioctl: <>
+ 4184 			bcopy: <>
+ 4185 			malloc: <>
+ 4186 		DoTimeout: void (), <./rbootd.tproj/rbootd.c 382>
+ 4187 			gettimeofday: <>
+ 4188 			syslog: <>
+ 4189 			EnetStr: <>
+ 4190 			RemoveConn: <>
+ 4191 		FindClient: <>
+ 4192 		BpfRead: int (), <./rbootd.tproj/bpf.c 333>
+ 4193 			read: <>
+ 4194 			syslog: <>
+ 4195 			bcopy: <>
+ 4196 			BPF_WORDALIGN: <>
+ 4197 		DispPkt: void (), <./rbootd.tproj/utils.c 101>
+ 4198 			sigblock: <>
+ 4199 			sigmask: <>
+ 4200 			sigsetmask: <>
+ 4201 			fputs: <>
+ 4202 			localtime: <>
+ 4203 			fprintf: <>
+ 4204 			EnetStr: <>
+ 4205 			GETWORD: <>
+ 4206 			WORDZE: <>
+ 4207 			fputc: <>
+ 4208 			DspFlnm: <>
+ 4209 			RMPREADSIZE: <>
+ 4210 			fflush: <>
+ 4211 		EnetStr: <>
+ 4212 		ProcessPacket: void (), <./rbootd.tproj/rmpproto.c 108>
+ 4213 			NewConn: RMPCONN * (), <./rbootd.tproj/utils.c 393>
+ 4214 				malloc: <>
+ 4215 				syslog: <>
+ 4216 				EnetStr: <>
+ 4217 				bcopy: <>
+ 4218 			WORDZE: <>
+ 4219 			SendServerID: int (), <./rbootd.tproj/rmpproto.c 198>
+ 4220 				ZEROWORD: <>
+ 4221 				RMPBOOTSIZE: <>
+ 4222 				SendPacket: <>
+ 4223 			SendFileNo: int (), <./rbootd.tproj/rmpproto.c 250>
+ 4224 				GETWORD: <>
+ 4225 				PUTWORD: <>
+ 4226 				RMPBOOTSIZE: <>
+ 4227 				SendPacket: <>
+ 4228 			FreeConn: <>
+ 4229 			SendBootRepl: int (), <./rbootd.tproj/rmpproto.c 312>
+ 4230 				FindConn: <>
+ 4231 				syslog: <>
+ 4232 				EnetStr: <>
+ 4233 				RemoveConn: <>
+ 4234 				COPYWORD: <>
+ 4235 				GenSessID: <>
+ 4236 				rindex: <>
+ 4237 				STREQN: <>
+ 4238 				open: <>
+ 4239 				RMPBOOTSIZE: <>
+ 4240 				SendPacket: <>
+ 4241 			AddConn: <>
+ 4242 			syslog: <>
+ 4243 			EnetStr: <>
+ 4244 			SendReadRepl: int (), <./rbootd.tproj/rmpproto.c 421>
+ 4245 				FindConn: <>
+ 4246 				NewConn: 4213
+ 4247 				syslog: <>
+ 4248 				EnetStr: <>
+ 4249 				GETWORD: <>
+ 4250 				lseek: <>
+ 4251 				read: <>
+ 4252 				COPYWORD: <>
+ 4253 				RMPREADSIZE: <>
+ 4254 				SendPacket: <>
+ 4255 				FreeConn: <>
+ 4256 			BootDone: int (), <./rbootd.tproj/rmpproto.c 539>
+ 4257 				FindConn: <>
+ 4258 				syslog: <>
+ 4259 				EnetStr: <>
+ 4260 				RemoveConn: <>
+ 4261 		nonfs: void (), <./nfsiod.tproj/nfsiod.c 165>
+ 4262 			syslog: <>
+ 4263 		nfssvc: <>
+ 4264 		process_request: <>
+ 4265 		sendto: <>
+ 4266 		abort_on_misalignment: int (), <./tcpdump.tproj/machdep.c 61>
+ 4267 			setsysinfo: <>
+ 4268 			sprintf: <>
+ 4269 			pcap_strerror: 815
+ 4270 		error: 244
+ 4271 		setvbuf: <>
+ 4272 		strcasecmp: if (), <./inetd.tproj/inetd.c 1284>
+ 4273 		gmt2local: int32_t (), <./tcpdump.tproj/util.c 327>
+ 4274 			time: , <./talkd.tproj/table.c 197>
+ 4275 			gmtime: <>
+ 4276 			localtime: <>
+ 4277 		pcap_open_offline: pcap_t * (), <./pcap/savefile.c 133>
+ 4278 			malloc: <>
+ 4279 			strcpy: <>
+ 4280 			memset: <>
+ 4281 			fopen: <>
+ 4282 			sprintf: <>
+ 4283 			pcap_strerror: 815
+ 4284 			fread: <>
+ 4285 			SWAPLONG: <>
+ 4286 			swap_hdr: void (), <./pcap/savefile.c 122>
+ 4287 				SWAPSHORT: <>
+ 4288 				SWAPLONG: <>
+ 4289 			free: <>
+ 4290 		pcap_lookupdev: <>
+ 4291 		pcap_open_live: pcap_t * (), <./pcap/pcap-bpf.c 188>
+ 4292 			malloc: <>
+ 4293 			sprintf: <>
+ 4294 			pcap_strerror: 815
+ 4295 			bzero: <>
+ 4296 			bpf_open: __inline int (), <./pcap/pcap-bpf.c 164>
+ 4297 				sprintf: <>
+ 4298 				open: <>
+ 4299 				pcap_strerror: 815
+ 4300 			ioctl: <>
+ 4301 			strncpy: <>
+ 4302 			close: <>
+ 4303 			free: <>
+ 4304 		pcap_snapshot: int (), <./pcap/pcap.c 138>
+ 4305 		pcap_lookupnet: <>
+ 4306 		read_infile: char * (), <./tcpdump.tproj/util.c 298>
+ 4307 			open: <>
+ 4308 			error: 244
+ 4309 			pcap_strerror: 815
+ 4310 			fstat: <>
+ 4311 			malloc: <>
+ 4312 			read: <>
+ 4313 		copy_argv: char * (), <./tcpdump.tproj/util.c 242>
+ 4314 			strlen: 146
+ 4315 			malloc: <>
+ 4316 			error: 244
+ 4317 		pcap_compile: int (), <./pcap/gencode.c 295>
+ 4318 			setjmp: <>
+ 4319 			freechunks: void (), <./pcap/gencode.c 225>
+ 4320 				free: <>
+ 4321 			pcap_snapshot: int (), <./pcap/pcap.c 138>
+ 4322 			lex_init: <>
+ 4323 			init_linktype: void (), <./pcap/gencode.c 497>
+ 4324 				bpf_error: , <./pcap/gencode.c 121>
+ 4325 			pcap_datalink: int (), <./pcap/pcap.c 132>
+ 4326 			pcap_parse: <>
+ 4327 			syntax: __inline void (), <./pcap/gencode.c 286>
+ 4328 			gen_retblk: struct block (), <./pcap/gencode.c 276>
+ 4329 			bpf_optimize: <>
+ 4330 			bpf_error: , <./pcap/gencode.c 121>
+ 4331 			icode_to_fcode: <>
+ 4332 		pcap_geterr: char * (), <./pcap/pcap.c 180>
+ 4333 		bpf_dump: void (), <./tcpdump.tproj/bpf_dump.c 60>
+ 4334 			printf: <>
+ 4335 			puts: <>
+ 4336 			bpf_image: char * (), <./pcap/bpf_image.c 68>
+ 4337 				sprintf: <>
+ 4338 				BPF_CLASS: <>
+ 4339 				BPF_OP: <>
+ 4340 		init_addrtoname: void (), <./tcpdump.tproj/addrtoname.c 722>
+ 4341 			init_etherarray: void (), <./tcpdump.tproj/addrtoname.c 645>
+ 4342 				fopen: <>
+ 4343 				pcap_next_etherent: struct pcap_etherent * (), <./pcap/etherent.c 110>
+ 4344 				lookup_emem: inline struct enamemem * (), <./tcpdump.tproj/addrtoname.c 271>
+ 4345 				savestr: 241
+ 4346 				fclose: <>
+ 4347 				ether_ntohost: <>
+ 4348 			init_servarray: void (), <./tcpdump.tproj/addrtoname.c 546>
+ 4349 				getservent: <>
+ 4350 				ntohs: <>
+ 4351 				strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 4352 				sprintf: <>
+ 4353 				savestr: 241
+ 4354 				newhnamemem: struct hnamemem (), <./tcpdump.tproj/addrtoname.c 764>
+ 4355 				endservent: <>
+ 4356 			init_eprotoarray: void (), <./tcpdump.tproj/addrtoname.c 583>
+ 4357 				ntohs: <>
+ 4358 				newhnamemem: struct hnamemem (), <./tcpdump.tproj/addrtoname.c 764>
+ 4359 			init_llcsaparray: void (), <./tcpdump.tproj/addrtoname.c 700>
+ 4360 				newhnamemem: struct hnamemem (), <./tcpdump.tproj/addrtoname.c 764>
+ 4361 			init_protoidarray: void (), <./tcpdump.tproj/addrtoname.c 604>
+ 4362 				htons: <>
+ 4363 				memcpy: <>
+ 4364 				lookup_protoid: inline struct protoidmem * (), <./tcpdump.tproj/addrtoname.c 344>
+ 4365 				savestr: 241
+ 4366 		cleanup: 808
+ 4367 		pcap_setfilter: int (), <./pcap/pcap-bpf.c 264>
+ 4368 			ioctl: <>
+ 4369 			sprintf: <>
+ 4370 			pcap_strerror: 815
+ 4371 		pcap_dump_open: pcap_dumper_t * (), <./pcap/savefile.c 335>
+ 4372 			fopen: <>
+ 4373 			sprintf: <>
+ 4374 			pcap_strerror: 815
+ 4375 			sf_write_header: int (), <./pcap/savefile.c 102>
+ 4376 				fwrite: <>
+ 4377 		pcap_dump: void (), <./pcap/savefile.c 321>
+ 4378 			fwrite: <>
+ 4379 		lookup_printer: pcap_handler (), <./tcpdump.tproj/tcpdump.c 128>
+ 4380 			error: 244
+ 4381 		pcap_datalink: int (), <./pcap/pcap.c 132>
+ 4382 		pcap_loop: int (), <./pcap/pcap.c 92>
+ 4383 			pcap_dispatch: int (), <./pcap/pcap.c 78>
+ 4384 				pcap_offline_read: int (), <./pcap/savefile.c 290>
+ 4385 					sf_next_packet: int (), <./pcap/savefile.c 218>
+ 4386 						fread: <>
+ 4387 						SWAPLONG: <>
+ 4388 						free: <>
+ 4389 						malloc: <>
+ 4390 						sprintf: <>
+ 4391 						memcpy: <>
+ 4392 					bpf_filter: <>
+ 4393 				pcap_read: int (), <./pcap/pcap-bpf.c 91>
+ 4394 					read: <>
+ 4395 					lseek: <>
+ 4396 					sprintf: <>
+ 4397 					pcap_strerror: 815
+ 4398 					BPF_WORDALIGN: <>
+ 4399 		pcap_close: void (), <./pcap/pcap.c 206>
+ 4400 			close: <>
+ 4401 			fclose: <>
+ 4402 			free: <>
+ 4403 		dup: <>
+ 4404 		connect: <>
+ 4405 		tftp: void (), <./tftpd.tproj/tftpd.c 279>
+ 4406 			pf: <>
+ 4407 			nak: 3606
+ 4408 			exit: <>
+ 4409 			isupper: <>
+ 4410 			tolower: <>
+ 4411 			strcmp: else if (), <./telnet.tproj/commands.c 1033>
+ 4412 			syslog: <>
+ 4413 			verifyhost: char * (), <./tftpd.tproj/tftpd.c 662>
+ 4414 				gethostbyaddr: <>
+ 4415 				inet_ntoa: 140
+ 4416 			errtomsg: char * (), <./tftpd.tproj/tftpd.c 615>
+ 4417 				sprintf: <>
+ 4418 		findspeed: <>
+ 4419 		getnpty: int (), <./telnetd.tproj/sys_term.c 463>
+ 4420 			sysconf: <>
+ 4421 		sysconf: <>
+ 4422 		getsysv: <>
+ 4423 		gettosbyname: <>
+ 4424 		printit:  (), <./ypcat.tproj/ypcat.c 94>
+ 4425 			printf: <>
+ 4426 		yp_all: <>
+ 4427 		pmap_set: <>
+ 4428 		setproctitle: 3314
+ 4429 		NFS_KERBW1: <>
+ 4430 		krb_rd_req: <>
+ 4431 		krb_kntoln: <>
+ 4432 		setgrent: <>
+ 4433 		getgrent: <>
+ 4434 		endgrent: <>
+ 4435 		TSEL: <>
+ 4436 		wait3: <>

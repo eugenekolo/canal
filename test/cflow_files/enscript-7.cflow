@@ -1,0 +1,577 @@
+    1 	main: int (), <./enscript/afmlib/ansi2knr.c 151>
+    2 		strrchr: <>
+    3 		setlocale: <>
+    4 		bindtextdomain: <>
+    5 		textdomain: <>
+    6 		getopt_long: int (), <./enscript/compat/getopt1.c 68>
+    7 		usage: void (), <./enscript/src/mkafmmap.c 242>
+    8 			printf: <>
+    9 		exit: <>
+   10 		strcmp: <>
+   11 		printf: <>
+   12 		fopen: <>
+   13 		sprintf: <>
+   14 		perror: <>
+   15 		afm_create: AFMError (), <./enscript/afmlib/afm.c 95>
+   16 			calloc: <>
+   17 			strhash_init: StringHashPtr (), <./enscript/afmlib/strhash.c 74>
+   18 				calloc: <>
+   19 				free: <>
+   20 			afm_message: void (), <./enscript/afmlib/afm.c 685>
+   21 				fprintf: <>
+   22 			strchr: <>
+   23 			strlen: <>
+   24 			memcpy: char * (), <./enscript/compat/memcpy.c 6>
+   25 			strcat: <>
+   26 			stat: <>
+   27 			read_font_map: void (), <./enscript/afmlib/afm.c 706>
+   28 				sprintf: <>
+   29 				afm_message: 20
+   30 				fopen: <>
+   31 				strerror: char * (), <./enscript/compat/strerror.c 35>
+   32 				strrchr: <>
+   33 				memcpy: char * (), <./enscript/compat/memcpy.c 6>
+   34 				fgets: <>
+   35 				sscanf: <>
+   36 				afm_error: void (), <./enscript/afmlib/afm.c 695>
+   37 					fprintf: <>
+   38 				strhash_get: int (), <./enscript/afmlib/strhash.c 192>
+   39 					count_hash: int (), <./enscript/afmlib/strhash.c 379>
+   40 					memcmp: <>
+   41 				strlen: <>
+   42 				strcpy: <>
+   43 				malloc: <>
+   44 				strhash_put: int (), <./enscript/afmlib/strhash.c 121>
+   45 					count_hash: 39
+   46 					memcmp: <>
+   47 					calloc: <>
+   48 					malloc: <>
+   49 					free: <>
+   50 					memcpy: char * (), <./enscript/compat/memcpy.c 6>
+   51 				fclose: <>
+   52 			afm_destroy: AFMError (), <./enscript/afmlib/afm.c 167>
+   53 				strhash_get_first: int (), <./enscript/afmlib/strhash.c 272>
+   54 				free: <>
+   55 				strhash_free: void (), <./enscript/afmlib/strhash.c 97>
+   56 					free: <>
+   57 		HANDLE_ERROR: <>
+   58 		fprintf: <>
+   59 		afm_open_file: AFMError (), <./enscript/afmlib/afm.c 242>
+   60 			calloc: <>
+   61 			strhash_init: 17
+   62 			setjmp: <>
+   63 			afm_parse_file: void (), <./enscript/afmlib/afmparse.c 175>
+   64 				fopen: <>
+   65 				parse_error: void (), <./enscript/afmlib/afmparse.c 511>
+   66 					longjmp: <>
+   67 					fprintf: <>
+   68 					abort: <>
+   69 				SYSERROR: <>
+   70 				get_key: void (), <./enscript/afmlib/afmparse.c 622>
+   71 					get_token: int (), <./enscript/afmlib/afmparse.c 523>
+   72 						getc: <>
+   73 						ISSPACE: <>
+   74 						ungetc: <>
+   75 						parse_error: 65
+   76 					parse_error: 65
+   77 					match_key: int (), <./enscript/afmlib/afmparse.c 592>
+   78 						strcmp: <>
+   79 					sprintf: <>
+   80 					afm_error: 36
+   81 					get_line_token: int (), <./enscript/afmlib/afmparse.c 556>
+   82 						getc: <>
+   83 						ISSPACE: <>
+   84 						ungetc: <>
+   85 						parse_error: 65
+   86 				GET_VALUE: <>
+   87 				get_line_token: 81
+   88 				calloc: <>
+   89 				read_character_metrics: void (), <./enscript/afmlib/afmparse.c 727>
+   90 					get_key: 70
+   91 					parse_error: 65
+   92 					GET_VALUE: <>
+   93 					printf: <>
+   94 					strhash_put: 44
+   95 					strlen: <>
+   96 					get_line_token: 81
+   97 				read_kern_pairs: void (), <./enscript/afmlib/afmparse.c 856>
+   98 					get_key: 70
+   99 					GET_VALUE: <>
+  100 					fprintf: <>
+  101 					abort: <>
+  102 					parse_error: 65
+  103 				read_track_kerns: void (), <./enscript/afmlib/afmparse.c 924>
+  104 					get_key: 70
+  105 					parse_error: 65
+  106 					GET_VALUE: <>
+  107 				read_composites: void (), <./enscript/afmlib/afmparse.c 965>
+  108 					get_key: 70
+  109 					parse_error: 65
+  110 					GET_VALUE: <>
+  111 					strhash_put: 44
+  112 					strlen: <>
+  113 					calloc: <>
+  114 				fclose: <>
+  115 				strhash_get: 38
+  116 				assert: <>
+  117 			afm_close_font: AFMError (), <./enscript/afmlib/afm.c 307>
+  118 				FREE: <>
+  119 				strhash_free: 55
+  120 				free: <>
+  121 		strlen: <>
+  122 		afm_close_font: 117
+  123 		afm_error_to_string: void (), <./enscript/afmlib/afm.c 61>
+  124 			strerror: 31
+  125 			sprintf: <>
+  126 		fclose: <>
+  127 		afm_error: 36
+  128 		strcpy: <>
+  129 		time: <>
+  130 		localtime: <>
+  131 		memcpy: char * (), <./enscript/compat/memcpy.c 6>
+  132 		asctime: <>
+  133 		getpwuid: struct passwd (), <./enscript/compat/getpwd.c 51>
+  134 		getuid: int (), <./enscript/compat/getuid.c 30>
+  135 		FATAL: <>
+  136 		strerror: 31
+  137 		getenv: <>
+  138 		strhash_init: 17
+  139 		read_config: int (), <./enscript/src/util.c 98>
+  140 			sprintf: <>
+  141 			fopen: <>
+  142 			fgets: <>
+  143 			GET_TOKEN: <>
+  144 			MATCH: <>
+  145 			CHECK_TOKEN: <>
+  146 			atoi: <>
+  147 			strcpy: <>
+  148 			CFG_FATAL: <>
+  149 			strhash_put: 44
+  150 			strlen: <>
+  151 			atof: <>
+  152 			add_media: void (), <./enscript/src/util.c 422>
+  153 				MESSAGE: <>
+  154 				xcalloc: void * (), <./enscript/compat/xalloc.c 72>
+  155 					calloc: <>
+  156 					fprintf: <>
+  157 					exit: <>
+  158 				xmalloc: void * (), <./enscript/compat/xalloc.c 55>
+  159 					malloc: <>
+  160 					fprintf: <>
+  161 					exit: <>
+  162 				strlen: <>
+  163 				strcpy: <>
+  164 			GET_LINE_TOKEN: <>
+  165 			parse_key_value_pair: void (), <./enscript/src/util.c 1515>
+  166 				strchr: <>
+  167 				strhash_delete: int (), <./enscript/afmlib/strhash.c 224>
+  168 					count_hash: 39
+  169 					memcmp: <>
+  170 					free: <>
+  171 				strlen: <>
+  172 				xfree: void (), <./enscript/compat/xalloc.c 111>
+  173 					free: <>
+  174 				sprintf: <>
+  175 				strhash_put: 44
+  176 				xstrdup: char * (), <./enscript/compat/xalloc.c 122>
+  177 					xmalloc: 158
+  178 					strlen: <>
+  179 					strcpy: <>
+  180 			xstrdup: 176
+  181 			xmalloc: 158
+  182 			parse_font_spec: int (), <./enscript/src/util.c 675>
+  183 				strchr: <>
+  184 				atof: <>
+  185 				strlen: <>
+  186 				ISNUMBERDIGIT: <>
+  187 				xcalloc: 154
+  188 				strncpy: <>
+  189 				MESSAGE: <>
+  190 		strcat: <>
+  191 		handle_env_options: void (), <./enscript/src/main.c 1685>
+  192 			getenv: <>
+  193 			MESSAGE: <>
+  194 			xstrdup: 176
+  195 			strlen: <>
+  196 			xcalloc: 154
+  197 			isspace: <>
+  198 			FATAL: <>
+  199 			handle_options: void (), <./enscript/src/main.c 1786>
+  200 				getopt_long: int (), <./enscript/compat/getopt1.c 68>
+  201 				strcmp: <>
+  202 				atoi: <>
+  203 				xcalloc: 154
+  204 				strchr: <>
+  205 				FATAL: <>
+  206 				parse_key_value_pair: 165
+  207 				isdigit: <>
+  208 				strtoul: <>
+  209 				parse_font_spec: 182
+  210 				file_existsp: int (), <./enscript/src/util.c 468>
+  211 					strcpy: <>
+  212 					pathwalk: int (), <./enscript/src/util.c 1553>
+  213 						strchr: <>
+  214 						strlen: <>
+  215 						memcpy: char * (), <./enscript/compat/memcpy.c 6>
+  216 					file_lookup: int (), <./enscript/src/util.c 1584>
+  217 						MESSAGE: <>
+  218 						strlen: <>
+  219 						sprintf: <>
+  220 						stat: <>
+  221 				fprintf: <>
+  222 				atof: <>
+  223 				version: void (), <./enscript/src/main.c 2436>
+  224 					printf: <>
+  225 				exit: <>
+  226 				strhash_put: 44
+  227 				strlen: <>
+  228 				usage: void (), <./enscript/src/main.c 2318>
+  229 					printf: <>
+  230 				strcpy: <>
+  231 				printf: <>
+  232 			xfree: 172
+  233 		handle_options: 199
+  234 		MATCH: <>
+  235 		strhash_put: 44
+  236 		read_font_info: void (), <./enscript/src/util.c 751>
+  237 			MESSAGE: <>
+  238 			sprintf: <>
+  239 			strhash_get: 38
+  240 			strlen: <>
+  241 			afm_open_font: AFMError (), <./enscript/afmlib/afm.c 220>
+  242 				strhash_get: 38
+  243 				strlen: <>
+  244 				sprintf: <>
+  245 				afm_open_file: 59
+  246 			strncmp: if (), <./enscript/afmlib/ansi2knr.c 443>
+  247 			afm_open_default_font: AFMError (), <./enscript/afmlib/deffont.c 306>
+  248 				calloc: <>
+  249 				strhash_init: 17
+  250 				malloc: <>
+  251 				strlen: <>
+  252 				strcpy: <>
+  253 				strhash_put: 44
+  254 				afm_close_font: 117
+  255 			afm_error_to_string: 123
+  256 			FATAL: <>
+  257 			afm_font_encoding: AFMError (), <./enscript/afmlib/afm.c 597>
+  258 				apply_encoding: void (), <./enscript/afmlib/afm.c 779>
+  259 					strhash_get: 38
+  260 					strlen: <>
+  261 			afm_font_encode: AFMError (), <./enscript/afmlib/afm.c 553>
+  262 				strhash_get: 38
+  263 				strlen: <>
+  264 			strhash_put: 44
+  265 			xcalloc: 154
+  266 			afm_font_charwidth: AFMError (), <./enscript/afmlib/afm.c 512>
+  267 			afm_close_font: 117
+  268 			memcpy: char * (), <./enscript/compat/memcpy.c 6>
+  269 			xfree: 172
+  270 		parse_float: double (), <./enscript/src/util.c 1651>
+  271 			strtod: <>
+  272 			ERROR: <>
+  273 			CHAR_WIDTH: <>
+  274 		atoi: <>
+  275 		MESSAGE: <>
+  276 		escape_string: char * (), <./enscript/src/util.c 1089>
+  277 			xmalloc: 158
+  278 		strtod: <>
+  279 		atan2: <>
+  280 		system: <>
+  281 		do_list_options: void (), <./enscript/src/main.c 2229>
+  282 			printf: <>
+  283 			TF: <>
+  284 			strhash_get_first: 53
+  285 			strhash_get_next: int (), <./enscript/afmlib/strhash.c 294>
+  286 		xmalloc: 158
+  287 		is_open: int (), <./enscript/src/util.c 1706>
+  288 			strlen: <>
+  289 			xmalloc: 158
+  290 			xrealloc: void * (), <./enscript/compat/xalloc.c 90>
+  291 				xmalloc: 158
+  292 				realloc: <>
+  293 				fprintf: <>
+  294 				exit: <>
+  295 			strcpy: <>
+  296 			popen: <>
+  297 			xfree: 172
+  298 			ERROR: <>
+  299 			strerror: 31
+  300 			fopen: <>
+  301 		open_output_file: void (), <./enscript/src/main.c 1627>
+  302 			strcat: <>
+  303 			printer_open: FILE * (), <./enscript/src/prt_dos.c 34>
+  304 				sprintf: <>
+  305 				popen: <>
+  306 				fopen: <>
+  307 			FATAL: <>
+  308 			strerror: 31
+  309 			fopen: <>
+  310 		process_file: void (), <./enscript/states/process.c 34>
+  311 			strcpy: <>
+  312 			CHAR_WIDTH: <>
+  313 			do_pass_through: int (), <./enscript/src/psgen.c 2467>
+  314 				MESSAGE: <>
+  315 				is_getc: int (), <./enscript/src/util.c 1818>
+  316 					fread: <>
+  317 				OUTPUT: <>
+  318 				fwrite: <>
+  319 			dump_ps_header: void (), <./enscript/src/psgen.c 259>
+  320 				OUTPUT: <>
+  321 				count_key_value_set: int (), <./enscript/src/util.c 1538>
+  322 					strhash_get_first: 53
+  323 					strhash_get_next: 285
+  324 				paste_file: int (), <./enscript/src/util.c 480>
+  325 					strcpy: <>
+  326 					pathwalk: 212
+  327 					file_lookup: 216
+  328 					fopen: <>
+  329 					fgets: <>
+  330 					strncmp: if (), <./enscript/afmlib/ansi2knr.c 443>
+  331 					strlen: <>
+  332 					GET_TOKEN: <>
+  333 					MATCH: <>
+  334 					strhash_get: 38
+  335 					fprintf: <>
+  336 					strhash_put: 44
+  337 					isspace: <>
+  338 					FATAL: <>
+  339 					MESSAGE: <>
+  340 					xmalloc: 158
+  341 					memcpy: char * (), <./enscript/compat/memcpy.c 6>
+  342 					atoi: <>
+  343 					fputs: <>
+  344 					fclose: <>
+  345 				FATAL: <>
+  346 				strerror: 31
+  347 				strhash_get_first: 53
+  348 				strhash_get_next: 285
+  349 				download_font: void (), <./enscript/src/util.c 931>
+  350 					afm_font_prefix: AFMError (), <./enscript/afmlib/afm.c 200>
+  351 						strhash_get: 38
+  352 						strlen: <>
+  353 					sprintf: <>
+  354 					stat: <>
+  355 					MESSAGE: <>
+  356 					fopen: <>
+  357 					strerror: 31
+  358 					fprintf: <>
+  359 					fgetc: <>
+  360 					ungetc: <>
+  361 					fread: <>
+  362 					fputc: <>
+  363 					fwrite: <>
+  364 					strhash_delete: 167
+  365 					strlen: <>
+  366 					fclose: <>
+  367 				strlen: <>
+  368 			dump_empty_page: void (), <./enscript/src/psgen.c 2175>
+  369 				dump_ps_page_header: void (), <./enscript/src/psgen.c 1888>
+  370 					strrchr: <>
+  371 					strncpy: <>
+  372 					OUTPUT: <>
+  373 					handle_two_side_options: void (), <./enscript/src/psgen.c 2709>
+  374 						OUTPUT: <>
+  375 					escape_string: 276
+  376 					xfree: 172
+  377 					count_key_value_set: 321
+  378 					strhash_get_first: 53
+  379 					strhash_get_next: 285
+  380 					format_user_string: char * (), <./enscript/src/util.c 1180>
+  381 						isdigit: <>
+  382 						APPEND_CH: <>
+  383 						getcwd: <>
+  384 						strrchr: <>
+  385 						APPEND_STR: <>
+  386 						sprintf: <>
+  387 						FATAL: <>
+  388 						strftime: <>
+  389 						gethostname: int (), <./enscript/compat/gethostname.c 42>
+  390 							GetComputerName: <>
+  391 							strncpy: <>
+  392 						strchr: <>
+  393 						strcpy: <>
+  394 						getenv: <>
+  395 						escape_string: 276
+  396 						xfree: 172
+  397 					strchr: <>
+  398 				OUTPUT: <>
+  399 			MESSAGE: <>
+  400 			divert: void (), <./enscript/src/psgen.c 2619>
+  401 				assert: <>
+  402 				tempnam: <>
+  403 				FATAL: <>
+  404 				strerror: 31
+  405 				strcpy: <>
+  406 				fopen: <>
+  407 				remove: <>
+  408 				free: <>
+  409 			get_next_token: void (), <./enscript/src/psgen.c 1469>
+  410 				is_getc: 315
+  411 				BUFFER_EMPTY: <>
+  412 				is_ungetc: int (), <./enscript/src/util.c 1851>
+  413 					xrealloc: 290
+  414 				FITS_ON_LINE: <>
+  415 				EMIT: <>
+  416 				CHAR_WIDTH: <>
+  417 				read_special_escape: void (), <./enscript/src/psgen.c 1096>
+  418 					is_getc: 315
+  419 					isalnum: if (), <./enscript/intl/l10nflist.c 356>
+  420 					is_ungetc: 412
+  421 					strcmp: <>
+  422 					FATAL: <>
+  423 					read_float: double (), <./enscript/src/psgen.c 2398>
+  424 						is_getc: 315
+  425 						ISNUMBERDIGIT: <>
+  426 						is_ungetc: 412
+  427 						atof: <>
+  428 						CHAR_WIDTH: <>
+  429 					recognize_eps_file: int (), <./enscript/src/psgen.c 2200>
+  430 						MESSAGE: <>
+  431 						strlen: <>
+  432 						popen: <>
+  433 						strerror: 31
+  434 						tilde_subst: void (), <./enscript/src/util.c 1608>
+  435 							strcpy: <>
+  436 							getenv: <>
+  437 							sprintf: <>
+  438 							getpwnam: struct passwd (), <./enscript/compat/getpwd.c 75>
+  439 						fopen: <>
+  440 						strcpy: <>
+  441 						pathwalk: 212
+  442 						file_lookup: 216
+  443 						fgets: <>
+  444 						xrealloc: 290
+  445 						memcpy: char * (), <./enscript/compat/memcpy.c 6>
+  446 						strncmp: if (), <./enscript/afmlib/ansi2knr.c 443>
+  447 						sscanf: <>
+  448 						pclose: <>
+  449 						fclose: <>
+  450 						xfree: 172
+  451 					strcpy: <>
+  452 					parse_font_spec: 182
+  453 					xfree: 172
+  454 					sscanf: <>
+  455 					atof: <>
+  456 					atoi: <>
+  457 					xstrdup: 176
+  458 					abort: <>
+  459 				EXISTS: <>
+  460 				sprintf: <>
+  461 				APPEND_CHAR: <>
+  462 				ISPRINT: <>
+  463 				strcpy: <>
+  464 				ISSPACE: <>
+  465 				UNEMIT: <>
+  466 				ISOCTAL: <>
+  467 			dump_ps_page_header: 369
+  468 			print_line_number: void (), <./enscript/src/psgen.c 2559>
+  469 				OUTPUT: <>
+  470 				read_font_info: 236
+  471 				sprintf: <>
+  472 				CHAR_WIDTH: <>
+  473 			OUTPUT: <>
+  474 			CORRECT_SLICE: <>
+  475 			paste_epsf: void (), <./enscript/src/psgen.c 2353>
+  476 				OUTPUT: <>
+  477 				fwrite: <>
+  478 				fread: <>
+  479 				pclose: <>
+  480 				fclose: <>
+  481 				xfree: 172
+  482 			strhash_put: 44
+  483 			strlen: <>
+  484 			read_font_info: 236
+  485 			xfree: 172
+  486 			FATAL: <>
+  487 			dump_ps_page_trailer: void (), <./enscript/src/psgen.c 2157>
+  488 				OUTPUT: <>
+  489 			undivert: void (), <./enscript/src/psgen.c 2651>
+  490 				assert: <>
+  491 				fseek: <>
+  492 				FATAL: <>
+  493 				strerror: 31
+  494 				fgets: <>
+  495 				strncmp: if (), <./enscript/afmlib/ansi2knr.c 443>
+  496 				fputs: <>
+  497 				strchr: <>
+  498 				fprintf: <>
+  499 				fclose: <>
+  500 				remove: <>
+  501 			format_user_string: 380
+  502 			fprintf: <>
+  503 			enter_system_variable: void (), <./enscript/states/utils.c 216>
+  504 				node_alloc: Node * (), <./enscript/states/utils.c 89>
+  505 					xcalloc: 154
+  506 					xmalloc: 158
+  507 				strlen: <>
+  508 				xstrdup: 176
+  509 				strhash_put: 44
+  510 				fprintf: <>
+  511 				exit: <>
+  512 				node_free: void (), <./enscript/states/utils.c 169>
+  513 					xfree: 172
+  514 					free: <>
+  515 					node_free: 512
+  516 			fread: <>
+  517 			eval_statement_list: <>
+  518 			node_free: 512
+  519 			fwrite: <>
+  520 			execute_state: Node * (), <./enscript/states/process.c 82>
+  521 				strhash_get: 38
+  522 				strlen: <>
+  523 				fprintf: <>
+  524 				exit: <>
+  525 				node_free: 512
+  526 				eval_statement_list: <>
+  527 				fread: <>
+  528 				memmove: void (), <./enscript/compat/memmove.c 11>
+  529 				re_search: <>
+  530 				REGEXP: <>
+  531 				fwrite: <>
+  532 		is_close: void (), <./enscript/src/util.c 1805>
+  533 			pclose: <>
+  534 			fclose: <>
+  535 			xfree: 172
+  536 		tmpnam: <>
+  537 		remove: <>
+  538 		stat: <>
+  539 		ERROR: <>
+  540 		fseek: <>
+  541 		dump_ps_trailer: void (), <./enscript/src/psgen.c 479>
+  542 			OUTPUT: <>
+  543 			strhash_get_first: 53
+  544 			strhash_get_next: 285
+  545 			strlen: <>
+  546 		close_output_file: void (), <./enscript/src/main.c 1669>
+  547 			printer_close: void (), <./enscript/src/prt_dos.c 48>
+  548 				pclose: <>
+  549 				fclose: <>
+  550 			fclose: <>
+  551 		do_list_missing_characters: void (), <./enscript/src/util.c 448>
+  552 			fprintf: <>
+  553 		malloc: <>
+  554 		fgets: <>
+  555 		test1: int (), <./enscript/afmlib/ansi2knr.c 274>
+  556 		convert1: int (), <./enscript/afmlib/ansi2knr.c 323>
+  557 		fputs: <>
+  558 		free: <>
+  559 		list: List * (), <./enscript/states/utils.c 43>
+  560 			xcalloc: 154
+  561 		node_alloc: 504
+  562 		init_primitives: void (), <./enscript/states/prims.c 1277>
+  563 			strhash_put: 44
+  564 			strlen: <>
+  565 			fprintf: <>
+  566 			exit: <>
+  567 		re_set_syntax: reg_syntax_t (), <./enscript/compat/regex.c 946>
+  568 		enter_system_variable: 503
+  569 		xcalloc: 154
+  570 		strchr: <>
+  571 		usage: void (), <./enscript/states/main.c 418>
+  572 			printf: <>
+  573 		abort: <>
+  574 		xstrdup: 176
+  575 		node_free: 512
+  576 		yyparse: <>
+  577 		eval_statement_list: <>

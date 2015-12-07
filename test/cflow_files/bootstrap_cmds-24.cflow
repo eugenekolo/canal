@@ -1,0 +1,321 @@
+    1 	main: int (), <./decomment.tproj/decomment.c 47>
+    2 		malloc: <>
+    3 		strlen: <>
+    4 		sprintf: <>
+    5 		fprintf: <>
+    6 		freopen: <>
+    7 		perror: <>
+    8 		exit: <>
+    9 		yyparse: <>
+   10 		vax_ioconf:  (), <./config.tproj/mkioconf.c 64>
+   11 			fopen: <>
+   12 			path: char * (), <./config.tproj/main.c 280>
+   13 			perror: <>
+   14 			exit: <>
+   15 			fprintf: <>
+   16 			eq: if (), <./config.tproj/mkioconf.c 988>
+   17 			printf: <>
+   18 			qu: char * (), <./config.tproj/mkioconf.c 1964>
+   19 			intv: <>
+   20 			fclose: <>
+   21 		ubglue:  (), <./config.tproj/mkglue.c 66>
+   22 			fopen: <>
+   23 			path: char * (), <./config.tproj/main.c 280>
+   24 			perror: <>
+   25 			exit: <>
+   26 			eq: if (), <./config.tproj/mkioconf.c 988>
+   27 			dump_ubavec: <>
+   28 			strcmp: <>
+   29 			dump_std: <>
+   30 			dump_intname: <>
+   31 			dump_ctrs: <>
+   32 			fclose: <>
+   33 		sun_ioconf:  (), <./config.tproj/mkioconf.c 331>
+   34 		mbglue:  (), <./config.tproj/mkglue.c 288>
+   35 		romp_ioconf:  (), <./config.tproj/mkioconf.c 564>
+   36 			fopen: <>
+   37 			path: char * (), <./config.tproj/main.c 280>
+   38 			perror: <>
+   39 			exit: <>
+   40 			fprintf: <>
+   41 			eq: if (), <./config.tproj/mkioconf.c 988>
+   42 			printf: <>
+   43 			qu: char * (), <./config.tproj/mkioconf.c 1964>
+   44 			fclose: <>
+   45 		mmax_ioconf:  (), <./config.tproj/mkioconf.c 724>
+   46 			fopen: <>
+   47 			path: char * (), <./config.tproj/main.c 280>
+   48 			perror: <>
+   49 			exit: <>
+   50 			fprintf: <>
+   51 			strcmp: <>
+   52 			printf: <>
+   53 			fclose: <>
+   54 		sqt_ioconf:  (), <./config.tproj/mkioconf.c 1005>
+   55 		i386_ioconf:  (), <./config.tproj/mkioconf.c 1198>
+   56 			unlink: <>
+   57 			path: char * (), <./config.tproj/main.c 280>
+   58 			fopen: <>
+   59 			perror: <>
+   60 			exit: <>
+   61 			fprintf: <>
+   62 			i386_pseudo_inits:  (), <./config.tproj/mkioconf.c 1663>
+   63 				fprintf: <>
+   64 			fclose: <>
+   65 		mips_ioconf:  (), <./config.tproj/mkioconf.c 1218>
+   66 			unlink: <>
+   67 			path: char * (), <./config.tproj/main.c 280>
+   68 			fopen: <>
+   69 			perror: <>
+   70 			exit: <>
+   71 			fprintf: <>
+   72 			printf: <>
+   73 			eq: if (), <./config.tproj/mkioconf.c 988>
+   74 			is_declared: <>
+   75 			declare: <>
+   76 			qu: char * (), <./config.tproj/mkioconf.c 1964>
+   77 			intv2: <>
+   78 			fclose: <>
+   79 		m68k_ioconf:  (), <./config.tproj/mkioconf.c 1502>
+   80 			unlink: <>
+   81 			path: char * (), <./config.tproj/main.c 280>
+   82 			fopen: <>
+   83 			perror: <>
+   84 			exit: <>
+   85 			fprintf: <>
+   86 			printf: <>
+   87 			m68k_dn: char * (), <./config.tproj/mkioconf.c 1688>
+   88 				sprintf: <>
+   89 				ns: <>
+   90 			qu: char * (), <./config.tproj/mkioconf.c 1964>
+   91 			m68k_pseudo_inits:  (), <./config.tproj/mkioconf.c 1639>
+   92 				fprintf: <>
+   93 			fclose: <>
+   94 		m88k_ioconf:  (), <./config.tproj/mkioconf.c 1748>
+   95 			nrw_ioconf:  (), <./config.tproj/mkioconf.c 1698>
+   96 				unlink: <>
+   97 				path: char * (), <./config.tproj/main.c 280>
+   98 				fopen: <>
+   99 				perror: <>
+  100 				exit: <>
+  101 				fprintf: <>
+  102 				nrw_pseudo_inits:  (), <./config.tproj/mkioconf.c 1717>
+  103 					fprintf: <>
+  104 				fclose: <>
+  105 		m98k_ioconf:  (), <./config.tproj/mkioconf.c 1753>
+  106 			nrw_ioconf: 95
+  107 		hppa_ioconf:  (), <./config.tproj/mkioconf.c 1790>
+  108 			unlink: <>
+  109 			path: char * (), <./config.tproj/main.c 280>
+  110 			fopen: <>
+  111 			perror: <>
+  112 			exit: <>
+  113 			fprintf: <>
+  114 			hppa_pseudo_inits:  (), <./config.tproj/mkioconf.c 1809>
+  115 				fprintf: <>
+  116 			fclose: <>
+  117 		sparc_ioconf:  (), <./config.tproj/mkioconf.c 1845>
+  118 			unlink: <>
+  119 			path: char * (), <./config.tproj/main.c 280>
+  120 			fopen: <>
+  121 			perror: <>
+  122 			exit: <>
+  123 			fprintf: <>
+  124 			sparc_pseudo_inits:  (), <./config.tproj/mkioconf.c 1864>
+  125 				fprintf: <>
+  126 			fclose: <>
+  127 		ppc_ioconf:  (), <./config.tproj/mkioconf.c 1900>
+  128 			unlink: <>
+  129 			path: char * (), <./config.tproj/main.c 280>
+  130 			fopen: <>
+  131 			perror: <>
+  132 			exit: <>
+  133 			fprintf: <>
+  134 			ppc_pseudo_inits:  (), <./config.tproj/mkioconf.c 1919>
+  135 				fprintf: <>
+  136 			fclose: <>
+  137 		printf: <>
+  138 		makefile:  (), <./config.tproj/mkmakefile.c 185>
+  139 			read_files:  (), <./config.tproj/mkmakefile.c 341>
+  140 				sprintf: <>
+  141 				fopenp: FILE * (), <./config.tproj/openp.c 87>
+  142 					searchp: int (), <./config.tproj/searchp.c 66>
+  143 					ffunc: int (), <./config.tproj/openp.c 69>
+  144 						fopen: <>
+  145 				perror: <>
+  146 				exit: <>
+  147 				get_word: <>
+  148 				fclose: <>
+  149 				allCaps: <>
+  150 				ns: <>
+  151 				next_word: <>
+  152 				printf: <>
+  153 				fl_lookup: <>
+  154 				fltail_lookup: <>
+  155 				eq: if (), <./config.tproj/mkioconf.c 988>
+  156 				strncmp: <>
+  157 				init_dev: <>
+  158 				strcmp: <>
+  159 				free: <>
+  160 				newdev: <>
+  161 				opteq:  (), <./config.tproj/mkmakefile.c 612>
+  162 					isupper: <>
+  163 					tolower: <>
+  164 				new_fent: struct file_list * (), <./config.tproj/mkmakefile.c 118>
+  165 				get_rest: <>
+  166 			sprintf: <>
+  167 			fopenp: 141
+  168 			perror: <>
+  169 			exit: <>
+  170 			fopen: <>
+  171 			path: char * (), <./config.tproj/main.c 280>
+  172 			rename: <>
+  173 			unlink: <>
+  174 			fclose: <>
+  175 			fprintf: <>
+  176 			allCaps: <>
+  177 			printf: <>
+  178 			do_build:  (), <./config.tproj/mkmakefile.c 820>
+  179 			fgets: <>
+  180 			strncmp: <>
+  181 			index: <>
+  182 			malloc: <>
+  183 			strlen: <>
+  184 			strcpy: <>
+  185 			eq: if (), <./config.tproj/mkioconf.c 988>
+  186 			do_objs:  (), <./config.tproj/mkmakefile.c 638>
+  187 			do_files: <>
+  188 			do_machdep: <>
+  189 			do_ordered: <>
+  190 			do_rules: <>
+  191 			do_load: <>
+  192 			copy_dependencies: <>
+  193 		headers:  (), <./config.tproj/mkheaders.c 66>
+  194 			do_count: <>
+  195 		swapconf:  (), <./config.tproj/mkswapconf.c 61>
+  196 		set_program_name: void (), <./migcom.tproj/error.c 108>
+  197 		parseArgs: void (), <./migcom.tproj/mig.c 115>
+  198 			streql: <>
+  199 			fatal: void (), <./migcom.tproj/error.c 65>
+  200 				va_start: <>
+  201 				fprintf: <>
+  202 				vfprintf: <>
+  203 				va_end: <>
+  204 				exit: <>
+  205 			strmake: string_t (), <./migcom.tproj/string.c 57>
+  206 				malloc: <>
+  207 				strlen: <>
+  208 				fatal: 199
+  209 				strerror: <>
+  210 				strcpy: <>
+  211 			atoi: <>
+  212 		init_global: void (), <./migcom.tproj/global.c 93>
+  213 			strmake: 205
+  214 		init_type: void (), <./migcom.tproj/type.c 765>
+  215 			error: void (), <./migcom.tproj/error.c 96>
+  216 				va_start: <>
+  217 				fprintf: <>
+  218 				vfprintf: <>
+  219 				va_end: <>
+  220 			itAlloc: ipc_type_t * (), <./migcom.tproj/type.c 119>
+  221 				malloc: <>
+  222 				fatal: 199
+  223 				strerror: <>
+  224 			itCalculateSizeInfo: <>
+  225 			itCalculateNameInfo: <>
+  226 			itMakeCountType: ipc_type_t * (), <./migcom.tproj/type.c 686>
+  227 		time: <>
+  228 		ctime: <>
+  229 		LookNormal: <>
+  230 		fatal: 199
+  231 		more_global: void (), <./migcom.tproj/global.c 108>
+  232 			fatal: 199
+  233 			strconcat: string_t (), <./migcom.tproj/string.c 69>
+  234 				malloc: <>
+  235 				strlen: <>
+  236 				fatal: 199
+  237 				strerror: <>
+  238 				strcat: <>
+  239 				strcpy: <>
+  240 			streql: <>
+  241 		myfopen: FILE * (), <./migcom.tproj/mig.c 369>
+  242 			fopen: <>
+  243 			fatal: 199
+  244 			strerror: <>
+  245 		fflush: <>
+  246 		WriteUserHeader: void (), <./migcom.tproj/header.c 228>
+  247 			stat: , <./migcom.tproj/header.c 438>
+  248 			strconcat: 233
+  249 			WriteProlog: void (), <./migcom.tproj/header.c 133>
+  250 				fprintf: <>
+  251 				WriteIncludes: void (), <./migcom.tproj/header.c 58>
+  252 					fprintf: <>
+  253 				WriteDefines: void (), <./migcom.tproj/header.c 116>
+  254 			WriteImport: void (), <./migcom.tproj/utils.c 82>
+  255 				fprintf: <>
+  256 			fatal: 199
+  257 			fprintf: <>
+  258 			WriteUserRoutine: void (), <./migcom.tproj/header.c 187>
+  259 				fprintf: <>
+  260 				rtRoutineKindToStr: char * (), <./migcom.tproj/routine.c 165>
+  261 					fatal: 199
+  262 				WriteMigExternal: void (), <./migcom.tproj/header.c 122>
+  263 					fprintf: <>
+  264 				ReturnTypeStr: <>
+  265 				WriteList: void (), <./migcom.tproj/utils.c 225>
+  266 					akCheckAll: else if (), <./migcom.tproj/server.c 1150>
+  267 						fprintf: <>
+  268 					fprintf: <>
+  269 			WriteEpilog: void (), <./migcom.tproj/header.c 169>
+  270 				WriteETAPDefines: void (), <./migcom.tproj/header.c 92>
+  271 					stat: , <./migcom.tproj/header.c 438>
+  272 					fprintf: <>
+  273 				fprintf: <>
+  274 		fclose: <>
+  275 		WriteServerHeader: void (), <./migcom.tproj/header.c 359>
+  276 			stat: , <./migcom.tproj/header.c 438>
+  277 			strconcat: 233
+  278 			WriteProlog: 249
+  279 			WriteImport: 254
+  280 			fatal: 199
+  281 			fprintf: <>
+  282 			WriteServerRoutine: void (), <./migcom.tproj/header.c 279>
+  283 				fprintf: <>
+  284 				rtRoutineKindToStr: 260
+  285 				WriteMigExternal: 262
+  286 				ReturnTypeStr: <>
+  287 				WriteList: 265
+  288 			WriteDispatcher: void (), <./migcom.tproj/header.c 323>
+  289 				stat: , <./migcom.tproj/header.c 438>
+  290 				rtCountArgDescriptors: <>
+  291 				fprintf: <>
+  292 			WriteEpilog: 269
+  293 		WriteInternalHeader: <>
+  294 		WriteDefinesHeader: <>
+  295 		WriteUserIndividual: <>
+  296 		WriteUser: <>
+  297 		WriteServer: <>
+  298 		unsetenv: <>
+  299 		rindex: <>
+  300 		abspath: char * (), <./relpath.tproj/relpath.c 173>
+  301 			strcpy: <>
+  302 			lstat: <>
+  303 			readlink: <>
+  304 			rindex: <>
+  305 			strcat: <>
+  306 			getwd: <>
+  307 			fprintf: <>
+  308 			exit: <>
+  309 			chdir: <>
+  310 			perror: <>
+  311 			strlen: <>
+  312 		is_prefix: int (), <./relpath.tproj/relpath.c 163>
+  313 		stat: , <./migcom.tproj/header.c 438>
+  314 		strcat: <>
+  315 		putchar: <>
+  316 		usage: volatile void (), <./decomment.tproj/decomment.c 191>
+  317 			printf: <>
+  318 			exit: <>
+  319 		open: <>
+  320 		read: <>
+  321 		isspace: <>

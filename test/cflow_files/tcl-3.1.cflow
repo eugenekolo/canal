@@ -1,0 +1,3221 @@
+    1 	main: int (), <./tcl/unix/tclAppInit.c 65>
+    2 		setlocale: <>
+    3 		setargv: void (), <./tcl/win/tclAppInit.c 214>
+    4 			GetCommandLine: <>
+    5 			Tcl_Alloc: <>
+    6 			strlen: <>
+    7 				ckalloc: <>
+    8 				strncpy: <>
+    9 		GetModuleFileName: <>
+   10 		TCL_LOCAL_MAIN_HOOK: <>
+   11 		Tcl_Main: void (), <./tcl/mac/tclMacBOAMain.c 93>
+   12 			Tcl_FindExecutable: void (), <./tcl/generic/tclEncoding.c 1101>
+   13 				TclInitSubsystems: void (), <./tcl/generic/tclEvent.c 652>
+   14 					panic: void (), <./tcl/mac/tclMacPanic.c 213>
+   15 						va_start: <>
+   16 						va_end: <>
+   17 						vsprintf: <>
+   18 						MacPanic: void (), <./tcl/mac/tclMacPanic.c 90>
+   19 					TclThreadDataKeyGet: VOID * (), <./tcl/generic/tclThread.c 135>
+   20 						TclpThreadDataKeyGet: VOID * (), <./tcl/unix/tclUnixThrd.c 491>
+   21 							TlsGetValue: <>
+   22 							GetThreadDataStruct: TclMacThrdData * (), <./tcl/mac/tclMacThrd.c 656>
+   23 								panic: 14
+   24 								GetCurrentThread: <>
+   25 							pthread_getspecific: <>
+   26 					TclpInitLock: void (), <./tcl/unix/tclUnixThrd.c 208>
+   27 						InitializeCriticalSection: <>
+   28 						EnterCriticalSection: <>
+   29 						pthread_mutex_lock: <>
+   30 					TclInitAlloc: void (), <./tcl/generic/tclAlloc.c 166>
+   31 						Tcl_GetAllocMutex: Tcl_Mutex * (), <./tcl/unix/tclUnixThrd.c 318>
+   32 							InitializeCriticalSection: <>
+   33 					TclInitDbCkalloc: void (), <./tcl/generic/tclCkalloc.c 148>
+   34 						Tcl_GetAllocMutex: 31
+   35 					TclpInitPlatform: void (), <./tcl/unix/tclUnixInit.c 116>
+   36 						SetErrorMode: <>
+   37 						GetCurrentThreadId: <>
+   38 						TclWinInit: void (), <./tcl/win/tclWin32Dll.c 242>
+   39 							GetVersionEx: <>
+   40 							panic: 14
+   41 						GetModuleHandle: <>
+   42 						signal: <>
+   43 						fpsetround: <>
+   44 						fpsetmask: <>
+   45 						dlopen: VOID * (), <./tcl/unix/tclLoadAix.c 95>
+   46 							findMain: void * (), <./tcl/unix/tclLoadAix.c 508>
+   47 								malloc: <>
+   48 								strcpy: <>
+   49 								strcat: <>
+   50 								strerror: <>
+   51 								loadquery: <>
+   52 								free: , <./tcl/generic/regc_nfa.c 399>
+   53 							atexit: <>
+   54 							terminate: void (), <./tcl/unix/tclLoadAix.c 315>
+   55 								dlclose: int (), <./tcl/unix/tclLoadAix.c 273>
+   56 									unload: <>
+   57 									strcpy: <>
+   58 									strerror: <>
+   59 									free: , <./tcl/generic/regc_nfa.c 399>
+   60 							strcmp: if (), <./tcl/generic/tclTest.c 4243>
+   61 							calloc: <>
+   62 							strcpy: <>
+   63 							strcat: <>
+   64 							strerror: <>
+   65 							malloc: <>
+   66 							strlen: 6
+   67 							load: <>
+   68 							free: , <./tcl/generic/regc_nfa.c 399>
+   69 							loadquery: <>
+   70 							caterr: void (), <./tcl/unix/tclLoadAix.c 210>
+   71 								atoi: <>
+   72 								strcat: <>
+   73 								strerror: <>
+   74 							loadbind: <>
+   75 							dlclose: 55
+   76 							readExports: int (), <./tcl/unix/tclLoadAix.c 324>
+   77 								ldopen: <>
+   78 								strcpy: <>
+   79 								strcat: <>
+   80 								strerror: <>
+   81 								malloc: <>
+   82 								loadquery: <>
+   83 								free: , <./tcl/generic/regc_nfa.c 399>
+   84 								TYPE: <>
+   85 								ldclose: <>
+   86 								ldnshread: <>
+   87 								FSEEK: <>
+   88 								FREAD: <>
+   89 								LDR_EXPORT: <>
+   90 								calloc: <>
+   91 								strncpy: <>
+   92 								strlen: 6
+   93 							dlsym: VOID * (), <./tcl/unix/tclLoadAix.c 245>
+   94 								strcmp: if (), <./tcl/generic/tclTest.c 4243>
+   95 								strcpy: <>
+   96 								strcat: <>
+   97 					TclInitObjSubsystem: void (), <./tcl/generic/tclObj.c 126>
+   98 						Tcl_MutexLock: void (), <./tcl/unix/tclUnixThrd.c 351>
+   99 							ckalloc: <>
+  100 							InitializeCriticalSection: <>
+  101 							TclRememberMutex: void (), <./tcl/generic/tclThread.c 279>
+  102 								RememberSyncObject: void (), <./tcl/generic/tclThread.c 200>
+  103 									ckalloc: <>
+  104 									ckfree: <>
+  105 							EnterCriticalSection: <>
+  106 							pthread_mutex_init: <>
+  107 							pthread_mutex_lock: <>
+  108 						Tcl_InitHashTable: <>
+  109 						Tcl_MutexUnlock: void (), <./tcl/unix/tclUnixThrd.c 392>
+  110 							LeaveCriticalSection: <>
+  111 							pthread_mutex_unlock: <>
+  112 						Tcl_RegisterObjType: void (), <./tcl/generic/tclObj.c 205>
+  113 							Tcl_MutexLock: 98
+  114 							Tcl_FindHashEntry: <>
+  115 							Tcl_DeleteHashEntry: <>
+  116 							Tcl_CreateHashEntry: <>
+  117 							Tcl_SetHashValue: <>
+  118 							Tcl_MutexUnlock: 109
+  119 					TclInitIOSubsystem: void (), <./tcl/generic/tclIO.c 167>
+  120 						TCL_TSD_INIT: <>
+  121 					TclInitEncodingSubsystem: void (), <./tcl/generic/tclEncoding.c 250>
+  122 						Tcl_MutexLock: 98
+  123 						Tcl_InitHashTable: <>
+  124 						Tcl_MutexUnlock: 109
+  125 						BinaryProc: int (), <./tcl/generic/tclEncoding.c 1647>
+  126 						Tcl_CreateEncoding: Tcl_Encoding (), <./tcl/generic/tclEncoding.c 711>
+  127 							Tcl_MutexLock: 98
+  128 							Tcl_CreateHashEntry: <>
+  129 							Tcl_GetHashValue: <>
+  130 							ckalloc: <>
+  131 							strlen: 6
+  132 							strcpy: <>
+  133 							unilen: size_t (), <./tcl/generic/tclEncoding.c 2676>
+  134 							Tcl_SetHashValue: <>
+  135 							Tcl_MutexUnlock: 109
+  136 						Tcl_GetEncoding: Tcl_Encoding (), <./tcl/generic/tclEncoding.c 397>
+  137 							Tcl_MutexLock: 98
+  138 							Tcl_MutexUnlock: 109
+  139 							Tcl_FindHashEntry: <>
+  140 							Tcl_GetHashValue: <>
+  141 							LoadEncodingFile: Tcl_Encoding (), <./tcl/generic/tclEncoding.c 1172>
+  142 								TclGetLibraryPath: Tcl_Obj * (), <./tcl/generic/tclEvent.c 619>
+  143 									TCL_TSD_INIT: <>
+  144 								Tcl_ListObjGetElements: int (), <./tcl/generic/tclListObj.c 302>
+  145 								OpenEncodingFile: Tcl_Channel (), <./tcl/generic/tclEncoding.c 1269>
+  146 									Tcl_DStringInit: <>
+  147 									Tcl_JoinPath: char * (), <./tcl/generic/tclFileName.c 761>
+  148 										Tcl_DStringInit: <>
+  149 										Tcl_DStringLength: <>
+  150 										strlen: 6
+  151 										isdigit: while (), <./tcl/generic/tclUtil.c 2328>
+  152 										UCHAR: <>
+  153 										Tcl_DStringSetLength: <>
+  154 										Tcl_DStringAppend: <>
+  155 										Tcl_DStringValue: <>
+  156 										ExtractWinRoot: CONST char * (), <./tcl/generic/tclFileName.c 157>
+  157 											FileNameInit: void (), <./tcl/generic/tclFileName.c 100>
+  158 												TCL_TSD_INIT: <>
+  159 												Tcl_NewStringObj: Tcl_Obj * (), <./tcl/generic/tclStringObj.c 156>
+  160 													Tcl_DbNewStringObj: Tcl_Obj * (), <./tcl/generic/tclStringObj.c 233>
+  161 														strlen: 6
+  162 														TclDbNewObj: <>
+  163 														TclInitStringRep: <>
+  164 													strlen: 6
+  165 													TclNewObj: <>
+  166 													TclInitStringRep: <>
+  167 												Tcl_CreateThreadExitHandler: void (), <./tcl/generic/tclEvent.c 481>
+  168 													TCL_TSD_INIT: <>
+  169 													ckalloc: <>
+  170 												FileNameCleanup: void (), <./tcl/generic/tclFileName.c 128>
+  171 													TCL_TSD_INIT: <>
+  172 													Tcl_DecrRefCount: <>
+  173 											Tcl_DStringSetLength: <>
+  174 											Tcl_DStringAppend: <>
+  175 										SplitMacPath: char * (), <./tcl/generic/tclFileName.c 572>
+  176 											TCL_TSD_INIT: <>
+  177 											FileNameInit: 157
+  178 											Tcl_GetRegExpFromObj: Tcl_RegExp (), <./tcl/generic/tclRegexp.c 556>
+  179 												Tcl_GetStringFromObj: <>
+  180 												CompileRegexp: TclRegexp * (), <./tcl/generic/tclRegexp.c 833>
+  181 													TCL_TSD_INIT: <>
+  182 													Tcl_CreateThreadExitHandler: 167
+  183 													FinalizeRegexp: void (), <./tcl/generic/tclRegexp.c 1015>
+  184 														TCL_TSD_INIT: <>
+  185 														FreeRegexp: void (), <./tcl/generic/tclRegexp.c 987>
+  186 															TclReFree: <>
+  187 															ckfree: <>
+  188 														ckfree: <>
+  189 													strcmp: if (), <./tcl/generic/tclTest.c 4243>
+  190 													ckalloc: <>
+  191 													Tcl_DStringInit: <>
+  192 													Tcl_UtfToUniCharDString: <>
+  193 													Tcl_DStringLength: <>
+  194 													TclReComp: <>
+  195 													Tcl_DStringFree: <>
+  196 													ckfree: <>
+  197 													TclRegError: void (), <./tcl/generic/tclRegexp.c 698>
+  198 														Tcl_ResetResult: <>
+  199 														TclReError: <>
+  200 														Tcl_AppendResult: <>
+  201 														sprintf: <>
+  202 														Tcl_SetErrorCode: <>
+  203 													FreeRegexp: 185
+  204 													strcpy: <>
+  205 											Tcl_RegExpExec: int (), <./tcl/generic/tclRegexp.c 173>
+  206 												Tcl_DStringInit: <>
+  207 												Tcl_UtfToUniCharDString: <>
+  208 												Tcl_DStringLength: <>
+  209 												RegExpExecUniChar: int (), <./tcl/generic/tclRegexp.c 291>
+  210 													TclReExec: <>
+  211 													TclRegError: 197
+  212 												Tcl_DStringFree: <>
+  213 											Tcl_RegExpRange: void (), <./tcl/generic/tclRegexp.c 240>
+  214 												Tcl_GetString: <>
+  215 												Tcl_UtfAtIndex: <>
+  216 											Tcl_DStringAppend: <>
+  217 											Tcl_DStringValue: <>
+  218 											strchr: <>
+  219 												Tcl_AppendResult: <>
+  220 										strchr: 218
+  221 										Tcl_DStringFree: <>
+  222 									Tcl_DStringAppend: <>
+  223 									Tcl_OpenFileChannel: Tcl_Channel (), <./tcl/generic/tclIOUtil.c 534>
+  224 										Tcl_MutexLock: 98
+  225 										Tcl_MutexUnlock: 109
+  226 									Tcl_DStringFree: <>
+  227 								Tcl_GetString: <>
+  228 								Tcl_SetChannelOption: int (), <./tcl/generic/tclIO.c 5718>
+  229 									Tcl_AppendResult: <>
+  230 									CheckForDeadChannel: int (), <./tcl/generic/tclIO.c 1748>
+  231 										Tcl_SetErrno: void (), <./tcl/generic/tclIOUtil.c 388>
+  232 										Tcl_AppendResult: <>
+  233 									strlen: 6
+  234 									strncmp: <>
+  235 									Tcl_GetBoolean: <>
+  236 									SetBlockMode: int (), <./tcl/generic/tclIO.c 7860>
+  237 										StackSetBlockMode: int (), <./tcl/generic/tclIO.c 7814>
+  238 											Tcl_ChannelBlockModeProc: Tcl_DriverBlockModeProc * (), <./tcl/generic/tclIO.c 8029>
+  239 											Tcl_SetErrno: 231
+  240 										Tcl_AppendResult: <>
+  241 										Tcl_PosixError: char * (), <./tcl/generic/tclIOUtil.c 415>
+  242 											Tcl_ErrnoMsg: char * (), <./tcl/generic/tclPosixStr.c 484>
+  243 												strerror: <>
+  244 											Tcl_ErrnoId: char * (), <./tcl/generic/tclPosixStr.c 39>
+  245 											Tcl_SetErrorCode: <>
+  246 									atoi: <>
+  247 									strcmp: if (), <./tcl/generic/tclTest.c 4243>
+  248 									Tcl_GetEncoding: 136
+  249 									Tcl_FreeEncoding: void (), <./tcl/generic/tclEncoding.c 442>
+  250 										Tcl_MutexLock: 98
+  251 										FreeEncoding: void (), <./tcl/generic/tclEncoding.c 469>
+  252 											Tcl_DeleteHashEntry: <>
+  253 											ckfree: <>
+  254 										Tcl_MutexUnlock: 109
+  255 									UpdateInterest: void (), <./tcl/generic/tclIO.c 6295>
+  256 										Tcl_CreateTimerHandler: Tcl_TimerToken (), <./tcl/generic/tclTimer.c 209>
+  257 											InitTimer: ThreadSpecificData * (), <./tcl/generic/tclTimer.c 152>
+  258 												TclThreadDataKeyGet: 19
+  259 												TCL_TSD_INIT: <>
+  260 												Tcl_CreateEventSource: void (), <./tcl/generic/tclNotify.c 234>
+  261 													TCL_TSD_INIT: <>
+  262 													ckalloc: <>
+  263 												TimerSetupProc: void (), <./tcl/generic/tclTimer.c 332>
+  264 													InitTimer: 257
+  265 													TclpGetTime: void (), <./tcl/mac/tclMacTime.c 166>
+  266 														ReadLocation: <>
+  267 														ReadDateTime: <>
+  268 														Microseconds: <>
+  269 														SubtractUnsignedWide: void (), <./tcl/mac/tclMacTime.c 302>
+  270 													Tcl_SetMaxBlockTime: void (), <./tcl/generic/tclNotify.c 733>
+  271 														TCL_TSD_INIT: <>
+  272 														Tcl_SetTimer: void (), <./tcl/unix/tclUnixNotfy.c 347>
+  273 															TCL_TSD_INIT: <>
+  274 															UINT: <>
+  275 															Tcl_SetTimer: 272
+  276 															SetTimer: void (), <./tcl/unix/tclXtNotify.c 270>
+  277 																InitNotifier: void (), <./tcl/unix/tclXtNotify.c 189>
+  278 																	TclInExit: int (), <./tcl/generic/tclEvent.c 913>
+  279 																		TCL_TSD_INIT: <>
+  280 																	CreateFileHandler: void (), <./tcl/unix/tclXtNotify.c 341>
+  281 																		InitNotifier: 277
+  282 																		TclSetAppContext: XtAppContext (), <./tcl/unix/tclXtNotify.c 117>
+  283 																			InitNotifier: 277
+  284 																			panic: 14
+  285 																			XtCreateApplicationContext: <>
+  286 																		ckalloc: <>
+  287 																		XtAppAddInput: <>
+  288 																		FileProc: void (), <./tcl/unix/tclXtNotify.c 504>
+  289 																			ckalloc: <>
+  290 																			FileHandlerEventProc: int (), <./tcl/unix/tclXtNotify.c 573>
+  291 																			Tcl_QueueEvent: void (), <./tcl/generic/tclNotify.c 319>
+  292 																				TCL_TSD_INIT: <>
+  293 																				QueueEvent: void (), <./tcl/generic/tclNotify.c 405>
+  294 																					Tcl_MutexLock: 98
+  295 																					Tcl_MutexUnlock: 109
+  296 																			Tcl_ServiceAll: int (), <./tcl/generic/tclNotify.c 978>
+  297 																				TCL_TSD_INIT: <>
+  298 																				Tcl_AsyncReady: int (), <./tcl/generic/tclAsync.c 277>
+  299 																				Tcl_AsyncInvoke: int (), <./tcl/generic/tclAsync.c 160>
+  300 																					Tcl_MutexLock: 98
+  301 																					Tcl_MutexUnlock: 109
+  302 																				Tcl_ServiceEvent: int (), <./tcl/generic/tclNotify.c 537>
+  303 																					TCL_TSD_INIT: <>
+  304 																					Tcl_AsyncReady: 298
+  305 																					Tcl_AsyncInvoke: 299
+  306 																					Tcl_MutexLock: 98
+  307 																					Tcl_MutexUnlock: 109
+  308 																					ckfree: <>
+  309 																				TclServiceIdle: int (), <./tcl/generic/tclTimer.c 651>
+  310 																					InitTimer: 257
+  311 																					ckfree: <>
+  312 																					Tcl_SetMaxBlockTime: 270
+  313 																				Tcl_SetTimer: 272
+  314 																		XtRemoveInput: <>
+  315 																	DeleteFileHandler: void (), <./tcl/unix/tclXtNotify.c 437>
+  316 																		InitNotifier: 277
+  317 																		TclSetAppContext: 282
+  318 																		XtRemoveInput: <>
+  319 																		ckfree: <>
+  320 																	SetTimer: 276
+  321 																	WaitForEvent: int (), <./tcl/unix/tclXtNotify.c 642>
+  322 																		InitNotifier: 277
+  323 																		TclSetAppContext: 282
+  324 																		XtAppPending: <>
+  325 																		Tcl_SetTimer: 272
+  326 																		XtAppProcessEvent: <>
+  327 																	Tcl_SetNotifier: void (), <./tcl/generic/tclNotify.c 186>
+  328 																	memset: <>
+  329 																	Tcl_CreateExitHandler: void (), <./tcl/generic/tclEvent.c 403>
+  330 																		ckalloc: <>
+  331 																		Tcl_MutexLock: 98
+  332 																		Tcl_MutexUnlock: 109
+  333 																	NotifierExitHandler: void (), <./tcl/unix/tclXtNotify.c 236>
+  334 																		XtRemoveTimeOut: <>
+  335 																		Tcl_DeleteFileHandler: void (), <./tcl/unix/tclUnixNotfy.c 481>
+  336 																			TCL_TSD_INIT: <>
+  337 																			Tcl_DeleteFileHandler: 335
+  338 																			ckfree: <>
+  339 																		XtDestroyApplicationContext: <>
+  340 																TclSetAppContext: 282
+  341 																XtRemoveTimeOut: <>
+  342 																XtAppAddTimeOut: <>
+  343 																TimerProc: void (), <./tcl/unix/tclXtNotify.c 311>
+  344 																	Tcl_ServiceAll: 296
+  345 															KillTimer: <>
+  346 															TclpGetTime: 265
+  347 												TimerCheckProc: void (), <./tcl/generic/tclTimer.c 391>
+  348 													InitTimer: 257
+  349 													TclpGetTime: 265
+  350 													ckalloc: <>
+  351 													TimerHandlerEventProc: int (), <./tcl/generic/tclTimer.c 454>
+  352 														InitTimer: 257
+  353 														TclpGetTime: 265
+  354 														ckfree: <>
+  355 														TimerSetupProc: 263
+  356 													Tcl_QueueEvent: 291
+  357 												Tcl_CreateThreadExitHandler: 167
+  358 												TimerExitProc: void (), <./tcl/generic/tclTimer.c 183>
+  359 													Tcl_DeleteEventSource: void (), <./tcl/generic/tclNotify.c 272>
+  360 														TCL_TSD_INIT: <>
+  361 														ckfree: <>
+  362 													TimerSetupProc: 263
+  363 													TimerCheckProc: 347
+  364 											ckalloc: <>
+  365 											TclpGetTime: 265
+  366 											TimerSetupProc: 263
+  367 										ChannelTimerProc: void (), <./tcl/generic/tclIO.c 6350>
+  368 											Tcl_CreateTimerHandler: 256
+  369 											ChannelTimerProc: 367
+  370 											Tcl_NotifyChannel: void (), <./tcl/generic/tclIO.c 6082>
+  371 												TCL_TSD_INIT: <>
+  372 												Tcl_ChannelVersion: Tcl_ChannelTypeVersion (), <./tcl/generic/tclIO.c 7998>
+  373 												Tcl_ChannelHandlerProc: Tcl_DriverHandlerProc * (), <./tcl/generic/tclIO.c 8286>
+  374 												Tcl_Preserve: void (), <./tcl/generic/tclPreserve.c 127>
+  375 													Tcl_MutexLock: 98
+  376 													Tcl_MutexUnlock: 109
+  377 													Tcl_CreateExitHandler: 329
+  378 													PreserveExitProc: void (), <./tcl/generic/tclPreserve.c 94>
+  379 														Tcl_MutexLock: 98
+  380 														ckfree: <>
+  381 														Tcl_MutexUnlock: 109
+  382 													ckalloc: <>
+  383 													memcpy: <>
+  384 													ckfree: <>
+  385 												FlushChannel: int (), <./tcl/generic/tclIO.c 1786>
+  386 													CheckForDeadChannel: 230
+  387 													UpdateInterest: 255
+  388 													Tcl_SetErrno: 231
+  389 													Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+  390 													Tcl_PosixError: 241
+  391 													DiscardOutputQueued: void (), <./tcl/generic/tclIO.c 1716>
+  392 														RecycleBuffer: void (), <./tcl/generic/tclIO.c 1644>
+  393 															ckfree: <>
+  394 													RecycleBuffer: 392
+  395 													CloseChannel: int (), <./tcl/generic/tclIO.c 2008>
+  396 														TCL_TSD_INIT: <>
+  397 														DiscardInputQueued: void (), <./tcl/generic/tclIO.c 4650>
+  398 															RecycleBuffer: 392
+  399 															ckfree: <>
+  400 														ckfree: <>
+  401 														panic: 14
+  402 														Tcl_FreeEncoding: 249
+  403 														Tcl_SetErrno: 231
+  404 														Tcl_DeleteTimerHandler: void (), <./tcl/generic/tclTimer.c 289>
+  405 															InitTimer: 257
+  406 															ckfree: <>
+  407 														Tcl_UnstackChannel: int (), <./tcl/generic/tclIO.c 1260>
+  408 															Tcl_Flush: int (), <./tcl/generic/tclIO.c 4597>
+  409 																CheckChannelErrors: int (), <./tcl/generic/tclIO.c 5121>
+  410 																	Tcl_SetErrno: 231
+  411 																FlushChannel: 385
+  412 															Tcl_AppendResult: <>
+  413 															Tcl_GetChannelName: char * (), <./tcl/generic/tclIO.c 1537>
+  414 															DiscardInputQueued: 397
+  415 															Tcl_EventuallyFree: void (), <./tcl/generic/tclPreserve.c 278>
+  416 																Tcl_MutexLock: 98
+  417 																panic: 14
+  418 																Tcl_MutexUnlock: 109
+  419 																free: , <./tcl/generic/regc_nfa.c 399>
+  420 																ckfree: <>
+  421 															UpdateInterest: 255
+  422 															Tcl_SetErrno: 231
+  423 															Tcl_Close: int (), <./tcl/generic/tclIO.c 2217>
+  424 																TCL_TSD_INIT: <>
+  425 																CheckForStdChannelsBeingClosed: void (), <./tcl/generic/tclIO.c 654>
+  426 																	TCL_TSD_INIT: <>
+  427 																panic: 14
+  428 																ckfree: <>
+  429 																StopCopy: void (), <./tcl/generic/tclIO.c 7749>
+  430 																	SetBlockMode: 236
+  431 																	Tcl_DeleteChannelHandler: void (), <./tcl/generic/tclIO.c 6481>
+  432 																		TCL_TSD_INIT: <>
+  433 																		ckfree: <>
+  434 																		UpdateInterest: 255
+  435 																	CopyEventProc: void (), <./tcl/generic/tclIO.c 7724>
+  436 																		CopyData: int (), <./tcl/generic/tclIO.c 6958>
+  437 																			Tcl_SetErrno: 231
+  438 																			DoRead: int (), <./tcl/generic/tclIO.c 7158>
+  439 																				CopyAndTranslateBuffer: int (), <./tcl/generic/tclIO.c 7236>
+  440 																					memcpy: <>
+  441 																					panic: 14
+  442 																					RecycleBuffer: 392
+  443 																				GetInput: int (), <./tcl/generic/tclIO.c 4697>
+  444 																					CheckForDeadChannel: 230
+  445 																					RecycleBuffer: 392
+  446 																					AllocChannelBuffer: ChannelBuffer * (), <./tcl/generic/tclIO.c 1608>
+  447 																						ckalloc: <>
+  448 																					Tcl_SetErrno: 231
+  449 																				UpdateInterest: 255
+  450 																			Tcl_NewObj: Tcl_Obj * (), <./tcl/generic/tclObj.c 402>
+  451 																				Tcl_DbNewObj: Tcl_Obj * (), <./tcl/generic/tclObj.c 490>
+  452 																				Tcl_MutexLock: 98
+  453 																				TclAllocateFreeObjects: void (), <./tcl/generic/tclObj.c 524>
+  454 																				Tcl_MutexUnlock: 109
+  455 																			Tcl_AppendStringsToObj: <>
+  456 																			Tcl_GetChannelName: 413
+  457 																			Tcl_PosixError: 241
+  458 																			Tcl_Eof: if (), <./tcl/generic/tclIOGT.c 734>
+  459 																				Tcl_InputBuffered: int (), <./tcl/generic/tclIO.c 5263>
+  460 																			Tcl_DeleteChannelHandler: 431
+  461 																			CopyEventProc: 435
+  462 																			Tcl_CreateChannelHandler: void (), <./tcl/generic/tclIO.c 6399>
+  463 																				ckalloc: <>
+  464 																				UpdateInterest: 255
+  465 																			DoWrite: int (), <./tcl/generic/tclIO.c 7569>
+  466 																				AllocChannelBuffer: 446
+  467 																				memcpy: <>
+  468 																				panic: 14
+  469 																				FlushChannel: 385
+  470 																			Tcl_DuplicateObj: <>
+  471 																			Tcl_IncrRefCount: <>
+  472 																			StopCopy: 429
+  473 																			Tcl_Preserve: 374
+  474 																			Tcl_ListObjAppendElement: <>
+  475 																			Tcl_NewIntObj: <>
+  476 																			Tcl_EvalObjEx: <>
+  477 																			Tcl_BackgroundError: void (), <./tcl/generic/tclEvent.c 133>
+  478 																				Tcl_AddErrorInfo: <>
+  479 																				Tcl_GetStringFromObj: <>
+  480 																				Tcl_GetObjResult: <>
+  481 																				ckalloc: <>
+  482 																				memcpy: <>
+  483 																				Tcl_GetVar: <>
+  484 																				strlen: 6
+  485 																				strcpy: <>
+  486 																				Tcl_GetAssocData: ClientData (), <./tcl/generic/tclBasic.c 804>
+  487 																					Tcl_FindHashEntry: <>
+  488 																					Tcl_GetHashValue: <>
+  489 																				Tcl_SetAssocData: void (), <./tcl/generic/tclBasic.c 716>
+  490 																					ckalloc: <>
+  491 																					Tcl_InitHashTable: <>
+  492 																					Tcl_CreateHashEntry: <>
+  493 																					Tcl_GetHashValue: <>
+  494 																					Tcl_SetHashValue: <>
+  495 																				BgErrorDeleteProc: void (), <./tcl/generic/tclEvent.c 365>
+  496 																					ckfree: <>
+  497 																					Tcl_CancelIdleCall: void (), <./tcl/generic/tclTimer.c 602>
+  498 																						InitTimer: 257
+  499 																						ckfree: <>
+  500 																					HandleBgErrors: void (), <./tcl/generic/tclEvent.c 216>
+  501 																						Tcl_Preserve: 374
+  502 																						Tcl_SetVar: <>
+  503 																						Tcl_AllowExceptions: void (), <./tcl/generic/tclBasic.c 4208>
+  504 																						TclGlobalInvoke: <>
+  505 																						Tcl_IsSafe: if (), <./tcl/generic/tclUtil.c 1981>
+  506 																						Tcl_SaveResult: void (), <./tcl/generic/tclResult.c 50>
+  507 																							Tcl_NewObj: 450
+  508 																							Tcl_IncrRefCount: <>
+  509 																							strcpy: <>
+  510 																						Tcl_RestoreResult: void (), <./tcl/generic/tclResult.c 124>
+  511 																							Tcl_ResetResult: <>
+  512 																							strcpy: <>
+  513 																							ckfree: <>
+  514 																							Tcl_DecrRefCount: <>
+  515 																						Tcl_GetStdChannel: Tcl_Channel (), <./tcl/generic/tclIO.c 329>
+  516 																							TCL_TSD_INIT: <>
+  517 																							TclpGetDefaultStdChannel: Tcl_Channel (), <./tcl/unix/tclUnixChan.c 2436>
+  518 																								panic: 14
+  519 																								sprintf: <>
+  520 																								ckalloc: <>
+  521 																								Tcl_CreateChannel: Tcl_Channel (), <./tcl/generic/tclIO.c 938>
+  522 																									TCL_TSD_INIT: <>
+  523 																									assert: <>
+  524 																									ckalloc: <>
+  525 																									strlen: 6
+  526 																									strcpy: <>
+  527 																									panic: 14
+  528 																									Tcl_GetEncodingName: char * (), <./tcl/generic/tclEncoding.c 509>
+  529 																									strcmp: if (), <./tcl/generic/tclTest.c 4243>
+  530 																									Tcl_GetEncoding: 136
+  531 																									Tcl_SetStdChannel: void (), <./tcl/generic/tclIO.c 291>
+  532 																										TCL_TSD_INIT: <>
+  533 																									Tcl_RegisterChannel: void (), <./tcl/generic/tclIO.c 702>
+  534 																										panic: 14
+  535 																										GetChannelTable: Tcl_HashTable * (), <./tcl/generic/tclIO.c 497>
+  536 																											Tcl_GetAssocData: 486
+  537 																											ckalloc: <>
+  538 																											Tcl_InitHashTable: <>
+  539 																											Tcl_SetAssocData: 489
+  540 																											DeleteChannelTable: void (), <./tcl/generic/tclIO.c 559>
+  541 																												Tcl_FirstHashEntry: <>
+  542 																												Tcl_GetHashValue: <>
+  543 																												Tcl_DeleteChannelHandler: 431
+  544 																												TclChannelEventScriptInvoker: void (), <./tcl/generic/tclIO.c 6681>
+  545 																													Tcl_Preserve: 374
+  546 																													Tcl_EvalObjEx: <>
+  547 																													DeleteScriptRecord: void (), <./tcl/generic/tclIO.c 6575>
+  548 																														Tcl_DeleteChannelHandler: 431
+  549 																														TclChannelEventScriptInvoker: 544
+  550 																														Tcl_DecrRefCount: <>
+  551 																														ckfree: <>
+  552 																													Tcl_BackgroundError: 477
+  553 																													Tcl_Release: void (), <./tcl/generic/tclPreserve.c 206>
+  554 																														Tcl_MutexLock: 98
+  555 																														free: , <./tcl/generic/regc_nfa.c 399>
+  556 																														ckfree: <>
+  557 																														Tcl_MutexUnlock: 109
+  558 																														panic: 14
+  559 																												Tcl_DecrRefCount: <>
+  560 																												ckfree: <>
+  561 																												Tcl_DeleteHashEntry: <>
+  562 																												Tcl_Close: 423
+  563 																												Tcl_DeleteHashTable: <>
+  564 																											Tcl_IsSafe: 505
+  565 																											Tcl_GetStdChannel: 515
+  566 																											Tcl_RegisterChannel: 533
+  567 																										Tcl_CreateHashEntry: <>
+  568 																										Tcl_GetHashValue: <>
+  569 																										Tcl_SetHashValue: <>
+  570 																								Tcl_SetChannelOption: 228
+  571 																							Tcl_RegisterChannel: 533
+  572 																						Tcl_GetStringFromObj: <>
+  573 																						Tcl_GetObjResult: <>
+  574 																						strcmp: if (), <./tcl/generic/tclTest.c 4243>
+  575 																						Tcl_WriteChars: int (), <./tcl/generic/tclIO.c 2484>
+  576 																							CheckChannelErrors: 409
+  577 																							strlen: 6
+  578 																							Tcl_NewStringObj: 159
+  579 																							Tcl_GetByteArrayFromObj: <>
+  580 																							WriteBytes: int (), <./tcl/generic/tclIO.c 2598>
+  581 																								AllocChannelBuffer: 446
+  582 																								TranslateOutputEOL: int (), <./tcl/generic/tclIO.c 2863>
+  583 																								CheckFlush: int (), <./tcl/generic/tclIO.c 2969>
+  584 																									FlushChannel: 385
+  585 																							Tcl_DecrRefCount: <>
+  586 																							WriteChars: int (), <./tcl/generic/tclIO.c 2686>
+  587 																								TranslateOutputEOL: 582
+  588 																								AllocChannelBuffer: 446
+  589 																								memcpy: <>
+  590 																								Tcl_UtfToExternal: int (), <./tcl/generic/tclEncoding.c 1011>
+  591 																									strlen: 6
+  592 																								CheckFlush: 583
+  593 																						Tcl_Flush: 408
+  594 																						ckfree: <>
+  595 																						Tcl_Release: 553
+  596 																					Tcl_EventuallyFree: 415
+  597 																				Tcl_DoWhenIdle: void (), <./tcl/generic/tclTimer.c 558>
+  598 																					InitTimer: 257
+  599 																					ckalloc: <>
+  600 																					Tcl_SetMaxBlockTime: 270
+  601 																				HandleBgErrors: 500
+  602 																				Tcl_ResetResult: <>
+  603 																			Tcl_DecrRefCount: <>
+  604 																			Tcl_Release: 553
+  605 																			Tcl_SetObjResult: <>
+  606 																			Tcl_ResetResult: <>
+  607 																			Tcl_SetIntObj: <>
+  608 																			Tcl_GetObjResult: <>
+  609 																	Tcl_DecrRefCount: <>
+  610 																	ckfree: <>
+  611 																Tcl_DecrRefCount: <>
+  612 																FlushChannel: 385
+  613 														Tcl_GetErrno: int (), <./tcl/generic/tclIOUtil.c 366>
+  614 														Tcl_EventuallyFree: 415
+  615 														Tcl_Close: 423
+  616 												UpdateInterest: 255
+  617 												Tcl_Release: 553
+  618 											UpdateInterest: 255
+  619 									Tcl_SplitList: <>
+  620 									ckfree: <>
+  621 									Tcl_BadChannelOption: int (), <./tcl/generic/tclIO.c 5432>
+  622 										Tcl_DStringInit: <>
+  623 										Tcl_DStringAppend: <>
+  624 										Tcl_SplitList: <>
+  625 										Tcl_DStringValue: <>
+  626 										panic: 14
+  627 										Tcl_ResetResult: <>
+  628 										Tcl_AppendResult: <>
+  629 										Tcl_DStringFree: <>
+  630 										ckfree: <>
+  631 										Tcl_SetErrno: 231
+  632 									RecycleBuffer: 392
+  633 									ckalloc: <>
+  634 								Tcl_DStringInit: <>
+  635 								Tcl_Gets: int (), <./tcl/generic/tclIO.c 3022>
+  636 									Tcl_NewObj: 450
+  637 									Tcl_GetsObj: int (), <./tcl/generic/tclIO.c 3069>
+  638 										CheckChannelErrors: 409
+  639 										Tcl_GetStringFromObj: <>
+  640 										Tcl_GetEncoding: 136
+  641 										FilterInputBytes: int (), <./tcl/generic/tclIO.c 3402>
+  642 											read: if (, <./tcl/generic/tclIOGT.c 722>
+  643 											GetInput: 443
+  644 											Tcl_SetObjLength: <>
+  645 											Tcl_ExternalToUtf: int (), <./tcl/generic/tclEncoding.c 845>
+  646 											AllocChannelBuffer: 446
+  647 											memcpy: <>
+  648 										Tcl_ExternalToUtf: 645
+  649 										memmove: <>
+  650 										PeekAhead: void (), <./tcl/generic/tclIO.c 3569>
+  651 											Tcl_ChannelBlockModeProc: 238
+  652 											StackSetBlockMode: 237
+  653 											FilterInputBytes: 641
+  654 										Tcl_SetObjLength: <>
+  655 										CommonGetsCleanup: void (), <./tcl/generic/tclIO.c 3648>
+  656 											RecycleBuffer: 392
+  657 											memcpy: <>
+  658 											Tcl_FreeEncoding: 249
+  659 										UpdateInterest: 255
+  660 									Tcl_GetStringFromObj: <>
+  661 									Tcl_DStringAppend: <>
+  662 									Tcl_DecrRefCount: <>
+  663 								Tcl_DStringValue: <>
+  664 								Tcl_DStringFree: <>
+  665 								LoadTableEncoding: Tcl_Encoding (), <./tcl/generic/tclEncoding.c 1316>
+  666 									Tcl_DStringInit: <>
+  667 									Tcl_Gets: 635
+  668 									Tcl_DStringValue: <>
+  669 									strtol: long int (), <./tcl/compat/strtol.c 39>
+  670 										isspace: while (), <./tcl/generic/tclUtil.c 2331>
+  671 										strtoul: unsigned long int (), <./tcl/compat/strtoul.c 55>
+  672 											isspace: 670
+  673 									Tcl_DStringFree: <>
+  674 									memset: <>
+  675 									ckalloc: <>
+  676 									Tcl_NewObj: 450
+  677 									Tcl_GetObjResult: <>
+  678 									Tcl_ReadChars: int (), <./tcl/generic/tclIO.c 3884>
+  679 										CheckChannelErrors: 409
+  680 										Tcl_SetByteArrayLength: <>
+  681 										Tcl_SetObjLength: <>
+  682 										Tcl_GetByteArrayFromObj: <>
+  683 										Tcl_GetStringFromObj: <>
+  684 										ReadBytes: int (), <./tcl/generic/tclIO.c 4024>
+  685 											Tcl_GetByteArrayFromObj: <>
+  686 											Tcl_SetByteArrayLength: <>
+  687 											TranslateInputEOL: int (), <./tcl/generic/tclIO.c 4335>
+  688 												memcpy: <>
+  689 										ReadChars: int (), <./tcl/generic/tclIO.c 4128>
+  690 											Tcl_SetObjLength: <>
+  691 											Tcl_ExternalToUtf: 645
+  692 											memcpy: <>
+  693 											RecycleBuffer: 392
+  694 											ReadChars: 689
+  695 											TranslateInputEOL: 687
+  696 											Tcl_UtfAtIndex: <>
+  697 										RecycleBuffer: 392
+  698 										GetInput: 443
+  699 										UpdateInterest: 255
+  700 									Tcl_GetString: <>
+  701 									Tcl_DecrRefCount: <>
+  702 									Tcl_ResetResult: <>
+  703 									TableToUtfProc: int (), <./tcl/generic/tclEncoding.c 1958>
+  704 										Tcl_UniCharToUtf: INLINE int (), <./tcl/generic/tclUtf.c 160>
+  705 									TableFromUtfProc: int (), <./tcl/generic/tclEncoding.c 2060>
+  706 										Tcl_UtfCharComplete: <>
+  707 										Tcl_UtfToUniChar: <>
+  708 									TableFreeProc: void (), <./tcl/generic/tclEncoding.c 2172>
+  709 										ckfree: <>
+  710 									Tcl_CreateEncoding: 126
+  711 								LoadEscapeEncoding: Tcl_Encoding (), <./tcl/generic/tclEncoding.c 1539>
+  712 									Tcl_DStringInit: <>
+  713 									Tcl_Gets: 635
+  714 									Tcl_DStringValue: <>
+  715 									Tcl_SplitList: <>
+  716 									strcmp: if (), <./tcl/generic/tclTest.c 4243>
+  717 									strncpy: <>
+  718 									strlen: 6
+  719 									Tcl_DStringAppend: <>
+  720 									ckfree: <>
+  721 									Tcl_DStringFree: <>
+  722 									Tcl_DStringLength: <>
+  723 									ckalloc: <>
+  724 									strcpy: <>
+  725 									memcpy: <>
+  726 									memset: <>
+  727 									UCHAR: <>
+  728 									EscapeToUtfProc: int (), <./tcl/generic/tclEncoding.c 2202>
+  729 										longest: <>
+  730 										memcmp: int (), <./tcl/compat/memcmp.c 46>
+  731 										GetTableEncoding: Encoding * (), <./tcl/generic/tclEncoding.c 2637>
+  732 											Tcl_GetEncoding: 136
+  733 											TableToUtfProc: 703
+  734 											panic: 14
+  735 										Tcl_UniCharToUtf: 704
+  736 									EscapeFromUtfProc: int (), <./tcl/generic/tclEncoding.c 2412>
+  737 										memcpy: <>
+  738 										GetTableEncoding: 731
+  739 										Tcl_UtfCharComplete: <>
+  740 										Tcl_UtfToUniChar: <>
+  741 									EscapeFreeProc: void (), <./tcl/generic/tclEncoding.c 2597>
+  742 										FreeEncoding: 251
+  743 										ckfree: <>
+  744 									Tcl_CreateEncoding: 126
+  745 								Tcl_AppendResult: <>
+  746 								Tcl_Close: 423
+  747 						UtfToUtfProc: int (), <./tcl/generic/tclEncoding.c 1711>
+  748 							Tcl_UtfCharComplete: <>
+  749 							Tcl_UtfToUniChar: <>
+  750 							Tcl_UniCharToUtf: 704
+  751 						UnicodeToUtfProc: int (), <./tcl/generic/tclEncoding.c 1796>
+  752 							Tcl_UniCharToUtf: 704
+  753 						UtfToUnicodeProc: int (), <./tcl/generic/tclEncoding.c 1874>
+  754 							Tcl_UtfCharComplete: <>
+  755 							Tcl_UtfToUniChar: <>
+  756 					TclInitNamespaceSubsystem: void (), <./tcl/generic/tclNamesp.c 172>
+  757 						Tcl_RegisterObjType: 112
+  758 					TclpInitUnlock: void (), <./tcl/unix/tclUnixThrd.c 234>
+  759 						LeaveCriticalSection: <>
+  760 						pthread_mutex_unlock: <>
+  761 					TCL_TSD_INIT: <>
+  762 					TclInitNotifier: void (), <./tcl/generic/tclNotify.c 112>
+  763 						TCL_TSD_INIT: <>
+  764 						Tcl_MutexLock: 98
+  765 						Tcl_GetCurrentThread: Tcl_ThreadId (), <./tcl/unix/tclUnixThrd.c 178>
+  766 							GetCurrentThreadId: <>
+  767 							TclMacHaveThreads: int (), <./tcl/mac/tclMacThrd.c 72>
+  768 								Gestalt: <>
+  769 							GetCurrentThread: <>
+  770 							pthread_self: <>
+  771 						Tcl_InitNotifier: ClientData (), <./tcl/unix/tclUnixNotfy.c 197>
+  772 							TCL_TSD_INIT: <>
+  773 							Tcl_MutexLock: 98
+  774 							TclWinGetTclInstance: HINSTANCE (), <./tcl/win/tclWin32Dll.c 220>
+  775 							NotifierProc: LRESULT CALLBACK (), <./tcl/win/tclWinNotify.c 367>
+  776 								TCL_TSD_INIT: <>
+  777 								EnterCriticalSection: <>
+  778 								LeaveCriticalSection: <>
+  779 								DefWindowProc: <>
+  780 								Tcl_ServiceAll: 296
+  781 							RegisterClassA: <>
+  782 							panic: 14
+  783 							Tcl_MutexUnlock: 109
+  784 							InitializeCriticalSection: <>
+  785 							GetCurrentThreadId: <>
+  786 							CreateEvent: <>
+  787 							TclMacHaveThreads: 767
+  788 							GetCurrentThread: <>
+  789 							Tcl_CreateThread: int (), <./tcl/unix/tclUnixThrd.c 76>
+  790 								TclMacHaveThreads: 767
+  791 								NewThreadEntryProc: <>
+  792 								NewThread: Tcl_ThreadCreateType (), <./tcl/generic/tclThreadTest.c 406>
+  793 									TCL_TSD_INIT: <>
+  794 									Tcl_CreateInterp: Tcl_Interp * (), <./tcl/generic/tclBasic.c 263>
+  795 										TclInitSubsystems: 13
+  796 										panic: 14
+  797 										ckalloc: <>
+  798 										Tcl_NewObj: 450
+  799 										Tcl_IncrRefCount: <>
+  800 										TclHandleCreate: TclHandle (), <./tcl/generic/tclPreserve.c 344>
+  801 											ckalloc: <>
+  802 										Tcl_InitHashTable: <>
+  803 										TclInitLiteralTable: <>
+  804 										Tcl_CreateNamespace: <>
+  805 										TclCreateExecEnv: ExecEnv * (), <./tcl/generic/tclExecute.c 384>
+  806 											ckalloc: <>
+  807 											Tcl_MutexLock: 98
+  808 											TclInitAuxDataTypeTable: void (), <./tcl/generic/tclCompile.c 2617>
+  809 												Tcl_InitHashTable: <>
+  810 												TclRegisterAuxDataType: void (), <./tcl/generic/tclCompile.c 2526>
+  811 													Tcl_MutexLock: 98
+  812 													TclInitAuxDataTypeTable: 808
+  813 													Tcl_FindHashEntry: <>
+  814 													Tcl_DeleteHashEntry: <>
+  815 													Tcl_CreateHashEntry: <>
+  816 													Tcl_SetHashValue: <>
+  817 													Tcl_MutexUnlock: 109
+  818 											InitByteCodeExecution: void (), <./tcl/generic/tclExecute.c 342>
+  819 												Tcl_RegisterObjType: 112
+  820 												Tcl_LinkVar: int (), <./tcl/generic/tclLink.c 89>
+  821 													ckalloc: <>
+  822 													strlen: 6
+  823 													strcpy: <>
+  824 													Tcl_SetVar: <>
+  825 													StringValue: char * (), <./tcl/generic/tclLink.c 393>
+  826 														TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+  827 														Tcl_PrintDouble: <>
+  828 													ckfree: <>
+  829 													Tcl_TraceVar: <>
+  830 													LinkTraceProc: char * (), <./tcl/generic/tclLink.c 228>
+  831 														ckfree: <>
+  832 														Tcl_SetVar: <>
+  833 														StringValue: 825
+  834 														Tcl_TraceVar: <>
+  835 														LinkTraceProc: 830
+  836 														Tcl_GetVar: <>
+  837 														Tcl_GetObjResult: <>
+  838 														Tcl_IncrRefCount: <>
+  839 														Tcl_ResetResult: <>
+  840 														Tcl_GetInt: int (), <./tcl/generic/tclGet.c 42>
+  841 															isspace: 670
+  842 															UCHAR: <>
+  843 															strtoul: 671
+  844 															Tcl_AppendResult: <>
+  845 															TclCheckBadOctal: if (), <./tcl/generic/tclExecute.c 3448>
+  846 															Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+  847 															Tcl_SetErrorCode: <>
+  848 															Tcl_GetStringResult: <>
+  849 														Tcl_SetObjResult: <>
+  850 														Tcl_GetDouble: <>
+  851 														Tcl_GetBoolean: <>
+  852 														ckalloc: <>
+  853 														strlen: 6
+  854 														strcpy: <>
+  855 														Tcl_DecrRefCount: <>
+  856 												panic: 14
+  857 												Tcl_CreateCommand: Tcl_Command (), <./tcl/generic/tclBasic.c 1415>
+  858 													strstr: <>
+  859 													TclGetNamespaceForQualName: <>
+  860 													Tcl_CreateHashEntry: <>
+  861 													Tcl_GetHashValue: <>
+  862 													Tcl_DeleteCommandFromToken: <>
+  863 													ckfree: <>
+  864 													ckalloc: <>
+  865 													Tcl_SetHashValue: <>
+  866 													TclInvokeStringCommand: int (), <./tcl/generic/tclBasic.c 1713>
+  867 													TclResetShadowedCmdRefs: <>
+  868 											Tcl_MutexUnlock: 109
+  869 										memset: <>
+  870 										Tcl_CreateHashEntry: <>
+  871 										TclInvokeStringCommand: int (), <./tcl/generic/tclBasic.c 1713>
+  872 										Tcl_SetHashValue: <>
+  873 										Tcl_CreateMathFunc: <>
+  874 										Tcl_FindHashEntry: <>
+  875 										Tcl_GetHashValue: <>
+  876 										TclInterpInit: int (), <./tcl/generic/tclInterp.c 214>
+  877 											ckalloc: <>
+  878 											Tcl_InitHashTable: <>
+  879 											Tcl_CreateObjCommand: Tcl_Command (), <./tcl/generic/tclBasic.c 1559>
+  880 												strstr: <>
+  881 												TclGetNamespaceForQualName: <>
+  882 												Tcl_CreateHashEntry: <>
+  883 												Tcl_GetHashValue: <>
+  884 												TclInvokeStringCommand: int (), <./tcl/generic/tclBasic.c 1713>
+  885 												Tcl_DeleteCommandFromToken: <>
+  886 												ckfree: <>
+  887 												ckalloc: <>
+  888 												Tcl_SetHashValue: <>
+  889 												TclResetShadowedCmdRefs: <>
+  890 											Tcl_InterpObjCmd: int (), <./tcl/generic/tclInterp.c 343>
+  891 												Tcl_WrongNumArgs: <>
+  892 												Tcl_GetIndexFromObj: int (), <./tcl/generic/tclIndexObj.c 73>
+  893 													Tcl_GetIndexFromObjStruct: int (), <./tcl/generic/tclIndexObj.c 130>
+  894 														Tcl_RegisterObjType: 112
+  895 														Tcl_GetStringFromObj: <>
+  896 														Tcl_GetObjResult: <>
+  897 														Tcl_AppendStringsToObj: <>
+  898 												GetInterp: Tcl_Interp * (), <./tcl/generic/tclInterp.c 1656>
+  899 													Tcl_ListObjGetElements: int (), <./tcl/generic/tclListObj.c 302>
+  900 													Tcl_FindHashEntry: <>
+  901 													Tcl_GetString: <>
+  902 													Tcl_GetHashValue: <>
+  903 													Tcl_AppendStringsToObj: <>
+  904 													Tcl_GetObjResult: <>
+  905 												AliasDescribe: int (), <./tcl/generic/tclInterp.c 1292>
+  906 													Tcl_FindHashEntry: <>
+  907 													Tcl_GetString: <>
+  908 													Tcl_GetHashValue: <>
+  909 													Tcl_SetObjResult: <>
+  910 												Tcl_GetString: <>
+  911 												AliasDelete: int (), <./tcl/generic/tclInterp.c 1245>
+  912 													Tcl_FindHashEntry: <>
+  913 													Tcl_GetString: <>
+  914 													Tcl_AppendStringsToObj: <>
+  915 													Tcl_GetObjResult: <>
+  916 													Tcl_GetHashValue: <>
+  917 													Tcl_DeleteCommandFromToken: <>
+  918 												AliasCreate: int (), <./tcl/generic/tclInterp.c 1117>
+  919 													ckalloc: <>
+  920 													Tcl_IncrRefCount: <>
+  921 													Tcl_NewListObj: Tcl_Obj * (), <./tcl/generic/tclListObj.c 82>
+  922 														Tcl_DbNewListObj: Tcl_Obj * (), <./tcl/generic/tclListObj.c 186>
+  923 															TclDbNewObj: <>
+  924 															Tcl_InvalidateStringRep: <>
+  925 															ckalloc: <>
+  926 															Tcl_IncrRefCount: <>
+  927 															Tcl_NewListObj: 921
+  928 														TclNewObj: <>
+  929 														Tcl_InvalidateStringRep: <>
+  930 														ckalloc: <>
+  931 														Tcl_IncrRefCount: <>
+  932 													Tcl_ListObjReplace: <>
+  933 													Tcl_CreateObjCommand: 879
+  934 													Tcl_GetString: <>
+  935 													AliasObjCmd: int (), <./tcl/generic/tclInterp.c 1378>
+  936 														Tcl_Preserve: 374
+  937 														Tcl_ResetResult: <>
+  938 														Tcl_AllowExceptions: 503
+  939 														Tcl_ListObjGetElements: int (), <./tcl/generic/tclListObj.c 302>
+  940 														Tcl_NewListObj: 921
+  941 														Tcl_ListObjReplace: <>
+  942 														TclObjInvoke: <>
+  943 														Tcl_DecrRefCount: <>
+  944 														TclUpdateReturnInfo: <>
+  945 														Tcl_SetObjResult: <>
+  946 														Tcl_NewStringObj: 159
+  947 														sprintf: <>
+  948 														TclTransferResult: void (), <./tcl/generic/tclResult.c 1001>
+  949 															Tcl_AddErrorInfo: <>
+  950 															Tcl_ResetResult: <>
+  951 															Tcl_GetVar2Ex: <>
+  952 															Tcl_SetVar2Ex: <>
+  953 															Tcl_SetObjResult: <>
+  954 															Tcl_GetObjResult: <>
+  955 														Tcl_Release: 553
+  956 													AliasObjCmdDeleteProc: void (), <./tcl/generic/tclInterp.c 1470>
+  957 														Tcl_DecrRefCount: <>
+  958 														Tcl_DeleteHashEntry: <>
+  959 														Tcl_GetHashValue: <>
+  960 														ckfree: <>
+  961 													TclPreventAliasLoop: int (), <./tcl/generic/tclInterp.c 1029>
+  962 														AliasObjCmd: 935
+  963 														Tcl_ListObjGetElements: int (), <./tcl/generic/tclListObj.c 302>
+  964 														Tcl_FindCommand: <>
+  965 														Tcl_GetString: <>
+  966 														Tcl_GetGlobalNamespace: <>
+  967 														Tcl_AppendStringsToObj: <>
+  968 														Tcl_GetObjResult: <>
+  969 													Tcl_DecrRefCount: <>
+  970 													Tcl_DeleteCommandFromToken: <>
+  971 													ckfree: <>
+  972 													Tcl_CreateHashEntry: <>
+  973 													Tcl_GetHashValue: <>
+  974 													Tcl_SetHashValue: <>
+  975 													Tcl_MutexLock: 98
+  976 													Tcl_MutexUnlock: 109
+  977 													Tcl_SetObjResult: <>
+  978 												GetInterp2: Tcl_Interp * (), <./tcl/generic/tclInterp.c 776>
+  979 													GetInterp: 898
+  980 													Tcl_WrongNumArgs: <>
+  981 												AliasList: int (), <./tcl/generic/tclInterp.c 1334>
+  982 													Tcl_GetObjResult: <>
+  983 													Tcl_FirstHashEntry: <>
+  984 													Tcl_NextHashEntry: <>
+  985 													Tcl_GetHashValue: <>
+  986 													Tcl_ListObjAppendElement: <>
+  987 												Tcl_IsSafe: 505
+  988 												sprintf: <>
+  989 												Tcl_GetCommandInfo: <>
+  990 												Tcl_NewStringObj: 159
+  991 												SlaveCreate: Tcl_Interp * (), <./tcl/generic/tclInterp.c 1715>
+  992 													Tcl_ListObjGetElements: int (), <./tcl/generic/tclListObj.c 302>
+  993 													Tcl_GetString: <>
+  994 													Tcl_NewListObj: 921
+  995 													GetInterp: 898
+  996 													Tcl_DecrRefCount: <>
+  997 													Tcl_IsSafe: 505
+  998 													Tcl_CreateHashEntry: <>
+  999 													Tcl_AppendStringsToObj: <>
+ 1000 													Tcl_GetObjResult: <>
+ 1001 													Tcl_CreateInterp: 794
+ 1002 													Tcl_CreateObjCommand: 879
+ 1003 													SlaveObjCmd: int (), <./tcl/generic/tclInterp.c 1811>
+ 1004 														panic: 14
+ 1005 														Tcl_WrongNumArgs: <>
+ 1006 														Tcl_GetIndexFromObj: 892
+ 1007 														AliasDescribe: 905
+ 1008 														Tcl_GetString: <>
+ 1009 														AliasDelete: 911
+ 1010 														AliasCreate: 918
+ 1011 														AliasList: 981
+ 1012 														SlaveEval: int (), <./tcl/generic/tclInterp.c 2005>
+ 1013 															Tcl_Preserve: 374
+ 1014 															Tcl_AllowExceptions: 503
+ 1015 															Tcl_EvalObjEx: <>
+ 1016 															Tcl_ConcatObj: Tcl_Obj * (), <./tcl/generic/tclUtil.c 998>
+ 1017 															Tcl_IncrRefCount: <>
+ 1018 															Tcl_DecrRefCount: <>
+ 1019 															TclTransferResult: 948
+ 1020 															Tcl_Release: 553
+ 1021 														SlaveExpose: int (), <./tcl/generic/tclInterp.c 2050>
+ 1022 															Tcl_IsSafe: 505
+ 1023 															Tcl_AppendStringsToObj: <>
+ 1024 															Tcl_GetObjResult: <>
+ 1025 															Tcl_GetString: <>
+ 1026 															Tcl_ExposeCommand: int (), <./tcl/generic/tclBasic.c 1261>
+ 1027 																strstr: <>
+ 1028 																Tcl_AppendStringsToObj: <>
+ 1029 																Tcl_GetObjResult: <>
+ 1030 																Tcl_FindHashEntry: <>
+ 1031 																Tcl_GetHashValue: <>
+ 1032 																Tcl_CreateHashEntry: <>
+ 1033 																Tcl_DeleteHashEntry: <>
+ 1034 																Tcl_SetHashValue: <>
+ 1035 															TclTransferResult: 948
+ 1036 														SlaveHide: int (), <./tcl/generic/tclInterp.c 2092>
+ 1037 															Tcl_IsSafe: 505
+ 1038 															Tcl_AppendStringsToObj: <>
+ 1039 															Tcl_GetObjResult: <>
+ 1040 															Tcl_GetString: <>
+ 1041 															Tcl_HideCommand: int (), <./tcl/generic/tclBasic.c 1099>
+ 1042 																strstr: <>
+ 1043 																Tcl_AppendStringsToObj: <>
+ 1044 																Tcl_GetObjResult: <>
+ 1045 																Tcl_FindCommand: <>
+ 1046 																ckalloc: <>
+ 1047 																Tcl_InitHashTable: <>
+ 1048 																Tcl_CreateHashEntry: <>
+ 1049 																Tcl_DeleteHashEntry: <>
+ 1050 																Tcl_SetHashValue: <>
+ 1051 															TclTransferResult: 948
+ 1052 														SlaveHidden: int (), <./tcl/generic/tclInterp.c 2134>
+ 1053 															Tcl_GetObjResult: <>
+ 1054 															Tcl_FirstHashEntry: <>
+ 1055 															Tcl_NextHashEntry: <>
+ 1056 															Tcl_ListObjAppendElement: <>
+ 1057 															Tcl_NewStringObj: 159
+ 1058 															Tcl_GetHashKey: <>
+ 1059 														Tcl_SetIntObj: <>
+ 1060 														Tcl_GetObjResult: <>
+ 1061 														Tcl_IsSafe: 505
+ 1062 														SlaveInvokeHidden: int (), <./tcl/generic/tclInterp.c 2174>
+ 1063 															Tcl_IsSafe: 505
+ 1064 															Tcl_SetStringObj: <>
+ 1065 															Tcl_GetObjResult: <>
+ 1066 															Tcl_Preserve: 374
+ 1067 															Tcl_AllowExceptions: 503
+ 1068 															TclObjInvokeGlobal: <>
+ 1069 															TclObjInvoke: <>
+ 1070 															TclTransferResult: 948
+ 1071 															Tcl_Release: 553
+ 1072 														SlaveMarkTrusted: int (), <./tcl/generic/tclInterp.c 2225>
+ 1073 															Tcl_IsSafe: 505
+ 1074 															Tcl_AppendStringsToObj: <>
+ 1075 															Tcl_GetObjResult: <>
+ 1076 													SlaveObjCmdDeleteProc: void (), <./tcl/generic/tclInterp.c 1960>
+ 1077 														Tcl_DeleteHashEntry: <>
+ 1078 														Tcl_DeleteInterp: void (), <./tcl/generic/tclBasic.c 876>
+ 1079 															Tcl_EventuallyFree: 415
+ 1080 															DeleteInterpProc: void (), <./tcl/generic/tclBasic.c 926>
+ 1081 																panic: 14
+ 1082 																TclHandleFree: void (), <./tcl/generic/tclPreserve.c 381>
+ 1083 																	panic: 14
+ 1084 																	ckfree: <>
+ 1085 																TclTeardownNamespace: <>
+ 1086 																Tcl_FirstHashEntry: <>
+ 1087 																Tcl_NextHashEntry: <>
+ 1088 																Tcl_DeleteCommandFromToken: <>
+ 1089 																Tcl_GetHashValue: <>
+ 1090 																Tcl_DeleteHashTable: <>
+ 1091 																ckfree: <>
+ 1092 																Tcl_DeleteHashEntry: <>
+ 1093 																Tcl_DeleteNamespace: <>
+ 1094 																Tcl_FreeResult: <>
+ 1095 																Tcl_DecrRefCount: <>
+ 1096 																TclFreePackageInfo: void (), <./tcl/generic/tclPkg.c 818>
+ 1097 																	Tcl_FirstHashEntry: <>
+ 1098 																	Tcl_NextHashEntry: <>
+ 1099 																	Tcl_GetHashValue: <>
+ 1100 																	ckfree: <>
+ 1101 																	Tcl_EventuallyFree: 415
+ 1102 																	Tcl_DeleteHashTable: <>
+ 1103 																TclDeleteExecEnv: void (), <./tcl/generic/tclExecute.c 425>
+ 1104 																	ckfree: <>
+ 1105 																TclDeleteLiteralTable: <>
+ 1106 													Tcl_InitHashTable: <>
+ 1107 													Tcl_SetHashValue: <>
+ 1108 													Tcl_SetVar: <>
+ 1109 													Tcl_MakeSafe: int (), <./tcl/generic/tclInterp.c 2290>
+ 1110 														TclHideUnsafeCommands: int (), <./tcl/generic/tclBasic.c 577>
+ 1111 															Tcl_HideCommand: 1041
+ 1112 														Tcl_UnsetVar: <>
+ 1113 														Tcl_UnsetVar2: <>
+ 1114 														Tcl_GetStdChannel: 515
+ 1115 														Tcl_UnregisterChannel: int (), <./tcl/generic/tclIO.c 758>
+ 1116 															Tcl_GetAssocData: 486
+ 1117 															Tcl_FindHashEntry: <>
+ 1118 															Tcl_GetHashValue: <>
+ 1119 															Tcl_DeleteHashEntry: <>
+ 1120 															CleanupChannelHandlers: void (), <./tcl/generic/tclIO.c 6027>
+ 1121 																Tcl_DeleteChannelHandler: 431
+ 1122 																TclChannelEventScriptInvoker: 544
+ 1123 																Tcl_DecrRefCount: <>
+ 1124 																ckfree: <>
+ 1125 															CheckForStdChannelsBeingClosed: 425
+ 1126 															Tcl_Close: 423
+ 1127 													Tcl_Init: int (), <./tcl/unix/tclUnixInit.c 674>
+ 1128 														Tcl_Eval: <>
+ 1129 														TclGetLibraryPath: 142
+ 1130 														Tcl_NewObj: 450
+ 1131 														Tcl_SetVar2Ex: <>
+ 1132 													TclTransferResult: 948
+ 1133 													Tcl_DeleteInterp: 1078
+ 1134 												Tcl_DecrRefCount: <>
+ 1135 												Tcl_SetObjResult: <>
+ 1136 												Tcl_ResetResult: <>
+ 1137 												Tcl_AppendStringsToObj: <>
+ 1138 												Tcl_GetObjResult: <>
+ 1139 												Tcl_DeleteCommandFromToken: <>
+ 1140 												SlaveEval: 1012
+ 1141 												Tcl_SetIntObj: <>
+ 1142 												SlaveExpose: 1021
+ 1143 												SlaveHide: 1036
+ 1144 												SlaveHidden: 1052
+ 1145 												SlaveInvokeHidden: 1062
+ 1146 												SlaveMarkTrusted: 1072
+ 1147 												Tcl_FirstHashEntry: <>
+ 1148 												Tcl_NextHashEntry: <>
+ 1149 												Tcl_GetHashKey: <>
+ 1150 												Tcl_ListObjAppendElement: <>
+ 1151 												Tcl_GetChannel: Tcl_Channel (), <./tcl/generic/tclIO.c 859>
+ 1152 													strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 1153 													Tcl_GetStdChannel: 515
+ 1154 													GetChannelTable: 535
+ 1155 													Tcl_FindHashEntry: <>
+ 1156 													Tcl_AppendResult: <>
+ 1157 													Tcl_GetHashValue: <>
+ 1158 												TclTransferResult: 948
+ 1159 												Tcl_RegisterChannel: 533
+ 1160 												Tcl_FindHashEntry: <>
+ 1161 												Tcl_GetHashValue: <>
+ 1162 												Tcl_GetInterpPath: int (), <./tcl/generic/tclInterp.c 1616>
+ 1163 													Tcl_GetInterpPath: 1162
+ 1164 													Tcl_AppendElement: void (), <./tcl/generic/tclResult.c 598>
+ 1165 														Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 1166 														TclGetString: <>
+ 1167 														Tcl_GetObjResult: <>
+ 1168 														Tcl_ScanElement: <>
+ 1169 														SetupAppendBuffer: void (), <./tcl/generic/tclResult.c 665>
+ 1170 															ckfree: <>
+ 1171 															strlen: 6
+ 1172 															ckalloc: <>
+ 1173 															strcpy: <>
+ 1174 															Tcl_FreeResult: <>
+ 1175 														TclNeedSpace: int (), <./tcl/generic/tclUtil.c 2024>
+ 1176 														Tcl_ConvertElement: <>
+ 1177 													Tcl_GetHashKey: <>
+ 1178 												Tcl_UnregisterChannel: 1115
+ 1179 											Tcl_CallWhenDeleted: void (), <./tcl/generic/tclBasic.c 617>
+ 1180 												ckalloc: <>
+ 1181 												Tcl_MutexLock: 98
+ 1182 												sprintf: <>
+ 1183 												Tcl_MutexUnlock: 109
+ 1184 												Tcl_InitHashTable: <>
+ 1185 												Tcl_CreateHashEntry: <>
+ 1186 												Tcl_SetHashValue: <>
+ 1187 											InterpInfoDeleteProc: void (), <./tcl/generic/tclInterp.c 260>
+ 1188 												panic: 14
+ 1189 												Tcl_DeleteHashTable: <>
+ 1190 												Tcl_FirstHashEntry: <>
+ 1191 												Tcl_GetHashValue: <>
+ 1192 												Tcl_DeleteCommandFromToken: <>
+ 1193 												Tcl_NextHashEntry: <>
+ 1194 												ckfree: <>
+ 1195 										TclSetupEnv: void (), <./tcl/generic/tclEnv.c 82>
+ 1196 											Tcl_UntraceVar2: <>
+ 1197 											EnvTraceProc: char * (), <./tcl/generic/tclEnv.c 502>
+ 1198 												TclSetupEnv: 1195
+ 1199 												Tcl_GetVar2: <>
+ 1200 												TclSetEnv: void (), <./tcl/generic/tclEnv.c 170>
+ 1201 													Tcl_MutexLock: 98
+ 1202 													TclpFindVariable: int (), <./tcl/unix/tclUnixInit.c 618>
+ 1203 														strlen: 6
+ 1204 														ckalloc: <>
+ 1205 														memcpy: <>
+ 1206 														Tcl_UtfToUpper: int (), <./tcl/generic/tclUtf.c 916>
+ 1207 														Tcl_DStringInit: <>
+ 1208 														Tcl_ExternalToUtfDString: char * (), <./tcl/generic/tclEncoding.c 776>
+ 1209 															Tcl_DStringInit: <>
+ 1210 															Tcl_DStringValue: <>
+ 1211 															Tcl_DStringSetLength: <>
+ 1212 															Tcl_DStringLength: <>
+ 1213 														strchr: 218
+ 1214 														Tcl_DStringSetLength: <>
+ 1215 														Tcl_DStringFree: <>
+ 1216 														ckfree: <>
+ 1217 													ckalloc: <>
+ 1218 													memcpy: <>
+ 1219 													ckfree: <>
+ 1220 													strlen: 6
+ 1221 													Tcl_ExternalToUtfDString: 1208
+ 1222 													strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 1223 													Tcl_DStringFree: <>
+ 1224 													Tcl_MutexUnlock: 109
+ 1225 													strcpy: <>
+ 1226 													Tcl_UtfToExternalDString: char * (), <./tcl/generic/tclEncoding.c 939>
+ 1227 														Tcl_DStringInit: <>
+ 1228 														Tcl_DStringValue: <>
+ 1229 														strlen: 6
+ 1230 														Tcl_DStringSetLength: <>
+ 1231 														Tcl_DStringLength: <>
+ 1232 													ckrealloc: <>
+ 1233 													putenv: <>
+ 1234 													ReplaceString: void (), <./tcl/generic/tclEnv.c 584>
+ 1235 														ckfree: <>
+ 1236 														ckalloc: <>
+ 1237 														memset: <>
+ 1238 														memcpy: <>
+ 1239 												TclGetEnv: char * (), <./tcl/generic/tclEnv.c 447>
+ 1240 													Tcl_MutexLock: 98
+ 1241 													TclpFindVariable: 1202
+ 1242 													Tcl_ExternalToUtfDString: 1208
+ 1243 													Tcl_DStringInit: <>
+ 1244 													Tcl_DStringAppend: <>
+ 1245 													Tcl_DStringValue: <>
+ 1246 													Tcl_DStringFree: <>
+ 1247 													Tcl_MutexUnlock: 109
+ 1248 												Tcl_SetVar2: <>
+ 1249 												Tcl_DStringFree: <>
+ 1250 												TclUnsetEnv: void (), <./tcl/generic/tclEnv.c 355>
+ 1251 													Tcl_MutexLock: 98
+ 1252 													TclpFindVariable: 1202
+ 1253 													Tcl_MutexUnlock: 109
+ 1254 													ckalloc: <>
+ 1255 													memcpy: <>
+ 1256 													Tcl_UtfToExternalDString: 1226
+ 1257 													ckrealloc: <>
+ 1258 													Tcl_DStringLength: <>
+ 1259 													strcpy: <>
+ 1260 													Tcl_DStringValue: <>
+ 1261 													Tcl_DStringFree: <>
+ 1262 													putenv: <>
+ 1263 													ReplaceString: 1234
+ 1264 											Tcl_UnsetVar2: <>
+ 1265 											Tcl_NewStringObj: 159
+ 1266 											Tcl_IncrRefCount: <>
+ 1267 											TclArraySet: <>
+ 1268 											Tcl_DecrRefCount: <>
+ 1269 											Tcl_MutexLock: 98
+ 1270 											Tcl_ExternalToUtfDString: 1208
+ 1271 											strchr: 218
+ 1272 											Tcl_SetVar2: <>
+ 1273 											Tcl_DStringFree: <>
+ 1274 											Tcl_MutexUnlock: 109
+ 1275 											Tcl_TraceVar2: <>
+ 1276 										Tcl_SetVar2: <>
+ 1277 										Tcl_SetVar: <>
+ 1278 										Tcl_TraceVar2: <>
+ 1279 										TclpSetVariables: void (), <./tcl/unix/tclUnixInit.c 525>
+ 1280 											GetVersionExA: <>
+ 1281 											GetSystemInfo: <>
+ 1282 											Tcl_SetVar: <>
+ 1283 											Tcl_SetVar2: <>
+ 1284 											wsprintfA: <>
+ 1285 											Tcl_DStringInit: <>
+ 1286 											Tcl_GetVar2: <>
+ 1287 											Tcl_DStringAppend: <>
+ 1288 											Tcl_DStringLength: <>
+ 1289 											Tcl_DStringValue: <>
+ 1290 											Tcl_DStringSetLength: <>
+ 1291 											TclGetEnv: 1239
+ 1292 											GetUserName: char * (), <./tcl/mac/tclMacEnv.c 516>
+ 1293 												CurResFile: <>
+ 1294 												UseResFile: <>
+ 1295 												GetResource: <>
+ 1296 												HLock: <>
+ 1297 												strncpy: <>
+ 1298 												HUnlock: <>
+ 1299 												ReleaseResource: <>
+ 1300 											Tcl_DStringFree: <>
+ 1301 											TclGetLibraryPath: 142
+ 1302 											Tcl_ListObjGetElements: int (), <./tcl/generic/tclListObj.c 302>
+ 1303 											Tcl_GetStringFromObj: <>
+ 1304 											Tcl_SetVar2Ex: <>
+ 1305 											Gestalt: <>
+ 1306 											sprintf: <>
+ 1307 											uname: <>
+ 1308 											Tcl_ExternalToUtfDString: 1208
+ 1309 											strchr: 218
+ 1310 											isdigit: while (), <./tcl/generic/tclUtil.c 2328>
+ 1311 											UCHAR: <>
+ 1312 										Tcl_PkgProvideEx: int (), <./tcl/generic/tclPkg.c 94>
+ 1313 											FindPackage: Package * (), <./tcl/generic/tclPkg.c 777>
+ 1314 												Tcl_CreateHashEntry: <>
+ 1315 												ckalloc: <>
+ 1316 												Tcl_SetHashValue: <>
+ 1317 												Tcl_GetHashValue: <>
+ 1318 											ckalloc: <>
+ 1319 											strlen: 6
+ 1320 											strcpy: <>
+ 1321 											ComparePkgVersions: int (), <./tcl/generic/tclPkg.c 917>
+ 1322 											Tcl_AppendResult: <>
+ 1323 										Tcl_InitStubs: char * (), <./tcl/generic/tclStubLib.c 84>
+ 1324 											HasStubSupport: TclStubs * (), <./tcl/generic/tclStubLib.c 47>
+ 1325 											Tcl_PkgRequireEx: char * (), <./tcl/generic/tclPkg.c 167>
+ 1326 												Tcl_AppendResult: <>
+ 1327 												FindPackage: 1313
+ 1328 												ComparePkgVersions: 1321
+ 1329 												Tcl_Preserve: 374
+ 1330 												Tcl_GlobalEval: int (), <./tcl/generic/tclBasic.c 4139>
+ 1331 													Tcl_Eval: <>
+ 1332 												Tcl_Release: 553
+ 1333 												Tcl_AddErrorInfo: <>
+ 1334 												Tcl_ResetResult: <>
+ 1335 												Tcl_DStringInit: <>
+ 1336 												Tcl_DStringAppend: <>
+ 1337 												Tcl_DStringAppendElement: <>
+ 1338 												Tcl_DStringValue: <>
+ 1339 												Tcl_DStringFree: <>
+ 1340 									Tcl_Init: 1127
+ 1341 									TclThread_Init: int (), <./tcl/generic/tclThreadTest.c 157>
+ 1342 										Tcl_CreateObjCommand: 879
+ 1343 										Tcl_ThreadObjCmd: int (), <./tcl/generic/tclThreadTest.c 197>
+ 1344 											TCL_TSD_INIT: <>
+ 1345 											Tcl_WrongNumArgs: <>
+ 1346 											Tcl_GetIndexFromObj: 892
+ 1347 											Tcl_MutexLock: 98
+ 1348 											ListUpdateInner: void (), <./tcl/generic/tclThreadTest.c 527>
+ 1349 												TCL_TSD_INIT: <>
+ 1350 												Tcl_GetCurrentThread: 765
+ 1351 											Tcl_CreateThreadExitHandler: 167
+ 1352 											ThreadExitProc: void (), <./tcl/generic/tclThreadTest.c 916>
+ 1353 												Tcl_GetCurrentThread: 765
+ 1354 												Tcl_MutexLock: 98
+ 1355 												ckfree: <>
+ 1356 												Tcl_DeleteEvents: void (), <./tcl/generic/tclNotify.c 481>
+ 1357 													TCL_TSD_INIT: <>
+ 1358 													Tcl_MutexLock: 98
+ 1359 													ckfree: <>
+ 1360 													Tcl_MutexUnlock: 109
+ 1361 												ThreadDeleteEvent: int (), <./tcl/generic/tclThreadTest.c 883>
+ 1362 													ThreadEventProc: int (), <./tcl/generic/tclThreadTest.c 784>
+ 1363 														TCL_TSD_INIT: <>
+ 1364 														Tcl_Preserve: 374
+ 1365 														Tcl_ResetResult: <>
+ 1366 														Tcl_CreateThreadExitHandler: 167
+ 1367 														ThreadFreeProc: void (), <./tcl/generic/tclThreadTest.c 857>
+ 1368 															ckfree: <>
+ 1369 														Tcl_GlobalEval: 1330
+ 1370 														Tcl_DeleteThreadExitHandler: void (), <./tcl/generic/tclEvent.c 515>
+ 1371 															TCL_TSD_INIT: <>
+ 1372 															ckfree: <>
+ 1373 														Tcl_GetStringResult: <>
+ 1374 														Tcl_GetVar: <>
+ 1375 														ckfree: <>
+ 1376 														Tcl_MutexLock: 98
+ 1377 														ckalloc: <>
+ 1378 														strlen: 6
+ 1379 														strcpy: <>
+ 1380 														Tcl_ConditionNotify: void (), <./tcl/unix/tclUnixThrd.c 678>
+ 1381 															EnterCriticalSection: <>
+ 1382 															SetEvent: <>
+ 1383 															LeaveCriticalSection: <>
+ 1384 															TclMacHaveThreads: 767
+ 1385 															YieldToAnyThread: <>
+ 1386 															pthread_cond_broadcast: <>
+ 1387 														Tcl_MutexUnlock: 109
+ 1388 														Tcl_Release: 553
+ 1389 													ckfree: <>
+ 1390 												ckalloc: <>
+ 1391 												strlen: 6
+ 1392 												strcpy: <>
+ 1393 												Tcl_ConditionNotify: 1380
+ 1394 												Tcl_MutexUnlock: 109
+ 1395 											Tcl_MutexUnlock: 109
+ 1396 											Tcl_GetString: <>
+ 1397 											TclCreateThread: int (), <./tcl/generic/tclThreadTest.c 346>
+ 1398 												Tcl_MutexLock: 98
+ 1399 												Tcl_CreateThread: 789
+ 1400 												NewThread: 792
+ 1401 												Tcl_MutexUnlock: 109
+ 1402 												Tcl_AppendResult: <>
+ 1403 												ckfree: <>
+ 1404 												Tcl_ConditionWait: void (), <./tcl/unix/tclUnixThrd.c 622>
+ 1405 													TCL_TSD_INIT: <>
+ 1406 													CreateEvent: <>
+ 1407 													Tcl_CreateThreadExitHandler: 167
+ 1408 													FinalizeConditionEvent: void (), <./tcl/win/tclWinThrd.c 858>
+ 1409 														CloseHandle: <>
+ 1410 													ckalloc: <>
+ 1411 													InitializeCriticalSection: <>
+ 1412 													TclRememberCondition: void (), <./tcl/generic/tclThread.c 352>
+ 1413 														RememberSyncObject: 102
+ 1414 													EnterCriticalSection: <>
+ 1415 													LeaveCriticalSection: <>
+ 1416 													ResetEvent: <>
+ 1417 													WaitForSingleObject: <>
+ 1418 													TclMacHaveThreads: 767
+ 1419 													YieldToAnyThread: <>
+ 1420 													pthread_cond_init: <>
+ 1421 													pthread_cond_wait: <>
+ 1422 													TclpGetSeconds: unsigned long (), <./tcl/unix/tclUnixTime.c 38>
+ 1423 														ReadLocation: <>
+ 1424 														ReadDateTime: <>
+ 1425 														panic: 14
+ 1426 													pthread_cond_timedwait: <>
+ 1427 												Tcl_ConditionFinalize: void (), <./tcl/generic/tclThread.c 376>
+ 1428 													TclpFinalizeCondition: void (), <./tcl/unix/tclUnixThrd.c 712>
+ 1429 														ckfree: <>
+ 1430 														pthread_cond_destroy: <>
+ 1431 													ForgetSyncObject: void (), <./tcl/generic/tclThread.c 248>
+ 1432 												Tcl_SetObjResult: <>
+ 1433 												Tcl_NewLongObj: <>
+ 1434 											ListRemove: void (), <./tcl/generic/tclThreadTest.c 559>
+ 1435 												TCL_TSD_INIT: <>
+ 1436 												Tcl_MutexLock: 98
+ 1437 												Tcl_MutexUnlock: 109
+ 1438 											Tcl_ExitThread: void (), <./tcl/generic/tclThread.c 520>
+ 1439 												Tcl_FinalizeThread: void (), <./tcl/generic/tclEvent.c 861>
+ 1440 													TclThreadDataKeyGet: 19
+ 1441 													ckfree: <>
+ 1442 													TclFinalizeIOSubsystem: void (), <./tcl/generic/tclIO.c 196>
+ 1443 														TCL_TSD_INIT: <>
+ 1444 														Tcl_SetChannelOption: 228
+ 1445 														Tcl_Close: 423
+ 1446 														Tcl_Flush: 408
+ 1447 													TclFinalizeNotifier: void (), <./tcl/generic/tclNotify.c 145>
+ 1448 														TCL_TSD_INIT: <>
+ 1449 														Tcl_MutexLock: 98
+ 1450 														Tcl_FinalizeNotifier: void (), <./tcl/unix/tclUnixNotfy.c 249>
+ 1451 															DeleteCriticalSection: <>
+ 1452 															CloseHandle: <>
+ 1453 															KillTimer: <>
+ 1454 															DestroyWindow: <>
+ 1455 															Tcl_MutexLock: 98
+ 1456 															UnregisterClassA: <>
+ 1457 															TclWinGetTclInstance: 774
+ 1458 															Tcl_MutexUnlock: 109
+ 1459 															TCL_TSD_INIT: <>
+ 1460 															panic: 14
+ 1461 															write: <>
+ 1462 															close: <>
+ 1463 															Tcl_ConditionWait: 1404
+ 1464 															Tcl_ConditionFinalize: 1427
+ 1465 														Tcl_MutexFinalize: void (), <./tcl/generic/tclThread.c 303>
+ 1466 															TclpFinalizeMutex: void (), <./tcl/unix/tclUnixThrd.c 420>
+ 1467 																ckfree: <>
+ 1468 															ForgetSyncObject: 1431
+ 1469 														Tcl_MutexUnlock: 109
+ 1470 													TclFinalizeThreadData: void (), <./tcl/generic/tclThread.c 403>
+ 1471 														TclpMasterLock: void (), <./tcl/unix/tclUnixThrd.c 264>
+ 1472 															InitializeCriticalSection: <>
+ 1473 															EnterCriticalSection: <>
+ 1474 															pthread_mutex_lock: <>
+ 1475 														TclpFinalizeThreadData: void (), <./tcl/unix/tclUnixThrd.c 549>
+ 1476 															TlsGetValue: <>
+ 1477 															ckfree: <>
+ 1478 															TlsSetValue: <>
+ 1479 															RemoveThreadDataStruct: TclMacThrdData * (), <./tcl/mac/tclMacThrd.c 706>
+ 1480 																panic: 14
+ 1481 																GetCurrentThread: <>
+ 1482 															pthread_getspecific: <>
+ 1483 															pthread_setspecific: <>
+ 1484 														ckfree: <>
+ 1485 														TclpMasterUnlock: void (), <./tcl/unix/tclUnixThrd.c 290>
+ 1486 															LeaveCriticalSection: <>
+ 1487 															pthread_mutex_unlock: <>
+ 1488 												TclpThreadExit: void (), <./tcl/unix/tclUnixThrd.c 154>
+ 1489 													TclMacHaveThreads: 767
+ 1490 													GetCurrentThread: <>
+ 1491 													DisposeThread: <>
+ 1492 													pthread_exit: <>
+ 1493 											Tcl_NewLongObj: <>
+ 1494 											Tcl_GetCurrentThread: 765
+ 1495 											Tcl_SetObjResult: <>
+ 1496 											TclThreadList: int (), <./tcl/generic/tclThreadTest.c 595>
+ 1497 												Tcl_NewListObj: 921
+ 1498 												Tcl_MutexLock: 98
+ 1499 												Tcl_ListObjAppendElement: <>
+ 1500 												Tcl_NewLongObj: <>
+ 1501 												Tcl_MutexUnlock: 109
+ 1502 												Tcl_SetObjResult: <>
+ 1503 											strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 1504 											Tcl_GetLongFromObj: <>
+ 1505 											TclThreadSend: int (), <./tcl/generic/tclThreadTest.c 629>
+ 1506 												TCL_TSD_INIT: <>
+ 1507 												Tcl_MutexLock: 98
+ 1508 												Tcl_MutexUnlock: 109
+ 1509 												Tcl_AppendResult: <>
+ 1510 												Tcl_GetCurrentThread: 765
+ 1511 												Tcl_GlobalEval: 1330
+ 1512 												ckalloc: <>
+ 1513 												strlen: 6
+ 1514 												strcpy: <>
+ 1515 												ThreadEventProc: 1362
+ 1516 												Tcl_ThreadQueueEvent: void (), <./tcl/generic/tclNotify.c 350>
+ 1517 													Tcl_MutexLock: 98
+ 1518 													QueueEvent: 293
+ 1519 													Tcl_MutexUnlock: 109
+ 1520 												Tcl_ThreadAlert: void (), <./tcl/generic/tclNotify.c 1060>
+ 1521 													Tcl_MutexLock: 98
+ 1522 													Tcl_AlertNotifier: void (), <./tcl/unix/tclUnixNotfy.c 316>
+ 1523 														EnterCriticalSection: <>
+ 1524 														PostMessage: <>
+ 1525 														LeaveCriticalSection: <>
+ 1526 														SetEvent: <>
+ 1527 														TclMacHaveThreads: 767
+ 1528 														YieldToThread: <>
+ 1529 														Tcl_MutexLock: 98
+ 1530 														Tcl_ConditionNotify: 1380
+ 1531 														Tcl_MutexUnlock: 109
+ 1532 													Tcl_MutexUnlock: 109
+ 1533 												Tcl_ResetResult: <>
+ 1534 												Tcl_ConditionWait: 1404
+ 1535 												Tcl_SetErrorCode: <>
+ 1536 												ckfree: <>
+ 1537 												Tcl_AddErrorInfo: <>
+ 1538 												Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 1539 												Tcl_ConditionFinalize: 1427
+ 1540 											Tcl_DoOneEvent: int (), <./tcl/generic/tclNotify.c 785>
+ 1541 												TCL_TSD_INIT: <>
+ 1542 												Tcl_AsyncReady: 298
+ 1543 												Tcl_AsyncInvoke: 299
+ 1544 												Tcl_ServiceEvent: 302
+ 1545 												Tcl_WaitForEvent: int (), <./tcl/unix/tclUnixNotfy.c 651>
+ 1546 													TCL_TSD_INIT: <>
+ 1547 													Tcl_WaitForEvent: 1545
+ 1548 													PeekMessage: <>
+ 1549 													MsgWaitForMultipleObjects: <>
+ 1550 													GetMessage: <>
+ 1551 													PostQuitMessage: <>
+ 1552 													TranslateMessage: <>
+ 1553 													DispatchMessage: <>
+ 1554 													ResetEvent: <>
+ 1555 													TclMacStartTimer: void * (), <./tcl/mac/tclMacInterupt.c 117>
+ 1556 														InitInteruptSystem: void (), <./tcl/mac/tclMacInterupt.c 76>
+ 1557 															NewTimerProc: <>
+ 1558 															SleepTimerProc: void (), <./tcl/mac/tclMacInterupt.c 235>
+ 1559 																WakeUpProcess: <>
+ 1560 																GetTMInfo: <>
+ 1561 															GetCurrentProcess: <>
+ 1562 															TclMacInstallExitToShellPatch: OSErr (), <./tcl/mac/tclMacExit.c 201>
+ 1563 																TclMacInitExitToShell: void (), <./tcl/mac/tclMacExit.c 297>
+ 1564 																	NewPtr: <>
+ 1565 																	SetCurrentA5: <>
+ 1566 																	NewExitToShellProc: <>
+ 1567 																	ExitToShellPatchRoutine: pascal void (), <./tcl/mac/tclMacExit.c 243>
+ 1568 																		SetCurrentA5: <>
+ 1569 																		SetA5: <>
+ 1570 																		TclMacExitHandler: void (), <./tcl/mac/tclMacExit.c 150>
+ 1571 																			CallExitToShellProc: <>
+ 1572 																			DisposeExitToShellProc: <>
+ 1573 																			DisposePtr: <>
+ 1574 																		DisposePtr: <>
+ 1575 																		CallExitToShellProc: <>
+ 1576 																	NGetTrapAddress: <>
+ 1577 																	NSetTrapAddress: <>
+ 1578 																NewExitToShellProc: <>
+ 1579 																NewPtrClear: <>
+ 1580 															CleanUpExitProc: pascal void (), <./tcl/mac/tclMacInterupt.c 279>
+ 1581 																RmvTime: <>
+ 1582 														InsTime: <>
+ 1583 														PrimeTime: <>
+ 1584 													NewRgn: <>
+ 1585 													HandleMacEvents: int (), <./tcl/mac/tclMacNotify.c 256>
+ 1586 														GetGlobalMouse: void (), <./tcl/mac/tclMacUtil.c 438>
+ 1587 															OSEventAvail: <>
+ 1588 														EqualPt: <>
+ 1589 														FrontWindow: <>
+ 1590 														GetNextWindow: <>
+ 1591 														GetWindowUpdateRgn: <>
+ 1592 														EmptyRgn: <>
+ 1593 														GetEvQHdr: <>
+ 1594 														SetRect: <>
+ 1595 														RectRgn: <>
+ 1596 														WaitNextEvent: <>
+ 1597 													TclMacTimerExpired: int (), <./tcl/mac/tclMacInterupt.c 201>
+ 1598 													GetGlobalMouse: 1586
+ 1599 													SetRect: <>
+ 1600 													RectRgn: <>
+ 1601 													WaitNextEvent: <>
+ 1602 													TclMacRemoveTimer: void (), <./tcl/mac/tclMacInterupt.c 170>
+ 1603 														RmvTime: <>
+ 1604 													TclMacHaveThreads: 767
+ 1605 													YieldToAnyThread: <>
+ 1606 													Tcl_MutexLock: 98
+ 1607 													write: <>
+ 1608 													memset: <>
+ 1609 													Tcl_ConditionWait: 1404
+ 1610 													memcpy: <>
+ 1611 													select: <>
+ 1612 													ckalloc: <>
+ 1613 													FileHandlerEventProc: int (), <./tcl/unix/tclUnixNotfy.c 581>
+ 1614 														TCL_TSD_INIT: <>
+ 1615 													Tcl_QueueEvent: 291
+ 1616 													Tcl_MutexUnlock: 109
+ 1617 												TclServiceIdle: 309
+ 1618 											ckfree: <>
+ 1619 											ckalloc: <>
+ 1620 											strlen: 6
+ 1621 											strcpy: <>
+ 1622 										Tcl_PkgProvide: int (), <./tcl/generic/tclPkg.c 84>
+ 1623 											Tcl_PkgProvideEx: 1312
+ 1624 									Tcl_MutexLock: 98
+ 1625 									ListUpdateInner: 1348
+ 1626 									ckalloc: <>
+ 1627 									strlen: 6
+ 1628 									strcpy: <>
+ 1629 									Tcl_CreateThreadExitHandler: 167
+ 1630 									ThreadExitProc: 1352
+ 1631 									Tcl_ConditionNotify: 1380
+ 1632 									Tcl_MutexUnlock: 109
+ 1633 									Tcl_Preserve: 374
+ 1634 									Tcl_Eval: <>
+ 1635 									ThreadErrorProc: void (), <./tcl/generic/tclThreadTest.c 482>
+ 1636 										sprintf: <>
+ 1637 										Tcl_GetCurrentThread: 765
+ 1638 										Tcl_GetVar: <>
+ 1639 										Tcl_GetStdChannel: 515
+ 1640 										Tcl_WriteChars: 575
+ 1641 										Tcl_Merge: char * (), <./tcl/generic/tclUtil.c 823>
+ 1642 										TclThreadSend: 1505
+ 1643 										ckfree: <>
+ 1644 									ListRemove: 1434
+ 1645 									Tcl_Release: 553
+ 1646 									Tcl_DeleteInterp: 1078
+ 1647 									Tcl_ExitThread: 1438
+ 1648 								pthread_attr_init: <>
+ 1649 								pthread_attr_setscope: <>
+ 1650 								pthread_attr_setstacksize: <>
+ 1651 								pthread_attr_getstacksize: <>
+ 1652 								pthread_attr_setdetachstate: <>
+ 1653 								pthread_create: <>
+ 1654 								pthread_attr_destroy: <>
+ 1655 							NotifierThreadProc: void (), <./tcl/unix/tclUnixNotfy.c 857>
+ 1656 								pipe: <>
+ 1657 								panic: 14
+ 1658 								fcntl: <>
+ 1659 								ioctl: <>
+ 1660 								Tcl_MutexLock: 98
+ 1661 								Tcl_ConditionNotify: 1380
+ 1662 								Tcl_MutexUnlock: 109
+ 1663 								memset: <>
+ 1664 								select: <>
+ 1665 								read: if (, <./tcl/generic/tclIOGT.c 722>
+ 1666 								close: <>
+ 1667 							Tcl_ConditionWait: 1404
+ 1668 						Tcl_MutexUnlock: 109
+ 1669 				ckfree: <>
+ 1670 				TclpFindExecutable: char * (), <./tcl/unix/tclUnixFile.c 44>
+ 1671 					Tcl_WinTCharToUtf: char * (), <./tcl/win/tclWin32Dll.c 482>
+ 1672 						Tcl_ExternalToUtfDString: 1208
+ 1673 					TCHAR: <>
+ 1674 					ckalloc: <>
+ 1675 					Tcl_DStringLength: <>
+ 1676 					strcpy: <>
+ 1677 					Tcl_DStringValue: <>
+ 1678 					Tcl_DStringFree: <>
+ 1679 					TclWinNoBackslash: char * (), <./tcl/win/tclWin32Dll.c 308>
+ 1680 					Tcl_DStringInit: <>
+ 1681 					getenv: <>
+ 1682 					isspace: 670
+ 1683 					UCHAR: <>
+ 1684 					Tcl_DStringSetLength: <>
+ 1685 					Tcl_DStringAppend: <>
+ 1686 					access: <>
+ 1687 					stat: <>
+ 1688 					S_ISREG: <>
+ 1689 					Tcl_ExternalToUtfDString: 1208
+ 1690 					TclpGetCwd: char * (), <./tcl/unix/tclUnixFile.c 600>
+ 1691 						TclWinConvertError: void (), <./tcl/win/tclWinError.c 357>
+ 1692 							Tcl_SetErrno: 231
+ 1693 						GetLastError: <>
+ 1694 						Tcl_AppendResult: <>
+ 1695 						Tcl_PosixError: 241
+ 1696 						Tcl_WinTCharToUtf: 1671
+ 1697 						TCHAR: <>
+ 1698 						Tcl_DStringValue: <>
+ 1699 						FSpGetDefaultDir: int (), <./tcl/mac/tclMacUtil.c 90>
+ 1700 							HGetVol: <>
+ 1701 							FSMakeFSSpecCompat: <>
+ 1702 						Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 1703 						FSpPathFromLocation: OSErr (), <./tcl/mac/tclMacUtil.c 313>
+ 1704 							BlockMoveData: <>
+ 1705 							PtrToHand: <>
+ 1706 							PBGetCatInfoSync: <>
+ 1707 							Munger: <>
+ 1708 							MemError: <>
+ 1709 							GetHandleSize: <>
+ 1710 							DisposeHandle: <>
+ 1711 						HLock: <>
+ 1712 						Tcl_ExternalToUtfDString: 1208
+ 1713 						HUnlock: <>
+ 1714 						DisposeHandle: <>
+ 1715 						getwd: <>
+ 1716 						getcwd: <>
+ 1717 						Tcl_UtfToExternalDString: 1226
+ 1718 						readlink: <>
+ 1719 						Tcl_DStringFree: <>
+ 1720 						stat: <>
+ 1721 				Tcl_UtfToExternalDString: 1226
+ 1722 				TclFindEncodings: void (), <./tcl/generic/tclEncoding.c 2709>
+ 1723 					TclpInitLock: 26
+ 1724 					TclpFindExecutable: 1670
+ 1725 					TclpInitLibraryPath: void (), <./tcl/unix/tclUnixInit.c 189>
+ 1726 						Tcl_DStringInit: <>
+ 1727 						Tcl_NewObj: 450
+ 1728 						sprintf: <>
+ 1729 						Tcl_GetDefaultEncodingDir: char * (), <./tcl/generic/tclEncoding.c 345>
+ 1730 						Tcl_NewStringObj: 159
+ 1731 						Tcl_ListObjAppendElement: <>
+ 1732 						AppendEnvironment: void (), <./tcl/win/tclWinInit.c 319>
+ 1733 							GetEnvironmentVariableW: <>
+ 1734 							GetEnvironmentVariableA: <>
+ 1735 							ToUtf: int (), <./tcl/win/tclWinInit.c 441>
+ 1736 								Tcl_UniCharToUtf: 704
+ 1737 							Tcl_NewStringObj: 159
+ 1738 							Tcl_ListObjAppendElement: <>
+ 1739 							TclWinNoBackslash: char * (), <./tcl/win/tclWin32Dll.c 308>
+ 1740 							Tcl_SplitPath: void (), <./tcl/generic/tclFileName.c 344>
+ 1741 								Tcl_DStringInit: <>
+ 1742 								SplitUnixPath: char * (), <./tcl/generic/tclFileName.c 438>
+ 1743 									isdigit: while (), <./tcl/generic/tclUtil.c 2328>
+ 1744 									UCHAR: <>
+ 1745 									Tcl_DStringAppend: <>
+ 1746 									Tcl_DStringValue: <>
+ 1747 								SplitWinPath: char * (), <./tcl/generic/tclFileName.c 513>
+ 1748 									ExtractWinRoot: 156
+ 1749 									Tcl_DStringAppend: <>
+ 1750 									Tcl_DStringValue: <>
+ 1751 								SplitMacPath: 175
+ 1752 								Tcl_DStringLength: <>
+ 1753 								ckalloc: <>
+ 1754 								memcpy: <>
+ 1755 								Tcl_DStringValue: <>
+ 1756 								Tcl_DStringFree: <>
+ 1757 							lstrcmpiA: <>
+ 1758 							Tcl_DStringInit: <>
+ 1759 							Tcl_JoinPath: 147
+ 1760 							Tcl_DStringLength: <>
+ 1761 							Tcl_DStringFree: <>
+ 1762 							ckfree: <>
+ 1763 						AppendDllPath: void (), <./tcl/win/tclWinInit.c 395>
+ 1764 							GetModuleFileNameW: <>
+ 1765 							GetModuleFileNameA: <>
+ 1766 							ToUtf: 1735
+ 1767 							strrchr: <>
+ 1768 							strcpy: <>
+ 1769 							TclWinNoBackslash: char * (), <./tcl/win/tclWin32Dll.c 308>
+ 1770 							Tcl_ListObjAppendElement: <>
+ 1771 							Tcl_NewStringObj: 159
+ 1772 						TclWinGetTclInstance: 774
+ 1773 						Tcl_SplitPath: 1740
+ 1774 						Tcl_JoinPath: 147
+ 1775 						Tcl_DStringLength: <>
+ 1776 						Tcl_DStringFree: <>
+ 1777 						ckfree: <>
+ 1778 						TclSetLibraryPath: void (), <./tcl/generic/tclEvent.c 586>
+ 1779 							TCL_TSD_INIT: <>
+ 1780 							Tcl_IncrRefCount: <>
+ 1781 							Tcl_DecrRefCount: <>
+ 1782 						TclMacCreateEnv: int (), <./tcl/mac/tclMacEnv.c 420>
+ 1783 							SystemVariables: char ** (), <./tcl/mac/tclMacEnv.c 349>
+ 1784 								ckalloc: <>
+ 1785 								GetUserName: 1292
+ 1786 								strlen: 6
+ 1787 								strcpy: <>
+ 1788 								FSpGetDefaultDir: 1699
+ 1789 								FSpPathFromLocation: 1703
+ 1790 								HLock: <>
+ 1791 								strncpy: <>
+ 1792 								HUnlock: <>
+ 1793 								DisposeHandle: <>
+ 1794 							PathVariables: char ** (), <./tcl/mac/tclMacEnv.c 306>
+ 1795 								ckalloc: <>
+ 1796 								MakeFolderEnvVar: char * (), <./tcl/mac/tclMacEnv.c 232>
+ 1797 									Tcl_DStringInit: <>
+ 1798 									FSpFindFolder: OSErr (), <./tcl/mac/tclMacUtil.c 162>
+ 1799 										FindFolder: <>
+ 1800 										FSMakeFSSpecCompat: <>
+ 1801 									FSpPathFromLocation: 1703
+ 1802 									HLock: <>
+ 1803 									Tcl_DStringAppend: <>
+ 1804 									HUnlock: <>
+ 1805 									DisposeHandle: <>
+ 1806 									strlen: 6
+ 1807 									Tcl_DStringFree: <>
+ 1808 									ckalloc: <>
+ 1809 									strcpy: <>
+ 1810 							FileRCVariables: char ** (), <./tcl/mac/tclMacEnv.c 142>
+ 1811 								FSpFindFolder: 1798
+ 1812 								FSpPathFromLocation: 1703
+ 1813 								Munger: <>
+ 1814 								strlen: 6
+ 1815 								HLock: <>
+ 1816 								Tcl_OpenFileChannel: 223
+ 1817 								HUnlock: <>
+ 1818 								DisposeHandle: <>
+ 1819 								ckalloc: <>
+ 1820 								Tcl_DStringInit: <>
+ 1821 								Tcl_Gets: 635
+ 1822 								Tcl_DStringSetLength: <>
+ 1823 								strcpy: <>
+ 1824 								Tcl_Close: 423
+ 1825 								Tcl_DStringFree: <>
+ 1826 							RezRCVariables: char ** (), <./tcl/mac/tclMacEnv.c 82>
+ 1827 								GetNamedResource: <>
+ 1828 								ckalloc: <>
+ 1829 								GetResInfo: <>
+ 1830 								GetIndString: <>
+ 1831 								strncpy: <>
+ 1832 								ReleaseResource: <>
+ 1833 							ckalloc: <>
+ 1834 							ckfree: <>
+ 1835 						TclGetEnv: 1239
+ 1836 						TclGetLibraryPath: 142
+ 1837 						Tcl_ListObjAppendList: <>
+ 1838 						strlen: 6
+ 1839 						Tcl_AppendToObj: <>
+ 1840 						getenv: <>
+ 1841 						Tcl_ExternalToUtfDString: 1208
+ 1842 						Tcl_DStringValue: <>
+ 1843 						strcasecmp: int (), <./tcl/compat/strncasecmp.c 87>
+ 1844 					TclGetLibraryPath: 142
+ 1845 					Tcl_UtfToExternalDString: 1226
+ 1846 					Tcl_GetString: <>
+ 1847 					TclpSetInitialEncodings: void (), <./tcl/unix/tclUnixInit.c 366>
+ 1848 						TclWinGetPlatformId: int (), <./tcl/win/tclWin32Dll.c 285>
+ 1849 						TclWinSetInterfaces: void (), <./tcl/win/tclWin32Dll.c 400>
+ 1850 							Tcl_FreeEncoding: 249
+ 1851 							Tcl_GetEncoding: 136
+ 1852 						wsprintfA: <>
+ 1853 						GetACP: <>
+ 1854 						Tcl_SetSystemEncoding: int (), <./tcl/generic/tclEncoding.c 655>
+ 1855 							Tcl_MutexLock: 98
+ 1856 							Tcl_MutexUnlock: 109
+ 1857 							Tcl_GetEncoding: 136
+ 1858 							FreeEncoding: 251
+ 1859 						TclGetLibraryPath: 142
+ 1860 						Tcl_ListObjGetElements: int (), <./tcl/generic/tclListObj.c 302>
+ 1861 						Tcl_GetStringFromObj: <>
+ 1862 						Tcl_ExternalToUtfDString: 1208
+ 1863 						Tcl_SetStringObj: <>
+ 1864 						Tcl_DStringValue: <>
+ 1865 						Tcl_DStringLength: <>
+ 1866 						Tcl_DStringFree: <>
+ 1867 						Tcl_GetEncoding: 136
+ 1868 						GetFinderFont: int (), <./tcl/mac/tclMacInit.c 153>
+ 1869 							Gestalt: <>
+ 1870 							AECreateDesc: <>
+ 1871 							AECreateAppleEvent: <>
+ 1872 							AEDisposeDesc: <>
+ 1873 							CreateObjSpecifier: <>
+ 1874 							AEPutKeyDesc: <>
+ 1875 							AESend: <>
+ 1876 							AEGetKeyPtr: <>
+ 1877 						TclMacGetFontEncoding: char * (), <./tcl/mac/tclMacInit.c 238>
+ 1878 							FontToScript: <>
+ 1879 							GetScriptVariable: <>
+ 1880 						getenv: <>
+ 1881 						strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 1882 						Tcl_DStringInit: <>
+ 1883 						Tcl_DStringAppend: <>
+ 1884 						Tcl_UtfToLower: int (), <./tcl/generic/tclUtf.c 969>
+ 1885 						setlocale: <>
+ 1886 					Tcl_ExternalToUtfDString: 1208
+ 1887 					Tcl_DStringValue: <>
+ 1888 					Tcl_NewStringObj: 159
+ 1889 					TclSetLibraryPath: 1778
+ 1890 					Tcl_DStringFree: <>
+ 1891 					TclpInitUnlock: 758
+ 1892 				Tcl_ExternalToUtfDString: 1208
+ 1893 				Tcl_DStringValue: <>
+ 1894 				ckalloc: <>
+ 1895 				Tcl_DStringLength: <>
+ 1896 				strcpy: <>
+ 1897 				Tcl_DStringFree: <>
+ 1898 			Tcl_CreateInterp: 794
+ 1899 			Tcl_InitMemory: <>
+ 1900 			Tcl_Merge: char * (), <./tcl/generic/tclUtil.c 823>
+ 1901 			Tcl_ExternalToUtfDString: 1208
+ 1902 			Tcl_SetVar: <>
+ 1903 			Tcl_DStringValue: <>
+ 1904 			Tcl_DStringFree: <>
+ 1905 			ckfree: <>
+ 1906 			TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 1907 			isatty: if (), <./tcl/unix/tclUnixChan.c 1323>
+ 1908 			Tcl_GetStdChannel: 515
+ 1909 			Tcl_WriteChars: 575
+ 1910 			Tcl_WriteObj: int (), <./tcl/generic/tclIO.c 2549>
+ 1911 				CheckChannelErrors: 409
+ 1912 				Tcl_GetByteArrayFromObj: <>
+ 1913 				WriteBytes: 580
+ 1914 				Tcl_GetStringFromObj: <>
+ 1915 				WriteChars: 586
+ 1916 			Tcl_GetObjResult: <>
+ 1917 			Tcl_EvalFile: <>
+ 1918 			Tcl_AddErrorInfo: <>
+ 1919 			Tcl_GetVar2Ex: <>
+ 1920 			Tcl_SourceRCFile: void (), <./tcl/unix/tclUnixInit.c 712>
+ 1921 				Tcl_GetVar: <>
+ 1922 				Tcl_DStringInit: <>
+ 1923 				Tcl_TranslateFileName: char * (), <./tcl/generic/tclFileName.c 1002>
+ 1924 					Tcl_SplitPath: 1740
+ 1925 					strlen: 6
+ 1926 					Tcl_DStringInit: <>
+ 1927 					DoTildeSubst: char * (), <./tcl/generic/tclFileName.c 1156>
+ 1928 						TclGetEnv: 1239
+ 1929 						Tcl_ResetResult: <>
+ 1930 						Tcl_AppendResult: <>
+ 1931 						Tcl_JoinPath: 147
+ 1932 						Tcl_DStringFree: <>
+ 1933 						TclpGetUserHome: char * (), <./tcl/unix/tclUnixFile.c 461>
+ 1934 							HINSTANCE: <>
+ 1935 							Tcl_DStringInit: <>
+ 1936 							LoadLibraryA: <>
+ 1937 							GetProcAddress: <>
+ 1938 							strchr: 218
+ 1939 							Tcl_UtfToUniCharDString: <>
+ 1940 							Tcl_DStringFree: <>
+ 1941 							Tcl_UniCharToUtfDString: char * (), <./tcl/generic/tclUtf.c 235>
+ 1942 								Tcl_DStringLength: <>
+ 1943 								Tcl_DStringSetLength: <>
+ 1944 								Tcl_DStringValue: <>
+ 1945 								Tcl_UniCharToUtf: 704
+ 1946 							lstrlenW: <>
+ 1947 							GetWindowsDirectoryW: <>
+ 1948 							Tcl_DStringAppend: <>
+ 1949 							Tcl_DStringValue: <>
+ 1950 							FreeLibrary: <>
+ 1951 							GetPrivateProfileStringA: <>
+ 1952 							GetWindowsDirectoryA: <>
+ 1953 							Tcl_UtfToExternalDString: 1226
+ 1954 							getpwnam: <>
+ 1955 							endpwent: <>
+ 1956 							Tcl_ExternalToUtfDString: 1208
+ 1957 					Tcl_DStringFree: <>
+ 1958 					ckfree: <>
+ 1959 					Tcl_JoinPath: 147
+ 1960 					Tcl_DStringValue: <>
+ 1961 				Tcl_OpenFileChannel: 223
+ 1962 				Tcl_Close: 423
+ 1963 				Tcl_EvalFile: <>
+ 1964 				Tcl_GetStdChannel: 515
+ 1965 				Tcl_WriteObj: 1910
+ 1966 				Tcl_GetObjResult: <>
+ 1967 				Tcl_WriteChars: 575
+ 1968 				Tcl_DStringFree: <>
+ 1969 				c2pstr: <>
+ 1970 				GetNamedResource: <>
+ 1971 				p2cstr: <>
+ 1972 				Tcl_MacEvalResource: int (), <./tcl/mac/tclMacResource.c 1237>
+ 1973 					CurResFile: <>
+ 1974 					Tcl_TranslateFileName: 1923
+ 1975 					FSpLocationFromPath: int (), <./tcl/mac/tclMacUtil.c 202>
+ 1976 						FSMakeFSSpecCompat: <>
+ 1977 						strncpy: <>
+ 1978 						FSpGetDirectoryID: <>
+ 1979 						strcpy: <>
+ 1980 						ResolveAliasFile: <>
+ 1981 					strlen: 6
+ 1982 					Tcl_DStringFree: <>
+ 1983 					Tcl_AppendResult: <>
+ 1984 					FSpOpenResFileCompat: <>
+ 1985 					UseResFile: <>
+ 1986 					strcpy: <>
+ 1987 					GetNamedResource: <>
+ 1988 					GetResource: <>
+ 1989 					HLock: <>
+ 1990 					Tcl_MacConvertTextResource: char * (), <./tcl/mac/tclMacResource.c 1381>
+ 1991 						GetResourceSizeOnDisk: <>
+ 1992 						ckalloc: <>
+ 1993 					HUnlock: <>
+ 1994 					ReleaseResource: <>
+ 1995 					Tcl_Eval: <>
+ 1996 					ckfree: <>
+ 1997 					sprintf: <>
+ 1998 					Tcl_AddErrorInfo: <>
+ 1999 					CloseResFile: <>
+ 2000 				Tcl_ResetResult: <>
+ 2001 				ReleaseResource: <>
+ 2002 			Tcl_NewObj: 450
+ 2003 			Tcl_IncrRefCount: <>
+ 2004 			Tcl_EvalObjEx: <>
+ 2005 			Tcl_Flush: 408
+ 2006 			Tcl_GetsObj: 637
+ 2007 			Tcl_Eof: 458
+ 2008 			Tcl_AppendToObj: <>
+ 2009 			TclObjCommandComplete: <>
+ 2010 			Tcl_RecordAndEvalObj: int (), <./tcl/generic/tclHistory.c 108>
+ 2011 				Tcl_NewStringObj: 159
+ 2012 				Tcl_NewListObj: 921
+ 2013 				Tcl_IncrRefCount: <>
+ 2014 				Tcl_EvalObjEx: <>
+ 2015 				Tcl_DecrRefCount: <>
+ 2016 			Tcl_DecrRefCount: <>
+ 2017 			Tcl_GetStringFromObj: <>
+ 2018 			Tcl_DeleteInterp: 1078
+ 2019 			Tcl_Exit: void (), <./tcl/generic/tclEvent.c 555>
+ 2020 				Tcl_Finalize: void (), <./tcl/generic/tclEvent.c 741>
+ 2021 					TclpInitLock: 26
+ 2022 					TCL_TSD_INIT: <>
+ 2023 					Tcl_MutexLock: 98
+ 2024 					Tcl_MutexUnlock: 109
+ 2025 					ckfree: <>
+ 2026 					Tcl_DecrRefCount: <>
+ 2027 					Tcl_FinalizeThread: 1439
+ 2028 					TclFinalizeCompExecEnv: void (), <./tcl/generic/tclObj.c 169>
+ 2029 						Tcl_MutexLock: 98
+ 2030 						Tcl_DeleteHashTable: <>
+ 2031 						Tcl_MutexUnlock: 109
+ 2032 						TclFinalizeCompilation: void (), <./tcl/generic/tclCompExpr.c 331>
+ 2033 							Tcl_MutexLock: 98
+ 2034 							Tcl_DeleteHashTable: <>
+ 2035 							Tcl_MutexUnlock: 109
+ 2036 						TclFinalizeExecution: void (), <./tcl/generic/tclExecute.c 451>
+ 2037 							Tcl_MutexLock: 98
+ 2038 							Tcl_MutexUnlock: 109
+ 2039 							TclFinalizeAuxDataTypeTable: void (), <./tcl/generic/tclCompile.c 2653>
+ 2040 								Tcl_MutexLock: 98
+ 2041 								Tcl_DeleteHashTable: <>
+ 2042 								Tcl_MutexUnlock: 109
+ 2043 					TclFinalizeEnvironment: void (), <./tcl/generic/tclEnv.c 661>
+ 2044 						ckfree: <>
+ 2045 					TclFinalizeEncodingSubsystem: void (), <./tcl/generic/tclEncoding.c 309>
+ 2046 						Tcl_MutexLock: 98
+ 2047 						Tcl_FirstHashEntry: <>
+ 2048 						Tcl_GetHashValue: <>
+ 2049 						ckfree: <>
+ 2050 						Tcl_NextHashEntry: <>
+ 2051 						Tcl_DeleteHashTable: <>
+ 2052 						Tcl_MutexUnlock: 109
+ 2053 					Tcl_SetPanicProc: <>
+ 2054 					TclFinalizeSynchronization: void (), <./tcl/generic/tclThread.c 443>
+ 2055 						TclpMasterLock: 1471
+ 2056 						TclpFinalizeThreadDataKey: void (), <./tcl/unix/tclUnixThrd.c 586>
+ 2057 							TlsFree: <>
+ 2058 							ckfree: <>
+ 2059 							pthread_key_delete: <>
+ 2060 						ckfree: <>
+ 2061 						TclpFinalizeMutex: 1466
+ 2062 						TclpFinalizeCondition: 1428
+ 2063 						TclpMasterUnlock: 1485
+ 2064 					TclFinalizeLoad: void (), <./tcl/generic/tclLoad.c 632>
+ 2065 						TclpUnloadFile: void (), <./tcl/unix/tclLoadOSF.c 124>
+ 2066 							HINSTANCE: <>
+ 2067 							FreeLibrary: <>
+ 2068 							shl_unload: <>
+ 2069 							dlclose: 55
+ 2070 							NSUnLinkModule: <>
+ 2071 							dld_unlink_by_file: <>
+ 2072 							ckfree: <>
+ 2073 						ckfree: <>
+ 2074 					TclFinalizeMemorySubsystem: void (), <./tcl/generic/tclCkalloc.c 1010>
+ 2075 					TclpInitUnlock: 758
+ 2076 				TclpExit: void (), <./tcl/mac/tclMacExit.c 107>
+ 2077 					TclMacExitHandler: 1570
+ 2078 					exit: <>
+ 2079 					ExitToShell: <>
+ 2080 			sprintf: <>
+ 2081 			Tcl_Eval: <>
+ 2082 			Tcl_CreateCommand: 857
+ 2083 			CheckmemCmd: int (), <./tcl/mac/tclMacBOAMain.c 344>
+ 2084 				Tcl_AppendResult: <>
+ 2085 				strcpy: <>
+ 2086 			Tcl_DStringInit: <>
+ 2087 			Tcl_DStringAppend: <>
+ 2088 			Tcl_GetStringResult: <>
+ 2089 			TclMacDoNotification: void (), <./tcl/mac/tclMacBOAMain.c 240>
+ 2090 				c2pstr: <>
+ 2091 				NewNMProc: <>
+ 2092 				TclMacNotificationResponse: void (), <./tcl/mac/tclMacBOAMain.c 286>
+ 2093 					SetCurrentA5: <>
+ 2094 					SetA5: <>
+ 2095 				SetCurrentA5: <>
+ 2096 				NMInstall: <>
+ 2097 				WaitNextEvent: <>
+ 2098 				NMRemove: <>
+ 2099 				p2cstr: <>
+ 2100 			Tcl_CreateObjCommand: 879
+ 2101 			Tcl_MacBGNotifyObjCmd: int (), <./tcl/mac/tclMacBOAMain.c 301>
+ 2102 				Tcl_GetObjResult: <>
+ 2103 				Tcl_WrongNumArgs: <>
+ 2104 				TclMacDoNotification: 2089
+ 2105 				Tcl_GetString: <>
+ 2106 			strcpy: <>
+ 2107 			strlen: 6
+ 2108 			GetNamedResource: <>
+ 2109 			Tcl_MacEvalResource: 1972
+ 2110 		read: if (, <./tcl/generic/tclIOGT.c 722>
+ 2111 		write: <>
+ 2112 		strlen: 6
+ 2113 		strchr: 218
+ 2114 		GetCommandLine: <>
+ 2115 		GetStdHandle: <>
+ 2116 		GetFileType: <>
+ 2117 		CreateTempFile: HANDLE (), <./tcl/win/stub16.c 180>
+ 2118 			GetTempPath: <>
+ 2119 			GetTempFileName: <>
+ 2120 			CreateFile: <>
+ 2121 		ReadFile: <>
+ 2122 		WriteFile: <>
+ 2123 		SetFilePointer: <>
+ 2124 		SetStdHandle: <>
+ 2125 		ZeroMemory: <>
+ 2126 		CreateProcess: <>
+ 2127 		WaitForInputIdle: <>
+ 2128 		WaitForSingleObject: <>
+ 2129 		GetExitCodeProcess: <>
+ 2130 		CloseHandle: <>
+ 2131 		ExitProcess: <>
+ 2132 		fopen: <>
+ 2133 		fprintf: <>
+ 2134 		strerror: <>
+ 2135 		exit: <>
+ 2136 		fgets: <>
+ 2137 		DoMacro: void (), <./tcl/tools/man2tcl.c 181>
+ 2138 			isspace: 670
+ 2139 			printf: <>
+ 2140 			putc: <>
+ 2141 			fprintf: <>
+ 2142 			QuoteText: void (), <./tcl/tools/man2tcl.c 383>
+ 2143 				printf: <>
+ 2144 				putc: <>
+ 2145 		DoText: void (), <./tcl/tools/man2tcl.c 273>
+ 2146 			printf: <>
+ 2147 			QuoteText: 2142
+ 2148 			putc: <>
+ 2149 			fprintf: <>
+ 2150 		fseek: <>
+ 2151 		MacintoshInit: int (), <./tcl/mac/tclMacAppInit.c 172>
+ 2152 			SetApplLimit: <>
+ 2153 			GetApplLimit: <>
+ 2154 			MaxApplZone: <>
+ 2155 			InstallConsole: <>
+ 2156 			SIOUXSetTitle: <>
+ 2157 			InitGraf: <>
+ 2158 			InitFonts: <>
+ 2159 			InitWindows: <>
+ 2160 			InitMenus: <>
+ 2161 			TEInit: <>
+ 2162 			InitDialogs: <>
+ 2163 			InitCursor: <>
+ 2164 			Tcl_MacSetEventProc: void (), <./tcl/mac/tclMacNotify.c 576>
+ 2165 		Tcl_Exit: 2019
+ 2166 		Tcl_AppInit: int (), <./tcl/unix/tclAppInit.c 124>
+ 2167 			Tcl_Init: 1127
+ 2168 			Tcltest_Init: int (), <./tcl/generic/tclTest.c 314>
+ 2169 				Tcl_PkgProvide: 1622
+ 2170 				Tcl_CreateCommand: 857
+ 2171 				GetTimesCmd: int (), <./tcl/generic/tclTest.c 3507>
+ 2172 					fprintf: <>
+ 2173 					TclpGetTime: 265
+ 2174 					ckalloc: <>
+ 2175 					ckfree: <>
+ 2176 					Tcl_NewObj: 450
+ 2177 					Tcl_DecrRefCount: <>
+ 2178 					Tcl_NewStringObj: 159
+ 2179 					TclGetString: <>
+ 2180 					Tcl_GetIntFromObj: <>
+ 2181 					Tcl_GetInt: 840
+ 2182 					sprintf: <>
+ 2183 					Tcl_FindHashEntry: <>
+ 2184 					Tcl_SetVar: <>
+ 2185 					Tcl_GetVar: <>
+ 2186 					Tcl_ResetResult: <>
+ 2187 				NoopCmd: int (), <./tcl/generic/tclTest.c 3687>
+ 2188 				Tcl_CreateObjCommand: 879
+ 2189 				NoopObjCmd: int (), <./tcl/generic/tclTest.c 3714>
+ 2190 				TestasyncCmd: int (), <./tcl/generic/tclTest.c 470>
+ 2191 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2192 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2193 					ckalloc: <>
+ 2194 					Tcl_AsyncCreate: Tcl_AsyncHandler (), <./tcl/generic/tclAsync.c 85>
+ 2195 						ckalloc: <>
+ 2196 						Tcl_MutexLock: 98
+ 2197 						Tcl_MutexUnlock: 109
+ 2198 					AsyncHandlerProc: int (), <./tcl/generic/tclTest.c 560>
+ 2199 						TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 2200 						Tcl_GetStringResult: <>
+ 2201 						Tcl_Merge: char * (), <./tcl/generic/tclUtil.c 823>
+ 2202 						Tcl_Eval: <>
+ 2203 						ckfree: <>
+ 2204 					strlen: 6
+ 2205 					strcpy: <>
+ 2206 					TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 2207 					Tcl_AsyncDelete: void (), <./tcl/generic/tclAsync.c 231>
+ 2208 						Tcl_MutexLock: 98
+ 2209 						Tcl_MutexUnlock: 109
+ 2210 						ckfree: <>
+ 2211 					ckfree: <>
+ 2212 					Tcl_GetInt: 840
+ 2213 					Tcl_AsyncMark: void (), <./tcl/generic/tclAsync.c 128>
+ 2214 						Tcl_MutexLock: 98
+ 2215 						TclpAsyncMark: void (), <./tcl/win/tclWinInit.c 836>
+ 2216 							PostThreadMessage: <>
+ 2217 						Tcl_MutexUnlock: 109
+ 2218 					Tcl_AppendResult: <>
+ 2219 				TestchmodCmd: int (), <./tcl/generic/tclTest.c 3303>
+ 2220 					Tcl_AppendResult: <>
+ 2221 					strtol: 669
+ 2222 					Tcl_TranslateFileName: 1923
+ 2223 					chmod: if (), <./tcl/unix/tclUnixFCmd.c 1038>
+ 2224 					Tcl_PosixError: 241
+ 2225 					Tcl_DStringFree: <>
+ 2226 				TestcmdtokenCmd: int (), <./tcl/generic/tclTest.c 736>
+ 2227 					Tcl_AppendResult: <>
+ 2228 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2229 					Tcl_CreateCommand: 857
+ 2230 					CmdProc1: int (), <./tcl/generic/tclTest.c 674>
+ 2231 						Tcl_AppendResult: <>
+ 2232 					sprintf: <>
+ 2233 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2234 					sscanf: <>
+ 2235 					Tcl_NewObj: 450
+ 2236 					Tcl_GetCommandFullName: <>
+ 2237 					Tcl_AppendElement: 1164
+ 2238 					Tcl_GetCommandName: <>
+ 2239 					Tcl_GetString: <>
+ 2240 					Tcl_DecrRefCount: <>
+ 2241 				TestcmdinfoCmd: int (), <./tcl/generic/tclTest.c 601>
+ 2242 					Tcl_AppendResult: <>
+ 2243 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2244 					Tcl_CreateCommand: 857
+ 2245 					CmdProc1: 2230
+ 2246 					CmdDelProc1: void (), <./tcl/generic/tclTest.c 699>
+ 2247 						Tcl_DStringInit: <>
+ 2248 						Tcl_DStringAppend: <>
+ 2249 					Tcl_DStringInit: <>
+ 2250 					Tcl_DeleteCommand: <>
+ 2251 					Tcl_DStringResult: <>
+ 2252 					Tcl_GetCommandInfo: <>
+ 2253 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2254 					CmdProc2: int (), <./tcl/generic/tclTest.c 687>
+ 2255 						Tcl_AppendResult: <>
+ 2256 					CmdDelProc2: void (), <./tcl/generic/tclTest.c 708>
+ 2257 						Tcl_DStringInit: <>
+ 2258 						Tcl_DStringAppend: <>
+ 2259 					Tcl_SetCommandInfo: <>
+ 2260 				TestcmdtraceCmd: int (), <./tcl/generic/tclTest.c 800>
+ 2261 					Tcl_AppendResult: <>
+ 2262 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2263 					Tcl_DStringInit: <>
+ 2264 					Tcl_CreateTrace: <>
+ 2265 					CmdTraceProc: void (), <./tcl/generic/tclTest.c 846>
+ 2266 						Tcl_DStringAppendElement: <>
+ 2267 						Tcl_DStringStartSublist: <>
+ 2268 						Tcl_DStringEndSublist: <>
+ 2269 					Tcl_Eval: <>
+ 2270 					Tcl_ResetResult: <>
+ 2271 					Tcl_DStringValue: <>
+ 2272 					Tcl_DeleteTrace: <>
+ 2273 					Tcl_DStringFree: <>
+ 2274 					CmdTraceDeleteProc: void (), <./tcl/generic/tclTest.c 874>
+ 2275 						Tcl_DeleteTrace: <>
+ 2276 				TestcreatecommandCmd: int (), <./tcl/generic/tclTest.c 918>
+ 2277 					Tcl_AppendResult: <>
+ 2278 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2279 					Tcl_CreateCommand: 857
+ 2280 					CreatedCommandProc: int (), <./tcl/generic/tclTest.c 951>
+ 2281 						Tcl_GetCommandInfo: <>
+ 2282 						Tcl_AppendResult: <>
+ 2283 					Tcl_DeleteCommand: <>
+ 2284 					CreatedCommandProc2: int (), <./tcl/generic/tclTest.c 973>
+ 2285 						Tcl_GetCommandInfo: <>
+ 2286 						Tcl_AppendResult: <>
+ 2287 				TestdcallCmd: int (), <./tcl/generic/tclTest.c 1012>
+ 2288 					Tcl_CreateInterp: 794
+ 2289 					Tcl_DStringInit: <>
+ 2290 					Tcl_GetInt: 840
+ 2291 					Tcl_DontCallWhenDeleted: void (), <./tcl/generic/tclBasic.c 669>
+ 2292 						Tcl_FirstHashEntry: <>
+ 2293 						Tcl_NextHashEntry: <>
+ 2294 						Tcl_GetHashValue: <>
+ 2295 						ckfree: <>
+ 2296 						Tcl_DeleteHashEntry: <>
+ 2297 					DelCallbackProc: void (), <./tcl/generic/tclTest.c 1044>
+ 2298 						TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 2299 						Tcl_DStringAppendElement: <>
+ 2300 					Tcl_CallWhenDeleted: 1179
+ 2301 					Tcl_DeleteInterp: 1078
+ 2302 					Tcl_DStringResult: <>
+ 2303 				TestdelCmd: int (), <./tcl/generic/tclTest.c 1078>
+ 2304 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2305 					Tcl_GetSlave: Tcl_Interp * (), <./tcl/generic/tclInterp.c 1546>
+ 2306 						Tcl_NewStringObj: 159
+ 2307 						GetInterp: 898
+ 2308 						Tcl_DecrRefCount: <>
+ 2309 					ckalloc: <>
+ 2310 					strlen: 6
+ 2311 					strcpy: <>
+ 2312 					Tcl_CreateCommand: 857
+ 2313 					DelCmdProc: int (), <./tcl/generic/tclTest.c 1108>
+ 2314 						Tcl_AppendResult: <>
+ 2315 						ckfree: <>
+ 2316 					DelDeleteProc: void (), <./tcl/generic/tclTest.c 1123>
+ 2317 						Tcl_Eval: <>
+ 2318 						Tcl_ResetResult: <>
+ 2319 						ckfree: <>
+ 2320 				TestdelassocdataCmd: int (), <./tcl/generic/tclTest.c 1153>
+ 2321 					Tcl_AppendResult: <>
+ 2322 					Tcl_DeleteAssocData: void (), <./tcl/generic/tclBasic.c 762>
+ 2323 						Tcl_FindHashEntry: <>
+ 2324 						Tcl_GetHashValue: <>
+ 2325 						ckfree: <>
+ 2326 						Tcl_DeleteHashEntry: <>
+ 2327 				Tcl_DStringInit: <>
+ 2328 				TestdstringCmd: int (), <./tcl/generic/tclTest.c 1187>
+ 2329 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2330 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2331 					Tcl_GetInt: 840
+ 2332 					Tcl_DStringAppend: <>
+ 2333 					Tcl_DStringAppendElement: <>
+ 2334 					Tcl_DStringEndSublist: <>
+ 2335 					Tcl_DStringFree: <>
+ 2336 					Tcl_DStringValue: <>
+ 2337 					ckalloc: <>
+ 2338 					strcpy: <>
+ 2339 					SpecialFree: void (), <./tcl/generic/tclTest.c 1291>
+ 2340 						ckfree: <>
+ 2341 					Tcl_AppendResult: <>
+ 2342 					Tcl_DStringGetResult: <>
+ 2343 					TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 2344 					Tcl_DStringLength: <>
+ 2345 					Tcl_DStringResult: <>
+ 2346 					Tcl_DStringTrunc: <>
+ 2347 					Tcl_DStringStartSublist: <>
+ 2348 				TestencodingObjCmd: int (), <./tcl/generic/tclTest.c 1316>
+ 2349 					Tcl_GetIndexFromObj: 892
+ 2350 					ckalloc: <>
+ 2351 					Tcl_GetStringFromObj: <>
+ 2352 					memcpy: <>
+ 2353 					EncodingToUtfProc: int (), <./tcl/generic/tclTest.c 1390>
+ 2354 						Tcl_GlobalEval: 1330
+ 2355 						strlen: 6
+ 2356 						Tcl_GetStringResult: <>
+ 2357 						memcpy: <>
+ 2358 						Tcl_ResetResult: <>
+ 2359 					EncodingFromUtfProc: int (), <./tcl/generic/tclTest.c 1422>
+ 2360 						Tcl_GlobalEval: 1330
+ 2361 						strlen: 6
+ 2362 						Tcl_GetStringResult: <>
+ 2363 						memcpy: <>
+ 2364 						Tcl_ResetResult: <>
+ 2365 					EncodingFreeProc: void (), <./tcl/generic/tclTest.c 1454>
+ 2366 						ckfree: <>
+ 2367 					Tcl_CreateEncoding: 126
+ 2368 					Tcl_GetEncoding: 136
+ 2369 					Tcl_GetString: <>
+ 2370 					Tcl_FreeEncoding: 249
+ 2371 					Tcl_SetObjResult: <>
+ 2372 					TclGetLibraryPath: 142
+ 2373 					TclSetLibraryPath: 1778
+ 2374 				TestevalexObjCmd: int (), <./tcl/generic/tclTest.c 1483>
+ 2375 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2376 					Tcl_GetStringFromObj: <>
+ 2377 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2378 					Tcl_AppendResult: <>
+ 2379 					Tcl_WrongNumArgs: <>
+ 2380 					Tcl_EvalEx: <>
+ 2381 				TestevalobjvObjCmd: int (), <./tcl/generic/tclTest.c 1557>
+ 2382 					Tcl_WrongNumArgs: <>
+ 2383 					Tcl_GetIntFromObj: <>
+ 2384 					Tcl_EvalObjv: <>
+ 2385 				TestexithandlerCmd: int (), <./tcl/generic/tclTest.c 1594>
+ 2386 					Tcl_AppendResult: <>
+ 2387 					Tcl_GetInt: 840
+ 2388 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2389 					Tcl_CreateExitHandler: 329
+ 2390 					ExitProcOdd: void (), <./tcl/generic/tclTest.c 1625>
+ 2391 						sprintf: <>
+ 2392 						write: <>
+ 2393 						strlen: 6
+ 2394 					ExitProcEven: void (), <./tcl/generic/tclTest.c 1635>
+ 2395 						sprintf: <>
+ 2396 						write: <>
+ 2397 						strlen: 6
+ 2398 					Tcl_DeleteExitHandler: void (), <./tcl/generic/tclEvent.c 438>
+ 2399 						Tcl_MutexLock: 98
+ 2400 						ckfree: <>
+ 2401 						Tcl_MutexUnlock: 109
+ 2402 				TestexprlongCmd: int (), <./tcl/generic/tclTest.c 1662>
+ 2403 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2404 					Tcl_ExprLong: <>
+ 2405 					sprintf: <>
+ 2406 					Tcl_AppendResult: <>
+ 2407 				TestexprparserObjCmd: int (), <./tcl/generic/tclTest.c 2278>
+ 2408 					Tcl_WrongNumArgs: <>
+ 2409 					Tcl_GetStringFromObj: <>
+ 2410 					Tcl_GetIntFromObj: <>
+ 2411 					Tcl_ParseExpr: int (), <./tcl/generic/tclParseExpr.c 204>
+ 2412 						strlen: 6
+ 2413 						fprintf: <>
+ 2414 						GetLexeme: int (), <./tcl/generic/tclParseExpr.c 1452>
+ 2415 							isspace: 670
+ 2416 							UCHAR: <>
+ 2417 							isdigit: while (), <./tcl/generic/tclUtil.c 2328>
+ 2418 							TclLooksLikeInt: if (), <./tcl/generic/tclLiteral.c 270>
+ 2419 							strtoul: 671
+ 2420 							Tcl_ResetResult: <>
+ 2421 							Tcl_AppendToObj: <>
+ 2422 							Tcl_GetObjResult: <>
+ 2423 							Tcl_SetErrorCode: <>
+ 2424 							Tcl_AppendResult: <>
+ 2425 							strtod: double (), <./tcl/compat/strtod.c 70>
+ 2426 								isspace: 670
+ 2427 								isdigit: while (), <./tcl/generic/tclUtil.c 2328>
+ 2428 							TclExprFloatError: <>
+ 2429 							Tcl_UtfToUniChar: <>
+ 2430 							isalpha: <>
+ 2431 							isalnum: <>
+ 2432 						ParseCondExpr: int (), <./tcl/generic/tclParseExpr.c 323>
+ 2433 							HERE: <>
+ 2434 							ParseLorExpr: int (), <./tcl/generic/tclParseExpr.c 437>
+ 2435 								HERE: <>
+ 2436 								ParseLandExpr: int (), <./tcl/generic/tclParseExpr.c 497>
+ 2437 									HERE: <>
+ 2438 									ParseBitOrExpr: int (), <./tcl/generic/tclParseExpr.c 557>
+ 2439 										HERE: <>
+ 2440 										ParseBitXorExpr: int (), <./tcl/generic/tclParseExpr.c 618>
+ 2441 											HERE: <>
+ 2442 											ParseBitAndExpr: int (), <./tcl/generic/tclParseExpr.c 679>
+ 2443 												HERE: <>
+ 2444 												ParseEqualityExpr: int (), <./tcl/generic/tclParseExpr.c 739>
+ 2445 													HERE: <>
+ 2446 													ParseRelationalExpr: int (), <./tcl/generic/tclParseExpr.c 801>
+ 2447 														HERE: <>
+ 2448 														ParseShiftExpr: int (), <./tcl/generic/tclParseExpr.c 869>
+ 2449 															HERE: <>
+ 2450 															ParseAddExpr: int (), <./tcl/generic/tclParseExpr.c 931>
+ 2451 																HERE: <>
+ 2452 																ParseMultiplyExpr: int (), <./tcl/generic/tclParseExpr.c 993>
+ 2453 																	HERE: <>
+ 2454 																	ParseUnaryExpr: int (), <./tcl/generic/tclParseExpr.c 1055>
+ 2455 																		HERE: <>
+ 2456 																		GetLexeme: 2414
+ 2457 																		ParseUnaryExpr: 2454
+ 2458 																		PrependSubExprTokens: void (), <./tcl/generic/tclParseExpr.c 1779>
+ 2459 																			TclExpandTokenArray: <>
+ 2460 																			memmove: <>
+ 2461 																		ParsePrimaryExpr: int (), <./tcl/generic/tclParseExpr.c 1118>
+ 2462 																			HERE: <>
+ 2463 																			GetLexeme: 2414
+ 2464 																			ParseCondExpr: 2432
+ 2465 																			TclExpandTokenArray: <>
+ 2466 																			Tcl_ParseVarName: <>
+ 2467 																			Tcl_ParseQuotedString: <>
+ 2468 																			memmove: <>
+ 2469 																			Tcl_ParseCommand: int (), <./tcl/generic/tclParse.c 213>
+ 2470 																			ckfree: <>
+ 2471 																			Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2472 																			Tcl_ParseBraces: <>
+ 2473 																			LogSyntaxError: void (), <./tcl/generic/tclParseExpr.c 1839>
+ 2474 																				sprintf: <>
+ 2475 																				Tcl_AppendStringsToObj: <>
+ 2476 																				Tcl_GetObjResult: <>
+ 2477 																	GetLexeme: 2414
+ 2478 																	PrependSubExprTokens: 2458
+ 2479 																GetLexeme: 2414
+ 2480 																PrependSubExprTokens: 2458
+ 2481 															GetLexeme: 2414
+ 2482 															PrependSubExprTokens: 2458
+ 2483 														GetLexeme: 2414
+ 2484 														PrependSubExprTokens: 2458
+ 2485 													GetLexeme: 2414
+ 2486 													PrependSubExprTokens: 2458
+ 2487 												GetLexeme: 2414
+ 2488 												PrependSubExprTokens: 2458
+ 2489 											GetLexeme: 2414
+ 2490 											PrependSubExprTokens: 2458
+ 2491 										GetLexeme: 2414
+ 2492 										PrependSubExprTokens: 2458
+ 2493 									GetLexeme: 2414
+ 2494 									PrependSubExprTokens: 2458
+ 2495 								GetLexeme: 2414
+ 2496 								PrependSubExprTokens: 2458
+ 2497 							TclExpandTokenArray: <>
+ 2498 							memmove: <>
+ 2499 							GetLexeme: 2414
+ 2500 							ParseCondExpr: 2432
+ 2501 							LogSyntaxError: 2473
+ 2502 						LogSyntaxError: 2473
+ 2503 						ckfree: <>
+ 2504 					Tcl_AddErrorInfo: <>
+ 2505 					PrintParse: void (), <./tcl/generic/tclTest.c 2335>
+ 2506 						Tcl_GetObjResult: <>
+ 2507 						Tcl_ListObjAppendElement: <>
+ 2508 						Tcl_NewStringObj: 159
+ 2509 						Tcl_NewIntObj: <>
+ 2510 					Tcl_FreeParse: <>
+ 2511 				TestexprstringCmd: int (), <./tcl/generic/tclTest.c 1699>
+ 2512 					Tcl_AppendResult: <>
+ 2513 					Tcl_ExprString: <>
+ 2514 				TestfeventCmd: int (), <./tcl/generic/tclTest.c 3191>
+ 2515 					Tcl_AppendResult: <>
+ 2516 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2517 					Tcl_GlobalEval: 1330
+ 2518 					Tcl_SetObjResult: <>
+ 2519 					Tcl_GetObjResult: <>
+ 2520 					Tcl_DeleteInterp: 1078
+ 2521 					Tcl_CreateInterp: 794
+ 2522 					Tcl_GetChannel: 1151
+ 2523 					Tcl_RegisterChannel: 533
+ 2524 				TestfileCmd: int (), <./tcl/generic/tclTest.c 3342>
+ 2525 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2526 					Tcl_DStringInit: <>
+ 2527 					Tcl_TranslateFileName: 1923
+ 2528 					TclpRenameFile: int (), <./tcl/unix/tclUnixFCmd.c 189>
+ 2529 						TCHAR: <>
+ 2530 						Tcl_WinUtfToTChar: TCHAR * (), <./tcl/win/tclWin32Dll.c 470>
+ 2531 							TCHAR: <>
+ 2532 							Tcl_UtfToExternalDString: 1226
+ 2533 						DoRenameFile: int (), <./tcl/win/tclWinFCmd.c 169>
+ 2534 							TCHAR: <>
+ 2535 							Tcl_DStringValue: <>
+ 2536 							TclWinConvertError: 1691
+ 2537 							GetLastError: <>
+ 2538 							Tcl_WinTCharToUtf: 1671
+ 2539 							strncmp: <>
+ 2540 							Tcl_DStringLength: <>
+ 2541 							Tcl_DStringFree: <>
+ 2542 							Tcl_SplitPath: 1740
+ 2543 							Tcl_SetErrno: 231
+ 2544 							strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2545 							ckfree: <>
+ 2546 							Tcl_GetErrno: int (), <./tcl/generic/tclIOUtil.c 366>
+ 2547 							DoRemoveDirectory: int (), <./tcl/win/tclWinFCmd.c 772>
+ 2548 								TCHAR: <>
+ 2549 								Tcl_DStringValue: <>
+ 2550 								TclWinConvertError: 1691
+ 2551 								GetLastError: <>
+ 2552 								Tcl_SetErrno: 231
+ 2553 								Tcl_GetErrno: int (), <./tcl/generic/tclIOUtil.c 366>
+ 2554 								TclWinGetPlatformId: 1848
+ 2555 								Tcl_DStringInit: <>
+ 2556 								strlen: 6
+ 2557 								Tcl_DStringAppend: <>
+ 2558 								FindFirstFileA: <>
+ 2559 								strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2560 								FindNextFileA: <>
+ 2561 								FindClose: <>
+ 2562 								Tcl_DStringFree: <>
+ 2563 								TraverseWinTree: int (), <./tcl/win/tclWinFCmd.c 926>
+ 2564 									TCHAR: <>
+ 2565 									Tcl_DStringValue: <>
+ 2566 									Tcl_DStringLength: <>
+ 2567 									Tcl_DStringAppend: <>
+ 2568 									Tcl_DStringSetLength: <>
+ 2569 									TclWinConvertError: 1691
+ 2570 									GetLastError: <>
+ 2571 									FindClose: <>
+ 2572 									Tcl_UniCharLen: <>
+ 2573 									strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2574 									strlen: 6
+ 2575 									TraverseWinTree: 2563
+ 2576 									Tcl_WinTCharToUtf: 1671
+ 2577 								TraversalDelete: int (), <./tcl/win/tclWinFCmd.c 1185>
+ 2578 									TCHAR: <>
+ 2579 									DoDeleteFile: int (), <./tcl/win/tclWinFCmd.c 546>
+ 2580 										TCHAR: <>
+ 2581 										Tcl_DStringValue: <>
+ 2582 										TclWinConvertError: 1691
+ 2583 										GetLastError: <>
+ 2584 										Tcl_SetErrno: 231
+ 2585 										Tcl_GetErrno: int (), <./tcl/generic/tclIOUtil.c 366>
+ 2586 									DoRemoveDirectory: 2547
+ 2587 									Tcl_DStringValue: <>
+ 2588 									Tcl_WinTCharToUtf: 1671
+ 2589 								Tcl_WinTCharToUtf: 1671
+ 2590 						Tcl_DStringFree: <>
+ 2591 						Tcl_UtfToExternalDString: 1226
+ 2592 						DoRenameFile: int (), <./tcl/mac/tclMacFCmd.c 155>
+ 2593 							FSpLocationFromPath: 1975
+ 2594 							strlen: 6
+ 2595 							FSpGetDirectoryID: <>
+ 2596 							GetFileSpecs: OSErr (), <./tcl/mac/tclMacFCmd.c 1053>
+ 2597 								Tcl_DStringInit: <>
+ 2598 								Tcl_SplitPath: 1740
+ 2599 								Tcl_JoinPath: 147
+ 2600 								FSpLocationFromPath: 1975
+ 2601 								strlen: 6
+ 2602 								Tcl_DStringFree: <>
+ 2603 								ckfree: <>
+ 2604 								FSpGetDirectoryID: <>
+ 2605 							MoveRename: OSErr (), <./tcl/mac/tclMacFCmd.c 287>
+ 2606 								FSpGetFLockCompat: OSErr (), <./tcl/mac/tclMacFCmd.c 1117>
+ 2607 									PBGetCatInfoSync: <>
+ 2608 								FSpRstFLockCompat: <>
+ 2609 								FSpGetDirectoryID: <>
+ 2610 								FSpRenameCompat: <>
+ 2611 								Pstrequal: int (), <./tcl/mac/tclMacFCmd.c 1157>
+ 2612 								FSpCatMoveCompat: <>
+ 2613 								GenerateUniqueName: OSErr (), <./tcl/mac/tclMacFCmd.c 990>
+ 2614 									PBGetCatInfoSync: <>
+ 2615 								FSMakeFSSpecCompat: <>
+ 2616 								FSpSetFLockCompat: <>
+ 2617 							FSpGetFLockCompat: 2606
+ 2618 							FSpRstFLockCompat: <>
+ 2619 							DoRemoveDirectory: int (), <./tcl/mac/tclMacFCmd.c 881>
+ 2620 								FSpLocationFromPath: 1975
+ 2621 								strlen: 6
+ 2622 								FSpGetDirectoryID: <>
+ 2623 								FSpDeleteCompat: <>
+ 2624 								FSpRstFLockCompat: <>
+ 2625 								PBGetCatInfoSync: <>
+ 2626 								DeleteDirectory: <>
+ 2627 								Tcl_UtfToExternalDString: 1226
+ 2628 								FSpSetFLockCompat: <>
+ 2629 								TclMacOSErrorToPosixError: int (), <./tcl/mac/tclMacFile.c 960>
+ 2630 							FSpDirCreateCompat: <>
+ 2631 							FSpSetFLockCompat: <>
+ 2632 							GenerateUniqueName: 2613
+ 2633 							FSpRenameCompat: <>
+ 2634 							FSMakeFSSpecCompat: <>
+ 2635 							FSpDeleteCompat: <>
+ 2636 							TclMacOSErrorToPosixError: 2629
+ 2637 						Tcl_DStringValue: <>
+ 2638 						DoRenameFile: int (), <./tcl/unix/tclUnixFCmd.c 208>
+ 2639 							rename: <>
+ 2640 							realpath: <>
+ 2641 							strncmp: <>
+ 2642 							strlen: 6
+ 2643 							opendir: DIR * (), <./tcl/compat/opendir.c 24>
+ 2644 								open: <>
+ 2645 								ckalloc: <>
+ 2646 								close: <>
+ 2647 							readdir: <>
+ 2648 							strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2649 							closedir: <>
+ 2650 					TclpCopyFile: int (), <./tcl/unix/tclUnixFCmd.c 316>
+ 2651 						Tcl_WinUtfToTChar: 2530
+ 2652 						DoCopyFile: int (), <./tcl/win/tclWinFCmd.c 450>
+ 2653 							TCHAR: <>
+ 2654 							Tcl_DStringValue: <>
+ 2655 							TclWinConvertError: 1691
+ 2656 							GetLastError: <>
+ 2657 							Tcl_GetErrno: int (), <./tcl/generic/tclIOUtil.c 366>
+ 2658 							Tcl_SetErrno: 231
+ 2659 						Tcl_DStringFree: <>
+ 2660 						Tcl_UtfToExternalDString: 1226
+ 2661 						DoCopyFile: int (), <./tcl/mac/tclMacFCmd.c 428>
+ 2662 							FSpLocationFromPath: 1975
+ 2663 							strlen: 6
+ 2664 							GetFileSpecs: 2596
+ 2665 							FSpGetFLockCompat: 2606
+ 2666 							FSpRstFLockCompat: <>
+ 2667 							GenerateUniqueName: 2613
+ 2668 							FSpRenameCompat: <>
+ 2669 							FSpFileCopy: <>
+ 2670 							FSMakeFSSpecCompat: <>
+ 2671 							FSpDeleteCompat: <>
+ 2672 							FSpSetFLockCompat: <>
+ 2673 							TclMacOSErrorToPosixError: 2629
+ 2674 						Tcl_DStringValue: <>
+ 2675 						DoCopyFile: int (), <./tcl/unix/tclUnixFCmd.c 332>
+ 2676 							Tcl_DStringValue: <>
+ 2677 							lstat: <>
+ 2678 							S_ISDIR: if (), <./tcl/unix/tclUnixFCmd.c 788>
+ 2679 							unlink: <>
+ 2680 							readlink: <>
+ 2681 							symlink: <>
+ 2682 							mknod: <>
+ 2683 							CopyFileAtts: <>
+ 2684 							mkfifo: <>
+ 2685 							CopyFile: <>
+ 2686 					TclpDeleteFile: int (), <./tcl/mac/tclMacFCmd.c 519>
+ 2687 						Tcl_WinUtfToTChar: 2530
+ 2688 						DoDeleteFile: 2579
+ 2689 						Tcl_DStringFree: <>
+ 2690 						Tcl_UtfToExternalDString: 1226
+ 2691 						DoDeleteFile: int (), <./tcl/mac/tclMacFCmd.c 532>
+ 2692 							FSpLocationFromPath: 1975
+ 2693 							strlen: 6
+ 2694 							FSpGetDirectoryID: <>
+ 2695 							FSpDeleteCompat: <>
+ 2696 							FSpRstFLockCompat: <>
+ 2697 							FSpSetFLockCompat: <>
+ 2698 							TclMacOSErrorToPosixError: 2629
+ 2699 						Tcl_DStringValue: <>
+ 2700 					TclpCreateDirectory: int (), <./tcl/mac/tclMacFCmd.c 595>
+ 2701 						Tcl_WinUtfToTChar: 2530
+ 2702 						DoCreateDirectory: int (), <./tcl/win/tclWinFCmd.c 658>
+ 2703 							TCHAR: <>
+ 2704 							Tcl_DStringValue: <>
+ 2705 							GetLastError: <>
+ 2706 							TclWinConvertError: 1691
+ 2707 						Tcl_DStringFree: <>
+ 2708 						Tcl_UtfToExternalDString: 1226
+ 2709 						DoCreateDirectory: int (), <./tcl/mac/tclMacFCmd.c 608>
+ 2710 							FSpLocationFromPath: 1975
+ 2711 							strlen: 6
+ 2712 							FSpDirCreateCompat: <>
+ 2713 							TclMacOSErrorToPosixError: 2629
+ 2714 						Tcl_DStringValue: <>
+ 2715 					TclpCopyDirectory: int (), <./tcl/mac/tclMacFCmd.c 656>
+ 2716 						Tcl_WinUtfToTChar: 2530
+ 2717 						TraverseWinTree: 2563
+ 2718 						TraversalCopy: int (), <./tcl/win/tclWinFCmd.c 1117>
+ 2719 							TCHAR: <>
+ 2720 							DoCopyFile: 2652
+ 2721 							DoCreateDirectory: 2702
+ 2722 							Tcl_DStringValue: <>
+ 2723 							TclWinConvertError: 1691
+ 2724 							GetLastError: <>
+ 2725 							Tcl_WinTCharToUtf: 1671
+ 2726 						Tcl_DStringFree: <>
+ 2727 						Tcl_UtfToExternalDString: 1226
+ 2728 						DoCopyDirectory: int (), <./tcl/mac/tclMacFCmd.c 677>
+ 2729 							FSpLocationFromPath: 1975
+ 2730 							strlen: 6
+ 2731 							FSpGetDirectoryID: <>
+ 2732 							GetFileSpecs: 2596
+ 2733 							Pstrequal: int (), <./tcl/mac/tclMacFCmd.c 1157>
+ 2734 							FSpGetFLockCompat: 2606
+ 2735 							FSpRstFLockCompat: <>
+ 2736 							GenerateUniqueName: 2613
+ 2737 							FSMakeFSSpecCompat: <>
+ 2738 							FSpDirCreateCompat: <>
+ 2739 							FSpDirectoryCopy: <>
+ 2740 							CopyErrHandler: pascal Boolean (), <./tcl/mac/tclMacFCmd.c 819>
+ 2741 							FSpRenameCompat: <>
+ 2742 							FSpCatMoveCompat: <>
+ 2743 							FSpSetFLockCompat: <>
+ 2744 							FSpDeleteCompat: <>
+ 2745 							TclMacOSErrorToPosixError: 2629
+ 2746 							Tcl_ExternalToUtfDString: 1208
+ 2747 						Tcl_DStringValue: <>
+ 2748 					TclpRemoveDirectory: int (), <./tcl/mac/tclMacFCmd.c 859>
+ 2749 						Tcl_WinUtfToTChar: 2530
+ 2750 						DoRemoveDirectory: 2547
+ 2751 						Tcl_DStringFree: <>
+ 2752 						Tcl_UtfToExternalDString: 1226
+ 2753 						DoRemoveDirectory: 2619
+ 2754 						Tcl_DStringValue: <>
+ 2755 					Tcl_DStringValue: <>
+ 2756 					Tcl_AppendResult: <>
+ 2757 					Tcl_ErrnoId: 244
+ 2758 					Tcl_DStringFree: <>
+ 2759 				TestgetassocdataCmd: int (), <./tcl/generic/tclTest.c 1731>
+ 2760 					Tcl_AppendResult: <>
+ 2761 					Tcl_GetAssocData: 486
+ 2762 				TestgetplatformCmd: int (), <./tcl/generic/tclTest.c 1769>
+ 2763 					TclWinGetPlatform: TclPlatformType * (), <./tcl/win/tclWin32Dll.c 375>
+ 2764 					Tcl_AppendResult: <>
+ 2765 				TestgetvarfullnameCmd: int (), <./tcl/generic/tclTest.c 3427>
+ 2766 					Tcl_WrongNumArgs: <>
+ 2767 					Tcl_GetString: <>
+ 2768 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2769 					Tcl_FindNamespace: <>
+ 2770 					Tcl_PushCallFrame: <>
+ 2771 					Tcl_FindNamespaceVar: <>
+ 2772 					Tcl_PopCallFrame: <>
+ 2773 					Tcl_GetVariableFullName: <>
+ 2774 					Tcl_GetObjResult: <>
+ 2775 				TestinterpdeleteCmd: int (), <./tcl/generic/tclTest.c 1814>
+ 2776 					Tcl_AppendResult: <>
+ 2777 					Tcl_GetSlave: 2305
+ 2778 					Tcl_DeleteInterp: 1078
+ 2779 				TestlinkCmd: int (), <./tcl/generic/tclTest.c 1860>
+ 2780 					Tcl_AppendResult: <>
+ 2781 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2782 					Tcl_UnlinkVar: void (), <./tcl/generic/tclLink.c 148>
+ 2783 						Tcl_VarTraceInfo: <>
+ 2784 						LinkTraceProc: 830
+ 2785 						Tcl_UntraceVar: <>
+ 2786 						ckfree: <>
+ 2787 					Tcl_GetBoolean: <>
+ 2788 					Tcl_LinkVar: 820
+ 2789 					TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 2790 					Tcl_AppendElement: 1164
+ 2791 					Tcl_PrintDouble: <>
+ 2792 					Tcl_GetInt: 840
+ 2793 					Tcl_GetDouble: <>
+ 2794 					ckfree: <>
+ 2795 					ckalloc: <>
+ 2796 					strlen: 6
+ 2797 					strcpy: <>
+ 2798 					Tcl_UpdateLinkedVar: void (), <./tcl/generic/tclLink.c 186>
+ 2799 						Tcl_VarTraceInfo: <>
+ 2800 						LinkTraceProc: 830
+ 2801 						Tcl_SetVar: <>
+ 2802 						StringValue: 825
+ 2803 				TestlocaleCmd: int (), <./tcl/generic/tclTest.c 2030>
+ 2804 					Tcl_WrongNumArgs: <>
+ 2805 					Tcl_GetIndexFromObj: 892
+ 2806 					Tcl_GetString: <>
+ 2807 					setlocale: <>
+ 2808 					Tcl_SetStringObj: <>
+ 2809 					Tcl_GetObjResult: <>
+ 2810 				TestpanicCmd: int (), <./tcl/generic/tclTest.c 3263>
+ 2811 					Tcl_Merge: char * (), <./tcl/generic/tclUtil.c 823>
+ 2812 					panic: 14
+ 2813 					ckfree: <>
+ 2814 				TestparserObjCmd: int (), <./tcl/generic/tclTest.c 2222>
+ 2815 					Tcl_WrongNumArgs: <>
+ 2816 					Tcl_GetStringFromObj: <>
+ 2817 					Tcl_GetIntFromObj: <>
+ 2818 					Tcl_ParseCommand: int (), <./tcl/generic/tclParse.c 213>
+ 2819 					Tcl_AddErrorInfo: <>
+ 2820 					PrintParse: 2505
+ 2821 					Tcl_FreeParse: <>
+ 2822 				TestparsevarObjCmd: int (), <./tcl/generic/tclTest.c 2419>
+ 2823 					Tcl_WrongNumArgs: <>
+ 2824 					Tcl_GetString: <>
+ 2825 					Tcl_ParseVar: <>
+ 2826 					Tcl_AppendElement: 1164
+ 2827 				TestparsevarnameObjCmd: int (), <./tcl/generic/tclTest.c 2460>
+ 2828 					Tcl_WrongNumArgs: <>
+ 2829 					Tcl_GetStringFromObj: <>
+ 2830 					Tcl_GetIntFromObj: <>
+ 2831 					Tcl_ParseVarName: <>
+ 2832 					Tcl_AddErrorInfo: <>
+ 2833 					PrintParse: 2505
+ 2834 					Tcl_FreeParse: <>
+ 2835 				TestregexpObjCmd: int (), <./tcl/generic/tclTest.c 2525>
+ 2836 					Tcl_GetString: <>
+ 2837 					Tcl_GetIndexFromObj: 892
+ 2838 					Tcl_WrongNumArgs: <>
+ 2839 					Tcl_GetStringFromObj: <>
+ 2840 					TestregexpXflags: void (), <./tcl/generic/tclTest.c 2755>
+ 2841 					Tcl_GetRegExpFromObj: 178
+ 2842 					TclRegAbout: int (), <./tcl/generic/tclRegexp.c 622>
+ 2843 						Tcl_ResetResult: <>
+ 2844 						sprintf: <>
+ 2845 						Tcl_AppendElement: 1164
+ 2846 						Tcl_AppendResult: <>
+ 2847 					Tcl_RegExpExecObj: int (), <./tcl/generic/tclRegexp.c 434>
+ 2848 						Tcl_GetUnicode: <>
+ 2849 						Tcl_GetCharLength: <>
+ 2850 						RegExpExecUniChar: 209
+ 2851 					Tcl_SetIntObj: <>
+ 2852 					Tcl_GetObjResult: <>
+ 2853 					TclRegExpRangeUniChar: void (), <./tcl/generic/tclRegexp.c 353>
+ 2854 					sprintf: <>
+ 2855 					Tcl_SetVar: <>
+ 2856 					Tcl_AppendResult: <>
+ 2857 					Tcl_RegExpGetInfo: void (), <./tcl/generic/tclRegexp.c 524>
+ 2858 					Tcl_NewLongObj: <>
+ 2859 					Tcl_NewListObj: 921
+ 2860 					Tcl_GetRange: <>
+ 2861 					Tcl_NewObj: 450
+ 2862 					Tcl_ObjSetVar2: <>
+ 2863 					Tcl_DecrRefCount: <>
+ 2864 				TestsetassocdataCmd: int (), <./tcl/generic/tclTest.c 2857>
+ 2865 					Tcl_AppendResult: <>
+ 2866 					ckalloc: <>
+ 2867 					strlen: 6
+ 2868 					strcpy: <>
+ 2869 					Tcl_GetAssocData: 486
+ 2870 					CleanupTestSetassocdataTests: void (), <./tcl/generic/tclTest.c 2197>
+ 2871 						ckfree: <>
+ 2872 					ckfree: <>
+ 2873 					Tcl_SetAssocData: 489
+ 2874 				TestsetCmd: int (), <./tcl/generic/tclTest.c 3742>
+ 2875 				TestsetobjerrorcodeCmd: int (), <./tcl/generic/tclTest.c 3153>
+ 2876 					Tcl_ConcatObj: Tcl_Obj * (), <./tcl/generic/tclUtil.c 998>
+ 2877 					Tcl_NewObj: 450
+ 2878 					Tcl_IncrRefCount: <>
+ 2879 					Tcl_SetObjErrorCode: void (), <./tcl/generic/tclResult.c 960>
+ 2880 						Tcl_SetVar2Ex: <>
+ 2881 					Tcl_DecrRefCount: <>
+ 2882 				TestsetplatformCmd: int (), <./tcl/generic/tclTest.c 2910>
+ 2883 					TclWinGetPlatform: 2763
+ 2884 					Tcl_AppendResult: <>
+ 2885 					strlen: 6
+ 2886 					strncmp: <>
+ 2887 				TestsetrecursionlimitCmd: int (), <./tcl/generic/tclTest.c 2965>
+ 2888 					Tcl_WrongNumArgs: <>
+ 2889 					Tcl_GetIntFromObj: <>
+ 2890 					Tcl_SetRecursionLimit: int (), <./tcl/generic/tclBasic.c 4172>
+ 2891 					Tcl_SetIntObj: <>
+ 2892 					Tcl_GetObjResult: <>
+ 2893 				TeststaticpkgCmd: int (), <./tcl/generic/tclTest.c 3006>
+ 2894 					Tcl_AppendResult: <>
+ 2895 					Tcl_GetInt: 840
+ 2896 					Tcl_StaticPackage: void (), <./tcl/generic/tclLoad.c 437>
+ 2897 						Tcl_MutexLock: 98
+ 2898 						strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2899 						Tcl_MutexUnlock: 109
+ 2900 						ckalloc: <>
+ 2901 						strlen: 6
+ 2902 						strcpy: <>
+ 2903 						Tcl_GetAssocData: 486
+ 2904 						Tcl_SetAssocData: 489
+ 2905 						LoadCleanupProc: void (), <./tcl/generic/tclLoad.c 599>
+ 2906 							ckfree: <>
+ 2907 					StaticInitProc: int (), <./tcl/generic/tclTest.c 3031>
+ 2908 						Tcl_SetVar: <>
+ 2909 				TesttranslatefilenameCmd: int (), <./tcl/generic/tclTest.c 3057>
+ 2910 					Tcl_AppendResult: <>
+ 2911 					Tcl_TranslateFileName: 1923
+ 2912 					Tcl_DStringFree: <>
+ 2913 				TestupvarCmd: int (), <./tcl/generic/tclTest.c 3099>
+ 2914 					Tcl_AppendResult: <>
+ 2915 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2916 					Tcl_UpVar: <>
+ 2917 					Tcl_UpVar2: <>
+ 2918 				Tcl_CreateMathFunc: <>
+ 2919 				TestMathFunc: int (), <./tcl/generic/tclTest.c 2093>
+ 2920 				TestMathFunc2: int (), <./tcl/generic/tclTest.c 2123>
+ 2921 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2922 				TclThread_Init: 1341
+ 2923 				TclplatformtestInit: int (), <./tcl/unix/tclUnixTest.c 105>
+ 2924 					Tcl_CreateCommand: 857
+ 2925 					TesteventloopCmd: int (), <./tcl/win/tclWinTest.c 77>
+ 2926 						Tcl_AppendResult: <>
+ 2927 						strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2928 						Tcl_SetServiceMode: int (), <./tcl/generic/tclNotify.c 700>
+ 2929 							TCL_TSD_INIT: <>
+ 2930 							Tcl_ServiceModeHook: void (), <./tcl/unix/tclUnixNotfy.c 378>
+ 2931 								TCL_TSD_INIT: <>
+ 2932 								CreateWindowA: <>
+ 2933 								TclWinGetTclInstance: 774
+ 2934 								Tcl_AlertNotifier: 1522
+ 2935 						GetMessage: <>
+ 2936 						PostQuitMessage: <>
+ 2937 						TranslateMessage: <>
+ 2938 						DispatchMessage: <>
+ 2939 					Tcl_CreateObjCommand: 879
+ 2940 					TestvolumetypeCmd: int (), <./tcl/win/tclWinTest.c 154>
+ 2941 						Tcl_WrongNumArgs: <>
+ 2942 						Tcl_GetString: <>
+ 2943 						GetVolumeInformationA: <>
+ 2944 						Tcl_AppendResult: <>
+ 2945 						TclWinConvertError: 1691
+ 2946 						GetLastError: <>
+ 2947 						Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2948 					DebuggerCmd: int (), <./tcl/mac/tclMacTest.c 88>
+ 2949 						Debugger: <>
+ 2950 					WriteTextResource: int (), <./tcl/mac/tclMacTest.c 117>
+ 2951 						strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2952 						atoi: <>
+ 2953 						FSpLocationFromPath: 1975
+ 2954 						strlen: 6
+ 2955 						Tcl_AppendResult: <>
+ 2956 						FSpCreateResFile: <>
+ 2957 						FSpOpenResFile: <>
+ 2958 						UseResFile: <>
+ 2959 						UniqueID: <>
+ 2960 						strcpy: <>
+ 2961 						c2pstr: <>
+ 2962 						NewHandle: <>
+ 2963 						HLock: <>
+ 2964 						HUnlock: <>
+ 2965 						AddResource: <>
+ 2966 						UpdateResFile: <>
+ 2967 						SetResAttrs: <>
+ 2968 						Get1Resource: <>
+ 2969 						CloseResFile: <>
+ 2970 					TestfilehandlerCmd: int (), <./tcl/unix/tclUnixTest.c 146>
+ 2971 						Tcl_AppendResult: <>
+ 2972 						Tcl_GetInt: 840
+ 2973 						strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 2974 						TclpCloseFile: int (), <./tcl/unix/tclUnixPipe.c 266>
+ 2975 							TclInExit: 278
+ 2976 							GetStdHandle: <>
+ 2977 							CloseHandle: <>
+ 2978 							TclWinConvertError: 1691
+ 2979 							GetLastError: <>
+ 2980 							ckfree: <>
+ 2981 							panic: 14
+ 2982 							GetFd: <>
+ 2983 							Tcl_DeleteFileHandler: 335
+ 2984 							close: <>
+ 2985 						sprintf: <>
+ 2986 						Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 2987 						TclpCreatePipe: int (), <./tcl/unix/tclUnixPipe.c 229>
+ 2988 							CreatePipe: <>
+ 2989 							TclWinMakeFile: TclFile (), <./tcl/win/tclWinPipe.c 466>
+ 2990 								ckalloc: <>
+ 2991 							TclWinConvertError: 1691
+ 2992 							GetLastError: <>
+ 2993 							pipe: <>
+ 2994 							fcntl: <>
+ 2995 							MakeFile: <>
+ 2996 						Tcl_PosixError: 241
+ 2997 						fcntl: <>
+ 2998 						GetFd: <>
+ 2999 						Tcl_CreateFileHandler: void (), <./tcl/unix/tclUnixNotfy.c 401>
+ 3000 							TCL_TSD_INIT: <>
+ 3001 							Tcl_CreateFileHandler: 2999
+ 3002 							ckalloc: <>
+ 3003 						TestFileHandlerProc: void (), <./tcl/unix/tclUnixTest.c 340>
+ 3004 						Tcl_DeleteFileHandler: 335
+ 3005 						read: if (, <./tcl/generic/tclIOGT.c 722>
+ 3006 						memset: <>
+ 3007 						write: <>
+ 3008 						TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 3009 						Tcl_DoOneEvent: 1540
+ 3010 						TclUnixWaitForFile: int (), <./tcl/unix/tclUnixChan.c 2612>
+ 3011 						Tcl_AppendElement: 1164
+ 3012 					TestfilewaitCmd: int (), <./tcl/unix/tclUnixTest.c 373>
+ 3013 						Tcl_AppendResult: <>
+ 3014 						Tcl_GetChannel: 1151
+ 3015 						strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3016 						Tcl_GetChannelHandle: int (), <./tcl/generic/tclIO.c 1564>
+ 3017 						Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 3018 						Tcl_GetInt: 840
+ 3019 						TclUnixWaitForFile: int (), <./tcl/unix/tclUnixChan.c 2612>
+ 3020 						Tcl_AppendElement: 1164
+ 3021 					TestfindexecutableCmd: int (), <./tcl/unix/tclUnixTest.c 442>
+ 3022 						Tcl_AppendResult: <>
+ 3023 						Tcl_FindExecutable: 12
+ 3024 						Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 3025 						ckfree: <>
+ 3026 					TestgetopenfileCmd: int (), <./tcl/unix/tclUnixTest.c 496>
+ 3027 						Tcl_AppendResult: <>
+ 3028 						Tcl_GetOpenFile: <>
+ 3029 						atoi: <>
+ 3030 					TestgetdefencdirCmd: int (), <./tcl/unix/tclUnixTest.c 585>
+ 3031 						Tcl_AppendResult: <>
+ 3032 					TestsetdefencdirCmd: int (), <./tcl/unix/tclUnixTest.c 541>
+ 3033 						Tcl_AppendResult: <>
+ 3034 						ckfree: <>
+ 3035 						ckalloc: <>
+ 3036 						strlen: 6
+ 3037 						strcpy: <>
+ 3038 					TestalarmCmd: int (), <./tcl/unix/tclUnixTest.c 622>
+ 3039 						Tcl_GetInt: 840
+ 3040 						AlarmHandler: void (), <./tcl/unix/tclUnixTest.c 678>
+ 3041 						memset: <>
+ 3042 						sigaction: <>
+ 3043 						Tcl_AppendResult: <>
+ 3044 						Tcl_PosixError: 241
+ 3045 						alarm: <>
+ 3046 					TestgotsigCmd: int (), <./tcl/unix/tclUnixTest.c 699>
+ 3047 						Tcl_AppendResult: <>
+ 3048 			Tcl_StaticPackage: 2896
+ 3049 			TclObjTest_Init: int (), <./tcl/generic/tclTestObj.c 89>
+ 3050 				Tcl_CreateObjCommand: 879
+ 3051 				TestbooleanobjCmd: int (), <./tcl/generic/tclTestObj.c 134>
+ 3052 					Tcl_WrongNumArgs: <>
+ 3053 					Tcl_GetString: <>
+ 3054 					GetVariableIndex: int (), <./tcl/generic/tclTestObj.c 1103>
+ 3055 						Tcl_GetInt: 840
+ 3056 						Tcl_ResetResult: <>
+ 3057 						Tcl_AppendToObj: <>
+ 3058 						Tcl_GetObjResult: <>
+ 3059 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3060 					Tcl_GetBooleanFromObj: <>
+ 3061 					Tcl_IsShared: if (), <./tcl/generic/tclObj.c 1918>
+ 3062 					Tcl_SetBooleanObj: <>
+ 3063 					SetVarToObj: void (), <./tcl/generic/tclTestObj.c 1073>
+ 3064 						Tcl_DecrRefCount: <>
+ 3065 						Tcl_IncrRefCount: <>
+ 3066 					Tcl_NewBooleanObj: <>
+ 3067 					Tcl_SetObjResult: <>
+ 3068 					CheckIfVarUnset: int (), <./tcl/generic/tclTestObj.c 1144>
+ 3069 						sprintf: <>
+ 3070 						Tcl_ResetResult: <>
+ 3071 						Tcl_AppendToObj: <>
+ 3072 						Tcl_GetObjResult: <>
+ 3073 					Tcl_AppendStringsToObj: <>
+ 3074 					Tcl_GetObjResult: <>
+ 3075 				TestconvertobjCmd: int (), <./tcl/generic/tclTestObj.c 229>
+ 3076 					Tcl_WrongNumArgs: <>
+ 3077 					Tcl_GetString: <>
+ 3078 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3079 					Tcl_GetDoubleFromObj: <>
+ 3080 					sprintf: <>
+ 3081 					Tcl_AppendToObj: <>
+ 3082 					Tcl_GetObjResult: <>
+ 3083 					Tcl_AppendStringsToObj: <>
+ 3084 				TestdoubleobjCmd: int (), <./tcl/generic/tclTestObj.c 285>
+ 3085 					Tcl_WrongNumArgs: <>
+ 3086 					Tcl_GetString: <>
+ 3087 					GetVariableIndex: 3054
+ 3088 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3089 					Tcl_GetDouble: <>
+ 3090 					Tcl_IsShared: if (), <./tcl/generic/tclObj.c 1918>
+ 3091 					Tcl_SetDoubleObj: <>
+ 3092 					SetVarToObj: 3063
+ 3093 					Tcl_NewDoubleObj: <>
+ 3094 					Tcl_SetObjResult: <>
+ 3095 					CheckIfVarUnset: 3068
+ 3096 					Tcl_GetDoubleFromObj: <>
+ 3097 					Tcl_AppendStringsToObj: <>
+ 3098 					Tcl_GetObjResult: <>
+ 3099 				TestintobjCmd: int (), <./tcl/generic/tclTestObj.c 490>
+ 3100 					Tcl_WrongNumArgs: <>
+ 3101 					Tcl_GetString: <>
+ 3102 					GetVariableIndex: 3054
+ 3103 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3104 					Tcl_GetInt: 840
+ 3105 					Tcl_IsShared: if (), <./tcl/generic/tclObj.c 1918>
+ 3106 					Tcl_SetIntObj: <>
+ 3107 					SetVarToObj: 3063
+ 3108 					Tcl_NewIntObj: <>
+ 3109 					Tcl_SetObjResult: <>
+ 3110 					Tcl_SetLongObj: <>
+ 3111 					Tcl_NewLongObj: <>
+ 3112 					CheckIfVarUnset: 3068
+ 3113 					Tcl_GetLongFromObj: <>
+ 3114 					Tcl_AppendToObj: <>
+ 3115 					Tcl_GetObjResult: <>
+ 3116 					Tcl_GetIntFromObj: <>
+ 3117 					Tcl_ResetResult: <>
+ 3118 					Tcl_AppendStringsToObj: <>
+ 3119 				TestindexobjCmd: int (), <./tcl/generic/tclTestObj.c 400>
+ 3120 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3121 					Tcl_GetString: <>
+ 3122 					Tcl_GetIndexFromObj: 892
+ 3123 					Tcl_GetIntFromObj: <>
+ 3124 					Tcl_SetIntObj: <>
+ 3125 					Tcl_GetObjResult: <>
+ 3126 					Tcl_AppendToObj: <>
+ 3127 					Tcl_GetBooleanFromObj: <>
+ 3128 					ckalloc: <>
+ 3129 					Tcl_GetObjType: Tcl_ObjType * (), <./tcl/generic/tclObj.c 308>
+ 3130 						Tcl_MutexLock: 98
+ 3131 						Tcl_FindHashEntry: <>
+ 3132 						Tcl_GetHashValue: <>
+ 3133 						Tcl_MutexUnlock: 109
+ 3134 					ckfree: <>
+ 3135 				TestobjCmd: int (), <./tcl/generic/tclTestObj.c 692>
+ 3136 					Tcl_WrongNumArgs: <>
+ 3137 					Tcl_GetString: <>
+ 3138 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3139 					GetVariableIndex: 3054
+ 3140 					CheckIfVarUnset: 3068
+ 3141 					SetVarToObj: 3063
+ 3142 					Tcl_SetObjResult: <>
+ 3143 					Tcl_GetObjType: 3129
+ 3144 					Tcl_AppendStringsToObj: <>
+ 3145 					Tcl_GetObjResult: <>
+ 3146 					Tcl_ConvertToType: int (), <./tcl/generic/tclObj.c 346>
+ 3147 					Tcl_DuplicateObj: <>
+ 3148 					Tcl_DecrRefCount: <>
+ 3149 					Tcl_NewObj: 450
+ 3150 					Tcl_NewStringObj: 159
+ 3151 					TclFormatInt: int (), <./tcl/generic/tclUtil.c 2086>
+ 3152 					Tcl_SetResult: void (), <./tcl/generic/tclResult.c 228>
+ 3153 					Tcl_AppendToObj: <>
+ 3154 					Tcl_AppendAllObjTypes: int (), <./tcl/generic/tclObj.c 259>
+ 3155 						Tcl_MutexLock: 98
+ 3156 						Tcl_FirstHashEntry: <>
+ 3157 						Tcl_NextHashEntry: <>
+ 3158 						Tcl_GetHashValue: <>
+ 3159 						Tcl_ListObjAppendElement: <>
+ 3160 						Tcl_NewStringObj: 159
+ 3161 						Tcl_MutexUnlock: 109
+ 3162 				TeststringobjCmd: int (), <./tcl/generic/tclTestObj.c 874>
+ 3163 					Tcl_WrongNumArgs: <>
+ 3164 					Tcl_GetString: <>
+ 3165 					GetVariableIndex: 3054
+ 3166 					Tcl_GetIndexFromObj: 892
+ 3167 					Tcl_GetIntFromObj: <>
+ 3168 					SetVarToObj: 3063
+ 3169 					Tcl_NewObj: 450
+ 3170 					Tcl_IsShared: if (), <./tcl/generic/tclObj.c 1918>
+ 3171 					Tcl_DuplicateObj: <>
+ 3172 					Tcl_AppendToObj: <>
+ 3173 					Tcl_SetObjResult: <>
+ 3174 					Tcl_AppendStringsToObj: <>
+ 3175 					CheckIfVarUnset: 3068
+ 3176 					Tcl_GetObjResult: <>
+ 3177 					Tcl_SetIntObj: <>
+ 3178 					Tcl_GetStringFromObj: <>
+ 3179 					Tcl_SetStringObj: <>
+ 3180 					Tcl_NewStringObj: 159
+ 3181 					Tcl_SetObjLength: <>
+ 3182 			TclThread_Init: 1341
+ 3183 			Procbodytest_Init: int (), <./tcl/generic/tclTestProcBodyObj.c 92>
+ 3184 				ProcBodyTestInitInternal: int (), <./tcl/generic/tclTestProcBodyObj.c 179>
+ 3185 					RegisterCommand: int (), <./tcl/generic/tclTestProcBodyObj.c 139>
+ 3186 						sprintf: <>
+ 3187 						Tcl_Eval: <>
+ 3188 						Tcl_CreateObjCommand: 879
+ 3189 					Tcl_PkgProvide: 1622
+ 3190 			Procbodytest_SafeInit: int (), <./tcl/generic/tclTestProcBodyObj.c 116>
+ 3191 				ProcBodyTestInitInternal: 3184
+ 3192 			Tcl_SetVar: <>
+ 3193 			TkMacInitAppleEvents: <>
+ 3194 			Tcl_OpenFileChannel: 223
+ 3195 			Tcl_SetStdChannel: 531
+ 3196 			Tcl_RegisterChannel: 533
+ 3197 			Tcl_SetChannelOption: 228
+ 3198 			Tclxttest_Init: int (), <./tcl/unix/tclXtTest.c 42>
+ 3199 				Tcl_InitStubs: 1323
+ 3200 				XtToolkitInitialize: <>
+ 3201 				InitNotifier: 277
+ 3202 				Tcl_CreateCommand: 857
+ 3203 				TesteventloopCmd: int (), <./tcl/unix/tclXtTest.c 74>
+ 3204 					Tcl_AppendResult: <>
+ 3205 					strcmp: if (), <./tcl/generic/tclTest.c 4243>
+ 3206 					Tcl_SetServiceMode: 2928
+ 3207 					XtAppProcessEvent: <>
+ 3208 					TclSetAppContext: 282
+ 3209 		MacintoshInit: int (), <./tcl/mac/tclMacBOAAppInit.c 211>
+ 3210 			GetZone: <>
+ 3211 			SysEnvirons: <>
+ 3212 			LMGetHeapEnd: <>
+ 3213 			LMSetHeapEnd: <>
+ 3214 			SetApplLimit: <>
+ 3215 			GetApplLimit: <>
+ 3216 			MaxApplZone: <>
+ 3217 			InitGraf: <>
+ 3218 			Tcl_MacSetEventProc: 2164
+ 3219 			HandleHighLevelEvents: int (), <./tcl/mac/tclMacBOAAppInit.c 245>
+ 3220 				AEProcessAppleEvent: <>
+ 3221 		XtToolkitInitialize: <>

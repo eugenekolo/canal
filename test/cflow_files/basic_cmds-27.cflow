@@ -1,0 +1,467 @@
+    1 	main:  (), <./write.tproj/write.c 32>
+    2 		checkf: <>
+    3 		initterm:  (), <./more.tproj/more.c 1544>
+    4 		getenv: <>
+    5 		argscan:  (), <./more.tproj/more.c 326>
+    6 		isdigit: <>
+    7 		strrchr: <>
+    8 		fputs: <>
+    9 		exit: <>
+   10 		signal: <>
+   11 		onquit: void (), <./more.tproj/more.c 536>
+   12 		end_it: void (), <./more.tproj/more.c 585>
+   13 			reset_tty:  (), <./more.tproj/more.c 1855>
+   14 				tputs: <>
+   15 				putch:  (), <./more.tproj/more.c 445>
+   16 				fflush: <>
+   17 				stty: <>
+   18 				fileno: <>
+   19 			putchar: <>
+   20 			clreos:  (), <./more.tproj/more.c 893>
+   21 				tputs: <>
+   22 				putch:  (), <./more.tproj/more.c 445>
+   23 			fflush: <>
+   24 			kill_line:  (), <./more.tproj/more.c 879>
+   25 			write: <>
+   26 		chgwinsz: void (), <./more.tproj/more.c 561>
+   27 			signal: <>
+   28 			ioctl: <>
+   29 			fileno: <>
+   30 			chgwinsz: 26
+   31 		onsusp: void (), <./more.tproj/more.c 1886>
+   32 		stty: <>
+   33 		fileno: <>
+   34 		copy_file: <>
+   35 		Getc: <>
+   36 		doclear:  (), <./more.tproj/more.c 958>
+   37 		Ungetc: <>
+   38 		search:  (), <./more.tproj/more.c 1367>
+   39 		skiplns: <>
+   40 		screen: <>
+   41 		setjmp: <>
+   42 		command:  (), <./more.tproj/more.c 990>
+   43 		erase: <>
+   44 		cleareol:  (), <./more.tproj/more.c 888>
+   45 			tputs: <>
+   46 			putch:  (), <./more.tproj/more.c 445>
+   47 		pr:  (), <./more.tproj/more.c 902>
+   48 			putchar: <>
+   49 		prtf: <>
+   50 		fflush: <>
+   51 		fclose: <>
+   52 		reset_tty: 13
+   53 		getopt: <>
+   54 		usage:  (), <./uudecode.tproj/uudecode.c 159>
+   55 			fprintf: <>
+   56 			exit: <>
+   57 		freopen: <>
+   58 		fstat: <>
+   59 		fprintf: <>
+   60 		umask: <>
+   61 		printf: <>
+   62 		encode:  (), <./uuencode.tproj/uuencode.c 82>
+   63 			fread: <>
+   64 			ENC: <>
+   65 			putchar: <>
+   66 			ferror: if (), <./pico.tproj/fileio.c 130>
+   67 			fprintf: <>
+   68 			exit: <>
+   69 		ferror: if (), <./pico.tproj/fileio.c 130>
+   70 		strerror: <>
+   71 		decode:  (), <./uudecode.tproj/uudecode.c 61>
+   72 			fgets: <>
+   73 			fprintf: <>
+   74 			strncmp: <>
+   75 			sscanf: <>
+   76 			index: <>
+   77 			getpwnam: <>
+   78 			strlen: <>
+   79 			bcopy: <>
+   80 			freopen: <>
+   81 			fchmod: <>
+   82 			fileno: <>
+   83 			strerror: <>
+   84 			DEC: <>
+   85 			putchar: <>
+   86 			strcmp: <>
+   87 		ttyname: <>
+   88 		stat: <>
+   89 		chmod: <>
+   90 		atoi: <>
+   91 		rebindfunc:  (), <./pico.tproj/bind.c 330>
+   92 		wquit: <>
+   93 		quickexit: <>
+   94 		vtinit:  (), <./pico.tproj/display.c 117>
+   95 			malloc: <>
+   96 			emlwrite: void (), <./pico.tproj/display.c 1327>
+   97 				mlerase:  (), <./pico.tproj/display.c 1033>
+   98 				strlen: <>
+   99 				strchr: <>
+  100 				dumbroot:  (), <./pico.tproj/display.c 1930>
+  101 				dumblroot: <>
+  102 				movecursor:  (), <./pico.tproj/display.c 1017>
+  103 				pputs: <>
+  104 				pputc:  (), <./pico.tproj/display.c 1851>
+  105 				mlputi:  (), <./pico.tproj/display.c 1493>
+  106 					pputc: 104
+  107 					mlputi: 105
+  108 				mlputli: <>
+  109 			free: <>
+  110 		strcpy: <>
+  111 		edinit:  (), <./pico.tproj/pico.c 271>
+  112 			func_init: <>
+  113 			bfind: <>
+  114 			malloc: <>
+  115 			exit: <>
+  116 		update:  (), <./pico.tproj/display.c 307>
+  117 			typahead:  (), <./pico.tproj/osdep.c 359>
+  118 				ioctl: <>
+  119 			unmarkbuffer:  (), <./pico.tproj/region.c 328>
+  120 			markregion:  (), <./pico.tproj/region.c 293>
+  121 			lforw: <>
+  122 			lback: <>
+  123 				lforw: <>
+  124 				llength: <>
+  125 				lback: 122
+  126 			entry_line: <>
+  127 			scrolldown: <>
+  128 			scrollup: <>
+  129 			HeaderLen: <>
+  130 			nlforw:  (), <./pico.tproj/display.c 1833>
+  131 				lforw: <>
+  132 			ToggleHeader: <>
+  133 			vtmove:  (), <./pico.tproj/display.c 198>
+  134 			llength: <>
+  135 			vtputc:  (), <./pico.tproj/display.c 212>
+  136 				vtputc: 135
+  137 			lgetc: <>
+  138 			vteeol:  (), <./pico.tproj/display.c 287>
+  139 			modeline: <>
+  140 			updext:  (), <./pico.tproj/display.c 728>
+  141 				vtmove: 133
+  142 				llength: <>
+  143 				vtpute:  (), <./pico.tproj/display.c 248>
+  144 					vtpute: 143
+  145 				lgetc: <>
+  146 				vteeol: 138
+  147 			showCompTitle:  (), <./pico.tproj/display.c 1787>
+  148 			UpdateHeader: <>
+  149 			PaintHeader: <>
+  150 			movecursor:  (), <./pico.tproj/display.c 1017>
+  151 			peeol:  (), <./pico.tproj/display.c 1882>
+  152 			updateline:  (), <./pico.tproj/display.c 761>
+  153 			wkeyhelp:  (), <./pico.tproj/display.c 2064>
+  154 				register_keys: <>
+  155 				strlen: <>
+  156 				wstripe: void (), <./pico.tproj/display.c 2012>
+  157 					strlen: <>
+  158 					pscr: CELL * (), <./pico.tproj/display.c 1901>
+  159 					movecursor:  (), <./pico.tproj/display.c 1017>
+  160 					pputc: 104
+  161 					peeol:  (), <./pico.tproj/display.c 1882>
+  162 			emlwrite: 96
+  163 		emlwrite: 96
+  164 		makename: void (), <./pico.tproj/osdep.c 1227>
+  165 		readin:  (), <./pico.tproj/file.c 218>
+  166 			bclear: <>
+  167 			strcpy: <>
+  168 			ffropen:  (), <./pico.tproj/fileio.c 57>
+  169 				fopen: <>
+  170 			emlwrite: 96
+  171 			ffgetline: <>
+  172 			strlen: <>
+  173 			lalloc: <>
+  174 			lback: 122
+  175 			lputc: <>
+  176 			ffclose:  (), <./pico.tproj/osdep.c 1365>
+  177 			sprintf: <>
+  178 			lforw: <>
+  179 		sleep: <>
+  180 		forwline:  (), <./pico.tproj/basic.c 217>
+  181 		register_mfunc: <>
+  182 		GetKey:  (), <./pico.tproj/osdep.c 374>
+  183 			poll: <>
+  184 			FD_ZERO: <>
+  185 			FD_SET: <>
+  186 			select: <>
+  187 			kbseq:  (), <./pico.tproj/osdep.c 475>
+  188 			islower: <>
+  189 			toupper: <>
+  190 			isalpha: <>
+  191 		time_to_check:  (), <./pico.tproj/osdep.c 1460>
+  192 			time: <>
+  193 		pico_new_mail:  (), <./pico.tproj/osdep.c 1432>
+  194 			getenv: <>
+  195 			sprintf: <>
+  196 			getlogin: <>
+  197 			stat: <>
+  198 		mlerase:  (), <./pico.tproj/display.c 1033>
+  199 		clear_mfunc: <>
+  200 		execute:  (), <./pico.tproj/pico.c 324>
+  201 			lgetc: <>
+  202 			ldelete:  (), <./pico.tproj/line.c 404>
+  203 				rdonly: <>
+  204 				lchange: <>
+  205 				ldelnewline:  (), <./pico.tproj/line.c 487>
+  206 					rdonly: <>
+  207 					lfree: <>
+  208 					free: <>
+  209 					lalloc: <>
+  210 				kinsert:  (), <./pico.tproj/line.c 596>
+  211 			linsert:  (), <./pico.tproj/line.c 209>
+  212 			llength: <>
+  213 			getccol:  (), <./pico.tproj/random.c 126>
+  214 				lgetc: <>
+  215 			wrapword:  (), <./pico.tproj/word.c 63>
+  216 				llength: <>
+  217 				isspace: <>
+  218 					PUTC: <>
+  219 				lgetc: <>
+  220 				lnewline:  (), <./pico.tproj/line.c 334>
+  221 				lforw: <>
+  222 				gotoeol:  (), <./pico.tproj/basic.c 125>
+  223 				linsert:  (), <./pico.tproj/line.c 209>
+  224 				forwdel:  (), <./pico.tproj/random.c 217>
+  225 					rdonly: <>
+  226 					backdel:  (), <./pico.tproj/random.c 249>
+  227 						rdonly: <>
+  228 						forwdel: 224
+  229 						worthit:  (), <./pico.tproj/osdep.c 1414>
+  230 							doton:  (), <./pico.tproj/display.c 1662>
+  231 						lback: 122
+  232 						scrollup: <>
+  233 						llength: <>
+  234 						kdelete:  (), <./pico.tproj/line.c 579>
+  235 							free: <>
+  236 						backchar:  (), <./pico.tproj/basic.c 80>
+  237 						ldelete: 202
+  238 					worthit: 229
+  239 					llength: <>
+  240 					scrollup: <>
+  241 					kdelete: 234
+  242 					ldelete: 202
+  243 				gotobol:  (), <./pico.tproj/basic.c 67>
+  244 				forwchar:  (), <./pico.tproj/basic.c 139>
+  245 			emlwrite: 96
+  246 			quickexit: <>
+  247 			filesave:  (), <./pico.tproj/file.c 426>
+  248 				rdonly: <>
+  249 				emlwrite: 96
+  250 				sleep: <>
+  251 				writeout:  (), <./pico.tproj/file.c 471>
+  252 					ffwopen:  (), <./pico.tproj/osdep.c 1348>
+  253 					lforw: <>
+  254 					ffputline:  (), <./pico.tproj/fileio.c 72>
+  255 						fputc: <>
+  256 						ferror: if (), <./pico.tproj/fileio.c 130>
+  257 						emlwrite: 96
+  258 					llength: <>
+  259 					ffclose:  (), <./pico.tproj/osdep.c 1365>
+  260 			wquit: <>
+  261 			abort_composer: <>
+  262 			mlyesno:  (), <./pico.tproj/display.c 1058>
+  263 				wkeyhelp: 153
+  264 				sprintf: <>
+  265 				mlwrite:  (), <./pico.tproj/display.c 1423>
+  266 					mlerase:  (), <./pico.tproj/display.c 1033>
+  267 					mlputi: 105
+  268 					mlputli: <>
+  269 					pputs: <>
+  270 					pputc: 104
+  271 					movecursor:  (), <./pico.tproj/display.c 1017>
+  272 				GetKey: 182
+  273 				pputs: <>
+  274 			mlerase:  (), <./pico.tproj/display.c 1033>
+  275 			suspend_composer: <>
+  276 			setimark:  (), <./pico.tproj/basic.c 592>
+  277 			gotobob:  (), <./pico.tproj/basic.c 186>
+  278 			update: 116
+  279 			AttachError: int (), <./pico.tproj/attach.c 747>
+  280 			swapimark:  (), <./pico.tproj/basic.c 607>
+  281 			anycb:  (), <./pico.tproj/buffer.c 105>
+  282 			vttidy:  (), <./pico.tproj/display.c 183>
+  283 				movecursor:  (), <./pico.tproj/display.c 1017>
+  284 				peeol:  (), <./pico.tproj/display.c 1882>
+  285 			exit: <>
+  286 			filewrite:  (), <./pico.tproj/file.c 310>
+  287 				strcpy: <>
+  288 				wkeyhelp: 153
+  289 				mlreplyd:  (), <./pico.tproj/display.c 1160>
+  290 					mlwrite: 265
+  291 					strlen: <>
+  292 					pputs: <>
+  293 					movecursor:  (), <./pico.tproj/display.c 1017>
+  294 					GetKey: 182
+  295 					normal:  (), <./pico.tproj/bind.c 302>
+  296 					ctrlg: <>
+  297 					fallowc:  (), <./pico.tproj/osdep.c 801>
+  298 					pputc: 104
+  299 				fixpath:  (), <./pico.tproj/osdep.c 1118>
+  300 				strlen: <>
+  301 				isdir:  (), <./pico.tproj/osdep.c 855>
+  302 				gethomedir: char * (), <./pico.tproj/osdep.c 895>
+  303 				FileBrowse:  (), <./pico.tproj/browse.c 187>
+  304 					homeless:  (), <./pico.tproj/osdep.c 923>
+  305 					emlwrite: 96
+  306 					sleep: <>
+  307 					PaintBrowser: <>
+  308 					movecursor:  (), <./pico.tproj/display.c 1017>
+  309 					GetKey: 182
+  310 					time_to_check: 191
+  311 					mlerase:  (), <./pico.tproj/display.c 1033>
+  312 					pico_new_mail: 193
+  313 					normal: 295
+  314 					PlaceCell:  (), <./pico.tproj/browse.c 1386>
+  315 						emlwrite: 96
+  316 					PaintCell: <>
+  317 					zotmaster:  (), <./pico.tproj/browse.c 1461>
+  318 						zotfcells:  (), <./pico.tproj/browse.c 1444>
+  319 							free: <>
+  320 						free: <>
+  321 					sprintf: <>
+  322 					fexist:  (), <./pico.tproj/osdep.c 812>
+  323 					strcpy: <>
+  324 					mlyesno: 262
+  325 					unlink: <>
+  326 					errstr: char * (), <./pico.tproj/osdep.c 941>
+  327 					free: <>
+  328 					FindCell: <>
+  329 					pico_help: <>
+  330 					wkeyhelp: 153
+  331 					mlreply:  (), <./pico.tproj/display.c 1125>
+  332 						mlreplyd: 289
+  333 					gethomedir: char * (), <./pico.tproj/osdep.c 895>
+  334 					compresspath:  (), <./pico.tproj/osdep.c 1148>
+  335 					isdir:  (), <./pico.tproj/osdep.c 855>
+  336 					BrowserKeys:  (), <./pico.tproj/browse.c 1339>
+  337 					strcmp: <>
+  338 					fioperr: void (), <./pico.tproj/osdep.c 1046>
+  339 					copy:  (), <./pico.tproj/osdep.c 1253>
+  340 					strrchr: <>
+  341 					rename:  (), <./pico.tproj/osdep.c 1515>
+  342 						link: <>
+  343 						perror: <>
+  344 						unlink: <>
+  345 					strcat: <>
+  346 					vttidy: 282
+  347 					system: <>
+  348 					ttopen:  (), <./pico.tproj/osdep.c 175>
+  349 						tcgetattr: <>
+  350 						tcsetattr: <>
+  351 						ioctl: <>
+  352 						signal: <>
+  353 						do_hup_signal: SIGTYPE (), <./pico.tproj/osdep.c 748>
+  354 							signal: <>
+  355 							longjmp: <>
+  356 							anycb:  (), <./pico.tproj/buffer.c 105>
+  357 							strcpy: <>
+  358 							strcat: <>
+  359 							writeout: 251
+  360 							vttidy: 282
+  361 							exit: <>
+  362 						winch_handler: SIGTYPE (), <./pico.tproj/osdep.c 1498>
+  363 							signal: <>
+  364 							winch_handler: 362
+  365 							ioctl: <>
+  366 							resize_pico:  (), <./pico.tproj/display.c 1691>
+  367 					readpattern:  (), <./pico.tproj/search.c 243>
+  368 						strcpy: <>
+  369 						strcat: <>
+  370 						expandp:  (), <./pico.tproj/search.c 384>
+  371 						strlen: <>
+  372 						mlreplyd: 289
+  373 					bktoshell:  (), <./pico.tproj/osdep.c 674>
+  374 						emlwrite: 96
+  375 						movecursor:  (), <./pico.tproj/display.c 1017>
+  376 						printf: <>
+  377 						vttidy: 282
+  378 						peeol:  (), <./pico.tproj/display.c 1882>
+  379 						signal: <>
+  380 						rtfrmshell: SIGTYPE (), <./pico.tproj/osdep.c 709>
+  381 							signal: <>
+  382 							ttopen: 348
+  383 							ioctl: <>
+  384 							resize_pico:  (), <./pico.tproj/display.c 1691>
+  385 							refresh:  (), <./pico.tproj/window.c 58>
+  386 						kill: <>
+  387 				strcat: <>
+  388 				refresh: 385
+  389 				update: 116
+  390 				pico_help: <>
+  391 				strcmp: <>
+  392 				fexist:  (), <./pico.tproj/osdep.c 812>
+  393 				sprintf: <>
+  394 				mlyesno: 262
+  395 				strrchr: <>
+  396 				fioperr: void (), <./pico.tproj/osdep.c 1046>
+  397 				emlwrite: 96
+  398 				writeout: 251
+  399 			ctrlg: <>
+  400 			rdonly: <>
+  401 			func_init: <>
+  402 			pico_help: <>
+  403 			wscrollw:  (), <./pico.tproj/bind.c 174>
+  404 				done: void (), <./write.tproj/write.c 241>
+  405 					printf: <>
+  406 					exit: <>
+  407 				movecursor:  (), <./pico.tproj/display.c 1017>
+  408 				peeol:  (), <./pico.tproj/display.c 1882>
+  409 				wstripe: 156
+  410 				pputs: <>
+  411 				wkeyhelp: 153
+  412 				GetKey: 182
+  413 				modeline: <>
+  414 				update: 116
+  415 				emlwrite: 96
+  416 			zottree: <>
+  417 			free: <>
+  418 			zotedit: <>
+  419 			bclear: <>
+  420 			zotheader: <>
+  421 			zotdisplay:  (), <./pico.tproj/display.c 1815>
+  422 				free: <>
+  423 			kdelete: 234
+  424 			malloc: <>
+  425 			lalloc: <>
+  426 			lforw: <>
+  427 			PT: <>
+  428 			insline: <>
+  429 			geninsert: <>
+  430 			lback: 122
+  431 		normal: 295
+  432 		isatty: <>
+  433 		errx: <>
+  434 		term_chk:  (), <./write.tproj/write.c 178>
+  435 			sprintf: <>
+  436 			stat: <>
+  437 			warn: <>
+  438 		getuid: <>
+  439 		search_utmp:  (), <./write.tproj/write.c 125>
+  440 			open: <>
+  441 			read: <>
+  442 			strncmp: <>
+  443 			strncpy: <>
+  444 			term_chk: 434
+  445 			strcmp: <>
+  446 			strcpy: <>
+  447 			close: <>
+  448 			errx: <>
+  449 			warnx: <>
+  450 		do_write:  (), <./write.tproj/write.c 200>
+  451 			time: <>
+  452 			getpwuid: <>
+  453 			sprintf: <>
+  454 			freopen: <>
+  455 			signal: <>
+  456 			gethostname: <>
+  457 			strcpy: <>
+  458 			ctime: <>
+  459 			printf: <>
+  460 			fgets: <>
+  461 			wr_fputs: <>
+  462 		strncmp: <>
+  463 		utmp_chk:  (), <./write.tproj/write.c 94>
+  464 			open: <>
+  465 			read: <>
+  466 			strncmp: <>
+  467 			close: <>

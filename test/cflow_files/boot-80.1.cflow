@@ -1,0 +1,720 @@
+    1 	main:  (), <./gen/util/machOconv.c 48>
+    2 		printf: int (), <./gen/libsaio/printf.c 31>
+    3 			va_start: <>
+    4 			prf: void (), <./gen/libsa/prf.c 92>
+    5 				printn: void (), <./i386/libsa/prf.c 59>
+    6 				printn: void (), <./gen/libsa/prf.c 59>
+    7 			putchar: void (), <./i386/libsaio/console.c 55>
+    8 				putc: void (), <./i386/libsaio/biosfn.c 165>
+    9 					bios: <>
+   10 			va_end: <>
+   11 		offsetof: <>
+   12 		sprintf: int (), <./gen/libsa/sprintf.c 51>
+   13 			va_start: <>
+   14 			prf: 4
+   15 			sputc: void (), <./i386/libsa/printf.c 37>
+   16 			va_end: <>
+   17 			sputc: void (), <./gen/libsa/sprintf.c 37>
+   18 		error: int (), <./gen/libsaio/localPrintf.c 50>
+   19 			va_start: <>
+   20 			prf: 4
+   21 			putchar: 7
+   22 			va_end: <>
+   23 			vprint: void (), <./i386/tests/satest.c 40>
+   24 				slvprintf: int (), <./gen/libsa/sprintf.c 66>
+   25 					prf: 4
+   26 					sputc: void (), <./i386/libsa/printf.c 37>
+   27 					sputc: void (), <./gen/libsa/sprintf.c 37>
+   28 			errorV: int (), <./gen/libsaio/errorV.c 37>
+   29 				prf: 4
+   30 				putchar: 7
+   31 		strcmp: int (), <./gen/libsa/string1.c 44>
+   32 		strncmp: int (), <./gen/libsa/string1.c 53>
+   33 		exit: <>
+   34 		usage: void (), <./gen/rcz/rcz.c 33>
+   35 			fprintf: <>
+   36 			exit: <>
+   37 		malloc: void * (), <./gen/libsa/zalloc.c 73>
+   38 			malloc_init: void (), <./gen/libsa/zalloc.c 59>
+   39 				malloc_error: void (), <./i386/libsa/zalloc.c 59>
+   40 			zallocate: void (), <./i386/libsa/zalloc.c 181>
+   41 				printf: 2
+   42 			zdelete: void (), <./i386/libsa/zalloc.c 210>
+   43 			bzero: int (), <./gen/libsa/memset.c 94>
+   44 				memset: void * (), <./gen/libsa/string2.c 51>
+   45 					asm: <>
+   46 					simple_char_set: inline void (), <./gen/libsa/memset.c 82>
+   47 						asm: <>
+   48 					BYTES_PAST_ALIGNMENT: <>
+   49 					UNS: <>
+   50 					MODULO_LOOP_UNROLL: <>
+   51 					LOOP_STRIDE: <>
+   52 					INT: <>
+   53 					CHAR: <>
+   54 			zallocate: void (), <./gen/libsa/zalloc.c 177>
+   55 				printf: 2
+   56 			zdelete: void (), <./gen/libsa/zalloc.c 206>
+   57 		open: int (), <./gen/libsaio/sys.c 578>
+   58 			DSPRINT: <>
+   59 			stop: volatile void (), <./gen/libsaio/sys.c 806>
+   60 				close: int (), <./gen/libsaio/sys.c 782>
+   61 					iob_from_fdesc: struct iob (), <./i386/libsaio/sys.c 146>
+   62 					free: void (), <./gen/libsa/zalloc.c 118>
+   63 						printf: 2
+   64 						zdelete: 42
+   65 						zcoalesce: void (), <./i386/libsa/zalloc.c 226>
+   66 							zdelete: 42
+   67 						zinsert: void (), <./i386/libsa/zalloc.c 193>
+   68 						zdelete: 56
+   69 						zcoalesce: void (), <./gen/libsa/zalloc.c 222>
+   70 							zdelete: 56
+   71 						zinsert: void (), <./gen/libsa/zalloc.c 189>
+   72 					iob_from_fdesc: struct iob (), <./gen/libsaio/sys.c 87>
+   73 				error: 18
+   74 				sleep: void (), <./i386/libsaio/misc.c 98>
+   75 					time18: unsigned int (), <./i386/libsaio/biosfn.c 64>
+   76 						bios: <>
+   77 				halt: <>
+   78 				printf: 2
+   79 			xx: char * (), <./i386/libsaio/sys.c 1172>
+   80 				error: 18
+   81 				ptol: int (), <./gen/libsa/string1.c 82>
+   82 				BIOSDEV: <>
+   83 				flushdev: void (), <./gen/libsaio/sys.c 845>
+   84 					gen_flushdev: void (), <./i386/libsaio/sys.c 995>
+   85 						disk_flushdev: void (), <./i386/libsaio/sys.c 881>
+   86 							devflush: void (), <./gen/libsaio/disk.c 113>
+   87 								Biosread: int (), <./gen/libsaio/disk.c 155>
+   88 									biosread: int (), <./i386/libsaio/biosfn.c 104>
+   89 										ptov: <>
+   90 										bios: <>
+   91 									error: 18
+   92 									sleep: 74
+   93 									diskActivityHook: void (), <./gen/libsaio/disk.c 294>
+   94 										spinActivityIndicator: void (), <./i386/boot2/graphics.c 194>
+   95 											time18: 75
+   96 											currentMode: int (), <./i386/boot2/graphics.c 132>
+   97 											printf: 2
+   98 							error: 18
+   99 							cacheFlush: void (), <./gen/libsaio/cache.c 81>
+  100 					devflush: 86
+  101 					printf: 2
+  102 					cacheFlush: 99
+  103 				gen_devopen: void (), <./i386/libsaio/sys.c 985>
+  104 					en_devopen: void (), <./i386/libsaio/sys.c 943>
+  105 					devopen: void (), <./gen/libsaio/disk.c 93>
+  106 						get_diskinfo: unsigned int (), <./i386/libsaio/biosfn.c 175>
+  107 							bios: <>
+  108 						SPT: <>
+  109 						HEADS: <>
+  110 						find_partition: struct fdisk_part (), <./i386/libsaio/disk.c 411>
+  111 						DSPRINT: <>
+  112 						read_label: int (), <./gen/libsaio/disk.c 207>
+  113 							Biosread: 87
+  114 							malloc: 37
+  115 							error: 18
+  116 							bcopy: char * (), <./gen/libsa/memcpy.c 68>
+  117 								memcpy: void * (), <./gen/libsa/memcpy.c 48>
+  118 									asm: <>
+  119 									SIREG: <>
+  120 							byte_swap_disklabel_in: void (), <./gen/libsaio/ufs_byteorder.c 91>
+  121 								byte_swap_disklabel_common: inline void (), <./i386/libsaio/ufs_byteorder.c 113>
+  122 									swapBigLongToHost: <>
+  123 								byte_swap_disktab_in: void (), <./gen/libsaio/ufs_byteorder.c 127>
+  124 									byte_swap_disktab_common: inline void (), <./i386/libsaio/ufs_byteorder.c 135>
+  125 										swapBigLongToHost: <>
+  126 										swapBigShortToHost: <>
+  127 										byte_swap_partition: void (), <./gen/libsaio/ufs_byteorder.c 149>
+  128 											swapBigLongToHost: <>
+  129 											swapBigShortToHost: <>
+  130 									byte_swap_disktab_common: inline void (), <./gen/libsaio/ufs_byteorder.c 99>
+  131 										swapBigLongToHost: <>
+  132 										swapBigShortToHost: <>
+  133 										byte_swap_partition: 127
+  134 								byte_swap_disklabel_common: inline void (), <./gen/libsaio/ufs_byteorder.c 75>
+  135 									swapBigLongToHost: <>
+  136 							strcmp: int (), <./gen/libsa/string1.c 44>
+  137 							strcpy: char * (), <./gen/libsa/string1.c 63>
+  138 							free: 62
+  139 			close: 60
+  140 			gen_open: int (), <./i386/libsaio/sys.c 975>
+  141 				en_open: BOOL (), <./i386/libsaio/sys.c 928>
+  142 					nbpTFTPReadFile: UInt32 (), <./i386/libsaio/nbp.c 52>
+  143 						strcpy: 137
+  144 						nbp: UInt32 (), <./i386/libsaio/nbp.c 36>
+  145 							loader: <>
+  146 							GET_FP: <>
+  147 							enableA20: enable output buffer full interrupt enable data line disable clock line * / void (), <./i386/libsaio/misc.c 75>
+  148 				disk_open: BOOL (), <./i386/libsaio/sys.c 777>
+  149 					DPRINT: <>
+  150 					malloc: 37
+  151 					devread: int (), <./gen/libsaio/disk.c 119>
+  152 						Biosread: int (), <./i386/libsaio/disk.c 257>
+  153 							DSPRINT: <>
+  154 							ebiosread: int (), <./i386/libsaio/biosfn.c 133>
+  155 								ptov: <>
+  156 								bios: <>
+  157 							error: 18
+  158 							bios_error: const char * (), <./i386/libsaio/disk.c 232>
+  159 							sleep: 74
+  160 							biosread: 88
+  161 							diskActivityHook: 93
+  162 						bcopy: 116
+  163 						Biosread: 87
+  164 					error: 18
+  165 					byte_swap_superblock: void (), <./gen/libsaio/ufs_byteorder.c 61>
+  166 						byte_swap_ints: void (), <./i386/libsaio/ufs_byteorder.c 53>
+  167 							byte_swap_int: <>
+  168 						byte_swap_int: <>
+  169 						byte_swap_shorts: void (), <./i386/libsaio/ufs_byteorder.c 62>
+  170 							byte_swap_short: <>
+  171 						byte_swap_longlongs: void (), <./i386/libsaio/ufs_byteorder.c 44>
+  172 							byte_swap_longlong: <>
+  173 						swapBigIntsToHost: void (), <./gen/libsaio/ufs_byteorder.c 41>
+  174 							swapBigLongToHost: <>
+  175 						swapBigLongToHost: <>
+  176 						swapBigShortToHosts: void (), <./gen/libsaio/ufs_byteorder.c 51>
+  177 							swapBigShortToHost: <>
+  178 					ffs: int (), <./i386/libsaio/sys.c 865>
+  179 					find: int (), <./i386/libsaio/sys.c 265>
+  180 						malloc: 37
+  181 						error: 18
+  182 						out: void (), <./i386/nasm/assemble.c 108>
+  183 							WRITELONG: <>
+  184 							WRITESHORT: <>
+  185 						DSPRINT: <>
+  186 						openi: int (), <./i386/libsaio/sys.c 169>
+  187 							cacheInit: cache_t * (), <./gen/libsaio/cache.c 29>
+  188 								malloc: 37
+  189 							fsbtodb: <>
+  190 							ino_to_fsba: <>
+  191 							cacheFind: int (), <./gen/libsaio/cache.c 48>
+  192 							devread: 151
+  193 							INOPB: <>
+  194 							max: <>
+  195 							ino_to_fsbo: <>
+  196 							min: <>
+  197 							byte_swap_dinode_in: void (), <./i386/libsaio/ufs_byteorder.c 199>
+  198 								NXSwapShort: <>
+  199 								NXSwapLong: <>
+  200 								NXSwapLongLong: <>
+  201 						DPRINT: <>
+  202 						dlook: ino_t (), <./i386/libsaio/sys.c 566>
+  203 							error: 18
+  204 							strlen: int (), <./gen/libsa/string1.c 32>
+  205 							disk_readdir: struct direct (), <./i386/libsaio/sys.c 499>
+  206 							DPRINT: <>
+  207 							strcmp: int (), <./gen/libsa/string1.c 44>
+  208 						readlink: int (), <./i386/libsaio/sys.c 231>
+  209 							read: int (), <./gen/libsaio/sys.c 508>
+  210 								gen_read: int (), <./i386/libsaio/sys.c 959>
+  211 									iob_from_fdesc: struct iob (), <./i386/libsaio/sys.c 146>
+  212 									en_read: int (), <./i386/libsaio/sys.c 911>
+  213 										iob_from_fdesc: struct iob (), <./i386/libsaio/sys.c 146>
+  214 										DSPRINT: <>
+  215 										bcopy: 116
+  216 									disk_read: int (), <./i386/libsaio/sys.c 673>
+  217 										RDSPRINT: <>
+  218 										iob_from_fdesc: struct iob (), <./i386/libsaio/sys.c 146>
+  219 										bcopy: 116
+  220 										RDPRINT: <>
+  221 										devread: 151
+  222 										blkoff: <>
+  223 										lblkno: <>
+  224 										blksize: <>
+  225 										fsbtodb: <>
+  226 										sbmap: daddr_t (), <./i386/libsaio/sys.c 354>
+  227 											error: 18
+  228 											RDPRINT: <>
+  229 											NINDIR: <>
+  230 											fsbtodb: <>
+  231 											malloc: 37
+  232 											devread: 151
+  233 											NXSwapBigLongToHost: <>
+  234 										getch: int (), <./i386/libsaio/sys.c 611>
+  235 											iob_from_fdesc: struct iob (), <./i386/libsaio/sys.c 146>
+  236 											RDPRINT: <>
+  237 											lblkno: <>
+  238 											fsbtodb: <>
+  239 											sbmap: 226
+  240 											blkoff: <>
+  241 											blksize: <>
+  242 											devread: 151
+  243 								iob_from_fdesc: struct iob (), <./gen/libsaio/sys.c 87>
+  244 								devread: 151
+  245 								blkoff: <>
+  246 								lblkno: <>
+  247 								blksize: <>
+  248 								fsbtodb: <>
+  249 								sbmap: daddr_t (), <./gen/libsaio/sys.c 190>
+  250 									error: 18
+  251 									NINDIR: <>
+  252 									fsbtodb: <>
+  253 									malloc: 37
+  254 									devread: 151
+  255 									NXSwapBigLongToHost: <>
+  256 								getch: int (), <./gen/libsaio/sys.c 459>
+  257 									iob_from_fdesc: struct iob (), <./gen/libsaio/sys.c 87>
+  258 									lblkno: <>
+  259 									fsbtodb: <>
+  260 									sbmap: 249
+  261 									blkoff: <>
+  262 									blksize: <>
+  263 									devread: 151
+  264 							bcopy: 116
+  265 						strcat: char * (), <./gen/libsa/string1.c 119>
+  266 							strncat: char * (), <./gen/libsa/string1.c 108>
+  267 							strlen: int (), <./gen/libsa/string1.c 32>
+  268 						strcpy: 137
+  269 						free: 62
+  270 					openi: 186
+  271 			xx: char * (), <./gen/libsaio/sys.c 684>
+  272 				error: 18
+  273 				ptol: 81
+  274 				BIOSDEV: <>
+  275 				flushdev: 83
+  276 				devopen: 105
+  277 			malloc: 37
+  278 			devread: 151
+  279 			error: 18
+  280 			byte_swap_superblock: 165
+  281 			ffs: int (), <./gen/libsaio/sys.c 821>
+  282 			find: int (), <./gen/libsaio/sys.c 137>
+  283 				printf: 2
+  284 				openi: int (), <./gen/libsaio/sys.c 99>
+  285 					cacheInit: 187
+  286 					fsbtodb: <>
+  287 					itod: <>
+  288 					cacheFind: 191
+  289 					devread: 151
+  290 					byte_swap_inode_in: void (), <./gen/libsaio/ufs_byteorder.c 188>
+  291 						NXSwapBigShortToHost: <>
+  292 						NXSwapBigLongToHost: <>
+  293 						bcopy: 116
+  294 					itoo: <>
+  295 				error: 18
+  296 				dlook: ino_t (), <./gen/libsaio/sys.c 293>
+  297 					error: 18
+  298 					strlen: int (), <./gen/libsa/string1.c 32>
+  299 					readdir: struct direct (), <./gen/libsaio/sys.c 372>
+  300 					printf: 2
+  301 					strcmp: int (), <./gen/libsa/string1.c 44>
+  302 			openi: 284
+  303 		fprintf: <>
+  304 		loadprog:  (), <./i386/tests/rldtest.c 146>
+  305 			read: 209
+  306 			bcopy: 116
+  307 			printf: 2
+  308 			sleep: 74
+  309 			loadmacho:  (), <./i386/tests/rldtest.c 45>
+  310 				malloc: 37
+  311 				b_lseek: int (), <./gen/libsaio/sys.c 434>
+  312 					RDPRINT: <>
+  313 					error: 18
+  314 					iob_from_fdesc: struct iob (), <./i386/libsaio/sys.c 146>
+  315 					iob_from_fdesc: struct iob (), <./gen/libsaio/sys.c 87>
+  316 				read: 209
+  317 				error: 18
+  318 				strncmp: 32
+  319 				min: <>
+  320 				bzero: 43
+  321 				printf: 2
+  322 				sleep: 74
+  323 				xread: int (), <./i386/libsaio/load.c 146>
+  324 					max: <>
+  325 					printf: 2
+  326 					sleep: 74
+  327 					malloc: 37
+  328 					tell: int (), <./gen/libsaio/sys.c 454>
+  329 					read: 209
+  330 					bcopy: 116
+  331 					ptov: <>
+  332 					putchar: 7
+  333 					free: 62
+  334 				Dev: <>
+  335 				free: 62
+  336 				zalloc: <>
+  337 				zfree: <>
+  338 			NXSwapLong: <>
+  339 			malloc: 37
+  340 			b_lseek: 311
+  341 			free: 62
+  342 			error: 18
+  343 		close: 60
+  344 		read: 209
+  345 		getsectbyname: <>
+  346 		getsectbynamefromheader: <>
+  347 		getsectdatafromheader: <>
+  348 		free: 62
+  349 		nasm_set_malloc_error: void (), <./i386/nasm/nasmlib.c 46>
+  350 			nasm_malloc_error: efunc, <./i386/nasm/nasmlib.c 40>
+  351 			fopen: <>
+  352 			setvbuf: <>
+  353 			fprintf: <>
+  354 		report_error: void (), <./i386/nasm/nasm.c 934>
+  355 			fputs: <>
+  356 			fprintf: <>
+  357 			va_start: <>
+  358 			vfprintf: <>
+  359 			fputc: <>
+  360 			fclose: <>
+  361 			remove: <>
+  362 			usage: 34
+  363 			exit: <>
+  364 			abort: <>
+  365 		raa_init: struct RAA (), <./i386/nasm/nasmlib.c 353>
+  366 		saa_init: struct SAA (), <./i386/nasm/nasmlib.c 432>
+  367 		seg_init: void (), <./i386/nasm/nasmlib.c 247>
+  368 		register_output_formats: void (), <./i386/nasm/nasm.c 995>
+  369 			ofmt_register: void (), <./i386/nasm/outform.c 63>
+  370 		parse_cmdline: void (), <./i386/nasm/nasm.c 376>
+  371 			getenv: <>
+  372 			nasm_strdup: <>
+  373 			process_arg: int (), <./i386/nasm/nasm.c 257>
+  374 				report_error: 354
+  375 				strcpy: 137
+  376 				ofmt_find: struct ofmt (), <./i386/nasm/outform.c 42>
+  377 				pp_pre_include: void (), <./i386/nasm/preproc.c 2962>
+  378 					nasm_malloc: <>
+  379 					nasm_strdup: <>
+  380 				pp_pre_define: void (), <./i386/nasm/preproc.c 2987>
+  381 					strchr: <>
+  382 					nasm_malloc: <>
+  383 					tokenise: Token * (), <./i386/nasm/preproc.c 562>
+  384 						isidchar: <>
+  385 						isidstart: <>
+  386 						isnumstart: <>
+  387 						isnumchar: <>
+  388 						isspace: inline int (), <./i386/libsa/strtol.c 96>
+  389 						nasm_malloc: <>
+  390 						strncpy: char * (), <./gen/libsa/string1.c 72>
+  391 					nasm_strdup: <>
+  392 				pp_include_path: void (), <./i386/nasm/preproc.c 2952>
+  393 					nasm_malloc: <>
+  394 					nasm_strdup: <>
+  395 				fprintf: <>
+  396 				ofmt_list: void (), <./i386/nasm/outform.c 53>
+  397 					fprintf: <>
+  398 				exit: <>
+  399 				nasm_stricmp: int (), <./i386/nasm/nasmlib.c 150>
+  400 					toupper: <>
+  401 			nasm_free: <>
+  402 			report_error: 354
+  403 		pp_extra_stdmac: void (), <./i386/nasm/preproc.c 3016>
+  404 		eval_global_info: void (), <./i386/nasm/eval.c 702>
+  405 			labelfunc: lfunc, <./i386/nasm/eval.c 59>
+  406 		lookup_label: int (), <./i386/nasm/labels.c 147>
+  407 			find_label: union label (), <./i386/nasm/labels.c 100>
+  408 		fopen: <>
+  409 		eval_info: void (), <./i386/nasm/eval.c 707>
+  410 			nasm_free: <>
+  411 			nasm_strdup: <>
+  412 		evaluate: evalfunc, <./i386/nasm/outelf.c 114>
+  413 		strcpy: 137
+  414 		sscanf: <>
+  415 		strncpy: 390
+  416 		fputs: <>
+  417 		fputc: <>
+  418 		puts: <>
+  419 		nasm_free: <>
+  420 		fclose: <>
+  421 		remove: <>
+  422 		init_labels: int (), <./i386/nasm/labels.c 263>
+  423 			nasm_malloc: <>
+  424 			init_block: void (), <./i386/nasm/labels.c 314>
+  425 		define_label: void (), <./i386/nasm/labels.c 187>
+  426 			find_label: union label (), <./i386/nasm/labels.c 100>
+  427 		assemble_file: void (), <./i386/nasm/nasm.c 421>
+  428 			output_ins: void (), <./i386/nasm/ndisasm.c 252>
+  429 				printf: 2
+  430 			report_error: 354
+  431 			evaluate: evalfunc, <./i386/nasm/outelf.c 114>
+  432 			strcpy: 137
+  433 			eval_info: 409
+  434 			strncmp: 32
+  435 			sscanf: <>
+  436 			strncpy: 390
+  437 			getkw: int (), <./i386/nasm/nasm.c 887>
+  438 				isspace: inline int (), <./i386/libsa/strtol.c 96>
+  439 				tolower: <>
+  440 				strcmp: int (), <./gen/libsa/string1.c 44>
+  441 			isidstart: <>
+  442 			isidchar: <>
+  443 			is_extern: int (), <./i386/nasm/labels.c 162>
+  444 				find_label: union label (), <./i386/nasm/labels.c 100>
+  445 			declare_as_global: void (), <./i386/nasm/labels.c 238>
+  446 				islocal: <>
+  447 				find_label: union label (), <./i386/nasm/labels.c 100>
+  448 				perm_copy: char * (), <./i386/nasm/labels.c 323>
+  449 					strlen: int (), <./gen/libsa/string1.c 32>
+  450 					nasm_malloc: <>
+  451 			define_label: 425
+  452 			seg_alloc: long (), <./i386/nasm/nasmlib.c 251>
+  453 			atoi: int (), <./gen/libsa/string1.c 95>
+  454 			isspace: inline int (), <./i386/libsa/strtol.c 96>
+  455 			readnum: long (), <./i386/nasm/nasmlib.c 175>
+  456 				isspace: inline int (), <./i386/libsa/strtol.c 96>
+  457 				lib_isnumchar: <>
+  458 				numvalue: <>
+  459 				nasm_malloc_error: efunc, <./i386/nasm/nasmlib.c 40>
+  460 			define_common: void (), <./i386/nasm/labels.c 214>
+  461 				find_label: union label (), <./i386/nasm/labels.c 100>
+  462 			stdscan_reset: void (), <./i386/nasm/nasmlib.c 662>
+  463 				stdscan_pop: void (), <./i386/nasm/nasmlib.c 658>
+  464 					nasm_free: <>
+  465 			stdscan: int (), <./i386/nasm/nasmlib.c 685>
+  466 				isspace: inline int (), <./i386/libsa/strtol.c 96>
+  467 				isidstart: <>
+  468 				isidchar: <>
+  469 				stdscan_copy: char * (), <./i386/nasm/nasmlib.c 667>
+  470 					nasm_malloc: <>
+  471 					strncpy: 390
+  472 					nasm_realloc: <>
+  473 				tolower: <>
+  474 				bsi: int (), <./i386/nasm/nasmlib.c 976>
+  475 					strcmp: int (), <./gen/libsa/string1.c 44>
+  476 				elements: <>
+  477 				strncmp: 32
+  478 				strlen: int (), <./gen/libsa/string1.c 32>
+  479 				strcmp: int (), <./gen/libsa/string1.c 44>
+  480 				isnumchar: <>
+  481 				isnumstart: <>
+  482 				readnum: 455
+  483 				stdscan_pop: 463
+  484 			is_reloc: int (), <./i386/nasm/nasmlib.c 878>
+  485 			reloc_seg: long (), <./i386/nasm/nasmlib.c 946>
+  486 			reloc_value: long (), <./i386/nasm/nasmlib.c 932>
+  487 			parse_line: insn * (), <./i386/nasm/parser.c 68>
+  488 				error: efunc, <./i386/nasm/parser.c 66>
+  489 				stdscan_reset: 462
+  490 				stdscan: 465
+  491 				is_simple: int (), <./i386/nasm/nasmlib.c 842>
+  492 				nasm_malloc: <>
+  493 				is_comma_next: int (), <./i386/nasm/parser.c 638>
+  494 					stdscan: 465
+  495 				nasm_realloc: <>
+  496 				float_const: int (), <./i386/nasm/float.c 404>
+  497 					to_float: int (), <./i386/nasm/float.c 292>
+  498 						flconvert: void (), <./i386/nasm/float.c 81>
+  499 							atoi: 453
+  500 							multiply: int (), <./i386/nasm/float.c 51>
+  501 						shr: void (), <./i386/nasm/float.c 205>
+  502 						round: int (), <./i386/nasm/float.c 219>
+  503 						put: <>
+  504 						memset: 44
+  505 					to_double: int (), <./i386/nasm/float.c 232>
+  506 						flconvert: 498
+  507 						shr: 501
+  508 						round: int (), <./i386/nasm/float.c 219>
+  509 						put: <>
+  510 						memset: 44
+  511 					to_ldoub: int (), <./i386/nasm/float.c 345>
+  512 						flconvert: 498
+  513 						round: int (), <./i386/nasm/float.c 219>
+  514 						shr: 501
+  515 						put: <>
+  516 						memset: 44
+  517 				is_unknown: int (), <./i386/nasm/nasmlib.c 912>
+  518 				is_reloc: 484
+  519 				reloc_value: 486
+  520 				reloc_seg: 485
+  521 				reloc_wrt: long (), <./i386/nasm/nasmlib.c 964>
+  522 				is_just_unknown: int (), <./i386/nasm/nasmlib.c 922>
+  523 			saa_wstruct: void * (), <./i386/nasm/nasmlib.c 460>
+  524 				nasm_malloc: <>
+  525 			insn_size: long (), <./i386/nasm/assemble.c 388>
+  526 				errfunc: efunc, <./i386/nasm/assemble.c 92>
+  527 				strncpy: 390
+  528 				fopen: <>
+  529 				fseek: <>
+  530 				ftell: <>
+  531 				fclose: <>
+  532 				matches: int (), <./i386/nasm/assemble.c 897>
+  533 				calcsize: long (), <./i386/nasm/assemble.c 485>
+  534 					chsize: int (), <./i386/nasm/assemble.c 1178>
+  535 					errfunc: efunc, <./i386/nasm/assemble.c 92>
+  536 					process_ea: ea * (), <./i386/nasm/assemble.c 964>
+  537 						elements: <>
+  538 			set_curr_ofs: <>
+  539 			cleanup_insn: void (), <./i386/nasm/parser.c 649>
+  540 				nasm_free: <>
+  541 			nasm_free: <>
+  542 			fclose: <>
+  543 			remove: <>
+  544 			usage: 34
+  545 			exit: <>
+  546 			saa_rewind: void (), <./i386/nasm/nasmlib.c 506>
+  547 			saa_rstruct: void * (), <./i386/nasm/nasmlib.c 511>
+  548 			raa_free: void (), <./i386/nasm/nasmlib.c 357>
+  549 				nasm_free: <>
+  550 				raa_free: 548
+  551 			raa_init: struct RAA (), <./i386/nasm/nasmlib.c 353>
+  552 			define_label_stub: void (), <./i386/nasm/labels.c 175>
+  553 				islocal: <>
+  554 				find_label: union label (), <./i386/nasm/labels.c 100>
+  555 			assemble: long (), <./i386/nasm/assemble.c 143>
+  556 				errfunc: efunc, <./i386/nasm/assemble.c 92>
+  557 				out: 182
+  558 				strncpy: 390
+  559 				fopen: <>
+  560 				fseek: <>
+  561 				ftell: <>
+  562 				fread: <>
+  563 				fclose: <>
+  564 				matches: 532
+  565 				insn_size: 525
+  566 				calcsize: 533
+  567 				gencode: void (), <./i386/nasm/assemble.c 567>
+  568 					out: 182
+  569 					errfunc: efunc, <./i386/nasm/assemble.c 92>
+  570 					regval: int (), <./i386/nasm/assemble.c 865>
+  571 						errfunc: efunc, <./i386/nasm/assemble.c 92>
+  572 					chsize: 534
+  573 					process_ea: 536
+  574 		cleanup_labels: void (), <./i386/nasm/labels.c 289>
+  575 			nasm_free: <>
+  576 		raa_free: 548
+  577 		saa_free: void (), <./i386/nasm/nasmlib.c 449>
+  578 			nasm_free: <>
+  579 		init_sync: void (), <./i386/nasm/sync.c 51>
+  580 			malloc: 37
+  581 			fprintf: <>
+  582 			exit: <>
+  583 		tolower: <>
+  584 		readnum: 455
+  585 		add_sync: void (), <./i386/nasm/sync.c 74>
+  586 		strchr: <>
+  587 		strerror: char * (), <./gen/libsa/error.c 30>
+  588 			sprintf: 12
+  589 		skip: void (), <./i386/nasm/ndisasm.c 282>
+  590 			fseek: <>
+  591 			ftell: <>
+  592 			fread: <>
+  593 			perror: <>
+  594 			exit: <>
+  595 		next_sync: unsigned long (), <./i386/nasm/sync.c 94>
+  596 		fread: <>
+  597 		disasm: long (), <./i386/nasm/disasm.c 465>
+  598 			matches: int (), <./i386/nasm/disasm.c 274>
+  599 				do_ea: unsigned char * (), <./i386/nasm/disasm.c 135>
+  600 			whichreg: int (), <./i386/nasm/disasm.c 59>
+  601 			sprintf: 12
+  602 			elements: <>
+  603 			whichcond: char * (), <./i386/nasm/disasm.c 124>
+  604 			add_sync: 585
+  605 			strncpy: 390
+  606 		eatbyte: long (), <./i386/nasm/disasm.c 706>
+  607 			sprintf: 12
+  608 		output_ins: 428
+  609 		feof: <>
+  610 		bioskey: <>
+  611 		biosdisk: <>
+  612 		outportb: <>
+  613 		inportb: <>
+  614 		geninterrupt: <>
+  615 		MK_FP: <>
+  616 		perror: <>
+  617 		fstat: <>
+  618 		strFromQuotedStr: char * (), <./i386/boot1/replace.c 61>
+  619 			malloc: 37
+  620 			strlen: int (), <./gen/libsa/string1.c 32>
+  621 			strcpy: 137
+  622 		strlen: int (), <./gen/libsa/string1.c 32>
+  623 		map_fd: <>
+  624 		vm_offset_t: <>
+  625 		mach_error: <>
+  626 		strnstr: char * (), <./i386/boot1/replace.c 40>
+  627 		lseek: <>
+  628 		write: <>
+  629 		fatal: void (), <./i386/util/mkfont.c 365>
+  630 			va_start: <>
+  631 			fprintf: <>
+  632 			vfprintf: <>
+  633 			va_end: <>
+  634 			exit: <>
+  635 		getline: char * (), <./i386/util/mkfont.c 412>
+  636 			fgets: <>
+  637 			strlen: int (), <./gen/libsa/string1.c 32>
+  638 			isspace: inline int (), <./i386/libsa/strtol.c 96>
+  639 		linetype: line_t (), <./i386/util/mkfont.c 392>
+  640 			strncmp: 32
+  641 			isspace: inline int (), <./i386/libsa/strtol.c 96>
+  642 			strlen: int (), <./gen/libsa/string1.c 32>
+  643 			isxdigit: <>
+  644 		parse_error: void (), <./i386/util/mkfont.c 380>
+  645 			fatal: 629
+  646 		duplicate: void (), <./i386/util/mkfont.c 386>
+  647 			fatal: 629
+  648 		read_char_description: void (), <./i386/util/mkfont.c 251>
+  649 			bzero: 43
+  650 			getline: 635
+  651 			linetype: 639
+  652 			parse_error: 644
+  653 			sscanf: <>
+  654 			duplicate: 646
+  655 			fatal: 629
+  656 			malloc: 37
+  657 			realloc: void * (), <./gen/libsa/zalloc.c 238>
+  658 				malloc: 37
+  659 				bcopy: 116
+  660 				free: 62
+  661 			setbits: void (), <./i386/util/mkfont.c 351>
+  662 		write_c_file: void (), <./i386/util/mkfont.c 471>
+  663 			sprintf: 12
+  664 			fopen: <>
+  665 			fatal: 629
+  666 			fprintf: <>
+  667 			fclose: <>
+  668 		write_bin_file: void (), <./i386/util/mkfont.c 433>
+  669 			sprintf: 12
+  670 			fopen: <>
+  671 			fatal: 629
+  672 			fwrite: <>
+  673 			fclose: <>
+  674 		getopt: <>
+  675 		stringToUpper: char * (), <./i386/util/sig.c 88>
+  676 			strdup: <>
+  677 			toupper: <>
+  678 		rewind: <>
+  679 		parseFile: void (), <./i386/util/sig.c 221>
+  680 			malloc: 37
+  681 			skipWhitespace: void (), <./i386/util/sig.c 211>
+  682 				fgetc: <>
+  683 				isspace: inline int (), <./i386/libsa/strtol.c 96>
+  684 				ungetc: <>
+  685 			feof: <>
+  686 			peekf: int (), <./i386/util/sig.c 203>
+  687 				fgetc: <>
+  688 				ungetc: <>
+  689 			getLineThru: int (), <./i386/util/sig.c 184>
+  690 				fgetc: <>
+  691 			fprintf: <>
+  692 			parseLine: void (), <./i386/util/sig.c 142>
+  693 				strchr: <>
+  694 				isIdentifier: inline BOOL (), <./i386/util/sig.c 99>
+  695 					isalnum: <>
+  696 				isspace: inline int (), <./i386/libsa/strtol.c 96>
+  697 				strdup: <>
+  698 				outputLine: void (), <./i386/util/sig.c 108>
+  699 					fprintf: <>
+  700 				free: 62
+  701 				fprintf: <>
+  702 			free: 62
+  703 		fileno: <>
+  704 		calloc: <>
+  705 		swap: unsigned long (), <./i386/util/machOconv.c 38>
+  706 			NXSwapLong: <>
+  707 		vm_allocate: kern_return_t (), <./gen/libsa/mach.c 37>
+  708 			malloc: 37
+  709 			bzero: 43
+  710 		mach_task_self: <>
+  711 		vm_deallocate: kern_return_t (), <./gen/libsa/mach.c 53>
+  712 			free: 62
+  713 		fseek: <>
+  714 		ftell: <>
+  715 		rcz_compress_memory: unsigned int (), <./gen/rcz/rcz_compress_mem.c 40>
+  716 		fwrite: <>
+  717 		rcz_decompress_memory: unsigned int (), <./gen/rcz/rcz_decompress_mem.c 39>
+  718 		swap: unsigned long (), <./gen/util/machOconv.c 38>
+  719 			NXSwapLong: <>
+  720 		b_lseek: 311

@@ -1,0 +1,192 @@
+    1 	main: void (), <./arch_tool.c 45>
+    2 		fprintf: <>
+    3 		exit: <>
+    4 		printf: <>
+    5 		fopen: <>
+    6 		signifyUnknownChanges: void (), <./changes.c 226>
+    7 			printf: <>
+    8 			exit: <>
+    9 		fgets: <>
+   10 		strlen: <>
+   11 		strcmp: <>
+   12 		lstat: <>
+   13 		FindFirstFileA: <>
+   14 		FindClose: <>
+   15 		IS_DIRECTORY: <>
+   16 		searchForNewerFiles: BOOL (), <./changes.c 197>
+   17 			sprintf: <>
+   18 			FindFirstFileA: <>
+   19 			printf: <>
+   20 			CompareFileTime: <>
+   21 			searchForNewerFiles: 16
+   22 			strlen: <>
+   23 			malloc: <>
+   24 			strcpy: <>
+   25 			NXCreateHashTable: NXHashTable * (), <./fastcp.c 189>
+   26 				ALLOCTABLE: <>
+   27 				ALLOCBUCKETS: <>
+   28 			NXHashInsert: void * (), <./fastcp.c 260>
+   29 				BUCKETOF: <>
+   30 				ISEQUAL: <>
+   31 				ALLOCPAIRS: <>
+   32 				bcopy: <>
+   33 				free: <>
+   34 			FindNextFileA: <>
+   35 			FindClose: <>
+   36 			NXInitHashState: NXHashState (), <./fastcp.c 349>
+   37 			NXNextHashState: int (), <./fastcp.c 357>
+   38 			opendir: <>
+   39 			readdir: <>
+   40 			strcat: <>
+   41 			lstat: <>
+   42 			closedir: <>
+   43 			IS_DIRECTORY: <>
+   44 			fts_open: <>
+   45 			perror: <>
+   46 			fts_read: <>
+   47 			fts_close: <>
+   48 		CompareFileTime: <>
+   49 		usage: void (), <./ofileListTool.c 34>
+   50 			fprintf: <>
+   51 			exit: <>
+   52 		strncmp: <>
+   53 		unlink: <>
+   54 		strerror: <>
+   55 		sprintf: <>
+   56 		strrchr: <>
+   57 		strcpy: <>
+   58 		fputs: <>
+   59 		fclose: <>
+   60 		getcwd: <>
+   61 		getwd: <>
+   62 		catdirfile: void (), <./fastcp.c 387>
+   63 			strcpy: <>
+   64 			strcat: <>
+   65 		checkdest: void (), <./fastcp.c 391>
+   66 			check: void (), <./fastcp.c 373>
+   67 				printf: <>
+   68 				va_start: <>
+   69 				vprintf: <>
+   70 				exit: <>
+   71 			stat: <>
+   72 			IS_DIRECTORY: <>
+   73 			printf: <>
+   74 			exit: <>
+   75 			access: <>
+   76 		initializeCopyPublicity: void (), <./publicizeCopy.c 123>
+   77 		fastcp1: void (), <./fastcp.c 582>
+   78 			check: 66
+   79 			stat: <>
+   80 			access: <>
+   81 			lstat: <>
+   82 			publicizeCopy: void (), <./publicizeCopy.c 125>
+   83 				reallyPublicizeCopy: void (), <./publicizeCopy.c 37>
+   84 					getenv: <>
+   85 					rindex: <>
+   86 					printf: <>
+   87 					strcat: <>
+   88 					netname_look_up: <>
+   89 					make_alert: <>
+   90 					strlen: <>
+   91 			copy_destmissing: void (), <./fastcp.c 475>
+   92 				IS_LINK: <>
+   93 				check: 66
+   94 				stat: <>
+   95 				commitTentativePublicity: void (), <./publicizeCopy.c 126>
+   96 					reallyPublicizeCopy: 83
+   97 				IS_DIRECTORY: <>
+   98 				copy_dir_destmissing: void (), <./fastcp.c 416>
+   99 					check: 66
+  100 					mkdir: <>
+  101 					opendir: <>
+  102 					readdir: <>
+  103 					catdirfile: 62
+  104 					stat: <>
+  105 					access: <>
+  106 					copy_destmissing: 91
+  107 					closedir: <>
+  108 					settimes: void (), <./fastcp.c 401>
+  109 						check: 66
+  110 						utime: <>
+  111 						time: <>
+  112 						utimes: <>
+  113 					chmod: <>
+  114 				copy_file_destmissing: void (), <./fastcp.c 441>
+  115 					link: <>
+  116 					unlink: <>
+  117 					open: <>
+  118 					printf: <>
+  119 					exit: <>
+  120 					check: 66
+  121 					map_fd: <>
+  122 					write: <>
+  123 					vm_deallocate: <>
+  124 					mach_task_self: <>
+  125 					close: <>
+  126 					settimes: 108
+  127 			IS_DIRECTORY: <>
+  128 			merge_dir_dir: void (), <./fastcp.c 516>
+  129 				malloc: <>
+  130 				NXCreateHashTable: 25
+  131 				opendir: <>
+  132 				check: 66
+  133 				readdir: <>
+  134 				strcpy: <>
+  135 				NXHashInsert: 28
+  136 				strlen: <>
+  137 				closedir: <>
+  138 				chmod: <>
+  139 				catdirfile: 62
+  140 				NXHashGet: void * (), <./fastcp.c 218>
+  141 					BUCKETOF: <>
+  142 					ISEQUAL: <>
+  143 				fastcp1: 77
+  144 				NXHashRemove: void * (), <./fastcp.c 305>
+  145 					BUCKETOF: <>
+  146 					ISEQUAL: <>
+  147 					free: <>
+  148 					ALLOCPAIRS: <>
+  149 					bcopy: <>
+  150 				blast: void (), <./fastcp.c 508>
+  151 					unlink: <>
+  152 					check: 66
+  153 					stat: <>
+  154 					blast_stated: void (), <./fastcp.c 487>
+  155 						IS_DIRECTORY: <>
+  156 						chmod: <>
+  157 						opendir: <>
+  158 						check: 66
+  159 						readdir: <>
+  160 						catdirfile: 62
+  161 						blast: 150
+  162 						closedir: <>
+  163 						rmdir: <>
+  164 						unlink: <>
+  165 				NXInitHashState: NXHashState (), <./fastcp.c 349>
+  166 				NXNextHashState: 37
+  167 				stat: <>
+  168 				access: <>
+  169 				copy_destmissing: 91
+  170 				NXFreeHashTable: void (), <./fastcp.c 212>
+  171 					freeBuckets: void (), <./fastcp.c 198>
+  172 						free: <>
+  173 					free: <>
+  174 				free: <>
+  175 				settimes: 108
+  176 			IS_REGULAR: <>
+  177 			chmod: <>
+  178 			blast_stated: 154
+  179 		abortTentativePublicity: void (), <./publicizeCopy.c 127>
+  180 		finalizeCopyPublicity: void (), <./publicizeCopy.c 124>
+  181 			printf: <>
+  182 		isalpha: <>
+  183 		access: <>
+  184 		perror: <>
+  185 		usage: void (), <./arch_tool.c 37>
+  186 			fprintf: <>
+  187 			exit: <>
+  188 		putc: <>
+  189 		malloc: <>
+  190 		qsort: <>
+  191 		compare_strings: int (), <./arch_tool.c 33>
+  192 			strcmp: <>

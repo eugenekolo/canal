@@ -1,0 +1,694 @@
+    1 	main: int (), <./tcsh/sh.c 177>
+    2 		strrchr: <>
+    3 		fprintf: <>
+    4 		fopen: <>
+    5 		fgets: <>
+    6 		findtoken: int (), <./tcsh/gethost.c 111>
+    7 			strcmp: <>
+    8 		gettoken: char * (), <./tcsh/gethost.c 131>
+    9 			ISSPACE: <>
+   10 		fclose: <>
+   11 		nt_init: <>
+   12 		setlocale: <>
+   13 		nlsinit: <>
+   14 		mal_setstatsfile: <>
+   15 		fdopen: <>
+   16 		dup2: <>
+   17 		open: <>
+   18 		mal_trace: <>
+   19 		sysconf: <>
+   20 		HZ: <>
+   21 		settimes: void (), <./tcsh/sh.time.c 69>
+   22 			memset: <>
+   23 			gettimeofday: <>
+   24 			getrusage: <>
+   25 			ruadd: <>
+   26 			get_process_stats: <>
+   27 			times: <>
+   28 			HZ: <>
+   29 			time: <>
+   30 		exit: <>
+   31 		close: <>
+   32 		osinit: void (), <./tcsh/tc.os.c 953>
+   33 			set42sig: <>
+   34 			setcompat: <>
+   35 			getcompat: <>
+   36 			sigignore: <>
+   37 			xmalloc: <>
+   38 			sigstack: <>
+   39 			isapad: int (), <./tcsh/tc.os.c 1434>
+   40 				isatty: if (), <./tcsh/sh.lex.c 1595>
+   41 				isavt: <>
+   42 				stderror: , <./tcsh/sh.err.c 422>
+   43 					va_start: <>
+   44 					va_arg: <>
+   45 					flush: void (), <./tcsh/sh.print.c 195>
+   46 						stderror: 42
+   47 						ioctl: <>
+   48 						write: <>
+   49 						xexit: <>
+   50 					xprintf: , <./tcsh/tc.printf.c 318>
+   51 						va_start: <>
+   52 						va_arg: <>
+   53 						doprnt: void (), <./tcsh/tc.printf.c 56>
+   54 						xputchar: <>
+   55 						va_end: <>
+   56 					xvprintf: <>
+   57 					va_end: <>
+   58 					xfree: <>
+   59 					blkfree: <>
+   60 					xexit: <>
+   61 					btoeof: void (), <./tcsh/sh.lex.c 1864>
+   62 						lseek: <>
+   63 						wfree: <>
+   64 						bfree: void (), <./tcsh/sh.lex.c 1779>
+   65 							xfree: <>
+   66 							blkcpy: <>
+   67 					Strsave: <>
+   68 					tcsetpgrp: <>
+   69 					reset: <>
+   70 				apperr: <>
+   71 		strsave: <>
+   72 		strcmp: <>
+   73 		SAVE: <>
+   74 		blk2short: <>
+   75 		short2blk: <>
+   76 		eq: else if (), <./tcsh/sh.sem.c 269>
+   77 			stderror: 42
+   78 		getuid: <>
+   79 		getgid: <>
+   80 		geteuid: <>
+   81 		getegid: <>
+   82 		getppid: <>
+   83 		time: <>
+   84 		Strsave: <>
+   85 		getenv: <>
+   86 		fix_strcoll_bug: void (), <./tcsh/tc.os.c 917>
+   87 			open: <>
+   88 			strcoll: <>
+   89 			close: <>
+   90 		Isprint: if (), <./tcsh/tc.bind.c 641>
+   91 		ed_InitNLSMaps: void (), <./tcsh/ed.defns.c 1903>
+   92 			Isprint: if (), <./tcsh/tc.bind.c 641>
+   93 		ResetArrowKeys: void (), <./tcsh/ed.screen.c 817>
+   94 		initwatch: void (), <./tcsh/tc.who.c 136>
+   95 			debugwholist: <>
+   96 		isatty: if (), <./tcsh/sh.lex.c 1595>
+   97 		ttyname: <>
+   98 		getpid: <>
+   99 		ioctl: <>
+  100 		setpgid: <>
+  101 		initdesc: void (), <./tcsh/sh.c 2292>
+  102 			close_on_exec: <>
+  103 			dcopy: <>
+  104 			isatty: if (), <./tcsh/sh.lex.c 1595>
+  105 			closem: void (), <./tcsh/sh.misc.c 261>
+  106 		strncmp: <>
+  107 		Strrchr: <>
+  108 		Strncmp: <>
+  109 		Isalpha: <>
+  110 		sigset: <>
+  111 		alrmcatch: sigret_t (), <./tcsh/tc.func.c 839>
+  112 		getmachine: <>
+  113 		fix_version: <>
+  114 		shlvl: void (), <./tcsh/tc.func.c 1717>
+  115 			getenv: <>
+  116 			atoi: <>
+  117 			adrof: if (), <./tcsh/sh.sem.c 786>
+  118 			unsetv: <>
+  119 			Unsetenv: <>
+  120 			Itoa: void (), <./tcsh/tc.func.c 175>
+  121 				Reverse: void (), <./tcsh/tc.func.c 194>
+  122 					Strlen: <>
+  123 			Strsave: <>
+  124 			tsetenv: <>
+  125 			SAVE: <>
+  126 			str2short: <>
+  127 		quote: <>
+  128 		dinit: <>
+  129 		getoid: <>
+  130 		Itoa: 120
+  131 		getpwuid: <>
+  132 		tsetenv: <>
+  133 		varval: <>
+  134 		getgrgid: <>
+  135 		gethostname: <>
+  136 		str2short: <>
+  137 		remotehost: void (), <./tcsh/tc.func.c 2065>
+  138 			sigset: <>
+  139 			palarm: sigret_t (), <./tcsh/tc.func.c 1983>
+  140 			getexit: <>
+  141 			alarm: <>
+  142 			setexit: if (), <./tcsh/tw.parse.c 1234>
+  143 			getremotehost: void (), <./tcsh/tc.func.c 2001>
+  144 			resexit: <>
+  145 			fix_yp_bugs: void (), <./tcsh/tc.os.c 896>
+  146 		importpath: void (), <./tcsh/sh.c 1349>
+  147 			xcalloc: <>
+  148 			Strsave: <>
+  149 			setq: <>
+  150 		setq: <>
+  151 		defaultpath: Char ** (), <./tcsh/sh.c 2371>
+  152 		strlen: <>
+  153 		parseLS_COLORS: <>
+  154 		putn: <>
+  155 		wsprintf: <>
+  156 		Strspl: <>
+  157 		setzero: void (), <./tcsh/sh.misc.c 63>
+  158 		mysigvec: <>
+  159 		signal: <>
+  160 		xexit: <>
+  161 		Strlen: <>
+  162 		stderror: 42
+  163 		Strchr: if (), <./tcsh/sh.dir.c 538>
+  164 		setNS: <>
+  165 		strerror: <>
+  166 		xfree: <>
+  167 		dmove: <>
+  168 		close_on_exec: <>
+  169 		adrof: if (), <./tcsh/sh.sem.c 786>
+  170 		unsetv: <>
+  171 		settell: void (), <./tcsh/sh.lex.c 1878>
+  172 			lseek: <>
+  173 			xcalloc: <>
+  174 		mygetpgrp: <>
+  175 		sighold: <>
+  176 		phup: sigret_t (), <./tcsh/sh.c 1704>
+  177 			sigset: <>
+  178 			sigblock: sigmask_t (), <./tcsh/tc.sig.c 315>
+  179 				sigemptyset: <>
+  180 				sigprocmask: <>
+  181 				stderror: 42
+  182 				strerror: <>
+  183 				ISSET: <>
+  184 				sigaddset: <>
+  185 				sigismember: <>
+  186 				SETBIT: <>
+  187 			sigmask: <>
+  188 			sighold: <>
+  189 			Strsave: <>
+  190 			srcfile: int (), <./tcsh/sh.c 1424>
+  191 				open: <>
+  192 				dmove: <>
+  193 				close_on_exec: <>
+  194 				srcunit: <>
+  195 			adrof: if (), <./tcsh/sh.sem.c 786>
+  196 			srccat: int (), <./tcsh/sh.c 1393>
+  197 				srcfile: 190
+  198 				short2str: <>
+  199 					xprintf: 50
+  200 					CGETS: <>
+  201 				Strspl: <>
+  202 				xfree: <>
+  203 			varval: <>
+  204 			record: void (), <./tcsh/sh.c 2422>
+  205 				recdirs: <>
+  206 				adrof: if (), <./tcsh/sh.sem.c 786>
+  207 				rechist: <>
+  208 			killpg: <>
+  209 			xexit: <>
+  210 		tcsetpgrp: <>
+  211 		tcgetpgrp: <>
+  212 		kill: <>
+  213 		setdisc: int (), <./tcsh/tc.disc.c 70>
+  214 			ioctl: <>
+  215 			getcompat: <>
+  216 			setcompat: <>
+  217 			xprintf: 50
+  218 			CGETS: <>
+  219 			CTL_ESC: <>
+  220 			strcmp: <>
+  221 		xprintf: 50
+  222 		dcopy: <>
+  223 		CGETS: <>
+  224 		sigemptyset: <>
+  225 		sigaction: if (), <./tcsh/tc.sig.c 394>
+  226 		ed_Setup: int (), <./tcsh/ed.init.c 168>
+  227 			fpathconf: <>
+  228 			adrof: if (), <./tcsh/sh.sem.c 786>
+  229 			Strcmp: <>
+  230 			ed_InitMaps: void (), <./tcsh/ed.defns.c 2020>
+  231 				ed_InitVIMaps: void (), <./tcsh/ed.defns.c 1960>
+  232 					ResetXmap: void (), <./tcsh/ed.xmap.c 158>
+  233 						PutFreeNode: void (), <./tcsh/ed.xmap.c 408>
+  234 							PutFreeNode: 233
+  235 							xfree: <>
+  236 							abort: <>
+  237 						DefaultArrowKeys: void (), <./tcsh/ed.screen.c 834>
+  238 							CTL_ESC: <>
+  239 							AddXkey: void (), <./tcsh/ed.xmap.c 225>
+  240 								xprintf: 50
+  241 								CGETS: <>
+  242 								GetFreeNode: XmapNode * (), <./tcsh/ed.xmap.c 442>
+  243 									xmalloc: <>
+  244 								TryNode: int (), <./tcsh/ed.xmap.c 253>
+  245 									GetFreeNode: 242
+  246 									PutFreeNode: 233
+  247 									xfree: <>
+  248 									abort: <>
+  249 									xmalloc: <>
+  250 									memmove: <>
+  251 									TryNode: 244
+  252 					ed_InitMetaBindings: void (), <./tcsh/ed.defns.c 1920>
+  253 						CTL_ESC: <>
+  254 						AddXkey: 239
+  255 						XmapCmd: XmapVal * (), <./tcsh/ed.xmap.c 135>
+  256 					ed_InitNLSMaps: 91
+  257 					ResetArrowKeys: 93
+  258 					BindArrowKeys: void (), <./tcsh/ed.screen.c 943>
+  259 						DefaultArrowKeys: 237
+  260 						str2short: <>
+  261 						Strlen: <>
+  262 						ClearXkey: void (), <./tcsh/ed.xmap.c 324>
+  263 							DeleteXkey: int (), <./tcsh/ed.xmap.c 336>
+  264 								xprintf: 50
+  265 								CGETS: <>
+  266 								TryDeleteNode: int (), <./tcsh/ed.xmap.c 352>
+  267 									PutFreeNode: 233
+  268 									TryDeleteNode: 266
+  269 						AddXkey: 239
+  270 				ed_InitEmacsMaps: void (), <./tcsh/ed.defns.c 1977>
+  271 					ResetXmap: 232
+  272 					ed_InitMetaBindings: 252
+  273 					ed_InitNLSMaps: 91
+  274 					CTL_ESC: <>
+  275 					AddXkey: 239
+  276 					XmapCmd: 255
+  277 					ResetArrowKeys: 93
+  278 					BindArrowKeys: 258
+  279 			tty_getty: int (), <./tcsh/ed.term.c 655>
+  280 				RETRY: <>
+  281 				tcgetattr: int (), <./tcsh/mi.termios.c 153>
+  282 					ioctl: <>
+  283 					sg_to_tc_speed: speed_t (), <./tcsh/mi.termios.c 85>
+  284 				ioctl: <>
+  285 			xprintf: 50
+  286 			strerror: <>
+  287 			tty_getspeed: <>
+  288 			tty_gettabs: <>
+  289 			tty_geteightbit: <>
+  290 			tty_cooked_mode: int (), <./tcsh/ed.term.c 1122>
+  291 			tty_getchar: void (), <./tcsh/ed.term.c 731>
+  292 			tty_setchar: <>
+  293 			tty_setty: int (), <./tcsh/ed.term.c 693>
+  294 				RETRY: <>
+  295 				tcsetattr: int (), <./tcsh/mi.termios.c 284>
+  296 					tc_to_sg_speed: int (), <./tcsh/mi.termios.c 120>
+  297 					ioctl: <>
+  298 				ioctl: <>
+  299 			sigset: <>
+  300 			window_change: sigret_t (), <./tcsh/ed.init.c 138>
+  301 				sigset: <>
+  302 				window_change: 300
+  303 				check_window_size: void (), <./tcsh/ed.init.c 98>
+  304 					sigblock: 178
+  305 					sigmask: <>
+  306 					sighold: <>
+  307 					GetSize: int (), <./tcsh/ed.screen.c 1571>
+  308 						Val: <>
+  309 						ioctl: <>
+  310 					ClearLines: void (), <./tcsh/ed.refresh.c 1288>
+  311 						MoveToLine: void (), <./tcsh/ed.screen.c 1068>
+  312 							xprintf: 50
+  313 							flush: 45
+  314 							MoveToChar: void (), <./tcsh/ed.screen.c 1125>
+  315 								xprintf: 50
+  316 								flush: 45
+  317 								putraw: <>
+  318 								GoodStr: <>
+  319 								tputs: <>
+  320 								tgoto: char * (), <./tcsh/vms.termcap.c 269>
+  321 								so_write: <>
+  322 								NT_MoveToLineOrChar: <>
+  323 							so_write: <>
+  324 							GoodStr: <>
+  325 							tputs: <>
+  326 							tgoto: 320
+  327 							putraw: <>
+  328 							NT_MoveToLineOrChar: <>
+  329 						MoveToChar: 314
+  330 						ClearEOL: void (), <./tcsh/ed.screen.c 1369>
+  331 						putraw: <>
+  332 					ClearDisp: void (), <./tcsh/ed.refresh.c 1276>
+  333 					MoveToLine: 311
+  334 					MoveToChar: 314
+  335 					ChangeSize: void (), <./tcsh/ed.screen.c 1613>
+  336 						Val: <>
+  337 						nt_set_size: <>
+  338 						getenv: <>
+  339 						Itoa: 120
+  340 						tsetenv: <>
+  341 						str2short: <>
+  342 						Strncpy: <>
+  343 						Strstr: <>
+  344 						Strcpy: <>
+  345 						Strlen: <>
+  346 						Strcat: <>
+  347 						Strchr: if (), <./tcsh/sh.dir.c 538>
+  348 						ReBufferDisplay: void (), <./tcsh/ed.screen.c 476>
+  349 							xfree: <>
+  350 							Val: <>
+  351 							xmalloc: <>
+  352 						ClearDisp: 332
+  353 					Refresh: void (), <./tcsh/ed.refresh.c 272>
+  354 						dprintf: , <./tcsh/ed.refresh.c 88>
+  355 							getenv: <>
+  356 							va_start: <>
+  357 							va_arg: <>
+  358 							open: <>
+  359 							flush: 45
+  360 							xvprintf: <>
+  361 							va_end: <>
+  362 						short2str: 198
+  363 						RefreshPromptpart: <>
+  364 						Draw: <>
+  365 						Vdraw: <>
+  366 						update_line: <>
+  367 						flush: 45
+  368 						cpy_pad_spaces: <>
+  369 						Strncpy: <>
+  370 						MoveToLine: 311
+  371 						MoveToChar: 314
+  372 						SetAttributes: void (), <./tcsh/ed.screen.c 994>
+  373 							GoodStr: <>
+  374 							tputs: <>
+  375 					sigsetmask: sigmask_t (), <./tcsh/tc.sig.c 279>
+  376 						sigemptyset: <>
+  377 						ISSET: <>
+  378 						sigaddset: <>
+  379 						sigprocmask: <>
+  380 						xprintf: 50
+  381 						sigismember: <>
+  382 						SETBIT: <>
+  383 					sigrelse: void (), <./tcsh/tc.sig.c 108>
+  384 		setexit: if (), <./tcsh/tw.parse.c 1234>
+  385 		sigblock: 178
+  386 		sigmask: <>
+  387 		srcfile: 190
+  388 		dohash: <>
+  389 		sigsetmask: 375
+  390 		sigrelse: void (), <./tcsh/tc.sig.c 108>
+  391 		srccat: 196
+  392 		loadhist: <>
+  393 		loaddirs: <>
+  394 		ed_Init: void (), <./tcsh/ed.init.c 300>
+  395 			ResetInLine: void (), <./tcsh/ed.init.c 611>
+  396 			CheckMaps: void (), <./tcsh/ed.defns.c 1871>
+  397 				xprintf: 50
+  398 			ed_Setup: 226
+  399 			GetTermCaps: void (), <./tcsh/ed.screen.c 1433>
+  400 				sigblock: 178
+  401 				sigmask: <>
+  402 				sighold: <>
+  403 				setname: <>
+  404 				getenv: <>
+  405 				isapad: 39
+  406 				strcmp: <>
+  407 				setzero: void (), <./tcsh/sh.misc.c 63>
+  408 				tgetent: int (), <./tcsh/vms.termcap.c 46>
+  409 					strlen: <>
+  410 					getenv: <>
+  411 					fopen: <>
+  412 					fprintf: <>
+  413 					CGETS: <>
+  414 					sleep: <>
+  415 					fgets: <>
+  416 					ISSPACE: <>
+  417 					sscanf: <>
+  418 					strncmp: <>
+  419 					fclose: <>
+  420 					strchr: <>
+  421 				xprintf: 50
+  422 				CGETS: <>
+  423 				Val: <>
+  424 				TCalloc: void (), <./tcsh/ed.screen.c 378>
+  425 					strlen: <>
+  426 					strcpy: <>
+  427 					memmove: <>
+  428 					stderror: 42
+  429 				tgetflag: int (), <./tcsh/vms.termcap.c 163>
+  430 					ISSPACE: <>
+  431 					strncmp: <>
+  432 				tgetnum: int (), <./tcsh/vms.termcap.c 129>
+  433 					ISSPACE: <>
+  434 					strncmp: <>
+  435 					ISDIGIT: <>
+  436 				tgetstr: char * (), <./tcsh/vms.termcap.c 189>
+  437 					ISSPACE: <>
+  438 					strncmp: <>
+  439 					CTL_ESC: <>
+  440 					ISDIGIT: <>
+  441 				GoodStr: <>
+  442 				GetSize: 307
+  443 				ChangeSize: 335
+  444 				sigsetmask: 375
+  445 				sigrelse: void (), <./tcsh/tc.sig.c 108>
+  446 				BindArrowKeys: 258
+  447 			tty_setchar: <>
+  448 		check_window_size: 303
+  449 		autoset_dspmbyte: void (), <./tcsh/sh.set.c 1175>
+  450 			eq: 76
+  451 			Strsave: <>
+  452 			update_dspmbyte_vars: void (), <./tcsh/sh.set.c 1080>
+  453 		nt_autoset_dspmbyte: <>
+  454 		process: void (), <./tcsh/sh.c 1907>
+  455 			getexit: <>
+  456 			pendjob: void (), <./tcsh/sh.proc.c 1011>
+  457 				process: 454
+  458 				xprintf: 50
+  459 				xputchar: <>
+  460 			freelex: void (), <./tcsh/sh.lex.c 273>
+  461 				xfree: <>
+  462 			setexit: if (), <./tcsh/tw.parse.c 1234>
+  463 			sigsetmask: 375
+  464 			sigblock: 178
+  465 			sigmask: <>
+  466 			sigrelse: void (), <./tcsh/tc.sig.c 108>
+  467 			freesyn: <>
+  468 			resexit: <>
+  469 			reset: <>
+  470 			closem: void (), <./tcsh/sh.misc.c 261>
+  471 			pnote: void (), <./tcsh/sh.proc.c 478>
+  472 				process: 454
+  473 				sigblock: 178
+  474 				sigmask: <>
+  475 				sighold: <>
+  476 				pprint: <>
+  477 				pflush: <>
+  478 				sigsetmask: 375
+  479 				sigrelse: void (), <./tcsh/tc.sig.c 108>
+  480 			mailchk: void (), <./tcsh/sh.c 2160>
+  481 			watch_login: void (), <./tcsh/tc.who.c 158>
+  482 				USE: <>
+  483 				sigblock: 178
+  484 				sigmask: <>
+  485 				sighold: <>
+  486 				adrof: if (), <./tcsh/sh.sem.c 786>
+  487 				sigsetmask: 375
+  488 				sigrelse: void (), <./tcsh/tc.sig.c 108>
+  489 				trim: <>
+  490 				blklen: <>
+  491 					dollar: <>
+  492 					gethdir: int (), <./tcsh/sh.c 2259>
+  493 						varval: <>
+  494 						Strcpy: <>
+  495 						gettilde: Char * (), <./tcsh/tc.func.c 1525>
+  496 							xmalloc: <>
+  497 							Strcmp: <>
+  498 							gethomedir: Char * (), <./tcsh/tc.func.c 1473>
+  499 								getpwnam: <>
+  500 								short2str: 198
+  501 								fix_yp_bugs: void (), <./tcsh/tc.os.c 896>
+  502 								Strsave: <>
+  503 								str2short: <>
+  504 								hes_resolve: <>
+  505 								strtok: <>
+  506 								strcmp: <>
+  507 								free: <>
+  508 							Strsave: <>
+  509 							Strlen: <>
+  510 							qsort: <>
+  511 							tildecompare: int (), <./tcsh/tc.func.c 1466>
+  512 								Strcmp: <>
+  513 							xrealloc: <>
+  514 					Strcpy: <>
+  515 					varval: <>
+  516 					catn: <>
+  517 					short2str: 198
+  518 					stat: <>
+  519 						xputchar: <>
+  520 						print_by_column: <>
+  521 						xprintf: 50
+  522 						strerror: <>
+  523 					S_ISDIR: <>
+  524 						xputchar: <>
+  525 						print_by_column: <>
+  526 						xprintf: 50
+  527 						t_search: <>
+  528 					Strsave: <>
+  529 					blkspl: <>
+  530 					blkpr: <>
+  531 					xputchar: <>
+  532 					xfree: <>
+  533 				number: <>
+  534 				getn: <>
+  535 				time: <>
+  536 				start_ncbs: <>
+  537 				stat: 518
+  538 				xprintf: 50
+  539 				CGETS: <>
+  540 				open: <>
+  541 				read: <>
+  542 				strncmp: <>
+  543 				strncpy: <>
+  544 				ut_find_host: <>
+  545 				xcalloc: <>
+  546 				debugwholist: <>
+  547 				close: <>
+  548 				endutent: <>
+  549 				eq: 76
+  550 				Gmatch: if (), <./tcsh/tw.parse.c 495>
+  551 				str2short: <>
+  552 				print_who: <>
+  553 				strcpy: <>
+  554 			sched_run: void (), <./tcsh/tc.sched.c 198>
+  555 			period_cmd: void (), <./tcsh/tc.func.c 962>
+  556 				sigblock: 178
+  557 				sigmask: <>
+  558 				sighold: <>
+  559 				aliasrun: void (), <./tcsh/tc.func.c 1005>
+  560 					getexit: <>
+  561 					xfree: <>
+  562 					xcalloc: <>
+  563 					Strsave: <>
+  564 					getn: <>
+  565 					varval: <>
+  566 					alias: <>
+  567 					syntax: <>
+  568 					stderror: 42
+  569 					psavejob: void (), <./tcsh/sh.proc.c 989>
+  570 					setexit: if (), <./tcsh/tw.parse.c 1234>
+  571 					execute: <>
+  572 					freelex: 460
+  573 					freesyn: <>
+  574 					precmd: void (), <./tcsh/tc.func.c 865>
+  575 					cwd_cmd: void (), <./tcsh/tc.func.c 898>
+  576 						sigblock: 178
+  577 						sigmask: <>
+  578 						sighold: <>
+  579 						aliasrun: 559
+  580 						xprintf: 50
+  581 						CGETS: <>
+  582 						adrof1: if (), <./tcsh/sh.exec.c 956>
+  583 						sigsetmask: 375
+  584 						sigrelse: void (), <./tcsh/tc.sig.c 108>
+  585 					beep_cmd: void (), <./tcsh/tc.func.c 929>
+  586 						sigblock: 178
+  587 						sigmask: <>
+  588 						sighold: <>
+  589 						aliasrun: 559
+  590 						xprintf: 50
+  591 						CGETS: <>
+  592 						adrof1: if (), <./tcsh/sh.exec.c 956>
+  593 						sigsetmask: 375
+  594 						sigrelse: void (), <./tcsh/tc.sig.c 108>
+  595 					period_cmd: 555
+  596 					resexit: <>
+  597 					prestjob: void (), <./tcsh/sh.proc.c 1000>
+  598 					pendjob: 456
+  599 					putn: <>
+  600 				xprintf: 50
+  601 				CGETS: <>
+  602 				adrof1: if (), <./tcsh/sh.exec.c 956>
+  603 				varval: <>
+  604 				getn: <>
+  605 				time: <>
+  606 				sigsetmask: 375
+  607 				sigrelse: void (), <./tcsh/tc.sig.c 108>
+  608 			precmd: void (), <./tcsh/tc.func.c 865>
+  609 			printprompt: void (), <./tcsh/tc.prompt.c 115>
+  610 				time: <>
+  611 				varval: <>
+  612 				tprintf: void (), <./tcsh/tc.prompt.c 177>
+  613 				putraw: <>
+  614 				SetAttributes: 372
+  615 				flush: 45
+  616 			flush: 45
+  617 			setalarm: void (), <./tcsh/tc.func.c 1093>
+  618 				adrof: if (), <./tcsh/sh.sem.c 786>
+  619 				atoi: <>
+  620 				short2str: 198
+  621 				auto_logout: void (), <./tcsh/tc.func.c 819>
+  622 				auto_lock: void (), <./tcsh/tc.func.c 708>
+  623 				sched_next: time_t (), <./tcsh/tc.sched.c 57>
+  624 				time: <>
+  625 				sched_run: void (), <./tcsh/tc.sched.c 198>
+  626 				alarm: <>
+  627 			xfree: <>
+  628 			lex: int (), <./tcsh/sh.lex.c 151>
+  629 				btell: void (), <./tcsh/sh.lex.c 1831>
+  630 					xprintf: 50
+  631 					CGETS: <>
+  632 					abort: <>
+  633 				readc: <>
+  634 				getexcl: void (), <./tcsh/sh.lex.c 737>
+  635 					getC: <>
+  636 					ungetC: <>
+  637 					gethent: struct wordent * (), <./tcsh/sh.lex.c 1274>
+  638 					unreadc: void (), <./tcsh/sh.lex.c 1461>
+  639 					any: else if (), <./tcsh/sh.set.c 389>
+  640 					letter: <>
+  641 					getsel: int (), <./tcsh/sh.lex.c 1188>
+  642 					getsub: <>
+  643 					seterror: , <./tcsh/sh.err.c 374>
+  644 						va_start: <>
+  645 						va_arg: <>
+  646 						xvsnprintf: pret_t (), <./tcsh/tc.printf.c 353>
+  647 						va_end: <>
+  648 						strsave: <>
+  649 				unreadc: void (), <./tcsh/sh.lex.c 1461>
+  650 				xmalloc: <>
+  651 			adrof: if (), <./tcsh/sh.sem.c 786>
+  652 			prlex: void (), <./tcsh/sh.lex.c 233>
+  653 				xprintf: 50
+  654 				xputchar: <>
+  655 			alarm: <>
+  656 			sighold: <>
+  657 			savehist: void (), <./tcsh/sh.hist.c 65>
+  658 				varval: <>
+  659 				Isdigit: if (), <./tcsh/tc.sched.c 138>
+  660 				hfree: <>
+  661 				enthist: struct Hist (), <./tcsh/sh.hist.c 117>
+  662 			stderror: 42
+  663 			tellmewhat: <>
+  664 			alias: <>
+  665 			continue_jobs: void (), <./tcsh/tc.func.c 1240>
+  666 				process: 454
+  667 				varval: <>
+  668 				xprintf: 50
+  669 				CGETS: <>
+  670 				inlist: int (), <./tcsh/tc.func.c 1417>
+  671 				prefix: else if (), <./tcsh/sh.proc.c 1801>
+  672 				insert: void (), <./tcsh/tc.func.c 1312>
+  673 					pause: <>
+  674 					Strlen: <>
+  675 					xcalloc: <>
+  676 					Strcpy: <>
+  677 					xfree: <>
+  678 					insert_we: void (), <./tcsh/tc.func.c 1406>
+  679 			rmstar: void (), <./tcsh/tc.func.c 1136>
+  680 				adrof: if (), <./tcsh/sh.sem.c 786>
+  681 				varval: <>
+  682 				xprintf: 50
+  683 				CGETS: <>
+  684 				Strcmp: <>
+  685 				flush: 45
+  686 				force_read: <>
+  687 				strchr: <>
+  688 				xfree: <>
+  689 			syntax: <>
+  690 			execute: <>
+  691 			window_change: 300
+  692 		goodbye: <>
+  693 		record: 204
+  694 		exitstat: void (), <./tcsh/sh.c 1685>

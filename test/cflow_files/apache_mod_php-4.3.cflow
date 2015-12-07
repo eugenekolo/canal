@@ -1,0 +1,1949 @@
+    1 	main:  (), <./php/TSRM/tsrm_strtok_r.c 48>
+    2 		atoi: int (), <./php/ext/mysql/libmysql/str2int.c 173>
+    3 			str2int: char * (), <./php/ext/mysql/libmysql/str2int.c 39>
+    4 				isspace: <>
+    5 				char_val: <>
+    6 		strcpy: <>
+    7 		split: int (), <./php/regex/split.c 9>
+    8 		dosplit:  (), <./php/regex/split.c 182>
+    9 			split: 7
+   10 			print:  (), <./php/regex/split.c 194>
+   11 				printf: <>
+   12 		fgets: <>
+   13 		strlen: <>
+   14 		regress: void (), <./php/regex/main.c 127>
+   15 			strcpy: <>
+   16 			split: 7
+   17 			printf: <>
+   18 			strcmp: <>
+   19 			print: 10
+   20 			fgets: <>
+   21 			strlen: <>
+   22 			fprintf: <>
+   23 			exit: <>
+   24 			try: void (), <./php/regex/main.c 204>
+   25 				strcpy: <>
+   26 				strlen: <>
+   27 				fixstr: <>
+   28 				regcomp: int (), <./php/ext/pcre/pcrelib/pcreposix.c 193>
+   29 					pcre_compile: pcre * (), <./php/ext/pcre/pcrelib/pcre.c 2260>
+   30 						DPRINTF: <>
+   31 						check_escape: int (), <./php/ext/pcre/pcrelib/pcre.c 370>
+   32 						is_counted_repeat: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 511>
+   33 						read_repeat_counts: const uschar * (), <./php/ext/pcre/pcrelib/pcre.c 548>
+   34 							min: <>
+   35 							max: <>
+   36 						offsetof: <>
+   37 						compile_regex: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 1901>
+   38 							compile_branch: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 827>
+   39 								BOOL: <>
+   40 								memset: <>
+   41 								FAILED: <>
+   42 								check_posix_syntax: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 758>
+   43 								check_posix_name: int (), <./php/ext/pcre/pcrelib/pcre.c 790>
+   44 									strncmp: <>
+   45 								check_escape: 31
+   46 								memcpy: <>
+   47 								is_counted_repeat: 32
+   48 								read_repeat_counts: 33
+   49 								memmove: <>
+   50 								compile_regex: 37
+   51 							DPRINTF: <>
+   52 							find_fixedlength: int (), <./php/ext/pcre/pcrelib/pcre.c 599>
+   53 								find_fixedlength: 52
+   54 						is_anchored: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 2123>
+   55 							first_significant_code: const uschar * (), <./php/ext/pcre/pcrelib/pcre.c 2059>
+   56 							is_anchored: 54
+   57 						find_firstchar: int (), <./php/ext/pcre/pcrelib/pcre.c 2195>
+   58 							first_significant_code: 55
+   59 							find_firstchar: 57
+   60 						is_startline: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 2159>
+   61 							first_significant_code: 55
+   62 							is_startline: 60
+   63 						printf: <>
+   64 						isprint: <>
+   65 					pcre_posix_error_code: int (), <./php/ext/pcre/pcrelib/pcreposix.c 120>
+   66 						strcmp: <>
+   67 					pcre_info: int (), <./php/ext/pcre/pcrelib/pcre.c 233>
+   68 				opt: int (), <./php/regex/main.c 372>
+   69 					strchr: <>
+   70 				efind: int (), <./php/regex/main.c 499>
+   71 				regerror: size_t (), <./php/ext/pcre/pcrelib/pcreposix.c 135>
+   72 					strlen: <>
+   73 					sprintf: <>
+   74 					strncpy: <>
+   75 				fprintf: <>
+   76 				eprint: char * (), <./php/regex/main.c 483>
+   77 				regfree: void (), <./php/ext/pcre/pcrelib/pcreposix.c 170>
+   78 				options: int (), <./php/regex/main.c 315>
+   79 					strchr: <>
+   80 				strchr: <>
+   81 				regexec: int (), <./php/ext/pcre/pcrelib/pcreposix.c 224>
+   82 					malloc: <>
+   83 					pcre_exec: int (), <./php/ext/pcre/pcrelib/pcre.c 4543>
+   84 						BOOL: <>
+   85 						DPRINTF: <>
+   86 						printf: <>
+   87 						pchars: void (), <./php/ext/pcre/pcrelib/pcre.c 334>
+   88 							isprint: <>
+   89 							printf: <>
+   90 						match: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 3231>
+   91 							BOOL: <>
+   92 							printf: <>
+   93 							pchars: 87
+   94 							DPRINTF: <>
+   95 							match: 90
+   96 							match_ref: BOOL (), <./php/ext/pcre/pcrelib/pcre.c 3169>
+   97 								printf: <>
+   98 								pchars: 87
+   99 						memcpy: <>
+  100 					strlen: <>
+  101 					free: <>
+  102 				check: char * (), <./php/regex/main.c 406>
+  103 				split: 7
+  104 			options: 78
+  105 			opt: 68
+  106 			regerror: 71
+  107 			strncmp: <>
+  108 			atoi: 2
+  109 		exit: <>
+  110 		NS: const ENCODING * () (), <./php/ext/xml/expat/xmltok/xmltok_ns.c 6>
+  111 			ns: <>
+  112 		getopt: <>
+  113 		options: 78
+  114 		fprintf: <>
+  115 		regcomp: 28
+  116 		regerror: 71
+  117 		eprint: char * (), <./php/regex/main.c 483>
+  118 		regprint: void (), <./php/regex/debug.c 18>
+  119 			fprintf: <>
+  120 			s_print: <>
+  121 			regchar: char * (), <./php/regex/debug.c 232>
+  122 		regfree: 77
+  123 		regexec: 81
+  124 		printf: <>
+  125 		yylex:  (), <./php/Zend/zend_ini_scanner.c 540>
+  126 		gdCacheCreate: gdCache_head_t * (), <./php/ext/gd/gdcache.c 56>
+  127 			malloc: <>
+  128 		cacheTest: int (), <./php/ext/gd/gdcache.c 149>
+  129 		cacheFetch: void * (), <./php/ext/gd/gdcache.c 155>
+  130 			malloc: <>
+  131 		cacheRelease: void (), <./php/ext/gd/gdcache.c 168>
+  132 			free: <>
+  133 		gdCacheGet: void * (), <./php/ext/gd/gdcache.c 89>
+  134 			malloc: <>
+  135 		gdCacheDelete: void (), <./php/ext/gd/gdcache.c 74>
+  136 			free: <>
+  137 		pcre_maketables: unsigned const char * (), <./php/ext/pcre/pcrelib/maketables.c 62>
+  138 			malloc: <>
+  139 			tolower: <>
+  140 			islower: <>
+  141 			toupper: <>
+  142 			memset: <>
+  143 			isdigit: <>
+  144 			isupper: <>
+  145 			isspace: <>
+  146 			isxdigit: <>
+  147 			isgraph: <>
+  148 			isprint: <>
+  149 			ispunct: <>
+  150 			iscntrl: <>
+  151 			isalpha: <>
+  152 			isalnum: <>
+  153 			strchr: <>
+  154 		isprint: <>
+  155 		strcmp: <>
+  156 		fopen: <>
+  157 		new_malloc: void * (), <./php/ext/pcre/pcrelib/pcretest.c 283>
+  158 			fprintf: <>
+  159 			offsetof: <>
+  160 			malloc: <>
+  161 		pcre_version: const char * (), <./php/ext/pcre/pcrelib/pcre.c 202>
+  162 			XSTRING: <>
+  163 		error: , <./php/ext/mysql/libmysql/my_lib.c 553>
+  164 		isspace: <>
+  165 		isalnum: <>
+  166 		setlocale: <>
+  167 		clock: <>
+  168 		pcre_compile: 29
+  169 		free: <>
+  170 		print_internals: void (), <./php/ext/pcre/pcrelib/pcretest.c 59>
+  171 			fprintf: <>
+  172 			isprint: <>
+  173 		new_info: void (), <./php/ext/pcre/pcrelib/pcretest.c 297>
+  174 			pcre_fullinfo: int (), <./php/ext/pcre/pcrelib/pcre.c 264>
+  175 			fprintf: <>
+  176 		pcre_info: 67
+  177 		pcre_study: pcre_extra * (), <./php/ext/pcre/pcrelib/study.c 340>
+  178 			memset: <>
+  179 			set_start_bits: BOOL (), <./php/ext/pcre/pcrelib/study.c 87>
+  180 				BOOL: <>
+  181 				set_start_bits: 179
+  182 				set_bit: void (), <./php/ext/pcre/pcrelib/study.c 60>
+  183 			memcpy: <>
+  184 		isdigit: <>
+  185 		isxdigit: <>
+  186 		tolower: <>
+  187 		pchars: void (), <./php/ext/pcre/pcrelib/pcretest.c 270>
+  188 			isprint: <>
+  189 			fprintf: <>
+  190 		pcre_exec: 83
+  191 		pcre_copy_substring: int (), <./php/ext/pcre/pcrelib/get.c 75>
+  192 			memcpy: <>
+  193 		pcre_get_substring: int (), <./php/ext/pcre/pcrelib/get.c 172>
+  194 			memcpy: <>
+  195 		pcre_get_substring_list: int (), <./php/ext/pcre/pcrelib/get.c 113>
+  196 			memcpy: <>
+  197 		usage: int (), <./php/ext/pcre/pcrelib/pgrep.c 120>
+  198 			fprintf: <>
+  199 		pgrep: int (), <./php/ext/pcre/pcrelib/pgrep.c 62>
+  200 			fgets: <>
+  201 			strlen: <>
+  202 			pcre_exec: 83
+  203 			fprintf: <>
+  204 		strerror: char * (), <./php/ext/pcre/pcrelib/pgrep.c 48>
+  205 		fclose: <>
+  206 		signal: <>
+  207 		setjmp: <>
+  208 		EG: <>
+  209 		tsrm_startup: TSRM_API int (), <./php/TSRM/TSRM.c 73>
+  210 			pth_init: <>
+  211 			tsrm_error_set: void (), <./php/TSRM/TSRM.c 485>
+  212 				fclose: <>
+  213 				fopen: <>
+  214 			calloc: <>
+  215 			TSRM_ERROR: <>
+  216 			free: <>
+  217 			tsrm_mutex_alloc: TSRM_API MUTEX_T (), <./php/TSRM/TSRM.c 355>
+  218 				malloc: <>
+  219 				InitializeCriticalSection: <>
+  220 				pth_mutex_init: <>
+  221 				pthread_mutex_init: <>
+  222 				crit_init: <>
+  223 				PIPlatform_allocLocalMutex: <>
+  224 				printf: <>
+  225 				mythreadid: <>
+  226 			tsrm_new_thread_begin_handler: void () (), <./php/TSRM/TSRM.c 57>
+  227 			tsrm_new_thread_end_handler: void () (), <./php/TSRM/TSRM.c 58>
+  228 		sapi_startup: SAPI_API void (), <./php/main/SAPI.c 61>
+  229 			zend_hash_init_ex: ZEND_API int (), <./php/Zend/zend_hash.c 226>
+  230 				zend_hash_init: ZEND_API int (), <./php/Zend/zend_hash.c 183>
+  231 					SET_INCONSISTENT: <>
+  232 					pecalloc: <>
+  233 					hashpjw: ZEND_API ulong (), <./php/Zend/zend_hash.c 137>
+  234 			ts_allocate_id: TSRM_API ts_rsrc_id (), <./php/TSRM/TSRM.c 149>
+  235 				TSRM_ERROR: <>
+  236 				tsrm_mutex_lock: TSRM_API int (), <./php/TSRM/TSRM.c 404>
+  237 					TSRM_ERROR: <>
+  238 					tsrm_thread_id: TSRM_API THREAD_T (), <./php/TSRM/TSRM.c 338>
+  239 						GetCurrentThreadId: <>
+  240 						pth_self: <>
+  241 						pthread_self: <>
+  242 						systhread_current: <>
+  243 						PIThread_getCurrent: <>
+  244 					EnterCriticalSection: <>
+  245 					pth_mutex_acquire: <>
+  246 					pthread_mutex_lock: <>
+  247 					crit_enter: <>
+  248 					PISync_lock: <>
+  249 				TSRM_SHUFFLE_RSRC_ID: <>
+  250 				realloc: <>
+  251 				tsrm_mutex_unlock: TSRM_API int (), <./php/TSRM/TSRM.c 423>
+  252 					TSRM_ERROR: <>
+  253 					tsrm_thread_id: 238
+  254 					LeaveCriticalSection: <>
+  255 					pth_mutex_release: <>
+  256 					pthread_mutex_unlock: <>
+  257 					crit_exit: <>
+  258 					PISync_unlock: <>
+  259 				malloc: <>
+  260 			sapi_globals_ctor: void (), <./php/main/SAPI.c 51>
+  261 				memset: <>
+  262 			virtual_cwd_startup: CWD_API void (), <./php/TSRM/tsrm_virtual_cwd.c 167>
+  263 				getcwd: <>
+  264 				strdup: <>
+  265 				strlen: <>
+  266 				ts_allocate_id: 234
+  267 				cwd_globals_ctor: void (), <./php/TSRM/tsrm_virtual_cwd.c 142>
+  268 					CWD_STATE_COPY: <>
+  269 				cwd_globals_dtor: void (), <./php/TSRM/tsrm_virtual_cwd.c 147>
+  270 					CWD_STATE_FREE: <>
+  271 				tsrm_mutex_alloc: 217
+  272 			reentrancy_startup: void (), <./php/main/reentrancy.c 219>
+  273 				tsrm_mutex_alloc: 217
+  274 			php_global_startup_internal_extensions: int (), <./php/main/internal_functions_win32.c 90>
+  275 				php_global_startup_extensions: int (), <./php/main/main.c 760>
+  276 					global_startup_func: <>
+  277 		setmode: <>
+  278 		getenv: <>
+  279 		strdup: <>
+  280 		PUTS: <>
+  281 		ap_php_getopt: int (), <./php/sapi/cgi/getopt.c 45>
+  282 			assert: <>
+  283 			ap_php_optiserr: int (), <./php/sapi/cgi/getopt.c 19>
+  284 				fprintf: <>
+  285 			strchr: <>
+  286 		php_module_startup: int (), <./php/main/main.c 792>
+  287 			ts_resource: <>
+  288 			MAKEWORD: <>
+  289 			GetVersion: <>
+  290 			global_lock_init: <>
+  291 			sapi_initialize_empty_request: SAPI_API void (), <./php/main/SAPI.c 333>
+  292 				SG: <>
+  293 			sapi_activate: SAPI_API void (), <./php/main/SAPI.c 260>
+  294 				zend_llist_init: ZEND_API void (), <./php/Zend/zend_llist.c 24>
+  295 				SG: <>
+  296 				sapi_free_header: SAPI_API void (), <./php/main/SAPI.c 92>
+  297 					efree: <>
+  298 				strcmp: <>
+  299 				sapi_read_post_data: void (), <./php/main/SAPI.c 111>
+  300 					strlen: <>
+  301 					SG: <>
+  302 					estrndup: <>
+  303 					tolower: <>
+  304 					zend_hash_find: ZEND_API int (), <./php/Zend/zend_hash.c 844>
+  305 						IS_CONSISTENT: <>
+  306 						HANDLE_NUMERIC: <>
+  307 						zend_hash_index_find: ZEND_API int (), <./php/Zend/zend_hash.c 920>
+  308 							IS_CONSISTENT: <>
+  309 						memcmp: <>
+  310 					post_reader_func: <>
+  311 			php_output_startup: PHPAPI void (), <./php/ext/standard/output.c 68>
+  312 				OLS_FETCH: <>
+  313 				OG: <>
+  314 				php_body_write: PHPAPI int (), <./php/ext/standard/output.c 78>
+  315 					OLS_FETCH: <>
+  316 					OG: <>
+  317 					php_body_write: 314
+  318 				php_ub_body_write: int (), <./php/ext/standard/output.c 376>
+  319 					SLS_FETCH: <>
+  320 					OLS_FETCH: <>
+  321 					SG: <>
+  322 					zend_bailout: <>
+  323 					php_header: PHPAPI int (), <./php/ext/standard/head.c 84>
+  324 						SLS_FETCH: <>
+  325 						sapi_send_headers: SAPI_API int (), <./php/main/SAPI.c 459>
+  326 							SLS_FETCH: <>
+  327 							SG: <>
+  328 							strlen: <>
+  329 							zend_llist_apply_with_argument: ZEND_API void (), <./php/Zend/zend_llist.c 208>
+  330 							sapi_get_default_content_type_header: SAPI_API void (), <./php/main/SAPI.c 212>
+  331 								sapi_get_default_content_type: SAPI_API char * (), <./php/main/SAPI.c 194>
+  332 									SG: <>
+  333 									strncasecmp: <>
+  334 									strlen: <>
+  335 									emalloc: <>
+  336 									snprintf: <>
+  337 									estrdup: <>
+  338 								strlen: <>
+  339 								emalloc: <>
+  340 								memcpy: <>
+  341 								efree: <>
+  342 							sapi_free_header: 296
+  343 							efree: <>
+  344 						SG: <>
+  345 					zend_is_compiling: ZEND_API zend_bool (), <./php/Zend/zend_compile.c 143>
+  346 						CLS_FETCH: <>
+  347 						CG: <>
+  348 					CLS_FETCH: <>
+  349 					OG: <>
+  350 					zend_get_compiled_filename: ZEND_API char * (), <./php/Zend/zend_compile.c 131>
+  351 						CG: <>
+  352 					zend_get_compiled_lineno: ZEND_API int (), <./php/Zend/zend_compile.c 137>
+  353 						CG: <>
+  354 					zend_is_executing: ZEND_API zend_bool (), <./php/Zend/zend_execute_API.c 246>
+  355 						ELS_FETCH: <>
+  356 						EG: <>
+  357 					ELS_FETCH: <>
+  358 					zend_get_executed_filename: ZEND_API char * (), <./php/Zend/zend_execute_API.c 226>
+  359 						EG: <>
+  360 					zend_get_executed_lineno: ZEND_API uint (), <./php/Zend/zend_execute_API.c 236>
+  361 						EG: <>
+  362 					php_body_write: 314
+  363 					php_ub_body_write_no_header: int (), <./php/ext/standard/output.c 345>
+  364 						OLS_FETCH: <>
+  365 						BLS_FETCH: <>
+  366 						BG: <>
+  367 						session_adapt_uris: void (), <./php/ext/session/session.c 1370>
+  368 							PSLS_FETCH: <>
+  369 							PS: <>
+  370 							url_adapt_ext_ex: <>
+  371 						OG: <>
+  372 						php_header_write: PHPAPI int (), <./php/ext/standard/output.c 84>
+  373 							OLS_FETCH: <>
+  374 							OG: <>
+  375 							php_header_write: 372
+  376 						free: <>
+  377 						sapi_flush: SAPI_API int (), <./php/main/SAPI.c 592>
+  378 							SLS_FETCH: <>
+  379 							SG: <>
+  380 				php_header_write: 372
+  381 			php_error_cb: void (), <./php/main/main.c 341>
+  382 				ELS_FETCH: <>
+  383 				PLS_FETCH: <>
+  384 				vsnprintf: <>
+  385 				EG: <>
+  386 				PG: <>
+  387 				MessageBox: <>
+  388 				snprintf: <>
+  389 				php_log_err: void (), <./php/main/main.c 276>
+  390 					PLS_FETCH: <>
+  391 					PG: <>
+  392 					strcmp: <>
+  393 					php_syslog: <>
+  394 					V_FOPEN: <>
+  395 					time: <>
+  396 					strftime: <>
+  397 					php_localtime_r: tm * (), <./php/main/reentrancy.c 144>
+  398 						localtime_r: struct tm (), <./php/ext/mysql/libmysql/my_pthread.c 105>
+  399 						local_lock: <>
+  400 						localtime: <>
+  401 						memcpy: <>
+  402 						local_unlock: <>
+  403 					fprintf: <>
+  404 					fclose: <>
+  405 				INI_STR: <>
+  406 				PUTS: <>
+  407 				php_printf: PHPAPI int (), <./php/main/main.c 321>
+  408 					va_start: <>
+  409 					vsnprintf: <>
+  410 					PHPWRITE: <>
+  411 					va_end: <>
+  412 				zend_bool: <>
+  413 				zend_output_debug_string: ZEND_API void (), <./php/Zend/zend.c 688>
+  414 					va_start: <>
+  415 					vsnprintf: <>
+  416 					OutputDebugString: <>
+  417 					IsDebuggerPresent: <>
+  418 					DebugBreak: <>
+  419 					vfprintf: int (), <./php/ext/mysql/libmysql/dbug.c 2054>
+  420 						va_arg: <>
+  421 						fprintf: <>
+  422 					fprintf: <>
+  423 					va_end: <>
+  424 				exit: <>
+  425 				zend_bailout: <>
+  426 				ALLOC_ZVAL: <>
+  427 				INIT_PZVAL: <>
+  428 				estrndup: <>
+  429 				zend_hash_update: <>
+  430 			php_printf: 407
+  431 			php_body_write_wrapper: int (), <./php/main/main.c 723>
+  432 				php_body_write: 314
+  433 			php_fopen_wrapper_for_zend: FILE * (), <./php/main/main.c 492>
+  434 				php_sock_set_def_chunk_size: size_t (), <./php/ext/standard/fsock.c 432>
+  435 					FLS_FETCH: <>
+  436 					FG: <>
+  437 				php_fopen_wrapper: <>
+  438 				fdopen: <>
+  439 			php_message_handler_for_zend: void (), <./php/main/main.c 522>
+  440 				PLS_FETCH: <>
+  441 				php_error: <>
+  442 				php_strip_url_passwd: <>
+  443 				STR_PRINT: <>
+  444 				PG: <>
+  445 				ELS_FETCH: <>
+  446 				EG: <>
+  447 				SLS_FETCH: <>
+  448 				snprintf: <>
+  449 				SAFE_FILENAME: <>
+  450 				SG: <>
+  451 				strcat: <>
+  452 				OutputDebugString: <>
+  453 				fprintf: <>
+  454 				time: <>
+  455 				php_localtime_r: 397
+  456 				php_asctime_r: PHPAPI char * (), <./php/main/reentrancy.c 183>
+  457 					asctime_r: <>
+  458 					local_lock: <>
+  459 					asctime: <>
+  460 					strcpy: <>
+  461 					local_unlock: <>
+  462 				strlen: <>
+  463 			php_get_ini_entry_for_zend: int (), <./php/main/main.c 509>
+  464 				cfg_get_entry: zval * (), <./php/main/php_ini.c 249>
+  465 					zend_hash_find: 304
+  466 			php_run_ticks: void (), <./php/main/php_ticks.c 67>
+  467 				PLS_FETCH: <>
+  468 				zend_llist_apply_with_argument: 329
+  469 				PG: <>
+  470 				php_tick_iterator: void (), <./php/main/php_ticks.c 59>
+  471 					memcpy: <>
+  472 			zend_startup: int (), <./php/Zend/zend.c 325>
+  473 				ts_allocate_id: 234
+  474 				alloc_globals_ctor: void (), <./php/Zend/zend.c 313>
+  475 					start_memory_manager: ZEND_API void (), <./php/Zend/zend_alloc.c 383>
+  476 						AG: <>
+  477 						memset: <>
+  478 						emalloc: <>
+  479 						efree: <>
+  480 				start_memory_manager: 475
+  481 				fpgetmask: <>
+  482 				fpsetmask: <>
+  483 				zend_startup_extensions_mechanism: int (), <./php/Zend/zend_extensions.c 140>
+  484 					zend_llist_init: 294
+  485 					zend_extension_dtor: void (), <./php/Zend/zend_extensions.c 163>
+  486 						DL_UNLOAD: <>
+  487 				zend_error_cb: ZEND_API void () (), <./php/Zend/zend.c 51>
+  488 				zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+  489 				zend_fopen_wrapper: FILE * (), <./php/Zend/zend.c 226>
+  490 					estrdup: <>
+  491 					fopen: <>
+  492 				zend_message_dispatcher_p: if (), <./php/Zend/zend.c 536>
+  493 				zend_get_ini_entry_p: int () (), <./php/Zend/zend.c 54>
+  494 				zend_compile_file: ZEND_API zend_op_array *() (), <./php/Zend/zend_compile.c 29>
+  495 				zend_execute: ZEND_API void () (), <./php/Zend/zend_execute_API.c 37>
+  496 				execute: void (), <./php/Zend/zend_execute.c 915>
+  497 					do_alloca: <>
+  498 					zend_bool: <>
+  499 					EG: <>
+  500 					ALLOC_ZVAL: <>
+  501 					zend_hash_add: <>
+  502 					FREE_ZVAL: <>
+  503 					zend_timeout: ZEND_API void (), <./php/Zend/zend_execute_API.c 551>
+  504 						ELS_FETCH: <>
+  505 						zend_error: ZEND_API void (), <./php/Zend/zend.c 555>
+  506 							ELS_FETCH: <>
+  507 							CLS_FETCH: <>
+  508 							zend_is_compiling: 345
+  509 							zend_get_compiled_filename: 350
+  510 							zend_get_compiled_lineno: 352
+  511 							zend_is_executing: 354
+  512 							zend_get_executed_filename: 358
+  513 							zend_get_executed_lineno: 360
+  514 							va_start: <>
+  515 							EG: <>
+  516 							zend_error_cb: ZEND_API void () (), <./php/Zend/zend.c 51>
+  517 							ALLOC_INIT_ZVAL: <>
+  518 							emalloc: <>
+  519 							vsnprintf: <>
+  520 							strncpy: <>
+  521 							strlen: <>
+  522 							estrndup: <>
+  523 							ZVAL_ADDREF: <>
+  524 							call_user_function_ex: int (), <./php/Zend/zend_execute_API.c 336>
+  525 								ELS_FETCH: <>
+  526 								zend_hash_index_find: 307
+  527 								SEPARATE_ZVAL_IF_NOT_REF: <>
+  528 								Z_TYPE_PP: <>
+  529 								EG: <>
+  530 								zend_str_tolower: ZEND_API void (), <./php/Zend/zend_operators.c 1496>
+  531 									tolower: <>
+  532 								zend_hash_find: 304
+  533 								PZVAL_IS_REF: <>
+  534 								ALLOC_ZVAL: <>
+  535 								zval_copy_ctor: <>
+  536 								INIT_PZVAL: <>
+  537 								zend_ptr_stack_push: ZEND_API inline void (), <./php/Zend/zend_ptr_stack.c 35>
+  538 									erealloc: <>
+  539 								zend_ptr_stack_n_push: ZEND_API void (), <./php/Zend/zend_ptr_stack.c 45>
+  540 									erealloc: <>
+  541 									va_start: <>
+  542 									va_arg: <>
+  543 									va_end: <>
+  544 								ALLOC_HASHTABLE: <>
+  545 								zend_hash_init: 230
+  546 								INIT_ZVAL: <>
+  547 								zend_hash_update: <>
+  548 								zend_assign_to_variable_reference: <>
+  549 								zend_execute: ZEND_API void () (), <./php/Zend/zend_execute_API.c 37>
+  550 								zend_hash_destroy: ZEND_API void (), <./php/Zend/zend_hash.c 551>
+  551 									IS_CONSISTENT: <>
+  552 									SET_INCONSISTENT: <>
+  553 									pefree: <>
+  554 								FREE_HASHTABLE: <>
+  555 								ALLOC_INIT_ZVAL: <>
+  556 								zend_ptr_stack_clear_multiple: <>
+  557 							CG: <>
+  558 							zval_ptr_dtor: <>
+  559 							efree: <>
+  560 							ZVAL_REFCOUNT: <>
+  561 							FREE_ZVAL: <>
+  562 							va_end: <>
+  563 						EG: <>
+  564 					add_function: ZEND_API int (), <./php/Zend/zend_operators.c 560>
+  565 						zval_copy_ctor: <>
+  566 						zend_hash_merge: ZEND_API void (), <./php/Zend/zend_hash.c 774>
+  567 							IS_CONSISTENT: <>
+  568 							zend_hash_add_or_update: ZEND_API int (), <./php/Zend/zend_hash.c 242>
+  569 								IS_CONSISTENT: <>
+  570 								ZEND_PUTS: <>
+  571 								HANDLE_NUMERIC: <>
+  572 								zend_hash_index_update_or_next_insert: ZEND_API int (), <./php/Zend/zend_hash.c 386>
+  573 									IS_CONSISTENT: <>
+  574 									HANDLE_BLOCK_INTERRUPTIONS: <>
+  575 									ZEND_PUTS: <>
+  576 									HANDLE_UNBLOCK_INTERRUPTIONS: <>
+  577 									UPDATE_DATA: <>
+  578 									pemalloc: <>
+  579 									INIT_DATA: <>
+  580 									CONNECT_TO_BUCKET_DLLIST: <>
+  581 									CONNECT_TO_GLOBAL_DLLIST: <>
+  582 									ZEND_HASH_IF_FULL_DO_RESIZE: <>
+  583 								memcmp: <>
+  584 								HANDLE_BLOCK_INTERRUPTIONS: <>
+  585 								HANDLE_UNBLOCK_INTERRUPTIONS: <>
+  586 								UPDATE_DATA: <>
+  587 								pemalloc: <>
+  588 								memcpy: <>
+  589 								INIT_DATA: <>
+  590 								CONNECT_TO_BUCKET_DLLIST: <>
+  591 								CONNECT_TO_GLOBAL_DLLIST: <>
+  592 								ZEND_HASH_IF_FULL_DO_RESIZE: <>
+  593 							zend_hash_index_exists: ZEND_API int (), <./php/Zend/zend_hash.c 941>
+  594 								IS_CONSISTENT: <>
+  595 							zend_hash_index_update: <>
+  596 						zval_add_ref: ZEND_API void (), <./php/Zend/zend_variables.c 103>
+  597 						zendi_convert_scalar_to_number: <>
+  598 						zend_error: 505
+  599 					sub_function: ZEND_API int (), <./php/Zend/zend_operators.c 613>
+  600 						zendi_convert_scalar_to_number: <>
+  601 						zend_error: 505
+  602 					mul_function: ZEND_API int (), <./php/Zend/zend_operators.c 650>
+  603 						zendi_convert_scalar_to_number: <>
+  604 						zend_error: 505
+  605 					div_function: ZEND_API int (), <./php/Zend/zend_operators.c 686>
+  606 						zendi_convert_scalar_to_number: <>
+  607 						zend_error: 505
+  608 						var_reset: ZEND_API inline void (), <./php/Zend/zend_variables.c 36>
+  609 					mod_function: ZEND_API int (), <./php/Zend/zend_operators.c 726>
+  610 						zendi_convert_to_long: <>
+  611 						var_reset: 608
+  612 					shift_left_function: ZEND_API int (), <./php/Zend/zend_operators.c 962>
+  613 						zendi_convert_to_long: <>
+  614 					shift_right_function: ZEND_API int (), <./php/Zend/zend_operators.c 974>
+  615 						zendi_convert_to_long: <>
+  616 					concat_function: ZEND_API int (), <./php/Zend/zend_operators.c 1012>
+  617 						zend_make_printable_zval: ZEND_API void (), <./php/Zend/zend.c 118>
+  618 							estrndup: <>
+  619 							emalloc: <>
+  620 							sprintf: <>
+  621 							zval_copy_ctor: <>
+  622 							convert_to_string: <>
+  623 						STR_FREE: <>
+  624 						emalloc: <>
+  625 						erealloc: <>
+  626 						memcpy: <>
+  627 						zval_dtor: <>
+  628 					is_identical_function: ZEND_API int (), <./php/Zend/zend_operators.c 1202>
+  629 						memcmp: <>
+  630 						zend_hash_compare: ZEND_API int (), <./php/Zend/zend_hash.c 1140>
+  631 							IS_CONSISTENT: <>
+  632 							memcmp: <>
+  633 							zend_hash_index_find: 307
+  634 							zend_hash_find: 304
+  635 						hash_zval_identical_function: int (), <./php/Zend/zend_operators.c 1186>
+  636 							is_identical_function: 628
+  637 						var_reset: 608
+  638 					is_not_identical_function: ZEND_API int (), <./php/Zend/zend_operators.c 1255>
+  639 						is_identical_function: 628
+  640 					is_equal_function: ZEND_API int (), <./php/Zend/zend_operators.c 1266>
+  641 						compare_function: ZEND_API int (), <./php/Zend/zend_operators.c 1104>
+  642 							zend_binary_strcmp: ZEND_API int (), <./php/Zend/zend_operators.c 1507>
+  643 								memcmp: <>
+  644 								MIN: <>
+  645 							zendi_smart_strcmp: ZEND_API void (), <./php/Zend/zend_operators.c 1593>
+  646 								is_numeric_string: inline int (), <./php/Zend/zend_operators.c 1684>
+  647 									isdigit: <>
+  648 									is_numeric_string: 646
+  649 									strtod: <>
+  650 									strtol: <>
+  651 								init_num: void (), <./php/ext/bcmath/bcmath.c 76>
+  652 									copy_num: bc_num (), <./php/ext/bcmath/bcmath.c 68>
+  653 								str2num: <>
+  654 								bc_compare: int (), <./php/ext/bcmath/libbcmath/src/compare.c 156>
+  655 								ZEND_NORMALIZE_BOOL: <>
+  656 								free_num: <>
+  657 								strtod: <>
+  658 								zend_binary_zval_strcmp: ZEND_API int (), <./php/Zend/zend_operators.c 1570>
+  659 									zend_binary_strcmp: 642
+  660 							zendi_convert_to_boolean: <>
+  661 							ZEND_NORMALIZE_BOOL: <>
+  662 							zendi_convert_scalar_to_number: <>
+  663 							zend_compare_arrays: ZEND_API void (), <./php/Zend/zend_operators.c 1659>
+  664 								zend_compare_symbol_tables: ZEND_API void (), <./php/Zend/zend_operators.c 1652>
+  665 									zend_hash_compare: 630
+  666 									hash_zval_compare_function: int (), <./php/Zend/zend_operators.c 1640>
+  667 										compare_function: 641
+  668 							zend_compare_objects: ZEND_API void (), <./php/Zend/zend_operators.c 1665>
+  669 								zend_compare_symbol_tables: 664
+  670 							var_reset: 608
+  671 						convert_to_boolean: ZEND_API void (), <./php/Zend/zend_operators.c 336>
+  672 							STR_FREE: <>
+  673 							zend_hash_num_elements: ZEND_API int (), <./php/Zend/zend_hash.c 961>
+  674 								IS_CONSISTENT: <>
+  675 							zval_dtor: <>
+  676 					is_not_equal_function: ZEND_API int (), <./php/Zend/zend_operators.c 1281>
+  677 						compare_function: 641
+  678 						convert_to_boolean: 671
+  679 					is_smaller_function: ZEND_API int (), <./php/Zend/zend_operators.c 1296>
+  680 						compare_function: 641
+  681 						zend_error: 505
+  682 					is_smaller_or_equal_function: ZEND_API int (), <./php/Zend/zend_operators.c 1324>
+  683 						compare_function: 641
+  684 						zend_error: 505
+  685 					bitwise_or_function: ZEND_API int (), <./php/Zend/zend_operators.c 842>
+  686 						estrndup: <>
+  687 						efree: <>
+  688 						zendi_convert_to_long: <>
+  689 					bitwise_and_function: ZEND_API int (), <./php/Zend/zend_operators.c 881>
+  690 						estrndup: <>
+  691 						efree: <>
+  692 						zendi_convert_to_long: <>
+  693 					bitwise_xor_function: ZEND_API int (), <./php/Zend/zend_operators.c 922>
+  694 						estrndup: <>
+  695 						efree: <>
+  696 						zendi_convert_to_long: <>
+  697 					boolean_xor_function: ZEND_API int (), <./php/Zend/zend_operators.c 786>
+  698 						zendi_convert_to_boolean: <>
+  699 					get_zval_ptr: <>
+  700 					FREE_OP: <>
+  701 					NEXT_OPCODE: <>
+  702 					get_unary_op: ZEND_API unary_op_type (), <./php/Zend/zend_opcode.c 320>
+  703 						bitwise_not_function: ZEND_API int (), <./php/Zend/zend_operators.c 811>
+  704 							estrndup: <>
+  705 							zend_error: 505
+  706 						boolean_not_function: ZEND_API int (), <./php/Zend/zend_operators.c 799>
+  707 							zendi_convert_to_boolean: <>
+  708 					get_zval_ptr_ptr: <>
+  709 					zend_error: 505
+  710 					SELECTIVE_PZVAL_LOCK: <>
+  711 					AI_USE_PTR: <>
+  712 					SEPARATE_ZVAL_IF_NOT_REF: <>
+  713 					get_incdec_op: <>
+  714 					zendi_zval_copy_ctor: <>
+  715 					zend_print_variable: ZEND_API int (), <./php/Zend/zend_variables.c 160>
+  716 						zend_print_zval: ZEND_API int (), <./php/Zend/zend.c 161>
+  717 							zend_print_zval_ex: ZEND_API int (), <./php/Zend/zend.c 167>
+  718 								zend_make_printable_zval: 617
+  719 								zval_dtor: <>
+  720 					zend_fetch_var_address: void (), <./php/Zend/zend_execute.c 434>
+  721 						get_zval_ptr: <>
+  722 						EG: <>
+  723 						PZVAL_LOCK: <>
+  724 						ALLOC_HASHTABLE: <>
+  725 						zend_hash_init: 230
+  726 						EMPTY_SWITCH_DEFAULT_CASE: <>
+  727 						zval_copy_ctor: <>
+  728 						convert_to_string: <>
+  729 						zend_hash_find: 304
+  730 						zend_error: 505
+  731 						zend_hash_update: <>
+  732 						FREE_OP: <>
+  733 						zval_update_constant: ZEND_API int (), <./php/Zend/zend_execute_API.c 275>
+  734 							zend_bool: <>
+  735 							SEPARATE_ZVAL: <>
+  736 							zend_get_constant: ZEND_API int (), <./php/Zend/zend_constants.c 216>
+  737 								estrndup: <>
+  738 								ELS_FETCH: <>
+  739 								zend_str_tolower: 530
+  740 								zend_hash_find: 304
+  741 								EG: <>
+  742 								memcmp: <>
+  743 								zval_copy_ctor: <>
+  744 								efree: <>
+  745 							zend_error: 505
+  746 							zval_copy_ctor: <>
+  747 							STR_FREE: <>
+  748 							INIT_PZVAL: <>
+  749 							zend_hash_apply_with_argument: ZEND_API void (), <./php/Zend/zend_hash.c 702>
+  750 								IS_CONSISTENT: <>
+  751 								HASH_APPLY_BEGIN: <>
+  752 								zend_hash_apply_deleter: Bucket * (), <./php/Zend/zend_hash.c 612>
+  753 									HANDLE_BLOCK_INTERRUPTIONS: <>
+  754 									pefree: <>
+  755 									HANDLE_UNBLOCK_INTERRUPTIONS: <>
+  756 								HASH_APPLY_END: <>
+  757 							zval_update_constant: 733
+  758 						zval_dtor: <>
+  759 						SELECTIVE_PZVAL_LOCK: <>
+  760 					ARG_SHOULD_BE_SENT_BY_REF: <>
+  761 					PZVAL_UNLOCK: <>
+  762 					PZVAL_LOCK: <>
+  763 					zend_fetch_dimension_address: void (), <./php/Zend/zend_execute.c 589>
+  764 						get_zval_ptr_ptr: <>
+  765 						EG: <>
+  766 						EMPTY_SWITCH_DEFAULT_CASE: <>
+  767 						SELECTIVE_PZVAL_LOCK: <>
+  768 						get_zval_ptr: <>
+  769 						zval_copy_ctor: <>
+  770 						zend_llist_add_element: ZEND_API void (), <./php/Zend/zend_llist.c 34>
+  771 							pemalloc: <>
+  772 							memcpy: <>
+  773 						PZVAL_IS_REF: <>
+  774 						SEPARATE_ZVAL: <>
+  775 						array_init: <>
+  776 						zend_hash_next_index_insert: <>
+  777 						zend_fetch_dimension_address_inner: inline zval ** (), <./php/Zend/zend_execute.c 503>
+  778 							get_zval_ptr: <>
+  779 							zend_hash_find: 304
+  780 							zend_error: 505
+  781 							EG: <>
+  782 							zend_hash_update: <>
+  783 							zend_hash_index_find: 307
+  784 							zend_hash_index_update: <>
+  785 							FREE_OP: <>
+  786 						FREE_OP: <>
+  787 						zend_error: 505
+  788 						convert_to_long: ZEND_API void (), <./php/Zend/zend_operators.c 239>
+  789 							convert_to_long_base: ZEND_API void (), <./php/Zend/zend_operators.c 245>
+  790 								strtol: <>
+  791 								STR_FREE: <>
+  792 								zend_hash_num_elements: 673
+  793 								zval_dtor: <>
+  794 								zend_error: 505
+  795 						SEPARATE_ZVAL_IF_NOT_REF: <>
+  796 						PZVAL_LOCK: <>
+  797 					zend_fetch_property_address: void (), <./php/Zend/zend_execute.c 744>
+  798 						get_zval_ptr_ptr: <>
+  799 						zval_ptr_dtor: <>
+  800 						EG: <>
+  801 						EMPTY_SWITCH_DEFAULT_CASE: <>
+  802 						SELECTIVE_PZVAL_LOCK: <>
+  803 						get_zval_ptr: <>
+  804 						zval_copy_ctor: <>
+  805 						zend_llist_add_element: 770
+  806 						emalloc: <>
+  807 						zend_llist_init: 294
+  808 						PZVAL_IS_REF: <>
+  809 						SEPARATE_ZVAL: <>
+  810 						object_init: <>
+  811 						FREE_OP: <>
+  812 						zend_fetch_property_address_inner: inline zval ** (), <./php/Zend/zend_execute.c 174>
+  813 							get_zval_ptr: <>
+  814 							zval_copy_ctor: <>
+  815 							convert_to_string: <>
+  816 							zend_hash_find: 304
+  817 							zend_error: 505
+  818 							EG: <>
+  819 							zend_hash_update: <>
+  820 							EMPTY_SWITCH_DEFAULT_CASE: <>
+  821 							zval_dtor: <>
+  822 							FREE_OP: <>
+  823 					zend_fetch_dimension_address_from_tmp_var: void (), <./php/Zend/zend_execute.c 728>
+  824 						get_zval_ptr: <>
+  825 						EG: <>
+  826 						SELECTIVE_PZVAL_LOCK: <>
+  827 						zend_fetch_dimension_address_inner: 777
+  828 					zend_assign_to_variable: inline void (), <./php/Zend/zend_execute.c 250>
+  829 						get_zval_ptr_ptr: <>
+  830 						set_overloaded_property: void (), <./php/Zend/zend_execute.c 864>
+  831 							zend_llist_destroy: ZEND_API void (), <./php/Zend/zend_llist.c 97>
+  832 								pefree: <>
+  833 							efree: <>
+  834 						zval_dtor: <>
+  835 						zval_copy_ctor: <>
+  836 						convert_to_string: <>
+  837 						efree: <>
+  838 						EMPTY_SWITCH_DEFAULT_CASE: <>
+  839 						EG: <>
+  840 						SELECTIVE_PZVAL_LOCK: <>
+  841 						AI_USE_PTR: <>
+  842 						PZVAL_IS_REF: <>
+  843 						zendi_zval_copy_ctor: <>
+  844 						zendi_zval_dtor: <>
+  845 						safe_free_zval_ptr: <>
+  846 						ALLOC_ZVAL: <>
+  847 					zend_assign_to_variable_reference: <>
+  848 					printf: <>
+  849 					i_zend_is_true: <>
+  850 					zend_is_true: ZEND_API int (), <./php/Zend/zend_execute_API.c 269>
+  851 						i_zend_is_true: <>
+  852 					zendi_zval_dtor: <>
+  853 					emalloc: <>
+  854 					add_char_to_string: ZEND_API int (), <./php/Zend/zend_operators.c 988>
+  855 						erealloc: <>
+  856 					add_string_to_string: ZEND_API int (), <./php/Zend/zend_operators.c 1000>
+  857 						erealloc: <>
+  858 						memcpy: <>
+  859 					zend_make_printable_zval: 617
+  860 					zval_dtor: <>
+  861 					function:  (), <./php/ext/mysql/libmysql/strto.c 64>
+  862 						isspace: <>
+  863 						toupper: <>
+  864 						isdigit: <>
+  865 						isalpha: <>
+  866 					zend_ptr_stack_n_push: 539
+  867 					zval_copy_ctor: <>
+  868 					convert_to_string: <>
+  869 					zend_str_tolower: 530
+  870 					zend_hash_find: 304
+  871 					zend_llist_init: 294
+  872 					zend_llist_add_element: 770
+  873 					zend_ptr_stack_push: 537
+  874 					RETURN_VALUE_USED: <>
+  875 					INIT_ZVAL: <>
+  876 					zval_ptr_dtor: <>
+  877 					ALLOC_HASHTABLE: <>
+  878 					zend_hash_init: 230
+  879 					zend_hash_update: <>
+  880 					PZVAL_IS_REF: <>
+  881 					zend_execute: ZEND_API void () (), <./php/Zend/zend_execute_API.c 37>
+  882 					zend_hash_destroy: 550
+  883 					FREE_HASHTABLE: <>
+  884 					zend_hash_clean: ZEND_API void (), <./php/Zend/zend_hash.c 577>
+  885 						IS_CONSISTENT: <>
+  886 						SET_INCONSISTENT: <>
+  887 						pefree: <>
+  888 						memset: <>
+  889 					call_overloaded_function: void (), <./php/Zend/zend_execute.c 872>
+  890 						zend_llist_destroy: 831
+  891 						efree: <>
+  892 					efree: <>
+  893 					zend_ptr_stack_pop: ZEND_API inline void * (), <./php/Zend/zend_ptr_stack.c 82>
+  894 					zend_ptr_stack_clear_multiple: <>
+  895 					SEPARATE_ZVAL_TO_MAKE_IS_REF: <>
+  896 					free_alloca: <>
+  897 					INIT_PZVAL: <>
+  898 					zend_ptr_stack_get_arg: <>
+  899 					get_active_function_name: ZEND_API char * (), <./php/Zend/zend_execute_API.c 202>
+  900 						ELS_FETCH: <>
+  901 						EG: <>
+  902 						function: 861
+  903 					zval_update_constant: 733
+  904 					convert_to_long: 788
+  905 					zend_switch_free: inline void (), <./php/Zend/zend_execute.c 228>
+  906 						get_zval_ptr: <>
+  907 						EG: <>
+  908 						FREE_OP: <>
+  909 						zval_ptr_dtor: <>
+  910 						zendi_zval_dtor: <>
+  911 						EMPTY_SWITCH_DEFAULT_CASE: <>
+  912 					object_init_ex: <>
+  913 					zend_get_constant: 736
+  914 					array_init: <>
+  915 					zend_hash_index_update: <>
+  916 					zend_hash_next_index_insert: <>
+  917 					convert_to_null: ZEND_API void (), <./php/Zend/zend_operators.c 329>
+  918 						zval_dtor: <>
+  919 					convert_to_boolean: 671
+  920 					convert_to_double: ZEND_API void (), <./php/Zend/zend_operators.c 287>
+  921 						strtod: <>
+  922 						STR_FREE: <>
+  923 						zend_hash_num_elements: 673
+  924 						zval_dtor: <>
+  925 						zend_error: 505
+  926 					convert_to_array: ZEND_API void (), <./php/Zend/zend_operators.c 470>
+  927 						ALLOC_HASHTABLE: <>
+  928 						zend_hash_init: 230
+  929 						convert_scalar_to_array: void (), <./php/Zend/zend_operators.c 444>
+  930 							ALLOC_ZVAL: <>
+  931 							INIT_PZVAL: <>
+  932 							ALLOC_HASHTABLE: <>
+  933 							zend_hash_init: 230
+  934 							zend_hash_index_update: <>
+  935 							zend_hash_update: <>
+  936 					convert_to_object: ZEND_API void (), <./php/Zend/zend_operators.c 492>
+  937 						ALLOC_HASHTABLE: <>
+  938 						zend_hash_init: 230
+  939 						convert_scalar_to_array: 929
+  940 					CLS_FETCH: <>
+  941 					strlen: <>
+  942 					zend_compile_file: ZEND_API zend_op_array *() (), <./php/Zend/zend_compile.c 29>
+  943 					zend_destroy_file_handle: ZEND_API void (), <./php/Zend/zend_language_scanner.c 2819>
+  944 						zend_llist_del_element: ZEND_API void (), <./php/Zend/zend_llist.c 83>
+  945 							DEL_LLIST_ELEMENT: <>
+  946 						CG: <>
+  947 						zend_compare_file_handles: int (), <./php/Zend/zend_language_scanner.c 2799>
+  948 					fclose: <>
+  949 					zend_message_dispatcher: <>
+  950 					compile_filename: zend_op_array * (), <./php/Zend/zend_language_scanner.c 2968>
+  951 					zend_make_compiled_string_description: ZEND_API char * (), <./php/Zend/zend.c 747>
+  952 						CLS_FETCH: <>
+  953 						ELS_FETCH: <>
+  954 						zend_is_compiling: 345
+  955 						zend_get_compiled_filename: 350
+  956 						zend_get_compiled_lineno: 352
+  957 						zend_is_executing: 354
+  958 						zend_get_executed_filename: 358
+  959 						zend_get_executed_lineno: 360
+  960 						emalloc: <>
+  961 						strlen: <>
+  962 						sprintf: <>
+  963 					compile_string: zend_op_array * (), <./php/Zend/zend_language_scanner.c 3025>
+  964 					EMPTY_SWITCH_DEFAULT_CASE: <>
+  965 					destroy_op_array: ZEND_API void (), <./php/Zend/zend_opcode.c 141>
+  966 						zend_hash_destroy: 550
+  967 						FREE_HASHTABLE: <>
+  968 						efree: <>
+  969 						printf: <>
+  970 						zval_dtor: <>
+  971 						zend_llist_apply_with_argument: 329
+  972 						zend_extension_op_array_dtor_handler: void (), <./php/Zend/zend_opcode.c 38>
+  973 					zend_hash_del: <>
+  974 					zend_hash_index_del: <>
+  975 					HASH_OF: <>
+  976 					zend_hash_internal_pointer_reset: <>
+  977 					zend_hash_get_current_data: <>
+  978 					zend_hash_get_current_key: <>
+  979 					zend_hash_move_forward: <>
+  980 					zend_hash_exists: ZEND_API int (), <./php/Zend/zend_hash.c 894>
+  981 						IS_CONSISTENT: <>
+  982 						HANDLE_NUMERIC: <>
+  983 						zend_hash_index_exists: 593
+  984 						memcmp: <>
+  985 					Z_TYPE_P: <>
+  986 					Z_LVAL_P: <>
+  987 					zend_bailout: <>
+  988 					zend_llist_apply_with_argument: 329
+  989 					zend_extension_statement_handler: void (), <./php/Zend/zend_execute.c 404>
+  990 					zend_extension_fcall_begin_handler: void (), <./php/Zend/zend_execute.c 412>
+  991 					zend_extension_fcall_end_handler: void (), <./php/Zend/zend_execute.c 420>
+  992 					do_bind_function_or_class: ZEND_API int (), <./php/Zend/zend_compile.c 1113>
+  993 						function: 861
+  994 						zend_hash_find: 304
+  995 						zend_hash_add: <>
+  996 						zend_error: 505
+  997 						strchr: <>
+  998 						estrndup: <>
+  999 						efree: <>
+ 1000 						zend_do_inheritance: void (), <./php/Zend/zend_compile.c 1100>
+ 1001 							zend_hash_merge: 566
+ 1002 							zval_add_ref: 596
+ 1003 							function_add_ref: ZEND_API void (), <./php/Zend/zend_compile.c 1068>
+ 1004 								ALLOC_HASHTABLE: <>
+ 1005 								zend_hash_init: 230
+ 1006 								zend_hash_copy: ZEND_API void (), <./php/Zend/zend_hash.c 750>
+ 1007 									IS_CONSISTENT: <>
+ 1008 									zend_hash_update: <>
+ 1009 									zend_hash_index_update: <>
+ 1010 								zval_add_ref: 596
+ 1011 							do_inherit_parent_constructor: void (), <./php/Zend/zend_compile.c 1086>
+ 1012 								zend_hash_exists: 980
+ 1013 								function: 861
+ 1014 								zend_hash_find: 304
+ 1015 								zend_hash_update: <>
+ 1016 								function_add_ref: 1003
+ 1017 						strlen: <>
+ 1018 						zend_hash_destroy: 550
+ 1019 					ALLOC_INIT_ZVAL: <>
+ 1020 				strdup: <>
+ 1021 				malloc: <>
+ 1022 				zend_hash_init_ex: 229
+ 1023 				register_standard_class: void (), <./php/Zend/zend.c 235>
+ 1024 					zend_strndup: ZEND_API char * (), <./php/Zend/zend_alloc.c 354>
+ 1025 						malloc: <>
+ 1026 						memcpy: <>
+ 1027 					zend_hash_init_ex: 229
+ 1028 					malloc: <>
+ 1029 					zend_hash_add: <>
+ 1030 				zend_init_rsrc_list_dtors: int (), <./php/Zend/zend_list.c 385>
+ 1031 					zend_hash_init: 230
+ 1032 				compiler_globals_ctor: void (), <./php/Zend/zend.c 263>
+ 1033 					malloc: <>
+ 1034 					zend_hash_init_ex: 229
+ 1035 					zend_hash_copy: 1006
+ 1036 					zend_class_add_ref: void (), <./php/Zend/zend_opcode.c 135>
+ 1037 					zend_set_default_compile_time_values: void (), <./php/Zend/zend.c 252>
+ 1038 						CG: <>
+ 1039 				compiler_globals_dtor: void (), <./php/Zend/zend.c 282>
+ 1040 					zend_hash_destroy: 550
+ 1041 					free: <>
+ 1042 				executor_globals_ctor: void (), <./php/Zend/zend.c 295>
+ 1043 					zend_startup_constants: int (), <./php/Zend/zend_constants.c 82>
+ 1044 						GetVersion: <>
+ 1045 						LOBYTE: <>
+ 1046 						LOWORD: <>
+ 1047 						HIBYTE: <>
+ 1048 						EG: <>
+ 1049 						malloc: <>
+ 1050 						zend_hash_init: 230
+ 1051 					zend_copy_constants: void (), <./php/Zend/zend_constants.c 46>
+ 1052 						zend_hash_copy: 1006
+ 1053 						copy_zend_constant: void (), <./php/Zend/zend_constants.c 37>
+ 1054 							zend_strndup: 1024
+ 1055 							zval_copy_ctor: <>
+ 1056 					zend_init_rsrc_plist: int (), <./php/Zend/zend_list.c 290>
+ 1057 						zend_hash_init_ex: 229
+ 1058 						EG: <>
+ 1059 						plist_entry_destructor: void (), <./php/Zend/zend_list.c 269>
+ 1060 							zend_hash_index_find: 307
+ 1061 							zend_error: 505
+ 1062 					EG: <>
+ 1063 				executor_globals_dtor: void (), <./php/Zend/zend.c 306>
+ 1064 					zend_shutdown_constants: int (), <./php/Zend/zend_constants.c 151>
+ 1065 						zend_hash_destroy: 550
+ 1066 						EG: <>
+ 1067 						free: <>
+ 1068 					zend_destroy_rsrc_plist: void (), <./php/Zend/zend_list.c 302>
+ 1069 						zend_hash_graceful_destroy: ZEND_API void (), <./php/Zend/zend_hash.c 662>
+ 1070 							IS_CONSISTENT: <>
+ 1071 							zend_hash_apply_deleter: 752
+ 1072 							pefree: <>
+ 1073 							SET_INCONSISTENT: <>
+ 1074 						EG: <>
+ 1075 				ts_resource: <>
+ 1076 				zend_startup_constants: 1043
+ 1077 				EG: <>
+ 1078 				zend_set_default_compile_time_values: 1037
+ 1079 				zend_register_standard_constants: void (), <./php/Zend/zend_constants.c 101>
+ 1080 					REGISTER_MAIN_LONG_CONSTANT: <>
+ 1081 					zend_strndup: 1024
+ 1082 					ZEND_STRL: <>
+ 1083 					zend_register_constant: ZEND_API int (), <./php/Zend/zend_constants.c 242>
+ 1084 						zend_strndup: 1024
+ 1085 						printf: <>
+ 1086 						zend_str_tolower: 530
+ 1087 						zend_hash_add: <>
+ 1088 						EG: <>
+ 1089 						zval_dtor: <>
+ 1090 						zend_error: 505
+ 1091 						free: <>
+ 1092 				zend_init_rsrc_plist: 1056
+ 1093 				zend_startup_builtin_functions: int (), <./php/Zend/zend_builtin_functions.c 117>
+ 1094 					zend_register_functions: int (), <./php/Zend/zend_API.c 710>
+ 1095 						function: 861
+ 1096 						CLS_FETCH: <>
+ 1097 						CG: <>
+ 1098 						zend_error: 505
+ 1099 						zend_unregister_functions: void (), <./php/Zend/zend_API.c 763>
+ 1100 							CLS_FETCH: <>
+ 1101 							CG: <>
+ 1102 							zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+ 1103 							zend_hash_del: <>
+ 1104 							strlen: <>
+ 1105 						zend_hash_add: <>
+ 1106 						strlen: <>
+ 1107 						zend_hash_exists: 980
+ 1108 			tsrm_set_new_thread_end_handler: TSRM_API void * (), <./php/TSRM/TSRM.c 450>
+ 1109 				tsrm_new_thread_end_handler: void () (), <./php/TSRM/TSRM.c 58>
+ 1110 			php_new_thread_end_handler: void (), <./php/main/main.c 729>
+ 1111 				zend_ini_refresh_caches: ZEND_API void (), <./php/Zend/zend_ini.c 159>
+ 1112 					zend_hash_apply_with_argument: 749
+ 1113 					zend_ini_refresh_cache: int (), <./php/Zend/zend_ini.c 150>
+ 1114 			ts_allocate_id: 234
+ 1115 			core_globals_ctor: void (), <./php/main/main.c 737>
+ 1116 				memset: <>
+ 1117 			EG: <>
+ 1118 			PG: <>
+ 1119 			SG: <>
+ 1120 			setlocale: <>
+ 1121 			WSAStartup: <>
+ 1122 			WSAGetLastError: <>
+ 1123 			SET_MUTEX: <>
+ 1124 			zend_register_list_destructors_ex: ZEND_API int (), <./php/Zend/zend_list.c 361>
+ 1125 				printf: <>
+ 1126 				zend_hash_next_index_insert: <>
+ 1127 			FREE_MUTEX: <>
+ 1128 			zend_ini_mstartup: int (), <./php/Zend/zend_ini.c 63>
+ 1129 				zend_hash_init_ex: 229
+ 1130 			php_config_ini_startup: int (), <./php/main/main.c 708>
+ 1131 				php_init_config: int (), <./php/main/php_ini.c 147>
+ 1132 					PLS_FETCH: <>
+ 1133 					zend_hash_init: 230
+ 1134 					pvalue_config_destructor: void (), <./php/main/php_ini.c 111>
+ 1135 						free: <>
+ 1136 					PG: <>
+ 1137 					getenv: <>
+ 1138 					malloc: <>
+ 1139 					GetWindowsDirectory: <>
+ 1140 					strlen: <>
+ 1141 					sprintf: <>
+ 1142 					strcpy: <>
+ 1143 					php_fopen_with_path: <>
+ 1144 					free: <>
+ 1145 					zend_parse_ini_file: int (), <./php/Zend/zend_ini_parser.c 165>
+ 1146 						CLS_FETCH: <>
+ 1147 						zend_ini_open_file_for_scanning: int (), <./php/Zend/zend_ini_scanner.c 549>
+ 1148 							CLS_FETCH: <>
+ 1149 							istdiostream: class, <./php/Zend/zend_language_scanner.c 2669>
+ 1150 							CG: <>
+ 1151 							ZendIniFlexLexer:  (), <./php/Zend/zend_ini_scanner.c 533>
+ 1152 							switch_streams: <>
+ 1153 							init_ini_scanner: void (), <./php/Zend/zend_ini_scanner.c 493>
+ 1154 							yy_switch_to_buffer:  (), <./php/Zend/zend_ini_scanner.c 1452>
+ 1155 								yy_load_buffer_state: void (), <./php/Zend/zend_ini_scanner.c 1480>
+ 1156 							yy_create_buffer: , <./php/Zend/zend_ini_scanner.c 1493>
+ 1157 						CG: <>
+ 1158 						ini_parse: <>
+ 1159 						zend_ini_close_file: void (), <./php/Zend/zend_ini_scanner.c 586>
+ 1160 							fclose: <>
+ 1161 							CLS_FETCH: <>
+ 1162 							delete: <>
+ 1163 							CG: <>
+ 1164 					php_config_ini_parser_cb: void (), <./php/main/php_ini.c 119>
+ 1165 						strcasecmp: <>
+ 1166 						Z_STRVAL_P: <>
+ 1167 						php_dl: void (), <./php/ext/standard/dl.c 212>
+ 1168 							get_module: DLEXPORT zend_module_entry * (), <./php/ext/ovrimos/ovrimos.c 1081>
+ 1169 							PLS_FETCH: <>
+ 1170 							ELS_FETCH: <>
+ 1171 							cfg_get_string: PHPAPI int (), <./php/main/php_ini.c 293>
+ 1172 								zend_hash_find: 304
+ 1173 								strlen: <>
+ 1174 							PG: <>
+ 1175 							strlen: <>
+ 1176 							emalloc: <>
+ 1177 							IS_SLASH: <>
+ 1178 							sprintf: <>
+ 1179 							estrndup: <>
+ 1180 							DL_LOAD: <>
+ 1181 							php_error: <>
+ 1182 							GET_DL_ERROR: <>
+ 1183 							efree: <>
+ 1184 							DL_FETCH_SYMBOL: <>
+ 1185 							DL_UNLOAD: <>
+ 1186 							zend_next_free_module: int (), <./php/Zend/zend_API.c 871>
+ 1187 							zend_register_module: ZEND_API int (), <./php/Zend/zend_API.c 787>
+ 1188 								zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+ 1189 								zend_register_functions: 1094
+ 1190 								zend_error: 505
+ 1191 								zend_hash_add: <>
+ 1192 								strlen: <>
+ 1193 							zend_hash_find: 304
+ 1194 						zend_load_extension: int (), <./php/Zend/zend_extensions.c 26>
+ 1195 							DL_LOAD: <>
+ 1196 							fprintf: <>
+ 1197 							dlerror: <>
+ 1198 							DL_FETCH_SYMBOL: <>
+ 1199 							DL_UNLOAD: <>
+ 1200 							zend_register_extension: int (), <./php/Zend/zend_extensions.c 98>
+ 1201 								zend_extension_dispatch_message: ZEND_API void (), <./php/Zend/zend_extensions.c 187>
+ 1202 									zend_llist_apply_with_arguments: ZEND_API void (), <./php/Zend/zend_llist.c 218>
+ 1203 										va_start: <>
+ 1204 										va_end: <>
+ 1205 									zend_extension_message_dispatcher: void (), <./php/Zend/zend_extensions.c 173>
+ 1206 										va_arg: <>
+ 1207 								zend_llist_add_element: 770
+ 1208 								zend_append_version_info: <>
+ 1209 						zend_hash_update: <>
+ 1210 						Z_STRLEN_P: <>
+ 1211 						zend_strndup: 1024
+ 1212 						php_alter_ini_entry: <>
+ 1213 					strdup: <>
+ 1214 					zend_hash_update: <>
+ 1215 					php_printf: 407
+ 1216 					efree: <>
+ 1217 				php_printf: 407
+ 1218 			REGISTER_INI_ENTRIES: <>
+ 1219 			php_init_fopen_wrappers: int (), <./php/main/fopen-wrappers.c 111>
+ 1220 				PLS_FETCH: <>
+ 1221 				PG: <>
+ 1222 				zend_hash_init: 230
+ 1223 			php_init_info_logos: int (), <./php/main/php_logos.c 51>
+ 1224 				zend_hash_init: 230
+ 1225 				php_register_info_logo: PHPAPI int (), <./php/main/php_logos.c 34>
+ 1226 					strlen: <>
+ 1227 					zend_hash_add: <>
+ 1228 			zend_set_utility_values: void (), <./php/Zend/zend.c 438>
+ 1229 				strlen: <>
+ 1230 			php_startup_sapi_content_types: int (), <./php/main/php_content_types.c 45>
+ 1231 				sapi_register_post_entries: SAPI_API int (), <./php/main/SAPI.c 517>
+ 1232 					sapi_register_post_entry: SAPI_API int (), <./php/main/SAPI.c 531>
+ 1233 						zend_hash_add: <>
+ 1234 				sapi_register_default_post_reader: SAPI_API int (), <./php/main/SAPI.c 585>
+ 1235 			REGISTER_MAIN_STRINGL_CONSTANT: <>
+ 1236 			strlen: <>
+ 1237 			php_startup_ticks: int (), <./php/main/php_ticks.c 24>
+ 1238 				zend_llist_init: 294
+ 1239 				PG: <>
+ 1240 			php_startup_internal_extensions: int (), <./php/main/internal_functions_win32.c 85>
+ 1241 				php_startup_extensions: int (), <./php/main/main.c 745>
+ 1242 					zend_startup_module: ZEND_API int (), <./php/Zend/zend_API.c 690>
+ 1243 						zend_next_free_module: 1186
+ 1244 						ELS_FETCH: <>
+ 1245 						zend_error: 505
+ 1246 						zend_register_module: 1187
+ 1247 			php_disable_functions: void (), <./php/main/main.c 151>
+ 1248 				strdup: <>
+ 1249 				INI_STR: <>
+ 1250 				strtok: <>
+ 1251 				zend_disable_function: ZEND_API int (), <./php/Zend/zend_API.c 975>
+ 1252 					CLS_FETCH: <>
+ 1253 					zend_hash_del: <>
+ 1254 					CG: <>
+ 1255 					zend_register_functions: 1094
+ 1256 				strlen: <>
+ 1257 			zend_startup_extensions: int (), <./php/Zend/zend_extensions.c 149>
+ 1258 				zend_llist_apply_with_del: ZEND_API void (), <./php/Zend/zend_llist.c 146>
+ 1259 					DEL_LLIST_ELEMENT: <>
+ 1260 				zend_extension_startup: int (), <./php/Zend/zend_extensions.c 127>
+ 1261 			sapi_deactivate: SAPI_API void (), <./php/main/SAPI.c 306>
+ 1262 				zend_llist_destroy: 831
+ 1263 				SG: <>
+ 1264 				efree: <>
+ 1265 				destroy_uploaded_files_hash: void (), <./php/main/rfc1867.c 99>
+ 1266 					zend_hash_apply: ZEND_API void (), <./php/Zend/zend_hash.c 683>
+ 1267 						IS_CONSISTENT: <>
+ 1268 						HASH_APPLY_BEGIN: <>
+ 1269 						zend_hash_apply_deleter: 752
+ 1270 						HASH_APPLY_END: <>
+ 1271 					SG: <>
+ 1272 					unlink_filename: int (), <./php/main/rfc1867.c 92>
+ 1273 						V_UNLINK: <>
+ 1274 					zend_hash_destroy: 550
+ 1275 					FREE_HASHTABLE: <>
+ 1276 		ts_resource: <>
+ 1277 		php_output_startup: 311
+ 1278 		SG: <>
+ 1279 		php_cgi_usage: void (), <./php/sapi/cgi/cgi_main.c 238>
+ 1280 			strrchr: <>
+ 1281 			php_printf: 407
+ 1282 		php_end_ob_buffers: PHPAPI void (), <./php/ext/standard/output.c 186>
+ 1283 			OLS_FETCH: <>
+ 1284 			OG: <>
+ 1285 			php_end_ob_buffer: PHPAPI void (), <./php/ext/standard/output.c 105>
+ 1286 				SLS_FETCH: <>
+ 1287 				OLS_FETCH: <>
+ 1288 				OG: <>
+ 1289 				CLS_FETCH: <>
+ 1290 				ALLOC_INIT_ZVAL: <>
+ 1291 				call_user_function_ex: 524
+ 1292 				CG: <>
+ 1293 				convert_to_string_ex: <>
+ 1294 				zval_ptr_dtor: <>
+ 1295 				FREE_ZVAL: <>
+ 1296 				SG: <>
+ 1297 				php_body_write: 314
+ 1298 				php_ub_body_write_no_header: 363
+ 1299 				php_ub_body_write: 318
+ 1300 				zend_stack_top: ZEND_API int (), <./php/Zend/zend_stack.c 51>
+ 1301 				zend_stack_del_top: ZEND_API int (), <./php/Zend/zend_stack.c 63>
+ 1302 					efree: <>
+ 1303 				zend_stack_destroy: ZEND_API int (), <./php/Zend/zend_stack.c 94>
+ 1304 					efree: <>
+ 1305 				efree: <>
+ 1306 		init_request_info: void (), <./php/sapi/cgi/cgi_main.c 271>
+ 1307 			getenv: <>
+ 1308 			SG: <>
+ 1309 			estrdup: <>
+ 1310 			atoi: 2
+ 1311 			php_handle_auth_data: PHPAPI int (), <./php/main/main.c 1241>
+ 1312 				strncmp: <>
+ 1313 				php_base64_decode: unsigned char * (), <./php/ext/standard/base64.c 71>
+ 1314 					strchr: <>
+ 1315 					emalloc: <>
+ 1316 					efree: <>
+ 1317 				strlen: <>
+ 1318 				strchr: <>
+ 1319 				SG: <>
+ 1320 				estrdup: <>
+ 1321 				efree: <>
+ 1322 		CG: <>
+ 1323 		zend_llist_init: 294
+ 1324 		define_command_line_ini_entry: void (), <./php/sapi/cgi/cgi_main.c 332>
+ 1325 			strchr: <>
+ 1326 			zend_alter_ini_entry: ZEND_API int (), <./php/Zend/zend_ini.c 165>
+ 1327 				zend_hash_find: 304
+ 1328 				estrndup: <>
+ 1329 				efree: <>
+ 1330 			strlen: <>
+ 1331 		estrdup: <>
+ 1332 		zend_llist_add_element: 770
+ 1333 		php_request_startup: int (), <./php/main/main.c 602>
+ 1334 			signal: <>
+ 1335 			sigchld_handler: void (), <./php/main/main.c 592>
+ 1336 				waitpid: <>
+ 1337 				signal: <>
+ 1338 				sigchld_handler: 1335
+ 1339 			PG: <>
+ 1340 			global_lock: MUTEX_T, <./php/main/main.c 89>
+ 1341 			php_output_startup: 311
+ 1342 			zend_activate: void (), <./php/Zend/zend.c 492>
+ 1343 				init_compiler: void (), <./php/Zend/zend_compile.c 72>
+ 1344 					zend_stack_init: ZEND_API int (), <./php/Zend/zend_stack.c 24>
+ 1345 						emalloc: <>
+ 1346 					CG: <>
+ 1347 					zend_llist_init: 294
+ 1348 					zend_hash_init: 230
+ 1349 					free_filename: void (), <./php/Zend/zend_compile.c 37>
+ 1350 						efree: <>
+ 1351 					zend_init_rsrc_list: int (), <./php/Zend/zend_list.c 284>
+ 1352 						zend_hash_init: 230
+ 1353 						EG: <>
+ 1354 						list_entry_destructor: void (), <./php/Zend/zend_list.c 244>
+ 1355 							zend_hash_index_find: 307
+ 1356 							EMPTY_SWITCH_DEFAULT_CASE: <>
+ 1357 							zend_error: 505
+ 1358 					init_compiler_declarables: void (), <./php/Zend/zend_compile.c 65>
+ 1359 						CG: <>
+ 1360 				init_executor: void (), <./php/Zend/zend_execute_API.c 106>
+ 1361 					INIT_ZVAL: <>
+ 1362 					EG: <>
+ 1363 					zend_ptr_stack_init: ZEND_API void (), <./php/Zend/zend_ptr_stack.c 27>
+ 1364 						emalloc: <>
+ 1365 					original_sigsegv_handler: void () (), <./php/Zend/zend_execute_API.c 51>
+ 1366 					signal: <>
+ 1367 					zend_handle_sigsegv: void (), <./php/Zend/zend_execute_API.c 52>
+ 1368 						fflush: <>
+ 1369 						original_sigsegv_handler: void () (), <./php/Zend/zend_execute_API.c 51>
+ 1370 						zend_handle_sigsegv: 1367
+ 1371 						signal: <>
+ 1372 						ELS_FETCH: <>
+ 1373 						fprintf: <>
+ 1374 						EG: <>
+ 1375 						get_active_function_name: 899
+ 1376 						zend_get_executed_filename: 358
+ 1377 						zend_get_executed_lineno: 360
+ 1378 					CG: <>
+ 1379 					zend_hash_init: 230
+ 1380 					zend_llist_apply: ZEND_API void (), <./php/Zend/zend_llist.c 161>
+ 1381 					zend_extension_activator: void (), <./php/Zend/zend_execute_API.c 78>
+ 1382 				startup_scanner: <>
+ 1383 			sapi_activate: 293
+ 1384 			zend_set_timeout: void (), <./php/Zend/zend_execute_API.c 660>
+ 1385 				ELS_FETCH: <>
+ 1386 				EG: <>
+ 1387 				InterlockedIncrement: <>
+ 1388 				zend_init_timeout_thread: void (), <./php/Zend/zend_execute_API.c 637>
+ 1389 					CreateEvent: <>
+ 1390 					timeout_thread_proc: unsigned __stdcall (), <./php/Zend/zend_execute_API.c 606>
+ 1391 						MSG: <>
+ 1392 						zend_timeout_WndProc: LRESULT CALLBACK (), <./php/Zend/zend_execute_API.c 566>
+ 1393 							PostQuitMessage: <>
+ 1394 							KillTimer: <>
+ 1395 							SetTimer: <>
+ 1396 							ts_resource_ex: TSRM_API void * (), <./php/TSRM/TSRM.c 232>
+ 1397 								tsrm_thread_id: 238
+ 1398 								TSRM_ERROR: <>
+ 1399 								tsrm_mutex_lock: 236
+ 1400 								THREAD_HASH_OF: <>
+ 1401 								allocate_new_resource: void (), <./php/TSRM/TSRM.c 203>
+ 1402 									TSRM_ERROR: <>
+ 1403 									malloc: <>
+ 1404 									tsrm_mutex_unlock: 251
+ 1405 									tsrm_new_thread_begin_handler: void () (), <./php/TSRM/TSRM.c 57>
+ 1406 									ctor: <>
+ 1407 									tsrm_new_thread_end_handler: void () (), <./php/TSRM/TSRM.c 58>
+ 1408 								ts_resource: <>
+ 1409 								TSRM_SAFE_ARRAY_OFFSET: <>
+ 1410 								TSRM_UNSHUFFLE_RSRC_ID: <>
+ 1411 								tsrm_mutex_unlock: 251
+ 1412 								TSRM_SHUFFLE_RSRC_ID: <>
+ 1413 							EG: <>
+ 1414 							DefWindowProc: <>
+ 1415 						RegisterClass: <>
+ 1416 						CreateWindow: <>
+ 1417 						SetEvent: <>
+ 1418 						GetMessage: <>
+ 1419 						SendMessage: <>
+ 1420 						DestroyWindow: <>
+ 1421 						UnregisterClass: <>
+ 1422 					WaitForSingleObject: <>
+ 1423 				PostThreadMessage: <>
+ 1424 				GetCurrentThreadId: <>
+ 1425 				setitimer: int (), <./php/win32/time.c 100>
+ 1426 					PeekMessage: <>
+ 1427 					malloc: <>
+ 1428 					GetCurrentThreadId: <>
+ 1429 					timeSetEvent: <>
+ 1430 					setitimer_timeout: LPTIMECALLBACK (), <./php/win32/time.c 87>
+ 1431 						raise: <>
+ 1432 						PostThreadMessage: <>
+ 1433 						free: <>
+ 1434 					timeKillEvent: <>
+ 1435 				signal: <>
+ 1436 				zend_timeout: 503
+ 1437 				sigemptyset: <>
+ 1438 				sigaddset: <>
+ 1439 				sigprocmask: <>
+ 1440 			EG: <>
+ 1441 			sapi_add_header: <>
+ 1442 			ALLOC_INIT_ZVAL: <>
+ 1443 			Z_STRLEN_P: <>
+ 1444 			strlen: <>
+ 1445 			Z_STRVAL_P: <>
+ 1446 			estrndup: <>
+ 1447 			Z_TYPE_P: <>
+ 1448 			php_start_ob_buffer: PHPAPI int (), <./php/ext/standard/output.c 91>
+ 1449 				OLS_FETCH: <>
+ 1450 				OG: <>
+ 1451 				php_ob_init: void (), <./php/ext/standard/output.c 231>
+ 1452 					OLS_FETCH: <>
+ 1453 					OG: <>
+ 1454 					zend_stack_init: 1344
+ 1455 					zend_stack_push: ZEND_API int (), <./php/Zend/zend_stack.c 36>
+ 1456 						erealloc: <>
+ 1457 						emalloc: <>
+ 1458 						memcpy: <>
+ 1459 					emalloc: <>
+ 1460 				php_body_write: 314
+ 1461 				php_b_body_write: int (), <./php/ext/standard/output.c 338>
+ 1462 					php_ob_append: void (), <./php/ext/standard/output.c 251>
+ 1463 						OLS_FETCH: <>
+ 1464 						OG: <>
+ 1465 						php_end_ob_buffer: 1285
+ 1466 						php_start_ob_buffer: 1448
+ 1467 						php_ob_append: 1462
+ 1468 						php_ob_allocate: inline void (), <./php/ext/standard/output.c 217>
+ 1469 							OLS_FETCH: <>
+ 1470 							OG: <>
+ 1471 							erealloc: <>
+ 1472 						memcpy: <>
+ 1473 			php_start_implicit_flush: PHPAPI void (), <./php/ext/standard/output.c 196>
+ 1474 				OLS_FETCH: <>
+ 1475 				php_end_ob_buffer: 1285
+ 1476 				OG: <>
+ 1477 			php_hash_environment: int (), <./php/main/main.c 991>
+ 1478 				zend_bool: <>
+ 1479 				PG: <>
+ 1480 				ALLOC_ZVAL: <>
+ 1481 				array_init: <>
+ 1482 				INIT_PZVAL: <>
+ 1483 				php_import_environment_variables: void (), <./php/main/php_variables.c 311>
+ 1484 					strchr: <>
+ 1485 					estrndup: <>
+ 1486 					php_register_variable: PHPAPI void (), <./php/main/php_variables.c 32>
+ 1487 						php_register_variable_safe: PHPAPI void (), <./php/main/php_variables.c 37>
+ 1488 							PG: <>
+ 1489 							php_addslashes: PHPAPI char * (), <./php/ext/standard/string.c 1951>
+ 1490 								PLS_FETCH: <>
+ 1491 								emalloc: <>
+ 1492 								strlen: <>
+ 1493 								PG: <>
+ 1494 								STR_FREE: <>
+ 1495 							estrndup: <>
+ 1496 							php_register_variable_ex: PHPAPI void (), <./php/main/php_variables.c 54>
+ 1497 								zend_bool: <>
+ 1498 								PG: <>
+ 1499 								EG: <>
+ 1500 								zval_dtor: <>
+ 1501 								strchr: <>
+ 1502 								strlen: <>
+ 1503 								MAKE_STD_ZVAL: <>
+ 1504 								array_init: <>
+ 1505 								zend_hash_next_index_insert: <>
+ 1506 								php_addslashes: 1489
+ 1507 								zend_hash_find: 304
+ 1508 								zend_hash_update: <>
+ 1509 								efree: <>
+ 1510 								php_error: <>
+ 1511 						strlen: <>
+ 1512 					efree: <>
+ 1513 				SG: <>
+ 1514 				strcasecmp: <>
+ 1515 				php_treat_data: void (), <./php/main/php_variables.c 218>
+ 1516 					ALLOC_ZVAL: <>
+ 1517 					array_init: <>
+ 1518 					INIT_PZVAL: <>
+ 1519 					PG: <>
+ 1520 					sapi_handle_post: SAPI_API void (), <./php/main/SAPI.c 98>
+ 1521 						SG: <>
+ 1522 						efree: <>
+ 1523 					SG: <>
+ 1524 					estrdup: <>
+ 1525 					php_strtok_r: PHPAPI char * (), <./php/main/reentrancy.c 345>
+ 1526 					strchr: <>
+ 1527 					php_url_decode: int (), <./php/ext/standard/url.c 317>
+ 1528 						isxdigit: <>
+ 1529 						php_htoi: int (), <./php/ext/standard/url.c 205>
+ 1530 							isupper: <>
+ 1531 							tolower: <>
+ 1532 					strlen: <>
+ 1533 					php_register_variable_safe: 1487
+ 1534 					efree: <>
+ 1535 				php_error: <>
+ 1536 				php_register_server_variables: inline void (), <./php/main/main.c 962>
+ 1537 					ALLOC_ZVAL: <>
+ 1538 					array_init: <>
+ 1539 					INIT_PZVAL: <>
+ 1540 					PG: <>
+ 1541 					php_build_argv: void (), <./php/main/main.c 1097>
+ 1542 						ALLOC_ZVAL: <>
+ 1543 						array_init: <>
+ 1544 						INIT_PZVAL: <>
+ 1545 						strchr: <>
+ 1546 						strlen: <>
+ 1547 						estrndup: <>
+ 1548 						zend_hash_next_index_insert: <>
+ 1549 						efree: <>
+ 1550 						PG: <>
+ 1551 						zend_hash_update: <>
+ 1552 						EG: <>
+ 1553 						zend_hash_add: <>
+ 1554 					SG: <>
+ 1555 					php_register_variable: 1486
+ 1556 				zend_hash_update: <>
+ 1557 				EG: <>
+ 1558 			zend_activate_modules: void (), <./php/Zend/zend.c 500>
+ 1559 				zend_hash_apply: 1266
+ 1560 				module_registry_request_startup: int (), <./php/Zend/zend_API.c 830>
+ 1561 					ELS_FETCH: <>
+ 1562 					zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+ 1563 					zend_error: 505
+ 1564 					exit: <>
+ 1565 		php_module_shutdown: void (), <./php/main/main.c 931>
+ 1566 			PLS_FETCH: <>
+ 1567 			php_config_ini_shutdown: void (), <./php/main/main.c 717>
+ 1568 				php_shutdown_config: int (), <./php/main/php_ini.c 242>
+ 1569 					zend_hash_destroy: 550
+ 1570 			WSACleanup: <>
+ 1571 			php_shutdown_ticks: void (), <./php/main/php_ticks.c 30>
+ 1572 				zend_llist_destroy: 831
+ 1573 				PG: <>
+ 1574 			sapi_flush: 377
+ 1575 			global_lock_destroy: <>
+ 1576 			zend_shutdown: void (), <./php/Zend/zend.c 416>
+ 1577 				zend_shutdown_timeout_thread: void (), <./php/Zend/zend_execute_API.c 645>
+ 1578 					PostThreadMessage: <>
+ 1579 				zend_destroy_rsrc_plist: 1068
+ 1580 				zend_destroy_rsrc_list_dtors: void (), <./php/Zend/zend_list.c 391>
+ 1581 					zend_hash_destroy: 550
+ 1582 				zend_hash_destroy: 550
+ 1583 				free: <>
+ 1584 				zend_shutdown_extensions: void (), <./php/Zend/zend_extensions.c 156>
+ 1585 					zend_llist_apply: 1380
+ 1586 					zend_extension_shutdown: void (), <./php/Zend/zend_extensions.c 118>
+ 1587 					zend_llist_destroy: 831
+ 1588 				zend_shutdown_constants: 1064
+ 1589 			php_shutdown_fopen_wrappers: int (), <./php/main/fopen-wrappers.c 121>
+ 1590 				PLS_FETCH: <>
+ 1591 				PG: <>
+ 1592 				zend_hash_destroy: 550
+ 1593 			php_shutdown_info_logos: int (), <./php/main/php_logos.c 63>
+ 1594 				zend_hash_destroy: 550
+ 1595 			UNREGISTER_INI_ENTRIES: <>
+ 1596 			zend_ini_mshutdown: int (), <./php/Zend/zend_ini.c 72>
+ 1597 				zend_hash_destroy: 550
+ 1598 			shutdown_memory_manager: ZEND_API void (), <./php/Zend/zend_alloc.c 425>
+ 1599 				ALS_FETCH: <>
+ 1600 				AG: <>
+ 1601 				efree: <>
+ 1602 				zend_message_dispatcher: <>
+ 1603 				REMOVE_POINTER_FROM_LIST: <>
+ 1604 				free: <>
+ 1605 				zend_get_ini_entry: int (), <./php/Zend/zend.c 543>
+ 1606 					zend_get_ini_entry_p: int () (), <./php/Zend/zend.c 54>
+ 1607 				atoi: 2
+ 1608 				fprintf: <>
+ 1609 		php_print_info: PHPAPI void (), <./php/ext/standard/info.c 148>
+ 1610 			INI_INT: <>
+ 1611 			ELS_FETCH: <>
+ 1612 			SLS_FETCH: <>
+ 1613 			time: <>
+ 1614 			php_localtime_r: 397
+ 1615 			PUTS: <>
+ 1616 			get_zend_version: ZEND_API char * (), <./php/Zend/zend.c 486>
+ 1617 			php_get_uname: PHPAPI char * (), <./php/ext/standard/info.c 124>
+ 1618 				GetVersion: <>
+ 1619 				LOBYTE: <>
+ 1620 				LOWORD: <>
+ 1621 				HIBYTE: <>
+ 1622 				HIWORD: <>
+ 1623 				snprintf: <>
+ 1624 				estrdup: <>
+ 1625 			php_info_print_style: void (), <./php/ext/standard/info.c 111>
+ 1626 				php_printf: 407
+ 1627 			php_info_print_box_start: PHPAPI void (), <./php/ext/standard/info.c 345>
+ 1628 				php_info_print_table_start: PHPAPI void (), <./php/ext/standard/info.c 334>
+ 1629 					php_printf: 407
+ 1630 				php_printf: 407
+ 1631 			SG: <>
+ 1632 			php_printf: 407
+ 1633 			php_info_print_box_end: PHPAPI void (), <./php/ext/standard/info.c 355>
+ 1634 				php_printf: 407
+ 1635 				php_info_print_table_end: PHPAPI void (), <./php/ext/standard/info.c 339>
+ 1636 					php_printf: 407
+ 1637 			php_info_print_table_start: 1628
+ 1638 			php_info_print_table_row: PHPAPI void (), <./php/ext/standard/info.c 394>
+ 1639 				va_start: <>
+ 1640 				php_printf: 407
+ 1641 				va_arg: <>
+ 1642 				va_end: <>
+ 1643 			php_info_print_table_end: 1635
+ 1644 			zend_html_puts: ZEND_API void (), <./php/Zend/zend_highlight.c 64>
+ 1645 				zend_html_putc: ZEND_API void (), <./php/Zend/zend_highlight.c 36>
+ 1646 					ZEND_PUTS: <>
+ 1647 					ZEND_PUTC: <>
+ 1648 			strlen: <>
+ 1649 			efree: <>
+ 1650 			php_info_print_hr: PHPAPI void (), <./php/ext/standard/info.c 361>
+ 1651 				php_printf: 407
+ 1652 			zend_ini_sort_entries: void (), <./php/Zend/zend_ini.c 106>
+ 1653 				zend_hash_sort: ZEND_API int (), <./php/Zend/zend_hash.c 1083>
+ 1654 					IS_CONSISTENT: <>
+ 1655 					pemalloc: <>
+ 1656 					HANDLE_BLOCK_INTERRUPTIONS: <>
+ 1657 					pefree: <>
+ 1658 					HANDLE_UNBLOCK_INTERRUPTIONS: <>
+ 1659 					zend_hash_rehash: ZEND_API int (), <./php/Zend/zend_hash.c 476>
+ 1660 						IS_CONSISTENT: <>
+ 1661 						memset: <>
+ 1662 						CONNECT_TO_BUCKET_DLLIST: <>
+ 1663 				qsort: <>
+ 1664 				ini_key_compare: int (), <./php/Zend/zend_ini.c 86>
+ 1665 					ZEND_NORMALIZE_BOOL: <>
+ 1666 					zend_binary_strcasecmp: ZEND_API int (), <./php/Zend/zend_operators.c 1532>
+ 1667 						MIN: <>
+ 1668 						tolower: <>
+ 1669 			SECTION: <>
+ 1670 			display_ini_entries: PHPAPI void (), <./php/main/php_ini.c 77>
+ 1671 				php_info_print_table_start: 1628
+ 1672 				php_info_print_table_header: PHPAPI void (), <./php/ext/standard/info.c 372>
+ 1673 					va_start: <>
+ 1674 					php_printf: 407
+ 1675 					va_arg: <>
+ 1676 					va_end: <>
+ 1677 				zend_ini_apply_with_argument: ZEND_API void (), <./php/Zend/zend_ini.c 378>
+ 1678 					zend_hash_apply_with_argument: 749
+ 1679 				php_ini_displayer: int (), <./php/main/php_ini.c 59>
+ 1680 					PUTS: <>
+ 1681 					PHPWRITE: <>
+ 1682 					php_ini_displayer_cb: void (), <./php/main/php_ini.c 31>
+ 1683 						PHPWRITE: <>
+ 1684 				php_info_print_table_end: 1635
+ 1685 			zend_hash_apply_with_argument: 749
+ 1686 			php_info_print_table_header: 1672
+ 1687 			estrdup: <>
+ 1688 			strchr: <>
+ 1689 			zend_hash_find: 304
+ 1690 			EG: <>
+ 1691 			php_print_gpcse_array: void (), <./php/ext/standard/info.c 61>
+ 1692 				zend_hash_find: 304
+ 1693 				EG: <>
+ 1694 				zend_hash_internal_pointer_reset: <>
+ 1695 				zend_hash_get_current_data: <>
+ 1696 				zval_copy_ctor: <>
+ 1697 				convert_to_string: <>
+ 1698 				PUTS: <>
+ 1699 				zend_hash_get_current_key: <>
+ 1700 				efree: <>
+ 1701 				php_printf: 407
+ 1702 				zend_print_zval_r: ZEND_API void (), <./php/Zend/zend.c 190>
+ 1703 					zend_print_zval_r_ex: ZEND_API void (), <./php/Zend/zend.c 196>
+ 1704 						ZEND_PUTS: <>
+ 1705 						print_hash: void (), <./php/Zend/zend.c 78>
+ 1706 							ZEND_PUTS: <>
+ 1707 							zend_hash_internal_pointer_reset: <>
+ 1708 							zend_hash_get_current_data: <>
+ 1709 							zend_hash_get_current_key: <>
+ 1710 							efree: <>
+ 1711 							zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+ 1712 							zend_print_zval_r: 1702
+ 1713 							zend_hash_move_forward: <>
+ 1714 						zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+ 1715 						zend_print_variable: 715
+ 1716 				zend_hash_move_forward: <>
+ 1717 				zval_dtor: <>
+ 1718 		php_printf: 407
+ 1719 		get_zend_version: 1616
+ 1720 		zend_hash_apply_with_argument: 749
+ 1721 		zend_llist_apply_with_argument: 329
+ 1722 		zend_load_extension: 1194
+ 1723 		malloc: <>
+ 1724 		strcat: <>
+ 1725 		zend_llist_apply: 1380
+ 1726 		php_register_command_line_global_vars: void (), <./php/sapi/cgi/cgi_main.c 348>
+ 1727 			ELS_FETCH: <>
+ 1728 			PLS_FETCH: <>
+ 1729 			strchr: <>
+ 1730 			printf: <>
+ 1731 			php_register_variable: 1486
+ 1732 			efree: <>
+ 1733 		zend_llist_destroy: 831
+ 1734 		php_fopen_primary_script: <>
+ 1735 		V_FOPEN: <>
+ 1736 		php_request_shutdown: void (), <./php/main/main.c 661>
+ 1737 			CLS_FETCH: <>
+ 1738 			ELS_FETCH: <>
+ 1739 			SLS_FETCH: <>
+ 1740 			PLS_FETCH: <>
+ 1741 			setjmp: <>
+ 1742 			EG: <>
+ 1743 			php_end_ob_buffers: 1282
+ 1744 			SG: <>
+ 1745 			sapi_send_headers: 325
+ 1746 			PG: <>
+ 1747 			php_call_shutdown_functions: void (), <./php/ext/standard/basic_functions.c 1712>
+ 1748 				BLS_FETCH: <>
+ 1749 				ELS_FETCH: <>
+ 1750 				BG: <>
+ 1751 				memcpy: <>
+ 1752 				EG: <>
+ 1753 				setjmp: <>
+ 1754 				zend_hash_apply: 1266
+ 1755 				user_shutdown_function_call: int (), <./php/ext/standard/basic_functions.c 1648>
+ 1756 					CLS_FETCH: <>
+ 1757 					call_user_function: int (), <./php/Zend/zend_execute_API.c 315>
+ 1758 						emalloc: <>
+ 1759 						call_user_function_ex: 524
+ 1760 						COPY_PZVAL_TO_ZVAL: <>
+ 1761 						INIT_ZVAL: <>
+ 1762 						efree: <>
+ 1763 					CG: <>
+ 1764 					zval_dtor: <>
+ 1765 					php_error: <>
+ 1766 					Z_STRVAL_P: <>
+ 1767 				zend_hash_destroy: 550
+ 1768 				efree: <>
+ 1769 			zend_deactivate_modules: void (), <./php/Zend/zend.c 505>
+ 1770 				ELS_FETCH: <>
+ 1771 				EG: <>
+ 1772 				setjmp: <>
+ 1773 				zend_hash_apply: 1266
+ 1774 				module_registry_cleanup: int (), <./php/Zend/zend_API.c 850>
+ 1775 					zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+ 1776 			zend_ini_rshutdown: int (), <./php/Zend/zend_ini.c 79>
+ 1777 				zend_hash_apply_with_argument: 749
+ 1778 				zend_restore_ini_entry_cb: int (), <./php/Zend/zend_ini.c 44>
+ 1779 					efree: <>
+ 1780 			zend_deactivate: void (), <./php/Zend/zend.c 515>
+ 1781 				EG: <>
+ 1782 				setjmp: <>
+ 1783 				shutdown_scanner: void (), <./php/Zend/zend_language_scanner.c 2717>
+ 1784 					CG: <>
+ 1785 					efree: <>
+ 1786 				shutdown_executor: void (), <./php/Zend/zend_execute_API.c 154>
+ 1787 					zend_ptr_stack_destroy: ZEND_API void (), <./php/Zend/zend_ptr_stack.c 89>
+ 1788 						efree: <>
+ 1789 					EG: <>
+ 1790 					zend_hash_destroy: 550
+ 1791 					efree: <>
+ 1792 					zend_llist_apply: 1380
+ 1793 					zend_extension_deactivator: void (), <./php/Zend/zend_execute_API.c 86>
+ 1794 					zval_ptr_dtor: <>
+ 1795 					zend_hash_apply: 1266
+ 1796 					is_not_internal_function: int (), <./php/Zend/zend_execute_API.c 94>
+ 1797 					is_not_internal_class: int (), <./php/Zend/zend_execute_API.c 100>
+ 1798 					zend_destroy_rsrc_list: void (), <./php/Zend/zend_list.c 296>
+ 1799 						zend_hash_graceful_destroy: 1069
+ 1800 						EG: <>
+ 1801 					clean_non_persistent_constants: void (), <./php/Zend/zend_constants.c 159>
+ 1802 						ELS_FETCH: <>
+ 1803 						zend_hash_apply: 1266
+ 1804 						EG: <>
+ 1805 						clean_non_persistent_constant: int (), <./php/Zend/zend_constants.c 54>
+ 1806 					signal: <>
+ 1807 					original_sigsegv_handler: void () (), <./php/Zend/zend_execute_API.c 51>
+ 1808 					zval_dtor: <>
+ 1809 					FREE_ZVAL: <>
+ 1810 					zend_ptr_stack_clean: ZEND_API void (), <./php/Zend/zend_ptr_stack.c 107>
+ 1811 						zend_ptr_stack_apply: ZEND_API void (), <./php/Zend/zend_ptr_stack.c 97>
+ 1812 						efree: <>
+ 1813 				shutdown_compiler: void (), <./php/Zend/zend_compile.c 93>
+ 1814 					zend_stack_destroy: 1303
+ 1815 					CG: <>
+ 1816 					zend_hash_destroy: 550
+ 1817 					zend_llist_destroy: 831
+ 1818 			sapi_deactivate: 1261
+ 1819 			shutdown_memory_manager: 1598
+ 1820 			CG: <>
+ 1821 			zend_unset_timeout: void (), <./php/Zend/zend_execute_API.c 693>
+ 1822 				ELS_FETCH: <>
+ 1823 				PostThreadMessage: <>
+ 1824 				GetCurrentThreadId: <>
+ 1825 				setitimer: 1425
+ 1826 			global_unlock: <>
+ 1827 		fgetc: <>
+ 1828 		rewind: <>
+ 1829 		php_execute_script: PHPAPI int (), <./php/main/main.c 1170>
+ 1830 			SLS_FETCH: <>
+ 1831 			EG: <>
+ 1832 			php_handle_special_queries: PHPAPI int (), <./php/main/main.c 1156>
+ 1833 				SG: <>
+ 1834 				PG: <>
+ 1835 				php_info_logos: int (), <./php/main/php_logos.c 70>
+ 1836 					zend_hash_find: 304
+ 1837 					strlen: <>
+ 1838 					malloc: <>
+ 1839 					strcpy: <>
+ 1840 					strcat: <>
+ 1841 					sapi_add_header: <>
+ 1842 					free: <>
+ 1843 					PHPWRITE: <>
+ 1844 				strcmp: <>
+ 1845 				php_print_credits: PHPAPI void (), <./php/ext/standard/credits.c 27>
+ 1846 					PUTS: <>
+ 1847 					php_info_print_style: 1625
+ 1848 					php_info_print_table_start: 1628
+ 1849 					php_info_print_table_header: 1672
+ 1850 					php_info_print_table_row: 1638
+ 1851 					php_info_print_table_end: 1635
+ 1852 					php_info_print_table_colspan_header: PHPAPI void (), <./php/ext/standard/info.c 366>
+ 1853 						php_printf: 407
+ 1854 					CREDIT_LINE: <>
+ 1855 			do_alloca: <>
+ 1856 			setjmp: <>
+ 1857 			V_CHDIR: <>
+ 1858 			free_alloca: <>
+ 1859 			UpdateIniFromRegistry: void (), <./php/win32/registry.c 8>
+ 1860 				RegOpenKeyEx: <>
+ 1861 				estrdup: <>
+ 1862 				strchr: <>
+ 1863 				V_GETCWD: <>
+ 1864 				efree: <>
+ 1865 				emalloc: <>
+ 1866 				strlen: <>
+ 1867 				sprintf: <>
+ 1868 				php_strtok_r: 1525
+ 1869 				RegEnumValue: <>
+ 1870 				zend_alter_ini_entry: 1326
+ 1871 				RegCloseKey: <>
+ 1872 			PG: <>
+ 1873 			V_GETCWD: <>
+ 1874 			V_CHDIR_FILE: <>
+ 1875 			zend_execute_scripts: ZEND_API int (), <./php/Zend/zend.c 714>
+ 1876 				va_start: <>
+ 1877 				va_arg: <>
+ 1878 				EG: <>
+ 1879 				zend_compile_file: ZEND_API zend_op_array *() (), <./php/Zend/zend_compile.c 29>
+ 1880 				zend_destroy_file_handle: 943
+ 1881 				zend_execute: ZEND_API void () (), <./php/Zend/zend_execute_API.c 37>
+ 1882 				zval_ptr_dtor: <>
+ 1883 				destroy_op_array: 965
+ 1884 				efree: <>
+ 1885 				va_end: <>
+ 1886 		php_lint_script: PHPAPI int (), <./php/main/main.c 1270>
+ 1887 			SLS_FETCH: <>
+ 1888 			php_hash_environment: 1477
+ 1889 			zend_activate_modules: 1558
+ 1890 			PG: <>
+ 1891 			setjmp: <>
+ 1892 			EG: <>
+ 1893 			UpdateIniFromRegistry: 1859
+ 1894 			zend_compile_file: ZEND_API zend_op_array *() (), <./php/Zend/zend_compile.c 29>
+ 1895 			destroy_op_array: 965
+ 1896 		open_file_for_scanning: ZEND_API int (), <./php/Zend/zend_language_scanner.c 2825>
+ 1897 			fdopen: <>
+ 1898 			zend_llist_add_element: 770
+ 1899 			CG: <>
+ 1900 			yy_switch_to_buffer: 1154
+ 1901 			yy_create_buffer: , <./php/Zend/zend_ini_scanner.c 1493>
+ 1902 			BEGIN: <>
+ 1903 			ifstream: <>
+ 1904 			istdiostream: class, <./php/Zend/zend_language_scanner.c 2669>
+ 1905 			delete: <>
+ 1906 			ZendFlexLexer: <>
+ 1907 			switch_streams: <>
+ 1908 			zend_set_compiled_filename: ZEND_API char * (), <./php/Zend/zend_compile.c 106>
+ 1909 				strlen: <>
+ 1910 				CLS_FETCH: <>
+ 1911 				zend_hash_find: 304
+ 1912 				CG: <>
+ 1913 				estrndup: <>
+ 1914 				zend_hash_update: <>
+ 1915 		php_get_highlight_struct: ZEND_API void (), <./php/ext/standard/basic_functions.c 1765>
+ 1916 			INI_STR: <>
+ 1917 		zend_highlight: ZEND_API void (), <./php/Zend/zend_highlight.c 75>
+ 1918 			CLS_FETCH: <>
+ 1919 			zend_printf: ZEND_API int () (), <./php/Zend/zend.c 45>
+ 1920 			lex_scan: <>
+ 1921 			zend_html_puts: 1644
+ 1922 			efree: <>
+ 1923 			zend_bool: <>
+ 1924 			strchr: <>
+ 1925 		zend_indent: ZEND_API void (), <./php/Zend/zend_indent.c 54>
+ 1926 			CLS_FETCH: <>
+ 1927 			memset: <>
+ 1928 			lex_scan: <>
+ 1929 			ZEND_PUTS: <>
+ 1930 			handle_whitespace: void (), <./php/Zend/zend_indent.c 38>
+ 1931 				memset: <>
+ 1932 			efree: <>
+ 1933 		persist_alloc: <>
+ 1934 		STR_FREE: <>
+ 1935 		tsrm_shutdown: TSRM_API void (), <./php/TSRM/TSRM.c 109>
+ 1936 			free: <>
+ 1937 			tsrm_mutex_free: TSRM_API void (), <./php/TSRM/TSRM.c 381>
+ 1938 				DeleteCriticalSection: <>
+ 1939 				free: <>
+ 1940 				pthread_mutex_destroy: <>
+ 1941 				crit_terminate: <>
+ 1942 				PISync_delete: <>
+ 1943 				printf: <>
+ 1944 				mythreadid: <>
+ 1945 			TSRM_ERROR: <>
+ 1946 			fclose: <>
+ 1947 			pth_kill: <>
+ 1948 		tsrm_strtok_r: char * (), <./php/TSRM/tsrm_strtok_r.c 17>
+ 1949 			in_character_class: inline int (), <./php/TSRM/tsrm_strtok_r.c 6>

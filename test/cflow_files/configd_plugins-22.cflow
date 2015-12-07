@@ -1,0 +1,905 @@
+    1 	main: int (), <./InterfaceNamer.bproj/ifnamer.c 1154>
+    2 		start: void (), <./KernelEventMonitor.bproj/eventmon.c 587>
+    3 			SCDLog: <>
+    4 			CFSTR: <>
+    5 			SCDOpen: <>
+    6 			SCDError: <>
+    7 			SCPNotificationKeyCreate: <>
+    8 			SCDNotifierAdd: <>
+    9 			CFRelease: <>
+   10 			SCDNotifierInformViaCallback: <>
+   11 			updateConfiguration: boolean_t (), <./PreferencesMonitor.bproj/prefsmon.c 200>
+   12 				SCDLog: <>
+   13 				CFSTR: <>
+   14 				SCDNotifierGetChanges: <>
+   15 				CFRelease: <>
+   16 				SCDError: <>
+   17 				CFSetCreateMutable: <>
+   18 				SCDList: <>
+   19 				CFArrayGetCount: <>
+   20 				CFSetAddValue: <>
+   21 				CFArrayGetValueAtIndex: <>
+   22 				CFDictionaryCreateMutable: <>
+   23 				CFDateCreate: <>
+   24 				CFAbsoluteTimeGetCurrent: <>
+   25 				SCPOpen: <>
+   26 				SCDKeyCreate: <>
+   27 				CFDictionarySetValue: <>
+   28 				SCPGet: <>
+   29 				SCPError: <>
+   30 				CFGetTypeID: <>
+   31 				CFDictionaryGetTypeID: <>
+   32 				flatten: void (), <./PreferencesMonitor.bproj/prefsmon.c 104>
+   33 					CFDictionaryGetValueIfPresent: <>
+   34 					SCPPathGetValue: <>
+   35 					SCDLog: <>
+   36 					CFSTR: <>
+   37 					SCPError: <>
+   38 					CFDictionaryContainsKey: <>
+   39 					CFStringCreateWithFormat: <>
+   40 					CFDictionaryGetValue: <>
+   41 					CFDictionaryCreateMutable: <>
+   42 					CFDictionaryCreateMutableCopy: <>
+   43 					CFDictionaryGetCount: <>
+   44 					CFAllocatorAllocate: <>
+   45 					CFDictionaryGetKeysAndValues: <>
+   46 					CFGetTypeID: <>
+   47 					CFDictionaryGetTypeID: <>
+   48 					CFDictionarySetValue: <>
+   49 					CFEqual: <>
+   50 					flatten: 32
+   51 					CFRelease: <>
+   52 					CFAllocatorDeallocate: <>
+   53 				CFStringGetTypeID: <>
+   54 				SCPPathGetValue: <>
+   55 				SCDLock: <>
+   56 				CFDictionaryApplyFunction: <>
+   57 				updateCache: void (), <./PreferencesMonitor.bproj/prefsmon.c 42>
+   58 					SCDGet: <>
+   59 					SCDHandleGetData: <>
+   60 					CFEqual: <>
+   61 					SCDHandleSetData: <>
+   62 					SCDSet: <>
+   63 					SCDLog: <>
+   64 					CFSTR: <>
+   65 					SCDError: <>
+   66 					SCDHandleRelease: <>
+   67 					SCDHandleInit: <>
+   68 					SCDAdd: <>
+   69 					CFSetRemoveValue: <>
+   70 					CFSetAddValue: <>
+   71 				CFSetApplyFunction: <>
+   72 				removeCacheKey: void (), <./PreferencesMonitor.bproj/prefsmon.c 89>
+   73 					SCDRemove: <>
+   74 					SCDLog: <>
+   75 					CFSTR: <>
+   76 					SCDError: <>
+   77 				SCDUnlock: <>
+   78 				SCPClose: <>
+   79 			SCDClose: <>
+   80 			ip_plugin_init: void (), <./IPMonitor.bproj/ip_plugin.c 1522>
+   81 				SCDKeyCreateNetworkGlobalEntity: <>
+   82 				SCDKeyCreate: <>
+   83 				CFSTR: <>
+   84 				CFDictionaryCreateMutable: <>
+   85 				SCDLog: <>
+   86 				SCDOpen: <>
+   87 				SCDError: <>
+   88 				SCDOptionGet: <>
+   89 				SCDKeyCreateNetworkInterfaceEntity: <>
+   90 				SCDNotifierAdd: <>
+   91 				CFRelease: <>
+   92 				SCDKeyCreateNetworkServiceEntity: <>
+   93 				SCDNotifierInformViaCallback: <>
+   94 				ip_handler: boolean_t (), <./IPMonitor.bproj/ip_plugin.c 1380>
+   95 					SCDNotifierGetChanges: <>
+   96 					CFArrayGetCount: <>
+   97 					get_service_order: CFArrayRef (), <./IPMonitor.bproj/ip_plugin.c 1343>
+   98 						SCDKeyCreateNetworkGlobalEntity: <>
+   99 						my_SCDGet: CFDictionaryRef (), <./IPMonitor.bproj/ip_plugin.c 170>
+  100 							SCDGet: <>
+  101 							SCDHandleGetData: <>
+  102 							isA_CFDictionary: __inline__ CFTypeRef (), <./IPMonitor.bproj/ip_plugin.c 102>
+  103 								isA_CFType: __inline__ CFTypeRef (), <./IPMonitor.bproj/ip_plugin.c 90>
+  104 									CFGetTypeID: <>
+  105 								CFDictionaryGetTypeID: <>
+  106 							CFRetain: <>
+  107 							my_SCDHandleRelease: void (), <./IPMonitor.bproj/ip_plugin.c 160>
+  108 								SCDHandleRelease: <>
+  109 						CFDictionaryGetValue: <>
+  110 						isA_CFArray: __inline__ CFTypeRef (), <./IPMonitor.bproj/ip_plugin.c 108>
+  111 							isA_CFType: 103
+  112 							CFArrayGetTypeID: <>
+  113 						CFRetain: <>
+  114 						isA_CFNumber: __inline__ CFTypeRef (), <./IPMonitor.bproj/ip_plugin.c 126>
+  115 							isA_CFType: 103
+  116 							CFNumberGetTypeID: <>
+  117 						CFNumberGetValue: <>
+  118 						my_CFRelease: void (), <./IPMonitor.bproj/ip_plugin.c 148>
+  119 							CFRelease: <>
+  120 					SCDLog: <>
+  121 					CFSTR: <>
+  122 					SCDKeyCreateNetworkGlobalEntity: <>
+  123 					CFArrayCreateMutable: <>
+  124 					CFArrayGetValueAtIndex: <>
+  125 					CFEqual: <>
+  126 					CFStringHasSuffix: <>
+  127 					CFStringHasPrefix: <>
+  128 					parse_component: CFStringRef (), <./IPMonitor.bproj/ip_plugin.c 304>
+  129 						CFStringHasPrefix: <>
+  130 						CFStringCreateMutableCopy: <>
+  131 						CFStringDelete: <>
+  132 						CFRangeMake: <>
+  133 						CFStringGetLength: <>
+  134 						CFStringFind: <>
+  135 						CFSTR: <>
+  136 					my_CFArrayAppendUniqueValue: void (), <./IPMonitor.bproj/ip_plugin.c 133>
+  137 						CFArrayGetCount: <>
+  138 						CFArrayGetValueAtIndex: <>
+  139 						CFEqual: <>
+  140 						CFArrayAppendValue: <>
+  141 					CFRelease: <>
+  142 					serviceID_get_ifname: __inline__ CFTypeRef (), <./IPMonitor.bproj/ip_plugin.c 250>
+  143 						CFDictionaryGetValue: <>
+  144 					SCDKeyCreate: <>
+  145 					SCDGet: <>
+  146 					my_CFRelease: 118
+  147 					my_SCDHandleRelease: 107
+  148 					remove_netinfo: void (), <./IPMonitor.bproj/ip_plugin.c 855>
+  149 						empty_netinfo: void (), <./IPMonitor.bproj/ip_plugin.c 823>
+  150 							unlink: <>
+  151 							open: <>
+  152 							close: <>
+  153 							rename: <>
+  154 						remove_netinfo_key: __inline__ void (), <./IPMonitor.bproj/ip_plugin.c 841>
+  155 							SCDRemove: <>
+  156 					ip_handle_change: void (), <./IPMonitor.bproj/ip_plugin.c 1234>
+  157 						CFEqual: <>
+  158 						CFSTR: <>
+  159 						get_changes: boolean_t (), <./IPMonitor.bproj/ip_plugin.c 494>
+  160 							CFDictionaryGetValue: <>
+  161 							CFDictionaryCreateMutable: <>
+  162 							CFDictionaryCreateMutableCopy: <>
+  163 							SCDKeyCreateNetworkInterfaceEntity: <>
+  164 							CFEqual: <>
+  165 							serviceID_remove_ifname: __inline__ void (), <./IPMonitor.bproj/ip_plugin.c 196>
+  166 								CFDictionaryGetCount: <>
+  167 								malloc: <>
+  168 								CFDictionaryGetKeysAndValues: <>
+  169 								CFEqual: <>
+  170 								CFDictionaryRemoveValue: <>
+  171 								free: <>
+  172 							my_SCDGet: 99
+  173 							my_CFRelease: 118
+  174 							isA_CFArray: 110
+  175 							CFArrayGetCount: <>
+  176 							serviceID_add_list: void (), <./IPMonitor.bproj/ip_plugin.c 238>
+  177 								CFArrayGetCount: <>
+  178 								CFArrayGetValueAtIndex: <>
+  179 								serviceID_add: __inline__ void (), <./IPMonitor.bproj/ip_plugin.c 231>
+  180 									CFDictionarySetValue: <>
+  181 							highest_serviceID: CFTypeRef (), <./IPMonitor.bproj/ip_plugin.c 387>
+  182 								CFRangeMake: <>
+  183 								CFArrayGetCount: <>
+  184 								CFArrayGetValueAtIndex: <>
+  185 								CFArrayContainsValue: <>
+  186 							SCDKeyCreateNetworkServiceEntity: <>
+  187 							CFDictionarySetValue: <>
+  188 							CFRetain: <>
+  189 							make_netinfo_dict: CFDictionaryRef (), <./IPMonitor.bproj/ip_plugin.c 407>
+  190 								isA_CFArray: 110
+  191 								CFDictionaryGetValue: <>
+  192 								CFArrayCreateMutable: <>
+  193 								CFArrayGetCount: <>
+  194 								CFArrayGetValueAtIndex: <>
+  195 								CFEqual: <>
+  196 								my_SCDGet: 99
+  197 								append_netinfo_arrays: void (), <./IPMonitor.bproj/ip_plugin.c 327>
+  198 									isA_CFDictionary: 102
+  199 									isA_CFArray: 110
+  200 									CFDictionaryGetValue: <>
+  201 									CFArrayGetCount: <>
+  202 									CFArrayAppendArray: <>
+  203 									CFRangeMake: <>
+  204 								my_CFRelease: 118
+  205 								get_broadcast_address: CFStringRef (), <./IPMonitor.bproj/ip_plugin.c 360>
+  206 									isA_CFArray: 110
+  207 									CFDictionaryGetValue: <>
+  208 									CFArrayGetCount: <>
+  209 									cfstring_to_ip: struct in_addr (), <./IPMonitor.bproj/ip_plugin.c 256>
+  210 									CFArrayGetValueAtIndex: <>
+  211 									htonl: <>
+  212 									ntohl: <>
+  213 									CFStringCreateWithFormat: <>
+  214 									CFSTR: <>
+  215 									IP_LIST: <>
+  216 								isA_CFString: __inline__ CFTypeRef (), <./IPMonitor.bproj/ip_plugin.c 114>
+  217 									isA_CFType: 103
+  218 									CFStringGetTypeID: <>
+  219 								CFArrayAppendValue: <>
+  220 								CFRelease: <>
+  221 								CFDictionaryCreateMutable: <>
+  222 								CFDictionarySetValue: <>
+  223 							SCDLog: <>
+  224 							CFSTR: <>
+  225 							CFDictionaryRemoveValue: <>
+  226 						get_interface_rank: unsigned int (), <./IPMonitor.bproj/ip_plugin.c 1135>
+  227 							CFStringHasPrefix: <>
+  228 							CFSTR: <>
+  229 							CFArrayGetCount: <>
+  230 							CFArrayGetValueAtIndex: <>
+  231 							serviceID_get_ifname: 142
+  232 							CFEqual: <>
+  233 						SCDLog: <>
+  234 						isA_CFArray: 110
+  235 						CFDictionaryGetValue: <>
+  236 						CFArrayGetCount: <>
+  237 						cfstring_to_ip: struct in_addr (), <./IPMonitor.bproj/ip_plugin.c 256>
+  238 						CFArrayGetValueAtIndex: <>
+  239 						my_CFRelease: 118
+  240 						remove_global: void (), <./IPMonitor.bproj/ip_plugin.c 929>
+  241 							default_route_delete: boolean_t (), <./IPMonitor.bproj/ip_plugin.c 772>
+  242 								default_route: boolean_t (), <./IPMonitor.bproj/ip_plugin.c 726>
+  243 									socket: <>
+  244 									SCDLog: <>
+  245 									CFSTR: <>
+  246 									strerror: <>
+  247 									memset: <>
+  248 									write: <>
+  249 									close: <>
+  250 							empty_dns: __inline__ void (), <./IPMonitor.bproj/ip_plugin.c 809>
+  251 								unlink: <>
+  252 							empty_netinfo: 149
+  253 							SCDLock: <>
+  254 							remove_router_key: __inline__ void (), <./IPMonitor.bproj/ip_plugin.c 786>
+  255 								SCDRemove: <>
+  256 							remove_dns_key: __inline__ void (), <./IPMonitor.bproj/ip_plugin.c 802>
+  257 								SCDRemove: <>
+  258 							remove_netinfo_key: 154
+  259 							remove_proxies_key: __inline__ void (), <./IPMonitor.bproj/ip_plugin.c 848>
+  260 								SCDRemove: <>
+  261 							SCDUnlock: <>
+  262 						elect_new_primary: CFStringRef (), <./IPMonitor.bproj/ip_plugin.c 1164>
+  263 							CFDictionaryGetCount: <>
+  264 							malloc: <>
+  265 							CFDictionaryGetKeysAndValues: <>
+  266 							CFEqual: <>
+  267 							CFSTR: <>
+  268 							CFDictionaryGetValue: <>
+  269 							isA_CFArray: 110
+  270 							CFArrayGetCount: <>
+  271 							cfstring_to_ip: struct in_addr (), <./IPMonitor.bproj/ip_plugin.c 256>
+  272 							CFArrayGetValueAtIndex: <>
+  273 							SCDLog: <>
+  274 							get_interface_rank: 226
+  275 							my_CFRelease: 118
+  276 							CFRetain: <>
+  277 							free: <>
+  278 						update_global: void (), <./IPMonitor.bproj/ip_plugin.c 958>
+  279 							CFDictionaryGetValue: <>
+  280 							CFDictionaryCreateMutable: <>
+  281 							isA_CFArray: 110
+  282 							CFArrayGetCount: <>
+  283 							CFArrayGetValueAtIndex: <>
+  284 							isA_CFString: 216
+  285 							CFDictionarySetValue: <>
+  286 							SCDHandleInit: <>
+  287 							SCDLog: <>
+  288 							CFSTR: <>
+  289 							CFRelease: <>
+  290 							SCDHandleSetData: <>
+  291 							set_router: void (), <./IPMonitor.bproj/ip_plugin.c 793>
+  292 								default_route_delete: 241
+  293 								default_route_add: boolean_t (), <./IPMonitor.bproj/ip_plugin.c 779>
+  294 									default_route: 242
+  295 							cfstring_to_ip: struct in_addr (), <./IPMonitor.bproj/ip_plugin.c 256>
+  296 							default_route_delete: 241
+  297 							empty_dns: 250
+  298 							set_dns: void (), <./IPMonitor.bproj/ip_plugin.c 863>
+  299 								fopen: <>
+  300 								cfstring_to_cstring: int (), <./IPMonitor.bproj/ip_plugin.c 277>
+  301 									CFRangeMake: <>
+  302 									CFStringGetLength: <>
+  303 									CFStringGetBytes: <>
+  304 								fprintf: <>
+  305 								CFArrayGetCount: <>
+  306 								CFArrayGetValueAtIndex: <>
+  307 								cfstring_to_ip: struct in_addr (), <./IPMonitor.bproj/ip_plugin.c 256>
+  308 								IP_LIST: <>
+  309 								fclose: <>
+  310 								rename: <>
+  311 							CFRetain: <>
+  312 							my_SCDGet: 99
+  313 							SCDKeyCreateNetworkInterfaceEntity: <>
+  314 							make_netinfo_dict: 189
+  315 							my_CFRelease: 118
+  316 							empty_netinfo: 149
+  317 							set_netinfo: void (), <./IPMonitor.bproj/ip_plugin.c 909>
+  318 								open: <>
+  319 								CFPropertyListCreateXMLData: <>
+  320 								CFDataGetLength: <>
+  321 								write: <>
+  322 								CFDataGetBytePtr: <>
+  323 								close: <>
+  324 								rename: <>
+  325 							SCDLock: <>
+  326 							update_cache_key: __inline__ SCDStatus (), <./IPMonitor.bproj/ip_plugin.c 948>
+  327 								SCDRemove: <>
+  328 								SCDAdd: <>
+  329 							SCDUnlock: <>
+  330 							my_SCDHandleRelease: 107
+  331 						CFRetain: <>
+  332 					elect_new_primary: 262
+  333 					remove_global: 240
+  334 					update_global: 278
+  335 				remove_dns: void (), <./IPMonitor.bproj/ip_plugin.c 815>
+  336 					empty_dns: 250
+  337 					remove_dns_key: 256
+  338 			CFStringCreateWithCString: <>
+  339 			getTargets: CFArrayRef (), <./Kicker.bproj/kicker.c 403>
+  340 				malloc: <>
+  341 				strlen: <>
+  342 				sprintf: <>
+  343 				open: <>
+  344 				SCDLog: <>
+  345 				CFSTR: <>
+  346 				free: <>
+  347 				fstat: <>
+  348 				close: <>
+  349 				CFDataCreateMutable: <>
+  350 				CFDataSetLength: <>
+  351 				read: <>
+  352 				CFDataGetBytePtr: <>
+  353 				CFRelease: <>
+  354 				CFPropertyListCreateFromXMLData: <>
+  355 			CFArrayApplyFunction: <>
+  356 			CFRangeMake: <>
+  357 			CFArrayGetCount: <>
+  358 			startKicker: void (), <./Kicker.bproj/kicker.c 330>
+  359 				CFAllocatorAllocate: <>
+  360 				pthread_mutex_init: <>
+  361 				CFStringCreateMutableCopy: <>
+  362 				CFDictionaryGetValue: <>
+  363 				CFSTR: <>
+  364 				SCDLog: <>
+  365 				CFStringAppend: <>
+  366 				SCDOpen: <>
+  367 				CFRelease: <>
+  368 				SCDError: <>
+  369 				CFAllocatorDeallocate: <>
+  370 				CFArrayGetCount: <>
+  371 				SCDNotifierAdd: <>
+  372 				CFArrayGetValueAtIndex: <>
+  373 				SCDClose: <>
+  374 				CFRetain: <>
+  375 				SCDNotifierInformViaCallback: <>
+  376 				kicker: boolean_t (), <./Kicker.bproj/kicker.c 259>
+  377 					CFDictionaryGetValue: <>
+  378 					CFSTR: <>
+  379 					SCDNotifierGetChanges: <>
+  380 					CFRelease: <>
+  381 					SCDLog: <>
+  382 					SCDError: <>
+  383 					pthread_mutex_lock: <>
+  384 					pthread_mutex_unlock: <>
+  385 					SCDOptionGet: <>
+  386 					pthread_attr_init: <>
+  387 					pthread_attr_setscope: <>
+  388 					pthread_attr_setdetachstate: <>
+  389 					pthread_attr_setstacksize: <>
+  390 					pthread_create: <>
+  391 					booter: void * (), <./Kicker.bproj/kicker.c 155>
+  392 						CFDictionaryGetValue: <>
+  393 						CFSTR: <>
+  394 						SCDLog: <>
+  395 						pthread_cleanup_push: <>
+  396 						cleanupTarget: void (), <./Kicker.bproj/kicker.c 115>
+  397 							SCDLog: <>
+  398 							CFSTR: <>
+  399 							pthread_mutex_destroy: <>
+  400 							CFRelease: <>
+  401 							CFAllocatorDeallocate: <>
+  402 						CFStringGetLength: <>
+  403 						CFStringCreateMutableCopy: <>
+  404 						cleanupCFObject: void (), <./Kicker.bproj/kicker.c 135>
+  405 							SCDLog: <>
+  406 							CFSTR: <>
+  407 							CFRelease: <>
+  408 						CFStringFind: <>
+  409 						CFStringReplace: <>
+  410 						CFAllocatorAllocate: <>
+  411 						cleanupCFAllocator: void (), <./Kicker.bproj/kicker.c 145>
+  412 							SCDLog: <>
+  413 							CFSTR: <>
+  414 							CFAllocatorDeallocate: <>
+  415 						CFStringGetCString: <>
+  416 						CFNumberGetValue: <>
+  417 						pthread_mutex_lock: <>
+  418 						pthread_mutex_unlock: <>
+  419 						execCommandWithUID: int (), <./Kicker.bproj/kicker.c 63>
+  420 							geteuid: <>
+  421 							SCDLog: <>
+  422 							CFSTR: <>
+  423 							vfork: <>
+  424 							W_EXITCODE: <>
+  425 							strerror: <>
+  426 							rindex: <>
+  427 							setuid: <>
+  428 							getdtablesize: <>
+  429 							close: <>
+  430 							open: <>
+  431 							dup: <>
+  432 							execl: <>
+  433 							WEXITSTATUS: <>
+  434 							wait4: <>
+  435 						WIFEXITED: <>
+  436 						WEXITSTATUS: <>
+  437 						WIFSIGNALED: <>
+  438 						WTERMSIG: <>
+  439 						pthread_cleanup_pop: <>
+  440 						SCDClose: <>
+  441 						pthread_exit: <>
+  442 					pthread_attr_destroy: <>
+  443 			SCDOptionGet: <>
+  444 			IOMasterPort: <>
+  445 			waitForQuiet: void (), <./InterfaceNamer.bproj/ifnamer.c 630>
+  446 				IOKitWaitQuiet: <>
+  447 			createNetworkStackObject: io_object_t (), <./InterfaceNamer.bproj/ifnamer.c 654>
+  448 				IOServiceGetMatchingServices: <>
+  449 				IOServiceMatching: <>
+  450 				IOIteratorNext: <>
+  451 				IOObjectRelease: <>
+  452 			IOServiceOpen: <>
+  453 			mach_task_self: <>
+  454 			printf: <>
+  455 			IONotificationPortCreate: <>
+  456 			IOServiceAddMatchingNotification: <>
+  457 			IOServiceMatching: <>
+  458 			interfaceArrivalCallback: void (), <./InterfaceNamer.bproj/ifnamer.c 1027>
+  459 				IOIteratorNext: <>
+  460 				getInterface: CFDictionaryRef (), <./InterfaceNamer.bproj/ifnamer.c 737>
+  461 					IORegistryEntryGetPath: <>
+  462 					SCDLog: <>
+  463 					CFSTR: <>
+  464 					IORegistryEntryCreateCFProperties: <>
+  465 					isA_CFNumber: __inline__ CFTypeRef (), <./InterfaceNamer.bproj/ifnamer.c 121>
+  466 						isA_CFType: __inline__ CFTypeRef (), <./InterfaceNamer.bproj/ifnamer.c 85>
+  467 							CFGetTypeID: <>
+  468 						CFNumberGetTypeID: <>
+  469 					CFDictionaryGetValue: <>
+  470 					getMacAddress: CFDataRef (), <./InterfaceNamer.bproj/ifnamer.c 695>
+  471 						IORegistryEntryGetParentEntry: <>
+  472 						SCDLog: <>
+  473 						CFSTR: <>
+  474 						IORegistryEntryCreateCFProperties: <>
+  475 						CFDictionaryGetValue: <>
+  476 						CFRetain: <>
+  477 						CFRelease: <>
+  478 						IOObjectRelease: <>
+  479 					isA_CFBoolean: __inline__ CFTypeRef (), <./InterfaceNamer.bproj/ifnamer.c 115>
+  480 						isA_CFType: 466
+  481 						CFBooleanGetTypeID: <>
+  482 					CFDictionaryCreateMutable: <>
+  483 					CFDictionarySetValue: <>
+  484 					addCFStringProperty: boolean_t (), <./InterfaceNamer.bproj/ifnamer.c 212>
+  485 						CFStringCreateWithCString: <>
+  486 						CFDictionarySetValue: <>
+  487 						CFRelease: <>
+  488 					isA_CFString: __inline__ CFTypeRef (), <./InterfaceNamer.bproj/ifnamer.c 109>
+  489 						isA_CFType: 466
+  490 						CFStringGetTypeID: <>
+  491 					CFRelease: <>
+  492 				CFArrayCreateMutable: <>
+  493 				CFArrayAppendValue: <>
+  494 				CFRelease: <>
+  495 				IOObjectRelease: <>
+  496 				sort_interfaces_by_type: void (), <./InterfaceNamer.bproj/ifnamer.c 883>
+  497 					CFArrayGetCount: <>
+  498 					CFRangeMake: <>
+  499 					CFArraySortValues: <>
+  500 					if_type_compare: CFComparisonResult (), <./InterfaceNamer.bproj/ifnamer.c 163>
+  501 						CFDictionaryGetValue: <>
+  502 						CFSTR: <>
+  503 						CFNumberCompare: <>
+  504 						compareMacAddress: __inline__ CFComparisonResult (), <./InterfaceNamer.bproj/ifnamer.c 133>
+  505 							CFDataGetLength: <>
+  506 							memcmp: <>
+  507 							CFDataGetBytePtr: <>
+  508 				name_interfaces: void (), <./InterfaceNamer.bproj/ifnamer.c 907>
+  509 					printf: <>
+  510 					CFArrayGetCount: <>
+  511 					CFArrayGetValueAtIndex: <>
+  512 					CFDictionaryGetValue: <>
+  513 					CFSTR: <>
+  514 					displayInterface: void (), <./InterfaceNamer.bproj/ifnamer.c 854>
+  515 						CFDictionaryGetValue: <>
+  516 						CFSTR: <>
+  517 						printf: <>
+  518 						CFStringShow: void (), <./InterfaceNamer.bproj/ifnamer.c 274>
+  519 							CFStringGetCStringPtr: <>
+  520 							printf: <>
+  521 							CFStringGetLength: <>
+  522 							malloc: <>
+  523 							CFStringGetCString: <>
+  524 							free: <>
+  525 						CFNumberGetValue: <>
+  526 						printMacAddress: void (), <./InterfaceNamer.bproj/ifnamer.c 673>
+  527 							CFDataGetLength: <>
+  528 							printf: <>
+  529 							CFDataGetBytePtr: <>
+  530 					replaceInterface: void (), <./InterfaceNamer.bproj/ifnamer.c 552>
+  531 						CFArrayCreateMutable: <>
+  532 						lookupInterfaceByType: CFDictionaryRef (), <./InterfaceNamer.bproj/ifnamer.c 442>
+  533 							CFDictionaryGetValue: <>
+  534 							CFSTR: <>
+  535 							CFArrayGetCount: <>
+  536 							CFArrayGetValueAtIndex: <>
+  537 							CFNumberCompare: <>
+  538 							compareMacAddress: 504
+  539 						CFArrayRemoveValueAtIndex: <>
+  540 						lookupInterfaceByUnit: CFDictionaryRef (), <./InterfaceNamer.bproj/ifnamer.c 482>
+  541 							CFDictionaryGetValue: <>
+  542 							CFSTR: <>
+  543 							CFArrayGetCount: <>
+  544 							CFArrayGetValueAtIndex: <>
+  545 							CFNumberCompare: <>
+  546 						insertInterface: void (), <./InterfaceNamer.bproj/ifnamer.c 522>
+  547 							CFDictionaryGetValue: <>
+  548 							CFSTR: <>
+  549 							CFArrayGetCount: <>
+  550 							CFArrayGetValueAtIndex: <>
+  551 							CFNumberCompare: <>
+  552 							CFArrayInsertValueAtIndex: <>
+  553 							CFArrayAppendValue: <>
+  554 					lookupInterfaceByType: 532
+  555 					CFRetain: <>
+  556 					CFNumberGetValue: <>
+  557 					CFBooleanGetValue: <>
+  558 					getHighestUnitForType: CFNumberRef (), <./InterfaceNamer.bproj/ifnamer.c 573>
+  559 						CFArrayGetCount: <>
+  560 						CFArrayGetValueAtIndex: <>
+  561 						CFDictionaryGetValue: <>
+  562 						CFSTR: <>
+  563 						CFEqual: <>
+  564 						CFNumberCompare: <>
+  565 					CFNumberCreate: <>
+  566 					registerInterface: kern_return_t (), <./InterfaceNamer.bproj/ifnamer.c 603>
+  567 						CFDictionaryCreateMutable: <>
+  568 						addCFNumberProperty: boolean_t (), <./InterfaceNamer.bproj/ifnamer.c 242>
+  569 							CFNumberCreate: <>
+  570 							CFStringCreateWithCString: <>
+  571 							CFDictionarySetValue: <>
+  572 							CFRelease: <>
+  573 						CFDictionarySetValue: <>
+  574 						CFSTR: <>
+  575 						IOConnectSetCFProperties: <>
+  576 						CFRelease: <>
+  577 					SCDLog: <>
+  578 					lookupIOKitPath: CFDictionaryRef (), <./InterfaceNamer.bproj/ifnamer.c 818>
+  579 						IOMasterPort: <>
+  580 						SCDLog: <>
+  581 						CFSTR: <>
+  582 						cfstring_to_cstring: int (), <./InterfaceNamer.bproj/ifnamer.c 71>
+  583 							CFRangeMake: <>
+  584 							CFStringGetLength: <>
+  585 							CFStringGetBytes: <>
+  586 						IORegistryEntryFromPath: <>
+  587 						getInterface: 460
+  588 						mach_port_deallocate: <>
+  589 						mach_task_self: <>
+  590 						IOObjectRelease: <>
+  591 					CFEqual: <>
+  592 					CFRelease: <>
+  593 					writeInterfaceList: void (), <./InterfaceNamer.bproj/ifnamer.c 432>
+  594 						writePropertyList: void (), <./InterfaceNamer.bproj/ifnamer.c 396>
+  595 							CFPropertyListCreateXMLData: <>
+  596 							write_file: void (), <./InterfaceNamer.bproj/ifnamer.c 333>
+  597 								snprintf: <>
+  598 								open: <>
+  599 								SCDLog: <>
+  600 								CFSTR: <>
+  601 								strerror: <>
+  602 								write: <>
+  603 								rename: <>
+  604 								close: <>
+  605 							CFDataGetBytePtr: <>
+  606 							CFDataGetLength: <>
+  607 							CFRelease: <>
+  608 			readInterfaceList: CFMutableArrayRef (), <./InterfaceNamer.bproj/ifnamer.c 415>
+  609 				readPropertyList: CFPropertyListRef (), <./InterfaceNamer.bproj/ifnamer.c 360>
+  610 					read_file: void * (), <./InterfaceNamer.bproj/ifnamer.c 296>
+  611 						stat: <>
+  612 						malloc: <>
+  613 						open: <>
+  614 						read: <>
+  615 						SCDLog: <>
+  616 						CFSTR: <>
+  617 						strerror: <>
+  618 						close: <>
+  619 					CFDataCreate: <>
+  620 					CFPropertyListCreateFromXMLData: <>
+  621 					SCDLog: <>
+  622 					CFSTR: <>
+  623 					CFRelease: <>
+  624 					free: <>
+  625 				isA_CFArray: __inline__ CFTypeRef (), <./InterfaceNamer.bproj/ifnamer.c 103>
+  626 					isA_CFType: 466
+  627 					CFArrayGetTypeID: <>
+  628 				CFRelease: <>
+  629 			sort_interfaces_by_unit: void (), <./InterfaceNamer.bproj/ifnamer.c 895>
+  630 				CFArrayGetCount: <>
+  631 				CFRangeMake: <>
+  632 				CFArraySortValues: <>
+  633 				if_unit_compare: CFComparisonResult (), <./InterfaceNamer.bproj/ifnamer.c 188>
+  634 					CFDictionaryGetValue: <>
+  635 					CFSTR: <>
+  636 					CFNumberCompare: <>
+  637 			CFRunLoopAddSource: <>
+  638 			CFRunLoopGetCurrent: <>
+  639 			IONotificationPortGetRunLoopSource: <>
+  640 			IOObjectRelease: <>
+  641 			mach_port_deallocate: <>
+  642 			IOServiceClose: <>
+  643 			IONotificationPortDestroy: <>
+  644 			CFDictionaryCreateMutable: <>
+  645 			CFArrayCreateMutable: <>
+  646 			SCDKeyCreateNetworkGlobalEntity: <>
+  647 			SCDKeyCreateNetworkServiceEntity: <>
+  648 			SCDKeyCreateNetworkInterfaceEntity: <>
+  649 			SCDKeyCreateHostName: <>
+  650 			atConfigChangedCallback: boolean_t (), <./ATconfig.bproj/atconfig.c 953>
+  651 				SCDNotifierGetChanges: <>
+  652 				CFRelease: <>
+  653 				SCDLog: <>
+  654 				CFSTR: <>
+  655 				SCDError: <>
+  656 				updateConfiguration: boolean_t (), <./ATconfig.bproj/atconfig.c 413>
+  657 					SCDKeyCreate: <>
+  658 					CFSTR: <>
+  659 					SCDGet: <>
+  660 					CFRelease: <>
+  661 					SCDHandleRelease: <>
+  662 					SCDLog: <>
+  663 					SCDError: <>
+  664 					CFArrayCreateMutable: <>
+  665 					CFDictionaryCreateMutable: <>
+  666 					CFDictionarySetValue: <>
+  667 					SCDLock: <>
+  668 					SCDKeyCreateNetworkGlobalEntity: <>
+  669 					SCDHandleGetData: <>
+  670 					CFRetain: <>
+  671 					CFDictionaryGetValueIfPresent: <>
+  672 					entity_all: CFArrayRef (), <./ATconfig.bproj/atconfig.c 289>
+  673 						CFArrayCreateMutable: <>
+  674 						SCDKeyCreateNetworkServiceEntity: <>
+  675 						SCDList: <>
+  676 						CFRelease: <>
+  677 						CFArrayGetCount: <>
+  678 						CFArrayCreateMutableCopy: <>
+  679 						CFArrayGetValueAtIndex: <>
+  680 						entity_one: CFDictionaryRef (), <./ATconfig.bproj/atconfig.c 205>
+  681 							SCDKeyCreate: <>
+  682 							CFSTR: <>
+  683 							SCDGet: <>
+  684 							isA_CFDictionary: __inline__ CFTypeRef (), <./ATconfig.bproj/atconfig.c 60>
+  685 								isA_CFType: __inline__ CFTypeRef (), <./ATconfig.bproj/atconfig.c 49>
+  686 									CFGetTypeID: <>
+  687 								CFDictionaryGetTypeID: <>
+  688 							SCDHandleGetData: <>
+  689 							parse_component: CFStringRef (), <./ATconfig.bproj/atconfig.c 184>
+  690 								CFStringHasPrefix: <>
+  691 								CFStringCreateMutableCopy: <>
+  692 								CFStringDelete: <>
+  693 								CFRangeMake: <>
+  694 								CFStringGetLength: <>
+  695 								CFStringFind: <>
+  696 								CFSTR: <>
+  697 							SCDKeyCreateNetworkServiceEntity: <>
+  698 							CFRelease: <>
+  699 							CFDictionaryGetValueIfPresent: <>
+  700 							CFEqual: <>
+  701 							CFDictionaryGetValue: <>
+  702 							CFDictionaryCreateMutableCopy: <>
+  703 							CFDictionarySetValue: <>
+  704 							SCDHandleRelease: <>
+  705 						CFArrayAppendValue: <>
+  706 						CFArrayGetFirstIndexOfValue: <>
+  707 						CFRangeMake: <>
+  708 						CFArrayRemoveValueAtIndex: <>
+  709 					CFArrayGetCount: <>
+  710 					SCDUnlock: <>
+  711 					CFArrayGetValueAtIndex: <>
+  712 					CFDictionaryGetValue: <>
+  713 					SCDKeyCreateNetworkInterfaceEntity: <>
+  714 					CFEqual: <>
+  715 					CFStringCreateMutable: <>
+  716 					CFStringAppendFormat: <>
+  717 					CFNumberGetValue: <>
+  718 					CFArrayCreateMutableCopy: <>
+  719 					CFArrayAppendValue: <>
+  720 					CFArraySortValues: <>
+  721 					CFRangeMake: <>
+  722 					CFStringGetSystemEncoding: <>
+  723 					encodeName: CFStringRef (), <./ATconfig.bproj/atconfig.c 363>
+  724 						CFRetain: <>
+  725 						CFStringCreateExternalRepresentation: <>
+  726 						CFStringCreateMutable: <>
+  727 						CFDataGetLength: <>
+  728 						CFDataGetBytePtr: <>
+  729 						CFStringAppendFormat: <>
+  730 						CFSTR: <>
+  731 						CFStringInsert: <>
+  732 						CFStringAppend: <>
+  733 						CFRelease: <>
+  734 					CFDictionaryAddValue: <>
+  735 					CFStringAppend: <>
+  736 					CFArrayContainsValue: <>
+  737 					CFDictionaryApplyFunction: <>
+  738 					addZoneToPorts: void (), <./ATconfig.bproj/atconfig.c 153>
+  739 						CFStringCreateByCombiningStrings: <>
+  740 						CFSTR: <>
+  741 						CFStringCreateWithFormat: <>
+  742 						CFArrayAppendValue: <>
+  743 						CFRelease: <>
+  744 					CFDictionaryContainsKey: <>
+  745 					SCDHostNameGet: <>
+  746 					configRead: CFArrayRef (), <./ATconfig.bproj/cfManager.c 37>
+  747 						open: <>
+  748 						fstat: <>
+  749 						CFDataCreateMutable: <>
+  750 						CFDataSetLength: <>
+  751 						read: <>
+  752 						CFDataGetMutableBytePtr: <>
+  753 						CFRelease: <>
+  754 						CFStringCreateFromExternalRepresentation: <>
+  755 						CFStringCreateArrayBySeparatingStrings: <>
+  756 						CFSTR: <>
+  757 						close: <>
+  758 						CFArrayCreateMutable: <>
+  759 						CFArrayAppendValue: <>
+  760 					configSet: void (), <./ATconfig.bproj/cfManager.c 121>
+  761 						CFArrayGetCount: <>
+  762 						CFSTR: <>
+  763 						CFStringCreateMutableCopy: <>
+  764 						CFStringAppend: <>
+  765 						CFStringGetLength: <>
+  766 						CFStringCreateWithSubstring: <>
+  767 						CFRangeMake: <>
+  768 						CFStringFind: <>
+  769 						CFRelease: <>
+  770 						CFStringCreateArrayWithFindResults: <>
+  771 						CFArrayGetValueAtIndex: <>
+  772 						CFStringInsert: <>
+  773 						CFStringHasPrefix: <>
+  774 						CFArraySetValueAtIndex: <>
+  775 						CFArrayInsertValueAtIndex: <>
+  776 					configRemove: void (), <./ATconfig.bproj/cfManager.c 219>
+  777 						CFArrayGetCount: <>
+  778 						CFStringCreateMutableCopy: <>
+  779 						CFStringAppend: <>
+  780 						CFSTR: <>
+  781 						CFStringHasPrefix: <>
+  782 						CFArrayGetValueAtIndex: <>
+  783 						CFArrayRemoveValueAtIndex: <>
+  784 						CFRelease: <>
+  785 					unlink: <>
+  786 					configWrite: void (), <./ATconfig.bproj/cfManager.c 90>
+  787 						CFStringCreateByCombiningStrings: <>
+  788 						CFSTR: <>
+  789 						CFStringCreateExternalRepresentation: <>
+  790 						CFRelease: <>
+  791 						open: <>
+  792 						CFDataGetLength: <>
+  793 						write: <>
+  794 						CFDataGetBytePtr: <>
+  795 						close: <>
+  796 					updateDefaults: void (), <./ATconfig.bproj/atconfig.c 79>
+  797 						CFDictionaryGetValueIfPresent: <>
+  798 						CFEqual: <>
+  799 						bzero: <>
+  800 						CFStringGetCString: <>
+  801 						SCDLog: <>
+  802 						CFSTR: <>
+  803 						CFNumberGetValue: <>
+  804 						at_setdefaultaddr: <>
+  805 						strlen: <>
+  806 						at_setdefaultzone: <>
+  807 				SCDKeyCreate: <>
+  808 				SCDTouch: <>
+  809 			socket: <>
+  810 			ioctl: <>
+  811 			strerror: <>
+  812 			close: <>
+  813 			CFSocketCreateWithNative: <>
+  814 			eventCallback: void (), <./KernelEventMonitor.bproj/eventmon.c 454>
+  815 				CFSocketGetNative: <>
+  816 				recv: <>
+  817 				SCDLog: <>
+  818 				CFSTR: <>
+  819 				strerror: <>
+  820 				SCDLock: <>
+  821 				SCDError: <>
+  822 				processEvent_Apple_Network: void (), <./KernelEventMonitor.bproj/eventmon.c 325>
+  823 					sprintf: <>
+  824 					CFStringCreateWithFormat: <>
+  825 					CFSTR: <>
+  826 					logEvent: void (), <./KernelEventMonitor.bproj/eventmon.c 71>
+  827 						SCDLog: <>
+  828 						CFSTR: <>
+  829 					CFRelease: <>
+  830 					link_add: void (), <./KernelEventMonitor.bproj/eventmon.c 199>
+  831 						CFStringCreateWithCString: <>
+  832 						SCDKeyCreateNetworkInterface: <>
+  833 						SCDGet: <>
+  834 						SCDHandleGetData: <>
+  835 						CFDictionaryCreateMutableCopy: <>
+  836 						CFDictionaryGetValue: <>
+  837 						CFArrayCreateMutableCopy: <>
+  838 						SCDHandleInit: <>
+  839 						CFDictionaryCreateMutable: <>
+  840 						CFArrayCreateMutable: <>
+  841 						SCDLog: <>
+  842 						CFSTR: <>
+  843 						SCDError: <>
+  844 						CFArrayContainsValue: <>
+  845 						CFRangeMake: <>
+  846 						CFArrayGetCount: <>
+  847 						CFArrayAppendValue: <>
+  848 						CFDictionarySetValue: <>
+  849 						SCDHandleSetData: <>
+  850 						SCDSet: <>
+  851 						SCDHandleRelease: <>
+  852 						link_update_status: void (), <./KernelEventMonitor.bproj/eventmon.c 163>
+  853 							bzero: <>
+  854 							strncpy: <>
+  855 							ioctl: <>
+  856 							interface_update_status: void (), <./KernelEventMonitor.bproj/eventmon.c 92>
+  857 								CFStringCreateWithCString: <>
+  858 								SCDKeyCreateNetworkInterfaceEntity: <>
+  859 								CFRelease: <>
+  860 								SCDGet: <>
+  861 								SCDHandleGetData: <>
+  862 								CFDictionaryCreateMutableCopy: <>
+  863 								CFDictionaryGetValueIfPresent: <>
+  864 								SCDHandleInit: <>
+  865 								CFDictionaryCreateMutable: <>
+  866 								SCDLog: <>
+  867 								CFSTR: <>
+  868 								SCDError: <>
+  869 								CFDictionarySetValue: <>
+  870 								CFDictionaryRemoveValue: <>
+  871 								SCDHandleSetData: <>
+  872 								SCDSet: <>
+  873 								SCDHandleRelease: <>
+  874 						CFRelease: <>
+  875 					link_remove: void (), <./KernelEventMonitor.bproj/eventmon.c 265>
+  876 						CFStringCreateWithCString: <>
+  877 						SCDKeyCreateNetworkInterface: <>
+  878 						SCDGet: <>
+  879 						SCDHandleGetData: <>
+  880 						CFDictionaryCreateMutableCopy: <>
+  881 						CFDictionaryGetValue: <>
+  882 						CFArrayCreateMutableCopy: <>
+  883 						SCDLog: <>
+  884 						CFSTR: <>
+  885 						SCDError: <>
+  886 						CFArrayGetFirstIndexOfValue: <>
+  887 						CFRangeMake: <>
+  888 						CFArrayGetCount: <>
+  889 						CFArrayRemoveValueAtIndex: <>
+  890 						CFDictionarySetValue: <>
+  891 						SCDHandleSetData: <>
+  892 						SCDSet: <>
+  893 						SCDHandleRelease: <>
+  894 						interface_update_status: 856
+  895 						CFRelease: <>
+  896 					interface_update_status: 856
+  897 				processEvent_Apple_IOKit: void (), <./KernelEventMonitor.bproj/eventmon.c 441>
+  898 					logEvent: 826
+  899 					CFSTR: <>
+  900 				logEvent: 826
+  901 				SCDUnlock: <>
+  902 				CFSocketInvalidate: <>
+  903 			CFSocketCreateRunLoopSource: <>
+  904 		CFRunLoopRun: <>
+  905 		exit: <>

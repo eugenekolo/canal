@@ -1,0 +1,37 @@
+    1 	main: int (), <./fcode-to-c.tproj/fcode-to-c.c 37>
+    2 		usage: void (), <./macho-to-xcoff.tproj/macho-to-xcoff.c 168>
+    3 			printf: int (), <./bootx.tproj/libclite.subproj/printf.c 32>
+    4 				va_start: <>
+    5 				prf: void (), <./bootx.tproj/libclite.subproj/prf.c 97>
+    6 					printn: void (), <./bootx.tproj/libclite.subproj/prf.c 64>
+    7 				putchar: void (), <./bootx.tproj/ci.subproj/ci_io.c 34>
+    8 					CallMethod_0_0: long (), <./bootx.tproj/ci.subproj/ci.c 431>
+    9 						CallCI: long (), <./bootx.tproj/ci.subproj/ci.c 41>
+   10 					CallMethod_1_0: long (), <./bootx.tproj/ci.subproj/ci.c 469>
+   11 						CallCI: 9
+   12 				va_end: <>
+   13 			exit: <>
+   14 		fopen: <>
+   15 		perror: <>
+   16 		fread: <>
+   17 		SWAPL: <>
+   18 		malloc: void * (), <./bootx.tproj/libclite.subproj/zalloc.c 91>
+   19 			zallocate: void (), <./bootx.tproj/libclite.subproj/zalloc.c 198>
+   20 				printf: 3
+   21 			zdelete: void (), <./bootx.tproj/libclite.subproj/zalloc.c 227>
+   22 			bzero: void (), <./bootx.tproj/libclite.subproj/mem.c 83>
+   23 				memset: void * (), <./bootx.tproj/libclite.subproj/mem.c 53>
+   24 		printf: 3
+   25 		strncmp: int (), <./bootx.tproj/libclite.subproj/string.c 58>
+   26 		sscanf: <>
+   27 		fwrite: <>
+   28 		copyMachOSectionToXCOFF: void (), <./macho-to-xcoff.tproj/macho-to-xcoff.c 176>
+   29 			fseek: <>
+   30 			fread: <>
+   31 			perror: <>
+   32 			fwrite: <>
+   33 		fclose: <>
+   34 		fprintf: <>
+   35 		strncpy: char * (), <./bootx.tproj/libclite.subproj/string.c 77>
+   36 		fgetc: <>
+   37 		fputc: <>

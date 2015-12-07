@@ -1,0 +1,62 @@
+    1 	DllMain: BOOL APIENTRY (), <./runtime/objc_dllMain.c 31>
+    2 	moninitobjc: unsigned long * (), <./runtime/objc-moninit.c 29>
+    3 	objc_hpux_register_named_shlib: void (), <./runtime/objc_hpux_register_shlib.c 593>
+    4 		strcpy: <>
+    5 		my_basename: char * (), <./runtime/objc_hpux_register_shlib.c 73>
+    6 			strlen: <>
+    7 			strstr: <>
+    8 		fprintf: <>
+    9 		shl_get_r: <>
+   10 		strcmp: <>
+   11 		objc_hpux_register_shlib_handle: void (), <./runtime/objc_hpux_register_shlib.c 503>
+   12 			shl_getsymbols: <>
+   13 			fprintf: <>
+   14 			strncmp: <>
+   15 			objc_finish_header: <>
+   16 			free: <>
+   17 		objc_hpux_register_shlib: void (), <./runtime/objc_hpux_register_shlib.c 543>
+   18 			fprintf: <>
+   19 			shl_get_r: <>
+   20 			already_loaded: int (), <./runtime/objc_hpux_register_shlib.c 288>
+   21 				strcpy: <>
+   22 				my_basename: 5
+   23 				strcmp: <>
+   24 				insert_loaded_shlib: void (), <./runtime/objc_hpux_register_shlib.c 314>
+   25 					strcpy: <>
+   26 					my_basename: 5
+   27 					already_loaded: 20
+   28 					fprintf: <>
+   29 					exit: <>
+   30 					memcpy: <>
+   31 					strlen: <>
+   32 			dependencies_resolved: int (), <./runtime/objc_hpux_register_shlib.c 461>
+   33 				strcmp: <>
+   34 				already_loaded: 20
+   35 				fprintf: <>
+   36 			insert_pending_shlib: void (), <./runtime/objc_hpux_register_shlib.c 382>
+   37 				fprintf: <>
+   38 				already_pending: int (), <./runtime/objc_hpux_register_shlib.c 365>
+   39 					strcmp: <>
+   40 					fprintf: <>
+   41 				exit: <>
+   42 				memcpy: <>
+   43 				strlen: <>
+   44 				strcpy: <>
+   45 			objc_hpux_register_shlib_handle: 11
+   46 			delete_pending_shlib: void (), <./runtime/objc_hpux_register_shlib.c 419>
+   47 				fprintf: <>
+   48 				strcmp: <>
+   49 			insert_loaded_shlib: 24
+   50 			more_pending_shlibs: int (), <./runtime/objc_hpux_register_shlib.c 443>
+   51 				strcmp: <>
+   52 				fprintf: <>
+   53 			resolve_pending_shlibs: void (), <./runtime/objc_hpux_register_shlib.c 484>
+   54 				dependencies_resolved: 32
+   55 				fprintf: <>
+   56 				objc_hpux_register_shlib_handle: 11
+   57 				delete_pending_shlib: 46
+   58 				insert_loaded_shlib: 24
+   59 	objc_hpux_register_shlib: 17
+   60 	objc_hpux_register_shlib_handle: 11
+   61 	objc_hpux_register_shlib_pdo: void (), <./runtime/objc_hpux_register_shlib.c 630>
+   62 		objc_hpux_register_named_shlib: 3

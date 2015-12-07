@@ -1,0 +1,3133 @@
+    1 	main: int (), <./zsh/Src/ansi2knr.c 118>
+    2 		setlocale: <>
+    3 		global_permalloc: int (), <./zsh/Src/mem.c 114>
+    4 			zcalloc: void * (), <./zsh/Src/mem.c 326>
+    5 				malloc: MALLOC_RET_T (), <./zsh/Src/mem.c 546>
+    6 					queue_signals: <>
+    7 					sysconf: <>
+    8 					getpagesize: <>
+    9 					M_SIDX: <>
+   10 					unqueue_signals: <>
+   11 					M_SBLEN: <>
+   12 					zfree: void (), <./zsh/Src/mem.c 1184>
+   13 						DPUTS: <>
+   14 						queue_signals: <>
+   15 						M_BSLEN: <>
+   16 						unqueue_signals: <>
+   17 						memset: <>
+   18 						brk: <>
+   19 						free: FREE_RET_T (), <./zsh/Src/mem.c 961>
+   20 							zfree: 12
+   21 					sbrk: <>
+   22 					DPUTS: <>
+   23 				zerr: void (), <./zsh/Src/utils.c 36>
+   24 					zwarn: void (), <./zsh/Src/utils.c 60>
+   25 						trashzle: void (), <./zsh/Src/zle_main.c 1231>
+   26 							refresh: void (), <./zsh/Src/zle_refresh.c 201>
+   27 								tccan: <>
+   28 								moveto: void (), <./zsh/Src/zle_refresh.c 783>
+   29 									zputc: <>
+   30 									tc_upcurs: <>
+   31 									tc_downcurs: int (), <./zsh/Src/zle_refresh.c 920>
+   32 										tcmultout: int (), <./zsh/Src/zle_refresh.c 841>
+   33 											tccan: <>
+   34 											tcoutarg: void (), <./zsh/Src/zle_refresh.c 942>
+   35 												tgoto: <>
+   36 												tputs: <>
+   37 												putshout: int (), <./zsh/Src/utils.c 166>
+   38 													putc: <>
+   39 												SELECT_ADD_COST: <>
+   40 												strlen: <>
+   41 											tcout: void (), <./zsh/Src/zle_refresh.c 934>
+   42 												tputs: <>
+   43 												putshout: 37
+   44 												SELECT_ADD_COST: <>
+   45 										zputc: <>
+   46 									singmoveto: void (), <./zsh/Src/zle_refresh.c 1079>
+   47 										tccan: <>
+   48 										zputc: <>
+   49 										tc_leftcurs: <>
+   50 										tc_rightcurs: void (), <./zsh/Src/zle_refresh.c 857>
+   51 											tccan: <>
+   52 											tcoutarg: 34
+   53 											tcout: 41
+   54 											zwrite: <>
+   55 											zputc: <>
+   56 								tcout: 41
+   57 								invalidatelist: void (), <./zsh/Src/zle_tricky.c 3001>
+   58 									listmatches: void (), <./zsh/Src/zle_tricky.c 3504>
+   59 										isset: <>
+   60 										getiparam: zlong (), <./zsh/Src/params.c 936>
+   61 											getvalue: Value (), <./zsh/Src/params.c 588>
+   62 												idigit: <>
+   63 												zstrtol: zlong (), <./zsh/Src/utils.c 1179>
+   64 													inblank: <>
+   65 													idigit: <>
+   66 												iident: <>
+   67 												hcalloc: void * (), <./zsh/Src/mem.c 286>
+   68 													halloc: void * (), <./zsh/Src/mem.c 227>
+   69 														arena: <>
+   70 														malloc: 5
+   71 														queue_signals: <>
+   72 														zalloc: void * (), <./zsh/Src/mem.c 310>
+   73 															malloc: 5
+   74 															zerr: 23
+   75 															exit: <>
+   76 														zfree: 12
+   77 														unqueue_signals: <>
+   78 													memset: <>
+   79 												strcmp: <>
+   80 												PM_TYPE: <>
+   81 												getindex: int (), <./zsh/Src/params.c 513>
+   82 													itok: <>
+   83 													getarg: zlong (), <./zsh/Src/params.c 276>
+   84 														get_strarg: char * (), <./zsh/Src/subst.c 619>
+   85 														mathevalarg: zlong (), <./zsh/Src/math.c 800>
+   86 															mathevall: zlong (), <./zsh/Src/math.c 718>
+   87 																zalloc: 72
+   88 																zcalloc: 4
+   89 																mathparse: void (), <./zsh/Src/math.c 817>
+   90 																	zzlex: int (), <./zsh/Src/math.c 150>
+   91 																		ialnum: <>
+   92 																		zstrtol: 63
+   93 																		idigit: <>
+   94 																		STOUC: <>
+   95 																		iident: <>
+   96 																		zerr: 23
+   97 																		ztrdup: char * (), <./zsh/Src/mem.c 387>
+   98 																			zalloc: 72
+   99 																			strlen: <>
+  100 																			strcpy: <>
+  101 																		poundgetfn: zlong (), <./zsh/Src/params.c 1350>
+  102 																			arrlen: int (), <./zsh/Src/utils.c 1145>
+  103 																	push: void (), <./zsh/Src/math.c 408>
+  104 																		zerr: 23
+  105 																	getiparam: 60
+  106 																	getcvar: zlong (), <./zsh/Src/math.c 421>
+  107 																		getsparam: char * (), <./zsh/Src/params.c 949>
+  108 																			getvalue: 61
+  109 																			getstrvalue: char * (), <./zsh/Src/params.c 674>
+  110 																				hcalloc: 67
+  111 																				sprintf: <>
+  112 																				dupstring: char * (), <./zsh/Src/mem.c 374>
+  113 																					ncalloc: void *(), <./zsh/Src/mem.c 33>
+  114 																					strlen: <>
+  115 																					strcpy: <>
+  116 																				PM_TYPE: <>
+  117 																				sepjoin: char * (), <./zsh/Src/utils.c 1830>
+  118 																					strlen: <>
+  119 																					ncalloc: void *(), <./zsh/Src/mem.c 33>
+  120 																					strucpy: void (), <./zsh/Src/utils.c 1120>
+  121 																				arrlen: int (), <./zsh/Src/utils.c 1145>
+  122 																				convbase: void (), <./zsh/Src/params.c 1906>
+  123 																					sprintf: <>
+  124 																					strlen: <>
+  125 																				DPUTS: <>
+  126 																				strlen: <>
+  127 																		STOUC: <>
+  128 																	mathparse: 89
+  129 																	zerr: 23
+  130 																	op: void (), <./zsh/Src/math.c 486>
+  131 																		zerr: 23
+  132 																		nolval: <>
+  133 																		setvar: zlong (), <./zsh/Src/math.c 433>
+  134 																			zerr: 23
+  135 																			setiparam: Param (), <./zsh/Src/params.c 1053>
+  136 																				isident: int (), <./zsh/Src/params.c 241>
+  137 																					iident: <>
+  138 																					mathevalarg: 85
+  139 																				zerr: 23
+  140 																				getvalue: 61
+  141 																				createparam: Param (), <./zsh/Src/params.c 171>
+  142 																					zcalloc: 4
+  143 																					ztrdup: 97
+  144 																					isset: <>
+  145 																					PM_TYPE: <>
+  146 																					cfn: <>
+  147 																					strsetfn: void (), <./zsh/Src/params.c 1169>
+  148 																						zsfree: void (), <./zsh/Src/mem.c 1192>
+  149 																							zfree: 12
+  150 																							strlen: <>
+  151 																							free: 19
+  152 																						adduserdir: void (), <./zsh/Src/utils.c 480>
+  153 																							unset: <>
+  154 																							strlen: <>
+  155 																							zcalloc: 4
+  156 																							ztrdup: 97
+  157 																					strgetfn: char * (), <./zsh/Src/params.c 1160>
+  158 																						hcalloc: 67
+  159 																					ifn: <>
+  160 																					intsetfn: void (), <./zsh/Src/params.c 1151>
+  161 																					intgetfn: zlong (), <./zsh/Src/params.c 1142>
+  162 																					afn: <>
+  163 																					arrsetfn: void (), <./zsh/Src/params.c 1191>
+  164 																						freearray: void (), <./zsh/Src/utils.c 2658>
+  165 																							zsfree: 148
+  166 																							free: 19
+  167 																						uniqarray: void (), <./zsh/Src/params.c 1331>
+  168 																							strcmp: <>
+  169 																							zsfree: 148
+  170 																					arrgetfn: char ** (), <./zsh/Src/params.c 1180>
+  171 																					DPUTS: <>
+  172 																				DPUTS: <>
+  173 																				setintvalue: void (), <./zsh/Src/params.c 858>
+  174 																					zerr: 23
+  175 																					PM_TYPE: <>
+  176 																					convbase: 122
+  177 																					setstrvalue: void (), <./zsh/Src/params.c 778>
+  178 																						zerr: 23
+  179 																						zsfree: 148
+  180 																						PM_TYPE: <>
+  181 																						MUSTUSEHEAP: <>
+  182 																						strlen: <>
+  183 																						dupstring: 112
+  184 																						unset: <>
+  185 																						zalloc: 72
+  186 																						strncpy: <>
+  187 																						strcpy: <>
+  188 																						strcat: <>
+  189 																						matheval: zlong (), <./zsh/Src/math.c 782>
+  190 																							mathevall: 86
+  191 																							zerr: 23
+  192 																						setarrvalue: void (), <./zsh/Src/params.c 881>
+  193 																							zerr: 23
+  194 																							freearray: 164
+  195 																							PM_TYPE: <>
+  196 																							unset: <>
+  197 																							arrlen: int (), <./zsh/Src/utils.c 1145>
+  198 																							zcalloc: 4
+  199 																							ztrdup: 97
+  200 																						isset: <>
+  201 																						convbase: 122
+  202 																						replenv: char * (), <./zsh/Src/params.c 1810>
+  203 																							zrealloc: void * (), <./zsh/Src/mem.c 349>
+  204 																								realloc: MALLOC_RET_T (), <./zsh/Src/mem.c 982>
+  205 																									malloc: 5
+  206 																									queue_signals: <>
+  207 																									M_BSLEN: <>
+  208 																									memcpy: <>
+  209 																									free: 19
+  210 																									unqueue_signals: <>
+  211 																								zerr: 23
+  212 																								exit: <>
+  213 																								free: 19
+  214 																								malloc: 5
+  215 																						addenv: char * (), <./zsh/Src/params.c 1861>
+  216 																							zsfree: 148
+  217 																							mkenvstr: char * (), <./zsh/Src/params.c 1836>
+  218 																								strlen: <>
+  219 																								zalloc: 72
+  220 																								strcpy: <>
+  221 																							arrlen: int (), <./zsh/Src/utils.c 1145>
+  222 																							zrealloc: 203
+  223 																					ztrdup: 97
+  224 																		pop2: <>
+  225 																		pushv: <>
+  226 																		notzero: int (), <./zsh/Src/math.c 448>
+  227 																			zerr: 23
+  228 																		pop3: <>
+  229 																		set: <>
+  230 																		pop2lv: <>
+  231 																	bop: void (), <./zsh/Src/math.c 699>
+  232 																zerr: 23
+  233 																zsfree: 148
+  234 																zfree: 12
+  235 														getkeystring: char * (), <./zsh/Src/zle_main.c 751>
+  236 															zalloc: 72
+  237 															strlen: <>
+  238 															idigit: <>
+  239 															zstrtol: 63
+  240 														dupstring: 112
+  241 														dupstrpfx: char * (), <./zsh/Src/utils.c 3567>
+  242 															ncalloc: void *(), <./zsh/Src/mem.c 33>
+  243 															memcpy: <>
+  244 														parsestr: int (), <./zsh/Src/lex.c 1196>
+  245 															strlen: <>
+  246 															lexsave: void (), <./zsh/Src/lex.c 82>
+  247 																malloc: 5
+  248 																zalloc: 72
+  249 															untokenize: void (), <./zsh/Src/exec.c 1035>
+  250 																itok: <>
+  251 																chuck: void (), <./zsh/Src/utils.c 1083>
+  252 															inpush: void (), <./zsh/Src/input.c 426>
+  253 																zalloc: 72
+  254 																realloc: 204
+  255 																inputsetline: void (), <./zsh/Src/input.c 287>
+  256 																	free: 19
+  257 																	strlen: <>
+  258 															dupstring: 112
+  259 															strinbeg: void (), <./zsh/Src/hist.c 537>
+  260 																hbegin: void (), <./zsh/Src/hist.c 561>
+  261 																	unset: <>
+  262 																	zcalloc: 4
+  263 																	zalloc: 72
+  264 																	gethistent: <>
+  265 																	time: <>
+  266 																	isset: <>
+  267 																	attachtty: void (), <./zsh/Src/utils.c 2913>
+  268 																		tcsetpgrp: <>
+  269 																		setpgrp: <>
+  270 																		ioctl: <>
+  271 																		kill: <>
+  272 																		attachtty: 267
+  273 																		zerr: 23
+  274 																		fflush: <>
+  275 																lexinit: void (), <./zsh/Src/lex.c 315>
+  276 															dquote_parse: int (), <./zsh/Src/lex.c 1064>
+  277 																hgetc: int (), <./zsh/Src/hist.c 114>
+  278 																	ingetc: int (), <./zsh/Src/input.c 151>
+  279 																		itok: <>
+  280 																		STOUC: <>
+  281 																		inpoptop: void (), <./zsh/Src/input.c 483>
+  282 																			free: 19
+  283 																			strlen: <>
+  284 																			histbackword: void (), <./zsh/Src/hist.c 838>
+  285 																		inputline: int (), <./zsh/Src/input.c 193>
+  286 																			isset: <>
+  287 																			putprompt: char * (), <./zsh/Src/zle_misc.c 821>
+  288 																				ztrdup: 97
+  289 																				unset: <>
+  290 																				init_term: int (), <./zsh/Src/init.c 468>
+  291 																					strcmp: <>
+  292 																					tgetent: <>
+  293 																					isset: <>
+  294 																					zerr: 23
+  295 																					zsfree: 148
+  296 																					tgetstr: <>
+  297 																					strlen: <>
+  298 																					zalloc: 72
+  299 																					memcpy: <>
+  300 																					tgetflag: <>
+  301 																					tgetnum: <>
+  302 																					tccan: <>
+  303 																					ztrdup: 97
+  304 																					inithist: void (), <./zsh/Src/hist.c 1356>
+  305 																						zcalloc: 4
+  306 																					zcalloc: 4
+  307 																					gettimeofday: void (), <./zsh/Src/compat.c 68>
+  308 																						time: <>
+  309 																					srand: <>
+  310 																					gethostname: int (), <./zsh/Src/compat.c 55>
+  311 																						uname: <>
+  312 																						strncpy: <>
+  313 																					mkarray: char ** (), <./zsh/Src/utils.c 2639>
+  314 																						zalloc: 72
+  315 																					getppid: <>
+  316 																					getpid: <>
+  317 																					getuid: <>
+  318 																					getpwuid: <>
+  319 																					metafy: char * (), <./zsh/Src/utils.c 3092>
+  320 																						imeta: <>
+  321 																						zrealloc: 203
+  322 																						hrealloc: void * (), <./zsh/Src/mem.c 297>
+  323 																							halloc: 68
+  324 																							memcpy: <>
+  325 																						memcpy: <>
+  326 																						zalloc: 72
+  327 																						halloc: 68
+  328 																						fprintf: <>
+  329 																						fflush: <>
+  330 																					ispwd: int (), <./zsh/Src/utils.c 265>
+  331 																						stat: <>
+  332 																						unmeta: char * (), <./zsh/Src/utils.c 3194>
+  333 																					zgetenv: char * (), <./zsh/Src/params.c 1794>
+  334 																					zgetcwd: char * (), <./zsh/Src/compat.c 108>
+  335 																						holdintr: void (), <./zsh/Src/signals.c 125>
+  336 																							signal_block: sigset_t (), <./zsh/Src/signals.c 161>
+  337 																								sigprocmask: <>
+  338 																								sigblock: <>
+  339 																								sigismember: <>
+  340 																								sigaddset: <>
+  341 																								sighold: <>
+  342 																								signal_ignore: <>
+  343 																							signal_mask: sigset_t (), <./zsh/Src/signals.c 146>
+  344 																								set: <>
+  345 																								sigemptyset: <>
+  346 																								sigaddset: <>
+  347 																						stat: <>
+  348 																						noholdintr: void (), <./zsh/Src/signals.c 135>
+  349 																							signal_unblock: sigset_t (), <./zsh/Src/signals.c 205>
+  350 																								sigprocmask: <>
+  351 																								sigfillset: <>
+  352 																								sigsetmask: <>
+  353 																								sigismember: <>
+  354 																								sigdelset: <>
+  355 																								sigrelse: <>
+  356 																								install_handler: void (), <./zsh/Src/signals.c 65>
+  357 																									handler: RETSIGTYPE (), <./zsh/Src/signals.c 360>
+  358 																										signal_process: <>
+  359 																										sigfillset: <>
+  360 																										signal_block: 336
+  361 																										DPUTS: <>
+  362 																										signal_reset: <>
+  363 																										signal_setmask: sigset_t (), <./zsh/Src/signals.c 251>
+  364 																											sigprocmask: <>
+  365 																											sigsetmask: <>
+  366 																											sigismember: <>
+  367 																											sigaddset: <>
+  368 																											sighold: <>
+  369 																											sigdelset: <>
+  370 																											sigrelse: <>
+  371 																											signal_ignore: <>
+  372 																											install_handler: 356
+  373 																										WAIT: <>
+  374 																										WIFSIGNALED: <>
+  375 																										WTERMSIG: <>
+  376 																										WEXITSTATUS: <>
+  377 																										times: <>
+  378 																										zerr: 23
+  379 																										findproc: int (), <./zsh/Src/jobs.c 80>
+  380 																										update_process: void (), <./zsh/Src/jobs.c 178>
+  381 																											times: <>
+  382 																											gettimeofday: 307
+  383 																										update_job: void (), <./zsh/Src/jobs.c 198>
+  384 																											WIFSTOPPED: <>
+  385 																											WIFSIGNALED: <>
+  386 																											WTERMSIG: <>
+  387 																											WEXITSTATUS: <>
+  388 																											zalloc: 72
+  389 																											gettyinfo: void (), <./zsh/Src/utils.c 798>
+  390 																												tcgetattr: <>
+  391 																												ioctl: <>
+  392 																												zerr: 23
+  393 																											super_job: int (), <./zsh/Src/jobs.c 99>
+  394 																												stat: <>
+  395 																											killpg: <>
+  396 																											isset: <>
+  397 																											gettygrp: pid_t (), <./zsh/Src/utils.c 2950>
+  398 																												tcgetpgrp: <>
+  399 																												ioctl: <>
+  400 																											kill: <>
+  401 																											attachtty: 267
+  402 																											adjustwinsize: void (), <./zsh/Src/utils.c 912>
+  403 																												ioctl: <>
+  404 																												adjustlines: int (), <./zsh/Src/utils.c 856>
+  405 																													DPUTS: <>
+  406 																												zgetenv: 333
+  407 																												setiparam: 135
+  408 																												adjustcolumns: int (), <./zsh/Src/utils.c 880>
+  409 																													DPUTS: <>
+  410 																												refresh: 26
+  411 																											inerrflush: void (), <./zsh/Src/input.c 411>
+  412 																												ingetc: 278
+  413 																											handle_sub: int (), <./zsh/Src/jobs.c 112>
+  414 																												WIFSIGNALED: <>
+  415 																												killpg: <>
+  416 																												WTERMSIG: <>
+  417 																												kill: <>
+  418 																												WIFEXITED: <>
+  419 																												attachtty: 267
+  420 																												printjob: void (), <./zsh/Src/jobs.c 368>
+  421 																													WIFSIGNALED: <>
+  422 																													WTERMSIG: <>
+  423 																													strlen: <>
+  424 																													sigmsg: <>
+  425 																													WCOREDUMP: <>
+  426 																													WIFSTOPPED: <>
+  427 																													WSTOPSIG: <>
+  428 																													isset: <>
+  429 																													WEXITSTATUS: <>
+  430 																													trashzle: 25
+  431 																													putc: <>
+  432 																													fprintf: <>
+  433 																													WIFEXITED: <>
+  434 																													fflush: <>
+  435 																													strcmp: <>
+  436 																													fprintdir: void (), <./zsh/Src/utils.c 382>
+  437 																														finddir: Nameddir (), <./zsh/Src/utils.c 449>
+  438 																															strlen: <>
+  439 																															strcmp: <>
+  440 																															strcpy: <>
+  441 																															finddir_scan: void (), <./zsh/Src/utils.c 433>
+  442 																																dircmp: int (), <./zsh/Src/utils.c 565>
+  443 																															scanhashtable: void (), <./zsh/Src/hashtable.c 247>
+  444 																																zalloc: 72
+  445 																																qsort: <>
+  446 																																hnamcmp: int (), <./zsh/Src/hashtable.c 229>
+  447 																																	ztrcmp: int (), <./zsh/Src/utils.c 3215>
+  448 																																		STOUC: <>
+  449 																																free: 19
+  450 																														fputs: <>
+  451 																														unmeta: 332
+  452 																														putc: <>
+  453 																														strlen: <>
+  454 																													should_report_time: int (), <./zsh/Src/jobs.c 827>
+  455 																														getvalue: 61
+  456 																														getintvalue: zlong (), <./zsh/Src/params.c 765>
+  457 																															PM_TYPE: <>
+  458 																															matheval: 189
+  459 																															getstrvalue: 109
+  460 																														set_clktck: void (), <./zsh/Src/jobs.c 795>
+  461 																															sysconf: <>
+  462 																													dumptime: void (), <./zsh/Src/jobs.c 939>
+  463 																														printtime: void (), <./zsh/Src/jobs.c 867>
+  464 																															set_clktck: 460
+  465 																															getsparam: 107
+  466 																															fprintf: <>
+  467 																															printhhmmss: void (), <./zsh/Src/jobs.c 850>
+  468 																																fprintf: <>
+  469 																															putc: <>
+  470 																															fflush: <>
+  471 																														dtime: struct timeval (), <./zsh/Src/jobs.c 42>
+  472 																													deletejob: void (), <./zsh/Src/jobs.c 534>
+  473 																														attachtty: 267
+  474 																														adjustwinsize: 402
+  475 																														zfree: 12
+  476 																														zsfree: 148
+  477 																														deletefilelist: void (), <./zsh/Src/jobs.c 520>
+  478 																															getlinknode: void * (), <./zsh/Src/linklist.c 89>
+  479 																																zfree: 12
+  480 																															unlink: <>
+  481 																															zsfree: 148
+  482 																															zfree: 12
+  483 																														deletejob: 472
+  484 																													setprevjob: void (), <./zsh/Src/jobs.c 563>
+  485 																												isset: <>
+  486 																											printjob: 420
+  487 																											refresh: 26
+  488 																											dotrap: void (), <./zsh/Src/signals.c 735>
+  489 																												dotrapargs: void (), <./zsh/Src/signals.c 672>
+  490 																													lexsave: 246
+  491 																													execsave: <>
+  492 																													newlinklist: LinkList (), <./zsh/Src/linklist.c 36>
+  493 																													zalloc: 72
+  494 																													strlen: <>
+  495 																													sprintf: <>
+  496 																													addlinknode: <>
+  497 																													doshfunc: <>
+  498 																													freelinklist: void (), <./zsh/Src/linklist.c 166>
+  499 																														zfree: 12
+  500 																													zsfree: 148
+  501 																													execlist: void (), <./zsh/Src/exec.c 583>
+  502 																														unset: <>
+  503 																														simplifyright: void (), <./zsh/Src/utils.c 2684>
+  504 																															nonempty: <>
+  505 																														execpline: int (), <./zsh/Src/exec.c 706>
+  506 																															child_block: <>
+  507 																															initjob: int (), <./zsh/Src/jobs.c 746>
+  508 																																stat: <>
+  509 																																ztrdup: 97
+  510 																																zerr: 23
+  511 																															stat: <>
+  512 																															zclose: int (), <./zsh/Src/utils.c 1033>
+  513 																																close: <>
+  514 																															mpipe: <>
+  515 																															execpline2: void (), <./zsh/Src/exec.c 934>
+  516 																																strcpy: <>
+  517 																																getjobtext: char * (), <./zsh/Src/text.c 123>
+  518 																																	gettext2: void (), <./zsh/Src/text.c 156>
+  519 																																		NT_TYPE: <>
+  520 																																		gt2: <>
+  521 																																		taddstr: void (), <./zsh/Src/text.c 57>
+  522 																																			strlen: <>
+  523 																																			realloc: 204
+  524 																																			strcpy: <>
+  525 																																		simplifyright: 503
+  526 																																		taddnl: void (), <./zsh/Src/text.c 90>
+  527 																																			taddchr: void (), <./zsh/Src/text.c 39>
+  528 																																				realloc: 204
+  529 																																			taddstr: 521
+  530 																																		getsimptext: void (), <./zsh/Src/text.c 426>
+  531 																																			firstnode: <>
+  532 																																			incnode: <>
+  533 																																			getdata: <>
+  534 																																			taddstr: 521
+  535 																																			taddchr: 527
+  536 																																			PM_TYPE: <>
+  537 																																			taddlist: void (), <./zsh/Src/text.c 501>
+  538 																																				firstnode: <>
+  539 																																				incnode: <>
+  540 																																				taddstr: 521
+  541 																																				getdata: <>
+  542 																																				taddchr: 527
+  543 																																		taddlist: 537
+  544 																																		getredirs: void (), <./zsh/Src/text.c 449>
+  545 																																			taddchr: 527
+  546 																																			firstnode: <>
+  547 																																			incnode: <>
+  548 																																			getdata: <>
+  549 																																			IS_READFD: <>
+  550 																																			taddstr: 521
+  551 																																			DPUTS: <>
+  552 																																		getcond: void (), <./zsh/Src/text.c 372>
+  553 																																			taddstr: 521
+  554 																																			getcond: 552
+  555 																																		taddchr: 527
+  556 																																		loop: void (), <./zsh/Src/init.c 99>
+  557 																																			pushheap: void (), <./zsh/Src/mem.c 151>
+  558 																																				zalloc: 72
+  559 																																			freeheap: void (), <./zsh/Src/mem.c 172>
+  560 																																				memset: <>
+  561 																																				arena: <>
+  562 																																			isset: <>
+  563 																																			setblock_stdin: int (), <./zsh/Src/utils.c 1264>
+  564 																																				fstat: <>
+  565 																																				S_ISREG: <>
+  566 																																				fcntl: <>
+  567 																																			preprompt: void (), <./zsh/Src/utils.c 581>
+  568 																																				getiparam: 60
+  569 																																				unset: <>
+  570 																																				scanjobs: void (), <./zsh/Src/jobs.c 971>
+  571 																																					stat: <>
+  572 																																					printjob: 420
+  573 																																				getshfunc: List (), <./zsh/Src/utils.c 1889>
+  574 																																					getfpfunc: <>
+  575 																																					zerr: 23
+  576 																																					dupstruct: void * (), <./zsh/Src/utils.c 1959>
+  577 																																						dupstruct2: void ** (), <./zsh/Src/utils.c 2340>
+  578 																																							NT_TYPE: <>
+  579 																																							dupnode: void * (), <./zsh/Src/utils.c 2263>
+  580 																																								NT_N: <>
+  581 																																								dupstruct2: 577
+  582 																																								dupstring: 112
+  583 																																								ztrdup: 97
+  584 																																								duplist: LinkList (), <./zsh/Src/utils.c 2584>
+  585 																																									newlinklist: 492
+  586 																																									firstnode: <>
+  587 																																									incnode: <>
+  588 																																									addlinknode: <>
+  589 																																									getdata: <>
+  590 																																								list2arr: char ** (), <./zsh/Src/utils.c 2611>
+  591 																																									countlinknodes: int (), <./zsh/Src/linklist.c 183>
+  592 																																										firstnode: <>
+  593 																																										incnode: <>
+  594 																																									firstnode: <>
+  595 																																									incnode: <>
+  596 																																									getdata: <>
+  597 																																								arr2list: LinkList (), <./zsh/Src/utils.c 2627>
+  598 																																									newlinklist: 492
+  599 																																									addlinknode: <>
+  600 																																								duparray: char ** (), <./zsh/Src/utils.c 2597>
+  601 																																									arrlen: int (), <./zsh/Src/utils.c 1145>
+  602 																																								abort: <>
+  603 																																						simplifystruct: struct node (), <./zsh/Src/utils.c 1983>
+  604 																																						expandstruct: struct node (), <./zsh/Src/utils.c 2076>
+  605 																																				doshfunc: <>
+  606 																																				time: <>
+  607 																																				difftime: double (), <./zsh/Src/compat.c 80>
+  608 																																				dowatch: void (), <./zsh/Src/watch.c 378>
+  609 																																					getsparam: 107
+  610 																																					holdintr: 335
+  611 																																					readwtab: void (), <./zsh/Src/watch.c 344>
+  612 																																						fopen: <>
+  613 																																						zalloc: 72
+  614 																																						fread: <>
+  615 																																						realloc: 204
+  616 																																						fclose: <>
+  617 																																						qsort: <>
+  618 																																						ucmp: int (), <./zsh/Src/watch.c 333>
+  619 																																							strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+  620 																																					noholdintr: 348
+  621 																																					stat: <>
+  622 																																					zalloc: 72
+  623 																																					fopen: <>
+  624 																																					free: 19
+  625 																																					fread: <>
+  626 																																					realloc: 204
+  627 																																					fclose: <>
+  628 																																					qsort: <>
+  629 																																					ucmp: 618
+  630 																																					watchlog: void (), <./zsh/Src/watch.c 270>
+  631 																																						strcmp: <>
+  632 																																						watchlog2: char * (), <./zsh/Src/watch.c 122>
+  633 																																							putchar: <>
+  634 																																							watch3ary: char * (), <./zsh/Src/watch.c 86>
+  635 																																								strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+  636 																																								watchlog2: 632
+  637 																																							printf: <>
+  638 																																							strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+  639 																																							idigit: <>
+  640 																																							getlogtime: time_t (), <./zsh/Src/watch.c 40>
+  641 																																								fopen: <>
+  642 																																								time: <>
+  643 																																								fseek: <>
+  644 																																								fclose: <>
+  645 																																								fread: <>
+  646 																																								memcmp: <>
+  647 																																								strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+  648 																																							localtime: <>
+  649 																																							ztrftime: int (), <./zsh/Src/utils.c 1517>
+  650 																																								strucpy: void (), <./zsh/Src/utils.c 1120>
+  651 																																								strftime: <>
+  652 																																								strlen: <>
+  653 																																							txtset: <>
+  654 																																							tsetcap: void (), <./zsh/Src/zle_misc.c 775>
+  655 																																								tputs: <>
+  656 																																								putraw: int (), <./zsh/Src/utils.c 156>
+  657 																																									putc: <>
+  658 																																								putshout: 37
+  659 																																								tgetnum: <>
+  660 																																								putstr: int (), <./zsh/Src/zle_misc.c 764>
+  661 																																									addbufspc: void (), <./zsh/Src/zle_misc.c 1328>
+  662 																																										realloc: 204
+  663 																																								txtisset: <>
+  664 																																								txtunset: <>
+  665 																																								tsetcap: 654
+  666 																																							txtunset: <>
+  667 																																						strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+  668 																																						get_username: char * (), <./zsh/Src/utils.c 401>
+  669 																																							getuid: <>
+  670 																																							zsfree: 148
+  671 																																							getpwuid: <>
+  672 																																							ztrdup: 97
+  673 																																						strlen: <>
+  674 																																					fflush: <>
+  675 																																				checkmailpath: void (), <./zsh/Src/utils.c 659>
+  676 																																					zerr: 23
+  677 																																					stat: <>
+  678 																																					unmeta: 332
+  679 																																					S_ISDIR: <>
+  680 																																					opendir: <>
+  681 																																					pushheap: 557
+  682 																																					newlinklist: 492
+  683 																																					zreaddir: char * (), <./zsh/Src/utils.c 3314>
+  684 																																						readdir: <>
+  685 																																						metafy: 319
+  686 																																					sprintf: <>
+  687 																																					addlinknode: <>
+  688 																																					dupstring: 112
+  689 																																					closedir: <>
+  690 																																					ugetnode: void * (), <./zsh/Src/linklist.c 110>
+  691 																																					checkmailpath: 675
+  692 																																					popheap: void (), <./zsh/Src/mem.c 194>
+  693 																																						memset: <>
+  694 																																						arena: <>
+  695 																																						zfree: 12
+  696 																																					fprintf: <>
+  697 																																					fflush: <>
+  698 																																					parsestr: 244
+  699 																																					singsub: void (), <./zsh/Src/subst.c 221>
+  700 																																						newlinklist: 492
+  701 																																						addlinknode: <>
+  702 																																						prefork: void (), <./zsh/Src/subst.c 50>
+  703 																																							MUSTUSEHEAP: <>
+  704 																																							firstnode: <>
+  705 																																							incnode: <>
+  706 																																							getdata: <>
+  707 																																							setdata: <>
+  708 																																							getproc: char * (), <./zsh/Src/exec.c 2442>
+  709 																																								zerr: 23
+  710 																																								namedpipe: char * (), <./zsh/Src/exec.c 2424>
+  711 																																									gettempname: char * (), <./zsh/Src/utils.c 1052>
+  712 																																										getsparam: 107
+  713 																																										dyncat: char * (), <./zsh/Src/glob.c 970>
+  714 																																											strlen: <>
+  715 																																											ncalloc: void *(), <./zsh/Src/mem.c 33>
+  716 																																											strcpy: <>
+  717 																																										unmeta: 332
+  718 																																										mktemp: <>
+  719 																																									mkfifo: <>
+  720 																																									mknod: <>
+  721 																																								ncalloc: void *(), <./zsh/Src/mem.c 33>
+  722 																																								strlen: <>
+  723 																																								parsecmd: List (), <./zsh/Src/exec.c 2347>
+  724 																																									zerr: 23
+  725 																																									parse_string: List (), <./zsh/Src/exec.c 41>
+  726 																																										lexsave: 246
+  727 																																										inpush: 252
+  728 																																										strinbeg: 259
+  729 																																										parse_list: List (), <./zsh/Src/parse.c 124>
+  730 																																											yylex: void (), <./zsh/Src/lex.c 169>
+  731 																																												gettok: int (), <./zsh/Src/lex.c 401>
+  732 																																													MUSTUSEHEAP: <>
+  733 																																													iblank: <>
+  734 																																													hgetc: 277
+  735 																																													hwbegin: void (), <./zsh/Src/hist.c 793>
+  736 																																													idigit: <>
+  737 																																													hungetc: void (), <./zsh/Src/hist.c 504>
+  738 																																														hungetc: 737
+  739 																																														DPUTS: <>
+  740 																																														inungetc: void (), <./zsh/Src/input.c 319>
+  741 																																															fprintf: <>
+  742 																																															zcalloc: 4
+  743 																																															inpush: 252
+  744 																																													isset: <>
+  745 																																													unset: <>
+  746 																																													ingetc: 278
+  747 																																													hwaddc: void (), <./zsh/Src/hist.c 60>
+  748 																																														hwaddc: 747
+  749 																																														realloc: 204
+  750 																																													addtoline: void (), <./zsh/Src/hist.c 91>
+  751 																																														spaceinline: void (), <./zsh/Src/zle_utils.c 47>
+  752 																																															sizeline: void (), <./zsh/Src/zle_utils.c 37>
+  753 																																																realloc: 204
+  754 																																														itok: <>
+  755 																																													hwend: void (), <./zsh/Src/hist.c 811>
+  756 																																														realloc: 204
+  757 																																													STOUC: <>
+  758 																																													ncalloc: void *(), <./zsh/Src/mem.c 33>
+  759 																																													cmd_or_math: int (), <./zsh/Src/lex.c 351>
+  760 																																														cmdpush: <>
+  761 																																														dquote_parse: 276
+  762 																																														cmdpop: <>
+  763 																																														hgetc: 277
+  764 																																														hungetc: 737
+  765 																																														itok: <>
+  766 																																													zalloc: 72
+  767 																																													realloc: 204
+  768 																																													zfree: 12
+  769 																																													gettokstr: int (), <./zsh/Src/lex.c 643>
+  770 																																														ncalloc: void *(), <./zsh/Src/mem.c 33>
+  771 																																														inblank: <>
+  772 																																														STOUC: <>
+  773 																																														brk: <>
+  774 																																														hgetc: 277
+  775 																																														fputs: <>
+  776 																																														fflush: <>
+  777 																																														add: void (), <./zsh/Src/lex.c 327>
+  778 																																															hrealloc: 322
+  779 																																														isset: <>
+  780 																																														unset: <>
+  781 																																														cmdpush: <>
+  782 																																														dquote_parse: 276
+  783 																																														cmdpop: <>
+  784 																																														cmd_or_math_sub: int (), <./zsh/Src/lex.c 379>
+  785 																																															hgetc: 277
+  786 																																															add: 777
+  787 																																															cmd_or_math: 759
+  788 																																															hungetc: 737
+  789 																																															skipcomm: int (), <./zsh/Src/lex.c 1343>
+  790 																																																cmdpush: <>
+  791 																																																add: 777
+  792 																																																hgetc: 277
+  793 																																																itok: <>
+  794 																																																cmdpop: <>
+  795 																																														hungetc: 737
+  796 																																														skipcomm: 789
+  797 																																														idigit: <>
+  798 																																														iident: <>
+  799 																																														skipparens: int (), <./zsh/Src/utils.c 1157>
+  800 																																														zerr: 23
+  801 																																														DPUTS: <>
+  802 																																												exalias: int (), <./zsh/Src/lex.c 1274>
+  803 																																													hwend: 755
+  804 																																													isset: <>
+  805 																																													spckword: void (), <./zsh/Src/utils.c 1385>
+  806 																																														strcmp: <>
+  807 																																														isset: <>
+  808 																																														itok: <>
+  809 																																														ialpha: <>
+  810 																																														scanhashtable: 443
+  811 																																														spscan: void (), <./zsh/Src/utils.c 1369>
+  812 																																															spdist: int (), <./zsh/Src/utils.c 2831>
+  813 																																																strcmp: <>
+  814 																																																tulower: int (), <./zsh/Src/utils.c 1091>
+  815 																																																	isupper: <>
+  816 																																																	tolower: <>
+  817 																																																spdist: 812
+  818 																																																strlen: <>
+  819 																																																strchr: <>
+  820 																																															strlen: <>
+  821 																																														hashcmd: Cmdnam (), <./zsh/Src/exec.c 525>
+  822 																																															strucpy: void (), <./zsh/Src/utils.c 1120>
+  823 																																															strlen: <>
+  824 																																															strcpy: <>
+  825 																																															iscom: int (), <./zsh/Src/exec.c 500>
+  826 																																																unmeta: 332
+  827 																																																access: <>
+  828 																																																stat: <>
+  829 																																																S_ISREG: <>
+  830 																																															zcalloc: 4
+  831 																																															ztrdup: 97
+  832 																																															isset: <>
+  833 																																															hashdir: void (), <./zsh/Src/hashtable.c 539>
+  834 																																																isrelative: int (), <./zsh/Src/exec.c 511>
+  835 																																																opendir: <>
+  836 																																																unmeta: 332
+  837 																																																zreaddir: 683
+  838 																																																zcalloc: 4
+  839 																																																ztrdup: 97
+  840 																																																closedir: <>
+  841 																																														dupstring: 112
+  842 																																														singsub: 699
+  843 																																														strlen: <>
+  844 																																														access: <>
+  845 																																														unmeta: 332
+  846 																																														spname: char * (), <./zsh/Src/utils.c 2763>
+  847 																																															mindist: int (), <./zsh/Src/utils.c 2798>
+  848 																																																sprintf: <>
+  849 																																																access: <>
+  850 																																																unmeta: 332
+  851 																																																strcpy: <>
+  852 																																																opendir: <>
+  853 																																																zreaddir: 683
+  854 																																																spdist: 812
+  855 																																																strlen: <>
+  856 																																																closedir: <>
+  857 																																															strcpy: <>
+  858 																																															strcat: <>
+  859 																																														strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+  860 																																														ncalloc: void *(), <./zsh/Src/mem.c 33>
+  861 																																														strncpy: <>
+  862 																																														strcpy: <>
+  863 																																														putprompt: 287
+  864 																																														fwrite: <>
+  865 																																														free: 19
+  866 																																														fflush: <>
+  867 																																														feep: void (), <./zsh/Src/utils.c 2650>
+  868 																																															isset: <>
+  869 																																															write: <>
+  870 																																														getquery: int (), <./zsh/Src/utils.c 1311>
+  871 																																															strcmp: <>
+  872 																																															attachtty: 267
+  873 																																															setcbreak: void (), <./zsh/Src/utils.c 2894>
+  874 																																																settyinfo: void (), <./zsh/Src/utils.c 823>
+  875 																																																	tcsetattr: <>
+  876 																																																	ioctl: <>
+  877 																																															ioctl: <>
+  878 																																															settyinfo: 874
+  879 																																															write: <>
+  880 																																															read1char: int (), <./zsh/Src/utils.c 1298>
+  881 																																																read: <>
+  882 																																																STOUC: <>
+  883 																																															strchr: <>
+  884 																																															feep: 867
+  885 																																															icntrl: <>
+  886 																																														hwrep: void (), <./zsh/Src/hist.c 875>
+  887 																																															hwget: void (), <./zsh/Src/hist.c 848>
+  888 																																																DPUTS: <>
+  889 																																															strcmp: <>
+  890 																																															hwbegin: 735
+  891 																																															hwaddc: 747
+  892 																																															hwend: 755
+  893 																																													dupstring: 112
+  894 																																													has_token: int (), <./zsh/Src/utils.c 1071>
+  895 																																														itok: <>
+  896 																																													ncalloc: void *(), <./zsh/Src/mem.c 33>
+  897 																																													strlen: <>
+  898 																																													itok: <>
+  899 																																													gotword: void (), <./zsh/Src/zle_tricky.c 1237>
+  900 																																													inpush: 252
+  901 																																													remhist: void (), <./zsh/Src/hist.c 771>
+  902 																																														gethistent: <>
+  903 																																														zsfree: 148
+  904 																																													unset: <>
+  905 																																													strcmp: <>
+  906 																																												hwbegin: 735
+  907 																																												cmdpush: <>
+  908 																																												gethere: char * (), <./zsh/Src/exec.c 2134>
+  909 																																													INULL: <>
+  910 																																													untokenize: 249
+  911 																																													zalloc: 72
+  912 																																													hgetc: 277
+  913 																																													realloc: 204
+  914 																																													strcmp: <>
+  915 																																													parsestr: 244
+  916 																																													dupstring: 112
+  917 																																													zfree: 12
+  918 																																												cmdpop: <>
+  919 																																												hwend: 755
+  920 																																												zfree: 12
+  921 																																											par_list: List (), <./zsh/Src/parse.c 145>
+  922 																																												yylex: 730
+  923 																																												par_sublist: Sublist (), <./zsh/Src/parse.c 193>
+  924 																																													par_sublist2: Sublist (), <./zsh/Src/parse.c 218>
+  925 																																														make_sublist: <>
+  926 																																														yylex: 730
+  927 																																														par_pline: Pline (), <./zsh/Src/parse.c 243>
+  928 																																															par_cmd: Cmd (), <./zsh/Src/parse.c 294>
+  929 																																																make_cmd: <>
+  930 																																																newlinklist: 492
+  931 																																																IS_REDIROP: <>
+  932 																																																par_redir: void (), <./zsh/Src/parse.c 1149>
+  933 																																																	allocnode: void * (), <./zsh/Src/utils.c 1944>
+  934 																																																		memset: <>
+  935 																																																	yylex: 730
+  936 																																																	IS_READFD: <>
+  937 																																																	zalloc: 72
+  938 																																																	addlinknode: <>
+  939 																																																cmdpush: <>
+  940 																																																par_for: void (), <./zsh/Src/parse.c 393>
+  941 																																																	make_forcmd: <>
+  942 																																																	yylex: 730
+  943 																																																	isident: 136
+  944 																																																	strcmp: <>
+  945 																																																	par_wordlist: LinkList (), <./zsh/Src/parse.c 1215>
+  946 																																																		newlinklist: 492
+  947 																																																		addlinknode: <>
+  948 																																																		yylex: 730
+  949 																																																	par_nl_wordlist: LinkList (), <./zsh/Src/parse.c 1233>
+  950 																																																		newlinklist: 492
+  951 																																																		addlinknode: <>
+  952 																																																		yylex: 730
+  953 																																																	par_list: 921
+  954 																																																	isset: <>
+  955 																																																	unset: <>
+  956 																																																	par_list1: List (), <./zsh/Src/parse.c 174>
+  957 																																																		par_sublist: 923
+  958 																																																		make_list: <>
+  959 																																																cmdpop: <>
+  960 																																																par_case: void (), <./zsh/Src/parse.c 459>
+  961 																																																	yylex: 730
+  962 																																																	newlinklist: 492
+  963 																																																	addlinknode: <>
+  964 																																																	strcmp: <>
+  965 																																																	make_casecmd: <>
+  966 																																																	strlen: <>
+  967 																																																	ncalloc: void *(), <./zsh/Src/mem.c 33>
+  968 																																																	strcpy: <>
+  969 																																																	iblank: <>
+  970 																																																	chuck: void (), <./zsh/Src/utils.c 1083>
+  971 																																																	par_list: 921
+  972 																																																	firstnode: <>
+  973 																																																	incnode: <>
+  974 																																																	getdata: <>
+  975 																																																par_if: void (), <./zsh/Src/parse.c 596>
+  976 																																																	newlinklist: 492
+  977 																																																	cmdpush: <>
+  978 																																																	yylex: 730
+  979 																																																	cmdpop: <>
+  980 																																																	addlinknode: <>
+  981 																																																	par_list: 921
+  982 																																																	unset: <>
+  983 																																																	par_list1: 956
+  984 																																																	make_ifcmd: <>
+  985 																																																	firstnode: <>
+  986 																																																	incnode: <>
+  987 																																																	getdata: <>
+  988 																																																par_while: void (), <./zsh/Src/parse.c 718>
+  989 																																																	make_whilecmd: <>
+  990 																																																	yylex: 730
+  991 																																																	par_list: 921
+  992 																																																	isset: <>
+  993 																																																par_repeat: void (), <./zsh/Src/parse.c 757>
+  994 																																																	yylex: 730
+  995 																																																	addlinknode: <>
+  996 																																																	par_list: 921
+  997 																																																	isset: <>
+  998 																																																	unset: <>
+  999 																																																	par_list1: 956
+ 1000 																																																par_subsh: void (), <./zsh/Src/parse.c 798>
+ 1001 																																																	yylex: 730
+ 1002 																																																	par_list: 921
+ 1003 																																																par_funcdef: void (), <./zsh/Src/parse.c 816>
+ 1004 																																																	yylex: 730
+ 1005 																																																	newlinklist: 492
+ 1006 																																																	addlinknode: <>
+ 1007 																																																	par_list: 921
+ 1008 																																																	unset: <>
+ 1009 																																																	par_list1: 956
+ 1010 																																																par_time: void (), <./zsh/Src/parse.c 861>
+ 1011 																																																	yylex: 730
+ 1012 																																																	par_sublist2: 924
+ 1013 																																																par_dinbrack: void (), <./zsh/Src/parse.c 874>
+ 1014 																																																	yylex: 730
+ 1015 																																																	par_cond: Cond (), <./zsh/Src/parse.c 984>
+ 1016 																																																		par_cond_1: Cond (), <./zsh/Src/parse.c 1010>
+ 1017 																																																			par_cond_2: Cond (), <./zsh/Src/parse.c 1040>
+ 1018 																																																				condlex: void (), <./zsh/Src/parse.c 976>
+ 1019 																																																				testlex: void (), <./zsh/Src/builtin.c 5535>
+ 1020 																																																					strcmp: <>
+ 1021 																																																				par_cond_double: Cond (), <./zsh/Src/parse.c 1248>
+ 1022 																																																					make_cond: <>
+ 1023 																																																					COND_ERROR: <>
+ 1024 																																																					NT_SET: <>
+ 1025 																																																				dupstring: 112
+ 1026 																																																				strcmp: <>
+ 1027 																																																				get_cond_num: int (), <./zsh/Src/parse.c 1262>
+ 1028 																																																					strcmp: <>
+ 1029 																																																				par_cond_triple: Cond (), <./zsh/Src/parse.c 1278>
+ 1030 																																																					make_cond: <>
+ 1031 																																																					get_cond_num: 1027
+ 1032 																																																					COND_ERROR: <>
+ 1033 																																																					NT_SET: <>
+ 1034 																																																				par_cond_2: 1017
+ 1035 																																																				make_cond: <>
+ 1036 																																																				par_cond: 1015
+ 1037 																																																				strspn: <>
+ 1038 																																																				NT_SET: <>
+ 1039 																																																			condlex: void (), <./zsh/Src/parse.c 976>
+ 1040 																																																			make_cond: <>
+ 1041 																																																			par_cond_1: 1016
+ 1042 																																																		condlex: void (), <./zsh/Src/parse.c 976>
+ 1043 																																																		make_cond: <>
+ 1044 																																																		par_cond: 1015
+ 1045 																																																addlinknode: <>
+ 1046 																																																yylex: 730
+ 1047 																																																par_simple: Cmd (), <./zsh/Src/parse.c 896>
+ 1048 																																																	make_varnode: <>
+ 1049 																																																	equalsplit: int (), <./zsh/Src/utils.c 2669>
+ 1050 																																																	addlinknode: <>
+ 1051 																																																	cmdpush: <>
+ 1052 																																																	yylex: 730
+ 1053 																																																	par_nl_wordlist: 949
+ 1054 																																																	cmdpop: <>
+ 1055 																																																	IS_REDIROP: <>
+ 1056 																																																	par_redir: 932
+ 1057 																																																	par_list: 921
+ 1058 																																																	expandstruct: struct node (), <./zsh/Src/utils.c 2076>
+ 1059 																																																	par_cmd: 928
+ 1060 																																																	empty: <>
+ 1061 																																															cmdpush: <>
+ 1062 																																															yylex: 730
+ 1063 																																															par_pline: 927
+ 1064 																																															cmdpop: <>
+ 1065 																																															make_pline: <>
+ 1066 																																															allocnode: 933
+ 1067 																																															dupstring: 112
+ 1068 																																															addlinknode: <>
+ 1069 																																													cmdpush: <>
+ 1070 																																													yylex: 730
+ 1071 																																													par_sublist: 923
+ 1072 																																													cmdpop: <>
+ 1073 																																												make_list: <>
+ 1074 																																												par_list: 921
+ 1075 																																											yyerror: void (), <./zsh/Src/parse.c 1303>
+ 1076 																																												zwarn: 24
+ 1077 																																										strinend: void (), <./zsh/Src/hist.c 548>
+ 1078 																																											hend: int (), <./zsh/Src/hist.c 662>
+ 1079 																																												DPUTS: <>
+ 1080 																																												settyinfo: 874
+ 1081 																																												zfree: 12
+ 1082 																																												strcmp: <>
+ 1083 																																												isset: <>
+ 1084 																																												ztrdup: 97
+ 1085 																																												zputs: int (), <./zsh/Src/utils.c 3325>
+ 1086 																																													fputc: <>
+ 1087 																																												fputc: <>
+ 1088 																																												fflush: <>
+ 1089 																																												pushnode: <>
+ 1090 																																												zsfree: 148
+ 1091 																																												hwend: 755
+ 1092 																																												histreduceblanks: void (), <./zsh/Src/hist.c 634>
+ 1093 																																													memcpy: <>
+ 1094 																																												gethistent: <>
+ 1095 																																												histcmp: int (), <./zsh/Src/hist.c 590>
+ 1096 																																													inblank: <>
+ 1097 																																													memcmp: <>
+ 1098 																																												memcpy: <>
+ 1099 																																												time: <>
+ 1100 																																												zalloc: 72
+ 1101 																																											DPUTS: <>
+ 1102 																																										inpop: void (), <./zsh/Src/input.c 514>
+ 1103 																																											inpoptop: 281
+ 1104 																																										lexrestore: void (), <./zsh/Src/lex.c 127>
+ 1105 																																											DPUTS: <>
+ 1106 																																											free: 19
+ 1107 																																								newlinklist: 492
+ 1108 																																								addlinknode: <>
+ 1109 																																								ztrdup: 97
+ 1110 																																								zfork: pid_t (), <./zsh/Src/exec.c 94>
+ 1111 																																									zerr: 23
+ 1112 																																									fork: <>
+ 1113 																																									setlimits: int (), <./zsh/Src/exec.c 78>
+ 1114 																																										zsetlimit: int (), <./zsh/Src/exec.c 62>
+ 1115 																																											setrlimit: <>
+ 1116 																																											zwarnnam: void (), <./zsh/Src/utils.c 79>
+ 1117 																																												trashzle: 25
+ 1118 																																												unset: <>
+ 1119 																																												nicezputs: int (), <./zsh/Src/utils.c 3345>
+ 1120 																																													itok: <>
+ 1121 																																													fputs: <>
+ 1122 																																													nicechar: char * (), <./zsh/Src/utils.c 184>
+ 1123 																																														isprint: <>
+ 1124 																																														isset: <>
+ 1125 																																												fputs: <>
+ 1126 																																												zerrmsg: void (), <./zsh/Src/utils.c 95>
+ 1127 																																													nicezputs: 1119
+ 1128 																																													metalen: int (), <./zsh/Src/utils.c 3174>
+ 1129 																																													halloc: 68
+ 1130 																																													memcpy: <>
+ 1131 																																													fprintf: <>
+ 1132 																																													putc: <>
+ 1133 																																													fputs: <>
+ 1134 																																													nicechar: 1122
+ 1135 																																													strerror: char * (), <./zsh/Src/compat.c 95>
+ 1136 																																													fputc: <>
+ 1137 																																													tulower: 814
+ 1138 																																													unset: <>
+ 1139 																																													fflush: <>
+ 1140 																																								mpipe: <>
+ 1141 																																								sprintf: <>
+ 1142 																																								zclose: 512
+ 1143 																																								closem: void (), <./zsh/Src/exec.c 2121>
+ 1144 																																									zclose: 512
+ 1145 																																								open: <>
+ 1146 																																								entersubsh: void (), <./zsh/Src/exec.c 2050>
+ 1147 																																									unsettrap: void (), <./zsh/Src/signals.c 631>
+ 1148 																																										intr: void (), <./zsh/Src/signals.c 105>
+ 1149 																																											install_handler: 356
+ 1150 																																										noholdintr: 348
+ 1151 																																										install_handler: 356
+ 1152 																																										signal_default: <>
+ 1153 																																										sprintf: <>
+ 1154 																																										freestruct: void (), <./zsh/Src/utils.c 2477>
+ 1155 																																											NT_TYPE: <>
+ 1156 																																											freetreenode: void (), <./zsh/Src/utils.c 2306>
+ 1157 																																												NT_N: <>
+ 1158 																																												freestruct: 1154
+ 1159 																																												zsfree: 148
+ 1160 																																												free: 19
+ 1161 																																												freearray: 164
+ 1162 																																												abort: <>
+ 1163 																																											zfree: 12
+ 1164 																																									unset: <>
+ 1165 																																									settrap: int (), <./zsh/Src/signals.c 598>
+ 1166 																																										zerr: 23
+ 1167 																																										unsettrap: 1147
+ 1168 																																										signal_ignore: <>
+ 1169 																																										install_handler: 356
+ 1170 																																									isatty: <>
+ 1171 																																									close: <>
+ 1172 																																									open: <>
+ 1173 																																									zerr: 23
+ 1174 																																									setpgrp: <>
+ 1175 																																									killpg: <>
+ 1176 																																									getpid: <>
+ 1177 																																									attachtty: 267
+ 1178 																																									zclose: 512
+ 1179 																																									isset: <>
+ 1180 																																									signal_default: <>
+ 1181 																																									clearjobtab: void (), <./zsh/Src/jobs.c 728>
+ 1182 																																										zsfree: 148
+ 1183 																																										zfree: 12
+ 1184 																																										memset: <>
+ 1185 																																									times: <>
+ 1186 																																								redup: void (), <./zsh/Src/utils.c 1015>
+ 1187 																																									zclose: 512
+ 1188 																																									zrealloc: 203
+ 1189 																																									dup2: <>
+ 1190 																																								execlist: 501
+ 1191 																																								pipe: <>
+ 1192 																																								movefd: int (), <./zsh/Src/utils.c 989>
+ 1193 																																									fcntl: <>
+ 1194 																																									movefd: 1192
+ 1195 																																									dup: <>
+ 1196 																																									zclose: 512
+ 1197 																																									zrealloc: 203
+ 1198 																																								firstnode: <>
+ 1199 																																								incnode: <>
+ 1200 																																								getdata: <>
+ 1201 																																								evalcond: int (), <./zsh/Src/cond.c 34>
+ 1202 																																									evalcond: 1201
+ 1203 																																									singsub: 699
+ 1204 																																									untokenize: 249
+ 1205 																																									matchpat: int (), <./zsh/Src/glob.c 1155>
+ 1206 																																										strlen: <>
+ 1207 																																										strcpy: <>
+ 1208 																																										parsereg: Comp (), <./zsh/Src/glob.c 1889>
+ 1209 																																											remnulargs: void (), <./zsh/Src/glob.c 2244>
+ 1210 																																												INULL: <>
+ 1211 																																												chuck: void (), <./zsh/Src/utils.c 1083>
+ 1212 																																											parsecompsw: Comp (), <./zsh/Src/glob.c 2122>
+ 1213 																																												parsecomp: Comp (), <./zsh/Src/glob.c 1978>
+ 1214 																																													unset: <>
+ 1215 																																													isset: <>
+ 1216 																																													dupstrpfx: 241
+ 1217 																																													parsecomp: 1213
+ 1218 																																													dupstring: 112
+ 1219 																																													skipparens: int (), <./zsh/Src/utils.c 1157>
+ 1220 																																													parsecompsw: 1212
+ 1221 																																													stat: <>
+ 1222 																																													idigit: <>
+ 1223 																																													itok: <>
+ 1224 																																												isset: <>
+ 1225 																																												parsecompsw: 1212
+ 1226 																																												dupstring: 112
+ 1227 																																										zerr: 23
+ 1228 																																										domatch: int (), <./zsh/Src/glob.c 1618>
+ 1229 																																											doesmatch: int (), <./zsh/Src/glob.c 1653>
+ 1230 																																												ONEHASHP: <>
+ 1231 																																												TWOHASHP: <>
+ 1232 																																												doesmatch: 1229
+ 1233 																																												excluded: int (), <./zsh/Src/glob.c 1633>
+ 1234 																																													PATHADDP: <>
+ 1235 																																													getfullpath: char * (), <./zsh/Src/glob.c 1476>
+ 1236 																																														strcpy: <>
+ 1237 																																														strncpy: <>
+ 1238 																																													doesmatch: 1229
+ 1239 																																												CLOSUREP: <>
+ 1240 																																												LASTP: <>
+ 1241 																																												PPAT: <>
+ 1242 																																												PAT: <>
+ 1243 																																												strcoll: <>
+ 1244 																																												zerr: 23
+ 1245 																																												idigit: <>
+ 1246 																																												RANGE_CAST: <>
+ 1247 																																												zstrtol: 63
+ 1248 																																												DPUTS: <>
+ 1249 																																									strcmp: <>
+ 1250 																																									doaccess: int (), <./zsh/Src/cond.c 162>
+ 1251 																																										access: <>
+ 1252 																																										unmeta: 332
+ 1253 																																									S_ISBLK: <>
+ 1254 																																									dostat: unsigned short (), <./zsh/Src/cond.c 190>
+ 1255 																																										getstat: struct stat (), <./zsh/Src/cond.c 172>
+ 1256 																																									S_ISCHR: <>
+ 1257 																																									S_ISDIR: <>
+ 1258 																																									S_ISREG: <>
+ 1259 																																									strlen: <>
+ 1260 																																									optison: int (), <./zsh/Src/cond.c 214>
+ 1261 																																										strlen: <>
+ 1262 																																										optlookupc: int (), <./zsh/Src/utils.c 3510>
+ 1263 																																											optid: <>
+ 1264 																																										optlookup: int (), <./zsh/Src/utils.c 3478>
+ 1265 																																											dupstring: 112
+ 1266 																																											chuck: void (), <./zsh/Src/utils.c 1083>
+ 1267 																																											tulower: 814
+ 1268 																																											strcmp: <>
+ 1269 																																										zerr: 23
+ 1270 																																										unset: <>
+ 1271 																																										isset: <>
+ 1272 																																									S_ISFIFO: <>
+ 1273 																																									getstat: struct stat (), <./zsh/Src/cond.c 172>
+ 1274 																																									S_ISSOCK: <>
+ 1275 																																									geteuid: <>
+ 1276 																																									S_ISLNK: <>
+ 1277 																																									dolstat: unsigned short (), <./zsh/Src/cond.c 204>
+ 1278 																																										lstat: <>
+ 1279 																																										unmeta: 332
+ 1280 																																									getegid: <>
+ 1281 																																									isatty: <>
+ 1282 																																									matheval: 189
+ 1283 																																									zerr: 23
+ 1284 																																								ugetnode: 690
+ 1285 																																								matheval: 189
+ 1286 																																								shelltime: void (), <./zsh/Src/jobs.c 951>
+ 1287 																																									times: <>
+ 1288 																																									gettimeofday: 307
+ 1289 																																									printtime: 463
+ 1290 																																									dtime: struct timeval (), <./zsh/Src/jobs.c 42>
+ 1291 																																								execpline: 505
+ 1292 																																								zalloc: 72
+ 1293 																																								dupstruct: 576
+ 1294 																																								strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+ 1295 																																								getsignum: int (), <./zsh/Src/builtin.c 5922>
+ 1296 																																									atoi: <>
+ 1297 																																									idigit: <>
+ 1298 																																									strcmp: <>
+ 1299 																																								settrap: 1165
+ 1300 																																								freestruct: 1154
+ 1301 																																								zfree: 12
+ 1302 																																								peekfirst: <>
+ 1303 																																								deletejob: 472
+ 1304 																																								getfpfunc: <>
+ 1305 																																								doshfunc: <>
+ 1306 																																								deletefilelist: 477
+ 1307 																																								pushheap: 557
+ 1308 																																								memcpy: <>
+ 1309 																																								zcalloc: 4
+ 1310 																																								countlinknodes: 591
+ 1311 																																								isset: <>
+ 1312 																																								zsfree: 148
+ 1313 																																								getlinknode: 478
+ 1314 																																								unsetparam_pm: void (), <./zsh/Src/params.c 1090>
+ 1315 																																									zerr: 23
+ 1316 																																									PM_TYPE: <>
+ 1317 																																									cfn: <>
+ 1318 																																									afn: <>
+ 1319 																																									delenv: void (), <./zsh/Src/params.c 1892>
+ 1320 																																									zsfree: 148
+ 1321 																																									unsetparam_pm: 1314
+ 1322 																																									strsetfn: 147
+ 1323 																																									adduserdir: 152
+ 1324 																																								freearray: 164
+ 1325 																																								dotrapargs: 489
+ 1326 																																								popheap: 692
+ 1327 																																								strcpy: <>
+ 1328 																																								unmetafy: char * (), <./zsh/Src/utils.c 3156>
+ 1329 																																								access: <>
+ 1330 																																								lseek: <>
+ 1331 																																								read: <>
+ 1332 																																								close: <>
+ 1333 																																								metafy: 319
+ 1334 																																								parse_string: 725
+ 1335 																																								cancd2: <>
+ 1336 																																								unmeta: 332
+ 1337 																																								dupstring: 112
+ 1338 																																								cd_able_vars: char * (), <./zsh/Src/builtin.c 1199>
+ 1339 																																									isset: <>
+ 1340 																																									getnameddir: char * (), <./zsh/Src/utils.c 525>
+ 1341 																																										dupstring: 112
+ 1342 																																										PM_TYPE: <>
+ 1343 																																										getsparam: 107
+ 1344 																																										adduserdir: 152
+ 1345 																																										getpwnam: <>
+ 1346 																																										xsymlink: char * (), <./zsh/Src/utils.c 364>
+ 1347 																																											unset: <>
+ 1348 																																											ztrdup: 97
+ 1349 																																											xsymlinks: int (), <./zsh/Src/utils.c 311>
+ 1350 																																												slashsplit: char ** (), <./zsh/Src/utils.c 279>
+ 1351 																																													zcalloc: 4
+ 1352 																																													zalloc: 72
+ 1353 																																													strchr: <>
+ 1354 																																													ztrduppfx: char * (), <./zsh/Src/utils.c 3578>
+ 1355 																																														zalloc: 72
+ 1356 																																														memcpy: <>
+ 1357 																																													ztrdup: 97
+ 1358 																																												strcmp: <>
+ 1359 																																												zsfree: 148
+ 1360 																																												strlen: <>
+ 1361 																																												unset: <>
+ 1362 																																												strcat: <>
+ 1363 																																												sprintf: <>
+ 1364 																																												readlink: <>
+ 1365 																																												unmeta: 332
+ 1366 																																												metafy: 319
+ 1367 																																												strcpy: <>
+ 1368 																																												xsymlinks: 1349
+ 1369 																																												free: 19
+ 1370 																																										zsfree: 148
+ 1371 																																									dyncat: 713
+ 1372 																																								stat: <>
+ 1373 																																								S_ISDIR: <>
+ 1374 																																								malloc: 5
+ 1375 																																								DPUTS: <>
+ 1376 																																								free: 19
+ 1377 																																							getoutputfile: char * (), <./zsh/Src/exec.c 2369>
+ 1378 																																								parsecmd: 723
+ 1379 																																								gettempname: 711
+ 1380 																																								ztrdup: 97
+ 1381 																																								newlinklist: 492
+ 1382 																																								addlinknode: <>
+ 1383 																																								child_block: <>
+ 1384 																																								open: <>
+ 1385 																																								zfork: 1110
+ 1386 																																								child_unblock: <>
+ 1387 																																								close: <>
+ 1388 																																								stat: <>
+ 1389 																																								waitforpid: void (), <./zsh/Src/jobs.c 659>
+ 1390 																																									child_block: <>
+ 1391 																																									kill: <>
+ 1392 																																									child_suspend: <>
+ 1393 																																									child_unblock: <>
+ 1394 																																								redup: 1186
+ 1395 																																								entersubsh: 1146
+ 1396 																																								execlist: 501
+ 1397 																																								zerr: 23
+ 1398 																																								kill: <>
+ 1399 																																								getpid: <>
+ 1400 																																							isset: <>
+ 1401 																																							filesub: void (), <./zsh/Src/subst.c 285>
+ 1402 																																								filesubstr: int (), <./zsh/Src/subst.c 324>
+ 1403 																																									zstrtol: 63
+ 1404 																																									isend: <>
+ 1405 																																									dyncat: 713
+ 1406 																																									inblank: <>
+ 1407 																																									idigit: <>
+ 1408 																																									dstackent: char * (), <./zsh/Src/subst.c 1795>
+ 1409 																																										isset: <>
+ 1410 																																										lastnode: <>
+ 1411 																																										prevnode: <>
+ 1412 																																										firstnode: <>
+ 1413 																																										nextnode: <>
+ 1414 																																										zerr: 23
+ 1415 																																										getdata: <>
+ 1416 																																									iuser: <>
+ 1417 																																									getnameddir: 1340
+ 1418 																																									isset: <>
+ 1419 																																									zerr: 23
+ 1420 																																									isend2: <>
+ 1421 																																									findcmd: char * (), <./zsh/Src/exec.c 445>
+ 1422 																																										isset: <>
+ 1423 																																										hashcmd: 821
+ 1424 																																										strlen: <>
+ 1425 																																										try: <>
+ 1426 																																										unset: <>
+ 1427 																																										strcpy: <>
+ 1428 																																										strucpy: void (), <./zsh/Src/utils.c 1120>
+ 1429 																																										strcat: <>
+ 1430 																																									ztrdup: 97
+ 1431 																																									dupstring: 112
+ 1432 																																									zsfree: 148
+ 1433 																																								strchr: <>
+ 1434 																																								iident: <>
+ 1435 																																								INULL: <>
+ 1436 																																								dyncat: 713
+ 1437 																																							getaddrdata: <>
+ 1438 																																							stringsubst: LinkNode (), <./zsh/Src/subst.c 91>
+ 1439 																																								getdata: <>
+ 1440 																																								skipparens: int (), <./zsh/Src/utils.c 1157>
+ 1441 																																								zerr: 23
+ 1442 																																								arithsubst: char * (), <./zsh/Src/subst.c 1563>
+ 1443 																																									singsub: 699
+ 1444 																																									matheval: 189
+ 1445 																																									convbase: 122
+ 1446 																																									ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1447 																																									strlen: <>
+ 1448 																																									strcat: <>
+ 1449 																																								setdata: <>
+ 1450 																																								paramsubst: LinkNode (), <./zsh/Src/subst.c 710>
+ 1451 																																									getdata: <>
+ 1452 																																									isset: <>
+ 1453 																																									ialnum: <>
+ 1454 																																									DPUTS: <>
+ 1455 																																									get_intarg: int (), <./zsh/Src/subst.c 661>
+ 1456 																																										get_strarg: 84
+ 1457 																																										dupstring: 112
+ 1458 																																										parsestr: 244
+ 1459 																																										singsub: 699
+ 1460 																																										matheval: 189
+ 1461 																																									get_strarg: 84
+ 1462 																																									UNTOK_AND_ESCAPE: <>
+ 1463 																																									UNTOK: <>
+ 1464 																																									zerr: 23
+ 1465 																																									iident: <>
+ 1466 																																									isstring: <>
+ 1467 																																									INULL: <>
+ 1468 																																									skipparens: int (), <./zsh/Src/utils.c 1157>
+ 1469 																																									multsub: int (), <./zsh/Src/subst.c 244>
+ 1470 																																										newlinklist: 492
+ 1471 																																										addlinknode: <>
+ 1472 																																										prefork: 702
+ 1473 																																										countlinknodes: 591
+ 1474 																																										ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1475 																																										nonempty: <>
+ 1476 																																										ugetnode: 690
+ 1477 																																										sepjoin: 117
+ 1478 																																										dupstring: 112
+ 1479 																																									getvalue: 61
+ 1480 																																									unset: <>
+ 1481 																																									isbrack: <>
+ 1482 																																									dupstring: 112
+ 1483 																																									createparam: 141
+ 1484 																																									hcalloc: 67
+ 1485 																																									getindex: 81
+ 1486 																																									getarrvalue: char ** (), <./zsh/Src/params.c 731>
+ 1487 																																										arrdup: char ** (), <./zsh/Src/utils.c 2751>
+ 1488 																																											ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1489 																																											arrlen: int (), <./zsh/Src/utils.c 1145>
+ 1490 																																											dupstring: 112
+ 1491 																																										sprintf: <>
+ 1492 																																										dupstring: 112
+ 1493 																																										arrlen: int (), <./zsh/Src/utils.c 1145>
+ 1494 																																									arrlen: int (), <./zsh/Src/utils.c 1145>
+ 1495 																																									getstrvalue: 109
+ 1496 																																									strlen: <>
+ 1497 																																									iblank: <>
+ 1498 																																									ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1499 																																									memset: <>
+ 1500 																																									strncpy: <>
+ 1501 																																									idigit: <>
+ 1502 																																									strcpy: <>
+ 1503 																																									tulower: 814
+ 1504 																																									tuupper: int (), <./zsh/Src/utils.c 1099>
+ 1505 																																										islower: <>
+ 1506 																																										toupper: <>
+ 1507 																																									sepjoin: 117
+ 1508 																																									sepsplit: char ** (), <./zsh/Src/utils.c 1859>
+ 1509 																																										spacesplit: char ** (), <./zsh/Src/utils.c 1676>
+ 1510 																																											ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1511 																																											wordcount: int (), <./zsh/Src/utils.c 1790>
+ 1512 																																												strlen: <>
+ 1513 																																												findsep: int (), <./zsh/Src/utils.c 1713>
+ 1514 																																													isep: <>
+ 1515 																																													fprintf: <>
+ 1516 																																												skipwsep: int (), <./zsh/Src/utils.c 1659>
+ 1517 																																													iwsep: <>
+ 1518 																																												isep: <>
+ 1519 																																											skipwsep: 1516
+ 1520 																																											isep: <>
+ 1521 																																											dupstring: 112
+ 1522 																																											findsep: 1513
+ 1523 																																											ztrncpy: void (), <./zsh/Src/utils.c 1109>
+ 1524 																																										strlen: <>
+ 1525 																																										wordcount: 1511
+ 1526 																																										ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1527 																																										findsep: 1513
+ 1528 																																										strncpy: <>
+ 1529 																																									zalloc: 72
+ 1530 																																									untokenize: 249
+ 1531 																																									ztrdup: 97
+ 1532 																																									setaparam: Param (), <./zsh/Src/params.c 1012>
+ 1533 																																										isident: 136
+ 1534 																																										zerr: 23
+ 1535 																																										freearray: 164
+ 1536 																																										strchr: <>
+ 1537 																																										getvalue: 61
+ 1538 																																										createparam: 141
+ 1539 																																										PM_TYPE: <>
+ 1540 																																										unsetparam: void (), <./zsh/Src/params.c 1078>
+ 1541 																																											unsetparam_pm: 1314
+ 1542 																																										isset: <>
+ 1543 																																										setarrvalue: 192
+ 1544 																																									setsparam: Param (), <./zsh/Src/params.c 974>
+ 1545 																																										isident: 136
+ 1546 																																										zerr: 23
+ 1547 																																										zsfree: 148
+ 1548 																																										strchr: <>
+ 1549 																																										getvalue: 61
+ 1550 																																										createparam: 141
+ 1551 																																										PM_TYPE: <>
+ 1552 																																										unset: <>
+ 1553 																																										unsetparam: 1540
+ 1554 																																										setstrvalue: 177
+ 1555 																																									tricat: char * (), <./zsh/Src/glob.c 986>
+ 1556 																																										zalloc: 72
+ 1557 																																										strlen: <>
+ 1558 																																										strcpy: <>
+ 1559 																																										strcat: <>
+ 1560 																																									zsfree: 148
+ 1561 																																									exit: <>
+ 1562 																																									parse_subst_string: int (), <./zsh/Src/lex.c 1232>
+ 1563 																																										strlen: <>
+ 1564 																																										lexsave: 246
+ 1565 																																										untokenize: 249
+ 1566 																																										inpush: 252
+ 1567 																																										dupstring: 112
+ 1568 																																										strinbeg: 259
+ 1569 																																										hgetc: 277
+ 1570 																																										gettokstr: 769
+ 1571 																																										strinend: 1077
+ 1572 																																										inpop: 1102
+ 1573 																																										DPUTS: <>
+ 1574 																																										lexrestore: 1104
+ 1575 																																										fprintf: <>
+ 1576 																																										fflush: <>
+ 1577 																																									singsub: 699
+ 1578 																																									getmatch: int (), <./zsh/Src/glob.c 1269>
+ 1579 																																										strlen: <>
+ 1580 																																										parsereg: 1208
+ 1581 																																										zerr: 23
+ 1582 																																										domatch: 1228
+ 1583 																																										get_match_ret: char * (), <./zsh/Src/glob.c 1194>
+ 1584 																																											strlen: <>
+ 1585 																																											sprintf: <>
+ 1586 																																											ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1587 																																											strcpy: <>
+ 1588 																																									modify: void (), <./zsh/Src/subst.c 1583>
+ 1589 																																										dupstring: 112
+ 1590 																																										zerr: 23
+ 1591 																																										zsfree: 148
+ 1592 																																										ztrdup: 97
+ 1593 																																										INULL: <>
+ 1594 																																										chuck: void (), <./zsh/Src/utils.c 1083>
+ 1595 																																										untokenize: 249
+ 1596 																																										get_strarg: 84
+ 1597 																																										get_intarg: 1455
+ 1598 																																										findword: char * (), <./zsh/Src/utils.c 1759>
+ 1599 																																											strlen: <>
+ 1600 																																											findsep: 1513
+ 1601 																																											isep: <>
+ 1602 																																										remtpath: int (), <./zsh/Src/hist.c 995>
+ 1603 																																											strrchr: <>
+ 1604 																																										remtext: int (), <./zsh/Src/hist.c 1011>
+ 1605 																																											strrchr: <>
+ 1606 																																										rembutext: int (), <./zsh/Src/hist.c 1024>
+ 1607 																																											strrchr: <>
+ 1608 																																											dupstring: 112
+ 1609 																																										remlpaths: int (), <./zsh/Src/hist.c 1037>
+ 1610 																																											strrchr: <>
+ 1611 																																											dupstring: 112
+ 1612 																																										downcase: void (), <./zsh/Src/hist.c 1214>
+ 1613 																																											tulower: 814
+ 1614 																																										upcase: void (), <./zsh/Src/hist.c 1204>
+ 1615 																																											tuupper: 1504
+ 1616 																																										subst: void (), <./zsh/Src/hist.c 1089>
+ 1617 																																											strstr: char * (), <./zsh/Src/compat.c 37>
+ 1618 																																											strlen: <>
+ 1619 																																											convamps: char * (), <./zsh/Src/hist.c 1115>
+ 1620 																																												strcpy: <>
+ 1621 																																											tricat: 1555
+ 1622 																																											zsfree: 148
+ 1623 																																										strlen: <>
+ 1624 																																										halloc: 68
+ 1625 																																										strcmp: <>
+ 1626 																																									imeta: <>
+ 1627 																																									ztrlen: int (), <./zsh/Src/utils.c 3275>
+ 1628 																																										fprintf: <>
+ 1629 																																									wordcount: 1511
+ 1630 																																									sprintf: <>
+ 1631 																																									arrdup: 1487
+ 1632 																																									makeuppercase: int (), <./zsh/Src/hist.c 1051>
+ 1633 																																										tuupper: 1504
+ 1634 																																									makelowercase: int (), <./zsh/Src/hist.c 1062>
+ 1635 																																										tulower: 814
+ 1636 																																									makecapitals: int (), <./zsh/Src/hist.c 1073>
+ 1637 																																										ialnum: <>
+ 1638 																																										tuupper: 1504
+ 1639 																																										tulower: 814
+ 1640 																																									setdata: <>
+ 1641 																																									strpcmp: int (), <./zsh/Src/subst.c 427>
+ 1642 																																										strcoll: <>
+ 1643 																																										strcmp: <>
+ 1644 																																									invstrpcmp: int (), <./zsh/Src/subst.c 438>
+ 1645 																																										strcoll: <>
+ 1646 																																										strcmp: <>
+ 1647 																																									cstrpcmp: int (), <./zsh/Src/subst.c 449>
+ 1648 																																										halloc: 68
+ 1649 																																										strlen: <>
+ 1650 																																										tulower: 814
+ 1651 																																										strcoll: <>
+ 1652 																																										STOUC: <>
+ 1653 																																									invcstrpcmp: int (), <./zsh/Src/subst.c 479>
+ 1654 																																										halloc: 68
+ 1655 																																										strlen: <>
+ 1656 																																										tulower: 814
+ 1657 																																										strcoll: <>
+ 1658 																																										STOUC: <>
+ 1659 																																									qsort: <>
+ 1660 																																									newlinklist: 492
+ 1661 																																									addlinknode: <>
+ 1662 																																									stringsubst: 1438
+ 1663 																																									firstnode: <>
+ 1664 																																									dopadding: char * (), <./zsh/Src/subst.c 509>
+ 1665 																																										strlen: <>
+ 1666 																																										halloc: 68
+ 1667 																																									subst_parse_str: int (), <./zsh/Src/subst.c 690>
+ 1668 																																										parsestr: 244
+ 1669 																																									incnode: <>
+ 1670 																																									strcatsub: char * (), <./zsh/Src/subst.c 406>
+ 1671 																																										ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1672 																																										strlen: <>
+ 1673 																																										strncpy: <>
+ 1674 																																										strcpy: <>
+ 1675 																																										tokenize: void (), <./zsh/Src/glob.c 2170>
+ 1676 																																											isset: <>
+ 1677 																																											idigit: <>
+ 1678 																																									insertlinknode: void (), <./zsh/Src/linklist.c 50>
+ 1679 																																									uremnode: void * (), <./zsh/Src/linklist.c 149>
+ 1680 																																									tokenize: 1675
+ 1681 																																								DPUTS: <>
+ 1682 																																								itok: <>
+ 1683 																																								getoutput: LinkList (), <./zsh/Src/exec.c 2222>
+ 1684 																																									parse_string: 725
+ 1685 																																									empty: <>
+ 1686 																																									nonempty: <>
+ 1687 																																									nextnode: <>
+ 1688 																																									firstnode: <>
+ 1689 																																									getdata: <>
+ 1690 																																									singsub: 699
+ 1691 																																									untokenize: 249
+ 1692 																																									open: <>
+ 1693 																																									unmeta: 332
+ 1694 																																									zerr: 23
+ 1695 																																									readoutput: LinkList (), <./zsh/Src/exec.c 2294>
+ 1696 																																										fdopen: <>
+ 1697 																																										newlinklist: 492
+ 1698 																																										ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1699 																																										fgetc: <>
+ 1700 																																										clearerr: <>
+ 1701 																																										imeta: <>
+ 1702 																																										memcpy: <>
+ 1703 																																										fclose: <>
+ 1704 																																										addlinknode: <>
+ 1705 																																										spacesplit: 1509
+ 1706 																																										isset: <>
+ 1707 																																										tokenize: 1675
+ 1708 																																									mpipe: <>
+ 1709 																																									child_block: <>
+ 1710 																																									zfork: 1110
+ 1711 																																									zclose: 512
+ 1712 																																									child_unblock: <>
+ 1713 																																									waitforpid: 1389
+ 1714 																																									redup: 1186
+ 1715 																																									entersubsh: 1146
+ 1716 																																									execlist: 501
+ 1717 																																									close: <>
+ 1718 																																									kill: <>
+ 1719 																																									getpid: <>
+ 1720 																																								ugetnode: 690
+ 1721 																																								strcpy: <>
+ 1722 																																								isset: <>
+ 1723 																																								tokenize: 1675
+ 1724 																																								strlen: <>
+ 1725 																																								nonempty: <>
+ 1726 																																								lastnode: <>
+ 1727 																																								ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1728 																																								insertlinklist: void (), <./zsh/Src/linklist.c 69>
+ 1729 																																							remnulargs: 1209
+ 1730 																																							unset: <>
+ 1731 																																							hasbraces: int (), <./zsh/Src/glob.c 818>
+ 1732 																																								isset: <>
+ 1733 																																								idigit: <>
+ 1734 																																								skipparens: int (), <./zsh/Src/utils.c 1157>
+ 1735 																																							xpandbraces: void (), <./zsh/Src/glob.c 1002>
+ 1736 																																								prevnode: <>
+ 1737 																																								getdata: <>
+ 1738 																																								DPUTS: <>
+ 1739 																																								zstrtol: 63
+ 1740 																																								uremnode: 1679
+ 1741 																																								dupstring: 112
+ 1742 																																								sprintf: <>
+ 1743 																																								strcat: <>
+ 1744 																																								insertlinknode: 1678
+ 1745 																																								nextnode: <>
+ 1746 																																								isset: <>
+ 1747 																																								memset: <>
+ 1748 																																								itok: <>
+ 1749 																																								STOUC: <>
+ 1750 																																								strlen: <>
+ 1751 																																								imeta: <>
+ 1752 																																								ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1753 																																								strcpy: <>
+ 1754 																																								memcpy: <>
+ 1755 																																								ztrncpy: void (), <./zsh/Src/utils.c 1109>
+ 1756 																																								strncat: <>
+ 1757 																																								incnode: <>
+ 1758 																																							uremnode: 1679
+ 1759 																																						ugetnode: 690
+ 1760 																																						DPUTS: <>
+ 1761 																																						nonempty: <>
+ 1762 																																					zputs: 1085
+ 1763 																																					fputc: <>
+ 1764 																																					isset: <>
+ 1765 																																				getsparam: 107
+ 1766 																																				execstring: void (), <./zsh/Src/exec.c 564>
+ 1767 																																					pushheap: 557
+ 1768 																																					parse_string: 725
+ 1769 																																					execlist: 501
+ 1770 																																					popheap: 692
+ 1771 																																				zsfree: 148
+ 1772 																																				zfree: 12
+ 1773 																																			hbegin: 260
+ 1774 																																			intr: 1148
+ 1775 																																			lexinit: 275
+ 1776 																																			parse_event: List (), <./zsh/Src/parse.c 60>
+ 1777 																																				yylex: 730
+ 1778 																																				par_event: List (), <./zsh/Src/parse.c 70>
+ 1779 																																					yylex: 730
+ 1780 																																					par_sublist: 923
+ 1781 																																					make_list: <>
+ 1782 																																					yyerror: 1075
+ 1783 																																					herrflush: void (), <./zsh/Src/hist.c 166>
+ 1784 																																						hwaddc: 747
+ 1785 																																						ingetc: 278
+ 1786 																																					par_event: 1778
+ 1787 																																			hend: 1078
+ 1788 																																			getshfunc: 573
+ 1789 																																			gethistent: <>
+ 1790 																																			newlinklist: 492
+ 1791 																																			addlinknode: <>
+ 1792 																																			doshfunc: <>
+ 1793 																																			freelinklist: 498
+ 1794 																																			execlist: 501
+ 1795 																																			DPUTS: <>
+ 1796 																																			ferror: <>
+ 1797 																																			zerr: 23
+ 1798 																																			clearerr: <>
+ 1799 																																			exit: <>
+ 1800 																																			dotrap: 488
+ 1801 																																			popheap: 692
+ 1802 																																	untokenize: 249
+ 1803 																																execcmd: void (), <./zsh/Src/exec.c 1278>
+ 1804 																																	nonempty: <>
+ 1805 																																	peekfirst: <>
+ 1806 																																	pushnode: <>
+ 1807 																																	dupstring: 112
+ 1808 																																	isset: <>
+ 1809 																																	empty: <>
+ 1810 																																	nextnode: <>
+ 1811 																																	firstnode: <>
+ 1812 																																	unset: <>
+ 1813 																																	scanjobs: 570
+ 1814 																																	findjobnam: int (), <./zsh/Src/builtin.c 831>
+ 1815 																																		stat: <>
+ 1816 																																		strpfx: int (), <./zsh/Src/zle_tricky.c 3406>
+ 1817 																																	has_token: 894
+ 1818 																																	uremnode: 1679
+ 1819 																																	prefork: 702
+ 1820 																																	glob: void (), <./zsh/Src/glob.c 129>
+ 1821 																																		prevnode: <>
+ 1822 																																		getdata: <>
+ 1823 																																		MUSTUSEHEAP: <>
+ 1824 																																		unset: <>
+ 1825 																																		haswilds: char * (), <./zsh/Src/glob.c 766>
+ 1826 																																			isset: <>
+ 1827 																																		untokenize: 249
+ 1828 																																		strlen: <>
+ 1829 																																		modify: 1588
+ 1830 																																		dupstring: 112
+ 1831 																																		uremnode: 1679
+ 1832 																																		isset: <>
+ 1833 																																		idigit: <>
+ 1834 																																		qualflags: int (), <./zsh/Src/glob.c 2343>
+ 1835 																																		hcalloc: 67
+ 1836 																																		qualmode: int (), <./zsh/Src/glob.c 2334>
+ 1837 																																		qualisblk: int (), <./zsh/Src/glob.c 2314>
+ 1838 																																		qualischar: int (), <./zsh/Src/glob.c 2324>
+ 1839 																																		qualisdev: int (), <./zsh/Src/glob.c 2304>
+ 1840 																																		qualiscom: int (), <./zsh/Src/glob.c 2361>
+ 1841 																																		qualdev: int (), <./zsh/Src/glob.c 2266>
+ 1842 																																		qgetnum: off_t (), <./zsh/Src/glob.c 571>
+ 1843 																																			idigit: <>
+ 1844 																																			zerr: 23
+ 1845 																																		qualnlink: int (), <./zsh/Src/glob.c 2275>
+ 1846 																																		qualuid: int (), <./zsh/Src/glob.c 2286>
+ 1847 																																		geteuid: <>
+ 1848 																																		qualgid: int (), <./zsh/Src/glob.c 2295>
+ 1849 																																		getegid: <>
+ 1850 																																		get_strarg: 84
+ 1851 																																		zerr: 23
+ 1852 																																		getpwnam: <>
+ 1853 																																		getgrnam: <>
+ 1854 																																		qualeqflags: int (), <./zsh/Src/glob.c 2352>
+ 1855 																																		qgetoctnum: off_t (), <./zsh/Src/glob.c 588>
+ 1856 																																			idigit: <>
+ 1857 																																			zerr: 23
+ 1858 																																		qualtime: int (), <./zsh/Src/glob.c 2405>
+ 1859 																																			time: <>
+ 1860 																																		qualsize: int (), <./zsh/Src/glob.c 2370>
+ 1861 																																			QS_CAST_SIZE: <>
+ 1862 																																		parsepat: Complist (), <./zsh/Src/glob.c 1877>
+ 1863 																																			parsecomplist: Complist (), <./zsh/Src/glob.c 1904>
+ 1864 																																				parsecomplist: 1863
+ 1865 																																				stat: <>
+ 1866 																																				dupstring: 112
+ 1867 																																				skipparens: int (), <./zsh/Src/utils.c 1157>
+ 1868 																																				isset: <>
+ 1869 																																				parsecompsw: 1212
+ 1870 																																		insertlinknode: 1678
+ 1871 																																		zalloc: 72
+ 1872 																																		scanner: void (), <./zsh/Src/glob.c 1491>
+ 1873 																																			stat: <>
+ 1874 																																			unmeta: 332
+ 1875 																																			scanner: 1872
+ 1876 																																			haswilds: 1825
+ 1877 																																			strcmp: <>
+ 1878 																																			addpath: int (), <./zsh/Src/glob.c 1461>
+ 1879 																																				strlen: <>
+ 1880 																																			exists: int (), <./zsh/Src/glob.c 33>
+ 1881 																																				unmeta: 332
+ 1882 																																				access: <>
+ 1883 																																				readlink: <>
+ 1884 																																			getfullpath: 1235
+ 1885 																																			insert: void (), <./zsh/Src/glob.c 645>
+ 1886 																																				lstat: <>
+ 1887 																																				unmeta: 332
+ 1888 																																				S_ISLNK: <>
+ 1889 																																				stat: <>
+ 1890 																																				memcpy: <>
+ 1891 																																				S_ISDIR: <>
+ 1892 																																				strlen: <>
+ 1893 																																				ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 1894 																																				strcpy: <>
+ 1895 																																				file_type: char (), <./zsh/Src/glob.c 724>
+ 1896 																																				modify: 1588
+ 1897 																																				realloc: 204
+ 1898 																																			dupstring: 112
+ 1899 																																			opendir: <>
+ 1900 																																			zreaddir: 683
+ 1901 																																			strpfx: int (), <./zsh/Src/zle_tricky.c 3406>
+ 1902 																																			strsfx: int (), <./zsh/Src/zle_tricky.c 3417>
+ 1903 																																				strlen: <>
+ 1904 																																				strcmp: <>
+ 1905 																																			domatch: 1228
+ 1906 																																			lstat: <>
+ 1907 																																			zerr: 23
+ 1908 																																			S_ISDIR: <>
+ 1909 																																			dyncat: 713
+ 1910 																																			closedir: <>
+ 1911 																																		free: 19
+ 1912 																																		qsort: <>
+ 1913 																																		notstrcmp: int (), <./zsh/Src/glob.c 607>
+ 1914 																																			strcoll: <>
+ 1915 																																			STOUC: <>
+ 1916 																																			isset: <>
+ 1917 																																			idigit: <>
+ 1918 																																	incnode: <>
+ 1919 																																	untokenize: 249
+ 1920 																																	getdata: <>
+ 1921 																																	zerr: 23
+ 1922 																																	addlinknode: <>
+ 1923 																																	addvars: void (), <./zsh/Src/exec.c 1197>
+ 1924 																																		isset: <>
+ 1925 																																		nonempty: <>
+ 1926 																																		fprintf: <>
+ 1927 																																		ugetnode: 690
+ 1928 																																		singsub: 699
+ 1929 																																		untokenize: 249
+ 1930 																																		newlinklist: 492
+ 1931 																																		addlinknode: <>
+ 1932 																																		prefork: 702
+ 1933 																																		globlist: void (), <./zsh/Src/subst.c 204>
+ 1934 																																			firstnode: <>
+ 1935 																																			nextnode: <>
+ 1936 																																			glob: 1820
+ 1937 																																			zerr: 23
+ 1938 																																		empty: <>
+ 1939 																																		nextnode: <>
+ 1940 																																		firstnode: <>
+ 1941 																																		ztrdup: 97
+ 1942 																																		peekfirst: <>
+ 1943 																																		setsparam: 1544
+ 1944 																																		zsfree: 148
+ 1945 																																		zalloc: 72
+ 1946 																																		countlinknodes: 591
+ 1947 																																		setaparam: 1532
+ 1948 																																	fputc: <>
+ 1949 																																	fflush: <>
+ 1950 																																	getjobtext: 517
+ 1951 																																	zsfree: 148
+ 1952 																																	ztrdup: 97
+ 1953 																																	lastnode: <>
+ 1954 																																	strcmp: <>
+ 1955 																																	strlen: <>
+ 1956 																																	checkrmall: int (), <./zsh/Src/utils.c 1247>
+ 1957 																																		fflush: <>
+ 1958 																																		fprintf: <>
+ 1959 																																		nicezputs: 1119
+ 1960 																																		unmeta: 332
+ 1961 																																		fputc: <>
+ 1962 																																		fputs: <>
+ 1963 																																		feep: 867
+ 1964 																																		getquery: 870
+ 1965 																																	DPUTS: <>
+ 1966 																																	hashcmd: 821
+ 1967 																																	cancd: <>
+ 1968 																																	havefiles: int (), <./zsh/Src/jobs.c 644>
+ 1969 																																		stat: <>
+ 1970 																																	child_block: <>
+ 1971 																																	pipe: <>
+ 1972 																																	zfork: 1110
+ 1973 																																	close: <>
+ 1974 																																	read: <>
+ 1975 																																	closem: 1143
+ 1976 																																	ugetnode: 690
+ 1977 																																	addproc: void (), <./zsh/Src/jobs.c 598>
+ 1978 																																		zcalloc: 4
+ 1979 																																		strcpy: <>
+ 1980 																																		gettimeofday: 307
+ 1981 																																		stat: <>
+ 1982 																																	entersubsh: 1146
+ 1983 																																	holdintr: 335
+ 1984 																																	nice: <>
+ 1985 																																	stat: <>
+ 1986 																																	globlist: 1933
+ 1987 																																	fdopen: <>
+ 1988 																																	movefd: 1192
+ 1989 																																	dup: <>
+ 1990 																																	fileno: <>
+ 1991 																																	addfd: void (), <./zsh/Src/exec.c 1156>
+ 1992 																																		unset: <>
+ 1993 																																		movefd: 1192
+ 1994 																																		redup: 1186
+ 1995 																																		zerr: 23
+ 1996 																																		mpipe: <>
+ 1997 																																		pipe: <>
+ 1998 																																		hrealloc: 322
+ 1999 																																	spawnpipes: <>
+ 2000 																																	closemnodes: void (), <./zsh/Src/exec.c 1113>
+ 2001 																																		zclose: 512
+ 2002 																																	fixfds: void (), <./zsh/Src/exec.c 2037>
+ 2003 																																		redup: 1186
+ 2004 																																	execerr: <>
+ 2005 																																	xpandredir: int (), <./zsh/Src/glob.c 910>
+ 2006 																																		newlinklist: 492
+ 2007 																																		addlinknode: <>
+ 2008 																																		prefork: 702
+ 2009 																																		isset: <>
+ 2010 																																		globlist: 1933
+ 2011 																																		nonempty: <>
+ 2012 																																		nextnode: <>
+ 2013 																																		firstnode: <>
+ 2014 																																		peekfirst: <>
+ 2015 																																		untokenize: 249
+ 2016 																																		idigit: <>
+ 2017 																																		zstrtol: 63
+ 2018 																																		zerr: 23
+ 2019 																																		ugetnode: 690
+ 2020 																																	getherestr: int (), <./zsh/Src/exec.c 2198>
+ 2021 																																		singsub: 699
+ 2022 																																		untokenize: 249
+ 2023 																																		unmetafy: 1328
+ 2024 																																		gettempname: 711
+ 2025 																																		open: <>
+ 2026 																																		write: <>
+ 2027 																																		close: <>
+ 2028 																																		unlink: <>
+ 2029 																																	open: <>
+ 2030 																																	unmeta: 332
+ 2031 																																	init_io: void (), <./zsh/Src/init.c 310>
+ 2032 																																		setvbuf: <>
+ 2033 																																		setbuffer: <>
+ 2034 																																		close: <>
+ 2035 																																		fclose: <>
+ 2036 																																		zclose: 512
+ 2037 																																		isatty: <>
+ 2038 																																		zsfree: 148
+ 2039 																																		ztrdup: 97
+ 2040 																																		ttyname: <>
+ 2041 																																		movefd: 1192
+ 2042 																																		open: <>
+ 2043 																																		ioctl: <>
+ 2044 																																		rdwrtty: <>
+ 2045 																																		dup: <>
+ 2046 																																		init_shout: void (), <./zsh/Src/init.c 439>
+ 2047 																																			ioctl: <>
+ 2048 																																			fdopen: <>
+ 2049 																																			setvbuf: <>
+ 2050 																																			gettyinfo: 389
+ 2051 																																		GETPGRP: <>
+ 2052 																																		gettygrp: 397
+ 2053 																																		sleep: <>
+ 2054 																																		attachtty: 267
+ 2055 																																		killpg: <>
+ 2056 																																	closemn: void (), <./zsh/Src/exec.c 1077>
+ 2057 																																		zfork: 1110
+ 2058 																																		zclose: 512
+ 2059 																																		closeallelse: void (), <./zsh/Src/exec.c 1127>
+ 2060 																																			zclose: 512
+ 2061 																																		read: <>
+ 2062 																																		write: <>
+ 2063 																																	zclose: 512
+ 2064 																																	sprintf: <>
+ 2065 																																	IS_APPEND_REDIR: <>
+ 2066 																																	IS_CLOBBER_REDIR: <>
+ 2067 																																	clobber_open: int (), <./zsh/Src/exec.c 1051>
+ 2068 																																		isset: <>
+ 2069 																																		IS_CLOBBER_REDIR: <>
+ 2070 																																		open: <>
+ 2071 																																		unmeta: 332
+ 2072 																																		stat: <>
+ 2073 																																		S_ISREG: <>
+ 2074 																																		fstat: <>
+ 2075 																																		close: <>
+ 2076 																																	IS_ERROR_REDIR: <>
+ 2077 																																	execcursh: int (), <./zsh/Src/exec.c 199>
+ 2078 																																		deletejob: 472
+ 2079 																																		execlist: 501
+ 2080 																																	execfor: int (), <./zsh/Src/loop.c 34>
+ 2081 																																		newlinklist: 492
+ 2082 																																		addlinknode: <>
+ 2083 																																		ztrdup: 97
+ 2084 																																		pushheap: 557
+ 2085 																																		ugetnode: 690
+ 2086 																																		setsparam: 1544
+ 2087 																																		dupstruct: 576
+ 2088 																																		execlist: 501
+ 2089 																																		empty: <>
+ 2090 																																		freeheap: 559
+ 2091 																																		popheap: 692
+ 2092 																																	execwhile: int (), <./zsh/Src/loop.c 168>
+ 2093 																																		pushheap: 557
+ 2094 																																		dupstruct: 576
+ 2095 																																		execlist: 501
+ 2096 																																		freeheap: 559
+ 2097 																																		popheap: 692
+ 2098 																																	execrepeat: int (), <./zsh/Src/loop.c 212>
+ 2099 																																		empty: <>
+ 2100 																																		nextnode: <>
+ 2101 																																		firstnode: <>
+ 2102 																																		zerr: 23
+ 2103 																																		atoi: <>
+ 2104 																																		peekfirst: <>
+ 2105 																																		pushheap: 557
+ 2106 																																		dupstruct: 576
+ 2107 																																		execlist: 501
+ 2108 																																		freeheap: 559
+ 2109 																																		popheap: 692
+ 2110 																																	execif: int (), <./zsh/Src/loop.c 247>
+ 2111 																																		execlist: 501
+ 2112 																																	execcase: int (), <./zsh/Src/loop.c 279>
+ 2113 																																		singsub: 699
+ 2114 																																		untokenize: 249
+ 2115 																																		matchpat: 1205
+ 2116 																																		execlist: 501
+ 2117 																																	execselect: int (), <./zsh/Src/loop.c 76>
+ 2118 																																		newlinklist: 492
+ 2119 																																		addlinknode: <>
+ 2120 																																		ztrdup: 97
+ 2121 																																		empty: <>
+ 2122 																																		pushheap: 557
+ 2123 																																		isset: <>
+ 2124 																																		fdopen: <>
+ 2125 																																		dup: <>
+ 2126 																																		selectlist: void (), <./zsh/Src/zle_tricky.c 3733>
+ 2127 																																			trashzle: 25
+ 2128 																																			countlinknodes: 591
+ 2129 																																			firstnode: <>
+ 2130 																																			incnode: <>
+ 2131 																																			getdata: <>
+ 2132 																																			strlen: <>
+ 2133 																																			fprintf: <>
+ 2134 																																			fputc: <>
+ 2135 																																			fflush: <>
+ 2136 																																		zleread: unsigned char * (), <./zsh/Src/zle_main.c 381>
+ 2137 																																			getiparam: 60
+ 2138 																																			init_shout: 2046
+ 2139 																																			init_term: 290
+ 2140 																																			fflush: <>
+ 2141 																																			intr: 1148
+ 2142 																																			unset: <>
+ 2143 																																			FD_ZERO: <>
+ 2144 																																			zalloc: 72
+ 2145 																																			getlinknode: 478
+ 2146 																																			setline: void (), <./zsh/Src/zle_utils.c 181>
+ 2147 																																				sizeline: 752
+ 2148 																																				strlen: <>
+ 2149 																																				strcpy: <>
+ 2150 																																				unmetafy: 1328
+ 2151 																																			zsfree: 148
+ 2152 																																			initundo: void (), <./zsh/Src/zle_utils.c 225>
+ 2153 																																				zalloc: 72
+ 2154 																																				memcpy: <>
+ 2155 																																			isset: <>
+ 2156 																																			putc: <>
+ 2157 																																			alarm: <>
+ 2158 																																			refresh: 26
+ 2159 																																			getkeycmd: int (), <./zsh/Src/zle_main.c 551>
+ 2160 																																				zalloc: 72
+ 2161 																																				getkey: int (), <./zsh/Src/zle_main.c 243>
+ 2162 																																					STOUC: <>
+ 2163 																																					ioctl: <>
+ 2164 																																					setterm: void (), <./zsh/Src/zle_main.c 66>
+ 2165 																																						ioctl: <>
+ 2166 																																						attachtty: 267
+ 2167 																																						unset: <>
+ 2168 																																						select: <>
+ 2169 																																						settyinfo: 874
+ 2170 																																					FD_ZERO: <>
+ 2171 																																					FD_SET: <>
+ 2172 																																					select: <>
+ 2173 																																					tcsetattr: <>
+ 2174 																																					read: <>
+ 2175 																																					isset: <>
+ 2176 																																					zexit: void (), <./zsh/Src/builtin.c 4787>
+ 2177 																																						isset: <>
+ 2178 																																						scanjobs: 570
+ 2179 																																						checkjobs: void (), <./zsh/Src/jobs.c 984>
+ 2180 																																							stat: <>
+ 2181 																																							zerr: 23
+ 2182 																																						killrunjobs: void (), <./zsh/Src/signals.c 533>
+ 2183 																																							unset: <>
+ 2184 																																							stat: <>
+ 2185 																																							getpid: <>
+ 2186 																																							killpg: <>
+ 2187 																																							zerr: 23
+ 2188 																																						savehistfile: void (), <./zsh/Src/hist.c 1501>
+ 2189 																																							getiparam: 60
+ 2190 																																							firsthist: int (), <./zsh/Src/hist.c 1588>
+ 2191 																																								gethistent: <>
+ 2192 																																							fdopen: <>
+ 2193 																																							open: <>
+ 2194 																																							unmeta: 332
+ 2195 																																							gethistent: <>
+ 2196 																																							isset: <>
+ 2197 																																							fprintf: <>
+ 2198 																																							fputc: <>
+ 2199 																																							fclose: <>
+ 2200 																																							fopen: <>
+ 2201 																																							zcalloc: 4
+ 2202 																																							fgets: <>
+ 2203 																																							free: 19
+ 2204 																																							ztrdup: 97
+ 2205 																																							strlen: <>
+ 2206 																																							zrealloc: 203
+ 2207 																																							strcat: <>
+ 2208 																																							zsfree: 148
+ 2209 																																							zerr: 23
+ 2210 																																						getsparam: 107
+ 2211 																																						sourcehome: <>
+ 2212 																																						source: <>
+ 2213 																																						dotrap: 488
+ 2214 																																						getpid: <>
+ 2215 																																						exit: <>
+ 2216 																																					fcntl: <>
+ 2217 																																					attachtty: 267
+ 2218 																																					refresh: 26
+ 2219 																																					zerr: 23
+ 2220 																																					realloc: 204
+ 2221 																																				realloc: 204
+ 2222 																																				ungetkeys: void (), <./zsh/Src/zle_main.c 219>
+ 2223 																																					ungetkey: void (), <./zsh/Src/zle_main.c 210>
+ 2224 																																						realloc: 204
+ 2225 																																				executenamedcommand: int (), <./zsh/Src/zle_misc.c 553>
+ 2226 																																					strlen: <>
+ 2227 																																					halloc: 68
+ 2228 																																					strcpy: <>
+ 2229 																																					refresh: 26
+ 2230 																																					getkeycmd: 2159
+ 2231 																																					sendstring: void (), <./zsh/Src/zle_main.c 642>
+ 2232 																																						ungetkeys: 2222
+ 2233 																																						feep: 867
+ 2234 																																					clearscreen: void (), <./zsh/Src/zle_refresh.c 953>
+ 2235 																																						tcout: 41
+ 2236 																																					redisplay: void (), <./zsh/Src/zle_refresh.c 962>
+ 2237 																																						moveto: 28
+ 2238 																																						zputc: <>
+ 2239 																																						tc_upcurs: <>
+ 2240 																																					getkey: 2161
+ 2241 																																					feep: 867
+ 2242 																																					strcmp: <>
+ 2243 																																					newlinklist: 492
+ 2244 																																					strpfx: int (), <./zsh/Src/zle_tricky.c 3406>
+ 2245 																																					addlinknode: <>
+ 2246 																																					pfxlen: int (), <./zsh/Src/zle_tricky.c 3430>
+ 2247 																																					peekfirst: <>
+ 2248 																																					empty: <>
+ 2249 																																					listlist: void (), <./zsh/Src/zle_tricky.c 3697>
+ 2250 																																						makearray: void (), <./zsh/Src/zle_tricky.c 3105>
+ 2251 																																							ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 2252 																																							countlinknodes: 591
+ 2253 																																							firstnode: <>
+ 2254 																																							incnode: <>
+ 2255 																																							getdata: <>
+ 2256 																																							qsort: <>
+ 2257 																																							strbpcmp: int (), <./zsh/Src/zle_tricky.c 3082>
+ 2258 																																							strcmp: <>
+ 2259 																																							arrlen: int (), <./zsh/Src/utils.c 1145>
+ 2260 																																						listmatches: 58
+ 2261 																																					nextnode: <>
+ 2262 																																					firstnode: <>
+ 2263 																																					isset: <>
+ 2264 																																					icntrl: <>
+ 2265 																																				zerr: 23
+ 2266 																																			addundo: void (), <./zsh/Src/zle_utils.c 240>
+ 2267 																																				memcpy: <>
+ 2268 																																				halloc: 68
+ 2269 																																				free: 19
+ 2270 																																				zalloc: 72
+ 2271 																																			invalidatelist: 57
+ 2272 																																			backdel: void (), <./zsh/Src/zle_utils.c 167>
+ 2273 																																				shiftchars: void (), <./zsh/Src/zle_utils.c 63>
+ 2274 																																			findbol: int (), <./zsh/Src/zle_utils.c 193>
+ 2275 																																			FD_SET: <>
+ 2276 																																			select: <>
+ 2277 																																			trashzle: 25
+ 2278 																																			free: 19
+ 2279 																																			metafy: 319
+ 2280 																																			forget_edits: void (), <./zsh/Src/zle_hist.c 55>
+ 2281 																																				zsfree: 148
+ 2282 																																		putprompt: 287
+ 2283 																																		fwrite: <>
+ 2284 																																		free: 19
+ 2285 																																		fflush: <>
+ 2286 																																		fgets: <>
+ 2287 																																		zalloc: 72
+ 2288 																																		getlinknode: 478
+ 2289 																																		fprintf: <>
+ 2290 																																		strchr: <>
+ 2291 																																		setsparam: 1544
+ 2292 																																		atoi: <>
+ 2293 																																		firstnode: <>
+ 2294 																																		incnode: <>
+ 2295 																																		getdata: <>
+ 2296 																																		dupstruct: 576
+ 2297 																																		execlist: 501
+ 2298 																																		freeheap: 559
+ 2299 																																		popheap: 692
+ 2300 																																		fclose: <>
+ 2301 																																	save_params: void (), <./zsh/Src/exec.c 1940>
+ 2302 																																		MUSTUSEHEAP: <>
+ 2303 																																		newlinklist: 492
+ 2304 																																		firstnode: <>
+ 2305 																																		incnode: <>
+ 2306 																																		getdata: <>
+ 2307 																																		PM_TYPE: <>
+ 2308 																																		ztrdup: 97
+ 2309 																																		cfn: <>
+ 2310 																																		ifn: <>
+ 2311 																																		arrdup: 1487
+ 2312 																																		afn: <>
+ 2313 																																		addlinknode: <>
+ 2314 																																	restore_params: void (), <./zsh/Src/exec.c 1988>
+ 2315 																																		ugetnode: 690
+ 2316 																																		unsetparam_pm: 1314
+ 2317 																																		DPUTS: <>
+ 2318 																																		PM_TYPE: <>
+ 2319 																																		cfn: <>
+ 2320 																																		ifn: <>
+ 2321 																																		afn: <>
+ 2322 																																		addenv: 215
+ 2323 																																		getsparam: 107
+ 2324 																																	execshfunc: <>
+ 2325 																																	execbuiltin: int (), <./zsh/Src/builtin.c 43>
+ 2326 																																		memset: <>
+ 2327 																																		ugetnode: 690
+ 2328 																																		isset: <>
+ 2329 																																		atoi: <>
+ 2330 																																		strchr: <>
+ 2331 																																		tricat: 1555
+ 2332 																																		zsfree: 148
+ 2333 																																		ztrdup: 97
+ 2334 																																		idigit: <>
+ 2335 																																		zstrtol: 63
+ 2336 																																		zerr: 23
+ 2337 																																		firstnode: <>
+ 2338 																																		incnode: <>
+ 2339 																																		ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 2340 																																		zwarnnam: 1116
+ 2341 																																		fprintf: <>
+ 2342 																																		fputc: <>
+ 2343 																																		fflush: <>
+ 2344 																																	fprintf: <>
+ 2345 																																	ferror: <>
+ 2346 																																	clearerr: <>
+ 2347 																																	savehistfile: 2188
+ 2348 																																	getsparam: 107
+ 2349 																																	exit: <>
+ 2350 																																	setiparam: 135
+ 2351 																																	setlimits: 1113
+ 2352 																																	execute: void (), <./zsh/Src/exec.c 328>
+ 2353 																																		zgetenv: 333
+ 2354 																																		isatty: <>
+ 2355 																																		GETPGRP: <>
+ 2356 																																		getpid: <>
+ 2357 																																		tricat: 1555
+ 2358 																																		execstring: 1766
+ 2359 																																		zsfree: 148
+ 2360 																																		peekfirst: <>
+ 2361 																																		setdata: <>
+ 2362 																																		firstnode: <>
+ 2363 																																		ztrdup: 97
+ 2364 																																		delenv: 1319
+ 2365 																																		sprintf: <>
+ 2366 																																		makecline: char ** (), <./zsh/Src/exec.c 1005>
+ 2367 																																			ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 2368 																																			countlinknodes: 591
+ 2369 																																			isset: <>
+ 2370 																																			fprintf: <>
+ 2371 																																			firstnode: <>
+ 2372 																																			incnode: <>
+ 2373 																																			getdata: <>
+ 2374 																																			zputs: 1085
+ 2375 																																			nextnode: <>
+ 2376 																																			fputc: <>
+ 2377 																																			fflush: <>
+ 2378 																																		closem: 1143
+ 2379 																																		child_unblock: <>
+ 2380 																																		strlen: <>
+ 2381 																																		zerr: 23
+ 2382 																																		zexecve: int (), <./zsh/Src/exec.c 214>
+ 2383 																																			unmetafy: 1328
+ 2384 																																			strcpy: <>
+ 2385 																																			sprintf: <>
+ 2386 																																			malloc: 5
+ 2387 																																			execve: <>
+ 2388 																																			open: <>
+ 2389 																																			read: <>
+ 2390 																																			close: <>
+ 2391 																																			inblank: <>
+ 2392 																																			metafy: 319
+ 2393 																																		unset: <>
+ 2394 																																		strcpy: <>
+ 2395 																																		isgooderr: int (), <./zsh/Src/exec.c 314>
+ 2396 																																			access: <>
+ 2397 																																		strucpy: void (), <./zsh/Src/utils.c 1120>
+ 2398 																																		strcat: <>
+ 2399 																																		strrchr: <>
+ 2400 																																	execlist: 501
+ 2401 																																	fclose: <>
+ 2402 																																mpipe: <>
+ 2403 																																pipe: <>
+ 2404 																																fork: <>
+ 2405 																																close: <>
+ 2406 																																zerr: 23
+ 2407 																																addproc: 1977
+ 2408 																																read: <>
+ 2409 																																zclose: 512
+ 2410 																																entersubsh: 1146
+ 2411 																																execpline2: 515
+ 2412 																															deletejob: 472
+ 2413 																															spawnjob: void (), <./zsh/Src/jobs.c 766>
+ 2414 																																stat: <>
+ 2415 																																setprevjob: 484
+ 2416 																																fprintf: <>
+ 2417 																																fflush: <>
+ 2418 																																deletejob: 472
+ 2419 																															child_unblock: <>
+ 2420 																															DPUTS: <>
+ 2421 																															addproc: 1977
+ 2422 																															WIFSTOPPED: <>
+ 2423 																															printjob: 420
+ 2424 																															isset: <>
+ 2425 																															makerunning: void (), <./zsh/Src/jobs.c 57>
+ 2426 																																WIFSTOPPED: <>
+ 2427 																																makerunning: 2425
+ 2428 																															waitjobs: void (), <./zsh/Src/jobs.c 718>
+ 2429 																																waitjob: void (), <./zsh/Src/jobs.c 681>
+ 2430 																																	child_block: <>
+ 2431 																																	printjob: 420
+ 2432 																																	isset: <>
+ 2433 																																	child_suspend: <>
+ 2434 																																	killjb: int (), <./zsh/Src/signals.c 556>
+ 2435 																																		killpg: <>
+ 2436 																																		kill: <>
+ 2437 																																	handle_sub: 413
+ 2438 																																	deletejob: 472
+ 2439 																																	child_unblock: <>
+ 2440 																															killpg: <>
+ 2441 																															pipe: <>
+ 2442 																															fork: <>
+ 2443 																															trashzle: 25
+ 2444 																															close: <>
+ 2445 																															putc: <>
+ 2446 																															fprintf: <>
+ 2447 																															fflush: <>
+ 2448 																															killjb: 2434
+ 2449 																															read: <>
+ 2450 																															entersubsh: 1146
+ 2451 																															setpgrp: <>
+ 2452 																															getpid: <>
+ 2453 																															kill: <>
+ 2454 																														dotrap: 488
+ 2455 																														isset: <>
+ 2456 																														getpid: <>
+ 2457 																														exit: <>
+ 2458 																													dupstruct: 576
+ 2459 																													execrestore: <>
+ 2460 																													lexrestore: 1104
+ 2461 																										dotrap: 488
+ 2462 																										zexit: 2176
+ 2463 																										isset: <>
+ 2464 																										inerrflush: 411
+ 2465 																										adjustwinsize: 402
+ 2466 																										getiparam: 60
+ 2467 																										alarm: <>
+ 2468 																										ttyidlegetfn: zlong (), <./zsh/Src/params.c 1507>
+ 2469 																											fstat: <>
+ 2470 																											time: <>
+ 2471 																										signal_longjmp: <>
+ 2472 																									sigemptyset: <>
+ 2473 																									sigaction: <>
+ 2474 																									sigmask: <>
+ 2475 																									sigvec: <>
+ 2476 																									sigset: <>
+ 2477 																									signal: <>
+ 2478 																							signal_mask: 343
+ 2479 																						ztrdup: 97
+ 2480 																						chdir: <>
+ 2481 																						opendir: <>
+ 2482 																						readdir: <>
+ 2483 																						lstat: <>
+ 2484 																						strcpy: <>
+ 2485 																						closedir: <>
+ 2486 																						strcat: <>
+ 2487 																					inittyptab: void (), <./zsh/Src/utils.c 2706>
+ 2488 																						STOUC: <>
+ 2489 																						inblank: <>
+ 2490 																						isset: <>
+ 2491 																					initlextabs: void (), <./zsh/Src/lex.c 284>
+ 2492 																						STOUC: <>
+ 2493 																					createreswdtable: void (), <./zsh/Src/hashtable.c 844>
+ 2494 																						newhashtable: HashTable (), <./zsh/Src/hashtable.c 54>
+ 2495 																							zcalloc: 4
+ 2496 																						hasher: unsigned (), <./zsh/Src/hashtable.c 40>
+ 2497 																						addhashnode: void (), <./zsh/Src/hashtable.c 75>
+ 2498 																							expandhashtable: void (), <./zsh/Src/hashtable.c 395>
+ 2499 																								zcalloc: 4
+ 2500 																								zfree: 12
+ 2501 																							strcmp: <>
+ 2502 																						gethashnode: HashNode (), <./zsh/Src/hashtable.c 129>
+ 2503 																							strcmp: <>
+ 2504 																						gethashnode2: HashNode (), <./zsh/Src/hashtable.c 153>
+ 2505 																							strcmp: <>
+ 2506 																						disablehashnode: void (), <./zsh/Src/hashtable.c 211>
+ 2507 																						enablehashnode: void (), <./zsh/Src/hashtable.c 220>
+ 2508 																						printreswdnode: void (), <./zsh/Src/hashtable.c 874>
+ 2509 																							printf: <>
+ 2510 																						printhashtabinfo: void (), <./zsh/Src/hashtable.c 460>
+ 2511 																							printf: <>
+ 2512 																							memset: <>
+ 2513 																						ztrdup: 97
+ 2514 																					createaliastable: void (), <./zsh/Src/hashtable.c 900>
+ 2515 																						newhashtable: 2494
+ 2516 																						hasher: 2496
+ 2517 																						addhashnode: 2497
+ 2518 																						gethashnode: 2502
+ 2519 																						gethashnode2: 2504
+ 2520 																						removehashnode: HashNode (), <./zsh/Src/hashtable.c 173>
+ 2521 																							strcmp: <>
+ 2522 																						disablehashnode: 2506
+ 2523 																						enablehashnode: 2507
+ 2524 																						freealiasnode: void (), <./zsh/Src/hashtable.c 942>
+ 2525 																							zsfree: 148
+ 2526 																							zfree: 12
+ 2527 																						printaliasnode: void (), <./zsh/Src/hashtable.c 955>
+ 2528 																							zputs: 1085
+ 2529 																							putchar: <>
+ 2530 																							nicezputs: 1119
+ 2531 																							printf: <>
+ 2532 																							quotedzputs: int (), <./zsh/Src/utils.c 3403>
+ 2533 																								fputs: <>
+ 2534 																								hasspecial: int (), <./zsh/Src/utils.c 3391>
+ 2535 																									ispecial: <>
+ 2536 																								zputs: 1085
+ 2537 																								isset: <>
+ 2538 																								fputc: <>
+ 2539 																						printhashtabinfo: 2510
+ 2540 																						ztrdup: 97
+ 2541 																						createaliasnode: Alias (), <./zsh/Src/hashtable.c 929>
+ 2542 																							zcalloc: 4
+ 2543 																					createcmdnamtable: void (), <./zsh/Src/hashtable.c 503>
+ 2544 																						newhashtable: 2494
+ 2545 																						hasher: 2496
+ 2546 																						emptycmdnamtable: void (), <./zsh/Src/hashtable.c 528>
+ 2547 																							emptyhashtable: void (), <./zsh/Src/hashtable.c 423>
+ 2548 																								zfree: 12
+ 2549 																								zcalloc: 4
+ 2550 																								memset: <>
+ 2551 																						fillcmdnamtable: void (), <./zsh/Src/hashtable.c 569>
+ 2552 																							hashdir: 833
+ 2553 																						addhashnode: 2497
+ 2554 																						gethashnode2: 2504
+ 2555 																						removehashnode: 2520
+ 2556 																						freecmdnamnode: void (), <./zsh/Src/hashtable.c 581>
+ 2557 																							zsfree: 148
+ 2558 																							zfree: 12
+ 2559 																						printcmdnamnode: void (), <./zsh/Src/hashtable.c 596>
+ 2560 																							zputs: 1085
+ 2561 																							putchar: <>
+ 2562 																							nicezputs: 1119
+ 2563 																							printf: <>
+ 2564 																							quotedzputs: 2532
+ 2565 																						printhashtabinfo: 2510
+ 2566 																						ztrdup: 97
+ 2567 																					createshfunctable: void (), <./zsh/Src/hashtable.c 651>
+ 2568 																						newhashtable: 2494
+ 2569 																						hasher: 2496
+ 2570 																						addhashnode: 2497
+ 2571 																						gethashnode: 2502
+ 2572 																						gethashnode2: 2504
+ 2573 																						removeshfuncnode: HashNode (), <./zsh/Src/hashtable.c 678>
+ 2574 																							removehashnode: 2520
+ 2575 																							strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+ 2576 																							unsettrap: 1147
+ 2577 																							getsignum: 1295
+ 2578 																						disableshfuncnode: void (), <./zsh/Src/hashtable.c 696>
+ 2579 																							strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+ 2580 																							getsignum: 1295
+ 2581 																							unsettrap: 1147
+ 2582 																						enableshfuncnode: void (), <./zsh/Src/hashtable.c 713>
+ 2583 																							strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+ 2584 																							getsignum: 1295
+ 2585 																							settrap: 1165
+ 2586 																						freeshfuncnode: void (), <./zsh/Src/hashtable.c 730>
+ 2587 																							zsfree: 148
+ 2588 																							freestruct: 1154
+ 2589 																							zfree: 12
+ 2590 																						printshfuncnode: void (), <./zsh/Src/hashtable.c 744>
+ 2591 																							zputs: 1085
+ 2592 																							putchar: <>
+ 2593 																							nicezputs: 1119
+ 2594 																							printf: <>
+ 2595 																							getpermtext: char * (), <./zsh/Src/text.c 106>
+ 2596 																								zalloc: 72
+ 2597 																								gettext2: 518
+ 2598 																								untokenize: 249
+ 2599 																							dupstruct: 576
+ 2600 																							quotedzputs: 2532
+ 2601 																							zsfree: 148
+ 2602 																						printhashtabinfo: 2510
+ 2603 																						ztrdup: 97
+ 2604 																					createbuiltintable: void (), <./zsh/Src/hashtable.c 788>
+ 2605 																						newhashtable: 2494
+ 2606 																						hasher: 2496
+ 2607 																						addhashnode: 2497
+ 2608 																						gethashnode: 2502
+ 2609 																						gethashnode2: 2504
+ 2610 																						disablehashnode: 2506
+ 2611 																						enablehashnode: 2507
+ 2612 																						printbuiltinnode: void (), <./zsh/Src/hashtable.c 818>
+ 2613 																							printf: <>
+ 2614 																						printhashtabinfo: 2510
+ 2615 																						ztrdup: 97
+ 2616 																					createcompctltable: void (), <./zsh/Src/hashtable.c 1246>
+ 2617 																						newhashtable: 2494
+ 2618 																						hasher: 2496
+ 2619 																						addhashnode: 2497
+ 2620 																						gethashnode2: 2504
+ 2621 																						removehashnode: 2520
+ 2622 																						freecompctlp: void (), <./zsh/Src/hashtable.c 1306>
+ 2623 																							zsfree: 148
+ 2624 																							freecompctl: void (), <./zsh/Src/hashtable.c 1269>
+ 2625 																								zsfree: 148
+ 2626 																								freecompcond: void (), <./zsh/Src/utils.c 747>
+ 2627 																									free: 19
+ 2628 																									zsfree: 148
+ 2629 																									zfree: 12
+ 2630 																								freecompctl: 2624
+ 2631 																								zfree: 12
+ 2632 																							zfree: 12
+ 2633 																						printcompctlp: void (), <./zsh/Src/builtin.c 2438>
+ 2634 																							printcompctl: void (), <./zsh/Src/builtin.c 2289>
+ 2635 																								printf: <>
+ 2636 																								quotedzputs: 2532
+ 2637 																								putchar: <>
+ 2638 																								printif: void (), <./zsh/Src/builtin.c 2460>
+ 2639 																									printf: <>
+ 2640 																									quotedzputs: 2532
+ 2641 																								printqt: void (), <./zsh/Src/builtin.c 2448>
+ 2642 																									printf: <>
+ 2643 																									isset: <>
+ 2644 																									putchar: <>
+ 2645 																								printcompctl: 2634
+ 2646 																						printhashtabinfo: 2510
+ 2647 																						ztrdup: 97
+ 2648 																					createnameddirtable: void (), <./zsh/Src/hashtable.c 1120>
+ 2649 																						newhashtable: 2494
+ 2650 																						hasher: 2496
+ 2651 																						emptynameddirtable: void (), <./zsh/Src/hashtable.c 1148>
+ 2652 																							emptyhashtable: 2547
+ 2653 																							finddir: 437
+ 2654 																						fillnameddirtable: void (), <./zsh/Src/hashtable.c 1160>
+ 2655 																							setpwent: <>
+ 2656 																							getpwent: <>
+ 2657 																							adduserdir: 152
+ 2658 																							ztrdup: 97
+ 2659 																							endpwent: <>
+ 2660 																						addnameddirnode: void (), <./zsh/Src/hashtable.c 1184>
+ 2661 																							strlen: <>
+ 2662 																							finddir: 437
+ 2663 																							addhashnode: 2497
+ 2664 																						gethashnode: 2502
+ 2665 																						gethashnode2: 2504
+ 2666 																						removenameddirnode: HashNode (), <./zsh/Src/hashtable.c 1198>
+ 2667 																							removehashnode: 2520
+ 2668 																							finddir: 437
+ 2669 																						freenameddirnode: void (), <./zsh/Src/hashtable.c 1211>
+ 2670 																							zsfree: 148
+ 2671 																							zfree: 12
+ 2672 																						printnameddirnode: void (), <./zsh/Src/hashtable.c 1224>
+ 2673 																							zputs: 1085
+ 2674 																							putchar: <>
+ 2675 																							quotedzputs: 2532
+ 2676 																						printhashtabinfo: 2510
+ 2677 																						ztrdup: 97
+ 2678 																						finddir: 437
+ 2679 																					createparamtable: void (), <./zsh/Src/params.c 40>
+ 2680 																						newhashtable: 2494
+ 2681 																						hasher: 2496
+ 2682 																						addhashnode: 2497
+ 2683 																						gethashnode2: 2504
+ 2684 																						removehashnode: 2520
+ 2685 																						freeparamnode: void (), <./zsh/Src/hashtable.c 1016>
+ 2686 																							zsfree: 148
+ 2687 																							zfree: 12
+ 2688 																						printparamnode: void (), <./zsh/Src/hashtable.c 1028>
+ 2689 																							printf: <>
+ 2690 																							zputs: 1085
+ 2691 																							putchar: <>
+ 2692 																							quotedzputs: 2532
+ 2693 																							PM_TYPE: <>
+ 2694 																							cfn: <>
+ 2695 																							convbase: 122
+ 2696 																							ifn: <>
+ 2697 																							puts: <>
+ 2698 																							afn: <>
+ 2699 																						printhashtabinfo: 2510
+ 2700 																						ztrdup: 97
+ 2701 																						setiparam: 135
+ 2702 																						getbaudrate: long (), <./zsh/Src/utils.c 2971>
+ 2703 																							cfgetospeed: <>
+ 2704 																						setsparam: 1544
+ 2705 																						getlogin: <>
+ 2706 																						arrlen: int (), <./zsh/Src/utils.c 1145>
+ 2707 																						zalloc: 72
+ 2708 																						idigit: <>
+ 2709 																						isident: 136
+ 2710 																						strchr: <>
+ 2711 																						metafy: 319
+ 2712 																						zsfree: 148
+ 2713 																						mkenvstr: 217
+ 2714 																						getsparam: 107
+ 2715 																						addenv: 215
+ 2716 																						sprintf: <>
+ 2717 																						setaparam: 1532
+ 2718 																					adjustwinsize: 402
+ 2719 																					setiparam: 135
+ 2720 																					createemkeybindtable: void (), <./zsh/Src/hashtable.c 1325>
+ 2721 																						newhashtable: 2494
+ 2722 																						hasher: 2496
+ 2723 																						emptyemkeybindtable: void (), <./zsh/Src/hashtable.c 1350>
+ 2724 																							emptyhashtable: 2547
+ 2725 																						addhashnode: 2497
+ 2726 																						gethashnode2: 2504
+ 2727 																						removehashnode: 2520
+ 2728 																						freekeynode: void (), <./zsh/Src/zle_main.c 1125>
+ 2729 																							zsfree: 148
+ 2730 																							zfree: 12
+ 2731 																						printhashtabinfo: 2510
+ 2732 																						ztrdup: 97
+ 2733 																					createvikeybindtable: void (), <./zsh/Src/hashtable.c 1365>
+ 2734 																						newhashtable: 2494
+ 2735 																						hasher: 2496
+ 2736 																						emptyvikeybindtable: void (), <./zsh/Src/hashtable.c 1390>
+ 2737 																							emptyhashtable: 2547
+ 2738 																						addhashnode: 2497
+ 2739 																						gethashnode2: 2504
+ 2740 																						removehashnode: 2520
+ 2741 																						freekeynode: 2728
+ 2742 																						printhashtabinfo: 2510
+ 2743 																						ztrdup: 97
+ 2744 																					initkeybindings: void (), <./zsh/Src/zle_main.c 666>
+ 2745 																						zgetenv: 333
+ 2746 																						strstr: 1617
+ 2747 																						zalloc: 72
+ 2748 																						ztrdup: 97
+ 2749 																						makefunckey: Key (), <./zsh/Src/zle_main.c 654>
+ 2750 																							zcalloc: 4
+ 2751 																						strcpy: <>
+ 2752 																					compctlsetup: <>
+ 2753 																					getrlimit: <>
+ 2754 																					time: <>
+ 2755 																					newlinklist: 492
+ 2756 																					fdopen: <>
+ 2757 																					unset: <>
+ 2758 																					setvbuf: <>
+ 2759 																					setlinebuf: <>
+ 2760 																					times: <>
+ 2761 																					intr: 1148
+ 2762 																					signal_ignore: <>
+ 2763 																					install_handler: 356
+ 2764 																					gettygrp: 397
+ 2765 																					kill: <>
+ 2766 																					attachtty: 267
+ 2767 																					signal_setmask: 363
+ 2768 																					signal_mask: 343
+ 2769 																					set: <>
+ 2770 																					sigemptyset: <>
+ 2771 																					sigaddset: <>
+ 2772 																					signal_unblock: 349
+ 2773 																					source: <>
+ 2774 																					getsparam: 107
+ 2775 																					sourcehome: <>
+ 2776 																					parsestr: 244
+ 2777 																					singsub: 699
+ 2778 																					fclose: <>
+ 2779 																					movefd: 1192
+ 2780 																					open: <>
+ 2781 																					execstring: 1766
+ 2782 																					zexit: 2176
+ 2783 																					readhistfile: void (), <./zsh/Src/hist.c 1393>
+ 2784 																						time: <>
+ 2785 																						fopen: <>
+ 2786 																						unmeta: 332
+ 2787 																						zalloc: 72
+ 2788 																						fgets: <>
+ 2789 																						strlen: <>
+ 2790 																						zrealloc: 203
+ 2791 																						gethistent: <>
+ 2792 																						zstrtol: 63
+ 2793 																						zsfree: 148
+ 2794 																						ztrdup: 97
+ 2795 																						zfree: 12
+ 2796 																						inblank: <>
+ 2797 																						realloc: 204
+ 2798 																						memcpy: <>
+ 2799 																						fclose: <>
+ 2800 																						zerr: 23
+ 2801 																					unmeta: 332
+ 2802 																					dosetopt: int (), <./zsh/Src/utils.c 3534>
+ 2803 																						setuid: <>
+ 2804 																						getuid: <>
+ 2805 																						setgid: <>
+ 2806 																						getgid: <>
+ 2807 																						inittyptab: 2487
+ 2808 																					loop: 556
+ 2809 																					sprintf: <>
+ 2810 																					compctl_process: void (), <./zsh/Src/builtin.c 2238>
+ 2811 																						zcalloc: 4
+ 2812 																						ztrdup: 97
+ 2813 																						compctl_process_cc: void (), <./zsh/Src/builtin.c 2262>
+ 2814 																							zalloc: 72
+ 2815 																							ztrdup: 97
+ 2816 																				zalloc: 72
+ 2817 																				clearerr: <>
+ 2818 																				putpromptchar: int (), <./zsh/Src/zle_misc.c 874>
+ 2819 																					isset: <>
+ 2820 																					dupstring: 112
+ 2821 																					parsestr: 244
+ 2822 																					singsub: 699
+ 2823 																					idigit: <>
+ 2824 																					zstrtol: 63
+ 2825 																					finddir: 437
+ 2826 																					strlen: <>
+ 2827 																					time: <>
+ 2828 																					localtime: <>
+ 2829 																					geteuid: <>
+ 2830 																					getegid: <>
+ 2831 																					arrlen: int (), <./zsh/Src/utils.c 1145>
+ 2832 																					putpromptchar: 2818
+ 2833 																					sprintf: <>
+ 2834 																					stradd: void (), <./zsh/Src/zle_misc.c 712>
+ 2835 																						nicestrlen: size_t (), <./zsh/Src/utils.c 235>
+ 2836 																							strlen: <>
+ 2837 																							nicechar: 1122
+ 2838 																							STOUC: <>
+ 2839 																						addbufspc: 661
+ 2840 																						nicechar: 1122
+ 2841 																						STOUC: <>
+ 2842 																						strlen: <>
+ 2843 																						pputc: void (), <./zsh/Src/zle_misc.c 1304>
+ 2844 																					strcpy: <>
+ 2845 																					addbufspc: 661
+ 2846 																					txtchangeset: <>
+ 2847 																					txtset: <>
+ 2848 																					tsetcap: 654
+ 2849 																					txtunset: <>
+ 2850 																					zsfree: 148
+ 2851 																					ztrdup: 97
+ 2852 																					ztrftime: 649
+ 2853 																					chuck: void (), <./zsh/Src/utils.c 1083>
+ 2854 																					get_username: 668
+ 2855 																					strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+ 2856 																					pputc: 2843
+ 2857 																				addbufspc: 661
+ 2858 																			write: <>
+ 2859 																			free: 19
+ 2860 																			shingetline: char * (), <./zsh/Src/input.c 106>
+ 2861 																				fgetc: <>
+ 2862 																				zrealloc: 203
+ 2863 																				memcpy: <>
+ 2864 																				imeta: <>
+ 2865 																			zleread: 2136
+ 2866 																			zputs: 1085
+ 2867 																			fflush: <>
+ 2868 																			strlen: <>
+ 2869 																			inputsetline: 255
+ 2870 																	histsubchar: int (), <./zsh/Src/hist.c 213>
+ 2871 																		inungetc: 740
+ 2872 																		gethist: Histent (), <./zsh/Src/hist.c 1172>
+ 2873 																			quietgethist: struct histent (), <./zsh/Src/hist.c 1142>
+ 2874 																			herrflush: 1783
+ 2875 																			zerr: 23
+ 2876 																		getargs: char * (), <./zsh/Src/hist.c 1186>
+ 2877 																			herrflush: 1783
+ 2878 																			zerr: 23
+ 2879 																			dupstrpfx: 241
+ 2880 																		getargc: int (), <./zsh/Src/hist.c 204>
+ 2881 																		getsubsargs: int (), <./zsh/Src/hist.c 176>
+ 2882 																			ingetc: 278
+ 2883 																			hdynread2: char * (), <./zsh/Src/hist.c 1329>
+ 2884 																				zalloc: 72
+ 2885 																				ingetc: 278
+ 2886 																				inungetc: 740
+ 2887 																				realloc: 204
+ 2888 																			strlen: <>
+ 2889 																			zsfree: 148
+ 2890 																			strstr: 1617
+ 2891 																			herrflush: 1783
+ 2892 																			zerr: 23
+ 2893 																		subst: 1616
+ 2894 																		ingetc: 278
+ 2895 																		safeinungetc: void (), <./zsh/Src/hist.c 156>
+ 2896 																			inungetc: 740
+ 2897 																		inblank: <>
+ 2898 																		hconsearch: int (), <./zsh/Src/hist.c 959>
+ 2899 																			quietgethist: struct histent (), <./zsh/Src/hist.c 1142>
+ 2900 																			strstr: 1617
+ 2901 																		ztrdup: 97
+ 2902 																		herrflush: 1783
+ 2903 																		zerr: 23
+ 2904 																		idigit: <>
+ 2905 																		isset: <>
+ 2906 																		atoi: <>
+ 2907 																		hcomsearch: int (), <./zsh/Src/hist.c 980>
+ 2908 																			quietgetevent: char * (), <./zsh/Src/hist.c 1163>
+ 2909 																				quietgethist: struct histent (), <./zsh/Src/hist.c 1142>
+ 2910 																			strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+ 2911 																			strlen: <>
+ 2912 																		getargspec: int (), <./zsh/Src/hist.c 921>
+ 2913 																			ingetc: 278
+ 2914 																			idigit: <>
+ 2915 																			inungetc: 740
+ 2916 																			herrflush: 1783
+ 2917 																			zerr: 23
+ 2918 																		remtpath: 1602
+ 2919 																		rembutext: 1606
+ 2920 																		remtext: 1604
+ 2921 																		remlpaths: 1609
+ 2922 																		quote: int (), <./zsh/Src/hist.c 1224>
+ 2923 																			inblank: <>
+ 2924 																		quotebreak: int (), <./zsh/Src/hist.c 1266>
+ 2925 																			inblank: <>
+ 2926 																		downcase: 1612
+ 2927 																		upcase: 1614
+ 2928 																		inpush: 252
+ 2929 																	safeinungetc: 2895
+ 2930 																	hwaddc: 747
+ 2931 																	addtoline: 750
+ 2932 																add: 777
+ 2933 																unset: <>
+ 2934 																isset: <>
+ 2935 																cmd_or_math_sub: 784
+ 2936 																cmdpush: <>
+ 2937 																dquote_parse: 276
+ 2938 																cmdpop: <>
+ 2939 																hungetc: 737
+ 2940 															strinend: 1077
+ 2941 															inpop: 1102
+ 2942 															DPUTS: <>
+ 2943 															lexrestore: 1104
+ 2944 															zerr: 23
+ 2945 														singsub: 699
+ 2946 														isset: <>
+ 2947 														getstrvalue: 109
+ 2948 														wordcount: 1511
+ 2949 														findword: 1598
+ 2950 														ztrlen: 1627
+ 2951 														strlen: <>
+ 2952 														ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 2953 														strcpy: <>
+ 2954 														strcat: <>
+ 2955 														tokenize: 1675
+ 2956 														parsereg: 1208
+ 2957 														getarrvalue: 1486
+ 2958 														arrlen: int (), <./zsh/Src/utils.c 1145>
+ 2959 														domatch: 1228
+ 2960 														sepsplit: 1508
+ 2961 													getstrvalue: 109
+ 2962 													ztrlen: 1627
+ 2963 													strlen: <>
+ 2964 													isset: <>
+ 2965 													zerr: 23
+ 2966 												isset: <>
+ 2967 												zerr: 23
+ 2968 											getintvalue: 456
+ 2969 										trashzle: 25
+ 2970 										fputs: <>
+ 2971 										niceztrlen: size_t (), <./zsh/Src/utils.c 3368>
+ 2972 											itok: <>
+ 2973 											strlen: <>
+ 2974 											nicechar: 1122
+ 2975 											STOUC: <>
+ 2976 										strlen: <>
+ 2977 										unset: <>
+ 2978 										printfmt: int (), <./zsh/Src/zle_tricky.c 3462>
+ 2979 											putc: <>
+ 2980 											sprintf: <>
+ 2981 											fprintf: <>
+ 2982 											strlen: <>
+ 2983 										putc: <>
+ 2984 										setterm: 2164
+ 2985 										fflush: <>
+ 2986 										getzlequery: int (), <./zsh/Src/zle_utils.c 308>
+ 2987 											ioctl: <>
+ 2988 											putc: <>
+ 2989 											getkey: 2161
+ 2990 											icntrl: <>
+ 2991 											tulower: 814
+ 2992 										tcmultout: 32
+ 2993 										tccan: <>
+ 2994 										tcout: 41
+ 2995 										settyinfo: 874
+ 2996 										nicezputs: 1119
+ 2997 										halloc: 68
+ 2998 										sprintf: <>
+ 2999 										ztat: int (), <./zsh/Src/zle_tricky.c 3214>
+ 3000 											lstat: <>
+ 3001 											stat: <>
+ 3002 										file_type: 1895
+ 3003 									freearray: 164
+ 3004 									zsfree: 148
+ 3005 									freecompctl: 2624
+ 3006 								isset: <>
+ 3007 								setterm: 2164
+ 3008 								resetvideo: void (), <./zsh/Src/zle_refresh.c 66>
+ 3009 									genprompts: void (), <./zsh/Src/zle_refresh.c 1104>
+ 3010 										zfree: 12
+ 3011 										putprompt: 287
+ 3012 									zfree: 12
+ 3013 									free: 19
+ 3014 									zcalloc: 4
+ 3015 									zalloc: 72
+ 3016 									memset: <>
+ 3017 								tsetcap: 654
+ 3018 								zwrite: <>
+ 3019 								zputc: <>
+ 3020 								fflush: <>
+ 3021 								singlerefresh: void (), <./zsh/Src/zle_refresh.c 973>
+ 3022 									icntrl: <>
+ 3023 									zalloc: 72
+ 3024 									fprintf: <>
+ 3025 									fflush: <>
+ 3026 									memcpy: <>
+ 3027 									strlen: <>
+ 3028 									strcpy: <>
+ 3029 									zfree: 12
+ 3030 									singmoveto: 46
+ 3031 									zwrite: <>
+ 3032 									tccan: <>
+ 3033 									tcout: 41
+ 3034 									zputc: <>
+ 3035 								fprintf: <>
+ 3036 								zalloc: 72
+ 3037 								icntrl: <>
+ 3038 								scrollwindow: void (), <./zsh/Src/zle_refresh.c 121>
+ 3039 								strncpy: <>
+ 3040 								zfree: 12
+ 3041 								strlen: <>
+ 3042 								memset: <>
+ 3043 								strncmp: if (), <./zsh/Src/ansi2knr.c 379>
+ 3044 								refreshline: void (), <./zsh/Src/zle_refresh.c 565>
+ 3045 									strlen: <>
+ 3046 									tccan: <>
+ 3047 									moveto: 28
+ 3048 									tcout: 41
+ 3049 									halloc: 68
+ 3050 									strncpy: <>
+ 3051 									memset: <>
+ 3052 									memcpy: <>
+ 3053 									zputc: <>
+ 3054 									tcdelcost: <>
+ 3055 									tc_delchars: <>
+ 3056 									zwrite: <>
+ 3057 									pfxlen: int (), <./zsh/Src/zle_tricky.c 3430>
+ 3058 									tcinscost: <>
+ 3059 									tc_inschars: <>
+ 3060 								txtchangeisset: <>
+ 3061 								listmatches: 58
+ 3062 								refresh: 26
+ 3063 							moveto: 28
+ 3064 							tccan: <>
+ 3065 							tcout: 41
+ 3066 							fprintf: <>
+ 3067 							fflush: <>
+ 3068 							settyinfo: 874
+ 3069 						nicezputs: 1119
+ 3070 						isset: <>
+ 3071 						fputs: <>
+ 3072 						zerrmsg: 1126
+ 3073 				exit: <>
+ 3074 				memset: <>
+ 3075 			ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 3076 			zalloc: 72
+ 3077 		metafy: 319
+ 3078 		strrchr: <>
+ 3079 		zcalloc: 4
+ 3080 		emulate: void (), <./zsh/Src/init.c 174>
+ 3081 			strcmp: <>
+ 3082 			defset: <>
+ 3083 		getuid: <>
+ 3084 		geteuid: <>
+ 3085 		getgid: <>
+ 3086 		getegid: <>
+ 3087 		parseargs: void (), <./zsh/Src/init.c 202>
+ 3088 			isatty: <>
+ 3089 			zerr: 23
+ 3090 			exit: <>
+ 3091 			optlookup: 1264
+ 3092 			dosetopt: 2802
+ 3093 			isspace: <>
+ 3094 			STOUC: <>
+ 3095 			optlookupc: 1262
+ 3096 			newlinklist: 492
+ 3097 			unset: <>
+ 3098 			movefd: 1192
+ 3099 			open: <>
+ 3100 			unmeta: 332
+ 3101 			addlinknode: <>
+ 3102 			ztrdup: 97
+ 3103 			isset: <>
+ 3104 			zcalloc: 4
+ 3105 			countlinknodes: 591
+ 3106 			getlinknode: 478
+ 3107 			free: 19
+ 3108 		init_io: 2031
+ 3109 		setupvals: <>
+ 3110 		init_signals: <>
+ 3111 		global_heapalloc: int (), <./zsh/Src/mem.c 100>
+ 3112 			hcalloc: 67
+ 3113 			ncalloc: void *(), <./zsh/Src/mem.c 33>
+ 3114 			halloc: 68
+ 3115 		run_init_scripts: <>
+ 3116 		init_misc: <>
+ 3117 		loop: 556
+ 3118 		isset: <>
+ 3119 		fputs: <>
+ 3120 		zexit: 2176
+ 3121 		zerrnam: void (), <./zsh/Src/utils.c 49>
+ 3122 			zwarnnam: 1116
+ 3123 		printf: <>
+ 3124 		exit: <>
+ 3125 		fopen: <>
+ 3126 		fprintf: <>
+ 3127 		malloc: 5
+ 3128 		fgets: <>
+ 3129 		test1: int (), <./zsh/Src/ansi2knr.c 219>
+ 3130 		convert1: int (), <./zsh/Src/ansi2knr.c 267>
+ 3131 		strlen: <>
+ 3132 		free: 19
+ 3133 		fclose: <>

@@ -1,0 +1,463 @@
+    1 	main: int (), <./fetchmail/getopt.c 699>
+    2 		getopt: int (), <./fetchmail/getopt.c 680>
+    3 		fgets: <>
+    4 		strcat: <>
+    5 		strncasecmp:  (), <./fetchmail/strcasecmp.c 85>
+    6 		strcpy: <>
+    7 		fputs: <>
+    8 		parsebuf: void (), <./fetchmail/rfc822.c 349>
+    9 		stat: <>
+   10 		fprintf: <>
+   11 		strerror: char * (), <./fetchmail/error.c 93>
+   12 		exit: <>
+   13 		parse_netrc: netrc_entry * (), <./fetchmail/netrc.c 75>
+   14 			fopen: <>
+   15 			fgets: <>
+   16 			strlen: <>
+   17 			isspace: <>
+   18 			xstrdup: char * (), <./fetchmail/xmalloc.c 52>
+   19 				xmalloc: XMALLOCTYPE * (), <./fetchmail/xmalloc.c 25>
+   20 					malloc: <>
+   21 					report: , <./fetchmail/error.c 113>
+   22 					exit: <>
+   23 				strlen: <>
+   24 				strcpy: <>
+   25 			maybe_add_to_list: void (), <./fetchmail/netrc.c 33>
+   26 				free: <>
+   27 				xmalloc: 19
+   28 				memset: <>
+   29 			error_at_line: <>
+   30 			fprintf: <>
+   31 			strcmp: <>
+   32 			fclose: <>
+   33 			free: <>
+   34 		printf: <>
+   35 		search_netrc: netrc_entry * (), <./fetchmail/netrc.c 294>
+   36 			strcmp: <>
+   37 		fputc: <>
+   38 		dropprivs: void (), <./fetchmail/fetchmail.c 146>
+   39 			getegid: <>
+   40 			getgid: <>
+   41 			getgrgid: <>
+   42 			strcmp: <>
+   43 			interface_set_gids: void (), <./fetchmail/interface.c 196>
+   44 			setegid: <>
+   45 		envquery: void (), <./fetchmail/env.c 32>
+   46 			getenv: <>
+   47 			getpwuid: <>
+   48 			getuid: <>
+   49 			fprintf: <>
+   50 			exit: <>
+   51 			memcpy: <>
+   52 			getpwnam: <>
+   53 			xstrdup: 18
+   54 			strrchr: <>
+   55 			xmalloc: 19
+   56 			strlen: <>
+   57 			strcmp: <>
+   58 			strcpy: <>
+   59 			strcat: <>
+   60 		bindtextdomain: <>
+   61 		textdomain: <>
+   62 		xmalloc: 19
+   63 		strlen: <>
+   64 		parsecmdline: int (), <./fetchmail/options.c 218>
+   65 			memset: <>
+   66 			getopt_long: int (), <./fetchmail/getopt1.c 59>
+   67 			xatoi: int (), <./fetchmail/options.c 147>
+   68 				strtol: <>
+   69 				fprintf: <>
+   70 				strlen: <>
+   71 				isspace: <>
+   72 				isdigit: <>
+   73 				atoi: <>
+   74 			xmalloc: 19
+   75 			strlen: <>
+   76 			strcpy: <>
+   77 			strcasecmp:  (), <./fetchmail/strcasecmp.c 72>
+   78 			fprintf: <>
+   79 			strcmp: <>
+   80 			xstrdup: 18
+   81 			NUM_VALUE_IN: <>
+   82 			xalloca: <>
+   83 			strtok: <>
+   84 			save_str: struct idlist (), <./fetchmail/uid.c 180>
+   85 			atoi: <>
+   86 			interface_parse: void (), <./fetchmail/interface.c 360>
+   87 				xstrdup: 18
+   88 				strchr: <>
+   89 				report: , <./fetchmail/error.c 113>
+   90 				exit: <>
+   91 				xmalloc: 19
+   92 				inet_aton: int (), <./fetchmail/interface.c 349>
+   93 					inet_addr: <>
+   94 					memcpy: <>
+   95 			P: <>
+   96 			exit: <>
+   97 		putchar: <>
+   98 		system: <>
+   99 		load_params: int (), <./fetchmail/fetchmail.c 888>
+  100 			memset: <>
+  101 			ANTISPAM: <>
+  102 			prc_parse_file: <>
+  103 			exit: <>
+  104 			strcmp: <>
+  105 			str_in_list: int (), <./fetchmail/uid.c 242>
+  106 				strcmp: <>
+  107 				strcasecmp: 77
+  108 				str_in_list: 105
+  109 			fprintf: <>
+  110 			hostalloc: <>
+  111 			xstrdup: 18
+  112 			optmerge: void (), <./fetchmail/fetchmail.c 813>
+  113 				LIST_MERGE: <>
+  114 				FLAG_MERGE: <>
+  115 			DEFAULT: <>
+  116 			host_fqdn: char * (), <./fetchmail/env.c 95>
+  117 				gethostname: <>
+  118 				fprintf: <>
+  119 				exit: <>
+  120 				strchr: <>
+  121 				gethostbyname: <>
+  122 				xstrdup: 18
+  123 			save_str: struct idlist (), <./fetchmail/uid.c 180>
+  124 			getpwnam: <>
+  125 			save_str_pair: void (), <./fetchmail/uid.c 209>
+  126 				xmalloc: 19
+  127 				xstrdup: 18
+  128 			strcasecmp: 77
+  129 			hes_getmailhost: <>
+  130 			free: <>
+  131 			report: , <./fetchmail/error.c 113>
+  132 			MULTIDROP: <>
+  133 			gethostbyname: <>
+  134 			strrchr: <>
+  135 			atoi: <>
+  136 			prc_filecheck: <>
+  137 			initialize_saved_lists: void (), <./fetchmail/uid.c 70>
+  138 				fopen: <>
+  139 				fgets: <>
+  140 				strspn: <>
+  141 				strpbrk: <>
+  142 				strrchr: <>
+  143 				strcasecmp: 77
+  144 				save_str: struct idlist (), <./fetchmail/uid.c 180>
+  145 				fclose: <>
+  146 				report_build: , <./fetchmail/error.c 234>
+  147 				report_complete: , <./fetchmail/error.c 334>
+  148 			getuid: <>
+  149 		getuid: <>
+  150 		xalloca: <>
+  151 		sprintf: <>
+  152 		setrlimit: <>
+  153 		xstrdup: 18
+  154 		access: <>
+  155 		dump_params: void (), <./fetchmail/fetchmail.c 1367>
+  156 			printf: <>
+  157 			strcmp: <>
+  158 			visbuf: char * (), <./fetchmail/env.c 209>
+  159 				isprint: <>
+  160 				sprintf: <>
+  161 				strlen: <>
+  162 			showproto: const char * (), <./fetchmail/env.c 187>
+  163 			putchar: <>
+  164 			NUM_NONZERO: <>
+  165 			fputs: <>
+  166 		dump_config: void (), <./fetchmail/conf.c 121>
+  167 			fputs: <>
+  168 			printf: <>
+  169 			indent: void (), <./fetchmail/conf.c 28>
+  170 				putc: <>
+  171 				fputs: <>
+  172 			numdump: void (), <./fetchmail/conf.c 73>
+  173 				indent: 169
+  174 				fprintf: <>
+  175 				NUM_VALUE_OUT: <>
+  176 			stringdump: void (), <./fetchmail/conf.c 61>
+  177 				indent: 169
+  178 				fprintf: <>
+  179 				visbuf: 158
+  180 				fputs: <>
+  181 			booldump: void (), <./fetchmail/conf.c 80>
+  182 				indent: 169
+  183 				fprintf: <>
+  184 			putc: <>
+  185 			fprintf: <>
+  186 			strcmp: <>
+  187 			showproto: 162
+  188 			listdump: void (), <./fetchmail/conf.c 90>
+  189 				indent: 169
+  190 				fprintf: <>
+  191 				fputs: <>
+  192 				visbuf: 158
+  193 			strncpy: <>
+  194 			visbuf: 158
+  195 			fputc: <>
+  196 		malloc: <>
+  197 		fopen: <>
+  198 		fscanf: <>
+  199 		kill: <>
+  200 		unlink: <>
+  201 		fclose: <>
+  202 		getpassword: char * (), <./fetchmail/getpass.c 63>
+  203 			fputs: <>
+  204 			exit: <>
+  205 			RETSIGTYPE: <>
+  206 			sigint_handler: RETSIGTYPE (), <./fetchmail/getpass.c 190>
+  207 				restore_tty_state: void (), <./fetchmail/getpass.c 173>
+  208 					tcsetattr: <>
+  209 					ioctl: <>
+  210 					stty: <>
+  211 				report: , <./fetchmail/error.c 113>
+  212 				exit: <>
+  213 			isatty: <>
+  214 			fdopen: <>
+  215 			open: <>
+  216 			setbuf: <>
+  217 			fileno: <>
+  218 			save_tty_state: void (), <./fetchmail/getpass.c 140>
+  219 				tcgetattr: <>
+  220 				ioctl: <>
+  221 				gtty: <>
+  222 			signal: <>
+  223 			disable_tty_echo: void (), <./fetchmail/getpass.c 156>
+  224 				tcsetattr: <>
+  225 				ioctl: <>
+  226 				stty: <>
+  227 			fprintf: <>
+  228 			getc: <>
+  229 			restore_tty_state: 207
+  230 			fclose: <>
+  231 		SOCKSinit: <>
+  232 		openlog: <>
+  233 		report_init: void (), <./fetchmail/error.c 198>
+  234 		daemonize: int (), <./fetchmail/daemon.c 85>
+  235 			RETSIGTYPE: <>
+  236 			sigchld_handler: RETSIGTYPE (), <./fetchmail/daemon.c 56>
+  237 				waitpid: <>
+  238 				wait3: <>
+  239 				wait: <>
+  240 			getppid: <>
+  241 			signal: <>
+  242 			fork: <>
+  243 			report: , <./fetchmail/error.c 113>
+  244 			strerror: 11
+  245 			exit: <>
+  246 			setsid: <>
+  247 			setpgrp: <>
+  248 			getpid: <>
+  249 			open: <>
+  250 			ioctl: <>
+  251 			close: <>
+  252 			getdtablesize: <>
+  253 			dup: <>
+  254 			chdir: <>
+  255 			umask: <>
+  256 		termhook: void (), <./fetchmail/fetchmail.c 1225>
+  257 			report: , <./fetchmail/error.c 113>
+  258 			SMTP_quit: int (), <./fetchmail/smtp.c 145>
+  259 				SockPrintf: int (), <./fetchmail/socket.c 223>
+  260 					va_start: <>
+  261 					vsnprintf: <>
+  262 					vsprintf: <>
+  263 					va_end: <>
+  264 					SockWrite: <>
+  265 					strlen: <>
+  266 					write: <>
+  267 					recv: <>
+  268 					memchr: <>
+  269 					read: <>
+  270 					close: <>
+  271 					main: 1
+  272 					SockOpen: int (), <./fetchmail/socket.c 143>
+  273 						handle_plugin: int (), <./fetchmail/socket.c 48>
+  274 							socketpair: <>
+  275 							report: , <./fetchmail/error.c 113>
+  276 							fork: <>
+  277 							close: <>
+  278 							dup2: <>
+  279 							exit: <>
+  280 							execlp: <>
+  281 						memset: <>
+  282 						getaddrinfo: <>
+  283 						report: , <./fetchmail/error.c 113>
+  284 						net_security_strtorequest: <>
+  285 						inner_connect: <>
+  286 						free: <>
+  287 						freeaddrinfo: <>
+  288 						sprintf: <>
+  289 						inet_addr: <>
+  290 						memcpy: <>
+  291 						inet_aton: <>
+  292 						gethostbyname: <>
+  293 						htons: <>
+  294 						socket: int, <./fetchmail/rpa.c 359>
+  295 						connect: <>
+  296 						close: <>
+  297 				report: , <./fetchmail/error.c 113>
+  298 				SMTP_ok: int (), <./fetchmail/smtp.c 177>
+  299 					SockRead: <>
+  300 					strlen: <>
+  301 					report: , <./fetchmail/error.c 113>
+  302 			write_saved_lists: void (), <./fetchmail/uid.c 393>
+  303 				report: , <./fetchmail/error.c 113>
+  304 				unlink: <>
+  305 				fopen: <>
+  306 				fprintf: <>
+  307 				fputs: <>
+  308 				fclose: <>
+  309 			memset: <>
+  310 			strlen: <>
+  311 			unlockit: <>
+  312 			exit: <>
+  313 		report: , <./fetchmail/error.c 113>
+  314 		signal: <>
+  315 		interface_init: void (), <./fetchmail/interface.c 70>
+  316 			popen: <>
+  317 			fscanf: <>
+  318 		umask: <>
+  319 		open: <>
+  320 		getpid: <>
+  321 		write: <>
+  322 		close: <>
+  323 		atexit: <>
+  324 		unlockit: <>
+  325 		on_exit: <>
+  326 		sethostent: <>
+  327 		interface_approve: int (), <./fetchmail/interface.c 437>
+  328 			get_ifinfo: int (), <./fetchmail/interface.c 218>
+  329 				socket: int, <./fetchmail/rpa.c 359>
+  330 				fopen: <>
+  331 				strchr: <>
+  332 				close: <>
+  333 				fclose: <>
+  334 				setegid: <>
+  335 				openkvm: int (), <./fetchmail/interface.c 203>
+  336 					kvm_open: <>
+  337 					kvm_nlist: <>
+  338 					kvm_read: <>
+  339 				report: , <./fetchmail/error.c 113>
+  340 				exit: <>
+  341 				kvm_read: <>
+  342 				snprintf: <>
+  343 				strcmp: <>
+  344 			report: , <./fetchmail/error.c 113>
+  345 		query_host: int (), <./fetchmail/fetchmail.c 1291>
+  346 			report: , <./fetchmail/error.c 113>
+  347 			showproto: 162
+  348 			rfc822timestamp: char * (), <./fetchmail/env.c 157>
+  349 				time: <>
+  350 				strftime: <>
+  351 				localtime: <>
+  352 				strncpy: <>
+  353 				strstr: <>
+  354 				tzoffset: char * (), <./fetchmail/env.c 128>
+  355 					gmtime: <>
+  356 					localtime: <>
+  357 					sprintf: <>
+  358 				strcpy: <>
+  359 				ctime: <>
+  360 				strlen: <>
+  361 			query_host: 345
+  362 			doPOP2: int (), <./fetchmail/pop2.c 148>
+  363 				do_protocol: <>
+  364 			doPOP3: int (), <./fetchmail/pop3.c 667>
+  365 				fprintf: <>
+  366 				do_protocol: <>
+  367 			doIMAP: int (), <./fetchmail/imap.c 1328>
+  368 				do_protocol: <>
+  369 			doETRN: int (), <./fetchmail/etrn.c 141>
+  370 				fprintf: <>
+  371 				do_protocol: <>
+  372 		update_str_lists: void (), <./fetchmail/uid.c 372>
+  373 			free_str_list: void (), <./fetchmail/uid.c 197>
+  374 				free_str_list: 373
+  375 				free: <>
+  376 			report_build: , <./fetchmail/error.c 234>
+  377 			report_complete: , <./fetchmail/error.c 334>
+  378 		write_saved_lists: 302
+  379 		sleep: <>
+  380 		interface_note_activity: void (), <./fetchmail/interface.c 405>
+  381 			get_ifinfo: 328
+  382 			strcmp: <>
+  383 			report: , <./fetchmail/error.c 113>
+  384 		endhostent: <>
+  385 		SMTP_quit: 258
+  386 		rfc822timestamp: 348
+  387 		donothing: RETSIGTYPE (), <./fetchmail/fetchmail.c 119>
+  388 			signal: <>
+  389 			donothing: 387
+  390 		siginterrupt: <>
+  391 		gotsigalrm: RETSIGTYPE (), <./fetchmail/fetchmail.c 110>
+  392 			signal: <>
+  393 			gotsigalrm: 391
+  394 		setitimer: <>
+  395 		pause: <>
+  396 		select: <>
+  397 		itimerthread: void (), <./fetchmail/fetchmail.c 134>
+  398 			fprintf: <>
+  399 			kill: <>
+  400 			getpid: <>
+  401 		getmxrecords: struct mxentry (), <./fetchmail/mxget.c 44>
+  402 		puts: <>
+  403 		fread: <>
+  404 		xrealloc: XMALLOCTYPE * (), <./fetchmail/xmalloc.c 39>
+  405 			xmalloc: 19
+  406 			realloc: <>
+  407 			report: , <./fetchmail/error.c 113>
+  408 			exit: <>
+  409 		DBG_FWRITE: <>
+  410 		UnMimeHeader: void (), <./fetchmail/unmime.c 60>
+  411 			strstr: <>
+  412 			strlen: <>
+  413 			memmove: char * (), <./fetchmail/memmove.c 2>
+  414 			strchr: <>
+  415 			tolower: <>
+  416 			qp_char: int (), <./fetchmail/unmime.c 34>
+  417 				unhex: unsigned char (), <./fetchmail/unmime.c 22>
+  418 			from64tobits: int (), <./fetchmail/base64.c 55>
+  419 				DECODE64: <>
+  420 			isspace: <>
+  421 		MimeBodyType: int (), <./fetchmail/unmime.c 378>
+  422 			strncasecmp: 5
+  423 			nxtaddr: <>
+  424 			xalloca: <>
+  425 			strlen: <>
+  426 			strcpy: <>
+  427 			strchr: <>
+  428 			strncpy: <>
+  429 			strcmp: <>
+  430 			CheckContentType: int (), <./fetchmail/unmime.c 328>
+  431 				isspace: <>
+  432 				strncasecmp: 5
+  433 				strlen: <>
+  434 			GetBoundary: char * (), <./fetchmail/unmime.c 280>
+  435 				strchr: <>
+  436 				isspace: <>
+  437 				strncasecmp: 5
+  438 				strlen: <>
+  439 			strncat: <>
+  440 			strcasecmp: 77
+  441 			SetEncoding8bit: void (), <./fetchmail/unmime.c 268>
+  442 				memcpy: <>
+  443 				strlen: <>
+  444 		fwrite: <>
+  445 		UnMimeBodyline: int (), <./fetchmail/unmime.c 588>
+  446 			UnMimeHeader: 410
+  447 			strcmp: <>
+  448 			strncasecmp: 5
+  449 			nxtaddr: <>
+  450 			strcasecmp: 77
+  451 			SetEncoding8bit: 441
+  452 			CheckContentType: 430
+  453 			strlen: <>
+  454 			strncmp: if (), <./fetchmail/getopt.c 496>
+  455 			DoOneQPLine: int (), <./fetchmail/unmime.c 506>
+  456 				strncmp: if (), <./fetchmail/getopt.c 496>
+  457 				strcpy: <>
+  458 				strchr: <>
+  459 				strlen: <>
+  460 				memmove: 413
+  461 				qp_char: 416
+  462 		free: <>
+  463 		fflush: <>

@@ -37,30 +37,15 @@ rm  $CFLOW_OUTPUT_DIRECTORY/*
 main_dir=`pwd`
 cd $CFLOW_INPUT_PROJECT_DIRECTORY
 
-# Iterate through each C project
-for project_path in $CFLOW_INPUT_PROJECT_DIRECTORY/*; do
+#  Get a list of c programs within the c project
+LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"
 
-	if [ ! -d $project_path ]; then
-		continue
-	fi
+# Feed every c program to cflow
+for program in $LIST_OF_C_PROGRAMS; do
 
-	prev_dir=`pwd`
-	cd $project_path
-
-	# Project name is the last field in the directory path
-	PROJECT_NAME=${project_path##*/}
-
-	echo "[Cflow Generate]: Running cflow on $PROJECT_NAME ..."
-
-	#  Get a list of c programs within the c project
-	LIST_OF_C_PROGRAMS=`find ./ -iname "*.c"`
-
-	# Run cflow on the C programs
-	#echo $LIST_OF_C_PROGRAMS
-
-	timeout 10 cflow --format=posix --omit-arguments --level-indent='0=\t' --level-indent='1=\t' --level-indent=start='\t' $LIST_OF_C_PROGRAMS > "$CFLOW_OUTPUT_DIRECTORY/""$PROJECT_NAME"".cflow" 2>/dev/null
-
-	cd $prev_dir
+	program_name=${program##*/}
+	echo "[Cflow Generate]: Running cflow on $program ..."
+	timeout 10 cflow --format=posix --omit-arguments --level-indent='0=\t' --level-indent='1=\t' --level-indent=start='\t' $program > "$CFLOW_OUTPUT_DIRECTORY/""$program_name"".cflow" 2>/dev/null
 done
 
 cd $main_dir

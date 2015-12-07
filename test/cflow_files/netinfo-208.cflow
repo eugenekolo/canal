@@ -1,0 +1,2915 @@
+    1 	main: int (), <./servers/nibindd/nibind_main.c 79>
+    2 		usage: void (), <./tools/nifind/nifind.c 401>
+    3 			fprintf: <>
+    4 			exit: <>
+    5 		strcmp: <>
+    6 		atoi: <>
+    7 		do_open: int (), <./common/nilib2.c 115>
+    8 			ni_parse_server_tag: enum ni_parse_status (), <./common/nilib2.c 37>
+    9 			fprintf: <>
+   10 			ni_parse_error_string: const char * (), <./common/nilib2.c 100>
+   11 			ni_connect: <>
+   12 			free: <>
+   13 			ni_open: <>
+   14 			ni_setabort: <>
+   15 			ni_setreadtimeout: <>
+   16 			ni_setwritetimeout: <>
+   17 			ni_free: void (), <./servers/netinfod/ni.c 354>
+   18 				ni_list_const_free: void (), <./servers/netinfod/ni.c 802>
+   19 					NH: <>
+   20 					ni_entrylist_free: <>
+   21 				NH: <>
+   22 				ni_name_free: <>
+   23 				file_free: void (), <./servers/netinfod/ni_file.c 721>
+   24 					dsstore_close: dsstatus (), <./common/dsstore.c 1194>
+   25 						u_int32_t:  () (), <./common/utf-8.c 390>
+   26 							DSUTIL_UTF8_INCR: <>
+   27 							dsutil_utf8_to_ucs4: int32_t (), <./common/utf-8.c 105>
+   28 								DSUTIL_UTF8_CHARLEN: <>
+   29 						nistore_close: dsstatus (), <./common/nistore.c 256>
+   30 							ni_free: 17
+   31 							free: <>
+   32 						dsstore_write_index: dsstatus (), <./common/dsstore.c 400>
+   33 							dsstore_unlink: int (), <./common/dsstore.c 344>
+   34 								unlink: <>
+   35 								strlen: <>
+   36 								sprintf: <>
+   37 							dsstore_fopen: FILE * (), <./common/dsstore.c 313>
+   38 								fopen: <>
+   39 								strlen: <>
+   40 								sprintf: <>
+   41 							htonl: <>
+   42 							fwrite: <>
+   43 							fclose: <>
+   44 							dsstore_rename: int (), <./common/dsstore.c 360>
+   45 								rename: <>
+   46 								strlen: <>
+   47 								sprintf: <>
+   48 						dsstore_access_readwrite: int (), <./common/dsstore.c 441>
+   49 						dsstore_fopen: 37
+   50 						fwrite: <>
+   51 						fflush: <>
+   52 						fclose: <>
+   53 						free: <>
+   54 						dscache_free: void (), <./common/dscache.c 133>
+   55 							dscache_flush: void (), <./common/dscache.c 142>
+   56 								dscache_prune: u_int32_t (), <./common/dscache.c 35>
+   57 									u_int32_t: 25
+   58 									dsrecord_release: void (), <./common/dsrecord.c 423>
+   59 										u_int32_t: 25
+   60 										free: <>
+   61 										dsattribute_release: void (), <./common/dsattribute.c 181>
+   62 											u_int32_t: 25
+   63 											dsdata_release: void (), <./common/dsdata.c 349>
+   64 												free: <>
+   65 											free: <>
+   66 										dsindex_free: void (), <./common/dsindex.c 47>
+   67 											u_int32_t: 25
+   68 											dsdata_release: 63
+   69 											free: <>
+   70 							free: <>
+   71 					STORE: <>
+   72 				FH: <>
+   73 				im_free: void (), <./servers/netinfod/index_manager.c 102>
+   74 					im_holder_unalloc: void (), <./servers/netinfod/index_manager.c 65>
+   75 						ss_unalloc: void (), <./servers/netinfod/strstore.c 178>
+   76 							strdelete: void (), <./servers/netinfod/strstore.c 143>
+   77 								system_log: void (), <./common/system_log.c 135>
+   78 									syslock_new: syslock * (), <./common/syslock.c 82>
+   79 										malloc: <>
+   80 										memset: <>
+   81 										pthread_mutex_init: <>
+   82 										pthread_cond_init: <>
+   83 										mutex_alloc: <>
+   84 										mutex_init: <>
+   85 										condition_alloc: <>
+   86 										condition_init: <>
+   87 									syslock_lock: void (), <./common/syslock.c 130>
+   88 									va_start: <>
+   89 									vsyslog: <>
+   90 									fprintf: <>
+   91 									vfprintf: <>
+   92 									fflush: <>
+   93 									va_end: <>
+   94 									syslock_unlock: void (), <./common/syslock.c 155>
+   95 								ranstrcmp: int (), <./servers/netinfod/ranstrcmp.c 66>
+   96 								strdelete: 76
+   97 								removenode: void (), <./servers/netinfod/strstore.c 120>
+   98 									pickleft: unsigned (), <./servers/netinfod/strstore.c 108>
+   99 									insertnode: void (), <./servers/netinfod/strstore.c 89>
+  100 										ranstrcmp: 95
+  101 										insertnode: 99
+  102 										system_log: 77
+  103 									free: <>
+  104 						index_unalloc: void (), <./servers/netinfod/index.c 133>
+  105 							ITREE: <>
+  106 							freetree: void (), <./servers/netinfod/index.c 118>
+  107 								ss_unalloc: 75
+  108 								freetree: 106
+  109 								free: <>
+  110 						free: <>
+  111 						im_entrylist_unalloc: void (), <./servers/netinfod/listops.c 48>
+  112 							im_namelist_unalloc: void (), <./servers/netinfod/listops.c 35>
+  113 								ss_unalloc: 75
+  114 							ni_namelist_free: <>
+  115 					free: <>
+  116 				IMH: <>
+  117 				MM_FREE: <>
+  118 			ni_setuser: ni_status (), <./servers/netinfod/ni.c 338>
+  119 				NH: <>
+  120 				ni_name_free: <>
+  121 				ni_name_dup: <>
+  122 			ni_setpassword: <>
+  123 			ni_root: ni_status (), <./servers/netinfod/ni.c 377>
+  124 				file_read: ni_status (), <./servers/netinfod/ni_file.c 761>
+  125 					u_int32_t: 25
+  126 					dsstore_version: u_int32_t (), <./common/dsstore.c 1303>
+  127 						nistore_version: u_int32_t (), <./common/nistore.c 451>
+  128 							ni_self: ni_status (), <./servers/netinfod/ni.c 941>
+  129 								obj_lookup: ni_status (), <./servers/netinfod/ni.c 220>
+  130 									file_read: 124
+  131 									FH: <>
+  132 									obj_free: void (), <./servers/netinfod/ni.c 187>
+  133 										free: <>
+  134 								obj_free: 132
+  135 					STORE: <>
+  136 					dsstore_version_record: u_int32_t (), <./common/dsstore.c 267>
+  137 						u_int32_t: 25
+  138 						nistore_version_record: u_int32_t (), <./common/nistore.c 467>
+  139 							ni_self: 128
+  140 					dsrecord_new: dsrecord * (), <./common/dsrecord.c 387>
+  141 						malloc: <>
+  142 					dsstore_record_version: u_int32_t (), <./common/dsstore.c 1895>
+  143 						u_int32_t: 25
+  144 						nistore_record_version: u_int32_t (), <./common/nistore.c 521>
+  145 							ni_self: 128
+  146 						dsstore_index: dsstatus (), <./common/dsstore.c 1235>
+  147 							u_int32_t: 25
+  148 							dsstore_index_lookup: u_int32_t (), <./common/dsstore.c 182>
+  149 					dsstore_fetch: dsrecord * (), <./common/dsstore.c 1692>
+  150 						u_int32_t: 25
+  151 						nistore_fetch: dsrecord * (), <./common/nistore.c 287>
+  152 							NI_INIT: <>
+  153 							ni_read: ni_status (), <./servers/netinfod/ni.c 575>
+  154 								obj_lookup: 129
+  155 								copyprops: inline void (), <./servers/netinfod/ni.c 563>
+  156 									MM_ZERO: <>
+  157 								obj_free: 132
+  158 							dsrecord_new: 140
+  159 							ni_self: 128
+  160 							dsrecord_insert_ni_proplist: void (), <./common/nistore.c 166>
+  161 								malloc: <>
+  162 								strlen: <>
+  163 								cstring_to_dsdata: dsdata * (), <./common/dsdata.c 535>
+  164 									malloc: <>
+  165 									strlen: <>
+  166 									memmove: <>
+  167 							ni_proplist_free: <>
+  168 							ni_parent: ni_status (), <./servers/netinfod/ni.c 926>
+  169 								obj_lookup: 129
+  170 								obj_free: 132
+  171 							dsrecord_release: 58
+  172 							ni_children: ni_status (), <./servers/netinfod/ni.c 911>
+  173 								obj_lookup: 129
+  174 								ni_idlist_dup: <>
+  175 								obj_free: 132
+  176 							u_int32_t: 25
+  177 							malloc: <>
+  178 							ni_idlist_free: <>
+  179 						dscache_fetch: dsrecord * (), <./common/dscache.c 233>
+  180 							u_int32_t: 25
+  181 							dscache_index: u_int32_t (), <./common/dscache.c 215>
+  182 								u_int32_t: 25
+  183 							index_merit: u_int32_t (), <./common/dscache.c 92>
+  184 								u_int32_t: 25
+  185 							dsrecord_retain: dsrecord * (), <./common/dsrecord.c 415>
+  186 						dsstore_index: 146
+  187 						dsstore_store_fopen: FILE * (), <./common/dsstore.c 383>
+  188 							sprintf: <>
+  189 							strlen: <>
+  190 							fopen: <>
+  191 						fseek: <>
+  192 						fclose: <>
+  193 						dsrecord_fread: dsrecord * (), <./common/dsrecord.c 460>
+  194 							dsdata_fread: dsdata * (), <./common/dsdata.c 361>
+  195 								u_int32_t: 25
+  196 								fread: <>
+  197 								ntohl: <>
+  198 								malloc: <>
+  199 								free: <>
+  200 							dsdata_to_dsrecord: dsrecord * (), <./common/dsrecord.c 252>
+  201 								u_int32_t: 25
+  202 								malloc: <>
+  203 								deserialize_32: u_int32_t (), <./common/dsrecord.c 219>
+  204 									u_int32_t: 25
+  205 									memmove: <>
+  206 									ntohl: <>
+  207 								deserialize_dsdata: dsdata * (), <./common/dsrecord.c 231>
+  208 									malloc: <>
+  209 									deserialize_32: 203
+  210 									memmove: <>
+  211 							dsdata_release: 63
+  212 						dscache_save: void (), <./common/dscache.c 149>
+  213 							u_int32_t: 25
+  214 							dscache_index: 181
+  215 							dsrecord_retain: 185
+  216 							dsrecord_release: 58
+  217 							index_merit: 183
+  218 							dscache_prune: 56
+  219 					dstoni: ni_object * (), <./servers/netinfod/ni_file.c 82>
+  220 						malloc: <>
+  221 						cstring_to_dsdata: 163
+  222 						dsrecord_attribute: dsattribute * (), <./common/dsrecord.c 723>
+  223 							u_int32_t: 25
+  224 							dsdata_equal: int32_t (), <./common/dsdata.c 458>
+  225 								u_int32_t: 25
+  226 							dsattribute_retain: dsattribute * (), <./common/dsattribute.c 173>
+  227 						dsdata_release: 63
+  228 						dsattribute_value: dsdata * (), <./common/dsattribute.c 290>
+  229 							dsdata_retain: dsdata * (), <./common/dsdata.c 341>
+  230 						dsdata_to_int32: int32_t (), <./common/dsdata.c 794>
+  231 							memmove: <>
+  232 							ntohl: <>
+  233 						dsdatatostring: char * (), <./servers/netinfod/ni_file.c 57>
+  234 							malloc: <>
+  235 							memmove: <>
+  236 						dsmetadatatostring: char * (), <./servers/netinfod/ni_file.c 69>
+  237 							malloc: <>
+  238 							memmove: <>
+  239 						dsattribute_release: 61
+  240 					dsrecord_release: 58
+  241 				FH: <>
+  242 				MM_ALLOC: <>
+  243 				MM_ZERO: <>
+  244 				file_write: ni_status (), <./servers/netinfod/ni_file.c 819>
+  245 					nitods: dsrecord * (), <./servers/netinfod/ni_file.c 187>
+  246 						u_int32_t: 25
+  247 						dsrecord_new: 140
+  248 						malloc: <>
+  249 						cstring_to_dsdata: 163
+  250 						dsattribute_new: dsattribute * (), <./common/dsattribute.c 130>
+  251 							malloc: <>
+  252 							dsdata_retain: 229
+  253 						dsdata_release: 63
+  254 						int32_to_dsdata: dsdata * (), <./common/dsdata.c 642>
+  255 							malloc: <>
+  256 							htonl: <>
+  257 							memmove: <>
+  258 						dsattribute_insert: void (), <./common/dsattribute.c 197>
+  259 							u_int32_t: 25
+  260 							malloc: <>
+  261 							realloc: <>
+  262 							dsdata_retain: 229
+  263 						strlen: <>
+  264 						dsattribute_release: 61
+  265 					dsstore_save: dsstatus (), <./common/dsstore.c 1423>
+  266 						nistore_save: dsstatus (), <./common/nistore.c 353>
+  267 							dsrecord_to_ni_proplist: ni_proplist * (), <./common/nistore.c 107>
+  268 								malloc: <>
+  269 								NI_INIT: <>
+  270 								dsdatatostring: char * (), <./common/nistore.c 51>
+  271 									malloc: <>
+  272 									memmove: <>
+  273 								dsmetadatatostring: char * (), <./common/nistore.c 63>
+  274 									malloc: <>
+  275 									memmove: <>
+  276 							ni_self: 128
+  277 							ni_create: ni_status (), <./servers/netinfod/ni.c 423>
+  278 								obj_lookup: 129
+  279 								ni_validate_dir: ni_status (), <./servers/netinfod/ni.c 99>
+  280 									NH: <>
+  281 									ni_name_match: <>
+  282 									system_log: 77
+  283 									ni_inaccesslist: ni_status (), <./servers/netinfod/ni.c 60>
+  284 										ni_namelist_match: <>
+  285 										system_log: 77
+  286 										NH: <>
+  287 								obj_free: 132
+  288 								obj_alloc: ni_status (), <./servers/netinfod/ni.c 243>
+  289 									MM_ALLOC: <>
+  290 									MM_ZERO: <>
+  291 									file_idalloc: ni_status (), <./servers/netinfod/ni_file.c 743>
+  292 										dsstore_create_dsid: u_int32_t (), <./common/dsstore.c 1258>
+  293 											u_int32_t: 25
+  294 											dsstore_access_readwrite: 48
+  295 											dsstore_index_insert: void (), <./common/dsstore.c 89>
+  296 												malloc: <>
+  297 												memmove: <>
+  298 												free: <>
+  299 												realloc: <>
+  300 										STORE: <>
+  301 									FH: <>
+  302 									MM_FREE: <>
+  303 								ni_proplist_dup: <>
+  304 								file_write: 244
+  305 								FH: <>
+  306 								obj_unalloc: void (), <./servers/netinfod/ni.c 266>
+  307 									file_idunalloc: ni_status (), <./servers/netinfod/ni_file.c 751>
+  308 										dsstore_remove: dsstatus (), <./common/dsstore.c 1593>
+  309 											u_int32_t: 25
+  310 											nistore_remove: dsstatus (), <./common/nistore.c 432>
+  311 												ni_parent: 168
+  312 												nitodsstatus: dsstatus (), <./common/nistore.c 34>
+  313 												ni_self: 128
+  314 												ni_destroy: ni_status (), <./servers/netinfod/ni.c 491>
+  315 													obj_lookup: 129
+  316 													ni_validate_dir: 279
+  317 													obj_free: 132
+  318 													ni_idlist_delete: <>
+  319 													file_write: 244
+  320 													FH: <>
+  321 													im_remove: void (), <./servers/netinfod/index_manager.c 266>
+  322 														index: <>
+  323 														index_unalloc: 104
+  324 														free: <>
+  325 														im_entrylist_unalloc: 111
+  326 														ss_unalloc: 75
+  327 														MM_SHRINK_ARRAY: <>
+  328 													IMH: <>
+  329 													obj_unalloc: 306
+  330 											dsstore_access_readwrite: 48
+  331 											dsstore_index_lookup: 148
+  332 											dscache_remove: void (), <./common/dscache.c 197>
+  333 												u_int32_t: 25
+  334 												dscache_index: 181
+  335 												dsrecord_release: 58
+  336 											dsstore_index_delete: void (), <./common/dsstore.c 218>
+  337 												u_int32_t: 25
+  338 												dsstore_index_lookup: 148
+  339 												free: <>
+  340 												realloc: <>
+  341 											dsstore_fopen: 37
+  342 											dsstore_unlink: 33
+  343 											fwrite: <>
+  344 											fclose: <>
+  345 											sprintf: <>
+  346 											dsstore_stat: int (), <./common/dsstore.c 328>
+  347 												strlen: <>
+  348 												sprintf: <>
+  349 											dsstore_store_fopen: 187
+  350 											fseek: <>
+  351 											dsrecord_fread: 193
+  352 											dsrecord_release: 58
+  353 											malloc: <>
+  354 											memset: <>
+  355 											free: <>
+  356 										STORE: <>
+  357 										dstonistatus: ni_status (), <./servers/netinfod/ni_file.c 50>
+  358 									FH: <>
+  359 									obj_free: 132
+  360 								ni_idlist_hasid: int (), <./servers/netinfod/ni.c 410>
+  361 								ni_idlist_insert: <>
+  362 								im_newnode: void (), <./servers/netinfod/index_manager.c 214>
+  363 								IMH: <>
+  364 							ni_write: ni_status (), <./servers/netinfod/ni.c 589>
+  365 								obj_lookup: 129
+  366 								ni_validate_dir: 279
+  367 								obj_free: 132
+  368 								ni_proplist_dup: <>
+  369 								file_write: 244
+  370 								FH: <>
+  371 								ni_proplist_free: <>
+  372 								im_destroy_all: void (), <./servers/netinfod/index_manager.c 256>
+  373 								IMH: <>
+  374 								im_create_all: void (), <./servers/netinfod/index_manager.c 132>
+  375 									findholder: im_holder * (), <./servers/netinfod/index_manager.c 446>
+  376 										ni_name_match: <>
+  377 									index_insert_list: void (), <./servers/netinfod/index.c 260>
+  378 									list_insert: void (), <./servers/netinfod/listops.c 115>
+  379 										im_namelist_unalloc: 112
+  380 										ni_namelist_free: <>
+  381 										free: <>
+  382 										im_namelist_dup: ni_namelist * (), <./servers/netinfod/listops.c 65>
+  383 											malloc: <>
+  384 											ss_alloc: const char * (), <./servers/netinfod/strstore.c 170>
+  385 												strstore: const char * (), <./servers/netinfod/strstore.c 66>
+  386 													treealloc: strtree (), <./servers/netinfod/strstore.c 49>
+  387 														malloc: <>
+  388 														strlen: <>
+  389 														memmove: <>
+  390 													ranstrcmp: 95
+  391 													strstore: 385
+  392 													system_log: 77
+  393 										MM_GROW_ARRAY: <>
+  394 							ni_proplist_free: <>
+  395 							nitodsstatus: 312
+  396 						dsstore_access_readwrite: 48
+  397 						dsstore_create_dsid: 292
+  398 						dsrecord_to_dsdata: dsdata * (), <./common/dsrecord.c 42>
+  399 							u_int32_t: 25
+  400 							malloc: <>
+  401 							serialize_32: void (), <./common/dsrecord.c 31>
+  402 								u_int32_t: 25
+  403 								htonl: <>
+  404 								memmove: <>
+  405 							memmove: <>
+  406 						dsstore_fopen: 37
+  407 						dsdata_release: 63
+  408 						dsstore_unlink: 33
+  409 						dsdata_fwrite: dsstatus (), <./common/dsdata.c 418>
+  410 							u_int32_t: 25
+  411 							htonl: <>
+  412 							fwrite: <>
+  413 						fclose: <>
+  414 						dsstore_rename: 44
+  415 						dsstore_remove: 308
+  416 						store_save_data: dsstatus (), <./common/dsstore.c 1318>
+  417 							u_int32_t: 25
+  418 							Quantize: <>
+  419 							dsdata_size: u_int32_t (), <./common/dsdata.c 334>
+  420 							dsstore_store_fopen: 187
+  421 							fread: <>
+  422 							fseek: <>
+  423 							fclose: <>
+  424 							dsstore_unlink: 33
+  425 							dsdata_fwrite: 409
+  426 							fwrite: <>
+  427 							dsstore_index_insert: 295
+  428 							dscache_save: 212
+  429 					STORE: <>
+  430 					dsrecord_release: 58
+  431 					dstonistatus: 357
+  432 				obj_free: 132
+  433 			ni_error: <>
+  434 		fprintf: <>
+  435 		exit: <>
+  436 		dump_raw: void (), <./tools/nidump/nidump.c 108>
+  437 			ni_pathsearch: <>
+  438 			print_nidir: void (), <./tools/nidump/nidump.c 35>
+  439 				ni_read: 153
+  440 				putc: <>
+  441 				fprintf: <>
+  442 				print_string: void (), <./tools/nidump/nidump.c 14>
+  443 					strlen: <>
+  444 					fprintf: <>
+  445 					putc: <>
+  446 				ni_children: 172
+  447 				print_nidir: 438
+  448 		dump_aliases: void (), <./tools/nidump/nidump.c 325>
+  449 			ni_pathsearch: <>
+  450 			ni_children: 172
+  451 			ni_read: 153
+  452 			print_alias: void (), <./tools/nidump/nidump.c 182>
+  453 				ni_proplist_match: <>
+  454 				strlen: <>
+  455 				printf: <>
+  456 		dump_bootptab: void (), <./tools/nidump/nidump.c 379>
+  457 			printf: <>
+  458 			ni_pathsearch: <>
+  459 			ni_children: 172
+  460 			ni_read: 153
+  461 			print_pl_first: int (), <./tools/nidump/nidump.c 133>
+  462 				ni_proplist_match: <>
+  463 				printf: <>
+  464 		dump_bootparams: void (), <./tools/nidump/nidump.c 349>
+  465 			ni_pathsearch: <>
+  466 			ni_children: 172
+  467 			ni_read: 153
+  468 			check_pl: int (), <./tools/nidump/nidump.c 121>
+  469 				ni_proplist_match: <>
+  470 			print_pl_first: 461
+  471 			printf: <>
+  472 			print_pl_from: void (), <./tools/nidump/nidump.c 146>
+  473 				ni_proplist_match: <>
+  474 				printf: <>
+  475 		dump_ethers: void (), <./tools/nidump/nidump.c 637>
+  476 			ni_pathsearch: <>
+  477 			ni_children: 172
+  478 			ni_read: 153
+  479 			print_pl_first: 461
+  480 			printf: <>
+  481 			print_pl_from: 472
+  482 		dump_exports: void (), <./tools/nidump/nidump.c 416>
+  483 			ni_pathsearch: <>
+  484 			ni_children: 172
+  485 			ni_read: 153
+  486 			print_pl_first: 461
+  487 			printf: <>
+  488 			print_pl_from: 472
+  489 			print_pl_from_prefix: void (), <./tools/nidump/nidump.c 164>
+  490 				ni_proplist_match: <>
+  491 				printf: <>
+  492 		dump_fstab: void (), <./tools/nidump/nidump.c 447>
+  493 			ni_pathsearch: <>
+  494 			ni_children: 172
+  495 			ni_read: 153
+  496 			print_pl_first: 461
+  497 			printf: <>
+  498 			ni_proplist_match: <>
+  499 			print_pl_from: 472
+  500 		dump_group: void (), <./tools/nidump/nidump.c 579>
+  501 			ni_pathsearch: <>
+  502 			ni_children: 172
+  503 			ni_read: 153
+  504 			print_pl_first: 461
+  505 			printf: <>
+  506 			print_pl_from: 472
+  507 		dump_hosts: void (), <./tools/nidump/nidump.c 610>
+  508 			ni_pathsearch: <>
+  509 			ni_children: 172
+  510 			ni_read: 153
+  511 			print_pl_first: 461
+  512 			printf: <>
+  513 			print_pl_from: 472
+  514 		dump_networks: void (), <./tools/nidump/nidump.c 664>
+  515 			ni_pathsearch: <>
+  516 			ni_children: 172
+  517 			ni_read: 153
+  518 			print_pl_first: 461
+  519 			printf: <>
+  520 			print_pl_from: 472
+  521 		dump_passwd: void (), <./tools/nidump/nidump.c 282>
+  522 			ni_pathsearch: <>
+  523 			ni_children: 172
+  524 			ni_read: 153
+  525 			print_pl_first: 461
+  526 			printf: <>
+  527 		dump_printcap: void (), <./tools/nidump/nidump.c 555>
+  528 			ni_pathsearch: <>
+  529 			ni_children: 172
+  530 			ni_read: 153
+  531 			print_printer: void (), <./tools/nidump/nidump.c 239>
+  532 				ni_proplist_match: <>
+  533 				printf: <>
+  534 				strcmp: <>
+  535 				printer_prop: char * (), <./tools/nidump/nidump.c 222>
+  536 					sprintf: <>
+  537 					strcat: <>
+  538 				strlen: <>
+  539 		dump_protocols: void (), <./tools/nidump/nidump.c 724>
+  540 			ni_pathsearch: <>
+  541 			ni_children: 172
+  542 			ni_read: 153
+  543 			print_pl_first: 461
+  544 			printf: <>
+  545 			print_pl_from: 472
+  546 		dump_resolv: void (), <./tools/nidump/nidump.c 753>
+  547 			ni_pathsearch: <>
+  548 			ni_read: 153
+  549 			check_pl: 468
+  550 			ni_proplist_match: <>
+  551 			printf: <>
+  552 			print_pl_first: 461
+  553 			print_pl_from: 472
+  554 		dump_rpc: void (), <./tools/nidump/nidump.c 792>
+  555 			ni_pathsearch: <>
+  556 			ni_children: 172
+  557 			ni_read: 153
+  558 			print_pl_first: 461
+  559 			printf: <>
+  560 			print_pl_from: 472
+  561 		dump_services: void (), <./tools/nidump/nidump.c 693>
+  562 			ni_pathsearch: <>
+  563 			ni_children: 172
+  564 			ni_read: 153
+  565 			print_pl_first: 461
+  566 			printf: <>
+  567 			print_pl_from: 472
+  568 		dump_mountmaps: void (), <./tools/nidump/nidump.c 495>
+  569 			ni_pathsearch: <>
+  570 			ni_list: <>
+  571 			printf: <>
+  572 			sprintf: <>
+  573 			ni_children: 172
+  574 			ni_read: 153
+  575 			print_pl_first: 461
+  576 			ni_proplist_match: <>
+  577 			print_pl_from: 472
+  578 		u_int32_t: 25
+  579 		rindex: <>
+  580 		strcpy: <>
+  581 		streq: <>
+  582 		cstring_to_dsdata: 163
+  583 		getpass: <>
+  584 		dsengine_new: dsstatus (), <./common/dsengine.c 39>
+  585 			dsstore_new: dsstatus (), <./common/dsstore.c 453>
+  586 				u_int32_t: 25
+  587 				strlen: <>
+  588 				dsstore_stat: 346
+  589 				mkdir: <>
+  590 				sprintf: <>
+  591 				fopen: <>
+  592 				fclose: <>
+  593 				htonl: <>
+  594 				fwrite: <>
+  595 				dsstore_open: dsstatus (), <./common/dsstore.c 1153>
+  596 					u_int32_t: 25
+  597 					nistore_open: dsstatus (), <./common/nistore.c 233>
+  598 						do_open: 7
+  599 						malloc: <>
+  600 						memset: <>
+  601 						index: <>
+  602 					memset: <>
+  603 					malloc: <>
+  604 					strlen: <>
+  605 					memmove: <>
+  606 					dsstore_init: dsstatus (), <./common/dsstore.c 1036>
+  607 						u_int32_t: 25
+  608 						dsstore_access_readwrite: 48
+  609 						dsstore_stat: 346
+  610 						dsstore_fopen: 37
+  611 						fread: <>
+  612 						fclose: <>
+  613 						dsstore_read_index: dsstatus (), <./common/dsstore.c 977>
+  614 							u_int32_t: 25
+  615 							dsstore_stat: 346
+  616 							dsstore_fopen: 37
+  617 							fread: <>
+  618 							ntohl: <>
+  619 							dsstore_index_lookup: 148
+  620 							dsstore_index_insert: 295
+  621 							fclose: <>
+  622 						free: <>
+  623 						index_recovery: dsstatus (), <./common/dsstore.c 579>
+  624 							u_int32_t: 25
+  625 							opendir: <>
+  626 							strlen: <>
+  627 							readdir: <>
+  628 							strncmp: <>
+  629 							strrchr: <>
+  630 							atoi: <>
+  631 							index_recovery_read: dsstatus (), <./common/dsstore.c 513>
+  632 								u_int32_t: 25
+  633 								sprintf: <>
+  634 								dsstore_stat: 346
+  635 								dsstore_fopen: 37
+  636 								fseek: <>
+  637 								dsrecord_fread: 193
+  638 								dsstore_index_lookup: 148
+  639 								dsrecord_release: 58
+  640 								dsstore_index_insert: 295
+  641 								fclose: <>
+  642 							malloc: <>
+  643 							realloc: <>
+  644 							closedir: <>
+  645 							free: <>
+  646 							sprintf: <>
+  647 							dsstore_unlink: 33
+  648 						dsstore_unlink: 33
+  649 						create_recovery: dsstatus (), <./common/dsstore.c 661>
+  650 							u_int32_t: 25
+  651 							dsstore_fopen: 37
+  652 							dsstore_unlink: 33
+  653 							dsrecord_fread: 193
+  654 							fclose: <>
+  655 							dsstore_remove: 308
+  656 							dsrecord_to_dsdata: 398
+  657 							store_save_data: 416
+  658 							dsdata_release: 63
+  659 							dsstore_fetch: 149
+  660 							dsrecord_append_sub: void (), <./common/dsrecord.c 526>
+  661 								u_int32_t: 25
+  662 								malloc: <>
+  663 								realloc: <>
+  664 							dsstore_save: 265
+  665 							dsrecord_release: 58
+  666 						delete_recovery: dsstatus (), <./common/dsstore.c 742>
+  667 							u_int32_t: 25
+  668 							dsstore_fopen: 37
+  669 							dsstore_unlink: 33
+  670 							fread: <>
+  671 							fclose: <>
+  672 							dsstore_remove: 308
+  673 						tree_check: dsstatus (), <./common/dsstore.c 866>
+  674 							u_int32_t: 25
+  675 							dsstore_fetch: 149
+  676 							tree_check_record: u_int32_t (), <./common/dsstore.c 823>
+  677 								u_int32_t: 25
+  678 								dsstore_fetch: 149
+  679 								dsrecord_remove_sub: void (), <./common/dsrecord.c 548>
+  680 									u_int32_t: 25
+  681 									free: <>
+  682 									realloc: <>
+  683 								dsstore_save: 265
+  684 								tree_check_child: u_int32_t (), <./common/dsstore.c 782>
+  685 									dsstore_fetch: 149
+  686 									dsstore_save: 265
+  687 									dsrecord_remove_sub: 679
+  688 									dsrecord_append_sub: 660
+  689 									dsrecord_release: 58
+  690 								dsrecord_release: 58
+  691 								tree_check_record: 676
+  692 							dsrecord_release: 58
+  693 						connection_check: dsstatus (), <./common/dsstore.c 947>
+  694 							u_int32_t: 25
+  695 							malloc: <>
+  696 							memset: <>
+  697 							connection_check_record: dsstatus (), <./common/dsstore.c 889>
+  698 								u_int32_t: 25
+  699 								dsstore_fetch: 149
+  700 								dsstore_save: 265
+  701 								dsrecord_has_sub: u_int32_t (), <./common/dsrecord.c 514>
+  702 									u_int32_t: 25
+  703 								dsrecord_append_sub: 660
+  704 								dsstore_index_lookup: 148
+  705 								dsrecord_release: 58
+  706 							free: <>
+  707 						dsstore_index_lookup: 148
+  708 					dscache_new: dscache * (), <./common/dscache.c 107>
+  709 						u_int32_t: 25
+  710 						malloc: <>
+  711 			malloc: <>
+  712 			store: dsrecord **, <./tools/niload/raw_load.c 48>
+  713 			dsstore_fetch: 149
+  714 			dsrecord_new: 140
+  715 			dsstore_save: 265
+  716 			dsrecord_release: 58
+  717 		dsstatus_message: char * (), <./common/dsstatus.c 27>
+  718 		dsengine_close: dsstatus (), <./common/dsengine.c 91>
+  719 			dsstore_close: 24
+  720 			free: <>
+  721 		dsengine_open: dsstatus (), <./common/dsengine.c 71>
+  722 			dsstore_open: 595
+  723 			malloc: <>
+  724 			store: dsrecord **, <./tools/niload/raw_load.c 48>
+  725 		dsengine_authenticate: dsstatus (), <./common/dsengine.c 106>
+  726 			dsstore_authenticate: dsstatus (), <./common/dsstore.c 1577>
+  727 				nistore_authenticate: dsstatus (), <./common/nistore.c 271>
+  728 					dsdata_to_cstring: char * (), <./common/dsdata.c 706>
+  729 						DSUTIL_UTF8_INCR: <>
+  730 						DSUTIL_UTF8_ISASCII: <>
+  731 					ni_setuser: 118
+  732 					ni_setpassword: <>
+  733 		dsdata_release: 63
+  734 		nifty_interactive: int (), <./tools/nicl/nicl.c 1699>
+  735 			memset: <>
+  736 			printf: <>
+  737 			dsengine_netinfo_string_path: char * (), <./common/dsengine.c 999>
+  738 				u_int32_t: 25
+  739 				malloc: <>
+  740 				cstring_to_dsdata: 163
+  741 				dsengine_fetch: dsstatus (), <./common/dsengine.c 233>
+  742 					dsstore_fetch: 149
+  743 					cstring_to_dsdata: 163
+  744 					dsrecord_remove_key: void (), <./common/dsrecord.c 754>
+  745 						u_int32_t: 25
+  746 						dsdata_equal: 224
+  747 						dsrecord_remove_attribute_index: void (), <./common/dsrecord.c 648>
+  748 							u_int32_t: 25
+  749 							free: <>
+  750 							realloc: <>
+  751 					dsdata_release: 63
+  752 				dsrecord_attribute: 222
+  753 				sprintf: <>
+  754 				dsdata_to_cstring: 728
+  755 				strlen: <>
+  756 				free: <>
+  757 				dsattribute_release: 61
+  758 				dsrecord_release: 58
+  759 				dsdata_release: 63
+  760 			free: <>
+  761 			dsengine_x500_string_path: char * (), <./common/dsengine.c 1104>
+  762 				u_int32_t: 25
+  763 				copyString: char * (), <./common/dsutil.c 33>
+  764 					strlen: <>
+  765 					malloc: <>
+  766 					memmove: <>
+  767 				cstring_to_dsdata: 163
+  768 				dsengine_fetch: 741
+  769 				dsrecord_attribute: 222
+  770 				dsdata_retain: 229
+  771 				dsattribute_release: 61
+  772 				dsdata_release: 63
+  773 				dsdata_to_cstring: 728
+  774 				strlen: <>
+  775 				malloc: <>
+  776 				sprintf: <>
+  777 				free: <>
+  778 				dsrecord_release: 58
+  779 			copyString: 763
+  780 			fflush: <>
+  781 			scanf: <>
+  782 			rewind: <>
+  783 			streq: <>
+  784 			getString: char * (), <./tools/nicl/nicl.c 1634>
+  785 				malloc: <>
+  786 				memmove: <>
+  787 			malloc: <>
+  788 			realloc: <>
+  789 			nifty_cmd: int (), <./tools/nicl/nicl.c 1417>
+  790 				streq: <>
+  791 				usage: 2
+  792 				fprintf: <>
+  793 				nifty_pathcreate: dsstatus (), <./tools/nicl/nicl.c 283>
+  794 					atoi: <>
+  795 					strcmp: <>
+  796 					dsutil_parse_x500_string_path: dsrecord * (), <./common/dsutil.c 368>
+  797 						u_int32_t: 25
+  798 						dsx500_explode_dn: char ** (), <./common/dsx500.c 58>
+  799 							explode_name: char ** (), <./common/dsx500.c 158>
+  800 								dsutil_utf8_isspace: int (), <./common/utf-8.c 291>
+  801 									ISASCII: <>
+  802 								DSUTIL_UTF8_INCR: <>
+  803 								DSUTIL_UTF8_OFFSET: <>
+  804 								malloc: <>
+  805 								realloc: <>
+  806 								calloc: <>
+  807 								memmove: <>
+  808 						dsrecord_new: 140
+  809 						listLength: unsigned int (), <./common/dsutil.c 118>
+  810 						dsx500_rdn_attr_type: char * (), <./common/dsx500.c 370>
+  811 							get_next_substring: char * (), <./common/dsx500.c 321>
+  812 								malloc: <>
+  813 								strlen: <>
+  814 								ASCII_SPACE: <>
+  815 						cstring_to_dsdata: 163
+  816 						free: <>
+  817 						freeList: void (), <./common/dsutil.c 97>
+  818 							free: <>
+  819 						dsrecord_release: 58
+  820 						dsx500_rdn_attr_value: char * (), <./common/dsx500.c 386>
+  821 							strchr: <>
+  822 							get_next_substring: 811
+  823 						dsdata_release: 63
+  824 						dsattribute_new: 250
+  825 						dsattribute_append: void (), <./common/dsattribute.c 218>
+  826 							malloc: <>
+  827 							realloc: <>
+  828 							dsdata_retain: 229
+  829 						dsrecord_append_attribute: void (), <./common/dsrecord.c 614>
+  830 							u_int32_t: 25
+  831 							malloc: <>
+  832 							realloc: <>
+  833 							dsattribute_retain: 226
+  834 						dsattribute_release: 61
+  835 					dsutil_parse_netinfo_string_path: dsrecord * (), <./common/dsutil.c 288>
+  836 						u_int32_t: 25
+  837 						dsrecord_new: 140
+  838 						malloc: <>
+  839 						cstring_to_dsdata: 163
+  840 						free: <>
+  841 						dsattribute_new: 250
+  842 						dsattribute_append: 825
+  843 						dsdata_release: 63
+  844 						dsrecord_append_attribute: 829
+  845 						dsattribute_release: 61
+  846 					dsengine_pathcreate: dsstatus (), <./common/dsengine.c 858>
+  847 						dsengine_pathutil: dsstatus (), <./common/dsengine.c 713>
+  848 							u_int32_t: 25
+  849 							cstring_to_dsdata: 163
+  850 							dsdata_equal: 224
+  851 							dsstore_fetch: 149
+  852 							dsdata_release: 63
+  853 							dsrecord_release: 58
+  854 							dsengine_match: dsstatus (), <./common/dsengine.c 707>
+  855 								dsstore_match: dsstatus (), <./common/dsstore.c 1801>
+  856 									u_int32_t: 25
+  857 									nistore_match: dsstatus (), <./common/nistore.c 564>
+  858 										NI_INIT: <>
+  859 										ni_lookup: ni_status (), <./servers/netinfod/ni.c 641>
+  860 											index: <>
+  861 											obj_lookup: 129
+  862 											im_has_indexed_dir: int (), <./servers/netinfod/index_manager.c 301>
+  863 												findholder: 375
+  864 												index_lookup: ni_index (), <./servers/netinfod/index.c 387>
+  865 													ITREE: <>
+  866 											IMH: <>
+  867 											MM_ALLOC_ARRAY: <>
+  868 											MM_BCOPY: <>
+  869 											index_alloc: index_handle (), <./servers/netinfod/index.c 108>
+  870 											system_log: 77
+  871 											index_unalloc: 104
+  872 											ni_prop_find: ni_index (), <./servers/netinfod/ni.c 627>
+  873 												ni_name_match: <>
+  874 											ni_namelist_match: <>
+  875 											ni_idlist_insert: <>
+  876 											index_insert_list: 377
+  877 											obj_free: 132
+  878 											im_store_index: void (), <./servers/netinfod/index_manager.c 322>
+  879 												findholder: 375
+  880 												MM_GROW_ARRAY: <>
+  881 												ss_alloc: 384
+  882 												malloc: <>
+  883 										dsdata_to_cstring: 728
+  884 										nitodsstatus: 312
+  885 										ni_idlist_free: <>
+  886 									dsstore_fetch: 149
+  887 									dsrecord_release: 58
+  888 									dsindex_lookup_key: dsindex_key_t * (), <./common/dsindex.c 591>
+  889 										dsindex_util: dsindex_key_t * (), <./common/dsindex.c 76>
+  890 											u_int32_t: 25
+  891 											dsdata_equal: 224
+  892 											free: <>
+  893 											realloc: <>
+  894 											malloc: <>
+  895 											dsdata_retain: 229
+  896 									dsindex_lookup_val: dsindex_val_t * (), <./common/dsindex.c 597>
+  897 										kindex_util: dsindex_val_t * (), <./common/dsindex.c 200>
+  898 											u_int32_t: 25
+  899 											kindex_insert_val: dsindex_val_t * (), <./common/dsindex.c 129>
+  900 												u_int32_t: 25
+  901 												malloc: <>
+  902 												realloc: <>
+  903 												dsdata_retain: 229
+  904 											dsdata_compare: int32_t (), <./common/dsdata.c 481>
+  905 												u_int32_t: 25
+  906 												memcmp: <>
+  907 											kindex_delete_val: dsindex_val_t * (), <./common/dsindex.c 166>
+  908 												u_int32_t: 25
+  909 												free: <>
+  910 												realloc: <>
+  911 									cstring_to_dsdata: 163
+  912 									dsrecord_attribute: 222
+  913 									dsdata_release: 63
+  914 									dsindex_new: dsindex * (), <./common/dsindex.c 33>
+  915 										malloc: <>
+  916 									dsindex_insert_key: void (), <./common/dsindex.c 438>
+  917 										dsindex_util: 889
+  918 									dsdata_equal: 224
+  919 									dsattribute_index: u_int32_t (), <./common/dsattribute.c 276>
+  920 										u_int32_t: 25
+  921 										dsdata_equal: 224
+  922 									dsindex_insert_attribute: void (), <./common/dsindex.c 562>
+  923 										dsindex_attribute_util: void (), <./common/dsindex.c 539>
+  924 											u_int32_t: 25
+  925 											dsindex_util: 889
+  926 											kindex_util: 897
+  927 											vindex_util: u_int32_t (), <./common/dsindex.c 355>
+  928 												u_int32_t: 25
+  929 												vindex_insert_dsid: u_int32_t (), <./common/dsindex.c 289>
+  930 													u_int32_t: 25
+  931 													malloc: <>
+  932 													realloc: <>
+  933 												vindex_delete_dsid: u_int32_t (), <./common/dsindex.c 321>
+  934 													u_int32_t: 25
+  935 													free: <>
+  936 													realloc: <>
+  937 									dsattribute_release: 61
+  938 									dscache_save: 212
+  939 							dsrecord_new: 140
+  940 							dsrecord_append_attribute: 829
+  941 							dsengine_create: dsstatus (), <./common/dsengine.c 196>
+  942 								dsstore_fetch: 149
+  943 								dsstore_save: 265
+  944 								dsrecord_release: 58
+  945 								dsrecord_append_sub: 660
+  946 								dsindex_insert_record: void (), <./common/dsindex.c 568>
+  947 									u_int32_t: 25
+  948 									dsindex_attribute_util: 923
+  949 					dsrecord_release: 58
+  950 				nifty_path: dsstatus (), <./tools/nicl/nicl.c 269>
+  951 					dsengine_x500_string_pathmatch: dsstatus (), <./common/dsengine.c 1287>
+  952 						dsx500_explode_dn: 798
+  953 						dsx500_rdn_attr_type: 810
+  954 						dsx500_rdn_attr_value: 820
+  955 						strcasecmp: <>
+  956 						strtoul: <>
+  957 						free: <>
+  958 						freeList: 817
+  959 						dsutil_parse_x500_string_path: 796
+  960 						dsengine_pathmatch: dsstatus (), <./common/dsengine.c 847>
+  961 							dsengine_pathutil: 847
+  962 						dsrecord_release: 58
+  963 					dsengine_netinfo_string_pathmatch: dsstatus (), <./common/dsengine.c 936>
+  964 						u_int32_t: 25
+  965 						atoi: <>
+  966 						strcmp: <>
+  967 						dsutil_parse_netinfo_string_path: 835
+  968 						dsengine_pathmatch: 960
+  969 						dsrecord_release: 58
+  970 				dsstatus_message: 717
+  971 				u_int32_t: 25
+  972 				nifty_create: dsstatus (), <./tools/nicl/nicl.c 435>
+  973 					nifty_attribute: dsstatus (), <./tools/nicl/nicl.c 368>
+  974 						u_int32_t: 25
+  975 						dsengine_fetch: 741
+  976 						fprintf: <>
+  977 						dsstatus_message: 717
+  978 						nifty_getkey: dsdata * (), <./tools/nicl/nicl.c 307>
+  979 							fprintf: <>
+  980 							streq: <>
+  981 							cstring_to_dsdata: 163
+  982 						dsrecord_release: 58
+  983 						dsrecord_attribute: 222
+  984 						dsrecord_remove_key: 744
+  985 						dsattribute_release: 61
+  986 						dsattribute_new: 250
+  987 						dsrecord_append_attribute: 829
+  988 						dsdata_release: 63
+  989 						cstring_to_dsdata: 163
+  990 						dsattribute_append: 825
+  991 						dsattribute_merge: void (), <./common/dsattribute.c 255>
+  992 							u_int32_t: 25
+  993 							dsdata_equal: 224
+  994 							malloc: <>
+  995 							realloc: <>
+  996 							dsdata_retain: 229
+  997 						dsengine_save_attribute: dsstatus (), <./common/dsengine.c 328>
+  998 							u_int32_t: 25
+  999 							dsstore_record_super: u_int32_t (), <./common/dsstore.c 1927>
+ 1000 								u_int32_t: 25
+ 1001 								nistore_record_super: u_int32_t (), <./common/nistore.c 492>
+ 1002 									u_int32_t: 25
+ 1003 									ni_parent: 168
+ 1004 								dsstore_vital_statistics: dsstatus (), <./common/dsstore.c 1741>
+ 1005 									u_int32_t: 25
+ 1006 									nistore_vital_statistics: dsstatus (), <./common/nistore.c 536>
+ 1007 										u_int32_t: 25
+ 1008 										ni_self: 128
+ 1009 										ni_parent: 168
+ 1010 									dscache_fetch: 179
+ 1011 									dsrecord_release: 58
+ 1012 									dsstore_index: 146
+ 1013 									dsstore_store_fopen: 187
+ 1014 									fseek: <>
+ 1015 									fclose: <>
+ 1016 									dsrecord_fstats: dsstatus (), <./common/dsrecord.c 340>
+ 1017 										u_int32_t: 25
+ 1018 										fread: <>
+ 1019 										ntohl: <>
+ 1020 							dsstore_fetch: 149
+ 1021 							dsindex_delete_dsid: void (), <./common/dsindex.c 526>
+ 1022 								kindex_delete_dsid: void (), <./common/dsindex.c 463>
+ 1023 									u_int32_t: 25
+ 1024 									free: <>
+ 1025 									realloc: <>
+ 1026 									dsdata_release: 63
+ 1027 							dsindex_insert_record: 946
+ 1028 							dsrecord_release: 58
+ 1029 							dsstore_save_attribute: dsstatus (), <./common/dsstore.c 1566>
+ 1030 								nistore_save_attribute: dsstatus (), <./common/nistore.c 397>
+ 1031 									NI_INIT: <>
+ 1032 									ni_read: 153
+ 1033 									nitodsstatus: 312
+ 1034 									dsattribute_to_property: ni_property * (), <./common/nistore.c 76>
+ 1035 										malloc: <>
+ 1036 										NI_INIT: <>
+ 1037 										dsdatatostring: 270
+ 1038 										dsmetadatatostring: 273
+ 1039 									ni_proplist_free: <>
+ 1040 									ni_proplist_match: <>
+ 1041 									ni_createprop: ni_status (), <./servers/netinfod/ni.c 1028>
+ 1042 										obj_lookup: 129
+ 1043 										ni_validate_dir: 279
+ 1044 										obj_free: 132
+ 1045 										ni_proplist_insert: <>
+ 1046 										file_write: 244
+ 1047 										FH: <>
+ 1048 										im_create_list: void (), <./servers/netinfod/index_manager.c 375>
+ 1049 											findholder: 375
+ 1050 											index_insert_list: 377
+ 1051 											list_insert: 378
+ 1052 										IMH: <>
+ 1053 									ni_writeprop: ni_status (), <./servers/netinfod/ni.c 978>
+ 1054 										obj_lookup: 129
+ 1055 										obj_free: 132
+ 1056 										ni_validate_dir: 279
+ 1057 										ni_validate_name: ni_status (), <./servers/netinfod/ni.c 138>
+ 1058 											NH: <>
+ 1059 											ni_name_match: <>
+ 1060 											system_log: 77
+ 1061 											MM_ALLOC_ARRAY: <>
+ 1062 											strlen: <>
+ 1063 											sprintf: <>
+ 1064 											ni_name_free: <>
+ 1065 											ni_inaccesslist: 283
+ 1066 										ni_namelist_dup: <>
+ 1067 										file_write: 244
+ 1068 										FH: <>
+ 1069 										ni_namelist_free: <>
+ 1070 										im_destroy_list: void (), <./servers/netinfod/index_manager.c 348>
+ 1071 											findholder: 375
+ 1072 											index_delete: void (), <./servers/netinfod/index.c 352>
+ 1073 											list_delete: void (), <./servers/netinfod/listops.c 151>
+ 1074 												im_namelist_unalloc: 112
+ 1075 												ni_namelist_free: <>
+ 1076 												free: <>
+ 1077 												ni_entrylist_delete: <>
+ 1078 										IMH: <>
+ 1079 										im_create_list: 1048
+ 1080 									ni_prop_free: <>
+ 1081 								dsstore_save: 265
+ 1082 				nifty_delete: dsstatus (), <./tools/nicl/nicl.c 453>
+ 1083 					u_int32_t: 25
+ 1084 					fprintf: <>
+ 1085 					dsengine_record_super: dsstatus (), <./common/dsengine.c 1209>
+ 1086 						dsstore_record_super: 999
+ 1087 					dsstatus_message: 717
+ 1088 					dsengine_remove: dsstatus (), <./common/dsengine.c 357>
+ 1089 						u_int32_t: 25
+ 1090 						dsstore_fetch: 149
+ 1091 						malloc: <>
+ 1092 						dsengine_remove: 1088
+ 1093 						free: <>
+ 1094 						dsstore_record_super: 999
+ 1095 						dsrecord_remove_sub: 679
+ 1096 						dsindex_delete_dsid: 1021
+ 1097 						dsstore_save: 265
+ 1098 						dsrecord_release: 58
+ 1099 						dsstore_remove: 308
+ 1100 					dsengine_fetch: 741
+ 1101 					nifty_getkey: 978
+ 1102 					dsrecord_release: 58
+ 1103 					dsrecord_remove_key: 744
+ 1104 					dsdata_release: 63
+ 1105 					dsengine_save: dsstatus (), <./common/dsengine.c 299>
+ 1106 						u_int32_t: 25
+ 1107 						dsstore_record_super: 999
+ 1108 						dsstore_fetch: 149
+ 1109 						dsindex_delete_dsid: 1021
+ 1110 						dsindex_insert_record: 946
+ 1111 						dsrecord_release: 58
+ 1112 						dsstore_save: 265
+ 1113 					dsrecord_attribute: 222
+ 1114 					cstring_to_dsdata: 163
+ 1115 					dsattribute_index: 919
+ 1116 					dsattribute_remove: void (), <./common/dsattribute.c 233>
+ 1117 						u_int32_t: 25
+ 1118 						dsdata_release: 63
+ 1119 						free: <>
+ 1120 						realloc: <>
+ 1121 					dsattribute_release: 61
+ 1122 				nifty_rename: dsstatus (), <./tools/nicl/nicl.c 544>
+ 1123 					u_int32_t: 25
+ 1124 					dsengine_fetch: 741
+ 1125 					fprintf: <>
+ 1126 					dsstatus_message: 717
+ 1127 					nifty_getkey: 978
+ 1128 					dsrecord_attribute: 222
+ 1129 					dsdata_release: 63
+ 1130 					dsrecord_release: 58
+ 1131 					dsattribute_setkey: void (), <./common/dsattribute.c 374>
+ 1132 						dsdata_release: 63
+ 1133 						dsdata_retain: 229
+ 1134 					dsattribute_release: 61
+ 1135 					dsengine_save: 1105
+ 1136 				nifty_read: dsstatus (), <./tools/nicl/nicl.c 600>
+ 1137 					u_int32_t: 25
+ 1138 					dsengine_fetch: 741
+ 1139 					fprintf: <>
+ 1140 					dsstatus_message: 717
+ 1141 					nifty_print_dsrecord: void (), <./tools/nicl/nicl.c 202>
+ 1142 						fprintf: <>
+ 1143 						nifty_print_attribute: void (), <./tools/nicl/nicl.c 158>
+ 1144 							fprintf: <>
+ 1145 							dsdata_print: void (), <./common/dsdata.c 159>
+ 1146 								u_int32_t: 25
+ 1147 								fprintf: <>
+ 1148 								dsdata_to_int8: int8_t (), <./common/dsdata.c 750>
+ 1149 								dsdata_to_int16: int16_t (), <./common/dsdata.c 772>
+ 1150 									memmove: <>
+ 1151 									ntohs: <>
+ 1152 								dsdata_to_int32: 230
+ 1153 								dsdata_to_int64: int64_t (), <./common/dsdata.c 816>
+ 1154 									memmove: <>
+ 1155 									ntohq: u_int64_t (), <./common/dsdata.c 137>
+ 1156 										u_int32_t: 25
+ 1157 										ntohl: <>
+ 1158 								dsdata_to_uint8: u_int8_t (), <./common/dsdata.c 761>
+ 1159 								dsdata_to_uint16: u_int16_t (), <./common/dsdata.c 783>
+ 1160 									memmove: <>
+ 1161 									ntohs: <>
+ 1162 								dsdata_to_uint32: u_int32_t (), <./common/dsdata.c 805>
+ 1163 									u_int32_t: 25
+ 1164 									memmove: <>
+ 1165 									ntohl: <>
+ 1166 								dsdata_to_uint64: u_int64_t (), <./common/dsdata.c 827>
+ 1167 									memmove: <>
+ 1168 									ntohq: 1155
+ 1169 								memmove: <>
+ 1170 								dsdata_to_cstring: 728
+ 1171 							dsengine_map_name: dsdata * (), <./common/dsengine.c 1360>
+ 1172 								dsengine_convert_name: dsdata * (), <./common/dsengine.c 1429>
+ 1173 									u_int32_t: 25
+ 1174 									dsdata_to_cstring: 728
+ 1175 									dsdata_to_dsid: u_int32_t (), <./common/dsdata.c 1052>
+ 1176 										u_int32_t: 25
+ 1177 										memmove: <>
+ 1178 										ntohl: <>
+ 1179 									dsdata_retain: 229
+ 1180 									dsx500_netinfo_string_path_to_dn: char * (), <./common/dsx500.c 108>
+ 1181 										explode_name: 799
+ 1182 										strlen: <>
+ 1183 										malloc: <>
+ 1184 										strcpy: <>
+ 1185 									dsengine_netinfo_string_pathmatch: 963
+ 1186 									dsid_to_dsdata: dsdata * (), <./common/dsdata.c 1036>
+ 1187 										u_int32_t: 25
+ 1188 										malloc: <>
+ 1189 										htonl: <>
+ 1190 										memmove: <>
+ 1191 									read_user_attribute: dsdata * (), <./common/dsengine.c 1397>
+ 1192 										u_int32_t: 25
+ 1193 										dsengine_netinfo_string_pathmatch: 963
+ 1194 										dsengine_record_super: 1085
+ 1195 										dsengine_fetch: 741
+ 1196 										cstring_to_dsdata: 163
+ 1197 										dsrecord_attribute: 222
+ 1198 										dsattribute_value: 228
+ 1199 										dsattribute_release: 61
+ 1200 										dsdata_release: 63
+ 1201 										dsrecord_release: 58
+ 1202 									dsx500_dn_to_netinfo_string_path: char * (), <./common/dsx500.c 70>
+ 1203 										explode_name: 799
+ 1204 										strlen: <>
+ 1205 										malloc: <>
+ 1206 										strcpy: <>
+ 1207 									dsengine_x500_string_pathmatch: 951
+ 1208 									find_user: dsstatus (), <./common/dsengine.c 1369>
+ 1209 										u_int32_t: 25
+ 1210 										dsengine_netinfo_string_pathmatch: 963
+ 1211 										dsrecord_new: 140
+ 1212 										cstring_to_dsdata: 163
+ 1213 										dsattribute_new: 250
+ 1214 										dsattribute_insert: 258
+ 1215 										dsrecord_append_attribute: 829
+ 1216 										dsengine_find_pattern: dsstatus (), <./common/dsengine.c 619>
+ 1217 										dsattribute_release: 61
+ 1218 										dsdata_release: 63
+ 1219 										dsrecord_release: 58
+ 1220 									dsengine_netinfo_string_path: 737
+ 1221 									dsengine_x500_string_path: 761
+ 1222 									cstring_to_dsdata: 163
+ 1223 							sprintf: <>
+ 1224 							dsdata_to_dsid: 1175
+ 1225 							cstring_to_dsdata: 163
+ 1226 							dsdata_release: 63
+ 1227 						dsindex_print: void (), <./common/dsindex.c 603>
+ 1228 							u_int32_t: 25
+ 1229 							fprintf: <>
+ 1230 							dsdata_print: 1145
+ 1231 					dsrecord_release: 58
+ 1232 					nifty_getkey: 978
+ 1233 					dsrecord_attribute: 222
+ 1234 					dsdata_release: 63
+ 1235 					nifty_print_attribute: 1143
+ 1236 					dsattribute_release: 61
+ 1237 				nifty_list: dsstatus (), <./tools/nicl/nicl.c 711>
+ 1238 					u_int32_t: 25
+ 1239 					cstring_to_dsdata: 163
+ 1240 					dsengine_list: dsstatus (), <./common/dsengine.c 870>
+ 1241 						u_int32_t: 25
+ 1242 						dsrecord_new: 140
+ 1243 						dsattribute_new: 250
+ 1244 						dsrecord_append_attribute: 829
+ 1245 						dsattribute_release: 61
+ 1246 						dsengine_search_pattern: dsstatus (), <./common/dsengine.c 609>
+ 1247 						dsrecord_release: 58
+ 1248 						cstring_to_dsdata: 163
+ 1249 						dsattribute_append: 825
+ 1250 						dsdata_release: 63
+ 1251 						dsengine_fetch: 741
+ 1252 						dsrecord_attribute_index: u_int32_t (), <./common/dsrecord.c 784>
+ 1253 							u_int32_t: 25
+ 1254 							dsdata_equal: 224
+ 1255 						int32_to_dsdata: 254
+ 1256 						malloc: <>
+ 1257 						dsdata_retain: 229
+ 1258 						free: <>
+ 1259 					dsdata_release: 63
+ 1260 					sprintf: <>
+ 1261 					dsdata_to_int32: 230
+ 1262 					printf: <>
+ 1263 					dsdata_to_cstring: 728
+ 1264 					dsrecord_release: 58
+ 1265 				nifty_append: dsstatus (), <./tools/nicl/nicl.c 441>
+ 1266 					nifty_attribute: 973
+ 1267 				nifty_merge: dsstatus (), <./tools/nicl/nicl.c 447>
+ 1268 					nifty_attribute: 973
+ 1269 				nifty_insert: dsstatus (), <./tools/nicl/nicl.c 742>
+ 1270 					u_int32_t: 25
+ 1271 					dsengine_fetch: 741
+ 1272 					fprintf: <>
+ 1273 					dsstatus_message: 717
+ 1274 					nifty_getkey: 978
+ 1275 					dsrecord_attribute: 222
+ 1276 					dsdata_to_cstring: 728
+ 1277 					dsdata_release: 63
+ 1278 					nifty_getval: dsdata * (), <./tools/nicl/nicl.c 350>
+ 1279 						fprintf: <>
+ 1280 						cstring_to_dsdata: 163
+ 1281 					dsattribute_release: 61
+ 1282 					atoi: <>
+ 1283 					dsattribute_insert: 258
+ 1284 					dsengine_save_attribute: 997
+ 1285 					dsrecord_release: 58
+ 1286 				nifty_move: dsstatus (), <./tools/nicl/nicl.c 828>
+ 1287 					u_int32_t: 25
+ 1288 					nifty_path: 950
+ 1289 					fprintf: <>
+ 1290 					dsstatus_message: 717
+ 1291 					dsengine_copy: dsstatus (), <./common/dsengine.c 496>
+ 1292 						u_int32_t: 25
+ 1293 						dsstore_fetch: 149
+ 1294 						dsrecord_copy: dsrecord * (), <./common/dsrecord.c 496>
+ 1295 							dsrecord_to_dsdata: 398
+ 1296 							dsdata_to_dsrecord: 200
+ 1297 							dsdata_release: 63
+ 1298 						dsrecord_release: 58
+ 1299 						dsengine_create: 941
+ 1300 						dsengine_copy: 1291
+ 1301 					dsengine_remove: 1088
+ 1302 					dsengine_move: dsstatus (), <./common/dsengine.c 424>
+ 1303 						u_int32_t: 25
+ 1304 						dsstore_fetch: 149
+ 1305 						dsrecord_release: 58
+ 1306 						dsstore_save: 265
+ 1307 						dsrecord_remove_sub: 679
+ 1308 						dsindex_delete_dsid: 1021
+ 1309 						dsrecord_append_sub: 660
+ 1310 						dsindex_insert_record: 946
+ 1311 				nifty_copy: dsstatus (), <./tools/nicl/nicl.c 873>
+ 1312 					u_int32_t: 25
+ 1313 					nifty_path: 950
+ 1314 					fprintf: <>
+ 1315 					dsstatus_message: 717
+ 1316 					dsengine_copy: 1291
+ 1317 				nifty_search: dsstatus (), <./tools/nicl/nicl.c 893>
+ 1318 					u_int32_t: 25
+ 1319 					dsrecord_new: 140
+ 1320 					atoi: <>
+ 1321 					fprintf: <>
+ 1322 					nifty_getkey: 978
+ 1323 					dsrecord_release: 58
+ 1324 					nifty_getval: 1278
+ 1325 					dsattribute_new: 250
+ 1326 					dsattribute_append: 825
+ 1327 					dsdata_release: 63
+ 1328 					dsrecord_merge_attribute: void (), <./common/dsrecord.c 573>
+ 1329 						u_int32_t: 25
+ 1330 						dsattribute_equal: int (), <./common/dsattribute.c 337>
+ 1331 							u_int32_t: 25
+ 1332 							dsdata_equal: 224
+ 1333 						dsdata_equal: 224
+ 1334 						dsattribute_merge: 991
+ 1335 						dsrecord_append_attribute: 829
+ 1336 					dsattribute_release: 61
+ 1337 					dsengine_search_pattern: 1246
+ 1338 					printf: <>
+ 1339 					dsengine_fetch: 741
+ 1340 					dsstatus_message: 717
+ 1341 					nifty_print_dsrecord: 1141
+ 1342 					free: <>
+ 1343 				nifty_printpath: dsstatus (), <./tools/nicl/nicl.c 682>
+ 1344 					u_int32_t: 25
+ 1345 					dsengine_fetch: 741
+ 1346 					fprintf: <>
+ 1347 					dsstatus_message: 717
+ 1348 					nifty_print_dsrecord: 1141
+ 1349 					dsrecord_release: 58
+ 1350 					printf: <>
+ 1351 					nifty_printpath: 1343
+ 1352 				nifty_attach: dsstatus (), <./tools/nicl/nicl.c 968>
+ 1353 					u_int32_t: 25
+ 1354 					fprintf: <>
+ 1355 					atoi: <>
+ 1356 					dsengine_fetch: 741
+ 1357 					dsstatus_message: 717
+ 1358 					dsengine_attach: dsstatus (), <./common/dsengine.c 146>
+ 1359 						dsrecord_append_sub: 660
+ 1360 						dsindex_free: 66
+ 1361 						dsstore_save: 265
+ 1362 					dsrecord_release: 58
+ 1363 				nifty_detach: dsstatus (), <./tools/nicl/nicl.c 1000>
+ 1364 					u_int32_t: 25
+ 1365 					fprintf: <>
+ 1366 					atoi: <>
+ 1367 					dsengine_fetch: 741
+ 1368 					dsstatus_message: 717
+ 1369 					dsengine_detach: dsstatus (), <./common/dsengine.c 120>
+ 1370 						dsrecord_remove_sub: 679
+ 1371 						dsindex_free: 66
+ 1372 						dsstore_save: 265
+ 1373 					dsrecord_release: 58
+ 1374 				nifty_parent: dsstatus (), <./tools/nicl/nicl.c 1032>
+ 1375 					u_int32_t: 25
+ 1376 					fprintf: <>
+ 1377 					atoi: <>
+ 1378 					dsengine_fetch: 741
+ 1379 					dsstatus_message: 717
+ 1380 					dsengine_set_parent: dsstatus (), <./common/dsengine.c 169>
+ 1381 						dsstore_fetch: 149
+ 1382 						dsindex_free: 66
+ 1383 						dsrecord_release: 58
+ 1384 						dsstore_save: 265
+ 1385 					dsrecord_release: 58
+ 1386 				nifty_cd: dsstatus (), <./tools/nicl/nicl.c 796>
+ 1387 					u_int32_t: 25
+ 1388 					dsengine_record_serial: dsstatus (), <./common/dsengine.c 1235>
+ 1389 						dsstore_record_serial: u_int32_t (), <./common/dsstore.c 1911>
+ 1390 							u_int32_t: 25
+ 1391 							nistore_record_serial: u_int32_t (), <./common/nistore.c 507>
+ 1392 								ni_self: 128
+ 1393 							dsstore_vital_statistics: 1004
+ 1394 					fprintf: <>
+ 1395 					dsstatus_message: 717
+ 1396 				nifty_pwd: dsstatus (), <./tools/nicl/nicl.c 812>
+ 1397 					dsengine_x500_string_path: 761
+ 1398 					dsengine_netinfo_string_path: 737
+ 1399 					printf: <>
+ 1400 					free: <>
+ 1401 				nifty_version_history: dsstatus (), <./tools/nicl/nicl.c 1064>
+ 1402 					u_int32_t: 25
+ 1403 					dsengine_version: dsstatus (), <./common/dsengine.c 1261>
+ 1404 						dsstore_version: 126
+ 1405 					printf: <>
+ 1406 					dsstatus_message: 717
+ 1407 					dsengine_fetch: 741
+ 1408 					fprintf: <>
+ 1409 					dsrecord_release: 58
+ 1410 					streq: <>
+ 1411 					atoi: <>
+ 1412 					dsengine_version_record: dsstatus (), <./common/dsengine.c 1248>
+ 1413 						dsstore_version_record: 136
+ 1414 					dsengine_record_version: dsstatus (), <./common/dsengine.c 1222>
+ 1415 						dsstore_record_version: 142
+ 1416 					sprintf: <>
+ 1417 				nifty_statistics: dsstatus (), <./tools/nicl/nicl.c 654>
+ 1418 					dsstore_statistics: dsrecord * (), <./common/dsstore.c 1985>
+ 1419 						nistore_statistics: dsrecord * (), <./common/nistore.c 586>
+ 1420 							NI_INIT: <>
+ 1421 							ni_statistics: <>
+ 1422 							dsrecord_new: 140
+ 1423 							dsrecord_insert_ni_proplist: 160
+ 1424 							ni_proplist_free: <>
+ 1425 						dsrecord_new: 140
+ 1426 						cstring_to_dsdata: 163
+ 1427 						dsattribute_new: 250
+ 1428 						dsdata_release: 63
+ 1429 						sprintf: <>
+ 1430 						dsattribute_append: 825
+ 1431 						dsrecord_append_attribute: 829
+ 1432 						dsattribute_release: 61
+ 1433 						dsstore_max_id: u_int32_t (), <./common/dsstore.c 1285>
+ 1434 							u_int32_t: 25
+ 1435 					dsdata_print: 1145
+ 1436 					printf: <>
+ 1437 					dsrecord_release: 58
+ 1438 				nifty_domainname: dsstatus (), <./tools/nicl/nicl.c 1208>
+ 1439 					dsx500dit_new: dsx500dit * (), <./common/dsx500dit.c 617>
+ 1440 						malloc: <>
+ 1441 						index: <>
+ 1442 						dsengine_fetch: 741
+ 1443 						dsx500dit_release: void (), <./common/dsx500dit.c 589>
+ 1444 							u_int32_t: 25
+ 1445 							dsdata_release: 63
+ 1446 							dsattribute_release: 61
+ 1447 							free: <>
+ 1448 						cstring_to_dsdata: 163
+ 1449 						dsrecord_attribute: 222
+ 1450 						dsdata_release: 63
+ 1451 						dsattribute_value: 228
+ 1452 						dsattribute_release: 61
+ 1453 						dsdata_to_cstring: 728
+ 1454 						ni_parse_server_tag: enum ni_parse_status (), <./common/nilib2.c 37>
+ 1455 						ni_connect: <>
+ 1456 						dsrecord_release: 58
+ 1457 						ni_new: <>
+ 1458 						mastersuffix: char * (), <./common/dsx500dit.c 203>
+ 1459 							ni_root: 123
+ 1460 							ni_lookupprop: ni_status (), <./servers/netinfod/ni_lookupprop.c 42>
+ 1461 								NI_INIT: <>
+ 1462 								ni_listprops: ni_status (), <./servers/netinfod/ni.c 1154>
+ 1463 									obj_lookup: 129
+ 1464 									ni_namelist_insert: <>
+ 1465 									obj_free: 132
+ 1466 								ni_namelist_match: <>
+ 1467 								ni_namelist_free: <>
+ 1468 								ni_readprop: ni_status (), <./servers/netinfod/ni.c 957>
+ 1469 									obj_lookup: 129
+ 1470 									obj_free: 132
+ 1471 									ni_namelist_dup: <>
+ 1472 							rindex: <>
+ 1473 							ni_name_dup: <>
+ 1474 							ni_namelist_free: <>
+ 1475 							ni_lookup: 859
+ 1476 							ni_name_free: <>
+ 1477 							ni_idlist_free: <>
+ 1478 							ni_name_match: <>
+ 1479 							copyString: 763
+ 1480 						copyString: 763
+ 1481 						dsx500dit_pwdomain: ni_status (), <./common/dsx500dit.c 297>
+ 1482 							ni_new: <>
+ 1483 							mastersuffix: 1458
+ 1484 							copyString: 763
+ 1485 							dsx500dit_pwdomain: 1481
+ 1486 							ni_free: 17
+ 1487 							dsx500dit_domainof: char * (), <./common/dsx500dit.c 157>
+ 1488 								ni_addrtag: <>
+ 1489 								ni_name_dup: <>
+ 1490 								finddomain: char * (), <./common/dsx500dit.c 93>
+ 1491 									ni_root: 123
+ 1492 									ni_lookup: 859
+ 1493 									ni_idlist_free: <>
+ 1494 									inet_ntoa: <>
+ 1495 									ni_lookupprop: 1460
+ 1496 									rindex: <>
+ 1497 									ni_name_match: <>
+ 1498 									copyString: 763
+ 1499 									escape_domain: ni_name (), <./common/dsx500dit.c 66>
+ 1500 										malloc: <>
+ 1501 										strlen: <>
+ 1502 										strcpy: <>
+ 1503 									ni_namelist_free: <>
+ 1504 								ni_name_free: <>
+ 1505 								sys_is_my_address: int (), <./common/network.c 124>
+ 1506 									sys_interfaces: interface_list_t * (), <./common/network.c 47>
+ 1507 										socket_lock: void (), <./common/socket_lock.c 272>
+ 1508 											syslock_new: 78
+ 1509 											syslock_lock: 87
+ 1510 										socket: <>
+ 1511 										socket_unlock: void (), <./common/socket_lock.c 279>
+ 1512 											syslock_unlock: 94
+ 1513 										ioctl: <>
+ 1514 										socket_close: int (), <./common/socket_lock.c 143>
+ 1515 											socket_lock: 1507
+ 1516 											close: <>
+ 1517 											socket_unlock: 1511
+ 1518 										malloc: <>
+ 1519 										realloc: <>
+ 1520 										memset: <>
+ 1521 										memmove: <>
+ 1522 								sys_interfaces: 1506
+ 1523 								htonl: <>
+ 1524 								malloc: <>
+ 1525 								strlen: <>
+ 1526 								sprintf: <>
+ 1527 								inet_ntoa: <>
+ 1528 							dsx500_make_dn: char * (), <./common/dsx500.c 415>
+ 1529 								copyString: 763
+ 1530 								malloc: <>
+ 1531 								strlen: <>
+ 1532 								strcpy: <>
+ 1533 								strcat: <>
+ 1534 							ni_name_free: <>
+ 1535 						dsx500dit_domainof: 1487
+ 1536 						dsx500_make_dn: 1528
+ 1537 						ni_name_free: <>
+ 1538 						ni_free: 17
+ 1539 						dsx500dit_getparents: ni_status (), <./common/dsx500dit.c 383>
+ 1540 							ni_root: 123
+ 1541 							ni_lookup: 859
+ 1542 							ni_idlist_free: <>
+ 1543 							ni_list: <>
+ 1544 							servesdotdot: dsdata * (), <./common/dsx500dit.c 342>
+ 1545 								index: <>
+ 1546 								ni_name_match_seg: <>
+ 1547 								NI_INIT: <>
+ 1548 								ni_lookupprop: 1460
+ 1549 								ni_namelist_free: <>
+ 1550 								malloc: <>
+ 1551 								strlen: <>
+ 1552 								sprintf: <>
+ 1553 								cstring_to_dsdata: 163
+ 1554 								free: <>
+ 1555 							cstring_to_dsdata: 163
+ 1556 							dsattribute_new: 250
+ 1557 							dsdata_release: 63
+ 1558 							dsattribute_append: 825
+ 1559 							ni_entrylist_free: <>
+ 1560 						dsx500dit_getchildren: ni_status (), <./common/dsx500dit.c 523>
+ 1561 							ni_root: 123
+ 1562 							ni_lookup: 859
+ 1563 							ni_idlist_free: <>
+ 1564 							ni_list: <>
+ 1565 							dsrecord_new: 140
+ 1566 							u_int32_t: 25
+ 1567 							serveschild: ni_status (), <./common/dsx500dit.c 438>
+ 1568 								NI_INIT: <>
+ 1569 								ni_lookupprop: 1460
+ 1570 								ni_namelist_free: <>
+ 1571 								index: <>
+ 1572 								ni_name_match_seg: <>
+ 1573 								copyString: 763
+ 1574 								escape_domain: 1499
+ 1575 								dsx500_make_dn: 1528
+ 1576 								cstring_to_dsdata: 163
+ 1577 								free: <>
+ 1578 								malloc: <>
+ 1579 								strlen: <>
+ 1580 								sprintf: <>
+ 1581 								realloc: <>
+ 1582 								dsattribute_new: 250
+ 1583 								dsattribute_append: 825
+ 1584 								dsdata_release: 63
+ 1585 							dsrecord_merge_attribute: 1328
+ 1586 							dsattribute_release: 61
+ 1587 							free: <>
+ 1588 							ni_entrylist_free: <>
+ 1589 							dsrecord_release: 58
+ 1590 					dsdata_print: 1145
+ 1591 					printf: <>
+ 1592 					dsx500dit_release: 1443
+ 1593 					fprintf: <>
+ 1594 					ni_pwdomain: <>
+ 1595 					index: <>
+ 1596 					free: <>
+ 1597 				nifty_rparent: dsstatus (), <./tools/nicl/nicl.c 1242>
+ 1598 					fprintf: <>
+ 1599 					ni2_rparent: ni_status (), <./common/rparent.c 38>
+ 1600 						ni_addrtag: <>
+ 1601 						clnttcp_create: <>
+ 1602 						nibind_getregister_1: <>
+ 1603 						clnt_destroy: <>
+ 1604 						htons: <>
+ 1605 						bcopy: <>
+ 1606 						htonl: <>
+ 1607 						malloc: <>
+ 1608 						strlen: <>
+ 1609 						strcpy: <>
+ 1610 					index: <>
+ 1611 					printf: <>
+ 1612 					inet_ntoa: <>
+ 1613 					free: <>
+ 1614 				nifty_resync: dsstatus (), <./tools/nicl/nicl.c 1264>
+ 1615 					fprintf: <>
+ 1616 					ni_resync: <>
+ 1617 					index: <>
+ 1618 				nifty_authenticate: dsstatus (), <./tools/nicl/nicl.c 1281>
+ 1619 					cstring_to_dsdata: 163
+ 1620 					nifty_getval: 1278
+ 1621 					getpass: <>
+ 1622 					dsdata_release: 63
+ 1623 					dsengine_authenticate: 725
+ 1624 				nifty_printrefs: dsstatus (), <./tools/nicl/nicl.c 1323>
+ 1625 					dsx500dit_new: 1439
+ 1626 					printf: <>
+ 1627 					dsdata_print: 1145
+ 1628 					dsx500dit_release: 1443
+ 1629 				nifty_setrdn: dsstatus (), <./tools/nicl/nicl.c 1373>
+ 1630 					dsengine_fetch: 741
+ 1631 					fprintf: <>
+ 1632 					dsstatus_message: 717
+ 1633 					cstring_to_dsdata: 163
+ 1634 					dsrecord_remove_key: 744
+ 1635 					streq: <>
+ 1636 					dsattribute_new: 250
+ 1637 					dsrecord_append_attribute: 829
+ 1638 					dsattribute_insert: 258
+ 1639 					dsattribute_release: 61
+ 1640 					dsdata_release: 63
+ 1641 					dsengine_save: 1105
+ 1642 					dsrecord_release: 58
+ 1643 		printf: <>
+ 1644 		nifty_cmd: 789
+ 1645 		ni_pathsearch: <>
+ 1646 		errexit: void (), <./tools/nigrep/nigrep.c 54>
+ 1647 			fprintf: <>
+ 1648 			ni_error: <>
+ 1649 		ni_report: int (), <./tools/nireport/nireport.c 135>
+ 1650 			NI_INIT: <>
+ 1651 			ni_children: 172
+ 1652 			errexit: 1646
+ 1653 			ni_report_dir: int (), <./tools/nireport/nireport.c 72>
+ 1654 				NI_INIT: <>
+ 1655 				ni_listprops: 1462
+ 1656 				errexit: 1646
+ 1657 				strcmp: <>
+ 1658 				ni_lookupprop: 1460
+ 1659 				printf: <>
+ 1660 				ni_namelist_free: <>
+ 1661 			ni_idlist_free: <>
+ 1662 		ni_free: 17
+ 1663 		getaddr: struct in_addr (), <./tools/nidomain/nidomain.c 20>
+ 1664 		htonl: <>
+ 1665 		nibind_new: void * (), <./tools/nidomain/nibind_glue.c 14>
+ 1666 			bzero: <>
+ 1667 			clnttcp_create: <>
+ 1668 		nibind_createmaster: ni_status (), <./tools/nidomain/nibind_glue.c 108>
+ 1669 			nibind_createmaster_1: <>
+ 1670 		index: <>
+ 1671 		nibind_createclone: ni_status (), <./tools/nidomain/nibind_glue.c 126>
+ 1672 			ntohl: <>
+ 1673 			nibind_createclone_1: <>
+ 1674 		nibind_destroydomain: ni_status (), <./tools/nidomain/nibind_glue.c 158>
+ 1675 			nibind_destroydomain_1: <>
+ 1676 		nibind_listreg: ni_status (), <./tools/nidomain/nibind_glue.c 33>
+ 1677 			nibind_listreg_1: <>
+ 1678 		nibind_getregister: ni_status (), <./tools/nidomain/nibind_glue.c 56>
+ 1679 			nibind_getregister_1: <>
+ 1680 		nibind_unregister: ni_status (), <./tools/nidomain/nibind_glue.c 93>
+ 1681 			nibind_unregister_1: <>
+ 1682 		malloc: <>
+ 1683 		nibind_register: ni_status (), <./tools/nidomain/nibind_glue.c 78>
+ 1684 			nibind_register_1: <>
+ 1685 		abort: <>
+ 1686 		ni_error: <>
+ 1687 		do_create: void (), <./tools/niutil/niutil.c 161>
+ 1688 			do_open: 7
+ 1689 			ni2_create: ni_status (), <./common/nilib2.c 193>
+ 1690 				ni_needwrite: <>
+ 1691 				ni2_pathsearch: ni_status (), <./common/nilib2.c 729>
+ 1692 					strlen: <>
+ 1693 					isdigit: <>
+ 1694 					atoi: <>
+ 1695 					ni_self: 128
+ 1696 					ni_pathsearch: <>
+ 1697 				ni_root: 123
+ 1698 				ni2_createpath: ni_status (), <./common/nilib2.c 752>
+ 1699 					malloc: <>
+ 1700 					strncpy: <>
+ 1701 					ni_pathsearch: <>
+ 1702 					ni2_createchild: ni_status (), <./common/nilib2.c 798>
+ 1703 						malloc: <>
+ 1704 						strcpy: <>
+ 1705 						strlen: <>
+ 1706 						NI_INIT: <>
+ 1707 						nipl_createprop: void (), <./common/nilib2.c 861>
+ 1708 							NI_INIT: <>
+ 1709 							ni_name_dup: <>
+ 1710 							ni_proplist_insert: <>
+ 1711 							ni_prop_free: <>
+ 1712 						nipl_appendprop: void (), <./common/nilib2.c 876>
+ 1713 							ni_proplist_match: <>
+ 1714 							nipl_createprop: 1707
+ 1715 							ni_namelist_insert: <>
+ 1716 						ni_create: 277
+ 1717 						ni_proplist_free: <>
+ 1718 						free: <>
+ 1719 					free: <>
+ 1720 			fprintf: <>
+ 1721 			ni_error: <>
+ 1722 			ni_free: 17
+ 1723 		do_destroy: void (), <./tools/niutil/niutil.c 186>
+ 1724 			do_open: 7
+ 1725 			ni2_destroy: ni_status (), <./common/nilib2.c 493>
+ 1726 				ni_needwrite: <>
+ 1727 				ni2_pathsearch: 1691
+ 1728 				ni_parent: 168
+ 1729 				ni_self: 128
+ 1730 				ni2_destroydir: ni_status (), <./common/nilib2.c 521>
+ 1731 					ni_needwrite: <>
+ 1732 					NI_INIT: <>
+ 1733 					ni_children: 172
+ 1734 					ni_self: 128
+ 1735 					ni2_destroydir: 1730
+ 1736 					ni_idlist_free: <>
+ 1737 					ni_destroy: 314
+ 1738 			fprintf: <>
+ 1739 			ni_error: <>
+ 1740 			ni_free: 17
+ 1741 		do_createprop: void (), <./tools/niutil/niutil.c 211>
+ 1742 			NI_INIT: <>
+ 1743 			ni_namelist_insert: <>
+ 1744 			do_open: 7
+ 1745 			ni2_createprop: ni_status (), <./common/nilib2.c 218>
+ 1746 				ni_needwrite: <>
+ 1747 				ni2_pathsearch: 1691
+ 1748 				ni2_createdirprop: ni_status (), <./common/nilib2.c 236>
+ 1749 					ni_needwrite: <>
+ 1750 					NI_INIT: <>
+ 1751 					ni_listprops: 1462
+ 1752 					ni_namelist_match: <>
+ 1753 					ni_namelist_free: <>
+ 1754 					ni_name_dup: <>
+ 1755 					ni_namelist_dup: <>
+ 1756 					ni_createprop: 1041
+ 1757 					ni_prop_free: <>
+ 1758 					ni_writeprop: 1053
+ 1759 			ni_namelist_free: <>
+ 1760 			fprintf: <>
+ 1761 			ni_error: <>
+ 1762 			ni_free: 17
+ 1763 		do_appendprop: void (), <./tools/niutil/niutil.c 244>
+ 1764 			NI_INIT: <>
+ 1765 			ni_namelist_insert: <>
+ 1766 			do_open: 7
+ 1767 			ni2_appendprop: ni_status (), <./common/nilib2.c 274>
+ 1768 				ni_needwrite: <>
+ 1769 				ni2_pathsearch: 1691
+ 1770 				ni2_appenddirprop: ni_status (), <./common/nilib2.c 292>
+ 1771 					ni_needwrite: <>
+ 1772 					NI_INIT: <>
+ 1773 					ni_listprops: 1462
+ 1774 					ni_namelist_match: <>
+ 1775 					ni_namelist_free: <>
+ 1776 					ni_name_dup: <>
+ 1777 					ni_namelist_dup: <>
+ 1778 					ni_createprop: 1041
+ 1779 					ni_prop_free: <>
+ 1780 					ni_readprop: 1468
+ 1781 					ni_namelist_insert: <>
+ 1782 					ni_writeprop: 1053
+ 1783 			ni_namelist_free: <>
+ 1784 			fprintf: <>
+ 1785 			ni_error: <>
+ 1786 			ni_free: 17
+ 1787 		do_mergeprop: void (), <./tools/niutil/niutil.c 278>
+ 1788 			NI_INIT: <>
+ 1789 			ni_namelist_insert: <>
+ 1790 			do_open: 7
+ 1791 			ni2_mergeprop: ni_status (), <./common/nilib2.c 418>
+ 1792 				ni_needwrite: <>
+ 1793 				ni2_pathsearch: 1691
+ 1794 				ni2_mergedirprop: ni_status (), <./common/nilib2.c 436>
+ 1795 					ni_needwrite: <>
+ 1796 					NI_INIT: <>
+ 1797 					ni_listprops: 1462
+ 1798 					ni_namelist_match: <>
+ 1799 					ni_namelist_free: <>
+ 1800 					ni_name_dup: <>
+ 1801 					ni_namelist_dup: <>
+ 1802 					ni_createprop: 1041
+ 1803 					ni_prop_free: <>
+ 1804 					ni_readprop: 1468
+ 1805 					ni_namelist_insert: <>
+ 1806 					ni_writeprop: 1053
+ 1807 			ni_namelist_free: <>
+ 1808 			fprintf: <>
+ 1809 			ni_error: <>
+ 1810 			ni_free: 17
+ 1811 		do_insertval: void (), <./tools/niutil/niutil.c 312>
+ 1812 			atoi: <>
+ 1813 			strcmp: <>
+ 1814 			fprintf: <>
+ 1815 			exit: <>
+ 1816 			do_open: 7
+ 1817 			ni2_insertval: ni_status (), <./common/nilib2.c 347>
+ 1818 				ni_needwrite: <>
+ 1819 				ni2_pathsearch: 1691
+ 1820 				ni2_insertdirval: ni_status (), <./common/nilib2.c 365>
+ 1821 					ni_needwrite: <>
+ 1822 					NI_INIT: <>
+ 1823 					ni_listprops: 1462
+ 1824 					ni_namelist_match: <>
+ 1825 					ni_namelist_free: <>
+ 1826 					ni_namelist_insert: <>
+ 1827 					ni_name_dup: <>
+ 1828 					ni_namelist_dup: <>
+ 1829 					ni_createprop: 1041
+ 1830 					ni_prop_free: <>
+ 1831 					ni_readprop: 1468
+ 1832 					ni_writeprop: 1053
+ 1833 			ni_error: <>
+ 1834 			ni_free: 17
+ 1835 		do_destroyprop: void (), <./tools/niutil/niutil.c 346>
+ 1836 			NI_INIT: <>
+ 1837 			ni_namelist_insert: <>
+ 1838 			do_open: 7
+ 1839 			ni2_destroyprop: ni_status (), <./common/nilib2.c 555>
+ 1840 				ni_needwrite: <>
+ 1841 				ni2_pathsearch: 1691
+ 1842 				ni2_destroydirprop: ni_status (), <./common/nilib2.c 573>
+ 1843 					ni_needwrite: <>
+ 1844 					NI_INIT: <>
+ 1845 					ni_listprops: 1462
+ 1846 					ni_namelist_match: <>
+ 1847 					ni_destroyprop: ni_status (), <./servers/netinfod/ni.c 1063>
+ 1848 						obj_lookup: 129
+ 1849 						obj_free: 132
+ 1850 						ni_validate_dir: 279
+ 1851 						ni_prop_dup: <>
+ 1852 						MM_ZERO: <>
+ 1853 						ni_proplist_delete: <>
+ 1854 						file_write: 244
+ 1855 						FH: <>
+ 1856 						ni_prop_free: <>
+ 1857 						im_destroy_list: 1070
+ 1858 						IMH: <>
+ 1859 					ni_namelist_free: <>
+ 1860 					ni_namelist_delete: <>
+ 1861 			ni_namelist_free: <>
+ 1862 			fprintf: <>
+ 1863 			ni_error: <>
+ 1864 			ni_free: 17
+ 1865 		do_destroyval: void (), <./tools/niutil/niutil.c 379>
+ 1866 			NI_INIT: <>
+ 1867 			ni_namelist_insert: <>
+ 1868 			do_open: 7
+ 1869 			ni2_destroyval: ni_status (), <./common/nilib2.c 614>
+ 1870 				ni_needwrite: <>
+ 1871 				ni2_pathsearch: 1691
+ 1872 				ni2_destroydirval: ni_status (), <./common/nilib2.c 631>
+ 1873 					ni_needwrite: <>
+ 1874 					NI_INIT: <>
+ 1875 					ni_listprops: 1462
+ 1876 					ni_namelist_match: <>
+ 1877 					ni_namelist_free: <>
+ 1878 					ni_readprop: 1468
+ 1879 					ni_namelist_delete: <>
+ 1880 					ni_writeprop: 1053
+ 1881 			ni_namelist_free: <>
+ 1882 			fprintf: <>
+ 1883 			ni_error: <>
+ 1884 			ni_free: 17
+ 1885 		do_renameprop: void (), <./tools/niutil/niutil.c 412>
+ 1886 			do_open: 7
+ 1887 			ni2_renameprop: ni_status (), <./common/nilib2.c 682>
+ 1888 				ni_needwrite: <>
+ 1889 				ni2_pathsearch: 1691
+ 1890 				ni2_renamedirprop: ni_status (), <./common/nilib2.c 699>
+ 1891 					ni_needwrite: <>
+ 1892 					NI_INIT: <>
+ 1893 					ni_listprops: 1462
+ 1894 					ni_namelist_match: <>
+ 1895 					ni_namelist_free: <>
+ 1896 					ni_renameprop: ni_status (), <./servers/netinfod/ni.c 1110>
+ 1897 						obj_lookup: 129
+ 1898 						obj_free: 132
+ 1899 						ni_validate_dir: 279
+ 1900 						ni_name_dup: <>
+ 1901 						file_write: 244
+ 1902 						FH: <>
+ 1903 						ni_name_free: <>
+ 1904 						im_destroy_list: 1070
+ 1905 						IMH: <>
+ 1906 						im_create_list: 1048
+ 1907 			fprintf: <>
+ 1908 			ni_error: <>
+ 1909 			ni_free: 17
+ 1910 		do_read: void (), <./tools/niutil/niutil.c 462>
+ 1911 			do_open: 7
+ 1912 			ni2_pathsearch: 1691
+ 1913 			fprintf: <>
+ 1914 			ni_error: <>
+ 1915 			ni_free: 17
+ 1916 			NI_INIT: <>
+ 1917 			ni_read: 153
+ 1918 			do_print_proplist: void (), <./tools/niutil/niutil.c 436>
+ 1919 				printf: <>
+ 1920 			ni_proplist_free: <>
+ 1921 		do_list: void (), <./tools/niutil/niutil.c 589>
+ 1922 			do_open: 7
+ 1923 			ni2_pathsearch: 1691
+ 1924 			fprintf: <>
+ 1925 			ni_error: <>
+ 1926 			strcpy: <>
+ 1927 			NI_INIT: <>
+ 1928 			ni_list: <>
+ 1929 			ni_free: 17
+ 1930 			printf: <>
+ 1931 			ni_entrylist_free: <>
+ 1932 		do_resync: void (), <./tools/niutil/niutil.c 650>
+ 1933 			do_open: 7
+ 1934 			ni_needwrite: <>
+ 1935 			ni_resync: <>
+ 1936 			fprintf: <>
+ 1937 			ni_error: <>
+ 1938 			ni_free: 17
+ 1939 		do_rparent: void (), <./tools/niutil/niutil.c 679>
+ 1940 			do_open: 7
+ 1941 			ni2_rparent: 1599
+ 1942 			printf: <>
+ 1943 			ni_free: 17
+ 1944 			fprintf: <>
+ 1945 			ni_error: <>
+ 1946 			gethostbyaddr: <>
+ 1947 			inet_ntoa: <>
+ 1948 			free: <>
+ 1949 		do_statistics: void (), <./tools/niutil/niutil.c 731>
+ 1950 			do_open: 7
+ 1951 			NI_INIT: <>
+ 1952 			ni_statistics: <>
+ 1953 			fprintf: <>
+ 1954 			ni_error: <>
+ 1955 			ni_free: 17
+ 1956 			do_print_proplist: 1918
+ 1957 			ni_proplist_free: <>
+ 1958 		do_readprop: void (), <./tools/niutil/niutil.c 499>
+ 1959 			do_open: 7
+ 1960 			ni2_pathsearch: 1691
+ 1961 			fprintf: <>
+ 1962 			ni_error: <>
+ 1963 			ni_free: 17
+ 1964 			NI_INIT: <>
+ 1965 			ni_lookupprop: 1460
+ 1966 			printf: <>
+ 1967 			ni_namelist_free: <>
+ 1968 		do_readval: void (), <./tools/niutil/niutil.c 542>
+ 1969 			do_open: 7
+ 1970 			ni2_pathsearch: 1691
+ 1971 			fprintf: <>
+ 1972 			ni_error: <>
+ 1973 			ni_free: 17
+ 1974 			NI_INIT: <>
+ 1975 			ni_lookupprop: 1460
+ 1976 			atoi: <>
+ 1977 			printf: <>
+ 1978 			ni_namelist_free: <>
+ 1979 		do_domainname: void (), <./tools/niutil/niutil.c 133>
+ 1980 			do_open: 7
+ 1981 			ni_pwdomain: <>
+ 1982 			fprintf: <>
+ 1983 			ni_error: <>
+ 1984 			ni_free: 17
+ 1985 			printf: <>
+ 1986 			ni_name_free: <>
+ 1987 		sscanf: <>
+ 1988 		re_compile: <>
+ 1989 		memset: <>
+ 1990 		regcomp: <>
+ 1991 		free: <>
+ 1992 		strlen: <>
+ 1993 		init_node: domain_node * (), <./tools/nifind/nifind.c 65>
+ 1994 			ni_open: <>
+ 1995 			ni_setreadtimeout: <>
+ 1996 			ni_setabort: <>
+ 1997 			ni_self: 128
+ 1998 			fprintf: <>
+ 1999 			NI_INIT: <>
+ 2000 			ni_lookupprop: 1460
+ 2001 			domain_path: char * (), <./tools/nifind/nifind.c 33>
+ 2002 				strcpy: <>
+ 2003 				strlen: <>
+ 2004 				bcopy: <>
+ 2005 			malloc: <>
+ 2006 			strcpy: <>
+ 2007 			ni_namelist_free: <>
+ 2008 			strlen: <>
+ 2009 		tree_add_children: int (), <./tools/nifind/nifind.c 279>
+ 2010 			ni_pathsearch: <>
+ 2011 			NI_INIT: <>
+ 2012 			ni_children: 172
+ 2013 			strcpy: <>
+ 2014 			domain_path: 2001
+ 2015 			ni_lookupprop: 1460
+ 2016 			ni_namelist_free: <>
+ 2017 			strncmp: <>
+ 2018 			strcmp: <>
+ 2019 			fprintf: <>
+ 2020 			init_node: 1993
+ 2021 			exit: <>
+ 2022 			malloc: <>
+ 2023 			strlen: <>
+ 2024 			node_parent: void (), <./tools/nifind/nifind.c 141>
+ 2025 				fprintf: <>
+ 2026 				domain_path: 2001
+ 2027 				exit: <>
+ 2028 				strcmp: <>
+ 2029 				sprintf: <>
+ 2030 				ni_pathsearch: <>
+ 2031 				NI_INIT: <>
+ 2032 				ni_lookupprop: 1460
+ 2033 				ni_namelist_free: <>
+ 2034 				strcpy: <>
+ 2035 				free: <>
+ 2036 				malloc: <>
+ 2037 				strlen: <>
+ 2038 				realloc: <>
+ 2039 			tree_add_children: 2009
+ 2040 		tree_dir_find: void (), <./tools/nifind/nifind.c 382>
+ 2041 			dir_find: void (), <./tools/nifind/nifind.c 242>
+ 2042 				strcmp: <>
+ 2043 				strcpy: <>
+ 2044 				domain_path: 2001
+ 2045 				sprintf: <>
+ 2046 				strlen: <>
+ 2047 				ni_pathsearch: <>
+ 2048 				printf: <>
+ 2049 				printnidir: void (), <./tools/nifind/nifind.c 213>
+ 2050 					NI_INIT: <>
+ 2051 					ni_read: 153
+ 2052 					fprintf: <>
+ 2053 					printf: <>
+ 2054 					ni_proplist_free: <>
+ 2055 				perror: <>
+ 2056 			tree_dir_find: 2040
+ 2057 		tree_free: void (), <./tools/nifind/nifind.c 391>
+ 2058 			tree_free: 2057
+ 2059 			node_free: int (), <./tools/nifind/nifind.c 202>
+ 2060 				free: <>
+ 2061 		gethostname: <>
+ 2062 		domain_not_equal: int (), <./tools/nifind/nifind.c 133>
+ 2063 			strcmp: <>
+ 2064 		node_parent: 2024
+ 2065 		node_free: 2059
+ 2066 		dir_find: 2041
+ 2067 		closeall: void (), <./servers/netinfod/ni_main.c 111>
+ 2068 			getdtablesize: <>
+ 2069 			close: <>
+ 2070 			open: <>
+ 2071 			dup: <>
+ 2072 		sprintf: <>
+ 2073 		system_log_open: void (), <./common/system_log.c 103>
+ 2074 			syslock_new: 78
+ 2075 			syslock_lock: 87
+ 2076 			free: <>
+ 2077 			malloc: <>
+ 2078 			strlen: <>
+ 2079 			strcpy: <>
+ 2080 			openlog: <>
+ 2081 			syslock_unlock: 94
+ 2082 		system_log: 77
+ 2083 		getpid: <>
+ 2084 		setrlimit: <>
+ 2085 		umask: <>
+ 2086 		srandom: <>
+ 2087 		gethostid: <>
+ 2088 		time: <>
+ 2089 		syslock_new: 78
+ 2090 		dir_mastercreate: ni_status (), <./servers/netinfod/ni_dir.c 710>
+ 2091 			dir_getnames: void (), <./servers/nibindd/nibind_prot_proc.c 688>
+ 2092 				malloc: <>
+ 2093 				strlen: <>
+ 2094 				sprintf: <>
+ 2095 			mkdir: <>
+ 2096 			ni_name_free: <>
+ 2097 			ni_init: ni_status (), <./servers/netinfod/ni.c 276>
+ 2098 				MM_ALLOC: <>
+ 2099 				file_init: ni_status (), <./servers/netinfod/ni_file.c 614>
+ 2100 					u_int32_t: 25
+ 2101 					opendir: <>
+ 2102 					readdir: <>
+ 2103 					strcmp: <>
+ 2104 					closedir: <>
+ 2105 					dsstore_new: 585
+ 2106 					sprintf: <>
+ 2107 					fopen: <>
+ 2108 					fseek: <>
+ 2109 					ftell: <>
+ 2110 					system_log: 77
+ 2111 					dsstore_save_copy: dsstatus (), <./common/dsstore.c 1512>
+ 2112 						nistore_save: 266
+ 2113 						dsstore_access_readwrite: 48
+ 2114 						dsstore_create_dsid: 292
+ 2115 						dsrecord_to_dsdata: 398
+ 2116 						dsstore_unlink: 33
+ 2117 						dsstore_remove: 308
+ 2118 						dsdata_release: 63
+ 2119 						store_save_data: 416
+ 2120 					dsrecord_release: 58
+ 2121 					fclose: <>
+ 2122 				MM_FREE: <>
+ 2123 				im_alloc: im_handle (), <./servers/netinfod/index_manager.c 50>
+ 2124 					malloc: <>
+ 2125 			dir_destroy: int (), <./servers/netinfod/ni_dir.c 85>
+ 2126 				socket_lock: 1507
+ 2127 				opendir: <>
+ 2128 				socket_unlock: 1511
+ 2129 				readdir: <>
+ 2130 				sprintf: <>
+ 2131 				rename: <>
+ 2132 				unlink: <>
+ 2133 				closedir: <>
+ 2134 				rmdir: <>
+ 2135 			ni_setuser: 118
+ 2136 			sys_hostname: char * (), <./common/system.c 52>
+ 2137 				gethostname: <>
+ 2138 			malloc: <>
+ 2139 			strlen: <>
+ 2140 			sprintf: <>
+ 2141 			ni_root: 123
+ 2142 			MM_ZERO: <>
+ 2143 			ni_name_dup: <>
+ 2144 			ni_namelist_insert: <>
+ 2145 			ni_createprop: 1041
+ 2146 			ni_prop_free: <>
+ 2147 			pl_insert: void (), <./servers/netinfod/ni_dir.c 695>
+ 2148 				MM_ZERO: <>
+ 2149 				ni_name_dup: <>
+ 2150 				ni_namelist_insert: <>
+ 2151 				ni_proplist_insert: <>
+ 2152 				ni_prop_free: <>
+ 2153 			ni_create: 277
+ 2154 			ni_proplist_free: <>
+ 2155 			sys_interfaces: 1506
+ 2156 			inet_ntoa: <>
+ 2157 			ni_proplist_insert: <>
+ 2158 			ni_free: 17
+ 2159 		dir_clonecreate: ni_status (), <./servers/netinfod/ni_dir.c 838>
+ 2160 			dir_getnames: 2091
+ 2161 			mkdir: <>
+ 2162 			ni_name_free: <>
+ 2163 			ni_init: 2097
+ 2164 			dir_destroy: 2125
+ 2165 			ni_setuser: 118
+ 2166 			malloc: <>
+ 2167 			strlen: <>
+ 2168 			sprintf: <>
+ 2169 			ni_root: 123
+ 2170 			MM_ZERO: <>
+ 2171 			ni_name_dup: <>
+ 2172 			ni_namelist_insert: <>
+ 2173 			ni_createprop: 1041
+ 2174 			ni_prop_free: <>
+ 2175 			pl_insert: 2147
+ 2176 			ni_create: 277
+ 2177 			ni_proplist_free: <>
+ 2178 			ni_free: 17
+ 2179 		system_log_close: void (), <./common/system_log.c 160>
+ 2180 			syslock_new: 78
+ 2181 			syslock_lock: 87
+ 2182 			free: <>
+ 2183 			closelog: <>
+ 2184 			syslock_unlock: 94
+ 2185 		signal: <>
+ 2186 		readall_catcher: void (), <./servers/netinfod/ni_prot_proc.c 2968>
+ 2187 		dblock_catcher: void (), <./servers/netinfod/ni_prot_proc.c 3046>
+ 2188 			system_log: 77
+ 2189 			syslock_lock: 87
+ 2190 			syslock_unlock: 94
+ 2191 		writepid: void (), <./servers/netinfod/ni_main.c 444>
+ 2192 			malloc: <>
+ 2193 			strlen: <>
+ 2194 			sprintf: <>
+ 2195 			fopen: <>
+ 2196 			system_log: 77
+ 2197 			free: <>
+ 2198 			fprintf: <>
+ 2199 			getpid: <>
+ 2200 			fclose: <>
+ 2201 		start_service: ni_status (), <./servers/netinfod/ni_main.c 342>
+ 2202 			system_log: 77
+ 2203 			dir_cleanup: void (), <./servers/netinfod/ni_dir.c 246>
+ 2204 				dir_getnames: 2091
+ 2205 				access: <>
+ 2206 				rename: <>
+ 2207 				dir_destroy: 2125
+ 2208 				ni_name_free: <>
+ 2209 			dir_getnames: 2091
+ 2210 			ni_init: 2097
+ 2211 			ni_name_free: <>
+ 2212 			ni_getchecksum: unsigned (), <./servers/netinfod/ni.c 365>
+ 2213 				file_getchecksum: unsigned (), <./servers/netinfod/ni_file.c 855>
+ 2214 					dsstore_nichecksum: u_int32_t (), <./common/dsstore.c 1943>
+ 2215 					STORE: <>
+ 2216 				FH: <>
+ 2217 			strcmp: <>
+ 2218 			getmaster: int (), <./servers/netinfod/getstuff.c 107>
+ 2219 				ni_root: 123
+ 2220 				system_log: 77
+ 2221 				abort: <>
+ 2222 				NI_INIT: <>
+ 2223 				ni_lookupprop: 1460
+ 2224 				ni_namelist_free: <>
+ 2225 				strchr: <>
+ 2226 				ni_name_dup: <>
+ 2227 			getaddress: unsigned long (), <./servers/netinfod/getstuff.c 68>
+ 2228 				ni_root: 123
+ 2229 				NI_INIT: <>
+ 2230 				ni_lookup: 859
+ 2231 				ni_idlist_free: <>
+ 2232 				ni_lookupprop: 1460
+ 2233 				inet_addr: <>
+ 2234 				ni_namelist_free: <>
+ 2235 			sys_is_my_address: 1505
+ 2236 			ni_name_match: <>
+ 2237 			get_forced_root: bool_t (), <./servers/netinfod/getstuff.c 547>
+ 2238 				get_boolForKey: bool_t (), <./servers/netinfod/getstuff.c 510>
+ 2239 					bool_t: <>
+ 2240 					ni_root: 123
+ 2241 					ni_lookupprop: 1460
+ 2242 					ni_namelist_free: <>
+ 2243 					strcmp: <>
+ 2244 			register_it: ni_status (), <./servers/netinfod/ni_main.c 301>
+ 2245 				svcudp_create: <>
+ 2246 				svc_register: <>
+ 2247 				svctcp_create: <>
+ 2248 				ni_name_match: <>
+ 2249 				waitforparent: void (), <./servers/netinfod/ni_prot_proc.c 2595>
+ 2250 					get_localbindattempts: int (), <./servers/netinfod/getstuff.c 460>
+ 2251 						get_intForKey: int (), <./servers/netinfod/getstuff.c 312>
+ 2252 							ni_root: 123
+ 2253 							ni_lookupprop: 1460
+ 2254 							ni_namelist_free: <>
+ 2255 							strlen: <>
+ 2256 							system_log: 77
+ 2257 							strcmp: <>
+ 2258 							isdigit: <>
+ 2259 							atoi: <>
+ 2260 						system_log: 77
+ 2261 					alert_enable: void (), <./servers/netinfod/alert.c 127>
+ 2262 					system_log: 77
+ 2263 					alert_aborted: int (), <./servers/netinfod/alert.c 137>
+ 2264 					sleep: <>
+ 2265 				system_log: 77
+ 2266 				ni_register: ni_status (), <./servers/netinfod/ni_main.c 389>
+ 2267 					htonl: <>
+ 2268 					bzero: <>
+ 2269 					socket_connect: int (), <./common/socket_lock.c 154>
+ 2270 						bool_t: <>
+ 2271 						sl_pmap_getport: u_short (), <./common/socket_lock.c 95>
+ 2272 							socket_lock: 1507
+ 2273 							socket: <>
+ 2274 							socket_unlock: 1511
+ 2275 							htons: <>
+ 2276 							clntudp_bufcreate: <>
+ 2277 							CLNT_CALL: <>
+ 2278 							clnt_geterr: <>
+ 2279 							clnt_destroy: <>
+ 2280 							close: <>
+ 2281 						syslog: <>
+ 2282 						clnt_spcreateerror: <>
+ 2283 						htons: <>
+ 2284 						socket_lock: 1507
+ 2285 						socket: <>
+ 2286 						socket_unlock: 1511
+ 2287 						strerror: <>
+ 2288 						bindresvport: if (), <./servers/netinfod/ni_svc_tcp.c 191>
+ 2289 						socket_close: 1514
+ 2290 						select: <>
+ 2291 						connect: <>
+ 2292 					clnttcp_create: <>
+ 2293 					socket_close: 1514
+ 2294 					clnt_call: <>
+ 2295 					xdr_ni_status: <>
+ 2296 					clnt_destroy: <>
+ 2297 				ni_error: <>
+ 2298 		setproctitle: void (), <./servers/netinfod/ni_main.c 467>
+ 2299 			va_start: <>
+ 2300 			vsprintf: <>
+ 2301 			va_end: <>
+ 2302 			strlen: <>
+ 2303 			strcpy: <>
+ 2304 		get_clone_readall: bool_t (), <./servers/netinfod/getstuff.c 558>
+ 2305 			get_boolForKey: 2238
+ 2306 		dir_clonecheck: void (), <./servers/netinfod/ni_dir.c 637>
+ 2307 			system_log: 77
+ 2308 			syslock_new: 78
+ 2309 			syslock_lock: 87
+ 2310 			syslock_unlock: 94
+ 2311 			getmasteraddr: unsigned long (), <./servers/netinfod/getstuff.c 164>
+ 2312 				getmaster: 2218
+ 2313 				getaddress: 2227
+ 2314 				ni_name_free: <>
+ 2315 			event_init: void (), <./servers/netinfod/event.c 87>
+ 2316 				socket_lock: 1507
+ 2317 				pipe: <>
+ 2318 				socket_unlock: 1511
+ 2319 			cb_switch: void (), <./servers/netinfod/ni_dir.c 602>
+ 2320 				ni_tagname: char * (), <./servers/netinfod/ni.c 303>
+ 2321 					ni_name_dup: <>
+ 2322 					file_dirname: char * (), <./servers/netinfod/ni_file.c 714>
+ 2323 						STORE: <>
+ 2324 					FH: <>
+ 2325 					rindex: <>
+ 2326 				dir_getnames: 2091
+ 2327 				ni_name_free: <>
+ 2328 				dir_switch: int (), <./servers/netinfod/ni_dir.c 162>
+ 2329 					ni_tagname: 2320
+ 2330 					ni_free: 17
+ 2331 					dir_getnames: 2091
+ 2332 					ni_name_free: <>
+ 2333 					access: <>
+ 2334 					rename: <>
+ 2335 					system_log: 77
+ 2336 					dir_destroy: 2125
+ 2337 				ni_free: 17
+ 2338 				system_log: 77
+ 2339 				abort: <>
+ 2340 				ni_renamedir: void (), <./servers/netinfod/ni.c 329>
+ 2341 					file_renamedir: void (), <./servers/netinfod/ni_file.c 699>
+ 2342 						free: <>
+ 2343 						STORE: <>
+ 2344 						strlen: <>
+ 2345 						malloc: <>
+ 2346 						memmove: <>
+ 2347 					FH: <>
+ 2348 				syslock_lock: 87
+ 2349 				syslock_unlock: 94
+ 2350 			MM_ALLOC: <>
+ 2351 			ni_getchecksum: 2212
+ 2352 			MM_ZERO: <>
+ 2353 			systhread_new: systhread * (), <./common/systhread.c 197>
+ 2354 				systhreads_initialize: void (), <./common/systhread.c 100>
+ 2355 					syslock_new: 78
+ 2356 					malloc: <>
+ 2357 					strlen: <>
+ 2358 					memmove: <>
+ 2359 					systhread_self: thread_type (), <./common/systhread.c 66>
+ 2360 						pthread_self: <>
+ 2361 						cthread_self: <>
+ 2362 				lock_systhreads: void (), <./common/systhread.c 76>
+ 2363 					syslock_lock: 87
+ 2364 				malloc: <>
+ 2365 				memset: <>
+ 2366 				systhread_self: 2359
+ 2367 				realloc: <>
+ 2368 				unlock_systhreads: void (), <./common/systhread.c 82>
+ 2369 					syslock_unlock: 94
+ 2370 			systhread_set_name: void (), <./common/systhread.c 346>
+ 2371 				lock_systhreads: 2362
+ 2372 				systhread_check: systhread * (), <./common/systhread.c 150>
+ 2373 				unlock_systhreads: 2368
+ 2374 				free: <>
+ 2375 				strlen: <>
+ 2376 				malloc: <>
+ 2377 				memmove: <>
+ 2378 			systhread_run: void (), <./common/systhread.c 236>
+ 2379 				lock_systhreads: 2362
+ 2380 				systhread_check: 2372
+ 2381 				unlock_systhreads: 2368
+ 2382 				pthread_attr_init: <>
+ 2383 				pthread_attr_setdetachstate: <>
+ 2384 				pthread_create: <>
+ 2385 				pthread_attr_destroy: <>
+ 2386 				sched_yield: <>
+ 2387 				cthread_fork: <>
+ 2388 				cthread_detach: <>
+ 2389 				cthread_yield: <>
+ 2390 			transfer: void (), <./servers/netinfod/ni_dir.c 529>
+ 2391 				ni_tagname: 2320
+ 2392 				dir_getnames: 2091
+ 2393 				ni_name_free: <>
+ 2394 				dir_transfer: int (), <./servers/netinfod/ni_dir.c 429>
+ 2395 					socket_open: int (), <./common/socket_lock.c 222>
+ 2396 						sl_pmap_getport: 2271
+ 2397 						syslog: <>
+ 2398 						clnt_spcreateerror: <>
+ 2399 						htons: <>
+ 2400 						socket_lock: 1507
+ 2401 						socket: <>
+ 2402 						socket_unlock: 1511
+ 2403 						strerror: <>
+ 2404 						bindresvport: if (), <./servers/netinfod/ni_svc_tcp.c 191>
+ 2405 						select: <>
+ 2406 						socket_close: 1514
+ 2407 					socket_connect: 2269
+ 2408 					system_log: 77
+ 2409 					FD_SET: <>
+ 2410 					clnttcp_create: <>
+ 2411 					clntudp_create: <>
+ 2412 					socket_close: 1514
+ 2413 					FD_CLR: <>
+ 2414 					clnt_call: <>
+ 2415 					socket_lock: 1507
+ 2416 					clnt_destroy: <>
+ 2417 					socket_unlock: 1511
+ 2418 					htons: <>
+ 2419 					xdr_u_int: <>
+ 2420 					xdr_writeall: bool_t (), <./servers/netinfod/ni_dir.c 293>
+ 2421 						mkdir: <>
+ 2422 						log_failure: void (), <./servers/netinfod/ni_dir.c 281>
+ 2423 							system_log: 77
+ 2424 						file_init: 2099
+ 2425 						xdr_ni_status: <>
+ 2426 						file_free: 23
+ 2427 						ni_tagname: 2320
+ 2428 						system_log: 77
+ 2429 						ni_name_free: <>
+ 2430 						ni_error: <>
+ 2431 						xdr_u_int: <>
+ 2432 						ni_getchecksum: 2212
+ 2433 						inet_ntoa: <>
+ 2434 						xdr_bool: <>
+ 2435 						MM_ZERO: <>
+ 2436 						xdr_ni_object: <>
+ 2437 						file_writecopy: ni_status (), <./servers/netinfod/ni_file.c 837>
+ 2438 							nitods: 245
+ 2439 							dsstore_save_copy: 2111
+ 2440 							STORE: <>
+ 2441 							dsrecord_release: 58
+ 2442 							dstonistatus: 357
+ 2443 						xdr_free: <>
+ 2444 				sync: <>
+ 2445 				ni_init: 2097
+ 2446 				system_log: 77
+ 2447 				event_post: void (), <./servers/netinfod/event.c 71>
+ 2448 					write: <>
+ 2449 					fsync: <>
+ 2450 				dir_destroy: 2125
+ 2451 				MM_FREE: <>
+ 2452 				syslock_lock: 87
+ 2453 				syslock_unlock: 94
+ 2454 				systhread_exit: void (), <./common/systhread.c 452>
+ 2455 					lock_systhreads: 2362
+ 2456 					systhread_self: 2359
+ 2457 					realloc: <>
+ 2458 					unlock_systhreads: 2368
+ 2459 					systhread_free: void (), <./common/systhread.c 227>
+ 2460 						free: <>
+ 2461 					pthread_exit: <>
+ 2462 					cthread_exit: <>
+ 2463 		get_sanitycheck: bool_t (), <./servers/netinfod/getstuff.c 564>
+ 2464 			get_boolForKey: 2238
+ 2465 		sanitycheck: void (), <./servers/netinfod/sanitycheck.c 53>
+ 2466 			getmaster: 2218
+ 2467 			system_log: 77
+ 2468 			getaddress: 2227
+ 2469 			sys_interfaces: 1506
+ 2470 			checkserves: ni_status (), <./servers/netinfod/sanitycheck.c 87>
+ 2471 				socket_connect: 2269
+ 2472 				system_log: 77
+ 2473 				inet_ntoa: <>
+ 2474 				FD_SET: <>
+ 2475 				clnttcp_create: <>
+ 2476 				socket_close: 1514
+ 2477 				FD_CLR: <>
+ 2478 				bzero: <>
+ 2479 				clnt_call: <>
+ 2480 				socket_lock: 1507
+ 2481 				clnt_destroy: <>
+ 2482 				close: <>
+ 2483 				socket_unlock: 1511
+ 2484 				htons: <>
+ 2485 				xdr_free: <>
+ 2486 				malloc: <>
+ 2487 				strcpy: <>
+ 2488 				free: <>
+ 2489 				ni_namelist_match: <>
+ 2490 				sprintf: <>
+ 2491 		get_readall_info: void (), <./servers/netinfod/getstuff.c 396>
+ 2492 			get_intForKey: 2251
+ 2493 			ni_root: 123
+ 2494 			ni_lookupprop: 1460
+ 2495 			ni_namelist_free: <>
+ 2496 			strcasecmp: <>
+ 2497 			system_log: 77
+ 2498 		get_max_subthreads: int (), <./servers/netinfod/getstuff.c 492>
+ 2499 			get_intForKey: 2251
+ 2500 			system_log: 77
+ 2501 		get_update_latency: int (), <./servers/netinfod/getstuff.c 474>
+ 2502 			get_intForKey: 2251
+ 2503 			system_log: 77
+ 2504 		initialize_readall_proxies: void (), <./servers/netinfod/proxy_pids.c 52>
+ 2505 		notify_start: int (), <./servers/netinfod/notify.c 393>
+ 2506 			clonelist_create: clone_list (), <./servers/netinfod/notify.c 317>
+ 2507 				ni_root: 123
+ 2508 				NI_INIT: <>
+ 2509 				ni_lookup: 859
+ 2510 				ni_idlist_free: <>
+ 2511 				ni_list_const: ni_status (), <./servers/netinfod/ni.c 817>
+ 2512 					ni_list_const_free: 18
+ 2513 					obj_lookup: 129
+ 2514 					im_has_saved_list: int (), <./servers/netinfod/index_manager.c 495>
+ 2515 						findholder: 375
+ 2516 					IMH: <>
+ 2517 					MM_ALLOC_ARRAY: <>
+ 2518 					MM_ZERO_ARRAY: <>
+ 2519 					system_log: 77
+ 2520 					ni_name_match: <>
+ 2521 					MM_ALLOC: <>
+ 2522 					ni_namelist_dup: <>
+ 2523 					obj_free: 132
+ 2524 					im_store_list: void (), <./servers/netinfod/index_manager.c 513>
+ 2525 						findholder: 375
+ 2526 						MM_GROW_ARRAY: <>
+ 2527 						ss_alloc: 384
+ 2528 						malloc: <>
+ 2529 						im_entrylist_dup: ni_entrylist (), <./servers/netinfod/listops.c 87>
+ 2530 							malloc: <>
+ 2531 							im_namelist_dup: 382
+ 2532 					NH: <>
+ 2533 				servesdot: unsigned (), <./servers/netinfod/notify.c 238>
+ 2534 					index: <>
+ 2535 					ni_name_match_seg: <>
+ 2536 					NI_INIT: <>
+ 2537 					ni_lookupprop: 1460
+ 2538 					inet_addr: <>
+ 2539 					ni_namelist_free: <>
+ 2540 					ni_name_dup: <>
+ 2541 				sys_is_my_address: 1505
+ 2542 				strcmp: <>
+ 2543 				ni_name_free: <>
+ 2544 				MM_ALLOC: <>
+ 2545 				syslock_new: 78
+ 2546 				ni_list_const_free: 18
+ 2547 			clonelist_retain: clone_list (), <./servers/netinfod/notify.c 281>
+ 2548 			clonelist_release: void (), <./servers/netinfod/notify.c 293>
+ 2549 				ni_name_free: <>
+ 2550 				syslock_free: void (), <./common/syslock.c 112>
+ 2551 					pthread_mutex_destroy: <>
+ 2552 					free: <>
+ 2553 					pthread_cond_destroy: <>
+ 2554 					mutex_free: <>
+ 2555 					condition_free: <>
+ 2556 				MM_FREE: <>
+ 2557 			MM_ALLOC: <>
+ 2558 			ni_getchecksum: 2212
+ 2559 			syslock_new: 78
+ 2560 			systhread_new: 2353
+ 2561 			systhread_set_name: 2370
+ 2562 			systhread_run: 2378
+ 2563 			notify: void (), <./servers/netinfod/notify.c 472>
+ 2564 				bool_t: <>
+ 2565 				MM_ZERO: <>
+ 2566 				system_log: 77
+ 2567 				ni_getchecksum: 2212
+ 2568 				count_clones: int (), <./servers/netinfod/notify.c 1149>
+ 2569 				systhread_set_name: 2370
+ 2570 				systhread_current: systhread * (), <./common/systhread.c 126>
+ 2571 					lock_systhreads: 2362
+ 2572 					systhread_self: 2359
+ 2573 					unlock_systhreads: 2368
+ 2574 				udp_getregister: bool_t (), <./servers/netinfod/notify.c 1180>
+ 2575 					socket_open: 2395
+ 2576 					FD_SET: <>
+ 2577 					clntudp_create: <>
+ 2578 					clnt_spcreateerror: <>
+ 2579 					socket_close: 1514
+ 2580 					FD_CLR: <>
+ 2581 					clnt_call: <>
+ 2582 					clnt_sperrno: <>
+ 2583 					clnt_destroy_lock: void (), <./servers/netinfod/notify.c 225>
+ 2584 						socket_lock: 1507
+ 2585 						clnt_destroy: <>
+ 2586 						close: <>
+ 2587 						socket_unlock: 1511
+ 2588 					system_log: 77
+ 2589 					inet_ntoa: <>
+ 2590 				tcp_getregister: bool_t (), <./servers/netinfod/notify.c 1234>
+ 2591 					socket_connect: 2269
+ 2592 					FD_SET: <>
+ 2593 					clnttcp_create: <>
+ 2594 					clnt_spcreateerror: <>
+ 2595 					socket_close: 1514
+ 2596 					FD_CLR: <>
+ 2597 					clnt_call: <>
+ 2598 					clnt_sperrno: <>
+ 2599 					clnt_destroy_lock: 2583
+ 2600 					system_log: 77
+ 2601 					inet_ntoa: <>
+ 2602 				inet_ntoa: <>
+ 2603 				htons: <>
+ 2604 				socket_connect: 2269
+ 2605 				FD_SET: <>
+ 2606 				clnttcp_create: <>
+ 2607 				clnt_spcreateerror: <>
+ 2608 				socket_close: 1514
+ 2609 				FD_CLR: <>
+ 2610 				clnt_call: <>
+ 2611 				xdr_u_int: <>
+ 2612 				clnt_sperrno: <>
+ 2613 				ntohs: <>
+ 2614 				clnt_destroy_lock: 2583
+ 2615 				syslock_lock: 87
+ 2616 				syslock_signal_wait: void (), <./common/syslock.c 211>
+ 2617 					pthread_cond_wait: <>
+ 2618 					condition_wait: <>
+ 2619 				syslock_unlock: 94
+ 2620 				systhread_sleep: void (), <./common/systhread.c 569>
+ 2621 					systhread_usleep: void (), <./common/systhread.c 543>
+ 2622 						systhread_current: 2570
+ 2623 						sys_receive_port_alloc: kern_return_t (), <./common/systhread.c 502>
+ 2624 							mach_port_allocate: <>
+ 2625 							mach_task_self: <>
+ 2626 							port_allocate: <>
+ 2627 							task_self: <>
+ 2628 						sys_receive_message: sys_msg_return_type (), <./common/systhread.c 514>
+ 2629 							mach_msg: <>
+ 2630 							msg_receive: <>
+ 2631 						sys_port_free: void (), <./common/systhread.c 533>
+ 2632 							mach_port_destroy: <>
+ 2633 							sys_task_self: <>
+ 2634 							port_deallocate: <>
+ 2635 				clonelist_release: 2548
+ 2636 				push: void (), <./servers/netinfod/notify.c 766>
+ 2637 					count_procs: unsigned (), <./servers/netinfod/notify.c 1170>
+ 2638 					system_log: 77
+ 2639 					count_clones: 2568
+ 2640 					MM_ZERO: <>
+ 2641 					syslock_lock: 87
+ 2642 					syslock_signal_wait: 2616
+ 2643 					syslock_unlock: 94
+ 2644 					syslock_signal_broadcast: void (), <./common/syslock.c 235>
+ 2645 						pthread_cond_broadcast: <>
+ 2646 						condition_broadcast: <>
+ 2647 					inet_ntoa: <>
+ 2648 					ntohs: <>
+ 2649 					udp_getregister: 2574
+ 2650 					tcp_getregister: 2590
+ 2651 					ni_error: <>
+ 2652 					htons: <>
+ 2653 					socket_connect: 2269
+ 2654 					FD_SET: <>
+ 2655 					clnttcp_create: <>
+ 2656 					socket_close: 1514
+ 2657 					FD_CLR: <>
+ 2658 					clnt_spcreateerror: <>
+ 2659 					xdr_table_lookup: const xdr_table_entry * (), <./servers/netinfod/notify.c 1076>
+ 2660 					abort: <>
+ 2661 					bzero: <>
+ 2662 					takes_arg: const bool_t (), <./servers/netinfod/notify.c 1155>
+ 2663 					procname: const char * (), <./servers/netinfod/notify.c 1088>
+ 2664 					clnt_call: <>
+ 2665 					getsockname: <>
+ 2666 					clnt_sperrno: <>
+ 2667 					clnt_destroy_lock: 2583
+ 2668 					xdr_free: <>
+ 2669 					MM_FREE: <>
+ 2670 				fork_push: void (), <./servers/netinfod/notify.c 1036>
+ 2671 					malloc: <>
+ 2672 					syslock_lock: 87
+ 2673 					systhread_new: 2353
+ 2674 					sprintf: <>
+ 2675 					systhread_set_name: 2370
+ 2676 					systhread_run: 2378
+ 2677 					push_thread_stub: void (), <./servers/netinfod/notify.c 1061>
+ 2678 						push: 2636
+ 2679 						MM_FREE: <>
+ 2680 						syslock_lock: 87
+ 2681 						syslock_signal_send: void (), <./common/syslock.c 223>
+ 2682 							pthread_cond_signal: <>
+ 2683 							condition_signal: <>
+ 2684 						syslock_unlock: 94
+ 2685 						systhread_exit: 2454
+ 2686 					syslock_unlock: 94
+ 2687 		sig_shutdown: void (), <./servers/netinfod/ni_main.c 383>
+ 2688 		ni_svc_run: void (), <./servers/netinfod/ni_svc_run.c 383>
+ 2689 			bool_t: <>
+ 2690 			FD_ZERO: <>
+ 2691 			gettimeofday: <>
+ 2692 			lru_init: lrustuff (), <./servers/netinfod/ni_svc_run.c 171>
+ 2693 				malloc: <>
+ 2694 			readall_cleanup: void (), <./servers/netinfod/ni_prot_proc.c 2981>
+ 2695 				syslock_lock: 87
+ 2696 				wait4: <>
+ 2697 				syslock_unlock: 94
+ 2698 				system_log: 77
+ 2699 				get_proxy: unsigned long (), <./servers/netinfod/proxy_pids.c 104>
+ 2700 				notify_mark_clone: void (), <./servers/netinfod/notify.c 1292>
+ 2701 					clonelist_retain: 2547
+ 2702 					system_log: 77
+ 2703 					inet_ntoa: <>
+ 2704 					clonelist_release: 2548
+ 2705 					syslock_lock: 87
+ 2706 					syslock_unlock: 94
+ 2707 				remove_proxy: void (), <./servers/netinfod/proxy_pids.c 79>
+ 2708 			fd_clr: void (), <./servers/netinfod/ni_svc_run.c 118>
+ 2709 				howmany: <>
+ 2710 			FD_SET: <>
+ 2711 			select: <>
+ 2712 			system_log: 77
+ 2713 			lru_close: void (), <./servers/netinfod/ni_svc_run.c 291>
+ 2714 				log_connection_info: void (), <./servers/netinfod/ni_svc_run.c 617>
+ 2715 					getsockname: <>
+ 2716 					system_log: 77
+ 2717 					getpeername: <>
+ 2718 					inet_ntoa: <>
+ 2719 					ntohs: <>
+ 2720 				lru_unmarkone: void (), <./servers/netinfod/ni_svc_run.c 242>
+ 2721 				FD_ZERO: <>
+ 2722 				FD_SET: <>
+ 2723 				socket_lock: 1507
+ 2724 				close: <>
+ 2725 				svc_getreqset: <>
+ 2726 				socket_unlock: 1511
+ 2727 				FD_ISSET: <>
+ 2728 				system_log: 77
+ 2729 			sleep: <>
+ 2730 			FD_ISSET: <>
+ 2731 			FD_CLR: <>
+ 2732 			event_handle: void (), <./servers/netinfod/event.c 49>
+ 2733 				read: <>
+ 2734 			fd_and: void (), <./servers/netinfod/ni_svc_run.c 76>
+ 2735 				howmany: <>
+ 2736 			open_connections: void (), <./servers/netinfod/ni_svc_run.c 315>
+ 2737 				FD_ISSET: <>
+ 2738 				FD_CLR: <>
+ 2739 				socket_lock: 1507
+ 2740 				accept: <>
+ 2741 				socket_unlock: 1511
+ 2742 				is_trusted_network: int (), <./servers/netinfod/getstuff.c 242>
+ 2743 					ni_root: 123
+ 2744 					system_log: 77
+ 2745 					ni_tagname: 2320
+ 2746 					ni_error: <>
+ 2747 					NI_INIT: <>
+ 2748 					ni_lookupprop: 1460
+ 2749 					isdigit: <>
+ 2750 					strchr: <>
+ 2751 					malloc: <>
+ 2752 					strlen: <>
+ 2753 					strcpy: <>
+ 2754 					strcat: <>
+ 2755 					inet_makeaddr: <>
+ 2756 					inet_network: <>
+ 2757 					free: <>
+ 2758 					getnetwork: struct in_addr (), <./servers/netinfod/getstuff.c 183>
+ 2759 					network_match: int (), <./servers/netinfod/getstuff.c 219>
+ 2760 					ni_namelist_free: <>
+ 2761 					sys_is_my_address: 1505
+ 2762 					inet_ntoa: <>
+ 2763 				svcfd_create: SVCXPRT * (), <./servers/netinfod/ni_svc_tcp.c 230>
+ 2764 				system_log: 77
+ 2765 				close: <>
+ 2766 				svc_getreqset: <>
+ 2767 			socket_lock: 1507
+ 2768 			svc_getreqset: <>
+ 2769 			socket_unlock: 1511
+ 2770 			fd_count: int (), <./servers/netinfod/ni_svc_run.c 152>
+ 2771 				howmany: <>
+ 2772 				bitcount: int (), <./servers/netinfod/ni_svc_run.c 136>
+ 2773 			lru_mark: void (), <./servers/netinfod/ni_svc_run.c 216>
+ 2774 				howmany: <>
+ 2775 				lru_markone: void (), <./servers/netinfod/ni_svc_run.c 187>
+ 2776 			lru_unmark: void (), <./servers/netinfod/ni_svc_run.c 265>
+ 2777 				howmany: <>
+ 2778 				lru_unmarkone: void (), <./servers/netinfod/ni_svc_run.c 242>
+ 2779 			ni_forget: void (), <./servers/netinfod/ni.c 319>
+ 2780 				file_forget: void (), <./servers/netinfod/ni_file.c 875>
+ 2781 					dsstore_flush_cache: void (), <./common/dsstore.c 1950>
+ 2782 						dscache_flush: 55
+ 2783 					STORE: <>
+ 2784 				FH: <>
+ 2785 				im_forget: void (), <./servers/netinfod/index_manager.c 81>
+ 2786 					im_holder_unalloc: 74
+ 2787 					MM_SHRINK_ARRAY: <>
+ 2788 				IMH: <>
+ 2789 			dir_clonecheck: 2306
+ 2790 			notify_resync: void (), <./servers/netinfod/notify.c 429>
+ 2791 				clonelist_create: 2506
+ 2792 				clonelist_retain: 2547
+ 2793 				clonelist_release: 2548
+ 2794 				get_readall_info: 2491
+ 2795 				get_max_subthreads: 2498
+ 2796 				get_update_latency: 2501
+ 2797 				MM_ALLOC: <>
+ 2798 				ni_getchecksum: 2212
+ 2799 				syslock_new: 78
+ 2800 				systhread_new: 2353
+ 2801 				systhread_set_name: 2370
+ 2802 				systhread_run: 2378
+ 2803 				notify: 2563
+ 2804 				notify_clients: void (), <./servers/netinfod/notify.c 721>
+ 2805 					notify_start: 2505
+ 2806 					xdr_table_lookup: 2659
+ 2807 					syslock_lock: 87
+ 2808 					MM_ALLOC: <>
+ 2809 					bcopy: <>
+ 2810 					bzero: <>
+ 2811 					ni_getchecksum: 2212
+ 2812 					syslock_signal_send: 2681
+ 2813 					syslock_unlock: 94
+ 2814 		kill_proxies: bool_t (), <./servers/netinfod/proxy_pids.c 117>
+ 2815 			killpg: <>
+ 2816 			system_log: 77
+ 2817 			select: <>
+ 2818 			getpid: <>
+ 2819 		ni_getchecksum: 2212
+ 2820 		ni_shutdown: void (), <./servers/netinfod/ni.c 371>
+ 2821 			file_shutdown: void (), <./servers/netinfod/ni_file.c 728>
+ 2822 				file_free: 23
+ 2823 			FH: <>
+ 2824 		closeall: void (), <./servers/nibindd/nibind_main.c 358>
+ 2825 			getdtablesize: <>
+ 2826 			close: <>
+ 2827 			open: <>
+ 2828 			dup: <>
+ 2829 		fork: <>
+ 2830 		parentexit: void (), <./servers/nibindd/nibind_main.c 427>
+ 2831 			system_log: 77
+ 2832 			system_log_close: 2179
+ 2833 			exit: <>
+ 2834 		wait4: <>
+ 2835 		WIFEXITED: <>
+ 2836 		WEXITSTATUS: <>
+ 2837 		WTERMSIG: <>
+ 2838 		catchchild: void (), <./servers/nibindd/nibind_prot_proc.c 252>
+ 2839 			wait3: <>
+ 2840 			system_log: 77
+ 2841 			deletepid: void (), <./servers/nibindd/nibind_prot_proc.c 210>
+ 2842 				nibind_unregister_1_svc: ni_status * (), <./servers/nibindd/nibind_prot_proc.c 338>
+ 2843 					system_log: 77
+ 2844 					validate: ni_status (), <./servers/nibindd/nibind_prot_proc.c 152>
+ 2845 						svc_getcaller: <>
+ 2846 						sys_is_my_address: 1505
+ 2847 						ntohs: <>
+ 2848 						getpwuid: <>
+ 2849 						system_log: 77
+ 2850 						strcmp: <>
+ 2851 						crypt: <>
+ 2852 						inet_ntoa: <>
+ 2853 					ni_name_match: <>
+ 2854 					ni_name_free: <>
+ 2855 					MM_SHRINK_ARRAY: <>
+ 2856 					strcmp: <>
+ 2857 					free: <>
+ 2858 				ni_name_free: <>
+ 2859 				MM_SHRINK_ARRAY: <>
+ 2860 		killchildren: void (), <./servers/nibindd/nibind_prot_proc.c 123>
+ 2861 			killservers: void (), <./servers/nibindd/nibind_prot_proc.c 112>
+ 2862 				system_log: 77
+ 2863 				signal: <>
+ 2864 				kill: <>
+ 2865 			exit: <>
+ 2866 		catchhup: void (), <./servers/nibindd/nibind_main.c 435>
+ 2867 		chdir: <>
+ 2868 		killparent: void (), <./servers/nibindd/nibind_main.c 370>
+ 2869 			kill: <>
+ 2870 			getppid: <>
+ 2871 		opendir: <>
+ 2872 		MM_ZERO: <>
+ 2873 		readdir: <>
+ 2874 		isnidir: int (), <./servers/nibindd/nibind_main.c 337>
+ 2875 			rindex: <>
+ 2876 			ni_name_match: <>
+ 2877 			ni_name_dup: <>
+ 2878 		ni_namelist_match: <>
+ 2879 		ni_namelist_insert: <>
+ 2880 		ni_name_free: <>
+ 2881 		flock: <>
+ 2882 		fcntl: <>
+ 2883 		closedir: <>
+ 2884 		pmap_unset: <>
+ 2885 		svcudp_create: <>
+ 2886 		svc_register: <>
+ 2887 		svctcp_create: <>
+ 2888 		execv: <>
+ 2889 		storepid: void (), <./servers/nibindd/nibind_prot_proc.c 103>
+ 2890 			MM_GROW_ARRAY: <>
+ 2891 			ni_name_dup: <>
+ 2892 		ni_namelist_free: <>
+ 2893 		open: <>
+ 2894 		ioctl: <>
+ 2895 		close: <>
+ 2896 		setpgrp: <>
+ 2897 		setsid: <>
+ 2898 		syslog: <>
+ 2899 		nibind_svc_run: void (), <./servers/nibindd/nibind_main.c 376>
+ 2900 			getdtablesize: <>
+ 2901 			select: <>
+ 2902 			system_log: 77
+ 2903 			svc_getreqset: <>
+ 2904 			killparent: 2868
+ 2905 			svc_unregister: <>
+ 2906 			pmap_unset: <>
+ 2907 			respawn: void (), <./servers/nibindd/nibind_prot_proc.c 133>
+ 2908 				killservers: 2861
+ 2909 				system_log: 77
+ 2910 				getdtablesize: <>
+ 2911 				close: <>
+ 2912 				open: <>
+ 2913 				dup: <>
+ 2914 				execl: <>
+ 2915 				exit: <>

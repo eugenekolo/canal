@@ -1,0 +1,1058 @@
+    1 	main: int (), <./wget/src/ansi2knr.c 169>
+    2 		fprintf: <>
+    3 		exit: <>
+    4 		stat: <>
+    5 		strerror: char * (), <./wget/src/cmpt.c 42>
+    6 		parse_netrc: acc_t * (), <./wget/src/netrc.c 232>
+    7 			fopen: <>
+    8 			fprintf: <>
+    9 			strerror: 5
+   10 			read_whole_line: char * (), <./wget/src/netrc.c 159>
+   11 				xmalloc: void * (), <./wget/src/utils.c 79>
+   12 					malloc: <>
+   13 					memfatal: void (), <./wget/src/utils.c 61>
+   14 						logprintf: , <./wget/src/log.c 179>
+   15 							va_start: <>
+   16 							va_arg: <>
+   17 							logvprintf: void (), <./wget/src/log.c 131>
+   18 								CHECK_VERBOSE: <>
+   19 								DO_REALLOC: <>
+   20 								vsnprintf: <>
+   21 								vsprintf: <>
+   22 								strlen: <>
+   23 								fwrite: <>
+   24 								assert: <>
+   25 								vfprintf: <>
+   26 								fflush: <>
+   27 							va_end: <>
+   28 						exit: <>
+   29 				getc: <>
+   30 				xrealloc: void * (), <./wget/src/utils.c 90>
+   31 					realloc: <>
+   32 					malloc: <>
+   33 					memfatal: 13
+   34 				free: <>
+   35 			ISSPACE: <>
+   36 			xstrdup: char * (), <./wget/src/utils.c 107>
+   37 				strlen: <>
+   38 				malloc: <>
+   39 				memfatal: 13
+   40 				memcpy: <>
+   41 				strdup: <>
+   42 			maybe_add_to_list: void (), <./wget/src/netrc.c 193>
+   43 				free: <>
+   44 				xmalloc: 11
+   45 				memset: <>
+   46 			strcmp: <>
+   47 			free: <>
+   48 			fclose: <>
+   49 		strcmp: <>
+   50 		fputs: <>
+   51 		fputc: <>
+   52 		i18n_initialize: void (), <./wget/src/main.c 78>
+   53 			setlocale: <>
+   54 			bindtextdomain: <>
+   55 			textdomain: <>
+   56 		strrchr: <>
+   57 		windows_main_junk: void (), <./wget/src/mswindows.c 94>
+   58 			xstrdup: 36
+   59 			strrchr: <>
+   60 		initialize: void (), <./wget/src/init.c 349>
+   61 			defaults: void (), <./wget/src/init.c 179>
+   62 				memset: <>
+   63 				xstrdup: 36
+   64 				getenv: <>
+   65 				sepstring: char ** (), <./wget/src/utils.c 140>
+   66 					xrealloc: 30
+   67 					strdupdelim: char * (), <./wget/src/utils.c 128>
+   68 						xmalloc: 11
+   69 						memcpy: <>
+   70 					ISSPACE: <>
+   71 			file_exists_p: int (), <./wget/src/utils.c 444>
+   72 				access: <>
+   73 				stat: <>
+   74 			run_wgetrc: void (), <./wget/src/init.c 303>
+   75 				fopen: <>
+   76 				fprintf: <>
+   77 				strerror: 5
+   78 				read_whole_line: 10
+   79 				strlen: <>
+   80 				parse_line: int (), <./wget/src/init.c 391>
+   81 					ISALPHA: <>
+   82 					ISSPACE: <>
+   83 					xmalloc: 11
+   84 					comind: int (), <./wget/src/init.c 158>
+   85 						ARRAY_SIZE: <>
+   86 						strcasecmp: int (), <./wget/src/cmpt.c 59>
+   87 							tolower: <>
+   88 					free: <>
+   89 					strdupdelim: 67
+   90 				free: <>
+   91 				setval: int (), <./wget/src/init.c 447>
+   92 					comind: 84
+   93 					fprintf: <>
+   94 				fclose: <>
+   95 			wgetrc_file_name: char * (), <./wget/src/init.c 250>
+   96 				getenv: <>
+   97 				file_exists_p: 71
+   98 				fprintf: <>
+   99 				strerror: 5
+  100 				exit: <>
+  101 				xstrdup: 36
+  102 				home_dir: char * (), <./wget/src/init.c 221>
+  103 					getenv: <>
+  104 					getpwuid: <>
+  105 					getuid: <>
+  106 					xstrdup: 36
+  107 				xmalloc: 11
+  108 				strlen: <>
+  109 				sprintf: <>
+  110 				ws_mypath: char * (), <./wget/src/mswindows.c 182>
+  111 					strrchr: <>
+  112 					xmalloc: 11
+  113 					strlen: <>
+  114 					strcpy: <>
+  115 					SearchPath: <>
+  116 					strchr: <>
+  117 					free: <>
+  118 				FREE_MAYBE: <>
+  119 				free: <>
+  120 			strcmp: <>
+  121 			fprintf: <>
+  122 			free: <>
+  123 		getopt_long: int (), <./wget/src/getopt.c 625>
+  124 		setval: 91
+  125 		printf: <>
+  126 		ftp_getaddress: char * (), <./wget/src/host.c 419>
+  127 			pwd_cuserid: char * (), <./wget/src/mswindows.c 68>
+  128 				getpwuid: <>
+  129 				getuid: <>
+  130 				strcpy: <>
+  131 				GetUserName: <>
+  132 				getenv: <>
+  133 				read_registry: char * (), <./wget/src/mswindows.c 53>
+  134 					RegOpenKeyEx: <>
+  135 					RegQueryValueEx: <>
+  136 					RegCloseKey: <>
+  137 				strncpy: <>
+  138 				xstrdup: 36
+  139 			logprintf: 14
+  140 			exit: <>
+  141 			STRDUP_ALLOCA: <>
+  142 			uname: <>
+  143 			strerror: 5
+  144 			alloca: <>
+  145 			gethostname: <>
+  146 			strchr: <>
+  147 			gethostbyname: <>
+  148 			memcpy: <>
+  149 			gethostbyaddr: <>
+  150 			xmalloc: 11
+  151 			strlen: <>
+  152 			sprintf: <>
+  153 		print_help: void (), <./wget/src/main.c 107>
+  154 			printf: <>
+  155 			print_usage: void (), <./wget/src/main.c 99>
+  156 				printf: <>
+  157 		ws_help: void (), <./wget/src/mswindows.c 216>
+  158 			ws_mypath: 110
+  159 			alloca: <>
+  160 			strlen: <>
+  161 			sprintf: <>
+  162 			stat: <>
+  163 			printf: <>
+  164 			WinHelp: <>
+  165 			strerror: 5
+  166 		parse_line: 80
+  167 		free: <>
+  168 		print_usage: 155
+  169 		fork_to_background: void (), <./wget/src/mswindows.c 125>
+  170 			unique_name: char * (), <./wget/src/utils.c 492>
+  171 				unique_name_1: char * (), <./wget/src/utils.c 469>
+  172 					xmalloc: 11
+  173 					strlen: <>
+  174 					numdigit: int (), <./wget/src/utils.c 940>
+  175 					sprintf: <>
+  176 					xstrdup: 36
+  177 					file_exists_p: 71
+  178 					free: <>
+  179 			fork: <>
+  180 			perror: <>
+  181 			exit: <>
+  182 			printf: <>
+  183 			ws_hangup: void (), <./wget/src/mswindows.c 116>
+  184 				redirect_output: void (), <./wget/src/log.c 298>
+  185 					unique_name: 170
+  186 					fopen: <>
+  187 					printf: <>
+  188 					strerror: 5
+  189 					free: <>
+  190 					log_dump: void (), <./wget/src/log.c 281>
+  191 						logputs: void (), <./wget/src/log.c 106>
+  192 							CHECK_VERBOSE: <>
+  193 							fputs: <>
+  194 							fflush: <>
+  195 							strlen: <>
+  196 							DO_REALLOC: <>
+  197 							memcpy: <>
+  198 						free: <>
+  199 			FreeConsole: <>
+  200 		ALLOCA_ARRAY: <>
+  201 		STRDUP_ALLOCA: <>
+  202 		ws_changetitle: void (), <./wget/src/mswindows.c 168>
+  203 			xmalloc: 11
+  204 			strlen: <>
+  205 			sprintf: <>
+  206 			SetConsoleTitle: <>
+  207 		log_init: void (), <./wget/src/log.c 237>
+  208 			fopen: <>
+  209 			perror: <>
+  210 			exit: <>
+  211 			isatty: <>
+  212 			fileno: <>
+  213 		DEBUGP: <>
+  214 		HYPHENP: <>
+  215 		fopen: <>
+  216 		perror: <>
+  217 		ws_startup: void (), <./wget/src/mswindows.c 238>
+  218 			GetVersionEx: <>
+  219 			MAKEWORD: <>
+  220 			WSAStartup: <>
+  221 			fprintf: <>
+  222 			exit: <>
+  223 			LOBYTE: <>
+  224 			HIBYTE: <>
+  225 			WSACleanup: <>
+  226 			atexit: <>
+  227 			ws_cleanup: void (), <./wget/src/mswindows.c 110>
+  228 				WSACleanup: <>
+  229 			SetConsoleCtrlHandler: <>
+  230 			ws_handler: BOOL WINAPI (), <./wget/src/mswindows.c 145>
+  231 				fork_to_background: 169
+  232 				WSACleanup: <>
+  233 		signal: <>
+  234 		redirect_output_signal: RETSIGTYPE (), <./wget/src/main.c 709>
+  235 			signal: <>
+  236 			redirect_output_signal: 234
+  237 			sprintf: <>
+  238 			redirect_output: 184
+  239 		recursive_reset: void (), <./wget/src/recur.c 103>
+  240 		retrieve_url: uerr_t (), <./wget/src/retr.c 288>
+  241 			xstrdup: 36
+  242 			newurl: struct urlinfo (), <./wget/src/url.c 325>
+  243 			parseurl: uerr_t (), <./wget/src/url.c 377>
+  244 				DEBUGP: <>
+  245 				skip_url: int (), <./wget/src/url.c 153>
+  246 					toupper: <>
+  247 					ISSPACE: <>
+  248 				has_proto: int (), <./wget/src/url.c 291>
+  249 					skip_url: 245
+  250 					strncasecmp: int (), <./wget/src/cmpt.c 88>
+  251 						tolower: <>
+  252 					strlen: <>
+  253 				ARRAY_SIZE: <>
+  254 				strlen: <>
+  255 				strncasecmp: 250
+  256 				skip_uname: int (), <./wget/src/url.c 308>
+  257 				strdupdelim: 67
+  258 				ISDIGIT: <>
+  259 				xmalloc: 11
+  260 				strcpy: <>
+  261 				process_ftp_type: char (), <./wget/src/url.c 607>
+  262 					strlen: <>
+  263 					memcmp: <>
+  264 				toupper: <>
+  265 				parse_uname: uerr_t (), <./wget/src/url.c 564>
+  266 					skip_url: 245
+  267 					skip_proto: int (), <./wget/src/url.c 270>
+  268 						strncasecmp: 250
+  269 						strlen: <>
+  270 						strcmp: <>
+  271 					xmalloc: 11
+  272 					memcpy: <>
+  273 				decode_string: void (), <./wget/src/url.c 187>
+  274 					ISXDIGIT: <>
+  275 					ASC2HEXD: <>
+  276 				parse_dir: void (), <./wget/src/url.c 514>
+  277 					strlen: <>
+  278 					DOTP: <>
+  279 					DDOTP: <>
+  280 					xstrdup: 36
+  281 					strdupdelim: 67
+  282 				path_simplify: void (), <./wget/src/utils.c 294>
+  283 					strcpy: <>
+  284 				strcat: <>
+  285 				URL_CLEANSE: <>
+  286 				str_url: char * (), <./wget/src/url.c 626>
+  287 					ARRAY_SIZE: <>
+  288 					CLEANDUP: <>
+  289 					xmalloc: 11
+  290 					strlen: <>
+  291 					strcpy: <>
+  292 					free: <>
+  293 					memcpy: <>
+  294 					long_to_string: void (), <./wget/src/utils.c 951>
+  295 					numdigit: int (), <./wget/src/utils.c 940>
+  296 					FREE_MAYBE: <>
+  297 			freeurl: void (), <./wget/src/url.c 339>
+  298 				assert: <>
+  299 				FREE_MAYBE: <>
+  300 				freeurl: 297
+  301 				free: <>
+  302 			logprintf: 14
+  303 			uerrmsg: const char * (), <./wget/src/utils.c 198>
+  304 				abort: <>
+  305 			USE_PROXY_P: <>
+  306 			memcpy: <>
+  307 			memset: <>
+  308 			getproxy: char * (), <./wget/src/url.c 1344>
+  309 				getenv: <>
+  310 			logputs: 191
+  311 			assert: <>
+  312 			http_loop: uerr_t (), <./wget/src/http.c 838>
+  313 				strchr: <>
+  314 				logputs: 191
+  315 				url_filename: char * (), <./wget/src/url.c 1198>
+  316 					mkstruct: char * (), <./wget/src/url.c 1118>
+  317 						assert: <>
+  318 						count_slashes: int (), <./wget/src/url.c 1106>
+  319 						MINVAL: <>
+  320 						STRDUP_ALLOCA: <>
+  321 						xstrdup: 36
+  322 						realhost: char * (), <./wget/src/host.c 241>
+  323 							DEBUGP: <>
+  324 							search_host: struct host (), <./wget/src/host.c 97>
+  325 							xstrdup: 36
+  326 							ngethostbyname: struct hostent (), <./wget/src/host.c 81>
+  327 							memcpy: <>
+  328 							STRDUP_ALLOCA: <>
+  329 							inet_ntoa: <>
+  330 							search_address: struct host (), <./wget/src/host.c 107>
+  331 							add_hlist: struct host (), <./wget/src/host.c 186>
+  332 						free: <>
+  333 						DOTP: <>
+  334 						alloca: <>
+  335 						strlen: <>
+  336 						sprintf: <>
+  337 						URL_CLEANSE: <>
+  338 						xmalloc: 11
+  339 					xstrdup: 36
+  340 					DOTP: <>
+  341 					xmalloc: 11
+  342 					strlen: <>
+  343 					sprintf: <>
+  344 					free: <>
+  345 					file_exists_p: 71
+  346 					file_non_directory_p: int (), <./wget/src/utils.c 457>
+  347 						lstat: <>
+  348 						S_ISDIR: <>
+  349 					unique_name: 170
+  350 				file_exists_p: 71
+  351 				logprintf: 14
+  352 				suffix: char * (), <./wget/src/utils.c 685>
+  353 					strlen: <>
+  354 					xstrdup: 36
+  355 				strcmp: <>
+  356 				free: <>
+  357 				stat: <>
+  358 				sleep: unsigned int (), <./wget/src/mswindows.c 43>
+  359 					Sleep: <>
+  360 				time_str: char * (), <./wget/src/utils.c 179>
+  361 					time: <>
+  362 					localtime: <>
+  363 					sprintf: <>
+  364 				str_url: 286
+  365 				strcpy: <>
+  366 				sprintf: <>
+  367 				ws_changetitle: 202
+  368 				gethttp: uerr_t (), <./wget/src/http.c 304>
+  369 					assert: <>
+  370 					logprintf: 14
+  371 					make_connection: uerr_t (), <./wget/src/connect.c 63>
+  372 						store_hostaddress: int (), <./wget/src/host.c 126>
+  373 							inet_addr: <>
+  374 							search_host: struct host (), <./wget/src/host.c 97>
+  375 							memcpy: <>
+  376 							gethostbyname: <>
+  377 							STRDUP_ALLOCA: <>
+  378 							inet_ntoa: <>
+  379 							search_address: struct host (), <./wget/src/host.c 107>
+  380 							add_hlist: struct host (), <./wget/src/host.c 186>
+  381 						ngethostbyname: struct hostent (), <./wget/src/host.c 81>
+  382 						memcpy: <>
+  383 						htons: <>
+  384 						socket: <>
+  385 						connect: <>
+  386 						DEBUGP: <>
+  387 					logputs: 191
+  388 					herrmsg: char * (), <./wget/src/host.c 530>
+  389 					strerror: 5
+  390 					CLOSE: <>
+  391 					abort: <>
+  392 					alloca: <>
+  393 					strlen: <>
+  394 					sprintf: <>
+  395 					numdigit: int (), <./wget/src/utils.c 940>
+  396 					STRDUP_ALLOCA: <>
+  397 					search_netrc: void (), <./wget/src/netrc.c 60>
+  398 						home_dir: 102
+  399 						alloca: <>
+  400 						strlen: <>
+  401 						sprintf: <>
+  402 						free: <>
+  403 						stat: <>
+  404 						parse_netrc: 6
+  405 						strcasecmp: 86
+  406 						strcmp: <>
+  407 					create_authorization_line: char * (), <./wget/src/http.c 1576>
+  408 						strncasecmp: 250
+  409 						basic_authentication_encode: char * (), <./wget/src/http.c 1345>
+  410 							strlen: <>
+  411 							BASE64_LENGTH: <>
+  412 							alloca: <>
+  413 							sprintf: <>
+  414 							base64_encode: void (), <./wget/src/http.c 1307>
+  415 							malloc: <>
+  416 						digest_authentication_encode: char * (), <./wget/src/http.c 1427>
+  417 							skip_lws: int (), <./wget/src/headers.c 171>
+  418 							ARRAY_SIZE: <>
+  419 							extract_header_attr: int (), <./wget/src/http.c 1370>
+  420 								strncmp: if (), <./wget/src/ansi2knr.c 509>
+  421 								strlen: <>
+  422 								skip_lws: 417
+  423 								FREE_MAYBE: <>
+  424 								strdupdelim: 67
+  425 							FREE_MAYBE: <>
+  426 							md5_init_ctx: void (), <./wget/src/md5.c 67>
+  427 							md5_process_bytes: void (), <./wget/src/md5.c 203>
+  428 								memcpy: <>
+  429 								md5_process_block: void (), <./wget/src/md5.c 258>
+  430 									OP: <>
+  431 							strlen: <>
+  432 							md5_finish_ctx: void * (), <./wget/src/md5.c 100>
+  433 								memcpy: <>
+  434 								SWAP: <>
+  435 								md5_process_block: 429
+  436 								md5_read_ctx: void * (), <./wget/src/md5.c 84>
+  437 									SWAP: <>
+  438 							dump_hash: void (), <./wget/src/http.c 1412>
+  439 								HEXD2asc: <>
+  440 							xmalloc: 11
+  441 							sprintf: <>
+  442 							strcat: <>
+  443 					basic_authentication_encode: 409
+  444 					DEBUGP: <>
+  445 					FREE_MAYBE: <>
+  446 					iwrite: int (), <./wget/src/connect.c 269>
+  447 						select_fd: int (), <./wget/src/connect.c 159>
+  448 							FD_ZERO: <>
+  449 							FD_SET: <>
+  450 							select: <>
+  451 						WRITE: <>
+  452 					free: <>
+  453 					rbuf_initialize: void (), <./wget/src/rbuf.c 29>
+  454 					header_get: int (), <./wget/src/headers.c 71>
+  455 						xmalloc: 11
+  456 						xrealloc: 30
+  457 						RBUF_READCHAR: <>
+  458 						rbuf_peek: int (), <./wget/src/rbuf.c 60>
+  459 							iread: int (), <./wget/src/connect.c 232>
+  460 								select_fd: 447
+  461 								READ: <>
+  462 						DEBUGP: <>
+  463 					xrealloc: 30
+  464 					memcpy: <>
+  465 					parse_http_status_line: int (), <./wget/src/http.c 118>
+  466 						strncmp: if (), <./wget/src/ansi2knr.c 509>
+  467 						ISDIGIT: <>
+  468 					xstrdup: 36
+  469 					header_process: int (), <./wget/src/headers.c 126>
+  470 						tolower: <>
+  471 						skip_lws: 417
+  472 					header_extract_number: int (), <./wget/src/headers.c 146>
+  473 						ISDIGIT: <>
+  474 					http_process_type: int (), <./wget/src/http.c 239>
+  475 						xstrdup: 36
+  476 						strrchr: <>
+  477 						xmalloc: 11
+  478 						memcpy: <>
+  479 					header_strdup: int (), <./wget/src/headers.c 162>
+  480 						xstrdup: 36
+  481 					http_process_none: int (), <./wget/src/http.c 226>
+  482 						strstr: <>
+  483 					http_process_range: int (), <./wget/src/http.c 186>
+  484 						strncasecmp: 250
+  485 						skip_lws: 417
+  486 						ISDIGIT: <>
+  487 					FREEHSTAT: <>
+  488 					known_authentication_scheme_p: int (), <./wget/src/http.c 1563>
+  489 						HACK_O_MATIC: <>
+  490 					H_20X: <>
+  491 					strncasecmp: 250
+  492 					H_PARTIAL: <>
+  493 					H_REDIRECTED: <>
+  494 					legible: char * (), <./wget/src/utils.c 902>
+  495 						long_to_string: void (), <./wget/src/utils.c 951>
+  496 						strlen: <>
+  497 					mkalldirs: int (), <./wget/src/url.c 1059>
+  498 						strlen: <>
+  499 						strdupdelim: 67
+  500 						stat: <>
+  501 						S_ISDIR: <>
+  502 						free: <>
+  503 						DEBUGP: <>
+  504 						unlink: <>
+  505 						make_directory: int (), <./wget/src/utils.c 509>
+  506 							STRDUP_ALLOCA: <>
+  507 							file_exists_p: 71
+  508 							mkdir: <>
+  509 						logprintf: 14
+  510 						strerror: 5
+  511 					rotate_backups: void (), <./wget/src/url.c 1031>
+  512 						strlen: <>
+  513 						numdigit: int (), <./wget/src/utils.c 940>
+  514 						alloca: <>
+  515 						stat: <>
+  516 						S_ISREG: <>
+  517 						sprintf: <>
+  518 						rename: <>
+  519 					fopen: <>
+  520 					fwrite: <>
+  521 					reset_timer: void (), <./wget/src/retr.c 230>
+  522 						gettimeofday: <>
+  523 						time: <>
+  524 					get_contents: int (), <./wget/src/retr.c 81>
+  525 						show_progress: int (), <./wget/src/retr.c 146>
+  526 							alloca: <>
+  527 							logputs: 191
+  528 							print_percentage: void (), <./wget/src/retr.c 128>
+  529 								logprintf: 14
+  530 							logprintf: 14
+  531 							logflush: void (), <./wget/src/log.c 169>
+  532 								fflush: <>
+  533 						RBUF_FD: <>
+  534 						rbuf_flush: int (), <./wget/src/rbuf.c 80>
+  535 							MINVAL: <>
+  536 							memcpy: <>
+  537 						fwrite: <>
+  538 						fflush: <>
+  539 						iread: 459
+  540 					elapsed_time: long (), <./wget/src/retr.c 246>
+  541 						gettimeofday: <>
+  542 						time: <>
+  543 					fclose: <>
+  544 					fflush: <>
+  545 				xstrdup: 36
+  546 				FREEHSTAT: <>
+  547 				printwhat: void (), <./wget/src/retr.c 481>
+  548 					logputs: 191
+  549 				strerror: 5
+  550 				abort: <>
+  551 				http_atotm: time_t (), <./wget/src/http.c 1243>
+  552 					check_end: int (), <./wget/src/http.c 1209>
+  553 						ISSPACE: <>
+  554 						ISDIGIT: <>
+  555 					strptime: <>
+  556 					mktime_from_utc: time_t (), <./wget/src/http.c 1189>
+  557 						mktime: time_t (), <./wget/src/cmpt.c 336>
+  558 						gmtime: <>
+  559 				touch: void (), <./wget/src/utils.c 403>
+  560 					utime: <>
+  561 					logprintf: 14
+  562 					strerror: 5
+  563 				rate: char * (), <./wget/src/retr.c 262>
+  564 					sprintf: <>
+  565 			ftp_loop: uerr_t (), <./wget/src/ftp.c 1366>
+  566 				rbuf_uninitialize: void (), <./wget/src/rbuf.c 43>
+  567 				ftp_get_listing: struct fileinfo (), <./wget/src/ftp.c 985>
+  568 				xstrdup: 36
+  569 				url_filename: 315
+  570 				ftp_index: uerr_t (), <./wget/src/html.c 406>
+  571 					fopen: <>
+  572 					logprintf: 14
+  573 					strerror: 5
+  574 					CLEANDUP: <>
+  575 					xmalloc: 11
+  576 					strlen: <>
+  577 					sprintf: <>
+  578 					free: <>
+  579 					FREE_MAYBE: <>
+  580 					xstrdup: 36
+  581 					fprintf: <>
+  582 					localtime: <>
+  583 					html_quote_string: char * (), <./wget/src/html.c 351>
+  584 						xmalloc: 11
+  585 					putc: <>
+  586 					legible: 494
+  587 					fclose: <>
+  588 					fflush: <>
+  589 				stat: <>
+  590 				logprintf: 14
+  591 				free: <>
+  592 				freefileinfo: void (), <./wget/src/ftp.c 1465>
+  593 					free: <>
+  594 				has_wildcards_p: int (), <./wget/src/fnmatch.c 194>
+  595 				ftp_retrieve_glob: uerr_t (), <./wget/src/ftp.c 1278>
+  596 					ftp_get_listing: struct fileinfo (), <./wget/src/ftp.c 985>
+  597 					acceptable: int (), <./wget/src/utils.c 547>
+  598 						strlen: <>
+  599 						in_acclist: int (), <./wget/src/utils.c 651>
+  600 							has_wildcards_p: int (), <./wget/src/fnmatch.c 194>
+  601 							fnmatch: int (), <./wget/src/fnmatch.c 33>
+  602 								fnmatch: 601
+  603 							match_backwards: int (), <./wget/src/utils.c 630>
+  604 								strlen: <>
+  605 							strcmp: <>
+  606 					logprintf: 14
+  607 					delelement: struct fileinfo (), <./wget/src/ftp.c 1445>
+  608 					fnmatch: 601
+  609 					strerror: 5
+  610 					freefileinfo: 592
+  611 					ftp_retrieve_list: uerr_t (), <./wget/src/ftp.c 1035>
+  612 						DEBUGP: <>
+  613 						assert: <>
+  614 						rbuf_initialized_p: int (), <./wget/src/rbuf.c 37>
+  615 						url_filename: 315
+  616 						stat: <>
+  617 						logprintf: 14
+  618 						logputs: 191
+  619 						lstat: <>
+  620 						strlen: <>
+  621 						S_ISLNK: <>
+  622 						alloca: <>
+  623 						readlink: <>
+  624 						memcmp: <>
+  625 						unlink: <>
+  626 						symlink: <>
+  627 						strerror: 5
+  628 						ftp_loop_internal: uerr_t (), <./wget/src/ftp.c 814>
+  629 							url_filename: 315
+  630 							file_exists_p: 71
+  631 							logprintf: 14
+  632 							remove_link: int (), <./wget/src/utils.c 420>
+  633 								lstat: <>
+  634 								S_ISLNK: <>
+  635 								DEBUGP: <>
+  636 								unlink: <>
+  637 								logprintf: 14
+  638 								strerror: 5
+  639 							sleep: 358
+  640 							rbuf_initialized_p: int (), <./wget/src/rbuf.c 37>
+  641 							stat: <>
+  642 							time_str: 360
+  643 							str_url: 286
+  644 							strcpy: <>
+  645 							sprintf: <>
+  646 							ws_changetitle: 202
+  647 							free: <>
+  648 							getftp: uerr_t (), <./wget/src/ftp.c 107>
+  649 								assert: <>
+  650 								search_netrc: 397
+  651 								xstrdup: 36
+  652 								ftp_getaddress: 126
+  653 								RBUF_FD: <>
+  654 								logprintf: 14
+  655 								make_connection: 371
+  656 								rbuf_initialize: void (), <./wget/src/rbuf.c 29>
+  657 								rbuf_uninitialize: void (), <./wget/src/rbuf.c 43>
+  658 								logputs: 191
+  659 								herrmsg: 388
+  660 								strerror: 5
+  661 								CLOSE: <>
+  662 								rbuf_discard: void (), <./wget/src/rbuf.c 98>
+  663 								ftp_login: uerr_t (), <./wget/src/ftp-basic.c 131>
+  664 									ftp_response: uerr_t (), <./wget/src/ftp-basic.c 60>
+  665 										xmalloc: 11
+  666 										xrealloc: 30
+  667 										RBUF_READCHAR: <>
+  668 										logprintf: 14
+  669 										DEBUGP: <>
+  670 										ISDIGIT: <>
+  671 										strncpy: <>
+  672 									free: <>
+  673 									ftp_request: char * (), <./wget/src/ftp-basic.c 105>
+  674 										xmalloc: 11
+  675 										strlen: <>
+  676 										sprintf: <>
+  677 										strncmp: if (), <./wget/src/ansi2knr.c 509>
+  678 										logprintf: 14
+  679 										logputs: 191
+  680 										DEBUGP: <>
+  681 									iwrite: 446
+  682 									RBUF_FD: <>
+  683 									strlen: <>
+  684 									ARRAY_SIZE: <>
+  685 									strncmp: if (), <./wget/src/ansi2knr.c 509>
+  686 									calculate_skey_response: const char * (), <./wget/src/ftp-opie.c 2148>
+  687 										alloca: <>
+  688 										strlen: <>
+  689 										strcpy: <>
+  690 										strcat: <>
+  691 										md5_init_ctx: void (), <./wget/src/md5.c 67>
+  692 										md5_process_bytes: 427
+  693 										md5_finish_ctx: 432
+  694 										memcpy: <>
+  695 										btoe: char * (), <./wget/src/ftp-opie.c 2108>
+  696 											memset: <>
+  697 											memcpy: <>
+  698 											extract: unsigned long (), <./wget/src/ftp-opie.c 2088>
+  699 											STRLEN4: <>
+  700 											DEBUGP: <>
+  701 								abort: <>
+  702 								exit: <>
+  703 								toupper: <>
+  704 								ftp_type: uerr_t (), <./wget/src/ftp-basic.c 351>
+  705 									ftp_request: 673
+  706 									iwrite: 446
+  707 									RBUF_FD: <>
+  708 									strlen: <>
+  709 									free: <>
+  710 									ftp_response: 664
+  711 								ftp_cwd: uerr_t (), <./wget/src/ftp-basic.c 390>
+  712 									ftp_request: 673
+  713 									iwrite: 446
+  714 									RBUF_FD: <>
+  715 									strlen: <>
+  716 									free: <>
+  717 									ftp_response: 664
+  718 								ftp_pasv: uerr_t (), <./wget/src/ftp-basic.c 298>
+  719 									ftp_request: 673
+  720 									iwrite: 446
+  721 									RBUF_FD: <>
+  722 									strlen: <>
+  723 									free: <>
+  724 									ftp_response: 664
+  725 									ISDIGIT: <>
+  726 								sprintf: <>
+  727 								DEBUGP: <>
+  728 								closeport: void (), <./wget/src/connect.c 199>
+  729 									CLOSE: <>
+  730 								ftp_port: uerr_t (), <./wget/src/ftp-basic.c 247>
+  731 									bindport: uerr_t (), <./wget/src/connect.c 109>
+  732 										socket: <>
+  733 										setsockopt: <>
+  734 										htonl: <>
+  735 										htons: <>
+  736 										bind: <>
+  737 										CLOSE: <>
+  738 										DEBUGP: <>
+  739 										getsockname: <>
+  740 										ntohs: <>
+  741 										listen: <>
+  742 									conaddr: unsigned char * (), <./wget/src/connect.c 212>
+  743 										getsockname: <>
+  744 										memcpy: <>
+  745 									RBUF_FD: <>
+  746 									alloca: <>
+  747 									sprintf: <>
+  748 									ftp_request: 673
+  749 									iwrite: 446
+  750 									strlen: <>
+  751 									free: <>
+  752 									ftp_response: 664
+  753 								ftp_rest: uerr_t (), <./wget/src/ftp-basic.c 429>
+  754 									long_to_string: void (), <./wget/src/utils.c 951>
+  755 									ftp_request: 673
+  756 									iwrite: 446
+  757 									RBUF_FD: <>
+  758 									strlen: <>
+  759 									free: <>
+  760 									ftp_response: 664
+  761 								ftp_retr: uerr_t (), <./wget/src/ftp-basic.c 464>
+  762 									ftp_request: 673
+  763 									iwrite: 446
+  764 									RBUF_FD: <>
+  765 									strlen: <>
+  766 									free: <>
+  767 									ftp_response: 664
+  768 								ftp_expected_bytes: long (), <./wget/src/ftp.c 65>
+  769 									ISSPACE: <>
+  770 									ISDIGIT: <>
+  771 									tolower: <>
+  772 									strncasecmp: 250
+  773 								ftp_list: uerr_t (), <./wget/src/ftp-basic.c 504>
+  774 									ftp_request: 673
+  775 									iwrite: 446
+  776 									RBUF_FD: <>
+  777 									strlen: <>
+  778 									free: <>
+  779 									ftp_response: 664
+  780 								acceptport: uerr_t (), <./wget/src/connect.c 182>
+  781 									select_fd: 447
+  782 									accept: <>
+  783 									DEBUGP: <>
+  784 								mkalldirs: 497
+  785 								rotate_backups: 511
+  786 								chmod: <>
+  787 								fopen: <>
+  788 								legible: 494
+  789 								reset_timer: 521
+  790 								get_contents: 524
+  791 								elapsed_time: 540
+  792 								time_str: 360
+  793 								rate: 563
+  794 								fclose: <>
+  795 								fflush: <>
+  796 								ftp_response: 664
+  797 								free: <>
+  798 								read_whole_line: 10
+  799 							rate: 563
+  800 							printwhat: 547
+  801 							abort: <>
+  802 							CLOSE: <>
+  803 							RBUF_FD: <>
+  804 							rbuf_uninitialize: void (), <./wget/src/rbuf.c 43>
+  805 						file_exists_p: 71
+  806 						touch: 559
+  807 						chmod: <>
+  808 						free: <>
+  809 						ftp_retrieve_dirs: uerr_t (), <./wget/src/ftp.c 1224>
+  810 							strlen: <>
+  811 							alloca: <>
+  812 							sprintf: <>
+  813 							accdir: int (), <./wget/src/utils.c 606>
+  814 								proclist: char * (), <./wget/src/utils.c 581>
+  815 									has_wildcards_p: int (), <./wget/src/fnmatch.c 194>
+  816 									fnmatch: 601
+  817 									frontcmp: int (), <./wget/src/utils.c 572>
+  818 							logprintf: 14
+  819 							ftp_retrieve_glob: 595
+  820 					ftp_loop_internal: 628
+  821 				ftp_loop_internal: 628
+  822 				rbuf_initialized_p: int (), <./wget/src/rbuf.c 37>
+  823 				CLOSE: <>
+  824 				RBUF_FD: <>
+  825 			suffix: 352
+  826 			strcasecmp: 86
+  827 			FREE_MAYBE: <>
+  828 			url_equal: int (), <./wget/src/url.c 716>
+  829 				newurl: struct urlinfo (), <./wget/src/url.c 325>
+  830 				parseurl: 243
+  831 				freeurl: 297
+  832 				strcmp: <>
+  833 			free: <>
+  834 		recursive_retrieve: uerr_t (), <./wget/src/recur.c 115>
+  835 			assert: <>
+  836 			add_slist: slist * (), <./wget/src/utils.c 804>
+  837 				xmalloc: 11
+  838 				xstrdup: 36
+  839 				strcmp: <>
+  840 			newurl: struct urlinfo (), <./wget/src/url.c 325>
+  841 			parseurl: 243
+  842 			add_url: urlpos * (), <./wget/src/url.c 1490>
+  843 				xmalloc: 11
+  844 				memset: <>
+  845 				xstrdup: 36
+  846 			xstrdup: 36
+  847 			DEBUGP: <>
+  848 			freeurl: 297
+  849 			urlproto: uerr_t (), <./wget/src/url.c 244>
+  850 				skip_url: 245
+  851 				ARRAY_SIZE: <>
+  852 				strncasecmp: 250
+  853 				strlen: <>
+  854 				ISDIGIT: <>
+  855 			get_urls_html: urlpos * (), <./wget/src/url.c 824>
+  856 				HYPHENP: <>
+  857 				fopen: <>
+  858 				logprintf: 14
+  859 				strerror: 5
+  860 				load_file: void (), <./wget/src/utils.c 738>
+  861 					feof: <>
+  862 					ferror: <>
+  863 					xrealloc: 30
+  864 					fread: <>
+  865 				fclose: <>
+  866 				DEBUGP: <>
+  867 				htmlfindurl: const char * (), <./wget/src/html.c 72>
+  868 					DEBUGP: <>
+  869 					memset: <>
+  870 					ISSPACE: <>
+  871 					strdupdelim: 67
+  872 					free: <>
+  873 					FREE_MAYBE: <>
+  874 					idmatch: int (), <./wget/src/html.c 53>
+  875 						strcasecmp: 86
+  876 					strcasecmp: 86
+  877 					ISDIGIT: <>
+  878 					strncasecmp: 250
+  879 				ISSPACE: <>
+  880 				strncasecmp: 250
+  881 				MINVAL: <>
+  882 				strlen: <>
+  883 				ARRAY_SIZE: <>
+  884 				html_base: const char * (), <./wget/src/html.c 335>
+  885 				malloc: <>
+  886 				strncpy: <>
+  887 				free: <>
+  888 				construct: char * (), <./wget/src/url.c 1261>
+  889 					strlen: <>
+  890 					alloca: <>
+  891 					strcpy: <>
+  892 					xmalloc: 11
+  893 					strncpy: <>
+  894 					strncat: <>
+  895 				has_proto: 248
+  896 				xstrdup: 36
+  897 				xmalloc: 11
+  898 				memset: <>
+  899 			in_slist: int (), <./wget/src/utils.c 869>
+  900 				strcmp: <>
+  901 			accept_domain: int (), <./wget/src/host.c 368>
+  902 				assert: <>
+  903 				sufmatch: int (), <./wget/src/host.c 390>
+  904 					strlen: <>
+  905 					tolower: <>
+  906 			frontcmp: int (), <./wget/src/utils.c 572>
+  907 			accdir: 813
+  908 			suffix: 352
+  909 			strcmp: <>
+  910 			acceptable: 597
+  911 			FREE_MAYBE: <>
+  912 			opt_url: void (), <./wget/src/url.c 1330>
+  913 				realhost: 322
+  914 				free: <>
+  915 				assert: <>
+  916 				str_url: 286
+  917 			tolower: <>
+  918 			free: <>
+  919 			str_url: 286
+  920 			same_host: int (), <./wget/src/host.c 310>
+  921 				skip_url: 245
+  922 				skip_proto: 267
+  923 				skip_uname: 256
+  924 				strdupdelim: 67
+  925 				DEBUGP: <>
+  926 				strcasecmp: 86
+  927 				free: <>
+  928 				realhost: 322
+  929 			free_vec: void (), <./wget/src/utils.c 757>
+  930 				free: <>
+  931 			retrieve_robots: uerr_t (), <./wget/src/recur.c 602>
+  932 				robots_url: struct urlinfo (), <./wget/src/recur.c 582>
+  933 				logputs: 191
+  934 				retrieve_url: 240
+  935 				freeurl: 297
+  936 			robots_url: struct urlinfo (), <./wget/src/recur.c 582>
+  937 			url_filename: 315
+  938 			parse_robots: char ** (), <./wget/src/recur.c 625>
+  939 				fopen: <>
+  940 				STRDUP_ALLOCA: <>
+  941 				strlen: <>
+  942 				alloca: <>
+  943 				sprintf: <>
+  944 				tolower: <>
+  945 				read_whole_line: 10
+  946 				DEBUGP: <>
+  947 				ISSPACE: <>
+  948 				free: <>
+  949 				strcasecmp: 86
+  950 				has_wildcards_p: int (), <./wget/src/fnmatch.c 194>
+  951 				strchr: <>
+  952 				fnmatch: 601
+  953 				strstr: <>
+  954 				free_vec: 929
+  955 				xmalloc: 11
+  956 				xrealloc: 30
+  957 				xstrdup: 36
+  958 				fclose: <>
+  959 			robots_match: int (), <./wget/src/recur.c 800>
+  960 				DEBUGP: <>
+  961 				strlen: <>
+  962 				strncmp: if (), <./wget/src/ansi2knr.c 509>
+  963 			retrieve_url: 240
+  964 			recursive_retrieve: 834
+  965 			logprintf: 14
+  966 			unlink: <>
+  967 			strerror: 5
+  968 			convert_links: void (), <./wget/src/url.c 1367>
+  969 				logprintf: 14
+  970 				fopen: <>
+  971 				strerror: 5
+  972 				load_file: 860
+  973 				fclose: <>
+  974 				free: <>
+  975 				DEBUGP: <>
+  976 				putc: <>
+  977 				construct_relative: char * (), <./wget/src/url.c 1452>
+  978 					xstrdup: 36
+  979 					assert: <>
+  980 					xmalloc: 11
+  981 					strlen: <>
+  982 					memcpy: <>
+  983 					strcpy: <>
+  984 				fprintf: <>
+  985 				logputs: 191
+  986 			free_urlpos: void (), <./wget/src/url.c 1017>
+  987 				free: <>
+  988 				FREE_MAYBE: <>
+  989 		FREE_MAYBE: <>
+  990 		retrieve_from_file: uerr_t (), <./wget/src/retr.c 434>
+  991 			get_urls_html: 855
+  992 			get_urls_file: urlpos * (), <./wget/src/url.c 769>
+  993 				HYPHENP: <>
+  994 				fopen: <>
+  995 				logprintf: 14
+  996 				strerror: 5
+  997 				load_file: 860
+  998 				fclose: <>
+  999 				DEBUGP: <>
+ 1000 				findurl: const char * (), <./wget/src/url.c 745>
+ 1001 					strlen: <>
+ 1002 					strncasecmp: 250
+ 1003 					ISSPACE: <>
+ 1004 					strchr: <>
+ 1005 				xmalloc: 11
+ 1006 				memset: <>
+ 1007 				memcpy: <>
+ 1008 				free: <>
+ 1009 			recursive_reset: 239
+ 1010 			retrieve_url: 240
+ 1011 			recursive_retrieve: 834
+ 1012 			file_exists_p: 71
+ 1013 			logprintf: 14
+ 1014 			unlink: <>
+ 1015 			strerror: 5
+ 1016 			FREE_MAYBE: <>
+ 1017 			free_urlpos: 986
+ 1018 		logprintf: 14
+ 1019 		time_str: 360
+ 1020 		legible: 494
+ 1021 		convert_all_links: void (), <./wget/src/recur.c 511>
+ 1022 			DEBUGP: <>
+ 1023 			strcmp: <>
+ 1024 			get_urls_html: 855
+ 1025 			newurl: struct urlinfo (), <./wget/src/url.c 325>
+ 1026 			parseurl: 243
+ 1027 			freeurl: 297
+ 1028 			xstrdup: 36
+ 1029 			convert_links: 968
+ 1030 			free_urlpos: 986
+ 1031 		log_close: void (), <./wget/src/log.c 269>
+ 1032 			fclose: <>
+ 1033 			FREE_MAYBE: <>
+ 1034 		cleanup: void (), <./wget/src/init.c 901>
+ 1035 			recursive_cleanup: void (), <./wget/src/recur.c 85>
+ 1036 				free_slist: void (), <./wget/src/utils.c 887>
+ 1037 					free: <>
+ 1038 				free_vec: 929
+ 1039 				free_urlpos: 986
+ 1040 				FREE_MAYBE: <>
+ 1041 			clean_hosts: void (), <./wget/src/host.c 547>
+ 1042 				free: <>
+ 1043 			free_netrc: void (), <./wget/src/netrc.c 401>
+ 1044 				FREE_MAYBE: <>
+ 1045 				free: <>
+ 1046 			fclose: <>
+ 1047 			FREE_MAYBE: <>
+ 1048 			free: <>
+ 1049 			free_vec: 929
+ 1050 		getopt: int (), <./wget/src/getopt.c 632>
+ 1051 		malloc: <>
+ 1052 		fgets: <>
+ 1053 		strlen: <>
+ 1054 		test1: int (), <./wget/src/ansi2knr.c 329>
+ 1055 		convert1: int (), <./wget/src/ansi2knr.c 381>
+ 1056 		skipspace: <>
+ 1057 		strcpy: <>
+ 1058 		fclose: <>

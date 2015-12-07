@@ -1,0 +1,195 @@
+    1 	main: int (), <./SystemStarter/main.c 48>
+    2 		initLog: int (), <./SystemStarter/Log.c 38>
+    3 			openlog: <>
+    4 		getopt: <>
+    5 		usage: void (), <./SystemStarter/main.c 41>
+    6 			error: void (), <./SystemStarter/Log.c 87>
+    7 				syslog: <>
+    8 				printf: <>
+    9 			CFSTR: <>
+   10 			exit: <>
+   11 		warning: void (), <./SystemStarter/Log.c 79>
+   12 			syslog: <>
+   13 			printf: <>
+   14 		CFSTR: <>
+   15 		getuid: <>
+   16 		error: 6
+   17 		exit: <>
+   18 		system_starter: int (), <./SystemStarter/SystemStarter.c 38>
+   19 			initDisplayContext: DisplayContext (), <./SystemStarter/TextDisplay.c 128>
+   20 				malloc: <>
+   21 				debug: void (), <./SystemStarter/Log.c 63>
+   22 					syslog: <>
+   23 					printf: <>
+   24 				CFSTR: <>
+   25 				CGSCreateDictionary: <>
+   26 				CGSPutCStringForCStringKey: <>
+   27 				CGSPutIntegerForCStringKey: <>
+   28 				CGSBeginContext: <>
+   29 				warning: 11
+   30 				CGSReleaseObj: <>
+   31 				autoLoadDisplayPlugIn: void (), <./SystemStarter/TextDisplay.c 67>
+   32 					malloc: <>
+   33 					strlen: <>
+   34 					sprintf: <>
+   35 					debug: 21
+   36 					CFSTR: <>
+   37 					NSCreateObjectFileImageFromFile: <>
+   38 					NSLinkModule: <>
+   39 					getSymbol: <>
+   40 					fInitDisplayContext: void *() (), <./SystemStarter/TextDisplay.c 51>
+   41 					fFreeDisplayContext: void () (), <./SystemStarter/TextDisplay.c 52>
+   42 					fDisplayStatus: int () (), <./SystemStarter/TextDisplay.c 53>
+   43 					error: 6
+   44 					NSUnLinkModule: <>
+   45 				fInitDisplayContext: void *() (), <./SystemStarter/TextDisplay.c 51>
+   46 			displayStatus: int (), <./SystemStarter/TextDisplay.c 148>
+   47 				CGSDisableUpdate: <>
+   48 				CGSMakeRect: <>
+   49 				CGSaveGState: <>
+   50 				CGSSetGStateAttribute: <>
+   51 				CGSUniqueCString: <>
+   52 				CGSetRGBFillColor: <>
+   53 				CGFillRect: <>
+   54 				CGRestoreGState: <>
+   55 				getenv: <>
+   56 				strcmp: <>
+   57 				CFStringGetLength: <>
+   58 				malloc: <>
+   59 				CGContextSelectFont: <>
+   60 				CFStringGetCharacters: <>
+   61 				CFRangeMake: <>
+   62 				CGFontGetGlyphsForUnicodes: <>
+   63 				CGContextGetFont: <>
+   64 				CGFontGetGlyphAdvances: <>
+   65 				CGFontGetUnitsPerEm: <>
+   66 				CGGetFontScale: <>
+   67 				CGContextShowGlyphsAtPoint: <>
+   68 				free: <>
+   69 				ProgressBarCreate: ProgressBarRef (), <./SystemStarter/QuartzDisplay/QuartzProgressBar.c 168>
+   70 					malloc: <>
+   71 					pthread_create: <>
+   72 				CGSOrderWindow: <>
+   73 				warning: 11
+   74 				CFSTR: <>
+   75 				ProgressBarSetPercent: void (), <./SystemStarter/QuartzDisplay/QuartzProgressBar.c 204>
+   76 				CGSReenableUpdate: <>
+   77 				CGFlushContext: <>
+   78 				fDisplayStatus: int () (), <./SystemStarter/TextDisplay.c 53>
+   79 				message: void (), <./SystemStarter/Log.c 71>
+   80 					syslog: <>
+   81 					printf: <>
+   82 			CFSTR: <>
+   83 			sleep: <>
+   84 			StartupItemListCreateMutable: CFMutableArrayRef (), <./SystemStarter/StartupItems.c 77>
+   85 				CFArrayCreateMutable: <>
+   86 				NSStartSearchPathEnumeration: <>
+   87 				NSGetNextSearchPathEnumeration: <>
+   88 				strcpy: <>
+   89 				strlen: <>
+   90 				opendir: <>
+   91 				readdir: <>
+   92 				strcmp: <>
+   93 				debug: 21
+   94 				CFSTR: <>
+   95 				sprintf: <>
+   96 				open: <>
+   97 				stat: <>
+   98 				mmap: <>
+   99 				CFDataCreateWithBytesNoCopy: <>
+  100 				CFPropertyListCreateFromXMLData: <>
+  101 				CFGetTypeID: <>
+  102 				CFDictionaryGetTypeID: <>
+  103 				CFStringCreateWithCString: <>
+  104 				CFDictionarySetValue: <>
+  105 				CFArrayAppendValue: <>
+  106 				CFRelease: <>
+  107 				error: 6
+  108 				munmap: <>
+  109 				warning: 11
+  110 				strerror: <>
+  111 				close: <>
+  112 				closedir: <>
+  113 			CFDictionaryCreateMutable: <>
+  114 			CFArrayGetCount: <>
+  115 			StartupItemListGetNext: CFDictionaryRef (), <./SystemStarter/StartupItems.c 192>
+  116 				CFArrayGetCount: <>
+  117 				CFArrayGetValueAtIndex: <>
+  118 				CFDictionaryGetValue: <>
+  119 				debug: 21
+  120 				CFSTR: <>
+  121 				CFEqual: <>
+  122 				priorityFromString: int (), <./SystemStarter/StartupItems.c 64>
+  123 					CFEqual: <>
+  124 					CFSTR: <>
+  125 			CFDictionaryGetValue: <>
+  126 			StartupItemCreateLocalizedString: CFStringRef (), <./SystemStarter/StartupItems.c 458>
+  127 				getenv: <>
+  128 				CFDictionaryGetValue: <>
+  129 				CFStringGetMaximumSizeForEncoding: <>
+  130 				CFStringGetLength: <>
+  131 				malloc: <>
+  132 				emergency: void (), <./SystemStarter/Log.c 95>
+  133 					syslog: <>
+  134 					printf: <>
+  135 				CFSTR: <>
+  136 				CFRetain: <>
+  137 				CFStringGetCString: <>
+  138 				sprintf: <>
+  139 				open: <>
+  140 				stat: <>
+  141 				mmap: <>
+  142 				CFDataCreateWithBytesNoCopy: <>
+  143 				CFPropertyListCreateFromXMLData: <>
+  144 				CFGetTypeID: <>
+  145 				CFDictionaryGetTypeID: <>
+  146 				error: 6
+  147 				CFRelease: <>
+  148 				munmap: <>
+  149 				strerror: <>
+  150 				close: <>
+  151 				debug: 21
+  152 			CFRetain: <>
+  153 			CFRelease: <>
+  154 			StartupItemRun: void (), <./SystemStarter/StartupItems.c 326>
+  155 				CFDictionaryGetValue: <>
+  156 				CFStringGetMaximumSizeForEncoding: <>
+  157 				CFStringGetLength: <>
+  158 				malloc: <>
+  159 				emergency: 132
+  160 				CFSTR: <>
+  161 				CFStringGetCString: <>
+  162 				strcpy: <>
+  163 				rindex: <>
+  164 				strncat: <>
+  165 				strlen: <>
+  166 				free: <>
+  167 				access: <>
+  168 				sleep: <>
+  169 				random: <>
+  170 				fork: <>
+  171 				error: 6
+  172 				strerror: <>
+  173 				waitpid: <>
+  174 				WIFEXITED: <>
+  175 				setsid: <>
+  176 				warning: 11
+  177 				execle: <>
+  178 				exit: <>
+  179 				message: 79
+  180 				CFArrayGetCount: <>
+  181 				CFDictionarySetValue: <>
+  182 				CFArrayGetValueAtIndex: <>
+  183 			CFArrayGetFirstIndexOfValue: <>
+  184 			CFArrayRemoveValueAtIndex: <>
+  185 			CFCopyDescription: <>
+  186 			warning: 11
+  187 			freeDisplayContext: void (), <./SystemStarter/TextDisplay.c 141>
+  188 				debug: 21
+  189 				CFSTR: <>
+  190 				ProgressBarFree: void (), <./SystemStarter/QuartzDisplay/QuartzProgressBar.c 186>
+  191 					pthread_join: <>
+  192 					free: <>
+  193 				CGEndContext: <>
+  194 				free: <>
+  195 				fFreeDisplayContext: void () (), <./SystemStarter/TextDisplay.c 52>

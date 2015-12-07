@@ -1,0 +1,313 @@
+    1 	main: int (), <./scutil.tproj/scutil.c 215>
+    2 		SCDOptionSet: void (), <./SystemConfiguration.fproj/SCD.c 106>
+    3 		getopt: <>
+    4 		usage: void (), <./scselect.tproj/scselect.c 31>
+    5 			SCDLog: void (), <./SystemConfiguration.fproj/SCD.c 202>
+    6 				va_start: <>
+    7 				CFStringCreateWithFormatAndArguments: <>
+    8 				va_end: <>
+    9 				CFStringCreateArrayBySeparatingStrings: <>
+   10 				CFSTR: <>
+   11 				CFRelease: <>
+   12 			CFSTR: <>
+   13 		CFStringCreateWithFormat: <>
+   14 		CFSTR: <>
+   15 		CFStringCreateWithCString: <>
+   16 		SCPOpen: SCPStatus (), <./SystemConfiguration.fproj/SCPOpen.c 206>
+   17 		SCDLog: 5
+   18 		SCPError: const char * (), <./SystemConfiguration.fproj/SCP.c 240>
+   19 		exit: <>
+   20 		CFStringGetLength: <>
+   21 		CFStringHasPrefix: <>
+   22 		CFStringCreateMutableCopy: <>
+   23 		CFStringDelete: <>
+   24 		CFRangeMake: <>
+   25 		CFStringFind: <>
+   26 		CFRelease: <>
+   27 		SCPGet: SCPStatus (), <./SystemConfiguration.fproj/SCPGet.c 34>
+   28 			CFDictionaryGetValue: <>
+   29 		CFDictionaryGetCount: <>
+   30 		CFAllocatorAllocate: <>
+   31 		CFDictionaryGetKeysAndValues: <>
+   32 		CFEqual: <>
+   33 		CFDictionaryGetValue: <>
+   34 		CFRetain: <>
+   35 		SCPSet: SCPStatus (), <./SystemConfiguration.fproj/SCPSet.c 34>
+   36 			CFDictionarySetValue: <>
+   37 		SCPCommit: SCPStatus (), <./SystemConfiguration.fproj/SCPCommit.c 34>
+   38 			SCPLock: SCPStatus (), <./SystemConfiguration.fproj/SCPLock.c 34>
+   39 				SCDOpen: SCDStatus (), <./SystemConfiguration.fproj/SCDOpen.c 83>
+   40 					SCDLog: 5
+   41 					CFSTR: <>
+   42 					task_get_bootstrap_port: <>
+   43 					mach_task_self: <>
+   44 					mach_error_string: <>
+   45 					CFAllocatorDeallocate: <>
+   46 					bootstrap_look_up: <>
+   47 					CFPropertyListCreateXMLData: <>
+   48 					CFDataGetBytePtr: <>
+   49 					CFDataGetLength: <>
+   50 					configopen: <>
+   51 					CFRelease: <>
+   52 				SCDLog: 5
+   53 				CFSTR: <>
+   54 				SCDError: const char * (), <./SystemConfiguration.fproj/SCD.c 220>
+   55 				SCDNotifierAdd: SCDStatus (), <./SystemConfiguration.fproj/SCDNotifierAdd.c 35>
+   56 					SCDLog: 5
+   57 					CFSTR: <>
+   58 					CFSetContainsValue: <>
+   59 					CFSetAddValue: <>
+   60 					CFPropertyListCreateXMLData: <>
+   61 					CFDataGetBytePtr: <>
+   62 					CFDataGetLength: <>
+   63 					notifyadd: <>
+   64 					CFRelease: <>
+   65 					mach_error_string: <>
+   66 					mach_port_destroy: <>
+   67 					mach_task_self: <>
+   68 				SCDHandleInit: SCDHandleRef (), <./SystemConfiguration.fproj/SCDHandle.c 28>
+   69 					CFAllocatorAllocate: <>
+   70 				CFDateCreate: <>
+   71 				CFAbsoluteTimeGetCurrent: <>
+   72 				SCDHandleSetData: void (), <./SystemConfiguration.fproj/SCDHandle.c 88>
+   73 					CFRelease: <>
+   74 					CFRetain: <>
+   75 				CFRelease: <>
+   76 				SCDAddSession: SCDStatus (), <./SystemConfiguration.fproj/SCDAddSession.c 32>
+   77 					SCDLog: 5
+   78 					CFSTR: <>
+   79 					SCDHandleGetData: CFPropertyListRef (), <./SystemConfiguration.fproj/SCDHandle.c 75>
+   80 						CFSTR: <>
+   81 					CFPropertyListCreateXMLData: <>
+   82 					CFDataGetBytePtr: <>
+   83 					CFDataGetLength: <>
+   84 					configadd_s: <>
+   85 					CFRelease: <>
+   86 					mach_error_string: <>
+   87 					mach_port_destroy: <>
+   88 					mach_task_self: <>
+   89 					SCDHandleGetInstance: int (), <./SystemConfiguration.fproj/SCDHandle.c 56>
+   90 				SCDNotifierWait: SCDStatus (), <./SystemConfiguration.fproj/SCDNotifierWait.c 32>
+   91 					SCDLog: 5
+   92 					CFSTR: <>
+   93 					SCDOptionGet: int (), <./SystemConfiguration.fproj/SCD.c 61>
+   94 					mach_port_allocate: <>
+   95 					mach_task_self: <>
+   96 					mach_error_string: <>
+   97 					mach_port_insert_right: <>
+   98 					mach_port_destroy: <>
+   99 					mach_port_request_notification: <>
+  100 					notifyviaport: <>
+  101 					notifycancel: <>
+  102 				SCDHandleRelease: void (), <./SystemConfiguration.fproj/SCDHandle.c 43>
+  103 					CFRelease: <>
+  104 					CFAllocatorDeallocate: <>
+  105 				SCDNotifierRemove: SCDStatus (), <./SystemConfiguration.fproj/SCDNotifierRemove.c 35>
+  106 					SCDLog: 5
+  107 					CFSTR: <>
+  108 					CFSetContainsValue: <>
+  109 					CFSetRemoveValue: <>
+  110 					CFPropertyListCreateXMLData: <>
+  111 					CFDataGetBytePtr: <>
+  112 					CFDataGetLength: <>
+  113 					notifyremove: <>
+  114 					CFRelease: <>
+  115 					mach_error_string: <>
+  116 					mach_port_destroy: <>
+  117 					mach_task_self: <>
+  118 				SCDNotifierGetChanges: SCDStatus (), <./SystemConfiguration.fproj/SCDNotifierGetChanges.c 40>
+  119 					SCDLog: 5
+  120 					CFSTR: <>
+  121 					notifychanges: <>
+  122 					mach_error_string: <>
+  123 					mach_port_destroy: <>
+  124 					mach_task_self: <>
+  125 					vm_deallocate: <>
+  126 					CFDataCreate: <>
+  127 					CFPropertyListCreateFromXMLData: <>
+  128 					CFRelease: <>
+  129 					CFArrayGetCount: <>
+  130 					CFArrayCreateMutableCopy: <>
+  131 					CFArraySortValues: <>
+  132 					CFRangeMake: <>
+  133 					sort_keys: CFComparisonResult (), <./SystemConfiguration.fproj/SCDNotifierGetChanges.c 32>
+  134 						CFStringCompare: <>
+  135 				stat: <>
+  136 				bzero: <>
+  137 				strerror: <>
+  138 				CFEqual: <>
+  139 			SCDLog: 5
+  140 			CFSTR: <>
+  141 			SCPError: 18
+  142 			stat: <>
+  143 			bzero: <>
+  144 			geteuid: <>
+  145 			getegid: <>
+  146 			strerror: <>
+  147 			strlen: <>
+  148 			CFAllocatorAllocate: <>
+  149 			snprintf: <>
+  150 			open: <>
+  151 			CFStringHasPrefix: <>
+  152 			strrchr: <>
+  153 			mkdir: <>
+  154 			CFAllocatorDeallocate: <>
+  155 			fchown: <>
+  156 			CFPropertyListCreateXMLData: <>
+  157 			write: <>
+  158 			CFDataGetBytePtr: <>
+  159 			CFDataGetLength: <>
+  160 			close: <>
+  161 			CFRelease: <>
+  162 			rename: <>
+  163 			SCDLock: SCDStatus (), <./SystemConfiguration.fproj/SCDLock.c 32>
+  164 				SCDLog: 5
+  165 				CFSTR: <>
+  166 				configlock: <>
+  167 				mach_error_string: <>
+  168 				mach_port_destroy: <>
+  169 				mach_task_self: <>
+  170 			SCDTouch: SCDStatus (), <./SystemConfiguration.fproj/SCDTouch.c 32>
+  171 				SCDLog: 5
+  172 				CFSTR: <>
+  173 				CFPropertyListCreateXMLData: <>
+  174 				CFDataGetBytePtr: <>
+  175 				CFDataGetLength: <>
+  176 				configtouch: <>
+  177 				CFRelease: <>
+  178 				mach_error_string: <>
+  179 				mach_port_destroy: <>
+  180 				mach_task_self: <>
+  181 			SCDRemove: SCDStatus (), <./SystemConfiguration.fproj/SCDRemove.c 32>
+  182 				SCDLog: 5
+  183 				CFSTR: <>
+  184 				CFPropertyListCreateXMLData: <>
+  185 				CFDataGetBytePtr: <>
+  186 				CFDataGetLength: <>
+  187 				configremove: <>
+  188 				CFRelease: <>
+  189 				mach_error_string: <>
+  190 				mach_port_destroy: <>
+  191 				mach_task_self: <>
+  192 			SCDUnlock: SCDStatus (), <./SystemConfiguration.fproj/SCDUnlock.c 32>
+  193 				SCDLog: 5
+  194 				CFSTR: <>
+  195 				configunlock: <>
+  196 				mach_error_string: <>
+  197 				mach_port_destroy: <>
+  198 				mach_task_self: <>
+  199 			SCDError: 54
+  200 			SCPUnlock: SCPStatus (), <./SystemConfiguration.fproj/SCPUnlock.c 34>
+  201 				SCDRemove: 181
+  202 				SCDLog: 5
+  203 				CFSTR: <>
+  204 				SCDError: 54
+  205 		SCPApply: SCPStatus (), <./SystemConfiguration.fproj/SCPApply.c 34>
+  206 			SCPLock: 38
+  207 			SCDLog: 5
+  208 			CFSTR: <>
+  209 			SCPError: 18
+  210 			SCDLock: 163
+  211 			SCDTouch: 170
+  212 			SCDRemove: 181
+  213 			SCDUnlock: 192
+  214 			SCDError: 54
+  215 			SCPUnlock: 200
+  216 		SCPClose: SCPStatus (), <./SystemConfiguration.fproj/SCPClose.c 34>
+  217 			CFRelease: <>
+  218 			CFAllocatorDeallocate: <>
+  219 			SCDClose: SCDStatus (), <./SystemConfiguration.fproj/SCDClose.c 33>
+  220 				SCDLog: 5
+  221 				CFSTR: <>
+  222 				pthread_setcanceltype: <>
+  223 				CFSetGetCount: <>
+  224 				CFAllocatorAllocate: <>
+  225 				CFSetGetValues: <>
+  226 				CFArrayCreate: <>
+  227 				CFAllocatorDeallocate: <>
+  228 				SCDNotifierRemove: 105
+  229 				CFArrayGetValueAtIndex: <>
+  230 				CFRelease: <>
+  231 				SCDNotifierCancel: SCDStatus (), <./SystemConfiguration.fproj/SCDNotifierCancel.c 32>
+  232 					SCDLog: 5
+  233 					CFSTR: <>
+  234 					SCDOptionGet: 93
+  235 					CFRunLoopRemoveSource: <>
+  236 					CFRunLoopGetCurrent: <>
+  237 					CFRelease: <>
+  238 					CFMachPortInvalidate: <>
+  239 					pthread_cancel: <>
+  240 					strerror: <>
+  241 					notifycancel: <>
+  242 					mach_error_string: <>
+  243 					mach_port_destroy: <>
+  244 					mach_task_self: <>
+  245 				SCDOptionGet: 93
+  246 				SCDUnlock: 192
+  247 				configclose: <>
+  248 				mach_error_string: <>
+  249 				mach_port_destroy: <>
+  250 				mach_task_self: <>
+  251 				pthread_testcancel: <>
+  252 			SCDLog: 5
+  253 			CFSTR: <>
+  254 			SCDError: 54
+  255 		strcmp: <>
+  256 		printf: <>
+  257 		dump_names: void (), <./SystemConfiguration.fproj/genSCPreferences.c 548>
+  258 			printf: <>
+  259 			snprintf: <>
+  260 		do_help: void (), <./scutil.tproj/commands.c 161>
+  261 			SCDLog: 5
+  262 			CFSTR: <>
+  263 			usage: 4
+  264 		do_dictInit: void (), <./scutil.tproj/dictionary.c 31>
+  265 			SCDHandleRelease: 102
+  266 			SCDHandleInit: 68
+  267 			CFDictionaryCreateMutable: <>
+  268 			SCDHandleSetData: 72
+  269 			CFRelease: <>
+  270 		SCDOptionGet: 93
+  271 		CFSocketCreateWithNative: <>
+  272 		runLoopProcessInput: void (), <./scutil.tproj/scutil.c 169>
+  273 			process_line: boolean_t (), <./scutil.tproj/scutil.c 123>
+  274 				getLine: char * (), <./scutil.tproj/scutil.c 49>
+  275 					fgets: <>
+  276 					strlen: <>
+  277 					fgetc: <>
+  278 				SCDOptionGet: 93
+  279 				SCDLog: 5
+  280 				CFSTR: <>
+  281 				strcasecmp: <>
+  282 				getString: char * (), <./scutil.tproj/scutil.c 72>
+  283 					isspace: <>
+  284 					malloc: <>
+  285 				malloc: <>
+  286 				realloc: <>
+  287 				do_command: void (), <./scutil.tproj/commands.c 134>
+  288 					strcasecmp: <>
+  289 					SCDLog: 5
+  290 					CFSTR: <>
+  291 					func: <>
+  292 				free: <>
+  293 			CFRunLoopRemoveSource: <>
+  294 			CFRunLoopGetCurrent: <>
+  295 			CFArrayGetValueAtIndex: <>
+  296 			CFSocketInvalidate: <>
+  297 			CFArrayRemoveValueAtIndex: <>
+  298 			CFArrayGetCount: <>
+  299 			CFRunLoopAddSource: <>
+  300 			exit: <>
+  301 			SCDOptionGet: 93
+  302 			isatty: <>
+  303 			printf: <>
+  304 			fflush: <>
+  305 		CFSocketCreateRunLoopSource: <>
+  306 		CFArrayCreateMutable: <>
+  307 		CFArrayAppendValue: <>
+  308 		CFRunLoopAddSource: <>
+  309 		CFRunLoopGetCurrent: <>
+  310 		isatty: <>
+  311 		fflush: <>
+  312 		CFRunLoopRun: <>
+  313 		process_line: 273

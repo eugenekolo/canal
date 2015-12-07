@@ -1,0 +1,745 @@
+    1 	main: int (), <./perl/miniperlmain.c 24>
+    2 		str_new: STR * (), <./perl/x2p/str.c 193>
+    3 			safemalloc: Malloc_t (), <./perl/x2p/util.c 28>
+    4 				malloc: <>
+    5 				debug: <>
+    6 				fprintf: <>
+    7 				fputs: <>
+    8 				exit: <>
+    9 			bzero: <>
+   10 			GROWSTR: <>
+   11 		debug: <>
+   12 		atoi: <>
+   13 		savestr: char * (), <./perl/x2p/util.c 159>
+   14 			safemalloc: 3
+   15 			strlen: <>
+   16 			strcpy: <>
+   17 		fprintf: <>
+   18 		usage: void (), <./perl/x2p/a2py.c 39>
+   19 			printf: <>
+   20 			exit: <>
+   21 		fatal: void (), <./perl/x2p/util.c 196>
+   22 			va_list: <>
+   23 			va_start: <>
+   24 			vfprintf: int (), <./perl/perlio.c 540>
+   25 			fprintf: <>
+   26 			exit: <>
+   27 		isatty: <>
+   28 		fileno: <>
+   29 		strEQ: <>
+   30 		fopen: <>
+   31 		str_get: <>
+   32 		hnew: HASH * (), <./perl/x2p/hash.c 169>
+   33 			safemalloc: 3
+   34 			hiterinit: int (), <./perl/x2p/hash.c 192>
+   35 				Null: <>
+   36 			bzero: <>
+   37 		yyparse: int (), <perly.c 1375>
+   38 			New: <>
+   39 			SAVEDESTRUCTOR_X: <>
+   40 			yydestruct: void (), <perly.c 2488>
+   41 				Safefree: <>
+   42 			getenv: <>
+   43 			yylex: int (), <./perl/x2p/a2py.c 210>
+   44 				strchr: <>
+   45 				fprintf: <>
+   46 				yyerror: void (), <./perl/x2p/a2py.c 860>
+   47 					fprintf: <>
+   48 				str_get: <>
+   49 				RETURN: <>
+   50 				str_gets: char * (), <./perl/x2p/str.c 260>
+   51 					getc: <>
+   52 					FILE_cnt: <>
+   53 					GROWSTR: <>
+   54 					FILE_ptr: <>
+   55 					fgets: <>
+   56 					str_set: void (), <./perl/x2p/str.c 91>
+   57 						strlen: <>
+   58 						GROWSTR: <>
+   59 						bcopy: <>
+   60 				fclose: <>
+   61 				XTERM: <>
+   62 				string: int (), <./perl/x2p/a2py.c 903>
+   63 					strlen: <>
+   64 					safemalloc: 3
+   65 					strncpy: <>
+   66 					fatal: 21
+   67 				XOP: <>
+   68 				isspace: <>
+   69 				strnEQ: <>
+   70 				do_chop: <>
+   71 				ID: <>
+   72 				isdigit: <>
+   73 				atoi: <>
+   74 				scanpat: char * (), <./perl/x2p/a2py.c 815>
+   75 					fatal: 21
+   76 					str_get: <>
+   77 					string: 62
+   78 				scannum: char * (), <./perl/x2p/a2py.c 867>
+   79 					isdigit: <>
+   80 					strchr: <>
+   81 					string: 62
+   82 				cpy2: char * (), <./perl/x2p/util.c 121>
+   83 				fatal: 21
+   84 				STRING: <>
+   85 				strEQ: <>
+   86 				numary: int (), <./perl/x2p/a2py.c 1178>
+   87 					walk: STR * (), <./perl/x2p/walk.c 43>
+   88 						str_make: STR * (), <./perl/x2p/str.c 430>
+   89 							str_new: 2
+   90 							str_set: 56
+   91 						isalpha: <>
+   92 						isdigit: <>
+   93 						savestr: 13
+   94 						str_new: 2
+   95 						walk: 87
+   96 						str_cat: void (), <./perl/x2p/str.c 141>
+   97 							str_2ptr: char * (), <./perl/x2p/str.c 27>
+   98 								GROWSTR: <>
+   99 								sprintf: <>
+  100 								debug: <>
+  101 								fprintf: <>
+  102 							strlen: <>
+  103 							GROWSTR: <>
+  104 							bcopy: <>
+  105 						do_chop: <>
+  106 						strchr: <>
+  107 						sprintf: <>
+  108 						str_scat: void (), <./perl/x2p/str.c 132>
+  109 							str_2ptr: 97
+  110 							str_ncat: void (), <./perl/x2p/str.c 119>
+  111 								str_2ptr: 97
+  112 								GROWSTR: <>
+  113 								bcopy: <>
+  114 						str_free: void (), <./perl/x2p/str.c 233>
+  115 						tab: void (), <./perl/x2p/walk.c 1562>
+  116 							str_cat: 96
+  117 						emit_split: void (), <./perl/x2p/walk.c 1603>
+  118 							str_cat: 96
+  119 							sprintf: <>
+  120 							tab: 115
+  121 						fixtab: void (), <./perl/x2p/walk.c 1573>
+  122 							str_cat: 96
+  123 							tab: 115
+  124 						str_set: 56
+  125 						oper1: int (), <./perl/x2p/a2py.c 932>
+  126 							fatal: 21
+  127 						strEQ: <>
+  128 						str_len: int (), <./perl/x2p/str.c 247>
+  129 							str_2ptr: 97
+  130 						cpytill: char * (), <./perl/x2p/util.c 102>
+  131 						fatal: 21
+  132 						islower: <>
+  133 						toupper: <>
+  134 						strcpy: <>
+  135 						hfetch: STR * (), <./perl/x2p/hash.c 20>
+  136 							strNE: <>
+  137 						hstore: bool (), <./perl/x2p/hash.c 46>
+  138 							strNE: <>
+  139 							safefree: Free_t (), <./perl/x2p/util.c 77>
+  140 								debug: <>
+  141 								fprintf: <>
+  142 								free: <>
+  143 							safemalloc: 3
+  144 							savestr: 13
+  145 							hsplit: void (), <./perl/x2p/hash.c 132>
+  146 								saferealloc: Malloc_t (), <./perl/x2p/util.c 52>
+  147 									realloc: <>
+  148 									debug: <>
+  149 									fprintf: <>
+  150 									fputs: <>
+  151 									exit: <>
+  152 								bzero: <>
+  153 						safefree: 139
+  154 						str_sset: void (), <./perl/x2p/str.c 67>
+  155 							str_nset: void (), <./perl/x2p/str.c 80>
+  156 								GROWSTR: <>
+  157 								bcopy: <>
+  158 							str_numset: void (), <./perl/x2p/str.c 19>
+  159 						instr: char * (), <./perl/x2p/util.c 139>
+  160 						atoi: <>
+  161 						strNE: <>
+  162 						addsemi: void (), <./perl/x2p/walk.c 1591>
+  163 							str_cat: 96
+  164 						strnEQ: <>
+  165 						str_nset: 155
+  166 						str_ncat: 110
+  167 						debug: <>
+  168 						printf: <>
+  169 						putchar: <>
+  170 					str_cat: 96
+  171 					hstore: 137
+  172 					str_make: 88
+  173 					str_free: 114
+  174 				FUN1: <>
+  175 				toupper: <>
+  176 			PerlIO_printf: int (), <./perl/perlio.c 416>
+  177 				va_list: <>
+  178 				va_start: <>
+  179 				vfprintf: 24
+  180 				va_end: <>
+  181 			Renew: <>
+  182 			yyerror: 46
+  183 			newPROG: <>
+  184 			block_end: <>
+  185 			block_start: <>
+  186 			append_list: <>
+  187 			newSTATEOP: <>
+  188 			newOP: <>
+  189 			newLOGOP: <>
+  190 			newLOOPOP: <>
+  191 			scalar: <>
+  192 			newFOROP: <>
+  193 			scope: <>
+  194 			newCONDOP: <>
+  195 			newWHILEOP: <>
+  196 			mod: <>
+  197 			OP: <>
+  198 			append_elem: <>
+  199 			scan_num: <>
+  200 			invert: <>
+  201 			intro_my: <>
+  202 			newFORM: <>
+  203 			newMYSUB: <>
+  204 			newATTRSUB: <>
+  205 			start_subparse: <>
+  206 			SvPV: <>
+  207 			strEQ: <>
+  208 			CvSPECIAL_on: <>
+  209 			package: <>
+  210 			utilize: <>
+  211 			convert: <>
+  212 			prepend_elem: <>
+  213 			newGVREF: <>
+  214 			newUNOP: <>
+  215 			newANONATTRSUB: <>
+  216 			newBINOP: <>
+  217 			oopsAV: <>
+  218 			ref: <>
+  219 			newAVREF: <>
+  220 			oopsHV: <>
+  221 			jmaybe: <>
+  222 			newHVREF: <>
+  223 			newCVREF: <>
+  224 			newASSIGNOP: <>
+  225 			newRANGE: <>
+  226 			bind_match: <>
+  227 			localize: <>
+  228 			sawparens: <>
+  229 			newNULLLIST: <>
+  230 			newANONLIST: <>
+  231 			newANONHASH: <>
+  232 			newSLICEOP: <>
+  233 			newLISTOP: <>
+  234 			list: <>
+  235 			dofile: <>
+  236 			dep: <>
+  237 			newLOOPEX: <>
+  238 			pmruntime: <>
+  239 			my_attrs: <>
+  240 			my: <>
+  241 			newSVREF: <>
+  242 		printf: <>
+  243 		putchar: <>
+  244 		dump: void (), <./perl/x2p/a2py.c 1014>
+  245 			printf: <>
+  246 			dump: 244
+  247 		prewalk: int (), <./perl/x2p/walk.c 1636>
+  248 			prewalk: 247
+  249 			strlen: <>
+  250 			numericize: void (), <./perl/x2p/walk.c 2053>
+  251 				walk: 87
+  252 				str_make: 88
+  253 				hstore: 137
+  254 			walk: 87
+  255 			str_cat: 96
+  256 			str_new: 2
+  257 			str_set: 56
+  258 			hstore: 137
+  259 			str_free: 114
+  260 			str_scat: 108
+  261 			fixrargs: int (), <./perl/x2p/a2py.c 1264>
+  262 				fixrargs: 261
+  263 				safemalloc: 3
+  264 				strlen: <>
+  265 				sprintf: <>
+  266 				hfetch: 135
+  267 				safefree: 139
+  268 				strEQ: <>
+  269 				fatal: 21
+  270 			hfetch: 135
+  271 			atoi: <>
+  272 			fatal: 21
+  273 		walk: 87
+  274 		str_make: 88
+  275 		str_cat: 96
+  276 		str_scat: 108
+  277 		str_free: 114
+  278 		fixup: void (), <./perl/x2p/a2py.c 1054>
+  279 			strcpy: <>
+  280 			isspace: <>
+  281 		putlines: void (), <./perl/x2p/a2py.c 1079>
+  282 			putone: void (), <./perl/x2p/a2py.c 1155>
+  283 				strcpy: <>
+  284 				strlen: <>
+  285 				strnEQ: <>
+  286 				fputs: <>
+  287 			isspace: <>
+  288 			strcpy: <>
+  289 			putchar: <>
+  290 			strlen: <>
+  291 		exit: <>
+  292 		malloc: <>
+  293 		strlen: <>
+  294 		oops: void (), <./perl/ext/SDBM_File/sdbm/util.c 9>
+  295 			fprintf: <>
+  296 			exit: <>
+  297 		strcpy: <>
+  298 		open: <>
+  299 		sdump: void (), <./perl/ext/SDBM_File/sdbm/dba.c 43>
+  300 			read: <>
+  301 			okpage: int (), <./perl/ext/SDBM_File/sdbm/util.c 25>
+  302 			fprintf: <>
+  303 			empty: <>
+  304 			dispage: void (), <./perl/ext/SDBM_File/sdbm/dbd.c 93>
+  305 				printf: <>
+  306 				putchar: <>
+  307 			oops: 294
+  308 			printf: <>
+  309 			pagestat: int (), <./perl/ext/SDBM_File/sdbm/dba.c 73>
+  310 				free: <>
+  311 				printf: <>
+  312 		getopt: char (), <./perl/ext/SDBM_File/sdbm/dbe.c 55>
+  313 			index: <>
+  314 			fprintf: <>
+  315 		parse: cmd * (), <./perl/ext/SDBM_File/sdbm/dbu.c 212>
+  316 			strcmp: <>
+  317 		badk: void (), <./perl/ext/SDBM_File/sdbm/dbu.c 196>
+  318 			fprintf: <>
+  319 			exit: <>
+  320 		doit: void (), <./perl/ext/SDBM_File/sdbm/dbu.c 99>
+  321 			dbm_open: <>
+  322 			oops: 294
+  323 			malloc: <>
+  324 			fgets: <>
+  325 			strlen: <>
+  326 			dbm_fetch: <>
+  327 			prdatum: void (), <./perl/ext/SDBM_File/sdbm/dbu.c 224>
+  328 				fprintf: <>
+  329 				putc: <>
+  330 			putchar: <>
+  331 			fprintf: <>
+  332 			dbm_delete: <>
+  333 			dbm_firstkey: <>
+  334 			dbm_nextkey: <>
+  335 			time: <>
+  336 			strchr: <>
+  337 			dbm_store: <>
+  338 			printf: <>
+  339 			dbm_close: <>
+  340 		strcmp: <>
+  341 		dbm_open: <>
+  342 		read_datum: datum (), <./perl/ext/SDBM_File/sdbm/dbe.c 151>
+  343 			malloc: <>
+  344 			strlen: <>
+  345 			oops: 294
+  346 			isdigit: <>
+  347 		dbm_firstkey: <>
+  348 		dbm_error: <>
+  349 		dbm_fetch: <>
+  350 		print_datum: void (), <./perl/ext/SDBM_File/sdbm/dbe.c 131>
+  351 			putchar: <>
+  352 			isprint: <>
+  353 		dbm_nextkey: <>
+  354 		re_comp: <>
+  355 		re_exec: <>
+  356 		key2s: char * (), <./perl/ext/SDBM_File/sdbm/dbe.c 195>
+  357 			malloc: <>
+  358 			oops: 294
+  359 		dbm_delete: <>
+  360 		dbm_store: <>
+  361 		dbm_clearerr: <>
+  362 		dbm_close: <>
+  363 		getcwd: if (), <./perl/mint/pwd.c 29>
+  364 		strcat: <>
+  365 		load_add_on: <>
+  366 		get_nth_image_symbol: <>
+  367 		unload_add_on: <>
+  368 		free: <>
+  369 		DWORD: <>
+  370 		BOOL: <>
+  371 		GetFullPathName: <>
+  372 		strchr: <>
+  373 		GetVolumeInformation: <>
+  374 		setmode: <>
+  375 		strlwr: <>
+  376 		fwrite: <>
+  377 		RunPerl: EXTERN_C DllExport int (), <./perl/win32/perllib.c 260>
+  378 			GetModuleFileName: <>
+  379 			win32_longpath: DllExport char * (), <./perl/win32/win32.c 1205>
+  380 				isALPHA: <>
+  381 				FindFirstFile: <>
+  382 				strcpy: <>
+  383 				strlen: <>
+  384 				FindClose: <>
+  385 			PERL_SYS_INIT: <>
+  386 			perl_alloc: EXTERN_C PerlInterpreter * (), <./perl/win32/perllib.c 122>
+  387 				PerlMem_malloc: <>
+  388 				Zero: <>
+  389 				CPerlHost: <>
+  390 				new: operator (), <./perl/globals.c 38>
+  391 				perl_alloc_using: PerlInterpreter * (), <./perl/perl.c 87>
+  392 					new: operator (), <./perl/globals.c 38>
+  393 					Zero: <>
+  394 			perl_construct: EXTERN_C void (), <./perl/win32/perllib.c 156>
+  395 				init_interp: <>
+  396 				MUTEX_INIT: <>
+  397 				COND_INIT: <>
+  398 				init_main_thread: <>
+  399 				MEMBER_TO_FPTR: <>
+  400 				Perl_default_protect: void * (), <./perl/perlapi.c 3672>
+  401 					va_list: <>
+  402 					va_start: <>
+  403 					vdefault_protect: <>
+  404 					va_end: <>
+  405 					Perl_vdefault_protect: void * (), <./perl/perlapi.c 3685>
+  406 						JMPENV_PUSH: <>
+  407 						CALL_FPTR: <>
+  408 						Perl_vdefault_protect: 405
+  409 				NEWSV: <>
+  410 				sv_upgrade: <>
+  411 				SvREADONLY: <>
+  412 				SvREADONLY_on: <>
+  413 				SvREFCNT: <>
+  414 				sv_setpv: <>
+  415 				SvNV: <>
+  416 				Perl_sighandler: Signal_t (), <./perl/mg.c 2101>
+  417 					OP: <>
+  418 					I32: <>
+  419 					Perl_die: OP * (), <./perl/perlapi.c 599>
+  420 						OP: <>
+  421 						va_list: <>
+  422 						va_start: <>
+  423 						vdie: <>
+  424 						va_end: <>
+  425 						Perl_vdie: OP * (), <./perl/util.c 1476>
+  426 							DEBUG_S: <>
+  427 							PerlIO_printf: 176
+  428 							vmess: <>
+  429 							SvCUR: <>
+  430 							sv_catsv: <>
+  431 							SvPV: <>
+  432 							SvCUR_set: <>
+  433 							SAVESPTR: <>
+  434 							sv_2cv: <>
+  435 							CvDEPTH: <>
+  436 							CvROOT: <>
+  437 							CvXSUB: <>
+  438 							save_re_context: <>
+  439 							newSVpvn: <>
+  440 							SvREADONLY_on: <>
+  441 							SAVEFREESV: <>
+  442 							PUSHSTACKi: <>
+  443 							PUSHMARK: <>
+  444 							XPUSHs: <>
+  445 							call_sv: <>
+  446 							die_where: <>
+  447 							JMPENV_JUMP: <>
+  448 					SAVEDESTRUCTOR_X: <>
+  449 					unwind_handler_stack: void (), <./perl/mg.c 2240>
+  450 						SvREFCNT_dec: <>
+  451 					SvROK: <>
+  452 					SvRV: <>
+  453 					SvTYPE: <>
+  454 					sv_2cv: <>
+  455 					CvROOT: <>
+  456 					ckWARN: if (), <./perl/vms/vms.c 638>
+  457 					Perl_warner: void (), <./perl/perlapi.c 3355>
+  458 						va_list: <>
+  459 						va_start: <>
+  460 						vwarner: <>
+  461 						va_end: <>
+  462 						Perl_vwarner: void (), <./perl/perlapi.c 3365>
+  463 							vmess: <>
+  464 							SvPV: <>
+  465 							ckDEAD: <>
+  466 							DEBUG_S: <>
+  467 							PerlIO_printf: 176
+  468 							PTR2UV: <>
+  469 							SAVESPTR: <>
+  470 							sv_2cv: <>
+  471 							CvDEPTH: <>
+  472 							CvROOT: <>
+  473 							CvXSUB: <>
+  474 							save_re_context: <>
+  475 							newSVpvn: <>
+  476 							SvREADONLY_on: <>
+  477 							SAVEFREESV: <>
+  478 							PUSHSTACKi: <>
+  479 							PUSHMARK: <>
+  480 							XPUSHs: <>
+  481 							call_sv: <>
+  482 							die_where: <>
+  483 							JMPENV_JUMP: <>
+  484 							PerlIO_write: SSize_t (), <./perl/perlio.c 373>
+  485 								fwrite1: <>
+  486 							PerlIO_flush: int (), <./perl/perlio.c 323>
+  487 								Fflush: <>
+  488 							my_failure_exit: <>
+  489 							DEBUG_L: <>
+  490 							xstat: <>
+  491 							Perl_vwarner: 462
+  492 					GvENAME: <>
+  493 					CvGV: <>
+  494 					SvREFCNT_inc: <>
+  495 					sv_newmortal: <>
+  496 					sv_setpv: <>
+  497 					PUSHSTACKi: <>
+  498 					PUSHMARK: <>
+  499 					PUSHs: <>
+  500 					call_sv: <>
+  501 					SvREFCNT_dec: <>
+  502 				newHV: <>
+  503 				fclose: <>
+  504 				newSVpvn: <>
+  505 				SvREFCNT_inc: <>
+  506 				init_stacks: <>
+  507 				init_ids: <>
+  508 				init_i18nl10n: <>
+  509 				SET_NUMERIC_STANDARD: <>
+  510 				SvUPGRADE: <>
+  511 				SvGROW: <>
+  512 				SvPVX: <>
+  513 				uv_to_utf8: <>
+  514 				SvCUR_set: <>
+  515 				SvPOK_on: <>
+  516 				SvNVX: <>
+  517 				SvNOK_on: <>
+  518 				SvUTF8_on: <>
+  519 				PerlIO_init: void (), <./perl/perlio.c 473>
+  520 					sfset: <>
+  521 				newAV: <>
+  522 				Perl_construct: void (), <./perl/perlapi.c 2073>
+  523 					Perl_construct: 522
+  524 				catch: <>
+  525 				win32_fprintf: <>
+  526 				perl_free: EXTERN_C void (), <./perl/win32/perllib.c 189>
+  527 					PerlMem_free: <>
+  528 					win32_delete_internal_host: EXTERN_C void (), <./perl/win32/perllib.c 147>
+  529 						CPerlHost: <>
+  530 						delete: operator (), <./perl/globals.c 50>
+  531 							printf: <>
+  532 							dbm_rdonly: <>
+  533 							dbm_delete: <>
+  534 					Perl_free: void (), <./perl/perlapi.c 2087>
+  535 						Perl_free: 534
+  536 					catch: <>
+  537 					PERL_SET_THX: <>
+  538 			perl_parse: EXTERN_C int (), <./perl/win32/perllib.c 230>
+  539 				I32: <>
+  540 				Perl_croak: void (), <./perl/perlapi.c 308>
+  541 					va_list: <>
+  542 					va_start: <>
+  543 					vcroak: <>
+  544 					va_end: <>
+  545 					Perl_vcroak: void (), <./perl/perlapi.c 318>
+  546 						vmess: <>
+  547 						SvCUR: <>
+  548 						sv_catsv: <>
+  549 						SvPV: <>
+  550 						SvCUR_set: <>
+  551 						DEBUG_S: <>
+  552 						PerlIO_printf: 176
+  553 						PTR2UV: <>
+  554 						SAVESPTR: <>
+  555 						sv_2cv: <>
+  556 						CvDEPTH: <>
+  557 						CvROOT: <>
+  558 						CvXSUB: <>
+  559 						save_re_context: <>
+  560 						newSVpvn: <>
+  561 						SvREADONLY_on: <>
+  562 						SAVEFREESV: <>
+  563 						PUSHSTACKi: <>
+  564 						PUSHMARK: <>
+  565 						XPUSHs: <>
+  566 						call_sv: <>
+  567 						die_where: <>
+  568 						JMPENV_JUMP: <>
+  569 						PerlIO_write: 484
+  570 						PerlIO_flush: 486
+  571 						my_failure_exit: <>
+  572 						Perl_vcroak: 545
+  573 				savepv: <>
+  574 				init_ids: <>
+  575 				init_postdump_symbols: <>
+  576 				AvARRAY: <>
+  577 				op_free: <>
+  578 				SvREFCNT_dec: <>
+  579 				time: <>
+  580 				CALLPROTECT: <>
+  581 				MEMBER_TO_FPTR: <>
+  582 				S_vparse_body: STATIC void * (), <./perl/perl.c 887>
+  583 					va_arg: <>
+  584 					parse_body: <>
+  585 				JMPENV_PUSH: <>
+  586 				parse_body: <>
+  587 				call_list: <>
+  588 				PerlIO_printf: 176
+  589 				Perl_parse: int (), <./perl/perlapi.c 2101>
+  590 					Perl_parse: 589
+  591 				catch: <>
+  592 				win32_fprintf: <>
+  593 				win32_errno: <>
+  594 			xs_init: void (), <./perl/win32/perllib.c 30>
+  595 				newXS: <>
+  596 			CPerlHost: <>
+  597 			new: operator (), <./perl/globals.c 38>
+  598 			perl_clone_using: PerlInterpreter * (), <./perl/sv.c 7347>
+  599 				new: operator (), <./perl/globals.c 38>
+  600 				PERL_SET_THX: <>
+  601 				memset: <>
+  602 				Zero: <>
+  603 				PerlMem_malloc: <>
+  604 				ptr_table_new: <>
+  605 				SvANY: <>
+  606 				SvREFCNT: <>
+  607 				SvFLAGS: <>
+  608 				ptr_table_store: <>
+  609 				SvUPGRADE: <>
+  610 				new_XPVNV: <>
+  611 				SvPVX: <>
+  612 				SAVEPVN: <>
+  613 				SvCUR: <>
+  614 				SvLEN: <>
+  615 				SvNVX: <>
+  616 				newHV: <>
+  617 				HvSHAREKEYS_off: <>
+  618 				hv_ksplit: <>
+  619 				SAVEPV: <>
+  620 				specialWARN: <>
+  621 				sv_dup_inc: <>
+  622 				any_dup: <>
+  623 				New: <>
+  624 				gv_dup: <>
+  625 				sv_dup: <>
+  626 				av_dup: <>
+  627 				hv_dup_inc: <>
+  628 				hv_dup: <>
+  629 				av_dup_inc: <>
+  630 				cv_dup_inc: <>
+  631 				OpREFCNT_inc: <>
+  632 				Copy: <>
+  633 				fp_dup: <>
+  634 				cv_dup: <>
+  635 				ptr_table_fetch: <>
+  636 				sys_intern_dup: <>
+  637 				I32: <>
+  638 				Newz: <>
+  639 				OP: <>
+  640 				si_dup: <>
+  641 				AvARRAY: <>
+  642 				AvMAX: <>
+  643 				ss_dup: <>
+  644 				init_stacks: <>
+  645 				gv_dup_inc: <>
+  646 			perl_clone: PerlInterpreter * (), <./perl/sv.c 7327>
+  647 				perl_clone_using: 598
+  648 			perl_run: EXTERN_C int (), <./perl/win32/perllib.c 209>
+  649 				I32: <>
+  650 				CALLPROTECT: <>
+  651 				MEMBER_TO_FPTR: <>
+  652 				S_vrun_body: STATIC void * (), <./perl/perl.c 1358>
+  653 					I32: <>
+  654 					va_arg: <>
+  655 					run_body: <>
+  656 				JMPENV_PUSH: <>
+  657 				run_body: <>
+  658 				call_list: <>
+  659 				PerlEnv_getenv: <>
+  660 				dump_mstats: <>
+  661 				POPSTACK_TO: <>
+  662 				PerlIO_printf: 176
+  663 				Perl_run: int (), <./perl/perlapi.c 2094>
+  664 					Perl_run: 663
+  665 				catch: <>
+  666 				win32_fprintf: <>
+  667 			PERL_SET_THX: <>
+  668 			perl_destruct: EXTERN_C void (), <./perl/win32/perllib.c 172>
+  669 				I32: <>
+  670 				MUTEX_LOCK: <>
+  671 				DEBUG_S: <>
+  672 				PerlIO_printf: 176
+  673 				ThrSTATE: <>
+  674 				ThrSETSTATE: <>
+  675 				MUTEX_UNLOCK: <>
+  676 				JOIN: <>
+  677 				SvREFCNT_dec: <>
+  678 				DETACH: <>
+  679 				COND_WAIT: <>
+  680 				MUTEX_DESTROY: <>
+  681 				COND_DESTROY: <>
+  682 				PerlEnv_getenv: <>
+  683 				atoi: <>
+  684 				AvARRAY: <>
+  685 				op_free: <>
+  686 				sv_clean_objs: <>
+  687 				fn: <>
+  688 				aTHXo_: <>
+  689 				Safefree: <>
+  690 				DEBUG_P: <>
+  691 				debprofdump: <>
+  692 				PerlIO_close: int (), <./perl/perlio.c 275>
+  693 					fclose: <>
+  694 				setdefout: <>
+  695 				specialWARN: <>
+  696 				CopFILEGV: <>
+  697 				CopFILEGV_set: <>
+  698 				ckWARN_d: <>
+  699 				Perl_warner: 457
+  700 				SvFLAGS: <>
+  701 				sv_clean_all: <>
+  702 				AvREAL_off: <>
+  703 				HvMAX: <>
+  704 				HvARRAY: <>
+  705 				HeVAL: <>
+  706 				HeKEY: <>
+  707 				HeNEXT: <>
+  708 				SvREFCNT: <>
+  709 				sv_clear: <>
+  710 				SvANY: <>
+  711 				SvREADONLY_off: <>
+  712 				sv_free_arenas: <>
+  713 				HeKEY_hek: <>
+  714 				nuke_stacks: <>
+  715 				SvPVX: <>
+  716 				SvTYPE: <>
+  717 				SvMAGIC: <>
+  718 				SvOOK_off: <>
+  719 				Perl_destruct: void (), <./perl/perlapi.c 2080>
+  720 					Perl_destruct: 719
+  721 				catch: <>
+  722 			perl_free: 526
+  723 			PERL_SYS_TERM: <>
+  724 		fgets: <>
+  725 		tilde_sub: void (), <./perl/vms/munchconfig.c 303>
+  726 			strlen: <>
+  727 			strcmp: <>
+  728 			strcat: <>
+  729 			isalnum: <>
+  730 			strcpy: <>
+  731 		strstr: <>
+  732 		isalnum: <>
+  733 		strncmp: <>
+  734 		isspace: <>
+  735 		puts: <>
+  736 		fclose: <>
+  737 		PERL_SYS_INIT3: <>
+  738 		perl_alloc: 386
+  739 		perl_construct: 394
+  740 		perl_parse: 538
+  741 		xs_init: void (), <./perl/miniperlmain.c 69>
+  742 		perl_run: 648
+  743 		perl_destruct: 668
+  744 		perl_free: 526
+  745 		PERL_SYS_TERM: <>

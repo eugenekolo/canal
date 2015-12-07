@@ -1,0 +1,1950 @@
+    1 	main: int (), <./ntp/ntpdate/ntpdate.c 291>
+    2 		ntpdcmain: int (), <./ntp/ntpdc/ntpdc.c 273>
+    3 			clear_globals: void (), <./ntp/ntpdate/ntpdate.c 223>
+    4 			taskPrioritySet: <>
+    5 			taskIdSelf: <>
+    6 			ntp_getopt: int (), <./ntp/libntp/getopt.c 52>
+    7 				badopt: int (), <./ntp/libntp/getopt.c 37>
+    8 					fputs: <>
+    9 					putc: <>
+   10 			ADDCMD: <>
+   11 			fprintf: <>
+   12 			exit: <>
+   13 			ADDHOST: <>
+   14 			isatty: <>
+   15 			fileno: <>
+   16 			signal_no_reset: void (), <./ntp/libntp/syssignal.c 101>
+   17 				sigemptyset: <>
+   18 				sigaction: <>
+   19 				msyslog: , <./ntp/libntp/msyslog.c 49>
+   20 					va_start: <>
+   21 					va_arg: <>
+   22 					sprintf: <>
+   23 					strerror: char * (), <./ntp/libntp/strerror.c 28>
+   24 						sprintf: <>
+   25 					FormatMessage: <>
+   26 					GetLastError: <>
+   27 					MAKELANGID: <>
+   28 					strlen: <>
+   29 					strcpy: <>
+   30 					vsnprintf: <>
+   31 					syslog: <>
+   32 					reportAnEEvent: void (), <./ntp/libntp/log.c 129>
+   33 						RegisterEventSource: <>
+   34 						PERR: <>
+   35 						ReportEvent: <>
+   36 						DeregisterEventSource: <>
+   37 					reportAnIEvent: void (), <./ntp/libntp/log.c 79>
+   38 						RegisterEventSource: <>
+   39 						PERR: <>
+   40 						ReportEvent: <>
+   41 						DeregisterEventSource: <>
+   42 					reportAnWEvent: void (), <./ntp/libntp/log.c 104>
+   43 						RegisterEventSource: <>
+   44 						PERR: <>
+   45 						ReportEvent: <>
+   46 						DeregisterEventSource: <>
+   47 					strrchr: <>
+   48 					fprintf: <>
+   49 					humanlogtime: char * (), <./ntp/libntp/humandate.c 49>
+   50 						time: <>
+   51 						localtime: <>
+   52 						LIB_GETBUF: <>
+   53 						sprintf: <>
+   54 					getpid: <>
+   55 					fflush: <>
+   56 					va_end: <>
+   57 				perror: <>
+   58 				exit: <>
+   59 				bzero: <>
+   60 				sigvec: <>
+   61 				sigset: <>
+   62 				signal: <>
+   63 			abortcmd: RETSIGTYPE (), <./ntp/ntpdc/ntpdc.c 940>
+   64 				fflush: <>
+   65 				putc: <>
+   66 				longjmp: <>
+   67 			malloc: <>
+   68 			MAKEWORD: <>
+   69 			WSAStartup: <>
+   70 			openhost: int (), <./ntp/ntpdc/ntpdc.c 387>
+   71 				getservbyname: struct servent (), <./ntp/libntp/machines.c 65>
+   72 				malloc: <>
+   73 				htons: <>
+   74 				fprintf: <>
+   75 				exit: <>
+   76 				printf: <>
+   77 				getnetnum: int (), <./ntp/ntpdc/ntpdc.c 1208>
+   78 					decodenetnum: int (), <./ntp/libntp/decodenetnum.c 12>
+   79 						isdigit: <>
+   80 						atoi: <>
+   81 						htonl: <>
+   82 					sprintf: <>
+   83 					htonl: <>
+   84 					gethostbyname: struct hostent (), <./ntp/libntp/machines.c 38>
+   85 					memmove: void * (), <./ntp/libntp/memmove.c 66>
+   86 						TLOOP1: <>
+   87 						TLOOP: <>
+   88 					strcpy: <>
+   89 					fprintf: <>
+   90 				closesocket: <>
+   91 				strcpy: <>
+   92 				setsockopt: <>
+   93 				socket: <>
+   94 				error: void (), <./ntp/ntpdc/ntpdc.c 1649>
+   95 					warning: void (), <./ntp/ntpdc/ntpdc.c 1632>
+   96 						fprintf: <>
+   97 						perror: <>
+   98 					exit: <>
+   99 				connect: <>
+  100 			getcmds: void (), <./ntp/ntpdc/ntpdc.c 915>
+  101 				fputs: <>
+  102 				fflush: <>
+  103 				fgets: <>
+  104 				docmd: void (), <./ntp/ntpdc/ntpdc.c 957>
+  105 					tokenize: void (), <./ntp/ntpdc/ntpdc.c 1049>
+  106 						sp: <>
+  107 						ISSPACE: <>
+  108 						ISEOL: <>
+  109 					findcmd: int (), <./ntp/ntpdc/ntpdc.c 1081>
+  110 						strlen: <>
+  111 						strncmp: if (), <./ntp/util/ansi2knr.c 616>
+  112 					fprintf: <>
+  113 					printusage: void (), <./ntp/ntpdc/ntpdc.c 1358>
+  114 						fprintf: <>
+  115 					getarg: int (), <./ntp/ntpdc/ntpdc.c 1148>
+  116 						getnetnum: 77
+  117 						strchr: <>
+  118 						fprintf: <>
+  119 					fopen: <>
+  120 					perror: <>
+  121 					setjmp: <>
+  122 					fclose: <>
+  123 			printf: <>
+  124 			docmd: 104
+  125 			WSACleanup: <>
+  126 		sscanf: <>
+  127 		printf: <>
+  128 		fmt_blong: char * (), <./ntp/libntp/ieee754io.c 29>
+  129 			LIB_GETBUF: <>
+  130 		fetch_ieee754: int (), <./ntp/libntp/ieee754io.c 131>
+  131 			get_byte: unsigned char (), <./ntp/libntp/ieee754io.c 95>
+  132 				printf: <>
+  133 			printf: <>
+  134 			fmt_hex: char * (), <./ntp/libntp/ieee754io.c 76>
+  135 				LIB_GETBUF: <>
+  136 				sprintf: <>
+  137 			fmt_flt: char * (), <./ntp/libntp/ieee754io.c 58>
+  138 				LIB_GETBUF: <>
+  139 				sprintf: <>
+  140 				fmt_blong: 128
+  141 			L_CLR: <>
+  142 			L_NEG: <>
+  143 		mfptoa: char * (), <./ntp/libntp/mfptoa.c 8>
+  144 			M_ISNEG: <>
+  145 			M_NEG: <>
+  146 			dolfptoa: char * (), <./ntp/libntp/dolfptoa.c 12>
+  147 				LIB_GETBUF: <>
+  148 				memset: <>
+  149 				L_LSHIFT: <>
+  150 				L_ADD: <>
+  151 		put_ieee754: int (), <./ntp/libntp/ieee754io.c 364>
+  152 			L_ISNEG: <>
+  153 			L_NEG: <>
+  154 			L_ISZERO: <>
+  155 			printf: <>
+  156 			fmt_flt: 137
+  157 		GetVersion: <>
+  158 		MessageBox: <>
+  159 		stricmp: <>
+  160 		DisplayHelp: VOID (), <./ntp/ports/winnt/instsrv/instsrv.c 444>
+  161 			printf: <>
+  162 		exit: <>
+  163 		strlen: <>
+  164 		OpenSCManager: <>
+  165 		GetLastError: <>
+  166 		PERR: <>
+  167 		RemoveService: int (), <./ntp/ports/winnt/instsrv/instsrv.c 127>
+  168 			EnumServicesStatus: <>
+  169 			GetLastError: <>
+  170 			printf: <>
+  171 			PERR: <>
+  172 			OpenService: <>
+  173 			DeleteService: <>
+  174 		strcpy: <>
+  175 		InstallService: int (), <./ntp/ports/winnt/instsrv/instsrv.c 28>
+  176 			printf: <>
+  177 			GetDriveType: <>
+  178 			CreateFile: <>
+  179 			CreateService: <>
+  180 			GetLastError: <>
+  181 			PERR: <>
+  182 			CloseServiceHandle: <>
+  183 		CloseServiceHandle: <>
+  184 		addSourceToRegistry: int (), <./ntp/ports/winnt/instsrv/instsrv.c 217>
+  185 			RegCreateKey: <>
+  186 			PERR: <>
+  187 			RegSetValueEx: <>
+  188 			strlen: <>
+  189 			RegCloseKey: <>
+  190 		addKeysToRegistry: int (), <./ntp/ports/winnt/instsrv/instsrv.c 272>
+  191 			RegCreateKey: <>
+  192 			PERR: <>
+  193 			strcpy: <>
+  194 			RegSetValueEx: <>
+  195 			RegCloseKey: <>
+  196 		ntpdmain: int (), <./ntp/ntpd/ntpd.c 296>
+  197 			umask: <>
+  198 			getuid: <>
+  199 			msyslog: 19
+  200 			exit: <>
+  201 			GetModuleFileName: <>
+  202 			addSourceToRegistry: 184
+  203 			get_systime: void (), <./ntp/libntp/systime.c 57>
+  204 				clock_gettime: <>
+  205 				getclock: <>
+  206 				GETTIMEOFDAY: <>
+  207 			SRANDOM: <>
+  208 			getstartup: void (), <./ntp/ntpd/ntp_config.c 513>
+  209 				ntp_getopt: 6
+  210 				atol: <>
+  211 				printf: <>
+  212 				msyslog: 19
+  213 				fprintf: <>
+  214 				fopen: <>
+  215 				NLOG: <>
+  216 				fileno: <>
+  217 				fclose: <>
+  218 				exit: <>
+  219 				setvbuf: <>
+  220 				setlinebuf: <>
+  221 			daemon: <>
+  222 			fork: <>
+  223 			fcntl: <>
+  224 			sysconf: <>
+  225 			getdtablesize: <>
+  226 			close: <>
+  227 			open: <>
+  228 			dup2: <>
+  229 			who_am_i: <>
+  230 			make_server: <>
+  231 			setsid: <>
+  232 			setpgid: <>
+  233 			ioctl: int (), <./ntp/ports/winnt/ntpd/win32_io.c 122>
+  234 				EscapeCommFunction: <>
+  235 			setpgrp: <>
+  236 			getpid: <>
+  237 			catch_danger: void (), <./ntp/ntpd/ntpd.c 213>
+  238 				msyslog: 19
+  239 			sigemptyset: <>
+  240 			sigaction: <>
+  241 			TEXT: <>
+  242 			service_main: void (), <./ntp/ntpd/ntpd.c 471>
+  243 				RegisterServiceCtrlHandler: <>
+  244 				TEXT: <>
+  245 				service_ctrl: void (), <./ntp/ntpd/ntpd.c 964>
+  246 					SetServiceStatus: <>
+  247 					msyslog: 19
+  248 					SetEvent: <>
+  249 				msyslog: 19
+  250 				SetServiceStatus: <>
+  251 				strrchr: <>
+  252 				getstartup: 208
+  253 				openlog: <>
+  254 				setlogmask: <>
+  255 				LOG_UPTO: <>
+  256 				NLOG: <>
+  257 				mlockall: <>
+  258 				ulimit: <>
+  259 				get_aix_stack: char * (), <./ntp/ntpd/ntpd.c 203>
+  260 				plock: <>
+  261 				signal_no_reset: 16
+  262 				finish: RETSIGTYPE (), <./ntp/ntpd/ntpd.c 882>
+  263 					msyslog: 19
+  264 					printf: <>
+  265 					exit: <>
+  266 				moredebug: RETSIGTYPE (), <./ntp/ntpd/ntpd.c 910>
+  267 					msyslog: 19
+  268 				lessdebug: RETSIGTYPE (), <./ntp/ntpd/ntpd.c 928>
+  269 					msyslog: 19
+  270 				no_debug: RETSIGTYPE (), <./ntp/ntpd/ntpd.c 946>
+  271 					msyslog: 19
+  272 				SetConsoleCtrlHandler: <>
+  273 				OnConsoleEvent: BOOL WINAPI (), <./ntp/ntpd/ntpd.c 1018>
+  274 					printf: <>
+  275 					SetEvent: <>
+  276 				init_io_completion_port: void (), <./ntp/ports/winnt/ntpd/ntp_iocompletionport.c 82>
+  277 					CreateIoCompletionPort: <>
+  278 					msyslog: 19
+  279 					exit: <>
+  280 					iocompletionthread: void __cdecl (), <./ntp/ports/winnt/ntpd/ntp_iocompletionport.c 52>
+  281 						SetThreadPriority: <>
+  282 						GetCurrentThread: <>
+  283 						msyslog: 19
+  284 						GetQueuedCompletionStatus: <>
+  285 				init_auth: void (), <./ntp/libntp/authkeys.c 86>
+  286 					memset: <>
+  287 				init_util: void (), <./ntp/ntpd/ntp_util.c 84>
+  288 					emalloc: void * (), <./ntp/libntp/emalloc.c 34>
+  289 						malloc: <>
+  290 						msyslog: 19
+  291 						exit: <>
+  292 					strlen: <>
+  293 					strcpy: <>
+  294 					filegen_register: void (), <./ntp/ntpd/ntp_filegen.c 480>
+  295 						printf: <>
+  296 						strcmp: <>
+  297 						emalloc: 288
+  298 						strlen: <>
+  299 						strcpy: <>
+  300 				init_restrict: void (), <./ntp/ntpd/ntp_restrict.c 90>
+  301 					memset: <>
+  302 					htonl: <>
+  303 					sprintf: <>
+  304 					set_sys_var: void (), <./ntp/ntpd/ntp_control.c 2630>
+  305 						set_var: void (), <./ntp/ntpd/ntp_control.c 2576>
+  306 							free: <>
+  307 							emalloc: 288
+  308 							memmove: 85
+  309 							add_var: char * (), <./ntp/ntpd/ntp_control.c 2547>
+  310 								count_var: u_long (), <./ntp/ntpd/ntp_control.c 2529>
+  311 								emalloc: 288
+  312 								memmove: 85
+  313 								free: <>
+  314 					strlen: <>
+  315 				init_mon: void (), <./ntp/ntpd/ntp_monitor.c 99>
+  316 					memset: <>
+  317 				init_timer: void (), <./ntp/ntpd/ntp_timer.c 83>
+  318 					timer_create: <>
+  319 					fprintf: <>
+  320 					exit: <>
+  321 					signal_no_reset: 16
+  322 					alarming: RETSIGTYPE (), <./ntp/ntpd/ntp_timer.c 298>
+  323 						addx: <>
+  324 						setimr: <>
+  325 						alarming: 322
+  326 					timer_settime: <>
+  327 					setitimer: <>
+  328 					emul: <>
+  329 					gettim: <>
+  330 					addx: <>
+  331 					setimr: <>
+  332 					OpenProcessToken: <>
+  333 					GetCurrentProcess: <>
+  334 					msyslog: 19
+  335 					LookupPrivilegeValue: <>
+  336 					AdjustTokenPrivileges: <>
+  337 					GetLastError: <>
+  338 					CreateWaitableTimer: <>
+  339 					SetWaitableTimer: <>
+  340 				init_lib: void (), <./ntp/libntp/lib_strbuf.c 18>
+  341 				init_random: void (), <./ntp/libntp/ranny.c 66>
+  342 					time: <>
+  343 				init_request: void (), <./ntp/ntpd/ntp_request.c 193>
+  344 				init_control: void (), <./ntp/ntpd/ntp_control.c 414>
+  345 					uname: <>
+  346 					ctl_clr_stats: void (), <./ntp/ntpd/ntp_control.c 2508>
+  347 				init_peer: void (), <./ntp/ntpd/ntp_peer.c 142>
+  348 					ranp2: u_long (), <./ntp/libntp/ranny.c 47>
+  349 				init_refclock: void (), <./ntp/ntpd/ntp_refclock.c 158>
+  350 				init_proto: void (), <./ntp/ntpd/ntp_proto.c 1984>
+  351 					default_get_precision: int (), <./ntp/util/precision.c 119>
+  352 						sysctlbyname: <>
+  353 						getclock: <>
+  354 						GETTIMEOFDAY: <>
+  355 						NLOG: <>
+  356 						msyslog: 19
+  357 						printf: <>
+  358 					L_CLR: <>
+  359 					get_systime: 203
+  360 					msyslog: 19
+  361 				init_io: void (), <./ntp/ntpd/ntp_io.c 144>
+  362 					init_transmitbuff: void (), <./ntp/ports/winnt/libntp/transmitbuff.c 65>
+  363 						initialise_buffer: void (), <./ntp/ports/winnt/libntp/transmitbuff.c 52>
+  364 							memset: <>
+  365 							CreateEvent: <>
+  366 						InitializeCriticalSection: <>
+  367 					init_recvbuff: void (), <./ntp/libntp/recvbuff.c 93>
+  368 						emalloc: 288
+  369 						initialise_buffer: void (), <./ntp/libntp/recvbuff.c 61>
+  370 							memset: <>
+  371 							CreateEvent: <>
+  372 						InitializeCriticalSection: <>
+  373 						CreateEvent: <>
+  374 					set_signal: void (), <./ntp/libntp/iosignal.c 473>
+  375 						signal_no_reset: 16
+  376 						sigio_handler: RETSIGTYPE (), <./ntp/libntp/iosignal.c 292>
+  377 							get_systime: 203
+  378 							input_handler: void (), <./ntp/ntptrace/ntptrace.c 102>
+  379 								msyslog: 19
+  380 								select: <>
+  381 								FD_ISSET: <>
+  382 								free_recvbuffs: u_long (), <./ntp/libntp/recvbuff.c 37>
+  383 								read: <>
+  384 								ReadFile: <>
+  385 								get_free_recv_buffer: struct recvbuf (), <./ntp/libntp/recvbuff.c 236>
+  386 								freerecvbuf: void (), <./ntp/libntp/recvbuff.c 194>
+  387 									RECV_BLOCK_IO: <>
+  388 									BLOCKIO: <>
+  389 									UNBLOCKIO: <>
+  390 									RECV_UNBLOCK_IO: <>
+  391 								add_full_recv_buffer: void (), <./ntp/libntp/recvbuff.c 209>
+  392 									RECV_BLOCK_IO: <>
+  393 									SetEvent: <>
+  394 									msyslog: 19
+  395 									RECV_UNBLOCK_IO: <>
+  396 								recvfrom: <>
+  397 								printf: <>
+  398 								inet_ntoa: <>
+  399 								ntohl: <>
+  400 								receive: void (), <./ntp/ntpd/ntp_proto.c 209>
+  401 									ntp_monitor: void (), <./ntp/ntpd/ntp_monitor.c 197>
+  402 										NSRCADR: <>
+  403 										MON_HASH: <>
+  404 										PKT_MODE: <>
+  405 										PKT_VERSION: <>
+  406 										NSRCPORT: <>
+  407 										remove_from_hash: void (), <./ntp/ntpd/ntp_monitor.c 334>
+  408 											MON_HASH: <>
+  409 										mon_getmoremem: void (), <./ntp/ntpd/ntp_monitor.c 309>
+  410 											emalloc: 288
+  411 									restrictions: int (), <./ntp/ntpd/ntp_restrict.c 145>
+  412 										SRCADR: <>
+  413 										SRCPORT: <>
+  414 										IN_CLASSD: <>
+  415 										ntohl: <>
+  416 										printf: <>
+  417 										netof: u_int32 (), <./ntp/libntp/netof.c 11>
+  418 											IN_CLASSC: <>
+  419 											IN_CLASSB: <>
+  420 										numtoa: char * (), <./ntp/libntp/numtoa.c 11>
+  421 											ntohl: <>
+  422 											LIB_GETBUF: <>
+  423 											sprintf: <>
+  424 									printf: <>
+  425 									ntoa: <>
+  426 									PKT_VERSION: <>
+  427 									PKT_MODE: <>
+  428 									process_private: void (), <./ntp/ntpd/ntp_request.c 374>
+  429 										printf: <>
+  430 										ISRESPONSE: <>
+  431 										ISMORE: <>
+  432 										INFO_VERSION: <>
+  433 										INFO_SEQ: <>
+  434 										INFO_ERR: <>
+  435 										INFO_MBZ: <>
+  436 										req_ack: void (), <./ntp/ntpd/ntp_request.c 211>
+  437 											RM_VN_MODE: <>
+  438 											AUTH_SEQ: <>
+  439 											ERR_NITEMS: <>
+  440 											MBZ_ITEMSIZE: <>
+  441 											sendpkt: void (), <./ntp/ntpd/ntp_io.c 1131>
+  442 												IN_MULTICAST: <>
+  443 												ntohl: <>
+  444 												printf: <>
+  445 												ntoa: <>
+  446 												setsockopt: <>
+  447 												msyslog: 19
+  448 												io_completion_port_sendto: DWORD (), <./ntp/ports/winnt/ntpd/ntp_iocompletionport.c 332>
+  449 													get_free_transmit_buffer: struct transmitbuf * (), <./ntp/ports/winnt/libntp/transmitbuff.c 125>
+  450 													memcpy: <>
+  451 													OnSendToComplete: int (), <./ntp/ports/winnt/ntpd/ntp_iocompletionport.c 319>
+  452 														offsetof: <>
+  453 														free_transmit_buffer: void (), <./ntp/ports/winnt/libntp/transmitbuff.c 112>
+  454 															TRANSMIT_BLOCK_IO: <>
+  455 															TRANSMIT_UNBLOCK_IO: <>
+  456 													WSASendTo: <>
+  457 													WSAAddressToString: <>
+  458 													printf: <>
+  459 													exit: <>
+  460 												sendto: <>
+  461 										INFO_IS_AUTH: <>
+  462 										ntohl: <>
+  463 										authhavekey: int (), <./ntp/libntp/authkeys.c 144>
+  464 											KEYHASH: <>
+  465 										NTOHL_FP: <>
+  466 										L_SUB: <>
+  467 										LFPTOD: <>
+  468 										fabs: <>
+  469 										authdecrypt: int (), <./ntp/libntp/authkeys.c 543>
+  470 											authhavekey: 463
+  471 											DESauthdecrypt: int (), <./ntp/libntp/authencrypt.c 67>
+  472 												DES_CBCInit: <>
+  473 												DES_CBCUpdate: <>
+  474 												ntohl: <>
+  475 											MD5authdecrypt: int (), <./ntp/libntp/a_md5encrypt.c 66>
+  476 												MD5Init: void (), <./ntp/libntp/md5c.c 100>
+  477 												MD5Update: void (), <./ntp/libntp/md5c.c 119>
+  478 													MD5_memcpy: void (), <./ntp/libntp/md5c.c 325>
+  479 													MD5Transform: void (), <./ntp/libntp/md5c.c 194>
+  480 														Decode: void (), <./ntp/libntp/md5c.c 309>
+  481 														FF: <>
+  482 														GG: <>
+  483 														HH: <>
+  484 														II: <>
+  485 														MD5_memset: void (), <./ntp/libntp/md5c.c 340>
+  486 												MD5Final: void (), <./ntp/libntp/md5c.c 163>
+  487 													Encode: void (), <./ntp/libntp/md5c.c 289>
+  488 													MD5Update: 477
+  489 													MD5_memset: 485
+  490 												memcmp: <>
+  491 										INFO_ITEMSIZE: <>
+  492 										INFO_NITEMS: <>
+  493 									process_control: void (), <./ntp/ntpd/ntp_control.c 478>
+  494 										printf: <>
+  495 										PKT_VERSION: <>
+  496 										PKT_LI_VN_MODE: <>
+  497 										htons: <>
+  498 										ctl_error: void (), <./ntp/ntpd/ntp_control.c 438>
+  499 											printf: <>
+  500 											htons: <>
+  501 											htonl: <>
+  502 											authencrypt: int (), <./ntp/libntp/authkeys.c 505>
+  503 												htonl: <>
+  504 												authhavekey: 463
+  505 												DESauthencrypt: int (), <./ntp/libntp/authencrypt.c 35>
+  506 													DES_CBCInit: <>
+  507 													DES_CBCUpdate: <>
+  508 													htonl: <>
+  509 												MD5authencrypt: int (), <./ntp/libntp/a_md5encrypt.c 37>
+  510 													MD5Init: void (), <./ntp/libntp/md5c.c 100>
+  511 													MD5Update: 477
+  512 													MD5Final: 486
+  513 													memmove: 85
+  514 											sendpkt: 441
+  515 										ntohl: <>
+  516 										authistrusted: int (), <./ntp/libntp/authkeys.c 290>
+  517 											KEYHASH: <>
+  518 										authdecrypt: 469
+  519 									ntohl: <>
+  520 									SRCPORT: <>
+  521 									authistrusted: 516
+  522 									session_key: u_long (), <./ntp/libntp/a_md5encrypt.c 96>
+  523 										keyid: void (), <./ntp/ntpq/ntpq.c 2098>
+  524 											fprintf: <>
+  525 										htonl: <>
+  526 										MD5Init: void (), <./ntp/libntp/md5c.c 100>
+  527 										MD5Update: 477
+  528 										MD5Final: 486
+  529 										memcpy: <>
+  530 										MD5auth_setkey: void (), <./ntp/libntp/authkeys.c 373>
+  531 											KEYHASH: <>
+  532 											strncpy: <>
+  533 											auth_moremem: int (), <./ntp/libntp/authkeys.c 191>
+  534 												malloc: <>
+  535 										authtrust: void (), <./ntp/libntp/authkeys.c 213>
+  536 											printf: <>
+  537 											KEYHASH: <>
+  538 											auth_moremem: 533
+  539 										printf: <>
+  540 										numtoa: 420
+  541 									sin: <>
+  542 									authdecrypt: 469
+  543 									findpeer: struct peer (), <./ntp/ntpd/ntp_peer.c 249>
+  544 									fast_xmit: void (), <./ntp/ntpd/ntp_proto.c 1732>
+  545 										PKT_LI_VN_MODE: <>
+  546 										PKT_VERSION: <>
+  547 										STRATUM_TO_PKT: <>
+  548 										HTONS_FP: <>
+  549 										DTOFP: <>
+  550 										DTOUFP: <>
+  551 										LOGTOD: <>
+  552 										HTONL_FP: <>
+  553 										htonl: <>
+  554 										get_systime: 203
+  555 										L_ADD: <>
+  556 										authencrypt: 502
+  557 										sendpkt: 441
+  558 										L_SUB: <>
+  559 										printf: <>
+  560 										ntoa: <>
+  561 									authtrust: 535
+  562 									findmanycastpeer: struct peer (), <./ntp/ntpd/ntp_peer.c 345>
+  563 									newpeer: struct peer (), <./ntp/ntpd/ntp_peer.c 570>
+  564 									peer_config_manycast: void (), <./ntp/ntpd/ntp_peer.c 741>
+  565 									unpeer: void (), <./ntp/ntpd/ntp_peer.c 424>
+  566 										printf: <>
+  567 										key_expire: void (), <./ntp/ntpd/ntp_peer.c 378>
+  568 											authtrust: 535
+  569 											free: <>
+  570 										HASH_ADDR: <>
+  571 										refclock_unpeer: void (), <./ntp/ntpd/ntp_refclock.c 281>
+  572 											free: <>
+  573 										msyslog: 19
+  574 										ntoa: <>
+  575 									peer_clear: void (), <./ntp/ntpd/ntp_proto.c 1003>
+  576 										memset: <>
+  577 										CLEAR_TO_ZERO: <>
+  578 										poll_update: void (), <./ntp/ntpd/ntp_proto.c 951>
+  579 											RANDPOLL: <>
+  580 											max: <>
+  581 											min: <>
+  582 											printf: <>
+  583 											ntoa: <>
+  584 									report_event: void (), <./ntp/ntpd/ntp_control.c 2351>
+  585 										NLOG: <>
+  586 										msyslog: 19
+  587 										eventstr: const char * (), <./ntp/libntp/statestr.c 234>
+  588 											getcode: const char * (), <./ntp/libntp/statestr.c 129>
+  589 												sprintf: <>
+  590 										sysstatstr: const char * (), <./ntp/libntp/statestr.c 250>
+  591 											statustoa: char * (), <./ntp/libntp/statestr.c 165>
+  592 												LIB_GETBUF: <>
+  593 												strcpy: <>
+  594 												getcode: 588
+  595 												CTL_SYS_LI: <>
+  596 												strcat: <>
+  597 												CTL_SYS_SOURCE: <>
+  598 												getevents: const char * (), <./ntp/libntp/statestr.c 149>
+  599 													sprintf: <>
+  600 												CTL_SYS_NEVNT: <>
+  601 												CTL_SYS_EVENT: <>
+  602 												CTL_PEER_STATVAL: <>
+  603 												CTL_PEER_NEVNT: <>
+  604 												CTL_PEER_EVENT: <>
+  605 										ctlsysstatus: u_short (), <./ntp/ntpd/ntp_control.c 687>
+  606 											CTL_SYS_STATUS: <>
+  607 										printf: <>
+  608 										ISREFCLOCKADR: <>
+  609 										refnumtoa: char * (), <./ntp/libntp/refnumtoa.c 11>
+  610 											ntohl: <>
+  611 											LIB_GETBUF: <>
+  612 											clockname: const char * (), <./ntp/libntp/clocktypes.c 85>
+  613 											sprintf: <>
+  614 										ntoa: <>
+  615 										peerstatstr: const char * (), <./ntp/libntp/statestr.c 258>
+  616 											statustoa: 591
+  617 										ctlpeerstatus: u_short (), <./ntp/ntpd/ntp_control.c 649>
+  618 											CTL_PEER_STATUS: <>
+  619 										htons: <>
+  620 										ctl_putsys: void (), <./ntp/ntpd/ntp_control.c 1104>
+  621 											ctl_putuint: void (), <./ntp/ntpd/ntp_control.c 909>
+  622 												sprintf: <>
+  623 												ctl_putdata: void (), <./ntp/ntpd/ntp_control.c 806>
+  624 													ctl_flushpkt: void (), <./ntp/ntpd/ntp_control.c 715>
+  625 														htons: <>
+  626 														PKT_LI_VN_MODE: <>
+  627 														sendpkt: 441
+  628 														keyid: 523
+  629 														htonl: <>
+  630 														memcpy: <>
+  631 														authencrypt: 502
+  632 													memmove: 85
+  633 											ctl_putint: void (), <./ntp/ntpd/ntp_control.c 963>
+  634 												sprintf: <>
+  635 												ctl_putdata: 623
+  636 											ctl_putdbl: void (), <./ntp/ntpd/ntp_control.c 885>
+  637 												sprintf: <>
+  638 												ctl_putdata: 623
+  639 											ctl_putadr: void (), <./ntp/ntpd/ntp_control.c 1018>
+  640 												numtoa: 420
+  641 												ctl_putdata: 623
+  642 											ctl_putid: void (), <./ntp/ntpd/ntp_control.c 1045>
+  643 												ctl_putdata: 623
+  644 											ctl_putts: void (), <./ntp/ntpd/ntp_control.c 990>
+  645 												sprintf: <>
+  646 												ctl_putdata: 623
+  647 											get_systime: 203
+  648 											ctl_putstr: void (), <./ntp/ntpd/ntp_control.c 852>
+  649 												memmove: 85
+  650 												ctl_putdata: 623
+  651 											strlen: <>
+  652 											strcpy: <>
+  653 											strcat: <>
+  654 											strncpy: <>
+  655 											ctl_putdata: 623
+  656 										refclock_control: void (), <./ntp/ntpd/ntp_refclock.c 1183>
+  657 											ISREFCLOCKADR: <>
+  658 											REFCLOCKTYPE: <>
+  659 											REFCLOCKUNIT: <>
+  660 										ctl_puthex: void (), <./ntp/ntpd/ntp_control.c 936>
+  661 											sprintf: <>
+  662 											ctl_putdata: 623
+  663 										ctlclkstatus: u_short (), <./ntp/ntpd/ntp_control.c 673>
+  664 										ctl_putclock: void (), <./ntp/ntpd/ntp_control.c 1452>
+  665 											ctl_putuint: 621
+  666 											ctl_putstr: 648
+  667 											ctl_putdbl: 636
+  668 											ctl_putint: 633
+  669 											ctl_putadr: 639
+  670 											ctl_putid: 642
+  671 											strlen: <>
+  672 											strcpy: <>
+  673 											strcat: <>
+  674 											strncpy: <>
+  675 											ctl_putdata: 623
+  676 										ctl_putdata: 623
+  677 										strlen: <>
+  678 										free_varlist: void (), <./ntp/ntpd/ntp_control.c 2640>
+  679 											free: <>
+  680 										ctl_putpeer: void (), <./ntp/ntpd/ntp_control.c 1257>
+  681 											ctl_putuint: 621
+  682 											ctl_putadr: 639
+  683 											ntohs: <>
+  684 											sin: <>
+  685 											ctl_putint: 633
+  686 											ctl_putdbl: 636
+  687 											ctl_putid: 642
+  688 											ctl_putts: 644
+  689 											ctl_puthex: 660
+  690 											SQRT: <>
+  691 											ctl_putarray: void (), <./ntp/ntpd/ntp_control.c 1072>
+  692 												sprintf: <>
+  693 												ctl_putdata: 623
+  694 											strlen: <>
+  695 											strcpy: <>
+  696 											strcat: <>
+  697 											ctl_putdata: 623
+  698 										ctl_flushpkt: 624
+  699 									process_packet: int (), <./ntp/ntpd/ntp_proto.c 677>
+  700 										FPTOD: <>
+  701 										NTOHS_FP: <>
+  702 										NTOHL_FP: <>
+  703 										PKT_MODE: <>
+  704 										L_ISHIS: <>
+  705 										L_ISEQU: <>
+  706 										L_ISZERO: <>
+  707 										L_SUB: <>
+  708 										LFPTOD: <>
+  709 										PKT_LEAP: <>
+  710 										PKT_TO_STRATUM: <>
+  711 										fabs: <>
+  712 										printf: <>
+  713 										record_raw_stats: void (), <./ntp/ntpd/ntp_util.c 553>
+  714 											msec: <>
+  715 											getclock: <>
+  716 											GETTIMEOFDAY: <>
+  717 											filegen_setup: void (), <./ntp/ntpd/ntp_filegen.c 272>
+  718 												fclose: <>
+  719 												getpid: <>
+  720 												caljulian: void (), <./ntp/libntp/caljulian.c 28>
+  721 													is_leapyear: <>
+  722 												caltontp: u_long (), <./ntp/libntp/caltontp.c 11>
+  723 												calyearstart: u_long (), <./ntp/libntp/calyearstart.c 12>
+  724 													caljulian: 720
+  725 													caltontp: 722
+  726 												TIMES7: <>
+  727 												filegen_open: void (), <./ntp/ntpd/ntp_filegen.c 65>
+  728 													strlen: <>
+  729 													emalloc: 288
+  730 													sprintf: <>
+  731 													msyslog: 19
+  732 													caljulian: 720
+  733 													stat: <>
+  734 													S_ISREG: <>
+  735 													getpid: <>
+  736 													rename: <>
+  737 													free: <>
+  738 													unlink: <>
+  739 													delete: <>
+  740 													fopen: <>
+  741 													printf: <>
+  742 													fclose: <>
+  743 													SetLastError: <>
+  744 													link: <>
+  745 											fprintf: <>
+  746 											ntoa: <>
+  747 											ulfptoa: <>
+  748 											fflush: <>
+  749 										sin: <>
+  750 										report_event: 584
+  751 										poll_update: 578
+  752 										DTOLFP: <>
+  753 										L_ADD: <>
+  754 										L_RSHIFT: <>
+  755 										clock_filter: void (), <./ntp/ntpd/ntp_proto.c 1038>
+  756 											fabs: <>
+  757 											LOGTOD: <>
+  758 											min: <>
+  759 											ULOGTOD: <>
+  760 											DIFF: <>
+  761 											printf: <>
+  762 											SQRT: <>
+  763 										clock_select: void (), <./ntp/ntpd/ntp_proto.c 1169>
+  764 											free: <>
+  765 											emalloc: 288
+  766 											sin: <>
+  767 											root_distance: double (), <./ntp/ntpd/ntp_proto.c 1585>
+  768 												fabs: <>
+  769 												SQRT: <>
+  770 											ULOGTOD: <>
+  771 											REFCLOCKUNIT: <>
+  772 											type: char (), <./ntp/parseutil/dcfd.c 856>
+  773 											printf: <>
+  774 											report_event: 584
+  775 											NLOG: <>
+  776 											msyslog: 19
+  777 											ntoa: <>
+  778 											DIFF: <>
+  779 											SQRT: <>
+  780 											poll_update: 578
+  781 											fabs: <>
+  782 											clock_combine: double (), <./ntp/ntpd/ntp_proto.c 1565>
+  783 												root_distance: 767
+  784 											clock_update: void (), <./ntp/ntpd/ntp_proto.c 872>
+  785 												printf: <>
+  786 												local_clock: int (), <./ntp/ntpd/ntp_loopfilter.c 167>
+  787 													printf: <>
+  788 													SQRT: <>
+  789 													fabs: <>
+  790 													msyslog: 19
+  791 													step_systime: int (), <./ntp/libntp/systime.c 232>
+  792 														clock_gettime: <>
+  793 														getclock: <>
+  794 														GETTIMEOFDAY: <>
+  795 														printf: <>
+  796 														ntp_set_tod: int (), <./ntp/ports/winnt/libntp/nt_clockstuff.c 196>
+  797 															clock_settime: <>
+  798 															SETTIMEOFDAY: <>
+  799 															stime: <>
+  800 															gmtime: <>
+  801 															SetSystemTime: <>
+  802 															msyslog: 19
+  803 														msyslog: 19
+  804 														memset: <>
+  805 														strcpy: <>
+  806 														pututline: <>
+  807 														setutent: <>
+  808 														endutent: <>
+  809 														pututxline: <>
+  810 														setutxent: <>
+  811 														endutxent: <>
+  812 														utmpname: <>
+  813 														updwtmpx: <>
+  814 													NLOG: <>
+  815 													rstclock: void (), <./ntp/ntpd/ntp_loopfilter.c 658>
+  816 													SQUARE: <>
+  817 													ULOGTOD: <>
+  818 													max: <>
+  819 													min: <>
+  820 													memset: <>
+  821 													calleapwhen: u_long (), <./ntp/libntp/calleapwhen.c 29>
+  822 													ntp_adjtime: <>
+  823 													record_peer_stats: void (), <./ntp/ntpd/ntp_util.c 422>
+  824 														msec: <>
+  825 														getclock: <>
+  826 														GETTIMEOFDAY: <>
+  827 														filegen_setup: 717
+  828 														fprintf: <>
+  829 														ntoa: <>
+  830 														fflush: <>
+  831 													ctlsysstatus: 605
+  832 													record_loop_stats: void (), <./ntp/ntpd/ntp_util.c 470>
+  833 														msec: <>
+  834 														getclock: <>
+  835 														GETTIMEOFDAY: <>
+  836 														filegen_setup: 717
+  837 														fprintf: <>
+  838 														fflush: <>
+  839 												report_event: 584
+  840 												exit: <>
+  841 												peer_clear: 575
+  842 												NLOG: <>
+  843 												msyslog: 19
+  844 												fabs: <>
+  845 										record_peer_stats: 823
+  846 										ctlpeerstatus: 617
+  847 										SQRT: <>
+  848 								get_systime: 203
+  849 								L_SUB: <>
+  850 								lfptoms: <>
+  851 								WSAGetLastError: <>
+  852 								fdbits: char * (), <./ntp/ntpd/ntp_io.c 1248>
+  853 									FD_ISSET: <>
+  854 					MAKEWORD: <>
+  855 					WSAStartup: <>
+  856 					msyslog: 19
+  857 					exit: <>
+  858 					BLOCKIO: <>
+  859 					create_sockets: int (), <./ntp/ntpd/ntp_io.c 199>
+  860 						printf: <>
+  861 						ntohs: <>
+  862 						sin: <>
+  863 						htonl: <>
+  864 						strncpy: <>
+  865 						getifaddrs: <>
+  866 						msyslog: 19
+  867 						exit: <>
+  868 						ntohl: <>
+  869 						strcpy: <>
+  870 						free: <>
+  871 						open: <>
+  872 						socket: <>
+  873 						ioctl: 233
+  874 						WSAIoctl: <>
+  875 						strchr: <>
+  876 						inet_addr: <>
+  877 						SRCADR: <>
+  878 						closesocket: <>
+  879 						FD_ZERO: <>
+  880 						open_socket: int (), <./ntp/ntpd/ntp_io.c 877>
+  881 							socket: <>
+  882 							msyslog: 19
+  883 							exit: <>
+  884 							setsockopt: <>
+  885 							bind: <>
+  886 							sprintf: <>
+  887 							ntohs: <>
+  888 							ntoa: <>
+  889 							IN_CLASSD: <>
+  890 							ntohl: <>
+  891 							closesocket: <>
+  892 							printf: <>
+  893 							FD_SET: <>
+  894 							fcntl: <>
+  895 							ioctl: 233
+  896 							ioctlsocket: <>
+  897 							init_socket_sig: void (), <./ntp/libntp/iosignal.c 209>
+  898 								ioctl: 233
+  899 								msyslog: 19
+  900 								exit: <>
+  901 								fcntl: <>
+  902 								getpid: <>
+  903 						setsockopt: <>
+  904 						hack_restrict: void (), <./ntp/ntpd/ntp_restrict.c 308>
+  905 							SRCADR: <>
+  906 							htonl: <>
+  907 							emalloc: 288
+  908 							memset: <>
+  909 							mon_start: void (), <./ntp/ntpd/ntp_monitor.c 121>
+  910 								mon_getmoremem: 409
+  911 							mon_stop: void (), <./ntp/ntpd/ntp_monitor.c 155>
+  912 						inet_ntoa: <>
+  913 						io_completion_port_add_socket: void (), <./ntp/ports/winnt/ntpd/ntp_iocompletionport.c 270>
+  914 							CreateIoCompletionPort: <>
+  915 							msyslog: 19
+  916 							exit: <>
+  917 							get_free_recv_buffer: struct recvbuf (), <./ntp/libntp/recvbuff.c 236>
+  918 							OnSocketRecv: int (), <./ntp/ports/winnt/ntpd/ntp_iocompletionport.c 195>
+  919 								offsetof: <>
+  920 								get_systime: 203
+  921 								receive: 400
+  922 								WSAAddressToString: <>
+  923 								printf: <>
+  924 								add_full_recv_buffer: 391
+  925 								get_free_recv_buffer: struct recvbuf (), <./ntp/libntp/recvbuff.c 236>
+  926 								OnSocketRecv: 918
+  927 								WSARecvFrom: <>
+  928 								WSAGetLastError: <>
+  929 								msyslog: 19
+  930 							receive: 400
+  931 							WSARecvFrom: <>
+  932 							WSAGetLastError: <>
+  933 					htons: <>
+  934 					UNBLOCKIO: <>
+  935 					printf: <>
+  936 				init_loopfilter: void (), <./ntp/ntpd/ntp_loopfilter.c 153>
+  937 					rstclock: 815
+  938 				mon_start: 909
+  939 				getconfig: void (), <./ntp/ntpd/ntp_config.c 624>
+  940 					ExpandEnvironmentStrings: <>
+  941 					msyslog: 19
+  942 					exit: <>
+  943 					memset: <>
+  944 					sprintf: <>
+  945 					set_sys_var: 304
+  946 					strlen: <>
+  947 					loop_config: void (), <./ntp/ntpd/ntp_loopfilter.c 711>
+  948 						printf: <>
+  949 						rstclock: 815
+  950 						memset: <>
+  951 						pll_trap: void (), <./ntp/util/ntptime.c 335>
+  952 							siglongjmp: <>
+  953 						sigaction: <>
+  954 						msyslog: 19
+  955 						sigsetjmp: <>
+  956 						ntp_adjtime: <>
+  957 					ntp_getopt: 6
+  958 					proto_config: void (), <./ntp/ntpd/ntp_proto.c 2047>
+  959 						mon_start: 909
+  960 						mon_stop: 911
+  961 						io_setbclient: void (), <./ntp/ntpd/ntp_io.c 687>
+  962 							htonl: <>
+  963 							open_socket: 880
+  964 						io_unsetbclient: void (), <./ntp/ntpd/ntp_io.c 798>
+  965 							close_socket: void (), <./ntp/ntpd/ntp_io.c 1051>
+  966 								closesocket: <>
+  967 								FD_CLR: <>
+  968 								FD_ISSET: <>
+  969 						io_multicast_add: void (), <./ntp/ntpd/ntp_io.c 712>
+  970 							ntohl: <>
+  971 							IN_CLASSD: <>
+  972 							msyslog: 19
+  973 							inet_ntoa: <>
+  974 							sin: <>
+  975 							memset: <>
+  976 							htons: <>
+  977 							open_socket: 880
+  978 							strncpy: <>
+  979 							htonl: <>
+  980 							setsockopt: <>
+  981 						io_multicast_del: void (), <./ntp/ntpd/ntp_io.c 817>
+  982 							ntohl: <>
+  983 							IN_CLASSD: <>
+  984 							msyslog: 19
+  985 							ntoa: <>
+  986 							htonl: <>
+  987 							sin: <>
+  988 							close_socket: 965
+  989 							memset: <>
+  990 							setsockopt: <>
+  991 						msyslog: 19
+  992 					atol: <>
+  993 					printf: <>
+  994 					stats_config: void (), <./ntp/ntpd/ntp_util.c 267>
+  995 						ExpandEnvironmentStrings: <>
+  996 						strcpy: <>
+  997 						msyslog: 19
+  998 						free: <>
+  999 						strlen: <>
+ 1000 						emalloc: 288
+ 1001 						memmove: 85
+ 1002 						fopen: <>
+ 1003 						fscanf: <>
+ 1004 						fclose: <>
+ 1005 						loop_config: 947
+ 1006 						get_systime: 203
+ 1007 						filegen_setup: 717
+ 1008 						fprintf: <>
+ 1009 						getpid: <>
+ 1010 					getauthkeys: void (), <./ntp/ntpd/ntp_util.c 595>
+ 1011 						strlen: <>
+ 1012 						free: <>
+ 1013 						emalloc: 288
+ 1014 						memmove: 85
+ 1015 						ExpandEnvironmentStrings: <>
+ 1016 						msyslog: 19
+ 1017 						authreadkeys: int (), <./ntp/libntp/authreadkeys.c 83>
+ 1018 							fopen: <>
+ 1019 							msyslog: 19
+ 1020 							auth_delkeys: void (), <./ntp/libntp/authkeys.c 435>
+ 1021 								memset: <>
+ 1022 							fgets: <>
+ 1023 							nexttok: char * (), <./ntp/libntp/authreadkeys.c 39>
+ 1024 							atoi: <>
+ 1025 							authusekey: int (), <./ntp/libntp/authusekey.c 32>
+ 1026 								strlen: <>
+ 1027 								isascii: <>
+ 1028 								strchr: <>
+ 1029 								isupper: <>
+ 1030 								tolower: <>
+ 1031 								DESauth_parity: int (), <./ntp/libntp/authparity.c 7>
+ 1032 								DESauth_setkey: void (), <./ntp/libntp/authkeys.c 323>
+ 1033 									KEYHASH: <>
+ 1034 									auth_moremem: 533
+ 1035 								memset: <>
+ 1036 								MD5auth_setkey: 530
+ 1037 							fclose: <>
+ 1038 					htonl: <>
+ 1039 					sscanf: <>
+ 1040 					authtrust: 535
+ 1041 					fprintf: <>
+ 1042 					fopen: <>
+ 1043 					FindConfig: const char * (), <./ntp/libntp/findconfig.c 66>
+ 1044 						strcpy: <>
+ 1045 						stat: <>
+ 1046 						S_ISDIR: <>
+ 1047 						gethostname: <>
+ 1048 						sprintf: <>
+ 1049 						uname: <>
+ 1050 						strncmp: if (), <./ntp/util/ansi2knr.c 616>
+ 1051 					get_netinfo_config: struct netinfo_config_state (), <./ntp/ntpd/ntp_config.c 1803>
+ 1052 					gettokens: int (), <./ntp/ntpd/ntp_config.c 1960>
+ 1053 						fgets: <>
+ 1054 						ISSPACE: <>
+ 1055 						ISEOL: <>
+ 1056 						matchkey: int (), <./ntp/ntpd/ntp_config.c 2023>
+ 1057 							msyslog: 19
+ 1058 							STRSAME: <>
+ 1059 					gettokens_netinfo: int (), <./ntp/ntpd/ntp_config.c 1853>
+ 1060 						NI_INIT: <>
+ 1061 						ni_lookupprop: <>
+ 1062 						malloc: <>
+ 1063 						msyslog: 19
+ 1064 						strlen: <>
+ 1065 						strcpy: <>
+ 1066 						ni_namelist_free: <>
+ 1067 						ISEOL: <>
+ 1068 						ISSPACE: <>
+ 1069 						keytype: void (), <./ntp/ntpq/ntpq.c 2117>
+ 1070 							fprintf: <>
+ 1071 						free: <>
+ 1072 					getnetnum: int (), <./ntp/ntpd/ntp_config.c 2046>
+ 1073 						isdigit: <>
+ 1074 						atoi: <>
+ 1075 						printf: <>
+ 1076 						msyslog: 19
+ 1077 						memset: <>
+ 1078 						htons: <>
+ 1079 						htonl: <>
+ 1080 						ntoa: <>
+ 1081 					ISREFCLOCKADR: <>
+ 1082 					ISBADADR: <>
+ 1083 					ntoa: <>
+ 1084 					IN_CLASSD: <>
+ 1085 					ntohl: <>
+ 1086 					matchkey: 1056
+ 1087 					atoi: <>
+ 1088 					peer_config: struct peer (), <./ntp/ntpd/ntp_peer.c 499>
+ 1089 					save_resolve: void (), <./ntp/ntpd/ntp_config.c 2143>
+ 1090 						strcpy: <>
+ 1091 						GetTempPath: <>
+ 1092 						msyslog: 19
+ 1093 						strcat: <>
+ 1094 						mkstemp: <>
+ 1095 						fdopen: <>
+ 1096 						mktemp: <>
+ 1097 						fopen: <>
+ 1098 						printf: <>
+ 1099 						fprintf: <>
+ 1100 					NLOG: <>
+ 1101 					fileno: <>
+ 1102 					fclose: <>
+ 1103 					get_logmask: unsigned long (), <./ntp/ntpd/ntp_config.c 489>
+ 1104 						get_pfxmatch: unsigned long (), <./ntp/ntpd/ntp_config.c 450>
+ 1105 							strncmp: if (), <./ntp/util/ansi2knr.c 616>
+ 1106 							strlen: <>
+ 1107 						get_match: unsigned long (), <./ntp/ntpd/ntp_config.c 470>
+ 1108 							strcmp: <>
+ 1109 						msyslog: 19
+ 1110 					STREQ: <>
+ 1111 					max: <>
+ 1112 					SRCADR: <>
+ 1113 					hack_restrict: 904
+ 1114 					atouint: int (), <./ntp/libntp/atouint.c 11>
+ 1115 						isdigit: <>
+ 1116 					findinterface: struct interface (), <./ntp/ntpd/ntp_io.c 1598>
+ 1117 					htons: <>
+ 1118 					ctlsettrap: int (), <./ntp/ntpd/ntp_control.c 2190>
+ 1119 						ctlfindtrap: struct ctl_trap (), <./ntp/ntpd/ntp_control.c 2329>
+ 1120 					atoint: int (), <./ntp/libntp/atoint.c 11>
+ 1121 						isdigit: <>
+ 1122 					strncpy: <>
+ 1123 					refclock_control: 656
+ 1124 					filegen_get: FILEGEN * (), <./ntp/ntpd/ntp_filegen.c 455>
+ 1125 						strcmp: <>
+ 1126 						printf: <>
+ 1127 					filegen_config: void (), <./ntp/ntpd/ntp_filegen.c 348>
+ 1128 						strcmp: <>
+ 1129 						valid_fileref: int (), <./ntp/ntpd/ntp_filegen.c 405>
+ 1130 							strchr: <>
+ 1131 						fclose: <>
+ 1132 						printf: <>
+ 1133 						free: <>
+ 1134 						emalloc: 288
+ 1135 						strlen: <>
+ 1136 						strcpy: <>
+ 1137 						get_systime: 203
+ 1138 						filegen_setup: 717
+ 1139 					strcmp: <>
+ 1140 					free_netinfo_config: void (), <./ntp/ntpd/ntp_config.c 1841>
+ 1141 						ni_free: <>
+ 1142 						free: <>
+ 1143 					do_resolve_internal: void (), <./ntp/ntpd/ntp_config.c 2239>
+ 1144 						msyslog: 19
+ 1145 						exit: <>
+ 1146 						fclose: <>
+ 1147 						authhavekey: 463
+ 1148 						authusekey: 1025
+ 1149 						authtrust: 535
+ 1150 						signal_no_reset: 16
+ 1151 						catchchild: RETSIGTYPE (), <./ntp/ntpd/ntp_config.c 2123>
+ 1152 							wait: <>
+ 1153 						fork: <>
+ 1154 						closelog: <>
+ 1155 						kill_asyncio: void (), <./ntp/ntpd/ntp_io.c 1748>
+ 1156 							BLOCKIO: <>
+ 1157 							close_socket: 965
+ 1158 						openlog: <>
+ 1159 						setlogmask: <>
+ 1160 						LOG_UPTO: <>
+ 1161 						ntp_intres: void (), <./ntp/ntpd/ntp_intres.c 147>
+ 1162 							sigemptyset: <>
+ 1163 							msyslog: 19
+ 1164 							authistrusted: 516
+ 1165 							exit: <>
+ 1166 							fopen: <>
+ 1167 							readconf: void (), <./ntp/ntpd/ntp_intres.c 811>
+ 1168 								fgets: <>
+ 1169 								nexttoken: char * (), <./ntp/ntpd/ntp_intres.c 760>
+ 1170 								msyslog: 19
+ 1171 								exit: <>
+ 1172 								atouint: 1114
+ 1173 								addentry: void (), <./ntp/ntpd/ntp_intres.c 335>
+ 1174 									strlen: <>
+ 1175 									emalloc: 288
+ 1176 									memmove: 85
+ 1177 							fclose: <>
+ 1178 							unlink: <>
+ 1179 							sleep: void (), <./ntp/libntp/machines.c 96>
+ 1180 								taskDelay: <>
+ 1181 							doconfigure: void (), <./ntp/ntpd/ntp_intres.c 905>
+ 1182 								msyslog: 19
+ 1183 								findhostaddr: int (), <./ntp/ntpd/ntp_intres.c 388>
+ 1184 									checkparent: void (), <./ntp/ntpd/ntp_intres.c 288>
+ 1185 										getppid: <>
+ 1186 										msyslog: 19
+ 1187 										exit: <>
+ 1188 									gethostbyname: struct hostent (), <./ntp/libntp/machines.c 38>
+ 1189 									memmove: 85
+ 1190 								removeentry: void (), <./ntp/ntpd/ntp_intres.c 309>
+ 1191 								request: int (), <./ntp/ntpd/ntp_intres.c 485>
+ 1192 									checkparent: 1184
+ 1193 									openntp: void (), <./ntp/ntpd/ntp_intres.c 426>
+ 1194 										socket: <>
+ 1195 										msyslog: 19
+ 1196 										exit: <>
+ 1197 										memset: <>
+ 1198 										htons: <>
+ 1199 										htonl: <>
+ 1200 										fcntl: <>
+ 1201 										ioctlsocket: <>
+ 1202 										connect: <>
+ 1203 									CreateEvent: <>
+ 1204 									FD_ZERO: <>
+ 1205 									FD_SET: <>
+ 1206 									select: <>
+ 1207 									recv: <>
+ 1208 									memset: <>
+ 1209 									RM_VN_MODE: <>
+ 1210 									AUTH_SEQ: <>
+ 1211 									ERR_NITEMS: <>
+ 1212 									MBZ_ITEMSIZE: <>
+ 1213 									memmove: 85
+ 1214 									htonl: <>
+ 1215 									get_systime: 203
+ 1216 									L_ADDUF: <>
+ 1217 									HTONL_FP: <>
+ 1218 									authencrypt: 502
+ 1219 									send: <>
+ 1220 									msyslog: 19
+ 1221 									WriteFile: <>
+ 1222 									GetLastError: <>
+ 1223 									WaitForSingleObject: <>
+ 1224 									ReadFile: <>
+ 1225 									ISRESPONSE: <>
+ 1226 									ISMORE: <>
+ 1227 									INFO_VERSION: <>
+ 1228 									INFO_MODE: <>
+ 1229 									INFO_SEQ: <>
+ 1230 									INFO_NITEMS: <>
+ 1231 									INFO_MBZ: <>
+ 1232 									INFO_ITEMSIZE: <>
+ 1233 									INFO_ERR: <>
+ 1234 							ExitThread: <>
+ 1235 							signal_no_reset: 16
+ 1236 							bong: RETSIGTYPE (), <./ntp/ntpd/ntp_intres.c 265>
+ 1237 								alarm: void (), <./ntp/libntp/machines.c 105>
+ 1238 									sleep: 1179
+ 1239 							alarm: 1237
+ 1240 							checkparent: 1184
+ 1241 							sigsuspend: <>
+ 1242 							sigpause: <>
+ 1243 						abort_resolve: void (), <./ntp/ntpd/ntp_config.c 2204>
+ 1244 							fclose: <>
+ 1245 							unlink: <>
+ 1246 							delete: <>
+ 1247 						sp: <>
+ 1248 						fflush: <>
+ 1249 						CreateThread: <>
+ 1250 				set_process_priority: void (), <./ntp/ntpd/ntpd.c 225>
+ 1251 					SetPriorityClass: <>
+ 1252 					GetCurrentProcess: <>
+ 1253 					msyslog: 19
+ 1254 					sched_get_priority_max: <>
+ 1255 					sched_get_priority_min: <>
+ 1256 					sched_setscheduler: <>
+ 1257 					rtprio: <>
+ 1258 					getpid: <>
+ 1259 					nice: <>
+ 1260 					setpriority: <>
+ 1261 				CloseHandle: <>
+ 1262 				report_event: 584
+ 1263 				CreateEvent: <>
+ 1264 				get_recv_buff_event: HANDLE (), <./ntp/libntp/recvbuff.c 130>
+ 1265 				get_timer_handle: HANDLE (), <./ntp/ntpd/ntp_timer.c 219>
+ 1266 				MsgWaitForMultipleObjectsEx: <>
+ 1267 				exit: <>
+ 1268 				get_full_recv_buffer: struct recvbuf (), <./ntp/libntp/recvbuff.c 265>
+ 1269 				freerecvbuf: 386
+ 1270 				timer: void (), <./ntp/ntpdate/ntpdate.c 1343>
+ 1271 					adj_host_clock: void (), <./ntp/ntpd/ntp_loopfilter.c 598>
+ 1272 						NLOG: <>
+ 1273 						msyslog: 19
+ 1274 						ULOGTOD: <>
+ 1275 						adj_systime: int (), <./ntp/libntp/systime.c 120>
+ 1276 							printf: <>
+ 1277 							SetSystemTimeAdjustment: <>
+ 1278 							adjtime: int (), <./ntp/libntp/adjtime.c 65>
+ 1279 								abs: <>
+ 1280 							msyslog: 19
+ 1281 					refclock_transmit: void (), <./ntp/ntpd/ntp_refclock.c 312>
+ 1282 						printf: <>
+ 1283 						ntoa: <>
+ 1284 						report_event: 584
+ 1285 						peer_clear: 575
+ 1286 						clock_filter: 755
+ 1287 						clock_select: 763
+ 1288 						get_systime: 203
+ 1289 						poll_update: 578
+ 1290 					transmit: void (), <./ntp/ntpd/ntp_proto.c 82>
+ 1291 						report_event: 584
+ 1292 						peer_clear: 575
+ 1293 						unpeer: 565
+ 1294 						clock_filter: 755
+ 1295 						clock_select: 763
+ 1296 						poll_update: 578
+ 1297 						peer_xmit: void (), <./ntp/ntpd/ntp_proto.c 1599>
+ 1298 							PKT_LI_VN_MODE: <>
+ 1299 							STRATUM_TO_PKT: <>
+ 1300 							HTONS_FP: <>
+ 1301 							DTOFP: <>
+ 1302 							DTOUFP: <>
+ 1303 							LOGTOD: <>
+ 1304 							HTONL_FP: <>
+ 1305 							ntohl: <>
+ 1306 							sin: <>
+ 1307 							make_keylist: void (), <./ntp/ntpd/ntp_proto.c 1823>
+ 1308 								keyid: 523
+ 1309 								emalloc: 288
+ 1310 								authhavekey: 463
+ 1311 								session_key: 522
+ 1312 								ntohl: <>
+ 1313 								sin: <>
+ 1314 								auth_havekey: int (), <./ntp/libntp/authkeys.c 120>
+ 1315 									KEYHASH: <>
+ 1316 							authtrust: 535
+ 1317 							authistrusted: 516
+ 1318 							htonl: <>
+ 1319 							get_systime: 203
+ 1320 							L_ADD: <>
+ 1321 							authencrypt: 502
+ 1322 							sendpkt: 441
+ 1323 							L_SUB: <>
+ 1324 							printf: <>
+ 1325 							ntoa: <>
+ 1326 					auth_agekeys: void (), <./ntp/libntp/authkeys.c 474>
+ 1327 						authtrust: 535
+ 1328 						printf: <>
+ 1329 					RANDPOLL: <>
+ 1330 					key_expire_all: void (), <./ntp/ntpd/ntp_peer.c 401>
+ 1331 						key_expire: 567
+ 1332 						printf: <>
+ 1333 					hourly_stats: void (), <./ntp/ntpd/ntp_util.c 142>
+ 1334 						getpriority: <>
+ 1335 						setpriority: <>
+ 1336 						getclock: <>
+ 1337 						GETTIMEOFDAY: <>
+ 1338 						ntp_set_tod: 796
+ 1339 						msyslog: 19
+ 1340 						NLOG: <>
+ 1341 						fopen: <>
+ 1342 						fprintf: <>
+ 1343 						fclose: <>
+ 1344 						unlink: <>
+ 1345 						rename: <>
+ 1346 						DESCRIPTOR: <>
+ 1347 						strlen: <>
+ 1348 						delete_file: <>
+ 1349 					transmit: void (), <./ntp/ntpdate/ntpdate.c 663>
+ 1350 						printf: <>
+ 1351 						ntoa: <>
+ 1352 						L_CLR: <>
+ 1353 						server_data: void (), <./ntp/ntpdate/ntpdate.c 912>
+ 1354 							LFPTOFP: <>
+ 1355 						PKT_LI_VN_MODE: <>
+ 1356 						STRATUM_TO_PKT: <>
+ 1357 						htonl: <>
+ 1358 						get_systime: 203
+ 1359 						L_ADDUF: <>
+ 1360 						HTONL_FP: <>
+ 1361 						authencrypt: 502
+ 1362 						sendpkt: 441
+ 1363 				PeekMessage: <>
+ 1364 				DispatchMessage: <>
+ 1365 				block_io_and_alarm: void (), <./ntp/libntp/iosignal.c 447>
+ 1366 					sigemptyset: <>
+ 1367 					msyslog: 19
+ 1368 					sigaddset: <>
+ 1369 					sigprocmask: <>
+ 1370 					sigmask: <>
+ 1371 					sigblock: <>
+ 1372 				getrecvbufs: struct recvbuf (), <./ntp/libntp/recvbuff.c 143>
+ 1373 				select: <>
+ 1374 				get_systime: 203
+ 1375 				input_handler: 378
+ 1376 				wait_for_signal: void (), <./ntp/libntp/iosignal.c 506>
+ 1377 					sigprocmask: <>
+ 1378 					msyslog: 19
+ 1379 					sigdelset: <>
+ 1380 					sigsuspend: <>
+ 1381 					sigmask: <>
+ 1382 					sigblock: <>
+ 1383 					sigpause: <>
+ 1384 				unblock_io_and_alarm: void (), <./ntp/libntp/iosignal.c 479>
+ 1385 					sigemptyset: <>
+ 1386 					msyslog: 19
+ 1387 					sigaddset: <>
+ 1388 					sigprocmask: <>
+ 1389 					sigmask: <>
+ 1390 					sigblock: <>
+ 1391 					sigsetmask: <>
+ 1392 				printf: <>
+ 1393 			StartServiceCtrlDispatcher: <>
+ 1394 			ExitProcess: <>
+ 1395 		ntp_getopt: 6
+ 1396 		atof: <>
+ 1397 		fprintf: <>
+ 1398 		latlong: double (), <./ntp/clockstuff/propdelay.c 293>
+ 1399 			strchr: <>
+ 1400 			atof: <>
+ 1401 			printf: <>
+ 1402 		doit: void (), <./ntp/clockstuff/propdelay.c 271>
+ 1403 			finddelay: int (), <./ntp/clockstuff/propdelay.c 448>
+ 1404 				greatcircle: double (), <./ntp/clockstuff/propdelay.c 374>
+ 1405 					acos: <>
+ 1406 					cos: <>
+ 1407 					sin: <>
+ 1408 					printf: <>
+ 1409 				printf: <>
+ 1410 				waveangle: double (), <./ntp/clockstuff/propdelay.c 402>
+ 1411 					atan: <>
+ 1412 					sin: <>
+ 1413 					tan: <>
+ 1414 					printf: <>
+ 1415 				propdelay: double (), <./ntp/clockstuff/propdelay.c 424>
+ 1416 					atan: <>
+ 1417 					sin: <>
+ 1418 					tan: <>
+ 1419 					printf: <>
+ 1420 			printf: <>
+ 1421 		satdoit: void (), <./ntp/clockstuff/propdelay.c 483>
+ 1422 			satfinddelay: void (), <./ntp/clockstuff/propdelay.c 506>
+ 1423 				greatcircle: 1404
+ 1424 				satpropdelay: double (), <./ntp/clockstuff/propdelay.c 526>
+ 1425 					sin: <>
+ 1426 					cos: <>
+ 1427 					printf: <>
+ 1428 					sqrt: <>
+ 1429 			printf: <>
+ 1430 		gettimeofday: int (), <./ntp/ports/winnt/libntp/nt_clockstuff.c 40>
+ 1431 			get_process_stats: <>
+ 1432 			QueryPerformanceCounter: <>
+ 1433 			msyslog: 19
+ 1434 			exit: <>
+ 1435 			EnterCriticalSection: <>
+ 1436 			LeaveCriticalSection: <>
+ 1437 		openterm: int (), <./ntp/clockstuff/chutest.c 158>
+ 1438 			fprintf: <>
+ 1439 			open: <>
+ 1440 			ioctl: 233
+ 1441 		process_ldisc: int (), <./ntp/clockstuff/chutest.c 332>
+ 1442 			read: <>
+ 1443 			fprintf: <>
+ 1444 			TVTOTS: <>
+ 1445 			printf: <>
+ 1446 			exit: <>
+ 1447 		process_raw: int (), <./ntp/clockstuff/chutest.c 226>
+ 1448 			read: <>
+ 1449 			gettimeofday: 1430
+ 1450 			raw_filter: int (), <./ntp/clockstuff/chutest.c 265>
+ 1451 				fprintf: <>
+ 1452 				TVTOTS: <>
+ 1453 				printf: <>
+ 1454 			printf: <>
+ 1455 			fprintf: <>
+ 1456 			exit: <>
+ 1457 		atouint: 1114
+ 1458 		docmd: int, <./ntp/clockstuff/clktest.c 78>
+ 1459 		open: <>
+ 1460 		perror: <>
+ 1461 		ioctl: 233
+ 1462 		fcntl: <>
+ 1463 		getpid: <>
+ 1464 		signal: <>
+ 1465 		setitimer: <>
+ 1466 		doboth: int (), <./ntp/clockstuff/clktest.c 303>
+ 1467 			FD_ZERO: <>
+ 1468 			sigblock: <>
+ 1469 			sigpause: <>
+ 1470 			sigsetmask: <>
+ 1471 			FD_SET: <>
+ 1472 			select: <>
+ 1473 			doio: int (), <./ntp/clockstuff/clktest.c 397>
+ 1474 				read: <>
+ 1475 				fprintf: <>
+ 1476 				perror: <>
+ 1477 				printf: <>
+ 1478 				isprint: <>
+ 1479 				strchr: <>
+ 1480 			fprintf: <>
+ 1481 			perror: <>
+ 1482 			exit: <>
+ 1483 			doalarm: int (), <./ntp/clockstuff/clktest.c 492>
+ 1484 				write: <>
+ 1485 				fprintf: <>
+ 1486 				perror: <>
+ 1487 				printf: <>
+ 1488 		doioonly: int (), <./ntp/clockstuff/clktest.c 375>
+ 1489 			FD_ZERO: <>
+ 1490 			FD_SET: <>
+ 1491 			select: <>
+ 1492 			doio: 1473
+ 1493 		isalpha: <>
+ 1494 		syssgi: <>
+ 1495 		SGITONTP: <>
+ 1496 		NTPTOSGI: <>
+ 1497 		atoi: <>
+ 1498 		getoffsets: void (), <./ntp/util/tickadj.c 619>
+ 1499 			kvm_open: <>
+ 1500 			fprintf: <>
+ 1501 			exit: <>
+ 1502 			kvm_nlist: <>
+ 1503 			kvm_close: <>
+ 1504 			getbootfile: <>
+ 1505 			stat: <>
+ 1506 			nlist: <>
+ 1507 			openfile: int (), <./ntp/util/tickadj.c 826>
+ 1508 				open: <>
+ 1509 				fprintf: <>
+ 1510 				perror: <>
+ 1511 				exit: <>
+ 1512 			readvar: void (), <./ntp/util/tickadj.c 875>
+ 1513 				lseek: <>
+ 1514 				fprintf: <>
+ 1515 				perror: <>
+ 1516 				exit: <>
+ 1517 				read: <>
+ 1518 		readvar: 1512
+ 1519 		close: <>
+ 1520 		sysconf: <>
+ 1521 		openfile: 1507
+ 1522 		fflush: <>
+ 1523 		writevar: void (), <./ntp/util/tickadj.c 848>
+ 1524 			lseek: <>
+ 1525 			fprintf: <>
+ 1526 			perror: <>
+ 1527 			exit: <>
+ 1528 			write: <>
+ 1529 		hardclock: void (), <./ntp/util/kern.c 152>
+ 1530 		second_overflow: void (), <./ntp/util/kern.c 181>
+ 1531 		hardupdate: void (), <./ntp/util/kern.c 120>
+ 1532 		getShmTime: struct shmTime (), <./ntp/util/sht.c 43>
+ 1533 		sleep: 1179
+ 1534 		time: <>
+ 1535 		ctime: <>
+ 1536 		pause: <>
+ 1537 		default_get_resolution: int (), <./ntp/util/precision.c 64>
+ 1538 			gettimeofday: 1430
+ 1539 			printf: <>
+ 1540 		default_get_precision: 351
+ 1541 		memset: <>
+ 1542 		pll_trap: 951
+ 1543 		sigaction: <>
+ 1544 		sigsetjmp: <>
+ 1545 		syscall: <>
+ 1546 		ntp_gettime: <>
+ 1547 		ntp_adjtime: <>
+ 1548 		timex_state: const char * (), <./ntp/util/ntptime.c 389>
+ 1549 			sprintf: <>
+ 1550 		TVTOTS: <>
+ 1551 		prettydate: char * (), <./ntp/libntp/prettydate.c 25>
+ 1552 			msec: <>
+ 1553 			LIB_GETBUF: <>
+ 1554 			localtime: <>
+ 1555 			sprintf: <>
+ 1556 		sprintb: char * (), <./ntp/util/ntptime.c 348>
+ 1557 			sprintf: <>
+ 1558 			strlen: <>
+ 1559 		qsort: <>
+ 1560 		col: int (), <./ntp/util/hist.c 101>
+ 1561 		strcmp: <>
+ 1562 		fopen: <>
+ 1563 		malloc: <>
+ 1564 		fgets: <>
+ 1565 		test1: int (), <./ntp/util/ansi2knr.c 394>
+ 1566 		convert1: int (), <./ntp/util/ansi2knr.c 474>
+ 1567 		skipspace: <>
+ 1568 		fputs: <>
+ 1569 		free: <>
+ 1570 		ferror: <>
+ 1571 		fclose: <>
+ 1572 		usage: void (), <./ntp/parseutil/dcfd.c 1205>
+ 1573 			fprintf: <>
+ 1574 		rawdcf_init: void (), <./ntp/parseutil/dcfd.c 1248>
+ 1575 			ioctl: 233
+ 1576 			syslog: <>
+ 1577 		TTY_GETATTR: <>
+ 1578 		TTY_SETATTR: <>
+ 1579 		detach: void (), <./ntp/parseutil/dcfd.c 1139>
+ 1580 			daemon: <>
+ 1581 			fork: <>
+ 1582 			exit: <>
+ 1583 			sysconf: <>
+ 1584 			getdtablesize: <>
+ 1585 			close: <>
+ 1586 			open: <>
+ 1587 			dup2: <>
+ 1588 			who_am_i: <>
+ 1589 			make_server: <>
+ 1590 			setsid: <>
+ 1591 			syslog: <>
+ 1592 			setpgid: <>
+ 1593 			ioctl: 233
+ 1594 			setpgrp: <>
+ 1595 			getpid: <>
+ 1596 		openlog: <>
+ 1597 		tick: void (), <./ntp/parseutil/dcfd.c 1090>
+ 1598 			signal: <>
+ 1599 			tick: 1597
+ 1600 			periodic_adjust: void (), <./ntp/parseutil/dcfd.c 1068>
+ 1601 				R_SHIFT: <>
+ 1602 				adj_time: void (), <./ntp/parseutil/dcfd.c 930>
+ 1603 					LPRINTF: <>
+ 1604 					adjtime: 1278
+ 1605 					perror: <>
+ 1606 			syslog: <>
+ 1607 			alarm: 1237
+ 1608 		sigvec: <>
+ 1609 		syslog: <>
+ 1610 		P: <>
+ 1611 		sigemptyset: <>
+ 1612 		alarm: 1237
+ 1613 		PRINTF: <>
+ 1614 		read_drift: void (), <./ntp/parseutil/dcfd.c 951>
+ 1615 			fopen: <>
+ 1616 			fscanf: <>
+ 1617 			fclose: <>
+ 1618 			LPRINTF: <>
+ 1619 		read: <>
+ 1620 		timersub: <>
+ 1621 		timercmp: <>
+ 1622 		cvt_rawdcf: unsigned long (), <./ntp/parseutil/dcfd.c 494>
+ 1623 			dprintf: <>
+ 1624 			PRINTF: <>
+ 1625 			convert_rawdcf: unsigned long (), <./ntp/parseutil/dcfd.c 407>
+ 1626 				PRINTF: <>
+ 1627 				ext_bf: unsigned long (), <./ntp/parseutil/dcfd.c 355>
+ 1628 				pcheck: unsigned (), <./ntp/parseutil/dcfd.c 381>
+ 1629 				TIMES10: <>
+ 1630 		type: char (), <./ntp/parseutil/dcfd.c 856>
+ 1631 		dcf_to_unixtime: time_t (), <./ntp/parseutil/dcfd.c 731>
+ 1632 			SETRTC: <>
+ 1633 			days_per_year: <>
+ 1634 			TIMES24: <>
+ 1635 			TIMES60: <>
+ 1636 		adjust_clock: void (), <./ntp/parseutil/dcfd.c 1006>
+ 1637 			abs: <>
+ 1638 			timercmp: <>
+ 1639 			set_time: void (), <./ntp/parseutil/dcfd.c 900>
+ 1640 				LPRINTF: <>
+ 1641 				pr_timeval: char * (), <./ntp/parseutil/dcfd.c 883>
+ 1642 					sprintf: <>
+ 1643 					abs: <>
+ 1644 				syslog: <>
+ 1645 				gettimeofday: 1430
+ 1646 				perror: <>
+ 1647 				timeradd: <>
+ 1648 				settimeofday: <>
+ 1649 			R_SHIFT: <>
+ 1650 			update_drift: void (), <./ntp/parseutil/dcfd.c 977>
+ 1651 				fopen: <>
+ 1652 				R_SHIFT: <>
+ 1653 				LPRINTF: <>
+ 1654 				fprintf: <>
+ 1655 				abs: <>
+ 1656 				asctime: <>
+ 1657 				localtime: <>
+ 1658 				fclose: <>
+ 1659 			LPRINTF: <>
+ 1660 			pr_timeval: 1641
+ 1661 		timeradd: <>
+ 1662 		abs: <>
+ 1663 		closelog: <>
+ 1664 		tcgetattr: int (), <./ntp/ports/winnt/ntpd/win32_io.c 214>
+ 1665 			GetCommState: <>
+ 1666 			msyslog: 19
+ 1667 		tcsetattr: int (), <./ntp/ports/winnt/ntpd/win32_io.c 140>
+ 1668 			GetCommState: <>
+ 1669 			msyslog: 19
+ 1670 			max: <>
+ 1671 			SetCommState: <>
+ 1672 		convert_rawdcf: unsigned long (), <./ntp/parseutil/testdcf.c 193>
+ 1673 			printf: <>
+ 1674 			ext_bf: unsigned long (), <./ntp/parseutil/testdcf.c 157>
+ 1675 			pcheck: unsigned (), <./ntp/parseutil/testdcf.c 176>
+ 1676 			TIMES10: <>
+ 1677 		type: char (), <./ntp/parseutil/testdcf.c 270>
+ 1678 		msgget: <>
+ 1679 		msgctl: <>
+ 1680 		msyslog: 19
+ 1681 		puts: <>
+ 1682 		fork: <>
+ 1683 		fileno: <>
+ 1684 		setpgrp: <>
+ 1685 		setvbuf: <>
+ 1686 		InitClockRate: int (), <./ntp/adjtimed/adjtimed.c 415>
+ 1687 			open: <>
+ 1688 			msyslog: 19
+ 1689 			perror: <>
+ 1690 			nlist: <>
+ 1691 			fputs: <>
+ 1692 			GetClockRate: long (), <./ntp/adjtimed/adjtimed.c 362>
+ 1693 				lseek: <>
+ 1694 				sigblock: <>
+ 1695 				sigmask: <>
+ 1696 				read: <>
+ 1697 				sigsetmask: <>
+ 1698 			fprintf: <>
+ 1699 		Exit: void (), <./ntp/adjtimed/adjtimed.c 482>
+ 1700 			msyslog: 19
+ 1701 			closelog: <>
+ 1702 			close: <>
+ 1703 			exit: <>
+ 1704 		Cleanup: void (), <./ntp/adjtimed/adjtimed.c 467>
+ 1705 			ResetClockRate: void (), <./ntp/adjtimed/adjtimed.c 446>
+ 1706 				setitimer: <>
+ 1707 				puts: <>
+ 1708 				msyslog: 19
+ 1709 				GetClockRate: 1692
+ 1710 				SetClockRate: int (), <./ntp/adjtimed/adjtimed.c 382>
+ 1711 					lseek: <>
+ 1712 					sigblock: <>
+ 1713 					sigmask: <>
+ 1714 					write: <>
+ 1715 					sigsetmask: <>
+ 1716 					printf: <>
+ 1717 					msyslog: 19
+ 1718 				perror: <>
+ 1719 			msgctl: <>
+ 1720 			msyslog: 19
+ 1721 			perror: <>
+ 1722 			Exit: 1699
+ 1723 		ResetClockRate: 1705
+ 1724 		sigvector: <>
+ 1725 		plock: <>
+ 1726 		nice: <>
+ 1727 		msgrcv: <>
+ 1728 		AdjustClockRate: int (), <./ntp/adjtimed/adjtimed.c 272>
+ 1729 			printf: <>
+ 1730 			msyslog: 19
+ 1731 			SetClockRate: 1710
+ 1732 			perror: <>
+ 1733 			setitimer: <>
+ 1734 		msgsnd: <>
+ 1735 		tvtod: <>
+ 1736 		ntpqmain: int (), <./ntp/ntpq/ntpq.c 473>
+ 1737 			clear_globals: 3
+ 1738 			taskPrioritySet: <>
+ 1739 			taskIdSelf: <>
+ 1740 			ntp_getopt: 6
+ 1741 			ADDCMD: <>
+ 1742 			fprintf: <>
+ 1743 			exit: <>
+ 1744 			ADDHOST: <>
+ 1745 			isatty: <>
+ 1746 			fileno: <>
+ 1747 			signal_no_reset: 16
+ 1748 			abortcmd: RETSIGTYPE (), <./ntp/ntpq/ntpq.c 1281>
+ 1749 				fflush: <>
+ 1750 				putc: <>
+ 1751 				longjmp: <>
+ 1752 			MAKEWORD: <>
+ 1753 			WSAStartup: <>
+ 1754 			openhost: int (), <./ntp/ntpq/ntpq.c 567>
+ 1755 				getservbyname: struct servent (), <./ntp/libntp/machines.c 65>
+ 1756 				malloc: <>
+ 1757 				htons: <>
+ 1758 				fprintf: <>
+ 1759 				exit: <>
+ 1760 				printf: <>
+ 1761 				getnetnum: int (), <./ntp/ntpq/ntpq.c 1567>
+ 1762 					decodenetnum: 78
+ 1763 					sprintf: <>
+ 1764 					htonl: <>
+ 1765 					gethostbyname: struct hostent (), <./ntp/libntp/machines.c 38>
+ 1766 					memmove: 85
+ 1767 					strcpy: <>
+ 1768 					fprintf: <>
+ 1769 				closesocket: <>
+ 1770 				strcpy: <>
+ 1771 				setsockopt: <>
+ 1772 				socket: <>
+ 1773 				connect: <>
+ 1774 			getcmds: void (), <./ntp/ntpq/ntpq.c 1256>
+ 1775 				fputs: <>
+ 1776 				fflush: <>
+ 1777 				fgets: <>
+ 1778 				docmd: int, <./ntp/clockstuff/clktest.c 78>
+ 1779 			docmd: int, <./ntp/clockstuff/clktest.c 78>
+ 1780 			WSACleanup: <>
+ 1781 		ntptracemain: int (), <./ntp/ntptrace/ntptrace.c 124>
+ 1782 			ntp_getopt: 6
+ 1783 			atoi: <>
+ 1784 			fprintf: <>
+ 1785 			exit: <>
+ 1786 			MAKEWORD: <>
+ 1787 			WSAStartup: <>
+ 1788 			msyslog: 19
+ 1789 			emalloc: 288
+ 1790 			setvbuf: <>
+ 1791 			setlinebuf: <>
+ 1792 			addservbyname: struct server (), <./ntp/ntptrace/ntptrace.c 549>
+ 1793 			setup_io: void (), <./ntp/ntptrace/ntptrace.c 567>
+ 1794 				init_recvbuff: 367
+ 1795 				socket: <>
+ 1796 				msyslog: 19
+ 1797 				exit: <>
+ 1798 				FD_ZERO: <>
+ 1799 				FD_SET: <>
+ 1800 			DoTrace: void (), <./ntp/ntptrace/ntptrace.c 236>
+ 1801 				printf: <>
+ 1802 				ntoa: <>
+ 1803 				ntohost: <>
+ 1804 				fflush: <>
+ 1805 				DoTransmit: void (), <./ntp/ntptrace/ntptrace.c 268>
+ 1806 					printf: <>
+ 1807 					ntoa: <>
+ 1808 					PKT_LI_VN_MODE: <>
+ 1809 					STRATUM_TO_PKT: <>
+ 1810 					htonl: <>
+ 1811 					L_CLR: <>
+ 1812 					get_systime: 203
+ 1813 					HTONL_FP: <>
+ 1814 					sendpkt: 441
+ 1815 				DoReceive: int (), <./ntp/ntptrace/ntptrace.c 307>
+ 1816 					select: <>
+ 1817 					printf: <>
+ 1818 					msyslog: 19
+ 1819 					get_systime: 203
+ 1820 					free_recvbuffs: 382
+ 1821 					exit: <>
+ 1822 					get_free_recv_buffer: struct recvbuf (), <./ntp/libntp/recvbuff.c 236>
+ 1823 					recvfrom: <>
+ 1824 					freerecvbuf: 386
+ 1825 					add_full_recv_buffer: 391
+ 1826 					ReceiveBuf: int (), <./ntp/ntptrace/ntptrace.c 375>
+ 1827 						printf: <>
+ 1828 						ntoa: <>
+ 1829 						PKT_VERSION: <>
+ 1830 						PKT_MODE: <>
+ 1831 						NTOHL_FP: <>
+ 1832 						L_ISEQU: <>
+ 1833 						PKT_LEAP: <>
+ 1834 						PKT_TO_STRATUM: <>
+ 1835 						ntohl: <>
+ 1836 						L_ISZERO: <>
+ 1837 						L_ISHIS: <>
+ 1838 						L_SUB: <>
+ 1839 						L_ADD: <>
+ 1840 						L_RSHIFT: <>
+ 1841 						LFPTOFP: <>
+ 1842 						printserver: void (), <./ntp/ntptrace/ntptrace.c 689>
+ 1843 							fprintf: <>
+ 1844 							lfptoa: <>
+ 1845 							ufptoa: <>
+ 1846 							printrefid: void (), <./ntp/ntptrace/ntptrace.c 738>
+ 1847 								memmove: 85
+ 1848 								fprintf: <>
+ 1849 								numtoa: 420
+ 1850 								numtohost: char * (), <./ntp/libntp/numtohost.c 15>
+ 1851 									ntohl: <>
+ 1852 									gethostbyaddr: struct hostent (), <./ntp/libntp/machines.c 52>
+ 1853 									numtoa: 420
+ 1854 									LIB_GETBUF: <>
+ 1855 									strncpy: <>
+ 1856 							ntoa: <>
+ 1857 							ntohs: <>
+ 1858 							fptoa: char * (), <./ntp/libntp/fptoa.c 8>
+ 1859 								dofptoa: char * (), <./ntp/libntp/dofptoa.c 12>
+ 1860 									LIB_GETBUF: <>
+ 1861 									memset: <>
+ 1862 							prettydate: 1551
+ 1863 						addserver: struct server (), <./ntp/ntptrace/ntptrace.c 514>
+ 1864 						DoTrace: 1800
+ 1865 			WSACleanup: <>
+ 1866 		ntpdatemain: int (), <./ntp/ntpdate/ntpdate.c 301>
+ 1867 			MAKEWORD: <>
+ 1868 			WSAStartup: <>
+ 1869 			msyslog: 19
+ 1870 			exit: <>
+ 1871 			ExpandEnvironmentStrings: <>
+ 1872 			clear_globals: 3
+ 1873 			ntp_getopt: 6
+ 1874 			atoi: <>
+ 1875 			atolfp: int (), <./ntp/libntp/atolfp.c 28>
+ 1876 				isspace: <>
+ 1877 				isdigit: <>
+ 1878 				strchr: <>
+ 1879 				M_NEG: <>
+ 1880 			fprintf: <>
+ 1881 			LFPTOFP: <>
+ 1882 			setvbuf: <>
+ 1883 			setlinebuf: <>
+ 1884 			openlog: <>
+ 1885 			setlogmask: <>
+ 1886 			LOG_UPTO: <>
+ 1887 			getnetinfoservers: ni_namelist * (), <./ntp/ntpdate/ntpdate.c 2017>
+ 1888 			emalloc: 288
+ 1889 			addserver: void (), <./ntp/ntpdate/ntpdate.c 1277>
+ 1890 				msyslog: 19
+ 1891 				getnetnum: 1761
+ 1892 				emalloc: 288
+ 1893 				memset: <>
+ 1894 				htons: <>
+ 1895 			strchr: <>
+ 1896 			ni_namelist_free: <>
+ 1897 			free: <>
+ 1898 			init_auth: 285
+ 1899 			authreadkeys: 1017
+ 1900 			authistrusted: 516
+ 1901 			sprintf: <>
+ 1902 			init_io: 361
+ 1903 			init_alarm: void (), <./ntp/ntpdate/ntpdate.c 1386>
+ 1904 				timer_create: <>
+ 1905 				fprintf: <>
+ 1906 				signal_no_reset: 16
+ 1907 				alarming: , <./ntp/ntpdate/ntpdate.c 1370>
+ 1908 				timer_settime: <>
+ 1909 				setitimer: <>
+ 1910 				OpenProcessToken: <>
+ 1911 				GetCurrentProcess: <>
+ 1912 				msyslog: 19
+ 1913 				exit: <>
+ 1914 				LookupPrivilegeValue: <>
+ 1915 				AdjustTokenPrivileges: <>
+ 1916 				GetLastError: <>
+ 1917 				timeGetDevCaps: <>
+ 1918 				min: <>
+ 1919 				max: <>
+ 1920 				timeBeginPeriod: <>
+ 1921 				timeSetEvent: <>
+ 1922 			taskPrioritySet: <>
+ 1923 			taskIdSelf: <>
+ 1924 			nice: <>
+ 1925 			setpriority: <>
+ 1926 			GetCurrentProcess: <>
+ 1927 			SetPriorityClass: <>
+ 1928 			getrecvbufs: struct recvbuf (), <./ntp/libntp/recvbuff.c 143>
+ 1929 			poll: <>
+ 1930 			select: <>
+ 1931 			input_handler: 378
+ 1932 			receive: 400
+ 1933 			freerecvbuf: 386
+ 1934 			timer: 1270
+ 1935 			WSACleanup: <>
+ 1936 			close: <>
+ 1937 			timer_delete: <>
+ 1938 			clock_adjust: int (), <./ntp/ntpdate/ntpdate.c 1207>
+ 1939 				clock_filter: void (), <./ntp/ntpdate/ntpdate.c 936>
+ 1940 					L_CLR: <>
+ 1941 					LFPTOFP: <>
+ 1942 				clock_select: struct server (), <./ntp/ntpdate/ntpdate.c 1010>
+ 1943 				printserver: void (), <./ntp/ntpdate/ntpdate.c 1893>
+ 1944 				msyslog: 19
+ 1945 				l_step_systime: int (), <./ntp/ntpdate/ntpdate.c 1813>
+ 1946 				ntoa: <>
+ 1947 				lfptoa: <>
+ 1948 				l_adj_systime: int (), <./ntp/ntpdate/ntpdate.c 1758>
+ 1949 				printf: <>
+ 1950 				exit: <>

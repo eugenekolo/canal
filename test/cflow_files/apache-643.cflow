@@ -1,0 +1,338 @@
+    1 	main: int (), <./apache/src/helpers/dummy.c 8>
+    2 		atoi: <>
+    3 		strcpy: <>
+    4 		split: int (), <./apache/src/regex/split.c 11>
+    5 		dosplit:  (), <./apache/src/regex/split.c 184>
+    6 			split: 4
+    7 			print:  (), <./apache/src/regex/split.c 196>
+    8 				printf: <>
+    9 		fgets: <>
+   10 		strlen: <>
+   11 		regress: void (), <./apache/src/regex/main.c 130>
+   12 			strcpy: <>
+   13 			split: 4
+   14 			printf: <>
+   15 			strcmp: <>
+   16 			print: 7
+   17 			tmslc: <>
+   18 			fgets: <>
+   19 			strlen: <>
+   20 			debug: int, <./apache/src/regex/main.c 14>
+   21 			fprintf: <>
+   22 			exit: <>
+   23 			try: void (), <./apache/src/regex/main.c 210>
+   24 				strcpy: <>
+   25 				strlen: <>
+   26 				fixstr: <>
+   27 				regcomp: <>
+   28 				opt: int (), <./apache/src/regex/main.c 378>
+   29 					strchr: <>
+   30 				efind: int (), <./apache/src/regex/main.c 505>
+   31 				regerror: <>
+   32 				fprintf: <>
+   33 				eprint: char * (), <./apache/src/regex/main.c 489>
+   34 				regfree: <>
+   35 				options: int (), <./apache/src/regex/main.c 321>
+   36 					strchr: <>
+   37 				strchr: <>
+   38 				regexec: <>
+   39 				check: char * (), <./apache/src/regex/main.c 412>
+   40 				split: 4
+   41 			options: 35
+   42 			opt: 28
+   43 			regerror: <>
+   44 			strncmp: <>
+   45 			atoi: <>
+   46 		exit: <>
+   47 		NS: const ENCODING * () (), <./apache/src/lib/expat-lite/xmltok_ns.c 6>
+   48 			ns: <>
+   49 		getopt: int (), <./apache/src/os/win32/getopt.c 47>
+   50 			assert: <>
+   51 			optiserr: int (), <./apache/src/os/netware/getopt.c 16>
+   52 				fprintf: <>
+   53 			strchr: <>
+   54 			optiserr: int (), <./apache/src/os/win32/getopt.c 18>
+   55 				fprintf: <>
+   56 		options: 35
+   57 		debug: int, <./apache/src/regex/main.c 14>
+   58 		fprintf: <>
+   59 		regcomp: <>
+   60 		regerror: <>
+   61 		eprint: char * (), <./apache/src/regex/main.c 489>
+   62 		regprint: void (), <./apache/src/regex/debug.c 19>
+   63 			fprintf: <>
+   64 			s_print: <>
+   65 			regchar: char * (), <./apache/src/regex/debug.c 233>
+   66 		regfree: <>
+   67 		regexec: <>
+   68 		printf: <>
+   69 		strchr: <>
+   70 		ap_isalnum: <>
+   71 		ap_iscntrl: <>
+   72 		apache_main: <>
+   73 		signal: Sigfunc * (), <./apache/src/ap/ap_signal.c 66>
+   74 			sigemptyset: <>
+   75 			sigaction: <>
+   76 		interrupted: void (), <./apache/src/support/htpasswd.c 285>
+   77 			fprintf: <>
+   78 			unlink: <>
+   79 			exit: <>
+   80 		usage: int (), <./apache/src/support/htpasswd.c 255>
+   81 			fprintf: <>
+   82 		exists: int (), <./apache/src/support/htpasswd.c 329>
+   83 			stat: <>
+   84 		perror: <>
+   85 		readable: int (), <./apache/src/support/htpasswd.c 313>
+   86 			accessible: int (), <./apache/src/support/htpasswd.c 298>
+   87 				fopen: <>
+   88 				fclose: <>
+   89 		writable: int (), <./apache/src/support/htpasswd.c 321>
+   90 			accessible: 86
+   91 		mkrecord: int (), <./apache/src/support/htpasswd.c 178>
+   92 			fprintf: <>
+   93 			usage: 80
+   94 			ap_getpass: <>
+   95 			ap_snprintf: <>
+   96 			strcmp: <>
+   97 			ap_cpystrn: <>
+   98 			memset: <>
+   99 			ap_sha1_base64: <>
+  100 			strlen: <>
+  101 			srand: <>
+  102 			time: <>
+  103 			ap_to64: <>
+  104 			rand: <>
+  105 			ap_MD5Encode: <>
+  106 			crypt: <>
+  107 			strcpy: <>
+  108 			strcat: <>
+  109 		tmpnam: <>
+  110 		fopen: <>
+  111 		getline: int (), <./apache/src/support/htpasswd.c 144>
+  112 			fgetc: <>
+  113 			feof: <>
+  114 		putline: void (), <./apache/src/support/htpasswd.c 163>
+  115 			fputc: <>
+  116 		strcmp: <>
+  117 		copy_file: void (), <./apache/src/support/htpasswd.c 350>
+  118 			fgets: <>
+  119 			fputs: <>
+  120 		fclose: <>
+  121 		unlink: <>
+  122 		interrupted: void (), <./apache/src/support/htdigest.c 187>
+  123 			fprintf: <>
+  124 			unlink: <>
+  125 			exit: <>
+  126 		usage: void (), <./apache/src/support/htdigest.c 180>
+  127 			fprintf: <>
+  128 			exit: <>
+  129 		add_password: void (), <./apache/src/support/htdigest.c 142>
+  130 			ap_getpass: <>
+  131 			fprintf: <>
+  132 			exit: <>
+  133 			strcmp: <>
+  134 			unlink: <>
+  135 			sprintf: <>
+  136 			ap_MD5Init: <>
+  137 			ap_MD5Update: <>
+  138 			strlen: <>
+  139 			ap_MD5Final: <>
+  140 		getline: int (), <./apache/src/support/htdigest.c 114>
+  141 			fgetc: <>
+  142 			feof: <>
+  143 		putline: void (), <./apache/src/support/htdigest.c 132>
+  144 			fputc: <>
+  145 		getword: void (), <./apache/src/support/htdigest.c 99>
+  146 		sprintf: <>
+  147 		system: <>
+  148 		copy_file: void (), <./apache/src/support/htdigest.c 197>
+  149 			getline: 140
+  150 			putline: 143
+  151 		log_err: void (), <./apache/src/support/suexec.c 199>
+  152 			va_start: <>
+  153 			err_output: void (), <./apache/src/support/suexec.c 171>
+  154 				fopen: <>
+  155 				fprintf: <>
+  156 				perror: <>
+  157 				exit: <>
+  158 				time: <>
+  159 				localtime: <>
+  160 				vfprintf: <>
+  161 				fflush: <>
+  162 			va_end: <>
+  163 		getuid: <>
+  164 		getpwuid: <>
+  165 		strcasecmp: <>
+  166 		strncmp: <>
+  167 		strstr: <>
+  168 		getpwnam: struct passwd (), <./apache/src/os/win32/passwd.c 6>
+  169 		strspn: <>
+  170 		getgrnam: <>
+  171 		strdup: char * (), <./apache/src/support/logresolve.c 74>
+  172 			malloc: <>
+  173 			strlen: <>
+  174 			strcpy: <>
+  175 		ufork: <>
+  176 		strerror: <>
+  177 		waitpid: <>
+  178 		WIFSIGNALED: <>
+  179 		kill: <>
+  180 		getpid: <>
+  181 		WTERMSIG: <>
+  182 		WEXITSTATUS: <>
+  183 		setgid: <>
+  184 		initgroups: int (), <./apache/src/support/suexec.c 106>
+  185 		setuid: <>
+  186 		getcwd: <>
+  187 		chdir: <>
+  188 		lstat: <>
+  189 		S_ISDIR: <>
+  190 		S_ISLNK: <>
+  191 		umask: <>
+  192 		clean_env: void (), <./apache/src/support/suexec.c 211>
+  193 			calloc: <>
+  194 			log_err: 151
+  195 			exit: <>
+  196 			sprintf: <>
+  197 			strdup: 171
+  198 			strncmp: <>
+  199 			strlen: <>
+  200 		ap_execve: int (), <./apache/src/ap/ap_execve.c 166>
+  201 			execve: int (), <./apache/src/os/tpf/os.c 199>
+  202 			hashbang: const char ** (), <./apache/src/ap/ap_execve.c 260>
+  203 				open: <>
+  204 				read: <>
+  205 				close: <>
+  206 				hb_subst: <>
+  207 				malloc: <>
+  208 				fprintf: <>
+  209 				strcpy: <>
+  210 				strlen: <>
+  211 				memcpy: <>
+  212 			free: <>
+  213 			count_args: int (), <./apache/src/ap/ap_execve.c 152>
+  214 			malloc: <>
+  215 			fprintf: <>
+  216 		execv: <>
+  217 		WSAStartup: <>
+  218 		getline: int (), <./apache/src/support/logresolve.c 265>
+  219 			fgets: <>
+  220 			strchr: <>
+  221 		isdigit: <>
+  222 		puts: <>
+  223 		inet_addr: <>
+  224 		cgethost: void (), <./apache/src/support/logresolve.c 125>
+  225 			malloc: <>
+  226 			perror: <>
+  227 			fprintf: <>
+  228 			exit: <>
+  229 			gethostbyaddr: <>
+  230 			strdup: 171
+  231 			inet_ntoa: <>
+  232 			gethostbyname: <>
+  233 			free: <>
+  234 			strncpy: <>
+  235 		check: char * (), <./apache/src/regex/main.c 412>
+  236 		WSACleanup: <>
+  237 		stats: void (), <./apache/src/support/logresolve.c 208>
+  238 			fprintf: <>
+  239 			inet_ntoa: <>
+  240 		err: void (), <./apache/src/support/ab.c 245>
+  241 			perror: <>
+  242 			printf: <>
+  243 			exit: <>
+  244 		open_postfile: int (), <./apache/src/support/ab.c 964>
+  245 			open: <>
+  246 			printf: <>
+  247 			fstat: <>
+  248 			perror: <>
+  249 			malloc: <>
+  250 			read: <>
+  251 		strncat: <>
+  252 		isspace: <>
+  253 		ap_base64encode: <>
+  254 		copyright: void (), <./apache/src/support/ab.c 886>
+  255 			printf: <>
+  256 		usage: void (), <./apache/src/support/ab.c 904>
+  257 			fprintf: <>
+  258 			exit: <>
+  259 		parse_url: int (), <./apache/src/support/ab.c 936>
+  260 			strlen: <>
+  261 			strncmp: <>
+  262 			strchr: <>
+  263 			strcpy: <>
+  264 			atoi: <>
+  265 		test: void (), <./apache/src/support/ab.c 762>
+  266 			printf: <>
+  267 			fflush: <>
+  268 			gethostbyname: <>
+  269 			err: 240
+  270 			htons: <>
+  271 			malloc: <>
+  272 			memset: <>
+  273 			FD_ZERO: <>
+  274 			sprintf: <>
+  275 			strlen: <>
+  276 			ebcdic2ascii: void * (), <./apache/src/os/bs2000/ebcdic.c 158>
+  277 			gettimeofday: <>
+  278 			start_connect: void (), <./apache/src/support/ab.c 525>
+  279 				socket: <>
+  280 				err: 240
+  281 				nonblock: void (), <./apache/src/support/ab.c 295>
+  282 					setsockopt: <>
+  283 					ioctl: <>
+  284 				gettimeofday: <>
+  285 				connect: <>
+  286 				FD_SET: <>
+  287 				ab_close: <>
+  288 				start_connect: 278
+  289 			memcpy: <>
+  290 			timedif: int (), <./apache/src/support/ab.c 309>
+  291 			ap_select: <>
+  292 			FD_ISSET: <>
+  293 			read_connection: void (), <./apache/src/support/ab.c 605>
+  294 				ab_read: <>
+  295 				close_connection: void (), <./apache/src/support/ab.c 565>
+  296 					gettimeofday: <>
+  297 					timedif: 290
+  298 					ab_close: <>
+  299 					FD_CLR: <>
+  300 					start_connect: 278
+  301 				memcpy: <>
+  302 				ascii2ebcdic: void * (), <./apache/src/os/bs2000/ebcdic.c 171>
+  303 				printf: <>
+  304 				strstr: <>
+  305 				ab_close: <>
+  306 				err: 240
+  307 				FD_CLR: <>
+  308 				start_connect: 278
+  309 				strncpy: <>
+  310 				strlen: <>
+  311 				atoi: <>
+  312 				gettimeofday: <>
+  313 				timedif: 290
+  314 				write_request: void (), <./apache/src/support/ab.c 261>
+  315 					gettimeofday: <>
+  316 					writev: <>
+  317 					ab_write: <>
+  318 					FD_SET: <>
+  319 					FD_CLR: <>
+  320 			write_request: 314
+  321 			output_html_results: void (), <./apache/src/support/ab.c 401>
+  322 				gettimeofday: <>
+  323 				timedif: 290
+  324 				printf: <>
+  325 				ap_min: <>
+  326 				ap_max: <>
+  327 			output_results: void (), <./apache/src/support/ab.c 324>
+  328 				gettimeofday: <>
+  329 				timedif: 290
+  330 				printf: <>
+  331 				ap_min: <>
+  332 				ap_max: <>
+  333 		read: <>
+  334 		time: <>
+  335 		close: <>
+  336 		open: <>
+  337 		write: <>
+  338 		foo: int (), <./apache/src/helpers/dummy.c 4>

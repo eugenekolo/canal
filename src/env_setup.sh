@@ -39,8 +39,7 @@ export VULNERABILITY_LOGS_DIRECTORY="$PROJECT_PATH""/test/logs/"
 export OUTPUT_PNG_PATH="$PROJECT_PATH""/test/cflow_images"
 
 # Vulnerability options
-export VULNERABILITY_ANALYSIS_TYPE1_ENABLED=1 	# Checking occurance of A before B
-export VULNERABILITY_ANALYSIS_TYPE2_ENABLED=1		# Checking of function call returns
-#export VULNERABILITY_ANALYSIS_TYPE3_ENABLED=1 	# Checking of exec* or system calls with known vulnerable binaries
-export VULNERABILITY_ANALYSIS_TYPE4_ENABLED=1 	# Checking of bad words
-
+#export VULNERABILITY_ANALYSIS_TYPE1_ENABLED=1 	# Checking occurance of A before B
+#export VULNERABILITY_ANALYSIS_TYPE2_ENABLED=1		# Checking of function call returns
+export VULNERABILITY_ANALYSIS_TYPE3_ENABLED=1 	# Checking of exec* or system calls with known vulnerable binaries
+#export VULNERABILITY_ANALYSIS_TYPE4_ENABLED=1 	# Checking of bad words

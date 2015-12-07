@@ -1,0 +1,268 @@
+    1 	main: int (), <./ioclasscount.tproj/ioclasscount.c 12>
+    2 		IOMasterPort: <>
+    3 		assert: <>
+    4 		IORegistryGetRootEntry: <>
+    5 		IORegistryEntryCreateCFProperties: <>
+    6 		CFDictionaryGetTypeID: <>
+    7 		CFGetTypeID: <>
+    8 		CFDictionaryGetValue: <>
+    9 		CFSTR: <>
+   10 		printNumber: void (), <./ioalloccount.tproj/ioalloccount.c 10>
+   11 			CFDictionaryGetValue: <>
+   12 			assert: <>
+   13 			CFNumberGetTypeID: <>
+   14 			CFGetTypeID: <>
+   15 			CFNumberGetValue: <>
+   16 			printf: <>
+   17 			CFStringGetCStringPtr: <>
+   18 		CFRelease: <>
+   19 		IOObjectRelease: <>
+   20 		exit: <>
+   21 		strrchr: <>
+   22 		createBundleList: CFArrayRef (), <./mkextcache.tproj/mkextcache.c 182>
+   23 			CFArrayCreateMutable: <>
+   24 			checkFatal: <>
+   25 			getopt: <>
+   26 			ArrayAppendDirPath: void (), <./mkextcache.tproj/mkextcache.c 144>
+   27 				URLCreateWithFileSystemPath: CFURLRef (), <./mkextcache.tproj/mkextcache.c 129>
+   28 					CFURLCreateFromFileSystemRepresentation: <>
+   29 					strlen: <>
+   30 					CFURLCopyAbsoluteURL: <>
+   31 					CFRelease: <>
+   32 				checkFatal: <>
+   33 				CFArrayAppendValue: <>
+   34 				CFRelease: <>
+   35 			get_arch_from_flag: __private_extern__ int (), <./mkextcache.tproj/fat.c 368>
+   36 				strcmp: <>
+   37 			atoi: <>
+   38 			usage: volatile void (), <./mkextcache.tproj/mkextcache.c 112>
+   39 				fprintf: <>
+   40 				exit: <>
+   41 			URLCreateWithFileSystemPath: 27
+   42 			CFBundleCreate: <>
+   43 			CFRelease: <>
+   44 			CFArrayAppendValue: <>
+   45 			CFArrayGetCount: <>
+   46 			CFArrayGetValueAtIndex: <>
+   47 			CFDynamicCast: <>
+   48 			CFBundleCreateBundlesFromDirectory: <>
+   49 			CFArrayAppendArray: <>
+   50 			CFRangeMake: <>
+   51 		validateBundleList: CFDictionaryRef (), <./mkextcache.tproj/mkextcache.c 464>
+   52 			CFDictionaryCreateMutable: <>
+   53 			checkFatal: <>
+   54 			CFArrayApplyFunction: <>
+   55 			CFRangeMake: <>
+   56 			CFArrayGetCount: <>
+   57 			validateBundle: void (), <./mkextcache.tproj/mkextcache.c 302>
+   58 				CFDynamicCast: <>
+   59 				CFBundleGetIdentifier: <>
+   60 				CFDictionaryGetValue: <>
+   61 				CFStringGetCString: <>
+   62 				strcpy: <>
+   63 				CFBundleGetValueForInfoDictionaryKey: <>
+   64 				CFSTR: <>
+   65 				verbosePrintf: volatile void (), <./mkextcache.tproj/mkextcache.c 100>
+   66 					va_start: <>
+   67 					vprintf: <>
+   68 					va_end: <>
+   69 					fflush: <>
+   70 				CFStringCompare: <>
+   71 				CFEqual: <>
+   72 				BundleGetInfoPlistPath: void (), <./mkextcache.tproj/mkextcache.c 168>
+   73 					CFBundleCopyBundleURL: <>
+   74 					assert: <>
+   75 					URLAbsoluteGetPath: void (), <./mkextcache.tproj/mkextcache.c 155>
+   76 						CFURLCopyAbsoluteURL: <>
+   77 						assert: <>
+   78 						CFURLCopyPath: <>
+   79 						CFRelease: <>
+   80 						CFStringGetCString: <>
+   81 					CFRelease: <>
+   82 					strlen: <>
+   83 					strncpy: <>
+   84 				open: <>
+   85 				close: <>
+   86 				CFBundleCopyExecutableURL: <>
+   87 				URLAbsoluteGetPath: 75
+   88 				CFRelease: <>
+   89 				read: <>
+   90 				find_arch: __private_extern__ void (), <./mkextcache.tproj/fat.c 304>
+   91 					NXSwapHostLongToBig: <>
+   92 					cpusubtype_findbestarch: struct fat_arch (), <./mkextcache.tproj/fat.c 98>
+   93 					NXSwapBigLongToHost: <>
+   94 				CFDictionarySetValue: <>
+   95 				CFBundleCopyBuiltInPlugInsURL: <>
+   96 				CFBundleCreateBundlesFromDirectory: <>
+   97 				CFArrayGetCount: <>
+   98 				CFArrayApplyFunction: <>
+   99 				CFRangeMake: <>
+  100 				validateBundle: 57
+  101 			CFDictionaryGetCount: <>
+  102 		compressBundleDict: void (), <./mkextcache.tproj/mkextcache.c 598>
+  103 			CFDictionaryGetCount: <>
+  104 			checkFatal: <>
+  105 			vm_allocate: <>
+  106 			mach_task_self: <>
+  107 			mach_error_string: <>
+  108 			NXSwapHostIntToBig: <>
+  109 			CFDictionaryApplyFunction: <>
+  110 			compressAndSaveBundle: void (), <./mkextcache.tproj/mkextcache.c 570>
+  111 				CFDynamicCast: <>
+  112 				assert: <>
+  113 				BundleGetInfoPlistPath: 72
+  114 				compressFile: u_int8_t * (), <./mkextcache.tproj/mkextcache.c 492>
+  115 					memset: <>
+  116 					open: <>
+  117 					checkFatal: <>
+  118 					fstat: <>
+  119 					strerror: <>
+  120 					close: <>
+  121 					mmap: <>
+  122 					find_arch: 90
+  123 					verbosePrintf: 65
+  124 					munmap: <>
+  125 					compress_lzss: __private_extern__ u_int8_t * (), <./mkextcache.tproj/mkext.c 233>
+  126 						malloc: <>
+  127 						init_state: void (), <./mkextcache.tproj/mkext.c 127>
+  128 							bzero: <>
+  129 						insert_node: void (), <./mkextcache.tproj/mkext.c 149>
+  130 						delete_node: void (), <./mkextcache.tproj/mkext.c 200>
+  131 					NXSwapHostLongToBig: <>
+  132 					memcpy: <>
+  133 					malloc: <>
+  134 					decompress_lzss: __private_extern__ int (), <./mkextcache.tproj/mkext.c 74>
+  135 					memcmp: <>
+  136 					free: <>
+  137 					NXSwapBigLongToHost: <>
+  138 				checkFatal: <>
+  139 				strerror: <>
+  140 				CFBundleCopyExecutableURL: <>
+  141 				URLAbsoluteGetPath: 75
+  142 				CFRelease: <>
+  143 			adler32: __private_extern__ u_int32_t (), <./mkextcache.tproj/mkext.c 12>
+  144 		outputFile: void (), <./mkextcache.tproj/mkextcache.c 637>
+  145 			NXSwapBigIntToHost: <>
+  146 			strncpy: <>
+  147 			open: <>
+  148 			checkFatal: <>
+  149 			strerror: <>
+  150 			write: <>
+  151 			close: <>
+  152 			strcpy: <>
+  153 			verbosePrintf: 65
+  154 		verbosePrintf: 65
+  155 		initscr: <>
+  156 		getopt: <>
+  157 		atoi: <>
+  158 		assertion: void (), <./ioreg.tproj/ioreg.c 395>
+  159 			fprintf: <>
+  160 			exit: <>
+  161 		usage: void (), <./ioreg.tproj/ioreg.c 377>
+  162 			fprintf: <>
+  163 			exit: <>
+  164 		printinit: void (), <./ioreg.tproj/ioreg.c 445>
+  165 			malloc: <>
+  166 			assertion: 158
+  167 		boldinit: void (), <./ioreg.tproj/ioreg.c 414>
+  168 			tgetstr: <>
+  169 			assertion: 158
+  170 		scan: void (), <./ioreg.tproj/ioreg.c 165>
+  171 			IORegistryEntryGetChildIterator: <>
+  172 			assertion: 158
+  173 			IOIteratorNext: <>
+  174 			show: void (), <./ioreg.tproj/ioreg.c 222>
+  175 				IORegistryEntryGetNameInPlane: <>
+  176 				assertion: 158
+  177 				indent: void (), <./ioreg.tproj/ioreg.c 353>
+  178 					print: void (), <./ioreg.tproj/ioreg.c 482>
+  179 						va_start: <>
+  180 						printva: void (), <./ioreg.tproj/ioreg.c 457>
+  181 							vsnprintf: <>
+  182 							strchr: <>
+  183 							printf: <>
+  184 							vprintf: <>
+  185 						va_end: <>
+  186 				boldon: void (), <./ioreg.tproj/ioreg.c 428>
+  187 					tputs: <>
+  188 					termcapstr_outc: void (), <./ioreg.tproj/ioreg.c 409>
+  189 						putchar: <>
+  190 				print: 178
+  191 				boldoff: void (), <./ioreg.tproj/ioreg.c 433>
+  192 					tputs: <>
+  193 					termcapstr_outc: 188
+  194 				IORegistryEntryGetPath: <>
+  195 				strlen: <>
+  196 				IOObjectGetClass: <>
+  197 				IOObjectConformsTo: <>
+  198 				IOServiceGetBusyState: <>
+  199 				IOObjectGetRetainCount: <>
+  200 				println: void (), <./ioreg.tproj/ioreg.c 490>
+  201 					va_start: <>
+  202 					printva: 180
+  203 					va_end: <>
+  204 					printf: <>
+  205 				strcmp: <>
+  206 				IORegistryEntryCreateCFProperties: <>
+  207 				CFGetTypeID: <>
+  208 				CFDictionaryGetTypeID: <>
+  209 				CFDictionaryApplyFunction: <>
+  210 				showItem: void (), <./ioreg.tproj/ioreg.c 337>
+  211 					indent: 177
+  212 					print: 178
+  213 					CFStringShow: void (), <./ioreg.tproj/ioreg.c 696>
+  214 						CFStringGetCStringPtr: <>
+  215 						print: 178
+  216 						CFStringGetLength: <>
+  217 						malloc: <>
+  218 						CFStringGetCString: <>
+  219 						free: <>
+  220 					CFObjectShow: void (), <./ioreg.tproj/ioreg.c 662>
+  221 						CFGetTypeID: <>
+  222 						CFArrayGetTypeID: <>
+  223 						CFArrayShow: void (), <./ioreg.tproj/ioreg.c 519>
+  224 							CFArrayGetCount: <>
+  225 							print: 178
+  226 							CFArrayApplyFunction: <>
+  227 							CFArrayShow_Applier: void (), <./ioreg.tproj/ioreg.c 507>
+  228 								print: 178
+  229 								CFObjectShow: 220
+  230 						CFBooleanGetTypeID: <>
+  231 						CFBooleanShow: void (), <./ioreg.tproj/ioreg.c 529>
+  232 							print: 178
+  233 							CFBooleanGetValue: <>
+  234 						CFDataGetTypeID: <>
+  235 						CFDataShow: void (), <./ioreg.tproj/ioreg.c 534>
+  236 							print: 178
+  237 							CFDataGetLength: <>
+  238 							CFDataGetBytePtr: <>
+  239 							isprint: <>
+  240 						CFDictionaryGetTypeID: <>
+  241 						CFDictionaryShow: void (), <./ioreg.tproj/ioreg.c 643>
+  242 							print: 178
+  243 							CFDictionaryApplyFunction: <>
+  244 							CFDictionaryShow_Applier: void (), <./ioreg.tproj/ioreg.c 627>
+  245 								print: 178
+  246 								CFObjectShow: 220
+  247 						CFNumberGetTypeID: <>
+  248 						CFNumberShow: void (), <./ioreg.tproj/ioreg.c 652>
+  249 							CFNumberGetValue: <>
+  250 							print: 178
+  251 						CFSetGetTypeID: <>
+  252 						CFSetShow: void (), <./ioreg.tproj/ioreg.c 688>
+  253 							print: 178
+  254 							CFSetApplyFunction: <>
+  255 							CFSetShow_Applier: void (), <./ioreg.tproj/ioreg.c 676>
+  256 								print: 178
+  257 								CFObjectShow: 220
+  258 						CFStringGetTypeID: <>
+  259 						CFStringShow: 213
+  260 						print: 178
+  261 					println: 200
+  262 				CFRelease: <>
+  263 			scan: 170
+  264 			IOObjectRelease: <>
+  265 		printf: <>
+  266 		CFStringCreateWithCString: <>
+  267 		CFNumberGetTypeID: <>
+  268 		CFNumberGetValue: <>

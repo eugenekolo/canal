@@ -1,0 +1,942 @@
+    1 	main: int (), <./xargs/xargs.c 72>
+    2 		setlocale: <>
+    3 		getopt: <>
+    4 		usage: void (), <./env/env.c 100>
+    5 			fprintf: <>
+    6 			exit: <>
+    7 		strchr: <>
+    8 		setenv: <>
+    9 		execvp: <>
+   10 		err: return, <./window/lcmd1.c 458>
+   11 		printf: <>
+   12 		exit: <>
+   13 		strrchr: <>
+   14 		strlen: <>
+   15 		atoi: <>
+   16 		bad_usage: void (), <./shlock/shlock.c 279>
+   17 			fprintf: <>
+   18 			exit: <>
+   19 		fprintf: <>
+   20 		cklock: int (), <./shlock/shlock.c 199>
+   21 			open: <>
+   22 			dprintf: <>
+   23 			fprintf: <>
+   24 			strerror: <>
+   25 			read: <>
+   26 			close: <>
+   27 			p_exists: int (), <./shlock/shlock.c 158>
+   28 				dprintf: <>
+   29 				kill: <>
+   30 				strerror: <>
+   31 			atoi: <>
+   32 		mklock: int (), <./shlock/shlock.c 229>
+   33 			dprintf: <>
+   34 			xtmpfile: char * (), <./shlock/shlock.c 89>
+   35 				sprintf: <>
+   36 				getpid: <>
+   37 				strrchr: <>
+   38 				strcpy: <>
+   39 				strcat: <>
+   40 				dprintf: <>
+   41 				strlen: <>
+   42 				open: <>
+   43 				unlink: <>
+   44 				fprintf: <>
+   45 				strerror: <>
+   46 				write: <>
+   47 				close: <>
+   48 			link: <>
+   49 			cklock: 20
+   50 			unlink: <>
+   51 			fprintf: <>
+   52 			strerror: <>
+   53 		usage: void (), <./dirname/dirname.c 149>
+   54 			fprintf: <>
+   55 			exit: <>
+   56 		isdigit: <>
+   57 		usage: void (), <./nice/nice.c 116>
+   58 			fprintf: <>
+   59 			exit: <>
+   60 		getpriority: <>
+   61 		setpriority: <>
+   62 		warn: <>
+   63 		usage: void (), <./nohup/nohup.c 139>
+   64 			fprintf: <>
+   65 			exit: <>
+   66 		isatty: <>
+   67 		dofile: void (), <./nohup/nohup.c 102>
+   68 			open: <>
+   69 			getenv: <>
+   70 			strcpy: <>
+   71 			strcat: <>
+   72 			fprintf: <>
+   73 			exit: <>
+   74 			lseek: <>
+   75 			dup2: <>
+   76 			strerror: <>
+   77 		dup2: <>
+   78 		strerror: <>
+   79 		signal: <>
+   80 		getegid: <>
+   81 		setegid: <>
+   82 		getgid: <>
+   83 		warnx: , <./printf/printf.c 109>
+   84 		usage: void (), <./id/id.c 338>
+   85 			fprintf: <>
+   86 			exit: <>
+   87 			fputs: <>
+   88 		setgid: <>
+   89 		kvm_openfiles: <>
+   90 		errx: <>
+   91 		time: <>
+   92 		fopen: <>
+   93 		fread: <>
+   94 		strncmp: <>
+   95 		calloc: <>
+   96 		memmove: <>
+   97 		ttystat: struct stat (), <./w/w.c 454>
+   98 		sysctl: <>
+   99 		fclose: <>
+  100 		pr_header: void (), <./w/w.c 378>
+  101 			strftime: <>
+  102 			localtime: <>
+  103 			printf: <>
+  104 			sysctl: <>
+  105 			getloadavg: <>
+  106 		kvm_getprocs: <>
+  107 		kvm_geterr: <>
+  108 		proc_compare: int (), <./w/proc_compare.c 77>
+  109 			TESTAB: <>
+  110 			ISRUN: <>
+  111 		ioctl: <>
+  112 		gethostname: <>
+  113 		inet_aton: <>
+  114 		gethostbyaddr: <>
+  115 		strcmp: <>
+  116 		snprintf: <>
+  117 		pr_attime: void (), <./w/pr_time.c 63>
+  118 			localtime: <>
+  119 			strftime: <>
+  120 			fputs: <>
+  121 		pr_idle: void (), <./w/pr_time.c 98>
+  122 			printf: <>
+  123 		pr_args: void (), <./w/w.c 355>
+  124 			kvm_getargv: <>
+  125 			fmt_puts: void (), <./w/fmt.c 12>
+  126 				strlen: <>
+  127 				getpagesize: <>
+  128 				realloc: <>
+  129 				strvis: <>
+  130 				printf: <>
+  131 			fmt_putc: void (), <./w/fmt.c 46>
+  132 				putchar: <>
+  133 			putchar: <>
+  134 		gettimeofday: <>
+  135 		vfork: <>
+  136 		perror: <>
+  137 		wait3: <>
+  138 		WIFEXITED: <>
+  139 		timersub: <>
+  140 		WEXITSTATUS: <>
+  141 		alloca: <>
+  142 		open: <>
+  143 		find_execute: int (), <./find/find.c 157>
+  144 			fts_open: <>
+  145 			err: return, <./window/lcmd1.c 458>
+  146 			fts_read: <>
+  147 			fflush: <>
+  148 			warnx: , <./printf/printf.c 109>
+  149 			strerror: <>
+  150 			strpbrk: <>
+  151 			fts_close: <>
+  152 		find_formplan: PLAN * (), <./find/find.c 66>
+  153 			find_create: PLAN * (), <./find/option.c 107>
+  154 				option: OPTION * (), <./find/option.c 129>
+  155 					bsearch: <>
+  156 				errx: <>
+  157 			c_print: PLAN * (), <./find/function.c 849>
+  158 				palloc: <>
+  159 				f_print: int (), <./find/function.c 830>
+  160 					printf: <>
+  161 			c_openparen: PLAN * (), <./find/function.c 1089>
+  162 				palloc: <>
+  163 			c_closeparen: PLAN * (), <./find/function.c 1097>
+  164 				palloc: <>
+  165 			paren_squish: PLAN * (), <./find/operator.c 137>
+  166 				yankexpr: PLAN * (), <./find/operator.c 83>
+  167 					yanknode: PLAN * (), <./find/operator.c 64>
+  168 					yankexpr: 166
+  169 					err: return, <./window/lcmd1.c 458>
+  170 					errx: <>
+  171 					f_expr: int (), <./find/function.c 1070>
+  172 				errx: <>
+  173 			not_squish: PLAN * (), <./find/operator.c 175>
+  174 				yanknode: 167
+  175 				not_squish: 173
+  176 				errx: <>
+  177 			or_squish: PLAN * (), <./find/operator.c 233>
+  178 				yanknode: 167
+  179 				or_squish: 177
+  180 				errx: <>
+  181 		getcwd_logical: char * (), <./pwd/pwd.c 116>
+  182 			getenv: <>
+  183 			stat: <>
+  184 			strlen: <>
+  185 			malloc: <>
+  186 			memmove: <>
+  187 		getcwd: <>
+  188 		nexttoken: void (), <./expr/expr.c 194>
+  189 		eval0: struct val (), <./expr/expr.c 504>
+  190 		error: void (), <./jot/jot.c 329>
+  191 			errx: <>
+  192 			va_start: <>
+  193 			verror: <>
+  194 			va_end: <>
+  195 		is_zero_or_null: <>
+  196 		malloc: <>
+  197 		free: <>
+  198 		stat: <>
+  199 		openlog: <>
+  200 		getuid: <>
+  201 		getlogin: <>
+  202 		getpwnam: <>
+  203 		getpwuid: <>
+  204 		strdup: <>
+  205 		strncpy: <>
+  206 		kerberos: int (), <./su/su.c 375>
+  207 			krb_get_lrealm: <>
+  208 			koktologin: int (), <./su/su.c 490>
+  209 				memset: <>
+  210 				strncpy: <>
+  211 				strcmp: <>
+  212 				kuserok: <>
+  213 			warnx: <>
+  214 			snprintf: <>
+  215 			getuid: <>
+  216 			setenv: <>
+  217 			krb_set_tkt_string: <>
+  218 			setuid: <>
+  219 			warn: <>
+  220 			krb_get_pw_in_tkt: <>
+  221 			syslog: <>
+  222 			ontty: char * (), <./su/su.c 362>
+  223 			chown: <>
+  224 			unlink: <>
+  225 			setpriority: <>
+  226 			gethostname: <>
+  227 			dest_tkt: <>
+  228 			strncpy: <>
+  229 			krb_get_phost: <>
+  230 			krb_mk_req: <>
+  231 			gethostbyname: <>
+  232 			memmove: <>
+  233 			krb_rd_req: <>
+  234 		initgroups: <>
+  235 		getgroups: <>
+  236 		getgrnam: <>
+  237 		warnx: <>
+  238 		getpass: <>
+  239 		strcasecmp: <>
+  240 		skey_haskey: <>
+  241 		skey_authenticate: <>
+  242 		crypt: <>
+  243 		syslog: <>
+  244 		ontty: char * (), <./su/su.c 362>
+  245 		chshell: <>
+  246 		strstr: <>
+  247 		setuid: <>
+  248 		getenv: <>
+  249 		chdir: <>
+  250 		ctime: <>
+  251 		execv: <>
+  252 		add: void (), <./tee/tee.c 144>
+  253 			malloc: <>
+  254 			err: return, <./window/lcmd1.c 458>
+  255 		read: <>
+  256 		write: <>
+  257 		close: <>
+  258 		fgets: <>
+  259 		putchar: <>
+  260 		fastfind: void (), <./locate/locate/locate.c 115>
+  261 			getc: <>
+  262 			strchr: <>
+  263 			patprep: char * (), <./locate/locate/locate.c 168>
+  264 				strlen: <>
+  265 				strchr: <>
+  266 			getw: <>
+  267 			fnmatch: <>
+  268 			printf: <>
+  269 		fwrite: <>
+  270 		putw: <>
+  271 		bgindex: int (), <./locate/code/locate.code.c 201>
+  272 		fflush: <>
+  273 		ferror: <>
+  274 		puts: <>
+  275 		uname: <>
+  276 		fputs: <>
+  277 		atol: <>
+  278 		setthetime: <>
+  279 		strftime: <>
+  280 		localtime: <>
+  281 		t_lex: enum token (), <./test/test.c 393>
+  282 		binop: int (), <./test/test.c 297>
+  283 		oexpr: <>
+  284 		syntax: <>
+  285 		user: void (), <./id/id.c 251>
+  286 			printf: <>
+  287 			getgrgid: <>
+  288 			getgrouplist: <>
+  289 		group: void (), <./id/id.c 279>
+  290 			getgrouplist: <>
+  291 			getgid: <>
+  292 			getgroups: <>
+  293 			getgrgid: <>
+  294 			printf: <>
+  295 		strtol: <>
+  296 		chroot: <>
+  297 		setgroups: <>
+  298 		execlp: <>
+  299 		tcgetattr: <>
+  300 		openpty: <>
+  301 		cfmakeraw: <>
+  302 		tcsetattr: <>
+  303 		finish: void (), <./script/script.c 156>
+  304 			wait3: <>
+  305 			done: void (), <./script/script.c 235>
+  306 				time: <>
+  307 				fprintf: <>
+  308 				ctime: <>
+  309 				fclose: <>
+  310 				close: <>
+  311 				tcsetattr: <>
+  312 				printf: <>
+  313 				exit: <>
+  314 		fork: <>
+  315 		fail: void (), <./script/script.c 227>
+  316 			kill: <>
+  317 			done: 305
+  318 		dooutput: void (), <./script/script.c 172>
+  319 			close: <>
+  320 			time: <>
+  321 			fprintf: <>
+  322 			ctime: <>
+  323 			signal: <>
+  324 			scriptflush: void (), <./script/script.c 200>
+  325 				fflush: <>
+  326 			setitimer: <>
+  327 			read: <>
+  328 			write: <>
+  329 			fwrite: <>
+  330 			done: 305
+  331 		doshell: void (), <./script/script.c 210>
+  332 			getenv: <>
+  333 			close: <>
+  334 			fclose: <>
+  335 			login_tty: <>
+  336 			execl: <>
+  337 			warn: <>
+  338 			fail: 315
+  339 		done: 305
+  340 		nosig: void (), <./kill/kill.c 161>
+  341 			warnx: <>
+  342 			printsignals: void (), <./kill/kill.c 172>
+  343 				fprintf: <>
+  344 			exit: <>
+  345 		printsignals: 342
+  346 		signame_to_signum: int (), <./kill/kill.c 146>
+  347 			strncasecmp: <>
+  348 			strcasecmp: <>
+  349 		isalpha: <>
+  350 		kill: <>
+  351 		memcmp: <>
+  352 		sethostname: <>
+  353 		freopen: <>
+  354 		realloc: <>
+  355 		qsort: <>
+  356 		fstat: <>
+  357 		fileno: <>
+  358 		lseek: <>
+  359 		fldsiz: <>
+  360 		isprint: <>
+  361 		requested: int (), <./lastcomm/lastcomm.c 202>
+  362 			strcmp: <>
+  363 			user_from_uid: <>
+  364 			getdev: char * (), <./lastcomm/lastcomm.c 218>
+  365 				devname: <>
+  366 			strncmp: <>
+  367 			fldsiz: <>
+  368 		expand: time_t (), <./lastcomm/lastcomm.c 168>
+  369 		flagbits: char * (), <./lastcomm/lastcomm.c 183>
+  370 			BIT: <>
+  371 		user_from_uid: <>
+  372 		getdev: 364
+  373 		fmod: <>
+  374 		fseek: <>
+  375 		alarmhandle: void (), <./sleep/sleep.c 149>
+  376 		sleep: <>
+  377 		atof: <>
+  378 		floor: <>
+  379 		nanosleep: <>
+  380 		output_labels: void (), <./who/who.c 237>
+  381 			printf: <>
+  382 			putchar: <>
+  383 		file: FILE * (), <./who/who.c 256>
+  384 			fopen: <>
+  385 			err: return, <./window/lcmd1.c 458>
+  386 		who_am_i: void (), <./who/who.c 154>
+  387 			ttyname: <>
+  388 			strrchr: <>
+  389 			fread: <>
+  390 			strcmp: <>
+  391 			strncpy: <>
+  392 			strcpy: <>
+  393 			getpwuid: <>
+  394 			getuid: <>
+  395 			time: <>
+  396 		setescape: void (), <./window/cmd3.c 52>
+  397 		str_cpy: char * (), <./window/string.c 56>
+  398 			str_alloc: char * (), <./window/string.c 133>
+  399 				malloc: <>
+  400 			strlen: <>
+  401 		wwinit: int (), <./window/wwinit.c 63>
+  402 			sigemptyset: <>
+  403 			sigaddset: <>
+  404 			sigprocmask: <>
+  405 			signal: <>
+  406 			wwchild: void (), <./window/wwchild.c 54>
+  407 				wait3: <>
+  408 				wwsetintr: <>
+  409 			wwquit: void (), <./window/wwend.c 70>
+  410 				wwend: void (), <./window/wwend.c 54>
+  411 					alarm: <>
+  412 					xxend: void (), <./window/xx.c 107>
+  413 						ccend: void (), <./window/compress.c 336>
+  414 							ttflush: void (), <./window/ttoutput.c 60>
+  415 								write: <>
+  416 							fclose: <>
+  417 						ttflush: 414
+  418 					wwsettty: int (), <./window/wwtty.c 87>
+  419 						ioctl: <>
+  420 						usleep: <>
+  421 						tcdrain: <>
+  422 						tcsetattr: <>
+  423 					wwterminfoend: int (), <./window/wwterminfo.c 107>
+  424 						vfork: <>
+  425 						execl: <>
+  426 						waitpid: <>
+  427 						WIFEXITED: <>
+  428 						WEXITSTATUS: <>
+  429 				exit: <>
+  430 			wwgettty: int (), <./window/wwtty.c 56>
+  431 				ioctl: <>
+  432 				tcgetattr: <>
+  433 			wwsettty: 418
+  434 			getenv: <>
+  435 			tgetent: <>
+  436 			cfgetospeed: <>
+  437 			xxinit: int (), <./window/xx.c 57>
+  438 				ttinit: int (), <./window/ttinit.c 68>
+  439 					MIN: <>
+  440 					malloc: <>
+  441 					strncmp: <>
+  442 					wwgetttysize: int (), <./window/wwtty.c 130>
+  443 						ioctl: <>
+  444 				ccinit: int (), <./window/compress.c 186>
+  445 					C: <>
+  446 					malloc: <>
+  447 				malloc: <>
+  448 			malloc: <>
+  449 			wwalloc: char ** (), <./window/wwalloc.c 52>
+  450 				malloc: <>
+  451 			wwaddcap1: void (), <./window/wwinit.c 377>
+  452 			wwaddcap: void (), <./window/wwinit.c 354>
+  453 				tgetstr: <>
+  454 				unctrl: <>
+  455 			tgetnum: <>
+  456 			sprintf: <>
+  457 			setenv: <>
+  458 			wwterminfoinit: int (), <./window/wwterminfo.c 73>
+  459 				sprintf: <>
+  460 				mktemp: <>
+  461 				mkdir: <>
+  462 				chmod: <>
+  463 				setenv: <>
+  464 				fopen: <>
+  465 				fprintf: <>
+  466 				fclose: <>
+  467 				system: <>
+  468 			wwalarm: void (), <./window/wwflush.c 123>
+  469 			wwstart1: void (), <./window/wwinit.c 398>
+  470 				xxstart: void (), <./window/xx.c 76>
+  471 					ccstart: void (), <./window/compress.c 310>
+  472 						ttflush: 414
+  473 						ccflush: void (), <./window/compress.c 350>
+  474 							abort: <>
+  475 							fwrite: <>
+  476 							putc: <>
+  477 							ttflush: 414
+  478 							cc_sweep_phase: int (), <./window/compress.c 383>
+  479 								time_begin: <>
+  480 								printf: <>
+  481 								cc_sweep0: void (), <./window/compress.c 442>
+  482 									hash: <>
+  483 								fflush: <>
+  484 								cc_sweep: int (), <./window/compress.c 474>
+  485 									thresh: <>
+  486 									wthresh: <>
+  487 									wlimit: <>
+  488 									hash: <>
+  489 									fail: 315
+  490 									qinsert: <>
+  491 									cc_sweep_reverse: void (), <./window/compress.c 651>
+  492 									qsort: <>
+  493 								putchar: <>
+  494 								qinsertq: <>
+  495 								time_end: <>
+  496 							cc_compress_phase: <>
+  497 							cc_output_phase: <>
+  498 							ccflush: 473
+  499 						fopen: <>
+  500 						fcntl: <>
+  501 						fileno: <>
+  502 						ccreset: void (), <./window/compress.c 324>
+  503 							memset: <>
+  504 					xxreset1: void (), <./window/xx.c 94>
+  505 						xxfree: void (), <./window/xx.c 145>
+  506 		wwerror: const char * (), <./window/wwerror.c 53>
+  507 			strerror: <>
+  508 		wwsettty: 418
+  509 		wwopen: struct ww (), <./window/wwopen.c 56>
+  510 		wwflush: void (), <./window/wwflush.c 56>
+  511 			xxmove: void (), <./window/xx.c 153>
+  512 				xxalloc: struct xx (), <./window/xx.c 124>
+  513 			xxflush: void (), <./window/xxflush.c 53>
+  514 				wwinterrupt: <>
+  515 				xxflush_scroll: void (), <./window/xxflush.c 108>
+  516 				xxfree: 505
+  517 				ttflush: 414
+  518 			wwcheckpoint: void (), <./window/wwflush.c 77>
+  519 				sigemptyset: <>
+  520 				sigaddset: <>
+  521 				sigprocmask: <>
+  522 				tcdrain: <>
+  523 				alarm: <>
+  524 				sigsuspend: <>
+  525 				wwcopyscreen: void (), <./window/wwflush.c 112>
+  526 					memmove: <>
+  527 				wwreset: void (), <./window/wwinit.c 418>
+  528 					xxreset: void (), <./window/xx.c 85>
+  529 						ccreset: 502
+  530 						xxreset1: 504
+  531 				wwupdate: <>
+  532 				wwflush: 510
+  533 		SET: <>
+  534 		wwadd: void (), <./window/wwadd.c 54>
+  535 		wwupdate: <>
+  536 		setvars: void (), <./window/startup.c 90>
+  537 			var_setnum: <>
+  538 			var_setstr: <>
+  539 		setterse: void (), <./window/cmd.c 290>
+  540 			wwdelete: void (), <./window/wwdelete.c 54>
+  541 				wwdelete1: void (), <./window/wwdelete.c 92>
+  542 					MAX: <>
+  543 					MIN: <>
+  544 					wwdelete1: 541
+  545 			reframe: void (), <./window/win.c 280>
+  546 			wwadd: 534
+  547 		setcmd: void (), <./window/cmd.c 268>
+  548 			wwadd: 534
+  549 			wwcursor: void (), <./window/wwcursor.c 51>
+  550 				ISSET: <>
+  551 				SET: <>
+  552 				CLR: <>
+  553 			wwdelete: 540
+  554 			reframe: void (), <./window/win.c 280>
+  555 		dolongcmd: int (), <./window/lcmd.c 128>
+  556 		doconfig: int (), <./window/startup.c 55>
+  557 			getenv: <>
+  558 			sprintf: <>
+  559 			dosource: int (), <./window/lcmd.c 116>
+  560 		dodefault: void (), <./window/startup.c 73>
+  561 			openwin: struct ww (), <./window/win.c 73>
+  562 			wwprintf: <>
+  563 				va_start: <>
+  564 				wwvprintf: void (), <./window/wwprintf.c 72>
+  565 				va_end: <>
+  566 			unctrl: <>
+  567 		mloop: void (), <./window/mloop.c 53>
+  568 			docmd: void (), <./window/cmd.c 55>
+  569 				wwgetc: <>
+  570 				wwsetcursor: <>
+  571 				wwputs: void (), <./window/wwputs.c 51>
+  572 					wwwrite: int (), <./window/wwwrite.c 68>
+  573 						ISSET: <>
+  574 						wwcursor: 549
+  575 						wwinterrupt: <>
+  576 						isprt: <>
+  577 						isunctrl: <>
+  578 						unctrl: <>
+  579 						wwinschar: void (), <./window/wwinschar.c 53>
+  580 							xxinschar: void (), <./window/xx.c 186>
+  581 								xxalloc: struct xx (), <./window/xx.c 124>
+  582 							xxinsspace: void (), <./window/xx.c 200>
+  583 								xxalloc: struct xx (), <./window/xx.c 124>
+  584 						MAX: <>
+  585 						MIN: <>
+  586 						UPDATE: <>
+  587 						wwscroll1: int (), <./window/wwscroll.c 90>
+  588 							xxscroll: void (), <./window/xx.c 167>
+  589 								xxalloc: struct xx (), <./window/xx.c 124>
+  590 							wwredrawwin1: void (), <./window/wwredrawwin.c 51>
+  591 						wwdelline: void (), <./window/wwdelline.c 51>
+  592 							wwscroll1: 587
+  593 							wwclreol1: void (), <./window/wwclreol.c 56>
+  594 						ctrl: <>
+  595 						ttputc: <>
+  596 						SET: <>
+  597 						wwinsline: void (), <./window/wwinsline.c 51>
+  598 							wwscroll1: 587
+  599 							wwclreol1: 593
+  600 						wwclreos: void (), <./window/wwclreos.c 52>
+  601 							wwclreol: <>
+  602 							ISSET: <>
+  603 							wwupdate1: void (), <./window/wwupdate.c 53>
+  604 								wwinterrupt: <>
+  605 								xxclear: void (), <./window/xx.c 236>
+  606 									xxreset1: 504
+  607 									xxalloc: struct xx (), <./window/xx.c 124>
+  608 								xxclreos: void (), <./window/xx.c 246>
+  609 									xxalloc: struct xx (), <./window/xx.c 124>
+  610 								xxclreol: void (), <./window/xx.c 257>
+  611 									xxalloc: struct xx (), <./window/xx.c 124>
+  612 								xxwrite: void (), <./window/xx.c 268>
+  613 									xxflush: 513
+  614 									xxalloc: struct xx (), <./window/xx.c 124>
+  615 									memmove: <>
+  616 								xxinschar: 580
+  617 								xxinsspace: 582
+  618 						wwclreol: <>
+  619 						wwdelchar: void (), <./window/wwdelchar.c 53>
+  620 							xxdelchar: void (), <./window/xx.c 218>
+  621 								xxalloc: struct xx (), <./window/xx.c 124>
+  622 						CLR: <>
+  623 						wwupdate: <>
+  624 						xxflush: 513
+  625 				wwcurtowin: <>
+  626 				wwiomux: void (), <./window/wwiomux.c 68>
+  627 					wwinterrupt: <>
+  628 					wwclrintr: <>
+  629 					FD_ZERO: <>
+  630 					FD_SET: <>
+  631 					ISSET: <>
+  632 					wwcurtowin: <>
+  633 					wwupdate: <>
+  634 					wwflush: 510
+  635 					setjmp: <>
+  636 					select: <>
+  637 					FD_ISSET: <>
+  638 					wwrint: void (), <./window/wwrint.c 63>
+  639 						read: <>
+  640 						alarm: <>
+  641 						wwsetintr: <>
+  642 					read: <>
+  643 					close: <>
+  644 					SET: <>
+  645 					CLR: <>
+  646 					wwwrite: 572
+  647 				wwputc: void (), <./window/wwputc.c 51>
+  648 					wwwrite: 572
+  649 				ctrl: <>
+  650 				error: 190
+  651 				setselwin: void (), <./window/cmd.c 307>
+  652 					front: do, <./window/compress.c 663>
+  653 				checkproc: int (), <./window/cmd.c 257>
+  654 					error: 190
+  655 				getwin: struct ww (), <./window/cmd.c 227>
+  656 				closewin: void (), <./window/win.c 149>
+  657 					closewin1: <>
+  658 					setselwin: 651
+  659 					findselwin: struct ww (), <./window/win.c 132>
+  660 					reframe: void (), <./window/win.c 280>
+  661 				c_window: void (), <./window/cmd1.c 52>
+  662 					findid: int (), <./window/win.c 118>
+  663 					wwputs: 571
+  664 					wwadd: 534
+  665 					wwbox: void (), <./window/wwbox.c 52>
+  666 						wwframec: void (), <./window/wwframe.c 203>
+  667 					wwsetcursor: <>
+  668 					wwpeekc: <>
+  669 					wwiomux: 626
+  670 					getpos: int (), <./window/cmd1.c 121>
+  671 						wwgetc: <>
+  672 						ctrl: <>
+  673 						wwputs: 571
+  674 						wwbell: void (), <./window/wwmisc.c 73>
+  675 							ttputc: <>
+  676 							ctrl: <>
+  677 					wwunbox: <>
+  678 					wwdelete: 540
+  679 					wwputc: 647
+  680 					wwcurtowin: <>
+  681 					openwin: struct ww (), <./window/win.c 73>
+  682 				c_move: void (), <./window/cmd5.c 57>
+  683 					wwputs: 571
+  684 					wwadd: 534
+  685 					wwbox: 665
+  686 					getminmax: void (), <./window/cmd5.c 120>
+  687 					wwsetcursor: <>
+  688 					wwpeekc: <>
+  689 					wwiomux: 626
+  690 					getpos: 670
+  691 					wwunbox: <>
+  692 					wwdelete: 540
+  693 					wwputc: 647
+  694 					wwcurtowin: <>
+  695 					movewin: void (), <./window/cmd5.c 102>
+  696 						wwdelete: 540
+  697 						wwmove: void (), <./window/wwmove.c 54>
+  698 							MAX: <>
+  699 							MIN: <>
+  700 						wwadd: 534
+  701 						reframe: void (), <./window/win.c 280>
+  702 				movewin: 695
+  703 				c_size: void (), <./window/cmd7.c 62>
+  704 					palloc: <>
+  705 					f_size: int (), <./find/function.c 904>
+  706 						COMPARE: <>
+  707 					find_parsenum: long (), <./find/function.c 113>
+  708 						strtol: <>
+  709 						errx: <>
+  710 					wwputs: 571
+  711 					MIN: <>
+  712 					wwadd: 534
+  713 					wwbox: 665
+  714 					wwsetcursor: <>
+  715 					wwpeekc: <>
+  716 					wwiomux: 626
+  717 					getpos: 670
+  718 					wwunbox: <>
+  719 					wwdelete: 540
+  720 					wwputc: 647
+  721 					wwcurtowin: <>
+  722 					sizewin: void (), <./window/win.c 341>
+  723 						wwdelete: 540
+  724 						wwsize: int (), <./window/wwsize.c 55>
+  725 							wwalloc: 449
+  726 							MAX: <>
+  727 							malloc: <>
+  728 							wwfree: void (), <./window/wwalloc.c 77>
+  729 								free: <>
+  730 							free: <>
+  731 							MIN: <>
+  732 							ISSET: <>
+  733 							CLR: <>
+  734 							wwcursor: 549
+  735 							wwsetttysize: int (), <./window/wwtty.c 148>
+  736 								ioctl: <>
+  737 						error: 190
+  738 						wwerror: 506
+  739 						wwadd: 534
+  740 						reframe: void (), <./window/win.c 280>
+  741 				sizewin: 722
+  742 				c_yank: void (), <./window/cmd7.c 113>
+  743 					wwputs: 571
+  744 					wwcursor: 549
+  745 					wwsetcursor: <>
+  746 					wwpeekc: <>
+  747 					wwiomux: 626
+  748 					getpos: 670
+  749 					yank_highlight: void (), <./window/cmd7.c 189>
+  750 						yank_highlight_line: void (), <./window/cmd7.c 214>
+  751 					unyank: void (), <./window/cmd7.c 240>
+  752 						str_free: void (), <./window/string.c 151>
+  753 							abort: <>
+  754 							free: <>
+  755 						free: <>
+  756 					yank_line: void (), <./window/cmd7.c 253>
+  757 						malloc: <>
+  758 						str_alloc: 398
+  759 					wwputc: 647
+  760 				c_put: void (), <./window/cmd7.c 288>
+  761 					write: <>
+  762 				c_colon: void (), <./window/cmd4.c 51>
+  763 					setterse: 539
+  764 					wwputc: 647
+  765 					wwgets: void (), <./window/wwgets.c 55>
+  766 						ISSET: <>
+  767 						CLR: <>
+  768 						wwcurtowin: <>
+  769 						wwgetc: <>
+  770 						wwiomux: 626
+  771 						rub: void (), <./window/wwgets.c 112>
+  772 							strlen: <>
+  773 							unctrl: <>
+  774 							wwwrite: 572
+  775 						wwputc: 647
+  776 						ctrl: <>
+  777 						wwputs: 571
+  778 						unctrl: <>
+  779 						SET: <>
+  780 					wwcurtowin: <>
+  781 					dolongcmd: int (), <./window/lcmd.c 128>
+  782 					error: 190
+  783 				wwwrite: 572
+  784 				wwscroll: void (), <./window/wwscroll.c 53>
+  785 					abs: <>
+  786 					wwscroll1: 587
+  787 					wwredrawwin: <>
+  788 				stopwin: void (), <./window/win.c 320>
+  789 					wwstoptty: int (), <./window/wwtty.c 164>
+  790 						tcflow: <>
+  791 						ioctl: <>
+  792 					error: 190
+  793 					wwerror: 506
+  794 					SET: <>
+  795 				startwin: void (), <./window/win.c 330>
+  796 					wwstarttty: int (), <./window/wwtty.c 181>
+  797 						tcflow: <>
+  798 						ioctl: <>
+  799 					error: 190
+  800 					wwerror: 506
+  801 					CLR: <>
+  802 				wwredraw: void (), <./window/wwredraw.c 53>
+  803 					xxclear: 605
+  804 				c_help: void (), <./window/cmd2.c 114>
+  805 					openiwin: struct ww (), <./window/win.c 184>
+  806 					error: 190
+  807 					wwerror: 506
+  808 					wwprintf: 562
+  809 					help_print: int (), <./window/cmd2.c 130>
+  810 						wwprintf: 562
+  811 						more: int (), <./window/win.c 364>
+  812 							ISSET: <>
+  813 							waitnl1: int (), <./window/win.c 381>
+  814 								ISSET: <>
+  815 								CLR: <>
+  816 								front: do, <./window/compress.c 663>
+  817 								wwprintf: 562
+  818 								wwcurtowin: <>
+  819 								wwpeekc: <>
+  820 								wwiomux: 626
+  821 								SET: <>
+  822 								wwgetc: <>
+  823 							CLR: <>
+  824 							wwputs: 571
+  825 							SET: <>
+  826 							ctrl: <>
+  827 						wwputs: 571
+  828 						wwputc: 647
+  829 					closeiwin: <>
+  830 				wwsuspend: void (), <./window/wwsuspend.c 53>
+  831 					signal: <>
+  832 					wwend: 410
+  833 					kill: <>
+  834 					wwstart: void (), <./window/wwinit.c 387>
+  835 						wwsettty: 418
+  836 						wwstart1: 469
+  837 				c_quit: void (), <./window/cmd2.c 152>
+  838 					setterse: 539
+  839 					wwputs: 571
+  840 					wwcurtowin: <>
+  841 					wwpeekc: <>
+  842 					wwiomux: 626
+  843 					wwgetc: <>
+  844 					wwputc: 647
+  845 				c_debug: void (), <./window/cmd6.c 59>
+  846 					wwputs: 571
+  847 					wwcurtowin: <>
+  848 					wwpeekc: <>
+  849 					wwiomux: 626
+  850 					wwputc: 647
+  851 					wwgetc: <>
+  852 					wwdumpsmap: void (), <./window/wwdump.c 87>
+  853 					wwdumpns: void (), <./window/wwdump.c 101>
+  854 					wwdumpos: void (), <./window/wwdump.c 116>
+  855 					debug_str: void (), <./window/cmd6.c 98>
+  856 						openiwin: struct ww (), <./window/win.c 184>
+  857 						error: 190
+  858 						wwerror: 506
+  859 						more: 811
+  860 						wwprintf: 562
+  861 						waitnl: void (), <./window/win.c 357>
+  862 							waitnl1: 813
+  863 						closeiwin: <>
+  864 					getwin: struct ww (), <./window/cmd.c 227>
+  865 					wwdumpnvis: void (), <./window/wwdump.c 71>
+  866 						sprintf: <>
+  867 						strlen: <>
+  868 					wwdumpwin: void (), <./window/wwdump.c 56>
+  869 					wwbell: 674
+  870 				write: <>
+  871 				wwbell: 674
+  872 				setcmd: 547
+  873 			ISSET: <>
+  874 			closewin: 656
+  875 			setcmd: 547
+  876 			wwpeekc: <>
+  877 			wwgetc: <>
+  878 			error: 190
+  879 			wwiomux: 626
+  880 			wwmaskc: <>
+  881 			startwin: 795
+  882 			write: <>
+  883 		wwend: 410
+  884 		donice: int (), <./renice/renice.c 118>
+  885 			getpriority: <>
+  886 			warn: <>
+  887 			setpriority: <>
+  888 			printf: <>
+  889 		sprintf: <>
+  890 		system: <>
+  891 		who: struct passwd (), <./id/id.c 316>
+  892 		getgrgid: <>
+  893 		geteuid: <>
+  894 		pretty: void (), <./id/id.c 169>
+  895 			printf: <>
+  896 			group: 289
+  897 			getlogin: <>
+  898 			err: return, <./window/lcmd1.c 458>
+  899 			getpwuid: <>
+  900 			getuid: <>
+  901 			strcmp: <>
+  902 			geteuid: <>
+  903 			getgid: <>
+  904 			getegid: <>
+  905 			getgrgid: <>
+  906 		current: void (), <./id/id.c 210>
+  907 			getuid: <>
+  908 			printf: <>
+  909 			getpwuid: <>
+  910 			geteuid: <>
+  911 			getgid: <>
+  912 			getgrgid: <>
+  913 			getegid: <>
+  914 			getgroups: <>
+  915 		getargs: void (), <./jot/jot.c 120>
+  916 			isdefault: <>
+  917 			strcpy: <>
+  918 			error: 190
+  919 			atoi: <>
+  920 			sscanf: <>
+  921 			strlen: <>
+  922 			getprec: int (), <./jot/jot.c 348>
+  923 			getformat: void (), <./jot/jot.c 366>
+  924 			time: <>
+  925 		srandom: <>
+  926 		random: <>
+  927 		putdata: void (), <./jot/jot.c 311>
+  928 		getchar: <>
+  929 		run: void (), <./xargs/xargs.c 273>
+  930 			fprintf: <>
+  931 			fflush: <>
+  932 			vfork: <>
+  933 			err: return, <./window/lcmd1.c 458>
+  934 			execvp: <>
+  935 			warn: <>
+  936 			waitpid: <>
+  937 			exit: <>
+  938 			WIFEXITED: <>
+  939 			WEXITSTATUS: <>
+  940 			warnx: <>
+  941 			WIFSIGNALED: <>
+  942 			WTERMSIG: <>

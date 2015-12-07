@@ -1,0 +1,1007 @@
+    1 	main: int (), <./tar/tests/genfile.c 105>
+    2 		setlocale: <>
+    3 		bindtextdomain: <>
+    4 		textdomain: <>
+    5 		fopen: <>
+    6 		report_numbered_error: void (), <./tar/src/rmt.c 113>
+    7 			DEBUG2: <>
+    8 			strerror: <>
+    9 			sprintf: <>
+   10 			full_write: ssize_t (), <./tar/lib/full-write.c 42>
+   11 				write: <>
+   12 			strlen: <>
+   13 		exit: <>
+   14 		setbuf: <>
+   15 		safe_read: ssize_t (), <./tar/lib/safe-read.c 41>
+   16 			read: <>
+   17 		get_string: void (), <./tar/src/rmt.c 126>
+   18 			safe_read: 15
+   19 			exit: <>
+   20 		DEBUG2: <>
+   21 		close: <>
+   22 		open: <>
+   23 		atoi: <>
+   24 		DEBUG: <>
+   25 		report_error_message: void (), <./tar/src/rmt.c 100>
+   26 			DEBUG1: <>
+   27 			sprintf: <>
+   28 			full_write: 10
+   29 			strlen: <>
+   30 		N_: <>
+   31 		lseek: <>
+   32 		DEBUG1: <>
+   33 		sprintf: <>
+   34 		full_write: 10
+   35 		strlen: <>
+   36 		atol: <>
+   37 		prepare_record_buffer: void (), <./tar/src/rmt.c 146>
+   38 			free: <>
+   39 			malloc: see, <./tar/lib/xmalloc.c 50>
+   40 			DEBUG: <>
+   41 			report_error_message: 25
+   42 			N_: <>
+   43 			exit: <>
+   44 			setsockopt: <>
+   45 		ioctl: <>
+   46 		xmalloc: void * (), <./tar/lib/xmalloc.c 79>
+   47 			malloc: see, <./tar/lib/xmalloc.c 50>
+   48 			xalloc_fail: void (), <./tar/lib/xmalloc.c 69>
+   49 				error: <>
+   50 					fflush: <>
+   51 					fprintf: <>
+   52 					VA_START: <>
+   53 					vfprintf: <>
+   54 					va_end: <>
+   55 					strerror: <>
+   56 					putc: <>
+   57 					exit: <>
+   58 		signal: <>
+   59 		init_names: void (), <./tar/src/names.c 205>
+   60 			xmalloc: 46
+   61 		decode_options: void (), <./tar/src/tar.c 442>
+   62 			new_exclude: struct exclude (), <./tar/lib/exclude.c 47>
+   63 			getenv: <>
+   64 			strlen: <>
+   65 			xmalloc: 46
+   66 			xstrdup: char * (), <./tar/lib/xstrdup.c 43>
+   67 				strcpy: <>
+   68 				xmalloc: 46
+   69 				strlen: <>
+   70 			strchr: <>
+   71 			USAGE_ERROR: <>
+   72 			getopt_long: int (), <./tar/lib/getopt1.c 67>
+   73 			usage: void (), <./tar/src/tar.c 255>
+   74 				fprintf: <>
+   75 				fputs: <>
+   76 				printf: <>
+   77 				exit: <>
+   78 			name_add: void (), <./tar/src/names.c 218>
+   79 				xrealloc: void * (), <./tar/lib/xmalloc.c 94>
+   80 					realloc: see, <./tar/lib/xmalloc.c 54>
+   81 					xalloc_fail: 48
+   82 			set_subcommand_option: void (), <./tar/src/tar.c 422>
+   83 				USAGE_ERROR: <>
+   84 			WARN: <>
+   85 			xstrtol: <>
+   86 			xrealloc: 79
+   87 			addname: void (), <./tar/src/names.c 479>
+   88 				strcmp: <>
+   89 				xstrdup: 66
+   90 				name_next: char * (), <./tar/src/names.c 333>
+   91 					read_name_from_file: int (), <./tar/src/names.c 290>
+   92 						getc: <>
+   93 						xrealloc: 79
+   94 					strlen: <>
+   95 					free: <>
+   96 					xmalloc: 46
+   97 					strcpy: <>
+   98 					chdir: <>
+   99 					FATAL_ERROR: <>
+  100 					strcmp: <>
+  101 					unquote_string: int (), <./tar/src/misc.c 146>
+  102 				FATAL_ERROR: <>
+  103 				xmalloc: 46
+  104 				getcwd: <>
+  105 				free: <>
+  106 				strlen: <>
+  107 				memset: char * (), <./tar/lib/memset.c 19>
+  108 				strncpy: <>
+  109 				is_pattern: inline int (), <./tar/src/names.c 244>
+  110 					strchr: <>
+  111 			xstrtoul: <>
+  112 			clear_tarlong: <>
+  113 			add_to_tarlong: <>
+  114 			mult_tarlong: <>
+  115 			get_date: <>
+  116 			add_exclude_file: int (), <./tar/lib/exclude.c 82>
+  117 				fopen: <>
+  118 				xmalloc: 46
+  119 				getc: <>
+  120 				xrealloc: 79
+  121 				ferror: <>
+  122 				fclose: <>
+  123 				add_exclude: void (), <./tar/lib/exclude.c 71>
+  124 					xrealloc: 79
+  125 			FATAL_ERROR: <>
+  126 			set_use_compress_program_option: void (), <./tar/src/tar.c 433>
+  127 				strcmp: <>
+  128 				USAGE_ERROR: <>
+  129 			add_exclude: 123
+  130 			gname_to_gid: int (), <./tar/src/names.c 165>
+  131 				strncmp: if (), <./tar/lib/getopt.c 841>
+  132 				getgrnam: <>
+  133 				strncpy: <>
+  134 			xstrtoumax: <>
+  135 			ERROR: <>
+  136 			mode_compile: struct mode_change (), <./tar/lib/modechange.c 156>
+  137 			uname_to_uid: int (), <./tar/src/names.c 132>
+  138 				strncmp: if (), <./tar/lib/getopt.c 841>
+  139 				getpwnam: <>
+  140 				strncpy: <>
+  141 			strcpy: <>
+  142 			sprintf: <>
+  143 			printf: <>
+  144 			fputs: <>
+  145 			exit: <>
+  146 			strcmp: <>
+  147 			request_stdin: void (), <./tar/src/tar.c 61>
+  148 				USAGE_ERROR: <>
+  149 			xget_version: enum backup_type (), <./tar/lib/backupfile.c 262>
+  150 		name_init: void (), <./tar/src/names.c 255>
+  151 			xmalloc: 46
+  152 			strcmp: <>
+  153 			request_stdin: 147
+  154 			fopen: <>
+  155 			FATAL_ERROR: <>
+  156 		init_volume_number: void (), <./tar/src/buffer.c 1488>
+  157 			fopen: <>
+  158 			fscanf: <>
+  159 			fclose: <>
+  160 			ERROR: <>
+  161 		USAGE_ERROR: <>
+  162 		update_archive: void (), <./tar/src/update.c 107>
+  163 			name_gather: void (), <./tar/src/names.c 421>
+  164 				xmalloc: 46
+  165 				memset: 107
+  166 				name_next: 90
+  167 				strcmp: <>
+  168 				xstrdup: 66
+  169 				FATAL_ERROR: <>
+  170 				strlen: <>
+  171 				xrealloc: 79
+  172 				strncpy: <>
+  173 				addname: 87
+  174 			name_expand: void (), <./tar/src/names.c 688>
+  175 			open_archive: void (), <./tar/src/buffer.c 680>
+  176 				FATAL_ERROR: <>
+  177 				xmalloc: 46
+  178 				valloc: <>
+  179 				child_open_for_uncompress: void (), <./tar/src/buffer.c 504>
+  180 					FATAL_ERROR: <>
+  181 					pipe: <>
+  182 					fork: <>
+  183 					xclose: void (), <./tar/src/buffer.c 249>
+  184 						close: <>
+  185 						FATAL_ERROR: <>
+  186 					xdup2: void (), <./tar/src/buffer.c 261>
+  187 						close: <>
+  188 						FATAL_ERROR: <>
+  189 						dup: <>
+  190 						xclose: 183
+  191 					strcmp: <>
+  192 					is_regular_file: int (), <./tar/src/buffer.c 306>
+  193 						stat: <>
+  194 						S_ISREG: <>
+  195 					open: <>
+  196 					execlp: int (), <./tar/lib/execlp.c 62>
+  197 						getenv: <>
+  198 						execve: <>
+  199 						malloc: see, <./tar/lib/xmalloc.c 50>
+  200 						strlen: <>
+  201 						strchr: <>
+  202 						strcpy: <>
+  203 						strncpy: <>
+  204 						strcat: <>
+  205 						stat: <>
+  206 						S_ISREG: <>
+  207 						free: <>
+  208 					rmtopen: <>
+  209 					rmtread: <>
+  210 					read_error: void (), <./tar/src/buffer.c 1078>
+  211 						WARN: <>
+  212 						FATAL_ERROR: <>
+  213 					full_write: 10
+  214 					ERROR: <>
+  215 					close_archive: void (), <./tar/src/buffer.c 1390>
+  216 						flush_archive: void (), <./tar/src/buffer.c 1301>
+  217 							rmtclose: <>
+  218 							WARN: <>
+  219 							backspace_output: void (), <./tar/src/buffer.c 1348>
+  220 								rmtioctl: <>
+  221 								rmtlseek: <>
+  222 								WARN: <>
+  223 								memset: 107
+  224 							flush_read: void (), <./tar/src/buffer.c 1098>
+  225 								WARN: <>
+  226 								write_archive_buffer: ssize_t (), <./tar/src/buffer.c 320>
+  227 									rmtwrite: <>
+  228 									S_ISFIFO: <>
+  229 								write_error: void (), <./tar/src/buffer.c 1054>
+  230 									print_total_written: void (), <./tar/src/buffer.c 155>
+  231 										fprintf: <>
+  232 										print_tarlong: <>
+  233 									FATAL_ERROR: <>
+  234 								strcpy: <>
+  235 								rmtread: <>
+  236 								new_volume: int (), <./tar/src/buffer.c 1527>
+  237 									fopen: <>
+  238 									verify_volume: void (), <./tar/src/compare.c 809>
+  239 										diff_init: void (), <./tar/src/compare.c 45>
+  240 											valloc: <>
+  241 											FATAL_ERROR: <>
+  242 										fsync: <>
+  243 										ioctl: <>
+  244 										rmtioctl: <>
+  245 										rmtlseek: <>
+  246 										WARN: <>
+  247 										flush_read: 224
+  248 										read_header: enum read_header (), <./tar/src/list.c 308>
+  249 										ERROR: <>
+  250 										diff_archive: void (), <./tar/src/compare.c 442>
+  251 											set_next_block_after: void (), <./tar/src/buffer.c 218>
+  252 												abort: <>
+  253 											decode_header: void (), <./tar/src/list.c 464>
+  254 												strcmp: <>
+  255 												MODE_FROM_OCT: <>
+  256 												TIME_FROM_OCT: <>
+  257 												ctime: <>
+  258 												UID_FROM_OCT: <>
+  259 												GID_FROM_OCT: <>
+  260 												uname_to_uid: 137
+  261 												gname_to_gid: 130
+  262 												makedev: <>
+  263 												MAJOR_FROM_OCT: <>
+  264 												MINOR_FROM_OCT: <>
+  265 											fprintf: <>
+  266 											print_header: void (), <./tar/src/list.c 752>
+  267 												fprintf: <>
+  268 												STRINGIFY_BIGINT: <>
+  269 												current_block_ordinal: off_t (), <./tar/src/buffer.c 167>
+  270 												quote_copy_string: char * (), <./tar/src/misc.c 49>
+  271 													xmalloc: 46
+  272 													strlen: <>
+  273 													memcpy: <>
+  274 													ISPRINT: <>
+  275 												free: <>
+  276 												ERROR: <>
+  277 												strlen: <>
+  278 												decode_mode: void (), <./tar/src/list.c 705>
+  279 												ctime: <>
+  280 												isotime: char * (), <./tar/src/list.c 685>
+  281 													localtime: <>
+  282 													sprintf: <>
+  283 												UINTMAX_FROM_OCT: <>
+  284 												sprintf: <>
+  285 												major: <>
+  286 												minor: <>
+  287 												strcpy: <>
+  288 												putc: <>
+  289 												fflush: <>
+  290 											WARN: <>
+  291 											strlen: <>
+  292 											get_stat_data: int (), <./tar/src/compare.c 413>
+  293 												stat: <>
+  294 												lstat: <>
+  295 												report_difference: void (), <./tar/src/compare.c 60>
+  296 													fprintf: <>
+  297 												ERROR: <>
+  298 												skip_file: void (), <./tar/src/list.c 1020>
+  299 													find_next_block: union block (), <./tar/src/buffer.c 195>
+  300 													FATAL_ERROR: <>
+  301 													set_next_block_after: 251
+  302 											skip_extended_headers: void (), <./tar/src/list.c 1048>
+  303 												find_next_block: union block (), <./tar/src/buffer.c 195>
+  304 												set_next_block_after: 251
+  305 											skip_file: 298
+  306 											S_ISREG: <>
+  307 											report_difference: 295
+  308 											open: <>
+  309 											xmalloc: 46
+  310 											strcpy: <>
+  311 											free: <>
+  312 											ERROR: <>
+  313 											diff_sparse_files: void (), <./tar/src/compare.c 276>
+  314 												xmalloc: 46
+  315 												fill_in_sparse_array: void (), <./tar/src/compare.c 188>
+  316 													xmalloc: 46
+  317 													OFF_FROM_OCT: <>
+  318 													SIZE_FROM_OCT: <>
+  319 													find_next_block: union block (), <./tar/src/buffer.c 195>
+  320 													xrealloc: 79
+  321 													set_next_block_after: 251
+  322 												find_next_block: union block (), <./tar/src/buffer.c 195>
+  323 												lseek: <>
+  324 												WARN: <>
+  325 												STRINGIFY_BIGINT: <>
+  326 												report_difference: 295
+  327 												FATAL_ERROR: <>
+  328 												xrealloc: 79
+  329 												safe_read: 15
+  330 												sprintf: <>
+  331 												memcmp: <>
+  332 												set_next_block_after: 251
+  333 												free: <>
+  334 											assign_string: void (), <./tar/src/misc.c 30>
+  335 												free: <>
+  336 												xstrdup: 66
+  337 											read_and_process: void (), <./tar/src/compare.c 147>
+  338 												find_next_block: union block (), <./tar/src/buffer.c 195>
+  339 												ERROR: <>
+  340 												available_space_after: size_t (), <./tar/src/buffer.c 239>
+  341 												process_noop: int (), <./tar/src/compare.c 77>
+  342 												set_next_block_after: 251
+  343 											process_rawdata: int (), <./tar/src/compare.c 87>
+  344 												safe_read: 15
+  345 												WARN: <>
+  346 												report_difference: 295
+  347 												sprintf: <>
+  348 												memcmp: <>
+  349 											close: <>
+  350 											stat: <>
+  351 											sprintf: <>
+  352 											readlink: <>
+  353 											strncmp: if (), <./tar/lib/getopt.c 841>
+  354 											get_directory_contents: char * (), <./tar/src/incremen.c 175>
+  355 												opendir: <>
+  356 												ERROR: <>
+  357 												strlen: <>
+  358 												xmalloc: 46
+  359 												strcpy: <>
+  360 												strcat: <>
+  361 												find_directory: struct directory (), <./tar/src/incremen.c 145>
+  362 												new_accumulator: struct accumulator (), <./tar/src/incremen.c 52>
+  363 												readdir: <>
+  364 												is_dot_or_dotdot: int (), <./tar/src/misc.c 325>
+  365 												excluded_filename: int (), <./tar/lib/exclude.c 57>
+  366 													fnmatch: int (), <./tar/lib/fnmatch.c 58>
+  367 														FOLD: <>
+  368 														fnmatch: 366
+  369 												add_to_accumulator: void (), <./tar/src/incremen.c 79>
+  370 													xrealloc: 79
+  371 													memcpy: <>
+  372 												NAMLEN: <>
+  373 												xrealloc: 79
+  374 												statx: <>
+  375 												stat: <>
+  376 												lstat: <>
+  377 												S_ISHIDDEN: <>
+  378 												S_ISDIR: <>
+  379 												NFS_FILE_STAT: <>
+  380 												WARN: <>
+  381 												note_directory: void (), <./tar/src/incremen.c 124>
+  382 													xmalloc: 46
+  383 													xstrdup: 66
+  384 													NFS_FILE_STAT: <>
+  385 												free: <>
+  386 												closedir: <>
+  387 												get_accumulator: char * (), <./tar/src/incremen.c 42>
+  388 												delete_accumulator: void (), <./tar/src/incremen.c 68>
+  389 													free: <>
+  390 												qsort: <>
+  391 												compare_dirents: int (), <./tar/src/incremen.c 164>
+  392 													strcmp: <>
+  393 											process_dumpdir: int (), <./tar/src/compare.c 126>
+  394 												memcmp: <>
+  395 												report_difference: 295
+  396 											process_noop: int (), <./tar/src/compare.c 77>
+  397 											S_ISDIR: <>
+  398 											OFF_FROM_OCT: <>
+  399 											lseek: <>
+  400 											STRINGIFY_BIGINT: <>
+  401 									rmtclose: <>
+  402 									WARN: <>
+  403 									closeout_volume_number: void (), <./tar/src/buffer.c 1507>
+  404 										fopen: <>
+  405 										fprintf: <>
+  406 										fclose: <>
+  407 										ERROR: <>
+  408 									system: <>
+  409 									fputc: <>
+  410 									fprintf: <>
+  411 									fflush: <>
+  412 									fgets: <>
+  413 									exit: <>
+  414 									xstrdup: 66
+  415 									spawnl: <>
+  416 									getenv: <>
+  417 									fork: <>
+  418 									execlp: 196
+  419 									FATAL_ERROR: <>
+  420 									wait: <>
+  421 									rmtopen: <>
+  422 									maybe_backup_file: int (), <./tar/src/misc.c 403>
+  423 										stat: <>
+  424 										ERROR: <>
+  425 										S_ISDIR: <>
+  426 										S_ISBLK: <>
+  427 										S_ISCHR: <>
+  428 										assign_string: 334
+  429 										find_backup_file_name: char * (), <./tar/lib/backupfile.c 119>
+  430 											strlen: <>
+  431 											INT_STRLEN_BOUND: <>
+  432 											malloc: see, <./tar/lib/xmalloc.c 50>
+  433 											strcpy: <>
+  434 											base_name: char * (), <./tar/lib/basename.c 36>
+  435 												FILESYSTEM_PREFIX_LEN: <>
+  436 												ISSLASH: <>
+  437 											max_backup_version: int (), <./tar/lib/backupfile.c 168>
+  438 												opendir: <>
+  439 												strlen: <>
+  440 												readdir: <>
+  441 												REAL_DIR_ENTRY: <>
+  442 												NLENGTH: <>
+  443 												version_number: int (), <./tar/lib/backupfile.c 202>
+  444 													strncmp: if (), <./tar/lib/getopt.c 841>
+  445 													ISDIGIT: <>
+  446 												CLOSEDIR: <>
+  447 											sprintf: <>
+  448 											addext: void (), <./tar/lib/addext.c 58>
+  449 												base_name: 434
+  450 												strlen: <>
+  451 												pathconf: <>
+  452 												strchr: <>
+  453 												strcpy: <>
+  454 										FATAL_ERROR: <>
+  455 										rename: int (), <./tar/lib/rename.c 41>
+  456 											stat: <>
+  457 											unlink: <>
+  458 											S_ISDIR: <>
+  459 											fork: <>
+  460 											execl: <>
+  461 											wait: <>
+  462 											link: <>
+  463 										fprintf: <>
+  464 									rmtcreat: <>
+  465 									undo_last_backup: void (), <./tar/src/misc.c 467>
+  466 										rename: 455
+  467 										ERROR: <>
+  468 										fprintf: <>
+  469 										assign_string: 334
+  470 									setmode: <>
+  471 								read_error: 210
+  472 								check_label_pattern: int (), <./tar/src/buffer.c 654>
+  473 									fnmatch: 366
+  474 									xmalloc: 46
+  475 									strlen: <>
+  476 									strcpy: <>
+  477 									strcat: <>
+  478 									free: <>
+  479 								fprintf: <>
+  480 								strcmp: <>
+  481 								UINTMAX_FROM_OCT: <>
+  482 								STRINGIFY_BIGINT: <>
+  483 								OFF_FROM_OCT: <>
+  484 								FATAL_ERROR: <>
+  485 							flush_write: void (), <./tar/src/buffer.c 892>
+  486 								WARN: <>
+  487 								zerop_tarlong: <>
+  488 								lessp_tarlong: <>
+  489 								write_archive_buffer: 226
+  490 								write_error: 229
+  491 								add_to_tarlong: <>
+  492 								strcpy: <>
+  493 								new_volume: 236
+  494 								clear_tarlong: <>
+  495 								memset: 107
+  496 								sprintf: <>
+  497 								TIME_TO_OCT: <>
+  498 								time: <>
+  499 								finish_header: void (), <./tar/src/create.c 412>
+  500 									memcpy: <>
+  501 									uintmax_to_oct: void (), <./tar/src/create.c 192>
+  502 										to_oct: void (), <./tar/src/create.c 75>
+  503 											MAX_OCTAL_VAL_WITH_DIGITS: <>
+  504 											STRINGIFY_BIGINT: <>
+  505 											WARN: <>
+  506 											to_oct: 502
+  507 											ERROR: <>
+  508 									set_next_block_after: 251
+  509 									print_header: 266
+  510 								OFF_TO_OCT: <>
+  511 								memcpy: <>
+  512 							abort: <>
+  513 						S_ISFIFO: <>
+  514 						rmtread: <>
+  515 						write: <>
+  516 						lseek: <>
+  517 						ftruncate: int (), <./tar/lib/ftruncate.c 87>
+  518 							fcntl: <>
+  519 							fstat: <>
+  520 							lseek: <>
+  521 							write: <>
+  522 							chsize: <>
+  523 						WARN: <>
+  524 						verify_volume: 238
+  525 						rmtclose: <>
+  526 						wait: <>
+  527 						WIFSIGNALED: <>
+  528 						WIFSTOPPED: <>
+  529 						WTERMSIG: <>
+  530 						ERROR: <>
+  531 						WCOREDUMP: <>
+  532 						WEXITSTATUS: <>
+  533 						free: <>
+  534 					exit: <>
+  535 				child_open_for_compress: void (), <./tar/src/buffer.c 342>
+  536 					FATAL_ERROR: <>
+  537 					pipe: <>
+  538 					fork: <>
+  539 					xclose: 183
+  540 					xdup2: 186
+  541 					strcmp: <>
+  542 					is_regular_file: 192
+  543 					maybe_backup_file: 422
+  544 					creat: <>
+  545 					undo_last_backup: 465
+  546 					execlp: 196
+  547 					rmtcreat: <>
+  548 					safe_read: 15
+  549 					memset: 107
+  550 					write_archive_buffer: 226
+  551 					write_error: 229
+  552 					close_archive: 215
+  553 					exit: <>
+  554 				strcmp: <>
+  555 				rmtopen: <>
+  556 				maybe_backup_file: 422
+  557 				rmtcreat: <>
+  558 				fstat: <>
+  559 				undo_last_backup: 465
+  560 				stat: <>
+  561 				S_ISCHR: <>
+  562 				S_ISREG: <>
+  563 				setmode: <>
+  564 				find_next_block: union block (), <./tar/src/buffer.c 195>
+  565 				check_label_pattern: 472
+  566 				memset: 107
+  567 				sprintf: <>
+  568 				strcpy: <>
+  569 				assign_string: 334
+  570 				TIME_TO_OCT: <>
+  571 				time: <>
+  572 				finish_header: 499
+  573 			read_header: enum read_header (), <./tar/src/list.c 308>
+  574 			abort: <>
+  575 			name_scan: struct name (), <./tar/src/names.c 700>
+  576 			decode_header: 253
+  577 			stat: <>
+  578 			ERROR: <>
+  579 			set_next_block_after: 251
+  580 			skip_extended_headers: 302
+  581 			skip_file: 298
+  582 			WARN: <>
+  583 			reset_eof: void (), <./tar/src/buffer.c 177>
+  584 			name_from_list: char * (), <./tar/src/names.c 764>
+  585 				chdir: <>
+  586 				FATAL_ERROR: <>
+  587 			confirm: int (), <./tar/src/tar.c 75>
+  588 				fopen: <>
+  589 				request_stdin: 147
+  590 				FATAL_ERROR: <>
+  591 				fprintf: <>
+  592 				fflush: <>
+  593 				getc: <>
+  594 			append_file: void (), <./tar/src/update.c 46>
+  595 				stat: <>
+  596 				open: <>
+  597 				ERROR: <>
+  598 				find_next_block: union block (), <./tar/src/buffer.c 195>
+  599 				available_space_after: 340
+  600 				memset: 107
+  601 				safe_read: 15
+  602 				FATAL_ERROR: <>
+  603 				STRINGIFY_BIGINT: <>
+  604 				set_next_block_after: 251
+  605 				close: <>
+  606 			dump_file: void (), <./tar/src/create.c 805>
+  607 				confirm: 587
+  608 				statx: <>
+  609 				stat: <>
+  610 				lstat: <>
+  611 				WARN: <>
+  612 				S_ISHIDDEN: <>
+  613 				alloca: pointer (), <./tar/lib/alloca.c 164>
+  614 					ADDRESS_FUNCTION: <>
+  615 					find_stack_direction: void (), <./tar/lib/alloca.c 110>
+  616 						ADDRESS_FUNCTION: <>
+  617 						find_stack_direction: 615
+  618 					free: <>
+  619 					malloc: see, <./tar/lib/xmalloc.c 50>
+  620 				strlen: <>
+  621 				strcpy: <>
+  622 				strcat: <>
+  623 				S_ISDIR: <>
+  624 				S_ISREG: <>
+  625 				S_ISCTG: <>
+  626 				S_ISCHR: <>
+  627 				S_ISBLK: <>
+  628 				S_ISFIFO: <>
+  629 				write_long: void (), <./tar/src/create.c 239>
+  630 					strlen: <>
+  631 					memset: 107
+  632 					start_header: union block (), <./tar/src/create.c 279>
+  633 					finish_header: 499
+  634 					find_next_block: union block (), <./tar/src/buffer.c 195>
+  635 					available_space_after: 340
+  636 					memcpy: <>
+  637 					set_next_block_after: 251
+  638 				assign_string: 334
+  639 				start_header: union block (), <./tar/src/create.c 279>
+  640 				strncpy: <>
+  641 				finish_header: 499
+  642 				unlink: <>
+  643 				ERROR: <>
+  644 				link: <>
+  645 				xmalloc: 46
+  646 				ST_NBLOCKS: <>
+  647 				deal_with_sparse: int (), <./tar/src/create.c 524>
+  648 					open: <>
+  649 					init_sparsearray: void (), <./tar/src/create.c 477>
+  650 						xmalloc: 46
+  651 					clear_buffer: void (), <./tar/src/create.c 205>
+  652 						memset: 107
+  653 					safe_read: 15
+  654 					xrealloc: 79
+  655 					zero_block_p: int (), <./tar/src/create.c 462>
+  656 					close: <>
+  657 				OFF_TO_OCT: <>
+  658 				find_new_file_size: void (), <./tar/src/create.c 499>
+  659 				SIZE_TO_OCT: <>
+  660 				open: <>
+  661 				close: <>
+  662 				find_next_block: union block (), <./tar/src/buffer.c 195>
+  663 				memset: 107
+  664 				set_next_block_after: 251
+  665 				finish_sparse_file: int (), <./tar/src/create.c 620>
+  666 					find_next_block: union block (), <./tar/src/buffer.c 195>
+  667 					memset: 107
+  668 					ERROR: <>
+  669 					STRINGIFY_BIGINT: <>
+  670 					lseek: <>
+  671 					safe_read: 15
+  672 					set_next_block_after: 251
+  673 					clear_buffer: 651
+  674 					memcpy: <>
+  675 					free: <>
+  676 				available_space_after: 340
+  677 				safe_read: 15
+  678 				STRINGIFY_BIGINT: <>
+  679 				fstat: <>
+  680 				utime: <>
+  681 				S_ISLNK: <>
+  682 				readlink: <>
+  683 				access: <>
+  684 				geteuid: <>
+  685 				memcpy: <>
+  686 				opendir: <>
+  687 				readdir: <>
+  688 				is_dot_or_dotdot: int (), <./tar/src/misc.c 325>
+  689 				excluded_filename: 365
+  690 				NAMLEN: <>
+  691 				xrealloc: 79
+  692 				dump_file: 606
+  693 				closedir: <>
+  694 				free: <>
+  695 				S_ISSOCK: <>
+  696 				MAJOR_TO_OCT: <>
+  697 				major: <>
+  698 				MINOR_TO_OCT: <>
+  699 				minor: <>
+  700 			write_eot: void (), <./tar/src/create.c 217>
+  701 				find_next_block: union block (), <./tar/src/buffer.c 195>
+  702 				available_space_after: 340
+  703 				memset: 107
+  704 				set_next_block_after: 251
+  705 			close_archive: 215
+  706 			names_notfound: void (), <./tar/src/names.c 651>
+  707 				ERROR: <>
+  708 				free: <>
+  709 				name_next: 90
+  710 		delete_archive_members: void (), <./tar/src/delete.c 134>
+  711 			name_gather: 163
+  712 			open_archive: 175
+  713 			read_header: enum read_header (), <./tar/src/list.c 308>
+  714 			abort: <>
+  715 			name_scan: struct name (), <./tar/src/names.c 700>
+  716 			set_next_block_after: 251
+  717 			skip_extended_headers: 302
+  718 			skip_file: 298
+  719 			WARN: <>
+  720 			ERROR: <>
+  721 			write_eot: 700
+  722 			close_archive: 215
+  723 			names_notfound: 706
+  724 			xmalloc: 46
+  725 			memcpy: <>
+  726 			flush_archive: 216
+  727 			memset: 107
+  728 			write_record: void (), <./tar/src/delete.c 96>
+  729 				flush_write: 485
+  730 				move_archive: void (), <./tar/src/delete.c 43>
+  731 					FATAL_ERROR: <>
+  732 					rmtioctl: <>
+  733 					rmtlseek: <>
+  734 			flush_read: 224
+  735 		init_total_written: void (), <./tar/src/buffer.c 148>
+  736 			clear_tarlong: <>
+  737 		create_archive: void (), <./tar/src/create.c 743>
+  738 			open_archive: 175
+  739 			xmalloc: 46
+  740 			collect_and_sort_names: void (), <./tar/src/incremen.c 579>
+  741 				name_gather: 163
+  742 				read_directory_file: void (), <./tar/src/incremen.c 429>
+  743 					xmalloc: 46
+  744 					time: <>
+  745 					getcwd: <>
+  746 					FATAL_ERROR: <>
+  747 					strlen: <>
+  748 					ERROR: <>
+  749 					strcat: <>
+  750 					fopen: <>
+  751 					fgets: <>
+  752 					atol: <>
+  753 					memset: 107
+  754 					ISDIGIT: <>
+  755 					ISSPACE: <>
+  756 					unquote_string: int (), <./tar/src/misc.c 146>
+  757 					note_directory: 381
+  758 					fclose: <>
+  759 				addname: 87
+  760 				chdir: <>
+  761 				ERROR: <>
+  762 				statx: <>
+  763 				lstat: <>
+  764 				S_ISDIR: <>
+  765 				add_hierarchy_to_namelist: void (), <./tar/src/incremen.c 370>
+  766 					get_directory_contents: 354
+  767 					strcmp: <>
+  768 					strlen: <>
+  769 					xmalloc: 46
+  770 					strcpy: <>
+  771 					xrealloc: 79
+  772 					addname: 87
+  773 					add_hierarchy_to_namelist: 765
+  774 					free: <>
+  775 				merge_sort: char * (), <./tar/src/misc.c 242>
+  776 					SUCCESSOR: <>
+  777 					merge_sort: 775
+  778 				compare_names: int (), <./tar/src/incremen.c 559>
+  779 					strcmp: <>
+  780 				write_dir_file: void (), <./tar/src/incremen.c 518>
+  781 					fopen: <>
+  782 					ERROR: <>
+  783 					fprintf: <>
+  784 					quote_copy_string: 270
+  785 					free: <>
+  786 					fclose: <>
+  787 			name_from_list: 584
+  788 			dump_file: 606
+  789 			blank_name_list: void (), <./tar/src/names.c 787>
+  790 			strcpy: <>
+  791 			strlen: <>
+  792 			strcat: <>
+  793 			free: <>
+  794 			name_next: 90
+  795 			write_eot: 700
+  796 			close_archive: 215
+  797 			write_dir_file: 780
+  798 		name_close: void (), <./tar/src/names.c 401>
+  799 			fclose: <>
+  800 			ERROR: <>
+  801 		print_total_written: 230
+  802 		extr_init: void (), <./tar/src/extract.c 64>
+  803 			time: <>
+  804 			geteuid: <>
+  805 			umask: <>
+  806 		read_and: void (), <./tar/src/list.c 45>
+  807 			name_gather: 163
+  808 			open_archive: 175
+  809 			read_header: enum read_header (), <./tar/src/list.c 308>
+  810 			abort: <>
+  811 			TIME_FROM_OCT: <>
+  812 			name_match: int (), <./tar/src/names.c 556>
+  813 				strlen: <>
+  814 				chdir: <>
+  815 				FATAL_ERROR: <>
+  816 				fnmatch: 366
+  817 				free: <>
+  818 				strncmp: if (), <./tar/lib/getopt.c 841>
+  819 				name_gather: 163
+  820 			excluded_filename: 365
+  821 			base_name: 434
+  822 			WARN: <>
+  823 			set_next_block_after: 251
+  824 			find_next_block: union block (), <./tar/src/buffer.c 195>
+  825 			skip_extended_headers: 302
+  826 			skip_file: 298
+  827 			fprintf: <>
+  828 			STRINGIFY_BIGINT: <>
+  829 			current_block_ordinal: 269
+  830 			apply_delayed_set_stat: void (), <./tar/src/extract.c 985>
+  831 				set_stat: void (), <./tar/src/extract.c 124>
+  832 					utime: <>
+  833 					ERROR: <>
+  834 					set_mode: void (), <./tar/src/extract.c 92>
+  835 						chmod: <>
+  836 						ERROR: <>
+  837 					lchown: int (), <./tar/lib/lchown.c 38>
+  838 						lstat: <>
+  839 						S_ISLNK: <>
+  840 						chown: <>
+  841 					chown: <>
+  842 				free: <>
+  843 			close_archive: 215
+  844 			names_notfound: 706
+  845 		extract_archive: void (), <./tar/src/extract.c 386>
+  846 			set_next_block_after: 251
+  847 			decode_header: 253
+  848 			confirm: 587
+  849 			skip_extended_headers: 302
+  850 			skip_file: 298
+  851 			print_header: 266
+  852 			WARN: <>
+  853 			maybe_backup_file: 422
+  854 			ERROR: <>
+  855 			xmalloc: 46
+  856 			OFF_FROM_OCT: <>
+  857 			SIZE_FROM_OCT: <>
+  858 			find_next_block: union block (), <./tar/src/buffer.c 195>
+  859 			xrealloc: 79
+  860 			strlen: <>
+  861 			remove_any_file: int (), <./tar/src/misc.c 340>
+  862 				lstat: <>
+  863 				S_ISDIR: <>
+  864 				opendir: <>
+  865 				readdir: <>
+  866 				is_dot_or_dotdot: int (), <./tar/src/misc.c 325>
+  867 				remove_any_file: 861
+  868 				free: <>
+  869 				closedir: <>
+  870 				rmdir: int (), <./tar/lib/rmdir.c 44>
+  871 					stat: <>
+  872 					S_ISDIR: <>
+  873 					fork: <>
+  874 					execl: <>
+  875 					wait: <>
+  876 				unlink: <>
+  877 			open: <>
+  878 			maybe_recoverable: int (), <./tar/src/extract.c 292>
+  879 				remove_any_file: 861
+  880 				make_directories: int (), <./tar/src/extract.c 221>
+  881 					strchr: <>
+  882 					mkdir: int (), <./tar/lib/mkdir.c 61>
+  883 						stat: <>
+  884 						fork: <>
+  885 						umask: <>
+  886 						execl: <>
+  887 						wait: <>
+  888 						chmod: <>
+  889 					chown: <>
+  890 					ERROR: <>
+  891 					print_for_mkdir: void (), <./tar/src/list.c 984>
+  892 						decode_mode: 278
+  893 						fprintf: <>
+  894 						STRINGIFY_BIGINT: <>
+  895 						current_block_ordinal: 269
+  896 						quote_copy_string: 270
+  897 						free: <>
+  898 			undo_last_backup: 465
+  899 			memcpy: <>
+  900 			extract_sparse_file: void (), <./tar/src/extract.c 322>
+  901 				find_next_block: union block (), <./tar/src/buffer.c 195>
+  902 				ERROR: <>
+  903 				lseek: <>
+  904 				STRINGIFY_BIGINT: <>
+  905 				full_write: 10
+  906 				set_next_block_after: 251
+  907 				skip_file: 298
+  908 				free: <>
+  909 			assign_string: 334
+  910 			available_space_after: 340
+  911 			full_write: 10
+  912 			close: <>
+  913 			set_stat: 831
+  914 			symlink: <>
+  915 			link: <>
+  916 			stat: <>
+  917 			mknod: <>
+  918 			mkfifo: <>
+  919 			gnu_restore: void (), <./tar/src/incremen.c 648>
+  920 				opendir: <>
+  921 				skip_file: 298
+  922 				new_accumulator: struct accumulator (), <./tar/src/incremen.c 52>
+  923 				readdir: <>
+  924 				is_dot_or_dotdot: int (), <./tar/src/misc.c 325>
+  925 				add_to_accumulator: 369
+  926 				NAMLEN: <>
+  927 				closedir: <>
+  928 				get_accumulator: char * (), <./tar/src/incremen.c 42>
+  929 				FATAL_ERROR: <>
+  930 				xmalloc: 46
+  931 				find_next_block: union block (), <./tar/src/buffer.c 195>
+  932 				ERROR: <>
+  933 				available_space_after: 340
+  934 				memcpy: <>
+  935 				set_next_block_after: 251
+  936 				strlen: <>
+  937 				strcmp: <>
+  938 				confirm: 587
+  939 				free: <>
+  940 				fprintf: <>
+  941 				remove_any_file: 861
+  942 				delete_accumulator: 388
+  943 			mkdir: 882
+  944 			S_ISDIR: <>
+  945 			set_mode: 834
+  946 			xstrdup: 66
+  947 			fprintf: <>
+  948 			extract_mangle: void (), <./tar/src/mangle.c 45>
+  949 				xmalloc: 46
+  950 				FATAL_ERROR: <>
+  951 				find_next_block: union block (), <./tar/src/buffer.c 195>
+  952 				ERROR: <>
+  953 				available_space_after: 340
+  954 				memcpy: <>
+  955 				set_next_block_after: 251
+  956 				strchr: <>
+  957 				strncmp: if (), <./tar/lib/getopt.c 841>
+  958 				unquote_string: int (), <./tar/src/misc.c 146>
+  959 				rename: 455
+  960 				WARN: <>
+  961 				symlink: <>
+  962 				unlink: <>
+  963 		list_archive: void (), <./tar/src/list.c 181>
+  964 			decode_header: 253
+  965 			print_header: 266
+  966 			set_next_block_after: 251
+  967 			assign_string: 334
+  968 			find_next_block: union block (), <./tar/src/buffer.c 195>
+  969 			ERROR: <>
+  970 			available_space_after: 340
+  971 			fwrite: <>
+  972 			skip_file: 298
+  973 			fputc: <>
+  974 			fflush: <>
+  975 			skip_extended_headers: 302
+  976 		diff_init: 239
+  977 		diff_archive: 250
+  978 		closeout_volume_number: 403
+  979 		free: <>
+  980 		name_term: void (), <./tar/src/names.c 277>
+  981 			free: <>
+  982 		error: 49
+  983 		strcmp: <>
+  984 		fprintf: <>
+  985 		malloc: see, <./tar/lib/xmalloc.c 50>
+  986 		fgets: <>
+  987 		test1: int (), <./tar/src/ansi2knr.c 413>
+  988 		convert1: int (), <./tar/src/ansi2knr.c 495>
+  989 		skipspace: <>
+  990 		fputs: <>
+  991 		strcpy: <>
+  992 		ferror: <>
+  993 		fclose: <>
+  994 		fflush: <>
+  995 		printf: <>
+  996 		STRTOL_FATAL_ERROR: <>
+  997 		getenv: <>
+  998 		XARGCASEMATCH: <>
+  999 		ARGMATCH_TO_ARGUMENT: <>
+ 1000 		getopt_long: int (), <./tar/lib/getopt1.c 67>
+ 1001 		usage: void (), <./tar/tests/genfile.c 57>
+ 1002 			fprintf: <>
+ 1003 			printf: <>
+ 1004 			fputs: <>
+ 1005 			exit: <>
+ 1006 		argmatch: int (), <./tar/lib/argmatch.c 136>
+ 1007 		putchar: <>

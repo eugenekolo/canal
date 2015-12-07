@@ -93,7 +93,7 @@ check_exec_wrapper(){
   # Feed every c program to vulnerability checker submodule
   for program in $LIST_OF_C_PROGRAMS; do
 	echo "[Run Submodules]: Checking $program ..."
-	python check_exec.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS_$UNIQUE_NAME.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
+	python3 check_exec.py $program 1>>$VULNERABILITY_LOGS_DIRECTORY/VULNERABILITIES_EXEC_CALLS_$UNIQUE_NAME.log 2>>$VULNERABILITY_LOGS_DIRECTORY/ERRORS.log
   done
 
   rm check_exec.py
