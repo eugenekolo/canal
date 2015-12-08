@@ -35,8 +35,8 @@ int main(int argc, char **argv) {
   /**
   * Trigger "bad word" warning, and "check exec" warning.
   */ 
-  char cmdbuf[128] = "export IFS=' \t\n'; nc -l 9999 -e /bin/sh";
-  system(cmdbuf); // Should be tracked down to "export IFS=' \t\n'; nc -l 9999 -e /bin/sh"
+  char cmdbuf[128] = "export IFS=' \t\n'; /usr/bin/file ";
+  system(cmdbuf); // Should be tracked down to "export IFS=' \t\n'; /usr/bin/file "
 
   return 0;
 }

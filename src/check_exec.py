@@ -15,7 +15,7 @@ import sys, re
 #import os
 
 badwords = ['execve', 'execl', 'execlp', 'execle', 'execv', 'execvp', 'execvpe', 'system']
-no_bound_calls = ['gets', 'scanf', 'strcat', 'strcpy']
+no_bound_calls = ['gets', 'scanf', 'strcat', 'strcpy', 'cat', 'argv']
 
 
 #chekcing to see if there are errors in the c file
@@ -23,7 +23,7 @@ def main(fileName):
     program_errors = [] # e.g. [{"error":"seteuid", "line":52, "comment":"You should..."}, 
                           #       {"error":"setregid", "line":19, "comment":""}, ...]
 
-
+    print("[CHECK EXEC] Errors in:", fileName)
     #simple method - start by finding vulnerable calls (badwords)
 
     badlineNums = []
@@ -61,7 +61,7 @@ def main(fileName):
             badArguments = targetline.split(", ")
 
             # print("Line", item, "calls", targetword, "with ", end = "")
-            print ("error = " + targetword + ", line = " + str(item) + ", comment = [ERROR] ")
+            print ("\t","error = " + targetword + ", line = " + str(item) + ", comment = [ERROR] ", end=" ")
             # print(*badArguments, sep=', ')
             # ok, now we have the arguments for the badword function in targetline
             # simple vulnerability check - are we calling from argv
@@ -103,8 +103,8 @@ def find_bounds_issues(line, variable):
                 # look for user-editable files and such
     if(('=' in backHalf) and ("/bin" in backHalf)):
         #get start and end of vulnerable input
-        inputStart = backHalf.find("/bin")
-        theEnding = backHalf.split("/bin",1)[1]
+        inputStart = backHalf.find("usr/bin")
+        theEnding = backHalf.split("usr/bin",1)[1]
         inputEnd = theEnding.find("\"")
         print("error = Vulnerable input from user-accessable file in ", backHalf[inputStart:inputEnd])
         return 1 #anything will count as true here, will add more for handler function
