@@ -5,7 +5,7 @@ import requests
 import os
 
 ## CONFIG - Must change these!
-OUTPATH = '/home/eugenek/testdir'
+OUTPATH = '/osx-code/Apple_update'
 URL = 'http://www.opensource.apple.com'
 MBYTE=1024*1024
 
@@ -19,7 +19,7 @@ soup0 = BeautifulSoup(html0)
 #
 def main():
 	link_names = [link['href'] for link in soup0.findAll('a', href=True)]
-	version_links = [x for x in link_names if x.startswith('/release/mac')]
+	version_links = [x for x in link_names if x.startswith('/release/os-x')]
 	
 	for version_link in version_links:
 		version = version_link.split('/')[-2] # Version # in the URL
