@@ -74,11 +74,11 @@ The above vulnerable file will produce the following warning/error dump:
 #Documentation
 
 Our full documentation is available at [this link.](docs/CANAL_Report.pdf)
-You can also see compilation and run instructions in the comments of the script as well as in the individual subfolders.
-[./src](src/) - Contains everything you need to start checking your security
-[./docs](docs/) - Contains all analysis reports and project coordination documents
-[./eval](eval/) - other utilities preforming similar functions to evaluate against our processing
-[./test](test/) - test files and logs from our mass analysis of OS X, FreeBSD, and BusyBox utility source code; the /test/logs folder also contains post processing program code and results 
+You can also see compilation and run instructions in the comments of the script as well as in the individual subfolders:
+* [./src](src/) - Contains everything you need to start checking your security
+* [./docs](docs/) - Contains all analysis reports and project coordination documents
+* [./eval](eval/) - other utilities preforming similar functions to evaluate against our processing
+* [./test](test/) - test files and logs from our mass analysis of OS X, FreeBSD, and BusyBox utility source code; the /test/logs folder also contains post processing program code and results 
 
 
 # Vulnerability Detection Modules
