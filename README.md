@@ -1,6 +1,6 @@
-#*.CANAL - C Vulnerability Static Analysis Tool
+# CANAL - C Vulnerability Static Analysis Tool
 
-This tool set is a compilation of `python` and `bash` scripts intended to provide an automized bug checker for *.c files that use set*id() family functions.  The goal of this project is to eventually integrate into an IDE and aide users with warnings of potential security vulnerabilities in security critical projects.
+This tool set is a compilation of `python` and `bash` scripts intended to provide an automized bug checker for *.c files that use set*id() family functions. 
 
 Vulnerability Checks Include:
 * Warnings for out-of-date or known vulnerable functions
